@@ -287,8 +287,8 @@ const CIVIL_MODEL_12 = {
                         { key: "c", text: "6 Mp/L" },
                         { key: "d", text: "9 Mp/L" }
                     ],
-                    answer: "c",
-                    explanation: "For a fixed-fixed beam with a central point load, collapse occurs when three hinges form. The work equation yields W * (Lθ/2) = M_p * (θ + θ + θ) = 3M_pθ. Solving gives W = 6M_p/L."
+                    answer: "b",
+                    explanation: "The ideal fixed-fixed central-load mechanism has plastic hinges at both supports and midspan. For each half-span rotation \\(\\theta\\), the central hinge rotates \\(2\\theta\\). Internal work is therefore \\(M_p(\\theta+2\\theta+\\theta)=4M_p\\theta\\); load displacement is \\(L\\theta/2\\). Equating work gives \\(W=\\dfrac{8M_p}{L}\\), not 6Mp/L."
                 },
                 {
                     id: "cm12q020",
@@ -308,13 +308,13 @@ const CIVIL_MODEL_12 = {
                     src: "STRU935-00119",
                     text: "The plastic modulus of a section is 5 × 10⁴ mm³. Its shape factor is 1.2 and the plastic moment capacity is 120 kNm, what is the value of the yield stress of the material?",
                     options: [
-                        { key: "a", text: "240 N/mm²" },
+                        { key: "a", text: "2400 N/mm²" },
                         { key: "b", text: "100 N/mm²" },
                         { key: "c", text: "200 N/mm²" },
                         { key: "d", text: "288 N/mm²" }
                     ],
                     answer: "a",
-                    explanation: "The plastic moment capacity is the yield stress times the plastic section modulus, so fy equals Mp divided by Zp. The shape factor is not needed here; it only relates the plastic modulus to the elastic one, Zp equal to 1.2 Ze."
+                    explanation: "Use \\(M_p=f_yZ_p\\). Convert \\(120\\,\\mathrm{kN\\,m}=120\\times10^6\\,\\mathrm{N\\,mm}\\), then \\(f_y=\\dfrac{120\\times10^6}{5\\times10^4}=2400\\,\\mathrm{N/mm^2}\\). The shape factor is unnecessary because the plastic modulus is already given. This unusually high result follows from the printed inputs; do not silently replace them with typical steel properties."
                 },
                 {
                     id: "cm12q022",

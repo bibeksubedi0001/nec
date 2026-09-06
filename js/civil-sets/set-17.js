@@ -1099,7 +1099,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "8648/2Δ" }
                     ],
                     answer: "c",
-                    explanation: "The standard formula connecting duty (D), delta (Δ), and base period (B) is Δ = (8.64B)/D. Rearranging for duty gives D = (8.64B)/Δ. Multiplying numerator and denominator by 1000 to express delta in cm gives D = (864B)/Δ."
+                    explanation: "With duty D in ha per m³/s and base period B in days, water volume is Q × 86400B m³ and served area is DQ × 10000 m². Dividing gives \\(\\Delta_m=\\dfrac{8.64B}{D}\\). Since one metre is 100 centimetres, \\(\\Delta_{cm}=\\dfrac{864B}{D}\\), so \\(D=\\dfrac{864B}{\\Delta_{cm}}\\). The conversion uses 100, not 1000."
                 }
             ]
         },

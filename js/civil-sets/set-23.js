@@ -293,15 +293,15 @@ const CIVIL_MODEL_23 = {
                 {
                     id: "cm23q020",
                     src: "STRU935-00245",
-                    text: "Calculate maximum stress due to Bending a steel strip of 30 mm thick and 60 mm wide is bent around a circular drum of 3.6 m diameter (Young’s modulus = 200kN/m²).",
+                    text: "A strip 30 mm thick and 60 mm wide is bent to a neutral-axis radius of 1.8 m. Using the printed modulus E = 200 kN/m² literally, what is the maximum elastic bending stress?",
                     options: [
-                        { key: "a", text: "2341.76 N/mm²" },
-                        { key: "b", text: "5411.76 N/mm²" },
-                        { key: "c", text: "1666.67 N/mm²" },
-                        { key: "d", text: "4666.67 N/mm²" }
+                        { key: "a", text: "0.0166667 N/mm²" },
+                        { key: "b", text: "0.166667 N/mm²" },
+                        { key: "c", text: "0.00166667 N/mm²" },
+                        { key: "d", text: "1.66667 N/mm²" }
                     ],
                     answer: "c",
-                    explanation: "The maximum bending stress σ = E * (y/R). y = half thickness = 15mm = 0.015m, R = 3.6m/2 = 1.8m (assuming drum radius is for bending). E = 200 kN/m² = 200,000 N/m². σ = 200000 * (0.015 / 1.8) = 200000 * (0.008333) = 1666.67 N/m² = 0.00166667 N/mm². This seems very low. Likely unit error: E = 200 GPa = 200,000 N/mm² is standard. Assuming E=200 GPa=2e5 N/mm², R=1800mm, y=15mm. σ = (2e5 N/mm² * 15mm) / 1800mm = 3e6 / 1800 = 1666.67 N/mm². So correct answer is 1666.67 N/mm²."
+                    explanation: "Take \\(y=15\\,\\mathrm{mm}\\) and \\(R=1800\\,\\mathrm{mm}\\). The printed modulus converts to \\(E=0.2\\,\\mathrm{N/mm^2}\\). From \\(\\sigma_{max}=\\dfrac{Ey}{R}\\), the stress is \\(\\dfrac{0.2(15)}{1800}\\), or 0.00166667 N/mm². The original 200 kN/m² modulus is atypical for steel; substituting 200 GPa without stating a new assumption would change the answer by a factor of one million. The revised stem fixes the radius datum and tests the printed units."
                 },
                 {
                     id: "cm23q021",

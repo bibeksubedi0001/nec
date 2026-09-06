@@ -9,9 +9,8 @@
                 {
                     id: "free-surface-and-flow-descriptions",
                     title: "Free surfaces and independent flow classifications",
-                    html: "<p>Open-channel flow has a <strong>free surface</strong>, normally at atmospheric pressure. A covered conduit running partly full can qualify; a full pressure pipe does not. Depth and wetted area can change even when the constructed channel remains unchanged.</p>" +
-                        "<p>Steady/unsteady describes change with time at a station; uniform/nonuniform describes change along the channel. Gradually varied flow has small spatial depth changes, whereas a hydraulic jump is rapidly varied. Conventional GVF calculations assume steady flow, but a flood wave can be <strong>unsteady and gradually varied</strong>.</p>" +
-                        "<p>Velocity is a cross-sectional distribution, not one value everywhere. Boundary friction and secondary circulation can place its maximum below the surface. This velocity dip is not universal, nor explained solely by air drag.</p>",
+                    html: "<p>Open-channel flow has a <strong>free surface</strong>, normally at atmospheric pressure. A covered conduit running partly full can qualify; a full pressure pipe does not. Depth and wetted area can change even when the constructed channel remains unchanged.</p>",
+                    moreHtml: "<p>Steady/unsteady describes change with time at a station; uniform/nonuniform describes change along the channel. Gradually varied flow has small spatial depth changes, whereas a hydraulic jump is rapidly varied. Conventional GVF calculations assume steady flow, but a flood wave can be <strong>unsteady and gradually varied</strong>.</p><p>Velocity is a cross-sectional distribution, not one value everywhere. Boundary friction and secondary circulation can place its maximum below the surface. This velocity dip is not universal, nor explained solely by air drag.</p>",
                     sources: [
                         { id: "WATE701-00070", set: 7, question: 57 },
                         { id: "WATE701-00204", set: 18, question: 58 },
@@ -196,12 +195,8 @@
                 {
                     id: "part-full-circular-sections",
                     title: "Circular-channel optima depend on the resistance law",
-                    html: "<p>Let d<sub>c</sub> be diameter and ψ half the wetted central angle in radians. Then A = d<sub>c</sub><sup>2</sup>(ψ − sinψ cosψ)/4, P = d<sub>c</sub>ψ, and y = d<sub>c</sub>(1 − cosψ)/2. Increasing depth near the crown adds perimeter rapidly, so maximum discharge need not occur at full depth.</p>" +
-                        "<table><thead><tr><th scope='col'>Fixed slope and coefficient</th><th scope='col'>y/d<sub>c</sub></th><th scope='col'>R/d<sub>c</sub></th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Maximum velocity</th><td>0.8128</td><td>0.3043</td></tr>" +
-                        "<tr><th scope='row'>Maximum Q, constant Chezy C</th><td>0.9497</td><td>0.2865</td></tr>" +
-                        "<tr><th scope='row'>Illustrative comparison: constant Manning n</th><td>0.9382</td><td>0.2900</td></tr></tbody></table>" +
-                        "<p>The bank's 0.95-depth rule corresponds approximately to constant C. Its 0.286 and 0.304 ratios describe <strong>R, not A/T</strong>. At the velocity optimum P ≈ 2.247d<sub>c</sub>; at the Chezy discharge optimum P ≈ 2.689d<sub>c</sub>.</p>",
+                    html: "<p>Let d<sub>c</sub> be diameter and ψ half the wetted central angle in radians. Then A = d<sub>c</sub><sup>2</sup>(ψ − sinψ cosψ)/4, P = d<sub>c</sub>ψ, and y = d<sub>c</sub>(1 − cosψ)/2. </p><table><thead><tr><th scope='col'>Fixed slope and coefficient</th><th scope='col'>y/d<sub>c</sub></th><th scope='col'>R/d<sub>c</sub></th></tr></thead><tbody><tr><th scope='row'>Maximum velocity</th><td>0.8128</td><td>0.3043</td></tr><tr><th scope='row'>Maximum Q, constant Chezy C</th><td>0.9497</td><td>0.2865</td></tr><tr><th scope='row'>Illustrative comparison: constant Manning n</th><td>0.9382</td><td>0.2900</td></tr></tbody></table><p>The bank's 0.95-depth rule corresponds approximately to constant C. Its 0.286 and 0.304 ratios describe <strong>R, not A/T</strong>. At the velocity optimum P ≈ 2.247d<sub>c</sub>; at the Chezy discharge optimum P ≈ 2.689d<sub>c</sub>.</p>",
+                    moreHtml: "<p>Increasing depth near the crown adds perimeter rapidly, so maximum discharge need not occur at full depth.</p>",
                     sources: [
                         { id: "WATE701-00196", set: 18, question: 50 },
                         { id: "WATE701-00197", set: 18, question: 51 },
@@ -211,9 +206,8 @@
                 {
                     id: "specific-energy-and-alternate-depths",
                     title: "Specific energy and its two depth branches",
-                    html: "<p><strong>E = y + αQ<sup>2</sup>/(2gA<sup>2</sup>)</strong> measures energy per unit weight above the local bed. The kinetic-energy correction α accounts for nonuniform velocity; setting it to one is an approximation. Head has units of length, not force.</p>" +
-                        "<p>At fixed discharge and section geometry, E above its minimum permits two <strong>alternate depths</strong>: shallow supercritical and deep subcritical. Lowering depth on the supercritical branch raises E because velocity head grows rapidly; raising depth on the subcritical branch also raises E. These are not hydraulic-jump sequent depths.</p>" +
-                        "<p><strong>Bank checks:</strong> y = 3 m, V = 1.5 m/s gives E = 3.115 m. E = 1.01 m, V = 0.5 m/s gives y = 0.997 m. E − y = 1.24 − 1.20 gives V = 0.886 m/s. Q = 10, b = 5, y = 2 gives V = 1 and E = 2.051 m.</p>",
+                    html: "<p><strong>E = y + αQ<sup>2</sup>/(2gA<sup>2</sup>)</strong> measures energy per unit weight above the local bed. The kinetic-energy correction α accounts for nonuniform velocity; setting it to one is an approximation. Head has units of length, not force.</p><p><strong>Bank checks:</strong> y = 3 m, V = 1.5 m/s gives E = 3.115 m. E = 1.01 m, V = 0.5 m/s gives y = 0.997 m. E − y = 1.24 − 1.20 gives V = 0.886 m/s. Q = 10, b = 5, y = 2 gives V = 1 and E = 2.051 m.</p>",
+                    moreHtml: "<p>At fixed discharge and section geometry, E above its minimum permits two <strong>alternate depths</strong>: shallow supercritical and deep subcritical. Lowering depth on the supercritical branch raises E because velocity head grows rapidly; raising depth on the subcritical branch also raises E. These are not hydraulic-jump sequent depths.</p>",
                     sources: [
                         { id: "WATE701-00055", set: 6, question: 53 },
                         { id: "WATE701-00175", set: 16, question: 54 },
@@ -231,9 +225,8 @@
                 {
                     id: "critical-depth-and-discharge",
                     title: "Critical flow: minimum energy or maximum discharge",
-                    html: "<p>Since dA/dy = T, differentiation at fixed Q and α = 1 gives dE/dy = 1 − Q<sup>2</sup>T/(gA<sup>3</sup>). Critical flow therefore satisfies <strong>Q<sup>2</sup>T/(gA<sup>3</sup>) = 1</strong>. It minimizes E for fixed Q, or maximizes Q for fixed E. It does not maximize discharge without a stated constraint.</p>" +
-                        "<p>For rectangles, q = Q/b, y<sub>c</sub> = (q<sup>2</sup>/g)<sup>1/3</sup> and E<sub>c</sub> = 1.5y<sub>c</sub>. Generally E<sub>c</sub> = y<sub>c</sub> + A<sub>c</sub>/(2T<sub>c</sub>), not always 1.5y<sub>c</sub>. A constant nonunit α multiplies the Q<sup>2</sup> term in the critical condition.</p>" +
-                        "<p><strong>Bank calculations:</strong> Q = 15, b = 3 gives q = 5 and y<sub>c</sub> = 1.366 m; y<sub>c</sub> = 1.5 gives E<sub>c</sub> = 2.25 m. Q = 10, b = 4 gives E<sub>c</sub> = 1.291 m. Conversely E<sub>c</sub> = 1.3, b = 10 gives Q = 25.27 m<sup>3</sup>/s.</p>",
+                    html: "<p>Since dA/dy = T, differentiation at fixed Q and α = 1 gives dE/dy = 1 − Q<sup>2</sup>T/(gA<sup>3</sup>). Critical flow therefore satisfies <strong>Q<sup>2</sup>T/(gA<sup>3</sup>) = 1</strong>. </p><p>For rectangles, q = Q/b, y<sub>c</sub> = (q<sup>2</sup>/g)<sup>1/3</sup> and E<sub>c</sub> = 1.5y<sub>c</sub>. Generally E<sub>c</sub> = y<sub>c</sub> + A<sub>c</sub>/(2T<sub>c</sub>), not always 1.5y<sub>c</sub>. A constant nonunit α multiplies the Q<sup>2</sup> term in the critical condition.</p><p><strong>Bank calculations:</strong> Q = 15, b = 3 gives q = 5 and y<sub>c</sub> = 1.366 m; y<sub>c</sub> = 1.5 gives E<sub>c</sub> = 2.25 m. Q = 10, b = 4 gives E<sub>c</sub> = 1.291 m. Conversely E<sub>c</sub> = 1.3, b = 10 gives Q = 25.27 m<sup>3</sup>/s.</p>",
+                    moreHtml: "<p>It minimizes E for fixed Q, or maximizes Q for fixed E. It does not maximize discharge without a stated constraint.</p>",
                     sources: [
                         { id: "WATE701-00181", set: 16, question: 60 },
                         { id: "WATE701-00182", set: 17, question: 47 },
@@ -248,9 +241,8 @@
                 {
                     id: "transitions-and-choking",
                     title: "Humps, contractions and conditional choking",
-                    html: "<p>Across a short transition, energy gives E<sub>2</sub> = E<sub>1</sub> − Δz<sub>b</sub> − h<sub>L</sub>. A raised bed consumes available specific energy. An unchoked subcritical stream becomes shallower <em>relative to the crest</em>; supercritical flow instead deepens toward critical.</p>" +
-                        "<p>The original approach state remains possible only if crest energy is at least E<sub>c</sub> for its discharge and section. Equality marks critical control; insufficient energy causes <strong>choking</strong>. With fixed Q and a subcritical approach, upstream afflux supplies the extra head. If Q can change, discharge may adjust instead.</p>" +
-                        "<p>A contraction raises discharge per width and the required critical energy. Neither every hump nor every narrowing automatically raises upstream water: compare available and required energy, include losses and identify the controlling boundary. This is an extension of the bank's energy principles.</p>",
+                    html: "<p>Across a short transition, energy gives E<sub>2</sub> = E<sub>1</sub> − Δz<sub>b</sub> − h<sub>L</sub>. A raised bed consumes available specific energy. An unchoked subcritical stream becomes shallower <em>relative to the crest</em>; supercritical flow instead deepens toward critical.</p><p>The original approach state remains possible only if crest energy is at least E<sub>c</sub> for its discharge and section. Equality marks critical control; insufficient energy causes <strong>choking</strong>. </p>",
+                    moreHtml: "<p>With fixed Q and a subcritical approach, upstream afflux supplies the extra head. If Q can change, discharge may adjust instead.</p><p>A contraction raises discharge per width and the required critical energy. Neither every hump nor every narrowing automatically raises upstream water: compare available and required energy, include losses and identify the controlling boundary. This is an extension of the bank's energy principles.</p>",
                     sources: [
                         { id: "WATE701-00055", set: 6, question: 53 },
                         { id: "WATE701-00181", set: 16, question: 60 },
@@ -261,9 +253,8 @@
                 {
                     id: "specific-force-and-momentum",
                     title: "Specific force and momentum correction",
-                    html: "<p>Momentum flux is <strong>βρQV</strong>, where β = ∫u<sup>2</sup>dA/(AV<sup>2</sup>). Energy uses α = ∫u<sup>3</sup>dA/(AV<sup>3</sup>); these correction factors are not interchangeable.</p>" +
-                        "<p>With hydrostatic end pressures, the specific-force function is M = A h̄ + βQ<sup>2</sup>/(gA), where h̄ is the area-centroid depth below the surface. For a rectangle <strong>per unit width</strong>, M = y<sup>2</sup>/2 + q<sup>2</sup>/(gy) when β = 1. Its units are m<sup>2</sup>; the full-section function has units m<sup>3</sup>.</p>" +
-                        "<p>Horizontal-channel momentum balance, neglecting external drag over the short reach, equates the two M values. The resulting depths are <strong>conjugate or sequent</strong>. Equal specific force does not imply equal energy; pressure force balances the change in momentum flux.</p>",
+                    html: "<p>Momentum flux is <strong>βρQV</strong>, where β = ∫u<sup>2</sup>dA/(AV<sup>2</sup>). Energy uses α = ∫u<sup>3</sup>dA/(AV<sup>3</sup>); these correction factors are not interchangeable.</p><p>With hydrostatic end pressures, the specific-force function is M = A h̄ + βQ<sup>2</sup>/(gA), where h̄ is the area-centroid depth below the surface. For a rectangle <strong>per unit width</strong>, M = y<sup>2</sup>/2 + q<sup>2</sup>/(gy) when β = 1. Its units are m<sup>2</sup>; the full-section function has units m<sup>3</sup>.</p>",
+                    moreHtml: "<p>Horizontal-channel momentum balance, neglecting external drag over the short reach, equates the two M values. The resulting depths are <strong>conjugate or sequent</strong>. Equal specific force does not imply equal energy; pressure force balances the change in momentum flux.</p>",
                     sources: [
                         { id: "WATE701-00050", set: 6, question: 48 },
                         { id: "WATE701-00199", set: 18, question: 53 },
@@ -273,9 +264,8 @@
                 {
                     id: "hydraulic-jump-and-sequent-depth",
                     title: "Hydraulic jumps and downstream-depth compatibility",
-                    html: "<p>A jump converts supercritical approach flow to deeper subcritical flow over a short turbulent reach. A stationary jump is steady only in the time-averaged sense. Take sections outside the roller, where hydrostatic pressure is reasonable.</p>" +
-                        "<p>For a horizontal rectangular channel, negligible external drag and β = 1, momentum gives <strong>r = y<sub>2</sub>/y<sub>1</sub> = [√(1 + 8Fr<sub>1</sub><sup>2</sup>) − 1]/2</strong>. The bank's r = 16.48 gives Fr<sub>1</sub> = √[r(r + 1)/2] ≈ 12.00.</p>" +
-                        "<p>Adequate tailwater must support the conjugate depth at the jump location. Low tailwater can sweep the jump downstream; high tailwater can submerge it. Spillway toes, gate outlets and steep-to-mild transitions are possible locations, not guarantees. The usual sluice approach is subcritical, so its jump forms downstream, not upstream.</p>",
+                    html: "<p>A jump converts supercritical approach flow to deeper subcritical flow over a short turbulent reach. A stationary jump is steady only in the time-averaged sense. Take sections outside the roller, where hydrostatic pressure is reasonable.</p><p>For a horizontal rectangular channel, negligible external drag and β = 1, momentum gives <strong>r = y<sub>2</sub>/y<sub>1</sub> = [√(1 + 8Fr<sub>1</sub><sup>2</sup>) − 1]/2</strong>. The bank's r = 16.48 gives Fr<sub>1</sub> = √[r(r + 1)/2] ≈ 12.00.</p>",
+                    moreHtml: "<p>Adequate tailwater must support the conjugate depth at the jump location. Low tailwater can sweep the jump downstream; high tailwater can submerge it. Spillway toes, gate outlets and steep-to-mild transitions are possible locations, not guarantees. The usual sluice approach is subcritical, so its jump forms downstream, not upstream.</p>",
                     sources: [
                         { id: "WATE701-00050", set: 6, question: 48 },
                         { id: "WATE701-00052", set: 6, question: 50 },
@@ -362,9 +352,8 @@
                 {
                     id: "sediment-loads-and-driving-forces",
                     title: "Bed load, suspension, wash load and sediment supply",
-                    html: "<ul><li><strong>Bed load:</strong> grains roll, slide or saltate near the bed.</li><li><strong>Suspended load:</strong> turbulent mixing counteracts particle settling through the water column.</li><li><strong>Wash load:</strong> fine material poorly represented in the local bed; transport is strongly supply-controlled and commonly suspended.</li><li><strong>Dissolved load:</strong> solutes, not mechanically transported sediment grains.</li></ul>" +
-                        "<p>Downstream drag promotes grain movement, while lift, submerged weight, contact friction and exposure influence entrainment. Mean velocity is a useful indicator, not a complete threshold criterion. Turbulent upward fluctuations sustain suspension; gravity drives settling.</p>" +
-                        "<p>Floods often transport large sediment quantities because discharge and stresses increase. Actual load also depends on supply and previous erosion: peak sediment concentration need not coincide with peak discharge.</p>",
+                    html: "<ul><li><strong>Bed load:</strong> grains roll, slide or saltate near the bed.</li><li><strong>Suspended load:</strong> turbulent mixing counteracts particle settling through the water column.</li><li><strong>Wash load:</strong> fine material poorly represented in the local bed; transport is strongly supply-controlled and commonly suspended.</li><li><strong>Dissolved load:</strong> solutes, not mechanically transported sediment grains.</li></ul><p>Downstream drag promotes grain movement, while lift, submerged weight, contact friction and exposure influence entrainment. Mean velocity is a useful indicator, not a complete threshold criterion. Turbulent upward fluctuations sustain suspension; gravity drives settling.</p>",
+                    moreHtml: "<p>Floods often transport large sediment quantities because discharge and stresses increase. Actual load also depends on supply and previous erosion: peak sediment concentration need not coincide with peak discharge.</p>",
                     sources: [
                         { id: "HYDR626-00255", set: 28, question: 64 },
                         { id: "IRRI951-00032", set: 4, question: 77 },
@@ -377,9 +366,8 @@
                 {
                     id: "boundary-shear-and-shear-velocity",
                     title: "Tractive stress, shear velocity and inception of motion",
-                    html: "<p>The uniform-flow force balance gives mean boundary shear <strong>τ<sub>0</sub> = ρgRS = γRS</strong>, with S = S<sub>0</sub> = S<sub>f</sub>. Using local S<sub>f</sub> in slowly varying flow is an approximation. This is a wetted-perimeter average, not identical stress everywhere on bed and banks; for a wide rectangle, bed shear is approximately ρgyS.</p>" +
-                        "<p>Shear velocity u<sub>*</sub> = √(τ<sub>0</sub>/ρ) is a stress scale, not grain velocity. Critical shear τ<sub>c</sub> denotes inception of particle motion. The <strong>particle/shear Reynolds number</strong> is Re<sub>*</sub> = u<sub>*</sub>d/ν, distinct from bulk VR/ν.</p>" +
-                        "<p>With Darcy friction factor f, S<sub>f</sub> = fV<sup>2</sup>/(8gR) and τ<sub>0</sub> = fρV<sup>2</sup>/8. A single specific-energy value supplies neither S<sub>f</sub> nor f.</p>",
+                    html: "<p>The uniform-flow force balance gives mean boundary shear <strong>τ<sub>0</sub> = ρgRS = γRS</strong>, with S = S<sub>0</sub> = S<sub>f</sub>. Using local S<sub>f</sub> in slowly varying flow is an approximation. </p><p>Shear velocity u<sub>*</sub> = √(τ<sub>0</sub>/ρ) is a stress scale, not grain velocity. Critical shear τ<sub>c</sub> denotes inception of particle motion. The <strong>particle/shear Reynolds number</strong> is Re<sub>*</sub> = u<sub>*</sub>d/ν, distinct from bulk VR/ν.</p><p>With Darcy friction factor f, S<sub>f</sub> = fV<sup>2</sup>/(8gR) and τ<sub>0</sub> = fρV<sup>2</sup>/8. A single specific-energy value supplies neither S<sub>f</sub> nor f.</p>",
+                    moreHtml: "<p>This is a wetted-perimeter average, not identical stress everywhere on bed and banks; for a wide rectangle, bed shear is approximately ρgyS.</p>",
                     sources: [
                         { id: "IRRI951-00174", set: 17, question: 73 },
                         { id: "WATE701-00191", set: 17, question: 54 },
@@ -405,9 +393,8 @@
                 {
                     id: "mobile-boundary-design-and-bedforms",
                     title: "Mobile boundaries and stable-channel design approaches",
-                    html: "<p>A mobile bed changes geometry and roughness through erosion, deposition and bedforms. Sand may develop ripples and dunes after motion begins; stronger flows can produce upper-stage plane beds or antidunes. Increasing velocity does not guarantee one universal sequence.</p>" +
-                        "<p><strong>Permissible-velocity</strong> approaches screen mean velocity against material-dependent limits; <strong>tractive-force</strong> approaches compare bed and bank stresses with resistance. Empirical regime relations require comparable sediment and flow conditions. Transport-capacity and sediment-continuity approaches examine whether incoming load can pass without persistent aggradation or degradation.</p>" +
-                        "<p>Stable mobile equilibrium can include sediment motion; it is not synonymous with a non-scouring immobile boundary. Select geometry, slope and roughness together with sediment supply, grading, bank stability and varying flow. Hydraulic optimum alone cannot establish a stable design.</p>",
+                    html: "<p>A mobile bed changes geometry and roughness through erosion, deposition and bedforms. Sand may develop ripples and dunes after motion begins; stronger flows can produce upper-stage plane beds or antidunes. Increasing velocity does not guarantee one universal sequence.</p>",
+                    moreHtml: "<p><strong>Permissible-velocity</strong> approaches screen mean velocity against material-dependent limits; <strong>tractive-force</strong> approaches compare bed and bank stresses with resistance. Empirical regime relations require comparable sediment and flow conditions. Transport-capacity and sediment-continuity approaches examine whether incoming load can pass without persistent aggradation or degradation.</p><p>Stable mobile equilibrium can include sediment motion; it is not synonymous with a non-scouring immobile boundary. Select geometry, slope and roughness together with sediment supply, grading, bank stability and varying flow. Hydraulic optimum alone cannot establish a stable design.</p>",
                     sources: [
                         { id: "HYDR626-00256", set: 28, question: 65 },
                         { id: "IRRI951-00041", set: 5, question: 75 },
@@ -425,171 +412,757 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Misparenthesized sequent-depth key:</strong> the stored option places −1 outside the half multiplier. Correct is [√(1 + 8Fr<sub>1</sub><sup>2</sup>) − 1]/2, not 0.5√(1 + 8Fr<sub>1</sub><sup>2</sup>) − 1. The limiting check Fr<sub>1</sub> = 1 must give a depth ratio of 1. The explanation describes the correct grouping, but the keyed expression does not.</p>",
-                    sources: [{ id: "WATE701-00050", set: 6, question: 48 }]
-                },
-                {
-                    html: "<p><strong>Contradictory jump classification:</strong> Model 7 keys 1.7–4.5 as steady, although its own explanation and Model 6 identify approximately 4.5–9. The lower interval spans weak and oscillating jumps in the convention used here. Band boundaries and empirical lengths are not design acceptance rules.</p>",
-                    sources: [
-                        { id: "WATE701-00051", set: 6, question: 49 },
-                        { id: "WATE701-00061", set: 7, question: 48 },
-                        { id: "WATE701-00254", set: 23, question: 47 }
+                    "id": "check-wate701-00183",
+                    "status": "review",
+                    "prompt": "Calculate the total discharge through a rectangular channel having critical depth of 1.13m and the base width of the channel is 4m.",
+                    "html": "<p><strong>Critical-discharge option mismatch:</strong> y<sub>c</sub> = 1.13 m and b = 4 m give Q = 4√(9.81 × 1.13<sup>3</sup>) = 15.0492 m<sup>3</sup>/s. The stored 16 is merely the nearest offered value, not the computed result. This discrepancy is larger than ordinary final-digit rounding.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00183",
+                            "set": 1,
+                            "question": 52
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Corrupted lining options and ambiguous slope:</strong> the two surviving options are unreadable, so no reliable option expression can be reconstructed. Both side areas equal 2Ly√(1 + z<sup>2</sup>). The explanation assumes 5H:1V and obtains 2Ly√26; if the printed 1:5 means 1H:5V, the result is 2Ly√26/5 instead. Specify H:V and whether both sides or the bed are included.</p>",
-                    sources: [{ id: "IRRI951-00034", set: 4, question: 79 }]
-                },
-                {
-                    html: "<p><strong>Economical-section overgeneralization:</strong> the trapezoid key T = 2y is wrong for nonzero z; T = 2y√(1 + z<sup>2</sup>) at the fixed-z optimum. A half-hexagon requires the additional optimized side slope. The rectangle explanation's claim that every efficient section has R = y/2 also fails for the optimum triangle, whose R = y/(2√2).</p>",
-                    sources: [
-                        { id: "WATE701-00065", set: 7, question: 52 },
-                        { id: "WATE701-00071", set: 7, question: 58 },
-                        { id: "WATE701-00166", set: 15, question: 54 }
+                    "id": "check-irri951-00034",
+                    "status": "review",
+                    "prompt": "If an irrigation channel has a side slope of 1:5, width B, depth y and length L then total area of side slope is...",
+                    "html": "<p><strong>Corrupted lining options and ambiguous slope:</strong> the two surviving options are unreadable, so no reliable option expression can be reconstructed. Both side areas equal 2Ly√(1 + z<sup>2</sup>). The explanation assumes 5H:1V and obtains 2Ly√26; if the printed 1:5 means 1H:5V, the result is 2Ly√26/5 instead. Specify H:V and whether both sides or the bed are included.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00034",
+                            "set": 4,
+                            "question": 79
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Angle and width ambiguity:</strong> the printed 60′ is an angular-minute mark, whereas the explanation evidently intends 60°. A sloping side equals the <em>bottom</em> width only for the optimized half-hexagon, not for an arbitrary trapezoid with that side angle, and not for its top width.</p>",
-                    sources: [{ id: "WATE701-00223", set: 20, question: 54 }]
-                },
-                {
-                    html: "<p><strong>Unstated optimization and missing resistance:</strong> these maximum-discharge calculations presume b = 2y. A depth or width alone does not bound discharge while the other dimension is free to grow. The y = 3 m, S = 1/1000 item also omits C or n. Its explanation adds C = 50; that <em>illustrative extra assumption</em> gives Q = 34.8569 m<sup>3</sup>/s, not a uniquely determined answer from the stem.</p>",
-                    sources: [
-                        { id: "WATE701-00168", set: 15, question: 56 },
-                        { id: "WATE701-00170", set: 16, question: 49 },
-                        { id: "WATE701-00173", set: 16, question: 52 }
+                    "id": "check-wate701-00044",
+                    "status": "review",
+                    "prompt": "Calculate the critical shear stress for usual turbulent flow, given a mean diameter of grain particles in the bed material of 0.3 mm.",
+                    "html": "<p><strong>Shields inputs are missing:</strong> d = 0.3 mm and usual turbulent flow do not uniquely determine τ<sub>c</sub>. </p><p>As a separate <em>illustrative assumption</em>, quartz density 2650 kg/m<sup>3</sup>, water density 1000 kg/m<sup>3</sup> and θ<sub>c</sub> = 0.056 give 0.271933 Pa, not 0.206 Pa. </p><p>The latter would require θ<sub>c</sub> ≈ 0.04242 for those densities. </p><p>Neither threshold can be selected without the applicable particle-Reynolds regime and material conditions. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00044",
+                            "set": 5,
+                            "question": 55
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Incorrect Manning discharge key:</strong> assuming the intended economical rectangle, b = 5 m gives y = 2.5 m. With n = 0.020 and S = 1/500, Q = 32.4341 m<sup>3</sup>/s. The offered 32.43 is consistent; the stored key 31.43 and the explanation's trial arithmetic are not. The optimization assumption must still be stated.</p>",
-                    sources: [{ id: "WATE701-00169", set: 15, question: 57 }]
-                },
-                {
-                    html: "<p><strong>Cusec/cumec conflict:</strong> both triangular-channel stems say 117.6 cusec. A cusec is ft<sup>3</sup>/s, so this is about 3.33006 m<sup>3</sup>/s. With A = 66.72 m<sup>2</sup>, P = 24.03 m and S = 1/500, literal conversion gives n ≈ 1.77006 in SI, not an offered value. The keyed n ≈ 0.05 follows only by treating 117.6 as m<sup>3</sup>/s, which gives 0.05012. Do not silently change the discharge unit.</p>",
-                    sources: [
-                        { id: "WATE701-00062", set: 7, question: 49 },
-                        { id: "WATE701-00111", set: 11, question: 49 }
+                    "id": "check-irri951-00041",
+                    "status": "review",
+                    "prompt": "For the design of non-scouring channels in coarse alluviums, the shield’s entrainment function should be ……",
+                    "html": "<p>As a separate <em>illustrative assumption</em>, quartz density 2650 kg/m<sup>3</sup>, water density 1000 kg/m<sup>3</sup> and θ<sub>c</sub> = 0.056 give 0.271933 Pa, not 0.206 Pa. </p><p>The latter would require θ<sub>c</sub> ≈ 0.04242 for those densities. </p><p>The coarse-alluvium 0.056 key is not a universal Shields curve.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00041",
+                            "set": 5,
+                            "question": 75
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Triangular-channel Chezy key:</strong> 1H:4V means z = 0.25. With y = 5 m, R = 0.606339 m. E = 5.06 m and S = 1/1000 imply C = √[2g(E − y)/(RS)] ≈ 44.06 under uniform flow and α = 1. The nearest offered coefficient is 45, not the stored 50. Subtracting nearly equal rounded depths also limits precision.</p>",
-                    sources: [{ id: "WATE701-00180", set: 16, question: 59 }]
-                },
-                {
-                    html: "<p><strong>Datum and energy-branch wording:</strong> specific energy means energy per unit <em>weight</em> relative to the local bed, not energy per unit head. An unspecified fixed datum calls for total head H; the keyed specific-energy answer assumes that datum is the bed. The shallow-branch explanation also contains a contradictory sentence: at fixed Q, decreasing supercritical depth increases E.</p>",
-                    sources: [
-                        { id: "WATE701-00175", set: 16, question: 54 },
-                        { id: "WATE701-00178", set: 16, question: 57 },
-                        { id: "WATE701-00240", set: 21, question: 56 }
+                    "id": "check-wate701-00050",
+                    "status": "review",
+                    "prompt": "What is the formula of sequent depth?",
+                    "html": "<p><strong>Misparenthesized sequent-depth key:</strong> the stored option places −1 outside the half multiplier. Correct is [√(1 + 8Fr<sub>1</sub><sup>2</sup>) − 1]/2, not 0.5√(1 + 8Fr<sub>1</sub><sup>2</sup>) − 1. The limiting check Fr<sub>1</sub> = 1 must give a depth ratio of 1. The explanation describes the correct grouping, but the keyed expression does not.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00050",
+                            "set": 6,
+                            "question": 48
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Roughness cannot be recovered:</strong> the trapezoid's dimensions and slope do not determine n without Q or V, or equivalent additional information. Its 1H:2V slope means z = 0.5, not the explanation's 2. Geometry does not justify guessing n = 0.015.</p>",
-                    sources: [{ id: "WATE701-00189", set: 17, question: 52 }]
-                },
-                {
-                    html: "<p><strong>Missing friction-factor inputs:</strong> the 2 m × 3 m description does not clearly label depth versus width. Even after choosing an orientation and recovering V from E, Darcy f = 8gRS<sub>f</sub>/V<sup>2</sup> requires an energy slope or independent resistance information. The keyed 0.02 is not determined.</p>",
-                    sources: [{ id: "WATE701-00191", set: 17, question: 54 }]
-                },
-                {
-                    html: "<p><strong>Missing shear-stress inputs:</strong> y = 0.5 m, b = 0.8 m and E = 0.56 m determine V ≈ 1.085 m/s and R = 0.2222 m, but not S<sub>f</sub>. The keyed 3.32 Pa cannot be obtained without slope or resistance information. A point energy head is not an energy gradient; S<sub>f</sub> = −dH/dx, not dE/dx.</p>",
-                    sources: [{ id: "WATE701-00192", set: 17, question: 55 }]
-                },
-                {
-                    html: "<p><strong>Impossible specific-energy options:</strong> the trapezoid has y = 5 m, so E ≥ 5 m for nonnegative kinetic head. Every listed answer, 1.14–4.14 m, violates this. Neither C nor n is supplied. Correctly interpreting z = 0.25 and imposing economical geometry gives R = 2.5 m, but still cannot determine velocity or E.</p>",
-                    sources: [{ id: "WATE701-00194", set: 17, question: 57 }]
-                },
-                {
-                    html: "<p><strong>Critical-discharge option mismatch:</strong> y<sub>c</sub> = 1.13 m and b = 4 m give Q = 4√(9.81 × 1.13<sup>3</sup>) = 15.0492 m<sup>3</sup>/s. The stored 16 is merely the nearest offered value, not the computed result. This discrepancy is larger than ordinary final-digit rounding.</p>",
-                    sources: [{ id: "WATE701-00183", set: 1, question: 52 }]
-                },
-                {
-                    html: "<p><strong>Section-factor key and units:</strong> Q/V = 250/5 gives A = 50 m<sup>2</sup>; Z = 111.80 then gives D<sub>hyd</sub> ≈ 5 m. Model 20 keys 4 m despite its own calculation; Model 21 correctly keys 5 m. The section factor's printed unit m is also wrong: A√D<sub>hyd</sub> has units m<sup>5/2</sup>, including the separate Z = 40 example.</p>",
-                    sources: [
-                        { id: "WATE701-00221", set: 20, question: 52 },
-                        { id: "WATE701-00231", set: 21, question: 47 },
-                        { id: "WATE701-00238", set: 21, question: 54 }
+                    "id": "check-wate701-00051",
+                    "status": "review",
+                    "prompt": "Fr value for Steady jump",
+                    "html": "<p><strong>Contradictory jump classification:</strong> Model 7 keys 1.7–4.5 as steady, although its own explanation and Model 6 identify approximately 4.5–9. </p><p>The lower interval spans weak and oscillating jumps in the convention used here. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00051",
+                            "set": 6,
+                            "question": 49
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Two incorrect hydraulic-radius keys:</strong> Q = 75, V = 5 and rectangular D<sub>hyd</sub> = 3 give A = 15, b = 5, P = 11 and R = 1.3636 m, not 1.87 m. A = 12 and D<sub>hyd</sub> = 2 give b = 6, P = 10 and R = 1.2 m, not 1.5 m. Both correct values are already offered.</p>",
-                    sources: [
-                        { id: "WATE701-00228", set: 20, question: 58 },
-                        { id: "WATE701-00239", set: 21, question: 55 }
+                    "id": "check-wate701-00056",
+                    "status": "review",
+                    "prompt": "The area of a channel section is 8m² and the wetted perimeter is 8m. Calculate the value of the bed slope of the channel if the discharge is 33.33m³/s and manning's co efficient is 0.012",
+                    "html": "<p><strong>Dimensional and slope notation:</strong> the Chezy explanation incorrectly assigns length to slope. </p><p>In the slope example, 0.05 is √S, not S or 1/400; squaring produces S = 0.0025.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00056",
+                            "set": 6,
+                            "question": 54
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Missing ratios X:</strong> assuming a rectangle in the first item, X = R/D<sub>hyd</sub> = b/(b + 2y), so b = 6 gives y = 3(1/X − 1). In the second, X = y/b and A = 16 give b = √(16/X). Illustrative reconstruction of the keys requires X = 0.6 for y = 2, and X = 0.25 for b = 8 respectively. Neither value is supplied; they are not legitimate inferred givens.</p>",
-                    sources: [
-                        { id: "WATE701-00230", set: 20, question: 60 },
-                        { id: "WATE701-00232", set: 21, question: 48 }
+                    "id": "check-wate701-00057",
+                    "status": "review",
+                    "prompt": "In defining the Froude number which depth parameter is used",
+                    "html": "<p><strong>Froude number uses hydraulic depth A/T.</strong> Hydraulic radius A/P is a different quantity. “Hydraulic mean depth” is used inconsistently in the bank, so follow the defining equation.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00057",
+                            "set": 6,
+                            "question": 55
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Circular-section convention conflict:</strong> the bank uses hydraulic mean depth for R in its 0.286/0.304 diameter ratios, but uses that phrase for A/T elsewhere. Use the equations, not the ambiguous name. The maximum-Q depth depends on holding C or n constant; 0.95 is not universal. Under constant C the wetted perimeter is approximately 2.69 diameters, so the listed 2.6 is only a coarse approximation.</p>",
-                    sources: [
-                        { id: "WATE701-00057", set: 6, question: 55 },
-                        { id: "WATE701-00196", set: 18, question: 50 },
-                        { id: "WATE701-00197", set: 18, question: 51 },
-                        { id: "WATE701-00217", set: 19, question: 57 }
+                    "id": "check-wate701-00061",
+                    "status": "review",
+                    "prompt": "At what value of Froude number is the jump considered a steady jump?",
+                    "html": "<p><strong>Contradictory jump classification:</strong> Model 7 keys 1.7–4.5 as steady, although its own explanation and Model 6 identify approximately 4.5–9. </p><p>The lower interval spans weak and oscillating jumps in the convention used here. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00061",
+                            "set": 7,
+                            "question": 48
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Theoretical efficiency versus practical economy:</strong> WATE701-00218 and WATE701-00242 name trapezoidal as the unrestricted theoretical optimum, overlooking the semicircular free-surface section. A half-hexagon is the optimum trapezoid, not the optimum among all possible curves. WATE701-00216 instead combines discharge, wetted perimeter and excavation claims: hydraulic efficiency needs fixed roughness, slope and comparison constraints, while minimum construction cost additionally depends on excavation, side stability and lining.</p>",
-                    sources: [
-                        { id: "WATE701-00216", set: 19, question: 56 },
-                        { id: "WATE701-00218", set: 20, question: 49 },
-                        { id: "WATE701-00242", set: 22, question: 49 }
+                    "id": "check-wate701-00062",
+                    "status": "review",
+                    "prompt": "The area of a triangular section is 66.72m² and the wetted perimeter of the section is 24.03m. Calculate the value of the Manning's rugosity, if the bed slope of the channel is 1:500 and the discharge through the channel is 117.6 cusec",
+                    "html": "<p><strong>Cusec is not cumec.</strong> The printed 117.6 ft<sup>3</sup>/s is about 3.33006 m<sup>3</sup>/s. With A = 66.72 m<sup>2</sup>, P = 24.03 m and S = 1/500, Manning gives n about 1.77006. The keyed value near 0.05 requires a different discharge unit.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00062",
+                            "set": 7,
+                            "question": 49
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Flow-classification shortcuts:</strong> gradual spatial variation does not itself establish steadiness; the flood-wave item is explicitly unsteady. A stationary hydraulic jump has a steady mean but strong instantaneous fluctuations. Supercritical is not synonymous with turbulent or universally unstable, and a steep bed guarantees supercritical <em>normal</em> flow, not supercritical conditions at every station.</p>",
-                    sources: [
-                        { id: "WATE701-00070", set: 7, question: 57 },
-                        { id: "WATE701-00203", set: 18, question: 57 },
-                        { id: "WATE701-00215", set: 19, question: 55 },
-                        { id: "WATE701-00243", set: 22, question: 50 },
-                        { id: "WATE701-00253", set: 22, question: 60 },
-                        { id: "WATE701-00257", set: 23, question: 49 }
+                    "id": "check-wate701-00065",
+                    "status": "review",
+                    "prompt": "In case of most economical trapezoidal section top width is equals to",
+                    "html": "<p><strong>Economical-section overgeneralization:</strong> the trapezoid key T = 2y is wrong for nonzero z; T = 2y√(1 + z<sup>2</sup>) at the fixed-z optimum. </p><p>A half-hexagon requires the additional optimized side slope. </p><p>The rectangle explanation's claim that every efficient section has R = y/2 also fails for the optimum triangle, whose R = y/(2√2).</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00065",
+                            "set": 7,
+                            "question": 52
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Velocity-dip explanation:</strong> a maximum slightly below the surface is common in finite-width channels, but secondary currents and sidewall effects matter. Air shear alone is not a general explanation, and the bank's suggested fractional-depth range is not a universal location to impose on every channel.</p>",
-                    sources: [
-                        { id: "WATE701-00205", set: 18, question: 59 },
-                        { id: "WATE701-00208", set: 19, question: 48 }
+                    "id": "check-wate701-00070",
+                    "status": "review",
+                    "prompt": "When the flow in an open channel is gradually varied, the flow is said to be",
+                    "html": "<p><strong>Spatial and temporal classifications differ.</strong> Gradually varied means depth changes slowly along the channel. This alone does not establish steady flow; a flood wave can be gradually varied and unsteady.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00070",
+                            "set": 7,
+                            "question": 57
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Critical-slope and normal-depth errors:</strong> y<sub>n</sub> = y<sub>c</sub> removes the middle zone, leaving C1 and C3, not one zone or necessarily critical flow everywhere. For nonzero resisted flow, horizontal channels have no finite normal depth; infinity is a limiting shorthand. An adverse bed has no physical normal depth: an imaginary Manning result signals an inapplicable uniform-flow assumption, not an actual water depth.</p>",
-                    sources: [
-                        { id: "WATE701-00247", set: 22, question: 54 },
-                        { id: "WATE701-00249", set: 22, question: 56 },
-                        { id: "WATE701-00252", set: 22, question: 59 }
+                    "id": "check-wate701-00071",
+                    "status": "review",
+                    "prompt": "The value of hydraulic radius in most economical triangular channel is",
+                    "html": "<p><strong>Optimum triangular geometry:</strong> for a symmetric triangle at fixed area, the best side slope is 1H:1V and R = y/(2 sqrt(2)). The rectangular optimum R = y/2 does not apply.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00071",
+                            "set": 7,
+                            "question": 58
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Sediment shortcuts are conditional:</strong> drag is important but not completely responsible for entrainment; lift, weight and contact resistance also matter. Ripples and dunes are possible lower-regime bedforms, not a mandatory result of any velocity increase. Required critical <em>stress</em> is proportional to grain diameter only when submerged density and θ<sub>c</sub> are fixed. A force on one grain is not the same quantity as stress on the bed.</p>",
-                    sources: [
-                        { id: "HYDR626-00255", set: 28, question: 64 },
-                        { id: "HYDR626-00256", set: 28, question: 65 },
-                        { id: "IRRI951-00169", set: 17, question: 68 },
-                        { id: "WATE701-00261", set: 23, question: 53 }
+                    "id": "check-wate701-00111",
+                    "status": "review",
+                    "prompt": "The area of a triangular section is 66.72m2 and the wetted perimeter of the section is 24.03m. Calculate the value of the Manning’s rugosity, if the bed slope of the channel is 1:500 and the discharge through the channel is 117.6 cusec",
+                    "html": "<p><strong>Cusec is not cumec.</strong> The printed 117.6 ft<sup>3</sup>/s is about 3.33006 m<sup>3</sup>/s. With A = 66.72 m<sup>2</sup>, P = 24.03 m and S = 1/500, Manning gives n about 1.77006. The keyed value near 0.05 requires a different discharge unit.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00111",
+                            "set": 11,
+                            "question": 49
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Shields inputs are missing:</strong> d = 0.3 mm and usual turbulent flow do not uniquely determine τ<sub>c</sub>. As a separate <em>illustrative assumption</em>, quartz density 2650 kg/m<sup>3</sup>, water density 1000 kg/m<sup>3</sup> and θ<sub>c</sub> = 0.056 give 0.271933 Pa, not 0.206 Pa. The latter would require θ<sub>c</sub> ≈ 0.04242 for those densities. Neither threshold can be selected without the applicable particle-Reynolds regime and material conditions. The coarse-alluvium 0.056 key is not a universal Shields curve.</p>",
-                    sources: [
-                        { id: "IRRI951-00041", set: 5, question: 75 },
-                        { id: "WATE701-00044", set: 5, question: 55 },
-                        { id: "WATE701-00262", set: 23, question: 54 }
+                    "id": "check-wate701-00166",
+                    "status": "review",
+                    "prompt": "Depth and widths of a rectangular channel section are y and B respectively, determine the economical perimeter of the section.",
+                    "html": "<p><strong>Economical-section overgeneralization:</strong> the trapezoid key T = 2y is wrong for nonzero z; T = 2y√(1 + z<sup>2</sup>) at the fixed-z optimum. </p><p>The rectangle explanation's claim that every efficient section has R = y/2 also fails for the optimum triangle, whose R = y/(2√2).</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00166",
+                            "set": 15,
+                            "question": 54
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Dimensional and slope notation:</strong> the Chezy explanation incorrectly assigns length to slope. S is dimensionless, √(RS) has dimension L<sup>1/2</sup>, and C has dimension L<sup>1/2</sup>/time; the keyed dimension is correct despite the derivation. In the slope example, 0.05 is √S, not S or 1/400; squaring produces S = 0.0025.</p>",
-                    sources: [
-                        { id: "WATE701-00222", set: 20, question: 53 },
-                        { id: "WATE701-00056", set: 6, question: 54 }
+                    "id": "check-wate701-00168",
+                    "status": "review",
+                    "prompt": "Calculate the maximum discharge through a rectangular channel having depth 3m, bed slope of 1 in 1000.",
+                    "html": "<p><strong>Unstated optimization and missing resistance:</strong> these maximum-discharge calculations presume b = 2y. </p><p>The y = 3 m, S = 1/1000 item also omits C or n. </p><p>Its explanation adds C = 50; that <em>illustrative extra assumption</em> gives Q = 34.8569 m<sup>3</sup>/s, not a uniquely determined answer from the stem.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00168",
+                            "set": 15,
+                            "question": 56
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00169",
+                    "status": "review",
+                    "prompt": "Calculate the maximum discharge through a rectangular channel having width of 5m, bed slope of 1 in 500 and manning’s co efficient is 0.020.",
+                    "html": "<p><strong>Incorrect Manning discharge key:</strong> assuming the intended economical rectangle, b = 5 m gives y = 2.5 m. With n = 0.020 and S = 1/500, Q = 32.4341 m<sup>3</sup>/s. The offered 32.43 is consistent; the stored key 31.43 and the explanation's trial arithmetic are not. The optimization assumption must still be stated.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00169",
+                            "set": 15,
+                            "question": 57
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00170",
+                    "status": "review",
+                    "prompt": "The maximum discharge through a rectangular channel is 7.15m³/s, determine the depth of the channel where S0 = 1/2000 and C=40.",
+                    "html": "<p><strong>Unstated optimization and missing resistance:</strong> these maximum-discharge calculations presume b = 2y. </p><p>The y = 3 m, S = 1/1000 item also omits C or n. </p><p>Its explanation adds C = 50; that <em>illustrative extra assumption</em> gives Q = 34.8569 m<sup>3</sup>/s, not a uniquely determined answer from the stem.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00170",
+                            "set": 16,
+                            "question": 49
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00173",
+                    "status": "review",
+                    "prompt": "The ratio between maximum discharge and top width of a rectangular channel is 91:50, calculate the depth of the channel if the bed slope is 1 in 3000 and C = 50.",
+                    "html": "<p><strong>Unstated optimization and missing resistance:</strong> these maximum-discharge calculations presume b = 2y. </p><p>A depth or width alone does not bound discharge while the other dimension is free to grow. </p><p>The y = 3 m, S = 1/1000 item also omits C or n. </p><p>Its explanation adds C = 50; that <em>illustrative extra assumption</em> gives Q = 34.8569 m<sup>3</sup>/s, not a uniquely determined answer from the stem.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00173",
+                            "set": 16,
+                            "question": 52
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00175",
+                    "status": "review",
+                    "prompt": "What is energy per unit head of water called as ______.",
+                    "html": "<p><strong>Datum and energy-branch wording:</strong> specific energy means energy per unit <em>weight</em> relative to the local bed, not energy per unit head. </p><p>An unspecified fixed datum calls for total head H; the keyed specific-energy answer assumes that datum is the bed. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00175",
+                            "set": 16,
+                            "question": 54
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00178",
+                    "status": "review",
+                    "prompt": "Energy per unit weight of water measured with respect to the datum is called as______.",
+                    "html": "<p><strong>Datum and energy-branch wording:</strong> specific energy means energy per unit <em>weight</em> relative to the local bed, not energy per unit head. </p><p>An unspecified fixed datum calls for total head H; the keyed specific-energy answer assumes that datum is the bed. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00178",
+                            "set": 16,
+                            "question": 57
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00180",
+                    "status": "review",
+                    "prompt": "The specific energy of a triangular channel is 5.06m and the depth of the channel is 5m having side slope of 1H:4V then calculate the value of C. Given: S0=1 in 1000.",
+                    "html": "<p><strong>Triangular-channel Chezy key:</strong> 1H:4V means z = 0.25. With y = 5 m, R = 0.606339 m. E = 5.06 m and S = 1/1000 imply C = √[2g(E − y)/(RS)] ≈ 44.06 under uniform flow and α = 1. The nearest offered coefficient is 45, not the stored 50. Subtracting nearly equal rounded depths also limits precision.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00180",
+                            "set": 16,
+                            "question": 59
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00189",
+                    "status": "review",
+                    "prompt": "The depth of a trapezoidal channel section is 2m, base width of 2m and base a side slope of 1H:2V. Calculate n if the bed slope is 1 in 1000.",
+                    "html": "<p><strong>Roughness cannot be recovered:</strong> the trapezoid's dimensions and slope do not determine n without Q or V, or equivalent additional information. Its 1H:2V slope means z = 0.5, not the explanation's 2. Geometry does not justify guessing n = 0.015.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00189",
+                            "set": 17,
+                            "question": 52
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00191",
+                    "status": "review",
+                    "prompt": "The specific energy of a rectangular channel having dimensions 2m×3m is 3.095m. Calculate the friction factor.",
+                    "html": "<p><strong>Missing friction-factor inputs:</strong> the 2 m × 3 m description does not clearly label depth versus width. Even after choosing an orientation and recovering V from E, Darcy f = 8gRS<sub>f</sub>/V<sup>2</sup> requires an energy slope or independent resistance information. The keyed 0.02 is not determined.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00191",
+                            "set": 17,
+                            "question": 54
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00192",
+                    "status": "review",
+                    "prompt": "Calculate the average shear stress for a rectangular channel having depth 0.5m, width 0.8m if the specific energy is 0.56m.",
+                    "html": "<p><strong>Missing shear-stress inputs:</strong> y = 0.5 m, b = 0.8 m and E = 0.56 m determine V ≈ 1.085 m/s and R = 0.2222 m, but not S<sub>f</sub>. The keyed 3.32 Pa cannot be obtained without slope or resistance information. A point energy head is not an energy gradient; S<sub>f</sub> = −dH/dx, not dE/dx.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00192",
+                            "set": 17,
+                            "question": 55
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00194",
+                    "status": "review",
+                    "prompt": "Estimate the specific energy for the most economical trapezoidal channel section having depth of 5m, side slope of 1H:4V and bed slope of 1 in 1200.",
+                    "html": "<p><strong>Impossible specific-energy options:</strong> the trapezoid has y = 5 m, so E ≥ 5 m for nonnegative kinetic head. Every listed answer, 1.14–4.14 m, violates this. Neither C nor n is supplied. Correctly interpreting z = 0.25 and imposing economical geometry gives R = 2.5 m, but still cannot determine velocity or E.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00194",
+                            "set": 17,
+                            "question": 57
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00169",
+                    "status": "review",
+                    "prompt": "What type of force is completely responsible for the bed load movement?",
+                    "html": "<p><strong>Sediment shortcuts are conditional:</strong> drag is important but not completely responsible for entrainment; lift, weight and contact resistance also matter. </p><p>A force on one grain is not the same quantity as stress on the bed.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00169",
+                            "set": 17,
+                            "question": 68
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00196",
+                    "status": "review",
+                    "prompt": "Most economical section of a circular channel for maximum discharge",
+                    "html": "<p><strong>Circular-section convention conflict:</strong> the bank uses hydraulic mean depth for R in its 0.286/0.304 diameter ratios, but uses that phrase for A/T elsewhere. </p><p>Use the equations, not the ambiguous name. </p><p>The maximum-Q depth depends on holding C or n constant; 0.95 is not universal. </p><p>Under constant C the wetted perimeter is approximately 2.69 diameters, so the listed 2.6 is only a coarse approximation.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00196",
+                            "set": 18,
+                            "question": 50
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00197",
+                    "status": "review",
+                    "prompt": "Most economical section of a circular channel for maximum velocity, is if",
+                    "html": "<p><strong>Circular-section convention conflict:</strong> the bank uses hydraulic mean depth for R in its 0.286/0.304 diameter ratios, but uses that phrase for A/T elsewhere. </p><p>Use the equations, not the ambiguous name. </p><p>The maximum-Q depth depends on holding C or n constant; 0.95 is not universal. </p><p>Under constant C the wetted perimeter is approximately 2.69 diameters, so the listed 2.6 is only a coarse approximation.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00197",
+                            "set": 18,
+                            "question": 51
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00203",
+                    "status": "review",
+                    "prompt": "Super critical flow occurs in",
+                    "html": "<p>Supercritical is not synonymous with turbulent or universally unstable, and a steep bed guarantees supercritical <em>normal</em> flow, not supercritical conditions at every station.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00203",
+                            "set": 18,
+                            "question": 57
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00205",
+                    "status": "review",
+                    "prompt": "In an open channel",
+                    "html": "<p><strong>Velocity-dip explanation:</strong> a maximum slightly below the surface is common in finite-width channels, but secondary currents and sidewall effects matter. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00205",
+                            "set": 18,
+                            "question": 59
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00208",
+                    "status": "review",
+                    "prompt": "The maximum velocity in open channel occurs",
+                    "html": "<p><strong>Velocity-dip explanation:</strong> a maximum slightly below the surface is common in finite-width channels, but secondary currents and sidewall effects matter. </p><p>Air shear alone is not a general explanation, and the bank's suggested fractional-depth range is not a universal location to impose on every channel.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00208",
+                            "set": 19,
+                            "question": 48
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00215",
+                    "status": "review",
+                    "prompt": "When the flow in an open channel is gradually varied, the flow is said to be:",
+                    "html": "<p><strong>Spatial and temporal classifications differ.</strong> Gradually varied means depth changes slowly along the channel. This alone does not establish steady flow; a flood wave can be gradually varied and unsteady.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00215",
+                            "set": 19,
+                            "question": 55
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00216",
+                    "status": "review",
+                    "prompt": "A channel is said to be of most economical cross-section if",
+                    "html": "<p>A half-hexagon is the optimum trapezoid, not the optimum among all possible curves. </p><p>WATE701-00216 instead combines discharge, wetted perimeter and excavation claims: hydraulic efficiency needs fixed roughness, slope and comparison constraints, while minimum construction cost additionally depends on excavation, side stability and lining.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00216",
+                            "set": 19,
+                            "question": 56
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00217",
+                    "status": "review",
+                    "prompt": "The discharge through channel of circular section will be maximum when the depth of water is",
+                    "html": "<p><strong>Circular-section convention conflict:</strong> the bank uses hydraulic mean depth for R in its 0.286/0.304 diameter ratios, but uses that phrase for A/T elsewhere. </p><p>Use the equations, not the ambiguous name. </p><p>The maximum-Q depth depends on holding C or n constant; 0.95 is not universal. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00217",
+                            "set": 19,
+                            "question": 57
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00218",
+                    "status": "review",
+                    "prompt": "The most efficient channel section is",
+                    "html": "<p><strong>State the comparison constraints.</strong> Among unrestricted free-surface shapes at fixed flow area, a semicircle minimizes wetted perimeter. A half-hexagon is the optimum trapezoid, not the optimum among all possible curves. Practical cost and stable side slopes are additional constraints.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00218",
+                            "set": 20,
+                            "question": 49
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00221",
+                    "status": "review",
+                    "prompt": "The section factor of a rectangular channel is 111.80 m. The discharge and velocity of water are 250 m³/s and 5 m/s respectively. Hydraulic depth of the channel section is",
+                    "html": "<p><strong>Section-factor key and units:</strong> Q/V = 250/5 gives A = 50 m<sup>2</sup>; Z = 111.80 then gives D<sub>hyd</sub> ≈ 5 m. </p><p>Model 20 keys 4 m despite its own calculation; Model 21 correctly keys 5 m. </p><p>The section factor's printed unit m is also wrong: A√D<sub>hyd</sub> has units m<sup>5/2</sup>, including the separate Z = 40 example.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00221",
+                            "set": 20,
+                            "question": 52
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00222",
+                    "status": "review",
+                    "prompt": "The Chezy’s coefficient",
+                    "html": "<p><strong>Dimensional and slope notation:</strong> the Chezy explanation incorrectly assigns length to slope. </p><p>S is dimensionless, √(RS) has dimension L<sup>1/2</sup>, and C has dimension L<sup>1/2</sup>/time; the keyed dimension is correct despite the derivation. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00222",
+                            "set": 20,
+                            "question": 53
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00223",
+                    "status": "review",
+                    "prompt": "For a slope of 60’, the length of sloping side is",
+                    "html": "<p><strong>Angle and width ambiguity:</strong> the printed 60′ is an angular-minute mark, whereas the explanation evidently intends 60°. A sloping side equals the <em>bottom</em> width only for the optimized half-hexagon, not for an arbitrary trapezoid with that side angle, and not for its top width.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00223",
+                            "set": 20,
+                            "question": 54
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00228",
+                    "status": "corrected",
+                    "prompt": "The discharge and velocity of water in a rectangular channel are 75m³/s and 5m/s respectively. The hydraulic depth being 3m calculate the hydraulic radius.",
+                    "html": "<p><strong>Corrected: 1.36 m, option A.</strong> A = 75/5 = 15 m<sup>2</sup>, b = 5 m and P = 11 m, so R = 15/11 = 1.363636 m.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00228",
+                            "set": 20,
+                            "question": 58
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00230",
+                    "status": "review",
+                    "prompt": "The ratio of hydraulic radius and hydraulic depth is X and the top width of the channel is 6m, calculate the hydraulic depth of the channel.",
+                    "html": "<p><strong>Ratio X is missing.</strong> Under a rectangular-section assumption, X = R/y = b/(b + 2y); b = 6 m gives y = 3(1/X - 1). The keyed 2 m would additionally require X = 0.6, which is not supplied.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00230",
+                            "set": 20,
+                            "question": 60
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00231",
+                    "status": "review",
+                    "prompt": "The section factor of a rectangular channel is 111.80m. The discharge and velocity of water are 250 m³/s and 5 m/s respectively. Calculate the hydraulic depth of the channel.",
+                    "html": "<p><strong>Section-factor key and units:</strong> Q/V = 250/5 gives A = 50 m<sup>2</sup>; Z = 111.80 then gives D<sub>hyd</sub> ≈ 5 m. </p><p>Model 20 keys 4 m despite its own calculation; Model 21 correctly keys 5 m. </p><p>The section factor's printed unit m is also wrong: A√D<sub>hyd</sub> has units m<sup>5/2</sup>, including the separate Z = 40 example.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00231",
+                            "set": 21,
+                            "question": 47
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00232",
+                    "status": "review",
+                    "prompt": "The ratio between depth and width of a rectangular channel is X and the area of the rectangular section is 16m². Calculate the top width of the channel.",
+                    "html": "<p><strong>Ratio X is missing.</strong> With X = y/b and area 16 m<sup>2</sup>, width is sqrt(16/X). The keyed 8 m requires X = 0.25; that value cannot be inferred merely from the offered choices.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00232",
+                            "set": 21,
+                            "question": 48
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00238",
+                    "status": "review",
+                    "prompt": "The section factor and hydraulic depth for a rectangular channel are 40m and 4m respectively. Determine the top width of the channel.",
+                    "html": "<p><strong>Section-factor key and units:</strong> Q/V = 250/5 gives A = 50 m<sup>2</sup>; Z = 111.80 then gives D<sub>hyd</sub> ≈ 5 m. </p><p>Model 20 keys 4 m despite its own calculation; Model 21 correctly keys 5 m. </p><p>The section factor's printed unit m is also wrong: A√D<sub>hyd</sub> has units m<sup>5/2</sup>, including the separate Z = 40 example.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00238",
+                            "set": 21,
+                            "question": 54
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00239",
+                    "status": "corrected",
+                    "prompt": "The hydraulic depth of a rectangular channel is 2m and its wetted area is 12m². Estimate its hydraulic radius.",
+                    "html": "<p><strong>Corrected: 1.2 m, option A.</strong> Width = 12/2 = 6 m and wetted perimeter = 10 m; therefore R = 12/10 = 1.2 m.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00239",
+                            "set": 21,
+                            "question": 55
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00240",
+                    "status": "review",
+                    "prompt": "When the depth of flow is less than critical depth, the specific energy",
+                    "html": "<p>The shallow-branch explanation also contains a contradictory sentence: at fixed Q, decreasing supercritical depth increases E.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00240",
+                            "set": 21,
+                            "question": 56
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00242",
+                    "status": "review",
+                    "prompt": "The most efficient theoretical section to get maximum discharge for a given cross section is",
+                    "html": "<p><strong>State the comparison constraints.</strong> Among unrestricted free-surface shapes at fixed flow area, a semicircle minimizes wetted perimeter. A half-hexagon is the optimum trapezoid, not the optimum among all possible curves. Practical cost and stable side slopes are additional constraints.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00242",
+                            "set": 22,
+                            "question": 49
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00243",
+                    "status": "review",
+                    "prompt": "A flood wave in river is an example of",
+                    "html": "<p><strong>Flow-classification shortcuts:</strong> gradual spatial variation does not itself establish steadiness; the flood-wave item is explicitly unsteady. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00243",
+                            "set": 22,
+                            "question": 50
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00247",
+                    "status": "review",
+                    "prompt": "For a channel with horizontal bottom, the normal depth of flow will be",
+                    "html": "<p><strong>Critical-slope and normal-depth errors:</strong> y<sub>n</sub> = y<sub>c</sub> removes the middle zone, leaving C1 and C3, not one zone or necessarily critical flow everywhere. </p><p>For nonzero resisted flow, horizontal channels have no finite normal depth; infinity is a limiting shorthand. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00247",
+                            "set": 22,
+                            "question": 54
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00249",
+                    "status": "review",
+                    "prompt": "In adverse flow, the normal depth of flow is",
+                    "html": "<p><strong>Critical-slope and normal-depth errors:</strong> y<sub>n</sub> = y<sub>c</sub> removes the middle zone, leaving C1 and C3, not one zone or necessarily critical flow everywhere. </p><p>An adverse bed has no physical normal depth: an imaginary Manning result signals an inapplicable uniform-flow assumption, not an actual water depth.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00249",
+                            "set": 22,
+                            "question": 56
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00252",
+                    "status": "review",
+                    "prompt": "In case of surface profile in critically sloped channels, there may exist",
+                    "html": "<p><strong>Critical slope removes the middle zone.</strong> Normal and critical depths coincide, leaving the C1 and C3 profile zones. That does not force the actual depth to equal critical depth everywhere.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00252",
+                            "set": 22,
+                            "question": 59
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00253",
+                    "status": "review",
+                    "prompt": "The rise of water level, which takes place due to the transformation of the unstable super critical flow to the stable sub critical flow is called",
+                    "html": "<p>A stationary hydraulic jump has a steady mean but strong instantaneous fluctuations. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00253",
+                            "set": 22,
+                            "question": 60
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00254",
+                    "status": "review",
+                    "prompt": "For rectangular channel, length of hydraulic jump is",
+                    "html": "<p>The lower interval spans weak and oscillating jumps in the convention used here. </p><p>Band boundaries and empirical lengths are not design acceptance rules.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00254",
+                            "set": 23,
+                            "question": 47
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00257",
+                    "status": "review",
+                    "prompt": "Hydraulic jump is a",
+                    "html": "<p>A stationary hydraulic jump has a steady mean but strong instantaneous fluctuations. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00257",
+                            "set": 23,
+                            "question": 49
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00261",
+                    "status": "review",
+                    "prompt": "The tractive force in mobile boundary channel is",
+                    "html": "<p>Required critical <em>stress</em> is proportional to grain diameter only when submerged density and θ<sub>c</sub> are fixed. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00261",
+                            "set": 23,
+                            "question": 53
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00262",
+                    "status": "review",
+                    "prompt": "The curve obtained by plotting shear Reynold’s number (along x-axis) and tractive force (along y-axis) is known as",
+                    "html": "<p>As a separate <em>illustrative assumption</em>, quartz density 2650 kg/m<sup>3</sup>, water density 1000 kg/m<sup>3</sup> and θ<sub>c</sub> = 0.056 give 0.271933 Pa, not 0.206 Pa. </p><p>The latter would require θ<sub>c</sub> ≈ 0.04242 for those densities. </p><p>Neither threshold can be selected without the applicable particle-Reynolds regime and material conditions. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00262",
+                            "set": 23,
+                            "question": 54
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00255",
+                    "status": "review",
+                    "prompt": "The basic mechanism behind the phenomenon of sediment transport is ______.",
+                    "html": "<p><strong>Entrainment involves a force balance.</strong> Flow drag and lift act against submerged weight and contact resistance. Drag is important but is not the sole mechanism responsible for all sediment movement.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00255",
+                            "set": 28,
+                            "question": 64
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00256",
+                    "status": "review",
+                    "prompt": "On increasing velocity beyond threshold stage of motion, bed develops ______ shape.",
+                    "html": "<p>Ripples and dunes are possible lower-regime bedforms, not a mandatory result of any velocity increase. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00256",
+                            "set": 28,
+                            "question": 65
+                        }
                     ]
                 }
             ]

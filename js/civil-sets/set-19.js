@@ -63,15 +63,15 @@ const CIVIL_MODEL_19 = {
                 {
                     id: "cm19q003",
                     src: "BASI674-00231",
-                    text: "The error due to sag of tape or chain is known as",
+                    text: "When a sagging tape reading is used without applying sag correction, the recorded-distance error is",
                     options: [
                         { key: "a", text: "Positive error" },
                         { key: "b", text: "Negative error" },
                         { key: "c", text: "Compensating error" },
                         { key: "d", text: "None of above" }
                     ],
-                    answer: "b",
-                    explanation: "Sag causes the tape to curve downwards, making the measured distance longer than the actual horizontal distance. Thus, the correction is subtractive (negative)."
+                    answer: "a",
+                    explanation: "A sagging tape follows a curve longer than the straight horizontal distance between its supports. The uncorrected recorded length therefore exceeds the true length: a positive error. The correction applied to remove that error is negative. The question now distinguishes error from correction."
                 },
                 {
                     id: "cm19q004",
@@ -979,10 +979,10 @@ const CIVIL_MODEL_19 = {
                         { key: "a", text: "10 hectares per cu.m/s" },
                         { key: "b", text: "664 hectares per cu.m/s" },
                         { key: "c", text: "3000 hectares per cu.m/s" },
-                        { key: "d", text: "100 hectares per cu.m/s" }
+                        { key: "d", text: "1000 hectares per cu.m/s" }
                     ],
                     answer: "d",
-                    explanation: "The relationship is D = (8.64 * B) / Δ. First, convert depth to meters: Δ = 8.64 cm = 0.0864 m. Then, D = (8.64 * 10) / 0.0864 = 86.4 / 0.0864 = 1000 ha/cumec. Note: The option '100 hectares per cu.m/s' is likely a typo and should be 1000, but it is the closest listed answer."
+                    explanation: "Convert \\(8.64\\,\\mathrm{cm}=0.0864\\,\\mathrm{m}\\). Then \\(D=\\dfrac{8.64B}{\\Delta_m}=\\dfrac{8.64(10)}{0.0864}=1000\\,\\mathrm{ha/cumec}\\). The former 100 ha/cumec option was a tenfold error and has been replaced."
                 },
                 {
                     id: "cm19q070",

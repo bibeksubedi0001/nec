@@ -906,8 +906,8 @@ const CIVIL_MODEL_10 = {
                         { key: "c", text: "300-1000" },
                         { key: "d", text: "10-35" }
                     ],
-                    answer: "b",
-                    explanation: "Calculate the specific speed using N_s = N√P / H^(5/4). The value falls within the range for Francis turbines, which is typically 60-300, but the calculated value should be verified. The options suggest a misprint; the correct range for a Francis turbine (medium specific speed) is 60-300, but the calculation might yield a value around 50-60, making (d) the closest intended answer."
+                    answer: "d",
+                    explanation: "Using the stated hp-m-rpm convention, \\(n_s=\\dfrac{N\\sqrt{P}}{H^{5/4}}=\\dfrac{300\\sqrt{2000}}{150^{5/4}}=25.5577\\). This lies in 10-35, not 35-60. Conventional specific speed depends on the power and head units; speculation about turbine family does not override the calculation."
                 },
                 {
                     id: "cm10q065",

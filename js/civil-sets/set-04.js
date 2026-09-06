@@ -67,11 +67,11 @@ const CIVIL_MODEL_4 = {
                     options: [
                         { key: "a", text: "coping" },
                         { key: "b", text: "frieze" },
-                        { key: "c", text: "cornice" },
+                        { key: "c", text: "Corbel" },
                         { key: "d", text: "lintel" }
                     ],
                     answer: "c",
-                    explanation: "A corbel or projecting cornice course is built out from the wall face to give a truss or beam a bearing surface. Coping caps the top of a wall to throw water off, a frieze is a decorative band and a lintel spans an opening."
+                    explanation: "A corbel projects from a wall or column to support a beam or truss. Coping protects the wall top, a frieze is a decorative band, and a lintel spans an opening. The former cornice option has been replaced with the structural term corbel."
                 },
                 {
                     id: "cm4q004",
@@ -621,15 +621,15 @@ const CIVIL_MODEL_4 = {
                 {
                     id: "cm4q044",
                     src: "SOIL136-00036",
-                    text: "How will the water table affect the effective stress if it rises above GL?",
+                    text: "For soil already saturated to ground level, what happens to effective vertical stress at a fixed point when additional still water ponds above the ground under hydrostatic conditions?",
                     options: [
                         { key: "a", text: "effective stress increases" },
                         { key: "b", text: "no effect" },
                         { key: "c", text: "effective stress may increase or decrease" },
                         { key: "d", text: "effective stress decreases" }
                     ],
-                    answer: "d",
-                    explanation: "Raising the water table above ground level adds the same weight of water to both the total stress and the pore pressure, so the effective stress in the soil below stays unchanged. Raising it within the soil, however, buoys the grains and does reduce the effective stress."
+                    answer: "b",
+                    explanation: "Added standing-water depth raises total vertical stress and hydrostatic pore-water pressure by the same amount, water unit weight times the added depth. Since effective stress is total stress minus pore pressure, the effective vertical stress does not change. This is not the different case of a water table rising through initially unsaturated soil."
                 },
                 {
                     id: "cm4q045",

@@ -75,15 +75,17 @@
     const hasTopic = (code) => CODES.includes(code);
     const text = (value) => String(value || "").replace(/<[^>]*>/g, " ").replace(/&(?:amp|nbsp|lt|gt|quot);/g, " ").replace(/\s+/g, " ").trim().toLowerCase();
     const sourcesOf = (topic) => [...new Map([...topic.blocks, ...topic.cautions].flatMap((block) => block.sources).map((source) => [source.id, source])).values()];
+    const checkId = (item, index) => item.id || "caution-" + index;
+    const checkTitle = (item) => item.sources.length ? `Model ${item.sources[0].set} · Q${item.sources[0].question}` : "Reference check";
 
     function search(topics, query) {
         const terms = text(query).split(" ").filter(Boolean);
         if (!terms.length) return [];
         return topics.flatMap((topic) => [
             ...topic.blocks.map((block) => ({ ...block, code: topic.code, kind: "note" })),
-            ...topic.cautions.map((item, i) => ({ ...item, id: "caution-" + i, title: topic.questionCount ? "Bank check" : "Reference check", code: topic.code, kind: "caution" }))
+            ...topic.cautions.map((item, index) => ({ ...item, id: checkId(item, index), title: checkTitle(item), code: topic.code, kind: "caution" }))
         ]).filter((block) => {
-            const content = text(block.title + " " + block.html + " " + block.code + " " + block.sources.map((source) => source.id).join(" "));
+            const content = text(block.title + " " + (block.prompt || "") + " " + block.html + " " + (block.moreHtml || "") + " " + block.code + " " + block.sources.map((source) => source.id).join(" "));
             return terms.every((term) => content.includes(term));
         });
     }
@@ -181,6 +183,18 @@
             return (topic.references || []).length ? `<details class="cn-sources"><summary>Standards checked</summary><ul>${topic.references.filter((ref) => /^https:\/\//.test(ref.url)).map((ref) => `<li><a href="${esc(ref.url)}" target="_blank" rel="noopener noreferrer">${esc(ref.title)}</a></li>`).join("")}</ul></details>` : "";
         }
 
+        function proseHtml(block, expand = false) {
+            return `<div class="cn-prose">${block.html}</div>${block.moreHtml ? `<details class="cn-more"${expand ? " open" : ""}><summary>Further reasoning and context</summary><div class="cn-prose">${block.moreHtml}</div></details>` : ""}`;
+        }
+
+        function checkHtml(item, code, index) {
+            const source = item.sources[0];
+            const corrected = item.status === "corrected";
+            return `<details class="cn-caution" id="cn-${code}-${checkId(item, index)}" data-cn-check="${source ? esc(source.id) : "reference"}" data-check-status="${corrected ? "corrected" : "review"}" tabindex="-1">
+                <summary><span class="cn-check-label">${esc(checkTitle(item))}<span class="cn-check-status">${corrected ? "Corrected" : source ? "Review note" : "Scope note"}</span></span>${item.prompt ? `<span class="cn-check-prompt">${esc(item.prompt)}</span>` : ""}</summary>
+                <div class="cn-check-content">${proseHtml(item)}${source ? `<button type="button" class="cn-button cn-secondary" data-cn-source="${esc(source.id)}">Read this question ${uiIcon("arrow-up-right")}</button>` : ""}</div></details>`;
+        }
+
         function figuresHtml(code, blockId) {
             const figures = window.CIVIL_NOTE_FIGURES?.topics[code] || [];
             return figures.filter((figure) => figure.block === blockId).map((figure) => `<figure class="cn-figure">
@@ -215,9 +229,9 @@
                     <div class="cn-actions"><button type="button" class="cn-button" data-cn-session="practice" data-topic="${code}"${sessionDisabled}>Practice topic</button><button type="button" class="cn-button cn-secondary" data-cn-session="exam" data-topic="${code}"${sessionDisabled}>Exam</button></div></header>
                 <details class="cn-scope" open><summary>Syllabus scope</summary><p>${esc(meta.detail)}</p></details>
                 <nav class="cn-contents" aria-label="Contents of ${esc(meta.number)}">${topic.blocks.map((block) => `<a href="#cn-${code}-${block.id}" data-cn-jump="cn-${code}-${block.id}">${esc(block.title)}</a>`).join("")}</nav>
-                ${topic.blocks.map((block) => `<section class="cn-block" id="cn-${code}-${block.id}" tabindex="-1"><h4>${esc(block.title)}</h4><div class="cn-prose">${block.html}</div>${figuresHtml(code, block.id)}${references(block.sources)}</section>`).join("")}
-                <section class="cn-checks" id="cn-${code}-checks"><h4>${topic.questionCount ? "Bank checks" : "Reference checks"}</h4>${topic.cautions.map((item, i) => `<div class="cn-caution" id="cn-${code}-caution-${i}" tabindex="-1"><div class="cn-prose">${item.html}</div>${references(item.sources)}</div>`).join("")}${externalReferences(topic)}</section>
-                <section class="cn-gaps"><h4>Coverage gaps</h4><ul>${topic.gaps.map((gap) => `<li>${esc(gap)}</li>`).join("")}</ul></section>
+                ${topic.blocks.map((block) => `<section class="cn-block" id="cn-${code}-${block.id}" tabindex="-1"><h4>${esc(block.title)}</h4>${proseHtml(block)}${figuresHtml(code, block.id)}${references(block.sources)}</section>`).join("")}
+                <section class="cn-checks" id="cn-${code}-checks"><details class="cn-check-index"><summary>${topic.questionCount ? "Question checks" : "Reference checks"} (${topic.cautions.length})</summary>${topic.cautions.map((item, index) => checkHtml(item, code, index)).join("")}</details>${externalReferences(topic)}</section>
+                <details class="cn-gaps"><summary>Scope and limits</summary><ul>${topic.gaps.map((gap) => `<li>${esc(gap)}</li>`).join("")}</ul></details>
                 <footer class="cn-pagination"><button type="button" class="cn-button cn-secondary" data-cn-topic="${codes[index - 1] || code}"${index === 0 ? " disabled" : ""}>${uiIcon("arrow-left")} Previous subchapter</button><button type="button" class="cn-button" data-cn-topic="${codes[index + 1] || code}"${index === codes.length - 1 ? " disabled" : ""}>Next subchapter ${uiIcon("arrow-right")}</button></footer>
             </article>`;
         }
@@ -229,7 +243,7 @@
             const results = search(chapterCodes(selectedChapterId).map((code) => window.CIVIL_NOTE_TOPICS[code]), query);
             replace(reader, `<div class="cn-search-summary" role="status"><b>${results.length} matching sections</b><button type="button" class="cn-button cn-secondary" data-cn-clear>Clear search</button></div>${results.length ? results.map((block) => {
                 const meta = topicMap.get(block.code);
-                return `<article class="cn-search-result"><span class="cn-code">${esc(meta.number + " " + meta.name)}</span><h3>${esc(block.title)}</h3><div class="cn-prose">${block.html}</div>${figuresHtml(block.code, block.id)}<button type="button" class="cn-button cn-secondary" data-cn-topic="${block.code}" data-cn-block="${block.id}">Open subchapter ${uiIcon("arrow-right")}</button></article>`;
+                return `<article class="cn-search-result"><span class="cn-code">${esc(meta.number + " " + meta.name)}</span><h3>${esc(block.title)}</h3>${block.prompt ? `<p class="cn-check-prompt">${esc(block.prompt)}</p>` : ""}${proseHtml(block, true)}${figuresHtml(block.code, block.id)}<button type="button" class="cn-button cn-secondary" data-cn-topic="${block.code}" data-cn-block="${block.id}">Open subchapter ${uiIcon("arrow-right")}</button></article>`;
             }).join("") : '<div class="cn-empty">No matching notes. Try a topic, formula name or source question ID.</div>'}`);
         }
 
@@ -251,7 +265,7 @@
                 content.querySelectorAll("#cnSearchForm :disabled, .cn-topics > button").forEach((node) => { node.disabled = false; });
                 $("cnReader").setAttribute("aria-busy", "false");
                 const count = codes.reduce((sum, code) => sum + window.CIVIL_NOTE_TOPICS[code].questionCount, 0);
-                $("cnAboutText").textContent = `Study notes organized by the supplied NEC syllabus and the ${count} questions mapped to Chapter ${chapter.number}. Source links open the original model items without recording an attempt. Bank checks flag errors or uncertain wording; worked extensions and untested syllabus areas are labelled. These are authored study notes, not NEC-issued guidance. Original model keys and saved results are unchanged.`;
+                $("cnAboutText").textContent = `Authored study notes for the supplied NEC syllabus and ${count} mapped Chapter ${chapter.number} questions. Worked extensions use labelled assumptions. Question checks identify verified corrections and unresolved wording. These are not NEC-issued notes. Reading does not record attempts or change saved results.`;
                 content.querySelector(".cn-about").hidden = false;
                 renderBody();
             } catch (error) {
@@ -264,6 +278,10 @@
         function focusBlock(id) {
             const target = $(id);
             if (!target || !$("cnReader").contains(target)) return;
+            for (let node = target; node && node !== $("cnReader"); node = node.parentElement) {
+                if (node.tagName === "DETAILS") node.open = true;
+            }
+            target.querySelectorAll(".cn-more").forEach((detail) => { detail.open = true; });
             target.focus({ preventScroll: true });
             target.scrollIntoView({ block: "start", behavior: "auto" });
         }
@@ -285,9 +303,9 @@
                 const q = data.chapters.flatMap((chapter) => chapter.questions)[ref.question - 1];
                 if (!q || (q.src || q.id) !== id) throw new Error("This reference no longer matches the source paper.");
                 const checks = topic.cautions.filter((item) => item.sources.some((source) => source.id === id));
-                replace(sourceBody, `<span class="cn-code">${esc(id)}</span>${checks.length ? `<section class="cn-source-check"><h3>Bank check</h3><div class="cn-prose">${checks.map((check) => check.html).join("")}</div>${externalReferences(topic)}</section>` : ""}<div class="cn-source-question">${q.text}</div>
+                replace(sourceBody, `<span class="cn-code">${esc(id)}</span>${checks.length ? `<section class="cn-source-check"><h3>${checks.some((check) => check.status === "corrected") ? "Corrected question" : "Question check"}</h3><div class="cn-prose">${checks.map((check) => check.html).join("")}</div>${externalReferences(topic)}</section>` : ""}<div class="cn-source-question">${q.text}</div>
                     <ol class="cn-source-options" type="a">${q.options.map((option) => `<li value="${option.key.charCodeAt(0) - 96}">${option.text}</li>`).join("")}</ol>
-                    <details class="cn-stored-answer"><summary>Stored answer and explanation</summary><p><strong>Bank key: ${esc(q.answer.toUpperCase())}</strong></p><div>${q.explanation || "No explanation is stored for this item."}</div></details>`);
+                    <details class="cn-stored-answer"><summary>Answer and explanation</summary><p><strong>Answer: ${esc(q.answer.toUpperCase())}</strong></p><div>${q.explanation || "No explanation is stored for this item."}</div></details>`);
             } catch (error) {
                 if (token !== sourceSerial || !dialog.open || !isOpen()) return;
                 replace(sourceBody, `<div role="alert"><p>${esc(error.message)}</p><button type="button" class="cn-button" data-cn-source="${esc(id)}">Retry source</button></div>`);

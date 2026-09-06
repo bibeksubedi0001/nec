@@ -11,8 +11,8 @@
                 {
                     id: "soil-origin-and-fabric",
                     title: "Origin, mineralogy and soil fabric",
-                    html: "<p>Origin describes deposition; fabric describes particle arrangement. <strong>Alluvium</strong> is river-deposited sediment, not a guarantee of flat ground or hard foundations. Lacustrine means lake-deposited. Kathmandu deposits cannot all be identified as black cotton soil from colour. Organic soils may be spongy and highly compressible.</p>" +
-                        "<p>Single-grain contacts typify sands and gravels; open honeycomb fabrics can occur in silts. Clay platelets may be flocculated or more parallel/dispersed. Size alone does not determine fabric. Montmorillonite can absorb interlayer water and swell; wetting-induced void expansion is <strong>swelling</strong>, not compression. Gradation, mineralogy, fabric, density and water state jointly govern engineering behaviour.</p>",
+                    html: "<p>Origin describes deposition; fabric describes particle arrangement. <strong>Alluvium</strong> is river-deposited sediment, not a guarantee of flat ground or hard foundations. Lacustrine means lake-deposited. Kathmandu deposits cannot all be identified as black cotton soil from colour. Organic soils may be spongy and highly compressible.</p>",
+                    moreHtml: "<p>Single-grain contacts typify sands and gravels; open honeycomb fabrics can occur in silts. Clay platelets may be flocculated or more parallel/dispersed. Size alone does not determine fabric. Montmorillonite can absorb interlayer water and swell; wetting-induced void expansion is <strong>swelling</strong>, not compression. Gradation, mineralogy, fabric, density and water state jointly govern engineering behaviour.</p>",
                     sources: [
                         { id: "IRRI951-00136", set: 14, question: 70 },
                         { id: "SOIL136-00010", set: 2, question: 44 },
@@ -91,12 +91,8 @@
                 {
                     id: "soil-size-classification-systems",
                     title: "USCS, ISI/IS and MIT distinctions",
-                    html: "<p>USCS developed from Arthur Casagrande's wartime airfield classification; 'Tasagrande' is a bank typo. <strong>Syllabus comparison:</strong> name the scheme before applying conventional particle-size boundaries, in millimetres.</p>" +
-                        "<table><thead><tr><th scope='col'>Scheme</th><th scope='col'>Gravel/sand</th><th scope='col'>Sand/fines</th><th scope='col'>Silt/clay distinction</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>USCS</th><td>4.75</td><td>0.075</td><td>Plasticity for M/C groups, not a 0.002 mm group boundary.</td></tr>" +
-                        "<tr><th scope='row'>ISI/IS size bands</th><td>4.75</td><td>0.075</td><td>0.002 for particle-size fractions.</td></tr>" +
-                        "<tr><th scope='row'>MIT size bands</th><td>2</td><td>0.06</td><td>0.002 for particle-size fractions.</td></tr></tbody></table>" +
-                        "<p>A clay-sized particle need not be a clay mineral. IS engineering classification also uses plasticity; its intermediate fine-soil category is not a USCS category. These schemes describe soil, not permissible foundation pressures.</p>",
+                    html: "<p>USCS developed from Arthur Casagrande's wartime airfield classification; 'Tasagrande' is a bank typo. <strong>Syllabus comparison:</strong> name the scheme before applying conventional particle-size boundaries, in millimetres.</p><table><thead><tr><th scope='col'>Scheme</th><th scope='col'>Gravel/sand</th><th scope='col'>Sand/fines</th><th scope='col'>Silt/clay distinction</th></tr></thead><tbody><tr><th scope='row'>USCS</th><td>4.75</td><td>0.075</td><td>Plasticity for M/C groups, not a 0.002 mm group boundary.</td></tr><tr><th scope='row'>ISI/IS size bands</th><td>4.75</td><td>0.075</td><td>0.002 for particle-size fractions.</td></tr><tr><th scope='row'>MIT size bands</th><td>2</td><td>0.06</td><td>0.002 for particle-size fractions.</td></tr></tbody></table>",
+                    moreHtml: "<p>A clay-sized particle need not be a clay mineral. IS engineering classification also uses plasticity; its intermediate fine-soil category is not a USCS category. These schemes describe soil, not permissible foundation pressures.</p>",
                     sources: [
                         { id: "SOIL136-00133", set: 12, question: 34 },
                         { id: "SOIL136-00134", set: 12, question: 35 },
@@ -109,9 +105,8 @@
                 {
                     id: "soil-sieve-analysis-gradation",
                     title: "Sieve interpretation and grading coefficients",
-                    html: "<p>Use representative dry mass M, decreasing sieve openings and a bottom pan; check recovered mass. Percentage retained = 100m<sub>i</sub>/M; percentage passing = 100 − cumulative percentage retained. Sieve analysis resolves coarse fractions; sedimentation analysis of finer particles is syllabus context.</p>" +
-                        "<p>D<sub>p</sub> is the opening at p% passing. With all diameters in matching units, <strong>C<sub>u</sub> = D<sub>60</sub>/D<sub>10</sub></strong> and <strong>C<sub>c</sub> = D<sub>30</sub><sup>2</sup>/(D<sub>10</sub>D<sub>60</sub>)</strong>. Clean GW requires C<sub>u</sub> ≥ 4; clean SW requires C<sub>u</sub> ≥ 6; <em>both also require</em> 1 ≤ C<sub>c</sub> ≤ 3. A large C<sub>u</sub> alone does not exclude gap grading.</p>" +
-                        "<p>Dispersant breaks aggregates into constituent grains. The bank's shaking time and solution concentration are not verified laboratory prescriptions; test-method conditions still control separation.</p>",
+                    html: "<p>Use representative dry mass M, decreasing sieve openings and a bottom pan; check recovered mass. Percentage retained = 100m<sub>i</sub>/M; percentage passing = 100 − cumulative percentage retained. Sieve analysis resolves coarse fractions; sedimentation analysis of finer particles is syllabus context.</p><p>D<sub>p</sub> is the opening at p% passing. With all diameters in matching units, <strong>C<sub>u</sub> = D<sub>60</sub>/D<sub>10</sub></strong> and <strong>C<sub>c</sub> = D<sub>30</sub><sup>2</sup>/(D<sub>10</sub>D<sub>60</sub>)</strong>. Clean GW requires C<sub>u</sub> ≥ 4; clean SW requires C<sub>u</sub> ≥ 6; <em>both also require</em> 1 ≤ C<sub>c</sub> ≤ 3. A large C<sub>u</sub> alone does not exclude gap grading.</p>",
+                    moreHtml: "<p>Dispersant breaks aggregates into constituent grains. The bank's shaking time and solution concentration are not verified laboratory prescriptions; test-method conditions still control separation.</p>",
                     sources: [
                         { id: "SOIL136-00008", set: 2, question: 42 },
                         { id: "SOIL136-00012", set: 2, question: 46 },
@@ -128,9 +123,8 @@
                 {
                     id: "soil-uscs-symbols-and-fines",
                     title: "USCS decision sequence and dual symbols",
-                    html: "<p>Coarse soil has &gt;50% dry mass retained on 0.075 mm; otherwise follow the fine-soil plasticity branch. Within the coarse fraction, compare gravel with sand to select G or S. W/P describes grading; M/C describes silty/clayey fines: SC is clayey sand. Organic fines use OL/OH; highly organic peat uses Pt.</p>" +
-                        "<p>Fines &lt;5% permit clean-soil symbols; 5–12% require dual symbols; &gt;12% makes fines character decisive. CL-ML is a different, fine-soil borderline designation.</p>" +
-                        "<p><strong>Conditional bank calculation:</strong> if the garbled entry means 64% passing 4.75 mm and 6% passing 0.075 mm, gravel = 36%, sand = 58%, coarse = 94%; 58/94 = 61.7% sand. C<sub>u</sub> = 7.5 and C<sub>c</sub> = 2.7 satisfy grading; PI = 2.5 indicates silty fines. The result is <strong>SW-SM</strong>, not unqualified SW.</p>",
+                    html: "<p>Coarse soil has &gt;50% dry mass retained on 0.075 mm; otherwise follow the fine-soil plasticity branch. Within the coarse fraction, compare gravel with sand to select G or S. </p><p>Fines &lt;5% permit clean-soil symbols; 5–12% require dual symbols; &gt;12% makes fines character decisive. CL-ML is a different, fine-soil borderline designation.</p><p><strong>Conditional bank calculation:</strong> if the garbled entry means 64% passing 4.75 mm and 6% passing 0.075 mm, gravel = 36%, sand = 58%, coarse = 94%; 58/94 = 61.7% sand. C<sub>u</sub> = 7.5 and C<sub>c</sub> = 2.7 satisfy grading; PI = 2.5 indicates silty fines. The result is <strong>SW-SM</strong>, not unqualified SW.</p>",
+                    moreHtml: "<p>W/P describes grading; M/C describes silty/clayey fines: SC is clayey sand. Organic fines use OL/OH; highly organic peat uses Pt.</p>",
                     sources: [
                         { id: "SOIL136-00003", set: 2, question: 37 },
                         { id: "SOIL136-00120", set: 11, question: 34 },
@@ -144,8 +138,8 @@
                 {
                     id: "soil-consistency-limit-tests",
                     title: "Consistency states and Atterberg endpoints",
-                    html: "<p>With increasing water, fine-soil consistency passes through <strong>solid, semi-solid, plastic and liquid</strong>; the boundaries are shrinkage, plastic and liquid limits respectively. Below shrinkage limit, further drying causes no further volume reduction; water can still leave as air enters. Plasticity means lasting remoulding without rupture, not obligatory volume increase.</p>" +
-                        "<p>The bank describes the Casagrande liquid-limit endpoint as approximately 13 mm groove closure at 25 blows, and plastic limit as thread crumbling at about 3 mm diameter. These are empirical method endpoints, not universal physical phase transitions. Specify preparation and the applicable cup/thread method; values from different procedures are not automatically interchangeable.</p>",
+                    html: "<p>With increasing water, fine-soil consistency passes through <strong>solid, semi-solid, plastic and liquid</strong>; the boundaries are shrinkage, plastic and liquid limits respectively. Below shrinkage limit, further drying causes no further volume reduction; water can still leave as air enters. Plasticity means lasting remoulding without rupture, not obligatory volume increase.</p><p>The bank describes the Casagrande liquid-limit endpoint as approximately 13 mm groove closure at 25 blows, and plastic limit as thread crumbling at about 3 mm diameter. These are empirical method endpoints, not universal physical phase transitions. </p>",
+                    moreHtml: "<p>Specify preparation and the applicable cup/thread method; values from different procedures are not automatically interchangeable.</p>",
                     sources: [
                         { id: "SOIL136-00007", set: 2, question: 41 },
                         { id: "SOIL136-00092", set: 9, question: 34 },
@@ -159,14 +153,8 @@
                 {
                     id: "soil-plasticity-chart-indices",
                     title: "A-line, liquidity, flow and toughness indices",
-                    html: "<p>The <strong>A-line, PI = 0.73(LL − 20)</strong>, uses percentage values and separates clayey from silty behaviour; it is <em>not</em> the low/high boundary. USCS uses LL = 50% for the L/H division. High-liquid-limit silts can lie below the A-line; organic identification needs more than chart position.</p>" +
-                        "<table><thead><tr><th scope='col'>Index</th><th scope='col'>Definition and interpretation</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Plasticity PI</th><td>LL − PL; plastic water-content interval.</td></tr>" +
-                        "<tr><th scope='row'>Shrinkage I<sub>s</sub></th><td>PL − SL; semi-solid interval.</td></tr>" +
-                        "<tr><th scope='row'>Liquidity I<sub>L</sub></th><td>(w − PL)/PI; 0 at PL, 1 at LL.</td></tr>" +
-                        "<tr><th scope='row'>Flow I<sub>f</sub></th><td>(w<sub>1</sub> − w<sub>2</sub>)/log<sub>10</sub>(N<sub>2</sub>/N<sub>1</sub>), N<sub>2</sub> &gt; N<sub>1</sub>; positive cup-flow-curve slope magnitude.</td></tr>" +
-                        "<tr><th scope='row'>Toughness I<sub>t</sub></th><td>PI/I<sub>f</sub>; empirical strength indicator at PL, not measured shear stress.</td></tr></tbody></table>" +
-                        "<p>Use consistent water-content units; N denotes blows. <strong>Illustrative extension:</strong> LL = 50%, PL = 25%, SL = 15%, w = 35%, I<sub>f</sub> = 10 percentage points per log cycle give PI = 25 points, I<sub>s</sub> = 10 points, I<sub>L</sub> = 0.4 and I<sub>t</sub> = 2.5. I<sub>L</sub> is undefined when its denominator PI is zero. I<sub>t</sub> instead divides by I<sub>f</sub>; a formal zero numerator is not division by zero. For nonplastic soil, report indices as not applicable where the required consistency limits are not measurable.</p>",
+                    html: "<p>The <strong>A-line, PI = 0.73(LL − 20)</strong>, uses percentage values and separates clayey from silty behaviour; it is <em>not</em> the low/high boundary. USCS uses LL = 50% for the L/H division. High-liquid-limit silts can lie below the A-line; organic identification needs more than chart position.</p><table><thead><tr><th scope='col'>Index</th><th scope='col'>Definition and interpretation</th></tr></thead><tbody><tr><th scope='row'>Plasticity PI</th><td>LL − PL; plastic water-content interval.</td></tr><tr><th scope='row'>Shrinkage I<sub>s</sub></th><td>PL − SL; semi-solid interval.</td></tr><tr><th scope='row'>Liquidity I<sub>L</sub></th><td>(w − PL)/PI; 0 at PL, 1 at LL.</td></tr><tr><th scope='row'>Flow I<sub>f</sub></th><td>(w<sub>1</sub> − w<sub>2</sub>)/log<sub>10</sub>(N<sub>2</sub>/N<sub>1</sub>), N<sub>2</sub> &gt; N<sub>1</sub>; positive cup-flow-curve slope magnitude.</td></tr><tr><th scope='row'>Toughness I<sub>t</sub></th><td>PI/I<sub>f</sub>; empirical strength indicator at PL, not measured shear stress.</td></tr></tbody></table><p>Use consistent water-content units; N denotes blows. <strong>Illustrative extension:</strong> LL = 50%, PL = 25%, SL = 15%, w = 35%, I<sub>f</sub> = 10 percentage points per log cycle give PI = 25 points, I<sub>s</sub> = 10 points, I<sub>L</sub> = 0.4 and I<sub>t</sub> = 2.5. I<sub>L</sub> is undefined when its denominator PI is zero. I<sub>t</sub> instead divides by I<sub>f</sub>; a formal zero numerator is not division by zero. </p>",
+                    moreHtml: "<p>For nonplastic soil, report indices as not applicable where the required consistency limits are not measurable.</p>",
                     sources: [
                         { id: "SOIL136-00005", set: 2, question: 39 },
                         { id: "SOIL136-00119", set: 10, question: 47 },
@@ -180,8 +168,8 @@
                 {
                     id: "soil-descriptions-texture-logs",
                     title: "Descriptions, textural triangles and boring logs",
-                    html: "<p>The bank reads 'sandy silty clay' as clay &gt; silt &gt; sand; modifiers do not supply measured percentages. The Public Roads Administration textural triangle uses sand/silt/clay fractions summing to 100%, read parallel to the three sides. Only two percentages are independent. State grain boundaries and any excluded gravel fraction; texture alone cannot establish engineering suitability.</p>" +
-                        "<p><strong>Boring logs — syllabus context:</strong> read depth datum, contacts, descriptions, sample depths/types, groundwater observation times and test results together. Disturbed samples support index tests, not intact fabric measurements. Separate observed contacts from interpolation between boreholes; a soil name alone establishes neither continuous strata nor bearing capacity.</p>",
+                    html: "<p>The bank reads 'sandy silty clay' as clay &gt; silt &gt; sand; modifiers do not supply measured percentages. The Public Roads Administration textural triangle uses sand/silt/clay fractions summing to 100%, read parallel to the three sides. </p>",
+                    moreHtml: "<p>Only two percentages are independent. State grain boundaries and any excluded gravel fraction; texture alone cannot establish engineering suitability.</p><p><strong>Boring logs — syllabus context:</strong> read depth datum, contacts, descriptions, sample depths/types, groundwater observation times and test results together. Disturbed samples support index tests, not intact fabric measurements. Separate observed contacts from interpolation between boreholes; a soil name alone establishes neither continuous strata nor bearing capacity.</p>",
                     sources: [
                         { id: "SOIL136-00142", set: 12, question: 43 },
                         { id: "SOIL136-00143", set: 12, question: 44 },
@@ -192,12 +180,8 @@
                 {
                     id: "soil-hydraulic-conductivity-tests",
                     title: "Permeability tests and fluid effects",
-                    html: "<p>Hydraulic conductivity k measures flow through connected pores and has length/time units. Interpret tests with saturation, de-airing and side-leakage control.</p>" +
-                        "<table><thead><tr><th scope='col'>Test</th><th scope='col'>Darcy-based calculation</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Constant head: coarser soils</th><td>k = V<sub>collected</sub>L/(AtΔH).</td></tr>" +
-                        "<tr><th scope='row'>Falling head: low-permeability fines</th><td>k = aL ln(h<sub>1</sub>/h<sub>2</sub>)/(At).</td></tr></tbody></table>" +
-                        "<p>A is specimen area, a standpipe area, L specimen length, t elapsed time and h hydraulic-head differences. Matching metre/second units give m/s. Falling-head interpretation assumes quasi-steady Darcy flow as head changes, not constant head.</p>" +
-                        "<p>For unchanged fabric, warmer water's reduced viscosity generally increases k. Intrinsic permeability κ has area units: k = κρ<sub>w</sub>g/μ, with consistent SI units and dynamic viscosity μ. Do not confuse a fluid-dependent conductivity change with a change of pore geometry.</p>",
+                    html: "<p>Hydraulic conductivity k measures flow through connected pores and has length/time units. Interpret tests with saturation, de-airing and side-leakage control.</p><table><thead><tr><th scope='col'>Test</th><th scope='col'>Darcy-based calculation</th></tr></thead><tbody><tr><th scope='row'>Constant head: coarser soils</th><td>k = V<sub>collected</sub>L/(AtΔH).</td></tr><tr><th scope='row'>Falling head: low-permeability fines</th><td>k = aL ln(h<sub>1</sub>/h<sub>2</sub>)/(At).</td></tr></tbody></table><p>For unchanged fabric, warmer water's reduced viscosity generally increases k. Intrinsic permeability κ has area units: k = κρ<sub>w</sub>g/μ, with consistent SI units and dynamic viscosity μ. Do not confuse a fluid-dependent conductivity change with a change of pore geometry.</p>",
+                    moreHtml: "<p>A is specimen area, a standpipe area, L specimen length, t elapsed time and h hydraulic-head differences. Matching metre/second units give m/s. Falling-head interpretation assumes quasi-steady Darcy flow as head changes, not constant head.</p>",
                     sources: [
                         { id: "SOIL136-00009", set: 2, question: 43 },
                         { id: "SOIL136-00103", set: 9, question: 44 },
@@ -209,11 +193,8 @@
                 {
                     id: "soil-strength-compressibility-tests",
                     title: "Engineering-property tests and interpretation",
-                    html: "<p>Index tests describe grading and consistency; engineering tests measure responses under specified stress and drainage conditions.</p>" +
-                        "<table><thead><tr><th scope='col'>Test family</th><th scope='col'>Syllabus context</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Strength</th><td>Direct shear imposes a failure plane. Triaxial testing controls confinement/drainage and can measure pore pressure. Unconfined compression needs a self-supporting cohesive specimen.</td></tr>" +
-                        "<tr><th scope='row'>Compressibility</th><td>An oedometer confines lateral strain and records height changes under vertical loading with time; disturbance, drainage and stress history matter.</td></tr></tbody></table>" +
-                        "<p>The bank associates fixed-ring equipment with permeability measurement during loading. Suitable hydraulic connections are essential. A floating ring moves vertically; it does not cease to constrain specimen area. Neither an index nor a soil name substitutes for a measured strength or compression curve.</p>",
+                    html: "<p>Index tests describe grading and consistency; engineering tests measure responses under specified stress and drainage conditions.</p><table><thead><tr><th scope='col'>Test family</th><th scope='col'>Syllabus context</th></tr></thead><tbody><tr><th scope='row'>Strength</th><td>Direct shear imposes a failure plane. Triaxial testing controls confinement/drainage and can measure pore pressure. Unconfined compression needs a self-supporting cohesive specimen.</td></tr><tr><th scope='row'>Compressibility</th><td>An oedometer confines lateral strain and records height changes under vertical loading with time; disturbance, drainage and stress history matter.</td></tr></tbody></table>",
+                    moreHtml: "<p>The bank associates fixed-ring equipment with permeability measurement during loading. Suitable hydraulic connections are essential. A floating ring moves vertically; it does not cease to constrain specimen area. Neither an index nor a soil name substitutes for a measured strength or compression curve.</p>",
                     sources: [
                         { id: "SOIL136-00187", set: 15, question: 46 }
                     ]
@@ -226,64 +207,341 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Incorrect chart claims:</strong> SOIL136-00005 wrongly equates below-A-line with low plasticity. SOIL136-00141 supplies no chart supporting its 'relative suitability' key; ordinary axes represent LL and PI, not a universal suitability ranking.</p>",
-                    sources: [
-                        { id: "SOIL136-00005", set: 2, question: 39 },
-                        { id: "SOIL136-00141", set: 12, question: 42 }
+                    "id": "check-soil136-00005",
+                    "status": "review",
+                    "prompt": "What is the type of soil which have PI below A-line?",
+                    "html": "<p><strong>Incorrect chart claims:</strong> SOIL136-00005 wrongly equates below-A-line with low plasticity. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00005",
+                            "set": 2,
+                            "question": 39
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Numerical/notation defects:</strong> 0.55 is approximate, the pycnometer's 400 g must mean moist soil, and both n = e/(1 + e) and e = n/(1 − n) are valid options in SOIL136-00115. SOIL136-00154's corrupted choices do not express the required dry-unit-weight identity.</p>",
-                    sources: [
-                        { id: "SOIL136-00016", set: 3, question: 37 },
-                        { id: "SOIL136-00017", set: 3, question: 38 },
-                        { id: "SOIL136-00115", set: 10, question: 43 },
-                        { id: "SOIL136-00154", set: 13, question: 43 }
+                    "id": "check-soil136-00008",
+                    "status": "review",
+                    "prompt": "Coefficient of uniformity is ______",
+                    "html": "<p><strong>Definition:</strong> uniformity coefficient C<sub>u</sub> = D<sub>60</sub>/D<sub>10</sub>. Well-grading additionally requires the relevant curvature and fines criteria; C<sub>u</sub> alone is insufficient.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00008",
+                            "set": 2,
+                            "question": 42
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Classification conflicts:</strong> SOIL136-00120 is garbled; 6% fines would require a dual symbol, and PI = 2.5 is not literally nonplastic. SOIL136-00133 misattributes a size-only silt/clay division to USCS. The 'four major groups' key is a grouping convention, not a substitute for classification criteria.</p>",
-                    sources: [
-                        { id: "SOIL136-00120", set: 11, question: 34 },
-                        { id: "SOIL136-00133", set: 12, question: 34 },
-                        { id: "SOIL136-00137", set: 12, question: 38 }
+                    "id": "check-soil136-00010",
+                    "status": "review",
+                    "prompt": "Soil of Kathmandu valley is",
+                    "html": "<p>Kathmandu's dark lacustrine soils are not thereby all expansive black cotton soil. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00010",
+                            "set": 2,
+                            "question": 44
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Fabric/geography:</strong> honeycomb ranges conflict: 0.0002 mm is below, not inside, a 0.002 mm lower bound. Size cannot uniquely assign fabric. Kathmandu's dark lacustrine soils are not thereby all expansive black cotton soil. The plasticity stem's volume-change wording is also defective.</p>",
-                    sources: [
-                        { id: "SOIL136-00010", set: 2, question: 44 },
-                        { id: "SOIL136-00118", set: 10, question: 46 },
-                        { id: "SOIL136-00131", set: 11, question: 45 },
-                        { id: "SOIL136-00132", set: 11, question: 46 },
-                        { id: "SOIL136-00188", set: 16, question: 35 }
+                    "id": "check-soil136-00012",
+                    "status": "review",
+                    "prompt": "The coefficient of curvature for a well graded soil, must be between",
+                    "html": "<p><strong>Grading boundaries:</strong> the bank writes C<sub>u</sub> &gt; 4 or &gt; 6; conventional USCS criteria include equality. </p><p>Always apply C<sub>c</sub> and fines content as well. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00012",
+                            "set": 2,
+                            "question": 46
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Method limitations:</strong> ten minutes and '2% ... per litre' are unverified procedural claims. Mass and weight percentages coincide under common gravity, so SOIL136-00151 has overlapping options. Floating-ring area does not change as claimed; direct permeability capability depends on apparatus plumbing.</p>",
-                    sources: [
-                        { id: "SOIL136-00150", set: 13, question: 39 },
-                        { id: "SOIL136-00151", set: 13, question: 40 },
-                        { id: "SOIL136-00152", set: 13, question: 41 },
-                        { id: "SOIL136-00187", set: 15, question: 46 }
+                    "id": "check-soil136-00013",
+                    "status": "review",
+                    "prompt": "What is the value of the coefficient of uniformity for well-graded sand?",
+                    "html": "<p><strong>Grading boundaries:</strong> the bank writes C<sub>u</sub> &gt; 4 or &gt; 6; conventional USCS criteria include equality. </p><p>Always apply C<sub>c</sub> and fines content as well. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00013",
+                            "set": 2,
+                            "question": 47
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Do not generalize:</strong> clay porosity 0.4–0.5 and particle density 2.7 g/cm<sup>3</sup> are bank heuristics, not site inputs. Textural classification is not universally 'most suitable' for coarse soils; it omits important plasticity information.</p>",
-                    sources: [
-                        { id: "SOIL136-00093", set: 9, question: 35 },
-                        { id: "SOIL136-00143", set: 12, question: 44 },
-                        { id: "SOIL136-00322", set: 25, question: 41 }
+                    "id": "check-soil136-00016",
+                    "status": "review",
+                    "prompt": "Find the porosity if specific gravity is 2.6 & water content is 45% for fully saturated condition of soil?",
+                    "html": "<p><strong>Use saturation explicitly.</strong> At full saturation, e = wG = 0.45(2.6) = 1.17 and n = e/(1 + e) = 0.53917. The stored 0.55 is only a coarse approximation.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00016",
+                            "set": 3,
+                            "question": 37
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Grading boundaries:</strong> the bank writes C<sub>u</sub> &gt; 4 or &gt; 6; conventional USCS criteria include equality. Always apply C<sub>c</sub> and fines content as well. Stored questions and keys remain unchanged.</p>",
-                    sources: [
-                        { id: "SOIL136-00008", set: 2, question: 42 },
-                        { id: "SOIL136-00012", set: 2, question: 46 },
-                        { id: "SOIL136-00013", set: 2, question: 47 },
-                        { id: "SOIL136-00121", set: 11, question: 35 },
-                        { id: "SOIL136-00122", set: 11, question: 36 }
+                    "id": "check-soil136-00017",
+                    "status": "review",
+                    "prompt": "The weight of a pycnometer containing 400 g sand and water full to the top is 2150 g. The weight of pycnometer full of clean water is 1950 g. If specific gravity of the soil is 2.5, the water content is",
+                    "html": "<p><strong>The 400 g must be moist soil.</strong> The bottle mass increase is 200 g = M<sub>s</sub>(1 - 1/2.5), so dry solids are 333.33 g and water content is 20%. If 400 g means dry sand, the data describe a different problem.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00017",
+                            "set": 3,
+                            "question": 38
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00093",
+                    "status": "review",
+                    "prompt": "Most soils have a particle density of about:",
+                    "html": "<p><strong>Do not generalize:</strong> clay porosity 0.4–0.5 and particle density 2.7 g/cm<sup>3</sup> are bank heuristics, not site inputs. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00093",
+                            "set": 9,
+                            "question": 35
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00115",
+                    "status": "review",
+                    "prompt": "The relation between porosity and void ratio is given",
+                    "html": "<p><strong>Equivalent correct formulas.</strong> n = e/(1 + e) and e = n/(1 - n) are rearrangements of the same phase identity. A single-answer item must not treat one as false.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00115",
+                            "set": 10,
+                            "question": 43
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00118",
+                    "status": "review",
+                    "prompt": "Honeycomb structure having diameter smaller than......mm and larger than ... mm.",
+                    "html": "<p><strong>Fabric/geography:</strong> honeycomb ranges conflict: 0.0002 mm is below, not inside, a 0.002 mm lower bound. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00118",
+                            "set": 10,
+                            "question": 46
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00120",
+                    "status": "review",
+                    "prompt": "The following data refer to a sample of soil, passing from 4.75 mm is sieve = 64%, > 90 passing from 0.075 mm is sieve = 6 Cu = 7.5 C = 2.7 Plasticity Index = 2.5; classify soil",
+                    "html": "<p><strong>Classification conflicts:</strong> SOIL136-00120 is garbled; 6% fines would require a dual symbol, and PI = 2.5 is not literally nonplastic. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00120",
+                            "set": 11,
+                            "question": 34
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00121",
+                    "status": "review",
+                    "prompt": "For GW soil Cu is ...... and C between",
+                    "html": "<p><strong>GW boundary:</strong> conventional USCS gravel grading requires C<sub>u</sub> at least 4 and 1 to 3 for C<sub>c</sub>, together with the applicable fines criteria. A strict greater-than sign excludes the boundary incorrectly.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00121",
+                            "set": 11,
+                            "question": 35
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00122",
+                    "status": "review",
+                    "prompt": "For SW soil Cu is ...... and C between",
+                    "html": "<p><strong>SW boundary:</strong> conventional USCS sand grading requires C<sub>u</sub> at least 6 and 1 to 3 for C<sub>c</sub>, together with the applicable fines criteria. Equality at the C<sub>u</sub> boundary is included.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00122",
+                            "set": 11,
+                            "question": 36
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00131",
+                    "status": "review",
+                    "prompt": "In which types of soil structure, the particles size is greater than 0.02 mm?",
+                    "html": "<p><strong>Particle size does not uniquely determine fabric.</strong> Deposition, mineralogy and interparticle forces also govern soil structure. The quoted honeycomb and single-grained size descriptions are simplified classifications.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00131",
+                            "set": 11,
+                            "question": 45
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00132",
+                    "status": "review",
+                    "prompt": "In which types of soil structure, the particles size is greater than 0.0002 mm to 0.02 mm?",
+                    "html": "<p><strong>Fabric/geography:</strong> honeycomb ranges conflict: 0.0002 mm is below, not inside, a 0.002 mm lower bound. </p><p>Size cannot uniquely assign fabric. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00132",
+                            "set": 11,
+                            "question": 46
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00133",
+                    "status": "review",
+                    "prompt": "Size of silt particles is",
+                    "html": "<p>SOIL136-00133 misattributes a size-only silt/clay division to USCS. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00133",
+                            "set": 12,
+                            "question": 34
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00137",
+                    "status": "review",
+                    "prompt": "By USCS system, soil are classified in to ______ major groups.",
+                    "html": "<p>The 'four major groups' key is a grouping convention, not a substitute for classification criteria.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00137",
+                            "set": 12,
+                            "question": 38
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00141",
+                    "status": "review",
+                    "prompt": "In Casagrande’s plasticity chart, the numbers in the chart denotes ______.",
+                    "html": "<p>SOIL136-00141 supplies no chart supporting its 'relative suitability' key; ordinary axes represent LL and PI, not a universal suitability ranking.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00141",
+                            "set": 12,
+                            "question": 42
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00143",
+                    "status": "review",
+                    "prompt": "Textural classification is most suitable for ______.",
+                    "html": "<p>Textural classification is not universally 'most suitable' for coarse soils; it omits important plasticity information.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00143",
+                            "set": 12,
+                            "question": 44
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00150",
+                    "status": "review",
+                    "prompt": "______ minutes of shaking is done for soil with small particles.",
+                    "html": "<p><strong>Method limitations:</strong> ten minutes and '2% ... per litre' are unverified procedural claims. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00150",
+                            "set": 13,
+                            "question": 39
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00151",
+                    "status": "review",
+                    "prompt": "The percentage of soil retained on each sieve is calculated on the basis of ______.",
+                    "html": "<p>Mass and weight percentages coincide under common gravity, so SOIL136-00151 has overlapping options. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00151",
+                            "set": 13,
+                            "question": 40
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00152",
+                    "status": "review",
+                    "prompt": "______ is used for washing the soil portion passing through 4.75 mm sieve.",
+                    "html": "<p><strong>Method limitations:</strong> ten minutes and '2% ... per litre' are unverified procedural claims. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00152",
+                            "set": 13,
+                            "question": 41
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00154",
+                    "status": "review",
+                    "prompt": "The fundamental equation of specific gravity (G) dry density (Vd) and unit weight of water (Vw) and void ratio (e) is ...",
+                    "html": "<p>SOIL136-00154's corrupted choices do not express the required dry-unit-weight identity.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00154",
+                            "set": 13,
+                            "question": 43
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00187",
+                    "status": "review",
+                    "prompt": "Direct measurement of permeability of the specimen at any stage of loading can be made",
+                    "html": "<p>Floating-ring area does not change as claimed; direct permeability capability depends on apparatus plumbing.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00187",
+                            "set": 15,
+                            "question": 46
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00188",
+                    "status": "review",
+                    "prompt": "The property of a soil which allows it to be deformed rapidly without rupture, elastic rebound and also a volume change, is known",
+                    "html": "<p>The plasticity stem's volume-change wording is also defective.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00188",
+                            "set": 16,
+                            "question": 35
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00322",
+                    "status": "review",
+                    "prompt": "For clay soil the value of n can be taken as ______ in the absence of test data.",
+                    "html": "<p><strong>Porosity needs material evidence.</strong> The bank range 0.4-0.5 for clay is a heuristic. Density, stress history, mineralogy and fabric prevent one default porosity from representing every clay.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00322",
+                            "set": 25,
+                            "question": 41
+                        }
                     ]
                 }
             ]
@@ -295,8 +553,8 @@
                 {
                     id: "effective-stress-principle",
                     title: "Total, neutral and effective stress",
-                    html: "<p>For saturated soil, using compression-positive stresses and gauge pore pressure, <strong>σ′ = σ − u</strong>. Total stress σ includes external load and overlying soil/water weight; neutral stress u is pore-water pressure. Effective stress is the skeleton's average stress over gross area, not microscopic stress over actual grain-contact area.</p>" +
-                        "<p>For layers, σ<sub>v</sub> = Σγ<sub>i</sub>H<sub>i</sub> plus surcharge; kN/m<sup>3</sup> × m gives kPa. Subtract measured/calculated u. An applied load need not immediately become effective stress: <strong>Δσ′ = Δσ − Δu</strong>. Drained compression usually decreases e and k; stress history and fabric matter. Water supports pressure, not static shear resistance.</p>",
+                    html: "<p>For saturated soil, using compression-positive stresses and gauge pore pressure, <strong>σ′ = σ − u</strong>. Total stress σ includes external load and overlying soil/water weight; neutral stress u is pore-water pressure. </p><p>For layers, σ<sub>v</sub> = Σγ<sub>i</sub>H<sub>i</sub> plus surcharge; kN/m<sup>3</sup> × m gives kPa. Subtract measured/calculated u. An applied load need not immediately become effective stress: <strong>Δσ′ = Δσ − Δu</strong>. </p>",
+                    moreHtml: "<p>Effective stress is the skeleton's average stress over gross area, not microscopic stress over actual grain-contact area.</p><p>Drained compression usually decreases e and k; stress history and fabric matter. Water supports pressure, not static shear resistance.</p>",
                     sources: [
                         { id: "SOIL136-00049", set: 5, question: 44 },
                         { id: "SOIL136-00156", set: 13, question: 45 },
@@ -318,9 +576,8 @@
                 {
                     id: "capillary-rise-and-suction",
                     title: "Capillary water and negative pore pressure",
-                    html: "<p>Surface tension holds capillary water against gravity. For an ideal circular tube, <strong>h<sub>c</sub> = 4T cosθ/(γ<sub>w</sub>d)</strong>: surface tension T in N/m, diameter d in m and γ<sub>w</sub> in N/m<sup>3</sup> give metres; θ is contact angle. Smaller pores favour greater equilibrium rise; clay can rise higher but much more slowly than sand. Soil pores are not identical tubes.</p>" +
-                        "<p>In a continuous saturated capillary fringe, u = −γ<sub>w</sub>h above the water table; subtracting negative u increases σ′. Unsaturated soil needs an appropriate suction framework, not automatic use of the saturated equation. Compaction can leave suction but does not invariably produce negative u. Adsorbed water also resists gravity drainage.</p>" +
-                        "<p>Dense sand or heavily overconsolidated clay may tend to dilate during shear. If undrained conditions prevent volume change, that tendency can generate <strong>negative excess pore pressure Δu</strong>. It need not make the total gauge pressure u negative: the initial pressure also matters. Distinguish capillary suction, a negative increment and a negative absolute gauge value.</p>",
+                    html: "<p>Surface tension holds capillary water against gravity. For an ideal circular tube, <strong>h<sub>c</sub> = 4T cosθ/(γ<sub>w</sub>d)</strong>: surface tension T in N/m, diameter d in m and γ<sub>w</sub> in N/m<sup>3</sup> give metres; θ is contact angle. </p><p>In a continuous saturated capillary fringe, u = −γ<sub>w</sub>h above the water table; subtracting negative u increases σ′. Unsaturated soil needs an appropriate suction framework, not automatic use of the saturated equation. </p>",
+                    moreHtml: "<p>Smaller pores favour greater equilibrium rise; clay can rise higher but much more slowly than sand. Soil pores are not identical tubes.</p><p>Compaction can leave suction but does not invariably produce negative u. Adsorbed water also resists gravity drainage.</p><p>Dense sand or heavily overconsolidated clay may tend to dilate during shear. If undrained conditions prevent volume change, that tendency can generate <strong>negative excess pore pressure Δu</strong>. It need not make the total gauge pressure u negative: the initial pressure also matters. Distinguish capillary suction, a negative increment and a negative absolute gauge value.</p>",
                     sources: [
                         { id: "SOIL136-00260", set: 21, question: 35 },
                         { id: "TRAN808-00215", set: 21, question: 79 },
@@ -350,9 +607,8 @@
                 {
                     id: "critical-gradient-and-heave",
                     title: "Upward seepage, quick condition and piping",
-                    html: "<p>For a saturated cohesionless prism of thickness L, no surcharge and uniform vertical flow, <strong>σ′<sub>base</sub> = (γ′ − iγ<sub>w</sub>)L</strong> upward; replace minus by plus for downward flow. Here γ′ = γ<sub>sat</sub> − γ<sub>w</sub>. Quick condition occurs when upward seepage cancels submerged weight: <strong>i<sub>c</sub> = γ′/γ<sub>w</sub> = (G − 1)/(1 + e)</strong>.</p>" +
-                        "<p><strong>Bank checks:</strong> G = 2.68, e = 0.68 give i<sub>c</sub> = 1.68/1.68 = 1. For G = 2.67, e = 0.67 and L = 1.5 m, required head difference is i<sub>c</sub>L = <strong>1.5 m</strong>. Upward flow alone is insufficient.</p>" +
-                        "<p>Quicksand is a condition, not a sand type. Downstream cutoff exits can develop upward heave. Internal erosion/piping is related but not identical to bulk heave; no universal safe gradient follows from these examples.</p>",
+                    html: "<p>For a saturated cohesionless prism of thickness L, no surcharge and uniform vertical flow, <strong>σ′<sub>base</sub> = (γ′ − iγ<sub>w</sub>)L</strong> upward; replace minus by plus for downward flow. Here γ′ = γ<sub>sat</sub> − γ<sub>w</sub>. Quick condition occurs when upward seepage cancels submerged weight: <strong>i<sub>c</sub> = γ′/γ<sub>w</sub> = (G − 1)/(1 + e)</strong>.</p><p><strong>Bank checks:</strong> G = 2.68, e = 0.68 give i<sub>c</sub> = 1.68/1.68 = 1. For G = 2.67, e = 0.67 and L = 1.5 m, required head difference is i<sub>c</sub>L = <strong>1.5 m</strong>. Upward flow alone is insufficient.</p>",
+                    moreHtml: "<p>Quicksand is a condition, not a sand type. Downstream cutoff exits can develop upward heave. Internal erosion/piping is related but not identical to bulk heave; no universal safe gradient follows from these examples.</p>",
                     sources: [
                         { id: "IRRI951-00098", set: 10, question: 77 },
                         { id: "IRRI951-00103", set: 11, question: 71 },
@@ -366,8 +622,8 @@
                 {
                     id: "flow-net-construction-principles",
                     title: "Flow-net construction and boundary conditions",
-                    html: "<p>A classical net solves steady two-dimensional saturated Darcy flow. In homogeneous isotropic soil, smooth flow lines intersect equipotentials orthogonally, forming approximate curvilinear squares. A flow channel lies between adjacent flow lines; equivalent square channels carry equal discharge. Constant-head boundaries are equipotentials; impermeable boundaries are flow lines.</p>" +
-                        "<p>Forchheimer is associated with graphical construction. The electrical-conductor analogy matches current with discharge and voltage with head, using equivalent geometry and boundary conditions. Interior curves should not kink arbitrarily; boundaries, material interfaces or singular corners require separate treatment. Orthogonality in physical coordinates is not guaranteed for anisotropic soil.</p>",
+                    html: "<p>A classical net solves steady two-dimensional saturated Darcy flow. In homogeneous isotropic soil, smooth flow lines intersect equipotentials orthogonally, forming approximate curvilinear squares. A flow channel lies between adjacent flow lines; equivalent square channels carry equal discharge. Constant-head boundaries are equipotentials; impermeable boundaries are flow lines.</p>",
+                    moreHtml: "<p>Forchheimer is associated with graphical construction. The electrical-conductor analogy matches current with discharge and voltage with head, using equivalent geometry and boundary conditions. Interior curves should not kink arbitrarily; boundaries, material interfaces or singular corners require separate treatment. Orthogonality in physical coordinates is not guaranteed for anisotropic soil.</p>",
                     sources: [
                         { id: "SOIL136-00029", set: 4, question: 37 },
                         { id: "SOIL136-00168", set: 14, question: 42 },
@@ -421,9 +677,8 @@
                 {
                     id: "compaction-water-content-energy",
                     title: "Compaction curve, water content and energy",
-                    html: "<p>Compaction rapidly densifies partly saturated soil through mechanical rearrangement and predominantly air removal. It increases dry density and reduces e and n; it is not saturated consolidation by water drainage. Proctor testing plots dry density against water content for a specified effort; the peak defines maximum dry density and optimum moisture content, OMC.</p>" +
-                        "<p>Use <strong>γ<sub>d</sub> = γ/(1 + w)</strong>, with fractional w. Initial wetting aids rearrangement; beyond OMC, added water occupies space without proportional densification. For the same soil, greater effort generally raises maximum dry density and lowers OMC.</p>" +
-                        "<p><strong>Energy context:</strong> E = m<sub>rammer</sub>gh<sub>drop</sub>N<sub>blows</sub>N<sub>layers</sub>/V<sub>mould</sub>, in J/m<sup>3</sup> using kg, m and seconds; N<sub>blows</sub> is blows per layer. Standard and modified efforts are different references; their maximum densities cannot be interchanged. The zero-air-void bound γ<sub>d</sub> = Gγ<sub>w</sub>/(1 + wG) assumes S = 1; measured unsaturated points lie below it.</p>",
+                    html: "<p>Compaction rapidly densifies partly saturated soil through mechanical rearrangement and predominantly air removal. It increases dry density and reduces e and n; it is not saturated consolidation by water drainage. </p><p>Use <strong>γ<sub>d</sub> = γ/(1 + w)</strong>, with fractional w. Initial wetting aids rearrangement; beyond OMC, added water occupies space without proportional densification. For the same soil, greater effort generally raises maximum dry density and lowers OMC.</p><p><strong>Energy context:</strong> E = m<sub>rammer</sub>gh<sub>drop</sub>N<sub>blows</sub>N<sub>layers</sub>/V<sub>mould</sub>, in J/m<sup>3</sup> using kg, m and seconds; N<sub>blows</sub> is blows per layer. Standard and modified efforts are different references; their maximum densities cannot be interchanged. The zero-air-void bound γ<sub>d</sub> = Gγ<sub>w</sub>/(1 + wG) assumes S = 1; measured unsaturated points lie below it.</p>",
+                    moreHtml: "<p>Proctor testing plots dry density against water content for a specified effort; the peak defines maximum dry density and optimum moisture content, OMC.</p>",
                     sources: [
                         { id: "SOIL136-00026", set: 3, question: 47 },
                         { id: "SOIL136-00191", set: 16, question: 38 },
@@ -441,8 +696,8 @@
                 {
                     id: "field-compaction-comparisons",
                     title: "Relative compaction, rollers and resulting properties",
-                    html: "<p><strong>Relative compaction = 100γ<sub>d,field</sub>/γ<sub>d,max,lab</sub></strong> percent, using the same soil and specified laboratory effort. It is not granular relative density, which compares current void ratio with loosest/densest reference states. A percentage without its laboratory reference is incomplete.</p>" +
-                        "<p>Sheepsfoot kneading commonly suits cohesive clay; vibration commonly suits granular sand. Roller weight, speed, passes, lift thickness and moisture all matter; no universal pass count follows. Compaction affects permeability, water absorption and swelling, but their direction and magnitude depend on fabric and wet/dry placement. Increased density alone does not guarantee reduced swelling or a specified field strength.</p>",
+                    html: "<p><strong>Relative compaction = 100γ<sub>d,field</sub>/γ<sub>d,max,lab</sub></strong> percent, using the same soil and specified laboratory effort. It is not granular relative density, which compares current void ratio with loosest/densest reference states. A percentage without its laboratory reference is incomplete.</p>",
+                    moreHtml: "<p>Sheepsfoot kneading commonly suits cohesive clay; vibration commonly suits granular sand. Roller weight, speed, passes, lift thickness and moisture all matter; no universal pass count follows. Compaction affects permeability, water absorption and swelling, but their direction and magnitude depend on fabric and wet/dry placement. Increased density alone does not guarantee reduced swelling or a specified field strength.</p>",
                     sources: [
                         { id: "SOIL136-00019", set: 3, question: 40 },
                         { id: "SOIL136-00021", set: 3, question: 42 },
@@ -455,8 +710,8 @@
                 {
                     id: "footing-contact-stress-assumptions",
                     title: "Footing contact pressure and elastic stress assumptions",
-                    html: "<p>Contact-pressure distribution depends on footing rigidity, loading, soil type and condition. A flexible footing under uniform applied loading can transmit uniform pressure while settling unevenly; a rigid footing enforces compatible settlement and can redistribute pressure. 'Cohesive soil' alone cannot specify a universal nonlinear diagram.</p>" +
-                        "<p>Boussinesq's idealization is a homogeneous, isotropic, linear-elastic <strong>semi-infinite half-space</strong> below a level surface, not an infinite solid without a boundary. <strong>Syllabus context:</strong> for a vertical surface point load P, Δσ<sub>z</sub> = [3P/(2πz<sup>2</sup>)][1 + (r/z)<sup>2</sup>]<sup>−5/2</sup>, z &gt; 0. P in kN and radial distance r/depth z in metres give kPa; this is a stress increment, not bearing capacity.</p>",
+                    html: "<p>Contact-pressure distribution depends on footing rigidity, loading, soil type and condition. A flexible footing under uniform applied loading can transmit uniform pressure while settling unevenly; a rigid footing enforces compatible settlement and can redistribute pressure. 'Cohesive soil' alone cannot specify a universal nonlinear diagram.</p><p>Boussinesq's idealization is a homogeneous, isotropic, linear-elastic <strong>semi-infinite half-space</strong> below a level surface, not an infinite solid without a boundary. <strong>Syllabus context:</strong> for a vertical surface point load P, Δσ<sub>z</sub> = [3P/(2πz<sup>2</sup>)][1 + (r/z)<sup>2</sup>]<sup>−5/2</sup>, z &gt; 0. </p>",
+                    moreHtml: "<p>P in kN and radial distance r/depth z in metres give kPa; this is a stress increment, not bearing capacity.</p>",
                     sources: [
                         { id: "SOIL136-00398", set: 30, question: 47 },
                         { id: "SOIL136-00401", set: 31, question: 35 },
@@ -466,8 +721,8 @@
                 {
                     id: "electro-osmosis-principle",
                     title: "Electro-osmosis in fine soils",
-                    html: "<p>Where low hydraulic conductivity makes gravity drainage slow, an applied electric field can move pore water through fine cohesive soil: <strong>electro-osmosis</strong>. Water commonly moves toward the cathode in negatively charged clays, subject to pore chemistry. This is electrical driving, not simply a larger Darcy hydraulic gradient.</p>" +
-                        "<p>The malformed 'Leasegrande' apparently intends <strong>Ludwig Casagrande</strong>, associated with geotechnical electro-osmotic dewatering, not Arthur Casagrande's classification work. Applicability depends on chemistry, electrodes and energy requirements; the MCQ does not justify universal method selection, electrode spacing or operating voltage.</p>",
+                    html: "<p>Where low hydraulic conductivity makes gravity drainage slow, an applied electric field can move pore water through fine cohesive soil: <strong>electro-osmosis</strong>. Water commonly moves toward the cathode in negatively charged clays, subject to pore chemistry. This is electrical driving, not simply a larger Darcy hydraulic gradient.</p>",
+                    moreHtml: "<p>The malformed 'Leasegrande' apparently intends <strong>Ludwig Casagrande</strong>, associated with geotechnical electro-osmotic dewatering, not Arthur Casagrande's classification work. Applicability depends on chemistry, electrodes and energy requirements; the MCQ does not justify universal method selection, electrode spacing or operating voltage.</p>",
                     sources: [
                         { id: "SOIL136-00176", set: 15, question: 36 },
                         { id: "SOIL136-00181", set: 15, question: 41 },
@@ -482,55 +737,289 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Contradictory groundwater key:</strong> SOIL136-00036 keys a decrease for rise above ground, but its explanation and SOIL136-00159 correctly give equal increases in σ and u after saturation to ground level. A rise from depth within soil is a different case.</p>",
-                    sources: [
-                        { id: "SOIL136-00036", set: 4, question: 44 },
-                        { id: "SOIL136-00037", set: 4, question: 45 },
-                        { id: "SOIL136-00159", set: 14, question: 34 }
+                    "id": "check-soil136-00185",
+                    "status": "review",
+                    "prompt": "The seepage force in a soil, is",
+                    "html": "<p>A flow net gives pore pressure during seepage, not an everywhere-hydrostatic distribution; force proportionality to head loss assumes fixed geometry.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00185",
+                            "set": 1,
+                            "question": 39
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Quicksand and dimensions:</strong> upward seepage is not itself the critical condition. SOIL136-00165 equates 'pressure' with unit weight; the valid balance is force per volume iγ<sub>w</sub> = γ′. Critical gradient is not universally 1; required head also depends on thickness and boundary loading.</p>",
-                    sources: [
-                        { id: "SOIL136-00024", set: 3, question: 45 },
-                        { id: "SOIL136-00042", set: 5, question: 37 },
-                        { id: "SOIL136-00107", set: 10, question: 36 },
-                        { id: "SOIL136-00165", set: 14, question: 39 }
+                    "id": "check-soil136-00023",
+                    "status": "review",
+                    "prompt": "The coefficient of compressibility of soil, is the ratio of",
+                    "html": "<p><strong>Compressibility terminology:</strong> SOIL136-00023 blurs a<sub>v</sub> with m<sub>v</sub>: void-ratio change per stress is not volume strain per stress until divided by 1 + e. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00023",
+                            "set": 3,
+                            "question": 44
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Flow-net limitations:</strong> SOIL136-00173 has identical original options and undefined 'ah/b'; use defined head loss and exit length instead. Perpendicular flow assumes isotropy. A flow net gives pore pressure during seepage, not an everywhere-hydrostatic distribution; force proportionality to head loss assumes fixed geometry.</p>",
-                    sources: [
-                        { id: "SOIL136-00029", set: 4, question: 37 },
-                        { id: "SOIL136-00167", set: 14, question: 41 },
-                        { id: "SOIL136-00173", set: 14, question: 47 },
-                        { id: "SOIL136-00184", set: 15, question: 44 },
-                        { id: "SOIL136-00185", set: 1, question: 39 },
-                        { id: "SOIL136-00215", set: 17, question: 46 }
+                    "id": "check-soil136-00024",
+                    "status": "review",
+                    "prompt": "Critical hydraulic gradient is formed if ...",
+                    "html": "<p><strong>Quicksand and dimensions:</strong> upward seepage is not itself the critical condition. </p><p>Critical gradient is not universally 1; required head also depends on thickness and boundary loading.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00024",
+                            "set": 3,
+                            "question": 45
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Compressibility terminology:</strong> SOIL136-00023 blurs a<sub>v</sub> with m<sub>v</sub>: void-ratio change per stress is not volume strain per stress until divided by 1 + e. Clay compression is not exclusively loss of double-layer water.</p>",
-                    sources: [
-                        { id: "SOIL136-00023", set: 3, question: 44 },
-                        { id: "SOIL136-00199", set: 16, question: 46 },
-                        { id: "SOIL136-00201", set: 16, question: 48 }
+                    "id": "check-soil136-00029",
+                    "status": "review",
+                    "prompt": "The direction of seepage water",
+                    "html": "<p><strong>Flow direction:</strong> seepage follows decreasing hydraulic head. It is normal to equipotential lines in an isotropic medium; an anisotropic conductivity tensor can change that relationship.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00029",
+                            "set": 4,
+                            "question": 37
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Malformed compaction items:</strong> SOIL136-00204's stem says dry density decreases; the reverse is intended. SOIL136-00206 repeats 'increasing dry density' instead of pairing it with decreasing porosity. Compaction does not guarantee suction or reduced swelling; saturated contractive loading can increase pore pressure. SOIL136-00260 omits saturation and drainage: prevented dilation during undrained shear can produce negative excess pressure, so 'Compaction' is not a unique general explanation.</p>",
-                    sources: [
-                        { id: "SOIL136-00204", set: 17, question: 36 },
-                        { id: "SOIL136-00206", set: 17, question: 38 },
-                        { id: "SOIL136-00260", set: 21, question: 35 },
-                        { id: "SOIL136-00350", set: 27, question: 41 }
+                    "id": "check-soil136-00036",
+                    "status": "corrected",
+                    "prompt": "For soil already saturated to ground level, what happens to effective vertical stress at a fixed point when additional still water ponds above the ground under hydrostatic conditions?",
+                    "html": "<p><strong>Corrected: no change, option B.</strong> The clarified hydrostatic case starts with saturated soil. Added standing water increases total stress and pore pressure equally, leaving their difference unchanged.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00036",
+                            "set": 4,
+                            "question": 44
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Missing footing conditions:</strong> SOIL136-00401 does not specify rigidity or loading; its explanation's general claim about flexible footings is inaccurate. Soil type alone cannot determine the contact-pressure shape. Original bank records remain unchanged.</p>",
-                    sources: [
-                        { id: "SOIL136-00398", set: 30, question: 47 },
-                        { id: "SOIL136-00401", set: 31, question: 35 }
+                    "id": "check-soil136-00037",
+                    "status": "review",
+                    "prompt": "What is the effect on the effective stress within a soil mass if the groundwater table rises from a deep position up to the ground level?",
+                    "html": "<p><strong>A rising water table within soil differs from ponding above saturated ground.</strong> Effective stress commonly decreases because pore-pressure increase exceeds the change in total overburden stress. The unit weights and saturation change determine the amount.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00037",
+                            "set": 4,
+                            "question": 45
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00042",
+                    "status": "review",
+                    "prompt": "The void ratio of a soil is 0.68 and specific gravity is 2.68. The critical gradient for quick sand condition is",
+                    "html": "<p>Critical gradient is not universally 1; required head also depends on thickness and boundary loading.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00042",
+                            "set": 5,
+                            "question": 37
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00107",
+                    "status": "review",
+                    "prompt": "The hydraulic head that would produce a quick condition in a sand stratum of thickness 1.5 m, specific gravity 2.67 and voids ratio 0.67 is equal to",
+                    "html": "<p>Critical gradient is not universally 1; required head also depends on thickness and boundary loading.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00107",
+                            "set": 10,
+                            "question": 36
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00159",
+                    "status": "review",
+                    "prompt": "Rise of water table above the ground surface causes",
+                    "html": "<p><strong>Rising water above already saturated ground:</strong> added standing water increases total stress and pore pressure equally, leaving effective stress unchanged in the hydrostatic model. A rise from below ground within initially unsaturated soil is a different case.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00159",
+                            "set": 14,
+                            "question": 34
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00165",
+                    "status": "review",
+                    "prompt": "Quick sand condition occurs when:",
+                    "html": "<p><strong>Quicksand and dimensions:</strong> upward seepage is not itself the critical condition. </p><p>SOIL136-00165 equates 'pressure' with unit weight; the valid balance is force per volume iγ<sub>w</sub> = γ′. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00165",
+                            "set": 14,
+                            "question": 39
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00167",
+                    "status": "review",
+                    "prompt": "A flow net can be used for which of the following purpose?",
+                    "html": "<p>A flow net gives pore pressure during seepage, not an everywhere-hydrostatic distribution; force proportionality to head loss assumes fixed geometry.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00167",
+                            "set": 14,
+                            "question": 41
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00173",
+                    "status": "review",
+                    "prompt": "The exit gradient can be expressed by which of the following expression?",
+                    "html": "<p><strong>Flow-net limitations:</strong> SOIL136-00173 has identical original options and undefined 'ah/b'; use defined head loss and exit length instead. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00173",
+                            "set": 14,
+                            "question": 47
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00184",
+                    "status": "review",
+                    "prompt": "During seepage through a soil, direction of seepage is always",
+                    "html": "<p><strong>Flow direction:</strong> seepage follows decreasing hydraulic head. It is normal to equipotential lines in an isotropic medium; an anisotropic conductivity tensor can change that relationship.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00184",
+                            "set": 15,
+                            "question": 44
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00199",
+                    "status": "review",
+                    "prompt": "By the following factor, the compressibility of clay is caused",
+                    "html": "<p>Clay compression is not exclusively loss of double-layer water.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00199",
+                            "set": 16,
+                            "question": 46
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00201",
+                    "status": "review",
+                    "prompt": "What is the coefficient of volume change m_v called?",
+                    "html": "<p><strong>Compressibility definition:</strong> m<sub>v</sub> is volume strain per effective-stress increment. With a<sub>v</sub> defined from the void-ratio change, m<sub>v</sub> = a<sub>v</sub>/(1 + e); the two coefficients are not identical.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00201",
+                            "set": 16,
+                            "question": 48
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00204",
+                    "status": "review",
+                    "prompt": "Compaction of soil is aimed at decreasing dry density.",
+                    "html": "<p><strong>Malformed compaction items:</strong> SOIL136-00204's stem says dry density decreases; the reverse is intended. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00204",
+                            "set": 17,
+                            "question": 36
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00206",
+                    "status": "review",
+                    "prompt": "Compaction of a soil",
+                    "html": "<p>SOIL136-00206 repeats 'increasing dry density' instead of pairing it with decreasing porosity. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00206",
+                            "set": 17,
+                            "question": 38
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00215",
+                    "status": "review",
+                    "prompt": "The seepage pressure always acts ______",
+                    "html": "<p><strong>Seepage force acts with the flow.</strong> Its force per bulk soil volume is i times water unit weight. Do not confuse this force direction with scalar pore pressure or impose isotropic flow-net geometry on anisotropic soil.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00215",
+                            "set": 17,
+                            "question": 46
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00260",
+                    "status": "review",
+                    "prompt": "Negative pore pressure in clay or sand is developed due to ______.",
+                    "html": "<p>Compaction does not guarantee suction or reduced swelling; saturated contractive loading can increase pore pressure. </p><p>SOIL136-00260 omits saturation and drainage: prevented dilation during undrained shear can produce negative excess pressure, so 'Compaction' is not a unique general explanation.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00260",
+                            "set": 21,
+                            "question": 35
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00350",
+                    "status": "review",
+                    "prompt": "The properties of soil that are affected by compaction are ______",
+                    "html": "<p><strong>Compaction effects depend on conditions.</strong> Increased dry density and reduced air voids are the central effects. Changes in swelling, suction and pore pressure depend on soil, moisture and drainage; they are not universally beneficial.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00350",
+                            "set": 27,
+                            "question": 41
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00398",
+                    "status": "review",
+                    "prompt": "The pressure intensity beneath the footing depends upon ______.",
+                    "html": "<p>Soil type alone cannot determine the contact-pressure shape. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00398",
+                            "set": 30,
+                            "question": 47
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00401",
+                    "status": "review",
+                    "prompt": "In cohesive soil, the pressure distribution beneath the footing is ______",
+                    "html": "<p><strong>Missing footing conditions:</strong> SOIL136-00401 does not specify rigidity or loading; its explanation's general claim about flexible footings is inaccurate. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00401",
+                            "set": 31,
+                            "question": 35
+                        }
                     ]
                 }
             ]

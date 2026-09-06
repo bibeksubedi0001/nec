@@ -11,11 +11,8 @@
                 {
                     id: "power-study-and-conversion",
                     title: "A potential study follows water, power and deliverable energy",
-                    html: "<p><strong>A power and energy potential study estimates how much electricity a water resource can support, at what times and with what reliability.</strong> Start with usable flow and hydraulic head; apply the waterway and machine constraints; calculate output through time; then compare alternative plant capacities and operating policies. These results inform feasibility, but estimating energy alone is not a complete environmental, financial or engineering appraisal.</p>" +
-                        "<p>The conversion chain is <strong>hydraulic energy of water → mechanical shaft work in the turbine → electrical energy in the generator</strong>. Elevated water can supply gravitational potential energy, while pressure and velocity describe how that energy is carried through the installation. A generator does not create the water's energy, and a dam is not itself the device that converts shaft work into electricity.</p>" +
-                        "<ul><li><strong>Power potential:</strong> a possible rate of conversion under specified flow, head and efficiency conditions, expressed in kW, MW or GW.</li><li><strong>Energy potential:</strong> the accumulated production over a defined period, expressed in kWh, MWh, GWh or TWh.</li><li><strong>Deliverable production:</strong> the portion remaining after relevant losses, outages, water commitments and grid restrictions, at an explicitly named measurement point.</li></ul>" +
-                        "<p>Natural-flow hydropower is <strong>renewable</strong> because the hydrologic cycle replenishes its resource. The bank also calls it <strong>conventional</strong>, a traditional classification based on established commercial use. These are different classification axes, not competing physical explanations. Water is the conventional source among the listed solar/water/wind choices; that does not establish water as the world's largest electricity source or make supply inherently continuous.</p>" +
-                        "<p><small>These notes address official Chapter 8.2: potential, installed-capacity methods, plant types and components, and reservoir regulation. Source links identify the existing questions, not approval of every stored key or explanation. Added examples and source-free syllabus extensions are labelled. The original bank is unchanged; these notes are not a code-compliance statement or project design approval.</small></p>",
+                    html: "<p><strong>A power and energy potential study estimates how much electricity a water resource can support, at what times and with what reliability.</strong> Start with usable flow and hydraulic head; apply the waterway and machine constraints; calculate output through time; then compare alternative plant capacities and operating policies. These results inform feasibility, but estimating energy alone is not a complete environmental, financial or engineering appraisal.</p><ul><li><strong>Power potential:</strong> a possible rate of conversion under specified flow, head and efficiency conditions, expressed in kW, MW or GW.</li><li><strong>Energy potential:</strong> the accumulated production over a defined period, expressed in kWh, MWh, GWh or TWh.</li><li><strong>Deliverable production:</strong> the portion remaining after relevant losses, outages, water commitments and grid restrictions, at an explicitly named measurement point.</li></ul><p><small>These notes address official Chapter 8.2: potential, installed-capacity methods, plant types and components, and reservoir regulation. Source links identify the existing questions, not approval of every stored key or explanation. Added examples and source-free syllabus extensions are labelled. The original bank is unchanged; these notes are not a code-compliance statement or project design approval.</small></p>",
+                    moreHtml: "<p>The conversion chain is <strong>hydraulic energy of water → mechanical shaft work in the turbine → electrical energy in the generator</strong>. Elevated water can supply gravitational potential energy, while pressure and velocity describe how that energy is carried through the installation. A generator does not create the water's energy, and a dam is not itself the device that converts shaft work into electricity.</p><p>Natural-flow hydropower is <strong>renewable</strong> because the hydrologic cycle replenishes its resource. The bank also calls it <strong>conventional</strong>, a traditional classification based on established commercial use. These are different classification axes, not competing physical explanations. Water is the conventional source among the listed solar/water/wind choices; that does not establish water as the world's largest electricity source or make supply inherently continuous.</p>",
                     sources: [
                         { id: "HYDR626-00001", set: 2, question: 60 },
                         { id: "HYDR626-00227", set: 25, question: 63 },
@@ -29,11 +26,8 @@
                 {
                     id: "power-head-reference-levels",
                     title: "Gross and net head need the correct reference levels",
-                    html: "<p><strong>Head is energy per unit weight, expressed in metres of water.</strong> At a flow section, total head contains elevation, pressure and velocity terms: <strong>z + p/(ρg) + αv<sup>2</sup>/(2g)</strong>. Here z is elevation above a common datum, p is pressure on a consistent reference, v is mean velocity and α is the kinetic-energy correction factor. A height along the sloping penstock is not the vertical head.</p>" +
-                        "<p>For a conventional <strong>reaction-turbine installation</strong> between large upstream and downstream free surfaces at atmospheric pressure, gross head is approximately <strong>H<sub>g</sub> = z<sub>headwater</sub> − z<sub>tailwater</sub></strong>. The runner elevation alone is not the downstream reference: the draft-tube arrangement allows the installation to use head down to tailwater. If pressure or velocity differences at the chosen boundaries are appreciable, include their energy terms.</p>" +
-                        "<p>For an <strong>impulse installation such as a Pelton scheme</strong>, identify the nozzle/jet reference. The free jet operates at atmospheric pressure; the fall from the jet or runner to the tailwater is generally not recovered as useful turbine head. Do not apply a reaction-turbine headwater-to-tailwater shortcut without checking this layout.</p>" +
-                        "<p><strong>Net or effective head H<sub>n</sub> = H<sub>g</sub> − h<sub>L</sub></strong> when both terms use compatible boundaries. Relevant conveyance losses include trash-rack, entrance, friction, bend and valve losses. Penstock length, diameter and roughness therefore affect net head even though they do not define the gross elevation difference. Deduct a loss once: a loss already removed in H<sub>n</sub> must not also be included in an efficiency allowance for the same boundary.</p>" +
-                        "<p>The bank's effective-head answer is appropriate, but <em>available head</em> is also used as a synonym, so it is not a clean distractor. Net head describes the useful energy difference across the defined turbine installation, not merely the pressure head at one inlet point.</p>",
+                    html: "<p><strong>Head is energy per unit weight, expressed in metres of water.</strong> At a flow section, total head contains elevation, pressure and velocity terms: <strong>z + p/(ρg) + αv<sup>2</sup>/(2g)</strong>. </p><p>For a conventional <strong>reaction-turbine installation</strong> between large upstream and downstream free surfaces at atmospheric pressure, gross head is approximately <strong>H<sub>g</sub> = z<sub>headwater</sub> − z<sub>tailwater</sub></strong>. The runner elevation alone is not the downstream reference: the draft-tube arrangement allows the installation to use head down to tailwater. If pressure or velocity differences at the chosen boundaries are appreciable, include their energy terms.</p><p><strong>Net or effective head H<sub>n</sub> = H<sub>g</sub> − h<sub>L</sub></strong> when both terms use compatible boundaries. Relevant conveyance losses include trash-rack, entrance, friction, bend and valve losses. Penstock length, diameter and roughness therefore affect net head even though they do not define the gross elevation difference. Deduct a loss once: a loss already removed in H<sub>n</sub> must not also be included in an efficiency allowance for the same boundary.</p>",
+                    moreHtml: "<p>Here z is elevation above a common datum, p is pressure on a consistent reference, v is mean velocity and α is the kinetic-energy correction factor. A height along the sloping penstock is not the vertical head.</p><p>For an <strong>impulse installation such as a Pelton scheme</strong>, identify the nozzle/jet reference. The free jet operates at atmospheric pressure; the fall from the jet or runner to the tailwater is generally not recovered as useful turbine head. Do not apply a reaction-turbine headwater-to-tailwater shortcut without checking this layout.</p><p>The bank's effective-head answer is appropriate, but <em>available head</em> is also used as a synonym, so it is not a clean distractor. Net head describes the useful energy difference across the defined turbine installation, not merely the pressure head at one inlet point.</p>",
                     sources: [
                         { id: "HYDR626-00114", set: 14, question: 60 },
                         { id: "HYDR626-00207", set: 23, question: 63 },
@@ -43,22 +37,15 @@
                 {
                     id: "power-rated-design-and-operating-head",
                     title: "Rated duty is a point within an operating range",
-                    html: "<p><strong>Operating head</strong> is the head actually experienced under a particular combination of reservoir level, tailwater level and discharge. It varies through time. <strong>Rated head</strong> is the specified head associated with a machine's rated duty or output. <strong>Design head</strong> identifies the head adopted for a design or performance objective. A specification must explain how those terms relate to the best-efficiency point.</p>" +
-                        "<p>The bank intends rated head to match design head for efficient operation. That is a useful classroom convention, but matching two labels cannot by itself maximize <strong>annual plant efficiency or annual energy</strong>. Turbine efficiency also changes with flow, speed and control settings; generator efficiency changes with loading. The head and discharge combinations that occur most often may differ from the rated point.</p>" +
-                        "<ol><li>Establish minimum, normal and maximum operating water levels and the tailwater relation.</li><li>Calculate conveyance losses at the relevant discharges to obtain the net-head range.</li><li>Compare machine performance over that range, including minimum stable load, inefficient or restricted operating zones and cavitation limits.</li><li>Integrate actual operating-point output over the hydrological and dispatch record instead of assigning peak efficiency to every hour.</li></ol>" +
-                        "<p>At unchanged discharge and efficiency, output is proportional to net head. In an actual scheme, increasing discharge can increase friction loss and tailwater level, reducing the net head available. Selecting a larger rated output therefore requires a consistent hydraulic operating point; a higher nameplate figure does not manufacture additional head.</p>",
+                    html: "<p><strong>Operating head</strong> is the head actually experienced under a particular combination of reservoir level, tailwater level and discharge. It varies through time. <strong>Rated head</strong> is the specified head associated with a machine's rated duty or output. <strong>Design head</strong> identifies the head adopted for a design or performance objective. A specification must explain how those terms relate to the best-efficiency point.</p><ol><li>Establish minimum, normal and maximum operating water levels and the tailwater relation.</li><li>Calculate conveyance losses at the relevant discharges to obtain the net-head range.</li><li>Compare machine performance over that range, including minimum stable load, inefficient or restricted operating zones and cavitation limits.</li><li>Integrate actual operating-point output over the hydrological and dispatch record instead of assigning peak efficiency to every hour.</li></ol>",
+                    moreHtml: "<p>The bank intends rated head to match design head for efficient operation. That is a useful classroom convention, but matching two labels cannot by itself maximize <strong>annual plant efficiency or annual energy</strong>. Turbine efficiency also changes with flow, speed and control settings; generator efficiency changes with loading. The head and discharge combinations that occur most often may differ from the rated point.</p><p>At unchanged discharge and efficiency, output is proportional to net head. In an actual scheme, increasing discharge can increase friction loss and tailwater level, reducing the net head available. Selecting a larger rated output therefore requires a consistent hydraulic operating point; a higher nameplate figure does not manufacture additional head.</p>",
                     sources: [{ id: "HYDR626-00219", set: 24, question: 67 }]
                 },
                 {
                     id: "power-equation-units-and-bank-calculations",
                     title: "Derive hydraulic power before applying efficiency",
-                    html: "<p>For a steady discharge Q, mass passes at rate <strong>ρQ</strong>. Each kilogram can release gH<sub>n</sub> joules across the defined head, so <strong>P<sub>h</sub> = ρgQH<sub>n</sub></strong>. Electrical output is <strong>P<sub>e</sub> = ρgQH<sub>n</sub>η</strong>, where η is the efficiency from that hydraulic boundary to the stated electrical boundary. With ρ = 1000 kg/m<sup>3</sup>, g = 9.81 m/s<sup>2</sup>, Q in m<sup>3</sup>/s and head in m:</p>" +
-                        "<p><strong>P<sub>e,kW</sub> = 9.81QH<sub>n</sub>η</strong>, or <strong>P<sub>e,MW</sub> = 0.00981QH<sub>n</sub>η</strong>. One cumec is one m<sup>3</sup>/s; 1 MW = 1000 kW. Efficiencies are fractions, so 85% becomes 0.85. Multiply efficiencies for successive non-overlapping conversion stages, not several alternative estimates of the same loss.</p>" +
-                        "<p><strong>Bank net-head calculation:</strong> H<sub>n</sub> = 423.5 − 2.5 = <strong>421 m</strong>. Therefore <strong>9.81 × 0.9 × 421 × 0.85 = 3159.45765 kW = 3.15945765 MW</strong>. The stored 3159.45 kW is a close approximation; the same numerical magnitude labelled W or MW is not equivalent.</p>" +
-                        "<table><thead><tr><th scope='col'>Bank data</th><th scope='col'>Result using g = 9.81</th><th scope='col'>Convention behind the offered value</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>400 cumecs, effective head 50 m, η = 0.8</th><td>Hydraulic input 196.2 MW; electrical output <strong>156.96 MW</strong>.</td><td><strong>156.8 MW</strong> uses g = 9.8, not the explanation's displayed 9.81.</td></tr>" +
-                        "<tr><th scope='row'>100 m<sup>3</sup>/s, head 75 m, theoretical power</th><td><strong>73.575 MW</strong>, before conversion losses.</td><td><strong>73.5 MW</strong> follows from g = 9.8. It is not the ordinary one-decimal rounding of 73.575.</td></tr></tbody></table>" +
-                        "<p>The three direct controls are <strong>usable discharge, net head and efficiency</strong>. Catchment, dam and turbine choices influence these controls but do not replace them in the equation. The extra displayed decimals show the arithmetic basis; they do not imply that field measurements have that precision.</p>",
+                    html: "<p>For a steady discharge Q, mass passes at rate <strong>ρQ</strong>. Each kilogram can release gH<sub>n</sub> joules across the defined head, so <strong>P<sub>h</sub> = ρgQH<sub>n</sub></strong>. Electrical output is <strong>P<sub>e</sub> = ρgQH<sub>n</sub>η</strong>, where η is the efficiency from that hydraulic boundary to the stated electrical boundary. With ρ = 1000 kg/m<sup>3</sup>, g = 9.81 m/s<sup>2</sup>, Q in m<sup>3</sup>/s and head in m:</p><p><strong>P<sub>e,kW</sub> = 9.81QH<sub>n</sub>η</strong>, or <strong>P<sub>e,MW</sub> = 0.00981QH<sub>n</sub>η</strong>. One cumec is one m<sup>3</sup>/s; 1 MW = 1000 kW. Efficiencies are fractions, so 85% becomes 0.85. Multiply efficiencies for successive non-overlapping conversion stages, not several alternative estimates of the same loss.</p><p><strong>Bank net-head calculation:</strong> H<sub>n</sub> = 423.5 − 2.5 = <strong>421 m</strong>. Therefore <strong>9.81 × 0.9 × 421 × 0.85 = 3159.45765 kW = 3.15945765 MW</strong>. The stored 3159.45 kW is a close approximation; the same numerical magnitude labelled W or MW is not equivalent.</p><table><thead><tr><th scope='col'>Bank data</th><th scope='col'>Result using g = 9.81</th><th scope='col'>Convention behind the offered value</th></tr></thead><tbody><tr><th scope='row'>400 cumecs, effective head 50 m, η = 0.8</th><td>Hydraulic input 196.2 MW; electrical output <strong>156.96 MW</strong>.</td><td><strong>156.8 MW</strong> uses g = 9.8, not the explanation's displayed 9.81.</td></tr><tr><th scope='row'>100 m<sup>3</sup>/s, head 75 m, theoretical power</th><td><strong>73.575 MW</strong>, before conversion losses.</td><td><strong>73.5 MW</strong> follows from g = 9.8. It is not the ordinary one-decimal rounding of 73.575.</td></tr></tbody></table>",
+                    moreHtml: "<p>The three direct controls are <strong>usable discharge, net head and efficiency</strong>. Catchment, dam and turbine choices influence these controls but do not replace them in the equation. The extra displayed decimals show the arithmetic basis; they do not imply that field measurements have that precision.</p>",
                     sources: [
                         { id: "HYDR626-00063", set: 8, question: 66 },
                         { id: "HYDR626-00015", set: 3, question: 65 },
@@ -108,11 +95,8 @@
                 {
                     id: "power-duration-curves-and-usable-flow",
                     title: "Duration curves preserve totals but discard chronology",
-                    html: "<p>A <strong>flow-duration curve, FDC,</strong> arranges discharge by the fraction or percentage of time it is equalled or exceeded. Construct it from representative observations with a consistent time step, or weight unequal intervals by their durations. It answers how often a flow occurred, not when it occurred. A chronological hydrograph retains the sequence of floods and dry spells that the sorted curve removes.</p>" +
-                        "<p>For a simple unregulated ROR assessment, usable turbine flow is limited by available river flow after non-power commitments and by the installed waterway/machine capacity. A simplified expression is <strong>Q<sub>t</sub> = min[Q<sub>d</sub>, max(0, Q<sub>river</sub> − Q<sub>required bypass</sub> − Q<sub>other withdrawals</sub>)]</strong>, followed by checks on minimum operating flow, shutdowns and grid acceptance. The subtracted uses must be distinct; water already included in one commitment is not subtracted again.</p>" +
-                        "<p>At a fixed compatible net head and efficiency, convert usable flow to <strong>P = ρgQ<sub>t</sub>H<sub>n</sub>η</strong> and obtain a power-duration curve. With p as percentage exceedance, P in MW and T in hours, <strong>E<sub>MWh</sub> = (T/100) ∫<sub>0</sub><sup>100</sup> P(p) dp</strong>. A fraction axis requires T instead of T/100; an hours axis already supplies the time dimension. The raw area under an FDC is not electrical energy.</p>" +
-                        "<p><strong>Illustrative added duration bands:</strong> 10 MW for 40% of a 8760-hour year and 4 MW for the remaining 60% give <strong>E = 8760(0.40 × 10 + 0.60 × 4) = 56064 MWh</strong>. The corresponding average is 6.4 MW. An unscaled percentage-axis area would be 640 MW-percent, not 640 MWh.</p>" +
-                        "<p>If head, efficiency or restrictions vary with season, preserve their association with each flow observation before calculating and sorting power. An FDC alone cannot reproduce reservoir drawdown, prove firm supply or determine customer diversity. Available hydraulic energy and delivered electrical energy must remain separate accounts.</p>",
+                    html: "<p>A <strong>flow-duration curve, FDC,</strong> arranges discharge by the fraction or percentage of time it is equalled or exceeded. Construct it from representative observations with a consistent time step, or weight unequal intervals by their durations. It answers how often a flow occurred, not when it occurred. A chronological hydrograph retains the sequence of floods and dry spells that the sorted curve removes.</p><p>For a simple unregulated ROR assessment, usable turbine flow is limited by available river flow after non-power commitments and by the installed waterway/machine capacity. A simplified expression is <strong>Q<sub>t</sub> = min[Q<sub>d</sub>, max(0, Q<sub>river</sub> − Q<sub>required bypass</sub> − Q<sub>other withdrawals</sub>)]</strong>, followed by checks on minimum operating flow, shutdowns and grid acceptance. The subtracted uses must be distinct; water already included in one commitment is not subtracted again.</p><p>At a fixed compatible net head and efficiency, convert usable flow to <strong>P = ρgQ<sub>t</sub>H<sub>n</sub>η</strong> and obtain a power-duration curve. With p as percentage exceedance, P in MW and T in hours, <strong>E<sub>MWh</sub> = (T/100) ∫<sub>0</sub><sup>100</sup> P(p) dp</strong>. A fraction axis requires T instead of T/100; an hours axis already supplies the time dimension. The raw area under an FDC is not electrical energy.</p><p><strong>Illustrative added duration bands:</strong> 10 MW for 40% of a 8760-hour year and 4 MW for the remaining 60% give <strong>E = 8760(0.40 × 10 + 0.60 × 4) = 56064 MWh</strong>. The corresponding average is 6.4 MW. An unscaled percentage-axis area would be 640 MW-percent, not 640 MWh.</p>",
+                    moreHtml: "<p>If head, efficiency or restrictions vary with season, preserve their association with each flow observation before calculating and sorting power. An FDC alone cannot reproduce reservoir drawdown, prove firm supply or determine customer diversity. Available hydraulic energy and delivered electrical energy must remain separate accounts.</p>",
                     sources: [
                         { id: "HYDR626-00008", set: 2, question: 67 },
                         { id: "HYDR626-00131", set: 15, question: 65 }
@@ -148,29 +132,22 @@
                 {
                     id: "power-plant-use-and-operating-hours",
                     title: "Plant-use factor has an operating-hours denominator",
-                    html: "<p><strong>Plant-use factor, PUF = E/(Ct<sub>on</sub>)</strong>, compares generated energy with full-rating production during the hours the plant actually operates. Capacity factor uses the entire observation period T, including non-operating hours. Thus <strong>CF = PUF × t<sub>on</sub>/T</strong>. Define the plant-on convention and use positive operating hours; for a fleet or changing unit configuration, a compatible capacity-time calculation is needed.</p>" +
-                        "<p><strong>Illustrative added day:</strong> a 10 MW plant generates 10 MW for four hours, 5 MW for four hours and zero for sixteen hours. E = 10 × 4 + 5 × 4 = <strong>60 MWh</strong>; t<sub>on</sub> = 8 h and T = 24 h. PUF = 60/(10 × 8) = <strong>0.75</strong>, whereas CF = 60/(10 × 24) = <strong>0.25</strong>. Peak output is 10 MW, so UF = <strong>1</strong> and LF = <strong>0.25</strong>. The four factors describe different features of the same record.</p>" +
-                        "<p>The bank's <strong>maximum power utilized/maximum power available</strong> wording describes a utilization ratio when available means installed rated capacity. It does not define PUF. Its explanation then describes full-period capacity factor instead. None of the offered terms supplies the conventional utilization-factor name precisely; do not merge the definitions to preserve the key.</p>" +
-                        "<p><strong>Power factor</strong>, another distractor, concerns real and apparent AC power, P/S, not energy produced over time. <strong>Reserve capacity</strong> is a capacity amount under a stated definition, not this dimensionless utilization ratio. Pumping consumption and imported energy should also be accounted for separately rather than inserting a signed net-storage energy balance into a nonnegative generating-use example.</p>",
+                    html: "<p><strong>Plant-use factor, PUF = E/(Ct<sub>on</sub>)</strong>, compares generated energy with full-rating production during the hours the plant actually operates. Capacity factor uses the entire observation period T, including non-operating hours. Thus <strong>CF = PUF × t<sub>on</sub>/T</strong>. Define the plant-on convention and use positive operating hours; for a fleet or changing unit configuration, a compatible capacity-time calculation is needed.</p><p><strong>Illustrative added day:</strong> a 10 MW plant generates 10 MW for four hours, 5 MW for four hours and zero for sixteen hours. E = 10 × 4 + 5 × 4 = <strong>60 MWh</strong>; t<sub>on</sub> = 8 h and T = 24 h. PUF = 60/(10 × 8) = <strong>0.75</strong>, whereas CF = 60/(10 × 24) = <strong>0.25</strong>. Peak output is 10 MW, so UF = <strong>1</strong> and LF = <strong>0.25</strong>. The four factors describe different features of the same record.</p>",
+                    moreHtml: "<p>The bank's <strong>maximum power utilized/maximum power available</strong> wording describes a utilization ratio when available means installed rated capacity. It does not define PUF. Its explanation then describes full-period capacity factor instead. None of the offered terms supplies the conventional utilization-factor name precisely; do not merge the definitions to preserve the key.</p><p><strong>Power factor</strong>, another distractor, concerns real and apparent AC power, P/S, not energy produced over time. <strong>Reserve capacity</strong> is a capacity amount under a stated definition, not this dimensionless utilization ratio. Pumping consumption and imported energy should also be accounted for separately rather than inserting a signed net-storage energy balance into a nonnegative generating-use example.</p>",
                     sources: [{ id: "HYDR626-00230", set: 25, question: 66 }]
                 },
                 {
                     id: "power-diversity-and-coincidence",
                     title: "Coincidence depends on when individual peaks occur",
-                    html: "<p>For the same group of loads and the same observation period, let ΣP<sub>individual,max</sub> be the sum of their individual maximum demands and P<sub>system,max</sub> the maximum of their <strong>simultaneous total</strong>. Adding maxima that occurred at different times usually gives a larger number than the maximum actually seen by the combined supply.</p>" +
-                        "<p><strong>Diversity factor = ΣP<sub>individual,max</sub>/P<sub>system,max</sub></strong>. The corresponding <strong>coincidence factor = P<sub>system,max</sub>/ΣP<sub>individual,max</sub></strong>. They are reciprocals when the denominators are positive. For nonnegative demands on consistent boundaries, diversity is at least one and coincidence is at most one; equality occurs when the individual maxima coincide.</p>" +
-                        "<p><strong>Illustrative added demand group:</strong> two consumers have individual peaks of 60 and 40 MW, but their combined maximum is 80 MW. Diversity = (60 + 40)/80 = <strong>1.25</strong> and coincidence = 80/100 = <strong>0.80</strong>. Designing solely for a coincident 100 MW would ignore the measured timing difference; assuming 80 MW without supporting coincident records would be equally unjustified.</p>" +
-                        "<p>These factors need simultaneous load information. They cannot be recovered from a river FDC, installed capacity or annual energy alone. A load factor compares average and peak demand; diversity compares individual and combined peaks. Diversity can inform demand-side capacity planning but does not by itself provide water during a drought or replace a reserve and reliability assessment.</p>",
+                    html: "<p>For the same group of loads and the same observation period, let ΣP<sub>individual,max</sub> be the sum of their individual maximum demands and P<sub>system,max</sub> the maximum of their <strong>simultaneous total</strong>. Adding maxima that occurred at different times usually gives a larger number than the maximum actually seen by the combined supply.</p><p><strong>Diversity factor = ΣP<sub>individual,max</sub>/P<sub>system,max</sub></strong>. The corresponding <strong>coincidence factor = P<sub>system,max</sub>/ΣP<sub>individual,max</sub></strong>. They are reciprocals when the denominators are positive. For nonnegative demands on consistent boundaries, diversity is at least one and coincidence is at most one; equality occurs when the individual maxima coincide.</p><p><strong>Illustrative added demand group:</strong> two consumers have individual peaks of 60 and 40 MW, but their combined maximum is 80 MW. Diversity = (60 + 40)/80 = <strong>1.25</strong> and coincidence = 80/100 = <strong>0.80</strong>. Designing solely for a coincident 100 MW would ignore the measured timing difference; assuming 80 MW without supporting coincident records would be equally unjustified.</p>",
+                    moreHtml: "<p>These factors need simultaneous load information. They cannot be recovered from a river FDC, installed capacity or annual energy alone. A load factor compares average and peak demand; diversity compares individual and combined peaks. Diversity can inform demand-side capacity planning but does not by itself provide water during a drought or replace a reserve and reliability assessment.</p>",
                     sources: [{ id: "HYDR626-00009", set: 2, question: 68 }]
                 },
                 {
                     id: "power-firm-secondary-and-reliability",
                     title: "Firm power is a qualified delivery commitment",
-                    html: "<p><strong>Firm or primary power</strong> is the output supportable for a specified delivery schedule under an explicitly chosen hydrological and reliability criterion. <strong>Secondary or surplus power</strong> is additional output available when conditions permit but not included in that firm commitment. A schedule may require continuous year-round output or particular hours in particular seasons; MW without its schedule does not completely describe firm service.</p>" +
-                        "<p>For an unregulated ROR plant, critical usable low flows can govern firm output. With storage or pondage, releases need not equal simultaneous river inflow: the reservoir can bridge deficits, subject to its water balance, head range and drawdown limits. Include non-power releases, unit availability and delivery restrictions. A minimum observed river flow alone is therefore not a universal firm-power formula.</p>" +
-                        "<p><em>Publication-specific criterion:</em> DoED's <strong>Guidelines for Study of Hydropower Projects, 2018, A2 section 9.1</strong> uses a <strong>90% reliable average daily flow in the lowest-flow month</strong> for its firm-energy calculation. This specific daily/low-month assessment is <strong>not a universal annual Q<sub>90</sub> rule</strong>, and it does not prescribe Q<sub>40</sub> for every project. Retain the study stage, time aggregation and reliability definition when using such guidance.</p>" +
-                        "<p><em>Reference illustration, not bank data:</em> the Budhigandaki owner's salient-features table describes firm outputs for stated daily hours and distinguishes operating/storage zones. It demonstrates why the word firm need not mean one unchanging output for all 8760 hours. That published design description is not a new operating approval or a transferable criterion for another reservoir.</p>" +
-                        "<p>The bank's <strong>100% available flow</strong> is ambiguous: it might mean dependable availability, but it cannot justify diverting every litre of river water regardless of required releases. Its explanation also introduces full available head in place of an actual listed option. An interconnected mix can improve reliability through complementary resources and reserves, but no source label proves it is always the most reliable system; outages, hydrological correlation and transmission bottlenecks still matter.</p>",
+                    html: "<p><strong>Firm or primary power</strong> is the output supportable for a specified delivery schedule under an explicitly chosen hydrological and reliability criterion. <strong>Secondary or surplus power</strong> is additional output available when conditions permit but not included in that firm commitment. A schedule may require continuous year-round output or particular hours in particular seasons; MW without its schedule does not completely describe firm service.</p><p><em>Publication-specific criterion:</em> DoED's <strong>Guidelines for Study of Hydropower Projects, 2018, A2 section 9.1</strong> uses a <strong>90% reliable average daily flow in the lowest-flow month</strong> for its firm-energy calculation. This specific daily/low-month assessment is <strong>not a universal annual Q<sub>90</sub> rule</strong>, and it does not prescribe Q<sub>40</sub> for every project. Retain the study stage, time aggregation and reliability definition when using such guidance.</p><p><em>Reference illustration, not bank data:</em> the Budhigandaki owner's salient-features table describes firm outputs for stated daily hours and distinguishes operating/storage zones. It demonstrates why the word firm need not mean one unchanging output for all 8760 hours. That published design description is not a new operating approval or a transferable criterion for another reservoir.</p><p>The bank's <strong>100% available flow</strong> is ambiguous: it might mean dependable availability, but it cannot justify diverting every litre of river water regardless of required releases. Its explanation also introduces full available head in place of an actual listed option. </p>",
+                    moreHtml: "<p>For an unregulated ROR plant, critical usable low flows can govern firm output. With storage or pondage, releases need not equal simultaneous river inflow: the reservoir can bridge deficits, subject to its water balance, head range and drawdown limits. Include non-power releases, unit availability and delivery restrictions. A minimum observed river flow alone is therefore not a universal firm-power formula.</p><p>An interconnected mix can improve reliability through complementary resources and reserves, but no source label proves it is always the most reliable system; outages, hydrological correlation and transmission bottlenecks still matter.</p>",
                     sources: [
                         { id: "HYDR626-00005", set: 2, question: 64 },
                         { id: "HYDR626-00130", set: 15, question: 64 },
@@ -183,40 +160,22 @@
                 {
                     id: "power-installed-capacity-methods",
                     title: "Installed capacity is chosen by comparing feasible alternatives",
-                    html: "<p><strong>Installed capacity is a design choice, not simply the maximum instantaneous hydraulic potential.</strong> Raising design discharge can capture more wet-period water, but the extra equipment may operate for few hours. Oversizing can lower capacity factor, increase civil and electrical costs, and leave generation that the grid cannot accept. A smaller plant may spill more water yet produce a better economic result.</p>" +
-                        "<table><thead><tr><th scope='col'>Approach</th><th scope='col'>Contribution to capacity selection</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Demand–supply analysis</th><td>Match the chronological load, firm/peak requirement, existing supply, reserves and transmission limits.</td></tr>" +
-                        "<tr><th scope='row'>Flow-duration alternatives</th><td>Estimate unregulated energy for candidate design flows, net heads, efficiencies and machine limits; quantify incremental wet-period capture.</td></tr>" +
-                        "<tr><th scope='row'>Mass-curve or sequential storage analysis</th><td>Check the storage needed to support releases and the yield possible through drought sequences. A mass curve is cumulative inflow versus time, not an FDC.</td></tr>" +
-                        "<tr><th scope='row'>Marginal cost–benefit comparison</th><td>Compare additional dependable capacity, time-valued energy and other benefits with additional life-cycle costs and impacts.</td></tr></tbody></table>" +
-                        "<p>For each candidate, choose compatible turbine units, generator ratings and waterway capacity, then recalculate losses and head rather than keeping hydraulics fixed by habit. A storage project's <strong>rule curve</strong> constrains its releases and energy, so operating policy and installed capacity should be considered together. Several unit sizes can give different part-load efficiencies, maintenance flexibility and outage consequences at the same total rating.</p>" +
-                        "<p>DoED 2018's optimization material compares costs and benefits of alternatives. The bank's single mass-analysis choice is not uniquely sufficient: demand–supply and marginal cost–benefit methods are also relevant. Its explanation incorrectly equates mass analysis with flow-duration analysis. Maximizing operating hours, energy alone, or capacity factor alone is not the same as maximizing feasible net benefit.</p>",
+                    html: "<p><strong>Installed capacity is a design choice, not simply the maximum instantaneous hydraulic potential.</strong> Raising design discharge can capture more wet-period water, but the extra equipment may operate for few hours. Oversizing can lower capacity factor, increase civil and electrical costs, and leave generation that the grid cannot accept. A smaller plant may spill more water yet produce a better economic result.</p><table><thead><tr><th scope='col'>Approach</th><th scope='col'>Contribution to capacity selection</th></tr></thead><tbody><tr><th scope='row'>Demand–supply analysis</th><td>Match the chronological load, firm/peak requirement, existing supply, reserves and transmission limits.</td></tr><tr><th scope='row'>Flow-duration alternatives</th><td>Estimate unregulated energy for candidate design flows, net heads, efficiencies and machine limits; quantify incremental wet-period capture.</td></tr><tr><th scope='row'>Mass-curve or sequential storage analysis</th><td>Check the storage needed to support releases and the yield possible through drought sequences. A mass curve is cumulative inflow versus time, not an FDC.</td></tr><tr><th scope='row'>Marginal cost–benefit comparison</th><td>Compare additional dependable capacity, time-valued energy and other benefits with additional life-cycle costs and impacts.</td></tr></tbody></table><p>DoED 2018's optimization material compares costs and benefits of alternatives. The bank's single mass-analysis choice is not uniquely sufficient: demand–supply and marginal cost–benefit methods are also relevant. Its explanation incorrectly equates mass analysis with flow-duration analysis. Maximizing operating hours, energy alone, or capacity factor alone is not the same as maximizing feasible net benefit.</p>",
+                    moreHtml: "<p>For each candidate, choose compatible turbine units, generator ratings and waterway capacity, then recalculate losses and head rather than keeping hydraulics fixed by habit. A storage project's <strong>rule curve</strong> constrains its releases and energy, so operating policy and installed capacity should be considered together. Several unit sizes can give different part-load efficiencies, maintenance flexibility and outage consequences at the same total rating.</p>",
                     sources: [{ id: "HYDR626-00125", set: 15, question: 59 }]
                 },
                 {
                     id: "power-incremental-capacity-example",
                     title: "Added example: the largest capacity need not have the largest benefit",
-                    html: "<p><em>Syllabus extension — official Chapter 8.2 methods of fixing installed capacity.</em> No assigned bank question supplies a complete economic comparison. The following is an <strong>explicitly added, hypothetical example</strong>; its energy estimates, annualized costs and price are not observed project data or a Nepal tariff.</p>" +
-                        "<p>Suppose a separate, consistent hydraulic/operating assessment estimates the deliverable annual energy below for three feasible mutually exclusive capacities. Assume every delivered kWh is valued at <strong>Rs6</strong>, no separate capacity payment or other benefit, and annualized costs already include the chosen capital recovery, operation, maintenance and replacement allowances on the same price basis.</p>" +
-                        "<table><thead><tr><th scope='col'>Capacity and annual energy</th><th scope='col'>Annual benefit and cost, million Rs</th><th scope='col'>Net annual benefit, million Rs</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>10 MW; 50 GWh</th><td>Benefit 300; cost 200</td><td><strong>100</strong></td></tr>" +
-                        "<tr><th scope='row'>15 MW; 65 GWh</th><td>Benefit 390; cost 250</td><td><strong>140</strong></td></tr>" +
-                        "<tr><th scope='row'>20 MW; 70 GWh</th><td>Benefit 420; cost 300</td><td><strong>120</strong></td></tr></tbody></table>" +
-                        "<p>One GWh is one million kWh, so the annual revenue in million rupees is 6 times the GWh figure. Going from 10 to 15 MW adds <strong>90</strong> million Rs benefit for <strong>50</strong> million Rs cost: net gain 40. Going from 15 to 20 MW adds only <strong>30</strong> million Rs benefit for another <strong>50</strong> million Rs cost: net loss 20. Thus <strong>15 MW wins among these three alternatives under these assumptions</strong>, not because it has the largest nameplate or the highest capacity factor.</p>" +
-                        "<p>A real comparison needs time-dependent energy values, firm-capacity value where applicable, hydrological uncertainty, environmental constraints, transmission, construction timing and a consistent discounting model. It must also consider the no-project alternative and other feasible sizes. The added table demonstrates incremental reasoning; it cannot establish an optimum for an unspecified bank project.</p>",
+                    html: "<p><em>Syllabus extension — official Chapter 8.2 methods of fixing installed capacity.</em> No assigned bank question supplies a complete economic comparison. The following is an <strong>explicitly added, hypothetical example</strong>; its energy estimates, annualized costs and price are not observed project data or a Nepal tariff.</p><p>Suppose a separate, consistent hydraulic/operating assessment estimates the deliverable annual energy below for three feasible mutually exclusive capacities. Assume every delivered kWh is valued at <strong>Rs6</strong>, no separate capacity payment or other benefit, and annualized costs already include the chosen capital recovery, operation, maintenance and replacement allowances on the same price basis.</p><table><thead><tr><th scope='col'>Capacity and annual energy</th><th scope='col'>Annual benefit and cost, million Rs</th><th scope='col'>Net annual benefit, million Rs</th></tr></thead><tbody><tr><th scope='row'>10 MW; 50 GWh</th><td>Benefit 300; cost 200</td><td><strong>100</strong></td></tr><tr><th scope='row'>15 MW; 65 GWh</th><td>Benefit 390; cost 250</td><td><strong>140</strong></td></tr><tr><th scope='row'>20 MW; 70 GWh</th><td>Benefit 420; cost 300</td><td><strong>120</strong></td></tr></tbody></table><p>One GWh is one million kWh, so the annual revenue in million rupees is 6 times the GWh figure. Going from 10 to 15 MW adds <strong>90</strong> million Rs benefit for <strong>50</strong> million Rs cost: net gain 40. Going from 15 to 20 MW adds only <strong>30</strong> million Rs benefit for another <strong>50</strong> million Rs cost: net loss 20. Thus <strong>15 MW wins among these three alternatives under these assumptions</strong>, not because it has the largest nameplate or the highest capacity factor.</p>",
+                    moreHtml: "<p>A real comparison needs time-dependent energy values, firm-capacity value where applicable, hydrological uncertainty, environmental constraints, transmission, construction timing and a consistent discounting model. It must also consider the no-project alternative and other feasible sizes. The added table demonstrates incremental reasoning; it cannot establish an optimum for an unspecified bank project.</p>",
                     sources: []
                 },
                 {
                     id: "power-classification-axes-and-thresholds",
                     title: "Classify head, size, water source and duty on separate axes",
-                    html: "<p>A plant can be described simultaneously by <strong>head, installed capacity, storage arrangement, energy source, operating duty and grid connection</strong>. These labels are not mutually exclusive alternatives. A micro plant can be ROR and isolated; a large storage plant can provide peaking service; a pumped-storage scheme can use reversible machinery at a particular head.</p>" +
-                        "<table><thead><tr><th scope='col'>Basis</th><th scope='col'>Named convention or distinction</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Head</th><td>DoED 2018 classifies <strong>low &lt;50 m, medium 50–300 m, high &gt;300 m</strong>. The bank's &lt;15 m convention is not a universal threshold.</td></tr>" +
-                        "<tr><th scope='row'>Installed capacity</th><td>The US DOE primer defines micro-hydropower as <strong>up to 100 kW</strong>, including 100 kW. This is an identified educational classification, not an asserted Nepal statutory threshold.</td></tr>" +
-                        "<tr><th scope='row'>Regulation arrangement</th><td>Unregulated ROR, peaking ROR with pondage, and seasonal or carry-over storage describe differing abilities to shift river inflow through time.</td></tr>" +
-                        "<tr><th scope='row'>Duty and connection</th><td>Base, intermediate and peaking service describe dispatch; isolated, mini-grid and interconnected describe the electrical system.</td></tr></tbody></table>" +
-                        "<p><strong>Tidal-range generation</strong> uses the changing difference between a tidal basin and the sea, controlled by barrage or lagoon gates and turbines. Its energy source is the tide, not water previously raised by grid-powered pumps. Tidal-stream generation instead extracts kinetic energy from currents; wave energy is a different marine resource. Predictable tides still do not mean constant output or universally greater or smaller firm power than a river scheme.</p>" +
-                        "<p>Micro-hydro can suit rural supply when local flow, head, demand and maintenance arrangements are adequate. Size alone does not guarantee year-round service, stand-alone frequency control or negligible environmental impact. Always state the publication behind a numerical class boundary; the bank's strict &lt;100 kW wording excludes a boundary included by DOE's up-to-100 convention.</p>",
+                    html: "<p>A plant can be described simultaneously by <strong>head, installed capacity, storage arrangement, energy source, operating duty and grid connection</strong>. These labels are not mutually exclusive alternatives. A micro plant can be ROR and isolated; a large storage plant can provide peaking service; a pumped-storage scheme can use reversible machinery at a particular head.</p><table><thead><tr><th scope='col'>Basis</th><th scope='col'>Named convention or distinction</th></tr></thead><tbody><tr><th scope='row'>Head</th><td>DoED 2018 classifies <strong>low &lt;50 m, medium 50–300 m, high &gt;300 m</strong>. The bank's &lt;15 m convention is not a universal threshold.</td></tr><tr><th scope='row'>Installed capacity</th><td>The US DOE primer defines micro-hydropower as <strong>up to 100 kW</strong>, including 100 kW. This is an identified educational classification, not an asserted Nepal statutory threshold.</td></tr><tr><th scope='row'>Regulation arrangement</th><td>Unregulated ROR, peaking ROR with pondage, and seasonal or carry-over storage describe differing abilities to shift river inflow through time.</td></tr><tr><th scope='row'>Duty and connection</th><td>Base, intermediate and peaking service describe dispatch; isolated, mini-grid and interconnected describe the electrical system.</td></tr></tbody></table><p>Micro-hydro can suit rural supply when local flow, head, demand and maintenance arrangements are adequate. Size alone does not guarantee year-round service, stand-alone frequency control or negligible environmental impact. Always state the publication behind a numerical class boundary; the bank's strict &lt;100 kW wording excludes a boundary included by DOE's up-to-100 convention.</p>",
+                    moreHtml: "<p><strong>Tidal-range generation</strong> uses the changing difference between a tidal basin and the sea, controlled by barrage or lagoon gates and turbines. Its energy source is the tide, not water previously raised by grid-powered pumps. Tidal-stream generation instead extracts kinetic energy from currents; wave energy is a different marine resource. Predictable tides still do not mean constant output or universally greater or smaller firm power than a river scheme.</p>",
                     sources: [
                         { id: "HYDR626-00133", set: 15, question: 67 },
                         { id: "HYDR626-00134", set: 16, question: 61 },
@@ -227,11 +186,8 @@
                 {
                     id: "power-ror-storage-and-nepal-examples",
                     title: "ROR, peaking ROR and storage describe different regulation abilities",
-                    html: "<p><strong>Run-of-river generation</strong> mainly follows the usable river inflow because little water can be shifted across long periods. A diversion may route water through a canal, tunnel or penstock to exploit natural elevation fall; DOE explicitly notes that some diversions need no dam. A weir, intake pool or forebay does not by itself establish seasonal storage capability.</p>" +
-                        "<p><strong>Peaking ROR</strong> adds enough pondage to shift some generation within a short cycle, commonly a day. Its higher output during selected hours must be balanced by lower releases or replenishment at other times. It remains dependent on the season's inflow; daily balancing storage does not automatically bridge a prolonged dry season.</p>" +
-                        "<p><strong>Storage or impoundment generation</strong> uses a reservoir to regulate releases over its designed storage horizon. The reservoir's usable volume and allowable drawdown, not merely the existence of a dam, determine how long inflow and generation can be separated. Seasonal storage is not limitless drought insurance, and pumped storage is distinguished by its pumping-energy input even though it also has reservoirs.</p>" +
-                        "<p><strong>Bank project comparison:</strong> Kulekhani I is a <strong>seasonal-storage</strong> scheme, not peaking ROR. NEA's Generation Directorate 2082/2083 plant table identifies Kaligandaki A and Marsyangdi as peaking ROR; NEA's Annual Report 2025/2026 describes Upper Tamakoshi as daily peaking ROR. A storage plant can operate during peaks without thereby becoming a peaking-ROR scheme.</p>" +
-                        "<p>The DOE types primer calls impoundment the most common general type, supporting the bank's generic reservoir answer. That wording is not a counted, dated description of Nepal's operating fleet. Keep a broad primer classification separate from regional statistics, and do not infer that every impoundment is multipurpose.</p>",
+                    html: "<p><strong>Run-of-river generation</strong> mainly follows the usable river inflow because little water can be shifted across long periods. A diversion may route water through a canal, tunnel or penstock to exploit natural elevation fall; DOE explicitly notes that some diversions need no dam. A weir, intake pool or forebay does not by itself establish seasonal storage capability.</p><p><strong>Bank project comparison:</strong> Kulekhani I is a <strong>seasonal-storage</strong> scheme, not peaking ROR. NEA's Generation Directorate 2082/2083 plant table identifies Kaligandaki A and Marsyangdi as peaking ROR; NEA's Annual Report 2025/2026 describes Upper Tamakoshi as daily peaking ROR. A storage plant can operate during peaks without thereby becoming a peaking-ROR scheme.</p>",
+                    moreHtml: "<p><strong>Peaking ROR</strong> adds enough pondage to shift some generation within a short cycle, commonly a day. Its higher output during selected hours must be balanced by lower releases or replenishment at other times. It remains dependent on the season's inflow; daily balancing storage does not automatically bridge a prolonged dry season.</p><p><strong>Storage or impoundment generation</strong> uses a reservoir to regulate releases over its designed storage horizon. The reservoir's usable volume and allowable drawdown, not merely the existence of a dam, determine how long inflow and generation can be separated. Seasonal storage is not limitless drought insurance, and pumped storage is distinguished by its pumping-energy input even though it also has reservoirs.</p><p>The DOE types primer calls impoundment the most common general type, supporting the bank's generic reservoir answer. That wording is not a counted, dated description of Nepal's operating fleet. Keep a broad primer classification separate from regional statistics, and do not infer that every impoundment is multipurpose.</p>",
                     sources: [
                         { id: "HYDR626-00225", set: 25, question: 61 },
                         { id: "HYDR626-00277", set: 30, question: 67 },
@@ -241,10 +197,8 @@
                 {
                     id: "power-pumped-storage-energy-balance",
                     title: "Pumped storage shifts energy and loses part of it each cycle",
-                    html: "<p><strong>Pumped storage</strong> uses electricity to move water from a lower reservoir to an upper reservoir, then releases it through a turbine when stored energy is more valuable. Low electricity demand often coincides with charging, but the actual decision can also follow renewable surplus, prices and system-service requirements. Night-time pumping is a common pattern, not the definition.</p>" +
-                        "<p>For a common transferred volume V, approximate generating energy as <strong>E<sub>out</sub> = ρgVH<sub>gen</sub>η<sub>gen</sub></strong>. Pumping electrical input is <strong>E<sub>in</sub> = ρgVH<sub>pump</sub>/η<sub>pump</sub></strong>, where the pumping head includes the losses that must be overcome and the generating net head deducts generating-path losses. Thus <strong>η<sub>round-trip</sub> = E<sub>out</sub>/E<sub>in</sub> = η<sub>pump</sub>η<sub>gen</sub>H<sub>gen</sub>/H<sub>pump</sub></strong> in this simplified constant-head account.</p>" +
-                        "<p><strong>Illustrative added cycle:</strong> an assumed measured round-trip efficiency of 0.80 converts 100 MWh of charging energy into <strong>80 MWh</strong> of recovered electrical energy. The missing 20 MWh is loss, not additional generation. Ignoring other costs, arbitrage requires p<sub>sell</sub>η<sub>round-trip</sub> &gt; p<sub>buy</sub> when prices are expressed per matching electrical-energy unit. Real comparisons also include maintenance, water losses and service revenues.</p>" +
-                        "<p>Many schemes use a <strong>reversible pump-turbine</strong> with a motor-generator and bidirectional waterway. Other arrangements use separate pumps and turbines; reversible or bidirectional machines are not exclusive to pumped storage, since tidal arrangements can also reverse operation. Distinguish closed-loop schemes from schemes receiving natural inflow. Energy attributable to that natural inflow is separate from recovered pumping energy: storage is not a free primary energy source.</p>",
+                    html: "<p><strong>Pumped storage</strong> uses electricity to move water from a lower reservoir to an upper reservoir, then releases it through a turbine when stored energy is more valuable. Low electricity demand often coincides with charging, but the actual decision can also follow renewable surplus, prices and system-service requirements. Night-time pumping is a common pattern, not the definition.</p><p>For a common transferred volume V, approximate generating energy as <strong>E<sub>out</sub> = ρgVH<sub>gen</sub>η<sub>gen</sub></strong>. Pumping electrical input is <strong>E<sub>in</sub> = ρgVH<sub>pump</sub>/η<sub>pump</sub></strong>, where the pumping head includes the losses that must be overcome and the generating net head deducts generating-path losses. Thus <strong>η<sub>round-trip</sub> = E<sub>out</sub>/E<sub>in</sub> = η<sub>pump</sub>η<sub>gen</sub>H<sub>gen</sub>/H<sub>pump</sub></strong> in this simplified constant-head account.</p><p><strong>Illustrative added cycle:</strong> an assumed measured round-trip efficiency of 0.80 converts 100 MWh of charging energy into <strong>80 MWh</strong> of recovered electrical energy. The missing 20 MWh is loss, not additional generation. Ignoring other costs, arbitrage requires p<sub>sell</sub>η<sub>round-trip</sub> &gt; p<sub>buy</sub> when prices are expressed per matching electrical-energy unit. Real comparisons also include maintenance, water losses and service revenues.</p>",
+                    moreHtml: "<p>Many schemes use a <strong>reversible pump-turbine</strong> with a motor-generator and bidirectional waterway. Other arrangements use separate pumps and turbines; reversible or bidirectional machines are not exclusive to pumped storage, since tidal arrangements can also reverse operation. Distinguish closed-loop schemes from schemes receiving natural inflow. Energy attributable to that natural inflow is separate from recovered pumping energy: storage is not a free primary energy source.</p>",
                     sources: [
                         { id: "HYDR626-00054", set: 7, question: 67 },
                         { id: "HYDR626-00224", set: 25, question: 60 }
@@ -253,11 +207,8 @@
                 {
                     id: "power-load-following-and-machine-performance",
                     title: "Base-load and peaking service are operating roles",
-                    html: "<p><strong>Base load</strong> is the sustained minimum component of system demand over a stated period. Intermediate and peak loads are the additional, more variable components. A base-load plant is scheduled to serve sustained demand; a peaker is scheduled for shorter high-demand or high-value intervals. These roles do not require one unchanging output at nameplate capacity, and a physical plant's role can change with system conditions.</p>" +
-                        "<p>A flexible plant with high variable running cost is commonly reserved for peaks because continuous use would be expensive. This explains the bank's intended peaking answer, not an absolute dispatch rule. Hydropower can have low fuel-related running cost yet still be reserved for peaks because stored water has an <strong>opportunity cost</strong>: using it now may forgo more valuable generation later.</p>" +
-                        "<p>Hydro units can respond quickly through governors, gates, guide vanes or nozzle control, subject to machine limits and the waterway's transient response. Fast load following does not mean instantaneous unrestricted closure or release: pressure surges, ramp limits, downstream fluctuations and available flow constrain operation. Long construction lead times and capital-intensive civil works are separate from this rapid operating response.</p>" +
-                        "<p>Hydro generators can retain high efficiency over a useful load range, but the combined turbine-generator efficiency is <strong>machine- and operating-point-dependent</strong>. Some turbines perform poorly at low load or have restricted vibration zones. Sediment abrasion, cavitation, corrosion, increased clearances and other deterioration can reduce performance with age; maintenance or rehabilitation can restore or improve it.</p>" +
-                        "<p>Consequently the bank item denying rapid load response is wrong, but so is its separate claim that efficiency never reduces with age. There is more than one problematic statement. A comparison of hydro and tidal firm power also requires specific resources, equipment and delivery schedules rather than a blanket ranking.</p>",
+                    html: "<p><strong>Base load</strong> is the sustained minimum component of system demand over a stated period. Intermediate and peak loads are the additional, more variable components. A base-load plant is scheduled to serve sustained demand; a peaker is scheduled for shorter high-demand or high-value intervals. These roles do not require one unchanging output at nameplate capacity, and a physical plant's role can change with system conditions.</p>",
+                    moreHtml: "<p>A flexible plant with high variable running cost is commonly reserved for peaks because continuous use would be expensive. This explains the bank's intended peaking answer, not an absolute dispatch rule. Hydropower can have low fuel-related running cost yet still be reserved for peaks because stored water has an <strong>opportunity cost</strong>: using it now may forgo more valuable generation later.</p><p>Hydro units can respond quickly through governors, gates, guide vanes or nozzle control, subject to machine limits and the waterway's transient response. Fast load following does not mean instantaneous unrestricted closure or release: pressure surges, ramp limits, downstream fluctuations and available flow constrain operation. Long construction lead times and capital-intensive civil works are separate from this rapid operating response.</p><p>Hydro generators can retain high efficiency over a useful load range, but the combined turbine-generator efficiency is <strong>machine- and operating-point-dependent</strong>. Some turbines perform poorly at low load or have restricted vibration zones. Sediment abrasion, cavitation, corrosion, increased clearances and other deterioration can reduce performance with age; maintenance or rehabilitation can restore or improve it.</p><p>Consequently the bank item denying rapid load response is wrong, but so is its separate claim that efficiency never reduces with age. There is more than one problematic statement. A comparison of hydro and tidal firm power also requires specific resources, equipment and delivery schedules rather than a blanket ranking.</p>",
                     sources: [
                         { id: "HYDR626-00003", set: 2, question: 62 },
                         { id: "HYDR626-00006", set: 2, question: 65 },
@@ -268,27 +219,14 @@
                 {
                     id: "power-peaking-schedule-and-revenue",
                     title: "Peaking benefit is an incremental comparison, not one receipt",
-                    html: "<p><strong>Compare complete schedules using a stated baseline and the same tariff rules.</strong> In the bank, unpeaked operation is 20 MW throughout the day. Peaked operation is 40 MW for six hours and 10 MW for the remaining eighteen hours. Assume the stated Rs12/kWh peak and Rs6/kWh off-peak tariffs apply to <strong>both</strong> schedules.</p>" +
-                        "<table><thead><tr><th scope='col'>Schedule and period</th><th scope='col'>Energy, MWh/day</th><th scope='col'>Revenue, million Rs/day</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Unpeaked: 20 MW for 6 peak hours</th><td>120</td><td>120000 × 12 / 1000000 = <strong>1.44</strong></td></tr>" +
-                        "<tr><th scope='row'>Unpeaked: 20 MW for 18 off-peak hours</th><td>360</td><td><strong>2.16</strong></td></tr>" +
-                        "<tr><th scope='row'>Unpeaked total</th><td><strong>480</strong></td><td><strong>3.60</strong></td></tr>" +
-                        "<tr><th scope='row'>Peaked: 40 MW for 6 peak hours</th><td>240</td><td><strong>2.88</strong></td></tr>" +
-                        "<tr><th scope='row'>Peaked: 10 MW for 18 off-peak hours</th><td>180</td><td><strong>1.08</strong></td></tr>" +
-                        "<tr><th scope='row'>Peaked total</th><td><strong>420</strong></td><td><strong>3.96</strong></td></tr></tbody></table>" +
-                        "<p>Incremental gross revenue is <strong>3.96 − 3.60 = 0.36 million Rs/day = Rs360000/day</strong>. The explanation's Rs1080000 is merely the <strong>peaked schedule's off-peak receipt</strong>; it is not the incremental benefit under these tariffs. None of the offered choices represents the calculated Rs360000 increment.</p>" +
-                        "<p><strong>Explicitly conditional alternative, not a supplied tariff arrangement:</strong> if <em>all</em> unpeaked energy were instead paid at Rs6/kWh, baseline revenue would be 480000 × 6 = <strong>2.88 million Rs/day</strong>. Comparing that different contract with the peaked time-of-day contract would give <strong>1.08 million Rs/day</strong> extra revenue. The stem never specifies this change of baseline tariff, so it cannot silently rescue the key.</p>" +
-                        "<p>The schedules also differ by <strong>60 MWh/day</strong>: 480 versus 420. At unchanged head and efficiency they are not simply an energy-conserving redistribution of the same turbine water. Storage, losses, spillage, head variation and operating constraints would need explanation. Additional costs are absent, so even the Rs360000 result is an incremental <strong>gross-revenue</strong> result, not demonstrated net profit.</p>",
+                    html: "<p><strong>Compare complete schedules using a stated baseline and the same tariff rules.</strong> In the bank, unpeaked operation is 20 MW throughout the day. Peaked operation is 40 MW for six hours and 10 MW for the remaining eighteen hours. Assume the stated Rs12/kWh peak and Rs6/kWh off-peak tariffs apply to <strong>both</strong> schedules.</p><table><thead><tr><th scope='col'>Schedule and period</th><th scope='col'>Energy, MWh/day</th><th scope='col'>Revenue, million Rs/day</th></tr></thead><tbody><tr><th scope='row'>Unpeaked: 20 MW for 6 peak hours</th><td>120</td><td>120000 × 12 / 1000000 = <strong>1.44</strong></td></tr><tr><th scope='row'>Unpeaked: 20 MW for 18 off-peak hours</th><td>360</td><td><strong>2.16</strong></td></tr><tr><th scope='row'>Unpeaked total</th><td><strong>480</strong></td><td><strong>3.60</strong></td></tr><tr><th scope='row'>Peaked: 40 MW for 6 peak hours</th><td>240</td><td><strong>2.88</strong></td></tr><tr><th scope='row'>Peaked: 10 MW for 18 off-peak hours</th><td>180</td><td><strong>1.08</strong></td></tr><tr><th scope='row'>Peaked total</th><td><strong>420</strong></td><td><strong>3.96</strong></td></tr></tbody></table><p><strong>Incremental gross revenue = 3.96 - 3.60 = 0.36 million Rs/day = Rs360,000/day.</strong> Model 3 Q61 now states that comparison explicitly and offers the increment in option D. Rs1,080,000 is only the peaked schedule's off-peak receipt.</p><p><strong>Alternative contract, not this question:</strong> paying all unpeaked energy at Rs6/kWh would give baseline revenue 480,000 × 6 = 2.88 million Rs/day and an increment of 1.08 million Rs/day. The revised question instead applies the same peak/off-peak tariffs to each schedule.</p><p>The schedules also differ by <strong>60 MWh/day</strong>: 480 versus 420. At unchanged head and efficiency they are not simply an energy-conserving redistribution of the same turbine water. Storage, losses, spillage, head variation and operating constraints would need explanation. Additional costs are absent, so even the Rs360000 result is an incremental <strong>gross-revenue</strong> result, not demonstrated net profit.</p>",
                     sources: [{ id: "HYDR626-00011", set: 3, question: 61 }]
                 },
                 {
                     id: "power-components-and-separate-paths",
                     title: "Trace the water path and electrical path separately",
-                    html: "<p>Hydropower components collect and control water, convey it with manageable losses, convert its energy, and connect the electrical output to the receiving system. Layout depends on the type of scheme; no single reservoir/penstock sequence describes every plant.</p>" +
-                        "<ul><li><strong>Typical storage plant:</strong> reservoir → screened intake and control arrangement → pressure waterway/penstock → turbine → tailrace. A reaction installation includes a draft tube between runner and tailwater; a Pelton installation discharges from its free-jet runner without a reaction-turbine draft tube.</li><li><strong>Typical diversion/ROR plant:</strong> intake at a suitable diversion or natural site → sediment-handling facilities where needed → canal or headrace tunnel → forebay or pressure-waterway transition → penstock → turbine and tailrace. The exact arrangement varies; a dam is not mandatory for every diversion.</li><li><strong>Pumped storage:</strong> upper and lower reservoirs, intakes, a reversible waterway arrangement and either pump-turbine/motor-generator equipment or separate pumping and generating units.</li><li><strong>Tidal-range plant:</strong> basin or lagoon, barrage/embankment, sluices and low-head turbine passages; direction and generation periods depend on the operating mode.</li></ul>" +
-                        "<p><strong>A surge tank is a connected branch or chamber, not a compulsory flow-through stop.</strong> It exchanges water with the pressure system during transients and moderates pressure/flow changes. The principal generating flow continues along the waterway to the turbine. Its branch location must be shown separately; reservoir → penstock → surge tank → turbine is not a physically accurate serial path merely because the bank keys that order.</p>" +
-                        "<p>The electrical path is <strong>generator → step-up transformer and switchyard/protection → transmission line → receiving grid</strong>. The generator converts shaft work; the transformer changes AC voltage; switching and protection control the connection; conductors carry the electrical energy. Transmission connects bulk generation and receiving systems, while local distribution is a distinct downstream function. A penstock transports water, not electricity.</p>" +
-                        "<p>The dam/turbine/generator all-of-the-above question describes an ordinary impoundment plant, not a universal requirement for every hydropower system. Component functions are the useful concept; detailed intake, dam, surge and machine designs belong to their respective later Chapter 8 topics.</p>",
+                    html: "<p>Hydropower components collect and control water, convey it with manageable losses, convert its energy, and connect the electrical output to the receiving system. Layout depends on the type of scheme; no single reservoir/penstock sequence describes every plant.</p><ul><li><strong>Typical storage plant:</strong> reservoir → screened intake and control arrangement → pressure waterway/penstock → turbine → tailrace. A reaction installation includes a draft tube between runner and tailwater; a Pelton installation discharges from its free-jet runner without a reaction-turbine draft tube.</li><li><strong>Typical diversion/ROR plant:</strong> intake at a suitable diversion or natural site → sediment-handling facilities where needed → canal or headrace tunnel → forebay or pressure-waterway transition → penstock → turbine and tailrace. The exact arrangement varies; a dam is not mandatory for every diversion.</li><li><strong>Pumped storage:</strong> upper and lower reservoirs, intakes, a reversible waterway arrangement and either pump-turbine/motor-generator equipment or separate pumping and generating units.</li><li><strong>Tidal-range plant:</strong> basin or lagoon, barrage/embankment, sluices and low-head turbine passages; direction and generation periods depend on the operating mode.</li></ul><p>The dam/turbine/generator all-of-the-above question describes an ordinary impoundment plant, not a universal requirement for every hydropower system. Component functions are the useful concept; detailed intake, dam, surge and machine designs belong to their respective later Chapter 8 topics.</p>",
+                    moreHtml: "<p><strong>A surge tank is a connected branch or chamber, not a compulsory flow-through stop.</strong> It exchanges water with the pressure system during transients and moderates pressure/flow changes. The principal generating flow continues along the waterway to the turbine. Its branch location must be shown separately; reservoir → penstock → surge tank → turbine is not a physically accurate serial path merely because the bank keys that order.</p><p>The electrical path is <strong>generator → step-up transformer and switchyard/protection → transmission line → receiving grid</strong>. The generator converts shaft work; the transformer changes AC voltage; switching and protection control the connection; conductors carry the electrical energy. Transmission connects bulk generation and receiving systems, while local distribution is a distinct downstream function. A penstock transports water, not electricity.</p>",
                     sources: [
                         { id: "HYDR626-00110", set: 13, question: 65 },
                         { id: "HYDR626-00124", set: 1, question: 62 },
@@ -298,15 +236,8 @@
                 {
                     id: "power-reservoir-levels-and-storage-zones",
                     title: "A storage zone is a volume between defined elevations",
-                    html: "<p>A reservoir's <strong>stage-storage relation S(z)</strong> converts water-surface elevation into stored volume. The volume between two elevations is <strong>S(z<sub>upper</sub>) − S(z<sub>lower</sub>)</strong>, not merely their vertical difference. An area-times-depth approximation additionally assumes a suitable representative area. Storage is measured in m<sup>3</sup>, while the levels defining it are measured in m above a datum.</p>" +
-                        "<table><thead><tr><th scope='col'>Zone or level</th><th scope='col'>Meaning and qualification</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Dead storage</th><td>Water volume below the defined lowest usable withdrawal boundary in the adopted scheme. It may provide sediment allowance and other functions; it is not simply a level.</td></tr>" +
-                        "<tr><th scope='row'>Inactive and reserve storage</th><td>Volume restricted from normal operation can include water physically withdrawable under other rules. Dead, inactive and below-normal-operating storage are not always identical.</td></tr>" +
-                        "<tr><th scope='row'>Active or live storage</th><td>Volume available for the defined normal operating drawdown, commonly between normal/full supply level and minimum operating level.</td></tr>" +
-                        "<tr><th scope='row'>Normal/full reservoir level</th><td>The intended upper conservation level under normal operating rules. Gate settings and spillway crest geometry affect actual spilling.</td></tr>" +
-                        "<tr><th scope='row'>Surcharge storage</th><td>Temporary storage between the normal full level and the specified maximum flood level; not automatically available for routine conservation use.</td></tr></tbody></table>" +
-                        "<p>The bank's bed-to-minimum-pool interval represents dead storage only when that minimum pool denotes the relevant dead-storage boundary. <em>Reference illustration, not bank measurements:</em> the Budhigandaki owner's table separately identifies normal and ultimate minimum operating levels, a minimum reservoir level, reserve live storage and dead storage. This shows why all water below one stated operating level cannot automatically be called dead.</p>" +
-                        "<p>The bank's normal-water-level answer uses the conventional highest intended conservation/no-spill description. It is not a promise that gates cannot release water at that level or that a gated reservoir can safely retain any higher level without spilling. Distinguish the flood maximum from the dam crest and freeboard; freeboard is not an extra routine storage allocation.</p>",
+                    html: "<p>A reservoir's <strong>stage-storage relation S(z)</strong> converts water-surface elevation into stored volume. The volume between two elevations is <strong>S(z<sub>upper</sub>) − S(z<sub>lower</sub>)</strong>, not merely their vertical difference. An area-times-depth approximation additionally assumes a suitable representative area. Storage is measured in m<sup>3</sup>, while the levels defining it are measured in m above a datum.</p><table><thead><tr><th scope='col'>Zone or level</th><th scope='col'>Meaning and qualification</th></tr></thead><tbody><tr><th scope='row'>Dead storage</th><td>Water volume below the defined lowest usable withdrawal boundary in the adopted scheme. It may provide sediment allowance and other functions; it is not simply a level.</td></tr><tr><th scope='row'>Inactive and reserve storage</th><td>Volume restricted from normal operation can include water physically withdrawable under other rules. Dead, inactive and below-normal-operating storage are not always identical.</td></tr><tr><th scope='row'>Active or live storage</th><td>Volume available for the defined normal operating drawdown, commonly between normal/full supply level and minimum operating level.</td></tr><tr><th scope='row'>Normal/full reservoir level</th><td>The intended upper conservation level under normal operating rules. Gate settings and spillway crest geometry affect actual spilling.</td></tr><tr><th scope='row'>Surcharge storage</th><td>Temporary storage between the normal full level and the specified maximum flood level; not automatically available for routine conservation use.</td></tr></tbody></table>",
+                    moreHtml: "<p>The bank's bed-to-minimum-pool interval represents dead storage only when that minimum pool denotes the relevant dead-storage boundary. <em>Reference illustration, not bank measurements:</em> the Budhigandaki owner's table separately identifies normal and ultimate minimum operating levels, a minimum reservoir level, reserve live storage and dead storage. This shows why all water below one stated operating level cannot automatically be called dead.</p><p>The bank's normal-water-level answer uses the conventional highest intended conservation/no-spill description. It is not a promise that gates cannot release water at that level or that a gated reservoir can safely retain any higher level without spilling. Distinguish the flood maximum from the dam crest and freeboard; freeboard is not an extra routine storage allocation.</p>",
                     sources: [
                         { id: "HYDR626-00026", set: 4, question: 67 },
                         { id: "HYDR626-00235", set: 26, question: 64 },
@@ -316,11 +247,8 @@
                 {
                     id: "power-reservoir-purposes-and-flood-space",
                     title: "Reservoir purposes and effective flood storage need explicit definitions",
-                    html: "<p><strong>Conservation storage</strong> holds water for later beneficial use, such as power, irrigation or water supply. <strong>Flood-control or mitigation storage</strong> temporarily retains inflow to reduce damaging downstream peaks. A retarding basin commonly performs passive flood attenuation through ungated outlets, filling during a flood and draining afterwards. Ungated controls alone do not prove that every such reservoir has exclusively one purpose.</p>" +
-                        "<p>A <strong>single-purpose</strong> reservoir is designed primarily for one specified service, with other benefits merely incidental. A <strong>multipurpose</strong> reservoir intentionally provides several design services, even if one receives priority. The bank's irrigation reservoir also catering to flood control and water supply is therefore ambiguous: the single-purpose choice needs those other services to be incidental, not separately intended design objectives.</p>" +
-                        "<p>For a specified initial storage S<sub>0</sub> and permitted flood storage limit S<sub>limit</sub>, the immediately vacant volume is <strong>S<sub>limit</sub> − S<sub>0</sub></strong>. Its usefulness depends on incoming flood timing, outlet capacity, downstream safe releases and the rule curve. A nominal live-storage volume may already contain conserved water and cannot automatically be counted as empty flood space.</p>" +
-                        "<p>The bank's effective-flood-storage question mixes conventions. Its keyed minimum-to-maximum operating band describes an operating volume. Under a <strong>net additional detention</strong> convention, the alternative <strong>live + surcharge − pre-existing valley storage</strong> accounts for water that would already occupy the natural valley at the corresponding flood condition. That convention also needs compatible boundaries; it is not a reason to count all live storage as available in every event.</p>" +
-                        "<p>Flood routing must establish the attainable attenuation; storage volume alone does not determine peak reduction. Many hydro projects deliberately combine power and water-management benefits, but <strong>not all hydro plants are multipurpose</strong>. Water-supply and irrigation releases may coincide with turbine releases or conflict with energy-optimal timing; count common water only once and state priorities rather than assuming all objectives can be maximized together.</p>",
+                    html: "<p><strong>Conservation storage</strong> holds water for later beneficial use, such as power, irrigation or water supply. <strong>Flood-control or mitigation storage</strong> temporarily retains inflow to reduce damaging downstream peaks. </p><p>For a specified initial storage S<sub>0</sub> and permitted flood storage limit S<sub>limit</sub>, the immediately vacant volume is <strong>S<sub>limit</sub> − S<sub>0</sub></strong>. Its usefulness depends on incoming flood timing, outlet capacity, downstream safe releases and the rule curve. A nominal live-storage volume may already contain conserved water and cannot automatically be counted as empty flood space.</p>",
+                    moreHtml: "<p>A retarding basin commonly performs passive flood attenuation through ungated outlets, filling during a flood and draining afterwards. Ungated controls alone do not prove that every such reservoir has exclusively one purpose.</p><p>A <strong>single-purpose</strong> reservoir is designed primarily for one specified service, with other benefits merely incidental. A <strong>multipurpose</strong> reservoir intentionally provides several design services, even if one receives priority. The bank's irrigation reservoir also catering to flood control and water supply is therefore ambiguous: the single-purpose choice needs those other services to be incidental, not separately intended design objectives.</p><p>The bank's effective-flood-storage question mixes conventions. Its keyed minimum-to-maximum operating band describes an operating volume. Under a <strong>net additional detention</strong> convention, the alternative <strong>live + surcharge − pre-existing valley storage</strong> accounts for water that would already occupy the natural valley at the corresponding flood condition. That convention also needs compatible boundaries; it is not a reason to count all live storage as available in every event.</p><p>Flood routing must establish the attainable attenuation; storage volume alone does not determine peak reduction. Many hydro projects deliberately combine power and water-management benefits, but <strong>not all hydro plants are multipurpose</strong>. Water-supply and irrigation releases may coincide with turbine releases or conflict with energy-optimal timing; count common water only once and state priorities rather than assuming all objectives can be maximized together.</p>",
                     sources: [
                         { id: "HYDR626-00136", set: 16, question: 63 },
                         { id: "HYDR626-00137", set: 16, question: 64 },
@@ -332,21 +260,15 @@
                 {
                     id: "power-pondage-and-regulation-timescales",
                     title: "Pondage bridges a short release deficit, not an entire dry season",
-                    html: "<p><strong>Pondage</strong> is short-term balancing storage used to shift releases and generation within an operating cycle. The bank's word Bondage is a typo. Pondage is a volume, not the pond's water level; it can be associated with a headpond or other suitable balancing arrangement rather than invariably sitting immediately behind one particular type of barrage.</p>" +
-                        "<ul><li><strong>Daily or short-cycle regulation:</strong> store water during lower turbine demand and release it during selected hours; restore the water balance over the cycle.</li><li><strong>Seasonal regulation:</strong> transfer some wet-season inflow into the dry season, requiring substantially greater usable storage relative to inflow.</li><li><strong>Carry-over regulation:</strong> retain water across years to bridge longer deficits; assess multiyear sequences and terminal storage.</li></ul>" +
-                        "<p><strong>Illustrative added water balance:</strong> suppose usable inflow after all non-power commitments is a constant <strong>2 m<sup>3</sup>/s</strong>. An assumed feasible release schedule uses 6 m<sup>3</sup>/s for four hours and 1.2 m<sup>3</sup>/s for twenty hours. Inflow volume is 2 × 86400 = <strong>172800 m<sup>3</sup>/day</strong>; releases total 6 × 14400 + 1.2 × 72000 = <strong>172800 m<sup>3</sup>/day</strong>.</p>" +
-                        "<p>During the four-hour peak the deficit is (6 − 2) × 14400 = <strong>57600 m<sup>3</sup></strong>. During the remaining hours the refill is (2 − 1.2) × 72000 = the same <strong>57600 m<sup>3</sup></strong>. With adequate initial peak-period storage, negligible additional losses and no restrictive level/outlet conditions, that is the minimum working pondage for this idealized cycle. It is not a bank datum or a complete pond design.</p>" +
-                        "<p>Real sizing also needs initial and final levels, operating head changes, losses, minimum turbine flow and downstream ramp constraints. Short-term regulation reallocates water through time; it does not create an unlimited energy resource or establish firm year-round output from a daily balance alone.</p>",
+                    html: "<p><strong>Pondage</strong> is short-term balancing storage used to shift releases and generation within an operating cycle. The bank's word Bondage is a typo. Pondage is a volume, not the pond's water level; it can be associated with a headpond or other suitable balancing arrangement rather than invariably sitting immediately behind one particular type of barrage.</p><ul><li><strong>Daily or short-cycle regulation:</strong> store water during lower turbine demand and release it during selected hours; restore the water balance over the cycle.</li><li><strong>Seasonal regulation:</strong> transfer some wet-season inflow into the dry season, requiring substantially greater usable storage relative to inflow.</li><li><strong>Carry-over regulation:</strong> retain water across years to bridge longer deficits; assess multiyear sequences and terminal storage.</li></ul><p><strong>Illustrative added water balance:</strong> suppose usable inflow after all non-power commitments is a constant <strong>2 m<sup>3</sup>/s</strong>. An assumed feasible release schedule uses 6 m<sup>3</sup>/s for four hours and 1.2 m<sup>3</sup>/s for twenty hours. Inflow volume is 2 × 86400 = <strong>172800 m<sup>3</sup>/day</strong>; releases total 6 × 14400 + 1.2 × 72000 = <strong>172800 m<sup>3</sup>/day</strong>.</p><p>During the four-hour peak the deficit is (6 − 2) × 14400 = <strong>57600 m<sup>3</sup></strong>. During the remaining hours the refill is (2 − 1.2) × 72000 = the same <strong>57600 m<sup>3</sup></strong>. </p>",
+                    moreHtml: "<p>With adequate initial peak-period storage, negligible additional losses and no restrictive level/outlet conditions, that is the minimum working pondage for this idealized cycle. It is not a bank datum or a complete pond design.</p><p>Real sizing also needs initial and final levels, operating head changes, losses, minimum turbine flow and downstream ramp constraints. Short-term regulation reallocates water through time; it does not create an unlimited energy resource or establish firm year-round output from a daily balance alone.</p>",
                     sources: [{ id: "HYDR626-00012", set: 3, question: 62 }]
                 },
                 {
                     id: "power-reservoir-continuity-and-routing",
                     title: "Close the reservoir water balance at every time step",
-                    html: "<p><em>Syllabus extension — official Chapter 8.2 reservoirs and their regulation.</em> The assigned bank supplies no complete chronological operating dataset. This framework and its <strong>added numerical illustration</strong> are source-free teaching extensions, not reconstructed measurements.</p>" +
-                        "<p>For an interval, use <strong>S<sub>i+1</sub> = S<sub>i</sub> + V<sub>in</sub> + V<sub>rain</sub> − V<sub>turbine</sub> − V<sub>bypass</sub> − V<sub>spill</sub> − V<sub>evaporation</sub> − V<sub>seepage</sub> − V<sub>other withdrawals</sub></strong>. Every V is a volume in compatible units over the same interval. River inflow excludes any direct reservoir rainfall counted separately. Distinct outflow terms must not double-count turbine water subsequently used for irrigation downstream.</p>" +
-                        "<p>For a mean flow Q in m<sup>3</sup>/s, V = QΔt requires Δt in <strong>seconds</strong>. Obtain levels from S(z), compute net head and feasible turbine discharge, and integrate power using the corresponding operating points. In a pumped-storage model include pumping transfers explicitly and close both reservoirs' balances; do not hide electrical charging energy in natural inflow.</p>" +
-                        "<p><strong>Added two-interval volume account, all volumes in million m<sup>3</sup>:</strong> start with S = 20; inflow 10, total planned release 7 and losses 1 give <strong>S = 22</strong>. In the next interval, inflow 12, planned release 7 and losses 1 would give <strong>26</strong>. If the allowed storage is 24 and the outlet/spillway can pass the required water, an additional <strong>2</strong> must spill or be released to finish at 24. If it cannot pass that water, a routing calculation is required; simply clipping storage to 24 would conceal a violated constraint.</p>" +
-                        "<p>At the lower storage limit, reduce an infeasible release or record a shortage rather than creating water by numerical clipping. Flood routing couples <strong>dS/dt = inflow − outflow − losses</strong> with stage-storage and stage/gate-discharge relationships. The simple interval example is a water account, not a flood-peak prediction. Record shortages, spill, energy and terminal storage so an assumed initial full reservoir is not repeatedly spent as if it were renewable annual inflow.</p>",
+                    html: "<p><em>Syllabus extension — official Chapter 8.2 reservoirs and their regulation.</em> The assigned bank supplies no complete chronological operating dataset. This framework and its <strong>added numerical illustration</strong> are source-free teaching extensions, not reconstructed measurements.</p><p>For an interval, use <strong>S<sub>i+1</sub> = S<sub>i</sub> + V<sub>in</sub> + V<sub>rain</sub> − V<sub>turbine</sub> − V<sub>bypass</sub> − V<sub>spill</sub> − V<sub>evaporation</sub> − V<sub>seepage</sub> − V<sub>other withdrawals</sub></strong>. Every V is a volume in compatible units over the same interval. River inflow excludes any direct reservoir rainfall counted separately. Distinct outflow terms must not double-count turbine water subsequently used for irrigation downstream.</p><p>For a mean flow Q in m<sup>3</sup>/s, V = QΔt requires Δt in <strong>seconds</strong>. Obtain levels from S(z), compute net head and feasible turbine discharge, and integrate power using the corresponding operating points. In a pumped-storage model include pumping transfers explicitly and close both reservoirs' balances; do not hide electrical charging energy in natural inflow.</p><p><strong>Added two-interval volume account, all volumes in million m<sup>3</sup>:</strong> start with S = 20; inflow 10, total planned release 7 and losses 1 give <strong>S = 22</strong>. In the next interval, inflow 12, planned release 7 and losses 1 would give <strong>26</strong>. If the allowed storage is 24 and the outlet/spillway can pass the required water, an additional <strong>2</strong> must spill or be released to finish at 24. If it cannot pass that water, a routing calculation is required; simply clipping storage to 24 would conceal a violated constraint.</p><p>At the lower storage limit, reduce an infeasible release or record a shortage rather than creating water by numerical clipping. Flood routing couples <strong>dS/dt = inflow − outflow − losses</strong> with stage-storage and stage/gate-discharge relationships. </p>",
+                    moreHtml: "<p>The simple interval example is a water account, not a flood-peak prediction. Record shortages, spill, energy and terminal storage so an assumed initial full reservoir is not repeatedly spent as if it were renewable annual inflow.</p>",
                     sources: []
                 },
                 {
@@ -362,21 +284,15 @@
                 {
                     id: "power-rule-curves-and-operating-policy",
                     title: "Rule curves turn storage limits into a seasonal operating policy",
-                    html: "<p><em>Syllabus extension — official Chapter 8.2 reservoirs and their regulation.</em> No assigned question provides an actual rule curve. A rule curve specifies target levels, storage zones or release guidance as functions of season and operating conditions. It is <strong>not</strong> a chronological inflow hydrograph, a stage-storage curve or a sorted flow-duration curve.</p>" +
-                        "<p>An upper guide may reserve flood space before expected high inflows; lower guides can trigger conservation or shortage-sharing when storage falls. End-of-wet-season targets may preserve water for dry-season releases. A high pool can improve head but reduce flood space; maximum energy today can reduce future dependable supply. The operating objective and service priorities must therefore be explicit.</p>" +
-                        "<ol><li>Observe the date, current storage/level, inflow forecast and downstream conditions.</li><li>Apply the relevant operating zone and required water commitments; identify turbine and non-turbine releases without duplication.</li><li>Respect physical outlet limits, minimum/maximum levels, machine availability, grid instructions and permissible rates of release change.</li><li>Advance the chronological water and energy accounts, checking shortages, spill and updated head.</li><li>Review performance across representative wet, normal and drought sequences, including the terminal-storage condition and forecast uncertainty.</li></ol>" +
-                        "<p>Flood operation needs event-scale routing and current downstream conditions, while seasonal energy planning may use longer time steps. One monthly average can hide a short damaging flood or an operational low-flow failure. A downstream re-regulating reservoir can smooth peaking releases where the layout and available volume permit, but its own balance and release requirements must be assessed.</p>" +
-                        "<p>The policy must reconcile power, water supply, irrigation, environmental flows and flood management instead of treating all reservoir water as available for the highest-price hour. This is a study framework, not permission to alter a real operating rule. Actual target levels, priority rules, release limits and approval requirements remain project-specific and are not invented here.</p>",
+                    html: "<p><em>Syllabus extension — official Chapter 8.2 reservoirs and their regulation.</em> No assigned question provides an actual rule curve. A rule curve specifies target levels, storage zones or release guidance as functions of season and operating conditions. It is <strong>not</strong> a chronological inflow hydrograph, a stage-storage curve or a sorted flow-duration curve.</p><ol><li>Observe the date, current storage/level, inflow forecast and downstream conditions.</li><li>Apply the relevant operating zone and required water commitments; identify turbine and non-turbine releases without duplication.</li><li>Respect physical outlet limits, minimum/maximum levels, machine availability, grid instructions and permissible rates of release change.</li><li>Advance the chronological water and energy accounts, checking shortages, spill and updated head.</li><li>Review performance across representative wet, normal and drought sequences, including the terminal-storage condition and forecast uncertainty.</li></ol>",
+                    moreHtml: "<p>An upper guide may reserve flood space before expected high inflows; lower guides can trigger conservation or shortage-sharing when storage falls. End-of-wet-season targets may preserve water for dry-season releases. A high pool can improve head but reduce flood space; maximum energy today can reduce future dependable supply. The operating objective and service priorities must therefore be explicit.</p><p>Flood operation needs event-scale routing and current downstream conditions, while seasonal energy planning may use longer time steps. One monthly average can hide a short damaging flood or an operational low-flow failure. A downstream re-regulating reservoir can smooth peaking releases where the layout and available volume permit, but its own balance and release requirements must be assessed.</p><p>The policy must reconcile power, water supply, irrigation, environmental flows and flood management instead of treating all reservoir water as available for the highest-price hour. This is a study framework, not permission to alter a real operating rule. Actual target levels, priority rules, release limits and approval requirements remain project-specific and are not invented here.</p>",
                     sources: []
                 },
                 {
                     id: "power-sediment-budget-and-service-life",
                     title: "Reservoir life needs a deposited-volume rate and a service criterion",
-                    html: "<p><strong>Water inflow, sediment inflow and deposited sediment volume are different quantities.</strong> With discharge Q in m<sup>3</sup>/s and sediment mass concentration c in kg/m<sup>3</sup> of water, sediment mass flux is <strong>Qc kg/s</strong>. Integrate it over the period. Q<sub>average</sub>c<sub>average</sub>T is valid only with an appropriate constant or flow-weighted concentration assumption; ordinary separate averages need not give the transported mass.</p>" +
-                        "<p>Convert retained sediment mass to deposit volume using a compatible <strong>deposit bulk density</strong>, not automatically the mineral particle density. Account for upstream input, bank erosion or other local sources, downstream passage, deliberate removal and any remobilization. Trap efficiency describes the fraction of incoming sediment retained under its stated definition; do not apply a trapping factor and also subtract the same downstream passage a second time.</p>" +
-                        "<p>A constant-rate volume-budget estimate is <strong>t = V<sub>allowance</sub>/R<sub>deposited</sub></strong>, where V is in m<sup>3</sup> and R is in m<sup>3</sup>/year, yielding years. Dividing storage by an unspecified <strong>total sediment volume</strong> gives a dimensionless ratio, not a lifetime. Capacity/inflow comparisons based on water supply and trap-efficiency ratios answer different questions.</p>" +
-                        "<p>Sediment is not deposited uniformly. Coarser material can form upstream deltas; fine sediment and density currents can carry material towards deeper or lower reaches. Reservoir slope, geometry, inflow energy, grain sizes, water levels and outlet operation interact. The bank's steep-slope choice may describe one tendency, but <strong>slope alone does not determine where sediment settles</strong>.</p>" +
-                        "<p>Define the end-of-service criterion: loss of a specified active volume, intake obstruction, unacceptable head/energy loss or an economic threshold may occur before complete filling. Deposition patterns, consolidation, changing trapping and sediment-management operations make actual life different from a fixed whole-capacity/rate quotient. USACE's reservoir guidance treats sediment trapping and deposit distribution as parts of reservoir assessment, not a rule that dead storage fills first everywhere.</p>",
+                    html: "<p><strong>Water inflow, sediment inflow and deposited sediment volume are different quantities.</strong> With discharge Q in m<sup>3</sup>/s and sediment mass concentration c in kg/m<sup>3</sup> of water, sediment mass flux is <strong>Qc kg/s</strong>. Integrate it over the period. Q<sub>average</sub>c<sub>average</sub>T is valid only with an appropriate constant or flow-weighted concentration assumption; ordinary separate averages need not give the transported mass.</p><p>A constant-rate volume-budget estimate is <strong>t = V<sub>allowance</sub>/R<sub>deposited</sub></strong>, where V is in m<sup>3</sup> and R is in m<sup>3</sup>/year, yielding years. Dividing storage by an unspecified <strong>total sediment volume</strong> gives a dimensionless ratio, not a lifetime. Capacity/inflow comparisons based on water supply and trap-efficiency ratios answer different questions.</p>",
+                    moreHtml: "<p>Convert retained sediment mass to deposit volume using a compatible <strong>deposit bulk density</strong>, not automatically the mineral particle density. Account for upstream input, bank erosion or other local sources, downstream passage, deliberate removal and any remobilization. Trap efficiency describes the fraction of incoming sediment retained under its stated definition; do not apply a trapping factor and also subtract the same downstream passage a second time.</p><p>Sediment is not deposited uniformly. Coarser material can form upstream deltas; fine sediment and density currents can carry material towards deeper or lower reaches. Reservoir slope, geometry, inflow energy, grain sizes, water levels and outlet operation interact. The bank's steep-slope choice may describe one tendency, but <strong>slope alone does not determine where sediment settles</strong>.</p><p>Define the end-of-service criterion: loss of a specified active volume, intake obstruction, unacceptable head/energy loss or an economic threshold may occur before complete filling. Deposition patterns, consolidation, changing trapping and sediment-management operations make actual life different from a fixed whole-capacity/rate quotient. USACE's reservoir guidance treats sediment trapping and deposit distribution as parts of reservoir assessment, not a rule that dead storage fills first everywhere.</p>",
                     sources: [
                         { id: "HYDR626-00234", set: 26, question: 63 },
                         { id: "HYDR626-00210", set: 23, question: 66 }
@@ -385,32 +301,22 @@
                 {
                     id: "power-dead-storage-sixty-year-budget",
                     title: "The 60-year result is a simplified sediment allowance",
-                    html: "<p>A dead-storage sediment allowance is a <strong>volume budget</strong>. Dividing that allowance by an assumed constant annual deposited volume estimates the time to exhaust the allowance under that bookkeeping model. It does not specify where the sediment will accumulate or guarantee that the active storage remains unaffected until that date.</p>" +
-                        "<p><strong>Bank data:</strong> reservoir capacity is 30 million m<sup>3</sup>, with 20% earmarked as dead storage. Interpret the printed o.1 million m<sup>3</sup> annual silt deposition as <strong>0.1 million m<sup>3</sup>/year</strong>. The allowance is <strong>0.20 × 30 = 6 million m<sup>3</sup></strong>, giving <strong>t = 6/0.1 = 60 years</strong>.</p>" +
-                        "<p>This follows only if the stated rate is the relevant <strong>net deposited volume</strong>, remains constant, and is charged entirely to that allowance for the simplified estimate. No extra trap factor is needed if deposition is already the supplied quantity. Dividing the entire 30 million m<sup>3</sup> by the same rate would instead give a 300-year whole-volume equivalent, not a demonstrated project service life.</p>" +
-                        "<p><strong>Active-storage loss can begin before dead storage is filled.</strong> Delta growth and deposits at different elevations can consume useful storage or impair intakes while deeper areas still contain water. The bank's explanation incorrectly turns its sequential filling assumption into a physical law. Assess sediment distribution and the actual service criterion before describing when useful life starts reducing.</p>" +
-                        "<p>A measured sediment budget, deposit density and compaction history, stage-storage surveys and operating/sediment-management policy would be needed for a defensible site prediction. The keyed 60 years is retained here as the result of its stated simplified arithmetic, not as a universal threshold.</p>",
+                    html: "<p>A dead-storage sediment allowance is a <strong>volume budget</strong>. Dividing that allowance by an assumed constant annual deposited volume estimates the time to exhaust the allowance under that bookkeeping model. It does not specify where the sediment will accumulate or guarantee that the active storage remains unaffected until that date.</p><p><strong>Bank data:</strong> reservoir capacity is 30 million m<sup>3</sup>, with 20% earmarked as dead storage. Interpret the printed o.1 million m<sup>3</sup> annual silt deposition as <strong>0.1 million m<sup>3</sup>/year</strong>. The allowance is <strong>0.20 × 30 = 6 million m<sup>3</sup></strong>, giving <strong>t = 6/0.1 = 60 years</strong>.</p><p>This follows only if the stated rate is the relevant <strong>net deposited volume</strong>, remains constant, and is charged entirely to that allowance for the simplified estimate. No extra trap factor is needed if deposition is already the supplied quantity. Dividing the entire 30 million m<sup>3</sup> by the same rate would instead give a 300-year whole-volume equivalent, not a demonstrated project service life.</p><p>A measured sediment budget, deposit density and compaction history, stage-storage surveys and operating/sediment-management policy would be needed for a defensible site prediction. The keyed 60 years is retained here as the result of its stated simplified arithmetic, not as a universal threshold.</p>",
+                    moreHtml: "<p><strong>Active-storage loss can begin before dead storage is filled.</strong> Delta growth and deposits at different elevations can consume useful storage or impair intakes while deeper areas still contain water. The bank's explanation incorrectly turns its sequential filling assumption into a physical law. Assess sediment distribution and the actual service criterion before describing when useful life starts reducing.</p>",
                     sources: [{ id: "HYDR626-00033", set: 5, question: 65 }]
                 },
                 {
                     id: "power-nine-billion-reservoir-calculation",
                     title: "The nine-billion-cubic-metre case gives about 48 years on its printed basis",
-                    html: "<p><strong>Keep the supplied reference volume unchanged.</strong> The bank gives gross storage <strong>9 × 10<sup>9</sup> m<sup>3</sup></strong>, mean flow 150 m<sup>3</sup>/s, sediment concentration 2.6 kg/m<sup>3</sup> and deposit bulk density 1.6 tonnes/m<sup>3</sup> = <strong>1600 kg/m<sup>3</sup></strong>. Treat concentration as applicable to the mean annual water volume and use a <strong>365-day year = 31536000 s</strong>.</p>" +
-                        "<ol><li>Annual water volume: <strong>150 × 31536000 = 4730400000 m<sup>3</sup>/year</strong>.</li><li>Associated sediment mass: <strong>4730400000 × 2.6 = 12299040000 kg/year</strong>.</li><li>Equivalent river-sediment deposit volume: <strong>12299040000/1600 = 7686900 m<sup>3</sup>/year</strong>.</li></ol>" +
-                        "<p>The wording assigns annual bank-erosion sediment and downstream sediment passage as <strong>25% and 23% of gross storage</strong>. Following those words literally as constant annual fractions of the <strong>original 9 billion m<sup>3</sup></strong>, erosion adds 2250000000 m<sup>3</sup>/year and downstream passage removes 2070000000 m<sup>3</sup>/year. Thus:</p>" +
-                        "<p><strong>R<sub>net</sub> = 7686900 + (0.25 − 0.23) × 9000000000 = 187686900 m<sup>3</sup>/year</strong>.</p>" +
-                        "<p>The idealized whole-storage budget is <strong>t = 9000000000/187686900 = 47.9522 years</strong>, approximately <strong>48 years</strong>, the offered option C. The stored 11.7 years does not follow. Do <strong>not</strong> silently move the percentages onto incoming sediment volume, annual water inflow or the shrinking remaining storage; each would define a different problem.</p>" +
-                        "<p>The annual gross-storage fractions are unusually large and need source clarification before practical use. This calculation assumes compatible sediment-volume bases and constant net accumulation; it adds no unspecified trapping, flushing, density-change or bed-load allowance. Exhausting gross volume in this idealization is not a forecast of the actual end of hydropower service, which needs deposit distribution and a defined operational threshold.</p>",
+                    html: "<p><strong>Keep the supplied reference volume unchanged.</strong> The bank gives gross storage <strong>9 × 10<sup>9</sup> m<sup>3</sup></strong>, mean flow 150 m<sup>3</sup>/s, sediment concentration 2.6 kg/m<sup>3</sup> and deposit bulk density 1.6 tonnes/m<sup>3</sup> = <strong>1600 kg/m<sup>3</sup></strong>. Treat concentration as applicable to the mean annual water volume and use a <strong>365-day year = 31536000 s</strong>.</p><ol><li>Annual water volume: <strong>150 × 31536000 = 4730400000 m<sup>3</sup>/year</strong>.</li><li>Associated sediment mass: <strong>4730400000 × 2.6 = 12299040000 kg/year</strong>.</li><li>Equivalent river-sediment deposit volume: <strong>12299040000/1600 = 7686900 m<sup>3</sup>/year</strong>.</li></ol><p>The wording assigns annual bank-erosion sediment and downstream sediment passage as <strong>25% and 23% of gross storage</strong>. Following those words literally as constant annual fractions of the <strong>original 9 billion m<sup>3</sup></strong>, erosion adds 2250000000 m<sup>3</sup>/year and downstream passage removes 2070000000 m<sup>3</sup>/year. Thus:</p><p><strong>R<sub>net</sub> = 7686900 + (0.25 − 0.23) × 9000000000 = 187686900 m<sup>3</sup>/year</strong>.</p><p>The idealized whole-storage budget is <strong>t = 9000000000/187686900 = 47.9522 years</strong>, approximately <strong>48 years</strong>, the offered option C. The stored 11.7 years does not follow. Do <strong>not</strong> silently move the percentages onto incoming sediment volume, annual water inflow or the shrinking remaining storage; each would define a different problem.</p>",
+                    moreHtml: "<p>The annual gross-storage fractions are unusually large and need source clarification before practical use. This calculation assumes compatible sediment-volume bases and constant net accumulation; it adds no unspecified trapping, flushing, density-change or bed-load allowance. Exhausting gross volume in this idealization is not a forecast of the actual end of hydropower service, which needs deposit distribution and a defined operational threshold.</p>",
                     sources: [{ id: "HYDR626-00267", set: 29, question: 64 }]
                 },
                 {
                     id: "power-costs-and-depreciation",
                     title: "Low fuel cost is not zero operating cost or a depreciation rule",
-                    html: "<p>Natural-flow hydro does not purchase combustible fuel for its hydraulic-to-electrical conversion. This explains the bank's low operating-charge and fuel-transport comparisons with steam, gas, diesel and nuclear generation. It does <strong>not</strong> make construction, maintenance or standby services fuel-free, or prove that every hydro project has the lowest total operation, maintenance or life-cycle cost.</p>" +
-                        "<p>Separate <strong>capital costs</strong> of civil works, equipment and grid connection from <strong>operating costs</strong> such as staffing, inspection, repairs, sediment management and auxiliary electricity. Major rehabilitation and replacement are additional life-cycle items. High capital cost and long development time can coexist with low fuel-related running cost. Stored water also has an opportunity value, even if no fuel invoice accompanies its release.</p>" +
-                        "<p><strong>Depreciation</strong> allocates an asset's depreciable value over an accounting life; it is not the same as hydraulic efficiency loss, physical deterioration or cash maintenance expenditure. For straight-line depreciation, original cost K, residual value R and life N years give <strong>annual depreciation = (K − R)/N</strong>. As a fraction of original cost, the annual rate is <strong>(1 − R/K)/N</strong>.</p>" +
-                        "<p>The bank quotes <strong>0.5–1.5% per year</strong> without an identified accounting basis. Its explanation's <strong>50–100-year life</strong>, combined with the explicitly added assumptions of straight-line depreciation and zero residual value, implies <strong>2–1% per year</strong>, or a <strong>1–2%</strong> range. Those assumptions do not derive the entire keyed range.</p>" +
-                        "<p>No inspected source here establishes 0.5–1.5% as a Nepal tax rate, a mandatory accounting schedule or a universal physical property of hydro plants. Civil works and electro-mechanical assets can have different service and replacement lives. Cost and depreciation statements must identify their asset boundary, method, price date and purpose rather than being used as unqualified design rules.</p>",
+                    html: "<p>Natural-flow hydro does not purchase combustible fuel for its hydraulic-to-electrical conversion. This explains the bank's low operating-charge and fuel-transport comparisons with steam, gas, diesel and nuclear generation. It does <strong>not</strong> make construction, maintenance or standby services fuel-free, or prove that every hydro project has the lowest total operation, maintenance or life-cycle cost.</p><p><strong>Depreciation</strong> allocates an asset's depreciable value over an accounting life; it is not the same as hydraulic efficiency loss, physical deterioration or cash maintenance expenditure. For straight-line depreciation, original cost K, residual value R and life N years give <strong>annual depreciation = (K − R)/N</strong>. As a fraction of original cost, the annual rate is <strong>(1 − R/K)/N</strong>.</p><p>The bank quotes <strong>0.5–1.5% per year</strong> without an identified accounting basis. Its explanation's <strong>50–100-year life</strong>, combined with the explicitly added assumptions of straight-line depreciation and zero residual value, implies <strong>2–1% per year</strong>, or a <strong>1–2%</strong> range. Those assumptions do not derive the entire keyed range.</p><p>No inspected source here establishes 0.5–1.5% as a Nepal tax rate, a mandatory accounting schedule or a universal physical property of hydro plants. Civil works and electro-mechanical assets can have different service and replacement lives. Cost and depreciation statements must identify their asset boundary, method, price date and purpose rather than being used as unqualified design rules.</p>",
+                    moreHtml: "<p>Separate <strong>capital costs</strong> of civil works, equipment and grid connection from <strong>operating costs</strong> such as staffing, inspection, repairs, sediment management and auxiliary electricity. Major rehabilitation and replacement are additional life-cycle items. High capital cost and long development time can coexist with low fuel-related running cost. Stored water also has an opportunity value, even if no fuel invoice accompanies its release.</p>",
                     sources: [
                         { id: "HYDR626-00062", set: 8, question: 65 },
                         { id: "HYDR626-00283", set: 31, question: 60 },
@@ -422,11 +328,8 @@
                 {
                     id: "power-operational-and-environmental-limits",
                     title: "Renewable generation still has losses, constraints and impacts",
-                    html: "<p><strong>Hydropower is not inherently an uninterrupted source.</strong> Seasonal low flows, drought, sediment shutdowns, equipment outages and grid restrictions affect delivery. Reservoir storage can improve scheduling and reliability but remains finite. The bank's continuity limitation is reasonable; the other offered advantages still need qualified wording.</p>" +
-                        "<p><strong>No standby losses</strong> is too absolute. Hydro avoids the fuel-burning standby losses of a hot thermal plant, but station auxiliaries, energized transformers, rotating equipment, leakage and reservoir evaporation or seepage can still consume energy or reduce future generation. State whether a loss is electrical, hydraulic or a loss of stored water; do not call all of them zero merely because the plant burns no generating fuel.</p>" +
-                        "<p>Hydraulic generation produces no combustion smoke or ash at the turbine, yet reservoir inundation, habitat change, fish-passage disruption, altered sediment transport, reduced bypass flows and rapid hydropeaking can have important effects. Reservoir greenhouse-gas emissions and construction impacts can also matter. <strong>Micro capacity is not a guarantee of negligible local impact</strong>: a small diversion can be significant relative to a small stream.</p>" +
-                        "<p>DOE's environmental-flow terminology includes <strong>quantity, timing and quality</strong> of water needed downstream. These are operating considerations, not a fixed release percentage invented by these notes. Required releases, environmental ramp constraints and mitigation can alter usable discharge and the value of a storage or peaking alternative.</p>" +
-                        "<p>Likewise, benefits such as irrigation and flood moderation make a project multipurpose only where deliberately incorporated into its design and operation. They are not universal characteristics of every plant. Long-lived equipment can still deteriorate and lose efficiency; maintenance performance, environmental management and reliable dispatch must be evaluated rather than inferred from the words clean, renewable or multipurpose.</p>",
+                    html: "<p><strong>Hydropower is not inherently an uninterrupted source.</strong> Seasonal low flows, drought, sediment shutdowns, equipment outages and grid restrictions affect delivery. Reservoir storage can improve scheduling and reliability but remains finite. The bank's continuity limitation is reasonable; the other offered advantages still need qualified wording.</p>",
+                    moreHtml: "<p><strong>No standby losses</strong> is too absolute. Hydro avoids the fuel-burning standby losses of a hot thermal plant, but station auxiliaries, energized transformers, rotating equipment, leakage and reservoir evaporation or seepage can still consume energy or reduce future generation. State whether a loss is electrical, hydraulic or a loss of stored water; do not call all of them zero merely because the plant burns no generating fuel.</p><p>Hydraulic generation produces no combustion smoke or ash at the turbine, yet reservoir inundation, habitat change, fish-passage disruption, altered sediment transport, reduced bypass flows and rapid hydropeaking can have important effects. Reservoir greenhouse-gas emissions and construction impacts can also matter. <strong>Micro capacity is not a guarantee of negligible local impact</strong>: a small diversion can be significant relative to a small stream.</p><p>DOE's environmental-flow terminology includes <strong>quantity, timing and quality</strong> of water needed downstream. These are operating considerations, not a fixed release percentage invented by these notes. Required releases, environmental ramp constraints and mitigation can alter usable discharge and the value of a storage or peaking alternative.</p><p>Likewise, benefits such as irrigation and flood moderation make a project multipurpose only where deliberately incorporated into its design and operation. They are not universal characteristics of every plant. Long-lived equipment can still deteriorate and lose efficiency; maintenance performance, environmental management and reliable dispatch must be evaluated rather than inferred from the words clean, renewable or multipurpose.</p>",
                     sources: [
                         { id: "HYDR626-00002", set: 2, question: 61 },
                         { id: "HYDR626-00306", set: 33, question: 62 },
@@ -448,196 +351,888 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Conventional does not mean non-renewable or continuous.</strong> Natural-flow hydro is renewable and conventionally classified as established generation technology. Water is the intended conventional option among the listed choices; that does not establish its share of world generation. The two classification axes should not be collapsed.</p>",
-                    sources: [
-                        { id: "HYDR626-00001", set: 2, question: 60 },
-                        { id: "HYDR626-00303", set: 33, question: 59 },
-                        { id: "HYDR626-00227", set: 25, question: 63 }
+                    "id": "check-hydr626-00124",
+                    "status": "review",
+                    "prompt": "The correct sequence in direction of flow of water for installation in a hydropower plant is",
+                    "html": "<p><strong>Layout and grid functions:</strong> a surge tank is a connected branch, not a compulsory serial flow-through component between penstock and turbine. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00124",
+                            "set": 1,
+                            "question": 62
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Continuity and standby qualification:</strong> seasonal water availability and outages prevent an unconditional continuous-supply claim. Hydro avoids thermal fuel-burning standby losses, but auxiliary electricity, electrical losses, leakage and storage losses remain possible. The bank's no-standby-losses option is therefore also too absolute.</p>",
-                    sources: [
-                        { id: "HYDR626-00002", set: 2, question: 61 },
-                        { id: "HYDR626-00306", set: 33, question: 62 }
+                    "id": "check-hydr626-00279",
+                    "status": "review",
+                    "prompt": "Which type of hydropower plant is most commonly used for small-scale electricity generation in rural areas?",
+                    "html": "<p>DOE defines micro-hydro as <strong>up to 100 kW</strong>, including the boundary excluded by the bank's strict &lt;100 kW. </p><p>These named conventions are not asserted Nepal statutory thresholds. </p><p>A small rural installation can still have significant local flow and ecological impacts.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00279",
+                            "set": 1,
+                            "question": 67
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Performance is not invariant:</strong> useful generator efficiency across a load range does not establish flat efficiency for every turbine. Wear, sediment abrasion and cavitation can reduce performance with age. The wrong-statement item has more than one faulty statement: both denial of rapid load response and immunity to aging are wrong. No combustion smoke or ash is not equivalent to no environmental impact; hydro-versus-tidal firm-power comparisons also need a defined scheme and schedule.</p>",
-                    sources: [
-                        { id: "HYDR626-00003", set: 2, question: 62 },
-                        { id: "HYDR626-00304", set: 33, question: 60 }
+                    "id": "check-hydr626-00001",
+                    "status": "review",
+                    "prompt": "Hydroelectric power plant is",
+                    "html": "<p><strong>Conventional does not mean non-renewable or continuous.</strong> </p><p>Natural-flow hydro is renewable and conventionally classified as established generation technology. </p><p>The two classification axes should not be collapsed.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00001",
+                            "set": 2,
+                            "question": 60
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Reliability and dispatch are conditional:</strong> complementary generation and reserves can improve reliability, but the most-reliable claim needs hydrology, outage and network evidence. High-variable-cost flexible units commonly serve peaks, not necessarily peaks only in every system. Base load describes sustained demand; it does not force every assigned plant to run continually at its full rating.</p>",
-                    sources: [
-                        { id: "HYDR626-00004", set: 2, question: 63 },
-                        { id: "HYDR626-00006", set: 2, question: 65 },
-                        { id: "HYDR626-00280", set: 30, question: 69 }
+                    "id": "check-hydr626-00002",
+                    "status": "review",
+                    "prompt": "Which of the following is not an advantage of a hydroelectric power plant?",
+                    "html": "<p><strong>Continuity and standby qualification:</strong> seasonal water availability and outages prevent an unconditional continuous-supply claim. </p><p>Hydro avoids thermal fuel-burning standby losses, but auxiliary electricity, electrical losses, leakage and storage losses remain possible. </p><p>The bank's no-standby-losses option is therefore also too absolute.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00002",
+                            "set": 2,
+                            "question": 61
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Firm/primary needs a delivery period and reliability basis.</strong> Minimum river flow is not always decisive when storage regulates releases. Include usable head, required releases, storage limits and availability. The bank's 100% available-flow wording cannot authorize total river diversion. DoED 2018 A2 section 9.1 uses a specific <strong>90% reliable average daily flow in the lowest-flow month</strong>, not a universal annual Q<sub>90</sub> definition or an automatic 24/7 guarantee.</p>",
-                    sources: [
-                        { id: "HYDR626-00005", set: 2, question: 64 },
-                        { id: "HYDR626-00130", set: 15, question: 64 },
-                        { id: "HYDR626-00226", set: 25, question: 62 },
-                        { id: "HYDR626-00231", set: 25, question: 67 },
-                        { id: "HYDR626-00281", set: 31, question: 58 }
+                    "id": "check-hydr626-00003",
+                    "status": "review",
+                    "prompt": "Identify correct statement about hydropower.",
+                    "html": "<p><strong>Performance is not invariant:</strong> useful generator efficiency across a load range does not establish flat efficiency for every turbine. </p><p>No combustion smoke or ash is not equivalent to no environmental impact; hydro-versus-tidal firm-power comparisons also need a defined scheme and schedule.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00003",
+                            "set": 2,
+                            "question": 62
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Duration-axis units matter:</strong> a power-duration curve plotted against percentage exceedance gives energy only after scaling its area by <strong>T/100</strong>; a fraction axis needs T. Convert usable flow to power with the applicable head, efficiency and capacity restrictions. An FDC loses chronology and cannot alone establish reservoir reliability, customer diversity or delivered annual energy.</p>",
-                    sources: [
-                        { id: "HYDR626-00008", set: 2, question: 67 },
-                        { id: "HYDR626-00131", set: 15, question: 65 }
+                    "id": "check-hydr626-00004",
+                    "status": "review",
+                    "prompt": "Most reliable power is",
+                    "html": "<p><strong>Reliability and dispatch are conditional:</strong> complementary generation and reserves can improve reliability, but the most-reliable claim needs hydrology, outage and network evidence. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00004",
+                            "set": 2,
+                            "question": 63
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Factor-definition conflict:</strong> LF = E/(P<sub>max</sub>T), CF = E/(CT), and UF = P<sub>max</sub>/C. <strong>CF = LF × UF</strong>; utilization is not capacity factor. LF can equal one. The 110/150 and 110/200 bank results are <strong>0.733333 and 0.55</strong>, with UF = 0.75. When peak equals capacity and generation is nonzero, <strong>CF/LF = 1</strong>. The utilization question's key is consistent, but its average/capacity explanation is not.</p>",
-                    sources: [
-                        { id: "HYDR626-00010", set: 3, question: 60 },
-                        { id: "HYDR626-00132", set: 15, question: 66 },
-                        { id: "HYDR626-00018", set: 3, question: 68 },
-                        { id: "HYDR626-00233", set: 26, question: 62 }
+                    "id": "check-hydr626-00005",
+                    "status": "review",
+                    "prompt": "The power available continuously is.",
+                    "html": "<p><strong>Firm power needs a stated delivery and reliability basis.</strong> Head, usable flow, storage, required releases and plant availability determine the continuously deliverable amount. It is not an unconditional promise to use all river flow or operate without any outage.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00005",
+                            "set": 2,
+                            "question": 64
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Plant-use factor is not a maximum-power ratio:</strong> <strong>PUF = E/(Ct<sub>on</sub>)</strong> uses operating hours, while CF uses the whole period. Maximum utilized power divided by installed available power describes utilization. The stored plant-use label and its full-period capacity-factor explanation describe different quantities; the conventional utilization term is absent from the choices.</p>",
-                    sources: [{ id: "HYDR626-00230", set: 25, question: 66 }]
-                },
-                {
-                    html: "<p><strong>Peaking benefit is not off-peak receipts:</strong> unpeaked energy is <strong>480 MWh/day</strong>; peaked energy is <strong>420 MWh/day</strong>. Applying Rs12/Rs6 time-of-day tariffs to both gives revenues <strong>3.60 and 3.96 million Rs/day</strong>, so the increment is <strong>Rs360000/day</strong>, not the keyed Rs1080000. The latter is the peaked off-peak receipt, or an increment only under the separately added assumption that all unpeaked energy earns Rs6/kWh. That alternative tariff arrangement is unstated, and the schedules are not an energy-conserving shift at fixed head/efficiency.</p>",
-                    sources: [{ id: "HYDR626-00011", set: 3, question: 61 }]
-                },
-                {
-                    html: "<p><strong>Pondage terminology:</strong> Bondage is a typo for pondage, the intended short-term balancing storage. It is not a water level or necessarily a fixed number of hours for every plant. Daily balancing must restore the cycle's water account; pondage alone cannot demonstrate seasonal or multiyear drought regulation.</p>",
-                    sources: [{ id: "HYDR626-00012", set: 3, question: 62 }]
-                },
-                {
-                    html: "<p><strong>Missing time and capacity/peak definitions:</strong> <strong>84 GW × 0.60 × 8760 h = 441504 GWh = 441.504 TWh</strong> for the year requires a 365-day year and an appropriate peak/load-factor basis, or a capacity-factor interpretation if 84 GW is installed capacity. <strong>1000 MWh/1440 h = 0.694444 MW</strong> assumes two 30-day months. Actual dates or a different period change the result; neither time assumption is an exact statement of the original stem.</p>",
-                    sources: [
-                        { id: "HYDR626-00014", set: 3, question: 64 },
-                        { id: "HYDR626-00016", set: 3, question: 66 }
+                    "id": "check-hydr626-00006",
+                    "status": "review",
+                    "prompt": "If operating cost is high but the plant offers great flexibility, the plant is used for",
+                    "html": "<p>High-variable-cost flexible units commonly serve peaks, not necessarily peaks only in every system. </p><p>Base load describes sustained demand; it does not force every assigned plant to run continually at its full rating.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00006",
+                            "set": 2,
+                            "question": 65
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Power units and gravity convention:</strong> the 423.5 − 2.5 m case gives <strong>421 m</strong> net head and <strong>3159.45765 kW</strong>. For 400 cumecs, 50 m and η = 0.8, g = 9.81 gives <strong>156.96 MW</strong>; 156.8 MW uses g = 9.8. For theoretical 100 m<sup>3</sup>/s at 75 m, the corresponding results are <strong>73.575 and 73.5 MW</strong>. Do not display 9.81 while claiming it exactly produces the 9.8 result, or confuse kW with MW.</p>",
-                    sources: [
-                        { id: "HYDR626-00015", set: 3, question: 65 },
-                        { id: "HYDR626-00017", set: 3, question: 67 },
-                        { id: "HYDR626-00302", set: 33, question: 58 }
+                    "id": "check-hydr626-00008",
+                    "status": "review",
+                    "prompt": "The flow duration curve at a given head of a hydroelectric plant is used to determine",
+                    "html": "<p><strong>Duration-axis units matter:</strong> a power-duration curve plotted against percentage exceedance gives energy only after scaling its area by <strong>T/100</strong>; a fraction axis needs T. </p><p>Convert usable flow to power with the applicable head, efficiency and capacity restrictions. </p><p>An FDC loses chronology and cannot alone establish reservoir reliability, customer diversity or delivered annual energy.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00008",
+                            "set": 2,
+                            "question": 67
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>The original unit is ounces:</strong> 400 ounces is not 400 cumecs. The ounce convention and release duration are missing, so the 50 m/0.8 data cannot produce a unique power. The explanation silently inserts a discharge of 400 m<sup>3</sup>/s; that is a different problem, not a justified unit conversion.</p>",
-                    sources: [{ id: "HYDR626-00071", set: 9, question: 64 }]
-                },
-                {
-                    html: "<p><strong>Missing efficiency:</strong> net head 90 m and Q = 10 m<sup>3</sup>/s supply <strong>8.829 MW hydraulic power</strong>. An 8 MW output requires an implied efficiency of approximately 90.61%, which the stem does not give. The closest-option argument cannot invent conversion losses or establish that the key is derived.</p>",
-                    sources: [{ id: "HYDR626-00299", set: 32, question: 68 }]
-                },
-                {
-                    html: "<p><strong>Upper Tamakoshi exercise has inconsistent givens:</strong> retain its <strong>56 m<sup>3</sup>/s</strong>, 822 m and 456 MW. Hydraulic input is <strong>451.57392 MW</strong> and required efficiency is <strong>100.9801%</strong>, which is impossible for the stated generating conversion. Neither 87.5% nor the later 98.7% is derived. The real project's separately reported 66 m<sup>3</sup>/s must not replace the printed 56; gross-head losses would worsen the original discrepancy.</p>",
-                    sources: [{ id: "HYDR626-00300", set: 32, question: 69 }]
-                },
-                {
-                    html: "<p><strong>Energy per volume is mis-scaled:</strong> η = 0.85 × 0.92 = 0.782 gives <strong>1150713 J = 0.3196425 kWh per m<sup>3</sup></strong> at 150 m, not 1150.7 kWh per m<sup>3</sup>. The latter energy scale needs <strong>1 m<sup>3</sup>/s for one hour, or 3600 m<sup>3</sup></strong>, an added assumption. One m<sup>3</sup> over one hour instead gives average power 0.3196425 kW. The explanation's first joule total is also arithmetically incorrect.</p>",
-                    sources: [{ id: "HYDR626-00301", set: 33, question: 57 }]
-                },
-                {
-                    html: "<p><strong>Head definitions depend on boundaries:</strong> ordinary reaction-plant gross head uses upstream and tailwater levels, not simply source-to-runner elevation. Pelton schemes need the appropriate nozzle/jet reference. Net/effective head deducts compatible waterway losses once, and available head can be a synonym. Matching rated and design head under one convention does not guarantee maximum annual plant efficiency across all heads and loads.</p>",
-                    sources: [
-                        { id: "HYDR626-00114", set: 14, question: 60 },
-                        { id: "HYDR626-00207", set: 23, question: 63 },
-                        { id: "HYDR626-00240", set: 26, question: 68 },
-                        { id: "HYDR626-00219", set: 24, question: 67 }
+                    "id": "check-hydr626-00010",
+                    "status": "review",
+                    "prompt": "What is a load factor?",
+                    "html": "<p><strong>Load factor uses peak demand.</strong> LF = E/(P<sub>max</sub>T), whereas capacity factor uses installed capacity in the denominator. Load factor can equal one for a constant demand over the selected period.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00010",
+                            "set": 3,
+                            "question": 60
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Layout and grid functions:</strong> a surge tank is a connected branch, not a compulsory serial flow-through component between penstock and turbine. Trace it separately from the main waterway. Transmission lines carry bulk electrical output, with transformers and switchgear performing other necessary functions; transmission is not synonymous with local distribution. A dam is typical of impoundment, not mandatory for every diversion scheme.</p>",
-                    sources: [
-                        { id: "HYDR626-00124", set: 1, question: 62 },
-                        { id: "HYDR626-00110", set: 13, question: 65 },
-                        { id: "HYDR626-00241", set: 26, question: 69 }
+                    "id": "check-hydr626-00011",
+                    "status": "corrected",
+                    "prompt": "An unpeaked plant generates 20 MW throughout a 24-hour day. The alternative generates 40 MW for 6 peak hours and 10 MW for 18 off-peak hours. At Rs12/kWh peak and Rs6/kWh off-peak in both schedules, what is the increase in daily gross electricity revenue?",
+                    "html": "<p><strong>Corrected: Rs360,000/day increase, option D.</strong> The revised question explicitly compares gross revenue: Rs3,960,000 peaked minus Rs3,600,000 unpeaked. Off-peak revenue alone is not the benefit.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00011",
+                            "set": 3,
+                            "question": 61
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Mass analysis is not flow-duration analysis.</strong> A chronological cumulative mass curve can reveal storage deficits; an FDC sorts flows and loses their sequence. Demand–supply assessment, reservoir simulation, rule curves and marginal cost–benefit comparisons all inform installed capacity. The keyed mass-analysis method is not uniquely sufficient, and maximizing operating hours alone is not economic optimization.</p>",
-                    sources: [{ id: "HYDR626-00125", set: 15, question: 59 }]
-                },
-                {
-                    html: "<p><strong>Classification boundaries need attribution:</strong> DoED 2018 uses low head <strong>&lt;50 m</strong>, not a universal &lt;15 m cutoff. DOE defines micro-hydro as <strong>up to 100 kW</strong>, including the boundary excluded by the bank's strict &lt;100 kW. These named conventions are not asserted Nepal statutory thresholds. A small rural installation can still have significant local flow and ecological impacts.</p>",
-                    sources: [
-                        { id: "HYDR626-00133", set: 15, question: 67 },
-                        { id: "HYDR626-00134", set: 16, question: 61 },
-                        { id: "HYDR626-00279", set: 1, question: 67 }
+                    "id": "check-hydr626-00012",
+                    "status": "review",
+                    "prompt": "Bondage in a hydropower station is ______",
+                    "html": "<p><strong>Pondage terminology:</strong> Bondage is a typo for pondage, the intended short-term balancing storage. It is not a water level or necessarily a fixed number of hours for every plant. Daily balancing must restore the cycle's water account; pondage alone cannot demonstrate seasonal or multiyear drought regulation.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00012",
+                            "set": 3,
+                            "question": 62
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Do not confuse storage type with peak duty:</strong> Kulekhani I is seasonal storage, not peaking ROR; a storage plant can nevertheless generate during peaks. The dam-created reservoir description fits impoundment. DOE's generic most-common-impoundment statement supports the bank's broad answer, not an undated claim about Nepal's fleet or proof that all reservoirs have seasonal or multipurpose regulation.</p>",
-                    sources: [
-                        { id: "HYDR626-00225", set: 25, question: 61 },
-                        { id: "HYDR626-00277", set: 30, question: 67 },
-                        { id: "HYDR626-00288", set: 31, question: 65 }
+                    "id": "check-hydr626-00014",
+                    "status": "review",
+                    "prompt": "If the total hydroelectric potential of a plant is 84GW. Convert the potential into energy considering load factor of 60%.",
+                    "html": "<p><strong>Missing time and capacity/peak definitions:</strong> <strong>84 GW × 0.60 × 8760 h = 441504 GWh = 441.504 TWh</strong> for the year requires a 365-day year and an appropriate peak/load-factor basis, or a capacity-factor interpretation if 84 GW is installed capacity. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00014",
+                            "set": 3,
+                            "question": 64
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Pumped-storage energy and machinery:</strong> pumping requires electrical input, and round-trip losses mean recovered pumping energy is smaller than that input. Reversible pump-turbines are common, not compulsory or exclusive; separate pump/turbine arrangements and bidirectional tidal machines exist. Tidal-range energy comes from the tide, not from assuming pumped water supplies free primary energy.</p>",
-                    sources: [
-                        { id: "HYDR626-00054", set: 7, question: 67 },
-                        { id: "HYDR626-00224", set: 25, question: 60 },
-                        { id: "HYDR626-00278", set: 30, question: 68 }
+                    "id": "check-hydr626-00015",
+                    "status": "review",
+                    "prompt": "The power calculation (H = 423.5m, head loss = 2.5m, Q = 0.9m³/s. n=85%)",
+                    "html": "<p><strong>Power units and gravity convention:</strong> the 423.5 − 2.5 m case gives <strong>421 m</strong> net head and <strong>3159.45765 kW</strong>. </p><p>Do not display 9.81 while claiming it exactly produces the 9.8 result, or confuse kW with MW.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00015",
+                            "set": 3,
+                            "question": 65
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Storage is volume, not level.</strong> Bed-to-minimum-pool volume is dead storage only when that pool defines the relevant withdrawal boundary. Inactive, reserve-live and dead storage need not coincide. Surcharge lies between normal full and specified maximum flood levels; freeboard is not extra routine storage. Normal level is an operating definition, not a guarantee of no release regardless of gate settings.</p>",
-                    sources: [
-                        { id: "HYDR626-00026", set: 4, question: 67 },
-                        { id: "HYDR626-00236", set: 26, question: 65 },
-                        { id: "HYDR626-00235", set: 26, question: 64 }
+                    "id": "check-hydr626-00016",
+                    "status": "review",
+                    "prompt": "If a power station supplies 1000 MWh of electricity to its consumers for a period of two months, then the average demand during the period will be",
+                    "html": "<p><strong>1000 MWh/1440 h = 0.694444 MW</strong> assumes two 30-day months. </p><p>Actual dates or a different period change the result; neither time assumption is an exact statement of the original stem.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00016",
+                            "set": 3,
+                            "question": 66
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Purpose and flood-space ambiguity:</strong> a retarding basin is the intended passive flood-attenuation concept, but ungated outlets alone do not establish exclusive purpose. Irrigation with incidental benefits can be single-purpose; intentionally designed irrigation, flood and supply services make it multipurpose even with irrigation priority. Not all hydro plants are multipurpose. The effective-storage item mixes an operating band with a net detention convention that subtracts pre-existing valley storage; actual available flood space also depends on initial level, allocated zones and routing.</p>",
-                    sources: [
-                        { id: "HYDR626-00136", set: 16, question: 63 },
-                        { id: "HYDR626-00137", set: 16, question: 64 },
-                        { id: "HYDR626-00138", set: 16, question: 65 },
-                        { id: "HYDR626-00208", set: 23, question: 64 },
-                        { id: "HYDR626-00308", set: 33, question: 64 }
+                    "id": "check-hydr626-00017",
+                    "status": "review",
+                    "prompt": "If 400 cumecs of water are released from a dam with an effective head of 50m and a hydro plant efficiency of 0.8, what is the electrical power generated from this plant?",
+                    "html": "<p><strong>Power units and gravity convention:</strong> the 423.5 − 2.5 m case gives <strong>421 m</strong> net head and <strong>3159.45765 kW</strong>. </p><p>For 400 cumecs, 50 m and η = 0.8, g = 9.81 gives <strong>156.96 MW</strong>; 156.8 MW uses g = 9.8. </p><p>Do not display 9.81 while claiming it exactly produces the 9.8 result, or confuse kW with MW.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00017",
+                            "set": 3,
+                            "question": 67
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Slope does not uniquely locate deposits:</strong> steep reservoir geometry can contribute to sediment transport towards lower reaches, but grain size, inflow, density currents, reservoir shape, levels and outlet operation also control deposition. The steep-slope answer is a simplified tendency, not a universal sediment-distribution rule.</p>",
-                    sources: [{ id: "HYDR626-00210", set: 23, question: 66 }]
-                },
-                {
-                    html: "<p><strong>Lifetime needs a rate:</strong> reservoir capacity divided by total sediment volume is dimensionless. Years require a compatible <strong>net deposited volume per year</strong>, with trapping/passage and bulk-density assumptions stated. Complete filling is not automatically the end-of-service criterion, and a sediment ratio is not interchangeable with trap efficiency or a water capacity/inflow ratio.</p>",
-                    sources: [{ id: "HYDR626-00234", set: 26, question: 63 }]
-                },
-                {
-                    html: "<p><strong>60 years is an allowance calculation:</strong> interpreting o.1 as 0.1 million m<sup>3</sup>/year gives <strong>(30 × 0.20)/0.1 = 60 years</strong>. It does not establish that active-storage loss begins only after sixty years. Sediment can accumulate in active zones before the dead-storage volume is filled; rate, spatial distribution and the service criterion are additional requirements.</p>",
-                    sources: [{ id: "HYDR626-00033", set: 5, question: 65 }]
-                },
-                {
-                    html: "<p><strong>Reservoir-life key conflict:</strong> the 365-day river-sediment term is <strong>7686900 m<sup>3</sup>/year</strong>. Keeping the printed annual erosion/passage fractions on <strong>original gross storage</strong> gives <strong>7686900 + (0.25 − 0.23) × 9000000000 = 187686900 m<sup>3</sup>/year</strong>, and life <strong>47.9522 years, approximately 48</strong>, not 11.7. The unusual percentages need clarification, but silently changing their base or introducing a declining-storage percentage model would solve a different problem.</p>",
-                    sources: [{ id: "HYDR626-00267", set: 29, question: 64 }]
-                },
-                {
-                    html: "<p><strong>Cost and depreciation claims are qualified:</strong> no generating fuel purchase/transport explains hydro's usual low fuel-related operating cost, not universal lowest O&amp;M or zero life-cycle cost. The bank's <strong>0.5–1.5%</strong> depreciation range has no verified accounting or Nepal-tax basis here. A 50–100-year life under explicitly assumed straight-line depreciation and zero residual value gives <strong>1–2% per year</strong>. Accounting life, equipment aging and physical efficiency are different concepts.</p>",
-                    sources: [
-                        { id: "HYDR626-00062", set: 8, question: 65 },
-                        { id: "HYDR626-00283", set: 31, question: 60 },
-                        { id: "HYDR626-00284", set: 31, question: 61 },
-                        { id: "HYDR626-00285", set: 31, question: 62 },
-                        { id: "HYDR626-00310", set: 33, question: 66 }
+                    "id": "check-hydr626-00018",
+                    "status": "review",
+                    "prompt": "A power generating station has a plant capacity of 200MW and maximum power demand is 150MW. If the average power generation is 110MW then find the load factor and capacity factor respectively",
+                    "html": "<p><strong>Factor-definition conflict:</strong> LF = E/(P<sub>max</sub>T), CF = E/(CT), and UF = P<sub>max</sub>/C. </p><p>LF can equal one. </p><p>The 110/150 and 110/200 bank results are <strong>0.733333 and 0.55</strong>, with UF = 0.75. </p><p>When peak equals capacity and generation is nonzero, <strong>CF/LF = 1</strong>. </p><p>The utilization question's key is consistent, but its average/capacity explanation is not.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00018",
+                            "set": 3,
+                            "question": 68
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Q<sub>40</sub> is not guaranteed annual full output:</strong> 40% of a 365-day year is <strong>146 equivalent days or 3504 hours</strong>, not necessarily consecutive days or a minimum attained each year. Environmental releases, head, efficiency, capacity, outages and grid acceptance remain relevant. The ideal full-output contribution at 100 MW is <strong>350.4 GWh</strong>; actual remaining production requires the rest of the flow/power record.</p>",
-                    sources: [{ id: "HYDR626-00309", set: 33, question: 65 }]
+                    "id": "check-hydr626-00026",
+                    "status": "review",
+                    "prompt": "What is dead storage of storage reservoir?",
+                    "html": "<p>Bed-to-minimum-pool volume is dead storage only when that pool defines the relevant withdrawal boundary. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00026",
+                            "set": 4,
+                            "question": 67
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00033",
+                    "status": "review",
+                    "prompt": "If 20% of the reservoir capacity is earmarked for dead storage in a storage reservoir of 30 m.cum and the average annual slit decomposition in the reservoir is o.1 M. cum, then the useful life of the reservoir will start reducing after",
+                    "html": "<p><strong>60 years is an allowance calculation:</strong> interpreting o.1 as 0.1 million m<sup>3</sup>/year gives <strong>(30 × 0.20)/0.1 = 60 years</strong>. It does not establish that active-storage loss begins only after sixty years. Sediment can accumulate in active zones before the dead-storage volume is filled; rate, spatial distribution and the service criterion are additional requirements.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00033",
+                            "set": 5,
+                            "question": 65
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00054",
+                    "status": "review",
+                    "prompt": "Plant use reversible turbine in",
+                    "html": "<p><strong>Pumped-storage energy and machinery:</strong> pumping requires electrical input, and round-trip losses mean recovered pumping energy is smaller than that input. </p><p>Reversible pump-turbines are common, not compulsory or exclusive; separate pump/turbine arrangements and bidirectional tidal machines exist. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00054",
+                            "set": 7,
+                            "question": 67
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00062",
+                    "status": "review",
+                    "prompt": "For the same power output, which power plant of the following has minimum operating charges?",
+                    "html": "<p><strong>Low fuel cost is not a universal lowest-O&amp;M guarantee.</strong> Hydropower usually avoids fuel purchase and transport, but maintenance, sediment, access, staffing and refurbishment costs remain site-dependent.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00062",
+                            "set": 8,
+                            "question": 65
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00071",
+                    "status": "review",
+                    "prompt": "If 400 ounces of water are released from a dam with an effective head of 50m and a hydro plant efficiency of 0.8, what is the electrical power generated from this plant?",
+                    "html": "<p><strong>The original unit is ounces:</strong> 400 ounces is not 400 cumecs. The ounce convention and release duration are missing, so the 50 m/0.8 data cannot produce a unique power. The explanation silently inserts a discharge of 400 m<sup>3</sup>/s; that is a different problem, not a justified unit conversion.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00071",
+                            "set": 9,
+                            "question": 64
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00110",
+                    "status": "review",
+                    "prompt": "Which component of a hydropower plant is responsible for distributing electricity to the Power Grid?",
+                    "html": "<p>Transmission lines carry bulk electrical output, with transformers and switchgear performing other necessary functions; transmission is not synonymous with local distribution. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00110",
+                            "set": 13,
+                            "question": 65
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00114",
+                    "status": "review",
+                    "prompt": "Which factor determines the head available for power generation in a hydropower plant?",
+                    "html": "<p><strong>Head definitions depend on boundaries:</strong> ordinary reaction-plant gross head uses upstream and tailwater levels, not simply source-to-runner elevation. </p><p>Pelton schemes need the appropriate nozzle/jet reference. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00114",
+                            "set": 14,
+                            "question": 60
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00125",
+                    "status": "review",
+                    "prompt": "Which of the following method is utilized for fixing installed capacity? Hydropower plant",
+                    "html": "<p><strong>Mass analysis is not flow-duration analysis.</strong> A chronological cumulative mass curve can reveal storage deficits; an FDC sorts flows and loses their sequence. Demand–supply assessment, reservoir simulation, rule curves and marginal cost–benefit comparisons all inform installed capacity. The keyed mass-analysis method is not uniquely sufficient, and maximizing operating hours alone is not economic optimization.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00125",
+                            "set": 15,
+                            "question": 59
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00130",
+                    "status": "review",
+                    "prompt": "Primary power is also known as a",
+                    "html": "<p><strong>Firm/primary needs a delivery period and reliability basis.</strong> </p><p>Include usable head, required releases, storage limits and availability. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00130",
+                            "set": 15,
+                            "question": 64
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00131",
+                    "status": "review",
+                    "prompt": "The area of power duration curve gives",
+                    "html": "<p><strong>Duration-axis units matter:</strong> a power-duration curve plotted against percentage exceedance gives energy only after scaling its area by <strong>T/100</strong>; a fraction axis needs T. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00131",
+                            "set": 15,
+                            "question": 65
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00132",
+                    "status": "review",
+                    "prompt": "Utilization factor is equal to",
+                    "html": "<p><strong>Factor-definition conflict:</strong> LF = E/(P<sub>max</sub>T), CF = E/(CT), and UF = P<sub>max</sub>/C. </p><p><strong>CF = LF × UF</strong>; utilization is not capacity factor. </p><p>LF can equal one. </p><p>The 110/150 and 110/200 bank results are <strong>0.733333 and 0.55</strong>, with UF = 0.75. </p><p>When peak equals capacity and generation is nonzero, <strong>CF/LF = 1</strong>. </p><p>The utilization question's key is consistent, but its average/capacity explanation is not.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00132",
+                            "set": 15,
+                            "question": 66
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00133",
+                    "status": "review",
+                    "prompt": "Low head plant has operating head of",
+                    "html": "<p><strong>Classification boundaries need attribution:</strong> DoED 2018 uses low head <strong>&lt;50 m</strong>, not a universal &lt;15 m cutoff. </p><p>DOE defines micro-hydro as <strong>up to 100 kW</strong>, including the boundary excluded by the bank's strict &lt;100 kW. </p><p>These named conventions are not asserted Nepal statutory thresholds. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00133",
+                            "set": 15,
+                            "question": 67
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00134",
+                    "status": "review",
+                    "prompt": "Based on installed capacity micro hydropower plant has capacity of",
+                    "html": "<p><strong>Attribute the capacity convention.</strong> The cited DOE definition includes micro-hydropower up to 100 kW, including the boundary. A strict less-than-100 kW choice excludes it; this convention is not asserted as a Nepal statutory classification.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00134",
+                            "set": 16,
+                            "question": 61
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00136",
+                    "status": "review",
+                    "prompt": "A dam reservoir which is not provided with gate controls on its spillway and other sluice is called",
+                    "html": "<p><strong>The intended concept is passive flood retardation.</strong> Ungated outlets can provide that function, but absence of gates alone does not prove a reservoir's exclusive purpose or flood-storage capacity.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00136",
+                            "set": 16,
+                            "question": 63
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00137",
+                    "status": "review",
+                    "prompt": "A dam reservoir catering to flood control irrigation, and water supply basically designed for irrigation alone is a",
+                    "html": "<p><strong>Purpose and flood-space ambiguity:</strong> a retarding basin is the intended passive flood-attenuation concept, but ungated outlets alone do not establish exclusive purpose. </p><p>Irrigation with incidental benefits can be single-purpose; intentionally designed irrigation, flood and supply services make it multipurpose even with irrigation priority. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00137",
+                            "set": 16,
+                            "question": 64
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00138",
+                    "status": "review",
+                    "prompt": "Which reservoir is also known as Mitigation reservoir?",
+                    "html": "<p><strong>A mitigation or retarding reservoir attenuates floods.</strong> Its useful flood space depends on initial level, storage allocation and routing. The name alone does not quantify the available detention volume.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00138",
+                            "set": 16,
+                            "question": 65
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00207",
+                    "status": "review",
+                    "prompt": "The gross head minus the losses in friction, trash rack and other minor losses in penstocks is called",
+                    "html": "<p>Pelton schemes need the appropriate nozzle/jet reference. </p><p>Net/effective head deducts compatible waterway losses once, and available head can be a synonym. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00207",
+                            "set": 23,
+                            "question": 63
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00208",
+                    "status": "review",
+                    "prompt": "An effective storage of a flood control reservoir is",
+                    "html": "<p>The effective-storage item mixes an operating band with a net detention convention that subtracts pre-existing valley storage; actual available flood space also depends on initial level, allocated zones and routing.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00208",
+                            "set": 23,
+                            "question": 64
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00210",
+                    "status": "review",
+                    "prompt": "Sediment deposit take place in lower reach of the reservoir if the reservoirs with",
+                    "html": "<p><strong>Slope does not uniquely locate deposits:</strong> steep reservoir geometry can contribute to sediment transport towards lower reaches, but grain size, inflow, density currents, reservoir shape, levels and outlet operation also control deposition. The steep-slope answer is a simplified tendency, not a universal sediment-distribution rule.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00210",
+                            "set": 23,
+                            "question": 66
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00219",
+                    "status": "review",
+                    "prompt": "To ensure maximum overall plant efficiency, the rated head should be equal to",
+                    "html": "<p><strong>Head definitions depend on boundaries:</strong> ordinary reaction-plant gross head uses upstream and tailwater levels, not simply source-to-runner elevation. </p><p>Pelton schemes need the appropriate nozzle/jet reference. </p><p>Matching rated and design head under one convention does not guarantee maximum annual plant efficiency across all heads and loads.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00219",
+                            "set": 24,
+                            "question": 67
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00224",
+                    "status": "review",
+                    "prompt": "What is the name of the process where water is pumped back into a reservoir when electricity demand is low?",
+                    "html": "<p><strong>Pumped-storage energy and machinery:</strong> pumping requires electrical input, and round-trip losses mean recovered pumping energy is smaller than that input. </p><p>Tidal-range energy comes from the tide, not from assuming pumped water supplies free primary energy.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00224",
+                            "set": 25,
+                            "question": 60
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00225",
+                    "status": "review",
+                    "prompt": "What is the most common type of hydropower facility?",
+                    "html": "<p>DOE's generic most-common-impoundment statement supports the bank's broad answer, not an undated claim about Nepal's fleet or proof that all reservoirs have seasonal or multipurpose regulation.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00225",
+                            "set": 25,
+                            "question": 61
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00226",
+                    "status": "review",
+                    "prompt": "The primary power at a hydro plant is determined considering",
+                    "html": "<p>Minimum river flow is not always decisive when storage regulates releases. </p><p>Include usable head, required releases, storage limits and availability. </p><p>The bank's 100% available-flow wording cannot authorize total river diversion. </p><p>DoED 2018 A2 section 9.1 uses a specific <strong>90% reliable average daily flow in the lowest-flow month</strong>, not a universal annual Q<sub>90</sub> definition or an automatic 24/7 guarantee.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00226",
+                            "set": 25,
+                            "question": 62
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00227",
+                    "status": "review",
+                    "prompt": "The main source of energy for conventional power generation is",
+                    "html": "<p>Natural-flow hydro is renewable and conventionally classified as established generation technology. </p><p>Water is the intended conventional option among the listed choices; that does not establish its share of world generation. </p><p>The two classification axes should not be collapsed.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00227",
+                            "set": 25,
+                            "question": 63
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00230",
+                    "status": "review",
+                    "prompt": "The ratio of maximum power utilized to the maximum power available is",
+                    "html": "<p><strong>Plant-use factor is not a maximum-power ratio:</strong> <strong>PUF = E/(Ct<sub>on</sub>)</strong> uses operating hours, while CF uses the whole period. Maximum utilized power divided by installed available power describes utilization. The stored plant-use label and its full-period capacity-factor explanation describe different quantities; the conventional utilization term is absent from the choices.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00230",
+                            "set": 25,
+                            "question": 66
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00231",
+                    "status": "review",
+                    "prompt": "The net amount of power which is continuously available from a plant without any break is known as",
+                    "html": "<p><strong>Firm power needs a stated delivery and reliability basis.</strong> Head, usable flow, storage, required releases and plant availability determine the continuously deliverable amount. It is not an unconditional promise to use all river flow or operate without any outage.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00231",
+                            "set": 25,
+                            "question": 67
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00233",
+                    "status": "review",
+                    "prompt": "If the peak load for a power plant equals the plant capacity then the ratio of the capacity factor to load factor will be",
+                    "html": "<p><strong>Factor-definition conflict:</strong> LF = E/(P<sub>max</sub>T), CF = E/(CT), and UF = P<sub>max</sub>/C. </p><p>LF can equal one. </p><p>The 110/150 and 110/200 bank results are <strong>0.733333 and 0.55</strong>, with UF = 0.75. </p><p>When peak equals capacity and generation is nonzero, <strong>CF/LF = 1</strong>. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00233",
+                            "set": 26,
+                            "question": 62
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00234",
+                    "status": "review",
+                    "prompt": "The ratio of reservoir capacity to the total volume of sediment carried by the river is",
+                    "html": "<p><strong>Lifetime needs a rate:</strong> reservoir capacity divided by total sediment volume is dimensionless. Years require a compatible <strong>net deposited volume per year</strong>, with trapping/passage and bulk-density assumptions stated. Complete filling is not automatically the end-of-service criterion, and a sediment ratio is not interchangeable with trap efficiency or a water capacity/inflow ratio.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00234",
+                            "set": 26,
+                            "question": 63
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00235",
+                    "status": "review",
+                    "prompt": "The volume of water stored between normal reservoir level and maximum reservoir level is",
+                    "html": "<p><strong>Storage is volume, not level.</strong> </p><p>Inactive, reserve-live and dead storage need not coincide. </p><p>Surcharge lies between normal full and specified maximum flood levels; freeboard is not extra routine storage. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00235",
+                            "set": 26,
+                            "question": 64
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00236",
+                    "status": "review",
+                    "prompt": "What is the highest elevation of water level that can be maintained in the reservoir without any spillway discharge either with gated or non-gated spillway?",
+                    "html": "<p>Normal level is an operating definition, not a guarantee of no release regardless of gate settings.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00236",
+                            "set": 26,
+                            "question": 65
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00240",
+                    "status": "review",
+                    "prompt": "Gross head is the difference between head race and tail race",
+                    "html": "<p>Pelton schemes need the appropriate nozzle/jet reference. </p><p>Net/effective head deducts compatible waterway losses once, and available head can be a synonym. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00240",
+                            "set": 26,
+                            "question": 68
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00241",
+                    "status": "review",
+                    "prompt": "What is the main component of a hydropower system?",
+                    "html": "<p>Trace it separately from the main waterway. </p><p>A dam is typical of impoundment, not mandatory for every diversion scheme.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00241",
+                            "set": 26,
+                            "question": 69
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00267",
+                    "status": "review",
+                    "prompt": "The volume of a reservoir is estimated for 9 billion cubic meter and mean annual flow of the river is 150 cubic meter per second along with its sediment transportation capacity of 2.6 kg/m³. The volume weight of the suspended sediment is 1.6 tones/m³. Determine the service life of the reservoir, if the mean annual volume of sediment due to erosion of its banks and the same of the sediment passing in the downstream are 25 % and 23 % of the gross storage",
+                    "html": "<p><strong>Reservoir-life key conflict:</strong> the 365-day river-sediment term is <strong>7686900 m<sup>3</sup>/year</strong>. Keeping the printed annual erosion/passage fractions on <strong>original gross storage</strong> gives <strong>7686900 + (0.25 − 0.23) × 9000000000 = 187686900 m<sup>3</sup>/year</strong>, and life <strong>47.9522 years, approximately 48</strong>, not 11.7. The unusual percentages need clarification, but silently changing their base or introducing a declining-storage percentage model would solve a different problem.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00267",
+                            "set": 29,
+                            "question": 64
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00277",
+                    "status": "review",
+                    "prompt": "Which type of hydropower plant uses a dam to create a reservoir to store water for electricity generation?",
+                    "html": "<p><strong>A reservoir formed behind a dam is an impoundment.</strong> Storage, operating levels and release capability then distinguish its role; it should not be confused with a diversion waterway solely because it feeds a turbine.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00277",
+                            "set": 30,
+                            "question": 67
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00278",
+                    "status": "review",
+                    "prompt": "Which type of hydropower plant uses the difference in water levels between high tide and low tide to generate electricity?",
+                    "html": "<p><strong>Pumped-storage energy and machinery:</strong> pumping requires electrical input, and round-trip losses mean recovered pumping energy is smaller than that input. </p><p>Tidal-range energy comes from the tide, not from assuming pumped water supplies free primary energy.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00278",
+                            "set": 30,
+                            "question": 68
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00280",
+                    "status": "review",
+                    "prompt": "Which type of hydropower plant is designed to operate continuously, with little or no fluctuation in output?",
+                    "html": "<p>Base load describes sustained demand; it does not force every assigned plant to run continually at its full rating.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00280",
+                            "set": 30,
+                            "question": 69
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00281",
+                    "status": "review",
+                    "prompt": "The minimum power which a hydropower plant can generate throughout the year is called as ______.",
+                    "html": "<p><strong>Firm power needs a stated delivery and reliability basis.</strong> Head, usable flow, storage, required releases and plant availability determine the continuously deliverable amount. It is not an unconditional promise to use all river flow or operate without any outage.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00281",
+                            "set": 31,
+                            "question": 58
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00283",
+                    "status": "review",
+                    "prompt": "Operating charges are minimum in the case of ...... for same power output",
+                    "html": "<p><strong>Low fuel cost is not a universal lowest-O&amp;M guarantee.</strong> Hydropower usually avoids fuel purchase and transport, but maintenance, sediment, access, staffing and refurbishment costs remain site-dependent.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00283",
+                            "set": 31,
+                            "question": 60
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00284",
+                    "status": "review",
+                    "prompt": "The cheapest plant in operation and maintenance is ......",
+                    "html": "<p><strong>Low fuel cost is not a universal lowest-O&amp;M guarantee.</strong> Hydropower usually avoids fuel purchase and transport, but maintenance, sediment, access, staffing and refurbishment costs remain site-dependent.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00284",
+                            "set": 31,
+                            "question": 61
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00285",
+                    "status": "review",
+                    "prompt": "The annual depreciation of a hydro power plant is about ......",
+                    "html": "<p>The bank's <strong>0.5–1.5%</strong> depreciation range has no verified accounting or Nepal-tax basis here. </p><p>A 50–100-year life under explicitly assumed straight-line depreciation and zero residual value gives <strong>1–2% per year</strong>. </p><p>Accounting life, equipment aging and physical efficiency are different concepts.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00285",
+                            "set": 31,
+                            "question": 62
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00288",
+                    "status": "review",
+                    "prompt": "Among the hydropower plants given below ... is not a peaking-ROR type.",
+                    "html": "<p><strong>Do not confuse storage type with peak duty:</strong> Kulekhani I is seasonal storage, not peaking ROR; a storage plant can nevertheless generate during peaks. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00288",
+                            "set": 31,
+                            "question": 65
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00299",
+                    "status": "review",
+                    "prompt": "A hydro-turbine with net head 90m and discharge 10 m³/s will have the power output",
+                    "html": "<p><strong>Missing efficiency:</strong> net head 90 m and Q = 10 m<sup>3</sup>/s supply <strong>8.829 MW hydraulic power</strong>. An 8 MW output requires an implied efficiency of approximately 90.61%, which the stem does not give. The closest-option argument cannot invent conversion losses or establish that the key is derived.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00299",
+                            "set": 32,
+                            "question": 68
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00300",
+                    "status": "review",
+                    "prompt": "The Upper Tamakoshi hydro project has capacity of 456MW. It has head of 822 m and design discharge of 56 m3/s. Find the overall efficiency of the project.",
+                    "html": "<p><strong>Upper Tamakoshi exercise has inconsistent givens:</strong> retain its <strong>56 m<sup>3</sup>/s</strong>, 822 m and 456 MW. Hydraulic input is <strong>451.57392 MW</strong> and required efficiency is <strong>100.9801%</strong>, which is impossible for the stated generating conversion. Neither 87.5% nor the later 98.7% is derived. The real project's separately reported 66 m<sup>3</sup>/s must not replace the printed 56; gross-head losses would worsen the original discrepancy.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00300",
+                            "set": 32,
+                            "question": 69
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00301",
+                    "status": "review",
+                    "prompt": "Water for a hydroelectric power station is obtained from a reservoir with a head of 150 m. What will be the approximate electrical power generated per hour per cubic meter of Water if mechanical (hydro) efficiency is 0.85 and electric efficiency is 0.92?",
+                    "html": "<p><strong>Energy per volume is mis-scaled:</strong> η = 0.85 × 0.92 = 0.782 gives <strong>1150713 J = 0.3196425 kWh per m<sup>3</sup></strong> at 150 m, not 1150.7 kWh per m<sup>3</sup>. The latter energy scale needs <strong>1 m<sup>3</sup>/s for one hour, or 3600 m<sup>3</sup></strong>, an added assumption. One m<sup>3</sup> over one hour instead gives average power 0.3196425 kW. The explanation's first joule total is also arithmetically incorrect.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00301",
+                            "set": 33,
+                            "question": 57
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00302",
+                    "status": "review",
+                    "prompt": "A hydroelectric reservoir can supply water continuously at a rate of 100 m³/s. The head is 75 m. The theoretical power that can be developed is (MW).",
+                    "html": "<p><strong>Power units and gravity convention:</strong> the 423.5 − 2.5 m case gives <strong>421 m</strong> net head and <strong>3159.45765 kW</strong>. </p><p>For theoretical 100 m<sup>3</sup>/s at 75 m, the corresponding results are <strong>73.575 and 73.5 MW</strong>. </p><p>Do not display 9.81 while claiming it exactly produces the 9.8 result, or confuse kW with MW.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00302",
+                            "set": 33,
+                            "question": 58
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00303",
+                    "status": "review",
+                    "prompt": "Hydroelectric power plant is ......",
+                    "html": "<p><strong>Conventional does not mean non-renewable or continuous.</strong> </p><p>Natural-flow hydro is renewable and conventionally classified as established generation technology. </p><p>The two classification axes should not be collapsed.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00303",
+                            "set": 33,
+                            "question": 59
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00304",
+                    "status": "review",
+                    "prompt": "Which statement about hydroelectric power plant is wrong?",
+                    "html": "<p><strong>More than one statement is faulty.</strong> Hydropower can respond rapidly to load changes, and equipment performance can deteriorate through wear, sediment abrasion and cavitation. Claims denying rapid response or aging effects are not mutually exclusive wrong answers.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00304",
+                            "set": 33,
+                            "question": 60
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00306",
+                    "status": "review",
+                    "prompt": "Which of the following is not an advantage of hydroelectric power plant?",
+                    "html": "<p><strong>Continuity and standby qualification:</strong> seasonal water availability and outages prevent an unconditional continuous-supply claim. </p><p>Hydro avoids thermal fuel-burning standby losses, but auxiliary electricity, electrical losses, leakage and storage losses remain possible. </p><p>The bank's no-standby-losses option is therefore also too absolute.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00306",
+                            "set": 33,
+                            "question": 62
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00308",
+                    "status": "review",
+                    "prompt": "Which of the following statement is true about hydroelectric power plant?",
+                    "html": "<p><strong>Hydropower is not automatically multipurpose.</strong> A scheme is multipurpose when distinct services are deliberately planned. Incidental benefits or an irrigation priority do not by themselves settle that classification.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00308",
+                            "set": 33,
+                            "question": 64
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00309",
+                    "status": "review",
+                    "prompt": "A ROR type hydropower plant with 100MW installed capacity and with Q40% design flow can generate the full capacity at least for ______.",
+                    "html": "<p><strong>Q<sub>40</sub> is not guaranteed annual full output:</strong> 40% of a 365-day year is <strong>146 equivalent days or 3504 hours</strong>, not necessarily consecutive days or a minimum attained each year. Environmental releases, head, efficiency, capacity, outages and grid acceptance remain relevant. The ideal full-output contribution at 100 MW is <strong>350.4 GWh</strong>; actual remaining production requires the rest of the flow/power record.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00309",
+                            "set": 33,
+                            "question": 65
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00310",
+                    "status": "review",
+                    "prompt": "The cost of fuel transportation is minimum in the case of ______.",
+                    "html": "<p><strong>Cost and depreciation claims are qualified:</strong> no generating fuel purchase/transport explains hydro's usual low fuel-related operating cost, not universal lowest O&amp;M or zero life-cycle cost. </p><p>Accounting life, equipment aging and physical efficiency are different concepts.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00310",
+                            "set": 33,
+                            "question": 66
+                        }
+                    ]
                 }
             ],
             references: [

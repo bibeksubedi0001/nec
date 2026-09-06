@@ -782,8 +782,8 @@ const CIVIL_MODEL_21 = {
                         { key: "c", text: "1.4m" },
                         { key: "d", text: "1.5m" }
                     ],
-                    answer: "d",
-                    explanation: "Hydraulic depth D_h = A / T = 2m. Given A=12m². So, top width T = A / D_h = 12 / 2 = 6m. For a rectangular channel, area A = T * y = 6 * y = 12, so depth y = 2m. Wetted perimeter P = T + 2y = 6 + 2*2 = 10m. Hydraulic radius R = A/P = 12/10 = 1.2m. But the options include 1.2m and 1.5m. Calculation gives 1.2m, but the \"correct\" answer is listed as 1.5m, indicating a possible error. Based on calculation, it should be 1.2m."
+                    answer: "a",
+                    explanation: "The rectangular water depth is 2 m. Area 12 m² gives width 6 m and wetted perimeter 6 + 2(2) = 10 m. Hence \\(R=\\dfrac{A}{P}=\\dfrac{12}{10}=1.2\\,\\mathrm{m}\\). Hydraulic depth and hydraulic radius are different quantities. The former 1.5 m key has been corrected."
                 },
                 {
                     id: "cm21q056",

@@ -128,15 +128,15 @@ const CIVIL_MODEL_7 = {
                 {
                     id: "cm7q008",
                     src: "BASI674-00073",
-                    text: "In closed traverse, the sum of the north latitudes is more than the sum of the south latitudes and also the sum of west departures is more than the sum of the east departures, the bearing of the closing line is in the",
+                    text: "A traverse has excess north latitude and excess west departure. The closing line is defined from the computed final station back to the starting station. What is its quadrant?",
                     options: [
                         { key: "a", text: "NE quadrant" },
                         { key: "b", text: "SE quadrant" },
                         { key: "c", text: "NW quadrant" },
                         { key: "d", text: "SW quadrant" }
                     ],
-                    answer: "c",
-                    explanation: "The closing error has a northerly component, since north latitudes exceed south, and a westerly component, since west departures exceed east. A bearing with north and west components lies in the north-west quadrant."
+                    answer: "b",
+                    explanation: "Excess north latitude and west departure place the computed final station north-west of the start. Returning from that point to the start requires a south-east line. North-west describes the misclosure vector, not the closing vector specified here."
                 },
                 {
                     id: "cm7q009",

@@ -280,15 +280,15 @@ const CIVIL_MODEL_3 = {
                 {
                     id: "cm3q019",
                     src: "STRU935-00017",
-                    text: "A rod of area 1000 mm² has axial pull of 20 kN. Then what is the shear stress at 30° inclined to horizontal axis?",
+                    text: "A rod with area 1000 mm² carries an axial tensile force of 20 kN. What is the shear-stress magnitude on a plane whose normal makes 30 degrees with the rod axis?",
                     options: [
                         { key: "a", text: "2 N/mm²" },
-                        { key: "b", text: "0.866 N/mm²" },
+                        { key: "b", text: "8.660254 N/mm²" },
                         { key: "c", text: "0.667 N/mm²" },
                         { key: "d", text: "1 N/mm²" }
                     ],
                     answer: "b",
-                    explanation: "The direct stress is P/A, that is 20000/1000 equal to 20 N/mm². On a plane inclined at theta the shear stress is (sigma/2) sin 2 theta, so at 30 degrees it is 10 times sin 60, which is 8.66 N/mm². The published key lists the same figure with the decimal point shifted, 0.866."
+                    explanation: "Axial stress is \\(\\sigma=\\dfrac{20000}{1000}=20\\,\\mathrm{N/mm^2}\\). On the specified plane, \\(\\tau=\\dfrac{\\sigma}{2}\\sin(2\\theta)\\). Substitution gives \\(\\tau=10\\sin60^\\circ\\), or 8.660254 N/mm². The former 0.866 value was a tenfold error. The revised stem specifies the angle of the plane normal."
                 },
                 {
                     id: "cm3q020",
@@ -862,15 +862,15 @@ const CIVIL_MODEL_3 = {
                 {
                     id: "cm3q061",
                     src: "HYDR626-00011",
-                    text: "A hydropower runs at 20MW in certain season. If peaking is done, the plant is able to at 40MW for 6 hours peaking period and 10MW for remaining off peak hours. What is the benefit for peaking if power rate is Rs.12/KWh for peak period and Rs.6/KWh for off peak hour?",
+                    text: "An unpeaked plant generates 20 MW throughout a 24-hour day. The alternative generates 40 MW for 6 peak hours and 10 MW for 18 off-peak hours. At Rs12/kWh peak and Rs6/kWh off-peak in both schedules, what is the increase in daily gross electricity revenue?",
                     options: [
-                        { key: "a", text: "Rs 2800000" },
-                        { key: "b", text: "Rs 3600000" },
-                        { key: "c", text: "Rs 3000000" },
-                        { key: "d", text: "Rs 1080000" }
+                        { key: "a", text: "Rs 2,880,000/day" },
+                        { key: "b", text: "Rs 3,960,000/day" },
+                        { key: "c", text: "Rs 3,600,000/day" },
+                        { key: "d", text: "Rs 360,000/day" }
                     ],
                     answer: "d",
-                    explanation: "Off-peak generation is 10 MW for the remaining 18 hours, that is 10,000 kW times 18 h, or 180,000 kWh, which at Rs 6 per kWh earns Rs 1,080,000, the figure keyed here. For comparison the peak period generates 40,000 kW times 6 h, or 240,000 kWh, worth Rs 2,880,000 at Rs 12 per kWh."
+                    explanation: "Peaked revenue is 40,000 × 6 × 12 + 10,000 × 18 × 6 = Rs3,960,000/day. The stated unpeaked baseline earns 20,000 × 6 × 12 + 20,000 × 18 × 6 = Rs3,600,000/day. The increase is Rs360,000/day. Rs1,080,000 was only off-peak revenue, not the benefit. This compares the stated schedules; it does not prove equal water or energy use."
                 },
                 {
                     id: "cm3q062",

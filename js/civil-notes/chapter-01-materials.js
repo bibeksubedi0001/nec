@@ -10,13 +10,8 @@
                 {
                     id: "properties",
                     title: "Material properties and selection",
-                    html: "<p>Engineering materials are substances used to construct buildings and infrastructure. Selection begins with the service requirement: a load-bearing member, exposed surface and decorative finish need different combinations of properties. Wood is organic; earth, gypsum and lime are inorganic.</p>" +
-                        "<table><thead><tr><th scope='col'>Property group</th><th scope='col'>Meaning for selection</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Physical</th><td>Density, porosity and moisture behaviour affect weight and water uptake.</td></tr>" +
-                        "<tr><th scope='row'>Chemical</th><td>Hydration, oxidation and chemical attack affect binding and durability.</td></tr>" +
-                        "<tr><th scope='row'>Mechanical</th><td>Stress capacity and deformation govern load resistance.</td></tr>" +
-                        "<tr><th scope='row'>Thermal</th><td>Expansion, heat transfer and temperature response affect movement and serviceability.</td></tr></tbody></table>" +
-                        "<p>Polymorphism concerns alternative crystal structures. It is a real material characteristic, not another broad property group comparable with those above.</p>",
+                    html: "<p>Engineering materials are substances used to construct buildings and infrastructure. Selection begins with the service requirement: a load-bearing member, exposed surface and decorative finish need different combinations of properties. Wood is organic; earth, gypsum and lime are inorganic.</p><table><thead><tr><th scope='col'>Property group</th><th scope='col'>Meaning for selection</th></tr></thead><tbody><tr><th scope='row'>Physical</th><td>Density, porosity and moisture behaviour affect weight and water uptake.</td></tr><tr><th scope='row'>Chemical</th><td>Hydration, oxidation and chemical attack affect binding and durability.</td></tr><tr><th scope='row'>Mechanical</th><td>Stress capacity and deformation govern load resistance.</td></tr><tr><th scope='row'>Thermal</th><td>Expansion, heat transfer and temperature response affect movement and serviceability.</td></tr></tbody></table>",
+                    moreHtml: "<p>Polymorphism concerns alternative crystal structures. It is a real material characteristic, not another broad property group comparable with those above.</p>",
                     sources: [
                         { id: "BASI674-00090", set: 8, question: 11 },
                         { id: "BASI674-00288", set: 23, question: 5 },
@@ -27,15 +22,8 @@
                 {
                     id: "mechanical-behaviour",
                     title: "Strength, hardness and deformation",
-                    html: "<p><strong>Strength</strong> is stress capacity; <strong>stiffness</strong> is resistance to elastic deformation, represented by modulus E. Neither means hardness.</p>" +
-                        "<table><thead><tr><th scope='col'>Property</th><th scope='col'>Distinguishing behaviour</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Hardness</th><td>Resistance to scratching, abrasion or indentation.</td></tr>" +
-                        "<tr><th scope='row'>Toughness</th><td>Energy absorbed before fracture; important under impact.</td></tr>" +
-                        "<tr><th scope='row'>Ductility</th><td>Plastic extension under tension, as in drawing wire.</td></tr>" +
-                        "<tr><th scope='row'>Malleability</th><td>Plastic deformation under compression, as in hammering or rolling sheets.</td></tr>" +
-                        "<tr><th scope='row'>Creep</th><td>Increasing strain with time under sustained stress.</td></tr>" +
-                        "<tr><th scope='row'>Fatigue</th><td>Damage and possible failure under repeated stress cycles.</td></tr></tbody></table>" +
-                        "<p>Alumina exemplifies a hard but brittle ceramic. Brittle materials generally resist compression better than tension because tensile stress opens cracks. Brinell, Vickers and Rockwell tests indent surfaces; they do not directly measure bulk strength. Fatigue testing investigates cyclic endurance. An endurance limit, where present, is the stress-amplitude threshold for an idealized infinite-life fatigue response; not every material has one.</p>",
+                    html: "<p><strong>Strength</strong> is stress capacity; <strong>stiffness</strong> is resistance to elastic deformation, represented by modulus E. Neither means hardness.</p><table><thead><tr><th scope='col'>Property</th><th scope='col'>Distinguishing behaviour</th></tr></thead><tbody><tr><th scope='row'>Hardness</th><td>Resistance to scratching, abrasion or indentation.</td></tr><tr><th scope='row'>Toughness</th><td>Energy absorbed before fracture; important under impact.</td></tr><tr><th scope='row'>Ductility</th><td>Plastic extension under tension, as in drawing wire.</td></tr><tr><th scope='row'>Malleability</th><td>Plastic deformation under compression, as in hammering or rolling sheets.</td></tr><tr><th scope='row'>Creep</th><td>Increasing strain with time under sustained stress.</td></tr><tr><th scope='row'>Fatigue</th><td>Damage and possible failure under repeated stress cycles.</td></tr></tbody></table>",
+                    moreHtml: "<p>Alumina exemplifies a hard but brittle ceramic. Brittle materials generally resist compression better than tension because tensile stress opens cracks. Brinell, Vickers and Rockwell tests indent surfaces; they do not directly measure bulk strength. Fatigue testing investigates cyclic endurance. An endurance limit, where present, is the stress-amplitude threshold for an idealized infinite-life fatigue response; not every material has one.</p>",
                     sources: [
                         { id: "BASI674-00094", set: 9, question: 2 },
                         { id: "BASI674-00101", set: 9, question: 9 },
@@ -50,9 +38,8 @@
                 {
                     id: "stone-selection",
                     title: "Stone composition and use",
-                    html: "<p>Separate <strong>origin</strong> from <strong>composition</strong>: granite is igneous; quartzite is metamorphosed sandstone and is siliceous. Limestone and marble are calcareous; slate is clay-derived, or argillaceous. Metamorphism changes existing rock through heat and pressure without melting.</p>" +
-                        "<p>Select stone for strength, porosity, wear resistance and exposure. Sound granite is useful for heavily loaded bridge components, foundations and road aggregate. Freestone can be dressed in different directions without pronounced cleavage; the name does not mean that dressing is unnecessary. Circular-dressed stone can form pillars or columns.</p>" +
-                        "<p>The bank's crushing-strength figure <strong>&gt;100 MPa</strong> and absorption figure <strong>&lt;5%</strong> are generic exam heuristics, not universal acceptance criteria. Strong stone is not automatically fire-resistant: thermal gradients can crack or spall it. Neither stone nor brick is superior under every exposure.</p>",
+                    html: "<p>Separate <strong>origin</strong> from <strong>composition</strong>: granite is igneous; quartzite is metamorphosed sandstone and is siliceous. Limestone and marble are calcareous; slate is clay-derived, or argillaceous. Metamorphism changes existing rock through heat and pressure without melting.</p><p>The bank's crushing-strength figure <strong>&gt;100 MPa</strong> and absorption figure <strong>&lt;5%</strong> are generic exam heuristics, not universal acceptance criteria. Strong stone is not automatically fire-resistant: thermal gradients can crack or spall it. Neither stone nor brick is superior under every exposure.</p>",
+                    moreHtml: "<p>Select stone for strength, porosity, wear resistance and exposure. Sound granite is useful for heavily loaded bridge components, foundations and road aggregate. Freestone can be dressed in different directions without pronounced cleavage; the name does not mean that dressing is unnecessary. Circular-dressed stone can form pillars or columns.</p>",
                     sources: [
                         { id: "BASI674-00008", set: 2, question: 8 },
                         { id: "BASI674-00091", set: 8, question: 12 },
@@ -88,14 +75,8 @@
                 {
                     id: "cement-chemistry",
                     title: "Cement constituents and hydration",
-                    html: "<p>Limestone supplies calcium carbonate for clinker; clay or shale supplies silica, alumina and iron oxides. Coal is fuel rather than the principal raw material. Calcium is the dominant metallic element. The bank's <strong>17–25% silica</strong> is an approximate oxide-composition range, not a site mixing proportion.</p>" +
-                        "<p>In cement notation, C = CaO, S = SiO<sub>2</sub>, A = Al<sub>2</sub>O<sub>3</sub> and F = Fe<sub>2</sub>O<sub>3</sub>.</p>" +
-                        "<table><thead><tr><th scope='col'>Principal clinker phase</th><th scope='col'>Role</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>C<sub>3</sub>S: tricalcium silicate</th><td>Faster hydration; principal early-strength contributor.</td></tr>" +
-                        "<tr><th scope='row'>C<sub>2</sub>S: dicalcium silicate</th><td>Slower hydration; later-strength contribution.</td></tr>" +
-                        "<tr><th scope='row'>C<sub>3</sub>A: tricalcium aluminate</th><td>Rapid reaction and high heat; gypsum controls flash setting. Sulfate vulnerability matters.</td></tr>" +
-                        "<tr><th scope='row'>C<sub>4</sub>AF: tetracalcium aluminoferrite</th><td>Iron-bearing phase affecting colour; smaller strength contribution.</td></tr></tbody></table>" +
-                        "<p>Hydration of the silicates forms <strong>C-S-H</strong>, the principal binding product. Calcium hydroxide is not the main strength-giving phase. Rapid strength gain must not be confused with uncontrolled setting.</p>",
+                    html: "<p>Limestone supplies calcium carbonate for clinker; clay or shale supplies silica, alumina and iron oxides. Coal is fuel rather than the principal raw material. Calcium is the dominant metallic element. The bank's <strong>17–25% silica</strong> is an approximate oxide-composition range, not a site mixing proportion.</p><p>In cement notation, C = CaO, S = SiO<sub>2</sub>, A = Al<sub>2</sub>O<sub>3</sub> and F = Fe<sub>2</sub>O<sub>3</sub>.</p><table><thead><tr><th scope='col'>Principal clinker phase</th><th scope='col'>Role</th></tr></thead><tbody><tr><th scope='row'>C<sub>3</sub>S: tricalcium silicate</th><td>Faster hydration; principal early-strength contributor.</td></tr><tr><th scope='row'>C<sub>2</sub>S: dicalcium silicate</th><td>Slower hydration; later-strength contribution.</td></tr><tr><th scope='row'>C<sub>3</sub>A: tricalcium aluminate</th><td>Rapid reaction and high heat; gypsum controls flash setting. Sulfate vulnerability matters.</td></tr><tr><th scope='row'>C<sub>4</sub>AF: tetracalcium aluminoferrite</th><td>Iron-bearing phase affecting colour; smaller strength contribution.</td></tr></tbody></table><p>Silicate hydration forms <strong>C-S-H, the principal binding product</strong>. Calcium hydroxide is not the main strength-giving phase.</p>",
+                    moreHtml: "<p>Rapid strength gain must not be confused with uncontrolled setting.</p>",
                     sources: [
                         { id: "BASI674-00002", set: 2, question: 2 },
                         { id: "BASI674-00012", set: 2, question: 12 },
@@ -109,10 +90,8 @@
                 {
                     id: "cement-and-lime",
                     title: "Cement and lime selection",
-                    html: "<p>Select binders for exposure and finish. <strong>Sulfate-resisting cement</strong> addresses sulfate exposure, including affected treatment structures; it is not universal protection against sewage acids. White cement for architectural finishes and cement-based coatings has low colouring-oxide contents, not literally zero iron. Coloured cement incorporates pigments for decorative finishes and artificial marble. Rapid hardening concerns strength gain; quick setting concerns loss of plasticity.</p>" +
-                        "<p>Fly ash is a coal-combustion byproduct used as a pozzolan: suitable reactive constituents combine with lime in moist conditions. Being a waste material alone does not establish suitability or a universal popularity ranking.</p>" +
-                        "<p><strong>Hydraulic lime</strong> develops binding action in moist conditions. Fat-lime mortar can also be used where air carbonation is appropriate; hydraulic lime is not the only mortar lime.</p>" +
-                        "<p><strong>Worked application of BASI674-00109:</strong> with the bank's loose bulk density of 1440 kg/m<sup>3</sup>, an illustrative 0.10 m<sup>3</sup> gives m = ρ<sub>bulk</sub>V = 1440 × 0.10 = 144 kg. Bulk density includes interparticle voids; it must not replace particle density in absolute-volume calculations.</p>",
+                    html: "<p>Select binders for exposure and finish. <strong>Sulfate-resisting cement</strong> addresses sulfate exposure, including affected treatment structures; it is not universal protection against sewage acids. White cement for architectural finishes and cement-based coatings has low colouring-oxide contents, not literally zero iron. Coloured cement incorporates pigments for decorative finishes and artificial marble. Rapid hardening concerns strength gain; quick setting concerns loss of plasticity.</p><p><strong>Hydraulic lime</strong> develops binding action in moist conditions. Fat-lime mortar can also be used where air carbonation is appropriate; hydraulic lime is not the only mortar lime.</p><p><strong>Worked application of BASI674-00109:</strong> with the bank's loose bulk density of 1440 kg/m<sup>3</sup>, an illustrative 0.10 m<sup>3</sup> gives m = ρ<sub>bulk</sub>V = 1440 × 0.10 = 144 kg. Bulk density includes interparticle voids; it must not replace particle density in absolute-volume calculations.</p>",
+                    moreHtml: "<p>Fly ash is a coal-combustion byproduct used as a pozzolan: suitable reactive constituents combine with lime in moist conditions. Being a waste material alone does not establish suitability or a universal popularity ranking.</p>",
                     sources: [
                         { id: "BASI674-00010", set: 2, question: 10 },
                         { id: "BASI674-00109", set: 10, question: 3 },
@@ -127,9 +106,8 @@
                 {
                     id: "timber-structure",
                     title: "Timber structure and grading",
-                    html: "<p>Timber is <strong>anisotropic</strong>: longitudinal fibres make parallel-to-grain loading generally much stronger than loading across the grain. Grain continuity matters in tension; cross-grain forces encourage splitting. Sal exemplifies an exogenous tree with concentric growth rings, unlike the bank's traditional endogenous group of bamboo, palm and cane. A <strong>balk</strong> is a roughly squared log.</p>" +
-                        "<p>Do not confuse a species stiffness group with a quality grade. The bank lists Select Grade, Grade I and Grade II; grading concerns defects and usable properties, not just the tree name. Fibreboards are bonded wood-fibre products whose actual product classification matters.</p>" +
-                        "<p>The quoted tension/compression ratio, fibreboard density boundary and Group A modulus threshold are addressed in the cautions; they are not adopted as design values.</p>",
+                    html: "<p>Timber is <strong>anisotropic</strong>: longitudinal fibres make parallel-to-grain loading generally much stronger than loading across the grain. Grain continuity matters in tension; cross-grain forces encourage splitting. Sal exemplifies an exogenous tree with concentric growth rings, unlike the bank's traditional endogenous group of bamboo, palm and cane. A <strong>balk</strong> is a roughly squared log.</p>",
+                    moreHtml: "<p>Do not confuse a species stiffness group with a quality grade. The bank lists Select Grade, Grade I and Grade II; grading concerns defects and usable properties, not just the tree name. Fibreboards are bonded wood-fibre products whose actual product classification matters.</p><p>The quoted tension/compression ratio, fibreboard density boundary and Group A modulus threshold are addressed in the cautions; they are not adopted as design values.</p>",
                     sources: [
                         { id: "BASI674-00111", set: 10, question: 5 },
                         { id: "BASI674-00205", set: 17, question: 4 },
@@ -163,10 +141,8 @@
                 {
                     id: "metals-and-alloys",
                     title: "Metals, alloys and thermal movement",
-                    html: "<p>Ferrous metals are iron-based; non-ferrous metals include copper and aluminium. Increasing carbon generally raises steel's hardness and strength while reducing ductility and weldability, subject to processing. It does not greatly increase elastic modulus.</p>" +
-                        "<p><strong>Worked comparison from DESI787-00185:</strong> mild and high-tensile structural steel both have E approximately 200 GPa, so their modulus ratio is about 1. Greater strength does not imply less elastic deflection for identical geometry and load.</p>" +
-                        "<p>Unprotected carbon steel is corrosion-prone despite its high strength per unit mass. Copper alloying can improve atmospheric corrosion resistance, but suitable weathering conditions still matter. Chromium supports stainless-steel passivation; nickel is not compulsory in every family. Common brazing spelter is copper–zinc, not the universal composition of all brazing fillers.</p>" +
-                        "<p><strong>Thermal application of DESI787-00189:</strong> free expansion is ΔL = αLΔT. Using its α ≈ 12 × 10<sup>−6</sup>/°C, an illustrative 2 m bar warmed by 40°C extends 0.00096 m = 0.96 mm. Steel and concrete have similar, not identical, expansion; restraint produces stress instead of unrestricted movement.</p>",
+                    html: "<p>Ferrous metals are iron-based; non-ferrous metals include copper and aluminium. Increasing carbon generally raises steel's hardness and strength while reducing ductility and weldability, subject to processing. It does not greatly increase elastic modulus.</p><p><strong>Worked comparison from DESI787-00185:</strong> mild and high-tensile structural steel both have E approximately 200 GPa, so their modulus ratio is about 1. Greater strength does not imply less elastic deflection for identical geometry and load.</p><p><strong>Thermal application of DESI787-00189:</strong> free expansion is ΔL = αLΔT. Using its α ≈ 12 × 10<sup>−6</sup>/°C, an illustrative 2 m bar warmed by 40°C extends 0.00096 m = 0.96 mm. Steel and concrete have similar, not identical, expansion; restraint produces stress instead of unrestricted movement.</p>",
+                    moreHtml: "<p>Unprotected carbon steel is corrosion-prone despite its high strength per unit mass. Copper alloying can improve atmospheric corrosion resistance, but suitable weathering conditions still matter. Chromium supports stainless-steel passivation; nickel is not compulsory in every family. Common brazing spelter is copper–zinc, not the universal composition of all brazing fillers.</p>",
                     sources: [
                         { id: "BASI674-00093", set: 9, question: 1 },
                         { id: "BASI674-00114", set: 10, question: 8 },
@@ -182,13 +158,8 @@
                 {
                     id: "paints-and-varnishes",
                     title: "Paints, varnishes and lacquer",
-                    html: "<p>Paint forms a pigmented protective film; varnish forms a resinous film, usually without hiding pigment.</p>" +
-                        "<table><thead><tr><th scope='col'>Constituent</th><th scope='col'>Function</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Pigment</th><td>Colour and opacity.</td></tr>" +
-                        "<tr><th scope='row'>Binder or vehicle</th><td>Forms the continuous film holding pigment to the substrate.</td></tr>" +
-                        "<tr><th scope='row'>Thinner</th><td>Reduces application viscosity and evaporates; turpentine is an oil-paint example.</td></tr>" +
-                        "<tr><th scope='row'>Drier</th><td>Accelerates curing; not interchangeable with thinner.</td></tr></tbody></table>" +
-                        "<p>The bank's solventborne lacquer dries mainly by solvent evaporation; nitrocellulose is a film-forming resin, not the solvent. Bituminous paint primarily protects against water and corrosion. White-lead paint is a historical woodwork association, not a recommendation: lead is toxic; select appropriate lead-free coatings.</p>",
+                    html: "<p>Paint forms a pigmented protective film; varnish forms a resinous film, usually without hiding pigment.</p><table><thead><tr><th scope='col'>Constituent</th><th scope='col'>Function</th></tr></thead><tbody><tr><th scope='row'>Pigment</th><td>Colour and opacity.</td></tr><tr><th scope='row'>Binder or vehicle</th><td>Forms the continuous film holding pigment to the substrate.</td></tr><tr><th scope='row'>Thinner</th><td>Reduces application viscosity and evaporates; turpentine is an oil-paint example.</td></tr><tr><th scope='row'>Drier</th><td>Accelerates curing; not interchangeable with thinner.</td></tr></tbody></table>",
+                    moreHtml: "<p>The bank's solventborne lacquer dries mainly by solvent evaporation; nitrocellulose is a film-forming resin, not the solvent. Bituminous paint primarily protects against water and corrosion. White-lead paint is a historical woodwork association, not a recommendation: lead is toxic; select appropriate lead-free coatings.</p>",
                     sources: [
                         { id: "BASI674-00009", set: 2, question: 9 },
                         { id: "BASI674-00013", set: 2, question: 13 },
@@ -202,10 +173,8 @@
                 {
                     id: "bituminous-materials",
                     title: "Bitumen, asphalt and tar",
-                    html: "<p>Bitumen is a petroleum-derived binder; coal tar comes from destructive distillation and is chemically different. Asphalt commonly means a bituminous material combined with mineral aggregate; this distinction is syllabus context, not a direct assigned-bank test.</p>" +
-                        "<p>Thermoplastic bitumen stiffens on cooling and softens on warming. Cold brittleness favours cracking; hot softening can favour rutting or bleeding. Under matching penetration-test conditions, lower penetration means harder binder: <strong>30/40 is harder than 60/70 and 80/100</strong>. This comparison concerns penetration grades, not every grading system.</p>" +
-                        "<p>Plastic bitumen uses filler and sometimes solvent for crack-sealing consistency. Emulsion disperses bitumen in water for cold application, subject to product conditions. Flexible bituminous sealants can serve gutter joints; they are not the only gutter construction material.</p>" +
-                        "<p>Solubility in carbon disulfide is the bank's classic bitumen association; mineral filler is not binder. The solvent is hazardous: this is identification, not a laboratory instruction.</p>",
+                    html: "<p>Bitumen is a petroleum-derived binder; coal tar comes from destructive distillation and is chemically different. Asphalt commonly means a bituminous material combined with mineral aggregate; this distinction is syllabus context, not a direct assigned-bank test.</p><p>Thermoplastic bitumen stiffens on cooling and softens on warming. Cold brittleness favours cracking; hot softening can favour rutting or bleeding. Under matching penetration-test conditions, lower penetration means harder binder: <strong>30/40 is harder than 60/70 and 80/100</strong>. This comparison concerns penetration grades, not every grading system.</p>",
+                    moreHtml: "<p>Plastic bitumen uses filler and sometimes solvent for crack-sealing consistency. Emulsion disperses bitumen in water for cold application, subject to product conditions. Flexible bituminous sealants can serve gutter joints; they are not the only gutter construction material.</p><p>Solubility in carbon disulfide is the bank's classic bitumen association; mineral filler is not binder. The solvent is hazardous: this is identification, not a laboratory instruction.</p>",
                     sources: [
                         { id: "BASI674-00011", set: 2, question: 11 },
                         { id: "BASI674-00028", set: 4, question: 2 },
@@ -225,53 +194,263 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Ambiguous wording:</strong> polymorphism is a genuine characteristic. The metal item's positional 'Both b &amp; c' is malformed. Pillar and column overlap. Wound-covering tissue is callus; a rind gall is abnormal swelling, so that stem does not cleanly distinguish them.</p>",
-                    sources: [
-                        { id: "BASI674-00090", set: 8, question: 11 },
-                        { id: "BASI674-00093", set: 9, question: 1 },
-                        { id: "BASI674-00105", set: 9, question: 12 },
-                        { id: "BASI674-00113", set: 10, question: 7 }
+                    "id": "check-basi674-00007",
+                    "status": "review",
+                    "prompt": "The effect on timber due to electric seasoning is?",
+                    "html": "<p><strong>Conditional selections:</strong> hydraulic lime does not exclude air-lime mortars; electrical seasoning does not necessarily split timber. </p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00007",
+                            "set": 2,
+                            "question": 7
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Not verified specifications:</strong> stone strength/absorption figures are bank heuristics; rock type, orientation and test conditions matter. Stone-versus-brick rankings and the listed tile dimensions are likewise not universal rules.</p>",
-                    sources: [
-                        { id: "BASI674-00091", set: 8, question: 12 },
-                        { id: "BASI674-00106", set: 9, question: 13 },
-                        { id: "BASI674-00201", set: 16, question: 13 },
-                        { id: "BASI674-00202", set: 17, question: 1 },
-                        { id: "BASI674-00279", set: 22, question: 10 }
+                    "id": "check-basi674-00010",
+                    "status": "review",
+                    "prompt": "Which lime is used in lime motor?",
+                    "html": "<p><strong>Conditional selections:</strong> hydraulic lime does not exclude air-lime mortars; electrical seasoning does not necessarily split timber. </p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00010",
+                            "set": 2,
+                            "question": 10
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Timber classifications:</strong> the bank quotes 960 kg/m<sup>3</sup> as a maximum fibreboard density, 2–4 for parallel-grain tensile/compressive strength, and E &gt; 12.6 × 10<sup>3</sup> N/mm<sup>2</sup> for Group A. These are not verified universal boundaries. Hardboard is itself a fibreboard type; stiffness group is not strength grade. Do not turn a generic strength ratio into allowable design stresses.</p>",
-                    sources: [
-                        { id: "DESI787-00068", set: 8, question: 33 },
-                        { id: "DESI787-00077", set: 9, question: 33 },
-                        { id: "DESI787-00129", set: 15, question: 27 },
-                        { id: "DESI787-00130", set: 15, question: 28 }
+                    "id": "check-basi674-00013",
+                    "status": "review",
+                    "prompt": "Lacquer is",
+                    "html": "<p><strong>Terminology is loose.</strong> Lacquer normally dries by evaporation of a volatile solvent carrying resin. Calling it spirit varnish is broad bank shorthand, not a precise definition of every lacquer.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00013",
+                            "set": 2,
+                            "question": 13
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Stainless-steel minimum:</strong> the keyed 10.5% chromium/0.5% nickel pair does not establish a universal paired minimum. Nickel is not required in every stainless family; the explanation also contains an inconsistent option reference.</p>",
-                    sources: [
-                        { id: "DESI787-00196", set: 22, question: 26 }
+                    "id": "check-basi674-00090",
+                    "status": "review",
+                    "prompt": "Which of the following is not a property of engineering materials?",
+                    "html": "<p><strong>Wording needs qualification.</strong> Polymorphism is a real material characteristic. The intended distinction may be a broad property category rather than a property itself; the current stem does not say that.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00090",
+                            "set": 8,
+                            "question": 11
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Conditional selections:</strong> hydraulic lime does not exclude air-lime mortars; electrical seasoning does not necessarily split timber. Cork's gym/rink recommendation depends on the actual surface use, not simply the building label.</p>",
-                    sources: [
-                        { id: "BASI674-00007", set: 2, question: 7 },
-                        { id: "BASI674-00010", set: 2, question: 10 },
-                        { id: "BASI674-00117", set: 10, question: 11 }
+                    "id": "check-basi674-00091",
+                    "status": "review",
+                    "prompt": "For a good building stone how much is the required crushing strength?",
+                    "html": "<p><strong>Not verified specifications:</strong> stone strength/absorption figures are bank heuristics; rock type, orientation and test conditions matter. </p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00091",
+                            "set": 8,
+                            "question": 12
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Terminology:</strong> calling lacquer spirit varnish is a broad bank shorthand; cellulose nitrate is resin, not solvent. Indentation leaves a mark, so describing hardness testing as unqualifiedly non-destructive is misleading.</p>",
-                    sources: [
-                        { id: "BASI674-00013", set: 2, question: 13 },
-                        { id: "BASI674-00430", set: 33, question: 10 },
-                        { id: "STRU935-00256", set: 24, question: 20 }
+                    "id": "check-desi787-00068",
+                    "status": "review",
+                    "prompt": "The maximum limit of the weight of fiberboards is",
+                    "html": "<p><strong>Density is not a universal maximum.</strong> The keyed 960 kg/m<sup>3</sup> needs a named fibreboard class and standard. Hardboard is a fibreboard type, and different products have different density ranges.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00068",
+                            "set": 8,
+                            "question": 33
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00093",
+                    "status": "corrected",
+                    "prompt": "Which pair consists entirely of metallic engineering materials?",
+                    "html": "<p><strong>Corrected: ferrous and non-ferrous metals, option B.</strong> The question now asks for a pair, and the self-referencing “Both b and c” option has been replaced with explicit material pairs.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00093",
+                            "set": 9,
+                            "question": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00105",
+                    "status": "review",
+                    "prompt": "Circular finished stones are generally used for:",
+                    "html": "<p><strong>Overlapping choices.</strong> A pillar and a column can describe the same vertical stone support. The stem gives no feature that uniquely distinguishes the two offered choices.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00105",
+                            "set": 9,
+                            "question": 12
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00106",
+                    "status": "review",
+                    "prompt": "Good quality stone absorbs water less than how many percentage?",
+                    "html": "<p><strong>Test basis missing.</strong> Water absorption depends on the stone, specimen preparation and test procedure. The keyed 5% is a bank teaching value, not a verified universal acceptance limit.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00106",
+                            "set": 9,
+                            "question": 13
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00077",
+                    "status": "review",
+                    "prompt": "The maximum limit of the weight of fiberboards is ______",
+                    "html": "<p><strong>Density is not a universal maximum.</strong> The keyed 960 kg/m<sup>3</sup> needs a named fibreboard class and standard. Hardboard is a fibreboard type, and different products have different density ranges.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00077",
+                            "set": 9,
+                            "question": 33
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00113",
+                    "status": "review",
+                    "prompt": "The defect of the timber in which the new tissues grow around the wounded part is called",
+                    "html": "<p>Wound-covering tissue is callus; a rind gall is abnormal swelling, so that stem does not cleanly distinguish them.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00113",
+                            "set": 10,
+                            "question": 7
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00117",
+                    "status": "review",
+                    "prompt": "Which type of tile is suitable for air-conditioned rooms, gymnasiums and skating rinks?",
+                    "html": "<p>Cork's gym/rink recommendation depends on the actual surface use, not simply the building label.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00117",
+                            "set": 10,
+                            "question": 11
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00129",
+                    "status": "review",
+                    "prompt": "Tensile strength along grain of timber is …… times the compressive strength in same direction",
+                    "html": "<p><strong>Material-dependent ratio.</strong> The quoted parallel-grain tensile/compressive strength ratio is a teaching range, not an allowable design stress. Species, defects, moisture and grading govern the actual values.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00129",
+                            "set": 15,
+                            "question": 27
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00130",
+                    "status": "review",
+                    "prompt": "Modulus of elasticity for Group A species of timber should be",
+                    "html": "<p><strong>Stiffness group, not strength grade.</strong> The Group A modulus boundary requires its stated classification and edition. It does not by itself specify allowable bending, compression or tension stress.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00130",
+                            "set": 15,
+                            "question": 28
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00201",
+                    "status": "review",
+                    "prompt": "Which statement is false? Stone is ______",
+                    "html": "<p>Stone-versus-brick rankings and the listed tile dimensions are likewise not universal rules.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00201",
+                            "set": 16,
+                            "question": 13
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00202",
+                    "status": "review",
+                    "prompt": "Crushing strength of a good structural stone should be more than",
+                    "html": "<p><strong>Not verified specifications:</strong> stone strength/absorption figures are bank heuristics; rock type, orientation and test conditions matter. </p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00202",
+                            "set": 17,
+                            "question": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00279",
+                    "status": "review",
+                    "prompt": "The size of a floor tile commonly used, is",
+                    "html": "<p>Stone-versus-brick rankings and the listed tile dimensions are likewise not universal rules.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00279",
+                            "set": 22,
+                            "question": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00196",
+                    "status": "review",
+                    "prompt": "What is the minimum percentage of chromium and nickel added to stainless steel?",
+                    "html": "<p><strong>Stainless-steel minimum:</strong> the keyed 10.5% chromium/0.5% nickel pair does not establish a universal paired minimum. Nickel is not required in every stainless family; the explanation also contains an inconsistent option reference.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00196",
+                            "set": 22,
+                            "question": 26
+                        }
+                    ]
+                },
+                {
+                    "id": "check-stru935-00256",
+                    "status": "review",
+                    "prompt": "Which test is conducted to measure the ability of a material to resist scratching, abrasion, deformation and indentation?",
+                    "html": "<p>Indentation leaves a mark, so describing hardness testing as unqualifiedly non-destructive is misleading.</p>",
+                    "sources": [
+                        {
+                            "id": "STRU935-00256",
+                            "set": 24,
+                            "question": 20
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00430",
+                    "status": "review",
+                    "prompt": "What is a 'Lacquer' in the context of engineering materials?",
+                    "html": "<p><strong>Clarify the ingredient roles.</strong> Cellulose nitrate is a film-forming resin in nitrocellulose lacquer, not the volatile solvent. The option should be read as resin dissolved in a suitable solvent.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00430",
+                            "set": 33,
+                            "question": 10
+                        }
                     ]
                 }
             ]
@@ -283,9 +462,8 @@
                 {
                     id: "standards-and-reporting",
                     title: "Standards and test reporting",
-                    html: "<p>NS denotes Nepal Standards and IS Indian Standards; their prefixes are not interchangeable. The Nepal Bureau of Standards and Metrology (NBSM) is the standards institution identified in the bank. Distinguish a <strong>product specification</strong>, defining classification and acceptance, from a <strong>test method</strong>, defining measurement. The bank connects IS 3495 Part 1 with brick compression; verify the applicable edition before laboratory use.</p>" +
-                        "<p>Record specimen identity, conditioning, dimensions, apparatus, relevant test age, loading rate, individual results and reporting rule. A passing average alone does not prove every specimen satisfies an individual minimum. Results without methods and units cannot prove compliance.</p>" +
-                        "<p><strong>Verified catalogue identities:</strong> the NBSM catalogue lists NS 1:2035 for bricks, NS 49:2041 for ordinary Portland cement (with a 2076 amendment), and NS 572:2076 for OPC 43 and 53 grades. This resolves the bank's brick/cement identity conflict; it does not verify the numerical acceptance limits in the questions.</p>",
+                    html: "<p>NS denotes Nepal Standards and IS Indian Standards; their prefixes are not interchangeable. The Nepal Bureau of Standards and Metrology (NBSM) is the standards institution identified in the bank. Distinguish a <strong>product specification</strong>, defining classification and acceptance, from a <strong>test method</strong>, defining measurement. The bank connects IS 3495 Part 1 with brick compression; verify the applicable edition before laboratory use.</p><p><strong>Verified catalogue identities:</strong> the NBSM catalogue lists NS 1:2035 for bricks, NS 49:2041 for ordinary Portland cement (with a 2076 amendment), and NS 572:2076 for OPC 43 and 53 grades. </p>",
+                    moreHtml: "<p>Record specimen identity, conditioning, dimensions, apparatus, relevant test age, loading rate, individual results and reporting rule. A passing average alone does not prove every specimen satisfies an individual minimum. Results without methods and units cannot prove compliance.</p><p>This resolves the bank's brick/cement identity conflict; it does not verify the numerical acceptance limits in the questions.</p>",
                     sources: [
                         { id: "BASI674-00125", set: 11, question: 6 },
                         { id: "BASI674-00131", set: 11, question: 12 },
@@ -341,14 +519,8 @@
                 {
                     id: "cement-setting-and-soundness",
                     title: "Cement setting, soundness and strength",
-                    html: "<p><strong>Setting</strong> is the transition from plastic paste toward rigidity; strength continues developing afterwards. Both setting times start when water is added. Initial set marks loss of workable plasticity; final set is a method-defined penetration endpoint, not proof of design strength.</p>" +
-                        "<table><thead><tr><th scope='col'>Apparatus</th><th scope='col'>What it measures</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Vicat</th><td>Consistency and setting times, using different attachments.</td></tr>" +
-                        "<tr><th scope='row'>Le Chatelier</th><td>Expansive unsoundness, particularly associated with free lime.</td></tr></tbody></table>" +
-                        "<p>The bank quotes OPC initial set not before 30 minutes, final set not after 600 minutes (10 hours), and low-heat cement initial set not before 60 minutes. Apply these only with the relevant cement specification.</p>" +
-                        "<p>In the cited Le Chatelier sequence, water-condition the paste-filled split mould for 24 hours, record pointer spacing, then heat/boil as the method requires and determine the expansion. Soundness means volume stability, not strength. Free-magnesia expansion is not reliably covered by this method alone; the bank also mentions autoclave testing.</p>" +
-                        "<p><strong>Where 0.78 belongs:</strong> IS 4031 Part 3:1988, clause 5.2.1, specifies Le Chatelier paste water as 0.78 times the quantity required for standard consistency. If P = 30% for the same cement mass, this means 0.78 × 30 = 23.4% water by cement mass, not a water/cement ratio of 0.78. The standard-consistency test itself determines P experimentally.</p>" +
-                        "<p><strong>Cement compressive strength — syllabus context:</strong> prepare standardized cement–sand mortar specimens, compact and cure them under the prescribed conditions, then load them in compression at specified ages. Strength is maximum load divided by loaded area. Specimen size, mortar proportions, curing and test age affect the result; use the applicable method rather than borrowing a concrete-cube procedure. Setting time and soundness cannot substitute for this strength test. The assigned questions do not supply its complete procedure or acceptance table.</p>",
+                    html: "<p><strong>Setting</strong> is the transition from plastic paste toward rigidity; strength continues developing afterwards. Both setting times start when water is added. Initial set marks loss of workable plasticity; final set is a method-defined penetration endpoint, not proof of design strength.</p><table><thead><tr><th scope='col'>Apparatus</th><th scope='col'>What it measures</th></tr></thead><tbody><tr><th scope='row'>Vicat</th><td>Consistency and setting times, using different attachments.</td></tr><tr><th scope='row'>Le Chatelier</th><td>Expansive unsoundness, particularly associated with free lime.</td></tr></tbody></table><p>The bank quotes OPC initial set not before 30 minutes, final set not after 600 minutes (10 hours), and low-heat cement initial set not before 60 minutes. Apply these only with the relevant cement specification.</p><p>In the cited Le Chatelier sequence, water-condition the paste-filled split mould for 24 hours, record pointer spacing, then heat/boil as the method requires and determine the expansion. Soundness means volume stability, not strength. </p><p><strong>Where 0.78 belongs:</strong> IS 4031 Part 3:1988, clause 5.2.1, specifies Le Chatelier paste water as 0.78 times the quantity required for standard consistency. If P = 30% for the same cement mass, this means 0.78 × 30 = 23.4% water by cement mass, not a water/cement ratio of 0.78. The standard-consistency test itself determines P experimentally.</p>",
+                    moreHtml: "<p>Free-magnesia expansion is not reliably covered by this method alone; the bank also mentions autoclave testing.</p><p><strong>Cement compressive strength — syllabus context:</strong> prepare standardized cement–sand mortar specimens, compact and cure them under the prescribed conditions, then load them in compression at specified ages. Strength is maximum load divided by loaded area. Specimen size, mortar proportions, curing and test age affect the result; use the applicable method rather than borrowing a concrete-cube procedure. Setting time and soundness cannot substitute for this strength test. The assigned questions do not supply its complete procedure or acceptance table.</p>",
                     sources: [
                         { id: "BASI674-00015", set: 3, question: 2 },
                         { id: "BASI674-00019", set: 3, question: 6 },
@@ -365,11 +537,8 @@
                 {
                     id: "sand-bulking",
                     title: "Bulking of sand and batching correction",
-                    html: "<p><strong>Bulking</strong> is a physical increase in loose sand volume when moisture films hold grains apart, not chemical aggregate expansion. Volume initially rises with moisture, then further wetting removes film-supported separation. Fine sand bulks more than coarse sand; coarse-aggregate bulking is usually negligible.</p>" +
-                        "<p>Compare equal quantities of sand solids using a cylinder/rule and consistent settling. Flooding and stirring remove the film-supported structure; a Vicat mould is irrelevant. <strong>B = 100(V<sub>damp</sub> − V<sub>reference</sub>)/V<sub>reference</sub></strong> percent.</p>" +
-                        "<p><strong>Worked application of BASI674-00152/00156:</strong> using their illustrative 40% bulking, one unbulked volume requires 1.40 measured loose volumes. Conversely, 1.00 m<sup>3</sup> of bulked sand represents 1/1.40 = 0.714 m<sup>3</sup> unbulked. Ignoring bulking underbatches sand solids.</p>" +
-                        "<p>With comparable packing, equal quantities of sand solids have similar dry and fully flooded bulk volumes in the elementary bulking model. Intermediate dampness increases volume; comparisons involving different solid masses or different compaction states cannot isolate bulking.</p>" +
-                        "<p>The 40% figure and quoted moisture ranges are indicative bank examples, not fixed correction factors. Measure actual bulking. Mass batching avoids the volumetric bulking error but still requires accounting for aggregate water.</p>",
+                    html: "<p><strong>Bulking</strong> is a physical increase in loose sand volume when moisture films hold grains apart, not chemical aggregate expansion. Volume initially rises with moisture, then further wetting removes film-supported separation. Fine sand bulks more than coarse sand; coarse-aggregate bulking is usually negligible.</p><p>Compare equal quantities of sand solids using a cylinder/rule and consistent settling. Flooding and stirring remove the film-supported structure; a Vicat mould is irrelevant. <strong>B = 100(V<sub>damp</sub> − V<sub>reference</sub>)/V<sub>reference</sub></strong> percent.</p><p><strong>Worked application of BASI674-00152/00156:</strong> using their illustrative 40% bulking, one unbulked volume requires 1.40 measured loose volumes. Conversely, 1.00 m<sup>3</sup> of bulked sand represents 1/1.40 = 0.714 m<sup>3</sup> unbulked. Ignoring bulking underbatches sand solids.</p><p>The 40% figure and quoted moisture ranges are indicative bank examples, not fixed correction factors. Measure actual bulking. Mass batching avoids the volumetric bulking error but still requires accounting for aggregate water.</p>",
+                    moreHtml: "<p>With comparable packing, equal quantities of sand solids have similar dry and fully flooded bulk volumes in the elementary bulking model. Intermediate dampness increases volume; comparisons involving different solid masses or different compaction states cannot isolate bulking.</p>",
                     sources: [
                         { id: "BASI674-00151", set: 13, question: 4 },
                         { id: "BASI674-00152", set: 13, question: 5 },
@@ -388,10 +557,8 @@
                 {
                     id: "rebar-tension",
                     title: "Tensile testing and test selection",
-                    html: "<p>A tensile test in a <strong>universal testing machine</strong> pulls axially while load and extension are measured. Alignment, gripping and the specified original area and gauge length matter.</p>" +
-                        "<p>Engineering stress σ = P/A<sub>0</sub>; strain ε = ΔL/L<sub>0</sub>; fracture elongation = 100(L<sub>f</sub> − L<sub>0</sub>)/L<sub>0</sub> percent. The curve distinguishes elastic stiffness, yielding and ultimate tensile strength; compare like conditions, not just peak loads.</p>" +
-                        "<p>Peak engineering stress is ultimate strength; yielding concerns substantial permanent strain. E comes from the initial elastic slope, not the peak. If a clear yield point is absent, the applicable method defines a proof-stress convention; no offset or acceptance limit is assumed here.</p>" +
-                        "<p>Brinell measures indentation hardness, not rebar tensile capacity. The assigned bank identifies the UTM only; these rebar interpretations are syllabus context, not bank-verified grade acceptance limits.</p>",
+                    html: "<p>A tensile test in a <strong>universal testing machine</strong> pulls axially while load and extension are measured. Alignment, gripping and the specified original area and gauge length matter.</p><p>Engineering stress σ = P/A<sub>0</sub>; strain ε = ΔL/L<sub>0</sub>; fracture elongation = 100(L<sub>f</sub> − L<sub>0</sub>)/L<sub>0</sub> percent. The curve distinguishes elastic stiffness, yielding and ultimate tensile strength; compare like conditions, not just peak loads.</p>",
+                    moreHtml: "<p>Peak engineering stress is ultimate strength; yielding concerns substantial permanent strain. E comes from the initial elastic slope, not the peak. If a clear yield point is absent, the applicable method defines a proof-stress convention; no offset or acceptance limit is assumed here.</p><p>Brinell measures indentation hardness, not rebar tensile capacity. The assigned bank identifies the UTM only; these rebar interpretations are syllabus context, not bank-verified grade acceptance limits.</p>",
                     sources: [
                         { id: "BASI674-00424", set: 33, question: 4 },
                         { id: "DESI787-00243", set: 26, question: 33 }
@@ -409,49 +576,250 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Incorrect brick-standard key:</strong> BASI674-00125 assigns NS 49/2041 to bricks, but the NBSM catalogue identifies NS 1:2035 as the brick standard and NS 49:2041 as OPC. BASI674-00133 has the correct OPC identity, though its explanation mislabels the Indian IS 269 reference. Related brick strength/absorption claims still require the applicable standard text. Original stored questions and keys have not been changed.</p>",
-                    sources: [
-                        { id: "BASI674-00125", set: 11, question: 6 },
-                        { id: "BASI674-00133", set: 1, question: 3 },
-                        { id: "BASI674-00136", set: 12, question: 3 },
-                        { id: "BASI674-00137", set: 12, question: 4 }
+                    "id": "check-basi674-00133",
+                    "status": "review",
+                    "prompt": "Specification for cement is governed by",
+                    "html": "<p>BASI674-00133 has the correct OPC identity, though its explanation mislabels the Indian IS 269 reference. </p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00133",
+                            "set": 1,
+                            "question": 3
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Do not merge brick grades:</strong> first-class keys use 15%, while both '13c' items key 20%; the malformed class must not silently become 13.5. One first-class explanation's loose 15–20% range does not resolve the discrepancy. The 10.5 and 3.5 MPa figures likewise are not a verified common NS/IS classification. Knife and fingernail scratch options also overlap.</p>",
-                    sources: [
-                        { id: "BASI674-00017", set: 3, question: 4 },
-                        { id: "BASI674-00020", set: 3, question: 7 },
-                        { id: "BASI674-00096", set: 9, question: 4 },
-                        { id: "BASI674-00129", set: 11, question: 10 },
-                        { id: "BASI674-00135", set: 12, question: 2 },
-                        { id: "BASI674-00136", set: 12, question: 3 },
-                        { id: "BASI674-00137", set: 12, question: 4 }
+                    "id": "check-basi674-00017",
+                    "status": "review",
+                    "prompt": "Compressive strength of 1st class brick",
+                    "html": "<p><strong>Classification needed.</strong> The bank uses greater than 10.5 N/mm<sup>2</sup> for first-class brick. This is not a verified common NS/IS class boundary; use the specified class and test procedure.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00017",
+                            "set": 3,
+                            "question": 4
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Incorrect consistency record:</strong> BASI674-00140 keys 0.78 while its explanation rejects that answer. Standard consistency requires the Vicat endpoint and a measured water/cement percentage. The 0.78 multiplier belongs to preparation of Le Chatelier soundness paste under the cited IS method, not a fixed normal-consistency ratio.</p>",
-                    sources: [
-                        { id: "BASI674-00140", set: 12, question: 7 }
+                    "id": "check-basi674-00020",
+                    "status": "review",
+                    "prompt": "For 1st class bricks, the water absorption should not be more than",
+                    "html": "<p><strong>Teaching value, not a universal specification.</strong> The first-class key uses 15% water absorption. A separate malformed brick class or an explanation quoting 15-20% does not establish the governing test limit.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00020",
+                            "set": 3,
+                            "question": 7
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Ambiguous sand records:</strong> BASI674-00157's dry/saturated comparison conflicts with its explanation and omits packing conditions. SSD means saturated internal pores without a surface film, not water filling bulk voids. TRAN808-00076's 'less than sand' and 'negligible' can both describe coarse aggregate. TRAN808-00141's 'reaction with water' must not imply a chemical mechanism.</p>",
-                    sources: [
-                        { id: "BASI674-00157", set: 13, question: 10 },
-                        { id: "TRAN808-00076", set: 8, question: 89 },
-                        { id: "TRAN808-00141", set: 14, question: 85 }
+                    "id": "check-soil136-00033",
+                    "status": "review",
+                    "prompt": "What is the meaning of bulking of sand?",
+                    "html": "<p><strong>Mechanism:</strong> moisture films can separate sand particles and increase its apparent bulk volume. This is a packing and surface-tension effect, not a chemical reaction or an increase in sand-solid volume.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00033",
+                            "set": 4,
+                            "question": 41
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Variable bulking peaks:</strong> the explanations variously quote 4–6%, 5–8% and 5–10% moisture. None establishes a material-independent peak or universal 40% bulking.</p>",
-                    sources: [
-                        { id: "BASI674-00152", set: 13, question: 5 },
-                        { id: "BASI674-00153", set: 13, question: 6 },
-                        { id: "BASI674-00156", set: 13, question: 9 },
-                        { id: "BASI674-00428", set: 33, question: 8 },
-                        { id: "SOIL136-00033", set: 4, question: 41 },
-                        { id: "SOIL136-00087", set: 8, question: 42 }
+                    "id": "check-soil136-00087",
+                    "status": "review",
+                    "prompt": "What is the meaning of bukling of sand?",
+                    "html": "<p><strong>Mechanism:</strong> moisture films can separate sand particles and increase its apparent bulk volume. This is a packing and surface-tension effect, not a chemical reaction or an increase in sand-solid volume.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00087",
+                            "set": 8,
+                            "question": 42
+                        }
+                    ]
+                },
+                {
+                    "id": "check-tran808-00076",
+                    "status": "review",
+                    "prompt": "Bulking of coarse aggregate is",
+                    "html": "<p><strong>Overlapping choices.</strong> Coarse-aggregate bulking is generally much smaller than sand bulking and often treated as negligible. “Less than sand” and “negligible” therefore do not form mutually exclusive answers.</p>",
+                    "sources": [
+                        {
+                            "id": "TRAN808-00076",
+                            "set": 8,
+                            "question": 89
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00096",
+                    "status": "review",
+                    "prompt": "Maximum % of water absorption of first class brick is",
+                    "html": "<p><strong>Teaching value, not a universal specification.</strong> The first-class key uses 15% water absorption. A separate malformed brick class or an explanation quoting 15-20% does not establish the governing test limit.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00096",
+                            "set": 9,
+                            "question": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00125",
+                    "status": "corrected",
+                    "prompt": "Which standard in Nepal provides specification for burnt clay bricks in Nepal?",
+                    "html": "<p><strong>Corrected: NS 1:2035, option B.</strong> The NBSM catalogue identifies NS 1 as Brick; NS 49:2041 is Ordinary Portland Cement.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00125",
+                            "set": 11,
+                            "question": 6
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00129",
+                    "status": "review",
+                    "prompt": "How is the hardness of brick tested?",
+                    "html": "<p>One first-class explanation's loose 15–20% range does not resolve the discrepancy. </p><p>The 10.5 and 3.5 MPa figures likewise are not a verified common NS/IS classification. </p><p>Knife and fingernail scratch options also overlap.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00129",
+                            "set": 11,
+                            "question": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00135",
+                    "status": "review",
+                    "prompt": "Standard values for water absorption for 13c class brick(IS)",
+                    "html": "<p><strong>Brick class is unclear.</strong> The printed class “13c” is not defined. Its keyed 20% cannot be presented as a verified IS or NS limit without the exact classification and edition, and must not silently become class 13.5.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00135",
+                            "set": 12,
+                            "question": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00136",
+                    "status": "review",
+                    "prompt": "Standard values for water absorption for 13c class brick(NS)",
+                    "html": "<p><strong>Brick class is unclear.</strong> The printed class “13c” is not defined. Its keyed 20% cannot be presented as a verified IS or NS limit without the exact classification and edition, and must not silently become class 13.5.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00136",
+                            "set": 12,
+                            "question": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00137",
+                    "status": "review",
+                    "prompt": "Minimum compressive strength of brick used for masonry work according to Nepal Standard",
+                    "html": "<p><strong>Standard clause not established.</strong> The keyed 3.5 N/mm<sup>2</sup> needs the applicable brick class, test method and NS edition. A general minimum should not be inferred from a conflicting first-class teaching value.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00137",
+                            "set": 12,
+                            "question": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00140",
+                    "status": "review",
+                    "prompt": "What is the amount of water required to give the paste normal consistency for consistency test?",
+                    "html": "<p><strong>Incorrect consistency record:</strong> BASI674-00140 keys 0.78 while its explanation rejects that answer. Standard consistency requires the Vicat endpoint and a measured water/cement percentage. The 0.78 multiplier belongs to preparation of Le Chatelier soundness paste under the cited IS method, not a fixed normal-consistency ratio.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00140",
+                            "set": 12,
+                            "question": 7
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00152",
+                    "status": "review",
+                    "prompt": "What is the percentage of bulk if fine aggregates manufactured by extremely fine sand?",
+                    "html": "<p><strong>No fixed bulking percentage.</strong> Bulking depends on grading, particle shape, packing and moisture. The keyed 40% is an illustrative bank value, not a consequence of fine sand or a stated moisture interval alone.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00152",
+                            "set": 13,
+                            "question": 5
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00153",
+                    "status": "review",
+                    "prompt": "Bulking ______ with increase in moisture.",
+                    "html": "<p><strong>The complete trend matters.</strong> Bulking first increases as moisture films separate particles, then decreases toward saturation. A choice saying only “first increase” does not express the full relationship.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00153",
+                            "set": 13,
+                            "question": 6
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00156",
+                    "status": "review",
+                    "prompt": "If the moisture content of 5 to 10% by weight, then the bulking of sand is increased by ______",
+                    "html": "<p><strong>No fixed bulking percentage.</strong> Bulking depends on grading, particle shape, packing and moisture. The keyed 40% is an illustrative bank value, not a consequence of fine sand or a stated moisture interval alone.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00156",
+                            "set": 13,
+                            "question": 9
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00157",
+                    "status": "review",
+                    "prompt": "When sand is fully dry then it’s volume is ______ to sand in saturated condition.",
+                    "html": "<p><strong>Ambiguous sand records:</strong> BASI674-00157's dry/saturated comparison conflicts with its explanation and omits packing conditions. </p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00157",
+                            "set": 13,
+                            "question": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "check-tran808-00141",
+                    "status": "review",
+                    "prompt": "The expansion of aggregate on reaction with water is called ______.",
+                    "html": "<p>SSD means saturated internal pores without a surface film, not water filling bulk voids. </p><p>TRAN808-00141's 'reaction with water' must not imply a chemical mechanism.</p>",
+                    "sources": [
+                        {
+                            "id": "TRAN808-00141",
+                            "set": 14,
+                            "question": 85
+                        }
+                    ]
+                },
+                {
+                    "id": "check-basi674-00428",
+                    "status": "review",
+                    "prompt": "Which of the following describes the 'bulking of sand' phenomenon?",
+                    "html": "<p><strong>Mechanism:</strong> moisture films can separate sand particles and increase its apparent bulk volume. This is a packing and surface-tension effect, not a chemical reaction or an increase in sand-solid volume.</p>",
+                    "sources": [
+                        {
+                            "id": "BASI674-00428",
+                            "set": 33,
+                            "question": 8
+                        }
                     ]
                 }
             ]

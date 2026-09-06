@@ -1331,14 +1331,14 @@ const CIVIL_MODEL_5 = {
                 {
                     id: "cm5q095",
                     src: "WATE813-00035",
-                    text: "For a given discharge, efficiency of sedimentation tank can be increased by",
+                    text: "For a fixed discharge under the ideal discrete-settling model, particle-removal efficiency can be increased by",
                     options: [
-                        { key: "a", text: "Increasing depth of basin" },
-                        { key: "b", text: "Increasing depth" },
-                        { key: "c", text: "Decreasing area of basin" }
+                        { key: "a", text: "Increasing depth at the same plan area" },
+                        { key: "b", text: "Decreasing plan area at the same depth" },
+                        { key: "c", text: "Increasing plan area at the same depth" }
                     ],
                     answer: "c",
-                    explanation: "Settling efficiency depends on the surface loading, the discharge divided by the plan area, so a larger plan area improves removal. Depth affects only the detention time, which is why shallow tanks with a large area, and tube settlers, work so well."
+                    explanation: "Surface overflow rate is \\(v_o = \\dfrac{Q}{A_{plan}}\\). Increasing plan area at fixed discharge lowers this rate and increases capture of slower discrete particles. In the ideal model, increasing depth alone increases settling distance and detention proportionally, so it does not improve removal. Real depth still matters for hydraulics and sludge storage. The former decreasing-area option and duplicate depth choices have been corrected."
                 },
                 {
                     id: "cm5q096",

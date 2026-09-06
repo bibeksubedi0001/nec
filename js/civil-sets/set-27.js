@@ -1279,12 +1279,12 @@ const CIVIL_MODEL_27 = {
                     text: "What is the settling velocity of the particle if its diameter is 2×10⁻³ cm. Given G = 2.65, viscosity ν = 10⁻² cm²/sec",
                     options: [
                         { key: "a", text: "0.01 cm/sec" },
-                        { key: "b", text: "0.36 cm/sec" },
+                        { key: "b", text: "0.03597 cm/sec" },
                         { key: "c", text: "0.13 cm/sec" },
                         { key: "d", text: "0.24 cm/sec" }
                     ],
                     answer: "b",
-                    explanation: "Using Stokes' Law: Vs = g(G-1)d² / (18ν). g=981 cm/s², G=2.65, d=0.002 cm, ν=0.01 cm²/s. Vs = 981*(1.65)*(0.002)^2 / (18*0.01) ≈ 0.036 cm/s. The closest option is 0.36 cm/sec (likely a misprint in options or calculation, but it is the intended answer based on the input)."
+                    explanation: "Stokes' law gives \\(v_s=\\dfrac{g(G-1)d^2}{18\\nu}\\). With the given values, \\(v_s=\\dfrac{981(1.65)(0.002)^2}{18(0.01)}\\), so \\(v_s=0.03597\\,\\mathrm{cm/s}\\). The particle Reynolds number is \\(Re_p=\\dfrac{v_s d}{\\nu}=0.007194\\), consistent with creeping flow. The former 0.36 cm/s option was a tenfold error and has been corrected."
                 },
                 {
                     id: "cm27q092",

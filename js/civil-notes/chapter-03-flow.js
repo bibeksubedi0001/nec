@@ -11,11 +11,8 @@
                 {
                     id: "flow-description-and-classification",
                     title: "Flow descriptions and classifications",
-                    html: "<p><strong>Eulerian</strong> description observes fixed locations; <strong>Lagrangian</strong> description follows particles. Both are valid. Section-averaged pipe variables give a one-dimensional approximation, not a uniform actual profile.</p>" +
-                        "<table><thead><tr><th scope='col'>Classification</th><th scope='col'>Criterion</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Steady</th><td>Properties at each fixed point are time-independent.</td></tr>" +
-                        "<tr><th scope='row'>Uniform</th><td>Velocity is spatially constant at that instant.</td></tr></tbody></table>" +
-                        "<p>These are independent. A steady incompressible nozzle has spatially changing speed. Constant pipe area fixes section-mean speed for steady incompressible flow without withdrawals; area alone guarantees neither steadiness nor a uniform profile.</p>",
+                    html: "<p><strong>Eulerian</strong> description observes fixed locations; <strong>Lagrangian</strong> description follows particles. Both are valid. Section-averaged pipe variables give a one-dimensional approximation, not a uniform actual profile.</p><table><thead><tr><th scope='col'>Classification</th><th scope='col'>Criterion</th></tr></thead><tbody><tr><th scope='row'>Steady</th><td>Properties at each fixed point are time-independent.</td></tr><tr><th scope='row'>Uniform</th><td>Velocity is spatially constant at that instant.</td></tr></tbody></table>",
+                    moreHtml: "<p>These are independent. A steady incompressible nozzle has spatially changing speed. Constant pipe area fixes section-mean speed for steady incompressible flow without withdrawals; area alone guarantees neither steadiness nor a uniform profile.</p>",
                     sources: [
                         { id: "WATE701-00325", set: 28, question: 60 },
                         { id: "WATE701-00326", set: 29, question: 47 },
@@ -27,8 +24,8 @@
                 {
                     id: "streamlines-pathlines-and-streaklines",
                     title: "Streamlines, pathlines and streaklines",
-                    html: "<p>A <strong>streamline</strong> is instantaneously tangent to velocity; a <strong>pathline</strong> records one particle; a <strong>streakline</strong> joins particles previously passing a fixed point, as with chimney smoke. Use coincidence of all three only under a stated steady-flow assumption. Streamlines cannot cross at regular, nonstagnant points.</p>" +
-                        "<p>Unchanging streamline geometry can conceal changing speeds. Parallel lines can have unequal speeds: neither observation alone proves the bank's proposed classification.</p>",
+                    html: "<p>A <strong>streamline</strong> is instantaneously tangent to velocity; a <strong>pathline</strong> records one particle; a <strong>streakline</strong> joins particles previously passing a fixed point, as with chimney smoke. </p>",
+                    moreHtml: "<p>Use coincidence of all three only under a stated steady-flow assumption. Streamlines cannot cross at regular, nonstagnant points.</p><p>Unchanging streamline geometry can conceal changing speeds. Parallel lines can have unequal speeds: neither observation alone proves the bank's proposed classification.</p>",
                     sources: [
                         { id: "WATE701-00319", set: 28, question: 54 },
                         { id: "WATE701-00320", set: 28, question: 55 },
@@ -40,8 +37,8 @@
                 {
                     id: "rotation-potentials-and-stream-functions",
                     title: "Rotation, potential and stream function",
-                    html: "<p>For two-dimensional incompressible flow, choose <strong>u = ∂ψ/∂y, v = −∂ψ/∂x</strong>. Constant ψ traces streamlines; |Δψ| gives discharge per unit width through a flow channel between them. Equal channel discharges require equal Δψ.</p>" +
-                        "<p>Irrotational flow admits a local potential with <strong>u = ∂φ/∂x, v = ∂φ/∂y</strong>, globally single-valued on a simply connected region. Opposite sign conventions exist; do not mix them. Potential contours cross streamlines orthogonally away from stagnation. A stream function permits rotation; boundary-layer shear commonly produces it, whereas outer irrotationality is an assumption.</p>",
+                    html: "<p>For two-dimensional incompressible flow, choose <strong>u = ∂ψ/∂y, v = −∂ψ/∂x</strong>. Constant ψ traces streamlines; |Δψ| gives discharge per unit width through a flow channel between them. Equal channel discharges require equal Δψ.</p><p>Irrotational flow admits a local potential with <strong>u = ∂φ/∂x, v = ∂φ/∂y</strong>, globally single-valued on a simply connected region. Opposite sign conventions exist; do not mix them. </p>",
+                    moreHtml: "<p>Potential contours cross streamlines orthogonally away from stagnation. A stream function permits rotation; boundary-layer shear commonly produces it, whereas outer irrotationality is an assumption.</p>",
                     sources: [
                         { id: "WATE701-00031", set: 4, question: 54 },
                         { id: "WATE701-00032", set: 4, question: 55 },
@@ -82,8 +79,8 @@
                 {
                     id: "acceleration-and-governing-forces",
                     title: "Acceleration, Euler and Navier-Stokes",
-                    html: "<p><em>Syllabus extension:</em> in two dimensions, <strong>a<sub>x</sub> = ∂u/∂t + u∂u/∂x + v∂u/∂y</strong>. The first term is local acceleration; the others are convective. Thus steady nozzle flow can accelerate. Here t is time and u, v are velocity components.</p>" +
-                        "<p>Navier-Stokes includes pressure, gravity and viscous stresses. Euler's momentum equation neglects viscosity, not acceleration, and need not be steady. Surface tension normally enters interfacial boundary conditions.</p>",
+                    html: "<p><em>Syllabus extension:</em> in two dimensions, <strong>a<sub>x</sub> = ∂u/∂t + u∂u/∂x + v∂u/∂y</strong>. The first term is local acceleration; the others are convective. </p>",
+                    moreHtml: "<p>Thus steady nozzle flow can accelerate. Here t is time and u, v are velocity components.</p><p>Navier-Stokes includes pressure, gravity and viscous stresses. Euler's momentum equation neglects viscosity, not acceleration, and need not be steady. Surface tension normally enters interfacial boundary conditions.</p>",
                     sources: [
                         { id: "WATE701-00315", set: 28, question: 50 },
                         { id: "WATE701-00316", set: 28, question: 51 }
@@ -107,9 +104,8 @@
                 {
                     id: "momentum-jets-and-bends",
                     title: "Momentum, jets and fitting reaction",
-                    html: "<p>For steady flow, <strong>ΣF<sub>external,on fluid</sub> = ρQ(β<sub>2</sub><strong>v</strong><sub>2</sub> − β<sub>1</sub><strong>v</strong><sub>1</sub>)</strong>. Vectors preserve direction; β corrects momentum flux (1 for uniform profiles). Include pressure, weight and wall forces. Fitting reaction reverses the wall force, not automatically the entire resultant.</p>" +
-                        "<p>A normal jet spreads along a stationary plate, giving <strong>F = ρA<sub>j</sub>V<sup>2</sup></strong>. Retreat along the jet at 0 ≤ U &lt; V gives intercepted mass rate ρA<sub>j</sub>(V − U), hence F = ρA<sub>j</sub>(V − U)<sup>2</sup>; A<sub>j</sub> is jet area.</p>" +
-                        "<p><strong>Bank bend, β = 1:</strong> water (ρ = 1000 kg/m<sup>3</sup>) at 1 m/s in diameter 0.10 m gives ρQV = 7.854 N. A right-angle turn gives <strong>√2 × 7.854 = 11.11 N = 5π/√2 N</strong>, neglecting pressure forces and weight.</p>",
+                    html: "<p>For steady flow, <strong>ΣF<sub>external,on fluid</sub> = ρQ(β<sub>2</sub><strong>v</strong><sub>2</sub> − β<sub>1</sub><strong>v</strong><sub>1</sub>)</strong>. Vectors preserve direction; β corrects momentum flux (1 for uniform profiles). </p><p>A normal jet spreads along a stationary plate, giving <strong>F = ρA<sub>j</sub>V<sup>2</sup></strong>. Retreat along the jet at 0 ≤ U &lt; V gives intercepted mass rate ρA<sub>j</sub>(V − U), hence F = ρA<sub>j</sub>(V − U)<sup>2</sup>; A<sub>j</sub> is jet area.</p><p><strong>Bank bend, β = 1:</strong> water (ρ = 1000 kg/m<sup>3</sup>) at 1 m/s in diameter 0.10 m gives ρQV = 7.854 N. A right-angle turn gives <strong>√2 × 7.854 = 11.11 N = 5π/√2 N</strong>, neglecting pressure forces and weight.</p>",
+                    moreHtml: "<p>Include pressure, weight and wall forces. Fitting reaction reverses the wall force, not automatically the entire resultant.</p>",
                     sources: [
                         { id: "WATE701-00093", set: 9, question: 55 },
                         { id: "WATE701-00095", set: 9, question: 57 },
@@ -120,7 +116,8 @@
                 {
                     id: "reynolds-number-and-regime",
                     title: "Reynolds number and flow regime",
-                    html: "<p><strong>Re = ρVD/μ = VD/ν</strong>, using mean speed, pipe diameter D, dynamic viscosity μ and kinematic viscosity ν. For ordinary full circular-pipe flow, the bank uses laminar below about 2000, transition around 2000–4000 and turbulent above 4000. Thus 100 and 1000 are laminar, unlike 10000. At fixed fluid and geometry, lower speed lowers Re. These thresholds do not transfer unchanged to open channels or boundary layers.</p>",
+                    html: "<p><strong>Re = ρVD/μ = VD/ν</strong>, using mean speed, pipe diameter D, dynamic viscosity μ and kinematic viscosity ν. For ordinary full circular-pipe flow, the bank uses laminar below about 2000, transition around 2000–4000 and turbulent above 4000. Thus 100 and 1000 are laminar, unlike 10000. </p>",
+                    moreHtml: "<p>At fixed fluid and geometry, lower speed lowers Re. These thresholds do not transfer unchanged to open channels or boundary layers.</p>",
                     sources: [
                         { id: "WATE701-00331", set: 29, question: 52 },
                         { id: "WATE701-00332", set: 29, question: 53 }
@@ -147,8 +144,8 @@
                 {
                     id: "notches-weirs-and-channel-measurement",
                     title: "Notches, weirs and channel measurement",
-                    html: "<p><em>Measurement extension:</em> free rectangular-notch discharge is <strong>Q = (2/3)C<sub>d</sub>b√(2g)H<sup>3/2</sup></strong>; a triangular notch gives Q = (8/15)C<sub>d</sub>tan(θ/2)√(2g)H<sup>5/2</sup>. Here b is width, θ notch angle and H upstream head above the crest; neglect approach velocity and require free, aerated discharge.</p>" +
-                        "<p>An ogee also follows H<sup>3/2</sup> with fixed coefficient and geometry; efficiency depends on operating head. A venturi flume infers discharge from calibrated depth. A current meter instead supplies velocities for summing area × mean velocity across channel subsections.</p>",
+                    html: "<p><em>Measurement extension:</em> free rectangular-notch discharge is <strong>Q = (2/3)C<sub>d</sub>b√(2g)H<sup>3/2</sup></strong>; a triangular notch gives Q = (8/15)C<sub>d</sub>tan(θ/2)√(2g)H<sup>5/2</sup>. </p><p>An ogee also follows H<sup>3/2</sup> with fixed coefficient and geometry; efficiency depends on operating head. A venturi flume infers discharge from calibrated depth. A current meter instead supplies velocities for summing area × mean velocity across channel subsections.</p>",
+                    moreHtml: "<p>Here b is width, θ notch angle and H upstream head above the crest; neglect approach velocity and require free, aerated discharge.</p>",
                     sources: [
                         { id: "WATE701-00066", set: 7, question: 53 },
                         { id: "WATE701-00067", set: 7, question: 54 },
@@ -171,69 +168,328 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Momentum conflict:</strong> the moving-plate exclusion is wrong; even venturimeters obey momentum conservation. The bend omits pressure data. In the jet option, p must mean density ρ, not pressure.</p>",
-                    sources: [
-                        { id: "WATE701-00095", set: 9, question: 57 },
-                        { id: "WATE701-00099", set: 10, question: 50 },
-                        { id: "WATE701-00100", set: 10, question: 51 }
+                    "id": "check-wate701-00014",
+                    "status": "review",
+                    "prompt": "If the jar is placed 1m above the floor and tap with cross sectional area .1m2 at the bottom of jar is open, then water jet discharges .02m3/s water and hits floor at 1.8m distance. If the height of the jar is 1 m and fully filled, what would be the coefficient of velocity?",
+                    "html": "<p><strong>Jar section ambiguity:</strong> Q/A = 0.20 m/s versus trajectory speed 3.99 m/s. These cannot describe one uniform exit section; reconciliation requires C<sub>c</sub> ≈ 0.050. Printed values remain unchanged.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00014",
+                            "set": 3,
+                            "question": 49
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Jar section ambiguity:</strong> Q/A = 0.20 m/s versus trajectory speed 3.99 m/s. These cannot describe one uniform exit section; reconciliation requires C<sub>c</sub> ≈ 0.050. Printed values remain unchanged.</p>",
-                    sources: [{ id: "WATE701-00014", set: 3, question: 49 }]
-                },
-                {
-                    html: "<p><strong>Missing diameters:</strong> the keyed V<sub>1</sub> + V<sub>2</sub>/4 requires d<sub>1</sub> = 2d, d<sub>2</sub> = d, neither supplied. Equal d-inlets instead give (V<sub>1</sub> + V<sub>2</sub>)/4.</p>",
-                    sources: [{ id: "WATE701-00309", set: 27, question: 53 }]
-                },
-                {
-                    html: "<p><strong>Polynomial conflicts:</strong> the first worked field also needs b = 0, absent from its key. The last requires 2a + b = 0, contradicting the key's claimed independence from constants.</p>",
-                    sources: [
-                        { id: "WATE701-00311", set: 27, question: 55 },
-                        { id: "WATE701-00314", set: 28, question: 49 }
+                    "id": "check-wate701-00048",
+                    "status": "review",
+                    "prompt": "Water is flowing down steadily in a constant cross sectional pipe. According to Bernoulli principle",
+                    "html": "<p><strong>Pressure rise down a pipe depends on energy losses.</strong> At unchanged speed, the elevation-head decrease can raise pressure head, but friction consumes part or all of that change. The Bernoulli shortcut needs its loss assumption.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00048",
+                            "set": 5,
+                            "question": 59
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Bernoulli wording:</strong> continuous does not imply steady, inviscid or incompressible. Streamline constants <em>may</em> differ, not necessarily. Downward pressure rise also depends on losses.</p>",
-                    sources: [
-                        { id: "WATE701-00317", set: 28, question: 52 },
-                        { id: "WATE701-00098", set: 10, question: 49 },
-                        { id: "WATE701-00048", set: 5, question: 59 }
+                    "id": "check-wate701-00066",
+                    "status": "review",
+                    "prompt": "The head loss is minimum in",
+                    "html": "<p><strong>Instrument qualifications:</strong> ogee loss ranking and 'most common' flume are context-dependent. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00066",
+                            "set": 7,
+                            "question": 53
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Geometric inference:</strong> instantaneous velocity is tangent to its particle's pathline too, so the tangency choices overlap. Fixed or parallel streamlines alone prove neither steady nor uniform speed; nonintersection excludes singular/stagnation points.</p>",
-                    sources: [
-                        { id: "WATE701-00319", set: 28, question: 54 },
-                        { id: "WATE701-00320", set: 28, question: 55 },
-                        { id: "WATE701-00321", set: 28, question: 56 },
-                        { id: "WATE701-00322", set: 28, question: 57 }
+                    "id": "check-wate701-00094",
+                    "status": "review",
+                    "prompt": "What is the incompressibility condition in Navier-Stokes equation?",
+                    "html": "<p><strong>Use divergence, not the velocity-gradient tensor.</strong> For an incompressible velocity field, div(v) = 0. Density belongs in the general mass-conservation equation; pressure is not a replacement for it.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00094",
+                            "set": 9,
+                            "question": 56
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Missing assumptions:</strong> Eulerian is common, not exclusive. Constant area alone cannot establish uniformity; nozzle 'never' answers require nonzero steady incompressible flow through changing area.</p>",
-                    sources: [
-                        { id: "WATE701-00325", set: 28, question: 60 },
-                        { id: "WATE701-00326", set: 29, question: 47 },
-                        { id: "WATE701-00327", set: 29, question: 48 },
-                        { id: "WATE701-00330", set: 29, question: 51 }
+                    "id": "check-wate701-00095",
+                    "status": "review",
+                    "prompt": "Momentum principle is not applicable to",
+                    "html": "<p><strong>Momentum conflict:</strong> the moving-plate exclusion is wrong; even venturimeters obey momentum conservation. </p><p>The bend omits pressure data. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00095",
+                            "set": 9,
+                            "question": 57
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Instrument qualifications:</strong> ogee loss ranking and 'most common' flume are context-dependent. A rotameter alone is not an automatic controller; sensing and actuation are additional functions.</p>",
-                    sources: [
-                        { id: "WATE701-00066", set: 7, question: 53 },
-                        { id: "WATE701-00263", set: 23, question: 55 },
-                        { id: "WATE701-00272", set: 24, question: 55 }
+                    "id": "check-wate701-00097",
+                    "status": "review",
+                    "prompt": "The equation of continuity for a fluid that is compressible and flow that is steady is:",
+                    "html": "<p><strong>Notation and scope:</strong> incompressibility uses divergence ∇·<strong>v</strong>, not the velocity gradient; compressible continuity uses density, not pressure. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00097",
+                            "set": 10,
+                            "question": 48
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Notation and scope:</strong> incompressibility uses divergence ∇·<strong>v</strong>, not the velocity gradient; compressible continuity uses density, not pressure. Reynolds thresholds assume pipe flow; the three-flow wording supplies only two velocities.</p>",
-                    sources: [
-                        { id: "WATE701-00094", set: 9, question: 56 },
-                        { id: "WATE701-00097", set: 10, question: 48 },
-                        { id: "WATE701-00331", set: 29, question: 52 },
-                        { id: "WATE701-00332", set: 29, question: 53 }
+                    "id": "check-wate701-00098",
+                    "status": "review",
+                    "prompt": "The bernoulli eqn states that:",
+                    "html": "<p><strong>The Bernoulli constant is streamline-specific under the usual inviscid steady assumptions.</strong> Constants may differ between streamlines but need not do so; a suitable irrotational field can share one constant.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00098",
+                            "set": 10,
+                            "question": 49
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00099",
+                    "status": "review",
+                    "prompt": "Water is flowing at 1 m/sec through a pipe of 10cm diameter with a right-angle bend. The force in Newton exerted on the bend by water is",
+                    "html": "<p><strong>Pressure forces are missing.</strong> The momentum-flux change can be calculated from flow and bend angle, but the full force on the bend also includes inlet/outlet pressure and any weight contribution. Do not identify one momentum term with the total support force.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00099",
+                            "set": 10,
+                            "question": 50
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00100",
+                    "status": "review",
+                    "prompt": "The force exerted by a jet of water on a stationary vertical plate in the direction of jet is",
+                    "html": "<p>The bend omits pressure data. </p><p>In the jet option, p must mean density ρ, not pressure.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00100",
+                            "set": 10,
+                            "question": 51
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00263",
+                    "status": "review",
+                    "prompt": "The most common device for measuring discharge through the channels is",
+                    "html": "<p><strong>Instrument qualifications:</strong> ogee loss ranking and 'most common' flume are context-dependent. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00263",
+                            "set": 23,
+                            "question": 55
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00272",
+                    "status": "review",
+                    "prompt": "What is the instrument used for the automatic control scheme during the fluid flow?",
+                    "html": "<p>A rotameter alone is not an automatic controller; sensing and actuation are additional functions.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00272",
+                            "set": 24,
+                            "question": 55
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00309",
+                    "status": "review",
+                    "prompt": "Two pipes of diameters \\( d_1 \\) and \\( d_2 \\) converge to form a pipe of diameter 2d. If the liquid flows with a velocity of \\( v_1 \\) and \\( v_2 \\) in the two pipes, what will be the flow velocity in the third pipe?",
+                    "html": "<p><strong>Missing diameters:</strong> the keyed V<sub>1</sub> + V<sub>2</sub>/4 requires d<sub>1</sub> = 2d, d<sub>2</sub> = d, neither supplied. Equal d-inlets instead give (V<sub>1</sub> + V<sub>2</sub>)/4.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00309",
+                            "set": 27,
+                            "question": 53
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00311",
+                    "status": "review",
+                    "prompt": "In a two dimensional flow, the component of the velocity along the X-axis and the Y-axis are \\( u = ax^2 + bxy + cy^2 \\) and \\( v = cxy \\). What should be the condition for the flow field to be continuous?",
+                    "html": "<p><strong>Continuity must hold at every point.</strong> For the printed field, divergence is (2a + c)x + by. Steady incompressible continuity therefore requires 2a + c = 0 and b = 0; omitting the latter is incomplete.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00311",
+                            "set": 27,
+                            "question": 55
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00314",
+                    "status": "review",
+                    "prompt": "In a two dimensional flow, the component of the velocity along the X-axis and the Y-axis are \\( u = ax^2 + bxy \\) and \\( v = bxy + ay^2 \\). The condition for the flow field to be continuous is:",
+                    "html": "<p><strong>Polynomial conflicts:</strong> the first worked field also needs b = 0, absent from its key. </p><p>The last requires 2a + b = 0, contradicting the key's claimed independence from constants.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00314",
+                            "set": 28,
+                            "question": 49
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00317",
+                    "status": "review",
+                    "prompt": "The Bernoulli’s equation in fluid dynamics is valid for ______.",
+                    "html": "<p><strong>Bernoulli wording:</strong> continuous does not imply steady, inviscid or incompressible. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00317",
+                            "set": 28,
+                            "question": 52
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00319",
+                    "status": "review",
+                    "prompt": "The velocity of a point in a flow is",
+                    "html": "<p><strong>Geometric inference:</strong> instantaneous velocity is tangent to its particle's pathline too, so the tangency choices overlap. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00319",
+                            "set": 28,
+                            "question": 54
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00320",
+                    "status": "review",
+                    "prompt": "Which of the following is correct?",
+                    "html": "<p><strong>Geometry alone does not fix the velocity field.</strong> Instantaneous velocity is tangent to a pathline as well as to the local streamline. Parallel or fixed streamlines do not by themselves prove uniform speed or steady flow.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00320",
+                            "set": 28,
+                            "question": 55
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00321",
+                    "status": "review",
+                    "prompt": "The streamlines of the particles in a flow are recorded. If the streamline distribution remain the same even after sometime, what type of flow can be?",
+                    "html": "<p>Fixed or parallel streamlines alone prove neither steady nor uniform speed; nonintersection excludes singular/stagnation points.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00321",
+                            "set": 28,
+                            "question": 56
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00322",
+                    "status": "review",
+                    "prompt": "If the streamlines of the particles in a flow are parallel to each other, what type of flow can it be?",
+                    "html": "<p>Fixed or parallel streamlines alone prove neither steady nor uniform speed; nonintersection excludes singular/stagnation points.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00322",
+                            "set": 28,
+                            "question": 57
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00325",
+                    "status": "review",
+                    "prompt": "Which method is used exclusively in fluid mechanics?",
+                    "html": "<p><strong>Eulerian description is common, not exclusive.</strong> Fluid motion may also be described by following particles in a Lagrangian formulation. The method of description is not itself a physical flow regime.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00325",
+                            "set": 28,
+                            "question": 60
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00326",
+                    "status": "review",
+                    "prompt": "What type of flow can be taken for granted in a pipe of a uniform cross-section?",
+                    "html": "<p><strong>Constant pipe area is insufficient.</strong> A uniform cross-section does not exclude unsteady flow, entrance effects or a changing velocity profile. Additional flow and boundary assumptions are needed to conclude uniformity.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00326",
+                            "set": 29,
+                            "question": 47
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00327",
+                    "status": "review",
+                    "prompt": "Can the flow inside a nozzle be steady and uniform?",
+                    "html": "<p>Constant area alone cannot establish uniformity; nozzle 'never' answers require nonzero steady incompressible flow through changing area.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00327",
+                            "set": 29,
+                            "question": 48
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00330",
+                    "status": "review",
+                    "prompt": "The velocity of entrance and exit through a nozzle remains the same. Is this ever possible?",
+                    "html": "<p>Constant area alone cannot establish uniformity; nozzle 'never' answers require nonzero steady incompressible flow through changing area.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00330",
+                            "set": 29,
+                            "question": 51
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00331",
+                    "status": "review",
+                    "prompt": "Three flows named as 1, 2 and 3 are observed. The Reynold’s number for the three are 100, 1000 and 10000. Which of the flows will be laminar?",
+                    "html": "<p>Reynolds thresholds assume pipe flow; the three-flow wording supplies only two velocities.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00331",
+                            "set": 29,
+                            "question": 52
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00332",
+                    "status": "review",
+                    "prompt": "Three flows named as 1, 2 and 3 are observed. The flow velocities are v1 and v2. If all other geometrical factors remain the same along with the fluid considered, flow is more likely to be laminar?",
+                    "html": "<p>Reynolds thresholds assume pipe flow; the three-flow wording supplies only two velocities.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00332",
+                            "set": 29,
+                            "question": 53
+                        }
                     ]
                 }
             ]
@@ -245,8 +501,8 @@
                 {
                     id: "pipe-regime-and-hydraulic-diameter",
                     title: "Flow regime and the correct diameter",
-                    html: "<p>For a full circular pipe, V = Q/A and <strong>Re = VD/ν</strong>, with kinematic viscosity ν. Conventional laminar/transition/turbulent bands are approximately below 2000–2300, up to 4000, and above 4000; inlet disturbances matter.</p>" +
-                        "<p>For noncircular conduits, <strong>D<sub>h</sub> = 4A/P<sub>w</sub></strong>, where P<sub>w</sub> is wetted perimeter. The bank's full 10 m × 6 m duct gives A = 60 m<sup>2</sup>, P<sub>w</sub> = 32 m and <strong>D<sub>h</sub> = 7.5 m</strong>. An open free surface is not wetted wall; neither its perimeter nor its transition criterion is interchangeable with a full duct's.</p>",
+                    html: "<p>For a full circular pipe, V = Q/A and <strong>Re = VD/ν</strong>, with kinematic viscosity ν. Conventional laminar/transition/turbulent bands are approximately below 2000–2300, up to 4000, and above 4000; inlet disturbances matter.</p><p>For noncircular conduits, <strong>D<sub>h</sub> = 4A/P<sub>w</sub></strong>, where P<sub>w</sub> is wetted perimeter. The bank's full 10 m × 6 m duct gives A = 60 m<sup>2</sup>, P<sub>w</sub> = 32 m and <strong>D<sub>h</sub> = 7.5 m</strong>. </p>",
+                    moreHtml: "<p>An open free surface is not wetted wall; neither its perimeter nor its transition criterion is interchangeable with a full duct's.</p>",
                     sources: [{ id: "WATE701-00229", set: 20, question: 59 }]
                 },
                 {
@@ -276,8 +532,8 @@
                 {
                     id: "roughness-turbulence-and-mixing-length",
                     title: "Roughness and turbulent momentum exchange",
-                    html: "<p>Moody-chart e is absolute wall roughness; <strong>e/D</strong> is relative roughness. Turbulent f<sub>D</sub> generally depends on both Re and e/D. Only the <strong>fully rough</strong> limiting regime becomes essentially independent of Re. Ordinary developed laminar resistance is independent of roughness.</p>" +
-                        "<p>Laminar head loss varies with V because f<sub>D</sub> varies as 1/Re. Turbulent loss is proportional to V<sup>2</sup> only when f<sub>D</sub> is effectively constant. Prandtl's mixing length models turbulent momentum exchange; it approaches zero at the wall, varies with wall distance, and is not a universal constant.</p>",
+                    html: "<p>Moody-chart e is absolute wall roughness; <strong>e/D</strong> is relative roughness. Turbulent f<sub>D</sub> generally depends on both Re and e/D. Only the <strong>fully rough</strong> limiting regime becomes essentially independent of Re. Ordinary developed laminar resistance is independent of roughness.</p><p>Laminar head loss varies with V because f<sub>D</sub> varies as 1/Re. Turbulent loss is proportional to V<sup>2</sup> only when f<sub>D</sub> is effectively constant. </p>",
+                    moreHtml: "<p>Prandtl's mixing length models turbulent momentum exchange; it approaches zero at the wall, varies with wall distance, and is not a universal constant.</p>",
                     sources: [
                         { id: "WATE701-00034", set: 4, question: 57 },
                         { id: "WATE701-00043", set: 5, question: 54 },
@@ -298,8 +554,8 @@
                 {
                     id: "total-loss-and-economic-diameter",
                     title: "Loss budgeting and economic diameter",
-                    html: "<p>Add distributed and local losses. For a common velocity basis, compare f<sub>D</sub>L/D with ΣK before neglecting fittings. Long pipes often have friction-dominated loss, but numerous valves or a restrictive fitting can invalidate that shortcut.</p>" +
-                        "<p><strong>Bank calculation:</strong> the empirical estimate D = 1.22√Q gives 1.22√0.16 = <strong>0.488 m</strong>, with Q in m<sup>3</sup>/s. Its coefficient carries the unit convention; it does not prove an optimum. Actual economic selection balances pipe cost against pumping energy, operating hours, efficiency and pressure requirements. Those data are absent.</p>",
+                    html: "<p>Add distributed and local losses. For a common velocity basis, compare f<sub>D</sub>L/D with ΣK before neglecting fittings. Long pipes often have friction-dominated loss, but numerous valves or a restrictive fitting can invalidate that shortcut.</p><p><strong>Bank calculation:</strong> the empirical estimate D = 1.22√Q gives 1.22√0.16 = <strong>0.488 m</strong>, with Q in m<sup>3</sup>/s. Its coefficient carries the unit convention; it does not prove an optimum. </p>",
+                    moreHtml: "<p>Actual economic selection balances pipe cost against pumping energy, operating hours, efficiency and pressure requirements. Those data are absent.</p>",
                     sources: [
                         { id: "HYDR626-00052", set: 7, question: 65 },
                         { id: "WATE701-00212", set: 19, question: 52 },
@@ -309,8 +565,8 @@
                 {
                     id: "grade-lines-and-machine-head",
                     title: "HGL, TEL and machine-head jumps",
-                    html: "<p><strong>HGL = z + p/(ρg)</strong>; <strong>TEL = EGL = HGL + αV<sup>2</sup>/(2g)</strong>. Pressure head p/(ρg) is HGL's signed height above the pipe axis. Line separation is corrected velocity head, reducing to the bank's V<sup>2</sup>/(2g) when α = 1. TEL cannot lie below HGL; at rest they coincide.</p>" +
-                        "<p>Total head falls through losses, rises through a pump and falls through a turbine. HGL need not fall monotonically: deceleration can recover pressure. Across a machine its jump equals the total-head jump only if velocity-head terms are unchanged. HGL below the pipe axis means negative gauge pressure; check absolute pressure against vapour pressure, not against zero gauge alone.</p>",
+                    html: "<p><strong>HGL = z + p/(ρg)</strong>; <strong>TEL = EGL = HGL + αV<sup>2</sup>/(2g)</strong>. Pressure head p/(ρg) is HGL's signed height above the pipe axis. Line separation is corrected velocity head, reducing to the bank's V<sup>2</sup>/(2g) when α = 1. TEL cannot lie below HGL; at rest they coincide.</p>",
+                    moreHtml: "<p>Total head falls through losses, rises through a pump and falls through a turbine. HGL need not fall monotonically: deceleration can recover pressure. Across a machine its jump equals the total-head jump only if velocity-head terms are unchanged. HGL below the pipe axis means negative gauge pressure; check absolute pressure against vapour pressure, not against zero gauge alone.</p>",
                     sources: [
                         { id: "WATE701-00096", set: 9, question: 58 },
                         { id: "WATE701-00101", set: 10, question: 52 },
@@ -320,9 +576,8 @@
                 {
                     id: "series-parallel-and-network-balance",
                     title: "Series, parallel branches and loop closure",
-                    html: "<p><strong>Series:</strong> steady incompressible flow without intermediate withdrawals has equal discharge; individual losses add, but speeds and friction factors can differ. <strong>Parallel:</strong> branches between common junctions share head difference; branch discharges add.</p>" +
-                        "<p><strong>Bank derivation:</strong> identical parallel pipes each carry Q/2. Holding diameter and f<sub>D</sub> fixed, loss scales as LQ<sup>2</sup>, so one pipe carrying Q needs <strong>L<sub>eq</sub> = L/4</strong>. For laminar flow with the factor recalculated, linear resistance instead gives L/2.</p>" +
-                        "<p><em>Network extension:</em> enforce zero signed mass imbalance at every junction and zero signed net head change around every loop, including pumps/turbines. Solve compatible branch flows and update velocity-dependent friction factors; a pressure-only balance misses differing elevations.</p>",
+                    html: "<p><strong>Series:</strong> steady incompressible flow without intermediate withdrawals has equal discharge; individual losses add, but speeds and friction factors can differ. <strong>Parallel:</strong> branches between common junctions share head difference; branch discharges add.</p><p><strong>Bank derivation:</strong> identical parallel pipes each carry Q/2. Holding diameter and f<sub>D</sub> fixed, loss scales as LQ<sup>2</sup>, so one pipe carrying Q needs <strong>L<sub>eq</sub> = L/4</strong>. For laminar flow with the factor recalculated, linear resistance instead gives L/2.</p>",
+                    moreHtml: "<p><em>Network extension:</em> enforce zero signed mass imbalance at every junction and zero signed net head change around every loop, including pumps/turbines. Solve compatible branch flows and update velocity-dependent friction factors; a pressure-only balance misses differing elevations.</p>",
                     sources: [
                         { id: "WATE701-00036", set: 4, question: 59 },
                         { id: "WATE701-00211", set: 19, question: 51 },
@@ -339,7 +594,8 @@
                 {
                     id: "surge-control-and-relief-limits",
                     title: "Relief devices are system-specific",
-                    html: "<p><em>Syllabus extension:</em> controlled valve motion, suitable pump controls, surge tanks, air vessels and relief valves can moderate transients. Their effectiveness depends on placement, sizing, response and operating conditions. Reflected waves can also lower pressure and cause column separation. A surge tank or relief valve is not a universal cure: evaluate both maximum and minimum transient pressures against actual pipe and system limits.</p>",
+                    html: "<p><em>Syllabus extension:</em> controlled valve motion, suitable pump controls, surge tanks, air vessels and relief valves can moderate transients. Their effectiveness depends on placement, sizing, response and operating conditions. </p>",
+                    moreHtml: "<p>Reflected waves can also lower pressure and cause column separation. A surge tank or relief valve is not a universal cure: evaluate both maximum and minimum transient pressures against actual pipe and system limits.</p>",
                     sources: []
                 }
             ],
@@ -349,33 +605,133 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Wrong shear key:</strong> the structural-bank item keys parabolic shear, contradicting its own explanation. Shear is linear; velocity is parabolic. The centre/mean ratio 2 requires fully developed laminar circular flow, not merely 'viscous' flow.</p>",
-                    sources: [
-                        { id: "STRU935-00082", set: 9, question: 18 },
-                        { id: "WATE701-00049", set: 6, question: 47 }
+                    "id": "check-wate701-00036",
+                    "status": "review",
+                    "prompt": "Two identical pipes of length L, diameter D and friction f, are connected in parallel between two points. The length of a single pipe of diameter D and the same friction f, equivalent to the above pair is",
+                    "html": "<p><strong>Friction qualifications:</strong> quadratic turbulent loss and L/4 equivalence hold with fixed Darcy factor. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00036",
+                            "set": 4,
+                            "question": 59
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Friction qualifications:</strong> quadratic turbulent loss and L/4 equivalence hold with fixed Darcy factor. Roughness-only dependence means fully rough, not all turbulent flow.</p>",
-                    sources: [
-                        { id: "WATE701-00036", set: 4, question: 59 },
-                        { id: "WATE701-00043", set: 5, question: 54 },
-                        { id: "WATE701-00045", set: 5, question: 56 }
+                    "id": "check-wate701-00043",
+                    "status": "review",
+                    "prompt": "The frictional resistance for fluids in motion is",
+                    "html": "<p><strong>Friction qualifications:</strong> quadratic turbulent loss and L/4 equivalence hold with fixed Darcy factor. </p><p>Roughness-only dependence means fully rough, not all turbulent flow.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00043",
+                            "set": 5,
+                            "question": 54
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Loss shortcuts:</strong> entrance loss is half exit loss only for the stated sharp-edged entrance/large-reservoir model. Length alone does not justify ignoring both losses.</p>",
-                    sources: [
-                        { id: "WATE701-00047", set: 5, question: 58 },
-                        { id: "WATE701-00106", set: 10, question: 57 },
-                        { id: "WATE701-00264", set: 23, question: 56 }
+                    "id": "check-wate701-00045",
+                    "status": "review",
+                    "prompt": "e/D is a parameter in the Moody diagram. What is that e in the moody diagram?",
+                    "html": "<p><strong>Relative roughness:</strong> epsilon/D uses an absolute roughness height epsilon divided by internal pipe diameter. In general the Darcy factor also depends on Reynolds number; roughness-only dependence is the fully rough limit.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00045",
+                            "set": 5,
+                            "question": 56
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Missing design conditions:</strong> the economic diameter uses an unstated empirical rule, not sufficient cost data. The 7.5 m hydraulic diameter assumes a fully wetted closed duct.</p>",
-                    sources: [
-                        { id: "HYDR626-00052", set: 7, question: 65 },
-                        { id: "WATE701-00229", set: 20, question: 59 }
+                    "id": "check-wate701-00047",
+                    "status": "review",
+                    "prompt": "The head loss at the entrance of the pipe is...... to that of it if s exit",
+                    "html": "<p><strong>The half-ratio is conditional.</strong> Entrance loss is about half exit loss for a conventional sharp-edged entrance and discharge into a large reservoir at the same pipe velocity. Different entrance geometry or outlet recovery changes the coefficients.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00047",
+                            "set": 5,
+                            "question": 58
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00049",
+                    "status": "review",
+                    "prompt": "What is the ratio of the velocity at the axis of the pipe to the mean velocity of flow in case of pipe flow under viscous condition?",
+                    "html": "<p>The centre/mean ratio 2 requires fully developed laminar circular flow, not merely 'viscous' flow.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00049",
+                            "set": 6,
+                            "question": 47
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00052",
+                    "status": "review",
+                    "prompt": "If discharge of a pump is 0.16 cumecs, the economic diameter of pipe, is",
+                    "html": "<p><strong>Missing design conditions:</strong> the economic diameter uses an unstated empirical rule, not sufficient cost data. </p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00052",
+                            "set": 7,
+                            "question": 65
+                        }
+                    ]
+                },
+                {
+                    "id": "check-stru935-00082",
+                    "status": "review",
+                    "prompt": "Which of the following statements is correct about the shear stress distribution in circular pipes with laminar flow?",
+                    "html": "<p><strong>Wrong shear key:</strong> the structural-bank item keys parabolic shear, contradicting its own explanation. </p><p>Shear is linear; velocity is parabolic. </p><p>The centre/mean ratio 2 requires fully developed laminar circular flow, not merely 'viscous' flow.</p>",
+                    "sources": [
+                        {
+                            "id": "STRU935-00082",
+                            "set": 9,
+                            "question": 18
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00106",
+                    "status": "review",
+                    "prompt": "The head loss at the entrance of the pipe is...... to that of at it’s exit",
+                    "html": "<p><strong>The half-ratio is conditional.</strong> Entrance loss is about half exit loss for a conventional sharp-edged entrance and discharge into a large reservoir at the same pipe velocity. Different entrance geometry or outlet recovery changes the coefficients.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00106",
+                            "set": 10,
+                            "question": 57
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00229",
+                    "status": "review",
+                    "prompt": "Calculate hydraulic diameter for a rectangular duct having 10m width and 6m depth.",
+                    "html": "<p>The 7.5 m hydraulic diameter assumes a fully wetted closed duct.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00229",
+                            "set": 20,
+                            "question": 59
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00264",
+                    "status": "review",
+                    "prompt": "For a long pipe, the head loss",
+                    "html": "<p><strong>Compare losses rather than relying on pipe length alone.</strong> Friction often dominates a long pipe, but entrance, exit and fitting losses are negligible only after their magnitudes are compared with the distributed loss.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00264",
+                            "set": 23,
+                            "question": 56
+                        }
                     ]
                 }
             ]

@@ -109,8 +109,8 @@ const CIVIL_MODEL_11 = {
                         { key: "c", text: "NS 297/2035" },
                         { key: "d", text: "NS 84/2035" }
                     ],
-                    answer: "a",
-                    explanation: "Nepal Standard NS 49:2041 specifies burnt clay bricks, covering dimensions, compressive strength, water absorption and efflorescence. Meeting it is what allows a brick to be graded first, second or third class, and the class in turn decides where in the structure it may be used."
+                    answer: "b",
+                    explanation: "The Nepal Bureau of Standards and Metrology catalogue lists NS 1:2035 for Brick and NS 49:2041 for Ordinary Portland Cement. Therefore NS 1/2035 is the correct listed brick specification. Product acceptance values require the applicable standard text, not the cement-standard number."
                 },
                 {
                     id: "cm11q007",
@@ -712,13 +712,13 @@ const CIVIL_MODEL_11 = {
                     src: "WATE701-00112",
                     text: "Given a Gumbel’s distribution with μ = 0 and β = 1, find the probability that X is less than or equal to 2.",
                     options: [
-                        { key: "a", text: "0.864" },
+                        { key: "a", text: "0.873423" },
                         { key: "b", text: "0.564" },
                         { key: "c", text: "1.124" },
                         { key: "d", text: "0.665" }
                     ],
                     answer: "a",
-                    explanation: "For the standard Gumbel distribution the probability of non-exceedance is the double exponential, exp of minus exp of minus x. With x equal to 2 that is exp of minus 0.1353, which works out at about 0.87."
+                    explanation: "The Gumbel cumulative probability is \\(F(x)=\\exp[-\\exp(-(x-\\mu)/\\beta)]\\). Thus \\(F(2)=\\exp[-\\exp(-2)]=0.8734230185\\). This is a probability of about 87.34%; the former 0.864 choice has been corrected."
                 },
                 {
                     id: "cm11q051",

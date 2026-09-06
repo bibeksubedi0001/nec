@@ -726,11 +726,11 @@ const CIVIL_MODEL_8 = {
                     options: [
                         { key: "a", text: "0.564" },
                         { key: "b", text: "1.124" },
-                        { key: "c", text: "0.864" },
+                        { key: "c", text: "0.873423" },
                         { key: "d", text: "0.665" }
                     ],
                     answer: "c",
-                    explanation: "For the standard Gumbel distribution the non-exceedance probability is the double exponential, exp of minus exp of minus x. With x equal to 2 that is exp of minus 0.135, which is about 0.87."
+                    explanation: "For the stated Gumbel maximum distribution, \\(F(x)=\\exp[-\\exp(-(x-\\mu)/\\beta)]\\). With \\(\\mu=0\\), \\(\\beta=1\\) and \\(x=2\\), \\(F(2)=\\exp[-\\exp(-2)]=0.8734230185\\). The former 0.864 option was not a rounding of this value and has been corrected."
                 },
                 {
                     id: "cm8q052",

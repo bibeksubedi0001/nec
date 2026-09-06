@@ -962,15 +962,15 @@ const CIVIL_MODEL_29 = {
                 {
                     id: "cm29q068",
                     src: "IRRI951-00299",
-                    text: "What is the size of the tile at an outlet? 12 hectare drainage system, if the D.C is 2 cm and the tile grade is 0.5%. Assume rugosity coefficient as 0.015 for the tile drain material:",
+                    text: "A tile outlet drains 12 hectares at a drainage coefficient of 2 cm/day. For uniform full-pipe Manning flow at slope 0.5% and n = 0.015, which listed internal diameter is the smallest adequate size?",
                     options: [
                         { key: "a", text: "20 cm" },
                         { key: "b", text: "10 cm" },
                         { key: "c", text: "15 cm" },
                         { key: "d", text: "25 cm" }
                     ],
-                    answer: "a",
-                    explanation: "This requires calculation using Manning's equation for flow in pipes. The given parameters (Area=12 ha, DC=2 cm/day, slope=0.005, n=0.015) would typically result in a design pointing towards a larger diameter tile, often in the 20-25 cm range for such an area and coefficient."
+                    answer: "d",
+                    explanation: "Required flow is \\(Q=\\dfrac{120000(0.02)}{86400}=0.0277778\\,\\mathrm{m^3/s}\\). For a full circular pipe, \\(Q=\\dfrac{1}{n}\\dfrac{\\pi D^2}{4}\\left(\\dfrac{D}{4}\\right)^{2/3}\\sqrt{S}\\). Solving gives D about 0.246 m. The 0.20 m option is insufficient; 0.25 m is the smallest listed adequate diameter. The revised stem states the daily coefficient and full-flow assumption."
                 },
                 {
                     id: "cm29q069",

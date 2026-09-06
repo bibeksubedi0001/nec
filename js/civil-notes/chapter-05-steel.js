@@ -11,10 +11,8 @@
                 {
                     id: "steel-design-basis-and-code-editions",
                     title: "Design basis, units and identifiable code editions",
-                    html: "<p>Steel design follows the load from the supported construction through members, connections and bases into the foundation. A satisfactory cross-section alone does not establish a satisfactory structure: instability, connection failure, excessive movement, fatigue and construction-stage conditions can govern before the nominal material strength is reached.</p>" +
-                        "<p>The numerical steel provisions identified here refer to <strong>IS 800:2007, General Construction in Steel, third revision</strong>, using the supplied archived text and scan. Working-stress questions explicitly naming IS 800:1962 belong to a different edition and design basis. Service-load stresses checked against an older permissible stress must not be combined indiscriminately with factored limit-state loads and partial safety factors.</p>" +
-                        "<p>Use a coherent unit system: <strong>1 MPa = 1 N/mm<sup>2</sup></strong>, 1 kN = 1000 N and 1 kN·m = 10<sup>6</sup> N·mm. In historical force-based units, 1 kgf/cm<sup>2</sup> = 0.0980665 MPa; kilograms of mass are not a stress unit.</p>" +
-                        "<p>The official DUDBC catalogue identifies <strong>NBC 111 as Steel and NBC 112 as Timber</strong>. Catalogue identity does not certify that every IS clause below is adopted unchanged in Nepal. Confirm the governing NBC/NS requirements, specified editions, amendments, load combinations and approval requirements for the actual project. These study notes are not a consolidated-current-code claim or a design certification.</p>",
+                    html: "<p>Steel design follows the load from the supported construction through members, connections and bases into the foundation. A satisfactory cross-section alone does not establish a satisfactory structure: instability, connection failure, excessive movement, fatigue and construction-stage conditions can govern before the nominal material strength is reached.</p><p>The numerical steel provisions identified here refer to <strong>IS 800:2007, General Construction in Steel, third revision</strong>, using the supplied archived text and scan. Working-stress questions explicitly naming IS 800:1962 belong to a different edition and design basis. </p><p>Use a coherent unit system: <strong>1 MPa = 1 N/mm<sup>2</sup></strong>, 1 kN = 1000 N and 1 kN·m = 10<sup>6</sup> N·mm. In historical force-based units, 1 kgf/cm<sup>2</sup> = 0.0980665 MPa; kilograms of mass are not a stress unit.</p><p>The official DUDBC catalogue identifies <strong>NBC 111 as Steel and NBC 112 as Timber</strong>. Catalogue identity does not certify that every IS clause below is adopted unchanged in Nepal. </p>",
+                    moreHtml: "<p>Service-load stresses checked against an older permissible stress must not be combined indiscriminately with factored limit-state loads and partial safety factors.</p><p>Confirm the governing NBC/NS requirements, specified editions, amendments, load combinations and approval requirements for the actual project. These study notes are not a consolidated-current-code claim or a design certification.</p>",
                     sources: [
                         { id: "DESI787-00144", set: 16, question: 33 },
                         { id: "DESI787-00164", set: 18, question: 33 }
@@ -23,13 +21,8 @@
                 {
                     id: "standard-sections-and-axis-efficiency",
                     title: "Choose sections by their properties, not their names",
-                    html: "<p>A standard rolled section has catalogue dimensions and properties; a built-up section combines separately connected components. Equal and unequal angles describe leg dimensions, while a bulb angle has a locally thickened profile. Such shape descriptions are not the plastic, compact, semi-compact or slender classifications used to assess local plate behaviour.</p>" +
-                        "<p>For any centroidal bending axis, <strong>r = √(I/A)</strong>, where I is second moment of area and A is area. Column efficiency depends on the governing effective-length-to-radius ratio, local slenderness and buckling class, not just a large major-axis I. Evaluate both principal axes with their own restraints.</p>" +
-                        "<table><thead><tr><th scope='col'>Section family</th><th scope='col'>Useful feature and qualification</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Wide-flange I section</th><td>Wider flanges can improve minor-axis resistance relative to narrow-flange alternatives. ISWB is a section designation, not a requirement for every column or a guarantee of equal radii.</td></tr>" +
-                        "<tr><th scope='row'>Circular or square hollow section</th><td>Symmetry gives equal centroidal radii about the corresponding axes. Thin walls, end details, corrosion access and fabrication still matter.</td></tr>" +
-                        "<tr><th scope='row'>Rectangular hollow or angle section</th><td>Axis properties differ; angles also need attention to connection eccentricity and possible torsional or flexural-torsional behaviour.</td></tr></tbody></table>" +
-                        "<p>For a circular tube with outer diameter D and inner diameter D<sub>i</sub>, r = √(D<sup>2</sup> + D<sub>i</sub><sup>2</sup>)/4. Moving material outward can improve buckling resistance per unit area, but a tube is not automatically the cheapest completed column once local buckling, joints and procurement are included.</p>",
+                    html: "<p>A standard rolled section has catalogue dimensions and properties; a built-up section combines separately connected components. Equal and unequal angles describe leg dimensions, while a bulb angle has a locally thickened profile. </p><p>For any centroidal bending axis, <strong>r = √(I/A)</strong>, where I is second moment of area and A is area. Column efficiency depends on the governing effective-length-to-radius ratio, local slenderness and buckling class, not just a large major-axis I. Evaluate both principal axes with their own restraints.</p><table><thead><tr><th scope='col'>Section family</th><th scope='col'>Useful feature and qualification</th></tr></thead><tbody><tr><th scope='row'>Wide-flange I section</th><td>Wider flanges can improve minor-axis resistance relative to narrow-flange alternatives. ISWB is a section designation, not a requirement for every column or a guarantee of equal radii.</td></tr><tr><th scope='row'>Circular or square hollow section</th><td>Symmetry gives equal centroidal radii about the corresponding axes. Thin walls, end details, corrosion access and fabrication still matter.</td></tr><tr><th scope='row'>Rectangular hollow or angle section</th><td>Axis properties differ; angles also need attention to connection eccentricity and possible torsional or flexural-torsional behaviour.</td></tr></tbody></table><p>For a circular tube with outer diameter D and inner diameter D<sub>i</sub>, r = √(D<sup>2</sup> + D<sub>i</sub><sup>2</sup>)/4. Moving material outward can improve buckling resistance per unit area, but a tube is not automatically the cheapest completed column once local buckling, joints and procurement are included.</p>",
+                    moreHtml: "<p>Such shape descriptions are not the plastic, compact, semi-compact or slender classifications used to assess local plate behaviour.</p>",
                     sources: [
                         { id: "DESI787-00050", set: 7, question: 25 },
                         { id: "DESI787-00143", set: 16, question: 32 },
@@ -39,10 +32,8 @@
                 {
                     id: "ties-struts-and-roof-load-paths",
                     title: "Ties, struts and the real roof load path",
-                    html: "<p>A <strong>tie</strong> is intended to resist tension; a <strong>strut</strong> is intended to resist compression, and a column usually carries predominantly compressive force. Rafter and boom are positional or structural names, not guarantees of one force sign. Analyse each relevant load combination before deciding which strength and stability checks apply.</p>" +
-                        "<p>A typical roof transfers cladding load to purlins, then to rafters or truss joints, columns and foundations. The ideal axial-only truss model assumes straight members, idealized joint behaviour and loads introduced at joints. A purlin reaction applied <strong>between panel points</strong> produces local rafter bending in addition to the truss axial action.</p>" +
-                        "<p>Under the usual gravity case the principal rafter may therefore require a <strong>compression-plus-bending</strong> check, including in-plane and out-of-plane stability. Wind uplift can change its axial force to tension or reverse bending; that case needs its own member and connection checks. Purlins are restraints only if their stiffness, bracing and connections actually provide the assumed restraint.</p>" +
-                        "<p>Tension design includes gross-section yielding, effective net-section rupture and block shear at connections. Compression design includes effective area, member buckling and local instability. Neither a tie checked only by net area nor a rafter treated as always compressive represents the complete load path.</p>",
+                    html: "<p>A <strong>tie</strong> is intended to resist tension; a <strong>strut</strong> is intended to resist compression, and a column usually carries predominantly compressive force. Rafter and boom are positional or structural names, not guarantees of one force sign. Analyse each relevant load combination before deciding which strength and stability checks apply.</p>",
+                    moreHtml: "<p>A typical roof transfers cladding load to purlins, then to rafters or truss joints, columns and foundations. The ideal axial-only truss model assumes straight members, idealized joint behaviour and loads introduced at joints. A purlin reaction applied <strong>between panel points</strong> produces local rafter bending in addition to the truss axial action.</p><p>Under the usual gravity case the principal rafter may therefore require a <strong>compression-plus-bending</strong> check, including in-plane and out-of-plane stability. Wind uplift can change its axial force to tension or reverse bending; that case needs its own member and connection checks. Purlins are restraints only if their stiffness, bracing and connections actually provide the assumed restraint.</p><p>Tension design includes gross-section yielding, effective net-section rupture and block shear at connections. Compression design includes effective area, member buckling and local instability. Neither a tie checked only by net area nor a rafter treated as always compressive represents the complete load path.</p>",
                     sources: [
                         { id: "DESI787-00067", set: 8, question: 32 },
                         { id: "DESI787-00206", set: 23, question: 25 }
@@ -62,10 +53,8 @@
                 {
                     id: "web-shear-bearing-crippling-and-buckling",
                     title: "Web shear, local bearing, crippling and buckling",
-                    html: "<p>In a conventional I beam under transverse loading, the flanges contribute strongly to bending resistance and the web normally carries the dominant share of vertical shear. Elastic shear stress follows <strong>τ = VQ/(It)</strong>: V is shear force, Q the first moment of the relevant partial area, I the section second moment and t the local width or thickness at the level checked. The actual web/flange distribution depends on section geometry.</p>" +
-                        "<p>A concentrated load or support reaction enters through a finite bearing length. <strong>Web crippling</strong> describes localized bearing-related yielding, folding or distortion near that load introduction. <strong>Web buckling</strong> is a stability failure of a compressed or sheared web region. These mechanisms can interact, but local crippling is not simply another name for the column-like buckling of the web.</p>" +
-                        "<p>IS 800:2007 §8.4.2.1 requires a shear-buckling check for an unstiffened web when <strong>d/t<sub>w</sub> &gt; 67ε</strong>, writing ε = √(250/f<sub>yw</sub>) with the web yield stress f<sub>yw</sub> in MPa. Here d is the relevant clear web depth and t<sub>w</sub> its thickness. Stiffened panels have additional panel-geometry considerations. Crossing this threshold triggers verification; it does not by itself prescribe one stiffener arrangement.</p>" +
-                        "<p><em>Supplementary screening example:</em> d = 600 mm, t<sub>w</sub> = 8 mm and f<sub>yw</sub> = 250 MPa give d/t<sub>w</sub> = <strong>75 &gt; 67</strong>. A shear-buckling assessment is needed even though the ratio is below 85. Bearing length, load level, web thickness and designed bearing or transverse stiffeners must then be considered for the actual failure modes.</p>",
+                    html: "<p>In a conventional I beam under transverse loading, the flanges contribute strongly to bending resistance and the web normally carries the dominant share of vertical shear. Elastic shear stress follows <strong>τ = VQ/(It)</strong>: V is shear force, Q the first moment of the relevant partial area, I the section second moment and t the local width or thickness at the level checked. The actual web/flange distribution depends on section geometry.</p><p>IS 800:2007 §8.4.2.1 requires a shear-buckling check for an unstiffened web when <strong>d/t<sub>w</sub> &gt; 67ε</strong>, writing ε = √(250/f<sub>yw</sub>) with the web yield stress f<sub>yw</sub> in MPa. Here d is the relevant clear web depth and t<sub>w</sub> its thickness. </p><p><em>Supplementary screening example:</em> d = 600 mm, t<sub>w</sub> = 8 mm and f<sub>yw</sub> = 250 MPa give d/t<sub>w</sub> = <strong>75 &gt; 67</strong>. A shear-buckling assessment is needed even though the ratio is below 85. </p>",
+                    moreHtml: "<p>A concentrated load or support reaction enters through a finite bearing length. <strong>Web crippling</strong> describes localized bearing-related yielding, folding or distortion near that load introduction. <strong>Web buckling</strong> is a stability failure of a compressed or sheared web region. These mechanisms can interact, but local crippling is not simply another name for the column-like buckling of the web.</p><p>Stiffened panels have additional panel-geometry considerations. Crossing this threshold triggers verification; it does not by itself prescribe one stiffener arrangement.</p><p>Bearing length, load level, web thickness and designed bearing or transverse stiffeners must then be considered for the actual failure modes.</p>",
                     sources: [
                         { id: "DESI787-00051", set: 7, question: 26 },
                         { id: "DESI787-00141", set: 16, question: 30 },
@@ -75,10 +64,8 @@
                 {
                     id: "built-up-columns-lacing-and-battens",
                     title: "Built-up columns: make the components work together",
-                    html: "<p>Separating channels or other components can increase the second moment of a built-up column, but that advantage depends on a designed connection system. Each component must be restrained between connection points, and the assembled member must resist overall buckling without excessive relative movement of its parts.</p>" +
-                        "<p><strong>Lacing</strong> develops truss-like action through diagonal elements; <strong>battens</strong> transfer transverse shear through plate-and-component frame action. Their members, plates and fastenings need strength and stiffness checks for the prescribed transverse design action, as well as any actual applied shear. Perfectly axial loading is not a reason to assume this transverse design action is zero. Shear flexibility and individual-component slenderness also affect the overall compression assessment.</p>" +
-                        "<p>For welded tie or batten plates, the verified IS 800:2007 <strong>§7.7.4.1 overlap is at least 4t</strong>, with t the batten-plate thickness. <em>Supplementary dimensional example:</em> an 8 mm batten needs at least <strong>32 mm overlap</strong> under that provision. Meeting this one dimension does not establish the required weld length, throat, end detail or connection capacity.</p>" +
-                        "<p>Design the actual force path from one main component through its weld or bolts, through the batten or lacing, and into the other component. Calling the assembled shape rigid cannot replace these checks.</p>",
+                    html: "<p>Separating channels or other components can increase the second moment of a built-up column, but that advantage depends on a designed connection system. Each component must be restrained between connection points, and the assembled member must resist overall buckling without excessive relative movement of its parts.</p><p>For welded tie or batten plates, the verified IS 800:2007 <strong>§7.7.4.1 overlap is at least 4t</strong>, with t the batten-plate thickness. <em>Supplementary dimensional example:</em> an 8 mm batten needs at least <strong>32 mm overlap</strong> under that provision. </p>",
+                    moreHtml: "<p><strong>Lacing</strong> develops truss-like action through diagonal elements; <strong>battens</strong> transfer transverse shear through plate-and-component frame action. Their members, plates and fastenings need strength and stiffness checks for the prescribed transverse design action, as well as any actual applied shear. Perfectly axial loading is not a reason to assume this transverse design action is zero. Shear flexibility and individual-component slenderness also affect the overall compression assessment.</p><p>Meeting this one dimension does not establish the required weld length, throat, end detail or connection capacity.</p><p>Design the actual force path from one main component through its weld or bolts, through the batten or lacing, and into the other component. Calling the assembled shape rigid cannot replace these checks.</p>",
                     sources: [
                         { id: "DESI787-00055", set: 7, question: 30 },
                         { id: "DESI787-00154", set: 17, question: 32 }
@@ -87,11 +74,8 @@
                 {
                     id: "tension-limit-states-and-straight-net-area",
                     title: "Tension members and straight net-section calculations",
-                    html: "<p>For a fully connected plate in axial tension, three distinct checks are <strong>gross yielding, net-section rupture and block shear</strong>. Gross yielding spreads through the member section; rupture crosses a weakened net path; block shear removes a connection-end block along combined shear and tension planes. Bolts, welds and connected supporting parts require their own checks. Outstanding legs or incomplete connection of a section can introduce shear lag.</p>" +
-                        "<p>For the simple plate case, IS 800:2007 uses <strong>T<sub>dg</sub> = A<sub>g</sub>f<sub>y</sub>/γ<sub>m0</sub></strong> and <strong>T<sub>dn</sub> = 0.9A<sub>n</sub>f<sub>u</sub>/γ<sub>m1</sub></strong>. The member resistance cannot exceed the least applicable yielding, rupture and block-shear resistance. A<sub>g</sub> and A<sub>n</sub> are gross and net areas; f<sub>y</sub> and f<sub>u</sub> are plate yield and ultimate strengths. This simple net-rupture expression is not an unqualified rule for every angle connection.</p>" +
-                        "<p>Distinguish actual hole diameter d<sub>0</sub> from the <strong>design deduction diameter d<sub>h</sub></strong>. IS 800:2007 §6.3.1 requires d<sub>h</sub> = d<sub>0</sub> + 2 mm for <strong>directly punched holes</strong>; this fabrication allowance is not a second bolt-clearance allowance. For a straight cut, use <strong>A<sub>n</sub> = (b − d<sub>h</sub>)t</strong>. The actual geometric area, before any such design allowance, is (b − d<sub>0</sub>)t.</p>" +
-                        "<p>Assuming holes for which the directly punched allowance does not apply, d<sub>h</sub> = d<sub>0</sub> = 18 mm. The bank's 40 cm wide, 10 mm thick plate then gives (400 − 18)10 = <strong>3820 mm<sup>2</sup> = 38.2 cm<sup>2</sup></strong>. Its separate 75 mm wide plate gives (75 − 18)10 = <strong>570 mm<sup>2</sup> = 5.70 cm<sup>2</sup></strong>. If the holes were directly punched, the respective design areas would instead be <strong>3800 and 550 mm<sup>2</sup></strong>. The bank does not identify manufacture; do not infer punching or add bolt clearance again merely to match an option.</p>" +
-                        "<p><em>Supplementary strength extension for the 400 mm plate:</em> assume f<sub>y</sub> = 250 MPa, f<sub>u</sub> = 410 MPa, γ<sub>m0</sub> = 1.10 and γ<sub>m1</sub> = 1.25. With A<sub>g</sub> = 4000 mm<sup>2</sup>, gross yielding gives <strong>909.1 kN</strong>, while the simple net-rupture check gives <strong>1127.7 kN</strong>. Yielding governs these two values, but block shear and the complete connection still have to be established.</p>",
+                    html: "<p>For a fully connected plate in axial tension, three distinct checks are <strong>gross yielding, net-section rupture and block shear</strong>. Gross yielding spreads through the member section; rupture crosses a weakened net path; block shear removes a connection-end block along combined shear and tension planes. </p><p>For the simple plate case, IS 800:2007 uses <strong>T<sub>dg</sub> = A<sub>g</sub>f<sub>y</sub>/γ<sub>m0</sub></strong> and <strong>T<sub>dn</sub> = 0.9A<sub>n</sub>f<sub>u</sub>/γ<sub>m1</sub></strong>. The member resistance cannot exceed the least applicable yielding, rupture and block-shear resistance. A<sub>g</sub> and A<sub>n</sub> are gross and net areas; f<sub>y</sub> and f<sub>u</sub> are plate yield and ultimate strengths. This simple net-rupture expression is not an unqualified rule for every angle connection.</p><p>Distinguish actual hole diameter d<sub>0</sub> from the <strong>design deduction diameter d<sub>h</sub></strong>. IS 800:2007 §6.3.1 requires d<sub>h</sub> = d<sub>0</sub> + 2 mm for <strong>directly punched holes</strong>; this fabrication allowance is not a second bolt-clearance allowance. For a straight cut, use <strong>A<sub>n</sub> = (b − d<sub>h</sub>)t</strong>. The actual geometric area, before any such design allowance, is (b − d<sub>0</sub>)t.</p><p>Assuming holes for which the directly punched allowance does not apply, d<sub>h</sub> = d<sub>0</sub> = 18 mm. The bank's 40 cm wide, 10 mm thick plate then gives (400 − 18)10 = <strong>3820 mm<sup>2</sup> = 38.2 cm<sup>2</sup></strong>. Its separate 75 mm wide plate gives (75 − 18)10 = <strong>570 mm<sup>2</sup> = 5.70 cm<sup>2</sup></strong>. If the holes were directly punched, the respective design areas would instead be <strong>3800 and 550 mm<sup>2</sup></strong>. </p><p><em>Supplementary strength extension for the 400 mm plate:</em> assume f<sub>y</sub> = 250 MPa, f<sub>u</sub> = 410 MPa, γ<sub>m0</sub> = 1.10 and γ<sub>m1</sub> = 1.25. With A<sub>g</sub> = 4000 mm<sup>2</sup>, gross yielding gives <strong>909.1 kN</strong>, while the simple net-rupture check gives <strong>1127.7 kN</strong>. </p>",
+                    moreHtml: "<p>Bolts, welds and connected supporting parts require their own checks. Outstanding legs or incomplete connection of a section can introduce shear lag.</p><p>The bank does not identify manufacture; do not infer punching or add bolt clearance again merely to match an option.</p><p>Yielding governs these two values, but block shear and the complete connection still have to be established.</p>",
                     sources: [
                         { id: "DESI787-00056", set: 7, question: 31 },
                         { id: "DESI787-00203", set: 22, question: 33 }
@@ -100,20 +84,15 @@
                 {
                     id: "staggered-holes-and-critical-net-paths",
                     title: "Staggered holes: compare actual failure paths",
-                    html: "<p>A potential fracture can cross holes on a straight line or follow a zigzag between staggered holes. For a constant-thickness plate, the conventional staggered-path calculation is <strong>A<sub>n</sub> = t[b − Σd<sub>h</sub> + Σs<sup>2</sup>/(4g)]</strong>. Use the §6.3.1 deduction diameters, including the 2 mm addition where holes are directly punched, rather than assuming every actual d<sub>0</sub> is also d<sub>h</sub>. Deduct the holes intercepted by that path, then add a correction for each diagonal link. Here s is the separation parallel to the force and g the transverse gauge between the linked holes; all lengths must use the same unit.</p>" +
-                        "<p>The addition accounts for the inclined path geometry; it does not permit selecting whichever path gives the largest area. Examine all admissible critical cuts and use the controlling net area, with no calculated net area exceeding the gross area. The complete connection can still fail by block shear or another mechanism.</p>" +
-                        "<p><em>Supplementary two-hole example:</em> take b = 120 mm, t = 8 mm, drilled holes with d<sub>0</sub> = d<sub>h</sub> = 18 mm, s = 30 mm and g = 50 mm. A trial zigzag through both holes has one correction of 30<sup>2</sup>/(4 × 50) = <strong>4.5 mm</strong>, giving A<sub>n</sub> = (120 − 36 + 4.5)8 = <strong>708 mm<sup>2</sup></strong>. A straight cut through one hole gives <strong>816 mm<sup>2</sup></strong>, and the gross area is 960 mm<sup>2</sup>. Among these two cuts, the zigzag governs; a different hole layout or fabrication allowance could change the controlling design area.</p>",
+                    html: "<p>A potential fracture can cross holes on a straight line or follow a zigzag between staggered holes. For a constant-thickness plate, the conventional staggered-path calculation is <strong>A<sub>n</sub> = t[b − Σd<sub>h</sub> + Σs<sup>2</sup>/(4g)]</strong>. Use the §6.3.1 deduction diameters, including the 2 mm addition where holes are directly punched, rather than assuming every actual d<sub>0</sub> is also d<sub>h</sub>. </p><p><em>Supplementary two-hole example:</em> take b = 120 mm, t = 8 mm, drilled holes with d<sub>0</sub> = d<sub>h</sub> = 18 mm, s = 30 mm and g = 50 mm. A trial zigzag through both holes has one correction of 30<sup>2</sup>/(4 × 50) = <strong>4.5 mm</strong>, giving A<sub>n</sub> = (120 − 36 + 4.5)8 = <strong>708 mm<sup>2</sup></strong>. A straight cut through one hole gives <strong>816 mm<sup>2</sup></strong>, and the gross area is 960 mm<sup>2</sup>. </p>",
+                    moreHtml: "<p>Deduct the holes intercepted by that path, then add a correction for each diagonal link. Here s is the separation parallel to the force and g the transverse gauge between the linked holes; all lengths must use the same unit.</p><p>The addition accounts for the inclined path geometry; it does not permit selecting whichever path gives the largest area. Examine all admissible critical cuts and use the controlling net area, with no calculated net area exceeding the gross area. The complete connection can still fail by block shear or another mechanism.</p><p>Among these two cuts, the zigzag governs; a different hole layout or fabrication allowance could change the controlling design area.</p>",
                     sources: [{ id: "DESI787-00161", set: 18, question: 30 }]
                 },
                 {
                     id: "bolt-types-slip-and-load-reversal",
                     title: "Bearing, fitted and friction-grip connections",
-                    html: "<p>Distinguish the <strong>bolt material strength</strong> from the <strong>joint's load-transfer mechanism</strong>. A high-strength bolt can be used in a bearing-type connection or in a correctly specified, installed and inspected slip-resistant connection. Its grade alone does not establish pretension or slip resistance.</p>" +
-                        "<table><thead><tr><th scope='col'>Connection</th><th scope='col'>Shear load path</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Bearing type</th><td>Load passes through plate-hole bearing and bolt shear after any available clearance movement. Check the relevant bolt and plate failure modes.</td></tr>" +
-                        "<tr><th scope='row'>Turned and fitted bolt</th><td>A close-fitting machined bolt reduces clearance movement. It remains capable of transmitting load by bearing; close fit is not the same as friction-grip action.</td></tr>" +
-                        "<tr><th scope='row'>HSFG, slip-resistant design</th><td>Controlled pretension clamps prepared faying surfaces so friction resists slip up to the specified design slip resistance.</td></tr></tbody></table>" +
-                        "<p>For stress reversal or fatigue-sensitive details, limiting slip can avoid repeated clearance take-up and adverse local stress changes. This benefit depends on surface condition, pretension retention and the required serviceability or ultimate limit state. Where slip is prevented only at service load, IS 800:2007 §10.4.4 permits an ultimate bearing-type assessment after slipping. No connection should be described as incapable of bearing at any load merely because HSFG bolts were specified.</p>",
+                    html: "<p>Distinguish the <strong>bolt material strength</strong> from the <strong>joint's load-transfer mechanism</strong>. A high-strength bolt can be used in a bearing-type connection or in a correctly specified, installed and inspected slip-resistant connection. Its grade alone does not establish pretension or slip resistance.</p><table><thead><tr><th scope='col'>Connection</th><th scope='col'>Shear load path</th></tr></thead><tbody><tr><th scope='row'>Bearing type</th><td>Load passes through plate-hole bearing and bolt shear after any available clearance movement. Check the relevant bolt and plate failure modes.</td></tr><tr><th scope='row'>Turned and fitted bolt</th><td>A close-fitting machined bolt reduces clearance movement. It remains capable of transmitting load by bearing; close fit is not the same as friction-grip action.</td></tr><tr><th scope='row'>HSFG, slip-resistant design</th><td>Controlled pretension clamps prepared faying surfaces so friction resists slip up to the specified design slip resistance.</td></tr></tbody></table><p>For stress reversal or fatigue-sensitive details, limiting slip can avoid repeated clearance take-up and adverse local stress changes. This benefit depends on surface condition, pretension retention and the required serviceability or ultimate limit state. Where slip is prevented only at service load, IS 800:2007 §10.4.4 permits an ultimate bearing-type assessment after slipping. </p>",
+                    moreHtml: "<p>No connection should be described as incapable of bearing at any load merely because HSFG bolts were specified.</p>",
                     sources: [
                         { id: "DESI787-00054", set: 7, question: 29 },
                         { id: "DESI787-00152", set: 1, question: 29 },
@@ -139,13 +118,8 @@
                 {
                     id: "holes-minimum-pitch-and-edge-distances",
                     title: "Hole diameter is not bolt diameter",
-                    html: "<p>Let d be nominal bolt diameter and d<sub>0</sub> the specified hole diameter. IS 800:2007 Table 19 gives the following <strong>diametral additions for standard clearance holes</strong>. Oversized and slotted holes have separate provisions. When a question already gives d<sub>0</sub>, use it directly rather than adding the clearance a second time.</p>" +
-                        "<table><thead><tr><th scope='col'>Nominal d, mm</th><th scope='col'>Standard addition, mm</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>12–14</th><td>1</td></tr>" +
-                        "<tr><th scope='row'>16–22, and 24</th><td>2</td></tr>" +
-                        "<tr><th scope='row'>Above 24</th><td>3</td></tr></tbody></table>" +
-                        "<p>Pitch is centre spacing along a fastener line; gauge is transverse spacing between lines. Under §10.2.2, the minimum centre spacing is <strong>2.5d</strong>. End distance is measured from the hole centre to the end in the stress direction; edge distance is measured transversely to the adjacent edge. The minimum edge/end distances in §10.2.4.2 instead use <strong>d<sub>0</sub></strong>: 1.5d<sub>0</sub> for rolled, machine-flame-cut, sawn or planed edges, and 1.7d<sub>0</sub> for sheared or hand-flame-cut edges.</p>" +
-                        "<p><strong>Bank M16 pitch:</strong> 2.5 × 16 = <strong>40 mm</strong>, independent of the class-4.6 label in this minimum-spacing calculation. With an ordinary 18 mm hole, the corresponding minimum edge/end dimensions are <strong>27 mm</strong> for the smoother listed edges and <strong>30.6 mm</strong> for sheared or hand-flame-cut edges. These are different dimensions with different physical purposes; hole bearing, tearing and access still need consideration.</p>",
+                    html: "<p>Let d be nominal bolt diameter and d<sub>0</sub> the specified hole diameter. IS 800:2007 Table 19 gives the following <strong>diametral additions for standard clearance holes</strong>. Oversized and slotted holes have separate provisions. When a question already gives d<sub>0</sub>, use it directly rather than adding the clearance a second time.</p><table><thead><tr><th scope='col'>Nominal d, mm</th><th scope='col'>Standard addition, mm</th></tr></thead><tbody><tr><th scope='row'>12–14</th><td>1</td></tr><tr><th scope='row'>16–22, and 24</th><td>2</td></tr><tr><th scope='row'>Above 24</th><td>3</td></tr></tbody></table><p>Pitch is centre spacing along a fastener line; gauge is transverse spacing between lines. Under §10.2.2, the minimum centre spacing is <strong>2.5d</strong>. End distance is measured from the hole centre to the end in the stress direction; edge distance is measured transversely to the adjacent edge. The minimum edge/end distances in §10.2.4.2 instead use <strong>d<sub>0</sub></strong>: 1.5d<sub>0</sub> for rolled, machine-flame-cut, sawn or planed edges, and 1.7d<sub>0</sub> for sheared or hand-flame-cut edges.</p><p><strong>Bank M16 pitch:</strong> 2.5 × 16 = <strong>40 mm</strong>, independent of the class-4.6 label in this minimum-spacing calculation. With an ordinary 18 mm hole, the corresponding minimum edge/end dimensions are <strong>27 mm</strong> for the smoother listed edges and <strong>30.6 mm</strong> for sheared or hand-flame-cut edges. </p>",
+                    moreHtml: "<p>These are different dimensions with different physical purposes; hole bearing, tearing and access still need consideration.</p>",
                     sources: [
                         { id: "DESI787-00150", set: 17, question: 29 },
                         { id: "DESI787-00058", set: 7, question: 33 },
@@ -174,20 +148,15 @@
                 {
                     id: "fitting-a-bolt-row-with-end-allowances",
                     title: "Fit the complete bolt row, including its end distances",
-                    html: "<p>For n equally spaced bolts in an available row length W, the geometric requirement is <strong>2e + (n − 1)p ≤ W</strong> when both ends have the same centre-to-end allowance e. Use the applicable hole-based end distances and nominal-diameter-based minimum centre spacing. A plate's width is the available row length only when the row is actually arranged across that width.</p>" +
-                        "<p><strong>Conditional calculation for the bank's 200 mm flat:</strong> interpret the given 25 mm as nominal bolt diameter and use standard holes. Table 19 gives d<sub>0</sub> = 25 + 3 = <strong>28 mm</strong>. Even for rolled or equivalent smoother edges, e = 1.5 × 28 = <strong>42 mm</strong>, while p<sub>min</sub> = 2.5 × 25 = <strong>62.5 mm</strong>.</p>" +
-                        "<p>Three bolts require 2 × 42 + 2 × 62.5 = <strong>209 mm</strong>, exceeding the available 200 mm. Two require 2 × 42 + 62.5 = <strong>146.5 mm</strong>, so two are geometrically possible under these assumptions. Rougher edge requirements do not rescue a three-bolt layout.</p>" +
-                        "<p>This calculation checks minimum spacing and fit, not the load capacity of the row. Confirm its orientation, actual nominal size and holes, edge preparation, maximum-spacing rules, plate strength, connection forces and fabrication access before treating the layout as a design.</p>",
+                    html: "<p>For n equally spaced bolts in an available row length W, the geometric requirement is <strong>2e + (n − 1)p ≤ W</strong> when both ends have the same centre-to-end allowance e. Use the applicable hole-based end distances and nominal-diameter-based minimum centre spacing. </p><p><strong>Conditional calculation for the bank's 200 mm flat:</strong> interpret the given 25 mm as nominal bolt diameter and use standard holes. Table 19 gives d<sub>0</sub> = 25 + 3 = <strong>28 mm</strong>. Even for rolled or equivalent smoother edges, e = 1.5 × 28 = <strong>42 mm</strong>, while p<sub>min</sub> = 2.5 × 25 = <strong>62.5 mm</strong>.</p><p>Three bolts require 2 × 42 + 2 × 62.5 = <strong>209 mm</strong>, exceeding the available 200 mm. Two require 2 × 42 + 62.5 = <strong>146.5 mm</strong>, so two are geometrically possible under these assumptions. Rougher edge requirements do not rescue a three-bolt layout.</p>",
+                    moreHtml: "<p>A plate's width is the available row length only when the row is actually arranged across that width.</p><p>This calculation checks minimum spacing and fit, not the load capacity of the row. Confirm its orientation, actual nominal size and holes, edge preparation, maximum-spacing rules, plate strength, connection forces and fabrication access before treating the layout as a design.</p>",
                     sources: [{ id: "DESI787-00215", set: 24, question: 25 }]
                 },
                 {
                     id: "bolt-shear-bearing-and-joint-efficiency",
                     title: "Bolt shear, plate bearing and joint efficiency",
-                    html: "<p>For an ordinary bearing-type bolt, IS 800:2007 §10.3.3 gives the unreduced design shear resistance <strong>V<sub>dsb</sub> = f<sub>ub</sub>(n<sub>n</sub>A<sub>nb</sub> + n<sub>s</sub>A<sub>sb</sub>)/(√3γ<sub>mb</sub>)</strong>. The counts n<sub>n</sub> and n<sub>s</sub> refer to shear planes crossing threads and plain shank respectively. A<sub>nb</sub> is the threaded-plane area prescribed for the check; A<sub>sb</sub> = πd<sup>2</sup>/4. Long joints, large grips, packing and simultaneous actions may require further treatment.</p>" +
-                        "<p><strong>Bank M16 class-4.6 lap joint:</strong> take one shear plane, f<sub>ub</sub> = 400 MPa and γ<sub>mb</sub> = 1.25. A<sub>sb</sub> = 201.06 mm<sup>2</sup>. With threads on the plane and the approximation A<sub>nb</sub> = 0.78A<sub>sb</sub> = 156.83 mm<sup>2</sup>, resistance is <strong>28.97 kN</strong>. Using the tabulated M16 coarse-thread stress area of about 157 mm<sup>2</sup> where applicable gives about <strong>29.0 kN</strong>. The 0.78 ratio is an approximation, not an exact area for every thread.</p>" +
-                        "<p>If the same single plane instead crosses only the unthreaded shank, the unreduced value is <strong>37.15 kN</strong>. Thus the thread location explains the different results without changing the bolt grade. Identify the area required by the actual bolt specification and design clause.</p>" +
-                        "<p>For standard holes, §10.3.4 gives <strong>V<sub>dpb</sub> = 2.5k<sub>b</sub>dtf<sub>u</sub>/γ<sub>mb</sub></strong>, with k<sub>b</sub> = min[e/(3d<sub>0</sub>), p/(3d<sub>0</sub>) − 0.25, f<sub>ub</sub>/f<sub>u</sub>, 1]. Here e and p are measured along bearing, f<sub>u</sub> is plate ultimate strength, and t represents the relevant plate thickness bearing in the same direction. Check the plates on each side of the force transfer; a simple lap joint cannot use the sum of both opposing plates as one bearing thickness.</p>" +
-                        "<p>The bolt value for this shear-transfer check is <strong>min(V<sub>dsb</sub>, V<sub>dpb</sub>)</strong>, with plate rupture, block shear and other joint modes checked separately. For the bank's stated 60 kN controlling joint strength and 150 kN solid-plate strength per pitch, efficiency is <strong>100 × 60/150 = 40%</strong>. This assumes no other mode gives a joint strength below 60 kN and both strengths use the same basis.</p>",
+                    html: "<p>For an ordinary bearing-type bolt, IS 800:2007 §10.3.3 gives the unreduced design shear resistance <strong>V<sub>dsb</sub> = f<sub>ub</sub>(n<sub>n</sub>A<sub>nb</sub> + n<sub>s</sub>A<sub>sb</sub>)/(√3γ<sub>mb</sub>)</strong>. The counts n<sub>n</sub> and n<sub>s</sub> refer to shear planes crossing threads and plain shank respectively. A<sub>nb</sub> is the threaded-plane area prescribed for the check; A<sub>sb</sub> = πd<sup>2</sup>/4. Long joints, large grips, packing and simultaneous actions may require further treatment.</p><p><strong>Bank M16 class-4.6 lap joint:</strong> take one shear plane, f<sub>ub</sub> = 400 MPa and γ<sub>mb</sub> = 1.25. A<sub>sb</sub> = 201.06 mm<sup>2</sup>. With threads on the plane and the approximation A<sub>nb</sub> = 0.78A<sub>sb</sub> = 156.83 mm<sup>2</sup>, resistance is <strong>28.97 kN</strong>. Using the tabulated M16 coarse-thread stress area of about 157 mm<sup>2</sup> where applicable gives about <strong>29.0 kN</strong>. The 0.78 ratio is an approximation, not an exact area for every thread.</p><p>If the same single plane instead crosses only the unthreaded shank, the unreduced value is <strong>37.15 kN</strong>. Thus the thread location explains the different results without changing the bolt grade. Identify the area required by the actual bolt specification and design clause.</p><p>For standard holes, §10.3.4 gives <strong>V<sub>dpb</sub> = 2.5k<sub>b</sub>dtf<sub>u</sub>/γ<sub>mb</sub></strong>, with k<sub>b</sub> = min[e/(3d<sub>0</sub>), p/(3d<sub>0</sub>) − 0.25, f<sub>ub</sub>/f<sub>u</sub>, 1]. Here e and p are measured along bearing, f<sub>u</sub> is plate ultimate strength, and t represents the relevant plate thickness bearing in the same direction. </p><p>The bolt value for this shear-transfer check is <strong>min(V<sub>dsb</sub>, V<sub>dpb</sub>)</strong>, with plate rupture, block shear and other joint modes checked separately. For the bank's stated 60 kN controlling joint strength and 150 kN solid-plate strength per pitch, efficiency is <strong>100 × 60/150 = 40%</strong>. This assumes no other mode gives a joint strength below 60 kN and both strengths use the same basis.</p>",
+                    moreHtml: "<p>Check the plates on each side of the force transfer; a simple lap joint cannot use the sum of both opposing plates as one bearing thickness.</p>",
                     sources: [
                         { id: "DESI787-00142", set: 16, question: 31 },
                         { id: "DESI787-00216", set: 24, question: 26 },
@@ -198,18 +167,15 @@
                 {
                     id: "bolt-tension-yielding-cap-and-interaction",
                     title: "Bolt tension includes a yielding cap",
-                    html: "<p>Bolts can transfer tension as well as shear, notably in end plates, hangers and base anchorage details. In the bearing-type bolt tension provision of IS 800:2007 §10.3.5, the design value is <strong>T<sub>db</sub> = min(0.9f<sub>ub</sub>A<sub>n</sub>/γ<sub>mb</sub>, f<sub>yb</sub>A<sub>sb</sub>/γ<sub>m0</sub>)</strong>. A<sub>n</sub> is the specified tensile-stress area and A<sub>sb</sub> the plain shank area. The rupture expression is therefore not the entire check.</p>" +
-                        "<p><em>Supplementary M16 class-4.6 example:</em> assume A<sub>n</sub> = 157 mm<sup>2</sup>, A<sub>sb</sub> = 201.06 mm<sup>2</sup>, f<sub>ub</sub> = 400 MPa, f<sub>yb</sub> = 240 MPa, γ<sub>mb</sub> = 1.25 and γ<sub>m0</sub> = 1.10. The rupture branch gives <strong>45.22 kN</strong>, but the yielding branch gives <strong>43.87 kN</strong>; the lower value controls under these assumptions.</p>" +
-                        "<p>External joint tension is not automatically the force in each bolt divided equally. Eccentricity, bolt-row lever arms and end-plate bending can increase particular bolt forces; prying must be included where relevant. Simultaneous shear and tension need the applicable interaction check, rather than independent use of both full single-action capacities. Friction-grip joints also require their own slip and external-tension treatment; initial pretension is not an extra externally available tensile capacity.</p>",
+                    html: "<p>Bolts can transfer tension as well as shear, notably in end plates, hangers and base anchorage details. In the bearing-type bolt tension provision of IS 800:2007 §10.3.5, the design value is <strong>T<sub>db</sub> = min(0.9f<sub>ub</sub>A<sub>n</sub>/γ<sub>mb</sub>, f<sub>yb</sub>A<sub>sb</sub>/γ<sub>m0</sub>)</strong>. A<sub>n</sub> is the specified tensile-stress area and A<sub>sb</sub> the plain shank area. The rupture expression is therefore not the entire check.</p><p><em>Supplementary M16 class-4.6 example:</em> assume A<sub>n</sub> = 157 mm<sup>2</sup>, A<sub>sb</sub> = 201.06 mm<sup>2</sup>, f<sub>ub</sub> = 400 MPa, f<sub>yb</sub> = 240 MPa, γ<sub>mb</sub> = 1.25 and γ<sub>m0</sub> = 1.10. The rupture branch gives <strong>45.22 kN</strong>, but the yielding branch gives <strong>43.87 kN</strong>; the lower value controls under these assumptions.</p>",
+                    moreHtml: "<p>External joint tension is not automatically the force in each bolt divided equally. Eccentricity, bolt-row lever arms and end-plate bending can increase particular bolt forces; prying must be included where relevant. Simultaneous shear and tension need the applicable interaction check, rather than independent use of both full single-action capacities. Friction-grip joints also require their own slip and external-tension treatment; initial pretension is not an extra externally available tensile capacity.</p>",
                     sources: [{ id: "DESI787-00214", set: 23, question: 33 }]
                 },
                 {
                     id: "cantilever-gussets-and-moment-end-plates",
                     title: "Moment connections need a separate shear load path",
-                    html: "<p>A true cantilever support must transmit both the end shear and fixing moment generated by transverse loading. A gusset attached to the end does not create fixity by name: its plate, fasteners, welds and supporting member must provide the necessary force paths and rotational restraint.</p>" +
-                        "<p>In a typical bolted moment end plate, tensile bolt-row forces and compression contact form a couple to resist moment. For a pure moment with no axial force, its idealized resultants satisfy <strong>T = C = M/z</strong>, where z is their separation. Axial force changes the normal-force equilibrium. <strong>Shear still needs its own mechanism</strong>, such as bolt shear and hole bearing, designed faying-surface friction, or a shear key where detailed; a tension-compression couple alone does not describe all three actions.</p>" +
-                        "<p><em>Supplementary example:</em> a 20 kN end load on a 1.5 m cantilever produces support magnitudes <strong>V = 20 kN</strong> and <strong>M = 30 kN·m</strong>. With a 0.30 m idealized moment lever arm and no axial force, the normal-force couple has <strong>T = C = 100 kN</strong>. The joint must also transfer the 20 kN shear.</p>" +
-                        "<p>These couple resultants are not an instruction to divide 100 kN equally among arbitrary bolts. Determine the actual bolt-row distribution, contact region, plate bending and prying, plus local column flange/web effects, combined bolt actions and connection deformation.</p>",
+                    html: "<p>A true cantilever support must transmit both the end shear and fixing moment generated by transverse loading. A gusset attached to the end does not create fixity by name: its plate, fasteners, welds and supporting member must provide the necessary force paths and rotational restraint.</p><p>In a typical bolted moment end plate, tensile bolt-row forces and compression contact form a couple to resist moment. For a pure moment with no axial force, its idealized resultants satisfy <strong>T = C = M/z</strong>, where z is their separation. </p><p><em>Supplementary example:</em> a 20 kN end load on a 1.5 m cantilever produces support magnitudes <strong>V = 20 kN</strong> and <strong>M = 30 kN·m</strong>. With a 0.30 m idealized moment lever arm and no axial force, the normal-force couple has <strong>T = C = 100 kN</strong>. The joint must also transfer the 20 kN shear.</p><p>These couple resultants are not an instruction to divide 100 kN equally among arbitrary bolts. Determine the actual bolt-row distribution, contact region, plate bending and prying, plus local column flange/web effects, combined bolt actions and connection deformation.</p>",
+                    moreHtml: "<p>Axial force changes the normal-force equilibrium. <strong>Shear still needs its own mechanism</strong>, such as bolt shear and hole bearing, designed faying-surface friction, or a shear key where detailed; a tension-compression couple alone does not describe all three actions.</p>",
                     sources: [
                         { id: "DESI787-00219", set: 24, question: 29 },
                         { id: "DESI787-00220", set: 24, question: 30 }
@@ -218,9 +184,8 @@
                 {
                     id: "column-splices-and-gusset-plate-design",
                     title: "Column splices and gusset plates are designed details",
-                    html: "<p>A column splice connects successive column lengths and must transfer the actions assigned to it: compression or tension, shear and bending, including construction-stage and relevant reversal effects. Properly prepared contact can transfer compression by bearing; it cannot transfer tensile separation. Splice plates, fasteners and welds must supply the remaining intended load paths.</p>" +
-                        "<p>Placing a splice somewhat above a floor can improve erection access, alignment, bolting and welding. This is an erection convention, not proof that the location has minimum moment. Moment diagrams, seismic detailing requirements, floor obstructions, temporary stability and the governing standard determine whether a proposed position is suitable. No universal floor clearance follows from the source question.</p>" +
-                        "<p>A <strong>gusset plate</strong> distributes connected member forces into a broader supporting region. Its thickness depends on force level, unsupported dimensions, material, connection geometry and load eccentricity. Check yielding, net rupture, block shear, compression buckling, local bending and the connection itself as applicable. A nominal thickness without these inputs does not establish adequacy.</p>",
+                    html: "<p>A column splice connects successive column lengths and must transfer the actions assigned to it: compression or tension, shear and bending, including construction-stage and relevant reversal effects. </p>",
+                    moreHtml: "<p>Properly prepared contact can transfer compression by bearing; it cannot transfer tensile separation. Splice plates, fasteners and welds must supply the remaining intended load paths.</p><p>Placing a splice somewhat above a floor can improve erection access, alignment, bolting and welding. This is an erection convention, not proof that the location has minimum moment. Moment diagrams, seismic detailing requirements, floor obstructions, temporary stability and the governing standard determine whether a proposed position is suitable. No universal floor clearance follows from the source question.</p><p>A <strong>gusset plate</strong> distributes connected member forces into a broader supporting region. Its thickness depends on force level, unsupported dimensions, material, connection geometry and load eccentricity. Check yielding, net rupture, block shear, compression buckling, local bending and the connection itself as applicable. A nominal thickness without these inputs does not establish adequacy.</p>",
                     sources: [
                         { id: "DESI787-00193", set: 21, question: 32 },
                         { id: "DESI787-00222", set: 24, question: 32 }
@@ -229,10 +194,8 @@
                 {
                     id: "weld-processes-joints-and-load-directions",
                     title: "Weld process, joint form and load direction are different",
-                    html: "<p>Choose a joining process and a joint form that can transmit the forces and can actually be fabricated and inspected. <strong>Resistance spot welding</strong> produces localized fused nuggets between overlapping sheets using electrode pressure and electrical heating. The overlap, rather than one particular vertical orientation on site, explains the bank's one-below-the-other description.</p>" +
-                        "<p><strong>Fillet welds</strong> commonly join overlapping plates and T joints along the intersection of their faces. A groove or butt-weld detail instead develops fusion through a prepared joint thickness. Spot, fillet and groove describe different process or geometry features; they are not interchangeable strength specifications.</p>" +
-                        "<p>A <strong>side fillet</strong> has its longitudinal weld axis parallel to the applied load; an <strong>end fillet</strong> has that axis transverse to the load. Resolve the force into the stress components required by the selected weld-design method and use the effective throat and length. Directional names alone do not authorize an arbitrary strength multiplier.</p>" +
-                        "<p>In a weld group, the group centroid and the load line also matter. A force not passing through the appropriate weld-group centre introduces moment as well as direct force. The most highly stressed throat location can then govern rather than the average force divided by total weld length.</p>",
+                    html: "<p>Choose a joining process and a joint form that can transmit the forces and can actually be fabricated and inspected. <strong>Resistance spot welding</strong> produces localized fused nuggets between overlapping sheets using electrode pressure and electrical heating. The overlap, rather than one particular vertical orientation on site, explains the bank's one-below-the-other description.</p>",
+                    moreHtml: "<p><strong>Fillet welds</strong> commonly join overlapping plates and T joints along the intersection of their faces. A groove or butt-weld detail instead develops fusion through a prepared joint thickness. Spot, fillet and groove describe different process or geometry features; they are not interchangeable strength specifications.</p><p>A <strong>side fillet</strong> has its longitudinal weld axis parallel to the applied load; an <strong>end fillet</strong> has that axis transverse to the load. Resolve the force into the stress components required by the selected weld-design method and use the effective throat and length. Directional names alone do not authorize an arbitrary strength multiplier.</p><p>In a weld group, the group centroid and the load line also matter. A force not passing through the appropriate weld-group centre introduces moment as well as direct force. The most highly stressed throat location can then govern rather than the average force divided by total weld length.</p>",
                     sources: [
                         { id: "DESI787-00048", set: 6, question: 32 },
                         { id: "DESI787-00052", set: 7, question: 27 },
@@ -242,10 +205,8 @@
                 {
                     id: "fillet-leg-size-effective-throat-and-profile",
                     title: "Fillet leg size is not its perpendicular throat",
-                    html: "<p>For an ideal equal-leg fillet between faces meeting at 90°, the nominal triangular section has two 45° angles. Its leg dimension is the <strong>weld size s</strong>. The shortest perpendicular distance from root to the ideal flat face is the throat, <strong>t<sub>e</sub> = s/√2 ≈ 0.707s</strong>. This is a geometric result for that equal-leg, right-angle triangle, not for every fusion-face angle or unequal-leg detail.</p>" +
-                        "<p>The usual IS 800:2007 design throat factor for this 90° fillet is <strong>0.7s</strong>. For the bank's 5 mm size, the design throat is <strong>3.5 mm</strong>; the exact ideal-triangle distance is about 3.536 mm. Do not substitute the full 5 mm leg as the resisting throat.</p>" +
-                        "<p>Flat or mitre, convex and concave describe the exposed weld profile. A convex face does not automatically earn credit for all its reinforcement, while concavity can reduce the available minimum throat. Adequate fusion, acceptable profile and freedom from relevant defects must be established, not inferred from the apparent quantity of deposited metal.</p>" +
-                        "<p>The root-to-face triangle used here must not be applied blindly to complete- or partial-penetration butt welds. Their effective throat depends on the qualified penetration and joined thickness, excluding reinforcement as required by the applicable provision.</p>",
+                    html: "<p>For an ideal equal-leg fillet between faces meeting at 90°, the nominal triangular section has two 45° angles. Its leg dimension is the <strong>weld size s</strong>. The shortest perpendicular distance from root to the ideal flat face is the throat, <strong>t<sub>e</sub> = s/√2 ≈ 0.707s</strong>. </p><p>The usual IS 800:2007 design throat factor for this 90° fillet is <strong>0.7s</strong>. For the bank's 5 mm size, the design throat is <strong>3.5 mm</strong>; the exact ideal-triangle distance is about 3.536 mm. Do not substitute the full 5 mm leg as the resisting throat.</p>",
+                    moreHtml: "<p>This is a geometric result for that equal-leg, right-angle triangle, not for every fusion-face angle or unequal-leg detail.</p><p>Flat or mitre, convex and concave describe the exposed weld profile. A convex face does not automatically earn credit for all its reinforcement, while concavity can reduce the available minimum throat. Adequate fusion, acceptable profile and freedom from relevant defects must be established, not inferred from the apparent quantity of deposited metal.</p><p>The root-to-face triangle used here must not be applied blindly to complete- or partial-penetration butt welds. Their effective throat depends on the qualified penetration and joined thickness, excluding reinforcement as required by the applicable provision.</p>",
                     sources: [
                         { id: "DESI787-00155", set: 17, question: 33 },
                         { id: "DESI787-00158", set: 18, question: 27 },
@@ -255,13 +216,8 @@
                 {
                     id: "fillet-size-limits-and-effective-length",
                     title: "Fillet size limits and effective length",
-                    html: "<p>Minimum size is influenced by the <strong>thicker part</strong> and heat flow; the usual maximum edge fillet size is controlled by the <strong>thinner local edge</strong> and its geometry. Required structural throat is a further check. These quantities must not be substituted for one another.</p>" +
-                        "<table><thead><tr><th scope='col'>IS 800:2007 detail</th><th scope='col'>Application to the supplied data</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Table 21 minimum, subject to its notes</th><td>A thicker part exactly 20 mm thick falls in the band giving a 5 mm minimum fillet size; the next band is above 20 mm.</td></tr>" +
-                        "<tr><th scope='row'>Usual square-edge limit, §10.5.8.1</th><td>Use thinner-edge thickness minus 1.5 mm for this detail. The 12 mm and 14 mm plates therefore give 12 − 1.5 = 10.5 mm.</td></tr>" +
-                        "<tr><th scope='row'>Rounded rolled-section toe, §10.5.8.2</th><td>The usual maximum is 0.75t, with t the local toe thickness, not a square-edge rule.</td></tr></tbody></table>" +
-                        "<p>Effective length L<sub>e</sub> is the length over which the specified full throat is effective. Under §10.5.4.1, it should be at least <strong>4s</strong>; the usual allowance makes actual straight-weld length <strong>L<sub>e</sub> + 2s</strong>. Starting, stopping, returns and the actual joint detail must be accounted for rather than counting all visible weld as fully effective.</p>" +
-                        "<p><em>Supplementary length example:</em> for s = 5 mm, the 4s criterion gives <strong>L<sub>e</sub> ≥ 20 mm</strong>; the corresponding actual length with the 2s allowance is at least <strong>30 mm</strong>. This is only a dimensional lower bound. Required strength can demand a longer weld, and no universal numerical length can be obtained when s is unspecified.</p>",
+                    html: "<p>Minimum size is influenced by the <strong>thicker part</strong> and heat flow; the usual maximum edge fillet size is controlled by the <strong>thinner local edge</strong> and its geometry. </p><table><thead><tr><th scope='col'>IS 800:2007 detail</th><th scope='col'>Application to the supplied data</th></tr></thead><tbody><tr><th scope='row'>Table 21 minimum, subject to its notes</th><td>A thicker part exactly 20 mm thick falls in the band giving a 5 mm minimum fillet size; the next band is above 20 mm.</td></tr><tr><th scope='row'>Usual square-edge limit, §10.5.8.1</th><td>Use thinner-edge thickness minus 1.5 mm for this detail. The 12 mm and 14 mm plates therefore give 12 − 1.5 = 10.5 mm.</td></tr><tr><th scope='row'>Rounded rolled-section toe, §10.5.8.2</th><td>The usual maximum is 0.75t, with t the local toe thickness, not a square-edge rule.</td></tr></tbody></table><p>Effective length L<sub>e</sub> is the length over which the specified full throat is effective. Under §10.5.4.1, it should be at least <strong>4s</strong>; the usual allowance makes actual straight-weld length <strong>L<sub>e</sub> + 2s</strong>. </p><p><em>Supplementary length example:</em> for s = 5 mm, the 4s criterion gives <strong>L<sub>e</sub> ≥ 20 mm</strong>; the corresponding actual length with the 2s allowance is at least <strong>30 mm</strong>. This is only a dimensional lower bound. </p>",
+                    moreHtml: "<p>Required structural throat is a further check. These quantities must not be substituted for one another.</p><p>Starting, stopping, returns and the actual joint detail must be accounted for rather than counting all visible weld as fully effective.</p><p>Required strength can demand a longer weld, and no universal numerical length can be obtained when s is unspecified.</p>",
                     sources: [
                         { id: "DESI787-00191", set: 21, question: 30 },
                         { id: "DESI787-00192", set: 21, question: 31 },
@@ -272,10 +228,8 @@
                 {
                     id: "butt-weld-penetration-and-effective-throat",
                     title: "Butt welds: specify penetration before calculating area",
-                    html: "<p>A butt or groove weld transfers force through the fused thickness of the joint. Its design needs the <strong>effective throat</strong>, effective length, material strengths, stress state and quality requirements. A drawing also needs adequate preparation and penetration information; merely stating the plate thickness does not define a partial-penetration weld.</p>" +
-                        "<p>For a complete-joint-penetration detail, the effective thickness is associated with the fully joined thinner part under the applicable requirements. For an incomplete-penetration butt weld, IS 800:2007 §10.5.3.3 bases the throat on the <strong>minimum weld-metal thickness common to the connected parts, excluding reinforcement</strong>. Establish that thickness from the actual qualified detail, rather than assuming an arbitrary fraction of the thinner plate.</p>" +
-                        "<p>For a concentric direct-force illustration, the effective weld area is A<sub>w</sub> = t<sub>e</sub>L<sub>e</sub> and average normal stress is N/A<sub>w</sub>. <em>Supplementary example:</em> a specified 8 mm effective throat over 100 mm gives 800 mm<sup>2</sup>; a 100 kN normal force produces <strong>125 MPa</strong>. This is a demand calculation, not proof that the welding procedure or resistance is adequate.</p>" +
-                        "<p>Parent-metal-equivalent resistance requires the relevant full-penetration, material and inspection conditions. Where those conditions are not demonstrated, neither the nominal plate area nor the appearance of a continuous weld establishes full parent-section capacity.</p>",
+                    html: "<p>A butt or groove weld transfers force through the fused thickness of the joint. Its design needs the <strong>effective throat</strong>, effective length, material strengths, stress state and quality requirements. </p><p>For a complete-joint-penetration detail, the effective thickness is associated with the fully joined thinner part under the applicable requirements. For an incomplete-penetration butt weld, IS 800:2007 §10.5.3.3 bases the throat on the <strong>minimum weld-metal thickness common to the connected parts, excluding reinforcement</strong>. </p><p>For a concentric direct-force illustration, the effective weld area is A<sub>w</sub> = t<sub>e</sub>L<sub>e</sub> and average normal stress is N/A<sub>w</sub>. <em>Supplementary example:</em> a specified 8 mm effective throat over 100 mm gives 800 mm<sup>2</sup>; a 100 kN normal force produces <strong>125 MPa</strong>. This is a demand calculation, not proof that the welding procedure or resistance is adequate.</p>",
+                    moreHtml: "<p>A drawing also needs adequate preparation and penetration information; merely stating the plate thickness does not define a partial-penetration weld.</p><p>Establish that thickness from the actual qualified detail, rather than assuming an arbitrary fraction of the thinner plate.</p><p>Parent-metal-equivalent resistance requires the relevant full-penetration, material and inspection conditions. Where those conditions are not demonstrated, neither the nominal plate area nor the appearance of a continuous weld establishes full parent-section capacity.</p>",
                     sources: [
                         { id: "DESI787-00145", set: 16, question: 34 },
                         { id: "DESI787-00153", set: 17, question: 31 }
@@ -284,10 +238,8 @@
                 {
                     id: "weld-resistance-and-shop-site-factors",
                     title: "Calculate weld resistance from throat, length and strength",
-                    html: "<p>For the ordinary fillet-weld design-strength model in IS 800:2007, <strong>f<sub>wd</sub> = f<sub>u</sub>/(√3γ<sub>mw</sub>)</strong>, using the lower relevant ultimate strength of weld metal and parent metal. The normal code factors for these welds are <strong>γ<sub>mw</sub> = 1.25 for shop welding</strong> and <strong>1.50 for site welding</strong>. These values belong to the identified design basis; they are not a reason to neglect workmanship or inspection.</p>" +
-                        "<p>For a simple concentric force transferred by a uniformly stressed effective throat, resistance is <strong>R = f<sub>wd</sub>t<sub>e</sub>L<sub>e</sub></strong>. Eccentric weld groups, long joints, partial penetration and combined stresses require their additional applicable checks. Material strength in N/mm<sup>2</sup> multiplied by throat area in mm<sup>2</sup> gives resistance in N.</p>" +
-                        "<p><em>Supplementary fillet example:</em> use s = 5 mm, t<sub>e</sub> = 3.5 mm, L<sub>e</sub> = 100 mm and weaker ultimate strength f<sub>u</sub> = 410 MPa, with no applicable reduction or eccentricity. Shop welding gives f<sub>wd</sub> ≈ <strong>189.4 MPa</strong> and R ≈ <strong>66.3 kN</strong>. With the same geometry and site factor, the values become <strong>157.8 MPa</strong> and <strong>55.2 kN</strong>.</p>" +
-                        "<p>Assess joint resistance against the actual design actions and the capacities of all connected parts. A general percentage of parent-metal strength cannot replace throat geometry, the failure-mode checks or the specified quality level.</p>",
+                    html: "<p>For the ordinary fillet-weld design-strength model in IS 800:2007, <strong>f<sub>wd</sub> = f<sub>u</sub>/(√3γ<sub>mw</sub>)</strong>, using the lower relevant ultimate strength of weld metal and parent metal. The normal code factors for these welds are <strong>γ<sub>mw</sub> = 1.25 for shop welding</strong> and <strong>1.50 for site welding</strong>. </p><p>For a simple concentric force transferred by a uniformly stressed effective throat, resistance is <strong>R = f<sub>wd</sub>t<sub>e</sub>L<sub>e</sub></strong>. Eccentric weld groups, long joints, partial penetration and combined stresses require their additional applicable checks. Material strength in N/mm<sup>2</sup> multiplied by throat area in mm<sup>2</sup> gives resistance in N.</p><p><em>Supplementary fillet example:</em> use s = 5 mm, t<sub>e</sub> = 3.5 mm, L<sub>e</sub> = 100 mm and weaker ultimate strength f<sub>u</sub> = 410 MPa, with no applicable reduction or eccentricity. Shop welding gives f<sub>wd</sub> ≈ <strong>189.4 MPa</strong> and R ≈ <strong>66.3 kN</strong>. With the same geometry and site factor, the values become <strong>157.8 MPa</strong> and <strong>55.2 kN</strong>.</p>",
+                    moreHtml: "<p>These values belong to the identified design basis; they are not a reason to neglect workmanship or inspection.</p><p>Assess joint resistance against the actual design actions and the capacities of all connected parts. A general percentage of parent-metal strength cannot replace throat geometry, the failure-mode checks or the specified quality level.</p>",
                     sources: [
                         { id: "DESI787-00200", set: 22, question: 30 },
                         { id: "DESI787-00221", set: 24, question: 31 }
@@ -296,19 +248,15 @@
                 {
                     id: "combined-weld-stress-components",
                     title: "Combined weld stress: define the components and method",
-                    html: "<p>A force or moment can produce several components of stress at a weld throat. Resolve them at the <strong>same critical location</strong> using the axes, effective throat and stress definitions of the chosen method. Adding a nominal plate stress to an unrelated weld-group maximum does not create a valid local stress state.</p>" +
-                        "<p>The single-normal-component, single-shear-component equivalent-stress form tested in the bank is <strong>σ<sub>eq</sub> = √(σ<sup>2</sup> + 3τ<sup>2</sup>)</strong>. Here σ is the applicable normal stress and τ the applicable shear stress in the stated local stress model, both in the same units. It is not the simple vector resultant √(σ<sup>2</sup> + τ<sup>2</sup>), and a general multi-normal-component stress state requires its fuller expression.</p>" +
-                        "<p>For IS 800:2007 weld design, use the stress resolution of §10.5.9 and the relevant fillet or butt-weld combination provision and resistance limit in §10.5.10 together. A von Mises-looking expression does not authorize importing a different code's allowable value or assigning an arbitrary longitudinal/transverse weld multiplier.</p>" +
-                        "<p><em>Supplementary arithmetic check:</em> σ = 60 MPa and τ = 40 MPa give √(60<sup>2</sup> + 3 × 40<sup>2</sup>) = √8400 ≈ <strong>91.65 MPa</strong>. This is the equivalent-stress calculation for those stipulated components, not an acceptance verdict without the applicable weld resistance and detail checks.</p>",
+                    html: "<p>A force or moment can produce several components of stress at a weld throat. Resolve them at the <strong>same critical location</strong> using the axes, effective throat and stress definitions of the chosen method. </p><p>The single-normal-component, single-shear-component equivalent-stress form tested in the bank is <strong>σ<sub>eq</sub> = √(σ<sup>2</sup> + 3τ<sup>2</sup>)</strong>. Here σ is the applicable normal stress and τ the applicable shear stress in the stated local stress model, both in the same units. It is not the simple vector resultant √(σ<sup>2</sup> + τ<sup>2</sup>), and a general multi-normal-component stress state requires its fuller expression.</p><p>For IS 800:2007 weld design, use the stress resolution of §10.5.9 and the relevant fillet or butt-weld combination provision and resistance limit in §10.5.10 together. </p><p><em>Supplementary arithmetic check:</em> σ = 60 MPa and τ = 40 MPa give √(60<sup>2</sup> + 3 × 40<sup>2</sup>) = √8400 ≈ <strong>91.65 MPa</strong>. This is the equivalent-stress calculation for those stipulated components, not an acceptance verdict without the applicable weld resistance and detail checks.</p>",
+                    moreHtml: "<p>Adding a nominal plate stress to an unrelated weld-group maximum does not create a valid local stress state.</p><p>A von Mises-looking expression does not authorize importing a different code's allowable value or assigning an arbitrary longitudinal/transverse weld multiplier.</p>",
                     sources: [{ id: "DESI787-00199", set: 22, question: 29 }]
                 },
                 {
                     id: "weldability-and-hydrogen-assisted-cold-cracking",
                     title: "Weldability and hydrogen-assisted cold cracking",
-                    html: "<p><strong>Base-metal type and composition strongly affect weldability.</strong> Carbon and alloy content influence hardenability; impurities, strength level, thickness and heat flow influence suitable consumables and procedures. Joint preparation, access, restraint, electrode condition, current, arc length and heat input all interact with the material rather than making the material irrelevant.</p>" +
-                        "<p>Hydrogen-assisted cold cracking requires an adverse combination of diffusible hydrogen, a susceptible microstructure and tensile stress. It can occur in weld metal or the heat-affected zone after cooling, sometimes with a delay. Its mechanism is different from cracking during solidification.</p>" +
-                        "<p><strong>Low-hydrogen consumables</strong> reduce one important source of hydrogen, provided storage, handling and any specified conditioning are correct. Clean, dry joint surfaces, qualified preheat and interpass control, suitable heat input and restraint management may also be required. Consumable choice alone does not guarantee that cracking is prevented.</p>" +
-                        "<p>Determine the procedure from the actual steel, thickness, hydrogen level and restraint, and use the required inspection plan. These qualitative controls are not a universal preheat temperature, cooling-rate prescription or permission to weld an unidentified plate.</p>",
+                    html: "<p><strong>Base-metal type and composition strongly affect weldability.</strong> Carbon and alloy content influence hardenability; impurities, strength level, thickness and heat flow influence suitable consumables and procedures. </p>",
+                    moreHtml: "<p>Joint preparation, access, restraint, electrode condition, current, arc length and heat input all interact with the material rather than making the material irrelevant.</p><p>Hydrogen-assisted cold cracking requires an adverse combination of diffusible hydrogen, a susceptible microstructure and tensile stress. It can occur in weld metal or the heat-affected zone after cooling, sometimes with a delay. Its mechanism is different from cracking during solidification.</p><p><strong>Low-hydrogen consumables</strong> reduce one important source of hydrogen, provided storage, handling and any specified conditioning are correct. Clean, dry joint surfaces, qualified preheat and interpass control, suitable heat input and restraint management may also be required. Consumable choice alone does not guarantee that cracking is prevented.</p><p>Determine the procedure from the actual steel, thickness, hydrogen level and restraint, and use the required inspection plan. These qualitative controls are not a universal preheat temperature, cooling-rate prescription or permission to weld an unidentified plate.</p>",
                     sources: [
                         { id: "DESI787-00149", set: 17, question: 28 },
                         { id: "DESI787-00224", set: 24, question: 34 }
@@ -317,20 +265,15 @@
                 {
                     id: "hot-cracking-and-welding-procedure-controls",
                     title: "Hot cracking is not solved by a universal cooling rule",
-                    html: "<p><strong>Hot cracking</strong> occurs at high temperature and includes weld-solidification and heat-affected-zone liquation mechanisms. During late solidification, segregated low-melting material and poorly fed interdendritic regions can be unable to accommodate shrinkage or imposed tensile strain. Joint restraint and the developing weld shape therefore matter alongside composition.</p>" +
-                        "<p>Control measures can involve compatible parent and filler compositions, impurity control, joint and bead geometry, welding sequence, restraint reduction and a qualified heat-input/travel-speed range. Solidification behaviour and cooling rate are part of this interacting system, not independent switches that always improve the result when made faster or slower.</p>" +
-                        "<p>Preheating may be part of a suitable procedure, particularly where hydrogen-assisted cold cracking is the concern, but it does not automatically remove the metallurgical and strain conditions responsible for hot cracking. Distinguish the crack mechanism before selecting a corrective action, and qualify the procedure for the actual material and joint.</p>",
+                    html: "<p><strong>Hot cracking</strong> occurs at high temperature and includes weld-solidification and heat-affected-zone liquation mechanisms. During late solidification, segregated low-melting material and poorly fed interdendritic regions can be unable to accommodate shrinkage or imposed tensile strain. Joint restraint and the developing weld shape therefore matter alongside composition.</p>",
+                    moreHtml: "<p>Control measures can involve compatible parent and filler compositions, impurity control, joint and bead geometry, welding sequence, restraint reduction and a qualified heat-input/travel-speed range. Solidification behaviour and cooling rate are part of this interacting system, not independent switches that always improve the result when made faster or slower.</p><p>Preheating may be part of a suitable procedure, particularly where hydrogen-assisted cold cracking is the concern, but it does not automatically remove the metallurgical and strain conditions responsible for hot cracking. Distinguish the crack mechanism before selecting a corrective action, and qualify the procedure for the actual material and joint.</p>",
                     sources: [{ id: "DESI787-00225", set: 25, question: 25 }]
                 },
                 {
                     id: "column-base-load-transfer-and-bearing-bases",
                     title: "Column bases: preserve the distinction between code provisions",
-                    html: "<p>A column base transfers column force through shaft contact or its connecting welds, stiffeners or gussets, into the base plate, bedding/grout, concrete support and foundation. Check plate bending, contact bearing, anchorage, shear transfer and the supporting construction. Anchors and shear keys provide only the actions for which they are actually detailed.</p>" +
-                        "<p>For a rigid-base idealization with full compressive contact and a suitable linear pressure distribution, <strong>q = N/A ± M/Z</strong>. Use consistent units; N in N, M in N·mm, A in mm<sup>2</sup> and base-contact section modulus Z in mm<sup>3</sup> give q in MPa. If the calculation gives q<sub>min</sub> &lt; 0, compression-only contact cannot sustain that tensile pressure: use the appropriate partial-contact and anchor-force model instead.</p>" +
-                        "<p>The supplied <strong>IS 800:2007 scan, §7.4.1, printed page 46</strong>, states a bearing strength of <strong>0.6f<sub>ck</sub></strong>, using the smaller characteristic cube strength of the concrete or bedding material. The nearby <strong>0.45 is a friction coefficient</strong> for the proper steel-to-concrete/grout contact surface; it is not that paragraph's bearing-stress coefficient.</p>" +
-                        "<p><strong>Separately, IS 456:2000 §34.4</strong> treats bearing transfer at a column or pedestal base. Its limit-state expression is <strong>0.45f<sub>ck</sub> min[√(A<sub>1</sub>/A<sub>2</sub>), 2]</strong>. A<sub>2</sub> is the loaded area; A<sub>1</sub> is the supporting area permitted by that provision. In a sloped or stepped footing, the supporting-area construction uses a wholly contained frustum with the loaded area as its upper base and a one-vertical-to-two-horizontal side slope. It is not automatically the entire footing plan area.</p>" +
-                        "<p><em>Supplementary comparison, not a combined design rule:</em> f<sub>ck</sub> = 25 MPa gives <strong>15 MPa</strong> under the supplied IS 800 bearing paragraph and <strong>11.25 MPa</strong> for the unenhanced IS 456 limit-state value. A qualifying A<sub>1</sub>/A<sub>2</sub> = 4 makes the latter <strong>22.5 MPa</strong>; the enhancement multiplier is capped at 2 even if its square root would be larger. A 600 kN concentric force at an assumed uniform 15 MPa needs 40000 mm<sup>2</sup> of effective bearing area, but that alone does not size or approve the base plate.</p>" +
-                        "<p>These are two separately identified provisions and scopes. Do not select the larger value opportunistically, attach the IS 456 enhancement to the IS 800 coefficient, or claim that later amendments have been reconciled here. Establish the governing project basis before applying a bearing resistance.</p>",
+                    html: "<p>A column base transfers column force through shaft contact or its connecting welds, stiffeners or gussets, into the base plate, bedding/grout, concrete support and foundation. </p><p>For a rigid-base idealization with full compressive contact and a suitable linear pressure distribution, <strong>q = N/A ± M/Z</strong>. Use consistent units; N in N, M in N·mm, A in mm<sup>2</sup> and base-contact section modulus Z in mm<sup>3</sup> give q in MPa. If the calculation gives q<sub>min</sub> &lt; 0, compression-only contact cannot sustain that tensile pressure: use the appropriate partial-contact and anchor-force model instead.</p><p>The supplied <strong>IS 800:2007 scan, §7.4.1, printed page 46</strong>, states a bearing strength of <strong>0.6f<sub>ck</sub></strong>, using the smaller characteristic cube strength of the concrete or bedding material. The nearby <strong>0.45 is a friction coefficient</strong> for the proper steel-to-concrete/grout contact surface; it is not that paragraph's bearing-stress coefficient.</p><p><strong>Separately, IS 456:2000 §34.4</strong> treats bearing transfer at a column or pedestal base. Its limit-state expression is <strong>0.45f<sub>ck</sub> min[√(A<sub>1</sub>/A<sub>2</sub>), 2]</strong>. A<sub>2</sub> is the loaded area; A<sub>1</sub> is the supporting area permitted by that provision. </p><p><em>Supplementary comparison, not a combined design rule:</em> f<sub>ck</sub> = 25 MPa gives <strong>15 MPa</strong> under the supplied IS 800 bearing paragraph and <strong>11.25 MPa</strong> for the unenhanced IS 456 limit-state value. A qualifying A<sub>1</sub>/A<sub>2</sub> = 4 makes the latter <strong>22.5 MPa</strong>; the enhancement multiplier is capped at 2 even if its square root would be larger. A 600 kN concentric force at an assumed uniform 15 MPa needs 40000 mm<sup>2</sup> of effective bearing area, but that alone does not size or approve the base plate.</p><p>These are two separately identified provisions and scopes. Do not select the larger value opportunistically, attach the IS 456 enhancement to the IS 800 coefficient, or claim that later amendments have been reconciled here. Establish the governing project basis before applying a bearing resistance.</p>",
+                    moreHtml: "<p>Check plate bending, contact bearing, anchorage, shear transfer and the supporting construction. Anchors and shear keys provide only the actions for which they are actually detailed.</p><p>In a sloped or stepped footing, the supporting-area construction uses a wholly contained frustum with the loaded area as its upper base and a one-vertical-to-two-horizontal side slope. It is not automatically the entire footing plan area.</p>",
                     sources: [{ id: "DESI787-00167", set: 19, question: 26 }]
                 }
             ],
@@ -344,166 +287,602 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Section-choice qualifications:</strong> the ISWB and tubular-section keys are not universal column-selection rules. A flange width close to section depth does not establish equal radii of gyration, and rectangular tubes need not have equal axis properties. Compare the actual governing slenderness, buckling class, local wall slenderness, connections and completed cost. Wide-flange or hollow sections may be advantageous without being automatically best.</p>",
-                    sources: [
-                        { id: "DESI787-00050", set: 7, question: 25 },
-                        { id: "DESI787-00147", set: 17, question: 26 }
+                    "id": "check-desi787-00152",
+                    "status": "review",
+                    "prompt": "When the bolts are subjected to reversal of stresses, the most suitable type of Bolt is",
+                    "html": "<p><strong>Reversal performance depends on the complete connection.</strong> Close-fit turned bolts can be a defensible choice among the listed alternatives, but still act in bearing. Slip-resistant pretensioned connections are another strategy; neither is guaranteed solely by a bolt name.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00152",
+                            "set": 1,
+                            "question": 29
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Web-only and local-failure wording:</strong> the web normally carries most vertical shear, but the keyed web only is not literally exact, and over 90% is not a geometry-independent constant. The concentrated-load answer for crippling identifies the relevant loading, but local bearing-related yielding or distortion must be distinguished from web buckling rather than reduced to a universal crushing-at-one-point description.</p>",
-                    sources: [
-                        { id: "DESI787-00051", set: 7, question: 26 },
-                        { id: "DESI787-00146", set: 17, question: 25 }
+                    "id": "check-desi787-00204",
+                    "status": "review",
+                    "prompt": "Proof stress for the minimum bolt tension is:",
+                    "html": "<p><strong>Stress versus installation force:</strong> the IS 800:2007 slip model's f<sub>0</sub> = 0.7f<sub>ub</sub> is a stress convention; its associated installation force is F<sub>0</sub> = 0.7f<sub>ub</sub>A<sub>n</sub>. Calling 0.7f<sub>ub</sub> alone a proof load omits area. It is also not a universal replacement for the proof-stress requirement in every bolt manufacturing specification.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00204",
+                            "set": 1,
+                            "question": 31
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>85t is not the verified 2007 trigger:</strong> IS 800:2007 §8.4.2.1 calls for shear-buckling verification of an unstiffened web beyond d/t<sub>w</sub> = 67ε. The bank's 85t answer and associated stiffeners-required explanation must not be promoted as that clause. A check trigger is not an unconditional command to install intermediate stiffeners, nor does it select their spacing or size.</p>",
-                    sources: [{ id: "DESI787-00141", set: 16, question: 30 }]
-                },
-                {
-                    html: "<p><strong>Member names do not fix every force sign:</strong> compression plus bending is appropriate for the usual gravity-loaded rafter with a purlin between joints, but wind or other combinations can reverse its actions. A tie is a tension member; a rafter or boom is not necessarily compressive in every case. The tie explanation's only-net-area claim omits gross yielding, block shear, shear lag where applicable and connection resistance.</p>",
-                    sources: [
-                        { id: "DESI787-00067", set: 8, question: 32 },
-                        { id: "DESI787-00206", set: 23, question: 25 }
+                    "id": "check-desi787-00050",
+                    "status": "review",
+                    "prompt": "Commonly used steel section for columns?",
+                    "html": "<p><strong>Section-choice qualifications:</strong> the ISWB and tubular-section keys are not universal column-selection rules. </p><p>Compare the actual governing slenderness, buckling class, local wall slenderness, connections and completed cost. </p><p>Wide-flange or hollow sections may be advantageous without being automatically best.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00050",
+                            "set": 7,
+                            "question": 25
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Batten rule versus ambiguous pattern plates:</strong> the verified welded tie/batten overlap in IS 800:2007 §7.7.4.1 is at least 4t. The other source says pattern plates and keys more than 6t without identifying a supported detail. Its wording must not be silently rewritten as batten or splice plate, and the unverified 6t rule is not adopted here.</p>",
-                    sources: [
-                        { id: "DESI787-00055", set: 7, question: 30 },
-                        { id: "DESI787-00154", set: 17, question: 32 }
+                    "id": "check-desi787-00051",
+                    "status": "review",
+                    "prompt": "Web crippling in steel beam occurs due to",
+                    "html": "<p><strong>Web-only and local-failure wording:</strong> the web normally carries most vertical shear, but the keyed web only is not literally exact, and over 90% is not a geometry-independent constant. </p><p>The concentrated-load answer for crippling identifies the relevant loading, but local bearing-related yielding or distortion must be distinguished from web buckling rather than reduced to a universal crushing-at-one-point description.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00051",
+                            "set": 7,
+                            "question": 26
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>No universal 1.6 mm hole allowance:</strong> IS 800:2007 Table 19 uses 1 mm for nominal 12–14 mm, 2 mm for 16–22 mm and 24 mm, and 3 mm above 24 mm for standard clearance holes. The source omits the bolt diameter and hole category, so choosing 1.6 mm as the closest general practice is not a verified code answer.</p>",
-                    sources: [{ id: "DESI787-00150", set: 17, question: 29 }]
-                },
-                {
-                    html: "<p><strong>Net-area assumptions and incorrect units:</strong> the 75 mm by 10 mm plate with an actual 18 mm hole has geometric net area <strong>570 mm<sup>2</sup> = 5.70 cm<sup>2</sup></strong>. IS 800:2007 §6.3.1 would give design area <strong>550 mm<sup>2</sup></strong> if the hole were directly punched, through its separate 2 mm deduction allowance. Manufacture is not specified; the explanation instead incorrectly adds bolt clearance to an already given hole. The keyed <strong>550 cm<sup>2</sup></strong> remains wrong even under the punched-hole interpretation. Likewise, the 400 mm plate's 3820 mm<sup>2</sup> assumes no directly punched deduction; that design area would otherwise be 3800 mm<sup>2</sup>. Do not invent manufacture or repair option units to defend a key.</p>",
-                    sources: [
-                        { id: "DESI787-00203", set: 22, question: 33 },
-                        { id: "DESI787-00056", set: 7, question: 31 }
+                    "id": "check-desi787-00052",
+                    "status": "review",
+                    "prompt": "A fillet weld whose axis is parallel to the direction of the applied load, is known as",
+                    "html": "<p><strong>Side versus end fillet:</strong> the parallel-axis definition of a side fillet is correct. Its explanation should not be read as a universal permission to apply different arbitrary strength factors to side and end welds. Resolve the load using the stress model and resistance rules of the chosen code and detail.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00052",
+                            "set": 7,
+                            "question": 27
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Reversal, fit and post-slip behaviour:</strong> HSFG is a suitable slip-resistant strategy when correctly designed and installed, not a guarantee of no slip or bearing at every load. A turned-and-fitted bolt can be defensible among the other item's listed choices, but its close fit does not prevent bearing. The sources' absolute no-bearing and automatic-loosening explanations overstate the distinction; fatigue performance depends on the complete detail.</p>",
-                    sources: [
-                        { id: "DESI787-00054", set: 7, question: 29 },
-                        { id: "DESI787-00152", set: 1, question: 29 },
-                        { id: "DESI787-00205", set: 22, question: 34 }
+                    "id": "check-desi787-00054",
+                    "status": "review",
+                    "prompt": "For the reversal of stresses, the most suitable bolt is",
+                    "html": "<p><strong>Reversal, fit and post-slip behaviour:</strong> HSFG is a suitable slip-resistant strategy when correctly designed and installed, not a guarantee of no slip or bearing at every load. </p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00054",
+                            "set": 7,
+                            "question": 29
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Nominal bolt-class interpretation:</strong> 4.6 gives nominal 400/240 MPa ultimate/yield strengths, and 8.8 gives nominal 800/640 MPa. These support the bank's shorthand answers but do not establish every size-dependent minimum, proof stress, thread area or product requirement. In particular, an M36 certification cannot be inferred solely from the 8.8 arithmetic.</p>",
-                    sources: [
-                        { id: "DESI787-00188", set: 21, question: 27 },
-                        { id: "DESI787-00208", set: 23, question: 27 }
+                    "id": "check-desi787-00055",
+                    "status": "review",
+                    "prompt": "The overlap for a weld connection in a batten should not be less than",
+                    "html": "<p>Its wording must not be silently rewritten as batten or splice plate, and the unverified 6t rule is not adopted here.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00055",
+                            "set": 7,
+                            "question": 30
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Stress versus installation force:</strong> the IS 800:2007 slip model's f<sub>0</sub> = 0.7f<sub>ub</sub> is a stress convention; its associated installation force is F<sub>0</sub> = 0.7f<sub>ub</sub>A<sub>n</sub>. Calling 0.7f<sub>ub</sub> alone a proof load omits area. It is also not a universal replacement for the proof-stress requirement in every bolt manufacturing specification.</p>",
-                    sources: [{ id: "DESI787-00204", set: 1, question: 31 }]
-                },
-                {
-                    html: "<p><strong>M16 minimum pitch is 40 mm:</strong> §10.2.2 gives 2.5 × 16 = 40 mm, not the keyed 27. The separate 2.5d source states the correct rule. For comparison, 27 mm equals 1.5 times an 18 mm hole, which can be a smoother-edge end distance; it is not a different minimum pitch caused by class 4.6.</p>",
-                    sources: [
-                        { id: "DESI787-00184", set: 20, question: 33 },
-                        { id: "DESI787-00210", set: 23, question: 29 }
+                    "id": "check-desi787-00056",
+                    "status": "review",
+                    "prompt": "What is the net section area of steel plate 40cm wide and 10mm thick with one bolt if diameter of bolt hole is 18mm?",
+                    "html": "<p><strong>Net-area assumptions and incorrect units:</strong> the 75 mm by 10 mm plate with an actual 18 mm hole has geometric net area <strong>570 mm<sup>2</sup> = 5.70 cm<sup>2</sup></strong>. </p><p>IS 800:2007 §6.3.1 would give design area <strong>550 mm<sup>2</sup></strong> if the hole were directly punched, through its separate 2 mm deduction allowance. </p><p>Manufacture is not specified; the explanation instead incorrectly adds bolt clearance to an already given hole. </p><p>The keyed <strong>550 cm<sup>2</sup></strong> remains wrong even under the punched-hole interpretation. </p><p>Likewise, the 400 mm plate's 3820 mm<sup>2</sup> assumes no directly punched deduction; that design area would otherwise be 3800 mm<sup>2</sup>. </p><p>Do not invent manufacture or repair option units to defend a key.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00056",
+                            "set": 7,
+                            "question": 31
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>32t is real but incomplete:</strong> §10.2.3.1 has the general maximum min(32t, 300 mm), contrary to the explanation's statement that 32t is not standard. Ordinary stress-direction rows also have tension min(16t, 200 mm) or compression min(12t, 200 mm) limits, with separate outside-edge-row and special-detail provisions. A bare 32t answer cannot be applied to every row.</p>",
-                    sources: [{ id: "DESI787-00211", set: 23, question: 30 }]
-                },
-                {
-                    html: "<p><strong>The 50% stagger allowance has conditions:</strong> equal stagger intervals, gauge no greater than 75 mm, the specified spacing categories in §§10.2.3.2–3 and the general cap in §10.2.3.1 all matter. The bank's explanation incorrectly presents a longer net-failure path as enough justification. Detailing relaxation and net-section resistance are separate checks.</p>",
-                    sources: [{ id: "DESI787-00212", set: 23, question: 31 }]
-                },
-                {
-                    html: "<p><strong>Three nominal 25 mm bolts do not fit the stated conditional layout:</strong> standard holes are 28 mm, so even smoother-edge distances are 42 mm, not 37.5 mm. Three require <strong>209 mm</strong>; two require 146.5 mm. Two are possible only after interpreting 200 mm as the available row length and confirming the assumed nominal diameter, hole and edge conditions. The bank's three-bolt result uses bolt diameter where hole diameter is required.</p>",
-                    sources: [{ id: "DESI787-00215", set: 24, question: 25 }]
-                },
-                {
-                    html: "<p><strong>The 29 kN shear key is conditionally correct:</strong> one threaded shear plane in an M16 class-4.6 bolt gives about <strong>28.97 kN</strong> using 0.78 times shank area, or about <strong>29.0 kN</strong> using the applicable area near 157 mm<sup>2</sup>. A plain-shank plane gives 37.15 kN. No different grade is needed to explain the key. The explanation's alternative multiplication by √3γ<sub>mb</sub> is not the design shear formula; bearing and other applicable checks may still govern the joint.</p>",
-                    sources: [{ id: "DESI787-00216", set: 24, question: 26 }]
-                },
-                {
-                    html: "<p><strong>Check the first limiting mode, not a supposedly gentle failure:</strong> bolts are commonly used for shear transfer but can also be designed for tension. Taking the smaller shear and bearing resistance identifies the controlling limit state; it does not ensure a least-catastrophic failure sequence. The 40% efficiency calculation is correct only if the stated 60 kN is the controlling joint strength per pitch and no other mode is weaker.</p>",
-                    sources: [
-                        { id: "DESI787-00142", set: 16, question: 31 },
-                        { id: "DESI787-00218", set: 24, question: 28 },
-                        { id: "DESI787-00217", set: 24, question: 27 }
+                    "id": "check-desi787-00067",
+                    "status": "review",
+                    "prompt": "When purlins are placed between panel points the principal rafter is to be designed for",
+                    "html": "<p><strong>Member names do not fix every force sign:</strong> compression plus bending is appropriate for the usual gravity-loaded rafter with a purlin between joints, but wind or other combinations can reverse its actions. </p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00067",
+                            "set": 8,
+                            "question": 32
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Bolt tension formula is incomplete without the cap:</strong> the keyed 0.9f<sub>ub</sub>A<sub>n</sub>/γ<sub>mb</sub> is the rupture branch. The supplied IS 800:2007 §10.3.5 also caps it by <strong>f<sub>yb</sub>A<sub>sb</sub>/γ<sub>m0</sub></strong>. Retain both branches with their stated areas and factors; do not invent another multiplier in the yielding branch. Prying and concurrent shear remain separate demands/checks.</p>",
-                    sources: [{ id: "DESI787-00214", set: 23, question: 33 }]
-                },
-                {
-                    html: "<p><strong>The end-plate answer omits shear transfer:</strong> a tension-compression couple explains the moment component, not how all moment, axial force and shear reach the support. Identify bolt shear/bearing, designed friction or another detailed shear path. The cantilever's shear-plus-moment answer is appropriate for a true moment-resisting support, but attaching an unspecified gusset does not by itself establish that restraint.</p>",
-                    sources: [
-                        { id: "DESI787-00220", set: 24, question: 30 },
-                        { id: "DESI787-00219", set: 24, question: 29 }
+                    "id": "check-desi787-00141",
+                    "status": "review",
+                    "prompt": "Intermediate vertical stiffeners in a plate girder need to be provided if the depth of web exceeds",
+                    "html": "<p><strong>85t is not the verified 2007 trigger:</strong> IS 800:2007 §8.4.2.1 calls for shear-buckling verification of an unstiffened web beyond d/t<sub>w</sub> = 67ε. The bank's 85t answer and associated stiffeners-required explanation must not be promoted as that clause. A check trigger is not an unconditional command to install intermediate stiffeners, nor does it select their spacing or size.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00141",
+                            "set": 16,
+                            "question": 30
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Unspecified gusset minimum and splice location:</strong> the supplied data do not establish a universal 12 mm gusset/splice-plate minimum. Thickness needs the actual resistance and stability checks. Above-floor splices are often convenient for erection, but that location need not avoid maximum moment and supplies no universal minimum clear distance. Use the actual force envelope, access and governing detailing provisions.</p>",
-                    sources: [
-                        { id: "DESI787-00193", set: 21, question: 32 },
-                        { id: "DESI787-00222", set: 24, question: 32 }
+                    "id": "check-desi787-00142",
+                    "status": "review",
+                    "prompt": "Bolts are most suitable to carry",
+                    "html": "<p><strong>Check the first limiting mode, not a supposedly gentle failure:</strong> bolts are commonly used for shear transfer but can also be designed for tension. </p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00142",
+                            "set": 16,
+                            "question": 31
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Side versus end fillet:</strong> the parallel-axis definition of a side fillet is correct. Its explanation should not be read as a universal permission to apply different arbitrary strength factors to side and end welds. Resolve the load using the stress model and resistance rules of the chosen code and detail.</p>",
-                    sources: [{ id: "DESI787-00052", set: 7, question: 27 }]
-                },
-                {
-                    html: "<p><strong>Partial penetration is not universally 5/8 of the thinner plate:</strong> §10.5.3.3 uses the actual minimum common weld-metal thickness, excluding reinforcement. Complete and incomplete penetration need their own qualified joint geometry. A generic root-to-face description or an assumed 5/8 ratio does not establish the effective throat of every butt weld.</p>",
-                    sources: [
-                        { id: "DESI787-00145", set: 16, question: 34 },
-                        { id: "DESI787-00153", set: 17, question: 31 }
+                    "id": "check-desi787-00145",
+                    "status": "review",
+                    "prompt": "A butt weld is specified by",
+                    "html": "<p><strong>Partial penetration is not universally 5/8 of the thinner plate:</strong> §10.5.3.3 uses the actual minimum common weld-metal thickness, excluding reinforcement. </p><p>A generic root-to-face description or an assumed 5/8 ratio does not establish the effective throat of every butt weld.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00145",
+                            "set": 16,
+                            "question": 34
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Keep the fillet-size boundaries and edge types separate:</strong> exactly 20 mm thicker-part thickness gives the Table 21 minimum of 5 mm, subject to its notes. A rounded rolled-section toe has the usual <strong>0.75t</strong> maximum, not the keyed t/2. The 10.5 mm answer for 12 mm and 14 mm plates is appropriate to the usual square-edge thinner-minus-1.5 mm detail, not every possible weld geometry.</p>",
-                    sources: [
-                        { id: "DESI787-00191", set: 21, question: 30 },
-                        { id: "DESI787-00198", set: 22, question: 28 },
-                        { id: "DESI787-00201", set: 22, question: 31 }
+                    "id": "check-desi787-00146",
+                    "status": "review",
+                    "prompt": "In rolled steel beams, shear force is mostly resisted by",
+                    "html": "<p><strong>Web-only and local-failure wording:</strong> the web normally carries most vertical shear, but the keyed web only is not literally exact, and over 90% is not a geometry-independent constant. </p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00146",
+                            "set": 17,
+                            "question": 25
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>No universal 45 mm effective length:</strong> the verified §10.5.4.1 criterion is at least 4s, with the usual actual-length allowance of 2s beyond effective length. The source supplies no weld size or sufficient detail. Its extra 40 mm minimum and selected 45 mm cannot be adopted as an unqualified statement of that clause.</p>",
-                    sources: [{ id: "DESI787-00192", set: 21, question: 31 }]
+                    "id": "check-desi787-00147",
+                    "status": "review",
+                    "prompt": "The most economical section for a column, is",
+                    "html": "<p><strong>Section-choice qualifications:</strong> the ISWB and tubular-section keys are not universal column-selection rules. </p><p>A flange width close to section depth does not establish equal radii of gyration, and rectangular tubes need not have equal axis properties. </p><p>Compare the actual governing slenderness, buckling class, local wall slenderness, connections and completed cost. </p><p>Wide-flange or hollow sections may be advantageous without being automatically best.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00147",
+                            "set": 17,
+                            "question": 26
+                        }
+                    ]
                 },
                 {
-                    html: "<p><strong>Equivalent stress is method-dependent:</strong> √(σ<sup>2</sup> + 3τ<sup>2</sup>) is the stated normal-plus-shear form, but the symbols must refer to the prescribed local stress components. It is not a complete acceptance rule for every weld, arbitrary stress state or code. Use the selected fillet/butt provision, its definitions and its resistance limit together.</p>",
-                    sources: [{ id: "DESI787-00199", set: 22, question: 29 }]
+                    "id": "check-desi787-00149",
+                    "status": "review",
+                    "prompt": "Cold cracks can be prevented by",
+                    "html": "<p><strong>Low hydrogen is a control, not an unconditional guarantee:</strong> low-hydrogen electrodes address an important cause of cold cracking, but storage, moisture, susceptible microstructure and tensile restraint also matter. Cracking can involve the weld metal as well as the heat-affected zone. The required preheat, interpass and heat-input controls depend on the actual material and joint.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00149",
+                            "set": 17,
+                            "question": 28
+                        }
+                    ]
                 },
                 {
-                    html: "<p><strong>Unverified global 80% weld rule:</strong> no authoritative general requirement that every welded portion have at least 80% of parent-material strength was verified in the supplied IS 800:2007 text. The source provides no usable detail or clause establishing it. Do not adopt that percentage, convert it into a blanket butt-weld rule or assign a historical clause number without the relevant edition.</p>",
-                    sources: [{ id: "DESI787-00221", set: 24, question: 31 }]
+                    "id": "check-desi787-00150",
+                    "status": "review",
+                    "prompt": "The diameter of a bolt hole is taken as the nominal diameter of the bolt plus",
+                    "html": "<p><strong>No universal 1.6 mm hole allowance:</strong> IS 800:2007 Table 19 uses 1 mm for nominal 12–14 mm, 2 mm for 16–22 mm and 24 mm, and 3 mm above 24 mm for standard clearance holes. The source omits the bolt diameter and hole category, so choosing 1.6 mm as the closest general practice is not a verified code answer.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00150",
+                            "set": 17,
+                            "question": 29
+                        }
+                    ]
                 },
                 {
-                    html: "<p><strong>Base-metal type is important to sound welding:</strong> the keyed claim that metal-plate type does not govern weld quality is incorrect. Composition, hardenability, impurities, thickness and strength level influence weldability and procedure selection. Electrode choice, arc conditions and joint geometry cannot be specified reliably by treating the parent metal as irrelevant.</p>",
-                    sources: [{ id: "DESI787-00224", set: 24, question: 34 }]
+                    "id": "check-desi787-00153",
+                    "status": "review",
+                    "prompt": "The size of a butt weld is specified by the effective throat thickness which in the case of incomplete penetration, is taken as",
+                    "html": "<p><strong>Partial penetration is not universally 5/8 of the thinner plate:</strong> §10.5.3.3 uses the actual minimum common weld-metal thickness, excluding reinforcement. </p><p>Complete and incomplete penetration need their own qualified joint geometry. </p><p>A generic root-to-face description or an assumed 5/8 ratio does not establish the effective throat of every butt weld.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00153",
+                            "set": 17,
+                            "question": 31
+                        }
+                    ]
                 },
                 {
-                    html: "<p><strong>Low hydrogen is a control, not an unconditional guarantee:</strong> low-hydrogen electrodes address an important cause of cold cracking, but storage, moisture, susceptible microstructure and tensile restraint also matter. Cracking can involve the weld metal as well as the heat-affected zone. The required preheat, interpass and heat-input controls depend on the actual material and joint.</p>",
-                    sources: [{ id: "DESI787-00149", set: 17, question: 28 }]
+                    "id": "check-desi787-00154",
+                    "status": "review",
+                    "prompt": "The overlap of pattern plates with the main members in welded connections should be more than",
+                    "html": "<p><strong>“Pattern plate” is not a verified batten detail.</strong> The cited IS 800 welded tie/batten overlap is at least 4t. The source's greater-than-6t choice cannot be adopted by silently renaming its unspecified plate.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00154",
+                            "set": 17,
+                            "question": 32
+                        }
+                    ]
                 },
                 {
-                    html: "<p><strong>Preheating does not universally prevent hot cracks:</strong> the bank's key and explanation conflate a possible thermal-control measure with a guaranteed cure. Hot-cracking susceptibility depends on composition, segregation, joint and bead geometry, restraint, shrinkage strain and solidification conditions. Preheat is often relevant to hydrogen-assisted cold-crack control; it does not automatically remove hot-crack causes.</p>",
-                    sources: [{ id: "DESI787-00225", set: 25, question: 25 }]
+                    "id": "check-desi787-00164",
+                    "status": "review",
+                    "prompt": "According to IS : 800-1962 the permissible bending stress in steel slab plates, is",
+                    "html": "<p><strong>Historical stress is not a verified current allowance:</strong> the source explicitly names IS 800:1962 and quotes 1890 kg/cm<sup>2</sup>. Interpreting the intended force unit as kgf/cm<sup>2</sup>, <strong>1890 × 0.0980665 = 185.345685 MPa</strong>. This checks the conversion only. The quoted coefficient and its precise 1962 scope were not independently verified, and the value must not be used as a current limit-state slab-base resistance.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00164",
+                            "set": 18,
+                            "question": 33
+                        }
+                    ]
                 },
                 {
-                    html: "<p><strong>Historical stress is not a verified current allowance:</strong> the source explicitly names IS 800:1962 and quotes 1890 kg/cm<sup>2</sup>. Interpreting the intended force unit as kgf/cm<sup>2</sup>, <strong>1890 × 0.0980665 = 185.345685 MPa</strong>. This checks the conversion only. The quoted coefficient and its precise 1962 scope were not independently verified, and the value must not be used as a current limit-state slab-base resistance.</p>",
-                    sources: [{ id: "DESI787-00164", set: 18, question: 33 }]
+                    "id": "check-desi787-00167",
+                    "status": "review",
+                    "prompt": "Permissible bearing stress for column base in limit state method is",
+                    "html": "<p><strong>Column-base key and code attribution:</strong> <strong>0.45√f<sub>ck</sub></strong> is not either verified bearing expression, and the IS 456 area multiplier is capped at <strong>2, not √2</strong>. The supplied IS 800:2007 §7.4.1 scan actually gives <strong>0.6f<sub>ck</sub></strong> using the smaller concrete/bedding strength; its nearby 0.45 is friction. IS 456:2000 §34.4 separately gives 0.45f<sub>ck</sub> with its geometrically qualified area enhancement. None of the three offered options establishes the correct design basis. Do not mix the provisions or claim later amendments have been reconciled.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00167",
+                            "set": 19,
+                            "question": 26
+                        }
+                    ]
                 },
                 {
-                    html: "<p><strong>Column-base key and code attribution:</strong> <strong>0.45√f<sub>ck</sub></strong> is not either verified bearing expression, and the IS 456 area multiplier is capped at <strong>2, not √2</strong>. The supplied IS 800:2007 §7.4.1 scan actually gives <strong>0.6f<sub>ck</sub></strong> using the smaller concrete/bedding strength; its nearby 0.45 is friction. IS 456:2000 §34.4 separately gives 0.45f<sub>ck</sub> with its geometrically qualified area enhancement. None of the three offered options establishes the correct design basis. Do not mix the provisions or claim later amendments have been reconciled.</p>",
-                    sources: [{ id: "DESI787-00167", set: 19, question: 26 }]
+                    "id": "check-desi787-00184",
+                    "status": "review",
+                    "prompt": "The minimum pitch for M16 bolt of grade 4.6 is?",
+                    "html": "<p><strong>M16 minimum pitch is 40 mm:</strong> §10.2.2 gives 2.5 × 16 = 40 mm, not the keyed 27. </p><p>The separate 2.5d source states the correct rule. </p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00184",
+                            "set": 20,
+                            "question": 33
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00188",
+                    "status": "review",
+                    "prompt": "M 36 bolt of property class 8.8 will have an ultimate tensile strength of ______ MPa.",
+                    "html": "<p><strong>Nominal bolt-class interpretation:</strong> 4.6 gives nominal 400/240 MPa ultimate/yield strengths, and 8.8 gives nominal 800/640 MPa. </p><p>These support the bank's shorthand answers but do not establish every size-dependent minimum, proof stress, thread area or product requirement. </p><p>In particular, an M36 certification cannot be inferred solely from the 8.8 arithmetic.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00188",
+                            "set": 21,
+                            "question": 27
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00191",
+                    "status": "review",
+                    "prompt": "When the thickness of the thicker plate is 20 mm, the minimum size of the weld is ______",
+                    "html": "<p><strong>Keep the fillet-size boundaries and edge types separate:</strong> exactly 20 mm thicker-part thickness gives the Table 21 minimum of 5 mm, subject to its notes. </p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00191",
+                            "set": 21,
+                            "question": 30
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00192",
+                    "status": "review",
+                    "prompt": "The effective length of fillet weld should not be less than",
+                    "html": "<p><strong>No universal 45 mm effective length:</strong> the verified §10.5.4.1 criterion is at least 4s, with the usual actual-length allowance of 2s beyond effective length. The source supplies no weld size or sufficient detail. Its extra 40 mm minimum and selected 45 mm cannot be adopted as an unqualified statement of that clause.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00192",
+                            "set": 21,
+                            "question": 31
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00193",
+                    "status": "review",
+                    "prompt": "The thickness of the gusset plate for column splice should not be less than",
+                    "html": "<p><strong>Unspecified gusset minimum and splice location:</strong> the supplied data do not establish a universal 12 mm gusset/splice-plate minimum. </p><p>Thickness needs the actual resistance and stability checks. </p><p>Use the actual force envelope, access and governing detailing provisions.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00193",
+                            "set": 21,
+                            "question": 32
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00198",
+                    "status": "review",
+                    "prompt": "Maximum thickness of fillet weld at rounded edge of thickness t mm of a section is",
+                    "html": "<p><strong>Keep the fillet-size boundaries and edge types separate:</strong> exactly 20 mm thicker-part thickness gives the Table 21 minimum of 5 mm, subject to its notes. </p><p>A rounded rolled-section toe has the usual <strong>0.75t</strong> maximum, not the keyed t/2. </p><p>The 10.5 mm answer for 12 mm and 14 mm plates is appropriate to the usual square-edge thinner-minus-1.5 mm detail, not every possible weld geometry.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00198",
+                            "set": 22,
+                            "question": 28
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00199",
+                    "status": "review",
+                    "prompt": "When fillet welds are subjected to a combination of normal and shear stress, the equivalent stress is given by:",
+                    "html": "<p><strong>Equivalent stress is method-dependent:</strong> √(σ<sup>2</sup> + 3τ<sup>2</sup>) is the stated normal-plus-shear form, but the symbols must refer to the prescribed local stress components. It is not a complete acceptance rule for every weld, arbitrary stress state or code. Use the selected fillet/butt provision, its definitions and its resistance limit together.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00199",
+                            "set": 22,
+                            "question": 29
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00201",
+                    "status": "review",
+                    "prompt": "Two structural steel plates of thicknesses 12 mm and 14 mm are to be welded together. What will be the maximum size of the fillet weld?",
+                    "html": "<p>The 10.5 mm answer for 12 mm and 14 mm plates is appropriate to the usual square-edge thinner-minus-1.5 mm detail, not every possible weld geometry.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00201",
+                            "set": 22,
+                            "question": 31
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00203",
+                    "status": "review",
+                    "prompt": "What is the net section area of a steel plate 75mm wide and 10mm thick with one bolt if the diameter of the bolt hole is 18mm?",
+                    "html": "<p><strong>Net-area assumptions and incorrect units:</strong> the 75 mm by 10 mm plate with an actual 18 mm hole has geometric net area <strong>570 mm<sup>2</sup> = 5.70 cm<sup>2</sup></strong>. </p><p>IS 800:2007 §6.3.1 would give design area <strong>550 mm<sup>2</sup></strong> if the hole were directly punched, through its separate 2 mm deduction allowance. </p><p>Manufacture is not specified; the explanation instead incorrectly adds bolt clearance to an already given hole. </p><p>The keyed <strong>550 cm<sup>2</sup></strong> remains wrong even under the punched-hole interpretation. </p><p>Likewise, the 400 mm plate's 3820 mm<sup>2</sup> assumes no directly punched deduction; that design area would otherwise be 3800 mm<sup>2</sup>. </p><p>Do not invent manufacture or repair option units to defend a key.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00203",
+                            "set": 22,
+                            "question": 33
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00205",
+                    "status": "review",
+                    "prompt": "Which of the following is an advantage of HSFG bolts over bearing type bolts?",
+                    "html": "<p><strong>HSFG bolts can provide slip resistance when properly designed and installed.</strong> That does not guarantee zero slip or bearing at every load. Pretension, faying surfaces, load category and fatigue details govern performance.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00205",
+                            "set": 22,
+                            "question": 34
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00206",
+                    "status": "review",
+                    "prompt": "Which of the following is not a compression member?",
+                    "html": "<p>A tie is a tension member; a rafter or boom is not necessarily compressive in every case. </p><p>The tie explanation's only-net-area claim omits gross yielding, block shear, shear lag where applicable and connection resistance.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00206",
+                            "set": 23,
+                            "question": 25
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00208",
+                    "status": "review",
+                    "prompt": "What is the yield strength of a bolt of class 4.6?",
+                    "html": "<p><strong>Nominal bolt-class interpretation:</strong> 4.6 gives nominal 400/240 MPa ultimate/yield strengths, and 8.8 gives nominal 800/640 MPa. </p><p>These support the bank's shorthand answers but do not establish every size-dependent minimum, proof stress, thread area or product requirement. </p><p>In particular, an M36 certification cannot be inferred solely from the 8.8 arithmetic.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00208",
+                            "set": 23,
+                            "question": 27
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00210",
+                    "status": "review",
+                    "prompt": "What is the minimum pitch distance?",
+                    "html": "<p><strong>M16 minimum pitch is 40 mm:</strong> §10.2.2 gives 2.5 × 16 = 40 mm, not the keyed 27. </p><p>The separate 2.5d source states the correct rule. </p><p>For comparison, 27 mm equals 1.5 times an 18 mm hole, which can be a smoother-edge end distance; it is not a different minimum pitch caused by class 4.6.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00210",
+                            "set": 23,
+                            "question": 29
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00211",
+                    "status": "review",
+                    "prompt": "Maximum pitch distance = ______",
+                    "html": "<p><strong>32t is real but incomplete:</strong> §10.2.3.1 has the general maximum min(32t, 300 mm), contrary to the explanation's statement that 32t is not standard. Ordinary stress-direction rows also have tension min(16t, 200 mm) or compression min(12t, 200 mm) limits, with separate outside-edge-row and special-detail provisions. A bare 32t answer cannot be applied to every row.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00211",
+                            "set": 23,
+                            "question": 30
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00212",
+                    "status": "review",
+                    "prompt": "In case of staggered pitch, pitch may be increased by ______",
+                    "html": "<p><strong>The 50% stagger allowance has conditions:</strong> equal stagger intervals, gauge no greater than 75 mm, the specified spacing categories in §§10.2.3.2–3 and the general cap in §10.2.3.1 all matter. The bank's explanation incorrectly presents a longer net-failure path as enough justification. Detailing relaxation and net-section resistance are separate checks.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00212",
+                            "set": 23,
+                            "question": 31
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00214",
+                    "status": "review",
+                    "prompt": "Tensile strength of bolt is given by ______",
+                    "html": "<p><strong>Bolt tension formula is incomplete without the cap:</strong> the keyed 0.9f<sub>ub</sub>A<sub>n</sub>/γ<sub>mb</sub> is the rupture branch. The supplied IS 800:2007 §10.3.5 also caps it by <strong>f<sub>yb</sub>A<sub>sb</sub>/γ<sub>m0</sub></strong>. Retain both branches with their stated areas and factors; do not invent another multiplier in the yielding branch. Prying and concurrent shear remain separate demands/checks.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00214",
+                            "set": 23,
+                            "question": 33
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00215",
+                    "status": "review",
+                    "prompt": "The maximum number of bolts of diameter 25mm that can be accommodated in one row in a 200mm wide flat are: ______",
+                    "html": "<p><strong>Three nominal 25 mm bolts do not fit the stated conditional layout:</strong> standard holes are 28 mm, so even smoother-edge distances are 42 mm, not 37.5 mm. Three require <strong>209 mm</strong>; two require 146.5 mm. Two are possible only after interpreting 200 mm as the available row length and confirming the assumed nominal diameter, hole and edge conditions. The bank's three-bolt result uses bolt diameter where hole diameter is required.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00215",
+                            "set": 24,
+                            "question": 25
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00216",
+                    "status": "review",
+                    "prompt": "Calculate strength in shear of 16mm diameter of bolt of grade 4.6 for lap joint",
+                    "html": "<p><strong>The 29 kN shear key is conditionally correct:</strong> one threaded shear plane in an M16 class-4.6 bolt gives about <strong>28.97 kN</strong> using 0.78 times shank area, or about <strong>29.0 kN</strong> using the applicable area near 157 mm<sup>2</sup>. A plain-shank plane gives 37.15 kN. No different grade is needed to explain the key. The explanation's alternative multiplication by √3γ<sub>mb</sub> is not the design shear formula; bearing and other applicable checks may still govern the joint.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00216",
+                            "set": 24,
+                            "question": 26
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00217",
+                    "status": "review",
+                    "prompt": "What is the efficiency of joint when the strength of the bolt per pitch length is 60kN and the strength of the plate per pitch length is 150kN?",
+                    "html": "<p>The 40% efficiency calculation is correct only if the stated 60 kN is the controlling joint strength per pitch and no other mode is weaker.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00217",
+                            "set": 24,
+                            "question": 27
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00218",
+                    "status": "review",
+                    "prompt": "Strength of bolt is ______",
+                    "html": "<p>Taking the smaller shear and bearing resistance identifies the controlling limit state; it does not ensure a least-catastrophic failure sequence. </p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00218",
+                            "set": 24,
+                            "question": 28
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00219",
+                    "status": "review",
+                    "prompt": "When a cantilever beam is supported by a gusset, the end of the cantilever will transfer.",
+                    "html": "<p>The cantilever's shear-plus-moment answer is appropriate for a true moment-resisting support, but attaching an unspecified gusset does not by itself establish that restraint.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00219",
+                            "set": 24,
+                            "question": 29
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00220",
+                    "status": "review",
+                    "prompt": "In bolted moment end plate connection, bending moment, axial force, and shear force are transferred by ______",
+                    "html": "<p><strong>The end-plate answer omits shear transfer:</strong> a tension-compression couple explains the moment component, not how all moment, axial force and shear reach the support. </p><p>Identify bolt shear/bearing, designed friction or another detailed shear path. </p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00220",
+                            "set": 24,
+                            "question": 30
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00221",
+                    "status": "review",
+                    "prompt": "According to the IS code, the strength of the welded portion ______ of the effective strength of the material welded.",
+                    "html": "<p><strong>Unverified global 80% weld rule:</strong> no authoritative general requirement that every welded portion have at least 80% of parent-material strength was verified in the supplied IS 800:2007 text. The source provides no usable detail or clause establishing it. Do not adopt that percentage, convert it into a blanket butt-weld rule or assign a historical clause number without the relevant edition.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00221",
+                            "set": 24,
+                            "question": 31
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00222",
+                    "status": "review",
+                    "prompt": "Position of splices should be ______ in normal practice.",
+                    "html": "<p>Above-floor splices are often convenient for erection, but that location need not avoid maximum moment and supplies no universal minimum clear distance. </p><p>Use the actual force envelope, access and governing detailing provisions.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00222",
+                            "set": 24,
+                            "question": 32
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00224",
+                    "status": "review",
+                    "prompt": "The production of sound welds is not governed by ______",
+                    "html": "<p><strong>Base-metal type is important to sound welding:</strong> the keyed claim that metal-plate type does not govern weld quality is incorrect. Composition, hardenability, impurities, thickness and strength level influence weldability and procedure selection. Electrode choice, arc conditions and joint geometry cannot be specified reliably by treating the parent metal as irrelevant.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00224",
+                            "set": 24,
+                            "question": 34
+                        }
+                    ]
+                },
+                {
+                    "id": "check-desi787-00225",
+                    "status": "review",
+                    "prompt": "Hot cracks can be prevented by ______",
+                    "html": "<p><strong>Preheating does not universally prevent hot cracks:</strong> the bank's key and explanation conflate a possible thermal-control measure with a guaranteed cure. Hot-cracking susceptibility depends on composition, segregation, joint and bead geometry, restraint, shrinkage strain and solidification conditions. Preheat is often relevant to hydrogen-assisted cold-crack control; it does not automatically remove hot-crack causes.</p>",
+                    "sources": [
+                        {
+                            "id": "DESI787-00225",
+                            "set": 25,
+                            "question": 25
+                        }
+                    ]
                 }
             ],
             references: [

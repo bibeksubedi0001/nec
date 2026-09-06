@@ -37,15 +37,15 @@ const CIVIL_MODEL_9 = {
                 {
                     id: "cm9q001",
                     src: "BASI674-00093",
-                    text: "Which of the following is a type of Engineering Materials and is a Metal?",
+                    text: "Which pair consists entirely of metallic engineering materials?",
                     options: [
-                        { key: "a", text: "Asbestos" },
-                        { key: "b", text: "Both b &amp; c" },
-                        { key: "c", text: "Ferrous Metals" },
-                        { key: "d", text: "Non-Ferrous Metals" }
+                        { key: "a", text: "Asbestos and ferrous metals" },
+                        { key: "b", text: "Ferrous and non-ferrous metals" },
+                        { key: "c", text: "Ferrous metals and timber" },
+                        { key: "d", text: "Non-ferrous metals and glass" }
                     ],
                     answer: "b",
-                    explanation: "Asbestos is a mineral fiber, not a metal. Ferrous metals (iron-based) and non-ferrous metals (e.g., aluminum, copper, zinc) are the two primary categories of metals used in engineering."
+                    explanation: "Ferrous metals are iron-based; non-ferrous metals include aluminium, copper and zinc. Both groups are metallic. Asbestos is a mineral fibre, timber is organic, and glass is a nonmetal. The malformed self-referencing option has been replaced with explicit pairs."
                 },
                 {
                     id: "cm9q002",
@@ -241,15 +241,15 @@ const CIVIL_MODEL_9 = {
                 {
                     id: "cm9q016",
                     src: "STRU935-00080",
-                    text: "A rod of area 1000 mm² has axial pull of 20 kN. Then what is the shear stress at 300 inclined to horizontal axis?",
+                    text: "An axially tensioned rod has cross-sectional area 1000 mm² and force 20 kN. Find the shear-stress magnitude on a plane whose normal is inclined 30 degrees to the rod axis.",
                     options: [
-                        { key: "a", text: "0.866 N/mm²" },
+                        { key: "a", text: "8.660254 N/mm²" },
                         { key: "b", text: "2 N/mm²" },
                         { key: "c", text: "0.667 N/mm²" },
                         { key: "d", text: "1 N/mm²" }
                     ],
                     answer: "a",
-                    explanation: "The direct stress is 20,000 over 1000, that is 20 N/mm². On a plane at theta to the axis the shear stress is (sigma over 2) times sin 2 theta, so at 30 degrees it is 10 times sin 60, which is 8.66 N/mm². The published key lists the same figure with the decimal point shifted."
+                    explanation: "The original printed angle 300 is clarified as 30 degrees. Axial stress is 20 N/mm² and \\(\\tau=20\\sin30^\\circ\\cos30^\\circ=8.660254\\,\\mathrm{N/mm^2}\\). The former 0.866 choice has been corrected; normal stress on this same plane is a separate component."
                 },
                 {
                     id: "cm9q017",

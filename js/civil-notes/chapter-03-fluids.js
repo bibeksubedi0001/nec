@@ -44,9 +44,8 @@
                 {
                     id: "fluid-newtonian-stress-and-temperature",
                     title: "Fluid models, shear rate and temperature",
-                    html: "<p>Ordinary fluids continually deform under shear. The ideal-fluid model is inviscid (zero viscosity) and incompressible (constant density); real Newtonian fluids can be viscous.</p>" +
-                        "<p><strong>τ = μ(du/dy)</strong>: stress is proportional to <em>shear-strain rate</em>, not accumulated strain. Here du/dy has units s<sup>−1</sup>; conversely, strain rate = τ/μ. Viscosity measures internal resistance to shearing. At unchanged state, a Newtonian fluid with μ = 1 poise retains that property at rest, although viscous shear vanishes.</p>" +
-                        "<p>Heating usually lowers liquid dynamic viscosity but raises gas dynamic viscosity. Keep the bank's matching distinct: viscosity–shear, capillarity–surface tension, vapour pressure–cavitation, and specific gravity–reference-water density.</p>",
+                    html: "<p>Ordinary fluids continually deform under shear. The ideal-fluid model is inviscid (zero viscosity) and incompressible (constant density); real Newtonian fluids can be viscous.</p><p><strong>τ = μ(du/dy)</strong>: stress is proportional to <em>shear-strain rate</em>, not accumulated strain. Here du/dy has units s<sup>−1</sup>; conversely, strain rate = τ/μ. Viscosity measures internal resistance to shearing. At unchanged state, a Newtonian fluid with μ = 1 poise retains that property at rest, although viscous shear vanishes.</p>",
+                    moreHtml: "<p>Heating usually lowers liquid dynamic viscosity but raises gas dynamic viscosity. Keep the bank's matching distinct: viscosity–shear, capillarity–surface tension, vapour pressure–cavitation, and specific gravity–reference-water density.</p>",
                     sources: [
                         { id: "WATE701-00002", set: 2, question: 49 },
                         { id: "WATE701-00012", set: 2, question: 59 },
@@ -76,8 +75,8 @@
                 {
                     id: "fluid-non-newtonian-dimensions",
                     title: "Non-Newtonian classes and consistency index",
-                    html: "<p>A non-Newtonian fluid does not obey a constant-μ Newtonian law. For positive shear rate, the power law is <strong>τ = K(du/dy)<sup>n</sup></strong>; apparent viscosity is K(du/dy)<sup>n−1</sup>. Pseudoplastic fluids with 0 &lt; n &lt; 1 shear-thin; dilatant fluids with n &gt; 1 shear-thicken. Bingham behaviour requires a yield stress before flow; thixotropy describes time-dependent structural change, not merely shear-rate dependence.</p>" +
-                        "<p>Dimensions give <strong>[K] = Pa·s<sup>n</sup> = M L<sup>−1</sup> T<sup>n−2</sup></strong>. The time exponent vanishes at n = <strong>2</strong>, not the Newtonian n = 1. For the bank's formal n = −1 exercise, K has units <strong>Pa/s</strong>, equivalently N/(m<sup>2</sup>·s).</p>",
+                    html: "<p>A non-Newtonian fluid does not obey a constant-μ Newtonian law. For positive shear rate, the power law is <strong>τ = K(du/dy)<sup>n</sup></strong>; apparent viscosity is K(du/dy)<sup>n−1</sup>. Pseudoplastic fluids with 0 &lt; n &lt; 1 shear-thin; dilatant fluids with n &gt; 1 shear-thicken. </p><p>Dimensions give <strong>[K] = Pa·s<sup>n</sup> = M L<sup>−1</sup> T<sup>n−2</sup></strong>. The time exponent vanishes at n = <strong>2</strong>, not the Newtonian n = 1. For the bank's formal n = −1 exercise, K has units <strong>Pa/s</strong>, equivalently N/(m<sup>2</sup>·s).</p>",
+                    moreHtml: "<p>Bingham behaviour requires a yield stress before flow; thixotropy describes time-dependent structural change, not merely shear-rate dependence.</p>",
                     sources: [
                         { id: "WATE701-00006", set: 2, question: 53 },
                         { id: "WATE701-00286", set: 25, question: 54 },
@@ -139,8 +138,8 @@
                 {
                     id: "fluid-capillary-balance-contact-angle",
                     title: "Capillary balance and contact angle",
-                    html: "<p>For the narrow circular-tube idealization, <strong>h = 4σ cosθ/(ρgd)</strong>. Here h is signed <em>vertical</em> rise, d the internal diameter and θ the contact angle measured through liquid. Neglect gas density and meniscus-volume corrections; N/m divided by (N/m<sup>3</sup>)·m gives metres.</p>" +
-                        "<p>Wetting with θ &lt; 90° produces rise; θ &gt; 90° produces depression; θ = 90° gives zero ideal rise. Tube material matters through wetting, not just bore size. Heating commonly reduces capillary magnitude through falling σ, provided changes in density and contact angle do not reverse that trend.</p>",
+                    html: "<p>For the narrow circular-tube idealization, <strong>h = 4σ cosθ/(ρgd)</strong>. Here h is signed <em>vertical</em> rise, d the internal diameter and θ the contact angle measured through liquid. Neglect gas density and meniscus-volume corrections; N/m divided by (N/m<sup>3</sup>)·m gives metres.</p><p>Wetting with θ &lt; 90° produces rise; θ &gt; 90° produces depression; θ = 90° gives zero ideal rise. Tube material matters through wetting, not just bore size. </p>",
+                    moreHtml: "<p>Heating commonly reduces capillary magnitude through falling σ, provided changes in density and contact angle do not reverse that trend.</p>",
                     sources: [
                         { id: "WATE701-00001", set: 2, question: 48 },
                         { id: "SOIL136-00163", set: 1, question: 38 }
@@ -149,8 +148,8 @@
                 {
                     id: "fluid-capillary-bank-calculations",
                     title: "Capillary ratios and signed calculations",
-                    html: "<p>At unchanged liquid/contact conditions, hd is constant: an 8 mm depression in a 1.2 mm bore becomes 4 mm in a <strong>2.4 mm</strong> bore. If h<sub>P</sub>/h<sub>Q</sub> = 2/3, d<sub>P</sub>/d<sub>Q</sub> = <strong>3/2</strong>. Under a reservoir-fed capillary-rise interpretation, σ<sub>1</sub>/σ<sub>2</sub> = 1/2 and ρ<sub>1</sub>/ρ<sub>2</sub> = 1/4 in identical tubes with equal contact angles give h<sub>1</sub>/h<sub>2</sub> = <strong>2</strong>. If equal volumes are merely poured into identical tubes, bulk column heights are instead equal, neglecting meniscus effects; the source's experiment is not specified clearly.</p>" +
-                        "<p>The 10 mm water-tube estimate uses its explanation's σ = 0.073 N/m, θ = 0°, ρ = 1000 and g = 9.81: h ≈ <strong>2.98 mm</strong>. The mercury case uses d = 7 mm, σ = 0.51, θ = 130°, and its explanation's ρ = 13500 kg/m<sup>3</sup>, g = 9.81: h ≈ <strong>−1.41 mm</strong>, a depression.</p>",
+                    html: "<p>At unchanged liquid/contact conditions, hd is constant: an 8 mm depression in a 1.2 mm bore becomes 4 mm in a <strong>2.4 mm</strong> bore. If h<sub>P</sub>/h<sub>Q</sub> = 2/3, d<sub>P</sub>/d<sub>Q</sub> = <strong>3/2</strong>. Under a reservoir-fed capillary-rise interpretation, σ<sub>1</sub>/σ<sub>2</sub> = 1/2 and ρ<sub>1</sub>/ρ<sub>2</sub> = 1/4 in identical tubes with equal contact angles give h<sub>1</sub>/h<sub>2</sub> = <strong>2</strong>. </p><p>The 10 mm water-tube estimate uses its explanation's σ = 0.073 N/m, θ = 0°, ρ = 1000 and g = 9.81: h ≈ <strong>2.98 mm</strong>. The mercury case uses d = 7 mm, σ = 0.51, θ = 130°, and its explanation's ρ = 13500 kg/m<sup>3</sup>, g = 9.81: h ≈ <strong>−1.41 mm</strong>, a depression.</p>",
+                    moreHtml: "<p>If equal volumes are merely poured into identical tubes, bulk column heights are instead equal, neglecting meniscus effects; the source's experiment is not specified clearly.</p>",
                     sources: [
                         { id: "WATE701-00015", set: 3, question: 50 },
                         { id: "WATE701-00016", set: 3, question: 51 },
@@ -205,77 +204,315 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Density arithmetic:</strong> WATE701-00120's 117.2 N is not proper rounding of 117.72 N. WATE701-00121 keys density 0.8 as specific volume; the required 1.25 m<sup>3</sup>/kg is absent.</p>",
-                    sources: [
-                        { id: "WATE701-00120", set: 11, question: 57 },
-                        { id: "WATE701-00121", set: 11, question: 58 }
+                    "id": "check-soil136-00163",
+                    "status": "review",
+                    "prompt": "For liquid fluids, will capillarity rise (or fall) increase or decrease with rise in temperature?",
+                    "html": "<p>Temperature trends also require sufficiently unchanged wetting and density.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00163",
+                            "set": 1,
+                            "question": 38
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Property data and units:</strong> 0.51 N/m and 0.801 cP are bank data, not verified water constants. The viscosity and cavitation stems omit cP and /m<sup>2</sup> respectively.</p>",
-                    sources: [
-                        { id: "SOIL136-00161", set: 14, question: 36 },
-                        { id: "WATE701-00274", set: 24, question: 57 },
-                        { id: "WATE701-00382", set: 33, question: 54 }
+                    "id": "check-wate701-00294",
+                    "status": "review",
+                    "prompt": "The rise in the level of a liquid in a tube is h. What will be the new rise in liquid level if the tube is inclined at an angle of 30° to the vertical?",
+                    "html": "<p>'Rise' must distinguish vertical height from inclined length. </p><p>Material-dependent contact angle also matters.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00294",
+                            "set": 1,
+                            "question": 57
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Rheology qualifications:</strong> WATE701-00012 omits liquid versus gas. Rest does not remove Newtonian viscosity. Pseudoplastic is the intended shear-rate class; Bingham apparent viscosity can also decline after yielding.</p>",
-                    sources: [
-                        { id: "WATE701-00012", set: 2, question: 59 },
-                        { id: "WATE701-00371", set: 32, question: 58 },
-                        { id: "WATE701-00384", set: 33, question: 56 }
+                    "id": "check-wate701-00001",
+                    "status": "review",
+                    "prompt": "The rise of a liquid in a capillary tube depends on",
+                    "html": "<p><strong>Capillary rise depends on more than tube radius.</strong> Surface tension, contact angle, liquid unit weight and inner radius all enter the equilibrium relation. Tube material affects contact angle, so the material and radius choices can overlap.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00001",
+                            "set": 2,
+                            "question": 48
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Consistency-index key:</strong> WATE701-00286 requires n = 2, not 1. WATE701-00287 actually states n = −1; its explanation's speculation about −12 is irrelevant.</p>",
-                    sources: [
-                        { id: "WATE701-00286", set: 25, question: 54 },
-                        { id: "WATE701-00287", set: 25, question: 55 }
+                    "id": "check-wate701-00012",
+                    "status": "review",
+                    "prompt": "With increase in temperature, viscosity......",
+                    "html": "<p><strong>Rheology qualifications:</strong> WATE701-00012 omits liquid versus gas. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00012",
+                            "set": 2,
+                            "question": 59
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Interface ambiguity:</strong> WATE701-00288's 'both' is overbroad without specifying the interface. Solid-wall adhesion controls wetting; it is not required for a free liquid-air surface.</p>",
-                    sources: [
-                        { id: "WATE701-00288", set: 25, question: 56 }
+                    "id": "check-wate701-00120",
+                    "status": "review",
+                    "prompt": "Calculate the specific weight and weight of 20dm³ of petrol of specific gravity 0.6.",
+                    "html": "<p><strong>Density arithmetic:</strong> WATE701-00120's 117.2 N is not proper rounding of 117.72 N. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00120",
+                            "set": 11,
+                            "question": 57
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Submerged bubble:</strong> WATE701-00290's 0.4 mm is conditional on one spherical interface and excess pressure. Its 2σ/d gas-bubble formula is wrong; unspecified absolute pressure cannot determine diameter.</p>",
-                    sources: [
-                        { id: "WATE701-00290", set: 26, question: 49 }
+                    "id": "check-wate701-00121",
+                    "status": "review",
+                    "prompt": "If 200m³ of fluid has a weight of 1060N measured on the planet having acceleration due to gravity 6.625m/s², what will be it’s specific volume?",
+                    "html": "<p>WATE701-00121 keys density 0.8 as specific volume; the required 1.25 m<sup>3</sup>/kg is absent.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00121",
+                            "set": 11,
+                            "question": 58
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Capillary arithmetic and conditions:</strong> WATE701-00293 gives 2:1 only under the intended reservoir-fed interpretation, not the keyed 1:8. Equal poured volumes alone imply equal bulk heights in identical tubes, so the arrangement needs clarification. WATE701-00297 gives about 1.41 mm depression under its stated approximation, not 140 mm or the explanation's 5.66 mm.</p>",
-                    sources: [
-                        { id: "WATE701-00293", set: 26, question: 52 },
-                        { id: "WATE701-00297", set: 26, question: 55 }
+                    "id": "check-soil136-00160",
+                    "status": "review",
+                    "prompt": "Will capillary rise occur and if it occurs what will be capillary rise if glass capillarity tube is immersed in water and experiment is carried out by astronauts in space.",
+                    "html": "<p><strong>Limits, not guarantees:</strong> whole-tube filling in space is conditional. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00160",
+                            "set": 14,
+                            "question": 35
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Missing geometric conditions:</strong> 'Same amount poured' does not establish a reservoir-fed capillary experiment. 'Rise' must distinguish vertical height from inclined length. Material-dependent contact angle also matters.</p>",
-                    sources: [
-                        { id: "WATE701-00292", set: 26, question: 51 },
-                        { id: "WATE701-00294", set: 1, question: 57 },
-                        { id: "WATE701-00001", set: 2, question: 48 }
+                    "id": "check-soil136-00161",
+                    "status": "review",
+                    "prompt": "The surface tension of fluid in contact with air at 25°C is 0.51N/m. The pressure inside a droplet is to be 0.05 N/cm2 greater than outside pressure Determine the diameter of the droplet of water.",
+                    "html": "<p><strong>Use the supplied property, not a memorised water constant.</strong> With one droplet interface, diameter = 4T/delta-p. Converting 0.05 N/cm<sup>2</sup> to 500 Pa and using T = 0.51 N/m gives 4.08 mm; the surface-tension value is a stated input, not a verified water property at 25 degrees C.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00161",
+                            "set": 14,
+                            "question": 36
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Limits, not guarantees:</strong> whole-tube filling in space is conditional. Temperature trends also require sufficiently unchanged wetting and density.</p>",
-                    sources: [
-                        { id: "SOIL136-00160", set: 14, question: 35 },
-                        { id: "WATE701-00282", set: 25, question: 51 },
-                        { id: "SOIL136-00163", set: 1, question: 38 }
+                    "id": "check-hydr626-00150",
+                    "status": "review",
+                    "prompt": "Cavitation usually occurs due to the change of which of the following?",
+                    "html": "<p><strong>Compare local absolute pressure with vapour pressure.</strong> Cavitation can begin when local liquid pressure becomes sufficiently low relative to the temperature-dependent vapour pressure. Do not describe vapour pressure as independent of temperature.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00150",
+                            "set": 17,
+                            "question": 64
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Vapour-pressure errors:</strong> both HYDR626 explanations misstate vapour-pressure dependence. WATE701-00284 reverses its temperature trend; WATE701-00283 overlaps equality with inequality. Use p<sub>v</sub>(T) and absolute pressure.</p>",
-                    sources: [
-                        { id: "HYDR626-00150", set: 17, question: 64 },
-                        { id: "HYDR626-00187", set: 21, question: 63 },
-                        { id: "WATE701-00284", set: 25, question: 53 },
-                        { id: "WATE701-00283", set: 25, question: 52 }
+                    "id": "check-hydr626-00187",
+                    "status": "review",
+                    "prompt": "Cavitation usually occurs due to the change of",
+                    "html": "<p><strong>Compare local absolute pressure with vapour pressure.</strong> Cavitation can begin when local liquid pressure becomes sufficiently low relative to the temperature-dependent vapour pressure. Do not describe vapour pressure as independent of temperature.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00187",
+                            "set": 21,
+                            "question": 63
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00274",
+                    "status": "review",
+                    "prompt": "What is the viscosity of water at 30°C?",
+                    "html": "<p><strong>Viscosity type and units must be named.</strong> The number 0.801 is commonly quoted in cP for dynamic viscosity near 30 degrees C; it is not a dimensionless property or a kinematic-viscosity value.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00274",
+                            "set": 24,
+                            "question": 57
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00282",
+                    "status": "review",
+                    "prompt": "Will capillary rise occur and if it occurs what will be capillary rise if glass capillarity tube is immersed in water and experiment is carried out by astronauts in space.",
+                    "html": "<p><strong>Limits, not guarantees:</strong> whole-tube filling in space is conditional. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00282",
+                            "set": 25,
+                            "question": 51
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00283",
+                    "status": "review",
+                    "prompt": "Which of the following is the condition for the boiling of a liquid?",
+                    "html": "<p><strong>Boiling threshold:</strong> equilibrium vapour pressure reaches the surrounding absolute pressure. Offered equality and inclusive-inequality choices can overlap at the threshold, so their intended distinction must be stated.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00283",
+                            "set": 25,
+                            "question": 52
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00284",
+                    "status": "review",
+                    "prompt": "Which of the following equation correctly depicts the relation between the vapor pressure of a liquid and it’s temperature?",
+                    "html": "<p><strong>Temperature trend is reversed in the source.</strong> A liquid's equilibrium vapour pressure generally increases with temperature. Use absolute pressure and the relevant temperature range.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00284",
+                            "set": 25,
+                            "question": 53
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00286",
+                    "status": "review",
+                    "prompt": "For what value of flow behavior index, does the consistency index has a dimension independent of time?",
+                    "html": "<p><strong>The consistency index is time-independent when n = 2.</strong> In the power-law model, shear stress equals K times shear rate raised to n. Thus K has dimensions M L<sup>-1</sup> T<sup>n-2</sup>; setting the time exponent to zero gives n = 2, not the keyed 1.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00286",
+                            "set": 25,
+                            "question": 54
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00287",
+                    "status": "review",
+                    "prompt": "What will be the dimension of the flow consistency index for a fluid with a flow behavior index of -1?",
+                    "html": "<p>WATE701-00287 actually states n = −1; its explanation's speculation about −12 is irrelevant.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00287",
+                            "set": 25,
+                            "question": 55
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00288",
+                    "status": "review",
+                    "prompt": "Which of the following contribute to the reason behind the origin of surface tension?",
+                    "html": "<p><strong>Interface ambiguity:</strong> WATE701-00288's 'both' is overbroad without specifying the interface. Solid-wall adhesion controls wetting; it is not required for a free liquid-air surface.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00288",
+                            "set": 25,
+                            "question": 56
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00290",
+                    "status": "review",
+                    "prompt": "A soap bubble of d mm diameter is observed inside a bucket of water. If the pressure inside the bubble is 0.075 N/cm², what will be the value of d? (Take surface tension as 0.075 N/m)",
+                    "html": "<p><strong>Submerged bubble:</strong> WATE701-00290's 0.4 mm is conditional on one spherical interface and excess pressure. Its 2σ/d gas-bubble formula is wrong; unspecified absolute pressure cannot determine diameter.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00290",
+                            "set": 26,
+                            "question": 49
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00292",
+                    "status": "review",
+                    "prompt": "The rise in the level of a liquid in a tube is h. What will be the rise in the level if the same amount of liquid is poured into a tube of half the diameter.",
+                    "html": "<p><strong>Missing geometric conditions:</strong> 'Same amount poured' does not establish a reservoir-fed capillary experiment. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00292",
+                            "set": 26,
+                            "question": 51
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00293",
+                    "status": "review",
+                    "prompt": "The ratio of the surface tension S and density ρ of liquid 1 and 2 are 1:2 and 1:4 respectively. Equal amount of the two liquids is poured into two identical tubes. What will be the ratio of the rise in the liquid level in the two tubes? (Assume the angle of contact to be same)",
+                    "html": "<p><strong>Capillary arithmetic and conditions:</strong> WATE701-00293 gives 2:1 only under the intended reservoir-fed interpretation, not the keyed 1:8. </p><p>Equal poured volumes alone imply equal bulk heights in identical tubes, so the arrangement needs clarification. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00293",
+                            "set": 26,
+                            "question": 52
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00297",
+                    "status": "review",
+                    "prompt": "Calculate the magnitude of capillary effect in millimeters in a glass tube of 7mm diameter, when immersed in mercury. The temperature of the liquid is 25°C and the values of surface tension of mercury at 25°C is 0.51 N/m. The angle of contact for mercury is 130°.",
+                    "html": "<p>WATE701-00297 gives about 1.41 mm depression under its stated approximation, not 140 mm or the explanation's 5.66 mm.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00297",
+                            "set": 26,
+                            "question": 55
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00371",
+                    "status": "review",
+                    "prompt": "The viscosity of a fluid in motion is 1 Poise. What will be it’s viscosity (in Poise) when the fluid is at rest?",
+                    "html": "<p><strong>Rest removes the velocity gradient, not Newtonian viscosity.</strong> A stationary Newtonian liquid has zero viscous shear stress in that state, while its dynamic viscosity remains a material property at the given conditions.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00371",
+                            "set": 32,
+                            "question": 58
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00382",
+                    "status": "review",
+                    "prompt": "The absolute pressure of a water is 0.5kN above its vapor pressure. If it flows with a velocity of 1m/s, what will be the value of Cavitation Number describing the flow induced boiling?",
+                    "html": "<p><strong>Pressure unit is incomplete.</strong> The 0.5 kN must mean 0.5 kN/m<sup>2</sup> above vapour pressure for the usual calculation. With additionally assumed water density 1000 kg/m<sup>3</sup> and speed 1 m/s, the cavitation number is 1.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00382",
+                            "set": 33,
+                            "question": 54
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00384",
+                    "status": "review",
+                    "prompt": "Which of the following is a shear-thinning fluid?",
+                    "html": "<p>Pseudoplastic is the intended shear-rate class; Bingham apparent viscosity can also decline after yielding.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00384",
+                            "set": 33,
+                            "question": 56
+                        }
                     ]
                 }
             ]
@@ -401,8 +638,8 @@
                 {
                     id: "hydrostatic-buoyancy-and-flotation",
                     title: "Displacement, apparent weight and flotation",
-                    html: "<p><strong>Archimedes' principle: F<sub>B</sub> = ρ<sub>fluid</sub>gV<sub>displaced</sub></strong>, the displaced fluid's weight, not automatically the body's weight. In homogeneous fluid, buoyancy acts through the displaced volume's centroid B. Free floating equilibrium requires buoyancy to equal weight and their lines to align; rotational stability is a separate test.</p>" +
-                        "<p>The 60 N block apparently weighing 40 N when completely immersed loses <strong>20 N</strong> through buoyancy. Neglecting air buoyancy and other support/contact effects, its specific gravity is <strong>60/(60 − 40) = 3</strong>.</p>",
+                    html: "<p><strong>Archimedes' principle: F<sub>B</sub> = ρ<sub>fluid</sub>gV<sub>displaced</sub></strong>, the displaced fluid's weight, not automatically the body's weight. In homogeneous fluid, buoyancy acts through the displaced volume's centroid B. </p><p>The 60 N block apparently weighing 40 N when completely immersed loses <strong>20 N</strong> through buoyancy. Neglecting air buoyancy and other support/contact effects, its specific gravity is <strong>60/(60 − 40) = 3</strong>.</p>",
+                    moreHtml: "<p>Free floating equilibrium requires buoyancy to equal weight and their lines to align; rotational stability is a separate test.</p>",
                     sources: [
                         { id: "WATE701-00005", set: 2, question: 52 },
                         { id: "WATE701-00046", set: 5, question: 57 },
@@ -436,7 +673,8 @@
                 {
                     id: "hydrostatic-cylinder-stability-calculation",
                     title: "Vertical cylinder: floating but initially unstable",
-                    html: "<p>For the uniform cylinder, diameter D = 5 m, height H = 6 m and G = 0.45 give draft d = 2.7 m. A circular waterplane has I = πD<sup>4</sup>/64, so <strong>BM = D<sup>2</sup>/(16d) = 0.5787 m</strong>. With BG = (H − d)/2 = 1.65 m, <strong>GM = −1.0713 m</strong>. Negative GM makes the upright equilibrium initially unstable; it does not mean flotation in another orientation is impossible.</p>",
+                    html: "<p>For the uniform cylinder, diameter D = 5 m, height H = 6 m and G = 0.45 give draft d = 2.7 m. A circular waterplane has I = πD<sup>4</sup>/64, so <strong>BM = D<sup>2</sup>/(16d) = 0.5787 m</strong>. With BG = (H − d)/2 = 1.65 m, <strong>GM = −1.0713 m</strong>. </p>",
+                    moreHtml: "<p>Negative GM makes the upright equilibrium initially unstable; it does not mean flotation in another orientation is impossible.</p>",
                     sources: [
                         { id: "WATE701-00308", set: 27, question: 52 }
                     ]
@@ -448,60 +686,224 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Pressure versus stress:</strong> WATE701-00009 confuses pressure with total stress; viscous motion need not make stress anisotropic. The moving-water result requires hydrostatic balance, not merely constant speed.</p>",
-                    sources: [
-                        { id: "WATE701-00009", set: 2, question: 56 },
-                        { id: "WATE701-00020", set: 3, question: 55 },
-                        { id: "WATE701-00280", set: 25, question: 49 }
+                    "id": "check-wate701-00009",
+                    "status": "review",
+                    "prompt": "The pressure at a point in a fluid will not be same in all directions when the fluid is",
+                    "html": "<p><strong>Pressure versus stress:</strong> WATE701-00009 confuses pressure with total stress; viscous motion need not make stress anisotropic. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00009",
+                            "set": 2,
+                            "question": 56
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Head terminology:</strong> WATE701-00028 and WATE701-00030 supply pressure head, not datum-independent piezometric head. SOIL136-00171's undefined 30% and 10% cannot justify a hydrostatic-pressure answer of 40%.</p>",
-                    sources: [
-                        { id: "WATE701-00028", set: 4, question: 51 },
-                        { id: "WATE701-00030", set: 4, question: 53 },
-                        { id: "SOIL136-00171", set: 14, question: 45 }
+                    "id": "check-wate701-00020",
+                    "status": "review",
+                    "prompt": "The pressure intensity at any point in a fluid at rest is same in all directions is stated by",
+                    "html": "<p><strong>Pascal's pressure principle:</strong> pressure at a point in a static fluid is isotropic. This statement concerns scalar pressure; it should not be generalized to every total-stress component in a deforming viscous flow.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00020",
+                            "set": 3,
+                            "question": 55
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Oil-head key:</strong> WATE701-00276's 5.83 m fails conversion: 45 N/cm<sup>2</sup> = 450000 Pa gives 53.97 m. Do not change inputs to fit options.</p>",
-                    sources: [
-                        { id: "WATE701-00276", set: 24, question: 59 }
+                    "id": "check-wate701-00023",
+                    "status": "review",
+                    "prompt": "Manometers are used to measure",
+                    "html": "<p>Manometers require density, gravity and meniscus/instrument checks; they are not automatically calibration-free.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00023",
+                            "set": 3,
+                            "question": 58
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Measurement approximations:</strong> 88.72 kPa uses a rounded mercury conversion. Manometers require density, gravity and meniscus/instrument checks; they are not automatically calibration-free.</p>",
-                    sources: [
-                        { id: "WATE701-00086", set: 9, question: 48 },
-                        { id: "WATE701-00023", set: 3, question: 58 }
+                    "id": "check-wate701-00028",
+                    "status": "review",
+                    "prompt": "The pressure at a point in a fluid is 50 kPa. If the fluid has specific weight of 10 kN/m3, the piezometric head is",
+                    "html": "<p><strong>Five metres is pressure head.</strong> p/gamma = 50/10 = 5 m. Piezometric head is z + p/gamma and needs an elevation datum; the stem does not supply z.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00028",
+                            "set": 4,
+                            "question": 51
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Missing geometry:</strong> WATE701-00091 assumes 3 m vertical. HYDR626-00221's crest is garbled; 1568.33 m assumes base-to-surface projection. The resultant is 118.33 m above base, not 236.67 m.</p>",
-                    sources: [
-                        { id: "WATE701-00091", set: 9, question: 53 },
-                        { id: "HYDR626-00221", set: 24, question: 69 }
+                    "id": "check-wate701-00030",
+                    "status": "review",
+                    "prompt": "The pressure intensity at a point in a fluid is 20 kPa. If the specific weight of fluid is 5 kN/m3, the piezometric head is",
+                    "html": "<p><strong>Four metres is pressure head.</strong> p/gamma = 20/5 = 4 m. Piezometric head also includes elevation above a specified datum, which is missing.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00030",
+                            "set": 4,
+                            "question": 53
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Stability definitions:</strong> WATE701-00089's V − BG cannot subtract length from volume; use BM − BG. WATE701-00092 needs G, not geometric centroid. WATE701-00306's 'all' is unsound: M is not necessarily a physical pivot.</p>",
-                    sources: [
-                        { id: "WATE701-00089", set: 9, question: 51 },
-                        { id: "WATE701-00092", set: 9, question: 54 },
-                        { id: "WATE701-00306", set: 27, question: 50 }
+                    "id": "check-wate701-00086",
+                    "status": "review",
+                    "prompt": "When the barometer reads 740.0 mm of mercury, a pressure of 10 kPa suction at that location is equivalent to",
+                    "html": "<p><strong>Measurement approximations:</strong> 88.72 kPa uses a rounded mercury conversion. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00086",
+                            "set": 9,
+                            "question": 48
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Flotation versus stability:</strong> WATE701-00307's metacentre key confuses the two. Flotation balances buoyancy and weight; stability concerns response to disturbance.</p>",
-                    sources: [
-                        { id: "WATE701-00307", set: 27, question: 51 }
+                    "id": "check-wate701-00089",
+                    "status": "review",
+                    "prompt": "Which of the following expression is correct?",
+                    "html": "<p><strong>Stability definitions:</strong> WATE701-00089's V − BG cannot subtract length from volume; use BM − BG. </p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00089",
+                            "set": 9,
+                            "question": 51
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Metacentric arithmetic:</strong> WATE701-00304's 0.135 m and WATE701-00305's 0.376 m conflict with the explicit orientation assumptions above. Changing tilt axis changes I. Stored questions remain unchanged.</p>",
-                    sources: [
-                        { id: "WATE701-00304", set: 27, question: 48 },
-                        { id: "WATE701-00305", set: 27, question: 49 }
+                    "id": "check-wate701-00091",
+                    "status": "review",
+                    "prompt": "A rectangular surface 2.5m*3m is immersed in water touching its surface. Find the depth of center of pressure.",
+                    "html": "<p><strong>Orientation must be specified.</strong> The hydrostatic result assumes the stated 3 m dimension is vertical. Rotating the surface changes the centroid depth and pressure resultant.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00091",
+                            "set": 9,
+                            "question": 53
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00092",
+                    "status": "review",
+                    "prompt": "A floating body attains stable equilibrium if its metacenter is",
+                    "html": "<p><strong>Floating stability compares the metacentre with the centre of gravity G.</strong> Geometric centroid alone does not determine G unless the mass distribution justifies that assumption.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00092",
+                            "set": 9,
+                            "question": 54
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00171",
+                    "status": "review",
+                    "prompt": "What will be the hydrostatic pressure if, hW = 30 % and Z = 10 %?",
+                    "html": "<p>SOIL136-00171's undefined 30% and 10% cannot justify a hydrostatic-pressure answer of 40%.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00171",
+                            "set": 14,
+                            "question": 45
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00276",
+                    "status": "review",
+                    "prompt": "The pressure at a point in the fluid is 45 N/cm². Find height when the fluid under consideration is in oil of specific gravity at 0.85.",
+                    "html": "<p><strong>Oil-head key:</strong> WATE701-00276's 5.83 m fails conversion: 45 N/cm<sup>2</sup> = 450000 Pa gives 53.97 m. Do not change inputs to fit options.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00276",
+                            "set": 24,
+                            "question": 59
+                        }
+                    ]
+                },
+                {
+                    "id": "check-hydr626-00221",
+                    "status": "review",
+                    "prompt": "A Dam with crest level of 150mast has water elevation of 1805 msi. What is the elevation at which the point of application of horizontal component of hydrostatic pressure acts if the base of the dam is at 1450 msi.",
+                    "html": "<p>HYDR626-00221's crest is garbled; 1568.33 m assumes base-to-surface projection. </p><p>The resultant is 118.33 m above base, not 236.67 m.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00221",
+                            "set": 24,
+                            "question": 69
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00280",
+                    "status": "review",
+                    "prompt": "Calculate the hydrostatic pressure for water moving with constant velocity at a depth of 5 m from the surface.",
+                    "html": "<p>The moving-water result requires hydrostatic balance, not merely constant speed.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00280",
+                            "set": 25,
+                            "question": 49
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00304",
+                    "status": "review",
+                    "prompt": "44. A rectangular pontoon is 5 m long, 3 m wide and 1.40 m high. The depth of immersion of the pontoon is 0.60 m in seawater. If the center of gravity is 0.7 m above the bottom of the pontoon, determine the metacentric height. The density for seawater = 1045 kg/m³.",
+                    "html": "<p><strong>Specify the heel axis.</strong> For roll about the 5 m longitudinal axis, BM = 3<sup>2</sup>/(12 × 0.60) = 1.25 m and GM = 1.25 + 0.30 - 0.70 = 0.85 m. The stored 0.135 m does not follow from that orientation.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00304",
+                            "set": 27,
+                            "question": 48
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00305",
+                    "status": "review",
+                    "prompt": "46. A block of material of specific gravity 0.45 floats in water. Determine the meta-centric height of the block if its size is 3 m * 2 m* 0.8 m.",
+                    "html": "<p><strong>Orientation and mass distribution are needed.</strong> With 0.8 m vertical height, uniform body density and roll about the 3 m axis, draft is 0.36 m and GM = 2<sup>2</sup>/(12 × 0.36) + 0.18 - 0.40 = 0.70593 m. A different orientation changes the result.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00305",
+                            "set": 27,
+                            "question": 49
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00306",
+                    "status": "review",
+                    "prompt": "48. Proper explanation for metacentre is:",
+                    "html": "<p>WATE701-00306's 'all' is unsound: M is not necessarily a physical pivot.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00306",
+                            "set": 27,
+                            "question": 50
+                        }
+                    ]
+                },
+                {
+                    "id": "check-wate701-00307",
+                    "status": "review",
+                    "prompt": "49. The principle of floatation of bodies is based on the premise of",
+                    "html": "<p><strong>Flotation versus stability:</strong> WATE701-00307's metacentre key confuses the two. Flotation balances buoyancy and weight; stability concerns response to disturbance.</p>",
+                    "sources": [
+                        {
+                            "id": "WATE701-00307",
+                            "set": 27,
+                            "question": 51
+                        }
                     ]
                 }
             ]

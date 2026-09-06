@@ -11,9 +11,8 @@
                 {
                     id: "river-training-purpose-and-system-boundary",
                     title: "River training begins with a purpose, not a structure",
-                    html: "<p><strong>7.4 River training works</strong> covers river stages and the need for training; design principles for guide bunds, launching aprons, levees and spurs; and watershed management. Training seeks a suitable pattern of flow and sediment movement where an identified asset, water use or community is at risk. Its objectives can include passing floods through a reach, aligning flow at a crossing or intake, and limiting damaging bank erosion. These objectives must be checked together rather than treating a straighter channel as an end in itself.</p>" +
-                        "<p>Distinguish the functions of the works. A <strong>guide bank</strong> controls approach and passage near a structure; a <strong>spur or groyne</strong> projects into the current; a <strong>levee</strong> is a longitudinal flood barrier; a <strong>launching apron</strong> protects a toe as scour develops. These are complementary tools, not interchangeable names. A catchment area is the land draining to an outlet, not a constructed river-training component. Nevertheless, its runoff and sediment supply are essential inputs to an integrated plan.</p>" +
-                        "<p>Compare intervention with alternatives such as maintaining a flood corridor, setting assets back, restoring riparian cover or accepting tolerable channel movement. Include upstream backwater, downstream sediment effects, habitats, access and recurring maintenance costs. Protecting one bank can transfer attack to another. The aim is defensible risk reduction over the affected river system, not an unsupported promise to eliminate erosion or floods.</p>",
+                    html: "<p><strong>7.4 River training works</strong> covers river stages and the need for training; design principles for guide bunds, launching aprons, levees and spurs; and watershed management. Training seeks a suitable pattern of flow and sediment movement where an identified asset, water use or community is at risk. Its objectives can include passing floods through a reach, aligning flow at a crossing or intake, and limiting damaging bank erosion. These objectives must be checked together rather than treating a straighter channel as an end in itself.</p>",
+                    moreHtml: "<p>Distinguish the functions of the works. A <strong>guide bank</strong> controls approach and passage near a structure; a <strong>spur or groyne</strong> projects into the current; a <strong>levee</strong> is a longitudinal flood barrier; a <strong>launching apron</strong> protects a toe as scour develops. These are complementary tools, not interchangeable names. A catchment area is the land draining to an outlet, not a constructed river-training component. Nevertheless, its runoff and sediment supply are essential inputs to an integrated plan.</p><p>Compare intervention with alternatives such as maintaining a flood corridor, setting assets back, restoring riparian cover or accepting tolerable channel movement. Include upstream backwater, downstream sediment effects, habitats, access and recurring maintenance costs. Protecting one bank can transfer attack to another. The aim is defensible risk reduction over the affected river system, not an unsupported promise to eliminate erosion or floods.</p>",
                     sources: [
                         { id: "IRRI951-00326", set: 31, question: 72 },
                         { id: "IRRI951-00332", set: 31, question: 78 },
@@ -23,13 +22,8 @@
                 {
                     id: "river-training-reaches-and-headworks-siting",
                     title: "River stages and headworks siting",
-                    html: "<p>The bank uses a <strong>three-reach teaching model: upper, middle and lower course</strong>. This is a useful longitudinal description, not a law that every river has exactly three separately identifiable stages. A hydraulic stage also means water-surface elevation at a gauge; that changing water level is different from a geomorphological reach name.</p>" +
-                        "<table><thead><tr><th scope='col'>Broad reach</th><th scope='col'>Common tendencies, not universal conditions</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>Upper course</th><td>Steep terrain, confined valleys and coarse bed material; the bank associates steep hilly reaches with its boulder-stage terminology.</td></tr>" +
-                        "<tr><th scope='row'>Middle course</th><td>More opportunity for lateral adjustment and sediment exchange; alluvial plains may contain meandering or braided channels.</td></tr>" +
-                        "<tr><th scope='row'>Lower course</th><td>Often flatter gradients, floodplain storage and deposition; a delta is one possible terminal environment, not the ending of every river.</td></tr></tbody></table>" +
-                        "<p>Rocky, boulder, alluvial and valley descriptions classify different aspects of terrain or material and need an identified textbook convention. Do not assemble every name in the options into an arbitrary stage count. The unexplained <em>Through stage</em> option supplies no reliable definition and is not silently changed to another word.</p>" +
-                        "<p>For headworks, compare seasonal flow reliability and diversion levels, approach alignment and channel migration, foundation and bank geology, flood and debris exposure, and compatibility with bed and suspended sediment. A stable-looking rocky reach can lack the required water level or accessibility; a broad alluvial reach can require substantial sediment and training works. Reach classification helps organize investigation, but no stage name by itself establishes the best site.</p>",
+                    html: "<p>The bank uses a <strong>three-reach teaching model: upper, middle and lower course</strong>. This is a useful longitudinal description, not a law that every river has exactly three separately identifiable stages. A hydraulic stage also means water-surface elevation at a gauge; that changing water level is different from a geomorphological reach name.</p><table><thead><tr><th scope='col'>Broad reach</th><th scope='col'>Common tendencies, not universal conditions</th></tr></thead><tbody><tr><th scope='row'>Upper course</th><td>Steep terrain, confined valleys and coarse bed material; the bank associates steep hilly reaches with its boulder-stage terminology.</td></tr><tr><th scope='row'>Middle course</th><td>More opportunity for lateral adjustment and sediment exchange; alluvial plains may contain meandering or braided channels.</td></tr><tr><th scope='row'>Lower course</th><td>Often flatter gradients, floodplain storage and deposition; a delta is one possible terminal environment, not the ending of every river.</td></tr></tbody></table><p>Rocky, boulder, alluvial and valley descriptions classify different aspects of terrain or material and need an identified textbook convention. Do not assemble every name in the options into an arbitrary stage count. The unexplained <em>Through stage</em> option supplies no reliable definition and is not silently changed to another word.</p>",
+                    moreHtml: "<p>For headworks, compare seasonal flow reliability and diversion levels, approach alignment and channel migration, foundation and bank geology, flood and debris exposure, and compatibility with bed and suspended sediment. A stable-looking rocky reach can lack the required water level or accessibility; a broad alluvial reach can require substantial sediment and training works. Reach classification helps organize investigation, but no stage name by itself establishes the best site.</p>",
                     sources: [
                         { id: "IRRI951-00095", set: 10, question: 74 },
                         { id: "IRRI951-00318", set: 30, question: 76 },
@@ -39,37 +33,29 @@
                 {
                     id: "river-training-gradient-roughness-and-velocity",
                     title: "A stage name cannot determine velocity",
-                    html: "<p>Discharge and velocity are different quantities: <strong>Q = AV</strong>, where Q is water discharge in m<sup>3</sup>/s, A is flowing cross-sectional area in m<sup>2</sup>, and V is section-mean velocity in m/s. The local velocity attacking a spur nose or outer bank can differ substantially from V. A downstream increase in discharge does not, by itself, establish either an increase or a decrease in velocity because area also changes.</p>" +
-                        "<p>For an ordinary channel reach where a calibrated resistance approximation is appropriate, the SI Manning relation is <strong>V = R<sup>2/3</sup>S<sub>f</sub><sup>1/2</sup>/n</strong>. Hydraulic radius R = A/P is in m, P is wetted perimeter in m, S<sub>f</sub> is energy slope in m/m, and the SI coefficient n has units s/m<sup>1/3</sup>. Equating energy slope with bed slope requires approximately steady, uniform flow; rapidly varied flow near a structure needs more than this substitution.</p>" +
-                        "<p><em>Derived comparison, not bank measurements:</em> at unchanged R, multiplying S<sub>f</sub> by four and n by two leaves the estimated V unchanged, since √4/2 = 1. A steeper reach therefore need not be faster if roughness or depth changes sufficiently. Large partly exposed boulders and shallow irregular flows also weaken a simple Manning representation, as the USBR normal-flow discussion cautions.</p>" +
-                        "<p>The boulder-stage answer is a mnemonic for steep upper-course conditions. Gradient can support high velocity, but boulder roughness, pools, depth, flood stage and local controls determine actual speeds. It is not a universal ranking of every point in a river or proof that every boulder is mobile at ordinary flow.</p>",
+                    html: "<p>Discharge and velocity are different quantities: <strong>Q = AV</strong>, where Q is water discharge in m<sup>3</sup>/s, A is flowing cross-sectional area in m<sup>2</sup>, and V is section-mean velocity in m/s. The local velocity attacking a spur nose or outer bank can differ substantially from V. A downstream increase in discharge does not, by itself, establish either an increase or a decrease in velocity because area also changes.</p><p>For an ordinary channel reach where a calibrated resistance approximation is appropriate, the SI Manning relation is <strong>V = R<sup>2/3</sup>S<sub>f</sub><sup>1/2</sup>/n</strong>. Hydraulic radius R = A/P is in m, P is wetted perimeter in m, S<sub>f</sub> is energy slope in m/m, and the SI coefficient n has units s/m<sup>1/3</sup>. Equating energy slope with bed slope requires approximately steady, uniform flow; rapidly varied flow near a structure needs more than this substitution.</p><p><em>Derived comparison, not bank measurements:</em> at unchanged R, multiplying S<sub>f</sub> by four and n by two leaves the estimated V unchanged, since √4/2 = 1. A steeper reach therefore need not be faster if roughness or depth changes sufficiently. Large partly exposed boulders and shallow irregular flows also weaken a simple Manning representation, as the USBR normal-flow discussion cautions.</p>",
+                    moreHtml: "<p>The boulder-stage answer is a mnemonic for steep upper-course conditions. Gradient can support high velocity, but boulder roughness, pools, depth, flood stage and local controls determine actual speeds. It is not a universal ranking of every point in a river or proof that every boulder is mobile at ordinary flow.</p>",
                     sources: [{ id: "IRRI951-00321", set: 30, question: 79 }]
                 },
                 {
                     id: "river-training-channel-forming-discharge",
                     title: "Dominant discharge measures long-term geomorphic work",
-                    html: "<p><strong>Dominant or channel-forming discharge</strong> describes the importance of flows that repeatedly reshape a channel. The related effective-discharge approach identifies the discharge range contributing most to sediment transport over an observation period. Flow magnitude matters because transport rises strongly once grains become mobile; frequency and duration matter because a powerful event can be very brief. The relevant combination is sediment-transport effectiveness integrated over time, not discharge multiplied by frequency alone.</p>" +
-                        "<p>Let G<sub>s</sub>(Q) be an appropriate sediment-transport rate in kg/s for water discharge Q in m<sup>3</sup>/s. Over T seconds, transported mass is <strong>M<sub>s</sub> = ∫<sub>0</sub><sup>T</sup> G<sub>s</sub>(Q(t)) dt</strong>, in kg. For measured discharge classes, a useful approximation is M<sub>s,i</sub> ≈ G<sub>s,i</sub>Δt<sub>i</sub>. Compare these class contributions, accounting for class widths and the measured transport relation, rather than maximizing Q times its occurrence count.</p>" +
-                        "<p>Specify the sediment fraction and channel-forming process being examined: abundant fine wash load need not control bed-material adjustment in the same way as mobile sand or gravel. Supply limitations, bed armouring and differences between rising and falling floods can make one rating relation inadequate. An effective-discharge estimate is consequently dependent on the data period and method.</p>" +
-                        "<p>This flow is not automatically the median, annual maximum, largest recorded flood or a uniquely two-year event. Bankfull and effective discharges can be related in some rivers but are not identical definitions. Rare extreme floods can dominate in particular settings, so neither always choose the maximum nor always exclude large floods is a valid design rule.</p>",
+                    html: "<p><strong>Dominant or channel-forming discharge</strong> describes the importance of flows that repeatedly reshape a channel. The related effective-discharge approach identifies the discharge range contributing most to sediment transport over an observation period. Flow magnitude matters because transport rises strongly once grains become mobile; frequency and duration matter because a powerful event can be very brief. The relevant combination is sediment-transport effectiveness integrated over time, not discharge multiplied by frequency alone.</p><p>Let G<sub>s</sub>(Q) be an appropriate sediment-transport rate in kg/s for water discharge Q in m<sup>3</sup>/s. Over T seconds, transported mass is <strong>M<sub>s</sub> = ∫<sub>0</sub><sup>T</sup> G<sub>s</sub>(Q(t)) dt</strong>, in kg. For measured discharge classes, a useful approximation is M<sub>s,i</sub> ≈ G<sub>s,i</sub>Δt<sub>i</sub>. Compare these class contributions, accounting for class widths and the measured transport relation, rather than maximizing Q times its occurrence count.</p>",
+                    moreHtml: "<p>Specify the sediment fraction and channel-forming process being examined: abundant fine wash load need not control bed-material adjustment in the same way as mobile sand or gravel. Supply limitations, bed armouring and differences between rising and falling floods can make one rating relation inadequate. An effective-discharge estimate is consequently dependent on the data period and method.</p><p>This flow is not automatically the median, annual maximum, largest recorded flood or a uniquely two-year event. Bankfull and effective discharges can be related in some rivers but are not identical definitions. Rare extreme floods can dominate in particular settings, so neither always choose the maximum nor always exclude large floods is a valid design rule.</p>",
                     sources: [{ id: "IRRI951-00052", set: 6, question: 75 }]
                 },
                 {
                     id: "river-training-sediment-continuity-and-bed-change",
                     title: "Aggradation and degradation follow sediment continuity",
-                    html: "<p>An <strong>alluvial channel</strong> has boundaries formed partly or largely from transported deposits that can be reworked by flow. Its geometry reflects both sediment supply and the ability to transport that supply. A reach can pass sediment while remaining approximately stable on average; stability does not mean that grains stop moving.</p>" +
-                        "<p>For a defined reach, write a sediment mass balance as <strong>dM<sub>store</sub>/dt = G<sub>in</sub> + G<sub>lateral</sub> − G<sub>out</sub></strong>. Stored dry sediment mass M<sub>store</sub> is in kg and each G is a sediment mass flux in kg/s. Include tributary and bank contributions consistently. Storage may occur in the bed, bars or floodplain, so a positive balance does not mean every point of the bed rises equally.</p>" +
-                        "<ul><li><strong>Aggradation:</strong> sustained supply exceeding onward transport leads to net deposition and, where stored in the bed, a rising bed level. Available flood conveyance and intake approach conditions may deteriorate.</li><li><strong>Degradation:</strong> an erodible bed can supply a sediment deficit when outgoing transport exceeds incoming supply, lowering the bed and potentially exposing foundations or destabilizing bank toes.</li><li><strong>Adjustment:</strong> width, slope, bed texture and channel pattern can change together. Armouring or resistant layers may eventually constrain incision.</li></ul>" +
-                        "<p>A sediment trap upstream may reduce deposition at one location but increase sediment deficit downstream; a local contraction may scour while its backwater reach deposits. Assess these linked effects before selecting works. Aggrading, degrading and migrating rivers deserve investigation where they threaten a defined interest, not automatic correction merely because they are changing.</p>",
+                    html: "<p>An <strong>alluvial channel</strong> has boundaries formed partly or largely from transported deposits that can be reworked by flow. Its geometry reflects both sediment supply and the ability to transport that supply. A reach can pass sediment while remaining approximately stable on average; stability does not mean that grains stop moving.</p><p>For a defined reach, write a sediment mass balance as <strong>dM<sub>store</sub>/dt = G<sub>in</sub> + G<sub>lateral</sub> − G<sub>out</sub></strong>. Stored dry sediment mass M<sub>store</sub> is in kg and each G is a sediment mass flux in kg/s. Include tributary and bank contributions consistently. Storage may occur in the bed, bars or floodplain, so a positive balance does not mean every point of the bed rises equally.</p><ul><li><strong>Aggradation:</strong> sustained supply exceeding onward transport leads to net deposition and, where stored in the bed, a rising bed level. Available flood conveyance and intake approach conditions may deteriorate.</li><li><strong>Degradation:</strong> an erodible bed can supply a sediment deficit when outgoing transport exceeds incoming supply, lowering the bed and potentially exposing foundations or destabilizing bank toes.</li><li><strong>Adjustment:</strong> width, slope, bed texture and channel pattern can change together. Armouring or resistant layers may eventually constrain incision.</li></ul>",
+                    moreHtml: "<p>A sediment trap upstream may reduce deposition at one location but increase sediment deficit downstream; a local contraction may scour while its backwater reach deposits. Assess these linked effects before selecting works. Aggrading, degrading and migrating rivers deserve investigation where they threaten a defined interest, not automatic correction merely because they are changing.</p>",
                     sources: [{ id: "IRRI951-00323", set: 31, question: 69 }]
                 },
                 {
                     id: "river-training-meanders-wavelength-and-sinuosity",
                     title: "Meander mechanisms and the length being measured",
-                    html: "<p>A meander couples curvature, a non-uniform velocity field, sediment movement and bank resistance. In a typical bend, secondary or helicoidal circulation has an outward component near the surface and a return component nearer the bed. Together with the main current it helps redistribute sediment and boundary stress: erosion commonly attacks the outer cut bank, while an inner-bank point bar builds. These are tendencies affected by flow stage, bank strength and planform; unequal erosion is a description of part of the process, not its sole cause.</p>" +
-                        "<p>Define the geometry before giving a length. <strong>Meander wavelength λ</strong> is down-valley spacing along a specified local valley axis between corresponding points of successive complete cycles. A left-hand-bend apex to the next corresponding left-hand-bend apex spans a cycle; the adjacent opposite-hand apex is not that same endpoint. Channel-centreline length L<sub>c</sub> follows the winding path between the selected endpoints. Valley-axis distance L<sub>v</sub> is a different measurement, and sinuosity is <strong>s = L<sub>c</sub>/L<sub>v</sub></strong>, dimensionless when both lengths use the same units.</p>" +
-                        "<p><em>Assumed geometry illustration, not bank givens:</em> over one complete cycle on a locally straight valley axis, let L<sub>v</sub> = λ = 1 000 m and L<sub>c</sub> = 1 400 m. Then s = 1.40; a journey along the channel is 1 400 m, not its 1 000 m wavelength. The source's wording about distance along the river and its explanation about straight valley-axis distance cannot be treated as interchangeable definitions.</p>" +
-                        "<p>Meander migration creates floodplain habitat, bars and exchange with adjacent land. Intervention depends on consequences for people and assets; forcing every naturally sinuous channel into a fixed alignment can increase erosion elsewhere and remove these benefits.</p>",
+                    html: "<p>A meander couples curvature, a non-uniform velocity field, sediment movement and bank resistance. In a typical bend, secondary or helicoidal circulation has an outward component near the surface and a return component nearer the bed. Together with the main current it helps redistribute sediment and boundary stress: erosion commonly attacks the outer cut bank, while an inner-bank point bar builds. These are tendencies affected by flow stage, bank strength and planform; unequal erosion is a description of part of the process, not its sole cause.</p><p>Define the geometry before giving a length. <strong>Meander wavelength λ</strong> is down-valley spacing along a specified local valley axis between corresponding points of successive complete cycles. A left-hand-bend apex to the next corresponding left-hand-bend apex spans a cycle; the adjacent opposite-hand apex is not that same endpoint. Channel-centreline length L<sub>c</sub> follows the winding path between the selected endpoints. Valley-axis distance L<sub>v</sub> is a different measurement, and sinuosity is <strong>s = L<sub>c</sub>/L<sub>v</sub></strong>, dimensionless when both lengths use the same units.</p><p><em>Assumed geometry illustration, not bank givens:</em> over one complete cycle on a locally straight valley axis, let L<sub>v</sub> = λ = 1 000 m and L<sub>c</sub> = 1 400 m. Then s = 1.40; a journey along the channel is 1 400 m, not its 1 000 m wavelength. The source's wording about distance along the river and its explanation about straight valley-axis distance cannot be treated as interchangeable definitions.</p>",
+                    moreHtml: "<p>Meander migration creates floodplain habitat, bars and exchange with adjacent land. Intervention depends on consequences for people and assets; forcing every naturally sinuous channel into a fixed alignment can increase erosion elsewhere and remove these benefits.</p>",
                     sources: [
                         { id: "IRRI951-00322", set: 31, question: 68 },
                         { id: "IRRI951-00333", set: 32, question: 70 }
@@ -78,12 +64,8 @@
                 {
                     id: "river-training-high-low-and-mean-water-objectives",
                     title: "High-, low- and mean-water training",
-                    html: "<p>The traditional classification is by the <strong>main service sought</strong>, not three mutually isolated rivers or three constant operating discharges. A project can have more than one objective, and a measure selected for one flow range must be checked at the others.</p>" +
-                        "<table><thead><tr><th scope='col'>Training category</th><th scope='col'>Principal concern</th><th scope='col'>Important qualification</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>High water / discharge</th><td>Pass design floods with tolerable inundation and damage.</td><td>Confinement can increase water levels and transfer risk rather than remove the flood volume.</td></tr>" +
-                        "<tr><th scope='row'>Low water / depth</th><td>Maintain an adequate navigable channel at low flow.</td><td>Concentrating flow may deepen one channel but can increase scour or affect neighbouring banks.</td></tr>" +
-                        "<tr><th scope='row'>Mean water / sediment</th><td>Manage passage and distribution of suspended load and bed load.</td><td>Seek a workable sediment balance, not a promise of zero deposition everywhere.</td></tr></tbody></table>" +
-                        "<p>Mean-water training is a conventional name for sediment-management objectives over relevant channel-forming conditions. It does not require a literal arithmetic-mean discharge, constant velocity or an unchanging water level. Low-water navigation needs a specified draft, channel width and reliability criterion; flood training needs a defined hazard and acceptable consequences. One mnemonic cannot supply those design inputs.</p>",
+                    html: "<p>The traditional classification is by the <strong>main service sought</strong>, not three mutually isolated rivers or three constant operating discharges. A project can have more than one objective, and a measure selected for one flow range must be checked at the others.</p><table><thead><tr><th scope='col'>Training category</th><th scope='col'>Principal concern</th><th scope='col'>Important qualification</th></tr></thead><tbody><tr><th scope='row'>High water / discharge</th><td>Pass design floods with tolerable inundation and damage.</td><td>Confinement can increase water levels and transfer risk rather than remove the flood volume.</td></tr><tr><th scope='row'>Low water / depth</th><td>Maintain an adequate navigable channel at low flow.</td><td>Concentrating flow may deepen one channel but can increase scour or affect neighbouring banks.</td></tr><tr><th scope='row'>Mean water / sediment</th><td>Manage passage and distribution of suspended load and bed load.</td><td>Seek a workable sediment balance, not a promise of zero deposition everywhere.</td></tr></tbody></table>",
+                    moreHtml: "<p>Mean-water training is a conventional name for sediment-management objectives over relevant channel-forming conditions. It does not require a literal arithmetic-mean discharge, constant velocity or an unchanging water level. Low-water navigation needs a specified draft, channel width and reliability criterion; flood training needs a defined hazard and acceptable consequences. One mnemonic cannot supply those design inputs.</p>",
                     sources: [
                         { id: "IRRI951-00314", set: 30, question: 73 },
                         { id: "IRRI951-00315", set: 30, question: 74 },
@@ -93,21 +75,15 @@
                 {
                     id: "river-training-guide-bank-alignment-and-heads",
                     title: "Guide banks align flow at a crossing or headworks",
-                    html: "<p>A <strong>guide bank or guide bund</strong> leads flow through the intended waterway of a bridge, weir or barrage and protects vulnerable approaches. Confining the effective width is one means of keeping the current aligned; it is not a separate process that makes the incoming flood peak disappear. Excessive contraction can instead raise approach water level and intensify velocity and scour.</p>" +
-                        "<p>Study the approach current over changing flood stages, possible migration behind the works and the downstream expansion. Straight shanks with curved heads and elliptical layouts are possible arrangements. The upstream curved head turns approaching flow progressively; the downstream tail helps manage its release. An abrupt turn can cause separation, return currents or inactive end openings. A curve drawn neatly in plan is not evidence that all the flow will follow it.</p>" +
-                        "<p>IRC 89:1997 discusses these features for road bridges, with its guide-bank provisions distinguishing alluvial and sub-montane settings. Radius, arm length and sweep-angle proportions are empirical starting points with site and model-study qualifications, not final dimensions for every irrigation structure. Layout checks include oblique approach, adequate active waterway, afflux, local scour, stable connections to the approaches and the effects on adjacent banks.</p>" +
-                        "<p>Use hydraulic and morphological investigation at the scale of the affected reach. Construction access, inspection and the ability to replenish protection also influence the scheme. Guide banks steer a river locally; they are not reservoirs, flood-peak reducers or guarantees against future channel migration beyond their influence.</p>",
+                    html: "<p>A <strong>guide bank or guide bund</strong> leads flow through the intended waterway of a bridge, weir or barrage and protects vulnerable approaches. Confining the effective width is one means of keeping the current aligned; it is not a separate process that makes the incoming flood peak disappear. Excessive contraction can instead raise approach water level and intensify velocity and scour.</p><p>IRC 89:1997 discusses these features for road bridges, with its guide-bank provisions distinguishing alluvial and sub-montane settings. Radius, arm length and sweep-angle proportions are empirical starting points with site and model-study qualifications, not final dimensions for every irrigation structure. Layout checks include oblique approach, adequate active waterway, afflux, local scour, stable connections to the approaches and the effects on adjacent banks.</p>",
+                    moreHtml: "<p>Study the approach current over changing flood stages, possible migration behind the works and the downstream expansion. Straight shanks with curved heads and elliptical layouts are possible arrangements. The upstream curved head turns approaching flow progressively; the downstream tail helps manage its release. An abrupt turn can cause separation, return currents or inactive end openings. A curve drawn neatly in plan is not evidence that all the flow will follow it.</p><p>Use hydraulic and morphological investigation at the scale of the affected reach. Construction access, inspection and the ability to replenish protection also influence the scheme. Guide banks steer a river locally; they are not reservoirs, flood-peak reducers or guarantees against future channel migration beyond their influence.</p>",
                     sources: [{ id: "IRRI951-00064", set: 7, question: 76 }]
                 },
                 {
                     id: "river-training-guide-bank-proportions-and-bank-example",
                     title: "The 500 m barrage example is conditional",
-                    html: "<p><strong>Actual bank datum:</strong> the barrage length is L = 500 m. Introduce dimensionless preliminary ratios a<sub>u</sub> and a<sub>d</sub>, with upstream and downstream lengths L<sub>u</sub> = a<sub>u</sub>L and L<sub>d</sub> = a<sub>d</sub>L. The bank's stored pair follows only after adopting particular ratios; the stem itself already states that pair.</p>" +
-                        "<table><thead><tr><th scope='col'>Assumption</th><th scope='col'>Upstream length</th><th scope='col'>Downstream length</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>a<sub>u</sub> = 1.0; a<sub>d</sub> = 0.2</th><td>1.0 × 500 = <strong>500 m</strong></td><td>0.2 × 500 = <strong>100 m</strong></td></tr>" +
-                        "<tr><th scope='row'>Another pair within the explanation's ranges</th><td>1.2 × 500 = <strong>600 m</strong></td><td>0.4 × 500 = <strong>200 m</strong></td></tr></tbody></table>" +
-                        "<p>The explanation quotes a<sub>u</sub> = 1.0–1.25 and a<sub>d</sub> = 0.2–0.4, producing intervals of 500–625 m and 100–200 m. Thus its own ranges also admit the offered 600 m/200 m pair. These are the bank's quoted textbook ranges, not a claim that every combination is approved by IRC 89 or adequate for this unidentified site. That reference gives its own site-qualified bridge guidance.</p>" +
-                        "<p>The upstream arm is <strong>often longer</strong> because it must intercept and align an approaching, possibly oblique current; a downstream arm addresses expansion and attack on the approaches. This is a common arrangement, not a universal inequality. Final lengths and curved-head geometry depend on floodplain width, embayment, structures, bank conditions and model evidence. A barrage length alone cannot determine those conditions or a complete design.</p>",
+                    html: "<p><strong>Actual bank datum:</strong> the barrage length is L = 500 m. Introduce dimensionless preliminary ratios a<sub>u</sub> and a<sub>d</sub>, with upstream and downstream lengths L<sub>u</sub> = a<sub>u</sub>L and L<sub>d</sub> = a<sub>d</sub>L. The bank's stored pair follows only after adopting particular ratios; the stem itself already states that pair.</p><table><thead><tr><th scope='col'>Assumption</th><th scope='col'>Upstream length</th><th scope='col'>Downstream length</th></tr></thead><tbody><tr><th scope='row'>a<sub>u</sub> = 1.0; a<sub>d</sub> = 0.2</th><td>1.0 × 500 = <strong>500 m</strong></td><td>0.2 × 500 = <strong>100 m</strong></td></tr><tr><th scope='row'>Another pair within the explanation's ranges</th><td>1.2 × 500 = <strong>600 m</strong></td><td>0.4 × 500 = <strong>200 m</strong></td></tr></tbody></table><p>The explanation quotes a<sub>u</sub> = 1.0–1.25 and a<sub>d</sub> = 0.2–0.4, producing intervals of 500–625 m and 100–200 m. Thus its own ranges also admit the offered 600 m/200 m pair. These are the bank's quoted textbook ranges, not a claim that every combination is approved by IRC 89 or adequate for this unidentified site. That reference gives its own site-qualified bridge guidance.</p>",
+                    moreHtml: "<p>The upstream arm is <strong>often longer</strong> because it must intercept and align an approaching, possibly oblique current; a downstream arm addresses expansion and attack on the approaches. This is a common arrangement, not a universal inequality. Final lengths and curved-head geometry depend on floodplain width, embayment, structures, bank conditions and model evidence. A barrage length alone cannot determine those conditions or a complete design.</p>",
                     sources: [
                         { id: "IRRI951-00060", set: 7, question: 72 },
                         { id: "IRRI951-00067", set: 7, question: 79 }
@@ -125,25 +101,15 @@
                 {
                     id: "river-training-scour-datums-and-apron-volume",
                     title: "Scour datums and an idealized apron calculation",
-                    html: "<p><em>Syllabus extension and assumed numerical illustration: none of the 40 assigned items provides a complete launching-apron calculation. Every level, slope and thickness in this example is assumed, not extracted bank data.</em> A normal or mean scour depth quoted below a flood-water level is a depth from that water-surface datum, not automatically additional erosion below the existing bed. Design scour must assess contraction, local head/tip or bend effects and long-term degradation as applicable, without blindly adding overlapping estimates.</p>" +
-                        "<p>Use one elevation datum, with elevations increasing upward. Let Z<sub>HFL</sub> be the selected high-flood level, Z<sub>a</sub> the reference apron-bed level at the upper end of an idealized launched bed face, and D<sub>max</sub> the maximum scour depth measured <strong>below HFL</strong>. Then the scour-bottom elevation is <strong>Z<sub>sc</sub> = Z<sub>HFL</sub> − D<sub>max</sub></strong> and the required vertical launch drop is <strong>h = Z<sub>a</sub> − Z<sub>sc</sub></strong>, for Z<sub>a</sub> &gt; Z<sub>sc</sub>.</p>" +
-                        "<table><thead><tr><th scope='col'>Assumed input or derived quantity</th><th scope='col'>Value</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>HFL and reference apron-bed elevation</th><td>Z<sub>HFL</sub> = 100.00 m; Z<sub>a</sub> = 96.00 m</td></tr>" +
-                        "<tr><th scope='row'>Maximum depth below HFL</th><td>D<sub>max</sub> = 8.00 m</td></tr>" +
-                        "<tr><th scope='row'>Scour bottom and launch drop</th><td>Z<sub>sc</sub> = 92.00 m; h = 96 − 92 = <strong>4.00 m</strong></td></tr>" +
-                        "<tr><th scope='row'>Assumed launched slope and normal thickness</th><td>z<sub>s</sub>:1 = 2 horizontal:1 vertical; t<sub>n</sub> = 0.50 m</td></tr></tbody></table>" +
-                        "<p>For a planar, prismatic launched face, its slope length is <strong>ℓ = h√(1 + z<sub>s</sub><sup>2</sup>) = 4√5 ≈ 8.944 m</strong>. Its horizontal projection is z<sub>s</sub>h = 8.00 m, a different length. With t<sub>n</sub> measured <strong>normal to the face</strong>, the ideal bulk armour volume per metre of straight frontage is <strong>V′ = t<sub>n</sub>ℓ ≈ 4.472 m<sup>3</sup>/m</strong>. A vertically specified thickness cannot simply replace t<sub>n</sub> in that expression.</p>" +
-                        "<p>If an initially horizontal apron also has an <strong>assumed uniform thickness t<sub>0</sub> = 0.50 m</strong>, all its volume is available to launch, packing remains unchanged and losses are neglected, volume balance gives Wt<sub>0</sub> = V′. Its ideal initial width is therefore <strong>W = 4.472/0.50 ≈ 8.944 m</strong>. This result is not a universal W = 2D rule. The 8 m water-datum scour depth must not replace the 4 m launch drop.</p>" +
-                        "<p>Actual sizing requires allowances for packing changes, loss and uneven launching, retained toe coverage and construction tolerances. Curved noses require three-dimensional coverage and additional geometry; connected mattresses may adopt different shapes or fail to conform. The example establishes a datum and volume argument only, not armour sizing, an adopted code prescription or a completed design.</p>",
+                    html: "<p><em>Syllabus extension and assumed numerical illustration: none of the 40 assigned items provides a complete launching-apron calculation. Every level, slope and thickness in this example is assumed, not extracted bank data.</em> A normal or mean scour depth quoted below a flood-water level is a depth from that water-surface datum, not automatically additional erosion below the existing bed. Design scour must assess contraction, local head/tip or bend effects and long-term degradation as applicable, without blindly adding overlapping estimates.</p><p>Use one elevation datum, with elevations increasing upward. Let Z<sub>HFL</sub> be the selected high-flood level, Z<sub>a</sub> the reference apron-bed level at the upper end of an idealized launched bed face, and D<sub>max</sub> the maximum scour depth measured <strong>below HFL</strong>. Then the scour-bottom elevation is <strong>Z<sub>sc</sub> = Z<sub>HFL</sub> − D<sub>max</sub></strong> and the required vertical launch drop is <strong>h = Z<sub>a</sub> − Z<sub>sc</sub></strong>, for Z<sub>a</sub> &gt; Z<sub>sc</sub>.</p><table><thead><tr><th scope='col'>Assumed input or derived quantity</th><th scope='col'>Value</th></tr></thead><tbody><tr><th scope='row'>HFL and reference apron-bed elevation</th><td>Z<sub>HFL</sub> = 100.00 m; Z<sub>a</sub> = 96.00 m</td></tr><tr><th scope='row'>Maximum depth below HFL</th><td>D<sub>max</sub> = 8.00 m</td></tr><tr><th scope='row'>Scour bottom and launch drop</th><td>Z<sub>sc</sub> = 92.00 m; h = 96 − 92 = <strong>4.00 m</strong></td></tr><tr><th scope='row'>Assumed launched slope and normal thickness</th><td>z<sub>s</sub>:1 = 2 horizontal:1 vertical; t<sub>n</sub> = 0.50 m</td></tr></tbody></table><p>For a planar, prismatic launched face, its slope length is <strong>ℓ = h√(1 + z<sub>s</sub><sup>2</sup>) = 4√5 ≈ 8.944 m</strong>. Its horizontal projection is z<sub>s</sub>h = 8.00 m, a different length. With t<sub>n</sub> measured <strong>normal to the face</strong>, the ideal bulk armour volume per metre of straight frontage is <strong>V′ = t<sub>n</sub>ℓ ≈ 4.472 m<sup>3</sup>/m</strong>. A vertically specified thickness cannot simply replace t<sub>n</sub> in that expression.</p><p>If an initially horizontal apron also has an <strong>assumed uniform thickness t<sub>0</sub> = 0.50 m</strong>, all its volume is available to launch, packing remains unchanged and losses are neglected, volume balance gives Wt<sub>0</sub> = V′. Its ideal initial width is therefore <strong>W = 4.472/0.50 ≈ 8.944 m</strong>. This result is not a universal W = 2D rule. The 8 m water-datum scour depth must not replace the 4 m launch drop.</p>",
+                    moreHtml: "<p>Actual sizing requires allowances for packing changes, loss and uneven launching, retained toe coverage and construction tolerances. Curved noses require three-dimensional coverage and additional geometry; connected mattresses may adopt different shapes or fail to conform. The example establishes a datum and volume argument only, not armour sizing, an adopted code prescription or a completed design.</p>",
                     sources: []
                 },
                 {
                     id: "river-training-spurs-construction-and-water-stage",
                     title: "Spurs and groynes: projection, permeability and stage",
-                    html: "<p><strong>Spur and groyne</strong> are usually synonymous in river training: a work rooted at the bank and projecting into the river to influence the current and protect a selected reach. Transverse means crossing the general current at a right angle or obliquely, not necessarily exactly 90°. This projection distinguishes the usual spur arrangement from a longitudinal flood levee. Guiding the current is its main function; a spur does not inherently reduce the incoming peak discharge.</p>" +
-                        "<p>Classify construction separately from hydraulic purpose. Permeable arrangements allow some water through and increase resistance; solid or comparatively impermeable arrangements redirect more flow around their ends. Brushwood or pile-based works may be temporary, while rockfill, armoured earth and gabion systems can be intended for long service. Neither temporary nor permeable is a defining property of every spur. Debris accumulation and sediment infilling can also change permeability during service.</p>" +
-                        "<p>Submergence is another independent distinction. Compare crest elevation with the specified water level: an emergent spur may become submerged during a flood, when flow passes over as well as around it. A non-submersible design means remaining above the chosen design flood, not above every conceivable flood. The current pattern, loads and local scour can change markedly with stage.</p>" +
-                        "<p>Select length, crest, alignment, permeability and spacing as a system. Protection of the bank root, the tip and the reach between neighbouring spurs must be assessed. A temporary permeable example is one member of this wider family, not a restriction on the meaning of spur.</p>",
+                    html: "<p><strong>Spur and groyne</strong> are usually synonymous in river training: a work rooted at the bank and projecting into the river to influence the current and protect a selected reach. Transverse means crossing the general current at a right angle or obliquely, not necessarily exactly 90°. This projection distinguishes the usual spur arrangement from a longitudinal flood levee. Guiding the current is its main function; a spur does not inherently reduce the incoming peak discharge.</p>",
+                    moreHtml: "<p>Classify construction separately from hydraulic purpose. Permeable arrangements allow some water through and increase resistance; solid or comparatively impermeable arrangements redirect more flow around their ends. Brushwood or pile-based works may be temporary, while rockfill, armoured earth and gabion systems can be intended for long service. Neither temporary nor permeable is a defining property of every spur. Debris accumulation and sediment infilling can also change permeability during service.</p><p>Submergence is another independent distinction. Compare crest elevation with the specified water level: an emergent spur may become submerged during a flood, when flow passes over as well as around it. A non-submersible design means remaining above the chosen design flood, not above every conceivable flood. The current pattern, loads and local scour can change markedly with stage.</p><p>Select length, crest, alignment, permeability and spacing as a system. Protection of the bank root, the tip and the reach between neighbouring spurs must be assessed. A temporary permeable example is one member of this wider family, not a restriction on the meaning of spur.</p>",
                     sources: [
                         { id: "IRRI951-00320", set: 30, question: 78 },
                         { id: "IRRI951-00338", set: 32, question: 74 },
@@ -173,10 +139,8 @@
                 {
                     id: "river-training-spur-fields-scour-and-curved-heads",
                     title: "Spur fields redistribute both scour and deposition",
-                    html: "<p>A spur can contract part of a wide channel, redirect the main current and produce sheltered lower-velocity zones. Greater depth in the contracted channel may assist navigation, while sediment can accumulate where transport capacity falls. These effects can occur together: local scour at the nose does not contradict deposition behind the spur. Nor does deeper water prove that the structure or adjacent bank is safe.</p>" +
-                        "<p>Permeable retarders can encourage deposition when the water actually carries sediment capable of settling in the sheltered region. Clear water cannot create a sediment deposit merely because it slows down. Tip acceleration, horseshoe-type vortices and return currents can undermine protection or erode the bank between works. Examine spacing and length over a spur field, not each work in isolation, and include possible attack on the opposite bank and changes during submergence.</p>" +
-                        "<p>Special head geometry changes the interaction with flow. IRC 89:1997 §6.1.2.9 calls a curved-head spur a <strong>Hockey or Burma type</strong>. Both names are relevant to the bank's curved-head item. A hook can alter the current and sheltered region, but superiority over a straight spur is not universal: curvature, incoming flow, sediment, construction and maintenance determine performance.</p>" +
-                        "<p>Use site observations and suitable hydraulic or mobile-bed studies to assess the expected current and scour pattern. A statement that a groyne can deepen a channel, induce silting and guide flow describes possible functions, not guaranteed simultaneous benefits or permission to leave local scour unprotected.</p>",
+                    html: "<p>A spur can contract part of a wide channel, redirect the main current and produce sheltered lower-velocity zones. Greater depth in the contracted channel may assist navigation, while sediment can accumulate where transport capacity falls. These effects can occur together: local scour at the nose does not contradict deposition behind the spur. Nor does deeper water prove that the structure or adjacent bank is safe.</p><p>Special head geometry changes the interaction with flow. IRC 89:1997 §6.1.2.9 calls a curved-head spur a <strong>Hockey or Burma type</strong>. Both names are relevant to the bank's curved-head item. A hook can alter the current and sheltered region, but superiority over a straight spur is not universal: curvature, incoming flow, sediment, construction and maintenance determine performance.</p>",
+                    moreHtml: "<p>Permeable retarders can encourage deposition when the water actually carries sediment capable of settling in the sheltered region. Clear water cannot create a sediment deposit merely because it slows down. Tip acceleration, horseshoe-type vortices and return currents can undermine protection or erode the bank between works. Examine spacing and length over a spur field, not each work in isolation, and include possible attack on the opposite bank and changes during submergence.</p><p>Use site observations and suitable hydraulic or mobile-bed studies to assess the expected current and scour pattern. A statement that a groyne can deepen a channel, induce silting and guide flow describes possible functions, not guaranteed simultaneous benefits or permission to leave local scour unprotected.</p>",
                     sources: [
                         { id: "IRRI951-00334", set: 32, question: 71 },
                         { id: "IRRI951-00341", set: 32, question: 77 }
@@ -185,10 +149,8 @@
                 {
                     id: "river-training-levees-dykes-and-marginal-embankments",
                     title: "Levees are longitudinal flood barriers",
-                    html: "<p>A river <strong>levee, dyke or marginal embankment</strong> is generally a continuous earthen barrier running along the river or floodplain margin to reduce flooding of the protected land. Works may be needed on one or both sides. Generally parallel means longitudinal in purpose; a real alignment follows terrain, property limits, existing infrastructure and safe tie-ins rather than being exactly parallel to the instantaneous current at every point.</p>" +
-                        "<p>The distinction from spurs is geometric and functional: levees mainly separate a flood corridor from protected land, while spurs or groynes project transversely into the current. Consequently, the usual statements that levees are parallel and that both spurs and groynes are transverse can all be true together. A set-back levee may leave a wider active floodplain than a close-bank levee, with different land, conveyance, storage and ecological consequences.</p>" +
-                        "<p><strong>Bell bund belongs to guide-bank terminology</strong>, not to a wall surrounding a well or pond. Guide banks may also be broadly longitudinal, but their specific purpose is to align flow through a structure. That does not make Bell bund an interchangeable answer for every marginal flood embankment. The generic word bund does not erase the distinction between a guide work, a river levee and a small agricultural pond bank.</p>" +
-                        "<p>Design a continuous protection system with safe ends and interfaces, adequate foundations, managed drainage crossings and access for maintenance. A gap or poorly connected end can admit floodwater even where the main embankment has sufficient height.</p>",
+                    html: "<p>A river <strong>levee, dyke or marginal embankment</strong> is generally a continuous earthen barrier running along the river or floodplain margin to reduce flooding of the protected land. Works may be needed on one or both sides. Generally parallel means longitudinal in purpose; a real alignment follows terrain, property limits, existing infrastructure and safe tie-ins rather than being exactly parallel to the instantaneous current at every point.</p>",
+                    moreHtml: "<p>The distinction from spurs is geometric and functional: levees mainly separate a flood corridor from protected land, while spurs or groynes project transversely into the current. Consequently, the usual statements that levees are parallel and that both spurs and groynes are transverse can all be true together. A set-back levee may leave a wider active floodplain than a close-bank levee, with different land, conveyance, storage and ecological consequences.</p><p><strong>Bell bund belongs to guide-bank terminology</strong>, not to a wall surrounding a well or pond. Guide banks may also be broadly longitudinal, but their specific purpose is to align flow through a structure. That does not make Bell bund an interchangeable answer for every marginal flood embankment. The generic word bund does not erase the distinction between a guide work, a river levee and a small agricultural pond bank.</p><p>Design a continuous protection system with safe ends and interfaces, adequate foundations, managed drainage crossings and access for maintenance. A gap or poorly connected end can admit floodwater even where the main embankment has sufficient height.</p>",
                     sources: [
                         { id: "IRRI951-00327", set: 31, question: 73 },
                         { id: "IRRI951-00335", set: 32, question: 72 },
@@ -200,19 +162,15 @@
                 {
                     id: "river-training-levee-afflux-and-transferred-risk",
                     title: "Levee confinement changes the flood hydraulics",
-                    html: "<p>A levee excludes part of the floodplain from conveying or storing floodwater. It does not remove catchment runoff. For a given discharge, reducing effective conveyance can require a higher water level, while redistribution into a narrower active channel can increase velocity and scour. Water level, area, energy loss and sediment response adjust together; Q = AV is a continuity check, not a complete backwater calculation.</p>" +
-                        "<p><strong>Afflux</strong> is a rise in water surface associated with an obstruction or confinement. In suitable subcritical conditions, the change can propagate upstream as backwater. An upstream water-surface slope may become flatter, while a confined section experiences greater erosive demand. These are possible mechanisms behind the bank's list, not inevitable identical changes at every section or for every river regime.</p>" +
-                        "<p>The result depends on levee spacing, floodplain roughness and storage, channel geometry, downstream controls, tributary timing and the flood hydrograph. Altered storage can also change downstream flood timing and peak. A calculation that fixes the old water depth after substantially changing conveyance misses part of the problem; assuming that confinement reduces the incoming peak misses it altogether.</p>" +
-                        "<p>Evaluate impacts beyond the protected land: backwater at upstream settlements, erosion through the confined reach, flood transfer downstream and consequences of overtopping or breach. Design comparisons should include set-back alternatives and residual-risk management, rather than reporting only the area nominally defended.</p>",
+                    html: "<p>A levee excludes part of the floodplain from conveying or storing floodwater. It does not remove catchment runoff. For a given discharge, reducing effective conveyance can require a higher water level, while redistribution into a narrower active channel can increase velocity and scour. Water level, area, energy loss and sediment response adjust together; Q = AV is a continuity check, not a complete backwater calculation.</p>",
+                    moreHtml: "<p><strong>Afflux</strong> is a rise in water surface associated with an obstruction or confinement. In suitable subcritical conditions, the change can propagate upstream as backwater. An upstream water-surface slope may become flatter, while a confined section experiences greater erosive demand. These are possible mechanisms behind the bank's list, not inevitable identical changes at every section or for every river regime.</p><p>The result depends on levee spacing, floodplain roughness and storage, channel geometry, downstream controls, tributary timing and the flood hydrograph. Altered storage can also change downstream flood timing and peak. A calculation that fixes the old water depth after substantially changing conveyance misses part of the problem; assuming that confinement reduces the incoming peak misses it altogether.</p><p>Evaluate impacts beyond the protected land: backwater at upstream settlements, erosion through the confined reach, flood transfer downstream and consequences of overtopping or breach. Design comparisons should include set-back alternatives and residual-risk management, rather than reporting only the area nominally defended.</p>",
                     sources: [{ id: "IRRI951-00337", set: 1, question: 79 }]
                 },
                 {
                     id: "river-training-floodwall-crest-and-freeboard",
                     title: "Flood-wall crest level is more than a recorded flood mark",
-                    html: "<p>A flood wall is a structural barrier where space or other constraints favour a wall over a broad earth embankment. Its crest must relate to the <strong>design water-surface elevation at the wall</strong>, not merely the minimum water level, an arbitrary 5 m height or the highest mark in a short record. Ground elevation and water elevation must use the same datum before a wall height is calculated.</p>" +
-                        "<p>A useful bookkeeping expression is <strong>Z<sub>c,construction</sub> = Z<sub>d</sub> + F + A<sub>s</sub></strong>, all in m on one datum. Z<sub>d</sub> is the adopted design water elevation, including relevant backwater or afflux; F is required operational freeboard, with wave and uncertainty allowances treated according to the design basis; A<sub>s</sub> is any separately justified settlement allowance. Avoid adding the same wave or uncertainty allowance twice if it is already included in F.</p>" +
-                        "<p>Freeboard is the vertical margin above the relevant design water surface. FAO's irrigation-system discussion explains this general overtopping margin; it is not a flood-wall sizing standard. The appropriate value depends on the hazard, wave exposure, uncertainty, settlement, allowable overtopping and consequences. Historical observations inform the design flood but do not alone establish its probability or future upper bound.</p>" +
-                        "<p>Height is only one check. Water pressure, foundation bearing, sliding, overturning, uplift, seepage, joints and end connections require evaluation. A high wall founded on an erodible or unstable toe can fail without its crest being overtopped. The bank's maximum-flood-level choice identifies the relevant side of the water-level problem, but omits the allowances and stability checks needed for design.</p>",
+                    html: "<p>A flood wall is a structural barrier where space or other constraints favour a wall over a broad earth embankment. Its crest must relate to the <strong>design water-surface elevation at the wall</strong>, not merely the minimum water level, an arbitrary 5 m height or the highest mark in a short record. Ground elevation and water elevation must use the same datum before a wall height is calculated.</p><p>A useful bookkeeping expression is <strong>Z<sub>c,construction</sub> = Z<sub>d</sub> + F + A<sub>s</sub></strong>, all in m on one datum. Z<sub>d</sub> is the adopted design water elevation, including relevant backwater or afflux; F is required operational freeboard, with wave and uncertainty allowances treated according to the design basis; A<sub>s</sub> is any separately justified settlement allowance. Avoid adding the same wave or uncertainty allowance twice if it is already included in F.</p>",
+                    moreHtml: "<p>Freeboard is the vertical margin above the relevant design water surface. FAO's irrigation-system discussion explains this general overtopping margin; it is not a flood-wall sizing standard. The appropriate value depends on the hazard, wave exposure, uncertainty, settlement, allowable overtopping and consequences. Historical observations inform the design flood but do not alone establish its probability or future upper bound.</p><p>Height is only one check. Water pressure, foundation bearing, sliding, overturning, uplift, seepage, joints and end connections require evaluation. A high wall founded on an erodible or unstable toe can fail without its crest being overtopped. The bank's maximum-flood-level choice identifies the relevant side of the water-level problem, but omits the allowances and stability checks needed for design.</p>",
                     sources: [{ id: "HYDR626-00274", set: 30, question: 64 }]
                 },
                 {
@@ -244,19 +202,15 @@
                 {
                     id: "river-training-farm-pond-storage-and-runoff",
                     title: "Farm ponds store water and can modify runoff",
-                    html: "<p>A <strong>farm pond</strong> stores runoff or other available water for later agricultural use. Storage is its central function in the bank item, but it is not its only possible service. Depending on its available volume, location and operation, a pond can intercept sediment, reduce erosive runoff and attenuate part of a flood hydrograph. A full pond with a rapidly spilling outlet provides a different flood benefit from an empty pond with reserved detention capacity.</p>" +
-                        "<p>Write the water balance as <strong>dS/dt = I − O − W − E − L</strong>. S is stored water in m<sup>3</sup>; I includes inflow and direct rainfall, O is controlled release or overflow, W is withdrawal, E is evaporation and L is seepage loss, with every rate expressed in m<sup>3</sup>/s. A rainfall or evaporation depth rate must be multiplied by the appropriate area before it is added to a volumetric rate. Initial storage and sediment-filled volume limit the remaining capacity.</p>" +
-                        "<p><em>Assumed volume illustration, not bank givens:</em> a runoff depth of 20 mm over 1.00 ha gives 0.020 × 10 000 = <strong>200 m<sup>3</sup></strong>. This uses runoff depth, not gross rainfall before losses. It establishes a volume only: peak-flow reduction still requires the inflow hydrograph, starting storage and outlet behaviour.</p>" +
-                        "<p>Assess usable water after evaporation, seepage and storage depletion, as well as sediment management and safe overflow. Local water storage may support supplementary irrigation while changing downstream supply. Neither only water storage nor automatic flood control is a complete interpretation of a pond's role.</p>",
+                    html: "<p>A <strong>farm pond</strong> stores runoff or other available water for later agricultural use. Storage is its central function in the bank item, but it is not its only possible service. Depending on its available volume, location and operation, a pond can intercept sediment, reduce erosive runoff and attenuate part of a flood hydrograph. A full pond with a rapidly spilling outlet provides a different flood benefit from an empty pond with reserved detention capacity.</p><p>Write the water balance as <strong>dS/dt = I − O − W − E − L</strong>. S is stored water in m<sup>3</sup>; I includes inflow and direct rainfall, O is controlled release or overflow, W is withdrawal, E is evaporation and L is seepage loss, with every rate expressed in m<sup>3</sup>/s. A rainfall or evaporation depth rate must be multiplied by the appropriate area before it is added to a volumetric rate. Initial storage and sediment-filled volume limit the remaining capacity.</p><p><em>Assumed volume illustration, not bank givens:</em> a runoff depth of 20 mm over 1.00 ha gives 0.020 × 10 000 = <strong>200 m<sup>3</sup></strong>. This uses runoff depth, not gross rainfall before losses. It establishes a volume only: peak-flow reduction still requires the inflow hydrograph, starting storage and outlet behaviour.</p>",
+                    moreHtml: "<p>Assess usable water after evaporation, seepage and storage depletion, as well as sediment management and safe overflow. Local water storage may support supplementary irrigation while changing downstream supply. Neither only water storage nor automatic flood control is a complete interpretation of a pond's role.</p>",
                     sources: [{ id: "IRRI951-00010", set: 2, question: 78 }]
                 },
                 {
                     id: "river-training-watershed-outcomes-and-monitoring",
                     title: "Measure watershed outcomes rather than promise them",
-                    html: "<p>Improved soil condition and more reliable water can increase farm production, but <strong>higher production and higher per-capita income are potential outcomes</strong>, not guaranteed consequences of installing watershed works. Crop response depends on soil, climate, water timing, agronomy and access. Household income also depends on prices, labour, input costs, debt and the share of benefits a household actually receives.</p>" +
-                        "<p>Separate physical performance from economic performance. Retained soil, reduced gully expansion, usable pond capacity, reliable irrigation supply and changed sediment delivery are measurable physical indicators. Yield and crop value must be compared with operating, maintenance and capital costs. A larger harvest with high costs or unequal access can leave some households no better off, and downstream users may face losses.</p>" +
-                        "<p>Use before-and-after observations interpreted against rainfall variability and suitable comparisons; one wet year is not proof of treatment success. Monitor channel response as well as hillslopes, since deposition at one site can accompany erosion at another. Review clogged structures, sediment-filled storage, changed flow paths and access to maintenance resources.</p>" +
-                        "<p>An integrated programme assigns responsibility for upkeep and outfall operation, includes landholders and downstream users, and adapts where observed performance differs from the assumptions. The defensible learning point is a possible chain from soil and water conservation to production and welfare, with explicit conditions at each step, not a universal scientific promise of higher income.</p>",
+                    html: "<p>Improved soil condition and more reliable water can increase farm production, but <strong>higher production and higher per-capita income are potential outcomes</strong>, not guaranteed consequences of installing watershed works. Crop response depends on soil, climate, water timing, agronomy and access. Household income also depends on prices, labour, input costs, debt and the share of benefits a household actually receives.</p><p>Separate physical performance from economic performance. Retained soil, reduced gully expansion, usable pond capacity, reliable irrigation supply and changed sediment delivery are measurable physical indicators. Yield and crop value must be compared with operating, maintenance and capital costs. A larger harvest with high costs or unequal access can leave some households no better off, and downstream users may face losses.</p><p>An integrated programme assigns responsibility for upkeep and outfall operation, includes landholders and downstream users, and adapts where observed performance differs from the assumptions. The defensible learning point is a possible chain from soil and water conservation to production and welfare, with explicit conditions at each step, not a universal scientific promise of higher income.</p>",
+                    moreHtml: "<p>Use before-and-after observations interpreted against rainfall variability and suitable comparisons; one wet year is not proof of treatment success. Monitor channel response as well as hillslopes, since deposition at one site can accompany erosion at another. Review clogged structures, sediment-filled storage, changed flow paths and access to maintenance resources.</p>",
                     sources: [{ id: "IRRI951-00353", set: 33, question: 76 }]
                 }
             ],
@@ -270,103 +224,419 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Bank check: reach names are not a universal classification.</strong> IRRI951-00095 uses the upper/middle/lower three-reach heuristic. IRRI951-00318 and IRRI951-00319 mix terrain and material terminology; the unexplained Through stage option must not be expanded or changed by guesswork. IRRI951-00321's boulder-stage velocity answer is a steep-reach mnemonic, not a universal speed ranking. Roughness, depth, discharge and local controls remain necessary.</p>",
-                    sources: [
-                        { id: "IRRI951-00095", set: 10, question: 74 },
-                        { id: "IRRI951-00318", set: 30, question: 76 },
-                        { id: "IRRI951-00319", set: 30, question: 77 },
-                        { id: "IRRI951-00321", set: 30, question: 79 }
+                    "id": "check-irri951-00316",
+                    "status": "review",
+                    "prompt": "What is the main aim of mean water training?",
+                    "html": "<p><strong>Bank check: an objective is not a constant hydraulic condition.</strong> </p><p>IRRI951-00316's mean-water training concerns sediment passage and channel adjustment, not operation only at arithmetic-mean discharge or constant velocity. </p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00316",
+                            "set": 1,
+                            "question": 78
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Bank check: dominant discharge is not the maximum of Q times frequency.</strong> IRRI951-00052 correctly points towards channel-forming effectiveness, but its explanation needs a sediment-transport relation and the time spent at each discharge. Compare cumulative transport contributions, not merely water discharge times occurrence. No annual-maximum, median or exact two-year return-period identity follows from the definition.</p>",
-                    sources: [{ id: "IRRI951-00052", set: 6, question: 75 }]
-                },
-                {
-                    html: "<p><strong>Bank check: changing rivers do not automatically need correction.</strong> IRRI951-00322's unequal erosion is only part of meander development; curvature, secondary flow, sediment exchange and bank resistance interact. IRRI951-00323's meandering/aggrading/degrading list identifies possible engineering concerns, not proof that every such reach must be fixed. Intervention needs an exposed interest, an assessment of risk and consideration of natural river functions and transferred impacts.</p>",
-                    sources: [
-                        { id: "IRRI951-00322", set: 31, question: 68 },
-                        { id: "IRRI951-00323", set: 31, question: 69 }
+                    "id": "check-irri951-00337",
+                    "status": "review",
+                    "prompt": "A leeve on flood",
+                    "html": "<p><strong>Bank check: levee effects and alignment are conditional.</strong> </p><p>IRRI951-00337 lists possible increased flood level, velocity and scour, and a flatter upstream surface slope. </p><p>Those effects depend on geometry, boundary controls, floodplain storage and stage; they need not all occur identically everywhere. </p><p>Protection redistributes risk and does not remove runoff or eliminate the possibility of breach.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00337",
+                            "set": 1,
+                            "question": 79
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Bank check: wavelength and travel distance are different.</strong> IRRI951-00333 mixes distance along the river with a valley-axis or straight-distance explanation. Define corresponding points one complete cycle apart, then state whether distance is measured along the valley axis or the channel centreline. Corresponding same-hand apices are not adjacent opposite-hand apices, and sinuosity does not make the two length measurements equal.</p>",
-                    sources: [{ id: "IRRI951-00333", set: 32, question: 70 }]
-                },
-                {
-                    html: "<p><strong>Bank check: an objective is not a constant hydraulic condition.</strong> IRRI951-00316's mean-water training concerns sediment passage and channel adjustment, not operation only at arithmetic-mean discharge or constant velocity. IRRI951-00064's guide banks align flow and may confine its width; they do not inherently reduce the incoming flood peak. A contraction can instead increase afflux and erosive demand.</p>",
-                    sources: [
-                        { id: "IRRI951-00316", set: 1, question: 78 },
-                        { id: "IRRI951-00064", set: 7, question: 76 }
+                    "id": "check-irri951-00010",
+                    "status": "review",
+                    "prompt": "Farm pond is used for.",
+                    "html": "<p><strong>Bank check: watershed services are multiple and outcomes are not assured.</strong> </p><p>IRRI951-00010 emphasizes pond storage, but erosion control, runoff management and flood attenuation can also occur depending on volume and timing. </p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00010",
+                            "set": 2,
+                            "question": 78
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Bank check: guide-bank lengths are not uniquely fixed by 500 m.</strong> IRRI951-00060's stored 500 m/100 m pair uses ratios 1.0 and 0.2. The explanation's own ranges also admit offered 600 m/200 m, and the stem already gives the stored pair. IRRI951-00067's greater upstream length is a common arrangement, not an exceptionless law. Site conditions and the chosen reference govern final proportions and curvature.</p>",
-                    sources: [
-                        { id: "IRRI951-00060", set: 7, question: 72 },
-                        { id: "IRRI951-00067", set: 7, question: 79 }
+                    "id": "check-irri951-00052",
+                    "status": "review",
+                    "prompt": "A quantum of discharge with high enough magnitude and frequency to bring about changes to the river boundary and surrounding area is….",
+                    "html": "<p><strong>Bank check: dominant discharge is not the maximum of Q times frequency.</strong> IRRI951-00052 correctly points towards channel-forming effectiveness, but its explanation needs a sediment-transport relation and the time spent at each discharge. Compare cumulative transport contributions, not merely water discharge times occurrence. No annual-maximum, median or exact two-year return-period identity follows from the definition.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00052",
+                            "set": 6,
+                            "question": 75
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Bank check: neither gabions nor temporary permeable spurs are exclusive.</strong> IRRI951-00065's gabion choice must not be taught as the only launching-apron material. Loose rock and suitably designed discrete concrete blocks can also provide flexible protection; a rigid continuous slab is a different system. IRRI951-00320 describes one spur construction, not all spurs. Connected mattresses, loose stones and solid works need different checks, and a cage does not replace a soil filter.</p>",
-                    sources: [
-                        { id: "IRRI951-00065", set: 7, question: 77 },
-                        { id: "IRRI951-00320", set: 30, question: 78 }
+                    "id": "check-irri951-00060",
+                    "status": "review",
+                    "prompt": "A barrage with 500 m length is designed across an alluvial river. The U/S and D/S lengths of the proposed guide banks of this barrage, will be about 500m and 100m.",
+                    "html": "<p><strong>Bank check: guide-bank lengths are not uniquely fixed by 500 m.</strong> </p><p>IRRI951-00060's stored 500 m/100 m pair uses ratios 1.0 and 0.2. </p><p>The explanation's own ranges also admit offered 600 m/200 m, and the stem already gives the stored pair. </p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00060",
+                            "set": 7,
+                            "question": 72
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Bank check: three functions and normal/deflecting are textbook conventions.</strong> IRRI951-00317, IRRI951-00328 and IRRI951-00343 use the attracting/repelling/deflecting mnemonic with a normal deflecting groyne. IRC 89:1997 §6.1.2 separately lists sedimenting as a fourth function and places right-angle-to-flow spurs there. It describes deflecting by local action and provides other orientation guidance. Do not merge the classifications or assume bank-normal always equals flow-normal.</p>",
-                    sources: [
-                        { id: "IRRI951-00317", set: 30, question: 75 },
-                        { id: "IRRI951-00328", set: 31, question: 74 },
-                        { id: "IRRI951-00343", set: 32, question: 79 }
+                    "id": "check-irri951-00064",
+                    "status": "review",
+                    "prompt": "Guide banks are provided to",
+                    "html": "<p>IRRI951-00064's guide banks align flow and may confine its width; they do not inherently reduce the incoming flood peak. </p><p>A contraction can instead increase afflux and erosive demand.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00064",
+                            "set": 7,
+                            "question": 76
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Bank check: upstream-pointing is not pointing with the downstream flow.</strong> IRRI951-00329's repelling direction is upstream; its parenthetical equating that with the direction of flow is wrong. IRRI951-00342's attracting direction is downstream under the stated convention. IRRI951-00344 does not define the reference for its 30° inclination: from a normal, 30° gives root-to-tip angles of 120° upstream or 60° downstream relative to the downstream tangent. Those derived angles are not universal design limits.</p>",
-                    sources: [
-                        { id: "IRRI951-00329", set: 31, question: 75 },
-                        { id: "IRRI951-00342", set: 32, question: 78 },
-                        { id: "IRRI951-00344", set: 33, question: 67 }
+                    "id": "check-irri951-00065",
+                    "status": "review",
+                    "prompt": "Launching apron is made of",
+                    "html": "<p>IRRI951-00065's gabion choice must not be taught as the only launching-apron material. </p><p>Loose rock and suitably designed discrete concrete blocks can also provide flexible protection; a rigid continuous slab is a different system. </p><p>Connected mattresses, loose stones and solid works need different checks, and a cage does not replace a soil filter.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00065",
+                            "set": 7,
+                            "question": 77
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Bank check: the curved-head question has two supported names.</strong> IRC 89:1997 §6.1.2.9 identifies a curved-head spur as <strong>Hockey or Burma type</strong>. Thus both the hockey and burma options in IRRI951-00334 are defensible under that reference; its stored hockey choice is not exclusive. The explanation also overstates universal superiority and reduced damage relative to straight groynes. No stored option or key is changed here.</p>",
-                    sources: [{ id: "IRRI951-00334", set: 32, question: 71 }]
-                },
-                {
-                    html: "<p><strong>Bank check: the levee/spur statements have no unique offered answer.</strong> In IRRI951-00327, (i) levees generally parallel to flow, (ii) spurs transverse and (iii) groynes transverse are all true in the usual arrangement. Options A, B and D give true pairs, no option includes all three, and option C invokes nonexistent statement (iv). The stored D does not resolve that defect. These notes explain the geometry without inventing or repairing an answer option.</p>",
-                    sources: [{ id: "IRRI951-00327", set: 31, question: 73 }]
-                },
-                {
-                    html: "<p><strong>Bank check: Bell bund is not a pond or well wall.</strong> IRRI951-00336's marginal-embankment synonym for a levee is sound, but its explanation of Bell bund is not. Bell bund belongs to river guide-bank terminology. Distinguish the longitudinal flood-protection role of a marginal embankment from the flow-alignment role of guide banks near a crossing or headworks.</p>",
-                    sources: [{ id: "IRRI951-00336", set: 32, question: 73 }]
-                },
-                {
-                    html: "<p><strong>Bank check: levee effects and alignment are conditional.</strong> IRRI951-00337 lists possible increased flood level, velocity and scour, and a flatter upstream surface slope. Those effects depend on geometry, boundary controls, floodplain storage and stage; they need not all occur identically everywhere. IRRI951-00350's parallel means generally longitudinal, not exact parallelism to every local current. Protection redistributes risk and does not remove runoff or eliminate the possibility of breach.</p>",
-                    sources: [
-                        { id: "IRRI951-00337", set: 1, question: 79 },
-                        { id: "IRRI951-00350", set: 33, question: 73 }
+                    "id": "check-irri951-00067",
+                    "status": "review",
+                    "prompt": "Length of upstream guidebank is...... than downstream guidebank length",
+                    "html": "<p>The explanation's own ranges also admit offered 600 m/200 m, and the stem already gives the stored pair. </p><p>IRRI951-00067's greater upstream length is a common arrangement, not an exceptionless law. </p><p>Site conditions and the chosen reference govern final proportions and curvature.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00067",
+                            "set": 7,
+                            "question": 79
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Bank check: a flood-wall crest needs more than maximum flood level.</strong> HYDR626-00274 omits freeboard and relevant wave, settlement and uncertainty allowances. Establish the design water level at the site, including afflux where applicable, and use a common elevation datum. There is no universal 5 m wall height. Sliding, overturning, bearing, uplift, seepage, toe scour and connections remain separate checks even with adequate crest elevation.</p>",
-                    sources: [{ id: "HYDR626-00274", set: 30, question: 64 }]
-                },
-                {
-                    html: "<p><strong>Bank check: damaged words are not engineering definitions.</strong> IRRI951-00326 says floods pass through a breach, where reach appears to be the intended context; a breach is a break in a defence, not the normal objective of safe conveyance. IRRI951-00332's groove appears to intend groyne, and IRRI951-00341's slits appears to intend silts. These are identified interpretations, not silent source edits. Deposition and channel deepening remain conditional functions, not guarantees that local tip scour is beneficial or safe.</p>",
-                    sources: [
-                        { id: "IRRI951-00326", set: 31, question: 72 },
-                        { id: "IRRI951-00332", set: 31, question: 78 },
-                        { id: "IRRI951-00341", set: 32, question: 77 }
+                    "id": "check-irri951-00095",
+                    "status": "review",
+                    "prompt": "In order to find the proper location for the head works on the river, the river is divided into how many stages?",
+                    "html": "<p><strong>Bank check: reach names are not a universal classification.</strong> </p><p>IRRI951-00095 uses the upper/middle/lower three-reach heuristic. </p><p>Roughness, depth, discharge and local controls remain necessary.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00095",
+                            "set": 10,
+                            "question": 74
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Bank check: watershed services are multiple and outcomes are not assured.</strong> IRRI951-00010 emphasizes pond storage, but erosion control, runoff management and flood attenuation can also occur depending on volume and timing. IRRI951-00352's soil-water conservation and harvesting objectives require suitable measures and safe outflows; they do not guarantee greater downstream or dry-season supply. IRRI951-00353's production and income benefits depend on costs, climate, markets, access and benefit distribution, not implementation alone.</p>",
-                    sources: [
-                        { id: "IRRI951-00010", set: 2, question: 78 },
-                        { id: "IRRI951-00352", set: 33, question: 75 },
-                        { id: "IRRI951-00353", set: 33, question: 76 }
+                    "id": "check-hydr626-00274",
+                    "status": "review",
+                    "prompt": "Flood wall is designed upto",
+                    "html": "<p><strong>Bank check: a flood-wall crest needs more than maximum flood level.</strong> HYDR626-00274 omits freeboard and relevant wave, settlement and uncertainty allowances. Establish the design water level at the site, including afflux where applicable, and use a common elevation datum. There is no universal 5 m wall height. Sliding, overturning, bearing, uplift, seepage, toe scour and connections remain separate checks even with adequate crest elevation.</p>",
+                    "sources": [
+                        {
+                            "id": "HYDR626-00274",
+                            "set": 30,
+                            "question": 64
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00317",
+                    "status": "review",
+                    "prompt": "Into how many groups groynes are classified according to the function they serve?",
+                    "html": "<p><strong>The number depends on the classification.</strong> The three-function attracting/repelling/deflecting mnemonic differs from IRC 89:1997, which also lists sedimenting. State the reference before treating three as universal.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00317",
+                            "set": 30,
+                            "question": 75
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00318",
+                    "status": "review",
+                    "prompt": "When the river flows through the steep hilly region, then that stage is known as",
+                    "html": "<p><strong>Terrain and bed-material labels are not identical classifications.</strong> A steep hilly reach often has coarse bed material, but flow, supply and geology determine it. The unexplained “Through stage” wording should not be expanded by guesswork.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00318",
+                            "set": 30,
+                            "question": 76
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00319",
+                    "status": "review",
+                    "prompt": "When river flows through the plain terrain, then that stage is known as",
+                    "html": "<p><strong>Plain terrain alone does not define one bed-material stage.</strong> Sediment supply and hydraulic conditions are required. Use the stated reach classification rather than treating “Through stage” as an established definition.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00319",
+                            "set": 30,
+                            "question": 77
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00320",
+                    "status": "review",
+                    "prompt": "The permeable temporary structure constructed on the river bank to protect it from erosion is known as",
+                    "html": "<p><strong>Bank check: neither gabions nor temporary permeable spurs are exclusive.</strong> </p><p>IRRI951-00320 describes one spur construction, not all spurs. </p><p>Connected mattresses, loose stones and solid works need different checks, and a cage does not replace a soil filter.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00320",
+                            "set": 30,
+                            "question": 78
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00321",
+                    "status": "review",
+                    "prompt": "In which stage river velocity is maximum or very high?",
+                    "html": "<p><strong>Bank check: reach names are not a universal classification.</strong> </p><p>IRRI951-00321's boulder-stage velocity answer is a steep-reach mnemonic, not a universal speed ranking. </p><p>Roughness, depth, discharge and local controls remain necessary.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00321",
+                            "set": 30,
+                            "question": 79
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00322",
+                    "status": "review",
+                    "prompt": "Due to the unequal erosion of the river banks, the ... section is developed in the river course",
+                    "html": "<p><strong>Bank check: changing rivers do not automatically need correction.</strong> </p><p>IRRI951-00322's unequal erosion is only part of meander development; curvature, secondary flow, sediment exchange and bank resistance interact. </p><p>Intervention needs an exposed interest, an assessment of risk and consideration of natural river functions and transferred impacts.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00322",
+                            "set": 31,
+                            "question": 68
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00323",
+                    "status": "review",
+                    "prompt": "A river training work is generally required when the river is",
+                    "html": "<p><strong>Bank check: changing rivers do not automatically need correction.</strong> </p><p>IRRI951-00323's meandering/aggrading/degrading list identifies possible engineering concerns, not proof that every such reach must be fixed. </p><p>Intervention needs an exposed interest, an assessment of risk and consideration of natural river functions and transferred impacts.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00323",
+                            "set": 31,
+                            "question": 69
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00326",
+                    "status": "review",
+                    "prompt": "The river training works are adopted on a river",
+                    "html": "<p><strong>Bank check: damaged words are not engineering definitions.</strong> </p><p>IRRI951-00326 says floods pass through a breach, where reach appears to be the intended context; a breach is a break in a defence, not the normal objective of safe conveyance. </p><p>These are identified interpretations, not silent source edits. </p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00326",
+                            "set": 31,
+                            "question": 72
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00327",
+                    "status": "review",
+                    "prompt": "Study the following statements. (i) Levees are constructed parallel to river flow, (ii) Spurs are constructed transverse to river flow, (iii) Groynes are constructed transverse to river flow. The correct answer is...",
+                    "html": "<p><strong>Bank check: the levee/spur statements have no unique offered answer.</strong> In IRRI951-00327, (i) levees generally parallel to flow, (ii) spurs transverse and (iii) groynes transverse are all true in the usual arrangement. Options A, B and D give true pairs, no option includes all three, and option C invokes nonexistent statement (iv). The stored D does not resolve that defect. These notes explain the geometry without inventing or repairing an answer option.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00327",
+                            "set": 31,
+                            "question": 73
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00328",
+                    "status": "review",
+                    "prompt": "A deflecting groyne in a river is",
+                    "html": "<p><strong>Deflecting-groyne orientation is convention-dependent.</strong> The textbook normal-groyne mnemonic differs from IRC 89:1997 functional guidance, which separately identifies sedimenting spurs. Bank-normal and flow-normal are also not always the same direction.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00328",
+                            "set": 31,
+                            "question": 74
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00329",
+                    "status": "review",
+                    "prompt": "A repelling groyne is aligned",
+                    "html": "<p><strong>Bank check: upstream-pointing is not pointing with the downstream flow.</strong> </p><p>IRRI951-00329's repelling direction is upstream; its parenthetical equating that with the direction of flow is wrong. </p><p>Those derived angles are not universal design limits.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00329",
+                            "set": 31,
+                            "question": 75
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00332",
+                    "status": "review",
+                    "prompt": "The method used for training of rivers is",
+                    "html": "<p><strong>“Groove” appears to mean groyne.</strong> A groyne is a river-training structure projecting from the bank. That interpretation should be stated; an ordinary groove is not the same engineering work.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00332",
+                            "set": 31,
+                            "question": 78
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00333",
+                    "status": "review",
+                    "prompt": "The length of a meander is the distance along the river between the tangent point of one curve to the tangent point of",
+                    "html": "<p><strong>Bank check: wavelength and travel distance are different.</strong> IRRI951-00333 mixes distance along the river with a valley-axis or straight-distance explanation. Define corresponding points one complete cycle apart, then state whether distance is measured along the valley axis or the channel centreline. Corresponding same-hand apices are not adjacent opposite-hand apices, and sinuosity does not make the two length measurements equal.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00333",
+                            "set": 32,
+                            "question": 70
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00334",
+                    "status": "review",
+                    "prompt": "A groyne with a curved head is known as",
+                    "html": "<p><strong>Bank check: the curved-head question has two supported names.</strong> IRC 89:1997 §6.1.2.9 identifies a curved-head spur as <strong>Hockey or Burma type</strong>. Thus both the hockey and burma options in IRRI951-00334 are defensible under that reference; its stored hockey choice is not exclusive. The explanation also overstates universal superiority and reduced damage relative to straight groynes. No stored option or key is changed here.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00334",
+                            "set": 32,
+                            "question": 71
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00336",
+                    "status": "review",
+                    "prompt": "Leeves is also known as",
+                    "html": "<p><strong>Bank check: Bell bund is not a pond or well wall.</strong> IRRI951-00336's marginal-embankment synonym for a levee is sound, but its explanation of Bell bund is not. Bell bund belongs to river guide-bank terminology. Distinguish the longitudinal flood-protection role of a marginal embankment from the flow-alignment role of guide banks near a crossing or headworks.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00336",
+                            "set": 32,
+                            "question": 73
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00341",
+                    "status": "review",
+                    "prompt": "A groyne",
+                    "html": "<p><strong>“Slits” appears to mean silts.</strong> Groynes can redistribute flow and encourage deposition in suitable locations, but deposition and channel deepening are conditional. Local tip scour is not automatically beneficial.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00341",
+                            "set": 32,
+                            "question": 77
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00342",
+                    "status": "review",
+                    "prompt": "An attracting groyne is the one which is",
+                    "html": "<p>IRRI951-00342's attracting direction is downstream under the stated convention. </p><p>Those derived angles are not universal design limits.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00342",
+                            "set": 32,
+                            "question": 78
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00343",
+                    "status": "review",
+                    "prompt": "In a deflecting groyne, the axis of the groyne with respect to the river flow direction makes",
+                    "html": "<p><strong>Deflecting-groyne orientation is convention-dependent.</strong> The textbook normal-groyne mnemonic differs from IRC 89:1997 functional guidance, which separately identifies sedimenting spurs. Bank-normal and flow-normal are also not always the same direction.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00343",
+                            "set": 32,
+                            "question": 79
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00344",
+                    "status": "review",
+                    "prompt": "Groynes are generally built",
+                    "html": "<p>IRRI951-00344 does not define the reference for its 30° inclination: from a normal, 30° gives root-to-tip angles of 120° upstream or 60° downstream relative to the downstream tangent. </p><p>Those derived angles are not universal design limits.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00344",
+                            "set": 33,
+                            "question": 67
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00350",
+                    "status": "review",
+                    "prompt": "Leeves are constructed",
+                    "html": "<p><strong>Bank check: levee effects and alignment are conditional.</strong> </p><p>Those effects depend on geometry, boundary controls, floodplain storage and stage; they need not all occur identically everywhere. </p><p>IRRI951-00350's parallel means generally longitudinal, not exact parallelism to every local current. </p><p>Protection redistributes risk and does not remove runoff or eliminate the possibility of breach.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00350",
+                            "set": 33,
+                            "question": 73
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00352",
+                    "status": "review",
+                    "prompt": "What is the object of watershed management?",
+                    "html": "<p><strong>Bank check: watershed services are multiple and outcomes are not assured.</strong> </p><p>IRRI951-00352's soil-water conservation and harvesting objectives require suitable measures and safe outflows; they do not guarantee greater downstream or dry-season supply. </p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00352",
+                            "set": 33,
+                            "question": 75
+                        }
+                    ]
+                },
+                {
+                    "id": "check-irri951-00353",
+                    "status": "review",
+                    "prompt": "Implementation of proper watershed practices will improve management",
+                    "html": "<p><strong>Bank check: watershed services are multiple and outcomes are not assured.</strong> </p><p>IRRI951-00353's production and income benefits depend on costs, climate, markets, access and benefit distribution, not implementation alone.</p>",
+                    "sources": [
+                        {
+                            "id": "IRRI951-00353",
+                            "set": 33,
+                            "question": 76
+                        }
                     ]
                 }
             ],

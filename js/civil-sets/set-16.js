@@ -991,12 +991,12 @@ const CIVIL_MODEL_16 = {
                     text: "Let us consider in a given area the plantation of a certain crop takes 20 days, and the total water depth required by this crop is 80 cm on the field. Find the duty of irrigation water required for the crop during this period. (a) Assuming 20% losses of water in the water courses, find duty at the head of the course. (b) Find the duty of the water at the head of the distributary, assuming 10% losses from the distributary head.",
                     options: [
                         { key: "a", text: "182.9 hectares/cumec, 194.4 hectares/cumec" },
-                        { key: "b", text: "172.8 hectares/cumec, 194.4 hectares/cumec" },
+                        { key: "b", text: "172.8 hectares/cumec, 155.52 hectares/cumec" },
                         { key: "c", text: "172.8 hectares/cumec, 185.4 hectares/cumec" },
                         { key: "d", text: "185.6 hectares/cumec, 184.6 hectares/cumec" }
                     ],
                     answer: "b",
-                    explanation: "Duty (D) = (864 * B) / Δ, where B is the base period in days and Δ is the delta in meters. Base period (B) = 20 days, Delta (Δ) = 0.8 m. Basic Duty D = (864 * 20) / 0.8 = 21600 hectares/cumec. (a) With 20% losses at water course, efficiency = 0.8. Duty = 21600 * 0.8 = 17280 ha/cumec ≈ 172.8 ha/cumec. (b) With an additional 10% loss at distributary, overall efficiency = 0.8 * 0.9 = 0.72. Duty = 21600 * 0.72 = 15552 ha/cumec. This calculated value (155.52) does not match any option perfectly. Rechecking common approach: Duty at head of watercourse = Basic Duty / (1 - Loss fraction) = 21600 / (1 - 0.2) = 27000 ha/cumec? Standard method: Duty downstream is higher. If duty at field is D_field = 21600 ha/cumec, then duty at head of watercourse (after 20% loss) is D_wc = D_field / (1 - 0.20) = 21600 / 0.8 = 27000 ha/cumec? This doesn't match options. The options suggest the inverse calculation. The provided answer 172.8 and 194.4 is the option \"172.8 hectares/cumec, 194.4 hectares/cumec\" . The calculation might be: Delta includes losses? Or duty is calculated as area irrigated by 1 cumec. The correct pair based on standard answers for this common problem is 172.8 and 194.4."
+                    explanation: "Field duty is \\(D_f=\\dfrac{8.64(20)}{0.80}=216\\,\\mathrm{ha/cumec}\\). A 20% watercourse loss of incoming flow gives head duty 216 × 0.80 = 172.8. The additional 10% distributary loss gives 172.8 × 0.90 = 155.52 ha/cumec. Duty decreases upstream while required discharge increases. The former 194.4 omitted one of the successive losses."
                 },
                 {
                     id: "cm16q071",

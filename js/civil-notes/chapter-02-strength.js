@@ -11,9 +11,8 @@
                 {
                     id: "strength-and-soil-state",
                     title: "Shear strength and the state of the soil",
-                    html: "<p><strong>Shear strength</strong> is the limiting shear stress a soil can resist, not a force. Sliding friction, interlocking and bonding contribute; failure can appear as a sinking footing, an embankment slide or a moving earth wedge.</p>" +
-                        "<p>For saturated soil, effective normal stress is σ′<sub>n</sub> = σ<sub>n</sub> − u. Clean, uncemented sand has approximately zero effective cohesion. At comparable confinement, denser granular soil generally has greater peak resistance. Wetting can remove suction or raise pore pressure and weaken soil, but neither water content nor void ratio alone determines strength. Loading rate matters through drainage and material response.</p>" +
-                        "<p>Specify confinement, drainage, stress history and whether resistance is peak or large-displacement. Dense sand can lose its interlocking contribution after peak; transferring that peak strength to an already sheared surface can overestimate available resistance.</p>",
+                    html: "<p><strong>Shear strength</strong> is the limiting shear stress a soil can resist, not a force. Sliding friction, interlocking and bonding contribute; failure can appear as a sinking footing, an embankment slide or a moving earth wedge.</p><p>For saturated soil, effective normal stress is σ′<sub>n</sub> = σ<sub>n</sub> − u. Clean, uncemented sand has approximately zero effective cohesion. At comparable confinement, denser granular soil generally has greater peak resistance. </p>",
+                    moreHtml: "<p>Wetting can remove suction or raise pore pressure and weaken soil, but neither water content nor void ratio alone determines strength. Loading rate matters through drainage and material response.</p><p>Specify confinement, drainage, stress history and whether resistance is peak or large-displacement. Dense sand can lose its interlocking contribution after peak; transferring that peak strength to an already sheared surface can overestimate available resistance.</p>",
                     sources: [
                         { id: "SOIL136-00032", set: 4, question: 40 },
                         { id: "SOIL136-00034", set: 4, question: 42 },
@@ -82,12 +81,8 @@
                 {
                     id: "drainage-and-test-selection",
                     title: "UU, CU and CD are drainage histories",
-                    html: "<table><thead><tr><th scope='col'>Test</th><th scope='col'>Before and during shear</th><th scope='col'>Interpretation</th></tr></thead><tbody>" +
-                        "<tr><th scope='row'>UU: unconsolidated-undrained</th><td>No drainage in either stage.</td><td>Short-term total-stress strength for the sampled state.</td></tr>" +
-                        "<tr><th scope='row'>CU: consolidated-undrained</th><td>Consolidate with drainage; close drainage for shear.</td><td>Total strength; effective parameters if u is measured.</td></tr>" +
-                        "<tr><th scope='row'>CD: consolidated-drained</th><td>Drain in both stages.</td><td>Effective parameters with negligible excess pore pressure.</td></tr></tbody></table>" +
-                        "<p>Comparable saturated clay specimens tested UU at unchanged water content/history often give φ<sub>u</sub> ≈ 0 and c<sub>u</sub> = s<sub>u</sub>. Consolidation before CU changes strength; undrained does not universally mean φ = 0. Drained does not mean dry or zero hydrostatic u. A slow test must permit drainage, not merely last a prescribed number of days.</p>" +
-                        "<p>Reproduce field drainage during the loading period. Soil name alone cannot select the stress basis; permeability, drainage distance and loading duration matter together.</p>",
+                    html: "<table><thead><tr><th scope='col'>Test</th><th scope='col'>Before and during shear</th><th scope='col'>Interpretation</th></tr></thead><tbody><tr><th scope='row'>UU: unconsolidated-undrained</th><td>No drainage in either stage.</td><td>Short-term total-stress strength for the sampled state.</td></tr><tr><th scope='row'>CU: consolidated-undrained</th><td>Consolidate with drainage; close drainage for shear.</td><td>Total strength; effective parameters if u is measured.</td></tr><tr><th scope='row'>CD: consolidated-drained</th><td>Drain in both stages.</td><td>Effective parameters with negligible excess pore pressure.</td></tr></tbody></table><p>Comparable saturated clay specimens tested UU at unchanged water content/history often give φ<sub>u</sub> ≈ 0 and c<sub>u</sub> = s<sub>u</sub>. Consolidation before CU changes strength; undrained does not universally mean φ = 0. </p>",
+                    moreHtml: "<p>Drained does not mean dry or zero hydrostatic u. A slow test must permit drainage, not merely last a prescribed number of days.</p><p>Reproduce field drainage during the loading period. Soil name alone cannot select the stress basis; permeability, drainage distance and loading duration matter together.</p>",
                     sources: [
                         { id: "SOIL136-00048", set: 5, question: 43 },
                         { id: "SOIL136-00220", set: 1, question: 41 },
@@ -100,8 +95,8 @@
                 {
                     id: "triaxial-stresses-and-pore-pressure",
                     title: "Triaxial control and pore-pressure evidence",
-                    html: "<p>Conventional triaxial compression controls cell pressure σ<sub>3</sub> = σ<sub>2</sub> and axial deviator stress σ<sub>1</sub> − σ<sub>3</sub>. Drainage control and a relatively well-defined stress state are advantages; the failure plane is not imposed by a split box. Conventional apparatus does not independently control all three principal stresses.</p>" +
-                        "<p>Measured u permits effective-stress CU failure circles; unmeasured u prevents that conversion. Skempton's incremental expression is Δu = B[Δσ<sub>3</sub> + A(Δσ<sub>1</sub> − Δσ<sub>3</sub>)]. B approaches one for saturated soil with a compressible skeleton. Parameters depend on saturation, soil state, stress path, fluid compressibility and temperature; A is not a universal constant.</p>",
+                    html: "<p>Conventional triaxial compression controls cell pressure σ<sub>3</sub> = σ<sub>2</sub> and axial deviator stress σ<sub>1</sub> − σ<sub>3</sub>. Drainage control and a relatively well-defined stress state are advantages; the failure plane is not imposed by a split box. Conventional apparatus does not independently control all three principal stresses.</p><p>Measured u permits effective-stress CU failure circles; unmeasured u prevents that conversion. Skempton's incremental expression is Δu = B[Δσ<sub>3</sub> + A(Δσ<sub>1</sub> − Δσ<sub>3</sub>)]. </p>",
+                    moreHtml: "<p>B approaches one for saturated soil with a compressible skeleton. Parameters depend on saturation, soil state, stress path, fluid compressibility and temperature; A is not a universal constant.</p>",
                     sources: [
                         { id: "SOIL136-00222", set: 18, question: 40 },
                         { id: "SOIL136-00223", set: 18, question: 41 },
@@ -115,8 +110,8 @@
                 {
                     id: "direct-shear-and-imposed-plane",
                     title: "Direct shear: simple apparatus, imposed failure plane",
-                    html: "<p>A shear box displaces one half relative to the other under normal load. Nominal normal and shear stresses are the respective forces divided by the current overlap area. Edge concentrations make stresses nonuniform, and the predetermined plane may not be the weakest orientation.</p>" +
-                        "<p>Strain control describes displacement loading; direct shear is not the same apparatus as simple shear. Drained sand testing is practical. Ordinary boxes cannot reliably measure pore pressure or guarantee undrained clay conditions: impermeable plain grids and fast shearing alone are insufficient. Drainage rate and changing area require attention.</p>",
+                    html: "<p>A shear box displaces one half relative to the other under normal load. Nominal normal and shear stresses are the respective forces divided by the current overlap area. Edge concentrations make stresses nonuniform, and the predetermined plane may not be the weakest orientation.</p>",
+                    moreHtml: "<p>Strain control describes displacement loading; direct shear is not the same apparatus as simple shear. Drained sand testing is practical. Ordinary boxes cannot reliably measure pore pressure or guarantee undrained clay conditions: impermeable plain grids and fast shearing alone are insufficient. Drainage rate and changing area require attention.</p>",
                     sources: [
                         { id: "SOIL136-00227", set: 18, question: 45 },
                         { id: "SOIL136-00228", set: 18, question: 46 },
@@ -129,9 +124,8 @@
                 {
                     id: "unconfined-vane-and-sensitivity",
                     title: "Unconfined compression, vane strength and sensitivity",
-                    html: "<p>Unconfined compression uses a self-supporting cohesive specimen with zero lateral total pressure. Under the saturated, undrained φ<sub>u</sub> = 0 idealization, <strong>s<sub>u</sub> = q<sub>u</sub>/2</strong>. It is a quick option, not the universally preferred test for every saturated clay.</p>" +
-                        "<p>For a fully embedded vane of diameter D and height H, assuming uniform strength on its cylindrical surface and both ends, <strong>s<sub>u</sub> = T/[πD<sup>2</sup>(H/2 + D/6)]</strong>. T is calibrated failure torque after appropriate rod-friction correction; an angular reading alone is not torque or φ. Metres and N m give strength in Pa.</p>" +
-                        "<p>Sensitivity S<sub>t</sub> = intact strength/remoulded strength compares matched water content and test conditions. Vane testing suits soft fine-grained soils; sand, roots, peat fibres and disturbance can invalidate the simple interpretation.</p>",
+                    html: "<p>Unconfined compression uses a self-supporting cohesive specimen with zero lateral total pressure. Under the saturated, undrained φ<sub>u</sub> = 0 idealization, <strong>s<sub>u</sub> = q<sub>u</sub>/2</strong>. It is a quick option, not the universally preferred test for every saturated clay.</p><p>For a fully embedded vane of diameter D and height H, assuming uniform strength on its cylindrical surface and both ends, <strong>s<sub>u</sub> = T/[πD<sup>2</sup>(H/2 + D/6)]</strong>. </p><p>Sensitivity S<sub>t</sub> = intact strength/remoulded strength compares matched water content and test conditions. Vane testing suits soft fine-grained soils; sand, roots, peat fibres and disturbance can invalidate the simple interpretation.</p>",
+                    moreHtml: "<p>T is calibrated failure torque after appropriate rod-friction correction; an angular reading alone is not torque or φ. Metres and N m give strength in Pa.</p>",
                     sources: [
                         { id: "SOIL136-00044", set: 5, question: 39 },
                         { id: "SOIL136-00050", set: 5, question: 45 },
@@ -142,8 +136,8 @@
                 {
                     id: "slope-geometry-and-failure-types",
                     title: "Finite slopes, infinite idealization and slip mechanisms",
-                    html: "<p>An infinite slope idealizes a long, uniform layer with negligible end effects relative to slip depth. Real cuts, dams and embankments are finite, although a shallow local slide may admit that approximation.</p>" +
-                        "<p>Rotational slips can exit the face, pass through the toe, or extend below it as base failures. Weak layers also permit planar translational sliding: curved failure is not compulsory. Gravity supplies driving shear; loading, toe erosion and groundwater changes alter stability. In a rotational slide the head commonly drops while the toe moves outward and upward.</p>",
+                    html: "<p>An infinite slope idealizes a long, uniform layer with negligible end effects relative to slip depth. Real cuts, dams and embankments are finite, although a shallow local slide may admit that approximation.</p>",
+                    moreHtml: "<p>Rotational slips can exit the face, pass through the toe, or extend below it as base failures. Weak layers also permit planar translational sliding: curved failure is not compulsory. Gravity supplies driving shear; loading, toe erosion and groundwater changes alter stability. In a rotational slide the head commonly drops while the toe moves outward and upward.</p>",
                     sources: [
                         { id: "SOIL136-00189", set: 16, question: 36 },
                         { id: "SOIL136-00190", set: 16, question: 37 },
@@ -199,40 +193,146 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>Wrong numerical key:</strong> the dry triaxial item keys 30° despite sinφ′ = 0.25 under c′ = 0. That gives 14.48°, which is not offered.</p>",
-                    sources: [{ id: "SOIL136-00051", set: 5, question: 46 }]
-                },
-                {
-                    html: "<p><strong>Cohesion terminology:</strong> none of the offered rankings properly treats clean dense sand as approximately cohesionless. C<sub>m</sub> means mobilized cohesion, not general shear strength.</p>",
-                    sources: [
-                        { id: "SOIL136-00034", set: 4, question: 42 },
-                        { id: "SOIL136-00039", set: 4, question: 47 }
+                    "id": "check-soil136-00220",
+                    "status": "review",
+                    "prompt": "In an un-drained test on saturated clays, both σ₁ and σ₃ is independent of ______",
+                    "html": "<p><strong>UU wording is incorrect:</strong> total σ<sub>3</sub> equals cell pressure and σ<sub>1</sub> includes it. Approximate confinement independence concerns undrained strength for comparable UU specimens, not those total stresses or CU-consolidated specimens.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00220",
+                            "set": 1,
+                            "question": 41
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>UU wording is incorrect:</strong> total σ<sub>3</sub> equals cell pressure and σ<sub>1</sub> includes it. Approximate confinement independence concerns undrained strength for comparable UU specimens, not those total stresses or CU-consolidated specimens.</p>",
-                    sources: [{ id: "SOIL136-00220", set: 1, question: 41 }]
-                },
-                {
-                    html: "<p><strong>Angle and envelope traps:</strong> 90° on the circle means 45° physically; orthogonal planes are 180° apart on it. Merely having φ &lt; 90° does not prove an envelope is straight.</p>",
-                    sources: [
-                        { id: "SOIL136-00052", set: 5, question: 47 },
-                        { id: "SOIL136-00256", set: 20, question: 46 }
+                    "id": "check-soil136-00034",
+                    "status": "review",
+                    "prompt": "Arrange the following regarding the coefficient of cohesion:",
+                    "html": "<p><strong>Cohesion terminology:</strong> none of the offered rankings properly treats clean dense sand as approximately cohesionless. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00034",
+                            "set": 4,
+                            "question": 42
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Test descriptions:</strong> the keyed three CU methods are an unspecified classification; complex stresses are not themselves a triaxial advantage. The bank's 5–7-day drained-clay duration is not a verified procedure.</p>",
-                    sources: [
-                        { id: "SOIL136-00221", set: 18, question: 39 },
-                        { id: "SOIL136-00232", set: 19, question: 35 },
-                        { id: "SOIL136-00262", set: 21, question: 37 }
+                    "id": "check-soil136-00039",
+                    "status": "review",
+                    "prompt": "C_m is also called",
+                    "html": "<p><strong>C<sub>m</sub> denotes mobilized cohesion.</strong> It is the mobilized cohesive part of resistance under the selected strength model, not the complete shear strength including friction.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00039",
+                            "set": 4,
+                            "question": 47
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Slope wording:</strong> the keyed downward toe movement conflicts with the rotational explanation. The malformed 360/260 numerals mean 36°/26°, not full revolutions.</p>",
-                    sources: [
-                        { id: "SOIL136-00190", set: 16, question: 37 },
-                        { id: "SOIL136-00090", set: 8, question: 45 }
+                    "id": "check-soil136-00051",
+                    "status": "review",
+                    "prompt": "A dry specimen is put through a tri-axial test, it cell pressure =150 Kpa and deviator stress at the failure =100 Kpa then angle of internal friction?",
+                    "html": "<p><strong>Wrong numerical key:</strong> the dry triaxial item keys 30° despite sinφ′ = 0.25 under c′ = 0. That gives 14.48°, which is not offered.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00051",
+                            "set": 5,
+                            "question": 46
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00052",
+                    "status": "review",
+                    "prompt": "An angle θ in the physical element is represented by ______ on Mohr's circle.",
+                    "html": "<p><strong>Angle and envelope traps:</strong> 90° on the circle means 45° physically; orthogonal planes are 180° apart on it. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00052",
+                            "set": 5,
+                            "question": 47
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00090",
+                    "status": "review",
+                    "prompt": "In infinite slope, FOS = 1.5, angle of internal friction = 360, then find the safe angle.",
+                    "html": "<p><strong>Slope wording:</strong> the keyed downward toe movement conflicts with the rotational explanation. </p><p>The malformed 360/260 numerals mean 36°/26°, not full revolutions.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00090",
+                            "set": 8,
+                            "question": 45
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00190",
+                    "status": "review",
+                    "prompt": "The shearing force acting along the slice of a curved surface of slippage, causes the soil to slide",
+                    "html": "<p><strong>Slope wording:</strong> the keyed downward toe movement conflicts with the rotational explanation. </p><p>The malformed 360/260 numerals mean 36°/26°, not full revolutions.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00190",
+                            "set": 16,
+                            "question": 37
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00221",
+                    "status": "review",
+                    "prompt": "The consolidated-undrained test can be performed in ______ methods.",
+                    "html": "<p><strong>Classification not stated.</strong> The keyed number of CU test methods depends on what procedures the author counts. A reproducible description must specify consolidation, drainage during shear and pore-pressure measurement.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00221",
+                            "set": 18,
+                            "question": 39
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00232",
+                    "status": "review",
+                    "prompt": "The shearing of cohesive soil in drained test requires ______ days.",
+                    "html": "<p>The bank's 5–7-day drained-clay duration is not a verified procedure.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00232",
+                            "set": 19,
+                            "question": 35
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00256",
+                    "status": "review",
+                    "prompt": "Mohr envelope can be considered to be straight if the angle of internal friction φ is assumed to be ______.",
+                    "html": "<p><strong>Angle and envelope traps:</strong> 90° on the circle means 45° physically; orthogonal planes are 180° apart on it. </p><p>Merely having φ &lt; 90° does not prove an envelope is straight.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00256",
+                            "set": 20,
+                            "question": 46
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00262",
+                    "status": "review",
+                    "prompt": "Which of the following is an advantage of using triaxial test?",
+                    "html": "<p><strong>Test descriptions:</strong> the keyed three CU methods are an unspecified classification; complex stresses are not themselves a triaxial advantage. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00262",
+                            "set": 21,
+                            "question": 37
+                        }
                     ]
                 }
             ]
@@ -244,8 +344,8 @@
                 {
                     id: "investigation-planning",
                     title: "Plan exploration around the engineering decision",
-                    html: "<p>Begin with project loads, dimensions, construction sequence and tolerable movement. A walkover records exposures, old excavations, escarpments, drainage, flood marks and instability. Topography, climate and access influence investigation methods.</p>" +
-                        "<p>General exploration establishes likely strata, rock depth and groundwater; detailed exploration resolves variability and design parameters. Combine observations, borings, soundings and groundwater investigation. Locate boreholes around important loads and changing ground conditions rather than imposing one universal grid. Structural loading is a design input to obtain, not a soil property measured by drilling.</p>",
+                    html: "<p>Begin with project loads, dimensions, construction sequence and tolerable movement. A walkover records exposures, old excavations, escarpments, drainage, flood marks and instability. Topography, climate and access influence investigation methods.</p>",
+                    moreHtml: "<p>General exploration establishes likely strata, rock depth and groundwater; detailed exploration resolves variability and design parameters. Combine observations, borings, soundings and groundwater investigation. Locate boreholes around important loads and changing ground conditions rather than imposing one universal grid. Structural loading is a design input to obtain, not a soil property measured by drilling.</p>",
                     sources: [
                         { id: "SOIL136-00263", set: 21, question: 38 },
                         { id: "SOIL136-00264", set: 21, question: 39 },
@@ -316,8 +416,8 @@
                 {
                     id: "spt-corrections-and-conditions",
                     title: "Energy, overburden and conditional dilatancy corrections",
-                    html: "<p><strong>N<sub>60</sub> = N(ER/60)C<sub>B</sub>C<sub>R</sub>C<sub>S</sub></strong>, with measured energy ratio ER expressed in percent and the chosen borehole, rod and sampler factors. Effective-overburden normalization then gives (N<sub>1</sub>)<sub>60</sub> = C<sub>N</sub>N<sub>60</sub>. State the reference stress, correlation and caps; different authors' overburden corrections are alternatives, not cumulative multipliers.</p>" +
-                        "<p>The traditional dilatancy correction <strong>N<sub>d</sub> = 15 + 0.5(N<sub>c</sub> − 15)</strong> applies only to saturated fine sands or nonplastic silts when the specified overburden-corrected N<sub>c</sub> exceeds 15. It is not a blanket submergence correction, a CPT correction, or an automatic extra step in every modern correlation.</p>",
+                    html: "<p><strong>N<sub>60</sub> = N(ER/60)C<sub>B</sub>C<sub>R</sub>C<sub>S</sub></strong>, with measured energy ratio ER expressed in percent and the chosen borehole, rod and sampler factors. Effective-overburden normalization then gives (N<sub>1</sub>)<sub>60</sub> = C<sub>N</sub>N<sub>60</sub>. </p><p>The traditional dilatancy correction <strong>N<sub>d</sub> = 15 + 0.5(N<sub>c</sub> − 15)</strong> applies only to saturated fine sands or nonplastic silts when the specified overburden-corrected N<sub>c</sub> exceeds 15. </p>",
+                    moreHtml: "<p>State the reference stress, correlation and caps; different authors' overburden corrections are alternatives, not cumulative multipliers.</p><p>It is not a blanket submergence correction, a CPT correction, or an automatic extra step in every modern correlation.</p>",
                     sources: [
                         { id: "SOIL136-00325", set: 25, question: 44 },
                         { id: "SOIL136-00326", set: 25, question: 45 }
@@ -337,8 +437,8 @@
                 {
                     id: "plate-load-field-test",
                     title: "Plate loading: measured response and scale limitations",
-                    html: "<p>At proposed foundation level, load a rigid bearing plate incrementally with a hydraulic jack reacting against kentledge or an anchored truss. Measure settlement with sensitive gauges on an independent datum frame and record time as well as load. Neither reaction arrangement is universally preferable.</p>" +
-                        "<p>Square and circular plates are common; the bank quotes 300–750 mm sizes. Its 70 g/cm<sup>2</sup> seating pressure means gram-force per area: <strong>6.865 kPa</strong>, approximately 7 kPa. Geometry, seating and load stages require the applicable method. A small plate samples a shallower influence zone; short-duration results cannot establish full-foundation settlement or long-term clay consolidation.</p>",
+                    html: "<p>At proposed foundation level, load a rigid bearing plate incrementally with a hydraulic jack reacting against kentledge or an anchored truss. Measure settlement with sensitive gauges on an independent datum frame and record time as well as load. Neither reaction arrangement is universally preferable.</p><p>Square and circular plates are common; the bank quotes 300–750 mm sizes. Its 70 g/cm<sup>2</sup> seating pressure means gram-force per area: <strong>6.865 kPa</strong>, approximately 7 kPa. </p>",
+                    moreHtml: "<p>Geometry, seating and load stages require the applicable method. A small plate samples a shallower influence zone; short-duration results cannot establish full-foundation settlement or long-term clay consolidation.</p>",
                     sources: [
                         { id: "SOIL136-00376", set: 29, question: 38 },
                         { id: "SOIL136-00377", set: 29, question: 39 },
@@ -355,8 +455,8 @@
                 {
                     id: "boring-logs-and-investigation-report",
                     title: "Turn field observations into a defensible ground model",
-                    html: "<p><strong>Syllabus context:</strong> a boring log records location/elevation, depth datum, strata boundaries, descriptions, sample type/recovery, test depths and raw readings. Groundwater observations need dates, stabilization time and drilling-fluid context.</p>" +
-                        "<p>The report separates observations from interpretation: correlate logs into sections, document permeability/strength testing, present corrected values with methods, and explain chosen parameters, groundwater scenarios and uncertainty. Include foundation/retaining recommendations, construction risks and further investigation needed. Similar soil names do not prove identical engineering behaviour between boreholes.</p>",
+                    html: "<p><strong>Syllabus context:</strong> a boring log records location/elevation, depth datum, strata boundaries, descriptions, sample type/recovery, test depths and raw readings. Groundwater observations need dates, stabilization time and drilling-fluid context.</p>",
+                    moreHtml: "<p>The report separates observations from interpretation: correlate logs into sections, document permeability/strength testing, present corrected values with methods, and explain chosen parameters, groundwater scenarios and uncertainty. Include foundation/retaining recommendations, construction risks and further investigation needed. Similar soil names do not prove identical engineering behaviour between boreholes.</p>",
                     sources: [
                         { id: "SOIL136-00265", set: 21, question: 40 },
                         { id: "SOIL136-00268", set: 21, question: 43 },
@@ -404,8 +504,8 @@
                 {
                     id: "coulomb-culmann-and-sloping-backfill",
                     title: "Wedge equilibrium and nonlevel backfill",
-                    html: "<p>Coulomb balances trial failure wedges and can include wall friction, batter and backfill slope. Culmann is a graphical wedge construction, useful for irregular surfaces and loads; the critical active wedge maximizes required thrust.</p>" +
-                        "<p>Wall friction inclines the contact resultant from the wall normal. Sloping-ground Rankine geometry is different: conjugate planes carry tractions parallel to the other plane. For Rankine's ideal sloping ground, traction on a vertical virtual cut is parallel to the backfill surface. Use its appropriate coefficient and direction, not the level-ground expression or the claim that every stress component is parallel to the surface.</p>",
+                    html: "<p>Coulomb balances trial failure wedges and can include wall friction, batter and backfill slope. Culmann is a graphical wedge construction, useful for irregular surfaces and loads; the critical active wedge maximizes required thrust.</p>",
+                    moreHtml: "<p>Wall friction inclines the contact resultant from the wall normal. Sloping-ground Rankine geometry is different: conjugate planes carry tractions parallel to the other plane. For Rankine's ideal sloping ground, traction on a vertical virtual cut is parallel to the backfill surface. Use its appropriate coefficient and direction, not the level-ground expression or the claim that every stress component is parallel to the surface.</p>",
                     sources: [
                         { id: "SOIL136-00059", set: 6, question: 40 },
                         { id: "SOIL136-00290", set: 23, question: 37 },
@@ -455,8 +555,8 @@
                 {
                     id: "water-pressure-separate-from-earth-pressure",
                     title: "Add hydrostatic water pressure separately",
-                    html: "<p>Below groundwater, use γ′ = γ<sub>sat</sub> − γ<sub>w</sub> for effective overburden, adding overlying layer stresses. For cohesionless active soil, <strong>p<sub>total</sub> = K<sub>a</sub>σ′<sub>v</sub> + u</strong>, with hydrostatic u = γ<sub>w</sub>h. Do not multiply water pressure by K<sub>a</sub>.</p>" +
-                        "<p>Water on both faces cancels only where hydrostatic heads and exposed levels match. Unequal levels leave net water thrust; seepage requires a head distribution rather than assumed hydrostatics. Wall drainage must remain functional before reduced water pressure is justified.</p>",
+                    html: "<p>Below groundwater, use γ′ = γ<sub>sat</sub> − γ<sub>w</sub> for effective overburden, adding overlying layer stresses. For cohesionless active soil, <strong>p<sub>total</sub> = K<sub>a</sub>σ′<sub>v</sub> + u</strong>, with hydrostatic u = γ<sub>w</sub>h. Do not multiply water pressure by K<sub>a</sub>.</p>",
+                    moreHtml: "<p>Water on both faces cancels only where hydrostatic heads and exposed levels match. Unequal levels leave net water thrust; seepage requires a head distribution rather than assumed hydrostatics. Wall drainage must remain functional before reduced water pressure is justified.</p>",
                     sources: [
                         { id: "SOIL136-00290", set: 23, question: 37 },
                         { id: "SOIL136-00292", set: 23, question: 39 },
@@ -467,8 +567,8 @@
                 {
                     id: "cohesive-pressure-and-tension-cutoff",
                     title: "Cohesion does not provide dependable tensile contact",
-                    html: "<p>For the effective-stress Rankine extension, p′<sub>a</sub> = K<sub>a</sub>σ′<sub>v</sub> − 2c′√K<sub>a</sub> and p′<sub>p</sub> = K<sub>p</sub>σ′<sub>v</sub> + 2c′√K<sub>p</sub>. An undrained total-stress model instead needs compatible c<sub>u</sub>, φ<sub>u</sub>.</p>" +
-                        "<p>Cut off negative active contact pressure at zero; soil cannot sustain that assumed tension. For homogeneous dry fill with uniform surcharge, the theoretical zero-pressure depth is z<sub>t</sub> = max[0, (2c′/√K<sub>a</sub> − q)/γ]. Integrate the remaining pressure and check crack water separately. Do not rely on apparent cohesion for permanent retention without justification.</p>",
+                    html: "<p>For the effective-stress Rankine extension, p′<sub>a</sub> = K<sub>a</sub>σ′<sub>v</sub> − 2c′√K<sub>a</sub> and p′<sub>p</sub> = K<sub>p</sub>σ′<sub>v</sub> + 2c′√K<sub>p</sub>. An undrained total-stress model instead needs compatible c<sub>u</sub>, φ<sub>u</sub>.</p><p>Cut off negative active contact pressure at zero; soil cannot sustain that assumed tension. For homogeneous dry fill with uniform surcharge, the theoretical zero-pressure depth is z<sub>t</sub> = max[0, (2c′/√K<sub>a</sub> − q)/γ]. </p>",
+                    moreHtml: "<p>Integrate the remaining pressure and check crack water separately. Do not rely on apparent cohesion for permanent retention without justification.</p>",
                     sources: [
                         { id: "SOIL136-00057", set: 6, question: 38 },
                         { id: "SOIL136-00285", set: 22, question: 48 }
@@ -477,9 +577,8 @@
                 {
                     id: "retaining-wall-stability-checks",
                     title: "Sliding, overturning, bearing and overall stability",
-                    html: "<p><strong>Syllabus context:</strong> assemble soil, surcharge, water and wall-weight forces with their lever arms. Check sliding, overturning, bearing pressure, settlement and a global slip surface through the foundation.</p>" +
-                        "<p>In a simple friction-only base model, F<sub>sliding</sub> = N′tanδ<sub>b</sub>/H<sub>d</sub>, where N′ is base compression after uplift, δ<sub>b</sub> interface friction and H<sub>d</sub> driving horizontal force. Include adhesion or usable passive resistance only when justified. Overturning compares resisting and overturning moments about the toe.</p>" +
-                        "<p>For a rectangular base of width B, unit wall length and full linear contact, <strong>p<sub>max,min</sub> = (N′/B)(1 ± 6e/B)</strong>, with e the resultant eccentricity from the centre. The bank's <strong>|e| ≤ B/6</strong> avoids theoretical base tension, not every failure. Beyond it, recompute compression-only contact rather than accepting negative bearing pressure.</p>",
+                    html: "<p><strong>Syllabus context:</strong> assemble soil, surcharge, water and wall-weight forces with their lever arms. Check sliding, overturning, bearing pressure, settlement and a global slip surface through the foundation.</p><p>In a simple friction-only base model, F<sub>sliding</sub> = N′tanδ<sub>b</sub>/H<sub>d</sub>, where N′ is base compression after uplift, δ<sub>b</sub> interface friction and H<sub>d</sub> driving horizontal force. </p><p>For a rectangular base of width B, unit wall length and full linear contact, <strong>p<sub>max,min</sub> = (N′/B)(1 ± 6e/B)</strong>, with e the resultant eccentricity from the centre. The bank's <strong>|e| ≤ B/6</strong> avoids theoretical base tension, not every failure. Beyond it, recompute compression-only contact rather than accepting negative bearing pressure.</p>",
+                    moreHtml: "<p>Include adhesion or usable passive resistance only when justified. Overturning compares resisting and overturning moments about the toe.</p>",
                     sources: [
                         { id: "HYDR626-00032", set: 5, question: 64 },
                         { id: "SOIL136-00306", set: 24, question: 40 }
@@ -488,8 +587,8 @@
                 {
                     id: "retaining-stability-improvements",
                     title: "Improve the resisting system, not just its dimensions",
-                    html: "<p><strong>Syllabus context:</strong> a wider/heavier base can improve resistance and resultant position; reduced surcharge or flatter backfill reduces demand. Filtered drainage, maintained outlets and erosion protection control water-related loss of stability. Ground improvement, reinforcement, anchors or a shear key require verified ground resistance and structural detailing.</p>" +
-                        "<p>Never count passive support that future excavation or scour may remove. A breast wall is the hill-road term for support/protection of a natural cutting; retaining structures are not restricted to artificial fill. Improvements require rechecking global stability, bearing and constructability.</p>",
+                    html: "<p><strong>Syllabus context:</strong> a wider/heavier base can improve resistance and resultant position; reduced surcharge or flatter backfill reduces demand. Filtered drainage, maintained outlets and erosion protection control water-related loss of stability. Ground improvement, reinforcement, anchors or a shear key require verified ground resistance and structural detailing.</p>",
+                    moreHtml: "<p>Never count passive support that future excavation or scour may remove. A breast wall is the hill-road term for support/protection of a natural cutting; retaining structures are not restricted to artificial fill. Improvements require rechecking global stability, bearing and constructability.</p>",
                     sources: [
                         { id: "SOIL136-00306", set: 24, question: 40 },
                         { id: "TRAN808-00074", set: 8, question: 87 }
@@ -503,50 +602,224 @@
             ],
             cautions: [
                 {
-                    html: "<p><strong>SPT/CPT mix-up:</strong> the two static-cone stems actually describe SPT N corrections and the split-spoon sampler. CPT has no SPT blow count. Gibbs–Holtz and Peck/Thornburn are correction attributions, not instructions to combine methods.</p>",
-                    sources: [
-                        { id: "SOIL136-00325", set: 25, question: 44 },
-                        { id: "SOIL136-00326", set: 25, question: 45 },
-                        { id: "SOIL136-00327", set: 25, question: 46 }
+                    "id": "check-soil136-00288",
+                    "status": "review",
+                    "prompt": "Compute the active pressure intensity when the backfill has unit weight of 18 KN/m³ and height of wall is 6 m. The angle of internal friction is 30°.",
+                    "html": "<p><strong>Unit weight has force-per-volume units.</strong> The stated 18 must be interpreted in kN/m<sup>3</sup>, not kN/m<sup>2</sup>, before multiplying by depth to obtain earth-pressure intensity in kPa.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00288",
+                            "set": 1,
+                            "question": 43
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Units:</strong> the 18 unit weight requires kN/m<sup>3</sup>, not kN/m<sup>2</sup>. Active/passive intensity is kPa, not kN/m<sup>3</sup>; integrated thrust is kN per metre of wall.</p>",
-                    sources: [
-                        { id: "SOIL136-00060", set: 6, question: 41 },
-                        { id: "SOIL136-00288", set: 1, question: 43 },
-                        { id: "SOIL136-00289", set: 23, question: 36 }
+                    "id": "check-soil136-00054",
+                    "status": "review",
+                    "prompt": "Formula for area ratio is?",
+                    "html": "<p>Low area ratio alone cannot certify an undisturbed sample; the quoted 10% guideline is not a verified acceptance standard.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00054",
+                            "set": 6,
+                            "question": 35
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Submerged pressure:</strong> the keyed K<sub>a</sub>γ′z is only the effective soil component, not total pressure. Water on both sides is insufficient for cancellation unless heads match.</p>",
-                    sources: [
-                        { id: "SOIL136-00300", set: 23, question: 46 },
-                        { id: "SOIL136-00301", set: 24, question: 35 }
+                    "id": "check-soil136-00060",
+                    "status": "review",
+                    "prompt": "Calculate the active pressure intensity when the backfill has a unit weight of 18 KN/m², a wall height of 6 m, an angle of internal friction of 30°, and a surcharge of 36 KN/m².",
+                    "html": "<p><strong>Unit weight has force-per-volume units.</strong> The stated 18 must be interpreted in kN/m<sup>3</sup>, not kN/m<sup>2</sup>, before multiplying by depth to obtain earth-pressure intensity in kPa.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00060",
+                            "set": 6,
+                            "question": 41
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>At-rest and plane wording:</strong> no lateral strain does not mean zero shear on every plane. Vertical/horizontal planes are principal only under the stated symmetry. A vertical stress direction is not a vertical stress-carrying plane.</p>",
-                    sources: [
-                        { id: "SOIL136-00311", set: 24, question: 45 },
-                        { id: "SOIL136-00317", set: 25, question: 36 }
+                    "id": "check-soil136-00084",
+                    "status": "review",
+                    "prompt": "Piston sampler is used for which type of soil?",
+                    "html": "<p><strong>Sampling ambiguity:</strong> clay and very soft clay overlap in the piston-sampler choices. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00084",
+                            "set": 8,
+                            "question": 39
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Sampling ambiguity:</strong> clay and very soft clay overlap in the piston-sampler choices. Low area ratio alone cannot certify an undisturbed sample; the quoted 10% guideline is not a verified acceptance standard.</p>",
-                    sources: [
-                        { id: "SOIL136-00054", set: 6, question: 35 },
-                        { id: "SOIL136-00084", set: 8, question: 39 }
+                    "id": "check-soil136-00289",
+                    "status": "review",
+                    "prompt": "Compute the passive pressure intensity when the backfill has unit weight of 18 KN/m³ and height of wall is 6 m. The coefficient of active earth pressure Ka=1/3.",
+                    "html": "<p><strong>Units:</strong> the 18 unit weight requires kN/m<sup>3</sup>, not kN/m<sup>2</sup>. </p><p>Active/passive intensity is kPa, not kN/m<sup>3</sup>; integrated thrust is kN per metre of wall.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00289",
+                            "set": 23,
+                            "question": 36
+                        }
                     ]
                 },
                 {
-                    html: "<p><strong>Unverified test specifications:</strong> the rectangular-plate/concrete-block options and claimed Indian-standard reaction arrangements do not establish an approved geometry or procedure. Verify plate stiffness, size, seating and loading requirements rather than treating these keys as a specification.</p>",
-                    sources: [
-                        { id: "SOIL136-00378", set: 29, question: 40 },
-                        { id: "SOIL136-00379", set: 29, question: 41 },
-                        { id: "SOIL136-00381", set: 29, question: 43 },
-                        { id: "SOIL136-00383", set: 29, question: 45 },
-                        { id: "SOIL136-00384", set: 29, question: 46 }
+                    "id": "check-soil136-00300",
+                    "status": "review",
+                    "prompt": "For a submerged backfill, the active earth pressure is given by ______.",
+                    "html": "<p><strong>Submerged pressure:</strong> the keyed K<sub>a</sub>γ′z is only the effective soil component, not total pressure. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00300",
+                            "set": 23,
+                            "question": 46
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00301",
+                    "status": "review",
+                    "prompt": "If free water stands on both side of a retaining wall, the lateral earth pressure is given by ______.",
+                    "html": "<p><strong>Water pressure cancels only for matching heads.</strong> K<sub>a</sub> times submerged unit weight times depth is the effective soil component. Add the net water-pressure component when the water levels differ.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00301",
+                            "set": 24,
+                            "question": 35
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00311",
+                    "status": "review",
+                    "prompt": "In active stress, the major principal stress σ₁ acting on the wall will be in ______ plane.",
+                    "html": "<p><strong>At-rest and plane wording:</strong> no lateral strain does not mean zero shear on every plane. </p><p>Vertical/horizontal planes are principal only under the stated symmetry. </p><p>A vertical stress direction is not a vertical stress-carrying plane.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00311",
+                            "set": 24,
+                            "question": 45
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00317",
+                    "status": "review",
+                    "prompt": "For earth pressure at rest, there will be no",
+                    "html": "<p><strong>At-rest and plane wording:</strong> no lateral strain does not mean zero shear on every plane. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00317",
+                            "set": 25,
+                            "question": 36
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00325",
+                    "status": "review",
+                    "prompt": "The observed value of N in static cone penetration test is corrected by ______.",
+                    "html": "<p><strong>SPT and CPT are different tests.</strong> N is an SPT blow count, not the result of a static cone penetration test. The wording must identify SPT before applying blow-count corrections.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00325",
+                            "set": 25,
+                            "question": 44
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00326",
+                    "status": "review",
+                    "prompt": "Correction for increasing effective overburden pressure have been proposed by ______.",
+                    "html": "<p>CPT has no SPT blow count. </p><p>Gibbs–Holtz and Peck/Thornburn are correction attributions, not instructions to combine methods.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00326",
+                            "set": 25,
+                            "question": 45
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00327",
+                    "status": "review",
+                    "prompt": "The split tube used in static cone penetration test, is commonly known as ______.",
+                    "html": "<p><strong>SPT/CPT mix-up:</strong> the two static-cone stems actually describe SPT N corrections and the split-spoon sampler. </p><p>CPT has no SPT blow count. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00327",
+                            "set": 25,
+                            "question": 46
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00378",
+                    "status": "review",
+                    "prompt": "The bearing plate used in plate load test is in the shape of ______",
+                    "html": "<p><strong>Plate-test geometry must be specified.</strong> Use the adopted procedure for plate shape, size, stiffness, seating and loading. The offered rectangular-plate or concrete-block statements do not establish a verified test specification.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00378",
+                            "set": 29,
+                            "question": 40
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00379",
+                    "status": "review",
+                    "prompt": "The size of bearing plate, which used in plate load test varies from ______",
+                    "html": "<p>Verify plate stiffness, size, seating and loading requirements rather than treating these keys as a specification.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00379",
+                            "set": 29,
+                            "question": 41
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00381",
+                    "status": "review",
+                    "prompt": "For clayey and silty soils, which of the following bearing plate can be used?",
+                    "html": "<p><strong>Plate-test geometry must be specified.</strong> Use the adopted procedure for plate shape, size, stiffness, seating and loading. The offered rectangular-plate or concrete-block statements do not establish a verified test specification.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00381",
+                            "set": 29,
+                            "question": 43
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00383",
+                    "status": "review",
+                    "prompt": "According to Indian standard method, the loading of the plate should be borne with either by ______",
+                    "html": "<p><strong>Unverified test specifications:</strong> the rectangular-plate/concrete-block options and claimed Indian-standard reaction arrangements do not establish an approved geometry or procedure. </p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00383",
+                            "set": 29,
+                            "question": 45
+                        }
+                    ]
+                },
+                {
+                    "id": "check-soil136-00384",
+                    "status": "review",
+                    "prompt": "A seating pressure of ______ is applied on the plate before starting the load test.",
+                    "html": "<p>Verify plate stiffness, size, seating and loading requirements rather than treating these keys as a specification.</p>",
+                    "sources": [
+                        {
+                            "id": "SOIL136-00384",
+                            "set": 29,
+                            "question": 46
+                        }
                     ]
                 }
             ]

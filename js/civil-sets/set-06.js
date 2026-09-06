@@ -37,15 +37,15 @@ const CIVIL_MODEL_6 = {
                 {
                     id: "cm6q001",
                     src: "BASI674-00053",
-                    text: "In closed traverse, the sum of the north latitudes is more than the sum of the south latitudes and also the sum of the west departures is more than the sum of the east departures, the bearing of the closing line is in the",
+                    text: "In a closed traverse, total north latitude exceeds south latitude and total west departure exceeds east departure. In which quadrant is the closing line drawn from the computed end point back to the start?",
                     options: [
                         { key: "a", text: "NE quadrant" },
                         { key: "b", text: "SE quadrant" },
                         { key: "c", text: "NW quadrant" },
                         { key: "d", text: "SW quadrant" }
                     ],
-                    answer: "c",
-                    explanation: "Since the sum of North latitudes is greater than South latitudes, the resultant latitude is North. Since the sum of West departures is greater than East departures, the resultant departure is West. A line that is North and West points towards the North-West quadrant."
+                    answer: "b",
+                    explanation: "The accumulated start-to-computed-end misclosure points north-west. The line that closes the traverse is the opposite vector, drawn from the computed end back to the start, so it points south-east. The stem now states which vector is required."
                 },
                 {
                     id: "cm6q002",
@@ -1355,15 +1355,15 @@ const CIVIL_MODEL_6 = {
                 {
                     id: "cm6q097",
                     src: "WATE813-00047",
-                    text: "If a circular sewer is partially full &amp; depth is increased, then?",
+                    text: "For a circular sewer, which quantity increases continuously as water depth rises from empty to full?",
                     options: [
                         { key: "a", text: "Wetted perimeter increases" },
                         { key: "b", text: "Velocity increases" },
                         { key: "c", text: "Discharge increases" },
                         { key: "d", text: "Velocity decreases" }
                     ],
-                    answer: "c",
-                    explanation: "In a partly full circular sewer the flow area grows faster than the wetted perimeter until the depth is well past half full, so the discharge keeps increasing with depth. Discharge in fact peaks at about 95 percent of full depth, slightly above the full-bore value."
+                    answer: "a",
+                    explanation: "The wetted perimeter grows continuously with the wetted angle. Hydraulic radius and velocity do not increase continuously to full depth; nor does discharge under a fixed-slope, constant-roughness Manning model. Maximum Manning discharge occurs at about 0.938D, before the section is completely full."
                 },
                 {
                     id: "cm6q098",

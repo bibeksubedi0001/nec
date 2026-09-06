@@ -147,8 +147,8 @@ const CIVIL_MODEL_20 = {
                         { key: "c", text: "Measurements are made along the incorrectly aligned line" },
                         { key: "d", text: "All Options are correct" }
                     ],
-                    answer: "a",
-                    explanation: "If the chain is shorter than standard, it will take more 'chain lengths' to cover a distance, resulting in a recorded distance that is longer than the true distance. This is a positive error."
+                    answer: "d",
+                    explanation: "A shorter-than-standard chain overcounts nominal length; using a sloping or sagging length as horizontal also overestimates it; and an incorrectly aligned path is longer than the straight line. Under these usual uncorrected-distance conventions, all three cause positive errors, so all options are correct."
                 },
                 {
                     id: "cm20q010",
@@ -283,11 +283,11 @@ const CIVIL_MODEL_20 = {
                     options: [
                         { key: "a", text: "78 kNm" },
                         { key: "b", text: "56 kNm" },
-                        { key: "c", text: "84 kNm" },
+                        { key: "c", text: "16 kNm" },
                         { key: "d", text: "132 kNm" }
                     ],
                     answer: "c",
-                    explanation: "Moment of resistance, M = f * Z. Section modulus for rectangle, Z = bd²/6 = (40 * 400²)/6 = 1.0667e6 mm³. M = 15 N/mm² * 1.0667e6 mm³ = 16e6 Nmm = 16 kNm. Note: The options seem inconsistent with the given data; rechecking the problem might be needed. The calculation based on standard formula gives 16 kNm, but 84 kNm is the closest option if depth is 400mm and width is larger, but the question says 'off grid to 40 mm depth 400 mm' which might be a typo. Assuming b=40mm, d=400mm, the calculated M is 16 kNm. However, based on the options, 84 kNm might be for a different dimension. The description will follow the standard calculation."
+                    explanation: "For the stated rectangular section, \\(Z=\\dfrac{bd^2}{6}\\). With b = 40 mm and d = 400 mm, \\(Z=1.0666667\\times10^6\\,\\mathrm{mm^3}\\). At f = 15 N/mm², \\(M=fZ=16\\times10^6\\,\\mathrm{N\\,mm}\\), or 16 kN m. The former 84 kNm option has been replaced; changing the stated width or depth to fit it would solve a different question."
                 },
                 {
                     id: "cm20q020",
@@ -820,8 +820,8 @@ const CIVIL_MODEL_20 = {
                         { key: "c", text: "1.98m" },
                         { key: "d", text: "2.0m" }
                     ],
-                    answer: "b",
-                    explanation: "Hydraulic radius (R) is the ratio of the cross-sectional area of flow (A) to the wetted perimeter (P). Given discharge (Q) = 75 m³/s and velocity (V) = 5 m/s, the area A = Q/V = 75/5 = 15 m². Hydraulic depth (D_h) = A / Top Width (T) = 3m. Therefore, T = A / D_h = 15 / 3 = 5m. For a rectangular channel with depth y, A = T * y = 5 * y = 15, so y = 3m. Wetted Perimeter P = T + 2y = 5 + 2*3 = 11m. Hydraulic Radius R = A/P = 15/11 ≈ 1.3636m. The closest option is 1.87m, which suggests a possible error in the provided options or a misinterpretation. Rechecking: If hydraulic depth is given as 3m, and A=15m², then T=5m. For a rectangular channel, hydraulic depth is just the depth (y) if we consider the standard definition (A/T). So y=3m. Then P = B + 2y = 5 + 6 = 11m. R = 15/11 = 1.3636m. But 1.36m is an option. However, the \"correct\" answer is listed as 1.87m in the key, indicating a potential discrepancy. Based on calculation, it should be 1.36m."
+                    answer: "a",
+                    explanation: "For a rectangular channel the hydraulic depth equals water depth, 3 m. Area is Q/V = 75/5 = 15 m², so width is 5 m. Wetted perimeter is 5 + 2(3) = 11 m and hydraulic radius is \\(R=\\dfrac{15}{11}=1.363636\\,\\mathrm{m}\\), which rounds to the offered 1.36 m. The former 1.87 m key was incorrect."
                 },
                 {
                     id: "cm20q059",
