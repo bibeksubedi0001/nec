@@ -7,6 +7,7 @@
         ACiE0201: {
             code: "ACiE0201",
             questionCount: 80,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Water content</th><td>w = 100 M<sub>water</sub>/M<sub>solids</sub> (%).</td></tr><tr><th scope='row'>Void ratio and porosity</th><td>e = n/(1 − n); n = e/(1 + e).</td></tr><tr><th scope='row'>Saturation</th><td>Se = wG links water content, void ratio and specific gravity.</td></tr><tr><th scope='row'>Dry unit weight</th><td>γ<sub>d</sub> = γ/(1 + w) = Gγ<sub>w</sub>/(1 + e).</td></tr><tr><th scope='row'>Submerged unit weight</th><td>γ' = γ<sub>sat</sub> − γ<sub>w</sub>.</td></tr><tr><th scope='row'>Uniformity coefficient</th><td>C<sub>u</sub> = D<sub>60</sub>/D<sub>10</sub>.</td></tr><tr><th scope='row'>Curvature coefficient</th><td>C<sub>c</sub> = D<sub>30</sub><sup>2</sup>/(D<sub>10</sub>D<sub>60</sub>).</td></tr><tr><th scope='row'>Plasticity index</th><td>PI = LL − PL; A-line PI = 0.73(LL − 20).</td></tr><tr><th scope='row'>Liquidity index</th><td>LI = (w − PL)/PI.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "soil-origin-and-fabric",
@@ -549,6 +550,7 @@
         ACiE0202: {
             code: "ACiE0202",
             questionCount: 63,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Effective stress</th><td>σ' = σ − u; Δσ' = Δσ − Δu (Terzaghi principle).</td></tr><tr><th scope='row'>Ponded water rise</th><td>Δσ = Δu = γ<sub>w</sub>Δh, so Δσ' = 0 under standing water.</td></tr><tr><th scope='row'>Capillary rise</th><td>h<sub>c</sub> = 4T cosθ/(γ<sub>w</sub>d).</td></tr><tr><th scope='row'>Darcy flow</th><td>Q = kiA; seepage velocity v = ki.</td></tr><tr><th scope='row'>Critical gradient</th><td>i<sub>c</sub> = γ'/γ<sub>w</sub> = (G − 1)/(1 + e).</td></tr><tr><th scope='row'>Flow-net discharge</th><td>q = kΔH(N<sub>f</sub>/N<sub>d</sub>).</td></tr><tr><th scope='row'>Layered permeability</th><td>k<sub>parallel</sub> = Σk<sub>i</sub>H<sub>i</sub>/ΣH<sub>i</sub>; k<sub>normal</sub> = ΣH<sub>i</sub>/Σ(H<sub>i</sub>/k<sub>i</sub>).</td></tr><tr><th scope='row'>Relative compaction</th><td>100 γ<sub>d,field</sub>/γ<sub>d,max,lab</sub>; dry density γ<sub>d</sub> = γ/(1 + w).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "effective-stress-principle",
@@ -881,9 +883,9 @@
                 },
                 {
                     "id": "check-soil136-00173",
-                    "status": "review",
-                    "prompt": "The exit gradient can be expressed by which of the following expression?",
-                    "html": "<p><strong>Flow-net limitations:</strong> SOIL136-00173 has identical original options and undefined 'ah/b'; use defined head loss and exit length instead. </p>",
+                    "status": "corrected",
+                    "prompt": "A flow net has total head loss H divided into N_d equal potential drops. The last flow-path field at the exit has length \\(\\ell\\). Which expression estimates the average hydraulic gradient across that field?",
+                    "html": "<p><strong>Reconstructed choices: option A.</strong> Total head H, drop count N<sub>d</sub> and exit-field length are now defined. The average exit gradient is H/(N<sub>d</sub>ℓ). Four distinct expressions replace the undefined, identical source choices; the question's ID and answer letter remain unchanged.</p>",
                     "sources": [
                         {
                             "id": "SOIL136-00173",

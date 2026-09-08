@@ -7,6 +7,7 @@
         ACiE0802: {
             code: "ACiE0802",
             questionCount: 74,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Head</th><td>H<sub>g</sub> = z<sub>head</sub> − z<sub>tail</sub>; net head H<sub>n</sub> = H<sub>g</sub> − h<sub>L</sub>.</td></tr><tr><th scope='row'>Power</th><td>P<sub>h</sub> = ρgQH<sub>n</sub>; P<sub>e</sub> = ρgQH<sub>n</sub>η; P<sub>e</sub>(kW) = 9.81QH<sub>n</sub>η.</td></tr><tr><th scope='row'>Energy per volume</th><td>E = ρgH<sub>n</sub>ηV; 1 kWh = 3.6 × 10<sup>6</sup> J.</td></tr><tr><th scope='row'>Load factor</th><td>LF = P<sub>avg</sub>/P<sub>max</sub>.</td></tr><tr><th scope='row'>Capacity factor</th><td>CF = E/(CT) = P<sub>avg</sub>/C.</td></tr><tr><th scope='row'>Utilization factor</th><td>UF = P<sub>max</sub>/C; CF = LF × UF.</td></tr><tr><th scope='row'>Plant-use factor</th><td>PUF = E/(C·t<sub>on</sub>).</td></tr><tr><th scope='row'>Diversity factor</th><td>ΣP<sub>individual,max</sub>/P<sub>system,max</sub>.</td></tr><tr><th scope='row'>Physical bounds</th><td>0 ≤ η ≤ 1, so 0 ≤ P<sub>e</sub> ≤ P<sub>h</sub>.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "power-study-and-conversion",

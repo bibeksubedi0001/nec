@@ -353,7 +353,7 @@ const CIVIL_MODEL_23 = {
                         { key: "d", text: "96 N/mm²" }
                     ],
                     answer: "c",
-                    explanation: "σ_x=80 N/mm², σ_y=60 N/mm², τ_xy=20 N/mm². Major principal stress σ₁ = (σ_x+σ_y)/2 + √[((σ_x-σ_y)/2)² + τ_xy²] = (80+60)/2 + √[((80-60)/2)² + 20²] = 70 + √[(10)² + 400] = 70 + √[100+400] = 70 + √500 = 70 + 22.36 = 92.36 N/mm²."
+                    explanation: "<p>Use tensile normal stresses as positive: $\\sigma_x=80\\,\\mathrm{MPa}$, $\\sigma_y=60\\,\\mathrm{MPa}$ and shear magnitude $20\\,\\mathrm{MPa}$. One MPa equals one N per square millimetre.</p><ol><li>Mean normal stress: $C=\\dfrac{80+60}{2}=70\\,\\mathrm{MPa}$.</li><li>Half-difference: $D=\\dfrac{80-60}{2}=10\\,\\mathrm{MPa}$.</li><li>Mohr-circle radius: $R=\\sqrt{D^2+\\tau_{xy}^2}$, hence $R=\\sqrt{10^2+20^2}$ and $R\\approx22.3607\\,\\mathrm{MPa}$.</li><li>The major principal stress is $\\sigma_1=C+R\\approx92.36\\,\\mathrm{MPa}$. The minor value is $\\sigma_2=C-R\\approx47.6393\\,\\mathrm{MPa}$.</li></ol><p>Check with unrounded roots: their sum is 140 MPa, and their product is $80(60)-20^2=4400\\,\\mathrm{MPa^2}$. Reversing the shear sign changes principal directions but not these two principal values.</p>"
                 }
             ]
         },

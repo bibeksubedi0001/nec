@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420" role="img" aria-labelledby="title description">
+  <title id="title">One basin, three hydraulic quantities</title>
+  <desc id="description">Assumed flow 300 cubic metres per hour through a basin 30 metres long, 10 metres wide and 3 metres deep. Plan area is 300 square metres; flow cross-section is 30 square metres. Overflow rate is 1 metre per hour, horizontal velocity 10 metres per hour, and nominal detention 3 hours.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#466d89"/></marker>
+  </defs>
+  <rect width="720" height="420" fill="#fbfcfd"/>
+  <g font-family="Verdana, sans-serif" fill="#243b45">
+    <text x="28" y="34" font-size="20" font-weight="bold">One basin, three hydraulic quantities</text>
+    <text x="28" y="60" font-size="14">Assumed flow Q = 300 m<tspan baseline-shift="super" font-size="10">3</tspan>/h</text>
+    <text x="65" y="94" font-size="17" font-weight="bold">Plan view</text>
+    <text x="430" y="94" font-size="17" font-weight="bold">Flow cross-section</text>
+    <rect x="65" y="138" width="300" height="100" fill="#dceef6" stroke="#466d89" stroke-width="2"/>
+    <path d="M85 188H344" fill="none" stroke="#466d89" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M65 121H365" fill="none" stroke="#466d89" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="215" y="114" font-size="13" text-anchor="middle">L = 30 m</text>
+    <text x="65" y="260" font-size="13">B = 10 m</text>
+    <rect x="430" y="138" width="200" height="60" fill="#d5ebe1"/>
+    <path d="M430 138V198H630V138" fill="none" stroke="#32715f" stroke-width="2"/>
+    <path d="M430 138H630" fill="none" stroke="#466d89" stroke-width="2"/>
+    <path d="M641 138V198M430 215H630" fill="none" stroke="#466d89" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="650" y="173" font-size="12">H = 3 m</text>
+    <text x="530" y="238" font-size="13" text-anchor="middle">B = 10 m</text>
+    <text x="65" y="284" font-size="16">A<tspan baseline-shift="sub" font-size="11">plan</tspan> = 300 m<tspan baseline-shift="super" font-size="11">2</tspan></text>
+    <text x="430" y="284" font-size="16">A<tspan baseline-shift="sub" font-size="11">flow</tspan> = 30 m<tspan baseline-shift="super" font-size="11">2</tspan></text>
+    <text x="65" y="322" font-size="17">v<tspan baseline-shift="sub" font-size="11">o</tspan> =</text>
+    <text x="141" y="307" font-size="16" text-anchor="middle">300</text>
+    <path d="M119 314H163" stroke="#243b45"/>
+    <text x="141" y="336" font-size="16" text-anchor="middle">300</text>
+    <text x="179" y="322" font-size="17" font-weight="bold">= 1 m/h</text>
+    <text x="430" y="322" font-size="17">u =</text>
+    <text x="506" y="307" font-size="16" text-anchor="middle">300</text>
+    <path d="M484 314H528" stroke="#243b45"/>
+    <text x="506" y="336" font-size="16" text-anchor="middle">30</text>
+    <text x="542" y="322" font-size="17" font-weight="bold">= 10 m/h</text>
+    <path d="M28 354H692" stroke="#cbd8de"/>
+    <text x="65" y="390" font-size="16">Volume = 900 m<tspan baseline-shift="super" font-size="11">3</tspan></text>
+    <text x="333" y="390" font-size="17">t =</text>
+    <text x="408" y="376" font-size="16" text-anchor="middle">900</text>
+    <path d="M386 382H430" stroke="#243b45"/>
+    <text x="408" y="404" font-size="16" text-anchor="middle">300</text>
+    <text x="447" y="390" font-size="17" font-weight="bold">= 3 h</text>
+  </g>
+</svg>

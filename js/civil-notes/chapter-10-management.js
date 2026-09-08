@@ -7,6 +7,7 @@
         AALL1004: {
             code: "AALL1004",
             questionCount: 10,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Expected return</th><td>μ = Σp<sub>i</sub>r<sub>i</sub>; variance σ<sup>2</sup> = Σp<sub>i</sub>(r<sub>i</sub> − μ)<sup>2</sup>.</td></tr><tr><th scope='row'>Expected monetary value</th><td>EMV = Σ(probability × outcome) at a decision node.</td></tr><tr><th scope='row'>Cash balance</th><td>balance = previous balance + receipts − payments.</td></tr><tr><th scope='row'>Debt-service coverage</th><td>DSCR = cash flow available for debt service/scheduled debt service.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "management-information-system",

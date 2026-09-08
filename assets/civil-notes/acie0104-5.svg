@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Annular section: centroidal second moment of area</title>
+  <desc id="desc">Concentric circular diameters are 20 cm outside and 10 cm inside. Subtract the inner circle moment from the outer circle moment about the same centroidal diameter. I is 7363.11 centimetres to the fourth; the polar moment is twice I.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
+  <rect width="720" height="420" fill="#fbfcfd"/>
+  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+    <text x="26" y="34" font-size="21">Annulus: subtract about the same axis</text>
+    <circle cx="213" cy="223" r="112" fill="#d8edf7" stroke="#273b45" stroke-width="2"/>
+    <circle cx="213" cy="223" r="56" fill="#fbfcfd" stroke="#273b45" stroke-width="2"/>
+    <path d="M72 223H354M213 80V348" stroke="#647780" stroke-dasharray="5 5"/>
+    <text x="351" y="214" font-size="16">x</text><text x="226" y="91" font-size="16">y</text>
+    <path d="M101 357H325" stroke="#287aab" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <path d="M157 157H269" stroke="#287aab" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="166" y="383" font-size="17">D = 20 cm</text><text x="161" y="142" font-size="17">d = 10 cm</text>
+    <text x="394" y="130" font-size="18">Ix = Iy = &#960;(D&#8308; - d&#8308;)/64</text>
+    <text x="394" y="171" font-size="18">20&#8308; = 160,000</text><text x="394" y="201" font-size="18">10&#8308; = 10,000</text>
+    <text x="394" y="254" font-size="18" fill="#2b7b61">I = 7363.11 cm&#8308;</text>
+    <text x="394" y="298" font-size="17">Polar J = Ix + Iy = 2I</text>
+    <text x="28" y="412" font-size="14" fill="#647780">Centroidal in-plane diameter, not the out-of-plane polar axis.</text>
+  </g>
+</svg>

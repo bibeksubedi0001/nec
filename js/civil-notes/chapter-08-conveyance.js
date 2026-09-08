@@ -7,6 +7,7 @@
         ACiE0805: {
             code: "ACiE0805",
             questionCount: 65,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Tunnel sizing</th><td>Q = (1/n)AR<sup>2/3</sup>S<sup>1/2</sup> (Manning).</td></tr><tr><th scope='row'>Friction loss</th><td>h<sub>f</sub> = f<sub>D</sub>(L/D)V<sup>2</sup>/(2g) = 8f<sub>D</sub>LQ<sup>2</sup>/(π<sup>2</sup>gD<sup>5</sup>).</td></tr><tr><th scope='row'>Forebay storage</th><td>A<sub>F</sub> dz/dt = Q<sub>in</sub> − Q<sub>out</sub> − Q<sub>spill</sub>.</td></tr><tr><th scope='row'>Surge tank period</th><td>A<sub>s</sub> dz/dt = Q<sub>s</sub>; T = 2π√[LA<sub>s</sub>/(gA<sub>t</sub>)].</td></tr><tr><th scope='row'>Penstock stresses</th><td>Hoop σ<sub>θ</sub> = pD/(2t); axial σ<sub>z</sub> = pD/(4t).</td></tr><tr><th scope='row'>Economic diameter</th><td>D<sub>econ</sub> = [5b<sub>c</sub>/(ma<sub>c</sub>)]<sup>1/(m+5)</sup>; maximum power gives h<sub>f</sub> = H<sub>g</sub>/3 (not economic).</td></tr><tr><th scope='row'>Water hammer</th><td>Δp = ρaΔV; ΔH = aΔV/g; wave speed a = √[(K/ρ)/(1 + ψKD/(Et))]; critical time 2L/a.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "waterway-functions-and-regimes",

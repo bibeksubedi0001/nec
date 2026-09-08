@@ -38,16 +38,21 @@
 #civilSection .cn-contents a { display: inline-flex; align-items: center; min-height: 32px; font-size: 12px; }
 #civilSection .cn-block { padding: 26px 0; border-bottom: 1px solid var(--cs-line); scroll-margin-top: 20px; }
 #civilSection .cn-block h4, #civilSection .cn-checks > h4, #civilSection .cn-gaps > h4 { margin: 0 0 14px; font-size: 18px; }
-#civilSection .cn-prose { max-width: 96ch; overflow-wrap: anywhere; }
-#civilSection .cn-prose p { margin: 0 0 14px; }
+#civilSection .cn-prose { max-width: 74ch; font: 400 15.5px/1.78 var(--cs-read); color: var(--cs-ink); overflow-wrap: anywhere; }
+#civilSection .cn-prose p { margin: 0 0 15px; }
 #civilSection .cn-prose p:last-child { margin-bottom: 0; }
+/* Content is not bolded; the JS emphasis pass converts formulas to .cn-f and unwraps plain terms. */
+#civilSection .cn-prose :is(strong, b) { font-weight: 400; }
+#civilSection #cvNotes .cn-f { font-family: var(--cs-mono); font-size: .9em; font-weight: 500; color: #12463a; background: #eaf2ec; padding: .06em .34em; border-radius: 4px; overflow-wrap: anywhere; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+#civilSection #cvNotes .cn-f .cn-fraction { margin-block: 0; }
+#civilSection #cvNotes .cn-term { font-weight: 500; font-style: italic; }
 #civilSection .cn-more { max-width: 96ch; margin-top: 16px; padding: 12px 0; border-top: 1px solid var(--cs-line); }
 #civilSection .cn-more > summary { min-height: 32px; color: var(--cs-teal); font-size: 12px; font-weight: 600; cursor: pointer; }
 #civilSection .cn-more > .cn-prose { margin-top: 12px; }
-#civilSection #cvNotes .cn-fraction { display: inline-grid; grid-template-rows: auto auto; vertical-align: middle; max-width: 100%; margin: .15em .12em; line-height: 1.3; text-align: center; letter-spacing: 0; }
-#civilSection #cvNotes .cn-numerator { display: block; min-width: 0; border-bottom: 1px solid currentColor; padding: .02em .22em .12em; }
-#civilSection #cvNotes .cn-denominator { display: block; min-width: 0; padding: .12em .22em .02em; }
-#civilSection #cvNotes :is(sup, sub) .cn-fraction { margin-block: .05em; }
+#civilSection :is(#cvNotes, .cn-formatted-explanation) .cn-fraction { display: inline-grid; grid-template-rows: auto auto; vertical-align: middle; max-width: 100%; margin: .15em .12em; line-height: 1.3; text-align: center; letter-spacing: 0; }
+#civilSection :is(#cvNotes, .cn-formatted-explanation) .cn-numerator { display: block; min-width: 0; border-bottom: 1px solid currentColor; padding: .02em .22em .12em; }
+#civilSection :is(#cvNotes, .cn-formatted-explanation) .cn-denominator { display: block; min-width: 0; padding: .12em .22em .02em; }
+#civilSection :is(#cvNotes, .cn-formatted-explanation) :is(sup, sub) .cn-fraction { margin-block: .05em; }
 #civilSection #cvNotes .cn-figure { max-width: 760px; margin: 24px 0 12px; }
 #civilSection #cvNotes .cn-figure-open { display: block; position: relative; width: 100%; aspect-ratio: 12 / 7; padding: 0; border: 1px solid var(--cs-line); border-radius: 6px; overflow: hidden; background: #fbfcfd; color: var(--cs-teal); cursor: zoom-in; }
 #civilSection #cvNotes .cn-figure-open img { display: block; width: 100%; height: auto; aspect-ratio: 12 / 7; }
@@ -82,7 +87,7 @@
 #civilSection .cn-caution > summary { cursor: pointer; }
 #civilSection .cn-check-label { display: inline-flex; flex-wrap: wrap; gap: 8px 18px; align-items: baseline; max-width: 100%; font-weight: 600; }
 #civilSection .cn-check-status { font-size: 11px; font-weight: 500; color: var(--cs-muted); }
-#civilSection .cn-check-prompt { display: block; margin: 7px 0 0; font-size: 13px; font-weight: 500; line-height: 1.6; overflow-wrap: anywhere; }
+#civilSection .cn-check-prompt { display: block; margin: 7px 0 0; font: 400 14px/1.65 var(--cs-read); overflow-wrap: anywhere; }
 #civilSection .cn-check-content { margin-top: 16px; }
 #civilSection .cn-check-content > button { margin-top: 16px; }
 #civilSection .cn-caution[data-check-status="corrected"] { border-left-color: var(--cs-teal); background: #eef6f1; }
@@ -103,14 +108,62 @@
 #civilSection .cn-close { flex: none; width: 44px; height: 44px; padding: 10px; border: 1px solid var(--cs-line); border-radius: 9px; background: #fff; color: var(--cs-teal); cursor: pointer; }
 #civilSection .cn-source-check { margin: 18px 0; padding: 16px; border-left: 3px solid #b88b38; background: #fcf8ee; }
 #civilSection .cn-source-check h3 { margin: 0 0 8px; font-size: 16px; }
-#civilSection .cn-source-question { margin: 18px 0; font-weight: 600; overflow-wrap: anywhere; }
+#civilSection .cn-source-question { margin: 18px 0; font: 500 15px/1.7 var(--cs-read); overflow-wrap: anywhere; }
 #civilSection .cn-source-options { padding-left: 26px; }
-#civilSection .cn-source-options li { padding: 8px; border-bottom: 1px solid var(--cs-line); }
+#civilSection .cn-source-options li { border-bottom: 1px solid var(--cs-line); }
+#civilSection .cn-source-hint { margin: 14px 0 4px; color: var(--cs-muted); font-size: 12px; }
+#civilSection .cn-option-btn { display: block; width: 100%; min-height: 44px; padding: 10px 12px; border: 0; border-radius: 6px; background: transparent; color: var(--cs-ink); font: 400 15px/1.6 var(--cs-read); text-align: left; overflow-wrap: anywhere; cursor: pointer; }
+#civilSection .cn-option-btn:hover:not(:disabled) { background: var(--cs-mint); }
+#civilSection .cn-option-btn:disabled { cursor: default; }
+#civilSection .cn-option-btn.is-correct { background: #e7f4ed; color: #14603f; box-shadow: inset 3px 0 var(--cs-teal); }
+#civilSection .cn-option-btn.is-wrong { background: #fbeceb; color: #8f2d24; box-shadow: inset 3px 0 #a84940; }
 #civilSection .cn-stored-answer { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--cs-line); }
 #civilSection .cn-stored-answer summary { min-height: 44px; color: var(--cs-teal); cursor: pointer; font-weight: 600; }
+#civilSection .cn-source-explanation { min-width: 0; max-width: 74ch; font: 400 15.5px/1.78 var(--cs-read); letter-spacing: 0; }
+#civilSection .cn-source-explanation :is(strong, b) { font-weight: 400; }
+#civilSection .cn-source-explanation p { margin: 0 0 15px; }
+#civilSection .cn-source-explanation ol { padding-left: 22px; }
+#civilSection .cn-source-explanation li { margin-bottom: 12px; }
+#civilSection .cn-explanation-figure { min-width: 0; max-width: 720px; margin: 20px 0; }
+#civilSection .cn-explanation-figure > a { display: block; border: 1px solid var(--cs-line); border-radius: 6px; overflow: hidden; background: #fbfcfd; cursor: zoom-in; }
+#civilSection .cn-explanation-figure > a:focus-visible { outline: 3px solid var(--cs-teal); outline-offset: 3px; }
+#civilSection .cn-explanation-figure img { display: block; width: 100%; height: auto; aspect-ratio: 12 / 7; }
+#civilSection .cn-explanation-figure figcaption { padding-top: 9px; font: 400 13px/1.6 var(--cs-read); color: var(--cs-muted); }
+#civilSection .cn-source-derivations { margin-top: 24px; border-top: 1px solid var(--cs-line); }
+#civilSection .cn-source-derivations > h3 { margin: 18px 0 10px; font-size: 17px; }
+#civilSection .cn-related-note { padding: 10px 0; border-bottom: 1px solid var(--cs-line); }
+#civilSection .cn-related-note > summary { min-height: 36px; color: var(--cs-teal); cursor: pointer; line-height: 1.6; }
+#civilSection .cn-related-note > .cn-prose { margin-top: 12px; }
 #civilSection #cvNoteSourceBody { min-width: 0; overflow-wrap: anywhere; }
 #civilSection #cvNoteSourceBody svg { max-width: 100%; }
 #civilSection #cvNotes mjx-container { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+#civilSection .cn-topic.cn-lesson { padding: 0; border: 0; border-radius: 0; background: transparent; }
+#civilSection #cvNotes .cn-lesson :is(h3, h4, h5) { letter-spacing: 0; }
+#civilSection .cn-lesson .cn-topic-head h3 { font-size: 24px; }
+#civilSection .cn-lesson .cn-scope { border: 0; border-radius: 0; padding: 8px 0; background: transparent; }
+#civilSection .cn-lesson-nav { display: flex; flex-wrap: wrap; align-items: end; gap: 8px 22px; padding: 14px 0 20px; border-bottom: 1px solid var(--cs-line); }
+#civilSection .cn-lesson-nav .cn-field { flex: 1 1 280px; max-width: 420px; }
+#civilSection .cn-lesson-nav select { border-radius: 6px; }
+#civilSection .cn-lesson-nav > a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; }
+#civilSection #cvNotes .cn-part { display: flex; align-items: baseline; gap: 14px; margin: 32px 0 0; padding: 12px 0; border-bottom: 2px solid var(--cs-teal); font-size: 21px; scroll-margin-top: 20px; }
+#civilSection .cn-part > span { color: var(--cs-teal); font-variant-numeric: tabular-nums; }
+#civilSection .cn-lesson .cn-block h5 { margin: 0 0 14px; font-family: var(--cs-display); font-size: 17px; line-height: 1.4; overflow-wrap: anywhere; }
+#civilSection .cn-revision { padding: 22px 0; margin-top: 24px; border-top: 2px solid var(--cs-teal); scroll-margin-top: 20px; }
+#civilSection .cn-revision > summary, #civilSection .cn-revision > h4 { margin: 0; min-height: 40px; font-size: 18px; font-weight: 600; }
+#civilSection .cn-revision > summary, #civilSection .cn-recall-item > summary { cursor: pointer; }
+#civilSection .cn-recall-item { padding: 14px 0; border-bottom: 1px solid var(--cs-line); scroll-margin-top: 20px; }
+#civilSection .cn-recall-item > summary { min-height: 36px; font-weight: 600; }
+#civilSection .cn-recall-item .cn-prose { margin-top: 12px; }
+#civilSection .cn-recall-item > a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 8px; font-size: 12px; }
+#civilSection .cn-check-filter { max-width: 380px; margin: 18px 0 8px; }
+#civilSection .cn-check-filter select { border-radius: 6px; }
+#civilSection .cn-lesson .cn-caution:is([data-check-kind="clarification"], [data-check-kind="context"], [data-check-kind="notation"], [data-check-kind="scope"]) { background: #f2f5f7; border-left-color: #70818e; }
+#civilSection .cn-lesson .cn-caution[data-check-kind="answer-review"] { background: #fbf0ef; border-left-color: #a84940; }
+#civilSection #cvNotes [id$="-formulas"].cn-revision { margin-top: 28px; padding: 20px 22px; border: 1px solid #cfe0d4; border-top: 1px solid #cfe0d4; border-radius: 12px; background: #f6faf6; }
+#civilSection #cvNotes [id$="-formulas"].cn-revision > summary { color: var(--cs-teal); font-family: var(--cs-display); }
+#civilSection #cvNotes [id$="-formulas"] .cn-prose { max-width: none; }
+#civilSection #cvNotes [id$="-formulas"] .cn-prose table { margin: 10px 0; }
+#civilSection #cvNotes [id$="-formulas"] .cn-prose tbody td:last-child { font-family: var(--cs-read); }
 @media (max-width: 900px) {
     #civilSection .cn-tools { grid-template-columns: minmax(0, 1fr); gap: 16px; }
     #civilSection .cn-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -118,7 +171,7 @@
 @media (max-width: 600px) {
     #civilSection .cn-topics { grid-template-columns: minmax(0, 1fr); gap: 7px; }
     #civilSection .cn-topics > button { min-height: 44px; padding: 10px 12px; }
-    #civilSection .cn-prose { font-size: 13px; }
+    #civilSection .cn-prose { font-size: 14.5px; }
     #civilSection .cn-prose :is(th, td) { padding: 8px; font-size: 12px; }
     #civilSection .cn-topic, #civilSection .cn-search-result { padding: 18px 14px; }
     #civilSection .cn-field :is(input, select) { font-size: 16px !important; }

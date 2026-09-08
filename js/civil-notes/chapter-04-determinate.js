@@ -7,6 +7,7 @@
         ACiE0404: {
             code: "ACiE0404",
             questionCount: 47,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Frame determinacy</th><td>D<sub>c</sub> = 3m + r − 3j − c; c counts internal-hinge releases.</td></tr><tr><th scope='row'>Axial strain energy</th><td>U = N<sup>2</sup>L/(2EA); truss ΣN<sub>i</sub><sup>2</sup>L<sub>i</sub>/(2E<sub>i</sub>A<sub>i</sub>).</td></tr><tr><th scope='row'>Bending strain energy</th><td>U = ∫M<sup>2</sup>/(2EI) ds.</td></tr><tr><th scope='row'>Castigliano</th><td>Deflection Δ<sub>i</sub> = ∂U/∂F<sub>i</sub>; rotation φ<sub>i</sub> = ∂U/∂C<sub>i</sub>.</td></tr><tr><th scope='row'>Unit-load method</th><td>Δ = Σ∫Mm/(EI) ds + ΣN<sub>i</sub>n<sub>i</sub>L<sub>i</sub>/(E<sub>i</sub>A<sub>i</sub>).</td></tr><tr><th scope='row'>SS central point load</th><td>U = P<sup>2</sup>L<sup>3</sup>/(96EI), giving midspan Δ = PL<sup>3</sup>/(48EI).</td></tr><tr><th scope='row'>Reciprocity</th><td>Maxwell–Betti f<sub>ij</sub> = f<sub>ji</sub>.</td></tr><tr><th scope='row'>Impact factor</th><td>Δ<sub>max</sub>/Δ<sub>static</sub> = 1 + √(1 + 2h/Δ<sub>static</sub>); a suddenly applied load doubles the static response.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "equilibrium-and-determinate-analysis",
@@ -561,6 +562,7 @@
         ACiE0405: {
             code: "ACiE0405",
             questionCount: 30,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Reaction influence line</th><td>SS span, unit load at z: R<sub>A</sub> = (L − z)/L, R<sub>B</sub> = z/L.</td></tr><tr><th scope='row'>Moment influence line</th><td>Section at a: peak ordinate ab/L under the section.</td></tr><tr><th scope='row'>Shear influence line</th><td>η<sub>V</sub> = −z/L for z &lt; a and (L − z)/L for z &gt; a.</td></tr><tr><th scope='row'>Moving loads</th><td>Response = ΣP<sub>i</sub>η(z<sub>i</sub>) + ∫w η dz (loads × ordinates).</td></tr><tr><th scope='row'>Full-span UDL</th><td>Midspan moment = wL<sup>2</sup>/8 (w × area under the influence line).</td></tr><tr><th scope='row'>Three-hinged arch</th><td>Thrust H = M<sub>0</sub>(C)/h; net moment M(x) = M<sub>0</sub>(x) − Hy(x).</td></tr><tr><th scope='row'>Thrust influence line</th><td>Peak crown ordinate L/(4h).</td></tr><tr><th scope='row'>Arch internal actions</th><td>N = H cosθ + V sinθ; radial shear Q = V cosθ − H sinθ.</td></tr><tr><th scope='row'>Parabolic arch, UDL</th><td>Funicular shape gives M = 0 and Q = 0 (pure thrust).</td></tr><tr><th scope='row'>Rolling point load</th><td>Arch moment envelope peaks at s = L/2 ± L/(2√3).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "influence-lines-and-official-scope",
@@ -607,7 +609,7 @@
                         "<table><thead><tr><th scope='col'>UDL position</th><th scope='col'>Reaction at A</th><th scope='col'>Moment at the fixed 2 m section</th></tr></thead><tbody>" +
                         "<tr><th scope='row'>1 to 5 m</th><td>4(8 − 3)/8 = 2.5 kN</td><td>2.5 × 2 − 1 × 1<sup>2</sup>/2 = 4.5 kNm</td></tr>" +
                         "<tr><th scope='row'>0 to 4 m</th><td>4(8 − 2)/8 = 3 kN</td><td>3 × 2 − 1 × 2<sup>2</sup>/2 = 4 kNm</td></tr></tbody></table>" +
-                        "<p>For an unrestricted positive patch with ℓ ≤ L, the same derivation gives M<sub>C,max</sub> = wabℓ/L × [1 − ℓ/(2L)]. The <em>global</em> maximum for this 4 m patch is 6 kNm at the 4 m section with loading from 2 to 6 m. That different question cannot justify the stored 6 kNm key for the fixed 2 m section.</p>",
+                        "<p>For an unrestricted positive patch with ℓ ≤ L, the same derivation gives M<sub>C,max</sub> = wabℓ/L × [1 − ℓ/(2L)]. The <em>global</em> maximum for this 4 m patch is 6 kNm at the 4 m section with loading from 2 to 6 m. That different question cannot justify 6 kNm for the fixed 2 m section. Model 10 Q17 now correctly keys option A, 4.5 kNm.</p>",
                     sources: [{ id: "STRU935-00093", set: 10, question: 17 }]
                 },
                 {
@@ -868,9 +870,9 @@
                 },
                 {
                     "id": "check-stru935-00093",
-                    "status": "review",
+                    "status": "corrected",
                     "prompt": "Maximum bending moment at a section 2m from left support on a simply supported beam of length 8m subjected to 1KN/m load over 4m is:",
-                    "html": "<p><strong>Bank check: the fixed 2 m section does not reach 6 kNm.</strong> In STRU935-00093, equal patch-end influence ordinates place the 4 m UDL from 1 to 5 m and give <strong>4.5 kNm</strong>. Loading 0 to 4 m gives <strong>4 kNm</strong>, not the explanation's 6. A 6 kNm global maximum belongs to the 4 m section under a centred 2-to-6 m patch, a different optimization.</p>",
+                    "html": "<p>Corrected: option A, 4.5 kNm. Equal patch-end influence ordinates place the 4 m UDL from 1 to 5 m. Its 4 kN resultant acts 3 m from A, giving R<sub>A</sub> = 4(8 − 3)/8 = 2.5 kN. At the fixed 2 m section, M = 2.5(2) − 1(1)<sup>2</sup>/2 = 4.5 kNm.</p><p>Loading 0 to 4 m gives 4 kNm at the same section. The former 6 kNm key was the global maximum at the 4 m section under a centred 2-to-6 m patch, not the quantity asked.</p>",
                     "sources": [
                         {
                             "id": "STRU935-00093",

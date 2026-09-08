@@ -71,7 +71,7 @@ const CIVIL_MODEL_28 = {
                         { key: "d", text: "0.45" }
                     ],
                     answer: "c",
-                    explanation: "Number of bricks per m³ = 1 / (0.19*0.09*0.09) ≈ 649 bricks. Volume of bricks = 649 * (0.19*0.09*0.09) = 1 m³. Typical mortar volume is 25-30% of total volume. For 1 m³ brickwork, dry mortar ≈ 0.3 m³ (30%)."
+                    explanation: "<p>The 0.30 cubic metre choice is a conventional estimate, not an exact result from brick size alone. The following working adds 10 mm nominal joints and an illustrative dry-volume factor of 1.33.</p><ol><li>The nominal unit including joints is $0.20\\times0.10\\times0.10\\,\\mathrm{m}$. Count $N=\\dfrac{1}{0.20(0.10)(0.10)}=500$ bricks per cubic metre.</li><li>Actual brick volume is $V_b=0.19(0.09)(0.09)$. Hence $V_b=0.001539\\,\\mathrm{m^3}$.</li><li>Wet mortar volume is $V_m=1-500V_b=0.2305\\,\\mathrm{m^3}$.</li><li>With the added dry-volume factor, $V_{dry}=1.33(0.2305)\\approx0.3066\\,\\mathrm{m^3}$, close to the approximate 0.30 option.</li></ol><p>Counting about 649 bare bricks would fill essentially the whole cubic metre with brick solids, leaving no room for joints. Joint thickness, bond, wastage and the specified dry-volume allowance must be stated for an exact take-off; neither 500 nor 1.33 is silently treated as a supplied input.</p>"
                 },
                 {
                     id: "cm28q004",
@@ -835,7 +835,7 @@ const CIVIL_MODEL_28 = {
                         { key: "d", text: "\\( 2v \\)" }
                     ],
                     answer: "c",
-                    explanation: "By continuity, A1 v1 = A2 v2. A1 = πd²/4, A2 = π(0.5d)²/4 = πd²/16. So (πd²/4) * v = (πd²/16) * v2 =&gt; v2 = (πd²/4 * v) * (16/(πd²)) = 4v."
+                    explanation: "<p>Assume steady incompressible flow without leakage or branching. The same discharge passes both sections: $Q=A_1v_1=A_2v_2$.</p><ol><li>Circular area is $A=\\pi d^2/4$. Halving diameter gives $A_2=(0.5)^2A_1=A_1/4$.</li><li>$\\dfrac{v_2}{v_1}=\\dfrac{A_1}{A_2}=4$.</li><li>Therefore $v_2=4v$. It is four times, not twice, because area depends on diameter squared.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0303-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open pipe continuity diagram'><img src='assets/civil-notes/acie0303-5.svg' width='720' height='420' loading='lazy' alt='Pipe contracts from diameter d to d over 2, with area A to A over 4 and velocity v to 4v.'></a><figcaption>Illustrative values: 0.20 m at 2 m/s becomes 0.10 m at 8 m/s.</figcaption></figure><p>Those added numerical values both give $Q\\approx0.06283\\,\\mathrm{m^3/s}$. Continuity determines velocity, but pressure loss needs a separate energy calculation.</p>"
                 },
                 {
                     id: "cm28q060",

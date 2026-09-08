@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Fixed beam collapse: three hinges and the central relative rotation</title>
+  <desc id="desc">A fixed-fixed beam with a central load W forms hinges at A, C and B. Each half rotates through theta, and the relative rotation at C is twice theta. For a 6 m beam with plastic moment 120 kN m the ideal collapse load is 160 kN.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
+  <rect width="720" height="420" fill="#fbfcfd"/>
+  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+    <text x="26" y="34" font-size="21">Fixed-fixed beam: compatible hinge rotations</text>
+    <rect x="70" y="100" width="22" height="104" fill="#d6dfe3" stroke="#273b45"/><rect x="628" y="100" width="22" height="104" fill="#d6dfe3" stroke="#273b45"/>
+    <path d="M92 141H628" stroke="#647780" stroke-width="2" stroke-dasharray="7 5"/>
+    <path d="M92 141L360 236L628 141" stroke="#287aab" stroke-width="4" fill="none"/>
+    <path d="M360 78V130" stroke="#a84940" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="376" y="93" font-size="18">W</text>
+    <circle cx="92" cy="141" r="7" fill="white" stroke="#a84940" stroke-width="2"/><circle cx="360" cy="236" r="7" fill="white" stroke="#a84940" stroke-width="2"/><circle cx="628" cy="141" r="7" fill="white" stroke="#a84940" stroke-width="2"/>
+    <text x="94" y="89" font-size="17">A</text><text x="616" y="89" font-size="17">B</text><text x="350" y="270" font-size="17">C</text>
+    <text x="127" y="158" font-size="19">&#952;</text><text x="576" y="158" font-size="19">&#952;</text>
+    <text x="273" y="211" font-size="18">2&#952; at C</text>
+    <path d="M404 144V220" stroke="#647780" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="420" y="180" font-size="17">&#948; = &#952;L/2</text>
+    <text x="92" y="307" font-size="18">End work + centre work + end work</text>
+    <text x="92" y="337" font-size="18">W&#948; = Mp(&#952; + 2&#952; + &#952;)</text>
+    <text x="92" y="370" font-size="18">W = 8Mp/L = 8(120)/6 = 160 kN</text>
+    <text x="28" y="408" font-size="14" fill="#647780">Illustrative numbers: L = 6 m, Mp = 120 kN m. Adequate ductility assumed.</text>
+  </g>
+</svg>

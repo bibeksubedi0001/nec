@@ -7,6 +7,7 @@
         ACiE0902: {
             code: "ACiE0902",
             questionCount: 73,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Camber crown</th><td>h = qB/2 for cross-slope q over drained width B.</td></tr><tr><th scope='row'>Stopping sight distance</th><td>SSD = Vt/3.6 + V<sup>2</sup>/[254(f<sub>L</sub> ± G)]; intermediate ISD = 2·SSD.</td></tr><tr><th scope='row'>Superelevation</th><td>e + f = V<sup>2</sup>/(127R); R<sub>min</sub> = V<sup>2</sup>/[127(e + f)]; design e ≈ V<sup>2</sup>/(225R).</td></tr><tr><th scope='row'>Transition length</th><td>Comfort L<sub>s</sub> = V<sup>3</sup>/(46.656CR), C = 80/(75 + V); take the controlling L<sub>s</sub>.</td></tr><tr><th scope='row'>Spiral shift</th><td>Shift p<sub>s</sub> ≈ L<sub>s</sub><sup>2</sup>/(24R); end ordinate y ≈ L<sub>s</sub><sup>2</sup>/(6R).</td></tr><tr><th scope='row'>Extra widening</th><td>Mechanical W<sub>m</sub> = nℓ<sup>2</sup>/(2R); psychological W<sub>p</sub> = V/(9.5√R).</td></tr><tr><th scope='row'>Grade compensation</th><td>g<sub>c</sub> = min[(30 + R)/R, 75/R] %.</td></tr><tr><th scope='row'>Vertical curve</th><td>z(x) = z<sub>BVC</sub> + g<sub>1</sub>x + δx<sup>2</sup>/(2L), δ = g<sub>2</sub> − g<sub>1</sub>; K = L/A; turning point x<sub>0</sub> = −g<sub>1</sub>L/δ.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "geometric-design-controls",

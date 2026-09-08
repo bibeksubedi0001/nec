@@ -5,6 +5,7 @@
         ACiE0301: {
             code: "ACiE0301",
             questionCount: 68,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Newtonian shear</th><td>τ = μ(du/dy); μ is dynamic viscosity.</td></tr><tr><th scope='row'>Power-law fluid</th><td>τ = K(du/dy)<sup>n</sup>; n &lt; 1 shear-thinning, n &gt; 1 shear-thickening.</td></tr><tr><th scope='row'>Kinematic viscosity</th><td>ν = μ/ρ.</td></tr><tr><th scope='row'>Bulk modulus</th><td>B = −dp/(dV/V); compressibility is 1/B.</td></tr><tr><th scope='row'>Surface energy</th><td>ΔE = σΔA.</td></tr><tr><th scope='row'>Laplace pressure</th><td>Δp = σ(1/R<sub>1</sub> + 1/R<sub>2</sub>); droplet 2σ/R, soap bubble 4σ/R.</td></tr><tr><th scope='row'>Capillary rise</th><td>h = 4σ cosθ/(ρgd) in a tube of diameter d.</td></tr><tr><th scope='row'>Cavitation number</th><td>Ca = (p<sub>ref</sub> − p<sub>v</sub>)/(½ρU<sup>2</sup>).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "fluid-density-reference-properties",
@@ -387,9 +388,9 @@
                 },
                 {
                     "id": "check-wate701-00286",
-                    "status": "review",
+                    "status": "corrected",
                     "prompt": "For what value of flow behavior index, does the consistency index has a dimension independent of time?",
-                    "html": "<p><strong>The consistency index is time-independent when n = 2.</strong> In the power-law model, shear stress equals K times shear rate raised to n. Thus K has dimensions M L<sup>-1</sup> T<sup>n-2</sup>; setting the time exponent to zero gives n = 2, not the keyed 1.</p>",
+                    "html": "<p><strong>Corrected: n = 2, option B.</strong> In the power-law model, K has dimensions M L<sup>-1</sup> T<sup>n-2</sup>. Setting the time exponent to zero gives n = 2. This is dimensional independence from time, not a claim about time-dependent material behaviour.</p>",
                     "sources": [
                         {
                             "id": "WATE701-00286",
@@ -520,6 +521,7 @@
         ACiE0302: {
             code: "ACiE0302",
             questionCount: 46,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Hydrostatic variation</th><td>dp/dz = −ρg; p = p<sub>surface</sub> + ρgh.</td></tr><tr><th scope='row'>Absolute pressure</th><td>p<sub>abs</sub> = p<sub>atm</sub> + p<sub>gauge</sub>.</td></tr><tr><th scope='row'>Piezometric head</th><td>H = z + p/γ.</td></tr><tr><th scope='row'>Hydraulic press</th><td>F<sub>ram</sub>/A<sub>ram</sub> = F<sub>plunger</sub>/A<sub>plunger</sub> (Pascal).</td></tr><tr><th scope='row'>Force on a plane</th><td>F = γA h<sub>c</sub>; centre of pressure h<sub>cp</sub> = h<sub>c</sub> + I<sub>c</sub> sin<sup>2</sup>θ/(A h<sub>c</sub>).</td></tr><tr><th scope='row'>Vertical wall</th><td>F = γbH<sup>2</sup>/2 acting at H/3 above the base.</td></tr><tr><th scope='row'>Buoyancy</th><td>F<sub>B</sub> = ρ<sub>fluid</sub>gV<sub>displaced</sub> (Archimedes).</td></tr><tr><th scope='row'>Floating stability</th><td>BM = I<sub>waterplane</sub>/V<sub>displaced</sub>; GM = KB + BM − KG (stable if GM &gt; 0).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "hydrostatic-pressure-signs-and-stress",

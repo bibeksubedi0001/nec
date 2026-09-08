@@ -615,6 +615,7 @@
     }
 
     function typeset(node) {
+        window.CIVIL_NOTE_MATH?.prepareExplanations(node);
         if (window.MathJax && window.MathJax.typesetPromise) {
             const ready = window.MathJax.startup && window.MathJax.startup.promise || Promise.resolve();
             ready.then(() => window.MathJax.typesetPromise([node])).catch(() => { /* rendering is best-effort */ });

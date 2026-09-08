@@ -7,6 +7,7 @@
         AALL1002: {
             code: "AALL1002",
             questionCount: 9,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Single payment</th><td>F = P(1 + i)<sup>n</sup>; P = F/(1 + i)<sup>n</sup>.</td></tr><tr><th scope='row'>Effective and real rate</th><td>i<sub>eff</sub> = (1 + j/m)<sup>m</sup> − 1; 1 + i<sub>nominal</sub> = (1 + i<sub>real</sub>)(1 + f).</td></tr><tr><th scope='row'>Uniform series</th><td>P/A = [1 − (1 + i)<sup>−n</sup>]/i; CRF = i + SFF.</td></tr><tr><th scope='row'>Capital recovery</th><td>CR = (C − S)·CRF + iS.</td></tr><tr><th scope='row'>NPV and IRR</th><td>NPV = ΣCF<sub>t</sub>/(1 + i)<sup>t</sup>; IRR is the rate giving NPV = 0.</td></tr><tr><th scope='row'>Benefit–cost</th><td>B/C = present value of benefits/present value of costs; compare incrementally.</td></tr><tr><th scope='row'>Straight-line depreciation</th><td>D = (C − S)/n; book value BV<sub>t</sub> = C − tD.</td></tr><tr><th scope='row'>Declining balance</th><td>BV<sub>t</sub> = C(1 − p)<sup>t</sup>; p = 1 − (S/C)<sup>1/n</sup>.</td></tr><tr><th scope='row'>Sinking fund</th><td>A = (C − S)i/[(1 + i)<sup>n</sup> − 1].</td></tr><tr><th scope='row'>After-tax cash flow</th><td>CF = (R − O)(1 − τ) + τ·Dep.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "econ-project-cashflow-perspective",

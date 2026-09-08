@@ -58,7 +58,7 @@ const CIVIL_MODEL_32 = {
                         { key: "d", text: "207" }
                     ],
                     answer: "b",
-                    explanation: "Sinking Fund (S) = (C - S_v) * i / ((1+i)^n - 1). Here, C=25000, S_v=3000, i=0.05, n=40. S = (22000 * 0.05) / ((1.05^40)-1) ≈ 1100 / 6.04 ≈ 182 Rs."
+                    explanation: "<p>Assume equal deposits A at each year-end, earning a constant 5 percent annually. The fund target is purchase cost less scrap value.</p><ol><li>$F=25000-3000=22000$ rupees.</li><li>For an ordinary annuity, $F=A\\dfrac{(1+i)^n-1}{i}$. Rearranging gives $A=F\\dfrac{i}{(1+i)^n-1}$.</li><li>With $i=0.05$ and $n=40$, $A=\\dfrac{22000(0.05)}{(1.05)^{40}-1}$.</li><li>$A=\\dfrac{1100}{6.0399887121}\\approx182.1195$ rupees per year, matching Rs 182.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/aall1002-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open annual sinking fund timeline'><img src='assets/civil-notes/aall1002-5.svg' width='720' height='420' loading='lazy' alt='Equal deposits at the ends of years 1 through 40 accumulate at 5 percent to a Rs 22000 fund.'></a><figcaption>The first deposit earns interest for 39 years; the last earns none before the target date.</figcaption></figure><p>Check by multiplying the unrounded A by the accumulation factor to recover Rs 22000. Simply dividing $22000/40=550$ ignores earned interest. Beginning-of-year deposits would use a different annuity convention.</p>"
                 },
                 {
                     id: "cm32q003",

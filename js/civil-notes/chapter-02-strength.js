@@ -7,6 +7,7 @@
         ACiE0203: {
             code: "ACiE0203",
             questionCount: 69,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Mohr–Coulomb strength</th><td>τ<sub>f</sub> = c' + σ'<sub>n</sub> tanφ' (effective-stress parameters).</td></tr><tr><th scope='row'>Unconfined compression</th><td>s<sub>u</sub> = q<sub>u</sub>/2 for saturated clay.</td></tr><tr><th scope='row'>Vane shear</th><td>s<sub>u</sub> = T/[πD<sup>2</sup>(H/2 + D/6)].</td></tr><tr><th scope='row'>Infinite slope (general)</th><td>F = [c' + (γz cos<sup>2</sup>β − u)tanφ']/(γz sinβ cosβ).</td></tr><tr><th scope='row'>Dry cohesionless slope</th><td>F = tanφ'/tanβ.</td></tr><tr><th scope='row'>Seepage parallel to slope</th><td>F = (γ'/γ<sub>sat</sub>)(tanφ'/tanβ).</td></tr><tr><th scope='row'>Undrained slope</th><td>F = s<sub>u</sub>/(γ<sub>sat</sub>z sinβ cosβ).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "strength-and-soil-state",
@@ -340,6 +341,7 @@
         ACiE0204: {
             code: "ACiE0204",
             questionCount: 90,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Sampler area ratio</th><td>A<sub>r</sub> = 100(D<sub>o</sub><sup>2</sup> − D<sub>i</sub><sup>2</sup>)/D<sub>i</sub><sup>2</sup>; below ~10% is undisturbed-quality.</td></tr><tr><th scope='row'>SPT corrections</th><td>N<sub>60</sub> = N(ER/60)C<sub>B</sub>C<sub>R</sub>C<sub>S</sub>; dilatancy N<sub>d</sub> = 15 + 0.5(N<sub>c</sub> − 15).</td></tr><tr><th scope='row'>Rankine active</th><td>K<sub>a</sub> = (1 − sinφ')/(1 + sinφ') = tan<sup>2</sup>(45° − φ'/2).</td></tr><tr><th scope='row'>Rankine passive</th><td>K<sub>p</sub> = 1/K<sub>a</sub>.</td></tr><tr><th scope='row'>At-rest pressure</th><td>K<sub>0</sub> = 1 − sinφ' (normally consolidated estimate).</td></tr><tr><th scope='row'>Total lateral pressure</th><td>p = K<sub>a</sub>σ'<sub>v</sub> + u; add water pressure separately.</td></tr><tr><th scope='row'>Base pressure</th><td>p<sub>max,min</sub> = (N'/B)(1 ± 6e/B); no tension if |e| ≤ B/6.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "investigation-planning",

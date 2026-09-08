@@ -236,7 +236,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "16 kNm" }
                     ],
                     answer: "a",
-                    explanation: "For a simply supported beam with a uniformly distributed load (UDL) over its entire length, the maximum bending moment occurs at the mid-span and is calculated by the formula wL²/8. Here, w = 1 kN/m and L = 8m. Thus, M_max = (1 * 8²) / 8 = 64 / 8 = 8 kNm."
+                    explanation: "<p>The full-span load is $w=1\\,\\mathrm{kN/m}$ on $L=8\\,\\mathrm{m}$. Symmetry gives equal reactions.</p><ol><li>Total load: $W=wL=8\\,\\mathrm{kN}$. Therefore $R_A=R_B=4\\,\\mathrm{kN}$.</li><li>At distance $x$ from A, $V(x)=R_A-wx=4-x$. The moment is stationary where $V=0$, at $x=4\\,\\mathrm{m}$.</li><li>$M(x)=R_Ax-\\dfrac{wx^2}{2}$. At midspan, $M_{\\max}=4(4)-\\dfrac{1(4)^2}{2}$, so $M_{\\max}=8\\,\\mathrm{kN\\,m}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0401-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open UDL shear and moment diagram'><img src='assets/civil-notes/acie0401-5.svg' width='720' height='420' loading='lazy' alt='8 m simply supported UDL beam: 4 kN reactions, linear shear and a parabolic moment with an 8 kN m peak.'></a><figcaption>Zero shear locates the maximum sagging moment.</figcaption></figure><p>The shortcut $M_{\\max}=wL^2/8$ follows from this equilibrium calculation. It applies to a full-span UDL on a simple span, not an arbitrary partial load.</p>"
                 },
                 {
                     id: "cm10q016",
@@ -249,7 +249,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "16 kNm" }
                     ],
                     answer: "b",
-                    explanation: "To find the bending moment at a point 2m from a support for a simply supported beam with a UDL, use the formula M_x = (wLx/2) - (wx²/2), where x is the distance from the support. For x=2m, L=8m, w=1 kN/m: M_2 = ((1*8*2)/2) - ((1*2²)/2) = (16/2) - (4/2) = 8 - 2 = 6 kNm."
+                    explanation: "<p>The 1 kN/m load covers all 8 m, so each reaction is $R_A=R_B=wL/2=4\\,\\mathrm{kN}$.</p><ol><li>Cut the beam at $x=2\\,\\mathrm{m}$. The load to the left of the cut is $wx=2\\,\\mathrm{kN}$ and its centroid is $x/2=1\\,\\mathrm{m}$ from the cut.</li><li>The signed moment is $M(x)=R_Ax-\\dfrac{wx^2}{2}$. Substitution gives $M(2)=4(2)-\\dfrac{1(2)^2}{2}$.</li><li>$M(2)=8-2=6\\,\\mathrm{kN\\,m}$, sagging. The shear there is $V(2)=4-2=2\\,\\mathrm{kN}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0401-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open section moment diagram'><img src='assets/civil-notes/acie0401-5.svg' width='720' height='420' loading='lazy' alt='The 2 m section on an 8 m uniformly loaded beam is marked at 6 kN m on its moment parabola.'></a><figcaption>The requested section value is not the 8 kN m midspan maximum.</figcaption></figure>"
                 },
                 {
                     id: "cm10q017",
@@ -261,8 +261,8 @@ const CIVIL_MODEL_10 = {
                         { key: "c", text: "6 kNm" },
                         { key: "d", text: "16 kNm" }
                     ],
-                    answer: "c",
-                    explanation: "This question asks for the maximum value of the bending moment that occurs specifically at the 2m section as the load moves. For a partial UDL starting from the left support and covering 4m, the maximum BM at x=2m (within the loaded region) is calculated to be 6 kNm based on influence lines or direct analysis."
+                    answer: "a",
+                    explanation: "<p>Corrected answer: 4.5 kN m, option A. The section is fixed 2 m from A; only the 4 m load patch moves. Take $L=8\\,\\mathrm{m}$, $a=2\\,\\mathrm{m}$, $b=6\\,\\mathrm{m}$ and $w=1\\,\\mathrm{kN/m}$.</p><ol><li>The section-moment influence line rises to $ab/L=1.5\\,\\mathrm{m}$ at the section. For the maximum under a movable UDL, the ordinates beneath its two ends must be equal.</li><li>Let the patch start at t and end at $t+4$. The end ordinates are $\\dfrac{6t}{8}$ and $\\dfrac{2(8-t-4)}{8}$. Equating them gives $6t=8-2t$, so $t=1\\,\\mathrm{m}$. The load occupies 1 to 5 m.</li><li>The resultant is $W=1(4)=4\\,\\mathrm{kN}$ at $x=3\\,\\mathrm{m}$. Support equilibrium gives $R_A=\\dfrac{4(8-3)}{8}=2.5\\,\\mathrm{kN}$ and $R_B=1.5\\,\\mathrm{kN}$.</li><li>Only 1 m of the patch lies to the left of the 2 m cut. Its resultant is 1 kN, acting 0.5 m from the cut. Thus $M_2=2.5(2)-1(0.5)$, giving $M_{2,\\max}=4.5\\,\\mathrm{kN\\,m}$.</li><li>Independent check: the loaded influence-line area is the sum of two trapezoids, $\\dfrac{0.75+1.5}{2}(1)$ and $\\dfrac{1.5+0.75}{2}(3)$. Their total is $4.5\\,\\mathrm{m^2}$; multiplying by 1 kN/m gives the same moment.</li></ol><p>A patch from 0 to 4 m gives only 4 kN m at this section. The old 6 kN m result is the global maximum at midspan when the patch occupies 2 to 6 m; it answers a different question.</p>"
                 },
                 {
                     id: "cm10q018",
@@ -401,7 +401,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "30.6 mm" }
                     ],
                     answer: "a",
-                    explanation: "As per IS 456:2000, Clause 25.4, minimum eccentricity (e_min) = (unsupported length / 500) + (lateral dimension / 30) = (5000 / 500) + (400 / 30) = 10 + 13.33 = 23.33 mm. It should not be less than 20 mm."
+                    explanation: "<p>Use the unsupported length, not the effective buckling length. Here $l=5000\\,\\mathrm{mm}$ and $D=400\\,\\mathrm{mm}$.</p><ol><li>IS 456:2000 clause 25.4 gives the calculated value $e_0=\\dfrac{l}{500}+\\dfrac{D}{30}$.</li><li>$e_0=\\dfrac{5000}{500}+\\dfrac{400}{30}$, hence $e_0=23.33\\,\\mathrm{mm}$.</li><li>Apply the minimum: $e_{\\min}=\\max(e_0,20\\,\\mathrm{mm})$. Therefore adopt $23.33\\,\\mathrm{mm}$, approximately 23.3 mm.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0504-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open column eccentricity comparison'><img src='assets/civil-notes/acie0504-5.svg' width='720' height='420' loading='lazy' alt='400 mm column showing eccentric load and comparison of the 5 m and 3 m unsupported-length cases.'></a><figcaption>The 20 mm lower bound does not control the 5 m case.</figcaption></figure><p>The column is square, so the minimum calculation is the same in both planes. Actual moments and slenderness checks remain separate.</p>"
                 },
                 {
                     id: "cm10q028",
@@ -414,7 +414,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "30.6 mm" }
                     ],
                     answer: "b",
-                    explanation: "As per IS 456:2000, Clause 25.4, minimum eccentricity (e_min) = (unsupported length / 500) + (lateral dimension / 30) = (3000 / 500) + (400 / 30) = 6 + 13.33 = 19.33 mm. However, the code specifies that e_min should not be less than 20 mm. Therefore, the value to be adopted is 20 mm."
+                    explanation: "<p>Use $l=3000\\,\\mathrm{mm}$, the unsupported length, and $D=400\\,\\mathrm{mm}$.</p><ol><li>$e_0=\\dfrac{l}{500}+\\dfrac{D}{30}$.</li><li>$e_0=\\dfrac{3000}{500}+\\dfrac{400}{30}=19.33\\,\\mathrm{mm}$.</li><li>IS 456:2000 clause 25.4 requires at least 20 mm. Thus $e_{\\min}=\\max(19.33,20)=20\\,\\mathrm{mm}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0504-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open column eccentricity comparison'><img src='assets/civil-notes/acie0504-5.svg' width='720' height='420' loading='lazy' alt='Minimum eccentricity comparison: 3 m length calculates 19.33 mm but requires the 20 mm lower bound.'></a><figcaption>The code minimum, not rounding 19.33, determines this answer.</figcaption></figure>"
                 },
                 {
                     id: "cm10q029",
@@ -527,7 +527,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "3m" }
                     ],
                     answer: "b",
-                    explanation: "The critical hydraulic gradient (i_c) for quicksand condition is (G-1)/(1+e) = (2.67-1)/(1+0.67) = 1.0. The head required (h) is i_c * thickness = 1.0 * 1.5m = 1.5m."
+                    explanation: "<p>Assume a saturated 1.5 m layer with uniform upward seepage and no surcharge. The question asks for a head difference, not the dimensionless gradient itself.</p><ol><li>$i_c=\\dfrac{G-1}{1+e}$.</li><li>$i_c=\\dfrac{2.67-1}{1+0.67}=1$.</li><li>Since $i=\\dfrac{\\Delta h}{L}$, the critical head difference is $\\Delta h_c=i_cL=1(1.5)=1.5\\,\\mathrm{m}$.</li></ol><p>At this ideal threshold the upward seepage force equals the submerged weight and the effective vertical stress at the layer base vanishes. A total water-surface elevation would require a datum; the calculated 1.5 m is the head loss across the layer.</p>"
                 },
                 {
                     id: "cm10q037",
@@ -605,7 +605,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "40 kN" }
                     ],
                     answer: "d",
-                    explanation: "The weight of water (W_w) is the total weight (W) minus the weight of solids (W_s). Therefore, W_w = 190 kN - 150 kN = 40 kN."
+                    explanation: "<p>Assume oven drying removes water without losing dry solids, and neglect air weight.</p><ol><li>The weight balance is $W=W_s+W_w$.</li><li>Rearrange: $W_w=W-W_s$.</li><li>$W_w=190-150=40\\,\\mathrm{kN}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0201-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open soil weight balance'><img src='assets/civil-notes/acie0201-5.svg' width='720' height='420' loading='lazy' alt='190 kN moist sample separates into 150 kN dry solids and 40 kN water.'></a><figcaption>Dry solids remain; drying removes the water contribution.</figcaption></figure><p>A related check is gravimetric water content: $w=\\dfrac{W_w}{W_s}=\\dfrac{40}{150}$. This gives $w=0.2667$, or $26.67\\%$, using dry solids in the denominator. Neither porosity nor degree of saturation can be determined from these weights alone.</p>"
                 },
                 {
                     id: "cm10q043",
@@ -855,7 +855,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "1.384 m/s" }
                     ],
                     answer: "b",
-                    explanation: "First, find the flow rate Q from the power formula: P = ηρgQH. Then, find the inlet velocity V1 = Q / A_inlet. Use draft tube efficiency η_d = (Actual regain in pressure head) / (Kinetic head at inlet) to find the outlet velocity V2."
+                    explanation: "<p>Assume 0.89 means metres of water head loss, the 5.5 m head is net turbine head, and kinetic-energy correction factors are one. With these assumptions the data give no real outlet velocity.</p><ol><li>Flow from the stated power and overall efficiency: $Q=\\dfrac{2250}{0.87(9.81)(5.5)}$. Therefore $Q\\approx47.93266\\,\\mathrm{m^3/s}$.</li><li>Inlet area: $A_1=\\dfrac{\\pi(2.8)^2}{4}\\approx6.15752\\,\\mathrm{m^2}$. Thus $V_1=\\dfrac{Q}{A_1}\\approx7.78441\\,\\mathrm{m/s}$.</li><li>Draft-tube recovery efficiency is $\\eta_d=1-\\dfrac{V_2^2}{V_1^2}-\\dfrac{2gh_L}{V_1^2}$. Rearranging gives $V_2^2=(1-\\eta_d)V_1^2-2gh_L$.</li><li>The two numerical terms are $0.22(60.59702)\\approx13.33134$ and $2(9.81)(0.89)=17.46180$. Thus $V_2^2=13.33134-17.46180$, giving $V_2^2\\approx-4.13046\\,\\mathrm{m^2/s^2}$.</li></ol><p>A squared real speed cannot be negative, so none of the listed positive velocities is justified. Do not take the square root of the absolute value. If 0.89 was intended to mean something other than metres of head loss, its unit and definition must be recovered before solving. The retained 1.767 m/s key is a source discrepancy, not a verified result.</p>"
                 },
                 {
                     id: "cm10q061",

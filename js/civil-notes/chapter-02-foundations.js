@@ -6,6 +6,7 @@
     ACiE0205: {
       code: "ACiE0205",
       questionCount: 40,
+      formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Spread-footing area</th><td>A ≈ V/p<sub>allow</sub> for a service load and allowable pressure.</td></tr><tr><th scope='row'>Combined-footing resultant</th><td>x<sub>R</sub> = Σ(V<sub>i</sub>x<sub>i</sub>)/ΣV<sub>i</sub>; plan chosen so the resultant is central.</td></tr><tr><th scope='row'>Rankine minimum depth</th><td>D = (p/γ)[(1 − sinφ)/(1 + sinφ)]<sup>2</sup>.</td></tr><tr><th scope='row'>Pile capacity</th><td>Q<sub>u</sub> = A<sub>b</sub>q<sub>b</sub> + ΣA<sub>s,i</sub>f<sub>s,i</sub> (base plus shaft).</td></tr></tbody></table>",
       blocks: [
         {
           id: "foundation-functions-and-classification",
@@ -397,6 +398,7 @@
     ACiE0206: {
       code: "ACiE0206",
       questionCount: 76,
+      formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Terzaghi (strip)</th><td>q<sub>u</sub> = cN<sub>c</sub> + qN<sub>q</sub> + 0.5γBN<sub>γ</sub>; N factors depend on φ.</td></tr><tr><th scope='row'>Undrained clay (strip)</th><td>q<sub>u</sub> = 5.7c<sub>u</sub> + q<sub>0</sub>.</td></tr><tr><th scope='row'>Water-table correction</th><td>γ' = γ<sub>sat</sub> − γ<sub>w</sub>; γ<sub>avg</sub> ≈ γ' + (d/B)(γ − γ').</td></tr><tr><th scope='row'>Subgrade reaction</th><td>k<sub>s</sub> = p/s.</td></tr><tr><th scope='row'>Total settlement</th><td>S = S<sub>i</sub> + S<sub>c</sub> + S<sub>s</sub>.</td></tr><tr><th scope='row'>Immediate settlement</th><td>S<sub>i</sub> = p<sub>net</sub>B(1 − ν<sup>2</sup>)I/E<sub>s</sub>.</td></tr><tr><th scope='row'>Primary consolidation (NC)</th><td>S<sub>c</sub> = HC<sub>c</sub>log<sub>10</sub>(σ'<sub>f</sub>/σ'<sub>0</sub>)/(1 + e<sub>0</sub>).</td></tr><tr><th scope='row'>Over-consolidation</th><td>OCR = σ'<sub>p</sub>/σ'<sub>v0</sub>.</td></tr><tr><th scope='row'>Time factor</th><td>T<sub>v</sub> = c<sub>v</sub>t/H<sub>dr</sub><sup>2</sup>; degree U = S<sub>c</sub>(t)/S<sub>c</sub>(∞).</td></tr></tbody></table>",
       blocks: [
         {
           id: "bearing-pressure-definitions",

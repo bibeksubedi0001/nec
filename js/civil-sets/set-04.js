@@ -174,7 +174,7 @@ const CIVIL_MODEL_4 = {
                         { key: "d", text: "9,375 cm<sup>4</sup>" }
                     ],
                     answer: "c",
-                    explanation: "A hollow circular section is the solid outer circle minus the hole, so I equals pi over 64 times (D to the fourth minus d to the fourth). That is pi over 64 times (160,000 minus 10,000), which gives about 7363 cm to the fourth. Because the fourth power dominates, the small central hole removes only about six percent of the stiffness while saving a quarter of the material."
+                    explanation: "<p>The answer assumes a centroidal in-plane diameter through concentric circles. Use centimetres consistently: $D=20\\,\\mathrm{cm}$ and $d=10\\,\\mathrm{cm}$.</p><ol><li>Subtract the hole about that same axis: $I=\\dfrac{\\pi}{64}(D^4-d^4)$.</li><li>$20^4=160000$ and $10^4=10000$. Therefore $I=\\dfrac{\\pi(150000)}{64}$.</li><li>$I\\approx7363.11\\,\\mathrm{cm^4}$, matching the 7363 option.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0104-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open annular section axes'><img src='assets/civil-notes/acie0104-5.svg' width='720' height='420' loading='lazy' alt='Concentric 20 cm and 10 cm circles with horizontal and vertical centroidal diameter axes.'></a><figcaption>Subtract the inner circle; no parallel-axis term is needed for concentric holes.</figcaption></figure><p>The polar moment is $J=I_x+I_y=2I$, a different answer. The area removed is $(d/D)^2=25\\%$, while the diametral inertia removed is $(d/D)^4=6.25\\%$.</p>"
                 },
                 {
                     id: "cm4q012",
@@ -274,7 +274,7 @@ const CIVIL_MODEL_4 = {
                         { key: "d", text: "900 MPa" }
                     ],
                     answer: "b",
-                    explanation: "The average normal stress is (1200 plus 600) over 2, that is 900 MPa, and the radius of the Mohr circle is the root of (300 squared plus 400 squared), which is 500 MPa. The maximum normal stress is therefore 900 plus 500, or 1400 MPa."
+                    explanation: "<p>Both supplied direct stresses are tensile: $\\sigma_x=1200$, $\\sigma_y=600$ and $|\\tau_{xy}|=400\\,\\mathrm{MPa}$.</p><ol><li>Circle centre: $C=\\dfrac{\\sigma_x+\\sigma_y}{2}$, so $C=900\\,\\mathrm{MPa}$.</li><li>Half-difference: $D=\\dfrac{1200-600}{2}=300\\,\\mathrm{MPa}$. Radius: $R=\\sqrt{D^2+\\tau_{xy}^2}$, hence $R=\\sqrt{300^2+400^2}=500\\,\\mathrm{MPa}$.</li><li>Principal stresses are $\\sigma_1=C+R=1400\\,\\mathrm{MPa}$ and $\\sigma_2=C-R=400\\,\\mathrm{MPa}$.</li></ol><p>Check: their sum is 1800 MPa, equal to the original direct-stress sum. Their product is $560000\\,\\mathrm{MPa^2}$, equal to $1200(600)-400^2$. The requested maximum normal stress is 1400 MPa, not the circle radius.</p>"
                 },
                 {
                     id: "cm4q019",
@@ -287,7 +287,7 @@ const CIVIL_MODEL_4 = {
                         { key: "d", text: "450 Mpa" }
                     ],
                     answer: "c",
-                    explanation: "With only one direct stress the average is 300 over 2, that is 150 MPa, and the radius of the Mohr circle is the root of (150 squared plus 200 squared), which is 250 MPa. The maximum normal stress is 150 plus 250, giving 400 MPa."
+                    explanation: "<p>Take the unmentioned perpendicular direct stress as zero: $\\sigma_x=300$, $\\sigma_y=0$ and $|\\tau_{xy}|=200\\,\\mathrm{MPa}$.</p><ol><li>$C=\\dfrac{300+0}{2}=150\\,\\mathrm{MPa}$.</li><li>$R=\\sqrt{150^2+200^2}=250\\,\\mathrm{MPa}$.</li><li>$\\sigma_1=C+R=400\\,\\mathrm{MPa}$; $\\sigma_2=C-R=-100\\,\\mathrm{MPa}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0402-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open numerical Mohr circle'><img src='assets/civil-notes/acie0402-5.svg' width='720' height='420' loading='lazy' alt='Mohr circle centred at 150 MPa with radius 250 MPa, crossing the normal-stress axis at minus 100 and 400 MPa.'></a><figcaption>The right-hand intercept is the major principal stress.</figcaption></figure><p>The sum $400-100=300$ and product $400(-100)=-40000$ agree with the stress invariants. A negative minor principal value means compression even though the supplied direct stress is tensile.</p>"
                 },
                 {
                     id: "cm4q020",
@@ -729,7 +729,7 @@ const CIVIL_MODEL_4 = {
                         { key: "d", text: "5000 m" }
                     ],
                     answer: "c",
-                    explanation: "Piezometric head is the pressure divided by the specific weight, so 50 divided by 10 gives 5 m. In other words a column of this fluid 5 m high produces the stated pressure at its base."
+                    explanation: "<p>Pressure head is $h_p=\\dfrac{p}{\\gamma}$. The supplied units are compatible: $p=50\\,\\mathrm{kN/m^2}$ and $\\gamma=10\\,\\mathrm{kN/m^3}$.</p><p>$h_p=\\dfrac{50}{10}=5\\,\\mathrm{m}$. The force units cancel and the length powers leave metres.</p><p>Strictly, piezometric head is $H=z+p/\\gamma$ relative to an elevation datum. The question supplies no z, so 5 m is its pressure-head component, or the piezometric head if the datum is chosen through the point.</p>"
                 },
                 {
                     id: "cm4q052",

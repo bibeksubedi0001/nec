@@ -7,6 +7,7 @@
         ACiE0706: {
             code: "ACiE0706",
             questionCount: 62,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Available water</th><td>TAW = 1000(θ<sub>FC</sub> − θ<sub>WP</sub>)Z<sub>r</sub>; RAW = p·TAW.</td></tr><tr><th scope='row'>Leaching requirement</th><td>LR = EC<sub>w</sub>/(5 EC<sub>e,allow</sub> − EC<sub>w</sub>).</td></tr><tr><th scope='row'>Drainage coefficient</th><td>Depth per time; design Q(L/s) ≈ 0.1157 w A<sub>ha</sub> for w in mm/day.</td></tr><tr><th scope='row'>Open drain (Manning)</th><td>A<sub>f</sub> = (b + zy)y; P<sub>w</sub> = b + 2y√(1 + z<sup>2</sup>); Q = (1/n)A<sub>f</sub>R<sup>2/3</sup>S<sup>1/2</sup>.</td></tr><tr><th scope='row'>Hooghoudt spacing</th><td>w = (8K<sub>b</sub>d<sub>e</sub>h + 4K<sub>a</sub>h<sup>2</sup>)/L<sup>2</sup> (steady drain spacing L).</td></tr><tr><th scope='row'>Steady drain discharge</th><td>q = K(H<sub>1</sub><sup>2</sup> − H<sub>2</sub><sup>2</sup>)/(2ℓ) (Dupuit).</td></tr><tr><th scope='row'>Pipe drain</th><td>R = D/4; Q = πD<sup>8/3</sup>√S/(4<sup>5/3</sup>n).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "drainage-waterlogging-aeration-and-duration",

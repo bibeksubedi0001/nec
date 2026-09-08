@@ -7,6 +7,7 @@
         ACiE0502: {
             code: "ACiE0502",
             questionCount: 60,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Grade</th><td>M25 denotes f<sub>ck</sub> = 25 N/mm<sup>2</sup> (28-day characteristic cube strength).</td></tr><tr><th scope='row'>Target mean strength</th><td>f<sub>target</sub> = f<sub>ck</sub> + 1.65s; s ≈ 4 MPa for M20–M25.</td></tr><tr><th scope='row'>Standard deviation</th><td>s = √[Σ(f<sub>i</sub> − f̄)<sup>2</sup>/(n − 1)].</td></tr><tr><th scope='row'>Elastic modulus</th><td>E<sub>c</sub> = 5000√f<sub>ck</sub> (MPa).</td></tr><tr><th scope='row'>Modulus of rupture</th><td>f<sub>cr</sub> = 0.7√f<sub>ck</sub> (MPa).</td></tr><tr><th scope='row'>Splitting tensile</th><td>f<sub>sp</sub> = 2P/(πDL); 150 mm × 300 mm cylinder.</td></tr><tr><th scope='row'>Creep</th><td>θ = ε<sub>cr</sub>/ε<sub>el</sub>; effective modulus E<sub>eff</sub> = E<sub>c</sub>/(1 + θ).</td></tr><tr><th scope='row'>Cube strength</th><td>f = P/A on the loaded face.</td></tr><tr><th scope='row'>Moisture correction</th><td>m<sub>OD</sub> = m<sub>SSD</sub>/(1 + A); batch m = m<sub>OD</sub>(1 + M); free-water shift ΔW = (M − A)m<sub>OD</sub>.</td></tr><tr><th scope='row'>Units</th><td>1 N/mm<sup>2</sup> = 1 MPa.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "concrete-as-a-material-system",

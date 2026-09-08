@@ -7,6 +7,7 @@
         ACiE0905: {
             code: "ACiE0905",
             questionCount: 70,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Growth factor</th><td>G = [(1 + r)<sup>n</sup> − 1]/r.</td></tr><tr><th scope='row'>Cumulative traffic</th><td>N<sub>msa</sub> = 365 A D F [(1 + r)<sup>n</sup> − 1]/(r × 10<sup>6</sup>).</td></tr><tr><th scope='row'>Axle equivalence</th><td>EF = (W/W<sub>s</sub>)<sup>4</sup>; vehicle damage factor F = ESAL/commercial vehicles.</td></tr><tr><th scope='row'>Contact radius</th><td>a = √[P/(πq)].</td></tr><tr><th scope='row'>Subgrade modulus</th><td>M<sub>R</sub> ≈ 10·CBR MPa (or 17.6·CBR<sup>0.64</sup>); plate k = σ/δ.</td></tr><tr><th scope='row'>Mechanistic distress</th><td>Rutting N<sub>R</sub> = c<sub>R</sub>ε<sub>v</sub><sup>−4.5337</sup>; fatigue N<sub>f</sub> = c<sub>f</sub>Cε<sub>t</sub><sup>−3.89</sup>M<sub>R</sub><sup>−0.854</sup>.</td></tr><tr><th scope='row'>Vertical stress</th><td>Circular load σ<sub>z</sub> = q[1 − (1 + (a/z)<sup>2</sup>)<sup>−3/2</sup>].</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "pavement-functions-and-serviceability",

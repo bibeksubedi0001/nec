@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Numerical Mohr circle: 300 MPa tension and 200 MPa shear</title>
+  <desc id="desc">With sigma x equal to 300 MPa, sigma y zero and shear magnitude 200 MPa, the circle centre is 150 MPa and radius 250 MPa. The principal stresses are 400 and minus 100 MPa. The plotted shear sign is one illustrative orientation.</desc>
+  <rect width="720" height="420" fill="#fbfcfd"/>
+  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+    <text x="26" y="33" font-size="21">Mohr circle: separate centre and radius</text>
+    <text x="26" y="62" font-size="17">Normal stresses 300 and 0 MPa; shear magnitude 200 MPa</text>
+    <path d="M155 212H476M251 83V348" stroke="#647780" stroke-width="1.5"/>
+    <text x="414" y="248" font-size="16">&#963; (MPa)</text><text x="192" y="97" font-size="16">&#964; (MPa)</text>
+    <circle cx="320" cy="212" r="115" fill="#d8edf7" fill-opacity=".5" stroke="#287aab" stroke-width="2.5"/>
+    <path d="M251 304L389 120M320 212L389 120" stroke="#a84940" stroke-width="2"/>
+    <circle cx="320" cy="212" r="4" fill="#273b45"/><circle cx="389" cy="120" r="4" fill="#a84940"/><circle cx="251" cy="304" r="4" fill="#a84940"/>
+    <circle cx="205" cy="212" r="4" fill="#2b7b61"/><circle cx="435" cy="212" r="4" fill="#2b7b61"/>
+    <text x="354" y="105" font-size="16">(300, 200)</text><text x="145" y="324" font-size="16">(0, -200)</text>
+    <text x="172" y="239" font-size="16">-100</text><text x="245" y="237" font-size="15">0</text><text x="294" y="237" font-size="16">150</text><text x="420" y="192" font-size="16">400</text>
+    <text x="495" y="159" font-size="18">Centre C = 150</text><text x="495" y="191" font-size="18">Radius R = 250</text>
+    <text x="495" y="239" font-size="18">&#963;&#8321; = C + R</text><text x="495" y="267" font-size="18">&#963;&#8322; = C - R</text>
+    <path d="M28 358H692" stroke="#d6dfe3"/>
+    <text x="28" y="382" font-size="17">Principal stresses: 400 MPa tension; 100 MPa compression.</text>
+    <text x="28" y="408" font-size="14" fill="#647780">Changing the shear sign reverses orientation, not the principal values.</text>
+  </g>
+</svg>

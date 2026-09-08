@@ -249,7 +249,7 @@ const CIVIL_MODEL_8 = {
                         { key: "d", text: "8Mp / L" }
                     ],
                     answer: "d",
-                    explanation: "A fixed beam with a central point load needs three hinges to collapse, one at each support and one under the load. Equating external to internal work in that mechanism, W times L over 4 equals 4 Mp times theta, which gives a collapse load of 8 Mp over L."
+                    explanation: "<p>Assume a fixed-fixed beam, equal positive and negative plastic moments $M_p$, sufficient hinge rotation capacity and no earlier instability.</p><ol><li>The two half-spans rotate by magnitude $\\theta$. The central displacement is $\\delta=\\theta L/2$.</li><li>Each support hinge rotates through $\\theta$, but the central hinge rotates through $2\\theta$ relative to the adjoining halves. Internal work is $M_p(\\theta+2\\theta+\\theta)=4M_p\\theta$.</li><li>External work equals internal work: $W\\theta L/2=4M_p\\theta$. Cancelling the nonzero mechanism rotation gives $W=\\dfrac{8M_p}{L}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0406-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open fixed beam collapse mechanism'><img src='assets/civil-notes/acie0406-5.svg' width='720' height='420' loading='lazy' alt='Fixed beam mechanism: theta rotation at each end, twice theta at the centre, and centre deflection theta L over 2.'></a><figcaption>Illustrative check: L = 6 m and Mp = 120 kN m give W = 160 kN.</figcaption></figure><p>The illustration adds numbers for practice; the original question asks for the symbolic relation. Counting the middle hinge rotation only once incorrectly gives $6M_p/L$.</p>"
                 },
                 {
                     id: "cm8q017",
@@ -1338,7 +1338,7 @@ const CIVIL_MODEL_8 = {
                         { key: "d", text: "None of these" }
                     ],
                     answer: "c",
-                    explanation: "The dilution factor is 100 over 2, that is 50. Multiplying the 5 ppm oxygen depletion by 50 gives a five-day BOD of 250 ppm."
+                    explanation: "<p>The measured oxygen loss belongs to the diluted incubation mixture, not the original wastewater. Assume no seed or blank oxygen demand.</p><ol><li>Sample fraction $P=\\dfrac{2}{100}=0.02$.</li><li>Unseeded dilution relation: $\\mathrm{BOD}_5=\\dfrac{D_i-D_f}{P}$.</li><li>$\\mathrm{BOD}_5=\\dfrac{5}{0.02}=250\\,\\mathrm{mg/L}$, approximately 250 ppm for dilute water.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0605-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open BOD dilution calculation'><img src='assets/civil-notes/acie0605-5.svg' width='720' height='420' loading='lazy' alt='2 percent sample plus dilution water: 5 mg/L mixture depletion divided by 0.02 gives 250 mg/L original sample BOD.'></a><figcaption>The dilution factor is 50, not 2.</figcaption></figure><p>The incubation period is 5 days at 20 degrees Celsius. Dividing by 2 would mistake a percentage for a fraction; using total mixture volume as the sample fraction would miss the dilution correction.</p>"
                 },
                 {
                     id: "cm8q096",

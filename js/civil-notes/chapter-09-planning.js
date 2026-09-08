@@ -7,6 +7,7 @@
         ACiE0901: {
             code: "ACiE0901",
             questionCount: 39,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Average daily traffic</th><td>ADT = total counted vehicles/observed days; PCU demand D = Σ(n<sub>i</sub>p<sub>i</sub>).</td></tr><tr><th scope='row'>Forecast traffic</th><td>D<sub>20</sub> = D<sub>open</sub>(1 + r)<sup>20</sup> (design 20 years after completion).</td></tr><tr><th scope='row'>Terrain cross-slope</th><td>s = 100|Δz|/d (%); classifies plain/rolling/mountainous/steep.</td></tr><tr><th scope='row'>Traverse and levels</th><td>ΔE = l sinθ, ΔN = l cosθ; HI = RL<sub>BM</sub> + BS; RL = HI − FS.</td></tr><tr><th scope='row'>Earthwork volume</th><td>Average end areas V = (A<sub>1</sub> + A<sub>2</sub>)L/2.</td></tr><tr><th scope='row'>Resisting length</th><td>L<sub>eq</sub> = L + (z<sub>B</sub> − z<sub>A</sub>)/f.</td></tr><tr><th scope='row'>Present cost</th><td>PC = I + C·Σ(1 + r)<sup>−t</sup>; annuity factor a = [1 − (1 + r)<sup>−n</sup>]/r.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "planning-transport-system-and-feeders",

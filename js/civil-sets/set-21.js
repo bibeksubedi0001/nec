@@ -996,7 +996,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "24" }
                     ],
                     answer: "c",
-                    explanation: "Consumptive use of water = 3.0 mm/day Maximum depth of available water = 80 mm If amount of available water is reduced by 45%, then irrigation is required for a depth = 0.45 × 80 = 36 mm Frequency of Irrigation = =&gt; 36÷3=12"
+                    explanation: "<p>The trigger says 55 percent remains, not 55 percent has been used. Start with 80 mm available water and assume constant consumption without rainfall or other water gains/losses.</p><ol><li>Water remaining at the trigger is $0.55(80)=44\\,\\mathrm{mm}$.</li><li>Allowable depletion is $80-44=36\\,\\mathrm{mm}$, or $45\\%$ of the initial store.</li><li>Interval $T=\\dfrac{\\mathrm{depletion}}{\\mathrm{daily\\ use}}$. Thus $T=\\dfrac{36}{3}=12\\,\\mathrm{days}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0701-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open irrigation timing graph'><img src='assets/civil-notes/acie0701-5.svg' width='720' height='420' loading='lazy' alt='Available water decreases from 80 to 44 mm over 12 days at 3 mm per day.'></a><figcaption>The graph reaches the 55-percent-remaining trigger on day 12.</figcaption></figure>"
                 },
                 {
                     id: "cm21q071",
@@ -1009,7 +1009,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "37.5" }
                     ],
                     answer: "d",
-                    explanation: "Number of waterings required = Base period / Irrigation interval = 140 days / 28 days = 5. Depth of water applied per watering = 7.5 cm. Total depth of water required, Delta (Δ) = Number of waterings * Depth per watering = 5 * 7.5 cm = 37.5 cm."
+                    explanation: "<p>Use the question's convention of one 7.5 cm watering for each complete 28-day interval within the 140-day base period.</p><ol><li>Number of waterings $N=\\dfrac{140}{28}=5$.</li><li>Total seasonal depth is $\\Delta=Nh=5(7.5)=37.5\\,\\mathrm{cm}$.</li><li>Unit check: $37.5\\,\\mathrm{cm}=0.375\\,\\mathrm{m}$, which is $3750\\,\\mathrm{m^3}$ per hectare.</li></ol><p>This does not count an extra watering at day zero. If initial irrigation, effective rainfall, soil storage or delivery losses are specified separately, include them in the water balance instead of assuming the same five applications.</p>"
                 },
                 {
                     id: "cm21q072",

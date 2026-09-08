@@ -7,6 +7,7 @@
         ACiE0702: {
             code: "ACiE0702",
             questionCount: 52,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Uniform flow</th><td>V = (1/n)R<sup>2/3</sup>S<sup>1/2</sup> (Manning); V = C√(RS) (Chézy).</td></tr><tr><th scope='row'>Kennedy critical velocity</th><td>V<sub>K</sub> = 0.55 m<sub>K</sub>y<sup>0.64</sup>.</td></tr><tr><th scope='row'>Lacey silt factor</th><td>f = 1.76√d<sub>mm</sub>.</td></tr><tr><th scope='row'>Lacey regime radius</th><td>R ≈ 0.47(Q/f)<sup>1/3</sup>.</td></tr><tr><th scope='row'>Normal scour depth</th><td>d<sub>n</sub> = 1.35(q<sup>2</sup>/f)<sup>1/3</sup>.</td></tr><tr><th scope='row'>Tractive stress</th><td>τ<sub>avg</sub> = γRS; bed τ ≈ γyS.</td></tr><tr><th scope='row'>Side-slope stress ratio</th><td>K<sub>τ</sub> = √(1 − sin<sup>2</sup>θ/sin<sup>2</sup>φ).</td></tr><tr><th scope='row'>Best trapezoid</th><td>R = y/2; half-hexagon z = 1/√3, b = 2y[√(1 + z<sup>2</sup>) − z].</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "canal-network-and-functional-roles",

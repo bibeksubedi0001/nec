@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Hydropower: gross head, net head and electrical output</title>
+  <desc id="desc">Gross head 423.5 m minus 2.5 m waterway loss gives 421 m net head. For water at 0.9 cubic metres per second and overall efficiency 0.85, power is 9.81 times 0.9 times 421 times 0.85 equals 3159.46 kW.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
+  <rect width="720" height="420" fill="#fbfcfd"/>
+  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+    <text x="26" y="34" font-size="21">Hydropower: subtract head loss before efficiency</text>
+    <path d="M58 110V171H208V110" fill="#d8edf7" stroke="#287aab" stroke-width="2"/>
+    <path d="M58 125H208" stroke="#287aab" stroke-width="2"/>
+    <path d="M190 158H249L358 290H465" stroke="#647780" stroke-width="16" stroke-linejoin="round" fill="none"/>
+    <path d="M190 158H249L358 290H465" stroke="#d8edf7" stroke-width="9" stroke-linejoin="round" fill="none"/>
+    <circle cx="465" cy="290" r="24" fill="#deeee6" stroke="#2b7b61" stroke-width="2"/>
+    <path d="M447 279L478 302M447 300L478 280" stroke="#2b7b61" stroke-width="2"/>
+    <path d="M489 290H585V310H660" stroke="#287aab" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <text x="56" y="86" font-size="17">Headwater</text><text x="391" y="345" font-size="17">Turbine-generator</text><text x="566" y="347" font-size="16">Tailwater</text>
+    <path d="M681 128V307" stroke="#647780" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="381" y="100" font-size="17">Gross head = 423.5 m</text><text x="381" y="133" font-size="17">Waterway loss = 2.5 m</text><text x="381" y="167" font-size="18">Net head = 421 m</text>
+    <text x="56" y="220" font-size="17">Q = 0.9 m&#179;/s</text><text x="56" y="251" font-size="17">Overall &#951; = 0.85</text>
+    <text x="28" y="380" font-size="18">Pe = 9.81 Q Hn &#951; = 3159.46 kW = 3.15946 MW</text>
+    <text x="28" y="408" font-size="14" fill="#647780">Schematic levels; efficiency is applied once to net hydraulic power.</text>
+  </g>
+</svg>

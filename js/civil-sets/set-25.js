@@ -765,8 +765,8 @@ const CIVIL_MODEL_25 = {
                         { key: "c", text: "1" },
                         { key: "d", text: "3" }
                     ],
-                    answer: "c",
-                    explanation: "In the power-law model for non-Newtonian fluids, τ = K (du/dy)^n. The consistency index K has dimensions that depend on n. For n=1 (Newtonian fluid), K becomes dynamic viscosity with dimensions [M L⁻¹ T⁻¹], which is independent of time? Actually, for n=1, it is independent of time? The dimension of K is [M L⁻¹ T^(n-2)]. For it to be independent of time, the exponent of T must be 0, so n-2=0, hence n=2. But the option is 1. There might be a confusion. The question asks for 'dimension independent of time', meaning the exponent of time is zero. So, n-2=0, n=2. However, the provided answer in the text is (b) 1. This is a discrepancy. Based on dimension analysis, n=2 is correct for time-independent dimension of K."
+                    answer: "b",
+                    explanation: "For the power-law model \\(\\tau=K\\dot{\\gamma}^{n}\\), shear stress has dimensions M L<sup>-1</sup> T<sup>-2</sup> and shear rate has dimensions T<sup>-1</sup>. Therefore \\([K]=M L^{-1}T^{n-2}\\). No time factor means n - 2 = 0, giving <strong>n = 2</strong>. At n = 1, K is dynamic viscosity and still has a T<sup>-1</sup> factor. This concerns dimensions, not whether a material changes with elapsed time. The former n = 1 key has been corrected."
                 },
                 {
                     id: "cm25q055",

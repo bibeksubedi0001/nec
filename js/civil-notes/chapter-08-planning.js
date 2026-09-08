@@ -7,6 +7,7 @@
         ACiE0801: {
             code: "ACiE0801",
             questionCount: 17,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Power potential</th><td>P = ρgQH<sub>n</sub>η.</td></tr><tr><th scope='row'>Annual energy</th><td>E = ΣP<sub>i</sub>Δt<sub>i</sub>.</td></tr><tr><th scope='row'>Capacity factor</th><td>CF = E/(C·T<sub>h</sub>).</td></tr><tr><th scope='row'>Economic appraisal</th><td>NPV = Σ[(B<sub>t</sub> − C<sub>t</sub>)/(1 + r)<sup>t</sup>].</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "planning-purpose-and-system-boundary",

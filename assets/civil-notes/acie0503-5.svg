@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Worked cracked RCC section under service bending</title>
+  <desc id="desc">Illustrative M20 section: width 300 mm, effective depth 400 mm, tensile steel area 1200 square mm and modular ratio 40 over 3. At service moment 41.6 kN m, neutral-axis depth is 160 mm, concrete stress 5 MPa and steel stress 100 MPa. The 120 kN force couple has lever arm 346.67 mm.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
+  <rect width="720" height="420" fill="#fbfcfd"/>
+  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+    <text x="26" y="32" font-size="21">RCC working-stress example: strain compatibility</text>
+    <text x="26" y="60" font-size="16">Illustrative inputs: b = 300 mm; d = 400 mm; Ast = 1200 mm&#178;</text>
+    <rect x="97" y="108" width="156" height="228" fill="#eef2f3" stroke="#273b45" stroke-width="2"/>
+    <rect x="97" y="108" width="156" height="83.2" fill="#deeee6"/>
+    <path d="M68 191.2H410" stroke="#647780" stroke-dasharray="6 4"/>
+    <circle cx="129" cy="316" r="9" fill="#287aab"/><circle cx="175" cy="316" r="9" fill="#287aab"/><circle cx="221" cy="316" r="9" fill="#287aab"/>
+    <path d="M80 108V316" stroke="#647780" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <path d="M97 351H253" stroke="#647780" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="28" y="234" font-size="16">d</text><text x="150" y="373" font-size="16">300 mm</text>
+    <polygon points="334,108 409,108 334,191.2" fill="#deeee6" stroke="#2b7b61" stroke-width="2"/>
+    <text x="332" y="93" font-size="17">5 MPa</text><text x="318" y="220" font-size="16">x = 160 mm</text>
+    <path d="M474 136H596" stroke="#2b7b61" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M596 316H474" stroke="#287aab" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="470" y="120" font-size="17">C = 120 kN</text><text x="470" y="344" font-size="17">T = 120 kN</text>
+    <path d="M625 139V312" stroke="#647780" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="442" y="233" font-size="16">z = d - x/3</text><text x="442" y="258" font-size="16">z = 346.67 mm</text>
+    <text x="287" y="312" font-size="16">Steel: 100 MPa</text>
+    <text x="28" y="408" font-size="15" fill="#647780">Cz = 41.6 kN m. Service-stress model, not an ultimate design check.</text>
+  </g>
+</svg>

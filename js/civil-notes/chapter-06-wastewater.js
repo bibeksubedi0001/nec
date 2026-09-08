@@ -7,6 +7,7 @@
         ACiE0605: {
             code: "ACiE0605",
             questionCount: 66,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Composite concentration</th><td>C̄ = Σ(Q<sub>i</sub>C<sub>i</sub>Δt<sub>i</sub>)/Σ(Q<sub>i</sub>Δt<sub>i</sub>).</td></tr><tr><th scope='row'>Solids fractions</th><td>TS ≈ TSS + TDS; volatile fraction burns off at 550°C.</td></tr><tr><th scope='row'>BOD by dilution</th><td>P = V<sub>sample</sub>/V<sub>bottle</sub>; BOD<sub>5</sub> = (D<sub>i</sub> − D<sub>f</sub>)/P (seed-corrected if seeded).</td></tr><tr><th scope='row'>BOD kinetics</th><td>L(t) = L<sub>0</sub>e<sup>−K<sub>d</sub>t</sup>; BOD<sub>t</sub> = L<sub>0</sub>(1 − e<sup>−K<sub>d</sub>t</sup>).</td></tr><tr><th scope='row'>Removal efficiency</th><td>E = 1 − Q<sub>out</sub>C<sub>out</sub>/(Q<sub>in</sub>C<sub>in</sub>); series E = E<sub>1</sub> + E<sub>2</sub>(1 − E<sub>1</sub>).</td></tr><tr><th scope='row'>Overflow and detention</th><td>Overflow rate v<sub>o</sub> = Q/A; detention t = V/Q.</td></tr><tr><th scope='row'>Activated sludge</th><td>F/M = QS<sub>0</sub>/(VX<sub>v</sub>); HRT = V/Q; SRT = solids inventory/daily solids wasted.</td></tr><tr><th scope='row'>Return sludge ratio</th><td>R = Q<sub>r</sub>/Q = X/(X<sub>r</sub> − X).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "wastewater-characterization",
@@ -933,9 +934,9 @@
                 },
                 {
                     "id": "check-wate813-00177",
-                    "status": "review",
-                    "prompt": "Streeter Phelps equation is",
-                    "html": "<p><strong>The source has only one distinct formula choice.</strong> This is not a meaningful multiple-choice comparison. The Streeter-Phelps expression also needs its rate convention, initial deficit and ultimate demand; natural-rate and base-10 coefficients must not be mixed.</p>",
+                    "status": "corrected",
+                    "prompt": "In the classical Streeter-Phelps model, L_0 is initial ultimate BOD and D_0 is initial oxygen deficit. Positive k_d and k_r are base-10 deoxygenation and reaeration constants, with k_r unequal to k_d. Let \\(F(t)=10^{-k_dt}-10^{-k_rt}\\). Which expression gives the oxygen deficit D_t?",
+                    "html": "<p><strong>Reconstructed choices: option A.</strong> Four distinct formulas now test the deoxygenation numerator, rate difference and decay of initial deficit. The question explicitly defines both base-10 rates and requires unequal constants. Answer A retains the original correct relation; do not mix natural and base-10 coefficients.</p>",
                     "sources": [
                         {
                             "id": "WATE813-00177",

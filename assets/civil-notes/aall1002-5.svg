@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Annual sinking fund: deposits accumulate to the replacement target</title>
+  <desc id="desc">Building cost 25000 rupees minus scrap value 3000 gives a fund target of 22000 rupees. Equal deposits at the ends of years 1 through 40 earn 5 percent per year. Annual deposit 182.1195 rupees accumulates to 22000 rupees just after the final deposit.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
+  <rect width="720" height="420" fill="#fbfcfd"/>
+  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+    <text x="26" y="33" font-size="21">Sinking fund: end-of-year deposits earn interest</text>
+    <text x="54" y="86" font-size="18">Target = cost - scrap = 25,000 - 3000 = Rs 22,000</text>
+    <text x="54" y="120" font-size="18">i = 5% per year; n = 40 years</text>
+    <path d="M82 197H661" stroke="#647780" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M97 189V205M192 189V205M287 189V205M529 189V205M624 189V205" stroke="#647780" stroke-width="1.5"/>
+    <text x="90" y="177" font-size="17">0</text><text x="185" y="177" font-size="17">1</text><text x="280" y="177" font-size="17">2</text><text x="517" y="177" font-size="17">39</text><text x="612" y="177" font-size="17">40</text>
+    <path d="M192 200V256" stroke="#287aab" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M287 200V256" stroke="#287aab" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M529 200V256" stroke="#287aab" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M624 200V256" stroke="#287aab" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="184" y="281" font-size="18">A</text><text x="279" y="281" font-size="18">A</text><text x="521" y="281" font-size="18">A</text><text x="616" y="281" font-size="18">A</text>
+    <text x="384" y="232" font-size="23">...</text>
+    <text x="54" y="324" font-size="18">A = 22,000(0.05)/[(1.05)&#8308;&#8304; - 1]</text>
+    <text x="54" y="360" font-size="20" fill="#2b7b61">A = Rs 182.1195 per year</text>
+    <text x="28" y="403" font-size="14" fill="#647780">Final target includes interest. Rs 550/year would ignore the 5% accumulation.</text>
+  </g>
+</svg>

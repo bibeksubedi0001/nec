@@ -7,6 +7,7 @@
         AALL1003: {
             code: "AALL1003",
             questionCount: 2,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Activity duration</th><td>d = Q/(nr) for quantity Q, crew n and output rate r.</td></tr><tr><th scope='row'>Forward pass</th><td>EF = ES + d; ES<sub>i</sub> = max(EF of predecessors).</td></tr><tr><th scope='row'>Backward pass</th><td>LS = LF − d; LF<sub>i</sub> = min(LS of successors).</td></tr><tr><th scope='row'>Float</th><td>TF = LS − ES = LF − EF; FF = min(ES successors) − EF.</td></tr><tr><th scope='row'>PERT estimates</th><td>t<sub>e</sub> = (a + 4m + b)/6; σ<sup>2</sup> = [(b − a)/6]<sup>2</sup>.</td></tr><tr><th scope='row'>PERT probability</th><td>z = (D − μ)/σ; P(T ≤ D) = Φ(z).</td></tr><tr><th scope='row'>Crash slope</th><td>s = (C<sub>short</sub> − C<sub>long</sub>)/(d<sub>long</sub> − d<sub>short</sub>).</td></tr><tr><th scope='row'>Earned value</th><td>CV = EV − AC; SV = EV − PV; CPI = EV/AC; SPI = EV/PV.</td></tr><tr><th scope='row'>Forecast</th><td>EAC = AC + ETC; TCPI = (BAC − EV)/(BAC − AC).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "schedule-classification-life-cycle",

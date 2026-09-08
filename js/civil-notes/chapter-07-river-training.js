@@ -7,6 +7,7 @@
         ACiE0704: {
             code: "ACiE0704",
             questionCount: 40,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Conveyance</th><td>Q = AV; V = R<sup>2/3</sup>S<sup>1/2</sup>/n.</td></tr><tr><th scope='row'>Sinuosity</th><td>s = L<sub>channel</sub>/L<sub>valley</sub>.</td></tr><tr><th scope='row'>Sediment continuity</th><td>dM<sub>store</sub>/dt = G<sub>in</sub> + G<sub>lateral</sub> − G<sub>out</sub>.</td></tr><tr><th scope='row'>Scour and apron</th><td>Scour level Z<sub>sc</sub> = Z<sub>HFL</sub> − D<sub>max</sub>; launch length ℓ = h√(1 + z<sub>s</sub><sup>2</sup>).</td></tr><tr><th scope='row'>Flood-wall crest</th><td>Z<sub>c</sub> = Z<sub>design</sub> + F + A<sub>settlement</sub> (freeboard and settlement allowance).</td></tr><tr><th scope='row'>Farm-pond balance</th><td>dS/dt = I − O − W − E − L.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "river-training-purpose-and-system-boundary",

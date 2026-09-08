@@ -7,6 +7,7 @@
         ACiE0606: {
             code: "ACiE0606",
             questionCount: 54,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Exceedance risk</th><td>P(at least one event in n years) = 1 − (1 − p)<sup>n</sup>.</td></tr><tr><th scope='row'>Return period</th><td>T = 1/p, with p the annual exceedance probability.</td></tr><tr><th scope='row'>Expected annual loss</th><td>Σp<sub>i</sub>L<sub>i</sub> over the hazard scenarios.</td></tr><tr><th scope='row'>Health study rate</th><td>Rate = cases/exposed population (e.g. attack or prevalence).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "environment-assessment-purpose",

@@ -7,6 +7,7 @@
         ACiE0705: {
             code: "ACiE0705",
             questionCount: 49,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Reach storage</th><td>dV<sub>s</sub>/dt = Q<sub>in</sub> + Q<sub>lateral</sub> − Q<sub>delivery</sub> − Q<sub>down</sub> − Q<sub>escape</sub>.</td></tr><tr><th scope='row'>Crest and gated vent</th><td>Q = C<sub>w</sub>L<sub>e</sub>H<sub>t</sub><sup>3/2</sup>; gated Q<sub>g</sub> = C<sub>d</sub>A<sub>o</sub>√(2gH<sub>g</sub>).</td></tr><tr><th scope='row'>Pipe outlet</th><td>q = C<sub>d</sub>A√(2gH).</td></tr><tr><th scope='row'>Sensitivity and flexibility</th><td>S = d ln q/d ln Y; F = d ln q/d ln Q; proportional when F = 1.</td></tr><tr><th scope='row'>Proportional setting</th><td>H/Y = r/m (outlet index r, channel index m).</td></tr><tr><th scope='row'>Clear waterway</th><td>B<sub>clear</sub> = B<sub>gross</sub> − Σt<sub>pier</sub>.</td></tr><tr><th scope='row'>Fall head budget</th><td>H<sub>structures</sub> = E<sub>u</sub> − E<sub>d</sub> − h<sub>reach</sub> − h<sub>other</sub>.</td></tr><tr><th scope='row'>Cistern jump</th><td>y<sub>2</sub>/y<sub>1</sub> = ½[√(1 + 8Fr<sub>1</sub><sup>2</sup>) − 1].</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "irrigation-regulator-network-locations",

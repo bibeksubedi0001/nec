@@ -7,6 +7,7 @@
         ACiE0903: {
             code: "ACiE0903",
             questionCount: 64,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Sieve analysis</th><td>Retained % = 100m<sub>i</sub>/M; passing = 100 − cumulative retained; blend P = Σf<sub>i</sub>P<sub>i</sub>.</td></tr><tr><th scope='row'>Packing voids</th><td>n = 1 − ρ<sub>bulk</sub>/(G<sub>s</sub>ρ<sub>w</sub>).</td></tr><tr><th scope='row'>Aggregate strength</th><td>ACV = 100M<sub>fines</sub>/M<sub>sample</sub>; AIV = 100M<sub>passing</sub>/M<sub>initial</sub>; LA loss = 100(M<sub>0</sub> − M<sub>r</sub>)/M<sub>0</sub>.</td></tr><tr><th scope='row'>Binder content</th><td>By mix P<sub>b</sub> = 100M<sub>b</sub>/M; by aggregate B = 100P<sub>b</sub>/(100 − P<sub>b</sub>).</td></tr><tr><th scope='row'>Maximum theoretical SG</th><td>G<sub>mm</sub> = 100/(P<sub>s</sub>/G<sub>se</sub> + P<sub>b</sub>/G<sub>b</sub>).</td></tr><tr><th scope='row'>Asphalt voids</th><td>V<sub>a</sub> = 100(1 − G<sub>mb</sub>/G<sub>mm</sub>); VMA = 100 − G<sub>mb</sub>P<sub>s</sub>/G<sub>sb</sub>; VFA = 100(VMA − V<sub>a</sub>)/VMA.</td></tr><tr><th scope='row'>CBR and modulus</th><td>CBR = 100P<sub>test</sub>/P<sub>reference</sub>; M<sub>R</sub> ≈ 10·CBR MPa; subgrade k = σ/δ.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "materials-aggregate-origin-and-quality",

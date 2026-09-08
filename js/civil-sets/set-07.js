@@ -162,7 +162,7 @@ const CIVIL_MODEL_7 = {
                         { key: "d", text: "98.4" }
                     ],
                     answer: "a",
-                    explanation: "True Area = (Measured Area) * (Actual Chain Length / Designated Chain Length)². Here, the chain is too long, meaning it measures less than actual. Designated length is 100 links, actual is 100.8 links. True Area = 100 * (100.8/100)² = 100 * 1.016064 = 101.6064 acres ≈ 101.6 acres."
+                    explanation: "<p>The stored result assumes a nominal 100-link chain. A chain 0.8 link too long has an actual-to-nominal length ratio $k=\\dfrac{100.8}{100}=1.008$.</p><ol><li>Each measured length needs the factor k. An area uses two lengths, so $A_{true}=A_{measured}k^2$.</li><li>$A_{true}=100(1.008)^2$.</li><li>$A_{true}=101.6064\\,\\mathrm{acres}$, approximately $101.6\\,\\mathrm{acres}$.</li></ol><p>The sign is positive: an overlong chain under-reports a real distance. Multiplying by k only once would give 100.8 acres, a length correction mistakenly applied to area. If the chain were not nominally 100 links, its nominal link count would be needed.</p>"
                 },
                 {
                     id: "cm7q011",
@@ -275,7 +275,7 @@ const CIVIL_MODEL_7 = {
                         { key: "d", text: "3" }
                     ],
                     answer: "a",
-                    explanation: "A plane truss is just stiff when m equals 2j minus 3, so with 8 joints it needs 2 times 8 minus 3, that is 13 members. It has only 11, so it is a mechanism and two more members are required. Had it carried more than 13 it would have been statically indeterminate instead, and the extra members would be redundant."
+                    explanation: "<p>Assume an ideal pin-jointed plane truss with three independent external reaction components and a layout that can be stabilized by adding bars.</p><ol><li>There are two joint-equilibrium equations per joint. The necessary determinate count is $m+r=2j$.</li><li>With $j=8$ and $r=3$, the required member count is $m=2(8)-3=13$.</li><li>The existing count is 11, so the deficit is $13-11=2$ members.</li></ol><p>Two is the counting answer, not an automatic guarantee of stability. The added bars must restrain the actual mechanisms; collinear or badly connected members can leave a truss unstable even when the count is correct. A surplus count indicates redundancy only after stability and independent restraints have been checked.</p>"
                 },
                 {
                     id: "cm7q019",
@@ -453,7 +453,7 @@ const CIVIL_MODEL_7 = {
                         { key: "d", text: "465 mm²" }
                     ],
                     answer: "b",
-                    explanation: "The net width is the gross width less the hole, that is 400 minus 18, or 382 mm. Multiplying by the 10 mm thickness gives 3820 square millimetres, which is 38.2 square centimetres."
+                    explanation: "<p>Convert the width first: $40\\,\\mathrm{cm}=400\\,\\mathrm{mm}$. Thickness is $t=10\\,\\mathrm{mm}$ and the supplied hole diameter is $d_h=18\\,\\mathrm{mm}$.</p><ol><li>For a straight section crossing one hole, $A_n=(b-d_h)t$.</li><li>$A_n=(400-18)(10)=3820\\,\\mathrm{mm^2}$.</li><li>Since $1\\,\\mathrm{cm^2}=100\\,\\mathrm{mm^2}$, $A_n=\\dfrac{3820}{100}=38.2\\,\\mathrm{cm^2}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0505-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open net steel area diagram'><img src='assets/civil-notes/acie0505-5.svg' width='720' height='420' loading='lazy' alt='400 mm wide steel plate, one 18 mm hole and 10 mm thickness, with the straight net section marked.'></a><figcaption>Subtract the stated hole once; use the squared length conversion for area.</figcaption></figure><p>This is the geometric net area. Code-specific deductions for hole preparation, shear lag and other failure modes require additional information and are not silently added to the given dimensions.</p>"
                 },
                 {
                     id: "cm7q032",
@@ -1161,7 +1161,7 @@ const CIVIL_MODEL_7 = {
                         { key: "d", text: "19.3 s" }
                     ],
                     answer: "a",
-                    explanation: "The flow ratios are 500 over 1600 and 300 over 1600, which sum to 0.5. Webster's optimum cycle is (1.5L plus 5) over (1 minus Y), that is (1.5 times 16, plus 5) divided by 0.5, which is 29 over 0.5, or 58 seconds. The key has been corrected from the printed 48 s."
+                    explanation: "<p>Interpret the two approaches as separately served critical phases. Use matching PCU/h units for demand and saturation flow.</p><ol><li>$y_1=\\dfrac{500}{1600}=0.3125$ and $y_2=\\dfrac{300}{1600}=0.1875$. Their critical ratio sum is $Y=0.5$.</li><li>Webster's approximation is $C_0=\\dfrac{1.5L+5}{1-Y}$ with L and C in seconds. Use $L=16\\,\\mathrm{s}$.</li><li>$C_0=\\dfrac{1.5(16)+5}{1-0.5}=\\dfrac{29}{0.5}=58\\,\\mathrm{s}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0904-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open Webster cycle calculation'><img src='assets/civil-notes/acie0904-5.svg' width='720' height='420' loading='lazy' alt='Critical ratios sum to 0.5; 58 second cycle consists of 42 seconds total effective green and 16 seconds lost time.'></a><figcaption>Derived effective greens are 26.25 s and 15.75 s, proportional to the critical ratios.</figcaption></figure><p>Check: $58-16=42\\,\\mathrm{s}$ available effective green. These are accounting values, not displayed signal intervals. Concurrently served movements need a different critical-ratio assessment; pedestrian and clearance constraints are separate design checks.</p>"
                 },
                 {
                     id: "cm7q083",
@@ -1213,7 +1213,7 @@ const CIVIL_MODEL_7 = {
                         { key: "d", text: "80" }
                     ],
                     answer: "a",
-                    explanation: "Webster's optimum cycle length is (1.5L plus 5) divided by (1 minus Y). With a lost time of 10 seconds and a sum of flow ratios of 0.6 that is (15 plus 5) over 0.4, which is 20 over 0.4, or 50 seconds. The key has been corrected from the printed 60."
+                    explanation: "<p>Interpret the supplied lost time as $L=10\\,\\mathrm{s}$ per cycle and the dimensionless critical flow-ratio sum as $Y=0.6$.</p><ol><li>$C_0=\\dfrac{1.5L+5}{1-Y}$.</li><li>$C_0=\\dfrac{1.5(10)+5}{1-0.6}=\\dfrac{20}{0.4}$.</li><li>$C_0=50\\,\\mathrm{s}$. Total effective green is $C_0-L=40\\,\\mathrm{s}$.</li></ol><p>The options omit seconds. The formula is an undersaturated isolated-intersection approximation and gives no usable finite optimum for $Y\\geq1$. Lost time is not the sum of all red indications, since one approach may run while another is red.</p>"
                 },
                 {
                     id: "cm7q087",

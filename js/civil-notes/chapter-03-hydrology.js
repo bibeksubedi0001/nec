@@ -5,6 +5,7 @@
     ACiE0306: {
       code: "ACiE0306",
       questionCount: 90,
+      formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Water balance</th><td>P − ET − Q + G<sub>in</sub> − G<sub>out</sub> = ΔS.</td></tr><tr><th scope='row'>Form factor</th><td>F<sub>f</sub> = A/L<sup>2</sup>.</td></tr><tr><th scope='row'>Streamflow gauging</th><td>Q = Σa<sub>i</sub>v̄<sub>i</sub> (velocity-area).</td></tr><tr><th scope='row'>Stage–discharge</th><td>Q = C(h − a)<sup>b</sup>.</td></tr><tr><th scope='row'>Rational method</th><td>Q<sub>p</sub> = 0.278CIA (SI); duration at least t<sub>c</sub>.</td></tr><tr><th scope='row'>Return period and risk</th><td>T = 1/AEP; risk over n years = 1 − (1 − 1/T)<sup>n</sup>.</td></tr><tr><th scope='row'>Gumbel</th><td>x<sub>T</sub> = μ − β ln[−ln(1 − 1/T)].</td></tr><tr><th scope='row'>Steady well drawdown</th><td>Uses ln(R/r<sub>w</sub>) = 2.303 log<sub>10</sub>(R/r<sub>w</sub>) (Dupuit/Thiem).</td></tr></tbody></table>",
       blocks: [
         {
           id: "hydrologic-cycle-and-basin-balance",

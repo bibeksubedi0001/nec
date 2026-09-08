@@ -77,13 +77,48 @@
     const sourcesOf = (topic) => [...new Map([...topic.blocks, ...topic.cautions].flatMap((block) => block.sources).map((source) => [source.id, source])).values()];
     const checkId = (item, index) => item.id || "caution-" + index;
     const checkTitle = (item) => item.sources.length ? `Model ${item.sources[0].set} · Q${item.sources[0].question}` : "Reference check";
+    const checkLabels = Object.freeze({ corrected: "Corrected", clarification: "Concept clarification", context: "Design and reference context", notation: "Units and notation", assumptions: "Missing assumptions", ambiguity: "Ambiguous question", "answer-review": "Answer needs review", scope: "Scope note", review: "Review note" });
+    const checkKind = (item) => item.status === "corrected" ? "corrected" : !item.sources.length ? "scope" : Object.hasOwn(checkLabels, item.issue) ? item.issue : "review";
+
+    // Decide whether an emphasised span reads as a formula/quantity (kept, styled .cn-f)
+    // or a plain term/label (unwrapped). Prose sentences with two or more words are plain.
+    function formulaLike(value, hasMathTag) {
+        const t = (value || "").trim();
+        if (!t) return false;
+        if (/[=\u00d7\u00f7\u221a\u222b\u2211\u220f\u222e\u2248\u2264\u2265\u2260\u2245\u2261\u221d\u00b7\u22c5\u2202\u2207]/.test(t)) return true;
+        if ((t.match(/[A-Za-z]{3,}/g) || []).length >= 2) return false;
+        if (/[\u2212+\u00b1\u2213\u2192\u2206\u00b0]/.test(t)) return true;
+        if (/[\u0370-\u03ff]/.test(t)) return true;
+        if (hasMathTag && t.length <= 40) return true;
+        if (/\d/.test(t) && /[/^]/.test(t) && t.length <= 24) return true;
+        if (/^[A-Za-z][A-Za-z0-9]?\s*\/\s*[A-Za-z]/.test(t) && t.length <= 24) return true;
+        return false;
+    }
+
+    function styleEmphasis(root) {
+        root.querySelectorAll("strong, b").forEach((el) => {
+            if (!el.parentNode) return;
+            if (formulaLike(el.textContent, !!el.querySelector("sub, sup, .cn-fraction, mjx-container"))) {
+                const span = document.createElement("span");
+                span.className = "cn-f";
+                while (el.firstChild) span.appendChild(el.firstChild);
+                el.replaceWith(span);
+            } else {
+                const parent = el.parentNode;
+                while (el.firstChild) parent.insertBefore(el.firstChild, el);
+                parent.removeChild(el);
+            }
+        });
+    }
 
     function search(topics, query) {
         const terms = text(query).split(" ").filter(Boolean);
         if (!terms.length) return [];
         return topics.flatMap((topic) => [
             ...topic.blocks.map((block) => ({ ...block, code: topic.code, kind: "note" })),
-            ...topic.cautions.map((item, index) => ({ ...item, id: checkId(item, index), title: checkTitle(item), code: topic.code, kind: "caution" }))
+            ...topic.cautions.map((item, index) => ({ ...item, id: checkId(item, index), title: checkTitle(item), code: topic.code, kind: "caution" })),
+            ...(topic.formulaSheet ? [{ id: "formulas", title: "Formula sheet", html: topic.formulaSheet, sources: [], code: topic.code, kind: "revision" }] : []),
+            ...(topic.recall || []).map((item) => ({ ...item, title: "Recall", sources: [], code: topic.code, kind: "recall" }))
         ]).filter((block) => {
             const content = text(block.title + " " + (block.prompt || "") + " " + block.html + " " + (block.moreHtml || "") + " " + block.code + " " + block.sources.map((source) => source.id).join(" "));
             return terms.every((term) => content.includes(term));
@@ -105,8 +140,9 @@
         function replace(node, html) {
             if (window.MathJax && window.MathJax.typesetClear) window.MathJax.typesetClear([node]);
             node.innerHTML = html;
-            if (window.CIVIL_NOTE_MATH) node.querySelectorAll(".cn-prose").forEach((prose) => {
-                prose.innerHTML = window.CIVIL_NOTE_MATH.format(prose.innerHTML);
+            node.querySelectorAll(".cn-prose").forEach((prose) => {
+                if (window.CIVIL_NOTE_MATH) prose.innerHTML = window.CIVIL_NOTE_MATH.format(prose.innerHTML, { stackUnits: true });
+                styleEmphasis(prose);
             });
             node.querySelectorAll(".cn-figure img, .cn-figure-viewport img").forEach((image) => {
                 image.addEventListener("error", () => {
@@ -190,8 +226,9 @@
         function checkHtml(item, code, index) {
             const source = item.sources[0];
             const corrected = item.status === "corrected";
-            return `<details class="cn-caution" id="cn-${code}-${checkId(item, index)}" data-cn-check="${source ? esc(source.id) : "reference"}" data-check-status="${corrected ? "corrected" : "review"}" tabindex="-1">
-                <summary><span class="cn-check-label">${esc(checkTitle(item))}<span class="cn-check-status">${corrected ? "Corrected" : source ? "Review note" : "Scope note"}</span></span>${item.prompt ? `<span class="cn-check-prompt">${esc(item.prompt)}</span>` : ""}</summary>
+            const kind = checkKind(item);
+            return `<details class="cn-caution" id="cn-${code}-${checkId(item, index)}" data-cn-check="${source ? esc(source.id) : "reference"}" data-check-status="${corrected ? "corrected" : "review"}" data-check-kind="${kind}" tabindex="-1">
+                <summary><span class="cn-check-label">${esc(checkTitle(item))}<span class="cn-check-status">${checkLabels[kind]}</span></span>${item.prompt ? `<span class="cn-check-prompt">${esc(item.prompt)}</span>` : ""}</summary>
                 <div class="cn-check-content">${proseHtml(item)}${source ? `<button type="button" class="cn-button cn-secondary" data-cn-source="${esc(source.id)}">Read this question ${uiIcon("arrow-up-right")}</button>` : ""}</div></details>`;
         }
 
@@ -202,6 +239,16 @@
                     <img src="${figure.src + version}" width="${figure.width}" height="${figure.height}" loading="lazy" decoding="async" alt="${esc(figure.caption)}" />
                     <span class="cn-figure-corner">${uiIcon("arrow-up-right")}</span>
                 </button><figcaption><b>${esc(figure.title)}</b><span>${esc(figure.caption)}</span></figcaption></figure>`).join("");
+        }
+
+        function sourceDerivationsHtml(topic, id, explanation) {
+            const blocks = topic.blocks.filter((block) => block.sources.some((source) => source.id === id));
+            if (!blocks.length) return "";
+            const figures = window.CIVIL_NOTE_FIGURES?.topics[topic.code] || [];
+            return `<section class="cn-source-derivations"><h3>Related derivations</h3>${blocks.map((block) => {
+                const diagrams = figures.filter((figure) => figure.block === block.id && !explanation.includes(figure.src));
+                return `<details class="cn-related-note" data-cn-related-note="${esc(block.id)}"><summary>${esc(block.title)}</summary>${proseHtml(block)}${diagrams.map((figure) => `<figure class="cn-explanation-figure"><a href="${figure.src + version}" target="_blank" rel="noopener noreferrer" aria-label="Open ${esc(figure.title)}"><img src="${figure.src + version}" width="${figure.width}" height="${figure.height}" loading="lazy" decoding="async" alt="${esc(figure.caption)}" /></a><figcaption>${esc(figure.title)}. ${esc(figure.caption)}</figcaption></figure>`).join("")}</details>`;
+            }).join("")}</section>`;
         }
 
         function openFigure(id) {
@@ -220,17 +267,35 @@
             else dialog.querySelector("[data-cn-close]").focus({ preventScroll: true });
         }
 
+        function revisionHtml(topic, code) {
+            return (topic.formulaSheet ? `<details class="cn-revision" id="cn-${code}-formulas" tabindex="-1"><summary>Formula sheet</summary><div class="cn-prose">${topic.formulaSheet}</div></details>` : "") +
+                ((topic.recall || []).length ? `<section class="cn-revision" id="cn-${code}-recall" tabindex="-1"><h4>Recall</h4>${topic.recall.map((item) => `<details class="cn-recall-item" id="cn-${code}-${item.id}" tabindex="-1"><summary>${esc(item.prompt)}</summary><div class="cn-prose">${item.html}</div><a href="#cn-${code}-${item.block}" data-cn-jump="cn-${code}-${item.block}">Review concept ${uiIcon("arrow-up-right")}</a></details>`).join("")}</section>` : "");
+        }
+
+            function checkFilterHtml(topic) {
+                if (!topic.cautions.some((item) => item.issue)) return "";
+                const kinds = [...new Set(topic.cautions.map(checkKind))];
+                return `<label class="cn-field cn-check-filter"><span>Check type</span><select id="cnCheckFilter"><option value="all">All checks (${topic.cautions.length})</option>${kinds.map((kind) => `<option value="${kind}">${checkLabels[kind]} (${topic.cautions.filter((item) => checkKind(item) === kind).length})</option>`).join("")}</select></label><span id="cnCheckCount" class="cn-count" role="status">${topic.cautions.length} checks</span>`;
+            }
+
         function topicHtml(code) {
             const meta = topicMap.get(code), topic = window.CIVIL_NOTE_TOPICS[code];
             const codes = chapterCodes(meta.chapterId), index = codes.indexOf(code);
             const sessionDisabled = topic.questionCount ? "" : ' disabled aria-describedby="cnSourceCount"';
-            return `<article class="cn-topic" data-note-topic="${code}">
+            const groups = topic.groups || [];
+            const heading = groups.length ? "h5" : "h4";
+            return `<article class="cn-topic${groups.length ? " cn-lesson" : ""}" data-note-topic="${code}">
                 <header class="cn-topic-head"><div><span class="cn-code">${code}</span><h3 id="cnTopicTitle" tabindex="-1">${esc(meta.number + " " + meta.name)}</h3><span class="cn-count" id="cnSourceCount">${topic.questionCount ? topic.questionCount + " source questions" : "Syllabus-only notes · No mapped questions in the current bank"}</span></div>
                     <div class="cn-actions"><button type="button" class="cn-button" data-cn-session="practice" data-topic="${code}"${sessionDisabled}>Practice topic</button><button type="button" class="cn-button cn-secondary" data-cn-session="exam" data-topic="${code}"${sessionDisabled}>Exam</button></div></header>
-                <details class="cn-scope" open><summary>Syllabus scope</summary><p>${esc(meta.detail)}</p></details>
-                <nav class="cn-contents" aria-label="Contents of ${esc(meta.number)}">${topic.blocks.map((block) => `<a href="#cn-${code}-${block.id}" data-cn-jump="cn-${code}-${block.id}">${esc(block.title)}</a>`).join("")}</nav>
-                ${topic.blocks.map((block) => `<section class="cn-block" id="cn-${code}-${block.id}" tabindex="-1"><h4>${esc(block.title)}</h4>${proseHtml(block)}${figuresHtml(code, block.id)}${references(block.sources)}</section>`).join("")}
-                <section class="cn-checks" id="cn-${code}-checks"><details class="cn-check-index"><summary>${topic.questionCount ? "Question checks" : "Reference checks"} (${topic.cautions.length})</summary>${topic.cautions.map((item, index) => checkHtml(item, code, index)).join("")}</details>${externalReferences(topic)}</section>
+                <details class="cn-scope"${groups.length ? "" : " open"}><summary>Syllabus scope</summary><p>${esc(meta.detail)}</p></details>
+                ${groups.length ? `<nav class="cn-lesson-nav" aria-label="Contents of ${esc(meta.number)}"><label class="cn-field"><span>Contents</span><select id="cnSectionSelect"><option value="">Choose section</option>${groups.map((group, groupIndex) => `<option value="cn-${code}-group-${group.id}">${groupIndex + 1}. ${esc(group.title)}</option>`).join("")}<option value="cn-${code}-formulas">Formula sheet</option><option value="cn-${code}-recall">Recall</option><option value="cn-${code}-checks">Question checks</option></select></label><a href="#cn-${code}-formulas" data-cn-jump="cn-${code}-formulas">Formulas</a><a href="#cn-${code}-recall" data-cn-jump="cn-${code}-recall">Recall</a><a href="#cn-${code}-checks" data-cn-jump="cn-${code}-checks">Question checks</a></nav>` : `<nav class="cn-contents" aria-label="Contents of ${esc(meta.number)}">${topic.blocks.map((block) => `<a href="#cn-${code}-${block.id}" data-cn-jump="cn-${code}-${block.id}">${esc(block.title)}</a>`).join("")}</nav>`}
+                ${topic.blocks.map((block) => {
+                    const groupIndex = groups.findIndex((group) => group.start === block.id);
+                    const group = groups[groupIndex];
+                    return `${group ? `<h4 class="cn-part" id="cn-${code}-group-${group.id}" tabindex="-1"><span>${groupIndex + 1}</span>${esc(group.title)}</h4>` : ""}<section class="cn-block" id="cn-${code}-${block.id}" tabindex="-1"><${heading}>${esc(block.title)}</${heading}>${proseHtml(block)}${figuresHtml(code, block.id)}${references(block.sources)}</section>`;
+                }).join("")}
+                ${revisionHtml(topic, code)}
+                <section class="cn-checks" id="cn-${code}-checks" tabindex="-1"><details class="cn-check-index"><summary>${topic.questionCount ? "Question checks" : "Reference checks"} (${topic.cautions.length})</summary>${checkFilterHtml(topic)}${topic.cautions.map((item, index) => checkHtml(item, code, index)).join("")}</details>${externalReferences(topic)}</section>
                 <details class="cn-gaps"><summary>Scope and limits</summary><ul>${topic.gaps.map((gap) => `<li>${esc(gap)}</li>`).join("")}</ul></details>
                 <footer class="cn-pagination"><button type="button" class="cn-button cn-secondary" data-cn-topic="${codes[index - 1] || code}"${index === 0 ? " disabled" : ""}>${uiIcon("arrow-left")} Previous subchapter</button><button type="button" class="cn-button" data-cn-topic="${codes[index + 1] || code}"${index === codes.length - 1 ? " disabled" : ""}>Next subchapter ${uiIcon("arrow-right")}</button></footer>
             </article>`;
@@ -243,7 +308,7 @@
             const results = search(chapterCodes(selectedChapterId).map((code) => window.CIVIL_NOTE_TOPICS[code]), query);
             replace(reader, `<div class="cn-search-summary" role="status"><b>${results.length} matching sections</b><button type="button" class="cn-button cn-secondary" data-cn-clear>Clear search</button></div>${results.length ? results.map((block) => {
                 const meta = topicMap.get(block.code);
-                return `<article class="cn-search-result"><span class="cn-code">${esc(meta.number + " " + meta.name)}</span><h3>${esc(block.title)}</h3>${block.prompt ? `<p class="cn-check-prompt">${esc(block.prompt)}</p>` : ""}${proseHtml(block, true)}${figuresHtml(block.code, block.id)}<button type="button" class="cn-button cn-secondary" data-cn-topic="${block.code}" data-cn-block="${block.id}">Open subchapter ${uiIcon("arrow-right")}</button></article>`;
+                return `<article class="cn-search-result"><span class="cn-code">${esc(meta.number + " " + meta.name)}</span><h3>${esc(block.title)}</h3>${block.kind === "caution" ? `<span class="cn-check-status">${checkLabels[checkKind(block)]}</span>` : ""}${block.prompt ? `<p class="cn-check-prompt">${esc(block.prompt)}</p>` : ""}${proseHtml(block, true)}${figuresHtml(block.code, block.id)}<button type="button" class="cn-button cn-secondary" data-cn-topic="${block.code}" data-cn-block="${block.id}">Open subchapter ${uiIcon("arrow-right")}</button></article>`;
             }).join("") : '<div class="cn-empty">No matching notes. Try a topic, formula name or source question ID.</div>'}`);
         }
 
@@ -281,7 +346,7 @@
             for (let node = target; node && node !== $("cnReader"); node = node.parentElement) {
                 if (node.tagName === "DETAILS") node.open = true;
             }
-            target.querySelectorAll(".cn-more").forEach((detail) => { detail.open = true; });
+            target.querySelectorAll(".cn-more, .cn-check-index").forEach((detail) => { detail.open = true; });
             target.focus({ preventScroll: true });
             target.scrollIntoView({ block: "start", behavior: "auto" });
         }
@@ -303,9 +368,11 @@
                 const q = data.chapters.flatMap((chapter) => chapter.questions)[ref.question - 1];
                 if (!q || (q.src || q.id) !== id) throw new Error("This reference no longer matches the source paper.");
                 const checks = topic.cautions.filter((item) => item.sources.some((source) => source.id === id));
-                replace(sourceBody, `<span class="cn-code">${esc(id)}</span>${checks.length ? `<section class="cn-source-check"><h3>${checks.some((check) => check.status === "corrected") ? "Corrected question" : "Question check"}</h3><div class="cn-prose">${checks.map((check) => check.html).join("")}</div>${externalReferences(topic)}</section>` : ""}<div class="cn-source-question">${q.text}</div>
-                    <ol class="cn-source-options" type="a">${q.options.map((option) => `<li value="${option.key.charCodeAt(0) - 96}">${option.text}</li>`).join("")}</ol>
-                    <details class="cn-stored-answer"><summary>Answer and explanation</summary><p><strong>Answer: ${esc(q.answer.toUpperCase())}</strong></p><div>${q.explanation || "No explanation is stored for this item."}</div></details>`);
+                const label = checks.some((check) => check.status === "corrected") ? "Corrected question" : checks.length === 1 && checks[0].issue ? checkLabels[checkKind(checks[0])] : "Question check";
+                replace(sourceBody, `<span class="cn-code">${esc(id)}</span>${checks.length ? `<section class="cn-source-check"><h3>${label}</h3><div class="cn-prose">${checks.map((check) => check.html).join("")}</div>${externalReferences(topic)}</section>` : ""}<div class="cn-source-question">${q.text}</div>
+                    <p class="cn-source-hint">Select an option to check it against the stored answer.</p>
+                    <ol class="cn-source-options" type="a" data-cn-answer="${esc((q.answer || "").toLowerCase())}">${q.options.map((option) => `<li value="${option.key.charCodeAt(0) - 96}"><button type="button" class="cn-option-btn" data-cn-option="${esc(option.key.toLowerCase())}">${option.text}</button></li>`).join("")}</ol>
+                        <details class="cn-stored-answer"><summary>Answer and explanation</summary><p>Answer: ${esc(q.answer.toUpperCase())}</p><div class="cn-source-explanation">${q.explanation || "No explanation is stored for this item."}</div>${sourceDerivationsHtml(topic, id, q.explanation || "")}</details>`);
             } catch (error) {
                 if (token !== sourceSerial || !dialog.open || !isOpen()) return;
                 replace(sourceBody, `<div role="alert"><p>${esc(error.message)}</p><button type="button" class="cn-button" data-cn-source="${esc(id)}">Retry source</button></div>`);
@@ -325,6 +392,19 @@
                 button.innerHTML = uiIcon(zoomed ? "minus" : "arrow-up-right");
             }
             else if (button.hasAttribute("data-cn-retry")) render();
+            else if (button.dataset.cnOption) {
+                const list = button.closest(".cn-source-options");
+                if (!list || list.dataset.answered) return;
+                list.dataset.answered = "true";
+                const answer = list.dataset.cnAnswer;
+                list.querySelectorAll(".cn-option-btn").forEach((opt) => {
+                    opt.disabled = true;
+                    if (opt.dataset.cnOption === answer) { opt.classList.add("is-correct"); opt.setAttribute("aria-label", opt.textContent.trim() + " (correct answer)"); }
+                });
+                if (button.dataset.cnOption !== answer) { button.classList.add("is-wrong"); button.setAttribute("aria-label", button.textContent.trim() + " (your answer, incorrect)"); }
+                const stored = sourceBody.querySelector(".cn-stored-answer");
+                if (stored) stored.open = true;
+            }
             else if (button.dataset.cnSource) openSource(button.dataset.cnSource);
             else if (button.dataset.cnTopic && topicMap.get(button.dataset.cnTopic)?.chapterId === selectedChapterId) {
                 selectTopic(button.dataset.cnTopic); $("cnSearch").value = ""; renderBody();
@@ -340,6 +420,20 @@
             query = $("cnSearch").value.trim(); renderBody();
         });
         $("cvNotes").addEventListener("change", (event) => {
+            if (event.target.id === "cnCheckFilter" && isOpen()) {
+                let count = 0;
+                content.querySelectorAll(".cn-caution").forEach((check) => {
+                    check.hidden = event.target.value !== "all" && check.dataset.checkKind !== event.target.value;
+                    if (!check.hidden) count++;
+                });
+                $("cnCheckCount").textContent = `${count} check${count === 1 ? "" : "s"}`;
+                return;
+            }
+            if (event.target.id === "cnSectionSelect" && isOpen()) {
+                focusBlock(event.target.value);
+                event.target.value = "";
+                return;
+            }
             if (event.target.id !== "cnChapterSelect" || !isOpen() || !chapterMap.has(event.target.value)) return;
             selectChapter(event.target.value); render();
         });

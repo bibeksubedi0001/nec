@@ -527,7 +527,7 @@ const CIVIL_MODEL_5 = {
                         { key: "d", text: "55.34 kN/m²" }
                     ],
                     answer: "a",
-                    explanation: "The hydraulic gradient follows from Darcy's law: i equals Q over kA, that is 0.04 divided by (1.6 times 10 to the minus 3, times 50), which is 0.5. The seepage pressure is then i times gamma w times the thickness, 0.5 times 9.81 times 12, or 58.86 kN per square metre."
+                    explanation: "<p>Assume steady one-dimensional Darcy flow through the homogeneous sample. Given $Q=0.04\\,\\mathrm{m^3/s}$, $k=1.6\\times10^{-3}\\,\\mathrm{m/s}$, $A=50\\,\\mathrm{m^2}$ and $L=12\\,\\mathrm{m}$.</p><ol><li>Darcy's law is $Q=kiA$. Thus $i=\\dfrac{Q}{kA}=\\dfrac{0.04}{0.0016(50)}=0.5$.</li><li>Total head loss is $\\Delta h=iL=0.5(12)=6\\,\\mathrm{m}$.</li><li>The pressure-equivalent seepage force per bulk cross-sectional area is $p_s=\\gamma_w\\Delta h$. With $\\gamma_w=9.81\\,\\mathrm{kN/m^3}$, $p_s=9.81(6)=58.86\\,\\mathrm{kPa}$.</li></ol><p>The same result follows from $p_s=i\\gamma_wL$. This pressure-equivalent is not necessarily the pore pressure at a particular point: that additionally needs elevation and boundary-head data. The Darcy discharge velocity $Q/A=ki$ is also different from the pore-water velocity.</p>"
                 },
                 {
                     id: "cm5q037",
@@ -540,7 +540,7 @@ const CIVIL_MODEL_5 = {
                         { key: "d", text: "0" }
                     ],
                     answer: "b",
-                    explanation: "The critical hydraulic gradient is ic equal to (G minus 1) over (1 plus e), that is 1.68 divided by 1.68, which is exactly 1. Quick conditions therefore begin as soon as the upward gradient reaches unity, which is typical of sands."
+                    explanation: "<p>Use the ideal saturated, upward-seepage model without surcharge. Quick condition occurs when upward seepage force balances submerged soil weight.</p><ol><li>Per unit volume, critical balance is $i_c\\gamma_w=\\gamma'$.</li><li>For specific gravity G and void ratio e, $\\gamma'=\\dfrac{G-1}{1+e}\\gamma_w$. Therefore $i_c=\\dfrac{G-1}{1+e}$.</li><li>$i_c=\\dfrac{2.68-1}{1+0.68}=\\dfrac{1.68}{1.68}=1$.</li></ol><p>The gradient is dimensionless. Unity follows from these particular G and e values, not from a universal constant for all sands. Real heave or piping also depends on boundary conditions, surcharge, confinement and soil erodibility.</p>"
                 },
                 {
                     id: "cm5q038",
@@ -996,7 +996,7 @@ const CIVIL_MODEL_5 = {
                         { key: "d", text: "2.2 cumec" }
                     ],
                     answer: "c",
-                    explanation: "For each season the duty follows from D equal to 8.64 B over delta, using the kor depth and kor period for that crop, and the discharge is the area divided by the duty. The distributary is then designed for the larger of the two seasonal demands, which with the values assumed here is about 2.08 cumec."
+                    explanation: "<p>The areas are given, but the question does not specify numerical kor depths, kor periods, losses or operating hours. Its instruction to assume suitable values does not define a unique answer.</p><ol><li>For area A in hectares, net depth $\\Delta$ in metres and period B in days, continuous field discharge is $Q_f=\\dfrac{A\\Delta}{8.64B}$ in cubic metres per second.</li><li>For Kharif, $Q_{K,f}=\\dfrac{2400\\Delta_K}{8.64B_K}$; for Rabi, $Q_{R,f}=\\dfrac{1800\\Delta_R}{8.64B_R}$.</li><li>If conveyance efficiency is $\\eta$ and the running fraction is f, head capacity is $Q_h=\\dfrac{Q_f}{\\eta f}$.</li><li>For non-overlapping seasons, compare the two appropriately corrected peak duties. Add demands only where they actually occur simultaneously.</li></ol><p>The retained 2.08 cumec key needs an explicit set of assumed depths, periods and loss/operation factors. Without those values, a worked example may illustrate the method but cannot establish that exact choice from the supplied data.</p>"
                 },
                 {
                     id: "cm5q071",
@@ -1074,7 +1074,7 @@ const CIVIL_MODEL_5 = {
                         { key: "d", text: "0.8" }
                     ],
                     answer: "a",
-                    explanation: "A benefit-cost study of lining compares the annual value of the water saved, and the extra crop it grows, with the annualised cost of the lining plus its maintenance, using the capital recovery factor for the given life and interest rate. A ratio above one, as here, means lining is worth doing."
+                    explanation: "<p>Work per square metre of lining. To compare annual quantities, assume the stated crop-production value and 12 paisa maintenance are annual, with zero residual value. The benefit period is not explicitly printed.</p><ol><li>Saved discharge per square metre is $\\dfrac{3}{10^6}$ cumec. Annual benefit under the stated assumption is $B=\\dfrac{3(300000)}{10^6}=0.90$ rupees per square metre.</li><li>At $i=0.06$ and $n=40$, the capital-recovery formula is $\\mathrm{CRF}=\\dfrac{i(1+i)^n}{(1+i)^n-1}$. Its value is $\\mathrm{CRF}\\approx0.06646154$.</li><li>Annual cost is $C_a=40(\\mathrm{CRF})+0.12\\approx2.77846$ rupees per square metre.</li><li>$\\dfrac{B}{C_a}=\\dfrac{0.90}{2.77846}\\approx0.32392$, not the stored 1.2.</li></ol><p>Multiplying both benefit and cost by the same lining area cancels that area; the stated 20 m perimeter cannot change the ratio. None of the options matches this conditional annual calculation. If crop value refers to a different period, that period must be established before an economic comparison; the old above-one conclusion is unsupported.</p>"
                 },
                 {
                     id: "cm5q077",

@@ -7,6 +7,7 @@
         ACiE0602: {
             code: "ACiE0602",
             questionCount: 27,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Node continuity</th><td>ΣQ<sub>in</sub> = ΣQ<sub>out</sub> at every junction.</td></tr><tr><th scope='row'>Hazen–Williams</th><td>h<sub>f</sub> = 10.67 LQ<sup>1.852</sup>/(C<sup>1.852</sup>D<sup>4.87</sup>) (SI).</td></tr><tr><th scope='row'>Minor losses</th><td>ΣKv<sup>2</sup>/(2g) on a stated velocity basis.</td></tr><tr><th scope='row'>Loop head loss</th><td>h = rQ|Q|<sup>n−1</sup> per pipe.</td></tr><tr><th scope='row'>Hardy Cross correction</th><td>ΔQ = −Σh/Σ[n r |Q|<sup>n−1</sup>]; preserves continuity while balancing heads.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "distribution-system-boundaries-and-driving-head",

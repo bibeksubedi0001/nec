@@ -5,6 +5,7 @@
         ACiE0305: {
             code: "ACiE0305",
             questionCount: 141,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Section geometry</th><td>Hydraulic radius R = A/P<sub>w</sub>; hydraulic depth D = A/T.</td></tr><tr><th scope='row'>Manning / Chézy</th><td>V = (1/n)R<sup>2/3</sup>S<sup>1/2</sup>; V = C√(RS).</td></tr><tr><th scope='row'>Froude number</th><td>Fr = V/√(gD); critical flow at Fr = 1.</td></tr><tr><th scope='row'>Critical section factor</th><td>Z = A√D = √(A<sup>3</sup>/T).</td></tr><tr><th scope='row'>Specific energy</th><td>E = y + V<sup>2</sup>/(2g); rectangular critical depth y<sub>c</sub> = (q<sup>2</sup>/g)<sup>1/3</sup>.</td></tr><tr><th scope='row'>Economical rectangle</th><td>b = 2y, so R = y/2.</td></tr><tr><th scope='row'>Hydraulic jump</th><td>Rectangular sequent depth y<sub>2</sub>/y<sub>1</sub> = ½(√(1 + 8Fr<sub>1</sub><sup>2</sup>) − 1).</td></tr><tr><th scope='row'>Incipient motion</th><td>Shields θ = τ/[(γ<sub>s</sub> − γ<sub>w</sub>)d].</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "free-surface-and-flow-descriptions",

@@ -314,7 +314,7 @@ const CIVIL_MODEL_9 = {
                         { key: "d", text: "220 N/mm²" }
                     ],
                     answer: "b",
-                    explanation: "The fixed end moment is 2.4 times 2, that is 4.8 kNm or 4.8 million N mm. The section modulus is bd squared over 6, that is 40 times 3600 over 6, which is 24,000 cubic millimetres, so the stress is 4.8 million over 24,000, or 200 N/mm²."
+                    explanation: "<p>Take the 60 mm side as the vertical depth and the 40 mm side as the width. The end load is downward.</p><ol><li>Use $P=2400\\,\\mathrm{N}$ and $L=2000\\,\\mathrm{mm}$. The fixed-end moment magnitude is $|M|=PL=4.8\\times10^6\\,\\mathrm{N\\,mm}$.</li><li>$Z=\\dfrac{bd^2}{6}$, hence $Z=\\dfrac{40(60)^2}{6}=24000\\,\\mathrm{mm^3}$.</li><li>$|\\sigma|=\\dfrac{|M|}{Z}$, giving $|\\sigma|=\\dfrac{4800000}{24000}=200\\,\\mathrm{MPa}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0403-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open cantilever stress diagram'><img src='assets/civil-notes/acie0403-5.svg' width='720' height='420' loading='lazy' alt='2 m cantilever with a downward 2.4 kN load and a 40 by 60 mm section, 60 mm vertical.'></a><figcaption>The upper fixed-end fibres are in tension; the lower fibres are in compression.</figcaption></figure><p>The answer is the elastic extreme-fibre stress. The phrase collapse is not established without material strength and stability information. Rotating the section to 40 mm vertical depth would give 300 MPa instead.</p>"
                 },
                 {
                     id: "cm9q022",
@@ -896,7 +896,7 @@ const CIVIL_MODEL_9 = {
                         { key: "d", text: "25.56" }
                     ],
                     answer: "d",
-                    explanation: "\\(N_s = \\frac{N \\sqrt{P}}{H^{5/4}}\\) \\(N_s = \\frac{300 \\times 44.72}{524.95}\\) \\(N_s = \\frac{13416}{524.95} \\approx 25.56\\)"
+                    explanation: "<p>The offered 25.56 uses the horsepower convention: speed N in rpm, head H in metres and the power of one turbine runner P in hp.</p><ol><li>$N_s=\\dfrac{N\\sqrt{P}}{H^{5/4}}$.</li><li>$\\sqrt{2000}=44.72136$ and $150^{5/4}\\approx524.9453$.</li><li>$N_s=\\dfrac{300(44.72136)}{524.9453}\\approx25.56$.</li><li>Unit-convention check: mechanical $2000\\,\\mathrm{hp}\\approx1491.40\\,\\mathrm{kW}$. If power is entered in kW instead, the numerical specific speed is approximately 22.07.</li></ol><p>This traditional specific-speed number is not dimensionless: changing the power unit changes its numerical value. Do not compare it with a turbine range tabulated in another convention, or use station power when the relation requires one runner's power.</p>"
                 },
                 {
                     id: "cm9q064",
@@ -935,7 +935,7 @@ const CIVIL_MODEL_9 = {
                         { key: "d", text: "5 jets" }
                     ],
                     answer: "c",
-                    explanation: "The calculation involves determining the jet diameter from the wheel diameter ratio, then finding the discharge per jet using the velocity from the head and Cv. The total discharge required is found from the power and efficiency. The number of jets is the total discharge divided by the discharge per jet."
+                    explanation: "<p>The inputs do not give an integer number of fully open jets. Interpret the stated speed ratio as $u/\\sqrt{2gH}=0.46$, with $g=9.81\\,\\mathrm{m/s^2}$.</p><ol><li>Jet speed: $V_j=C_v\\sqrt{2gH}$. With H = 300 m, $V_j=0.98\\sqrt{2(9.81)(300)}$. Hence $V_j\\approx75.186\\,\\mathrm{m/s}$.</li><li>Rim speed: $u=0.46\\sqrt{2gH}\\approx35.291\\,\\mathrm{m/s}$. Wheel diameter $D=\\dfrac{60u}{\\pi N}\\approx1.22548\\,\\mathrm{m}$ at 550 rpm.</li><li>The stated diameter ratio gives $d=0.1D\\approx0.12255\\,\\mathrm{m}$. One full jet carries $q_j=\\dfrac{\\pi d^2}{4}V_j\\approx0.88683\\,\\mathrm{m^3/s}$.</li><li>Required discharge: $Q=\\dfrac{6000}{0.90(9.81)(300)}$. Thus $Q\\approx2.26526\\,\\mathrm{m^3/s}$.</li><li>$z=\\dfrac{Q}{q_j}\\approx2.554$. It is not the stored four-jet answer and is not an exact integer duty.</li></ol><p>Rounding up to three describes enough nozzle capacity, not three fully open jets satisfying every given value. Their effective jet diameter or opening must be adjusted. Four full jets would over-deliver the required flow. No unique exact integer result follows without relaxing an input or specifying partial-nozzle operation; the existing key is retained only as a flagged source discrepancy.</p>"
                 },
                 {
                     id: "cm9q067",
@@ -948,7 +948,7 @@ const CIVIL_MODEL_9 = {
                         { key: "d", text: "13" }
                     ],
                     answer: "d",
-                    explanation: "The synchronous speed N_s = 120f / P, where f is frequency and P is number of poles. Rearranging, P = 120f / N_s. Substituting f=50 Hz and N_s=461.54 rpm gives P ≈ 13."
+                    explanation: "<p>The numerical substitution gives about 13, but that is not a physically valid total pole count for a conventional synchronous AC generator.</p><ol><li>Use $N_s=\\dfrac{120f}{p}$, where p is total poles, not pole pairs.</li><li>$p=\\dfrac{120(50)}{461.54}\\approx12.99996\\approx13$.</li><li>North and south poles occur in pairs, so p must be a positive even integer. Twelve poles require $N_s=\\dfrac{6000}{12}=500\\,\\mathrm{rpm}$; fourteen require about $428.57\\,\\mathrm{rpm}$.</li></ol><p>Neither even count matches 461.54 rpm at 50 Hz. Thirteen pole pairs would mean 26 total poles and about 230.77 rpm, also different. The stored 13 is the algebraic result only; none of the options is a valid conventional generator satisfying both supplied speed and frequency.</p>"
                 }
             ]
         },

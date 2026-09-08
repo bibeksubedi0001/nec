@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">BOD dilution: two percent sample and five mg per litre oxygen depletion</title>
+  <desc id="desc">The incubation mixture contains 2 percent wastewater and 98 percent dilution water by volume. Its measured five-day oxygen depletion is 5 mg per litre. With no seed or blank demand, divide by 0.02 to obtain 250 mg per litre BOD of the original wastewater.</desc>
+  <rect width="720" height="420" fill="#fbfcfd"/>
+  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+    <text x="26" y="34" font-size="21">BOD: distinguish mixture from original sample</text>
+    <text x="66" y="90" font-size="18">Volume fraction in the incubation mixture</text>
+    <rect x="68" y="119" width="584" height="73" fill="#d8edf7" stroke="#273b45" stroke-width="1.5"/>
+    <rect x="68" y="119" width="11.68" height="73" fill="#2b7b61"/>
+    <path d="M74 196V226H200" stroke="#2b7b61" fill="none"/>
+    <text x="211" y="232" font-size="17">2% sample</text><text x="234" y="163" font-size="18">98% dilution water</text>
+    <text x="66" y="282" font-size="18">Mixture depletion: 5 mg/L after 5 days at 20&#176;C</text>
+    <text x="66" y="322" font-size="19">Sample fraction P = 2/100 = 0.02</text>
+    <text x="66" y="359" font-size="20" fill="#2b7b61">Original BOD5 = 5/0.02 = 250 mg/L</text>
+    <text x="28" y="401" font-size="14" fill="#647780">No seed or blank demand assumed. Correct those demands when present.</text>
+  </g>
+</svg>

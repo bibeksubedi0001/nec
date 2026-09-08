@@ -439,7 +439,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "11.56" }
                     ],
                     answer: "a",
-                    explanation: "The modular ratio (m) is given by 280/(3σ_cbc). For M20 concrete, σ_cbc = 7 N/mm². Therefore, m = 280/(3*7) = 280/21 ≈ 13.33."
+                    explanation: "<p>For the IS 456 working-stress method, M20 concrete has permissible bending compression $\\sigma_{cbc}=7\\,\\mathrm{N/mm^2}$.</p><ol><li>Use the Annex B design relation $m=\\dfrac{280}{3\\sigma_{cbc}}$.</li><li>$m=\\dfrac{280}{3(7)}=\\dfrac{40}{3}\\approx13.33$. This ratio is dimensionless; the relation expects stress in N/mm squared.</li></ol><p>It is a working-stress design proxy that partly accounts for long-term effects, not simply a measured instantaneous $E_s/E_c$.</p><p>Illustrative application, with additional inputs: take $b=300\\,\\mathrm{mm}$, $d=400\\,\\mathrm{mm}$ and $A_{st}=1200\\,\\mathrm{mm^2}$. The transformed steel area is $mA_{st}=16000\\,\\mathrm{mm^2}$. The cracked-section condition $bx^2/2=mA_{st}(d-x)$ gives $x=160\\,\\mathrm{mm}$.</p><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0503-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open worked RCC section'><img src='assets/civil-notes/acie0503-5.svg' width='720' height='420' loading='lazy' alt='Illustrative cracked RCC section with neutral axis 160 mm below the top, 120 kN compression and tension, and 346.67 mm lever arm.'></a><figcaption>Added service-bending example, not dimensions supplied by the modular-ratio question.</figcaption></figure>"
                 },
                 {
                     id: "cm27q031",
@@ -452,7 +452,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "11 and 6" }
                     ],
                     answer: "b",
-                    explanation: "Short-term modular ratio m_short = 280/3σ_cbc = 280/(3*8.5) ≈ 10.98 ≈ 11. Long-term modular ratio accounts for creep effects and is approximately 1.5 times the short-term ratio for important members. m_long = 1.5 * m_short ≈ 1.5 * 11 = 16.5. However, standard values often cited are around 11 (short-term) and 13 to 14 (long-term) for such grades."
+                    explanation: "<p>The two ratios need distinct definitions. The printed data do not establish the stored pair 11 and 13, and multiplying 11 by 1.5 would not produce 13.</p><ol><li>For M25, the IS 456 estimate is $E_c=5000\\sqrt{25}=25000\\,\\mathrm{MPa}$.</li><li>If $E_s=200000\\,\\mathrm{MPa}$ is assumed, the instantaneous elastic ratio is $m_e=\\dfrac{E_s}{E_c}=8$.</li><li>The Annex B working-stress proxy is $m=\\dfrac{280}{3\\sigma_{cbc}}$. Using the supplied 8.5 MPa gives $m=\\dfrac{280}{3(8.5)}\\approx10.98$, or 11.</li></ol><p>Thus option A, 8 and 11, matches an instantaneous estimate followed by the Annex B proxy under that added steel-modulus assumption. The Annex B ratio partly includes long-term effects, but it is not an exact long-term modulus for every loading history. An actual creep-based ratio needs a creep coefficient and time/loading conditions. The legacy key remains flagged for review rather than presenting an unsupported 13 as a calculated result.</p>"
                 },
                 {
                     id: "cm27q032",
@@ -1284,7 +1284,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "0.24 cm/sec" }
                     ],
                     answer: "b",
-                    explanation: "Stokes' law gives \\(v_s=\\dfrac{g(G-1)d^2}{18\\nu}\\). With the given values, \\(v_s=\\dfrac{981(1.65)(0.002)^2}{18(0.01)}\\), so \\(v_s=0.03597\\,\\mathrm{cm/s}\\). The particle Reynolds number is \\(Re_p=\\dfrac{v_s d}{\\nu}=0.007194\\), consistent with creeping flow. The former 0.36 cm/s option was a tenfold error and has been corrected."
+                    explanation: "<p>Assume a discrete spherical particle settling in the creeping-flow regime. Keep every length in centimetres: $d=0.002\\,\\mathrm{cm}$, $\\nu=0.01\\,\\mathrm{cm^2/s}$ and $g=981\\,\\mathrm{cm/s^2}$.</p><ol><li>Balancing submerged weight against Stokes drag gives $v_s=\\dfrac{g(G-1)d^2}{18\\nu}$.</li><li>$G-1=1.65$ and $d^2=4\\times10^{-6}\\,\\mathrm{cm^2}$.</li><li>$v_s=\\dfrac{981(1.65)(0.002)^2}{18(0.01)}$. Therefore $v_s=0.03597\\,\\mathrm{cm/s}$.</li><li>Check the assumed regime: $Re_p=\\dfrac{v_s d}{\\nu}$. Substitute $Re_p=\\dfrac{0.03597(0.002)}{0.01}$. The result $Re_p=0.007194$ is well below one.</li></ol><p>The dimensional result is velocity. Squaring the particle diameter is essential; a decimal error there changes the result greatly. The corrected 0.03597 cm/s choice agrees with both the force balance and the small particle Reynolds number.</p>"
                 },
                 {
                     id: "cm27q092",
@@ -1367,7 +1367,7 @@ const CIVIL_MODEL_27 = {
                 {
                     id: "cm27q098",
                     src: "WATE813-00274",
-                    text: "When temporary hard water is boiled, one of the substances formed is",
+                    text: "When water containing calcium bicarbonate is boiled, which solid precipitate forms?",
                     options: [
                         { key: "a", text: "calcium carbonate" },
                         { key: "b", text: "calcium sulfate" },
@@ -1375,7 +1375,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "carbon dioxide" }
                     ],
                     answer: "a",
-                    explanation: "Temporary hardness is caused by calcium and magnesium bicarbonates. Boiling decomposes them, forming insoluble calcium carbonate (scale) and releasing carbon dioxide."
+                    explanation: "Heating calcium-bicarbonate water produces CaCO<sub>3</sub>, CO<sub>2</sub> and H<sub>2</sub>O. Calcium carbonate is the solid precipitate; carbon dioxide is a gaseous product. The original question asked for any substance formed and therefore allowed both options A and D. The revised stem specifies the solid, retaining calcium carbonate as the unique answer."
                 },
                 {
                     id: "cm27q099",
@@ -1393,15 +1393,15 @@ const CIVIL_MODEL_27 = {
                 {
                     id: "cm27q100",
                     src: "WATE813-00276",
-                    text: "Consider the following statements regarding sand as filter material. i. It should be free from clay or silt ii. Organic matter should be present in the sand, iii. It should be nonuniform. Which of the above statement is/are correct?",
+                    text: "For new sand selected for a conventional water filter, consider: i. It should be free from clay and silt. ii. It should contain organic contamination. iii. Broad, uncontrolled grading is preferable to controlled grading. Which statements are appropriate?",
                     options: [
                         { key: "a", text: "i, ii" },
                         { key: "b", text: "ii, iii" },
-                        { key: "c", text: "i, iii" },
+                        { key: "c", text: "i only" },
                         { key: "d", text: "i, ii, iii" }
                     ],
                     answer: "c",
-                    explanation: "Filter sand must be clean (free of clay/silt) and have a uniform grain size for efficient filtration. Organic matter is undesirable as it can foster bacterial growth. Non-uniformity (a range of sizes) is actually common and managed by the uniformity coefficient."
+                    explanation: "Only statement i is appropriate. New filter sand should be clean, with effective size and grading controlled by the selected specification. Organic contamination is undesirable; the useful biological layer in a slow filter develops during operation and does not justify dirty media. Controlled grading does not mean every grain is identical. Option C has been repaired from 'i, iii' to 'i only', and the vague nonuniformity statement has been clarified."
                 }
             ]
         }

@@ -7,6 +7,7 @@
         ACiE0701: {
             code: "ACiE0701",
             questionCount: 79,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Command area and intensity</th><td>GCA ≥ CCA; intensity = 100 A<sub>irrigated,season</sub>/CCA.</td></tr><tr><th scope='row'>Consumptive use</th><td>ET<sub>c</sub> = K<sub>c</sub>ET<sub>o</sub>; ET<sub>o</sub> = K<sub>p</sub>E<sub>pan</sub>.</td></tr><tr><th scope='row'>Available water</th><td>TAW = 1000(θ<sub>FC</sub> − θ<sub>WP</sub>)Z<sub>r</sub>; RAW = p·TAW.</td></tr><tr><th scope='row'>Duty and delta</th><td>D = A/Q (ha/cumec); Δ<sub>m</sub> = 8.64B/D for a base period B days.</td></tr><tr><th scope='row'>Losses along a canal</th><td>D<sub>up</sub> = ηD<sub>down</sub>; Q<sub>down</sub> = ηQ<sub>up</sub>.</td></tr><tr><th scope='row'>Volume and running factor</th><td>V = Qt; canal capacity Q = V/(f·t) with running factor f.</td></tr><tr><th scope='row'>Efficiency</th><td>η<sub>overall</sub> = η<sub>c</sub>η<sub>a</sub> = V<sub>stored</sub>/V<sub>headworks</sub>.</td></tr><tr><th scope='row'>Depth conversions</th><td>1 ha = 10<sup>4</sup> m<sup>2</sup>; 1 mm over 1 ha = 10 m<sup>3</sup>; 1 cm over 1 ha = 100 m<sup>3</sup>.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "demand-crop-soil-and-climate",

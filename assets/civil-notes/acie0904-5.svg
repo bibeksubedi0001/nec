@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Webster: 58 second cycle and effective-green accounting</title>
+  <desc id="desc">Assuming two separately served critical phases, demands 500 and 300 PCU per hour over saturation flow 1600 each give ratios 0.3125 and 0.1875. Their sum is 0.5. With 16 seconds lost time, Webster cycle is 58 seconds, leaving 42 seconds effective green. Proportional allocations are 26.25 and 15.75 seconds.</desc>
+  <rect width="720" height="420" fill="#fbfcfd"/>
+  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+    <text x="26" y="33" font-size="21">Webster: critical flow ratios and lost time</text>
+    <text x="53" y="89" font-size="18">Phase 1: 500/1600 = 0.3125</text>
+    <text x="53" y="123" font-size="18">Phase 2: 300/1600 = 0.1875</text>
+    <text x="457" y="107" font-size="20" fill="#2b7b61">Y = 0.5000</text>
+    <path d="M365 83L430 101L365 124" stroke="#647780" stroke-width="2" fill="none"/>
+    <text x="53" y="178" font-size="19">C0 = (1.5L + 5)/(1 - Y)</text><text x="53" y="211" font-size="19">C0 = (24 + 5)/0.5 = 58 s</text>
+    <rect x="53" y="265" width="272.845" height="54" fill="#deeee6" stroke="#2b7b61"/>
+    <rect x="325.845" y="265" width="163.707" height="54" fill="#d8edf7" stroke="#287aab"/>
+    <rect x="489.552" y="265" width="166.448" height="54" fill="#f7e9e6" stroke="#a84940"/>
+    <text x="154" y="299" font-size="18">26.25 s</text><text x="371" y="299" font-size="18">15.75 s</text><text x="548" y="299" font-size="18">16 s</text>
+    <text x="87" y="344" font-size="15">Phase 1 effective green</text><text x="330" y="344" font-size="15">Phase 2 green</text><text x="531" y="344" font-size="15">Lost time</text>
+    <text x="53" y="380" font-size="17">Effective greens sum to 58 - 16 = 42 s.</text>
+    <text x="28" y="408" font-size="14" fill="#647780">Accounting totals, not a controller sequence or a real-intersection timing plan.</text>
+  </g>
+</svg>

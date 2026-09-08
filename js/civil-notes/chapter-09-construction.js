@@ -7,6 +7,7 @@
         ACiE0906: {
             code: "ACiE0906",
             questionCount: 51,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Water content</th><td>w = M<sub>water</sub>/M<sub>dry</sub>.</td></tr><tr><th scope='row'>Dry density</th><td>ρ<sub>d</sub> = ρ<sub>wet</sub>/(1 + w).</td></tr><tr><th scope='row'>Compaction energy</th><td>E = nNmgH/V (layers n, blows N, rammer m, drop H, mould V).</td></tr><tr><th scope='row'>Relative compaction</th><td>RC = 100ρ<sub>d,field</sub>/ρ<sub>d,max</sub> from the named laboratory test.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "construction-sequence-and-hold-points",

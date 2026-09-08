@@ -458,6 +458,7 @@
         ACiE0102: {
             code: "ACiE0102",
             questionCount: 45,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Brick compressive strength</th><td>f<sub>c</sub> = P<sub>max</sub>/A; failure load over the loaded (bed) area.</td></tr><tr><th scope='row'>Water absorption</th><td>Absorption = 100(m<sub>wet</sub> − m<sub>dry</sub>)/m<sub>dry</sub> (%), by the specified test method.</td></tr><tr><th scope='row'>Bulking of sand</th><td>B = 100(V<sub>damp</sub> − V<sub>reference</sub>)/V<sub>reference</sub>; equal solids, different apparent volume.</td></tr><tr><th scope='row'>Units</th><td>1 N/mm<sup>2</sup> = 1 MPa; report the standard and specimen condition with every result.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "standards-and-reporting",

@@ -1211,7 +1211,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "100%" }
                     ],
                     answer: "a",
-                    explanation: "Aggregate Impact Value (AIV) is calculated as (Weight of fraction passing 2.36mm sieve / Total weight of sample) * 100. If 60% is *retained* (doesn't pass), then 40% passed. Thus, AIV = 40%."
+                    explanation: "<p>Assume the stated sieve result follows the specified aggregate-impact test. Material that does not pass is retained.</p><ol><li>Retained fraction is $60\\%=0.60$.</li><li>Passing fraction is $1-0.60=0.40$.</li><li>$\\mathrm{AIV}=100\\dfrac{M_{passing}}{M_{initial}}$. Therefore $\\mathrm{AIV}=100(0.40)=40\\%$.</li></ol><p>The answer is 40 percent, not the retained 60 percent. A sieve percentage measured before the prescribed impact procedure would be a grading result rather than an aggregate impact value.</p>"
                 },
                 {
                     id: "cm15q087",
@@ -1311,7 +1311,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "250 ppm" }
                     ],
                     answer: "d",
-                    explanation: "BOD (in ppm) = (Depletion of oxygen in ppm) / (Decimal fraction of sewage in the sample). For a 2% solution, the fraction is 0.02. Therefore, BOD = 5 / 0.02 = 250 ppm."
+                    explanation: "<p>Assume the bottle oxygen depletion requires no seed or blank correction. Convert the 2 percent wastewater fraction to $P=0.02$.</p><ol><li>$\\mathrm{BOD}_5=\\dfrac{D_i-D_f}{P}$.</li><li>$\\mathrm{BOD}_5=\\dfrac{5}{0.02}=250\\,\\mathrm{mg/L}$, approximately 250 ppm for dilute water.</li><li>Check by dilution: $0.02(250)=5\\,\\mathrm{mg/L}$ oxygen depletion in the incubation mixture.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0605-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open BOD dilution diagram'><img src='assets/civil-notes/acie0605-5.svg' width='720' height='420' loading='lazy' alt='BOD conversion from a 2 percent mixture to the original wastewater basis.'></a><figcaption>The result is the five-day demand of the original sample, not the bottle mixture.</figcaption></figure>"
                 },
                 {
                     id: "cm15q094",

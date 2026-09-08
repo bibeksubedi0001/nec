@@ -7,6 +7,7 @@
         ACiE0804: {
             code: "ACiE0804",
             questionCount: 27,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Ideal capture</th><td>η = min(w<sub>s</sub>/v<sub>o</sub>, 1); overflow rate v<sub>o</sub> = Q/A<sub>plan</sub>.</td></tr><tr><th scope='row'>Depth-mixed plug flow</th><td>η = 1 − exp(−w<sub>s</sub>BL/Q).</td></tr><tr><th scope='row'>Graded capture</th><td>η<sub>overall</sub> = Σf<sub>i</sub>η<sub>i</sub> by incoming mass fraction.</td></tr><tr><th scope='row'>Sediment mass</th><td>M<sub>in</sub> = QCT; deposited ΔM = ηQCT.</td></tr><tr><th scope='row'>Deposit volume</th><td>V<sub>bulk</sub> = M<sub>dep</sub>/ρ<sub>dry,bulk</sub>; ρ<sub>dry,bulk</sub> = (1 − n)ρ<sub>s</sub>.</td></tr><tr><th scope='row'>Flushing discharge</th><td>Q<sub>flush</sub> = C<sub>d</sub>A<sub>g</sub>√(2gΔH).</td></tr><tr><th scope='row'>Filling interval</th><td>T<sub>fill</sub> = ρ<sub>dry,bulk</sub>(V<sub>allow</sub> − V<sub>res</sub>)/(ηQC − R<sub>m</sub>).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "ror-water-route-and-headworks",

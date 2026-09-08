@@ -7,6 +7,7 @@
         ACiE0501: {
             code: "ACiE0501",
             questionCount: 42,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Design action</th><td>F<sub>d</sub> = γ<sub>f</sub>F<sub>k</sub>; partial factor applied to the characteristic value.</td></tr><tr><th scope='row'>Design wind speed</th><td>V<sub>z</sub> = V<sub>b</sub>k<sub>1</sub>k<sub>2</sub>k<sub>3</sub>; pressure p<sub>z</sub> = 0.6V<sub>z</sub><sup>2</sup> (N/m<sup>2</sup>, V in m/s); design p<sub>d</sub> ≥ 0.70p<sub>z</sub>.</td></tr><tr><th scope='row'>Cladding force</th><td>F = (C<sub>pe</sub> − C<sub>pi</sub>)Ap<sub>d</sub>; net of external and internal coefficients.</td></tr><tr><th scope='row'>Snow load</th><td>S = μS<sub>0</sub>; shape factor × ground value, on plan area.</td></tr><tr><th scope='row'>Seismic base shear</th><td>Legacy A<sub>h</sub> = (Z/2)(I/R)(S<sub>a</sub>/g), V<sub>B</sub> = A<sub>h</sub>W; NBC 105:2025 C(T) = C<sub>h</sub>(T)ZI.</td></tr><tr><th scope='row'>Orthogonal seismic</th><td>±E<sub>x</sub> ± 0.3E<sub>y</sub> and ±0.3E<sub>x</sub> ± E<sub>y</sub>.</td></tr><tr><th scope='row'>Return period</th><td>P = 1 − exp(−t/T<sub>R</sub>); probability of exceedance in t years.</td></tr><tr><th scope='row'>Strength combination</th><td>e.g. 1.5DL + 1.5LL; the 1.5 factor is one case, not a universal constant.</td></tr><tr><th scope='row'>Notional horizontal force</th><td>H<sub>n</sub> = 0.005(G<sub>d</sub> + Q<sub>d</sub>); sway imperfection, not earthquake.</td></tr><tr><th scope='row'>Pressure units</th><td>1 kN/m<sup>2</sup> = 1 kPa = 1000 Pa.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "physical-actions-load-paths-and-units",
@@ -379,9 +380,9 @@
                 },
                 {
                     "id": "check-desi787-00291",
-                    "status": "review",
+                    "status": "corrected",
                     "prompt": "For roofs of slope greater than 10°, the imposed load is reduced by ______ for every degree rise in slope.",
-                    "html": "<p><strong>Bank check — wrong slope decrement:</strong> the keyed <strong>0.75 per degree</strong> is not the IS 875 Part 2:1987 roof-slope reduction. The decrement is <strong>0.02 kN/m<sup>2</sup> for each degree above 10°</strong>, starting from 0.75 and subject to the 0.40 kN/m<sup>2</sup> sheet/purlin floor. The 0.02 option represents the verified decrement once its missing units are supplied. The separate two-thirds provision for eligible purlin-supporting members is not the per-degree reduction.</p>",
+                    "html": "<p>Corrected: option A, 0.02 kN/m<sup>2</sup> per degree above 10°. IS 875 Part 2:1987 Table 2 starts the applicable sheet/purlin load at 0.75 kN/m<sup>2</sup>, subtracts 0.02 for each additional degree, and imposes a 0.40 kN/m<sup>2</sup> floor. At 20°, q = 0.75 − 0.02(10) = 0.55 kN/m<sup>2</sup>.</p><p>The previous key confused the starting load with the decrement. The separate two-thirds provision for eligible purlin-supporting members is not the per-degree reduction.</p>",
                     "sources": [
                         {
                             "id": "DESI787-00291",

@@ -7,6 +7,7 @@
         AALL1001: {
             code: "AALL1001",
             questionCount: 4,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Representative fraction</th><td>RF = drawing length/actual length, in the same units.</td></tr><tr><th scope='row'>Scale least count</th><td>one main division/n on a plain or diagonal scale.</td></tr><tr><th scope='row'>A-series ratio</th><td>L/S = √2, so halving a sheet preserves its shape.</td></tr><tr><th scope='row'>Isometric projection</th><td>True isometric scale k = √(2/3) ≈ 0.816 (isometric drawing uses full scale).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "drawing-standard-sheets-and-ratio",

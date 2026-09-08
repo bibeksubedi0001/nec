@@ -7,6 +7,7 @@
         ACiE0803: {
             code: "ACiE0803",
             questionCount: 56,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Kern (no tension)</th><td>Resultant within the middle third: |e| ≤ B/6.</td></tr><tr><th scope='row'>Base contact stress</th><td>σ = (N/A)(1 ± 6e/B).</td></tr><tr><th scope='row'>Net normal force</th><td>N = W + V<sub>w</sub> − U (weight plus water load minus uplift).</td></tr><tr><th scope='row'>Overflow spillway</th><td>Q = C L<sub>e</sub> H<sub>e</sub><sup>3/2</sup>.</td></tr><tr><th scope='row'>Floor thickness (uplift)</th><td>t ≥ p/γ<sub>c</sub>.</td></tr><tr><th scope='row'>Seismic inertia</th><td>Equivalent inertia acts opposite to the ground acceleration.</td></tr><tr><th scope='row'>Energy dissipation</th><td>Hydraulic jump y<sub>2</sub>/y<sub>1</sub> = ½[√(1 + 8Fr<sub>1</sub><sup>2</sup>) − 1].</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "storage-plant-components",

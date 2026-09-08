@@ -7,6 +7,7 @@
         ACiE0703: {
             code: "ACiE0703",
             questionCount: 36,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Lacey waterway</th><td>P = 4.75√Q.</td></tr><tr><th scope='row'>Weir crest discharge</th><td>Q = C<sub>w</sub>L<sub>e</sub>H<sub>e</sub><sup>3/2</sup>; H<sub>e</sub> = Z<sub>u</sub> − z<sub>c</sub> + αV<sub>a</sub><sup>2</sup>/(2g).</td></tr><tr><th scope='row'>Bligh creep</th><td>L<sub>creep</sub> = L<sub>h</sub> + L<sub>v</sub>; residual head H(1 − ℓ/L<sub>creep</sub>).</td></tr><tr><th scope='row'>Lane weighted creep</th><td>L<sub>w</sub> = L<sub>v</sub> + L<sub>h</sub>/3.</td></tr><tr><th scope='row'>Exit gradient</th><td>i<sub>cr</sub> = γ'/γ<sub>w</sub> = (G − 1)/(1 + e); allowable = i<sub>cr</sub>/F.</td></tr><tr><th scope='row'>Khosla end pile</th><td>G<sub>E</sub> = H/(πd√λ), λ = [1 + √(1 + α<sup>2</sup>)]/2, α = b/d.</td></tr><tr><th scope='row'>Floor thickness (uplift)</th><td>t ≥ h/(G − 1).</td></tr><tr><th scope='row'>Hydraulic jump</th><td>y<sub>2</sub>/y<sub>1</sub> = ½[√(1 + 8Fr<sub>1</sub><sup>2</sup>) − 1]; loss ΔE = (y<sub>2</sub> − y<sub>1</sub>)<sup>3</sup>/(4y<sub>1</sub>y<sub>2</sub>).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "diversion-purpose-and-pond-level",

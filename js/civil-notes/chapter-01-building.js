@@ -6,6 +6,7 @@
     ACiE0103: {
       code: "ACiE0103",
       questionCount: 73,
+      formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Stair counting</th><td>treads = risers − 1 in a single flight.</td></tr><tr><th scope='row'>Floor area ratio</th><td>FAR = total counted floor area / plot area.</td></tr><tr><th scope='row'>Ground coverage</th><td>Ground coverage (%) = 100 × covered footprint / plot area.</td></tr></tbody></table>",
       blocks: [
         {
           id: "masonry-units-and-closers",
@@ -510,6 +511,7 @@
     ACiE0104: {
       code: "ACiE0104",
       questionCount: 45,
+      formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Composite centroid</th><td>ȳ = Σ(A<sub>i</sub>ȳ<sub>i</sub>)/ΣA<sub>i</sub>; subtract holes as negative area.</td></tr><tr><th scope='row'>Rectangle</th><td>I = bd<sup>3</sup>/12 about the centroidal axis; Z = bd<sup>2</sup>/6.</td></tr><tr><th scope='row'>Triangle and circle</th><td>Triangle I = bh<sup>3</sup>/36 about its centroid; circle I = πd<sup>4</sup>/64.</td></tr><tr><th scope='row'>Parallel-axis theorem</th><td>I = I<sub>c</sub> + Ad<sup>2</sup>; d is the axis offset.</td></tr><tr><th scope='row'>Section modulus</th><td>Z<sub>x</sub> = I<sub>x</sub>/c; c is the distance to the extreme fibre.</td></tr><tr><th scope='row'>Radius of gyration</th><td>r = √(I/A).</td></tr><tr><th scope='row'>Polar / annulus</th><td>J = I<sub>x</sub> + I<sub>y</sub> (perpendicular-axis); annulus A = π(D<sub>o</sub><sup>2</sup> − D<sub>i</sub><sup>2</sup>)/4.</td></tr></tbody></table>",
       blocks: [
         {
           id: "centroids-and-symmetry",

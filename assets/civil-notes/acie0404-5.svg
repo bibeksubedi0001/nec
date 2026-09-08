@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Central point load: bending strain energy and deflection</title>
+  <desc id="desc">A simply supported beam carries a central force P. Its triangular bending moment reaches PL over 4. Under gradual linear-elastic loading, the triangular area of the force-deflection graph is U equals P delta over 2, leading to U equals P squared L cubed over 96 EI.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
+  <rect width="720" height="420" fill="#fbfcfd"/>
+  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+    <text x="26" y="34" font-size="21">Strain energy is not the deflection formula</text>
+    <path d="M60 146H352M206 72V135" stroke="#273b45" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M60 150L49 169H71ZM352 150L341 169H363Z" fill="#d6dfe3" stroke="#273b45"/>
+    <text x="221" y="93" font-size="18">P</text><text x="40" y="195" font-size="17">P/2</text><text x="330" y="195" font-size="17">P/2</text>
+    <text x="181" y="181" font-size="17">L</text>
+    <path d="M60 304L206 230L352 304Z" fill="#deeee6" stroke="#2b7b61" stroke-width="2"/>
+    <text x="127" y="222" font-size="17">M(max) = PL/4</text><text x="113" y="330" font-size="16">Moment diagram</text>
+    <path d="M455 304H680M455 304V95" stroke="#647780" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M455 304L650 124V304Z" fill="#d8edf7" stroke="#287aab" stroke-width="2"/>
+    <text x="432" y="91" font-size="17">Force</text><text x="655" y="120" font-size="17">P</text><text x="643" y="328" font-size="17">&#948;</text>
+    <text x="521" y="273" font-size="17">U = P&#948;/2</text><text x="461" y="353" font-size="15">Gradual, linear-elastic loading</text>
+    <text x="28" y="389" font-size="17">U = P&#178;L&#179;/(96EI); &#948; = PL&#179;/(48EI).</text>
+    <text x="28" y="414" font-size="14" fill="#647780">P is a point force, even when the question calls it w.</text>
+  </g>
+</svg>

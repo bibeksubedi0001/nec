@@ -7,6 +7,7 @@
         ACiE0503: {
             code: "ACiE0503",
             questionCount: 63,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>WSM modular ratio</th><td>m = 280/(3σ<sub>cbc</sub>).</td></tr><tr><th scope='row'>Cracked neutral axis (WSM)</th><td>bx<sup>2</sup>/2 = mA<sub>st</sub>(d − x); lever arm z = d − x/3.</td></tr><tr><th scope='row'>LSM neutral-axis limit</th><td>x<sub>u,max</sub>/d = 0.0035/[0.0055 + f<sub>y</sub>/(1.15E<sub>s</sub>)].</td></tr><tr><th scope='row'>IS stress block</th><td>C = 0.36f<sub>ck</sub>bx<sub>u</sub> at 0.42x<sub>u</sub>; x<sub>u</sub> = 0.87f<sub>y</sub>A<sub>st</sub>/(0.36f<sub>ck</sub>b).</td></tr><tr><th scope='row'>Moment of resistance</th><td>M<sub>u</sub> = 0.87f<sub>y</sub>A<sub>st</sub>(d − 0.42x<sub>u</sub>).</td></tr><tr><th scope='row'>Tension steel limits</th><td>A<sub>st</sub>/(bd) ≥ 0.85/f<sub>y</sub>; A<sub>st</sub> ≤ 0.04bD.</td></tr><tr><th scope='row'>Doubly reinforced</th><td>A<sub>sc</sub> = ΔM/[f<sub>sc</sub>(d − d')]; A<sub>st2</sub> = f<sub>sc</sub>A<sub>sc</sub>/(0.87f<sub>y</sub>).</td></tr><tr><th scope='row'>Nominal shear</th><td>τ<sub>v</sub> = V<sub>u</sub>/(bd); p<sub>t</sub> = 100A<sub>st</sub>/(bd).</td></tr><tr><th scope='row'>Vertical stirrups</th><td>V<sub>us</sub> = 0.87f<sub>y</sub>A<sub>sv</sub>d/s<sub>v</sub>; s<sub>v</sub> ≤ min(0.75d, 300 mm).</td></tr><tr><th scope='row'>Development length</th><td>L<sub>d</sub> = φσ<sub>s</sub>/(4τ<sub>bd</sub>), with σ<sub>s</sub> = 0.87f<sub>y</sub>.</td></tr><tr><th scope='row'>Effective depth</th><td>d = D − c<sub>nom</sub> − φ<sub>link</sub> − φ/2.</td></tr><tr><th scope='row'>Slab max spacing</th><td>s ≤ min(3d, 300 mm) (main bars, Amendment 3).</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "rcc-composite-action-and-cracking",
@@ -715,9 +716,9 @@
                 },
                 {
                     "id": "check-desi787-00118",
-                    "status": "review",
-                    "prompt": "The development length for deformed bar in tension is",
-                    "html": "<p>The deformed-bar item has only one distinct option because its originals were identical; do not invent missing distractors. </p><p>A standard 180° hook’s 16φ value is a conditional anchorage credit, not its arc length or automatic compensation for every shortage of straight development length.</p>",
+                    "status": "corrected",
+                    "prompt": "A deformed reinforcing bar in tension carries design stress 0.87 f_y. Its diameter is \\(\\phi\\) and its design bond stress is \\(\\tau_{bd}\\). Which expression gives the required straight development length?",
+                    "html": "<p><strong>Reconstructed choices: option A.</strong> At the explicitly stated design stress, force equilibrium gives L<sub>d</sub> = 0.87f<sub>y</sub>φ/(4τ<sub>bd</sub>). The correct relation is retained, with three new distractors replacing identical source options. Bond stress must already include the applicable bar and concrete provisions.</p>",
                     "sources": [
                         {
                             "id": "DESI787-00118",

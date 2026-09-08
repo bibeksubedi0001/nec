@@ -24,7 +24,8 @@
             ["built-up-sections-and-load-resultants", "section:t", "Composite T-section", "Component areas and their offsets locate the centroid; overlapping area must not be counted twice."],
             ["standard-centroid-offsets", "section:centroids", "Centroid reference axes", "A rectangle and triangle have different centroid offsets; every distance needs an identified reference base."],
             ["rectangular-and-triangular-area-moments", "section:parallel", "Parallel-axis offset", "The centroidal axis and an offset parallel axis give different second moments of area."],
-            ["circular-and-part-circular-sections", "section:annulus", "Annulus and diameter axes", "Subtract the concentric inner area from the outer circle; a polar axis is normal to the section."]
+            ["circular-and-part-circular-sections", "section:annulus", "Annulus and diameter axes", "Subtract the concentric inner area from the outer circle; a polar axis is normal to the section."],
+            ["circular-and-part-circular-sections", "section:worked-annulus", "Worked annular second moment", "For concentric diameters 20 cm and 10 cm, the centroidal diametral second moment is 7363.11 cm to the fourth; the polar moment is twice this value."]
         ],
         ACiE0105: [
             ["level-datums-and-observations", "levelling:staff", "Backsight and foresight", "The horizontal line of sight links two staff readings to their ground elevations and the benchmark datum."],
@@ -42,7 +43,8 @@
             ["soil-phase-definitions", "phase:soil", "Three-phase soil diagram", "Air, water and solids occupy volumes, but air mass is usually neglected in elementary phase accounting."],
             ["soil-sieve-analysis-gradation", "plot:grading", "Particle-size distribution", "An illustrative cumulative passing curve locates D10, D30 and D60 on a logarithmic size axis."],
             ["soil-consistency-limit-tests", "flow:atterberg", "Consistency states", "Increasing water content crosses shrinkage, plastic and liquid limits; these are defined test boundaries."],
-            ["soil-hydraulic-conductivity-tests", "permeability:constant", "Constant-head permeability", "A maintained head difference drives water through a known soil length and cross-sectional area."]
+            ["soil-hydraulic-conductivity-tests", "permeability:constant", "Constant-head permeability", "A maintained head difference drives water through a known soil length and cross-sectional area."],
+            ["soil-phase-identities", "phase:worked-water", "Moist and dry weight balance", "A moist weight of 190 kN and dry weight of 150 kN imply 40 kN water and 26.67 percent gravimetric water content; these are weights, not phase volumes."]
         ],
         ACiE0202: [
             ["effective-stress-principle", "stress:soil", "Total and effective stress", "In a saturated layer, total vertical stress is partitioned into pore-water pressure and effective stress."],
@@ -90,7 +92,8 @@
             ["streamlines-pathlines-and-streaklines", "water:streamlines", "A steady velocity field", "Streamlines are tangent to the velocity field; in steady flow the corresponding pathline and streakline geometry can coincide."],
             ["mass-continuity-and-junctions", "pipe:continuity", "Continuity through a contraction", "For steady incompressible flow without branches, the same discharge passes both areas and the narrower section has greater mean speed."],
             ["bernoulli-energy-and-head", "pipe:head", "Elevation, pressure and velocity head", "The energy grade line lies above the hydraulic grade line by the velocity-head term for the chosen convention."],
-            ["momentum-jets-and-bends", "pipe:bend", "Momentum change at a bend", "A control volume must account for inlet and outlet momentum, pressure forces, weight and the support reaction."]
+            ["momentum-jets-and-bends", "pipe:bend", "Momentum change at a bend", "A control volume must account for inlet and outlet momentum, pressure forces, weight and the support reaction."],
+            ["mass-continuity-and-junctions", "pipe:worked-contraction", "Diameter, area and mean velocity", "Halving diameter quarters the circular area, so steady incompressible flow in an unbranched pipe requires four times the mean velocity."]
         ],
         ACiE0304: [
             ["laminar-profile-and-poiseuille", "pipe:laminar", "Laminar velocity profile", "Fully developed Newtonian laminar flow in a circular pipe has a parabolic axial velocity profile and no slip at the wall."],
@@ -114,25 +117,29 @@
             ["simple-beam-point-load", "beam:point", "Central point load: shear and moment", "For a simply supported span with a central downward load, shear is piecewise constant and sagging moment is triangular."],
             ["simple-beam-full-span-udl", "beam:udl", "Uniform load: shear and moment", "For a simply supported uniformly loaded span, shear varies linearly and sagging moment is parabolic."],
             ["cantilever-transverse-load-diagrams", "beam:cantilever", "Cantilever end-load diagrams", "The end load gives constant shear magnitude and a moment increasing in magnitude toward the fixed support."],
-            ["section-forces-and-cut-conventions", "beam:cut", "Internal section actions", "A cut exposes axial force, shear and moment; the two cut faces carry equal and opposite actions."]
+            ["section-forces-and-cut-conventions", "beam:cut", "Internal section actions", "A cut exposes axial force, shear and moment; the two cut faces carry equal and opposite actions."],
+            ["simple-beam-full-span-udl", "beam:worked-udl", "Worked 8 m UDL beam", "For 1 kN/m over the full 8 m span, each reaction is 4 kN, M at 2 m is 6 kN m, and the maximum sagging moment is 8 kN m."]
         ],
         ACiE0402: [
             ["plane-stress-and-traction-resolution", "stress:element", "Plane-stress components", "Normal and complementary shear stresses act on paired faces; signs must be defined before transforming the plane."],
             ["principal-stresses-and-planes", "mohr:principal", "Principal stresses on Mohr's circle", "Intersections with the normal-stress axis have zero shear; the circle radius is the maximum in-plane shear magnitude."],
             ["plateau-hardening-necking-and-rupture", "plot:stress", "Engineering stress-strain response", "This illustrative ductile curve distinguishes yield, strain hardening, ultimate engineering stress and necking."],
-            ["circular-shaft-torsional-stress", "stress:torsion", "Torsion of a circular shaft", "Under elastic circular-shaft torsion, shear stress varies linearly with radius and is greatest at the outer surface."]
+            ["circular-shaft-torsional-stress", "stress:torsion", "Torsion of a circular shaft", "Under elastic circular-shaft torsion, shear stress varies linearly with radius and is greatest at the outer surface."],
+            ["principal-stress-worked-bank-cases", "mohr:worked", "Numerical Mohr circle", "For 300 MPa direct tension, zero transverse direct stress and 200 MPa shear, C = 150 MPa and R = 250 MPa; the principal values are 400 and -100 MPa."]
         ],
         ACiE0403: [
             ["flexure-plane-sections-and-derivation", "rcc:elastic", "Elastic bending distribution", "Plane sections remain plane under the model: strain and elastic normal stress vary linearly across depth."],
             ["flexure-cantilever-end-point-load", "beam:deflection", "Deflected cantilever", "An end load produces both tip rotation and tip displacement; the fixed end restrains translation and rotation."],
             ["column-end-restraints-and-effective-length", "column:ends", "Ideal Euler end conditions", "Pinned-pinned, fixed-fixed, fixed-free and fixed-pinned cases have different ideal effective lengths."],
-            ["column-eccentric-compression-and-circular-core", "section:kern", "Eccentric load and the kern", "A resultant outside the no-tension kern would produce tensile contact in the elementary linear pressure model."]
+            ["column-eccentric-compression-and-circular-core", "section:kern", "Eccentric load and the kern", "A resultant outside the no-tension kern would produce tensile contact in the elementary linear pressure model."],
+            ["flexure-cantilever-stress-worked-check", "beam:worked-cantilever", "Worked cantilever stress", "The 2.4 kN end load on a 2 m cantilever gives 200 MPa elastic stress when the 60 mm side is vertical; the upper fixed-end fibres are in tension."]
         ],
         ACiE0404: [
             ["support-constraints-and-geometric-stability", "beam:supports", "Support restraints", "Roller, pin and fixed supports restrain different planar degrees of freedom; restraint count alone does not ensure stability."],
             ["truss-joints-sections-and-force-polygons", "truss:triangle", "Pin-jointed truss load path", "Ideal truss members carry axial force when loads act at joints; resolve equilibrium at joints or through a section."],
             ["dummy-loads-and-unit-load-deflection", "beam:unit", "Actual and unit-load systems", "A unit action is applied at the requested displacement coordinate in the same compatible structural system."],
-            ["portal-frame-deflection-workflow", "frame:unit", "Frame contributions to virtual work", "Both columns and the beam can contribute to displacement; include each member using consistent local coordinates."]
+            ["portal-frame-deflection-workflow", "frame:unit", "Frame contributions to virtual work", "Both columns and the beam can contribute to displacement; include each member using consistent local coordinates."],
+            ["central-point-load-energy-worked-example", "beam:worked-energy", "Central-load energy and deflection", "The triangular force-displacement area gives U = P delta/2 for gradual linear-elastic loading; energy and deflection have different denominators and units."]
         ],
         ACiE0405: [
             ["simple-span-reaction-and-moment-ordinates", "beam:ild-reaction", "Reaction influence line", "A unit load moving across a simple span gives a linear left-support reaction ordinate."],
@@ -144,7 +151,8 @@
             ["flexibility-compatibility-and-unit-actions", "beam:redundant", "Release and restore a redundant", "Releasing the prop creates a primary cantilever; the redundant reaction restores the required vertical compatibility."],
             ["moment-distribution-and-joint-balance", "frame:rotation", "Joint moment balancing", "Joint imbalance is distributed according to member stiffness, followed by the appropriate carry-over for the end condition."],
             ["first-yield-plastic-stress-and-neutral-axis", "rcc:plastic", "Elastic and plastic stress blocks", "First yield and a fully plastic idealization use different through-depth stress distributions."],
-            ["fixed-fixed-central-load-collapse", "beam:collapse", "Fixed-span collapse mechanism", "The ideal central-load mechanism forms hinges at both fixed ends and midspan; work rotations must be compatible."]
+            ["fixed-fixed-central-load-collapse", "beam:collapse", "Fixed-span collapse mechanism", "The ideal central-load mechanism forms hinges at both fixed ends and midspan; work rotations must be compatible."],
+            ["fixed-fixed-central-load-collapse", "beam:worked-collapse", "Collapse work with the central relative rotation", "Both end hinges rotate by theta and the centre hinge by 2 theta. The explicitly illustrative 6 m, 120 kN m case gives a 160 kN ideal collapse load."]
         ],
         ACiE0501: [
             ["physical-actions-load-paths-and-units", "frame:loads", "Gravity and lateral load paths", "Floor and roof actions reach foundations through structural members; lateral and vertical paths must both be continuous."],
@@ -162,19 +170,22 @@
             ["rcc-is-stress-block-and-singly-reinforced-moment", "rcc:beam", "RC beam internal couple", "Compression in concrete and tension in steel form the resisting couple; the lever arm is measured between their resultants."],
             ["rcc-one-way-two-way-supports-and-boundary", "rcc:slab", "One-way and two-way action", "The sketch contrasts load paths for two-edge and four-edge support; aspect ratio alone is not the complete boundary condition."],
             ["rcc-shear-transfer-and-inclined-cracks", "rcc:shear", "Shear cracking and links", "Transverse reinforcement crosses potential inclined cracks; its force path must be anchored into the member."],
-            ["rcc-development-length-from-bond-equilibrium", "rcc:bond", "Development by bond", "Distributed bond transfers longitudinal bar force into surrounding concrete along an anchored length."]
+            ["rcc-development-length-from-bond-equilibrium", "rcc:bond", "Development by bond", "Distributed bond transfers longitudinal bar force into surrounding concrete along an anchored length."],
+            ["rcc-wsm-worked-service-bending", "rcc:worked-service", "Worked RCC service-stress section", "The explicitly illustrative M20 section has x = 160 mm, concrete stress 5 MPa and steel stress 100 MPa at a 41.6 kN m service moment; the equal 120 kN forces form the resisting couple."]
         ],
         ACiE0504: [
             ["lateral-tie-pitch-and-bar-restraint", "column:ties", "Tied column cage", "Closed ties restrain longitudinal bars and confine the core; the sketch does not prescribe a code spacing."],
             ["footing-critical-sections-and-thickness", "foundation:punching", "Footing critical sections", "Bending, one-way shear and punching are checked at their specified sections, not at a single common perimeter."],
             ["unequal-column-loads-and-footing-plan-shape", "foundation:combined", "Unequal loads on a shared base", "Align the footing area's centroid with the intended resultant when using a uniform-pressure idealization."],
-            ["tendon-profile-curvature-and-camber", "beam:prestress", "Curved prestressing tendon", "Tendon curvature introduces balancing action along the beam; profile, force and end anchorage determine the effect."]
+            ["tendon-profile-curvature-and-camber", "beam:prestress", "Curved prestressing tendon", "Tendon curvature introduces balancing action along the beam; profile, force and end anchorage determine the effect."],
+            ["minimum-eccentricity-uses-unsupported-length", "column:worked-eccentricity", "Column minimum eccentricity", "For a 400 mm column, unsupported lengths of 5 m and 3 m give adopted minimum eccentricities of 23.33 mm and 20 mm respectively; the lower bound controls the second case."]
         ],
         ACiE0505: [
             ["standard-sections-and-axis-efficiency", "steel:sections", "Common steel sections", "I, channel and angle sections place material differently relative to their principal axes."],
             ["staggered-holes-and-critical-net-paths", "steel:bolts", "Straight and staggered net paths", "Compare credible rupture paths through a bolted plate rather than automatically choosing the shortest-looking line."],
             ["fillet-leg-size-effective-throat-and-profile", "steel:weld", "Fillet leg and throat", "For the ideal equal-leg triangular profile, the throat is perpendicular to the face and shorter than the leg."],
-            ["built-up-columns-lacing-and-battens", "steel:lacing", "Built-up laced column", "Lacing transfers shear between separated components so the assembly can act together; connection design remains essential."]
+            ["built-up-columns-lacing-and-battens", "steel:lacing", "Built-up laced column", "Lacing transfers shear between separated components so the assembly can act together; connection design remains essential."],
+            ["tension-limit-states-and-straight-net-area", "steel:worked-net-area", "Worked net steel area", "A 400 mm wide, 10 mm thick plate with one 18 mm hole has a geometric net area of 3820 square mm, equivalent to 38.2 square cm."]
         ],
         ACiE0506: [
             ["timber-masonry-grain-and-orthotropy", "timber:grain", "Timber grain directions", "Parallel-to-grain and transverse actions mobilize different properties; material direction is part of the design input."],
@@ -198,7 +209,9 @@
             ["treatment-train-and-barriers", "flow:treatment", "Conventional surface-water barriers", "Coagulation, flocculation, separation and disinfection have different functions; actual raw-water risks determine the selected train."],
             ["treatment-ideal-overflow-derivation", "channel:settling", "Particle settling trajectory", "Horizontal travel time competes with vertical fall time in the ideal discrete-settling model."],
             ["treatment-slow-sand-operation", "layers:filter", "Slow sand filter section", "Supernatant water lies above the biological surface and fine sand, with graded support and collection below."],
-            ["treatment-chlorine-demand-and-breakpoint", "plot:chlorine", "Breakpoint chlorination concept", "Demand and combined residual precede the rise of free residual; the qualitative curve is not a dosing prescription."]
+            ["treatment-chlorine-demand-and-breakpoint", "plot:chlorine", "Breakpoint chlorination concept", "Demand and combined residual precede the rise of free residual; the qualitative curve is not a dosing prescription."],
+            ["treatment-basin-sizing-example", "diagram:basin-ratios", "Plan area, flow area and detention", "The assumed 30 m by 10 m by 3 m basin has a 300 square metre plan area but only a 30 square metre flow cross-section. At 300 cubic metres per hour, the three hydraulic ratios give different results."],
+            ["treatment-ct-and-effective-contact", "diagram:effective-contact", "Nominal detention versus effective contact", "The illustrative tracer response has t10 of 15 minutes, half the nominal 30-minute detention. At constant free chlorine 0.60 mg/L, CT is 9 mg min/L; this is not a validated pathogen-removal claim."]
         ],
         ACiE0604: [
             ["sewer-separate-combined-and-partial-systems", "pipe:separate", "Separate and combined systems", "Separate networks keep intended sanitary and storm flows distinct; a combined network conveys both in one system."],
@@ -210,7 +223,8 @@
             ["wastewater-bod-dilution-and-seed", "test:dilution", "BOD sample and dilution", "The wastewater volume fraction and bottle oxygen depletion belong to different measurement bases; seed demand is corrected when applicable."],
             ["wastewater-activated-sludge-cycle", "sludge:activated", "Activated-sludge circulation", "RAS returns biomass to the reactor while WAS removes solids from the system; final effluent follows a separate path."],
             ["wastewater-sag-worked-example", "plot:oxygen", "Oxygen sag and recovery", "The illustrative constant-coefficient model reaches minimum DO where deoxygenation and reaeration balance."],
-            ["wastewater-septic-liquid-and-storage", "sewer:septic", "Septic liquid and solids space", "Scum, working liquid and accumulated sludge occupy different zones; the effluent still needs an appropriate downstream treatment or dispersal route."]
+            ["wastewater-septic-liquid-and-storage", "sewer:septic", "Septic liquid and solids space", "Scum, working liquid and accumulated sludge occupy different zones; the effluent still needs an appropriate downstream treatment or dispersal route."],
+            ["wastewater-bod-dilution-and-seed", "test:worked-bod", "Worked BOD dilution", "A 2 percent sample fraction and 5 mg/L bottle oxygen depletion give 250 mg/L BOD of the original wastewater, assuming no seed or blank demand."]
         ],
         ACiE0606: [
             ["environment-bes-iee-eia-categories", "branch:assessment", "Assessment-category selection", "Screening selects the applicable BES, IEE or EIA route; they are not three compulsory serial studies."],
@@ -222,7 +236,8 @@
             ["demand-available-water-and-depletion", "phase:root-zone", "Root-zone water storage", "Field capacity and permanent wilting point bound an elementary available-water store; allowable depletion is crop- and condition-dependent."],
             ["demand-duty-delta-dimensional-derivation", "flow:duty", "Flow, duration, volume and area", "A discharge acting for a period gives a volume; spreading that volume over the served area gives an equivalent depth."],
             ["demand-tank-to-field-efficiency-example", "flow:irrigation-loss", "Delivery and storage boundaries", "Source release, field delivery and root-zone storage have different losses and efficiency denominators."],
-            ["demand-irrigation-depth-and-frequency", "plot:depletion", "Irrigation timing by depletion", "A schematic depletion trace shows irrigation restoring the root-zone store; the trigger must be chosen for the actual crop and soil."]
+            ["demand-irrigation-depth-and-frequency", "plot:depletion", "Irrigation timing by depletion", "A schematic depletion trace shows irrigation restoring the root-zone store; the trigger must be chosen for the actual crop and soil."],
+            ["demand-irrigation-depth-and-frequency", "plot:worked-interval", "Worked irrigation interval", "From an 80 mm available store, 55 percent remaining means 36 mm depleted. At constant use of 3 mm/day, that takes 12 days without other water gains or losses."]
         ],
         ACiE0702: [
             ["canal-trapezoid-depth-radius-and-area", "channel:trapezoid", "Canal section measurements", "Flow depth, top width and wetted perimeter determine different hydraulic section properties."],
@@ -264,7 +279,8 @@
             ["power-head-reference-levels", "water:hydropower", "Gross and net head", "Gross level difference is reduced by the relevant hydraulic losses before the machine's available head is established."],
             ["power-duration-curves-and-usable-flow", "plot:duration", "Flow-duration curve", "Sorting flow by exceedance preserves occurrence information but removes the original chronological sequence."],
             ["power-mass-curve-storage-example", "plot:mass", "Mass curve and supply line", "Cumulative inflow and a chosen cumulative release reveal storage deficits that a duration curve cannot locate in time."],
-            ["power-peaking-schedule-and-revenue", "plot:load", "Daily load and peaking", "An illustrative load pattern distinguishes base service from a higher-demand interval; it is not a forecast or tariff."]
+            ["power-peaking-schedule-and-revenue", "plot:load", "Daily load and peaking", "An illustrative load pattern distinguishes base service from a higher-demand interval; it is not a forecast or tariff."],
+            ["power-equation-units-and-bank-calculations", "water:worked-power", "Worked net-head power calculation", "A 423.5 m gross head, 2.5 m loss, 0.9 cubic metres per second and 85 percent overall efficiency give 3159.46 kW; apply the loss and efficiency once each."]
         ],
         ACiE0803: [
             ["storage-dam-classifications", "dam:types", "Gravity and embankment sections", "Different dam types resist actions through different material and structural mechanisms; selection needs the site."],
@@ -312,7 +328,8 @@
             ["traffic-greenshields-and-waves", "plot:traffic", "Flow-density relationship", "The theoretical Greenshields model has a maximum flow at an intermediate density; field calibration is required."],
             ["traffic-sign-families-and-information-colours", "traffic:signs", "Sign shapes convey purpose", "Illustrative regulatory, warning and information families show shape distinctions without replacing the Nepal sign manual."],
             ["traffic-signals-and-effective-time", "traffic:signals", "Two-stage signal operation", "Non-conflicting movement groups receive service at different stages; intergreen and pedestrian needs require explicit design."],
-            ["traffic-parking-cohort-example", "plot:parking", "Parking accumulation through time", "Area under an accumulation curve gives parking load; occupancy and turnover use different denominators."]
+            ["traffic-parking-cohort-example", "plot:parking", "Parking accumulation through time", "Area under an accumulation curve gives parking load; occupancy and turnover use different denominators."],
+            ["traffic-webster-bank-cases", "traffic:worked-cycle", "Worked Webster cycle", "Separately served critical ratios 0.3125 and 0.1875 sum to 0.5. With 16 seconds lost time, the approximate cycle is 58 seconds, leaving 42 seconds effective green."]
         ],
         ACiE0905: [
             ["pavement-types-and-load-paths", "pavement:types", "Flexible and rigid load paths", "Layered load distribution and slab bending are different structural mechanisms; both need suitable foundation support."],
@@ -336,7 +353,8 @@
             ["econ-project-cashflow-perspective", "cashflow:timeline", "Dated cash flows", "The illustrated project has an initial outflow and later receipts; discount each amount from its own date."],
             ["econ-irr-solution-and-marr-check", "plot:npv", "NPV profile and IRR", "For the conventional example, NPV decreases with discount rate and crosses zero at its IRR."],
             ["econ-benefit-cost-incremental-counterexample", "cashflow:incremental", "Incremental alternative comparison", "Compare the added benefits and added cost of the larger option; the highest individual ratio need not maximize net benefit."],
-            ["econ-straight-line-and-book-value", "plot:depreciation", "Depreciation patterns", "Illustrative straight-line and declining-balance paths show cost allocation over time, not a forecast of sale proceeds."]
+            ["econ-straight-line-and-book-value", "plot:depreciation", "Depreciation patterns", "Illustrative straight-line and declining-balance paths show cost allocation over time, not a forecast of sale proceeds."],
+            ["econ-bank-annual-sinking-fund", "cashflow:worked-sinking-fund", "Worked annual sinking fund", "End-year deposits of Rs 182.1195 earn 5 percent annually to accumulate Rs 22000 over 40 years; the target is building cost less scrap value."]
         ],
         AALL1003: [
             ["schedule-eight-activity-cpm", "schedule:cpm", "Eight-activity dependency network", "The notes' hypothetical network has two 13-day critical paths through B and C; the equipment branch has float."],

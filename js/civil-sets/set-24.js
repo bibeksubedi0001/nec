@@ -350,7 +350,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "lateral strain to longitudinal strain" }
                     ],
                     answer: "d",
-                    explanation: "Poisson's ratio is the ratio of lateral strain to longitudinal strain under axial load, taken as positive by convention even though the two strains have opposite signs. It lies between 0 and 0.5 for real materials, about 0.3 for steel, and 0.5 is the incompressible limit approached by rubber."
+                    explanation: "<p>The matching option is lateral strain to longitudinal strain. For signed strains under uniaxial stress with free lateral surfaces, the definition includes a minus sign.</p><ol><li>Longitudinal strain is $\\varepsilon_l=\\dfrac{\\Delta L}{L}$ and lateral strain is $\\varepsilon_t=\\dfrac{\\Delta d}{d}$.</li><li>Poisson's ratio is $\\nu=-\\dfrac{\\varepsilon_t}{\\varepsilon_l}$. Both strains are dimensionless.</li><li>Illustration: if $\\varepsilon_l=0.001$ and $\\varepsilon_t=-0.0003$, then $\\nu=-\\dfrac{-0.0003}{0.001}=0.3$.</li></ol><p>The minus sign gives a positive value for ordinary contraction during tension; it does not force every material to have a positive ratio. Stable compressible isotropic linear elasticity permits $-1<\\nu<0.5$, including negative auxetic values. The incompressible limit is 0.5; directional ratios in anisotropic materials need separate treatment.</p>"
                 }
             ]
         },

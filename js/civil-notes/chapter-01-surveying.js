@@ -6,6 +6,7 @@
         ACiE0105: {
             code: "ACiE0105",
             questionCount: 112,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Error and correction</th><td>error = recorded − true; correction = true − recorded (opposite signs).</td></tr><tr><th scope='row'>Bearing conversion</th><td>True bearing = magnetic bearing + signed declination.</td></tr><tr><th scope='row'>Traverse components</th><td>latitude = l cos θ; departure = l sin θ.</td></tr><tr><th scope='row'>Height of collimation</th><td>HI = known RL + BS; RL = HI − FS.</td></tr><tr><th scope='row'>Sea-level correction</th><td>C = −LH/R; arc length x ≈ Rθ for a small angle.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "survey-framework",
@@ -586,6 +587,7 @@
         ACiE0106: {
             code: "ACiE0106",
             questionCount: 64,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Wall quantity</th><td>volume = length × breadth × height/depth; long-wall/short-wall or centre-line lengths.</td></tr><tr><th scope='row'>Earthwork section</th><td>Trapezoidal cutting area A = bh + mh<sup>2</sup> (b base, h depth, m side slope).</td></tr><tr><th scope='row'>Average end areas</th><td>Volume V = L(A<sub>1</sub> + A<sub>2</sub>)/2 between sections spaced L apart.</td></tr><tr><th scope='row'>Brickwork</th><td>≈ 500 bricks/m<sup>3</sup> of standard brickwork including mortar.</td></tr><tr><th scope='row'>Cranked bar</th><td>Extra length per 45° crank = d(√2 − 1), with d the crank offset.</td></tr><tr><th scope='row'>Straight-line depreciation</th><td>Annual = (cost − scrap value)/useful life.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "estimate-types-and-approval",

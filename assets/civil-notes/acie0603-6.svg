@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420" role="img" aria-labelledby="title description">
+  <title id="title">Nominal detention and effective contact</title>
+  <desc id="description">An illustrative cumulative tracer curve reaches ten percent passage at fifteen minutes. With assumed volume 600 cubic metres and flow 1200 cubic metres per hour, nominal detention is thirty minutes. At constant free chlorine 0.60 milligrams per litre, the assumed effective contact gives CT of nine, not eighteen, milligram minutes per litre. This does not establish pathogen removal.</desc>
+  <rect width="720" height="420" fill="#fbfcfd"/>
+  <g font-family="Verdana, sans-serif" fill="#243b45">
+    <text x="28" y="34" font-size="20" font-weight="bold">Nominal time is not effective contact</text>
+    <text x="28" y="61" font-size="13">Assumed V = 600 m<tspan baseline-shift="super" font-size="9">3</tspan>; Q = 1200 m<tspan baseline-shift="super" font-size="9">3</tspan>/h; constant free chlorine C = 0.60 mg/L</text>
+    <text x="70" y="96" font-size="14">Cumulative tracer passed (%)</text>
+    <path d="M70 117V265H410" fill="none" stroke="#607786" stroke-width="1.5"/>
+    <path d="M70 125H400M70 195H400" fill="none" stroke="#d9e3e8" stroke-dasharray="4 4"/>
+    <text x="57" y="130" font-size="12" text-anchor="end">100</text>
+    <text x="57" y="200" font-size="12" text-anchor="end">50</text>
+    <text x="57" y="254" font-size="12" text-anchor="end">10</text>
+    <text x="57" y="270" font-size="12" text-anchor="end">0</text>
+    <polyline points="70,265 110,264 150,259 190,251 230,223 270,181 310,153 350,135 390,126" fill="none" stroke="#32715f" stroke-width="3"/>
+    <path d="M70 251H190V265" fill="none" stroke="#b47828" stroke-width="2" stroke-dasharray="4 3"/>
+    <circle cx="190" cy="251" r="4" fill="#b47828"/>
+    <path d="M310 153V265" fill="none" stroke="#466d89" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="70" y="286" font-size="12" text-anchor="middle">0</text>
+    <text x="190" y="286" font-size="12" text-anchor="middle" fill="#95651f">15</text>
+    <text x="310" y="286" font-size="12" text-anchor="middle">30</text>
+    <text x="390" y="286" font-size="12" text-anchor="middle">40</text>
+    <text x="238" y="313" font-size="14" text-anchor="middle">Time (min)</text>
+    <text x="458" y="124" font-size="16" font-weight="bold">Same tank, two times</text>
+    <text x="458" y="164" font-size="16">Nominal: 30 min</text>
+    <text x="458" y="202" font-size="16" fill="#95651f">t<tspan baseline-shift="sub" font-size="11">10</tspan> = 15 min (assumed)</text>
+    <text x="458" y="249" font-size="18">CT = C x t<tspan baseline-shift="sub" font-size="12">10</tspan></text>
+    <text x="478" y="281" font-size="18" font-weight="bold">= 9 mg min/L</text>
+    <path d="M28 348H692" stroke="#cbd8de"/>
+    <text x="28" y="378" font-size="15">Using nominal time would give 18 mg min/L.</text>
+    <text x="28" y="405" font-size="12" fill="#607786">Illustrative tracer response; this calculation does not certify disinfection.</text>
+  </g>
+</svg>

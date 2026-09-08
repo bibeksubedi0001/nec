@@ -7,6 +7,7 @@
         ACiE0601: {
             code: "ACiE0601",
             questionCount: 65,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Aquifer yield</th><td>Q = KAi (Darcy); a source must transmit water, not only store it.</td></tr><tr><th scope='row'>Hardness as CaCO<sub>3</sub></th><td>Equivalent = concentration × 50/equivalent mass; add ions on one CaCO<sub>3</sub> basis.</td></tr><tr><th scope='row'>Carbonate hardness</th><td>CH = min(TH, alkalinity); NCH = TH − CH.</td></tr><tr><th scope='row'>Turbidity units</th><td>1 NTU is an optical measure, not 1 mg/L of solids.</td></tr><tr><th scope='row'>Demand conversion</th><td>1 m<sup>3</sup>/day = 1000/86400 L/s ≈ 0.011574 L/s.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "sources-safe-source-and-demand-workflow",

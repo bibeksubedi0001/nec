@@ -492,7 +492,7 @@ const CIVIL_MODEL_3 = {
                         { key: "d", text: "17,900 liters" }
                     ],
                     answer: "a",
-                    explanation: "Seven hours is 420 minutes, and at 3 minutes a batch that is 140 batches, or 140 times 150, which is 21,000 litres of theoretical output. Applying the customary 90 percent job efficiency for loading, waiting and cleaning gives 18,900 litres."
+                    explanation: "<p>The stated effective time gives 21,000 litres if 150 litres is the delivered volume per completed batch. None of the listed options equals that result.</p><ol><li>Convert working time: $T=7(60)=420\\,\\mathrm{min}$.</li><li>Completed batches: $N=\\dfrac{420}{3}=140$.</li><li>Output: $V=Nv_b=140(150)=21000\\,\\mathrm{L}$, or $21\\,\\mathrm{m^3}$.</li><li>The stored option A, 18,900 litres, requires an extra factor $\\eta=\\dfrac{18900}{21000}=0.90$. That factor is not supplied.</li></ol><p>Do not silently apply another time-efficiency reduction when the seven hours are already described as effective working time. If 150 litres is nominal drum capacity rather than actual yield, a delivered batch volume is needed. The retained key is a conditional legacy answer, not a result established by the printed data.</p>"
                 }
             ]
         },
@@ -718,7 +718,7 @@ const CIVIL_MODEL_3 = {
                         { key: "d", text: "4.8mm" }
                     ],
                     answer: "a",
-                    explanation: "Capillary rise or depression varies inversely with the tube diameter, so h times d is constant. Here 8 times 1.2 equals 4 times d, which gives d equal to 2.4 mm: doubling the bore halves the depression."
+                    explanation: "<p>For the same mercury, glass condition and temperature, assume the contact angle and surface tension stay unchanged. Use depression magnitudes.</p><ol><li>The capillary relation is $h=\\dfrac{4\\sigma\\cos\\theta}{\\rho gd}$. Mercury has a negative signed h in a non-wetting glass tube.</li><li>With the other factors fixed, $|h_1|d_1=|h_2|d_2$.</li><li>$d_2=\\dfrac{|h_1|d_1}{|h_2|}=\\dfrac{8(1.2)}{4}=2.4\\,\\mathrm{mm}$.</li></ol><p>Halving the depression magnitude requires doubling the diameter. The comparison assumes equilibrium with a reservoir; changes in contact angle or finite liquid volume can invalidate the simple inverse ratio.</p>"
                 },
                 {
                     id: "cm3q051",
@@ -731,7 +731,7 @@ const CIVIL_MODEL_3 = {
                         { key: "d", text: "9:4" }
                     ],
                     answer: "b",
-                    explanation: "Capillary rise is inversely proportional to diameter, so h P over h Q equals d Q over d P. Since the rise in P is two thirds of that in Q, the diameter of P must be three halves that of Q, giving a ratio of 3:2."
+                    explanation: "<p>Assume both tubes contain the same water at the same temperature and have equal contact angles. Capillary rise then varies inversely with tube diameter.</p><ol><li>$h=\\dfrac{4\\sigma\\cos\\theta}{\\rho gd}$ gives $\\dfrac{h_P}{h_Q}=\\dfrac{d_Q}{d_P}$.</li><li>The stated rise ratio is $\\dfrac{h_P}{h_Q}=\\dfrac{2}{3}$.</li><li>Invert the relation to obtain $\\dfrac{d_P}{d_Q}=\\dfrac{3}{2}$, so the ordered diameter ratio P:Q is 3:2.</li></ol><p>The tube with the lower rise has the larger bore. The ratio must be reported in the requested P-to-Q order, not reversed.</p>"
                 },
                 {
                     id: "cm3q052",
@@ -922,7 +922,7 @@ const CIVIL_MODEL_3 = {
                         { key: "d", text: "3159.45kW" }
                     ],
                     answer: "d",
-                    explanation: "The net head is 423.5 minus 2.5, which is 421 m. Power is then gamma Q H times efficiency, that is 9.81 times 0.9 times 421 times 0.85, which works out at about 3159 kW, or roughly 3.16 MW."
+                    explanation: "<p>Gross head is 423.5 m, waterway head loss is 2.5 m, discharge is $Q=0.9\\,\\mathrm{m^3/s}$ and overall efficiency is $\\eta=0.85$.</p><ol><li>Net head: $H_n=H_g-h_L$. Substituting, $H_n=423.5-2.5=421\\,\\mathrm{m}$.</li><li>Electrical power: $P_e=\\rho gQH_n\\eta$. For water with $\\rho=1000\\,\\mathrm{kg/m^3}$, the kW form is $P_{e,\\mathrm{kW}}=9.81QH_n\\eta$.</li><li>$P_{e,\\mathrm{kW}}=9.81(0.9)(421)(0.85)$, giving $3159.45765\\,\\mathrm{kW}$ or $3.15946\\,\\mathrm{MW}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0802-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open hydropower head and output diagram'><img src='assets/civil-notes/acie0802-5.svg' width='720' height='420' loading='lazy' alt='Gross head 423.5 m minus 2.5 m loss gives 421 m net head; 0.9 cubic metres per second at 85 percent efficiency yields 3159.46 kW.'></a><figcaption>Subtract waterway head loss first and apply overall efficiency once.</figcaption></figure><p>The listed 3159.45 kW choice agrees at its stated precision. The same number in W or MW would be a thousand-fold unit error.</p>"
                 },
                 {
                     id: "cm3q066",
@@ -1009,7 +1009,7 @@ const CIVIL_MODEL_3 = {
                         { key: "d", text: "40.80 cm" }
                     ],
                     answer: "b",
-                    explanation: "Consumptive use is estimated as the pan evaporation multiplied by the crop coefficient, so 35 cm times 0.80 gives 28 cm for the month. The coefficient is below one because a crop canopy transpires less than an open water surface of the same area."
+                    explanation: "<p>Interpret 0.80 as the question's combined coefficient relating monthly crop consumptive use directly to the stated pan evaporation.</p><ol><li>$ET_c=K E_{pan}$ under this convention.</li><li>$ET_c=0.80(35)=28\\,\\mathrm{cm}$ for April.</li><li>Both depths refer to the same month; no further multiplication by the number of days is needed.</li></ol><p>In the usual two-coefficient method, $ET_o=K_pE_{pan}$ and $ET_c=K_cET_o$. A crop coefficient Kc relative to reference evapotranspiration is not automatically a pan coefficient; if 0.80 meant Kc alone, Kp would also be needed. Crop and pan evaporation cannot be ranked universally from this one coefficient.</p>"
                 },
                 {
                     id: "cm3q072",
@@ -1022,7 +1022,7 @@ const CIVIL_MODEL_3 = {
                         { key: "d", text: "244.44 hectares/cumec" }
                     ],
                     answer: "c",
-                    explanation: "The net depth to be supplied is 60 minus the 10 cm of useful rain, that is 50 cm or 0.5 m. Duty at the field is 8.64 times 18 divided by 0.5, which is 311.04 hectares per cumec, and allowing 25 percent losses in the watercourses leaves 311.04 times 0.75, or 233.28."
+                    explanation: "<p>Take the stated 10 cm rainfall as useful to the crop and the 25 percent loss as a fraction of water entering the watercourses. The period is 18 days.</p><ol><li>Net irrigation depth at the field: $\\Delta=60-10=50\\,\\mathrm{cm}=0.50\\,\\mathrm{m}$.</li><li>Field duty: $D_f=\\dfrac{8.64B}{\\Delta}$. Thus $D_f=\\dfrac{8.64(18)}{0.50}=311.04$ hectares per cumec.</li><li>Conveyance efficiency is $\\eta_c=1-0.25=0.75$. Upstream duty is $D_u=\\eta_cD_f=233.28$ hectares per cumec.</li></ol><p>Check using gross upstream depth: $\\Delta_u=\\dfrac{0.50}{0.75}\\approx0.6667\\,\\mathrm{m}$. Substituting it in the duty relation gives the same 233.28. Losses increase upstream discharge for a fixed area, so they reduce upstream duty rather than increase it.</p>"
                 },
                 {
                     id: "cm3q073",
@@ -1035,7 +1035,7 @@ const CIVIL_MODEL_3 = {
                         { key: "d", text: "25 cm" }
                     ],
                     answer: "d",
-                    explanation: "The overall efficiency is the product of the application and conveyance efficiencies, that is 0.8 times 0.8, which is 0.64. The depth to be released at the canal outlet is the depth actually stored in the root zone divided by that figure, so 16 divided by 0.64 gives 25 cm. In other words 9 cm of every 25 is lost before it reaches the crop."
+                    explanation: "<p>The stored answer assumes that the stated 80 percent is field-application efficiency, that the 16 cm is net root-zone storage, and that the separate conveyance loss occurs downstream of the named outlet.</p><ol><li>Conveyance efficiency is $\\eta_c=1-0.20=0.80$; application efficiency is $\\eta_a=0.80$.</li><li>Overall efficiency is $\\eta=\\eta_c\\eta_a=0.64$.</li><li>Required outlet depth is $d_g=\\dfrac{d_{net}}{\\eta}=\\dfrac{16}{0.64}=25\\,\\mathrm{cm}$.</li><li>Check the path: 25 cm released becomes $25(0.80)=20$ cm delivered and $20(0.80)=16$ cm stored.</li></ol><p>If the quoted 80 percent already represented overall irrigation efficiency, applying another conveyance factor would double-count losses. Identify the boundaries before multiplying efficiencies; the 25 cm result follows from the explicit interpretation above.</p>"
                 },
                 {
                     id: "cm3q074",

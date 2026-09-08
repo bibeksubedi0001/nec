@@ -327,7 +327,7 @@ const CIVIL_MODEL_2 = {
                         { key: "d", text: "P" }
                     ],
                     answer: "d",
-                    explanation: "The two loads are placed symmetrically, so each reaction is P. A section at L/6 from A lies between the support and the first load, and the only force to the left of it is the reaction, so the shear force there equals P."
+                    explanation: "<p>Take upward shear on the left-hand free body as positive. The two downward forces P act at $x=\\dfrac{L}{3}$ and $x=\\dfrac{2L}{3}$.</p><ol><li>Vertical equilibrium gives $R_A+R_B=2P$. Symmetry gives $R_A=R_B=P$.</li><li>The cut is at $x=\\dfrac{L}{6}$, before the first applied load. Only the reaction at A acts to the left of that cut.</li><li>Therefore $V=R_A=P$. Neither point load has yet been crossed.</li></ol><p>Between the two loads the shear is $P-P=0$, while beyond the second load it is $P-2P=-P$. This piecewise check confirms that the cut location, not just the total load, determines the answer.</p>"
                 },
                 {
                     id: "cm2q023",
@@ -440,7 +440,7 @@ const CIVIL_MODEL_2 = {
                         { key: "d", text: "1815" }
                     ],
                     answer: "d",
-                    explanation: "The design wind speed is Vz equal to Vb times k1 k2 k3, which here is simply 55 m/s. The design wind pressure is then pz equal to 0.6 Vz squared, giving 0.6 times 3025, which is 1815 N per square metre."
+                    explanation: "<p>Use the three-factor wind-speed convention supplied by this question. All three factors equal one.</p><ol><li>$V_z=V_bk_1k_2k_3=55(1)(1)(1)$, hence $V_z=55\\,\\mathrm{m/s}$.</li><li>$p_z=0.6V_z^2$ when speed is entered in m/s and pressure is required in N per square metre.</li><li>$p_z=0.6(55)^2=1815\\,\\mathrm{N/m^2}$, or $1.815\\,\\mathrm{kPa}$.</li></ol><p>The options omit units; 1815 is correct on the N/m squared basis. Do not mix the speed factors or later pressure modifiers from different code editions. Net cladding force would additionally require pressure coefficients and loaded area.</p>"
                 },
                 {
                     id: "cm2q031",

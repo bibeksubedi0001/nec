@@ -367,12 +367,15 @@ const CIVIL_MODEL_14 = {
                 {
                     id: "cm14q025",
                     src: "DESI787-00118",
-                    text: "The development length for deformed bar in tension is",
+                    text: "A deformed reinforcing bar in tension carries design stress 0.87 f_y. Its diameter is \\(\\phi\\) and its design bond stress is \\(\\tau_{bd}\\). Which expression gives the required straight development length?",
                     options: [
-                        { key: "a", text: "(0.87 f_y φ)/(4 τ_bd)" }
+                        { key: "a", text: "\\(L_d=\\dfrac{0.87f_y\\phi}{4\\tau_{bd}}\\)" },
+                        { key: "b", text: "\\(L_d=\\dfrac{0.87f_y\\phi}{2\\tau_{bd}}\\)" },
+                        { key: "c", text: "\\(L_d=\\dfrac{0.87f_y\\phi}{8\\tau_{bd}}\\)" },
+                        { key: "d", text: "\\(L_d=\\dfrac{0.87f_y\\phi}{16\\tau_{bd}}\\)" }
                     ],
                     answer: "a",
-                    explanation: "<em>Source note: this question was published with all of its options identical, so only the one distinct option is shown.</em> For deformed bars, the development length is reduced due to better bond. But the formula is the same: L_d = (0.87 f_y φ) / (4 τ_bd), with τ_bd higher for deformed bars. The options are the same as above."
+                    explanation: "Equate bar force to bond resistance: \\(\\dfrac{\\pi\\phi^2}{4}\\sigma_s=\\pi\\phi L_d\\tau_{bd}\\). Thus \\(L_d=\\dfrac{\\phi\\sigma_s}{4\\tau_{bd}}\\). Substituting the stated design stress gives option A. Use the applicable design bond stress for the concrete, bar type and loading; do not apply the deformed-bar adjustment twice. The identical source choices have been replaced with four distinct expressions; the correct relation and answer letter are retained."
                 },
                 {
                     id: "cm14q026",
@@ -659,12 +662,15 @@ const CIVIL_MODEL_14 = {
                 {
                     id: "cm14q047",
                     src: "SOIL136-00173",
-                    text: "The exit gradient can be expressed by which of the following expression?",
+                    text: "A flow net has total head loss H divided into N_d equal potential drops. The last flow-path field at the exit has length \\(\\ell\\). Which expression estimates the average hydraulic gradient across that field?",
                     options: [
-                        { key: "a", text: "i_e = ah/b" }
+                        { key: "a", text: "\\(i_e\\approx\\dfrac{H}{N_d\\ell}\\)" },
+                        { key: "b", text: "\\(i_e\\approx\\dfrac{HN_d}{\\ell}\\)" },
+                        { key: "c", text: "\\(i_e\\approx\\dfrac{H}{\\ell}\\)" },
+                        { key: "d", text: "\\(i_e\\approx\\dfrac{H}{N_d^2\\ell}\\)" }
                     ],
                     answer: "a",
-                    explanation: "<em>Source note: this question was published with all of its options identical, so only the one distinct option is shown.</em> The options are identical and likely represent a standard formula i_e = Δh / (l * N_d), where Δh is the total head loss, l is the length of the last field, and N_d is the number of equipotential drops. It is often approximated as i_e = (Δh / N_d) * (1 / l). The notation 'ah/b' is a placeholder for this concept."
+                    explanation: "Each potential drop loses head \\(\\Delta h=\\dfrac{H}{N_d}\\). Gradient is that head loss divided by the last field's flow-path length, giving \\(i_e\\approx\\dfrac{H}{N_d\\ell}\\). Use consistent length units; the result is dimensionless. This is a field-average estimate, not a guarantee of the exact local maximum. The undefined source notation 'ah/b' and identical options have been replaced with a defined question and four distinct choices."
                 }
             ]
         },
@@ -1167,7 +1173,7 @@ const CIVIL_MODEL_14 = {
                         { key: "c", text: "0.71" }
                     ],
                     answer: "a",
-                    explanation: "Percentage of Voids = (1 - (Bulk Density / (Specific Gravity * Density of Water))) * 100. Calculation: (1 - (2.6 / (2.8 * 1))) * 100 = (1 - 0.92857) * 100 ≈ 7.143% ≈ 7.1%."
+                    explanation: "<p>Assume the bulk density is dry mass per bulk volume and the supplied specific gravity defines the compatible solid-particle density. Use a 1 litre bulk-volume basis.</p><ol><li>Solid density is $\\rho_s=G_s\\rho_w=2.8(1)=2.8\\,\\mathrm{kg/L}$.</li><li>The 1 litre sample contains 2.6 kg solids, occupying $V_s=\\dfrac{2.6}{2.8}\\approx0.928571\\,\\mathrm{L}$.</li><li>Void volume is $V_v=1-V_s\\approx0.071429\\,\\mathrm{L}$.</li><li>Porosity is $n=\\dfrac{V_v}{V}$, so $100n\\approx7.1429\\%$, about 7.1 percent.</li></ol><p>The compact relation is $n=1-\\dfrac{\\rho_{bulk}}{G_s\\rho_w}$. This calculation requires compatible moisture and density definitions. Options 7.1 and 7.10 are numerically identical; the stored first option is not uniquely distinguishable by mathematics.</p>"
                 },
                 {
                     id: "cm14q084",

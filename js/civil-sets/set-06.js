@@ -188,7 +188,7 @@ const CIVIL_MODEL_6 = {
                         { key: "d", text: "12 lakhs" }
                     ],
                     answer: "b",
-                    explanation: "\\(\\begin{aligned} \\text{Plinth Area (PA)} &= \\text{Carpet Area} + \\text{Circulation Area} \\\\ \\text{PA} &= 100 + 0.5 \\times \\text{PA} \\\\ \\text{PA} - 0.5 \\times \\text{PA} &= 100 \\\\ 0.5 \\times \\text{PA} &= 100 \\\\ \\text{PA} &= \\frac{100}{0.5} = 200 \\text{ m}^2 \\\\ \\text{Total Estimate} &= \\text{PA} \\times \\text{Rate} \\\\ \\text{Total Estimate} &= 200 \\times 40,000 \\\\ \\text{Total Estimate} &= \\text{Rs. } 8,000,000 \\end{aligned}\\)"
+                    explanation: "<p>Use the question's simplified area account: plinth area A consists of the 100 square metre carpet area plus circulation equal to 50 percent of A itself.</p><ol><li>$A=100+0.5A$.</li><li>Collect the A terms: $0.5A=100$, so $A=\\dfrac{100}{0.5}=200\\,\\mathrm{m^2}$.</li><li>Estimate = plinth area times its unit rate: $200(40000)=8000000$ rupees.</li><li>One lakh is 100,000 rupees. Therefore $\\dfrac{8000000}{100000}=80$ lakhs.</li></ol><p>Adding 50 percent of the carpet area would incorrectly give 150 square metres: the stated percentage is of plinth area. Real estimates must define wall and other area inclusions and the scope of the quoted rate; this calculation follows only the simplified supplied account.</p>"
                 },
                 {
                     id: "cm6q013",
@@ -236,7 +236,7 @@ const CIVIL_MODEL_6 = {
                         { key: "d", text: "220 N/mm²" }
                     ],
                     answer: "a",
-                    explanation: "The moment at the fixed end is 2.4 times 2, that is 4.8 kNm, or 4.8 million N mm. The section modulus is bd squared over 6, that is 40 times 3600 over 6, which is 24,000 cubic millimetres, so the extreme fibre stress is 4.8 million over 24,000, or 200 N/mm²."
+                    explanation: "<p>Assume a downward end load, width $b=40\\,\\mathrm{mm}$ and vertical depth $d=60\\,\\mathrm{mm}$. Use N and mm throughout: $P=2400\\,\\mathrm{N}$, $L=2000\\,\\mathrm{mm}$.</p><ol><li>Fixed-end moment magnitude: $|M|=PL$. Substituting, $|M|=2400(2000)$, so $|M|=4.8\\times10^6\\,\\mathrm{N\\,mm}$.</li><li>Rectangular section modulus: $Z=\\dfrac{bd^2}{6}$. Thus $Z=\\dfrac{40(60)^2}{6}=24000\\,\\mathrm{mm^3}$.</li><li>Extreme-fibre stress: $|\\sigma|=\\dfrac{|M|}{Z}$. Hence $|\\sigma|=\\dfrac{4.8\\times10^6}{24000}$, giving $200\\,\\mathrm{N/mm^2}=200\\,\\mathrm{MPa}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0403-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open cantilever stress diagram'><img src='assets/civil-notes/acie0403-5.svg' width='720' height='420' loading='lazy' alt='2 m cantilever, 2.4 kN tip load, and a 40 mm wide by 60 mm deep section with 200 MPa extreme-fibre stresses.'></a><figcaption>Load, section orientation and elastic fixed-end stresses.</figcaption></figure><p>The upper fibres at the fixed end are in tension and the lower fibres in compression. Rotating the section to 40 mm vertical depth would instead give 300 MPa. This calculation is an elastic stress, not proof of a collapse load: actual collapse also needs material strength and stability data.</p>"
                 },
                 {
                     id: "cm6q016",
@@ -287,7 +287,7 @@ const CIVIL_MODEL_6 = {
                         { key: "c", text: "(w²L²) / 48EI" }
                     ],
                     answer: "a",
-                    explanation: "Strain energy equals the integral of M squared over 2EI along the beam. For a simply supported span with a central point load W the moment rises linearly to WL over 4, and integrating gives U equal to W squared L cubed over 96EI. The key has been corrected from the printed 48EI."
+                    explanation: "<p>The question's $w$ is a point force, denoted $P$ here. Assume constant $EI$, small elastic bending and gradual loading. Each reaction is $P/2$, giving $M(x)=Px/2$ on the left half.</p><ol><li>Bending energy is $U=\\int_0^L\\dfrac{M^2}{2EI}\\,dx$. The two halves contribute equally.</li><li>Substitute the left-half moment: $U=\\dfrac{P^2}{4EI}\\int_0^{L/2}x^2\\,dx$.</li><li>$\\int_0^{L/2}x^2\\,dx=\\dfrac{L^3}{24}$, so $U=\\dfrac{P^2L^3}{96EI}$.</li></ol><figure class='cn-explanation-figure'><a href='assets/civil-notes/acie0404-5.svg' target='_blank' rel='noopener noreferrer' aria-label='Open strain energy diagram'><img src='assets/civil-notes/acie0404-5.svg' width='720' height='420' loading='lazy' alt='Central point-load beam, triangular bending moment and triangular force-deflection area equal to half P delta.'></a><figcaption>Energy is the area under the gradual force-displacement curve.</figcaption></figure><p>Check using $\\delta=\\dfrac{PL^3}{48EI}$ and $U=P\\delta/2$. The denominator 48 belongs to deflection; energy has denominator 96 and units of force times length. Replacing P by a UDL intensity would be dimensionally incorrect.</p>"
                 },
                 {
                     id: "cm6q020",
@@ -1146,7 +1146,7 @@ const CIVIL_MODEL_6 = {
                         { key: "d", text: "0.3" }
                     ],
                     answer: "c",
-                    explanation: "The aggregate impact value is the percentage of material finer than 2.36 mm after the standard blows. Here 180 g of 300 g was retained, so 120 g passed, and 120 over 300 gives an impact value of 40 percent."
+                    explanation: "<p>Aggregate impact value uses the mass passing the specified 2.36 mm sieve after impact, not the mass retained.</p><ol><li>Initial mass $M=300\\,\\mathrm{g}$; retained mass $M_r=180\\,\\mathrm{g}$.</li><li>Passing mass is $M_p=M-M_r$. Thus $M_p=300-180=120\\,\\mathrm{g}$.</li><li>$\\mathrm{AIV}=100\\dfrac{M_p}{M}$. Substituting, $\\mathrm{AIV}=100\\dfrac{120}{300}=40\\%$.</li></ol><p>The options use decimal fractions rather than percent labels: $40\\%=0.40$, so option C is the match. Using 180 g in the numerator would incorrectly calculate the retained fraction, 60 percent.</p>"
                 },
                 {
                     id: "cm6q082",

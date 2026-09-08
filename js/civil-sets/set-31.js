@@ -45,7 +45,7 @@ const CIVIL_MODEL_31 = {
                         { key: "d", text: "27,500 m³" }
                     ],
                     answer: "d",
-                    explanation: "(Description: This requires calculating the volume of a curved embankment section using the prismoidal formula or mean area method, considering the gradient and side slopes. The answer is a specific calculation result.)"
+                    explanation: "<p>The source omits the formation width and sufficient original-ground information, so the stored 27,500 cubic metre answer is not uniquely derivable.</p><ol><li>The semicircular centre-line length can be found: $L=R\\theta=1000\\pi\\approx3141.59\\,\\mathrm{m}$, with the angle in radians.</li><li>The formation rises by $\\Delta z=\\dfrac{L}{500}\\approx6.28319\\,\\mathrm{m}$. This rise alone is not the change in fill height unless the original ground is level along the route.</li><li>For a transverse level-ground section with formation width B, fill height h and 2H:1V sides, $A=Bh+2h^2$.</li><li>Volume requires $V=\\int_0^L A(x)\\,dx$ or measured cross-sectional areas and a suitable volume rule. Both B and the fill-height profile enter that calculation.</li></ol><p>Neither the missing width nor the ground profile should be invented to match an option. The lower-end 1 m height, radius and gradient are insufficient for a unique earthwork volume.</p>"
                 },
                 {
                     id: "cm31q002",
@@ -452,8 +452,8 @@ const CIVIL_MODEL_31 = {
                         { key: "c", text: "0.5" },
                         { key: "d", text: "1.0" }
                     ],
-                    answer: "b",
-                    explanation: "IS 875 (Part 2) specifies that for roofs with a slope greater than 10 degrees, the imposed load is reduced by 0.75 kN/m² for every degree increase in slope over 10 degrees, up to a maximum reduction specified in the code."
+                    answer: "a",
+                    explanation: "<p>Corrected answer: 0.02 kN per square metre for each degree above 10 degrees. IS 875 Part 2:1987, Table 2, uses 0.75 as the initial sheet/purlin imposed load, not as the per-degree decrement.</p><ol><li>For the stated sloping-roof case, calculate $q_0=0.75-0.02(\\theta-10)$ with the roof angle entered in degrees and q in $\\mathrm{kN/m^2}$.</li><li>Apply the lower bound: $q=\\max(q_0,0.40)$.</li><li>Illustration at 20 degrees: $q_0=0.75-0.02(10)=0.55$. The adopted sheet/purlin intensity is $0.55\\,\\mathrm{kN/m^2}$.</li><li>At 30 degrees, $q_0=0.35$, so the $0.40\\,\\mathrm{kN/m^2}$ minimum controls.</li></ol><p>The separate two-thirds allowance for eligible members supporting purlins is not the slope decrement. Occupancy/access, concentrated-load checks and other actions still need their own provisions; these numbers are not a universal load for every roof.</p>"
                 },
                 {
                     id: "cm31q032",

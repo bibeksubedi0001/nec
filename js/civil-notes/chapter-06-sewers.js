@@ -7,6 +7,7 @@
         ACiE0604: {
             code: "ACiE0604",
             questionCount: 57,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Domestic wastewater</th><td>Q<sub>d</sub> = Pq<sub>w</sub>r; return ratio r of supplied water q<sub>w</sub>.</td></tr><tr><th scope='row'>Peak flow</th><td>Q<sub>peak</sub> = FQ<sub>avg</sub> + coincident other flows.</td></tr><tr><th scope='row'>Rational storm runoff</th><td>Q = CiA/360 (SI); weighted C = ΣC<sub>j</sub>A<sub>j</sub>/ΣA<sub>j</sub>.</td></tr><tr><th scope='row'>Manning uniform flow</th><td>v = (1/n)R<sup>2/3</sup>S<sup>1/2</sup>; Q = Av.</td></tr><tr><th scope='row'>Full circular capacity</th><td>Q<sub>f</sub> = [π/(4<sup>5/3</sup>n)]D<sup>8/3</sup>√S.</td></tr><tr><th scope='row'>Partial depth geometry</th><td>θ = 2 arccos(1 − 2y/D); a = D<sup>2</sup>(θ − sinθ)/8; p = Dθ/2.</td></tr><tr><th scope='row'>Partial-flow maxima</th><td>Maximum velocity near y/D ≈ 0.81; maximum discharge near y/D ≈ 0.94.</td></tr><tr><th scope='row'>Self-cleansing shear</th><td>τ<sub>0</sub> = ρgRS; keep 0.6–0.9 m/s minimum, 2.5–3.0 m/s maximum.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "sewer-network-purpose-and-responsibility",

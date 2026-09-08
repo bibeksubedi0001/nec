@@ -7,6 +7,7 @@
         ACiE0303: {
             code: "ACiE0303",
             questionCount: 47,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Stream function</th><td>u = ∂ψ/∂y, v = −∂ψ/∂x (satisfies continuity).</td></tr><tr><th scope='row'>Velocity potential</th><td>u = ∂φ/∂x, v = ∂φ/∂y (irrotational flow).</td></tr><tr><th scope='row'>Continuity</th><td>Steady incompressible: A<sub>1</sub>V<sub>1</sub> = A<sub>2</sub>V<sub>2</sub>.</td></tr><tr><th scope='row'>Bernoulli / energy</th><td>H = z + p/(ρg) + αV<sup>2</sup>/(2g); with machines H<sub>1</sub> + h<sub>p</sub> = H<sub>2</sub> + h<sub>t</sub> + h<sub>L</sub>.</td></tr><tr><th scope='row'>Momentum</th><td>ΣF = ρQ(β<sub>2</sub>v<sub>2</sub> − β<sub>1</sub>v<sub>1</sub>).</td></tr><tr><th scope='row'>Reynolds number</th><td>Re = ρVD/μ = VD/ν.</td></tr><tr><th scope='row'>Venturi / orifice</th><td>Q = C<sub>d</sub>A<sub>t</sub>√[2gΔh/(1 − r<sup>2</sup>)].</td></tr><tr><th scope='row'>Rectangular weir</th><td>Q = (2/3)C<sub>d</sub>b√(2g) H<sup>3/2</sup>.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "flow-description-and-classification",
@@ -497,6 +498,7 @@
         ACiE0304: {
             code: "ACiE0304",
             questionCount: 21,
+            formulaSheet: "<table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Relation and basis</th></tr></thead><tbody><tr><th scope='row'>Regime and diameter</th><td>Re = VD/ν; non-circular D<sub>h</sub> = 4A/P<sub>w</sub>.</td></tr><tr><th scope='row'>Hagen–Poiseuille</th><td>Q = πD<sup>4</sup>Δp/(128μL) for laminar flow.</td></tr><tr><th scope='row'>Darcy–Weisbach</th><td>h<sub>f</sub> = f<sub>D</sub>(L/D)V<sup>2</sup>/(2g); laminar f<sub>D</sub> = 64/Re.</td></tr><tr><th scope='row'>Discharge form</th><td>h<sub>f</sub> = 8f<sub>D</sub>LQ<sup>2</sup>/(gπ<sup>2</sup>D<sup>5</sup>).</td></tr><tr><th scope='row'>Minor losses</th><td>h<sub>m</sub> = KV<sup>2</sup>/(2g); sudden expansion h<sub>e</sub> = (V<sub>1</sub> − V<sub>2</sub>)<sup>2</sup>/(2g).</td></tr><tr><th scope='row'>Grade lines</th><td>HGL = z + p/(ρg); TEL = HGL + αV<sup>2</sup>/(2g).</td></tr><tr><th scope='row'>Water hammer</th><td>Δp = ρaΔV; ΔH = aΔV/g; critical closure time 2L/a.</td></tr></tbody></table>",
             blocks: [
                 {
                     id: "pipe-regime-and-hydraulic-diameter",
