@@ -24,26 +24,28 @@
 #civilSection .cn-topics > button b { color: var(--cs-teal); font-variant-numeric: tabular-nums; }
 #civilSection .cn-topics > button span { min-width: 0; overflow-wrap: anywhere; }
 #civilSection .cn-topics > button[aria-pressed="true"] { border-color: var(--cs-teal); background: var(--cs-mint); box-shadow: inset 0 -2px var(--cs-teal); }
-#civilSection .cn-topic { border: 1px solid var(--cs-line); border-radius: 16px; background: #fff; padding: clamp(18px, 3vw, 38px); }
-#civilSection .cn-topic-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 22px; }
-#civilSection .cn-topic-head > div:first-child { min-width: 0; flex: 1 1 400px; }
+#civilSection .cn-topic { width: 100%; max-width: 1080px; margin-inline: auto; border: 1px solid var(--cs-line); border-radius: 16px; background: #fff; padding: clamp(18px, 3vw, 38px); }
+#civilSection .cn-topic-head { display: grid; justify-items: center; gap: 12px; margin-bottom: 22px; text-align: center; }
+#civilSection .cn-topic-head > div:first-child { min-width: 0; width: 100%; }
 #civilSection .cn-topic-head h3 { margin: 6px 0 8px; font-size: clamp(20px, 2vw, 27px); }
 #civilSection .cn-code { display: block; color: var(--cs-muted); font-size: 11px; overflow-wrap: anywhere; }
 #civilSection .cn-count { color: var(--cs-muted); font-size: 12px; }
-#civilSection .cn-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+#civilSection .cn-actions { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
 #civilSection .cn-scope { padding: 14px 18px; border: 1px solid #d6e4d7; border-radius: 10px; background: #f4f8f2; }
 #civilSection .cn-scope summary { color: var(--cs-teal); font-weight: 600; cursor: pointer; }
-#civilSection .cn-scope p { max-width: 95ch; margin: 10px 0 0; font-size: 13px; }
-#civilSection .cn-contents { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 20px 0; border-bottom: 1px solid var(--cs-line); }
+#civilSection .cn-scope p { margin: 10px 0 0; font-size: 13px; }
+#civilSection .cn-contents { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 18px; padding: 20px 0; border-bottom: 1px solid var(--cs-line); }
 #civilSection .cn-contents a { display: inline-flex; align-items: center; min-height: 32px; font-size: 12px; }
 #civilSection .cn-block { padding: 26px 0; border-bottom: 1px solid var(--cs-line); scroll-margin-top: 20px; }
 #civilSection .cn-block h4, #civilSection .cn-checks > h4, #civilSection .cn-gaps > h4 { margin: 0 0 14px; font-size: 18px; }
+#civilSection .cn-topic .cn-block > :is(h4, h5) { text-align: center; }
 #civilSection .cn-prose { max-width: 74ch; font: 400 15.5px/1.78 var(--cs-read); color: var(--cs-ink); overflow-wrap: anywhere; }
+#civilSection .cn-topic :is(.cn-prose, .cn-more) { min-width: 0; max-width: none; }
 #civilSection .cn-prose p { margin: 0 0 15px; }
 #civilSection .cn-prose p:last-child { margin-bottom: 0; }
 /* Content is not bolded; the JS emphasis pass converts formulas to .cn-f and unwraps plain terms. */
 #civilSection .cn-prose :is(strong, b) { font-weight: 400; }
-#civilSection #cvNotes .cn-f { font-family: var(--cs-mono); font-size: .9em; font-weight: 500; color: #12463a; background: #eaf2ec; padding: .06em .34em; border-radius: 4px; overflow-wrap: anywhere; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+#civilSection #cvNotes .cn-f { display: inline-block; max-width: 100%; vertical-align: middle; font-family: var(--cs-mono); font-size: .9em; font-weight: 500; color: #12463a; background: #eaf2ec; padding: .06em .34em; border-radius: 4px; overflow-wrap: anywhere; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 #civilSection #cvNotes .cn-f .cn-fraction { margin-block: 0; }
 #civilSection #cvNotes .cn-term { font-weight: 500; font-style: italic; }
 #civilSection .cn-more { max-width: 96ch; margin-top: 16px; padding: 12px 0; border-top: 1px solid var(--cs-line); }
@@ -54,6 +56,7 @@
 #civilSection :is(#cvNotes, .cn-formatted-explanation) .cn-denominator { display: block; min-width: 0; padding: .12em .22em .02em; }
 #civilSection :is(#cvNotes, .cn-formatted-explanation) :is(sup, sub) .cn-fraction { margin-block: .05em; }
 #civilSection #cvNotes .cn-figure { max-width: 760px; margin: 24px 0 12px; }
+#civilSection #cvNotes .cn-topic .cn-figure { margin-inline: auto; }
 #civilSection #cvNotes .cn-figure-open { display: block; position: relative; width: 100%; aspect-ratio: 12 / 7; padding: 0; border: 1px solid var(--cs-line); border-radius: 6px; overflow: hidden; background: #fbfcfd; color: var(--cs-teal); cursor: zoom-in; }
 #civilSection #cvNotes .cn-figure-open img { display: block; width: 100%; height: auto; aspect-ratio: 12 / 7; }
 #civilSection #cvNotes .cn-figure-corner { display: grid; place-items: center; position: absolute; top: 8px; right: 8px; width: 34px; height: 34px; background: #fff; border: 1px solid var(--cs-line); border-radius: 4px; }
@@ -141,11 +144,11 @@
 #civilSection #cvNotes .cn-lesson :is(h3, h4, h5) { letter-spacing: 0; }
 #civilSection .cn-lesson .cn-topic-head h3 { font-size: 24px; }
 #civilSection .cn-lesson .cn-scope { border: 0; border-radius: 0; padding: 8px 0; background: transparent; }
-#civilSection .cn-lesson-nav { display: flex; flex-wrap: wrap; align-items: end; gap: 8px 22px; padding: 14px 0 20px; border-bottom: 1px solid var(--cs-line); }
+#civilSection .cn-lesson-nav { display: flex; justify-content: center; flex-wrap: wrap; align-items: end; gap: 8px 22px; padding: 14px 0 20px; border-bottom: 1px solid var(--cs-line); }
 #civilSection .cn-lesson-nav .cn-field { flex: 1 1 280px; max-width: 420px; }
 #civilSection .cn-lesson-nav select { border-radius: 6px; }
 #civilSection .cn-lesson-nav > a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; }
-#civilSection #cvNotes .cn-part { display: flex; align-items: baseline; gap: 14px; margin: 32px 0 0; padding: 12px 0; border-bottom: 2px solid var(--cs-teal); font-size: 21px; scroll-margin-top: 20px; }
+#civilSection #cvNotes .cn-part { display: flex; justify-content: center; align-items: baseline; gap: 14px; margin: 32px 0 0; padding: 12px 0; border-bottom: 2px solid var(--cs-teal); font-size: 21px; text-align: center; scroll-margin-top: 20px; }
 #civilSection .cn-part > span { color: var(--cs-teal); font-variant-numeric: tabular-nums; }
 #civilSection .cn-lesson .cn-block h5 { margin: 0 0 14px; font-family: var(--cs-display); font-size: 17px; line-height: 1.4; overflow-wrap: anywhere; }
 #civilSection .cn-revision { padding: 22px 0; margin-top: 24px; border-top: 2px solid var(--cs-teal); scroll-margin-top: 20px; }
