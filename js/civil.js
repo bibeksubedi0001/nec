@@ -241,12 +241,18 @@
         const allQ = SETS.reduce((n, e) => n + e.meta.total, 0);
 
         $("cvHeroName").textContent = "Welcome, " + CANDIDATE + ".";
+        $("cvDash").querySelectorAll("[data-nec-icon]").forEach((element) => {
+            element.innerHTML = window.CEE_UI_ICONS ? window.CEE_UI_ICONS.svg(element.dataset.necIcon) : "";
+        });
+        if ($("necNotesCount")) $("necNotesCount").textContent = (window.CIVIL_SYLLABUS?.chapters || []).reduce((sum, chapter) => sum + chapter.subchapters.length, 0) + " topics";
+        if ($("necQuestionCount")) $("necQuestionCount").textContent = allQ.toLocaleString("en-US") + " questions";
+        if ($("necPaperCount")) $("necPaperCount").textContent = SETS.length + " papers";
 
         $("cvKpis").innerHTML =
-            kpi("sets", ICON.sets, SETS.length, "Model papers") +
-            kpi("tests", ICON.tests, done.length + "<small style=\"font-size:15px;opacity:.6\">/" + SETS.length + "</small>", "Sets completed") +
+            kpi("tests", ICON.tests, done.length + "<small style=\"font-size:15px;opacity:.6\">/" + SETS.length + "</small>", "Model papers completed") +
             kpi("best", ICON.best, bestPct == null ? "\u2014" : bestPct + "%", "Best exam score") +
             kpi("avg", ICON.avg, avgPct == null ? "\u2014" : avgPct + "%", "Average exam score");
+        $("cvKpis").hidden = personalBests.length === 0 && done.length === 0;
 
         const unfinished = rows.find((row) => !row.st.submitted && (row.st.endsAt || Object.keys(row.st.answers).length));
         $("cvModelResume").innerHTML = unfinished ? `<div class="cv-resume-card"><div class="cv-resume-copy"><b>Continue your model exam</b><span>${esc(unfinished.e.meta.title)} &middot; ${Object.keys(unfinished.st.answers).length} of ${unfinished.e.meta.total} answered</span></div><button type="button" class="cv-btn cv-btn-ghost" data-open="${unfinished.e.key}">Resume model exam</button></div>` : "";
@@ -261,10 +267,11 @@
                 const answered = Object.keys(st.answers).length;
                 const live = !st.submitted && (st.endsAt || answered > 0);
                 const cls = st.submitted ? "is-done" : live ? "is-live" : "";
-                return `<article class="cs-paper ${cls}"><div class="cs-paper-top"><span class="cs-paper-number">PAPER ${String(meta.n).padStart(2, "0")}</span><span class="cv-pill ${st.submitted ? "done" : live ? "live" : "new"}">${st.submitted ? "Exam completed" : live ? "Exam in progress" : "Ready to begin"}</span></div>
-                    <h3>${esc(meta.title)}</h3><div class="cs-paper-meta"><span>${meta.total} questions</span><span>${meta.durationMinutes} min exam</span><span>${meta.chapters.length} subjects</span></div>
-                    <div class="cs-paper-progress" role="progressbar" aria-label="Model exam answered" aria-valuemin="0" aria-valuemax="${meta.total}" aria-valuenow="${answered}"><span style="width:${Math.min(100, answered / meta.total * 100)}%"></span></div>
-                    <div class="cs-paper-score"><small>Personal best · exam</small><b>${st.best ? st.best.pct + "%" : "—"}</b></div>
+                const personalBest = st.best || (st.submitted && st.summary);
+                return `<article class="cs-paper ${cls}"><div class="cs-paper-top"><span class="cs-paper-number" aria-hidden="true">${window.CEE_UI_ICONS.svg("clipboard")}</span><span class="cv-pill ${st.submitted ? "done" : live ? "live" : "new"}">${st.submitted ? "Completed" : live ? "In progress" : "Not started"}</span></div>
+                    <h3>${esc(meta.title)}</h3><div class="cs-paper-meta"><span>${meta.total} questions</span><span>${meta.durationMinutes} min</span><span>${meta.chapters.length} subjects</span></div>
+                    ${answered ? `<div class="cs-paper-progress" role="progressbar" aria-label="Model exam answered" aria-valuemin="0" aria-valuemax="${meta.total}" aria-valuenow="${answered}"><span style="width:${Math.min(100, answered / meta.total * 100)}%"></span></div>` : ""}
+                    ${personalBest ? `<div class="cs-paper-score"><small>Personal best</small><b>${personalBest.pct}%</b></div>` : ""}
                     <div class="cs-paper-actions"><button type="button" class="cv-btn" data-open="${meta.key}">${st.submitted ? "Review exam" : live ? "Resume exam" : "Start exam"}</button><button type="button" class="cv-btn cv-btn-ghost" data-model-practice="${meta.key}">Practice</button></div></article>`;
             }).join("") + (!visibleRows.length ? '<div class="cv-empty"><b>No matching model sets</b><p>Clear the search or choose another status.</p></div>' : "");
 
@@ -655,6 +662,20 @@
         });
         $("cvSetSearch").addEventListener("input", renderDash);
         $("cvSetStatus").addEventListener("change", renderDash);
+
+        const utilities = $("cvDash").querySelector(".nec-utilities");
+        if (utilities) {
+            document.addEventListener("click", (event) => {
+                if (utilities.open && !utilities.contains(event.target)) utilities.open = false;
+            });
+            utilities.addEventListener("keydown", (event) => {
+                if (event.key === "Escape" && utilities.open) {
+                    event.preventDefault();
+                    utilities.open = false;
+                    utilities.querySelector("summary").focus();
+                }
+            });
+        }
 
         $("civilOpenBtn")?.addEventListener("click", openSection);
         $("cvUnlock").addEventListener("click", tryUnlock);

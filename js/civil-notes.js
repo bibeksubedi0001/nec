@@ -286,9 +286,9 @@
             const heading = groups.length ? "h5" : "h4";
             return `<article class="cn-topic${groups.length ? " cn-lesson" : ""}" data-note-topic="${code}">
                 <header class="cn-topic-head"><div><span class="cn-code">${code}</span><h3 id="cnTopicTitle" tabindex="-1">${esc(meta.number + " " + meta.name)}</h3><span class="cn-count" id="cnSourceCount">${topic.questionCount ? topic.questionCount + " source questions" : "Syllabus-only notes · No mapped questions in the current bank"}</span></div>
-                    <div class="cn-actions"><button type="button" class="cn-button" data-cn-session="practice" data-topic="${code}"${sessionDisabled}>Practice topic</button><button type="button" class="cn-button cn-secondary" data-cn-session="exam" data-topic="${code}"${sessionDisabled}>Exam</button></div></header>
-                <details class="cn-scope"${groups.length ? "" : " open"}><summary>Syllabus scope</summary><p>${esc(meta.detail)}</p></details>
-                ${groups.length ? `<nav class="cn-lesson-nav" aria-label="Contents of ${esc(meta.number)}"><label class="cn-field"><span>Contents</span><select id="cnSectionSelect"><option value="">Choose section</option>${groups.map((group, groupIndex) => `<option value="cn-${code}-group-${group.id}">${groupIndex + 1}. ${esc(group.title)}</option>`).join("")}<option value="cn-${code}-formulas">Formula sheet</option><option value="cn-${code}-recall">Recall</option><option value="cn-${code}-checks">Question checks</option></select></label><a href="#cn-${code}-formulas" data-cn-jump="cn-${code}-formulas">Formulas</a><a href="#cn-${code}-recall" data-cn-jump="cn-${code}-recall">Recall</a><a href="#cn-${code}-checks" data-cn-jump="cn-${code}-checks">Question checks</a></nav>` : `<nav class="cn-contents" aria-label="Contents of ${esc(meta.number)}">${topic.blocks.map((block) => `<a href="#cn-${code}-${block.id}" data-cn-jump="cn-${code}-${block.id}">${esc(block.title)}</a>`).join("")}</nav>`}
+                    <div class="cn-actions"><button type="button" class="cn-button" data-cn-session="practice" data-topic="${code}"${sessionDisabled}>${uiIcon("ruler")} Practice topic</button><button type="button" class="cn-button cn-secondary" data-cn-session="exam" data-topic="${code}"${sessionDisabled}>${uiIcon("clipboard")} Exam</button></div></header>
+                <details class="cn-scope"><summary>Syllabus scope</summary><p>${esc(meta.detail)}</p></details>
+                <nav class="cn-lesson-nav" aria-label="Contents of ${esc(meta.number)}"><label class="cn-field"><span>On this page</span><select id="cnSectionSelect"><option value="">Jump to a section</option>${groups.length ? groups.map((group, groupIndex) => `<option value="cn-${code}-group-${group.id}">${groupIndex + 1}. ${esc(group.title)}</option>`).join("") : topic.blocks.map((block) => `<option value="cn-${code}-${block.id}">${esc(block.title)}</option>`).join("")}${topic.formulaSheet ? `<option value="cn-${code}-formulas">Formula sheet</option>` : ""}${topic.recall?.length ? `<option value="cn-${code}-recall">Recall</option>` : ""}<option value="cn-${code}-checks">Question checks</option></select></label>${topic.formulaSheet ? `<a href="#cn-${code}-formulas" data-cn-jump="cn-${code}-formulas">Formula sheet ${uiIcon("arrow-right")}</a>` : ""}<a href="#cn-${code}-checks" data-cn-jump="cn-${code}-checks">Question checks ${uiIcon("arrow-right")}</a></nav>
                 ${topic.blocks.map((block) => {
                     const groupIndex = groups.findIndex((group) => group.start === block.id);
                     const group = groups[groupIndex];
@@ -303,7 +303,8 @@
 
         function renderBody() {
             const reader = $("cnReader");
-            content.querySelectorAll("[data-cn-topic]").forEach((button) => button.setAttribute("aria-pressed", String(!query && button.dataset.cnTopic === selectedCode)));
+            $("cnTopicSelect").value = query ? "" : selectedCode;
+            $("cnTopicSelect").title = query ? "Search results" : $("cnTopicSelect").selectedOptions[0].textContent;
             if (!query) { replace(reader, topicHtml(selectedCode)); return; }
             const results = search(chapterCodes(selectedChapterId).map((code) => window.CIVIL_NOTE_TOPICS[code]), query);
             replace(reader, `<div class="cn-search-summary" role="status"><b>${results.length} matching sections</b><button type="button" class="cn-button cn-secondary" data-cn-clear>Clear search</button></div>${results.length ? results.map((block) => {
@@ -319,15 +320,15 @@
             const chapterId = selectedChapterId, chapter = chapterMap.get(chapterId);
             const codes = chapterCodes(chapterId);
             replace(content, `<div class="cn-tools"><label class="cn-field"><span>Chapter</span><select id="cnChapterSelect">${syllabus.chapters.map((item) => `<option value="${item.id}"${item.id === chapterId ? " selected" : ""}${hasChapter(item.id) ? "" : " disabled"}>${esc(item.number + ". " + item.name)}${hasChapter(item.id) ? "" : " — Notes not added"}</option>`).join("")}</select></label>
-                <form id="cnSearchForm" role="search"><label class="cn-field"><span>Search Chapter ${chapter.number} notes</span><input type="search" id="cnSearch" value="${esc(query)}" placeholder="Topic, formula or source question ID" disabled /></label><button class="cn-button" type="submit" disabled>Search</button></form></div>
-                <nav class="cn-topics" aria-label="Chapter ${chapter.number} subchapters">${chapter.subchapters.map((topic) => `<button type="button" data-cn-topic="${topic.code}" aria-pressed="${!query && topic.code === selectedCode}" disabled><b>${esc(topic.number)}</b><span>${esc(topic.name)}</span></button>`).join("")}</nav>
+                <label class="cn-field"><span>Topic</span><select id="cnTopicSelect" disabled><option value="" hidden disabled>Search results</option>${chapter.subchapters.map((topic) => `<option value="${topic.code}"${topic.code === selectedCode ? " selected" : ""}>${esc(topic.number + " " + topic.name)}</option>`).join("")}</select></label>
+                <details class="cn-search-toggle"${query ? " open" : ""}><summary>Search notes</summary><form id="cnSearchForm" role="search"><label class="cn-field"><span>Search Chapter ${chapter.number} notes</span><input type="search" id="cnSearch" value="${esc(query)}" placeholder="Topic, formula or source question ID" disabled /></label><button class="cn-button" type="submit" disabled>Search</button></form></details></div>
                 <div id="cnReader" aria-busy="true"><div class="cn-empty" role="status">Loading Chapter ${chapter.number} notes…</div></div>
                 <details class="cn-about" hidden><summary>Sources and scope</summary><p id="cnAboutText"></p></details>`);
             if (restoreChapterFocus) $("cnChapterSelect").focus({ preventScroll: true });
             try {
                 await loadNotes(chapterId);
                 if (token !== serial || !isOpen()) return;
-                content.querySelectorAll("#cnSearchForm :disabled, .cn-topics > button").forEach((node) => { node.disabled = false; });
+                content.querySelectorAll("#cnSearchForm :disabled, #cnTopicSelect").forEach((node) => { node.disabled = false; });
                 $("cnReader").setAttribute("aria-busy", "false");
                 const count = codes.reduce((sum, code) => sum + window.CIVIL_NOTE_TOPICS[code].questionCount, 0);
                 $("cnAboutText").textContent = `Authored study notes for the supplied NEC syllabus and ${count} mapped Chapter ${chapter.number} questions. Worked extensions use labelled assumptions. Question checks identify verified corrections and unresolved wording. These are not NEC-issued notes. Reading does not record attempts or change saved results.`;
@@ -370,7 +371,6 @@
                 const checks = topic.cautions.filter((item) => item.sources.some((source) => source.id === id));
                 const label = checks.some((check) => check.status === "corrected") ? "Corrected question" : checks.length === 1 && checks[0].issue ? checkLabels[checkKind(checks[0])] : "Question check";
                 replace(sourceBody, `<span class="cn-code">${esc(id)}</span>${checks.length ? `<section class="cn-source-check"><h3>${label}</h3><div class="cn-prose">${checks.map((check) => check.html).join("")}</div>${externalReferences(topic)}</section>` : ""}<div class="cn-source-question">${q.text}</div>
-                    <p class="cn-source-hint">Select an option to check it against the stored answer.</p>
                     <ol class="cn-source-options" type="a" data-cn-answer="${esc((q.answer || "").toLowerCase())}">${q.options.map((option) => `<li value="${option.key.charCodeAt(0) - 96}"><button type="button" class="cn-option-btn" data-cn-option="${esc(option.key.toLowerCase())}">${option.text}</button></li>`).join("")}</ol>
                         <details class="cn-stored-answer"><summary>Answer and explanation</summary><p>Answer: ${esc(q.answer.toUpperCase())}</p><div class="cn-source-explanation">${q.explanation || "No explanation is stored for this item."}</div>${sourceDerivationsHtml(topic, id, q.explanation || "")}</details>`);
             } catch (error) {
@@ -420,6 +420,11 @@
             query = $("cnSearch").value.trim(); renderBody();
         });
         $("cvNotes").addEventListener("change", (event) => {
+            if (event.target.id === "cnTopicSelect" && isOpen() && topicMap.get(event.target.value)?.chapterId === selectedChapterId) {
+                selectTopic(event.target.value); $("cnSearch").value = ""; renderBody();
+                content.querySelector(".cn-search-toggle").open = false;
+                return;
+            }
             if (event.target.id === "cnCheckFilter" && isOpen()) {
                 let count = 0;
                 content.querySelectorAll(".cn-caution").forEach((check) => {

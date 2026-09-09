@@ -318,25 +318,42 @@
             }).join("");
         }
 
-        function refreshSavedCount() { $("cvSavedCount").textContent = Object.keys(store.bookmarks).length; }
+        function refreshSavedCount() {
+            const count = Object.keys(store.bookmarks).length;
+            $("cvSavedCount").textContent = count;
+            $("cvSavedCount").hidden = count === 0;
+        }
 
         function renderDashboard() {
             refreshSavedCount();
             $("cvHomeResume").innerHTML = draftCard();
+            if ($("necRecentPanel")) $("necRecentPanel").hidden = store.history.length === 0;
             $("cvActivity").innerHTML = store.history.length ? `<div class="cv-history-list">${store.history.slice(0, 5).map((run) => {
                 const summary = run.summary || {};
                 return `<button type="button" class="cv-history-row" data-cp-action="history" data-id="${esc(run.id)}">
                     <span class="cv-history-score">${summary.pct || 0}%</span><span class="cv-history-copy"><b>${esc(run.title)}</b>
                         <small>${modeOf(run) === "practice" ? "Practice" : "Exam"} &middot; ${run.ids.length} questions &middot; ${date(run.finishedAt)}</small></span><span class="cv-history-arrow" aria-hidden="true">${uiIcon("arrow-right")}</span></button>`;
-                    }).join("")}</div>` : '<div class="cv-empty"><b>Your next session starts here</b><p>Finish a practice round or custom exam to see its summary here. Model-exam scores stay with their model papers.</p></div>';
+                    }).join("")}</div>` : `<div class="cv-empty nec-activity-empty">${uiIcon("clipboard")}<b>No sessions yet</b></div>`;
             const stats = counts([]);
             const accuracy = stats.attempted ? Math.round(stats.correct / stats.attempted * 100) : 0;
-            $("cvPracticeSummary").innerHTML = `<div class="cv-metrics"><div><b>${number(stats.attempted)}</b><span>Questions practised</span></div>
-                <div><b>${stats.attempted ? accuracy + "%" : "—"}</b><span>Latest-answer accuracy</span></div><div><b>${stats.saved}</b><span>Saved for later</span></div></div>
-                <div class="cv-progress-track" role="progressbar" aria-label="Question bank practised" aria-valuenow="${stats.attempted}" aria-valuemin="0" aria-valuemax="${total}"><span style="width:${Math.min(100, stats.attempted / total * 100)}%"></span></div>
-                <p class="cv-muted">${number(stats.attempted)} of ${number(total)} questions attempted in practice.</p>
-                <div class="cv-summary-actions"><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="mistakes" ${stats.wrong ? "" : "disabled"}>Revisit incorrect (${stats.wrong})</button>
-                <button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cv-nav="saved">Saved questions</button></div>`;
+            const share = (amount, count) => count ? Math.max(0, Math.min(100, amount / count * 100)) : 0;
+            const coverage = share(stats.attempted, total);
+            $("cvPracticeSummary").innerHTML = `<div class="nec-coverage-summary">
+                <div class="nec-coverage-ring" role="img" aria-label="${number(stats.attempted)} of ${number(total)} questions practised; ${number(stats.correct)} latest answers correct, ${number(stats.wrong)} need review" style="--correct-share:${share(stats.correct, total)}%;--attempted-share:${coverage}%">
+                    <div class="nec-ring-value"><b>${number(stats.attempted)}</b><span>of ${number(total)}</span></div>
+                </div>
+                <dl class="nec-coverage-totals"><div><dt>Latest-answer accuracy</dt><dd>${stats.attempted ? accuracy + "%" : "&mdash;"}</dd></div><div><dt>Needs review</dt><dd>${number(stats.wrong)}</dd></div></dl>
+            </div>
+            <div class="nec-coverage-key"><span><i class="nec-key-correct" aria-hidden="true"></i>Correct</span><span><i class="nec-key-review" aria-hidden="true"></i>Needs review</span><span><i class="nec-key-unseen" aria-hidden="true"></i>Unseen</span></div>
+            <div class="nec-chapter-coverage">${chapters.filter((chapter) => !chapter.additional || chapter.count > 0).map((chapter) => {
+                const chapterStats = counts([chapter.id]);
+                return `<div class="nec-coverage-row" data-coverage-chapter="${esc(chapter.id)}"><div class="nec-coverage-row-head">${icon(chapter)}<span>${esc(chapter.name)}</span><small>${number(chapterStats.attempted)} / ${number(chapterStats.total)}</small></div>
+                    <div class="nec-chapter-track" role="progressbar" aria-label="${esc(chapter.name)} questions practised" aria-valuemin="0" aria-valuemax="${Math.max(1, chapterStats.total)}" aria-valuenow="${Math.min(chapterStats.attempted, chapterStats.total)}" aria-valuetext="${number(chapterStats.attempted)} of ${number(chapterStats.total)} questions; ${number(chapterStats.correct)} latest answers correct">
+                        <span class="nec-track-correct" aria-hidden="true" style="width:${share(chapterStats.correct, chapterStats.total)}%"></span><span class="nec-track-review" aria-hidden="true" style="width:${share(chapterStats.wrong, chapterStats.total)}%"></span>
+                    </div></div>`;
+            }).join("")}</div>
+            <div class="cv-summary-actions"><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="mistakes" ${stats.wrong ? "" : "disabled"}>Review mistakes (${number(stats.wrong)}) ${uiIcon("arrow-right")}</button>
+                <button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cv-nav="saved">${bookmarkIcon} Saved (${number(stats.saved)})</button></div>`;
         }
 
         function leafNodes(chapter) {
