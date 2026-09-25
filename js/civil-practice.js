@@ -6,6 +6,10 @@
     const HISTORY_LIMIT = 20;
     const slug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
     const questionKey = (item) => item.q.src || item.q.id;
+    const originOf = (key) => /^CAP4-/.test(key) ? "capsule" : "model";
+    const fromSource = (key, source) => !source || source === "all" || originOf(key) === source;
+    const countOf = (node, source) => !source || source === "all" ? node.count
+        : node.sourceCounts ? node.sourceCounts[source] || 0 : source === "model" ? node.count : 0;
     const sourceLabel = (item) => item.q.source?.kind === "capsule"
         ? item.q.source.reference : `Model ${item.setNo}, Q${item.sourceNo}`;
     const plainText = (value) => String(value || "").replace(/<svg[\s\S]*?<\/svg>/gi, " ")
@@ -27,7 +31,7 @@
         const legacy = chaptersFrom(entries);
         if (!syllabus || !mapping) return { chapters: legacy, official: [], topics: new Map(), assignments: new Map(), total: legacy.reduce((sum, chapter) => sum + chapter.count, 0) };
         const chapters = syllabus.chapters.map((chapter, index) => ({ ...chapter, index, count: 0,
-            subchapters: chapter.subchapters.map((topic, i) => ({ ...topic, id: topic.code, chapterId: chapter.id, index: i, count: 0 })) }));
+            subchapters: chapter.subchapters.map((topic, i) => ({ ...topic, id: topic.code, chapterId: chapter.id, index: i, count: 0, sourceCounts: { model: 0, capsule: 0 } })) }));
         const official = chapters.slice();
         const topics = new Map(chapters.flatMap((chapter) => chapter.subchapters.map((topic) => [topic.id, topic])));
         const sources = {
@@ -49,12 +53,13 @@
                         const original = legacy.find((chapter) => chapter.id === sources[source]);
                         const group = { id, code: "", number: "", name: original ? original.name : source,
                             detail: "These original bank questions do not have a sufficiently clear match to a listed syllabus subchapter. They remain available in both Exam and Practice modes.",
-                            chapterId: extra.id, index: extra.subchapters.length, additional: true, count: 0 };
+                            chapterId: extra.id, index: extra.subchapters.length, additional: true, count: 0, sourceCounts: { model: 0, capsule: 0 } };
                         topics.set(id, group); extra.subchapters.push(group);
                     }
                     topic = topics.get(id);
                 }
                 topic.count++;
+                topic.sourceCounts.model++;
                 assignments.set(source + "-" + String(n).padStart(5, "0"), topic);
             }
         }
@@ -63,7 +68,7 @@
                 if (group.code === "additional-capsule-rural" && !topics.has(group.code)) {
                     const topic = { id: group.code, code: "", number: "", name: "Civil and rural engineering (capsule)",
                         detail: "Additional rural-engineering material from the capsule, outside the listed civil syllabus subchapters.",
-                        chapterId: extra.id, index: extra.subchapters.length, additional: true, count: 0 };
+                        chapterId: extra.id, index: extra.subchapters.length, additional: true, count: 0, sourceCounts: { model: 0, capsule: 0 } };
                     topics.set(topic.id, topic); extra.subchapters.push(topic);
                 }
                 const topic = topics.get(group.code);
@@ -72,12 +77,17 @@
                     if (assignments.has(id)) throw new Error("Duplicate question source: " + id);
                     assignments.set(id, topic);
                     topic.count++;
+                    topic.sourceCounts.capsule++;
                 }
             }
         }
         extra.count = extra.subchapters.reduce((sum, topic) => sum + topic.count, 0);
         if (extra.count) chapters.push(extra);
-        chapters.forEach((chapter) => { chapter.count = chapter.subchapters.reduce((sum, topic) => sum + topic.count, 0); });
+        chapters.forEach((chapter) => {
+            chapter.count = chapter.subchapters.reduce((sum, topic) => sum + topic.count, 0);
+            chapter.sourceCounts = { model: 0, capsule: 0 };
+            chapter.subchapters.forEach((topic) => { chapter.sourceCounts.model += topic.sourceCounts.model; chapter.sourceCounts.capsule += topic.sourceCounts.capsule; });
+        });
         return { chapters, official, topics, assignments, total: assignments.size };
     }
 
@@ -179,11 +189,12 @@
         return result;
     }
 
-    function filterPool(records, scope, filter, progress, bookmarks) {
+    function filterPool(records, scope, filter, progress, bookmarks, source = "all") {
         const selected = new Set(scope);
         return records.filter((item) => {
             if (!inScope(item, selected)) return false;
             const key = questionKey(item);
+            if (!fromSource(key, source)) return false;
             if (filter === "unseen") return !progress[key];
             if (filter === "wrong") return progress[key] && progress[key].correct === false;
             if (filter === "saved") return !!bookmarks[key];
@@ -234,6 +245,7 @@
         let selected = new Set();
         let desiredCount = 20;
         let poolFilter = "all";
+        let questionSource = "all";
         let selectedMode = "practice";
         let timed = true;
         let customMinutes = null;
@@ -310,19 +322,30 @@
             return `<span class="cv-chapter-icon" data-tone="${chapter.index}" aria-hidden="true">${uiIcon(chapterIcons[chapter.id] || "library")}</span>`;
         }
 
-        function counts(scope) {
+        function counts(scope, source = "all") {
             const chosen = new Set(scope);
-            const progress = Object.values(store.progress).filter((item) => inScope(item, chosen));
-            const count = topics.size ? [...topics.values()].filter((topic) => inScope({ chapterId: topic.chapterId, subchapterId: topic.id }, chosen)).reduce((sum, topic) => sum + topic.count, 0)
-                : chapters.filter((chapter) => chosen.size === 0 || chosen.has(chapter.id)).reduce((sum, chapter) => sum + chapter.count, 0);
+            const progress = Object.entries(store.progress).filter(([key, item]) => fromSource(key, source) && inScope(item, chosen)).map(([, item]) => item);
+            const count = topics.size ? [...topics.values()].filter((topic) => inScope({ chapterId: topic.chapterId, subchapterId: topic.id }, chosen)).reduce((sum, topic) => sum + countOf(topic, source), 0)
+                : chapters.filter((chapter) => chosen.size === 0 || chosen.has(chapter.id)).reduce((sum, chapter) => sum + countOf(chapter, source), 0);
             return { total: count, attempted: progress.length, correct: progress.filter((item) => item.correct).length,
                 wrong: progress.filter((item) => item.correct === false).length,
-                saved: Object.values(store.bookmarks).filter((item) => inScope(item, chosen)).length };
+                saved: Object.entries(store.bookmarks).filter(([key, item]) => fromSource(key, source) && inScope(item, chosen)).length };
+        }
+
+        const sourceNames = { all: "All questions", model: "Model-paper bank", capsule: "Capsule questions" };
+        const sourceTotals = { all: total, model: chapters.reduce((sum, chapter) => sum + countOf(chapter, "model"), 0), capsule: chapters.reduce((sum, chapter) => sum + countOf(chapter, "capsule"), 0) };
+
+        function sourceOptions() {
+            return Object.keys(sourceNames).map((key) => `<option value="${key}"${questionSource === key ? " selected" : ""}>${sourceNames[key]} (${number(sourceTotals[key])})</option>`).join("");
+        }
+
+        function sourceTitle(title) {
+            return questionSource === "all" ? title : title + " · " + sourceNames[questionSource];
         }
 
         function availableCount() {
             if (!selected.size) return 0;
-            const stats = counts([...selected]);
+            const stats = counts([...selected], questionSource);
             return poolFilter === "unseen" ? Math.max(0, stats.total - stats.attempted)
                 : poolFilter === "wrong" ? stats.wrong : poolFilter === "saved" ? stats.saved : stats.total;
         }
@@ -383,7 +406,7 @@
         function selectChapter(id, on) {
             const chapter = chapterMap.get(id);
             if (!chapter) return;
-            leafNodes(chapter).filter((topic) => topic.count > 0).forEach((topic) => {
+            leafNodes(chapter).filter((topic) => countOf(topic, questionSource) > 0).forEach((topic) => {
                 if (on) selected.add(topic.id); else selected.delete(topic.id);
             });
         }
@@ -393,18 +416,19 @@
         }
 
         function selectedTitle() {
-            if (selected.size === 1) return topicTitle(topics.get([...selected][0]) || chapterMap.get([...selected][0]));
-            return "Custom " + selectedMode + " · " + selected.size + " topic groups";
+            if (selected.size === 1) return sourceTitle(topicTitle(topics.get([...selected][0]) || chapterMap.get([...selected][0])));
+            return sourceTitle("Custom " + selectedMode + " · " + selected.size + " topic groups");
         }
 
         function builderChapter(chapter) {
             const leaves = leafNodes(chapter);
+            const chapterCount = countOf(chapter, questionSource);
             return `<details class="cv-builder-chapter${chapter.additional ? " cv-additional" : ""}" data-builder-group="${chapter.id}"${builderOpen.has(chapter.id) ? " open" : ""}>
-                <summary><span class="cv-chevron">${chevron}</span>${icon(chapter)}<span class="cv-chapter-name"><b>${chapter.number ? chapter.number + ". " : ""}${esc(chapter.name)}</b><small>${chapter.additional ? "Outside or unclear in the supplied syllabus" : leaves.length + " official subchapters"} &middot; ${number(chapter.count)} questions</small></span><span class="cv-selection-count" data-selection-count="${chapter.id}"></span></summary>
-                <div class="cv-builder-chapter-body"><label class="cv-select-chapter"><input type="checkbox" data-cp-chapter="${chapter.id}" ${chapter.count ? "" : "disabled"} /><span>Select all available ${chapter.additional ? "groups" : "subchapters"}</span></label>
-                <div class="cv-subchapter-picks">${leaves.map((topic) => `<label class="cv-pick-subchapter${selected.has(topic.id) ? " on" : ""}${topic.count ? "" : " cv-topic-empty"}">
-                    <input type="checkbox" data-cp-subchapter="${topic.id}"${selected.has(topic.id) ? " checked" : ""}${topic.count ? "" : " disabled"} />
-                    <span class="cv-pick-info"><b>${esc(topicTitle(topic))}</b><small>${topic.code ? esc(topic.code) : "Additional bank questions"}${topic.count ? "" : " · No matching bank questions yet"}</small></span><span class="cv-count">${topic.count} Q</span></label>`).join("")}</div></div></details>`;
+                <summary><span class="cv-chevron">${chevron}</span>${icon(chapter)}<span class="cv-chapter-name"><b>${chapter.number ? chapter.number + ". " : ""}${esc(chapter.name)}</b><small>${chapter.additional ? "Outside or unclear in the supplied syllabus" : leaves.length + " official subchapters"} &middot; ${number(chapterCount)} questions</small></span><span class="cv-selection-count" data-selection-count="${chapter.id}"></span></summary>
+                <div class="cv-builder-chapter-body"><label class="cv-select-chapter"><input type="checkbox" data-cp-chapter="${chapter.id}" ${chapterCount ? "" : "disabled"} /><span>Select all available ${chapter.additional ? "groups" : "subchapters"}</span></label>
+                <div class="cv-subchapter-picks">${leaves.map((topic) => { const topicCount = countOf(topic, questionSource); return `<label class="cv-pick-subchapter${selected.has(topic.id) ? " on" : ""}${topicCount ? "" : " cv-topic-empty"}">
+                    <input type="checkbox" data-cp-subchapter="${topic.id}"${selected.has(topic.id) ? " checked" : ""}${topicCount ? "" : " disabled"} />
+                    <span class="cv-pick-info"><b>${esc(topicTitle(topic))}</b><small>${topic.code ? esc(topic.code) : "Additional bank questions"}${topicCount ? "" : " · No questions from this source"}</small></span><span class="cv-count">${topicCount} Q</span></label>`; }).join("")}</div></div></details>`;
         }
 
         function renderBuilder() {
@@ -415,6 +439,7 @@
                 </section>
                 <section class="cv-panel cv-builder-summary"><div class="cv-step-head"><span class="cv-step-no">2</span><div><h3>Choose how to learn</h3><p>One mark per correct answer. No negative marking.</p></div></div>
                     <fieldset class="cs-session-mode"><legend>Session mode</legend><label><input type="radio" name="cpMode" value="practice" ${selectedMode === "practice" ? "checked" : ""} /><span><b>Practice</b></span></label><label><input type="radio" name="cpMode" value="exam" ${selectedMode === "exam" ? "checked" : ""} /><span><b>Exam</b></span></label></fieldset>
+                    <label class="cv-field"><span>Question source</span><select id="cpSource">${sourceOptions()}</select></label>
                     <label class="cv-field"><span>Question pool</span><select id="cpPool"><option value="all">All questions</option><option value="unseen">Not yet attempted in practice</option><option value="wrong">Incorrect in practice</option><option value="saved">Saved questions</option></select></label>
                     <span class="cv-builder-hint">Number of questions</span><div class="cv-count-presets">${[10, 20, 30, 50, 100].map((n) => `<button type="button" class="cv-count-chip" data-cp-action="count" data-count="${n}">${n}</button>`).join("")}</div>
                     <label class="cv-field"><span>Custom count (1–100)</span><input type="number" id="cpCount" min="1" max="100" step="1" value="${desiredCount}" inputmode="numeric" /></label>
@@ -439,7 +464,7 @@
             $("cpSelectedChips").innerHTML = [...selected].slice(0, 5).map((id) => `<span>${esc(topicTitle(topics.get(id) || chapterMap.get(id)))}</span>`).join("")
                 + (selected.size > 5 ? `<span>+${selected.size - 5} more selected</span>` : "");
             chapters.forEach((chapter) => {
-                const leaves = leafNodes(chapter).filter((topic) => topic.count > 0);
+                const leaves = leafNodes(chapter).filter((topic) => countOf(topic, questionSource) > 0);
                 const chosen = leaves.filter((topic) => selected.has(topic.id)).length;
                 const input = $("cvBuilder").querySelector(`[data-cp-chapter="${chapter.id}"]`);
                 if (input) { input.checked = leaves.length > 0 && chosen === leaves.length; input.indeterminate = chosen > 0 && chosen < leaves.length; }
@@ -457,7 +482,7 @@
             $("cpBuildStart").disabled = !selected.size || available === 0;
             $("cpBuildStart").textContent = count ? `Start ${count}-question ${selectedMode}` : "Start " + selectedMode;
             $("cpBuilderHint").textContent = !selected.size ? "Choose at least one chapter or subchapter to begin."
-                : !available ? "No questions match this pool. Try All questions, or save and answer some questions first."
+                : !available ? "No questions match this source and pool. Try another source or All questions."
                 : selectedMode === "exam" && timed ? "The timer continues if you leave." : "";
             $("cpBuilderHint").hidden = !$("cpBuilderHint").textContent;
             $("cvBuilder").querySelectorAll("[data-count]").forEach((button) => {
@@ -469,24 +494,27 @@
 
         function renderChapters() {
             const query = $("cvChapterSearch").value.trim().toLowerCase();
+            if ($("cvChapterSource")) $("cvChapterSource").innerHTML = sourceOptions();
             const matchesChapter = (chapter) => `${chapter.number || ""} ${chapter.code || ""} ${chapter.name}`.toLowerCase().includes(query);
             const matchesTopic = (topic) => `${topic.number} ${topic.code} ${topic.name} ${topic.detail}`.toLowerCase().includes(query);
             const matching = chapters.filter((chapter) => matchesChapter(chapter) || leafNodes(chapter).some(matchesTopic));
             $("cvChapterList").innerHTML = matching.length ? matching.map((chapter) => {
-                const stats = counts([chapter.id]);
+                const stats = counts([chapter.id], questionSource);
+                const chapterCount = countOf(chapter, questionSource);
                 const leaves = matchesChapter(chapter) ? leafNodes(chapter) : leafNodes(chapter).filter(matchesTopic);
                 return `<details class="cv-chapter${chapter.additional ? " cv-additional" : ""}" data-chapter-group="${chapter.id}"${query || chapterOpen.has(chapter.id) ? " open" : ""}><summary><span class="cv-chevron">${chevron}</span>${icon(chapter)}
-                    <span class="cv-chapter-name"><b>${chapter.number ? chapter.number + ". " : ""}${esc(chapter.name)}</b><small>${chapter.additional ? "Kept outside the official topic counts" : leafNodes(chapter).length + " subchapters · " + chapter.code}${stats.attempted ? " · " + stats.attempted + " practised" : ""}</small></span><span class="cv-count">${chapter.count} Q</span></summary>
+                    <span class="cv-chapter-name"><b>${chapter.number ? chapter.number + ". " : ""}${esc(chapter.name)}</b><small>${chapter.additional ? "Kept outside the official topic counts" : leafNodes(chapter).length + " subchapters · " + chapter.code}${stats.attempted ? " · " + stats.attempted + " practised" : ""}</small></span><span class="cv-count">${chapterCount} Q</span></summary>
                     <div class="cv-chapter-body">
-                    <div class="cv-chapter-progress"><div class="cv-progress-track"><span style="width:${chapter.count ? Math.min(100, stats.attempted / chapter.count * 100) : 0}%"></span></div><span>${stats.attempted} / ${chapter.count} practised</span></div>
-                    <div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-blue" data-cp-action="practice-chapter" data-chapter="${chapter.id}"${chapter.count ? "" : " disabled"}>Practice ${chapter.additional ? "additional questions" : "chapter"}</button>
-                    <button type="button" class="cv-btn cv-btn-ghost" data-cp-action="exam-chapter" data-chapter="${chapter.id}"${chapter.count ? "" : " disabled"}>Exam mode</button>
-                    <button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="build-chapter" data-chapter="${chapter.id}"${chapter.count ? "" : " disabled"}>Build a shorter set</button>${window.CIVIL_NOTES && window.CIVIL_NOTES.hasChapter(chapter.id) ? `<button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cv-nav="notes" data-note-topic="${window.CIVIL_NOTES.chapterCodes(chapter.id)[0]}">Read chapter notes</button>` : ""}</div>
+                    <div class="cv-chapter-progress"><div class="cv-progress-track"><span style="width:${chapterCount ? Math.min(100, stats.attempted / chapterCount * 100) : 0}%"></span></div><span>${stats.attempted} / ${chapterCount} practised</span></div>
+                    <div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-blue" data-cp-action="practice-chapter" data-chapter="${chapter.id}"${chapterCount ? "" : " disabled"}>Practice ${chapter.additional ? "additional questions" : "chapter"}</button>
+                    <button type="button" class="cv-btn cv-btn-ghost" data-cp-action="exam-chapter" data-chapter="${chapter.id}"${chapterCount ? "" : " disabled"}>Exam mode</button>
+                    <button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="build-chapter" data-chapter="${chapter.id}"${chapterCount ? "" : " disabled"}>Build a shorter set</button>${window.CIVIL_NOTES && window.CIVIL_NOTES.hasChapter(chapter.id) ? `<button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cv-nav="notes" data-note-topic="${window.CIVIL_NOTES.chapterCodes(chapter.id)[0]}">Read chapter notes</button>` : ""}</div>
                     <div class="cv-subchapter-list">${leaves.map((topic) => {
-                        const progress = counts([topic.id]);
-                        return `<article class="cv-subchapter${topic.count ? "" : " cv-topic-empty"}" data-subchapter="${topic.id}"><div class="cv-subchapter-head"><div><h4>${esc(topicTitle(topic))}</h4>${topic.code ? `<span class="cv-topic-code">${topic.code}</span>` : ""}</div><span class="cv-count">${topic.count} Q</span></div>
-                            <p class="cv-subchapter-detail">${esc(topic.detail)}</p><p class="cv-subchapter-progress">${topic.count ? `${progress.attempted} practised · ${progress.correct} last answered correctly` : "No matching questions in the current bank. This official syllabus topic is not yet covered."}</p>
-                            <div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-blue cv-btn-sm" data-cp-action="practice-subchapter" data-topic="${topic.id}"${topic.count ? "" : " disabled"}>Practice</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="exam-subchapter" data-topic="${topic.id}"${topic.count ? "" : " disabled"}>Exam</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="build-subchapter" data-topic="${topic.id}"${topic.count ? "" : " disabled"}>Add to session</button>${window.CIVIL_NOTES && window.CIVIL_NOTES.hasTopic(topic.id) ? `<button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cv-nav="notes" data-note-topic="${topic.id}">Read notes</button>` : ""}</div></article>`;
+                        const progress = counts([topic.id], questionSource);
+                        const topicCount = countOf(topic, questionSource);
+                        return `<article class="cv-subchapter${topicCount ? "" : " cv-topic-empty"}" data-subchapter="${topic.id}"><div class="cv-subchapter-head"><div><h4>${esc(topicTitle(topic))}</h4>${topic.code ? `<span class="cv-topic-code">${topic.code}</span>` : ""}</div><span class="cv-count">${topicCount} Q</span></div>
+                            <p class="cv-subchapter-detail">${esc(topic.detail)}</p><p class="cv-subchapter-progress">${topicCount ? `${progress.attempted} practised · ${progress.correct} last answered correctly` : topic.count ? "No questions from the selected source in this topic." : "No matching questions in the current bank. This official syllabus topic is not yet covered."}</p>
+                            <div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-blue cv-btn-sm" data-cp-action="practice-subchapter" data-topic="${topic.id}"${topicCount ? "" : " disabled"}>Practice</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="exam-subchapter" data-topic="${topic.id}"${topicCount ? "" : " disabled"}>Exam</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="build-subchapter" data-topic="${topic.id}"${topicCount ? "" : " disabled"}>Add to session</button>${window.CIVIL_NOTES && window.CIVIL_NOTES.hasTopic(topic.id) ? `<button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cv-nav="notes" data-note-topic="${topic.id}">Read notes</button>` : ""}</div></article>`;
                     }).join("")}</div></div></details>`;
             }).join("") : '<div class="cv-empty"><b>No matching syllabus topics</b><p>Try a chapter name, subchapter number, official code or syllabus keyword.</p></div>';
         }
@@ -524,7 +552,7 @@
         function openSavedLibrary(config) {
             loadFor(config, (records) => {
                 const pool = config.ids ? resolveIds(records, config.ids)
-                    : filterPool(records, config.scope || [], config.filter || "all", store.progress, store.bookmarks);
+                    : filterPool(records, config.scope || [], config.filter || "all", store.progress, store.bookmarks, config.source);
                 screen = { mode: "library", records: pool, config, page: 0, query: "", filter: "all" };
                 renderViewer();
             });
@@ -535,7 +563,7 @@
             const slot = draftKey(mode);
             const start = () => loadFor(config, (records) => {
                 let pool = config.ids ? resolveIds(records, config.ids)
-                    : filterPool(records, config.scope || [], config.filter || "all", store.progress, store.bookmarks);
+                    : filterPool(records, config.scope || [], config.filter || "all", store.progress, store.bookmarks, config.source);
                 if (config.setKey) pool = pool.filter((item) => item.setKey === config.setKey).sort((a, b) => a.sourceNo - b.sourceNo);
                 const chosen = config.count ? sample(pool, config.count) : pool;
                 if (!chosen.length) {
@@ -592,7 +620,7 @@
             $("cpBuilderError").hidden = !error;
             if (error || !selected.size || !availableCount()) return;
             startPractice({ title: selectedTitle(),
-                origin: "practice", scope: [...selected], filter: poolFilter, mode: selectedMode,
+                origin: "practice", scope: [...selected], filter: poolFilter, source: questionSource, mode: selectedMode,
                 count: Math.min(countValue, availableCount()), minutes: selectedMode === "exam" && timed ? minuteValue : 0 });
         }
 
@@ -886,7 +914,7 @@
             const action = button.dataset.cpAction;
             const id = button.dataset.id, chapterId = button.dataset.chapter, topicId = button.dataset.topic;
             if (action === "select-all" || action === "clear-selection") {
-                selected = new Set(action === "select-all" ? chapters.flatMap((chapter) => leafNodes(chapter).filter((topic) => topic.count > 0).map((topic) => topic.id)) : []);
+                selected = new Set(action === "select-all" ? chapters.flatMap((chapter) => leafNodes(chapter).filter((topic) => countOf(topic, questionSource) > 0).map((topic) => topic.id)) : []);
                 updateBuilder();
             } else if (action === "count") {
                 desiredCount = +button.dataset.count; $("cpCount").value = desiredCount; updateBuilder();
@@ -895,14 +923,14 @@
             else if (action === "discard") discard(button.dataset.mode || screen && screen.mode || "exam");
             else if (action === "history") openHistory(id);
             else if (action === "retry-load" && retryLoad) retryLoad();
-            else if (action === "practice-all") startPractice({ title: "All Civil Engineering questions", origin: "chapters", scope: [], mode: "practice" });
-            else if (action === "exam-chapter" && chapterMap.has(chapterId)) startPractice({ title: chapterMap.get(chapterId).name, origin: "chapters", scope: [chapterId], mode: "exam" });
-            else if (action === "practice-chapter" && chapterMap.has(chapterId)) startPractice({ title: chapterMap.get(chapterId).name, origin: "chapters", scope: [chapterId], mode: "practice" });
+            else if (action === "practice-all") startPractice({ title: sourceTitle("All Civil Engineering questions"), origin: "chapters", scope: [], source: questionSource, mode: "practice" });
+            else if (action === "exam-chapter" && chapterMap.has(chapterId)) startPractice({ title: sourceTitle(chapterMap.get(chapterId).name), origin: "chapters", scope: [chapterId], source: questionSource, mode: "exam" });
+            else if (action === "practice-chapter" && chapterMap.has(chapterId)) startPractice({ title: sourceTitle(chapterMap.get(chapterId).name), origin: "chapters", scope: [chapterId], source: questionSource, mode: "practice" });
             else if (action === "build-chapter" && chapterMap.has(chapterId)) { selected.clear(); selectChapter(chapterId, true); builderOpen.add(chapterId); poolFilter = "all"; deps.navigate("practice"); }
-            else if (action === "exam-subchapter" && topics.has(topicId)) startPractice({ title: topicTitle(topics.get(topicId)), origin: "chapters", scope: [topicId], mode: "exam" });
-            else if (action === "practice-subchapter" && topics.has(topicId)) startPractice({ title: topicTitle(topics.get(topicId)), origin: "chapters", scope: [topicId], mode: "practice" });
+            else if (action === "exam-subchapter" && topics.has(topicId)) startPractice({ title: sourceTitle(topicTitle(topics.get(topicId))), origin: "chapters", scope: [topicId], source: questionSource, mode: "exam" });
+            else if (action === "practice-subchapter" && topics.has(topicId)) startPractice({ title: sourceTitle(topicTitle(topics.get(topicId))), origin: "chapters", scope: [topicId], source: questionSource, mode: "practice" });
             else if (action === "build-subchapter" && topics.has(topicId)) { selected.add(topicId); builderOpen.add(topics.get(topicId).chapterId); poolFilter = "all"; deps.navigate("practice"); }
-            else if (action === "mistakes") { selected = new Set([...topics.values()].filter((topic) => topic.count > 0).map((topic) => topic.id)); selectedMode = "practice"; poolFilter = "wrong"; deps.navigate("practice"); }
+            else if (action === "mistakes") { selected = new Set([...topics.values()].filter((topic) => topic.count > 0).map((topic) => topic.id)); selectedMode = "practice"; poolFilter = "wrong"; questionSource = "all"; deps.navigate("practice"); }
             else if (!screen) return;
             else if (action === "leave-session") leaveSession();
             else if (action === "feedback-answer") pick(id, button.dataset.answer);
@@ -953,6 +981,10 @@
                 if (node.checked) selected.add(node.dataset.cpSubchapter); else selected.delete(node.dataset.cpSubchapter);
                 updateBuilder();
             } else if (node.id === "cpPool") { poolFilter = node.value; updateBuilder(); }
+            else if ((node.id === "cpSource" || node.id === "cvChapterSource") && sourceNames[node.value]) {
+                questionSource = node.value;
+                if (node.id === "cpSource") renderBuilder(); else renderChapters();
+            }
             else if (node.name === "cpMode") { selectedMode = node.value === "exam" ? "exam" : "practice"; updateBuilder(); }
             else if (node.matches("[data-fp-filter]") && screen && screen.mode === "practice") { screen.filter = node.value; screen.navPage = 0; renderFocus(); }
             else if (node.id === "cpTimed") { timed = node.checked; updateBuilder(); }
@@ -1008,5 +1040,5 @@
             } };
     }
 
-    window.CIVIL_PRACTICE = { create, chaptersFrom, createTaxonomy, createBank, grade, filterPool, sample, questionKey, slug, modeOf, recordFeedback, STORE_KEY };
+    window.CIVIL_PRACTICE = { create, chaptersFrom, createTaxonomy, createBank, grade, filterPool, sample, questionKey, originOf, countOf, slug, modeOf, recordFeedback, STORE_KEY };
 })();
