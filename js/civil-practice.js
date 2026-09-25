@@ -6,6 +6,8 @@
     const HISTORY_LIMIT = 20;
     const slug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
     const questionKey = (item) => item.q.src || item.q.id;
+    const sourceLabel = (item) => item.q.source?.kind === "capsule"
+        ? item.q.source.reference : `Model ${item.setNo}, Q${item.sourceNo}`;
     const plainText = (value) => String(value || "").replace(/<svg[\s\S]*?<\/svg>/gi, " ")
         .replace(/<[^>]*>/g, " ").replace(/&(?:nbsp|amp|lt|gt|quot|#\d+);/g, " ")
         .replace(/\s+/g, " ").trim().toLowerCase();
@@ -21,7 +23,7 @@
         return [...chapters.values()];
     }
 
-    function createTaxonomy(entries, syllabus = window.CIVIL_SYLLABUS, mapping = window.CIVIL_TOPIC_MAP) {
+    function createTaxonomy(entries, syllabus = window.CIVIL_SYLLABUS, mapping = window.CIVIL_TOPIC_MAP, supplements = window.CIVIL_CAPSULE_INDEX || []) {
         const legacy = chaptersFrom(entries);
         if (!syllabus || !mapping) return { chapters: legacy, official: [], topics: new Map(), assignments: new Map(), total: legacy.reduce((sum, chapter) => sum + chapter.count, 0) };
         const chapters = syllabus.chapters.map((chapter, index) => ({ ...chapter, index, count: 0,
@@ -56,6 +58,23 @@
                 assignments.set(source + "-" + String(n).padStart(5, "0"), topic);
             }
         }
+        for (const supplement of supplements) {
+            for (const group of supplement.topics) {
+                if (group.code === "additional-capsule-rural" && !topics.has(group.code)) {
+                    const topic = { id: group.code, code: "", number: "", name: "Civil and rural engineering (capsule)",
+                        detail: "Additional rural-engineering material from the capsule, outside the listed civil syllabus subchapters.",
+                        chapterId: extra.id, index: extra.subchapters.length, additional: true, count: 0 };
+                    topics.set(topic.id, topic); extra.subchapters.push(topic);
+                }
+                const topic = topics.get(group.code);
+                if (!topic) throw new Error("Unknown capsule subchapter: " + group.code);
+                for (const id of group.ids) {
+                    if (assignments.has(id)) throw new Error("Duplicate question source: " + id);
+                    assignments.set(id, topic);
+                    topic.count++;
+                }
+            }
+        }
         extra.count = extra.subchapters.reduce((sum, topic) => sum + topic.count, 0);
         if (extra.count) chapters.push(extra);
         chapters.forEach((chapter) => { chapter.count = chapter.subchapters.reduce((sum, topic) => sum + topic.count, 0); });
@@ -68,6 +87,7 @@
 
     function createBank(entries, loadSet) {
         const taxonomy = createTaxonomy(entries);
+        const sources = entries.concat((window.CIVIL_CAPSULE_INDEX || []).map((meta) => ({ key: meta.key, no: null, meta, set: null })));
         const chapters = taxonomy.chapters;
         const chapterMap = new Map(chapters.map((chapter) => [chapter.id, chapter]));
         let records = null;
@@ -76,17 +96,17 @@
         const listeners = new Set();
         function load(onProgress) {
             if (records) return Promise.resolve(records);
-            if (onProgress) { listeners.add(onProgress); onProgress(loaded, entries.length); }
+            if (onProgress) { listeners.add(onProgress); onProgress(loaded, sources.length); }
             if (!pending) {
                 loaded = 0;
                 pending = (async () => {
                     let cursor = 0;
-                    const groups = new Array(entries.length);
+                    const groups = new Array(sources.length);
                     const failures = [];
-                    await Promise.all(Array.from({ length: Math.min(4, entries.length) }, async () => {
-                        while (cursor < entries.length) {
+                    await Promise.all(Array.from({ length: Math.min(4, sources.length) }, async () => {
+                        while (cursor < sources.length) {
                             const i = cursor++;
-                            const entry = entries[i];
+                            const entry = sources[i];
                             try {
                                 const data = await loadSet(entry);
                                 let no = 0;
@@ -100,7 +120,7 @@
                                         subchapterOrder: topic ? topic.index : 0, setKey: entry.key, setNo: entry.no, sourceNo: ++no };
                                 }));
                                 loaded++;
-                                listeners.forEach((listener) => listener(loaded, entries.length));
+                                listeners.forEach((listener) => listener(loaded, sources.length));
                             } catch (error) { failures.push(error); }
                         }
                     }));
@@ -482,7 +502,7 @@
             try {
                 const records = await bank.load((done, count) => {
                     if (token !== serial || !isOpen()) return;
-                    if ($("cpLoadProgress")) $("cpLoadProgress").value = done;
+                    if ($("cpLoadProgress")) { $("cpLoadProgress").max = count; $("cpLoadProgress").value = done; }
                     if ($("cpLoadText")) $("cpLoadText").textContent = `${done} of ${count} question files ready`;
                 });
                 if (token !== serial || !isOpen()) return;
@@ -678,7 +698,7 @@
             const status = result ? recordStatus(item) : "";
             return `<article class="cv-q${flagged ? " flagged" : ""}" data-cp-q="${esc(key)}">
                 <div class="cv-q-head"><span class="cv-q-num">${item.no}.</span><div class="cv-q-body">${q.text}</div></div>
-                <div class="cv-q-meta"><span class="cv-q-source">${esc(item.subchapterName ? (item.subchapterNumber ? item.subchapterNumber + " " : "Additional · ") + item.subchapterName : item.ch.name)} &middot; Model ${item.setNo}, Q${item.sourceNo}${result ? ` &middot; <b class="cv-q-status ${status}">${status === "skipped" ? "Not answered" : status === "correct" ? "Correct" : "Incorrect"}</b>` : ""}</span>
+                <div class="cv-q-meta"><span class="cv-q-source">${esc(item.subchapterName ? (item.subchapterNumber ? item.subchapterNumber + " " : "Additional · ") + item.subchapterName : item.ch.name)} &middot; ${esc(sourceLabel(item))}${result ? ` &middot; <b class="cv-q-status ${status}">${status === "skipped" ? "Not answered" : status === "correct" ? "Correct" : "Incorrect"}</b>` : ""}</span>
                 <div class="cv-q-controls">${practice ? `<button type="button" class="cv-flag${flagged ? " on" : ""}" data-cp-action="flag" data-id="${esc(key)}" aria-pressed="${flagged}" aria-label="Flag question ${item.no} for review">${flagIcon}</button>` : ""}${bookmarkButton(item)}</div></div>
                 <ul class="cv-opts">${q.options.map((option) => {
                     const selectedOption = option.key === chosen, correct = reveal && option.key === q.answer;
@@ -751,7 +771,7 @@
                             return `<button type="button" class="fp-choice${isCorrect ? " correct" : ""}${isWrong ? " wrong" : ""}${option.key === chosen ? " chosen" : ""}" data-cp-action="feedback-answer" data-id="${esc(key)}" data-answer="${option.key}"${answered ? " disabled" : ""}><span class="fp-letter">${option.key.toUpperCase()}</span><span class="fp-choice-text">${option.text}</span>${isCorrect || isWrong ? `<span class="fp-choice-label">${uiIcon(isCorrect ? "check" : "close")}${isCorrect ? "Correct answer" : "Your answer"}</span>` : '<span class="fp-choice-circle" aria-hidden="true"></span>'}</button>`;
                         }).join("")}</div>
                         ${answered ? `<div class="fp-feedback ${correct ? "correct" : "wrong"}" id="fpFeedback" role="status" tabindex="-1"><b>${correct ? "Correct. Well done." : "Not quite — here’s the answer."}</b><p>The correct option is <strong>${q.answer.toUpperCase()}</strong>. Your first choice has been recorded.</p><div class="fp-explanation"><span>WHY THIS ANSWER</span><div>${q.explanation || "No explanation is available for this question."}</div></div></div>` : '<p class="fp-answer-prompt">Choose an option to reveal the correct answer and explanation.</p>'}
-                        <footer class="fp-card-foot"><span>${esc(item.subchapterName || item.ch.name)} · Model ${item.setNo}, Q${item.sourceNo}</span>${bookmarkButton(item)}</footer>
+                        <footer class="fp-card-foot"><span>${esc(item.subchapterName || item.ch.name)} · ${esc(sourceLabel(item))}</span>${bookmarkButton(item)}</footer>
                     </article><p class="fp-help">${answered ? "This answer stays locked for the round. Retry it after finishing." : "No rush. Take your time to work it through."}</p>
                 </section><aside class="fp-sidebar">${focusNavigator()}</aside></div>
                 <footer class="fp-footer"><div><button type="button" class="fp-button" data-cp-action="focus-go" data-index="${run.index - 1}"${run.index === 0 ? " disabled" : ""}>${uiIcon("arrow-left")} Previous</button><button type="button" class="fp-button fp-flag${flagged ? " on" : ""}" data-cp-action="flag" data-id="${esc(key)}" aria-pressed="${flagged}">${flagIcon}<span>${flagged ? "Flagged" : "Flag for review"}</span></button>${run.index === screen.records.length - 1 ? `<button type="button" class="fp-button fp-primary" data-cp-action="submit">Finish practice ${uiIcon("arrow-right")}</button>` : `<button type="button" class="fp-button fp-primary" data-cp-action="focus-go" data-index="${run.index + 1}">Next question ${uiIcon("arrow-right")}</button>`}</div></footer>
@@ -796,7 +816,7 @@
                 <div class="cv-exam">${practice ? `<div class="cv-infobox"><div><div class="cv-ei-name">${esc(deps.candidate)} · ${esc(config.title)} · Exam</div><div class="cv-ei-timer">${screen.run.endsAt ? "Time remaining" : "Your pace"}: <b id="cpTimer"></b></div><div class="cv-ei-answered" id="cpAnswered"></div><button type="button" class="cv-ei-link" data-cp-action="show-unanswered">View unanswered questions</button><p id="cpUnanswered" hidden></p></div><span class="cv-ei-photo" aria-hidden="true">${esc(deps.candidate[0])}</span></div>` : ""}
                 ${!practice ? `<div class="cv-viewer-tools"><label class="cv-search"><span>Search within these questions</span><input type="search" id="cpQuestionSearch" value="${esc(screen.query)}" placeholder="Type a keyword and press Enter" /></label><button type="button" class="cv-btn cv-btn-ghost" data-cp-action="search">Search</button></div>` : ""}
                 ${filterButtons}${pager(false)}<div class="cv-pager-nums">${Array.from({ length: pages }, (_, p) => `<button type="button" class="cv-pager-num${p === screen.page ? " active" : ""}" data-cp-action="page" data-page="${p}" ${p === screen.page ? 'aria-current="page"' : ""}>${p + 1}</button>`).join("")}</div>
-                <div id="cpQuestionList">${slice.length ? slice.map((item) => mode === "library" ? `<article class="cs-saved-question" data-saved-q="${esc(questionKey(item))}"><div><small>${esc(item.subchapterName || item.ch.name)} · Model ${item.setNo}</small><h3>${item.q.text}</h3></div>${bookmarkButton(item)}<div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-blue cv-btn-sm" data-cp-action="practice-single" data-id="${esc(questionKey(item))}">Practice</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="exam-single" data-id="${esc(questionKey(item))}">Exam</button></div></article>` : questionHtml(item)).join("") : `<div class="cv-empty"><b>${config.filter === "saved" && !screen.records.length ? "No saved questions yet" : "No questions match"}</b><p>${config.filter === "saved" ? "Use Save beside any question to keep it here for later." : "Choose another filter, clear your search or return to the chapter list."}</p></div>`}</div>
+                <div id="cpQuestionList">${slice.length ? slice.map((item) => mode === "library" ? `<article class="cs-saved-question" data-saved-q="${esc(questionKey(item))}"><div><small>${esc(item.subchapterName || item.ch.name)} · ${esc(sourceLabel(item))}</small><h3>${item.q.text}</h3></div>${bookmarkButton(item)}<div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-blue cv-btn-sm" data-cp-action="practice-single" data-id="${esc(questionKey(item))}">Practice</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="exam-single" data-id="${esc(questionKey(item))}">Exam</button></div></article>` : questionHtml(item)).join("") : `<div class="cv-empty"><b>${config.filter === "saved" && !screen.records.length ? "No saved questions yet" : "No questions match"}</b><p>${config.filter === "saved" ? "Use Save beside any question to keep it here for later." : "Choose another filter, clear your search or return to the chapter list."}</p></div>`}</div>
                 ${pager(true)}${practice ? '<div class="cv-exam-actions"><button type="button" class="cv-btn cv-btn-blue" data-cp-action="submit">Submit exam</button><button type="button" class="cv-btn cv-btn-ghost" data-cp-action="discard" data-mode="exam">Discard exam</button><span class="cv-muted" id="cpAnswerCount"></span></div>' : ""}</div>`);
             if (practice) refreshPractice();
         }

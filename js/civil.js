@@ -245,7 +245,7 @@
             element.innerHTML = window.CEE_UI_ICONS ? window.CEE_UI_ICONS.svg(element.dataset.necIcon) : "";
         });
         if ($("necNotesCount")) $("necNotesCount").textContent = (window.CIVIL_SYLLABUS?.chapters || []).reduce((sum, chapter) => sum + chapter.subchapters.length, 0) + " topics";
-        if ($("necQuestionCount")) $("necQuestionCount").textContent = allQ.toLocaleString("en-US") + " questions";
+        if ($("necQuestionCount")) $("necQuestionCount").textContent = (allQ + (window.CIVIL_CAPSULE_INDEX || []).reduce((sum, source) => sum + source.total, 0)).toLocaleString("en-US") + " questions";
         if ($("necPaperCount")) $("necPaperCount").textContent = SETS.length + " papers";
 
         $("cvKpis").innerHTML =
