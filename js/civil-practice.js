@@ -435,6 +435,7 @@
             $("cvBuilder").innerHTML = draftCard() + `<div class="cv-builder-layout">
                 <section class="cv-panel"><div class="cv-step-head"><span class="cv-step-no">1</span><div><h3>Select chapters &amp; subchapters</h3></div></div>
                     <div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="select-all">Select all</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="clear-selection">Clear</button></div>
+                    <div class="cv-selection-summary" id="cpSelectionSummary" aria-live="polite" hidden></div>
                     <div class="cv-selection-list">${chapters.map(builderChapter).join("")}</div>
                 </section>
                 <section class="cv-panel cv-builder-summary"><div class="cv-step-head"><span class="cv-step-no">2</span><div><h3>Choose how to learn</h3><p>One mark per correct answer. No negative marking.</p></div></div>
@@ -463,6 +464,12 @@
             $("cpBuildTotal").innerHTML = `<b>${number(available)}</b><span>questions available in ${selectionLabel} selected</span>`;
             $("cpSelectedChips").innerHTML = [...selected].slice(0, 5).map((id) => `<span>${esc(topicTitle(topics.get(id) || chapterMap.get(id)))}</span>`).join("")
                 + (selected.size > 5 ? `<span>+${selected.size - 5} more selected</span>` : "");
+            const ordered = [...topics.values()].filter((topic) => selected.has(topic.id));
+            $("cpSelectionSummary").hidden = !ordered.length;
+            $("cpSelectionSummary").innerHTML = ordered.length ? `<b>Selected for this session (${ordered.length})</b><div>${ordered.map((topic) => {
+                const title = topicTitle(topic);
+                return `<button type="button" class="cv-selection-chip" data-cp-action="unselect" data-topic="${esc(topic.id)}" aria-label="Remove ${esc(title)} (${countOf(topic, questionSource)} questions)"><span>${esc(title)}</span><small>${countOf(topic, questionSource)} Q</small>${uiIcon("close")}</button>`;
+            }).join("")}</div>` : "";
             chapters.forEach((chapter) => {
                 const leaves = leafNodes(chapter).filter((topic) => countOf(topic, questionSource) > 0);
                 const chosen = leaves.filter((topic) => selected.has(topic.id)).length;
@@ -916,7 +923,8 @@
             if (action === "select-all" || action === "clear-selection") {
                 selected = new Set(action === "select-all" ? chapters.flatMap((chapter) => leafNodes(chapter).filter((topic) => countOf(topic, questionSource) > 0).map((topic) => topic.id)) : []);
                 updateBuilder();
-            } else if (action === "count") {
+            } else if (action === "unselect") { selected.delete(topicId); updateBuilder(); }
+            else if (action === "count") {
                 desiredCount = +button.dataset.count; $("cpCount").value = desiredCount; updateBuilder();
             } else if (action === "start-custom") chooseCustom();
             else if (action === "resume") resume(button.dataset.mode || "exam");

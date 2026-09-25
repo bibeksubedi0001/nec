@@ -274,6 +274,16 @@ body.civil-open:not(.civil-session) .shell { width: 100%; max-width: 1500px; pad
 #civilSection #cvPractice .cs-session-mode input { margin: 0; }
 #civilSection #cvPractice :is(input[type="checkbox"], input[type="radio"]) { accent-color: var(--cs-teal); }
 #civilSection #cvPractice .cv-selection-list { gap: 10px; margin-top: 20px; }
+#civilSection #cvPractice .cv-selection-summary { display: grid; gap: 10px; margin-top: 16px; padding: 12px; border: 1px solid #c9dccb; border-radius: 10px; background: var(--cs-mint); }
+#civilSection #cvPractice .cv-selection-summary[hidden] { display: none; }
+#civilSection #cvPractice .cv-selection-summary > b { color: var(--cs-ink); font-size: 12px; font-weight: 600; }
+#civilSection #cvPractice .cv-selection-summary > div { display: flex; flex-wrap: wrap; gap: 6px; max-height: 188px; overflow-y: auto; }
+#civilSection #cvPractice .cv-selection-chip { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; min-height: 34px; padding: 5px 8px 5px 10px; border: 1px solid #c9dccb; border-radius: 8px; background: #fff; color: var(--cs-teal); font: 600 11px/1.3 var(--cs-font); text-align: left; cursor: pointer; }
+#civilSection #cvPractice .cv-selection-chip span { min-width: 0; overflow-wrap: anywhere; }
+#civilSection #cvPractice .cv-selection-chip small { flex: none; color: var(--cs-muted); font-size: 10px; }
+#civilSection #cvPractice .cv-selection-chip svg { flex: none; width: 14px; height: 14px; }
+#civilSection #cvPractice .cv-selection-chip:hover { border-color: var(--cs-teal); }
+#civilSection #cvPractice .cv-selection-chip:focus-visible { outline: 2px solid var(--cs-teal); outline-offset: 2px; }
 #civilSection #cvPractice .cv-builder-chapter-body { padding: 14px; border-color: var(--cs-line); }
 #civilSection #cvPractice .cv-select-chapter { color: var(--cs-teal); font-size: 12px; }
 #civilSection #cvPractice .cv-subchapter-picks { padding-left: 10px; border-left: 1px solid #cddfd0; gap: 8px; }
