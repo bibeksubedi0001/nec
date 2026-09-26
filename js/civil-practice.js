@@ -225,7 +225,7 @@
     }
 
     function freshStore() {
-        return { version: 1, bookmarks: {}, progress: {}, draft: null, practiceDraft: null, history: [] };
+        return { version: 1, bookmarks: {}, progress: {}, draft: null, practiceDraft: null, history: [], setScores: {} };
     }
 
     function create(deps) {
@@ -251,6 +251,7 @@
         let customMinutes = null;
         let builderOpen = new Set();
         let chapterOpen = new Set();
+        let capsuleSetsOpen = !window.matchMedia || window.matchMedia("(min-width: 701px)").matches;
         const uiIcon = window.CEE_UI_ICONS.svg;
         const flagIcon = uiIcon("flag");
         const bookmarkIcon = uiIcon("bookmark");
@@ -276,7 +277,8 @@
                     progress: isObject(raw.progress) ? raw.progress : {},
                     draft: validRun(raw.draft) ? raw.draft : null,
                     practiceDraft: validRun(raw.practiceDraft) && modeOf(raw.practiceDraft) === "practice" ? raw.practiceDraft : null,
-                    history: Array.isArray(raw.history) ? raw.history.filter(validRun).slice(0, HISTORY_LIMIT) : [] };
+                    history: Array.isArray(raw.history) ? raw.history.filter(validRun).slice(0, HISTORY_LIMIT) : [],
+                    setScores: isObject(raw.setScores) ? raw.setScores : {} };
                 const classify = (key, item) => {
                     const topic = taxonomy.assignments.get(key);
                     return topic ? { ...item, chapterId: topic.chapterId, subchapterId: topic.id } : item;
@@ -499,7 +501,34 @@
             });
         }
 
+        function capsuleSetsHtml() {
+            const sets = window.CIVIL_CAPSULE_SETS || [];
+            if (!sets.length) return "";
+            return `<details class="cs-capsule-sets" id="cvCapsuleSetsPanel"${capsuleSetsOpen ? " open" : ""}><summary><span><b>Capsule practice sets</b><small>${sets.length} sets · 100 questions each · balanced across all chapters and subchapters</small></span>${chevron}</summary>
+                <div class="cs-capsule-grid">${sets.map((set) => {
+                    const practised = set.ids.filter((id) => store.progress[id]).length;
+                    const score = isObject(store.setScores[set.key]) ? store.setScores[set.key] : null;
+                    const live = ["exam", "practice"].filter((mode) => store[draftKey(mode)] && store[draftKey(mode)].capsuleSet === set.key);
+                    const status = live.length ? ["live", "In progress"] : score ? ["done", "Exam taken"] : ["new", "Not started"];
+                    return `<article class="cs-capsule-set" data-capsule-set="${set.key}"><div class="cs-capsule-top"><h4>${esc(set.title)}</h4><span class="cv-pill ${status[0]}">${status[1]}</span></div>
+                        <p class="cs-capsule-meta"><span>${set.total} questions</span><span>${set.durationMinutes} min</span><span>${Object.keys(set.chapters).length > 10 ? "10 chapters + rural" : Object.keys(set.chapters).length + " chapters"}</span><span>${set.topics} subchapters</span></p>
+                        <p class="cs-capsule-mix" aria-label="Questions per chapter">${Object.entries(set.chapters).map(([chapter, count]) => `<span>${chapter === "11" ? "R" : "Ch" + chapter} <b>${count}</b></span>`).join("")}</p>
+                        <div class="cs-capsule-stats"><span>Practised <b>${practised}/${set.total}</b></span><span>${score ? `Last exam <b>${score.last}%</b> · Best <b>${score.best}%</b>` : "No exam yet"}</span></div>
+                        <div class="cs-capsule-actions"><button type="button" class="cv-btn cv-btn-blue cv-btn-sm" data-cp-action="capsule-set" data-set="${set.key}" data-mode="practice">${live.includes("practice") ? "Resume practice" : "Practice"}</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="capsule-set" data-set="${set.key}" data-mode="exam">${live.includes("exam") ? "Resume exam" : "Exam"}</button></div></article>`;
+                }).join("")}</div></details>`;
+        }
+
+        function openCapsuleSet(key, mode) {
+            const set = (window.CIVIL_CAPSULE_SETS || []).find((item) => item.key === key);
+            if (!set) return;
+            const draft = store[draftKey(mode)];
+            if (draft && draft.capsuleSet === key) { resume(mode); return; }
+            startPractice({ title: set.title + (mode === "exam" ? " · Exam" : " · Practice"), origin: "chapters", ids: set.ids, capsuleSet: key,
+                mode, minutes: mode === "exam" ? set.durationMinutes : 0 });
+        }
+
         function renderChapters() {
+            if ($("cvCapsuleSets")) $("cvCapsuleSets").innerHTML = capsuleSetsHtml();
             const query = $("cvChapterSearch").value.trim().toLowerCase();
             const noteLibrary = questionSource === "capsule" ? "capsule" : "model";
             if ($("cvChapterSource")) $("cvChapterSource").innerHTML = sourceOptions();
@@ -583,6 +612,7 @@
                 const minutes = mode === "exam" ? config.minutes || 0 : 0;
                 const run = { id: mode + "-" + startedAt + "-" + Math.random().toString(36).slice(2, 8), mode,
                     title: config.title, origin: config.origin || "practice", scope: config.scope || [],
+                    ...(config.capsuleSet ? { capsuleSet: config.capsuleSet } : {}),
                     ids: chosen.map(questionKey), answers: {}, flags: {}, page: 0, index: 0, startedAt,
                     durationMinutes: minutes, endsAt: minutes ? startedAt + minutes * 60000 : null };
                 store[slot] = run;
@@ -645,6 +675,10 @@
                     attempts: (old && old.attempts || 0) + 1, updatedAt: Date.now(), mode: "exam" };
             });
             run.finishedAt = Date.now(); run.autoSubmitted = auto; run.endsAt = null; run.summary = result;
+            if (run.capsuleSet && screen.mode === "exam") {
+                const old = isObject(store.setScores[run.capsuleSet]) ? store.setScores[run.capsuleSet] : null;
+                store.setScores[run.capsuleSet] = { last: result.pct, best: Math.max(result.pct, old ? old.best || 0 : 0), attempts: (old ? old.attempts || 0 : 0) + 1, at: run.finishedAt };
+            }
             store.history = [run, ...store.history.filter((item) => item.id !== run.id)].slice(0, HISTORY_LIMIT);
             store[draftKey(screen.mode)] = null;
             screen.mode = "result"; screen.page = 0; screen.filter = "all"; screen.query = "";
@@ -932,6 +966,7 @@
             else if (action === "discard") discard(button.dataset.mode || screen && screen.mode || "exam");
             else if (action === "history") openHistory(id);
             else if (action === "retry-load" && retryLoad) retryLoad();
+            else if (action === "capsule-set" && ["practice", "exam"].includes(button.dataset.mode)) openCapsuleSet(button.dataset.set, button.dataset.mode);
             else if (action === "practice-all") startPractice({ title: sourceTitle("All Civil Engineering questions"), origin: "chapters", scope: [], source: questionSource, mode: "practice" });
             else if (action === "exam-chapter" && chapterMap.has(chapterId)) startPractice({ title: sourceTitle(chapterMap.get(chapterId).name), origin: "chapters", scope: [chapterId], source: questionSource, mode: "exam" });
             else if (action === "practice-chapter" && chapterMap.has(chapterId)) startPractice({ title: sourceTitle(chapterMap.get(chapterId).name), origin: "chapters", scope: [chapterId], source: questionSource, mode: "practice" });
@@ -1006,6 +1041,7 @@
         $("civilSection").addEventListener("toggle", (event) => {
             const node = event.target;
             if (!node.isConnected) return;
+            if (node.id === "cvCapsuleSetsPanel") { capsuleSetsOpen = node.open; return; }
             const key = node.dataset.builderGroup || node.dataset.chapterGroup;
             if (!key) return;
             const open = node.dataset.builderGroup ? builderOpen : chapterOpen;

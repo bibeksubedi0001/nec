@@ -338,6 +338,29 @@ body.civil-open:not(.civil-session) .shell { width: 100%; max-width: 1500px; pad
 /* Model papers remain distinct from both the builder and the exam renderer. */
 #civilSection #cvSets .cv-legend { color: var(--cs-muted); font-size: 10.5px; }
 #civilSection #cvSetList.cs-paper-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: 20px; margin-bottom: 28px; }
+#civilSection #cvChapters .cs-capsule-sets { margin-bottom: 24px; border: 1px solid var(--cs-line); border-radius: 12px; background: #fff; }
+#civilSection #cvChapters .cs-capsule-sets > summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; padding: 14px 18px; cursor: pointer; list-style: none; }
+#civilSection #cvChapters .cs-capsule-sets > summary::-webkit-details-marker { display: none; }
+#civilSection #cvChapters .cs-capsule-sets > summary span { display: grid; gap: 2px; min-width: 0; }
+#civilSection #cvChapters .cs-capsule-sets > summary b { color: var(--cs-ink); font: 600 16px/1.4 var(--cs-display); }
+#civilSection #cvChapters .cs-capsule-sets > summary small { color: var(--cs-muted); font-size: 11px; }
+#civilSection #cvChapters .cs-capsule-sets > summary svg { flex: none; width: 18px; height: 18px; color: var(--cs-teal); transition: transform .16s; }
+#civilSection #cvChapters .cs-capsule-sets[open] > summary svg { transform: rotate(90deg); }
+#civilSection #cvChapters .cs-capsule-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 12px; padding: 4px 16px 16px; }
+#civilSection #cvChapters .cs-capsule-set { display: flex; flex-direction: column; gap: 10px; min-width: 0; padding: 16px; border: 1px solid var(--cs-line); border-radius: 10px; background: #fbfcfa; }
+#civilSection #cvChapters .cs-capsule-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+#civilSection #cvChapters .cs-capsule-top h4 { margin: 0; color: var(--cs-ink); font-size: 14px; font-weight: 600; }
+#civilSection #cvChapters .cs-capsule-set .cv-pill { padding: 3px 8px; border-radius: 20px; background: #f2f5ef; color: var(--cs-muted); font-size: 10px; font-weight: 600; letter-spacing: 0; text-transform: none; }
+#civilSection #cvChapters .cs-capsule-set .cv-pill.done { background: #edf5eb; color: #386d40; }
+#civilSection #cvChapters .cs-capsule-set .cv-pill.live { background: #faf4e5; color: #856327; }
+#civilSection #cvChapters .cs-capsule-meta { display: flex; flex-wrap: wrap; gap: 3px 12px; margin: 0; color: var(--cs-muted); font-size: 11px; }
+#civilSection #cvChapters .cs-capsule-mix { display: flex; flex-wrap: wrap; gap: 4px; margin: 0; }
+#civilSection #cvChapters .cs-capsule-mix span { padding: 2px 6px; border: 1px solid var(--cs-line); border-radius: 6px; background: #fff; color: var(--cs-muted); font-size: 10px; }
+#civilSection #cvChapters .cs-capsule-mix b { color: var(--cs-teal); font-weight: 600; }
+#civilSection #cvChapters .cs-capsule-stats { display: grid; gap: 2px; color: var(--cs-muted); font-size: 11px; }
+#civilSection #cvChapters .cs-capsule-stats b { color: var(--cs-ink); font-weight: 600; }
+#civilSection #cvChapters .cs-capsule-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: auto; padding-top: 10px; border-top: 1px solid var(--cs-line); }
+#civilSection #cvChapters .cs-capsule-actions .cv-btn { justify-content: center; min-height: 40px; }
 #civilSection #cvSetList > .cv-empty { grid-column: 1 / -1; }
 #civilSection #cvSets .cs-paper { display: flex; flex-direction: column; min-width: 0; padding: 24px; border: 1px solid var(--cs-line); border-radius: 15px; background: #fff; box-shadow: 0 2px 8px rgba(23, 61, 49, .025); transition: border-color .16s, box-shadow .16s; }
 #civilSection #cvSets .cs-paper.is-live { border-color: #d7cba6; }
