@@ -638,7 +638,7 @@
             isOpen: () => unlocked && !$("civilSection").hidden });
         notes = window.CIVIL_NOTES.create({ $, esc, syllabus: window.CIVIL_SYLLABUS, entries: SETS, loadSet: loadSetData, typeset,
             isOpen: () => unlocked && currentView === "notes" && !$("civilSection").hidden,
-            startTopic: (code, mode) => practice.practiceTopic(code, mode) });
+            startTopic: (code, mode, source) => practice.practiceTopic(code, mode, source) });
         $("civilSection").addEventListener("click", (event) => {
             if (!unlocked) return;
             const nav = event.target.closest("[data-cv-nav]");
@@ -647,7 +647,7 @@
             const bookmark = event.target.closest('[data-cv-action="bookmark"]');
             if (nav) {
                 if (nav.dataset.cvMode) practice.setBuilderMode(nav.dataset.cvMode);
-                if (nav.dataset.noteTopic) notes.selectTopic(nav.dataset.noteTopic);
+                if (nav.dataset.noteTopic) notes.selectTopic(nav.dataset.noteTopic, nav.dataset.noteLibrary || "model");
                 navigate(nav.dataset.cvNav);
             }
             else if (model && !model.disabled) openSet(model.dataset.open);

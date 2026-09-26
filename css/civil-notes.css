@@ -10,6 +10,12 @@
 #civilSection .cn-heading h2 { margin: 0; font-size: clamp(27px, 2.8vw, 36px); }
 #civilSection .cn-heading > a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: 12px; }
 #civilSection .cn-tools { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; gap: 20px; margin-bottom: 20px; }
+#civilSection .cn-library { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; max-width: 1080px; margin: 0 auto 16px; padding: 5px; border: 1px solid var(--cs-line); border-radius: 10px; background: #f4f7f2; }
+#civilSection .cn-library > button { display: grid; justify-items: center; gap: 2px; min-width: 0; min-height: 52px; padding: 8px 12px; border: 1px solid transparent; border-radius: 7px; background: transparent; color: var(--cs-ink); cursor: pointer; }
+#civilSection .cn-library > button b { font-size: 13px; font-weight: 600; }
+#civilSection .cn-library > button span { color: var(--cs-muted); font-size: 11px; }
+#civilSection .cn-library > button[aria-pressed="true"] { border-color: var(--cs-teal); background: #fff; color: var(--cs-teal); box-shadow: 0 1px 2px rgba(16, 45, 34, .12); }
+#civilSection .cn-library > button:disabled { color: var(--cs-muted); cursor: not-allowed; }
 #civilSection .cn-field { display: grid; min-width: 0; gap: 7px; }
 #civilSection .cn-field > span { font-size: 12px; font-weight: 600; }
 #civilSection .cn-field :is(input, select) { width: 100%; min-width: 0; min-height: 46px; border: 1px solid var(--cs-control-line); border-radius: 9px; padding: 10px 12px; background: #fff; color: var(--cs-ink); }

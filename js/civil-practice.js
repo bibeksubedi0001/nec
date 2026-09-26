@@ -501,6 +501,7 @@
 
         function renderChapters() {
             const query = $("cvChapterSearch").value.trim().toLowerCase();
+            const noteLibrary = questionSource === "capsule" ? "capsule" : "model";
             if ($("cvChapterSource")) $("cvChapterSource").innerHTML = sourceOptions();
             const matchesChapter = (chapter) => `${chapter.number || ""} ${chapter.code || ""} ${chapter.name}`.toLowerCase().includes(query);
             const matchesTopic = (topic) => `${topic.number} ${topic.code} ${topic.name} ${topic.detail}`.toLowerCase().includes(query);
@@ -515,13 +516,13 @@
                     <div class="cv-chapter-progress"><div class="cv-progress-track"><span style="width:${chapterCount ? Math.min(100, stats.attempted / chapterCount * 100) : 0}%"></span></div><span>${stats.attempted} / ${chapterCount} practised</span></div>
                     <div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-blue" data-cp-action="practice-chapter" data-chapter="${chapter.id}"${chapterCount ? "" : " disabled"}>Practice ${chapter.additional ? "additional questions" : "chapter"}</button>
                     <button type="button" class="cv-btn cv-btn-ghost" data-cp-action="exam-chapter" data-chapter="${chapter.id}"${chapterCount ? "" : " disabled"}>Exam mode</button>
-                    <button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="build-chapter" data-chapter="${chapter.id}"${chapterCount ? "" : " disabled"}>Build a shorter set</button>${window.CIVIL_NOTES && window.CIVIL_NOTES.hasChapter(chapter.id) ? `<button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cv-nav="notes" data-note-topic="${window.CIVIL_NOTES.chapterCodes(chapter.id)[0]}">Read chapter notes</button>` : ""}</div>
+                    <button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="build-chapter" data-chapter="${chapter.id}"${chapterCount ? "" : " disabled"}>Build a shorter set</button>${window.CIVIL_NOTES && window.CIVIL_NOTES.hasChapter(chapter.id) ? `<button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cv-nav="notes" data-note-library="${noteLibrary}" data-note-topic="${window.CIVIL_NOTES.chapterCodes(chapter.id)[0]}">Read ${noteLibrary === "capsule" ? "capsule" : "chapter"} notes</button>` : ""}</div>
                     <div class="cv-subchapter-list">${leaves.map((topic) => {
                         const progress = counts([topic.id], questionSource);
                         const topicCount = countOf(topic, questionSource);
                         return `<article class="cv-subchapter${topicCount ? "" : " cv-topic-empty"}" data-subchapter="${topic.id}"><div class="cv-subchapter-head"><div><h4>${esc(topicTitle(topic))}</h4>${topic.code ? `<span class="cv-topic-code">${topic.code}</span>` : ""}</div><span class="cv-count">${topicCount} Q</span></div>
                             <p class="cv-subchapter-detail">${esc(topic.detail)}</p><p class="cv-subchapter-progress">${topicCount ? `${progress.attempted} practised · ${progress.correct} last answered correctly` : topic.count ? "No questions from the selected source in this topic." : "No matching questions in the current bank. This official syllabus topic is not yet covered."}</p>
-                            <div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-blue cv-btn-sm" data-cp-action="practice-subchapter" data-topic="${topic.id}"${topicCount ? "" : " disabled"}>Practice</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="exam-subchapter" data-topic="${topic.id}"${topicCount ? "" : " disabled"}>Exam</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="build-subchapter" data-topic="${topic.id}"${topicCount ? "" : " disabled"}>Add to session</button>${window.CIVIL_NOTES && window.CIVIL_NOTES.hasTopic(topic.id) ? `<button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cv-nav="notes" data-note-topic="${topic.id}">Read notes</button>` : ""}</div></article>`;
+                            <div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-blue cv-btn-sm" data-cp-action="practice-subchapter" data-topic="${topic.id}"${topicCount ? "" : " disabled"}>Practice</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="exam-subchapter" data-topic="${topic.id}"${topicCount ? "" : " disabled"}>Exam</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="build-subchapter" data-topic="${topic.id}"${topicCount ? "" : " disabled"}>Add to session</button>${window.CIVIL_NOTES && (window.CIVIL_NOTES.hasTopic(topic.id) || noteLibrary === "capsule" && countOf(topic, "capsule")) ? `<button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cv-nav="notes" data-note-library="${noteLibrary}" data-note-topic="${topic.id}">Read notes</button>` : ""}</div></article>`;
                     }).join("")}</div></div></details>`;
             }).join("") : '<div class="cv-empty"><b>No matching syllabus topics</b><p>Try a chapter name, subchapter number, official code or syllabus keyword.</p></div>';
         }
@@ -1031,9 +1032,10 @@
         readStore(); refreshSavedCount();
         return { renderDashboard, renderBuilder, renderChapters, suspend, toggleBookmark, bookmarkButton,
             setBuilderMode: (mode) => { selectedMode = mode === "exam" ? "exam" : "practice"; },
-            practiceTopic: (code, mode) => {
+            practiceTopic: (code, mode, source = "all") => {
                 const topic = topics.get(code);
-                if (topic && topic.count) startPractice({ title: topicTitle(topic), origin: "notes", scope: [code], mode: mode === "exam" ? "exam" : "practice" });
+                const chosen = sourceNames[source] ? source : "all";
+                if (topic && countOf(topic, chosen)) startPractice({ title: topicTitle(topic) + (chosen === "all" ? "" : " · " + sourceNames[chosen]), origin: "notes", scope: [code], source: chosen, mode: mode === "exam" ? "exam" : "practice" });
             },
             practiceModel: (key) => {
                 const entry = entries.find((item) => item.key === key);

@@ -301,6 +301,10 @@ html[data-theme="dark"] body[data-app="nec"] #civilSection :is(.cn-search-result
 html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-button { background: var(--theme-green); color: #fff; border-color: var(--theme-green); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-button.cn-secondary { background: var(--surface); color: var(--good); border-color: var(--line); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-button:hover:not(:disabled) { background: var(--theme-green-hover); color: #fff; }
+html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-library { background: var(--surface-2); border-color: var(--line); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-library > button { color: var(--ink); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-library > button span { color: var(--ink-soft); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-library > button[aria-pressed="true"] { background: var(--surface); border-color: var(--good); color: var(--good); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes :is(.cn-field input, .cn-field select) { background: var(--surface); color: var(--ink); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-prose :is(thead, tbody th) { background: var(--surface-2); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection :is(.cn-gaps, .cn-source-links button) { background: var(--surface-2); border-color: var(--line); }
