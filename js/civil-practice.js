@@ -251,7 +251,7 @@
         let customMinutes = null;
         let builderOpen = new Set();
         let chapterOpen = new Set();
-        let capsuleSetsOpen = !window.matchMedia || window.matchMedia("(min-width: 701px)").matches;
+        let capsuleSetsOpen = true;
         const uiIcon = window.CEE_UI_ICONS.svg;
         const flagIcon = uiIcon("flag");
         const bookmarkIcon = uiIcon("bookmark");
@@ -523,12 +523,15 @@
             if (!set) return;
             const draft = store[draftKey(mode)];
             if (draft && draft.capsuleSet === key) { resume(mode); return; }
-            startPractice({ title: set.title + (mode === "exam" ? " · Exam" : " · Practice"), origin: "chapters", ids: set.ids, capsuleSet: key,
+            startPractice({ title: set.title + (mode === "exam" ? " · Exam" : " · Practice"), origin: "sets", ids: set.ids, capsuleSet: key,
                 mode, minutes: mode === "exam" ? set.durationMinutes : 0 });
         }
 
-        function renderChapters() {
+        function renderCapsuleSets() {
             if ($("cvCapsuleSets")) $("cvCapsuleSets").innerHTML = capsuleSetsHtml();
+        }
+
+        function renderChapters() {
             const query = $("cvChapterSearch").value.trim().toLowerCase();
             const noteLibrary = questionSource === "capsule" ? "capsule" : "model";
             if ($("cvChapterSource")) $("cvChapterSource").innerHTML = sourceOptions();
@@ -1066,7 +1069,7 @@
             }
         });
         readStore(); refreshSavedCount();
-        return { renderDashboard, renderBuilder, renderChapters, suspend, toggleBookmark, bookmarkButton,
+        return { renderDashboard, renderBuilder, renderChapters, renderCapsuleSets, suspend, toggleBookmark, bookmarkButton,
             setBuilderMode: (mode) => { selectedMode = mode === "exam" ? "exam" : "practice"; },
             practiceTopic: (code, mode, source = "all") => {
                 const topic = topics.get(code);

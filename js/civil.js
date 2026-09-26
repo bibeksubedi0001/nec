@@ -167,7 +167,7 @@
         if (view === "notes") { show("notes"); notes.render(); return; }
         if (view === "practice") practice.renderBuilder();
         else if (view === "chapters") practice.renderChapters();
-        else if (view === "dash" || view === "sets") renderDash();
+        else if (view === "dash" || view === "sets") { renderDash(); if (view === "sets") practice.renderCapsuleSets(); }
         else return;
         show(view);
     }
