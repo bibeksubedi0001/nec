@@ -251,7 +251,6 @@
         let customMinutes = null;
         let builderOpen = new Set();
         let chapterOpen = new Set();
-        let capsuleSetsOpen = true;
         const uiIcon = window.CEE_UI_ICONS.svg;
         const flagIcon = uiIcon("flag");
         const bookmarkIcon = uiIcon("bookmark");
@@ -503,19 +502,26 @@
 
         function capsuleSetsHtml() {
             const sets = window.CIVIL_CAPSULE_SETS || [];
-            if (!sets.length) return "";
-            return `<details class="cs-capsule-sets" id="cvCapsuleSetsPanel"${capsuleSetsOpen ? " open" : ""}><summary><span><b>Capsule practice sets</b><small>${sets.length} sets · 100 questions each · balanced across all chapters and subchapters</small></span>${chevron}</summary>
-                <div class="cs-capsule-grid">${sets.map((set) => {
-                    const practised = set.ids.filter((id) => store.progress[id]).length;
-                    const score = isObject(store.setScores[set.key]) ? store.setScores[set.key] : null;
-                    const live = ["exam", "practice"].filter((mode) => store[draftKey(mode)] && store[draftKey(mode)].capsuleSet === set.key);
-                    const status = live.length ? ["live", "In progress"] : score ? ["done", "Exam taken"] : ["new", "Not started"];
-                    return `<article class="cs-capsule-set" data-capsule-set="${set.key}"><div class="cs-capsule-top"><h4>${esc(set.title)}</h4><span class="cv-pill ${status[0]}">${status[1]}</span></div>
-                        <p class="cs-capsule-meta"><span>${set.total} questions</span><span>${set.durationMinutes} min</span><span>${Object.keys(set.chapters).length > 10 ? "10 chapters + rural" : Object.keys(set.chapters).length + " chapters"}</span><span>${set.topics} subchapters</span></p>
-                        <p class="cs-capsule-mix" aria-label="Questions per chapter">${Object.entries(set.chapters).map(([chapter, count]) => `<span>${chapter === "11" ? "R" : "Ch" + chapter} <b>${count}</b></span>`).join("")}</p>
-                        <div class="cs-capsule-stats"><span>Practised <b>${practised}/${set.total}</b></span><span>${score ? `Last exam <b>${score.last}%</b> · Best <b>${score.best}%</b>` : "No exam yet"}</span></div>
-                        <div class="cs-capsule-actions"><button type="button" class="cv-btn cv-btn-blue cv-btn-sm" data-cp-action="capsule-set" data-set="${set.key}" data-mode="practice">${live.includes("practice") ? "Resume practice" : "Practice"}</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="capsule-set" data-set="${set.key}" data-mode="exam">${live.includes("exam") ? "Resume exam" : "Exam"}</button></div></article>`;
-                }).join("")}</div></details>`;
+            const query = ($("cvSetSearch") ? $("cvSetSearch").value : "").trim().toLowerCase();
+            const statusFilter = $("cvSetStatus") ? $("cvSetStatus").value : "all";
+            const cards = sets.map((set) => {
+                const exam = store.draft && store.draft.capsuleSet === set.key ? store.draft : null;
+                const practising = !!(store.practiceDraft && store.practiceDraft.capsuleSet === set.key);
+                const score = isObject(store.setScores[set.key]) ? store.setScores[set.key] : null;
+                const status = exam || practising ? "live" : score ? "done" : "new";
+                return { set, exam, practising, score, status };
+            }).filter(({ set, status }) => (statusFilter === "all" || statusFilter === status) && (set.title.toLowerCase().includes(query) || String(set.no) === query));
+            if (!cards.length) return "";
+            return `<section class="cs-capsule-section" aria-labelledby="cvCapsuleSetsTitle"><div class="cs-capsule-heading"><h3 id="cvCapsuleSetsTitle">Capsule question sets</h3><p>${sets.length} sets of 100 questions from the revision capsule, balanced across every chapter</p></div>
+                <div class="cs-paper-grid">${cards.map(({ set, exam, practising, score, status }) => {
+                    const answered = exam ? Object.keys(exam.answers).length : 0;
+                    const chapters = Object.keys(set.chapters).filter((chapter) => chapter !== "11").length;
+                    return `<article class="cs-paper${status === "done" ? " is-done" : status === "live" ? " is-live" : ""}" data-capsule-set="${set.key}"><div class="cs-paper-top"><span class="cs-paper-number" aria-hidden="true">${uiIcon("clipboard")}</span><span class="cv-pill ${status}">${status === "done" ? "Completed" : status === "live" ? "In progress" : "Not started"}</span></div>
+                        <h3>${esc(set.title)}</h3><div class="cs-paper-meta"><span>${set.total} questions</span><span>${set.durationMinutes} min</span><span>${chapters} chapters</span></div>
+                        ${answered ? `<div class="cs-paper-progress" role="progressbar" aria-label="Capsule exam answered" aria-valuemin="0" aria-valuemax="${set.total}" aria-valuenow="${answered}"><span style="width:${Math.min(100, answered / set.total * 100)}%"></span></div>` : ""}
+                        ${score ? `<div class="cs-paper-score"><small>Personal best</small><b>${score.best}%</b></div>` : ""}
+                        <div class="cs-paper-actions"><button type="button" class="cv-btn" data-cp-action="capsule-set" data-set="${set.key}" data-mode="exam">${exam ? "Resume exam" : score ? "Retake exam" : "Start exam"}</button><button type="button" class="cv-btn cv-btn-ghost" data-cp-action="capsule-set" data-set="${set.key}" data-mode="practice">${practising ? "Resume practice" : "Practice"}</button></div></article>`;
+                }).join("")}</div></section>`;
         }
 
         function openCapsuleSet(key, mode) {
@@ -528,7 +534,9 @@
         }
 
         function renderCapsuleSets() {
-            if ($("cvCapsuleSets")) $("cvCapsuleSets").innerHTML = capsuleSetsHtml();
+            if (!$("cvCapsuleSets")) return 0;
+            $("cvCapsuleSets").innerHTML = capsuleSetsHtml();
+            return $("cvCapsuleSets").querySelectorAll("[data-capsule-set]").length;
         }
 
         function renderChapters() {
@@ -1044,7 +1052,6 @@
         $("civilSection").addEventListener("toggle", (event) => {
             const node = event.target;
             if (!node.isConnected) return;
-            if (node.id === "cvCapsuleSetsPanel") { capsuleSetsOpen = node.open; return; }
             const key = node.dataset.builderGroup || node.dataset.chapterGroup;
             if (!key) return;
             const open = node.dataset.builderGroup ? builderOpen : chapterOpen;

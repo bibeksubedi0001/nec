@@ -167,7 +167,7 @@
         if (view === "notes") { show("notes"); notes.render(); return; }
         if (view === "practice") practice.renderBuilder();
         else if (view === "chapters") practice.renderChapters();
-        else if (view === "dash" || view === "sets") { renderDash(); if (view === "sets") practice.renderCapsuleSets(); }
+        else if (view === "dash" || view === "sets") renderDash();
         else return;
         show(view);
     }
@@ -262,6 +262,7 @@
             const status = row.st.submitted ? "done" : row.st.endsAt || Object.keys(row.st.answers).length ? "live" : "new";
             return (statusFilter === "all" || statusFilter === status) && (row.e.meta.title.toLowerCase().includes(query) || String(row.e.no) === query);
         });
+        const capsuleMatches = practice ? practice.renderCapsuleSets() : 0;
         $("cvSetList").innerHTML = visibleRows.map((r) => {
                 const meta = r.e.meta, st = r.st;
                 const answered = Object.keys(st.answers).length;
@@ -273,7 +274,7 @@
                     ${answered ? `<div class="cs-paper-progress" role="progressbar" aria-label="Model exam answered" aria-valuemin="0" aria-valuemax="${meta.total}" aria-valuenow="${answered}"><span style="width:${Math.min(100, answered / meta.total * 100)}%"></span></div>` : ""}
                     ${personalBest ? `<div class="cs-paper-score"><small>Personal best</small><b>${personalBest.pct}%</b></div>` : ""}
                     <div class="cs-paper-actions"><button type="button" class="cv-btn" data-open="${meta.key}">${st.submitted ? "Review exam" : live ? "Resume exam" : "Start exam"}</button><button type="button" class="cv-btn cv-btn-ghost" data-model-practice="${meta.key}">Practice</button></div></article>`;
-            }).join("") + (!visibleRows.length ? '<div class="cv-empty"><b>No matching model sets</b><p>Clear the search or choose another status.</p></div>' : "");
+            }).join("") + (!visibleRows.length && !capsuleMatches ? '<div class="cv-empty"><b>No matching sets</b><p>Clear the search or choose another status.</p></div>' : "");
 
         const bank = {};
         SETS.forEach((e) => e.meta.chapters.forEach((c) => { bank[c.name] = (bank[c.name] || 0) + c.count; }));
