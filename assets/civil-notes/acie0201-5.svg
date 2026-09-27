@@ -2,7 +2,7 @@
   <title id="title">Soil water weight: moist minus oven-dry weight</title>
   <desc id="desc">Total moist weight 190 kN is separated into 150 kN dry solids and 40 kN water. The bars show weights, not phase volumes. Gravimetric water content is 40 over 150 or 26.67 percent, not 40 over 190.</desc>
   <rect width="720" height="420" fill="#fbfcfd"/>
-  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+  <g font-family="'Times New Roman', Times, serif" font-weight="400" letter-spacing="0" fill="#273b45">
     <text x="26" y="34" font-size="21">Soil sample: conserve the dry solids</text>
     <text x="65" y="91" font-size="18">Moist: 190 kN</text><text x="317" y="91" font-size="18">Oven dry: 150 kN</text>
     <rect x="98" y="178" width="123" height="150" fill="#deeee6" stroke="#273b45" stroke-width="2"/>

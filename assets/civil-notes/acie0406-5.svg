@@ -3,7 +3,7 @@
   <desc id="desc">A fixed-fixed beam with a central load W forms hinges at A, C and B. Each half rotates through theta, and the relative rotation at C is twice theta. For a 6 m beam with plastic moment 120 kN m the ideal collapse load is 160 kN.</desc>
   <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
   <rect width="720" height="420" fill="#fbfcfd"/>
-  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+  <g font-family="'Times New Roman', Times, serif" font-weight="400" letter-spacing="0" fill="#273b45">
     <text x="26" y="34" font-size="21">Fixed-fixed beam: compatible hinge rotations</text>
     <rect x="70" y="100" width="22" height="104" fill="#d6dfe3" stroke="#273b45"/><rect x="628" y="100" width="22" height="104" fill="#d6dfe3" stroke="#273b45"/>
     <path d="M92 141H628" stroke="#647780" stroke-width="2" stroke-dasharray="7 5"/>

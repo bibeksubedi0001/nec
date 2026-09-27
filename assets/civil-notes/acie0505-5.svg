@@ -3,7 +3,7 @@
   <desc id="desc">A steel plate 400 mm wide and 10 mm thick has one 18 mm hole across its straight rupture section. Gross area is 4000 square mm and net geometric area is 3820 square mm, or 38.2 square cm. The circle at right is an enlarged hole detail.</desc>
   <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
   <rect width="720" height="420" fill="#fbfcfd"/>
-  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+  <g font-family="'Times New Roman', Times, serif" font-weight="400" letter-spacing="0" fill="#273b45">
     <text x="26" y="33" font-size="21">Straight net section: subtract the hole once</text>
     <rect x="81" y="110" width="350" height="200" fill="#d8edf7" stroke="#273b45" stroke-width="2"/>
     <path d="M256 89V333" stroke="#a84940" stroke-width="2" stroke-dasharray="5 5"/>

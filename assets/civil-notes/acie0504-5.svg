@@ -3,7 +3,7 @@
   <desc id="desc">For a 400 mm square RCC column, IS 456 minimum eccentricity uses unsupported length l. A 5 m column gives 23.33 mm, exceeding the 20 mm floor. A 3 m column gives 19.33 mm, so the 20 mm floor controls. The eccentricity arrow is exaggerated for clarity.</desc>
   <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
   <rect width="720" height="420" fill="#fbfcfd"/>
-  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+  <g font-family="'Times New Roman', Times, serif" font-weight="400" letter-spacing="0" fill="#273b45">
     <text x="26" y="34" font-size="21">Minimum eccentricity: evaluate both limits</text>
     <rect x="114" y="145" width="160" height="160" fill="#deeee6" stroke="#273b45" stroke-width="2"/>
     <path d="M194 110V327" stroke="#647780" stroke-dasharray="6 4"/>

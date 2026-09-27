@@ -316,3 +316,6 @@
     #civilSection #cvNotes .cn-quiz-option { gap: 10px; padding: 10px 12px; font-size: 14.5px; }
     #civilSection .cn-quiz-result { padding: 12px; }
 }
+/* Capsule section figures stack in one readable column; each opens the zoomable viewer. */
+#civilSection #cvNotes .cn-figures { display: grid; justify-items: center; gap: 22px; margin: 22px 0 10px; }
+#civilSection #cvNotes .cn-figures > .cn-figure { width: 100%; max-width: 680px; margin: 0; }

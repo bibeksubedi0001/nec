@@ -3,7 +3,7 @@
   <desc id="desc">For steady incompressible flow without branches or leakage, a pipe diameter reducing from d to d over 2 reduces area from A to A over 4. Continuity keeps Q fixed, so mean velocity rises from v to 4v. Example 0.20 m and 2 m per second gives 0.10 m and 8 m per second.</desc>
   <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
   <rect width="720" height="420" fill="#fbfcfd"/>
-  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+  <g font-family="'Times New Roman', Times, serif" font-weight="400" letter-spacing="0" fill="#273b45">
     <text x="26" y="34" font-size="21">Continuity: diameter is not area</text>
     <path d="M66 118H308L438 163H659V253H438L308 298H66Z" fill="#d8edf7" stroke="#287aab" stroke-width="2"/>
     <path d="M100 208H246" stroke="#2b7b61" stroke-width="3" marker-end="url(#arrow)"/>

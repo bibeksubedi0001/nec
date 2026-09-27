@@ -3,7 +3,7 @@
   <desc id="desc">A 2 m cantilever carries a downward 2.4 kN tip load. Its section is 40 mm wide and 60 mm deep. The fixed-end moment magnitude is 4.8 kN m; elastic stresses are 200 MPa tension at the top and 200 MPa compression at the bottom.</desc>
   <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
   <rect width="720" height="420" fill="#fbfcfd"/>
-  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+  <g font-family="'Times New Roman', Times, serif" font-weight="400" letter-spacing="0" fill="#273b45">
     <text x="28" y="34" font-size="21">Cantilever: elastic stress at the fixed end</text>
     <rect x="40" y="76" width="24" height="142" fill="#d6dfe3" stroke="#273b45" stroke-width="2"/>
     <path d="M64 143H355" stroke="#273b45" stroke-width="9"/>

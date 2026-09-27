@@ -2,7 +2,7 @@
   <title id="title">Nominal detention and effective contact</title>
   <desc id="description">An illustrative cumulative tracer curve reaches ten percent passage at fifteen minutes. With assumed volume 600 cubic metres and flow 1200 cubic metres per hour, nominal detention is thirty minutes. At constant free chlorine 0.60 milligrams per litre, the assumed effective contact gives CT of nine, not eighteen, milligram minutes per litre. This does not establish pathogen removal.</desc>
   <rect width="720" height="420" fill="#fbfcfd"/>
-  <g font-family="Verdana, sans-serif" fill="#243b45">
+  <g font-family="'Times New Roman', Times, serif" fill="#243b45">
     <text x="28" y="34" font-size="20" font-weight="bold">Nominal time is not effective contact</text>
     <text x="28" y="61" font-size="13">Assumed V = 600 m<tspan baseline-shift="super" font-size="9">3</tspan>; Q = 1200 m<tspan baseline-shift="super" font-size="9">3</tspan>/h; constant free chlorine C = 0.60 mg/L</text>
     <text x="70" y="96" font-size="14">Cumulative tracer passed (%)</text>

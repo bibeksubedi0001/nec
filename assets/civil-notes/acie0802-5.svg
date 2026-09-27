@@ -3,7 +3,7 @@
   <desc id="desc">Gross head 423.5 m minus 2.5 m waterway loss gives 421 m net head. For water at 0.9 cubic metres per second and overall efficiency 0.85, power is 9.81 times 0.9 times 421 times 0.85 equals 3159.46 kW.</desc>
   <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
   <rect width="720" height="420" fill="#fbfcfd"/>
-  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+  <g font-family="'Times New Roman', Times, serif" font-weight="400" letter-spacing="0" fill="#273b45">
     <text x="26" y="34" font-size="21">Hydropower: subtract head loss before efficiency</text>
     <path d="M58 110V171H208V110" fill="#d8edf7" stroke="#287aab" stroke-width="2"/>
     <path d="M58 125H208" stroke="#287aab" stroke-width="2"/>

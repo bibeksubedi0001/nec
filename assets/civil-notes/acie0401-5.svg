@@ -3,7 +3,7 @@
   <desc id="desc">Each reaction is 4 kN. Shear falls linearly from plus 4 to minus 4 kN and crosses zero at midspan. The sagging moment parabola is zero at the supports, 6 kN m at x equals 2 m and 8 kN m at midspan.</desc>
   <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
   <rect width="720" height="420" fill="#fbfcfd"/>
-  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+  <g font-family="'Times New Roman', Times, serif" font-weight="400" letter-spacing="0" fill="#273b45">
     <text x="26" y="30" font-size="21">Uniform load: reactions, shear and moment</text>
     <text x="294" y="58" font-size="18">w = 1 kN/m</text>
     <path d="M120 72H600M120 72V97M180 72V97M240 72V97M300 72V97M360 72V97M420 72V97M480 72V97M540 72V97M600 72V97" stroke="#a84940" stroke-width="2" fill="none"/>

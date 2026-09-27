@@ -232,7 +232,8 @@
         }
 
         async function loadNotes(chapterId, lib) {
-            if (lib === "capsule") await loadFile(CAPSULE_FILES[chapterId], codesOf(chapterId, lib), capsuleBase, LIBRARIES.capsule.store);
+            if (lib === "capsule") await Promise.all([loadFile(CAPSULE_FILES[chapterId], codesOf(chapterId, lib), capsuleBase, LIBRARIES.capsule.store),
+                loadFile("figures.js", codesOf(chapterId, lib), capsuleBase, "CIVIL_CAPSULE_NOTE_FIGURES")]);
             else await Promise.all(CHAPTER_FILES[chapterId].map((file) => loadFile(file, FILES[file], base, LIBRARIES.model.store)));
             for (const code of codesOf(chapterId, lib)) {
                 const topic = registry(lib)[code];
@@ -282,9 +283,9 @@
         }
 
         // Structured capsule sections; `tex` marks content written with TeX delimiters rather than plain-text fractions.
-        function blockBodyHtml(block, tex, { expand = false, highlight = "" } = {}) {
+        function blockBodyHtml(block, tex, { expand = false, highlight = "", figures = "" } = {}) {
             if (!tex) return proseHtml(block, expand);
-            return `<div class="cn-prose"${TEX}>${block.html}</div>${formulasHtml(block.formulas)}${block.example ? `<section class="cn-example"><h5>${esc(block.example.title || "Worked example")}</h5><div class="cn-prose"${TEX}>${block.example.html}</div></section>` : ""}${block.moreHtml ? `<details class="cn-more"${expand ? " open" : ""}><summary>Further reasoning and context</summary><div class="cn-prose"${TEX}>${block.moreHtml}</div></details>` : ""}${pointsHtml(block.points, highlight)}`;
+            return `<div class="cn-prose"${TEX}>${block.html}</div>${formulasHtml(block.formulas)}${figures}${block.example ? `<section class="cn-example"><h5>${esc(block.example.title || "Worked example")}</h5><div class="cn-prose"${TEX}>${block.example.html}</div></section>` : ""}${block.moreHtml ? `<details class="cn-more"${expand ? " open" : ""}><summary>Further reasoning and context</summary><div class="cn-prose"${TEX}>${block.moreHtml}</div></details>` : ""}${pointsHtml(block.points, highlight)}`;
         }
 
         function checkHtml(item, code, index, tex = false) {
@@ -296,20 +297,22 @@
                 <div class="cn-check-content">${proseHtml(item, false, tex)}${source ? `<button type="button" class="cn-button cn-secondary" data-cn-source="${esc(source.id)}">Read this question ${uiIcon("arrow-up-right")}</button>` : ""}</div></details>`;
         }
 
+        const figuresOf = (code, lib = library) => (lib === "model" ? window.CIVIL_NOTE_FIGURES?.topics[code] : window.CIVIL_CAPSULE_NOTE_FIGURES?.[code]) || [];
+
         function figuresHtml(code, blockId) {
-            const figures = library === "model" ? window.CIVIL_NOTE_FIGURES?.topics[code] || [] : [];
-            return figures.filter((figure) => figure.block === blockId).map((figure) => `<figure class="cn-figure">
+            const html = figuresOf(code).filter((figure) => figure.block === blockId).map((figure) => `<figure class="cn-figure">
                 <button type="button" class="cn-figure-open" data-cn-figure="${figure.id}" aria-label="Enlarge ${esc(figure.title)}" title="Enlarge diagram">
                     <img src="${figure.src + version}" width="${figure.width}" height="${figure.height}" loading="lazy" decoding="async" alt="${esc(figure.caption)}" />
                     <span class="cn-figure-corner">${uiIcon("arrow-up-right")}</span>
                 </button><figcaption><b>${esc(figure.title)}</b><span>${esc(figure.caption)}</span></figcaption></figure>`).join("");
+            return library === "model" || !html ? html : `<div class="cn-figures">${html}</div>`;
         }
 
         function sourceDerivationsHtml(topic, id, explanation) {
             const blocks = topic.blocks.filter((block) => block.sources.some((source) => source.id === id));
             if (!blocks.length) return "";
             const tex = topic.format === 2;
-            const figures = library === "model" ? window.CIVIL_NOTE_FIGURES?.topics[topic.code] || [] : [];
+            const figures = figuresOf(topic.code);
             return `<section class="cn-source-derivations"><h3>${tex ? "Related notes" : "Related derivations"}</h3>${blocks.map((block) => {
                 const diagrams = figures.filter((figure) => figure.block === block.id && !explanation.includes(figure.src));
                 return `<details class="cn-related-note" data-cn-related-note="${esc(block.id)}"><summary>${esc(block.title)}</summary>${blockBodyHtml(block, tex, { highlight: id })}${diagrams.map((figure) => `<figure class="cn-explanation-figure"><a href="${figure.src + version}" target="_blank" rel="noopener noreferrer" aria-label="Open ${esc(figure.title)}"><img src="${figure.src + version}" width="${figure.width}" height="${figure.height}" loading="lazy" decoding="async" alt="${esc(figure.caption)}" /></a><figcaption>${esc(figure.title)}. ${esc(figure.caption)}</figcaption></figure>`).join("")}</details>`;
@@ -317,8 +320,8 @@
         }
 
         function openFigure(id) {
-            if (!isOpen() || library !== "model") return;
-            const figure = chapterCodes(selectedChapterId).flatMap((code) => window.CIVIL_NOTE_FIGURES?.topics[code] || []).find((item) => item.id === id);
+            if (!isOpen()) return;
+            const figure = codesOf(selectedChapterId).flatMap((code) => figuresOf(code)).find((item) => item.id === id);
             if (!figure) return;
             sourceSerial++;
             $("cvNoteSourceTitle").textContent = figure.title;
@@ -547,7 +550,7 @@
                 ${topic.blocks.map((block, blockIndex) => {
                     const groupIndex = groups.findIndex((group) => group.start === block.id);
                     const group = groups[groupIndex];
-                    return `${group ? `<h4 class="cn-part" id="cn-${code}-group-${group.id}" tabindex="-1"><span>${groupIndex + 1}</span>${esc(group.title)}</h4>` : ""}<section class="cn-block" id="cn-${code}-${block.id}" tabindex="-1"><${heading}>${tex ? `<span class="cn-num">${blockIndex + 1}</span><span>${esc(block.title)}</span>` : esc(block.title)}</${heading}>${blockBodyHtml(block, tex)}${figuresHtml(code, block.id)}${tex ? quizHtml(block) : ""}${references(block.sources)}</section>`;
+                    return `${group ? `<h4 class="cn-part" id="cn-${code}-group-${group.id}" tabindex="-1"><span>${groupIndex + 1}</span>${esc(group.title)}</h4>` : ""}<section class="cn-block" id="cn-${code}-${block.id}" tabindex="-1"><${heading}>${tex ? `<span class="cn-num">${blockIndex + 1}</span><span>${esc(block.title)}</span>` : esc(block.title)}</${heading}>${tex ? blockBodyHtml(block, tex, { figures: figuresHtml(code, block.id) }) : blockBodyHtml(block, tex) + figuresHtml(code, block.id)}${tex ? quizHtml(block) : ""}${references(block.sources)}</section>`;
                 }).join("")}
                 ${revisionHtml(topic, code)}
                 <section class="cn-checks" id="cn-${code}-checks" tabindex="-1"><details class="cn-check-index"><summary>${topic.questionCount ? "Question checks" : "Reference checks"} (${topic.cautions.length})</summary>${checkFilterHtml(topic)}${topic.cautions.map((item, index) => checkHtml(item, code, index, tex)).join("")}</details>${externalReferences(topic)}</section>
@@ -565,8 +568,9 @@
             replace(reader, `<div class="cn-search-summary" role="status"><b>${results.length} matching sections</b><button type="button" class="cn-button cn-secondary" data-cn-clear>Clear search</button></div>${results.length ? results.map((block) => {
                 const meta = topicMap.get(block.code);
                 const tex = registry()[block.code]?.format === 2;
-                const body = block.sheet ? sheetHtml(block.sheet) : block.kind === "note" ? blockBodyHtml(block, tex, { expand: true }) : proseHtml(block, true, tex);
-                return `<article class="cn-search-result${tex ? " cn-v2" : ""}"><span class="cn-code">${esc(meta.number + " " + meta.name)}</span><h3>${esc(block.title)}</h3>${block.kind === "caution" ? `<span class="cn-check-status">${checkLabels[checkKind(block)]}</span>` : ""}${block.prompt ? `<p class="cn-check-prompt">${esc(block.prompt)}</p>` : ""}${body}${figuresHtml(block.code, block.id)}<button type="button" class="cn-button cn-secondary" data-cn-topic="${block.code}" data-cn-block="${block.id}">Open subchapter ${uiIcon("arrow-right")}</button></article>`;
+                const figures = figuresHtml(block.code, block.id), inline = tex && block.kind === "note";
+                const body = block.sheet ? sheetHtml(block.sheet) : block.kind === "note" ? blockBodyHtml(block, tex, { expand: true, figures: inline ? figures : "" }) : proseHtml(block, true, tex);
+                return `<article class="cn-search-result${tex ? " cn-v2" : ""}"><span class="cn-code">${esc(meta.number + " " + meta.name)}</span><h3>${esc(block.title)}</h3>${block.kind === "caution" ? `<span class="cn-check-status">${checkLabels[checkKind(block)]}</span>` : ""}${block.prompt ? `<p class="cn-check-prompt">${esc(block.prompt)}</p>` : ""}${body}${inline ? "" : figures}<button type="button" class="cn-button cn-secondary" data-cn-topic="${block.code}" data-cn-block="${block.id}">Open subchapter ${uiIcon("arrow-right")}</button></article>`;
             }).join("") : '<div class="cn-empty">No matching notes. Try a topic, formula name or source question ID.</div>'}`);
         }
 

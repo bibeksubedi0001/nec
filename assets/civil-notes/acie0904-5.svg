@@ -2,7 +2,7 @@
   <title id="title">Webster: 58 second cycle and effective-green accounting</title>
   <desc id="desc">Assuming two separately served critical phases, demands 500 and 300 PCU per hour over saturation flow 1600 each give ratios 0.3125 and 0.1875. Their sum is 0.5. With 16 seconds lost time, Webster cycle is 58 seconds, leaving 42 seconds effective green. Proportional allocations are 26.25 and 15.75 seconds.</desc>
   <rect width="720" height="420" fill="#fbfcfd"/>
-  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+  <g font-family="'Times New Roman', Times, serif" font-weight="400" letter-spacing="0" fill="#273b45">
     <text x="26" y="33" font-size="21">Webster: critical flow ratios and lost time</text>
     <text x="53" y="89" font-size="18">Phase 1: 500/1600 = 0.3125</text>
     <text x="53" y="123" font-size="18">Phase 2: 300/1600 = 0.1875</text>

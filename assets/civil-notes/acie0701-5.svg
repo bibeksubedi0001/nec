@@ -2,7 +2,7 @@
   <title id="title">Irrigation interval: 55 percent remaining after 12 days</title>
   <desc id="desc">Available root-zone water begins at 80 mm and falls at 3 mm per day. Irrigation is triggered at 55 percent of 80 mm, or 44 mm remaining. Allowed depletion is 36 mm and the interval is 36 over 3 or 12 days.</desc>
   <rect width="720" height="420" fill="#fbfcfd"/>
-  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+  <g font-family="'Times New Roman', Times, serif" font-weight="400" letter-spacing="0" fill="#273b45">
     <text x="26" y="33" font-size="21">55% remaining means 45% has been depleted</text>
     <text x="28" y="75" font-size="16">Available water (mm)</text>
     <path d="M93 93V319H627" stroke="#647780" stroke-width="1.5" fill="none"/>

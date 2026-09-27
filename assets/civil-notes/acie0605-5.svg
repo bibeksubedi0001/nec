@@ -2,7 +2,7 @@
   <title id="title">BOD dilution: two percent sample and five mg per litre oxygen depletion</title>
   <desc id="desc">The incubation mixture contains 2 percent wastewater and 98 percent dilution water by volume. Its measured five-day oxygen depletion is 5 mg per litre. With no seed or blank demand, divide by 0.02 to obtain 250 mg per litre BOD of the original wastewater.</desc>
   <rect width="720" height="420" fill="#fbfcfd"/>
-  <g font-family="Verdana, sans-serif" font-weight="400" letter-spacing="0" fill="#273b45">
+  <g font-family="'Times New Roman', Times, serif" font-weight="400" letter-spacing="0" fill="#273b45">
     <text x="26" y="34" font-size="21">BOD: distinguish mixture from original sample</text>
     <text x="66" y="90" font-size="18">Volume fraction in the incubation mixture</text>
     <rect x="68" y="119" width="584" height="73" fill="#d8edf7" stroke="#273b45" stroke-width="1.5"/>
