@@ -73,6 +73,7 @@
     const LIBRARIES = Object.freeze({ model: { label: "Model-paper notes", questions: 3300, store: "CIVIL_NOTE_TOPICS", source: "model" },
         capsule: { label: "Capsule notes", questions: 1477, store: "CIVIL_CAPSULE_NOTE_TOPICS", source: "capsule" } });
     const hasChapter = (id) => Object.hasOwn(CHAPTER_FILES, id);
+    const TEX = ' data-cn-math="tex"';
     const chapterCodes = (id) => hasChapter(id) ? CHAPTER_FILES[id].flatMap((file) => FILES[file]) : [];
     const script = document.currentScript;
     const base = script ? new URL("civil-notes/", script.src).href : "js/civil-notes/";
@@ -86,6 +87,9 @@
     const checkTitle = (item) => item.sources.length ? sourceName(item.sources[0]) : "Reference check";
     const checkLabels = Object.freeze({ corrected: "Corrected", clarification: "Concept clarification", context: "Design and reference context", notation: "Units and notation", assumptions: "Missing assumptions", ambiguity: "Ambiguous question", "answer-review": "Answer needs review", scope: "Scope note", review: "Review note" });
     const checkKind = (item) => item.status === "corrected" ? "corrected" : !item.sources.length ? "scope" : Object.hasOwn(checkLabels, item.issue) ? item.issue : "review";
+    const blockExtras = (block) => [...(block.formulas || []).map((formula) => formula.label + " " + formula.tex + " " + (formula.where || "")),
+        block.example ? (block.example.title || "") + " " + block.example.html : "", ...(block.points || []).map((point) => point.html)].join(" ");
+    const sheetText = (sheet) => sheet.map((entry) => entry.label + " " + entry.tex + " " + (entry.note || "")).join(" ");
 
     // Decide whether an emphasised span reads as a formula/quantity (kept, styled .cn-f)
     // or a plain term/label (unwrapped). Prose sentences with two or more words are plain.
@@ -124,10 +128,12 @@
         return topics.flatMap((topic) => [
             ...topic.blocks.map((block) => ({ ...block, code: topic.code, kind: "note" })),
             ...topic.cautions.map((item, index) => ({ ...item, id: checkId(item, index), title: checkTitle(item), code: topic.code, kind: "caution" })),
-            ...(topic.formulaSheet ? [{ id: "formulas", title: "Formula sheet", html: topic.formulaSheet, sources: [], code: topic.code, kind: "revision" }] : []),
+            ...(topic.formulaSheet ? [Array.isArray(topic.formulaSheet)
+                ? { id: "formulas", title: "Formula sheet", html: "", sheet: topic.formulaSheet, sources: [], code: topic.code, kind: "revision" }
+                : { id: "formulas", title: "Formula sheet", html: topic.formulaSheet, sources: [], code: topic.code, kind: "revision" }] : []),
             ...(topic.recall || []).map((item) => ({ ...item, title: "Recall", sources: [], code: topic.code, kind: "recall" }))
         ]).filter((block) => {
-            const content = text(block.title + " " + (block.prompt || "") + " " + block.html + " " + (block.moreHtml || "") + " " + block.code + " " + block.sources.map((source) => source.id).join(" "));
+            const content = text(block.title + " " + (block.prompt || "") + " " + block.html + " " + (block.moreHtml || "") + " " + blockExtras(block) + " " + (block.sheet ? sheetText(block.sheet) : "") + " " + block.code + " " + block.sources.map((source) => source.id).join(" "));
             return terms.every((term) => content.includes(term));
         });
     }
@@ -153,7 +159,7 @@
         function replace(node, html) {
             if (window.MathJax && window.MathJax.typesetClear) window.MathJax.typesetClear([node]);
             node.innerHTML = html;
-            node.querySelectorAll(".cn-prose").forEach((prose) => {
+            node.querySelectorAll(".cn-prose:not([data-cn-math])").forEach((prose) => {
                 if (window.CIVIL_NOTE_MATH) prose.innerHTML = window.CIVIL_NOTE_MATH.format(prose.innerHTML, { stackUnits: true });
                 styleEmphasis(prose);
             });
@@ -243,17 +249,46 @@
             return (topic.references || []).length ? `<details class="cn-sources"><summary>Standards checked</summary><ul>${topic.references.filter((ref) => /^https:\/\//.test(ref.url)).map((ref) => `<li><a href="${esc(ref.url)}" target="_blank" rel="noopener noreferrer">${esc(ref.title)}</a></li>`).join("")}</ul></details>` : "";
         }
 
-        function proseHtml(block, expand = false) {
-            return `<div class="cn-prose">${block.html}</div>${block.moreHtml ? `<details class="cn-more"${expand ? " open" : ""}><summary>Further reasoning and context</summary><div class="cn-prose">${block.moreHtml}</div></details>` : ""}`;
+        function proseHtml(block, expand = false, tex = false) {
+            const math = tex ? TEX : "";
+            return `<div class="cn-prose"${math}>${block.html}</div>${block.moreHtml ? `<details class="cn-more"${expand ? " open" : ""}><summary>Further reasoning and context</summary><div class="cn-prose"${math}>${block.moreHtml}</div></details>` : ""}`;
         }
 
-        function checkHtml(item, code, index) {
+        function shortRef(source) {
+            const match = /^(pp?\.) ([^;]+);(.*)$/.exec(source.label || "");
+            if (!match) return source.label || source.id;
+            const points = [...match[3].matchAll(/point (\d+)/g)].map((item) => item[1]);
+            return `${match[1]} ${match[2].trim()}${points.length ? ` · ${points.length > 1 ? "pts" : "pt"} ${points.join(", ")}` : ""}`;
+        }
+
+        function pointsHtml(points, highlight) {
+            if (!points?.length) return "";
+            return `<section class="cn-keypoints"><h5>Key facts</h5><ul>${points.map((point) => `<li${highlight && point.sources.some((source) => source.id === highlight) ? ' class="is-highlighted"' : ""}><div class="cn-prose"${TEX}>${point.html}</div><span class="cn-point-refs">${point.sources.map((source) =>
+                `<button type="button" class="cn-point-ref" data-cn-point-source="${esc(source.id)}" title="${esc(source.id)}" aria-label="Read capsule question ${esc(source.label)}, ${esc(source.id)}">Capsule ${esc(shortRef(source))}</button>`).join("")}</span></li>`).join("")}</ul></section>`;
+        }
+
+        function formulasHtml(formulas) {
+            if (!formulas?.length) return "";
+            return `<div class="cn-formulas">${formulas.map((formula) => `<figure class="cn-formula"><figcaption>${esc(formula.label)}</figcaption><div class="cn-formula-tex">\\[${esc(formula.tex)}\\]</div>${formula.where ? `<div class="cn-prose cn-formula-where"${TEX}>${formula.where}</div>` : ""}</figure>`).join("")}</div>`;
+        }
+
+        function sheetHtml(sheet) {
+            return `<div class="cn-sheet-grid">${sheet.map((entry) => `<div class="cn-sheet-item"><b>${esc(entry.label)}</b><div class="cn-formula-tex">\\[${esc(entry.tex)}\\]</div>${entry.note ? `<div class="cn-prose cn-sheet-note"${TEX}>${entry.note}</div>` : ""}</div>`).join("")}</div>`;
+        }
+
+        // Structured capsule sections; `tex` marks content written with TeX delimiters rather than plain-text fractions.
+        function blockBodyHtml(block, tex, { expand = false, highlight = "" } = {}) {
+            if (!tex) return proseHtml(block, expand);
+            return `<div class="cn-prose"${TEX}>${block.html}</div>${formulasHtml(block.formulas)}${block.example ? `<section class="cn-example"><h5>${esc(block.example.title || "Worked example")}</h5><div class="cn-prose"${TEX}>${block.example.html}</div></section>` : ""}${block.moreHtml ? `<details class="cn-more"${expand ? " open" : ""}><summary>Further reasoning and context</summary><div class="cn-prose"${TEX}>${block.moreHtml}</div></details>` : ""}${pointsHtml(block.points, highlight)}`;
+        }
+
+        function checkHtml(item, code, index, tex = false) {
             const source = item.sources[0];
             const corrected = item.status === "corrected";
             const kind = checkKind(item);
             return `<details class="cn-caution" id="cn-${code}-${checkId(item, index)}" data-cn-check="${source ? esc(source.id) : "reference"}" data-check-status="${corrected ? "corrected" : "review"}" data-check-kind="${kind}" tabindex="-1">
                 <summary><span class="cn-check-label">${esc(checkTitle(item))}<span class="cn-check-status">${checkLabels[kind]}</span></span>${item.prompt ? `<span class="cn-check-prompt">${esc(item.prompt)}</span>` : ""}</summary>
-                <div class="cn-check-content">${proseHtml(item)}${source ? `<button type="button" class="cn-button cn-secondary" data-cn-source="${esc(source.id)}">Read this question ${uiIcon("arrow-up-right")}</button>` : ""}</div></details>`;
+                <div class="cn-check-content">${proseHtml(item, false, tex)}${source ? `<button type="button" class="cn-button cn-secondary" data-cn-source="${esc(source.id)}">Read this question ${uiIcon("arrow-up-right")}</button>` : ""}</div></details>`;
         }
 
         function figuresHtml(code, blockId) {
@@ -268,10 +303,11 @@
         function sourceDerivationsHtml(topic, id, explanation) {
             const blocks = topic.blocks.filter((block) => block.sources.some((source) => source.id === id));
             if (!blocks.length) return "";
+            const tex = topic.format === 2;
             const figures = library === "model" ? window.CIVIL_NOTE_FIGURES?.topics[topic.code] || [] : [];
-            return `<section class="cn-source-derivations"><h3>Related derivations</h3>${blocks.map((block) => {
+            return `<section class="cn-source-derivations"><h3>${tex ? "Related notes" : "Related derivations"}</h3>${blocks.map((block) => {
                 const diagrams = figures.filter((figure) => figure.block === block.id && !explanation.includes(figure.src));
-                return `<details class="cn-related-note" data-cn-related-note="${esc(block.id)}"><summary>${esc(block.title)}</summary>${proseHtml(block)}${diagrams.map((figure) => `<figure class="cn-explanation-figure"><a href="${figure.src + version}" target="_blank" rel="noopener noreferrer" aria-label="Open ${esc(figure.title)}"><img src="${figure.src + version}" width="${figure.width}" height="${figure.height}" loading="lazy" decoding="async" alt="${esc(figure.caption)}" /></a><figcaption>${esc(figure.title)}. ${esc(figure.caption)}</figcaption></figure>`).join("")}</details>`;
+                return `<details class="cn-related-note" data-cn-related-note="${esc(block.id)}"><summary>${esc(block.title)}</summary>${blockBodyHtml(block, tex, { highlight: id })}${diagrams.map((figure) => `<figure class="cn-explanation-figure"><a href="${figure.src + version}" target="_blank" rel="noopener noreferrer" aria-label="Open ${esc(figure.title)}"><img src="${figure.src + version}" width="${figure.width}" height="${figure.height}" loading="lazy" decoding="async" alt="${esc(figure.caption)}" /></a><figcaption>${esc(figure.title)}. ${esc(figure.caption)}</figcaption></figure>`).join("")}</details>`;
             }).join("")}</section>`;
         }
 
@@ -292,7 +328,10 @@
         }
 
         function revisionHtml(topic, code) {
-            return (topic.formulaSheet ? `<details class="cn-revision" id="cn-${code}-formulas" tabindex="-1"><summary>Formula sheet</summary><div class="cn-prose">${topic.formulaSheet}</div></details>` : "") +
+            const sheet = Array.isArray(topic.formulaSheet)
+                ? `<details class="cn-revision cn-sheet" id="cn-${code}-formulas" tabindex="-1"><summary>Formula sheet <span>${topic.formulaSheet.length} formulas</span></summary>${sheetHtml(topic.formulaSheet)}</details>`
+                : topic.formulaSheet ? `<details class="cn-revision" id="cn-${code}-formulas" tabindex="-1"><summary>Formula sheet</summary><div class="cn-prose">${topic.formulaSheet}</div></details>` : "";
+            return sheet +
                 ((topic.recall || []).length ? `<section class="cn-revision" id="cn-${code}-recall" tabindex="-1"><h4>Recall</h4>${topic.recall.map((item) => `<details class="cn-recall-item" id="cn-${code}-${item.id}" tabindex="-1"><summary>${esc(item.prompt)}</summary><div class="cn-prose">${item.html}</div><a href="#cn-${code}-${item.block}" data-cn-jump="cn-${code}-${item.block}">Review concept ${uiIcon("arrow-up-right")}</a></details>`).join("")}</section>` : "");
         }
 
@@ -308,19 +347,23 @@
             const sessionDisabled = topic.questionCount ? "" : ' disabled aria-describedby="cnSourceCount"';
             const groups = topic.groups || [];
             const heading = groups.length ? "h5" : "h4";
+            const tex = topic.format === 2;
+            const facts = tex ? topic.blocks.reduce((sum, block) => sum + (block.points?.length || 0), 0) : 0;
+            const formulaCount = tex ? topic.blocks.reduce((sum, block) => sum + (block.formulas?.length || 0), 0) : 0;
             const countLabel = topic.questionCount ? `${topic.questionCount} ${library === "capsule" ? "capsule" : "source"} questions` : "Syllabus-only notes · No mapped questions in the current bank";
-            return `<article class="cn-topic${groups.length ? " cn-lesson" : ""}" data-note-topic="${code}" data-note-library="${library}">
+            return `<article class="cn-topic${groups.length ? " cn-lesson" : ""}${tex ? " cn-v2" : ""}" data-note-topic="${code}" data-note-library="${library}">
                 <header class="cn-topic-head"><div><span class="cn-code">${code === RURAL.code ? "Additional" : code}</span><h3 id="cnTopicTitle" tabindex="-1">${esc(meta.number + " " + meta.name)}</h3><span class="cn-count" id="cnSourceCount">${countLabel}</span></div>
                     <div class="cn-actions"><button type="button" class="cn-button" data-cn-session="practice" data-topic="${code}"${sessionDisabled}>${uiIcon("ruler")} Practice topic</button><button type="button" class="cn-button cn-secondary" data-cn-session="exam" data-topic="${code}"${sessionDisabled}>${uiIcon("clipboard")} Exam</button></div></header>
                 <details class="cn-scope"><summary>Syllabus scope</summary><p>${esc(meta.detail)}</p></details>
-                <nav class="cn-lesson-nav" aria-label="Contents of ${esc(meta.number)}"><label class="cn-field"><span>On this page</span><select id="cnSectionSelect"><option value="">Jump to a section</option>${groups.length ? groups.map((group, groupIndex) => `<option value="cn-${code}-group-${group.id}">${groupIndex + 1}. ${esc(group.title)}</option>`).join("") : topic.blocks.map((block) => `<option value="cn-${code}-${block.id}">${esc(block.title)}</option>`).join("")}${topic.formulaSheet ? `<option value="cn-${code}-formulas">Formula sheet</option>` : ""}${topic.recall?.length ? `<option value="cn-${code}-recall">Recall</option>` : ""}<option value="cn-${code}-checks">Question checks</option></select></label>${topic.formulaSheet ? `<a href="#cn-${code}-formulas" data-cn-jump="cn-${code}-formulas">Formula sheet ${uiIcon("arrow-right")}</a>` : ""}<a href="#cn-${code}-checks" data-cn-jump="cn-${code}-checks">Question checks ${uiIcon("arrow-right")}</a></nav>
-                ${topic.blocks.map((block) => {
+                ${tex && topic.summary ? `<section class="cn-summary"><h4>Overview</h4><div class="cn-prose"${TEX}>${topic.summary}</div><p class="cn-summary-stats">${topic.blocks.length} sections · ${facts} key facts${formulaCount ? ` · ${formulaCount} formulas` : ""}</p></section>` : ""}
+                <nav class="cn-lesson-nav" aria-label="Contents of ${esc(meta.number)}"><label class="cn-field"><span>On this page</span><select id="cnSectionSelect"><option value="">Jump to a section</option>${groups.length ? groups.map((group, groupIndex) => `<option value="cn-${code}-group-${group.id}">${groupIndex + 1}. ${esc(group.title)}</option>`).join("") : topic.blocks.map((block, blockIndex) => `<option value="cn-${code}-${block.id}">${tex ? blockIndex + 1 + ". " : ""}${esc(block.title)}</option>`).join("")}${topic.formulaSheet ? `<option value="cn-${code}-formulas">Formula sheet</option>` : ""}${topic.recall?.length ? `<option value="cn-${code}-recall">Recall</option>` : ""}<option value="cn-${code}-checks">Question checks</option></select></label>${topic.formulaSheet ? `<a href="#cn-${code}-formulas" data-cn-jump="cn-${code}-formulas">Formula sheet ${uiIcon("arrow-right")}</a>` : ""}<a href="#cn-${code}-checks" data-cn-jump="cn-${code}-checks">Question checks ${uiIcon("arrow-right")}</a></nav>
+                ${topic.blocks.map((block, blockIndex) => {
                     const groupIndex = groups.findIndex((group) => group.start === block.id);
                     const group = groups[groupIndex];
-                    return `${group ? `<h4 class="cn-part" id="cn-${code}-group-${group.id}" tabindex="-1"><span>${groupIndex + 1}</span>${esc(group.title)}</h4>` : ""}<section class="cn-block" id="cn-${code}-${block.id}" tabindex="-1"><${heading}>${esc(block.title)}</${heading}>${proseHtml(block)}${figuresHtml(code, block.id)}${references(block.sources)}</section>`;
+                    return `${group ? `<h4 class="cn-part" id="cn-${code}-group-${group.id}" tabindex="-1"><span>${groupIndex + 1}</span>${esc(group.title)}</h4>` : ""}<section class="cn-block" id="cn-${code}-${block.id}" tabindex="-1"><${heading}>${tex ? `<span class="cn-num">${blockIndex + 1}</span><span>${esc(block.title)}</span>` : esc(block.title)}</${heading}>${blockBodyHtml(block, tex)}${figuresHtml(code, block.id)}${references(block.sources)}</section>`;
                 }).join("")}
                 ${revisionHtml(topic, code)}
-                <section class="cn-checks" id="cn-${code}-checks" tabindex="-1"><details class="cn-check-index"><summary>${topic.questionCount ? "Question checks" : "Reference checks"} (${topic.cautions.length})</summary>${checkFilterHtml(topic)}${topic.cautions.map((item, index) => checkHtml(item, code, index)).join("")}</details>${externalReferences(topic)}</section>
+                <section class="cn-checks" id="cn-${code}-checks" tabindex="-1"><details class="cn-check-index"><summary>${topic.questionCount ? "Question checks" : "Reference checks"} (${topic.cautions.length})</summary>${checkFilterHtml(topic)}${topic.cautions.map((item, index) => checkHtml(item, code, index, tex)).join("")}</details>${externalReferences(topic)}</section>
                 <details class="cn-gaps"><summary>Scope and limits</summary><ul>${topic.gaps.map((gap) => `<li>${esc(gap)}</li>`).join("")}</ul></details>
                 <footer class="cn-pagination"><button type="button" class="cn-button cn-secondary" data-cn-topic="${codes[index - 1] || code}"${index === 0 ? " disabled" : ""}>${uiIcon("arrow-left")} Previous subchapter</button><button type="button" class="cn-button" data-cn-topic="${codes[index + 1] || code}"${index === codes.length - 1 ? " disabled" : ""}>Next subchapter ${uiIcon("arrow-right")}</button></footer>
             </article>`;
@@ -334,7 +377,9 @@
             const results = search(codesOf(selectedChapterId).map((code) => registry()[code]), query);
             replace(reader, `<div class="cn-search-summary" role="status"><b>${results.length} matching sections</b><button type="button" class="cn-button cn-secondary" data-cn-clear>Clear search</button></div>${results.length ? results.map((block) => {
                 const meta = topicMap.get(block.code);
-                return `<article class="cn-search-result"><span class="cn-code">${esc(meta.number + " " + meta.name)}</span><h3>${esc(block.title)}</h3>${block.kind === "caution" ? `<span class="cn-check-status">${checkLabels[checkKind(block)]}</span>` : ""}${block.prompt ? `<p class="cn-check-prompt">${esc(block.prompt)}</p>` : ""}${proseHtml(block, true)}${figuresHtml(block.code, block.id)}<button type="button" class="cn-button cn-secondary" data-cn-topic="${block.code}" data-cn-block="${block.id}">Open subchapter ${uiIcon("arrow-right")}</button></article>`;
+                const tex = registry()[block.code]?.format === 2;
+                const body = block.sheet ? sheetHtml(block.sheet) : block.kind === "note" ? blockBodyHtml(block, tex, { expand: true }) : proseHtml(block, true, tex);
+                return `<article class="cn-search-result${tex ? " cn-v2" : ""}"><span class="cn-code">${esc(meta.number + " " + meta.name)}</span><h3>${esc(block.title)}</h3>${block.kind === "caution" ? `<span class="cn-check-status">${checkLabels[checkKind(block)]}</span>` : ""}${block.prompt ? `<p class="cn-check-prompt">${esc(block.prompt)}</p>` : ""}${body}${figuresHtml(block.code, block.id)}<button type="button" class="cn-button cn-secondary" data-cn-topic="${block.code}" data-cn-block="${block.id}">Open subchapter ${uiIcon("arrow-right")}</button></article>`;
             }).join("") : '<div class="cn-empty">No matching notes. Try a topic, formula name or source question ID.</div>'}`);
         }
 
@@ -401,7 +446,7 @@
                 if (!q || (q.src || q.id) !== id) throw new Error("This reference no longer matches the source paper.");
                 const checks = topic.cautions.filter((item) => item.sources.some((source) => source.id === id));
                 const label = checks.some((check) => check.status === "corrected") ? "Corrected question" : checks.length === 1 && checks[0].issue ? checkLabels[checkKind(checks[0])] : "Question check";
-                replace(sourceBody, `<span class="cn-code">${esc(id)}</span>${checks.length ? `<section class="cn-source-check"><h3>${label}</h3><div class="cn-prose">${checks.map((check) => check.html).join("")}</div>${externalReferences(topic)}</section>` : ""}<div class="cn-source-question">${q.text}</div>
+                replace(sourceBody, `<span class="cn-code">${esc(id)}</span>${checks.length ? `<section class="cn-source-check"><h3>${label}</h3><div class="cn-prose"${topic.format === 2 ? TEX : ""}>${checks.map((check) => check.html).join("")}</div>${externalReferences(topic)}</section>` : ""}<div class="cn-source-question">${q.text}</div>
                     <ol class="cn-source-options" type="a" data-cn-answer="${esc((q.answer || "").toLowerCase())}">${q.options.map((option) => `<li value="${option.key.charCodeAt(0) - 96}"><button type="button" class="cn-option-btn" data-cn-option="${esc(option.key.toLowerCase())}">${option.text}</button></li>`).join("")}</ol>
                         <details class="cn-stored-answer"><summary>Answer and explanation</summary><p>Answer: ${esc(q.answer.toUpperCase())}</p><div class="cn-source-explanation">${q.explanation || "No explanation is stored for this item."}</div>${sourceDerivationsHtml(topic, id, q.explanation || "")}</details>`);
             } catch (error) {
@@ -437,6 +482,7 @@
                 const stored = sourceBody.querySelector(".cn-stored-answer");
                 if (stored) stored.open = true;
             }
+            else if (button.dataset.cnPointSource) openSource(button.dataset.cnPointSource);
             else if (button.dataset.cnSource) openSource(button.dataset.cnSource);
             else if (button.dataset.cnTopic && topicMap.get(button.dataset.cnTopic)?.chapterId === selectedChapterId) {
                 selectTopic(button.dataset.cnTopic); $("cnSearch").value = ""; renderBody();

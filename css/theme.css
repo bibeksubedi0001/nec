@@ -317,6 +317,15 @@ html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-lesson .cn-cautio
 html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-lesson .cn-caution[data-check-kind="answer-review"] { background: var(--bad-bg); border-color: var(--bad); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-option-btn.is-correct { background: var(--good-bg); color: var(--good); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-option-btn.is-wrong { background: var(--bad-bg); color: var(--bad); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection :is(.cn-summary, .cn-keypoints, .cn-formula) { background: var(--surface-2); border-color: var(--line); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-formula { border-top-color: var(--good); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-example { background: var(--blue-soft); border-color: var(--line); border-left-color: var(--blue); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-example > h5 { color: var(--blue); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection :is(.cn-sheet-item, .cn-point-ref) { background: var(--surface); border-color: var(--line); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-point-ref:hover { background: var(--good-bg); border-color: var(--good); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-v2 :is(.cn-formula-where, .cn-sheet-note) { color: var(--ink-soft); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-v2 .cn-prose em { color: var(--ink); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-keypoints li.is-highlighted { background: var(--amber-soft); }
 
 html[data-theme="dark"] body[data-app="nec"] #civilSection[data-session-mode="practice"],
 html[data-theme="dark"] body[data-app="nec"] #civilSection[data-session-mode="practice"]::before { background: var(--bg); }

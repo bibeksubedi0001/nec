@@ -5,13 +5,52 @@
       "ACiE0501": {
         "code": "ACiE0501",
         "questionCount": 18,
-        "formulaSheet": "<p><strong>Roof snow load (IS 875 Part 4:1987):</strong> S = μS<sub>0</sub> on horizontal plan area, where S<sub>0</sub> is the site ground snow load and μ the dimensionless roof-shape coefficient.</p><p><strong>Design wind speed and pressure (IS 875 Part 3:1987):</strong> V<sub>z</sub> = V<sub>b</sub>k<sub>1</sub>k<sub>2</sub>k<sub>3</sub>; p<sub>z</sub> = 0.6V<sub>z</sub><sup>2</sup> in N/m<sup>2</sup> with V<sub>z</sub> in m/s.</p><p><strong>Speed scaling with unchanged coefficients:</strong> p<sub>2</sub>/p<sub>1</sub> = (V<sub>2</sub>/V<sub>1</sub>)<sup>2</sup>.</p><p><strong>Storey shear sharing (rigid floor, no torsion, linear-elastic):</strong> V<sub>i</sub> = V k<sub>i</sub>/Σk.</p><p><strong>Orthogonal earthquake effects (IS 1893 Part 1:2016 clause 6.3.2.2):</strong> ±E<sub>x</sub> ± 0.3E<sub>y</sub> and ±0.3E<sub>x</sub> ± E<sub>y</sub>, keeping the most adverse result.</p>",
+        "format": 2,
+        "summary": "<p>Loads and load combinations covers the actions a structure is designed for: permanent dead load, imposed occupancy load, snow, wind and earthquake, and the rules for combining them. The capsule questions test how actions are classified, which IS 875:1987 part supplies each load, the roof snow relation, how wind pressure scales with speed and site factors, NBC 104 wind zones, storey shear and its sharing between frames, and the combination of wind, earthquake and orthogonal seismic effects.</p>",
         "blocks": [
           {
             "id": "permanent-and-imposed-actions",
-            "title": "Permanent (dead) actions versus imposed occupancy loads",
-            "html": "<p>Classifying a load answers two separate questions: how long the action persists, and in which direction it acts. The <strong>self-weight</strong> of a floor slab, a fixed wall, a screed or a fixed ceiling is set by the member's geometry and the unit weight of its material, and it is present throughout the service life. It is therefore a <strong>permanent action</strong>, called dead load in an ordinary load schedule; IS 800:2007 clause 5.3.1 classifies self-weight in this way. People, furniture and movable stock change with use, so they form the <strong>imposed (occupancy) load</strong>. In a classroom during an examination, the students are imposed load while the slab, screed and ceiling are dead load.</p><p>'Permanent' and 'gravity' describe different aspects of an action. Dead load acts downward under gravity, but so does occupancy load, which is not permanent. Wind suction on cladding, earthquake inertia and restrained shrinkage are neither dead load nor ordinary gravity load.</p>",
-            "moreHtml": "<p>Calling self-weight permanent does not make its value exact: dimensional and unit-weight uncertainty is still covered by the applicable design factors. Nor does it mean the structure can never respond dynamically, because the same permanent mass takes part in vibration and earthquake response.</p>",
+            "title": "Permanent dead actions versus imposed occupancy loads",
+            "html": "<p>Classifying a load answers two separate questions: how long the action persists, and in which direction it acts.</p><p>The <em>self-weight</em> of a floor slab, a fixed wall, a screed or a fixed ceiling follows from the member's geometry and the unit weight of its material, and it is present throughout the service life. It is therefore a <em>permanent action</em>, recorded as dead load in an ordinary load schedule; IS 800:2007 clause 5.3.1 classifies self-weight this way.</p><p>People, furniture and movable stock change with use, so they form the <em>imposed</em> or occupancy load. In a classroom during an examination the students are imposed load, while the slab, screed and fixed ceiling are dead load.</p><table><thead><tr><th scope='col'>Action</th><th scope='col'>Dead load?</th><th scope='col'>Gravity load?</th></tr></thead><tbody><tr><td>Self-weight of a slab, fixed wall, screed or fixed ceiling</td><td>Yes, permanent</td><td>Yes</td></tr><tr><td>Occupants, furniture and movable stock</td><td>No, imposed</td><td>Yes</td></tr><tr><td>Wind suction, earthquake inertia, restrained shrinkage</td><td>No</td><td>No</td></tr></tbody></table><p>Permanent and gravity therefore describe different aspects of an action. Dead load acts downward under gravity, but so does occupancy load, which is not permanent.</p>",
+            "moreHtml": "<p>Calling self-weight permanent does not make its value exact: uncertainty in dimensions and unit weights is still covered by the applicable design factors. Nor does it mean the structure can never respond dynamically, because the same permanent mass takes part in vibration and earthquake response.</p>",
+            "points": [
+              {
+                "html": "A floor's self-weight is fixed by its geometry and material unit weight, so it is classified as a permanent action or dead load.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00086",
+                    "label": "p. 18; topic 4 point 86"
+                  }
+                ]
+              },
+              {
+                "html": "IS 800:2007 clause 5.3.1 classifies self-weight as a permanent action, because it persists throughout service, unlike changing occupancy.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00004",
+                    "label": "p. 19; topic 5 point 4"
+                  }
+                ]
+              },
+              {
+                "html": "In a classroom the weight of the students is imposed occupancy load; the slab, screed and fixed ceiling belong to the dead load.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00005",
+                    "label": "p. 19; topic 5 point 5"
+                  }
+                ]
+              },
+              {
+                "html": "The self-weight of a fixed concrete wall is a permanent action that is also a gravity load; occupancy load also acts through gravity without being permanent.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00102",
+                    "label": "p. 22; topic 5 point 101"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-04-00086",
@@ -32,9 +71,39 @@
             ]
           },
           {
-            "id": "is-875-parts-and-imposed-patterns",
-            "title": "Using the IS 875:1987 parts: unit weights, imposed loads and load patterns",
-            "html": "<p>The 1987 IS 875 series places each ordinary design load in its own part. A dead-load estimate multiplies the actual member dimensions by material unit weights taken from <strong>Part 1 (dead loads)</strong>; calling a figure 'conservative' is no substitute for that calculation. Occupancy-related distributed and concentrated floor loads come from <strong>Part 2 (imposed loads)</strong>, and these actions cannot be substituted for one another.</p><table><thead><tr><th scope='col'>IS 875 part (1987)</th><th scope='col'>Action covered</th></tr></thead><tbody><tr><td>Part 1</td><td>Dead loads and unit weights of materials</td></tr><tr><td>Part 2</td><td>Imposed (occupancy) loads</td></tr><tr><td>Part 3</td><td>Wind loads</td></tr><tr><td>Part 4</td><td>Snow loads</td></tr></tbody></table><p>Imposed load can vary in both <strong>magnitude and position</strong>. Stock moved between warehouse bays, or a crowd gathering in part of a hall, leaves loaded and unloaded spans side by side. In continuous beams and slabs this <strong>pattern loading</strong> can produce larger span moments or support reactions than loading the whole floor, so a single uniform arrangement does not necessarily envelope every member action.</p>",
+            "id": "is-875-parts-and-load-patterns",
+            "title": "IS 875:1987 parts, unit weights and imposed-load patterns",
+            "html": "<p>The 1987 IS 875 series places each ordinary design load in its own part, and one part cannot stand in for another.</p><table><thead><tr><th scope='col'>IS 875 part (1987)</th><th scope='col'>Action covered</th></tr></thead><tbody><tr><td>Part 1</td><td>Dead loads and unit weights of materials</td></tr><tr><td>Part 2</td><td>Imposed (occupancy) loads</td></tr><tr><td>Part 3</td><td>Wind loads</td></tr><tr><td>Part 4</td><td>Snow loads</td></tr><tr><td>Part 5</td><td>Special loads and combinations</td></tr></tbody></table><p>A dead-load estimate multiplies actual member dimensions by material unit weights from Part 1; calling a figure a conservative dead load is no substitute for that calculation. Occupancy-related distributed and concentrated floor loads come from Part 2.</p><p>Imposed load can vary in both <em>magnitude and position</em>. Stock moved between warehouse bays, or a crowd gathering in one part of a hall, leaves loaded and unloaded spans side by side. In continuous beams and slabs this <em>pattern loading</em> can produce larger span moments or support reactions than loading the whole floor, so one uniform arrangement need not envelope every member action.</p>",
+            "moreHtml": "<p>For a two-span continuous beam under uniform imposed load, the largest sagging moment in a span occurs with that span loaded and the other span empty, while the largest hogging moment over the central support needs both spans loaded. Each governing arrangement is therefore checked separately.</p>",
+            "points": [
+              {
+                "html": "IS 875 Part 1:1987 covers dead loads: its material unit weights, combined with actual dimensions, give the self-weight of walls and finishes.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00006",
+                    "label": "p. 19; topic 5 point 6"
+                  }
+                ]
+              },
+              {
+                "html": "Occupancy-based distributed and concentrated floor loads come from IS 875 Part 2:1987, the imposed-load part.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00008",
+                    "label": "p. 19; topic 5 point 8"
+                  }
+                ]
+              },
+              {
+                "html": "Imposed load can change in both magnitude and position, so a single full-floor arrangement may miss the governing moment or reaction in a continuous system.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00007",
+                    "label": "p. 19; topic 5 point 7"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00006",
@@ -52,8 +121,39 @@
           },
           {
             "id": "snow-load-on-roofs",
-            "title": "Snow load on roofs from ground snow and roof-shape coefficients",
-            "html": "<p>IS 875 Part 4:1987 (clause 3.1) gives the roof snow load as <strong>S = μS<sub>0</sub></strong>, acting on the horizontal plan area of the roof. S<sub>0</sub> is the ground snow load for the site, and μ is a dimensionless shape coefficient that depends on the roof geometry and on the distribution case being checked. The coefficient multiplies the ground value; it is neither an added pressure nor a divisor.</p><p><em>Worked example.</em> For a specified uniform case with S<sub>0</sub> = 2.4 kN/m<sup>2</sup> and μ = 0.75, S = 0.75 × 2.4 = 1.80 kN/m<sup>2</sup> of plan area. Drift and unbalanced snow cases, where required, are separate checks with their own coefficients.</p><p>Because S depends on both the site and the roof shape, one intensity applied to every roof truss at every site cannot be justified. Replacing such a blanket entry needs the site's ground snow load and the applicable shape and distribution factors; changing the unit printed beside the number would not make it valid.</p>",
+            "title": "Roof snow load from ground snow and the roof-shape coefficient",
+            "html": "<p>IS 875 Part 4:1987 clause 3.1 gives the roof snow load as the site's ground snow load multiplied by a <em>shape coefficient</em>, and the result acts on the horizontal plan area of the roof. The coefficient is dimensionless and depends on the roof geometry and on the distribution case being checked. It multiplies the ground value; it is neither an added pressure nor a divisor.</p><p>Because both factors vary, one intensity applied to every roof truss at every site cannot be justified. Replacing such a blanket entry needs the site's ground snow load and the applicable roof-shape and distribution factors. Changing the unit printed beside the number would not make it valid, and no universal replacement value exists.</p><p>Drift and unbalanced snow cases, where required, are separate checks with their own coefficients.</p>",
+            "formulas": [
+              {
+                "label": "Roof snow load on plan area",
+                "tex": "S = \\mu\\, S_0",
+                "where": "<p>\\(S_0\\) is the site ground snow load and \\(\\mu\\) the dimensionless roof-shape coefficient for the case considered.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a uniform snow case",
+              "html": "<p>With a ground snow load \\(S_0 = 2.4\\ \\text{kN/m}^2\\) and a shape coefficient \\(\\mu = 0.75\\):</p>\\[S = 0.75 \\times 2.4 = 1.80\\ \\text{kN/m}^2\\]<p>This intensity acts on the horizontal plan area. Dividing by the coefficient instead would give 3.20 kN/m², overstating the load.</p>"
+            },
+            "points": [
+              {
+                "html": "With a ground snow load of 2.4 kN/m² and a roof-shape coefficient of 0.75, the uniform roof snow intensity from \\(S = \\mu S_0\\) is 1.80 kN/m² on plan area.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00002",
+                    "label": "p. 19; topic 5 point 2"
+                  }
+                ]
+              },
+              {
+                "html": "One snow intensity cannot serve every site: replacing it needs the site's ground snow loading and the roof-shape and distribution factors.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00003",
+                    "label": "p. 19; topic 5 point 3"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00002",
@@ -67,8 +167,47 @@
           },
           {
             "id": "wind-velocity-pressure",
-            "title": "Wind velocity pressure grows with the square of design wind speed",
-            "html": "<p>Wind pressure comes from the kinetic energy of moving air, so <strong>velocity pressure is proportional to V<sup>2</sup></strong>. With the air-density basis and pressure coefficients unchanged, the pressure ratio is the square of the speed ratio. A 20% rise in design speed gives 1.20<sup>2</sup> = 1.44, a 44% rise in pressure; doubling the percentage (40%) misses the extra quadratic term.</p><p>IS 875 Part 3:1987 first turns the basic wind speed into a <strong>design wind speed V<sub>z</sub> = V<sub>b</sub>k<sub>1</sub>k<sub>2</sub>k<sub>3</sub></strong>. The factors are dimensionless: k<sub>1</sub> addresses risk, k<sub>2</sub> terrain, height and structure size, and k<sub>3</sub> topography. The velocity pressure is then <strong>p<sub>z</sub> = 0.6V<sub>z</sub><sup>2</sup></strong> in N/m<sup>2</sup> with V<sub>z</sub> in m/s.</p><p><em>Worked example.</em> With V<sub>b</sub> = 50 m/s, k<sub>1</sub> = k<sub>3</sub> = 1 and k<sub>2</sub> = 1.2, V<sub>z</sub> = 50 × 1.2 = 60 m/s and p<sub>z</sub> = 0.6 × 60<sup>2</sup> = 2160 Pa = 2.16 kPa. Terrain, height and structure size therefore change the pressure through k<sub>2</sub>. The force on a particular surface still needs pressure coefficients and the loaded area.</p>",
+            "title": "Wind velocity pressure, design wind speed and the square law",
+            "html": "<p>Wind pressure comes from the kinetic energy of moving air, so velocity pressure is proportional to the square of the wind speed. With the air-density basis and pressure coefficients unchanged, the pressure ratio is the square of the speed ratio. Doubling a percentage speed increase misses the extra quadratic term.</p><p>IS 875 Part 3:1987 first converts the regional basic wind speed \\(V_b\\) into a design wind speed \\(V_z\\) through three dimensionless factors:</p><ul><li>\\(k_1\\), the probability factor or risk coefficient;</li><li>\\(k_2\\), the terrain, height and structure-size factor;</li><li>\\(k_3\\), the topography factor.</li></ul><p>The velocity pressure then follows from \\(V_z\\). Terrain, height and structure size therefore change the pressure through \\(k_2\\), and they enter squared. The force on a particular surface still needs pressure coefficients and the loaded area, and factors from later editions should not be mixed into the 1987 procedure.</p>",
+            "formulas": [
+              {
+                "label": "Pressure ratio for a change of wind speed",
+                "tex": "\\dfrac{p_2}{p_1} = \\left(\\dfrac{V_2}{V_1}\\right)^2"
+              },
+              {
+                "label": "Design wind speed",
+                "tex": "V_z = V_b\\, k_1 k_2 k_3"
+              },
+              {
+                "label": "Design wind pressure, IS 875 Part 3:1987",
+                "tex": "p_z = 0.6\\, V_z^2",
+                "where": "<p>\\(p_z\\) in N/m² with \\(V_z\\) in m/s.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked examples: a faster wind and a site factor",
+              "html": "<p>A 20% rise in design speed at unchanged coefficients:</p>\\[\\dfrac{p_2}{p_1} = 1.20^2 = 1.44\\]<p>so the pressure rises by 44%, not 40%.</p><p>With \\(V_b = 50\\ \\text{m/s}\\), \\(k_1 = k_3 = 1\\) and \\(k_2 = 1.2\\):</p>\\[\\begin{aligned} V_z &amp;= 50 \\times 1 \\times 1.2 \\times 1 = 60\\ \\text{m/s} \\\\ p_z &amp;= 0.6 \\times 60^2 = 2160\\ \\text{Pa} \\end{aligned}\\]<p>That is 2.16 kPa. With \\(k_2 = 1.0\\) the same site would give 1.50 kPa, so raising \\(k_2\\) from 1.0 to 1.2 multiplies the pressure by 1.44.</p>"
+            },
+            "points": [
+              {
+                "html": "Velocity pressure is proportional to speed squared, so a 20% rise in design wind speed raises it by 44%, since \\(1.20^2 = 1.44\\).",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00009",
+                    "label": "p. 19; topic 5 point 9"
+                  }
+                ]
+              },
+              {
+                "html": "With \\(V_b\\) = 50 m/s, \\(k_1 = k_3 = 1\\) and \\(k_2 = 1.2\\), the design speed is 60 m/s and \\(p_z = 0.6V_z^2\\) gives 2.16 kPa, so terrain and structure size do change wind pressure.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00131",
+                    "label": "p. 23; topic 5 point 132"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00009",
@@ -81,9 +220,29 @@
             ]
           },
           {
-            "id": "basic-wind-speed-zones-and-site-effects",
-            "title": "Basic wind speed zones in NBC 104:1994 and site-specific wind behaviour",
-            "html": "<p>A basic wind speed is a regional reference value, not the design speed at a particular structure. The Nepal amendments in <strong>NBC 104:1994</strong> assign <strong>55 m/s</strong> to the higher-hill and mountain zone, which includes areas above 3000 m, and <strong>47 m/s</strong> to the lower zone. A site is placed in a zone by the code's geographical description, including any specially windy areas; elevation alone is not the complete rule. After the zone is chosen, the design-speed factors still modify the basic value before any pressure is calculated.</p><p>Light, flexible structures need the same site-specific thinking. A trail bridge at an exposed site responds to wind through its geometry, stiffness, exposure and aerodynamic behaviour, so lateral stability and dynamic effects can matter even at moderate spans. A remembered span below which wind guys are 'not required' can only belong to a particular standard bridge system under stated conditions. The span number alone neither removes wind forces nor guarantees dynamic stability.</p>",
+            "id": "wind-zones-and-site-behaviour",
+            "title": "NBC 104:1994 basic wind speed zones and site-specific wind behaviour",
+            "html": "<p>A basic wind speed is a regional reference value, not the design speed at a particular structure. The Nepal amendments in NBC 104:1994 give two basic speeds:</p><table><thead><tr><th scope='col'>NBC 104:1994 zone</th><th scope='col'>Basic wind speed</th></tr></thead><tbody><tr><td>Higher-hill and mountain zone, including areas above 3000 m</td><td>55 m/s</td></tr><tr><td>Lower zone</td><td>47 m/s</td></tr></tbody></table><p>A site is placed in a zone by the code's geographical description, including any specially windy areas; elevation alone is not the complete rule. After the zone is chosen, the design-speed factors still modify the basic value before any pressure is calculated.</p><p>Light, flexible structures need the same site-specific thinking. A trail bridge at an exposed site responds to wind through its geometry, stiffness, exposure and aerodynamic behaviour, so lateral stability and dynamic effects can matter even at moderate spans. A remembered span below which wind guys are not required can only belong to a particular standard bridge system under stated conditions; the span alone neither removes wind forces nor guarantees dynamic stability.</p>",
+            "points": [
+              {
+                "html": "NBC 104:1994 assigns a basic wind speed of 55 m/s to its higher-hill and mountain zone, which includes areas above 3000 m; the lower zone takes 47 m/s.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00010",
+                    "label": "p. 19; topic 5 point 10"
+                  }
+                ]
+              },
+              {
+                "html": "A span below 120 m does not by itself justify omitting wind guys, because lateral and dynamic wind behaviour depends on the bridge system and its site exposure.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00191",
+                    "label": "p. 42; rural point 15"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00010",
@@ -98,7 +257,38 @@
           {
             "id": "earthquake-inertia-and-storey-shear",
             "title": "Earthquake inertia forces, storey shear and sharing between frames",
-            "html": "<p>When the ground accelerates horizontally, each floor mass resists the motion and develops a horizontal <strong>inertia force</strong>. The floor diaphragms collect these forces and pass them to the vertical lateral-load-resisting system (frames, walls or bracing), which carries the accumulated <strong>storey shear</strong> down to the foundation together with the associated bending and axial effects. Horizontal shear is a principal seismic effect, but not the only one: ground motion can also have vertical components.</p><p>How a storey shear divides between vertical elements depends on the structural model. If a rigid floor translates without twisting, every frame at that level undergoes the same lateral displacement, so in a linear-elastic analysis each frame force is proportional to its lateral stiffness: <strong>V<sub>i</sub> = V k<sub>i</sub>/Σk</strong>.</p><p><em>Worked example.</em> A 120 kN storey shear shared by two parallel frames of stiffness 3k and k gives 120 × 3/4 = 90 kN and 120 × 1/4 = 30 kN. The stiffer frame attracts more force. Torsion, a flexible diaphragm or nonlinear response would need a different distribution model.</p>",
+            "html": "<p>When the ground accelerates horizontally, each floor mass resists the motion and develops a horizontal <em>inertia force</em>. The floor diaphragms collect these forces and pass them to the vertical lateral-load-resisting system of frames, walls or bracing.</p><p>That system carries the accumulated <em>storey shear</em> down to the foundation, together with the associated bending and axial effects. Horizontal shear is a principal seismic effect but not the only one, because ground motion can also have vertical components.</p><p>How a storey shear divides between vertical elements depends on the structural model. If a rigid floor translates without twisting, every frame at that level has the same lateral displacement, so in a linear-elastic analysis each frame force is proportional to its lateral stiffness. The stiffer frame attracts more force. Torsion, a flexible diaphragm or nonlinear response would need a different distribution model.</p>",
+            "formulas": [
+              {
+                "label": "Storey shear shared by lateral stiffness",
+                "tex": "V_i = V\\,\\dfrac{k_i}{\\sum k}",
+                "where": "<p>Valid for a rigid floor translating without torsion, with linear-elastic frames of lateral stiffness \\(k_i\\).</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: two frames of stiffness 3k and k",
+              "html": "<p>A 120 kN storey shear is shared by two parallel frames whose total stiffness is \\(4k\\).</p>\\[\\begin{aligned} V_1 &amp;= 120 \\times \\tfrac{3}{4} = 90\\ \\text{kN} \\\\ V_2 &amp;= 120 \\times \\tfrac{1}{4} = 30\\ \\text{kN} \\end{aligned}\\]<p>The two shares add back to 120 kN, as equilibrium requires, and the stiffer frame takes three times the force of the other.</p>"
+            },
+            "points": [
+              {
+                "html": "Horizontal floor inertia forces reach the foundation as storey shear carried by the vertical lateral-resisting system, with the associated bending and axial effects.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00013",
+                    "label": "p. 20; topic 5 point 13"
+                  }
+                ]
+              },
+              {
+                "html": "A rigid floor translating without torsion shares a 120 kN storey shear between frames of stiffness 3k and k as 90 kN and 30 kN, in proportion to their stiffness.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00113",
+                    "label": "p. 22; topic 5 point 111"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00013",
@@ -111,9 +301,53 @@
             ]
           },
           {
-            "id": "combining-wind-and-earthquake-actions",
-            "title": "Load combinations: alternative wind or earthquake and the 100/30 directional rule",
-            "html": "<p>A load combination states which actions are assumed to act together. For ordinary steel-building design, <strong>IS 800:2007 clause 3.5.2</strong> does not combine extreme wind and earthquake simultaneously: each is checked as an <strong>alternative environmental action</strong> with the prescribed gravity loads and factors. This is a concurrence assumption of the design method, not a claim that the two can never physically coincide, and neither case may be skipped.</p><p>Earthquake shaking can arrive from any horizontal direction. Where <strong>IS 1893 Part 1:2016 clause 6.3.2.2</strong> requires directional combination for non-parallel lateral systems, the full (100%) effect of one direction is combined with 30% of the orthogonal effect, the two axes are then interchanged, and the signs are chosen to make the response being checked most adverse.</p><p><em>Worked example.</em> A member's axial effects from the two horizontal earthquake cases are 80 kN and 30 kN. The positive envelopes are 80 + 0.3 × 30 = 89 kN and 0.3 × 80 + 30 = 54 kN, so 89 kN governs in that sense. Opposite-sign combinations must also be checked, and gravity effects are added separately.</p>",
+            "id": "combining-wind-and-earthquake",
+            "title": "Load combinations: wind or earthquake as alternatives, and the 100/30 rule",
+            "html": "<p>A load combination states which actions are assumed to act together. For ordinary steel-building design, IS 800:2007 clause 3.5.2 does not combine extreme wind and earthquake simultaneously. Each is checked as an <em>alternative environmental action</em> with the prescribed gravity loads and factors.</p><p>This is a concurrence assumption of the design method, not a claim that the two can never coincide physically, and neither case may be skipped.</p><p>Earthquake shaking can arrive from any horizontal direction. Where IS 1893 Part 1:2016 clause 6.3.2.2 requires directional combination for non-parallel lateral systems, the full effect of one direction is combined with 30% of the orthogonal effect. The axes are then interchanged, and the signs are chosen to make the response being checked most adverse.</p>",
+            "formulas": [
+              {
+                "label": "Orthogonal effects, x direction at full value",
+                "tex": "E = \\pm E_x \\pm 0.3\\,E_y"
+              },
+              {
+                "label": "Orthogonal effects, axes interchanged",
+                "tex": "E = \\pm 0.3\\,E_x \\pm E_y",
+                "where": "<p>Take the most adverse of all the sign and axis cases; gravity effects are added separately.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: axial effects of 80 kN and 30 kN",
+              "html": "<ol><li>Full \\(x\\) effect with 30% of \\(y\\): \\(80 + 0.3 \\times 30 = 89\\ \\text{kN}\\).</li><li>Full \\(y\\) effect with 30% of \\(x\\): \\(0.3 \\times 80 + 30 = 54\\ \\text{kN}\\).</li></ol><p>The larger positive envelope, 89 kN, governs in that sense. Opposite-sign combinations are checked for the reverse response, and any gravity effect is added separately.</p>"
+            },
+            "points": [
+              {
+                "html": "Under IS 800:2007 clause 3.5.2, extreme wind and earthquake are checked as alternative environmental actions, each with the gravity loads, rather than added together.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00001",
+                    "label": "p. 19; topic 5 point 1"
+                  }
+                ]
+              },
+              {
+                "html": "For non-parallel lateral systems, IS 1893 Part 1:2016 clause 6.3.2.2 takes 100% of one directional effect with 30% of the other, interchanging axes and choosing adverse signs.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00087",
+                    "label": "p. 22; topic 5 point 87"
+                  }
+                ]
+              },
+              {
+                "html": "Seismic axial effects of 80 kN and 30 kN combine to 89 kN and 54 kN under the two 100/30 axis orders, so the largest positive seismic effect is 89 kN.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00088",
+                    "label": "p. 22; topic 5 point 87"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00001",
@@ -130,12 +364,43 @@
             ]
           }
         ],
+        "formulaSheet": [
+          {
+            "label": "Roof snow load",
+            "tex": "S = \\mu\\, S_0",
+            "note": "On horizontal plan area, IS 875 Part 4:1987."
+          },
+          {
+            "label": "Pressure ratio for a change of wind speed",
+            "tex": "\\dfrac{p_2}{p_1} = \\left(\\dfrac{V_2}{V_1}\\right)^2",
+            "note": "Coefficients and air-density basis unchanged."
+          },
+          {
+            "label": "Design wind speed",
+            "tex": "V_z = V_b\\, k_1 k_2 k_3"
+          },
+          {
+            "label": "Design wind pressure",
+            "tex": "p_z = 0.6\\, V_z^2",
+            "note": "In N/m² with \\(V_z\\) in m/s, IS 875 Part 3:1987."
+          },
+          {
+            "label": "Storey shear sharing",
+            "tex": "V_i = V\\,\\dfrac{k_i}{\\sum k}",
+            "note": "Rigid floor, no torsion, linear-elastic frames."
+          },
+          {
+            "label": "Orthogonal seismic effects",
+            "tex": "\\begin{aligned} &\\pm E_x \\pm 0.3\\,E_y \\\\ &\\pm 0.3\\,E_x \\pm E_y \\end{aligned}",
+            "note": "Keep the most adverse result, IS 1893 Part 1:2016 clause 6.3.2.2."
+          }
+        ],
         "cautions": [
           {
             "id": "wind-with-earthquake-not-impossible",
             "status": "corrected",
             "prompt": "Dead load, wind load and earthquake load cannot possibly be combined",
-            "html": "<p>'Not possible' is too absolute. IS 800:2007 clause 3.5.2 excludes simultaneous wind and earthquake from its ordinary design combinations as a concurrence assumption, and each remains a separate alternative case with the gravity loads. The statement holds only with that code and the ordinary design situation named.</p>",
+            "html": "<p>Not possible is too absolute. IS 800:2007 clause 3.5.2 leaves simultaneous wind and earthquake out of its ordinary design combinations as a concurrence assumption, and each remains a separate alternative case with the gravity loads. The statement holds only with that code and the ordinary design situation named.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00001",
@@ -147,7 +412,7 @@
             "id": "no-universal-roof-snow-value",
             "status": "corrected",
             "prompt": "The snow load on a roof truss is taken as 2.5 N/m² everywhere",
-            "html": "<p>No site-independent roof snow intensity exists. Under IS 875 Part 4:1987 the roof value S = μS<sub>0</sub> needs the site's ground snow load and the roof-shape and distribution coefficients. Changing N to kN would still not create a valid universal figure, and no replacement number is implied.</p>",
+            "html": "<p>No site-independent roof snow intensity exists. Under IS 875 Part 4:1987 the roof value \\(S = \\mu S_0\\) needs the site's ground snow load and the roof-shape and distribution coefficients. Changing N to kN would still not create a valid universal figure, and no replacement number is implied.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00003",
@@ -159,7 +424,7 @@
             "id": "nbc-104-zone-assignment",
             "status": "review",
             "prompt": "Wind speed in hilly areas of Nepal above 3000 m is taken as 55 m/s",
-            "html": "<p>Keep this only as the NBC 104:1994 basic wind speed of its higher-hill and mountain zone (the lower zone is 47 m/s). Site assignment follows the code's geographical description and special windy areas, not elevation alone, and the design-speed factors still apply.</p>",
+            "html": "<p>Keep this only as the NBC 104:1994 basic wind speed of its higher-hill and mountain zone; the lower zone is 47 m/s. Site assignment follows the code's geographical description and special windy areas, not elevation alone, and the design-speed factors still apply.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00010",
@@ -171,7 +436,7 @@
             "id": "unresolved-vertical-structure-fraction",
             "status": "review",
             "prompt": "The proportion of earthquake force transferred to the vertical structure is 31",
-            "html": "<p>This figure is unresolved: it may be damaged fraction text or may omit the definition of the component meant. No universal fraction is taught here. What is reliable is the load path: storey shear passes to the vertical resisting elements and, for a rigid non-twisting floor, divides in proportion to their lateral stiffness. The original claim needs checking against its source.</p>",
+            "html": "<p>This figure is unresolved: it may be damaged fraction text or may omit the definition of the component meant, so no universal fraction is taught here. What is reliable is the load path: storey shear passes to the vertical resisting elements and, for a rigid non-twisting floor, divides in proportion to their lateral stiffness. The original claim needs checking against its source.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00113",
@@ -183,7 +448,7 @@
             "id": "wind-pressure-depends-on-terrain",
             "status": "corrected",
             "prompt": "Wind pressure is independent of structure factor and terrain",
-            "html": "<p>False for the IS 875 Part 3:1987 procedure. The terrain, height and structure-size factor k<sub>2</sub> enters V<sub>z</sub> = V<sub>b</sub>k<sub>1</sub>k<sub>2</sub>k<sub>3</sub>, and p<sub>z</sub> = 0.6V<sub>z</sub><sup>2</sup>, so raising k<sub>2</sub> from 1.0 to 1.2 multiplies the pressure by 1.44. Factors from later editions should not be mixed into the 1987 procedure.</p>",
+            "html": "<p>False for the IS 875 Part 3:1987 procedure. The terrain, height and structure-size factor \\(k_2\\) enters \\(V_z = V_b k_1 k_2 k_3\\), and \\(p_z = 0.6V_z^2\\), so raising \\(k_2\\) from 1.0 to 1.2 multiplies the pressure by 1.44. Factors from later editions should not be mixed into the 1987 procedure.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00131",
@@ -195,7 +460,7 @@
             "id": "trail-bridge-wind-guy-span",
             "status": "review",
             "prompt": "Wind guys are generally not required for trail bridges up to 120 m span",
-            "html": "<p>No universal exemption up to 120 m is endorsed. Wind resistance of a flexible trail bridge depends on its system, stiffness, exposure and aerodynamic response. Such a rule could belong only to a specific standard bridge design and its stated conditions; the named manual, bridge type and wind conditions need verification.</p>",
+            "html": "<p>No universal exemption up to 120 m is endorsed. The wind resistance of a flexible trail bridge depends on its system, stiffness, exposure and aerodynamic response. Such a rule could belong only to a specific standard bridge design and its stated conditions; the named manual, bridge type and wind conditions need verification.</p>",
             "sources": [
               {
                 "id": "CAP4-10-00191",
@@ -214,12 +479,42 @@
       "ACiE0502": {
         "code": "ACiE0502",
         "questionCount": 34,
-        "formulaSheet": "<p><strong>Flexural strength estimate (IS 456:2000 clause 6.2.2):</strong> f<sub>cr</sub> = 0.7√f<sub>ck</sub>, both in N/mm<sup>2</sup>.</p><p><strong>Short-term static modulus (IS 456:2000 clause 6.2.3.1):</strong> E<sub>c</sub> = 5000√f<sub>ck</sub>, both in N/mm<sup>2</sup>.</p><p><strong>Slump:</strong> mould height − height of the prescribed point on the slumped concrete, in mm.</p><p><strong>Aggregate moisture (percentages of oven-dry mass):</strong> dry mass = SSD mass/(1 + absorption); wet batch mass = dry mass × (1 + moisture); free water = dry mass × (moisture − absorption), deducted from the added water.</p><p><strong>Mass-ratio batching:</strong> cement = free water/(w/c); each other ingredient = its ratio number × cement mass.</p><p><strong>Test loading rate:</strong> force rate = stress rate × loaded area.</p>",
+        "format": 2,
+        "summary": "<p>Concrete technology covers the materials of concrete, its fresh and hardened properties, mix proportions, testing and the IS 456:2000 provisions that control quality. The capsule questions test mixing water and cement storage, grouts, aggregate moisture corrections and alkali-silica reaction, the water-cement ratio, compaction and bleeding, the slump test and superplasticizers, nominal mix ratios, grade designations, destructive and indirect tests, modulus, flexural strength and creep, and curing and formwork stripping.</p>",
         "blocks": [
           {
             "id": "mixing-water-quality",
             "title": "Mixing water: potable is not the same as portable",
-            "html": "<p>Water chemistry affects setting, strength and durability, so mixing water is judged by its quality, not by its appearance or by how it is delivered. <strong>Potable</strong> means fit for drinking, and potable water is generally considered satisfactory for concrete. <strong>Portable</strong> only means movable: water arriving by tanker says nothing about its chemistry, cleanliness or compatibility with the intended concrete.</p><p>IS 456:2000 clause 5.4 allows other water to be used when it satisfies the specified impurity limits and the comparative setting-time and strength requirements. Clear, colourless water can still carry harmful dissolved substances, so appearance proves nothing; equally, a source is not rejected merely because it is not drinking water. Adding extra cement is no substitute for testing.</p><p>One stated requirement is a <strong>pH not less than 6</strong>. Water of pH 5.5 therefore fails that check, while water that passes it must still meet the other impurity, setting and strength provisions.</p>",
+            "html": "<p>Water chemistry affects setting, strength and durability, so mixing water is judged by its quality, not by its appearance or by how it is delivered.</p><ul><li><em>Potable</em> means fit for drinking, and potable water is generally considered satisfactory for concrete.</li><li><em>Portable</em> only means movable. Water arriving by tanker says nothing about its chemistry, cleanliness or compatibility with the intended concrete.</li></ul><p>IS 456:2000 clause 5.4 allows other water to be used when it satisfies the specified impurity limits and the comparative setting-time and strength requirements. Clear, colourless water can still carry harmful dissolved substances, so appearance proves nothing. Equally, a source is not rejected merely because it is not drinking water, and adding extra cement is no substitute for testing.</p><p>One stated requirement is a pH not less than 6. Water of pH 5.5 therefore fails that check, while water that passes it must still meet the other impurity, setting and strength provisions.</p>",
+            "points": [
+              {
+                "html": "A non-potable source is assessed by checking the specified impurity limits and the comparative setting and strength performance requirements of IS 456:2000 clause 5.4.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00020",
+                    "label": "p. 20; topic 5 point 19"
+                  }
+                ]
+              },
+              {
+                "html": "IS 456:2000 sets a minimum pH of 6 for mixing water, so water of pH 5.5 is below the minimum and fails that requirement.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00034",
+                    "label": "p. 20; topic 5 point 33"
+                  }
+                ]
+              },
+              {
+                "html": "Potable describes drinking-water quality, whereas portable only means transportable; delivery by tanker says nothing about suitability for concrete.",
+                "sources": [
+                  {
+                    "id": "CAP4-06-00131",
+                    "label": "p. 26; topic 6 point 135"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00020",
@@ -238,7 +533,27 @@
           {
             "id": "cement-storage-and-grouts",
             "title": "Storing bagged cement and distinguishing neat from sanded grout",
-            "html": "<p>Cement begins to hydrate as soon as it takes up moisture, forming lumps and losing quality before it ever reaches the mixer. Bagged cement is therefore stacked on a <strong>raised, dry platform</strong> rather than directly on a floor, where dampness from below would be absorbed. The platform limits moisture uptake, but the store must still exclude rain and wall dampness, and prolonged storage should be avoided.</p><p>A grout is a fluid cementitious mixture whose make-up suits its use. A <strong>neat cement grout</strong> consists of cement and water, with admixtures where specified, and contains no fine aggregate; a grout specified for filling a narrow duct may be of this kind. A <strong>sanded cement grout</strong> also contains fine aggregate. 'Water, cement and sand' therefore describes one kind of grout, not the compulsory composition of every grout, and coarse aggregate is not an ingredient of a neat grout.</p>",
+            "html": "<p>Cement starts to hydrate as soon as it takes up moisture, forming lumps and losing quality before it reaches the mixer. Bagged cement is therefore stacked on a raised, dry platform clear of the floor, where dampness from below would otherwise be absorbed. The platform limits moisture uptake, but the store must still exclude rain and wall dampness, and prolonged storage should be avoided.</p><p>A grout is a fluid cementitious mixture whose make-up suits its use:</p><table><thead><tr><th scope='col'>Grout</th><th scope='col'>Constituents</th></tr></thead><tbody><tr><td>Neat cement grout</td><td>Cement and water, with any specified admixtures; no fine aggregate</td></tr><tr><td>Sanded cement grout</td><td>Cement, water and fine aggregate</td></tr></tbody></table><p>Water, cement and sand therefore describe one kind of grout, not the compulsory composition of every grout. A narrow duct may be filled with a specified neat grout, and coarse aggregate is not an ingredient of a neat grout.</p>",
+            "points": [
+              {
+                "html": "Bagged cement is kept on a raised, dry platform to limit moisture uptake and premature hydration; the store must still keep out rain and wall dampness.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00019",
+                    "label": "p. 20; topic 5 point 18"
+                  }
+                ]
+              },
+              {
+                "html": "Fine aggregate is absent from a neat cement grout, which is cement and water with any specified admixtures; a sanded grout adds sand.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00014",
+                    "label": "p. 20; topic 5 point 14"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00019",
@@ -253,7 +568,55 @@
           {
             "id": "aggregate-moisture-and-reactivity",
             "title": "Aggregates: the SSD reference state, moisture corrections and reactive silica",
-            "html": "<p>Mix proportions are normally stated for aggregate in the <strong>saturated-surface-dry (SSD)</strong> condition: the permeable pores are filled but no free water sits on the surface. SSD aggregate neither absorbs mixing water nor contributes any, which makes it a convenient reference. Stockpiled aggregate is usually drier or wetter, so batch masses and the added water are corrected.</p><p><em>Worked example.</em> A mix calls for 102 kg of SSD sand; absorption is 2% and actual moisture 5%, both on oven-dry mass. Dry mass = 102/1.02 = 100 kg. The wet batch mass is 100 × 1.05 = 105 kg, and the free surface water is 100 × (0.05 − 0.02) = 3 kg, so 3 kg less water is added at the mixer.</p><p>Aggregate mineralogy also matters for durability. When <strong>reactive silica</strong>-bearing aggregate meets sufficient alkalis and moisture, an <strong>alkali-silica reaction</strong> forms a gel that absorbs water, expands and cracks the concrete. Reactivity, alkali availability and moisture all matter. This durability risk, not a general large loss of fresh workability, is the defining concern with alkalis.</p>",
+            "html": "<p>Mix proportions are normally stated for aggregate in the <em>saturated-surface-dry</em> (SSD) condition: the permeable pores are filled but no free water sits on the surface. SSD aggregate neither absorbs mixing water nor contributes any, which makes it a convenient reference.</p><p>Stockpiled aggregate is usually drier or wetter than SSD. Absorption and moisture content are both expressed on oven-dry mass, so the correction goes through the dry mass. The batch mass is adjusted, and the free surface water, the moisture above absorption, is deducted from the water added at the mixer.</p><p>Aggregate mineralogy also matters for durability. When reactive silica-bearing aggregate meets sufficient alkalis and moisture, an <em>alkali-silica reaction</em> forms a gel that absorbs water, expands and cracks the concrete. Reactivity, alkali availability and moisture all matter. This durability risk, not a general large loss of fresh workability, is the defining concern with alkalis.</p>",
+            "formulas": [
+              {
+                "label": "Oven-dry mass from SSD mass",
+                "tex": "M_{\\text{dry}} = \\dfrac{M_{\\text{SSD}}}{1 + a}",
+                "where": "<p>\\(a\\) is the absorption and \\(w\\) the actual moisture content, both as fractions of oven-dry mass.</p>"
+              },
+              {
+                "label": "Wet batch mass",
+                "tex": "M_{\\text{wet}} = M_{\\text{dry}}\\,(1 + w)"
+              },
+              {
+                "label": "Free surface water to deduct",
+                "tex": "W_{\\text{free}} = M_{\\text{dry}}\\,(w - a)"
+              }
+            ],
+            "example": {
+              "title": "Worked example: 102 kg of SSD sand",
+              "html": "<p>Absorption is 2% and actual moisture 5%, both on oven-dry mass.</p><ol><li>Dry mass: \\(102/1.02 = 100\\ \\text{kg}\\).</li><li>Wet batch mass: \\(100 \\times 1.05 = 105\\ \\text{kg}\\).</li><li>Free water: \\(100 \\times (0.05 - 0.02) = 3\\ \\text{kg}\\).</li></ol><p>Weigh out 105 kg of the damp sand and add 3 kg less water at the mixer.</p>"
+            },
+            "points": [
+              {
+                "html": "At saturated-surface-dry condition the permeable pores are filled and no free surface water is present; SSD is the proportioning reference, not a delivery requirement.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00016",
+                    "label": "p. 20; topic 5 point 16"
+                  }
+                ]
+              },
+              {
+                "html": "For 102 kg of SSD sand with 2% absorption and 5% moisture, batch 105 kg of aggregate and reduce the added water by 3 kg.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00017",
+                    "label": "p. 20; topic 5 point 16"
+                  }
+                ]
+              },
+              {
+                "html": "Reactive silica-bearing aggregate with enough alkalis and moisture can suffer an expansive alkali-silica reaction; a large loss of workability is not the defining effect of alkalis.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00124",
+                    "label": "p. 23; topic 5 point 124"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00016",
@@ -272,7 +635,45 @@
           {
             "id": "water-cement-ratio-compaction-bleeding",
             "title": "Water-cement ratio, compaction and bleeding in fresh concrete",
-            "html": "<p>The <strong>water-cement ratio</strong> is a major control on strength because water not consumed by hydration leaves capillary pores behind after the concrete dries. Once a mix already has enough water for workability, adding more at the same cement mass raises the ratio and generally lowers strength, even when compaction and curing are equally good.</p><p>That relation assumes the concrete is properly mixed, placed, compacted and cured. A very low ratio does not guarantee strength if the mix is too harsh to consolidate, because large entrapped voids can cancel the benefit. <strong>Compaction</strong>, usually by controlled vibration, expels entrapped air and consolidates the concrete around aggregate, reinforcement and formwork. It is not intended to remove deliberately entrained microscopic air or to separate the mortar from the coarse aggregate, and excessive vibration can spoil uniformity.</p><p>After placing, the solids settle and water rises; a film of water on the surface shows <strong>bleeding</strong>. Excessive bleeding leaves weak surface laitance and internal water channels and can impair bond. Bleeding is a physical separation, distinct from the hydration reaction and from later carbonation.</p>",
+            "html": "<p>The <em>water-cement ratio</em> is a major control on strength, because water not consumed by hydration leaves capillary pores behind after the concrete dries. Once a mix already has enough water for workability, adding more at the same cement mass raises the ratio and generally lowers strength, even when compaction and curing are equally good.</p><p>That relation assumes the concrete is properly mixed, placed, compacted and cured. A very low ratio does not guarantee strength if the mix is too harsh to consolidate, because large entrapped voids can cancel the benefit.</p><p><em>Compaction</em>, usually by controlled vibration, expels entrapped air and consolidates the concrete around aggregate, reinforcement and formwork. It is not meant to remove deliberately entrained microscopic air or to separate mortar from coarse aggregate, and excessive vibration can spoil uniformity.</p><p>After placing, the solids settle and water rises; a film of water on the surface shows <em>bleeding</em>. Excessive bleeding leaves weak surface laitance and internal water channels and can impair bond. It is a physical separation, distinct from the hydration reaction and from later carbonation.</p>",
+            "points": [
+              {
+                "html": "Extra water beyond what workability needs, at unchanged cement mass, gives lower strength from increased capillary porosity, even with full compaction and equal curing.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00015",
+                    "label": "p. 20; topic 5 point 15"
+                  }
+                ]
+              },
+              {
+                "html": "A very low water-cement ratio does not guarantee strength in an unconsolidated mix, because entrapped voids can offset the benefit of the lower ratio.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00030",
+                    "label": "p. 20; topic 5 point 29"
+                  }
+                ]
+              },
+              {
+                "html": "Properly controlled vibration is meant to expel entrapped air and consolidate the concrete around reinforcement, not to remove entrained air or segregate the mix.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00031",
+                    "label": "p. 20; topic 5 point 30"
+                  }
+                ]
+              },
+              {
+                "html": "Bleeding is the rise of a water film to the surface as the solids of freshly placed concrete settle.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00120",
+                    "label": "p. 22; topic 5 point 120"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00015",
@@ -293,9 +694,49 @@
             ]
           },
           {
-            "id": "slump-consistency-and-workability",
-            "title": "Slump test: what it measures and how far its result can be trusted",
-            "html": "<p>In the slump test a standard mould is filled with concrete and lifted, and the settlement of the unsupported concrete is measured. <strong>Slump</strong> is the vertical drop from the mould height to the prescribed point on the slumped specimen, reported in millimetres. For a 300 mm mould whose displaced top centre ends 225 mm above the base, slump = 300 − 225 = 75 mm.</p><p>Slump directly measures <strong>consistency</strong> and serves as one indicator within workability control. Workability is broader, covering cohesion and the ease of placing and compacting, so two batches with equal slump have similar consistency but not necessarily equal strength, proportions or segregation resistance.</p><p>The test is most informative for a cohesive, plastic mix that gives a <strong>true slump</strong>; a very dry mix that keeps the mould shape, a segregating mix that shears or a very fluid mix that collapses needs another assessment. There is no universal 50 mm ceiling for vibrated concrete: the required consistency depends on the member, reinforcement congestion and placing method, and vibration must not segregate the mix.</p><p>For more flow without extra water, a compatible <strong>superplasticizer</strong> disperses the cement particles so that the same slump is reached with less water (high-range water reduction), or flow increases at similar water content. Dosage, compatibility and segregation resistance must be verified by trials.</p>",
+            "id": "slump-test",
+            "title": "Slump test: what it measures and when its result is meaningful",
+            "html": "<p>In the slump test a standard mould is filled with concrete and lifted, and the settlement of the unsupported concrete is measured. <em>Slump</em> is the vertical drop from the mould height to the prescribed point on the slumped specimen, reported in millimetres; it is a length, not a strength or a percentage.</p><p>Slump directly measures <em>consistency</em> and serves as one indicator within workability control. Workability is broader, covering cohesion and the ease of placing and compacting. Two batches with equal slump therefore have similar consistency but not necessarily equal strength, proportions or segregation resistance.</p><p>The test is most informative for a cohesive, plastic mix that gives a <em>true slump</em>. Other mixes need another suitable assessment:</p><ul><li>a very dry mix keeps the mould shape;</li><li>a segregating mix shears to one side;</li><li>a very fluid mix collapses completely.</li></ul><p>Cement richness alone is not the criterion for using the test.</p>",
+            "formulas": [
+              {
+                "label": "Slump",
+                "tex": "s = H_{\\text{mould}} - h_{\\text{slumped}}",
+                "where": "<p>\\(h_{\\text{slumped}}\\) is the height of the prescribed point on the slumped concrete above the base.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 300 mm mould",
+              "html": "<p>After the mould is lifted, the original centre of the top surface has dropped to 225 mm above the base.</p>\\[s = 300 - 225 = 75\\ \\text{mm}\\]<p>The slump is reported as 75 mm.</p>"
+            },
+            "points": [
+              {
+                "html": "A 300 mm mould whose top-centre point settles to 225 mm above the base gives a slump of 75 mm, a length reported in millimetres.",
+                "sources": [
+                  {
+                    "id": "CAP4-01-00143",
+                    "label": "p. 5; topic 1 point 136"
+                  }
+                ]
+              },
+              {
+                "html": "The conventional slump test is most useful for a cohesive plastic mix giving a true slump; very stiff, shearing or collapsing mixes need another assessment.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00023",
+                    "label": "p. 20; topic 5 point 21"
+                  }
+                ]
+              },
+              {
+                "html": "Equal slump shows that the measured consistency is similar, not necessarily that full workability, strength or segregation resistance are equal.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00024",
+                    "label": "p. 20; topic 5 point 22; topic 5 point 23"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-01-00143",
@@ -308,7 +749,34 @@
               {
                 "id": "CAP4-05-00024",
                 "label": "p. 20; topic 5 point 22; topic 5 point 23"
+              }
+            ]
+          },
+          {
+            "id": "consistency-for-vibration-and-superplasticizers",
+            "title": "Choosing consistency for vibrated placement, and superplasticizers",
+            "html": "<p>There is no universal 50 mm slump ceiling for vibrated concrete. The required consistency depends on the member, reinforcement congestion and the placing method. A trial mix above 50 mm intended for vibration among congested bars is judged against the specified consistency, its cohesion and the placement requirements, and vibration must not segregate it.</p><p>Where more flow is needed, simply adding water raises the water-cement ratio and lowers strength. A compatible <em>superplasticizer</em> disperses the cement particles so that the same slump is reached with less water, which is high-range water reduction. It may instead raise the flow at similar water content.</p><p>Other admixtures do different jobs: a retarder delays setting, an accelerator speeds it, and air entrainment mainly improves freeze-thaw resistance. Superplasticizer dosage, compatibility with the cement and segregation resistance must be verified by trials.</p>",
+            "points": [
+              {
+                "html": "A vibrated mix with slump above 50 mm is not rejected automatically; assess the specified consistency, cohesion and placement requirements for the member.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00025",
+                    "label": "p. 20; topic 5 point 24"
+                  }
+                ]
               },
+              {
+                "html": "High-range water reduction by a superplasticizer gives the same slump with less mixing water at unchanged cement content.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00035",
+                    "label": "p. 20; topic 5 point 34"
+                  }
+                ]
+              }
+            ],
+            "sources": [
               {
                 "id": "CAP4-05-00025",
                 "label": "p. 20; topic 5 point 24"
@@ -322,7 +790,52 @@
           {
             "id": "mix-proportions-mass-and-volume",
             "title": "Nominal mix ratios: mass basis, volume basis and the M20 shorthand",
-            "html": "<p>A ratio such as 1:2:4 lists cement, fine aggregate and coarse aggregate, but it cannot be batched until its <strong>basis</strong> is known. If it is a ratio by mass, the cement mass fixes every other quantity. If it is a ratio of loose volumes, each volume must be converted to mass with compatible <strong>bulk densities</strong>; particle specific gravity or the density of the finished concrete cannot supply those separate loose masses.</p><p><em>Worked example (mass basis).</em> With 9 litres of free water (9 kg at 1 kg/litre) and a free water-cement ratio of 0.45, cement = 9/0.45 = 20 kg. A 1:2:4 mass ratio then needs 2 × 20 = 40 kg of fine aggregate and 4 × 20 = 80 kg of coarse aggregate. The 80 kg figure depends entirely on the mass assumption; read as a volume ratio, the same data do not determine it.</p><p>In elementary estimating, <strong>1:1.5:3 by loose volume</strong> is the traditional nominal shorthand associated with M20. It guarantees no measured strength and is not a universal specification for roof slabs: water content, material properties, batching, compaction, curing and acceptance testing still govern performance.</p>",
+            "html": "<p>A ratio such as 1:2:4 lists cement, fine aggregate and coarse aggregate, but it cannot be batched until its basis is known.</p><ul><li><em>By mass</em>: the cement mass, found from the free water and the water-cement ratio, fixes every other quantity.</li><li><em>By loose volume</em>: each volume must be converted to mass with compatible <em>bulk densities</em>. Particle specific gravity or the density of the finished concrete cannot supply those separate loose masses.</li></ul><p>In elementary estimating, 1:1.5:3 by loose volume is the traditional nominal shorthand associated with M20. It guarantees no measured strength and is not a universal specification for roof slabs: water content, material properties, batching, compaction, curing and acceptance testing still govern performance.</p>",
+            "formulas": [
+              {
+                "label": "Cement mass from free water",
+                "tex": "C = \\dfrac{W}{w/c}",
+                "where": "<p>\\(W\\) is the free-water mass and \\(w/c\\) the free water-cement ratio by mass.</p>"
+              },
+              {
+                "label": "Ingredient mass on a mass-ratio basis",
+                "tex": "M_i = r_i\\, C",
+                "where": "<p>\\(r_i\\) is the ingredient's number in the ratio, with cement taken as 1.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 1:2:4 mix by mass",
+              "html": "<p>Take 9 litres of free water at 1 kg/litre and a free water-cement ratio of 0.45.</p>\\[\\begin{aligned} C &amp;= \\dfrac{9}{0.45} = 20\\ \\text{kg} \\\\ S &amp;= 2 \\times 20 = 40\\ \\text{kg} \\\\ G &amp;= 4 \\times 20 = 80\\ \\text{kg} \\end{aligned}\\]<p>The 80 kg of coarse aggregate depends entirely on the mass assumption. Read as a loose-volume ratio, the same data do not fix it until bulk densities are known.</p>"
+            },
+            "points": [
+              {
+                "html": "For a 1:2:4 mix by mass with 9 kg of free water and a water-cement ratio of 0.45, cement is 20 kg and the coarse aggregate is 80 kg.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00106",
+                    "label": "p. 22; topic 5 point 105"
+                  }
+                ]
+              },
+              {
+                "html": "If 1:2:4 denotes loose volumes, bulk-density information is needed to convert the volume ratio to masses; water and water-cement ratio alone fix only the cement.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00107",
+                    "label": "p. 22; topic 5 point 105"
+                  }
+                ]
+              },
+              {
+                "html": "The traditional nominal shorthand associated with M20 in elementary estimating is 1:1.5:3 by loose volume, not a guaranteed strength or a universal roof-slab recipe.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00139",
+                    "label": "p. 23; topic 5 point 140"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00106",
@@ -341,7 +854,49 @@
           {
             "id": "grades-and-early-age-strength",
             "title": "Concrete grades: characteristic strength, early results and minimum grades",
-            "html": "<p>A grade designation such as <strong>M20</strong> means a <strong>characteristic 28-day cube compressive strength</strong> of 20 MPa. A seven-day result is only an early indicator: how it relates to the 28-day value depends on the cement, mix and curing, and its use depends on the specified acceptance procedure. No universal seven-day minimum proves or disproves compliance. For example, 12.5 MPa at seven days is 100 × 12.5/20 = 62.5% of 20 MPa, a useful monitoring ratio but neither a strength-development law nor an acceptance criterion, and it does not reclassify the concrete as another grade.</p><p>IS 456:2000 Table 2 groups grades: <strong>M25 to M55 are standard grades</strong>, and the <strong>high-strength group begins at M60</strong> (M60 to M80 are listed). This is a classification within that edition, not a research definition or a physical upper limit on achievable strength.</p><p>Durability sets minimum grades. IS 456:2000 Table 5 requires at least <strong>M20 for reinforced concrete in mild exposure</strong>; more severe exposure or structural demand can require a higher grade. Being a roof slab does not make one nominal mix adequate for every load and environment.</p>",
+            "html": "<p>A grade designation such as M20 means a <em>characteristic 28-day cube compressive strength</em> of 20 MPa. A seven-day result is only an early indicator: its relation to the 28-day value depends on the cement, mix and curing, and its use depends on the specified acceptance procedure. No universal seven-day minimum proves or disproves compliance.</p><p>IS 456:2000 groups grades in Table 2 and sets durability minimums in Table 5:</p><table><thead><tr><th scope='col'>Provision</th><th scope='col'>Content</th></tr></thead><tbody><tr><td>Table 2, standard grades</td><td>M25 to M55</td></tr><tr><td>Table 2, high-strength grades</td><td>M60 to M80, so the group begins at M60</td></tr><tr><td>Table 5, reinforced concrete in mild exposure</td><td>Minimum grade M20</td></tr></tbody></table><p>Table 2 is a classification within that edition, not a research definition or a physical upper limit on strength. More severe exposure or structural demand can require a grade above the Table 5 minimum, and being a roof slab does not make one nominal mix adequate for every load and environment.</p>",
+            "example": {
+              "title": "Worked example: a seven-day ratio",
+              "html": "<p>A trial mix reaches 12.5 MPa at seven days, compared with 20 MPa:</p>\\[\\dfrac{12.5}{20} \\times 100 = 62.5\\%\\]<p>This is only a monitoring ratio. It is neither a strength-development law nor an acceptance criterion, it does not reclassify the concrete as another grade, and 12.5 MPa is not a universal seven-day pass mark for M20.</p>"
+            },
+            "points": [
+              {
+                "html": "A seven-day cube result of 12.5 MPa alone does not establish 28-day grade compliance for M20, because the grade is defined by characteristic strength at 28 days.",
+                "sources": [
+                  {
+                    "id": "CAP4-01-00040",
+                    "label": "p. 2; topic 1 point 39"
+                  }
+                ]
+              },
+              {
+                "html": "12.5 MPa at seven days is 62.5% of a 20 MPa comparison strength, a ratio rather than a strength-development law.",
+                "sources": [
+                  {
+                    "id": "CAP4-01-00041",
+                    "label": "p. 2; topic 1 point 39"
+                  }
+                ]
+              },
+              {
+                "html": "In IS 456:2000 Table 2 the high-strength group begins at M60 and runs to M80; M25 to M55 are the standard grades.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00123",
+                    "label": "p. 22; topic 5 point 123"
+                  }
+                ]
+              },
+              {
+                "html": "IS 456:2000 Table 5 sets M20 as the minimum grade for reinforced concrete in mild exposure; harsher exposure or structural design can demand more.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00018",
+                    "label": "p. 20; topic 5 point 17"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-01-00040",
@@ -364,7 +919,55 @@
           {
             "id": "testing-hardened-concrete",
             "title": "Testing hardened concrete: destructive tests, specimen shape, loading rate and pullout",
-            "html": "<p>The <strong>cube compression test</strong> is destructive: the specimen is loaded to failure to find its crushing load. Rebound-hammer and ultrasonic pulse-velocity tests are indirect non-destructive assessments, and an electromagnetic cover survey locates reinforcement rather than measuring strength.</p><p>Specimen shape changes the result. Friction at the loading platens restrains the ends of a specimen. A cube is short, so a large proportion of it is confined and its apparent strength rises; a standard cylinder has a greater height-to-width ratio, leaving more material away from end restraint, so its strength is generally lower. No single conversion factor is exact for all concretes.</p><p>Procedures specify a loading rate as a stress rate, which must be converted into a machine force rate. <em>Worked example.</em> For 14 N/mm<sup>2</sup> per minute on a 150 mm cube, area = 150 × 150 = 22500 mm<sup>2</sup>, so force rate = 14 × 22500 = 315000 N/min = 315 kN/min = 5.25 kN/s.</p><p>In the <strong>pullout test</strong> an embedded headed insert is pulled against a surface reaction ring until the surrounding concrete fails locally. The failure field is complex, so the measured pullout resistance is correlated with in-place compressive strength; it is not a direct tensile strength found by dividing force by insert area.</p>",
+            "html": "<p>The <em>cube compression test</em> is destructive: the specimen is loaded to failure to find its crushing load. Rebound-hammer and ultrasonic pulse-velocity tests are indirect non-destructive assessments, and an electromagnetic cover survey locates reinforcement rather than measuring strength.</p><p>Specimen shape changes the result. Friction at the loading platens restrains the ends of a specimen. A cube is short, so a large proportion of it is confined and its apparent strength rises. A standard cylinder has a greater height-to-width ratio, leaving more material away from end restraint, so its strength is generally lower. No single conversion factor is exact for all concretes.</p><p>Procedures state a loading rate as a stress rate, which is converted into a machine force rate through the loaded area.</p><p>In the <em>pullout test</em> an embedded headed insert is pulled against a surface reaction ring until the surrounding concrete fails locally. The failure field is complex, so the measured pullout resistance is correlated with in-place compressive strength; it is not a direct tensile strength found by dividing force by insert area.</p>",
+            "formulas": [
+              {
+                "label": "Machine force rate from a stress rate",
+                "tex": "\\dfrac{dF}{dt} = A\\,\\dfrac{d\\sigma}{dt}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: 14 N/mm² per minute on a 150 mm cube",
+              "html": "<ol><li>Loaded area: \\(150 \\times 150 = 22\\,500\\ \\text{mm}^2\\).</li><li>Force rate: \\(14 \\times 22\\,500\\) N/min, that is 315 kN/min.</li><li>Per second: \\(315/60 = 5.25\\ \\text{kN/s}\\).</li></ol><p>The 14 N/mm² per minute is a stated procedure input here, not a certified requirement of every current test standard.</p>"
+            },
+            "points": [
+              {
+                "html": "The cube compression test is destructive: it crushes the specimen to failure, unlike rebound-hammer, ultrasonic or cover-survey methods.",
+                "sources": [
+                  {
+                    "id": "CAP4-01-00042",
+                    "label": "p. 2; topic 1 point 40"
+                  }
+                ]
+              },
+              {
+                "html": "Cylinders give lower strength than cubes mainly because specimen geometry changes the platen-restraint influence: friction at the platens confines more of a short cube.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00032",
+                    "label": "p. 20; topic 5 point 31"
+                  }
+                ]
+              },
+              {
+                "html": "A stress rate of 14 N/mm² per minute on a 150 mm cube corresponds to 315 kN/min, a machine load rate of 5.25 kN/s.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00101",
+                    "label": "p. 18; topic 4 point 101"
+                  }
+                ]
+              },
+              {
+                "html": "The embedded-insert pullout test gives a pullout resistance requiring correlation for compressive strength, not a direct tensile strength.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00084",
+                    "label": "p. 18; topic 4 point 84"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-01-00042",
@@ -387,7 +990,51 @@
           {
             "id": "modulus-flexural-strength-creep",
             "title": "Elastic modulus, flexural strength and creep of hardened concrete",
-            "html": "<p>IS 456:2000 estimates two properties from the characteristic cube strength f<sub>ck</sub>, with all values in N/mm<sup>2</sup>, and both depend on its <strong>square root</strong>:</p><ul><li><strong>Flexural strength</strong> (clause 6.2.2): f<sub>cr</sub> = 0.7√f<sub>ck</sub>. For f<sub>ck</sub> = 36, f<sub>cr</sub> = 0.7 × 6 = 4.2 N/mm<sup>2</sup>; leaving out the root gives the incorrect 25.2 N/mm<sup>2</sup>.</li><li><strong>Short-term static modulus</strong> (clause 6.2.3.1): E<sub>c</sub> = 5000√f<sub>ck</sub>. For M25, E<sub>c</sub> = 5000 × 5 = 25000 N/mm<sup>2</sup>.</li></ul><p>These are estimates. The actual modulus depends on the aggregate and mix, and flexural strength is a tensile property, distinct from stiffness.</p><p>Under sustained compressive stress, concrete keeps shortening after its immediate elastic strain. Measured against a matching unloaded specimen, which isolates shrinkage, the additional load-dependent, time-dependent strain is <strong>creep</strong>. Creep has recoverable and irreversible parts, so describing all of it as plastic strain is too narrow. It also differs from <strong>relaxation</strong>, in which stress falls while the strain is held fixed.</p>",
+            "html": "<p>IS 456:2000 estimates two properties from the characteristic cube strength \\(f_{ck}\\), with all values in N/mm², and both depend on its <em>square root</em>. Clause 6.2.2 gives the flexural strength \\(f_{cr}\\), and clause 6.2.3.1 the short-term static modulus \\(E_c\\).</p><p>These are estimates. The actual modulus depends on the aggregate and the mix, and flexural strength is a tensile property, distinct from stiffness. Leaving out the square root is the common slip.</p><p>Under sustained compressive stress, concrete keeps shortening after its immediate elastic strain. Measured against a matching unloaded specimen, which isolates shrinkage, the additional load-dependent, time-dependent strain is <em>creep</em>. Creep has recoverable and irreversible parts, so describing all of it as plastic strain is too narrow. It also differs from <em>relaxation</em>, in which stress falls while the strain is held fixed.</p>",
+            "formulas": [
+              {
+                "label": "Flexural strength, IS 456:2000 clause 6.2.2",
+                "tex": "f_{cr} = 0.7\\sqrt{f_{ck}}"
+              },
+              {
+                "label": "Short-term static modulus, clause 6.2.3.1",
+                "tex": "E_c = 5000\\sqrt{f_{ck}}",
+                "where": "<p>\\(f_{ck}\\), \\(f_{cr}\\) and \\(E_c\\) are all in N/mm².</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked examples: flexural strength at 36 N/mm² and the M25 modulus",
+              "html": "<p>For \\(f_{ck} = 36\\ \\text{N/mm}^2\\):</p>\\[\\begin{aligned}f_{cr} &amp;= 0.7\\sqrt{36} \\\\\\ &amp;= 0.7 \\times 6 \\\\\\ &amp;= 4.2\\ \\text{N/mm}^2\\end{aligned}\\]<p>Without the square root, \\(0.7 \\times 36\\) would give 25.2 N/mm², far too high.</p><p>For M25:</p>\\[E_c = 5000\\sqrt{25} = 25\\,000\\ \\text{N/mm}^2\\]<p>That is 25000 MPa, an estimate that the actual aggregate and mix can change.</p>"
+            },
+            "points": [
+              {
+                "html": "IS 456:2000 estimates flexural strength as \\(0.7\\sqrt{f_{ck}}\\), so \\(f_{ck}\\) = 36 N/mm² gives 4.2 N/mm²; omitting the root gives an incorrect 25.2.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00083",
+                    "label": "p. 18; topic 4 point 83"
+                  }
+                ]
+              },
+              {
+                "html": "For M25, \\(E_c = 5000\\sqrt{f_{ck}}\\) gives an estimated short-term static modulus of 25000 MPa.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00141",
+                    "label": "p. 23; topic 5 point 142"
+                  }
+                ]
+              },
+              {
+                "html": "The additional time-dependent strain under sustained stress, beyond the elastic strain and after subtracting unloaded shrinkage, is creep; it is not all plastic strain.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00087",
+                    "label": "p. 18; topic 4 point 87"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-04-00083",
@@ -406,7 +1053,36 @@
           {
             "id": "curing-thermal-control-and-stripping",
             "title": "Curing, thermal control of large pours and formwork stripping times",
-            "html": "<p><strong>Curing</strong> keeps newly placed concrete at a moisture content and temperature that allow hydration to continue, so that strength and durability develop and premature drying is prevented. That general purpose applies even when there is no unusually large temperature gradient.</p><p>Thermal control is one part of curing for large pours. A hot core and a cooler surface create a temperature difference that can crack the concrete. An <strong>insulating blanket</strong> slows surface cooling and reduces the core-to-surface difference, but it does not remove the heat of hydration; it has to be combined with limits on maximum temperature, monitoring and moisture retention.</p><p>Formwork removal depends on the strength gained, not only on elapsed time. Under the normal conditions of IS 456:2000 clause 11.3.1 (ordinary Portland cement, adequate curing and a temperature of at least 15 °C), the listed period for <strong>vertical formwork to column sides is 16–24 hours</strong>. That period does not apply to load-bearing beam soffits or props, and actual site conditions and adequate strength still govern safe stripping.</p>",
+            "html": "<p><em>Curing</em> keeps newly placed concrete at a moisture content and temperature that allow hydration to continue, so that strength and durability develop and premature drying is prevented. That general purpose applies even when there is no unusually large temperature gradient.</p><p>Thermal control is one part of curing for large pours. A hot core and a cooler surface create a temperature difference that can crack the concrete. An insulating blanket slows surface cooling and reduces the core-to-surface difference, but it does not remove the heat of hydration. It has to be combined with limits on maximum temperature, monitoring and moisture retention.</p><p>Formwork removal depends on the strength gained, not only on elapsed time. Under the normal conditions of IS 456:2000 clause 11.3.1, namely ordinary Portland cement, adequate curing and a temperature of at least 15 °C, the listed period for vertical formwork to column sides is 16-24 hours. It does not apply to load-bearing beam soffits or props, and actual site conditions and adequate strength still govern.</p>",
+            "points": [
+              {
+                "html": "Curing is needed to maintain moisture and temperature suitable for hydration, so strength develops and premature drying is prevented, whatever the temperature gradient.",
+                "sources": [
+                  {
+                    "id": "CAP4-01-00135",
+                    "label": "p. 5; topic 1 point 129"
+                  }
+                ]
+              },
+              {
+                "html": "On a large pour with a hot core, controlled insulation reduces rapid surface cooling and the core-to-surface temperature difference, but does not remove the heat of hydration.",
+                "sources": [
+                  {
+                    "id": "CAP4-01-00136",
+                    "label": "p. 5; topic 1 point 129"
+                  }
+                ]
+              },
+              {
+                "html": "Under the normal IS 456:2000 clause 11.3.1 conditions, vertical forms to column sides are listed for removal after 16-24 hours; the period does not cover beam soffits or props.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00069",
+                    "label": "p. 21; topic 5 point 67"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-01-00135",
@@ -421,6 +1097,45 @@
                 "label": "p. 21; topic 5 point 67"
               }
             ]
+          }
+        ],
+        "formulaSheet": [
+          {
+            "label": "Flexural strength estimate",
+            "tex": "f_{cr} = 0.7\\sqrt{f_{ck}}",
+            "note": "IS 456:2000 clause 6.2.2, both in N/mm²."
+          },
+          {
+            "label": "Short-term static modulus",
+            "tex": "E_c = 5000\\sqrt{f_{ck}}",
+            "note": "IS 456:2000 clause 6.2.3.1, both in N/mm²."
+          },
+          {
+            "label": "Slump",
+            "tex": "s = H_{\\text{mould}} - h_{\\text{slumped}}",
+            "note": "A length in millimetres."
+          },
+          {
+            "label": "Oven-dry aggregate mass",
+            "tex": "M_{\\text{dry}} = \\dfrac{M_{\\text{SSD}}}{1 + a}"
+          },
+          {
+            "label": "Wet batch mass",
+            "tex": "M_{\\text{wet}} = M_{\\text{dry}}\\,(1 + w)"
+          },
+          {
+            "label": "Free water to deduct",
+            "tex": "W_{\\text{free}} = M_{\\text{dry}}\\,(w - a)",
+            "note": "Absorption and moisture as fractions of oven-dry mass."
+          },
+          {
+            "label": "Cement mass from free water",
+            "tex": "C = \\dfrac{W}{w/c}",
+            "note": "Each other ingredient is its ratio number times the cement mass, for a mass ratio."
+          },
+          {
+            "label": "Force rate from stress rate",
+            "tex": "\\dfrac{dF}{dt} = A\\,\\dfrac{d\\sigma}{dt}"
           }
         ],
         "cautions": [
@@ -440,7 +1155,7 @@
             "id": "curing-purpose-is-hydration",
             "status": "corrected",
             "prompt": "Curing primarily reduces heat loss and the temperature gradient of fresh concrete",
-            "html": "<p>That describes only part of a thermal-control strategy. The general purpose of curing is to maintain moisture and temperature suitable for hydration so that strength develops and premature drying is prevented. Insulating against heat loss and gradients is one measure used for large pours.</p>",
+            "html": "<p>That describes only part of a thermal-control strategy. The general purpose of curing is to maintain moisture and temperature suitable for hydration, so that strength develops and premature drying is prevented. Insulating against heat loss and gradients is one measure used for large pours.</p>",
             "sources": [
               {
                 "id": "CAP4-01-00135",
@@ -452,7 +1167,7 @@
             "id": "flexural-strength-needs-square-root",
             "status": "corrected",
             "prompt": "Flexural and characteristic strength are related by fcr = 0.7 fck",
-            "html": "<p>The square root is missing. IS 456:2000 clause 6.2.2 estimates f<sub>cr</sub> = 0.7√f<sub>ck</sub> in N/mm<sup>2</sup>. For f<sub>ck</sub> = 36 this gives 4.2 N/mm<sup>2</sup>, whereas the printed form would give the incorrect 25.2 N/mm<sup>2</sup>.</p>",
+            "html": "<p>The square root is missing. IS 456:2000 clause 6.2.2 estimates \\(f_{cr} = 0.7\\sqrt{f_{ck}}\\) in N/mm². For \\(f_{ck}\\) = 36 this gives 4.2 N/mm², whereas the printed form would give an incorrect 25.2 N/mm².</p>",
             "sources": [
               {
                 "id": "CAP4-04-00083",
@@ -476,7 +1191,7 @@
             "id": "creep-not-only-plastic",
             "status": "corrected",
             "prompt": "Creep is the gradual increase of plastic strain with time at constant load",
-            "html": "<p>Creep is the additional time-dependent strain under sustained stress, beyond the immediate elastic strain and excluding unloaded shrinkage. It has recoverable and irreversible components, so 'plastic strain' is too restrictive. 'Sustained stress' is the precise condition, because a constant force does not always give a constant true stress.</p>",
+            "html": "<p>Creep is the additional time-dependent strain under sustained stress, beyond the immediate elastic strain and excluding unloaded shrinkage. It has recoverable and irreversible components, so plastic strain is too restrictive a description. Sustained stress is the precise condition, because a constant force does not always give a constant true stress.</p>",
             "sources": [
               {
                 "id": "CAP4-04-00087",
@@ -488,7 +1203,7 @@
             "id": "loading-rate-without-standard",
             "status": "review",
             "prompt": "The loading rate in the compressive strength test is 14 N/mm² per minute",
-            "html": "<p>The capsule names no test standard or edition for this rate. It is used here only as a stated input for converting stress rate to force rate (5.25 kN/s on a 150 mm cube); whether a current compression-test standard specifies it has not been verified.</p>",
+            "html": "<p>The capsule names no test standard or edition for this rate. It is used here only as a stated input for converting a stress rate to a force rate, 5.25 kN/s on a 150 mm cube; whether a current compression-test standard specifies it has not been verified.</p>",
             "sources": [
               {
                 "id": "CAP4-04-00101",
@@ -500,7 +1215,7 @@
             "id": "neat-and-sanded-grout",
             "status": "corrected",
             "prompt": "Grout is a mixture of water, cement and sand",
-            "html": "<p>Overgeneralized. A sanded cement grout contains fine aggregate, but a neat cement grout is cement and water, with specified admixtures, and no sand. The listed ingredients describe one kind of grout, not every grout.</p>",
+            "html": "<p>Overgeneralized. A sanded cement grout contains fine aggregate, but a neat cement grout is cement and water, with any specified admixtures, and no sand. The listed ingredients describe one kind of grout, not every grout.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00014",
@@ -572,7 +1287,7 @@
             "id": "column-side-stripping-period",
             "status": "review",
             "prompt": "Formwork to column sides can be removed in 24 hours",
-            "html": "<p>IS 456:2000 clause 11.3.1 lists 16–24 hours for vertical column-side forms only under its normal conditions (ordinary Portland cement, adequate curing, at least 15 °C). Adequate strength and site conditions govern, and the period does not apply to beam soffits or props.</p>",
+            "html": "<p>IS 456:2000 clause 11.3.1 lists 16-24 hours for vertical column-side forms only under its normal conditions: ordinary Portland cement, adequate curing and at least 15 °C. Adequate strength and site conditions govern, and the period does not apply to beam soffits or props.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00069",
@@ -584,7 +1299,7 @@
             "id": "mix-ratio-basis-unstated",
             "status": "review",
             "prompt": "Coarse aggregate for a 1:2:4 mix with w/c 0.45 and 9 litres of water",
-            "html": "<p>The capsule gives no answer and does not say whether 1:2:4 is by mass or by loose volume. The 80 kg result holds only for a mass ratio with 9 kg of free water; a volume ratio additionally needs bulk densities.</p>",
+            "html": "<p>The capsule gives no result and does not say whether 1:2:4 is by mass or by loose volume. The 80 kg figure holds only for a mass ratio with 9 kg of free water; a volume ratio additionally needs bulk densities.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00106",
@@ -620,7 +1335,7 @@
             "id": "portable-versus-potable",
             "status": "corrected",
             "prompt": "Portable water is used in construction",
-            "html": "<p>The source appears to confuse portable (movable) with potable (fit to drink). Potable water is generally suitable for mixing concrete, and other water needs the applicable quality assessment. How water is transported says nothing about its suitability.</p>",
+            "html": "<p>The source appears to confuse portable, meaning movable, with potable, meaning fit to drink. Potable water is generally suitable for mixing concrete, and other water needs the applicable quality assessment. How water is transported says nothing about its suitability.</p>",
             "sources": [
               {
                 "id": "CAP4-06-00131",
@@ -631,7 +1346,7 @@
         ],
         "gaps": [
           "Cement types and their tests, aggregate grading and the bulking of sand are not covered by these capsule items.",
-          "No design-mix procedure (target mean strength, standard deviation) and no statistical acceptance criteria for cube results are covered.",
+          "No design-mix procedure, such as target mean strength and standard deviation, and no statistical acceptance criteria for cube results are covered.",
           "Admixtures other than superplasticizers, and durability mechanisms other than alkali-silica reaction, are mentioned only in passing.",
           "Non-destructive tests are named, but their procedures, calibration and interpretation are not taught."
         ]
@@ -639,32 +1354,82 @@
       "ACiE0503": {
         "code": "ACiE0503",
         "questionCount": 28,
-        "formulaSheet": "<p><strong>Limit-state design stresses (IS 456:2000):</strong> peak concrete design stress = 0.67f<sub>ck</sub>/γ<sub>m</sub> with γ<sub>m</sub> = 1.5; steel design plateau = 0.87f<sub>y</sub>.</p><p><strong>Concrete strain limits:</strong> 0.0035 at the extreme compression fibre in bending; 0.002 at the end of the parabolic branch and in pure axial compression.</p><p><strong>Elastic sections:</strong> modular ratio m = E<sub>s</sub>/E<sub>c</sub>; shear flow q = VQ/I.</p><p><strong>Beam tension steel (clause 26.5.1.1):</strong> minimum A<sub>s</sub> = 0.85bd/f<sub>y</sub>; maximum 0.04bD.</p><p><strong>Bond and anchorage:</strong> L<sub>d</sub> = φσ<sub>s</sub>/(4τ<sub>bd</sub>); compression lap ≥ the larger of L<sub>d</sub> and 24φ; standard U-type hook anchorage value = 16φ.</p><p><strong>Deflection (clause 23.2):</strong> total final ≤ span/250; after partitions and finishes ≤ the smaller of span/350 and 20 mm.</p>",
+        "format": 2,
+        "summary": "<p>RCC structures-1 covers Working-stress and limit-state methods; beam and slab design and analysis for bending, shear, deflection, bond and anchorage; NS/IS codes. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
         "blocks": [
           {
             "id": "partial-factors-and-design-stresses",
             "title": "Limit-state design stresses from characteristic strengths and partial factors",
-            "html": "<p>Limit-state design starts from <strong>characteristic strengths</strong> and reduces them by a <strong>material partial safety factor</strong> γ<sub>m</sub>. The factor allows for uncertainty in material behaviour and in the resistance model. It is not the flexural strength of concrete, and it does not replace the characteristic strength by a higher mean strength; uncertainty in the loads is handled separately through load factors.</p><p><em>Concrete.</em> IS 456:2000 takes the compressive strength in the structure as 0.67f<sub>ck</sub>, a reduction relating in-structure strength to cube strength, and then divides it by γ<sub>m</sub> = 1.5. For f<sub>ck</sub> = 30 MPa the peak design stress is 0.67 × 30/1.5 = 13.4 MPa, so 0.67f<sub>ck</sub> (20.1 MPa here) is not yet the design value.</p><p><em>Steel.</em> Once reinforcement has strained enough to reach its design plateau, the rounded design stress is <strong>0.87f<sub>y</sub></strong>; for Fe415 this is 0.87 × 415 = 361.05 MPa. It is a steel stress, not a concrete tensile strength, and bars below the plateau strain take their stress from the design stress-strain relation instead.</p>",
+            "html": "<p>Limit-state design starts from characteristic strengths and reduces them by a material partial safety factor γ<sub>m</sub>. The factor allows for uncertainty in material behaviour and in the resistance model. It is not the flexural strength of concrete, and it does not replace the characteristic strength by a higher mean strength; uncertainty in the loads is handled separately through load factors.</p><p><em>Concrete.</em> IS 456:2000 takes the compressive strength in the structure as 0.67f<sub>ck</sub>, a reduction relating in-structure strength to cube strength, and then divides it by γ<sub>m</sub> = 1.5. For f<sub>ck</sub> = 30 MPa the peak design stress is 0.67 × 30/1.5 = 13.4 MPa, so 0.67f<sub>ck</sub> (20.1 MPa here) is not yet the design value.</p><p><em>Steel.</em> Once reinforcement has strained enough to reach its design plateau, the rounded design stress is 0.87f<sub>y</sub>; for Fe415 this is 0.87 × 415 = 361.05 MPa. It is a steel stress, not a concrete tensile strength, and bars below the plateau strain take their stress from the design stress-strain relation instead.</p>",
             "moreHtml": "<p>The coefficient 0.36 in the total concrete compressive force of the stress block (C = 0.36f<sub>ck</sub>bx<sub>u</sub>) comes from integrating the parabolic-rectangular design stress over the compression depth. It is a force coefficient, not the peak stress, so it must not be used where 0.67f<sub>ck</sub>/1.5 is meant.</p>",
+            "points": [
+              {
+                "html": "The key result is 361.05 MPa.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00049",
+                    "label": "p. 20; topic 5 point 48"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is 13.4 MPa.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00136",
+                    "label": "p. 23; topic 5 point 137"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is To allow for material and resistance-model uncertainties.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00140",
+                    "label": "p. 23; topic 5 point 141"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
-                "id": "CAP4-05-00140",
-                "label": "p. 23; topic 5 point 141"
+                "id": "CAP4-05-00049",
+                "label": "p. 20; topic 5 point 48"
               },
               {
                 "id": "CAP4-05-00136",
                 "label": "p. 23; topic 5 point 137"
               },
               {
-                "id": "CAP4-05-00049",
-                "label": "p. 20; topic 5 point 48"
+                "id": "CAP4-05-00140",
+                "label": "p. 23; topic 5 point 141"
               }
             ]
           },
           {
             "id": "strain-limits-and-stress-block",
             "title": "Concrete strain limits and the idealized parabolic-rectangular stress curve",
-            "html": "<p>IS 456:2000 idealizes concrete in compression by a curve that rises <strong>parabolically up to a strain of 0.002</strong> and then stays at a constant design stress up to the flexural strain limit. In bending, failure is taken to occur when the extreme compression fibre reaches <strong>0.0035</strong> (clause 38.1); multiplied by 100 this is 0.35%. Under pure axial compression the section is strained uniformly and the limiting strain is <strong>0.002</strong> instead, so the two values are not interchangeable.</p><p>Keep two ideas apart. The stress-strain curve describes the material. The stress block describes how stress is distributed over the compression depth of a particular section, obtained by applying that curve to the linear strain profile across the depth. Neither 0.0035 nor 0.002 is a permissible routine service strain; both are ultimate-state idealizations.</p><p>This parabolic-rectangular idealization belongs to concrete in IS 456:2000 limit-state bending. Prestressed-concrete provisions are found in the applicable edition of IS 1343, so the curve should not be described as a prestressed-concrete rule of IS 456:1978.</p>",
+            "html": "<p>IS 456:2000 idealizes concrete in compression by a curve that rises parabolically up to a strain of 0.002 and then stays at a constant design stress up to the flexural strain limit. In bending, failure is taken to occur when the extreme compression fibre reaches 0.0035 (clause 38.1); multiplied by 100 this is 0.35%. Under pure axial compression the section is strained uniformly and the limiting strain is 0.002 instead, so the two values are not interchangeable.</p><p>Keep two ideas apart. The stress-strain curve describes the material. The stress block describes how stress is distributed over the compression depth of a particular section, obtained by applying that curve to the linear strain profile across the depth. Neither 0.0035 nor 0.002 is a permissible routine service strain; both are ultimate-state idealizations.</p><p>This parabolic-rectangular idealization belongs to concrete in IS 456:2000 limit-state bending. Prestressed-concrete provisions are found in the applicable edition of IS 1343, so the curve should not be described as a prestressed-concrete rule of IS 456:1978.</p>",
+            "points": [
+              {
+                "html": "The key result is 0.0035, or 0.35%.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00098",
+                    "label": "p. 18; topic 4 point 98"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is Parabolic rise to strain 0.002, then a plateau to 0.0035.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00113",
+                    "label": "p. 19; topic 4 point 112"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-04-00098",
@@ -679,49 +1444,154 @@
           {
             "id": "flexural-failure-modes",
             "title": "Cracking, under- and over-reinforced behaviour, and doubly reinforced beams",
-            "html": "<p>As bending increases on an initially uncracked beam, the first event is <strong>flexural cracking</strong>, which begins when the tensile concrete stress reaches its cracking strength. The under- or over-reinforced label does not decide first cracking; it describes the later ultimate failure sequence:</p><ul><li><strong>Under-reinforced</strong>: tension steel yields before the concrete crushes, giving ductile behaviour.</li><li><strong>Over-reinforced</strong>: concrete reaches its ultimate compressive strain while the tension steel is still below yield; failure is compression-controlled with limited ductility.</li><li><strong>Balanced</strong>: in the classical idealization both limits are reached together.</li></ul><p>Adding tension steel beyond the ductility limit of a fixed-size singly reinforced beam deepens the compression zone. A compatible analysis may predict a larger moment, but that capacity is controlled by crushing, lacks ductility and cannot assume the steel reaches its full design stress. Strength alone does not justify the design; strain compatibility and the code's ductility limits govern.</p><p>When depth is restricted, the remedy is a larger section or a <strong>doubly reinforced section</strong>, in which designed compression steel as well as tension steel is counted in the moment resistance. Nominal top hanger bars alone do not make a beam doubly reinforced.</p>",
-            "sources": [
+            "html": "<p>As bending increases on an initially uncracked beam, the first event is flexural cracking, which begins when the tensile concrete stress reaches its cracking strength. The under- or over-reinforced label does not decide first cracking; it describes the later ultimate failure sequence:</p><ul><li>Under-reinforced: tension steel yields before the concrete crushes, giving ductile behaviour.</li><li>Over-reinforced: concrete reaches its ultimate compressive strain while the tension steel is still below yield; failure is compression-controlled with limited ductility.</li><li>Balanced: in the classical idealization both limits are reached together.</li></ul><p>Adding tension steel beyond the ductility limit of a fixed-size singly reinforced beam deepens the compression zone. A compatible analysis may predict a larger moment, but that capacity is controlled by crushing, lacks ductility and cannot assume the steel reaches its full design stress. Strength alone does not justify the design; strain compatibility and the code's ductility limits govern.</p><p>When depth is restricted, the remedy is a larger section or a doubly reinforced section, in which designed compression steel as well as tension steel is counted in the moment resistance. Nominal top hanger bars alone do not make a beam doubly reinforced.</p>",
+            "points": [
               {
-                "id": "CAP4-05-00039",
-                "label": "p. 20; topic 5 point 38"
+                "html": "The key result is Over-reinforced, compression-controlled failure.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00029",
+                    "label": "pp. 20, 21, 23; topic 5 point 28; topic 5 point 71; topic 5 point 128"
+                  }
+                ]
               },
+              {
+                "html": "The key result is Doubly reinforced section.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00037",
+                    "label": "p. 20; topic 5 point 36"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is Tensile concrete stress reaches its cracking strength.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00039",
+                    "label": "p. 20; topic 5 point 38"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is Concrete crushing can precede adequate tensile-steel ductility.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00041",
+                    "label": "p. 20; topic 5 point 40"
+                  }
+                ]
+              }
+            ],
+            "sources": [
               {
                 "id": "CAP4-05-00029",
                 "label": "pp. 20, 21, 23; topic 5 point 28; topic 5 point 71; topic 5 point 128"
               },
               {
-                "id": "CAP4-05-00041",
-                "label": "p. 20; topic 5 point 40"
-              },
-              {
                 "id": "CAP4-05-00037",
                 "label": "p. 20; topic 5 point 36"
+              },
+              {
+                "id": "CAP4-05-00039",
+                "label": "p. 20; topic 5 point 38"
+              },
+              {
+                "id": "CAP4-05-00041",
+                "label": "p. 20; topic 5 point 40"
               }
             ]
           },
           {
             "id": "transformed-section-and-composite-action",
             "title": "Composite action: modular ratio, thermal compatibility and elastic shear flow",
-            "html": "<p>Reinforced concrete works because bonded steel and concrete strain together. Their <strong>coefficients of thermal expansion are broadly similar</strong>, so a uniform temperature change causes little differential strain between them. This limits internal mismatch, but it does not remove stresses caused by external restraint or temperature gradients, and it does not make the two materials equally stiff.</p><p>Elastic (working-stress) analysis handles the stiffness difference with a <strong>transformed section</strong>: the steel area is multiplied by the <strong>modular ratio m = E<sub>s</sub>/E<sub>c</sub></strong> to give an equivalent concrete area. For an instantaneous calculation with E<sub>s</sub> = 200 GPa and E<sub>c</sub> = 25 GPa, m = 200/25 = 8. A code's working-stress modular ratio that allows for long-term effects is a different, stated convention.</p><p>In the cracked transformed section of a singly reinforced rectangular beam, tensile concrete is ignored. Shear flow q = VQ/I depends on the first moment Q of the effective area above the cut. Within the compression zone Q changes quadratically, so the diagram is <strong>parabolic above the neutral axis</strong>; between the neutral axis and the steel level no effective area is added, so it stays <strong>constant</strong>. With constant width b, the nominal shear stress q/b varies the same way. This is an elastic-model result, not a measured distribution in cracked concrete.</p>",
+            "html": "<p>Reinforced concrete works because bonded steel and concrete strain together. Their coefficients of thermal expansion are broadly similar, so a uniform temperature change causes little differential strain between them. This limits internal mismatch, but it does not remove stresses caused by external restraint or temperature gradients, and it does not make the two materials equally stiff.</p><p>Elastic (working-stress) analysis handles the stiffness difference with a transformed section: the steel area is multiplied by the modular ratio m = E<sub>s</sub>/E<sub>c</sub> to give an equivalent concrete area. For an instantaneous calculation with E<sub>s</sub> = 200 GPa and E<sub>c</sub> = 25 GPa, m = 200/25 = 8. A code's working-stress modular ratio that allows for long-term effects is a different, stated convention.</p><p>In the cracked transformed section of a singly reinforced rectangular beam, tensile concrete is ignored. Shear flow q = VQ/I depends on the first moment Q of the effective area above the cut. Within the compression zone Q changes quadratically, so the diagram is parabolic above the neutral axis; between the neutral axis and the steel level no effective area is added, so it stays constant.</p><p>With constant width b, the nominal shear stress q/b varies the same way. This is an elastic-model result, not a measured distribution in cracked concrete.</p>",
+            "points": [
+              {
+                "html": "The key result is Parabolic above; constant between the axis and steel.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00053",
+                    "label": "p. 17; topic 4 point 51"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is It limits differential thermal strain between bonded materials.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00074",
+                    "label": "p. 21; topic 5 point 73"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is 8. This is the reviewed topic result.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00095",
+                    "label": "p. 22; topic 5 point 94"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
-                "id": "CAP4-05-00095",
-                "label": "p. 22; topic 5 point 94"
+                "id": "CAP4-04-00053",
+                "label": "p. 17; topic 4 point 51"
               },
               {
                 "id": "CAP4-05-00074",
                 "label": "p. 21; topic 5 point 73"
               },
               {
-                "id": "CAP4-04-00053",
-                "label": "p. 17; topic 4 point 51"
+                "id": "CAP4-05-00095",
+                "label": "p. 22; topic 5 point 94"
               }
             ]
           },
           {
             "id": "shear-in-rc-beams",
             "title": "Shear in RC beams: diagonal tension, concrete mechanisms and stirrups",
-            "html": "<p>Shear combined with bending produces inclined <strong>principal tensile stresses</strong>, so cracks near supports run diagonally. Shear reinforcement is provided mainly to resist this <strong>diagonal tension</strong>. Adequately anchored stirrups crossing an inclined crack carry tension across it and tie together a truss-like load path in which inclined concrete struts carry compression.</p><p>After diagonal cracking, stirrups are not the only mechanism. Shear is also carried by the uncracked compression zone and struts, by aggregate interlock across the crack faces and by dowel action of the longitudinal bars. Simplified design adds a concrete contribution to a steel contribution and limits the shear stress so that the struts do not crush. Stirrups neither replace the longitudinal flexural steel nor prevent every crack.</p><p>IS 456:2000 clause 26.5.1.4 recognizes the following forms of beam shear reinforcement, subject to its angle, combination and anchorage rules:</p><ul><li>vertical stirrups;</li><li>inclined stirrups;</li><li>bent-up bars used together with stirrups.</li></ul><p>A bar is effective only if it crosses the potential inclined cracks and can develop its force through anchorage; placing a bar in some orientation does not by itself make it shear reinforcement.</p>",
+            "html": "<p>Shear combined with bending produces inclined principal tensile stresses, so cracks near supports run diagonally. Shear reinforcement is provided mainly to resist this diagonal tension. Adequately anchored stirrups crossing an inclined crack carry tension across it and tie together a truss-like load path in which inclined concrete struts carry compression.</p><p>After diagonal cracking, stirrups are not the only mechanism. Shear is also carried by the uncracked compression zone and struts, by aggregate interlock across the crack faces and by dowel action of the longitudinal bars. Simplified design adds a concrete contribution to a steel contribution and limits the shear stress so that the struts do not crush. Stirrups neither replace the longitudinal flexural steel nor prevent every crack.</p><p>IS 456:2000 clause 26.5.1.4 recognizes the following forms of beam shear reinforcement, subject to its angle, combination and anchorage rules:</p><ul><li>vertical stirrups;</li><li>inclined stirrups;</li><li>bent-up bars used together with stirrups.</li></ul><p>A bar is effective only if it crosses the potential inclined cracks and can develop its force through anchorage; placing a bar in some orientation does not by itself make it shear reinforcement.</p>",
+            "points": [
+              {
+                "html": "The key result is Concrete mechanisms and shear reinforcement act together.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00004",
+                    "label": "p. 15; topic 4 point 4"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is Carry tension across the inclined crack as part of the shear load path.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00112",
+                    "label": "p. 19; topic 4 point 111"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is Carry tensile forces across diagonal shear cracks.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00042",
+                    "label": "p. 20; topic 5 point 41; topic 5 point 52"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is Vertical stirrups, inclined stirrups, and bent-up bars with stirrups.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00099",
+                    "label": "p. 22; topic 5 point 98"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-04-00004",
@@ -744,12 +1614,37 @@
           {
             "id": "beam-reinforcement-limits-and-notation",
             "title": "Beam tension-steel limits and reading bar notation",
-            "html": "<p>IS 456:2000 clause 26.5.1.1 bounds beam tension reinforcement from both sides, and the two bounds use different depths:</p><ul><li><strong>Minimum</strong>: A<sub>s</sub> = 0.85bd/f<sub>y</sub>, with effective depth d and f<sub>y</sub> in MPa. For b = 250 mm, d = 400 mm and Fe500: 0.85 × 250 × 400/500 = 170 mm<sup>2</sup>.</li><li><strong>Maximum</strong>: 0.04bD, with overall depth D. For b = 250 mm and D = 500 mm: 0.04 × 250 × 500 = 5000 mm<sup>2</sup>. Substituting the effective depth of 450 mm would wrongly give 4500 mm<sup>2</sup>.</li></ul><p>The gross-area maximum is only an upper detailing bound: a more restrictive ductility or strength check can govern well before it is reached, and the overall depth D belongs to the maximum, not to the minimum formula.</p><p>In reinforcement schedules the symbol φ denotes <strong>nominal bar diameter</strong>. A note such as '4 bars, φ16' means four bars each of 16 mm diameter. The count and the diameter are separate quantities; neither gives the clear spacing, and the total area must be calculated (here 4 × π × 16<sup>2</sup>/4 ≈ 804 mm<sup>2</sup>).</p>",
-            "sources": [
+            "html": "<p>IS 456:2000 clause 26.5.1.1 bounds beam tension reinforcement from both sides, and the two bounds use different depths:</p><ul><li>Minimum: A<sub>s</sub> = 0.85bd/f<sub>y</sub>, with effective depth d and f<sub>y</sub> in MPa. For b = 250 mm, d = 400 mm and Fe500: 0.85 × 250 × 400/500 = 170 mm<sup>2</sup>.</li><li>Maximum: 0.04bD, with overall depth D. For b = 250 mm and D = 500 mm: 0.04 × 250 × 500 = 5000 mm<sup>2</sup>. Substituting the effective depth of 450 mm would wrongly give 4500 mm<sup>2</sup>.</li></ul><p>The gross-area maximum is only an upper detailing bound: a more restrictive ductility or strength check can govern well before it is reached, and the overall depth D belongs to the maximum, not to the minimum formula.</p><p>In reinforcement schedules the symbol φ denotes nominal bar diameter. A note such as '4 bars, φ16' means four bars each of 16 mm diameter. The count and the diameter are separate quantities; neither gives the clear spacing, and the total area must be calculated (here 4 × π × 16<sup>2</sup>/4 ≈ 804 mm<sup>2</sup>).</p>",
+            "points": [
               {
-                "id": "CAP4-05-00101",
-                "label": "p. 22; topic 5 point 100"
+                "html": "The key result is 5000 mm 2.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00043",
+                    "label": "p. 20; topic 5 point 42"
+                  }
+                ]
               },
+              {
+                "html": "The key result is Nominal diameter of each bar.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00044",
+                    "label": "p. 20; topic 5 point 43"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is 170.0 mm 2.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00101",
+                    "label": "p. 22; topic 5 point 100"
+                  }
+                ]
+              }
+            ],
+            "sources": [
               {
                 "id": "CAP4-05-00043",
                 "label": "p. 20; topic 5 point 42"
@@ -757,28 +1652,81 @@
               {
                 "id": "CAP4-05-00044",
                 "label": "p. 20; topic 5 point 43"
+              },
+              {
+                "id": "CAP4-05-00101",
+                "label": "p. 22; topic 5 point 100"
               }
             ]
           },
           {
             "id": "slab-cover-and-thickness",
             "title": "Nominal cover in slabs and the checks that govern slab thickness",
-            "html": "<p>Nominal cover protects the reinforcement, and the value required depends on exposure, bar size and fire resistance rather than being one figure for all slabs. Under IS 456:2000 Table 16 the mild-exposure baseline is 20 mm, and Note 1 allows a 5 mm reduction where main bars do not exceed 12 mm. A mild-exposure slab with 10 mm main bars can therefore have 15 mm nominal cover, provided no fire or other requirement demands more. Nominal cover must also be at least the bar diameter (clause 26.4.1), which 15 mm satisfies for a 10 mm bar.</p><p>Slab thickness is not fixed by shear alone. It must satisfy every governing check: <strong>flexure</strong>, <strong>one-way shear</strong>, <strong>punching shear</strong> around columns, <strong>deflection</strong>, cover and practical bar placement. A slab that passes its flexural calculation may still fail punching shear at a column, so passing one check proves nothing about the others.</p>",
-            "sources": [
+            "html": "<p>Nominal cover protects the reinforcement, and the value required depends on exposure, bar size and fire resistance rather than being one figure for all slabs. Under IS 456:2000 Table 16 the mild-exposure baseline is 20 mm, and Note 1 allows a 5 mm reduction where main bars do not exceed 12 mm.</p><p>A mild-exposure slab with 10 mm main bars can therefore have 15 mm nominal cover, provided no fire or other requirement demands more. Nominal cover must also be at least the bar diameter (clause 26.4.1), which 15 mm satisfies for a 10 mm bar.</p><p>Slab thickness is not fixed by shear alone. It must satisfy every governing check: flexure, one-way shear, punching shear around columns, deflection, cover and practical bar placement. A slab that passes its flexural calculation may still fail punching shear at a column, so passing one check proves nothing about the others.</p>",
+            "points": [
               {
-                "id": "CAP4-05-00047",
-                "label": "p. 20; topic 5 point 46"
+                "html": "The key result is All governing strength and serviceability checks must be satisfied.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00038",
+                    "label": "p. 20; topic 5 point 37"
+                  }
+                ]
               },
+              {
+                "html": "The key result is 15 mm.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00047",
+                    "label": "p. 20; topic 5 point 46"
+                  }
+                ]
+              }
+            ],
+            "sources": [
               {
                 "id": "CAP4-05-00038",
                 "label": "p. 20; topic 5 point 37"
+              },
+              {
+                "id": "CAP4-05-00047",
+                "label": "p. 20; topic 5 point 46"
               }
             ]
           },
           {
             "id": "development-length-and-compression-laps",
             "title": "Development length from bond equilibrium and compression lap length",
-            "html": "<p>A bar can carry its design force only if enough of it is embedded to pass that force to the concrete by bond. This embedded length is the <strong>development length</strong> L<sub>d</sub>. Equating the bar force to the bond force over the embedded length of a straight bar of diameter φ gives (πφ<sup>2</sup>/4)σ<sub>s</sub> = πφL<sub>d</sub>τ<sub>bd</sub>, so</p><p><strong>L<sub>d</sub> = φσ<sub>s</sub>/(4τ<sub>bd</sub>)</strong>.</p><p>L<sub>d</sub> grows with bar diameter and bar stress and falls as the design bond stress rises; it is not a span, a cover dimension or a fixed multiple valid for every bar. <em>Worked example.</em> A 16 mm bar developing 300 MPa with an applicable design bond stress of 1.5 MPa needs L<sub>d</sub> = 16 × 300/(4 × 1.5) = 800 mm.</p><p>A lap passes force from one bar to the next through the same bond mechanism. IS 456:2000 clause 26.2.5.1 requires a <strong>compression lap</strong> of at least the compression development length and not less than 24φ. For a 20 mm bar with compression L<sub>d</sub> = 620 mm, 24 × 20 = 480 mm, so the lap is the larger value, 620 mm. Using 24φ alone would miss the governing bond requirement.</p>",
+            "html": "<p>A bar can carry its design force only if enough of it is embedded to pass that force to the concrete by bond. This embedded length is the development length L<sub>d</sub>. Equating the bar force to the bond force over the embedded length of a straight bar of diameter φ gives (πφ<sup>2</sup>/4)σ<sub>s</sub> = πφL<sub>d</sub>τ<sub>bd</sub>, so</p><p>L<sub>d</sub> = φσ<sub>s</sub>/(4τ<sub>bd</sub>).</p><p>L<sub>d</sub> grows with bar diameter and bar stress and falls as the design bond stress rises; it is not a span, a cover dimension or a fixed multiple valid for every bar. <em>Worked example.</em> A 16 mm bar developing 300 MPa with an applicable design bond stress of 1.5 MPa needs L<sub>d</sub> = 16 × 300/(4 × 1.5) = 800 mm.</p><p>A lap passes force from one bar to the next through the same bond mechanism. IS 456:2000 clause 26.2.5.1 requires a compression lap of at least the compression development length and not less than 24φ. For a 20 mm bar with compression L<sub>d</sub> = 620 mm, 24 × 20 = 480 mm, so the lap is the larger value, 620 mm. Using 24φ alone would miss the governing bond requirement.</p>",
+            "points": [
+              {
+                "html": "The key result is Development length.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00021",
+                    "label": "pp. 20, 23; topic 5 point 20; topic 5 point 129"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is 800 mm.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00022",
+                    "label": "pp. 20, 23; topic 5 point 20; topic 5 point 129"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is 620 mm.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00081",
+                    "label": "pp. 21, 22; topic 5 point 81; topic 5 point 93"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00021",
@@ -797,7 +1745,27 @@
           {
             "id": "hooks-and-anchorage-credit",
             "title": "Standard hooks: an anchorage credit, not a complete anchorage",
-            "html": "<p>Where the straight embedment is too short, a bend or hook can add anchorage. IS 456:2000 clause 26.2.2.1 credits a standard <strong>U-type tension hook</strong> with an anchorage value of <strong>16φ</strong>, so for a 20 mm bar the equivalent credit is 16 × 20 = 320 mm. This credit is not the physical curved length of the hook, and it does not mean that the complete required development length is 320 mm.</p><p>Treating 16φ as the whole anchorage for every bar is therefore a misuse. The designer first finds the required development length from the bar force and the design bond strength, then checks whether the available straight embedment plus any admissible hook credit supplies it. Bend dimensions, confinement and support conditions have their own rules, and a bar is not anchored merely because it lies inside the concrete cover.</p>",
+            "html": "<p>Where the straight embedment is too short, a bend or hook can add anchorage. IS 456:2000 clause 26.2.2.1 credits a standard U-type tension hook with an anchorage value of 16φ, so for a 20 mm bar the equivalent credit is 16 × 20 = 320 mm. This credit is not the physical curved length of the hook, and it does not mean that the complete required development length is 320 mm.</p><p>Treating 16φ as the whole anchorage for every bar is therefore a misuse. The designer first finds the required development length from the bar force and the design bond strength, then checks whether the available straight embedment plus any admissible hook credit supplies it. Bend dimensions, confinement and support conditions have their own rules, and a bar is not anchored merely because it lies inside the concrete cover.</p>",
+            "points": [
+              {
+                "html": "The key result is 320 mm.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00053",
+                    "label": "p. 21; topic 5 point 53"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is Check required development against available straight length and admissible hook credit.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00122",
+                    "label": "p. 22; topic 5 point 122"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00053",
@@ -813,6 +1781,26 @@
             "id": "deflection-limits",
             "title": "Deflection limits for RC beams under IS 456:2000 clause 23.2",
             "html": "<p>Serviceability requires beams to be stiff enough, and IS 456:2000 clause 23.2 sets two separate limits for normal cases:</p><table><thead><tr><th scope='col'>Limit</th><th scope='col'>Criterion</th><th scope='col'>What it covers</th></tr></thead><tbody><tr><td>Total final deflection, clause 23.2(a)</td><td>span/250</td><td>All relevant loads including time-dependent effects, measured from the as-cast level of the supports</td></tr><tr><td>Deflection after partitions and finishes, clause 23.2(b)</td><td>smaller of span/350 and 20 mm</td><td>The increment occurring after partitions and finishes are installed</td></tr></tbody></table><p><em>Worked examples.</em> For a 6.0 m beam the total limit is 6000/250 = 24 mm. For a 9 m beam the post-finish increment is limited to 9000/350 = 25.71 mm or 20 mm, whichever is smaller, so 20 mm controls.</p><p>The two criteria answer different questions and are not interchangeable, and neither is an unattributed span/325 rule. The fixed 20 mm cap on the second limit reflects its purpose of limiting movement after partitions and finishes are in place.</p>",
+            "points": [
+              {
+                "html": "The key result is 24.0 mm.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00125",
+                    "label": "p. 23; topic 5 point 125"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is 20.0 mm.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00126",
+                    "label": "p. 23; topic 5 point 125"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00125",
@@ -1041,12 +2029,50 @@
       "ACiE0504": {
         "code": "ACiE0504",
         "questionCount": 21,
-        "formulaSheet": "<p><strong>Eccentric load moved to the footing centroid:</strong> axial force P plus moment M = Pe.</p><p><strong>Column longitudinal steel (IS 456:2000 clause 26.5.3.1):</strong> 0.8% to 6% of gross area, usually not above 4% where bars are lapped; at least 4 bars in rectangular and 6 bars in circular columns.</p><p><strong>Helical columns (clause 39.4):</strong> resistance = 1.05 × comparable tied-column resistance, only when the helix complies.</p><p><strong>Footing minimum steel (HYSD bars, via the slab rule):</strong> 0.12% of gross area in each direction.</p><p><strong>Parabolic tendon:</strong> e(x) = 4e<sub>mid</sub>x(L − x)/L<sup>2</sup>; balanced load w<sub>bal</sub> = 8Pe<sub>mid</sub>/L<sup>2</sup>.</p><p><strong>Effective prestress:</strong> f<sub>pe</sub> = (1 − loss fraction) × f<sub>pi</sub>.</p><p><strong>Old units:</strong> 1 kgf/cm<sup>2</sup> = 9.80665/100 N/mm<sup>2</sup> ≈ 0.0981 MPa.</p>",
+        "format": 2,
+        "summary": "<p>This subchapter covers reinforced concrete columns, isolated and combined footings and the basics of prestressed concrete under IS 456:2000 and IS 1343:2012. The capsule items test concrete strain limits, slender-column behaviour, column steel percentages, bar counts and cover, the helical-column credit, equivalent footing actions, minimum footing steel and shear checks, combined-footing geometry, prestressing grades and old strength units, parabolic load balancing and prestress losses.</p>",
         "blocks": [
           {
-            "id": "column-strain-and-slenderness",
-            "title": "Axial-compression strain limit and slender-column behaviour",
-            "html": "<p>In IS 456:2000 a column under pure axial compression is strained uniformly across its section, and its limiting concrete strain is <strong>0.002</strong> (clause 39.1). In bending the strain varies linearly across the depth, and failure is taken at <strong>0.0035</strong> in the extreme compression fibre (clause 38.1). The different strain distributions are why the two limits are not interchangeable: 0.002 belongs to uniform axial strain and 0.0035 to the extreme fibre in bending.</p><p>Slenderness adds a second effect. When a slender column carrying axial force P deflects sideways by δ, the axial force acts with an extra lever arm and produces an additional <strong>second-order moment</strong> of about Pδ, which increases the deflection further. A stability assessment must therefore keep the <strong>direct compression</strong> P/A together with the first-order bending and this magnification. Slenderness makes instability and second-order effects important; it does not make the direct stress negligible.</p>",
+            "id": "column-strain-limits-and-slenderness",
+            "title": "Concrete strain limits in columns and the effect of slenderness",
+            "html": "<p>IS 456:2000 idealizes concrete failure by a limiting strain, and the limit depends on how strain is distributed over the section. Under pure axial compression the whole section shortens uniformly, and the limiting strain is 0.002 (clause 39.1).</p><p>In flexure the strain varies linearly with depth, and failure is taken when the extreme compression fibre reaches 0.0035 (clause 38.1). The two values describe different strain profiles, so neither can stand in for the other.</p><p>Slenderness adds a geometric effect. When a slender column carrying \\(P\\) deflects sideways by \\(\\delta\\), the axial force gains a lever arm and adds a <em>second-order moment</em> of about \\(P\\delta\\), which increases the deflection further.</p><p>A stability assessment therefore keeps the direct stress \\(P/A\\), the first-order bending moment and this magnification together. Slenderness makes buckling and second-order effects important; it never makes direct compression negligible.</p>",
+            "formulas": [
+              {
+                "label": "Limiting concrete strains",
+                "tex": "\\varepsilon_{\\text{axial}} = 0.002, \\quad \\varepsilon_{\\text{cu}} = 0.0035",
+                "where": "<p>\\(\\varepsilon_{\\text{axial}}\\) applies to uniform axial strain and \\(\\varepsilon_{\\text{cu}}\\) to the extreme fibre in bending.</p>"
+              },
+              {
+                "label": "Moment including the second-order term",
+                "tex": "M \\approx M_1 + P\\,\\delta",
+                "where": "<p>\\(M_1\\) is the first-order moment and \\(\\delta\\) the lateral deflection of the column.</p>"
+              },
+              {
+                "label": "Elastic stress in a deflected column",
+                "tex": "\\sigma_{\\max} = \\dfrac{P}{A} + \\dfrac{M_1 + P\\,\\delta}{Z}"
+              }
+            ],
+            "moreHtml": "<p>Clause 39.1 also covers compression with bending when the whole section stays in compression. The strain at the more compressed face is then limited to \\(0.0035 - 0.75\\,\\varepsilon_{\\min}\\), where \\(\\varepsilon_{\\min}\\) is the strain at the less compressed face. For a uniform profile both face strains are equal, so \\(1.75\\,\\varepsilon = 0.0035\\) and \\(\\varepsilon = 0.002\\), which reconciles the two limits.</p>",
+            "points": [
+              {
+                "html": "IS 456:2000 takes the limiting concrete strain as 0.002 under pure axial compression and 0.0035 at the extreme compression fibre in bending; the strain profiles differ.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00027",
+                    "label": "p. 20; topic 5 point 26"
+                  }
+                ]
+              },
+              {
+                "html": "Assessing a slender column must keep direct compression \\(P/A\\) plus first- and second-order bending effects, since lateral deflection adds a moment of about \\(P\\delta\\).",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00056",
+                    "label": "p. 21; topic 5 point 56"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00027",
@@ -1060,8 +2086,57 @@
           },
           {
             "id": "column-longitudinal-steel",
-            "title": "Longitudinal steel in RC columns: percentage bounds, laps and bar counts",
-            "html": "<p>IS 456:2000 clause 26.5.3.1 controls column longitudinal reinforcement as a percentage of the gross area, apart from special required-area exceptions:</p><ul><li><strong>Minimum 0.8%</strong> and <strong>maximum 6%</strong> of gross area (clause 26.5.3.1(a)).</li><li>A note advises that where bars from the storey below are <strong>lapped</strong>, the steel should usually not exceed <strong>4%</strong>, because the overlapping bars congest the section.</li><li>At least <strong>4 bars</strong> in a rectangular column and <strong>6 bars</strong> in a circular column.</li></ul><p>A fraction of 0.04 means 4%, not 0.04%. The 6% value is a detailing bound, not a theoretical optimum or a compulsory amount, and the 4% advice is a practical recommendation rather than a target. A column with 2.5% steel lies within the ordinary bounds and cannot be rejected merely for exceeding a remembered 2%, although its capacity, congestion, laps and detailing must still be checked.</p><p>Bar counts are necessary but not sufficient: total area, bar diameter, peripheral spacing, cover and transverse restraint must also comply.</p>",
+            "title": "Longitudinal steel in RC columns: area bounds, lapped bars and bar counts",
+            "html": "<p>IS 456:2000 clause 26.5.3.1 fixes the longitudinal reinforcement of a column as a share of its gross area. Apart from the special case of a column that is larger than its load requires, the ordinary rules are:</p><ul><li>at least 0.8% and at most 6% of the gross area;</li><li>a note advising that the steel should usually stay within 4% where bars from the storey below are lapped, because the overlapping bars congest the section;</li><li>at least 4 bars in a rectangular column and 6 bars in a circular one.</li></ul><p>A fraction written as 0.04 means 4%, not 0.04%. The 6% figure is a detailing bound, not an optimum or a required amount, and the 4% advice is a practical recommendation rather than a target.</p><p>There is no universal 2% ceiling. A column with 2.5% steel passes the area check, although its capacity, laps, congestion and detailing still need checking. Bar counts are likewise necessary but not sufficient: total area, bar diameter, peripheral spacing, cover and transverse restraint must also comply.</p>",
+            "formulas": [
+              {
+                "label": "Ordinary area bounds",
+                "tex": "0.008\\,A_g \\le A_{sc} \\le 0.06\\,A_g",
+                "where": "<p>\\(A_{sc}\\) is the longitudinal steel area and \\(A_g\\) the gross area of the column.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 400 mm square column",
+              "html": "<p>The gross area of a 400 mm × 400 mm section is \\(A_g = 160\\,000\\ \\text{mm}^2\\).</p>\\[\\begin{aligned} 0.8\\%: &amp;\\quad 0.008\\,A_g = 1280\\ \\text{mm}^2 \\\\ 4\\%: &amp;\\quad 0.04\\,A_g = 6400\\ \\text{mm}^2 \\\\ 6\\%: &amp;\\quad 0.06\\,A_g = 9600\\ \\text{mm}^2 \\end{aligned}\\]<p>A design with 2.5% steel, 4000 mm², lies inside the ordinary bounds; its laps, spacing and capacity are still checked.</p>"
+            },
+            "points": [
+              {
+                "html": "Ordinary RC columns under IS 456:2000 carry longitudinal steel of 0.8% minimum and 6% maximum of the gross area.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00057",
+                    "label": "p. 21; topic 5 point 57"
+                  }
+                ]
+              },
+              {
+                "html": "Where bars are lapped from the storey below, the code note advises usually limiting the steel to 4% of gross area; a fraction of 0.04 means 4%.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00033",
+                    "label": "p. 20; topic 5 point 32"
+                  }
+                ]
+              },
+              {
+                "html": "Steel of 2.5% lies within the ordinary 0.8–6% area bounds, so it cannot be rejected against a 2% ceiling, but the other checks remain.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00143",
+                    "label": "p. 22; topic 5 point 118"
+                  }
+                ]
+              },
+              {
+                "html": "A rectangular RC column needs at least 4 longitudinal bars and a circular column at least 6.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00121",
+                    "label": "p. 22; topic 5 point 121"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00057",
@@ -1082,9 +2157,54 @@
             ]
           },
           {
-            "id": "column-cover-and-helical-reinforcement",
-            "title": "Column cover and the conditional strength credit for helical reinforcement",
-            "html": "<p>For ordinary columns, the IS 456:2000 detailing requirement used here is a nominal cover of <strong>at least 40 mm and not less than the longitudinal bar diameter</strong>. For a 300 mm square column with 20 mm bars the minimum is the larger of 40 and 20, i.e. 40 mm. The code's separate relaxation for small columns does not apply to this size and bar, and exposure or fire requirements can demand more. The figure is in millimetres; quoting '40' without units or conditions is incomplete.</p><p><strong>Helical reinforcement</strong> confines the core concrete. IS 456:2000 clause 39.4 therefore allows the strength of a helically reinforced column to be taken as <strong>1.05 times</strong> that of a similar column with lateral ties, but only when the helix satisfies the prescribed volumetric ratio, pitch and anchorage requirements. A circular shape, a single circular tie or an unchecked spiral does not earn the credit.</p><p><em>Worked example.</em> If a fully compliant helical column's comparable tied-column design resistance is 1200 kN, the enhanced resistance is 1.05 × 1200 = 1260 kN: a 5% increase, not an extra 5 kN and not 10%.</p>",
+            "id": "column-cover-and-helical-credit",
+            "title": "Nominal cover for columns and the conditional credit for helical reinforcement",
+            "html": "<p>For the longitudinal bars of an ordinary column, the IS 456:2000 detailing rule used here asks for a nominal cover of at least 40 mm and not less than the bar diameter. With 20 mm bars in a 300 mm square column, the larger of 40 mm and 20 mm governs, so the cover is 40 mm.</p><p>The separate relaxation for small columns with small bars does not apply at that size, and exposure or fire rating can demand more. The figure is a length in millimetres, so '40' quoted without units or conditions is incomplete.</p><p>A closely spaced <em>helix</em> confines the core concrete and delays its failure. Clause 39.4 therefore lets the strength of a helically reinforced column be taken as 1.05 times that of a similar column with lateral ties.</p><p>The credit applies only when the helix meets the specified detailing: volumetric ratio, pitch and anchorage. A circular outline, a single circular tie or an unchecked spiral does not earn it.</p>",
+            "formulas": [
+              {
+                "label": "Nominal cover to column bars",
+                "tex": "c_{\\text{nom}} \\ge \\max(40\\ \\text{mm},\\ \\phi)",
+                "where": "<p>\\(\\phi\\) is the longitudinal bar diameter; exposure and fire requirements can govern instead.</p>"
+              },
+              {
+                "label": "Helical reinforcement credit",
+                "tex": "P_{\\text{helix}} = 1.05\\,P_{\\text{tied}}",
+                "where": "<p>Valid only when the helix satisfies the clause 39.4 detailing conditions.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked examples: cover and helix credit",
+              "html": "<ol><li>Cover for 20 mm bars: \\(\\max(40, 20) = 40\\ \\text{mm}\\).</li><li>A compliant helix on a column whose tied design resistance is 1200 kN: \\(1.05 \\times 1200 = 1260\\ \\text{kN}\\).</li></ol><p>The credit is a 5% increase. Adding 5 kN, or applying 10%, misreads the factor.</p>"
+            },
+            "points": [
+              {
+                "html": "A 300 mm square column with 20 mm bars needs a nominal cover of 40 mm, the larger of 40 mm and the bar diameter, unless exposure or fire governs.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00056",
+                    "label": "p. 17; topic 4 point 55"
+                  }
+                ]
+              },
+              {
+                "html": "The 1.05 factor of clause 39.4 requires the specified helical detailing; a spiral whose volumetric ratio is unchecked cannot claim it yet.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00060",
+                    "label": "p. 21; topic 5 point 59"
+                  }
+                ]
+              },
+              {
+                "html": "A fully compliant helical column whose comparable tied-column resistance is 1200 kN may be credited with 1260 kN.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00061",
+                    "label": "p. 21; topic 5 point 59"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-04-00056",
@@ -1102,8 +2222,52 @@
           },
           {
             "id": "isolated-footing-actions-and-checks",
-            "title": "Isolated footings: eccentric loads, minimum mesh and shear checks",
-            "html": "<p>A column load that does not act at the footing centroid can be replaced by the same force at the centroid plus a couple, so the <strong>equivalent actions are P and M = Pe</strong>. For 500 kN acting 0.12 m from the centroid, the footing carries 500 kN axially and M = 500 × 0.12 = 60 kN m. The moment is added to the axial load rather than replacing it, and it makes the bearing pressure non-uniform.</p><p>A footing slab needs at least the solid-slab minimum reinforcement, to which IS 456:2000 clause 34.5.1 refers. For HYSD bars this is 0.12% of the gross area in each direction. <em>Worked example.</em> A 1000 mm wide, 400 mm thick strip needs 0.0012 × 1000 × 400 = 480 mm<sup>2</sup> in each direction; bending demand can require more.</p><p>The horizontal bottom mesh resists flexure and controls cracking; it is not shear reinforcement. The footing depth and concrete shear resistance must satisfy both the <strong>one-way (beam) shear</strong> and the <strong>punching (two-way) shear</strong> checks. If specific shear reinforcement is used, it needs an effective anchored detail, not merely transverse bottom bars.</p>",
+            "title": "Isolated footings: eccentric column loads, minimum mesh and shear checks",
+            "html": "<p>A column load that misses the footing centroid by an eccentricity \\(e\\) is statically equivalent to the same force at the centroid together with a couple \\(M = Pe\\). The footing is designed for both actions: the moment is added to the axial load, never substituted for it, and it makes the bearing pressure under the base non-uniform.</p><p>The footing slab must carry at least the solid-slab minimum reinforcement, which IS 456:2000 clause 34.5.1 adopts. With HYSD bars that is 0.12% of the gross section in each direction (0.15% for mild steel bars), and bending demand can call for more.</p><p>The bottom mesh works in flexure and controls cracking. Its horizontal bars are not shear reinforcement, so the footing depth and the concrete's shear resistance must pass two separate checks: one-way (beam) shear and punching (two-way) shear around the column. Shear reinforcement, where used, needs its own effective, anchored detail.</p>",
+            "formulas": [
+              {
+                "label": "Eccentric load moved to the centroid",
+                "tex": "N = P, \\qquad M = P\\,e"
+              },
+              {
+                "label": "Minimum footing steel with HYSD bars",
+                "tex": "A_{\\text{st,min}} = 0.0012\\,b\\,D",
+                "where": "<p>\\(b\\) is the width and \\(D\\) the overall depth of the section considered, in each direction.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked examples: equivalent actions and minimum mesh",
+              "html": "<p>A 500 kN column load acting 0.12 m from the centroid:</p>\\[M = 500 \\times 0.12 = 60\\ \\text{kN m}\\]<p>The footing therefore carries 500 kN axially together with 60 kN m.</p><p>A strip 1000 mm wide and 400 mm thick, reinforced with Fe415 bars:</p>\\[\\begin{aligned} A_{\\text{st,min}} &amp;= 0.0012 \\times 1000 \\times 400 \\\\ &amp;= 480\\ \\text{mm}^2 \\end{aligned}\\]<p>That area is needed in each direction.</p>"
+            },
+            "points": [
+              {
+                "html": "A 500 kN column load acting 0.12 m off the footing centroid is equivalent to 500 kN at the centroid plus a moment of 60 kN m.",
+                "sources": [
+                  {
+                    "id": "CAP4-01-00137",
+                    "label": "p. 5; topic 1 point 130"
+                  }
+                ]
+              },
+              {
+                "html": "Under the slab rule, a footing strip 1000 mm wide and 400 mm thick with HYSD bars needs at least 480 mm² of steel in each direction.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00062",
+                    "label": "p. 21; topic 5 point 60"
+                  }
+                ]
+              },
+              {
+                "html": "The horizontal flexural bars of a footing mesh are not automatically shear reinforcement, so one-way and punching shear are checked separately.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00064",
+                    "label": "p. 21; topic 5 point 62"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-01-00137",
@@ -1121,8 +2285,43 @@
           },
           {
             "id": "combined-footings",
-            "title": "Combined footings and why a trapezoidal plan can be chosen",
-            "html": "<p>A <strong>combined footing</strong> is one footing slab designed as the common base of two or more selected columns, used for instance where boundary restrictions or closely spaced columns make separate pads impractical. It differs from a <strong>strap footing</strong>, in which separate pads are connected by a beam, and from a <strong>raft</strong>, which generally supports a substantial group of columns or the whole building on a larger common base.</p><p>In proportioning, the centroid of the footing area is made to coincide with the line of action of the resultant column load. In the idealized model of linear, full-contact bearing, the pressure is then uniform. With unequal column loads and a boundary that stops the footing from extending beyond the heavier column, a rectangle of uniform width may be unable to bring its centroid under the resultant. A <strong>trapezoidal plan</strong>, wider at the more heavily loaded end, shifts the area centroid toward the larger load.</p><p>Unequal loads do not require a trapezoid, and aligning the centroid neither removes shear and bending in the footing nor makes bearing pressure independent of real soil behaviour.</p>",
+            "title": "Combined footings and the reason for a trapezoidal plan",
+            "html": "<p>A <em>combined footing</em> is a single footing slab designed as the common base of two or more selected columns. It suits columns that stand close together, or an exterior column whose pad cannot spread past a property line. A strap footing is different: it keeps separate pads and links them with a beam. A raft generally carries a large group of columns, or the whole building, on one wider base.</p><p>Proportioning puts the centroid of the footing area on the line of action of the resultant column load. In the idealized model of a rigid footing in full, linear contact, the bearing pressure is then uniform.</p><p>With unequal loads and limits at both ends of the base, a rectangle may be unable to bring its centroid under the resultant. A <em>trapezoidal plan</em>, wider at the heavier end, moves the area centroid toward that load.</p><p>Unequal loads do not force a trapezoid, and aligning the centroid neither removes shear and bending in the slab nor makes the pressure independent of real soil behaviour.</p>",
+            "formulas": [
+              {
+                "label": "Position of the load resultant",
+                "tex": "\\bar{x}_R = \\dfrac{\\sum P_i\\,x_i}{\\sum P_i}"
+              },
+              {
+                "label": "Centroid of a trapezoidal plan",
+                "tex": "\\bar{x} = \\dfrac{L}{3} \\cdot \\dfrac{a + 2b}{a + b}",
+                "where": "<p>Measured from the end of width \\(a\\); \\(b\\) is the width at the other end and \\(L\\) the length.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: sizing the end widths",
+              "html": "<p>Loads of 800 kN and 1200 kN stand 4 m apart, and both ends are restricted, so the base is 5 m long with 0.5 m projections. From the lighter end:</p>\\[\\begin{aligned} \\bar{x}_R &amp;= \\dfrac{800 \\times 0.5 + 1200 \\times 4.5}{2000} \\\\ &amp;= 2.9\\ \\text{m} \\end{aligned}\\]<p>A rectangle has its centroid at 2.5 m, which misses the resultant. Setting the trapezoid centroid to 2.9 m gives \\((a + 2b)/(a + b) = 1.74\\), so \\(b \\approx 2.85\\,a\\): the heavier end must be almost three times as wide.</p>"
+            },
+            "points": [
+              {
+                "html": "One continuous slab serving as the common base of two or more columns is a combined footing; a strap footing links separate pads with a beam.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00066",
+                    "label": "p. 21; topic 5 point 64"
+                  }
+                ]
+              },
+              {
+                "html": "A trapezoidal combined footing is chosen to align its area centroid with the applied resultant when unequal loads and end limits defeat a uniform width.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00054",
+                    "label": "p. 21; topic 5 point 54"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00066",
@@ -1136,8 +2335,47 @@
           },
           {
             "id": "prestressing-principle-and-grades",
-            "title": "Why concrete is prestressed and which minimum grades apply",
-            "html": "<p>Concrete is weak in tension. In <strong>prestressed concrete</strong> a tendon is tensioned and its force is transferred to the member, introducing a deliberate <strong>initial compression</strong>, with a bending effect when the tendon is eccentric. Later loads must first cancel this compression before tension can develop, so tensile stresses and cracking are controlled. Ordinary passive reinforcement picks up force only as the member deforms under load, whereas an actively tensioned tendon applies its force from transfer.</p><p>Prestressed work uses higher minimum grades than the M20 minimum for reinforced concrete in mild exposure. <strong>IS 1343:2012</strong> clause 6.1 with Table 1 Note 2 gives <strong>M40 for pre-tensioned</strong> and <strong>M30 for post-tensioned</strong> concrete, before any higher exposure requirement. These are characteristic 28-day cube grades; the concrete strength and stresses at transfer are separate checks.</p><p>Older sources quote strength in kg/cm<sup>2</sup>, meaning kgf/cm<sup>2</sup>. With 1 kgf = 9.80665 N and 1 cm<sup>2</sup> = 100 mm<sup>2</sup>, 350 kgf/cm<sup>2</sup> = 350 × 9.80665/100 ≈ 34.32 N/mm<sup>2</sup> (MPa). Converting an old number does not establish a modern minimum grade or transfer strength.</p>",
+            "title": "Why concrete is prestressed and the minimum grades for prestressed work",
+            "html": "<p>Concrete cracks at a low tensile stress. In <em>prestressed concrete</em> a tendon is stretched and its force is transferred to the member, so the concrete starts life in deliberate compression, with a bending effect as well when the tendon is eccentric. Later loads must first cancel this stored compression before any tension appears, which is how tensile stresses and cracking are controlled.</p><p>Ordinary passive bars pick up force only as the member deforms under load; an actively tensioned tendon applies its force from transfer onwards.</p><p>Prestressed work needs stronger concrete than the M20 minimum of ordinary reinforced concrete in mild exposure. IS 1343:2012, clause 6.1 with Note 2 of Table 1, sets M40 for pre-tensioned and M30 for post-tensioned members, before any higher exposure requirement. These are characteristic 28-day cube grades; the strength and stresses at transfer are separate checks.</p>",
+            "formulas": [
+              {
+                "label": "Old strength units in SI",
+                "tex": "1\\ \\text{kgf/cm}^2 = \\dfrac{9.80665}{100}\\ \\text{N/mm}^2"
+              }
+            ],
+            "example": {
+              "title": "Worked example: converting an old 350 kgf/cm² figure",
+              "html": "<p>Older texts write kg/cm², meaning kilogram-force per square centimetre. One kilogram-force is 9.80665 N and one square centimetre is 100 mm².</p>\\[\\begin{aligned} f &amp;= \\dfrac{350 \\times 9.80665}{100} \\\\ &amp;= 34.323275\\ \\text{N/mm}^2 \\\\ &amp;\\approx 34.32\\ \\text{MPa} \\end{aligned}\\]<p>The result matches neither IS 1343 grade, and converting it says nothing about the strength needed at transfer.</p>"
+            },
+            "points": [
+              {
+                "html": "Tensioning a tendon and transferring its force puts the concrete into compression that can offset later tensile stresses and so control cracking.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00065",
+                    "label": "p. 21; topic 5 point 63"
+                  }
+                ]
+              },
+              {
+                "html": "IS 1343:2012 sets minimum grades of M40 for pre-tensioned and M30 for post-tensioned concrete, before exposure requirements are applied.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00058",
+                    "label": "p. 21; topic 5 point 58"
+                  }
+                ]
+              },
+              {
+                "html": "An old strength of 350 kgf/cm² is about 34.32 MPa, using 1 kgf = 9.80665 N and 100 mm² in each square centimetre.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00059",
+                    "label": "p. 21; topic 5 point 58"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00065",
@@ -1156,7 +2394,42 @@
           {
             "id": "tendon-profile-load-balancing",
             "title": "Tendon profiles and load balancing in simply supported prestressed beams",
-            "html": "<p>A curved tendon under force P presses on the concrete wherever it changes direction. For a shallow profile, the equivalent transverse load per unit length equals P multiplied by the curvature of the profile. To balance a constant downward UDL with constant effective prestress, the curvature must be constant, so the profile is a <strong>parabola</strong>. With zero eccentricity at both ends of a symmetric simple span, the greatest downward eccentricity below the centroid occurs at midspan.</p><p>The parabola is e(x) = 4e<sub>mid</sub>x(L − x)/L<sup>2</sup>, whose curvature has magnitude 8e<sub>mid</sub>/L<sup>2</sup>. The balanced upward load is therefore <strong>w<sub>bal</sub> = 8Pe<sub>mid</sub>/L<sup>2</sup></strong>.</p><p><em>Worked example.</em> P = 1000 kN, e<sub>mid</sub> = 0.25 m and L = 10 m give w<sub>bal</sub> = 8 × 1000 × 0.25/100 = 20 kN/m upward. The tendon forces at the end anchorages must be included in the complete equilibrium model.</p><p>Other profiles give other load patterns: a straight tendon has no curvature and so no distributed transverse load (an eccentric one still applies end moments), while a harped tendon produces concentrated forces at its deviators rather than a uniform load.</p>",
+            "html": "<p>A curved tendon under force \\(P\\) presses on the concrete wherever it changes direction. For a shallow profile the equivalent transverse load per unit length is \\(P\\) times the curvature of the tendon.</p><p>To balance a uniform downward load while the prestress stays constant, the curvature must be constant, and a curve of constant curvature in this shallow sense is a <em>parabola</em>. With zero eccentricity at both supports of a symmetric simple span, the parabola dips furthest below the centroid at midspan.</p><p>Other profiles give other load patterns. A straight tendon has no curvature and so no distributed transverse load, although an eccentric one still applies end moments. A harped tendon, made of straight lengths meeting at deviators, applies concentrated forces there instead of a uniform load.</p><p>The parabola is an ideal starting point. A real layout must still satisfy losses, stress limits at transfer and service, anchorage and every other load case.</p>",
+            "formulas": [
+              {
+                "label": "Parabolic tendon profile",
+                "tex": "e(x) = \\dfrac{4\\,e_{\\text{mid}}\\,x\\,(L - x)}{L^2}",
+                "where": "<p>\\(e_{\\text{mid}}\\) is the midspan eccentricity below the centroid and \\(x\\) the distance from a support.</p>"
+              },
+              {
+                "label": "Balanced upward load",
+                "tex": "w_{\\text{bal}} = \\dfrac{8\\,P\\,e_{\\text{mid}}}{L^2}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 10 m span",
+              "html": "<p>Take \\(P = 1000\\ \\text{kN}\\), \\(e_{\\text{mid}} = 0.25\\ \\text{m}\\) and \\(L = 10\\ \\text{m}\\).</p>\\[\\begin{aligned} w_{\\text{bal}} &amp;= \\dfrac{8 \\times 1000 \\times 0.25}{10^2} \\\\ &amp;= 20\\ \\text{kN/m, upward} \\end{aligned}\\]<p>The curvature magnitude is \\(8e_{\\text{mid}}/L^2 = 0.02\\ \\text{m}^{-1}\\). The anchorage forces at the ends complete the equilibrium of the tendon.</p>"
+            },
+            "points": [
+              {
+                "html": "For a full-span UDL with zero end eccentricities, the ideal tendon is a parabola below the centroid with its maximum eccentricity at midspan.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00105",
+                    "label": "p. 19; topic 4 point 106"
+                  }
+                ]
+              },
+              {
+                "html": "A parabolic tendon with 1000 kN effective force and a 0.25 m midspan sag over 10 m gives an upward balancing load of 20 kN/m.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00106",
+                    "label": "p. 19; topic 4 point 106"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-04-00105",
@@ -1171,7 +2444,38 @@
           {
             "id": "prestress-losses",
             "title": "Prestress losses: immediate and time-dependent mechanisms",
-            "html": "<p>The force in a tendon falls from its initial value to a smaller <strong>effective prestress</strong>. The losses can be grouped by when and how they occur:</p><table><thead><tr><th scope='col'>Group</th><th scope='col'>Mechanisms</th></tr></thead><tbody><tr><td>During tensioning and at transfer</td><td>Elastic shortening of the concrete, duct friction, anchorage seating</td></tr><tr><td>Time-dependent, after transfer</td><td>Creep of concrete, shrinkage of concrete, relaxation of steel</td></tr></tbody></table><p>Creep and shrinkage shorten the concrete along the tendon path, and <strong>relaxation</strong> reduces steel stress at sustained strain. Which mechanisms act and how large they are depends on the prestressing system, materials and sequence; duct friction, for example, concerns tendons tensioned inside ducts.</p><p><em>Worked example.</em> If calculation predicts an 18% total loss from an initial tendon stress of 1200 MPa, the retained fraction is 1 − 0.18 = 0.82 and the effective stress is 0.82 × 1200 = 984 MPa. The 216 MPa difference is the loss, not the remaining stress. A quoted approximate range such as 15–25% is not a universal requirement and cannot replace the calculated losses of a particular member.</p>",
+            "html": "<p>The tendon force falls from its initial value to a smaller <em>effective prestress</em>. The losses are easiest to remember by when they occur:</p><table><thead><tr><th scope='col'>Stage</th><th scope='col'>Mechanisms</th></tr></thead><tbody><tr><td>During tensioning and at transfer</td><td>Elastic shortening of the concrete, duct friction, anchorage seating</td></tr><tr><td>With time, after transfer</td><td>Creep of the concrete, shrinkage of the concrete, relaxation of the steel</td></tr></tbody></table><p>Creep and shrinkage shorten the concrete along the tendon, so the stretched steel loses strain and stress. <em>Relaxation</em> is a loss of steel stress while the strain is held constant.</p><p>Which mechanisms act, and how large each is, depends on the prestressing system, materials and sequence; duct friction, for instance, arises only where tendons run in ducts. A quoted total such as 15–25% of the initial prestress is only an approximate indication and cannot replace the calculated losses of a particular member.</p>",
+            "formulas": [
+              {
+                "label": "Effective prestress after losses",
+                "tex": "f_{pe} = (1 - \\eta)\\,f_{pi}",
+                "where": "<p>\\(\\eta\\) is the total loss as a fraction of the initial stress \\(f_{pi}\\).</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: an 18% calculated loss",
+              "html": "<p>The initial stress is 1200 MPa and the calculated loss is 18%, so the retained fraction is \\(1 - 0.18 = 0.82\\).</p>\\[f_{pe} = 0.82 \\times 1200 = 984\\ \\text{MPa}\\]<p>The 216 MPa difference is the loss itself, not the stress that remains in the tendon.</p>"
+            },
+            "points": [
+              {
+                "html": "An 18% calculated loss from an initial tendon stress of 1200 MPa leaves an effective stress of 984 MPa.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00132",
+                    "label": "p. 23; topic 5 point 133"
+                  }
+                ]
+              },
+              {
+                "html": "Concrete creep, concrete shrinkage and steel relaxation are the time-dependent losses after transfer; friction, anchorage seating and elastic shortening act earlier.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00133",
+                    "label": "p. 23; topic 5 point 133"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00132",
@@ -1184,9 +2488,63 @@
             ]
           }
         ],
+        "formulaSheet": [
+          {
+            "label": "Eccentric load at the footing centroid",
+            "tex": "M = P\\,e"
+          },
+          {
+            "label": "Limiting concrete strains",
+            "tex": "\\varepsilon_{\\text{axial}} = 0.002, \\quad \\varepsilon_{\\text{cu}} = 0.0035",
+            "note": "Uniform axial strain and extreme fibre in bending."
+          },
+          {
+            "label": "Column longitudinal steel",
+            "tex": "0.008\\,A_g \\le A_{sc} \\le 0.06\\,A_g",
+            "note": "Usually at most 4% where bars are lapped; at least 4 bars in rectangular and 6 in circular columns."
+          },
+          {
+            "label": "Nominal cover to column bars",
+            "tex": "c_{\\text{nom}} \\ge \\max(40\\ \\text{mm},\\ \\phi)"
+          },
+          {
+            "label": "Helical column credit",
+            "tex": "P_{\\text{helix}} = 1.05\\,P_{\\text{tied}}",
+            "note": "Only with compliant helical detailing."
+          },
+          {
+            "label": "Minimum footing steel, HYSD bars",
+            "tex": "A_{\\text{st,min}} = 0.0012\\,b\\,D",
+            "note": "In each direction."
+          },
+          {
+            "label": "Resultant of column loads",
+            "tex": "\\bar{x}_R = \\dfrac{\\sum P_i\\,x_i}{\\sum P_i}"
+          },
+          {
+            "label": "Centroid of a trapezoid from the end of width a",
+            "tex": "\\bar{x} = \\dfrac{L}{3} \\cdot \\dfrac{a + 2b}{a + b}"
+          },
+          {
+            "label": "Parabolic tendon profile",
+            "tex": "e(x) = \\dfrac{4\\,e_{\\text{mid}}\\,x\\,(L - x)}{L^2}"
+          },
+          {
+            "label": "Balanced upward load",
+            "tex": "w_{\\text{bal}} = \\dfrac{8\\,P\\,e_{\\text{mid}}}{L^2}"
+          },
+          {
+            "label": "Effective prestress",
+            "tex": "f_{pe} = (1 - \\eta)\\,f_{pi}"
+          },
+          {
+            "label": "Old strength units",
+            "tex": "1\\ \\text{kgf/cm}^2 = 0.0980665\\ \\text{MPa}"
+          }
+        ],
         "cautions": [
           {
-            "id": "column-cover-units-and-conditions",
+            "id": "caution-column-cover-units-and-conditions",
             "status": "review",
             "prompt": "The minimum clear cover for a column is 40",
             "html": "<p>The value needs its units and conditions: at least 40 mm and not less than the bar diameter under the IS 456:2000 column provision, increased where exposure or fire requires, with a separate relaxation for small columns. It is not an unconditional cover for every column.</p>",
@@ -1198,10 +2556,10 @@
             ]
           },
           {
-            "id": "parabolic-tendon-ideal-case",
+            "id": "caution-parabolic-tendon-ideal-case",
             "status": "review",
-            "prompt": "The cable of a UDL-loaded simple prestressed beam should ideally be parabolic",
-            "html": "<p>Correct as the ideal load-balancing profile for a full-span UDL with zero end eccentricities. Real tendon design also checks losses, stress limits, anchorage and other load cases, so this profile is a starting point rather than a complete design.</p>",
+            "prompt": "The cable of a UDL-loaded simple prestressed beam should ideally be parabolic with zero end eccentricity",
+            "html": "<p>Correct as the ideal load-balancing profile for a full-span UDL with zero end eccentricities. Real tendon design also checks losses, stress limits, anchorage and other load cases, so the profile is a starting point rather than a complete design.</p>",
             "sources": [
               {
                 "id": "CAP4-04-00105",
@@ -1210,7 +2568,7 @@
             ]
           },
           {
-            "id": "column-steel-0-04-means-4-percent",
+            "id": "caution-column-steel-0-04-means-4-percent",
             "status": "review",
             "prompt": "Maximum longitudinal reinforcement in a column in practice is 0.04",
             "html": "<p>Read 0.04 as the fraction 4%, and as the usual recommendation where bars are lapped (note to IS 456:2000 clause 26.5.3.1(a)), not a universal preferred percentage. The ordinary absolute maximum is 6% of gross area.</p>",
@@ -1222,10 +2580,10 @@
             ]
           },
           {
-            "id": "long-column-direct-stress",
+            "id": "caution-long-column-direct-stress",
             "status": "corrected",
             "prompt": "In long columns, direct stress is negligible compared with bending stress",
-            "html": "<p>Not a general rule. The axial force still produces direct stress P/A and also magnifies bending through lateral displacement, so slender-column design must retain direct compression together with first- and second-order bending.</p>",
+            "html": "<p>Not a general rule. The axial force still produces direct stress \\(P/A\\) and also magnifies bending through lateral displacement, so slender-column design keeps direct compression together with first- and second-order bending.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00056",
@@ -1234,10 +2592,10 @@
             ]
           },
           {
-            "id": "prestressed-grade-not-350",
+            "id": "caution-prestressed-grade-not-350",
             "status": "corrected",
-            "prompt": "The minimum cube strength for a prestressed member is 350 kg/cm²",
-            "html": "<p>The universal 350 kg/cm² figure is not retained. IS 1343:2012 gives M40 for pre-tensioned and M30 for post-tensioned concrete before exposure requirements. Read as kgf/cm², 350 is about 34.32 MPa, which matches neither grade, and transfer strength is a separate check.</p>",
+            "prompt": "The minimum cube strength of concrete for a prestressed member is 350 kg/cm²",
+            "html": "<p>The universal 350 kg/cm² figure is not retained. IS 1343:2012 gives M40 for pre-tensioned and M30 for post-tensioned concrete before exposure requirements. Read as kgf/cm², 350 is about 34.32 MPa, which matches neither grade, and the strength at transfer is a separate check.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00058",
@@ -1246,9 +2604,9 @@
             ]
           },
           {
-            "id": "helix-credit-conditions",
+            "id": "caution-helix-credit-conditions",
             "status": "review",
-            "prompt": "A helically reinforced column is 1.05 times as strong as a tied column",
+            "prompt": "A column with helical reinforcement is 1.05 times as strong as a similar tied column",
             "html": "<p>The 1.05 multiplier of IS 456:2000 clause 39.4 is conditional on the prescribed helical detailing, including volumetric ratio, pitch and anchorage. Without those checks the credit cannot be claimed.</p>",
             "sources": [
               {
@@ -1258,9 +2616,9 @@
             ]
           },
           {
-            "id": "footing-shear-not-by-transverse-bars",
+            "id": "caution-footing-shear-not-by-transverse-bars",
             "status": "corrected",
-            "prompt": "In foundation design, shear is resisted by transverse bars",
+            "prompt": "In foundation design, the shear is resisted by transverse bars",
             "html": "<p>This confuses the flexural mesh with shear reinforcement. Footing bottom bars resist bending; one-way and punching shear are resisted by adequate depth and concrete shear strength, or by specifically detailed and anchored shear reinforcement.</p>",
             "sources": [
               {
@@ -1270,10 +2628,10 @@
             ]
           },
           {
-            "id": "prestress-loss-range-approximate",
+            "id": "caution-prestress-loss-range-approximate",
             "status": "review",
-            "prompt": "Total prestress loss is approximately 15–25% of the initial prestress",
-            "html": "<p>Treat the range only as an approximate indication, not a universal requirement. Actual losses depend on the prestressing method, materials and time, and must be calculated for the member rather than assumed.</p>",
+            "prompt": "Total loss in prestressed concrete is approximately 15–25% of the initial prestress",
+            "html": "<p>Treat the range only as an approximate indication, not a universal requirement. Actual losses depend on the prestressing method, materials and time, and are calculated for the member rather than assumed.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00132",
@@ -1282,9 +2640,9 @@
             ]
           },
           {
-            "id": "column-steel-not-limited-to-2-percent",
+            "id": "caution-column-steel-not-limited-to-2-percent",
             "status": "corrected",
-            "prompt": "The maximum rebar in a compression member in practice is 2%",
+            "prompt": "The maximum percentage of rebar in a compression member in practice is 2%",
             "html": "<p>Unsupported, and it conflicts with the capsule's own 4% statement. IS 456:2000 clause 26.5.3.1(a) gives ordinary bounds of 0.8–6% of gross area, with a usual 4% where bars are lapped; 2% is not a universal upper limit.</p>",
             "sources": [
               {
@@ -1295,7 +2653,7 @@
           }
         ],
         "gaps": [
-          "Axial-load capacity formulas for short columns, minimum eccentricity and axial load with bending interaction are not covered by these capsule items.",
+          "Axial-load capacity formulas for short columns, minimum eccentricity and the interaction of axial load with bending are not covered by these capsule items.",
           "Tie diameter and pitch rules, effective-length factors and the slenderness limit separating short and long columns are not given.",
           "Bearing-pressure distribution under moment, critical sections for bending and shear, and design shear strengths of footings are not covered.",
           "Calculation of individual prestress losses, permissible stresses at transfer and service, and anchorage-zone design are not covered."
@@ -1304,12 +2662,48 @@
       "ACiE0505": {
         "code": "ACiE0505",
         "questionCount": 23,
-        "formulaSheet": "<p><strong>Working-stress check:</strong> calculated service stress ≤ permissible stress; with a stated factor of safety, σ<sub>allow</sub> = f<sub>y</sub>/FS.</p><p><strong>Minimum edge distance (IS 800:2007 clause 10.2.4.2):</strong> 1.5d<sub>0</sub> for rolled or machine-flame-cut edges and 1.7d<sub>0</sub> for sheared or hand-flame-cut edges, with d<sub>0</sub> the hole diameter.</p><p><strong>Fillet welds:</strong> effective throat = K × size with a specified K; ideal equal-leg geometric throat = s cos(θ/2) for fusion-face angle θ; effective length ≥ 4 × size (clause 10.5.4.1).</p><p><strong>Welded battens:</strong> overlap ≥ 4t (clause 7.7.4.1).</p><p><strong>Lacing angle:</strong> angle to the longitudinal axis = 90° − angle to the transverse axis.</p><p><strong>Simply supported purlin under UDL:</strong> M<sub>max</sub> = wL<sup>2</sup>/8.</p><p><strong>Truss spacing cost model:</strong> T = A/s and P = Bs<sup>2</sup> give T = 2P at minimum total cost.</p><p><strong>45° load dispersion:</strong> effective width = bearing length + 2 × vertical depth, where spread is unobstructed on both sides.</p>",
+        "format": 2,
+        "summary": "<p>This subchapter covers steel design: working-stress checks, bolted and welded connections, built-up and tubular columns, roof trusses and purlins, and the local behaviour of beam webs under concentrated loads and shear. The capsule items test permissible stress, friction-grip versus bearing bolts, edge distances, fillet-weld orientation, throat and length, spot welding, long joints, laced and battened columns, lacing angles, batten overlap, purlin placement and moments, truss economy and span choice, and web crippling and buckling.</p>",
         "blocks": [
           {
             "id": "working-and-permissible-stress",
-            "title": "Working-stress checks: calculated stress versus permissible stress",
-            "html": "<p>Working-stress design compares two different stresses. The <strong>working (calculated) stress</strong> is the actual stress produced by service loads, that is, the demand. The <strong>permissible stress</strong> is its allowed upper bound, obtained by dividing a limiting material stress by a factor of safety. A check is satisfactory when the calculated stress does not exceed the permissible stress. The two are equal only when a member is fully utilized, not by definition, and both must be expressed in the same units.</p><p>For a ductile, yield-based tension check with a stipulated factor of 1.6, σ<sub>allow</sub> = f<sub>y</sub>/1.6. <em>Worked example.</em> With f<sub>y</sub> = 240 MPa, σ<sub>allow</sub> = 240/1.6 = 150 MPa, safely below yield; multiplying by the factor instead (384 MPa) would wrongly push the allowance above yield. The 1.6 is a supplied problem convention, not a universal current-code value, and other failure modes such as buckling can govern compression members.</p>",
+            "title": "Working-stress checks: calculated stress against permissible stress",
+            "html": "<p>Working-stress design compares two different stresses. The <em>working stress</em> is the stress actually calculated under service loads, that is, the demand. The <em>permissible stress</em> is the allowed upper bound for it, found by dividing a limiting material stress by a factor of safety.</p><p>A check is satisfactory when the calculated stress does not exceed the permissible limit. The two are equal only when a member is fully utilized, not by definition, and both must be expressed in the same units.</p><p>For a ductile, yield-based tension check the permissible stress sits below yield. Dividing by the factor of safety lowers the allowance; multiplying by it would push the allowance above yield, which defeats the purpose.</p><p>The factor used below is a supplied convention for the exercise, not a universal current-code value, and buckling or other failure modes can govern compression members.</p>",
+            "formulas": [
+              {
+                "label": "Permissible stress from yield",
+                "tex": "\\sigma_{\\text{allow}} = \\dfrac{f_y}{FS}",
+                "where": "<p>\\(FS\\) is the stated factor of safety.</p>"
+              },
+              {
+                "label": "Satisfactory working-stress check",
+                "tex": "\\sigma_{\\text{calc}} \\le \\sigma_{\\text{allow}}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: yield stress 240 MPa with a factor of 1.6",
+              "html": "<p>A tension check stipulates a factor of safety of 1.6 on a yield stress of 240 MPa.</p>\\[\\sigma_{\\text{allow}} = \\dfrac{240}{1.6} = 150\\ \\text{MPa}\\]<p>The allowance is safely below yield. Multiplying instead, \\(240 \\times 1.6 = 384\\ \\text{MPa}\\), would wrongly place it above yield.</p>"
+            },
+            "points": [
+              {
+                "html": "With a stipulated factor of 1.6 on a 240 MPa yield stress, the permissible tensile stress is 150 MPa, below yield.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00099",
+                    "label": "p. 18; topic 4 point 99"
+                  }
+                ]
+              },
+              {
+                "html": "A working-stress check passes when the calculated stress does not exceed the permissible limit; the two are equal only at full utilization.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00072",
+                    "label": "p. 21; topic 5 point 70"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-04-00099",
@@ -1323,8 +2717,57 @@
           },
           {
             "id": "bolted-connections-bearing-and-friction",
-            "title": "Bolted connections: bearing-type versus friction-grip action and edge distances",
-            "html": "<p>High-strength bolts can transfer force in two ways. In a <strong>bearing-type</strong> connection the plates slip until the bolt shanks bear against the hole sides, and force passes by bolt shear and plate bearing. In a <strong>slip-resistant (friction-grip)</strong> connection the bolts are pretensioned to clamp the plates, and force passes by friction on the faying surfaces without slip at the design limit state. Which mechanism applies is fixed by the specified pretension, surface preparation and design method; the bolt's high strength or head shape does not by itself make a joint slip-resistant.</p><p>Under repeated load reversal, a bearing joint could slip back and forth through its hole clearance. <strong>Pretensioned high-strength friction-grip bolts</strong> with suitable faying surfaces directly prevent that slip, provided installation tension, hole details and the slip-resistance limit state are all controlled.</p><p>Holes also need enough surrounding material. IS 800:2007 clause 10.2.4.2 sets the minimum edge distance, measured from the hole centre to the edge, at <strong>1.5 times the hole diameter</strong> for rolled or machine-flame-cut edges and <strong>1.7 times</strong> for sheared or hand-flame-cut edges. For a 22 mm hole beside a rolled edge this is 1.5 × 22 = 33 mm; a sheared edge would need 1.7 × 22 = 37.4 mm.</p>",
+            "title": "Bolted connections: bearing and friction-grip action, and edge distances",
+            "html": "<p>High-strength bolts can carry load in two distinct ways:</p><ul><li><em>Bearing type</em>: the plates slip until the bolt shanks bear on the sides of the holes, and force passes by bolt shear and plate bearing.</li><li><em>Slip-resistant or friction-grip type</em>: the bolts are pretensioned to clamp the plies together, and force passes by friction on the faying surfaces without slip at the design limit state.</li></ul><p>Which mechanism a joint uses is set by its specified pretension, the preparation of its faying surfaces and the design mechanism chosen. The high strength of the bolt material, or the shape of its head, does not by itself make a joint slip-resistant.</p><p>Under repeated reversal of load, a bearing joint can shuffle back and forth through its hole clearance. Pretensioned high-strength friction-grip bolts with suitable faying surfaces stop that slip, provided installation tension, hole details and the slip-resistance limit state are all controlled.</p><p>Holes also need enough surrounding metal. IS 800:2007 clause 10.2.4.2 sets the minimum edge distance, measured from the hole centre, as a multiple of the hole diameter that depends on how the edge was made.</p>",
+            "formulas": [
+              {
+                "label": "Edge distance, rolled or machine-flame-cut edge",
+                "tex": "e_{\\min} = 1.5\\,d_0"
+              },
+              {
+                "label": "Edge distance, sheared or hand-flame-cut edge",
+                "tex": "e_{\\min} = 1.7\\,d_0",
+                "where": "<p>\\(d_0\\) is the hole diameter; distances run from the hole centre to the edge.</p>"
+              },
+              {
+                "label": "Friction transfer in principle",
+                "tex": "V_{\\text{slip}} \\propto \\mu\\,n_e\\,F_0",
+                "where": "<p>\\(\\mu\\) is the slip factor of the faying surfaces, \\(n_e\\) the number of effective interfaces and \\(F_0\\) the bolt pretension; code expressions add further factors.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: edge distance for a 22 mm hole",
+              "html": "<ol><li>Rolled or machine-flame-cut edge: \\(1.5 \\times 22 = 33\\ \\text{mm}\\).</li><li>Sheared or hand-flame-cut edge: \\(1.7 \\times 22 = 37.4\\ \\text{mm}\\).</li></ol><p>Both distances run from the centre of the hole to the edge of the plate.</p>"
+            },
+            "points": [
+              {
+                "html": "Where slip must be prevented under repeated load reversal, pretensioned high-strength friction-grip bolts with suitable faying surfaces address it most directly.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00078",
+                    "label": "p. 21; topic 5 point 77"
+                  }
+                ]
+              },
+              {
+                "html": "Whether a high-strength bolted joint acts by friction grip or bearing depends on the specified pretension, surface preparation and design mechanism, not on bolt strength alone.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00103",
+                    "label": "p. 22; topic 5 point 102"
+                  }
+                ]
+              },
+              {
+                "html": "Beside a rolled or machine-flame-cut edge, a 22 mm hole needs a minimum edge distance of 1.5 × 22 = 33.0 mm.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00079",
+                    "label": "p. 21; topic 5 point 79"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00078",
@@ -1343,7 +2786,55 @@
           {
             "id": "fillet-weld-geometry",
             "title": "Fillet welds: orientation, effective throat and minimum effective length",
-            "html": "<p>A fillet weld is described by its orientation to the load. A <strong>side (longitudinal) fillet</strong> runs along the edge of a lap plate parallel to the applied force, while an <strong>end (transverse) fillet</strong> runs perpendicular to it. Orientation describes the geometry of load transfer, not by itself the design resistance.</p><p>Weld strength is calculated on the <strong>effective throat</strong>. A design calculation takes the throat as K × weld size with a specified coefficient K. With a specified K = 0.70 for a 70° angle between the fusion faces, an 8 mm weld has a throat of 0.70 × 8 = 5.6 mm. The exact geometric throat of an ideal equal-leg triangular weld is different: s cos(θ/2) = 8 cos 35° ≈ 6.55 mm. The design coefficient and the geometric ratio are not the same quantity, and the applicable code value must be verified before use.</p><p>IS 800:2007 clause 10.5.4.1 requires the <strong>effective length</strong> of a fillet weld to be at least <strong>four times the weld size</strong>. A 6 mm weld therefore needs at least 4 × 6 = 24 mm of effective full-size length, so 20 mm is insufficient. Deposited length and end allowances must not be confused with effective full-size length.</p>",
+            "html": "<p>A fillet weld is named by the direction of its axis relative to the load. A <em>side</em> or <em>longitudinal</em> fillet lies along the lapped plate's edge with its axis parallel to the force; an <em>end</em> or <em>transverse</em> fillet lies across the force. Orientation describes how load is transferred, not by itself how much the weld can resist.</p><p>Weld strength is worked out on the <em>effective throat</em>. A design calculation takes the throat as a coefficient \\(K\\) times the weld size, using the value of \\(K\\) that its governing provision specifies for the angle between the fusion faces.</p><p>That coefficient differs from the pure geometry of an ideal equal-leg weld, whose throat is \\(s\\cos(\\theta/2)\\). The two figures are different quantities, and the applicable code value must be verified before use.</p><p>IS 800:2007 clause 10.5.4.1 also requires the effective length of a fillet weld to be at least four times its size. Deposited length and end allowances must not be confused with effective full-size length.</p>",
+            "formulas": [
+              {
+                "label": "Effective throat with a specified coefficient",
+                "tex": "t_e = K\\,s"
+              },
+              {
+                "label": "Geometric throat of an ideal equal-leg weld",
+                "tex": "t_g = s\\cos\\dfrac{\\theta}{2}",
+                "where": "<p>\\(s\\) is the weld size and \\(\\theta\\) the angle between the fusion faces.</p>"
+              },
+              {
+                "label": "Minimum effective length",
+                "tex": "L_{\\text{eff}} \\ge 4\\,s"
+              }
+            ],
+            "example": {
+              "title": "Worked examples: throat and length checks",
+              "html": "<ol><li>A specified \\(K = 0.70\\) with an 8 mm weld: \\(t_e = 0.70 \\times 8 = 5.6\\ \\text{mm}\\).</li><li>Ideal geometry at 70°: \\(8\\cos 35^\\circ \\approx 6.55\\ \\text{mm}\\), a different quantity.</li><li>A 6 mm weld needs \\(4 \\times 6 = 24\\ \\text{mm}\\) of effective length, so 20 mm fails.</li></ol>"
+            },
+            "points": [
+              {
+                "html": "A fillet weld whose axis runs parallel to the applied force, along a lap plate's edge, is a side or longitudinal fillet weld.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00076",
+                    "label": "p. 21; topic 5 point 75"
+                  }
+                ]
+              },
+              {
+                "html": "With a specified throat coefficient of 0.70, an 8 mm fillet weld has an effective throat of 5.6 mm; ideal geometry would give about 6.55 mm.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00115",
+                    "label": "p. 22; topic 5 point 114"
+                  }
+                ]
+              },
+              {
+                "html": "A 6 mm fillet weld with only 20 mm of effective length fails, because at least 24 mm, four times the size, is required.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00080",
+                    "label": "p. 21; topic 5 point 80"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00076",
@@ -1360,9 +2851,29 @@
             ]
           },
           {
-            "id": "weld-processes-and-long-joints",
-            "title": "Spot welding of thin sheets and the behaviour of long welded lap joints",
-            "html": "<p><strong>Resistance spot welding</strong> joins overlapping thin sheets by pressing them between electrodes and passing an electric current, so that local resistance heating forms discrete weld nuggets at the interface. It is selected for suitable sheet thicknesses and access, not simply because two plates lie one over the other; groove (butt) welds, arc fillet welds and continuous submerged-arc seam welds are different processes.</p><p>A simple capacity estimate for a lap joint multiplies the throat area by a uniform design stress along the whole weld. In a <strong>long end-loaded joint</strong> this can overestimate capacity, because the connected parts deform differently along the overlap and load transfer concentrates near the ends of the weld. Long-joint provisions account for this reduced effectiveness. The effect does not mean that total capacity falls with every increase in length, and no universal failure threshold expressed as a fixed multiple of plate thickness should be assumed without the actual governing provision.</p>",
+            "id": "spot-welding-and-long-joints",
+            "title": "Resistance spot welding of thin sheets and the behaviour of long welded lap joints",
+            "html": "<p><em>Resistance spot welding</em> joins overlapping thin sheets. Electrodes clamp the sheets and pass a current, and the electrical resistance at the interface heats the metal locally until a discrete weld nugget forms. The process is chosen to suit sheet thickness, access and the connection required; two plates lying one over the other do not by themselves dictate it.</p><p>Butt welds in a prepared groove, arc-welded fillets and continuous submerged-arc seams are different processes.</p><p>A simple estimate of a lap joint's capacity multiplies the throat area of the weld by a uniform design stress along its whole length. In a long end-loaded joint that overestimates the capacity: the connected parts strain differently along the overlap, so load transfer concentrates near the ends of the weld.</p><p>Long-joint provisions reduce the effectiveness to allow for this. The effect does not mean that capacity falls with every added millimetre of weld, and no fixed multiple of plate thickness should be assumed as a universal failure threshold without the governing provision.</p>",
+            "points": [
+              {
+                "html": "Pressing overlapping thin sheets between electrodes and fusing them by local electrical-resistance heating is resistance spot welding.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00073",
+                    "label": "p. 21; topic 5 point 72"
+                  }
+                ]
+              },
+              {
+                "html": "In a long end-loaded welded lap joint, load transfer along the weld length can be nonuniform, so a uniform-stress throat-area estimate may need reducing.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00134",
+                    "label": "p. 23; topic 5 point 134"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00073",
@@ -1376,16 +2887,69 @@
           },
           {
             "id": "laced-and-battened-columns",
-            "title": "Laced and battened built-up columns: effective slenderness, lacing angle and overlap",
-            "html": "<p>A built-up column joins two or more main components with <strong>lacing</strong> (inclined bars) or <strong>battens</strong> (plates) so that they act as one member. The connecting system is not rigid in shear, so shear deformation adds to the buckling deflection and the column behaves as if it were more slender. One stated design model multiplies the actual maximum slenderness by <strong>1.05 for lacing</strong> and <strong>1.10 for battens</strong>. For slenderness 100 these give 105 and 110, so in an otherwise comparable model the battened column has the lower calculated compression resistance. Different sections, details or failure modes prevent a universal ranking of real columns.</p><p>Lacing inclination is specified relative to the <strong>longitudinal axis</strong> of the column. If a specification asks for 40–70° and a bar makes 55° with the transverse axis in the same plane, its angle to the longitudinal axis is the complement, 90° − 55° = 35°, which is below the minimum. Measuring from the wrong axis would wrongly accept the detail.</p><p>Welded batten plates must overlap the main members by <strong>not less than 4t</strong>, where t is the batten-plate thickness (IS 800:2007 clause 7.7.4.1). An 8 mm plate needs at least 4 × 8 = 32 mm; exactly 32 mm satisfies this bound, and the weld strength and other connection dimensions are checked separately.</p>",
-            "sources": [
+            "title": "Laced and battened columns: effective slenderness, lacing angle and batten overlap",
+            "html": "<p>A built-up column joins two or more main components with <em>lacing</em> (inclined bars) or <em>battens</em> (plates) so that they act as one member. The connecting system is not rigid in shear, so shear deformation adds to the buckling deflection and the column behaves as if it were more slender than its geometry suggests.</p><p>One stated design model allows for this by multiplying the actual maximum slenderness by 1.05 for lacing and 1.10 for battens. In an otherwise comparable model the battened column then has the higher effective slenderness and the lower calculated compression resistance. Different sections, details or failure modes prevent a universal ranking of real columns.</p><p>Lacing inclination is specified from the column's longitudinal axis, so an angle measured from the transverse axis must first be converted to its complement.</p><p>Welded batten plates must overlap the main members by not less than \\(4t\\), where \\(t\\) is the batten-plate thickness (IS 800:2007 clause 7.7.4.1). Meeting the bound exactly satisfies it; the weld strength and other dimensions are checked separately.</p>",
+            "formulas": [
               {
-                "id": "CAP4-05-00048",
-                "label": "p. 20; topic 5 point 47"
+                "label": "Effective slenderness of a laced column",
+                "tex": "\\lambda_e = 1.05\\,\\lambda"
               },
+              {
+                "label": "Effective slenderness of a battened column",
+                "tex": "\\lambda_e = 1.10\\,\\lambda",
+                "where": "<p>\\(\\lambda\\) is the actual maximum slenderness; both multipliers belong to the stated model.</p>"
+              },
+              {
+                "label": "Lacing angle from the longitudinal axis",
+                "tex": "\\alpha_L = 90^\\circ - \\alpha_T",
+                "where": "<p>\\(\\alpha_T\\) is the acute angle to the transverse axis in the same plane.</p>"
+              },
+              {
+                "label": "Minimum overlap of a welded batten",
+                "tex": "\\text{overlap} \\ge 4\\,t"
+              }
+            ],
+            "example": {
+              "title": "Worked examples: slenderness, lacing angle and overlap",
+              "html": "<ol><li>Actual slenderness 100: laced \\(1.05 \\times 100 = 105\\), battened \\(1.10 \\times 100 = 110\\).</li><li>A lacing bar at 55° to the transverse axis makes \\(90^\\circ - 55^\\circ = 35^\\circ\\) with the longitudinal axis, below a specified 40–70° range.</li><li>An 8 mm batten plate needs an overlap of at least \\(4 \\times 8 = 32\\ \\text{mm}\\).</li></ol>"
+            },
+            "points": [
+              {
+                "html": "With stated multipliers of 1.05 for lacing and 1.10 for battens, an actual slenderness of 100 becomes 105 laced and 110 battened.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00067",
+                    "label": "pp. 21, 22; topic 5 point 65; topic 5 point 113"
+                  }
+                ]
+              },
+              {
+                "html": "A lacing bar at 55° to the transverse axis lies at 35 degrees to the longitudinal axis, below the specified 40° minimum of a 40–70° range.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00048",
+                    "label": "p. 20; topic 5 point 47"
+                  }
+                ]
+              },
+              {
+                "html": "A welded batten plate 8 mm thick needs an overlap of not less than 4t, that is 32 mm, with the main member.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00071",
+                    "label": "p. 21; topic 5 point 69; topic 5 point 78"
+                  }
+                ]
+              }
+            ],
+            "sources": [
               {
                 "id": "CAP4-05-00067",
                 "label": "pp. 21, 22; topic 5 point 65; topic 5 point 113"
+              },
+              {
+                "id": "CAP4-05-00048",
+                "label": "p. 20; topic 5 point 47"
               },
               {
                 "id": "CAP4-05-00071",
@@ -1395,8 +2959,39 @@
           },
           {
             "id": "tubular-sections-for-columns",
-            "title": "Tubular sections: efficient buckling resistance about several axes",
-            "html": "<p>A column's buckling resistance depends on the radius of gyration r = √(I/A) about each axis on which it can buckle, because slenderness is the effective length divided by r. A <strong>tubular section</strong> spreads its material away from the centroid in every direction, so it provides <strong>favourable radii of gyration about all axes</strong>. That makes it efficient for a column that could buckle about different axes, whereas an open section such as an I-section is much stiffer about one axis than the other.</p><p>Structural efficiency is not the same as economy. Whether a tube is the cheapest section depends on local wall slenderness, the complexity of its connections, fabrication cost, corrosion protection and the loading. High torsional stiffness does not replace the flexural-buckling checks, and gross area alone does not determine column resistance.</p>",
+            "title": "Tubular sections: efficient buckling resistance about every axis",
+            "html": "<p>A column's buckling resistance about any axis depends on its slenderness: the effective length divided by the radius of gyration \\(r\\) about that axis. A larger \\(r\\) for the same area means a less slender, stronger column.</p><p>A <em>tubular section</em> places its material far from the centroid in every direction, so it can provide favourable radii of gyration about both principal axes. That suits a column that could buckle about different axes. An open section such as an I-section is much stiffer about its major axis than its minor axis, and the weaker axis then governs.</p><p>Structural efficiency is not the same as economy. Whether a tube is the cheapest choice depends on the local slenderness of its wall, the complexity of its connections, fabrication, corrosion protection and the loading. High torsional stiffness does not replace the flexural-buckling checks, and gross area alone does not fix column resistance.</p>",
+            "formulas": [
+              {
+                "label": "Radius of gyration",
+                "tex": "r = \\sqrt{\\dfrac{I}{A}}"
+              },
+              {
+                "label": "Slenderness",
+                "tex": "\\lambda = \\dfrac{K L}{r}",
+                "where": "<p>\\(KL\\) is the effective length for the end conditions considered.</p>"
+              },
+              {
+                "label": "Circular hollow section",
+                "tex": "r = \\dfrac{\\sqrt{D^2 + d^2}}{4}",
+                "where": "<p>\\(D\\) and \\(d\\) are the outer and inner diameters; a solid round has \\(r = D/4\\).</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a tube against a solid bar of equal area",
+              "html": "<p>A tube of 100 mm outer and 90 mm inner diameter has an area of about 1492 mm², and</p>\\[r = \\dfrac{\\sqrt{100^2 + 90^2}}{4} \\approx 33.6\\ \\text{mm}\\]<p>A solid round of the same area is about 43.6 mm across, so \\(r \\approx 10.9\\ \\text{mm}\\). With the same material, the tube's radius of gyration is about three times larger.</p>"
+            },
+            "points": [
+              {
+                "html": "A tubular section can provide favourable radii of gyration in both directions, so it resists buckling efficiently about different axes, though it is not universally the most economical.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00068",
+                    "label": "p. 21; topic 5 point 66"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00068",
@@ -1406,8 +3001,47 @@
           },
           {
             "id": "purlins-and-rafter-actions",
-            "title": "Purlin placement, rafter actions and purlin bending moment",
-            "html": "<p>An ideal pin-jointed truss carries only axial forces because its loads are applied at the joints. Roof loads reach the truss through the purlins, so purlins are preferably placed at the <strong>panel points</strong> of the top chord (principal rafter). If a purlin sits between joints, its transverse force also bends the chord segment; a chord in compression then acts as a <strong>beam-column</strong> and must be designed for <strong>axial compression plus local bending</strong>. Even with joint loading, eccentric connections, member continuity and lateral restraint of the chord need attention, and wind uplift can reverse the chord forces.</p><p>The purlin itself spans between trusses as a bending member. In a stated simply supported model under full-span UDL, <strong>M<sub>max</sub> = wL<sup>2</sup>/8</strong>; for w = 2 kN/m over 4 m this is 2 × 4<sup>2</sup>/8 = 4.0 kN m. A different coefficient, such as one-tenth, reflects continuity and loading assumptions and cannot be used without them. On a sloping roof the load has components in two planes, so real purlins may need bending checks about both axes.</p>",
+            "title": "Purlin placement, rafter actions and the purlin bending moment",
+            "html": "<p>An ideal pin-jointed truss carries only axial forces because its loads arrive at the joints. Roof loads reach the truss through the purlins, so purlins are preferably placed at the panel points of the top chord, the principal rafter. Each chord member then remains a two-force member.</p><p>If a purlin sits between joints, its transverse force also bends the chord segment. A chord in compression then acts as a <em>beam-column</em> and must be designed for axial compression plus local bending. Even with joint loading, eccentric connections, member continuity and lateral restraint of the chord need attention, and wind uplift can reverse the chord forces.</p><p>The purlin itself spans between trusses as a bending member. A moment coefficient other than the simply supported one reflects continuity and loading assumptions and cannot be used without them. On a sloping roof the load has components in two planes, so real purlins may need bending checks about both axes.</p>",
+            "formulas": [
+              {
+                "label": "Simply supported purlin under full-span UDL",
+                "tex": "M_{\\max} = \\dfrac{w L^2}{8}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 4 m purlin",
+              "html": "<p>Treat the purlin as simply supported over 4 m, loaded by 2 kN/m in a single plane:</p>\\[M_{\\max} = \\dfrac{2 \\times 4^2}{8} = 4.0\\ \\text{kN m}\\]<p>A smaller coefficient such as one-tenth would need its own continuity and loading assumptions before it could be used.</p>"
+            },
+            "points": [
+              {
+                "html": "A purlin placed mid-panel on a compression top chord makes that chord carry axial compression plus local bending, so it is designed as a beam-column.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00086",
+                    "label": "p. 21; topic 5 point 86"
+                  }
+                ]
+              },
+              {
+                "html": "Purlins sit at top-chord panel joints to introduce roof loads at the joints and avoid local chord bending in the ideal truss model.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00096",
+                    "label": "p. 22; topic 5 point 95"
+                  }
+                ]
+              },
+              {
+                "html": "A simply supported 4 m purlin carrying 2 kN/m has a maximum moment of \\(wL^2/8 = 4.0\\) kN m.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00112",
+                    "label": "p. 22; topic 5 point 110"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00086",
@@ -1424,9 +3058,44 @@
             ]
           },
           {
-            "id": "truss-spacing-economy-and-span-selection",
+            "id": "truss-spacing-economy-and-span-choice",
             "title": "Truss spacing for minimum cost and choosing a truss for a given span",
-            "html": "<p>For a fixed roof area, placing trusses closer together increases their number but shortens the purlin spans. A simple illustrative cost model takes the total truss cost as T = A/s and the purlin cost as P = Bs<sup>2</sup>, with A and B positive constants and s the truss spacing. Minimizing T + P gives d(T + P)/ds = −A/s<sup>2</sup> + 2Bs = 0, so A/s = 2Bs<sup>2</sup>, that is <strong>T = 2P</strong>. The second derivative 2A/s<sup>3</sup> + 2B is positive, confirming a minimum. The ratio 2 follows from these assumed cost laws; it is not a universal roof-design requirement.</p><p>The same caution applies to span limits. A truss carries major loads through an arrangement of axial-force members and can be designed for many spans. For a 32 m pedestrian crossing, a steel truss should be chosen on the basis of structural, loading, erection and economic checks. A figure such as 32 m may belong to a particular standardized rural bridge system; it is not an upper limit of the structural form, and a span below a remembered number does not by itself approve a design.</p>",
+            "html": "<p>For a fixed roof area, placing trusses closer together increases their number but shortens the purlin spans. Suppose the combined cost of the trusses varies inversely with their spacing \\(s\\), while the purlin cost grows with the square of the spacing. Minimizing the sum then fixes a definite ratio between the two costs.</p><p>That ratio of 2 follows from the assumed cost laws alone. It is not a universal roof-design requirement, and a different cost model gives a different ratio.</p><p>The same caution applies to span limits. A truss carries its main loads through an arrangement of axial-force members and can be designed for many spans. For a 32 m pedestrian crossing, a steel truss should be chosen from structural, loading, erection and economic checks.</p><p>A figure such as 32 m may belong to a particular standardized rural bridge system. It is not an upper limit of the structural form, and a span below a remembered number does not by itself approve a design.</p>",
+            "formulas": [
+              {
+                "label": "Illustrative cost model",
+                "tex": "T = \\dfrac{A}{s}, \\qquad P = B\\,s^2",
+                "where": "<p>\\(A\\) and \\(B\\) are positive constants and \\(s\\) the truss spacing.</p>"
+              },
+              {
+                "label": "Condition for minimum total cost",
+                "tex": "\\dfrac{d(T + P)}{ds} = -\\dfrac{A}{s^2} + 2Bs = 0"
+              }
+            ],
+            "example": {
+              "title": "Worked derivation: the cost ratio",
+              "html": "<ol><li>Setting the derivative to zero gives \\(A/s^2 = 2Bs\\).</li><li>Multiplying by \\(s\\): \\(A/s = 2Bs^2\\), that is \\(T = 2P\\).</li><li>The second derivative, \\(2A/s^3 + 2B\\), is positive, so this is a minimum.</li></ol><p>At the economical spacing the trusses cost twice as much as the purlins, so \\(T/P = 2\\).</p>"
+            },
+            "points": [
+              {
+                "html": "With an inverse-spacing truss cost and a square-spacing purlin cost, minimum total cost occurs when truss cost is twice purlin cost, a ratio of 2.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00012",
+                    "label": "p. 20; topic 5 point 12"
+                  }
+                ]
+              },
+              {
+                "html": "For a 32 m pedestrian crossing, select a steel truss from structural, loading, erection and economic checks, not from a remembered 32 m limit.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00175",
+                    "label": "p. 42; rural point 3"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00012",
@@ -1441,7 +3110,56 @@
           {
             "id": "beam-webs-under-concentrated-loads-and-shear",
             "title": "Steel beam webs: crippling, local buckling, shear buckling and load dispersion",
-            "html": "<p>A concentrated load or reaction entering a beam over a short bearing length creates high local compressive stress where the force spreads from the flange into the web. Two local failures are distinguished:</p><ul><li><strong>Web crippling</strong> (local yielding or crushing): the web material next to the load fails in compression.</li><li><strong>Local web buckling</strong>: a slender web bows out of plane under the local compression before a full plastic crushing state is reached.</li></ul><p>A third instability occurs away from concentrated loads: <strong>shear buckling</strong> of a deep, slender web panel, driven by the diagonal principal compression that accompanies in-plane shear. 'Web buckling' without a stated load case is therefore incomplete. None of these is lateral-torsional buckling of the whole span or tensile yielding of a flange. Bearing stiffeners and adequate web geometry provide a stable load path.</p><p>Local checks assume that the load spreads through the flange and web at a dispersion angle. <em>Worked example (45° idealization).</em> At 45° the horizontal spread equals the vertical travel, so with a vertical depth of 120 mm and unobstructed spread on both sides of an 80 mm bearing length, the effective width is 80 + 2 × 120 = 320 mm. Nearness to the end of the beam truncates the spread, and code checks use their own specified geometry.</p>",
+            "html": "<p>A concentrated load or reaction entering a beam over a short bearing length creates high local compressive stress where the force spreads from the flange into the web. Two local failures are distinguished:</p><ul><li><em>Web crippling</em>: local yielding or crushing of the web material next to the load.</li><li><em>Local web buckling</em>: a slender web bows sideways under the local compression before its material is fully crushed.</li></ul><p>A third instability arises away from concentrated loads: <em>shear buckling</em> of a deep, slender web panel, driven by the diagonal compression that accompanies in-plane shear. 'Web buckling' without a stated load case is therefore incomplete.</p><p>None of these is lateral-torsional buckling of the whole span or tensile yielding of a flange. Bearing stiffeners and adequate web proportions provide a stable load path.</p><p>Local checks assume that the load spreads through the flange and web at some dispersion angle. At 45° the horizontal spread on each side equals the vertical travel, unless the end of the beam cuts it short.</p>",
+            "formulas": [
+              {
+                "label": "Spread width at 45 degrees on both sides",
+                "tex": "b_{\\text{eff}} = b + 2h",
+                "where": "<p>\\(b\\) is the bearing length and \\(h\\) the vertical depth through which the load spreads.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 45 degree spread",
+              "html": "<p>An 80 mm bearing length, a 120 mm spread depth and nothing cutting the spread short on either side:</p>\\[b_{\\text{eff}} = 80 + 2 \\times 120 = 320\\ \\text{mm}\\]<p>Code web-bearing, crippling and buckling checks use their own specified geometry, so this is an idealization, not a code rule.</p>"
+            },
+            "points": [
+              {
+                "html": "Crushing or crippling of the web under a heavy point reaction on a short bearing is web crippling at the load-introduction region.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00075",
+                    "label": "p. 21; topic 5 point 74"
+                  }
+                ]
+              },
+              {
+                "html": "A slender web bowing out of plane under local compression near a support reaction, before full crushing, indicates local web buckling.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00117",
+                    "label": "p. 22; topic 5 point 116"
+                  }
+                ]
+              },
+              {
+                "html": "In-plane shear in a deep slender web panel, away from bearing loads, causes shear buckling of the web panel, a separate check from local web buckling.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00118",
+                    "label": "p. 22; topic 5 point 116"
+                  }
+                ]
+              },
+              {
+                "html": "At 45° the load spreads sideways as far as it travels down, so an 80 mm bearing with 120 mm of depth gives an effective width of 320 mm.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00129",
+                    "label": "p. 23; topic 5 point 130; topic 5 point 135"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00075",
@@ -1462,12 +3180,70 @@
             ]
           }
         ],
+        "formulaSheet": [
+          {
+            "label": "Permissible stress from yield",
+            "tex": "\\sigma_{\\text{allow}} = \\dfrac{f_y}{FS}"
+          },
+          {
+            "label": "Working-stress check",
+            "tex": "\\sigma_{\\text{calc}} \\le \\sigma_{\\text{allow}}"
+          },
+          {
+            "label": "Minimum edge distance",
+            "tex": "e_{\\min} = 1.5\\,d_0 \\ \\text{or}\\ 1.7\\,d_0",
+            "note": "1.5 for rolled or machine-flame-cut edges, 1.7 for sheared or hand-flame-cut edges."
+          },
+          {
+            "label": "Effective throat",
+            "tex": "t_e = K\\,s",
+            "note": "K as specified by the governing provision."
+          },
+          {
+            "label": "Geometric throat, equal legs",
+            "tex": "t_g = s\\cos\\dfrac{\\theta}{2}"
+          },
+          {
+            "label": "Fillet weld effective length",
+            "tex": "L_{\\text{eff}} \\ge 4\\,s"
+          },
+          {
+            "label": "Welded batten overlap",
+            "tex": "\\text{overlap} \\ge 4\\,t"
+          },
+          {
+            "label": "Lacing angle",
+            "tex": "\\alpha_L = 90^\\circ - \\alpha_T"
+          },
+          {
+            "label": "Effective slenderness, stated model",
+            "tex": "\\lambda_e = 1.05\\,\\lambda \\ \\text{or}\\ 1.10\\,\\lambda",
+            "note": "Laced or battened respectively."
+          },
+          {
+            "label": "Radius of gyration and slenderness",
+            "tex": "r = \\sqrt{I/A}, \\qquad \\lambda = KL/r"
+          },
+          {
+            "label": "Simply supported purlin moment",
+            "tex": "M_{\\max} = \\dfrac{w L^2}{8}"
+          },
+          {
+            "label": "Economical truss spacing",
+            "tex": "T = 2P",
+            "note": "<p>Only for the model \\(T = A/s\\) and \\(P = Bs^2\\).</p>"
+          },
+          {
+            "label": "Load spread at 45 degrees",
+            "tex": "b_{\\text{eff}} = b + 2h"
+          }
+        ],
         "cautions": [
           {
-            "id": "permissible-stress-factor-supplied",
+            "id": "caution-permissible-stress-factor-supplied",
             "status": "review",
             "prompt": "The permissible stress is less than the yield stress",
-            "html": "<p>True for a ductile, yield-based working-stress check, where the permissible stress is yield stress divided by a factor of safety. The factor 1.6 used in the example is a supplied convention, not a certified current-code value for every material, member or design method.</p>",
+            "html": "<p>True for a ductile, yield-based working-stress check, where the permissible stress is the yield stress divided by a factor of safety. The factor 1.6 used in the example is a supplied convention, not a certified current-code value for every material, member or design method.</p>",
             "sources": [
               {
                 "id": "CAP4-04-00099",
@@ -1476,10 +3252,10 @@
             ]
           },
           {
-            "id": "truss-purlin-cost-ratio-model",
+            "id": "caution-truss-purlin-cost-ratio-model",
             "status": "review",
-            "prompt": "For minimum roof cost, truss cost should be twice the purlin cost",
-            "html": "<p>The ratio 2 follows only from an assumed cost model in which truss cost varies inversely with spacing and purlin cost with spacing squared. The capsule omits that model, so the ratio should not be presented as a general design rule.</p>",
+            "prompt": "To minimize roof cost, the ratio of truss cost to purlin cost shall be 2",
+            "html": "<p>The ratio 2 follows only from an assumed cost model in which truss cost varies inversely with spacing and purlin cost with the square of spacing. The capsule omits that model, so the ratio should not be presented as a general design rule.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00012",
@@ -1488,9 +3264,9 @@
             ]
           },
           {
-            "id": "lacing-angle-range-unverified",
+            "id": "caution-lacing-angle-range-unverified",
             "status": "review",
-            "prompt": "Lacing bars should preferably be inclined 40° to 70° to the column axis",
+            "prompt": "Lacing bars should preferably be inclined at 40° to 70° to the longitudinal axis of the column",
             "html": "<p>The 40–70° range is used here as an explicit specification. The exact text of IS 800:2007 clause 7.6.4 was not independently verified, so the range is not certified as a current universal requirement. In any case the angle is measured from the longitudinal axis.</p>",
             "sources": [
               {
@@ -1500,10 +3276,10 @@
             ]
           },
           {
-            "id": "laced-versus-battened-conditional",
+            "id": "caution-laced-versus-battened-conditional",
             "status": "review",
-            "prompt": "A laced column is stronger than a battened column for the same load",
-            "html": "<p>Replaced by a conditional comparison: with stated slenderness multipliers of 1.05 (laced) and 1.10 (battened), the battened column has the higher effective slenderness in an otherwise comparable model. The factors were not independently verified against IS 800:2007 clauses 7.6.1.5 and 7.7.1.4, and real columns cannot be ranked universally.</p>",
+            "prompt": "A laced column is stronger than a battened column for the same load and unsupported length",
+            "html": "<p>Replaced by a conditional comparison: with stated slenderness multipliers of 1.05 for lacing and 1.10 for battens, the battened column has the higher effective slenderness in an otherwise comparable model. The factors were not independently verified against IS 800:2007 clauses 7.6.1.5 and 7.7.1.4, and real columns cannot be ranked universally.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00067",
@@ -1512,9 +3288,9 @@
             ]
           },
           {
-            "id": "tubular-not-universally-economical",
+            "id": "caution-tubular-not-universally-economical",
             "status": "corrected",
-            "prompt": "The most economical section for a column is tubular",
+            "prompt": "The most economical section for a column is a tubular section",
             "html": "<p>The universal economy claim is not supported. A tube offers favourable radii of gyration about all axes, but economy also depends on local slenderness, connections, fabrication, corrosion protection and loading.</p>",
             "sources": [
               {
@@ -1524,10 +3300,10 @@
             ]
           },
           {
-            "id": "batten-overlap-not-less-than-4t",
+            "id": "caution-batten-overlap-not-less-than-4t",
             "status": "corrected",
             "prompt": "Welded batten plates should overlap the main members by more than 4t",
-            "html": "<p>'More than' should read 'not less than'. IS 800:2007 clause 7.7.4.1 sets the minimum overlap at 4t, so exactly 4t (32 mm for an 8 mm plate) satisfies it; the weld strength is a separate check.</p>",
+            "html": "<p>'More than' should read 'not less than'. IS 800:2007 clause 7.7.4.1 sets the minimum overlap at \\(4t\\), so exactly \\(4t\\), 32 mm for an 8 mm plate, satisfies it; the weld strength is a separate check.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00071",
@@ -1536,10 +3312,10 @@
             ]
           },
           {
-            "id": "permissible-is-not-working-stress",
+            "id": "caution-permissible-is-not-working-stress",
             "status": "corrected",
             "prompt": "Permissible stress in steel is taken as working stress",
-            "html": "<p>The two are different quantities. Working stress is the calculated stress under service loads (the demand), and permissible stress is its allowed upper bound; they coincide only when a member is fully utilized.</p>",
+            "html": "<p>The two are different quantities. Working stress is the calculated stress under service loads, the demand, and permissible stress is its allowed upper bound; they coincide only when a member is fully utilized.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00072",
@@ -1548,10 +3324,10 @@
             ]
           },
           {
-            "id": "purlin-moment-coefficient-unverified",
+            "id": "caution-purlin-moment-coefficient-unverified",
             "status": "review",
-            "prompt": "The maximum bending moment for purlin design can be taken as WL/10",
-            "html": "<p>The extracted text 'W10L' plausibly means WL/10, but its coefficient layout and support model are unverified. A fully specified simply supported model gives wL<sup>2</sup>/8; any other coefficient must come with its continuity and loading assumptions.</p>",
+            "prompt": "The maximum bending moment for design of purlins can be taken as W10L",
+            "html": "<p>The extracted text 'W10L' plausibly means WL/10, but its coefficient layout and support model are unverified. A fully specified simply supported model gives \\(wL^2/8\\); any other coefficient must come with its continuity and loading assumptions.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00112",
@@ -1560,10 +3336,10 @@
             ]
           },
           {
-            "id": "fillet-throat-coefficient-unverified",
+            "id": "caution-fillet-throat-coefficient-unverified",
             "status": "review",
-            "prompt": "For a 70° angle between fusion faces, the throat coefficient k is 0.7",
-            "html": "<p>K = 0.70 is used as an explicit calculation assumption; its IS 800:2007 Table 22 entry was not independently verified. It also differs from the ideal geometric ratio cos 35° ≈ 0.819, so actual design must use the verified applicable provision.</p>",
+            "prompt": "For a 70° angle between fusion faces, the fillet throat coefficient k is 0.7",
+            "html": "<p>\\(K = 0.70\\) is used as an explicit calculation assumption; its IS 800:2007 Table 22 entry was not independently verified. It also differs from the ideal geometric ratio \\(\\cos 35^\\circ \\approx 0.819\\), so actual design must use the verified applicable provision.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00115",
@@ -1572,10 +3348,10 @@
             ]
           },
           {
-            "id": "web-buckling-cause-incomplete",
+            "id": "caution-web-buckling-cause-incomplete",
             "status": "review",
-            "prompt": "Web buckling occurs in a beam due to excessive (source sentence incomplete)",
-            "html": "<p>The source sentence stops before naming the stress. Local web buckling under a concentrated load (local compression) and shear buckling of a web panel (in-plane shear) are different mechanisms, and the missing word should not be guessed.</p>",
+            "prompt": "Web buckling occurs in a beam due to excessive (the source sentence is incomplete)",
+            "html": "<p>The source sentence stops before naming the stress. Local web buckling under a concentrated load, driven by local compression, and shear buckling of a web panel, driven by in-plane shear, are different mechanisms, and the missing word should not be guessed.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00117",
@@ -1584,9 +3360,9 @@
             ]
           },
           {
-            "id": "dispersion-angle-provenance",
+            "id": "caution-dispersion-angle-provenance",
             "status": "review",
-            "prompt": "Concentrated load disperses at 45° from flange to web in web buckling",
+            "prompt": "The angle of dispersion of a concentrated load from flange to web in web buckling is 45°",
             "html": "<p>Used here only as an explicit 45° idealization for a calculation. No universal code dispersion rule or clause is asserted; the capsule statement's original source needs verification, and code web-bearing and buckling checks use their own geometry.</p>",
             "sources": [
               {
@@ -1596,10 +3372,10 @@
             ]
           },
           {
-            "id": "long-weld-16t-threshold-unsupported",
+            "id": "caution-long-weld-16t-threshold-unsupported",
             "status": "review",
-            "prompt": "Weld strength decreases significantly when weld length exceeds 16t",
-            "html": "<p>The 16t threshold and the meaning of t are unsupported. Long end-loaded joints can have non-uniform load transfer, which long-joint provisions address, but no replacement numerical threshold is given here; the intended provision needs checking.</p>",
+            "prompt": "The strength of a weld can significantly decrease when the weld length is greater than 16t",
+            "html": "<p>The 16t threshold and the meaning of t are unsupported. Long end-loaded joints can have nonuniform load transfer, which long-joint provisions address, but no replacement numerical threshold is given here; the intended provision needs checking.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00134",
@@ -1608,9 +3384,9 @@
             ]
           },
           {
-            "id": "truss-bridge-32-m-limit",
+            "id": "caution-truss-bridge-32-m-limit",
             "status": "review",
-            "prompt": "The truss bridge is preferred for spans up to 32 m",
+            "prompt": "The truss bridge is preferred for span range up to 32 m",
             "html": "<p>The 32 m range lacks a named trail-bridge catalogue and edition. It may apply to a particular standardized bridge system rather than to trusses in general, and its source should be verified before it is used as a design limit.</p>",
             "sources": [
               {
@@ -1630,12 +3406,24 @@
       "ACiE0506": {
         "code": "ACiE0506",
         "questionCount": 12,
-        "formulaSheet": "<p><strong>Solid timber column slenderness (IS 883:2016 clause 7.6.1.4):</strong> S/d ≤ 50 for pin-ended solid columns, with S the unsupported length and d the least lateral dimension.</p><p><strong>Eccentric compression, uncracked rectangular section:</strong> σ = (P/A)(1 ± 6e/t); both faces stay in compression while e ≤ t/6.</p><p><strong>Eccentric-load allowance (IS 1905:1987 clause 5.4.1.4):</strong> for e/t between 1/24 and 1/6, edge-stress allowance = 1.25 × the otherwise applicable compressive allowance.</p><p><strong>Tied cavity wall (exercise model):</strong> t<sub>eff</sub> = the larger of the stronger leaf's thickness and (2/3)(t<sub>1</sub> + t<sub>2</sub>).</p>",
+        "format": 2,
+        "summary": "<p>Timber and masonry structures covers Timber beams and columns; masonry design principles, mandatory rules of thumb and NBC; masonry properties and failure modes; mud, lime and cement mortars. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
         "blocks": [
           {
             "id": "timber-grain-direction",
             "title": "Timber strength depends on load direction relative to the grain",
-            "html": "<p>Timber is <strong>anisotropic</strong>: its long, aligned fibres make it stronger in some directions than in others. In direct compression, resistance <strong>parallel to the grain</strong>, where the fibres are loaded along their length, is generally greater than compression or bearing <strong>perpendicular to the grain</strong>, where the fibres are crushed sideways. A design value must therefore match both the direction of stress and the failure mode being checked.</p><p>High strength along the fibres does not imply high resistance to every other action. Splitting and longitudinal shear, which separate the fibres from one another, are governed by separate properties, so parallel-grain compression and longitudinal shear cannot share one strength value. Equal density does not make compressive strength independent of grain direction either. 'Strength is maximum parallel to the grain' is therefore a sound guide for direct compression, not a statement about every timber property.</p>",
+            "html": "<p>Timber is anisotropic: its long, aligned fibres make it stronger in some directions than in others. In direct compression, resistance parallel to the grain, where the fibres are loaded along their length, is generally greater than compression or bearing perpendicular to the grain, where the fibres are crushed sideways. A design value must therefore match both the direction of stress and the failure mode being checked.</p><p>High strength along the fibres does not imply high resistance to every other action. Splitting and longitudinal shear, which separate the fibres from one another, are governed by separate properties, so parallel-grain compression and longitudinal shear cannot share one strength value. Equal density does not make compressive strength independent of grain direction either. 'Strength is maximum parallel to the grain' is therefore a sound guide for direct compression, not a statement about every timber property.</p>",
+            "points": [
+              {
+                "html": "The key result is Parallel-grain compressive resistance is generally greater.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00083",
+                    "label": "p. 21; topic 5 point 83"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00083",
@@ -1646,8 +3434,41 @@
           {
             "id": "solid-timber-columns",
             "title": "Solid timber columns: the S/d limit and circular sections",
-            "html": "<p>IS 883:2016 expresses the slenderness of a solid timber column as <strong>S/d</strong>: the unsupported length divided by the <strong>least lateral dimension</strong> of the section, rather than length divided by radius of gyration. For pin-ended solid columns, clause 7.6.1.4 caps this ratio at <strong>50</strong>. Other end restraints need a suitably modified length, and capacity checks are still required below the cap.</p><p><em>Worked example.</em> A pin-ended post 3.6 m long with a 100 mm × 150 mm section has S/d = 3600/100 = 36, below 50. Using the larger dimension (3600/150 = 24) answers the wrong question. The least radius of gyration, 100/√12 ≈ 28.9 mm, would give L/r ≈ 124.7, which belongs to a different slenderness definition and must not be compared with the timber limit of 50.</p><p>Clause 7.6.1.5 of the same code limits the permissible load of a <strong>circular</strong> solid column: it must not exceed that of the corresponding <strong>square column of equal cross-sectional area</strong>. This is a timber-code rule, not a general rule for RC or steel columns, and it does not claim that equal-area circles and squares have identical radii of gyration.</p>",
+            "html": "<p>IS 883:2016 expresses the slenderness of a solid timber column as S/d: the unsupported length divided by the least lateral dimension of the section, rather than length divided by radius of gyration. For pin-ended solid columns, clause 7.6.1.4 caps this ratio at 50. Other end restraints need a suitably modified length, and capacity checks are still required below the cap.</p><p><em>Worked example.</em> A pin-ended post 3.6 m long with a 100 mm × 150 mm section has S/d = 3600/100 = 36, below 50. Using the larger dimension (3600/150 = 24) answers the wrong question. The least radius of gyration, 100/√12 ≈ 28.9 mm, would give L/r ≈ 124.7, which belongs to a different slenderness definition and must not be compared with the timber limit of 50.</p><p>Clause 7.6.1.5 of the same code limits the permissible load of a circular solid column: it must not exceed that of the corresponding square column of equal cross-sectional area. This is a timber-code rule, not a general rule for RC or steel columns, and it does not claim that equal-area circles and squares have identical radii of gyration.</p>",
+            "points": [
+              {
+                "html": "The key result is It must not exceed the square-column allowance.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00055",
+                    "label": "p. 21; topic 5 point 55"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is Unsupported length divided by least lateral dimension.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00093",
+                    "label": "p. 22; topic 5 point 92"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is 36. This is the reviewed topic result.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00094",
+                    "label": "p. 22; topic 5 point 92"
+                  }
+                ]
+              }
+            ],
             "sources": [
+              {
+                "id": "CAP4-05-00055",
+                "label": "p. 21; topic 5 point 55"
+              },
               {
                 "id": "CAP4-05-00093",
                 "label": "p. 22; topic 5 point 92"
@@ -1655,24 +3476,40 @@
               {
                 "id": "CAP4-05-00094",
                 "label": "p. 22; topic 5 point 92"
-              },
-              {
-                "id": "CAP4-05-00055",
-                "label": "p. 21; topic 5 point 55"
               }
             ]
           },
           {
             "id": "masonry-eccentric-compression",
             "title": "Masonry walls under eccentric vertical load",
-            "html": "<p>When a vertical load acts at eccentricity e from the centre of a wall of thickness t, the uncracked rectangular section carries a uniform stress plus bending. The elastic extreme stresses are <strong>σ = (P/A)(1 ± 6e/t)</strong>. Both faces remain in compression while 6e/t does not exceed 1, that is, while e stays within t/6 (the middle third of the thickness).</p><p><em>Worked example.</em> With an average stress of 0.60 MPa and e = t/24, 6e/t = 1/4, so the extreme stresses are 0.60 × 1.25 = 0.75 MPa and 0.60 × 0.75 = 0.45 MPa, both compressive.</p><p>Because bending concentrates stress at one face, <strong>IS 1905:1987 clause 5.4.1.4</strong> allows a higher edge-stress allowance when the eccentricity ratio e/t lies between <strong>1/24 and 1/6</strong>: the otherwise applicable compressive allowance may be increased by <strong>25%</strong>. For e/t = 1/12 and an applicable allowance of 0.80 MPa, the edge allowance becomes 1.25 × 0.80 = 1.00 MPa. The concession does not add capacity automatically: the actual extreme stress and all other applicable factors must still be checked. Likewise, a code permission to ignore a small bending contribution in one check does not make that bending physically zero.</p>",
+            "html": "<p>When a vertical load acts at eccentricity e from the centre of a wall of thickness t, the uncracked rectangular section carries a uniform stress plus bending. The elastic extreme stresses are σ = (P/A)(1 ± 6e/t). Both faces remain in compression while 6e/t does not exceed 1, that is, while e stays within t/6 (the middle third of the thickness).</p><p><em>Worked example.</em> With an average stress of 0.60 MPa and e = t/24, 6e/t = 1/4, so the extreme stresses are 0.60 × 1.25 = 0.75 MPa and 0.60 × 0.75 = 0.45 MPa, both compressive.</p><p>Because bending concentrates stress at one face, IS 1905:1987 clause 5.4.1.4 allows a higher edge-stress allowance when the eccentricity ratio e/t lies between 1/24 and 1/6: the otherwise applicable compressive allowance may be increased by 25%. For e/t = 1/12 and an applicable allowance of 0.80 MPa, the edge allowance becomes 1.25 × 0.80 = 1.00 MPa.</p><p>The concession does not add capacity automatically: the actual extreme stress and all other applicable factors must still be checked. Likewise, a code permission to ignore a small bending contribution in one check does not make that bending physically zero.</p>",
+            "points": [
+              {
+                "html": "The key result is 1.00 MPa.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00039",
+                    "label": "p. 16; topic 4 point 37"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is 0.75 MPa and 0.45 MPa, both compression.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00040",
+                    "label": "p. 16; topic 4 point 37"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
-                "id": "CAP4-04-00040",
+                "id": "CAP4-04-00039",
                 "label": "p. 16; topic 4 point 37"
               },
               {
-                "id": "CAP4-04-00039",
+                "id": "CAP4-04-00040",
                 "label": "p. 16; topic 4 point 37"
               }
             ]
@@ -1680,7 +3517,27 @@
           {
             "id": "cavity-walls-and-bed-joint-shear",
             "title": "Cavity-wall effective thickness and shear on mortar bed joints",
-            "html": "<p>A tied cavity wall has two leaves separated by a cavity, and a slenderness or stress check needs a single <strong>effective thickness</strong>. In the exercise model used here, the effective thickness is the larger of the stronger leaf's thickness and two-thirds of the sum of the two leaf thicknesses; the cavity width itself is not added. <em>Worked example.</em> For leaves of 150 mm and 100 mm, (2/3) × (150 + 100) = 166.7 mm, which exceeds 150 mm, so 166.7 mm governs. The rule that actually applies depends on the ties, loading, restraint and governing standard.</p><p>Horizontal shear along a mortar <strong>bed joint</strong> of unreinforced masonry is resisted by bond and friction. Normal compression across the joint increases the frictional resistance to sliding, so the shear a joint can carry depends on the vertical stress as well as on the mortar. A nominal mortar proportion such as 1:1:6 (cement:lime:sand) is therefore not enough, by itself, to fix one universal permissible shear stress, and mortar cube strength is not the joint shear strength; the value must come from the applicable masonry provision and its conditions.</p>",
+            "html": "<p>A tied cavity wall contains two leaves separated by a cavity. For the exercise model, a slenderness or stress check uses one effective thickness. In the exercise model used here, the selected thickness is whichever is greater: the stronger leaf or two-thirds of both leaf thicknesses combined. The empty cavity is excluded.</p><p><em>Worked example.</em> For leaves of 150 mm and 100 mm, (2/3) × (150 + 100) = 166.7 mm, which exceeds 150 mm, so 166.7 mm governs. The rule that actually applies depends on the ties, loading, restraint and governing standard.</p><p>Horizontal shear along a mortar bed joint of unreinforced masonry is resisted by bond and friction. Normal compression across the joint increases the frictional resistance to sliding, so the shear a joint can carry depends on the vertical stress as well as on the mortar.</p><p>A nominal mortar proportion such as 1:1:6 (cement:lime:sand) is therefore not enough, by itself, to fix one universal permissible shear stress, and mortar cube strength is not the joint shear strength; the value must come from the applicable masonry provision and its conditions.</p>",
+            "points": [
+              {
+                "html": "The key result is 166.7 mm.",
+                "sources": [
+                  {
+                    "id": "CAP4-01-00049",
+                    "label": "p. 3; topic 1 point 46"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is Applicable provisions and normal compression also affect resistance.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00028",
+                    "label": "p. 20; topic 5 point 27"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-01-00049",
@@ -1695,7 +3552,18 @@
           {
             "id": "lime-mortars-hydraulic-and-non-hydraulic",
             "title": "Lime mortars: hardening by hydration versus carbonation",
-            "html": "<p>Lime mortars harden by two different mechanisms. <strong>Non-hydraulic lime</strong> hardens mainly by <strong>carbonation</strong>, reacting slowly with carbon dioxide from the air, so its hardening depends on access to air. <strong>Hydraulic lime</strong> contains compounds that react with water (<strong>hydration</strong>), so it can set and harden in persistently damp conditions.</p><p>That is why hydraulic lime may be selected for a compatible masonry mortar that must harden in damp locations. It does not follow that every lime mortar is made with hydraulic lime: the lime type should suit the masonry units, the exposure and the required performance. Hardening is a chemical process in both cases rather than simple evaporation of water, and neither kind of lime makes mortar strength independent of the sand and of curing.</p>",
+            "html": "<p>Lime mortars harden by two different mechanisms. Non-hydraulic lime hardens mainly by carbonation, reacting slowly with carbon dioxide from the air, so its hardening depends on access to air. Hydraulic lime contains compounds that react with water (hydration), so it can set and harden in persistently damp conditions.</p><p>That is why hydraulic lime may be selected for a compatible masonry mortar that must harden in damp locations. It does not follow that every lime mortar is made with hydraulic lime: the lime type should suit the masonry units, the exposure and the required performance. Hardening is a chemical process in both cases rather than simple evaporation of water, and neither kind of lime makes mortar strength independent of the sand and of curing.</p>",
+            "points": [
+              {
+                "html": "The key result is Its hydraulic compounds can harden by reaction with water.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00116",
+                    "label": "p. 22; topic 5 point 115"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00116",
@@ -1706,19 +3574,48 @@
           {
             "id": "low-strength-masonry-bands-and-regulation",
             "title": "Low-strength masonry, gable bands and the Building Act versus the NBC",
-            "html": "<p>The Nepal National Building Code contains separate documents for different kinds of construction. <strong>NBC 203:2015</strong>, Guidelines for Earthquake Resistant Building Construction, addresses <strong>low-strength masonry</strong>, including mud-mortar construction within its stated scope and its height and configuration limits. It is not a general substitute for engineered seismic design or an RC detailing code, and a guideline does not apply beyond its scope limits.</p><p>Seismic bands tie the tops of masonry walls together. Where a masonry <strong>gable</strong> rises above the eaves-level band, a <strong>gable band</strong> runs along the <strong>sloping top edges</strong> of the gable and connects with the horizontal band and the roof anchorage, restraining the top of the gable masonry beneath the pitched roof. Calling it merely a 'roof-level band' confuses it with the horizontal eaves or roof band and misses this gable restraint.</p><p>Regulation has two layers. The <strong>Building Act</strong> and its implementation framework provide the legal basis, while the <strong>Nepal National Building Code</strong> organizes the technical provisions on building performance and construction. Approved drawings do not replace the applicable Act and NBC requirements, and a code title alone does not establish that a particular project complies.</p>",
+            "html": "<p>The Nepal National Building Code contains separate documents for different kinds of construction. NBC 203:2015, Guidelines for Earthquake Resistant Building Construction, addresses low-strength masonry, including mud-mortar construction within its stated scope and its height and configuration limits. It is not a general substitute for engineered seismic design or an RC detailing code, and a guideline does not apply beyond its scope limits.</p><p>Seismic bands tie the tops of masonry walls together. Where a masonry gable rises above the eaves-level band, a gable band runs along the sloping top edges of the gable and connects with the horizontal band and the roof anchorage, restraining the top of the gable masonry beneath the pitched roof. Calling it merely a 'roof-level band' confuses it with the horizontal eaves or roof band and misses this gable restraint.</p><p>Regulation has two layers. The Building Act and its implementation framework provide the legal basis, while the Nepal National Building Code organizes the technical provisions on building performance and construction. Approved drawings do not replace the applicable Act and NBC requirements, and a code title alone does not establish that a particular project complies.</p>",
+            "points": [
+              {
+                "html": "The key result is Low-strength masonry within its stated scope.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00084",
+                    "label": "p. 21; topic 5 point 84"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is The Act supplies a legal framework; the NBC supplies technical provisions.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00085",
+                    "label": "p. 21; topic 5 point 85"
+                  }
+                ]
+              },
+              {
+                "html": "The key result is Along the sloping top edges of the gable.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00105",
+                    "label": "p. 22; topic 5 point 104"
+                  }
+                ]
+              }
+            ],
             "sources": [
               {
                 "id": "CAP4-05-00084",
                 "label": "p. 21; topic 5 point 84"
               },
               {
-                "id": "CAP4-05-00105",
-                "label": "p. 22; topic 5 point 104"
-              },
-              {
                 "id": "CAP4-05-00085",
                 "label": "p. 21; topic 5 point 85"
+              },
+              {
+                "id": "CAP4-05-00105",
+                "label": "p. 22; topic 5 point 104"
               }
             ]
           }

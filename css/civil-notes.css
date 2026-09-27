@@ -188,3 +188,57 @@
     #civilSection .cn-caution { padding: 14px 12px; }
     #civilSection .cn-source-dialog { padding: 18px; }
 }
+/* Capsule notes: structured sections with typeset TeX formulas. */
+#civilSection .cn-v2 :is(.cn-summary, .cn-block, .cn-revision, .cn-checks, .cn-gaps) { max-width: 860px; margin-inline: auto; }
+#civilSection .cn-v2 .cn-prose { font-size: 16px; line-height: 1.75; }
+#civilSection .cn-v2 .cn-prose p { margin: 0 0 14px; }
+#civilSection .cn-v2 .cn-prose p:last-child { margin-bottom: 0; }
+#civilSection .cn-v2 .cn-prose :is(ul, ol) { margin: 12px 0; padding-left: 24px; }
+#civilSection .cn-v2 .cn-prose li { margin-block: 7px; }
+#civilSection .cn-v2 .cn-prose li::marker { color: var(--cs-teal); }
+#civilSection .cn-v2 .cn-prose em { font-style: italic; color: var(--cs-forest); }
+/* A scrolling inline-block would sit its bottom edge on the text baseline and lift the formula. */
+#civilSection #cvNotes [data-cn-math] mjx-container:not([display="true"]) { overflow: visible; }
+#civilSection .cn-v2 .cn-prose mjx-container[display="true"] { margin: 12px 0 !important; }
+#civilSection .cn-summary { margin: 22px auto 6px; padding: 18px 22px; border: 1px solid #d6e4d7; border-radius: 12px; background: #f6faf5; }
+#civilSection #cvNotes .cn-summary > h4 { margin: 0 0 8px; color: var(--cs-teal); font-size: 13px; letter-spacing: 0; }
+#civilSection .cn-summary-stats { margin: 12px 0 0; color: var(--cs-muted); font-size: 12px; }
+#civilSection #cvNotes .cn-v2 .cn-block > h4 { display: flex; justify-content: center; align-items: center; gap: 10px; margin: 0 0 18px; font-size: 19px; line-height: 1.35; }
+#civilSection .cn-num { flex: none; display: inline-grid; place-items: center; min-width: 28px; height: 28px; padding: 0 7px; border-radius: 14px; background: var(--cs-mint); color: var(--cs-teal); font: 600 12px/1 var(--cs-font); letter-spacing: 0; }
+#civilSection .cn-formulas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; margin: 20px 0; }
+#civilSection .cn-formula { min-width: 0; margin: 0; padding: 12px 16px 14px; border: 1px solid #d3e3d8; border-top: 3px solid var(--cs-teal); border-radius: 10px; background: #f7fbf8; }
+#civilSection .cn-formula > figcaption, #civilSection .cn-sheet-item > b { display: block; color: var(--cs-teal); font: 600 12px/1.45 var(--cs-font); }
+#civilSection .cn-formula-tex { min-width: 0; font-size: 17px; line-height: 1.4; }
+#civilSection .cn-formula-tex mjx-container[display="true"] { margin: 8px 0 4px !important; }
+#civilSection .cn-v2 .cn-formula-where, #civilSection .cn-v2 .cn-sheet-note { color: #40554b; font-size: 13.5px; line-height: 1.6; }
+#civilSection .cn-example { margin: 20px 0; padding: 16px 20px; border: 1px solid #d5dfe8; border-left: 4px solid #5d7d9b; border-radius: 0 10px 10px 0; background: #f5f8fb; }
+#civilSection #cvNotes .cn-example > h5, #civilSection #cvNotes .cn-keypoints > h5 { margin: 0 0 10px; font: 600 13px/1.4 var(--cs-font); letter-spacing: 0; }
+#civilSection #cvNotes .cn-example > h5 { color: #3f5f7c; }
+#civilSection .cn-example .cn-prose { font-size: 15.5px; }
+#civilSection .cn-keypoints { margin: 22px 0 0; padding: 16px 20px 18px; border: 1px solid #d6e4d7; border-radius: 12px; background: #f3f8f2; }
+#civilSection #cvNotes .cn-keypoints > h5 { color: var(--cs-teal); }
+#civilSection .cn-keypoints > ul { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+#civilSection .cn-keypoints li { position: relative; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 12px; padding-left: 26px; }
+#civilSection .cn-keypoints li::before { content: ""; position: absolute; left: 4px; top: .5em; width: 11px; height: 6px; border-left: 2px solid var(--cs-teal); border-bottom: 2px solid var(--cs-teal); transform: rotate(-45deg); }
+#civilSection .cn-v2 .cn-keypoints li > .cn-prose, #civilSection .cn-keypoints li > .cn-prose { flex: 1 1 360px; min-width: 0; font-size: 15px; line-height: 1.65; }
+#civilSection .cn-keypoints li.is-highlighted { margin-inline: -8px; padding: 8px 8px 8px 34px; border-radius: 8px; background: #fff6d9; }
+#civilSection .cn-keypoints li.is-highlighted::before { left: 12px; top: calc(.5em + 8px); }
+#civilSection .cn-point-refs { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 1px; }
+#civilSection .cn-point-ref { min-height: 28px; padding: 3px 10px; border: 1px solid #c3d8c8; border-radius: 999px; background: #fff; color: var(--cs-teal); font: 500 11px/1.4 var(--cs-font) !important; white-space: nowrap; cursor: pointer; }
+#civilSection .cn-point-ref:hover { border-color: var(--cs-teal); background: var(--cs-mint); }
+#civilSection .cn-sheet > summary { display: list-item; }
+#civilSection .cn-sheet > summary > span { margin-left: 8px; color: var(--cs-muted); font: 500 12px var(--cs-font); }
+#civilSection .cn-sheet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 10px; margin-top: 14px; }
+#civilSection .cn-sheet-item { min-width: 0; padding: 12px 14px; border: 1px solid #d3e3d8; border-radius: 10px; background: #fff; }
+#civilSection .cn-v2 .cn-caution .cn-prose, #civilSection .cn-source-check .cn-prose { font-size: 15px; }
+#civilSection .cn-related-note .cn-keypoints, #civilSection .cn-related-note .cn-formulas { margin-top: 16px; }
+@media (max-width: 600px) {
+    #civilSection .cn-v2 .cn-prose { font-size: 15px; line-height: 1.72; }
+    #civilSection #cvNotes .cn-v2 .cn-block > h4 { justify-content: flex-start; font-size: 17px; text-align: left; }
+    #civilSection .cn-summary, #civilSection .cn-keypoints, #civilSection .cn-example { padding: 14px; }
+    #civilSection .cn-formula { padding: 10px 12px 12px; }
+    #civilSection .cn-formula-tex { font-size: 16px; }
+    #civilSection .cn-keypoints li { padding-left: 22px; }
+    #civilSection .cn-keypoints li::before { left: 2px; }
+    #civilSection .cn-v2 .cn-keypoints li > .cn-prose { flex-basis: 100%; font-size: 14.5px; }
+}
