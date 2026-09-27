@@ -2865,24 +2865,24 @@
         "code": "ACiE0705",
         "questionCount": 19,
         "format": 2,
-        "summary": "<p>Regulating and cross-drainage structures covers Regulators and escapes, crest and impervious-floor design, free and submerged pipe outlets, vertical drops and cross-drainage structures. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers the structures that control and protect canal flow: gated head and cross regulators and escapes, outlet flexibility and sensitivity, the need for canal falls and the Sarda family, and cross-drainage works, which are named by the stream passing on top and by whether the lower stream flows freely or under pressure.</p>",
         "blocks": [
           {
             "id": "regulators-and-escapes",
             "title": "Head regulators, cross regulators and canal escapes",
-            "html": "<p>A regulator controls discharge by changing an effective opening or control level, usually with gates. A gated regulator lets a branch adjust its admission as parent levels change, which a fixed weir, an ungated orifice or an ungated flume cannot do. The resulting flow still depends on upstream and downstream head and on the device rating; a gate opening does not fix the discharge independently of the hydraulics.</p><p>A cross regulator spans the parent canal downstream of an offtake. Partly closing it during low supply raises the parent level just upstream and so creates the head the branch needs, while the branch’s own head regulator meters entry into it. Gate settings must respect the capacity and freeboard of the parent canal.</p><p>A canal escape disposes of surplus canal water safely to a natural drain or river with adequate capacity and protection, for instance when downstream demand stops suddenly while supply keeps arriving. Regulators control normal passage and excluders deal with sediment; neither provides that surplus-disposal route.</p>",
+            "html": "<p>A <em>regulator</em> controls discharge by changing an effective opening or control level, usually with gates. A gated regulator lets a branch adjust its admission as parent levels change, which a fixed weir, an ungated orifice or an ungated flume cannot do. The flow still depends on upstream and downstream head and on the device rating; a gate opening does not fix discharge independently of the hydraulics.</p><p>A <em>cross regulator</em> spans the parent canal downstream of an offtake. Partly closing it during low supply raises the parent level just upstream and so creates the head the branch needs, while the branch's own head regulator meters entry. Settings must respect the parent canal's capacity and freeboard.</p><p>A <em>canal escape</em> disposes of surplus water safely to a natural drain or river with adequate capacity, for example when downstream demand stops suddenly while supply keeps arriving. Regulators control normal passage and excluders deal with sediment; neither provides that route.</p>",
             "points": [
               {
-                "html": "The key result is Canal escape.",
+                "html": "A branch needing an adjustable admission rate as parent levels change is controlled directly by a gated regulator.",
                 "sources": [
                   {
-                    "id": "CAP4-07-00033",
-                    "label": "pp. 27, 28; topic 7 point 33; topic 7 point 71"
+                    "id": "CAP4-07-00107",
+                    "label": "p. 29; topic 7 point 109"
                   }
                 ]
               },
               {
-                "html": "The key result is Partly close a downstream cross regulator.",
+                "html": "When a branch lacks offtake head at low supply, partly close a downstream cross regulator to raise the parent level just upstream.",
                 "sources": [
                   {
                     "id": "CAP4-07-00071",
@@ -2891,47 +2891,52 @@
                 ]
               },
               {
-                "html": "The key result is A gated regulator.",
+                "html": "A canal escape gives surplus water a controlled route to a suitable natural drain when downstream demand stops suddenly.",
                 "sources": [
                   {
-                    "id": "CAP4-07-00107",
-                    "label": "p. 29; topic 7 point 109"
+                    "id": "CAP4-07-00033",
+                    "label": "pp. 27, 28; topic 7 point 33; topic 7 point 71"
                   }
                 ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-07-00033",
-                "label": "pp. 27, 28; topic 7 point 33; topic 7 point 71"
+                "id": "CAP4-07-00107",
+                "label": "p. 29; topic 7 point 109"
               },
               {
                 "id": "CAP4-07-00071",
                 "label": "pp. 28, 30; topic 7 point 74; topic 7 point 128"
               },
               {
-                "id": "CAP4-07-00107",
-                "label": "p. 29; topic 7 point 109"
+                "id": "CAP4-07-00033",
+                "label": "pp. 27, 28; topic 7 point 33; topic 7 point 71"
               }
             ]
           },
           {
             "id": "outlet-flexibility-and-sensitivity",
             "title": "Outlet flexibility, sensitivity and modular classes",
-            "html": "<p>Outlet behaviour is described by ratios of fractional changes. Flexibility F = (dq/q)/(dQ/Q) compares the change in outlet discharge q with the change in parent-canal discharge Q. If a 4% rise in Q produces a 4% rise in q, F ≈ 4%/4% = 1 and the outlet is locally proportional; equal percentages, not equal absolute discharges, define proportionality.</p><p>Sensitivity S = d(ln q)/d(ln Y) instead compares outlet discharge with the parent water depth Y. A rigid module delivers a constant q while Y varies within its working range, so S = 0; inadequate supply or excessive submergence can break that behaviour.</p><p>Outlets are also classed by which water levels control them. A non-modular outlet responds to both upstream and downstream levels. A semi-module, known in older texts as a flexible module, is unaffected by the downstream level while its discharge remains free but still depends on upstream head; a free pipe outlet with downstream water below its drowning limit behaves this way. The older word flexible does not mean F = 1, and drowning can change the class.</p>",
+            "html": "<p>Outlet behaviour is described by ratios of fractional changes.</p><ul><li><em>Flexibility</em> compares the fractional change in outlet discharge q with that in parent-canal discharge Q. F = 1 means the outlet is locally proportional; equal percentages, not equal absolute discharges, define proportionality.</li><li><em>Sensitivity</em> compares outlet discharge with the parent water depth Y. A rigid module delivers constant q while Y varies within its working range, so S = 0; poor supply or excessive submergence can break that behaviour.</li></ul><p>Outlets are also classed by which levels control them. A non-modular outlet responds to both upstream and downstream levels. A <em>semi-module</em>, called a flexible module in older texts, ignores the downstream level while its discharge stays free but still depends on upstream head; a free pipe outlet below its drowning limit behaves this way. The older word flexible does not mean F = 1.</p>",
+            "formulas": [
+              {
+                "label": "Flexibility",
+                "tex": "F = \\dfrac{dq/q}{dQ/Q}"
+              },
+              {
+                "label": "Sensitivity",
+                "tex": "S = \\dfrac{d(\\ln q)}{d(\\ln Y)}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: equal percentage changes",
+              "html": "<p>A 4% rise in parent discharge gives a 4% rise in outlet discharge: \\(F \\approx 4/4 = 1.0\\), so the outlet is locally proportional. A rigid module with constant q has \\(d(\\ln q) = 0\\), so S = 0.</p>"
+            },
             "moreHtml": "<table><thead><tr><th scope='col'>Outlet class</th><th scope='col'>Upstream level</th><th scope='col'>Downstream level</th></tr></thead><tbody><tr><th scope='row'>Non-modular</th><td>Affects discharge</td><td>Affects discharge</td></tr><tr><th scope='row'>Semi-module</th><td>Affects discharge</td><td>No effect while flow stays free</td></tr><tr><th scope='row'>Rigid module</th><td>No effect within the working head range</td><td>No effect within the working head range</td></tr></tbody></table>",
             "points": [
               {
-                "html": "The key result is 0. This is the reviewed topic result.",
-                "sources": [
-                  {
-                    "id": "CAP4-07-00067",
-                    "label": "p. 28; topic 7 point 68"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is 1.0, locally proportional.",
+                "html": "A 4% rise in parent discharge causing a 4% rise in outlet discharge gives a flexibility of about 1.0: the outlet is locally proportional.",
                 "sources": [
                   {
                     "id": "CAP4-07-00070",
@@ -2940,7 +2945,16 @@
                 ]
               },
               {
-                "html": "The key result is Semi-module, historically called a flexible module.",
+                "html": "A rigid module keeps q constant as the parent depth varies within its range, so its sensitivity S is 0.",
+                "sources": [
+                  {
+                    "id": "CAP4-07-00067",
+                    "label": "p. 28; topic 7 point 68"
+                  }
+                ]
+              },
+              {
+                "html": "A free pipe outlet below its drowning limit is a semi-module, historically called a flexible module.",
                 "sources": [
                   {
                     "id": "CAP4-07-00095",
@@ -2951,12 +2965,12 @@
             ],
             "sources": [
               {
-                "id": "CAP4-07-00067",
-                "label": "p. 28; topic 7 point 68"
-              },
-              {
                 "id": "CAP4-07-00070",
                 "label": "p. 28; topic 7 point 73"
+              },
+              {
+                "id": "CAP4-07-00067",
+                "label": "p. 28; topic 7 point 68"
               },
               {
                 "id": "CAP4-07-00095",
@@ -2967,10 +2981,21 @@
           {
             "id": "canal-falls-need-and-siting",
             "title": "Why canals need falls and where to put them",
-            "html": "<p>A canal fall, or drop, is needed where the natural ground slopes more steeply than the bed slope the canal can safely carry. Steepening the whole canal instead would create excessive velocity and scour. The fall to be provided is the ground fall minus the fall absorbed by the design bed slope.</p><p>Over a 2 km reach where the ground falls 12 m and the bed slope is 1 in 1000, the bed itself falls 2000/1000 = 2 m, leaving 12 − 2 = 10 m for drop structures if the canal is to keep its relation to the ground.</p><p>Where several locations give acceptable command and hydraulic performance, economy of earthwork helps to choose between them. A site that balances cut and fill and avoids long stretches of high embankment and costly borrow is favoured, since approach earthwork is part of the real cost. Earthwork economy is one criterion alongside command, safe hydraulics, foundations and structure cost; it never licenses ignoring scour or available head. Equal chainage spacing, the cheapest structure alone or the smallest possible drop is not a sound basis.</p>",
+            "html": "<p>A <em>canal fall</em>, or drop, is needed where the natural ground slopes more steeply than the bed slope the canal can safely carry. Steepening the whole canal instead would create excessive velocity and scour. The fall to be provided by drops is the ground fall minus the fall absorbed by the design bed slope.</p><p>Where several locations give acceptable command and hydraulic performance, economy of earthwork helps to choose. A site that balances cut and fill and avoids long high embankments and costly borrow is favoured, since approach earthwork is part of the real cost. Earthwork economy is one criterion alongside command, safe hydraulics, foundations and structure cost; it never licenses ignoring scour or available head. Equal spacing, the cheapest structure alone or the smallest drop is not a sound basis.</p>",
+            "formulas": [
+              {
+                "label": "Fall to be taken by drops",
+                "tex": "H_d = \\Delta z_g - L\\,S_0",
+                "where": "Δz<sub>g</sub> is the ground fall over the reach, L the reach length and S<sub>0</sub> the design bed slope."
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 2 km reach",
+              "html": "<p>The ground falls 12 m and the bed slope is 1 in 1000. The bed itself falls 2000/1000 = 2 m, so</p>\\[H_d = 12 - 2 = 10\\ \\text{m}\\]<p>must be taken by drop structures if the canal is to keep its relation to the ground.</p>"
+            },
             "points": [
               {
-                "html": "The key result is 10 m.",
+                "html": "Over 2 km with a 12 m ground fall and a 1 in 1000 bed slope, drops must take 12 − 2 = 10 m.",
                 "sources": [
                   {
                     "id": "CAP4-07-00068",
@@ -2979,7 +3004,7 @@
                 ]
               },
               {
-                "html": "The key result is Economy of earthwork and the overall longitudinal profile.",
+                "html": "Between two feasible fall sites, economy of earthwork and the overall longitudinal profile favour the one avoiding high embankment and borrow.",
                 "sources": [
                   {
                     "id": "CAP4-07-00069",
@@ -3002,10 +3027,29 @@
           {
             "id": "sarda-type-falls",
             "title": "Sarda-type falls: vertical drop, crest shape and ratings",
-            "html": "<p>The Sarda fall family is a vertical-drop fall: water passes over a raised crest wall and falls vertically into a protected pool or cistern below. Other families differ in their downstream profile: an Inglis fall uses a straight glacis with a baffle platform and wall, a Montague fall a parabolic glacis, and stepped falls a cascade of small drops. Recognizing the family does not by itself fix the crest geometry or validate any quoted discharge limit.</p><p>Discharge over the crest comes from a calibrated free-overflow rating. With Q = 1.5LH<sup>3/2</sup> in SI units, an effective crest length of 8 m and an energy head of 1 m give Q = 1.5 × 8 × 1 = 12 cumecs. The rating is only one check; the cistern, the foundation and the operating range must also be designed.</p><p>Crest descriptions need care. A crest whose body is triangular in the streamwise section but whose overflow edge is straight and level across the canal is not a V-notch. A V-notch has a triangular transverse opening whose width grows with head, whereas the body profile of a level crest gives no such rating.</p>",
+            "html": "<p>The <em>Sarda</em> fall family is a vertical-drop fall: water passes over a raised crest wall and falls vertically into a protected pool or cistern. Other families differ in their downstream profile: an Inglis fall uses a straight glacis with a baffle platform and wall, a Montague fall a parabolic glacis, and stepped falls a cascade of small drops. Recognizing the family does not fix the crest geometry or validate any quoted discharge limit.</p><p>Discharge over the crest comes from a calibrated free-overflow rating. The rating is only one check; the cistern, foundation and operating range must also be designed.</p><p>Crest descriptions need care. A crest whose body is triangular in the streamwise section but whose overflow edge is straight and level across the canal is not a V-notch. A V-notch has a triangular transverse opening whose width grows with head.</p>",
+            "formulas": [
+              {
+                "label": "Calibrated crest rating used here, SI",
+                "tex": "Q = 1.5\\,L H^{3/2}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: an 8 m crest",
+              "html": "<p>With L = 8 m and energy head H = 1 m, \\(Q = 1.5 \\times 8 \\times 1^{3/2} = 12\\) cumecs. Being below a quoted capacity limit would not by itself prove the fall adequate.</p>"
+            },
             "points": [
               {
-                "html": "The key result is 12 cumecs.",
+                "html": "The Sarda family is identified by a vertical drop into a protected cistern or pool below the crest wall.",
+                "sources": [
+                  {
+                    "id": "CAP4-07-00132",
+                    "label": "p. 30; topic 7 point 125; topic 7 point 126"
+                  }
+                ]
+              },
+              {
+                "html": "The rating \\(Q = 1.5LH^{3/2}\\) with an 8 m crest and a 1 m head predicts 12 cumecs.",
                 "sources": [
                   {
                     "id": "CAP4-07-00126",
@@ -3014,25 +3058,20 @@
                 ]
               },
               {
-                "html": "The key result is No: body profile and transverse flow-opening shape are different.",
+                "html": "A triangular streamwise body with a level overflow crest is no V-notch: body profile and transverse flow-opening shape are different.",
                 "sources": [
                   {
                     "id": "CAP4-07-00127",
                     "label": "p. 30; topic 7 point 126"
                   }
                 ]
-              },
-              {
-                "html": "The key result is Vertical drop into a protected cistern or pool.",
-                "sources": [
-                  {
-                    "id": "CAP4-07-00132",
-                    "label": "p. 30; topic 7 point 125; topic 7 point 126"
-                  }
-                ]
               }
             ],
             "sources": [
+              {
+                "id": "CAP4-07-00132",
+                "label": "p. 30; topic 7 point 125; topic 7 point 126"
+              },
               {
                 "id": "CAP4-07-00126",
                 "label": "p. 30; topic 7 point 125"
@@ -3040,30 +3079,17 @@
               {
                 "id": "CAP4-07-00127",
                 "label": "p. 30; topic 7 point 126"
-              },
-              {
-                "id": "CAP4-07-00132",
-                "label": "p. 30; topic 7 point 125; topic 7 point 126"
               }
             ]
           },
           {
             "id": "cross-drainage-canal-over-drain",
             "title": "Canal over drain: aqueduct and siphon aqueduct",
-            "html": "<p>Cross-drainage works are named by which stream passes over and by how the lower stream flows. When the canal passes above the drain:</p><ul><li>An aqueduct carries canal water in an upper trough while the drain passes beneath with a free surface at its design flood. A low drain bed is not enough; the design flood surface must fit under the actual underside of the canal structure with clearance.</li><li>A siphon aqueduct is needed when the drain cannot pass freely and must flow through full pressure barrels beneath the canal at the design flood. The word siphon refers to that pressurized undercrossing; the canal remains on top, and enough head must be available for barrel and local losses.</li></ul><p>An aqueduct deals with a canal crossing a lower drain, a different function from the head regulator’s control of river water entering the canal. Several works may lie close together at a site, so each is identified by its function rather than by an absolute rule about where aqueducts can never be placed.</p>",
-            "moreHtml": "<p>The whole family can be summarized by the stream on top and the condition of the lower flow.</p><table><thead><tr><th scope='col'>Structure</th><th scope='col'>Stream on top</th><th scope='col'>Lower stream</th></tr></thead><tbody><tr><th scope='row'>Aqueduct</th><td>Canal</td><td>Drain with a free surface</td></tr><tr><th scope='row'>Siphon aqueduct</th><td>Canal</td><td>Drain in full pressure barrels</td></tr><tr><th scope='row'>Superpassage</th><td>Drain</td><td>Canal with a free surface</td></tr><tr><th scope='row'>Canal siphon</th><td>Drain</td><td>Canal in full pressure barrels</td></tr><tr><th scope='row'>Level crossing</th><td>Neither</td><td>Flows meet at similar levels under regulation</td></tr><tr><th scope='row'>Canal inlet</th><td>Neither</td><td>Drain water admitted into the canal</td></tr></tbody></table>",
+            "html": "<p>Cross-drainage works are named by which stream passes over and by how the lower stream flows. When the canal passes above the drain:</p><ul><li>An <em>aqueduct</em> carries canal water in an upper trough while the drain passes beneath with a free surface at its design flood. A low drain bed is not enough; the design flood surface must fit under the actual underside of the canal structure.</li><li>A <em>siphon aqueduct</em> is needed when the drain must flow through full pressure barrels beneath the canal at the design flood. The word siphon refers to that pressurized undercrossing; the canal stays on top, and enough head is needed for barrel and local losses.</li></ul><p>An aqueduct deals with a canal crossing a lower drain, a different function from the head regulator's control of river water entering the canal. Each work is identified by function rather than by an absolute rule about where it may be placed.</p>",
+            "moreHtml": "<table><thead><tr><th scope='col'>Structure</th><th scope='col'>Stream on top</th><th scope='col'>Lower stream</th></tr></thead><tbody><tr><th scope='row'>Aqueduct</th><td>Canal</td><td>Drain, free surface</td></tr><tr><th scope='row'>Siphon aqueduct</th><td>Canal</td><td>Drain in full pressure barrels</td></tr><tr><th scope='row'>Superpassage</th><td>Drain</td><td>Canal, free surface</td></tr><tr><th scope='row'>Canal siphon</th><td>Drain</td><td>Canal in full pressure barrels</td></tr><tr><th scope='row'>Level crossing</th><td>Neither</td><td>Flows meet at similar levels under regulation</td></tr><tr><th scope='row'>Canal inlet</th><td>Neither</td><td>Drain water admitted into the canal</td></tr></tbody></table>",
             "points": [
               {
-                "html": "The key result is Canal aqueduct.",
-                "sources": [
-                  {
-                    "id": "CAP4-07-00073",
-                    "label": "p. 28; topic 7 point 76"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Aqueduct. This is the reviewed topic result.",
+                "html": "Canal water in an upper trough over a drain that passes below with a free surface at its design flood is an aqueduct.",
                 "sources": [
                   {
                     "id": "CAP4-07-00078",
@@ -3072,20 +3098,25 @@
                 ]
               },
               {
-                "html": "The key result is Siphon aqueduct.",
+                "html": "A canal above a drain that must run through full pressure barrels at the design flood needs a siphon aqueduct.",
                 "sources": [
                   {
                     "id": "CAP4-07-00079",
                     "label": "p. 29; topic 7 point 80"
                   }
                 ]
+              },
+              {
+                "html": "A canal aqueduct carries the canal across a lower drain, a different function from the head regulator's control of river water.",
+                "sources": [
+                  {
+                    "id": "CAP4-07-00073",
+                    "label": "p. 28; topic 7 point 76"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-07-00073",
-                "label": "p. 28; topic 7 point 76"
-              },
               {
                 "id": "CAP4-07-00078",
                 "label": "p. 29; topic 7 point 80"
@@ -3093,25 +3124,30 @@
               {
                 "id": "CAP4-07-00079",
                 "label": "p. 29; topic 7 point 80"
+              },
+              {
+                "id": "CAP4-07-00073",
+                "label": "p. 28; topic 7 point 76"
               }
             ]
           },
           {
             "id": "cross-drainage-drain-over-canal",
             "title": "Drain over canal: superpassage and canal siphon",
-            "html": "<p>When the drain passes above the canal, the condition of the lower canal flow decides the name.</p><ul><li>A superpassage carries the drain in an upper trough while the canal passes underneath with a free surface and adequate air clearance.</li><li>A canal siphon, often called an inverted siphon, depresses the canal into closed barrels beneath the drain, where it runs full under pressure. Full pressure flow does not necessarily mean negative gauge pressure.</li></ul><p>Clearance in a superpassage is checked against the structure, not merely against water surfaces. The relevant air gap is the underside of the drain trough minus the canal full supply level. With FSL at RL 99.0 m, the trough underside at RL 99.8 m and a required clearance of 0.5 m, the gap is 99.8 − 99.0 = 0.8 m, so the requirement is met.</p><p>Knowing only that the canal FSL lies below the drain flood level ignores the trough structure and cannot demonstrate free-flow clearance.</p>",
+            "html": "<p>When the drain passes above the canal, the condition of the lower canal flow decides the name.</p><ul><li>A <em>superpassage</em> carries the drain in an upper trough while the canal passes underneath with a free surface and adequate air clearance.</li><li>A <em>canal siphon</em>, often called an inverted siphon, depresses the canal into closed barrels beneath the drain, where it runs full under pressure. Full pressure flow does not necessarily mean negative gauge pressure.</li></ul><p>Clearance in a superpassage is checked against the structure, not merely against water surfaces: the air gap is the underside of the drain trough minus the canal full supply level. Knowing only that the canal FSL lies below the drain flood level ignores the trough and cannot show free-flow clearance.</p>",
+            "formulas": [
+              {
+                "label": "Superpassage air clearance",
+                "tex": "c = \\text{RL}_{\\text{trough}} - \\text{FSL}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a clearance check",
+              "html": "<p>Canal FSL at RL 99.0 m, trough underside at RL 99.8 m, required clearance 0.5 m: c = 99.8 − 99.0 = 0.8 m, which exceeds 0.5 m, so the check is met.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Yes: available clearance is 0.8 m.",
-                "sources": [
-                  {
-                    "id": "CAP4-07-00075",
-                    "label": "p. 28; topic 7 point 78"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Superpassage. This is the reviewed topic result.",
+                "html": "A drain carried in an upper trough over a canal flowing with a free surface and air clearance is a superpassage.",
                 "sources": [
                   {
                     "id": "CAP4-07-00076",
@@ -3120,20 +3156,25 @@
                 ]
               },
               {
-                "html": "The key result is Canal siphon.",
+                "html": "A canal that dips into closed barrels under a drainage channel and runs full is a canal siphon, also called an inverted siphon.",
                 "sources": [
                   {
                     "id": "CAP4-07-00077",
                     "label": "p. 29; topic 7 point 79"
                   }
                 ]
+              },
+              {
+                "html": "With FSL at RL 99.0 m and the trough underside at RL 99.8 m, the available clearance is 0.8 m, so a 0.5 m requirement is met.",
+                "sources": [
+                  {
+                    "id": "CAP4-07-00075",
+                    "label": "p. 28; topic 7 point 78"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-07-00075",
-                "label": "p. 28; topic 7 point 78"
-              },
               {
                 "id": "CAP4-07-00076",
                 "label": "pp. 29, 30; topic 7 point 79; topic 7 point 124"
@@ -3141,16 +3182,20 @@
               {
                 "id": "CAP4-07-00077",
                 "label": "p. 29; topic 7 point 79"
+              },
+              {
+                "id": "CAP4-07-00075",
+                "label": "p. 28; topic 7 point 78"
               }
             ]
           },
           {
             "id": "cross-drainage-at-similar-levels",
             "title": "Canal inlets and level crossings",
-            "html": "<p>Not every crossing keeps the two flows apart. A canal inlet deliberately admits a small drain into the canal so that the flows mix. It suits a small hillside drain when the canal has spare capacity and the drainage water’s quality and sediment load are acceptable; surplus must be released downstream where necessary. Aqueducts, superpassages and siphon aqueducts, by contrast, are grade-separated and keep the flows separate.</p><p>A level crossing lets a canal and a drain meet at nearly equal bed levels, with regulating gates on the canal and drain exits to control the combined flow during the flood. It becomes a candidate where a large canal meets a flashy drain carrying a short-lived high flood at almost the same bed level. These conditions do not make it automatically preferable: combined flood routing, sediment behaviour and acceptable mixing must be checked before it is selected.</p>",
+            "html": "<p>Not every crossing keeps the two flows apart. A <em>canal inlet</em> deliberately admits a small drain into the canal so that the flows mix. It suits a small hillside drain when the canal has spare capacity and the drainage water's quality and sediment load are acceptable; surplus must be released downstream where necessary. Aqueducts, superpassages and siphons are grade-separated and keep the flows apart.</p><p>A <em>level crossing</em> lets a canal and a drain meet at nearly equal bed levels, with regulating gates on the canal and drain exits to control the combined flow during the flood. It becomes a candidate where a large canal meets a flashy drain carrying a short-lived high flood at almost the same bed level. These conditions do not make it automatically preferable: combined flood routing, sediment behaviour and acceptable mixing must be checked first.</p>",
             "points": [
               {
-                "html": "The key result is Canal inlet.",
+                "html": "Deliberately admitting a small hillside drain into a canal with spare capacity, so that the flows mix, is a canal inlet.",
                 "sources": [
                   {
                     "id": "CAP4-07-00035",
@@ -3159,7 +3204,7 @@
                 ]
               },
               {
-                "html": "The key result is Regulated level crossing.",
+                "html": "A large canal meeting a flashy drain at almost equal bed levels, with gated exits and controlled mixing, points to a regulated level crossing.",
                 "sources": [
                   {
                     "id": "CAP4-07-00074",
@@ -3182,28 +3227,24 @@
         ],
         "formulaSheet": [
           {
-            "label": "Quantity Relation used in this topic Outlet flexibility",
-            "tex": "F = (dq/q)/(dQ/Q)"
-          },
-          {
-            "label": "Quantity Relation used in this topic Outlet flexibility (2)",
-            "tex": "F = 1 for a proportional outlet"
+            "label": "Outlet flexibility",
+            "tex": "F = \\dfrac{dq/q}{dQ/Q}"
           },
           {
             "label": "Outlet sensitivity",
-            "tex": "S = d(ln q)/d(ln Y)"
+            "tex": "S = \\dfrac{d(\\ln q)}{d(\\ln Y)}"
           },
           {
-            "label": "Outlet sensitivity (2)",
-            "tex": "S = 0 for a rigid module"
+            "label": "Fall to be taken by drops",
+            "tex": "H_d = \\Delta z_g - L\\,S_0"
           },
           {
-            "label": "Fall provided by drops",
-            "tex": "H_f=G-LS_0"
+            "label": "Calibrated crest rating",
+            "tex": "Q = 1.5\\,L H^{3/2}"
           },
           {
-            "label": "Crest rating",
-            "tex": "Q=CLH^{3/2}"
+            "label": "Superpassage air clearance",
+            "tex": "c = \\text{RL}_{\\text{trough}} - \\text{FSL}"
           }
         ],
         "cautions": [
@@ -3303,24 +3344,54 @@
         "code": "ACiE0706",
         "questionCount": 17,
         "format": 2,
-        "summary": "<p>Water logging and drainage covers Waterlogging causes, effects and prevention; surface and subsurface drainage-system design. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter treats waterlogging as a groundwater balance and then covers its remedies: matching irrigation to crop needs, surface drainage of hollows and fields, the crop effects of poor aeration, diagnosis of saline and alkaline soils, lowering the water table by pumping and field drains, and the suitability and spacing of subsurface tile drains.</p>",
         "blocks": [
           {
             "id": "waterlogging-as-a-water-balance",
-            "title": "Waterlogging as a groundwater balance: seepage and over-irrigation",
-            "html": "<p>The water table climbs whenever inflow to the shallow aquifer outpaces outflow. Recharge includes percolating rain, seepage from canals and deep percolation from fields; removal includes natural groundwater outflow, drainage, evaporation and pumping. Canal seepage is a direct aquifer inflow: when an unlined canal leaks persistently and outflow and pumping cannot keep pace, storage and the table rise until the root zone becomes saturated or wetted by capillary rise. Lining or interceptor drains reduce that component, but the whole balance decides the outcome.</p><p>Over-irrigation adds deep percolation beyond crop use. The remedy is to size each application to the crop’s actual deficit and to provide drainage for unavoidable excess. Applying an unchanged large dose twice as often raises total supply and can worsen recharge; frequency by itself neither prevents nor inevitably causes waterlogging, since small frequent applications matched to demand can be efficient. Spreading a fixed supply can also help.</p><p>A volume of 60000 m<sup>3</sup> infiltrating over 100 ha applies 60000/(100 × 10000) = 0.06 m, or 60 mm, but over 200 ha only 30 mm. Against a 30 mm need with no spare storage, the first leaves 30 mm of excess and the second none, provided crop supply and drainage remain adequate.</p>",
+            "title": "Waterlogging as a groundwater balance: canal seepage",
+            "html": "<p>The water table climbs whenever inflow to the shallow aquifer outpaces outflow.</p><ul><li><em>Recharge</em>: percolating rain, seepage from canals and deep percolation from fields.</li><li><em>Removal</em>: natural groundwater outflow, drainage, evaporation and pumping.</li></ul><p>Canal seepage is a direct aquifer inflow. When an unlined canal leaks persistently and outflow and pumping cannot keep pace, storage and the table rise until the root zone becomes saturated or wetted by capillary rise. Lining or interceptor drains reduce that component, but the whole balance decides the outcome.</p>",
+            "formulas": [
+              {
+                "label": "Shallow-aquifer balance",
+                "tex": "\\Delta S = \\text{recharge} - \\text{removal}",
+                "where": "The water table rises while ΔS is positive, that is while recharge exceeds removal."
+              }
+            ],
             "points": [
               {
-                "html": "The key result is Recharge exceeds removal and the water table rises.",
+                "html": "Persistent seepage from an unlined canal, with outflow and pumping insufficient, means recharge exceeds removal and the water table rises.",
                 "sources": [
                   {
                     "id": "CAP4-07-00089",
                     "label": "p. 29; topic 7 point 90"
                   }
                 ]
-              },
+              }
+            ],
+            "sources": [
               {
-                "html": "The key result is Match applications to crop deficits and improve drainage.",
+                "id": "CAP4-07-00089",
+                "label": "p. 29; topic 7 point 90"
+              }
+            ]
+          },
+          {
+            "id": "over-irrigation-and-applied-depth",
+            "title": "Over-irrigation, application frequency and applied depth",
+            "html": "<p>Over-irrigation adds deep percolation beyond crop use. The remedy is to size each application to the crop's actual deficit and to provide drainage for unavoidable excess.</p><p>Applying an unchanged large dose twice as often raises total supply and can worsen recharge. Frequency by itself neither prevents nor inevitably causes waterlogging: small frequent applications matched to demand can be efficient. The depth–time water balance governs.</p><p>Spreading a fixed supply over more land can also help, because the applied depth is volume over area; 1 ha = 10000 m<sup>2</sup>.</p>",
+            "formulas": [
+              {
+                "label": "Applied depth",
+                "tex": "d = \\dfrac{V}{A}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: 60000 m³ over 100 ha or 200 ha",
+              "html": "<ol><li>Over 100 ha, or 1000000 m<sup>2</sup>: \\(d = 60000/1000000 = 0.06\\) m, or 60 mm. Against a 30 mm need, 30 mm is excess.</li><li>Over 200 ha: \\(d = 0.03\\) m, or 30 mm, with zero excess.</li></ol><p>This assumes no spare soil storage and adequate crop supply and drainage.</p>"
+            },
+            "points": [
+              {
+                "html": "The most direct remedy for repeated over-irrigation is to match applications to crop deficits and improve drainage.",
                 "sources": [
                   {
                     "id": "CAP4-07-00090",
@@ -3329,7 +3400,7 @@
                 ]
               },
               {
-                "html": "The key result is It can increase excess recharge beyond the removal capacity.",
+                "html": "Doubling the frequency of an unchanged large dose is unreliable, because it can increase excess recharge beyond the removal capacity.",
                 "sources": [
                   {
                     "id": "CAP4-07-00091",
@@ -3338,7 +3409,7 @@
                 ]
               },
               {
-                "html": "The key result is 200 ha: 30 mm applied and zero excess.",
+                "html": "Spreading 60000 m<sup>3</sup> over 200 ha gives 30 mm applied and zero excess, whereas 100 ha receives 60 mm and 30 mm of excess.",
                 "sources": [
                   {
                     "id": "CAP4-07-00133",
@@ -3348,10 +3419,6 @@
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-07-00089",
-                "label": "p. 29; topic 7 point 90"
-              },
               {
                 "id": "CAP4-07-00090",
                 "label": "p. 29; topic 7 point 91"
@@ -3368,20 +3435,11 @@
           },
           {
             "id": "surface-drainage-and-topography",
-            "title": "Depressions, bedding and open surface drains",
-            "html": "<p>Irregular topography causes waterlogging where closed depressions trap water that has no gravity outlet, so hollows stay ponded while higher fields drain. The immediate remedy is to link each hollow to a workable outlet with graded channels or land shaping; smoothing a hollow that keeps a closed contour, lining a canal or enlarging a receiving drain the hollow cannot reach does not help. The receiving level and subsurface conditions still need checking before assuming the root zone will aerate.</p><p>Bedding is a surface method for cropped land: the field is shaped into slightly raised strips separated by dead furrows, which collect excess rain or irrigation water and lead it to an outlet. A shallow surface drain removes whatever excess arrives at the surface, whether from rain, run-on or irrigation; it may be busiest in the monsoon, but it works in a dry month too whenever surface inflow occurs and the outlet is available.</p><p>Unlined open drains commonly use a trapezoidal section, which combines a finite bed width with stable sloping earth banks and avoids unsupported vertical soil faces. It is practical rather than universally optimal; hydraulics, land, maintenance and geotechnical stability settle the final shape.</p>",
+            "title": "Depressions and bedding: surface drainage of fields",
+            "html": "<p>Irregular topography causes waterlogging where closed depressions trap water that has no gravity outlet, so hollows stay ponded while higher fields drain. The immediate remedy is to link each hollow to a workable outlet with graded channels or land shaping. Smoothing a hollow that keeps a closed contour, lining a canal or enlarging a drain the hollow cannot reach does not help, and the receiving level and subsurface conditions still need checking before assuming the root zone will aerate.</p><p><em>Bedding</em> is a surface method for cropped land: the field is shaped into slightly raised beds with dead furrows between them, which collect excess rain or irrigation water and lead it to an outlet. It is a surface-shaping method, unlike buried tile, mole or pumped-well drainage.</p>",
             "points": [
               {
-                "html": "The key result is Yes, because surface inflow rather than season controls its use.",
-                "sources": [
-                  {
-                    "id": "CAP4-07-00081",
-                    "label": "p. 29; topic 7 point 82"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Provide graded connections from depressions to a viable outlet.",
+                "html": "Isolated ponded hollows are fixed by graded connections from the depressions to a viable outlet, restoring a gravity escape path.",
                 "sources": [
                   {
                     "id": "CAP4-07-00083",
@@ -3390,16 +3448,42 @@
                 ]
               },
               {
-                "html": "The key result is Bedding. This is the reviewed topic result.",
+                "html": "Bedding shapes a field into raised beds with dead furrows between them to collect excess rain and irrigation water.",
                 "sources": [
                   {
                     "id": "CAP4-07-00088",
                     "label": "p. 29; topic 7 point 89"
                   }
                 ]
+              }
+            ],
+            "sources": [
+              {
+                "id": "CAP4-07-00083",
+                "label": "p. 29; topic 7 point 84"
               },
               {
-                "html": "The key result is Trapezoidal section.",
+                "id": "CAP4-07-00088",
+                "label": "p. 29; topic 7 point 89"
+              }
+            ]
+          },
+          {
+            "id": "open-surface-drains",
+            "title": "Open surface drains: when they work and their section",
+            "html": "<p>A shallow surface drain removes whatever excess arrives at the surface, whether from rain, run-on or irrigation. It may be busiest in the monsoon, but it works in a dry month too whenever surface inflow occurs and the outlet is available; the season affects how busy it is, not whether it can operate.</p><p>Unlined open drains commonly use a trapezoidal section, which combines a finite bed width with stable sloping earth banks and avoids unsupported vertical soil faces. It is practical rather than universally optimal: hydraulics, land, maintenance, lining and geotechnical stability settle the final shape and dimensions.</p>",
+            "points": [
+              {
+                "html": "A shallow surface drain can also carry dry-month irrigation excess, because surface inflow rather than season controls its use.",
+                "sources": [
+                  {
+                    "id": "CAP4-07-00081",
+                    "label": "p. 29; topic 7 point 82"
+                  }
+                ]
+              },
+              {
+                "html": "An unlined open drain needing a finite bed width and stable sloping banks commonly uses a trapezoidal section.",
                 "sources": [
                   {
                     "id": "CAP4-07-00093",
@@ -3414,14 +3498,6 @@
                 "label": "p. 29; topic 7 point 82"
               },
               {
-                "id": "CAP4-07-00083",
-                "label": "p. 29; topic 7 point 84"
-              },
-              {
-                "id": "CAP4-07-00088",
-                "label": "p. 29; topic 7 point 89"
-              },
-              {
                 "id": "CAP4-07-00093",
                 "label": "p. 29; topic 7 point 94"
               }
@@ -3430,80 +3506,80 @@
           {
             "id": "effects-of-waterlogging-on-crops",
             "title": "Why waterlogged soils lose productivity",
-            "html": "<p>The direct harm of waterlogging is oxygen deficiency in the root zone. Oxygen diffuses far more slowly through water-filled pores than through air-filled ones, so root and microbial respiration use it up faster than it is replaced; roots deteriorate and harmful reduced conditions can develop. Saturation alone does not prove salt stress or raised exchangeable sodium, and weeds that may accompany wet land are not the fundamental cause: clearing them leaves the aeration problem untouched.</p><p>Drainage helps by aerating soil that already exists. Tile drainage that lowers a persistently shallow water table increases the air-filled pore space and the depth of soil roots can exploit, so a larger usable, aerated root zone supports higher yields. It does not create new mineral soil or change the soil’s wilting content, and the yield response still depends on the crop, nutrients and water management.</p>",
+            "html": "<p>The direct harm of waterlogging is oxygen deficiency in the root zone. Oxygen diffuses far more slowly through water-filled pores than through air-filled ones, so root and microbial respiration use it up faster than it is replaced; roots deteriorate and harmful reduced conditions can develop. Saturation alone does not prove salt stress, and weeds that may accompany wet land are not the fundamental cause: clearing them leaves the aeration problem untouched.</p><p>Drainage helps by aerating soil that already exists. Tile drainage that lowers a persistently shallow water table increases the air-filled pore space and the depth of soil roots can exploit. It does not create new mineral soil, and the yield response still depends on the crop, nutrients and water management.</p>",
             "points": [
               {
-                "html": "The key result is A larger existing root-zone volume becomes adequately aerated.",
-                "sources": [
-                  {
-                    "id": "CAP4-07-00084",
-                    "label": "p. 29; topic 7 point 85"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Slow oxygen supply through water-filled pores restricts root respiration.",
+                "html": "Roots deteriorate in saturated soil because slow oxygen supply through water-filled pores restricts root respiration; weeds are not the cause.",
                 "sources": [
                   {
                     "id": "CAP4-07-00101",
                     "label": "p. 29; topic 7 point 102"
                   }
                 ]
+              },
+              {
+                "html": "Tile drainage raises yield because a larger existing root-zone volume becomes adequately aerated, not because soil is added.",
+                "sources": [
+                  {
+                    "id": "CAP4-07-00084",
+                    "label": "p. 29; topic 7 point 85"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-07-00084",
-                "label": "p. 29; topic 7 point 85"
-              },
-              {
                 "id": "CAP4-07-00101",
                 "label": "p. 29; topic 7 point 102"
+              },
+              {
+                "id": "CAP4-07-00084",
+                "label": "p. 29; topic 7 point 85"
               }
             ]
           },
           {
             "id": "saline-and-alkaline-soils",
             "title": "Saline and alkaline soils: diagnosis before leaching",
-            "html": "<p>Waterlogged land can also carry chemical problems, which must be diagnosed rather than assumed. A soil pH of 11 indicates strong alkalinity that can severely constrain many crops. The pH alone, however, does not give the dissolved-salt concentration, measured as the electrical conductivity of a saturated extract, or the exchangeable sodium percentage, and waterlogging does not inevitably produce such a pH. Salinity and sodium status are therefore measured separately before any reclamation is specified.</p><p>For a saline but non-sodic soil, salts are exported by leaching under control and then draining away the leachate. Sufficient good-quality water dissolves the salts and carries them below the root zone, and a functioning drainage outlet removes the saline water.</p><p>Flooding without an outlet can raise the water table and leave salts reconcentrated at the surface as the water evaporates, and wetting that never moves water downwards exports nothing. Sodic soils additionally need assessment of their sodium status and of a suitable amendment before leaching can be relied upon.</p>",
+            "html": "<p>Waterlogged land can also carry chemical problems, which must be diagnosed rather than assumed. A soil pH of 11 indicates strong alkalinity that can severely constrain many crops. The pH alone does not give the dissolved-salt concentration, measured as the electrical conductivity of a saturated extract, or the exchangeable sodium percentage, and waterlogging does not inevitably produce such a pH.</p><p>For a saline but non-sodic soil, salts are exported by controlled leaching followed by drainage: enough good-quality water dissolves the salts and carries them below the root zone, and a working outlet removes the saline water. Flooding without an outlet can raise the water table and leave salts reconcentrated at the surface, and wetting that never moves water downwards exports nothing. Sodic soils also need sodium and amendment assessment.</p>",
             "points": [
               {
-                "html": "The key result is Controlled leaching followed by drainage.",
-                "sources": [
-                  {
-                    "id": "CAP4-07-00080",
-                    "label": "p. 29; topic 7 point 81; topic 7 point 106"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is It is strongly alkaline; diagnose salinity and sodium status separately.",
+                "html": "A soil pH of 11 shows the soil is strongly alkaline; diagnose salinity and sodium status separately before reclamation.",
                 "sources": [
                   {
                     "id": "CAP4-07-00094",
                     "label": "p. 29; topic 7 point 95"
                   }
                 ]
+              },
+              {
+                "html": "For a saline, non-sodic soil with an outlet and good water, controlled leaching followed by drainage exports the salts.",
+                "sources": [
+                  {
+                    "id": "CAP4-07-00080",
+                    "label": "p. 29; topic 7 point 81; topic 7 point 106"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-07-00080",
-                "label": "p. 29; topic 7 point 81; topic 7 point 106"
-              },
-              {
                 "id": "CAP4-07-00094",
                 "label": "p. 29; topic 7 point 95"
+              },
+              {
+                "id": "CAP4-07-00080",
+                "label": "p. 29; topic 7 point 81; topic 7 point 106"
               }
             ]
           },
           {
             "id": "lowering-the-water-table-and-field-drains",
             "title": "Lowering the water table: pumping and field drainage networks",
-            "html": "<p>Where an aquifer is hydraulically connected to the waterlogged zone, pumping that exports groundwater outside the affected area, with recharge unchanged, reduces storage, so the water table falls. Pumping of this kind therefore helps relieve waterlogging rather than cause it. The benefit assumes the pumped water does not return as local recharge, and excessive pumping carries its own risks of depletion, subsidence or salinity problems.</p><p>Excess water already on or in farmland is removed by a field drainage network of surface or subsurface drains leading to a viable outfall. A canal escape is a different device: it disposes of surplus water still inside the supply canal and, unless specifically connected and designed for the purpose, does not drain saturated fields. A canal head regulator controls supply rather than removing it, and a farm pond without an outlet stores water but cannot export it.</p>",
+            "html": "<p>Where an aquifer is hydraulically connected to the waterlogged zone, pumping that exports groundwater outside the affected area, with recharge unchanged, reduces storage, so the water table falls. Such pumping helps relieve waterlogging rather than cause it. The benefit assumes the pumped water does not return as local recharge, and excessive pumping carries its own risks of depletion, subsidence or salinity.</p><p>Excess water already on or in farmland is removed by a <em>field drainage network</em> of surface or subsurface drains leading to a viable outfall. A canal escape is different: it disposes of surplus water still inside the supply canal and does not drain saturated fields unless designed for it. A head regulator controls supply, and a farm pond without an outlet stores water but cannot export it.</p>",
             "points": [
               {
-                "html": "The key result is It tends to lower the water table.",
+                "html": "Pumping that exports groundwater from a connected aquifer, with recharge unchanged, tends to lower the water table.",
                 "sources": [
                   {
                     "id": "CAP4-07-00082",
@@ -3512,7 +3588,7 @@
                 ]
               },
               {
-                "html": "The key result is Field drainage network.",
+                "html": "Excess water on farmland is carried to an outfall by a field drainage network, not by a canal escape.",
                 "sources": [
                   {
                     "id": "CAP4-07-00092",
@@ -3535,19 +3611,24 @@
           {
             "id": "tile-drainage-suitability-and-spacing",
             "title": "Subsurface tile drainage: suitability, placement and spacing",
-            "html": "<p>Tile drains collect subsurface water through joints or perforations and convey it to an outlet. They suit a field with a shallow water table where the soil offers a connected flow path to the drains, the drains can be laid at the depth needed and the outfall lies low enough for the required drawdown; the description wet soil alone is not sufficient.</p><p>A drain laid below a nearly impermeable horizon, with no hydraulic connection through it, may leave perched water above that horizon untouched, however deep or large the pipe and however free its outfall. The remedy is correct placement or connection, not the conclusion that slowly permeable soils can never be drained.</p><p>Drain spacing increases with hydraulic conductivity, but not in direct proportion. In a steady model written as L<sup>2</sup> = KC, where C lumps the recharge, the allowed midpoint head and the equivalent geometry, holding C fixed gives L ∝ √K, so quadrupling K doubles the spacing. In a full Hooghoudt solution the equivalent depth itself depends on spacing and must be updated consistently.</p>",
-            "points": [
+            "html": "<p><em>Tile drains</em> collect subsurface water through joints or perforations and convey it to an outlet. They suit a field with a shallow water table where the soil offers a connected flow path to the drains, the drains can be laid at the needed depth and the outfall lies low enough for the required drawdown; wet soil alone is not sufficient.</p><p>A drain laid below a nearly impermeable horizon, with no hydraulic connection through it, may leave perched water above untouched, however deep or large the pipe. The remedy is correct placement or connection, not the conclusion that such soils can never be drained.</p><p>Spacing increases with hydraulic conductivity, but not in direct proportion. In the steady model below, C lumps the recharge, the allowed midpoint head and the equivalent geometry. In a full Hooghoudt solution the equivalent depth depends on spacing and must be updated.</p>",
+            "formulas": [
               {
-                "html": "The key result is The restrictive layer prevents sufficient flow to the drain.",
-                "sources": [
-                  {
-                    "id": "CAP4-07-00085",
-                    "label": "p. 29; topic 7 point 86"
-                  }
-                ]
+                "label": "Steady spacing model",
+                "tex": "L^2 = KC"
               },
               {
-                "html": "The key result is A shallow water table with a connected soil-flow path and viable outlet.",
+                "label": "With C held fixed",
+                "tex": "L \\propto \\sqrt{K}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: conductivity quadruples",
+              "html": "<p>With recharge, allowed head and equivalent geometry fixed, \\(L_2/L_1 = \\sqrt{4} = 2\\): the permissible spacing doubles. Assuming direct proportionality would wrongly give four times the spacing.</p>"
+            },
+            "points": [
+              {
+                "html": "Tile drainage is clearly supported by a shallow water table with a connected soil-flow path and viable outlet.",
                 "sources": [
                   {
                     "id": "CAP4-07-00086",
@@ -3556,7 +3637,16 @@
                 ]
               },
               {
-                "html": "The key result is It doubles.",
+                "html": "A tile drain isolated below a nearly impermeable horizon leaves the root zone wet because the restrictive layer prevents sufficient flow to the drain.",
+                "sources": [
+                  {
+                    "id": "CAP4-07-00085",
+                    "label": "p. 29; topic 7 point 86"
+                  }
+                ]
+              },
+              {
+                "html": "With C fixed in \\(L^2 = KC\\), quadrupling K means the spacing doubles, since \\(L \\propto \\sqrt{K}\\).",
                 "sources": [
                   {
                     "id": "CAP4-07-00087",
@@ -3567,12 +3657,12 @@
             ],
             "sources": [
               {
-                "id": "CAP4-07-00085",
-                "label": "p. 29; topic 7 point 86"
-              },
-              {
                 "id": "CAP4-07-00086",
                 "label": "p. 29; topic 7 point 87"
+              },
+              {
+                "id": "CAP4-07-00085",
+                "label": "p. 29; topic 7 point 86"
               },
               {
                 "id": "CAP4-07-00087",
@@ -3583,24 +3673,20 @@
         ],
         "formulaSheet": [
           {
-            "label": "Quantity Relation used in this topic Applied depth",
-            "tex": "depth = volume/area"
+            "label": "Shallow-aquifer balance",
+            "tex": "\\Delta S = \\text{recharge} - \\text{removal}"
           },
           {
-            "label": "Quantity Relation used in this topic Applied depth (2)",
-            "tex": "1 ha = 10000 \\text{m}^{2}"
+            "label": "Applied depth",
+            "tex": "d = \\dfrac{V}{A}"
           },
           {
-            "label": "Groundwater storage change",
-            "tex": "\\Delta S=R-E"
+            "label": "Steady drain-spacing model",
+            "tex": "L^2 = KC"
           },
           {
-            "label": "Recharge exceeds removal",
-            "tex": "R\\gt E\\Rightarrow\\Delta S\\gt 0"
-          },
-          {
-            "label": "Drain-spacing scaling",
-            "tex": "L^2=KC"
+            "label": "Spacing with C fixed",
+            "tex": "L \\propto \\sqrt{K}"
           }
         ],
         "cautions": [
@@ -3716,7 +3802,7 @@
             "id": "check-tile-spacing-proportionality",
             "status": "corrected",
             "prompt": "Tile-drain spacing is directly proportional to soil permeability.",
-            "html": "<p>With recharge, allowed head and equivalent geometry fixed, L<sup>2</sup> = KC makes spacing proportional to √K, so fourfold permeability doubles the spacing. Full Hooghoudt solutions also update the equivalent depth with spacing.</p>",
+            "html": "<p>With recharge, allowed head and equivalent geometry fixed, \\(L^2 = KC\\) makes spacing proportional to \\(\\sqrt{K}\\), so fourfold permeability doubles the spacing. Full Hooghoudt solutions also update the equivalent depth with spacing.</p>",
             "sources": [
               {
                 "id": "CAP4-07-00087",

@@ -6,16 +6,22 @@
         "code": "AALL1001",
         "questionCount": 33,
         "format": 2,
-        "summary": "<p>Engineering drawings and its concepts covers Standard drawing sheets, dimensions, scales, line diagrams, orthographic and isometric projections, pictorial views and sectional drawing. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers the basics of engineering drawing: lettering, A-series sheets and formats, drawing instruments and pencils, line types and sectioning, scales and the representative fraction, orthographic views in third-angle projection, oblique and isometric pictorial views, sections of a cone, and loci traced by moving points.</p>",
         "blocks": [
           {
             "id": "lettering-height-and-inclination",
             "title": "Lettering size, character proportions and inclined lettering",
-            "html": "<p>In technical lettering, the stated size means the nominal height of the capital letters. If a title block calls for 5 mm lettering, a narrow capital I and a broad capital M both stand 5 mm tall. Their widths differ because every character has its own shape, and stroke thickness and spacing are further, separate parameters of the style.</p><p>Width therefore follows the proportions of the lettering standard or style adopted for the drawing. It is not fixed by one universal width ratio for all letters and another for all numerals.</p><p>Inclined lettering is conventionally sloped at 75° to its horizontal baseline. The vertical makes 90° with that baseline, so the strokes lean 90° − 75° = 15° from the vertical, toward the right. This describes the conventional sloping style only; not every permitted lettering style is inclined.</p>",
-            "moreHtml": "<p>When checking such a figure, name the reference line first. An angle measured from the baseline and one measured from the vertical are complementary, so a 75° slope and a 15° lean describe the same stroke.</p>",
+            "html": "<p>In technical lettering, the stated size means the nominal height of the capital letters. If a title block calls for 5 mm lettering, a narrow capital I and a broad capital M both stand 5 mm tall. Their widths differ because every character has its own shape, and stroke thickness and spacing are separate parameters of the style.</p><p>Width therefore follows the proportions of the lettering standard or style adopted for the drawing. It is not fixed by one universal width ratio for all letters and another for all numerals.</p><p>Inclined lettering is conventionally sloped at 75° to its horizontal baseline. The vertical makes 90° with the baseline, so the strokes lean 15° from the vertical, toward the right. Not every permitted lettering style is inclined.</p>",
+            "formulas": [
+              {
+                "label": "Lean of inclined lettering from the vertical",
+                "tex": "90^\\circ - 75^\\circ = 15^\\circ"
+              }
+            ],
+            "moreHtml": "<p>When checking such a figure, name the reference line first. Angles measured from the baseline and from the vertical are complementary, so a 75° slope and a 15° lean describe the same stroke.</p>",
             "points": [
               {
-                "html": "The key result is Nominal capital height of 5 mm.",
+                "html": "With 5 mm lettering, a narrow I and a wide M share a nominal capital height of 5 mm; only their widths differ.",
                 "sources": [
                   {
                     "id": "CAP4-10-00001",
@@ -24,7 +30,7 @@
                 ]
               },
               {
-                "html": "The key result is Use the chosen lettering standard's character proportions.",
+                "html": "No universal letter or numeral width ratio applies: use the chosen lettering standard's character proportions.",
                 "sources": [
                   {
                     "id": "CAP4-10-00002",
@@ -33,7 +39,7 @@
                 ]
               },
               {
-                "html": "The key result is 15 degrees toward the right.",
+                "html": "Lettering sloped 75° to its baseline leans 15 degrees toward the right from the vertical.",
                 "sources": [
                   {
                     "id": "CAP4-10-00003",
@@ -60,11 +66,24 @@
           {
             "id": "a-series-area-and-side-ratio",
             "title": "A-series sheets: halving the area while keeping the shape",
-            "html": "<p>The A-series starts from an ideal A0 sheet of 1 m². Each smaller size comes from halving the long side of the one before, so every step halves the area: A1 is 1/2 m², A2 is 1/4 m², and A3, three halvings below A0, is 1/2<sup>3</sup> = 0.125 m². In general the ideal area of A<sub>n</sub> is 1/2<sup>n</sup> m².</p><p>Only one side ratio lets the shape survive the halving. Call the long side L and the short side S. After halving, the new sheet has long side S and short side L/2, and similarity requires L/S = S/(L/2). Cross-multiplying gives L<sup>2</sup> = 2S<sup>2</sup>, so L/S = √2. Put another way, dividing the long side by √2 gives the short side, about 0.707 of the long side.</p>",
-            "moreHtml": "<p>Real sheets are trimmed to whole millimetres, so multiplying the printed dimensions gives an area close to, but not exactly equal to, the nominal value.</p>",
+            "html": "<p>The A-series starts from an ideal A0 sheet of 1 m<sup>2</sup>. Each smaller size comes from halving the long side of the one before, so every step halves the area: A1 is 1/2 m<sup>2</sup>, A2 is 1/4 m<sup>2</sup>, and A3, three halvings below A0, is 0.125 m<sup>2</sup>.</p><p>Only one side ratio lets the shape survive the halving. Call the long side L and the short side S. After halving, the new sheet has long side S and short side L/2, and similarity requires the two ratios to be equal. Dividing the long side by \\(\\sqrt{2}\\) gives the short side, about 0.707 of the long side.</p>",
+            "formulas": [
+              {
+                "label": "Ideal area of sheet An",
+                "tex": "A_n = \\dfrac{1}{2^n}\\ \\text{m}^2"
+              },
+              {
+                "label": "Similarity after halving",
+                "tex": "\\dfrac{L}{S} = \\dfrac{S}{L/2} \\;\\Rightarrow\\; \\dfrac{L}{S} = \\sqrt{2}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: A3 from A0",
+              "html": "<p>A0 to A1 to A2 to A3 is three halvings, so \\(A_3 = 1/2^3 = 0.125\\) m<sup>2</sup>. Real sheets are trimmed to whole millimetres, so the printed dimensions give an area close to, but not exactly, this nominal value.</p>"
+            },
             "points": [
               {
-                "html": "The key result is 0.125 square metre.",
+                "html": "Three halvings from the 1 m<sup>2</sup> A0 sheet leave an ideal A3 area of \\(1/2^3\\) = 0.125 square metre.",
                 "sources": [
                   {
                     "id": "CAP4-10-00005",
@@ -73,7 +92,7 @@
                 ]
               },
               {
-                "html": "The key result is Square root of 2 to 1.",
+                "html": "A sheet keeps its shape when halved only if its sides are in the ratio of the square root of 2 to 1.",
                 "sources": [
                   {
                     "id": "CAP4-10-00006",
@@ -95,11 +114,15 @@
           },
           {
             "id": "sheet-designation-orientation-and-formats",
-            "title": "Sheet designation, orientation, aspect ratio and permitted drawing formats",
-            "html": "<p>An A-series designation names the trimmed dimensions of a sheet, not the way it is turned. Rotating an A3 sheet from portrait to landscape leaves it A3; only cutting or joining sheets changes the size. The letter A identifies a widely used paper series for drawings, which does not mean that every paper product belongs to it.</p><p>Orientation matters as soon as a ratio is quoted. With aspect ratio defined as width to height, a landscape graphic 180 mm wide and 120 mm high has 180:120, and dividing both terms by their common factor 60 gives 3:2. Turned to portrait, or quoted as height to width, the order reverses, so always state which dimension comes first.</p><p>A5, nominally 148 × 210 mm, is a genuine A-series size. A drawing-sheet standard, office practice or project specification may still restrict engineering drawings to a preferred set such as A0 to A4. Leaving A5 off such a list limits what that project accepts; it does not remove A5 from the paper series.</p>",
+            "title": "Sheet designation, orientation, aspect ratio and drawing formats",
+            "html": "<p>An A-series designation names the trimmed dimensions of a sheet, not the way it is turned. Rotating an A3 sheet from portrait to landscape leaves it A3; only cutting or joining sheets changes the size. The letter A identifies a widely used paper series for drawings, which does not mean every paper product belongs to it.</p><p>Orientation matters as soon as a ratio is quoted. With aspect ratio defined as width to height, turning the sheet or quoting height to width reverses the order, so always state which dimension comes first.</p><p>A5, nominally 148 × 210 mm, is a genuine A-series size. A drawing standard or project specification may still restrict engineering drawings to a preferred set such as A0 to A4. Leaving A5 off such a list limits what the project accepts; it does not remove A5 from the paper series.</p>",
+            "example": {
+              "title": "Worked example: an aspect ratio",
+              "html": "<p>A landscape graphic 180 mm wide and 120 mm high has width:height = 180:120. Dividing both terms by the common factor 60 gives 3:2; in portrait it would be 2:3.</p>"
+            },
             "points": [
               {
-                "html": "The key result is It remains unchanged because orientation does not set the size.",
+                "html": "Turning a sheet from portrait to landscape leaves its A-series designation unchanged, because orientation does not set the size.",
                 "sources": [
                   {
                     "id": "CAP4-10-00004",
@@ -108,7 +131,7 @@
                 ]
               },
               {
-                "html": "The key result is 3:2. This is the reviewed topic result.",
+                "html": "A landscape graphic 180 mm wide and 120 mm high has a width-to-height aspect ratio of 3:2.",
                 "sources": [
                   {
                     "id": "CAP4-10-00158",
@@ -117,7 +140,7 @@
                 ]
               },
               {
-                "html": "The key result is A5 is a standard A-series paper size but outside this project's allowed set.",
+                "html": "A5 is a standard A-series paper size but outside a project's allowed set when that project accepts only A0 to A4.",
                 "sources": [
                   {
                     "id": "CAP4-10-00166",
@@ -144,19 +167,10 @@
           {
             "id": "drawing-board-set-squares-and-clinograph",
             "title": "Drawing board, set-square angles and the clinograph",
-            "html": "<p>Dimensions quoted for a drawing board describe the board itself. A traditional D1 board listed as 1000 × 700 × 25 mm is read as the length, width and thickness of the support, not as a paper size, a border or a plotting scale. A purchaser should follow the specification actually issued rather than assume a universal current board standard.</p><p>The two fixed set squares provide 45°–45°–90° and 30°–60°–90° edges. Adding, subtracting or supplementing those angles always gives multiples of 15°: for instance 105° = 60° + 45°, 75° = 45° + 30° and 150° = 180° − 30°. An angle of 115° is not a multiple of 15°, so these fixed edges cannot set it directly; an adjustable or measuring instrument is needed.</p><p>A clinograph is such an adjustable device: an adjustable set square used in place of several fixed-angle squares to draw lines at chosen inclinations. It is not a magnetic compass, and it differs from a clinometer, which measures inclination.</p>",
+            "html": "<p>Dimensions quoted for a drawing board describe the board itself. A traditional D1 board listed as 1000 × 700 × 25 mm is read as the length, width and thickness of the support, not as a paper size, a border or a plotting scale. Follow the specification actually issued rather than assume a universal board standard.</p><p>The two fixed set squares provide 45°–45°–90° and 30°–60°–90° edges. Adding, subtracting or supplementing those angles always gives multiples of 15°: 105° = 60° + 45°, 75° = 45° + 30° and 150° = 180° − 30°. An angle of 115° is not a multiple of 15°, so the fixed edges cannot set it directly.</p><p>A <em>clinograph</em> is an adjustable set square used in place of several fixed-angle squares to draw lines at chosen inclinations. It is not a magnetic compass, and it differs from a clinometer, which measures inclination.</p>",
             "points": [
               {
-                "html": "The key result is Drawing lines at adjustable inclinations.",
-                "sources": [
-                  {
-                    "id": "CAP4-01-00153",
-                    "label": "p. 6; topic 1 point 146"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Board length, width and thickness.",
+                "html": "A D1 board listed as 1000 × 700 × 25 mm gives the board length, width and thickness, not a sheet size.",
                 "sources": [
                   {
                     "id": "CAP4-10-00010",
@@ -165,20 +179,25 @@
                 ]
               },
               {
-                "html": "The key result is 115 degrees.",
+                "html": "Fixed 45° and 30°–60° set squares give only multiples of 15°, so 115 degrees cannot be set directly.",
                 "sources": [
                   {
                     "id": "CAP4-10-00015",
                     "label": "p. 37; topic 10 point 15"
                   }
                 ]
+              },
+              {
+                "html": "A clinograph is an adjustable set square whose function is drawing lines at adjustable inclinations; it is not a compass.",
+                "sources": [
+                  {
+                    "id": "CAP4-01-00153",
+                    "label": "p. 6; topic 1 point 146"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-01-00153",
-                "label": "p. 6; topic 1 point 146"
-              },
               {
                 "id": "CAP4-10-00010",
                 "label": "p. 37; topic 10 point 7"
@@ -186,25 +205,20 @@
               {
                 "id": "CAP4-10-00015",
                 "label": "p. 37; topic 10 point 15"
+              },
+              {
+                "id": "CAP4-01-00153",
+                "label": "p. 6; topic 1 point 146"
               }
             ]
           },
           {
             "id": "compass-divider-french-curve-and-freehand-circles",
             "title": "Compass, divider, French curve and freehand circles",
-            "html": "<p>Select a curve-drawing aid by the geometry it enforces. A compass is anchored at a known centre and carries its marking point at a fixed radius, so repeated arcs of one centre and radius stay consistent. A divider has two points and transfers or steps off distances; it carries no drawing lead.</p><p>A French curve has edges of continuously varying curvature. It is used to fair a smooth, noncircular profile through plotted points: a portion of its edge is fitted through several neighbouring points, then the template is moved to the next group so that successive segments overlap smoothly. A compass cannot reproduce such a profile because its radius is constant.</p><p>Freehand sketching relies on the definition of a circle as the locus of points at constant distance from a centre. The sketcher marks the centre, sets out several points at approximately equal radial distance and joins them with short, light arcs. Points at steadily increasing distance would suggest a spiral instead.</p>",
+            "html": "<p>Select a curve-drawing aid by the geometry it enforces.</p><ul><li>A <em>compass</em> is anchored at a known centre and carries its marking point at a fixed radius, so repeated arcs of one centre and radius stay consistent.</li><li>A <em>divider</em> has two points and transfers or steps off distances; it carries no drawing lead.</li><li>A <em>French curve</em> has edges of continuously varying curvature. It fairs a smooth, noncircular profile through plotted points: part of its edge is fitted through neighbouring points, then the template is moved on so that successive segments overlap smoothly.</li></ul><p>Freehand sketching uses the definition of a circle as the locus of points at constant distance from a centre. Mark the centre, set out several points at about equal radial distance and join them with short, light arcs. Points at steadily increasing distance would suggest a spiral instead.</p>",
             "points": [
               {
-                "html": "The key result is Approximately equal distance from the centre.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00016",
-                    "label": "p. 37; topic 10 point 16"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Compass. This is the reviewed topic result.",
+                "html": "A compass keeps a fixed radius about a known centre, so it suits repeated arcs of one centre and radius.",
                 "sources": [
                   {
                     "id": "CAP4-10-00113",
@@ -213,20 +227,25 @@
                 ]
               },
               {
-                "html": "The key result is French curve.",
+                "html": "A French curve fairs a smooth noncircular profile through plotted points in short, overlapping segments.",
                 "sources": [
                   {
                     "id": "CAP4-10-00117",
                     "label": "p. 40; topic 10 point 110"
                   }
                 ]
+              },
+              {
+                "html": "Guide points for a freehand circle should lie at approximately equal distance from the centre.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00016",
+                    "label": "p. 37; topic 10 point 16"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-10-00016",
-                "label": "p. 37; topic 10 point 16"
-              },
               {
                 "id": "CAP4-10-00113",
                 "label": "p. 40; topic 10 point 106"
@@ -234,16 +253,20 @@
               {
                 "id": "CAP4-10-00117",
                 "label": "p. 40; topic 10 point 110"
+              },
+              {
+                "id": "CAP4-10-00016",
+                "label": "p. 37; topic 10 point 16"
               }
             ]
           },
           {
             "id": "pencil-grades-and-line-contrast",
             "title": "Pencil grades and contrast between outlines and construction lines",
-            "html": "<p>Graphite pencils follow the H and B grading system. Numbered H grades are harder and give lighter lines, numbered B grades are softer and darker, and HB is the conventional intermediate designation. A label such as HB1 is not a grade in this notation, although a manufacturer could print it as an unrelated product code.</p><p>Grading serves line hierarchy. Visible outlines must stand out, so a drafter may use a softer B pencil to make them dark while keeping construction lines faint with a harder grade. The grade alone does not make a line correct: sharpness, pressure, the paper surface and the specified drafting method also control width and darkness. B is therefore a common pencil for visible lines, not a universally mandatory one.</p>",
+            "html": "<p>Graphite pencils follow the H and B grading system. Numbered H grades are harder and give lighter lines, numbered B grades are softer and darker, and HB is the conventional intermediate designation. A label such as HB1 is not a grade in this notation, although a manufacturer could print it as an unrelated product code.</p><p>Grading serves line hierarchy. Visible outlines must stand out, so a drafter may use a softer B pencil to make them dark while keeping construction lines faint with a harder grade. The grade alone does not make a line correct: sharpness, pressure, the paper and the specified drafting method also control width and darkness. B is a common pencil for visible lines, not a mandatory one.</p>",
             "points": [
               {
-                "html": "The key result is HB1. This is the reviewed topic result.",
+                "html": "HB1 is not a conventional grade in the H/B system, in which HB is the intermediate designation.",
                 "sources": [
                   {
                     "id": "CAP4-10-00017",
@@ -252,7 +275,7 @@
                 ]
               },
               {
-                "html": "The key result is Visible outlines need stronger contrast than auxiliary lines.",
+                "html": "A softer B pencil is used for outlines because visible outlines need stronger contrast than auxiliary lines.",
                 "sources": [
                   {
                     "id": "CAP4-10-00120",
@@ -275,19 +298,10 @@
           {
             "id": "hidden-lines-visibility-and-section-hatching",
             "title": "Hidden lines, view-dependent visibility and section hatching",
-            "html": "<p>Each line type tells the reader what kind of boundary is shown. Visible outlines are continuous, edges concealed behind material in the current view are drawn as narrow dashed lines, and long-short chain lines mark axes and centres rather than boundaries. A blind recess behind the front face of an unsectioned block is therefore dashed in the front view.</p><p>Visibility belongs to the view, not to the edge. The same recess edge can be hidden when the object is seen from the front and directly visible from the side, so it is dashed in one view and continuous in the other with no change to the object.</p><p>A sectional view imagines the object cut by a plane and the nearer part removed. Section lines (hatching) go only on solid material that the cutting plane actually passes through. In a full section of a hollow sleeve the metal wall is hatched and the empty bore stays clear; surfaces seen beyond the cut are outlined but not hatched.</p>",
+            "html": "<p>Each line type tells the reader what kind of boundary is shown. Visible outlines are continuous, edges concealed behind material in the current view are drawn as narrow dashed lines, and long-short chain lines mark axes and centres rather than boundaries.</p><p>Visibility belongs to the view, not to the edge. The same recess edge can be hidden when the object is seen from the front and directly visible from the side, so it is dashed in one view and continuous in the other with no change to the object.</p><p>A <em>sectional view</em> imagines the object cut by a plane and the nearer part removed. Hatching goes only on solid material the cutting plane actually passes through. In a full section of a hollow sleeve the metal wall is hatched and the empty bore stays clear; surfaces seen beyond the cut are outlined but not hatched.</p>",
             "points": [
               {
-                "html": "The key result is The metal intersected by the cutting plane.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00007",
-                    "label": "p. 37; topic 10 point 8"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Narrow dashed lines.",
+                "html": "The concealed edges of a blind recess in an unsectioned block are drawn with narrow dashed lines.",
                 "sources": [
                   {
                     "id": "CAP4-10-00008",
@@ -296,20 +310,25 @@
                 ]
               },
               {
-                "html": "The key result is It is concealed from the front and visible from the side.",
+                "html": "An edge shown dashed in the front view and continuous in a side view is concealed from the front and visible from the side.",
                 "sources": [
                   {
                     "id": "CAP4-10-00105",
                     "label": "p. 40; topic 10 point 97"
                   }
                 ]
+              },
+              {
+                "html": "In a full section of a hollow sleeve, only the metal intersected by the cutting plane is hatched; the bore stays clear.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00007",
+                    "label": "p. 37; topic 10 point 8"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-10-00007",
-                "label": "p. 37; topic 10 point 8"
-              },
               {
                 "id": "CAP4-10-00008",
                 "label": "p. 37; topic 10 point 9"
@@ -317,16 +336,35 @@
               {
                 "id": "CAP4-10-00105",
                 "label": "p. 40; topic 10 point 97"
+              },
+              {
+                "id": "CAP4-10-00007",
+                "label": "p. 37; topic 10 point 8"
               }
             ]
           },
           {
             "id": "scales-representative-fraction-and-radius-symbol",
             "title": "Scales, representative fraction and the radius symbol",
-            "html": "<p>A scale compares drawing length with actual length, and the representative fraction (RF) states that comparison with both lengths in the same unit. If 5 cm on a map represents 250 m, convert 250 m to 25000 cm first; then RF = 5/25000 = 1/5000, written 1:5000. Leaving the metres unconverted would give a false ratio of 1:50.</p><p>The same ratio sets a drawing scale. A 600 mm component that must appear 60 mm long needs 60/600 = 1/10, that is 1:10. This is a reducing scale because the drawing is smaller than the object, whereas 10:1 would enlarge it. Maps are normally drawn to reducing scales because ground distances are large.</p><p>Dimensions always state the size of the object, whatever the scale. The prefix R denotes a radius, so a curve marked R25 on a millimetre drawing has the curvature of a circle of diameter D = 2R = 50 mm. Its circumference is a different quantity.</p>",
+            "html": "<p>A scale compares drawing length with actual length, and the <em>representative fraction</em> (RF) states that comparison with both lengths in the same unit. Leaving metres unconverted against centimetres gives a false ratio.</p><p>A scale such as 1:10 is a reducing scale because the drawing is smaller than the object, whereas 10:1 would enlarge it. Maps are normally drawn to reducing scales because ground distances are large.</p><p>Dimensions always state the size of the object, whatever the scale. The prefix R denotes a radius, so a curve marked R25 on a millimetre drawing has the curvature of a circle of diameter 50 mm. Its circumference is a different quantity.</p>",
+            "formulas": [
+              {
+                "label": "Representative fraction",
+                "tex": "\\text{RF} = \\dfrac{\\text{drawing length}}{\\text{actual length}}",
+                "where": "Both lengths must be in the same unit."
+              },
+              {
+                "label": "Radius and diameter",
+                "tex": "D = 2R"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>5 cm on a map represents 250 m = 25000 cm, so RF = 5/25000 = 1:5000, not 1:50.</li><li>A 600 mm component drawn 60 mm long needs 60/600 = 1:10.</li><li>R25 gives \\(D = 2 \\times 25 = 50\\) mm.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is 1:5000. This is the reviewed topic result.",
+                "html": "A map on which 5 cm represents 250 m, that is 25000 cm, has a representative fraction of 1:5000.",
                 "sources": [
                   {
                     "id": "CAP4-10-00012",
@@ -335,20 +373,20 @@
                 ]
               },
               {
-                "html": "The key result is 50 mm.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00115",
-                    "label": "p. 40; topic 10 point 108"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is 1:10. This is the reviewed topic result.",
+                "html": "A 600 mm component that must be drawn 60 mm long needs a 1:10 reducing scale.",
                 "sources": [
                   {
                     "id": "CAP4-10-00143",
                     "label": "p. 41; topic 10 point 133"
+                  }
+                ]
+              },
+              {
+                "html": "A curve labelled R25 on a millimetre drawing matches a full circle of diameter 50 mm.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00115",
+                    "label": "p. 40; topic 10 point 108"
                   }
                 ]
               }
@@ -359,22 +397,22 @@
                 "label": "p. 37; topic 10 point 12"
               },
               {
-                "id": "CAP4-10-00115",
-                "label": "p. 40; topic 10 point 108"
-              },
-              {
                 "id": "CAP4-10-00143",
                 "label": "p. 41; topic 10 point 133"
+              },
+              {
+                "id": "CAP4-10-00115",
+                "label": "p. 40; topic 10 point 108"
               }
             ]
           },
           {
             "id": "orthographic-views-and-third-angle-layout",
             "title": "Choosing orthographic views and placing them in third-angle projection",
-            "html": "<p>Each orthographic view shows two of the three principal dimensions, so views are selected by the information still missing. If a bracket's profile in height and depth cannot be read from its front and top views, the side view, which shows depth and height together, settles it directly. Three views are common for simple objects, but the number actually needed depends on how ambiguous the object is; it is not a fixed rule that every object needs exactly three.</p><table><thead><tr><th scope='col'>View</th><th scope='col'>Dimensions shown</th><th scope='col'>Third-angle position</th></tr></thead><tbody><tr><th scope='row'>Front</th><td>Width and height</td><td>Reference view</td></tr><tr><th scope='row'>Top</th><td>Width and depth</td><td>Above the front view</td></tr><tr><th scope='row'>Right side</th><td>Depth and height</td><td>Right of the front view</td></tr></tbody></table><p>In third-angle projection the projection plane lies between the observer and the object, which produces the layout above when the planes are unfolded. The truncated-cone (frustum) symbol printed on a drawing identifies the projection convention in use; it says nothing about whether the object drawn is itself a frustum.</p>",
+            "html": "<p>Each orthographic view shows two of the three principal dimensions, so views are chosen by the information still missing. If a bracket's height-and-depth profile cannot be read from its front and top views, the side view settles it directly. Three views are common, but the number needed depends on how ambiguous the object is.</p><table><thead><tr><th scope='col'>View</th><th scope='col'>Dimensions shown</th><th scope='col'>Third-angle position</th></tr></thead><tbody><tr><th scope='row'>Front</th><td>Width and height</td><td>Reference view</td></tr><tr><th scope='row'>Top</th><td>Width and depth</td><td>Above the front view</td></tr><tr><th scope='row'>Right side</th><td>Depth and height</td><td>Right of the front view</td></tr></tbody></table><p>In third-angle projection the projection plane lies between the observer and the object, which gives this layout when the planes are unfolded. The truncated-cone symbol on a drawing identifies the projection convention; it says nothing about the shape of the object drawn.</p>",
             "points": [
               {
-                "html": "The key result is A side view showing depth and height.",
+                "html": "When front and top views leave the height–depth profile unclear, a side view showing depth and height resolves it.",
                 "sources": [
                   {
                     "id": "CAP4-10-00013",
@@ -383,7 +421,7 @@
                 ]
               },
               {
-                "html": "The key result is Above and to the right, respectively.",
+                "html": "In third-angle projection the top view and right-side view sit above and to the right of the front view, respectively.",
                 "sources": [
                   {
                     "id": "CAP4-10-00014",
@@ -406,10 +444,20 @@
           {
             "id": "oblique-and-isometric-pictorial-views",
             "title": "Oblique drawing, isometric drawing and isometric projection",
-            "html": "<p>In an oblique drawing the front face lies parallel to the picture plane, so it is drawn in its true shape, to the scale of the drawing. A circular opening on that face stays a circle rather than becoming an ellipse, which is why oblique views suit objects with detailed front faces. Depth is drawn along inclined receding lines, at full or reduced length according to the oblique convention chosen, and there is no vanishing point.</p><p>Isometric views show the three principal axes equally foreshortened. An isometric drawing simply lays off true lengths along those axes for convenience. An isometric projection applies the isometric scale, multiplying each axial length by √(2/3) ≈ 0.8165. A 120 mm edge parallel to an axis therefore becomes 120 × √(2/3) = 97.98 mm; drawing it 120 mm long produces the isometric drawing instead.</p>",
+            "html": "<p>In an <em>oblique drawing</em> the front face lies parallel to the picture plane, so it is drawn in its true shape at the drawing scale. A circular opening on that face stays a circle rather than becoming an ellipse, which is why oblique views suit objects with detailed front faces. Depth is drawn along inclined receding lines, at full or reduced length according to the convention chosen.</p><p>Isometric views show the three principal axes equally foreshortened. An <em>isometric drawing</em> simply lays off true lengths along the axes for convenience. An <em>isometric projection</em> applies the isometric scale to each axial length.</p>",
+            "formulas": [
+              {
+                "label": "Isometric scale",
+                "tex": "l_{\\text{iso}} = l\\sqrt{2/3} \\approx 0.8165\\,l"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 120 mm edge",
+              "html": "<p>In a true isometric projection, a 120 mm axial edge becomes \\(120 \\times \\sqrt{2/3} = 97.98\\) mm. Drawing it 120 mm long produces the isometric drawing instead.</p>"
+            },
             "points": [
               {
-                "html": "The key result is In true shape at the drawing scale.",
+                "html": "An oblique drawing shows a front face parallel to the picture plane in true shape at the drawing scale, so its circle stays a circle.",
                 "sources": [
                   {
                     "id": "CAP4-10-00009",
@@ -418,7 +466,7 @@
                 ]
               },
               {
-                "html": "The key result is 97.98 mm.",
+                "html": "A 120 mm axial edge in a true isometric projection is drawn 120 × \\(\\sqrt{2/3}\\) = 97.98 mm long.",
                 "sources": [
                   {
                     "id": "CAP4-10-00011",
@@ -441,10 +489,20 @@
           {
             "id": "conic-sections-of-a-right-circular-cone",
             "title": "Sections of a right circular cone: hyperbola, line pair and circle",
-            "html": "<p>Model an ideal right circular double cone with its vertex at the origin as x<sup>2</sup> + y<sup>2</sup> = k<sup>2</sup>z<sup>2</sup>. A cutting plane parallel to the axis but offset from it is x = c with c ≠ 0. Substituting gives k<sup>2</sup>z<sup>2</sup> − y<sup>2</sup> = c<sup>2</sup>, the equation of a hyperbola.</p><p>On the extended double cone the plane meets both nappes and shows both branches; a finite single cone shows only the portion it contains, and the plane must actually intersect the surface.</p><p>If the plane passes through the axis, then c = 0 and the equation factors into y = kz and y = −kz: two straight generators crossing at the vertex. This degenerate case is the reason the offset condition matters.</p><p>A plane parallel to the base, strictly between base and vertex, preserves the rotational symmetry and cuts a circle of smaller radius; at the vertex it would shrink to a point. A pictorial view of that section may look elliptical, yet its true shape is a circle.</p>",
+            "html": "<p>Model an ideal right circular double cone with its vertex at the origin. A cutting plane parallel to the axis but offset from it is x = c with c ≠ 0, and substituting gives a hyperbola. On the extended double cone the plane meets both nappes and shows both branches; a finite single cone shows only the part it contains, and the plane must actually meet the surface.</p><p>If the plane passes through the axis, then c = 0 and the equation factors into \\(y = kz\\) and \\(y = -kz\\): two straight generators crossing at the vertex. This degenerate case is why the offset condition matters.</p><p>A plane parallel to the base, strictly between base and vertex, keeps the rotational symmetry and cuts a circle of smaller radius; at the vertex it shrinks to a point. A pictorial view of that section may look elliptical, yet its true shape is a circle.</p>",
+            "formulas": [
+              {
+                "label": "Double cone",
+                "tex": "x^2 + y^2 = k^2 z^2"
+              },
+              {
+                "label": "Section by the plane x = c",
+                "tex": "k^2 z^2 - y^2 = c^2"
+              }
+            ],
             "points": [
               {
-                "html": "The key result is Hyperbola. This is the reviewed topic result.",
+                "html": "A plane parallel to the axis but not containing it cuts the two nappes of an extended double cone in a hyperbola.",
                 "sources": [
                   {
                     "id": "CAP4-01-00140",
@@ -453,7 +511,7 @@
                 ]
               },
               {
-                "html": "The key result is Hyperbola. This is the reviewed topic result.",
+                "html": "The axis-parallel plane x = c with c ≠ 0 gives \\(k^2z^2 - y^2 = c^2\\), a nondegenerate hyperbola.",
                 "sources": [
                   {
                     "id": "CAP4-10-00126",
@@ -462,7 +520,7 @@
                 ]
               },
               {
-                "html": "The key result is It degenerates into two intersecting generators.",
+                "html": "A plane through the axis, c = 0, degenerates into two intersecting generators, \\(y = kz\\) and \\(y = -kz\\).",
                 "sources": [
                   {
                     "id": "CAP4-10-00127",
@@ -471,7 +529,7 @@
                 ]
               },
               {
-                "html": "The key result is Circle. This is the reviewed topic result.",
+                "html": "A plane parallel to the base, strictly between base and vertex, cuts a circle of smaller radius.",
                 "sources": [
                   {
                     "id": "CAP4-10-00132",
@@ -502,10 +560,17 @@
           {
             "id": "loci-circle-arc-archimedean-spiral-and-helix",
             "title": "Loci from motion rules: pendulum arc, Archimedean spiral and helix",
-            "html": "<p>A locus follows from the rule that governs a moving point, so state the rule before naming the curve. The bob of an ideal planar pendulum stays at a fixed distance from a fixed pivot. It is confined to a circle, and a limited swing traces a circular arc; oscillation by itself creates no spiral.</p><p>An Archimedean spiral needs two uniform motions at once. The point moves outward along a ray at constant speed, r = r<sub>0</sub> + vt, while the ray turns steadily in one direction, θ = ωt. Eliminating t gives r = r<sub>0</sub> + (v/ω)θ. A point sliding along a swinging pendulum does not automatically obey this law, because the pendulum angle keeps reversing.</p><p>A circular helix is the space curve traced when a point circles a fixed axis at a constant radius and, at the same time, moves along that axis. A constant axial advance per revolution gives a constant pitch. Many other three-dimensional curves exist, so being three-dimensional does not by itself make a curve a helix.</p>",
+            "html": "<p>A locus follows from the rule that governs a moving point, so state the rule before naming the curve. The bob of an ideal planar pendulum stays at a fixed distance from a fixed pivot. It is confined to a circle, and a limited swing traces a circular arc; oscillation by itself creates no spiral.</p><p>An <em>Archimedean spiral</em> needs two uniform motions at once: the point moves outward along a ray at constant speed while the ray turns steadily in one direction. A point sliding along a swinging pendulum does not automatically obey this law, because the pendulum angle keeps reversing.</p><p>A <em>circular helix</em> is traced when a point circles a fixed axis at constant radius while moving along that axis. A constant advance per revolution gives a constant pitch. Being three-dimensional does not by itself make a curve a helix.</p>",
+            "formulas": [
+              {
+                "label": "Archimedean spiral",
+                "tex": "r = r_0 + \\dfrac{v}{\\omega}\\,\\theta",
+                "where": "It follows from r = r<sub>0</sub> + vt and θ = ωt by eliminating t."
+              }
+            ],
             "points": [
               {
-                "html": "The key result is An arc of a circle.",
+                "html": "An ideal pendulum bob held at a fixed distance from its pivot traces an arc of a circle during a swing.",
                 "sources": [
                   {
                     "id": "CAP4-10-00124",
@@ -514,7 +579,7 @@
                 ]
               },
               {
-                "html": "The key result is Archimedean spiral.",
+                "html": "Uniform outward motion along a uniformly rotating ray traces an Archimedean spiral.",
                 "sources": [
                   {
                     "id": "CAP4-10-00125",
@@ -523,7 +588,7 @@
                 ]
               },
               {
-                "html": "The key result is A circular helix of constant pitch.",
+                "html": "Circling a fixed axis at constant radius while advancing a constant distance per turn traces a circular helix of constant pitch.",
                 "sources": [
                   {
                     "id": "CAP4-10-00146",
@@ -548,6 +613,40 @@
             ]
           }
         ],
+        "formulaSheet": [
+          {
+            "label": "Inclined lettering lean",
+            "tex": "90^\\circ - 75^\\circ = 15^\\circ"
+          },
+          {
+            "label": "Ideal A-series area",
+            "tex": "A_n = \\dfrac{1}{2^n}\\ \\text{m}^2"
+          },
+          {
+            "label": "A-series side ratio",
+            "tex": "\\dfrac{L}{S} = \\sqrt{2}"
+          },
+          {
+            "label": "Representative fraction",
+            "tex": "\\text{RF} = \\dfrac{\\text{drawing length}}{\\text{actual length}}"
+          },
+          {
+            "label": "Radius symbol",
+            "tex": "D = 2R"
+          },
+          {
+            "label": "Isometric scale",
+            "tex": "l_{\\text{iso}} = l\\sqrt{2/3}"
+          },
+          {
+            "label": "Cone section by x = c",
+            "tex": "k^2 z^2 - y^2 = c^2"
+          },
+          {
+            "label": "Archimedean spiral",
+            "tex": "r = r_0 + \\dfrac{v}{\\omega}\\,\\theta"
+          }
+        ],
         "cautions": [
           {
             "id": "caution-letter-aspect-ratios",
@@ -565,7 +664,7 @@
             "id": "caution-a-series-side-ratio-text",
             "status": "corrected",
             "prompt": "Capsule: the width of a standard A-series sheet is 12 times its length",
-            "html": "<p>The extracted wording is corrupted mathematics. Keeping the shape under halving requires L/S = √2, so the short side equals the long side divided by √2, about 0.707 of it, not twelve times it. The printed page may have carried a correct formula that was damaged in extraction; the derived ratio is the defensible statement.</p>",
+            "html": "<p>The extracted wording is corrupted mathematics. Keeping the shape under halving requires \\(L/S = \\sqrt{2}\\), so the short side equals the long side divided by \\(\\sqrt{2}\\), about 0.707 of it, not twelve times it. The printed page may have carried a correct formula that was damaged in extraction; the derived ratio is the defensible statement.</p>",
             "sources": [
               {
                 "id": "CAP4-10-00006",
@@ -673,7 +772,7 @@
             "id": "caution-spiral-needs-uniform-rotation",
             "status": "review",
             "prompt": "Sliding-point reading of the capsule: the moving point traces an Archimedean spiral",
-            "html": "<p>A spiral follows only when an extra motion law is supplied: uniform outward sliding along the rod together with uniform rotation in one direction, giving r = r<sub>0</sub> + (v/ω)θ. A reversing pendulum angle does not meet this law automatically, and the missing drawing is not assumed to provide it.</p>",
+            "html": "<p>A spiral follows only when an extra motion law is supplied: uniform outward sliding along the rod together with uniform rotation in one direction, giving \\(r = r_0 + (v/\\omega)\\theta\\). A reversing pendulum angle does not meet this law automatically, and the missing drawing is not assumed to provide it.</p>",
             "sources": [
               {
                 "id": "CAP4-10-00125",
@@ -704,15 +803,29 @@
         "code": "AALL1002",
         "questionCount": 24,
         "format": 2,
-        "summary": "<p>Engineering Economics covers Project cash flow, discount and interest rates, time value of money, discounted payback, NPV, IRR and MARR, alternative comparison, depreciation and taxation in Nepal. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers engineering economics: compounding and discounting single sums, compound interest and effective rates, sinking funds and arithmetic gradients, discounted cash flow, NPV and the benefit-cost ratio, IRR against MARR, incremental comparison of mutually exclusive alternatives, capital budgeting, straight-line depreciation, and the quick ratio and debentures.</p>",
         "blocks": [
           {
             "id": "single-sum-compounding-and-discounting",
             "title": "Single-sum compounding and discounting",
-            "html": "<p>Sums at different dates can be compared only after moving them to one date at a stated rate. Each period multiplies a balance by (1 + i), so a present sum P grows in n periods to F = P(1 + i)<sup>n</sup>. The multiplier (1 + i)<sup>n</sup> is the single-payment compound amount factor; its reciprocal 1/(1 + i)<sup>n</sup> discounts one future sum to the present.</p><p>At an effective 8% a year, NRs 100000 today is equivalent to 100000 × 1.08 = NRs 108000 one year later. Dividing by 1.08 instead addresses a different question, the present value of a future NRs 100000, which is NRs 92592.59.</p><p>The discount rate is the rate used to bring future sums to present value. A payment of NRs 133100 due in three years, discounted at 10%, is worth 133100/1.1<sup>3</sup> = 133100/1.331 = NRs 100000 today. Discounting is compounded period by period; subtracting three years of simple percentage does not give the same value.</p>",
+            "html": "<p>Sums at different dates can be compared only after moving them to one date at a stated rate. Each period multiplies a balance by (1 + i), so a present sum P grows in n periods to a future sum F. The multiplier \\((1 + i)^n\\) is the single-payment compound amount factor; its reciprocal discounts one future sum to the present.</p><p>The <em>discount rate</em> is the rate used to bring future sums to present value. Discounting is compounded period by period; subtracting three years of simple percentage does not give the same value.</p>",
+            "formulas": [
+              {
+                "label": "Compound amount",
+                "tex": "F = P(1 + i)^n"
+              },
+              {
+                "label": "Present worth",
+                "tex": "P = \\dfrac{F}{(1 + i)^n}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>At an effective 8%, NRs 100000 today equals \\(100000 \\times 1.08\\) = NRs 108000 in one year. Dividing by 1.08 answers a different question: the present value of a future NRs 100000, which is NRs 92592.59.</li><li>NRs 133100 due in three years at 10%: \\(133100/1.1^3 = 133100/1.331\\) = NRs 100000.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is (1+i)^n. This is the reviewed topic result.",
+                "html": "The factor \\((1 + i)^n\\) converts a single present amount into its future value after n periods.",
                 "sources": [
                   {
                     "id": "CAP4-10-00021",
@@ -721,7 +834,7 @@
                 ]
               },
               {
-                "html": "The key result is NRs 108000.",
+                "html": "At an effective 8%, NRs 100000 today is equivalent to NRs 108000 exactly one year later.",
                 "sources": [
                   {
                     "id": "CAP4-10-00025",
@@ -730,7 +843,7 @@
                 ]
               },
               {
-                "html": "The key result is NRs 100000.",
+                "html": "NRs 133100 due in three years, discounted at 10%, has a present value of NRs 100000.",
                 "sources": [
                   {
                     "id": "CAP4-10-00030",
@@ -756,11 +869,21 @@
           },
           {
             "id": "compound-interest-and-effective-annual-rate",
-            "title": "Compound interest earned and nominal versus effective annual rates",
-            "html": "<p>Under compound interest, the interest earned in each period joins the balance and earns interest later; the rate itself need not change. NRs 20000 at a constant 10% for two years grows to 20000 × 1.1<sup>2</sup> = 24200. The interest is the growth alone, 24200 − 20000 = NRs 4200: 2000 in the first year and 2200 in the second, because the second year's interest is also earned on the first year's 2000. The principal is never counted as interest.</p><p>A nominal annual rate r compounded m times a year is not the effective yearly growth. The rate per period is r/m, and the effective annual rate is (1 + r/m)<sup>m</sup> − 1. For 12% compounded monthly the monthly rate is 0.12/12 = 0.01, and (1.01)<sup>12</sup> − 1 = 0.126825, about 12.6825%. Nominal and effective rates coincide only when compounding is annual.</p>",
+            "title": "Compound interest earned and nominal versus effective rates",
+            "html": "<p>Under compound interest, the interest earned in each period joins the balance and earns interest later; the rate itself need not change. The interest is the growth alone, so the principal is never counted as interest.</p><p>A nominal annual rate r compounded m times a year is not the effective yearly growth. The rate per period is r/m, and the effective annual rate follows from compounding it m times. Nominal and effective rates coincide only when compounding is annual.</p>",
+            "formulas": [
+              {
+                "label": "Effective annual rate",
+                "tex": "i_{\\text{eff}} = \\left(1 + \\dfrac{r}{m}\\right)^m - 1"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>NRs 20000 at 10% for two years grows to \\(20000 \\times 1.1^2 = 24200\\). The interest is 24200 − 20000 = NRs 4200: 2000 in the first year and 2200 in the second.</li><li>12% compounded monthly: the monthly rate is 0.01, and \\(1.01^{12} - 1 = 0.126825\\), about 12.6825%.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is NRs 4200.",
+                "html": "NRs 20000 at 10% compound interest for two years grows to 24200, so the interest earned is NRs 4200.",
                 "sources": [
                   {
                     "id": "CAP4-10-00031",
@@ -769,7 +892,7 @@
                 ]
               },
               {
-                "html": "The key result is 12.6825%. This is the reviewed topic result.",
+                "html": "A nominal 12% compounded monthly gives an effective annual rate of \\(1.01^{12} - 1\\), about 12.6825%.",
                 "sources": [
                   {
                     "id": "CAP4-10-00033",
@@ -792,11 +915,28 @@
           {
             "id": "sinking-funds-and-arithmetic-gradients",
             "title": "Series cash flows: sinking-fund deposits and arithmetic gradients",
-            "html": "<p>A sinking fund builds up equal end-of-period deposits so that a structure can be rebuilt or replaced when its economic life ends. The expression i/((1 + i)<sup>n</sup> − 1) is the sinking-fund factor, a pure number that converts a target future amount F into the equal deposit A: A = F × i/((1 + i)<sup>n</sup> − 1). To accumulate NRs 100000 in five years at 10%, 1.1<sup>5</sup> = 1.61051, so A = 100000 × 0.10/0.61051 = 16379.75, about NRs 16380 a year.</p><p>A cash flow that changes by the same amount every period is an arithmetic (linear) gradient. Receipts of 40000, 45000, 50000 and 55000 rise by a constant NRs 5000, while the percentage growth falls from 5000/40000 = 12.5% to 5000/45000 ≈ 11.1%, so the series is not a geometric gradient. For a base amount a rising by b each year, the amount in year n is a + (n − 1)b, and the undiscounted total over n years is n[2a + (n − 1)b]/2.</p>",
-            "moreHtml": "<p>Keep the last term and the total apart. Maintenance of NRs 10000 rising by 2000 a year costs 10000 + 3 × 2000 = 16000 in year 4, but 10000 + 12000 + 14000 + 16000 = 52000 over the four years, which agrees with 4[2(10000) + 3(2000)]/2 = 52000.</p>",
+            "html": "<p>A <em>sinking fund</em> builds up equal end-of-period deposits so that a structure can be replaced when its economic life ends. The fraction \\(i/[(1 + i)^n - 1]\\) is the sinking-fund factor, a pure number that converts a target future amount F into the equal deposit A; it is not the fund itself.</p><p>A cash flow that changes by the same amount every period is an <em>arithmetic gradient</em>. Receipts of 40000, 45000, 50000 and 55000 rise by a constant NRs 5000, while the percentage growth falls from 12.5% to about 11.1%, so the series is not geometric. For a base amount a rising by b each year, keep the last term and the total apart.</p>",
+            "formulas": [
+              {
+                "label": "Sinking-fund deposit",
+                "tex": "A = F\\,\\dfrac{i}{(1 + i)^n - 1}"
+              },
+              {
+                "label": "Amount in year n",
+                "tex": "a_n = a + (n - 1)b"
+              },
+              {
+                "label": "Undiscounted total over n years",
+                "tex": "S_n = \\dfrac{n\\,[2a + (n - 1)b]}{2}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<p>NRs 100000 in five years at 10%: \\(1.1^5 = 1.61051\\), so</p>\\[\\begin{aligned}A &amp;= 100000 \\times 0.10/0.61051\\\\ &amp;= 16379.75\\end{aligned}\\]<p>about NRs 16380 a year.</p><p>Maintenance of NRs 10000 rising by 2000: year 4 costs \\(10000 + 3 \\times 2000 = 16000\\), while the four-year total is \\(4[20000 + 6000]/2 = 52000\\).</p>"
+            },
             "points": [
               {
-                "html": "The key result is NRs 16380.",
+                "html": "Accumulating NRs 100000 in five years at 10% needs equal yearly deposits of about NRs 16380.",
                 "sources": [
                   {
                     "id": "CAP4-10-00027",
@@ -805,20 +945,20 @@
                 ]
               },
               {
-                "html": "The key result is NRs 16000 and NRs 52000.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00029",
-                    "label": "p. 38; topic 10 point 29"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is An arithmetic gradient of NRs 5000 per year.",
+                "html": "Receipts of 40000, 45000, 50000 and 55000 form an arithmetic gradient of NRs 5000 per year.",
                 "sources": [
                   {
                     "id": "CAP4-10-00129",
                     "label": "p. 41; topic 10 point 120"
+                  }
+                ]
+              },
+              {
+                "html": "Maintenance of NRs 10000 rising by 2000 a year costs NRs 16000 in year 4 and NRs 52000 in total over years 1 to 4.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00029",
+                    "label": "p. 38; topic 10 point 29"
                   }
                 ]
               }
@@ -829,31 +969,36 @@
                 "label": "p. 38; topic 10 point 27"
               },
               {
-                "id": "CAP4-10-00029",
-                "label": "p. 38; topic 10 point 29"
-              },
-              {
                 "id": "CAP4-10-00129",
                 "label": "p. 41; topic 10 point 120"
+              },
+              {
+                "id": "CAP4-10-00029",
+                "label": "p. 38; topic 10 point 29"
               }
             ]
           },
           {
             "id": "discounted-cash-flow-npv-and-benefit-cost",
             "title": "Discounted cash flow, net present value and the benefit-cost ratio",
-            "html": "<p>Discounted cash flow (DCF) values a project or company by discounting each expected cash flow to one date and adding the results. Receipts of NRs 55000 after one year and NRs 60500 after two years, at 10%, are worth 55000/1.1 = 50000 plus 60500/1.1<sup>2</sup> = 50000, a total of NRs 100000 today. That is the value of the receipts only; the investment still has to be deducted.</p><p>Net present value makes the deduction: NPV = present value of inflows − present value of outflows, at the MARR. An independent project costing NRs 90000 now, with receipts worth NRs 100000, has NPV = +NRs 10000 and passes the test. Present-worth analysis is thus a standard decision tool.</p><p>The benefit-cost ratio compares the same quantities as a ratio. Present-valued benefits of NRs 15 million against costs of NRs 12 million give B/C = 15/12 = 1.25 and a net present benefit of +NRs 3 million. B/C above 1 passes, B/C = 1 is break-even, and among mutually exclusive alternatives the highest ratio does not by itself identify the best one.</p>",
-            "points": [
+            "html": "<p><em>Discounted cash flow</em> (DCF) values a project or company by discounting each expected cash flow to one date and adding the results. That gives the value of the receipts only; the investment still has to be deducted.</p><p><em>Net present value</em> makes the deduction at the MARR. A positive NPV means an independent project passes the test, so present-worth analysis is a standard decision tool.</p><p>The <em>benefit-cost ratio</em> compares the same quantities as a ratio. B/C above 1 passes, B/C = 1 is break-even, and among mutually exclusive alternatives the highest ratio does not by itself identify the best one.</p>",
+            "formulas": [
               {
-                "html": "The key result is B/C = 1.25 and NPV = +NRs 3 million.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00028",
-                    "label": "p. 38; topic 10 point 28"
-                  }
-                ]
+                "label": "Net present value",
+                "tex": "\\text{NPV} = \\text{PV}_{\\text{in}} - \\text{PV}_{\\text{out}}"
               },
               {
-                "html": "The key result is NRs 100000.",
+                "label": "Benefit-cost ratio",
+                "tex": "B/C = \\dfrac{\\text{PV of benefits}}{\\text{PV of costs}}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>NRs 55000 after one year and NRs 60500 after two, at 10%: 55000/1.1 = 50000 and \\(60500/1.1^2 = 50000\\), a total of NRs 100000.</li><li>If the project costs NRs 90000 now, NPV = 100000 − 90000 = +NRs 10000.</li><li>Benefits NRs 15 million, costs NRs 12 million: B/C = 1.25, net benefit +NRs 3 million.</li></ol>"
+            },
+            "points": [
+              {
+                "html": "Receipts of NRs 55000 at year 1 and NRs 60500 at year 2, discounted at 10%, are worth NRs 100000 today.",
                 "sources": [
                   {
                     "id": "CAP4-10-00156",
@@ -862,20 +1007,25 @@
                 ]
               },
               {
-                "html": "The key result is NPV is +NRs 10000, so it passes the stated economic test.",
+                "html": "A project costing NRs 90000 with receipts worth NRs 100000 has NPV of +NRs 10000, so it passes the stated economic test.",
                 "sources": [
                   {
                     "id": "CAP4-10-00157",
                     "label": "p. 41; topic 10 point 147"
                   }
                 ]
+              },
+              {
+                "html": "Benefits of NRs 15 million against costs of NRs 12 million give B/C = 1.25 and NPV = +NRs 3 million.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00028",
+                    "label": "p. 38; topic 10 point 28"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-10-00028",
-                "label": "p. 38; topic 10 point 28"
-              },
               {
                 "id": "CAP4-10-00156",
                 "label": "p. 41; topic 10 point 146"
@@ -883,16 +1033,30 @@
               {
                 "id": "CAP4-10-00157",
                 "label": "p. 41; topic 10 point 147"
+              },
+              {
+                "id": "CAP4-10-00028",
+                "label": "p. 38; topic 10 point 28"
               }
             ]
           },
           {
             "id": "irr-marr-and-justified-reinvestment",
             "title": "Internal rate of return, MARR and justified reinvestment",
-            "html": "<p>The internal rate of return (IRR) is the discount rate at which NPV equals zero. For NRs 100000 invested now that returns NRs 121000 after exactly two years, −100000 + 121000/(1 + r)<sup>2</sup> = 0, so (1 + r)<sup>2</sup> = 1.21 and r = 10% per year. Splitting the 21% two-year gain into 10.5% a year would wrongly apply simple interest.</p><p>When a project is independent and its cash flows are conventional, so that it has a single IRR, compare that IRR with the minimum attractive rate of return (MARR). An IRR of 14% against a risk-appropriate MARR of 11% corresponds to positive NPV at the MARR, so the project is acceptable on this criterion. The rule is stated for that conventional case, and IRR alone is not the right ranking tool for mutually exclusive alternatives.</p><p>Retained profit is judged the same way. Reinvestment is justified when the risk-adjusted expected return on the incremental cash flows meets the relevant opportunity cost; keeping profit inside the business does not guarantee a higher return or growth in shareholder value.</p>",
+            "html": "<p>The <em>internal rate of return</em> (IRR) is the discount rate at which NPV equals zero. Splitting a multi-year gain evenly between the years would wrongly apply simple interest.</p><p>When a project is independent and its cash flows are conventional, so that it has a single IRR, compare that IRR with the <em>minimum attractive rate of return</em> (MARR). IRR above a risk-appropriate MARR corresponds to positive NPV at the MARR, so the project is acceptable on this criterion. IRR alone is not the right ranking tool for mutually exclusive alternatives.</p><p>Retained profit is judged the same way. Reinvestment is justified when the risk-adjusted expected return on the incremental cash flows meets the relevant opportunity cost; keeping profit in the business does not guarantee a higher return.</p>",
+            "formulas": [
+              {
+                "label": "Definition of IRR",
+                "tex": "\\text{NPV}(r^{*}) = 0"
+              }
+            ],
+            "example": {
+              "title": "Worked example: NRs 100000 returning NRs 121000 after two years",
+              "html": "\\[-100000 + \\dfrac{121000}{(1 + r)^2} = 0\\]<p>So \\((1 + r)^2 = 1.21\\) and r = 10% per year, not 10.5%.</p>"
+            },
             "points": [
               {
-                "html": "The key result is 10% per year.",
+                "html": "NRs 100000 invested now returning NRs 121000 after two years has \\((1 + r)^2 = 1.21\\), an IRR of 10% per year.",
                 "sources": [
                   {
                     "id": "CAP4-10-00018",
@@ -901,7 +1065,7 @@
                 ]
               },
               {
-                "html": "The key result is Accept on this economic criterion because IRR exceeds MARR.",
+                "html": "With conventional flows and a unique IRR of 14% against an 11% MARR, accept on this economic criterion because IRR exceeds MARR.",
                 "sources": [
                   {
                     "id": "CAP4-10-00024",
@@ -910,7 +1074,7 @@
                 ]
               },
               {
-                "html": "The key result is A risk-adjusted expected return meeting the relevant opportunity-cost criterion.",
+                "html": "Reinvesting profit is justified by a risk-adjusted expected return meeting the relevant opportunity-cost criterion.",
                 "sources": [
                   {
                     "id": "CAP4-10-00150",
@@ -937,10 +1101,29 @@
           {
             "id": "mutually-exclusive-and-incremental-analysis",
             "title": "Mutually exclusive alternatives and incremental analysis",
-            "html": "<p>Alternatives are mutually exclusive when selecting one prevents the other, as when a site can take design A or design B but not both. They must be compared on a consistent service level and analysis period, because acceptance tests designed for independent projects cannot on their own identify the best exclusive alternative.</p><p>Incremental analysis ranks feasible alternatives by investment. The lower-investment alternative becomes the defender or base, and the costlier one is judged by its extra cash flows. If machine A costs NRs 400000 and machine B NRs 550000 for the same required service, examine the B − A cash flows at the MARR over a consistent period: B's extra NRs 150000 must be justified by incremental benefits. A lower first cost does not settle the decision.</p><p>Increments are found by subtracting signed cash flows. With outflows negative, time-zero flows of −680000 for B and −500000 for A give B − A = −680000 − (−500000) = −NRs 180000. The initial increment is zero only when both alternatives happen to need the same outlay.</p>",
+            "html": "<p>Alternatives are <em>mutually exclusive</em> when selecting one prevents the other, as when a site can take design A or design B but not both. They must be compared on a consistent service level and analysis period, because acceptance tests for independent projects cannot on their own identify the best exclusive option.</p><p>Incremental analysis ranks feasible alternatives by investment. The lower-investment alternative becomes the defender, and the costlier one is judged by its extra cash flows at the MARR over a consistent period. A lower first cost does not settle the decision.</p><p>Increments are found by subtracting signed cash flows. The initial increment is zero only when both alternatives need the same outlay.</p>",
+            "formulas": [
+              {
+                "label": "Incremental cash flow in year t",
+                "tex": "\\Delta CF_t = CF_{B,t} - CF_{A,t}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>Machine A costs NRs 400000 and B NRs 550000 for the same service: B's extra NRs 150000 must be justified by the B − A benefits.</li><li>Time-zero flows of −680000 for B and −500000 for A: \\(-680000 - (-500000)\\) = −NRs 180000.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is Use A as defender and assess B minus A cash flows.",
+                "html": "Designs A and B for one site, where building one prevents the other, are mutually exclusive alternatives.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00121",
+                    "label": "p. 40; topic 10 point 114"
+                  }
+                ]
+              },
+              {
+                "html": "For machines costing NRs 400000 (A) and NRs 550000 (B), use A as defender and assess B minus A cash flows at the MARR.",
                 "sources": [
                   {
                     "id": "CAP4-10-00022",
@@ -949,25 +1132,20 @@
                 ]
               },
               {
-                "html": "The key result is -NRs 180000.",
+                "html": "Signed time-zero flows of −680000 for B and −500000 for A give an initial increment B − A of −NRs 180000.",
                 "sources": [
                   {
                     "id": "CAP4-10-00026",
                     "label": "p. 38; topic 10 point 26"
                   }
                 ]
-              },
-              {
-                "html": "The key result is Mutually exclusive.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00121",
-                    "label": "p. 40; topic 10 point 114"
-                  }
-                ]
               }
             ],
             "sources": [
+              {
+                "id": "CAP4-10-00121",
+                "label": "p. 40; topic 10 point 114"
+              },
               {
                 "id": "CAP4-10-00022",
                 "label": "p. 38; topic 10 point 22"
@@ -975,29 +1153,25 @@
               {
                 "id": "CAP4-10-00026",
                 "label": "p. 38; topic 10 point 26"
-              },
-              {
-                "id": "CAP4-10-00121",
-                "label": "p. 40; topic 10 point 114"
               }
             ]
           },
           {
             "id": "capital-budgeting-scope-and-reversibility",
             "title": "Capital budgeting: long-term commitments, working capital and reversibility",
-            "html": "<p>Capital budgeting evaluates long-term investment commitments, typically fixed assets such as a treatment plant, through their multi-year incremental cash flows. It is distinct from routine cash administration such as reconciling a cash drawer, recording petty cash or matching invoices, and it concerns more than an asset's purchase price.</p><p>A project's cash requirement includes the incremental working capital it creates, for example the extra inventory and receivables of a new manufacturing plant. Enter that investment when it occurs and its recovery when it is released, often at the end of the project. Excluding it because it is a current asset overstates value; including the firm's entire existing inventory would be equally wrong, since only the increment counts.</p><p>Capital decisions are often called difficult to reverse. A specialised, installed plant may be saleable only at a large loss, so a large part of the money committed may never be recovered. That is a practical degree of sunk-cost exposure, not a legal or physical impossibility of selling or abandoning the asset.</p>",
+            "html": "<p><em>Capital budgeting</em> evaluates long-term investment commitments, typically fixed assets such as a treatment plant, through their multi-year incremental cash flows. It is distinct from routine cash administration such as reconciling a cash drawer or matching invoices, and it concerns more than an asset's purchase price.</p><p>A project's cash requirement includes the incremental working capital it creates, such as the extra inventory and receivables of a new plant. Enter that investment when it occurs and its recovery when it is released. Excluding it because it is a current asset overstates value, and including the firm's whole existing inventory is equally wrong.</p><p>Capital decisions are often called difficult to reverse. A specialised, installed plant may sell only at a large loss, so much of the money committed may never be recovered. That is sunk-cost exposure, not a legal or physical impossibility of sale.</p>",
             "points": [
               {
-                "html": "The key result is Much of the committed cost may be unrecoverable.",
+                "html": "Evaluating a treatment plant's multi-year incremental cash flows is capital budgeting, not routine cash administration.",
                 "sources": [
                   {
-                    "id": "CAP4-10-00037",
-                    "label": "p. 38; topic 10 point 37"
+                    "id": "CAP4-10-00153",
+                    "label": "p. 41; topic 10 point 142"
                   }
                 ]
               },
               {
-                "html": "The key result is Include incremental working-capital investment and any eventual recovery.",
+                "html": "A new plant's project cash flows should include incremental working-capital investment and any eventual recovery.",
                 "sources": [
                   {
                     "id": "CAP4-10-00149",
@@ -1006,72 +1180,98 @@
                 ]
               },
               {
-                "html": "The key result is Evaluating a treatment plant's multi-year incremental cash flows.",
+                "html": "A capital decision is hard to reverse because much of the committed cost may be unrecoverable on resale.",
                 "sources": [
                   {
-                    "id": "CAP4-10-00153",
-                    "label": "p. 41; topic 10 point 142"
+                    "id": "CAP4-10-00037",
+                    "label": "p. 38; topic 10 point 37"
                   }
                 ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-10-00037",
-                "label": "p. 38; topic 10 point 37"
+                "id": "CAP4-10-00153",
+                "label": "p. 41; topic 10 point 142"
               },
               {
                 "id": "CAP4-10-00149",
                 "label": "p. 41; topic 10 point 139"
               },
               {
-                "id": "CAP4-10-00153",
-                "label": "p. 41; topic 10 point 142"
+                "id": "CAP4-10-00037",
+                "label": "p. 38; topic 10 point 37"
               }
             ]
           },
           {
             "id": "straight-line-depreciation-and-book-value",
             "title": "Straight-line depreciation, residual value and book value",
-            "html": "<p>Straight-line depreciation charges the same amount every year: D = (cost − residual)/life. An asset costing NRs 1000000 with a residual value of NRs 100000 and a five-year life gives D = 900000/5 = NRs 180000 a year. After three full years the accumulated depreciation is 540000, leaving a book value of 1000000 − 540000 = NRs 460000.</p><p>The formula works equally for long-lived works once an accounting life is assumed. A dam costing NPR 100 million, with an assumed residual value of NPR 10 million and a 90-year life, is depreciated by (100 − 10)/90 = NPR 1.0 million a year, which is 1% of its original cost.</p><p>Both results rest on stated accounting assumptions. They say nothing about Nepal's tax-depreciation pools or rates, and a quoted percentage range for a type of structure is a rough convention rather than a physical rate of deterioration.</p>",
-            "points": [
+            "html": "<p><em>Straight-line depreciation</em> charges the same amount every year: cost less residual value, divided by the life. The book value after k years is the cost less k annual charges.</p><p>The formula works equally for long-lived works once an accounting life is assumed. Both results rest on stated accounting assumptions: they say nothing about Nepal's tax-depreciation pools or rates, and a quoted percentage range for a type of structure is a rough convention rather than a physical rate of deterioration.</p>",
+            "formulas": [
               {
-                "html": "The key result is NPR 1.0 million.",
-                "sources": [
-                  {
-                    "id": "CAP4-08-00016",
-                    "label": "p. 30; topic 8 point 16"
-                  }
-                ]
+                "label": "Annual charge",
+                "tex": "D = \\dfrac{C - S}{N}",
+                "where": "C is the cost, S the residual value and N the life in years."
               },
               {
-                "html": "The key result is NRs 180000 and NRs 460000.",
+                "label": "Book value after k years",
+                "tex": "BV_k = C - kD"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>Cost NRs 1000000, residual NRs 100000, five-year life: D = 900000/5 = NRs 180000. After three years, BV = 1000000 − 540000 = NRs 460000.</li><li>A dam costing NPR 100 million with a NPR 10 million residual over 90 years: D = 90/90 = NPR 1.0 million a year, 1% of cost.</li></ol>"
+            },
+            "points": [
+              {
+                "html": "An asset costing NRs 1000000 with NRs 100000 residual over five years is charged NRs 180000 a year, leaving NRs 460000 after three years.",
                 "sources": [
                   {
                     "id": "CAP4-10-00159",
                     "label": "p. 41; topic 10 point 149"
                   }
                 ]
+              },
+              {
+                "html": "A NPR 100 million dam with a NPR 10 million residual over 90 years is depreciated by NPR 1.0 million a year.",
+                "sources": [
+                  {
+                    "id": "CAP4-08-00016",
+                    "label": "p. 30; topic 8 point 16"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-08-00016",
-                "label": "p. 30; topic 8 point 16"
-              },
-              {
                 "id": "CAP4-10-00159",
                 "label": "p. 41; topic 10 point 149"
+              },
+              {
+                "id": "CAP4-08-00016",
+                "label": "p. 30; topic 8 point 16"
               }
             ]
           },
           {
             "id": "liquidity-ratios-and-debentures",
             "title": "The acid-test ratio and debentures as company debt",
-            "html": "<p>The acid-test (quick) ratio asks whether a firm can meet its current liabilities from its most liquid assets. Quick assets leave out inventory and prepaid expenses, which cannot readily be turned into cash. With current assets of NRs 900000, including 300000 of inventory and 60000 of prepayments, quick assets are 900000 − 300000 − 60000 = 540000. Against current liabilities of 450000, the quick ratio is 540000/450000 = 1.20, whereas the current ratio, which keeps inventory and prepayments, is 900000/450000 = 2.00.</p><p>A debenture is a debt instrument: the company borrows and promises interest and repayment of the principal. It is not an ordinary equity share carrying ownership or an assured dividend. Debentures may be secured or unsecured, depending on the terms of the instrument and the governing law, so the name alone reveals nothing about security.</p>",
+            "html": "<p>The <em>acid-test</em> (quick) ratio asks whether a firm can meet its current liabilities from its most liquid assets. Quick assets leave out inventory and prepaid expenses, which cannot readily be turned into cash. The current ratio, by contrast, keeps them in.</p><p>A <em>debenture</em> is a debt instrument: the company borrows and promises interest and repayment of the principal. It is not an ordinary equity share carrying ownership or an assured dividend. Debentures may be secured or unsecured, depending on the terms of the instrument and the governing law, so the name alone reveals nothing about security.</p>",
+            "formulas": [
+              {
+                "label": "Quick ratio",
+                "tex": "Q_r = \\dfrac{CA - I - P_e}{CL}",
+                "where": "CA is current assets, I inventory, P<sub>e</sub> prepaid expenses and CL current liabilities."
+              }
+            ],
+            "example": {
+              "title": "Worked example",
+              "html": "<p>Current assets NRs 900000 including 300000 inventory and 60000 prepayments; current liabilities 450000. Quick assets are 540000, so \\(Q_r = 540000/450000 = 1.20\\), while the current ratio is 2.00.</p>"
+            },
             "points": [
               {
-                "html": "The key result is 1.20. This is the reviewed topic result.",
+                "html": "Current assets of 900000 less 300000 inventory and 60000 prepayments, against 450000 of liabilities, give a quick ratio of 1.20.",
                 "sources": [
                   {
                     "id": "CAP4-10-00020",
@@ -1080,7 +1280,7 @@
                 ]
               },
               {
-                "html": "The key result is A debt instrument whose security depends on its terms.",
+                "html": "A debenture is a debt instrument whose security depends on its terms, not an ordinary equity share.",
                 "sources": [
                   {
                     "id": "CAP4-10-00023",
@@ -1099,6 +1299,48 @@
                 "label": "p. 38; topic 10 point 23"
               }
             ]
+          }
+        ],
+        "formulaSheet": [
+          {
+            "label": "Compound amount",
+            "tex": "F = P(1 + i)^n"
+          },
+          {
+            "label": "Present worth",
+            "tex": "P = \\dfrac{F}{(1 + i)^n}"
+          },
+          {
+            "label": "Effective annual rate",
+            "tex": "i_{\\text{eff}} = \\left(1 + \\dfrac{r}{m}\\right)^m - 1"
+          },
+          {
+            "label": "Sinking-fund deposit",
+            "tex": "A = F\\,\\dfrac{i}{(1 + i)^n - 1}"
+          },
+          {
+            "label": "Gradient amount in year n",
+            "tex": "a_n = a + (n - 1)b"
+          },
+          {
+            "label": "Gradient total",
+            "tex": "S_n = \\dfrac{n\\,[2a + (n - 1)b]}{2}"
+          },
+          {
+            "label": "Net present value",
+            "tex": "\\text{NPV} = \\text{PV}_{\\text{in}} - \\text{PV}_{\\text{out}}"
+          },
+          {
+            "label": "Benefit-cost ratio",
+            "tex": "B/C = \\dfrac{\\text{PV of benefits}}{\\text{PV of costs}}"
+          },
+          {
+            "label": "Straight-line charge",
+            "tex": "D = \\dfrac{C - S}{N}"
+          },
+          {
+            "label": "Quick ratio",
+            "tex": "Q_r = \\dfrac{CA - I - P_e}{CL}"
           }
         ],
         "cautions": [
@@ -1154,7 +1396,7 @@
             "id": "caution-sinking-fund-factor-versus-fund",
             "status": "corrected",
             "prompt": "Capsule: the sinking fund formula is i/((1 + i)ⁿ − 1)",
-            "html": "<p>That fraction is the sinking-fund factor, a pure number linking a target amount to the equal periodic deposit, not the fund itself. The deposit is A = F × i/((1 + i)<sup>n</sup> − 1); for F = NRs 100000, i = 10% and n = 5 it is about NRs 16380. The reviewed version restores the denominator and keeps the factor distinct from the target fund F.</p>",
+            "html": "<p>That fraction is the sinking-fund factor, a pure number linking a target amount to the equal periodic deposit, not the fund itself. The deposit is \\(A = F\\,i/[(1 + i)^n - 1]\\); for F = NRs 100000, i = 10% and n = 5 it is about NRs 16380. The reviewed version restores the denominator and keeps the factor distinct from the target fund F.</p>",
             "sources": [
               {
                 "id": "CAP4-10-00027",
@@ -1166,7 +1408,7 @@
             "id": "caution-gradient-term-versus-total",
             "status": "corrected",
             "prompt": "Capsule: the total cost of maintenance over n years is a + (n − 1)b",
-            "html": "<p>a + (n − 1)b is the amount in year n only, the last term of the arithmetic series. The undiscounted total is n[2a + (n − 1)b]/2; with a = 10000, b = 2000 and n = 4, the year-4 cost is 16000 but the four-year total is 52000.</p>",
+            "html": "<p>\\(a + (n - 1)b\\) is the amount in year n only, the last term of the arithmetic series. The undiscounted total is \\(n[2a + (n - 1)b]/2\\); with a = 10000, b = 2000 and n = 4, the year-4 cost is 16000 but the four-year total is 52000.</p>",
             "sources": [
               {
                 "id": "CAP4-10-00029",
@@ -1245,15 +1487,15 @@
         "code": "AALL1003",
         "questionCount": 34,
         "format": 2,
-        "summary": "<p>Project planning and scheduling covers Project classification and life cycle, planning, bar charts, CPM and PERT, resource levelling and smoothing, monitoring, evaluation and control. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers project planning and scheduling: what makes work a project, formulation and SMART objectives, execution and the time, cost and quality view of performance, bar charts and CPM crashing, activity-on-arrow networks, forward and backward passes, floats and slack, PERT estimates, resource levelling and smoothing, and earned-value and critical-ratio control.</p>",
         "blocks": [
           {
             "id": "projects-versus-operations-and-classification",
             "title": "Projects versus operations, and classifying a project by its service",
-            "html": "<p>A project is a temporary undertaking that creates a defined result and then ends, whereas operations are ongoing and recurring. A road package in which one contractor builds many similar culverts is still a project, because the package as a whole has a finite delivery objective. Monthly payroll that continues indefinitely is an operation, even though every payment has a deadline. Repetition at activity level does not remove project character: a project is unique as a whole but may contain repetitive activities.</p><p>Projects are classified by the primary service delivered, not by the most visible construction work. When a centre's scope is mainly computing, data networking and communication services, housed in a new building, it is an information and communication technology (ICT) infrastructure project; the building is only a delivery component. An acronym such as ICTC is ambiguous until those functional facts are stated.</p>",
+            "html": "<p>A <em>project</em> is a temporary undertaking that creates a defined result and then ends, whereas operations are ongoing and recurring. A road package in which one contractor builds many similar culverts is still a project, because the package as a whole has a finite delivery objective. Monthly payroll that continues indefinitely is an operation, even though every payment has a deadline. A project is unique as a whole but may contain repetitive activities.</p><p>Projects are classified by the primary service delivered, not by the most visible construction work. When a centre's scope is mainly computing, data networking and communication services, housed in a new building, it is an information and communication technology (ICT) infrastructure project; the building is only a delivery component. An acronym such as ICTC is ambiguous until those functional facts are stated.</p>",
             "points": [
               {
-                "html": "The key result is The road package has a defined temporary delivery objective.",
+                "html": "A finite road package with many similar culverts is a project because it has a defined temporary delivery objective; indefinite payroll is an operation.",
                 "sources": [
                   {
                     "id": "CAP4-10-00068",
@@ -1262,7 +1504,7 @@
                 ]
               },
               {
-                "html": "The key result is Information and communication technology infrastructure.",
+                "html": "A centre whose main service is computing, data and communication is an information and communication technology infrastructure project.",
                 "sources": [
                   {
                     "id": "CAP4-10-00154",
@@ -1285,10 +1527,10 @@
           {
             "id": "project-formulation-and-smart-objectives",
             "title": "Project formulation and SMART objectives",
-            "html": "<p>Formulation turns an identified need into criteria for comparing solutions. Once a municipality recognises unreliable water supply, it should define service objectives and measurable outcomes before selecting a treatment technology, so that each alternative can be judged against them. Diagnosing the problem and setting objectives interact, and calling objective setting the first stage is no reason to skip understanding the actual need.</p><p>Well-formed objectives are SMART: specific, measurable, achievable, relevant and time-bound. Each quality adds something the others lack, since a measurable target can still be unrealistic, irrelevant or open-ended.</p><p>Compare a vague aim to improve road safety substantially with a target to cut recorded injury crashes at a defined junction by 20% within two years. The revision adds a place, a quantity and a deadline while keeping the safety purpose. Whether 20% is achievable still depends on baseline evidence; attaching a number does not by itself make an objective SMART.</p>",
+            "html": "<p>Formulation turns an identified need into criteria for comparing solutions. Once a municipality recognises unreliable water supply, it should define service objectives and measurable outcomes before selecting a treatment technology, so that each alternative can be judged against them. Diagnosing the problem and setting objectives interact; calling objective setting the first stage is no reason to skip understanding the need.</p><p>Well-formed objectives are <em>SMART</em>: specific, measurable, achievable, relevant and time-bound. Each quality adds something the others lack, since a measurable target can still be unrealistic, irrelevant or open-ended.</p><p>A vague aim to improve road safety substantially becomes assessable as a target to cut recorded injury crashes at a defined junction by 20% within two years: it gains a place, a quantity and a deadline. Whether 20% is achievable still depends on baseline evidence.</p>",
             "points": [
               {
-                "html": "The key result is Define the service objectives and measurable outcomes.",
+                "html": "Before choosing a treatment technology, the municipality should define the service objectives and measurable outcomes.",
                 "sources": [
                   {
                     "id": "CAP4-10-00038",
@@ -1297,7 +1539,7 @@
                 ]
               },
               {
-                "html": "The key result is SMART. This is the reviewed topic result.",
+                "html": "Objectives that are specific, measurable, achievable, relevant and time-bound are summed up by the acronym SMART.",
                 "sources": [
                   {
                     "id": "CAP4-10-00163",
@@ -1306,7 +1548,7 @@
                 ]
               },
               {
-                "html": "The key result is Reduce the defined junction's recorded injury crashes by 20% within two years.",
+                "html": "A measurable, time-bound revision is: reduce the defined junction's recorded injury crashes by 20% within two years.",
                 "sources": [
                   {
                     "id": "CAP4-10-00164",
@@ -1332,20 +1574,11 @@
           },
           {
             "id": "execution-phase-and-performance-dimensions",
-            "title": "Execution-phase resources and the time, cost and quality view of performance",
-            "html": "<p>In a conventional construction project the execution phase mobilises labour, plant and materials to build the works, so the largest site workforce and most construction spending are normally concentrated there. The exact profile varies, for example where major equipment is bought early.</p><p>Because execution depends on people, a shortage of skilled manpower exposes an immediate resource and competence bottleneck. If approved drawings and materials are ready but qualified welders are not, progress slows and quality is at risk. Replanning, recruiting competent staff or approved subcontracting may be needed, and adding untrained labour does not necessarily remove the constraint.</p><p>Project performance is judged on time, cost and quality, which are distinct dimensions. A bridge completed on schedule and under budget that then fails its specified load test has not performed acceptably: meeting two targets cannot compensate for failing required performance or safety. Scope and stakeholder outcomes also belong in a full assessment.</p>",
+            "title": "Execution-phase resources and the time, cost and quality view",
+            "html": "<p>In a conventional construction project the <em>execution</em> phase mobilises labour, plant and materials to build the works, so the largest site workforce and most construction spending are normally concentrated there. The exact profile varies, for example where major equipment is bought early.</p><p>Because execution depends on people, a shortage of skilled manpower exposes an immediate resource and competence bottleneck. If drawings and materials are ready but qualified welders are not, progress slows and quality is at risk. Replanning, recruiting competent staff or approved subcontracting may be needed; untrained labour does not remove the constraint.</p><p>Performance is judged on time, cost and quality, which are distinct. A bridge completed on schedule and under budget that fails its specified load test has not performed acceptably. Scope and stakeholder outcomes also belong in a full assessment.</p>",
             "points": [
               {
-                "html": "The key result is Time and cost targets alone do not establish acceptable quality.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00051",
-                    "label": "p. 39; topic 10 point 50"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Execution of the works.",
+                "html": "The largest site workforce and most construction spending are normally concentrated in execution of the works.",
                 "sources": [
                   {
                     "id": "CAP4-10-00053",
@@ -1354,20 +1587,25 @@
                 ]
               },
               {
-                "html": "The key result is An execution-phase resource and competence bottleneck.",
+                "html": "Ready drawings and materials but too few skilled welders expose an execution-phase resource and competence bottleneck.",
                 "sources": [
                   {
                     "id": "CAP4-10-00160",
                     "label": "p. 41; topic 10 point 150"
                   }
                 ]
+              },
+              {
+                "html": "A bridge on time and within budget that fails its load test shows that time and cost targets alone do not establish acceptable quality.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00051",
+                    "label": "p. 39; topic 10 point 50"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-10-00051",
-                "label": "p. 39; topic 10 point 50"
-              },
               {
                 "id": "CAP4-10-00053",
                 "label": "p. 39; topic 10 point 52"
@@ -1375,16 +1613,31 @@
               {
                 "id": "CAP4-10-00160",
                 "label": "p. 41; topic 10 point 150"
+              },
+              {
+                "id": "CAP4-10-00051",
+                "label": "p. 39; topic 10 point 50"
               }
             ]
           },
           {
             "id": "bar-charts-cpm-and-crash-cost-slope",
             "title": "Bar charts, deterministic CPM and the crash cost slope",
-            "html": "<p>A Gantt bar chart shows activities as horizontal bars on a time scale. Such charts were in use before CPM and PERT were developed in the mid-twentieth century; that is a historical comparison with the network methods, not a claim that bar charts were the first planning method of any kind. A bare bar chart does not display precedence relationships.</p><p>CPM is activity-oriented and classically uses deterministic, single-value durations. That makes it the natural setting for time-cost trade-off analysis, in which planners estimate how extra direct cost could shorten critical activities by crashing. The network drawing itself does not distinguish CPM from PERT; the treatment of durations does.</p><p>For an activity costing NRs 60000 at a normal 8 days and NRs 90000 at a crash duration of 5 days, over a linear crash range, the cost slope is (90000 − 60000)/(8 − 5) = NRs 10000 for each day of reduction. A purchased day shortens the project only if the activity is critical and still within its crash limit, and every current critical path must be checked.</p>",
+            "html": "<p>A <em>Gantt bar chart</em> shows activities as horizontal bars on a time scale. Such charts were in use before CPM and PERT were developed in the mid-twentieth century; that is a comparison with the network methods, not a claim that bar charts were the first planning method of any kind. A bare bar chart does not show precedence.</p><p><em>CPM</em> is activity-oriented and classically uses deterministic, single-value durations. That makes it the natural setting for time-cost trade-off analysis, in which planners estimate how extra direct cost could shorten critical activities by crashing. The network drawing itself does not distinguish CPM from PERT; the treatment of durations does.</p><p>A purchased day shortens the project only if the activity is critical and within its crash limit, and every current critical path must be checked.</p>",
+            "formulas": [
+              {
+                "label": "Crash cost slope",
+                "tex": "\\text{slope} = \\dfrac{C_c - C_n}{D_n - D_c}",
+                "where": "C<sub>c</sub> and C<sub>n</sub> are the crash and normal costs; D<sub>n</sub> and D<sub>c</sub> the normal and crash durations."
+              }
+            ],
+            "example": {
+              "title": "Worked example: crashing from 8 to 5 days",
+              "html": "<p>NRs 60000 at a normal 8 days and NRs 90000 at a crash 5 days, over a linear range:</p>\\[\\text{slope} = \\dfrac{90000 - 60000}{8 - 5} = 10000\\]<p>That is NRs 10000 for each day saved.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Gantt bar chart.",
+                "html": "The Gantt bar chart, with time-scaled horizontal bars, predates the development of CPM and PERT.",
                 "sources": [
                   {
                     "id": "CAP4-10-00044",
@@ -1393,7 +1646,7 @@
                 ]
               },
               {
-                "html": "The key result is CPM with time-cost trade-off analysis.",
+                "html": "Fixed durations plus a study of buying time with extra direct cost describe CPM with time-cost trade-off analysis.",
                 "sources": [
                   {
                     "id": "CAP4-10-00046",
@@ -1402,7 +1655,7 @@
                 ]
               },
               {
-                "html": "The key result is NRs 10000 per day saved.",
+                "html": "An activity costing NRs 60000 at 8 days and NRs 90000 at 5 days has a cost slope of NRs 10000 per day saved.",
                 "sources": [
                   {
                     "id": "CAP4-10-00047",
@@ -1429,19 +1682,10 @@
           {
             "id": "aoa-activities-events-and-dummies",
             "title": "Activity-on-arrow notation: activities, events and dummy arrows",
-            "html": "<p>In an activity-on-arrow (AOA) network each arrow is an activity and each node is an event, the instant at which activities start or finish. An arrow from event 3 to event 5 labelled excavate, 4 days, means excavation starts at event 3 and finishes at event 5. Event numbers identify the logic; they are not calendar times.</p><p>An event marks the instant when all required predecessors are complete. It is a milestone that consumes no time and no resources. A real inspection or waiting period with nonzero duration must be drawn as an activity, even if it uses little labour.</p><p>A dummy arrow takes no time and uses no resources; it exists only to keep the logic correct. If C must follow both A and B while D follows A only, start D where A ends, start C where B ends, and draw a dummy from the end of A to the start of C; C then waits for both, and D stays independent of B.</p><p>Dummies can also give distinct identities to activities that would otherwise share the same pair of events. A genuine approval or waiting period must never be disguised as a dummy.</p>",
+            "html": "<p>In an <em>activity-on-arrow</em> (AOA) network each arrow is an activity and each node is an event, the instant at which activities start or finish. An arrow from event 3 to event 5 labelled excavate, 4 days, means excavation starts at event 3 and finishes at event 5. Event numbers identify the logic; they are not calendar times.</p><p>An <em>event</em> marks the instant when all required predecessors are complete. It is a milestone that consumes no time and no resources; a real inspection or waiting period with nonzero duration must be drawn as an activity.</p><p>A <em>dummy</em> arrow takes no time and uses no resources; it exists only to keep the logic correct. If C must follow both A and B while D follows A only, start D where A ends, start C where B ends, and draw a dummy from the end of A to the start of C. Dummies can also give distinct identities to activities that would share the same pair of events.</p>",
             "points": [
               {
-                "html": "The key result is Zero duration and zero resource demand.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00041",
-                    "label": "p. 38; topic 10 point 41"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is The arrow is the activity; the nodes are start and finish events.",
+                "html": "In AOA notation, the arrow is the activity; the nodes are start and finish events.",
                 "sources": [
                   {
                     "id": "CAP4-10-00109",
@@ -1450,60 +1694,74 @@
                 ]
               },
               {
-                "html": "The key result is To preserve the distinct precedence logic without adding physical work.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00123",
-                    "label": "p. 40; topic 10 point 116"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is An event or milestone.",
+                "html": "An event, or milestone, marks the moment when every required predecessor of a node is complete; it takes no time.",
                 "sources": [
                   {
                     "id": "CAP4-10-00144",
                     "label": "p. 41; topic 10 point 134"
                   }
                 ]
+              },
+              {
+                "html": "A dummy arrow has zero duration and zero resource demand; it only preserves logic.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00041",
+                    "label": "p. 38; topic 10 point 41"
+                  }
+                ]
+              },
+              {
+                "html": "When C follows A and B but D follows A only, a dummy is used to preserve the distinct precedence logic without adding physical work.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00123",
+                    "label": "p. 40; topic 10 point 116"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-10-00041",
-                "label": "p. 38; topic 10 point 41"
-              },
               {
                 "id": "CAP4-10-00109",
                 "label": "p. 40; topic 10 point 102"
               },
               {
-                "id": "CAP4-10-00123",
-                "label": "p. 40; topic 10 point 116"
-              },
-              {
                 "id": "CAP4-10-00144",
                 "label": "p. 41; topic 10 point 134"
+              },
+              {
+                "id": "CAP4-10-00041",
+                "label": "p. 38; topic 10 point 41"
+              },
+              {
+                "id": "CAP4-10-00123",
+                "label": "p. 40; topic 10 point 116"
               }
             ]
           },
           {
             "id": "forward-pass-and-critical-path",
             "title": "Forward pass, earliest times and the critical path",
-            "html": "<p>The forward pass computes earliest times from the project start. An activity cannot begin until every predecessor has finished, so its earliest start is the largest of the predecessors' earliest finishes, and EF = ES + duration. With predecessors finishing on days 6 and 9 and a 4-day successor, ES = max(6, 9) = 9 and EF = 9 + 4 = 13.</p><p>Every required path must be completed, so the longest path controls the earliest project finish; it is the critical path. Paths of 9, 12 and 10 working days give completion at day 12, not at the sum of the three.</p><p>With paths A-B-D of 3 + 5 + 4 = 12 days and A-C-D of 3 + 7 + 4 = 14 days, the project takes 14 days, the sum of the durations along the critical path. Adding every distinct activity, 3 + 5 + 7 + 4 = 19, wrongly treats the parallel activities B and C as sequential.</p>",
+            "html": "<p>The <em>forward pass</em> computes earliest times from the project start. An activity cannot begin until every predecessor has finished, so its earliest start is the largest of the predecessors' earliest finishes.</p><p>Every required path must be completed, so the longest path controls the earliest project finish; it is the <em>critical path</em>. The project duration is the sum of the durations along that path, not the sum of all activities: adding parallel activities treats them as sequential.</p>",
+            "formulas": [
+              {
+                "label": "Earliest start",
+                "tex": "ES = \\max(EF_{\\text{pred}})"
+              },
+              {
+                "label": "Earliest finish",
+                "tex": "EF = ES + D"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>Predecessors finish on days 6 and 9 and the successor takes 4 days: ES = max(6, 9) = 9 and EF = 13.</li><li>Paths of 9, 12 and 10 days: completion at day 12, not at their sum.</li><li>A-B-D = 3 + 5 + 4 = 12 and A-C-D = 3 + 7 + 4 = 14, so the project takes 14 days; adding all activities, 19, is wrong.</li></ol>"
+            },
             "moreHtml": "<p>Elapsed working-day notation, in which an activity starting at day 9 and lasting 4 days finishes at day 13, avoids the off-by-one adjustment needed with inclusive calendar dates.</p>",
             "points": [
               {
-                "html": "The key result is The 12-day path.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00040",
-                    "label": "p. 38; topic 10 point 40"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Day 9 and day 13.",
+                "html": "Predecessors finishing on days 6 and 9 and a 4-day successor give ES on day 9 and EF on day 13.",
                 "sources": [
                   {
                     "id": "CAP4-10-00048",
@@ -1512,7 +1770,16 @@
                 ]
               },
               {
-                "html": "The key result is 14 days.",
+                "html": "With path durations of 9, 12 and 10 days, the 12-day path controls the earliest completion.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00040",
+                    "label": "p. 38; topic 10 point 40"
+                  }
+                ]
+              },
+              {
+                "html": "Paths A-B-D of 12 days and A-C-D of 14 days give an earliest project duration of 14 days.",
                 "sources": [
                   {
                     "id": "CAP4-10-00148",
@@ -1523,12 +1790,12 @@
             ],
             "sources": [
               {
-                "id": "CAP4-10-00040",
-                "label": "p. 38; topic 10 point 40"
-              },
-              {
                 "id": "CAP4-10-00048",
                 "label": "p. 38; topic 10 point 47"
+              },
+              {
+                "id": "CAP4-10-00040",
+                "label": "p. 38; topic 10 point 40"
               },
               {
                 "id": "CAP4-10-00148",
@@ -1539,10 +1806,28 @@
           {
             "id": "backward-pass-latest-times",
             "title": "Backward pass: latest finish and latest start by the minimum rule",
-            "html": "<p>The backward pass starts from the chosen project finish, usually the earliest completion from the forward pass, and works back to latest allowable times. An activity must finish in time for every successor, so its latest finish is the smallest of its successors' latest starts. With successors whose latest starts are days 18 and 15, LF = min(18, 15) = day 15.</p><p>Then LS = LF − duration, or equivalently LF = LS + duration, so an activity with LS = 9 and a 4-day duration has LF = 13.</p><p>In AOA event form, each outgoing activity supplies a candidate, the successor's latest time minus that activity's duration. Suppose event J has two outgoing activities of 4 and 5 days, ending at events whose latest times are 15 and 18. The candidates are 15 − 4 = 11 and 18 − 5 = 13, so the latest allowable time of J is the smaller, day 11.</p><p>Latest values therefore come from a backward pass, but that pass needs a finish boundary, which the forward pass commonly supplies. Both passes belong to the analysis.</p>",
+            "html": "<p>The <em>backward pass</em> starts from the chosen project finish, usually the earliest completion from the forward pass, and works back to latest allowable times. An activity must finish in time for every successor, so its latest finish is the smallest of its successors' latest starts.</p><p>In AOA event form, each outgoing activity supplies a candidate: the successor event's latest time minus that activity's duration. The latest time of the event is the smallest candidate.</p><p>Latest values therefore come from a backward pass, but that pass needs a finish boundary, which the forward pass commonly supplies. Both passes belong to the analysis.</p>",
+            "formulas": [
+              {
+                "label": "Latest finish",
+                "tex": "LF = \\min(LS_{\\text{succ}})"
+              },
+              {
+                "label": "Latest start",
+                "tex": "LS = LF - D"
+              },
+              {
+                "label": "Latest time of event J",
+                "tex": "L_J = \\min_k\\,(L_k - d_{Jk})"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>Successors with latest starts on days 18 and 15: LF = min(18, 15) = day 15.</li><li>LS = 9 and a 4-day duration: LF = 9 + 4 = day 13.</li><li>Event J with outgoing activities of 4 and 5 days to events at 15 and 18: candidates 11 and 13, so L = day 11.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is Day 15.",
+                "html": "Successors with latest starts on days 18 and 15 give a latest finish of day 15, the minimum.",
                 "sources": [
                   {
                     "id": "CAP4-09-00060",
@@ -1551,7 +1836,16 @@
                 ]
               },
               {
-                "html": "The key result is Day 11.",
+                "html": "An activity with LS on day 9 and a 4-day duration has its latest finish on day 13.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00165",
+                    "label": "p. 41; topic 10 point 155"
+                  }
+                ]
+              },
+              {
+                "html": "Event J with candidates 15 − 4 = 11 and 18 − 5 = 13 has a latest allowable time of day 11.",
                 "sources": [
                   {
                     "id": "CAP4-10-00103",
@@ -1560,20 +1854,11 @@
                 ]
               },
               {
-                "html": "The key result is A backward pass from the finish, using successor constraints.",
+                "html": "Latest starts and finishes come from a backward pass from the finish, using successor constraints.",
                 "sources": [
                   {
                     "id": "CAP4-10-00141",
                     "label": "p. 41; topic 10 point 131"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Day 13.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00165",
-                    "label": "p. 41; topic 10 point 155"
                   }
                 ]
               }
@@ -1584,35 +1869,30 @@
                 "label": "p. 35; topic 9 point 59"
               },
               {
+                "id": "CAP4-10-00165",
+                "label": "p. 41; topic 10 point 155"
+              },
+              {
                 "id": "CAP4-10-00103",
                 "label": "p. 40; topic 10 point 95"
               },
               {
                 "id": "CAP4-10-00141",
                 "label": "p. 41; topic 10 point 131"
-              },
-              {
-                "id": "CAP4-10-00165",
-                "label": "p. 41; topic 10 point 155"
               }
             ]
           },
           {
             "id": "total-float-free-float-and-event-slack",
             "title": "Total float, free float and event slack",
-            "html": "<p>Total float is the delay an activity can absorb without delaying the project finish. For ES = 4, a 5-day duration and LF = 12, EF = 9 and LS = 7, so TF = 12 − 9 = 7 − 4 = 3 days. Free float is the delay that still lets every successor start at its earliest time: an activity with EF = 7 whose earliest successor starts on day 10 has FF = 10 − 7 = 3 days.</p><table><thead><tr><th scope='col'>Measure</th><th scope='col'>Formula</th><th scope='col'>What it protects</th></tr></thead><tbody><tr><th scope='row'>Total float</th><td>LF − EF = LS − ES</td><td>The project finish</td></tr><tr><th scope='row'>Free float</th><td>Earliest successor ES − EF</td><td>Successors' earliest starts</td></tr><tr><th scope='row'>Event slack</th><td>Latest − earliest time of one event</td><td>The timing of that event</td></tr></tbody></table><p>In an ordinary zero-lag network whose finish is set at the earliest completion, TF ≥ FF, and the two can be equal. A critical activity with EF = LF = 8 and a successor starting on day 8 has TF = 0 and FF = 0. An event whose earliest and latest times are 8 and 11 has a slack of 11 − 8 = 3 days. Imposed deadlines can create negative float, which needs separate treatment.</p>",
+            "html": "<p><em>Total float</em> is the delay an activity can absorb without delaying the project finish. <em>Free float</em> is the delay that still lets every successor start at its earliest time.</p><table><thead><tr><th scope='col'>Measure</th><th scope='col'>Formula</th><th scope='col'>What it protects</th></tr></thead><tbody><tr><th scope='row'>Total float</th><td>LF − EF = LS − ES</td><td>The project finish</td></tr><tr><th scope='row'>Free float</th><td>Earliest successor ES − EF</td><td>Successors' earliest starts</td></tr><tr><th scope='row'>Event slack</th><td>Latest − earliest time of one event</td><td>The timing of that event</td></tr></tbody></table><p>In an ordinary zero-lag network whose finish is set at the earliest completion, TF ≥ FF, and the two can be equal; critical activities commonly have both zero. Imposed deadlines can create negative float, which needs separate treatment.</p>",
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>ES = 4, D = 5, LF = 12: EF = 9 and LS = 7, so TF = 12 − 9 = 7 − 4 = 3 days.</li><li>EF = 7 and earliest successor start 10: FF = 3 days.</li><li>EF = LF = 8 with a successor at ES = 8: TF = FF = 0.</li><li>Event times 8 and 11: slack = 3 days.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is 3 days.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00036",
-                    "label": "p. 38; topic 10 point 36"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is 3 days.",
+                "html": "With ES on day 4, a 5-day duration and LF on day 12, the total float is 12 − 9 = 3 days.",
                 "sources": [
                   {
                     "id": "CAP4-10-00042",
@@ -1621,7 +1901,16 @@
                 ]
               },
               {
-                "html": "The key result is Both can be zero, so TF need not be strictly greater than FF.",
+                "html": "An activity with EF on day 7 whose earliest successor starts on day 10 has 3 days of free float.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00036",
+                    "label": "p. 38; topic 10 point 36"
+                  }
+                ]
+              },
+              {
+                "html": "EF = LF = 8 with a successor at ES = 8 shows both floats can be zero, so TF need not be strictly greater than FF.",
                 "sources": [
                   {
                     "id": "CAP4-10-00116",
@@ -1630,7 +1919,7 @@
                 ]
               },
               {
-                "html": "The key result is 3 days.",
+                "html": "An event with earliest time 8 days and latest time 11 days has an event slack of 3 days.",
                 "sources": [
                   {
                     "id": "CAP4-10-00155",
@@ -1641,12 +1930,12 @@
             ],
             "sources": [
               {
-                "id": "CAP4-10-00036",
-                "label": "p. 38; topic 10 point 36"
-              },
-              {
                 "id": "CAP4-10-00042",
                 "label": "p. 38; topic 10 point 42"
+              },
+              {
+                "id": "CAP4-10-00036",
+                "label": "p. 38; topic 10 point 36"
               },
               {
                 "id": "CAP4-10-00116",
@@ -1661,10 +1950,24 @@
           {
             "id": "pert-three-estimates-and-spread",
             "title": "PERT: three time estimates, expected duration and standard deviation",
-            "html": "<p>Classical PERT treats durations as uncertain and uses three estimates per activity: optimistic t<sub>o</sub>, most likely t<sub>m</sub> and pessimistic t<sub>p</sub>. The duration of an individual activity is approximated by a bounded beta-type distribution. A normal approximation may be used, under further assumptions, for the total duration of a path, not for each activity.</p><p>The expected duration weights the most likely estimate four times: t<sub>e</sub> = (t<sub>o</sub> + 4t<sub>m</sub> + t<sub>p</sub>)/6. For estimates of 2, 5 and 14 days, t<sub>e</sub> = (2 + 20 + 14)/6 = 36/6 = 6 days. Without the divisor the numerator, 36, is not a duration estimate at all.</p><p>Spread is described by the standard deviation, the positive square root of the variance. A variance of 16 days² gives √16 = 4 days; taking the root returns the units from squared time to time.</p>",
+            "html": "<p>Classical <em>PERT</em> treats durations as uncertain and uses three estimates per activity: optimistic, most likely and pessimistic. The duration of an individual activity is approximated by a bounded beta-type distribution. A normal approximation may be used, under further assumptions, for the total duration of a path, not for each activity.</p><p>The expected duration weights the most likely estimate four times. Without the divisor the numerator is not a duration at all. Spread is described by the standard deviation, the positive square root of the variance, which returns the units from squared time to time.</p>",
+            "formulas": [
+              {
+                "label": "PERT expected time",
+                "tex": "t_e = \\dfrac{t_o + 4t_m + t_p}{6}"
+              },
+              {
+                "label": "Standard deviation",
+                "tex": "\\sigma = \\sqrt{\\sigma^2}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>Estimates of 2, 5 and 14 days: the numerator is 2 + 20 + 14 = 36, so \\(t_e = 36/6 = 6\\) days.</li><li>A variance of 16 days<sup>2</sup> gives \\(\\sigma = \\sqrt{16} = 4\\) days.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is A bounded beta-type approximation using three estimates.",
+                "html": "Classical PERT models an individual activity by a bounded beta-type approximation using three estimates.",
                 "sources": [
                   {
                     "id": "CAP4-10-00039",
@@ -1673,7 +1976,7 @@
                 ]
               },
               {
-                "html": "The key result is 6 days.",
+                "html": "Estimates of 2, 5 and 14 days give a PERT expected duration of 36/6 = 6 days.",
                 "sources": [
                   {
                     "id": "CAP4-10-00050",
@@ -1682,7 +1985,7 @@
                 ]
               },
               {
-                "html": "The key result is 4 days.",
+                "html": "An activity-duration variance of 16 days<sup>2</sup> gives a standard deviation of 4 days.",
                 "sources": [
                   {
                     "id": "CAP4-10-00114",
@@ -1709,10 +2012,10 @@
           {
             "id": "resource-levelling-versus-smoothing",
             "title": "Resource levelling versus resource smoothing",
-            "html": "<p>Both techniques reshape resource demand, but they hold different things fixed. Resource levelling treats resource availability as the hard constraint. If two parallel tasks each need the only crane for their whole duration and no second crane exists, one must wait, and the project finish may move later to respect the limit.</p><p>Resource smoothing keeps the required project finish fixed and moves only noncritical work within its available float. Shifting a noncritical task two days inside its float to reduce a labour peak, while holding the finish date, is smoothing. It cannot always remove a peak: when float runs out, a hard resource limit can be met only by levelling.</p><p>A quick test separates them. If the finish date may change so that the resource limit is respected, the operation is levelling; if the finish date is protected and float is used, it is smoothing.</p>",
+            "html": "<p>Both techniques reshape resource demand, but they hold different things fixed.</p><ul><li><em>Resource levelling</em> treats resource availability as the hard constraint. If two parallel tasks each need the only crane for their whole duration and no second crane exists, one must wait, and the project finish may move later to respect the limit.</li><li><em>Resource smoothing</em> keeps the required project finish fixed and moves only noncritical work within its available float. It cannot always remove a peak: when float runs out, a hard resource limit can be met only by levelling.</li></ul><p>A quick test separates them. If the finish date may change so that the resource limit is respected, the operation is levelling; if the finish date is protected and float is used, it is smoothing.</p>",
             "points": [
               {
-                "html": "The key result is Resource levelling.",
+                "html": "Two parallel tasks sharing the only crane, with no spare available, call for resource levelling even if completion moves.",
                 "sources": [
                   {
                     "id": "CAP4-10-00035",
@@ -1721,7 +2024,7 @@
                 ]
               },
               {
-                "html": "The key result is Resource smoothing.",
+                "html": "Shifting a noncritical task within its float to cut a labour peak, with the finish date held, is resource smoothing.",
                 "sources": [
                   {
                     "id": "CAP4-10-00049",
@@ -1743,20 +2046,25 @@
           },
           {
             "id": "monitoring-earned-value-and-critical-ratio",
-            "title": "Monitoring and control: earned value terms, SPI and critical ratio",
-            "html": "<p>Earned-value control compares three measures at a status date. BCWS, the planned value, is the budgeted cost of work scheduled; BCWP, the earned value, is the budgeted cost of work actually performed; ACWP is the actual cost incurred for that work. If completed work has a baseline value of NRs 400000 but actually cost NRs 460000, BCWP = 400000 and ACWP = 460000; completing the work does not turn its budget into its actual cost.</p><p>The schedule performance index is SPI = BCWP/BCWS. With BCWP = 600000 and BCWS = 800000, SPI = 0.75, meaning less work has been earned than planned. SPI compares budgeted values only, so it says nothing about actual spending and does not mean the finish date is exactly 25% late.</p><p>Critical ratio scheduling sets priorities among jobs using time remaining until due divided by work remaining. Job X, due in 6 days with 8 days of work left, has 6/8 = 0.75; job Y, due in 8 days with 4 days left, has 8/4 = 2. The smaller ratio goes first, so X is more urgent, and a ratio below 1 signals insufficient time at the assumed rate.</p>",
-            "points": [
+            "title": "Monitoring and control: earned value, SPI and critical ratio",
+            "html": "<p>Earned-value control compares three measures at a status date.</p><ul><li><em>BCWS</em>, the planned value: budgeted cost of work scheduled.</li><li><em>BCWP</em>, the earned value: budgeted cost of work actually performed.</li><li><em>ACWP</em>: the actual cost incurred for that work. Completing the work does not turn its budget into its actual cost.</li></ul><p>The schedule performance index compares budgeted values only, so it says nothing about actual spending and does not mean the finish date is late by a fixed percentage.</p><p><em>Critical ratio</em> scheduling sets priorities among jobs using time remaining until due divided by work remaining. The smaller ratio goes first, and a ratio below 1 signals insufficient time at the assumed rate.</p>",
+            "formulas": [
               {
-                "html": "The key result is 0.75, indicating less earned work than planned.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00032",
-                    "label": "p. 38; topic 10 point 32"
-                  }
-                ]
+                "label": "Schedule performance index",
+                "tex": "SPI = \\dfrac{BCWP}{BCWS}"
               },
               {
-                "html": "The key result is NRs 460000, the actual cost incurred.",
+                "label": "Critical ratio",
+                "tex": "CR = \\dfrac{\\text{time until due}}{\\text{work remaining}}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>Work budgeted at NRs 400000 that actually cost NRs 460000: BCWP = 400000, ACWP = 460000.</li><li>BCWP = 600000 and BCWS = 800000: SPI = 0.75.</li><li>Job X, due in 6 days with 8 days of work: CR = 0.75; job Y, 8/4 = 2. X goes first.</li></ol>"
+            },
+            "points": [
+              {
+                "html": "Work with a baseline value of NRs 400000 that actually cost NRs 460000 has ACWP of NRs 460000, the actual cost incurred.",
                 "sources": [
                   {
                     "id": "CAP4-10-00034",
@@ -1765,7 +2073,16 @@
                 ]
               },
               {
-                "html": "The key result is X, with a critical ratio of 0.75.",
+                "html": "BCWP of NRs 600000 against BCWS of NRs 800000 gives SPI = 0.75, indicating less earned work than planned.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00032",
+                    "label": "p. 38; topic 10 point 32"
+                  }
+                ]
+              },
+              {
+                "html": "Job X, with 6 days to due and 8 days of work, is more urgent than Y, with a critical ratio of 0.75 against 2.",
                 "sources": [
                   {
                     "id": "CAP4-10-00043",
@@ -1776,18 +2093,52 @@
             ],
             "sources": [
               {
-                "id": "CAP4-10-00032",
-                "label": "p. 38; topic 10 point 32"
-              },
-              {
                 "id": "CAP4-10-00034",
                 "label": "p. 38; topic 10 point 34"
+              },
+              {
+                "id": "CAP4-10-00032",
+                "label": "p. 38; topic 10 point 32"
               },
               {
                 "id": "CAP4-10-00043",
                 "label": "p. 38; topic 10 point 43"
               }
             ]
+          }
+        ],
+        "formulaSheet": [
+          {
+            "label": "Forward pass",
+            "tex": "ES = \\max(EF_{\\text{pred}})"
+          },
+          {
+            "label": "Backward pass",
+            "tex": "LF = \\min(LS_{\\text{succ}})"
+          },
+          {
+            "label": "Total float",
+            "tex": "TF = LF - EF = LS - ES"
+          },
+          {
+            "label": "Free float",
+            "tex": "FF = \\min(ES_{\\text{succ}}) - EF"
+          },
+          {
+            "label": "PERT expected time",
+            "tex": "t_e = \\dfrac{t_o + 4t_m + t_p}{6}"
+          },
+          {
+            "label": "Crash cost slope",
+            "tex": "\\text{slope} = \\dfrac{C_c - C_n}{D_n - D_c}"
+          },
+          {
+            "label": "Schedule performance index",
+            "tex": "SPI = \\dfrac{BCWP}{BCWS}"
+          },
+          {
+            "label": "Critical ratio",
+            "tex": "CR = \\dfrac{\\text{time until due}}{\\text{work remaining}}"
           }
         ],
         "cautions": [
@@ -1843,7 +2194,7 @@
             "id": "caution-pert-divisor",
             "status": "corrected",
             "prompt": "Capsule, as extracted: Te = T0 + Tp + 4Tm",
-            "html": "<p>The extracted point lost its divisor. The expected PERT time is t<sub>e</sub> = (t<sub>o</sub> + 4t<sub>m</sub> + t<sub>p</sub>)/6, and the complete page text places 6 beneath the numerator. With 2, 5 and 14 days the numerator is 36 but the expected time is 6 days.</p>",
+            "html": "<p>The extracted point lost its divisor. The expected PERT time is \\(t_e = (t_o + 4t_m + t_p)/6\\), and the complete page text places 6 beneath the numerator. With 2, 5 and 14 days the numerator is 36 but the expected time is 6 days.</p>",
             "sources": [
               {
                 "id": "CAP4-10-00050",
@@ -1910,15 +2261,29 @@
         "code": "AALL1004",
         "questionCount": 25,
         "format": 2,
-        "summary": "<p>Project management covers Information systems, risk analysis and management, project financing, tendering and contract management. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers project management: risk as return variability and when to analyse it, risk owners and continuous improvement, lender appraisal and the sponsor, contracts and dispute routes, subcontracting, advances and liquidated damages, delivery models such as EPC, BOOT and PPP, consultant selection, and Nepal procurement rules on method, bid validity, price adjustment and blacklisting.</p>",
         "blocks": [
           {
             "id": "risk-as-variability-and-timing-of-analysis",
             "title": "Measuring risk as variability, and when to analyse project risk",
-            "html": "<p>In finance, one common measure of risk is the variability of returns around their expected value. Two investments with the same 10% expected return can differ sharply. If the first returns 8% or 12% with equal probability, each outcome deviates by 2 points, so the variance is 0.5(2<sup>2</sup> + 2<sup>2</sup>) = 4 and the standard deviation 2 percentage points.</p><p>If the second returns 4% or 16%, each deviates by 6 points, the variance is 36 and the standard deviation 6 percentage points, so it is riskier on this measure. Variability is one financial risk measure, not a complete definition of project risk.</p><p>Detailed risk analysis is most useful during planning, while alternatives such as two possible intake sites remain open and controls can still shape the design. It is not a one-time formality: risks change through design, construction and operation, so the assessment is monitored and updated as design and evidence develop.</p>",
+            "html": "<p>In finance, one common measure of risk is the variability of returns around their expected value, measured by the standard deviation. Two investments with the same expected return can differ sharply in spread. Variability is one financial risk measure, not a complete definition of project risk, which also involves hazards and uncertain events.</p><p>Detailed risk analysis is most useful during planning, while alternatives such as two possible intake sites remain open and controls can still shape the design. It is not a one-time formality: risks change through design, construction and operation, so the assessment is monitored and updated as design and evidence develop.</p>",
+            "formulas": [
+              {
+                "label": "Variance of a discrete return distribution",
+                "tex": "\\sigma^2 = \\sum p_k\\,(x_k - \\mu)^2"
+              },
+              {
+                "label": "Standard deviation",
+                "tex": "\\sigma = \\sqrt{\\sigma^2}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: two investments with a 10% mean",
+              "html": "<ol><li>Returns of 8% or 12%, equally likely: each deviates by 2 points, so \\(\\sigma^2 = 0.5(2^2 + 2^2) = 4\\) and σ = 2 points.</li><li>Returns of 4% or 16%: deviations of 6, so \\(\\sigma^2 = 36\\) and σ = 6 points. The second is riskier on this measure.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is The second: standard deviations are 6 versus 2 percentage points.",
+                "html": "Returns of 4% or 16% are riskier than 8% or 12% at the same mean: the second's standard deviations are 6 versus 2 percentage points.",
                 "sources": [
                   {
                     "id": "CAP4-06-00078",
@@ -1927,7 +2292,7 @@
                 ]
               },
               {
-                "html": "The key result is During planning, with updates as design and evidence change.",
+                "html": "Detailed risk analysis should first shape the intake-site choice during planning, with updates as design and evidence change.",
                 "sources": [
                   {
                     "id": "CAP4-06-00081",
@@ -1950,10 +2315,10 @@
           {
             "id": "risk-management-owners-and-continuous-improvement",
             "title": "Risk management decisions, accountable owners and continuous improvement",
-            "html": "<p>Risk assessment estimates what can go wrong; risk management decides what to do about it. A utility that compares source substitution, treatment and exposure restrictions for a contaminated supply, weighing effectiveness, feasibility and stakeholder impacts, is managing risk. Hazard identification and exposure or toxicity assessment feed evidence into that decision rather than make it, and the chosen controls still need implementation and monitoring.</p><p>Treatment needs accountable owners. A risk manager coordinates identification, assessment and follow-up, but a mitigation that requires design changes and director-approved funding must be assigned to named owners with the authority, resources and deadline to deliver it. An action is closed on verified implementation, not when funding is approved.</p><p>Continuous improvement applies the same evidence loop to working processes: analyse recurring defects, trial a revised procedure, measure the results and standardise the change only if performance improves. It is broader than making plans more detailed over time, and an unmeasured change is not necessarily an improvement.</p>",
+            "html": "<p>Risk assessment estimates what can go wrong; <em>risk management</em> decides what to do about it. A utility weighing source substitution, treatment and exposure restrictions for a contaminated supply, by effectiveness, feasibility and stakeholder impacts, is managing risk. Hazard identification and exposure or toxicity assessment feed evidence into that decision, and the chosen controls still need implementation and monitoring.</p><p>Treatment needs accountable owners. A risk manager coordinates identification, assessment and follow-up, but a mitigation that needs design changes and director-approved funding must be assigned to named owners with the authority, resources and deadline to deliver it. An action is closed on verified implementation, not on funding approval.</p><p><em>Continuous improvement</em> applies the same evidence loop to working processes: analyse recurring defects, trial a revised procedure, measure the results and standardise only if performance improves. An unmeasured change is not necessarily an improvement.</p>",
             "points": [
               {
-                "html": "The key result is Risk management through evaluation of control alternatives.",
+                "html": "Weighing control options such as source substitution, treatment and exposure limits is risk management through evaluation of control alternatives.",
                 "sources": [
                   {
                     "id": "CAP4-06-00085",
@@ -1962,7 +2327,7 @@
                 ]
               },
               {
-                "html": "The key result is Assign action owners and resources, with risk-manager coordination and follow-up.",
+                "html": "A mitigation needing design changes and director funding calls for assigned action owners and resources, with risk-manager coordination and follow-up.",
                 "sources": [
                   {
                     "id": "CAP4-06-00132",
@@ -1971,7 +2336,7 @@
                 ]
               },
               {
-                "html": "The key result is Continuous improvement.",
+                "html": "Analysing defects, trialling a new procedure, measuring the results and standardising only on improvement is continuous improvement.",
                 "sources": [
                   {
                     "id": "CAP4-10-00061",
@@ -1998,10 +2363,10 @@
           {
             "id": "project-appraisal-and-sponsor",
             "title": "Project appraisal by lenders and the role of the project sponsor",
-            "html": "<p>Project appraisal evaluates a proposal's viability and risks before any commitment is made. A bank considering a loan looks at expected demand, construction risk, operating cash flow, security and debt-service capacity. For a financial institution this is the key study for managing its risk, because the central question is the quality and resilience of repayment cash flows, not an optimistic profit estimate or a completed site drawing.</p><p>The project sponsor is the senior representative who secures funding, champions the business case and resolves decisions beyond the project manager's authority. The sponsor links the project to its business justification and provides organisational support. The role is broader than processing invoices, and it does not mean that the sponsor personally lends every unit of the project's finance.</p>",
+            "html": "<p><em>Project appraisal</em> evaluates a proposal's viability and risks before any commitment is made. A bank considering a loan looks at expected demand, construction risk, operating cash flow, security and debt-service capacity. For a financial institution this is the key study for managing its risk, because the central question is the quality and resilience of repayment cash flows, not an optimistic profit estimate or a completed site drawing.</p><p>The <em>project sponsor</em> is the senior representative who secures funding, champions the business case and resolves decisions beyond the project manager's authority. The sponsor links the project to its business justification and provides organisational support. The role is broader than processing invoices, and the sponsor need not personally lend the project's finance.</p>",
             "points": [
               {
-                "html": "The key result is Project appraisal.",
+                "html": "A bank examining demand, construction risk, operating cash flow and debt-service capacity before lending is carrying out project appraisal.",
                 "sources": [
                   {
                     "id": "CAP4-10-00056",
@@ -2010,7 +2375,7 @@
                 ]
               },
               {
-                "html": "The key result is Project sponsor.",
+                "html": "The senior figure who secures funding, champions the business case and settles escalated decisions is the project sponsor.",
                 "sources": [
                   {
                     "id": "CAP4-10-00106",
@@ -2033,10 +2398,10 @@
           {
             "id": "contracts-agreements-and-dispute-routes",
             "title": "Contracts, agreements and routes for resolving disputes",
-            "html": "<p>A contract is an agreement that creates legally enforceable obligations under the applicable law. Enforceability, including the legal requirements for forming a contract, is what separates it from an informal understanding; the size of the paper, the title of the document and the type of work do not. Whether writing is required depends on the governing law.</p><p>This explains the rule that all contracts are agreements, but not all agreements are contracts. Friends who agree socially to meet for lunch ordinarily have no intention of creating legal obligations. Their friendship would not, however, prevent them from making a separate, genuine commercial contract.</p><p>Disputes need not end in court. Depending on the governing law and a valid contract, negotiation, adjudication or arbitration can settle the merits. Where a contract provides negotiation followed by binding arbitration, courts may keep specified supervisory or enforcement roles, but litigation is not the inevitable final stage of every contract dispute.</p>",
+            "html": "<p>A <em>contract</em> is an agreement that creates legally enforceable obligations under the applicable law. Enforceability, including the legal requirements for forming a contract, separates it from an informal understanding; the size of the paper, the title of the document and the type of work do not. Whether writing is required depends on the governing law.</p><p>Hence all contracts are agreements, but not all agreements are contracts. Friends who agree socially to meet for lunch ordinarily have no intention of creating legal obligations, although their friendship would not prevent a separate commercial contract.</p><p>Disputes need not end in court. Depending on the governing law and a valid contract, negotiation, adjudication or arbitration can settle the merits. Where a contract provides negotiation followed by binding arbitration, courts may keep specified supervisory or enforcement roles, but litigation is not the inevitable final stage.</p>",
             "points": [
               {
-                "html": "The key result is Its agreement creates legally enforceable obligations.",
+                "html": "An arrangement is a contract rather than an informal understanding when its agreement creates legally enforceable obligations.",
                 "sources": [
                   {
                     "id": "CAP4-10-00058",
@@ -2045,20 +2410,20 @@
                 ]
               },
               {
-                "html": "The key result is Arbitration can resolve the merits, with only limited court involvement.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00107",
-                    "label": "p. 40; topic 10 point 99"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is A contract requires an agreement that is legally enforceable.",
+                "html": "A social lunch plan is not a contract because a contract requires an agreement that is legally enforceable.",
                 "sources": [
                   {
                     "id": "CAP4-10-00134",
                     "label": "p. 41; topic 10 point 124"
+                  }
+                ]
+              },
+              {
+                "html": "With negotiation followed by binding arbitration, arbitration can resolve the merits, with only limited court involvement.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00107",
+                    "label": "p. 40; topic 10 point 99"
                   }
                 ]
               }
@@ -2069,22 +2434,33 @@
                 "label": "p. 39; topic 10 point 57"
               },
               {
-                "id": "CAP4-10-00107",
-                "label": "p. 40; topic 10 point 99"
-              },
-              {
                 "id": "CAP4-10-00134",
                 "label": "p. 41; topic 10 point 124"
+              },
+              {
+                "id": "CAP4-10-00107",
+                "label": "p. 40; topic 10 point 99"
               }
             ]
           },
           {
             "id": "subcontracting-mobilisation-advance-and-liquidated-damages",
             "title": "Subcontracting, mobilisation advance and liquidated damages",
-            "html": "<p>In subcontracting, a main contractor engages a specialist through a separate agreement to perform a defined part of its works, such as the electrical installation. The main contractor keeps its contract with the employer and is not released from its obligations; consent and responsibility follow the governing contract. Novating the entire contract, or transferring the employer's obligation to pay, are different arrangements.</p><p>A mobilisation advance is paid by the client after the agreement is signed and before substantial work begins, so that the contractor can deploy people and equipment. It is normally administered with agreed security and recovery provisions and is neither payment for measured work nor an unconditional extra fee.</p><p>Liquidated damages are damages agreed in the contract for delay beyond the completion date. Take a valid contract whose delay damages are 0.05% of a NRs 40 million price for each assessable day, with a ceiling of 10% of the price. The daily amount is 40000000 × 0.0005 = NRs 20000.</p><p>Completion 30 days after the original date with an approved 10-day extension leaves, on the stated assumption, 20 assessable days, so the damages are 20 × 20000 = NRs 400000, well below the cap of 0.10 × 40000000 = NRs 4000000.</p>",
+            "html": "<p>In <em>subcontracting</em>, a main contractor engages a specialist through a separate agreement to perform a defined part of its works, such as the electrical installation. The main contractor keeps its contract with the employer and is not released from its obligations. Novating the whole contract, or transferring the employer's duty to pay, are different arrangements.</p><p>A <em>mobilisation advance</em> is paid by the client after the agreement is signed and before substantial work begins, so that the contractor can deploy people and equipment. It is administered with agreed security and recovery provisions and is neither payment for measured work nor an extra fee.</p><p><em>Liquidated damages</em> are damages agreed in the contract for delay beyond the completion date, subject to law and to any stated cap.</p>",
+            "formulas": [
+              {
+                "label": "Liquidated damages as stated in a contract",
+                "tex": "LD = P\\,r\\,n \\le c\\,P",
+                "where": "P is the contract price, r the daily rate, n the assessable days and c the cap fraction."
+              }
+            ],
+            "example": {
+              "title": "Worked example: a NRs 40 million contract",
+              "html": "<p>Rate 0.05% a day, cap 10%. The daily amount is 40000000 × 0.0005 = NRs 20000. Completion 30 days late with an approved 10-day extension leaves 20 assessable days, so LD = 20 × 20000 = NRs 400000, well below the NRs 4000000 cap.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Subcontracting. This is the reviewed topic result.",
+                "html": "A main contractor engaging a specialist for the electrical portion while keeping its own contract is subcontracting.",
                 "sources": [
                   {
                     "id": "CAP4-10-00052",
@@ -2093,20 +2469,20 @@
                 ]
               },
               {
-                "html": "The key result is NRs 400000.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00108",
-                    "label": "p. 40; topic 10 point 100; topic 10 point 101"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Mobilisation advance.",
+                "html": "An advance paid before substantial work so the contractor can mobilise, with security and recovery terms, is a mobilisation advance.",
                 "sources": [
                   {
                     "id": "CAP4-10-00167",
                     "label": "p. 42; topic 10 point 157"
+                  }
+                ]
+              },
+              {
+                "html": "Delay damages of 0.05% a day on NRs 40 million over 20 assessable days total NRs 400000, below the 10% cap.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00108",
+                    "label": "p. 40; topic 10 point 100; topic 10 point 101"
                   }
                 ]
               }
@@ -2117,22 +2493,22 @@
                 "label": "p. 39; topic 10 point 51"
               },
               {
-                "id": "CAP4-10-00108",
-                "label": "p. 40; topic 10 point 100; topic 10 point 101"
-              },
-              {
                 "id": "CAP4-10-00167",
                 "label": "p. 42; topic 10 point 157"
+              },
+              {
+                "id": "CAP4-10-00108",
+                "label": "p. 40; topic 10 point 100; topic 10 point 101"
               }
             ]
           },
           {
             "id": "epc-boot-ppp-and-organisational-labels",
-            "title": "Delivery models and organisational labels: EPC, BOOT, PPP and semi-government",
-            "html": "<p>EPC stands for engineering, procurement and construction: one package places design development, equipment and material sourcing, and delivery of the built facility with one party. The acronym settles nothing about ownership, operating rights or long-term financing.</p><p>BOOT (build-own-operate-transfer) is a concession in which the concessionaire builds the facility, owns and operates it for a defined period, and then transfers it. Handing the construction of a public road to a government body, even on a fast-track basis, involves none of these ownership and operation features and so is not evidence of BOOT.</p><p>A public-private partnership (PPP) is a contractual arrangement in which a public authority and a private entity delivering the project share defined responsibilities and allocated risks. Political parties can be stakeholders in public debate, but they are not the partners that define a PPP.</p><p>A label such as semi-government describes an organisation with mixed public and private involvement, but it is not one universal legal form. Actual management authority must be read from the constituting law, ownership and governance documents, not inferred from the label or an assumed ownership split.</p>",
+            "title": "Delivery models and labels: EPC, BOOT, PPP and semi-government",
+            "html": "<ul><li><em>EPC</em> stands for engineering, procurement and construction: one package places design development, equipment and material sourcing, and delivery of the built facility with one party. It settles nothing about ownership, operation or long-term financing.</li><li><em>BOOT</em> (build-own-operate-transfer) is a concession in which the concessionaire builds the facility, owns and operates it for a defined period, then transfers it. Handing the construction of a public road to a government body, even fast-track, has none of these features.</li><li>A <em>public-private partnership</em> (PPP) is a contract in which a public authority and a private project entity share defined responsibilities and allocated risks. Political parties can be stakeholders in public debate but are not the partners that define a PPP.</li></ul><p>A label such as semi-government describes mixed public and private involvement but is not one legal form. Actual management authority must be read from the constituting law, ownership and governance documents.</p>",
             "points": [
               {
-                "html": "The key result is Engineering, procurement and construction.",
+                "html": "In a delivery package, EPC denotes engineering, procurement and construction by one party.",
                 "sources": [
                   {
                     "id": "CAP4-10-00054",
@@ -2141,7 +2517,7 @@
                 ]
               },
               {
-                "html": "The key result is The concessionaire builds, owns, operates and later transfers it.",
+                "html": "BOOT differs from a mere construction assignment because the concessionaire builds, owns, operates and later transfers the facility.",
                 "sources": [
                   {
                     "id": "CAP4-10-00055",
@@ -2150,20 +2526,20 @@
                 ]
               },
               {
-                "html": "The key result is Its constituting law, ownership and governance documents.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00111",
-                    "label": "p. 40; topic 10 point 104"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is A public authority and a private project entity.",
+                "html": "The core contractual partnership of a PPP is between a public authority and a private project entity.",
                 "sources": [
                   {
                     "id": "CAP4-10-00147",
                     "label": "p. 41; topic 10 point 137"
+                  }
+                ]
+              },
+              {
+                "html": "The management authority of a semi-government body is defined by its constituting law, ownership and governance documents.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00111",
+                    "label": "p. 40; topic 10 point 104"
                   }
                 ]
               }
@@ -2178,22 +2554,22 @@
                 "label": "p. 39; topic 10 point 54"
               },
               {
-                "id": "CAP4-10-00111",
-                "label": "p. 40; topic 10 point 104"
-              },
-              {
                 "id": "CAP4-10-00147",
                 "label": "p. 41; topic 10 point 137"
+              },
+              {
+                "id": "CAP4-10-00111",
+                "label": "p. 40; topic 10 point 104"
               }
             ]
           },
           {
             "id": "consultant-selection-rfp-and-prequalification",
             "title": "Consultant selection and bidder screening: QCBS, RFP and prequalification",
-            "html": "<p>Quality- and Cost-Based Selection (QCBS) is a recognised method for selecting consultants. It combines the evaluation of technical quality with the evaluation of price, using weights disclosed in the procurement rules. The word quantity has no place in its name, and no particular weighting is presented here as statutory.</p><p>A Request for Proposal (RFP) is sent by the procuring entity to shortlisted consultants. It describes the services, the submission requirements and the evaluation criteria, and invites the technical and financial proposal that the procedure requires. It is not an invoice, a payment certificate or an assurance of award.</p><p>Prequalification is the implementing agency's check, before priced bids are invited, that firms are eligible and capable of carrying out a complex contract. Firms are screened against published criteria such as experience, key personnel, equipment and financial capacity. Prequalification neither awards the contract nor decides whether a later bid will be responsive.</p>",
+            "html": "<ul><li><em>Quality- and Cost-Based Selection</em> (QCBS) is a recognised method for selecting consultants. It combines the evaluation of technical quality with that of price, using weights disclosed in the procurement rules. The word quantity has no place in its name, and no weighting is presented here as statutory.</li><li>A <em>Request for Proposal</em> (RFP) is sent by the procuring entity to shortlisted consultants. It describes the services, submission requirements and evaluation criteria, and invites the technical and financial proposal the procedure requires. It is not an invoice, a payment certificate or an assurance of award.</li><li><em>Prequalification</em> is the implementing agency's check, before priced bids are invited, that firms are eligible and capable of a complex contract, against published criteria such as experience, key personnel, equipment and financial capacity. It neither awards the contract nor decides whether a later bid is responsive.</li></ul>",
             "points": [
               {
-                "html": "The key result is Quality- and Cost-Based Selection.",
+                "html": "Evaluating technical merit together with price under disclosed weights is Quality- and Cost-Based Selection.",
                 "sources": [
                   {
                     "id": "CAP4-10-00059",
@@ -2202,20 +2578,20 @@
                 ]
               },
               {
-                "html": "The key result is Prequalification. This is the reviewed topic result.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00062",
-                    "label": "p. 39; topic 10 point 61"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Request for Proposal.",
+                "html": "RFP means Request for Proposal: it invites shortlisted consultants to submit the proposals the procedure requires.",
                 "sources": [
                   {
                     "id": "CAP4-10-00112",
                     "label": "p. 40; topic 10 point 105"
+                  }
+                ]
+              },
+              {
+                "html": "Screening firms against published capability criteria before priced bids are invited is prequalification.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00062",
+                    "label": "p. 39; topic 10 point 61"
                   }
                 ]
               }
@@ -2226,22 +2602,32 @@
                 "label": "p. 39; topic 10 point 58"
               },
               {
-                "id": "CAP4-10-00062",
-                "label": "p. 39; topic 10 point 61"
-              },
-              {
                 "id": "CAP4-10-00112",
                 "label": "p. 40; topic 10 point 105"
+              },
+              {
+                "id": "CAP4-10-00062",
+                "label": "p. 39; topic 10 point 61"
               }
             ]
           },
           {
             "id": "procurement-methods-and-bid-validity",
             "title": "Procurement method thresholds and the meaning of bid validity",
-            "html": "<p>The procurement method for Nepal public works must rest on its legal authority: the Public Procurement Act 2063 and Public Procurement Rules 2064, with their applicable amendments, together with the procurement conditions and relevant date. An estimate of NRs 18 million does not justify sealed quotations merely because a revision note mentions 20 million. A PPMO national competitive bidding template for works above NRs 20 million is a different instrument and does not establish a sealed-quotation ceiling of 20 million.</p><p>Bid validity is the period for which a bidder's offer remains binding under the bidding conditions, counted from the stated submission deadline; an issued Bid Data Sheet may specify 90 days. It is separate from the construction period, the defects liability period and the validity of the bid security, which may need to run beyond the bid-validity period.</p><p>Thresholds also demand careful units. One crore is ten million, so an estimate of 9 crore is NRs 90 million, below a stated band of up to NRs 100 million. That is arithmetic only: whether such a band applies must be checked in the operative rules and the issued Bid Data Sheet.</p>",
+            "html": "<p>The procurement method for Nepal public works must rest on its legal authority: the Public Procurement Act 2063 and Public Procurement Rules 2064, with their applicable amendments, together with the procurement conditions and relevant date. An estimate of NRs 18 million does not justify sealed quotations merely because a revision note mentions 20 million, and a PPMO bidding template for works above NRs 20 million does not set a sealed-quotation ceiling.</p><p><em>Bid validity</em> is the period for which a bidder's offer stays binding under the bidding conditions, counted from the stated submission deadline; an issued Bid Data Sheet may specify 90 days. It is separate from the construction period, the defects liability period and the validity of the bid security.</p><p>Thresholds also demand careful units: one crore is ten million. Whether a band applies must still be checked in the operative rules and the issued Bid Data Sheet.</p>",
+            "formulas": [
+              {
+                "label": "Crore to rupees",
+                "tex": "1\\ \\text{crore} = 10^7 = 10\\ \\text{million}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 9 crore estimate",
+              "html": "<p>9 crore = 9 × 10 million = NRs 90 million, which lies below a stated band of up to NRs 100 million. That is arithmetic only; it does not validate the band itself.</p>"
+            },
             "points": [
               {
-                "html": "The key result is The applicable Act, amended Rules and procurement conditions.",
+                "html": "The procurement method must rest on the applicable Act, amended Rules and procurement conditions, not on an estimate near a quoted figure.",
                 "sources": [
                   {
                     "id": "CAP4-10-00045",
@@ -2250,7 +2636,7 @@
                 ]
               },
               {
-                "html": "The key result is How long the offer must remain binding under the bidding conditions.",
+                "html": "A 90-day bid validity governs how long the offer must remain binding under the bidding conditions.",
                 "sources": [
                   {
                     "id": "CAP4-10-00118",
@@ -2259,7 +2645,7 @@
                 ]
               },
               {
-                "html": "The key result is It is NRs 90 million and falls within the stated band.",
+                "html": "An estimate of 9 crore is NRs 90 million and falls within a stated band of up to NRs 100 million.",
                 "sources": [
                   {
                     "id": "CAP4-10-00137",
@@ -2286,10 +2672,10 @@
           {
             "id": "price-adjustment-and-ppmo-blacklisting",
             "title": "Price adjustment clauses and PPMO's blacklisting power",
-            "html": "<p>A price adjustment needs more than a long contract period. Before certifying an adjustment on an 18-month contract with a valid clause based on published input indices, check the applicable clause, the eligible work, the base date and the indices with their weights. Duration may matter under an applicable procurement provision, but it neither calculates nor authorises a payment by itself, and neither a contractor's reported loss nor the latest price of one item is the basis.</p><p>Blacklisting is a statutory power. Under section 63(1) of the Public Procurement Act 2063 (the Law Commission's consolidated text, which includes the Second Amendment 2083), the Public Procurement Monitoring Office (PPMO) holds the power to blacklist on the statutory grounds, and section 63(5) leaves the further procedure to be prescribed. A procuring entity's recommendation is not itself the blacklisting decision, and company registration and professional regulation are separate powers held by other bodies.</p>",
+            "html": "<p>A price adjustment needs more than a long contract period. Before certifying an adjustment on an 18-month contract with a valid clause based on published input indices, check the applicable clause, the eligible work, the base date and the indices with their weights. Duration may matter under an applicable provision, but it neither calculates nor authorises a payment by itself, and neither a contractor's reported loss nor the latest price of one item is the basis.</p><p>Blacklisting is a statutory power. Under section 63(1) of the Public Procurement Act 2063, in the Law Commission's consolidated text including the Second Amendment 2083, the Public Procurement Monitoring Office (PPMO) holds the power to blacklist on the statutory grounds, and section 63(5) leaves further procedure to be prescribed. A procuring entity's recommendation is not itself the decision.</p>",
             "points": [
               {
-                "html": "The key result is The applicable clause, eligible work, base date and indices.",
+                "html": "Before certifying a price adjustment, check the applicable clause, eligible work, base date and indices with their weights.",
                 "sources": [
                   {
                     "id": "CAP4-10-00060",
@@ -2298,7 +2684,7 @@
                 ]
               },
               {
-                "html": "The key result is Public Procurement Monitoring Office.",
+                "html": "Under section 63 of the Public Procurement Act 2063, the blacklisting power belongs to the Public Procurement Monitoring Office.",
                 "sources": [
                   {
                     "id": "CAP4-10-00168",
@@ -2317,6 +2703,24 @@
                 "label": "p. 42; topic 10 point 158"
               }
             ]
+          }
+        ],
+        "formulaSheet": [
+          {
+            "label": "Variance of returns",
+            "tex": "\\sigma^2 = \\sum p_k\\,(x_k - \\mu)^2"
+          },
+          {
+            "label": "Standard deviation",
+            "tex": "\\sigma = \\sqrt{\\sigma^2}"
+          },
+          {
+            "label": "Liquidated damages",
+            "tex": "LD = P\\,r\\,n \\le c\\,P"
+          },
+          {
+            "label": "Crore to rupees",
+            "tex": "1\\ \\text{crore} = 10^7"
           }
         ],
         "cautions": [
@@ -2463,15 +2867,15 @@
         "code": "AALL1005",
         "questionCount": 24,
         "format": 2,
-        "summary": "<p>Engineering professional practice covers Environment and society, professional ethics, regulatory environment, contemporary engineering issues, occupational health and safety, and roles of the Nepal Engineers Association. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers engineering professional practice: social impact assessment and toxicity evaluation, ethics, integrity and impartiality, vicarious liability, accident records and PPE, copyright, working time under the Labour Act 2074, ordinances under Article 114, private-company shareholder rules, and the separate roles of the Nepal Engineers' Association and the Nepal Engineering Council.</p>",
         "blocks": [
           {
             "id": "social-impact-and-toxicity-evaluation",
             "title": "Social impact assessment and the steps of toxicity evaluation",
-            "html": "<p>Social impact assessment (SIA) examines how a new infrastructure project affects people: displaced households, divided community access, changed livelihoods, local institutions and vulnerable groups, and how these effects are distributed among groups. It works through participation and proposes mitigation. SIA complements environmental and technical studies; a large total economic benefit does not replace it.</p><p>Evaluating a chemical's toxicity begins with hazard identification, which asks whether the substance can cause an adverse effect at all, followed by dose-response assessment, which characterises how the effect changes with dose. Judging the risk in an actual situation needs further steps, exposure assessment and risk characterisation. These studies inform risk management decisions but do not make them.</p>",
+            "html": "<p><em>Social impact assessment</em> (SIA) examines how a new infrastructure project affects people: displaced households, divided community access, changed livelihoods, local institutions and vulnerable groups, and how these effects are distributed among groups. It works through participation and proposes mitigation. SIA complements environmental and technical studies; a large total economic benefit does not replace it.</p><p>Evaluating a chemical's toxicity follows ordered steps:</p><ol><li><em>Hazard identification</em>: can the substance cause an adverse effect at all?</li><li><em>Dose-response assessment</em>: how does the effect change with dose?</li><li>Exposure assessment and risk characterisation, needed to judge risk in an actual situation.</li></ol><p>These studies inform risk management decisions but do not make them.</p>",
             "points": [
               {
-                "html": "The key result is Social impact assessment.",
+                "html": "Displacement, divided access and changed livelihoods, and their spread among groups, are examined by social impact assessment.",
                 "sources": [
                   {
                     "id": "CAP4-10-00064",
@@ -2480,7 +2884,7 @@
                 ]
               },
               {
-                "html": "The key result is Hazard identification followed by dose-response assessment.",
+                "html": "Asking first whether a chemical can harm and then how its effect varies with dose is hazard identification followed by dose-response assessment.",
                 "sources": [
                   {
                     "id": "CAP4-10-00140",
@@ -2503,54 +2907,45 @@
           {
             "id": "ethics-and-professionalism",
             "title": "Ethics and professionalism, including personal development",
-            "html": "<p>Ethics studies moral principles, responsibilities and justified conduct, including how they apply to social issues. When an engineer balances public safety, fair access and honest reporting in recommending a project, the moral basis of those judgments is an ethical question. Legal compliance and financial efficiency matter, but neither exhausts it.</p><p>Professionalism combines competence, ethical responsibility and service. Personal development is compatible with it: an engineer who seeks promotion by improving competence, while keeping public-safety and ethical duties paramount, strengthens rather than weakens the profession. Ambition becomes a problem only when it overrides those duties, for example through inaccurate certification to please an employer, and seeking advancement never replaces the continuing duty to maintain competence.</p>",
+            "html": "<p><em>Ethics</em> studies moral principles, responsibilities and justified conduct, including how they apply to social issues. When an engineer balances public safety, fair access and honest reporting in recommending a project, the moral basis of those judgments is an ethical question. Legal compliance and financial efficiency matter, but neither exhausts it.</p><p><em>Professionalism</em> combines competence, ethical responsibility and service. Personal development is compatible with it: an engineer who seeks promotion by improving competence, while keeping public-safety and ethical duties paramount, strengthens the profession. Ambition becomes a problem only when it overrides those duties, for example through inaccurate certification to please an employer.</p>",
             "points": [
               {
-                "html": "The key result is Compatible with professionalism when duties remain paramount.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00076",
-                    "label": "p. 39; topic 10 point 71"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Ethics. This is the reviewed topic result.",
+                "html": "The moral basis of weighing public safety, fair access and honest reporting is the subject of ethics.",
                 "sources": [
                   {
                     "id": "CAP4-10-00128",
                     "label": "p. 40; topic 10 point 119"
                   }
                 ]
+              },
+              {
+                "html": "Seeking promotion by improving competence is compatible with professionalism when public-safety and ethical duties remain paramount.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00076",
+                    "label": "p. 39; topic 10 point 71"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-10-00076",
-                "label": "p. 39; topic 10 point 71"
-              },
-              {
                 "id": "CAP4-10-00128",
                 "label": "p. 40; topic 10 point 119"
+              },
+              {
+                "id": "CAP4-10-00076",
+                "label": "p. 39; topic 10 point 71"
               }
             ]
           },
           {
             "id": "integrity-impartiality-and-vicarious-liability",
             "title": "Integrity, impartiality and an employer's vicarious liability",
-            "html": "<p>Professional independence means assessing work honestly on its merits. An undisclosed payment from a supplier for approving nonconforming materials is an improper inducement: the engineer must reject it and follow the proper reporting process. The capsule states the principle as upholding the honour and dignity of the profession with zero tolerance for bribery, fraud and corruption.</p><p>The conduct principles of NEC Rule 18 do not turn such a payment into legitimate remuneration because it is privately agreed, offset against an invoice or financially helpful to the client.</p><p>Impartiality means applying the disclosed technical and ethical criteria equally. Two technically equivalent proposals from supporters of opposing political parties must be judged on the same criteria; an engineer's own politics, or an applicant's influence, never justifies biased certification, procurement assessment or treatment of clients.</p><p>Where a legal rule of vicarious liability applies, an employer bears responsibility for negligence that an employee commits while acting in the course of employment. Liability passes through the employment relationship under the governing law; it does not extend to every private act an employee performs outside that context.</p>",
+            "html": "<p>Professional independence means assessing work honestly on its merits. An undisclosed payment from a supplier for approving nonconforming materials is an improper inducement: the engineer must reject it and follow the proper reporting process. The capsule's principle is to uphold the honour and dignity of the profession with zero tolerance for bribery, fraud and corruption. NEC Rule 18's conduct principles do not turn such a payment into legitimate remuneration because it is privately agreed or offset against an invoice.</p><p><em>Impartiality</em> means applying the disclosed technical and ethical criteria equally. An engineer's own politics, or an applicant's influence, never justifies biased certification, procurement assessment or treatment of clients.</p><p>Under a rule of <em>vicarious liability</em>, an employer bears responsibility for negligence that an employee commits in the course of employment. It does not extend to every private act outside that context.</p>",
             "points": [
               {
-                "html": "The key result is Vicarious liability.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00067",
-                    "label": "p. 39; topic 10 point 66"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Reject the inducement and follow the proper reporting process.",
+                "html": "Offered an undisclosed payment to pass nonconforming materials, the engineer must reject the inducement and follow the proper reporting process.",
                 "sources": [
                   {
                     "id": "CAP4-10-00077",
@@ -2559,20 +2954,25 @@
                 ]
               },
               {
-                "html": "The key result is The disclosed technical and ethical criteria applied impartially.",
+                "html": "Equivalent proposals from rival political supporters are judged by the disclosed technical and ethical criteria applied impartially.",
                 "sources": [
                   {
                     "id": "CAP4-10-00119",
                     "label": "p. 40; topic 10 point 112"
                   }
                 ]
+              },
+              {
+                "html": "Employer responsibility for an employee's negligence in the course of employment is vicarious liability.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00067",
+                    "label": "p. 39; topic 10 point 66"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-10-00067",
-                "label": "p. 39; topic 10 point 66"
-              },
               {
                 "id": "CAP4-10-00077",
                 "label": "p. 39; topic 10 point 72"
@@ -2580,16 +2980,20 @@
               {
                 "id": "CAP4-10-00119",
                 "label": "p. 40; topic 10 point 112"
+              },
+              {
+                "id": "CAP4-10-00067",
+                "label": "p. 39; topic 10 point 66"
               }
             ]
           },
           {
             "id": "accident-records-and-ppe-in-control-hierarchy",
             "title": "Accident records and the place of PPE in the hierarchy of controls",
-            "html": "<p>A workplace accident book keeps a dated, factual record of each accident: time, place, the people involved, what happened and the actions taken. Its professional purpose is to support investigation, required reporting and prevention. It may later serve as evidence, but it neither decides legal fault from the first entry nor replaces emergency response and preventive follow-up.</p><p>Where workers face falling objects and unguarded openings, personal protective equipment (PPE) such as helmets is necessary but is generally the last line of defence in the hierarchy of controls. Eliminate hazards where possible, install collective protection such as guarding for openings, and use suitable PPE alongside those measures.</p><p>The PPE itself must match the assessed risk and be properly selected, fitted, explained through training, inspected and enforced; a signed receipt for issued helmets proves none of this, and PPE is not something to provide only after an injury has shown that a hazard is real.</p>",
+            "html": "<p>A workplace accident book keeps a dated, factual record of each accident: time, place, the people involved, what happened and the actions taken. Its professional purpose is to support investigation, required reporting and prevention. It may later serve as evidence, but it neither decides legal fault nor replaces emergency response and preventive follow-up.</p><p>Where workers face falling objects and unguarded openings, <em>personal protective equipment</em> (PPE) such as helmets is necessary but is generally the last line of defence in the hierarchy of controls:</p><ol><li>Eliminate hazards where possible.</li><li>Install collective protection, such as guarding for openings.</li><li>Use suitable PPE alongside those measures.</li></ol><p>PPE must match the assessed risk and be properly selected, fitted, explained, inspected and enforced; a signed receipt for issued helmets proves none of this.</p>",
             "points": [
               {
-                "html": "The key result is Maintain a dated factual record supporting investigation and reporting.",
+                "html": "A workplace accident book should maintain a dated factual record supporting investigation and reporting.",
                 "sources": [
                   {
                     "id": "CAP4-09-00113",
@@ -2598,7 +3002,7 @@
                 ]
               },
               {
-                "html": "The key result is Use suitable PPE alongside elimination, guarding and other effective controls.",
+                "html": "Against falling objects and unguarded openings, use suitable PPE alongside elimination, guarding and other effective controls.",
                 "sources": [
                   {
                     "id": "CAP4-10-00170",
@@ -2621,19 +3025,10 @@
           {
             "id": "copyright-expression-ideas-and-penalties",
             "title": "Copyright: original expression, underlying ideas and the first-offence penalty",
-            "html": "<p>Copyright is a legal framework protecting original works of authorship. In an engineer's technical manual it protects the original expression, such as the wording and drawings, subject to the law's limits and exceptions. It does not protect the abstract idea or method explained, the numerical facts themselves, or structures built by applying the method.</p><p>This idea-expression distinction allows wide use of techniques. An engineer may apply a design method described in a copyrighted article and write an independently worded explanation of it. Popularity of the technique does not end copyright in the article, so copying its text or figures wholesale, or presenting the author's words as one's own, remains wrong. Patents, design rights, licences and exceptions raise separate questions.</p><p>For a first violation of section 25, section 27(1) of Nepal's Copyright Act 2059 provides a fine of NRs 10000 to 100000, imprisonment of up to six months, or both. The higher range of NRs 20000 to 200000 and up to one year applies to repeat violations. Confiscation and compensation under section 27 are additional matters that this penalty does not replace.</p>",
+            "html": "<p><em>Copyright</em> protects original works of authorship. In an engineer's technical manual it protects the original expression, such as the wording and drawings, subject to the law's limits and exceptions. It does not protect the abstract idea or method explained, the numerical facts, or structures built by applying the method.</p><p>This idea-expression distinction allows wide use of techniques. An engineer may apply a design method described in a copyrighted article and write an independently worded explanation of it. Popularity of the technique does not end copyright in the article, so copying its text or figures wholesale remains wrong.</p><table><thead><tr><th scope='col'>Copyright Act 2059, section 27</th><th scope='col'>Fine</th><th scope='col'>Imprisonment</th></tr></thead><tbody><tr><th scope='row'>First violation of section 25</th><td>NRs 10000 to 100000</td><td>Up to six months, or both</td></tr><tr><th scope='row'>Repeat violation</th><td>NRs 20000 to 200000</td><td>Up to one year, or both</td></tr></tbody></table><p>Confiscation and compensation are additional matters.</p>",
             "points": [
               {
-                "html": "The key result is NRs 10000-100000 fine, up to 6 months' imprisonment, or both.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00075",
-                    "label": "p. 39; topic 10 point 70"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is The original expression, subject to the law's limits and exceptions.",
+                "html": "Copyright in a technical manual protects the original expression, subject to the law's limits and exceptions, not the method.",
                 "sources": [
                   {
                     "id": "CAP4-10-00104",
@@ -2642,20 +3037,25 @@
                 ]
               },
               {
-                "html": "The key result is Apply the technique and write an independently worded explanation.",
+                "html": "To respect the idea-expression line, apply the technique and write an independently worded explanation.",
                 "sources": [
                   {
                     "id": "CAP4-10-00110",
                     "label": "p. 40; topic 10 point 103"
                   }
                 ]
+              },
+              {
+                "html": "A first section 25 violation carries a NRs 10000 to 100000 fine, up to 6 months' imprisonment, or both.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00075",
+                    "label": "p. 39; topic 10 point 70"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-10-00075",
-                "label": "p. 39; topic 10 point 70"
-              },
               {
                 "id": "CAP4-10-00104",
                 "label": "p. 40; topic 10 point 96"
@@ -2663,16 +3063,29 @@
               {
                 "id": "CAP4-10-00110",
                 "label": "p. 40; topic 10 point 103"
+              },
+              {
+                "id": "CAP4-10-00075",
+                "label": "p. 39; topic 10 point 70"
               }
             ]
           },
           {
             "id": "labour-act-working-time-and-rest",
             "title": "Labour Act 2074: ordinary working time and rest after five hours",
-            "html": "<p>Nepal's labour-law framework studied here is the Labour Act, 2074. The year in its title identifies the enactment. It does not show that no later amendment, rule or notice affects the present position, because enactment and most recent amendment are different dates.</p><p>Section 28 limits ordinary working time to 8 hours a day and 48 hours a week. Overtime is regulated separately, so describing eight hours as an absolute ceiling covering every lawful overtime arrangement is misleading.</p><p>Section 28(2) requires a half-hour rest after five hours of continuous work. Where work must go on without stopping, subsection (3) provides breaks by rotation, and subsection (4) treats both kinds of break as part of ordinary working time. Continuous operation therefore affects how breaks are timetabled, not whether workers receive them.</p>",
+            "html": "<p>Nepal's labour-law framework studied here is the <em>Labour Act, 2074</em>. The year in its title identifies the enactment; it does not show that no later amendment, rule or notice affects the present position.</p><ul><li><em>Section 28(1)</em> limits ordinary working time to 8 hours a day and 48 hours a week. Overtime is regulated separately, so calling eight hours an absolute ceiling covering every lawful overtime arrangement is misleading.</li><li><em>Section 28(2)</em> requires a half-hour rest after five hours of continuous work.</li><li><em>Section 28(3)</em> provides breaks by rotation where work must go on without stopping, and <em>28(4)</em> counts both kinds of break as ordinary working time.</li></ul><p>Continuous operation therefore affects how breaks are timetabled, not whether workers receive them.</p>",
             "points": [
               {
-                "html": "The key result is 8 hours daily and 48 hours weekly.",
+                "html": "The 2074 BS labour-law framework comes from the Labour Act, 2074; the title year is the enactment, not the last amendment.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00161",
+                    "label": "p. 41; topic 10 point 152"
+                  }
+                ]
+              },
+              {
+                "html": "Section 28 limits ordinary working time to 8 hours daily and 48 hours weekly, with overtime regulated separately.",
                 "sources": [
                   {
                     "id": "CAP4-10-00073",
@@ -2681,25 +3094,20 @@
                 ]
               },
               {
-                "html": "The key result is Half an hour counted as working time, with rotation for continuous operations.",
+                "html": "Five continuous hours earn half an hour counted as working time, with rotation for continuous operations.",
                 "sources": [
                   {
                     "id": "CAP4-10-00074",
                     "label": "p. 39; topic 10 point 70"
                   }
                 ]
-              },
-              {
-                "html": "The key result is Labour Act, 2074.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00161",
-                    "label": "p. 41; topic 10 point 152"
-                  }
-                ]
               }
             ],
             "sources": [
+              {
+                "id": "CAP4-10-00161",
+                "label": "p. 41; topic 10 point 152"
+              },
               {
                 "id": "CAP4-10-00073",
                 "label": "p. 39; topic 10 point 70"
@@ -2707,20 +3115,16 @@
               {
                 "id": "CAP4-10-00074",
                 "label": "p. 39; topic 10 point 70"
-              },
-              {
-                "id": "CAP4-10-00161",
-                "label": "p. 41; topic 10 point 152"
               }
             ]
           },
           {
             "id": "ordinances-under-article-114",
             "title": "Ordinances under Article 114 of Nepal's Constitution",
-            "html": "<p>An ordinance is a temporary legal instrument, and Article 114(2) of the Constitution limits how long it can operate. Clauses (a) and (b) deal with an ordinance ending earlier, through non-acceptance or repeal by the President. If neither has occurred, clause (c) makes the ordinance inactive sixty days after the prescribed meeting date of both Houses.</p><p>If the federal Houses first meet on different dates, the explanation to Article 114 counts from the meeting of whichever House meets later. The earlier House's meeting, the Cabinet's recommendation and the President's promulgation are not the trigger.</p><p>The sixty-day rule limits the life of an ordinance. It is not a general deadline within which every bill or act forwarded by the Council of Ministers must be passed. This reading follows the Law Commission consolidation of the Constitution through the Second Amendment 2077.</p>",
+            "html": "<p>An <em>ordinance</em> is a temporary legal instrument, and Article 114(2) of the Constitution limits how long it can operate.</p><ul><li>Clauses (a) and (b) deal with an ordinance ending earlier, through non-acceptance or repeal by the President.</li><li>If neither has occurred, clause (c) makes the ordinance inactive sixty days after the prescribed meeting date of both Houses.</li><li>If the Houses first meet on different dates, the explanation counts from the meeting of whichever House meets later; the earlier meeting, the Cabinet's recommendation and the promulgation are not the trigger.</li></ul><p>The sixty-day rule limits the life of an ordinance. It is not a general deadline within which every bill forwarded by the Council of Ministers must be passed. This reading follows the Law Commission consolidation through the Second Amendment 2077.</p>",
             "points": [
               {
-                "html": "The key result is It becomes inactive sixty days after the prescribed meeting date of both Houses.",
+                "html": "Under Article 114(2)(c), an ordinance not ended earlier becomes inactive sixty days after the prescribed meeting date of both Houses.",
                 "sources": [
                   {
                     "id": "CAP4-10-00130",
@@ -2729,7 +3133,7 @@
                 ]
               },
               {
-                "html": "The key result is The date on which the later House meets.",
+                "html": "If the Houses first meet on different dates, the sixty-day clock starts from the date on which the later House meets.",
                 "sources": [
                   {
                     "id": "CAP4-10-00131",
@@ -2751,11 +3155,11 @@
           },
           {
             "id": "companies-act-private-company-shareholders",
-            "title": "Companies Act 2063: one-person incorporation and the private-company shareholder cap",
-            "html": "<p>Nepal's Companies Act 2063 permits a private company to be incorporated by a single shareholder under section 3(1), so two founding shareholders are not required. That permission concerns only the minimum ownership count. The company still has its statutory filing duties, and its separate legal personality and limited liability remain subject to the Act and its lawful exceptions.</p><p>The general upper limit is in section 9(1). In the consolidation that includes the 2081 amendment it is one hundred and one counted shareholders, replacing the older limit of 50. Under section 9(3), certain holders under employee share plans, qualifying former employees among them, are left out of the count, and section 9(1A) contains a separate transitional exception for transport businesses.</p><p>The cap is therefore not an exceptionless limit on every name in the share register, and it does not affect the section 3(1) permission to incorporate alone.</p>",
+            "title": "Companies Act 2063: one-person incorporation and the shareholder cap",
+            "html": "<p>Nepal's <em>Companies Act 2063</em> permits a private company to be incorporated by a single shareholder under section 3(1), so two founding shareholders are not required. That permission concerns only the minimum ownership count; the company keeps its statutory filing duties, and its separate personality and limited liability remain subject to the Act.</p><p>The general upper limit is in section 9(1). In the consolidation that includes the 2081 amendment it is 101 counted shareholders, replacing the older limit of 50. Under section 9(3), certain employee-share-plan holders, including qualifying former employees, are left out of the count, and section 9(1A) has a transitional exception for transport businesses. The cap is therefore not an exceptionless limit on every name in the register.</p>",
             "points": [
               {
-                "html": "The key result is A private company need not begin with two shareholders.",
+                "html": "Because one shareholder may incorporate it, a private company need not begin with two shareholders.",
                 "sources": [
                   {
                     "id": "CAP4-10-00151",
@@ -2764,7 +3168,7 @@
                 ]
               },
               {
-                "html": "The key result is 101 counted shareholders.",
+                "html": "Section 9(1) of the Companies Act 2063, as amended in 2081, sets a general cap of 101 counted shareholders.",
                 "sources": [
                   {
                     "id": "CAP4-10-00152",
@@ -2787,19 +3191,10 @@
           {
             "id": "nea-and-nec-association-versus-regulator",
             "title": "NEA and NEC: professional association versus statutory regulator",
-            "html": "<p>The Nepal Engineers' Association (NEA) describes itself as a professional association of Nepalese engineers registered under the Social Service Act, supporting professional development and advocacy. The Nepal Engineering Council (NEC) is the statutory engineering regulator, with the establishment and functions set out in sections 3–4 and 9 of its Act.</p><p>The two roles are not interchangeable. However NEA names or counts its membership categories, an association membership grade is not NEC registration and gives no authority to practise; an engineer who has not completed NEC registration cannot rely on membership instead.</p><p>NEA's official introduction also lists discipline-specific partner societies among national professional bodies, including the electrical engineers' society SEEN. SEEN is therefore an electrical-engineering professional society. Like NEA itself, it acquires none of NEC's statutory registration powers.</p>",
+            "html": "<p>The <em>Nepal Engineers' Association</em> (NEA) describes itself as a professional association of Nepalese engineers registered under the Social Service Act, supporting professional development and advocacy. The <em>Nepal Engineering Council</em> (NEC) is the statutory engineering regulator, established with the functions set out in sections 3–4 and 9 of its Act.</p><p>The two roles are not interchangeable. However NEA names or counts its membership categories, an association grade is not NEC registration and gives no authority to practise.</p><p>NEA's official introduction also lists discipline-specific partner societies among national professional bodies, including the electrical engineers' society SEEN. SEEN is therefore an electrical-engineering professional society; like NEA itself, it has none of NEC's registration powers.</p>",
             "points": [
               {
-                "html": "The key result is It is an electrical-engineering professional society.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00069",
-                    "label": "p. 39; topic 10 point 68"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is NEA represents the profession; NEC exercises statutory regulation.",
+                "html": "NEA represents the profession; NEC exercises statutory regulation of engineering practice.",
                 "sources": [
                   {
                     "id": "CAP4-10-00070",
@@ -2808,20 +3203,25 @@
                 ]
               },
               {
-                "html": "The key result is Association membership does not substitute for statutory registration.",
+                "html": "An NEA grade without NEC registration confers no right to practise: association membership does not substitute for statutory registration.",
                 "sources": [
                   {
                     "id": "CAP4-10-00072",
                     "label": "p. 39; topic 10 point 69"
                   }
                 ]
+              },
+              {
+                "html": "SEEN, listed by NEA among partner societies, is an electrical-engineering professional society without NEC powers.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00069",
+                    "label": "p. 39; topic 10 point 68"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-10-00069",
-                "label": "p. 39; topic 10 point 68"
-              },
               {
                 "id": "CAP4-10-00070",
                 "label": "p. 39; topic 10 point 69"
@@ -2829,16 +3229,30 @@
               {
                 "id": "CAP4-10-00072",
                 "label": "p. 39; topic 10 point 69"
+              },
+              {
+                "id": "CAP4-10-00069",
+                "label": "p. 39; topic 10 point 68"
               }
             ]
           },
           {
             "id": "nea-committee-term-and-quorum-arithmetic",
-            "title": "NEA governance facts: executive committee term and quorum arithmetic",
-            "html": "<p>NEA's official introduction page, as retrieved on 25 September 2026, gives its elected Central Executive Committee a two-year term. This is a dated statement about NEA, not about the tenure of Nepal Engineering Council members, and a later amendment of NEA's constitution could change it.</p><p>A quorum is the minimum attendance that a body's own rules require for valid business. Where a rule requires more than half of the membership, the quorum is the smallest whole number above half. For a 25-member committee half is 12.5, so at least 13 members must attend, and 12 falls short. Quorum depends on the particular body, the type of meeting and the denominator used, so a loose phrase such as more than 50 and above cannot fix it without those details.</p>",
+            "title": "NEA governance facts: committee term and quorum arithmetic",
+            "html": "<p>NEA's official introduction page, as retrieved on 25 September 2026, gives its elected Central Executive Committee a two-year term. This is a dated statement about NEA, not about the tenure of NEC members, and a later amendment of NEA's constitution could change it.</p><p>A <em>quorum</em> is the minimum attendance that a body's own rules require for valid business. Where a rule requires more than half of the membership, the quorum is the smallest whole number above half. Quorum depends on the body, the type of meeting and the denominator, so a loose phrase such as more than 50 and above cannot fix it.</p>",
+            "formulas": [
+              {
+                "label": "More-than-half quorum for N members",
+                "tex": "q = \\left\\lfloor \\dfrac{N}{2} \\right\\rfloor + 1"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 25-member committee",
+              "html": "<p>Half of 25 is 12.5, so \\(q = 12 + 1 = 13\\) members must attend; 12 falls short. This is arithmetic for a stated rule, not an actual NEA quorum.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Two years.",
+                "html": "NEA's introduction page, retrieved 25 September 2026, gives its Central Executive Committee a term of two years.",
                 "sources": [
                   {
                     "id": "CAP4-10-00071",
@@ -2847,7 +3261,7 @@
                 ]
               },
               {
-                "html": "The key result is 13 members.",
+                "html": "A more-than-half quorum for a 25-member committee needs at least 13 members, since half is 12.5.",
                 "sources": [
                   {
                     "id": "CAP4-10-00171",
@@ -3024,15 +3438,15 @@
         "code": "AALL1006",
         "questionCount": 33,
         "format": 2,
-        "summary": "<p>Engineering Regulatory Body covers Nepal Engineering Council: Acts and Regulations. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers the Nepal Engineering Council as regulator: its statutory status and purpose, reading the Act and Regulations by edition and date, the chairperson, vice-chairperson, registrar and association-linked seats, minimum seats for women, registration categories and the route to practise, the examination committee, recognition of engineering education, the Rule 18 code of conduct, penalties, dissolution, rules, the annual report and audit.</p>",
         "blocks": [
           {
             "id": "nec-status-purpose-and-functions",
             "title": "NEC's statutory status, purpose and what falls outside its role",
-            "html": "<p>The Nepal Engineering Council Act 2055 creates the Council in sections 3 and 4 and makes it an autonomous corporate body established by statute. Its public functions, conferred by statute, distinguish it from a voluntary professional association or a contractor, and its autonomy does not mean freedom to disregard the Act.</p><p>The purpose of the Act is to systematise engineering practice: organising the profession, recognising qualifications, and registering and regulating engineers, including standards of professional conduct. It does not set electricity tariffs, award public construction contracts or replace a university's power to confer academic degrees.</p><p>Routine construction supervision of a particular works contract, such as daily site supervision and certification, belongs to the project team appointed for that contract. NEC regulates qualification, education and conduct. It may examine a complaint arising from supervision without becoming the resident site supervisor.</p>",
+            "html": "<p>The Nepal Engineering Council Act 2055 creates the Council in sections 3 and 4 and makes it an <em>autonomous corporate body</em> established by statute. Its public functions, conferred by statute, distinguish it from a voluntary professional association or a contractor, and its autonomy does not mean freedom to disregard the Act.</p><p>The purpose of the Act is to systematise engineering practice: organising the profession, recognising qualifications, and registering and regulating engineers, including standards of professional conduct. It does not set electricity tariffs, award public construction contracts or replace a university's power to confer degrees.</p><p>Routine construction supervision of a particular works contract, such as daily site supervision and certification, belongs to the project team appointed for that contract. NEC regulates qualification, education and conduct; it may examine a complaint arising from supervision without becoming the site supervisor.</p>",
             "points": [
               {
-                "html": "The key result is An autonomous statutory corporate body.",
+                "html": "Sections 3 and 4 of the NEC Act 2055 make the Council an autonomous statutory corporate body.",
                 "sources": [
                   {
                     "id": "CAP4-10-00078",
@@ -3041,7 +3455,7 @@
                 ]
               },
               {
-                "html": "The key result is Systematise engineering practice through qualification, registration and regulation.",
+                "html": "The Act's purpose is to systematise engineering practice through qualification, registration and regulation.",
                 "sources": [
                   {
                     "id": "CAP4-10-00133",
@@ -3050,7 +3464,7 @@
                 ]
               },
               {
-                "html": "The key result is Daily site supervision and certification under a works contract.",
+                "html": "Daily site supervision and certification under a works contract is the project team's job, not NEC's regulatory function.",
                 "sources": [
                   {
                     "id": "CAP4-10-00169",
@@ -3077,10 +3491,19 @@
           {
             "id": "reading-nec-law-by-edition-and-date",
             "title": "Reading NEC law by edition: authentication, commencement and amendments",
-            "html": "<p>Legal dates mark distinct events: authentication or publication, approval, Gazette notification, commencement and, often later, website upload. Section 1(2) of the NEC Act provides for commencement by Gazette notification, so a recorded authentication or publication date, such as the source-reported 2055/11/27, cannot automatically be treated as the commencement date.</p><p>For an amendment, its own commencement clause controls. Where an amendment to the NEC Regulations says it takes effect on government approval, the stated approval date governs even if its PDF is uploaded years later; an upload timestamp never changes an amendment's legal date.</p><p>An explanation must also use the right edition, reading the base text with every relevant amendment. The corrected notes identify the Third Amendment 2080 of the Regulations and a separate Fourth Amendment 2082, so a note that cites only the Second Amendment is incomplete for any provision those later amendments changed, even though the original regulation keeps its title.</p>",
+            "html": "<p>Legal dates mark distinct events: authentication or publication, approval, Gazette notification, commencement and, often later, website upload.</p><ul><li><em>The Act.</em> Section 1(2) provides for commencement by Gazette notification, so a recorded authentication or publication date, such as the source-reported 2055/11/27, cannot automatically be treated as the commencement date.</li><li><em>Amendments.</em> An amendment's own commencement clause controls. Where an amendment to the Regulations takes effect on government approval, the stated approval date governs even if its PDF is uploaded years later.</li><li><em>Editions.</em> Read the base text with every relevant amendment. The corrected notes identify the Third Amendment 2080 of the Regulations and a separate Fourth Amendment 2082, so a note citing only the Second Amendment is incomplete for provisions those later amendments changed, even though the original regulation keeps its title.</li></ul>",
             "points": [
               {
-                "html": "The key result is The stated government-approval date.",
+                "html": "A recorded date of 2055/11/27 is not automatically the commencement, because section 1(2) separately provides for Gazette-notified commencement.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00139",
+                    "label": "p. 41; topic 10 point 129"
+                  }
+                ]
+              },
+              {
+                "html": "An amendment that takes effect on approval commences on the stated government-approval date, whatever its upload date.",
                 "sources": [
                   {
                     "id": "CAP4-10-00095",
@@ -3089,25 +3512,20 @@
                 ]
               },
               {
-                "html": "The key result is Later amendments can change the operative provision without changing the original regulation's title.",
+                "html": "Later amendments can change the operative provision without changing the original regulation's title, so the Third and Fourth Amendments must be read.",
                 "sources": [
                   {
                     "id": "CAP4-10-00136",
                     "label": "p. 41; topic 10 point 126"
                   }
                 ]
-              },
-              {
-                "html": "The key result is Section 1(2) separately provides for Gazette-notified commencement.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00139",
-                    "label": "p. 41; topic 10 point 129"
-                  }
-                ]
               }
             ],
             "sources": [
+              {
+                "id": "CAP4-10-00139",
+                "label": "p. 41; topic 10 point 129"
+              },
               {
                 "id": "CAP4-10-00095",
                 "label": "p. 40; topic 10 point 87"
@@ -3115,20 +3533,20 @@
               {
                 "id": "CAP4-10-00136",
                 "label": "p. 41; topic 10 point 126"
-              },
-              {
-                "id": "CAP4-10-00139",
-                "label": "p. 41; topic 10 point 129"
               }
             ]
           },
           {
             "id": "chairperson-and-vice-chairperson",
             "title": "Chairperson and vice-chairperson: nomination and qualifications",
-            "html": "<p>Under section 5 of the Act, the Council's chairperson and vice-chairperson are nominated by the Government of Nepal. Other seats have their own appointment routes, and the election of association representatives does not turn these offices into elected ones. The statutory titles are chairperson and vice-chairperson; no separate NEC president office should be inferred.</p><p>Eligibility counts only experience gained after the engineering bachelor's degree. Section 5(1)(a) requires the chairperson to have at least 15 years in the engineering profession after that degree. A graduate with 16 post-degree years qualifies, whereas 16 years in total, of which 4 came before graduation, give only 12 qualifying years. Section 5(1)(b) requires the vice-chairperson to have at least 10 years of engineering experience after the degree, and a diploma or a non-engineering degree does not meet the academic condition.</p><p>Meeting a threshold establishes eligibility only; the Government's nomination is still required for appointment.</p>",
+            "html": "<p>Under section 5 of the Act, the Council's <em>chairperson</em> and <em>vice-chairperson</em> are nominated by the Government of Nepal. Other seats have their own appointment routes, and the election of association representatives does not turn these offices into elected ones. The statutory titles are chairperson and vice-chairperson; no separate NEC president office should be inferred.</p><table><thead><tr><th scope='col'>Office</th><th scope='col'>Academic condition</th><th scope='col'>Experience after the degree</th></tr></thead><tbody><tr><th scope='row'>Chairperson, 5(1)(a)</th><td>Engineering bachelor's degree</td><td>At least 15 years</td></tr><tr><th scope='row'>Vice-chairperson, 5(1)(b)</th><td>Engineering bachelor's degree</td><td>At least 10 years</td></tr></tbody></table><p>Only experience gained after the engineering degree counts, and a diploma or non-engineering degree does not meet the academic condition. Meeting a threshold establishes eligibility only; the Government's nomination is still required.</p>",
+            "example": {
+              "title": "Worked example: counting qualifying years",
+              "html": "<p>A graduate with 16 post-degree years qualifies for chairperson. Someone with 16 years in total, 4 of them before graduation, has only 16 − 4 = 12 qualifying years and falls short of 15.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Government of Nepal.",
+                "html": "The Government of Nepal nominates the Council's chairperson and vice-chairperson under section 5.",
                 "sources": [
                   {
                     "id": "CAP4-10-00080",
@@ -3137,7 +3555,7 @@
                 ]
               },
               {
-                "html": "The key result is An engineering graduate with 16 years' engineering experience after the degree.",
+                "html": "An engineering graduate with 16 years' engineering experience after the degree meets the 15-year chairperson threshold.",
                 "sources": [
                   {
                     "id": "CAP4-10-00083",
@@ -3146,7 +3564,7 @@
                 ]
               },
               {
-                "html": "The key result is Engineering bachelor's degree followed by at least 10 years' engineering experience.",
+                "html": "The vice-chairperson needs an engineering bachelor's degree followed by at least 10 years' engineering experience.",
                 "sources": [
                   {
                     "id": "CAP4-10-00084",
@@ -3173,45 +3591,45 @@
           {
             "id": "registrar-appointment-and-role",
             "title": "The registrar: qualification, appointment route and executive role",
-            "html": "<p>The registrar must have an engineering bachelor's degree followed by ten years of engineering experience, the same post-degree threshold as the vice-chairperson, but the appointment route is different. Under section 27(1), as amended in 2079, the Government of Nepal appoints the registrar on the basis of open competition. This is neither an ordinary Council staff appointment under section 34 nor a nomination by the NEA president, and ten years of service do not bring automatic promotion to the post.</p><p>Keep the offices apart when reading records. The chairperson leads the Council, while the registrar administers its executive work, so a historical list naming both identifies two different offices. The capsule names Ram Babu Sharma as the first head of the Council and Bindeshwar Yadav as the first registrar, but those identities have not been verified against official archival records and are not taught as recall facts.</p>",
+            "html": "<p>The <em>registrar</em> must have an engineering bachelor's degree followed by ten years of engineering experience, the same post-degree threshold as the vice-chairperson, but the appointment route differs. Under section 27(1), as amended in 2079, the Government of Nepal appoints the registrar on the basis of open competition. This is neither an ordinary Council staff appointment under section 34 nor a nomination by the NEA president, and ten years of service bring no automatic promotion to the post.</p><p>Keep the offices apart when reading records. The chairperson leads the Council, while the registrar administers its executive work, so a historical list naming both identifies two different offices. The capsule's names for the first holders have not been verified against official records and are not taught as recall facts.</p>",
             "points": [
               {
-                "html": "The key result is The chair leads the Council; the registrar administers its executive work.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00082",
-                    "label": "p. 39; topic 10 point 76"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is By Government of Nepal on the basis of open competition.",
+                "html": "Under section 27(1) as amended in 2079, the registrar is appointed by the Government of Nepal on the basis of open competition.",
                 "sources": [
                   {
                     "id": "CAP4-10-00085",
                     "label": "p. 39; topic 10 point 78"
                   }
                 ]
+              },
+              {
+                "html": "In a list of office holders, the chair leads the Council; the registrar administers its executive work.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00082",
+                    "label": "p. 39; topic 10 point 76"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-10-00082",
-                "label": "p. 39; topic 10 point 76"
-              },
-              {
                 "id": "CAP4-10-00085",
                 "label": "p. 39; topic 10 point 78"
+              },
+              {
+                "id": "CAP4-10-00082",
+                "label": "p. 39; topic 10 point 76"
               }
             ]
           },
           {
             "id": "nea-president-and-elected-representatives",
             "title": "Association-linked seats: the ex-officio president and elected representatives",
-            "html": "<p>The Council-composition arrangement in section 5 links seats to the Nepal Engineers' Association in two different ways. The NEA president sits on the Council ex officio, that is, by virtue of holding the association office. The seat attaches to the office rather than to the person for life; it does not make that person the Council's chairperson, and it is not a temporary delegation from the registrar.</p><p>The five specified NEA representatives come through the prescribed election arrangement rather than by holding the presidency. Election-based and ex-officio membership are therefore separate routes, and neither implies that every Council member is directly elected or that an annual meeting converts elected seats into ex-officio ones.</p>",
+            "html": "<p>The Council-composition arrangement in section 5 links seats to the Nepal Engineers' Association in two different ways.</p><ul><li>The NEA president sits on the Council <em>ex officio</em>, that is, by virtue of holding the association office. The seat attaches to the office, not to the person for life; it does not make that person the Council's chairperson, and it is not a delegation from the registrar.</li><li>The five specified NEA representatives come through the prescribed election arrangement rather than by holding the presidency.</li></ul><p>Election-based and ex-officio membership are therefore separate routes, and neither implies that every Council member is directly elected or that an annual meeting converts elected seats into ex-officio ones.</p>",
             "points": [
               {
-                "html": "The key result is Ex-officio membership.",
+                "html": "The NEA president's Council seat, held by virtue of that association office, is ex-officio membership.",
                 "sources": [
                   {
                     "id": "CAP4-10-00081",
@@ -3220,7 +3638,7 @@
                 ]
               },
               {
-                "html": "The key result is They arise by the prescribed election, rather than by holding the presidency.",
+                "html": "The five NEA representatives arise by the prescribed election, rather than by holding the presidency.",
                 "sources": [
                   {
                     "id": "CAP4-10-00135",
@@ -3242,11 +3660,15 @@
           },
           {
             "id": "nominated-seats-and-womens-minima",
-            "title": "Nominated seats and the allocation-specific minimum numbers of women",
-            "html": "<p>The amended section 5 fixes the minimum number of women separately for each nomination group. Under section 5(1)(c) the Government of Nepal nominates seven members, including at least three women. Under section 5(1)(h), as amended in 2079, the Council itself nominates two engineers, at least one of whom must be a woman, each with the prescribed seven years of post-degree experience.</p><table><thead><tr><th scope='col'>Nomination group</th><th scope='col'>Seats</th><th scope='col'>Minimum women</th></tr></thead><tbody><tr><th scope='row'>Government of Nepal, section 5(1)(c)</th><td>7</td><td>3</td></tr><tr><th scope='row'>Council itself, section 5(1)(h)</th><td>2</td><td>1</td></tr></tbody></table><p>Because each minimum belongs to its group, they are not one pool. The two minima add to 3 + 1 = 4, yet four women placed entirely among the Government nominees would still leave the Council's pair non-compliant. A list with three women among the Government nominees and none among the Council nominees falls short by 1 − 0 = one woman, however many men are listed; relabelling a Government nominee on paper does not cure it.</p>",
+            "title": "Nominated seats and the minimum number of women in each group",
+            "html": "<p>The amended section 5 fixes the minimum number of women separately for each nomination group.</p><table><thead><tr><th scope='col'>Nomination group</th><th scope='col'>Seats</th><th scope='col'>Minimum women</th></tr></thead><tbody><tr><th scope='row'>Government of Nepal, section 5(1)(c)</th><td>7</td><td>3</td></tr><tr><th scope='row'>Council itself, section 5(1)(h), amended 2079</th><td>2</td><td>1</td></tr></tbody></table><p>The Council's two nominees must also be engineers with the prescribed seven years of post-degree experience. Because each minimum belongs to its group, they are not one pool: the minima add to 3 + 1 = 4, yet four women placed entirely among the Government nominees would still leave the Council's pair non-compliant. Relabelling a Government nominee on paper does not cure it.</p>",
+            "example": {
+              "title": "Worked example: a non-compliant list",
+              "html": "<p>Three women among the Government nominees and none among the Council nominees: the Government group is compliant, but the Council group falls short by 1 − 0 = 1 woman, however many men are listed.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Two engineers, including at least one woman.",
+                "html": "Under section 5(1)(h) as amended in 2079, the Council itself nominates two engineers, including at least one woman.",
                 "sources": [
                   {
                     "id": "CAP4-10-00088",
@@ -3255,7 +3677,7 @@
                 ]
               },
               {
-                "html": "The key result is It falls short by one, irrespective of the total number of men.",
+                "html": "With no woman in the Council pair, that group falls short by one, irrespective of the total number of men listed.",
                 "sources": [
                   {
                     "id": "CAP4-10-00089",
@@ -3277,11 +3699,11 @@
           },
           {
             "id": "registration-categories-and-route-to-practise",
-            "title": "Registration categories, non-Nepali engineers and the minimum route to practise",
-            "html": "<p>Rules 3 and 3A of the NEC Regulations 2057, as amended through 2080, describe three registration categories: general registered engineer, professional engineer and non-Nepali engineer. They are regulatory routes with different eligibility and assessment requirements, not engineering disciplines, NEA membership grades or quality ranks.</p><p>The non-Nepali route turns on foreign nationality together with the employment-related registration conditions of Rule 10. A Nepali citizen holding an overseas degree is not a non-Nepali engineer, and employment in an engineering institution alone is neither a complete definition nor a licence.</p><p>The minimum basis for engineering practice in Nepal is a recognised engineering bachelor's degree plus completed registration with NEC. The Act's academic definition of engineer in section 2(d) and its registration requirement in section 11 are separate. The ordinary route runs through application, scrutiny, examination where required, recommendation, registration and certificate, so an application receipt, a degree or an NEA membership does not complete it.</p>",
+            "title": "Registration categories, non-Nepali engineers and the route to practise",
+            "html": "<p>Rules 3 and 3A of the NEC Regulations 2057, as amended through 2080, describe three registration categories: general registered engineer, professional engineer and non-Nepali engineer. They are regulatory routes with different eligibility and assessment requirements, not engineering disciplines, NEA membership grades or quality ranks.</p><p>The non-Nepali route turns on foreign nationality together with the employment-related registration conditions of Rule 10. A Nepali citizen with an overseas degree is not a non-Nepali engineer, and employment in an engineering institution alone is neither a complete definition nor a licence.</p><p>The minimum basis for practice in Nepal is a recognised engineering bachelor's degree plus completed NEC registration. The Act's academic definition in section 2(d) and its registration requirement in section 11 are separate. The route runs through application, scrutiny, examination where required, recommendation, registration and certificate.</p>",
             "points": [
               {
-                "html": "The key result is General registered, professional and non-Nepali engineers.",
+                "html": "The three registration categories are general registered, professional and non-Nepali engineers.",
                 "sources": [
                   {
                     "id": "CAP4-10-00086",
@@ -3290,7 +3712,7 @@
                 ]
               },
               {
-                "html": "The key result is Nationality and the prescribed employment-related registration conditions.",
+                "html": "For a foreign engineer, the non-Nepali route turns on nationality and the prescribed employment-related registration conditions.",
                 "sources": [
                   {
                     "id": "CAP4-10-00087",
@@ -3299,7 +3721,7 @@
                 ]
               },
               {
-                "html": "The key result is The individual must complete the applicable registration process.",
+                "html": "A degree and a submitted application are not enough: the individual must complete the applicable registration process.",
                 "sources": [
                   {
                     "id": "CAP4-10-00145",
@@ -3326,10 +3748,10 @@
           {
             "id": "examination-committee-and-register-counts",
             "title": "Registration examination committee and dated register counts",
-            "html": "<p>Under section 14(1) of the Act, as amended in 2079, the engineering-registration examination committee has five members: a Council member as coordinator, three Council members including one woman, and the registrar as member-secretary. Subject experts invited under section 14(4) are not additional prescribed seats, and the three-person conduct investigation committee is a separate body under Regulations Rule 20.</p><p>Statistics drawn from the register are snapshots. A count of professional engineers reported for 2078/12/31 can establish, at most, the number in that category on that date, and only after the register itself has been checked. New registrations, removals and corrections change the figure, so it is neither a current statistic nor a permanent maximum, and it says nothing about other categories or about recognised institutions. The capsule's reported 61 has not been authenticated.</p>",
+            "html": "<p>Under section 14(1) of the Act, as amended in 2079, the engineering-registration examination committee has five members:</p><ul><li>a Council member as coordinator;</li><li>three Council members, including one woman;</li><li>the registrar as member-secretary.</li></ul><p>Subject experts invited under section 14(4) are not additional prescribed seats, and the three-person conduct investigation committee is a separate body under Regulations Rule 20.</p><p>Statistics drawn from the register are snapshots. A count of professional engineers reported for 2078/12/31 can establish, at most, the number in that category on that date, and only after the register itself has been checked. New registrations, removals and corrections change the figure, so it is neither a current statistic nor a maximum. The capsule's reported 61 has not been authenticated.</p>",
             "points": [
               {
-                "html": "The key result is A Council-member coordinator, three Council members including one woman, and the registrar.",
+                "html": "Section 14(1) sets a Council-member coordinator, three Council members including one woman, and the registrar on the examination committee.",
                 "sources": [
                   {
                     "id": "CAP4-10-00090",
@@ -3338,7 +3760,7 @@
                 ]
               },
               {
-                "html": "The key result is A count for that date, subject to verification of the register.",
+                "html": "A reported 61 professional engineers on 2078/12/31 gives at most a count for that date, subject to verification of the register.",
                 "sources": [
                   {
                     "id": "CAP4-10-00091",
@@ -3360,11 +3782,11 @@
           },
           {
             "id": "recognition-of-engineering-education",
-            "title": "Recognition of engineering education: criteria, formal decisions and evidence",
-            "html": "<p>NEC's education powers under Act 21A–21B and Rules 15–16 cover recognition of engineering programmes, including programme conditions, academic standards, staff and facilities, through a formal regulatory decision. One aggregate score cannot replace the individual mandatory criteria or the record of recognised programmes, so a college scoring 60% on average has not thereby proved recognition, let alone licensed its graduates.</p><p>Monitoring and recognition status are different. According to the corrected notes on Rule 15, an institution with temporary recognition must obtain permanent recognition by meeting the prescribed criteria within five years. An inspection visit during the year is not a permanent-recognition decision.</p><p>University affiliation and NEC recognition address different questions. A university's affiliation of a master's programme leaves open whether the programme meets NEC's recognition requirements, and neither the affiliation letter nor the degree replaces NEC as the registration authority.</p><p>A ranking of provinces by recognised institutions, such as a reported lead for Bagmati, needs a dated institution-level recognition list and a consistent counting unit, because colleges, campuses and programmes give different totals.</p>",
+            "title": "Recognition of engineering education: criteria, decisions and evidence",
+            "html": "<p>NEC's education powers under Act 21A–21B and Rules 15–16 cover recognition of engineering programmes, including programme conditions, academic standards, staff and facilities, through a formal regulatory decision. One aggregate score cannot replace the individual mandatory criteria or the record of recognised programmes.</p><p>Monitoring and recognition status are different. According to the corrected notes on Rule 15, an institution with temporary recognition must obtain permanent recognition by meeting the prescribed criteria within five years; an inspection visit is not a permanent-recognition decision.</p><p>University affiliation and NEC recognition answer different questions. A university's affiliation of a master's programme leaves open whether the programme meets NEC's requirements.</p><p>A ranking of provinces by recognised institutions, such as a reported lead for Bagmati, needs a dated institution-level list and a consistent counting unit, because colleges, campuses and programmes give different totals.</p>",
             "points": [
               {
-                "html": "The key result is Recognition also depends on the applicable criteria and formal decision.",
+                "html": "A 60% aggregate score does not prove recognition, which also depends on the applicable criteria and formal decision.",
                 "sources": [
                   {
                     "id": "CAP4-10-00092",
@@ -3373,7 +3795,7 @@
                 ]
               },
               {
-                "html": "The key result is The formal recognition decision and fulfillment of prescribed criteria.",
+                "html": "Before advertising permanent recognition, check the formal recognition decision and fulfilment of prescribed criteria.",
                 "sources": [
                   {
                     "id": "CAP4-10-00093",
@@ -3382,20 +3804,20 @@
                 ]
               },
               {
-                "html": "The key result is A dated institution-level recognition list grouped consistently by province.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00094",
-                    "label": "p. 40; topic 10 point 86"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Whether the programme meets applicable NEC recognition requirements.",
+                "html": "A university affiliation leaves open whether the programme meets applicable NEC recognition requirements.",
                 "sources": [
                   {
                     "id": "CAP4-10-00101",
                     "label": "p. 40; topic 10 point 93"
+                  }
+                ]
+              },
+              {
+                "html": "A claimed Bagmati lead needs a dated institution-level recognition list grouped consistently by province.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00094",
+                    "label": "p. 40; topic 10 point 86"
                   }
                 ]
               }
@@ -3410,57 +3832,57 @@
                 "label": "p. 40; topic 10 point 85"
               },
               {
-                "id": "CAP4-10-00094",
-                "label": "p. 40; topic 10 point 86"
-              },
-              {
                 "id": "CAP4-10-00101",
                 "label": "p. 40; topic 10 point 93"
+              },
+              {
+                "id": "CAP4-10-00094",
+                "label": "p. 40; topic 10 point 86"
               }
             ]
           },
           {
             "id": "rule-18-professional-code-of-conduct",
-            "title": "Rule 18: the professional code of conduct and its eleven lettered clauses",
-            "html": "<p>The professional code of conduct for engineers is Rule 18, located in Chapter 4 of the NEC Regulations 2057, the chapter headed Professional Code of Conduct. Chapter 7 of the Regulations is Miscellaneous. Confusion arises because the separate Act places its section 29A in the Act's own Chapter 7; the Act and the Regulations must not be conflated.</p><p>Read through the Third Amendment 2080, Rule 18 contains the eight clauses (a) to (h) followed by three added prohibitions, (i) to (k), giving eleven lettered clauses. They are clauses of one rule, not eleven articles or Acts, and the rule number 18 is not a count of anything. Always state which amended version is being described.</p>",
+            "title": "Rule 18: the professional code of conduct and its eleven clauses",
+            "html": "<p>The professional code of conduct for engineers is <em>Rule 18</em>, located in Chapter 4 of the NEC Regulations 2057, the chapter headed Professional Code of Conduct. Chapter 7 of the Regulations is Miscellaneous. Confusion arises because the separate Act places its section 29A in the Act's own Chapter 7; the Act and the Regulations must not be conflated.</p><p>Read through the Third Amendment 2080, Rule 18 contains the eight clauses (a) to (h) followed by three added prohibitions, (i) to (k), giving eleven lettered clauses. They are clauses of one rule, not eleven articles or Acts, and the rule number 18 is not a count of anything. Always state which amended version is being described.</p>",
             "points": [
               {
-                "html": "The key result is Eleven lettered clauses, not eleven separate Acts.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00079",
-                    "label": "p. 39; topic 10 point 73"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Rule 18 in Chapter 4.",
+                "html": "The professional code of conduct is Rule 18 in Chapter 4 of the NEC Regulations 2057, not in Chapter 7.",
                 "sources": [
                   {
                     "id": "CAP4-10-00142",
                     "label": "p. 41; topic 10 point 132"
                   }
                 ]
+              },
+              {
+                "html": "Rule 18's clauses (a)–(h) plus (i)–(k) make eleven lettered clauses, not eleven separate Acts.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00079",
+                    "label": "p. 39; topic 10 point 73"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-10-00079",
-                "label": "p. 39; topic 10 point 73"
-              },
-              {
                 "id": "CAP4-10-00142",
                 "label": "p. 41; topic 10 point 132"
+              },
+              {
+                "id": "CAP4-10-00079",
+                "label": "p. 39; topic 10 point 73"
               }
             ]
           },
           {
             "id": "offences-and-penalties-under-section-30",
             "title": "Offences and penalties under section 30 of the NEC Act",
-            "html": "<p>Section 30 of the NEC Act 2055, read with the First Amendment 2079, separates kinds of contravention. Engineering practice without registration falls under section 30(1)–(2), which provides a fine of up to NRs 10000, imprisonment of up to three months, or both. These are maximum, alternative penalties, not a fixed tariff and not a registration fee.</p><p>Section 30(3) covers contraventions other than those dealt with in 30(2) and 30(2A), with a fine of up to NRs 25000. It is a maximum for that residual category, not a fixed charge for every violation and not a cap on liability under other laws. Lettered citations such as 30(b) or 30(c) blur these subsections and should be replaced by the numbered provisions.</p>",
+            "html": "<p>Section 30 of the NEC Act 2055, read with the First Amendment 2079, separates kinds of contravention.</p><table><thead><tr><th scope='col'>Provision</th><th scope='col'>Contravention</th><th scope='col'>Maximum penalty</th></tr></thead><tbody><tr><th scope='row'>Section 30(1)–(2)</th><td>Engineering practice without registration</td><td>Fine up to NRs 10000, imprisonment up to three months, or both</td></tr><tr><th scope='row'>Section 30(3)</th><td>Contraventions other than those in 30(2) and 30(2A)</td><td>Fine up to NRs 25000</td></tr></tbody></table><p>These are maximum, alternative penalties, not a fixed tariff and not a registration fee. The 30(3) amount is a maximum for a residual category, not a cap on liability under other laws. Lettered citations such as 30(b) or 30(c) blur these subsections and should be replaced by the numbered provisions.</p>",
             "points": [
               {
-                "html": "The key result is Up to NRs 10000 fine, up to 3 months' imprisonment, or both.",
+                "html": "Unregistered practice under section 30(2) carries up to NRs 10000 fine, up to 3 months' imprisonment, or both.",
                 "sources": [
                   {
                     "id": "CAP4-10-00096",
@@ -3469,7 +3891,7 @@
                 ]
               },
               {
-                "html": "The key result is A maximum fine for contraventions other than those in 30(2) and 30(2A).",
+                "html": "Section 30(3)'s NRs 25000 is a maximum fine for contraventions other than those in 30(2) and 30(2A).",
                 "sources": [
                   {
                     "id": "CAP4-10-00099",
@@ -3492,45 +3914,45 @@
           {
             "id": "dissolution-and-reconstitution-of-the-council",
             "title": "Dissolution and reconstitution of the Council under section 31",
-            "html": "<p>Section 31(1) lists the grounds on which the Government of Nepal may dissolve the Council: failure to exercise its statutory powers, abuse of those powers, exercise beyond the powers conferred, and failure to perform its duties under the Act or the Rules. Section 31(2)–(4) then deals with interim custody and conduct of business, reconstitution and the return of assets. No extra notice period should be read into these provisions, and an individual engineer's private contractual dispute is not among the listed grounds.</p><p>Under section 31(3), another Council is to be constituted under section 5 generally within three months from dissolution. The word generally must not be dropped, and the period runs from dissolution. It is neither a minimum waiting time before reconstitution nor the term of the new Council.</p>",
+            "html": "<p>Section 31(1) lists the grounds on which the Government of Nepal may dissolve the Council:</p><ul><li>failure to exercise its statutory powers;</li><li>abuse of those powers;</li><li>exercise beyond the powers conferred;</li><li>failure to perform its duties under the Act or the Rules.</li></ul><p>Section 31(2)–(4) then deals with interim custody and conduct of business, reconstitution and the return of assets. No extra notice period should be read in, and an engineer's private contractual dispute is not a listed ground.</p><p>Under section 31(3), another Council is to be constituted under section 5 generally within three months from dissolution. The word generally must not be dropped, and the period runs from dissolution; it is neither a minimum waiting time nor the new Council's term.</p>",
             "points": [
               {
-                "html": "The key result is A generally applicable reconstitution period running from dissolution.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00097",
-                    "label": "p. 40; topic 10 point 89"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Failure to exercise statutory powers, abuse or excess of powers, or failure of statutory duties.",
+                "html": "Section 31(1) covers failure to exercise statutory powers, abuse or excess of powers, or failure of statutory duties.",
                 "sources": [
                   {
                     "id": "CAP4-10-00138",
                     "label": "p. 41; topic 10 point 128; topic 10 point 144"
                   }
                 ]
+              },
+              {
+                "html": "Section 31(3) sets a generally applicable reconstitution period of three months running from dissolution.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00097",
+                    "label": "p. 40; topic 10 point 89"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-10-00097",
-                "label": "p. 40; topic 10 point 89"
-              },
-              {
                 "id": "CAP4-10-00138",
                 "label": "p. 41; topic 10 point 128; topic 10 point 144"
+              },
+              {
+                "id": "CAP4-10-00097",
+                "label": "p. 40; topic 10 point 89"
               }
             ]
           },
           {
             "id": "rules-annual-report-and-audit",
             "title": "Council rules, the annual report and the audit of accounts",
-            "html": "<p>Under section 37(1)–(2), NEC makes rules to implement the Act, and those rules take effect only on approval by the Government of Nepal. Subordinate instruments under section 37(3) form a separate category, and bylaws or guidelines cannot override the Act.</p><p>Section 37A, added in 2079, requires the Council to submit an annual report to the Government of Nepal every year within the month of Ashoj and to publish it. The report sets out the year's activities, administrative costs, income and expenditure, and planned programmes. An annual meeting is not the statutory timing trigger.</p><p>For the accounts, Rule 31(1) of the Regulations through the Third Amendment 2080 requires the Council itself to appoint an accredited auditor under prevailing law within three months of the end of the financial year, and Rule 31(2) requires a copy of the audit report to be submitted to the Government of Nepal. The three-month limit concerns the appointment only, and appointing an auditor does not allow finance staff to audit their own work.</p>",
+            "html": "<ul><li><em>Rules.</em> Under section 37(1)–(2), NEC makes rules to implement the Act, and they take effect only on approval by the Government of Nepal. Subordinate instruments under section 37(3) form a separate category, and bylaws or guidelines cannot override the Act.</li><li><em>Annual report.</em> Section 37A, added in 2079, requires the Council to submit an annual report to the Government of Nepal every year within the month of Ashoj and to publish it. It covers the year's activities, administrative costs, income and expenditure, and planned programmes. An annual meeting is not the timing trigger.</li><li><em>Audit.</em> Rule 31(1) of the Regulations through the Third Amendment 2080 requires the Council to appoint an accredited auditor under prevailing law within three months of the end of the financial year, and Rule 31(2) requires a copy of the audit report to go to the Government of Nepal. The three-month limit concerns the appointment only.</li></ul>",
             "points": [
               {
-                "html": "The key result is Approval by Government of Nepal.",
+                "html": "Rules made under section 37(1)–(2) take effect only on approval by the Government of Nepal.",
                 "sources": [
                   {
                     "id": "CAP4-10-00098",
@@ -3539,7 +3961,7 @@
                 ]
               },
               {
-                "html": "The key result is Government of Nepal, within Ashoj each year.",
+                "html": "Under section 37A, the annual report goes to the Government of Nepal, within Ashoj each year, and is also published.",
                 "sources": [
                   {
                     "id": "CAP4-10-00100",
@@ -3548,7 +3970,7 @@
                 ]
               },
               {
-                "html": "The key result is NEC appoints an accredited auditor under prevailing law within three months of financial year-end.",
+                "html": "Under Rule 31, NEC appoints an accredited auditor under prevailing law within three months of financial year-end.",
                 "sources": [
                   {
                     "id": "CAP4-10-00102",
@@ -3885,24 +4307,37 @@
         "code": "additional-capsule-rural",
         "questionCount": 9,
         "format": 2,
-        "summary": "<p>Civil and rural engineering (capsule) covers Rural-engineering capsule points outside the listed civil syllabus subchapters. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>These rural-engineering capsule points sit outside the ten listed civil subchapters. They cover farmstead zoning and the orientation of long animal houses, livestock restraint crushes and machine milking, chilled versus frozen fish storage, intercultural crop operations and poultry-farm footbaths as part of biosecurity.</p>",
         "blocks": [
           {
-            "id": "farmstead-zoning-and-animal-house-orientation",
-            "title": "Farmstead zoning and orientation of long animal houses",
-            "html": "<p>A farmstead combines a family home with crop and livestock work, so its layout should meet residential needs while separating functions that can contaminate one another. Domestic food preparation and sanitation facilities belong apart from animal areas and from the storage and mixing of pesticides and other farm chemicals.</p><p>Shared shelving for food and chemicals, a common wet area for animal washing and cooking, or chemical mixing above the household water tank all defeat that aim. A kitchen, bathroom, store and farm area are functional considerations, not a complete code-prescribed room schedule.</p><p>For a long animal shed in a hot, sunny region at low latitude, once ventilation has been checked separately and the goal is to keep low morning and evening sun off the long walls, the long axis is commonly run east-west. The broad walls then face mainly north and south, so the low sun strikes chiefly the short end walls. Wind direction, latitude, shading, roof form and drainage must still be assessed, and a temperature-duration figure cannot on its own fix the layout.</p>",
+            "id": "farmstead-zoning",
+            "title": "Farmstead zoning: separating home, animals and farm chemicals",
+            "html": "<p>A <em>farmstead</em> combines a family home with crop and livestock work, so its layout should meet residential needs while separating functions that can contaminate one another. Domestic food preparation and sanitation facilities belong apart from animal areas and from the storage and mixing of pesticides and other farm chemicals.</p><p>Shared shelving for food and chemicals, a common wet area for animal washing and cooking, or chemical mixing above the household water tank all defeat that aim. A kitchen, bathroom, store and farm area are functional considerations, not a complete code-prescribed room schedule.</p>",
             "points": [
               {
-                "html": "The key result is Separate domestic food and sanitation facilities from animal and chemical work areas.",
+                "html": "Sound farmstead zoning should separate domestic food and sanitation facilities from animal and chemical work areas.",
                 "sources": [
                   {
                     "id": "CAP4-10-00176",
                     "label": "p. 42; rural point 4"
                   }
                 ]
-              },
+              }
+            ],
+            "sources": [
               {
-                "html": "The key result is East-west. This is the reviewed topic result.",
+                "id": "CAP4-10-00176",
+                "label": "p. 42; rural point 4"
+              }
+            ]
+          },
+          {
+            "id": "animal-house-orientation",
+            "title": "Orienting a long animal house against low sun",
+            "html": "<p>For a long animal shed in a hot, sunny region at low latitude, once ventilation has been checked separately and the goal is to keep low morning and evening sun off the long walls, the long axis is commonly run east-west. The broad walls then face mainly north and south, so the low sun strikes chiefly the short end walls.</p><p>Wind direction, latitude, shading, roof form and drainage must still be assessed, and a temperature-duration figure cannot on its own fix the layout.</p>",
+            "points": [
+              {
+                "html": "In a hot, sunny low-latitude region, a long animal house commonly runs east-west so low sun falls mainly on its short end walls.",
                 "sources": [
                   {
                     "id": "CAP4-10-00197",
@@ -3913,10 +4348,6 @@
             ],
             "sources": [
               {
-                "id": "CAP4-10-00176",
-                "label": "p. 42; rural point 4"
-              },
-              {
                 "id": "CAP4-10-00197",
                 "label": "p. 42; rural point 20"
               }
@@ -3925,19 +4356,10 @@
           {
             "id": "livestock-restraint-and-machine-milking",
             "title": "Livestock restraint crushes and the principle of machine milking",
-            "html": "<p>A crush, or handling chute, restrains and positions one animal at a time so that routine treatment or examination can be carried out safely. Other facilities serve other purposes: collecting yards hold groups, loading ramps help move animals onto vehicles, and paddocks allow free movement. A milking parlour may use its own restraint arrangements rather than a crush.</p><p>A conventional milking cluster for a cow has four teat cups, one for each teat of the four udder quarters. The number is specific to the cow and to that equipment and should not be generalised to every dairy animal or special milking arrangement.</p><p>Machine milking uses a controlled vacuum to draw milk, while pulsating liners alternate between a milking phase and a rest or massage phase. It is not unregulated continuous suction, and excessive vacuum or faulty pulsation can injure teat tissue.</p>",
+            "html": "<p>A <em>crush</em>, or handling chute, restrains and positions one animal at a time so that routine treatment or examination can be carried out safely. Collecting yards hold groups, loading ramps help move animals onto vehicles, and paddocks allow free movement. A milking parlour may use its own restraint arrangements rather than a crush.</p><p>A conventional milking cluster for a cow has four teat cups, one for each teat of the four udder quarters. The number is specific to the cow and to that equipment.</p><p><em>Machine milking</em> uses a controlled vacuum to draw milk, while pulsating liners alternate between a milking phase and a rest or massage phase. It is not unregulated continuous suction, and excessive vacuum or faulty pulsation can injure teat tissue.</p>",
             "points": [
               {
-                "html": "The key result is Four. This is the reviewed topic result.",
-                "sources": [
-                  {
-                    "id": "CAP4-10-00177",
-                    "label": "p. 42; rural point 5"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is A handling crush or chute.",
+                "html": "Restraining one animal safely for treatment or examination is the job of a handling crush or chute.",
                 "sources": [
                   {
                     "id": "CAP4-10-00188",
@@ -3946,7 +4368,16 @@
                 ]
               },
               {
-                "html": "The key result is Controlled vacuum extracts milk while pulsation alternates milking and massage.",
+                "html": "A conventional cow milking cluster has four teat cups, one for each teat of the udder quarters.",
+                "sources": [
+                  {
+                    "id": "CAP4-10-00177",
+                    "label": "p. 42; rural point 5"
+                  }
+                ]
+              },
+              {
+                "html": "Machine milking works by a controlled vacuum that extracts milk while pulsation alternates milking and massage phases.",
                 "sources": [
                   {
                     "id": "CAP4-10-00196",
@@ -3957,12 +4388,12 @@
             ],
             "sources": [
               {
-                "id": "CAP4-10-00177",
-                "label": "p. 42; rural point 5"
-              },
-              {
                 "id": "CAP4-10-00188",
                 "label": "p. 42; rural point 12"
+              },
+              {
+                "id": "CAP4-10-00177",
+                "label": "p. 42; rural point 5"
               },
               {
                 "id": "CAP4-10-00196",
@@ -3973,10 +4404,10 @@
           {
             "id": "fish-chilling-versus-frozen-storage",
             "title": "Chilled fresh fish versus frozen storage at −25 °C",
-            "html": "<p>Fish may be held in two different product states. Chilling with melting ice keeps fresh fish near 0 °C, because at ordinary pressure melting freshwater ice stays close to that temperature. Frozen storage keeps an already frozen product well below freezing, and a freezer set point of −25 °C is one such frozen-storage specification.</p><p>A −25 °C set point is therefore a condition for a particular frozen product and storage plan. It is neither a universal best temperature for every fish product nor a rule for fresh fish, and melting ice cannot bring fish to that temperature at atmospheric pressure. Requirements depend on the product, the storage duration and validated controls. Freezing does not stop all deterioration, give unlimited shelf life or remove the need for hygiene, cold-chain control and temperature monitoring.</p>",
+            "html": "<p>Fish may be held in two different product states.</p><ul><li><em>Chilling</em> with melting ice keeps fresh fish near 0 °C, because at ordinary pressure melting freshwater ice stays close to that temperature.</li><li><em>Frozen storage</em> keeps an already frozen product well below freezing; a freezer set point of −25 °C is one such specification.</li></ul><p>A −25 °C set point is a condition for a particular frozen product and storage plan. It is neither a universal best temperature for every fish product nor a rule for fresh fish, and melting ice cannot reach it at atmospheric pressure. Freezing does not stop all deterioration, give unlimited shelf life or remove the need for hygiene, cold-chain control and temperature monitoring.</p>",
             "points": [
               {
-                "html": "The key result is It is a frozen-storage specification for that product and storage plan.",
+                "html": "A −25 °C freezer set point is a frozen-storage specification for that product and storage plan, not a universal rule.",
                 "sources": [
                   {
                     "id": "CAP4-10-00182",
@@ -3985,7 +4416,7 @@
                 ]
               },
               {
-                "html": "The key result is Chilling near the ice-melting point and frozen storage are different product states.",
+                "html": "Ice chilling near the melting point of ice and frozen storage at −25 °C are different product states, not one process.",
                 "sources": [
                   {
                     "id": "CAP4-10-00183",
@@ -4008,10 +4439,10 @@
           {
             "id": "intercultural-operations-and-footbaths",
             "title": "Intercultural crop operations and entrance footbaths for biosecurity",
-            "html": "<p>Intercultural operations are field tasks done in a standing, growing crop between establishment and harvest; weeding, hoeing and, where suitable, earthing-up are examples. Hoeing between established rows controls weeds without damaging the standing plants. Saying only that such work is done before harvesting is too broad: the crop stage, soil condition and purpose of the operation decide when it is appropriate, and it is not work done before sowing or on stored produce.</p><p>An entrance footbath on a poultry farm aims to reduce the spread of disease on footwear, as one part of a biosecurity system. It works only when footwear is cleaned first and the disinfectant is kept at the correct strength with adequate contact. Accumulated mud, dilution and a depleted or contaminated solution undermine it, and it never substitutes for other access controls or guarantees against transmission.</p>",
+            "html": "<p><em>Intercultural operations</em> are field tasks done in a standing, growing crop between establishment and harvest; weeding, hoeing and, where suitable, earthing-up are examples. Hoeing between established rows controls weeds without harming the plants. Saying only that such work is done before harvesting is too broad: crop stage, soil condition and purpose decide the timing, and it is not work done before sowing or on stored produce.</p><p>An entrance <em>footbath</em> on a poultry farm aims to reduce the spread of disease on footwear, as one part of a biosecurity system. It works only when footwear is cleaned first and the disinfectant is kept at the correct strength with adequate contact. Mud, dilution and a depleted solution undermine it, and it never replaces other access controls.</p>",
             "points": [
               {
-                "html": "The key result is During crop growth between establishment and harvest.",
+                "html": "Intercultural operations such as hoeing between rows are done during crop growth between establishment and harvest.",
                 "sources": [
                   {
                     "id": "CAP4-10-00178",
@@ -4020,7 +4451,7 @@
                 ]
               },
               {
-                "html": "The key result is Clean footwear first and maintain the correct disinfectant and contact conditions.",
+                "html": "A poultry footbath is credible only if workers clean footwear first and maintain the correct disinfectant and contact conditions.",
                 "sources": [
                   {
                     "id": "CAP4-10-00192",

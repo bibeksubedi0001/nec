@@ -1355,25 +1355,39 @@
         "code": "ACiE0503",
         "questionCount": 28,
         "format": 2,
-        "summary": "<p>RCC structures-1 covers Working-stress and limit-state methods; beam and slab design and analysis for bending, shear, deflection, bond and anchorage; NS/IS codes. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers reinforced-concrete beams and slabs under IS 456:2000: design stresses and partial factors, concrete strain limits, flexural failure modes, composite action, shear reinforcement, steel limits and bar notation, cover, development length and hooks, and deflection limits. The questions mix short calculations with corrections of capsule statements that dropped part of a code rule.</p>",
         "blocks": [
           {
             "id": "partial-factors-and-design-stresses",
-            "title": "Limit-state design stresses from characteristic strengths and partial factors",
-            "html": "<p>Limit-state design starts from characteristic strengths and reduces them by a material partial safety factor γ<sub>m</sub>. The factor allows for uncertainty in material behaviour and in the resistance model. It is not the flexural strength of concrete, and it does not replace the characteristic strength by a higher mean strength; uncertainty in the loads is handled separately through load factors.</p><p><em>Concrete.</em> IS 456:2000 takes the compressive strength in the structure as 0.67f<sub>ck</sub>, a reduction relating in-structure strength to cube strength, and then divides it by γ<sub>m</sub> = 1.5. For f<sub>ck</sub> = 30 MPa the peak design stress is 0.67 × 30/1.5 = 13.4 MPa, so 0.67f<sub>ck</sub> (20.1 MPa here) is not yet the design value.</p><p><em>Steel.</em> Once reinforcement has strained enough to reach its design plateau, the rounded design stress is 0.87f<sub>y</sub>; for Fe415 this is 0.87 × 415 = 361.05 MPa. It is a steel stress, not a concrete tensile strength, and bars below the plateau strain take their stress from the design stress-strain relation instead.</p>",
-            "moreHtml": "<p>The coefficient 0.36 in the total concrete compressive force of the stress block (C = 0.36f<sub>ck</sub>bx<sub>u</sub>) comes from integrating the parabolic-rectangular design stress over the compression depth. It is a force coefficient, not the peak stress, so it must not be used where 0.67f<sub>ck</sub>/1.5 is meant.</p>",
+            "title": "Design stresses from characteristic strengths and partial factors",
+            "html": "<p>Limit-state design starts from <em>characteristic strengths</em> and reduces them by a material partial safety factor \\(\\gamma_m\\). The factor allows for uncertainty in material behaviour and in the resistance model. It is not the flexural strength of concrete, and uncertainty in the loads is handled separately through load factors.</p><ul><li><em>Concrete.</em> IS 456:2000 takes the strength in the structure as \\(0.67f_{ck}\\) and then divides it by \\(\\gamma_m = 1.5\\), so \\(0.67f_{ck}\\) alone is not yet the design value.</li><li><em>Steel.</em> Once reinforcement has strained enough to reach its design plateau, the rounded design stress is \\(0.87f_y\\). It is a steel stress, not a concrete tensile strength; bars below the plateau strain take their stress from the design stress–strain relation.</li></ul>",
+            "formulas": [
+              {
+                "label": "Peak design stress of concrete",
+                "tex": "f_{cd} = \\dfrac{0.67f_{ck}}{\\gamma_m},\\quad \\gamma_m = 1.5"
+              },
+              {
+                "label": "Design plateau of reinforcement",
+                "tex": "f_{yd} = 0.87f_y"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>\\(f_{ck} = 30\\) MPa: \\(0.67 \\times 30/1.5 = 13.4\\) MPa. Stopping at \\(0.67 \\times 30 = 20.1\\) MPa omits the material factor.</li><li>Fe415: \\(0.87 \\times 415 = 361.05\\) MPa.</li></ol>"
+            },
+            "moreHtml": "<p>The coefficient 0.36 in the stress-block force \\(C = 0.36f_{ck}bx_u\\) comes from integrating the parabolic-rectangular design stress over the compression depth. It is a force coefficient, not the peak stress.</p>",
             "points": [
               {
-                "html": "The key result is 361.05 MPa.",
+                "html": "A material partial safety factor reduces characteristic strength to allow for material and resistance-model uncertainties; it is not the concrete's flexural strength.",
                 "sources": [
                   {
-                    "id": "CAP4-05-00049",
-                    "label": "p. 20; topic 5 point 48"
+                    "id": "CAP4-05-00140",
+                    "label": "p. 23; topic 5 point 141"
                   }
                 ]
               },
               {
-                "html": "The key result is 13.4 MPa.",
+                "html": "With \\(f_{ck}\\) = 30 MPa and \\(\\gamma_m = 1.5\\), the peak design compressive stress is 0.67 × 30/1.5 = 13.4 MPa.",
                 "sources": [
                   {
                     "id": "CAP4-05-00136",
@@ -1382,37 +1396,47 @@
                 ]
               },
               {
-                "html": "The key result is To allow for material and resistance-model uncertainties.",
+                "html": "The rounded design plateau stress for Fe415 reinforcement is 0.87 × 415 = 361.05 MPa.",
                 "sources": [
                   {
-                    "id": "CAP4-05-00140",
-                    "label": "p. 23; topic 5 point 141"
+                    "id": "CAP4-05-00049",
+                    "label": "p. 20; topic 5 point 48"
                   }
                 ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-05-00049",
-                "label": "p. 20; topic 5 point 48"
+                "id": "CAP4-05-00140",
+                "label": "p. 23; topic 5 point 141"
               },
               {
                 "id": "CAP4-05-00136",
                 "label": "p. 23; topic 5 point 137"
               },
               {
-                "id": "CAP4-05-00140",
-                "label": "p. 23; topic 5 point 141"
+                "id": "CAP4-05-00049",
+                "label": "p. 20; topic 5 point 48"
               }
             ]
           },
           {
             "id": "strain-limits-and-stress-block",
-            "title": "Concrete strain limits and the idealized parabolic-rectangular stress curve",
-            "html": "<p>IS 456:2000 idealizes concrete in compression by a curve that rises parabolically up to a strain of 0.002 and then stays at a constant design stress up to the flexural strain limit. In bending, failure is taken to occur when the extreme compression fibre reaches 0.0035 (clause 38.1); multiplied by 100 this is 0.35%. Under pure axial compression the section is strained uniformly and the limiting strain is 0.002 instead, so the two values are not interchangeable.</p><p>Keep two ideas apart. The stress-strain curve describes the material. The stress block describes how stress is distributed over the compression depth of a particular section, obtained by applying that curve to the linear strain profile across the depth. Neither 0.0035 nor 0.002 is a permissible routine service strain; both are ultimate-state idealizations.</p><p>This parabolic-rectangular idealization belongs to concrete in IS 456:2000 limit-state bending. Prestressed-concrete provisions are found in the applicable edition of IS 1343, so the curve should not be described as a prestressed-concrete rule of IS 456:1978.</p>",
+            "title": "Concrete strain limits and the parabolic-rectangular curve",
+            "html": "<p>IS 456:2000 idealizes concrete in compression by a curve that rises parabolically up to a strain of 0.002 and then stays at a constant design stress up to the flexural strain limit. In bending, failure is taken to occur when the extreme compression fibre reaches 0.0035 (clause 38.1). Under pure axial compression the section strains uniformly and the limit is 0.002 instead.</p><p>Keep two ideas apart. The stress–strain curve describes the material; the <em>stress block</em> is the distribution over the compression depth of a particular section, found by applying that curve to the linear strain profile. Neither 0.0035 nor 0.002 is a permissible service strain.</p><p>This idealization belongs to concrete in IS 456:2000 limit-state bending. Prestressed-concrete provisions sit in the applicable edition of IS 1343.</p>",
+            "formulas": [
+              {
+                "label": "Ultimate strain, extreme fibre in bending",
+                "tex": "\\varepsilon_{cu} = 0.0035"
+              },
+              {
+                "label": "End of parabola; pure axial compression",
+                "tex": "\\varepsilon_{c0} = 0.002"
+              }
+            ],
             "points": [
               {
-                "html": "The key result is 0.0035, or 0.35%.",
+                "html": "In IS 456:2000 limit-state bending, the extreme compression fibre fails at a strain of 0.0035, or 0.35%; pure axial compression uses 0.002.",
                 "sources": [
                   {
                     "id": "CAP4-04-00098",
@@ -1421,7 +1445,7 @@
                 ]
               },
               {
-                "html": "The key result is Parabolic rise to strain 0.002, then a plateau to 0.0035.",
+                "html": "The idealized IS 456:2000 concrete curve is a parabolic rise to strain 0.002, then a plateau to 0.0035.",
                 "sources": [
                   {
                     "id": "CAP4-04-00113",
@@ -1444,28 +1468,10 @@
           {
             "id": "flexural-failure-modes",
             "title": "Cracking, under- and over-reinforced behaviour, and doubly reinforced beams",
-            "html": "<p>As bending increases on an initially uncracked beam, the first event is flexural cracking, which begins when the tensile concrete stress reaches its cracking strength. The under- or over-reinforced label does not decide first cracking; it describes the later ultimate failure sequence:</p><ul><li>Under-reinforced: tension steel yields before the concrete crushes, giving ductile behaviour.</li><li>Over-reinforced: concrete reaches its ultimate compressive strain while the tension steel is still below yield; failure is compression-controlled with limited ductility.</li><li>Balanced: in the classical idealization both limits are reached together.</li></ul><p>Adding tension steel beyond the ductility limit of a fixed-size singly reinforced beam deepens the compression zone. A compatible analysis may predict a larger moment, but that capacity is controlled by crushing, lacks ductility and cannot assume the steel reaches its full design stress. Strength alone does not justify the design; strain compatibility and the code's ductility limits govern.</p><p>When depth is restricted, the remedy is a larger section or a doubly reinforced section, in which designed compression steel as well as tension steel is counted in the moment resistance. Nominal top hanger bars alone do not make a beam doubly reinforced.</p>",
+            "html": "<p>As bending increases on an initially uncracked beam, the first event is flexural cracking, when the tensile concrete stress reaches its cracking strength. The under- or over-reinforced label describes the later ultimate failure sequence:</p><ul><li><em>Under-reinforced</em>: the tension steel yields before the concrete crushes, giving ductile behaviour.</li><li><em>Over-reinforced</em>: the concrete reaches its ultimate strain while the steel is still below yield; failure is compression-controlled with limited ductility.</li><li><em>Balanced</em>: both limits are reached together in the classical idealization.</li></ul><p>Adding tension steel beyond the ductility limit deepens the compression zone. An analysis may predict a larger moment, but that capacity is brittle and cannot assume full steel stress. When depth is restricted, the remedy is a larger or a <em>doubly reinforced</em> section, in which designed compression steel is counted in the moment resistance; nominal hanger bars alone do not qualify.</p>",
             "points": [
               {
-                "html": "The key result is Over-reinforced, compression-controlled failure.",
-                "sources": [
-                  {
-                    "id": "CAP4-05-00029",
-                    "label": "pp. 20, 21, 23; topic 5 point 28; topic 5 point 71; topic 5 point 128"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Doubly reinforced section.",
-                "sources": [
-                  {
-                    "id": "CAP4-05-00037",
-                    "label": "p. 20; topic 5 point 36"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Tensile concrete stress reaches its cracking strength.",
+                "html": "First flexural cracking of an uncracked RC beam occurs when the tensile concrete stress reaches its cracking strength.",
                 "sources": [
                   {
                     "id": "CAP4-05-00039",
@@ -1474,50 +1480,82 @@
                 ]
               },
               {
-                "html": "The key result is Concrete crushing can precede adequate tensile-steel ductility.",
+                "html": "Concrete reaching its ultimate strain while the tension steel is still below yield is an over-reinforced, compression-controlled failure.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00029",
+                    "label": "pp. 20, 21, 23; topic 5 point 28; topic 5 point 71; topic 5 point 128"
+                  }
+                ]
+              },
+              {
+                "html": "Steel beyond the ductility limit is no design shortcut, because concrete crushing can precede adequate tensile-steel ductility.",
                 "sources": [
                   {
                     "id": "CAP4-05-00041",
                     "label": "p. 20; topic 5 point 40"
                   }
                 ]
+              },
+              {
+                "html": "A depth-restricted beam whose moment resistance counts designed compression steel as well as tension steel is a doubly reinforced section.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00037",
+                    "label": "p. 20; topic 5 point 36"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-05-00029",
-                "label": "pp. 20, 21, 23; topic 5 point 28; topic 5 point 71; topic 5 point 128"
-              },
-              {
-                "id": "CAP4-05-00037",
-                "label": "p. 20; topic 5 point 36"
-              },
               {
                 "id": "CAP4-05-00039",
                 "label": "p. 20; topic 5 point 38"
               },
               {
+                "id": "CAP4-05-00029",
+                "label": "pp. 20, 21, 23; topic 5 point 28; topic 5 point 71; topic 5 point 128"
+              },
+              {
                 "id": "CAP4-05-00041",
                 "label": "p. 20; topic 5 point 40"
+              },
+              {
+                "id": "CAP4-05-00037",
+                "label": "p. 20; topic 5 point 36"
               }
             ]
           },
           {
             "id": "transformed-section-and-composite-action",
-            "title": "Composite action: modular ratio, thermal compatibility and elastic shear flow",
-            "html": "<p>Reinforced concrete works because bonded steel and concrete strain together. Their coefficients of thermal expansion are broadly similar, so a uniform temperature change causes little differential strain between them. This limits internal mismatch, but it does not remove stresses caused by external restraint or temperature gradients, and it does not make the two materials equally stiff.</p><p>Elastic (working-stress) analysis handles the stiffness difference with a transformed section: the steel area is multiplied by the modular ratio m = E<sub>s</sub>/E<sub>c</sub> to give an equivalent concrete area. For an instantaneous calculation with E<sub>s</sub> = 200 GPa and E<sub>c</sub> = 25 GPa, m = 200/25 = 8. A code's working-stress modular ratio that allows for long-term effects is a different, stated convention.</p><p>In the cracked transformed section of a singly reinforced rectangular beam, tensile concrete is ignored. Shear flow q = VQ/I depends on the first moment Q of the effective area above the cut. Within the compression zone Q changes quadratically, so the diagram is parabolic above the neutral axis; between the neutral axis and the steel level no effective area is added, so it stays constant.</p><p>With constant width b, the nominal shear stress q/b varies the same way. This is an elastic-model result, not a measured distribution in cracked concrete.</p>",
+            "title": "Composite action: modular ratio, thermal compatibility and shear flow",
+            "html": "<p>Reinforced concrete works because bonded steel and concrete strain together. Their coefficients of thermal expansion are broadly similar, so a uniform temperature change causes little differential strain between them. This does not remove stresses from external restraint or temperature gradients, and it does not make the two materials equally stiff.</p><p>Elastic analysis handles the stiffness difference with a <em>transformed section</em>: the steel area is multiplied by the modular ratio to give an equivalent concrete area. A code's working-stress modular ratio that allows for long-term effects is a different, stated convention.</p><p>In the cracked transformed section of a singly reinforced rectangular beam, tensile concrete is ignored. The first moment of the effective area changes quadratically within the compression zone and stays constant down to the steel level, so the shear-flow diagram is parabolic above the neutral axis and constant below it.</p>",
+            "formulas": [
+              {
+                "label": "Modular ratio",
+                "tex": "m = \\dfrac{E_s}{E_c}"
+              },
+              {
+                "label": "Elastic shear flow",
+                "tex": "q = \\dfrac{VQ}{I}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: instantaneous modular ratio",
+              "html": "<p>With \\(E_s = 200\\) GPa and \\(E_c = 25\\) GPa, \\(m = 200/25 = 8\\), so each square millimetre of steel counts as 8 mm² of concrete.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Parabolic above; constant between the axis and steel.",
+                "html": "With \\(E_s\\) = 200 GPa and \\(E_c\\) = 25 GPa, the modular ratio that transforms steel into equivalent concrete area is 8.",
                 "sources": [
                   {
-                    "id": "CAP4-04-00053",
-                    "label": "p. 17; topic 4 point 51"
+                    "id": "CAP4-05-00095",
+                    "label": "p. 22; topic 5 point 94"
                   }
                 ]
               },
               {
-                "html": "The key result is It limits differential thermal strain between bonded materials.",
+                "html": "Similar thermal expansion limits differential thermal strain between the bonded steel and concrete under a uniform temperature change.",
                 "sources": [
                   {
                     "id": "CAP4-05-00074",
@@ -1526,37 +1564,37 @@
                 ]
               },
               {
-                "html": "The key result is 8. This is the reviewed topic result.",
+                "html": "In the cracked transformed section, the shear flow is parabolic above the neutral axis and constant between the axis and the steel.",
                 "sources": [
                   {
-                    "id": "CAP4-05-00095",
-                    "label": "p. 22; topic 5 point 94"
+                    "id": "CAP4-04-00053",
+                    "label": "p. 17; topic 4 point 51"
                   }
                 ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-04-00053",
-                "label": "p. 17; topic 4 point 51"
+                "id": "CAP4-05-00095",
+                "label": "p. 22; topic 5 point 94"
               },
               {
                 "id": "CAP4-05-00074",
                 "label": "p. 21; topic 5 point 73"
               },
               {
-                "id": "CAP4-05-00095",
-                "label": "p. 22; topic 5 point 94"
+                "id": "CAP4-04-00053",
+                "label": "p. 17; topic 4 point 51"
               }
             ]
           },
           {
             "id": "shear-in-rc-beams",
             "title": "Shear in RC beams: diagonal tension, concrete mechanisms and stirrups",
-            "html": "<p>Shear combined with bending produces inclined principal tensile stresses, so cracks near supports run diagonally. Shear reinforcement is provided mainly to resist this diagonal tension. Adequately anchored stirrups crossing an inclined crack carry tension across it and tie together a truss-like load path in which inclined concrete struts carry compression.</p><p>After diagonal cracking, stirrups are not the only mechanism. Shear is also carried by the uncracked compression zone and struts, by aggregate interlock across the crack faces and by dowel action of the longitudinal bars. Simplified design adds a concrete contribution to a steel contribution and limits the shear stress so that the struts do not crush. Stirrups neither replace the longitudinal flexural steel nor prevent every crack.</p><p>IS 456:2000 clause 26.5.1.4 recognizes the following forms of beam shear reinforcement, subject to its angle, combination and anchorage rules:</p><ul><li>vertical stirrups;</li><li>inclined stirrups;</li><li>bent-up bars used together with stirrups.</li></ul><p>A bar is effective only if it crosses the potential inclined cracks and can develop its force through anchorage; placing a bar in some orientation does not by itself make it shear reinforcement.</p>",
+            "html": "<p>Shear combined with bending produces inclined principal tensile stresses, so cracks near supports run diagonally. Adequately anchored stirrups crossing an inclined crack carry tension across it and tie together a truss-like load path in which inclined concrete struts carry compression.</p><p>After diagonal cracking, stirrups are not the only mechanism. Shear is also carried by the uncracked compression zone, aggregate interlock across the crack and dowel action of the longitudinal bars. Simplified design adds a concrete contribution to a steel contribution and limits the shear stress so the struts do not crush.</p><p>IS 456:2000 clause 26.5.1.4 recognizes vertical stirrups, inclined stirrups, and bent-up bars used together with stirrups, subject to its angle and anchorage rules. A bar is effective only if it crosses the potential cracks and is anchored.</p>",
             "points": [
               {
-                "html": "The key result is Concrete mechanisms and shear reinforcement act together.",
+                "html": "After diagonal cracking, concrete mechanisms and shear reinforcement act together; stirrups are not the sole source of shear resistance.",
                 "sources": [
                   {
                     "id": "CAP4-04-00004",
@@ -1565,7 +1603,7 @@
                 ]
               },
               {
-                "html": "The key result is Carry tension across the inclined crack as part of the shear load path.",
+                "html": "Adequately anchored stirrups carry tension across the inclined crack as part of the truss-like shear load path.",
                 "sources": [
                   {
                     "id": "CAP4-04-00112",
@@ -1574,7 +1612,7 @@
                 ]
               },
               {
-                "html": "The key result is Carry tensile forces across diagonal shear cracks.",
+                "html": "Near a support, stirrups crossing the diagonal shear cracks carry the tensile forces across them; they do not replace the longitudinal steel.",
                 "sources": [
                   {
                     "id": "CAP4-05-00042",
@@ -1583,7 +1621,7 @@
                 ]
               },
               {
-                "html": "The key result is Vertical stirrups, inclined stirrups, and bent-up bars with stirrups.",
+                "html": "IS 456:2000 recognizes vertical stirrups, inclined stirrups, and bent-up bars with stirrups as beam shear reinforcement.",
                 "sources": [
                   {
                     "id": "CAP4-05-00099",
@@ -1613,11 +1651,34 @@
           },
           {
             "id": "beam-reinforcement-limits-and-notation",
-            "title": "Beam tension-steel limits and reading bar notation",
-            "html": "<p>IS 456:2000 clause 26.5.1.1 bounds beam tension reinforcement from both sides, and the two bounds use different depths:</p><ul><li>Minimum: A<sub>s</sub> = 0.85bd/f<sub>y</sub>, with effective depth d and f<sub>y</sub> in MPa. For b = 250 mm, d = 400 mm and Fe500: 0.85 × 250 × 400/500 = 170 mm<sup>2</sup>.</li><li>Maximum: 0.04bD, with overall depth D. For b = 250 mm and D = 500 mm: 0.04 × 250 × 500 = 5000 mm<sup>2</sup>. Substituting the effective depth of 450 mm would wrongly give 4500 mm<sup>2</sup>.</li></ul><p>The gross-area maximum is only an upper detailing bound: a more restrictive ductility or strength check can govern well before it is reached, and the overall depth D belongs to the maximum, not to the minimum formula.</p><p>In reinforcement schedules the symbol φ denotes nominal bar diameter. A note such as '4 bars, φ16' means four bars each of 16 mm diameter. The count and the diameter are separate quantities; neither gives the clear spacing, and the total area must be calculated (here 4 × π × 16<sup>2</sup>/4 ≈ 804 mm<sup>2</sup>).</p>",
+            "title": "Beam tension-steel limits and bar notation",
+            "html": "<p>IS 456:2000 clause 26.5.1.1 bounds beam tension reinforcement from both sides, and the two bounds use different depths. The minimum uses the effective depth d with \\(f_y\\) in MPa; the maximum uses the overall depth D. The maximum is only an upper detailing bound, and a ductility or strength check can govern well before it.</p><p>In reinforcement schedules the symbol φ denotes nominal bar diameter. A note such as '4 bars, φ16' means four bars each of 16 mm diameter. The count and the diameter are separate quantities; neither gives the clear spacing, and the total area must be calculated.</p>",
+            "formulas": [
+              {
+                "label": "Minimum tension steel",
+                "tex": "A_{s,\\min} = \\dfrac{0.85\\,bd}{f_y}"
+              },
+              {
+                "label": "Maximum tension steel",
+                "tex": "A_{s,\\max} = 0.04\\,bD"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>b = 250 mm, d = 400 mm, Fe500: \\(0.85 \\times 250 \\times 400/500 = 170\\) mm².</li><li>b = 250 mm, D = 500 mm: \\(0.04 \\times 250 \\times 500 = 5000\\) mm². Using d = 450 mm would wrongly give 4500 mm².</li><li>Four φ16 bars: \\(4 \\times \\pi \\times 16^2/4 \\approx 804\\) mm².</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is 5000 mm 2.",
+                "html": "For b = 250 mm, d = 400 mm and Fe500, the minimum tension steel \\(0.85bd/f_y\\) is 170.0 mm².",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00101",
+                    "label": "p. 22; topic 5 point 100"
+                  }
+                ]
+              },
+              {
+                "html": "For b = 250 mm and overall depth D = 500 mm, the maximum tension steel \\(0.04bD\\) is 5000 mm².",
                 "sources": [
                   {
                     "id": "CAP4-05-00043",
@@ -1626,25 +1687,20 @@
                 ]
               },
               {
-                "html": "The key result is Nominal diameter of each bar.",
+                "html": "In the note '4 bars, φ16', the 16 gives the nominal diameter of each bar in millimetres, not the spacing.",
                 "sources": [
                   {
                     "id": "CAP4-05-00044",
                     "label": "p. 20; topic 5 point 43"
                   }
                 ]
-              },
-              {
-                "html": "The key result is 170.0 mm 2.",
-                "sources": [
-                  {
-                    "id": "CAP4-05-00101",
-                    "label": "p. 22; topic 5 point 100"
-                  }
-                ]
               }
             ],
             "sources": [
+              {
+                "id": "CAP4-05-00101",
+                "label": "p. 22; topic 5 point 100"
+              },
               {
                 "id": "CAP4-05-00043",
                 "label": "p. 20; topic 5 point 42"
@@ -1652,55 +1708,65 @@
               {
                 "id": "CAP4-05-00044",
                 "label": "p. 20; topic 5 point 43"
-              },
-              {
-                "id": "CAP4-05-00101",
-                "label": "p. 22; topic 5 point 100"
               }
             ]
           },
           {
             "id": "slab-cover-and-thickness",
-            "title": "Nominal cover in slabs and the checks that govern slab thickness",
-            "html": "<p>Nominal cover protects the reinforcement, and the value required depends on exposure, bar size and fire resistance rather than being one figure for all slabs. Under IS 456:2000 Table 16 the mild-exposure baseline is 20 mm, and Note 1 allows a 5 mm reduction where main bars do not exceed 12 mm.</p><p>A mild-exposure slab with 10 mm main bars can therefore have 15 mm nominal cover, provided no fire or other requirement demands more. Nominal cover must also be at least the bar diameter (clause 26.4.1), which 15 mm satisfies for a 10 mm bar.</p><p>Slab thickness is not fixed by shear alone. It must satisfy every governing check: flexure, one-way shear, punching shear around columns, deflection, cover and practical bar placement. A slab that passes its flexural calculation may still fail punching shear at a column, so passing one check proves nothing about the others.</p>",
+            "title": "Nominal cover in slabs and the checks that set slab thickness",
+            "html": "<p>Nominal cover protects the reinforcement, and the value depends on exposure, bar size and fire resistance rather than being one figure for all slabs. Under IS 456:2000 Table 16 the mild-exposure baseline is 20 mm, and Note 1 allows a 5 mm reduction where main bars do not exceed 12 mm. Cover must also be at least the bar diameter (clause 26.4.1).</p><p>Slab thickness is not fixed by shear alone. It must satisfy flexure, one-way shear, punching shear around columns, deflection, cover and practical bar placement. A slab that passes its flexural check may still fail punching shear at a column.</p>",
             "points": [
               {
-                "html": "The key result is All governing strength and serviceability checks must be satisfied.",
-                "sources": [
-                  {
-                    "id": "CAP4-05-00038",
-                    "label": "p. 20; topic 5 point 37"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is 15 mm.",
+                "html": "A mild-exposure slab with 10 mm main bars can have 15 mm nominal cover under Table 16 and its Note 1, provided nothing demands more.",
                 "sources": [
                   {
                     "id": "CAP4-05-00047",
                     "label": "p. 20; topic 5 point 46"
                   }
                 ]
+              },
+              {
+                "html": "A slab that passes flexure but fails punching shear shows that all governing strength and serviceability checks must be satisfied.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00038",
+                    "label": "p. 20; topic 5 point 37"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-05-00038",
-                "label": "p. 20; topic 5 point 37"
-              },
-              {
                 "id": "CAP4-05-00047",
                 "label": "p. 20; topic 5 point 46"
+              },
+              {
+                "id": "CAP4-05-00038",
+                "label": "p. 20; topic 5 point 37"
               }
             ]
           },
           {
             "id": "development-length-and-compression-laps",
-            "title": "Development length from bond equilibrium and compression lap length",
-            "html": "<p>A bar can carry its design force only if enough of it is embedded to pass that force to the concrete by bond. This embedded length is the development length L<sub>d</sub>. Equating the bar force to the bond force over the embedded length of a straight bar of diameter φ gives (πφ<sup>2</sup>/4)σ<sub>s</sub> = πφL<sub>d</sub>τ<sub>bd</sub>, so</p><p>L<sub>d</sub> = φσ<sub>s</sub>/(4τ<sub>bd</sub>).</p><p>L<sub>d</sub> grows with bar diameter and bar stress and falls as the design bond stress rises; it is not a span, a cover dimension or a fixed multiple valid for every bar. <em>Worked example.</em> A 16 mm bar developing 300 MPa with an applicable design bond stress of 1.5 MPa needs L<sub>d</sub> = 16 × 300/(4 × 1.5) = 800 mm.</p><p>A lap passes force from one bar to the next through the same bond mechanism. IS 456:2000 clause 26.2.5.1 requires a compression lap of at least the compression development length and not less than 24φ. For a 20 mm bar with compression L<sub>d</sub> = 620 mm, 24 × 20 = 480 mm, so the lap is the larger value, 620 mm. Using 24φ alone would miss the governing bond requirement.</p>",
+            "title": "Development length from bond equilibrium, and compression laps",
+            "html": "<p>A bar can carry its design force only if enough of it is embedded to pass that force to the concrete by bond. This embedded length is the <em>development length</em>. Equating the bar force to the bond force along a straight bar gives the formula below: it grows with bar diameter and stress and falls as the design bond stress rises. It is not a span, a cover dimension or a fixed multiple valid for every bar.</p><p>A lap passes force from one bar to the next by the same bond mechanism. IS 456:2000 clause 26.2.5.1 requires a compression lap of at least the compression development length and not less than 24φ; the larger governs.</p>",
+            "formulas": [
+              {
+                "label": "Development length",
+                "tex": "L_d = \\dfrac{\\phi\\,\\sigma_s}{4\\tau_{bd}}"
+              },
+              {
+                "label": "Compression lap",
+                "tex": "L_{\\text{lap}} \\ge \\max(L_d,\\ 24\\phi)"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<p>A 16 mm bar developing 300 MPa with a design bond stress of 1.5 MPa:</p>\\[L_d = \\dfrac{16 \\times 300}{4 \\times 1.5} = 800\\ \\text{mm}\\]<p>A 20 mm compression bar with \\(L_d = 620\\) mm: 24 × 20 = 480 mm, so the lap is the larger value, 620 mm.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Development length.",
+                "html": "The embedded length that transfers a bar's force into the surrounding concrete by bond is its development length.",
                 "sources": [
                   {
                     "id": "CAP4-05-00021",
@@ -1709,7 +1775,7 @@
                 ]
               },
               {
-                "html": "The key result is 800 mm.",
+                "html": "A 16 mm bar developing 300 MPa with a design bond stress of 1.5 MPa needs a development length of 800 mm.",
                 "sources": [
                   {
                     "id": "CAP4-05-00022",
@@ -1718,7 +1784,7 @@
                 ]
               },
               {
-                "html": "The key result is 620 mm.",
+                "html": "A 20 mm compression bar with \\(L_d\\) = 620 mm needs a lap of 620 mm, since 24φ = 480 mm is smaller.",
                 "sources": [
                   {
                     "id": "CAP4-05-00081",
@@ -1745,10 +1811,16 @@
           {
             "id": "hooks-and-anchorage-credit",
             "title": "Standard hooks: an anchorage credit, not a complete anchorage",
-            "html": "<p>Where the straight embedment is too short, a bend or hook can add anchorage. IS 456:2000 clause 26.2.2.1 credits a standard U-type tension hook with an anchorage value of 16φ, so for a 20 mm bar the equivalent credit is 16 × 20 = 320 mm. This credit is not the physical curved length of the hook, and it does not mean that the complete required development length is 320 mm.</p><p>Treating 16φ as the whole anchorage for every bar is therefore a misuse. The designer first finds the required development length from the bar force and the design bond strength, then checks whether the available straight embedment plus any admissible hook credit supplies it. Bend dimensions, confinement and support conditions have their own rules, and a bar is not anchored merely because it lies inside the concrete cover.</p>",
+            "html": "<p>Where the straight embedment is too short, a bend or hook can add anchorage. IS 456:2000 clause 26.2.2.1 credits a standard U-type tension hook with an anchorage value of 16φ. This credit is not the physical curved length of the hook, and it does not mean the whole required development length equals 16φ.</p><p>The designer first finds the required development length from the bar force and design bond strength, then checks whether the available straight embedment plus any admissible hook credit supplies it. Bend dimensions, confinement and support conditions have their own rules.</p>",
+            "formulas": [
+              {
+                "label": "Standard U-type hook credit",
+                "tex": "L_{\\text{hook}} = 16\\phi"
+              }
+            ],
             "points": [
               {
-                "html": "The key result is 320 mm.",
+                "html": "A standard U-type tension hook is credited with an anchorage value of 16φ, which is 320 mm for a 20 mm bar.",
                 "sources": [
                   {
                     "id": "CAP4-05-00053",
@@ -1757,7 +1829,7 @@
                 ]
               },
               {
-                "html": "The key result is Check required development against available straight length and admissible hook credit.",
+                "html": "Rather than taking 16φ as complete anchorage, check the required development against the available straight length and admissible hook credit.",
                 "sources": [
                   {
                     "id": "CAP4-05-00122",
@@ -1779,11 +1851,15 @@
           },
           {
             "id": "deflection-limits",
-            "title": "Deflection limits for RC beams under IS 456:2000 clause 23.2",
-            "html": "<p>Serviceability requires beams to be stiff enough, and IS 456:2000 clause 23.2 sets two separate limits for normal cases:</p><table><thead><tr><th scope='col'>Limit</th><th scope='col'>Criterion</th><th scope='col'>What it covers</th></tr></thead><tbody><tr><td>Total final deflection, clause 23.2(a)</td><td>span/250</td><td>All relevant loads including time-dependent effects, measured from the as-cast level of the supports</td></tr><tr><td>Deflection after partitions and finishes, clause 23.2(b)</td><td>smaller of span/350 and 20 mm</td><td>The increment occurring after partitions and finishes are installed</td></tr></tbody></table><p><em>Worked examples.</em> For a 6.0 m beam the total limit is 6000/250 = 24 mm. For a 9 m beam the post-finish increment is limited to 9000/350 = 25.71 mm or 20 mm, whichever is smaller, so 20 mm controls.</p><p>The two criteria answer different questions and are not interchangeable, and neither is an unattributed span/325 rule. The fixed 20 mm cap on the second limit reflects its purpose of limiting movement after partitions and finishes are in place.</p>",
+            "title": "Deflection limits for RC beams, IS 456:2000 clause 23.2",
+            "html": "<p>Serviceability requires beams to be stiff enough, and clause 23.2 sets two separate limits for normal cases.</p><table><thead><tr><th scope='col'>Limit</th><th scope='col'>Criterion</th><th scope='col'>What it covers</th></tr></thead><tbody><tr><th scope='row'>Total final deflection, 23.2(a)</th><td>span/250</td><td>All relevant loads including time-dependent effects, from the as-cast support level</td></tr><tr><th scope='row'>After partitions and finishes, 23.2(b)</th><td>smaller of span/350 and 20 mm</td><td>The increment after partitions and finishes are installed</td></tr></tbody></table><p>The two criteria answer different questions and are not interchangeable, and neither is an unattributed span/325 rule.</p>",
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>6.0 m beam, total limit: \\(6000/250 = 24\\) mm.</li><li>9 m beam, post-finish increment: \\(9000/350 = 25.71\\) mm, but the 20 mm cap is smaller, so 20 mm controls.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is 24.0 mm.",
+                "html": "The normal total final deflection limit for a 6.0 m beam is span/250, which is 24.0 mm.",
                 "sources": [
                   {
                     "id": "CAP4-05-00125",
@@ -1792,7 +1868,7 @@
                 ]
               },
               {
-                "html": "The key result is 20.0 mm.",
+                "html": "For a 9 m beam the deflection increment after partitions and finishes is limited to 20.0 mm, smaller than 9000/350 = 25.71 mm.",
                 "sources": [
                   {
                     "id": "CAP4-05-00126",
@@ -1811,6 +1887,56 @@
                 "label": "p. 23; topic 5 point 125"
               }
             ]
+          }
+        ],
+        "formulaSheet": [
+          {
+            "label": "Concrete design stress",
+            "tex": "f_{cd} = \\dfrac{0.67f_{ck}}{1.5}"
+          },
+          {
+            "label": "Steel design stress",
+            "tex": "f_{yd} = 0.87f_y"
+          },
+          {
+            "label": "Strain limits",
+            "tex": "\\varepsilon_{cu} = 0.0035,\\quad \\varepsilon_{c0} = 0.002"
+          },
+          {
+            "label": "Modular ratio",
+            "tex": "m = \\dfrac{E_s}{E_c}"
+          },
+          {
+            "label": "Shear flow",
+            "tex": "q = \\dfrac{VQ}{I}"
+          },
+          {
+            "label": "Minimum tension steel",
+            "tex": "A_{s,\\min} = \\dfrac{0.85\\,bd}{f_y}"
+          },
+          {
+            "label": "Maximum tension steel",
+            "tex": "A_{s,\\max} = 0.04\\,bD"
+          },
+          {
+            "label": "Development length",
+            "tex": "L_d = \\dfrac{\\phi\\,\\sigma_s}{4\\tau_{bd}}"
+          },
+          {
+            "label": "Compression lap",
+            "tex": "L_{\\text{lap}} \\ge \\max(L_d,\\ 24\\phi)"
+          },
+          {
+            "label": "Standard hook credit",
+            "tex": "L_{\\text{hook}} = 16\\phi"
+          },
+          {
+            "label": "Total deflection limit",
+            "tex": "\\delta_{\\text{total}} \\le \\dfrac{L}{250}"
+          },
+          {
+            "label": "Post-finish deflection limit",
+            "tex": "\\delta \\le \\min\\left(\\dfrac{L}{350},\\ 20\\ \\text{mm}\\right)"
           }
         ],
         "cautions": [
@@ -1962,7 +2088,7 @@
             "id": "minimum-steel-formula-restored",
             "status": "corrected",
             "prompt": "Minimum beam tension steel is a fraction over fy, split in the source text",
-            "html": "<p>The fraction was split during extraction. The IS 456:2000 clause 26.5.1.1 minimum is A<sub>s</sub> = 0.85bd/f<sub>y</sub> with effective depth d; the capital D in the source numerator is corrected to d.</p>",
+            "html": "<p>The fraction was split during extraction. The IS 456:2000 clause 26.5.1.1 minimum is \\(A_s = 0.85bd/f_y\\) with effective depth d; the capital D in the source numerator is corrected to d.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00101",
@@ -1998,7 +2124,7 @@
             "id": "design-stress-needs-gamma-m",
             "status": "corrected",
             "prompt": "For design, concrete strength is assumed to be 0.67 times characteristic strength",
-            "html": "<p>The material partial factor is omitted. The IS 456:2000 peak design stress is 0.67f<sub>ck</sub>/γ<sub>m</sub> with γ<sub>m</sub> = 1.5; for f<sub>ck</sub> = 30 MPa this is 13.4 MPa, not 20.1 MPa.</p>",
+            "html": "<p>The material partial factor is omitted. The IS 456:2000 peak design stress is \\(0.67f_{ck}/\\gamma_m\\) with \\(\\gamma_m = 1.5\\); for \\(f_{ck}\\) = 30 MPa this is 13.4 MPa, not 20.1 MPa.</p>",
             "sources": [
               {
                 "id": "CAP4-05-00136",
@@ -3407,15 +3533,15 @@
         "code": "ACiE0506",
         "questionCount": 12,
         "format": 2,
-        "summary": "<p>Timber and masonry structures covers Timber beams and columns; masonry design principles, mandatory rules of thumb and NBC; masonry properties and failure modes; mud, lime and cement mortars. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers timber and masonry structures: how timber strength depends on grain direction, the slenderness convention for solid timber columns, masonry walls under eccentric load, cavity walls and bed-joint shear, lime mortars, and Nepal's low-strength masonry guidance and building regulation. The questions test definitions, a few code limits and short stress calculations.</p>",
         "blocks": [
           {
             "id": "timber-grain-direction",
             "title": "Timber strength depends on load direction relative to the grain",
-            "html": "<p>Timber is anisotropic: its long, aligned fibres make it stronger in some directions than in others. In direct compression, resistance parallel to the grain, where the fibres are loaded along their length, is generally greater than compression or bearing perpendicular to the grain, where the fibres are crushed sideways. A design value must therefore match both the direction of stress and the failure mode being checked.</p><p>High strength along the fibres does not imply high resistance to every other action. Splitting and longitudinal shear, which separate the fibres from one another, are governed by separate properties, so parallel-grain compression and longitudinal shear cannot share one strength value. Equal density does not make compressive strength independent of grain direction either. 'Strength is maximum parallel to the grain' is therefore a sound guide for direct compression, not a statement about every timber property.</p>",
+            "html": "<p>Timber is <em>anisotropic</em>: its long, aligned fibres make it stronger in some directions than in others. In direct compression, resistance parallel to the grain, where the fibres are loaded along their length, is generally greater than compression or bearing across the grain, where the fibres are crushed sideways.</p><p>High strength along the fibres does not mean high resistance to every action. Splitting and longitudinal shear separate the fibres from one another and are governed by separate properties. A design value must therefore match both the stress direction and the failure mode being checked.</p>",
             "points": [
               {
-                "html": "The key result is Parallel-grain compressive resistance is generally greater.",
+                "html": "In direct compression, parallel-grain compressive resistance is generally greater than cross-grain resistance, but splitting and longitudinal shear need their own properties.",
                 "sources": [
                   {
                     "id": "CAP4-05-00083",
@@ -3434,19 +3560,21 @@
           {
             "id": "solid-timber-columns",
             "title": "Solid timber columns: the S/d limit and circular sections",
-            "html": "<p>IS 883:2016 expresses the slenderness of a solid timber column as S/d: the unsupported length divided by the least lateral dimension of the section, rather than length divided by radius of gyration. For pin-ended solid columns, clause 7.6.1.4 caps this ratio at 50. Other end restraints need a suitably modified length, and capacity checks are still required below the cap.</p><p><em>Worked example.</em> A pin-ended post 3.6 m long with a 100 mm × 150 mm section has S/d = 3600/100 = 36, below 50. Using the larger dimension (3600/150 = 24) answers the wrong question. The least radius of gyration, 100/√12 ≈ 28.9 mm, would give L/r ≈ 124.7, which belongs to a different slenderness definition and must not be compared with the timber limit of 50.</p><p>Clause 7.6.1.5 of the same code limits the permissible load of a circular solid column: it must not exceed that of the corresponding square column of equal cross-sectional area. This is a timber-code rule, not a general rule for RC or steel columns, and it does not claim that equal-area circles and squares have identical radii of gyration.</p>",
+            "html": "<p>IS 883:2016 expresses the slenderness of a solid timber column as S/d: the unsupported length divided by the least lateral dimension of the section, not length divided by radius of gyration. For pin-ended solid columns, clause 7.6.1.4 caps this ratio at 50. Other end restraints need a modified length, and capacity checks are still required below the cap.</p><p>Clause 7.6.1.5 limits a circular solid column: its permissible load must not exceed that of the square column of equal cross-sectional area. This is a timber-code rule, not a general rule for RC or steel columns.</p>",
+            "formulas": [
+              {
+                "label": "Pin-ended solid timber column, IS 883:2016",
+                "tex": "\\dfrac{S}{d} \\le 50",
+                "where": "<p>S is the unsupported length and d the least lateral dimension.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 3.6 m post of 100 mm × 150 mm",
+              "html": "<ol><li>Use the least dimension: \\(S/d = 3600/100 = 36\\), below 50.</li><li>Using the larger dimension, 3600/150 = 24, answers the wrong question.</li><li>The least radius of gyration, \\(100/\\sqrt{12} \\approx 28.9\\) mm, gives L/r ≈ 124.7, a different slenderness definition that must not be compared with 50.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is It must not exceed the square-column allowance.",
-                "sources": [
-                  {
-                    "id": "CAP4-05-00055",
-                    "label": "p. 21; topic 5 point 55"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Unsupported length divided by least lateral dimension.",
+                "html": "IS 883:2016 limits the unsupported length divided by the least lateral dimension, S/d, to 50 for pin-ended solid timber columns.",
                 "sources": [
                   {
                     "id": "CAP4-05-00093",
@@ -3455,20 +3583,25 @@
                 ]
               },
               {
-                "html": "The key result is 36. This is the reviewed topic result.",
+                "html": "A pin-ended 3.6 m post with a 100 mm × 150 mm section has S/d = 3600/100 = 36, below the cap of 50.",
                 "sources": [
                   {
                     "id": "CAP4-05-00094",
                     "label": "p. 22; topic 5 point 92"
                   }
                 ]
+              },
+              {
+                "html": "Under IS 883:2016 a circular solid timber column's permissible load must not exceed the square-column allowance for the same area.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00055",
+                    "label": "p. 21; topic 5 point 55"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-05-00055",
-                "label": "p. 21; topic 5 point 55"
-              },
               {
                 "id": "CAP4-05-00093",
                 "label": "p. 22; topic 5 point 92"
@@ -3476,28 +3609,51 @@
               {
                 "id": "CAP4-05-00094",
                 "label": "p. 22; topic 5 point 92"
+              },
+              {
+                "id": "CAP4-05-00055",
+                "label": "p. 21; topic 5 point 55"
               }
             ]
           },
           {
             "id": "masonry-eccentric-compression",
             "title": "Masonry walls under eccentric vertical load",
-            "html": "<p>When a vertical load acts at eccentricity e from the centre of a wall of thickness t, the uncracked rectangular section carries a uniform stress plus bending. The elastic extreme stresses are σ = (P/A)(1 ± 6e/t). Both faces remain in compression while 6e/t does not exceed 1, that is, while e stays within t/6 (the middle third of the thickness).</p><p><em>Worked example.</em> With an average stress of 0.60 MPa and e = t/24, 6e/t = 1/4, so the extreme stresses are 0.60 × 1.25 = 0.75 MPa and 0.60 × 0.75 = 0.45 MPa, both compressive.</p><p>Because bending concentrates stress at one face, IS 1905:1987 clause 5.4.1.4 allows a higher edge-stress allowance when the eccentricity ratio e/t lies between 1/24 and 1/6: the otherwise applicable compressive allowance may be increased by 25%. For e/t = 1/12 and an applicable allowance of 0.80 MPa, the edge allowance becomes 1.25 × 0.80 = 1.00 MPa.</p><p>The concession does not add capacity automatically: the actual extreme stress and all other applicable factors must still be checked. Likewise, a code permission to ignore a small bending contribution in one check does not make that bending physically zero.</p>",
+            "html": "<p>When a vertical load acts at eccentricity e from the centre of a wall of thickness t, the uncracked section carries a uniform stress plus bending. Both faces stay in compression while e stays within t/6, the middle third of the thickness.</p><p>Because bending concentrates stress at one face, IS 1905:1987 clause 5.4.1.4 allows a higher edge-stress allowance when e/t lies between 1/24 and 1/6: the otherwise applicable compressive allowance may be increased by 25%. The concession does not add capacity automatically; the actual extreme stress and all other factors must still be checked.</p><p>A code permission to ignore a small bending contribution in one check does not make that bending physically zero.</p>",
+            "formulas": [
+              {
+                "label": "Extreme stresses, uncracked rectangle",
+                "tex": "\\sigma = \\dfrac{P}{A}\\left(1 \\pm \\dfrac{6e}{t}\\right)"
+              },
+              {
+                "label": "No tension across the thickness",
+                "tex": "e \\le \\dfrac{t}{6}"
+              },
+              {
+                "label": "Edge-stress allowance, IS 1905 clause 5.4.1.4",
+                "tex": "f_{\\text{edge}} = 1.25\\,f_{\\text{allow}}",
+                "where": "<p>For an eccentricity ratio e/t between 1/24 and 1/6.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>Average stress 0.60 MPa with e = t/24: \\(6e/t = 1/4\\), so the extreme stresses are \\(0.60 \\times 1.25 = 0.75\\) MPa and \\(0.60 \\times 0.75 = 0.45\\) MPa, both compressive.</li><li>e/t = 1/12 with an applicable allowance of 0.80 MPa: the edge allowance is \\(1.25 \\times 0.80 = 1.00\\) MPa.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is 1.00 MPa.",
+                "html": "An uncracked wall with a 0.60 MPa average stress and e = t/24 has extreme stresses of 0.75 MPa and 0.45 MPa, both compression.",
                 "sources": [
                   {
-                    "id": "CAP4-04-00039",
+                    "id": "CAP4-04-00040",
                     "label": "p. 16; topic 4 point 37"
                   }
                 ]
               },
               {
-                "html": "The key result is 0.75 MPa and 0.45 MPa, both compression.",
+                "html": "For e/t = 1/12 and an applicable allowance of 0.80 MPa, the 25% eccentric-loading increase gives an edge-stress allowance of 1.00 MPa.",
                 "sources": [
                   {
-                    "id": "CAP4-04-00040",
+                    "id": "CAP4-04-00039",
                     "label": "p. 16; topic 4 point 37"
                   }
                 ]
@@ -3505,31 +3661,54 @@
             ],
             "sources": [
               {
-                "id": "CAP4-04-00039",
+                "id": "CAP4-04-00040",
                 "label": "p. 16; topic 4 point 37"
               },
               {
-                "id": "CAP4-04-00040",
+                "id": "CAP4-04-00039",
                 "label": "p. 16; topic 4 point 37"
               }
             ]
           },
           {
-            "id": "cavity-walls-and-bed-joint-shear",
-            "title": "Cavity-wall effective thickness and shear on mortar bed joints",
-            "html": "<p>A tied cavity wall contains two leaves separated by a cavity. For the exercise model, a slenderness or stress check uses one effective thickness. In the exercise model used here, the selected thickness is whichever is greater: the stronger leaf or two-thirds of both leaf thicknesses combined. The empty cavity is excluded.</p><p><em>Worked example.</em> For leaves of 150 mm and 100 mm, (2/3) × (150 + 100) = 166.7 mm, which exceeds 150 mm, so 166.7 mm governs. The rule that actually applies depends on the ties, loading, restraint and governing standard.</p><p>Horizontal shear along a mortar bed joint of unreinforced masonry is resisted by bond and friction. Normal compression across the joint increases the frictional resistance to sliding, so the shear a joint can carry depends on the vertical stress as well as on the mortar.</p><p>A nominal mortar proportion such as 1:1:6 (cement:lime:sand) is therefore not enough, by itself, to fix one universal permissible shear stress, and mortar cube strength is not the joint shear strength; the value must come from the applicable masonry provision and its conditions.</p>",
+            "id": "cavity-wall-effective-thickness",
+            "title": "Effective thickness of a tied cavity wall",
+            "html": "<p>A tied cavity wall has two leaves separated by a cavity, and slenderness or stress checks need one effective thickness. In the exercise model used here, it is whichever is greater: the thickness of the stronger leaf, or two-thirds of the combined thickness of both leaves. The empty cavity is not added.</p><p>The rule that actually applies to a project depends on the ties, the loading, the restraint and the governing standard, so this model should not be quoted as a universal code provision.</p>",
+            "formulas": [
+              {
+                "label": "Effective thickness, exercise model",
+                "tex": "t_{\\text{eff}} = \\max\\left(t_s,\\ \\tfrac{2}{3}(t_1 + t_2)\\right)"
+              }
+            ],
+            "example": {
+              "title": "Worked example: leaves of 150 mm and 100 mm",
+              "html": "<p>\\(\\tfrac{2}{3}(150 + 100) = 166.7\\) mm, which exceeds the 150 mm stronger leaf, so 166.7 mm governs. Adding the cavity width to the leaves would overstate the thickness.</p>"
+            },
             "points": [
               {
-                "html": "The key result is 166.7 mm.",
+                "html": "Leaves of 150 mm and 100 mm give an effective thickness of 166.7 mm in the exercise model, because two-thirds of 250 mm exceeds 150 mm.",
                 "sources": [
                   {
                     "id": "CAP4-01-00049",
                     "label": "p. 3; topic 1 point 46"
                   }
                 ]
-              },
+              }
+            ],
+            "sources": [
               {
-                "html": "The key result is Applicable provisions and normal compression also affect resistance.",
+                "id": "CAP4-01-00049",
+                "label": "p. 3; topic 1 point 46"
+              }
+            ]
+          },
+          {
+            "id": "bed-joint-shear",
+            "title": "Shear resistance of mortar bed joints",
+            "html": "<p>Horizontal shear along a mortar bed joint of unreinforced masonry is resisted by bond and friction. Normal compression across the joint increases the frictional resistance to sliding, so the shear a joint can carry depends on the vertical stress as well as on the mortar.</p><p>A nominal mortar proportion such as 1:1:6 (cement : lime : sand) is therefore not enough, by itself, to fix one universal permissible shear stress, and mortar cube strength is not the joint shear strength. The value must come from the applicable masonry provision and its conditions.</p>",
+            "points": [
+              {
+                "html": "A mortar label such as 1:1:6 cannot fix one permissible bed-joint shear stress: the applicable provisions and normal compression also affect resistance.",
                 "sources": [
                   {
                     "id": "CAP4-05-00028",
@@ -3540,10 +3719,6 @@
             ],
             "sources": [
               {
-                "id": "CAP4-01-00049",
-                "label": "p. 3; topic 1 point 46"
-              },
-              {
                 "id": "CAP4-05-00028",
                 "label": "p. 20; topic 5 point 27"
               }
@@ -3551,11 +3726,11 @@
           },
           {
             "id": "lime-mortars-hydraulic-and-non-hydraulic",
-            "title": "Lime mortars: hardening by hydration versus carbonation",
-            "html": "<p>Lime mortars harden by two different mechanisms. Non-hydraulic lime hardens mainly by carbonation, reacting slowly with carbon dioxide from the air, so its hardening depends on access to air. Hydraulic lime contains compounds that react with water (hydration), so it can set and harden in persistently damp conditions.</p><p>That is why hydraulic lime may be selected for a compatible masonry mortar that must harden in damp locations. It does not follow that every lime mortar is made with hydraulic lime: the lime type should suit the masonry units, the exposure and the required performance. Hardening is a chemical process in both cases rather than simple evaporation of water, and neither kind of lime makes mortar strength independent of the sand and of curing.</p>",
+            "title": "Lime mortars: hardening by hydration or by carbonation",
+            "html": "<p>Lime mortars harden by two different mechanisms.</p><ul><li><em>Non-hydraulic lime</em> hardens mainly by carbonation, reacting slowly with carbon dioxide from the air, so it needs access to air.</li><li><em>Hydraulic lime</em> contains compounds that react with water, so it can set and harden in persistently damp conditions.</li></ul><p>That is why hydraulic lime may be chosen for a compatible masonry mortar that must harden in damp locations. It does not follow that every lime mortar uses hydraulic lime: the lime type should suit the masonry units, the exposure and the required performance.</p>",
             "points": [
               {
-                "html": "The key result is Its hydraulic compounds can harden by reaction with water.",
+                "html": "Hydraulic lime suits a mortar that must harden in damp conditions because its hydraulic compounds can harden by reaction with water.",
                 "sources": [
                   {
                     "id": "CAP4-05-00116",
@@ -3572,12 +3747,12 @@
             ]
           },
           {
-            "id": "low-strength-masonry-bands-and-regulation",
-            "title": "Low-strength masonry, gable bands and the Building Act versus the NBC",
-            "html": "<p>The Nepal National Building Code contains separate documents for different kinds of construction. NBC 203:2015, Guidelines for Earthquake Resistant Building Construction, addresses low-strength masonry, including mud-mortar construction within its stated scope and its height and configuration limits. It is not a general substitute for engineered seismic design or an RC detailing code, and a guideline does not apply beyond its scope limits.</p><p>Seismic bands tie the tops of masonry walls together. Where a masonry gable rises above the eaves-level band, a gable band runs along the sloping top edges of the gable and connects with the horizontal band and the roof anchorage, restraining the top of the gable masonry beneath the pitched roof. Calling it merely a 'roof-level band' confuses it with the horizontal eaves or roof band and misses this gable restraint.</p><p>Regulation has two layers. The Building Act and its implementation framework provide the legal basis, while the Nepal National Building Code organizes the technical provisions on building performance and construction. Approved drawings do not replace the applicable Act and NBC requirements, and a code title alone does not establish that a particular project complies.</p>",
+            "id": "low-strength-masonry-and-bands",
+            "title": "Low-strength masonry guidance and gable bands",
+            "html": "<p>The Nepal National Building Code contains separate documents for different kinds of construction. NBC 203:2015, Guidelines for Earthquake Resistant Building Construction, addresses low-strength masonry, including mud-mortar construction within its stated scope and its height and configuration limits. It is not a substitute for engineered seismic design, and a guideline does not apply beyond its scope limits.</p><p>Seismic bands tie the tops of masonry walls together. Where a masonry gable rises above the eaves-level band, a <em>gable band</em> runs along the sloping top edges of the gable and connects with the horizontal band and the roof anchorage, restraining the top of the gable masonry.</p>",
             "points": [
               {
-                "html": "The key result is Low-strength masonry within its stated scope.",
+                "html": "NBC 203:2015 addresses low-strength masonry within its stated scope, including mud-mortar construction and its height and configuration limits.",
                 "sources": [
                   {
                     "id": "CAP4-05-00084",
@@ -3586,16 +3761,7 @@
                 ]
               },
               {
-                "html": "The key result is The Act supplies a legal framework; the NBC supplies technical provisions.",
-                "sources": [
-                  {
-                    "id": "CAP4-05-00085",
-                    "label": "p. 21; topic 5 point 85"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Along the sloping top edges of the gable.",
+                "html": "A gable band runs along the sloping top edges of the gable, tying the masonry that rises above the eaves-level band.",
                 "sources": [
                   {
                     "id": "CAP4-05-00105",
@@ -3610,14 +3776,55 @@
                 "label": "p. 21; topic 5 point 84"
               },
               {
-                "id": "CAP4-05-00085",
-                "label": "p. 21; topic 5 point 85"
-              },
-              {
                 "id": "CAP4-05-00105",
                 "label": "p. 22; topic 5 point 104"
               }
             ]
+          },
+          {
+            "id": "building-act-and-nbc",
+            "title": "The Building Act versus the Nepal National Building Code",
+            "html": "<p>Building regulation in Nepal has two layers. The Building Act and its implementation framework provide the legal basis, while the Nepal National Building Code organizes the technical provisions on building performance and construction.</p><p>Approved drawings do not replace the applicable Act and NBC requirements, and a code title alone does not establish that a particular project complies. No current approval threshold or legal amendment is asserted here.</p>",
+            "points": [
+              {
+                "html": "The Building Act supplies the legal framework, while the Nepal National Building Code supplies the technical provisions.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00085",
+                    "label": "p. 21; topic 5 point 85"
+                  }
+                ]
+              }
+            ],
+            "sources": [
+              {
+                "id": "CAP4-05-00085",
+                "label": "p. 21; topic 5 point 85"
+              }
+            ]
+          }
+        ],
+        "formulaSheet": [
+          {
+            "label": "Solid timber column limit",
+            "tex": "\\dfrac{S}{d} \\le 50"
+          },
+          {
+            "label": "Eccentric compression",
+            "tex": "\\sigma = \\dfrac{P}{A}\\left(1 \\pm \\dfrac{6e}{t}\\right)"
+          },
+          {
+            "label": "No tension",
+            "tex": "e \\le \\dfrac{t}{6}"
+          },
+          {
+            "label": "Edge-stress allowance",
+            "tex": "f_{\\text{edge}} = 1.25\\,f_{\\text{allow}}",
+            "note": "For e/t between 1/24 and 1/6."
+          },
+          {
+            "label": "Cavity wall, exercise model",
+            "tex": "t_{\\text{eff}} = \\max\\left(t_s,\\ \\tfrac{2}{3}(t_1 + t_2)\\right)"
           }
         ],
         "cautions": [

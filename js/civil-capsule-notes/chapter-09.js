@@ -2955,33 +2955,15 @@
         "code": "ACiE0905",
         "questionCount": 25,
         "format": 2,
-        "summary": "<p>Road pavement covers Pavement types, flexible and rigid pavement design under DOR guidelines, loading and other design factors, load and temperature stresses. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers road pavements: rigid and flexible families and their layers, fatigue cracking and perpetual pavements, design-lane traffic and the fourth-power axle-load rule, design CBR, reliability and resilient modulus, environmental and seismic factors, Benkelman beam surveys, and concrete-pavement joints and dowel details. Guideline values are cited by document and section.</p>",
         "blocks": [
           {
             "id": "pavement-families-layers-and-granular-base",
             "title": "Pavement families, layer order and the minimum granular base",
-            "html": "<p>Pavements are grouped by how they spread wheel load.</p><ul><li>A rigid pavement relies on a Portland-cement concrete slab whose substantial bending stiffness spreads the load over a wide area of support. The foundation still carries the reactions and needs stable support and drainage.</li><li>A conventional flexible pavement passes load downward through its layers in physical order: asphalt surface, base, subbase, then the prepared subgrade. Stresses spread and reduce with depth according to layer stiffness and thickness; the order does not imply equal stress at every depth, and not every design contains every layer.</li></ul><p>Inside an unbound granular base or subbase, load travels through the material skeleton by particle contacts and interlock. That description belongs to granular layers: bound asphalt also has binder-dependent continuum stiffness, and a concrete slab works mainly in flexure.</p><p>Thickness rules are specific to material and context. DoR Flexible Pavement Guidelines, Second Edition 2021, section 7.1 recommends at least 150 mm in the identified granular-base context. A separate 100 mm granular crack-relief layer over a cement-treated base serves another function, so a blanket 100 mm minimum base is not supported. Structural demand and constructible lift thickness are further checks.</p>",
+            "html": "<p>Pavements are grouped by how they spread wheel load.</p><ul><li>A <em>rigid pavement</em> relies on a Portland-cement concrete slab whose bending stiffness spreads the load over a wide area of support. The foundation still carries the reactions and needs stable support and drainage.</li><li>A conventional <em>flexible pavement</em> passes load downward through its layers in physical order: asphalt surface, base, subbase, then the prepared subgrade. Stresses spread and reduce with depth according to layer stiffness and thickness, and not every design contains every layer.</li></ul><p>Inside an unbound granular base or subbase, load travels through the skeleton by particle contacts and interlock. That belongs to granular layers: bound asphalt also has binder-dependent stiffness, and a concrete slab works mainly in flexure.</p><p>DoR Flexible Pavement Guidelines, Second Edition 2021, section 7.1 recommends at least 150 mm in the identified granular-base context. A separate 100 mm crack-relief layer over a cement-treated base serves another function, so a blanket 100 mm minimum is not supported.</p>",
             "points": [
               {
-                "html": "The key result is 150 mm granular base.",
-                "sources": [
-                  {
-                    "id": "CAP4-09-00091",
-                    "label": "p. 35; topic 9 point 87"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Through particle contacts and interlocking.",
-                "sources": [
-                  {
-                    "id": "CAP4-09-00094",
-                    "label": "pp. 35, 37; topic 9 point 90; topic 9 point 141"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Rigid pavement.",
+                "html": "A Portland-cement concrete slab that spreads wheel load through its bending stiffness defines a rigid pavement.",
                 "sources": [
                   {
                     "id": "CAP4-09-00131",
@@ -2990,24 +2972,34 @@
                 ]
               },
               {
-                "html": "The key result is Asphalt surface, base, subbase, subgrade.",
+                "html": "In a conventional flexible pavement the downward load path is asphalt surface, base, subbase, subgrade.",
                 "sources": [
                   {
                     "id": "CAP4-09-00138",
                     "label": "p. 36; topic 9 point 131"
                   }
                 ]
+              },
+              {
+                "html": "In an unbound granular base, wheel load travels through particle contacts and interlocking of the material skeleton.",
+                "sources": [
+                  {
+                    "id": "CAP4-09-00094",
+                    "label": "pp. 35, 37; topic 9 point 90; topic 9 point 141"
+                  }
+                ]
+              },
+              {
+                "html": "DoR Flexible Pavement Guidelines 2021 section 7.1 recommends at least a 150 mm granular base, which contradicts a blanket 100 mm rule.",
+                "sources": [
+                  {
+                    "id": "CAP4-09-00091",
+                    "label": "p. 35; topic 9 point 87"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-09-00091",
-                "label": "p. 35; topic 9 point 87"
-              },
-              {
-                "id": "CAP4-09-00094",
-                "label": "pp. 35, 37; topic 9 point 90; topic 9 point 141"
-              },
               {
                 "id": "CAP4-09-00131",
                 "label": "p. 36; topic 9 point 125"
@@ -3015,16 +3007,24 @@
               {
                 "id": "CAP4-09-00138",
                 "label": "p. 36; topic 9 point 131"
+              },
+              {
+                "id": "CAP4-09-00094",
+                "label": "pp. 35, 37; topic 9 point 90; topic 9 point 141"
+              },
+              {
+                "id": "CAP4-09-00091",
+                "label": "p. 35; topic 9 point 87"
               }
             ]
           },
           {
             "id": "fatigue-cracking-and-long-life-design",
             "title": "Fatigue cracking mechanisms and the perpetual-pavement idea",
-            "html": "<p>Fatigue cracking is damage accumulated under many load repetitions. In the conventional bottom-up model for flexible pavement, each wheel pass bends the bound asphalt layer and produces horizontal tensile strain at its bottom. When repeated tensile strain exceeds the layer's fatigue resistance, cracks start there and propagate upward, eventually showing as interconnected cracks in the wheel paths.</p><p>Vertical compressive strain on top of the subgrade is a different response, used to assess rutting, and top-down and thermal cracking arise from other mechanisms that this model does not exclude.</p><p>Fatigue resistance depends on layer thickness, support, material condition and axle loading. Poor alignment may influence loading or drainage indirectly, but it is not the direct fatigue mechanism, and a single cold-weather contraction, moisture-driven loss of adhesion or local interlayer slip at a defective tack coat are different distress mechanisms.</p><p>A perpetual flexible pavement is designed so that its deep structural layers remain sound for a long time while the upper surface is periodically renewed. It is not an indestructible or maintenance-free surface, and no universal 20-year life attaches to it. Loading, materials, drainage and maintenance still matter, and surface cracking alone does not prove that the subgrade must be replaced.</p>",
+            "html": "<p><em>Fatigue cracking</em> is damage accumulated under many load repetitions. In the conventional bottom-up model, each wheel pass bends the bound asphalt layer and produces horizontal tensile strain at its bottom. When repeated strain exceeds the layer's fatigue resistance, cracks start there and grow upward, eventually showing as interconnected cracks in the wheel paths. Vertical compressive strain on top of the subgrade is a different response, used for rutting, and top-down and thermal cracking arise from other mechanisms.</p><p>Fatigue resistance depends on thickness, support, material condition and axle loading. Poor alignment may affect loading or drainage indirectly but is not the direct fatigue mechanism.</p><p>A <em>perpetual</em> flexible pavement keeps its deep structural layers sound for a long time while the upper surface is periodically renewed. It is not indestructible or maintenance-free, and no universal 20-year life attaches to it.</p>",
             "points": [
               {
-                "html": "The key result is Horizontal tensile strain under repeated wheel loading.",
+                "html": "Bottom-up asphalt fatigue cracking is initiated by horizontal tensile strain under repeated wheel loading at the bottom of the bound layer.",
                 "sources": [
                   {
                     "id": "CAP4-04-00085",
@@ -3033,20 +3033,20 @@
                 ]
               },
               {
-                "html": "The key result is Retain sound deep layers while periodically renewing the surface.",
-                "sources": [
-                  {
-                    "id": "CAP4-09-00020",
-                    "label": "p. 34; topic 9 point 19"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Repeated tensile strain exceeding the pavement's fatigue resistance.",
+                "html": "Interconnected wheel-path cracks after many repetitions come from repeated tensile strain exceeding the pavement's fatigue resistance.",
                 "sources": [
                   {
                     "id": "CAP4-09-00026",
                     "label": "p. 34; topic 9 point 25"
+                  }
+                ]
+              },
+              {
+                "html": "A perpetual flexible pavement is maintained to retain sound deep layers while periodically renewing the surface.",
+                "sources": [
+                  {
+                    "id": "CAP4-09-00020",
+                    "label": "p. 34; topic 9 point 19"
                   }
                 ]
               }
@@ -3057,22 +3057,32 @@
                 "label": "p. 18; topic 4 point 85"
               },
               {
-                "id": "CAP4-09-00020",
-                "label": "p. 34; topic 9 point 19"
-              },
-              {
                 "id": "CAP4-09-00026",
                 "label": "p. 34; topic 9 point 25"
+              },
+              {
+                "id": "CAP4-09-00020",
+                "label": "p. 34; topic 9 point 19"
               }
             ]
           },
           {
             "id": "lane-distribution-factors",
             "title": "Design-lane traffic from DoR lane distribution factors",
-            "html": "<p>Pavement design traffic is assessed for a single design lane, so the total commercial traffic must first be distributed to it. DoR Flexible Pavement Guidelines, Second Edition 2021, section 4.5 gives default factors that depend on the carriageway arrangement, and each factor has its own denominator. In the table CV means commercial vehicles.</p><table><thead><tr><th scope='col'>Road arrangement</th><th scope='col'>Factor applied to</th><th scope='col'>Worked design-lane value</th></tr></thead><tbody><tr><td>Four lanes, one undivided carriageway</td><td>0.40 × total two-way commercial traffic</td><td>0.40 × 1000 = 400 CV/day</td></tr><tr><td>Four-lane divided, two lanes each way</td><td>0.75 × traffic in one direction</td><td>1000/2 = 500, then 0.75 × 500 = 375 CV/day</td></tr></tbody></table><p>Both worked cases start from 1000 commercial vehicles/day in total, balanced between directions on the divided road. The undivided result must not be halved again, and the divided road must not borrow the 0.40 factor: 0.40 is not a universal four-lane rule. Identify whether the carriageway is divided and whether the count is two-way or directional before choosing a factor.</p>",
+            "html": "<p>Pavement design traffic is assessed for a single design lane, so total commercial traffic (CV) must first be distributed to it. DoR Flexible Pavement Guidelines, Second Edition 2021, section 4.5 gives default factors that depend on the carriageway arrangement, and each factor has its own denominator.</p><table><thead><tr><th scope='col'>Road arrangement</th><th scope='col'>Factor applied to</th><th scope='col'>From 1000 CV/day</th></tr></thead><tbody><tr><th scope='row'>Four lanes, undivided</th><td>0.40 × total two-way traffic</td><td>400 CV/day</td></tr><tr><th scope='row'>Four lanes, divided</th><td>0.75 × traffic in one direction</td><td>0.75 × 500 = 375 CV/day</td></tr></tbody></table><p>The undivided result must not be halved again, and the divided road must not borrow the 0.40 factor, which is not a universal four-lane rule. Check whether the carriageway is divided and whether the count is two-way or directional first.</p>",
+            "formulas": [
+              {
+                "label": "Four-lane undivided",
+                "tex": "N_{\\text{lane}} = 0.40\\,N_{\\text{two-way}}"
+              },
+              {
+                "label": "Four-lane divided",
+                "tex": "N_{\\text{lane}} = 0.75\\,N_{\\text{direction}}"
+              }
+            ],
             "points": [
               {
-                "html": "The key result is 400 commercial vehicles/day.",
+                "html": "A four-lane undivided road with 1000 two-way CV/day has 0.40 × 1000 = 400 commercial vehicles/day in the design lane.",
                 "sources": [
                   {
                     "id": "CAP4-09-00067",
@@ -3081,7 +3091,7 @@
                 ]
               },
               {
-                "html": "The key result is 375 commercial vehicles/day.",
+                "html": "A divided four-lane road with a balanced 1000 CV/day has 500 per direction and 0.75 × 500 = 375 commercial vehicles/day in the design lane.",
                 "sources": [
                   {
                     "id": "CAP4-09-00068",
@@ -3104,10 +3114,21 @@
           {
             "id": "fourth-power-axle-equivalence",
             "title": "Axle-load equivalence by the fourth-power approximation",
-            "html": "<p>Heavier axles do disproportionately more pavement damage. The empirical fourth-power approximation expresses one pass of an axle load P as a number of passes of a reference axle, commonly 80 kN:</p><p>equivalent passes = (P/80)<sup>4</sup>, for comparable configurations such as single axles with dual wheels.</p><ul><li>P = 160 kN: (160/80)<sup>4</sup> = 2<sup>4</sup> = 16 reference passes. Doubling the load multiplies the damage sixteen-fold, not two-fold.</li><li>P = 100 kN: (100/80)<sup>4</sup> = 1.25<sup>4</sup> = 2.44140625, about 2.441 reference passes. A factor of 2.25 does not follow from these loads under this model.</li></ul><p>The result is a repetition count, not a force or an equivalent wheel load. The reference load must always be stated, and the comparison holds only between like axle configurations within the empirical model; it is not a universal law based on gross vehicle weight alone.</p>",
+            "html": "<p>Heavier axles do disproportionately more pavement damage. The empirical fourth-power approximation expresses one pass of an axle load P as a number of passes of a reference axle, commonly 80 kN, for comparable configurations such as single axles with dual wheels.</p><p>The result is a repetition count, not a force or an equivalent wheel load. The reference load must always be stated, and the comparison holds only between like axle configurations within the empirical model; it is not a universal law based on gross vehicle weight alone.</p>",
+            "formulas": [
+              {
+                "label": "Equivalent reference passes",
+                "tex": "N_{\\text{eq}} = \\left(\\dfrac{P}{80}\\right)^4",
+                "where": "P is the axle load in kN and 80 kN the reference axle."
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>P = 160 kN: \\((160/80)^4 = 2^4 = 16\\) passes. Doubling the load multiplies the damage sixteen-fold.</li><li>P = 100 kN: \\(1.25^4 = 2.44140625\\), about 2.441 passes. A factor of 2.25 does not follow.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is 16 passes.",
+                "html": "Under the fourth-power approximation, one 160 kN axle pass equals \\((160/80)^4\\) = 16 passes of the 80 kN reference.",
                 "sources": [
                   {
                     "id": "CAP4-09-00072",
@@ -3116,7 +3137,7 @@
                 ]
               },
               {
-                "html": "The key result is 2.441 passes.",
+                "html": "One 100 kN axle pass equals \\(1.25^4\\) = 2.441 passes of the 80 kN reference axle.",
                 "sources": [
                   {
                     "id": "CAP4-09-00111",
@@ -3138,11 +3159,21 @@
           },
           {
             "id": "design-cbr-reliability-and-modulus",
-            "title": "Design CBR, model reliability and resilient modulus estimated from CBR",
-            "html": "<p>Two separate uncertainty decisions enter flexible pavement design.</p><ul><li>Design CBR represents variable foundation strength through a stated sampling and ranking rule. If a project defines it as the value equalled or exceeded by 90% of representative results, about 10% of results fall below it, so on an ascending scale it is roughly the lower 10th percentile, a conservative lower-tail value. A bare label such as 90th percentile does not state the ranking direction, so the definition must be written out.</li><li>Model reliability, such as 90% for a fatigue model, concerns uncertainty in predicted pavement performance. Its number does not define a soil percentile, does not mean multiplying mean CBR by 0.90, and never justifies choosing stronger-than-representative ground or skipping representative sampling.</li></ul><p>The design procedure also needs a subgrade resilient modulus M<sub>R</sub>. DoR Flexible Pavement Guidelines, Second Edition 2021, section 5.2 estimates M<sub>R</sub> = 10 × CBR MPa for CBR up to 5%, with a different relation above 5. Enter CBR as the percentage number: CBR 5% gives 10 × 5 = 50 MPa, not 10 × 0.05. This is an empirical estimate, not a cyclic test result.</p>",
+            "title": "Design CBR, model reliability and resilient modulus from CBR",
+            "html": "<p>Two separate uncertainty decisions enter flexible pavement design.</p><ul><li><em>Design CBR</em> represents variable foundation strength through a stated sampling and ranking rule. If it is the value equalled or exceeded by 90% of representative results, about 10% fall below it, a conservative lower-tail value. A bare label such as 90th percentile does not state the ranking direction.</li><li><em>Model reliability</em>, such as 90% for a fatigue model, concerns uncertainty in predicted performance. It does not define a soil percentile or mean multiplying mean CBR by 0.90.</li></ul><p>The design also needs a subgrade resilient modulus. DoR Flexible Pavement Guidelines, Second Edition 2021, section 5.2 estimates it from CBR for CBR up to 5%, with a different relation above 5. Enter CBR as the percentage number. This is an empirical estimate, not a cyclic test result.</p>",
+            "formulas": [
+              {
+                "label": "Resilient modulus, CBR up to 5 percent",
+                "tex": "M_R = 10 \\times \\text{CBR}\\ \\text{MPa}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: CBR 5%",
+              "html": "<p>\\(M_R = 10 \\times 5 = 50\\) MPa, using CBR as the percentage number. Entering the fraction 0.05 instead would give a meaningless 0.5 MPa.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Soil variability and model reliability require separate selection rules.",
+                "html": "A lower-tail design CBR and a 90% fatigue-model reliability are different decisions: soil variability and model reliability require separate selection rules.",
                 "sources": [
                   {
                     "id": "CAP4-09-00079",
@@ -3151,7 +3182,7 @@
                 ]
               },
               {
-                "html": "The key result is Approximately the lower 10th percentile.",
+                "html": "A design CBR equalled or exceeded by 90% of results is approximately the lower 10th percentile on an ascending scale.",
                 "sources": [
                   {
                     "id": "CAP4-09-00080",
@@ -3160,7 +3191,7 @@
                 ]
               },
               {
-                "html": "The key result is 50 MPa.",
+                "html": "With \\(M_R = 10 \\times \\text{CBR}\\) for CBR up to 5%, CBR 5% gives an estimated 50 MPa.",
                 "sources": [
                   {
                     "id": "CAP4-09-00081",
@@ -3187,10 +3218,10 @@
           {
             "id": "environment-water-table-and-seismic",
             "title": "Weather, groundwater and seismic hazard in foundation evaluation",
-            "html": "<p>A design chart without a weather axis does not make weather irrelevant. Moisture changes subgrade support, temperature changes asphalt stiffness, and frost can affect susceptible soils. DoR Flexible Pavement Guidelines, Second Edition 2021 treat environmental factors explicitly, and a soaked CBR does not replace drainage or frost evaluation.</p><p>The same reasoning applies to the modulus of subgrade reaction k used for concrete pavements. It describes the foundation's pressure–deflection response, which depends on moisture and support conditions, so a water table rising into a moisture-sensitive foundation can change k. A value measured in the dry season cannot automatically represent wet service, and k also depends on the test and model scale; it is not an intrinsic property of the slab. FHWA NHI-05-037 section 5.4 independently describes support properties as moisture-dependent.</p><p>A laboratory CBR specimen is conditioned by its water content, dry density and soaking. Earthquake shaking hazard is not a specimen-conditioning variable; it is assessed separately as a geohazard. Separate assessment does not mean irrelevance, because seismic settlement, liquefaction or slope movement can still threaten the road.</p>",
+            "html": "<p>A design chart without a weather axis does not make weather irrelevant. Moisture changes subgrade support, temperature changes asphalt stiffness, and frost can affect susceptible soils. DoR Flexible Pavement Guidelines 2021 treat environmental factors explicitly, and a soaked CBR does not replace drainage or frost evaluation.</p><p>The same holds for the modulus of subgrade reaction k used for concrete pavements. It describes the foundation's pressure–deflection response, which depends on moisture and support, so a water table rising into a moisture-sensitive foundation can change k. A dry-season value cannot automatically represent wet service, and k also depends on the test scale; it is not a slab property.</p><p>A laboratory CBR specimen is conditioned by water content, dry density and soaking. Earthquake hazard is assessed separately as a geohazard, yet seismic settlement, liquefaction or slope movement can still threaten the road.</p>",
             "points": [
               {
-                "html": "The key result is Climate still matters through moisture, temperature and other design checks.",
+                "html": "A CBR chart without a weather axis does not remove climate: it still matters through moisture, temperature and other design checks.",
                 "sources": [
                   {
                     "id": "CAP4-09-00085",
@@ -3199,7 +3230,7 @@
                 ]
               },
               {
-                "html": "The key result is Wetting can change support response and the applicable k value.",
+                "html": "A dry-season k should not simply be kept when the water table rises, because wetting can change support response and the applicable k value.",
                 "sources": [
                   {
                     "id": "CAP4-09-00092",
@@ -3208,7 +3239,7 @@
                 ]
               },
               {
-                "html": "The key result is Site earthquake shaking hazard.",
+                "html": "Site earthquake shaking hazard is assessed separately as a geohazard, not as a conditioning variable of a laboratory CBR specimen.",
                 "sources": [
                   {
                     "id": "CAP4-09-00093",
@@ -3235,10 +3266,21 @@
           {
             "id": "benkelman-beam-surveys",
             "title": "Benkelman beam surveys: temperature reference and wheel-path offsets",
-            "html": "<p>The Benkelman beam measures rebound deflection of a flexible pavement under a loaded test wheel as a basis for overlay studies. Two conventions must be stated in any such study.</p><ul><li>Temperature. Asphalt stiffness, and so the measured rebound, depends on pavement temperature. Readings taken at different temperatures are normalised to a common reference, conventionally 35 °C where the study adopts it. This temperature correction is separate from any seasonal moisture correction and does not convert deflection into CBR.</li><li>Test position. The wheel path is located from a stated datum. If a single-lane survey places it 0.60 m inward from the pavement edge on a symmetric 3.75 m carriageway, the centreline is 3.75/2 = 1.875 m from the edge, so the test path is 1.875 − 0.60 = 1.275 m from the centreline.</li></ul><p>Edge offset and centreline offset are different datums, so a drawing must say which it uses. Both the 35 °C reference and the 0.60 m layout are study conventions here, to be confirmed against the applicable deflection and overlay manual rather than treated as universal requirements.</p>",
+            "html": "<p>The <em>Benkelman beam</em> measures rebound deflection of a flexible pavement under a loaded test wheel as a basis for overlay studies. Two conventions must be stated.</p><ul><li><em>Temperature.</em> Asphalt stiffness, and so the rebound, depends on pavement temperature. Readings are normalised to a common reference, conventionally 35 °C where the study adopts it. This is separate from any seasonal moisture correction and does not convert deflection into CBR.</li><li><em>Test position.</em> The wheel path is located from a stated datum. Edge offset and centreline offset are different datums, so a drawing must say which it uses.</li></ul><p>Both the 35 °C reference and a 0.60 m edge layout are study conventions here, to be confirmed against the applicable deflection and overlay manual.</p>",
+            "formulas": [
+              {
+                "label": "Offset from the centreline",
+                "tex": "x_{\\text{CL}} = \\dfrac{W}{2} - x_{\\text{edge}}",
+                "where": "W is the carriageway width and x<sub>edge</sub> the offset of the test path from the pavement edge."
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 3.75 m single lane",
+              "html": "<p>The centreline is 3.75/2 = 1.875 m from the edge. A test path 0.60 m inward is \\(1.875 - 0.60 = 1.275\\) m from the centreline.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Asphalt stiffness and measured rebound depend on pavement temperature.",
+                "html": "Benkelman readings are normalised to 35 °C because asphalt stiffness and measured rebound depend on pavement temperature.",
                 "sources": [
                   {
                     "id": "CAP4-09-00086",
@@ -3247,7 +3289,7 @@
                 ]
               },
               {
-                "html": "The key result is 1.275 m.",
+                "html": "A test path 0.60 m in from the edge of a 3.75 m carriageway lies 1.875 − 0.60 = 1.275 m from the centreline.",
                 "sources": [
                   {
                     "id": "CAP4-09-00087",
@@ -3270,10 +3312,10 @@
           {
             "id": "rigid-pavement-joints",
             "title": "Rigid pavement joints: tie bars, dowels and contraction-joint spacing",
-            "html": "<p>Joints in jointed concrete pavement control cracking, and each joint type has its own steel detail.</p><ul><li>Tie bars cross longitudinal joints between adjacent lanes. Anchored on both sides, they develop axial restraint that keeps the lanes together and preserves interlock across the joint.</li><li>Dowel bars cross transverse joints. They share wheel load between slabs through bar shear and bending and concrete bearing, while a specified debonding or sleeve arrangement lets the joint open and close. Misaligned or unintentionally bonded dowels restrain the joint and cause distress, and sealant alone provides no load transfer.</li><li>Transverse contraction joints manage shrinkage by fixing panel length. DoR Rigid Pavement Guidelines 2021 section 4.1 limits their spacing to at most 4.5 m in its stated jointed arrangement, with aggregate and temperature considerations, to help control nighttime top-down cracking.</li></ul><p>That 4.5 m is an upper spacing within a concrete system. It is not a minimum, it is not the separate 4.5 m paving-width trigger for a longitudinal joint, and it does not apply to ordinary flexible asphalt pavement, which is not cut into panels at that spacing.</p>",
+            "html": "<p>Joints in jointed concrete pavement control cracking, and each joint type has its own steel detail.</p><ul><li><em>Tie bars</em> cross longitudinal joints between adjacent lanes. Anchored on both sides, they develop axial restraint that keeps the lanes together and preserves interlock.</li><li><em>Dowel bars</em> cross transverse joints. They share wheel load through bar shear and bending and concrete bearing, while a debonding or sleeve arrangement lets the joint open and close. Misaligned or bonded dowels restrain the joint, and sealant alone transfers no load.</li><li><em>Transverse contraction joints</em> manage shrinkage by fixing panel length. DoR Rigid Pavement Guidelines 2021 section 4.1 limits their spacing to at most 4.5 m in its stated arrangement.</li></ul><p>That 4.5 m is an upper spacing within a concrete system. It is not a minimum, not the separate 4.5 m paving-width trigger for a longitudinal joint, and it does not apply to flexible asphalt pavement, which is not cut into panels.</p>",
             "points": [
               {
-                "html": "The key result is Tie bars crossing the longitudinal joint.",
+                "html": "Bars anchored across a longitudinal joint to keep adjacent lanes together are tie bars crossing the longitudinal joint.",
                 "sources": [
                   {
                     "id": "CAP4-09-00098",
@@ -3282,7 +3324,7 @@
                 ]
               },
               {
-                "html": "The key result is Aligned dowels with the specified movement allowance.",
+                "html": "A transverse joint that must share load yet open and close uses aligned dowels with the specified movement allowance.",
                 "sources": [
                   {
                     "id": "CAP4-09-00099",
@@ -3291,7 +3333,7 @@
                 ]
               },
               {
-                "html": "The key result is 4.5 m.",
+                "html": "DoR Rigid Pavement Guidelines 2021 section 4.1 caps transverse contraction-joint spacing at 4.5 m to help limit nighttime top-down cracking.",
                 "sources": [
                   {
                     "id": "CAP4-09-00143",
@@ -3300,7 +3342,7 @@
                 ]
               },
               {
-                "html": "The key result is The cited 4.5 m upper spacing concerns a specified jointed concrete system.",
+                "html": "A minimum 4.5 m joint spacing for asphalt is wrong: the cited 4.5 m upper spacing concerns a specified jointed concrete system.",
                 "sources": [
                   {
                     "id": "CAP4-09-00154",
@@ -3331,10 +3373,20 @@
           {
             "id": "dowel-detail-units",
             "title": "Dowel detailing: converting a schedule to millimetres and kgf to kN",
-            "html": "<p>Legacy dowel examples mix units, so convert before judging them. An illustrative detail with dowel diameter 2.5 cm, length 50 cm, spacing 30 cm and slab thickness 25 cm becomes, multiplying each by ten, 25 mm, 500 mm, 300 mm and 250 mm in the same order. Keeping the order matters: swapping diameter with slab thickness, or spacing with thickness, describes a different detail.</p><p>The same examples often quote a design load such as 5100 kg. A kilogram is a mass unit, so the intended force must be stated. Read as 5100 kgf, the force is 5100 × 9.80665 = 50,013.9 N, about 50.014 kN.</p><p>Correct conversion does not validate the design. Load transfer, bearing on the concrete, joint movement and anchorage still need checking, and neither the force nor the slab thickness alone fixes a dowel schedule. The recommendation attributed to IRC for these dimensions has no identified edition or clause, so the numbers serve only as an illustrative detail, not as a certified current schedule.</p>",
+            "html": "<p>Legacy dowel examples mix units, so convert before judging them. Multiplying centimetres by ten gives millimetres, and the order of the items must be kept: swapping diameter with slab thickness, or spacing with thickness, describes a different detail.</p><p>The same examples often quote a design load such as 5100 kg. A kilogram is a mass unit, so the intended force must be stated.</p><p>Correct conversion does not validate the design. Load transfer, bearing on the concrete, joint movement and anchorage still need checking. The IRC recommendation attributed to these dimensions has no identified edition or clause, so they serve only as an illustrative detail.</p>",
+            "formulas": [
+              {
+                "label": "Kilogram-force to newtons",
+                "tex": "1\\ \\text{kgf} = 9.80665\\ \\text{N}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>Diameter 2.5 cm, length 50 cm, spacing 30 cm, slab 25 cm become 25, 500, 300 and 250 mm in the same order.</li><li>5100 kgf × 9.80665 = 50,013.9 N, about 50.014 kN.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is 25, 500, 300, 250 mm.",
+                "html": "A 2.5 cm diameter, 50 cm long dowel at 30 cm spacing in a 25 cm slab converts, in order, to 25, 500, 300, 250 mm.",
                 "sources": [
                   {
                     "id": "CAP4-09-00126",
@@ -3343,7 +3395,7 @@
                 ]
               },
               {
-                "html": "The key result is 50.014 kN.",
+                "html": "Read as 5100 kgf, a legacy '5100 kg load' is 5100 × 9.80665 N, about 50.014 kN.",
                 "sources": [
                   {
                     "id": "CAP4-09-00127",
@@ -3362,6 +3414,32 @@
                 "label": "p. 36; topic 9 point 120"
               }
             ]
+          }
+        ],
+        "formulaSheet": [
+          {
+            "label": "Design lane, four-lane undivided",
+            "tex": "N_{\\text{lane}} = 0.40\\,N_{\\text{two-way}}"
+          },
+          {
+            "label": "Design lane, four-lane divided",
+            "tex": "N_{\\text{lane}} = 0.75\\,N_{\\text{direction}}"
+          },
+          {
+            "label": "Fourth-power equivalence",
+            "tex": "N_{\\text{eq}} = \\left(\\dfrac{P}{80}\\right)^4"
+          },
+          {
+            "label": "Resilient modulus, CBR up to 5 percent",
+            "tex": "M_R = 10 \\times \\text{CBR}\\ \\text{MPa}"
+          },
+          {
+            "label": "Test-path offset from centreline",
+            "tex": "x_{\\text{CL}} = \\dfrac{W}{2} - x_{\\text{edge}}"
+          },
+          {
+            "label": "Kilogram-force",
+            "tex": "1\\ \\text{kgf} = 9.80665\\ \\text{N}"
           }
         ],
         "cautions": [
@@ -3429,7 +3507,7 @@
             "id": "resilient-modulus-source",
             "status": "corrected",
             "prompt": "Resilient modulus as per NRS is Mr = 10 × CBR",
-            "html": "<p>The relation is attributed loosely to NRS. Its identified source is DoR Flexible Pavement Guidelines, Second Edition 2021, section 5.2, where M<sub>R</sub> = 10 × CBR MPa applies for CBR up to 5% and a different relation applies above 5.</p>",
+            "html": "<p>The relation is attributed loosely to NRS. Its identified source is DoR Flexible Pavement Guidelines, Second Edition 2021, section 5.2, where \\(M_R = 10 \\times \\text{CBR}\\) MPa applies for CBR up to 5% and a different relation applies above 5.</p>",
             "sources": [
               {
                 "id": "CAP4-09-00081",
@@ -3525,7 +3603,7 @@
             "id": "equivalent-load-hundred-kn",
             "status": "corrected",
             "prompt": "The equivalent wheel load of 100 kN is 2.25 times repetition of the design load",
-            "html": "<p>The capsule omits the reference load and confuses a wheel load with a repetition factor. With an 80 kN reference and the fourth-power approximation, one 100 kN pass equals (100/80)<sup>4</sup> = 2.441 passes, so 2.25 does not follow.</p>",
+            "html": "<p>The capsule omits the reference load and confuses a wheel load with a repetition factor. With an 80 kN reference and the fourth-power approximation, one 100 kN pass equals \\((100/80)^4 = 2.441\\) passes, so 2.25 does not follow.</p>",
             "sources": [
               {
                 "id": "CAP4-09-00111",
@@ -3582,15 +3660,26 @@
         "code": "ACiE0906",
         "questionCount": 31,
         "format": 2,
-        "summary": "<p>Road construction &amp; maintenance covers Construction activities and equipment, subgrade preparation, field compaction and stabilization, asphalt layers, penetration and bituminous-bound macadam, concrete pavements, maintenance, repair and rehabilitation. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers road construction and maintenance: reading mass-haul diagrams, choosing stabilisers and compaction plant, macadam and bituminous layers and their sequence, specifying thickness and computing premix quantities, diagnosing rutting and cracking, pothole repair and maintenance classes, and labour-based green roads. DoR SSRBW 2073, Third Amendment 2082, is cited by section where it applies.</p>",
         "blocks": [
           {
             "id": "mass-haul-slope-and-turning-points",
-            "title": "Mass-haul diagram: slope as net earthwork area and cut-to-fill turning points",
-            "html": "<p>A mass-haul diagram plots cumulative earthwork volume against chainage after cut and fill are converted to a common basis, such as equivalent compacted volume. With cut taken as positive, each reach of net cut adds to the ordinate and each reach of net fill subtracts from it.</p><p>The slope of the curve is the rate of change of cumulative volume with distance, which equals the average signed net earthwork area over the reach. If the ordinate rises from 600 to 1000 m<sup>3</sup> over 50 m, the slope is (1000 − 600)/50 = +8 m<sup>2</sup>, an average net cut area of 8 m<sup>2</sup> on the common volume basis. It is neither the cumulative volume nor a haul distance.</p><p>Because net cut makes the curve rise and net fill makes it fall, the point where a cutting gives way to the following fill is a local maximum of the ordinate. It need not be the highest ordinate of the whole project, and it is not necessarily a point of zero balance or maximum haul. In the same way, a change from fill to cut produces a local minimum.</p>",
+            "title": "Mass-haul diagram: slope as net earthwork area and turning points",
+            "html": "<p>A <em>mass-haul diagram</em> plots cumulative earthwork volume against chainage after cut and fill are converted to a common basis, such as equivalent compacted volume. With cut taken as positive, each reach of net cut adds to the ordinate and each reach of net fill subtracts from it.</p><p>The slope of the curve is the rate of change of cumulative volume with distance, which equals the average signed net earthwork area over the reach. It is neither the cumulative volume nor a haul distance.</p><p>Because net cut makes the curve rise and net fill makes it fall, the point where a cutting gives way to fill is a <em>local maximum</em> of the ordinate. It need not be the highest ordinate of the project, nor a point of zero balance or maximum haul. A change from fill to cut gives a local minimum.</p>",
+            "formulas": [
+              {
+                "label": "Mass-haul slope",
+                "tex": "\\dfrac{\\Delta V}{\\Delta x} = A_{\\text{net}}",
+                "where": "A<sub>net</sub> is the average signed net earthwork area over the reach, cut positive."
+              }
+            ],
+            "example": {
+              "title": "Worked example: an ordinate rising over 50 m",
+              "html": "<p>From 600 to 1000 m<sup>3</sup> over 50 m:</p>\\[\\dfrac{1000 - 600}{50} = +8\\ \\text{m}^2\\]<p>That is an average net cut area of 8 square metres on the common volume basis.</p>"
+            },
             "points": [
               {
-                "html": "The key result is +8 square metres.",
+                "html": "An ordinate rising from 600 to 1000 m<sup>3</sup> over 50 m gives an average signed net earthwork area of +8 square metres.",
                 "sources": [
                   {
                     "id": "CAP4-09-00053",
@@ -3599,7 +3688,7 @@
                 ]
               },
               {
-                "html": "The key result is A local maximum of cumulative volume.",
+                "html": "With cut positive, the cut-to-fill transition is a local maximum of cumulative volume, not necessarily the project maximum.",
                 "sources": [
                   {
                     "id": "CAP4-09-00056",
@@ -3621,11 +3710,15 @@
           },
           {
             "id": "mass-haul-ordinates-surplus-and-borrow",
-            "title": "Reading mass-haul ordinates: falling reaches, cumulative surplus and borrow",
-            "html": "<p>Two features of the curve carry two different meanings, and confusing them is the commonest reading error.</p><ul><li>The slope describes the current reach. A falling ordinate means the reach consumes more fill than it supplies as usable cut, while a rising ordinate means net cut. Under the declared convention fill is a negative increment.</li><li>The ordinate describes the accumulated balance relative to the starting datum. A positive ordinate means cumulative surplus so far, and a negative one means cumulative deficit. By itself it says nothing about whether the current reach is in cut or fill.</li></ul><p>A curve that stays above zero while falling therefore means that earlier surplus is being consumed by fill in the current reach; the reach is not a cutting merely because the ordinate is positive.</p><p>The final ordinate gives the project balance. A curve that starts at zero and ends at −250 m<sup>3</sup> of equivalent compacted volume shows a net deficit: required fill exceeds usable cut by 250 compacted m<sup>3</sup>, which must be supplied as borrow. The corresponding bank or loose volume of borrow needs separate density and bulking conversions, and the endpoint is not a haul distance.</p>",
+            "title": "Reading mass-haul ordinates: falling reaches, surplus and borrow",
+            "html": "<p>The slope and the ordinate carry different meanings, and confusing them is the commonest reading error. The slope describes the current reach; the ordinate describes the accumulated balance relative to the starting datum.</p><table><thead><tr><th scope='col'>Feature</th><th scope='col'>Meaning, cut positive</th></tr></thead><tbody><tr><th scope='row'>Rising ordinate</th><td>Net cut in the current reach</td></tr><tr><th scope='row'>Falling ordinate</th><td>Net fill: the reach uses more fill than it supplies</td></tr><tr><th scope='row'>Positive ordinate</th><td>Cumulative surplus so far</td></tr><tr><th scope='row'>Negative ordinate</th><td>Cumulative deficit so far</td></tr><tr><th scope='row'>Final ordinate below zero</th><td>Net deficit, supplied as borrow</td></tr></tbody></table><p>A curve above zero but falling means earlier surplus is being consumed by fill; the reach is not a cutting merely because the ordinate is positive. An endpoint below zero is a volume, not a haul distance, and the bank or loose volume of borrow needs separate density and bulking conversions.</p>",
+            "example": {
+              "title": "Worked example: a negative endpoint",
+              "html": "<p>A curve starting at zero and ending at −250 m<sup>3</sup> of equivalent compacted volume means required fill exceeds usable cut by 250 compacted m<sup>3</sup>, which must come from borrow.</p>"
+            },
             "points": [
               {
-                "html": "The key result is The cumulative ordinate falls along the reach.",
+                "html": "A reach consumes more fill than it supplies as usable cut when the cumulative ordinate falls along the reach.",
                 "sources": [
                   {
                     "id": "CAP4-09-00057",
@@ -3634,7 +3727,7 @@
                 ]
               },
               {
-                "html": "The key result is A net deficit of 250 compacted cubic metres requiring borrow.",
+                "html": "A curve from zero to −250 m<sup>3</sup> shows a net deficit of 250 compacted cubic metres requiring borrow.",
                 "sources": [
                   {
                     "id": "CAP4-09-00058",
@@ -3643,7 +3736,7 @@
                 ]
               },
               {
-                "html": "The key result is Cumulative surplus remains while the current reach uses net fill.",
+                "html": "A curve above zero but falling means cumulative surplus remains while the current reach uses net fill.",
                 "sources": [
                   {
                     "id": "CAP4-09-00137",
@@ -3669,11 +3762,11 @@
           },
           {
             "id": "subgrade-stabilisation-selection",
-            "title": "Matching a chemical stabiliser to the soil: lime for reactive clay, cement for sand",
-            "html": "<p>A stabiliser works only through a mechanism that the soil can support, so selection starts from the soil type.</p><ul><li>Hydrated lime is a conventional candidate for a reactive expansive clay subgrade. It reduces plasticity through cation exchange and flocculation and, where the clay mineralogy is suitable, forms longer-term cementitious products through pozzolanic reactions. Finely ground limestone, unactivated Class F fly ash or bitumen emulsion are not the conventional candidates for that combined action. Sulfate-rich or organic soils can cause problems, and dosage and effectiveness must be established by tests.</li><li>Portland-cement stabilisation suits a clean sandy soil of low plasticity with little reactive clay, because cement hydration can bind the granular skeleton by itself. Lime's strong pozzolanic benefit needs reactive fines that such a sand lacks, a calcium-chloride treatment intended only for dust suppression does not build a cemented skeleton, and compaction alone adds no cementing agent.</li></ul><p>Neither selection is automatic. Trial mixes must confirm strength, durability, workability and compatibility with the actual soil before a stabiliser is specified.</p>",
+            "title": "Matching a stabiliser to the soil: lime for clay, cement for sand",
+            "html": "<p>A stabiliser works only through a mechanism the soil can support, so selection starts from the soil type.</p><ul><li><em>Hydrated lime</em> is a conventional candidate for a reactive expansive clay subgrade. It reduces plasticity through cation exchange and flocculation and, with suitable clay mineralogy, forms cementitious products through pozzolanic reactions. Sulfate-rich or organic soils can cause problems.</li><li><em>Portland cement</em> suits a clean sandy soil of low plasticity with little reactive clay, because hydration can bind the granular skeleton by itself. Lime's pozzolanic benefit needs reactive fines such a sand lacks, a dust-suppression chloride builds no cemented skeleton, and compaction alone adds no cementing agent.</li></ul><p>Neither choice is automatic: trial mixes must confirm strength, durability, workability and compatibility before a stabiliser is specified.</p>",
             "points": [
               {
-                "html": "The key result is Hydrated lime.",
+                "html": "Hydrated lime is the conventional trial candidate for reactive expansive clay, through cation exchange, flocculation and pozzolanic reaction.",
                 "sources": [
                   {
                     "id": "CAP4-02-00085",
@@ -3682,7 +3775,7 @@
                 ]
               },
               {
-                "html": "The key result is Portland-cement stabilisation.",
+                "html": "Portland-cement stabilisation is a reasonable trial candidate for clean low-plasticity sand, since hydration builds a cemented skeleton.",
                 "sources": [
                   {
                     "id": "CAP4-09-00103",
@@ -3704,11 +3797,11 @@
           },
           {
             "id": "field-compaction-rollers-and-patterns",
-            "title": "Field compaction: roller selection for granular soil and rolling patterns across crossfall",
-            "html": "<p>Compaction plant is chosen to suit the material. A vibratory smooth-drum roller suits clean coarse-grained sand and gravel because vibration helps granular particles rearrange into a denser packing. Kneading padfoot action is associated mainly with cohesive soils, and a static roller used only for finishing smooths the surface rather than rearranging the particles. Amplitude, lift thickness, moisture and pass pattern should still be established by trials.</p><p>The rolling pattern for an asphalt mat follows its crossfall, so that rolling consolidates the mat without pushing material downhill.</p><ul><li>On a normal crowned section, overlapping longitudinal passes progress on each half-width from the lower outer edge towards the crown.</li><li>On a fully superelevated carriageway there is no central crown, only one continuous crossfall, so the passes progress from the low side towards the high side.</li></ul><p>The short rule edges to centre therefore applies to a crowned road only. Approved equipment, overlap, joint and edge treatment and trial compaction patterns govern in every case.</p>",
+            "title": "Field compaction: rollers for granular soil and rolling patterns",
+            "html": "<p>Compaction plant is chosen to suit the material. A vibratory smooth-drum roller suits clean coarse-grained sand and gravel because vibration helps the particles rearrange into a denser packing. Kneading padfoot action is associated mainly with cohesive soils, and a static finishing roller smooths the surface rather than rearranging particles. Amplitude, lift thickness, moisture and pass pattern are set by trials.</p><p>The rolling pattern for an asphalt mat follows its crossfall, so that rolling consolidates the mat without pushing material downhill.</p><ul><li>On a normal crowned section, overlapping longitudinal passes progress on each half-width from the lower outer edge towards the crown.</li><li>On a fully superelevated carriageway there is one continuous crossfall, so passes progress from the low side towards the high side.</li></ul><p>The rule edges to centre therefore applies to a crowned road only.</p>",
             "points": [
               {
-                "html": "The key result is Vibratory smooth-drum roller.",
+                "html": "A vibratory smooth-drum roller suits clean coarse sand and gravel, because vibration rearranges the particles into denser packing.",
                 "sources": [
                   {
                     "id": "CAP4-09-00105",
@@ -3717,7 +3810,7 @@
                 ]
               },
               {
-                "html": "The key result is From the lower outer edge towards the crown.",
+                "html": "On a normally crowned mat, overlapping passes progress on each half-width from the lower outer edge towards the crown.",
                 "sources": [
                   {
                     "id": "CAP4-09-00119",
@@ -3726,7 +3819,7 @@
                 ]
               },
               {
-                "html": "The key result is From the low side towards the high side.",
+                "html": "On a fully superelevated carriageway, rolling progresses from the low side towards the high side.",
                 "sources": [
                   {
                     "id": "CAP4-09-00120",
@@ -3752,11 +3845,11 @@
           },
           {
             "id": "macadam-construction-methods",
-            "title": "Macadam construction: water-bound, penetration and premixed bituminous macadam",
-            "html": "<p>Macadam layers differ mainly in how the binding material reaches the stone skeleton.</p><table><thead><tr><th scope='col'>Method</th><th scope='col'>How the skeleton is bound</th></tr></thead><tbody><tr><td>Water-bound macadam (WBM)</td><td>Suitable stone dust or approved fines worked into the rolled stone with water and further rolling; no bitumen</td></tr><tr><td>Penetration macadam</td><td>Coarse aggregate spread and rolled first, binder then sprayed into the voids, followed by key aggregate and more rolling</td></tr><tr><td>Bituminous-bound macadam premix</td><td>Aggregate coated with binder before laying as a base or binder course</td></tr></tbody></table><p>In WBM the binding fines must satisfy the grading and plasticity limits of the relevant specification; arbitrary soil is not an acceptable substitute, and the layer is not bonded by bitumen. The penetration macadam order under DoR SSRBW 2073, Third Amendment 2082, section 1304 is spread coarse aggregate, roll the skeleton, spray binder, then place key aggregate, which is the reverse of premixing.</p><p>The name bituminous-bound macadam is used here as teaching terminology rather than as a separate DoR product; SSRBW sections 1307 and 1308 distinguish BM and DBM, which have different gradings.</p>",
+            "title": "Macadam construction: water-bound, penetration and premixed",
+            "html": "<p>Macadam layers differ mainly in how the binding material reaches the stone skeleton.</p><table><thead><tr><th scope='col'>Method</th><th scope='col'>How the skeleton is bound</th></tr></thead><tbody><tr><th scope='row'>Water-bound macadam (WBM)</th><td>Suitable stone dust or approved fines worked into the rolled stone with water and rolling; no bitumen</td></tr><tr><th scope='row'>Penetration macadam</th><td>Coarse aggregate spread and rolled, binder sprayed into the voids, then key aggregate and more rolling</td></tr><tr><th scope='row'>Bituminous-bound macadam premix</th><td>Aggregate coated with binder before laying as a base or binder course</td></tr></tbody></table><p>WBM fines must meet the specified grading and plasticity limits; arbitrary soil is no substitute. The penetration order under SSRBW section 1304 is the reverse of premixing. Bituminous-bound macadam is used here as teaching terminology; SSRBW sections 1307 and 1308 distinguish BM and DBM, which have different gradings.</p>",
             "points": [
               {
-                "html": "The key result is Suitable stone dust.",
+                "html": "Suitable stone dust can be the approved fine binding material worked into water-bound macadam with water and rolling.",
                 "sources": [
                   {
                     "id": "CAP4-09-00088",
@@ -3765,20 +3858,20 @@
                 ]
               },
               {
-                "html": "The key result is Bituminous-bound macadam premix.",
-                "sources": [
-                  {
-                    "id": "CAP4-09-00089",
-                    "label": "p. 35; topic 9 point 85"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Spread coarse aggregate, roll the skeleton, spray binder.",
+                "html": "Penetration macadam under SSRBW section 1304 goes: spread coarse aggregate, roll the skeleton, spray binder, then place key aggregate.",
                 "sources": [
                   {
                     "id": "CAP4-09-00096",
                     "label": "p. 35; topic 9 point 92"
+                  }
+                ]
+              },
+              {
+                "html": "Coating aggregate with binder before laying it as a base or binder course is the bituminous-bound macadam premix process.",
+                "sources": [
+                  {
+                    "id": "CAP4-09-00089",
+                    "label": "p. 35; topic 9 point 85"
                   }
                 ]
               }
@@ -3789,22 +3882,22 @@
                 "label": "p. 35; topic 9 point 84"
               },
               {
-                "id": "CAP4-09-00089",
-                "label": "p. 35; topic 9 point 85"
-              },
-              {
                 "id": "CAP4-09-00096",
                 "label": "p. 35; topic 9 point 92"
+              },
+              {
+                "id": "CAP4-09-00089",
+                "label": "p. 35; topic 9 point 85"
               }
             ]
           },
           {
             "id": "bituminous-layers-and-sequence",
-            "title": "Tack and prime coats, construction sequence and bituminous concrete wearing courses",
-            "html": "<p>Thin binder applications are named by the surface they treat.</p><ul><li>A tack coat is a thin, controlled binder film applied to a sound, clean existing bituminous surface just before a new bituminous layer, to bond the two.</li><li>A prime coat prepares an absorbent granular surface to receive bituminous work.</li><li>A seal coat preserves a surface, and a profile-corrective course changes levels or thickness rather than merely bonding an interface.</li></ul><p>A new conventional flexible pavement with a premixed surface is built in this order: earthworks and compacted support layers, meaning the subgrade and the specified base courses; then the prime or tack suited to the receiving interface; then laying the premix; then rolling it. A shorthand of excavation, binder, premix and compaction omits the foundation and base construction that must come first, and tack is never a final surfacing.</p><p>Bituminous concrete (SSRBW section 1309) is a dense, plant-produced asphalt mixture commonly specified as a high-quality wearing course, in contrast to open-graded macadam bases. It has its own grading and performance criteria, but it is not universally superior to every purpose-designed surfacing.</p>",
+            "title": "Tack and prime coats, construction sequence and bituminous concrete",
+            "html": "<p>Thin binder applications are named by the surface they treat.</p><ul><li>A <em>tack coat</em> is a thin, controlled binder film applied to a sound, clean existing bituminous surface just before a new bituminous layer, to bond the two.</li><li>A <em>prime coat</em> prepares an absorbent granular surface to receive bituminous work.</li><li>A seal coat preserves a surface, and a profile-corrective course changes levels or thickness.</li></ul><p>A new conventional flexible pavement with a premixed surface is built in order: earthworks and compacted support layers, then the prime or tack suited to the interface, then premix laying, then rolling. A shorthand of excavation, binder, premix and compaction omits the foundation and base work.</p><p><em>Bituminous concrete</em> (SSRBW section 1309) is a dense, plant-produced mixture commonly specified as a high-quality wearing course, unlike open-graded macadam bases, though it is not universally superior to every surfacing.</p>",
             "points": [
               {
-                "html": "The key result is Tack coat.",
+                "html": "A thin binder film sprayed on clean existing asphalt just before a new layer, to bond the two, is a tack coat.",
                 "sources": [
                   {
                     "id": "CAP4-09-00095",
@@ -3813,20 +3906,20 @@
                 ]
               },
               {
-                "html": "The key result is Bituminous concrete.",
-                "sources": [
-                  {
-                    "id": "CAP4-09-00100",
-                    "label": "p. 35; topic 9 point 96"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Earthworks and compacted support layers; specified prime/tack; premix laying; rolling.",
+                "html": "A new flexible pavement is built as earthworks and compacted support layers; specified prime/tack; premix laying; rolling.",
                 "sources": [
                   {
                     "id": "CAP4-09-00101",
                     "label": "p. 35; topic 9 point 97"
+                  }
+                ]
+              },
+              {
+                "html": "Bituminous concrete is the dense, plant-produced mixture commonly specified as a high-quality wearing course.",
+                "sources": [
+                  {
+                    "id": "CAP4-09-00100",
+                    "label": "p. 35; topic 9 point 96"
                   }
                 ]
               }
@@ -3837,22 +3930,33 @@
                 "label": "p. 35; topic 9 point 91"
               },
               {
-                "id": "CAP4-09-00100",
-                "label": "p. 35; topic 9 point 96"
-              },
-              {
                 "id": "CAP4-09-00101",
                 "label": "p. 35; topic 9 point 97"
+              },
+              {
+                "id": "CAP4-09-00100",
+                "label": "p. 35; topic 9 point 96"
               }
             ]
           },
           {
             "id": "layer-thickness-and-premix-quantity",
             "title": "Specifying layer thickness properly and computing premix quantities",
-            "html": "<p>A thickness figure can govern construction only when it names the layer, the unit, the basis and the clause. A note reading only maximum subbase/premix thickness 30 fails every test: subbase and asphalt premix are different products, 30 carries no unit, and nothing says whether it is a total designed thickness or the permissible compacted lift. Guessing millimetres or centimetres, or treating the total thickness as a lift maximum, is no substitute for identifying the governing contract clause, the grading and the compaction capability.</p><p>Quantities then follow from a properly stated specification. For an approved open-graded premix carpet specified at 20 mm compacted thickness over an area 50 m long and 3.5 m wide, convert the thickness to metres and multiply: 50 × 3.5 × 0.020 = 3.5 m<sup>3</sup> of compacted mix, ignoring waste. This is compacted geometric volume; loose delivery volume and mass need separate density and construction allowances. The 20 mm is the exercise's approved specification, not a universal thickness for every asphalt course.</p>",
+            "html": "<p>A thickness figure can govern construction only when it names the layer, the unit, the basis and the clause. A note reading only maximum subbase/premix thickness 30 fails every test: subbase and asphalt premix are different products, 30 carries no unit, and nothing says whether it is a total designed thickness or a permissible compacted lift. Guessing millimetres or centimetres is no substitute for the governing clause, grading and compaction capability.</p><p>Quantities then follow from a properly stated specification: convert the compacted thickness to metres and multiply by length and width. The result is compacted geometric volume; loose delivery volume and mass need separate density and construction allowances.</p>",
+            "formulas": [
+              {
+                "label": "Compacted layer volume",
+                "tex": "V = L \\times W \\times t",
+                "where": "t is the compacted thickness in metres."
+              }
+            ],
+            "example": {
+              "title": "Worked example: a premix carpet",
+              "html": "<p>An approved open-graded premix carpet at 20 mm compacted thickness over 50 m × 3.5 m:</p>\\[V = 50 \\times 3.5 \\times 0.020 = 3.5\\ \\text{m}^3\\]<p>The 20 mm is the exercise's approved specification, not a universal thickness.</p>"
+            },
             "points": [
               {
-                "html": "The key result is The exact layer, unit, compacted-lift basis and governing clause.",
+                "html": "A bare note such as maximum subbase/premix thickness 30 needs the exact layer, unit, compacted-lift basis and governing clause.",
                 "sources": [
                   {
                     "id": "CAP4-09-00107",
@@ -3861,7 +3965,7 @@
                 ]
               },
               {
-                "html": "The key result is 3.5 cubic metres.",
+                "html": "A 20 mm compacted premix carpet over 50 m by 3.5 m needs 3.5 cubic metres of compacted mix, ignoring waste.",
                 "sources": [
                   {
                     "id": "CAP4-09-00144",
@@ -3883,11 +3987,20 @@
           },
           {
             "id": "rutting-definition-and-densification",
-            "title": "Rutting: definition, lateral displacement and densification of undercompacted layers",
-            "html": "<p>Rutting is permanent longitudinal depression along the usual wheel tracks. It can originate in the asphalt, the granular layers or the subgrade, and it differs from other surface distresses: corrugation is a wave-like pattern, ravelling is progressive loss of particles and bleeding is excess binder appearing at the surface.</p><p>The transverse profile helps identify the mechanism. Wheel-path troughs with raised ridges beside them indicate rutting with lateral shear displacement of material. Shoving describes local displacement or bulging, often near braking areas, and grooves cut deliberately for drainage or texture must not be mistaken for traffic-induced deformation; profile and location are needed to tell them apart.</p><p>A second mechanism is post-construction densification. A layer left undercompacted keeps losing thickness under repeated traffic as its particles pack more closely, producing a permanent wheel-path depression. That is different from fully recoverable elastic rebound, and rutting can also arise from shear instability even where the initial compaction was adequate.</p>",
+            "title": "Rutting: definition, lateral displacement and densification",
+            "html": "<p><em>Rutting</em> is permanent longitudinal depression along the usual wheel tracks. It can originate in the asphalt, the granular layers or the subgrade. Corrugation is a wave-like pattern, ravelling is progressive loss of particles and bleeding is excess binder appearing at the surface.</p><p>The transverse profile helps identify the mechanism. Wheel-path troughs with raised ridges beside them indicate rutting with lateral shear displacement. Shoving is local bulging, often near braking areas, and grooves cut deliberately for drainage or texture must not be mistaken for traffic damage.</p><p>A second mechanism is <em>post-construction densification</em>: a layer left undercompacted keeps losing thickness under traffic as its particles pack more closely. That differs from recoverable elastic rebound, and rutting can also come from shear instability even where initial compaction was adequate.</p>",
             "points": [
               {
-                "html": "The key result is Rutting with lateral displacement.",
+                "html": "Longitudinal depressions that follow the usual wheel tracks define the distress called rutting.",
+                "sources": [
+                  {
+                    "id": "CAP4-09-00104",
+                    "label": "p. 36; topic 9 point 100"
+                  }
+                ]
+              },
+              {
+                "html": "Wheel-path troughs with raised ridges beside them indicate rutting with lateral displacement of material.",
                 "sources": [
                   {
                     "id": "CAP4-09-00061",
@@ -3896,25 +4009,20 @@
                 ]
               },
               {
-                "html": "The key result is Post-construction densification.",
+                "html": "An undercompacted layer that keeps thinning under traffic forms ruts by post-construction densification.",
                 "sources": [
                   {
                     "id": "CAP4-09-00090",
                     "label": "p. 35; topic 9 point 86"
                   }
                 ]
-              },
-              {
-                "html": "The key result is Rutting. This is the reviewed topic result.",
-                "sources": [
-                  {
-                    "id": "CAP4-09-00104",
-                    "label": "p. 36; topic 9 point 100"
-                  }
-                ]
               }
             ],
             "sources": [
+              {
+                "id": "CAP4-09-00104",
+                "label": "p. 36; topic 9 point 100"
+              },
               {
                 "id": "CAP4-09-00061",
                 "label": "p. 35; topic 9 point 60"
@@ -3922,20 +4030,16 @@
               {
                 "id": "CAP4-09-00090",
                 "label": "p. 35; topic 9 point 86"
-              },
-              {
-                "id": "CAP4-09-00104",
-                "label": "p. 36; topic 9 point 100"
               }
             ]
           },
           {
             "id": "diagnosing-rutting-causes",
-            "title": "Diagnosing rutting from evidence: foundation support, temperature and mix stability",
-            "html": "<p>Weak subgrade, high pavement temperature and poor mix design can all contribute to rutting, but the remedy depends on which one controls, so the evidence must be read first.</p><ul><li>Foundation. A broad rut that continues through the granular layers into weak subgrade while the asphalt itself is stable points to deficient support. The target is foundation support and drainage: investigate and improve strength, moisture, compaction and structural thickness. Replacing or sealing only the surface would hide the cause rather than remedy it.</li><li>Temperature. Asphalt is temperature- and loading-time-dependent. In hot weather a marginal mixture loses stiffness and resistance to time-dependent shear deformation, so ruts grow; the aggregate skeleton, binder selection, loading and void structure together decide the outcome.</li><li>Mix stability. A layer can meet its field-density target and still shear laterally. Adequate density reduces the risk of densification but does not prove shear stability, so an unstable aggregate skeleton or an unsuitable binder and air-void balance remains a credible cause.</li></ul>",
+            "title": "Diagnosing rutting: foundation support, temperature and mix stability",
+            "html": "<p>Weak subgrade, high pavement temperature and poor mix design can all contribute to rutting, but the remedy depends on which one controls, so read the evidence first.</p><ul><li><em>Foundation.</em> A broad rut that continues through the granular layers into weak subgrade while the asphalt is stable points to deficient support. Investigate and improve strength, moisture, compaction, drainage and structural thickness; renewing only the surface hides the cause.</li><li><em>Temperature.</em> Asphalt is temperature- and loading-time-dependent. In hot weather a marginal mixture loses stiffness and resistance to time-dependent shear deformation, so ruts grow.</li><li><em>Mix stability.</em> A layer can meet its field-density target and still shear laterally. Density reduces densification risk but does not prove shear stability, so an unstable aggregate skeleton or unsuitable binder and air-void balance remains a credible cause.</li></ul>",
             "points": [
               {
-                "html": "The key result is Investigate and improve deficient foundation support and drainage.",
+                "html": "A broad rut reaching weak subgrade under stable asphalt calls for investigating and improving deficient foundation support and drainage.",
                 "sources": [
                   {
                     "id": "CAP4-09-00140",
@@ -3944,7 +4048,7 @@
                 ]
               },
               {
-                "html": "The key result is Reduced resistance to time-dependent shear deformation.",
+                "html": "Hot-weather rut growth in a marginal mix reflects reduced resistance to time-dependent shear deformation.",
                 "sources": [
                   {
                     "id": "CAP4-09-00141",
@@ -3953,7 +4057,7 @@
                 ]
               },
               {
-                "html": "The key result is An unstable aggregate skeleton or unsuitable binder/void balance.",
+                "html": "A layer that meets field density yet shears laterally may have an unstable aggregate skeleton or unsuitable binder/void balance.",
                 "sources": [
                   {
                     "id": "CAP4-09-00142",
@@ -3979,20 +4083,20 @@
           },
           {
             "id": "cracking-types-and-crack-treatment",
-            "title": "Cracking: alligator fatigue, concrete crazing, and sealing versus filling",
-            "html": "<p>Crack patterns point towards mechanisms, but a pattern alone rarely proves one.</p><ul><li>Alligator cracking in asphalt is associated with fatigue: accumulated cyclic tensile damage under repeated axle loads, so it commonly follows the wheel paths and becomes interconnected. Large thermal or block cracks can form without that traffic pattern, and reflection cracks follow regularly spaced underlying joints.</li><li>Crazing is a shallow network of fine cracks in a concrete surface, often linked to surface shrinkage, finishing or curing. A single hairline crack is not crazing, and a shallow network is not automatically a structural, through-slab failure.</li></ul><p>Crack treatment depends on movement. An asphalt crack that opens and closes with temperature needs crack sealing: joint preparation and a suitable flexible sealant that accommodates the movement and limits water entry. Crack filling with a low-movement filler is generally associated with relatively inactive cracks. The two terms are therefore not technically identical, and surface texturing or milling of intact surface does not address an active crack.</p>",
+            "title": "Cracking: alligator fatigue, concrete crazing, sealing and filling",
+            "html": "<p>Crack patterns point towards mechanisms, but a pattern alone rarely proves one.</p><ul><li><em>Alligator cracking</em> in asphalt is associated with fatigue: accumulated cyclic tensile damage under repeated axle loads, so it follows the wheel paths and becomes interconnected. Large thermal or block cracks can form without that traffic pattern, and reflection cracks follow underlying joints.</li><li><em>Crazing</em> is a shallow network of fine cracks in a concrete surface, often linked to surface shrinkage, finishing or curing. A single hairline crack is not crazing, and a shallow network is not a through-slab failure.</li></ul><p>Treatment depends on movement. A crack that opens and closes with temperature needs <em>crack sealing</em>: joint preparation and a flexible sealant that accommodates movement and limits water entry. Crack filling suits relatively inactive cracks, so the two terms are not identical.</p>",
             "points": [
               {
-                "html": "The key result is Crack sealing with a suitable flexible sealant.",
+                "html": "Alligator fatigue cracking is distinguished from thermal blocks by accumulated cyclic tensile damage along the wheel paths.",
                 "sources": [
                   {
-                    "id": "CAP4-01-00022",
-                    "label": "p. 2; topic 1 point 22"
+                    "id": "CAP4-09-00108",
+                    "label": "p. 36; topic 9 point 104"
                   }
                 ]
               },
               {
-                "html": "The key result is Surface crazing.",
+                "html": "A shallow fine network of cracks in a concrete surface, with no through-slab break, is surface crazing.",
                 "sources": [
                   {
                     "id": "CAP4-09-00102",
@@ -4001,72 +4105,82 @@
                 ]
               },
               {
-                "html": "The key result is Accumulated cyclic tensile damage.",
+                "html": "An asphalt crack that opens and closes with temperature needs crack sealing with a suitable flexible sealant, not ordinary filling.",
                 "sources": [
                   {
-                    "id": "CAP4-09-00108",
-                    "label": "p. 36; topic 9 point 104"
+                    "id": "CAP4-01-00022",
+                    "label": "p. 2; topic 1 point 22"
                   }
                 ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-01-00022",
-                "label": "p. 2; topic 1 point 22"
+                "id": "CAP4-09-00108",
+                "label": "p. 36; topic 9 point 104"
               },
               {
                 "id": "CAP4-09-00102",
                 "label": "p. 36; topic 9 point 98"
               },
               {
-                "id": "CAP4-09-00108",
-                "label": "p. 36; topic 9 point 104"
+                "id": "CAP4-01-00022",
+                "label": "p. 2; topic 1 point 22"
               }
             ]
           },
           {
             "id": "pothole-repair-and-maintenance-class",
             "title": "Pothole repair: cut-and-patch boundaries and SSRBW maintenance classes",
-            "html": "<p>A conventional permanent saw-cut pothole patch starts with its boundary. The damaged area is cut back to regular, near-vertical edges, typically rectangular, into sound surrounding material. Firm vertical faces allow the hole to be cleaned of debris and water, bonded and compacted against a solid edge, whereas crumbling feather edges give no firm boundary to compact against.</p><p>The depth is set by the damaged material and any deficient support beneath: a neat rectangle cannot cure a weak or wet underlying layer, and cutting only the surface film over unsound support leaves the cause in place.</p><p>Maintenance classes then depend on the repair type. DoR SSRBW 2073, Third Amendment 2082, places permanent blacktop pothole patching in reactive or recurrent maintenance (section 2901, Table 29.2), while temporary pothole filling appears among the routine seasonal priorities (section 2902, Table 29.5). Calling every pothole action recurrent maintenance misses that distinction.</p>",
+            "html": "<p>A conventional permanent saw-cut pothole patch starts with its boundary. The damaged area is cut back to regular, near-vertical edges, typically rectangular, into sound surrounding material. Firm vertical faces let the hole be cleaned, bonded and compacted against a solid edge, whereas crumbling feather edges give nothing to compact against. The depth follows the damaged material and any deficient support: a neat rectangle cannot cure a weak or wet underlying layer.</p><p>Maintenance classes depend on the repair type. DoR SSRBW 2073, Third Amendment 2082, places permanent blacktop pothole patching in reactive or recurrent maintenance (section 2901, Table 29.2), while temporary pothole filling appears among the routine seasonal priorities (section 2902, Table 29.5).</p>",
             "points": [
               {
-                "html": "The key result is Permanent patching: recurrent; temporary filling: routine.",
-                "sources": [
-                  {
-                    "id": "CAP4-09-00109",
-                    "label": "p. 36; topic 9 point 105"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Cut regular near-vertical edges into sound surrounding material.",
+                "html": "A conventional permanent pothole patch begins by cutting regular near-vertical edges into sound surrounding material.",
                 "sources": [
                   {
                     "id": "CAP4-09-00125",
                     "label": "pp. 36, 37; topic 9 point 119; topic 9 point 137"
                   }
                 ]
+              },
+              {
+                "html": "Under SSRBW 2073, permanent patching is recurrent and temporary filling is routine maintenance, so the repair type decides the class.",
+                "sources": [
+                  {
+                    "id": "CAP4-09-00109",
+                    "label": "p. 36; topic 9 point 105"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-09-00109",
-                "label": "p. 36; topic 9 point 105"
-              },
-              {
                 "id": "CAP4-09-00125",
                 "label": "pp. 36, 37; topic 9 point 119; topic 9 point 137"
+              },
+              {
+                "id": "CAP4-09-00109",
+                "label": "p. 36; topic 9 point 105"
               }
             ]
           },
           {
             "id": "green-road-labour-and-staged-cuts",
-            "title": "Green roads: labour-based construction and checking a staged pilot cut",
-            "html": "<p>Alongside its ecological aims, the green-road concept promotes labour-based, affordable construction. Labour-based means using suitable local labour and skills where the task allows, supported by training, supervision and task-appropriate tools or equipment. It does not mean excluding equipment where manual work would be unsafe, hiring labour without supervision on the assumption that low cost guarantees quality, or diverting effort from drainage and slope protection into more excavation. Affordability never overrides engineering and environmental requirements.</p><p>Because green roads use staged works, an early-phase cut can be checked from measured quantities. For a pilot cut with 1000 m<sup>2</sup> of horizontal plan area over 800 m of length, ignoring local widening, the average plan width is 1000/800 = 1.25 m. That checks the stated pilot geometry only; it is not a universal phase-one width and does not show that the completed road can carry traffic safely.</p>",
+            "title": "Green roads: labour-based construction and a staged pilot cut",
+            "html": "<p>Alongside its ecological aims, the green-road concept promotes labour-based, affordable construction. <em>Labour-based</em> means using suitable local labour and skills where the task allows, supported by training, supervision and task-appropriate tools or equipment. It does not mean excluding equipment where manual work would be unsafe, hiring labour without supervision, or diverting effort from drainage and slope protection. Affordability never overrides engineering and environmental requirements.</p><p>Because green roads use staged works, an early-phase cut can be checked from measured quantities: average plan width is plan area over length, ignoring local widening. That checks the stated pilot geometry only; it is not a universal phase-one width.</p>",
+            "formulas": [
+              {
+                "label": "Average plan width",
+                "tex": "\\bar{W} = \\dfrac{A_{\\text{plan}}}{L}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a pilot cut",
+              "html": "<p>1000 m<sup>2</sup> of horizontal plan area over 800 m of length gives \\(\\bar{W} = 1000/800 = 1.25\\) m, which says nothing about whether the finished road can carry traffic safely.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Use suitable local labour with training and task-appropriate tools or equipment.",
+                "html": "The labour-based side of green roads means using suitable local labour with training and task-appropriate tools or equipment.",
                 "sources": [
                   {
                     "id": "CAP4-10-00181",
@@ -4075,7 +4189,7 @@
                 ]
               },
               {
-                "html": "The key result is 1.25 m.",
+                "html": "A pilot cut of 1000 m<sup>2</sup> plan area over 800 m has an average plan width of 1.25 m.",
                 "sources": [
                   {
                     "id": "CAP4-10-00189",
@@ -4094,6 +4208,20 @@
                 "label": "p. 42; rural point 13"
               }
             ]
+          }
+        ],
+        "formulaSheet": [
+          {
+            "label": "Mass-haul slope",
+            "tex": "\\dfrac{\\Delta V}{\\Delta x} = A_{\\text{net}}"
+          },
+          {
+            "label": "Compacted layer volume",
+            "tex": "V = L \\times W \\times t"
+          },
+          {
+            "label": "Average plan width",
+            "tex": "\\bar{W} = \\dfrac{A_{\\text{plan}}}{L}"
           }
         ],
         "cautions": [

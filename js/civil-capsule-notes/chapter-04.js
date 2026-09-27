@@ -2181,24 +2181,55 @@
         "code": "ACiE0404",
         "questionCount": 14,
         "format": 2,
-        "summary": "<p>Determinate structures-1 covers Degree of determinacy, energy methods, virtual work, and deflection of beams and portal frames. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers the tools used to analyse determinate structures and to count their redundancy: virtual work, strain energy and Castigliano's derivative, resilience, suddenly applied loads, and the counting rules for trusses and frames. The questions test the definitions, energy calculations with careful units, and the difference between a satisfied count and a proven stable structure.</p>",
         "blocks": [
           {
-            "id": "virtual-work-and-castigliano",
-            "title": "Virtual work and Castigliano's energy derivative",
-            "html": "<p>The principle of virtual displacements tests equilibrium by pairing the <em>actual</em> forces with an imagined, infinitesimal and kinematically admissible virtual displacement, one that respects every support and continuity constraint. For a deformable body in equilibrium, the external virtual work of those forces equals the internal virtual work for every such displacement.</p><p>Finite, arbitrary or constraint-violating movements do not qualify, and settlements that actually occur are real rather than virtual. The dual principle of virtual forces pairs a virtual force system with the actual displacements and underlies the unit-load method for deflections.</p><p>Energy methods also give displacements directly. For a conservative, linear-elastic structure, the displacement at and in the direction of a load P equals ∂U/∂P. If U = 0.002P<sup>2</sup> kN·m, then δ = 0.004P m, which is 0.020 m = 20 mm at P = 5 kN; dividing U by P would give half of this. Texts number Castigliano's theorems differently, so identify the derivative rather than rely on the label. For nonlinear elasticity, load derivatives must be taken of complementary energy.</p>",
+            "id": "virtual-work-principle",
+            "title": "The principle of virtual work",
+            "html": "<p>The principle of <em>virtual displacements</em> tests equilibrium by pairing the actual forces with an imagined displacement. The virtual displacement must be infinitesimal and kinematically admissible: it respects every support and every continuity constraint.</p><p>For a deformable body in equilibrium, the external virtual work of the actual forces equals the internal virtual work, for every such displacement. Finite, arbitrary or constraint-violating movements do not qualify, and settlements that actually occur are real movements, not virtual ones.</p><p>The dual principle of <em>virtual forces</em> pairs a virtual force system with the actual displacements. It is the basis of the unit-load method for deflections.</p>",
+            "formulas": [
+              {
+                "label": "Virtual displacements",
+                "tex": "\\delta W_{\\text{ext}} = \\delta W_{\\text{int}}",
+                "where": "<p>Holds for every kinematically admissible virtual displacement of a body in equilibrium.</p>"
+              }
+            ],
             "points": [
               {
-                "html": "The key result is Actual forces with admissible virtual displacements.",
+                "html": "The virtual-displacement principle pairs the actual forces with admissible virtual displacements: infinitesimal movements that respect every support and continuity constraint.",
                 "sources": [
                   {
                     "id": "CAP4-04-00025",
                     "label": "p. 16; topic 4 point 24"
                   }
                 ]
-              },
+              }
+            ],
+            "sources": [
               {
-                "html": "The key result is 20 mm.",
+                "id": "CAP4-04-00025",
+                "label": "p. 16; topic 4 point 24"
+              }
+            ]
+          },
+          {
+            "id": "castigliano-derivative",
+            "title": "Castigliano's energy derivative",
+            "html": "<p>Energy methods also give displacements directly. For a conservative, linear-elastic structure, the displacement at a load and in its direction equals the derivative of the strain energy with respect to that load.</p><p>Texts number Castigliano's theorems differently, so identify the derivative rather than rely on the theorem's label. For nonlinear elasticity the load derivative must be taken of the complementary energy instead.</p>",
+            "formulas": [
+              {
+                "label": "Castigliano, linear elastic",
+                "tex": "\\delta = \\dfrac{\\partial U}{\\partial P}",
+                "where": "<p>\\(\\delta\\) is the displacement conjugate to the load \\(P\\).</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: energy written as a function of load",
+              "html": "<p>With \\(U = 0.002P^2\\) kN·m and \\(P\\) in kN:</p><ol><li>Differentiate: \\(\\delta = 0.004P\\) m.</li><li>At P = 5 kN: \\(\\delta = 0.020\\) m, that is 20 mm.</li></ol><p>Dividing \\(U\\) by \\(P\\) would give only 10 mm, missing the factor of two.</p>"
+            },
+            "points": [
+              {
+                "html": "For \\(U = 0.002P^2\\) kN·m, Castigliano's derivative gives \\(\\delta = 0.004P\\) m, a displacement of 20 mm at P = 5 kN.",
                 "sources": [
                   {
                     "id": "CAP4-04-00102",
@@ -2209,10 +2240,6 @@
             ],
             "sources": [
               {
-                "id": "CAP4-04-00025",
-                "label": "p. 16; topic 4 point 24"
-              },
-              {
                 "id": "CAP4-04-00102",
                 "label": "p. 18; topic 4 point 102"
               }
@@ -2220,11 +2247,29 @@
           },
           {
             "id": "gradual-loading-strain-energy",
-            "title": "Strain energy under gradual loading: beams and uniformly stressed bars",
-            "html": "<p>When a load grows slowly from zero on a linear-elastic structure, its force–displacement graph is a straight line and the stored energy is the triangle beneath it: U = Pδ/2, not Pδ.</p><ul><li>Beam: a 4 m simple span with EI = 8000 kN·m<sup>2</sup> and a central load of 12 kN deflects PL<sup>3</sup>/(48EI) = 0.002 m, so U = 12 × 0.002/2 = 0.012 kN·m = 12 J. The same result follows from U = P<sup>2</sup>L<sup>3</sup>/(96EI) = 144 × 64/768000 = 0.012 kN·m; the load appears squared.</li><li>Uniformly stressed bar: the energy per unit volume is σ<sup>2</sup>/(2E). Stressed to 200 MPa with E = 200000 MPa, the density is 40000/400000 = 0.10 N/mm<sup>2</sup>, that is 0.10 N·mm per mm<sup>3</sup>; over 100000 mm<sup>3</sup> the total is 10000 N·mm = 10 J.</li></ul><p>Unit conversion matters: 1 kN·m = 1000 J and 1 N·mm = 0.001 J. A density such as 0.10 N/mm<sup>2</sup> is energy per volume, not the stored energy of the whole member.</p>",
+            "title": "Strain energy under gradual loading: beams and bars",
+            "html": "<p>When a load grows slowly from zero on a linear-elastic structure, its force–displacement graph is a straight line and the stored energy is the triangle beneath it, \\(P\\delta/2\\), not \\(P\\delta\\).</p><p>For a simple span with a central load the energy can also be written in terms of the load, which then appears squared. In a uniformly stressed bar the energy per unit volume depends on the stress squared.</p><p>Watch the units: 1 kN·m = 1000 J and 1 N·mm = 0.001 J. An energy density such as 0.10 N/mm² is energy per unit volume, not the energy stored in the whole member.</p>",
+            "formulas": [
+              {
+                "label": "Gradual load on a linear system",
+                "tex": "U = \\tfrac{1}{2}P\\delta"
+              },
+              {
+                "label": "Simple span, central load",
+                "tex": "U = \\dfrac{P^2L^3}{96EI}"
+              },
+              {
+                "label": "Energy per unit volume, uniform stress",
+                "tex": "u = \\dfrac{\\sigma^2}{2E}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples: a loaded beam and a stressed bar",
+              "html": "<p>Beam: span 4 m, EI = 8000 kN·m², central load 12 kN.</p>\\[\\delta = \\dfrac{PL^3}{48EI} = \\dfrac{12 \\times 64}{48 \\times 8000} = 0.002\\ \\text{m}\\]<p>so \\(U = 12 \\times 0.002/2 = 0.012\\) kN·m = 12 J. The load-squared form gives the same: \\(144 \\times 64/768000 = 0.012\\) kN·m.</p><p>Bar: stressed to 200 MPa with E = 200000 MPa and volume 100000 mm³.</p>\\[u = \\dfrac{200^2}{2 \\times 200000} = 0.10\\ \\text{N/mm}^2\\]<p>so \\(U = 0.10 \\times 100000 = 10000\\) N·mm = 10 J.</p>"
+            },
             "points": [
               {
-                "html": "The key result is 12 J.",
+                "html": "A 4 m simple span with EI = 8000 kN·m² under a gradually applied 12 kN central load deflects 0.002 m and stores 12 J, from \\(U = P\\delta/2\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00032",
@@ -2233,7 +2278,7 @@
                 ]
               },
               {
-                "html": "The key result is 10 J.",
+                "html": "A bar elastic up to 200 MPa with E = 200 GPa stores 0.10 N·mm per mm³; over 100000 mm³ its proof resilience is 10 J.",
                 "sources": [
                   {
                     "id": "CAP4-04-00061",
@@ -2256,10 +2301,21 @@
           {
             "id": "resilience-definitions",
             "title": "Proof resilience, modulus of resilience and toughness",
-            "html": "<p>Resilience is elastic strain energy that is recovered on unloading. Three related terms must be kept apart:</p><ul><li>Proof resilience: the maximum strain energy a body can store without permanent deformation, a total energy in joules. A spring that can store at most 18 J and still return to its original shape has a proof resilience of 18 J.</li><li>Modulus of resilience: proof resilience per unit volume, σ<sub>e</sub><sup>2</sup>/(2E) for uniform stress up to the elastic limit σ<sub>e</sub>.</li><li>Toughness: energy absorbed up to fracture, including plastic work, so it extends far beyond the elastic range.</li></ul><p>Proof resilience is an energy, not a load. A bar of 1.00 × 10<sup>6</sup> mm<sup>3</sup> that stays elastic up to 250 MPa, with E = 200000 MPa, has an energy density of 250<sup>2</sup>/(2 × 200000) = 0.15625 N/mm<sup>2</sup> and therefore a proof resilience of 156250 N·mm = 156.25 J. Neither number is a force, and the ultimate tensile strength is a stress, not an energy.</p>",
+            "html": "<p><em>Resilience</em> is elastic strain energy that is recovered on unloading. Three related terms must be kept apart:</p><ul><li><em>Proof resilience</em>: the maximum strain energy a body can store without permanent deformation. It is a total energy, in joules.</li><li><em>Modulus of resilience</em>: proof resilience per unit volume, for uniform stress up to the elastic limit.</li><li><em>Toughness</em>: the energy absorbed up to fracture, including plastic work, so it extends far beyond the elastic range.</li></ul><p>Proof resilience is an energy, not a load, and the ultimate tensile strength is a stress, not an energy.</p>",
+            "formulas": [
+              {
+                "label": "Proof resilience, uniform stress",
+                "tex": "U_{\\text{proof}} = \\dfrac{\\sigma_e^2}{2E}\\,V",
+                "where": "<p>\\(\\sigma_e\\) is the elastic-limit stress and \\(V\\) the stressed volume; \\(\\sigma_e^2/(2E)\\) alone is the modulus of resilience.</p>"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a bar elastic to 250 MPa",
+              "html": "<p>Volume 1.00 × 10⁶ mm³, E = 200000 MPa:</p>\\[\\begin{aligned}\\dfrac{\\sigma_e^2}{2E} &amp;= \\dfrac{250^2}{2 \\times 200000} \\\\ &amp;= 0.15625\\ \\text{N/mm}^2\\end{aligned}\\]<p>Multiplying by the volume gives 156250 N·mm, that is 156.25 J. Neither number is a force.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Proof resilience.",
+                "html": "The maximum energy a spring can store and still recover fully, 18 J in the example, is its proof resilience: a total energy of the whole spring.",
                 "sources": [
                   {
                     "id": "CAP4-04-00060",
@@ -2268,7 +2324,7 @@
                 ]
               },
               {
-                "html": "The key result is 156.25 J.",
+                "html": "A 1.00 × 10⁶ mm³ bar elastic up to 250 MPa with E = 200000 MPa has a proof resilience of 156.25 J; proof resilience is an energy, not a load.",
                 "sources": [
                   {
                     "id": "CAP4-05-00127",
@@ -2290,11 +2346,25 @@
           },
           {
             "id": "sudden-loading-energy",
-            "title": "Suddenly applied loads: double displacement, four times the energy",
-            "html": "<p>A load applied suddenly and then maintained, with zero drop height, does work Pδ from the first instant, while the spring stores only kδ<sup>2</sup>/2. At the first peak of an undamped linear system, energy balance Pδ<sub>max</sub> = kδ<sub>max</sub><sup>2</sup>/2 gives δ<sub>max</sub> = 2P/k, twice the static displacement. Because stored energy grows with the square of displacement, the peak energy is four times the gradual-load value, and the peak stress is twice the static stress.</p><p>Example: stiffness 100 kN/m and a 2 kN force. Applied gradually, δ = 0.02 m and U = 100 × 0.02<sup>2</sup>/2 = 0.02 kN·m = 20 J. Applied suddenly, δ<sub>max</sub> = 0.04 m and U<sub>max</sub> = 100 × 0.04<sup>2</sup>/2 = 0.08 kN·m = 80 J.</p><p>The factor four describes the transient peak of this idealized model. Damping lets the motion settle at the static displacement, a finite rise time reduces the peak, and yielding breaks the linear assumption; a load dropped from a height adds kinetic energy and raises the factor further.</p>",
+            "title": "Suddenly applied loads: twice the displacement, four times the energy",
+            "html": "<p>A load applied suddenly and then maintained, with no drop height, does work \\(P\\delta\\) from the first instant, while the spring stores only \\(k\\delta^2/2\\). Equating the two at the first peak of an undamped linear system gives twice the static displacement.</p><p>Because stored energy grows with the square of displacement, the peak energy is four times the gradual-load value, and the peak stress is twice the static stress.</p><p>The factor four is the transient peak of this idealized model. Damping lets the motion settle at the static displacement, a finite rise time lowers the peak, yielding breaks the linear assumption, and a load dropped from a height adds kinetic energy.</p>",
+            "formulas": [
+              {
+                "label": "Peak displacement, zero-drop step load",
+                "tex": "\\delta_{\\max} = \\dfrac{2P}{k}"
+              },
+              {
+                "label": "Peak energy ratio, sudden to gradual",
+                "tex": "\\dfrac{U_{\\text{sudden}}}{U_{\\text{gradual}}} = 4"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 2 kN force on a 100 kN/m spring",
+              "html": "<ol><li>Gradual: \\(\\delta = 2/100 = 0.02\\) m and \\(U = 100 \\times 0.02^2/2 = 0.02\\) kN·m = 20 J.</li><li>Sudden: \\(\\delta_{\\max} = 0.04\\) m and \\(U_{\\max} = 100 \\times 0.04^2/2 = 0.08\\) kN·m = 80 J.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is 80 J.",
+                "html": "A 2 kN force applied suddenly to an undamped 100 kN/m spring peaks at 0.04 m and stores 80 J, four times the 20 J of gradual loading.",
                 "sources": [
                   {
                     "id": "CAP4-04-00117",
@@ -2303,7 +2373,7 @@
                 ]
               },
               {
-                "html": "The key result is 4. This is the reviewed topic result.",
+                "html": "For the same force, peak stored energy under a sudden zero-drop step is 4 times that under gradual loading; this is a transient peak of the undamped model.",
                 "sources": [
                   {
                     "id": "CAP4-05-00097",
@@ -2326,10 +2396,24 @@
           {
             "id": "truss-determinacy-counts",
             "title": "Counting truss members, restraints and free displacements",
-            "html": "<p>Truss counts are necessary checks, never proofs of stability on their own.</p><ul><li>Compound truss: two separate, internally determinate plane subtrusses need three independent connecting constraints to fix their relative motion, covering two relative translations and one relative rotation. Subtrusses of 7 and 9 members joined by three bars without new joints give m = m<sub>1</sub> + m<sub>2</sub> + 3 = 19.</li><li>Geometry matters: three connecting bars that are all parallel, or otherwise dependent, do not restrain the three relative motions independently. Each bar resists movement only along its own line, so a small transverse relative movement can remain; the count is satisfied, yet the assembly is a mechanism.</li><li>Kinematic count: each joint of an ideal pin-jointed plane truss has two translations and no rotational coordinate in the axial-only model, so the number of free displacement coordinates is 2j − r. Seven joints with three independent restraints leave 14 − 3 = 11 unknown displacements. The shortcut 2j − 3 assumes exactly three support restraints; other support arrangements change it.</li></ul>",
+            "html": "<p>Truss counts are necessary checks, never proofs of stability on their own.</p><ul><li><em>Compound truss.</em> Two separate, internally determinate plane subtrusses need three independent connecting constraints to fix their relative motion: two relative translations and one relative rotation.</li><li><em>Geometry matters.</em> Three connecting bars that are all parallel do not restrain those three motions independently. Each bar resists movement only along its own line, so a small transverse relative movement remains and the assembly is a mechanism despite the correct count.</li><li><em>Kinematic count.</em> Each joint of an ideal pin-jointed plane truss has two translations and no rotation, so the free displacement coordinates number \\(2j - r\\). The shortcut \\(2j - 3\\) assumes exactly three support restraints.</li></ul>",
+            "formulas": [
+              {
+                "label": "Compound truss from two rigid subtrusses",
+                "tex": "m = m_1 + m_2 + 3"
+              },
+              {
+                "label": "Free displacements of a plane truss",
+                "tex": "n_k = 2j - r"
+              }
+            ],
+            "example": {
+              "title": "Worked counts",
+              "html": "<ol><li>Subtrusses of 7 and 9 members joined by three independent bars: \\(m = 7 + 9 + 3 = 19\\).</li><li>Seven joints with three independent restraints: \\(2 \\times 7 - 3 = 11\\) free displacement coordinates.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is 19. This is the reviewed topic result.",
+                "html": "Two internally determinate subtrusses of 7 and 9 members joined by three independent bars form a compound truss of 19 members.",
                 "sources": [
                   {
                     "id": "CAP4-04-00068",
@@ -2338,7 +2422,7 @@
                 ]
               },
               {
-                "html": "The key result is The connectors can leave a relative transverse mechanism.",
+                "html": "Three mutually parallel connecting bars satisfy the member count but can leave a relative transverse mechanism, so the count alone does not prove stability.",
                 "sources": [
                   {
                     "id": "CAP4-04-00069",
@@ -2347,7 +2431,7 @@
                 ]
               },
               {
-                "html": "The key result is 11. This is the reviewed topic result.",
+                "html": "A plane truss with seven joints and three independent restraints has \\(2j - r = 11\\) free nodal displacement coordinates.",
                 "sources": [
                   {
                     "id": "CAP4-04-00103",
@@ -2372,12 +2456,22 @@
             ]
           },
           {
-            "id": "indeterminacy-stability-temperature",
-            "title": "Degree of indeterminacy, stability checks and stress-free thermal movement",
-            "html": "<p>For a planar structure, the degree of static indeterminacy is the number of unknown forces in excess of the independent equilibrium equations. A beam fixed at one end and propped at the other has four reaction components, two forces and a couple at the fixed end plus one vertical force at the prop, against three equations, so it has one redundant. A compatibility condition, such as zero vertical deflection at the prop, supplies the missing equation.</p><p>For a connected rigid-jointed plane frame without internal releases, the counting difference is D<sub>c</sub> = 3m + r − 3j. A zero result is necessary for an ordinary stable determinate frame but not sufficient: dependent constraints can leave a mechanism in one part while another part is self-stressed. Stability needs a geometric rank check, not the equality alone.</p><p>Determinate structures accommodate small imposed movements freely. An ideal three-hinged arch under a uniform temperature change adjusts its geometry through small hinge rotations, so in first-order analysis the temperature change adds no stress, while the load stresses remain. Restrained hinges, temperature gradients or significant geometry change need separate treatment, and a two-hinged arch, being indeterminate, does develop thermal thrust.</p>",
+            "id": "indeterminacy-and-stability",
+            "title": "Degree of indeterminacy and the limits of counting",
+            "html": "<p>For a planar structure, the degree of static indeterminacy is the number of unknown forces in excess of the independent equilibrium equations. A beam fixed at one end and propped at the other has four reaction components: two forces and a couple at the fixed end, and one vertical force at the prop. Against three equations, one redundant remains, and a compatibility condition such as zero deflection at the prop supplies the missing equation.</p><p>For a connected rigid-jointed plane frame without internal releases, a counting difference of zero is necessary for an ordinary stable determinate frame but not sufficient. Dependent constraints can leave a mechanism in one part while another part is self-stressed, so stability needs a geometric rank check.</p>",
+            "formulas": [
+              {
+                "label": "Planar beam redundants",
+                "tex": "D_s = r - 3"
+              },
+              {
+                "label": "Rigid-jointed plane frame count",
+                "tex": "D_c = 3m + r - 3j"
+              }
+            ],
             "points": [
               {
-                "html": "The key result is One. This is the reviewed topic result.",
+                "html": "A beam fixed at A and propped at B has four reaction components against three equilibrium equations, so one redundant remains, found from zero deflection at the prop.",
                 "sources": [
                   {
                     "id": "CAP4-04-00089",
@@ -2386,20 +2480,11 @@
                 ]
               },
               {
-                "html": "The key result is Its determinacy count is zero, but stability still needs verification.",
+                "html": "If \\(3m + r = 3j\\) for a rigid-jointed frame, its determinacy count is zero, but stability still needs verification by a geometric rank check.",
                 "sources": [
                   {
                     "id": "CAP4-04-00114",
                     "label": "p. 19; topic 4 point 113"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is No additional thermal stress.",
-                "sources": [
-                  {
-                    "id": "CAP4-05-00135",
-                    "label": "p. 23; topic 5 point 136"
                   }
                 ]
               }
@@ -2412,12 +2497,68 @@
               {
                 "id": "CAP4-04-00114",
                 "label": "p. 19; topic 4 point 113"
-              },
+              }
+            ]
+          },
+          {
+            "id": "three-hinged-arch-temperature",
+            "title": "Uniform temperature change in a three-hinged arch",
+            "html": "<p>Determinate structures accommodate small imposed movements freely. An ideal three-hinged arch under a uniform temperature change adjusts its geometry through small hinge rotations, so in first-order analysis the temperature change adds no stress. The stresses caused by the loads remain.</p><p>Restrained hinges, temperature gradients or significant geometry change need separate treatment. A two-hinged arch, being indeterminate, does develop a thermal thrust.</p>",
+            "points": [
+              {
+                "html": "A uniform temperature rise produces no additional thermal stress in an ideal three-hinged arch whose hinges rotate freely; the load stresses remain.",
+                "sources": [
+                  {
+                    "id": "CAP4-05-00135",
+                    "label": "p. 23; topic 5 point 136"
+                  }
+                ]
+              }
+            ],
+            "sources": [
               {
                 "id": "CAP4-05-00135",
                 "label": "p. 23; topic 5 point 136"
               }
             ]
+          }
+        ],
+        "formulaSheet": [
+          {
+            "label": "Virtual displacements",
+            "tex": "\\delta W_{\\text{ext}} = \\delta W_{\\text{int}}"
+          },
+          {
+            "label": "Castigliano, linear elastic",
+            "tex": "\\delta = \\dfrac{\\partial U}{\\partial P}"
+          },
+          {
+            "label": "Gradual load",
+            "tex": "U = \\tfrac{1}{2}P\\delta"
+          },
+          {
+            "label": "Simple span, central load",
+            "tex": "U = \\dfrac{P^2L^3}{96EI}"
+          },
+          {
+            "label": "Energy per unit volume",
+            "tex": "u = \\dfrac{\\sigma^2}{2E}"
+          },
+          {
+            "label": "Sudden zero-drop load",
+            "tex": "\\delta_{\\max} = \\dfrac{2P}{k}"
+          },
+          {
+            "label": "Compound truss",
+            "tex": "m = m_1 + m_2 + 3"
+          },
+          {
+            "label": "Plane-truss free displacements",
+            "tex": "n_k = 2j - r"
+          },
+          {
+            "label": "Rigid-jointed frame count",
+            "tex": "D_c = 3m + r - 3j"
           }
         ],
         "cautions": [
@@ -2437,7 +2578,7 @@
             "id": "caution-castigliano-numbering",
             "status": "review",
             "prompt": "Castigliano's first theorem is applicable when the system behaves elastically",
-            "html": "<p>Texts number Castigliano's theorems differently. The result used here, displacement = ∂U/∂P, requires a conservative linear-elastic system; for nonlinear elasticity the load derivative must be taken of complementary energy.</p>",
+            "html": "<p>Texts number Castigliano's theorems differently. The result used here, \\(\\delta = \\partial U/\\partial P\\), requires a conservative linear-elastic system; for nonlinear elasticity the load derivative must be taken of the complementary energy.</p>",
             "sources": [
               {
                 "id": "CAP4-04-00102",
@@ -2517,15 +2658,15 @@
         "code": "ACiE0405",
         "questionCount": 20,
         "format": 2,
-        "summary": "<p>Determinate structures-2 covers Influence lines for simple structures under point loads and UDL; analysis of two-hinged arches, as listed in the supplied syllabus. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers influence lines and arches. It explains what an influence line records, builds the lines for a cantilever, applies moving loads to a simple span, and analyses three-hinged arches by statics and two-hinged semicircular arches by compatibility. The questions test ordinates and load placement, arch thrusts and reactions, the line of thrust and the envelope of a rolling load.</p>",
         "blocks": [
           {
             "id": "influence-line-concept",
             "title": "What an influence line shows, and how it differs from a moment diagram",
-            "html": "<p>An influence line fixes two things, the response type (a reaction, a shear or a bending moment) and the section where it is measured, then records how that response changes as a single unit load moves across the structure. Its horizontal coordinate is the <em>position of the load</em>.</p><p>A bending-moment diagram does the opposite: it fixes one loading arrangement and plots the moment at every section, so its horizontal coordinate is the <em>position of the section</em>. The two graphs can look alike, which is why confusing them is a classic error.</p><p>Influence lines serve moving loads. Multiplying an ordinate by a point load gives that load's contribution, and multiplying the area under a segment by a uniform intensity gives a distributed load's contribution; the most unfavourable placement follows from where the ordinates are largest. An envelope for a train of several axles needs this placement and superposition, not a single reading. Deflected shapes and material stress–strain curves are unrelated graphs.</p>",
+            "html": "<p>An <em>influence line</em> fixes two things, the response type (a reaction, a shear or a bending moment) and the section where it is measured. It then records how that response changes as a single unit load moves across the structure, so its horizontal coordinate is the position of the load.</p><p>A bending-moment diagram does the opposite: it fixes one loading arrangement and plots the moment at every section, so its horizontal coordinate is the position of the section. The two graphs can look alike, which is why confusing them is a classic error.</p><p>Influence lines serve moving loads. An ordinate times a point load gives that load's contribution; the area under a segment times a uniform intensity gives a distributed load's contribution. An envelope for a train of axles needs placement and superposition, not a single reading.</p>",
             "points": [
               {
-                "html": "The key result is The influence line for bending moment at C.",
+                "html": "Recording the bending moment at a fixed section C while a unit axle is placed along the bridge gives the influence line for bending moment at C.",
                 "sources": [
                   {
                     "id": "CAP4-04-00073",
@@ -2534,7 +2675,7 @@
                 ]
               },
               {
-                "html": "The key result is An influence line for moment at that section.",
+                "html": "Plotting moment at one fixed section as a unit point load crosses the span gives an influence line for moment at that section, not a bending-moment diagram.",
                 "sources": [
                   {
                     "id": "CAP4-05-00137",
@@ -2556,20 +2697,11 @@
           },
           {
             "id": "cantilever-influence-lines",
-            "title": "Influence lines on a cantilever: support reaction, shear and moment",
-            "html": "<p>A cantilever makes influence lines easy to build, because every response comes from the free-side free body.</p><table><thead><tr><th scope='col'>Response</th><th scope='col'>Unit load between root and section C</th><th scope='col'>Unit load between C and the tip</th></tr></thead><tbody><tr><td>Vertical support reaction</td><td>+1</td><td>+1</td></tr><tr><td>Shear at C</td><td>0</td><td>+1, a rectangle</td></tr><tr><td>Moment at C</td><td>0</td><td>Linear, zero at C and largest at the tip</td></tr></tbody></table><p>The vertical reaction always equals the unit load by vertical equilibrium, so its influence line is a unit rectangle over the whole span; the <em>support moment</em>, by contrast, varies with the load's lever arm and is linear. For a section C, a load on the root side lies outside the free-side free body and contributes nothing.</p><p>A load on the tip side contributes unit shear, taking downward load on the free-side segment as positive, and a moment equal to its distance from C, so the moment ordinates grow linearly from zero at C to their largest value at the free end. With downward load and sagging-positive moment these moment ordinates are negative, since the cantilever hogs.</p>",
+            "title": "Influence lines on a cantilever: reaction, shear and moment",
+            "html": "<p>A cantilever makes influence lines easy to build, because every response at a section C comes from the free-side free body.</p><table><thead><tr><th scope='col'>Response</th><th scope='col'>Unit load between root and C</th><th scope='col'>Unit load between C and the tip</th></tr></thead><tbody><tr><th scope='row'>Vertical support reaction</th><td>+1</td><td>+1</td></tr><tr><th scope='row'>Shear at C</th><td>0</td><td>+1, a rectangle</td></tr><tr><th scope='row'>Moment at C</th><td>0</td><td>Linear, zero at C and largest at the tip</td></tr></tbody></table><p>The vertical reaction always equals the unit load by vertical equilibrium, whereas the support moment varies with the load's lever arm and is linear. A load on the root side of C lies outside the free body and contributes nothing at C. With downward load and sagging-positive moment, the moment ordinates are negative because the cantilever hogs.</p>",
             "points": [
               {
-                "html": "The key result is Zero on the fixed-side interval; linear on the free-side interval.",
-                "sources": [
-                  {
-                    "id": "CAP4-04-00036",
-                    "label": "p. 16; topic 4 point 35"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Constant ordinate +1 over the span.",
+                "html": "The influence line for a cantilever's upward vertical support reaction is a constant ordinate of +1 over the whole span, a unit rectangle.",
                 "sources": [
                   {
                     "id": "CAP4-04-00062",
@@ -2578,20 +2710,25 @@
                 ]
               },
               {
-                "html": "The key result is 0 and +1.",
+                "html": "For shear at section C of a cantilever, the ordinate is 0 for a unit load on the root side of C and +1 for a load on the tip side.",
                 "sources": [
                   {
                     "id": "CAP4-04-00081",
                     "label": "p. 18; topic 4 point 80"
                   }
                 ]
+              },
+              {
+                "html": "The moment influence line at a cantilever section is zero on the fixed-side interval and linear on the free-side interval, growing towards the tip.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00036",
+                    "label": "p. 16; topic 4 point 35"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-04-00036",
-                "label": "p. 16; topic 4 point 35"
-              },
               {
                 "id": "CAP4-04-00062",
                 "label": "p. 17; topic 4 point 60"
@@ -2599,16 +2736,30 @@
               {
                 "id": "CAP4-04-00081",
                 "label": "p. 18; topic 4 point 80"
+              },
+              {
+                "id": "CAP4-04-00036",
+                "label": "p. 16; topic 4 point 35"
               }
             ]
           },
           {
             "id": "moving-loads-simple-span",
             "title": "Moving loads on a simple span: long uniform loads and wheel trains",
-            "html": "<p>For a simple span, the influence line for moment at any section is a triangle that is positive over the whole span, with the tallest peak, L/4, belonging to the midspan section. Two placement rules follow.</p><ul><li>Uniform load longer than the span: covering the entire span captures the whole positive influence area, so full coverage produces the absolute maximum bending moment, which occurs at midspan and equals wL<sup>2</sup>/8. Covering only part of the span, or stopping an edge of the load at midspan, leaves positive area unused.</li><li>Train of concentrated wheel loads: between wheels there is no distributed load, so shear is constant and moment varies linearly. A positive maximum can therefore occur only where the slope changes, under a wheel, or along a zero-shear plateau whose ends are wheel sections. Evaluating the moment under each wheel for each trial position is enough to find the peak.</li></ul><p>The wheel rule assumes downward point loads only. An added distributed load or applied couple removes the piecewise-linear shape, and the rule must then be re-examined.</p>",
+            "html": "<p>For a simple span, the influence line for moment at any section is a triangle that is positive over the whole span; the tallest one, with peak \\(L/4\\), belongs to the midspan section. Two placement rules follow.</p><ul><li><em>Uniform load longer than the span.</em> Covering the entire span captures the whole positive influence area, so full coverage gives the absolute maximum moment, at midspan. Partial coverage leaves positive area unused.</li><li><em>Train of wheel loads.</em> Between wheels there is no distributed load, so shear is constant and moment varies linearly. A positive maximum can occur only where the slope changes, under a wheel, or along a zero-shear plateau whose ends are wheel sections.</li></ul><p>The wheel rule assumes downward point loads only; an added distributed load or couple removes the piecewise-linear shape.</p>",
+            "formulas": [
+              {
+                "label": "Midspan moment influence ordinate",
+                "tex": "\\eta_{\\max} = \\dfrac{L}{4}"
+              },
+              {
+                "label": "Full-span UDL, maximum moment",
+                "tex": "M_{\\max} = \\dfrac{wL^2}{8}"
+              }
+            ],
             "points": [
               {
-                "html": "The key result is The load covers the entire span.",
+                "html": "A moving UDL longer than a simply supported span gives the absolute maximum bending moment when the load covers the entire span.",
                 "sources": [
                   {
                     "id": "CAP4-04-00035",
@@ -2617,7 +2768,7 @@
                 ]
               },
               {
-                "html": "The key result is Moment is piecewise linear between wheels.",
+                "html": "Under wheel loads alone, moment is piecewise linear between wheels, so the largest sagging moment can always be found at a wheel section.",
                 "sources": [
                   {
                     "id": "CAP4-04-00063",
@@ -2639,21 +2790,43 @@
           },
           {
             "id": "three-hinged-arch-statics",
-            "title": "Three-hinged arches: hinge placement and crown-hinge equilibrium",
-            "html": "<p>A three-hinged arch has a hinge at each springing and one internal hinge. The pinned springings supply four reaction components, and the three equilibrium equations plus the zero-moment condition at the internal hinge make the arch statically determinate. The internal hinge is usually at the crown but need not be, provided the three hinges are not collinear and the supports restrain the arch adequately; collinear hinges form a degenerate mechanism.</p><ul><li>Vertical reactions with level springings: the horizontal reactions have no moment about either springing, so the vertical reactions match those of a simple beam. With springings 18 m apart and 90 kN applied 6 m from A, V<sub>B</sub> = 90 × 6/18 = 30 kN and V<sub>A</sub> = 60 kN. In general V<sub>B</sub> = Wa/(2l) for span 2l with a measured from A.</li><li>Thrust from the crown hinge: H = M<sub>0,crown</sub>/h. A full-span UDL of 4 kN/m on a 20 m span with 5 m rise gives M<sub>0</sub> = 4 × 400/8 = 200 kN·m and H = 200/5 = 40 kN; each support pushes inward on the arch, and the arch pushes outward on its supports.</li><li>Springings at different levels: for a crown load W, with the crown h<sub>1</sub> above the left and h<sub>2</sub> above the right springing, H = WL/(2(h<sub>1</sub> + h<sub>2</sub>)).</li></ul>",
-            "moreHtml": "<p>Derivation of the unequal-level result: moments of each half about the crown hinge give V<sub>A</sub>(L/2) = Hh<sub>1</sub> and V<sub>B</sub>(L/2) = Hh<sub>2</sub>, the crown load itself having no lever arm. Adding and using V<sub>A</sub> + V<sub>B</sub> = W gives 2H(h<sub>1</sub> + h<sub>2</sub>)/L = W. A squared height sum in the denominator would give force per length, not force.</p>",
+            "title": "Three-hinged arches: hinge placement, reactions and thrust",
+            "html": "<p>A <em>three-hinged arch</em> has a hinge at each springing and one internal hinge. The pinned springings supply four reaction components, and the three equilibrium equations plus zero moment at the internal hinge make the arch statically determinate. The internal hinge is usually at the crown but need not be, provided the three hinges are not collinear and the supports restrain the arch adequately.</p><p>With level springings, the horizontal reactions have no moment about either springing, so the vertical reactions equal those of a simple beam of the same span. The thrust then follows from zero moment at the crown hinge: the simple-beam crown moment divided by the rise. Each support pushes inward on the arch, and the arch pushes outward on its supports.</p>",
+            "formulas": [
+              {
+                "label": "Thrust from the crown hinge, level springings",
+                "tex": "H = \\dfrac{M_{0,\\text{crown}}}{h}"
+              },
+              {
+                "label": "Full-span UDL",
+                "tex": "H = \\dfrac{wL^2}{8h}"
+              },
+              {
+                "label": "Crown load, springings at different levels",
+                "tex": "H = \\dfrac{WL}{2(h_1 + h_2)}"
+              },
+              {
+                "label": "Vertical reaction, load at a from A on span 2l",
+                "tex": "V_B = \\dfrac{Wa}{2l}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples: reactions and thrust",
+              "html": "<ol><li>Springings 18 m apart, 90 kN applied 6 m from A: \\(V_B = 90 \\times 6/18 = 30\\) kN and \\(V_A = 90 - 30 = 60\\) kN.</li><li>Span 20 m, rise 5 m, full-span UDL 4 kN/m: \\(M_0 = 4 \\times 400/8 = 200\\) kN·m at the crown, so \\(H = 200/5 = 40\\) kN.</li></ol>"
+            },
+            "moreHtml": "<p>Derivation of the unequal-level result: moments of each half about the crown hinge give \\(V_A(L/2) = Hh_1\\) and \\(V_B(L/2) = Hh_2\\), the crown load having no lever arm. Adding the two and using \\(V_A + V_B = W\\) gives \\(2H(h_1 + h_2)/L = W\\). A squared height sum in the denominator would give force per length, not force.</p>",
             "points": [
               {
-                "html": "The key result is WL/[2(h1+h2)]. This is the reviewed topic result.",
+                "html": "The third hinge need not be at the crown: the arch stays a stable determinate three-hinged system if the three hinge locations are noncollinear and restraint is adequate.",
                 "sources": [
                   {
-                    "id": "CAP4-04-00034",
-                    "label": "p. 16; topic 4 point 33"
+                    "id": "CAP4-04-00115",
+                    "label": "p. 19; topic 4 point 115"
                   }
                 ]
               },
               {
-                "html": "The key result is 60 kN and 30 kN.",
+                "html": "With level springings 18 m apart and 90 kN applied 6 m from A, the vertical reactions are 60 kN at A and 30 kN at B, as for a simple beam.",
                 "sources": [
                   {
                     "id": "CAP4-04-00088",
@@ -2662,7 +2835,7 @@
                 ]
               },
               {
-                "html": "The key result is 40 kN inward.",
+                "html": "A 20 m three-hinged arch with a 5 m rise under a full-span 4 kN/m UDL has a horizontal reaction of 40 kN, acting inward on the arch at each support.",
                 "sources": [
                   {
                     "id": "CAP4-04-00094",
@@ -2671,19 +2844,19 @@
                 ]
               },
               {
-                "html": "The key result is The three hinge locations are noncollinear and restraint is adequate.",
+                "html": "For a crown load W with the crown \\(h_1\\) and \\(h_2\\) above the springings, crown-hinge moments give \\(H = WL/[2(h_1 + h_2)]\\).",
                 "sources": [
                   {
-                    "id": "CAP4-04-00115",
-                    "label": "p. 19; topic 4 point 115"
+                    "id": "CAP4-04-00034",
+                    "label": "p. 16; topic 4 point 33"
                   }
                 ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-04-00034",
-                "label": "p. 16; topic 4 point 33"
+                "id": "CAP4-04-00115",
+                "label": "p. 19; topic 4 point 115"
               },
               {
                 "id": "CAP4-04-00088",
@@ -2694,54 +2867,81 @@
                 "label": "p. 18; topic 4 point 94"
               },
               {
-                "id": "CAP4-04-00115",
-                "label": "p. 19; topic 4 point 115"
+                "id": "CAP4-04-00034",
+                "label": "p. 16; topic 4 point 33"
               }
             ]
           },
           {
             "id": "three-hinged-ild-envelope",
-            "title": "Three-hinged arch influence lines and the rolling-load moment envelope",
-            "html": "<p>For a three-hinged arch with level springings and a midspan crown hinge, H = M<sub>0,crown</sub>/h for every load position. The influence line for thrust is therefore the crown simple-beam moment influence line divided by the rise: a triangle with peak L/(4h) at the crown. For a 24 m span and 6 m rise the peak ordinate is 24/(4 × 6) = 1.00, a dimensionless ratio of thrust to load, not a length or a moment.</p><p>A rolling point load on a symmetric parabolic three-hinged arch produces a bending-moment envelope, the largest moment each section can ever experience. With the load P at section s on the left half, crown equilibrium gives H = Ps/(2h), and with y = 4hs(L − s)/L<sup>2</sup> the moment there is M = Ps(L − s)(L − 2s)/L<sup>2</sup>.</p><p>Writing t = s/L, the maximum requires 1 − 6t + 6t<sup>2</sup> = 0, so the envelope peaks at L/(2√3) ≈ 0.289L on either side of the crown. This is an envelope property of the parabolic arch under a rolling load, not the location of the maximum for an arbitrary fixed load.</p>",
-            "moreHtml": "<p>The peak section lies at t = 1/2 − 1/(2√3) ≈ 0.211 of the span from the nearer springing, where the envelope moment is PL·t(1 − t)(1 − 2t) = PL/(6√3) ≈ 0.096PL.</p>",
-            "points": [
+            "title": "Three-hinged arch influence lines and the rolling-load envelope",
+            "html": "<p>For a three-hinged arch with level springings and a midspan crown hinge, the thrust equals the crown simple-beam moment divided by the rise for every load position. Its influence line is therefore the crown moment influence line scaled by \\(1/h\\): a triangle whose peak sits at the crown. The ordinate is a dimensionless ratio of thrust to load, not a length or a moment.</p><p>A rolling point load on a symmetric parabolic three-hinged arch produces a bending-moment <em>envelope</em>, the largest moment each section can ever carry. Its peaks lie at the same distance either side of the crown. This is an envelope property under a rolling load, not the location of the maximum for an arbitrary fixed load.</p>",
+            "formulas": [
               {
-                "html": "The key result is At a distance L/(2sqrt(3)) on either side of the crown.",
-                "sources": [
-                  {
-                    "id": "CAP4-04-00037",
-                    "label": "p. 16; topic 4 point 36"
-                  }
-                ]
+                "label": "Peak of the thrust influence line",
+                "tex": "\\eta_{H,\\max} = \\dfrac{L}{4h}"
               },
               {
-                "html": "The key result is 1.00, at the crown.",
+                "label": "Envelope peak, measured from the crown",
+                "tex": "x = \\dfrac{L}{2\\sqrt{3}} \\approx 0.289L"
+              }
+            ],
+            "example": {
+              "title": "Worked results",
+              "html": "<p>Span 24 m, rise 6 m: the thrust ordinate peaks at \\(24/(4 \\times 6) = 1.00\\), at the crown.</p><p>Envelope: with P at section s on the left half, \\(H = Ps/(2h)\\) and the moment there is</p>\\[M = \\dfrac{Ps(L - s)(L - 2s)}{L^2}\\]<p>With \\(t = s/L\\), the maximum needs \\(1 - 6t + 6t^2 = 0\\), so \\(t \\approx 0.211\\), which is \\(L/(2\\sqrt{3})\\) from the crown.</p>"
+            },
+            "points": [
+              {
+                "html": "For a 24 m three-hinged arch with a 6 m crown rise, the thrust influence line peaks at 1.00, at the crown, from \\(L/(4h)\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00052",
                     "label": "p. 17; topic 4 point 50"
                   }
                 ]
+              },
+              {
+                "html": "Under a rolling point load on a symmetric three-hinged parabolic arch, the positive moment envelope peaks at a distance \\(L/(2\\sqrt{3})\\) on either side of the crown.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00037",
+                    "label": "p. 16; topic 4 point 36"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-04-00037",
-                "label": "p. 16; topic 4 point 36"
-              },
-              {
                 "id": "CAP4-04-00052",
                 "label": "p. 17; topic 4 point 50"
+              },
+              {
+                "id": "CAP4-04-00037",
+                "label": "p. 16; topic 4 point 36"
               }
             ]
           },
           {
             "id": "thrust-line-and-arch-actions",
-            "title": "Line of thrust, normal thrust and radial shear in arches",
-            "html": "<p>At any arch section M = M<sub>0</sub> − Hy = H(y<sub>t</sub> − y), where y<sub>t</sub> = M<sub>0</sub>/H is the ordinate of the line of thrust. Bending vanishes only where the thrust line passes through the rib axis. A thrust line parallel to the axis but offset still leaves a lever arm, and the straight chord joining the hinges is generally not the curved rib axis.</p><p>Resolve the section resultant (H, V) along the local tangent (cos θ, sin θ) and normal to it:</p><ul><li>Normal thrust N = H cos θ + V sin θ, the tangential projection;</li><li>Radial shear Q = V cos θ − H sin θ, the other projection, with signs following the chosen positive directions.</li></ul><p>For a parabolic three-hinged arch with level springings, a midspan crown hinge and a full-span load per horizontal metre, H = wL<sup>2</sup>/(8h) and the vertical shear force equals H tan θ at every section. Hence Q = 0 everywhere, springings included, and M = 0 as well: the parabola is the funicular shape for this load and carries it in pure compression.</p><p>The global vertical component V is not zero, so mistaking V for the local radial shear produces a false maximum at the springings. Other load patterns do cause radial shear, which must be evaluated along the actual arch.</p>",
+            "title": "Line of thrust, normal thrust and radial shear",
+            "html": "<p>At any arch section the moment equals the simple-beam moment reduced by the thrust times the rib height. Writing \\(y_t = M_0/H\\) for the ordinate of the <em>line of thrust</em>, the moment is \\(H(y_t - y)\\). Bending vanishes only where the thrust line passes through the rib axis; a parallel but offset line still leaves a lever arm, and the chord joining the hinges is generally not the rib axis.</p><p>Resolve the section resultant \\((H, V)\\) along the local tangent and normal to it. The tangential projection is the normal thrust and the other projection is the radial shear, with signs following the chosen positive directions.</p><p>For a parabolic three-hinged arch under a full-span load per horizontal metre, the vertical shear force equals \\(H\\tan\\theta\\) at every section. Radial shear is then zero everywhere, springings included, and so is the moment: the parabola is funicular for this load.</p>",
+            "formulas": [
+              {
+                "label": "Arch moment",
+                "tex": "M = M_0 - Hy = H(y_t - y)"
+              },
+              {
+                "label": "Normal thrust",
+                "tex": "N = H\\cos\\theta + V\\sin\\theta"
+              },
+              {
+                "label": "Radial shear",
+                "tex": "Q = V\\cos\\theta - H\\sin\\theta"
+              }
+            ],
             "points": [
               {
-                "html": "The key result is The thrust-line ordinate M0/H equals y.",
+                "html": "Bending vanishes at an arch section when the thrust-line ordinate \\(M_0/H\\) equals the rib ordinate y.",
                 "sources": [
                   {
                     "id": "CAP4-04-00041",
@@ -2750,20 +2950,20 @@
                 ]
               },
               {
-                "html": "The key result is Zero throughout.",
-                "sources": [
-                  {
-                    "id": "CAP4-04-00096",
-                    "label": "p. 18; topic 4 point 96"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is H cos theta + V sin theta.",
+                "html": "Projecting the section resultant onto the tangent gives the tangential component \\(H\\cos\\theta + V\\sin\\theta\\), the normal thrust.",
                 "sources": [
                   {
                     "id": "CAP4-05-00109",
                     "label": "p. 22; topic 5 point 107"
+                  }
+                ]
+              },
+              {
+                "html": "Under a full-span horizontal UDL, radial shear in a three-hinged parabolic arch is zero throughout, springings included; the global vertical component is not.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00096",
+                    "label": "p. 18; topic 4 point 96"
                   }
                 ]
               }
@@ -2774,23 +2974,44 @@
                 "label": "pp. 16, 17; topic 4 point 39; topic 4 point 53"
               },
               {
-                "id": "CAP4-04-00096",
-                "label": "p. 18; topic 4 point 96"
-              },
-              {
                 "id": "CAP4-05-00109",
                 "label": "p. 22; topic 5 point 107"
+              },
+              {
+                "id": "CAP4-04-00096",
+                "label": "p. 18; topic 4 point 96"
               }
             ]
           },
           {
             "id": "two-hinged-semicircular-arches",
-            "title": "Two-hinged semicircular arches: one redundant, compatibility and reaction locus",
-            "html": "<p>A stable arch pinned at both springings with no internal hinge has four reaction components and three equilibrium equations, so it is indeterminate to degree one. With the horizontal thrust H as the redundant, the missing equation is compatibility: the springings do not move apart. Inventing a crown hinge would analyse a different structure.</p><p>For a semicircular rib of radius R with constant EI and immovable supports, considering bending deformation only:</p><ul><li>A crown point load P gives H = P/π. The radius cancels, so arches of radii 5 m, 7.5 m and 10 m under the same crown load have equal thrusts, 1 : 1 : 1. This independence does not survive nonuniform stiffness, axial shortening, temperature change or support movement.</li><li>A uniform load w per horizontal metre over the whole span gives H = 4wR/(3π); by symmetry and superposition, loading only the left half gives half of it, H = 2wR/(3π). For R = 6 m and w = 3 kN/m this is 36/(3π) ≈ 3.82 kN.</li><li>A point load P at distance a from the left springing gives V<sub>A</sub> = P(2R − a)/(2R) and H = Pa(2R − a)/(πR<sup>2</sup>). The two reaction lines meet directly above the load at height (a·V<sub>A</sub>)/H = πR/2, whatever the value of a, so the intersection moves along a horizontal straight line.</li></ul>",
-            "moreHtml": "<p>In general H = (∫M<sub>0</sub>y ds)/(∫y<sup>2</sup> ds) for constant EI and bending only. For the semicircle ∫y<sup>2</sup> ds = πR<sup>3</sup>/2, and a crown load gives ∫M<sub>0</sub>y ds = PR<sup>3</sup>/2, hence H = P/π. A load specified per metre of curved rib instead of per horizontal metre, or a model with finite axial flexibility, gives different results.</p>",
+            "title": "Two-hinged semicircular arches: compatibility, thrust and reaction locus",
+            "html": "<p>A stable arch pinned at both springings with no internal hinge has four reaction components and three equilibrium equations, so it is indeterminate to degree one. Taking the thrust as the redundant, the missing equation is compatibility: the springings do not move apart. Inventing a crown hinge would analyse a different structure.</p><p>For a semicircular rib of radius R with constant EI, immovable supports and bending deformation only, a crown point load gives a thrust independent of R. Arches of different radii under the same crown load therefore have equal thrusts. The independence does not survive nonuniform stiffness, axial shortening, temperature change or support movement.</p><p>Under a moving point load, the two reaction lines meet directly above the load at a constant height, so their intersection moves along a horizontal straight line.</p>",
+            "formulas": [
+              {
+                "label": "Thrust by compatibility, constant EI",
+                "tex": "H = \\dfrac{\\int M_0\\,y\\,ds}{\\int y^2\\,ds}"
+              },
+              {
+                "label": "Semicircle, crown point load",
+                "tex": "H = \\dfrac{P}{\\pi}"
+              },
+              {
+                "label": "Semicircle, UDL over the whole span",
+                "tex": "H = \\dfrac{4wR}{3\\pi}"
+              },
+              {
+                "label": "Semicircle, UDL over half the span",
+                "tex": "H = \\dfrac{2wR}{3\\pi}"
+              }
+            ],
+            "example": {
+              "title": "Worked results",
+              "html": "<p>Left-half UDL with R = 6 m and w = 3 kN/m:</p>\\[H = \\dfrac{2 \\times 3 \\times 6}{3\\pi} = \\dfrac{36}{3\\pi} \\approx 3.82\\ \\text{kN}\\]<p>Point load P at distance a from A: \\(V_A = P(2R - a)/(2R)\\) and</p>\\[H = \\dfrac{Pa(2R - a)}{\\pi R^2}\\]<p>so the reaction lines meet at height \\(aV_A/H = \\pi R/2\\), whatever the value of a.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Compatibility of the restrained horizontal span.",
+                "html": "A two-hinged arch has four reaction components against three equilibrium equations; compatibility of the restrained horizontal span determines its thrust.",
                 "sources": [
                   {
                     "id": "CAP4-04-00038",
@@ -2799,16 +3020,7 @@
                 ]
               },
               {
-                "html": "The key result is 3.82 kN.",
-                "sources": [
-                  {
-                    "id": "CAP4-04-00046",
-                    "label": "p. 16; topic 4 point 44"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is 1 : 1 : 1.",
+                "html": "Semicircular two-hinged arches of radii 5, 7.5 and 10 m under the same crown force have thrusts in the ratio 1 : 1 : 1, because \\(H = P/\\pi\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00047",
@@ -2817,7 +3029,16 @@
                 ]
               },
               {
-                "html": "The key result is A horizontal line at height pi R/2 above the springing line.",
+                "html": "A two-hinged semicircular arch of radius 6 m carrying 3 kN/m over its left half develops a horizontal thrust of 3.82 kN.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00046",
+                    "label": "p. 16; topic 4 point 44"
+                  }
+                ]
+              },
+              {
+                "html": "For a moving point load, the reaction lines of a two-hinged semicircular arch intersect on a horizontal line at height \\(\\pi R/2\\) above the springing line.",
                 "sources": [
                   {
                     "id": "CAP4-04-00111",
@@ -2832,12 +3053,12 @@
                 "label": "p. 16; topic 4 point 38"
               },
               {
-                "id": "CAP4-04-00046",
-                "label": "p. 16; topic 4 point 44"
-              },
-              {
                 "id": "CAP4-04-00047",
                 "label": "p. 16; topic 4 point 45"
+              },
+              {
+                "id": "CAP4-04-00046",
+                "label": "p. 16; topic 4 point 44"
               },
               {
                 "id": "CAP4-04-00111",
@@ -2846,12 +3067,54 @@
             ]
           }
         ],
+        "formulaSheet": [
+          {
+            "label": "Arch moment",
+            "tex": "M = M_0 - Hy"
+          },
+          {
+            "label": "Three-hinged thrust",
+            "tex": "H = \\dfrac{M_{0,\\text{crown}}}{h}"
+          },
+          {
+            "label": "Three-hinged, full-span UDL",
+            "tex": "H = \\dfrac{wL^2}{8h}"
+          },
+          {
+            "label": "Crown load, unequal springings",
+            "tex": "H = \\dfrac{WL}{2(h_1 + h_2)}"
+          },
+          {
+            "label": "Vertical reaction at B",
+            "tex": "V_B = \\dfrac{Wa}{2l}"
+          },
+          {
+            "label": "Thrust influence peak",
+            "tex": "\\eta_{H,\\max} = \\dfrac{L}{4h}"
+          },
+          {
+            "label": "Normal thrust",
+            "tex": "N = H\\cos\\theta + V\\sin\\theta"
+          },
+          {
+            "label": "Radial shear",
+            "tex": "Q = V\\cos\\theta - H\\sin\\theta"
+          },
+          {
+            "label": "Semicircle, crown load",
+            "tex": "H = \\dfrac{P}{\\pi}"
+          },
+          {
+            "label": "Semicircle, half-span UDL",
+            "tex": "H = \\dfrac{2wR}{3\\pi}"
+          }
+        ],
         "cautions": [
           {
             "id": "caution-unequal-springings-thrust",
             "status": "review",
             "prompt": "Three-hinged arch with supports at heights h1 and h2 and a central load W: thrust WL divided by a function of h1 + h2",
-            "html": "<p>The printed denominator cannot be decoded reliably from the extracted text. Equilibrium, with h<sub>1</sub> and h<sub>2</sub> measured from each springing up to the crown, gives H = WL/(2(h<sub>1</sub> + h<sub>2</sub>)); a squared height sum would give wrong units.</p>",
+            "html": "<p>The printed denominator cannot be decoded reliably from the extracted text. Equilibrium, with \\(h_1\\) and \\(h_2\\) measured from each springing up to the crown, gives \\(H = WL/[2(h_1 + h_2)]\\); a squared height sum would give wrong units.</p>",
             "sources": [
               {
                 "id": "CAP4-04-00034",
@@ -2863,7 +3126,7 @@
             "id": "caution-rolling-load-envelope",
             "status": "review",
             "prompt": "Maximum bending moment in a three-hinged arch under point load occurs on either side of the crown at a fixed distance",
-            "html": "<p>The L/(2√3) result needs a symmetric parabolic arch with level supports and a midspan crown hinge, and it describes the envelope under a rolling point load. It is not the maximum-moment location for an arbitrary fixed point load.</p>",
+            "html": "<p>The \\(L/(2\\sqrt{3})\\) result needs a symmetric parabolic arch with level supports and a midspan crown hinge, and it describes the envelope under a rolling point load. It is not the maximum-moment location for an arbitrary fixed point load.</p>",
             "sources": [
               {
                 "id": "CAP4-04-00037",
@@ -2875,7 +3138,7 @@
             "id": "caution-thrust-hinge-axis",
             "status": "corrected",
             "prompt": "In a two-hinged arch, the moment is zero where the thrust axis and the hinge axis coincide",
-            "html": "<p>Corrected: bending vanishes where the line of thrust passes through the arch's own rib axis, since M = H(y<sub>t</sub> − y). The straight line joining the hinges is generally not the rib axis, and parallel offset lines still leave a moment.</p>",
+            "html": "<p>Corrected: bending vanishes where the line of thrust passes through the arch's own rib axis, since \\(M = H(y_t - y)\\). The straight line joining the hinges is generally not the rib axis, and parallel offset lines still leave a moment.</p>",
             "sources": [
               {
                 "id": "CAP4-04-00041",
@@ -2979,15 +3242,22 @@
         "code": "ACiE0406",
         "questionCount": 18,
         "format": 2,
-        "summary": "<p>Indeterminate structures covers Flexibility, two-hinged parabolic arches, slope-deflection, moment distribution, stiffness methods, continuous-beam influence lines and elementary plastic analysis. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers statically indeterminate structures: continuous beams and the two method families, rotational stiffness and moment distribution, two-hinged arches solved by compatibility, and elementary plastic analysis. The questions test end stiffnesses and distribution factors, arch thrust formulas and their assumptions, shape factors, and the difference between an elastic contraflexure point and a plastic collapse hinge.</p>",
         "blocks": [
           {
             "id": "continuous-beams-method-families",
-            "title": "Continuous beams and the force versus displacement method families",
-            "html": "<p>A continuous beam is one unbroken member running over more than two supports, so it transmits bending moment across its interior supports. Two separate beams that merely meet over a middle support do not; they are two simple spans. An interior simple support restrains deflection but creates no hinge in a continuous beam.</p><p>Indeterminate structures are solved by one of two method families:</p><ul><li>Force (flexibility) methods take redundant forces as the unknowns and enforce compatibility of displacements, for example zero deflection at a prop or zero spreading of arch springings.</li><li>Displacement (stiffness) methods take joint translations and rotations as the unknowns and enforce equilibrium. Assembling Kd = F and solving for the nodal displacements d is the stiffness matrix method; member forces are then recovered from those displacements through the member stiffness relations.</li></ul><p>Slope-deflection and moment distribution belong to the displacement family, whereas limit analysis of collapse mechanisms and graphical force polygons are different tools altogether.</p>",
+            "title": "Continuous beams and the force versus displacement methods",
+            "html": "<p>A <em>continuous beam</em> is one unbroken member running over more than two supports, so it transmits bending moment across its interior supports. Two separate beams that merely meet over a middle support do not; they are two simple spans. An interior simple support restrains deflection but creates no hinge.</p><p>Indeterminate structures are solved by one of two method families:</p><ul><li><em>Force (flexibility) methods</em> take redundant forces as the unknowns and enforce compatibility of displacements, such as zero deflection at a prop or zero spreading of arch springings.</li><li><em>Displacement (stiffness) methods</em> take joint translations and rotations as the unknowns and enforce equilibrium. Assembling \\(Kd = F\\) and solving for the nodal displacements is the stiffness matrix method; member forces follow from the member stiffness relations.</li></ul><p>Slope-deflection and moment distribution belong to the displacement family.</p>",
+            "formulas": [
+              {
+                "label": "Stiffness method",
+                "tex": "Kd = F",
+                "where": "<p>\\(K\\) is the assembled stiffness matrix, \\(d\\) the unknown joint displacements and \\(F\\) the joint loads.</p>"
+              }
+            ],
             "points": [
               {
-                "html": "The key result is A continuous two-span beam.",
+                "html": "One unbroken beam passing over supports A, B and C that transfers moment through B is a continuous two-span beam.",
                 "sources": [
                   {
                     "id": "CAP4-04-00010",
@@ -2996,7 +3266,7 @@
                 ]
               },
               {
-                "html": "The key result is A stiffness or displacement method.",
+                "html": "Assembling \\(Kd = F\\) and solving for the joint translations and rotations is a stiffness or displacement method.",
                 "sources": [
                   {
                     "id": "CAP4-04-00042",
@@ -3018,64 +3288,79 @@
           },
           {
             "id": "rotational-stiffness-end-conditions",
-            "title": "Rotational stiffness and far-end conditions: 4EI/L, 3EI/L and EI/L",
-            "html": "<p>The rotational stiffness of a member end is the moment needed per unit rotation there, and it depends on how the far end is held. For a prismatic member with no span load and both ends held against transverse translation, slope-deflection gives M<sub>A</sub> = (2EI/L)(2θ<sub>A</sub> + θ<sub>B</sub>).</p><ul><li>Far end fixed, θ<sub>B</sub> = 0: M<sub>A</sub>/θ<sub>A</sub> = 4EI/L.</li><li>Far end hinged: zero far-end moment requires θ<sub>B</sub> = −θ<sub>A</sub>/2, giving M<sub>A</sub>/θ<sub>A</sub> = 3EI/L. With EI = 16000 kN·m<sup>2</sup> and L = 4 m this is 12000 kN·m/rad, against 16000 kN·m/rad for a fixed far end.</li><li>Far end guided, prevented from rotating but free to slide transversely without force: with no transverse force the internal moment is constant, and integrating the curvature gives a relative end rotation θ = ML/(EI), so the stiffness is only EI/L.</li></ul><p>The more freedom the far end has, the smaller the stiffness. Choosing the correct far-end condition matters because these stiffnesses decide how moment is shared at a joint.</p>",
+            "title": "Rotational stiffness and far-end conditions",
+            "html": "<p>The rotational stiffness of a member end is the moment needed per unit rotation there, and it depends on how the far end is held. For a prismatic member with no span load and both ends held against transverse translation, the slope-deflection equation links the end moment to both end rotations.</p><table><thead><tr><th scope='col'>Far end B</th><th scope='col'>Condition used</th><th scope='col'>Near-end stiffness</th></tr></thead><tbody><tr><th scope='row'>Fixed</th><td>No rotation at B</td><td>4EI/L</td></tr><tr><th scope='row'>Hinged</th><td>Zero moment at B, so the far rotation is half the near one, reversed</td><td>3EI/L</td></tr><tr><th scope='row'>Guided</th><td>No rotation, free transverse sliding, constant moment</td><td>EI/L</td></tr></tbody></table><p>The more freedom the far end has, the smaller the stiffness, and these stiffnesses decide how moment is shared at a joint.</p>",
+            "formulas": [
+              {
+                "label": "Slope-deflection, no chord rotation or span load",
+                "tex": "M_A = \\dfrac{2EI}{L}(2\\theta_A + \\theta_B)"
+              }
+            ],
+            "example": {
+              "title": "Worked example: EI = 16000 kN·m², L = 4 m",
+              "html": "<p>Far end hinged: \\(3EI/L = 48000/4\\), that is 12000 kN·m/rad. A fixed far end would give \\(4EI/L = 16000\\) kN·m/rad.</p>"
+            },
             "points": [
               {
-                "html": "The key result is EI/L. This is the reviewed topic result.",
-                "sources": [
-                  {
-                    "id": "CAP4-04-00043",
-                    "label": "p. 16; topic 4 point 41"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is 12000 kN m/rad.",
+                "html": "With EI = 16000 kN·m² and L = 4 m, a member hinged at its far end has a near-end rotational stiffness of 3EI/L = 12000 kN·m/rad.",
                 "sources": [
                   {
                     "id": "CAP4-04-00055",
                     "label": "p. 17; topic 4 point 54"
                   }
                 ]
+              },
+              {
+                "html": "A far end that cannot rotate but slides transversely without force gives a near-end rotational stiffness of only EI/L.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00043",
+                    "label": "p. 16; topic 4 point 41"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-04-00043",
-                "label": "p. 16; topic 4 point 41"
-              },
-              {
                 "id": "CAP4-04-00055",
                 "label": "p. 17; topic 4 point 54"
+              },
+              {
+                "id": "CAP4-04-00043",
+                "label": "p. 16; topic 4 point 41"
               }
             ]
           },
           {
             "id": "moment-distribution",
-            "title": "Moment distribution: distribution factors, balancing and what the iteration solves",
-            "html": "<p>Moment distribution, introduced by Hardy Cross, releases and rebalances joints in turn. At a joint, each member takes a share of the unbalanced moment in proportion to its rotational stiffness, evaluated with its actual far-end condition: DF<sub>i</sub> = k<sub>i</sub>/Σk, where the sum covers all members meeting at that joint, so the factors add to one.</p><ul><li>Stiffnesses of 20, 30 and 50 kN·m/rad: the factor for the 30 kN·m/rad member is 30/(20 + 30 + 50) = 0.30.</li><li>Stiffnesses of 6000 and 4000 kN·m/rad with an unbalance of +50 kN·m: factors 0.6 and 0.4 and balancing increments of −30 kN·m and −20 kN·m. The increments oppose the unbalance and add to −50 kN·m.</li></ul><p>Carrying increments to the far ends and repeating the balancing converges to the solution of the joint-equilibrium equations of the slope-deflection method; the procedure is an iterative way of solving those simultaneous equations. For a frame that sways, translational equilibrium must be included as well, otherwise a different, non-sway model is being solved. Castigliano (energy derivatives), Muller-Breslau (influence-line construction) and Mohr (graphical stress and structural methods) are associated with other contributions.</p>",
+            "title": "Moment distribution: distribution factors and balancing",
+            "html": "<p><em>Moment distribution</em>, introduced by Hardy Cross, releases and rebalances joints in turn. At a joint, each member takes a share of the unbalanced moment in proportion to its rotational stiffness, evaluated with its actual far-end condition. The denominator is the sum over all members meeting at that joint, so the factors add to one.</p><p>Balancing increments oppose the unbalance. Carrying increments to the far ends and repeating converges to the solution of the joint-equilibrium equations of the slope-deflection method, so the procedure is an iterative way of solving those simultaneous equations. A frame that sways also needs translational equilibrium, otherwise a different, non-sway model is solved.</p>",
+            "formulas": [
+              {
+                "label": "Distribution factor",
+                "tex": "DF_i = \\dfrac{k_i}{\\sum k}"
+              },
+              {
+                "label": "Balancing increment",
+                "tex": "\\Delta M_i = -DF_i \\times M_{\\text{unbalanced}}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>Stiffnesses 20, 30 and 50 kN·m/rad: the factor for the 30 kN·m/rad member is \\(30/100 = 0.30\\).</li><li>Stiffnesses 6000 and 4000 kN·m/rad with an unbalance of +50 kN·m: factors 0.6 and 0.4, so the increments are −30 kN·m and −20 kN·m, adding to −50 kN·m.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is The joint-equilibrium equations of slope-deflection.",
+                "html": "Stiffnesses of 20, 30 and 50 kN·m/rad at a joint give the 30 kN·m/rad member a distribution factor of 0.30.",
                 "sources": [
                   {
-                    "id": "CAP4-04-00044",
-                    "label": "pp. 16, 18; topic 4 point 42; topic 4 point 103"
+                    "id": "CAP4-05-00128",
+                    "label": "p. 23; topic 5 point 127"
                   }
                 ]
               },
               {
-                "html": "The key result is Hardy Cross.",
-                "sources": [
-                  {
-                    "id": "CAP4-04-00057",
-                    "label": "p. 17; topic 4 point 56"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is -30 kN m.",
+                "html": "With stiffnesses 6000 and 4000 kN·m/rad and an unbalance of +50 kN·m, the stiffer member receives a balancing increment of −30 kN·m.",
                 "sources": [
                   {
                     "id": "CAP4-04-00079",
@@ -3084,16 +3369,33 @@
                 ]
               },
               {
-                "html": "The key result is 0.30. This is the reviewed topic result.",
+                "html": "Moment distribution, with sway properly accounted for, converges to the solution of the joint-equilibrium equations of slope-deflection.",
                 "sources": [
                   {
-                    "id": "CAP4-05-00128",
-                    "label": "p. 23; topic 5 point 127"
+                    "id": "CAP4-04-00044",
+                    "label": "pp. 16, 18; topic 4 point 42; topic 4 point 103"
+                  }
+                ]
+              },
+              {
+                "html": "Moment distribution, the joint-balancing iteration used for continuous beams and rigid frames, was introduced by Hardy Cross.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00057",
+                    "label": "p. 17; topic 4 point 56"
                   }
                 ]
               }
             ],
             "sources": [
+              {
+                "id": "CAP4-05-00128",
+                "label": "p. 23; topic 5 point 127"
+              },
+              {
+                "id": "CAP4-04-00079",
+                "label": "p. 18; topic 4 point 77"
+              },
               {
                 "id": "CAP4-04-00044",
                 "label": "pp. 16, 18; topic 4 point 42; topic 4 point 103"
@@ -3101,24 +3403,36 @@
               {
                 "id": "CAP4-04-00057",
                 "label": "p. 17; topic 4 point 56"
-              },
-              {
-                "id": "CAP4-04-00079",
-                "label": "p. 18; topic 4 point 77"
-              },
-              {
-                "id": "CAP4-05-00128",
-                "label": "p. 23; topic 5 point 127"
               }
             ]
           },
           {
             "id": "two-hinged-arch-compatibility",
-            "title": "Two-hinged arch thrust from compatibility, with parabolic examples",
-            "html": "<p>Release the horizontal thrust of a two-hinged arch with level, immovable springings and write the moment as M = M<sub>0</sub> − Hy, where M<sub>0</sub> is the released simple-beam moment and y the rib height above the support chord. With U = ∫M<sup>2</sup> dμ/2 and dμ = ds/(EI), zero horizontal movement requires ∂U/∂H = 0, that is ∫(M<sub>0</sub> − Hy)y dμ = 0.</p><p>Hence H = (∫M<sub>0</sub>y dμ)/(∫y<sup>2</sup> dμ), integrated over the whole arch: one thrust for the whole arch, not a separate local value at each point.</p><ul><li>Shallow parabola, crown load W: with y = 4hx(L − x)/L<sup>2</sup>, ds ≈ dx and constant EI, the integrals are 5WhL<sup>2</sup>/48 and 8h<sup>2</sup>L/15, giving H = 25WL/(128h). For 32 kN on a 16 m span with 2 m rise, H = 25 × 32 × 16/(128 × 2) = 50 kN.</li><li>Triangular load rising from zero to w across the span: it and its mirror image add to a full UDL w, and by symmetry and linearity each carries half of wL<sup>2</sup>/(8h). Hence H = wL<sup>2</sup>/(16h); for 8 kN/m on a 12 m span with 3 m rise, H = 8 × 144/48 = 24 kN. Keep the rise h distinct from the thrust H.</li></ul><p>Retaining the exact arc-length weighting instead of ds ≈ dx generally changes the coefficient.</p>",
+            "title": "Two-hinged arch thrust from compatibility",
+            "html": "<p>Release the horizontal thrust of a two-hinged arch with level, immovable springings, and write the moment as the released simple-beam moment minus the thrust times the rib height. Zero horizontal movement of the springings then requires the derivative of the strain energy with respect to the thrust to vanish.</p><p>The result is one thrust for the whole arch, a ratio of two integrals taken along the rib, not a separate local value at each point. For a shallow parabola the approximation \\(ds \\approx dx\\) with constant EI gives simple coefficients; keeping the exact arc-length weighting generally changes them.</p><p>A triangular load and its mirror image add to a full uniform load, so by symmetry and linearity each carries half the full-load thrust. Keep the rise \\(h\\) distinct from the thrust \\(H\\).</p>",
+            "formulas": [
+              {
+                "label": "Compatibility thrust, bending only",
+                "tex": "H = \\dfrac{\\int M_0\\,y\\,d\\mu}{\\int y^2\\,d\\mu}",
+                "where": "<p>\\(d\\mu = ds/(EI)\\), \\(M_0\\) is the released simple-beam moment and \\(y\\) the rib height above the support chord.</p>"
+              },
+              {
+                "label": "Shallow parabola, crown load W",
+                "tex": "H = \\dfrac{25WL}{128h}"
+              },
+              {
+                "label": "Load rising from zero to w",
+                "tex": "H = \\dfrac{wL^2}{16h}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<p>Crown load 32 kN, span 16 m, rise 2 m:</p>\\[H = \\dfrac{25 \\times 32 \\times 16}{128 \\times 2} = 50\\ \\text{kN}\\]<p>Triangular load up to 8 kN/m, span 12 m, rise 3 m:</p>\\[H = \\dfrac{8 \\times 144}{16 \\times 3} = 24\\ \\text{kN}\\]"
+            },
+            "moreHtml": "<p>For the crown load, with \\(y = 4hx(L - x)/L^2\\) and \\(ds \\approx dx\\), the two integrals are \\(5WhL^2/48\\) and \\(8h^2L/15\\); their ratio gives the coefficient 25/128.</p>",
             "points": [
               {
-                "html": "The key result is H = integral(M0 y dmu)/integral(y^2 dmu).",
+                "html": "For a two-hinged arch with level immovable springings, compatibility gives the whole-arch thrust as a ratio of two integrals, \\(H = \\int M_0 y\\,d\\mu \\big/ \\int y^2\\,d\\mu\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00048",
@@ -3127,7 +3441,7 @@
                 ]
               },
               {
-                "html": "The key result is 50 kN.",
+                "html": "A shallow two-hinged parabolic arch with a 32 kN crown load, 16 m span and 2 m rise has a thrust of \\(25WL/(128h)\\) = 50 kN.",
                 "sources": [
                   {
                     "id": "CAP4-04-00067",
@@ -3136,7 +3450,7 @@
                 ]
               },
               {
-                "html": "The key result is 24 kN.",
+                "html": "A parabolic two-hinged arch of span 12 m and rise 3 m under a load rising linearly from zero to 8 kN/m has a thrust of \\(wL^2/(16h)\\) = 24 kN.",
                 "sources": [
                   {
                     "id": "CAP4-04-00077",
@@ -3162,55 +3476,71 @@
           },
           {
             "id": "parabolic-arch-funicular-temperature",
-            "title": "Parabolic two-hinged arches: funicular UDL and temperature thrust",
-            "html": "<p>For a symmetric two-hinged parabolic arch carrying a uniform load w over its full horizontal span, the compatibility thrust is H = wL<sup>2</sup>/(8h). Then M<sub>0</sub> = wx(L − x)/2 and Hy = [wL<sup>2</sup>/(8h)][4hx(L − x)/L<sup>2</sup>] = wx(L − x)/2, so M = 0 everywhere.</p><p>Because the vertical shear equals H tan θ at every section, the radial shear is zero too: the rib carries pure normal thrust, compression along the tangent. This funicular state belongs to that loading and to the first-order, bending-only model; retaining axial shortening or changing the load pattern disturbs it.</p><p>A uniform temperature rise would lengthen the free span by αΔT L. If the springings cannot move apart, an elastic displacement must cancel that expansion, so the inward thrust increases by ΔH = (αΔT·L)/f<sub>HH</sub>, where f<sub>HH</sub> is the horizontal flexibility of the released arch. By the same reasoning uniform cooling reduces the thrust. A movable springing or a temperature gradient through the rib is a different case.</p>",
-            "points": [
+            "title": "Parabolic two-hinged arches: funicular load and temperature thrust",
+            "html": "<p>For a symmetric two-hinged parabolic arch carrying a uniform load over its full horizontal span, the compatibility thrust makes the thrust-line moment cancel the simple-beam moment at every section, so the bending moment is zero everywhere. The vertical shear equals \\(H\\tan\\theta\\), so the radial shear is zero too: the rib carries pure compression along the tangent. This funicular state belongs to that load and to the first-order, bending-only model.</p><p>A uniform temperature rise would lengthen the free span. If the springings cannot move apart, an elastic displacement must cancel that expansion, so the inward thrust increases; uniform cooling reduces it. A movable springing or a temperature gradient is a different case.</p>",
+            "formulas": [
               {
-                "html": "The key result is It increases to oppose free span expansion.",
-                "sources": [
-                  {
-                    "id": "CAP4-04-00097",
-                    "label": "p. 18; topic 4 point 97"
-                  }
-                ]
+                "label": "Full-span UDL",
+                "tex": "H = \\dfrac{wL^2}{8h}"
               },
               {
-                "html": "The key result is Compression along the tangent, with zero bending and radial shear.",
+                "label": "Uniform heating with fixed span",
+                "tex": "\\Delta H = \\dfrac{\\alpha\\,\\Delta T\\,L}{f_{HH}}",
+                "where": "<p>\\(f_{HH}\\) is the horizontal flexibility of the released arch.</p>"
+              }
+            ],
+            "points": [
+              {
+                "html": "A symmetric two-hinged parabolic arch under a full horizontal UDL carries compression along the tangent, with zero bending and zero radial shear.",
                 "sources": [
                   {
                     "id": "CAP4-04-00116",
                     "label": "p. 19; topic 4 point 116"
                   }
                 ]
+              },
+              {
+                "html": "Uniform heating with fixed springing spacing increases the inward horizontal thrust, which opposes the free span expansion.",
+                "sources": [
+                  {
+                    "id": "CAP4-04-00097",
+                    "label": "p. 18; topic 4 point 97"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-04-00097",
-                "label": "p. 18; topic 4 point 97"
-              },
-              {
                 "id": "CAP4-04-00116",
                 "label": "p. 19; topic 4 point 116"
+              },
+              {
+                "id": "CAP4-04-00097",
+                "label": "p. 18; topic 4 point 97"
               }
             ]
           },
           {
             "id": "plastic-hinges-shape-factor",
             "title": "Plastic hinges, the rigid-segment mechanism and shape factor",
-            "html": "<p>Plastic analysis assumes an elastic–perfectly plastic material. As the moment grows, a section yields from its extreme fibres inward until it reaches the plastic moment M<sub>p</sub> = f<sub>y</sub>Z<sub>p</sub> and then rotates freely at that moment, forming a plastic hinge.</p><p>In the collapse-mechanism idealization, elastic deformations are negligible beside the large hinge rotations, so the segments between successive hinges move as rigid bodies while all relative rotation is concentrated at the hinges. This is a modelling simplification, not a claim that the segments are infinitely stiff.</p><p>The shape factor Z<sub>p</sub>/Z<sub>e</sub> = M<sub>p</sub>/M<sub>y</sub> measures the reserve beyond first yield, assuming equal tension and compression yield, no axial force and no buckling or strain hardening:</p><ul><li>Rectangle b × d: Z<sub>e</sub> = bd<sup>2</sup>/6 and Z<sub>p</sub> = bd<sup>2</sup>/4, so the ratio is 1.5.</li><li>Solid rhombus with horizontal diagonal b and vertical diagonal d, bent about the horizontal diagonal: the width at height y is b(1 − 2|y|/d), so I = bd<sup>3</sup>/48, Z<sub>e</sub> = I/(d/2) = bd<sup>2</sup>/24 and Z<sub>p</sub> = ∫|y| dA = bd<sup>2</sup>/12, giving 2.0.</li></ul>",
-            "points": [
+            "html": "<p>Plastic analysis assumes an elastic–perfectly plastic material. As the moment grows, a section yields from its extreme fibres inward until it reaches the plastic moment, then rotates freely at that moment: a <em>plastic hinge</em>. In the collapse-mechanism idealization, elastic deformations are negligible beside the large hinge rotations, so the segments between hinges move as rigid bodies. This is a modelling simplification, not a claim that the segments are infinitely stiff.</p><p>The <em>shape factor</em> measures the reserve beyond first yield, assuming equal yield in tension and compression, no axial force, and no buckling or strain hardening.</p>",
+            "formulas": [
               {
-                "html": "The key result is 1.50. This is the reviewed topic result.",
-                "sources": [
-                  {
-                    "id": "CAP4-01-00080",
-                    "label": "p. 4; topic 1 point 76"
-                  }
-                ]
+                "label": "Shape factor",
+                "tex": "f = \\dfrac{Z_p}{Z_e} = \\dfrac{M_p}{M_y}"
               },
               {
-                "html": "The key result is Rigid-segment motion with plastic rotation concentrated at hinges.",
+                "label": "Rectangle b × d",
+                "tex": "Z_e = \\dfrac{bd^2}{6},\\quad Z_p = \\dfrac{bd^2}{4}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a solid rhombus bent about its horizontal diagonal",
+              "html": "<p>With diagonals b horizontal and d vertical, the width at height y is \\(b(1 - 2|y|/d)\\). Integration gives</p>\\[I = \\dfrac{bd^3}{48},\\quad Z_e = \\dfrac{bd^2}{24},\\quad Z_p = \\dfrac{bd^2}{12}\\]<p>so the shape factor is 2.00. The rectangle gives \\((bd^2/4)/(bd^2/6) = 1.50\\).</p>"
+            },
+            "points": [
+              {
+                "html": "In the rigid-plastic mechanism idealization, segments move as rigid bodies, with the plastic rotation concentrated at the hinges.",
                 "sources": [
                   {
                     "id": "CAP4-04-00045",
@@ -3219,7 +3549,16 @@
                 ]
               },
               {
-                "html": "The key result is 2.00. This is the reviewed topic result.",
+                "html": "A rectangular section in elastic–perfectly plastic bending has a plastic-to-first-yield moment ratio of 1.50, \\(bd^2/4\\) over \\(bd^2/6\\).",
+                "sources": [
+                  {
+                    "id": "CAP4-01-00080",
+                    "label": "p. 4; topic 1 point 76"
+                  }
+                ]
+              },
+              {
+                "html": "A solid rhombus bent about its horizontal diagonal has a shape factor of 2.00, from \\(Z_p = bd^2/12\\) and \\(Z_e = bd^2/24\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00072",
@@ -3230,12 +3569,12 @@
             ],
             "sources": [
               {
-                "id": "CAP4-01-00080",
-                "label": "p. 4; topic 1 point 76"
-              },
-              {
                 "id": "CAP4-04-00045",
                 "label": "p. 16; topic 4 point 43"
+              },
+              {
+                "id": "CAP4-01-00080",
+                "label": "p. 4; topic 1 point 76"
               },
               {
                 "id": "CAP4-04-00072",
@@ -3246,23 +3585,33 @@
           {
             "id": "propped-cantilever-elastic-plastic",
             "title": "Propped cantilever under UDL: elastic contraflexure versus collapse hinge",
-            "html": "<p>Two special sections of a propped cantilever carrying a full-span UDL are often confused.</p><ul><li>Elastic stage: compatibility, zero deflection at an unyielding prop, gives a prop reaction of 3wL/8. Measuring z from the prop, M = (3wL/8)z − wz<sup>2</sup>/2, which returns to zero at z = 3L/4. The point of contraflexure is therefore L/4 from the fixed end, with shear deformation neglected.</li><li>Plastic collapse: with equal, uniform sagging and hogging capacity M<sub>p</sub>, hinges form at the fixed end and at an interior section a from the fixed end and b = L − a from the prop. Virtual work gives w = 2M<sub>p</sub>(2/a + 1/b)/L; minimizing this collapse load over a gives a = √2·b, hence b = (√2 − 1)L ≈ 0.414L from the prop.</li></ul><p>The 0.414L section is a plastic hinge in a collapse mechanism, not an elastic zero-moment section, and the L/4 contraflexure point is not a hinge at all. The collapse location also depends on the full-span UDL and uniform M<sub>p</sub>; other loads or capacities move it.</p>",
-            "moreHtml": "<p>Supporting values: the elastic fixed-end moment is (3wL/8)L − wL<sup>2</sup>/2 = −wL<sup>2</sup>/8, and the largest sagging moment is 9wL<sup>2</sup>/128 at 3L/8 from the prop. Substituting b = (√2 − 1)L and a = (2 − √2)L into the virtual-work equation gives the collapse load w<sub>c</sub> = (6 + 4√2)M<sub>p</sub>/L<sup>2</sup> ≈ 11.66M<sub>p</sub>/L<sup>2</sup>.</p>",
+            "html": "<p>Two special sections of a propped cantilever carrying a full-span UDL are often confused.</p><ul><li><em>Elastic stage.</em> Zero deflection at an unyielding prop fixes the prop reaction. Measuring z from the prop, the moment returns to zero at \\(z = 3L/4\\), so the point of contraflexure is L/4 from the fixed end, with shear deformation neglected.</li><li><em>Plastic collapse.</em> With equal, uniform sagging and hogging capacity, hinges form at the fixed end and at an interior section. Minimizing the virtual-work collapse load over the hinge position places the interior hinge about 0.414L from the prop.</li></ul><p>The 0.414L section is a plastic hinge in a collapse mechanism, not an elastic zero-moment section, and the L/4 contraflexure point is not a hinge at all. Other loads or capacities move the collapse hinge.</p>",
+            "formulas": [
+              {
+                "label": "Elastic prop reaction",
+                "tex": "R_{\\text{prop}} = \\dfrac{3wL}{8}"
+              },
+              {
+                "label": "Interior collapse hinge, from the prop",
+                "tex": "b = (\\sqrt{2} - 1)L \\approx 0.414L"
+              }
+            ],
+            "moreHtml": "<p>With the hinge a from the fixed end and b from the prop, virtual work gives \\(w = 2M_p(2/a + 1/b)/L\\), minimized when \\(a = \\sqrt{2}\\,b\\). The collapse load is then</p>\\[w_c = \\dfrac{(6 + 4\\sqrt{2})M_p}{L^2} \\approx \\dfrac{11.66M_p}{L^2}\\]<p>Elastically, the fixed-end moment is \\(-wL^2/8\\) and the largest sagging moment is \\(9wL^2/128\\) at 3L/8 from the prop.</p>",
             "points": [
               {
-                "html": "The key result is (sqrt(2) - 1)L, approximately 0.414L.",
+                "html": "Before yielding, a propped cantilever under a full-span UDL has its point of contraflexure L/4 from the fixed end.",
                 "sources": [
                   {
-                    "id": "CAP4-04-00016",
+                    "id": "CAP4-04-00017",
                     "label": "p. 15; topic 4 point 16"
                   }
                 ]
               },
               {
-                "html": "The key result is L/4. This is the reviewed topic result.",
+                "html": "At plastic collapse under a full-span UDL, the interior sagging hinge lies \\((\\sqrt{2} - 1)L\\), about 0.414L, from the prop.",
                 "sources": [
                   {
-                    "id": "CAP4-04-00017",
+                    "id": "CAP4-04-00016",
                     "label": "p. 15; topic 4 point 16"
                   }
                 ]
@@ -3270,14 +3619,56 @@
             ],
             "sources": [
               {
-                "id": "CAP4-04-00016",
+                "id": "CAP4-04-00017",
                 "label": "p. 15; topic 4 point 16"
               },
               {
-                "id": "CAP4-04-00017",
+                "id": "CAP4-04-00016",
                 "label": "p. 15; topic 4 point 16"
               }
             ]
+          }
+        ],
+        "formulaSheet": [
+          {
+            "label": "Slope-deflection",
+            "tex": "M_A = \\dfrac{2EI}{L}(2\\theta_A + \\theta_B)"
+          },
+          {
+            "label": "End stiffness: fixed, hinged, guided",
+            "tex": "\\dfrac{4EI}{L},\\ \\dfrac{3EI}{L},\\ \\dfrac{EI}{L}"
+          },
+          {
+            "label": "Distribution factor",
+            "tex": "DF_i = \\dfrac{k_i}{\\sum k}"
+          },
+          {
+            "label": "Two-hinged arch thrust",
+            "tex": "H = \\dfrac{\\int M_0\\,y\\,d\\mu}{\\int y^2\\,d\\mu}"
+          },
+          {
+            "label": "Parabola, full-span UDL",
+            "tex": "H = \\dfrac{wL^2}{8h}"
+          },
+          {
+            "label": "Parabola, triangular load",
+            "tex": "H = \\dfrac{wL^2}{16h}"
+          },
+          {
+            "label": "Shallow parabola, crown load",
+            "tex": "H = \\dfrac{25WL}{128h}"
+          },
+          {
+            "label": "Temperature thrust",
+            "tex": "\\Delta H = \\dfrac{\\alpha\\,\\Delta T\\,L}{f_{HH}}"
+          },
+          {
+            "label": "Shape factor",
+            "tex": "f = \\dfrac{Z_p}{Z_e}"
+          },
+          {
+            "label": "Propped cantilever collapse hinge",
+            "tex": "b = (\\sqrt{2} - 1)L"
           }
         ],
         "cautions": [
@@ -3309,7 +3700,7 @@
             "id": "caution-two-hinged-thrust-formula",
             "status": "review",
             "prompt": "Horizontal thrust of a two-hinged arch with constant EI is a ratio of integrals of M·y and y²",
-            "html": "<p>The capsule formula is corrupted in both extractions. The version taught here, H = (∫M<sub>0</sub>y dμ)/(∫y<sup>2</sup> dμ) with dμ = ds/(EI) and ds the arc length, is reconstructed from compatibility rather than read from the printed page.</p>",
+            "html": "<p>The capsule formula is corrupted in both extractions. The version taught here, \\(H = \\int M_0 y\\,d\\mu \\big/ \\int y^2\\,d\\mu\\) with \\(d\\mu = ds/(EI)\\) and ds the arc length, is reconstructed from compatibility rather than read from the printed page.</p>",
             "sources": [
               {
                 "id": "CAP4-04-00048",
@@ -3333,7 +3724,7 @@
             "id": "caution-uvl-thrust-notation",
             "status": "review",
             "prompt": "Two-hinged parabolic arch under a load varying from zero to w: thrust wL² over 16 times the rise",
-            "html": "<p>The capsule writes the denominator as 16H, which confuses rise with thrust. With rise h, symmetric stiffness, immovable supports and bending-only compatibility, H = wL<sup>2</sup>/(16h), 24 kN in the worked example.</p>",
+            "html": "<p>The capsule writes the denominator as 16H, which confuses rise with thrust. With rise h, symmetric stiffness, immovable supports and bending-only compatibility, \\(H = wL^2/(16h)\\), which is 24 kN in the worked example.</p>",
             "sources": [
               {
                 "id": "CAP4-04-00077",

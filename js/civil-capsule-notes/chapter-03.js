@@ -2708,65 +2708,92 @@
         "code": "ACiE0305",
         "questionCount": 33,
         "format": 2,
-        "summary": "<p>Open channel flow covers Channel geometry, flow types, specific energy and force, gradually varied flow profiles, hydraulic jumps, mobile-boundary channel design, inception of motion and the Shield diagram. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers open-channel hydraulics: section geometry and efficient shapes, uniform flow with Manning and Chezy, the Froude number and critical flow, specific energy and hydraulic jumps, gradually varied flow profiles, weirs and outlets, and the start of sediment motion. The questions combine short calculations with the definitions and conditions each formula needs.</p>",
         "blocks": [
           {
             "id": "channel-section-geometry",
-            "title": "Channel geometry: flow area, wetted perimeter, hydraulic radius and hydraulic depth",
-            "html": "<p>Open-channel formulas use a small set of geometric properties of the wetted cross-section:</p><ul><li>Flow area A and top width T at the free surface.</li><li>Wetted perimeter P: the length of boundary in contact with the water. The free surface is not part of it.</li><li>Hydraulic radius R = A/P, used in friction and uniform-flow equations.</li><li>Hydraulic depth D = A/T, used in the Froude number.</li></ul><p>For a trapezoid of bottom width B, depth y and side slope z horizontal to 1 vertical, each submerged side has length y√(1 + z<sup>2</sup>), so A = (B + zy)y, P = B + 2y√(1 + z<sup>2</sup>) and T = B + 2zy.</p><p>For a rectangle, R = By/(B + 2y). When the width is much larger than the depth, the sidewall contribution 2y becomes negligible and R ≈ y, the usual wide-channel approximation. This differs from the best hydraulic rectangle, B = 2y, for which R = y/2.</p><p>Which length belongs in Fr = V/√(gD)? The speed of a small shallow-water gravity wave in a general section is √(gA/T), so the Froude length is the hydraulic depth A/T. Hydraulic radius A/P and hydraulic diameter 4A/P serve other purposes.</p>",
-            "moreHtml": "<p>Illustrative check: a trapezoid with B = 3 m, y = 1.5 m and z = 2 has A = (3 + 3) × 1.5 = 9 m<sup>2</sup>, P = 3 + 3√5 = 9.708 m, R = 9/9.708 = 0.927 m, T = 3 + 6 = 9 m and D = 9/9 = 1.0 m. R and D differ even for the same section.</p>",
+            "title": "Channel geometry: area, wetted perimeter, hydraulic radius and depth",
+            "html": "<p>Open-channel formulas use a small set of properties of the wetted cross-section:</p><ul><li>Flow area A and top width T at the free surface.</li><li>Wetted perimeter P, the boundary length in contact with the water. The free surface is not part of it.</li><li>Hydraulic radius \\(R = A/P\\), used in friction and uniform-flow equations.</li><li>Hydraulic depth \\(D = A/T\\), used in the Froude number.</li></ul><p>For a trapezoid of bottom width B, depth y and side slope z horizontal to 1 vertical, each submerged side has length \\(y\\sqrt{1 + z^2}\\).</p><p>For a rectangle, \\(R = By/(B + 2y)\\). When the width is much larger than the depth, the sidewalls add little and \\(R \\approx y\\), the wide-channel approximation. This differs from the best hydraulic rectangle, \\(B = 2y\\), for which \\(R = y/2\\).</p>",
+            "formulas": [
+              {
+                "label": "Hydraulic radius and hydraulic depth",
+                "tex": "R = \\dfrac{A}{P},\\quad D = \\dfrac{A}{T}"
+              },
+              {
+                "label": "Trapezoid area and top width",
+                "tex": "A = (B + zy)y,\\quad T = B + 2zy"
+              },
+              {
+                "label": "Trapezoid wetted perimeter",
+                "tex": "P = B + 2y\\sqrt{1 + z^2}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: B = 4 m, y = 2 m, sides 1.5H:1V",
+              "html": "<p>Each sloping side is \\(2\\sqrt{1 + 1.5^2} = 2\\sqrt{3.25} = 3.606\\) m, so</p>\\[P = 4 + 4\\sqrt{3.25} = 11.211\\ \\text{m}\\]<p>The top width is not added: it is a free surface, not a wetted boundary.</p>"
+            },
+            "moreHtml": "<p>A trapezoid with B = 3 m, y = 1.5 m and z = 2 has A = 9 m², P = 9.708 m and R = 0.927 m, while T = 9 m and D = 1.0 m. R and D differ even for the same section.</p>",
             "points": [
               {
-                "html": "The key result is R approximately equals y.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00064",
-                    "label": "p. 12; topic 3 point 60"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is D = A/T.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00065",
-                    "label": "p. 12; topic 3 point 61; topic 3 point 72"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is 11.211 m.",
+                "html": "A trapezoid with B = 4 m, y = 2 m and 1.5H:1V sides has a wetted perimeter of \\(4 + 4\\sqrt{3.25}\\) = 11.211 m.",
                 "sources": [
                   {
                     "id": "CAP4-03-00075",
                     "label": "p. 12; topic 3 point 73"
                   }
                 ]
+              },
+              {
+                "html": "For a rectangle much wider than it is deep, the hydraulic radius R approximately equals y, because the sidewalls add little to the wetted perimeter.",
+                "sources": [
+                  {
+                    "id": "CAP4-03-00064",
+                    "label": "p. 12; topic 3 point 60"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-03-00064",
-                "label": "p. 12; topic 3 point 60"
-              },
-              {
-                "id": "CAP4-03-00065",
-                "label": "p. 12; topic 3 point 61; topic 3 point 72"
-              },
-              {
                 "id": "CAP4-03-00075",
                 "label": "p. 12; topic 3 point 73"
+              },
+              {
+                "id": "CAP4-03-00064",
+                "label": "p. 12; topic 3 point 60"
               }
             ]
           },
           {
             "id": "hydraulically-efficient-sections",
-            "title": "Hydraulically efficient sections: semicircle, best rectangle, trapezoid and triangle",
-            "html": "<p>For a fixed flow area, roughness and slope, uniform-flow conveyance increases with hydraulic radius. The most efficient section therefore minimises the wetted perimeter for the given area. Among all shapes with a free top surface the semicircle does this, so it is the mathematical hydraulic optimum. Construction cost, bank stability and lining constraints often favour other practical sections.</p><table><thead><tr><th scope='col'>Best section</th><th scope='col'>Geometry</th><th scope='col'>Hydraulic radius</th></tr></thead><tbody><tr><th scope='row'>Semicircle of radius r</th><td>depth y = r</td><td>R = r/2 = y/2</td></tr><tr><th scope='row'>Rectangle</th><td>B = 2y</td><td>R = y/2</td></tr><tr><th scope='row'>Trapezoid, given z</th><td>T/2 = y√(1 + z<sup>2</sup>)</td><td>R = y/2</td></tr><tr><th scope='row'>Triangle</th><td>1H:1V sides, 90° vertex</td><td>R = y/(2√2)</td></tr></tbody></table><p>For the best trapezoid with a prescribed side slope, half the top width equals the length of one submerged sloping side, so the top width is the <em>sum of the two sloping-side lengths</em>. A side-slope ratio is dimensionless and cannot itself be added to give a width. For the best triangle, A = y<sup>2</sup> and P = 2√2 y, so R = y/(2√2) ≈ 0.354y; the trapezoid's R = y/2 does not transfer to the triangle.</p>",
-            "moreHtml": "<p>Illustrative check for a best trapezoid with z = 1 and y = 2 m: each sloping side is 2√2 = 2.828 m, so T = 5.657 m and B = T − 2zy = 1.657 m. Then A = (1.657 + 2) × 2 = 7.314 m<sup>2</sup>, P = 1.657 + 5.657 = 7.314 m and R = 1.0 m = y/2, as expected. If the side slope may also be chosen freely, the best trapezoid is half of a regular hexagon.</p>",
+            "title": "Hydraulically efficient sections: semicircle, rectangle, trapezoid and triangle",
+            "html": "<p>For a fixed flow area, roughness and slope, uniform-flow conveyance increases with hydraulic radius, so the most efficient section minimizes the wetted perimeter for the given area. Among all shapes with a free top surface the semicircle does this. It is the mathematical optimum; cost, bank stability and lining often favour other practical sections.</p><table><thead><tr><th scope='col'>Best section</th><th scope='col'>Geometry</th><th scope='col'>Hydraulic radius</th></tr></thead><tbody><tr><th scope='row'>Semicircle, radius r</th><td>depth y = r</td><td>R = y/2</td></tr><tr><th scope='row'>Rectangle</th><td>B = 2y</td><td>R = y/2</td></tr><tr><th scope='row'>Trapezoid, given z</th><td>half the top width equals one sloping side</td><td>R = y/2</td></tr><tr><th scope='row'>Triangle</th><td>1H:1V sides, 90° vertex</td><td>\\(R = y/(2\\sqrt{2})\\)</td></tr></tbody></table><p>For the best trapezoid, the top width is the sum of the two submerged sloping-side lengths; a side-slope ratio is dimensionless and cannot itself form a width. For the best triangle, \\(A = y^2\\) and \\(P = 2\\sqrt{2}\\,y\\), so the trapezoid's y/2 does not carry over.</p>",
+            "formulas": [
+              {
+                "label": "Best trapezoid",
+                "tex": "\\dfrac{T}{2} = y\\sqrt{1 + z^2}"
+              },
+              {
+                "label": "Best triangle",
+                "tex": "R = \\dfrac{y}{2\\sqrt{2}} \\approx 0.354y"
+              }
+            ],
+            "example": {
+              "title": "Worked example: sloping sides of 2.5 m",
+              "html": "<p>For the optimum trapezoid, \\(T = 2 \\times 2.5 = 5.0\\) m. A check with z = 1 and y = 2 m: each side is 2.828 m, T = 5.657 m, B = 1.657 m, A = P = 7.314 and R = 1.0 m = y/2.</p>"
+            },
             "points": [
               {
-                "html": "The key result is y/(2 sqrt(2)).",
+                "html": "Minimizing the wetted perimeter for a fixed area with a free top surface gives a semicircle, the ideal hydraulic section.",
+                "sources": [
+                  {
+                    "id": "CAP4-03-00129",
+                    "label": "p. 14; topic 3 point 126"
+                  }
+                ]
+              },
+              {
+                "html": "The best triangular section, with 1H:1V sides, has a hydraulic radius of \\(y/(2\\sqrt{2})\\) at depth y.",
                 "sources": [
                   {
                     "id": "CAP4-03-00066",
@@ -2775,25 +2802,20 @@
                 ]
               },
               {
-                "html": "The key result is 5.0 m.",
+                "html": "In the optimum trapezoid the top width is the sum of the two submerged sloping sides, so sides of 2.5 m give 5.0 m.",
                 "sources": [
                   {
                     "id": "CAP4-03-00079",
                     "label": "p. 12; topic 3 point 77"
                   }
                 ]
-              },
-              {
-                "html": "The key result is A semicircle.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00129",
-                    "label": "p. 14; topic 3 point 126"
-                  }
-                ]
               }
             ],
             "sources": [
+              {
+                "id": "CAP4-03-00129",
+                "label": "p. 14; topic 3 point 126"
+              },
               {
                 "id": "CAP4-03-00066",
                 "label": "p. 12; topic 3 point 62"
@@ -2801,21 +2823,39 @@
               {
                 "id": "CAP4-03-00079",
                 "label": "p. 12; topic 3 point 77"
-              },
-              {
-                "id": "CAP4-03-00129",
-                "label": "p. 14; topic 3 point 126"
               }
             ]
           },
           {
             "id": "manning-chezy-uniform-flow",
             "title": "Uniform flow with Manning and Chezy: dimensions and sensitivity to roughness",
-            "html": "<p>In uniform flow, the component of gravity along the slope balances boundary resistance, and depth, velocity and area stay constant along the reach. Two empirical equations are standard:</p><ul><li>Chezy: V = C√(RS). Because V has dimensions L T<sup>−1</sup> and √(RS) has L<sup>1/2</sup>, C has dimensions L<sup>1/2</sup> T<sup>−1</sup> (m<sup>1/2</sup>/s). It is not dimensionless.</li><li>Manning (SI): V = R<sup>2/3</sup>S<sup>1/2</sup>/n. Rearranging, n = R<sup>2/3</sup>S<sup>1/2</sup>/V has dimensions L<sup>2/3</sup>/(L T<sup>−1</sup>) = T L<sup>−1/3</sup>, written s/m<sup>1/3</sup>. It is neither dimensionless like the Darcy factor nor dimensionally identical to Chezy's C.</li></ul><p>Comparing the two equations gives C = R<sup>1/6</sup>/n.</p><p>Manning's equation shows how strongly roughness governs the slope needed for a given flow. If the area, hydraulic radius and discharge must stay the same, V is fixed, so √S must be proportional to n and S ∝ n<sup>2</sup>. Doubling n therefore requires four times the energy slope. The conclusion depends on keeping both the geometry and the flow unchanged.</p>",
-            "moreHtml": "<p>Illustrative check: a rectangular channel 4 m wide flowing 1 m deep with n = 0.015 and S = 0.0009 has A = 4 m<sup>2</sup>, P = 6 m and R = 0.667 m. Then V = 0.667<sup>2/3</sup> × 0.03/0.015 = 1.53 m/s and Q ≈ 6.1 m<sup>3</sup>/s. The equivalent Chezy coefficient is 0.667<sup>1/6</sup>/0.015 ≈ 62 m<sup>1/2</sup>/s.</p>",
+            "html": "<p>In uniform flow, the component of gravity along the slope balances boundary resistance, and depth, velocity and area stay constant along the reach. Two empirical equations are standard, and neither coefficient is dimensionless.</p><ul><li><em>Chezy.</em> V has dimensions L T<sup>−1</sup> and \\(\\sqrt{RS}\\) has L<sup>1/2</sup>, so C carries m<sup>1/2</sup>/s.</li><li><em>Manning (SI).</em> Rearranging for n gives dimensions T L<sup>−1/3</sup>, written s/m<sup>1/3</sup>. It is neither like the dimensionless Darcy factor nor like Chezy's C.</li></ul><p>Manning's equation shows how strongly roughness governs the slope needed for a given flow. If area, hydraulic radius and discharge stay the same, V is fixed, so \\(\\sqrt{S}\\) is proportional to n and doubling n needs four times the energy slope.</p>",
+            "formulas": [
+              {
+                "label": "Chezy",
+                "tex": "V = C\\sqrt{RS}"
+              },
+              {
+                "label": "Manning, SI",
+                "tex": "V = \\dfrac{R^{2/3}S^{1/2}}{n}"
+              },
+              {
+                "label": "Linking the coefficients",
+                "tex": "C = \\dfrac{R^{1/6}}{n}"
+              },
+              {
+                "label": "Fixed geometry and discharge",
+                "tex": "S \\propto n^2"
+              }
+            ],
+            "example": {
+              "title": "Worked example: roughness doubles",
+              "html": "<p>With area, hydraulic radius and discharge unchanged, the slope scales with \\(n^2\\): an original 0.001 becomes \\(0.001 \\times 2^2 = 0.004\\).</p>"
+            },
+            "moreHtml": "<p>A rectangular channel 4 m wide flowing 1 m deep with n = 0.015 and S = 0.0009 has R = 0.667 m, V = 1.53 m/s and Q ≈ 6.1 m³/s; its equivalent Chezy coefficient is about 62 m<sup>1/2</sup>/s.</p>",
             "points": [
               {
-                "html": "The key result is TL -1/3.",
+                "html": "Manning's n in the SI equation has dimensions \\(TL^{-1/3}\\), written s/m<sup>1/3</sup>; it is not dimensionless.",
                 "sources": [
                   {
                     "id": "CAP4-03-00044",
@@ -2824,20 +2864,20 @@
                 ]
               },
               {
-                "html": "The key result is 0.004. This is the reviewed topic result.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00072",
-                    "label": "p. 12; topic 3 point 69"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is L 1/2 T -1.",
+                "html": "Chezy's C has dimensions \\(L^{1/2}T^{-1}\\), that is m<sup>1/2</sup>/s, and is not dimensionally identical to Manning's n.",
                 "sources": [
                   {
                     "id": "CAP4-03-00110",
                     "label": "p. 13; topic 3 point 107"
+                  }
+                ]
+              },
+              {
+                "html": "With area, hydraulic radius and discharge kept fixed, doubling Manning's n raises the required slope fourfold, from 0.001 to 0.004.",
+                "sources": [
+                  {
+                    "id": "CAP4-03-00072",
+                    "label": "p. 12; topic 3 point 69"
                   }
                 ]
               }
@@ -2848,68 +2888,81 @@
                 "label": "p. 11; topic 3 point 41"
               },
               {
-                "id": "CAP4-03-00072",
-                "label": "p. 12; topic 3 point 69"
-              },
-              {
                 "id": "CAP4-03-00110",
                 "label": "p. 13; topic 3 point 107"
+              },
+              {
+                "id": "CAP4-03-00072",
+                "label": "p. 12; topic 3 point 69"
               }
             ]
           },
           {
             "id": "estimating-manning-roughness",
-            "title": "Estimating Manning's n: tabulated ranges and the Strickler grain-size relation",
-            "html": "<p>Choosing n is usually the least certain step in a uniform-flow calculation, and two routes are common.</p><p>Tabulated ranges. Textbook tables give indicative values for boundary materials. For clean, smooth-finished concrete an n of about 0.011 to 0.013 is a common preliminary estimate. Joints, deterioration, sediment deposits and vegetation raise the effective roughness, so a tabulated range is a starting point rather than a guaranteed field value or a prescribed standard.</p><p>Grain-size relations. For beds of loose granular material, a Strickler-type relation links n to a representative grain size. One common SI form is n = d<sup>1/6</sup>/21.1 with d in metres. The steps are simple but easy to slip on: convert the grain size to metres first, then take the sixth root, then divide. The relation is empirical, so the grain-size definition and bed condition must match those used in its calibration, and bedforms or vegetation are not represented.</p><p>Carry enough digits to round the result correctly rather than truncating it.</p>",
-            "moreHtml": "<p>Illustrative check: for a 20 mm representative grain, d = 0.020 m, d<sup>1/6</sup> = 0.521 and n = 0.521/21.1 = 0.0247. Entering 20 instead of 0.020 would give 0.078, an obviously unrealistic roughness.</p>",
+            "title": "Estimating Manning's n: tabulated ranges and the Strickler relation",
+            "html": "<p>Choosing n is usually the least certain step in a uniform-flow calculation.</p><ul><li><em>Tabulated ranges.</em> For clean, smooth-finished concrete an n of about 0.011 to 0.013 is a common preliminary estimate. Joints, deterioration, sediment and vegetation raise the effective roughness, so a table gives a starting point, not a guaranteed field value.</li><li><em>Grain-size relations.</em> For beds of loose granular material, a Strickler-type relation links n to a representative grain size. Convert the grain size to metres first, then take the sixth root, then divide.</li></ul><p>The relation is empirical: the grain-size definition and bed condition must match its calibration, and bedforms and vegetation are not represented. Carry enough digits to round correctly rather than truncate.</p>",
+            "formulas": [
+              {
+                "label": "Strickler-type estimate, d in metres",
+                "tex": "n = \\dfrac{d^{1/6}}{21.1}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 6 cm grain",
+              "html": "<ol><li>Convert: d = 6 cm = 0.06 m.</li><li>\\(0.06^{1/6} = 0.6257\\).</li><li>\\(n = 0.6257/21.1 = 0.02965\\), which rounds to 0.0297.</li></ol><p>Entering 6 instead of 0.06 gives an absurd roughness.</p>"
+            },
             "points": [
               {
-                "html": "The key result is 0.0297. This is the reviewed topic result.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00055",
-                    "label": "p. 12; topic 3 point 52"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is 0.011 to 0.013.",
+                "html": "Clean, smooth-finished concrete has an indicative Manning's n of about 0.011 to 0.013, a preliminary textbook estimate.",
                 "sources": [
                   {
                     "id": "CAP4-03-00137",
                     "label": "p. 14; topic 3 point 133"
                   }
                 ]
+              },
+              {
+                "html": "With \\(n = d^{1/6}/21.1\\), a 6 cm grain (d = 0.06 m) gives n = 0.0297 to four decimal places.",
+                "sources": [
+                  {
+                    "id": "CAP4-03-00055",
+                    "label": "p. 12; topic 3 point 52"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-03-00055",
-                "label": "p. 12; topic 3 point 52"
-              },
-              {
                 "id": "CAP4-03-00137",
                 "label": "p. 14; topic 3 point 133"
+              },
+              {
+                "id": "CAP4-03-00055",
+                "label": "p. 12; topic 3 point 52"
               }
             ]
           },
           {
             "id": "froude-number-wave-celerity",
-            "title": "Froude number, wave celerity and subcritical, critical and supercritical flow",
-            "html": "<p>The Froude number Fr = V/√(gD), with D = A/T, compares the mean flow speed with the speed √(gD) at which a small surface gravity wave travels relative to the water in the shallow-water approximation.</p><ul><li>Fr &lt; 1, subcritical: the flow is slower than the wave, so a disturbance can travel upstream and downstream controls influence the flow.</li><li>Fr = 1, critical: an upstream-directed wave is held stationary.</li><li>Fr &gt; 1, supercritical: the flow outruns the wave, so even a wave directed upstream relative to the water is swept downstream relative to the bed, and control comes from upstream.</li></ul><p>The Froude number compares inertia with gravity; it does not measure viscosity. Using hydraulic radius instead of hydraulic depth in the denominator gives the wrong wave-speed scale.</p><p>For a symmetric triangular channel of side slope z, A = zy<sup>2</sup> and T = 2zy, so D = y/2 whatever the slope and Fr = V/√(gy/2). For a rectangle D = y, and for a wide channel D and R both approach y.</p>",
-            "moreHtml": "<p>Illustrative check: a triangular channel with 1H:1V sides flowing 2 m deep at 1.5 m/s has D = 1 m and Fr = 1.5/√9.81 = 0.48, so the flow is subcritical. The same speed in a 0.1 m deep rectangular flow gives Fr = 1.5/√0.981 = 1.51, which is supercritical.</p>",
-            "points": [
+            "title": "Froude number, wave speed and the three flow regimes",
+            "html": "<p>The Froude number compares the mean flow speed with the speed at which a small surface gravity wave travels relative to the water in the shallow-water approximation. That wave speed is \\(\\sqrt{gA/T}\\), so the length in the Froude number is the hydraulic depth \\(D = A/T\\), not the hydraulic radius.</p><ul><li><em>Fr &lt; 1, subcritical</em>: a disturbance can travel upstream, and downstream controls influence the flow.</li><li><em>Fr = 1, critical</em>: an upstream-directed wave is held stationary.</li><li><em>Fr &gt; 1, supercritical</em>: the flow outruns the wave, so even a wave directed upstream is swept downstream, and control comes from upstream.</li></ul><p>For a symmetric triangular channel of side slope z, \\(A = zy^2\\) and \\(T = 2zy\\), so \\(D = y/2\\) whatever the slope.</p>",
+            "formulas": [
               {
-                "html": "The key result is D = A/T.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00065",
-                    "label": "p. 12; topic 3 point 61; topic 3 point 72"
-                  }
-                ]
+                "label": "Froude number",
+                "tex": "Fr = \\dfrac{V}{\\sqrt{gD}},\\quad D = \\dfrac{A}{T}"
               },
               {
-                "html": "The key result is Mean speed is larger; both wave directions are carried downstream.",
+                "label": "Symmetric triangle",
+                "tex": "Fr = \\dfrac{V}{\\sqrt{gy/2}}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a triangular channel",
+              "html": "<p>1H:1V sides, 2 m deep, 1.5 m/s: D = 1 m and \\(Fr = 1.5/\\sqrt{9.81} = 0.48\\), so the flow is subcritical. The same speed in a 0.1 m deep rectangular flow gives Fr = 1.51, supercritical.</p>"
+            },
+            "points": [
+              {
+                "html": "When Fr is greater than one the mean speed is larger than the wave speed, so waves in both directions are carried downstream: supercritical flow.",
                 "sources": [
                   {
                     "id": "CAP4-03-00073",
@@ -2918,7 +2971,16 @@
                 ]
               },
               {
-                "html": "The key result is V/sqrt(gy/2). This is the reviewed topic result.",
+                "html": "The length in \\(Fr = V/\\sqrt{gD}\\) is the hydraulic depth \\(D = A/T\\), since the long-wave speed is \\(\\sqrt{gA/T}\\).",
+                "sources": [
+                  {
+                    "id": "CAP4-03-00065",
+                    "label": "p. 12; topic 3 point 61; topic 3 point 72"
+                  }
+                ]
+              },
+              {
+                "html": "A symmetric triangular channel has hydraulic depth y/2 for any side slope, so its Froude number is \\(V/\\sqrt{gy/2}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00081",
@@ -2929,12 +2991,12 @@
             ],
             "sources": [
               {
-                "id": "CAP4-03-00065",
-                "label": "p. 12; topic 3 point 61; topic 3 point 72"
-              },
-              {
                 "id": "CAP4-03-00073",
                 "label": "p. 12; topic 3 point 70"
+              },
+              {
+                "id": "CAP4-03-00065",
+                "label": "p. 12; topic 3 point 61; topic 3 point 72"
               },
               {
                 "id": "CAP4-03-00081",
@@ -2944,12 +3006,29 @@
           },
           {
             "id": "critical-flow-condition-section-factor",
-            "title": "The general critical-flow condition and the section factor for critical flow",
-            "html": "<p>Squaring the Froude number and substituting V = Q/A gives, for any prismatic section with unit kinetic-energy correction,</p><p>Fr<sup>2</sup> = Q<sup>2</sup>T/(gA<sup>3</sup>)</p><p>so critical flow satisfies Q<sup>2</sup>T/(gA<sup>3</sup>) = 1. T is the free-surface top width; replacing it with the wetted perimeter P is a common mistake. For a rectangle of width B, T = B and A = By, and the condition reduces to y<sub>c</sub> = (q<sup>2</sup>/g)<sup>1/3</sup> with q = Q/B.</p><p>Rearranging the critical condition as Q/√g = A√(A/T) defines the section factor for critical flow, Z = A√D, where A is the wetted flow area and D the hydraulic depth. Z has dimensions of length<sup>5/2</sup>. For a given channel shape Z depends on depth alone, so critical depth can be found as the depth at which Z equals Q/√g. This channel section factor is unrelated to the dimensionless form factor of a drainage basin, which uses basin area and basin length.</p>",
-            "moreHtml": "<p>Illustrative check: a rectangle 3 m wide carrying 12 m<sup>3</sup>/s has q = 4 m<sup>2</sup>/s and y<sub>c</sub> = (16/9.81)<sup>1/3</sup> = 1.177 m. At that depth A = 3.531 m<sup>2</sup>, D = 1.177 m and Z = 3.531 × √1.177 = 3.83 m<sup>5/2</sup>, matching Q/√g = 12/3.132 = 3.83.</p>",
+            "title": "The general critical-flow condition and the section factor",
+            "html": "<p>Squaring the Froude number and substituting \\(V = Q/A\\) gives, for any prismatic section with unit kinetic-energy correction, a dimensionless group that equals one at critical flow. T is the free-surface top width; replacing it with the wetted perimeter is a common mistake. For a rectangle the condition reduces to the familiar critical-depth formula.</p><p>Rearranged, the critical condition defines the <em>section factor</em> for critical flow, \\(Z = A\\sqrt{D}\\), with A the wetted flow area and D the hydraulic depth. Z has dimensions of length<sup>5/2</sup> and depends on depth alone for a given shape, so critical depth is where Z equals \\(Q/\\sqrt{g}\\). It is unrelated to the dimensionless form factor of a drainage basin.</p>",
+            "formulas": [
+              {
+                "label": "Critical flow, any section",
+                "tex": "\\dfrac{Q^2T}{gA^3} = 1"
+              },
+              {
+                "label": "Section factor",
+                "tex": "Z = A\\sqrt{D} = \\dfrac{Q}{\\sqrt{g}}"
+              },
+              {
+                "label": "Rectangle, q = Q/B",
+                "tex": "y_c = \\left(\\dfrac{q^2}{g}\\right)^{1/3}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 3 m rectangle carrying 12 m³/s",
+              "html": "<p>q = 4 m²/s, so \\(y_c = (16/9.81)^{1/3} = 1.177\\) m. Then A = 3.531 m² and \\(Z = 3.531\\sqrt{1.177} = 3.83\\), matching \\(Q/\\sqrt{g} = 12/3.132 = 3.83\\).</p>"
+            },
             "points": [
               {
-                "html": "The key result is Q 2 T/(gA 3 ).",
+                "html": "Critical flow in any prismatic section satisfies \\(Q^2T/(gA^3) = 1\\), where T is the free-surface top width.",
                 "sources": [
                   {
                     "id": "CAP4-03-00103",
@@ -2958,7 +3037,7 @@
                 ]
               },
               {
-                "html": "The key result is A sqrt(D).",
+                "html": "The critical-flow section factor is \\(Z = A\\sqrt{D}\\), using the wetted flow area A and hydraulic depth D, not a basin area.",
                 "sources": [
                   {
                     "id": "CAP4-03-00104",
@@ -2981,11 +3060,24 @@
           {
             "id": "specific-energy-and-alternate-depths",
             "title": "Specific energy: minimum energy, maximum discharge and alternate depths",
-            "html": "<p>Specific energy is the energy per unit weight measured from the channel bed, E = y + V<sup>2</sup>/(2g). For a rectangular channel carrying q per unit width, E = y + q<sup>2</sup>/(2gy<sup>2</sup>). The relation can be read two ways, and both lead to critical flow.</p><ul><li>Fixed discharge. dE/dy = 1 − q<sup>2</sup>/(gy<sup>3</sup>) = 1 − Fr<sup>2</sup>, which vanishes at Fr = 1. Critical depth therefore gives the <em>minimum</em> specific energy for the given discharge.</li><li>Fixed specific energy. Writing q<sup>2</sup> = 2gy<sup>2</sup>(E − y) and maximising gives y = 2E/3, where again q<sup>2</sup>/(gy<sup>3</sup>) = 1. Critical flow carries the <em>maximum</em> discharge for the available energy.</li></ul><p>At critical depth in a rectangle, V<sub>c</sub><sup>2</sup>/g = y<sub>c</sub>, so the velocity head is y<sub>c</sub>/2 and E<sub>c</sub> = 1.5y<sub>c</sub>, a head in metres.</p><p>For any energy above the minimum, the E-y curve gives two possible depths at the same discharge: a shallow supercritical depth and a deep subcritical one. These are alternate depths. They differ from conjugate or sequent depths, which share the same specific force across a hydraulic jump and generally have different energies.</p>",
-            "moreHtml": "<p>Illustrative check for q = 4 m<sup>2</sup>/s: y<sub>c</sub> = 1.177 m and E<sub>c</sub> = 1.766 m. For E = 2.50 m, the depths 0.667 m and 2.353 m both satisfy y + 16/(19.62y<sup>2</sup>) ≈ 2.50 m, so they are alternate depths on opposite sides of critical depth.</p>",
+            "html": "<p><em>Specific energy</em> is the energy per unit weight measured from the channel bed. For a rectangle carrying q per unit width it can be read two ways, and both lead to critical flow.</p><ul><li><em>Fixed discharge.</em> The derivative \\(dE/dy = 1 - Fr^2\\) vanishes at Fr = 1, so critical depth gives the minimum specific energy.</li><li><em>Fixed specific energy.</em> Maximizing q gives \\(y = 2E/3\\), again critical flow, so critical flow carries the maximum discharge for the available energy.</li></ul><p>At critical depth in a rectangle the velocity head is \\(y_c/2\\). For any energy above the minimum, the E–y curve gives two depths at the same discharge, a shallow supercritical one and a deep subcritical one: the <em>alternate depths</em>. They differ from sequent depths, which share the same specific force across a jump.</p>",
+            "formulas": [
+              {
+                "label": "Specific energy, rectangle",
+                "tex": "E = y + \\dfrac{q^2}{2gy^2}"
+              },
+              {
+                "label": "Minimum specific energy, rectangle",
+                "tex": "E_c = 1.5\\,y_c"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<p>Critical depth 2.0 m: \\(E_c = 2.0 + 1.0 = 3.0\\) m of head.</p><p>For q = 4 m²/s and E = 2.50 m, the depths 0.667 m and 2.353 m both satisfy the energy equation: they are alternate depths on opposite sides of \\(y_c = 1.177\\) m.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Critical flow.",
+                "html": "At fixed specific energy, a rectangular channel carries its greatest discharge per unit width under critical flow.",
                 "sources": [
                   {
                     "id": "CAP4-03-00068",
@@ -2994,7 +3086,7 @@
                 ]
               },
               {
-                "html": "The key result is Specific energy is minimized.",
+                "html": "At fixed discharge, critical depth is where the specific energy is minimized, because \\(dE/dy = 1 - Fr^2\\) vanishes there.",
                 "sources": [
                   {
                     "id": "CAP4-03-00069",
@@ -3003,7 +3095,7 @@
                 ]
               },
               {
-                "html": "The key result is Alternate depths, generally on opposite sides of critical depth.",
+                "html": "Two depths with equal specific energy at the same discharge are alternate depths, generally on opposite sides of critical depth.",
                 "sources": [
                   {
                     "id": "CAP4-03-00074",
@@ -3012,7 +3104,7 @@
                 ]
               },
               {
-                "html": "The key result is 3.0 m.",
+                "html": "A rectangular channel with critical depth 2.0 m has a minimum specific energy of 1.5 × 2.0 = 3.0 m.",
                 "sources": [
                   {
                     "id": "CAP4-03-00117",
@@ -3043,11 +3135,28 @@
           {
             "id": "hydraulic-jump-sequent-depths",
             "title": "Hydraulic jump: sequent depths, energy loss, jump types and length",
-            "html": "<p>A hydraulic jump is an abrupt transition from supercritical to subcritical flow with an intense turbulent roller. Energy is dissipated, so the energy equation cannot link the two depths, but momentum can. For a horizontal rectangular channel, neglecting bed friction over the short jump and using unit momentum correction, equal specific force upstream and downstream gives the sequent (conjugate) depth ratio</p><p>y<sub>2</sub>/y<sub>1</sub> = [√(1 + 8Fr<sub>1</sub><sup>2</sup>) − 1]/2</p><p>This formula belongs to the rectangular case; other section shapes need their own specific-force balance. The head lost in the jump is ΔE = (y<sub>2</sub> − y<sub>1</sub>)<sup>3</sup>/(4y<sub>1</sub>y<sub>2</sub>).</p><p>The conventional textbook classification by approach Froude number is: undular about 1 to 1.7, weak about 1.7 to 2.5, oscillating about 2.5 to 4.5, steady about 4.5 to 9, and strong beyond about 9. These are empirical bands, not sharp physical boundaries, and a 'steady' jump still has an unsteady turbulent roller.</p><p>For preliminary screening, jump length is often estimated as roughly five to seven times the jump height, y<sub>2</sub> − y<sub>1</sub>. Such a rough rule does not replace a stilling-basin design based on the actual flow and tailwater.</p>",
-            "moreHtml": "<p>Illustrative check: with y<sub>1</sub> = 0.40 m and Fr<sub>1</sub> = 5, y<sub>2</sub>/y<sub>1</sub> = (√201 − 1)/2 = 6.589, so y<sub>2</sub> = 2.635 m. The jump height is 2.235 m, the head loss is 2.235<sup>3</sup>/(4 × 0.40 × 2.635) ≈ 2.65 m and the rough length range is about 11 to 16 m. Fr<sub>1</sub> = 5 lies in the steady-jump band.</p>",
+            "html": "<p>A <em>hydraulic jump</em> is an abrupt change from supercritical to subcritical flow with an intense turbulent roller. Energy is dissipated, so the energy equation cannot link the two depths, but momentum can. For a horizontal rectangular channel, neglecting bed friction over the short jump, equal specific force upstream and downstream gives the sequent-depth ratio below; other shapes need their own balance.</p><table><thead><tr><th scope='col'>Approach Froude number</th><th scope='col'>Conventional jump type</th></tr></thead><tbody><tr><td>about 1 to 1.7</td><td>undular</td></tr><tr><td>about 1.7 to 2.5</td><td>weak</td></tr><tr><td>about 2.5 to 4.5</td><td>oscillating</td></tr><tr><td>about 4.5 to 9</td><td>steady</td></tr><tr><td>beyond about 9</td><td>strong</td></tr></tbody></table><p>These are empirical bands, not sharp boundaries. For screening, jump length is often taken as five to seven times the jump height; that does not replace a stilling-basin design.</p>",
+            "formulas": [
+              {
+                "label": "Sequent depths, horizontal rectangle",
+                "tex": "\\dfrac{y_2}{y_1} = \\dfrac{\\sqrt{1 + 8Fr_1^2} - 1}{2}"
+              },
+              {
+                "label": "Head lost in the jump",
+                "tex": "\\Delta E = \\dfrac{(y_2 - y_1)^3}{4y_1y_2}"
+              },
+              {
+                "label": "Screening length",
+                "tex": "L_j \\approx (5\\ \\text{to}\\ 7)(y_2 - y_1)"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>\\(y_1 = 1.00\\) m, \\(Fr_1 = 3.00\\): \\(y_2/y_1 = (\\sqrt{73} - 1)/2 = 3.772\\), so \\(y_2 = 3.772\\) m.</li><li>Depths 0.5 m and 2.5 m: jump height 2.0 m, so the screening length is 10 to 14 m.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is 3.772 m.",
+                "html": "A jump in a horizontal rectangular channel with \\(y_1\\) = 1.00 m and \\(Fr_1\\) = 3.00 has a conjugate depth of 3.772 m.",
                 "sources": [
                   {
                     "id": "CAP4-03-00070",
@@ -3056,7 +3165,7 @@
                 ]
               },
               {
-                "html": "The key result is Approximately 4.5 to 9.",
+                "html": "A well-developed steady hydraulic jump corresponds to an approach Froude number of approximately 4.5 to 9.",
                 "sources": [
                   {
                     "id": "CAP4-03-00071",
@@ -3065,16 +3174,7 @@
                 ]
               },
               {
-                "html": "The key result is Alternate depths, generally on opposite sides of critical depth.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00074",
-                    "label": "pp. 12, 14; topic 3 point 71; topic 3 point 112; topic 3 point 118"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is 10 to 14 m.",
+                "html": "With depths of 0.5 m and 2.5 m the jump height is 2.0 m, so the five-to-seven rule gives a length of 10 to 14 m.",
                 "sources": [
                   {
                     "id": "CAP4-03-00078",
@@ -3093,10 +3193,6 @@
                 "label": "p. 12; topic 3 point 68"
               },
               {
-                "id": "CAP4-03-00074",
-                "label": "pp. 12, 14; topic 3 point 71; topic 3 point 112; topic 3 point 118"
-              },
-              {
                 "id": "CAP4-03-00078",
                 "label": "p. 12; topic 3 point 76"
               }
@@ -3104,21 +3200,12 @@
           },
           {
             "id": "gradually-varied-flow-profiles",
-            "title": "Gradually varied flow: classification, slope types and M and S profiles",
-            "html": "<p>Gradually varied flow (GVF) is steady flow whose depth changes slowly along the channel, so hydrostatic pressure and uniform-flow friction laws still apply locally. Its full classification is steady, nonuniform and gradually varied. Note the logic: steadiness is a separate observation that nothing changes with time at fixed sections; gradual variation along the channel alone would not prove it.</p><p>Profiles are named by comparing the actual depth y with the normal depth y<sub>n</sub> and critical depth y<sub>c</sub>. On a mild slope y<sub>n</sub> &gt; y<sub>c</sub>; on a steep slope y<sub>n</sub> &lt; y<sub>c</sub>.</p><table><thead><tr><th scope='col'>Profile</th><th scope='col'>Depth ordering</th><th scope='col'>Typical setting</th></tr></thead><tbody><tr><th scope='row'>M1</th><td>y &gt; y<sub>n</sub> &gt; y<sub>c</sub></td><td>Backwater behind a dam or weir</td></tr><tr><th scope='row'>M2</th><td>y<sub>n</sub> &gt; y &gt; y<sub>c</sub></td><td>Drawdown toward a free overfall or slope break</td></tr><tr><th scope='row'>S2</th><td>y<sub>c</sub> &gt; y &gt; y<sub>n</sub></td><td>Drawdown from critical depth on a steep reach</td></tr></tbody></table><p>Where a long reach of mild slope is followed by a long steep reach and the downstream end discharges freely, critical depth occurs near the slope break. Upstream, the flow draws down from its larger normal depth toward critical depth (M2); downstream, it falls from critical depth toward the smaller steep normal depth (S2). A submerged control or imposed tailwater can change this pattern, so the slope change alone does not fix the profiles.</p>",
-            "moreHtml": "<p>The remaining zones complete the family: M3 lies below critical depth on a mild slope, for example downstream of a sluice gate; S1 lies above both reference depths on a steep slope; and S3 lies below normal depth on a steep slope.</p>",
+            "title": "Gradually varied flow: classification and M and S profiles",
+            "html": "<p><em>Gradually varied flow</em> is steady flow whose depth changes slowly along the channel, so hydrostatic pressure and uniform-flow friction laws still apply locally. Steadiness is a separate observation, that nothing changes with time at fixed sections; gradual variation along the channel alone would not prove it.</p><p>Profiles compare the actual depth y with normal depth \\(y_n\\) and critical depth \\(y_c\\). On a mild slope \\(y_n \\gt y_c\\); on a steep slope \\(y_n \\lt y_c\\).</p><table><thead><tr><th scope='col'>Profile</th><th scope='col'>Depth ordering</th><th scope='col'>Typical setting</th></tr></thead><tbody><tr><th scope='row'>M1</th><td>\\(y \\gt y_n \\gt y_c\\)</td><td>Backwater behind a dam or weir</td></tr><tr><th scope='row'>M2</th><td>\\(y_n \\gt y \\gt y_c\\)</td><td>Drawdown toward a free overfall</td></tr><tr><th scope='row'>S2</th><td>\\(y_c \\gt y \\gt y_n\\)</td><td>Drawdown from critical depth on a steep reach</td></tr></tbody></table><p>Where a long mild reach meets a long steep reach with free outfall, critical depth forms near the slope break: M2 upstream and S2 downstream. A submerged control or tailwater can change this.</p>",
+            "moreHtml": "<p>The rest of the family: M3 lies below critical depth on a mild slope, as downstream of a sluice gate; S1 lies above both reference depths on a steep slope; S3 lies below normal depth on a steep slope.</p>",
             "points": [
               {
-                "html": "The key result is M2 upstream and S2 downstream.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00063",
-                    "label": "p. 12; topic 3 point 59"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Steady, nonuniform and gradually varied.",
+                "html": "Depth changing slowly along a channel while every fixed section reads constant with time is steady, nonuniform and gradually varied flow.",
                 "sources": [
                   {
                     "id": "CAP4-03-00082",
@@ -3127,20 +3214,25 @@
                 ]
               },
               {
-                "html": "The key result is y &gt; yn &gt; yc.",
+                "html": "An M1 backwater profile on a mild slope has the ordering \\(y \\gt y_n \\gt y_c\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00122",
                     "label": "p. 14; topic 3 point 120"
                   }
                 ]
+              },
+              {
+                "html": "A long mild reach followed by a long steep reach with free outfall usually gives M2 upstream and S2 downstream of the slope break.",
+                "sources": [
+                  {
+                    "id": "CAP4-03-00063",
+                    "label": "p. 12; topic 3 point 59"
+                  }
+                ]
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-03-00063",
-                "label": "p. 12; topic 3 point 59"
-              },
               {
                 "id": "CAP4-03-00082",
                 "label": "p. 13; topic 3 point 81"
@@ -3148,17 +3240,34 @@
               {
                 "id": "CAP4-03-00122",
                 "label": "p. 14; topic 3 point 120"
+              },
+              {
+                "id": "CAP4-03-00063",
+                "label": "p. 12; topic 3 point 59"
               }
             ]
           },
           {
             "id": "weirs-and-spillway-outlets",
-            "title": "Weirs and spillway outlets: head-discharge scaling and local loss coefficients",
-            "html": "<p>Overflow structures follow a common form, Q = C L H<sup>3/2</sup>, where L is the effective crest length and H the total head above the crest. The 3/2 power comes from critical-type flow over the control: discharge per unit width is depth times velocity, the depth grows in proportion to H and the velocity with √H.</p><p>If C and L stay constant, multiplying the head by k multiplies the discharge by k<sup>3/2</sup>. For an ogee spillway, however, C varies with the ratio of actual head to design head, so a constant C is an assumption that must be stated.</p><p>A broad-crested weir has a crest long enough for the flow to become nearly parallel, so critical depth forms on the crest and acts as the control. With a smooth, rounded entrance and a crest short enough to keep friction small, separation and dissipation between the approach and the control are limited, and a low-loss energy equation works well. Friction, entrance geometry, submergence and any downstream dissipation still matter, so this is a conditional advantage rather than a universal ranking of weirs.</p><p>At a spillway or channel outlet, local dissipation is often written h<sub>L</sub> = KV<sub>ref</sub><sup>2</sup>/(2g). A tabulated K is valid only for compatible outlet geometry, submergence and reference velocity, and the expression describes dissipated head, not lost discharge.</p>",
-            "moreHtml": "<p>Derivation for an ideal broad-crested weir: critical depth on the crest is 2H/3 and the crest velocity is √(g × 2H/3), so q = √g (2H/3)<sup>3/2</sup> ≈ 1.705H<sup>3/2</sup> in SI units before any discharge coefficient. Illustrative check: with constant C and L, doubling the head raises the discharge 2<sup>1.5</sup> = 2.83 times.</p>",
+            "title": "Weirs and spillway outlets: head-discharge scaling and local losses",
+            "html": "<p>Overflow structures follow a common form, with L the effective crest length and H the total head above the crest. The 3/2 power comes from critical-type flow over the control: the depth grows with H and the velocity with \\(\\sqrt{H}\\). If C and L stay constant, multiplying the head by k multiplies the discharge by \\(k^{3/2}\\). For an ogee spillway C varies with the ratio of actual to design head, so constancy is an assumption.</p><p>A <em>broad-crested weir</em> has a crest long enough for nearly parallel flow, so critical depth forms on it. With a smooth, rounded entrance and a crest short enough to keep friction small, separation and dissipation are limited. This is a conditional advantage, not a universal ranking of weirs.</p><p>A local outlet loss coefficient is valid only for compatible geometry, submergence and reference velocity, and it describes dissipated head, not lost discharge.</p>",
+            "formulas": [
+              {
+                "label": "Weir discharge",
+                "tex": "Q = C L H^{3/2}"
+              },
+              {
+                "label": "Local outlet loss",
+                "tex": "h_L = \\dfrac{K V_{\\text{ref}}^2}{2g}"
+              }
+            ],
+            "example": {
+              "title": "Worked example: the head quadruples",
+              "html": "<p>With C and L constant, \\(Q_2/Q_1 = 4^{3/2} = 8\\). For an ideal broad-crested weir, critical depth on the crest is 2H/3, which gives \\(q \\approx 1.705H^{3/2}\\) in SI units before any coefficient.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Smooth transitions limit separation and dissipation.",
+                "html": "A broad-crested weir with a smooth rounded entrance and a short crest has small entrance losses because smooth transitions limit separation and dissipation.",
                 "sources": [
                   {
                     "id": "CAP4-03-00067",
@@ -3167,7 +3276,7 @@
                 ]
               },
               {
-                "html": "The key result is 8. This is the reviewed topic result.",
+                "html": "With C and L constant, quadrupling the head over an ogee weir multiplies the discharge by \\(4^{3/2}\\) = 8.",
                 "sources": [
                   {
                     "id": "CAP4-03-00080",
@@ -3176,7 +3285,7 @@
                 ]
               },
               {
-                "html": "The key result is Outlet geometry, submergence and the specified velocity reference.",
+                "html": "A tabulated outlet K applies only when the outlet geometry, submergence and the specified velocity reference match the calculation.",
                 "sources": [
                   {
                     "id": "CAP4-03-00145",
@@ -3203,11 +3312,24 @@
           {
             "id": "sediment-incipient-motion-shields",
             "title": "Sediment: incipient motion, the Shields diagram and bed load",
-            "html": "<p>Flow over a loose, noncohesive bed exerts a mean boundary shear stress, which for uniform flow is τ<sub>0</sub> = ρgRS. Grains begin to move when this stress exceeds a critical value. The Shields diagram expresses the threshold in dimensionless form: the Shields parameter θ = τ/[(ρ<sub>s</sub> − ρ)gd] at incipient motion, θ<sub>c</sub>, is plotted against a particle-scale Reynolds number. Rearranged, the critical shear stress is</p><p>τ<sub>c</sub> = θ<sub>c</sub>(ρ<sub>s</sub> − ρ)gd</p><p>Two details are essential: use the submerged density difference ρ<sub>s</sub> − ρ rather than the grain density alone, and convert the grain diameter to metres. θ<sub>c</sub> must be read for the particular sediment and flow condition; it is not universal. The diagram concerns the start of grain motion, not critical depth in open-channel flow, settling velocity or sediment concentration.</p><p>Once grains move, transport is divided by mechanism. Bed load grains stay in or near contact with the bed, moving by rolling or sliding and by short hops close to it (saltation). Suspended load is held up in the water column by turbulence against settling. Dissolved load travels as solutes rather than as grains.</p>",
-            "moreHtml": "<p>Illustrative check with an assumed θ<sub>c</sub> = 0.05, ρ<sub>s</sub> = 2650 kg/m<sup>3</sup> and d = 5 mm: τ<sub>c</sub> = 0.05 × 1650 × 9.81 × 0.005 ≈ 4.05 Pa. A wide channel 2 m deep reaches this bed shear when S = 4.05/(1000 × 9.81 × 2) ≈ 0.00021.</p>",
+            "html": "<p>Flow over a loose, noncohesive bed exerts a mean boundary shear stress, and grains begin to move when it exceeds a critical value. The <em>Shields diagram</em> expresses the threshold in dimensionless form: the Shields parameter at incipient motion is plotted against a particle-scale Reynolds number.</p><p>Two details are essential: use the submerged density difference rather than the grain density alone, and convert the grain diameter to metres. The critical Shields value must be read for the particular sediment and flow; it is not universal, and the diagram concerns the start of grain motion, not critical depth.</p><p>Once grains move, <em>bed load</em> stays near the bed, rolling, sliding and making short saltation hops. Suspended load is held up by turbulence, and dissolved load travels as solutes.</p>",
+            "formulas": [
+              {
+                "label": "Uniform-flow bed shear",
+                "tex": "\\tau_0 = \\rho g R S"
+              },
+              {
+                "label": "Critical shear from the Shields parameter",
+                "tex": "\\tau_c = \\theta_c(\\rho_s - \\rho)\\,g\\,d"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a 2 mm grain",
+              "html": "<p>With \\(\\theta_c = 0.050\\), \\(\\rho_s = 2650\\) kg/m³ and d = 0.002 m:</p>\\[\\begin{aligned}\\tau_c &amp;= 0.050 \\times 1650 \\times 9.81 \\times 0.002\\\\ &amp;= 1.62\\ \\text{Pa}\\end{aligned}\\]"
+            },
             "points": [
               {
-                "html": "The key result is Dimensionless critical bed shear for incipient motion.",
+                "html": "The Shields diagram estimates the dimensionless critical bed shear for incipient motion of noncohesive bed grains.",
                 "sources": [
                   {
                     "id": "CAP4-03-00127",
@@ -3216,7 +3338,7 @@
                 ]
               },
               {
-                "html": "The key result is 1.62 Pa.",
+                "html": "With \\(\\theta_c\\) = 0.050, grain density 2650 kg/m³ and d = 2 mm, the critical shear is about 1.62 Pa.",
                 "sources": [
                   {
                     "id": "CAP4-03-00128",
@@ -3225,7 +3347,7 @@
                 ]
               },
               {
-                "html": "The key result is Rolling, sliding and short saltation hops near the bed.",
+                "html": "Bed load moves by rolling, sliding and short saltation hops near the bed, unlike suspended or dissolved load.",
                 "sources": [
                   {
                     "id": "CAP4-03-00146",
@@ -3251,12 +3373,21 @@
           },
           {
             "id": "bank-stability-tractive-force",
-            "title": "Grains on channel banks: why the side-slope threshold is lower than the bed threshold",
-            "html": "<p>A grain on a sloping bank is harder to keep in place than an identical grain on a horizontal bed. The simple tractive-force model assumes that the drag exerted by the flow is directed downstream along the channel and neglects lift. On the bed, friction has to resist only the drag.</p><p>On a bank inclined at angle φ, the grain's submerged weight W′ has a component W′ sin φ down the slope, and the contact normal force falls to W′ cos φ. The resultant of the drag and this downslope pull must now be resisted by a smaller frictional capacity, so the drag, and hence the flow shear, needed to start motion is lower.</p><p>The reduction depends on the bank angle and on the sediment's angle of repose θ. A fixed factor such as 0.75 times the bed threshold can be used only as an explicit assumption in a particular calculation; it is not a universal ratio of incipient-motion stresses for all banks. The shear applied by the flow, which varies around the wetted perimeter, must also be distinguished from the critical shear the bank material can resist.</p>",
-            "moreHtml": "<p>Balancing forces in this model gives the tractive-force ratio K = τ<sub>bank</sub>/τ<sub>bed</sub> = √(1 − sin<sup>2</sup>φ/sin<sup>2</sup>θ), valid for φ &lt; θ. With an assumed repose angle of 35°, a 3H:1V bank gives K ≈ 0.83 while a 2H:1V bank gives K ≈ 0.63, which is why no single factor fits every bank. A stipulated factor of 0.75 applied to a bed threshold of 6 Pa would give 4.5 Pa.</p>",
+            "title": "Grains on channel banks: why the side-slope threshold is lower",
+            "html": "<p>A grain on a sloping bank is harder to keep in place than an identical grain on a horizontal bed. The simple tractive-force model takes the drag from the flow as acting downstream along the channel and neglects lift. On a bank inclined at angle φ, the grain's submerged weight pulls it down the slope while the contact normal force falls, so the drag needed to start motion is lower.</p><p>The reduction depends on the bank angle and on the sediment's angle of repose θ. A fixed factor such as 0.75 can be used only as an explicit assumption in a particular calculation, not as a universal ratio. The shear the flow applies must also be distinguished from the critical shear the bank can resist.</p>",
+            "formulas": [
+              {
+                "label": "Tractive-force ratio, bank angle below repose angle",
+                "tex": "K = \\dfrac{\\tau_{\\text{bank}}}{\\tau_{\\text{bed}}} = \\sqrt{1 - \\dfrac{\\sin^2\\phi}{\\sin^2\\theta}}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<p>A stipulated factor of 0.75 on a 4 Pa bed threshold gives \\(0.75 \\times 4 = 3\\) Pa. With a 35° angle of repose, the formula gives K ≈ 0.83 for a 3H:1V bank but ≈ 0.63 for a 2H:1V bank, which is why no single factor fits every bank.</p>"
+            },
             "points": [
               {
-                "html": "The key result is 3 Pa.",
+                "html": "A stipulated bank factor of 0.75 applied to a 4 Pa bed threshold gives a bank limit of 3 Pa, valid only as an explicit assumption.",
                 "sources": [
                   {
                     "id": "CAP4-03-00022",
@@ -3265,7 +3396,7 @@
                 ]
               },
               {
-                "html": "The key result is Downslope submerged weight uses part of the frictional resistance.",
+                "html": "On a bank the downslope submerged weight uses part of the frictional resistance, so the incipient-motion threshold is lower than on the bed.",
                 "sources": [
                   {
                     "id": "CAP4-03-00149",
@@ -3288,76 +3419,68 @@
         ],
         "formulaSheet": [
           {
-            "label": "Quantity Relation used in this topic Section properties",
-            "tex": "R = A/P"
-          },
-          {
-            "label": "Quantity Relation used in this topic Section properties (2)",
-            "tex": "D = A/T"
-          },
-          {
-            "label": "Trapezoid properties",
-            "tex": "A=(B+zy)y"
+            "label": "Hydraulic radius and depth",
+            "tex": "R = \\dfrac{A}{P},\\quad D = \\dfrac{A}{T}"
           },
           {
             "label": "Trapezoid wetted perimeter",
-            "tex": "P=B+2y\\sqrt{1+z^2}"
+            "tex": "P = B + 2y\\sqrt{1 + z^2}"
           },
           {
-            "label": "Trapezoid top width",
-            "tex": "T=B+2zy"
+            "label": "Manning, SI",
+            "tex": "V = \\dfrac{R^{2/3}S^{1/2}}{n}"
           },
           {
-            "label": "Trapezoid wetted perimeter",
-            "tex": "P=B+2y\\sqrt{1+z^2}"
+            "label": "Chezy",
+            "tex": "V = C\\sqrt{RS}"
           },
           {
-            "label": "Trapezoid top width",
-            "tex": "T=B+2zy"
+            "label": "Strickler estimate",
+            "tex": "n = \\dfrac{d^{1/6}}{21.1}"
           },
           {
-            "label": "Trapezoid wetted perimeter",
-            "tex": "P=B+2y\\sqrt{1+z^2}"
+            "label": "Froude number",
+            "tex": "Fr = \\dfrac{V}{\\sqrt{gD}}"
           },
           {
-            "label": "Trapezoid top width",
-            "tex": "T=B+2zy"
+            "label": "Critical flow",
+            "tex": "\\dfrac{Q^2T}{gA^3} = 1"
           },
           {
-            "label": "Trapezoid wetted perimeter",
-            "tex": "P=B+2y\\sqrt{1+z^2}"
+            "label": "Section factor",
+            "tex": "Z = A\\sqrt{D}"
           },
           {
-            "label": "Trapezoid top width",
-            "tex": "T=B+2zy"
+            "label": "Critical depth, rectangle",
+            "tex": "y_c = \\left(\\dfrac{q^2}{g}\\right)^{1/3}"
           },
           {
-            "label": "Uniform flow",
-            "tex": "Manning V = R^{2/3}S^{1/2}/n"
+            "label": "Specific energy, rectangle",
+            "tex": "E = y + \\dfrac{q^2}{2gy^2}"
           },
           {
-            "label": "Empirical roughness estimate",
-            "tex": "n=d^{1/6}/21.1"
+            "label": "Minimum specific energy",
+            "tex": "E_c = 1.5\\,y_c"
           },
           {
-            "label": "Uniform flow (3)",
-            "tex": "C = R^{1/6}/n"
+            "label": "Sequent depths",
+            "tex": "\\dfrac{y_2}{y_1} = \\dfrac{\\sqrt{1 + 8Fr_1^2} - 1}{2}"
           },
           {
-            "label": "Empirical roughness estimate",
-            "tex": "n=d^{1/6}/21.1"
+            "label": "Jump head loss",
+            "tex": "\\Delta E = \\dfrac{(y_2 - y_1)^3}{4y_1y_2}"
           },
           {
-            "label": "Froude number and critical flow",
-            "tex": "Fr = V/√(gD)"
+            "label": "Weir discharge",
+            "tex": "Q = C L H^{3/2}"
           },
           {
-            "label": "Froude number and critical flow (2)",
-            "tex": "critical when Q^{2}T/(gA^{3}) = 1"
+            "label": "Bed shear",
+            "tex": "\\tau_0 = \\rho g R S"
           },
           {
-            "label": "Froude number and critical flow (3)",
-            "tex": "section factor Z = A√D = Q/√g"
+            "label": "Critical shear",
+            "tex": "\\tau_c = \\theta_c(\\rho_s - \\rho)\\,g\\,d"
           }
         ],
         "cautions": [
@@ -3377,7 +3500,7 @@
             "id": "caution-strickler-rounding",
             "status": "corrected",
             "prompt": "The Strickler estimate for a 6 cm grain gives Manning's n = 0.029",
-            "html": "<p>Recomputing, (0.06)<sup>1/6</sup>/21.1 = 0.02965, which rounds to 0.0297 at four decimal places; the printed 0.029 truncates rather than rounds. The relation itself is a stipulated empirical estimate, not a universal roughness law.</p>",
+            "html": "<p>Recomputing, \\(0.06^{1/6}/21.1 = 0.02965\\), which rounds to 0.0297 at four decimal places; the printed 0.029 truncates rather than rounds. The relation itself is a stipulated empirical estimate, not a universal roughness law.</p>",
             "sources": [
               {
                 "id": "CAP4-03-00055",
@@ -3437,7 +3560,7 @@
             "id": "caution-trapezoid-wetted-perimeter",
             "status": "corrected",
             "prompt": "Weighted perimeter of a trapezoidal section is B + 2y√(1 + z²)",
-            "html": "<p>The capsule prints 'weighted' perimeter and drops the square root. The correct term is wetted perimeter, and each sloping side contributes y√(1 + z<sup>2</sup>), as restored from the section geometry. The free-surface top width is not included.</p>",
+            "html": "<p>The capsule prints 'weighted' perimeter and drops the square root. The correct term is wetted perimeter, and each sloping side contributes \\(y\\sqrt{1 + z^2}\\), as restored from the section geometry. The free-surface top width is not included.</p>",
             "sources": [
               {
                 "id": "CAP4-03-00075",
@@ -3461,7 +3584,7 @@
             "id": "caution-best-trapezoid-top-width",
             "status": "corrected",
             "prompt": "In the most economical trapezoidal section, top width equals the sum of the side slopes",
-            "html": "<p>The top width equals the sum of the two submerged sloping-side lengths, each y√(1 + z<sup>2</sup>), not the sum of the side slopes. A side slope is a dimensionless ratio and cannot form a width.</p>",
+            "html": "<p>The top width equals the sum of the two submerged sloping-side lengths, each \\(y\\sqrt{1 + z^2}\\), not the sum of the side slopes. A side slope is a dimensionless ratio and cannot form a width.</p>",
             "sources": [
               {
                 "id": "CAP4-03-00079",
@@ -3553,52 +3676,59 @@
         "code": "ACiE0306",
         "questionCount": 27,
         "format": 2,
-        "summary": "<p>Hydrology covers Hydrologic cycle and water balance, flow measurement and rating curves, hydrographs and synthetic unit hydrographs, rainfall-runoff analysis, flood frequency and design floods, groundwater hydrology. The sections below reorganize the reviewed capsule material into concepts, calculations, qualifications and limits, with every mapped question linked to a key fact.</p>",
+        "summary": "<p>This subchapter covers engineering hydrology: the hydrologic cycle and dew, precipitation mechanisms, rainfall measurement and areal averages, rating curves and hydrograph recession, catchment shape, unit hydrographs, the rational method, return periods and regional flood relations, Nepal's river groups, storage for a dry-season deficit and bridge clearance above the design flood.</p>",
         "blocks": [
           {
             "id": "hydrology-scope-and-dew-formation",
             "title": "Hydrology, the hydrologic cycle and how dew forms",
-            "html": "<p>Hydrology is the science of the occurrence, circulation and distribution of water in the earth-atmosphere system. It follows water through the hydrologic cycle: evaporation and transpiration carry moisture into the atmosphere, condensation and precipitation return it, and on land it infiltrates, recharges groundwater storage, runs off over the surface and drains to rivers and the sea.</p><p>A study that traces rainfall, infiltration, groundwater and river discharge across a basin is therefore hydrological. Hydraulics, by contrast, concerns the mechanics of flowing water, hydrostatics deals with fluids at rest, and rheology with how materials deform.</p><p>For a catchment over any period, a water balance accounts for these movements: inflow minus outflow equals the change in storage.</p><p>Dew is condensation directly onto a cooled surface, not falling precipitation. The dew point is the temperature to which air must be cooled, at constant moisture content, to become saturated. Dew forms when an exposed surface cools to or below the dew point of the adjacent air, which then saturates and deposits water. A dew point above 0 °C does not by itself guarantee dew: the surface must actually cool enough. When the dew point and the surface stay above freezing, the condensate is liquid.</p>",
-            "moreHtml": "<p>Illustrative check: air with a dew point of 8 °C over a leaf that cools from 15 °C to 9 °C overnight does not saturate at the leaf, so no dew forms; further cooling of the leaf to 7 °C would allow liquid dew to condense.</p>",
+            "html": "<p><em>Hydrology</em> is the science of the occurrence, circulation and distribution of water in the earth–atmosphere system. It follows water through the hydrologic cycle: evaporation and transpiration carry moisture up, condensation and precipitation return it, and on land it infiltrates, recharges groundwater, runs off and drains to rivers and the sea. Hydraulics concerns the mechanics of flowing water, hydrostatics fluids at rest, and rheology how materials deform.</p><p>Dew is condensation directly onto a cooled surface, not falling precipitation. The <em>dew point</em> is the temperature to which air must be cooled, at constant moisture content, to become saturated. Dew forms only when the surface cools to or below the dew point of the adjacent air; a dew point above 0 °C does not by itself guarantee dew. When both stay above freezing, the condensate is liquid.</p>",
+            "formulas": [
+              {
+                "label": "Catchment water balance over a period",
+                "tex": "\\text{inflow} - \\text{outflow} = \\Delta S",
+                "where": "ΔS is the change in storage within the catchment over the same period."
+              }
+            ],
+            "moreHtml": "<p>Air with a dew point of 8 °C over a leaf that cools from 15 °C to 9 °C does not saturate at the leaf, so no dew forms; further cooling to 7 °C would let liquid dew condense.</p>",
             "points": [
               {
-                "html": "The key result is The surface cools below the dew point.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00020",
-                    "label": "p. 11; topic 3 point 17"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is Hydrology. This is the reviewed topic result.",
+                "html": "Hydrology is the discipline that integrates the occurrence, circulation and distribution of water, from rainfall and infiltration to groundwater and river discharge.",
                 "sources": [
                   {
                     "id": "CAP4-03-00083",
                     "label": "p. 13; topic 3 point 82"
                   }
                 ]
+              },
+              {
+                "html": "Liquid dew forms when the surface cools below the dew point of the adjacent air; a dew point above freezing alone is not enough.",
+                "sources": [
+                  {
+                    "id": "CAP4-03-00020",
+                    "label": "p. 11; topic 3 point 17"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-03-00020",
-                "label": "p. 11; topic 3 point 17"
-              },
-              {
                 "id": "CAP4-03-00083",
                 "label": "p. 13; topic 3 point 82"
+              },
+              {
+                "id": "CAP4-03-00020",
+                "label": "p. 11; topic 3 point 17"
               }
             ]
           },
           {
             "id": "precipitation-lifting-mechanisms",
             "title": "Precipitation mechanisms: cyclonic lifting, cold fronts and warm fronts",
-            "html": "<p>Precipitation needs moist air to rise, expand and cool until it saturates, followed by condensation and droplet growth. Hydrology classifies events by what lifts the air:</p><ul><li>Cyclonic: air converges toward a low-pressure system and ascends, producing widespread rain. Frontal precipitation is a form of cyclonic lifting along the boundary between air masses.</li><li>Convective: buoyant, unstable air rises, often after surface heating, giving local intense showers.</li><li>Orographic: terrain forces the air up the windward side of mountains.</li></ul><p>At a cold front, an advancing mass of denser cold air undercuts the warm moist air ahead of it and pushes it upward. Lifted and cooled, the warm air can reach saturation and produce precipitation, provided moisture and instability allow clouds to develop.</p><p>Because a cold front is steep and lifts air rapidly, it often gives a relatively narrow band of short, intense showers that moves with the front. At a gently sloping warm front, warm air rides slowly up over cold air and typically spreads lighter, more prolonged rain over a wider area.</p><p>These are tendencies governed by frontal speed, moisture and instability. Catchment size is not part of the definition of cold-frontal precipitation.</p>",
+            "html": "<p>Precipitation needs moist air to rise, expand and cool until it saturates, followed by condensation and droplet growth. Events are classified by what lifts the air:</p><ul><li><em>Cyclonic</em>: air converges toward a low-pressure system and ascends, giving widespread rain. Frontal precipitation is a form of cyclonic lifting.</li><li><em>Convective</em>: buoyant, unstable air rises, often after surface heating, giving local intense showers.</li><li><em>Orographic</em>: terrain forces the air up the windward side of mountains.</li></ul><p>At a cold front, denser advancing cold air undercuts the warm moist air ahead and pushes it up. Because a cold front is steep and lifts air rapidly, it often gives a relatively narrow band of short, intense showers. A gently sloping warm front lifts warm air slowly over cold air and spreads lighter, longer rain over a wider area. Catchment size is not part of the definition.</p>",
             "moreHtml": "<p>Dew and frost form by condensation on cooled surfaces rather than by lifting of air, so they are not classed with these precipitation mechanisms.</p>",
             "points": [
               {
-                "html": "The key result is Cyclonic lifting.",
+                "html": "Moist air converging on a low-pressure system, rising and cooling to give widespread rain is cyclonic lifting.",
                 "sources": [
                   {
                     "id": "CAP4-03-00091",
@@ -3607,7 +3737,7 @@
                 ]
               },
               {
-                "html": "The key result is Forced ascent and cooling of the warm moist air.",
+                "html": "Cold-frontal precipitation begins with the forced ascent and cooling of the warm moist air undercut by the advancing cold air mass.",
                 "sources": [
                   {
                     "id": "CAP4-03-00092",
@@ -3616,7 +3746,7 @@
                 ]
               },
               {
-                "html": "The key result is A narrower band with shorter, more intense bursts.",
+                "html": "With ample moisture and instability, a steep cold front often gives a narrower band with shorter, more intense bursts than a gentle warm front.",
                 "sources": [
                   {
                     "id": "CAP4-03-00093",
@@ -3642,21 +3772,31 @@
           },
           {
             "id": "rain-gauges-isohyets-double-mass",
-            "title": "Measuring rainfall: recording gauges, isohyets, areal averages and consistency checks",
-            "html": "<p>Gauges. A non-recording, manually read gauge gives only the accumulated depth between readings, typically daily. A recording gauge logs cumulative depth or increments against time, so it reveals how the rain was distributed in time and allows short-duration intensities to be computed, which drainage and flood design need. Recording does not by itself make a gauge more accurate: wind undercatch, calibration, resolution, mechanism losses and maintenance still affect the record.</p><p>Areal rainfall. An isohyet joins points that received equal rainfall depth over the same interval; isobars join equal pressure and isochrones equal travel time. In the isohyetal method, the area between successive isohyets is multiplied by the mean depth of that band and the sum is divided by the total area: mean depth = Σ(A<sub>i</sub>P<sub>i</sub>)/ΣA<sub>i</sub>.</p><p>The method can represent spatial and terrain effects, but its accuracy depends on the observations and on how the contours are drawn; it is not automatically the most accurate method for every basin.</p><p>Consistency. A double-mass curve plots a station's cumulative rainfall against the cumulative mean of a group of consistent neighbouring stations. A consistent record plots as a straight line; a change of slope suggests a changed relationship, perhaps from relocation or altered exposure, which should be investigated before any correction is applied.</p>",
-            "moreHtml": "<p>Illustrative check: bands of 3, 5 and 2 km<sup>2</sup> with mean depths of 30, 50 and 70 mm give (3 × 30 + 5 × 50 + 2 × 70)/10 = 48 mm. If a real change in exposure is confirmed, the affected part of the record is commonly scaled by the ratio of the double-mass slopes on either side of the break.</p>",
+            "title": "Measuring rainfall: recording gauges, isohyets and consistency checks",
+            "html": "<p><em>Gauges.</em> A manually read gauge gives only the depth accumulated between readings, typically daily. A recording gauge logs depth against time, so it shows how the rain was distributed in time and allows the short-duration intensities that drainage and flood design need. Recording does not by itself make a gauge more accurate: wind undercatch, calibration, resolution and maintenance still matter.</p><p><em>Areal rainfall.</em> An <em>isohyet</em> joins points that received equal rainfall depth over the same interval; isobars join equal pressure and isochrones equal travel time. The isohyetal method weights each band's mean depth by its area. It can represent terrain effects, but its accuracy depends on the data and on how the contours are drawn.</p><p><em>Consistency.</em> A <em>double-mass curve</em> plots a station's cumulative rainfall against the cumulative mean of consistent neighbours. A change of slope suggests a changed relationship, perhaps from relocation, to be investigated before correcting.</p>",
+            "formulas": [
+              {
+                "label": "Isohyetal mean depth",
+                "tex": "\\bar{P} = \\dfrac{\\sum A_i P_i}{\\sum A_i}",
+                "where": "A<sub>i</sub> is the area between two successive isohyets and P<sub>i</sub> the mean depth of that band."
+              }
+            ],
+            "example": {
+              "title": "Worked example: two isohyetal bands",
+              "html": "<p>A 5 km<sup>2</sup> basin has a 2 km<sup>2</sup> band averaging 40 mm and a 3 km<sup>2</sup> band averaging 60 mm:</p>\\[\\bar{P} = \\dfrac{2 \\times 40 + 3 \\times 60}{5} = 52\\ \\text{mm}\\]"
+            },
             "points": [
               {
-                "html": "The key result is Double-mass analysis.",
+                "html": "The main advantage of a recording rain gauge is that it records the time distribution of rainfall, so short-burst intensities can be found.",
                 "sources": [
                   {
-                    "id": "CAP4-03-00086",
-                    "label": "p. 13; topic 3 point 85"
+                    "id": "CAP4-03-00100",
+                    "label": "p. 13; topic 3 point 99"
                   }
                 ]
               },
               {
-                "html": "The key result is An isohyet.",
+                "html": "A contour joining sites that received the same rainfall depth, such as 50 mm, over one interval is an isohyet.",
                 "sources": [
                   {
                     "id": "CAP4-03-00088",
@@ -3665,7 +3805,7 @@
                 ]
               },
               {
-                "html": "The key result is 52 mm.",
+                "html": "Isohyetal bands of 2 km<sup>2</sup> at 40 mm and 3 km<sup>2</sup> at 60 mm give a basin-average rainfall of 52 mm.",
                 "sources": [
                   {
                     "id": "CAP4-03-00090",
@@ -3674,19 +3814,19 @@
                 ]
               },
               {
-                "html": "The key result is It records the time distribution of rainfall.",
+                "html": "Double-mass analysis detects a possible inconsistency, such as a gauge relocation, as a change of slope in the cumulative plot.",
                 "sources": [
                   {
-                    "id": "CAP4-03-00100",
-                    "label": "p. 13; topic 3 point 99"
+                    "id": "CAP4-03-00086",
+                    "label": "p. 13; topic 3 point 85"
                   }
                 ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-03-00086",
-                "label": "p. 13; topic 3 point 85"
+                "id": "CAP4-03-00100",
+                "label": "p. 13; topic 3 point 99"
               },
               {
                 "id": "CAP4-03-00088",
@@ -3697,18 +3837,18 @@
                 "label": "p. 13; topic 3 point 89"
               },
               {
-                "id": "CAP4-03-00100",
-                "label": "p. 13; topic 3 point 99"
+                "id": "CAP4-03-00086",
+                "label": "p. 13; topic 3 point 85"
               }
             ]
           },
           {
             "id": "rating-curves-and-hydrograph-recession",
             "title": "Stage-discharge rating curves and the recession limb of a hydrograph",
-            "html": "<p>Continuous discharge records are rarely measured directly. A gauging station records stage, the water-surface elevation above a fixed gauge datum, and converts it to discharge with a rating curve calibrated from paired stage and discharge measurements. The relationship holds only while the hydraulic control stays stable.</p><p>Scour or deposition shifts it, backwater from downstream can raise stage without extra flow, and during rising and falling floods a looped relationship can mean that one stage does not always correspond to one discharge. Ratings therefore need periodic check measurements.</p><p>A flood hydrograph built from such records has a rising limb, a crest and a recession limb. After rainfall input stops, the recession is fed mainly by the gradual emptying of basin storage: surface detention, channel storage, soil water and groundwater. Its shape is therefore largely a basin property, which is why recession curves help to separate baseflow and to anticipate low flows.</p><p>It is not wholly independent of the storm, though: antecedent wetness and the storm's spatial and temporal distribution decide how much storage is filled, and which flow paths are active, when the recession begins.</p>",
+            "html": "<p>A gauging station records <em>stage</em>, the water-surface elevation above a fixed gauge datum, and converts it to discharge with a <em>rating curve</em> calibrated from paired stage and discharge measurements. The relationship holds only while the hydraulic control stays stable. Scour or deposition shifts it, backwater can raise stage without extra flow, and during floods a looped relationship means one stage need not always give one discharge, so ratings need periodic checks.</p><p>A flood hydrograph has a rising limb, a crest and a recession limb. After rainfall stops, the recession is fed mainly by the gradual emptying of basin storage: surface detention, channel storage, soil water and groundwater. Its shape is therefore largely a basin property, useful for separating baseflow and anticipating low flows. It is not wholly independent of the storm: antecedent wetness and storm distribution decide how much storage is filled when recession begins.</p>",
             "points": [
               {
-                "html": "The key result is A stage-discharge rating curve.",
+                "html": "The calibrated relation a gauging station uses to turn measured stage into discharge is a stage-discharge rating curve.",
                 "sources": [
                   {
                     "id": "CAP4-03-00094",
@@ -3717,7 +3857,7 @@
                 ]
               },
               {
-                "html": "The key result is Drainage and release of water stored in the basin.",
+                "html": "Once rainfall ceases, the recession limb is governed mainly by the drainage and release of water stored in the basin.",
                 "sources": [
                   {
                     "id": "CAP4-03-00096",
@@ -3740,11 +3880,21 @@
           {
             "id": "catchment-shape-and-form-factor",
             "title": "Catchment shape, basin form factor and flood-peak response",
-            "html": "<p>Basin shape influences how runoff from different parts of a catchment arrives at the outlet. The basin form factor is the ratio of mean basin width to axial basin length. Since mean width is A<sub>b</sub>/L<sub>b</sub>,</p><p>F<sub>f</sub> = A<sub>b</sub>/L<sub>b</sub><sup>2</sup></p><p>which is a dimensionless plan-shape measure. An elongated, fern-shaped basin with a long main stream fed by short tributaries has a low form factor; a compact, fan-shaped basin whose tributaries converge near the outlet has a high one.</p><p>For equal areas, comparable slopes and a spatially uniform storm, the elongated basin generally has longer main travel paths and its tributary contributions arrive spread out in time. Its hydrograph peak is therefore usually lower and later, with a longer base. The fan-shaped basin tends to synchronise arrivals and produce a sharper, higher peak. Shape is only one influence: drainage arrangement, slope, storage and storm movement can modify or even reverse this tendency.</p><p>The basin form factor should not be confused with the channel section factor for critical flow, A√D, which has dimensions and uses the wetted flow area of a channel cross-section.</p>",
-            "moreHtml": "<p>Illustrative check: two 200 km<sup>2</sup> basins with axial lengths of 25 km and 15 km have form factors 200/625 = 0.32 and 200/225 = 0.89. The first is the more elongated and would be expected to give the more attenuated peak.</p>",
+            "html": "<p>Basin shape influences how runoff from different parts of a catchment arrives at the outlet. The <em>basin form factor</em> is the ratio of mean basin width to axial basin length; since mean width is area over length, it is a dimensionless plan-shape measure. An elongated, fern-shaped basin has a low form factor; a compact, fan-shaped basin whose tributaries meet near the outlet has a high one.</p><p>For equal areas, comparable slopes and a spatially uniform storm, the elongated basin generally has longer main travel paths and its tributary contributions arrive spread out in time, so its peak is usually lower and later. The fan-shaped basin tends to synchronize arrivals and give a sharper, higher peak. Drainage arrangement, slope, storage and storm movement can modify this.</p><p>Do not confuse it with the channel section factor \\(A\\sqrt{D}\\), which has dimensions.</p>",
+            "formulas": [
+              {
+                "label": "Basin form factor",
+                "tex": "F_f = \\dfrac{A_b}{L_b^2}",
+                "where": "A<sub>b</sub> is the basin plan area and L<sub>b</sub> the axial basin length."
+              }
+            ],
+            "example": {
+              "title": "Worked example: two 200 km² basins",
+              "html": "<p>With axial lengths of 25 km and 15 km, \\(F_f = 200/625 = 0.32\\) and \\(200/225 = 0.89\\). The first is more elongated and would be expected to give the more attenuated peak.</p>"
+            },
             "points": [
               {
-                "html": "The key result is Longer main travel paths and a less synchronized runoff peak.",
+                "html": "For equal areas and a uniform storm, an elongated fern-shaped basin has longer main travel paths and a less synchronized runoff peak.",
                 "sources": [
                   {
                     "id": "CAP4-03-00087",
@@ -3753,7 +3903,7 @@
                 ]
               },
               {
-                "html": "The key result is Ab/Lb 2.",
+                "html": "The usual basin form factor is \\(A_b/L_b^2\\), plan area over the square of axial length, a dimensionless measure.",
                 "sources": [
                   {
                     "id": "CAP4-03-00105",
@@ -3775,48 +3925,77 @@
           },
           {
             "id": "unit-hydrograph-derivation-and-duration",
-            "title": "Unit hydrographs: deriving ordinates and changing the rainfall duration",
-            "html": "<p>A unit hydrograph (UH) of duration D is the direct-runoff hydrograph produced by 1 cm, or another unit depth, of effective rainfall falling uniformly over the catchment in D hours. The method assumes the catchment responds linearly and does not change with time, so runoff ordinates scale with runoff depth and the responses to successive bursts add.</p><p>Deriving a UH. First separate baseflow from the observed flood hydrograph to obtain the direct-runoff hydrograph (DRH). Find the direct-runoff depth as the DRH volume divided by the catchment area. Then divide every DRH ordinate by that depth in centimetres. The rainfall duration names the UH; it is never the divisor.</p><p>Changing the duration. A UH for duration nD can be built from D-hour UHs when n is an integer: superpose n copies, each lagged by D hours from the previous one, and divide the sum by n so that the runoff depth remains one unit. The lagged copies extend the support, so the base lengthens by (n − 1)D and the peak generally becomes lower and broader. For non-integer ratios the S-curve method is used.</p>",
-            "moreHtml": "<p>Illustrative checks: a flood peaking at 170 m<sup>3</sup>/s over a baseflow of 20 m<sup>3</sup>/s, from 2.5 cm of direct runoff, gives a UH peak of (170 − 20)/2.5 = 60 m<sup>3</sup>/s. A 3-hour UH with a 12-hour base yields a 6-hour UH whose base is 12 + 3 = 15 hours.</p>",
-            "points": [
+            "title": "Unit hydrographs: deriving ordinates and changing the duration",
+            "html": "<p>A <em>unit hydrograph</em> (UH) of duration D is the direct-runoff hydrograph produced by 1 cm of effective rainfall falling uniformly over the catchment in D hours. The method assumes a linear, time-invariant catchment, so ordinates scale with runoff depth and responses to successive bursts add.</p><ol><li>Separate baseflow from the observed hydrograph to get the direct-runoff hydrograph (DRH).</li><li>Find the direct-runoff depth as DRH volume over catchment area.</li><li>Divide every DRH ordinate by that depth in centimetres. The rainfall duration names the UH; it is never the divisor.</li></ol><p>A UH for duration nD, with n an integer, is built by superposing n copies of the D-hour UH, each lagged by D hours, and dividing the sum by n. The base lengthens by \\((n - 1)D\\) and the peak becomes lower and broader. Non-integer ratios need the S-curve method.</p>",
+            "formulas": [
               {
-                "html": "The key result is 10 hours.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00085",
-                    "label": "p. 13; topic 3 point 84"
-                  }
-                ]
+                "label": "Unit-hydrograph ordinate",
+                "tex": "u = \\dfrac{Q - Q_b}{d}",
+                "where": "Q is the total flow, Q<sub>b</sub> the baseflow and d the direct-runoff depth in cm."
               },
               {
-                "html": "The key result is 20 m 3 /s.",
+                "label": "Base of the nD-hour unit hydrograph",
+                "tex": "T_{nD} = T_D + (n - 1)D"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>A peak of 75 m<sup>3</sup>/s over 15 m<sup>3</sup>/s baseflow from 3 cm of runoff: \\(u = (75 - 15)/3 = 20\\) m<sup>3</sup>/s.</li><li>A 2-hour UH with an 8-hour base, averaged with a copy lagged 2 hours, gives a 4-hour UH whose base is 8 + 2 = 10 hours.</li></ol>"
+            },
+            "points": [
+              {
+                "html": "A 75 m<sup>3</sup>/s peak with 15 m<sup>3</sup>/s baseflow and 3 cm of direct runoff gives a 1 cm unit-hydrograph peak of 20 m<sup>3</sup>/s.",
                 "sources": [
                   {
                     "id": "CAP4-03-00097",
                     "label": "p. 13; topic 3 point 96"
                   }
                 ]
+              },
+              {
+                "html": "Averaging two 2-hour unit hydrographs with 8-hour bases, lagged by 2 hours, gives a 4-hour unit hydrograph with a 10 hours base.",
+                "sources": [
+                  {
+                    "id": "CAP4-03-00085",
+                    "label": "p. 13; topic 3 point 84"
+                  }
+                ]
               }
             ],
             "sources": [
               {
-                "id": "CAP4-03-00085",
-                "label": "p. 13; topic 3 point 84"
-              },
-              {
                 "id": "CAP4-03-00097",
                 "label": "p. 13; topic 3 point 96"
+              },
+              {
+                "id": "CAP4-03-00085",
+                "label": "p. 13; topic 3 point 84"
               }
             ]
           },
           {
             "id": "rational-method-time-of-concentration",
-            "title": "Rational method: time of concentration, design intensity and unit conversions",
-            "html": "<p>The rational method estimates the peak runoff from a small catchment as Q = CIA, where C is a runoff coefficient, I the design rainfall intensity and A the area. Its key idea is that the peak occurs when the whole catchment is contributing, which first happens after the time of concentration T<sub>c</sub>, the travel time from the hydraulically most remote point to the outlet.</p><p>In conventional design the intensity is therefore read from an intensity-duration-frequency relation for a duration equal to T<sub>c</sub> at the chosen return period. Rain may last longer than T<sub>c</sub>; equality is a design selection, not a condition for runoff to occur.</p><p>Along the controlling path, T<sub>c</sub> is the sum of successive travel segments. In urban drainage it is the entry (inlet) time to the first inlet plus the travel time through drains or channels, T<sub>c</sub> = T<sub>e</sub> + T<sub>f</sub>. Taking only the longer segment omits part of the path.</p><p>Units decide the constant. Since 1 cm/h over 1 hectare is 100 m<sup>3</sup>/h = 1/36 m<sup>3</sup>/s, Q = CIA/36 with I in cm/h and A in hectares. With I in mm/h the divisor becomes 360 for hectares, and Q = 0.278CIA for square kilometres.</p><p>Short-duration intensity fits often take the form I = a/(t + b). Such a formula needs its units, location, return period and valid duration range before use; evaluate its denominator first.</p>",
-            "moreHtml": "<p>Illustrative check: C = 0.5, I = 50 mm/h and A = 2 km<sup>2</sup> give Q = 0.278 × 0.5 × 50 × 2 ≈ 13.9 m<sup>3</sup>/s. With an assumed local fit I = 900/(t + 15) in mm/h and a time of concentration of 5 + 25 = 30 minutes, the design intensity is 900/45 = 20 mm/h.</p>",
+            "title": "Rational method: time of concentration, design intensity and units",
+            "html": "<p>The <em>rational method</em> estimates the peak runoff from a small catchment from a runoff coefficient C, a design intensity I and the area A. The peak occurs when the whole catchment contributes, which first happens after the <em>time of concentration</em>, the travel time from the hydraulically most remote point to the outlet. So the intensity is read from an intensity–duration–frequency relation for a duration equal to that time. Rain may last longer; equality is a design selection, not a condition for runoff.</p><p>In urban drainage the time of concentration is the entry time to the first inlet plus the travel time through the drains; taking only the longer segment omits part of the path.</p><p>Units decide the constant: 1 cm/h over 1 hectare is 100 m<sup>3</sup>/h, or 1/36 m<sup>3</sup>/s. Short-storm fits of the form \\(I = a/(t + b)\\) need their units, location, return period and valid range stated; evaluate the denominator first.</p>",
+            "formulas": [
+              {
+                "label": "Rational method, I in cm/h and A in hectares",
+                "tex": "Q = \\dfrac{CIA}{36}",
+                "where": "With I in mm/h the divisor is 360 for hectares; with I in mm/h and A in km<sup>2</sup>, Q = 0.278CIA."
+              },
+              {
+                "label": "Time of concentration",
+                "tex": "T_c = T_e + T_f",
+                "where": "T<sub>e</sub> is the entry or inlet time and T<sub>f</sub> the travel time in drains or channels."
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>C = 0.60, I = 3 cm/h, A = 120 ha: \\(Q = 0.60 \\times 3 \\times 120/36 = 6.0\\) m<sup>3</sup>/s.</li><li>Entry time 7 min and drain travel 18 min: \\(T_c = 25\\) min.</li><li>An assumed fit \\(I = 760/(t + 10)\\) at t = 10 min gives 760/20 = 38 mm/h.</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is The time of concentration.",
+                "html": "In conventional rational-method design, the intensity is read for a duration equal to the time of concentration.",
                 "sources": [
                   {
                     "id": "CAP4-03-00098",
@@ -3825,7 +4004,7 @@
                 ]
               },
               {
-                "html": "The key result is 6.0. This is the reviewed topic result.",
+                "html": "With C = 0.60, I = 3 cm/h and A = 120 ha, the rational method gives Q = CIA/36 = 6.0 m<sup>3</sup>/s.",
                 "sources": [
                   {
                     "id": "CAP4-03-00099",
@@ -3834,7 +4013,7 @@
                 ]
               },
               {
-                "html": "The key result is 25 minutes.",
+                "html": "An entry time of 7 minutes plus 18 minutes of drain travel gives a time of concentration of 25 minutes.",
                 "sources": [
                   {
                     "id": "CAP4-03-00112",
@@ -3843,7 +4022,7 @@
                 ]
               },
               {
-                "html": "The key result is 38 mm/h.",
+                "html": "The assumed short-storm fit \\(I = 760/(t + 10)\\) predicts 760/20 = 38 mm/h at t = 10 minutes.",
                 "sources": [
                   {
                     "id": "CAP4-03-00138",
@@ -3873,24 +4052,41 @@
           },
           {
             "id": "return-period-and-regional-flood-relation",
-            "title": "Return period, exceedance probability and evaluating a regional two-year flood relation",
-            "html": "<p>For a stationary annual-maximum series, the return period T of a flood magnitude is the reciprocal of its annual exceedance probability: p = 1/T. A two-year flood therefore has a 50 % chance of being equalled or exceeded in any one year. Return period is a statistical frequency, not a forecast of calendar spacing: a two-year flood can occur in consecutive years or be absent for several.</p><p>Over a design life of n years, the probability of at least one exceedance is 1 − (1 − 1/T)<sup>n</sup>.</p><p>For ungauged catchments, regional relations estimate flood quantiles from catchment characteristics. The capsule quotes a two-year flood relation attributed to a WECS/DHM method, Q<sub>2</sub> = 1.8767(A<sub>3000</sub> + 1)<sup>0.8783</sup>, with Q<sub>2</sub> in m<sup>3</sup>/s and A<sub>3000</sub> the part of the catchment lying below 3000 m, in km<sup>2</sup>.</p><p>Evaluate it in order: add one to the area, raise the result to the power 0.8783, then multiply by the coefficient. Treat it as an exercise relation whose edition, calibration range and unit definitions still need checking against the original method, and remember that a frequency estimate is not real-time flood forecasting.</p>",
-            "moreHtml": "<p>Illustrative checks: a 50-year flood has p = 0.02 per year, and over 25 years the chance of at least one exceedance is 1 − 0.98<sup>25</sup> ≈ 0.40. Applying the quoted relation to A<sub>3000</sub> = 49 km<sup>2</sup> gives 1.8767 × 50<sup>0.8783</sup> ≈ 58.3 m<sup>3</sup>/s.</p>",
+            "title": "Return period, exceedance probability and a regional two-year flood relation",
+            "html": "<p>For a stationary annual-maximum series, the <em>return period</em> T of a flood is the reciprocal of its annual exceedance probability. A two-year flood therefore has a 50% chance of being equalled or exceeded in any one year. Return period is a statistical frequency, not a forecast of calendar spacing: a two-year flood can occur in consecutive years or be absent for several.</p><p>For ungauged catchments, regional relations estimate flood quantiles from catchment characteristics. The capsule quotes a two-year relation attributed to a WECS/DHM method, with \\(Q_2\\) in m<sup>3</sup>/s and \\(A_{3000}\\) the catchment area below 3000 m, in km<sup>2</sup>. Evaluate it in order: add one to the area, raise to the power, then multiply. Its edition, calibration range and unit definitions still need checking, and a frequency estimate is not real-time forecasting.</p>",
+            "formulas": [
+              {
+                "label": "Annual exceedance probability",
+                "tex": "p = \\dfrac{1}{T}"
+              },
+              {
+                "label": "At least one exceedance in n years",
+                "tex": "P_n = 1 - \\left(1 - \\dfrac{1}{T}\\right)^n"
+              },
+              {
+                "label": "Quoted regional two-year flood relation",
+                "tex": "Q_2 = 1.8767\\,(A_{3000} + 1)^{0.8783}"
+              }
+            ],
+            "example": {
+              "title": "Worked examples",
+              "html": "<ol><li>T = 2 years: p = 1/2 = 0.50 in any one year.</li><li>\\(A_{3000} = 99\\) km<sup>2</sup>: add one to get 100, then \\(100^{0.8783} = 57.09\\) and \\(Q_2 = 1.8767 \\times 57.09 = 107.15\\) m<sup>3</sup>/s.</li><li>A 50-year flood over 25 years: \\(1 - 0.98^{25} \\approx 0.40\\).</li></ol>"
+            },
             "points": [
               {
-                "html": "The key result is 107.15 m 3 /s.",
+                "html": "A two-year flood from a stationary annual-maximum series has an exceedance probability of 1/2, that is 50% in any one year.",
                 "sources": [
                   {
-                    "id": "CAP4-03-00106",
+                    "id": "CAP4-03-00107",
                     "label": "p. 13; topic 3 point 104"
                   }
                 ]
               },
               {
-                "html": "The key result is 50% in any one year.",
+                "html": "The quoted relation with \\(A_{3000}\\) = 99 km<sup>2</sup> gives \\(Q_2\\) = 1.8767 × 100<sup>0.8783</sup> = 107.15 m<sup>3</sup>/s.",
                 "sources": [
                   {
-                    "id": "CAP4-03-00107",
+                    "id": "CAP4-03-00106",
                     "label": "p. 13; topic 3 point 104"
                   }
                 ]
@@ -3898,32 +4094,23 @@
             ],
             "sources": [
               {
-                "id": "CAP4-03-00106",
+                "id": "CAP4-03-00107",
                 "label": "p. 13; topic 3 point 104"
               },
               {
-                "id": "CAP4-03-00107",
+                "id": "CAP4-03-00106",
                 "label": "p. 13; topic 3 point 104"
               }
             ]
           },
           {
             "id": "nepal-rivers-and-regional-methods",
-            "title": "Nepal context: rivers by source region and regional methods for ungauged catchments",
-            "html": "<p>A commonly taught grouping classifies Nepal's rivers by where they originate, from the highest source belt to the lowest:</p><ol><li>High Himalayan rivers: the major rivers whose sources lie in the High Himalaya.</li><li>Mahabharat (middle-hill) rivers: rivers originating in the Mahabharat range.</li><li>Siwalik rivers: smaller streams rising in the Siwalik hills.</li></ol><p>The capsule states only that there are three groups. This origin-based scheme is the usual teaching interpretation, not a statutory classification, a stream-order system or a guarantee of flow in any season.</p><p>For ungauged catchments, regional methods transfer empirical runoff relationships from gauged catchments with similar climate and runoff behaviour. When a method assigns a catchment to a mapped hydrological region, the region should give the equations and coefficients to use and the range of catchments over which they were calibrated; administrative boundaries are no substitute.</p><p>Before a regional estimate is used for design, test whether the method's calibration covers the site, including basin size, elevation and any extrapolation, and cross-check it against whatever local flow observations exist. An agency name or publication year does not by itself establish accuracy at a particular site, and local measurements should not be discarded merely because they disagree with the regional estimate.</p>",
-            "moreHtml": "<p>Two capsule claims are recorded here as unverified: that one such method divides Nepal into seven zones, and that a method labelled DHM 2004 gives accurate flows. The original manuals must be consulted for the region map, edition and validation data.</p>",
+            "title": "Nepal context: rivers by source region and regional methods",
+            "html": "<p>A commonly taught grouping classifies Nepal's rivers by where they originate, from the highest source belt to the lowest:</p><ol><li>High Himalayan rivers, the major rivers rising in the High Himalaya.</li><li>Mahabharat (middle-hill) rivers, rising in the Mahabharat range.</li><li>Siwalik rivers, smaller streams rising in the Siwalik hills.</li></ol><p>The capsule states only that there are three groups; this scheme is the usual teaching interpretation, not a statutory classification.</p><p>For ungauged catchments, regional methods transfer empirical runoff relationships from gauged catchments with similar climate and runoff behaviour. The mapped region should give the equations, coefficients and calibration range; administrative boundaries are no substitute. Before design use, test whether the calibration covers the site and cross-check against local flow observations. An agency name or year does not establish accuracy, and local data should not be discarded merely because they disagree.</p>",
+            "moreHtml": "<p>Two capsule claims are recorded as unverified: that one such method divides Nepal into seven zones, and that a method labelled DHM 2004 gives accurate flows. The original manuals must be consulted.</p>",
             "points": [
               {
-                "html": "The key result is The appropriate regional runoff relationships and their applicability limits.",
-                "sources": [
-                  {
-                    "id": "CAP4-02-00137",
-                    "label": "p. 9; topic 2 point 123"
-                  }
-                ]
-              },
-              {
-                "html": "The key result is High Himalaya, Mahabharat hills, Siwalik hills.",
+                "html": "Nepal's rivers grouped by source region run from High Himalaya through the Mahabharat hills to the Siwalik hills.",
                 "sources": [
                   {
                     "id": "CAP4-03-00084",
@@ -3932,7 +4119,16 @@
                 ]
               },
               {
-                "html": "The key result is Check regional applicability and compare with available local observations.",
+                "html": "A mapped hydrological region should provide the appropriate regional runoff relationships and their applicability limits.",
+                "sources": [
+                  {
+                    "id": "CAP4-02-00137",
+                    "label": "p. 9; topic 2 point 123"
+                  }
+                ]
+              },
+              {
+                "html": "Before design use of a regional method such as DHM 2004, check regional applicability and compare with available local observations.",
                 "sources": [
                   {
                     "id": "CAP4-03-00089",
@@ -3943,12 +4139,12 @@
             ],
             "sources": [
               {
-                "id": "CAP4-02-00137",
-                "label": "p. 9; topic 2 point 123"
-              },
-              {
                 "id": "CAP4-03-00084",
                 "label": "p. 13; topic 3 point 83"
+              },
+              {
+                "id": "CAP4-02-00137",
+                "label": "p. 9; topic 2 point 123"
               },
               {
                 "id": "CAP4-03-00089",
@@ -3959,11 +4155,20 @@
           {
             "id": "reservoir-storage-for-dry-season-deficit",
             "title": "Storage to bridge a dry-season deficit: a simple mass balance",
-            "html": "<p>When a stream's dry-season flow falls below demand, an impounding reservoir can store wet-season surplus and release it during the deficit. The required active storage comes from a mass balance over the critical period: the reservoir must supply the difference between demand and inflow for as long as that difference persists,</p><p>V = Σ(demand − inflow) × Δt</p><p>with flows in m<sup>3</sup>/s and time in seconds; one day is 86400 s. Summing cumulative inflow and demand over a longer record, as in a mass-curve analysis, extends the same idea to variable flows.</p><p>Two conditions keep the result meaningful. First, the reservoir must be able to refill: storage moves water from wet periods to dry ones but cannot create water if the dependable total supply is inadequate. Second, real reservoirs lose water to evaporation and seepage and carry dead storage, all of which increase the gross capacity required. Storage is also only one possible response to a seasonal deficit; other sources or demand management may be feasible.</p>",
-            "moreHtml": "<p>Illustrative check: an inflow of 2 m<sup>3</sup>/s against a demand of 5 m<sup>3</sup>/s for 20 days needs (5 − 2) × 20 × 86400 = 5184000 m<sup>3</sup>, about 5.18 million m<sup>3</sup> of active storage before losses.</p>",
+            "html": "<p>When a stream's dry-season flow falls below demand, an impounding reservoir can store wet-season surplus and release it during the deficit. The required active storage is the difference between demand and inflow, summed for as long as the difference persists, with flows in m<sup>3</sup>/s and time in seconds; one day is 86400 s. A mass-curve analysis extends the same idea to variable flows.</p><p>Two conditions keep the result meaningful. The reservoir must be able to refill: storage moves water from wet periods to dry ones but cannot create water. And real reservoirs lose water to evaporation and seepage and carry dead storage, all of which raise the gross capacity. Storage is also only one possible response; other sources or demand management may work.</p>",
+            "formulas": [
+              {
+                "label": "Active storage over the critical period",
+                "tex": "V = \\sum (\\text{demand} - \\text{inflow})\\,\\Delta t"
+              }
+            ],
+            "example": {
+              "title": "Worked example: a ten-day deficit",
+              "html": "<p>Inflow 1 m<sup>3</sup>/s against demand 3 m<sup>3</sup>/s for 10 days:</p>\\[\\begin{aligned}V &amp;= (3 - 1) \\times 10 \\times 86400\\\\ &amp;= 1.728 \\times 10^6\\ \\text{m}^3\\end{aligned}\\]<p>That is 1.728 million m<sup>3</sup> before losses.</p>"
+            },
             "points": [
               {
-                "html": "The key result is 1.728 million m 3.",
+                "html": "A 1 m<sup>3</sup>/s supply against a 3 m<sup>3</sup>/s demand for ten days needs 1.728 million m<sup>3</sup> of active storage, neglecting losses.",
                 "sources": [
                   {
                     "id": "CAP4-03-00114",
@@ -3982,11 +4187,20 @@
           {
             "id": "bridge-clearance-above-design-flood",
             "title": "Bridge clearance above the design high-flood level",
-            "html": "<p>A bridge's flood clearance, or freeboard, is the vertical distance between the design high-flood level (HFL) and the specified lowest point of the superstructure. It is a difference of elevations referred to the same datum: clearance = RL of the lowest bridge point − RL of the design HFL. The reference point and loading condition named in the design brief matter, because a flexible deck can sit at different levels under different loads.</p><p>The water level seen when a site is surveyed in the dry season cannot establish adequate clearance, because it says nothing about the level reached in the flood the bridge is designed for. Clearance must be checked against the design HFL, with the allowances for floating debris, uncertainty in the flood estimate and structural behaviour that the governing brief specifies. Freeboard is measured up from that water surface, not from the channel bed.</p><p>The capsule cites 5 m as the minimum freeboard for a trail bridge. Treat such a figure as the requirement of a particular brief or manual: the bridge type, design flood, debris allowance, reference point and manual edition must be confirmed before it is applied, and a clearance that only equals the minimum meets it without any spare margin.</p>",
-            "moreHtml": "<p>Illustrative check: with the design HFL at RL 212.30 m and the lowest specified point at RL 216.80 m, the clearance is 216.80 − 212.30 = 4.50 m, which would fall short of a 5 m requirement.</p>",
+            "html": "<p>A bridge's flood clearance, or freeboard, is the vertical distance between the design high-flood level (HFL) and the specified lowest point of the superstructure. It is a difference of elevations on the same datum. The reference point and loading condition in the brief matter, because a flexible deck sits at different levels under different loads.</p><p>The water level seen on a dry-season survey says nothing about the level reached in the design flood, so it cannot establish adequate clearance. Clearance is checked against the design HFL, with the allowances for debris, flood-estimate uncertainty and structural behaviour that the brief specifies, and it is measured up from that water surface, not from the bed.</p><p>The capsule cites 5 m as the minimum freeboard for a trail bridge. Treat it as the requirement of a particular brief; a clearance that only equals it has no spare margin.</p>",
+            "formulas": [
+              {
+                "label": "Flood clearance",
+                "tex": "c = \\text{RL}_{\\text{bridge}} - \\text{RL}_{\\text{HFL}}"
+              }
+            ],
+            "example": {
+              "title": "Worked example",
+              "html": "<p>HFL at RL 104.5 m and lowest bridge point at RL 109.5 m: c = 109.5 − 104.5 = 5.0 m. With the HFL at RL 212.30 m and the lowest point at RL 216.80 m, c = 4.50 m would fall short of 5 m.</p>"
+            },
             "points": [
               {
-                "html": "The key result is 5.0 m, exactly meeting the stated minimum.",
+                "html": "An HFL at RL 104.5 m and a lowest bridge point at RL 109.5 m give a clearance of 5.0 m, exactly meeting the stated minimum.",
                 "sources": [
                   {
                     "id": "CAP4-10-00194",
@@ -3995,7 +4209,7 @@
                 ]
               },
               {
-                "html": "The key result is Dry-season levels do not represent the adopted design-flood condition.",
+                "html": "Clearance is checked against the design HFL because dry-season levels do not represent the adopted design-flood condition.",
                 "sources": [
                   {
                     "id": "CAP4-10-00195",
@@ -4018,52 +4232,48 @@
         ],
         "formulaSheet": [
           {
-            "label": "Quantity Relation used in this topic Isohyetal areal rainfall",
-            "tex": "mean depth = Σ(A_{i}P_{i})/ΣA_{i}"
+            "label": "Isohyetal mean depth",
+            "tex": "\\bar{P} = \\dfrac{\\sum A_i P_i}{\\sum A_i}"
           },
           {
             "label": "Basin form factor",
-            "tex": "F_{f} = A_{b}/L_{b}^{2} (dimensionless)"
+            "tex": "F_f = \\dfrac{A_b}{L_b^2}"
           },
           {
             "label": "Unit-hydrograph ordinate",
-            "tex": "UH=DRH/h_{DR}"
+            "tex": "u = \\dfrac{Q - Q_b}{d}"
           },
           {
-            "label": "Unit hydrograph (2)",
-            "tex": "DRH = total flow - baseflow"
+            "label": "Base after changing duration",
+            "tex": "T_{nD} = T_D + (n - 1)D"
           },
           {
-            "label": "Duration superposition",
-            "tex": "T_n=T_1+(n-1)D"
+            "label": "Rational method, cm/h and ha",
+            "tex": "Q = \\dfrac{CIA}{36}"
           },
           {
-            "label": "Rational method",
-            "tex": "Q = CIA/36 (I in cm/h, A in ha)"
-          },
-          {
-            "label": "Rational method (2)",
-            "tex": "CIA/360 (I in mm/h, A in ha)"
-          },
-          {
-            "label": "Rational method (3)",
-            "tex": "0.278CIA (I in mm/h, A in km^{2})"
+            "label": "Rational method, mm/h and km²",
+            "tex": "Q = 0.278\\,CIA"
           },
           {
             "label": "Time of concentration",
-            "tex": "T_c=T_e+T_f"
-          },
-          {
-            "label": "Return period",
-            "tex": "p = 1/T"
+            "tex": "T_c = T_e + T_f"
           },
           {
             "label": "Exceedance probability",
-            "tex": "P_{\\ge 1}=1-(1-1/T)^n"
+            "tex": "p = \\dfrac{1}{T}"
+          },
+          {
+            "label": "Risk over n years",
+            "tex": "P_n = 1 - \\left(1 - \\dfrac{1}{T}\\right)^n"
           },
           {
             "label": "Deficit storage",
-            "tex": "V = Σ(demand - inflow) \\times \\Delta t"
+            "tex": "V = \\sum (\\text{demand} - \\text{inflow})\\,\\Delta t"
+          },
+          {
+            "label": "Flood clearance",
+            "tex": "c = \\text{RL}_{\\text{bridge}} - \\text{RL}_{\\text{HFL}}"
           }
         ],
         "cautions": [
@@ -4155,7 +4365,7 @@
             "id": "caution-rational-method-duration",
             "status": "review",
             "prompt": "The rational method is applicable when rainfall duration equals the time of concentration",
-            "html": "<p>Setting the design duration equal to T<sub>c</sub> is the conventional way of choosing the design intensity so that the whole catchment contributes. It is not a condition for runoff or mass conservation, and actual storms may be longer or shorter.</p>",
+            "html": "<p>Setting the design duration equal to \\(T_c\\) is the conventional way of choosing the design intensity so that the whole catchment contributes. It is not a condition for runoff or mass conservation, and actual storms may be longer or shorter.</p>",
             "sources": [
               {
                 "id": "CAP4-03-00098",
@@ -4179,7 +4389,7 @@
             "id": "caution-wecs-dhm-q2-relation",
             "status": "review",
             "prompt": "The WECS/DHM two-year flood formula is Q2 = 1.8767 (A3000 + 1) raised to 0.8783",
-            "html": "<p>The capsule gives no edition, calibration domain or explicit unit definitions, so the attribution and the definition of A<sub>3000</sub> should be verified against the original method. The capsule also calls this flood forecasting; a return-period estimate is a frequency statement, not a real-time forecast.</p>",
+            "html": "<p>The capsule gives no edition, calibration domain or explicit unit definitions, so the attribution and the definition of \\(A_{3000}\\) should be verified against the original method. The capsule also calls this flood forecasting; a return-period estimate is a frequency statement, not a real-time forecast.</p>",
             "sources": [
               {
                 "id": "CAP4-03-00106",
@@ -4227,7 +4437,7 @@
             "id": "caution-basin-form-factor-definition",
             "status": "corrected",
             "prompt": "The form factor is the square root of hydraulic depth multiplied by basin area",
-            "html": "<p>This capsule point mixes a channel quantity with a basin quantity. The basin form factor is basin area divided by the square of axial basin length, a dimensionless ratio; the square root of hydraulic depth belongs to the channel section factor A√D.</p>",
+            "html": "<p>This capsule point mixes a channel quantity with a basin quantity. The basin form factor is basin area divided by the square of axial basin length, a dimensionless ratio; the square root of hydraulic depth belongs to the channel section factor \\(A\\sqrt{D}\\).</p>",
             "sources": [
               {
                 "id": "CAP4-03-00105",
