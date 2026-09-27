@@ -71,19 +71,23 @@
     const RURAL = Object.freeze({ code: "additional-capsule-rural", number: "R", name: "Civil and rural engineering", chapterId: "project-planning-design-and-implementation",
         detail: "Rural-engineering capsule points outside the listed civil syllabus subchapters." });
     const LIBRARIES = Object.freeze({ model: { label: "Model-paper notes", questions: 3300, store: "CIVIL_NOTE_TOPICS", source: "model" },
-        capsule: { label: "Capsule notes", questions: 1477, store: "CIVIL_CAPSULE_NOTE_TOPICS", source: "capsule" } });
+        capsule: { label: "Capsule notes", questions: 1477, store: "CIVIL_CAPSULE_NOTE_TOPICS", source: "capsule" },
+        past: { label: "Past-paper notes", questions: 1227, store: "CIVIL_PAST_NOTE_TOPICS", source: "past" } });
+    const NOUNS = Object.freeze({ model: "source", capsule: "capsule", past: "past-paper" });
+    const isPast = (source) => /^PAST-/.test(source.id);
     const hasChapter = (id) => Object.hasOwn(CHAPTER_FILES, id);
     const TEX = ' data-cn-math="tex"';
     const chapterCodes = (id) => hasChapter(id) ? CHAPTER_FILES[id].flatMap((file) => FILES[file]) : [];
     const script = document.currentScript;
     const base = script ? new URL("civil-notes/", script.src).href : "js/civil-notes/";
     const capsuleBase = script ? new URL("civil-capsule-notes/", script.src).href : "js/civil-capsule-notes/";
+    const pastBase = script ? new URL("civil-past-notes/", script.src).href : "js/civil-past-notes/";
     const version = script ? new URL(script.src).search : "";
     const hasTopic = (code) => CODES.includes(code);
     const text = (value) => String(value || "").replace(/<[^>]*>/g, " ").replace(/&(?:amp|nbsp|lt|gt|quot);/g, " ").replace(/\s+/g, " ").trim().toLowerCase();
     const sourcesOf = (topic) => [...new Map([...topic.blocks, ...topic.cautions].flatMap((block) => block.sources).map((source) => [source.id, source])).values()];
     const checkId = (item, index) => item.id || "caution-" + index;
-    const sourceName = (source) => source.label ? "Capsule " + source.label : `Model ${source.set} · Q${source.question}`;
+    const sourceName = (source) => source.label ? (isPast(source) ? "Past paper " : "Capsule ") + source.label : `Model ${source.set} · Q${source.question}`;
     const checkTitle = (item) => item.sources.length ? sourceName(item.sources[0]) : "Reference check";
     const checkLabels = Object.freeze({ corrected: "Corrected", clarification: "Concept clarification", context: "Design and reference context", notation: "Units and notation", assumptions: "Missing assumptions", ambiguity: "Ambiguous question", "answer-review": "Answer needs review", scope: "Scope note", review: "Review note" });
     const checkKind = (item) => item.status === "corrected" ? "corrected" : !item.sources.length ? "scope" : Object.hasOwn(checkLabels, item.issue) ? item.issue : "review";
@@ -145,10 +149,12 @@
         const topicMap = new Map(chapters.flatMap((chapter) => chapter.subchapters.map((topic) => [topic.code, { ...topic, chapterId: chapter.id }])));
         topicMap.set(RURAL.code, RURAL);
         const capsuleEntries = (window.CIVIL_CAPSULE_INDEX || []).map((meta) => ({ key: meta.key, meta }));
+        const pastEntries = (window.CIVIL_PAST_INDEX || []).map((meta) => ({ key: meta.key, meta }));
+        const entriesOf = (lib) => lib === "past" ? pastEntries : capsuleEntries;
         let library = "model";
         const registry = (lib = library) => window[LIBRARIES[lib].store] || {};
-        const hasLibraryChapter = (id, lib = library) => lib === "capsule" ? capsuleEntries.length > 0 && Object.hasOwn(CAPSULE_FILES, id) : hasChapter(id);
-        const codesOf = (id, lib = library) => lib === "capsule" ? (chapterMap.has(id) ? chapterMap.get(id).subchapters.map((topic) => topic.code).concat(id === RURAL.chapterId ? [RURAL.code] : []) : []) : chapterCodes(id);
+        const hasLibraryChapter = (id, lib = library) => lib === "model" ? hasChapter(id) : entriesOf(lib).length > 0 && Object.hasOwn(CAPSULE_FILES, id);
+        const codesOf = (id, lib = library) => lib === "model" ? chapterCodes(id) : chapterMap.has(id) ? chapterMap.get(id).subchapters.map((topic) => topic.code).concat(lib === "capsule" && id === RURAL.chapterId ? [RURAL.code] : []) : [];
         const pending = new Map();
         const selections = new Map();
         const content = $("cvNotesContent"), dialog = $("cvNoteSourceDialog"), sourceBody = $("cvNoteSourceBody");
@@ -234,6 +240,8 @@
         async function loadNotes(chapterId, lib) {
             if (lib === "capsule") await Promise.all([loadFile(CAPSULE_FILES[chapterId], codesOf(chapterId, lib), capsuleBase, LIBRARIES.capsule.store),
                 loadFile("figures.js", codesOf(chapterId, lib), capsuleBase, "CIVIL_CAPSULE_NOTE_FIGURES")]);
+            else if (lib === "past") await Promise.all([loadFile(CAPSULE_FILES[chapterId], codesOf(chapterId, lib), pastBase, LIBRARIES.past.store),
+                loadFile("figures.js", codesOf(chapterId, lib), pastBase, "CIVIL_PAST_NOTE_FIGURES")]);
             else await Promise.all(CHAPTER_FILES[chapterId].map((file) => loadFile(file, FILES[file], base, LIBRARIES.model.store)));
             for (const code of codesOf(chapterId, lib)) {
                 const topic = registry(lib)[code];
@@ -268,7 +276,7 @@
         function pointsHtml(points, highlight) {
             if (!points?.length) return "";
             return `<section class="cn-keypoints"><h5>Key facts</h5><ul>${points.map((point) => `<li${highlight && point.sources.some((source) => source.id === highlight) ? ' class="is-highlighted"' : ""}><div class="cn-prose"${TEX}>${point.html}</div><span class="cn-point-refs">${point.sources.map((source) =>
-                `<button type="button" class="cn-point-ref" data-cn-point-source="${esc(source.id)}" title="${esc(source.id)}" aria-label="Read capsule question ${esc(source.label)}, ${esc(source.id)}">Capsule ${esc(shortRef(source))}</button>`).join("")}</span></li>`).join("")}</ul></section>`;
+                `<button type="button" class="cn-point-ref" data-cn-point-source="${esc(source.id)}" title="${esc(source.id)}" aria-label="Read ${isPast(source) ? "past-paper" : "capsule"} question ${esc(source.label)}, ${esc(source.id)}">${isPast(source) ? "" : "Capsule "}${esc(shortRef(source))}</button>`).join("")}</span></li>`).join("")}</ul></section>`;
         }
 
         const revealButton = '<button type="button" class="cn-reveal" data-cn-reveal aria-expanded="false">Show formula</button>';
@@ -297,7 +305,7 @@
                 <div class="cn-check-content">${proseHtml(item, false, tex)}${source ? `<button type="button" class="cn-button cn-secondary" data-cn-source="${esc(source.id)}">Read this question ${uiIcon("arrow-up-right")}</button>` : ""}</div></details>`;
         }
 
-        const figuresOf = (code, lib = library) => (lib === "model" ? window.CIVIL_NOTE_FIGURES?.topics[code] : window.CIVIL_CAPSULE_NOTE_FIGURES?.[code]) || [];
+        const figuresOf = (code, lib = library) => (lib === "model" ? window.CIVIL_NOTE_FIGURES?.topics[code] : lib === "past" ? window.CIVIL_PAST_NOTE_FIGURES?.[code] : window.CIVIL_CAPSULE_NOTE_FIGURES?.[code]) || [];
 
         function figuresHtml(code, blockId) {
             const html = figuresOf(code).filter((figure) => figure.block === blockId).map((figure) => `<figure class="cn-figure">
@@ -382,7 +390,7 @@
             return `<section class="cn-study" data-cn-study aria-labelledby="cnStudyTitle"><div class="cn-study-row"><div class="cn-study-copy"><h4 id="cnStudyTitle">Your progress</h4><p data-cn-progress-text></p></div>
                 <div class="cn-study-actions"><button type="button" class="cn-button" data-cn-review="wrong" hidden></button><button type="button" class="cn-button cn-secondary" data-cn-review="unseen" hidden></button>${formulas ? `<button type="button" class="cn-button cn-secondary" data-cn-drill aria-pressed="${drill}">Formula recall</button>` : ""}</div></div>
                 <div class="cn-progress" data-cn-progress role="img"><span class="cn-progress-correct"></span><span class="cn-progress-wrong"></span></div>
-                <p class="cn-study-hint">Each section ends with a Test yourself quiz on its capsule MCQs. Answers you choose are saved to your practice progress.${formulas ? " Formula recall hides the formula cards so you can test yourself on each one." : ""}</p></section>`;
+                <p class="cn-study-hint">Each section ends with a Test yourself quiz on its ${NOUNS[library]} MCQs. Answers you choose are saved to your practice progress.${formulas ? " Formula recall hides the formula cards so you can test yourself on each one." : ""}</p></section>`;
         }
 
         function currentV2() {
@@ -399,7 +407,7 @@
             const study = current.article.querySelector("[data-cn-study]");
             if (study) {
                 const summary = stats.answered ? `${stats.answered} of ${stats.total} questions answered · ${stats.correct} correct${stats.wrong ? ` · ${stats.wrong} to review` : ""}`
-                    : `${stats.total} capsule questions · none answered yet`;
+                    : `${stats.total} ${NOUNS[current.article.dataset.noteLibrary] || "capsule"} questions · none answered yet`;
                 study.querySelector("[data-cn-progress-text]").textContent = summary;
                 const bar = study.querySelector("[data-cn-progress]");
                 bar.setAttribute("aria-label", summary);
@@ -423,8 +431,8 @@
             if (!ids.every((id) => questionCache.has(id))) {
                 const sets = new Map();
                 for (const id of ids) {
-                    const entry = capsuleEntries.find((item) => item.meta.topics.some((group) => group.ids.includes(id)));
-                    if (!entry) throw new Error("A question in this quiz is missing from the capsule bank. Please reload the page.");
+                    const entry = entriesOf(/^PAST-/.test(id) ? "past" : "capsule").find((item) => item.meta.topics.some((group) => group.ids.includes(id)));
+                    if (!entry) throw new Error("A question in this quiz is missing from the question bank. Please reload the page.");
                     sets.set(entry.key, entry);
                 }
                 await Promise.all([...sets.values()].map(async (entry) => {
@@ -509,7 +517,7 @@
             const meta = topicMap.get(current.topic.code);
             const stats = progressFor(sourcesOf(current.topic).map((source) => source.id));
             const ids = kind === "wrong" ? stats.wrongIds : stats.unseenIds;
-            if (ids.length) practiceIds(ids, `${current.topic.code === RURAL.code ? meta.name : meta.number + " " + meta.name} · ${kind === "wrong" ? "Missed" : "Unanswered"} capsule questions`);
+            if (ids.length) practiceIds(ids, `${current.topic.code === RURAL.code ? meta.name : meta.number + " " + meta.name} · ${kind === "wrong" ? "Missed" : "Unanswered"} ${NOUNS[current.article.dataset.noteLibrary] || "capsule"} questions`);
         }
 
         function toggleDrill(button) {
@@ -539,7 +547,7 @@
             const tex = topic.format === 2;
             const facts = tex ? topic.blocks.reduce((sum, block) => sum + (block.points?.length || 0), 0) : 0;
             const formulaCount = tex ? topic.blocks.reduce((sum, block) => sum + (block.formulas?.length || 0), 0) : 0;
-            const countLabel = topic.questionCount ? `${topic.questionCount} ${library === "capsule" ? "capsule" : "source"} questions` : "Syllabus-only notes · No mapped questions in the current bank";
+            const countLabel = topic.questionCount ? `${topic.questionCount} ${NOUNS[library]} questions` : "Syllabus-only notes · No mapped questions in the current bank";
             return `<article class="cn-topic${groups.length ? " cn-lesson" : ""}${tex ? " cn-v2" : ""}${tex && drill ? " cn-drill" : ""}" data-note-topic="${code}" data-note-library="${library}">
                 <header class="cn-topic-head"><div><span class="cn-code">${code === RURAL.code ? "Additional" : code}</span><h3 id="cnTopicTitle" tabindex="-1">${esc(meta.number + " " + meta.name)}</h3><span class="cn-count" id="cnSourceCount">${countLabel}</span></div>
                     <div class="cn-actions"><button type="button" class="cn-button" data-cn-session="practice" data-topic="${code}"${sessionDisabled}>${uiIcon("ruler")} Practice topic</button><button type="button" class="cn-button cn-secondary" data-cn-session="exam" data-topic="${code}"${sessionDisabled}>${uiIcon("clipboard")} Exam</button></div></header>
@@ -584,8 +592,8 @@
             replace(content, `<div class="cn-library" role="group" aria-label="Notes collection">${Object.entries(LIBRARIES).map(([key, item]) => `<button type="button" data-cn-library="${key}" aria-pressed="${key === lib}"${hasLibraryChapter(chapterId, key) ? "" : " disabled"}><b>${item.label}</b><span>${item.questions.toLocaleString("en-US")} questions</span></button>`).join("")}</div>
                 <div class="cn-tools"><label class="cn-field"><span>Chapter</span><select id="cnChapterSelect">${syllabus.chapters.map((item) => `<option value="${item.id}"${item.id === chapterId ? " selected" : ""}${hasLibraryChapter(item.id) ? "" : " disabled"}>${esc(item.number + ". " + item.name)}${hasLibraryChapter(item.id) ? "" : " — Notes not added"}</option>`).join("")}</select></label>
                 <label class="cn-field"><span>Topic</span><select id="cnTopicSelect" disabled><option value="" hidden disabled>Search results</option>${codes.map((code) => topicMap.get(code)).map((topic) => `<option value="${topic.code}"${topic.code === selectedCode ? " selected" : ""}>${esc(topic.number + " " + topic.name)}</option>`).join("")}</select></label>
-                <details class="cn-search-toggle"${query ? " open" : ""}><summary>Search notes</summary><form id="cnSearchForm" role="search"><label class="cn-field"><span>Search Chapter ${chapter.number} ${lib === "capsule" ? "capsule " : ""}notes</span><input type="search" id="cnSearch" value="${esc(query)}" placeholder="Topic, formula or source question ID" disabled /></label><button class="cn-button" type="submit" disabled>Search</button></form></details></div>
-                <div id="cnReader" aria-busy="true"><div class="cn-empty" role="status">Loading Chapter ${chapter.number} ${lib === "capsule" ? "capsule " : ""}notes…</div></div>
+                <details class="cn-search-toggle"${query ? " open" : ""}><summary>Search notes</summary><form id="cnSearchForm" role="search"><label class="cn-field"><span>Search Chapter ${chapter.number} ${lib === "model" ? "" : NOUNS[lib] + " "}notes</span><input type="search" id="cnSearch" value="${esc(query)}" placeholder="Topic, formula or source question ID" disabled /></label><button class="cn-button" type="submit" disabled>Search</button></form></details></div>
+                <div id="cnReader" aria-busy="true"><div class="cn-empty" role="status">Loading Chapter ${chapter.number} ${lib === "model" ? "" : NOUNS[lib] + " "}notes…</div></div>
                 <details class="cn-about" hidden><summary>Sources and scope</summary><p id="cnAboutText"></p></details>`);
             if (restoreChapterFocus) $("cnChapterSelect").focus({ preventScroll: true });
             try {
@@ -594,7 +602,9 @@
                 content.querySelectorAll("#cnSearchForm :disabled, #cnTopicSelect").forEach((node) => { node.disabled = false; });
                 $("cnReader").setAttribute("aria-busy", "false");
                 const count = codes.reduce((sum, code) => sum + registry(lib)[code].questionCount, 0);
-                $("cnAboutText").textContent = lib === "capsule"
+                $("cnAboutText").textContent = lib === "past"
+                    ? `Study notes written from the ${count} Chapter ${chapter.number} questions of the NEC past papers on this site (2080 papers and the 2083 candidate recall). Each key fact cites its paper and question number, and each section ends with a Test yourself quiz on those questions. Question checks record published answers that were corrected and questions reworded from figures. These are not NEC-issued notes. Reading does not change saved results; answers you choose in a quiz or source question are saved to your practice progress.`
+                    : lib === "capsule"
                     ? `Study notes written from the ${count} reviewed Chapter ${chapter.number} questions converted from the NEC Quick Revision Capsule, 4th edition. Each section cites its capsule page and point and ends with a Test yourself quiz on those questions. Question checks record capsule statements that were corrected or remain conditional. These are not NEC-issued notes. Reading does not change saved results; answers you choose in a quiz or source question are saved to your practice progress.`
                     : `Authored study notes for the supplied NEC syllabus and ${count} mapped Chapter ${chapter.number} questions. Worked extensions use labelled assumptions. Question checks identify verified corrections and unresolved wording. These are not NEC-issued notes. Reading does not change saved results; answers you choose in a source question are saved to your practice progress.`;
                 content.querySelector(".cn-about").hidden = false;
@@ -622,19 +632,19 @@
             const topic = codesOf(selectedChapterId).map((code) => registry(lib)[code]).find((item) => item && sourcesOf(item).some((ref) => ref.id === id));
             if (!topic || !isOpen()) return;
             const ref = sourcesOf(topic).find((source) => source.id === id);
-            const entry = lib === "capsule" ? capsuleEntries.find((item) => item.meta.topics.some((group) => group.ids.includes(id))) : entries.find((item) => item.no === ref.set);
+            const entry = lib === "model" ? entries.find((item) => item.no === ref.set) : entriesOf(lib).find((item) => item.meta.topics.some((group) => group.ids.includes(id)));
             if (!entry) return;
             const token = ++sourceSerial;
             sourceQuestion = null;
             dialog.classList.remove("cn-image-dialog");
-            $("cvNoteSourceTitle").textContent = lib === "capsule" ? `Capsule question · ${ref.label}` : `Model ${ref.set} · Question ${ref.question}`;
+            $("cvNoteSourceTitle").textContent = lib === "past" ? `Past-paper question · ${ref.label}` : lib === "capsule" ? `Capsule question · ${ref.label}` : `Model ${ref.set} · Question ${ref.question}`;
             replace(sourceBody, '<p role="status">Loading source question…</p>');
             if (!dialog.open) dialog.showModal();
             try {
                 const data = await loadSet(entry);
                 if (token !== sourceSerial || !dialog.open || !isOpen()) return;
                 const all = data.chapters.flatMap((chapter) => chapter.questions);
-                const q = lib === "capsule" ? all.find((item) => item.id === id) : all[ref.question - 1];
+                const q = lib === "model" ? all[ref.question - 1] : all.find((item) => item.id === id);
                 sourceQuestion = q;
                 if (!q || (q.src || q.id) !== id) throw new Error("This reference no longer matches the source paper.");
                 const checks = topic.cautions.filter((item) => item.sources.some((source) => source.id === id));
