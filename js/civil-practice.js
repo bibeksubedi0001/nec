@@ -6,11 +6,12 @@
     const HISTORY_LIMIT = 20;
     const slug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
     const questionKey = (item) => item.q.src || item.q.id;
-    const originOf = (key) => /^CAP4-/.test(key) ? "capsule" : "model";
+    const originOf = (key) => /^CAP4-/.test(key) ? "capsule" : /^PAST-/.test(key) ? "past" : "model";
+    const supplementSources = () => [...(window.CIVIL_CAPSULE_INDEX || []), ...(window.CIVIL_PAST_INDEX || [])];
     const fromSource = (key, source) => !source || source === "all" || originOf(key) === source;
     const countOf = (node, source) => !source || source === "all" ? node.count
         : node.sourceCounts ? node.sourceCounts[source] || 0 : source === "model" ? node.count : 0;
-    const sourceLabel = (item) => item.q.source?.kind === "capsule"
+    const sourceLabel = (item) => item.q.source?.kind === "capsule" || item.q.source?.kind === "past"
         ? item.q.source.reference : `Model ${item.setNo}, Q${item.sourceNo}`;
     const plainText = (value) => String(value || "").replace(/<svg[\s\S]*?<\/svg>/gi, " ")
         .replace(/<[^>]*>/g, " ").replace(/&(?:nbsp|amp|lt|gt|quot|#\d+);/g, " ")
@@ -27,11 +28,11 @@
         return [...chapters.values()];
     }
 
-    function createTaxonomy(entries, syllabus = window.CIVIL_SYLLABUS, mapping = window.CIVIL_TOPIC_MAP, supplements = window.CIVIL_CAPSULE_INDEX || []) {
+    function createTaxonomy(entries, syllabus = window.CIVIL_SYLLABUS, mapping = window.CIVIL_TOPIC_MAP, supplements = supplementSources()) {
         const legacy = chaptersFrom(entries);
         if (!syllabus || !mapping) return { chapters: legacy, official: [], topics: new Map(), assignments: new Map(), total: legacy.reduce((sum, chapter) => sum + chapter.count, 0) };
         const chapters = syllabus.chapters.map((chapter, index) => ({ ...chapter, index, count: 0,
-            subchapters: chapter.subchapters.map((topic, i) => ({ ...topic, id: topic.code, chapterId: chapter.id, index: i, count: 0, sourceCounts: { model: 0, capsule: 0 } })) }));
+            subchapters: chapter.subchapters.map((topic, i) => ({ ...topic, id: topic.code, chapterId: chapter.id, index: i, count: 0, sourceCounts: { model: 0, capsule: 0, past: 0 } })) }));
         const official = chapters.slice();
         const topics = new Map(chapters.flatMap((chapter) => chapter.subchapters.map((topic) => [topic.id, topic])));
         const sources = {
@@ -53,7 +54,7 @@
                         const original = legacy.find((chapter) => chapter.id === sources[source]);
                         const group = { id, code: "", number: "", name: original ? original.name : source,
                             detail: "These original bank questions do not have a sufficiently clear match to a listed syllabus subchapter. They remain available in both Exam and Practice modes.",
-                            chapterId: extra.id, index: extra.subchapters.length, additional: true, count: 0, sourceCounts: { model: 0, capsule: 0 } };
+                            chapterId: extra.id, index: extra.subchapters.length, additional: true, count: 0, sourceCounts: { model: 0, capsule: 0, past: 0 } };
                         topics.set(id, group); extra.subchapters.push(group);
                     }
                     topic = topics.get(id);
@@ -68,16 +69,16 @@
                 if (group.code === "additional-capsule-rural" && !topics.has(group.code)) {
                     const topic = { id: group.code, code: "", number: "", name: "Civil and rural engineering (capsule)",
                         detail: "Additional rural-engineering material from the capsule, outside the listed civil syllabus subchapters.",
-                        chapterId: extra.id, index: extra.subchapters.length, additional: true, count: 0, sourceCounts: { model: 0, capsule: 0 } };
+                        chapterId: extra.id, index: extra.subchapters.length, additional: true, count: 0, sourceCounts: { model: 0, capsule: 0, past: 0 } };
                     topics.set(topic.id, topic); extra.subchapters.push(topic);
                 }
                 const topic = topics.get(group.code);
-                if (!topic) throw new Error("Unknown capsule subchapter: " + group.code);
+                if (!topic) throw new Error("Unknown " + (/^past-/.test(supplement.key) ? "past-paper" : "capsule") + " subchapter: " + group.code);
                 for (const id of group.ids) {
                     if (assignments.has(id)) throw new Error("Duplicate question source: " + id);
                     assignments.set(id, topic);
                     topic.count++;
-                    topic.sourceCounts.capsule++;
+                    topic.sourceCounts[originOf(id)]++;
                 }
             }
         }
@@ -85,8 +86,8 @@
         if (extra.count) chapters.push(extra);
         chapters.forEach((chapter) => {
             chapter.count = chapter.subchapters.reduce((sum, topic) => sum + topic.count, 0);
-            chapter.sourceCounts = { model: 0, capsule: 0 };
-            chapter.subchapters.forEach((topic) => { chapter.sourceCounts.model += topic.sourceCounts.model; chapter.sourceCounts.capsule += topic.sourceCounts.capsule; });
+            chapter.sourceCounts = { model: 0, capsule: 0, past: 0 };
+            chapter.subchapters.forEach((topic) => { for (const key of Object.keys(chapter.sourceCounts)) chapter.sourceCounts[key] += topic.sourceCounts[key] || 0; });
         });
         return { chapters, official, topics, assignments, total: assignments.size };
     }
@@ -97,7 +98,7 @@
 
     function createBank(entries, loadSet) {
         const taxonomy = createTaxonomy(entries);
-        const sources = entries.concat((window.CIVIL_CAPSULE_INDEX || []).map((meta) => ({ key: meta.key, no: null, meta, set: null })));
+        const sources = entries.concat(supplementSources().map((meta) => ({ key: meta.key, no: null, meta, set: null })));
         const chapters = taxonomy.chapters;
         const chapterMap = new Map(chapters.map((chapter) => [chapter.id, chapter]));
         let records = null;
@@ -154,17 +155,18 @@
         return { chapters, taxonomy, load };
     }
 
-    function grade(records, answers) {
-        const result = { total: records.length, answered: 0, correct: 0, wrong: 0, skipped: 0, score: 0, pct: 0, accuracy: 0, chapters: [] };
+    function grade(records, answers, weighted = false) {
+        const result = { total: records.length, answered: 0, correct: 0, wrong: 0, skipped: 0, score: 0, marks: 0, pct: 0, accuracy: 0, chapters: [] };
         const chapters = new Map();
         const topics = new Map();
         records.forEach((item) => {
             if (!chapters.has(item.chapterId)) chapters.set(item.chapterId, {
                 id: item.chapterId, name: item.chapterName || item.ch.name, order: item.chapterOrder || 0,
-                total: 0, answered: 0, correct: 0, wrong: 0, subchapters: []
+                total: 0, answered: 0, correct: 0, wrong: 0, score: 0, marks: 0, subchapters: []
             });
             const chapter = chapters.get(item.chapterId);
-            chapter.total++;
+            const weight = weighted && item.q.marks > 1 ? item.q.marks : 1;
+            chapter.total++; chapter.marks += weight; result.marks += weight;
             let topic = null;
             if (item.subchapterId) {
                 if (!topics.has(item.subchapterId)) {
@@ -178,11 +180,10 @@
             if (!item.q.options.some((option) => option.key === answer)) { result.skipped++; return; }
             result.answered++; chapter.answered++;
             if (topic) topic.answered++;
-            if (answer === item.q.answer) { result.correct++; chapter.correct++; if (topic) topic.correct++; }
+            if (answer === item.q.answer) { result.correct++; result.score += weight; chapter.correct++; chapter.score += weight; if (topic) topic.correct++; }
             else { result.wrong++; chapter.wrong++; if (topic) topic.wrong++; }
         });
-        result.score = result.correct;
-        result.pct = result.total ? Math.round(result.score / result.total * 100) : 0;
+        result.pct = result.marks ? Math.round(result.score / result.marks * 100) : 0;
         result.accuracy = result.answered ? Math.round(result.correct / result.answered * 100) : 0;
         result.chapters = [...chapters.values()].sort((a, b) => a.order - b.order);
         result.chapters.forEach((chapter) => chapter.subchapters.sort((a, b) => a.order - b.order));
@@ -213,6 +214,8 @@
 
     const modeOf = (run) => run && run.mode === "practice" ? "practice" : "exam";
     const draftKey = (mode) => mode === "practice" ? "practiceDraft" : "draft";
+    const pastPaperOf = (run) => run && Array.isArray(run.ids) && (window.CIVIL_PAST_SETS || []).find((set) => set.key === run.capsuleSet
+        || set.ids.length === run.ids.length && set.ids.every((id, index) => id === run.ids[index])) || null;
 
     function recordFeedback(store, run, item, answer, at = Date.now()) {
         const key = questionKey(item);
@@ -333,8 +336,9 @@
                 saved: Object.entries(store.bookmarks).filter(([key, item]) => fromSource(key, source) && inScope(item, chosen)).length };
         }
 
-        const sourceNames = { all: "All questions", model: "Model-paper bank", capsule: "Capsule questions" };
-        const sourceTotals = { all: total, model: chapters.reduce((sum, chapter) => sum + countOf(chapter, "model"), 0), capsule: chapters.reduce((sum, chapter) => sum + countOf(chapter, "capsule"), 0) };
+        const sourceNames = { all: "All questions", model: "Model-paper bank", capsule: "Capsule questions", past: "Past papers" };
+        const sourceTotals = Object.fromEntries(Object.keys(sourceNames).map((key) => [key, key === "all" ? total : chapters.reduce((sum, chapter) => sum + countOf(chapter, key), 0)]));
+        if (!sourceTotals.past) delete sourceNames.past;
 
         function sourceOptions() {
             return Object.keys(sourceNames).map((key) => `<option value="${key}"${questionSource === key ? " selected" : ""}>${sourceNames[key]} (${number(sourceTotals[key])})</option>`).join("");
@@ -500,8 +504,9 @@
             });
         }
 
-        function capsuleSetsHtml() {
-            const sets = window.CIVIL_CAPSULE_SETS || [];
+        function paperSetsHtml(kind) {
+            const past = kind === "past";
+            const sets = (past ? window.CIVIL_PAST_SETS : window.CIVIL_CAPSULE_SETS) || [];
             const query = ($("cvSetSearch") ? $("cvSetSearch").value : "").trim().toLowerCase();
             const statusFilter = $("cvSetStatus") ? $("cvSetStatus").value : "all";
             const cards = sets.map((set) => {
@@ -510,22 +515,27 @@
                 const score = isObject(store.setScores[set.key]) ? store.setScores[set.key] : null;
                 const status = exam || practising ? "live" : score ? "done" : "new";
                 return { set, exam, practising, score, status };
-            }).filter(({ set, status }) => (statusFilter === "all" || statusFilter === status) && (set.title.toLowerCase().includes(query) || String(set.no) === query));
+            }).filter(({ set, status }) => (statusFilter === "all" || statusFilter === status)
+                && ((past ? [set.title, set.date, set.shift, "past paper"].join(" ") : set.title).toLowerCase().includes(query) || String(set.no) === query));
             if (!cards.length) return "";
-            return `<section class="cs-capsule-section" aria-labelledby="cvCapsuleSetsTitle"><div class="cs-capsule-heading"><h3 id="cvCapsuleSetsTitle">Capsule question sets</h3><p>${sets.length} sets of 100 questions from the revision capsule, balanced across every chapter</p></div>
+            const heading = past ? `<h3 id="cvPastSetsTitle">NEC past papers</h3><p>${sets.length} licence-exam papers from 2080, 80 questions each. <span style="white-space:nowrap">Q1–60</span> carry 1 mark and <span style="white-space:nowrap">Q61–80</span> carry 2 marks (100 marks, pass mark 50). Where a published key was wrong, the solution says so.</p>`
+                : `<h3 id="cvCapsuleSetsTitle">Capsule question sets</h3><p>${sets.length} sets of 100 questions from the revision capsule, balanced across every chapter</p>`;
+            return `<section class="cs-capsule-section${past ? " cs-past-section" : ""}" aria-labelledby="${past ? "cvPastSetsTitle" : "cvCapsuleSetsTitle"}"><div class="cs-capsule-heading">${heading}</div>
                 <div class="cs-paper-grid">${cards.map(({ set, exam, practising, score, status }) => {
                     const answered = exam ? Object.keys(exam.answers).length : 0;
                     const chapters = Object.keys(set.chapters).filter((chapter) => chapter !== "11").length;
-                    return `<article class="cs-paper${status === "done" ? " is-done" : status === "live" ? " is-live" : ""}" data-capsule-set="${set.key}"><div class="cs-paper-top"><span class="cs-paper-number" aria-hidden="true">${uiIcon("clipboard")}</span><span class="cv-pill ${status}">${status === "done" ? "Completed" : status === "live" ? "In progress" : "Not started"}</span></div>
-                        <h3>${esc(set.title)}</h3><div class="cs-paper-meta"><span>${set.total} questions</span><span>${set.durationMinutes} min</span><span>${chapters} chapters</span></div>
-                        ${answered ? `<div class="cs-paper-progress" role="progressbar" aria-label="Capsule exam answered" aria-valuemin="0" aria-valuemax="${set.total}" aria-valuenow="${answered}"><span style="width:${Math.min(100, answered / set.total * 100)}%"></span></div>` : ""}
+                    const meta = past ? `<span>${esc(set.date)}</span><span>${esc(set.shift)}</span><span>${set.total} questions · ${set.fullMarks} marks</span><span>${set.durationMinutes} min</span>`
+                        : `<span>${set.total} questions</span><span>${set.durationMinutes} min</span><span>${chapters} chapters</span>`;
+                    return `<article class="cs-paper${status === "done" ? " is-done" : status === "live" ? " is-live" : ""}" ${past ? "data-past-set" : "data-capsule-set"}="${set.key}"><div class="cs-paper-top"><span class="cs-paper-number" aria-hidden="true">${uiIcon("clipboard")}</span><span class="cv-pill ${status}">${status === "done" ? "Completed" : status === "live" ? "In progress" : "Not started"}</span></div>
+                        <h3>${esc(set.title)}</h3><div class="cs-paper-meta">${meta}</div>
+                        ${answered ? `<div class="cs-paper-progress" role="progressbar" aria-label="${past ? "Past paper" : "Capsule"} exam answered" aria-valuemin="0" aria-valuemax="${set.total}" aria-valuenow="${answered}"><span style="width:${Math.min(100, answered / set.total * 100)}%"></span></div>` : ""}
                         ${score ? `<div class="cs-paper-score"><small>Personal best</small><b>${score.best}%</b></div>` : ""}
                         <div class="cs-paper-actions"><button type="button" class="cv-btn" data-cp-action="capsule-set" data-set="${set.key}" data-mode="exam">${exam ? "Resume exam" : score ? "Retake exam" : "Start exam"}</button><button type="button" class="cv-btn cv-btn-ghost" data-cp-action="capsule-set" data-set="${set.key}" data-mode="practice">${practising ? "Resume practice" : "Practice"}</button></div></article>`;
                 }).join("")}</div></section>`;
         }
 
         function openCapsuleSet(key, mode) {
-            const set = (window.CIVIL_CAPSULE_SETS || []).find((item) => item.key === key);
+            const set = [...(window.CIVIL_CAPSULE_SETS || []), ...(window.CIVIL_PAST_SETS || [])].find((item) => item.key === key);
             if (!set) return;
             const draft = store[draftKey(mode)];
             if (draft && draft.capsuleSet === key) { resume(mode); return; }
@@ -534,9 +544,14 @@
         }
 
         function renderCapsuleSets() {
-            if (!$("cvCapsuleSets")) return 0;
-            $("cvCapsuleSets").innerHTML = capsuleSetsHtml();
-            return $("cvCapsuleSets").querySelectorAll("[data-capsule-set]").length;
+            let count = 0;
+            if ($("cvPastSets")) {
+                $("cvPastSets").innerHTML = paperSetsHtml("past");
+                count += $("cvPastSets").querySelectorAll("[data-past-set]").length;
+            }
+            if (!$("cvCapsuleSets")) return count;
+            $("cvCapsuleSets").innerHTML = paperSetsHtml("capsule");
+            return count + $("cvCapsuleSets").querySelectorAll("[data-capsule-set]").length;
         }
 
         function renderChapters() {
@@ -677,7 +692,7 @@
             if (!screen || !["practice", "exam"].includes(screen.mode) || store[draftKey(screen.mode)] !== screen.run) return;
             stopTimer();
             const run = screen.run;
-            const result = grade(screen.records, run.answers);
+            const result = grade(screen.records, run.answers, !!pastPaperOf(run));
             if (screen.mode === "exam") screen.records.forEach((item) => {
                 const key = questionKey(item), answer = run.answers[key];
                 if (!item.q.options.some((option) => option.key === answer)) return;
@@ -793,13 +808,14 @@
         }
 
         function resultHtml() {
-            const result = grade(screen.records, screen.run.answers);
+            const paper = pastPaperOf(screen.run);
+            const result = grade(screen.records, screen.run.answers, !!paper);
             const instant = modeOf(screen.run) === "practice";
-            return `<div class="cv-res-head"><span class="cv-eyebrow">${instant ? "Practice summary · first choices" : "Exam result"}</span><h2>${result.score} / ${result.total} marks &middot; ${result.pct}%</h2>
-                <p>${screen.run.autoSubmitted ? "Time expired — this exam was submitted automatically. " : ""}${result.accuracy}% accuracy on attempted questions. ${instant ? "Each answer was checked immediately; this is not an exam score." : "No negative marking."}</p></div>
+            return `<div class="cv-res-head"><span class="cv-eyebrow">${instant ? "Practice summary · first choices" : "Exam result"}</span><h2>${result.score} / ${result.marks} marks &middot; ${result.pct}%</h2>
+                <p>${screen.run.autoSubmitted ? "Time expired — this exam was submitted automatically. " : ""}${result.accuracy}% accuracy on attempted questions. ${instant ? "Each answer was checked immediately; this is not an exam score." : "No negative marking."}${paper ? ` Questions 61–80 carry 2 marks each${instant ? "" : `; pass mark ${paper.passMarks} of ${paper.fullMarks}: ${result.score >= paper.passMarks ? "passed" : "not yet passed"}`}.` : ""}</p></div>
                 <div class="cv-res-stats">${[["gray", result.answered, "Attempted"], ["green", result.correct, "Correct"], ["red", result.wrong, "Incorrect"], ["gold", result.skipped, "Skipped"]].map(([color, value, label]) => `<div class="cv-res-stat ${color}"><div class="cv-res-badge">${value}</div><div class="cv-res-label">${label}</div></div>`).join("")}</div>
                 <div class="cv-panel"><div class="cv-sec-head"><h3>Chapter &amp; subchapter performance</h3><div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="retry-wrong" ${result.wrong ? "" : "disabled"}>Practise incorrect (${result.wrong})</button><button type="button" class="cv-btn cv-btn-blue cv-btn-sm" data-cp-action="practice-again">${instant ? "Practice again" : "Retake exam"}</button></div></div>
-                <div class="cv-result-chapters">${result.chapters.map((chapter) => `<details class="cv-result-chapter" open><summary><b>${esc(chapter.name)}</b><span>${chapter.correct} / ${chapter.total} marks</span></summary>
+                <div class="cv-result-chapters">${result.chapters.map((chapter) => `<details class="cv-result-chapter" open><summary><b>${esc(chapter.name)}</b><span>${chapter.score} / ${chapter.marks} marks</span></summary>
                     ${(chapter.subchapters.length ? chapter.subchapters : [chapter]).map((topic) => `<div class="cv-subchapter-result"><span class="cv-subchapter-result-name"><b>${esc((topic.number ? topic.number + " " : "") + topic.name)}</b><small>${esc(topic.id.startsWith("additional-") ? "Additional bank questions" : topic.id)}</small></span><span class="cv-result-counts"><span>Correct ${topic.correct}</span><span>Incorrect ${topic.wrong}</span><span>Skipped ${topic.total - topic.answered}</span></span><b>${topic.correct}/${topic.total}</b></div>`).join("")}</details>`).join("")}</div></div>`;
         }
 
