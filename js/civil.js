@@ -639,7 +639,8 @@
             isOpen: () => unlocked && !$("civilSection").hidden });
         notes = window.CIVIL_NOTES.create({ $, esc, syllabus: window.CIVIL_SYLLABUS, entries: SETS, loadSet: loadSetData, typeset,
             isOpen: () => unlocked && currentView === "notes" && !$("civilSection").hidden,
-            startTopic: (code, mode, source) => practice.practiceTopic(code, mode, source) });
+            startTopic: (code, mode, source) => practice.practiceTopic(code, mode, source),
+            recordAnswer: practice.recordAnswer, progressOf: practice.progressOf, practiceIds: practice.practiceIds });
         $("civilSection").addEventListener("click", (event) => {
             if (!unlocked) return;
             const nav = event.target.closest("[data-cv-nav]");

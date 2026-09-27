@@ -326,6 +326,35 @@ html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-point-ref:hover {
 html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-v2 :is(.cn-formula-where, .cn-sheet-note) { color: var(--ink-soft); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-v2 .cn-prose em { color: var(--ink); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-keypoints li.is-highlighted { background: var(--amber-soft); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection :is(.cn-study, .cn-quiz-result) { background: var(--surface); border-color: var(--line); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz { background: var(--surface-2); border-color: var(--line); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection :is(.cn-quiz-q, .cn-quiz-foot) { border-color: var(--line); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection :is(.cn-quiz-title, .cn-quiz-score) { color: var(--blue); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz > summary::before { border-color: var(--blue); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection :is(.cn-quiz-count, .cn-quiz-meta) { color: var(--ink-soft); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-status { background: var(--surface); color: var(--ink-soft); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-status[data-state="done"] { background: var(--good-bg); color: var(--good); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-status[data-state="review"] { background: var(--bad-bg); color: var(--bad); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-stem { color: var(--ink); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-quiz-option { background: var(--surface); border-color: var(--line); color: var(--ink); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-quiz-option:hover:not([aria-disabled="true"]) { background: var(--good-bg); border-color: var(--good); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-key { background: var(--surface-2); border-color: var(--line); color: var(--ink-soft); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-quiz-option.is-correct { background: var(--good-bg); border-color: var(--good); color: var(--ink); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-quiz-option.is-wrong { background: var(--bad-bg); border-color: var(--bad); color: var(--ink); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-option.is-correct .cn-quiz-key { background: var(--good); border-color: var(--good); color: var(--bg); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-option.is-wrong .cn-quiz-key { background: var(--bad); border-color: var(--bad); color: var(--bg); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-q[data-answered="correct"] .cn-quiz-verdict { color: var(--good); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-q[data-answered="wrong"] .cn-quiz-verdict { color: var(--bad); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-check { background: var(--amber-soft); border-color: var(--amber); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-check > b { color: var(--amber); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-keyfact { background: var(--surface-2); border-color: var(--good); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-quiz-keyfact > b { color: var(--good); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-progress { background: var(--surface-2); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-progress-correct { background: var(--good); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-progress-wrong { background: var(--bad); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-study .cn-button[aria-pressed="true"] { background: var(--good-bg); border-color: var(--good); color: var(--good); box-shadow: inset 0 0 0 1px var(--good); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-drill .cn-reveal { background: var(--surface); border-color: var(--line); color: var(--good); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-drill .cn-reveal:hover { background: var(--good-bg); border-color: var(--good); }
 
 html[data-theme="dark"] body[data-app="nec"] #civilSection[data-session-mode="practice"],
 html[data-theme="dark"] body[data-app="nec"] #civilSection[data-session-mode="practice"]::before { background: var(--bg); }

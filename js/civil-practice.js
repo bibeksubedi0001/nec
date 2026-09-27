@@ -1083,6 +1083,22 @@
                 const chosen = sourceNames[source] ? source : "all";
                 if (topic && countOf(topic, chosen)) startPractice({ title: topicTitle(topic) + (chosen === "all" ? "" : " · " + sourceNames[chosen]), origin: "notes", scope: [code], source: chosen, mode: mode === "exam" ? "exam" : "practice" });
             },
+            practiceIds: (ids, title) => {
+                const chosen = [...new Set(ids)].filter((id) => typeof id === "string");
+                if (chosen.length) startPractice({ title, origin: "notes", ids: chosen, mode: "practice" });
+            },
+            // Answers chosen while reading notes count as the latest attempt, like instant-feedback practice.
+            recordAnswer: (q, answer) => {
+                const key = q && (q.src || q.id);
+                if (!key || !Array.isArray(q.options) || !q.options.some((option) => option.key === answer)) return null;
+                const topic = taxonomy.assignments.get(key);
+                const previous = store.progress[key];
+                store.progress[key] = { answer, correct: answer === q.answer, chapterId: topic ? topic.chapterId : null, subchapterId: topic ? topic.id : null,
+                    attempts: (previous && previous.attempts || 0) + 1, updatedAt: Date.now(), mode: "notes" };
+                save();
+                return store.progress[key].correct;
+            },
+            progressOf: (ids) => Object.fromEntries(ids.filter((id) => isObject(store.progress[id])).map((id) => [id, { correct: store.progress[id].correct === true }])),
             practiceModel: (key) => {
                 const entry = entries.find((item) => item.key === key);
                 if (entry) startPractice({ title: entry.meta.title, origin: "sets", setKey: key, mode: "practice" });

@@ -139,7 +139,7 @@
     }
 
     function create(deps) {
-        const { $, esc, syllabus, entries, loadSet, typeset, isOpen, startTopic } = deps;
+        const { $, esc, syllabus, entries, loadSet, typeset, isOpen, startTopic, recordAnswer, progressOf, practiceIds } = deps;
         const chapters = syllabus.chapters.filter((item) => hasChapter(item.id));
         const chapterMap = new Map(chapters.map((chapter) => [chapter.id, chapter]));
         const topicMap = new Map(chapters.flatMap((chapter) => chapter.subchapters.map((topic) => [topic.code, { ...topic, chapterId: chapter.id }])));
@@ -155,6 +155,9 @@
         const uiIcon = window.CEE_UI_ICONS.svg;
         let selectedChapterId = chapters[0].id, selectedCode = codesOf(selectedChapterId)[0];
         let query = "", serial = 0, sourceSerial = 0;
+        // Formula recall hides formula bodies until each card is revealed; it persists across topics.
+        let drill = false, sourceQuestion = null;
+        const questionCache = new Map();
 
         function replace(node, html) {
             if (window.MathJax && window.MathJax.typesetClear) window.MathJax.typesetClear([node]);
@@ -267,13 +270,15 @@
                 `<button type="button" class="cn-point-ref" data-cn-point-source="${esc(source.id)}" title="${esc(source.id)}" aria-label="Read capsule question ${esc(source.label)}, ${esc(source.id)}">Capsule ${esc(shortRef(source))}</button>`).join("")}</span></li>`).join("")}</ul></section>`;
         }
 
+        const revealButton = '<button type="button" class="cn-reveal" data-cn-reveal aria-expanded="false">Show formula</button>';
+
         function formulasHtml(formulas) {
             if (!formulas?.length) return "";
-            return `<div class="cn-formulas">${formulas.map((formula) => `<figure class="cn-formula"><figcaption>${esc(formula.label)}</figcaption><div class="cn-formula-tex">\\[${esc(formula.tex)}\\]</div>${formula.where ? `<div class="cn-prose cn-formula-where"${TEX}>${formula.where}</div>` : ""}</figure>`).join("")}</div>`;
+            return `<div class="cn-formulas">${formulas.map((formula) => `<figure class="cn-formula"><figcaption>${esc(formula.label)}</figcaption><div class="cn-formula-tex">\\[${esc(formula.tex)}\\]</div>${formula.where ? `<div class="cn-prose cn-formula-where"${TEX}>${formula.where}</div>` : ""}${revealButton}</figure>`).join("")}</div>`;
         }
 
         function sheetHtml(sheet) {
-            return `<div class="cn-sheet-grid">${sheet.map((entry) => `<div class="cn-sheet-item"><b>${esc(entry.label)}</b><div class="cn-formula-tex">\\[${esc(entry.tex)}\\]</div>${entry.note ? `<div class="cn-prose cn-sheet-note"${TEX}>${entry.note}</div>` : ""}</div>`).join("")}</div>`;
+            return `<div class="cn-sheet-grid">${sheet.map((entry) => `<div class="cn-sheet-item"><b>${esc(entry.label)}</b><div class="cn-formula-tex">\\[${esc(entry.tex)}\\]</div>${entry.note ? `<div class="cn-prose cn-sheet-note"${TEX}>${entry.note}</div>` : ""}${revealButton}</div>`).join("")}</div>`;
         }
 
         // Structured capsule sections; `tex` marks content written with TeX delimiters rather than plain-text fractions.
@@ -341,6 +346,187 @@
                 return `<label class="cn-field cn-check-filter"><span>Check type</span><select id="cnCheckFilter"><option value="all">All checks (${topic.cautions.length})</option>${kinds.map((kind) => `<option value="${kind}">${checkLabels[kind]} (${topic.cautions.filter((item) => checkKind(item) === kind).length})</option>`).join("")}</select></label><span id="cnCheckCount" class="cn-count" role="status">${topic.cautions.length} checks</span>`;
             }
 
+        // Section quizzes use the capsule MCQs cited by that section's key facts, in citation order.
+        const quizIds = (block) => [...new Set([...(block.points || []).flatMap((point) => point.sources.map((source) => source.id)), ...block.sources.map((source) => source.id)])];
+
+        function progressFor(ids) {
+            const saved = progressOf ? progressOf(ids) : {};
+            const correct = ids.filter((id) => saved[id]?.correct === true).length, wrongIds = ids.filter((id) => saved[id]?.correct === false);
+            return { total: ids.length, correct, wrong: wrongIds.length, answered: correct + wrongIds.length, wrongIds, unseenIds: ids.filter((id) => !saved[id]) };
+        }
+
+        function quizHtml(block) {
+            const ids = quizIds(block);
+            if (!ids.length) return "";
+            return `<details class="cn-quiz" data-cn-quiz="${esc(block.id)}" data-cn-quiz-ids="${esc(ids.join(" "))}"><summary><span class="cn-quiz-title">Test yourself</span><span class="cn-quiz-meta">${ids.length} MCQ${ids.length === 1 ? "" : "s"} from this section</span><span class="cn-quiz-status" data-cn-quiz-status></span></summary>
+                <div class="cn-quiz-body"><p class="cn-quiz-loading" role="status">Loading questions…</p></div></details>`;
+        }
+
+        function quizBodyHtml(topic, block, questions) {
+            return questions.map((q, index) => {
+                const id = q.src || q.id;
+                const checks = topic.cautions.filter((item) => item.sources.some((source) => source.id === id));
+                const facts = (block.points || []).filter((point) => point.sources.some((source) => source.id === id));
+                return `<article class="cn-quiz-q" data-cn-quiz-q="${esc(id)}" data-cn-answer="${esc(String(q.answer || "").toLowerCase())}"><p class="cn-quiz-count">Question ${index + 1} of ${questions.length}</p><div class="cn-quiz-stem">${q.text}</div>
+                    <ul class="cn-quiz-options">${q.options.map((option) => `<li><button type="button" class="cn-quiz-option" data-cn-quiz-pick="${esc(option.key.toLowerCase())}"><span class="cn-quiz-key" aria-hidden="true">${esc(option.key.toUpperCase())}</span><span class="cn-quiz-text">${option.text}</span></button></li>`).join("")}</ul>
+                    <p class="cn-quiz-verdict" role="status"></p><div class="cn-quiz-result" hidden>${checks.length ? `<div class="cn-quiz-check"><b>${checks.some((check) => check.status === "corrected") ? "Corrected question" : "Question check"}</b><div class="cn-prose"${TEX}>${checks.map((check) => check.html).join("")}</div></div>` : ""}
+                        <div class="cn-source-explanation">${q.explanation || "No explanation is stored for this item."}</div>${facts.length ? `<div class="cn-quiz-keyfact"><b>Key fact</b>${facts.map((point) => `<div class="cn-prose"${TEX}>${point.html}</div>`).join("")}</div>` : ""}</div></article>`;
+            }).join("") + '<div class="cn-quiz-foot"><p class="cn-quiz-score"></p><button type="button" class="cn-button cn-secondary" data-cn-quiz-reset hidden>Try again</button></div>';
+        }
+
+        function studyHtml(topic) {
+            const formulas = topic.blocks.some((block) => block.formulas?.length) || Array.isArray(topic.formulaSheet) && topic.formulaSheet.length > 0;
+            return `<section class="cn-study" data-cn-study aria-labelledby="cnStudyTitle"><div class="cn-study-row"><div class="cn-study-copy"><h4 id="cnStudyTitle">Your progress</h4><p data-cn-progress-text></p></div>
+                <div class="cn-study-actions"><button type="button" class="cn-button" data-cn-review="wrong" hidden></button><button type="button" class="cn-button cn-secondary" data-cn-review="unseen" hidden></button>${formulas ? `<button type="button" class="cn-button cn-secondary" data-cn-drill aria-pressed="${drill}">Formula recall</button>` : ""}</div></div>
+                <div class="cn-progress" data-cn-progress role="img"><span class="cn-progress-correct"></span><span class="cn-progress-wrong"></span></div>
+                <p class="cn-study-hint">Each section ends with a Test yourself quiz on its capsule MCQs. Answers you choose are saved to your practice progress.${formulas ? " Formula recall hides the formula cards so you can test yourself on each one." : ""}</p></section>`;
+        }
+
+        function currentV2() {
+            const article = $("cnReader")?.querySelector("article.cn-topic.cn-v2");
+            const topic = article && registry(article.dataset.noteLibrary)[article.dataset.noteTopic];
+            return topic ? { article, topic } : null;
+        }
+
+        function refreshProgress() {
+            const current = currentV2();
+            if (!current) return;
+            const stats = progressFor(sourcesOf(current.topic).map((source) => source.id));
+            const share = (count) => stats.total ? count / stats.total * 100 + "%" : "0%";
+            const study = current.article.querySelector("[data-cn-study]");
+            if (study) {
+                const summary = stats.answered ? `${stats.answered} of ${stats.total} questions answered · ${stats.correct} correct${stats.wrong ? ` · ${stats.wrong} to review` : ""}`
+                    : `${stats.total} capsule questions · none answered yet`;
+                study.querySelector("[data-cn-progress-text]").textContent = summary;
+                const bar = study.querySelector("[data-cn-progress]");
+                bar.setAttribute("aria-label", summary);
+                bar.querySelector(".cn-progress-correct").style.width = share(stats.correct);
+                bar.querySelector(".cn-progress-wrong").style.width = share(stats.wrong);
+                const wrong = study.querySelector('[data-cn-review="wrong"]'), unseen = study.querySelector('[data-cn-review="unseen"]');
+                wrong.hidden = !practiceIds || !stats.wrong;
+                wrong.textContent = `Review ${stats.wrong} missed`;
+                unseen.hidden = !practiceIds || !stats.answered || !stats.unseenIds.length;
+                unseen.textContent = `Practise ${stats.unseenIds.length} unanswered`;
+            }
+            current.article.querySelectorAll(".cn-quiz").forEach((quiz) => {
+                const quizStats = progressFor(quiz.dataset.cnQuizIds.split(" "));
+                const status = quiz.querySelector("[data-cn-quiz-status]");
+                status.dataset.state = !quizStats.answered ? "new" : quizStats.wrong ? "review" : quizStats.correct === quizStats.total ? "done" : "partial";
+                status.textContent = !quizStats.answered ? "Not tried" : quizStats.correct === quizStats.total ? "All correct" : `${quizStats.correct}/${quizStats.total} correct`;
+            });
+        }
+
+        async function questionsFor(ids) {
+            if (!ids.every((id) => questionCache.has(id))) {
+                const sets = new Map();
+                for (const id of ids) {
+                    const entry = capsuleEntries.find((item) => item.meta.topics.some((group) => group.ids.includes(id)));
+                    if (!entry) throw new Error("A question in this quiz is missing from the capsule bank. Please reload the page.");
+                    sets.set(entry.key, entry);
+                }
+                await Promise.all([...sets.values()].map(async (entry) => {
+                    const data = await loadSet(entry);
+                    data.chapters.forEach((chapter) => chapter.questions.forEach((q) => questionCache.set(q.src || q.id, q)));
+                }));
+            }
+            return ids.map((id) => {
+                const q = questionCache.get(id);
+                if (!q || !Array.isArray(q.options) || !q.options.length) throw new Error("A question in this quiz could not be found. Please reload the page.");
+                return q;
+            });
+        }
+
+        async function loadQuiz(quiz) {
+            if (!quiz || !quiz.open || quiz.dataset.state) return;
+            const current = currentV2();
+            const block = current && current.article.contains(quiz) && current.topic.blocks.find((item) => item.id === quiz.dataset.cnQuiz);
+            if (!block) return;
+            const body = quiz.querySelector(".cn-quiz-body");
+            quiz.dataset.state = "loading";
+            replace(body, '<p class="cn-quiz-loading" role="status">Loading questions…</p>');
+            try {
+                const questions = await questionsFor(quiz.dataset.cnQuizIds.split(" "));
+                if (!body.isConnected) return;
+                if (!isOpen()) { delete quiz.dataset.state; return; }
+                replace(body, quizBodyHtml(current.topic, block, questions));
+                quiz.dataset.state = "ready";
+                scoreQuiz(quiz);
+            } catch (error) {
+                if (!body.isConnected) return;
+                delete quiz.dataset.state;
+                if (isOpen()) replace(body, `<div class="cn-quiz-error" role="alert"><p>${esc(error.message)}</p><button type="button" class="cn-button cn-secondary" data-cn-quiz-retry>Retry</button></div>`);
+            }
+        }
+
+        function scoreQuiz(quiz) {
+            const cards = [...quiz.querySelectorAll(".cn-quiz-q")];
+            const done = cards.filter((card) => card.dataset.answered).length, right = cards.filter((card) => card.dataset.answered === "correct").length;
+            const score = quiz.querySelector(".cn-quiz-score"), reset = quiz.querySelector("[data-cn-quiz-reset]");
+            if (score) score.textContent = done === cards.length ? `Score: ${right} of ${cards.length}${right === cards.length ? " · all correct" : ""}` : `${done} of ${cards.length} answered · ${right} correct`;
+            if (reset) reset.hidden = !done;
+        }
+
+        function pickQuiz(button) {
+            const card = button.closest(".cn-quiz-q"), quiz = button.closest(".cn-quiz");
+            if (!card || !quiz || card.dataset.answered) return;
+            const picked = button.dataset.cnQuizPick, answer = card.dataset.cnAnswer, right = picked === answer;
+            const label = (option) => option.dataset.cnQuizPick.toUpperCase() + ". " + option.querySelector(".cn-quiz-text").textContent.trim();
+            card.dataset.answered = right ? "correct" : "wrong";
+            card.querySelectorAll(".cn-quiz-option").forEach((option) => {
+                option.setAttribute("aria-disabled", "true");
+                if (option.dataset.cnQuizPick === answer) { option.classList.add("is-correct"); option.setAttribute("aria-label", label(option) + " (correct answer)"); }
+            });
+            if (!right) button.classList.add("is-wrong");
+            button.setAttribute("aria-label", label(button) + ` (your answer, ${right ? "correct" : "incorrect"})`);
+            card.querySelector(".cn-quiz-verdict").textContent = right ? "Correct." : `Not quite — the answer is ${answer.toUpperCase()}.`;
+            card.querySelector(".cn-quiz-result").hidden = false;
+            const q = questionCache.get(card.dataset.cnQuizQ);
+            const option = q && q.options.find((item) => item.key.toLowerCase() === picked);
+            if (option && recordAnswer) recordAnswer(q, option.key);
+            scoreQuiz(quiz);
+            refreshProgress();
+        }
+
+        function resetQuiz(quiz) {
+            if (!quiz) return;
+            quiz.querySelectorAll(".cn-quiz-q").forEach((card) => {
+                delete card.dataset.answered;
+                card.querySelectorAll(".cn-quiz-option").forEach((option) => { option.classList.remove("is-correct", "is-wrong"); option.removeAttribute("aria-disabled"); option.removeAttribute("aria-label"); });
+                card.querySelector(".cn-quiz-verdict").textContent = "";
+                card.querySelector(".cn-quiz-result").hidden = true;
+            });
+            scoreQuiz(quiz);
+            quiz.querySelector(".cn-quiz-q")?.scrollIntoView({ block: "start", behavior: "auto" });
+            quiz.querySelector(".cn-quiz-option")?.focus({ preventScroll: true });
+        }
+
+        function reviewTopic(kind) {
+            const current = currentV2();
+            if (!current || !practiceIds) return;
+            const meta = topicMap.get(current.topic.code);
+            const stats = progressFor(sourcesOf(current.topic).map((source) => source.id));
+            const ids = kind === "wrong" ? stats.wrongIds : stats.unseenIds;
+            if (ids.length) practiceIds(ids, `${current.topic.code === RURAL.code ? meta.name : meta.number + " " + meta.name} · ${kind === "wrong" ? "Missed" : "Unanswered"} capsule questions`);
+        }
+
+        function toggleDrill(button) {
+            const article = button.closest("article.cn-topic");
+            if (!article) return;
+            drill = !drill;
+            article.classList.toggle("cn-drill", drill);
+            button.setAttribute("aria-pressed", String(drill));
+            article.querySelectorAll(".is-revealed").forEach((card) => card.classList.remove("is-revealed"));
+            article.querySelectorAll("[data-cn-reveal]").forEach((reveal) => { reveal.setAttribute("aria-expanded", "false"); reveal.textContent = "Show formula"; });
+        }
+
+        function revealFormula(button) {
+            const card = button.closest(".cn-formula, .cn-sheet-item");
+            if (!card) return;
+            const shown = card.classList.toggle("is-revealed");
+            button.setAttribute("aria-expanded", String(shown));
+            button.textContent = shown ? "Hide formula" : "Show formula";
+        }
+
         function topicHtml(code) {
             const meta = topicMap.get(code), topic = registry()[code];
             const codes = codesOf(meta.chapterId), index = codes.indexOf(code);
@@ -351,16 +537,17 @@
             const facts = tex ? topic.blocks.reduce((sum, block) => sum + (block.points?.length || 0), 0) : 0;
             const formulaCount = tex ? topic.blocks.reduce((sum, block) => sum + (block.formulas?.length || 0), 0) : 0;
             const countLabel = topic.questionCount ? `${topic.questionCount} ${library === "capsule" ? "capsule" : "source"} questions` : "Syllabus-only notes · No mapped questions in the current bank";
-            return `<article class="cn-topic${groups.length ? " cn-lesson" : ""}${tex ? " cn-v2" : ""}" data-note-topic="${code}" data-note-library="${library}">
+            return `<article class="cn-topic${groups.length ? " cn-lesson" : ""}${tex ? " cn-v2" : ""}${tex && drill ? " cn-drill" : ""}" data-note-topic="${code}" data-note-library="${library}">
                 <header class="cn-topic-head"><div><span class="cn-code">${code === RURAL.code ? "Additional" : code}</span><h3 id="cnTopicTitle" tabindex="-1">${esc(meta.number + " " + meta.name)}</h3><span class="cn-count" id="cnSourceCount">${countLabel}</span></div>
                     <div class="cn-actions"><button type="button" class="cn-button" data-cn-session="practice" data-topic="${code}"${sessionDisabled}>${uiIcon("ruler")} Practice topic</button><button type="button" class="cn-button cn-secondary" data-cn-session="exam" data-topic="${code}"${sessionDisabled}>${uiIcon("clipboard")} Exam</button></div></header>
                 <details class="cn-scope"><summary>Syllabus scope</summary><p>${esc(meta.detail)}</p></details>
                 ${tex && topic.summary ? `<section class="cn-summary"><h4>Overview</h4><div class="cn-prose"${TEX}>${topic.summary}</div><p class="cn-summary-stats">${topic.blocks.length} sections · ${facts} key facts${formulaCount ? ` · ${formulaCount} formulas` : ""}</p></section>` : ""}
+                ${tex && topic.questionCount ? studyHtml(topic) : ""}
                 <nav class="cn-lesson-nav" aria-label="Contents of ${esc(meta.number)}"><label class="cn-field"><span>On this page</span><select id="cnSectionSelect"><option value="">Jump to a section</option>${groups.length ? groups.map((group, groupIndex) => `<option value="cn-${code}-group-${group.id}">${groupIndex + 1}. ${esc(group.title)}</option>`).join("") : topic.blocks.map((block, blockIndex) => `<option value="cn-${code}-${block.id}">${tex ? blockIndex + 1 + ". " : ""}${esc(block.title)}</option>`).join("")}${topic.formulaSheet ? `<option value="cn-${code}-formulas">Formula sheet</option>` : ""}${topic.recall?.length ? `<option value="cn-${code}-recall">Recall</option>` : ""}<option value="cn-${code}-checks">Question checks</option></select></label>${topic.formulaSheet ? `<a href="#cn-${code}-formulas" data-cn-jump="cn-${code}-formulas">Formula sheet ${uiIcon("arrow-right")}</a>` : ""}<a href="#cn-${code}-checks" data-cn-jump="cn-${code}-checks">Question checks ${uiIcon("arrow-right")}</a></nav>
                 ${topic.blocks.map((block, blockIndex) => {
                     const groupIndex = groups.findIndex((group) => group.start === block.id);
                     const group = groups[groupIndex];
-                    return `${group ? `<h4 class="cn-part" id="cn-${code}-group-${group.id}" tabindex="-1"><span>${groupIndex + 1}</span>${esc(group.title)}</h4>` : ""}<section class="cn-block" id="cn-${code}-${block.id}" tabindex="-1"><${heading}>${tex ? `<span class="cn-num">${blockIndex + 1}</span><span>${esc(block.title)}</span>` : esc(block.title)}</${heading}>${blockBodyHtml(block, tex)}${figuresHtml(code, block.id)}${references(block.sources)}</section>`;
+                    return `${group ? `<h4 class="cn-part" id="cn-${code}-group-${group.id}" tabindex="-1"><span>${groupIndex + 1}</span>${esc(group.title)}</h4>` : ""}<section class="cn-block" id="cn-${code}-${block.id}" tabindex="-1"><${heading}>${tex ? `<span class="cn-num">${blockIndex + 1}</span><span>${esc(block.title)}</span>` : esc(block.title)}</${heading}>${blockBodyHtml(block, tex)}${figuresHtml(code, block.id)}${tex ? quizHtml(block) : ""}${references(block.sources)}</section>`;
                 }).join("")}
                 ${revisionHtml(topic, code)}
                 <section class="cn-checks" id="cn-${code}-checks" tabindex="-1"><details class="cn-check-index"><summary>${topic.questionCount ? "Question checks" : "Reference checks"} (${topic.cautions.length})</summary>${checkFilterHtml(topic)}${topic.cautions.map((item, index) => checkHtml(item, code, index, tex)).join("")}</details>${externalReferences(topic)}</section>
@@ -373,7 +560,7 @@
             const reader = $("cnReader");
             $("cnTopicSelect").value = query ? "" : selectedCode;
             $("cnTopicSelect").title = query ? "Search results" : $("cnTopicSelect").selectedOptions[0].textContent;
-            if (!query) { replace(reader, topicHtml(selectedCode)); return; }
+            if (!query) { replace(reader, topicHtml(selectedCode)); refreshProgress(); return; }
             const results = search(codesOf(selectedChapterId).map((code) => registry()[code]), query);
             replace(reader, `<div class="cn-search-summary" role="status"><b>${results.length} matching sections</b><button type="button" class="cn-button cn-secondary" data-cn-clear>Clear search</button></div>${results.length ? results.map((block) => {
                 const meta = topicMap.get(block.code);
@@ -404,8 +591,8 @@
                 $("cnReader").setAttribute("aria-busy", "false");
                 const count = codes.reduce((sum, code) => sum + registry(lib)[code].questionCount, 0);
                 $("cnAboutText").textContent = lib === "capsule"
-                    ? `Study notes written from the ${count} reviewed Chapter ${chapter.number} questions converted from the NEC Quick Revision Capsule, 4th edition. Each section cites its capsule page and point. Question checks record capsule statements that were corrected or remain conditional. These are not NEC-issued notes. Reading does not record attempts or change saved results.`
-                    : `Authored study notes for the supplied NEC syllabus and ${count} mapped Chapter ${chapter.number} questions. Worked extensions use labelled assumptions. Question checks identify verified corrections and unresolved wording. These are not NEC-issued notes. Reading does not record attempts or change saved results.`;
+                    ? `Study notes written from the ${count} reviewed Chapter ${chapter.number} questions converted from the NEC Quick Revision Capsule, 4th edition. Each section cites its capsule page and point and ends with a Test yourself quiz on those questions. Question checks record capsule statements that were corrected or remain conditional. These are not NEC-issued notes. Reading does not change saved results; answers you choose in a quiz or source question are saved to your practice progress.`
+                    : `Authored study notes for the supplied NEC syllabus and ${count} mapped Chapter ${chapter.number} questions. Worked extensions use labelled assumptions. Question checks identify verified corrections and unresolved wording. These are not NEC-issued notes. Reading does not change saved results; answers you choose in a source question are saved to your practice progress.`;
                 content.querySelector(".cn-about").hidden = false;
                 renderBody();
             } catch (error) {
@@ -434,6 +621,7 @@
             const entry = lib === "capsule" ? capsuleEntries.find((item) => item.meta.topics.some((group) => group.ids.includes(id))) : entries.find((item) => item.no === ref.set);
             if (!entry) return;
             const token = ++sourceSerial;
+            sourceQuestion = null;
             dialog.classList.remove("cn-image-dialog");
             $("cvNoteSourceTitle").textContent = lib === "capsule" ? `Capsule question · ${ref.label}` : `Model ${ref.set} · Question ${ref.question}`;
             replace(sourceBody, '<p role="status">Loading source question…</p>');
@@ -443,6 +631,7 @@
                 if (token !== sourceSerial || !dialog.open || !isOpen()) return;
                 const all = data.chapters.flatMap((chapter) => chapter.questions);
                 const q = lib === "capsule" ? all.find((item) => item.id === id) : all[ref.question - 1];
+                sourceQuestion = q;
                 if (!q || (q.src || q.id) !== id) throw new Error("This reference no longer matches the source paper.");
                 const checks = topic.cautions.filter((item) => item.sources.some((source) => source.id === id));
                 const label = checks.some((check) => check.status === "corrected") ? "Corrected question" : checks.length === 1 && checks[0].issue ? checkLabels[checkKind(checks[0])] : "Question check";
@@ -481,7 +670,15 @@
                 if (button.dataset.cnOption !== answer) { button.classList.add("is-wrong"); button.setAttribute("aria-label", button.textContent.trim() + " (your answer, incorrect)"); }
                 const stored = sourceBody.querySelector(".cn-stored-answer");
                 if (stored) stored.open = true;
+                const option = sourceQuestion?.options.find((item) => item.key.toLowerCase() === button.dataset.cnOption);
+                if (option && recordAnswer) { recordAnswer(sourceQuestion, option.key); refreshProgress(); }
             }
+            else if (button.dataset.cnQuizPick) pickQuiz(button);
+            else if (button.hasAttribute("data-cn-quiz-reset")) resetQuiz(button.closest(".cn-quiz"));
+            else if (button.hasAttribute("data-cn-quiz-retry")) loadQuiz(button.closest(".cn-quiz"));
+            else if (button.dataset.cnReview) reviewTopic(button.dataset.cnReview);
+            else if (button.hasAttribute("data-cn-drill")) toggleDrill(button);
+            else if (button.hasAttribute("data-cn-reveal")) revealFormula(button);
             else if (button.dataset.cnPointSource) openSource(button.dataset.cnPointSource);
             else if (button.dataset.cnSource) openSource(button.dataset.cnSource);
             else if (button.dataset.cnTopic && topicMap.get(button.dataset.cnTopic)?.chapterId === selectedChapterId) {
@@ -520,6 +717,19 @@
             if (event.target.id !== "cnChapterSelect" || !isOpen() || !chapterMap.has(event.target.value)) return;
             selectChapter(event.target.value); render();
         });
+        // toggle does not bubble, so quizzes are loaded from a capture listener when first opened.
+        $("cvNotes").addEventListener("toggle", (event) => {
+            if (event.target.classList?.contains("cn-quiz") && event.target.open && isOpen()) loadQuiz(event.target);
+        }, true);
+        $("cvNotes").addEventListener("keydown", (event) => {
+            const card = event.target.closest?.(".cn-quiz-q");
+            if (!card || event.ctrlKey || event.altKey || event.metaKey || !/^[a-d]$/i.test(event.key) || !isOpen()) return;
+            const option = card.querySelector(`[data-cn-quiz-pick="${event.key.toLowerCase()}"]`);
+            if (!option) return;
+            event.preventDefault();
+            option.focus({ preventScroll: true });
+            pickQuiz(option);
+        });
         dialog.addEventListener("keydown", (event) => {
             if (event.key === "Escape" && dialog.open) {
                 event.preventDefault(); event.stopPropagation(); dialog.close();
@@ -527,7 +737,7 @@
         });
         dialog.addEventListener("close", () => {
             if (dialog.open) return;
-            sourceSerial++; dialog.classList.remove("cn-image-dialog");
+            sourceSerial++; sourceQuestion = null; dialog.classList.remove("cn-image-dialog");
         });
         return { render, selectTopic: (code, lib) => { if (lib && Object.hasOwn(LIBRARIES, lib) && lib !== library) { library = lib; query = ""; } selectTopic(code); }, suspend };
     }
