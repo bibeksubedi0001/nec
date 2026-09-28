@@ -45,7 +45,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "96" }
                     ],
                     answer: "b",
-                    explanation: "For 1:2:4 concrete, the volume of coarse aggregate is 4/7 of the total concrete volume. For 1 cum concrete, CA = 4/7 cum. For 100 cum, CA = (4/7)*100 ≈ 57.14 cum. This seems off. Standard: Dry volume for 1 cum concrete is 1.54 cum. CA volume = (4/7)*1.54 = 0.88 cum per cum of concrete. For 100 cum, 88 cum."
+                    explanation: "The dry volume for 1 m<sup>3</sup> of concrete is 1.54 m<sup>3</sup>, and coarse aggregate is \\(\\dfrac{4}{7}\\) of it: \\[\\dfrac{4}{7} \\times 1.54 = 0.88\\ \\text{m}^3\\] per m<sup>3</sup> of concrete. The key reads the quantity as 100 m<sup>3</sup> of concrete, giving 88 m<sup>3</sup> of coarse aggregate. Taking \\(\\dfrac{4}{7}\\) of the wet volume alone (about 57.14) ignores the dry-volume factor."
                 },
                 {
                     id: "cm33q002",
@@ -58,7 +58,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "10 m²" }
                     ],
                     answer: "c",
-                    explanation: "As per building bye-laws, the minimum window opening area should generally be at least 1/10th of the floor area of the room for proper ventilation and light."
+                    explanation: "As per building bye-laws, the minimum window opening should generally be at least \\(\\dfrac{1}{10}\\) of the floor area of the room for proper ventilation and light."
                 },
                 {
                     id: "cm33q003",
@@ -110,7 +110,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "bd^3 / 3" }
                     ],
                     answer: "c",
-                    explanation: "The standard formula for the second moment of area (MOI) of a rectangle about its horizontal centroidal axis is bd^3/12."
+                    explanation: "The second moment of area of a rectangle about its horizontal centroidal axis is \\[I = \\dfrac{bd^3}{12}\\]"
                 },
                 {
                     id: "cm33q007",
@@ -123,7 +123,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "(pi * R^4) / 8" }
                     ],
                     answer: "d",
-                    explanation: "The moment of inertia of a full circle is (pi * R^4)/4; for a semi-circle about its base, it is exactly half of that, which is (pi * R^4)/8."
+                    explanation: "The moment of inertia of a full circle about a diameter is \\(\\dfrac{\\pi R^4}{4}\\); for a semicircle about its base it is exactly half of that: \\[I = \\dfrac{\\pi R^4}{8}\\]"
                 },
                 {
                     id: "cm33q008",
@@ -201,7 +201,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "(pi * R^4) / 64" }
                     ],
                     answer: "b",
-                    explanation: "The MOI of a full circle is (pi * R^4)/4. For a quarter circle about its base, it is one-fourth of that, resulting in (pi * R^4)/16."
+                    explanation: "The MOI of a full circle about a diameter is \\(\\dfrac{\\pi R^4}{4}\\). For a quarter circle about its base, it is one-fourth of that: \\[I = \\dfrac{\\pi R^4}{16}\\]"
                 }
             ]
         },
@@ -327,7 +327,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "cannot be determined" }
                     ],
                     answer: "c",
-                    explanation: "This applies the Principle of Superposition. Deflection is linear with load. Deflection due to P alone is 0.01, due to Q alone is 0.03. New deflection = (2P causes 2*0.01) + (Q/2 causes 0.03/2) = 0.02 + 0.015 = 0.035."
+                    explanation: "By the principle of superposition, deflection is linear in the load. P alone gives 0.01 and Q alone 0.03, so doubling P and halving Q gives \\[\\begin{aligned} \\delta_C &amp;= 2 \\times 0.01 + \\dfrac{0.03}{2} \\\\ &amp;= 0.02 + 0.015 = 0.035 \\end{aligned}\\]"
                 },
                 {
                     id: "cm33q023",
@@ -362,7 +362,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "p_z = 1/V_z²" }
                     ],
                     answer: "a",
-                    explanation: "The design wind pressure (p_z) is proportional to the square of the design wind speed (V_z) at height z. The exact formula is p_z = 0.6 V_z² (where p_z is in N/m² and V_z is in m/s), showing the quadratic relationship."
+                    explanation: "The design wind pressure is proportional to the square of the design wind speed at height \\(z\\). The exact formula, with \\(p_z\\) in N per m<sup>2</sup> and \\(V_z\\) in m per s, is \\[p_z = 0.6V_z^2\\] showing the quadratic relationship."
                 },
                 {
                     id: "cm33q025",
@@ -679,7 +679,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "Stokes" }
                     ],
                     answer: "d",
-                    explanation: "Kinematic viscosity (ν) is the ratio of dynamic viscosity (μ) to density (ρ), ν = μ/ρ. Its units are m²/s or Stokes (1 Stokes = 10⁻⁴ m²/s). Pa-s and Poise are units of dynamic viscosity. m/s is a unit of speed, not viscosity."
+                    explanation: "Kinematic viscosity is \\[\\nu = \\dfrac{\\mu}{\\rho}\\] measured in m<sup>2</sup> per s or stokes (1 stokes is \\(10^{-4}\\) m<sup>2</sup> per s). Pa s and poise are units of dynamic viscosity, and m per s is a speed."
                 },
                 {
                     id: "cm33q048",
@@ -691,7 +691,7 @@ const CIVIL_MODEL_33 = {
                         { key: "c", text: "10^-3" }
                     ],
                     answer: "a",
-                    explanation: "1 Stokes = 10⁻⁴ m²/s. Therefore, 0.1 Stokes = 0.1 × 10⁻⁴ m²/s = 10⁻⁵ m²/s. (Note: Option 1 and 3 are duplicates in the original text; the correct value is 10⁻⁵)."
+                    explanation: "Since 1 stokes is \\(10^{-4}\\) m<sup>2</sup> per s, \\[0.1 \\times 10^{-4} = 10^{-5}\\ \\text{m}^2\\text{/s}\\] (Options 1 and 3 are duplicates in the original text; the correct value is \\(10^{-5}\\).)"
                 },
                 {
                     id: "cm33q049",
@@ -704,7 +704,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "0.5" }
                     ],
                     answer: "b",
-                    explanation: "Using Newton's law of viscosity: τ = μ(du/dy). Therefore, μ = τ / (du/dy) = 0.03 N/m² / 0.15 s⁻¹ = 0.2 Pa-s. Since 1 Pa-s = 10 Poise, 0.2 Pa-s = 2 Poise."
+                    explanation: "By Newton's law of viscosity \\(\\tau = \\mu\\dfrac{du}{dy}\\), so \\[\\mu = \\dfrac{0.03}{0.15} = 0.2\\ \\text{Pa s}\\] Since 1 Pa s is 10 poise, this is 2 poise."
                 },
                 {
                     id: "cm33q050",
@@ -769,7 +769,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "2" }
                     ],
                     answer: "c",
-                    explanation: "The Cavitation Number (σ) is calculated as σ = 2(P - Pv) / (ρV²), where P is the absolute pressure, Pv is the vapor pressure, ρ is density, and V is velocity. Given P - Pv = 0.5 kN/m² = 500 N/m², V=1 m/s, and assuming ρ for water is 1000 kg/m³: σ = 2 * 500 / (1000 * 1²) = 1000 / 1000 = 1."
+                    explanation: "The cavitation number is \\[\\sigma = \\dfrac{2(P - P_v)}{\\rho V^2}\\] With \\(P - P_v = 500\\) N per m<sup>2</sup>, \\(V = 1\\) m per s and \\(\\rho = 1000\\) kg per m<sup>3</sup>, \\[\\sigma = \\dfrac{2 \\times 500}{1000 \\times 1^2} = 1\\]"
                 },
                 {
                     id: "cm33q055",
@@ -817,7 +817,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "1350.0 kWh" }
                     ],
                     answer: "b",
-                    explanation: "Energy generated per cubic meter of water = η * ρ * g * H * (1 m³). Overall efficiency η_overall = 0.85 * 0.92 = 0.782. Energy = 0.782 * 1000 kg/m³ * 9.81 m/s² * 150 m * 1 m³ = 1,150,701.3 Joules. Since 1 kWh = 3,600,000 Joules, Energy (kWh) = 1,150,701.3 / 3,600,000 ≈ 0.3196 kWh. This result does not match any options. Recalculating for power: P = η * ρ * g * Q * H. For Q=1 m³/s, P = 0.782 * 1000 * 9.81 * 1 * 150 = 1,150,713 W = 1150.7 kW. If this power is generated for 1 hour, the energy is 1150.7 kWh. The question asks for \"per hour per cubic meter\", which is ambiguous but likely intends for a flow rate of 1 m³/s for one hour (3600 m³), making the answer 1150.7 kWh."
+                    explanation: "The overall efficiency is \\(0.85 \\times 0.92 = 0.782\\). Taken literally, one cubic metre gives \\[\\begin{aligned} &amp;0.782 \\times 1000 \\times 9.81 \\times 150 \\\\ &amp;= 1{,}150{,}701\\ \\text{J} \\end{aligned}\\] which is only 0.3196 kWh and matches no option. The intended reading is a flow of 1 m<sup>3</sup> per s for one hour: \\[\\begin{aligned} P &amp;= 0.782 \\times 9.81 \\times 1 \\times 150 \\\\ &amp;= 1150.7\\ \\text{kW} \\end{aligned}\\] giving 1150.7 kWh in that hour."
                 },
                 {
                     id: "cm33q058",
@@ -830,7 +830,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "70.8" }
                     ],
                     answer: "c",
-                    explanation: "Theoretical power means no efficiency losses are considered. P = ρ * g * Q * H = 1000 kg/m³ * 9.81 m/s² * 100 m³/s * 75 m = 73,575,000 W = 73.575 MW."
+                    explanation: "Theoretical power means no efficiency losses are considered: \\[\\begin{aligned} P &amp;= \\rho gQH \\\\ &amp;= 1000 \\times 9.81 \\times 100 \\times 75 \\\\ &amp;= 73{,}575{,}000\\ \\text{W} \\\\ &amp;= 73.575\\ \\text{MW} \\end{aligned}\\]"
                 },
                 {
                     id: "cm33q059",
@@ -921,7 +921,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "365 days" }
                     ],
                     answer: "b",
-                    explanation: "Q40% (40% exceedance probability) means the design flow is available or exceeded for 40% of the time in a year. Therefore, the plant can generate at its full installed capacity for 0.4 × 365 = 146 days. This is a fundamental concept in flow duration curve analysis for run-of-river projects."
+                    explanation: "Q40% (40% exceedance probability) means the design flow is available or exceeded for 40% of the time in a year. The plant can therefore generate its full installed capacity for \\[0.4 \\times 365 = 146\\ \\text{days}\\] This is a fundamental idea in flow duration curve analysis for run-of-river projects."
                 },
                 {
                     id: "cm33q066",
@@ -1086,7 +1086,7 @@ const CIVIL_MODEL_33 = {
                         { key: "d", text: "2,1,4,3" }
                     ],
                     answer: "b",
-                    explanation: "Net Irrigation Requirement (NIR - 2): The minimum amount of water required to meet the evapotranspiration needs of the crop. This is the fundamental water need at the root zone. Consumptive Irrigation Requirement (CIR - 1): This is essentially the same as NIR. It is the amount of irrigation water required to meet the evapotranspiration needs of the crop, excluding effective rainfall and other contributions. Therefore, NIR and CIR are nearly identical and form the base amount. Field Irrigation Requirement (FIR - 3): This is the amount of water that must be delivered to the field to meet the NIR. It accounts for water application losses within the field (e.g., deep percolation, surface runoff). FIR = NIR / Application Efficiency. Gross Irrigation Requirement (GIR - 4): This is the total amount of water that must be diverted from the water source to meet the FIR. It includes the FIR plus all conveyance losses in the canals or pipes from the source to the field. GIR = FIR / Conveyance Efficiency. Thus, the values increase as you account for more losses: NIR/CIR (crop need) &lt; FIR (includes field losses) &lt; GIR (includes field and conveyance losses)"
+                    explanation: "The net irrigation requirement (2) is the minimum water needed to meet the crop's evapotranspiration at the root zone. The consumptive irrigation requirement (1) is essentially the same, the irrigation water needed for evapotranspiration excluding effective rainfall and other contributions, so NIR and CIR form the base amount. The field irrigation requirement (3) adds application losses in the field (deep percolation, surface runoff), and the gross irrigation requirement (4) adds conveyance losses from the source: \\[\\text{FIR} = \\dfrac{\\text{NIR}}{\\eta_a}\\] \\[\\text{GIR} = \\dfrac{\\text{FIR}}{\\eta_c}\\] So the values increase as more losses are included: NIR and CIR are about equal and smaller than FIR, which is smaller than GIR."
                 }
             ]
         },

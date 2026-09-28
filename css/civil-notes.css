@@ -62,6 +62,9 @@
 #civilSection :is(#cvNotes, .cn-formatted-explanation) .cn-numerator { display: block; min-width: 0; border-bottom: 1px solid currentColor; padding: .02em .22em .12em; }
 #civilSection :is(#cvNotes, .cn-formatted-explanation) .cn-denominator { display: block; min-width: 0; padding: .12em .22em .02em; }
 #civilSection :is(#cvNotes, .cn-formatted-explanation) :is(sup, sub) .cn-fraction { margin-block: .05em; }
+/* A scrolling inline-block sits on its bottom edge; visible overflow keeps inline solution math on the text baseline. */
+#civilSection .cn-formatted-explanation mjx-container:not([display="true"]) { overflow: visible; padding-block: 0; }
+#civilSection .cn-formatted-explanation mjx-container[display="true"] { margin-block: 10px; }
 #civilSection #cvNotes .cn-figure { max-width: 760px; margin: 24px 0 12px; }
 #civilSection #cvNotes .cn-topic .cn-figure { margin-inline: auto; }
 #civilSection #cvNotes .cn-figure-open { display: block; position: relative; width: 100%; aspect-ratio: 12 / 7; padding: 0; border: 1px solid var(--cs-line); border-radius: 6px; overflow: hidden; background: #fbfcfd; color: var(--cs-teal); cursor: zoom-in; }

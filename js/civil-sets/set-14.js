@@ -136,7 +136,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "71.2 N/mm²" }
                     ],
                     answer: "b",
-                    explanation: "Stress = Force / Area. Area = πr² = π*(10mm)² = 100π mm² ≈ 314.16 mm². Force = 20 kN = 20,000 N. Stress = 20,000 N / 314.16 mm² ≈ 63.66 N/mm²."
+                    explanation: "The stress is force divided by area. With \\(r = 10\\) mm and \\(P = 20\\) kN, \\[A = \\pi r^2 = 100\\pi \\approx 314.16\\] mm<sup>2</sup>, so \\[\\sigma = \\dfrac{20{,}000}{314.16} \\approx 63.66\\ \\text{N/mm}^2\\]"
                 },
                 {
                     id: "cm14q009",
@@ -162,7 +162,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "100 N/cm²" }
                     ],
                     answer: "d",
-                    explanation: "As per standard specifications, the minimum compressive strength for mortar in load-bearing masonry is 10 N/mm², which is equivalent to 100 N/cm²."
+                    explanation: "As per standard specifications, the minimum compressive strength for mortar in load-bearing masonry is 10 N per mm<sup>2</sup> in the key's convention, stated as 100 N per cm<sup>2</sup>."
                 },
                 {
                     id: "cm14q011",
@@ -288,7 +288,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "-6EI/1² vertical force and 4EI/L moment" }
                     ],
                     answer: "a",
-                    explanation: "For a beam element, a unit vertical displacement at end A induces a vertical force of -12EI/L³ (downward) and a moment of 6EI/L² (clockwise) at end B. '1' is assumed to be the length L."
+                    explanation: "For a beam element, a unit vertical displacement at end A induces at end B a vertical force and a moment of \\[-\\dfrac{12EI}{L^3}, \\qquad \\dfrac{6EI}{L^2}\\] (downward and clockwise). The '1' in the options is taken as the length \\(L\\)."
                 },
                 {
                     id: "cm14q020",
@@ -414,7 +414,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "10.0" }
                     ],
                     answer: "b",
-                    explanation: "As per IS 1905, H1 type mortar has a minimum characteristic compressive strength of 3 N/mm². Mortar grades are H1 (3 N/mm²), M2 (5 N/mm²), M3 (7.5 N/mm²), etc."
+                    explanation: "As per IS 1905, H1 type mortar has a minimum characteristic compressive strength of 3.0 N per mm<sup>2</sup>. The mortar grades are H1 (3), M2 (5) and M3 (7.5 N per mm<sup>2</sup>), and so on."
                 },
                 {
                     id: "cm14q029",
@@ -440,7 +440,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "Less than or equal to 1/24" }
                     ],
                     answer: "d",
-                    explanation: "As per masonry design codes, the additional bending stress due to eccentricity is negligible if the eccentricity ratio (e/t) is ≤ 1/24. This simplifies the design to a direct stress calculation."
+                    explanation: "As per masonry design codes, the additional bending stress due to eccentricity is negligible if the eccentricity ratio is \\[\\dfrac{e}{t} \\le \\dfrac{1}{24}\\] This simplifies the design to a direct stress calculation."
                 },
                 {
                     id: "cm14q031",
@@ -479,7 +479,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "15.0 m²" }
                     ],
                     answer: "c",
-                    explanation: "Codes restrict the floor area for rooms in masonry buildings to control spans and ensure structural stability without intermediate supports. 13.5 m² is a common limit."
+                    explanation: "Codes restrict the floor area of rooms in masonry buildings to control spans and ensure structural stability without intermediate supports. 13.5 m<sup>2</sup> is a common limit."
                 }
             ]
         },
@@ -501,7 +501,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "Equal increase in pore water pressure and total stress" }
                     ],
                     answer: "d",
-                    explanation: "When the water table rises above the ground (e.g., submergence), the total stress (σ) at any point increases due to the weight of the overlying water. The pore water pressure (u) increases by the same amount because the water is continuous. Therefore, the change in effective stress (Δσ' = Δσ - Δu) is zero."
+                    explanation: "When the water table rises above the ground (submergence), the total stress at any point increases by the weight of the overlying water, and the pore water pressure increases by the same amount because the water is continuous. So \\[\\Delta\\sigma' = \\Delta\\sigma - \\Delta u = 0\\]"
                 },
                 {
                     id: "cm14q035",
@@ -527,7 +527,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "None" }
                     ],
                     answer: "b",
-                    explanation: "The pressure difference across the interface of a spherical droplet is given by Δp = 4σ/d, where σ is surface tension and d is diameter. Convert units: 0.05 N/cm² = 500 N/m². Solving 500 = 4 * 0.51 / d gives d = (4 * 0.51) / 500 = 0.00408 m = 4.08 mm."
+                    explanation: "The pressure difference across a droplet is \\(\\Delta p = \\dfrac{4\\sigma}{d}\\). With 0.05 N per cm<sup>2</sup>, which is 500 N per m<sup>2</sup>, \\[d = \\dfrac{4 \\times 0.51}{500} = 0.00408\\ \\text{m}\\] which is 4.08 mm."
                 },
                 {
                     id: "cm14q037",
@@ -540,7 +540,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "None of the mentioned" }
                     ],
                     answer: "c",
-                    explanation: "A soap bubble has two air-liquid interfaces (inside and outside surfaces), so the pressure difference is Δp = 8σ/d. A liquid jet has one cylindrical interface, for which Δp = σ/r = 2σ/d. Therefore, the pressure difference is greater for a soap bubble."
+                    explanation: "A soap bubble has two air-liquid interfaces, while a liquid jet has one cylindrical interface: \\[\\Delta p_{bubble} = \\dfrac{8\\sigma}{d}\\] \\[\\Delta p_{jet} = \\dfrac{2\\sigma}{d}\\] So the pressure difference is greater for a soap bubble."
                 },
                 {
                     id: "cm14q038",
@@ -644,7 +644,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "50%" }
                     ],
                     answer: "c",
-                    explanation: "This question's notation is unclear. It might refer to pressure head. If h_W is pressure head and Z is elevation head, the total head (H) is the sum. Hydrostatic pressure (u) is given by u = γ_w * h_p, where h_p is the pressure head. The percentages suggest a relative measure. A likely interpretation is that the pressure head is 30% of a total head and elevation head is 10%, making the total head 40%."
+                    explanation: "The notation is unclear. If \\(h_W\\) is the pressure head and \\(Z\\) the elevation head, the total head is their sum, and the hydrostatic pressure is \\(u = \\gamma_wh_p\\). Reading the percentages as shares of a reference head, the total is \\[30\\% + 10\\% = 40\\%\\]"
                 },
                 {
                     id: "cm14q046",
@@ -757,7 +757,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "4" }
                     ],
                     answer: "c",
-                    explanation: "Using the two-point method: Mean velocity in the vertical = (v0.2 + v0.8)/2 = (0.7 m/s + 0.3 m/s)/2 = 0.5 m/s. Depth (h) = 10 m. Discharge per unit width (q) = Mean Velocity * Depth = 0.5 m/s * 10 m = 5 m²/s. The unit is cubic meters per second per meter width."
+                    explanation: "The two-point method takes the mean velocity in the vertical as the average of the readings at 0.2 and 0.8 of the depth: \\[\\bar v = \\dfrac{0.7 + 0.3}{2} = 0.5\\ \\text{m/s}\\] \\[q = \\bar vh = 0.5 \\times 10 = 5\\] cubic metres per second per metre width."
                 },
                 {
                     id: "cm14q054",
@@ -770,7 +770,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "By/(B+2y)" }
                     ],
                     answer: "d",
-                    explanation: "Hydraulic radius (R) is defined as the cross-sectional area of flow (A) divided by the wetted perimeter (P). For a rectangular channel, A = B * y and P = B + 2y. Therefore, R = A/P = (B*y)/(B+2y)."
+                    explanation: "The hydraulic radius is the flow area divided by the wetted perimeter. For a rectangular channel \\(A = By\\) and \\(P = B + 2y\\), so \\[R = \\dfrac{By}{B + 2y}\\]"
                 },
                 {
                     id: "cm14q055",
@@ -783,7 +783,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "5.11m" }
                     ],
                     answer: "a",
-                    explanation: "Hydraulic depth (D) is the cross-sectional area of flow (A) divided by the top width (T). For a trapezoid: Top width T = b + 2zy, where b=5m, z=2 (side slope 1V:2H means z=2 for 1H:2V), y=4m. T = 5 + 2*2*4 = 5 + 16 = 21m. Area A = (b + zy)y = (5 + 2*4)*4 = (5+8)*4 = 13*4 = 52 m². Hydraulic Depth D = A/T = 52/21 ≈ 2.476m. This value does not match the options exactly; recalculating for standard 1H:2V (horizontal:vertical). If side slope is 1H:2V, then z = horizontal/vertical = 1/2 = 0.5. T = b + 2zy = 5 + 2*0.5*4 = 5 + 4 = 9m. A = (b + zy)y = (5 + 0.5*4)*4 = (5+2)*4 = 7*4 = 28 m². D = A/T = 28/9 ≈ 3.11m. the option 3.11m is correct for z=0.5."
+                    explanation: "The hydraulic depth is the flow area divided by the top width. For 1H:2V, \\(z = \\dfrac{1}{2} = 0.5\\), with \\(b = 5\\) m and \\(y = 4\\) m: \\[T = b + 2zy = 5 + 4 = 9\\ \\text{m}\\] \\[\\begin{aligned} A &amp;= (b + zy)y = 7 \\times 4 \\\\ &amp;= 28\\ \\text{m}^2 \\end{aligned}\\] \\[D = \\dfrac{28}{9} \\approx 3.11\\ \\text{m}\\] Taking \\(z = 2\\) by mistake would give \\(\\dfrac{52}{21} \\approx 2.476\\) m, which matches no option."
                 },
                 {
                     id: "cm14q056",
@@ -796,7 +796,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "1.08m" }
                     ],
                     answer: "b",
-                    explanation: "Hydraulic radius R = A/P. For a trapezoid with side slope 1H:3V, z = horizontal/vertical = 1/3 ≈ 0.333. Area A = (b + zy)y = (6 + (1/3)*5)*5 = (6 + 1.667)*5 = 7.667*5 = 38.333 m². Wetted perimeter P = b + 2y√(1+z²) = 6 + 2*5*√(1+(1/3)²) = 6 + 10*√(1+0.111) = 6 + 10*√1.111 ≈ 6 + 10*1.054 = 6 + 10.54 = 16.54m. R = A/P = 38.333/16.54 ≈ 2.317m. Closest option is (d) 2.32m. Alternatively, if side slope is interpreted as 1H:3V (z=1/3), calculation leads to ~2.32m."
+                    explanation: "For 1H:3V, \\(z = \\dfrac{1}{3}\\), with \\(b = 6\\) m and \\(y = 5\\) m: \\[\\begin{aligned} A &amp;= \\left(6 + \\dfrac{5}{3}\\right) \\times 5 \\\\ &amp;= 38.333\\ \\text{m}^2 \\end{aligned}\\] \\[\\begin{aligned} P &amp;= 6 + 2 \\times 5 \\times \\sqrt{1.111} \\\\ &amp;= 6 + 10.54 \\\\ &amp;= 16.54\\ \\text{m} \\end{aligned}\\] \\[R = \\dfrac{38.333}{16.54} \\approx 2.317\\ \\text{m}\\] The closest option is 2.32 m."
                 },
                 {
                     id: "cm14q057",
@@ -822,7 +822,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "45 m³/s" }
                     ],
                     answer: "d",
-                    explanation: "\\(\\[ \\begin{aligned} \\text{Top width } (T) &= b + 2zy \\quad \\text{where } z = \\frac{1}{2} = 0.5 \\\\ &= 6 + 2 \\times 0.5 \\times 3 = 6 + 3 = 9\\ \\text{m} \\\\[6pt] \\text{Area } (A) &= \\frac{(b + T)}{2} \\times y = \\frac{(6 + 9)}{2} \\times 3 = 22.5\\ \\text{m}^2 \\\\[6pt] \\text{Discharge } (Q) &= A \\times V = 22.5 \\times 2 = 45\\ \\text{m}^3/\\text{s} \\end{aligned} \\]\\)"
+                    explanation: "With \\(z = \\dfrac{1}{2} = 0.5\\), \\[T = b + 2zy = 6 + 3 = 9\\ \\text{m}\\] \\[\\begin{aligned} A &amp;= \\dfrac{b + T}{2}y = \\dfrac{6 + 9}{2} \\times 3 \\\\ &amp;= 22.5\\ \\text{m}^2 \\end{aligned}\\] \\[\\begin{aligned} Q &amp;= AV = 22.5 \\times 2 \\\\ &amp;= 45\\ \\text{m}^3\\text{/s} \\end{aligned}\\]"
                 },
                 {
                     id: "cm14q059",
@@ -835,7 +835,7 @@ const CIVIL_MODEL_14 = {
                         { key: "d", text: "1:5" }
                     ],
                     answer: "a",
-                    explanation: "Hydraulic radius R = A/P. For a trapezoid, A = (b + zy)y = (8 + 4z)*4 = 32 + 16z. P = b + 2y√(1+z²) = 8 + 8√(1+z²). Given R=2.36, so (32+16z)/(8+8√(1+z²)) = 2.36. Simplify: (4+2z)/(1+√(1+z²)) = 2.36. Test z=0.5 (1/2): (4+1)/(1+√(1+0.25)) = 5/(1+1.118) = 5/2.118 ≈ 2.36. So side slope is 1/2."
+                    explanation: "For the trapezoid, \\[A = (8 + 4z) \\times 4 = 32 + 16z\\] \\[P = 8 + 8\\sqrt{1 + z^2}\\] Setting \\(\\dfrac{A}{P} = 2.36\\) simplifies to \\[\\dfrac{4 + 2z}{1 + \\sqrt{1 + z^2}} = 2.36\\] Testing \\(z = \\dfrac{1}{2}\\) gives \\[\\dfrac{5}{1 + 1.118} = \\dfrac{5}{2.118} \\approx 2.36\\] so the side slope is 1:2."
                 }
             ]
         },

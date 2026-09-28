@@ -110,7 +110,7 @@ const CIVIL_MODEL_18 = {
                         { key: "d", text: "1:10000" }
                     ],
                     answer: "d",
-                    explanation: "Representative Fraction (RF) is calculated as (Map Distance)/(Ground Distance). Here, 1 cm / 100 m = 1 cm / 10000 cm = 1:10000."
+                    explanation: "The representative fraction is the map distance divided by the ground distance: \\[\\text{RF} = \\dfrac{1\\ \\text{cm}}{100\\ \\text{m}} = \\dfrac{1\\ \\text{cm}}{10{,}000\\ \\text{cm}}\\] which is 1:10000."
                 },
                 {
                     id: "cm18q007",
@@ -223,7 +223,7 @@ const CIVIL_MODEL_18 = {
                         { key: "d", text: "1/2 N²L/AE" }
                     ],
                     answer: "d",
-                    explanation: "The strain energy stored in a linearly elastic bar under axial load is U = (1/2) * N * Δ = (1/2) * N * (NL/AE) = N²L/(2AE)."
+                    explanation: "The strain energy stored in a linearly elastic bar under axial load is \\[\\begin{aligned} U &amp;= \\dfrac{1}{2}N\\Delta = \\dfrac{1}{2}N \\times \\dfrac{NL}{AE} \\\\ &amp;= \\dfrac{N^2L}{2AE} \\end{aligned}\\]"
                 },
                 {
                     id: "cm18q015",
@@ -301,7 +301,7 @@ const CIVIL_MODEL_18 = {
                         { key: "d", text: "U = σ² * volume / E" }
                     ],
                     answer: "b",
-                    explanation: "Proof resilience is the total strain energy at the elastic limit, given by U = (σ² * volume) / (2E), where σ is the proof stress."
+                    explanation: "Proof resilience is the total strain energy at the elastic limit: \\[U = \\dfrac{\\sigma^2}{2E} \\times \\text{volume}\\] where \\(\\sigma\\) is the proof stress."
                 },
                 {
                     id: "cm18q021",
@@ -466,7 +466,7 @@ const CIVIL_MODEL_18 = {
                         { key: "d", text: "5WL⁴ / 384EI" }
                     ],
                     answer: "b",
-                    explanation: "The standard formula for the maximum deflection of a simply supported beam with a central point load is δ = (WL³) / (48EI)."
+                    explanation: "The standard maximum deflection of a simply supported beam with a central point load is \\[\\delta = \\dfrac{WL^3}{48EI}\\]"
                 },
                 {
                     id: "cm18q033",
@@ -479,7 +479,7 @@ const CIVIL_MODEL_18 = {
                         { key: "d", text: "2125 kg/cm²" }
                     ],
                     answer: "c",
-                    explanation: "Older codes like IS 800:1962 specified permissible stresses. The permissible bending stress in steel slab plates was 1890 kg/cm²."
+                    explanation: "Older codes such as IS 800:1962 specified permissible stresses. The permissible bending stress in steel slab plates was 1890 kg per cm<sup>2</sup>."
                 },
                 {
                     id: "cm18q034",
@@ -491,7 +491,7 @@ const CIVIL_MODEL_18 = {
                         { key: "c", text: "1200 mm²" }
                     ],
                     answer: "c",
-                    explanation: "As per IS 456:2000, the minimum longitudinal reinforcement for an RCC column is 0.8% of the gross cross-sectional area. For a 400mm x 400mm column, area = 160,000 mm². 0.8% of 160,000 = 1280 mm². The closest option is 1200 mm², which is the intended answer based on typical code interpretation and provided choices."
+                    explanation: "IS 456:2000 requires at least 0.8% of the gross area as longitudinal steel in a column. For a 400 mm by 400 mm column, \\(A_g = 160{,}000\\) mm<sup>2</sup>, so \\[0.008 \\times 160{,}000 = 1280\\ \\text{mm}^2\\] The closest option, 1200 mm<sup>2</sup>, is the intended answer."
                 }
             ]
         },
@@ -513,7 +513,7 @@ const CIVIL_MODEL_18 = {
                         { key: "d", text: "y_w * i" }
                     ],
                     answer: "a",
-                    explanation: "Seepage pressure (p_s) is the pressure loss due to friction over a flow path of length h. It is calculated as the product of the hydraulic gradient (i) over that path, the length (h), and the unit weight of water (γ_w): p_s = i * h * γ_w. Note: i = Δh / h, so p_s = (Δh / h) * h * γ_w = Δh * γ_w."
+                    explanation: "Seepage pressure is the head lost to friction over a flow path of length \\(h\\), times the unit weight of water: \\[p_s = ih\\gamma_w\\] Since \\(i = \\dfrac{\\Delta h}{h}\\), this is also \\(p_s = \\gamma_w\\Delta h\\)."
                 },
                 {
                     id: "cm18q036",
@@ -617,7 +617,7 @@ const CIVIL_MODEL_18 = {
                         { key: "d", text: "Mohr" }
                     ],
                     answer: "a",
-                    explanation: "The linear shear strength equation τ = c + σ tanφ, where c is cohesion and φ is the angle of internal friction, is known as the Coulomb failure criterion."
+                    explanation: "The linear shear strength equation \\[\\tau = c + \\sigma\\tan\\phi\\] where \\(c\\) is cohesion and \\(\\phi\\) the angle of internal friction, is known as the Coulomb failure criterion."
                 },
                 {
                     id: "cm18q044",
@@ -704,7 +704,7 @@ const CIVIL_MODEL_18 = {
                         { key: "d", text: "none of the above" }
                     ],
                     answer: "c",
-                    explanation: "Chezy's formula (V = C√(RS)) is primarily used to calculate the mean velocity of flow in open channels, where C is Chezy's coefficient, R is the hydraulic radius, and S is the slope of the energy grade line."
+                    explanation: "Chezy's formula, \\[V = C\\sqrt{RS}\\] is mainly used for the mean velocity of flow in open channels, where \\(C\\) is Chezy's coefficient, \\(R\\) the hydraulic radius and \\(S\\) the slope of the energy grade line."
                 },
                 {
                     id: "cm18q050",
@@ -847,7 +847,7 @@ const CIVIL_MODEL_18 = {
                         { key: "d", text: "Channel bed and water surface are parallel, but the total energy line is horizontal." }
                     ],
                     answer: "b",
-                    explanation: "In uniform flow, the water depth (y) and flow velocity (V) remain completely constant along the channel. Because depth and velocity head (V²/2g) do not change, the water surface and Total Energy Line stay at fixed vertical distances above the channel bed, making all three lines parallel."
+                    explanation: "In uniform flow the depth \\(y\\) and velocity \\(V\\) stay constant along the channel. Because the depth and velocity head \\(\\dfrac{V^2}{2g}\\) do not change, the water surface and total energy line stay at fixed heights above the bed, so all three lines are parallel."
                 }
             ]
         },
@@ -921,7 +921,7 @@ const CIVIL_MODEL_18 = {
                         { key: "d", text: "t &lt; 2L/c" }
                     ],
                     answer: "c",
-                    explanation: "The critical time for valve closure is given by Tc = 2L/c, where L is the pipe length and c is the speed of the pressure wave. If the actual closure time (t) is greater than Tc, it is considered a gradual closure, and the water hammer pressure rise is reduced."
+                    explanation: "The critical time for valve closure is \\[T_c = \\dfrac{2L}{c}\\] where \\(L\\) is the pipe length and \\(c\\) the speed of the pressure wave. If the actual closure time exceeds \\(T_c\\), the closure is gradual and the water hammer pressure rise is reduced."
                 },
                 {
                     id: "cm18q066",
@@ -1388,7 +1388,7 @@ const CIVIL_MODEL_18 = {
                         { key: "b", text: "L_t = L_0 (10^(-k_r t))" }
                     ],
                     answer: "a",
-                    explanation: "The amount of ultimate BOD remaining at any time t (L_t) is given by L_t = L_0 * 10^(-k_d * t), where L_0 is the ultimate BOD first-stage and k_d is the deoxygenation rate constant."
+                    explanation: "The ultimate BOD remaining at time \\(t\\) is \\[L_t = L_0 \\times 10^{-k_dt}\\] where \\(L_0\\) is the first-stage ultimate BOD and \\(k_d\\) the deoxygenation constant."
                 },
                 {
                     id: "cm18q100",

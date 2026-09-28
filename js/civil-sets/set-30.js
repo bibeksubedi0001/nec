@@ -249,7 +249,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "UDL between points" }
                     ],
                     answer: "b",
-                    explanation: "The shape of the SFD is related to the load type by the differential relationship dS/dx = -w. A UDL (constant w) gives a linear SFD (dS/dx = constant). A parabolic SFD (second-order curve) indicates that the load is varying linearly (UVL - Uniformly Varying Load), as integrating a linear function (w) gives a quadratic function (S)."
+                    explanation: "The SFD shape is tied to the load by \\(\\dfrac{dS}{dx} = -w\\). A UDL (constant \\(w\\)) gives a linear SFD. A parabolic SFD therefore indicates a linearly varying load (UVL), since integrating a linear \\(w\\) gives a quadratic \\(S\\)."
                 },
                 {
                     id: "cm30q017",
@@ -388,7 +388,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "4.0" }
                     ],
                     answer: "d",
-                    explanation: "As per IS 10262:2009 (Guidelines for concrete mix design), Table 1, the assumed standard deviation for M25 grade concrete is 4.0 N/mm². This value is used in the mix design calculations to determine the target mean strength."
+                    explanation: "As per IS 10262:2009 (Guidelines for concrete mix design), Table 1, the assumed standard deviation for M25 concrete is 4.0 N per mm<sup>2</sup>. It is used to find the target mean strength."
                 },
                 {
                     id: "cm30q027",
@@ -414,7 +414,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "28 l" }
                     ],
                     answer: "b",
-                    explanation: "As per IS 456:2000, Table 5, the maximum free water-cement ratio for M20 concrete for mild exposure is 0.55. Since one bag of cement is 50 kg, the maximum water content per bag is 50 * 0.55 = 27.5 liters. Common practice and other codes often specify a maximum of 30 liters per bag to ensure workability without exceeding the w/c ratio too much. The closest standard value is 30 l."
+                    explanation: "IS 456:2000, Table 5, sets the maximum free water-cement ratio for M20 concrete in mild exposure at 0.55. With a 50 kg bag, \\[50 \\times 0.55 = 27.5\\ \\text{litres}\\] Common practice and other codes often specify a maximum of 30 litres per bag to ensure workability without exceeding the water-cement ratio too much, so the closest standard value is 30 l."
                 },
                 {
                     id: "cm30q029",
@@ -427,7 +427,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "24 N/mm²" }
                     ],
                     answer: "c",
-                    explanation: "The target mean strength (f'_t) is calculated as f_ck + k*S, where k is a constant (usually 1.65 for 5% failure probability) and S is the standard deviation. For M20 and a standard deviation of 4 N/mm² (as per IS 10262:2009 for M25, but often used for lower grades), f'_t = 20 + 1.65*4 = 26.6 N/mm²."
+                    explanation: "The target mean strength is \\(f_{ck} + kS\\), where \\(k\\) is usually 1.65 (5% failure probability) and \\(S\\) the standard deviation. Using \\(S = 4\\) N per mm<sup>2</sup> (the IS 10262:2009 value for M25, often used for lower grades too), \\[\\begin{aligned} f_t &amp;= 20 + 1.65 \\times 4 \\\\ &amp;= 26.6\\ \\text{N/mm}^2 \\end{aligned}\\]"
                 },
                 {
                     id: "cm30q030",
@@ -466,7 +466,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "none" }
                     ],
                     answer: "b",
-                    explanation: "The weight of water in the paste is 1875 g - 1500 g = 375 g. The percentage of water by weight of cement is (375 / 1500) * 100 = 25%. This is the standard test for normal consistency of cement paste (Vicat apparatus)."
+                    explanation: "The water in the paste is \\(1875 - 1500 = 375\\) g, so as a percentage of the cement weight \\[\\dfrac{375}{1500} \\times 100 = 25\\%\\] This is the standard normal-consistency test of cement paste (Vicat apparatus)."
                 },
                 {
                     id: "cm30q033",
@@ -479,7 +479,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "25.0 MPa" }
                     ],
                     answer: "c",
-                    explanation: "The flexural strength (modulus of rupture) of concrete is approximately 0.7√f_ck (as per IS 456:2000, Clause 6.2.2). For M25 concrete (f_ck = 25 N/mm²), flexural strength ≈ 0.7 * √25 = 0.7 * 5 = 3.5 N/mm² (MPa)."
+                    explanation: "IS 456:2000, clause 6.2.2, gives the flexural strength (modulus of rupture) as about \\(0.7\\sqrt{f_{ck}}\\). For M25, \\[\\begin{aligned} f_{cr} &amp;= 0.7\\sqrt{25} = 0.7 \\times 5 \\\\ &amp;= 3.5\\ \\text{MPa} \\end{aligned}\\]"
                 },
                 {
                     id: "cm30q034",
@@ -527,7 +527,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "4" }
                     ],
                     answer: "b",
-                    explanation: "A factor of safety (FOS) of 3 is commonly used in geotechnical engineering to derive the safe bearing capacity (q_s) from the ultimate bearing capacity (q_u) determined from a plate load test: q_s = q_u / 3.\""
+                    explanation: "A factor of safety of 3 is commonly used to derive the safe bearing capacity from the ultimate bearing capacity found in a plate load test: \\[q_s = \\dfrac{q_u}{3}\\]"
                 },
                 {
                     id: "cm30q037",
@@ -540,7 +540,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "Q = P s" }
                     ],
                     answer: "c",
-                    explanation: "Housel's method proposes that the load (Q) a footing can carry is a function of two soil properties: a bearing value (q) related to area (A) and a perimeter shear value (s) related to the perimeter (P). Thus, Q = A * q + P * s."
+                    explanation: "Housel's method makes the load a footing can carry depend on a bearing value \\(q\\) acting over the area \\(A\\) and a perimeter shear \\(s\\) acting along the perimeter \\(P\\): \\[Q = Aq + Ps\\]"
                 },
                 {
                     id: "cm30q038",
@@ -705,7 +705,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "None" }
                     ],
                     answer: "c",
-                    explanation: "The area under the unit hydrograph represents 1 cm of direct runoff. For a triangular UH, the volume is (1/2 * base width * peak discharge). Set this volume equal to 1 cm * catchment area. Solve for the area: Area (km²) = [ (1/2 * 144 hrs * 3600 s/hr * 23 m³/s) / (0.01 m) ] / 1e6. The result is approximately 596 km²."
+                    explanation: "The area under a unit hydrograph is 1 cm of runoff over the catchment. For the triangle, \\[V = \\dfrac{1}{2} \\times (144 \\times 3600) \\times 23\\] \\[= 5.96 \\times 10^6\\ \\text{m}^3\\] so \\[A = \\dfrac{5.96 \\times 10^6}{0.01} = 596\\ \\text{km}^2\\]"
                 },
                 {
                     id: "cm30q050",
@@ -731,7 +731,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "None of these" }
                     ],
                     answer: "b",
-                    explanation: "The Rational Formula (Q = CiA) assumes a constant rainfall intensity (i) and runoff coefficient (C) for the entire catchment. This assumption of spatial and temporal uniformity is only reasonable for small catchments, typically less than 50 km²."
+                    explanation: "The rational formula \\(Q = CiA\\) assumes a constant rainfall intensity and runoff coefficient over the whole catchment. That spatial and temporal uniformity is reasonable only for small catchments, typically under 50 km<sup>2</sup>."
                 },
                 {
                     id: "cm30q052",
@@ -770,7 +770,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "Qp" }
                     ],
                     answer: "d",
-                    explanation: "The Rational Formula (Q = CiA) states that peak discharge is a function of rainfall intensity (i), not duration. If the intensity remains the same, the peak discharge (Qp) will remain the same, regardless of the storm duration. The duration must be at least equal to the time of concentration for the formula to be valid."
+                    explanation: "In the rational formula \\(Q = CiA\\), the peak discharge depends on the rainfall intensity, not its duration. With the same intensity the peak stays \\(Q_p\\), provided the duration is at least the time of concentration."
                 },
                 {
                     id: "cm30q055",
@@ -848,7 +848,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "3.17 cm" }
                     ],
                     answer: "b",
-                    explanation: "Calculate the total annual runoff volume: 1 m³/s * 365 days * 24 hrs/day * 3600 s/hr. Divide this volume (in m³) by the catchment area (31.54 km² * 10^6 m²/km²) to find the depth of water in meters. Convert to cm. The result is very close to 100 cm. The area 31.54 km² is chosen so the math works out neatly to 100 cm (or 1 m)."
+                    explanation: "The annual runoff volume is \\[\\begin{aligned} &amp;1 \\times 365 \\times 24 \\times 3600 \\\\ &amp;= 31.536 \\times 10^6\\ \\text{m}^3 \\end{aligned}\\] Dividing by the catchment area of \\(31.54 \\times 10^6\\) m<sup>2</sup> gives almost exactly 1 m, or 100 cm; the area is chosen so the numbers work out neatly."
                 }
             ]
         },
@@ -974,7 +974,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "Pumped-storage plant" }
                     ],
                     answer: "c",
-                    explanation: "Base load power plants are designed to run continuously at or near full capacity to meet the minimum level of power demand 24/7. They provide a constant, reliable supply of electricity."
+                    explanation: "Base load power plants are designed to run continuously at or near full capacity to meet the minimum level of power demand round the clock. They provide a constant, reliable supply of electricity."
                 }
             ]
         },
@@ -1391,7 +1391,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "Low temperature" }
                     ],
                     answer: "a",
-                    explanation: "When water is supplied for only a few hours a day (intermittent supply), people cannot use water freely. They are limited by their storage capacity, which leads to an overall decrease in measured per capita consumption compared to a continuous 24/7 supply."
+                    explanation: "When water is supplied for only a few hours a day (intermittent supply), people cannot use water freely and are limited by their storage capacity, so the measured per capita consumption falls compared with a continuous supply."
                 },
                 {
                     id: "cm30q100",
@@ -1404,7 +1404,7 @@ const CIVIL_MODEL_30 = {
                         { key: "d", text: "TH" }
                     ],
                     answer: "b",
-                    explanation: "When Total Hardness (TH) is greater than Alkalinity, the Carbonate Hardness (CH) is equal to the total alkalinity. The Non-Carbonate Hardness (NCH) is the portion of hardness associated with non-carbonate ions (e.g., chlorides, sulfates) and is calculated as NCH = TH - CH (or TH - Alkalinity)."
+                    explanation: "When total hardness exceeds alkalinity, the carbonate hardness equals the alkalinity, and the non-carbonate hardness (from chlorides, sulphates and so on) is \\[\\text{NCH} = \\text{TH} - \\text{CH}\\]"
                 }
             ]
         }

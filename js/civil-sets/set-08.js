@@ -84,7 +84,7 @@ const CIVIL_MODEL_8 = {
                         { key: "d", text: "All of above" }
                     ],
                     answer: "d",
-                    explanation: "As explained in Q49, the arithmetic check (ΣBS - ΣFS = ΣRise - ΣFall = Last R.L. - First R.L.) in the rise and fall method incorporates all back sights (BS), intermediate sights (IS), and fore sights (FS), providing a check on the calculations for all readings."
+                    explanation: "The rise and fall arithmetic check, \\[\\Sigma\\text{BS} - \\Sigma\\text{FS} = \\Sigma\\text{Rise} - \\Sigma\\text{Fall}\\] equal to the last RL minus the first RL, involves all back sights, intermediate sights and fore sights, so it checks the calculations for every reading."
                 },
                 {
                     id: "cm8q005",
@@ -123,7 +123,7 @@ const CIVIL_MODEL_8 = {
                         { key: "d", text: "R/D" }
                     ],
                     answer: "c",
-                    explanation: "The combined correction for curvature and refraction is given by C_cr = 0.0673 D², where D is the distance in kilometers. This shows the correction is proportional to the square of the distance (D²). The formula is derived from earth's radius R, making it proportional to D²/R."
+                    explanation: "The combined correction for curvature and refraction, with \\(D\\) in km and in metres, is \\[C_{cr} = 0.0673D^2\\] It comes from the earth's radius \\(R\\), so the correction is proportional to \\(\\dfrac{D^2}{R}\\)."
                 },
                 {
                     id: "cm8q008",
@@ -149,7 +149,7 @@ const CIVIL_MODEL_8 = {
                         { key: "d", text: "Reduced level of bench mark + intermediate sight" }
                     ],
                     answer: "a",
-                    explanation: "Height of Instrument (HI) is the elevation of the line of sight of the level. It is calculated by adding the Back Sight (BS) reading taken on a point of known Reduced Level (RL) to that RL: HI = RL(BM) + BS."
+                    explanation: "The height of instrument (HI) is the elevation of the line of sight of the level. It is found by adding the back sight taken on a point of known reduced level to that RL: \\[\\text{HI} = \\text{RL}_{BM} + \\text{BS}\\]"
                 },
                 {
                     id: "cm8q010",
@@ -188,7 +188,7 @@ const CIVIL_MODEL_8 = {
                         { key: "d", text: "&gt; 100 N/mm²" }
                     ],
                     answer: "d",
-                    explanation: "A good building stone must have high compressive strength to withstand heavy loads. A crushing strength greater than 100 N/mm² (100 MPa) is generally considered acceptable for construction purposes."
+                    explanation: "A good building stone must have high compressive strength to withstand heavy loads. A crushing strength greater than 100 N per mm<sup>2</sup> (100 MPa) is generally considered acceptable for construction purposes."
                 },
                 {
                     id: "cm8q013",
@@ -539,7 +539,7 @@ const CIVIL_MODEL_8 = {
                         { key: "d", text: "3240 KN/m²" }
                     ],
                     answer: "a",
-                    explanation: "Soft rocks, such as shale, mudstone, and weathered sandstone, typically exhibit a safe bearing capacity of approximately 450 KN/m²."
+                    explanation: "Soft rocks, such as shale, mudstone and weathered sandstone, typically have a safe bearing capacity of about 450 kN per m<sup>2</sup>."
                 },
                 {
                     id: "cm8q038",
@@ -1390,7 +1390,7 @@ const CIVIL_MODEL_8 = {
                         { key: "d", text: "81" }
                     ],
                     answer: "c",
-                    explanation: "\\(SVI = \\frac{\\text{Settled Sludge Volume (mL/L)}}{\\text{Mixed Liquor Suspended Solids (g/L)}}\\) \\(SVI = \\frac{27 \\text{ mL/L}}{3.0 \\text{ g/L}}\\) \\(SVI = 9 \\text{ mL/g} \\text{ - verified}\\)"
+                    explanation: "The sludge volume index is the settled sludge volume divided by the suspended solids: \\[\\text{SVI} = \\dfrac{27\\ \\text{mL/L}}{3.0\\ \\text{g/L}} = 9\\ \\text{mL/g}\\]"
                 },
                 {
                     id: "cm8q100",

@@ -570,7 +570,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The sum of individual peaks is 12 + 18 + 30 = 60 kW. Coincidence factor is combined peak divided by this sum: 45/60 = 0.75. Diversity factor is the reciprocal, 60/45 = 4/3, not the coincidence factor.<p>Capsule 4th ed., p. 30; topic 8 point 11.</p>",
+          "explanation": "The sum of individual peaks is \\(12 + 18 + 30 = 60\\) kW. The coincidence factor is the combined peak divided by this sum: \\[\\dfrac{45}{60} = 0.75\\] The diversity factor is the reciprocal, \\(\\dfrac{60}{45} = \\dfrac{4}{3}\\), not the coincidence factor.<p>Capsule 4th ed., p. 30; topic 8 point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -685,7 +685,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Average demand is energy/time = 1440/24 = 60 kW. Load factor is average demand divided by maximum demand, so LF = 60/100 = 0.60. Installed capacity is not the denominator unless it happens to equal the observed peak.<p>Capsule 4th ed., p. 30; topic 8 point 14.</p>",
+          "explanation": "Average demand is energy divided by time: \\[\\dfrac{1440}{24} = 60\\ \\text{kW}\\] Load factor is average demand divided by maximum demand: \\[\\text{LF} = \\dfrac{60}{100} = 0.60\\] Installed capacity is not the denominator unless it happens to equal the observed peak.<p>Capsule 4th ed., p. 30; topic 8 point 14.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -723,7 +723,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "c",
-          "explanation": "A load curve plots power against time, so its area is energy. The two rectangular areas give 40 x 18 + 100 x 6 = 720 + 600 = 1320 kWh. Averaging the two power levels equally would ignore their unequal durations.<p>Capsule 4th ed., p. 30; topic 8 point 15.</p>",
+          "explanation": "A load curve plots power against time, so its area is energy. The two rectangular areas give \\[\\begin{aligned} E &amp;= 40 \\times 18 + 100 \\times 6 \\\\ &amp;= 720 + 600 = 1320\\ \\text{kWh} \\end{aligned}\\] Averaging the two power levels equally would ignore their unequal durations.<p>Capsule 4th ed., p. 30; topic 8 point 15.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -761,7 +761,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Capacity factor = 30/60 = 0.50 and load factor = 30/60 = 0.50, so their ratio is 1. More generally CF/LF = peak demand/installed capacity for a common period, energy boundary and nonzero average output.<p>Capsule 4th ed., p. 30; topic 8 point 18.</p>",
+          "explanation": "Capacity factor and load factor are \\[\\text{CF} = \\dfrac{30}{60} = 0.50\\] \\[\\text{LF} = \\dfrac{30}{60} = 0.50\\] so their ratio is 1. More generally \\(\\dfrac{\\text{CF}}{\\text{LF}}\\) equals peak demand divided by installed capacity for a common period, energy boundary and nonzero average output.<p>Capsule 4th ed., p. 30; topic 8 point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -799,7 +799,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Pondage supplies the short-period flow deficit, not the entire turbine release. Required volume = (5 - 2) x (2 x 3600) = 21600 m<sup>3</sup>. This is usable balancing volume; freeboard, dead storage and real operating limits require separate allowances.<p>Capsule 4th ed., p. 30; topic 8 point 19.</p>",
+          "explanation": "Pondage supplies the short-period flow deficit, not the entire turbine release. The required volume is \\[\\begin{aligned} V &amp;= (5 - 2) \\times (2 \\times 3600) \\\\ &amp;= 21{,}600\\ \\text{m}^3 \\end{aligned}\\] This is usable balancing volume; freeboard, dead storage and real operating limits require separate allowances.<p>Capsule 4th ed., p. 30; topic 8 point 19.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -877,7 +877,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Allocated volume = 0.20 x 30 = 6 million m<sup>3</sup>. With constant deposited bulk volume and no sediment removal, time = 6/0.10 = 60 years. Actual deposition need not fill only dead storage, so active storage and intakes can be affected earlier; 60 years is not a universal onset of reservoir impairment.<p>Source note: Pages 30-31 point 22: reconstruct the broken fraction as 6/0.1; qualify deposition distribution and constant-rate assumptions.</p><p>Capsule 4th ed., pp. 30, 31; topic 8 point 22.</p>",
+          "explanation": "The allocated volume is \\(0.20 \\times 30 = 6\\) million m<sup>3</sup>. With constant deposited bulk volume and no sediment removal, \\[t = \\dfrac{6}{0.10} = 60\\ \\text{years}\\] Actual deposition need not fill only dead storage, so active storage and intakes can be affected earlier; 60 years is not a universal onset of reservoir impairment.<p>Source note: Pages 30-31 point 22: reconstruct the broken fraction as 6/0.1; qualify deposition distribution and constant-rate assumptions.</p><p>Capsule 4th ed., pp. 30, 31; topic 8 point 22.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -954,7 +954,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Stored energy is 100 x 0.90 = 90 MWh; returned electrical energy is 90 x 0.90 = 81 MWh. Round-trip efficiency is the product, 0.81, not the average of the two efficiencies. Economic value comes from timing and services, not a net creation of energy.<p>Source note: Page 32 point 73: separately tests the efficiency/economic qualification in the multi-fact reversible-storage claim.</p><p>Capsule 4th ed., p. 32; topic 8 point 73.</p>",
+          "explanation": "Stored and returned energies are \\[100 \\times 0.90 = 90\\ \\text{MWh}\\] \\[90 \\times 0.90 = 81\\ \\text{MWh}\\] Round-trip efficiency is the product, 0.81, not the average of the two efficiencies. Economic value comes from timing and services, not a net creation of energy.<p>Source note: Page 32 point 73: separately tests the efficiency/economic qualification in the multi-fact reversible-storage claim.</p><p>Capsule 4th ed., p. 32; topic 8 point 73.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -992,7 +992,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Hydraulic input is 9.81 x 4 x 60 = 2354.40 kW. Electrical output is input times overall efficiency: 2354.40 x 0.85 = 2001.24 kW. Dividing by efficiency instead would be appropriate for a required-input calculation, not generator output.<p>Capsule 4th ed., p. 32; topic 8 point 76.</p>",
+          "explanation": "Hydraulic input is \\[9.81 \\times 4 \\times 60 = 2354.40\\ \\text{kW}\\] Electrical output is input times overall efficiency: \\[2354.40 \\times 0.85 = 2001.24\\ \\text{kW}\\] Dividing by efficiency instead would be appropriate for a required-input calculation, not generator output.<p>Capsule 4th ed., p. 32; topic 8 point 76.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1068,7 +1068,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Net head is gross head minus losses for matching boundaries: 120 - 8 = 112 m. Losses depend on discharge and the defined waterway. The gross elevation difference must not be used unchanged when estimating output at this operating condition.<p>Capsule 4th ed., p. 32; topic 8 point 91.</p>",
+          "explanation": "Net head is gross head minus losses for matching boundaries: \\[H_n = 120 - 8 = 112\\ \\text{m}\\] Losses depend on discharge and the defined waterway. The gross elevation difference must not be used unchanged when estimating output at this operating condition.<p>Capsule 4th ed., p. 32; topic 8 point 91.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1144,7 +1144,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Gross head is the upstream-to-downstream water-level difference on a common datum: 240 - 180 = 60 m. The turbine's net head requires the appropriate losses to be deducted. Runner elevation alone is not the downstream reference water level, and the gross-head idea is not exclusive to reaction turbines.<p>Capsule 4th ed., p. 33; topic 8 point 96.</p>",
+          "explanation": "Gross head is the upstream-to-downstream water-level difference on a common datum: \\[H_g = 240 - 180 = 60\\ \\text{m}\\] The turbine's net head requires the appropriate losses to be deducted. Runner elevation alone is not the downstream reference water level, and the gross-head idea is not exclusive to reaction turbines.<p>Capsule 4th ed., p. 33; topic 8 point 96.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1182,7 +1182,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The assumed evening window lasts 6 hours. Energy is 8 x 6 + 3 x 18 = 48 + 54 = 102 MWh. The source's 17:00-23:00 window is used as a declared example, not a verified fixed national peak period; actual peaks depend on the dated load record.<p>Source note: Page 33 point 99: distinguish peak demand from energy consumption and do not assert an undated national maximum-consumption window.</p><p>Capsule 4th ed., p. 33; topic 8 point 99.</p>",
+          "explanation": "The assumed evening window lasts 6 hours. The daily energy is \\[\\begin{aligned} E &amp;= 8 \\times 6 + 3 \\times 18 \\\\ &amp;= 48 + 54 = 102\\ \\text{MWh} \\end{aligned}\\] The source's 17:00-23:00 window is used as a declared example, not a verified fixed national peak period; actual peaks depend on the dated load record.<p>Source note: Page 33 point 99: distinguish peak demand from energy consumption and do not assert an undated national maximum-consumption window.</p><p>Capsule 4th ed., p. 33; topic 8 point 99.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1258,7 +1258,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Mean discharge is 10 x 0.20 + 5 x 0.30 + 2 x 0.50 = 4.5 m<sup>3</sup>/s. Duration is 100 x 86400 = 8,640,000 s, so volume is 38,880,000 m<sup>3</sup>. An area plotted against percentage must be scaled by total duration; it is not already a volume in cubic metres.<p>Source note: Page 33 point 109: correct the omitted time-axis scaling. Sorting flow preserves integrated volume but removes chronology.</p><p>Capsule 4th ed., p. 33; topic 8 point 109.</p>",
+          "explanation": "The mean discharge is \\[\\begin{aligned} \\bar Q &amp;= 10 \\times 0.20 + 5 \\times 0.30 \\\\ &amp;\\quad + 2 \\times 0.50 = 4.5\\ \\text{m}^3\\text{/s} \\end{aligned}\\] The duration is \\(100 \\times 86{,}400\\) s, so \\[\\begin{aligned} V &amp;= 4.5 \\times 8{,}640{,}000 \\\\ &amp;= 38{,}880{,}000\\ \\text{m}^3 \\end{aligned}\\] An area plotted against percentage must be scaled by total duration; it is not already a volume in cubic metres.<p>Source note: Page 33 point 109: correct the omitted time-axis scaling. Sorting flow preserves integrated volume but removes chronology.</p><p>Capsule 4th ed., p. 33; topic 8 point 109.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1417,7 +1417,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Substitution gives b = 0.2 x 10 + 3 = 5.0 m. This empirical preliminary relation is not a universal design requirement; traffic, compaction access, seismic performance and the governing dam standard may require a different crest width.<p>Source note: Page 31 point 27: no applicable standard or edition is identified for the empirical rule, so its use is explicitly assumed rather than certified.</p><p>Capsule 4th ed., p. 31; topic 8 point 27.</p>",
+          "explanation": "Substitution gives \\[b = 0.2 \\times 10 + 3 = 5.0\\ \\text{m}\\] This empirical preliminary relation is not a universal design requirement; traffic, compaction access, seismic performance and the governing dam standard may require a different crest width.<p>Source note: Page 31 point 27: no applicable standard or edition is identified for the empirical rule, so its use is explicitly assumed rather than certified.</p><p>Capsule 4th ed., p. 31; topic 8 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1800,7 +1800,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The rectangular kern extends B/6 each side of the centre. Hence the limiting eccentricity is 18/6 = 3.0 m. The middle-third band is 6 m wide in total, but that total width is not the one-sided eccentricity limit.<p>Capsule 4th ed., p. 31; topic 8 point 41.</p>",
+          "explanation": "The rectangular kern extends \\(\\dfrac{B}{6}\\) each side of the centre. Hence the limiting eccentricity is \\[e = \\dfrac{18}{6} = 3.0\\ \\text{m}\\] The middle-third band is 6 m wide in total, but that total width is not the one-sided eccentricity limit.<p>Capsule 4th ed., p. 31; topic 8 point 41.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1838,7 +1838,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Uplift opposes the downward load, giving N = 900 - 300 = 600 kN. Frictional resistance is based on this effective normal force. Uplift can also lift or crack the floor; adding it to weight reverses its destabilising effect.<p>Source note: Page 31 extra misnumbered point 57 between points 42 and 43: retained under capsule-t08-p031-n57, distinct from tunnelling point 57-occ2. This question tests uplift.</p><p>Capsule 4th ed., p. 31; topic 8 point 57.</p>",
+          "explanation": "Uplift opposes the downward load, giving \\[N = 900 - 300 = 600\\ \\text{kN}\\] Frictional resistance is based on this effective normal force. Uplift can also lift or crack the floor; adding it to weight reverses its destabilising effect.<p>Source note: Page 31 extra misnumbered point 57 between points 42 and 43: retained under capsule-t08-p031-n57, distinct from tunnelling point 57-occ2. This question tests uplift.</p><p>Capsule 4th ed., p. 31; topic 8 point 57.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1914,7 +1914,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The triangle's centroid is B/3 from the heel, giving eccentricity B/6 toward the heel. Mean stress is 600/(6 x 1) = 100 kPa. The linear edge values are twice the mean at the heel and zero at the toe. An arbitrary empty-reservoir dam need not have this distribution.<p>Source note: Page 31 point 43: restore 2W/B and supply the missing triangular-section, unit-length, weight-only and no-uplift assumptions.</p><p>Capsule 4th ed., p. 31; topic 8 point 43.</p>",
+          "explanation": "The triangle's centroid is \\(\\dfrac{B}{3}\\) from the heel, giving eccentricity \\(\\dfrac{B}{6}\\) toward the heel. The mean stress is \\[\\sigma_m = \\dfrac{600}{6 \\times 1} = 100\\ \\text{kPa}\\] The linear edge values are twice the mean at the heel, 200 kPa, and zero at the toe. An arbitrary empty-reservoir dam need not have this distribution.<p>Source note: Page 31 point 43: restore 2W/B and supply the missing triangular-section, unit-length, weight-only and no-uplift assumptions.</p><p>Capsule 4th ed., p. 31; topic 8 point 43.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2104,7 +2104,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Available resistance is 0.6 x 1000 + 200 = 800 kN. Dividing by the driving force gives FS = 800/400 = 2.0. This assumes that the stated cohesion is legitimately mobilisable along the chosen failure plane. Acceptance depends on the governing standard and load case.<p>Source note: Page 31 point 58: the unexplained &#39;more than 3 to 5&#39; is not adopted as a universal requirement; shear-friction formulations and permissible cohesion differ between methods.</p><p>Capsule 4th ed., p. 31; topic 8 point 58.</p>",
+          "explanation": "Available resistance is \\(0.6 \\times 1000 + 200\\), or 800 kN. Dividing by the driving force gives \\[\\text{FS} = \\dfrac{800}{400} = 2.0\\] This assumes that the stated cohesion is legitimately mobilisable along the chosen failure plane. Acceptance depends on the governing standard and load case.<p>Source note: Page 31 point 58: the unexplained &#39;more than 3 to 5&#39; is not adopted as a universal requirement; shear-friction formulations and permissible cohesion differ between methods.</p><p>Capsule 4th ed., p. 31; topic 8 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2370,7 +2370,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Constant discharge per unit width gives q = -k h dh/dx. Integration makes h<sup>2</sup> linear in x, a parabolic relation. Real phreatic profiles depend on boundaries, anisotropy, drains and entrance/exit corrections; not every earth dam has an exact parabola.<p>Source note: Page 33 point 107: qualify the parabolic-profile statement to steady one-dimensional Dupuit flow without distributed recharge or leakage; steady flow alone does not ensure spatially constant discharge.</p><p>Capsule 4th ed., p. 33; topic 8 point 107.</p>",
+          "explanation": "Constant discharge per unit width gives \\[q = -kh\\dfrac{dh}{dx}\\] Integration makes \\(h^2\\) linear in \\(x\\), a parabolic relation. Real phreatic profiles depend on boundaries, anisotropy, drains and entrance or exit corrections; not every earth dam has an exact parabola.<p>Source note: Page 33 point 107: qualify the parabolic-profile statement to steady one-dimensional Dupuit flow without distributed recharge or leakage; steady flow alone does not ensure spatially constant discharge.</p><p>Capsule 4th ed., p. 33; topic 8 point 107.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2408,7 +2408,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Pressure head above the sensor is p/(rho g) = 98100/(1000 x 9.81) = 10 m. Adding the sensor elevation gives 2 + 10 = 12 m. This hydrostatic inference requires the pressure reference, water density and sensor datum; absolute pressure would first need atmospheric correction.<p>Source note: Page 33 point 108 is incomplete even in full extracted page text. These are original illustrative data testing hydrostatic level inference, not recovered missing source numbers or an image-verified instrument type. Parent may inspect the original completion.</p><p>Capsule 4th ed., p. 33; topic 8 point 108.</p>",
+          "explanation": "The pressure head above the sensor is \\[\\dfrac{p}{\\rho g} = \\dfrac{98{,}100}{1000 \\times 9.81} = 10\\ \\text{m}\\] Adding the sensor elevation gives \\(2 + 10 = 12\\) m. This hydrostatic inference requires the pressure reference, water density and sensor datum; absolute pressure would first need atmospheric correction.<p>Source note: Page 33 point 108 is incomplete even in full extracted page text. These are original illustrative data testing hydrostatic level inference, not recovered missing source numbers or an image-verified instrument type. Parent may inspect the original completion.</p><p>Capsule 4th ed., p. 33; topic 8 point 108.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2567,7 +2567,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "For ideal unmixed settling, removal = min(vs A/Q, 1). Initially 0.004 x 250/2 = 0.50; doubling area gives 1.00. Greater depth alone does not change this ideal overflow-rate criterion. Short-circuiting, turbulence and different mixing models change actual performance.<p>Source note: Page 31 points 48 and 50 are duplicate plan-area principles. The explicitly ideal trajectory model is not the depth-mixed exponential-removal model.</p><p>Capsule 4th ed., p. 31; topic 8 point 48; topic 8 point 50.</p>",
+          "explanation": "For ideal unmixed settling, \\[\\text{removal} = \\min\\left(\\dfrac{v_s A}{Q}, 1\\right)\\] Initially \\(\\dfrac{0.004 \\times 250}{2} = 0.50\\); doubling the area gives 1.00. Greater depth alone does not change this ideal overflow-rate criterion. Short-circuiting, turbulence and different mixing models change actual performance.<p>Source note: Page 31 points 48 and 50 are duplicate plan-area principles. The explicitly ideal trajectory model is not the depth-mixed exponential-removal model.</p><p>Capsule 4th ed., p. 31; topic 8 point 48; topic 8 point 50.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3037,7 +3037,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Flow area is Q/V = 7/7 = 1 m<sup>2</sup>. For a circular pipe, D = sqrt(4A/pi) = 1.1284 m, about 1.13 m. The assumed 7 m/s is not a universal high-head design value; energy loss, water hammer, pressure rating and economics require comparison.<p>Source note: Page 32 point 63: use the approximate velocity only as a stated preliminary assumption.</p><p>Capsule 4th ed., p. 32; topic 8 point 63.</p>",
+          "explanation": "The flow area is \\(\\dfrac{Q}{V} = \\dfrac{7}{7} = 1\\) m<sup>2</sup>. For a circular pipe, \\[D = \\sqrt{\\dfrac{4A}{\\pi}} = 1.1284\\ \\text{m}\\] about 1.13 m. The assumed 7 m per s is not a universal high-head design value; energy loss, water hammer, pressure rating and economics require comparison.<p>Source note: Page 32 point 63: use the approximate velocity only as a stated preliminary assumption.</p><p>Capsule 4th ed., p. 32; topic 8 point 63.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3151,7 +3151,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Darcy-Weisbach loss is f(L/D)V<sup>2</sup>/(2g). Holding f, L and D fixed gives a ratio (6/4)<sup>2</sup> = 2.25. Actual friction factor may vary with Reynolds number and roughness regime, so constant f is an explicit comparison assumption.<p>Capsule 4th ed., p. 32; topic 8 point 87.</p>",
+          "explanation": "Darcy-Weisbach loss is \\(h_f = f\\dfrac{L}{D}\\dfrac{V^2}{2g}\\). Holding \\(f\\), \\(L\\) and \\(D\\) fixed gives the ratio \\[\\left(\\dfrac{6}{4}\\right)^2 = 2.25\\] The actual friction factor may vary with Reynolds number and roughness regime, so constant \\(f\\) is an explicit comparison assumption.<p>Capsule 4th ed., p. 32; topic 8 point 87.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3227,7 +3227,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Forebay storage changes according to inflow minus outflow. Required balancing volume is (4 - 2) x 10 x 60 = 1200 m<sup>3</sup>. Intake submergence, permissible drawdown and overflow arrangements also matter; a forebay is not automatically enough for long-duration peaking.<p>Capsule 4th ed., p. 33; topic 8 point 113.</p>",
+          "explanation": "Forebay storage changes according to inflow minus outflow. The required balancing volume is \\[\\begin{aligned} V &amp;= (4 - 2) \\times 10 \\times 60 \\\\ &amp;= 1200\\ \\text{m}^3 \\end{aligned}\\] Intake submergence, permissible drawdown and overflow arrangements also matter; a forebay is not automatically enough for long-duration peaking.<p>Capsule 4th ed., p. 33; topic 8 point 113.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3310,7 +3310,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Useful hydraulic output is rho g Q H = 1000 x 9.81 x 0.040 x 25 = 9810 W. Pump efficiency equals hydraulic output/shaft input, so input = 9.81/0.80 = 12.2625 kW. The source's gamma Q H is hydraulic lifting power, not actual shaft input unless efficiency is unity.<p>Source note: Page 30 point 17: restore gamma as specific weight and distinguish hydraulic power from pump shaft and motor electrical input.</p><p>Capsule 4th ed., p. 30; topic 8 point 17.</p>",
+          "explanation": "Useful hydraulic output is \\[\\begin{aligned} \\rho gQH &amp;= 1000 \\times 9.81 \\\\ &amp;\\quad \\times 0.040 \\times 25 \\\\ &amp;= 9810\\ \\text{W} \\end{aligned}\\] Pump efficiency equals hydraulic output divided by shaft input, so \\[P_{in} = \\dfrac{9.81}{0.80} = 12.2625\\ \\text{kW}\\] The source's \\(\\gamma QH\\) is hydraulic lifting power, not actual shaft input unless efficiency is unity.<p>Source note: Page 30 point 17: restore gamma as specific weight and distinguish hydraulic power from pump shaft and motor electrical input.</p><p>Capsule 4th ed., p. 30; topic 8 point 17.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3389,7 +3389,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "c",
-          "explanation": "At fixed turbine size and corresponding operation, Q varies as sqrt(H), so power varies as H times sqrt(H). Thus Pu = P/H<sup>3/2</sup> = 800/(16 x 4) = 12.5 kW at 1 m head. Unit discharge is not imposed independently in this definition.<p>Source note: Page 32 point 66: correct the source&#39;s unit-head-and-unit-discharge definition. Reference: machines-similarity-unit-quantities in chapter-08-machines.js.</p><p>Capsule 4th ed., p. 32; topic 8 point 66.</p>",
+          "explanation": "At fixed turbine size and corresponding operation, \\(Q \\propto \\sqrt{H}\\), so power varies as \\(H^{3{/}2}\\). Thus \\[\\begin{aligned} P_u &amp;= \\dfrac{P}{H^{3{/}2}} = \\dfrac{800}{16 \\times 4} \\\\ &amp;= 12.5\\ \\text{kW} \\end{aligned}\\] at 1 m head. Unit discharge is not imposed independently in this definition.<p>Source note: Page 32 point 66: correct the source&#39;s unit-head-and-unit-discharge definition. Reference: machines-similarity-unit-quantities in chapter-08-machines.js.</p><p>Capsule 4th ed., p. 32; topic 8 point 66.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3427,7 +3427,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The hydraulic rate is rho g Q H = 9810 W. Turbine electrical output is lower by the applicable efficiencies, while pump input is higher. Conventional unit power instead reduces a particular turbine's corresponding output to unit head; it is not universally 9.81 kW.<p>Source note: Page 32 point 66: separately tests the imposed unit-flow condition that the source conflates with reduced turbine unit power.</p><p>Capsule 4th ed., p. 32; topic 8 point 66.</p>",
+          "explanation": "The hydraulic rate is \\[\\begin{aligned} \\rho gQH &amp;= 1000 \\times 9.81 \\times 1 \\times 1 \\\\ &amp;= 9810\\ \\text{W} \\end{aligned}\\] Turbine electrical output is lower by the applicable efficiencies, while pump input is higher. Conventional unit power instead reduces a particular turbine's corresponding output to unit head; it is not universally 9.81 kW.<p>Source note: Page 32 point 66: separately tests the imposed unit-flow condition that the source conflates with reduced turbine unit power.</p><p>Capsule 4th ed., p. 32; topic 8 point 66.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3465,7 +3465,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Ideal speed is sqrt(2 x 9.81 x 100) = 44.2945 m/s. Multiplying by Cv gives 43.4086 m/s, or 43.41 m/s. Cv multiplies velocity once; omitting it gives ideal speed, while applying it twice understates actual speed.<p>Capsule 4th ed., p. 32; topic 8 point 67.</p>",
+          "explanation": "The ideal and actual jet speeds are \\[\\begin{aligned} V_i &amp;= \\sqrt{2 \\times 9.81 \\times 100} \\\\ &amp;= 44.2945\\ \\text{m/s} \\\\ V &amp;= 0.98 \\times 44.2945 \\\\ &amp;= 43.4086\\ \\text{m/s} \\end{aligned}\\] or 43.41 m per s. \\(C_v\\) multiplies velocity once; omitting it gives ideal speed, while applying it twice understates actual speed.<p>Capsule 4th ed., p. 32; topic 8 point 67.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3541,7 +3541,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The pressure-head rise equals elevation drop plus velocity-head reduction minus loss. It is 3 + (8<sup>2</sup> - 4<sup>2</sup>)/(2 x 9.81) - 0.40 = 5.0465 m. The draft tube recovers pressure while total head decreases by the loss; it does not create energy.<p>Capsule 4th ed., p. 32; topic 8 point 70.</p>",
+          "explanation": "The pressure-head rise equals elevation drop plus velocity-head reduction minus loss: \\[\\begin{aligned} \\Delta h_p &amp;= 3 + \\dfrac{8^2 - 4^2}{2 \\times 9.81} - 0.40 \\\\ &amp;= 5.0465\\ \\text{m} \\end{aligned}\\] The draft tube recovers pressure while total head decreases by the loss; it does not create energy.<p>Capsule 4th ed., p. 32; topic 8 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3887,7 +3887,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Geometric similarity gives Q proportional to ND<sup>3</sup> and H proportional to N<sup>2</sup>D<sup>2</sup>. With fixed speed and comparable efficiency, input power scales as D<sup>5</sup>. Thus the ratio is 2<sup>5</sup> = 32 and input is 320 kW, not the D<sup>3</sup> flow ratio.<p>Source note: Page 32 point 82: D5 is the fixed-speed geometrically similar family result. Reference: machines-similarity-unit-quantities in chapter-08-machines.js.</p><p>Capsule 4th ed., p. 32; topic 8 point 82.</p>",
+          "explanation": "Geometric similarity gives \\(Q \\propto ND^3\\) and \\(H \\propto N^2D^2\\). With fixed speed and comparable efficiency, input power scales as \\(D^5\\). Thus \\[\\dfrac{P_2}{P_1} = 2^5 = 32\\] so the larger pump needs 320 kW, not the \\(D^3\\) flow ratio.<p>Source note: Page 32 point 82: D5 is the fixed-speed geometrically similar family result. Reference: machines-similarity-unit-quantities in chapter-08-machines.js.</p><p>Capsule 4th ed., p. 32; topic 8 point 82.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3925,7 +3925,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Using the explicitly authorised approximation gives P2 = 20 x 0.90<sup>3</sup> = 14.58 kW. Trimming one impeller in a fixed casing is not a fully geometrically scaled pump family. The D<sup>5</sup> law cannot be substituted for this stated trim model; actual duty still requires supplier curves.<p>Source note: Page 32 point 82: separately qualifies the D3 alternative; it is an assumed limited-trimming model, not a contradictory universal similarity law.</p><p>Capsule 4th ed., p. 32; topic 8 point 82.</p>",
+          "explanation": "Using the explicitly authorised approximation gives \\[P_2 = 20 \\times 0.90^3 = 14.58\\ \\text{kW}\\] Trimming one impeller in a fixed casing is not a fully geometrically scaled pump family. The \\(D^5\\) law cannot be substituted for this stated trim model; actual duty still requires supplier curves.<p>Source note: Page 32 point 82: separately qualifies the D3 alternative; it is an assumed limited-trimming model, not a contradictory universal similarity law.</p><p>Capsule 4th ed., p. 32; topic 8 point 82.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3963,7 +3963,7 @@ window.CIVIL_SET_DATA["capsule-08"] = {
             }
           ],
           "answer": "a",
-          "explanation": "With inlet flow equal to runner flow, hydraulic efficiency is 900/1000 = 90%. Mechanical efficiency is 855/900 = 95%, and water-to-shaft efficiency is 855/1000 = 85.5%. If leakage were allocated separately, inlet-to-runner power transfer would include volumetric efficiency as well.<p>Source note: Page 32 point 86: the extracted fraction is interleaved. The reconstructed definition uses the explicit no-leakage assumption, consistent with machines-efficiency-boundaries in the corrected notes. Printed typography remains unverified.</p><p>Capsule 4th ed., p. 32; topic 8 point 86.</p>",
+          "explanation": "With inlet flow equal to runner flow, the efficiencies are \\[\\eta_h = \\dfrac{900}{1000} = 90\\%\\] \\[\\eta_m = \\dfrac{855}{900} = 95\\%\\] and water-to-shaft efficiency is \\(\\dfrac{855}{1000} = 85.5\\%\\). If leakage were allocated separately, inlet-to-runner power transfer would include volumetric efficiency as well.<p>Source note: Page 32 point 86: the extracted fraction is interleaved. The reconstructed definition uses the explicit no-leakage assumption, consistent with machines-efficiency-boundaries in the corrected notes. Printed typography remains unverified.</p><p>Capsule 4th ed., p. 32; topic 8 point 86.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,

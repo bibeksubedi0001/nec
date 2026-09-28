@@ -71,7 +71,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "2500 kg/ cu.m" }
                     ],
                     answer: "a",
-                    explanation: "The density of cement in its loose, packaged state is approximately 1440 kg/m³. This is a standard value used for calculations in concrete mix design and quantity estimation."
+                    explanation: "The density of cement in its loose, packaged state is approximately 1440 kg per m<sup>3</sup>. This is a standard value used for calculations in concrete mix design and quantity estimation."
                 },
                 {
                     id: "cm10q004",
@@ -375,7 +375,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "Cannot say" }
                     ],
                     answer: "c",
-                    explanation: "The slenderness ratio (λ) is calculated as Effective Length / Least Lateral Dimension. For a column fixed at both ends, effective length (Lₑ) = 0.65L = 0.65 * 5000 = 3250 mm. Least lateral dimension = 400 mm. λ = 3250 / 400 = 8.125. As per IS 456:2000, a column is long if λ &gt; 12. Since 8.125 &lt; 12, it is a short column. However, the question states \"square column\" but dimensions are 400x500mm (rectangular). The least dimension is 400mm. λ=8.125 which is less than 12, so it should be a short column. But the provided correct answer is \"Long column\". This might be a trick or error in the question. Rechecking: Unsupported length = 5000mm, Least lateral dimension = 400mm. For column with both ends fixed, effective length = 0.65 * 5000 = 3250mm. Slenderness ratio = 3250/400 = 8.125. Since 8.125 &lt; 12, it is a short column. But the answer given is \"Long column\". Possibly a misprint in the question or options. However, based on standard calculation, it should be short column. But the correct answer as per the test might be \"Long column\" due to some other interpretation. Alternatively, if we consider the larger dimension for buckling, but that is not standard. Standard is least lateral dimension. So, the description should clarify that as per calculation it is short, but the answer might be intended as long. However, the user provided the correct answer as \"Long column\", so we go with that."
+                    explanation: "The slenderness ratio is the effective length divided by the least lateral dimension. For a column fixed at both ends, \\[\\begin{aligned} L_e &amp;= 0.65L = 0.65 \\times 5000 \\\\ &amp;= 3250 \\end{aligned}\\] mm, and the least dimension is 400 mm, so \\[\\lambda = \\dfrac{3250}{400} = 8.125\\] IS 456:2000 classes a column as long only if \\(\\lambda \\gt 12\\), so by this calculation the column is short. The key nevertheless gives 'Long column', which appears to be a misprint in the question or options. (The question also calls a 400 mm by 500 mm section square.)"
                 },
                 {
                     id: "cm10q026",
@@ -466,7 +466,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "192 mm" }
                     ],
                     answer: "b",
-                    explanation: "As per IS 456:2000, Clause 26.5.3.2, the pitch of lateral ties shall be the least of: (i) Least lateral dimension = 400 mm, (ii) 16 times the diameter of longitudinal bar = 16 * 20 = 320 mm, (iii) 300 mm. Therefore, the pitch should be 300 mm."
+                    explanation: "IS 456:2000, clause 26.5.3.2, takes the tie pitch as the least of the least lateral dimension (400 mm), 16 times the longitudinal bar diameter and 300 mm: \\[16 \\times 20 = 320\\ \\text{mm}\\] \\[\\min(400, 320, 300) = 300\\ \\text{mm}\\]"
                 },
                 {
                     id: "cm10q033",
@@ -479,7 +479,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "300 mm" }
                     ],
                     answer: "c",
-                    explanation: "As per IS 456:2000, Clause 26.5.3.2, the pitch of lateral ties shall be the least of: (i) Least lateral dimension = 400 mm, (ii) 16 times the diameter of longitudinal bar = 16 * 12 = 192 mm, (iii) 300 mm. Therefore, the pitch should be 192 mm."
+                    explanation: "IS 456:2000, clause 26.5.3.2, takes the tie pitch as the least of the least lateral dimension (400 mm), 16 times the longitudinal bar diameter and 300 mm: \\[16 \\times 12 = 192\\ \\text{mm}\\] \\[\\min(400, 192, 300) = 192\\ \\text{mm}\\]"
                 },
                 {
                     id: "cm10q034",
@@ -540,7 +540,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "directly proportional to square of drainage path and inversely proportional to time" }
                     ],
                     answer: "c",
-                    explanation: "The time factor (T_v) in Terzaghi's theory of one-dimensional consolidation is T_v = c_v * t / d². This shows that the degree of consolidation (U) is a function of T_v, meaning it is directly proportional to time (t) and inversely proportional to the square of the drainage path (d)."
+                    explanation: "The time factor in Terzaghi's one-dimensional consolidation theory is \\[T_v = \\dfrac{c_vt}{d^2}\\] The degree of consolidation \\(U\\) is a function of \\(T_v\\), so it increases directly with time \\(t\\) and inversely with the square of the drainage path \\(d\\)."
                 },
                 {
                     id: "cm10q038",
@@ -618,7 +618,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "n = e / (1-e)" }
                     ],
                     answer: "a",
-                    explanation: "Porosity (n) is related to void ratio (e) by the formula n = e / (1 + e). This is a fundamental relationship in soil mechanics."
+                    explanation: "Porosity is related to void ratio by the fundamental relationship \\[n = \\dfrac{e}{1 + e}\\]"
                 },
                 {
                     id: "cm10q044",
@@ -631,7 +631,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "a_c = 2S - 1" }
                     ],
                     answer: "b",
-                    explanation: "Air content (a_c) is defined as the ratio of the volume of air (V_a) to the volume of voids (V_v). Since the degree of saturation (S) is V_w/V_v, and V_v = V_a + V_w, it follows that a_c = V_a/V_v = (V_v - V_w)/V_v = 1 - S."
+                    explanation: "Air content is the ratio of air volume to void volume. Since \\(S = \\dfrac{V_w}{V_v}\\) and \\(V_v = V_a + V_w\\), \\[a_c = \\dfrac{V_a}{V_v} = \\dfrac{V_v - V_w}{V_v} = 1 - S\\]"
                 },
                 {
                     id: "cm10q045",
@@ -644,7 +644,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "Void ratio" }
                     ],
                     answer: "c",
-                    explanation: "The percentage air voids (n_a) is defined as the ratio of the volume of air (V_a) to the total volume (V), expressed as a percentage: n_a = (V_a / V) * 100%."
+                    explanation: "The percentage air voids is the ratio of the volume of air to the total volume, expressed as a percentage: \\[n_a = \\dfrac{V_a}{V} \\times 100\\%\\]"
                 },
                 {
                     id: "cm10q046",
@@ -670,7 +670,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "I_p = W_p - W_l" }
                     ],
                     answer: "a",
-                    explanation: "The Plasticity Index (I_p) is defined as the numerical difference between the Liquid Limit (W_l) and the Plastic Limit (W_p): I_p = W_l - W_p."
+                    explanation: "The plasticity index is the numerical difference between the liquid limit and the plastic limit: \\[I_p = W_L - W_P\\]"
                 }
             ]
         },
@@ -717,7 +717,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "5π/√2" }
                     ],
                     answer: "d",
-                    explanation: "\\(F_x = \\dot{m} (v_1 - v_2 \\cos\\theta)\\) \\(F_y = \\dot{m} (0 - v_2 \\sin\\theta)\\) \\(F = \\sqrt{F_x^2 + F_y^2}\\) \\(F = \\sqrt{(7.854)^2 + (-7.854)^2} = \\sqrt{2} \\times 7.854 \\approx 11.11 \\text{ N}\\)"
+                    explanation: "The mass flow rate is \\[\\begin{aligned} \\dot m &amp;= \\rho AV \\\\ &amp;= 1000 \\times \\dfrac{\\pi \\times 0.1^2}{4} \\times 1 \\\\ &amp;= 7.854\\ \\text{kg/s} \\end{aligned}\\] Across a right-angle bend, \\(F_x = \\dot m(v_1 - v_2\\cos\\theta)\\) and \\(F_y = \\dot m(0 - v_2\\sin\\theta)\\), so \\[F_x = 7.854, \\qquad F_y = -7.854\\] so \\[F = \\sqrt{2} \\times 7.854 \\approx 11.11\\ \\text{N}\\] which equals \\(\\dfrac{5\\pi}{\\sqrt{2}}\\)."
                 },
                 {
                     id: "cm10q051",
@@ -868,7 +868,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "1986.525 HP, 184.62 rpm" }
                     ],
                     answer: "c",
-                    explanation: "Power P = ηρgQH. Specific speed N_s = N√P / H^(5/4), where P is in HP, H in m, and N in rpm. Convert the calculated power to HP before computing specific speed."
+                    explanation: "The power is \\(P = \\eta\\rho gQH\\) and the specific speed is \\(N_s = \\dfrac{N\\sqrt{P}}{H^{5{/}4}}\\), with \\(P\\) in HP, \\(H\\) in m and \\(N\\) in rpm. So \\[\\begin{aligned} P &amp;= 0.9 \\times 9810 \\times 9 \\times 25 \\\\ &amp;= 1{,}986{,}525\\ \\text{W} \\\\ &amp;\\approx 2662.2\\ \\text{HP} \\end{aligned}\\] \\[N_s = \\dfrac{200\\sqrt{2662.2}}{25^{5{/}4}} \\approx 184.6\\] Convert the power to HP before computing the specific speed."
                 },
                 {
                     id: "cm10q062",
@@ -907,7 +907,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "10-35" }
                     ],
                     answer: "d",
-                    explanation: "Using the stated hp-m-rpm convention, \\(n_s=\\dfrac{N\\sqrt{P}}{H^{5/4}}=\\dfrac{300\\sqrt{2000}}{150^{5/4}}=25.5577\\). This lies in 10-35, not 35-60. Conventional specific speed depends on the power and head units; speculation about turbine family does not override the calculation."
+                    explanation: "Using the stated hp-m-rpm convention, \\[n_s = \\dfrac{N\\sqrt{P}}{H^{5{/}4}} = \\dfrac{300\\sqrt{2000}}{150^{5{/}4}}\\] \\[= 25.5577\\] This lies in 10-35, not 35-60. Conventional specific speed depends on the power and head units; speculation about turbine family does not override the calculation."
                 },
                 {
                     id: "cm10q065",
@@ -920,7 +920,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "4" }
                     ],
                     answer: "c",
-                    explanation: "Find the area of one jet from the nozzle diameter. Calculate the velocity of jet V = Cv√(2gH). The discharge per jet is Q_jet = A_jet * V. The number of jets is total Q divided by Q_jet."
+                    explanation: "The jet velocity and the discharge per 100 mm jet are \\[\\begin{aligned} V &amp;= C_v\\sqrt{2gH} \\\\ &amp;= 0.97\\sqrt{2 \\times 9.81 \\times 200} \\\\ &amp;= 60.76\\ \\text{m/s} \\end{aligned}\\] \\[\\begin{aligned} q &amp;= \\dfrac{\\pi \\times 0.1^2}{4} \\times 60.76 \\\\ &amp;= 0.477 \\end{aligned}\\] cumec, so the number of jets is \\(\\dfrac{1.25}{0.477} = 2.62\\), rounded up to 3."
                 },
                 {
                     id: "cm10q066",
@@ -946,7 +946,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "15" }
                     ],
                     answer: "a",
-                    explanation: "The number of buckets Z is given by the empirical formula: Z = 15 + (D / (2d)), where D is runner diameter and d is jet diameter. Round the result to the nearest integer."
+                    explanation: "The number of buckets is given by the empirical formula \\[\\begin{aligned} Z &amp;= 15 + \\dfrac{D}{2d} \\\\ &amp;= 15 + \\dfrac{2}{2 \\times 0.25} = 19 \\end{aligned}\\] where \\(D\\) is the runner diameter and \\(d\\) the jet diameter."
                 },
                 {
                     id: "cm10q068",
@@ -1172,7 +1172,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "Three" }
                     ],
                     answer: "a",
-                    explanation: "Under NRS 2070, terrain is categorized into four types - Plain(0 - 10 %), Rolling(10 - 25 %), Mountainous(25 – 60 %), and Steep(&gt; 60%) - based on the percentage of its cross-slope. This classification serves as the technical foundation for determining a road's design speed and essential geometric features."
+                    explanation: "Under NRS 2070, terrain is classed into four types by cross-slope: plain (0-10%), rolling (10-25%), mountainous (25-60%) and steep (over 60%). This classification underlies the choice of a road's design speed and essential geometric features."
                 },
                 {
                     id: "cm10q084",
@@ -1311,7 +1311,7 @@ const CIVIL_MODEL_10 = {
                         { key: "d", text: "730l/hr" }
                     ],
                     answer: "c",
-                    explanation: "\\(\\(Q = 3182 \\sqrt{P}\\)\\) \\(\\(Q = 3182 \\times \\sqrt{100}\\)\\) \\(Q = 31,820 \\text{ L/min} = 31,820 \\times 60 \\text{ L/hr} = 1,909,200 \\text{ L/hr} \\)"
+                    explanation: "Kuichling's formula gives \\[Q = 3182\\sqrt{100} = 31{,}820\\] litres per minute. Multiplying by 60, \\[31{,}820 \\times 60 = 1{,}909{,}200\\] litres per hour."
                 },
                 {
                     id: "cm10q094",

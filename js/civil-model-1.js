@@ -262,7 +262,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "m" }
                     ],
                     answer: "b",
-                    explanation: "Stiffness is the force needed to produce unit displacement, k = P/δ, so its SI unit is newtons per metre. Its reciprocal is flexibility, in m/N, and the same idea extends to rotational stiffness, measured in N·m per radian — which is why beam stiffness appears as 4EI/L rather than a plain force."
+                    explanation: "Stiffness is the force needed to produce unit displacement, \\[k = \\dfrac{P}{\\delta}\\] so its SI unit is newtons per metre. Its reciprocal is flexibility, in metres per newton, and the same idea extends to rotational stiffness, measured in N m per radian, which is why beam stiffness appears as \\(\\dfrac{4EI}{L}\\) rather than a plain force."
                 },
                 {
                     id: "cm1q018",
@@ -275,7 +275,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "- M/2" }
                     ],
                     answer: "b",
-                    explanation: "Simply Supported (Pinned / Roller) End: A simply supported end offers no rotational restraint. Therefore, applying a moment at the opposite end does not induce any moment (carryover is zero) at a simply supported end.Because M = 0 at a simple support, the carry-over factor (COF) is 0, resulting in a carry-over moment of 0. Fixed End: If the far end is fixed (preventing rotation), the carry-over factor (COF) is +1/2, making the carry-over moment +M/2."
+                    explanation: "A simply supported (pinned or roller) end offers no rotational restraint, so applying a moment at the opposite end induces no moment there: the carry-over factor is 0 and the carry-over moment is 0. If the far end were fixed, the carry-over factor would be \\(+\\dfrac{1}{2}\\), giving \\(+\\dfrac{M}{2}\\)."
                 },
                 {
                     id: "cm1q019",
@@ -301,7 +301,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "9.785 mm" }
                     ],
                     answer: "a",
-                    explanation: "The maximum deflection is given by δ_max = θ_A * x̄, where x̄ is the distance from support A to the centroid of the M/EI diagram. Here, θ_A = 0.0075 rad, x̄ = 1.33 m. So, δ_max = 0.0075 * 1.33 = 0.009975 m = 9.975 mm."
+                    explanation: "The maximum deflection is the slope at A times the distance from A to the centroid of the \\(\\dfrac{M}{EI}\\) diagram: \\[\\delta_{max} = \\theta_A\\bar x = 0.0075 \\times 1.33\\] \\[= 0.009975\\ \\text{m} = 9.975\\ \\text{mm}\\]"
                 },
                 {
                     id: "cm1q021",
@@ -327,7 +327,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "Coincides" }
                     ],
                     answer: "c",
-                    explanation: "From the bending equation M/I = E/R, the radius of curvature is R = EI/M, so radius and bending moment are inversely proportional. A larger moment bends the beam into a tighter curve, and where the moment falls to zero the radius becomes infinite — that is, the beam is locally straight."
+                    explanation: "From the bending equation \\(\\dfrac{M}{I} = \\dfrac{E}{R}\\), the radius of curvature is \\[R = \\dfrac{EI}{M}\\] so radius and bending moment are inversely proportional. A larger moment bends the beam into a tighter curve, and where the moment falls to zero the radius becomes infinite, that is, the beam is locally straight."
                 },
                 {
                     id: "cm1q023",
@@ -340,7 +340,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "σ_r = √(σ_n² + σ_t²)" }
                     ],
                     answer: "d",
-                    explanation: "The resultant stress on an inclined plane is the vector sum of the normal stress (σ_n) acting perpendicular to the plane and the tangential or shear stress (τ) acting along it. Being perpendicular to each other, their magnitudes combine by Pythagoras, so σ_r = √(σ_n² + τ²); the symbol σ_t is used here for that tangential component."
+                    explanation: "The resultant stress on an inclined plane is the vector sum of the normal stress \\(\\sigma_n\\) acting perpendicular to the plane and the tangential (shear) stress \\(\\sigma_t\\) acting along it. Being perpendicular, their magnitudes combine by Pythagoras: \\[\\sigma_r = \\sqrt{\\sigma_n^2 + \\sigma_t^2}\\]"
                 },
                 {
                     id: "cm1q024",
@@ -379,7 +379,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "UDL acting at span" }
                     ],
                     answer: "a",
-                    explanation: "A horizontal line on the Shear Force Diagram (SFD) indicates constant shear force, meaning no distributed load (w=0). A vertical line on the Bending Moment Diagram (BMD) indicates a discontinuity or jump, which is caused by an applied concentrated moment at that point."
+                    explanation: "A horizontal SFD means constant shear force and no distributed load (\\(w = 0\\)). A vertical line on the BMD is a jump, caused by a concentrated moment applied at that point."
                 }
             ]
         },
@@ -401,7 +401,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "450 mm" }
                     ],
                     answer: "a",
-                    explanation: "As per IS 456:2000, Clause 26.3.3, the maximum spacing of main bars in a slab should not exceed three times the effective depth or 300 mm, whichever is smaller. For a 5-inch (125 mm) slab, effective depth is about 100 mm. 3 * 100 = 300 mm. So, 300 mm is the maximum."
+                    explanation: "IS 456:2000, clause 26.3.3, limits the spacing of main bars in a slab to three times the effective depth or 300 mm, whichever is smaller. A 5-inch (125 mm) slab has an effective depth of about 100 mm, so \\[3 \\times 100 = 300\\ \\text{mm}\\] is the maximum."
                 },
                 {
                     id: "cm1q028",
@@ -540,7 +540,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "0.279" }
                     ],
                     answer: "b",
-                    explanation: "Air fills one seventh of the total volume and water one eighth, and together they make up the voids. Adding the fractions, 1/7 plus 1/8 is 15/56, which is 0.268, so the voids occupy 26.8 percent of the total volume. That ratio is the porosity n; the void ratio e, measured against the solid volume instead, would be n/(1 minus n), that is 0.366. The key has been corrected from the printed 0.279."
+                    explanation: "Air fills one-seventh of the total volume and water one-eighth, and together they make up the voids: \\[\\dfrac{1}{7} + \\dfrac{1}{8} = \\dfrac{15}{56} = 0.268\\] so the voids occupy 26.8% of the total volume. That ratio is the porosity \\(n\\); the void ratio, measured against the solid volume instead, would be \\[e = \\dfrac{n}{1 - n} = 0.366\\] The key has been corrected from the printed 0.279."
                 },
                 {
                     id: "cm1q038",
@@ -553,7 +553,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "First decrease then increase" }
                     ],
                     answer: "c",
-                    explanation: "Surface tension (σ) of a liquid decreases with an increase in temperature. Since capillary rise h is directly proportional to surface tension (h = 4σcosθ / (γ_w d)), the capillary rise will decrease as temperature increases."
+                    explanation: "Surface tension of a liquid decreases as temperature rises. Since capillary rise is directly proportional to it, \\[h = \\dfrac{4\\sigma\\cos\\theta}{\\gamma_wd}\\] the capillary rise decreases as temperature increases."
                 },
                 {
                     id: "cm1q039",
@@ -566,7 +566,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "All the above" }
                     ],
                     answer: "d",
-                    explanation: "Seepage force per unit volume is j = i * γ_w. Its direction is the direction of flow, which is perpendicular to equipotential lines. The magnitude is proportional to the hydraulic gradient (i). The exit gradient is a specific gradient at the outflow point, and head loss is related to the gradient over a length."
+                    explanation: "The seepage force per unit volume is \\[j = i\\gamma_w\\] It acts in the direction of flow, perpendicular to the equipotential lines, and its magnitude is proportional to the hydraulic gradient. The exit gradient is the gradient at the outflow point, and head loss is related to the gradient over a length."
                 },
                 {
                     id: "cm1q040",
@@ -579,7 +579,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "J = ps / A" }
                     ],
                     answer: "a",
-                    explanation: "Seepage pressure (p_s) is the pressure exerted by seepage water on the soil skeleton. Seepage force (J) is the total force resulting from this pressure over a cross-sectional area A. Therefore, J = p_s * A."
+                    explanation: "Seepage pressure is the pressure exerted by seepage water on the soil skeleton, and the seepage force is its total over a cross-sectional area \\(A\\): \\[J = p_sA\\]"
                 },
                 {
                     id: "cm1q041",
@@ -618,7 +618,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "27 KN/m³" }
                     ],
                     answer: "c",
-                    explanation: "The active coefficient is Ka = (1 − sinφ)/(1 + sinφ), and with φ = 30° the sine is 0.5, so Ka = 0.5/1.5 = 1/3. The pressure intensity at the base is Ka × γ × H = (1/3) × 18 × 6 = 36 kN/m². Note this is the intensity at the bottom of the wall, not the total thrust: the pressure grows linearly from zero at the surface, so the resultant is ½ × 36 × 6 = 108 kN per metre run, acting at H/3 above the base."
+                    explanation: "With \\(\\phi = 30^\\circ\\), \\(\\sin\\phi = 0.5\\), so \\[K_a = \\dfrac{1 - \\sin\\phi}{1 + \\sin\\phi} = \\dfrac{0.5}{1.5} = \\dfrac{1}{3}\\] The intensity at the base is \\[\\begin{aligned} p &amp;= K_a\\gamma H = \\dfrac{1}{3} \\times 18 \\times 6 \\\\ &amp;= 36 \\end{aligned}\\] kN per m<sup>2</sup>. This is the intensity at the bottom of the wall, not the total thrust: the pressure grows linearly from zero at the surface, so the resultant is \\(\\dfrac{1}{2} \\times 36 \\times 6 = 108\\) kN per metre run, acting at \\(\\dfrac{H}{3}\\) above the base."
                 },
                 {
                     id: "cm1q044",
@@ -631,7 +631,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "1/2 K_a γ H²" }
                     ],
                     answer: "d",
-                    explanation: "The total active thrust per unit length of wall is the integral of the triangular pressure distribution, resulting in the formula (1/2) * K_a * γ * H²."
+                    explanation: "The total active thrust per unit length of wall is the area of the triangular pressure distribution: \\[P_a = \\dfrac{1}{2}K_a\\gamma H^2\\]"
                 },
                 {
                     id: "cm1q045",
@@ -718,7 +718,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "0.0065 N/m³" }
                     ],
                     answer: "c",
-                    explanation: "Specific weight (γ) = Weight / Volume. Volume = 1 litre = 0.001 m³. Weight = 6.5 N. Therefore, γ = 6.5 N / 0.001 m³ = 6500 N/m³."
+                    explanation: "Specific weight is weight divided by volume. With 1 litre, or 0.001 m<sup>3</sup>, \\[\\gamma = \\dfrac{6.5}{0.001} = 6500\\ \\text{N/m}^3\\]"
                 },
                 {
                     id: "cm1q051",
@@ -744,7 +744,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "16 m³/s" }
                     ],
                     answer: "d",
-                    explanation: "For a rectangular channel the critical depth is y_c = (q²/g)^(1/3), so cubing gives q² = y_c³ × g = 1.13³ × 9.81 = 14.15, and the discharge per metre width is q = 3.76 m²/s. Multiplying by the 4 m width gives Q = 15.04 m³/s, so the nearest listed discharge is 16 m³/s."
+                    explanation: "Cubing \\(y_c = \\left(\\dfrac{q^2}{g}\\right)^{1{/}3}\\) gives \\[\\begin{aligned} q^2 &amp;= y_c^3g = 1.13^3 \\times 9.81 \\\\ &amp;= 14.15 \\end{aligned}\\] so \\(q = 3.76\\) m<sup>2</sup> per s. Multiplying by the 4 m width, \\[Q = 4 \\times 3.76 = 15.04\\ \\text{m}^3\\text{/s}\\] so the nearest listed discharge is 16 m<sup>3</sup> per s."
                 },
                 {
                     id: "cm1q053",
@@ -757,7 +757,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "25m³/s" }
                     ],
                     answer: "d",
-                    explanation: "Minimum specific energy occurs at critical depth, where E_min = 1.5 y_c, so y_c = 1.3/1.5 = 0.867 m. For a rectangular channel the critical condition gives q = √(g y_c³) = √(9.81 × 0.651) = 2.53 m²/s per metre width. Multiplying by the 10 m base width gives Q ≈ 25.3 m³/s, so the nearest option is 25 m³/s. The key has been corrected from the printed 15 m³/s."
+                    explanation: "Minimum specific energy occurs at critical depth, where \\(E_{min} = 1.5y_c\\), so \\(y_c = \\dfrac{1.3}{1.5} = 0.867\\) m. The critical condition gives \\[\\begin{aligned} q &amp;= \\sqrt{gy_c^3} = \\sqrt{9.81 \\times 0.651} \\\\ &amp;= 2.53 \\end{aligned}\\] m<sup>2</sup> per s, and \\[Q = 10 \\times 2.53 \\approx 25.3\\ \\text{m}^3\\text{/s}\\] so the nearest option is 25 m<sup>3</sup> per s. The key has been corrected from the printed 15 m<sup>3</sup> per s."
                 },
                 {
                     id: "cm1q054",
@@ -796,7 +796,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "It is the ratio of tensile stress to linear strain" }
                     ],
                     answer: "a",
-                    explanation: "The Bulk Modulus (K) is defined as K = -V (dP/dV), which is the ratio of compressive stress (pressure change) to volumetric strain (fractional change in volume)."
+                    explanation: "The bulk modulus is the ratio of compressive stress (pressure change) to volumetric strain (fractional change in volume): \\[K = -V\\dfrac{dP}{dV}\\]"
                 },
                 {
                     id: "cm1q057",
@@ -809,7 +809,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "0" }
                     ],
                     answer: "a",
-                    explanation: "Vertical rise = h (same as before). Inclined length = h / cos(30°) = h / (√3/2) = 2h/√3. So, new rise along tube = 2h/√3."
+                    explanation: "The vertical rise stays \\(h\\). Along a tube inclined at \\(30^\\circ\\) to the vertical, the liquid travels \\[\\dfrac{h}{\\cos 30^\\circ} = \\dfrac{h}{\\sqrt{3}{/}2} = \\dfrac{2h}{\\sqrt{3}}\\]"
                 },
                 {
                     id: "cm1q058",
@@ -1404,7 +1404,7 @@ const CIVIL_MODEL_1 = {
                         { key: "d", text: "Both (a) and (b)" }
                     ],
                     answer: "d",
-                    explanation: "When Total Hardness (TH) &lt; Alkalinity, it means all the hardness is carbonate hardness (CH). There is no non-carbonate hardness (NCH). Therefore, CH = TH and NCH = 0."
+                    explanation: "When total hardness is less than alkalinity, all the hardness is carbonate hardness and there is no non-carbonate hardness: \\[\\text{CH} = \\text{TH}, \\qquad \\text{NCH} = 0\\]"
                 }
             ]
         }

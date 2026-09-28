@@ -84,7 +84,7 @@ const CIVIL_MODEL_12 = {
                         { key: "d", text: "3.5 N / mm²" }
                     ],
                     answer: "d",
-                    explanation: "Nepal Standard NS 49:2041 specifies different classes of bricks. The minimum compressive strength for general masonry work is typically 3.5 N/mm² for certain classes."
+                    explanation: "Nepal Standard NS 49:2041 specifies different classes of bricks. The minimum compressive strength for general masonry work is typically 3.5 N per mm<sup>2</sup> for certain classes."
                 },
                 {
                     id: "cm12q005",
@@ -249,7 +249,7 @@ const CIVIL_MODEL_12 = {
                         { key: "d", text: "1.7" }
                     ],
                     answer: "d",
-                    explanation: "The shape factor is the ratio of the plastic moment capacity to the yield moment capacity. For a solid circular cross-section, this value is 16/(3π) ≈ 1.7."
+                    explanation: "The shape factor is the ratio of the plastic moment capacity to the yield moment capacity. For a solid circular section, \\[S = \\dfrac{16}{3\\pi} \\approx 1.7\\]"
                 },
                 {
                     id: "cm12q017",
@@ -262,7 +262,7 @@ const CIVIL_MODEL_12 = {
                         { key: "d", text: "1.8" }
                     ],
                     answer: "a",
-                    explanation: "The shape factor for a rectangular section is calculated as (plastic modulus)/(elastic modulus) = (bd²/4)/(bd²/6) = 1.5."
+                    explanation: "The shape factor of a rectangle is the plastic modulus divided by the elastic modulus: \\[S = \\dfrac{bd^2{/}4}{bd^2{/}6} = 1.5\\]"
                 },
                 {
                     id: "cm12q018",
@@ -275,7 +275,7 @@ const CIVIL_MODEL_12 = {
                         { key: "d", text: "146.85 kNm" }
                     ],
                     answer: "b",
-                    explanation: "For a simply supported beam under a uniformly distributed load, the maximum moment at collapse is wL²/8. This value is the plastic moment capacity required to form a plastic hinge. M_p = (25 kN/m * (6 m)²) / 8 = 112.5 kNm."
+                    explanation: "For a simply supported beam under UDL, the maximum moment at collapse is \\(\\dfrac{wL^2}{8}\\), the plastic moment needed to form a hinge: \\[M_p = \\dfrac{25 \\times 6^2}{8} = 112.5\\ \\text{kNm}\\]"
                 },
                 {
                     id: "cm12q019",
@@ -340,7 +340,7 @@ const CIVIL_MODEL_12 = {
                         { key: "d", text: "1.07 × 10⁶ mm³" }
                     ],
                     answer: "c",
-                    explanation: "For a rectangle, the plastic modulus Z_p = (width × depth²) / 4 = (200 mm × (400 mm)²) / 4 = (200 × 160,000) / 4 = 8,000,000 mm³ = 8 × 10⁶ mm³."
+                    explanation: "For a rectangle the plastic modulus is \\[Z_p = \\dfrac{bd^2}{4} = \\dfrac{200 \\times 400^2}{4}\\] \\[\\begin{aligned} &amp;= \\dfrac{200 \\times 160{,}000}{4} \\\\ &amp;= 8 \\times 10^6\\ \\text{mm}^3 \\end{aligned}\\]"
                 },
                 {
                     id: "cm12q024",
@@ -375,7 +375,7 @@ const CIVIL_MODEL_12 = {
                         { key: "d", text: "More than 1 m" }
                     ],
                     answer: "a",
-                    explanation: "As per IS 456:2000, Clause 23.2.1, the span to effective depth ratio for a simply supported beam is 20. Therefore, effective depth = span / 20 = 8000 / 20 = 400 mm."
+                    explanation: "IS 456:2000, clause 23.2.1, gives a span to effective depth ratio of 20 for a simply supported beam, so \\[d = \\dfrac{8000}{20} = 400\\ \\text{mm}\\]"
                 },
                 {
                     id: "cm12q026",
@@ -401,7 +401,7 @@ const CIVIL_MODEL_12 = {
                         { key: "d", text: "1.5 m and 1.5 m" }
                     ],
                     answer: "c",
-                    explanation: "As per IS 456:2000, for two-way slabs, the column strip is defined as a width on each side of the column centerline equal to one-fourth the shorter span. For a 6m panel, column strip width = 2 * (6/4) = 3m. The middle strip is the region between two column strips, which is also 6m - 3m = 3m. So, both are 3m."
+                    explanation: "IS 456:2000 defines the column strip of a two-way slab as a width on each side of the column centre line equal to one-fourth of the shorter span. For a 6 m panel, \\[2 \\times \\dfrac{6}{4} = 3\\ \\text{m}\\] and the middle strip, between two column strips, is \\(6 - 3 = 3\\) m. Both are 3 m."
                 },
                 {
                     id: "cm12q028",
@@ -453,7 +453,7 @@ const CIVIL_MODEL_12 = {
                         { key: "d", text: "200 mm" }
                     ],
                     answer: "c",
-                    explanation: "For Fe 415 steel and M20 concrete, the depth of neutral axis for balanced section is 0.48d. So, 0.48 * 500 = 240 mm. The closest option is 245 mm. For Fe 250, it is 0.53d = 265 mm. But commonly, for Fe 415, it is 0.48d. However, the options include 245 and 265. The exact value as per IS 456 is x_u,max = 0.0035 / (0.0055 + 0.87f_y/E_s) * d. For Fe 415, f_y=415, E_s=2e5, so x_u,max = 0.0035 / (0.0055 + 0.87*415/200000) * d = 0.0035 / (0.0055 + 0.00180) * d = 0.0035/0.0073 * d = 0.479d = 239.5mm ~ 240mm. So, 245mm is close. For Fe 250, it is 0.53d=265mm. The question does not specify steel grade, but the option 245mm is for Fe 415."
+                    explanation: "IS 456 gives the limiting neutral-axis depth as \\[x_{u,max} = \\dfrac{0.0035}{0.0055 + \\dfrac{0.87f_y}{E_s}}d\\] For Fe 415 with \\(E_s = 2 \\times 10^5\\) MPa this is \\[\\dfrac{0.0035}{0.0073}d = 0.479d \\approx 240\\ \\text{mm}\\] The question does not state the steel grade; 245 mm is the option closest to the Fe 415 value, while Fe 250 would give \\(0.53d = 265\\) mm."
                 },
                 {
                     id: "cm12q032",
@@ -705,7 +705,7 @@ const CIVIL_MODEL_12 = {
                         { key: "d", text: "200 N/m³" }
                     ],
                     answer: "a",
-                    explanation: "Specific weight (γ) = ρ * g. Mass (m) is constant. On first planet: γ1 = ρ * g1 = 10 N/m³, g1=20 m/s². Therefore, ρ = γ1 / g1 = 10 / 20 = 0.5 kg/m³. On second planet: γ2 = ρ * g2 = 0.5 kg/m³ * 4 m/s² = 2 N/m³."
+                    explanation: "Specific weight is \\(\\gamma = \\rho g\\), and the mass density does not change. On the first planet \\[\\rho = \\dfrac{\\gamma_1}{g_1} = \\dfrac{10}{20} = 0.5\\ \\text{kg/m}^3\\] so on the second \\[\\gamma_2 = 0.5 \\times 4 = 2\\ \\text{N/m}^3\\]"
                 },
                 {
                     id: "cm12q050",
@@ -1061,7 +1061,7 @@ const CIVIL_MODEL_12 = {
                         { key: "d", text: "decrease the uplift by 10%" }
                     ],
                     answer: "c",
-                    explanation: "Vertical downward acceleration effectively reduces the gravitational acceleration. This decreases the effective weight of the dam (Resisting Weight = Mass x (g - a_v)), reducing its stability against sliding and overturning."
+                    explanation: "Vertical downward acceleration effectively reduces the gravitational acceleration, so the effective resisting weight becomes \\[W' = m(g - a_v)\\] This reduces the dam's stability against sliding and overturning."
                 },
                 {
                     id: "cm12q076",
@@ -1100,7 +1100,7 @@ const CIVIL_MODEL_12 = {
                         { key: "d", text: "130KN" }
                     ],
                     answer: "b",
-                    explanation: "$$h_w = 0.032 \\cdot \\sqrt{V \\cdot F} = 0.032 \\cdot \\sqrt{172 \\times 52} = 3.02 \\text{ m}$$ $$P_w = 19.62 \\cdot h_w^2 \\text{ kN/m} = 19.62 \\times 3.02^2 = 179.69 \\text{ kN/m}$$"
+                    explanation: "The wave height and wave force per metre length are \\[\\begin{aligned} h_w &amp;= 0.032\\sqrt{VF} \\\\ &amp;= 0.032\\sqrt{172 \\times 52} \\\\ &amp;= 3.02\\ \\text{m} \\end{aligned}\\] \\[\\begin{aligned} P_w &amp;= 19.62h_w^2 \\\\ &amp;= 19.62 \\times 3.02^2 \\\\ &amp;= 179.69\\ \\text{kN/m} \\end{aligned}\\] about 180 kN."
                 }
             ]
         },
@@ -1338,7 +1338,7 @@ const CIVIL_MODEL_12 = {
                         { key: "d", text: "None of the above" }
                     ],
                     answer: "b",
-                    explanation: "This statement reverses the standard risk formula. The correct formula is Risk = Hazard x Vulnerability x Exposure. A hazard is a potential source of harm. Not all hazards require external assistance; only when they materialize and cause significant damage do they become disasters."
+                    explanation: "Statement (b) reverses the standard risk relation, in which risk is the product of hazard, vulnerability and exposure. A hazard is a potential source of harm. Not all hazards require external assistance; only when they materialise and cause significant damage do they become disasters."
                 },
                 {
                     id: "cm12q096",

@@ -58,7 +58,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "h^4/l" }
                     ],
                     answer: "c",
-                    explanation: "The exact slope correction for a measured slope length L and height difference h is C = L - √(L² - h²). The approximate formula, valid for gentle slopes, is C ≈ h²/(2L)."
+                    explanation: "The exact slope correction for a measured slope length \\(L\\) and height difference \\(h\\) is \\[C = L - \\sqrt{L^2 - h^2}\\] The approximate formula, valid for gentle slopes, is \\[C \\approx \\dfrac{h^2}{2L}\\]"
                 },
                 {
                     id: "cm21q003",
@@ -188,7 +188,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "1/9" }
                     ],
                     answer: "a",
-                    explanation: "The combined correction for curvature and refraction is C_comb = 0.0673 * d² (d in km). The curvature correction is +0.0785d² and the refraction correction is -0.0112d². The ratio of refraction to curvature is approximately 0.0112/0.0785 ≈ 1/7."
+                    explanation: "With \\(d\\) in km, the curvature correction is \\(0.0785d^2\\) and the refraction correction is \\(-0.0112d^2\\), combining to \\(0.0673d^2\\). The ratio of refraction to curvature is \\[\\dfrac{0.0112}{0.0785} \\approx \\dfrac{1}{7}\\]"
                 },
                 {
                     id: "cm21q013",
@@ -201,7 +201,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "It is always positive and proportion to the distance between the staff and instrument." }
                     ],
                     answer: "b",
-                    explanation: "Curvature correction (C_c) is subtractive because the staff reading is too high due to the earth's curvature. The formula is C_c = -0.0785 * d² (where d is in km), showing it is negative and proportional to the square of the distance."
+                    explanation: "The curvature correction is subtractive because the staff reading is too high owing to the earth's curvature. With \\(d\\) in km, \\[C_c = -0.0785d^2\\] showing it is negative and proportional to the square of the distance."
                 }
             ]
         },
@@ -223,7 +223,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "1/R = E/M" }
                     ],
                     answer: "c",
-                    explanation: "The fundamental flexure formula is M/I = E/R, where M is bending moment, I is moment of inertia, E is modulus of elasticity, and R is radius of curvature."
+                    explanation: "The fundamental flexure formula is \\[\\dfrac{M}{I} = \\dfrac{E}{R}\\] where \\(M\\) is the bending moment, \\(I\\) the moment of inertia, \\(E\\) the modulus of elasticity and \\(R\\) the radius of curvature."
                 },
                 {
                     id: "cm21q015",
@@ -236,7 +236,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "Linear second-order differential equation" }
                     ],
                     answer: "d",
-                    explanation: "The equation for the deflection curve (elastic curve) is derived as d²y/dx² = M/(EI), which is a linear second-order differential equation."
+                    explanation: "The elastic curve satisfies \\[\\dfrac{d^2y}{dx^2} = \\dfrac{M}{EI}\\] a linear second-order differential equation."
                 },
                 {
                     id: "cm21q016",
@@ -401,7 +401,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "800" }
                     ],
                     answer: "d",
-                    explanation: "For bolts, the property class is denoted by X.Y. The ultimate tensile strength (fu) is given by X * 100 MPa. For class 8.8, fu = 8 * 100 = 800 MPa."
+                    explanation: "For a bolt of property class X.Y the ultimate tensile strength is \\(X \\times 100\\) MPa. For class 8.8, \\[f_u = 8 \\times 100 = 800\\ \\text{MPa}\\]"
                 },
                 {
                     id: "cm21q028",
@@ -414,7 +414,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "14 x 10⁻⁶ /°C but nearly equal to α of concrete" }
                     ],
                     answer: "a",
-                    explanation: "The coefficient of thermal expansion for steel is approximately 12 x 10⁻⁶ /°C. For concrete, it is about 10 x 10⁻⁶ /°C to 12 x 10⁻⁶ /°C, making them quite similar and a key reason for their composite use."
+                    explanation: "The coefficient of thermal expansion of steel is about \\(12 \\times 10^{-6}\\) per \\(^\\circ\\text{C}\\). For concrete it is about \\(10\\) to \\(12 \\times 10^{-6}\\) per \\(^\\circ\\text{C}\\), making them quite similar, a key reason for their composite use."
                 },
                 {
                     id: "cm21q029",
@@ -679,7 +679,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "5m" }
                     ],
                     answer: "d",
-                    explanation: "Section factor for critical flow calculation is Z = A√D_h, where A is area and D_h is hydraulic depth. Given Q=250 m³/s, V=5 m/s, so A = Q/V = 250/5 = 50 m². Given Z = 111.80 m. So, 111.80 = 50 * √(D_h). Therefore, √(D_h) = 111.80 / 50 = 2.236. So, D_h = (2.236)² = 5.000 m approximately."
+                    explanation: "The area is \\(A = \\dfrac{250}{5} = 50\\) m<sup>2</sup>, and the section factor \\(Z = A\\sqrt{D}\\) gives \\[\\sqrt{D} = \\dfrac{111.80}{50} = 2.236\\] so \\(D = 2.236^2 \\approx 5.000\\) m."
                 },
                 {
                     id: "cm21q048",
@@ -692,7 +692,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "7m" }
                     ],
                     answer: "a",
-                    explanation: "Let depth = y, width = B. Given y/B = X (but X is not specified). Area A = B * y = 16 m². So, B * y = 16. Without the value of X (the ratio), we cannot find B uniquely. For example, if X=1/2, then y=B/2, so B*(B/2)=16, B²=32, B=5.66m. But 5.66 is not an option. If X=1/4, then y=B/4, B*(B/4)=16, B²=64, B=8m. So, if X=0.25, then B=8m. The question likely assumes a standard ratio, but it is not provided. Based on the answer being 8m, we can infer X=0.25."
+                    explanation: "With depth \\(y\\), width \\(B\\) and \\(By = 16\\) m<sup>2</sup>, the ratio \\(X\\) is not specified, so \\(B\\) is not unique. For \\(X = \\dfrac{1}{2}\\), \\(B = \\sqrt{32} = 5.66\\) m, which is not an option. For \\(X = \\dfrac{1}{4}\\), \\[\\dfrac{B^2}{4} = 16 \\;\\Rightarrow\\; B = 8\\ \\text{m}\\] so the key's 8 m implies \\(X = 0.25\\)."
                 },
                 {
                     id: "cm21q049",
@@ -705,7 +705,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "Normal depth" }
                     ],
                     answer: "b",
-                    explanation: "The efficiency of a channel for conveying water is often determined by the hydraulic radius (R = A/P). A higher hydraulic radius indicates a more efficient channel because it means less wetted perimeter for a given area, resulting in less friction loss."
+                    explanation: "Channel efficiency is usually judged by the hydraulic radius \\(R = \\dfrac{A}{P}\\). A larger \\(R\\) means less wetted perimeter for a given area, and so less friction loss."
                 },
                 {
                     id: "cm21q050",
@@ -718,7 +718,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "18.6m²" }
                     ],
                     answer: "c",
-                    explanation: "Wetted area is the cross-sectional area of flow (A). For a rectangular channel, A = width * depth = 5.2m * 3m = 15.6 m²."
+                    explanation: "For a rectangular channel the wetted area is the width times the depth: \\[A = 5.2 \\times 3 = 15.6\\ \\text{m}^2\\]"
                 },
                 {
                     id: "cm21q051",
@@ -731,7 +731,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "10.5m" }
                     ],
                     answer: "d",
-                    explanation: "For a rectangular channel, the wetted perimeter (P) is the sum of the base and the two sides: P = top width + 2 * depth = 4.5m + 2*3m = 4.5 + 6 = 10.5m."
+                    explanation: "For a rectangular channel the wetted perimeter is the base plus the two sides: \\[P = 4.5 + 2 \\times 3 = 10.5\\ \\text{m}\\]"
                 },
                 {
                     id: "cm21q052",
@@ -744,7 +744,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "8m" }
                     ],
                     answer: "a",
-                    explanation: "Hydraulic depth (D_h) is defined as the cross-sectional area of flow divided by the top width. Area A = width * depth = 12m * 5m = 60 m². Top width T = 12m (for a rectangular channel). So, D_h = A / T = 60 / 12 = 5m."
+                    explanation: "Hydraulic depth is the flow area divided by the top width. With \\(A = 12 \\times 5 = 60\\) m<sup>2</sup> and \\(T = 12\\) m, \\[D = \\dfrac{60}{12} = 5\\ \\text{m}\\]"
                 },
                 {
                     id: "cm21q053",
@@ -757,7 +757,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "2.22m" }
                     ],
                     answer: "b",
-                    explanation: "Hydraulic radius (R) = Area / Wetted Perimeter. Area A = depth * width = 4m * 5m = 20 m². Wetted Perimeter P = width + 2*depth = 5m + 2*4m = 5 + 8 = 13m. So, R = 20 / 13 ≈ 1.538m ≈ 1.54m."
+                    explanation: "The area is \\(A = 4 \\times 5 = 20\\) m<sup>2</sup> and the wetted perimeter is \\(P = 5 + 2 \\times 4 = 13\\) m, so \\[R = \\dfrac{20}{13} \\approx 1.538 \\approx 1.54\\ \\text{m}\\]"
                 },
                 {
                     id: "cm21q054",
@@ -770,7 +770,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "6m" }
                     ],
                     answer: "c",
-                    explanation: "Section factor Z = A √D_h. Given Z=40m, D_h=4m. So, 40 = A * √4 = A * 2. Therefore, A = 40/2 = 20 m². For a rectangular channel, hydraulic depth D_h = A / T = y (also). So, 4 = 20 / T. Therefore, top width T = 20 / 4 = 5m."
+                    explanation: "From \\(Z = A\\sqrt{D}\\), \\(40 = 2A\\), so \\(A = 20\\) m<sup>2</sup>. For a rectangle \\(D = \\dfrac{A}{T}\\), so \\[T = \\dfrac{20}{4} = 5\\ \\text{m}\\]"
                 },
                 {
                     id: "cm21q055",
@@ -970,7 +970,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "6" }
                     ],
                     answer: "a",
-                    explanation: "Total water depth needed = 20 mm = 0.02 m. Total volume needed = Area * Depth = 40 ha * 10,000 m²/ha * 0.02 m = 8,000 m³. March has 31 days = 31 * 24 * 3600 seconds = 2,678,400 seconds. Discharge required = Volume / Time = 8,000 m³ / 2,678,400 s ≈ 0.002986 m³/s = 2.986 L/s ≈ 3 L/s (to the nearest integer)."
+                    explanation: "The volume needed, in m<sup>3</sup>, is \\[40 \\times 10{,}000 \\times 0.02 = 8000\\] March has 31 days, or 2,678,400 s, so \\[\\begin{aligned} Q &amp;= \\dfrac{8000}{2{,}678{,}400} \\\\ &amp;\\approx 0.002986\\ \\text{m}^3\\text{/s} \\\\ &amp;= 2.986\\ \\text{L/s} \\approx 3\\ \\text{L/s} \\end{aligned}\\]"
                 },
                 {
                     id: "cm21q069",
@@ -983,7 +983,7 @@ const CIVIL_MODEL_21 = {
                         { key: "d", text: "22" }
                     ],
                     answer: "b",
-                    explanation: "Area to be irrigated in Kharif = 60% of CCA = 0.6 * 60,000 = 36,000 ha. Discharge required at the field outlet = Area / Duty = 36,000 ha / 2000 ha/cumec = 18 cumec. Conveyance loss is 30%, meaning only 70% of the water released at the head reaches the field. Let Q be the discharge at the head. Then, 0.7Q = 18. Therefore, Q = 18 / 0.7 ≈ 25.71 cumec. The closest integer is 26 cumec."
+                    explanation: "The Kharif area is \\(0.6 \\times 60{,}000 = 36{,}000\\) ha, so the discharge at the field outlet is \\[\\dfrac{36{,}000}{2000} = 18\\ \\text{cumec}\\] With 30% conveyance loss only 70% of the head release reaches the field, so \\(0.7Q = 18\\) and \\[Q = \\dfrac{18}{0.7} \\approx 25.71 \\approx 26\\ \\text{cumec}\\]"
                 },
                 {
                     id: "cm21q070",

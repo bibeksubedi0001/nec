@@ -490,7 +490,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Density is mass divided by volume: 7.2/0.010 = 720 kg/m<sup>3</sup>. Product classification must follow a named standard; a density cannot be replaced by an exam-preferred value.<p>Source note: p2 n18 contradicts its 600-800 range with a preferred 960 kg/m3. Neither is adopted as a universal MDF minimum; measured density is tested instead.</p><p>Capsule 4th ed., p. 2; topic 1 point 18.</p>",
+          "explanation": "Density is mass divided by volume: \\[\\rho = \\dfrac{7.2}{0.010} = 720\\ \\text{kg/m}^3\\] Product classification must follow a named standard; a density cannot be replaced by an exam-preferred value.<p>Source note: p2 n18 contradicts its 600-800 range with a preferred 960 kg/m3. Neither is adopted as a universal MDF minimum; measured density is tested instead.</p><p>Capsule 4th ed., p. 2; topic 1 point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1556,7 +1556,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Refractive index n = c/v, so v = 3.00 x 10<sup>8</sup>/2.42 = 1.2397 x 10<sup>8</sup> m/s. Multiplying c by n reverses the definition. The stated index is wavelength-dependent, not a universal constant at every wavelength.<p>Source note: Page 20 point 49 is an optical material-property item, mapped to ACiE0101 rather than RCC design; parent may review this broad materials mapping.</p><p>Capsule 4th ed., p. 20; topic 5 point 49.</p>",
+          "explanation": "Refractive index is \\(n = \\dfrac{c}{v}\\), so \\[\\begin{aligned} v &amp;= \\dfrac{3.00 \\times 10^8}{2.42} \\\\ &amp;= 1.2397 \\times 10^8\\ \\text{m/s} \\end{aligned}\\] Multiplying \\(c\\) by \\(n\\) reverses the definition. The stated index is wavelength-dependent, not a universal constant at every wavelength.<p>Source note: Page 20 point 49 is an optical material-property item, mapped to ACiE0101 rather than RCC design; parent may review this broad materials mapping.</p><p>Capsule 4th ed., p. 20; topic 5 point 49.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1677,7 +1677,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Compressive stress is 231,000/21,000 = 11.0 N/mm<sup>2</sup>, exceeding the stated 10.5 limit. This single-specimen comparison does not replace sampling rules or establish a universal first-class NS/IS boundary.<p>Source note: p2 n35: 10.5 is an explicit project criterion, following the local notes&#39; caution that the source does not establish a common code class boundary.</p><p>Capsule 4th ed., p. 2; topic 1 point 35.</p>",
+          "explanation": "Compressive stress is the failure load in newtons divided by the loaded area in square millimetres: \\[\\sigma = \\dfrac{231{,}000}{21{,}000} = 11.0\\ \\text{N/mm}^2\\] This exceeds the stated limit of \\(10.5\\ \\text{N/mm}^2\\). This single-specimen comparison does not replace sampling rules or establish a universal first-class NS/IS boundary.<p>Source note: p2 n35: 10.5 is an explicit project criterion, following the local notes&#39; caution that the source does not establish a common code class boundary.</p><p>Capsule 4th ed., p. 2; topic 1 point 35.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1791,7 +1791,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Absorption = 100(3.48 - 3.00)/3.00 = 16%. The denominator is dry mass, not wet mass. The 15% requirement is supplied for this problem, not claimed as a universal first-class brick limit.<p>Source note: p2 n37: qualified the unsupported universal 15% criterion in accordance with the local brick-test caution.</p><p>Capsule 4th ed., p. 2; topic 1 point 37.</p>",
+          "explanation": "Absorption is measured against the dry mass: \\[\\dfrac{100\\,(3.48 - 3.00)}{3.00} = 16\\%\\] The denominator is dry mass, not wet mass. The 15% requirement is supplied for this problem, not claimed as a universal first-class brick limit.<p>Source note: p2 n37: qualified the unsupported universal 15% criterion in accordance with the local brick-test caution.</p><p>Capsule 4th ed., p. 2; topic 1 point 37.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1981,7 +1981,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Bulking = (moist volume - unbulked volume)/unbulked volume times 100 = (125 - 100)/100 times 100 = 25%. Moisture films separate grains; the effect is not simply internal pore absorption, and flooding removes the bulking effect.<p>Source note: Page 7 point 39 confuses moisture-film bulking with absorption into aggregate pores.</p><p>Capsule 4th ed., p. 7; topic 2 point 39.</p>",
+          "explanation": "Bulking is the volume increase measured against the unbulked volume: \\[\\dfrac{125 - 100}{100} \\times 100 = 25\\%\\] Moisture films separate grains; the effect is not simply internal pore absorption, and flooding removes the bulking effect.<p>Source note: Page 7 point 39 confuses moisture-film bulking with absorption into aggregate pores.</p><p>Capsule 4th ed., p. 7; topic 2 point 39.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2247,7 +2247,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Percentage reduction in area is 100 x (A0 - Af)/A0 = 100 x (100 - 64)/100 = 36%. A greater reduction generally indicates greater tensile ductility for comparable tests; it is not the remaining-area percentage or tensile strength itself.<p>Capsule 4th ed., p. 23; topic 5 point 131.</p>",
+          "explanation": "Percentage reduction in area is \\[\\begin{aligned} &amp;100 \\times \\dfrac{A_0 - A_f}{A_0} \\\\ &amp;= 100 \\times \\dfrac{100 - 64}{100} = 36\\% \\end{aligned}\\] A greater reduction generally indicates greater tensile ductility for comparable tests; it is not the remaining-area percentage or tensile strength itself.<p>Capsule 4th ed., p. 23; topic 5 point 131.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2444,7 +2444,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Under the stated counting convention, the upper landing replaces the last tread, so the number of separate treads is 12 - 1 = 11. Counting the landing as a tread would use a different convention.<p>Capsule 4th ed., p. 3; topic 1 point 44.</p>",
+          "explanation": "Under the stated counting convention, the upper landing replaces the last tread, so the number of separate treads is \\[12 - 1 = 11\\] Counting the landing as a tread would use a different convention.<p>Capsule 4th ed., p. 3; topic 1 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2710,7 +2710,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Ground coverage is footprint divided by plot area, so 0.60 x 400 = 240 m<sup>2</sup>. Setbacks or other controls may reduce this area; ground coverage is not floor-area ratio over all storeys.<p>Source note: p3 n53: replaced the unverified universal 60-75% regulatory range with an explicit site-specific assumption, not a current Nepal legal threshold.</p><p>Capsule 4th ed., p. 3; topic 1 point 53.</p>",
+          "explanation": "Ground coverage is footprint divided by plot area, so the permitted footprint is \\[0.60 \\times 400 = 240\\ \\text{m}^2\\] Setbacks or other controls may reduce this area; ground coverage is not floor-area ratio over all storeys.<p>Source note: p3 n53: replaced the unverified universal 60-75% regulatory range with an explicit site-specific assumption, not a current Nepal legal threshold.</p><p>Capsule 4th ed., p. 3; topic 1 point 53.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2824,7 +2824,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The horizontal circulation allowance is 0.12 x 250 = 30 m<sup>2</sup>. Corridors and passages differ from stairs and lifts used for vertical circulation; the allowance is a planning assumption rather than a universal code percentage.<p>Source note: p4 n88: the source&#39;s 10-15% is treated as heuristic, not a compulsory building requirement.</p><p>Capsule 4th ed., p. 4; topic 1 point 88.</p>",
+          "explanation": "The horizontal circulation allowance is \\[0.12 \\times 250 = 30\\ \\text{m}^2\\] Corridors and passages differ from stairs and lifts used for vertical circulation; the allowance is a planning assumption rather than a universal code percentage.<p>Source note: p4 n88: the source&#39;s 10-15% is treated as heuristic, not a compulsory building requirement.</p><p>Capsule 4th ed., p. 4; topic 1 point 88.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3090,7 +3090,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "M15 denotes characteristic cube compressive strength of 15 N/mm^2 at 28 days in this convention, not mean strength, cylinder strength or a seven-day result. It does not by itself specify waterproofing performance or thickness. DPC material and detailing must follow the actual project requirements.<p>Source note: Page 19 point 108 gives no governing DPC specification. M15 is treated as a stated project choice, not a universal mandated grade; current local specification remains for parent review.</p><p>Capsule 4th ed., p. 19; topic 4 point 108.</p>",
+          "explanation": "M15 denotes characteristic cube compressive strength of 15 N per mm<sup>2</sup> at 28 days in this convention, not mean strength, cylinder strength or a seven-day result. It does not by itself specify waterproofing performance or thickness. DPC material and detailing must follow the actual project requirements.<p>Source note: Page 19 point 108 gives no governing DPC specification. M15 is treated as a stated project choice, not a universal mandated grade; current local specification remains for parent review.</p><p>Capsule 4th ed., p. 19; topic 4 point 108.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3282,7 +3282,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The scheduled 75 mm breadth and thickness not exceeding 50 mm are both satisfied by the 45 x 75 mm section. Thickness and breadth are distinct dimensions. This tests an explicit project schedule, not an unverified universal maximum for every timber batten.<p>Source note: Page 22 point 89&#39;s 50 mm limit is used only as an expressly stipulated schedule condition; its source standard is not identified.</p><p>Capsule 4th ed., p. 22; topic 5 point 89.</p>",
+          "explanation": "The scheduled 75 mm breadth and thickness not exceeding 50 mm are both satisfied by the 45 mm by 75 mm section. Thickness and breadth are distinct dimensions. This tests an explicit project schedule, not an unverified universal maximum for every timber batten.<p>Source note: Page 22 point 89&#39;s 50 mm limit is used only as an expressly stipulated schedule condition; its source standard is not identified.</p><p>Capsule 4th ed., p. 22; topic 5 point 89.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3593,7 +3593,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Integrating horizontal strips gives I = integral of y squared times b(1-y/h) dy, hence bh<sup>3</sup>/12. The centroidal axis parallel to the base instead gives bh<sup>3</sup>/36; the cubed dimension is perpendicular to the axis.<p>Capsule 4th ed., p. 3; topic 1 point 58.</p>",
+          "explanation": "Integrating horizontal strips about the base, with strip width \\(b\\left(1 - \\dfrac{y}{h}\\right)\\), gives \\[\\begin{aligned} I_{\\text{base}} &amp;= \\int_0^h b\\left(1 - \\dfrac{y}{h}\\right) y^2\\, dy \\\\ &amp;= \\dfrac{bh^3}{12} \\end{aligned}\\] The centroidal axis parallel to the base instead gives \\(\\dfrac{bh^3}{36}\\); the cubed dimension is perpendicular to the axis.<p>Capsule 4th ed., p. 3; topic 1 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3631,7 +3631,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The diametral second moment is pi(D<sup>4</sup>-d<sup>4</sup>)/64. Divide by the extreme-fibre distance D/2 to obtain the modulus; dividing a polar moment instead would give the torsional polar modulus.<p>Capsule 4th ed., pp. 3, 4; topic 1 point 60; topic 1 point 79.</p>",
+          "explanation": "The diametral second moment is \\[I = \\dfrac{\\pi (D^4 - d^4)}{64}\\] Dividing by the extreme-fibre distance \\(\\dfrac{D}{2}\\) gives the modulus: \\[Z = \\dfrac{2I}{D} = \\dfrac{\\pi (D^4 - d^4)}{32D}\\] Dividing a polar moment instead would give the torsional polar modulus.<p>Capsule 4th ed., pp. 3, 4; topic 1 point 60; topic 1 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3671,7 +3671,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Subtract the inner circular area moment from the outer: I = pi(R<sup>4</sup>-r<sup>4</sup>)/4. The factor 1/64 applies to diameters, while the polar moment is twice the diametral value.<p>Source note: p3 n61: the full page text retains denominator 4, omitted from the extracted point. Radii and diametral axis are now explicit; no image review was performed.</p><p>Capsule 4th ed., p. 3; topic 1 point 61.</p>",
+          "explanation": "Subtract the inner circle's moment from the outer circle's: \\[\\begin{aligned} I &amp;= \\dfrac{\\pi R^4}{4} - \\dfrac{\\pi r^4}{4} \\\\ &amp;= \\dfrac{\\pi (R^4 - r^4)}{4} \\end{aligned}\\] The factor \\(\\dfrac{1}{64}\\) applies when diameters are used, while the polar moment is twice the diametral value.<p>Source note: p3 n61: the full page text retains denominator 4, omitted from the extracted point. Radii and diametral axis are now explicit; no image review was performed.</p><p>Capsule 4th ed., p. 3; topic 1 point 61.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3709,7 +3709,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The parallel-axis theorem gives bd<sup>3</sup>/12 + bd(d/2)<sup>2</sup> = bd<sup>3</sup>/3. Using the centroidal value without the shift misses the additional contribution from area offset.<p>Capsule 4th ed., pp. 3, 4; topic 1 point 62; topic 1 point 78.</p>",
+          "explanation": "The parallel-axis theorem gives \\[I = \\dfrac{bd^3}{12} + bd\\left(\\dfrac{d}{2}\\right)^2 = \\dfrac{bd^3}{3}\\] Using the centroidal value without the shift misses the additional contribution from area offset.<p>Capsule 4th ed., pp. 3, 4; topic 1 point 62; topic 1 point 78.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3749,7 +3749,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "A solid cone has cross-sectional area proportional to (1-z/h)<sup>2</sup>. Its volume-weighted mean height is h/4 above the base, or 3h/4 below the apex; the reference end must be stated.<p>Capsule 4th ed., p. 3; topic 1 point 63.</p>",
+          "explanation": "A solid cone has cross-sectional area proportional to \\(\\left(1 - \\dfrac{z}{h}\\right)^2\\), so its volume-weighted mean height is \\[\\bar z = \\dfrac{\\int_0^h z\\left(1 - \\dfrac{z}{h}\\right)^2 dz}{\\int_0^h \\left(1 - \\dfrac{z}{h}\\right)^2 dz} = \\dfrac{h}{4}\\] This is \\(\\dfrac{h}{4}\\) above the base, or \\(\\dfrac{3h}{4}\\) below the apex; the reference end must be stated.<p>Capsule 4th ed., p. 3; topic 1 point 63.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3825,7 +3825,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Each elemental contribution satisfies r<sup>2</sup> = x<sup>2</sup> + y<sup>2</sup>, so integration gives J = I<sub>x</sub> + I<sub>y</sub>. The area identity is not restricted to circles; its mass form requires a planar lamina.<p>Source note: p3 n65: corrected the implication that only circular laminas permit the theorem.</p><p>Capsule 4th ed., p. 3; topic 1 point 65.</p>",
+          "explanation": "Each elemental contribution satisfies \\(r^2 = x^2 + y^2\\), so integration gives \\[J = \\int r^2\\, dA = I_x + I_y\\] The area identity is not restricted to circles; its mass form requires a planar lamina.<p>Source note: p3 n65: corrected the implication that only circular laminas permit the theorem.</p><p>Capsule 4th ed., p. 3; topic 1 point 65.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3977,7 +3977,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Since k = sqrt(I/A), holding area fixed gives k proportional to sqrt(I). Multiplying I by four therefore multiplies k by two; the square-root relationship is not a direct proportionality to I.<p>Capsule 4th ed., p. 3; topic 1 point 69.</p>",
+          "explanation": "The radius of gyration is \\[k = \\sqrt{\\dfrac{I}{A}}\\] so with the area fixed, \\(k \\propto \\sqrt{I}\\). Multiplying \\(I\\) by four therefore multiplies \\(k\\) by two; the square-root relationship is not a direct proportionality to \\(I\\).<p>Capsule 4th ed., p. 3; topic 1 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4015,7 +4015,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "At fixed I, k = sqrt(I/A) varies inversely with sqrt(A). A fourfold increase in area gives k<sub>2</sub>/k<sub>1</sub> = 1/sqrt(4) = 1/2; holding I fixed is essential to the statement.<p>Capsule 4th ed., p. 3; topic 1 point 69.</p>",
+          "explanation": "At fixed \\(I\\), the radius of gyration \\(k = \\sqrt{\\dfrac{I}{A}}\\) varies inversely with \\(\\sqrt{A}\\). A fourfold increase in area gives \\[\\dfrac{k_2}{k_1} = \\dfrac{1}{\\sqrt{4}} = \\dfrac{1}{2}\\] Holding \\(I\\) fixed is essential to the statement.<p>Capsule 4th ed., p. 3; topic 1 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4053,7 +4053,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The centroid is 2h/3 below the apex. Thus I<sub>apex</sub> = bh<sup>3</sup>/36 + (bh/2)(2h/3)<sup>2</sup> = bh<sup>3</sup>/4, which is nine times bh<sup>3</sup>/36.<p>Capsule 4th ed., p. 3; topic 1 point 70.</p>",
+          "explanation": "The centroid lies \\(\\dfrac{2h}{3}\\) below the apex. Thus \\[\\begin{aligned} I_{\\text{apex}} &amp;= \\dfrac{bh^3}{36} + \\dfrac{bh}{2}\\left(\\dfrac{2h}{3}\\right)^2 \\\\ &amp;= \\dfrac{bh^3}{4} \\end{aligned}\\] which is nine times the centroidal value \\(\\dfrac{bh^3}{36}\\).<p>Capsule 4th ed., p. 3; topic 1 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4091,7 +4091,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "A semicircle contributes half the full circle's second moment about the common diameter, giving pi R<sup>4</sup>/8. Substituting R = d/2 introduces a factor of 16, producing pi d<sup>4</sup>/128.<p>Capsule 4th ed., pp. 3, 4; topic 1 point 71; topic 1 point 74.</p>",
+          "explanation": "A semicircle contributes half the full circle's second moment about the common diameter: \\[I = \\dfrac{1}{2} \\cdot \\dfrac{\\pi R^4}{4} = \\dfrac{\\pi R^4}{8}\\] Substituting \\(R = \\dfrac{d}{2}\\) introduces a factor of 16: \\[I = \\dfrac{\\pi d^4}{8 \\times 16} = \\dfrac{\\pi d^4}{128}\\]<p>Capsule 4th ed., pp. 3, 4; topic 1 point 71; topic 1 point 74.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4131,7 +4131,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The diametral area moment is pi d<sup>4</sup>/64. The polar moment doubles it, the semicircle about its base halves it, and the cubic-length expression is an elastic section modulus rather than a second moment.<p>Capsule 4th ed., p. 3; topic 1 point 72.</p>",
+          "explanation": "The diametral area moment is \\[I = \\dfrac{\\pi d^4}{64}\\] The polar moment doubles it, the semicircle about its base halves it, and the cubic-length expression is an elastic section modulus rather than a second moment.<p>Capsule 4th ed., p. 3; topic 1 point 72.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4169,7 +4169,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Subtract the parallel-axis term from the base moment: bd<sup>3</sup>/12 - (bd/2)(d/3)<sup>2</sup> = bd<sup>3</sup>/36. The formula requires an axis parallel to the stated base.<p>Capsule 4th ed., pp. 3, 4; topic 1 point 73.</p>",
+          "explanation": "Subtract the parallel-axis term from the base moment: \\[\\begin{aligned} I_G &amp;= \\dfrac{bd^3}{12} - \\dfrac{bd}{2}\\left(\\dfrac{d}{3}\\right)^2 \\\\ &amp;= \\dfrac{bd^3}{36} \\end{aligned}\\] The formula requires an axis parallel to the stated base.<p>Capsule 4th ed., pp. 3, 4; topic 1 point 73.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4246,7 +4246,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The defining relation is I = Ak<sup>2</sup>. Thus k = sqrt(1,000,000/2,500) = sqrt(400) = 20 mm; I/A is k squared, not k itself.<p>Source note: p4 n77: the extracted &#39;AI&#39; fraction is disambiguated as I/A by the definition and dimensions.</p><p>Capsule 4th ed., p. 4; topic 1 point 77.</p>",
+          "explanation": "The defining relation is \\(I = Ak^2\\). Thus \\[\\begin{aligned} k &amp;= \\sqrt{\\dfrac{1{,}000{,}000}{2{,}500}} \\\\ &amp;= \\sqrt{400} = 20\\ \\text{mm} \\end{aligned}\\] The ratio \\(\\dfrac{I}{A}\\) is \\(k^2\\), not \\(k\\) itself.<p>Source note: p4 n77: the extracted &#39;AI&#39; fraction is disambiguated as I/A by the definition and dimensions.</p><p>Capsule 4th ed., p. 4; topic 1 point 77.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4284,7 +4284,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "With width varying linearly, the centroid height is h(b+2a)/[3(a+b)]. Substitution gives 4(6+6)/(3 x 9) = 16/9 = 1.778 m, below mid-height because the bottom is wider.<p>Capsule 4th ed., p. 4; topic 1 point 80.</p>",
+          "explanation": "With width varying linearly, the centroid height above the bottom side is \\[\\begin{aligned} \\bar y &amp;= \\dfrac{h(b + 2a)}{3(a + b)} = \\dfrac{4(6 + 6)}{3 \\times 9} \\\\ &amp;= \\dfrac{16}{9} = 1.778\\ \\text{m} \\end{aligned}\\] This is below mid-height because the bottom is wider.<p>Capsule 4th ed., p. 4; topic 1 point 80.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4322,7 +4322,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For a semicircular area, centroid distance is 4R/(3pi) = 2d/(3pi). Using d = 300 mm gives 600/(3pi) = 63.66198 mm, measured from the diameter toward the curved boundary.<p>Source note: p5 n128: the extracted fraction is disambiguated as 2d/(3pi), consistent with integration and the local geometric notes.</p><p>Capsule 4th ed., p. 5; topic 1 point 128.</p>",
+          "explanation": "For a semicircular area the centroid lies at \\[\\bar y = \\dfrac{4R}{3\\pi} = \\dfrac{2d}{3\\pi}\\] from the diameter. With \\(d = 300\\) mm, \\[\\bar y = \\dfrac{600}{3\\pi} = 63.66198\\ \\text{mm}\\] measured from the diameter toward the curved boundary.<p>Source note: p5 n128: the extracted fraction is disambiguated as 2d/(3pi), consistent with integration and the local geometric notes.</p><p>Capsule 4th ed., p. 5; topic 1 point 128.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4398,7 +4398,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Substitution gives (2/5) x 10 x 0.20<sup>2</sup> = 0.16 kg m<sup>2</sup>. Halving a sphere through its centre halves both mass and this axis's inertia, retaining the 2MR<sup>2</sup>/5 relation for the hemisphere.<p>Source note: p6 n141: a separate, fully specified mass-inertia exercise retains the source&#39;s solid-hemisphere concept without using an area-moment formula.</p><p>Capsule 4th ed., p. 6; topic 1 point 141.</p>",
+          "explanation": "Substitution gives \\[\\begin{aligned} I &amp;= \\dfrac{2}{5} \\times 10 \\times 0.20^2 \\\\ &amp;= 0.16\\ \\text{kg m}^2 \\end{aligned}\\] Halving a sphere through its centre halves both mass and this axis's inertia, retaining the relation \\(I = \\dfrac{2MR^2}{5}\\) for the hemisphere.<p>Source note: p6 n141: a separate, fully specified mass-inertia exercise retains the source&#39;s solid-hemisphere concept without using an area-moment formula.</p><p>Capsule 4th ed., p. 6; topic 1 point 141.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4436,7 +4436,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The polar moment is the sum of two perpendicular diametral area moments. Each is pi d<sup>4</sup>/64, so J = pi d<sup>4</sup>/32. This is an area property, not a mass moment of inertia.<p>Capsule 4th ed., p. 6; topic 1 point 143.</p>",
+          "explanation": "The polar moment is the sum of two perpendicular diametral area moments: \\[J = 2 \\times \\dfrac{\\pi d^4}{64} = \\dfrac{\\pi d^4}{32}\\] This is an area property, not a mass moment of inertia.<p>Capsule 4th ed., p. 6; topic 1 point 143.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4789,7 +4789,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The arithmetic identity is sum BS minus sum FS equals final RL minus initial RL. Therefore final RL = 100.000 + 6.500 - 5.800 = 100.700 m; this checks reduction arithmetic, not every possible field error.<p>Capsule 4th ed., p. 4; topic 1 point 87.</p>",
+          "explanation": "The arithmetic check equates the difference of the summed backsights and foresights with the change in RL: \\[\\textstyle\\sum \\text{BS} - \\sum \\text{FS} = \\Delta\\text{RL}\\] Therefore the final RL, in metres, is \\[\\begin{aligned} &amp;100.000 + 6.500 - 5.800 \\\\ &amp;= 100.700 \\end{aligned}\\] This checks reduction arithmetic, not every possible field error.<p>Capsule 4th ed., p. 4; topic 1 point 87.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4941,7 +4941,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "For an elevation angle, horizontal distance is 50 cos 30 degrees = 43.30 m and vertical difference is 50 sin 30 degrees = 25.00 m. A zenith angle uses complementary trigonometric functions.<p>Capsule 4th ed., p. 4; topic 1 point 90.</p>",
+          "explanation": "For an elevation angle, \\[H = 50 \\cos 30^\\circ = 43.30\\ \\text{m}\\] \\[V = 50 \\sin 30^\\circ = 25.00\\ \\text{m}\\] A zenith angle uses complementary trigonometric functions.<p>Capsule 4th ed., p. 4; topic 1 point 90.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4979,7 +4979,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Instrument-axis RL is 100.0 + 1.5 = 101.5 m. Prism-centre RL is 104.5 m, and subtracting its 1.8 m height gives ground RL 102.7 m; the target-height correction is not added.<p>Capsule 4th ed., p. 4; topic 1 point 90.</p>",
+          "explanation": "Work up from the ground to the prism and back down to its ground point (RLs in metres): \\[\\begin{aligned} \\text{axis} &amp;= 100.0 + 1.5 = 101.5 \\\\ \\text{prism} &amp;= 101.5 + 3.0 = 104.5 \\\\ \\text{ground} &amp;= 104.5 - 1.8 = 102.7 \\end{aligned}\\] The target height is subtracted, not added.<p>Capsule 4th ed., p. 4; topic 1 point 90.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5017,7 +5017,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "At B the direction toward A is the back bearing 326 degrees 30 minutes. Its difference from BC is 258 degrees, so the smaller included angle is 360 - 258 = 102 degrees. Using AB directly gives the wrong 78-degree value.<p>Capsule 4th ed., p. 4; topic 1 point 91.</p>",
+          "explanation": "At B the direction toward A is the back bearing of AB: \\[146^\\circ 30' + 180^\\circ = 326^\\circ 30'\\] Its difference from the bearing of BC is \\[326^\\circ 30' - 68^\\circ 30' = 258^\\circ\\] so the smaller included angle is \\[360^\\circ - 258^\\circ = 102^\\circ\\] Using AB directly gives the wrong \\(78^\\circ\\) value.<p>Capsule 4th ed., p. 4; topic 1 point 91.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5055,7 +5055,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The vector lies southeast. Its acute angle from south is arctan(4/3) = 53.13 degrees, giving bearing 180 - 53.13 = 126.87 degrees. The ratio departure/latitude alone must be supplemented by signs and quadrant.<p>Source note: p4 n92: the source tangent relation is qualified by quadrant; atan2(departure, latitude) avoids the ambiguity.</p><p>Capsule 4th ed., p. 4; topic 1 point 92.</p>",
+          "explanation": "The vector points southeast. Its acute angle from south is \\[\\theta = \\tan^{-1}\\dfrac{4}{3} = 53.13^\\circ\\] so the whole-circle bearing is \\[180^\\circ - 53.13^\\circ = 126.87^\\circ\\] The ratio of departure to latitude alone must be supplemented by signs and quadrant.<p>Source note: p4 n92: the source tangent relation is qualified by quadrant; atan2(departure, latitude) avoids the ambiguity.</p><p>Capsule 4th ed., p. 4; topic 1 point 92.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5207,7 +5207,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Using east declination as positive, true bearing equals magnetic bearing plus declination. West declination is negative, so 32 degrees - 10 degrees 15 minutes = 21 degrees 45 minutes.<p>Capsule 4th ed., p. 4; topic 1 point 96.</p>",
+          "explanation": "Taking east declination as positive, true bearing equals magnetic bearing plus declination. West declination is negative, so \\[32^\\circ - 10^\\circ 15' = 21^\\circ 45'\\]<p>Capsule 4th ed., p. 4; topic 1 point 96.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5397,7 +5397,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The height of collimation is 100.0 + 1.4 = 101.4 m. Subtract the intermediate staff reading: 101.4 - 2.1 = 99.3 m. A larger staff reading corresponds to lower ground for the same sight line.<p>Capsule 4th ed., p. 4; topic 1 point 101.</p>",
+          "explanation": "The height of collimation is \\[\\text{HI} = 100.0 + 1.4 = 101.4\\ \\text{m}\\] Subtract the intermediate staff reading: \\[\\text{RL} = 101.4 - 2.1 = 99.3\\ \\text{m}\\] A larger staff reading corresponds to lower ground for the same sight line.<p>Capsule 4th ed., p. 4; topic 1 point 101.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5435,7 +5435,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Horizontal distance is Ks cos<sup>2</sup>(theta) + C cos(theta). Multiplying by tan(theta) gives Ks sin(2theta)/2 + C sin(theta). Ground elevation additionally requires the axis elevation and central staff reading.<p>Source note: p5 n102: full page text supplies denominator 2 omitted from the point extraction. The formula is a vertical component, not a complete ground RL.</p><p>Capsule 4th ed., p. 5; topic 1 point 102.</p>",
+          "explanation": "The horizontal distance is \\[D = Ks\\cos^2\\theta + C\\cos\\theta\\] Multiplying by \\(\\tan\\theta\\) gives the vertical component: \\[V = \\dfrac{Ks\\sin 2\\theta}{2} + C\\sin\\theta\\] Ground elevation additionally requires the axis elevation and the central staff reading.<p>Source note: p5 n102: full page text supplies denominator 2 omitted from the point extraction. The formula is a vertical component, not a complete ground RL.</p><p>Capsule 4th ed., p. 5; topic 1 point 102.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5473,7 +5473,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The vertical component is (100 x 2/2) sin 60 degrees = 86.60254 m. The staff-foot RL is 150.000 + 86.60254 - 1.500 = 235.10254 m, rounded to 235.103 m.<p>Capsule 4th ed., p. 5; topic 1 point 102.</p>",
+          "explanation": "The vertical component is \\[\\begin{aligned} V &amp;= \\dfrac{100 \\times 2}{2}\\sin 60^\\circ \\\\ &amp;= 86.60254\\ \\text{m} \\end{aligned}\\] The staff-foot RL is \\[\\begin{aligned} &amp;150.000 + 86.60254 - 1.500 \\\\ &amp;= 235.10254\\ \\text{m} \\end{aligned}\\] rounded to 235.103 m.<p>Capsule 4th ed., p. 5; topic 1 point 102.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5511,7 +5511,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Each correction is the negative of its total misclosure multiplied by side length/perimeter. The fraction is 120/600 = 0.20, giving -0.30 x 0.20 = -0.06 m and -(-0.20) x 0.20 = +0.04 m.<p>Source note: p5 n122: made the correction sign explicit; the correction opposes the corresponding misclosure.</p><p>Capsule 4th ed., p. 5; topic 1 point 122.</p>",
+          "explanation": "Each correction is the negative of its total misclosure multiplied by the side's share of the perimeter (corrections in metres): \\[\\dfrac{120}{600} = 0.20\\] \\[\\begin{aligned} c_{\\text{lat}} &amp;= -0.30 \\times 0.20 = -0.06 \\\\ c_{\\text{dep}} &amp;= +0.20 \\times 0.20 = +0.04 \\end{aligned}\\] The departure correction is positive because its misclosure is negative.<p>Source note: p5 n122: made the correction sign explicit; the correction opposes the corresponding misclosure.</p><p>Capsule 4th ed., p. 5; topic 1 point 122.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5587,7 +5587,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The right-triangle half-angle relation gives D = (2.00/2)/tan(1.00 degree/2) = 114.58865 m. Using the full angle instead of the half-angle halves the result approximately.<p>Source note: p5 n132: 150-200 m is a typical teaching range, not a hard physical limit. Precision depends on bar geometry and angular measurement; the authored geometry is explicit.</p><p>Capsule 4th ed., p. 5; topic 1 point 132.</p>",
+          "explanation": "Half the 2.00 m bar, 1.00 m, and half the subtended angle, \\(0.50^\\circ\\), form a right triangle, so the distance in metres is \\[D = \\dfrac{1.00}{\\tan 0.50^\\circ} = 114.58865\\] Using the full angle instead of the half-angle halves the result approximately.<p>Source note: p5 n132: 150-200 m is a typical teaching range, not a hard physical limit. Precision depends on bar geometry and angular measurement; the authored geometry is explicit.</p><p>Capsule 4th ed., p. 5; topic 1 point 132.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5625,7 +5625,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The shoelace sums are 1,400 and 0 m<sup>2</sup>; half their absolute difference is 700 m<sup>2</sup>. Coordinates avoid graphical measurement errors, but their accuracy still depends on field measurements, control and adjustment.<p>Source note: p6 n145: distinguished numerical coordinate-area computation from a claim that plotting can repair inaccurate survey data.</p><p>Capsule 4th ed., p. 6; topic 1 point 145.</p>",
+          "explanation": "The shoelace sums are 1,400 and 0 m<sup>2</sup>, so \\[A = \\dfrac{\\lvert 1{,}400 - 0 \\rvert}{2} = 700\\ \\text{m}^2\\] Coordinates avoid graphical measurement errors, but their accuracy still depends on field measurements, control and adjustment.<p>Source note: p6 n145: distinguished numerical coordinate-area computation from a claim that plotting can repair inaccurate survey data.</p><p>Capsule 4th ed., p. 6; topic 1 point 145.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5815,7 +5815,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "For successive plane-mirror reflections, deviation is twice the angle between the planes. Setting 2 theta = 90 degrees gives theta = 45 degrees; 90-degree mirror separation would not give the required deviation.<p>Capsule 4th ed., p. 6; topic 1 point 152.</p>",
+          "explanation": "For successive plane-mirror reflections, the deviation is twice the angle between the mirrors: \\[2\\theta = 90^\\circ \\;\\Rightarrow\\; \\theta = 45^\\circ\\] A 90-degree mirror separation would not give the required deviation.<p>Capsule 4th ed., p. 6; topic 1 point 152.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5967,7 +5967,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For a circular arc, displacement s = R theta. With s = 0.002 m and R = 100 m, theta = 0.00002 rad = 20 microradians. A larger radius gives a larger bubble movement for the same tilt.<p>Source note: p11 n16 belongs to surveying. The 100 m value is a stated example, not a universal bubble-tube specification; source supplies no instrument standard.</p><p>Capsule 4th ed., p. 11; topic 3 point 16.</p>",
+          "explanation": "For a circular arc \\(s = R\\theta\\). With \\(s = 0.002\\) m and \\(R = 100\\) m, \\[\\theta = \\dfrac{0.002}{100} = 0.00002\\ \\text{rad}\\] that is, 20 microradians. A larger radius gives a larger bubble movement for the same tilt.<p>Source note: p11 n16 belongs to surveying. The 100 m value is a stated example, not a universal bubble-tube specification; source supplies no instrument standard.</p><p>Capsule 4th ed., p. 11; topic 3 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6050,7 +6050,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The estimate is area multiplied by the adjusted rate: 180 x 32,000 = Rs. 5,760,000. Separate services, contingencies or site works would be added only if excluded from the supplied rate and required by the estimating basis.<p>Capsule 4th ed., p. 3; topic 1 point 43.</p>",
+          "explanation": "The estimate is the plinth area multiplied by the adjusted rate: \\[180 \\times 32{,}000 = \\text{Rs. } 5{,}760{,}000\\] Separate services, contingencies or site works would be added only if excluded from the supplied rate and required by the estimating basis.<p>Capsule 4th ed., p. 3; topic 1 point 43.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6088,7 +6088,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The assumed carpet area is 0.60 x 200 = 120 m<sup>2</sup>. Carpet and plinth areas have different inclusions; their ratio varies with walls, circulation and layout rather than following a universal residential percentage.<p>Source note: p3 n52: the source&#39;s 50-65% range is treated as a preliminary heuristic only, not a measurement rule.</p><p>Capsule 4th ed., p. 3; topic 1 point 52.</p>",
+          "explanation": "The assumed carpet area is \\[A = 0.60 \\times 200 = 120\\ \\text{m}^2\\] Carpet and plinth areas have different inclusions; their ratio varies with walls, circulation and layout rather than following a universal residential percentage.<p>Source note: p3 n52: the source&#39;s 50-65% range is treated as a preliminary heuristic only, not a measurement rule.</p><p>Capsule 4th ed., p. 3; topic 1 point 52.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6126,7 +6126,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The proportion sum is 5.5. Cement volume is 1.54/5.5 = 0.28 m<sup>3</sup>, mass is 403.2 kg, and 403.2/50 = 8.064 bags, or 8.06. Whole-bag procurement is a separate rounding decision.<p>Source note: p5 n103: eight bags is approximate and requires unstated bulk-volume assumptions; those assumptions and rounding are now explicit.</p><p>Capsule 4th ed., p. 5; topic 1 point 103.</p>",
+          "explanation": "The proportion sum is \\(1 + 1.5 + 3 = 5.5\\). The cement volume, mass and bag count are \\[\\begin{aligned} V_c &amp;= \\dfrac{1.54}{5.5} = 0.28\\ \\text{m}^3 \\\\ m_c &amp;= 0.28 \\times 1{,}440 = 403.2\\ \\text{kg} \\\\ n &amp;= \\dfrac{403.2}{50} = 8.064 \\end{aligned}\\] so the theoretical requirement is 8.06 bags. Whole-bag procurement is a separate rounding decision.<p>Source note: p5 n103: eight bags is approximate and requires unstated bulk-volume assumptions; those assumptions and rounding are now explicit.</p><p>Capsule 4th ed., p. 5; topic 1 point 103.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6164,7 +6164,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The stated allowance is 1% of reinforcement mass. Thus 600/100 x 1 = 6 kg. Actual usage varies with bar sizes, spacing, ties and wastage; this is an estimating allowance rather than a universal consumption law.<p>Capsule 4th ed., p. 5; topic 1 point 104.</p>",
+          "explanation": "The stated allowance is 1% of reinforcement mass. Thus \\[\\dfrac{600}{100} \\times 1 = 6\\ \\text{kg}\\] Actual usage varies with bar sizes, spacing, ties and wastage; this is an estimating allowance rather than a universal consumption law.<p>Capsule 4th ed., p. 5; topic 1 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6202,7 +6202,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "For this simple rectangular course, add one course width to the long-wall centre-line length and subtract one from the short wall: 6.0 + 0.30 = 6.30 m; 4.0 - 0.30 = 3.70 m. Recalculate when course widths change.<p>Capsule 4th ed., p. 5; topic 1 point 105.</p>",
+          "explanation": "For this simple rectangular course, add one course width to the long-wall centre-line length and subtract one from the short wall: \\[L_{\\text{long}} = 6.0 + 0.30 = 6.30\\ \\text{m}\\] \\[L_{\\text{short}} = 4.0 - 0.30 = 3.70\\ \\text{m}\\] Recalculate when course widths change.<p>Capsule 4th ed., p. 5; topic 1 point 105.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6240,7 +6240,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Required mason-days equal volume divided by output per mason-day: 10/1.25 = 8. This assumes the stated crew support and conditions; actual output depends on wall details, access, handling and workmanship.<p>Source note: p5 n106: the stated outturn is a problem assumption, not a verified universal labour norm.</p><p>Capsule 4th ed., p. 5; topic 1 point 106.</p>",
+          "explanation": "Required mason-days equal volume divided by output per mason-day: \\[\\dfrac{10}{1.25} = 8\\] This assumes the stated crew support and conditions; actual output depends on wall details, access, handling and workmanship.<p>Source note: p5 n106: the stated outturn is a problem assumption, not a verified universal labour norm.</p><p>Capsule 4th ed., p. 5; topic 1 point 106.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6316,7 +6316,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Total mass is 2 x 2,350 = 4,700 kg. Cement plus water is 840 kg. With water = 0.40 times cement, cement = 840/1.40 = 600 kg, so 600/50 = 12 bags; water is 240 kg.<p>Capsule 4th ed., p. 5; topic 1 point 108.</p>",
+          "explanation": "Total mass is \\[2 \\times 2{,}350 = 4{,}700\\ \\text{kg}\\] so cement plus water is \\(4{,}700 - 3{,}860 = 840\\) kg. With water equal to 0.40 times cement, \\[c = \\dfrac{840}{1.40} = 600\\ \\text{kg}\\] so \\(\\dfrac{600}{50} = 12\\) bags; water is 240 kg.<p>Capsule 4th ed., p. 5; topic 1 point 108.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6392,7 +6392,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Cement mass is 2.00 x 1,440 = 2,880 kg. Water mass is 0.80 x 2,880 = 2,304 kg, giving 2,304 L. The ratio is by mass; loose bulk density must not be confused with cement particle density.<p>Source note: p5 n110: supplied the missing loose bulk density needed to justify 2,304 litres.</p><p>Capsule 4th ed., p. 5; topic 1 point 110.</p>",
+          "explanation": "Cement and water masses, in kilograms, are \\[\\begin{aligned} m_c &amp;= 2.00 \\times 1{,}440 = 2{,}880 \\\\ m_w &amp;= 0.80 \\times 2{,}880 = 2{,}304 \\end{aligned}\\] giving 2,304 L. The ratio is by mass; loose bulk density must not be confused with cement particle density.<p>Source note: p5 n110: supplied the missing loose bulk density needed to justify 2,304 litres.</p><p>Capsule 4th ed., p. 5; topic 1 point 110.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6430,7 +6430,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Crew-days = 20/5.0 = 4. The assumed output includes appropriate mixing, transport and labour support; it is not an intrinsic property of the 1:2:4 mix or proof that one unaided mason achieves it.<p>Source note: p5 n111: clarified the incomplete labour unit and treated 5 m3/day as a stated scheduling assumption.</p><p>Capsule 4th ed., p. 5; topic 1 point 111.</p>",
+          "explanation": "\\[\\text{crew-days} = \\dfrac{20}{5.0} = 4\\] The assumed output includes appropriate mixing, transport and labour support; it is not an intrinsic property of the 1:2:4 mix or proof that one unaided mason achieves it.<p>Source note: p5 n111: clarified the incomplete labour unit and treated 5 m3/day as a stated scheduling assumption.</p><p>Capsule 4th ed., p. 5; topic 1 point 111.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6468,7 +6468,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Bulk volume is mass divided by bulk density: 50/1,440 = 0.034722 m<sup>3</sup>. Using particle density instead estimates solid-grain volume, not the loose volume including spaces between particles.<p>Source note: p5 n112: the 0.0347 value is conditional on loose bulk density, not an invariant bag dimension.</p><p>Capsule 4th ed., p. 5; topic 1 point 112.</p>",
+          "explanation": "Bulk volume is mass divided by bulk density: \\[V = \\dfrac{50}{1{,}440} = 0.034722\\ \\text{m}^3\\] Using particle density instead estimates solid-grain volume, not the loose volume including spaces between particles.<p>Source note: p5 n112: the 0.0347 value is conditional on loose bulk density, not an invariant bag dimension.</p><p>Capsule 4th ed., p. 5; topic 1 point 112.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6506,7 +6506,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The overrun is 100(1,080,000-1,000,000)/1,000,000 = 8%, exceeding the stipulated 5% trigger. Actual approval rules depend on the authority, contract and applicable procedures.<p>Source note: p5 n113: the source does not establish a current Nepal 5% rule; this threshold is explicitly supplied for the exercise.</p><p>Capsule 4th ed., p. 5; topic 1 point 113.</p>",
+          "explanation": "The forecast of Rs. 1,080,000 exceeds the sanctioned Rs. 1,000,000 by Rs. 80,000, so the overrun is \\[\\dfrac{80{,}000}{1{,}000{,}000} \\times 100 = 8\\%\\] This exceeds the stipulated 5% trigger for a revised estimate. Actual approval rules depend on the authority, contract and applicable procedures.<p>Source note: p5 n113: the source does not establish a current Nepal 5% rule; this threshold is explicitly supplied for the exercise.</p><p>Capsule 4th ed., p. 5; topic 1 point 113.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6544,7 +6544,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Convert each dimension to metres and multiply: 0.240 x 0.115 x 0.057 = 0.0015732 m<sup>3</sup>. This is the actual unit volume; masonry estimating also needs the specified joints and allowances.<p>Source note: p5 n115: the dimensions are stipulated, not certified as the universal NBC brick size. The source lacks an NBC edition and clause; parent should verify that attribution before code-based reuse.</p><p>Capsule 4th ed., p. 5; topic 1 point 115.</p>",
+          "explanation": "Convert each dimension to metres and multiply: \\[\\begin{aligned} V &amp;= 0.240 \\times 0.115 \\times 0.057 \\\\ &amp;= 0.0015732\\ \\text{m}^3 \\end{aligned}\\] This is the actual unit volume; masonry estimating also needs the specified joints and allowances.<p>Source note: p5 n115: the dimensions are stipulated, not certified as the universal NBC brick size. The source lacks an NBC edition and clause; parent should verify that attribution before code-based reuse.</p><p>Capsule 4th ed., p. 5; topic 1 point 115.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6582,7 +6582,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The prescribed base is unskilled labour only: 0.03 x 20,000 = Rs. 600. Applying 3% to skilled labour or total labour uses the wrong base; real schedules may prescribe different allowances or direct plant costing.<p>Source note: p5 n116: the 3% allowance is conditional on the supplied schedule, not a verified current general rate-analysis rule.</p><p>Capsule 4th ed., p. 5; topic 1 point 116.</p>",
+          "explanation": "The prescribed base is unskilled labour only: \\[0.03 \\times 20{,}000 = \\text{Rs. } 600\\] Applying 3% to skilled labour or total labour uses the wrong base; real schedules may prescribe different allowances or direct plant costing.<p>Source note: p5 n116: the 3% allowance is conditional on the supplied schedule, not a verified current general rate-analysis rule.</p><p>Capsule 4th ed., p. 5; topic 1 point 116.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6658,7 +6658,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The difference is Rs. 0.4 million. Dividing by actual cost gives 100 x 0.4/5.0 = 8%; dividing by estimated cost would answer a different question. An accuracy target is not a legal cost ceiling.<p>Source note: p5 n118: &#39;estimated cost should not be greater than 10% of actual cost&#39; is defective wording. No universal accuracy tolerance is asserted; percentage deviation is defined explicitly.</p><p>Capsule 4th ed., p. 5; topic 1 point 118.</p>",
+          "explanation": "The difference is Rs. 0.4 million. Dividing by actual cost gives \\[\\dfrac{0.4}{5.0} \\times 100 = 8\\%\\] Dividing by estimated cost would answer a different question. An accuracy target is not a legal cost ceiling.<p>Source note: p5 n118: &#39;estimated cost should not be greater than 10% of actual cost&#39; is defective wording. No universal accuracy tolerance is asserted; percentage deviation is defined explicitly.</p><p>Capsule 4th ed., p. 5; topic 1 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6772,7 +6772,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Dry loose ingredient volume is estimated as 1.54 x 2.0 = 3.08 m<sup>3</sup>. The additional volume represents an estimating allowance for void filling and consolidation, not an exact physical constant or a substitute for measured batch yield.<p>Source note: Page 20 point 25&#39;s 50-55% increase is treated as an approximate estimating convention, with the chosen factor stated explicitly.</p><p>Capsule 4th ed., p. 20; topic 5 point 25.</p>",
+          "explanation": "Dry loose ingredient volume is estimated as \\[1.54 \\times 2.0 = 3.08\\ \\text{m}^3\\] The additional volume represents an estimating allowance for void filling and consolidation, not an exact physical constant or a substitute for measured batch yield.<p>Source note: Page 20 point 25&#39;s 50-55% increase is treated as an approximate estimating convention, with the chosen factor stated explicitly.</p><p>Capsule 4th ed., p. 20; topic 5 point 25.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6810,7 +6810,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "One kilogram per metric quintal of 100 kg corresponds to 1% by mass. Applying the stated allowance gives 0.01 x 750 = 7.5 kg. Actual use depends on bar size, tie pattern and wastage, so this is an estimating assumption rather than a structural requirement.<p>Source note: Page 20 point 44 is treated as an explicitly adopted allowance, not an exact quantity for every reinforcement cage.</p><p>Capsule 4th ed., p. 20; topic 5 point 44.</p>",
+          "explanation": "One kilogram per metric quintal of 100 kg corresponds to 1% by mass. Applying the stated allowance gives \\[0.01 \\times 750 = 7.5\\ \\text{kg}\\] Actual use depends on bar size, tie pattern and wastage, so this is an estimating assumption rather than a structural requirement.<p>Source note: Page 20 point 44 is treated as an explicitly adopted allowance, not an exact quantity for every reinforcement cage.</p><p>Capsule 4th ed., p. 20; topic 5 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6886,7 +6886,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The increase is (21.2-20)/20 x 100 = 6%, exceeding the explicitly supplied 5% threshold. A revised estimate seeks appropriate approval; it does not automatically authorise a contract variation or extra expenditure.<p>Source note: p39 n56: 0.05 interpreted as 5%, but not asserted as universal current Nepal law; the governing agency rule is an explicit assumption.</p><p>Capsule 4th ed., p. 39; topic 10 point 56.</p>",
+          "explanation": "The increase is \\[\\dfrac{21.2 - 20}{20} \\times 100 = 6\\%\\] exceeding the explicitly supplied 5% threshold. A revised estimate seeks appropriate approval; it does not automatically authorise a contract variation or extra expenditure.<p>Source note: p39 n56: 0.05 interpreted as 5%, but not asserted as universal current Nepal law; the governing agency rule is an explicit assumption.</p><p>Capsule 4th ed., p. 39; topic 10 point 56.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -7000,7 +7000,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The stated allowance is 0.04 x 25 million = 1 million. Its base must be defined and double counting avoided; 4% is an assumption for this estimate, not a universal office-management percentage.<p>Source note: p39 n65: fixed percentage retained only as a supplied estimating assumption.</p><p>Capsule 4th ed., p. 39; topic 10 point 65.</p>",
+          "explanation": "The stated allowance is \\[0.04 \\times 25\\ \\text{million} = 1\\ \\text{million}\\] Its base must be defined and double counting avoided; 4% is an assumption for this estimate, not a universal office-management percentage.<p>Source note: p39 n65: fixed percentage retained only as a supplied estimating assumption.</p><p>Capsule 4th ed., p. 39; topic 10 point 65.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -7038,7 +7038,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Apply the percentage to the stated base only: 0.03 x 4000 = 120. Applying 3% to all labour gives 300, a different basis. This allowance does not automatically cover separately priced major plant or equipment.<p>Source note: p40 n115: 3% of unskilled labour is a supplied norm, not universal Nepal rate-analysis law; small tools distinguished from all equipment.</p><p>Capsule 4th ed., p. 40; topic 10 point 115.</p>",
+          "explanation": "Apply the percentage to the stated base only: \\[0.03 \\times 4000 = 120\\] Applying 3% to all labour gives 300, a different basis. This allowance does not automatically cover separately priced major plant or equipment.<p>Source note: p40 n115: 3% of unskilled labour is a supplied norm, not universal Nepal rate-analysis law; small tools distinguished from all equipment.</p><p>Capsule 4th ed., p. 40; topic 10 point 115.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,

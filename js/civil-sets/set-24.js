@@ -123,7 +123,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "m^3" }
                     ],
                     answer: "c",
-                    explanation: "Moment of Inertia (I) is the second moment of mass or area. For an area, it is calculated as ∫ y² dA. Since area has units m² and y² has units m², the product has units m⁴."
+                    explanation: "The moment of inertia of an area is its second moment, \\(I = \\displaystyle\\int y^2\\,dA\\). Since area has units m<sup>2</sup> and \\(y^2\\) has units m<sup>2</sup>, the product has units m<sup>4</sup>."
                 },
                 {
                     id: "cm24q008",
@@ -136,7 +136,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "Momentum" }
                     ],
                     answer: "d",
-                    explanation: "In physics, linear momentum (or simply momentum) of a moving body is defined as the product of its mass and its velocity (p = m*v)."
+                    explanation: "In physics, the linear momentum of a moving body is the product of its mass and its velocity: \\[p = mv\\]"
                 },
                 {
                     id: "cm24q009",
@@ -149,7 +149,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "None" }
                     ],
                     answer: "a",
-                    explanation: "The radius of gyration (k) is a measure of the distribution of mass/area around an axis. It is defined as the distance from the axis at which the entire mass/area could be concentrated without changing its moment of inertia about that axis (I = M*k² or I = A*k²)."
+                    explanation: "The radius of gyration \\(k\\) measures how mass or area is distributed about an axis. It is the distance from the axis at which the entire mass or area could be concentrated without changing its moment of inertia about that axis: \\[I = Mk^2 \\quad \\text{or} \\quad I = Ak^2\\]"
                 },
                 {
                     id: "cm24q010",
@@ -162,7 +162,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "πd⁴/32" }
                     ],
                     answer: "b",
-                    explanation: "The moment of inertia of a circular area about its diameter is a standard formula. For a circle of diameter d, the second moment of area about a diameter is I = πd⁴/64."
+                    explanation: "For a circle of diameter \\(d\\), the second moment of area about a diameter is the standard result \\[I = \\dfrac{\\pi d^4}{64}\\]"
                 },
                 {
                     id: "cm24q011",
@@ -188,7 +188,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "None of the above" }
                     ],
                     answer: "b",
-                    explanation: "Given: Height of large rectangle ABCD = 10 cm → centroid at 5 cm from base Height of small rectangle PQRS = 2 cm → centroid at (10 + 1) = 11 cm from base Weight of each section = 50 N Total weight = 100 N Taking moments about base SR: d = [(50 × 5) + (50 × 11)] / 100 = (250 + 550) / 100 = 800 / 100 = 8 cm Final Answer: Centre of gravity = 8 cm above base SR"
+                    explanation: "The large rectangle ABCD is 10 cm high, with its centroid 5 cm above the base. The small rectangle PQRS is 2 cm high, with its centroid at \\(10 + 1 = 11\\) cm. Each weighs 50 N, 100 N in total. Taking moments about the base SR: \\[d = \\dfrac{50 \\times 5 + 50 \\times 11}{100}\\] \\[= \\dfrac{250 + 550}{100} = \\dfrac{800}{100} = 8\\] The centre of gravity is 8 cm above the base SR."
                 },
                 {
                     id: "cm24q013",
@@ -285,7 +285,7 @@ const CIVIL_MODEL_24 = {
                         { key: "c", text: "Zero" }
                     ],
                     answer: "c",
-                    explanation: "For a shaft under pure torsion, only shear stresses are developed. The maximum normal stress on any plane is zero at 45 degrees to the axis, but the principal stresses are equal to the shear stress. However, the question asks for the maximum normal stress induced, which is not zero; it is equal to the maximum shear stress. But the options are confusing. the option \"3T/πd³\" is the formula for maximum shear stress (16T/πd³ is correct, 3T/πd³ is wrong). Given the options, (a) Zero is incorrect, (b) is a wrong formula, so (c) None is the best choice, implying the correct answer is not listed."
+                    explanation: "Under pure torsion only shear stresses act on transverse and longitudinal planes, so the normal stress on those planes is zero. On planes at \\(45^\\circ\\) to the axis, however, the principal stresses equal the maximum shear stress, \\[\\tau_{max} = \\dfrac{16T}{\\pi d^3}\\] Option (a) is a wrong formula for it. Strictly the maximum normal stress is not listed; the key's 'Zero' refers to the normal stress on the cross-section itself."
                 },
                 {
                     id: "cm24q020",
@@ -372,7 +372,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "5" }
                     ],
                     answer: "a",
-                    explanation: "Minimum pitch = 2.5d = 2.5*25 = 62.5 mm. For a width of 200mm, the number of bolts (n) must satisfy: (n-1)*pitch + end distances &lt;= width. Assuming end distances of 1.5d = 37.5mm each, total space for pitches = 200 - 2*37.5 = 125 mm. n-1 = 125 / 62.5 = 2, so n=3 bolts."
+                    explanation: "The minimum pitch is \\(2.5d\\), or 62.5 mm. With end distances of \\(1.5d = 37.5\\) mm each, the space left for pitches is \\[200 - 2 \\times 37.5 = 125\\ \\text{mm}\\] so \\(n - 1 = \\dfrac{125}{62.5} = 2\\) and \\(n = 3\\) bolts."
                 },
                 {
                     id: "cm24q026",
@@ -384,7 +384,7 @@ const CIVIL_MODEL_24 = {
                         { key: "c", text: "40 kN" }
                     ],
                     answer: "b",
-                    explanation: "For a bolt in single shear, shear strength = (fub / √3) * (πd²/4) / γmb. fub for grade 4.6 is 400 MPa. d=16mm. γmb=1.25. Vdsb = (400/√3) * (π*16²/4) / 1.25 = (230.94) * (201.06) / 1.25 = 46439 N / 1.25 = 37151 N ≈ 37.15 kN. This is not an option. For bearing type connection, Vnsb = fub * (√3 * γmb) * (πd²/4) might be used. Or, using an old code: Strength = (400/√3)*(π*16²/4)/1.25 ≈ 37 kN. Option 29 kN is closest for a different grade or assumption. Based on options, 29 kN is the intended answer."
+                    explanation: "For a bolt in single shear, with \\(f_{ub} = 400\\) MPa, \\(d = 16\\) mm and \\(\\gamma_{mb} = 1.25\\), \\[V_{dsb} = \\dfrac{f_{ub}}{\\sqrt{3}} \\times \\dfrac{\\pi d^2}{4} \\times \\dfrac{1}{\\gamma_{mb}}\\] \\[\\begin{aligned} &amp;= \\dfrac{230.94 \\times 201.06}{1.25} \\\\ &amp;\\approx 37{,}151\\ \\text{N} \\end{aligned}\\] or about 37.15 kN, which is not an option. The key's 29 kN must come from a different grade or assumption; it is kept as the intended answer."
                 },
                 {
                     id: "cm24q027",
@@ -397,7 +397,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "35%" }
                     ],
                     answer: "c",
-                    explanation: "Efficiency of a riveted/bolted joint is defined as (Strength of the joint / Strength of the solid plate) * 100%. Here, joint strength is governed by the bolt (60 kN). Plate strength is 150 kN. Efficiency = (60/150)*100 = 40%."
+                    explanation: "The efficiency of a riveted or bolted joint is the joint strength divided by the solid plate strength. Here the bolt governs (60 kN) and the plate gives 150 kN: \\[\\eta = \\dfrac{60}{150} \\times 100 = 40\\%\\]"
                 },
                 {
                     id: "cm24q028",
@@ -522,7 +522,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "increases" }
                     ],
                     answer: "d",
-                    explanation: "K_a = (1 - sinφ)/(1 + sinφ). A decrease in φ leads to a decrease in the denominator and an increase in the numerator, thus K_a increases."
+                    explanation: "Since \\[K_a = \\dfrac{1 - \\sin\\phi}{1 + \\sin\\phi}\\] a decrease in \\(\\phi\\) lowers the denominator and raises the numerator, so \\(K_a\\) increases."
                 },
                 {
                     id: "cm24q037",
@@ -535,7 +535,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "q * γ" }
                     ],
                     answer: "a",
-                    explanation: "A surcharge load (q) applied at the top of the backfill is equivalent to an additional height of soil, calculated as Z_e = q / γ."
+                    explanation: "A surcharge \\(q\\) on the backfill is equivalent to an extra height of soil: \\[Z_e = \\dfrac{q}{\\gamma}\\]"
                 },
                 {
                     id: "cm24q038",
@@ -678,7 +678,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "3.254" }
                     ],
                     answer: "d",
-                    explanation: "Kp = (1+sinφ)/(1-sinφ). For φ=32°, sin(32°)=0.5299. Kp=(1+0.5299)/(1-0.5299)=1.5299/0.4701=3.254. Water level does not change Kp, as it is a property of the soil."
+                    explanation: "For \\(\\phi = 32^\\circ\\), \\(\\sin 32^\\circ = 0.5299\\), so \\[\\begin{aligned} K_p &amp;= \\dfrac{1 + 0.5299}{1 - 0.5299} = \\dfrac{1.5299}{0.4701} \\\\ &amp;= 3.254 \\end{aligned}\\] The water level does not change \\(K_p\\), which is a property of the soil."
                 }
             ]
         },
@@ -817,7 +817,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "466.6 N" }
                     ],
                     answer: "b",
-                    explanation: "\\(\\[ \\begin{aligned} F_{\\text{plunger}} &= F_{\\text{ram}} \\times \\left(\\frac{d_{\\text{plunger}}}{D_{\\text{ram}}}\\right)^2 \\\\ &= 35\\,000\\ \\text{N} \\times \\left(\\frac{2\\ \\text{cm}}{30\\ \\text{cm}}\\right)^2 \\\\ &= 35\\,000 \\times \\frac{1}{225} \\\\ &\\approx 155.56\\ \\text{N} \\end{aligned} \\]\\)"
+                    explanation: "By Pascal's law the plunger force is the ram load times the area ratio: \\[F_p = F_r\\left(\\dfrac{d_p}{D_r}\\right)^2\\] \\[\\begin{aligned} F_p &amp;= 35{,}000 \\times \\left(\\dfrac{2}{30}\\right)^2 \\\\ &amp;= \\dfrac{35{,}000}{225} \\\\ &amp;\\approx 155.56\\ \\text{N} \\end{aligned}\\]"
                 },
                 {
                     id: "cm24q059",
@@ -830,7 +830,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "8.74 m" }
                     ],
                     answer: "c",
-                    explanation: "Hydrostatic pressure P = ρgh. Specific gravity = 0.85, so ρ = 850 kg/m³. P = 45 N/cm² = 450,000 N/m². h = P / (ρg) = 450,000 / (850 * 9.81) ≈ 53.98 m. This does not match the options. Recalculate: 45 N/cm² = 450,000 Pa. h = 450000 / (0.85*1000 * 9.81) ≈ 53.98 m. There might be an error in the question or options. Alternatively, if P=4.5 N/cm²=45,000 Pa, h=45000/(850*9.81)≈5.4m, close to 5.83m. The intended answer is likely A, 5.83m, assuming a possible misinterpretation of the pressure unit."
+                    explanation: "With \\(\\rho = 850\\) kg per m<sup>3</sup> and 45 N per cm<sup>2</sup>, or 450,000 Pa, \\[h = \\dfrac{P}{\\rho g} = \\dfrac{450{,}000}{850 \\times 9.81}\\] \\[\\approx 53.98\\ \\text{m}\\] which matches no option. Reading the pressure as 4.5 N per cm<sup>2</sup> (45,000 Pa) gives about 5.4 m, close to 5.83 m, so the intended answer is 5.83 m, assuming a misprinted pressure unit."
                 },
                 {
                     id: "cm24q060",
@@ -843,7 +843,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "5.027 N/cm²" }
                     ],
                     answer: "d",
-                    explanation: "Pressure at bottom = (ρ_oil * g * h_oil) + (ρ_water * g * h_water). ρ_oil = 650 kg/m³, h_oil=2.5m; ρ_water=1000 kg/m³, h_water=3.5m. P = (650*9.81*2.5) + (1000*9.81*3.5) = 15941.25 + 34335 = 50276.25 Pa = 5.0276 N/cm² (since 1 N/cm² = 10,000 Pa)."
+                    explanation: "The bottom pressure is the sum of the oil and water columns: \\[P = \\rho_og h_o + \\rho_wg h_w\\] \\[\\begin{aligned} &amp;= 650 \\times 9.81 \\times 2.5 \\\\ &amp;\\quad + 1000 \\times 9.81 \\times 3.5 \\\\ &amp;= 15{,}941.25 + 34{,}335 \\\\ &amp;= 50{,}276.25\\ \\text{Pa} \\end{aligned}\\] which is 5.0276 N per cm<sup>2</sup>, since 1 N per cm<sup>2</sup> is 10,000 Pa."
                 }
             ]
         },
@@ -1399,7 +1399,7 @@ const CIVIL_MODEL_24 = {
                         { key: "d", text: "0.5 mg/L" }
                     ],
                     answer: "d",
-                    explanation: "Chlorine dose (mg/L) = (Chlorine used in kg/day * 10⁶) / (Flow in m³/day * 1000) = (15 * 10⁶) / (30000 * 1000) = 0.5 mg/L."
+                    explanation: "The chlorine dose is the chlorine mass divided by the water volume: \\[\\dfrac{15 \\times 10^6\\ \\text{mg}}{30{,}000 \\times 1000\\ \\text{L}} = 0.5\\ \\text{mg/L}\\]"
                 }
             ]
         }

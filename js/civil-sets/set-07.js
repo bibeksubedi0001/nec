@@ -97,7 +97,7 @@ const CIVIL_MODEL_7 = {
                         { key: "d", text: "Z = π(D<sup>4</sup> - d<sup>2</sup>)/32D" }
                     ],
                     answer: "d",
-                    explanation: "Standard Section Modulus (for bending) \\(Z = \\frac{\\pi(D^4 - d^4)}{32D}\\) Polar Section Modulus (for torsion) \\(Z_p = \\frac{\\pi(D^4 - d^4)}{16D}\\)"
+                    explanation: "The standard section modulus (for bending) is \\[Z = \\dfrac{\\pi(D^4 - d^4)}{32D}\\] and the polar section modulus (for torsion) is \\[Z_p = \\dfrac{\\pi(D^4 - d^4)}{16D}\\]"
                 },
                 {
                     id: "cm7q006",
@@ -175,7 +175,7 @@ const CIVIL_MODEL_7 = {
                         { key: "d", text: "1.5α³" }
                     ],
                     answer: "b",
-                    explanation: "The slope correction formula for a length L is C = L - Lcosα ≈ L(1 - cosα). For small angles, cosα ≈ 1 - α²/2 (α in radians). Converting degrees to radians (α_rad = α° * π/180 ≈ α/57.3), the approximation leads to a standard formula often given as Correction = L(α²/2) with α in radians. For a 100 link chain and α in degrees, a common approximation is Correction (in links) = 1.5α²/100. Verified"
+                    explanation: "The slope correction for a length \\(L\\) is \\[\\begin{aligned} C &amp;= L - L\\cos\\alpha \\\\ &amp;= L(1 - \\cos\\alpha) \\end{aligned}\\] For small angles, \\(\\cos\\alpha \\approx 1 - \\dfrac{\\alpha^2}{2}\\) with \\(\\alpha\\) in radians, so \\(C \\approx \\dfrac{L\\alpha^2}{2}\\). Converting degrees to radians (\\(\\alpha_{rad} = \\dfrac{\\alpha\\pi}{180} \\approx \\dfrac{\\alpha}{57.3}\\)) for a 100-link chain gives the common approximation \\[C \\approx \\dfrac{1.5\\alpha^2}{100}\\ \\text{links}\\] with \\(\\alpha\\) in degrees."
                 },
                 {
                     id: "cm7q012",
@@ -201,7 +201,7 @@ const CIVIL_MODEL_7 = {
                         { key: "d", text: "Provides a check on the reduction of intermediate levels" }
                     ],
                     answer: "d",
-                    explanation: "The rise and fall method involves calculating the difference in level between consecutive points for each staff reading. The arithmetic check (ΣBS - ΣFS = ΣRise - ΣFall = Last R.L. - First R.L.) provides a complete check on all the intermediate reduced levels (R.L.s), which the Height of Instrument method does not do for intermediates."
+                    explanation: "The rise and fall method works out the difference in level between consecutive points for each staff reading. Its arithmetic check, \\[\\Sigma\\text{BS} - \\Sigma\\text{FS} = \\Sigma\\text{Rise} - \\Sigma\\text{Fall}\\] which also equals the last RL minus the first RL, covers all the intermediate reduced levels, which the height of instrument method does not do for intermediates."
                 }
             ]
         },
@@ -1048,7 +1048,7 @@ const CIVIL_MODEL_7 = {
                         { key: "d", text: "28 m" }
                     ],
                     answer: "a",
-                    explanation: "\\(L = \\frac{Q}{C \\cdot H^{3/2}}\\) \\(L = \\frac{90}{1.7 \\cdot (1.6)^{3/2}}\\) \\(L = \\frac{90}{3.44056} \\approx 26.158 \\text{ m}\\)"
+                    explanation: "The crest length is \\[\\begin{aligned} L &amp;= \\dfrac{Q}{CH^{3{/}2}} \\\\ &amp;= \\dfrac{90}{1.7 \\times 1.6^{3{/}2}} \\\\ &amp;= \\dfrac{90}{3.44056} \\approx 26.158\\ \\text{m} \\end{aligned}\\]"
                 },
                 {
                     id: "cm7q075",

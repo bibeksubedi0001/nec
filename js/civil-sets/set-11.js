@@ -84,7 +84,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "All are equal" }
                     ],
                     answer: "c",
-                    explanation: "The grade number (e.g., 30/40) indicates the penetration value range. A lower penetration value means the bitumen is harder. Therefore, 30/40 is harder than 60/70 or 80/100."
+                    explanation: "The grade numbers (for example 30-40) give the penetration value range. A lower penetration value means the bitumen is harder, so grade 30-40 is harder than 60-70 or 80-100."
                 },
                 {
                     id: "cm11q005",
@@ -110,7 +110,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "NS 84/2035" }
                     ],
                     answer: "b",
-                    explanation: "The Nepal Bureau of Standards and Metrology catalogue lists NS 1:2035 for Brick and NS 49:2041 for Ordinary Portland Cement. Therefore NS 1/2035 is the correct listed brick specification. Product acceptance values require the applicable standard text, not the cement-standard number."
+                    explanation: "The Nepal Bureau of Standards and Metrology catalogue lists NS 1:2035 for brick and NS 49:2041 for Ordinary Portland Cement. Therefore NS 1:2035 is the correct listed brick specification. Product acceptance values require the applicable standard text, not the cement-standard number."
                 },
                 {
                     id: "cm11q007",
@@ -175,7 +175,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "40 N/mm² per hour" }
                     ],
                     answer: "b",
-                    explanation: "Standard test methods (e.g., IS 3495) specify that the load should be applied uniformly at a rate of 14 N/mm² (140 kg/cm²) per minute until failure occurs."
+                    explanation: "Standard test methods (for example IS 3495) specify that the load should be applied uniformly at a rate of 14 N per mm<sup>2</sup> (140 kg per cm<sup>2</sup>) per minute until failure occurs."
                 },
                 {
                     id: "cm11q012",
@@ -262,7 +262,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "WL²/2EI and WL³/3EI" }
                     ],
                     answer: "d",
-                    explanation: "For a cantilever beam with a point load W at its free end, the slope (θ) at the free end is given by WL²/(2EI) and the deflection (Δ) is given by WL³/(3EI). This is derived from standard beam deflection formulas."
+                    explanation: "For a cantilever with a point load \\(W\\) at its free end, the standard results for the free-end slope and deflection are \\[\\theta = \\dfrac{WL^2}{2EI}, \\qquad \\Delta = \\dfrac{WL^3}{3EI}\\]"
                 },
                 {
                     id: "cm11q018",
@@ -275,7 +275,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "5WL³/384EI" }
                     ],
                     answer: "a",
-                    explanation: "The maximum deflection for a simply supported beam with a central point load W is given by the formula Δ_max = WL³/(48EI), where L is the span length, E is the modulus of elasticity, and I is the moment of inertia."
+                    explanation: "The maximum deflection of a simply supported beam with a central point load \\(W\\) is \\[\\Delta_{max} = \\dfrac{WL^3}{48EI}\\] where \\(L\\) is the span, \\(E\\) the modulus of elasticity and \\(I\\) the moment of inertia."
                 },
                 {
                     id: "cm11q019",
@@ -288,7 +288,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "ML/2EI" }
                     ],
                     answer: "b",
-                    explanation: "For a simply supported beam subjected to equal end couples M, the maximum deflection occurs at the mid-span and is calculated by the formula Δ_max = ML²/(8EI). This is a standard result from beam theory."
+                    explanation: "For a simply supported beam with equal end couples \\(M\\), the maximum deflection occurs at mid-span: \\[\\Delta_{max} = \\dfrac{ML^2}{8EI}\\] This is a standard result from beam theory."
                 },
                 {
                     id: "cm11q020",
@@ -440,7 +440,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "375 mm" }
                     ],
                     answer: "a",
-                    explanation: "As per IS 456:2000, Clause 26.3.3, the maximum spacing for distribution bars is 5 times the effective depth or 450 mm, whichever is smaller. For a 5-inch (125 mm) slab, effective depth is about 100 mm. 5 * 100 = 500 mm, but limited to 450 mm. So, 450 mm is the maximum."
+                    explanation: "IS 456:2000, clause 26.3.3, limits the spacing of distribution bars to five times the effective depth or 450 mm, whichever is smaller. A 5-inch (125 mm) slab has an effective depth of about 100 mm, so \\[5 \\times 100 = 500\\ \\text{mm}\\] which is capped at 450 mm."
                 },
                 {
                     id: "cm11q031",
@@ -453,7 +453,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "20 mm" }
                     ],
                     answer: "b",
-                    explanation: "As per general practice and IS 456 guidelines, the diameter of bars in a slab should not exceed one-eighth of the total thickness. For a 125 mm thick slab, maximum bar diameter = 125/8 = 15.625 mm. Therefore, 16 mm bars are the maximum that can be used."
+                    explanation: "By general practice and IS 456, the bar diameter in a slab should not exceed one-eighth of the total thickness. For a 125 mm slab, \\[\\dfrac{125}{8} = 15.625\\ \\text{mm}\\] so 16 mm bars are the maximum that can be used."
                 },
                 {
                     id: "cm11q032",
@@ -501,7 +501,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "GP" }
                     ],
                     answer: "a",
-                    explanation: "64% passing 4.75mm means it is a sand (S). Cu=7.5 (&gt;6) and Cc=2.7 (between 1-3) are good gradation criteria. The low PI (2.5 &lt; 7) indicates it is non-plastic. Therefore, the soil is classified as Well-graded Sand (SW)."
+                    explanation: "With 64% passing 4.75 mm the soil is a sand (S). \\(C_u = 7.5 \\gt 6\\) and \\(C_c = 2.7\\) (between 1 and 3) satisfy the gradation criteria, and the low plasticity index (\\(2.5 \\lt 7\\)) shows it is non-plastic. The soil is therefore well-graded sand (SW)."
                 },
                 {
                     id: "cm11q035",
@@ -579,7 +579,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "None of the above" }
                     ],
                     answer: "a",
-                    explanation: "The Shrinkage Index (I_s) is defined as the difference between the Plastic Limit and the Shrinkage Limit: I_s = W_p - W_s."
+                    explanation: "The shrinkage index is the difference between the plastic limit and the shrinkage limit: \\[I_s = W_P - W_S\\]"
                 },
                 {
                     id: "cm11q041",
@@ -592,7 +592,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "(W - W_p) / I_p" }
                     ],
                     answer: "d",
-                    explanation: "The Liquidity Index (I_L) or Water-Plasticity Ratio is defined as (Natural Water Content - Plastic Limit) / Plasticity Index: I_L = (W - W_p) / I_p."
+                    explanation: "The liquidity index (water-plasticity ratio) is the natural water content less the plastic limit, divided by the plasticity index: \\[I_L = \\dfrac{W - W_P}{I_p}\\]"
                 },
                 {
                     id: "cm11q042",
@@ -605,7 +605,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "W_p - W_L" }
                     ],
                     answer: "a",
-                    explanation: "The Toughness Index (I_t) is the ratio of the Plasticity Index (I_p) to the Flow Index (I_f), which is the slope of the flow curve from the liquid limit test. I_t = I_p / I_f."
+                    explanation: "The toughness index is the ratio of the plasticity index to the flow index \\(I_f\\), the slope of the flow curve from the liquid limit test: \\[I_t = \\dfrac{I_p}{I_f}\\]"
                 },
                 {
                     id: "cm11q043",
@@ -744,7 +744,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "specific gravity" }
                     ],
                     answer: "c",
-                    explanation: "Specific volume (v) is defined as the volume per unit mass. It is the reciprocal of mass density (ρ), which is mass per unit volume (v = 1/ρ)."
+                    explanation: "Specific volume is volume per unit mass, the reciprocal of mass density (mass per unit volume): \\[v = \\dfrac{1}{\\rho}\\]"
                 },
                 {
                     id: "cm11q053",
@@ -757,7 +757,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "N/m³" }
                     ],
                     answer: "d",
-                    explanation: "Specific weight (γ) is defined as weight per unit volume. The SI unit of weight is Newton (N) and volume is cubic meter (m³), so the unit is N/m³."
+                    explanation: "Specific weight is weight per unit volume. Weight is in newtons and volume in cubic metres, so the unit is N per m<sup>3</sup>."
                 },
                 {
                     id: "cm11q054",
@@ -783,7 +783,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "0.68" }
                     ],
                     answer: "b",
-                    explanation: "Specific Gravity (SG) = (Weight of liquid) / (Weight of equal volume of water). Weight of water = γ_water * Volume = 9810 N/m³ * 0.001 m³ = 9.81 N. SG = 6.5 N / 9.81 N ≈ 0.662 ≈ 0.66."
+                    explanation: "Specific gravity is the weight of the liquid divided by the weight of an equal volume of water, \\(9810 \\times 0.001 = 9.81\\) N: \\[\\text{SG} = \\dfrac{6.5}{9.81} \\approx 0.662 \\approx 0.66\\]"
                 },
                 {
                     id: "cm11q056",
@@ -796,7 +796,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "2.5 l/kg" }
                     ],
                     answer: "c",
-                    explanation: "Specific Volume (v) = Volume / Mass. Mass = Weight / g = 6.5 N / 9.81 m/s² ≈ 0.6627 kg. Volume = 1 litre. Therefore, v = 1 l / 0.6627 kg ≈ 1.51 l/kg ≈ 1.5 l/kg."
+                    explanation: "The mass is \\(\\dfrac{6.5}{9.81} \\approx 0.6627\\) kg, so the specific volume is \\[v = \\dfrac{1\\ \\text{L}}{0.6627\\ \\text{kg}} \\approx 1.51\\ \\text{L/kg}\\] about 1.5 L per kg."
                 },
                 {
                     id: "cm11q057",
@@ -809,7 +809,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "5886 N/m³, 117.2 N" }
                     ],
                     answer: "d",
-                    explanation: "Specific Weight (γ) = SG * γ_water = 0.6 * 9810 N/m³ = 5886 N/m³. Volume = 20 dm³ = 0.02 m³. Weight = γ * Volume = 5886 N/m³ * 0.02 m³ = 117.72 N ≈ 117.2 N."
+                    explanation: "The specific weight and weight are \\[\\gamma = 0.6 \\times 9810 = 5886\\ \\text{N/m}^3\\] \\[W = 5886 \\times 0.02 = 117.72\\ \\text{N}\\] with \\(V = 0.02\\) m<sup>3</sup> (20 dm<sup>3</sup>). The key's 117.2 N is this value rounded."
                 },
                 {
                     id: "cm11q058",
@@ -822,7 +822,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "0.5 m³/kg" }
                     ],
                     answer: "a",
-                    explanation: "Mass (m) = Weight / g_planet = 1060 N / 6.625 m/s² = 160 kg. Specific Volume (v) = Volume / Mass = 200 m³ / 160 kg = 1.25 m³/kg. (Note: This answer does not match the options provided. Rechecking: v = 1 / ρ. ρ = m/V = 160 kg / 200 m³ = 0.8 kg/m³. Therefore, v = 1 / 0.8 kg/m³ = 1.25 m³/kg. The options seem incorrect for the given numbers. However, based on the calculation of density (0.8 kg/m³), the specific volume reciprocal is implied, so the answer is likely 0.8 referring to the inverse relationship.)"
+                    explanation: "The mass is \\[m = \\dfrac{1060}{6.625} = 160\\ \\text{kg}\\] so the density is \\(\\rho = \\dfrac{160}{200} = 0.8\\) kg per m<sup>3</sup> and the specific volume is \\[v = \\dfrac{200}{160} = 1.25\\ \\text{m}^3\\text{/kg}\\] This matches no option. The key's 0.8 is the density, the reciprocal of the specific volume."
                 }
             ]
         },
@@ -935,7 +935,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "2 meters" }
                     ],
                     answer: "a",
-                    explanation: "The jet ratio m is defined as m = D / d, where D is the runner diameter and d is the jet diameter. Therefore, D = m * d = 10 * 125 mm = 1250 mm = 1.25 meters."
+                    explanation: "The jet ratio is \\(m = \\dfrac{D}{d}\\), where \\(D\\) is the runner diameter and \\(d\\) the jet diameter. Therefore \\[\\begin{aligned} D &amp;= md = 10 \\times 125 \\\\ &amp;= 1250\\ \\text{mm} \\end{aligned}\\] which is 1.25 metres."
                 },
                 {
                     id: "cm11q067",
@@ -1048,7 +1048,7 @@ const CIVIL_MODEL_11 = {
                         { key: "d", text: "1 in 8" }
                     ],
                     answer: "a",
-                    explanation: "The exit gradient (G_E) can be calculated using Khosla's formula: G_E = H/(d * π√λ), where H is the head, d is the depth of the pile. With H/d = a common ratio for such structures, it often results in an exit gradient of 1 in 5."
+                    explanation: "Khosla's exit gradient is \\[G_E = \\dfrac{H}{d}\\cdot\\dfrac{1}{\\pi\\sqrt{\\lambda}}\\] where \\(H\\) is the head and \\(d\\) the depth of the pile. With the usual \\(\\dfrac{H}{d}\\) ratio for such structures, it often works out to 1 in 5."
                 },
                 {
                     id: "cm11q075",

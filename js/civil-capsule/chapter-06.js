@@ -145,7 +145,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Convert 720 cubic metres to 720,000 litres, then divide by 6,000 people: q = 120 L/person/day. This is an average delivered volume, not an instantaneous rate or necessarily a gross production allowance.<p>Capsule 4th ed., p. 23; topic 6 point 4.</p>",
+          "explanation": "Convert 720 cubic metres to 720,000 litres, then divide by 6,000 people: \\[q = \\dfrac{720{,}000}{6{,}000} = 120\\] litres per person per day. This is an average delivered volume, not an instantaneous rate or necessarily a gross production allowance.<p>Capsule 4th ed., p. 23; topic 6 point 4.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -454,7 +454,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Geometric growth compounds: P = 10,000(1.10)^2 = 12,100. Adding 1,000 twice gives the arithmetic result 12,000. A proportional-growth model needs supporting evidence; rapid growth by itself does not prove this model will remain valid.<p>Capsule 4th ed., p. 23; topic 6 point 13.</p>",
+          "explanation": "Geometric growth compounds: \\[\\begin{aligned} P &amp;= 10{,}000 \\times 1.10^2 \\\\ &amp;= 12{,}100 \\end{aligned}\\] Adding 1,000 twice gives the arithmetic result 12,000. A proportional-growth model needs supporting evidence; rapid growth by itself does not prove this model will remain valid.<p>Capsule 4th ed., p. 23; topic 6 point 13.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -530,7 +530,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The domestic-demand denominator gives 24,000/80,000 = 0.30, or 30%. Dividing by the combined 104,000 L/day instead gives 23.1%, answering a different question. Animal numbers, species and service policy govern allocation; the source's unverified 20% ceiling cannot replace the approved inventory.<p>Source note: Page 23 point 15 lacks a guideline edition for its asserted ceiling.</p><p>Capsule 4th ed., p. 23; topic 6 point 15.</p>",
+          "explanation": "Using the domestic demand as the denominator, \\[\\dfrac{24{,}000}{80{,}000} = 0.30 = 30\\%\\] Dividing by the combined 104,000 L per day instead gives 23.1%, answering a different question. Animal numbers, species and service policy govern allocation; the source's unverified 20% ceiling cannot replace the approved inventory.<p>Source note: Page 23 point 15 lacks a guideline edition for its asserted ceiling.</p><p>Capsule 4th ed., p. 23; topic 6 point 15.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -834,7 +834,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Volume = 10 x 2 x 3,600 = 72,000 L = 72 cubic metres. Dividing by 12,000 gives 6 L/person for this event. Event flow, duration and residual pressure differ from a daily-average planning allowance; an unverified 1 lpcd statement cannot replace a specified fire-flow check.<p>Source note: Page 26 point 109 attributes a 1 lpcd ceiling to DWSS without an edition or clause. The attribution remains unverified; no current Nepal fire standard is inferred.</p><p>Capsule 4th ed., p. 26; topic 6 point 109.</p>",
+          "explanation": "The event volume is \\[\\begin{aligned} V &amp;= 10 \\times 2 \\times 3{,}600 \\\\ &amp;= 72{,}000\\ \\text{L} = 72\\ \\text{m}^3 \\end{aligned}\\] Dividing by 12,000 people gives \\[\\dfrac{72{,}000}{12{,}000} = 6\\ \\text{L per person}\\] for this event. Event flow, duration and residual pressure differ from a daily-average planning allowance; an unverified 1 lpcd statement cannot replace a specified fire-flow check.<p>Source note: Page 26 point 109 attributes a 1 lpcd ceiling to DWSS without an edition or clause. The attribution remains unverified; no current Nepal fire standard is inferred.</p><p>Capsule 4th ed., p. 26; topic 6 point 109.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -872,7 +872,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Using TS approximately equal to TSS + TDS gives TDS = 650 - 180 = 470 mg/L. These are operational analytical fractions defined by filtration and drying procedures. Ordinary particle filtration does not thereby remove this dissolved fraction; mismatched methods or volatile losses can weaken exact additivity.<p>Capsule 4th ed., p. 26; topic 6 point 112.</p>",
+          "explanation": "Using \\(\\text{TS} \\approx \\text{TSS} + \\text{TDS}\\) gives \\[\\text{TDS} = 650 - 180 = 470\\] milligrams per litre. These are operational analytical fractions defined by filtration and drying procedures. Ordinary particle filtration does not thereby remove this dissolved fraction; mismatched methods or volatile losses can weaken exact additivity.<p>Capsule 4th ed., p. 26; topic 6 point 112.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1259,7 +1259,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Continuity requires the same discharge Q through every series section under the stated conditions. Area is proportional to diameter squared, so halving diameter quarters area. Since V = Q/A, mean velocity increases by a factor of four.<p>Capsule 4th ed., p. 24; topic 6 point 31.</p>",
+          "explanation": "Continuity requires the same discharge \\(Q\\) through every series section under the stated conditions. Area is proportional to diameter squared, so halving the diameter quarters the area. Since \\[V = \\dfrac{Q}{A}\\] the mean velocity increases by a factor of four.<p>Capsule 4th ed., p. 24; topic 6 point 31.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1452,7 +1452,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Reserve = 5 x 6 = 30 cubic metres. Combined usable storage is 70 + 30 = 100 cubic metres, so the reserve is 30%. The source's unreferenced 25% ceiling cannot override the specified outage scenario; other storage components and simultaneous demands require separate assessment.<p>Source note: Page 24 point 35: no authenticated universal 25%-of-total ceiling; calculation uses explicit project assumptions.</p><p>Capsule 4th ed., p. 24; topic 6 point 35.</p>",
+          "explanation": "The reserve and combined usable storage, in cubic metres, are \\[\\begin{aligned} \\text{reserve} &amp;= 5 \\times 6 = 30 \\\\ \\text{total} &amp;= 70 + 30 = 100 \\end{aligned}\\] so the reserve is 30% of the combined storage. The source's unreferenced 25% ceiling cannot override the specified outage scenario; other storage components and simultaneous demands require separate assessment.<p>Source note: Page 24 point 35: no authenticated universal 25%-of-total ceiling; calculation uses explicit project assumptions.</p><p>Capsule 4th ed., p. 24; topic 6 point 35.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1490,7 +1490,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Free thermal movement is alpha x length x temperature change = 12 x 10^-6 x 30 x 40 = 0.0144 m, or 14.4 mm extension. Cooling reverses its sign. Joints accommodate movement only within their designed stroke, restraint and pressure-thrust arrangement.<p>Capsule 4th ed., p. 24; topic 6 point 36.</p>",
+          "explanation": "Free thermal movement is \\[\\begin{aligned} \\Delta L &amp;= \\alpha L\\,\\Delta T \\\\ &amp;= 12 \\times 10^{-6} \\times 30 \\times 40 \\\\ &amp;= 0.0144\\ \\text{m} = 14.4\\ \\text{mm} \\end{aligned}\\] of extension. Cooling reverses its sign. Joints accommodate movement only within their designed stroke, restraint and pressure-thrust arrangement.<p>Capsule 4th ed., p. 24; topic 6 point 36.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1644,7 +1644,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Signed residual is 36 - 16 = 20 head units. The derivative sum is 2(6 + 4) = 20, giving loop correction -20/20 = -1. Applying it to signed flows gives +5 and -5, or two physical flows of 5. Their sum remains 10 and their head losses match.<p>Capsule 4th ed., p. 26; topic 6 point 104.</p>",
+          "explanation": "The signed head residual and derivative sum are \\[\\textstyle\\sum h = 6^2 - 4^2 = 20\\] \\[\\textstyle\\sum 2\\lvert q\\rvert = 2(6 + 4) = 20\\] giving the loop correction \\[\\Delta q = -\\dfrac{20}{20} = -1\\] Applying it to the signed flows gives +5 and −5, or two physical flows of 5. Their sum remains 10 and their head losses match.<p>Capsule 4th ed., p. 26; topic 6 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1682,7 +1682,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Gravity provides 120 - 80 = 40 m of elevation head. After 15 m of losses, pressure head is 25 m. This can support gravity supply if the required residual pressure and intermediate profile checks are satisfied. Hilly terrain alone does not guarantee adequate source elevation or acceptable pressures everywhere.<p>Capsule 4th ed., p. 26; topic 6 point 105.</p>",
+          "explanation": "Gravity provides \\(120 - 80 = 40\\) m of elevation head. After 15 m of losses, the pressure head is \\[40 - 15 = 25\\ \\text{m}\\] This can support gravity supply if the required residual pressure and intermediate profile checks are satisfied. Hilly terrain alone does not guarantee adequate source elevation or acceptable pressures everywhere.<p>Capsule 4th ed., p. 26; topic 6 point 105.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1758,7 +1758,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Returning to the same junction requires the algebraic head changes to sum to zero: 8 + 5 + unknown = 0, so the third value is -13 m. Its sign means a head rise along the chosen traversal, such as traversing a pipe opposite its actual flow. Pump gains and velocity changes must be handled consistently when present.<p>Capsule 4th ed., p. 26; topic 6 point 111.</p>",
+          "explanation": "Returning to the same junction requires the algebraic head changes to sum to zero: \\[8 + 5 + h_3 = 0\\] \\[h_3 = -13\\ \\text{m}\\] Its sign means a head rise along the chosen traversal, such as traversing a pipe opposite its actual flow. Pump gains and velocity changes must be handled consistently when present.<p>Capsule 4th ed., p. 26; topic 6 point 111.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1796,7 +1796,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Operating discharge = 900/12 = 75 cubic metres/hour. Dividing by 24 gives only the equivalent continuous daily-average rate of 37.5. A maximum-day basis is appropriate in this specified reservoir-balanced arrangement; direct supply, fire cases, losses and pumping schedules can change the governing design condition.<p>Source note: Page 26 point 115 is qualified by balancing storage and actual operating duration, not treated as an exceptionless rule for every main.</p><p>Capsule 4th ed., p. 26; topic 6 point 115.</p>",
+          "explanation": "The operating discharge is \\[Q = \\dfrac{900}{12} = 75\\ \\text{m}^3\\text{/hour}\\] Dividing by 24 gives only the equivalent continuous daily-average rate of 37.5. A maximum-day basis is appropriate in this specified reservoir-balanced arrangement; direct supply, fire cases, losses and pumping schedules can change the governing design condition.<p>Source note: Page 26 point 115 is qualified by balancing storage and actual operating duration, not treated as an exceptionless rule for every main.</p><p>Capsule 4th ed., p. 26; topic 6 point 115.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1872,7 +1872,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Use hL = K V^2/(2g) = 0.40 x 3.0^2/(2 x 9.81) = 0.18349 m. Velocity is squared and the result is a head, not pressure. K depends on valve geometry, opening and reference velocity; the capsule's 0.4 is not universal for every fully open butterfly valve.<p>Capsule 4th ed., p. 26; topic 6 point 127.</p>",
+          "explanation": "Use \\[\\begin{aligned} h_L &amp;= K\\dfrac{V^2}{2g} \\\\ &amp;= 0.40 \\times \\dfrac{3.0^2}{2 \\times 9.81} \\\\ &amp;= 0.18349\\ \\text{m} \\end{aligned}\\] Velocity is squared and the result is a head, not a pressure. \\(K\\) depends on valve geometry, opening and reference velocity; the capsule's 0.4 is not universal for every fully open butterfly valve.<p>Capsule 4th ed., p. 26; topic 6 point 127.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2145,7 +2145,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Surface overflow rate Q/A decreases from 12 to 6 m/day. Ideal capture is min(vs/(Q/A), 1), giving 6/12 = 0.50 and 6/6 = 1.00. This result assumes discrete settling without short-circuiting, scour or flocculation; efficiency cannot exceed 100%.<p>Capsule 4th ed., p. 24; topic 6 point 38.</p>",
+          "explanation": "The surface overflow rate \\(\\dfrac{Q}{A}\\) decreases from 12 to 6 m per day. Ideal capture is \\[E = \\min\\left(\\dfrac{v_s A}{Q}, 1\\right)\\] giving \\[\\dfrac{6}{12} = 0.50 \\quad\\text{and}\\quad \\dfrac{6}{6} = 1.00\\] This result assumes discrete settling without short-circuiting, scour or flocculation; efficiency cannot exceed 100%.<p>Capsule 4th ed., p. 24; topic 6 point 38.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2222,7 +2222,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Each repeating pitch is 15 + 50 = 65 mm, of which 50 mm is open. Open fraction = 50/65 = 0.76923, or 76.9%. Dividing gap by bar width is not an open-area fraction; actual hydraulic design also accounts for frames, blockage and projection.<p>Capsule 4th ed., p. 24; topic 6 point 44.</p>",
+          "explanation": "Each repeating pitch is \\(15 + 50 = 65\\) mm, of which 50 mm is open: \\[\\dfrac{50}{65} = 0.76923 = 76.9\\%\\] Dividing gap by bar width is not an open-area fraction; actual hydraulic design also accounts for frames, blockage and projection.<p>Capsule 4th ed., p. 24; topic 6 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2300,7 +2300,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The explicitly defined index is 1.2/3.0 = 0.40. Early tracer breakthrough indicates that some water crosses much sooner than nominal detention. This is a hydraulic diagnostic, not directly a solids-removal efficiency. Different displacement-efficiency conventions must specify their tracer-time definition.<p>Source note: Page 24 point 46 gives no definition of displacement efficiency; t10 is explicitly adopted here, not attributed to an unseen formula.</p><p>Capsule 4th ed., p. 24; topic 6 point 46.</p>",
+          "explanation": "The explicitly defined index, \\(t_{10}\\) divided by the nominal detention, is \\[\\dfrac{1.2}{3.0} = 0.40\\] Early tracer breakthrough indicates that some water crosses much sooner than nominal detention. This is a hydraulic diagnostic, not directly a solids-removal efficiency. Different displacement-efficiency conventions must specify their tracer-time definition.<p>Source note: Page 24 point 46 gives no definition of displacement efficiency; t10 is explicitly adopted here, not attributed to an unseen formula.</p><p>Capsule 4th ed., p. 24; topic 6 point 46.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2338,7 +2338,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Dividing litres by 1,000 converts 4,000 L/hour/square metre to 4 m/hour; the whole band converts to 3-6 m/hour. Required operating area = 240/4 = 60 square metres. Additional installed area may be needed while units backwash or remain unavailable.<p>Source note: Page 24 point 48 is a conventional range, not a universal media-specific maximum.</p><p>Capsule 4th ed., p. 24; topic 6 point 48.</p>",
+          "explanation": "Dividing litres by 1,000 converts 4,000 L per hour per square metre to 4 m per hour; the whole band converts to 3–6 m per hour. The required operating area is \\[A = \\dfrac{240}{4} = 60\\ \\text{m}^2\\] Additional installed area may be needed while units backwash or remain unavailable.<p>Source note: Page 24 point 48 is a conventional range, not a universal media-specific maximum.</p><p>Capsule 4th ed., p. 24; topic 6 point 48.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2376,7 +2376,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Available sand loss is 1.00 - 0.70 = 0.30 m. At 0.05 m per scraping, 0.30/0.05 = 6 scrapings reach the assumed minimum. Initial depth and minimum remaining depth differ; actual cleaning removes the surface layer as needed and requires ripening and water-quality checks.<p>Source note: Page 24 point 49 gives a typical initial thickness, not a universal remaining-bed rule; scraping and minimum values are hypothetical.</p><p>Capsule 4th ed., p. 24; topic 6 point 49.</p>",
+          "explanation": "The available sand loss is \\(1.00 - 0.70 = 0.30\\) m, so \\[n = \\dfrac{0.30}{0.05} = 6\\] scrapings reach the assumed minimum. Initial depth and minimum remaining depth differ; actual cleaning removes the surface layer as needed and requires ripening and water-quality checks.<p>Source note: Page 24 point 49 gives a typical initial thickness, not a universal remaining-bed rule; scraping and minimum values are hypothetical.</p><p>Capsule 4th ed., p. 24; topic 6 point 49.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2414,7 +2414,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The selected overflow rate is 15 m/day, and the stated band is 12-18 m/day. Using Q/A = 15 gives A = 1,800/15 = 120 square metres. Depth affects detention and sludge space but is not substituted for plan area in surface loading; particle settling characteristics must justify the adopted rate.<p>Capsule 4th ed., p. 24; topic 6 point 50.</p>",
+          "explanation": "The selected overflow rate is 15 m per day, and the stated band is 12–18 m per day. Using \\(\\dfrac{Q}{A} = 15\\) gives \\[A = \\dfrac{1{,}800}{15} = 120\\ \\text{m}^2\\] Depth affects detention and sludge space but is not substituted for plan area in surface loading; particle settling characteristics must justify the adopted rate.<p>Capsule 4th ed., p. 24; topic 6 point 50.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2490,7 +2490,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "c",
-          "explanation": "An idealized reaction is 2Al(OH)3 + 3H2SO4 -> Al2(SO4)3 + 6H2O. Acid dissolution can recover aluminium, but impurities may co-dissolve and limit reuse. This is coagulant recovery, not proof of unrestricted alum regeneration or an operational chemical-mixing recipe.<p>Source note: Page 25 point 102 is qualified by sludge composition, controlled recovery and reuse-quality assessment; no field dose is prescribed.</p><p>Capsule 4th ed., p. 25; topic 6 point 102.</p>",
+          "explanation": "An idealized reaction is \\[\\begin{aligned} &amp;2\\,\\text{Al(OH)}_3 + 3\\,\\text{H}_2\\text{SO}_4 \\\\ &amp;\\to \\text{Al}_2(\\text{SO}_4)_3 + 6\\,\\text{H}_2\\text{O} \\end{aligned}\\] Acid dissolution can recover aluminium, but impurities may co-dissolve and limit reuse. This is coagulant recovery, not proof of unrestricted alum regeneration or an operational chemical-mixing recipe.<p>Source note: Page 25 point 102 is qualified by sludge composition, controlled recovery and reuse-quality assessment; no field dose is prescribed.</p><p>Capsule 4th ed., p. 25; topic 6 point 102.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2566,7 +2566,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Available chlorine = product mass x assayed mass fraction = 10 x 0.35 = 3.5 kg as Cl2 equivalent. This is an oxidizing-capacity measure, not a claim that the powder contains that mass of free chlorine gas. Storage deterioration, delivery losses, demand and target residual are separate considerations.<p>Capsule 4th ed., p. 26; topic 6 point 137.</p>",
+          "explanation": "Available chlorine is the product mass times the assayed mass fraction: \\[10 \\times 0.35 = 3.5\\ \\text{kg}\\] as \\(\\text{Cl}_2\\) equivalent. This is an oxidizing-capacity measure, not a claim that the powder contains that mass of free chlorine gas. Storage deterioration, delivery losses, demand and target residual are separate considerations.<p>Capsule 4th ed., p. 26; topic 6 point 137.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2766,7 +2766,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Mean velocity Q/A = 0.30/0.50 = 0.60 m/s, less than the adopted 0.75 m/s. A geometric area at most 0.40 square metres would meet that velocity for this discharge, subject to hydraulic feasibility. Self-cleansing also depends on sediment, shear and the chosen design-flow condition.<p>Source note: Page 24 point 55&#39;s 0.75 m/s is an explicit exercise criterion, not a universal minimum at every instant.</p><p>Capsule 4th ed., p. 24; topic 6 point 55.</p>",
+          "explanation": "The mean velocity is \\[V = \\dfrac{Q}{A} = \\dfrac{0.30}{0.50} = 0.60\\ \\text{m/s}\\] less than the adopted \\(0.75\\ \\text{m/s}\\). A geometric area of at most 0.40 m<sup>2</sup> would meet that velocity for this discharge, subject to hydraulic feasibility. Self-cleansing also depends on sediment, shear and the chosen design-flow condition.<p>Source note: Page 24 point 55&#39;s 0.75 m/s is an explicit exercise criterion, not a universal minimum at every instant.</p><p>Capsule 4th ed., p. 24; topic 6 point 55.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3032,7 +3032,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Design water depth is (2/3) x 0.60 = 0.40 m. Remaining vertical distance to the crown is 0.60 - 0.40 = 0.20 m. This reserve is geometric airspace, not guaranteed ventilation or immunity from surcharge. The source's diameter-band rule lacks an identified applicable code and is stipulated only for this exercise.<p>Source note: Page 26 point 124: two-thirds depth for 0.4-0.9 m sewers is not authenticated as a current Nepal prescription.</p><p>Capsule 4th ed., p. 26; topic 6 point 124.</p>",
+          "explanation": "The design water depth and the remaining distance to the crown are \\[y = \\dfrac{2}{3} \\times 0.60 = 0.40\\ \\text{m}\\] \\[0.60 - 0.40 = 0.20\\ \\text{m}\\] This reserve is geometric airspace, not guaranteed ventilation or immunity from surcharge. The source's diameter-band rule lacks an identified applicable code and is stipulated only for this exercise.<p>Source note: Page 26 point 124: two-thirds depth for 0.4-0.9 m sewers is not authenticated as a current Nepal prescription.</p><p>Capsule 4th ed., p. 26; topic 6 point 124.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3070,7 +3070,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The wetted angle is theta = 2 acos(1 - 2y/D) = 3.82127 radians. Area/full area = (theta - sin theta)/(2 pi) = 0.70821; perimeter/full perimeter = theta/(2 pi) = 0.60817. Thus R/Rfull = 1.16448 and Q/Qfull = 0.70821 x 1.16448^(2/3) = 0.78388. Depth fraction is not discharge fraction.<p>Capsule 4th ed., p. 26; topic 6 point 124.</p>",
+          "explanation": "The wetted angle is \\[\\begin{aligned} \\theta &amp;= 2\\cos^{-1}\\left(1 - \\dfrac{2y}{D}\\right) \\\\ &amp;= 3.82127\\ \\text{rad} \\end{aligned}\\] The area and perimeter ratios are \\[\\dfrac{A}{A_f} = \\dfrac{\\theta - \\sin\\theta}{2\\pi} = 0.70821\\] \\[\\dfrac{P}{P_f} = \\dfrac{\\theta}{2\\pi} = 0.60817\\] Thus \\(\\dfrac{R}{R_f} = 1.16448\\) and \\[\\begin{aligned} \\dfrac{Q}{Q_f} &amp;= 0.70821 \\times 1.16448^{2{/}3} \\\\ &amp;= 0.78388 \\end{aligned}\\] The depth fraction is not the discharge fraction.<p>Capsule 4th ed., p. 26; topic 6 point 124.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3191,7 +3191,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Settling time = 1.0/0.020 = 50 s. Horizontal travel = 0.30 x 50 = 15 m. The horizontal transport velocity is not the particle's vertical settling velocity. Real grit design also allows for turbulence, flow variation and capture requirements.<p>Source note: Page 24 point 40 is grammatically incomplete and does not identify the 0.3 m/s velocity. New hypothetical inputs distinguish the two components; the original intended statement remains for parent review.</p><p>Capsule 4th ed., p. 24; topic 6 point 40.</p>",
+          "explanation": "The settling time and horizontal travel are \\[t = \\dfrac{1.0}{0.020} = 50\\ \\text{s}\\] \\[L = 0.30 \\times 50 = 15\\ \\text{m}\\] The horizontal transport velocity is not the particle's vertical settling velocity. Real grit design also allows for turbulence, flow variation and capture requirements.<p>Source note: Page 24 point 40 is grammatically incomplete and does not identify the 0.3 m/s velocity. New hypothetical inputs distinguish the two components; the original intended statement remains for parent review.</p><p>Capsule 4th ed., p. 24; topic 6 point 40.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3229,7 +3229,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "b",
-          "explanation": "After stage one, 40% of the original load remains. Stage two removes half of that, another 20% of the original. Overall removal = 0.60 + 0.50(1 - 0.60) = 0.80. Adding the two percentages directly ignores their different incoming-load bases.<p>Capsule 4th ed., p. 24; topic 6 point 41.</p>",
+          "explanation": "After stage one, 40% of the original load remains. Stage two removes half of that, another 20% of the original, so the overall removal is \\[0.60 + 0.50(1 - 0.60) = 0.80\\] Adding the two percentages directly ignores their different incoming-load bases.<p>Capsule 4th ed., p. 24; topic 6 point 41.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3383,7 +3383,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "b",
-          "explanation": "One ML is 1,000 cubic metres and one hectare is 10,000 square metres. Therefore 1 ML/hectare/day = 0.1 m/day, giving 11-33 m/day. This converts the stated band; it does not make it a universal limit for all stone and plastic media or recirculation conventions.<p>Source note: Page 24 point 47 is retained as a historical conversion exercise, not a current design prescription.</p><p>Capsule 4th ed., p. 24; topic 6 point 47.</p>",
+          "explanation": "One ML is 1,000 cubic metres and one hectare is 10,000 square metres, so \\[\\dfrac{1000\\ \\text{m}^3}{10{,}000\\ \\text{m}^2} = 0.1\\ \\text{m}\\] per day for each ML per hectare per day, giving 11–33 m per day. This converts the stated band; it does not make it a universal limit for all stone and plastic media or recirculation conventions.<p>Source note: Page 24 point 47 is retained as a historical conversion exercise, not a current design prescription.</p><p>Capsule 4th ed., p. 24; topic 6 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3421,7 +3421,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Flow across the media is 1,200 + 1,000 = 2,200 cubic metres/day. Area = total applied flow/loading = 2,200/22 = 100 square metres. Excluding the recycle would understate area under this explicitly defined loading basis; organic loading needs an additional check.<p>Capsule 4th ed., p. 24; topic 6 point 47.</p>",
+          "explanation": "Flow across the media is \\[\\begin{aligned} Q &amp;= 1{,}200 + 1{,}000 \\\\ &amp;= 2{,}200\\ \\text{m}^3\\text{/day} \\end{aligned}\\] so the plan area is \\[A = \\dfrac{2{,}200}{22} = 100\\ \\text{m}^2\\] Excluding the recycle would understate area under this explicitly defined loading basis; organic loading needs an additional check.<p>Capsule 4th ed., p. 24; topic 6 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3459,7 +3459,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Fixed residue is the 0.35 g remaining: 35% of the dry residue. Ignition loss is 1.00 - 0.35 = 0.65 g, or 65%. EPA Method 160.4 (1971) supports ignition around 550 degrees C but warns that mineral changes complicate identification of fixed with inorganic and volatile with organic matter.<p>Source note: Page 24 point 57: the exact 550 +/- 50 degrees C for 15 minutes prescription is not verified; follow the chosen analytical method and endpoint.</p><p>Capsule 4th ed., p. 24; topic 6 point 57.</p>",
+          "explanation": "Fixed residue is the 0.35 g remaining, 35% of the dry residue. The ignition loss is \\[1.00 - 0.35 = 0.65\\ \\text{g}\\] or 65%. EPA Method 160.4 (1971) supports ignition around 550 degrees C but warns that mineral changes complicate identification of fixed with inorganic and volatile with organic matter.<p>Source note: Page 24 point 57: the exact 550 +/- 50 degrees C for 15 minutes prescription is not verified; follow the chosen analytical method and endpoint.</p><p>Capsule 4th ed., p. 24; topic 6 point 57.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3497,7 +3497,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Detention volume is Q x t = 1.2 cubic metres/day x 1 day = 1.2 cubic metres. This excludes sludge and scum storage and freeboard. EPA Onsite Manual (2002), section 4.6.2, discusses a 24-hour liquid-detention sizing approach; it is not a universal Nepal design requirement.<p>Capsule 4th ed., p. 24; topic 6 point 58.</p>",
+          "explanation": "The detention volume is \\[V = Qt = 1.2 \\times 1 = 1.2\\ \\text{m}^3\\] using 1.2 cubic metres per day for 1 day. This excludes sludge and scum storage and freeboard. EPA Onsite Manual (2002), section 4.6.2, discusses a 24-hour liquid-detention sizing approach; it is not a universal Nepal design requirement.<p>Capsule 4th ed., p. 24; topic 6 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3688,7 +3688,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Internal height to the underside of the roof is liquid depth plus freeboard: 1.20 + 0.30 = 1.50 m. Freeboard does not provide useful liquid detention volume. Sludge storage, compartment geometry and structural details require additional checks.<p>Source note: Page 25 point 66&#39;s 1.2 m is explicitly adopted for this exercise; no current Nepal minimum-depth clause has been authenticated.</p><p>Capsule 4th ed., p. 25; topic 6 point 66.</p>",
+          "explanation": "The internal height to the underside of the roof is liquid depth plus freeboard: \\[1.20 + 0.30 = 1.50\\ \\text{m}\\] Freeboard does not provide useful liquid detention volume. Sludge storage, compartment geometry and structural details require additional checks.<p>Source note: Page 25 point 66&#39;s 1.2 m is explicitly adopted for this exercise; no current Nepal minimum-depth clause has been authenticated.</p><p>Capsule 4th ed., p. 25; topic 6 point 66.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3764,7 +3764,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Deficit changes as dD/dt = Kd L - Kr D = 0.20 x 10 - 0.40 x 2 = 1.2 mg/L/day. Increasing deficit means falling DO when saturation is constant. At the critical deficit, these two rates balance; coefficients from a base-10 formulation cannot be inserted unchanged.<p>Capsule 4th ed., p. 25; topic 6 point 67.</p>",
+          "explanation": "With \\(K_d L = 0.20 \\times 10\\) and \\(K_r D = 0.40 \\times 2\\), the deficit changes as \\[\\begin{aligned} \\dfrac{dD}{dt} &amp;= K_d L - K_r D \\\\ &amp;= 2.0 - 0.8 \\\\ &amp;= 1.2\\ \\text{mg/L/day} \\end{aligned}\\] An increasing deficit means falling DO when saturation is constant. At the critical deficit, these two rates balance; coefficients from a base-10 formulation cannot be inserted unchanged.<p>Capsule 4th ed., p. 25; topic 6 point 67.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3802,7 +3802,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "a",
-          "explanation": "BOD5/COD = 240/400 = 0.60, within the source's approximate 0.3-0.8 band. A substantial ratio can support biological treatability, but test conditions, inhibitory compounds and wastewater composition matter. It is neither a universal domestic-sewage interval nor a discharge-compliance test.<p>Capsule 4th ed., p. 25; topic 6 point 69.</p>",
+          "explanation": "\\[\\dfrac{\\text{BOD}_5}{\\text{COD}} = \\dfrac{240}{400} = 0.60\\] This lies within the source's approximate 0.3–0.8 band. A substantial ratio can support biological treatability, but test conditions, inhibitory compounds and wastewater composition matter. It is neither a universal domestic-sewage interval nor a discharge-compliance test.<p>Capsule 4th ed., p. 25; topic 6 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3840,7 +3840,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Particle density = specific gravity x reference water density = 2.65 x 1,000 = 2,650 kg/cubic metre. The density excess is 1,650, not the total density. Real grit includes variable mineral particles and associated organics, so every grit particle does not have exactly this density.<p>Capsule 4th ed., p. 25; topic 6 point 72.</p>",
+          "explanation": "Particle density is specific gravity times the reference water density: \\[2.65 \\times 1{,}000 = 2{,}650\\ \\text{kg/m}^3\\] The density excess is 1,650, not the total density. Real grit includes variable mineral particles and associated organics, so every grit particle does not have exactly this density.<p>Capsule 4th ed., p. 25; topic 6 point 72.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3992,7 +3992,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Taking reciprocals reverses positive interval endpoints: 1/2.50 = 0.40 and 1/1.25 = 0.80. This differs from the lower bound 0.30 elsewhere in the source. Treatment can change the ratio, so a reciprocal calculation cannot authenticate an unspecified wastewater category or universal range.<p>Source note: Page 25 point 87 says detreated, which is unresolved. The question tests the valid reciprocal relation without silently changing it to untreated or treated.</p><p>Capsule 4th ed., p. 25; topic 6 point 87.</p>",
+          "explanation": "Taking reciprocals reverses positive interval endpoints: \\[\\dfrac{1}{2.50} = 0.40\\] \\[\\dfrac{1}{1.25} = 0.80\\] This differs from the lower bound 0.30 elsewhere in the source. Treatment can change the ratio, so a reciprocal calculation cannot authenticate an unspecified wastewater category or universal range.<p>Source note: Page 25 point 87 says detreated, which is unresolved. The question tests the valid reciprocal relation without silently changing it to untreated or treated.</p><p>Capsule 4th ed., p. 25; topic 6 point 87.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4336,7 +4336,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Dry solids initially total 1,000 x 0.05 = 50 kg. At 10% solids, final wet mass is 50/0.10 = 500 kg, so 500 kg of water has been removed. Volume halves only under the equal-bulk-density approximation; moisture percentages alone do not prove an exact 50% volume reduction for unequal densities.<p>Source note: Page 26 point 128&#39;s volume conclusion is explicitly conditional; the mass balance is exact under conserved dry solids.</p><p>Capsule 4th ed., p. 26; topic 6 point 128.</p>",
+          "explanation": "Dry solids initially total \\[1{,}000 \\times 0.05 = 50\\ \\text{kg}\\] At 10% solids, the final wet mass is \\[\\dfrac{50}{0.10} = 500\\ \\text{kg}\\] so 500 kg of water has been removed. Volume halves only under the equal-bulk-density approximation; moisture percentages alone do not prove an exact 50% volume reduction for unequal densities.<p>Source note: Page 26 point 128&#39;s volume conclusion is explicitly conditional; the mass balance is exact under conserved dry solids.</p><p>Capsule 4th ed., p. 26; topic 6 point 128.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4413,7 +4413,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Removal = (Cin - Cout)/Cin = (500 - 10)/500 = 490/500 = 0.98, or 98%. The 10/500 = 2% is the fraction remaining, not removed. Equal flow makes the concentration ratio equal the load ratio; with changed flows, use influent and effluent pollutant loads.<p>Source note: Page 26 point 133 gives 0.9 incorrectly; independently recomputed corrected fraction is 0.98.</p><p>Capsule 4th ed., p. 26; topic 6 point 133.</p>",
+          "explanation": "The removal efficiency is \\[\\begin{aligned} \\eta &amp;= \\dfrac{C_{in} - C_{out}}{C_{in}} = \\dfrac{500 - 10}{500} \\\\ &amp;= 0.98 = 98\\% \\end{aligned}\\] The ratio \\(\\dfrac{10}{500} = 2\\%\\) is the fraction remaining, not removed. Equal flow makes the concentration ratio equal the load ratio; with changed flows, use the influent and effluent pollutant loads.<p>Source note: Page 26 point 133 gives 0.9 incorrectly; independently recomputed corrected fraction is 0.98.</p><p>Capsule 4th ed., p. 26; topic 6 point 133.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4603,7 +4603,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Fall = horizontal run/10 = 2.0/10 = 0.20 m, a 10% gradient. The arrow and collection point define direction; the word 'outward' alone would not establish which way a septic chamber floor should fall.<p>Source note: Appendix p42 n22: source&#39;s &#39;outward&#39; direction and universal 1:10 claim lack a verified detail. This item tests only the explicit drawing condition; parent should check the applicable septic standard and original context.</p><p>Capsule 4th ed., p. 42; rural point 22.</p>",
+          "explanation": "The fall is the horizontal run divided by 10: \\[\\dfrac{2.0}{10} = 0.20\\ \\text{m}\\] a 10% gradient. The arrow and collection point define direction; the word 'outward' alone would not establish which way a septic chamber floor should fall.<p>Source note: Appendix p42 n22: source&#39;s &#39;outward&#39; direction and universal 1:10 claim lack a verified detail. This item tests only the explicit drawing condition; parent should check the applicable septic standard and original context.</p><p>Capsule 4th ed., p. 42; rural point 22.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4800,7 +4800,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Initial expected loss is 0.02 x 1,000,000 = Rs 20,000/year. Residual expected loss is 0.01 x 600,000 = Rs 6,000/year, a reduction of Rs 14,000 or 70%. Mitigation can reduce risk without necessarily meeting a threshold; acceptability requires a separately justified criterion.<p>Source note: Page 25 point 79 incorrectly makes reaching a threshold part of every mitigation outcome.</p><p>Capsule 4th ed., p. 25; topic 6 point 79.</p>",
+          "explanation": "The initial and residual expected annual losses, in rupees per year, are \\[0.02 \\times 1{,}000{,}000 = 20{,}000\\] \\[0.01 \\times 600{,}000 = 6{,}000\\] a reduction of Rs 14,000, or 70%. Mitigation can reduce risk without necessarily meeting a threshold; acceptability requires a separately justified criterion.<p>Source note: Page 25 point 79 incorrectly makes reaching a threshold part of every mitigation outcome.</p><p>Capsule 4th ed., p. 25; topic 6 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,

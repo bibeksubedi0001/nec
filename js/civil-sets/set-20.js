@@ -83,7 +83,7 @@ const CIVIL_MODEL_20 = {
                         { key: "c", text: "h^2" }
                     ],
                     answer: "c",
-                    explanation: "The slope correction formula for a length L and height difference h is C_slope = L - √(L² - h²) ≈ h²/(2L). The main variable is h², making the correction proportional to the square of the difference in height."
+                    explanation: "The slope correction for a length \\(L\\) and height difference \\(h\\) is \\[C = L - \\sqrt{L^2 - h^2} \\approx \\dfrac{h^2}{2L}\\] The main variable is \\(h^2\\), so the correction is proportional to the square of the difference in height."
                 },
                 {
                     id: "cm20q005",
@@ -161,7 +161,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "Inversely Proportional to the length of the line" }
                     ],
                     answer: "b",
-                    explanation: "Compensating errors are random errors that tend to cancel out over a series of measurements. Their magnitude is often considered to be proportional to the square root of the length L (√L)."
+                    explanation: "Compensating errors are random errors that tend to cancel out over a series of measurements. Their magnitude is usually taken as proportional to the square root of the length, \\(\\sqrt{L}\\)."
                 },
                 {
                     id: "cm20q011",
@@ -248,7 +248,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "Inversely proportional" }
                     ],
                     answer: "d",
-                    explanation: "According to Euler's formula, the critical buckling stress (σ_cr) is inversely proportional to the square of the slenderness ratio (σ_cr ∝ 1/λ²)."
+                    explanation: "By Euler's formula, the critical buckling stress varies inversely with the square of the slenderness ratio: \\[\\sigma_{cr} \\propto \\dfrac{1}{\\lambda^2}\\]"
                 },
                 {
                     id: "cm20q017",
@@ -374,7 +374,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "3.06" }
                     ],
                     answer: "a",
-                    explanation: "Area required = Total Load / Safe Bearing Capacity. Total load includes column load and self-weight (approx. 10% of column load). Estimated total load = 330 * 1.1 = 363 kN. Area = 363 / 150 = 2.42 m². However, 330/150 = 2.2 m² is the basic area without self-weight. Based on the options and common practice to neglect self-weight initially, 2.20 is the correct choice."
+                    explanation: "The area required is the total load divided by the safe bearing capacity. Neglecting self-weight, as is common initially, \\[A = \\dfrac{330}{150} = 2.20\\ \\text{m}^2\\] Adding about 10% for self-weight would give \\(\\dfrac{363}{150} = 2.42\\) m<sup>2</sup>; the key uses the basic 2.20."
                 },
                 {
                     id: "cm20q026",
@@ -387,7 +387,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "1.5" }
                     ],
                     answer: "b",
-                    explanation: "As per IS 456:2000, for rectangular footings, the reinforcement in the short direction is distributed such that a central band of width equal to the short side has a reinforcement proportion of 2/(β+1), where β is the ratio of long to short side. Here β=1.5, so ratio = 2/(1.5+1) = 2/2.5 = 0.8. However, 0.8 is not an option. Re-checking the formula: The ratio is for the central band. The option 0.6 might be a miscalculation or for a different code. Given the options, 0.6 is the intended answer."
+                    explanation: "IS 456:2000 places a share of the short-direction steel in a central band of width equal to the short side: \\[\\dfrac{2}{\\beta + 1} = \\dfrac{2}{1.5 + 1} = 0.8\\] with \\(\\beta = 1.5\\) the long-to-short ratio. 0.8 is not an option; the key gives 0.6, which may come from a different code or a miscalculation."
                 },
                 {
                     id: "cm20q027",
@@ -465,7 +465,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "3.5 mm" }
                     ],
                     answer: "d",
-                    explanation: "For a fillet weld with equal legs (size s) and a 90° angle between fusion faces, the throat thickness (t) is calculated as t = s / √2 ≈ s * 0.707. For s=5mm, t = 5 * 0.707 = 3.535 mm ≈ 3.5 mm."
+                    explanation: "For an equal-leg fillet weld of size \\(s\\) with a \\(90^\\circ\\) angle between fusion faces, \\[t = \\dfrac{s}{\\sqrt{2}} \\approx 0.707s\\] For \\(s = 5\\) mm, \\(t = 5 \\times 0.707 = 3.535\\), about 3.5 mm."
                 },
                 {
                     id: "cm20q033",
@@ -478,7 +478,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "50" }
                     ],
                     answer: "a",
-                    explanation: "As per IS 800:2007, the minimum pitch for bolts is 2.5 times the nominal diameter (d). For M16, minimum pitch = 2.5 * 16 = 40 mm. However, 27 is not 2.5d. There might be a confusion with edge distance. Based on the provided options, 27 is the intended answer, possibly for a specific grade or context."
+                    explanation: "IS 800:2007 sets the minimum bolt pitch at 2.5 times the nominal diameter: \\[2.5 \\times 16 = 40\\ \\text{mm}\\] The key's 27 is not \\(2.5d\\) and may be confused with an edge distance; it is kept as the intended legacy answer."
                 },
                 {
                     id: "cm20q034",
@@ -526,7 +526,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "Shearing resistances" }
                     ],
                     answer: "d",
-                    explanation: "The failure condition is defined when the applied shear stress (τ) equals the soil's shear resistance or strength (s), which is a function of the effective normal stress (s = c' + σ' tanφ')."
+                    explanation: "Failure occurs when the applied shear stress equals the soil's shear resistance, which depends on the effective normal stress: \\[s = c' + \\sigma'\\tan\\phi'\\]"
                 },
                 {
                     id: "cm20q037",
@@ -630,7 +630,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "τ_f = c + σ tanφ" }
                     ],
                     answer: "d",
-                    explanation: "The standard algebraic form of the Mohr-Coulomb failure criterion is τ_f = c + σ_n tanφ, where τ_f is the shear strength, c is cohesion, σ_n is the normal stress, and φ is the angle of internal friction."
+                    explanation: "The standard algebraic form of the Mohr-Coulomb criterion is \\[\\tau_f = c + \\sigma_n\\tan\\phi\\] where \\(\\tau_f\\) is the shear strength, \\(c\\) the cohesion, \\(\\sigma_n\\) the normal stress and \\(\\phi\\) the angle of internal friction."
                 },
                 {
                     id: "cm20q045",
@@ -730,7 +730,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "1 m" }
                     ],
                     answer: "c",
-                    explanation: "For the most economical trapezoidal section, the hydraulic radius R should be half the depth of flow. Therefore, for a depth (y) of 3 m, R = y/2 = 1.5 m."
+                    explanation: "For the most economical trapezoidal section the hydraulic radius is half the flow depth: \\[R = \\dfrac{y}{2} = \\dfrac{3}{2} = 1.5\\ \\text{m}\\]"
                 },
                 {
                     id: "cm20q052",
@@ -743,7 +743,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "4 m" }
                     ],
                     answer: "d",
-                    explanation: "The section factor Z for critical flow calculations is given by Z = A√D, where A is the area and D is the hydraulic depth (A/T, T is top width). Discharge Q = A * V. Given Q=250 m³/s and V=5 m/s, area A = Q/V = 250/5 = 50 m². The section factor Z = A√D = 50√D = 111.80. Solving for D: √D = 111.80 / 50 = 2.236, therefore D = (2.236)² = 5 m. (Note: The calculation yields 5m, making the option \"5 m\" correct. The initial answer of 4m was based on an error. The correct answer is 5m.)"
+                    explanation: "The area is \\(A = \\dfrac{Q}{V} = \\dfrac{250}{5} = 50\\) m<sup>2</sup>, and the section factor is \\(Z = A\\sqrt{D}\\): \\[\\sqrt{D} = \\dfrac{111.80}{50} = 2.236\\] so \\(D = 2.236^2 = 5\\) m. The calculation gives 5 m, the option '5 m'; the stored 4 m answer was based on an error."
                 },
                 {
                     id: "cm20q053",
@@ -756,7 +756,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "has the dimension of discharge" }
                     ],
                     answer: "a",
-                    explanation: "Chezy's formula is V = C√(RS). The dimensions of velocity V are [LT⁻¹]. The dimensions of √(RS) are √([L][L]) = [L]. Therefore, C must have dimensions of [LT⁻¹] / [L] = [L⁰·⁵T⁻¹] to make the equation dimensionally homogeneous."
+                    explanation: "Chezy's formula is \\(V = C\\sqrt{RS}\\). Velocity has dimensions \\(\\text{LT}^{-1}\\) and \\(\\sqrt{RS}\\) has dimensions \\(\\text{L}^{1{/}2}\\), since \\(S\\) is dimensionless. So \\[[C] = \\text{L}^{1{/}2}\\text{T}^{-1}\\] which keeps the equation dimensionally homogeneous."
                 },
                 {
                     id: "cm20q054",
@@ -782,7 +782,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "None of these" }
                     ],
                     answer: "b",
-                    explanation: "Specific energy (E) is defined as the energy per unit weight of water measured with respect to the channel bottom. It is the sum of the depth of flow (pressure head) and the velocity head (V²/2g)."
+                    explanation: "Specific energy is the energy per unit weight of water measured from the channel bottom, the sum of the flow depth (pressure head) and the velocity head: \\[E = y + \\dfrac{V^2}{2g}\\]"
                 },
                 {
                     id: "cm20q056",
@@ -834,7 +834,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "8.5m" }
                     ],
                     answer: "c",
-                    explanation: "Hydraulic Diameter (D_h) for non-circular ducts is given by D_h = 4A/P, where A is the cross-sectional area and P is the wetted perimeter. For a rectangular duct, A = width * depth = 10m * 6m = 60 m². Wetted Perimeter P = 2*(width + depth) = 2*(10m + 6m) = 32m. Hydraulic Diameter D_h = 4 * 60 / 32 = 240 / 32 = 7.5m."
+                    explanation: "The hydraulic diameter of a non-circular duct is \\(D_h = \\dfrac{4A}{P}\\). Here \\(A = 60\\) m<sup>2</sup> and \\(P = 2(10 + 6) = 32\\) m, so \\[D_h = \\dfrac{4 \\times 60}{32} = \\dfrac{240}{32} = 7.5\\ \\text{m}\\]"
                 },
                 {
                     id: "cm20q060",
@@ -960,7 +960,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "Flow rate of water" }
                     ],
                     answer: "d",
-                    explanation: "The primary hydraulic parameter for sizing any conduit, including a hydropower tunnel, is the design discharge or flow rate (Q in m³/s). The diameter is calculated to accommodate this flow at an economical and functional velocity."
+                    explanation: "The primary hydraulic parameter for sizing any conduit, including a hydropower tunnel, is the design discharge \\(Q\\) in m<sup>3</sup> per s. The diameter is chosen to carry this flow at an economical and functional velocity."
                 },
                 {
                     id: "cm20q069",
@@ -973,7 +973,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "Average annual rainfall" }
                     ],
                     answer: "a",
-                    explanation: "The forebay's function is to provide a small storage volume to meet immediate changes in turbine demand. Its required storage capacity (and thus its size) is directly related to the plant's discharge (Q) and the net head (H), as the power output is P = ρgQH."
+                    explanation: "The forebay provides a small storage volume to meet immediate changes in turbine demand. Its required capacity, and so its size, depends directly on the plant's discharge \\(Q\\) and net head \\(H\\), since the output is \\[P = \\rho gQH\\]"
                 }
             ]
         },
@@ -1060,7 +1060,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "62%" }
                     ],
                     answer: "c",
-                    explanation: "Volume of water delivered to field = 100 l/s * 8 * 3600 s = 2,880,000 liters = 2880 m³. Runoff loss = 800 m³. Water stored in root zone = Water delivered - Runoff = 2880 - 800 = 2080 m³. Application Efficiency = (Water stored / Water delivered) * 100 = (2080 / 2880) * 100 ≈ 72.22%. Note: The calculation uses the actual delivery at the field (100 L/s), not the supply rate at the tank (120 L/s)."
+                    explanation: "The water delivered to the field is \\[\\begin{aligned} V &amp;= 100 \\times 8 \\times 3600 \\\\ &amp;= 2{,}880{,}000\\ \\text{L} = 2880\\ \\text{m}^3 \\end{aligned}\\] Subtracting the 800 m<sup>3</sup> runoff, \\(2880 - 800 = 2080\\) m<sup>3</sup> is stored, so \\[\\eta_a = \\dfrac{2080}{2880} \\times 100 \\approx 72.22\\%\\] The calculation uses the actual delivery at the field (100 L per s), not the supply rate at the tank (120 L per s)."
                 },
                 {
                     id: "cm20q076",
@@ -1133,7 +1133,7 @@ const CIVIL_MODEL_20 = {
                         { key: "c", text: "all of the above" }
                     ],
                     answer: "a",
-                    explanation: "The mechanical widening (W_m) for a single lane is given by W_m = (l² / (2R)). For n number of lanes, the mechanical widening is W_m = (n * l²) / (2R)."
+                    explanation: "The mechanical widening for a single lane is \\(\\dfrac{l^2}{2R}\\), so for \\(n\\) lanes \\[W_m = \\dfrac{nl^2}{2R}\\]"
                 },
                 {
                     id: "cm20q081",
@@ -1146,7 +1146,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "0.8" }
                     ],
                     answer: "a",
-                    explanation: "IRC recommends a rate of change of centrifugal acceleration (C) of 0.6 m/sec³ for the design of transition curves for comfort conditions."
+                    explanation: "IRC recommends a rate of change of centrifugal acceleration of 0.6 m per s<sup>3</sup> for transition-curve design at this speed for comfort."
                 },
                 {
                     id: "cm20q082",
@@ -1158,7 +1158,7 @@ const CIVIL_MODEL_20 = {
                         { key: "c", text: "L²/4R" }
                     ],
                     answer: "b",
-                    explanation: "The total shift (S) of a transition curve is the distance by which the circular curve is shifted inward. It is given by the formula S = L² / (24R), where L is the length of the transition curve and R is the radius of the circular curve."
+                    explanation: "The shift is the distance by which the circular curve moves inward: \\[S = \\dfrac{L^2}{24R}\\] where \\(L\\) is the transition length and \\(R\\) the radius of the circular curve."
                 },
                 {
                     id: "cm20q083",
@@ -1171,7 +1171,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "1.8%" }
                     ],
                     answer: "c",
-                    explanation: "Grade compensation is provided on horizontal curves to offset the additional resistance due to curvature. As per IRC, maximum grade compensation = (75 / R) %, where R is the radius in meters. For R=75m, compensation = (75 / 75) = 1.0%. However, IRC also specifies that the maximum grade compensation should not exceed 1.5%. Therefore, the maximum allowed is 1.5%."
+                    explanation: "Grade compensation offsets the extra resistance on horizontal curves. The IRC value \\(\\dfrac{75}{R}\\%\\) gives \\[\\dfrac{75}{75} = 1.0\\%\\] for \\(R = 75\\) m. IRC also caps the compensation at 1.5%, which the key takes as the maximum."
                 },
                 {
                     id: "cm20q084",
@@ -1197,7 +1197,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "150m" }
                     ],
                     answer: "a",
-                    explanation: "For a summit curve where L &gt; SSD, the length L = (N * S²) / (4.4) for SSD. The deviation angle N is given as 1/30. S=150m. L = ((1/30) * (150)²) / 4.4 = ( (1/30) * 22500 ) / 4.4 = (750) / 4.4 ≈ 170.45 m ≈ 170m."
+                    explanation: "For a summit curve with \\(L \\gt \\text{SSD}\\), \\[L = \\dfrac{NS^2}{4.4} = \\dfrac{22{,}500}{30 \\times 4.4}\\] \\[= \\dfrac{750}{4.4} \\approx 170.45 \\approx 170\\ \\text{m}\\] with \\(N = \\dfrac{1}{30}\\) and \\(S = 150\\) m."
                 },
                 {
                     id: "cm20q086",
@@ -1210,7 +1210,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "19.22" }
                     ],
                     answer: "b",
-                    explanation: "For a valley curve based on comfort condition, L = 2 * [ (N * v³) / C ]^(1/2). N = 1/200 = 0.005. v = 80/3.6 ≈ 22.22 m/s. C (comfort criterion, rate of change of acceleration) = 0.6 m/s³ (IRC). L = 2 * [ (0.005 * (22.22)³) / 0.6 ]^(1/2) = 2 * [ (0.005 * 10973.4) / 0.6 ]^(1/2) = 2 * [ (54.867) / 0.6 ]^(1/2) = 2 * [91.445]^(1/2) = 2 * 9.563 ≈ 19.126 m. The exact calculation might yield 19.52m depending on the formula and constants used (sometimes L = (N * V³) / (C * 3.6) for V in km/h). Recalculating with V in km/h: L = (N * V³) / (C * 3.6) = (0.005 * 80³) / (0.6 * 3.6) = (0.005 * 512000) / (2.16) = 2560 / 2.16 ≈ 1185.19m (this is incorrect for comfort). The initial calculation is standard. The option 19.52 is closest to the calculated 19.126m, likely using a precise formula."
+                    explanation: "For a valley curve on the comfort condition, with \\(N = 0.005\\), \\(v = \\dfrac{80}{3.6} = 22.22\\) m per s and \\(C = 0.6\\) m per s<sup>3</sup>, \\[\\begin{aligned} L &amp;= 2\\sqrt{\\dfrac{Nv^3}{C}} \\\\ &amp;= 2\\sqrt{\\dfrac{0.005 \\times 10{,}973.4}{0.6}} \\\\ &amp;= 2\\sqrt{91.445} \\approx 19.13\\ \\text{m} \\end{aligned}\\] The key's 19.52 m is the closest option and depends on the exact constants used."
                 },
                 {
                     id: "cm20q087",
@@ -1223,7 +1223,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "NS²/2.0" }
                     ],
                     answer: "c",
-                    explanation: "For a summit curve where the length (L) is greater than the Sight Distance (S), the required length is L = (N * S²) / (4.4), where N is the deviation angle."
+                    explanation: "For a summit curve longer than the sight distance \\(S\\), \\[L = \\dfrac{NS^2}{4.4}\\] where \\(N\\) is the deviation angle."
                 },
                 {
                     id: "cm20q088",
@@ -1236,7 +1236,7 @@ const CIVIL_MODEL_20 = {
                         { key: "d", text: "NS²/8H" }
                     ],
                     answer: "d",
-                    explanation: "The formula for the length of a summit curve (L) when L &gt; S (Sight Distance) is L = (N * S²) / (8 * H), where H is the height of the driver's eye above the road surface (usually 1.2m). This ensures adequate sight distance over the crest."
+                    explanation: "For a summit curve longer than the sight distance \\(S\\), \\[L = \\dfrac{NS^2}{8H}\\] where \\(H\\) is the driver's eye height (usually 1.2 m). This ensures adequate sight distance over the crest."
                 },
                 {
                     id: "cm20q089",

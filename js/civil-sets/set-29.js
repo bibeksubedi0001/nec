@@ -110,7 +110,7 @@ const CIVIL_MODEL_29 = {
                         { key: "d", text: "All of the above" }
                     ],
                     answer: "d",
-                    explanation: "Given the common centerline calculation for a building (e.g., 20m total centerline length), the out-to-out long wall length is often given directly (6.80m), and the in-to-in short wall length is derived by subtracting the wall thickness from the centerline length (e.g., 4m - 0.8m = 3.20m if thickness is 0.4m). All statements align with this logic."
+                    explanation: "With the usual centre-line working (for example a 20 m total centre-line length), the out-to-out long wall length is given directly as 6.80 m, and the in-to-in short wall length is the centre-line length less the wall thickness. For a 0.4 m wall, \\[4 - 0.8 = 3.20\\ \\text{m}\\] All the statements agree with this."
                 },
                 {
                     id: "cm29q007",
@@ -236,7 +236,7 @@ const CIVIL_MODEL_29 = {
                         { key: "d", text: "The ratio of ultimate stress to the permissible stress" }
                     ],
                     answer: "d",
-                    explanation: "Factor of Safety (FOS) is a design criterion used to provide a margin of safety against failure. It is defined as the ratio of the ultimate stress (or yield stress) of the material to the allowable (permissible) stress used in the design (FOS = σ_ultimate / σ_allowable)."
+                    explanation: "The factor of safety provides a margin against failure. It is the ratio of the ultimate (or yield) stress of the material to the allowable stress used in design: \\[\\text{FOS} = \\dfrac{\\sigma_{ult}}{\\sigma_{allow}}\\]"
                 },
                 {
                     id: "cm29q016",
@@ -249,7 +249,7 @@ const CIVIL_MODEL_29 = {
                         { key: "d", text: "None of the mentioned" }
                     ],
                     answer: "a",
-                    explanation: "In its simplest one-dimensional form (e.g., uniaxial tension/compression), Hooke's Law states that the normal stress (σ) is proportional to the corresponding normal strain (ε), and the constant of proportionality is Young's Modulus (E): σ = Eε."
+                    explanation: "In its simplest one-dimensional form (uniaxial tension or compression), Hooke's law says the normal stress is proportional to the corresponding normal strain, with Young's modulus as the constant: \\[\\sigma = E\\varepsilon\\]"
                 },
                 {
                     id: "cm29q017",
@@ -501,7 +501,7 @@ const CIVIL_MODEL_29 = {
                         { key: "d", text: "q_f = cN_c" }
                     ],
                     answer: "c",
-                    explanation: "Terzaghi's ultimate bearing capacity equation for a strip footing is: q_u = cN_c + qN_q + ½γB N_γ, where c is cohesion, q is surcharge (γD_f), γ is soil unit weight, B is footing width, and N_c, N_q, N_γ are bearing capacity factors."
+                    explanation: "Terzaghi's ultimate bearing capacity for a strip footing is \\[q_u = cN_c + qN_q + \\dfrac{1}{2}\\gamma BN_\\gamma\\] where \\(c\\) is cohesion, \\(q = \\gamma D_f\\) the surcharge, \\(\\gamma\\) the soil unit weight, \\(B\\) the footing width and \\(N_c\\), \\(N_q\\), \\(N_\\gamma\\) the bearing capacity factors."
                 },
                 {
                     id: "cm29q035",
@@ -657,7 +657,7 @@ const CIVIL_MODEL_29 = {
                         { key: "d", text: "100 g/cm²" }
                     ],
                     answer: "c",
-                    explanation: "A small seating pressure (approximately 70 g/cm² or 7 kN/m²) is applied initially to ensure proper contact between the plate and the soil bed and to take up any irregularities before official readings begin."
+                    explanation: "A small seating pressure (about 70 g per cm<sup>2</sup>, or 7 kN per m<sup>2</sup>) is applied first to ensure proper contact between the plate and the soil bed and to take up any irregularities before the readings begin."
                 }
             ]
         },
@@ -809,7 +809,7 @@ const CIVIL_MODEL_29 = {
                         { key: "d", text: "None of the above" }
                     ],
                     answer: "c",
-                    explanation: "The volume of direct runoff is calculated as the area under the triangular hydrograph: (1/2) * base * height = (1/2) * (80 hrs * 3600 s/hr) * (50 m³/s). This volume in m³ is divided by the catchment area (144 km² * 10^6 m²/km²) to get the depth of effective rainfall (rainfall excess) in meters, which is then converted to cm. The calculation yields 5 cm."
+                    explanation: "The runoff volume is the area under the triangular hydrograph: \\[\\begin{aligned} V &amp;= \\dfrac{1}{2} \\times (80 \\times 3600) \\times 50 \\\\ &amp;= 7.2 \\times 10^6\\ \\text{m}^3 \\end{aligned}\\] Dividing by the catchment area of \\(144 \\times 10^6\\) m<sup>2</sup> gives \\[\\dfrac{7.2 \\times 10^6}{144 \\times 10^6} = 0.05\\ \\text{m}\\] or 5 cm of rainfall excess."
                 }
             ]
         },
@@ -896,7 +896,7 @@ const CIVIL_MODEL_29 = {
                         { key: "d", text: "37500 m³" }
                     ],
                     answer: "d",
-                    explanation: "1. Calculate total sediment mass: Mass = Discharge × Concentration × Time = 25 m³/s × 5 kg/m³ × (10 × 24 × 3600 s) = 108,000,000 kg. 2. Bulk Density = Particle Density × Packing Factor = 2400 kg/m³ × 1.2 = 2880 kg/m³. 3. Volume = Mass / Bulk Density = 108,000,000 kg / 2880 kg/m³ = 37,500 m³."
+                    explanation: "The sediment mass over 10 days is \\[\\begin{aligned} M &amp;= 25 \\times 5 \\\\ &amp;\\quad \\times (10 \\times 24 \\times 3600) \\\\ &amp;= 108{,}000{,}000\\ \\text{kg} \\end{aligned}\\] The bulk density is \\(2400 \\times 1.2 = 2880\\) kg per m<sup>3</sup>, so \\[\\begin{aligned} V &amp;= \\dfrac{108{,}000{,}000}{2880} \\\\ &amp;= 37{,}500\\ \\text{m}^3 \\end{aligned}\\]"
                 },
                 {
                     id: "cm29q064",
@@ -922,7 +922,7 @@ const CIVIL_MODEL_29 = {
                         { key: "d", text: "1 kg/cm²" }
                     ],
                     answer: "b",
-                    explanation: "Tractive stress (τ) is calculated using the formula τ = γ w R S, where γ w is the unit weight of water (9810 N/m³), R is the hydraulic radius (≈ depth = 2m for a wide channel), and S is the slope (1/10000 = 0.0001). Thus, τ = 9810 N/m³ × 2 m × 0.0001 = 1.962 N/m². This is the permissible stress in SI units."
+                    explanation: "The tractive stress is \\(\\tau = \\gamma_wRS\\), with \\(\\gamma_w = 9810\\) N per m<sup>3</sup>, \\(R \\approx\\) the depth of 2 m for a wide channel and \\(S = 0.0001\\): \\[\\begin{aligned} \\tau &amp;= 9810 \\times 2 \\times 0.0001 \\\\ &amp;= 1.962 \\end{aligned}\\] N per m<sup>2</sup>. This is the permissible stress in SI units; the key's option prints the same number with kg per m<sup>2</sup>."
                 },
                 {
                     id: "cm29q066",
@@ -996,7 +996,7 @@ const CIVIL_MODEL_29 = {
                         { key: "d", text: "20000 m³" }
                     ],
                     answer: "c",
-                    explanation: "Calculation: Drainage Coefficient (DC) = 1.5 cm/day = 0.015 m/day. Volume of water to remove per hectare per day = 0.015 m * 10,000 m² = 150 m³/day/ha. For 5 days and 10 hectares: 150 m³/day/ha * 5 days * 10 ha = 7,500 m³."
+                    explanation: "The drainage coefficient is 1.5 cm per day, or 0.015 m per day, so one hectare sheds \\[0.015 \\times 10{,}000 = 150\\ \\text{m}^3\\] per day. For 5 days and 10 hectares, \\[150 \\times 5 \\times 10 = 7500\\ \\text{m}^3\\]"
                 },
                 {
                     id: "cm29q071",
@@ -1187,7 +1187,7 @@ const CIVIL_MODEL_29 = {
                         { key: "d", text: "1.4 kg/mm²" }
                     ],
                     answer: "a",
-                    explanation: "Using Boussinesq's formula for a circular loaded area: σ_z = p * [1 - 1 / (1 + (a/z)^2)^(3/2)]. Here, p=7 kg/cm², a=16 cm, z=40 cm. (a/z)=16/40=0.4. σ_z = 7 * [1 - 1 / (1 + 0.4^2)^(3/2)] = 7 * [1 - 1 / (1.16)^(3/2)] ≈ 7 * [1 - 1 / 1.25] = 7 * [1 - 0.8] = 7 * 0.2 = 1.4 kg/cm²."
+                    explanation: "Boussinesq's result under the centre of a circular load is \\[\\sigma_z = p\\left[1 - \\dfrac{1}{(1 + (a{/}z)^2)^{3{/}2}}\\right]\\] With \\(\\dfrac{a}{z} = \\dfrac{16}{40} = 0.4\\), \\(1.16^{3{/}2} \\approx 1.25\\), so \\[\\sigma_z = 7(1 - 0.8) = 1.4\\ \\text{kg/cm}^2\\]"
                 },
                 {
                     id: "cm29q085",
@@ -1200,7 +1200,7 @@ const CIVIL_MODEL_29 = {
                         { key: "d", text: "0 kg/cm²" }
                     ],
                     answer: "b",
-                    explanation: "'On top of the pavement' means at the surface and directly under the load. The vertical stress at the interface between the load and the pavement is equal to the applied contact pressure, which is 6 kg/cm²."
+                    explanation: "'On top of the pavement' means at the surface directly under the load. The vertical stress at the interface between the load and the pavement equals the applied contact pressure, 6 kg per cm<sup>2</sup>."
                 },
                 {
                     id: "cm29q086",
@@ -1252,7 +1252,7 @@ const CIVIL_MODEL_29 = {
                         { key: "d", text: "1.85 kg/cm²" }
                     ],
                     answer: "b",
-                    explanation: "This requires using a method like Odemark's equivalent thickness to convert the layered system to an equivalent homogeneous mass, then applying Boussinesq. An approximate calculation or use of charts gives a value around 0.85 kg/cm². The exact value depends on the modulus of each layer."
+                    explanation: "This needs a method such as Odemark's equivalent thickness to convert the layered system to an equivalent homogeneous mass before applying Boussinesq. An approximate calculation or charts give about 0.85 kg per cm<sup>2</sup>; the exact value depends on the modulus of each layer."
                 }
             ]
         },

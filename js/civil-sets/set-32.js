@@ -97,7 +97,7 @@ const CIVIL_MODEL_32 = {
                         { key: "d", text: "(Original cost - Life in year)/Scrap value" }
                     ],
                     answer: "a",
-                    explanation: "The straight-line depreciation formula is: Annual Depreciation = (Original Cost - Scrap Value) / Useful Life (in years)."
+                    explanation: "The straight-line depreciation per year is \\[D = \\dfrac{C - S}{n}\\] where \\(C\\) is the original cost, \\(S\\) the scrap value and \\(n\\) the useful life in years."
                 },
                 {
                     id: "cm32q006",
@@ -301,7 +301,7 @@ const CIVIL_MODEL_32 = {
                         { key: "d", text: "both (A) and (B)" }
                     ],
                     answer: "d",
-                    explanation: "The fundamental relationships are: dM/dx = V (rate of change of bending moment is shear force) and dV/dx = -w (rate of change of shear force is equal to the negative of the load intensity). Therefore, both statements (A) and (B) are correct, with (A) being precise and (B) having a sign convention."
+                    explanation: "The fundamental relationships are \\[\\dfrac{dM}{dx} = V, \\qquad \\dfrac{dV}{dx} = -w\\] So both statements (A) and (B) are correct, (A) exactly and (B) up to the sign convention."
                 },
                 {
                     id: "cm32q021",
@@ -340,7 +340,7 @@ const CIVIL_MODEL_32 = {
                         { key: "d", text: "none" }
                     ],
                     answer: "c",
-                    explanation: "When a beam of constant flexural rigidity (EI) is subjected to a constant bending moment (M) throughout its length, the curvature (1/R = M/EI) is constant. A curve of constant curvature is a circular arc."
+                    explanation: "When a beam of constant flexural rigidity \\(EI\\) carries a constant moment \\(M\\) along its length, the curvature \\(\\dfrac{1}{R} = \\dfrac{M}{EI}\\) is constant. A curve of constant curvature is a circular arc."
                 },
                 {
                     id: "cm32q024",
@@ -591,7 +591,7 @@ const CIVIL_MODEL_32 = {
                         { key: "d", text: "Triangular" }
                     ],
                     answer: "a",
-                    explanation: "The equation q2 = α * qs likely relates to the pressure distribution under a combined footing. Setting α=0 would typically simplify the pressure distribution to a uniform one, which corresponds to a rectangular footing where the resultant load is at the centroid."
+                    explanation: "The equation \\(q_2 = \\alpha q_s\\) probably relates to the pressure distribution under a combined footing. Setting \\(\\alpha = 0\\) would typically make the pressure distribution uniform, corresponding to a rectangular footing with the resultant load at the centroid."
                 },
                 {
                     id: "cm32q042",
@@ -795,7 +795,7 @@ const CIVIL_MODEL_32 = {
                         { key: "d", text: "25 m³/s" }
                     ],
                     answer: "d",
-                    explanation: "The baseflow is constant at 40 m³/s. Therefore, the peak direct runoff (Q_d) is the total peak (240 m³/s) minus the baseflow (40 m³/s) = 200 m³/s. This DRH was produced by 8 cm (80 mm) of effective rainfall. The peak of the unit hydrograph (for 1 cm of effective rainfall) is Q_d / (effective rainfall depth) = 200 / 8 = 25 m³/s."
+                    explanation: "With a constant base flow of 40 m<sup>3</sup> per s, the peak direct runoff is \\(240 - 40 = 200\\) m<sup>3</sup> per s, produced by 8 cm of rainfall excess. The unit hydrograph peak, for 1 cm, is \\[\\dfrac{200}{8} = 25\\ \\text{m}^3\\text{/s}\\]"
                 },
                 {
                     id: "cm32q057",
@@ -847,7 +847,7 @@ const CIVIL_MODEL_32 = {
                         { key: "d", text: "Stokes" }
                     ],
                     answer: "d",
-                    explanation: "Dynamic viscosity units are Pa-s, N-s/m², and Poise (1 Pa-s = 10 Poise). Stokes is a unit of kinematic viscosity, which is dynamic viscosity divided by density (m²/s)."
+                    explanation: "Dynamic viscosity is measured in Pa s, N s per m<sup>2</sup> and poise (1 Pa s equals 10 poise). The stokes is a unit of kinematic viscosity, dynamic viscosity divided by density."
                 }
             ]
         },
@@ -960,7 +960,7 @@ const CIVIL_MODEL_32 = {
                         { key: "d", text: "8 MW" }
                     ],
                     answer: "d",
-                    explanation: "The theoretical hydraulic power is calculated as P = ρ * g * Q * H, where ρ (density of water) = 1000 kg/m³, g (gravity) = 9.81 m/s², Q (discharge) = 10 m³/s, H (head) = 90m. P = 1000 * 9.81 * 10 * 90 = 8,829,000 W or approximately 8.8 MW. The closest option is 8 MW, which is a realistic output after accounting for turbine and generator efficiencies."
+                    explanation: "The theoretical hydraulic power is \\[\\begin{aligned} P &amp;= \\rho gQH \\\\ &amp;= 1000 \\times 9.81 \\times 10 \\times 90 \\\\ &amp;= 8{,}829{,}000\\ \\text{W} \\approx 8.8\\ \\text{MW} \\end{aligned}\\] The closest option is 8 MW, a realistic output after turbine and generator efficiencies."
                 },
                 {
                     id: "cm32q069",
@@ -972,7 +972,7 @@ const CIVIL_MODEL_32 = {
                         { key: "c", text: "89.5 %" }
                     ],
                     answer: "a",
-                    explanation: "Overall efficiency (η) = Actual Power Output / Theoretical Hydraulic Power. Theoretical Power, P_theoretical = ρ * g * Q * H = 1000 kg/m³ * 9.81 m/s² * 56 m³/s * 822 m ≈ 451.6 MW. η = (456 MW / 451.6 MW) * 100% ≈ 101%. This is impossible as efficiency cannot exceed 100%. There might be a discrepancy in the numbers provided. Using the formula in reverse: η = P_actual / (ρ * g * Q * H) = 456e6 / (1000 * 9.81 * 56 * 822) ≈ 0.987 or 98.7%, which is not an option. The most plausible answer from the given choices, often cited for such projects, is 87.5%."
+                    explanation: "The overall efficiency is the actual output divided by the theoretical hydraulic power: \\[\\begin{aligned} P_{th} &amp;= 1000 \\times 9.81 \\times 56 \\times 822 \\\\ &amp;\\approx 451.6\\ \\text{MW} \\end{aligned}\\] This is less than the stated 456 MW, which would make \\(\\eta \\approx 101\\%\\), an impossible value; the data are inconsistent. The key's 87.5%, a figure often cited for such projects, is kept as the intended answer."
                 }
             ]
         },
@@ -1337,7 +1337,7 @@ const CIVIL_MODEL_32 = {
                         { key: "d", text: "all of the above" }
                     ],
                     answer: "a",
-                    explanation: "Alkalinity is a measure of the water's capacity to neutralize acid and is primarily due to carbonates and bicarbonates. When Total Hardness (TH) &gt; Alkalinity, the carbonate hardness (CH) is limited by the alkalinity present, so CH = Alkalinity."
+                    explanation: "Alkalinity measures the water's capacity to neutralise acid and comes mainly from carbonates and bicarbonates. When total hardness exceeds alkalinity, the carbonate hardness is limited by the alkalinity present: \\[\\text{CH} = \\text{alkalinity}\\]"
                 },
                 {
                     id: "cm32q096",

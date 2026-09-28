@@ -223,7 +223,7 @@ const CIVIL_MODEL_23 = {
                         { key: "d", text: "E/MI" }
                     ],
                     answer: "a",
-                    explanation: "The curvature (1/R) of a beam is given by 1/R = M/(EI), where M is bending moment, E is modulus of elasticity, and I is moment of inertia."
+                    explanation: "The curvature of a beam is \\[\\dfrac{1}{R} = \\dfrac{M}{EI}\\] where \\(M\\) is the bending moment, \\(E\\) the modulus of elasticity and \\(I\\) the moment of inertia."
                 },
                 {
                     id: "cm23q015",
@@ -340,7 +340,7 @@ const CIVIL_MODEL_23 = {
                         { key: "d", text: "Inertia" }
                     ],
                     answer: "b",
-                    explanation: "The strength of a beam refers to its maximum moment carrying capacity (M = f * Z), which is a function of its cross-sectional shape and material."
+                    explanation: "The strength of a beam is its maximum moment-carrying capacity, \\[M = fZ\\] which depends on its cross-sectional shape and material."
                 },
                 {
                     id: "cm23q024",
@@ -401,7 +401,7 @@ const CIVIL_MODEL_23 = {
                         { key: "d", text: "600 N/mm²" }
                     ],
                     answer: "b",
-                    explanation: "For a bolt of property class X.Y the ultimate strength is X times 100 and the yield strength is X times Y times 10. For class 4.6 that gives an ultimate of 400 and a yield of 4 times 6 times 10, which is 240 N/mm². The second digit is therefore the yield-to-ultimate ratio expressed in tenths."
+                    explanation: "For a bolt of property class X.Y the ultimate strength is \\(X \\times 100\\) and the yield strength is \\(X \\times Y \\times 10\\). For class 4.6 that gives an ultimate of 400 and a yield of \\[4 \\times 6 \\times 10 = 240\\ \\text{N/mm}^2\\] The second digit is therefore the yield-to-ultimate ratio expressed in tenths."
                 },
                 {
                     id: "cm23q028",
@@ -477,7 +477,7 @@ const CIVIL_MODEL_23 = {
                         { key: "b", text: "0.9 fub An / γmb" }
                     ],
                     answer: "b",
-                    explanation: "As per IS 800:2007, the design tensile strength of a bolt is Tdb = 0.9 fub An / γmb, where γmb is the partial safety factor for material of bolt (1.25)."
+                    explanation: "IS 800:2007 gives the design tensile strength of a bolt as \\[T_{db} = \\dfrac{0.9f_{ub}A_n}{\\gamma_{mb}}\\] where \\(\\gamma_{mb} = 1.25\\) is the partial safety factor for the bolt material."
                 }
             ]
         },
@@ -806,7 +806,7 @@ const CIVIL_MODEL_23 = {
                         { key: "d", text: "9800 Pa" }
                     ],
                     answer: "d",
-                    explanation: "Hydrostatic pressure is calculated by P = ρgh, where ρ is density (1000 kg/m³ for water), g is gravity (9.8 m/s²), and h is depth (1m). Thus, P = 1000 * 9.8 * 1 = 9800 Pa."
+                    explanation: "The hydrostatic pressure is \\[\\begin{aligned} P &amp;= \\rho gh = 1000 \\times 9.8 \\times 1 \\\\ &amp;= 9800\\ \\text{Pa} \\end{aligned}\\]"
                 }
             ]
         },
@@ -1373,7 +1373,7 @@ const CIVIL_MODEL_23 = {
                         { key: "d", text: "400 s⁻¹ to 500 s⁻¹" }
                     ],
                     answer: "a",
-                    explanation: "The velocity gradient (G) for flocculation is typically in the range of 20-100 s⁻¹, but common values for design are often cited as 10-100 s⁻¹, with the closest standard option being 100-200 s⁻¹."
+                    explanation: "The velocity gradient \\(G\\) for flocculation is usually 20-100 per s in design, sometimes quoted as 10-100 per s; among the options the closest standard range is 100-200 per s."
                 },
                 {
                     id: "cm23q099",

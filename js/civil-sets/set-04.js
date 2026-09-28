@@ -300,7 +300,7 @@ const CIVIL_MODEL_4 = {
                         { key: "d", text: "22.4 N/mm²" }
                     ],
                     answer: "d",
-                    explanation: "The maximum shear stress is the radius of the Mohr circle, the root of half the difference of the direct stresses squared plus the shear stress squared. That is the root of (10 squared plus 20 squared), which is the root of 500, or 22.4 N/mm²."
+                    explanation: "The maximum shear stress is the radius of the Mohr circle: \\[\\tau_{max} = \\sqrt{\\left(\\dfrac{\\sigma_x - \\sigma_y}{2}\\right)^2 + \\tau^2}\\] \\[\\begin{aligned} &amp;= \\sqrt{10^2 + 20^2} \\\\ &amp;= \\sqrt{500} = 22.4 \\end{aligned}\\] N per mm<sup>2</sup>."
                 },
                 {
                     id: "cm4q021",
@@ -326,7 +326,7 @@ const CIVIL_MODEL_4 = {
                         { key: "d", text: "2.36" }
                     ],
                     answer: "b",
-                    explanation: "For a rectangular section the shear stress varies parabolically, zero at the top and bottom fibres and greatest at the neutral axis, where it reaches 1.5 times the average value V over A. For a circular section the factor is 4/3."
+                    explanation: "For a rectangular section the shear stress varies parabolically, zero at the top and bottom fibres and greatest at the neutral axis, where \\[\\tau_{max} = 1.5\\dfrac{V}{A}\\] For a circular section the factor is \\(\\dfrac{4}{3}\\)."
                 },
                 {
                     id: "cm4q023",
@@ -1222,7 +1222,7 @@ const CIVIL_MODEL_4 = {
                         { key: "d", text: "3.70 m" }
                     ],
                     answer: "c",
-                    explanation: "The maximum perpendicular offset occurs at the junction of the transition curve and the circular curve, where the distance along the tangent is approximately equal to the total length of the transition curve: \\(\\(y_{\\text{max}}=\\frac{L^{3}}{6RL}=\\frac{L^{2}}{6R}\\)\\) \\(\\(y_{\\text{max}}=\\frac{90^{2}}{6\\times 500}=\\frac{8100}{3000}=2.70\\text{\\ m}\\)\\)"
+                    explanation: "The maximum offset occurs at the junction of the transition and circular curves, where the distance along the tangent is about the full transition length: \\[y_{max} = \\dfrac{L^3}{6RL} = \\dfrac{L^2}{6R}\\] \\[\\begin{aligned} y_{max} &amp;= \\dfrac{90^2}{6 \\times 500} = \\dfrac{8100}{3000} \\\\ &amp;= 2.70\\ \\text{m} \\end{aligned}\\]"
                 },
                 {
                     id: "cm4q088",

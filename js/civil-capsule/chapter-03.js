@@ -69,7 +69,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The vertical surface-tension force scales with radius, whereas column weight scales with radius squared times height. Thus h is inversely proportional to radius and the new rise is 18/3 = 6 mm, neglecting meniscus volume.<p>Capsule 4th ed., p. 10; topic 3 point 1.</p>",
+          "explanation": "The vertical surface-tension force scales with radius, whereas column weight scales with radius squared times height. Thus \\(h \\propto \\dfrac{1}{r}\\) and the new rise is \\[\\dfrac{18}{3} = 6\\ \\text{mm}\\] neglecting meniscus volume.<p>Capsule 4th ed., p. 10; topic 3 point 1.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -107,7 +107,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For matching fluid, gravity and wetting conditions, h = 4 sigma cos(theta)/(rho g d), so hd is constant. Therefore dP/dQ = hQ/hP = 3/2. This is a reservoir-fed equilibrium, not a comparison of equal poured volumes.<p>Source note: Page 10 point 2 loses the denominator in its point extract; the complete page text and corrected local capillary notes retain 2/3.</p><p>Capsule 4th ed., p. 10; topic 3 point 2.</p>",
+          "explanation": "For matching fluid, gravity and wetting conditions, \\[h = \\dfrac{4\\sigma\\cos\\theta}{\\rho g d}\\] so \\(hd\\) is constant. Therefore \\[\\dfrac{d_P}{d_Q} = \\dfrac{h_Q}{h_P} = \\dfrac{3}{2}\\] This is a reservoir-fed equilibrium, not a comparison of equal poured volumes.<p>Source note: Page 10 point 2 loses the denominator in its point extract; the complete page text and corrected local capillary notes retain 2/3.</p><p>Capsule 4th ed., p. 10; topic 3 point 2.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -221,7 +221,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The contact-line perimeter is 2 pi r, so the upward interfacial force is 2 pi r sigma cos(theta). The raised column weighs rho g pi r squared h. Equating these gives h = 2 sigma cos(theta)/(rho g r).<p>Source note: Page 10 point 5 is incomplete as a proposition; the question tests the underlying force balance without inventing missing source data.</p><p>Capsule 4th ed., p. 10; topic 3 point 5.</p>",
+          "explanation": "The contact-line perimeter is \\(2\\pi r\\), so the upward interfacial force is \\(2\\pi r\\sigma\\cos\\theta\\). The raised column weighs \\(\\rho g\\pi r^2 h\\). Equating these gives \\[2\\pi r\\sigma\\cos\\theta = \\rho g\\pi r^2 h\\] \\[h = \\dfrac{2\\sigma\\cos\\theta}{\\rho g r}\\]<p>Source note: Page 10 point 5 is incomplete as a proposition; the question tests the underlying force balance without inventing missing source data.</p><p>Capsule 4th ed., p. 10; topic 3 point 5.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -337,7 +337,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Newton's viscosity law is shear stress = dynamic viscosity times velocity gradient. Equal gradients therefore produce stresses in proportion to dynamic viscosity, even when the densities match.<p>Capsule 4th ed., pp. 10, 11; topic 3 point 6.</p>",
+          "explanation": "Newton's viscosity law is \\[\\tau = \\mu\\dfrac{du}{dy}\\] Equal gradients therefore produce stresses in proportion to dynamic viscosity, even when the densities match.<p>Capsule 4th ed., pp. 10, 11; topic 3 point 6.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -453,7 +453,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Bulk modulus K = -dp/(dV/V), so the magnitude of the small volume strain is dp/K. A larger measured K gives less compression. Increasing K with pressure is a common liquid trend, not a universal consequence of the definition.<p>Source note: p11 n8: pressure dependence is state- and path-dependent; qualified using measured K.</p><p>Capsule 4th ed., p. 11; topic 3 point 8.</p>",
+          "explanation": "By definition of the bulk modulus, \\[\\dfrac{dV}{V} = -\\dfrac{dp}{K}\\] so the magnitude of the small volume strain is \\(\\dfrac{dp}{K}\\). A larger measured \\(K\\) gives less compression. Increasing \\(K\\) with pressure is a common liquid trend, not a universal consequence of the definition.<p>Source note: p11 n8: pressure dependence is state- and path-dependent; qualified using measured K.</p><p>Capsule 4th ed., p. 11; topic 3 point 8.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -491,7 +491,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "A Newtonian fluid obeys tau = mu times shear rate, with constant mu at the specified state, giving a straight line through the origin. Nonlinearity indicates non-Newtonian behavior; its curvature is needed to distinguish thinning from thickening.<p>Capsule 4th ed., p. 11; topic 3 point 9.</p>",
+          "explanation": "A Newtonian fluid obeys \\[\\tau = \\mu\\dot\\gamma\\] with constant \\(\\mu\\) at the specified state, giving a straight line through the origin. Nonlinearity indicates non-Newtonian behaviour; its curvature is needed to distinguish thinning from thickening.<p>Capsule 4th ed., p. 11; topic 3 point 9.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -567,7 +567,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Specific volume is volume per unit mass, v = 1/rho. Thus v = 1/800 = 0.00125 m^3/kg. It is not specific gravity, which is a dimensionless density ratio.<p>Capsule 4th ed., p. 11; topic 3 point 11.</p>",
+          "explanation": "Specific volume is volume per unit mass: \\[\\begin{aligned} v &amp;= \\dfrac{1}{\\rho} = \\dfrac{1}{800} \\\\ &amp;= 0.00125\\ \\text{m}^3\\text{/kg} \\end{aligned}\\] It is not specific gravity, which is a dimensionless density ratio.<p>Capsule 4th ed., p. 11; topic 3 point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -605,7 +605,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Viscosity describes resistance to shearing motion between adjacent fluid layers: tau = mu du/dy. Bulk modulus concerns volume compression, while surface tension concerns an interface rather than shear within the oil.<p>Capsule 4th ed., p. 11; topic 3 point 12.</p>",
+          "explanation": "Viscosity describes resistance to shearing motion between adjacent fluid layers: \\[\\tau = \\mu\\dfrac{du}{dy}\\] Bulk modulus concerns volume compression, while surface tension concerns an interface rather than shear within the oil.<p>Capsule 4th ed., p. 11; topic 3 point 12.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -643,7 +643,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Dynamic viscosity has dimensions M L^-1 T^-1 and density has M L^-3. Their ratio cancels mass and leaves L^2 T^-1, corresponding to m^2/s rather than Pa s.<p>Capsule 4th ed., p. 11; topic 3 point 13.</p>",
+          "explanation": "Dynamic viscosity has dimensions \\(ML^{-1}T^{-1}\\) and density has \\(ML^{-3}\\). Their ratio cancels mass: \\[\\dfrac{ML^{-1}T^{-1}}{ML^{-3}} = L^2T^{-1}\\] This corresponds to \\(\\text{m}^2\\text{/s}\\) rather than Pa s.<p>Capsule 4th ed., p. 11; topic 3 point 13.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -833,7 +833,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "A thin soap film has two interfaces, giving excess pressure delta p = 4 sigma/R. Substitution gives 4(0.025)/0.010 = 10 Pa. The one-interface liquid-drop expression would incorrectly halve the result.<p>Source note: p11 n21: 4T/R is excess pressure, not absolute internal pressure.</p><p>Capsule 4th ed., p. 11; topic 3 point 21.</p>",
+          "explanation": "A thin soap film has two interfaces, giving \\[\\begin{aligned} \\Delta p &amp;= \\dfrac{4\\sigma}{R} = \\dfrac{4 \\times 0.025}{0.010} \\\\ &amp;= 10\\ \\text{Pa} \\end{aligned}\\] The one-interface liquid-drop expression would incorrectly halve the result.<p>Source note: p11 n21: 4T/R is excess pressure, not absolute internal pressure.</p><p>Capsule 4th ed., p. 11; topic 3 point 21.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -871,7 +871,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Dynamic viscosity is the proportionality constant mu = tau/shear rate. When stress and rate both double, their ratio is unchanged. Shear-rate-dependent viscosity would instead be non-Newtonian behavior.<p>Capsule 4th ed., p. 12; topic 3 point 55.</p>",
+          "explanation": "Dynamic viscosity is the proportionality constant \\[\\mu = \\dfrac{\\tau}{\\dot\\gamma}\\] When stress and rate both double, their ratio is unchanged. Shear-rate-dependent viscosity would instead be non-Newtonian behaviour.<p>Capsule 4th ed., p. 12; topic 3 point 55.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -909,7 +909,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The power-law exponent is two, greater than one. Apparent viscosity is tau/gammaDot = 0.05 gammaDot, which increases with shear rate, identifying shear thickening. There is no finite yield intercept in the stated equation.<p>Capsule 4th ed., p. 14; topic 3 point 117.</p>",
+          "explanation": "The power-law exponent is two, greater than one. Apparent viscosity is \\[\\eta = \\dfrac{\\tau}{\\dot\\gamma} = 0.05\\,\\dot\\gamma\\] which increases with shear rate, identifying shear thickening. There is no finite yield intercept in the stated equation.<p>Capsule 4th ed., p. 14; topic 3 point 117.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -947,7 +947,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "First calculate tau = 0.05 times 4^2 = 0.80 Pa. Apparent viscosity is stress divided by shear rate, 0.80/4 = 0.20 Pa s. The consistency coefficient K has different units and is not itself the apparent viscosity.<p>Capsule 4th ed., p. 14; topic 3 point 117.</p>",
+          "explanation": "First calculate the stress: \\[\\tau = 0.05 \\times 4^2 = 0.80\\ \\text{Pa}\\] Apparent viscosity is stress divided by shear rate: \\[\\eta = \\dfrac{0.80}{4} = 0.20\\ \\text{Pa s}\\] The consistency coefficient \\(K\\) has different units and is not itself the apparent viscosity.<p>Capsule 4th ed., p. 14; topic 3 point 117.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -985,7 +985,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "K = -dp/(dV/V). A finite dp combined with vanishing volume strain makes K tend to infinity, while compressibility 1/K tends to zero. Real liquids have large but finite bulk moduli and are only approximately incompressible.<p>Capsule 4th ed., p. 14; topic 3 point 119.</p>",
+          "explanation": "By definition, \\[K = -V\\dfrac{dp}{dV}\\] A finite \\(dp\\) combined with vanishing volume strain makes \\(K \\to \\infty\\), while the compressibility \\(\\dfrac{1}{K} \\to 0\\). Real liquids have large but finite bulk moduli and are only approximately incompressible.<p>Capsule 4th ed., p. 14; topic 3 point 119.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1023,7 +1023,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The capillary relation is h = 2 sigma cos(theta)/(rho g r). With finite positive sigma, density, gravity and radius, h = 0 requires cos(theta) = 0, giving theta = 90 degrees. Wetting and nonwetting angles on either side produce rise or depression.<p>Capsule 4th ed., p. 14; topic 3 point 122.</p>",
+          "explanation": "The capillary relation is \\[h = \\dfrac{2\\sigma\\cos\\theta}{\\rho g r}\\] With finite positive \\(\\sigma\\), density, gravity and radius, \\(h = 0\\) requires \\(\\cos\\theta = 0\\), giving \\(\\theta = 90^\\circ\\). Wetting and nonwetting angles on either side produce rise or depression.<p>Capsule 4th ed., p. 14; topic 3 point 122.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1061,7 +1061,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Mass does not change between locations, while weight is mg. Hence W_Earth/W_Moon = g_Earth/g_Moon = 6, giving 6 times 120 = 720 N. The factor six is the stated approximation, not a change in the object's mass.<p>Capsule 4th ed., p. 14; topic 3 point 128.</p>",
+          "explanation": "Mass does not change between locations, while weight is \\(mg\\). Hence \\[\\dfrac{W_E}{W_M} = \\dfrac{g_E}{g_M} = 6\\] giving \\(6 \\times 120 = 720\\) N. The factor six is the stated approximation, not a change in the object's mass.<p>Capsule 4th ed., p. 14; topic 3 point 128.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1099,7 +1099,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The signed displacement is h = 2 sigma cos(theta)/(rho g r). For a nonwetting angle, cos(theta) is negative. Reducing positive sigma makes h less negative: the depression magnitude decreases, but its sign does not change while the contact angle remains above 90 degrees.<p>Source note: Independent review: explicitly covers the bracketed fall case in p10 n4. Surface tension remains positive; the stipulated unchanged density and wetting conditions are essential.</p><p>Capsule 4th ed., p. 10; topic 3 point 4.</p>",
+          "explanation": "The signed displacement is \\[h = \\dfrac{2\\sigma\\cos\\theta}{\\rho g r}\\] For a nonwetting angle \\(\\cos\\theta\\) is negative. Reducing positive \\(\\sigma\\) makes \\(h\\) less negative: the depression magnitude decreases, but its sign does not change while the contact angle remains above \\(90^\\circ\\).<p>Source note: Independent review: explicitly covers the bracketed fall case in p10 n4. Surface tension remains positive; the stipulated unchanged density and wetting conditions are essential.</p><p>Capsule 4th ed., p. 10; topic 3 point 4.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1182,7 +1182,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Signed gauge pressure is p_abs - p_atm. Therefore p_abs = 95 + (-25) = 70 kPa. A vacuum reading expressed as a positive magnitude would instead be subtracted; the atmospheric term is not assigned an arbitrary plus-or-minus sign.<p>Source note: p11 n23 corrected: p_abs = p_atm + p_gauge for signed gauge pressure.</p><p>Capsule 4th ed., p. 11; topic 3 point 23.</p>",
+          "explanation": "Signed gauge pressure is \\(p_{\\text{abs}} - p_{\\text{atm}}\\), and here it is negative. Therefore \\[p_{\\text{abs}} = 95 - 25 = 70\\ \\text{kPa}\\] A vacuum reading expressed as a positive magnitude would instead be subtracted; the atmospheric term is not assigned an arbitrary plus-or-minus sign.<p>Source note: p11 n23 corrected: p_abs = p_atm + p_gauge for signed gauge pressure.</p><p>Capsule 4th ed., p. 11; topic 3 point 23.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1258,7 +1258,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The axial components integrate to pressure times the projected circular area, pi r^2. The curved area is 2 pi r^2, but multiplying by that area ignores cancellation of the differently directed surface forces.<p>Source note: p11 n25 restated for uniform NET pressure; hydrostatic pressure varying with depth requires integration.</p><p>Capsule 4th ed., p. 11; topic 3 point 25.</p>",
+          "explanation": "The axial components integrate to pressure times the projected circular area: \\[F = p\\pi r^2\\] The curved area is \\(2\\pi r^2\\), but multiplying by that area ignores cancellation of the differently directed surface forces.<p>Source note: p11 n25 restated for uniform NET pressure; hydrostatic pressure varying with depth requires integration.</p><p>Capsule 4th ed., p. 11; topic 3 point 25.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1296,7 +1296,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Hydrostatic equilibrium gives dp/dz = -rho g. For constant density, integration yields p/(rho g) + z = constant, the piezometric head. Pressure alone increases downward rather than remaining constant.<p>Capsule 4th ed., p. 11; topic 3 point 26.</p>",
+          "explanation": "Hydrostatic equilibrium gives \\[\\dfrac{dp}{dz} = -\\rho g\\] For constant density, integration yields \\[\\dfrac{p}{\\rho g} + z = \\text{constant}\\] the piezometric head. Pressure alone increases downward rather than remaining constant.<p>Capsule 4th ed., p. 11; topic 3 point 26.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1334,7 +1334,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Gauge pressure is rho g h = 1000 times 9.81 times 1.0 = 9810 Pa. Using g = 9.8 would give 9800 Pa; the source mixes these two values, so the gravitational acceleration is stated explicitly here.<p>Source note: p11 n27 arithmetic repaired by matching g = 9.81 to 9810 Pa.</p><p>Capsule 4th ed., p. 11; topic 3 point 27.</p>",
+          "explanation": "Gauge pressure is \\[\\begin{aligned} p &amp;= \\rho g h \\\\ &amp;= 1000 \\times 9.81 \\times 1.0 \\\\ &amp;= 9810\\ \\text{Pa} \\end{aligned}\\] Using \\(g = 9.8\\) would give 9800 Pa; the source mixes these two values, so the gravitational acceleration is stated explicitly here.<p>Source note: p11 n27 arithmetic repaired by matching g = 9.81 to 9810 Pa.</p><p>Capsule 4th ed., p. 11; topic 3 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1372,7 +1372,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "BM = I_waterplane/displaced volume = 12/20 = 0.60 m. Since G is above B, GM = BM - BG = 0.60 - 0.40 = 0.20 m. The relevant I is the waterplane-area moment, not a volume or mass moment.<p>Capsule 4th ed., p. 11; topic 3 point 28.</p>",
+          "explanation": "\\[BM = \\dfrac{I}{V} = \\dfrac{12}{20} = 0.60\\ \\text{m}\\] Since G is above B, \\[\\begin{aligned} GM &amp;= BM - BG \\\\ &amp;= 0.60 - 0.40 \\\\ &amp;= 0.20\\ \\text{m} \\end{aligned}\\] The relevant \\(I\\) is the waterplane-area moment, not a volume or mass moment.<p>Capsule 4th ed., p. 11; topic 3 point 28.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1486,7 +1486,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For equal-elevation taps containing water, delta p = (rho_Hg - rho_water)gh. This gives (13600-1000) times 9.81 times 0.15 = 18540.9 Pa = 18.54 kPa. Using mercury density alone fails to account for the displaced water columns.<p>Capsule 4th ed., p. 13; topic 3 point 100.</p>",
+          "explanation": "For equal-elevation taps containing water, \\[\\Delta p = (\\rho_{Hg} - \\rho_w)gh\\] The density difference is \\(13600 - 1000 = 12600\\) kg per m<sup>3</sup>, so \\[\\begin{aligned} \\Delta p &amp;= 12{,}600 \\times 9.81 \\times 0.15 \\\\ &amp;= 18{,}540.9\\ \\text{Pa} \\\\ &amp;= 18.54\\ \\text{kPa} \\end{aligned}\\] Using mercury density alone fails to account for the displaced water columns.<p>Capsule 4th ed., p. 13; topic 3 point 100.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1564,7 +1564,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The depressed gas-side level means the gas is above atmospheric pressure. The difference is rho g h = 1000 times 9.81 times 0.25 = 2452.5 Pa = 2.45 kPa gauge. Atmospheric pressure must be added separately for an absolute reading.<p>Capsule 4th ed., p. 13; topic 3 point 110.</p>",
+          "explanation": "The depressed gas-side level means the gas is above atmospheric pressure. The difference is \\[\\begin{aligned} \\rho gh &amp;= 1000 \\times 9.81 \\times 0.25 \\\\ &amp;= 2452.5\\ \\text{Pa} \\end{aligned}\\] that is, 2.45 kPa gauge. Atmospheric pressure must be added separately for an absolute reading.<p>Capsule 4th ed., p. 13; topic 3 point 110.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1602,7 +1602,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Hydrostatic pressure increases with depth, so deeper portions carry more force. The depth correction is IG sin^2(theta)/(A hbar), positive for a nonhorizontal gate. The relevant centroid is geometric area centroid, not necessarily the centre of gravity of a nonuniform gate.<p>Source note: p14 n121: centre of gravity replaced by area centroid; nonhorizontal plane and net hydrostatic loading specified.</p><p>Capsule 4th ed., p. 14; topic 3 point 121.</p>",
+          "explanation": "Hydrostatic pressure increases with depth, so deeper portions carry more force. The depth correction is \\[\\Delta h = \\dfrac{I_G\\sin^2\\theta}{A\\bar h}\\] positive for a nonhorizontal gate. The relevant centroid is the geometric area centroid, not necessarily the centre of gravity of a nonuniform gate.<p>Source note: p14 n121: centre of gravity replaced by area centroid; nonhorizontal plane and net hydrostatic loading specified.</p><p>Capsule 4th ed., p. 14; topic 3 point 121.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1640,7 +1640,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The difference in apparent weights is the difference in buoyancies: 80-50 = (1000-800)gV. Thus V = 30/(200 times 9.81) = 0.0152905 m^3 = 15.29 litres. Using the oil's full density instead of the density difference gives the wrong result.<p>Capsule 4th ed., p. 14; topic 3 point 129.</p>",
+          "explanation": "The difference in apparent weights is the difference in buoyancies: \\[80 - 50 = (1000 - 800)gV\\] Thus \\[\\begin{aligned} V &amp;= \\dfrac{30}{200 \\times 9.81} \\\\ &amp;= 0.0152905\\ \\text{m}^3 \\\\ &amp;= 15.29\\ \\text{litres} \\end{aligned}\\] Using the oil's full density instead of the density difference gives the wrong result.<p>Capsule 4th ed., p. 14; topic 3 point 129.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1678,7 +1678,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Let B be its water buoyancy. True weight satisfies W = 50+B = 80+0.80B, so 0.20B = 30 and B = 150 N. Therefore W = 50+150 = 200 N. The larger submerged reading is still not the true weight.<p>Capsule 4th ed., p. 14; topic 3 point 129.</p>",
+          "explanation": "Let \\(B\\) be its water buoyancy. The true weight satisfies \\[W = 50 + B = 80 + 0.80B\\] so \\(0.20B = 30\\) and \\(B = 150\\) N. Therefore \\[W = 50 + 150 = 200\\ \\text{N}\\] The larger submerged reading is still not the true weight.<p>Capsule 4th ed., p. 14; topic 3 point 129.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1837,7 +1837,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The divergence is the fractional rate of change of a material element's volume. Incompressibility therefore requires div(u) = 0. Zero curl means irrotational flow, and a zero local time derivative means steadiness; neither is the same condition.<p>Capsule 4th ed., pp. 11, 14; topic 3 point 32; topic 3 point 139.</p>",
+          "explanation": "The divergence is the fractional rate of change of a material element's volume. Incompressibility therefore requires \\[\\nabla \\cdot \\mathbf{u} = 0\\] Zero curl means irrotational flow, and a zero local time derivative means steadiness; neither is the same condition.<p>Capsule 4th ed., pp. 11, 14; topic 3 point 32; topic 3 point 139.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1955,7 +1955,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The inlet mass flow is rho A V = 4(0.03)(20) = 2.4 kg/s. Equating the outlet mass flow gives V = 2.4/[2(0.02)] = 60 m/s. Equal volume discharge would be wrong because density changes.<p>Capsule 4th ed., p. 11; topic 3 point 36.</p>",
+          "explanation": "The inlet mass flow is \\[\\begin{aligned} \\dot m &amp;= \\rho AV = 4 \\times 0.03 \\times 20 \\\\ &amp;= 2.4\\ \\text{kg/s} \\end{aligned}\\] Equating the outlet mass flow gives \\[V_2 = \\dfrac{2.4}{2 \\times 0.02} = 60\\ \\text{m/s}\\] Equal volume discharge would be wrong because density changes.<p>Capsule 4th ed., p. 11; topic 3 point 36.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1993,7 +1993,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Continuity gives A1 V1 = A2 V2. Hence V2 = (A1/A2)V1 = 2 times 2 = 4 m/s. Velocity varies inversely with area, not directly with it.<p>Capsule 4th ed., p. 11; topic 3 point 37.</p>",
+          "explanation": "Continuity gives \\(A_1V_1 = A_2V_2\\). Hence \\[\\begin{aligned} V_2 &amp;= \\dfrac{A_1}{A_2}V_1 \\\\ &amp;= 2 \\times 2 = 4\\ \\text{m/s} \\end{aligned}\\] Velocity varies inversely with area, not directly with it.<p>Capsule 4th ed., p. 11; topic 3 point 37.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2069,7 +2069,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The mechanical-energy equation is H1 = H2 + h_loss for the stated flow. Viscous dissipation prevents using the lossless Bernoulli form unchanged, but does not invalidate energy conservation or its extended engineering form.<p>Source note: p11 n39: distinguish lossless Bernoulli from the extended energy equation.</p><p>Capsule 4th ed., p. 11; topic 3 point 39.</p>",
+          "explanation": "The mechanical-energy equation for the stated flow is \\[H_1 = H_2 + h_{\\text{loss}}\\] Viscous dissipation prevents using the lossless Bernoulli form unchanged, but does not invalidate energy conservation or its extended engineering form.<p>Source note: p11 n39: distinguish lossless Bernoulli from the extended energy equation.</p><p>Capsule 4th ed., p. 11; topic 3 point 39.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2145,7 +2145,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The intercepted mass rate is rho A V = 20 kg/s. The normal velocity drops from 10 to zero, so the force magnitude is 20 times 10 = 200 N, or rho A V^2. A full reversal would instead give twice this ideal force.<p>Capsule 4th ed., p. 12; topic 3 point 45.</p>",
+          "explanation": "The intercepted mass rate is \\[\\begin{aligned} \\rho AV &amp;= 1000 \\times 0.002 \\times 10 \\\\ &amp;= 20\\ \\text{kg/s} \\end{aligned}\\] The normal velocity drops from 10 to zero, so the force magnitude is \\[\\begin{aligned} F &amp;= \\rho AV^2 = 20 \\times 10 \\\\ &amp;= 200\\ \\text{N} \\end{aligned}\\] A full reversal would instead give twice this ideal force.<p>Capsule 4th ed., p. 12; topic 3 point 45.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2183,7 +2183,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Kinematic similarity preserves the scaled motion pattern. Because Q = A V, discharge scales as area times velocity, not necessarily one-to-one. Matching force ratios or relevant dimensionless force groups is the additional requirement of dynamic similarity.<p>Source note: p12 n46: &#39;similar discharge&#39; means consistent scaling, not equal numerical discharge.</p><p>Capsule 4th ed., p. 12; topic 3 point 46.</p>",
+          "explanation": "Kinematic similarity preserves the scaled motion pattern. Because \\(Q = AV\\), discharge scales as area times velocity: \\[\\dfrac{Q_m}{Q_p} = \\dfrac{A_m}{A_p} \\cdot \\dfrac{V_m}{V_p}\\] not necessarily one-to-one. Matching force ratios or relevant dimensionless force groups is the additional requirement of dynamic similarity.<p>Source note: p12 n46: &#39;similar discharge&#39; means consistent scaling, not equal numerical discharge.</p><p>Capsule 4th ed., p. 12; topic 3 point 46.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2221,7 +2221,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The same discharge passes through each section, so V = Q/A is largest at the smallest area. In the ideal energy model, the increase in velocity head is accompanied by a decrease in static pressure head.<p>Capsule 4th ed., p. 12; topic 3 point 47.</p>",
+          "explanation": "The same discharge passes through each section, so \\[V = \\dfrac{Q}{A}\\] is largest at the smallest area. In the ideal energy model, the increase in velocity head is accompanied by a decrease in static pressure head.<p>Capsule 4th ed., p. 12; topic 3 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2335,7 +2335,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Continuity makes the mean speed constant. Bernoulli then gives p/(rho g) + z = constant, so dp/dz = -rho g. Pressure increases downward even though the flow moves downward; the source's opposite trend is incorrect.<p>Source note: p12 n57 contradicts p15 n144. Corrected using continuity plus lossless Bernoulli, not by selecting one printed statement arbitrarily.</p><p>Capsule 4th ed., p. 12; topic 3 point 57.</p>",
+          "explanation": "Continuity makes the mean speed constant. Bernoulli then gives \\[\\dfrac{p}{\\rho g} + z = \\text{constant}\\] so \\(\\dfrac{dp}{dz} = -\\rho g\\). Pressure increases downward even though the flow moves downward; the source's opposite trend is incorrect.<p>Source note: p12 n57 contradicts p15 n144. Corrected using continuity plus lossless Bernoulli, not by selecting one printed statement arbitrarily.</p><p>Capsule 4th ed., p. 12; topic 3 point 57.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2373,7 +2373,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The differential pressure is rho V^2/2, so V = sqrt(2 delta p/rho) = sqrt(2 times 2000/1000) = 2.0 m/s. Pressure difference must be converted from kPa to Pa before substitution.<p>Capsule 4th ed., p. 12; topic 3 point 75.</p>",
+          "explanation": "The differential pressure is \\(\\dfrac{\\rho V^2}{2}\\), so \\[\\begin{aligned} V &amp;= \\sqrt{\\dfrac{2\\Delta p}{\\rho}} = \\sqrt{\\dfrac{2 \\times 2000}{1000}} \\\\ &amp;= 2.0\\ \\text{m/s} \\end{aligned}\\] The pressure difference must be converted from kPa to Pa before substitution.<p>Capsule 4th ed., p. 12; topic 3 point 75.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2411,7 +2411,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The general local mass balance is partial rho/partial t + div(rho u) = 0. For incompressible motion it reduces to div(u) = 0, including unsteady three-dimensional cases. Steady two-dimensional flow is one valid case, not the only case.<p>Source note: p13 n106 true as an example but not an exclusive validity condition.</p><p>Capsule 4th ed., p. 13; topic 3 point 106.</p>",
+          "explanation": "The general local mass balance is \\[\\dfrac{\\partial\\rho}{\\partial t} + \\nabla \\cdot (\\rho\\mathbf{u}) = 0\\] For incompressible motion it reduces to \\(\\nabla \\cdot \\mathbf{u} = 0\\), including unsteady three-dimensional cases. Steady two-dimensional flow is one valid case, not the only case.<p>Source note: p13 n106 true as an example but not an exclusive validity condition.</p><p>Capsule 4th ed., p. 13; topic 3 point 106.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2449,7 +2449,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "No time change at a fixed section makes the flow steady. Since V = Q/A and area changes along the reducer, mean velocity changes with position, making the flow nonuniform. A fixed discharge does not imply a spatially constant speed.<p>Capsule 4th ed., p. 14; topic 3 point 123.</p>",
+          "explanation": "No time change at a fixed section makes the flow steady. Since \\[V = \\dfrac{Q}{A}\\] and the area changes along the reducer, the mean velocity changes with position, making the flow nonuniform. A fixed discharge does not imply a spatially constant speed.<p>Capsule 4th ed., p. 14; topic 3 point 123.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2487,7 +2487,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Total head is the sum of elevation, pressure and velocity heads: H = 2 + 3 + 4 = 9 m. Piezometric head would include only elevation plus pressure, giving 5 m.<p>Capsule 4th ed., p. 14; topic 3 point 124.</p>",
+          "explanation": "Total head is the sum of elevation, pressure and velocity heads: \\[H = 2 + 3 + 4 = 9\\ \\text{m}\\] Piezometric head would include only elevation plus pressure, giving 5 m.<p>Capsule 4th ed., p. 14; topic 3 point 124.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2525,7 +2525,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The energy equation gives p2/(rho g)-p1/(rho g) = (V1^2-V2^2)/(2g)-hL. A sufficiently large reduction in velocity head therefore recovers static pressure, even while losses reduce total head. Flow need not always move from higher to lower static pressure.<p>Capsule 4th ed., p. 14; topic 3 point 132.</p>",
+          "explanation": "The energy equation gives \\[\\dfrac{p_2 - p_1}{\\rho g} = \\dfrac{V_1^2 - V_2^2}{2g} - h_L\\] A sufficiently large reduction in velocity head therefore recovers static pressure, even while losses reduce total head. Flow need not always move from higher to lower static pressure.<p>Capsule 4th ed., p. 14; topic 3 point 132.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2601,7 +2601,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Incompressibility requires du/dx + dv/dy + dw/dz = 0. Therefore 2 - 5 + dw/dz = 0, giving dw/dz = 3 s^-1. This constrains the velocity gradient, not the value of w itself.<p>Capsule 4th ed., p. 14; topic 3 point 140.</p>",
+          "explanation": "Incompressibility requires \\[\\dfrac{\\partial u}{\\partial x} + \\dfrac{\\partial v}{\\partial y} + \\dfrac{\\partial w}{\\partial z} = 0\\] Therefore \\[2 - 5 + \\dfrac{\\partial w}{\\partial z} = 0\\] \\[\\dfrac{\\partial w}{\\partial z} = 3\\ \\text{s}^{-1}\\] This constrains the velocity gradient, not the value of \\(w\\) itself.<p>Capsule 4th ed., p. 14; topic 3 point 140.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2639,7 +2639,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The velocities are equal, so their Bernoulli velocity heads cancel. The 3 m drop in elevation becomes a 3 m increase in pressure head: delta p = rho g times 3 = 29430 Pa = +29.43 kPa. Pressure therefore decreases with increasing height.<p>Capsule 4th ed., p. 15; topic 3 point 144.</p>",
+          "explanation": "The velocities are equal, so their Bernoulli velocity heads cancel. The 3 m drop in elevation becomes a 3 m increase in pressure head: \\[\\begin{aligned} \\Delta p &amp;= \\rho g \\times 3 = 29{,}430\\ \\text{Pa} \\\\ &amp;= +29.43\\ \\text{kPa} \\end{aligned}\\] Pressure therefore decreases with increasing height.<p>Capsule 4th ed., p. 15; topic 3 point 144.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2684,7 +2684,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "HGL = z + p/(rho g), while EGL adds V^2/(2g) when alpha = 1. Their separation is therefore velocity head at that section, not the cumulative head loss along the pipe.<p>Capsule 4th ed., p. 11; topic 3 point 34.</p>",
+          "explanation": "\\[\\text{HGL} = z + \\dfrac{p}{\\rho g}\\] \\[\\text{EGL} = z + \\dfrac{p}{\\rho g} + \\dfrac{V^2}{2g}\\] when \\(\\alpha = 1\\). Their separation is therefore the velocity head at that section, not the cumulative head loss along the pipe.<p>Capsule 4th ed., p. 11; topic 3 point 34.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2722,7 +2722,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The Darcy factor is four times the Fanning factor. Hagen-Poiseuille flow gives f_D = 64/Re and f_F = 16/Re. The source's recovered 16/Re is defensible only with the Fanning convention or a matching four-factor loss formula.<p>Source note: p11 n40 and p15 n145 repeat 16/Re without naming the factor; both references retained and convention made explicit.</p><p>Capsule 4th ed., pp. 11, 15; topic 3 point 40; topic 3 point 145.</p>",
+          "explanation": "The Darcy factor is four times the Fanning factor. Hagen-Poiseuille flow gives \\[f_D = \\dfrac{64}{\\text{Re}}, \\qquad f_F = \\dfrac{16}{\\text{Re}}\\] The source's recovered \\(\\dfrac{16}{\\text{Re}}\\) is defensible only with the Fanning convention or a matching four-factor loss formula.<p>Source note: p11 n40 and p15 n145 repeat 16/Re without naming the factor; both references retained and convention made explicit.</p><p>Capsule 4th ed., pp. 11, 15; topic 3 point 40; topic 3 point 145.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2876,7 +2876,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Insert V = 4Q/(pi D^2) into hf = fD(L/D)V^2/(2g). Squaring produces 16Q^2/(pi^2 D^4), hence the factor 8 and D^5 denominator. In SI with g = 9.81, g pi^2/8 is about 12.1.<p>Source note: p12 n50: recovered denominator 12.1D^5 is an SI approximation using the Darcy convention, not a dimensionless universal coefficient.</p><p>Capsule 4th ed., p. 12; topic 3 point 50.</p>",
+          "explanation": "Insert \\[V = \\dfrac{4Q}{\\pi D^2}\\] into \\[h_f = f_D\\dfrac{L}{D}\\dfrac{V^2}{2g}\\] Squaring produces \\(\\dfrac{16Q^2}{\\pi^2 D^4}\\), hence \\[h_f = \\dfrac{8 f_D L Q^2}{g\\pi^2 D^5}\\] In SI with \\(g = 9.81\\), \\(\\dfrac{g\\pi^2}{8}\\) is about 12.1.<p>Source note: p12 n50: recovered denominator 12.1D^5 is an SI approximation using the Darcy convention, not a dimensionless universal coefficient.</p><p>Capsule 4th ed., p. 12; topic 3 point 50.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2914,7 +2914,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The loss is (V1 - V2)^2/(2g) = (6 - 2)^2/19.62 = 0.815 m. It is not the difference of the two velocity heads, because some kinetic head is recovered as pressure through the expansion.<p>Source note: p12 n51: broken fraction reconstructed independently as (V1-V2)^2/(2g).</p><p>Capsule 4th ed., p. 12; topic 3 point 51.</p>",
+          "explanation": "The Borda-Carnot loss is \\[\\begin{aligned} h_L &amp;= \\dfrac{(V_1 - V_2)^2}{2g} = \\dfrac{(6 - 2)^2}{19.62} \\\\ &amp;= 0.815\\ \\text{m} \\end{aligned}\\] It is not the difference of the two velocity heads, because some kinetic head is recovered as pressure through the expansion.<p>Source note: p12 n51: broken fraction reconstructed independently as (V1-V2)^2/(2g).</p><p>Capsule 4th ed., p. 12; topic 3 point 51.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2990,7 +2990,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Darcy-Weisbach contains V^2, but laminar fD = 64/Re varies inversely with V. The combined dependence is therefore linear in V, so doubling speed doubles head loss rather than quadrupling it.<p>Capsule 4th ed., p. 12; topic 3 point 56.</p>",
+          "explanation": "Darcy-Weisbach contains \\(V^2\\), but laminar flow has \\[f_D = \\dfrac{64}{\\text{Re}} \\propto \\dfrac{1}{V}\\] The combined dependence is therefore linear, \\(h_f \\propto V\\), so doubling speed doubles head loss rather than quadrupling it.<p>Capsule 4th ed., p. 12; topic 3 point 56.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3028,7 +3028,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "With fD, L and D fixed, Darcy-Weisbach gives hf proportional to V^2. Doubling V therefore gives four times the head loss. The same exact exponent cannot be assumed for every turbulent regime where the friction factor still varies with Reynolds number.<p>Source note: p12 n56 split into laminar and turbulent cases; the square law requires an effectively constant friction factor.</p><p>Capsule 4th ed., p. 12; topic 3 point 56.</p>",
+          "explanation": "With \\(f_D\\), \\(L\\) and \\(D\\) fixed, Darcy-Weisbach gives \\(h_f \\propto V^2\\). Doubling \\(V\\) therefore gives \\[2^2 = 4\\] times the head loss. The same exact exponent cannot be assumed for every turbulent regime where the friction factor still varies with Reynolds number.<p>Source note: p12 n56 split into laminar and turbulent cases; the square law requires an effectively constant friction factor.</p><p>Capsule 4th ed., p. 12; topic 3 point 56.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3066,7 +3066,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Darcy-Weisbach gives hf = 0.020(100/0.20)(2^2/19.62) = 2.0387 m, approximately 2.04 m. A Fanning factor must not be substituted into this form without its required factor of four.<p>Capsule 4th ed., p. 12; topic 3 point 58.</p>",
+          "explanation": "With \\(\\dfrac{L}{D} = \\dfrac{100}{0.20} = 500\\), Darcy-Weisbach gives \\[\\begin{aligned} h_f &amp;= f_D\\dfrac{L}{D}\\dfrac{V^2}{2g} \\\\ &amp;= 0.020 \\times 500 \\times \\dfrac{4}{19.62} \\\\ &amp;= 2.0387\\ \\text{m} \\end{aligned}\\] approximately 2.04 m. A Fanning factor must not be substituted into this form without its required factor of four.<p>Capsule 4th ed., p. 12; topic 3 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3142,7 +3142,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Use hL = K V^2/(2g) = 0.90 times 9/19.62 = 0.41284 m. The velocity must match the coefficient's reference section. Real elbow K depends on geometry and conditions; 0.90 is supplied here rather than asserted for every 90-degree bend.<p>Source note: p13 n105: K = 0.9 is an assumed fitting value, not universal.</p><p>Capsule 4th ed., p. 13; topic 3 point 105.</p>",
+          "explanation": "Use \\[\\begin{aligned} h_L &amp;= K\\dfrac{V^2}{2g} = 0.90 \\times \\dfrac{9}{19.62} \\\\ &amp;= 0.41284\\ \\text{m} \\end{aligned}\\] The velocity must match the coefficient's reference section. Real elbow \\(K\\) depends on geometry and conditions; 0.90 is supplied here rather than asserted for every 90-degree bend.<p>Source note: p13 n105: K = 0.9 is an assumed fitting value, not universal.</p><p>Capsule 4th ed., p. 13; topic 3 point 105.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3180,7 +3180,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "For discharge into a large reservoir, the pipe velocity head is dissipated, giving K_exit = 1 and h_exit = V^2/(2g) = 16/19.62 = 0.815 m. A free jet still carrying kinetic energy at the outlet plane is a different boundary condition.<p>Source note: p14 n113 qualified as a pipe-to-large-reservoir exit, not every free discharge.</p><p>Capsule 4th ed., p. 14; topic 3 point 113.</p>",
+          "explanation": "For discharge into a large reservoir, the pipe velocity head is dissipated, giving \\(K_{\\text{exit}} = 1\\) and \\[\\begin{aligned} h_{\\text{exit}} &amp;= \\dfrac{V^2}{2g} = \\dfrac{16}{19.62} \\\\ &amp;= 0.815\\ \\text{m} \\end{aligned}\\] A free jet still carrying kinetic energy at the outlet plane is a different boundary condition.<p>Source note: p14 n113 qualified as a pipe-to-large-reservoir exit, not every free discharge.</p><p>Capsule 4th ed., p. 14; topic 3 point 113.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3218,7 +3218,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "At fixed diameter, both area and hydraulic radius remain fixed, and the given discharge fixes velocity. Since sqrt(S)/n must stay constant, S2/S1 = (0.020/0.010)^2 = 4. This is a Manning-model result, not a universal linear roughness rule.<p>Capsule 4th ed., p. 14; topic 3 point 114.</p>",
+          "explanation": "At fixed diameter, both area and hydraulic radius remain fixed, and the given discharge fixes velocity. Since \\(\\dfrac{\\sqrt{S}}{n}\\) must stay constant, \\[\\dfrac{S_2}{S_1} = \\left(\\dfrac{0.020}{0.010}\\right)^2 = 4\\] This is a Manning-model result, not a universal linear roughness rule.<p>Capsule 4th ed., p. 14; topic 3 point 114.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3294,7 +3294,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The parabolic laminar profile integrates to V_mean = V_max/2, so 4/2 = 2 m/s. The ratio of two does not hold for every viscous flow; turbulent, developing and non-Newtonian profiles have different ratios.<p>Source note: p14 n135: essential fully developed Newtonian laminar circular-pipe conditions supplied.</p><p>Capsule 4th ed., p. 14; topic 3 point 135.</p>",
+          "explanation": "The parabolic laminar profile integrates to \\[V_{\\text{mean}} = \\dfrac{V_{\\max}}{2} = \\dfrac{4}{2} = 2\\ \\text{m/s}\\] The ratio of two does not hold for every viscous flow; turbulent, developing and non-Newtonian profiles have different ratios.<p>Source note: p14 n135: essential fully developed Newtonian laminar circular-pipe conditions supplied.</p><p>Capsule 4th ed., p. 14; topic 3 point 135.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3370,7 +3370,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The required area is Q/V = 35/1.4 = 25 m^2. Since A = pi D^2/4, D = sqrt(4 times 25/pi) = 5.64190 m. The radius is half this value; area must not be reported as diameter.<p>Capsule 4th ed., p. 14; topic 3 point 138.</p>",
+          "explanation": "The required area is \\[A = \\dfrac{Q}{V} = \\dfrac{35}{1.4} = 25\\ \\text{m}^2\\] Since \\(A = \\dfrac{\\pi D^2}{4}\\), \\[D = \\sqrt{\\dfrac{4 \\times 25}{\\pi}} = 5.64190\\ \\text{m}\\] The radius is half this value; area must not be reported as diameter.<p>Capsule 4th ed., p. 14; topic 3 point 138.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3408,7 +3408,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "hL = K V^2/(2g) = 0.40 times 25/19.62 = 0.50968 m. This is energy loss per unit weight, expressed as head, not a loss of discharge. In a steady unbranched incompressible line, the same discharge passes before and after the valve.<p>Source note: p15 n142 calls KV^2/(2g) &#39;discharge loss&#39;; corrected to head loss. K depends on valve opening and velocity reference.</p><p>Capsule 4th ed., p. 15; topic 3 point 142.</p>",
+          "explanation": "\\[\\begin{aligned} h_L &amp;= K\\dfrac{V^2}{2g} = 0.40 \\times \\dfrac{25}{19.62} \\\\ &amp;= 0.50968\\ \\text{m} \\end{aligned}\\] This is energy loss per unit weight, expressed as head, not a loss of discharge. In a steady unbranched incompressible line, the same discharge passes before and after the valve.<p>Source note: p15 n142 calls KV^2/(2g) &#39;discharge loss&#39;; corrected to head loss. K depends on valve opening and velocity reference.</p><p>Capsule 4th ed., p. 15; topic 3 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3491,7 +3491,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The stipulated limit is 0.75 times 4 = 3 Pa. Bank inclination and sediment friction affect the reduction in an actual tractive-force design; 0.75 is not a universal ratio of incipient-motion stresses for all banks.<p>Source note: p11 n19: source gives no bank slope, angle of repose or definition distinguishing applied average shear from critical shear. Parent review of the original 0.75 claim required; this numerical item treats the factor as an explicit assumption.</p><p>Capsule 4th ed., p. 11; topic 3 point 19.</p>",
+          "explanation": "The stipulated limit is \\[0.75 \\times 4 = 3\\ \\text{Pa}\\] Bank inclination and sediment friction affect the reduction in an actual tractive-force design; 0.75 is not a universal ratio of incipient-motion stresses for all banks.<p>Source note: p11 n19: source gives no bank slope, angle of repose or definition distinguishing applied average shear from critical shear. Parent review of the original 0.75 claim required; this numerical item treats the factor as an explicit assumption.</p><p>Capsule 4th ed., p. 11; topic 3 point 19.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3529,7 +3529,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Rearranging gives n = R^(2/3) sqrt(S)/V. Its dimensions are L^(2/3)/(L/T) = T L^(-1/3), commonly written s/m^(1/3). It is not the dimensionless Darcy friction factor.<p>Capsule 4th ed., p. 11; topic 3 point 41.</p>",
+          "explanation": "Rearranging gives \\[n = \\dfrac{R^{2{/}3}S^{1{/}2}}{V}\\] Its dimensions are \\[\\dfrac{L^{2{/}3}}{LT^{-1}} = TL^{-1{/}3}\\] commonly written \\(\\text{s/m}^{1{/}3}\\). It is not the dimensionless Darcy friction factor.<p>Capsule 4th ed., p. 11; topic 3 point 41.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3567,7 +3567,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Convert 6 cm to 0.06 m first. Then n = 0.06^(1/6)/21.1 = 0.0296535, which rounds to 0.0297. The coefficient is empirical and grain-size definition and bed condition must match the calibration.<p>Source note: p12 n52: recomputation corrects the quoted 0.029; equation treated as stipulated empirical relation, not a universal roughness law.</p><p>Capsule 4th ed., p. 12; topic 3 point 52.</p>",
+          "explanation": "Convert 6 cm to 0.06 m first. Then \\[n = \\dfrac{0.06^{1{/}6}}{21.1} = 0.0296535\\] which rounds to 0.0297. The coefficient is empirical, and the grain-size definition and bed condition must match the calibration.<p>Source note: p12 n52: recomputation corrects the quoted 0.029; equation treated as stipulated empirical relation, not a universal roughness law.</p><p>Capsule 4th ed., p. 12; topic 3 point 52.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3643,7 +3643,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "R = A/P = By/(B + 2y). When B is much greater than y, the sidewall contribution 2y is negligible, giving R approximately y. The relation R = y/2 instead applies to the hydraulically economical rectangle B = 2y.<p>Capsule 4th ed., p. 12; topic 3 point 60.</p>",
+          "explanation": "The hydraulic radius is \\[R = \\dfrac{A}{P} = \\dfrac{By}{B + 2y}\\] When \\(B \\gg y\\), the sidewall contribution \\(2y\\) is negligible, giving \\(R \\approx y\\). The relation \\(R = \\dfrac{y}{2}\\) instead applies to the hydraulically economical rectangle \\(B = 2y\\).<p>Capsule 4th ed., p. 12; topic 3 point 60.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3681,7 +3681,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The long gravity-wave speed in the hydrostatic shallow-water approximation is sqrt(gA/T), so the Froude length is hydraulic depth A/T. Hydraulic radius A/P and hydraulic diameter 4A/P serve different purposes.<p>Capsule 4th ed., p. 12; topic 3 point 61; topic 3 point 72.</p>",
+          "explanation": "The long gravity-wave speed in the hydrostatic shallow-water approximation is \\[c = \\sqrt{\\dfrac{gA}{T}}\\] so the Froude length is the hydraulic depth \\(D = \\dfrac{A}{T}\\). Hydraulic radius \\(\\dfrac{A}{P}\\) and hydraulic diameter \\(\\dfrac{4A}{P}\\) serve different purposes.<p>Capsule 4th ed., p. 12; topic 3 point 61; topic 3 point 72.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3720,7 +3720,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The optimal triangular section has side slope 1H:1V. Its area is y^2 and wetted perimeter is 2y sqrt(2), giving R = y/[2 sqrt(2)]. The optimum-trapezoid relation R = y/2 cannot simply be transferred to this triangle.<p>Source note: p12 n62 missing radical restored by independent area/perimeter derivation.</p><p>Capsule 4th ed., p. 12; topic 3 point 62.</p>",
+          "explanation": "The optimal triangular section has side slope 1H:1V. Its area is \\(y^2\\) and its wetted perimeter is \\(2\\sqrt{2}\\,y\\), giving \\[R = \\dfrac{y^2}{2\\sqrt{2}\\,y} = \\dfrac{y}{2\\sqrt{2}}\\] The optimum-trapezoid relation \\(R = \\dfrac{y}{2}\\) cannot simply be transferred to this triangle.<p>Source note: p12 n62 missing radical restored by independent area/perimeter derivation.</p><p>Capsule 4th ed., p. 12; topic 3 point 62.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3798,7 +3798,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "From q^2 = 2g y^2(E-y), maximizing with respect to y at fixed E gives y = 2E/3. At this depth q^2/(gy^3) = 1, which is the critical-flow condition, independent of a normal-depth specification.<p>Capsule 4th ed., p. 12; topic 3 point 64.</p>",
+          "explanation": "From \\[q^2 = 2gy^2(E - y)\\] maximizing with respect to \\(y\\) at fixed \\(E\\) gives \\(y = \\dfrac{2E}{3}\\). At this depth \\[\\dfrac{q^2}{gy^3} = 1\\] which is the critical-flow condition, independent of a normal-depth specification.<p>Capsule 4th ed., p. 12; topic 3 point 64.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3836,7 +3836,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "E = y + q^2/(2gy^2) has a minimum where dE/dy = 1 - q^2/(gy^3) = 0. That is Fr = 1. Fixing discharge is essential; maximum discharge at fixed energy is the corresponding but different optimization.<p>Capsule 4th ed., p. 12; topic 3 point 65.</p>",
+          "explanation": "The specific energy \\[E = y + \\dfrac{q^2}{2gy^2}\\] has a minimum where \\[\\dfrac{dE}{dy} = 1 - \\dfrac{q^2}{gy^3} = 0\\] that is, \\(\\text{Fr} = 1\\). Fixing discharge is essential; maximum discharge at fixed energy is the corresponding but different optimization.<p>Capsule 4th ed., p. 12; topic 3 point 65.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3874,7 +3874,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Momentum balance gives y2/y1 = [sqrt(1 + 8Fr1^2) - 1]/2. With Fr1 = 3, the ratio is (sqrt(73)-1)/2 = 3.772. Multiplication by y1 = 1.00 m gives y2 = 3.772 m; energy is not conserved across the jump.<p>Source note: p12 n67 radical restored independently; formula is for a rectangular hydraulic jump, not arbitrary channel shapes.</p><p>Capsule 4th ed., p. 12; topic 3 point 67.</p>",
+          "explanation": "Momentum balance gives \\[\\dfrac{y_2}{y_1} = \\dfrac{\\sqrt{1 + 8\\,\\text{Fr}_1^2} - 1}{2}\\] With \\(\\text{Fr}_1 = 3\\), the ratio is \\[\\dfrac{\\sqrt{73} - 1}{2} = 3.772\\] Multiplying by \\(y_1 = 1.00\\) m gives \\(y_2 = 3.772\\) m; energy is not conserved across the jump.<p>Source note: p12 n67 radical restored independently; formula is for a rectangular hydraulic jump, not arbitrary channel shapes.</p><p>Capsule 4th ed., p. 12; topic 3 point 67.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3950,7 +3950,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "With V and R fixed, V = R^(2/3)sqrt(S)/n requires sqrt(S) proportional to n. Therefore S must increase by 2^2 = 4, giving 0.004. The result requires the stated unchanged geometry and flow.<p>Capsule 4th ed., p. 12; topic 3 point 69.</p>",
+          "explanation": "With \\(V\\) and \\(R\\) fixed, Manning's equation \\[V = \\dfrac{R^{2{/}3}\\sqrt{S}}{n}\\] requires \\(\\sqrt{S} \\propto n\\). Doubling \\(n\\) therefore multiplies \\(S\\) by \\(2^2 = 4\\): \\[S = 4 \\times 0.001 = 0.004\\] The result requires the stated unchanged geometry and flow.<p>Capsule 4th ed., p. 12; topic 3 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3988,7 +3988,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Fr = V/sqrt(gD). For Fr greater than one, V exceeds the relative wave speed, so even a wave directed upstream relative to the water is swept downstream relative to the bed. This defines supercritical flow in the shallow-water model.<p>Capsule 4th ed., p. 12; topic 3 point 70.</p>",
+          "explanation": "The Froude number compares mean speed with the relative wave speed: \\[\\text{Fr} = \\dfrac{V}{\\sqrt{gD}}\\] For \\(\\text{Fr} \\gt 1\\), \\(V\\) exceeds the relative wave speed, so even a wave directed upstream relative to the water is swept downstream relative to the bed. This defines supercritical flow in the shallow-water model.<p>Capsule 4th ed., p. 12; topic 3 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4067,7 +4067,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Each submerged sloping side is y sqrt(1+z^2) = 2 sqrt(3.25) m. Thus P = B + 2y sqrt(1+z^2) = 4 + 4 sqrt(3.25) = 11.211 m. The free-surface top width is not part of the wetted perimeter.<p>Source note: p12 n73: &#39;weighted&#39; corrected to wetted; missing square root restored from geometry.</p><p>Capsule 4th ed., p. 12; topic 3 point 73.</p>",
+          "explanation": "Each submerged sloping side has length \\(y\\sqrt{1 + z^2} = 2\\sqrt{3.25}\\) m. Thus \\[\\begin{aligned} P &amp;= B + 2y\\sqrt{1 + z^2} \\\\ &amp;= 4 + 4\\sqrt{3.25} \\\\ &amp;= 11.211\\ \\text{m} \\end{aligned}\\] The free-surface top width is not part of the wetted perimeter.<p>Source note: p12 n73: &#39;weighted&#39; corrected to wetted; missing square root restored from geometry.</p><p>Capsule 4th ed., p. 12; topic 3 point 73.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4105,7 +4105,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Jump height is the depth difference, 2.5 - 0.5 = 2.0 m. Applying the stipulated multiplier gives 5(2) to 7(2), or 10-14 m. This empirical estimate does not replace a stilling-basin design based on actual flow and tailwater.<p>Source note: p12 n76 is a rough empirical range, not an exact universal jump-length equation.</p><p>Capsule 4th ed., p. 12; topic 3 point 76.</p>",
+          "explanation": "Jump height is the depth difference, \\(2.5 - 0.5 = 2.0\\) m. Applying the stipulated multipliers gives \\[L_{\\min} = 5 \\times 2 = 10\\ \\text{m}\\] \\[L_{\\max} = 7 \\times 2 = 14\\ \\text{m}\\] This empirical estimate does not replace a stilling-basin design based on actual flow and tailwater.<p>Source note: p12 n76 is a rough empirical range, not an exact universal jump-length equation.</p><p>Capsule 4th ed., p. 12; topic 3 point 76.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4143,7 +4143,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "For the optimum trapezoid, half the top width equals one submerged sloping-side length: T/2 = y sqrt(1+z^2). Thus T = 2 times 2.5 = 5.0 m. A side-slope ratio itself is dimensionless and cannot be added to produce a width.<p>Source note: p12 n77: &#39;sum of side slope&#39; corrected to sum of the two submerged sloping-side lengths.</p><p>Capsule 4th ed., p. 12; topic 3 point 77.</p>",
+          "explanation": "For the optimum trapezoid, half the top width equals one submerged sloping-side length: \\[\\dfrac{T}{2} = y\\sqrt{1 + z^2} = 2.5\\ \\text{m}\\] Thus \\(T = 2 \\times 2.5 = 5.0\\) m. A side-slope ratio itself is dimensionless and cannot be added to produce a width.<p>Source note: p12 n77: &#39;sum of side slope&#39; corrected to sum of the two submerged sloping-side lengths.</p><p>Capsule 4th ed., p. 12; topic 3 point 77.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4181,7 +4181,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Using Q = C L H^(3/2), the discharge ratio is 4^(3/2) = 8. In real ogee operation the coefficient can vary with head relative to the design head, so constancy of C is an explicit assumption.<p>Capsule 4th ed., p. 13; topic 3 point 79.</p>",
+          "explanation": "Using \\(Q = CLH^{3{/}2}\\), the discharge ratio is \\[4^{3{/}2} = 8\\] In real ogee operation the coefficient can vary with head relative to the design head, so constancy of \\(C\\) is an explicit assumption.<p>Capsule 4th ed., p. 13; topic 3 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4219,7 +4219,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "For side slope z, area A = z y^2 and top width T = 2zy, so hydraulic depth A/T = y/2. Therefore Fr = V/sqrt(gy/2), independent of z. Using hydraulic radius instead gives the wrong wave-speed scale.<p>Source note: p13 n80: formula reconstructed from triangular geometry; no source image used.</p><p>Capsule 4th ed., p. 13; topic 3 point 80.</p>",
+          "explanation": "For side slope \\(z\\), area \\(A = zy^2\\) and top width \\(T = 2zy\\), so the hydraulic depth is \\[D = \\dfrac{A}{T} = \\dfrac{y}{2}\\] Therefore \\[\\text{Fr} = \\dfrac{V}{\\sqrt{gy{/}2}}\\] independent of \\(z\\). Using hydraulic radius instead gives the wrong wave-speed scale.<p>Source note: p13 n80: formula reconstructed from triangular geometry; no source image used.</p><p>Capsule 4th ed., p. 13; topic 3 point 80.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4295,7 +4295,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Fr^2 = V^2/(gA/T). Inserting V = Q/A gives Fr^2 = Q^2 T/(gA^3), which is one at critical flow. T is the free-surface top width, not the wetted perimeter P.<p>Capsule 4th ed., p. 13; topic 3 point 102.</p>",
+          "explanation": "\\[\\text{Fr}^2 = \\dfrac{V^2 T}{gA}\\] Inserting \\(V = \\dfrac{Q}{A}\\) gives \\[\\text{Fr}^2 = \\dfrac{Q^2 T}{gA^3} = 1\\] at critical flow. \\(T\\) is the free-surface top width, not the wetted perimeter \\(P\\).<p>Capsule 4th ed., p. 13; topic 3 point 102.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4333,7 +4333,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The critical condition can be written Q/sqrt(g) = A sqrt(A/T) = A sqrt(D), defining the section factor Z. Here A is the wetted cross-sectional area, not drainage-basin area; Z has units of length^(5/2).<p>Source note: p13 n103 conflates channel section factor with basin form factor. Split into two questions to teach both meanings.</p><p>Capsule 4th ed., p. 13; topic 3 point 103.</p>",
+          "explanation": "The critical condition can be written \\[\\dfrac{Q}{\\sqrt{g}} = A\\sqrt{\\dfrac{A}{T}} = A\\sqrt{D} = Z\\] defining the section factor \\(Z\\). Here \\(A\\) is the wetted cross-sectional area, not drainage-basin area; \\(Z\\) has units of \\(L^{5{/}2}\\).<p>Source note: p13 n103 conflates channel section factor with basin form factor. Split into two questions to teach both meanings.</p><p>Capsule 4th ed., p. 13; topic 3 point 103.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4371,7 +4371,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "C = V/sqrt(RS), so its dimensions are (L/T)/L^(1/2) = L^(1/2)/T. Chezy C is neither dimensionless nor dimensionally identical to Manning n.<p>Capsule 4th ed., p. 13; topic 3 point 107.</p>",
+          "explanation": "Rearranging, \\[C = \\dfrac{V}{\\sqrt{RS}}\\] so its dimensions are \\[\\dfrac{LT^{-1}}{L^{1{/}2}} = L^{1{/}2}T^{-1}\\] Chezy \\(C\\) is neither dimensionless nor dimensionally identical to Manning \\(n\\).<p>Capsule 4th ed., p. 13; topic 3 point 107.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4409,7 +4409,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "At critical flow in a rectangle, Vc^2/g = yc. The velocity head is therefore yc/2, and Ec = yc + yc/2 = 1.5 times 2.0 = 3.0 m. The source's missing result unit is metres of head.<p>Capsule 4th ed., p. 14; topic 3 point 115.</p>",
+          "explanation": "At critical flow in a rectangle \\(\\dfrac{V_c^2}{g} = y_c\\), so the velocity head is \\(\\dfrac{y_c}{2}\\) and \\[\\begin{aligned} E_c &amp;= y_c + \\dfrac{y_c}{2} \\\\ &amp;= 1.5 \\times 2.0 = 3.0\\ \\text{m} \\end{aligned}\\] The result is in metres of head.<p>Capsule 4th ed., p. 14; topic 3 point 115.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4523,7 +4523,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "tau_c = theta_c(rho_s-rho)gd = 0.050(2650-1000)(9.81)(0.002) = 1.61865 Pa. The submerged density difference and conversion of millimetres to metres are essential. The supplied Shields value is condition-specific, not universal.<p>Capsule 4th ed., p. 14; topic 3 point 125.</p>",
+          "explanation": "\\[\\tau_c = \\theta_c(\\rho_s - \\rho)gd\\] The submerged density difference is \\(2650 - 1000 = 1650\\) kg per m<sup>3</sup> and \\(d = 0.002\\) m, so \\[\\begin{aligned} \\tau_c &amp;= 0.050 \\times 1650 \\\\ &amp;\\quad \\times 9.81 \\times 0.002 \\\\ &amp;= 1.61865\\ \\text{Pa} \\end{aligned}\\] The submerged density difference and the conversion of millimetres to metres are essential. The supplied Shields value is condition-specific, not universal.<p>Capsule 4th ed., p. 14; topic 3 point 125.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5100,7 +5100,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Weight each band depth by its area: mean rainfall = (2 times 40 + 3 times 60)/5 = 52 mm. The isohyetal method can represent spatial and terrain variation, but its accuracy still depends on the observations and contour interpretation.<p>Source note: p13 n89: reject universal &#39;most accurate&#39; ranking; test the area-weighted method with explicitly reliable contours.</p><p>Capsule 4th ed., p. 13; topic 3 point 89.</p>",
+          "explanation": "Weight each band depth by its area: \\[\\begin{aligned} \\bar P &amp;= \\dfrac{2 \\times 40 + 3 \\times 60}{5} \\\\ &amp;= 52\\ \\text{mm} \\end{aligned}\\] The isohyetal method can represent spatial and terrain variation, but its accuracy still depends on the observations and contour interpretation.<p>Source note: p13 n89: reject universal &#39;most accurate&#39; ranking; test the area-weighted method with explicitly reliable contours.</p><p>Capsule 4th ed., p. 13; topic 3 point 89.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5328,7 +5328,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Subtract baseflow first: the direct-runoff peak is 75 - 15 = 60 m^3/s. Dividing by the runoff depth of 3 cm in 1 cm units gives 60/3 = 20 m^3/s. Rainfall duration remains 2 hours; it is not the depth divisor.<p>Capsule 4th ed., p. 13; topic 3 point 96.</p>",
+          "explanation": "Subtract baseflow first; the direct-runoff peak is \\[75 - 15 = 60\\ \\text{m}^3\\text{/s}\\] Dividing by the runoff depth of 3 cm, in 1 cm units, gives \\[\\dfrac{60}{3} = 20\\ \\text{m}^3\\text{/s}\\] Rainfall duration remains 2 hours; it is not the depth divisor.<p>Capsule 4th ed., p. 13; topic 3 point 96.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5404,7 +5404,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "One hectare times one cm/h is 100 m^3/h = 1/36 m^3/s. Therefore Q = CIA/36 = 0.60 times 3 times 120/36 = 6.0 m^3/s. The divisor changes when rainfall is in mm/h or area is in square kilometres.<p>Capsule 4th ed., p. 13; topic 3 point 98.</p>",
+          "explanation": "One hectare times one centimetre per hour is 100 m<sup>3</sup> per hour, or \\(\\dfrac{1}{36}\\) m<sup>3</sup> per second. Therefore \\[\\begin{aligned} Q &amp;= \\dfrac{CIA}{36} \\\\ &amp;= \\dfrac{0.60 \\times 3 \\times 120}{36} \\\\ &amp;= 6.0\\ \\text{m}^3\\text{/s} \\end{aligned}\\] The divisor changes when rainfall is in millimetres per hour or area is in square kilometres.<p>Capsule 4th ed., p. 13; topic 3 point 98.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5480,7 +5480,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Basin form factor is mean basin width divided by axial length. Since mean width is Ab/Lb, the ratio is Ab/Lb^2. This dimensionless plan-shape measure is distinct from a channel's dimensional critical-flow section factor.<p>Capsule 4th ed., p. 13; topic 3 point 103.</p>",
+          "explanation": "Basin form factor is mean basin width divided by axial length. Since the mean width is \\(\\dfrac{A_b}{L_b}\\), \\[F_f = \\dfrac{A_b}{L_b} \\cdot \\dfrac{1}{L_b} = \\dfrac{A_b}{L_b^2}\\] This dimensionless plan-shape measure is distinct from a channel's dimensional critical-flow section factor.<p>Capsule 4th ed., p. 13; topic 3 point 103.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5518,7 +5518,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "First add one to obtain 100, then apply the exponent before multiplying: Q2 = 1.8767 times 100^0.8783 = 107.1507 m^3/s. This evaluates the stipulated empirical equation; it does not establish its accuracy, current adoption or site suitability.<p>Source note: p13 n104: source attributes this relation to WECS/DHM but gives no edition, calibration domain or explicit unit definitions. These are stated as exercise assumptions; parent should verify attribution and A3000 definition against the original method. A frequency estimate is not real-time flood forecasting.</p><p>Capsule 4th ed., p. 13; topic 3 point 104.</p>",
+          "explanation": "First add one to obtain 100, then apply the exponent before multiplying: \\[\\begin{aligned} Q_2 &amp;= 1.8767 \\times 100^{0.8783} \\\\ &amp;= 107.1507\\ \\text{m}^3\\text{/s} \\end{aligned}\\] This evaluates the stipulated empirical equation; it does not establish its accuracy, current adoption or site suitability.<p>Source note: p13 n104: source attributes this relation to WECS/DHM but gives no edition, calibration domain or explicit unit definitions. These are stated as exercise assumptions; parent should verify attribution and A3000 definition against the original method. A frequency estimate is not real-time flood forecasting.</p><p>Capsule 4th ed., p. 13; topic 3 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5556,7 +5556,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "For an annual-maximum frequency distribution, return period T is the reciprocal of annual exceedance probability: p = 1/T = 1/2 = 0.50. It is a statistical frequency statement, not a forecast of the calendar spacing between floods.<p>Capsule 4th ed., p. 13; topic 3 point 104.</p>",
+          "explanation": "For an annual-maximum frequency distribution, return period is the reciprocal of annual exceedance probability: \\[p = \\dfrac{1}{T} = \\dfrac{1}{2} = 0.50\\] It is a statistical frequency statement, not a forecast of the calendar spacing between floods.<p>Capsule 4th ed., p. 13; topic 3 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5594,7 +5594,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The travel segments occur successively, so Tc = inlet or entry time + conduit travel time = 7 + 18 = 25 minutes. Taking only the larger segment omits part of the controlling runoff path.<p>Capsule 4th ed., p. 13; topic 3 point 109.</p>",
+          "explanation": "The travel segments occur successively, so the time of concentration is the entry time plus the conduit travel time: \\[T_c = 7 + 18 = 25\\ \\text{min}\\] Taking only the larger segment omits part of the controlling runoff path.<p>Capsule 4th ed., p. 13; topic 3 point 109.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5632,7 +5632,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Storage must supply the difference between demand and inflow: (3-1) times 10 times 86400 = 1728000 m^3. An impounding reservoir can transfer wet-season surplus to a dry period; it cannot create water if dependable overall supply is inadequate.<p>Source note: p14 n111: storage is a possible response to a seasonal deficit, not automatically the only feasible solution. Adequate refill supply and losses must be checked.</p><p>Capsule 4th ed., p. 14; topic 3 point 111.</p>",
+          "explanation": "Storage must supply the difference between demand and inflow for ten days: \\[\\begin{aligned} V &amp;= (3 - 1) \\times 10 \\times 86{,}400 \\\\ &amp;= 1{,}728{,}000\\ \\text{m}^3 \\end{aligned}\\] An impounding reservoir can transfer wet-season surplus to a dry period; it cannot create water if dependable overall supply is inadequate.<p>Source note: p14 n111: storage is a possible response to a seasonal deficit, not automatically the only feasible solution. Adequate refill supply and losses must be checked.</p><p>Capsule 4th ed., p. 14; topic 3 point 111.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5670,7 +5670,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The denominator is 10+10 = 20, so I = 760/20 = 38 mm/h. The full page restores the numerator missing from the point extract. Such an empirical fit needs a location, return period, units and calibration range before real design use.<p>Source note: p14 n134: 760 recovered from full page text. Original units, location, return period and authority remain unspecified; units here are explicit exercise assumptions, not claimed source verification. Parent review required.</p><p>Capsule 4th ed., p. 14; topic 3 point 134.</p>",
+          "explanation": "The denominator is \\(10 + 10 = 20\\), so \\[I = \\dfrac{760}{20} = 38\\ \\text{mm/h}\\] The full page restores the numerator missing from the point extract. Such an empirical fit needs a location, return period, units and calibration range before real design use.<p>Source note: p14 n134: 760 recovered from full page text. Original units, location, return period and authority remain unspecified; units here are explicit exercise assumptions, not claimed source verification. Parent review required.</p><p>Capsule 4th ed., p. 14; topic 3 point 134.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5708,7 +5708,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Clearance is the difference in elevations measured from the same datum: 109.5 - 104.5 = 5.0 m. The brief's reference point and loading condition matter; this is not verification that 5 m is a universal trail-bridge standard.<p>Source note: Appendix p42 n18: conditional minimum only; parent should verify bridge type, design flood, debris allowance, reference point and manual edition.</p><p>Capsule 4th ed., p. 42; rural point 18.</p>",
+          "explanation": "Clearance is the difference in elevations measured from the same datum: \\[109.5 - 104.5 = 5.0\\ \\text{m}\\] The brief's reference point and loading condition matter; this is not verification that 5 m is a universal trail-bridge standard.<p>Source note: Appendix p42 n18: conditional minimum only; parent should verify bridge type, design flood, debris allowance, reference point and manual edition.</p><p>Capsule 4th ed., p. 42; rural point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,

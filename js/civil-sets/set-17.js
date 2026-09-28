@@ -45,7 +45,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "200 N/mm2" }
                     ],
                     answer: "b",
-                    explanation: "A good building stone must have high compressive strength to bear heavy loads. A minimum crushing strength of 100 N/mm² (100 MPa) is a standard requirement for structural stonework."
+                    explanation: "A good building stone must have high compressive strength to bear heavy loads. A minimum crushing strength of 100 N per mm<sup>2</sup> (100 MPa) is a standard requirement for structural stonework."
                 },
                 {
                     id: "cm17q002",
@@ -401,7 +401,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "24 mm" }
                     ],
                     answer: "d",
-                    explanation: "Unwin's formula provides the rivet diameter: d = 6.04√t, where t is the thickness of the thickest plate in mm. For t=16mm, d = 6.04√16 ≈ 6.04*4 ≈ 24.16 mm. The standard size is rounded down to 24 mm."
+                    explanation: "Unwin's formula gives the rivet diameter as \\(d = 6.04\\sqrt{t}\\), where \\(t\\) is the thickness of the thickest plate in mm. For \\(t = 16\\) mm, \\[\\begin{aligned} d &amp;= 6.04\\sqrt{16} = 6.04 \\times 4 \\\\ &amp;\\approx 24.16 \\end{aligned}\\] mm, rounded down to the standard 24 mm."
                 },
                 {
                     id: "cm17q028",
@@ -453,7 +453,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "5/8 of the thickness of the thinner part" }
                     ],
                     answer: "d",
-                    explanation: "For partial penetration butt welds, the effective throat thickness is taken as a fraction of the thinner part joined. A common specification is 5/8 of the thickness of the thinner part."
+                    explanation: "For partial penetration butt welds, the effective throat thickness is taken as a fraction of the thinner part joined. A common specification is \\(\\dfrac{5}{8}\\) of the thickness of the thinner part."
                 },
                 {
                     id: "cm17q032",
@@ -679,7 +679,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "1.36m" }
                     ],
                     answer: "d",
-                    explanation: "For rectangular channel, critical depth y_c = (q²/g)^(1/3), where q=Q/B=15/3=5 m²/s. y_c = (25/9.81)^(1/3) = (2.548)^(1/3) ≈ 1.36m."
+                    explanation: "With \\(q = \\dfrac{15}{3} = 5\\) m<sup>2</sup> per s, \\[y_c = \\left(\\dfrac{q^2}{g}\\right)^{1{/}3} = \\left(\\dfrac{25}{9.81}\\right)^{1{/}3}\\] \\[= 2.548^{1{/}3} \\approx 1.36\\ \\text{m}\\]"
                 },
                 {
                     id: "cm17q048",
@@ -691,7 +691,7 @@ const CIVIL_MODEL_17 = {
                         { key: "c", text: "1.25m" }
                     ],
                     answer: "a",
-                    explanation: "For any channel, minimum specific energy at critical flow is E_min = y_c + V_c²/(2g). For rectangular channel, at critical flow, V_c²/(2g) = y_c/2. So E_min = y_c + y_c/2 = 1.5*1.5 = 2.25m."
+                    explanation: "At critical flow \\(E_{min} = y_c + \\dfrac{V_c^2}{2g}\\), and for a rectangular channel \\(\\dfrac{V_c^2}{2g} = \\dfrac{y_c}{2}\\). So \\[\\begin{aligned} E_{min} &amp;= 1.5y_c = 1.5 \\times 1.5 \\\\ &amp;= 2.25\\ \\text{m} \\end{aligned}\\]"
                 },
                 {
                     id: "cm17q049",
@@ -704,7 +704,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "1.6m" }
                     ],
                     answer: "b",
-                    explanation: "For maximum discharge, the flow is critical. For rectangular channel, E_min = 1.5 y_c. Also, q_max = Q/B = 10/4=2.5 m²/s. y_c = (q²/g)^(1/3) = (6.25/9.81)^(1/3) = (0.637)^(1/3)≈0.86m. Then E_min = 1.5*0.86=1.29m ≈1.3m."
+                    explanation: "At maximum discharge the flow is critical, with \\(q = \\dfrac{10}{4} = 2.5\\) m<sup>2</sup> per s: \\[\\begin{aligned} y_c &amp;= \\left(\\dfrac{6.25}{9.81}\\right)^{1{/}3} \\\\ &amp;= 0.637^{1{/}3} \\approx 0.86 \\end{aligned}\\] metres, so \\[\\begin{aligned} E_{min} &amp;= 1.5 \\times 0.86 = 1.29 \\\\ &amp;\\approx 1.3\\ \\text{m} \\end{aligned}\\]"
                 },
                 {
                     id: "cm17q050",
@@ -730,7 +730,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "1 in 1200" }
                     ],
                     answer: "d",
-                    explanation: "\\(\\[ \\begin{aligned} \\text{Specific energy: } E &= y + \\frac{V^2}{2g} \\\\ 3.13 &= 3 + \\frac{V^2}{2 \\times 9.81} \\\\ \\frac{V^2}{19.62} &= 0.13 \\\\ V^2 &= 2.5506 \\\\ V &\\approx 1.597\\ \\text{m/s} \\\\[6pt] \\text{Discharge: } Q &= A \\cdot V = (4 \\times 3) \\times 1.597 = 19.164\\ \\text{m}^3/\\text{s} \\\\[6pt] \\text{Hydraulic radius: } R &= \\frac{A}{P} = \\frac{12}{4 + 2 \\times 3} = 1.2\\ \\text{m} \\\\[6pt] \\text{Chezy's formula: } V &= C\\sqrt{RS} \\\\ S &= \\frac{V^2}{C^2 R} = \\frac{2.5506}{50^2 \\times 1.2} \\\\ S &= \\frac{2.5506}{3000} \\approx 8.502 \\times 10^{-4}\\text{ (or 1 in 1176)} \\end{aligned} \\]\\)"
+                    explanation: "From the specific energy, \\[\\dfrac{V^2}{2g} = 3.13 - 3 = 0.13\\ \\text{m}\\] so \\(V^2 = 2.5506\\) and \\(V \\approx 1.597\\) m per s. The hydraulic radius is \\[R = \\dfrac{12}{4 + 2 \\times 3} = 1.2\\ \\text{m}\\] Chezy's formula \\(V = C\\sqrt{RS}\\) then gives \\[S = \\dfrac{V^2}{C^2R} = \\dfrac{2.5506}{50^2 \\times 1.2}\\] \\[= 8.502 \\times 10^{-4}\\] or 1 in 1176, about 1 in 1200."
                 },
                 {
                     id: "cm17q052",
@@ -743,7 +743,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "0.014" }
                     ],
                     answer: "a",
-                    explanation: "Need velocity or discharge? Not given. Perhaps assume most economical? For side slope 1H:2V, z=2. For economical trapezoidal, condition: half top width = side length, etc. But here dimensions given. Area A = (b+zy)y = (2+2*2)*2 = (2+4)*2=12 m². P = b + 2y√(1+z²)=2 + 4√5=2+8.944=10.944m. R=12/10.944=1.096m. S=0.001. To find n, need V or Q. Not given. Perhaps the specific energy is not provided. Maybe the channel is flowing with critical depth or uniform flow. This question might be incomplete, but from options, often n=0.015 for rough channels."
+                    explanation: "With \\(z = 2\\) as the key takes it, \\[A = (2 + 2 \\times 2) \\times 2 = 12\\ \\text{m}^2\\] \\[P = 2 + 4\\sqrt{5} = 10.944\\ \\text{m}\\] so \\(R = 1.096\\) m and \\(S = 0.001\\). Finding \\(n\\) also needs the velocity or discharge, which the question does not give, so it is incomplete; the key's 0.015 is a typical value for rough channels."
                 },
                 {
                     id: "cm17q053",
@@ -782,7 +782,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "3.32 N/m²" }
                     ],
                     answer: "d",
-                    explanation: "Shear stress τ = γ R S, where γ=9810 N/m³. Need S. From specific energy: E = y + V²/(2g)=0.56. With y=0.5, so V²/(2g)=0.06, V=√(0.06*19.62)=√1.1772=1.085 m/s. Q=A*V=(0.8*0.5)*1.085=0.4*1.085=0.434 m³/s. For uniform flow, S = (V*n / R^(2/3))^2, but n not given. Or using Chezy? Perhaps assume that the specific energy is minimum, so critical flow. Then y_c = 2/3 E = 0.373m, but given depth 0.5m, so not critical. This is tricky. Perhaps they want the shear stress at the bed based on the energy gradient? Another way: average shear stress = γ R S_f, and S_f = dE/dx. Not given. Perhaps for the given specific energy, we can find the slope if we assume uniform flow. But not enough info. Maybe the answer is (b) 3.32."
+                    explanation: "From the specific energy, the velocity head is \\(0.56 - 0.5\\), or 0.06 m, so \\[\\begin{aligned} V &amp;= \\sqrt{0.06 \\times 19.62} \\\\ &amp;= 1.085\\ \\text{m/s} \\end{aligned}\\] and \\(Q = 0.4 \\times 1.085\\), or 0.434 m<sup>3</sup> per s. The average shear stress \\(\\tau = \\gamma RS\\) also needs the slope, which cannot be found without \\(n\\) or \\(C\\); the flow is not critical either, since \\(y_c = \\dfrac{2}{3}E = 0.373\\) m. The question is incomplete, and the key's 3.32 N per m<sup>2</sup> cannot be verified."
                 },
                 {
                     id: "cm17q056",
@@ -795,7 +795,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "5.05m" }
                     ],
                     answer: "a",
-                    explanation: "For rectangular, most economical has B=2y, but here width=4m, depth=2m, so indeed B=2y. For uniform flow, V = C√(R*S). R=y/2=1m. S=1/1200=0.000833. V=35√(1*0.000833)=35*0.02887=1.01 m/s. Then specific energy E = y + V²/(2g)=2 + (1.01²)/(19.62)=2 + 0.052=2.052m."
+                    explanation: "Here \\(B = 2y\\), so the section is the most economical, with \\(R = \\dfrac{y}{2} = 1\\) m. For uniform flow, \\[\\begin{aligned} V &amp;= 35\\sqrt{1 \\times 0.000833} \\\\ &amp;= 1.01\\ \\text{m/s} \\end{aligned}\\] \\[E = 2 + \\dfrac{1.01^2}{19.62} = 2.052\\ \\text{m}\\]"
                 },
                 {
                     id: "cm17q057",
@@ -808,7 +808,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "4.14m" }
                     ],
                     answer: "b",
-                    explanation: "For most economical trapezoidal, the condition is that the side slope is 1/√3, but here given 1H:4V (z=4). So it may not be most economical for given z. Perhaps they mean the section is designed for most economical with that z. The hydraulic radius R = y/2 = 2.5m. S=0.000833. Using Chezy, V = C√(R*S), but C not given. Perhaps assume C=50? Then V=50√(2.5*0.000833)=50√0.0020825=50*0.04564=2.282 m/s. Then E = y + V²/(2g)=5+0.265≈5.27 m."
+                    explanation: "The most economical trapezoid has \\(R = \\dfrac{y}{2} = 2.5\\) m, but the side slope 1H:4V is not the optimum \\(\\dfrac{1}{\\sqrt{3}}\\), and no Chezy \\(C\\) or Manning \\(n\\) is given. Assuming \\(C = 50\\), \\[\\begin{aligned} V &amp;= 50\\sqrt{2.5 \\times 0.000833} \\\\ &amp;= 2.282\\ \\text{m/s} \\end{aligned}\\] \\[E = 5 + 0.265 \\approx 5.27\\ \\text{m}\\] The specific energy cannot be less than the 5 m depth, so the key's 2.14 m is unsupported."
                 }
             ]
         },
@@ -895,7 +895,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "Speed ratio" }
                     ],
                     answer: "d",
-                    explanation: "The speed ratio (φ) is a key non-dimensional parameter for turbines. For a radial flow turbine, it is defined as the ratio of the tangential velocity (peripheral velocity) of the runner at inlet to the theoretical spouting velocity of the jet (√(2gH)), where H is the net head."
+                    explanation: "The speed ratio \\(\\phi\\) is a key non-dimensional turbine parameter. For a radial flow turbine, it is the ratio of the tangential (peripheral) velocity of the runner at inlet to the theoretical spouting velocity \\(\\sqrt{2gH}\\), where \\(H\\) is the net head: \\[\\phi = \\dfrac{u_1}{\\sqrt{2gH}}\\]"
                 },
                 {
                     id: "cm17q064",
@@ -1298,7 +1298,7 @@ const CIVIL_MODEL_17 = {
                         { key: "c", text: "Not Provided" }
                     ],
                     answer: "a",
-                    explanation: "The critical dissolved oxygen deficit (D_c) in a stream, as per the Streeter-Phelps equation, occurs at a critical time (t_c) and is calculated using the formula: D_c = (k_d / k_r) * L_0 * 10^(-k_d * t_c), where k_d is the deoxygenation rate constant, k_r is the reaeration rate constant, and L_0 is the ultimate BOD."
+                    explanation: "In the Streeter-Phelps model the critical deficit occurs at the critical time \\(t_c\\): \\[D_c = \\dfrac{k_d}{k_r}L_0 \\times 10^{-k_dt_c}\\] where \\(k_d\\) is the deoxygenation constant, \\(k_r\\) the reaeration constant and \\(L_0\\) the ultimate BOD."
                 },
                 {
                     id: "cm17q093",
@@ -1376,7 +1376,7 @@ const CIVIL_MODEL_17 = {
                         { key: "d", text: "100" }
                     ],
                     answer: "c",
-                    explanation: "Low-rate trickling filters typically operate without recirculation (recirculation ratio = 0) or with a very low ratio (often less than 1). The option '1' is the closest standard value, representing a recirculation ratio of 1:1."
+                    explanation: "Low-rate trickling filters usually run without recirculation (ratio 0) or with a very low ratio, often under 1. The option 1 is the closest standard value, a recirculation ratio of 1:1."
                 },
                 {
                     id: "cm17q099",
@@ -1388,7 +1388,7 @@ const CIVIL_MODEL_17 = {
                         { key: "c", text: "gm/m²/day" }
                     ],
                     answer: "c",
-                    explanation: "Organic loading on a trickling filter is typically expressed as mass of BOD applied per unit surface area of the filter per day (e.g., grams of BOD per square meter per day, g/m²/d)."
+                    explanation: "Organic loading on a trickling filter is expressed as the mass of BOD applied per unit filter area per day, for example grams of BOD per m<sup>2</sup> per day."
                 },
                 {
                     id: "cm17q100",

@@ -84,7 +84,7 @@ const CIVIL_MODEL_28 = {
                         { key: "d", text: "6.5" }
                     ],
                     answer: "d",
-                    explanation: "Wet volume = 1 m³. Dry volume = 1 * 1.54 = 1.54 m³. Cement part = 1/(1+2+4)=1/7. Cement volume = (1/7)*1.54 = 0.22 m³. Density of cement = 1440 kg/m³. Cement weight = 0.22 * 1440 = 316.8 kg. Bags = 316.8 / 50 = 6.336 bags ≈ 6.5 bags."
+                    explanation: "For 1 m<sup>3</sup> of wet concrete, the dry volume is \\(1 \\times 1.54 = 1.54\\) m<sup>3</sup> and the cement share is \\(\\dfrac{1}{1 + 2 + 4} = \\dfrac{1}{7}\\). In m<sup>3</sup> and kg: \\[\\text{cement} = \\dfrac{1.54}{7} = 0.22\\] \\[\\text{mass} = 0.22 \\times 1440 = 316.8\\] \\[\\dfrac{316.8}{50} = 6.336 \\approx 6.5\\ \\text{bags}\\]"
                 },
                 {
                     id: "cm28q005",
@@ -201,7 +201,7 @@ const CIVIL_MODEL_28 = {
                         { key: "d", text: "1500 m³" }
                     ],
                     answer: "a",
-                    explanation: "Box cutting refers to the total volume of excavation. Total depth = 15 cm + 10 cm = 25 cm = 0.25 m. Volume = Length * Width * Depth = 1000 m * 8 m * 0.25 m = 2000 m³."
+                    explanation: "Box cutting is the total volume of excavation for the road crust. The total depth is \\(15 + 10 = 25\\) cm, or 0.25 m, so \\[\\begin{aligned} V &amp;= 1000 \\times 8 \\times 0.25 \\\\ &amp;= 2000\\ \\text{m}^3 \\end{aligned}\\]"
                 }
             ]
         },
@@ -223,7 +223,7 @@ const CIVIL_MODEL_28 = {
                         { key: "d", text: "None of these" }
                     ],
                     answer: "d",
-                    explanation: "The elastic constant (Young's Modulus, E) is a material property. It is defined as the ratio of stress to strain (E = σ/ε) and is constant for a material within its elastic limit. It does not vary with elongation; instead, it governs the relationship between stress and strain."
+                    explanation: "Young's modulus is a material property, the ratio of stress to strain, \\[E = \\dfrac{\\sigma}{\\varepsilon}\\] and it is constant within the elastic limit. It does not vary with elongation; instead, it governs the relationship between stress and strain."
                 },
                 {
                     id: "cm28q015",
@@ -388,7 +388,7 @@ const CIVIL_MODEL_28 = {
                         { key: "d", text: "1.8 and 3.0" }
                     ],
                     answer: "b",
-                    explanation: "As per IS 456:2000, the partial safety factors for materials are: For steel (γ_s) = 1.15 and for concrete (γ_c) = 1.5. These factors are applied to the characteristic strengths of the materials to obtain the design strengths."
+                    explanation: "IS 456:2000 gives the partial safety factors for materials as \\(\\gamma_s = 1.15\\) for steel and \\(\\gamma_c = 1.5\\) for concrete. They divide the characteristic strengths to give the design strengths."
                 },
                 {
                     id: "cm28q027",
@@ -401,7 +401,7 @@ const CIVIL_MODEL_28 = {
                         { key: "d", text: "(M_u,lim - M_u) / (f_sc (d + d'))" }
                     ],
                     answer: "c",
-                    explanation: "In a doubly reinforced beam, the moment of resistance M_u consists of two parts: M_u,lim (from the singly reinforced section) and an additional moment (M_u - M_u,lim) resisted by the compression steel and an equal area of additional tensile steel. The formula for the area of compression steel is Asc = (M_u - M_u,lim) / (f_sc (d - d')), where f_sc is the stress in compression steel and d' is the depth to the centroid of compression steel."
+                    explanation: "In a doubly reinforced beam, \\(M_u\\) consists of \\(M_{u,lim}\\) from the singly reinforced section plus an additional moment \\((M_u - M_{u,lim})\\) resisted by the compression steel and an equal area of extra tension steel. So \\[A_{sc} = \\dfrac{M_u - M_{u,lim}}{f_{sc}(d - d')}\\] where \\(f_{sc}\\) is the compression steel stress and \\(d'\\) its depth."
                 },
                 {
                     id: "cm28q028",
@@ -440,7 +440,7 @@ const CIVIL_MODEL_28 = {
                         { key: "d", text: "380/3σ_cbc" }
                     ],
                     answer: "b",
-                    explanation: "The modular ratio (m) in the Working Stress Method is defined as the ratio of the modulus of elasticity of steel to that of concrete. It is calculated using the formula m = 280 / (3 * σ_cbc), where σ_cbc is the permissible compressive stress in concrete due to bending."
+                    explanation: "The modular ratio in the working stress method is the ratio of the moduli of steel and concrete. IS 456 calculates it as \\[m = \\dfrac{280}{3\\sigma_{cbc}}\\] where \\(\\sigma_{cbc}\\) is the permissible compressive stress in concrete due to bending."
                 },
                 {
                     id: "cm28q031",
@@ -453,7 +453,7 @@ const CIVIL_MODEL_28 = {
                         { key: "d", text: "Critical axis depth" }
                     ],
                     answer: "c",
-                    explanation: "The lever arm is the perpendicular distance between the lines of action of the resultant compressive force (C) in the concrete/compression steel and the resultant tensile force (T) in the tensile steel. This distance is crucial for calculating the moment of resistance of the section (M = C * z or T * z)."
+                    explanation: "The lever arm \\(z\\) is the distance between the lines of action of the resultant compression \\(C\\) and the resultant tension \\(T\\). It gives the moment of resistance: \\[M = Cz = Tz\\]"
                 },
                 {
                     id: "cm28q032",
@@ -631,7 +631,7 @@ const CIVIL_MODEL_28 = {
                         { key: "d", text: "q_u = 5.7 c + σ̅" }
                     ],
                     answer: "d",
-                    explanation: "For a purely cohesive soil (φ = 0) under a strip footing, Terzaghi's bearing capacity equation simplifies to q_u = c N_c + q N_q. The bearing capacity factors become N_c = 5.7 and N_q = 1.0. Therefore, q_u = 5.7c + γD_f (where q = γD_f is the surcharge)."
+                    explanation: "For a purely cohesive soil (\\(\\phi = 0\\)) under a strip footing, Terzaghi's equation reduces to \\(q_u = cN_c + qN_q\\) with \\(N_c = 5.7\\) and \\(N_q = 1.0\\). Therefore \\[q_u = 5.7c + \\gamma D_f\\] where \\(q = \\gamma D_f\\) is the surcharge."
                 },
                 {
                     id: "cm28q045",
@@ -670,7 +670,7 @@ const CIVIL_MODEL_28 = {
                         { key: "d", text: "N_γ for φ=60°" }
                     ],
                     answer: "c",
-                    explanation: "In his original work, Terzaghi provided values for the bearing capacity factor N_γ for specific friction angles. The values for φ = 34° and φ = 48° are examples of these original proposed values."
+                    explanation: "In his original work, Terzaghi gave values of the bearing capacity factor \\(N_\\gamma\\) for specific friction angles; those for \\(\\phi = 34^\\circ\\) and \\(\\phi = 48^\\circ\\) are examples of the original values."
                 },
                 {
                     id: "cm28q048",
@@ -705,7 +705,7 @@ const CIVIL_MODEL_28 = {
                         { key: "d", text: "dependent on both the constants \\( (a, b) \\) and the variables \\( (x, y) \\)" }
                     ],
                     answer: "a",
-                    explanation: "Continuity: ∂u/∂x + ∂v/∂y = 0. u = ax² + bxy, so ∂u/∂x = 2ax + by. v = bxy + ay², so ∂v/∂y = bx + 2ay. So sum: (2ax + by) + (bx + 2ay) = (2a + b)x + (b + 2a)y = (2a + b)(x + y). For this to be zero for all x and y, we need 2a + b = 0. So the condition is dependent only on the constants a and b, and not on x and y. So it is independent of variables (x,y) but dependent on constants (a,b). the option \"Independent of the variables \\( (x, y) \\) but dependent on the constants \\( (a, b) \\)\" is correct."
+                    explanation: "Continuity gives \\[\\begin{aligned} &amp;(2ax + by) + (bx + 2ay) \\\\ &amp;= (2a + b)(x + y) \\end{aligned}\\] For this to vanish for all \\(x\\) and \\(y\\) we need \\(2a + b = 0\\), a condition on the constants only, independent of the variables. That is option (c); the key marks (a), which the calculation does not support."
                 },
                 {
                     id: "cm28q050",

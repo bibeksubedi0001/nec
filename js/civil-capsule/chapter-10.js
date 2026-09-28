@@ -183,7 +183,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The vertical is 90 degrees to the baseline, so the departure is 90 - 75 = 15 degrees to the right. This describes the conventional inclined style, not every permitted lettering style.<p>Capsule 4th ed., p. 37; topic 10 point 3.</p>",
+          "explanation": "The vertical is \\(90^\\circ\\) to the baseline, so the departure is \\[90^\\circ - 75^\\circ = 15^\\circ\\] to the right. This describes the conventional inclined style, not every permitted lettering style.<p>Capsule 4th ed., p. 37; topic 10 point 3.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -259,7 +259,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "A0 to A1 to A2 to A3 gives three halvings: 1/2^3 = 0.125 square metre. Actual integer-millimetre trimmed dimensions are rounded, so nominal areas are not exact products of printed dimensions.<p>Capsule 4th ed., p. 37; topic 10 point 5.</p>",
+          "explanation": "A0 to A1 to A2 to A3 gives three halvings: \\[\\dfrac{1}{2^3} = 0.125\\ \\text{m}^2\\] Actual integer-millimetre trimmed dimensions are rounded, so nominal areas are not exact products of printed dimensions.<p>Capsule 4th ed., p. 37; topic 10 point 5.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -297,7 +297,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Let the sides be L and S. Similarity requires L/S = S/(L/2), hence L^2 = 2S^2 and L/S = sqrt(2). Equivalently the short side is the long side divided by sqrt(2), not twelve times it.<p>Source note: Source p37 point6 has corrupted extracted mathematical text (&#39;12 times&#39;); independent derivation supplies the defensible ratio. Parent may inspect the original formula.</p><p>Capsule 4th ed., p. 37; topic 10 point 6.</p>",
+          "explanation": "Let the sides be \\(L\\) and \\(S\\). Similarity requires \\[\\dfrac{L}{S} = \\dfrac{2S}{L}\\] hence \\(L^2 = 2S^2\\) and \\(\\dfrac{L}{S} = \\sqrt{2}\\). Equivalently the short side is the long side divided by \\(\\sqrt{2}\\), not twelve times it.<p>Source note: Source p37 point6 has corrupted extracted mathematical text (&#39;12 times&#39;); independent derivation supplies the defensible ratio. Parent may inspect the original formula.</p><p>Capsule 4th ed., p. 37; topic 10 point 6.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -487,7 +487,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Equal axial foreshortening gives 120 x sqrt(2/3) = 97.9796 mm. Using 120 mm directly gives the conventional true-axial-length isometric drawing, not the shortened isometric projection.<p>Capsule 4th ed., p. 37; topic 10 point 11.</p>",
+          "explanation": "Equal axial foreshortening gives \\[120 \\times \\sqrt{\\dfrac{2}{3}} = 97.9796\\ \\text{mm}\\] Using 120 mm directly gives the conventional true-axial-length isometric drawing, not the shortened isometric projection.<p>Capsule 4th ed., p. 37; topic 10 point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -525,7 +525,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Convert 250 m to 25000 cm before forming RF = 5/25000 = 1/5000. A map normally reduces ground distances; mixing centimetres with metres gives an incorrect denominator.<p>Capsule 4th ed., p. 37; topic 10 point 12.</p>",
+          "explanation": "Convert 250 m to 25,000 cm before forming \\[\\text{RF} = \\dfrac{5}{25{,}000} = \\dfrac{1}{5000}\\] A map normally reduces ground distances; mixing centimetres with metres gives an incorrect denominator.<p>Capsule 4th ed., p. 37; topic 10 point 12.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -639,7 +639,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The available sums, differences and supplements are multiples of 15 degrees. Thus 105 = 60 + 45, 75 = 45 + 30 and 150 = 180 - 30 are possible, whereas 115 is not under these stated operations.<p>Capsule 4th ed., p. 37; topic 10 point 15.</p>",
+          "explanation": "The available sums, differences and supplements are multiples of \\(15^\\circ\\). Thus \\[\\begin{aligned} 105 &amp;= 60 + 45 \\\\ 75 &amp;= 45 + 30 \\\\ 150 &amp;= 180 - 30 \\end{aligned}\\] are possible, whereas 115 degrees is not under these stated operations.<p>Capsule 4th ed., p. 37; topic 10 point 15.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -829,7 +829,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "R denotes radius, so the corresponding diameter is 2R = 2(25) = 50 mm. The dimension states the object's size, not the scaled paper length; circumference is a different quantity.<p>Capsule 4th ed., p. 40; topic 10 point 108.</p>",
+          "explanation": "R denotes radius, so the corresponding diameter is \\[2R = 2(25) = 50\\ \\text{mm}\\] The dimension states the object's size, not the scaled paper length; circumference is a different quantity.<p>Capsule 4th ed., p. 40; topic 10 point 108.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -981,7 +981,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Uniform outward motion gives r = r0 + vt, and uniform rotation gives theta = omega t. Eliminating time yields r = r0 + (v/omega)theta, the Archimedean spiral; a reversing pendulum angle does not automatically satisfy this law.<p>Source note: p40 n117 supplementary corrected sliding-point interpretation: uniform monotonic rotation is explicitly added, not attributed to the missing drawing.</p><p>Capsule 4th ed., p. 40; topic 10 point 117.</p>",
+          "explanation": "Uniform outward motion gives \\(r = r_0 + vt\\), and uniform rotation gives \\(\\theta = \\omega t\\). Eliminating time yields \\[r = r_0 + \\dfrac{v}{\\omega}\\theta\\] the Archimedean spiral; a reversing pendulum angle does not automatically satisfy this law.<p>Source note: p40 n117 supplementary corrected sliding-point interpretation: uniform monotonic rotation is explicitly added, not attributed to the missing drawing.</p><p>Capsule 4th ed., p. 40; topic 10 point 117.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1019,7 +1019,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For a cone x^2+y^2 = k^2 z^2, an axial-parallel plane x = c with c nonzero gives k^2 z^2-y^2 = c^2, a hyperbola. The offset and intersection conditions exclude a plane through the vertex or a finite cone missed entirely.<p>Source note: p40 n118 qualified: axial-parallel, offset intersecting plane; a finite single cone shows only the available part of the curve.</p><p>Capsule 4th ed., p. 40; topic 10 point 118.</p>",
+          "explanation": "For the cone \\(x^2 + y^2 = k^2z^2\\), an axial-parallel plane \\(x = c\\) with \\(c \\ne 0\\) gives \\[k^2z^2 - y^2 = c^2\\] a hyperbola. The offset and intersection conditions exclude a plane through the vertex or a finite cone missed entirely.<p>Source note: p40 n118 qualified: axial-parallel, offset intersecting plane; a finite single cone shows only the available part of the curve.</p><p>Capsule 4th ed., p. 40; topic 10 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1057,7 +1057,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Putting c = 0 in k^2 z^2-y^2 = c^2 factors the section into y = kz and y = -kz. These are two intersecting straight generators, demonstrating why the offset condition matters for the hyperbola statement.<p>Capsule 4th ed., p. 40; topic 10 point 118.</p>",
+          "explanation": "Putting \\(c = 0\\) in \\(k^2z^2 - y^2 = c^2\\) factors the section into \\[y = kz \\quad \\text{and} \\quad y = -kz\\] These are two intersecting straight generators, demonstrating why the offset condition matters for the hyperbola statement.<p>Capsule 4th ed., p. 40; topic 10 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1133,7 +1133,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Scale = drawn length/actual length = 60/600 = 1/10. It is a reducing scale; reversing the ratio would enlarge the component instead of reducing it.<p>Capsule 4th ed., p. 41; topic 10 point 133.</p>",
+          "explanation": "The scale is drawn length divided by actual length: \\[\\dfrac{60}{600} = \\dfrac{1}{10}\\] It is a reducing scale; reversing the ratio would enlarge the component instead of reducing it.<p>Capsule 4th ed., p. 41; topic 10 point 133.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1209,7 +1209,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Width:height = 180:120, reduced by their common factor 60 to 3:2. Reversing orientation or reversing the stated ratio convention changes the order, so width and height must be identified.<p>Capsule 4th ed., p. 41; topic 10 point 148.</p>",
+          "explanation": "Width to height is 180 to 120, reduced by their common factor 60 to 3 to 2: \\[\\dfrac{180}{120} = \\dfrac{3}{2}\\] Reversing orientation or reversing the stated ratio convention changes the order, so width and height must be identified.<p>Capsule 4th ed., p. 41; topic 10 point 148.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1247,7 +1247,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Standard A-series paper includes A5, nominally 148 x 210 mm. A drawing-sheet standard or project may restrict its preferred formats, commonly to A0-A4, but that does not make A5 nonexistent or nonstandard as paper.<p>Source note: p41 n156 qualified: paper-size standard distinguished from a restricted drawing-sheet series; no uninspected mandatory Nepal format clause asserted.</p><p>Capsule 4th ed., p. 41; topic 10 point 156.</p>",
+          "explanation": "Standard A-series paper includes A5, nominally 148 by 210 mm. A drawing-sheet standard or project may restrict its preferred formats, commonly to A0-A4, but that does not make A5 nonexistent or nonstandard as paper.<p>Source note: p41 n156 qualified: paper-size standard distinguished from a restricted drawing-sheet series; no uninspected mandatory Nepal format clause asserted.</p><p>Capsule 4th ed., p. 41; topic 10 point 156.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1292,7 +1292,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Straight-line depreciation is (cost - residual value)/life = (100 - 10)/90 = NPR 1 million per year, or 1% of original cost. The source's 0.5-1.5% range is only a rough convention, not a universal physical deterioration rate or current tax rule.<p>Source note: Page 30 point 16: an explicitly assumed accounting life replaces an unsupported universal annual rate.</p><p>Capsule 4th ed., p. 30; topic 8 point 16.</p>",
+          "explanation": "Straight-line depreciation is \\[\\begin{aligned} D &amp;= \\dfrac{\\text{cost} - \\text{residual}}{\\text{life}} \\\\ &amp;= \\dfrac{100 - 10}{90} = 1 \\end{aligned}\\] NPR million per year, or 1% of original cost. The source's 0.5-1.5% range is only a rough convention, not a universal physical deterioration rate or current tax rule.<p>Source note: Page 30 point 16: an explicitly assumed accounting life replaces an unsupported universal annual rate.</p><p>Capsule 4th ed., p. 30; topic 8 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1330,7 +1330,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "At IRR, -100000 + 121000/(1+r)^2 = 0. Therefore (1+r)^2 = 1.21 and r = 0.10. Dividing the two-year gain by two would incorrectly use simple interest.<p>Capsule 4th ed., p. 38; topic 10 point 18.</p>",
+          "explanation": "At the IRR, \\[-100{,}000 + \\dfrac{121{,}000}{(1 + r)^2} = 0\\] Therefore \\((1 + r)^2 = 1.21\\) and \\(r = 0.10\\). Dividing the two-year gain by two would incorrectly use simple interest.<p>Capsule 4th ed., p. 38; topic 10 point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1368,7 +1368,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Quick assets = 900000 - 300000 - 60000 = 540000. The acid-test ratio is 540000/450000 = 1.20, whereas the current ratio includes inventory and prepayments and equals 2.00.<p>Capsule 4th ed., p. 38; topic 10 point 20.</p>",
+          "explanation": "The quick assets are \\[\\begin{aligned} &amp;900{,}000 - 300{,}000 - 60{,}000 \\\\ &amp;= 540{,}000 \\end{aligned}\\] The acid-test ratio is \\[\\dfrac{540{,}000}{450{,}000} = 1.20\\] whereas the current ratio includes inventory and prepayments and equals 2.00.<p>Capsule 4th ed., p. 38; topic 10 point 20.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1406,7 +1406,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Each period multiplies the balance by 1+i, so n periods give the single-payment compound amount factor F/P = (1+i)^n. Its reciprocal discounts one future payment; the other factors concern uniform series.<p>Capsule 4th ed., p. 38; topic 10 point 21.</p>",
+          "explanation": "Each period multiplies the balance by \\(1 + i\\), so \\(n\\) periods give the single-payment compound amount factor \\[\\dfrac{F}{P} = (1 + i)^n\\] Its reciprocal discounts one future payment; the other factors concern uniform series.<p>Capsule 4th ed., p. 38; topic 10 point 21.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1558,7 +1558,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Equivalence requires compensation for the time value of money: F = 100000(1.08) = 108000. The reciprocal calculation gives the present value of a future 100000, which is a different question.<p>Capsule 4th ed., p. 38; topic 10 point 25.</p>",
+          "explanation": "Equivalence requires compensation for the time value of money: \\[F = 100{,}000(1.08) = 108{,}000\\] The reciprocal calculation gives the present value of a future 100,000, which is a different question.<p>Capsule 4th ed., p. 38; topic 10 point 25.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1596,7 +1596,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Subtract signed cash flows: -680000 - (-500000) = -180000. Incremental analysis does not require zero initial investment; zero arises only when the compared alternatives have equal time-zero cash flows.<p>Source note: p38 n26 corrected: incremental initial investment need not be zero.</p><p>Capsule 4th ed., p. 38; topic 10 point 26.</p>",
+          "explanation": "Subtract the signed cash flows: \\[\\begin{aligned} &amp;-680{,}000 - (-500{,}000) \\\\ &amp;= -180{,}000 \\end{aligned}\\] Incremental analysis does not require zero initial investment; zero arises only when the compared alternatives have equal time-zero cash flows.<p>Source note: p38 n26 corrected: incremental initial investment need not be zero.</p><p>Capsule 4th ed., p. 38; topic 10 point 26.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1634,7 +1634,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The sinking-fund deposit is A = Fi/((1+i)^n-1). Here A = 100000(0.10)/(1.1^5-1) = 16379.7481, or NRs 16380. The fraction alone is a factor, not the monetary fund or deposit.<p>Source note: p38 n27: restored the factor&#39;s denominator and distinguished A/F from the target fund F; page text retains the fraction layout.</p><p>Capsule 4th ed., p. 38; topic 10 point 27.</p>",
+          "explanation": "The sinking-fund deposit is \\[A = \\dfrac{Fi}{(1 + i)^n - 1}\\] Here \\[\\begin{aligned} A &amp;= \\dfrac{100{,}000(0.10)}{1.1^5 - 1} \\\\ &amp;= 16{,}379.7481 \\end{aligned}\\] or NRs 16,380. The fraction alone is a factor, not the monetary fund or deposit.<p>Source note: p38 n27: restored the factor&#39;s denominator and distinguished A/F from the target fund F; page text retains the fraction layout.</p><p>Capsule 4th ed., p. 38; topic 10 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1672,7 +1672,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "B/C = 15/12 = 1.25, and net present benefit is 15 - 12 = 3 million. A ratio above one passes this economic test; equality is break-even, and the highest ratio does not necessarily identify the best exclusive alternative.<p>Capsule 4th ed., p. 38; topic 10 point 28.</p>",
+          "explanation": "The benefit-cost ratio and net present benefit are \\[\\dfrac{B}{C} = \\dfrac{15}{12} = 1.25\\] \\[15 - 12 = 3\\ \\text{million}\\] A ratio above one passes this economic test; equality is break-even, and the highest ratio does not necessarily identify the best exclusive alternative.<p>Capsule 4th ed., p. 38; topic 10 point 28.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1710,7 +1710,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Year 4 costs a+(n-1)b = 10000+3(2000) = 16000. The four-year total is 10000+12000+14000+16000 = 52000, also n[2a+(n-1)b]/2. The source incorrectly calls the single year's amount the total.<p>Source note: p38 n29 corrected: arithmetic-series terminal term is not its sum.</p><p>Capsule 4th ed., p. 38; topic 10 point 29.</p>",
+          "explanation": "The year-4 cost is \\[\\begin{aligned} C_4 &amp;= a + (n - 1)b \\\\ &amp;= 10{,}000 + 3(2000) \\\\ &amp;= 16{,}000 \\end{aligned}\\] The four-year total is \\[\\begin{aligned} &amp;10{,}000 + 12{,}000 + 14{,}000 \\\\ &amp;\\quad + 16{,}000 = 52{,}000 \\end{aligned}\\] also \\(\\dfrac{n[2a + (n - 1)b]}{2}\\). The source incorrectly calls the single year's amount the total.<p>Source note: p38 n29 corrected: arithmetic-series terminal term is not its sum.</p><p>Capsule 4th ed., p. 38; topic 10 point 29.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1748,7 +1748,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Discount each of the three periods: P = 133100/(1.10)^3 = 100000. Multiplying instead would compound forward, while simply subtracting three years' percentage does not implement compound discounting.<p>Capsule 4th ed., p. 38; topic 10 point 30.</p>",
+          "explanation": "Discount over each of the three periods: \\[P = \\dfrac{133{,}100}{(1.10)^3} = 100{,}000\\] Multiplying instead would compound forward, while simply subtracting three years' percentage does not implement compound discounting.<p>Capsule 4th ed., p. 38; topic 10 point 30.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1786,7 +1786,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Future amount is 20000(1.1)^2 = 24200; interest is 24200 - 20000 = 4200. Compounding earns interest on previously accumulated interest and does not require an increasing interest rate.<p>Source note: p38 n31 corrected: principal is not interest, and the rate can remain constant.</p><p>Capsule 4th ed., p. 38; topic 10 point 31.</p>",
+          "explanation": "The future amount and the interest are \\[F = 20{,}000(1.1)^2 = 24{,}200\\] \\[24{,}200 - 20{,}000 = 4200\\] Compounding earns interest on previously accumulated interest and does not require an increasing interest rate.<p>Source note: p38 n31 corrected: principal is not interest, and the rate can remain constant.</p><p>Capsule 4th ed., p. 38; topic 10 point 31.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1824,7 +1824,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The monthly rate is 0.12/12 = 0.01. Effective annual interest is (1.01)^12 - 1 = 0.12682503, or 12.6825%; nominal and effective annual rates differ when compounding occurs more than once yearly.<p>Capsule 4th ed., p. 38; topic 10 point 33.</p>",
+          "explanation": "The monthly rate is \\(\\dfrac{0.12}{12} = 0.01\\). The effective annual interest is \\[(1.01)^{12} - 1 = 0.12682503\\] or 12.6825%; nominal and effective annual rates differ when compounding occurs more than once yearly.<p>Capsule 4th ed., p. 38; topic 10 point 33.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1938,7 +1938,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Each receipt increases by the constant amount 5000, so this is an arithmetic or linear gradient superimposed on a base receipt. The percentage growth is not constant: 5000/40000 differs from 5000/45000.<p>Capsule 4th ed., p. 41; topic 10 point 120.</p>",
+          "explanation": "Each receipt increases by the constant amount 5000, so this is an arithmetic or linear gradient superimposed on a base receipt. The percentage growth is not constant: \\[\\dfrac{5000}{40{,}000} \\ne \\dfrac{5000}{45{,}000}\\]<p>Capsule 4th ed., p. 41; topic 10 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2090,7 +2090,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Discount each receipt to the same date: 55000/1.1 = 50000 and 60500/1.1^2 = 50000, giving 100000. DCF values timing-adjusted cash flows; an acquisition cost would be deducted separately to calculate project NPV.<p>Capsule 4th ed., p. 41; topic 10 point 146.</p>",
+          "explanation": "Discount each receipt to the same date: \\[\\dfrac{55{,}000}{1.1} = 50{,}000\\] \\[\\dfrac{60{,}500}{1.1^2} = 50{,}000\\] giving 100,000. DCF values timing-adjusted cash flows; an acquisition cost would be deducted separately to calculate project NPV.<p>Capsule 4th ed., p. 41; topic 10 point 146.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2128,7 +2128,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "NPV = present value of inflows minus outflows = 100000 - 90000 = 10000. Present-worth analysis is a standard project decision tool; the source's claim that it is not such a tool is incorrect.<p>Source note: p41 n147 corrected: present worth is a legitimate economic decision method.</p><p>Capsule 4th ed., p. 41; topic 10 point 147.</p>",
+          "explanation": "NPV is the present value of inflows minus outflows: \\[\\begin{aligned} \\text{NPV} &amp;= 100{,}000 - 90{,}000 \\\\ &amp;= 10{,}000 \\end{aligned}\\] Present-worth analysis is a standard project decision tool; the source's claim that it is not such a tool is incorrect.<p>Source note: p41 n147 corrected: present worth is a legitimate economic decision method.</p><p>Capsule 4th ed., p. 41; topic 10 point 147.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2166,7 +2166,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Annual depreciation = (1000000-100000)/5 = 180000. Three charges total 540000, leaving book value 1000000-540000 = 460000. This is a stated accounting method, not an assertion about Nepal's tax-depreciation pools.<p>Capsule 4th ed., p. 41; topic 10 point 149.</p>",
+          "explanation": "The annual depreciation is \\[\\begin{aligned} &amp;\\dfrac{1{,}000{,}000 - 100{,}000}{5} \\\\ &amp;= 180{,}000 \\end{aligned}\\] Three charges total 540,000, leaving the book value \\[\\begin{aligned} &amp;1{,}000{,}000 - 540{,}000 \\\\ &amp;= 460{,}000 \\end{aligned}\\] This is a stated accounting method, not an assertion about Nepal's tax-depreciation pools.<p>Capsule 4th ed., p. 41; topic 10 point 149.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2211,7 +2211,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The predecessor must satisfy both successor constraints, so its latest finish is min(18, 15) = day 15. The backward pass takes the controlling minimum; the forward pass uses the maximum of predecessor finish constraints.<p>Source note: Page 35 point 59 is CPM scheduling rather than transportation design; assigned to the exact in-syllabus code AALL1003.</p><p>Capsule 4th ed., p. 35; topic 9 point 59.</p>",
+          "explanation": "The predecessor must satisfy both successor constraints, so its latest finish is \\[\\text{LF} = \\min(18, 15) = \\text{day } 15\\] The backward pass takes the controlling minimum; the forward pass uses the maximum of predecessor finish constraints.<p>Source note: Page 35 point 59 is CPM scheduling rather than transportation design; assigned to the exact in-syllabus code AALL1003.</p><p>Capsule 4th ed., p. 35; topic 9 point 59.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2249,7 +2249,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "SPI = BCWP/BCWS = EV/PV = 600000/800000 = 0.75. It compares earned and planned budgeted work, not actual spending, and does not directly mean the finish date is 25% late.<p>Capsule 4th ed., p. 38; topic 10 point 32.</p>",
+          "explanation": "The schedule performance index is \\[\\begin{aligned} \\text{SPI} &amp;= \\dfrac{\\text{EV}}{\\text{PV}} = \\dfrac{600{,}000}{800{,}000} \\\\ &amp;= 0.75 \\end{aligned}\\] where EV is BCWP and PV is BCWS. It compares earned and planned budgeted work, not actual spending, and does not directly mean the finish date is 25% late.<p>Capsule 4th ed., p. 38; topic 10 point 32.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2363,7 +2363,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Free float equals the minimum successor early start minus the activity early finish: 10 - 7 = 3 days. It protects successor early starts, a more precise condition than merely saying other tasks are unaffected.<p>Capsule 4th ed., p. 38; topic 10 point 36.</p>",
+          "explanation": "Free float equals the minimum successor early start minus the activity early finish: \\[\\text{FF} = 10 - 7 = 3\\ \\text{days}\\] It protects successor early starts, a more precise condition than merely saying other tasks are unaffected.<p>Capsule 4th ed., p. 38; topic 10 point 36.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2477,7 +2477,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Every required path must finish, so the longest duration path controls the earliest possible project finish: max(9,12,10) = 12 days. Parallel path durations are not simply added.<p>Capsule 4th ed., p. 38; topic 10 point 40.</p>",
+          "explanation": "Every required path must finish, so the longest path controls the earliest possible project finish: \\[\\max(9, 12, 10) = 12\\ \\text{days}\\] Parallel path durations are not simply added.<p>Capsule 4th ed., p. 38; topic 10 point 40.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2553,7 +2553,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Earliest finish = 4 + 5 = 9 and latest start = 12 - 5 = 7. Total float = LF - EF = 12 - 9 = 3 days, equivalently LS - ES = 7 - 4.<p>Capsule 4th ed., p. 38; topic 10 point 42.</p>",
+          "explanation": "The earliest finish and latest start are \\[\\text{EF} = 4 + 5 = 9\\] \\[\\text{LS} = 12 - 5 = 7\\] so the total float is \\[\\begin{aligned} \\text{TF} &amp;= \\text{LF} - \\text{EF} = 12 - 9 \\\\ &amp;= 3\\ \\text{days} \\end{aligned}\\] equivalently \\(\\text{LS} - \\text{ES} = 7 - 4\\).<p>Capsule 4th ed., p. 38; topic 10 point 42.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2591,7 +2591,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Critical ratio = time remaining until due/work remaining. X gives 6/8 = 0.75 and Y gives 8/4 = 2. A value below one flags insufficient remaining time at the assumed rate, so X receives higher priority.<p>Capsule 4th ed., p. 38; topic 10 point 43.</p>",
+          "explanation": "The critical ratio is the time remaining until due divided by the work remaining: \\[\\text{X}: \\dfrac{6}{8} = 0.75, \\qquad \\text{Y}: \\dfrac{8}{4} = 2\\] A value below one flags insufficient remaining time at the assumed rate, so X receives higher priority.<p>Capsule 4th ed., p. 38; topic 10 point 43.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2705,7 +2705,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Cost slope = (90000-60000)/(8-5) = 10000 per day saved. Project shortening still requires checking every current critical path and the activity's crash limit; the ratio is not a guarantee that every purchased day shortens completion.<p>Capsule 4th ed., p. 38; topic 10 point 46.</p>",
+          "explanation": "The cost slope is \\[\\dfrac{90{,}000 - 60{,}000}{8 - 5} = 10{,}000\\] rupees per day saved. Project shortening still requires checking every current critical path and the activity's crash limit; the ratio is not a guarantee that every purchased day shortens completion.<p>Capsule 4th ed., p. 38; topic 10 point 46.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2743,7 +2743,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The forward pass waits for both predecessors: ES = max(6,9) = 9. Then EF = ES + duration = 9 + 4 = 13. Elapsed-time notation avoids an inclusive calendar-date off-by-one adjustment.<p>Capsule 4th ed., p. 38; topic 10 point 47.</p>",
+          "explanation": "The forward pass waits for both predecessors: \\[\\text{ES} = \\max(6, 9) = 9\\] \\[\\text{EF} = 9 + 4 = 13\\] Elapsed-time notation avoids an inclusive calendar-date off-by-one adjustment.<p>Capsule 4th ed., p. 38; topic 10 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2819,7 +2819,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "PERT gives te = (to + 4tm + tp)/6 = (2 + 4(5) + 14)/6 = 6 days. The extracted numbered point lost the divisor, but the complete page text places 6 beneath the numerator.<p>Source note: p39 n49: divisor 6 restored from complete page text, not image review.</p><p>Capsule 4th ed., p. 39; topic 10 point 49.</p>",
+          "explanation": "PERT gives \\[\\begin{aligned} t_e &amp;= \\dfrac{t_o + 4t_m + t_p}{6} \\\\ &amp;= \\dfrac{2 + 4(5) + 14}{6} = 6\\ \\text{days} \\end{aligned}\\] The extracted numbered point lost the divisor, but the complete page text places 6 beneath the numerator.<p>Source note: p39 n49: divisor 6 restored from complete page text, not image review.</p><p>Capsule 4th ed., p. 39; topic 10 point 49.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2971,7 +2971,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Each outgoing activity restricts J: 15-4 = 11 and 18-5 = 13. Take the minimum, 11, to satisfy both successors. The minimum applies to successor latest-time-minus-duration candidates, not arbitrary times at any meeting node.<p>Capsule 4th ed., p. 40; topic 10 point 95.</p>",
+          "explanation": "Each outgoing activity restricts J: \\[15 - 4 = 11, \\qquad 18 - 5 = 13\\] Take the minimum, 11, to satisfy both successors. The minimum applies to successor latest-time-minus-duration candidates, not arbitrary times at any meeting node.<p>Capsule 4th ed., p. 40; topic 10 point 95.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3047,7 +3047,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Standard deviation is the positive square root of variance: sqrt(16 days squared) = 4 days. Its units return to time, unlike variance, whose units are squared time.<p>Capsule 4th ed., p. 40; topic 10 point 107.</p>",
+          "explanation": "Standard deviation is the positive square root of variance: \\[\\sigma = \\sqrt{16\\ \\text{days}^2} = 4\\ \\text{days}\\] Its units return to time, unlike variance, whose units are squared time.<p>Capsule 4th ed., p. 40; topic 10 point 107.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3085,7 +3085,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "TF = LF-EF = 0 and FF = successor ES-EF = 0. Under the stated ordinary CPM assumptions TF is at least FF, but equality is possible. Deadline constraints causing negative float require separate treatment.<p>Source note: p40 n109 corrected: TF &gt;= FF under the stated conventional assumptions, not universally TF &gt; FF.</p><p>Capsule 4th ed., p. 40; topic 10 point 109.</p>",
+          "explanation": "The floats are \\[\\text{TF} = \\text{LF} - \\text{EF} = 0\\] \\[\\text{FF} = \\text{ES}_{succ} - \\text{EF} = 0\\] Under the stated ordinary CPM assumptions TF is at least FF, but equality is possible. Deadline constraints causing negative float require separate treatment.<p>Source note: p40 n109 corrected: TF &gt;= FF under the stated conventional assumptions, not universally TF &gt; FF.</p><p>Capsule 4th ed., p. 40; topic 10 point 109.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3161,7 +3161,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The backward pass propagates latest allowable times from the chosen finish, with LS = LF - duration. A forward pass commonly establishes the earliest finish used as that boundary, so the source's 'only' does not eliminate the need for the earlier network analysis.<p>Capsule 4th ed., p. 41; topic 10 point 131.</p>",
+          "explanation": "The backward pass propagates latest allowable times from the chosen finish, with \\(\\text{LS} = \\text{LF} - D\\). A forward pass commonly establishes the earliest finish used as that boundary, so the source's 'only' does not eliminate the need for the earlier network analysis.<p>Capsule 4th ed., p. 41; topic 10 point 131.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3237,7 +3237,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The path totals are 3+5+4 = 12 and 3+7+4 = 14. The longer path controls, so completion is day 14. Summing all distinct activities gives 19 and incorrectly treats parallel B and C as sequential.<p>Capsule 4th ed., p. 41; topic 10 point 138.</p>",
+          "explanation": "The path totals are \\[\\text{A-B-D}: 3 + 5 + 4 = 12\\] \\[\\text{A-C-D}: 3 + 7 + 4 = 14\\] The longer path controls, so completion is day 14. Summing all distinct activities gives 19 and incorrectly treats parallel B and C as sequential.<p>Capsule 4th ed., p. 41; topic 10 point 138.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3313,7 +3313,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Event slack = latest event time - earliest event time = 11 - 8 = 3 days. It is not generally the difference between an arbitrary preceding activity's latest finish and a following activity's earliest start.<p>Source note: p41 n145 corrected: compare latest and earliest times of the same event.</p><p>Capsule 4th ed., p. 41; topic 10 point 145.</p>",
+          "explanation": "Event slack is the latest event time minus the earliest event time: \\[11 - 8 = 3\\ \\text{days}\\] It is not generally the difference between an arbitrary preceding activity's latest finish and a following activity's earliest start.<p>Source note: p41 n145 corrected: compare latest and earliest times of the same event.</p><p>Capsule 4th ed., p. 41; topic 10 point 145.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3465,7 +3465,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "b",
-          "explanation": "LF = LS + duration = 9 + 4 = 13 in elapsed-time notation. This is the latest allowed finish under the chosen project-finish constraint, not necessarily the activity's early finish or a universal contractual completion date.<p>Capsule 4th ed., p. 41; topic 10 point 155.</p>",
+          "explanation": "In elapsed-time notation, \\[\\text{LF} = \\text{LS} + D = 9 + 4 = 13\\] This is the latest allowed finish under the chosen project-finish constraint, not necessarily the activity's early finish or a universal contractual completion date.<p>Capsule 4th ed., p. 41; topic 10 point 155.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3510,7 +3510,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For each two-outcome distribution, deviations from the mean are symmetric. The first has variance 0.5(2^2 + 2^2) = 4 and standard deviation 2 percentage points; the second has variance 36 and standard deviation 6. Variability is one financial risk measure, not a complete definition of all project risk.<p>Capsule 4th ed., p. 25; topic 6 point 77.</p>",
+          "explanation": "For each two-outcome distribution, deviations from the mean are symmetric. The variances are \\[0.5(2^2 + 2^2) = 4\\] \\[0.5(6^2 + 6^2) = 36\\] so the standard deviations are 2 and 6 percentage points. Variability is one financial risk measure, not a complete definition of all project risk.<p>Capsule 4th ed., p. 25; topic 6 point 77.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4118,7 +4118,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The daily amount is 40000000 x 0.0005 = 20000. Applying 20 assessable days gives 400000, below the 4000000 cap. Liquidated damages are an agreed contractual remedy subject to law, not universally an arbitrary penalty independent of entitlement.<p>Source note: p40 n100 and n101 repeat the same delay-damages fact and share this question. Rates are stated contract assumptions matching the identified PPMO September 2026 NCB works 1S2E SBD GCC/SCC 55.1 example in corrected management notes; not universal law.</p><p>Capsule 4th ed., p. 40; topic 10 point 100; topic 10 point 101.</p>",
+          "explanation": "The daily amount and the total for 20 assessable days are \\[40{,}000{,}000 \\times 0.0005 = 20{,}000\\] \\[20 \\times 20{,}000 = 400{,}000\\] below the 4,000,000 cap. Liquidated damages are an agreed contractual remedy subject to law, not universally an arbitrary penalty independent of entitlement.<p>Source note: p40 n100 and n101 repeat the same delay-damages fact and share this question. Rates are stated contract assumptions matching the identified PPMO September 2026 NCB works 1S2E SBD GCC/SCC 55.1 example in corrected management notes; not universal law.</p><p>Capsule 4th ed., p. 40; topic 10 point 100; topic 10 point 101.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4309,7 +4309,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "One crore is ten million, so 9 crore = 90 million, below 100 million. This unit conversion does not independently validate the source's current-law threshold; actual validity must follow the operative rules and issued BDS.<p>Source note: p41 n127: supplied conditional rule, not a certified current procurement threshold; related p40 n111 tests bid-validity meaning.</p><p>Capsule 4th ed., p. 41; topic 10 point 127.</p>",
+          "explanation": "One crore is ten million, so \\[9\\ \\text{crore} = 90\\ \\text{million}\\] below 100 million. This unit conversion does not independently validate the source's current-law threshold; actual validity must follow the operative rules and issued BDS.<p>Source note: p41 n127: supplied conditional rule, not a certified current procurement threshold; related p40 n111 tests bid-validity meaning.</p><p>Capsule 4th ed., p. 41; topic 10 point 127.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5807,7 +5807,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The Council-nominated group needs 1 - 0 = 1 woman. The two nomination groups have separate minima, whose sum is 3 + 1 = 4; even four women entirely in the Government group would not satisfy section 5(1)(h). All other eligibility conditions remain applicable.<p>Source note: p40 n81: primary section 5 confirms allocation-specific minima, not merely a fungible Council-wide four-woman quota. Numerical shortfall remains one.</p><p>Capsule 4th ed., p. 40; topic 10 point 81.</p>",
+          "explanation": "The Council-nominated group needs \\(1 - 0 = 1\\) woman. The two nomination groups have separate minima, whose sum is \\(3 + 1 = 4\\); even four women entirely in the Government group would not satisfy section 5(1)(h). All other eligibility conditions remain applicable.<p>Source note: p40 n81: primary section 5 confirms allocation-specific minima, not merely a fungible Council-wide four-woman quota. Numerical shortfall remains one.</p><p>Capsule 4th ed., p. 40; topic 10 point 81.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,

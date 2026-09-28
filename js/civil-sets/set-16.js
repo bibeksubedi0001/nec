@@ -110,7 +110,7 @@ const CIVIL_MODEL_16 = {
                         { key: "d", text: "60 tonnes/m2" }
                     ],
                     answer: "b",
-                    explanation: "The compressive strength of brick masonry depends on the brick and mortar strength. With a 1:6 cement mortar, a typical strength is around 4 N/mm² or 40 tonnes/m² (since 1 N/mm² ≈ 10 tonnes/m²)."
+                    explanation: "The compressive strength of brick masonry depends on the brick and mortar strength. With a 1:6 cement mortar, a typical strength is around 4 N per mm<sup>2</sup>, or 40 tonnes per m<sup>2</sup> (since 1 N per mm<sup>2</sup> is about 10 tonnes per m<sup>2</sup>)."
                 },
                 {
                     id: "cm16q007",
@@ -262,7 +262,7 @@ const CIVIL_MODEL_16 = {
                         { key: "d", text: "8" }
                     ],
                     answer: "a",
-                    explanation: "For a rigid-jointed plane frame, the degree of static indeterminacy is given by 3m + r - 3j. Here, m=15, r=3, j=14. So, 3*15 + 3 - 3*14 = 45 + 3 - 42 = 6."
+                    explanation: "For a rigid-jointed plane frame, the degree of static indeterminacy is \\[D_s = 3m + r - 3j\\] \\[= 3 \\times 15 + 3 - 3 \\times 14 = 6\\]"
                 },
                 {
                     id: "cm16q018",
@@ -288,7 +288,7 @@ const CIVIL_MODEL_16 = {
                         { key: "d", text: "None of the above" }
                     ],
                     answer: "b",
-                    explanation: "For a pin-jointed plane frame, if (m + r) &gt; 2j, the frame is stable and statically indeterminate. The condition for statical determinacy is (m + r) = 2j."
+                    explanation: "For a pin-jointed plane frame, \\(m + r \\gt 2j\\) means the frame is stable and statically indeterminate. The condition for statical determinacy is \\[m + r = 2j\\]"
                 },
                 {
                     id: "cm16q020",
@@ -388,7 +388,7 @@ const CIVIL_MODEL_16 = {
                         { key: "d", text: "9.99 mm" }
                     ],
                     answer: "b",
-                    explanation: "The permissible deflection for timber beams is usually limited to span/240. For a 4m (4000 mm) span, 4000/240 = 16.67 mm."
+                    explanation: "The permissible deflection of timber beams is usually limited to \\(\\dfrac{\\text{span}}{240}\\). For a 4 m (4000 mm) span, \\[\\dfrac{4000}{240} = 16.67\\ \\text{mm}\\]"
                 },
                 {
                     id: "cm16q027",
@@ -401,7 +401,7 @@ const CIVIL_MODEL_16 = {
                         { key: "d", text: "22.22 mm" }
                     ],
                     answer: "c",
-                    explanation: "The permissible deflection for cantilevers is often limited to span/150. For a 2m (2000 mm) cantilever, 2000/150 = 13.33 mm."
+                    explanation: "The permissible deflection of cantilevers is often limited to \\(\\dfrac{\\text{span}}{150}\\). For a 2 m (2000 mm) cantilever, \\[\\dfrac{2000}{150} = 13.33\\ \\text{mm}\\]"
                 },
                 {
                     id: "cm16q028",
@@ -414,7 +414,7 @@ const CIVIL_MODEL_16 = {
                         { key: "d", text: "210 mm" }
                     ],
                     answer: "d",
-                    explanation: "To prevent lateral buckling, the depth of a timber beam is often limited to a multiple of its width. A common rule is depth ≤ 3 * width. For 70 mm width, 3 * 70 = 210 mm."
+                    explanation: "To prevent lateral buckling, the depth of a timber beam is often limited to a multiple of its width. A common rule is \\(d \\le 3b\\), so for a 70 mm width \\[3 \\times 70 = 210\\ \\text{mm}\\]"
                 },
                 {
                     id: "cm16q029",
@@ -440,7 +440,7 @@ const CIVIL_MODEL_16 = {
                         { key: "d", text: "200 t" }
                     ],
                     answer: "b",
-                    explanation: "As per design codes, intermediate stiffeners are required when the web depth-to-thickness ratio (d/t_w) exceeds 85√(250/f_y) to prevent web buckling under shear."
+                    explanation: "Design codes require intermediate stiffeners when the web depth-to-thickness ratio exceeds \\[\\dfrac{d}{t_w} \\gt 85\\sqrt{\\dfrac{250}{f_y}}\\] to prevent web buckling under shear."
                 },
                 {
                     id: "cm16q031",
@@ -683,7 +683,7 @@ const CIVIL_MODEL_16 = {
                         { key: "d", text: "coefficient of volume compressibility" }
                     ],
                     answer: "d",
-                    explanation: "The coefficient of volume change (m_v) is defined as the volumetric strain per unit increase in effective stress. It is also known as the coefficient of volume compressibility. m_v = a_v / (1 + e_0), where a_v is the coefficient of compressibility."
+                    explanation: "The coefficient of volume change is the volumetric strain per unit increase in effective stress, also called the coefficient of volume compressibility: \\[m_v = \\dfrac{a_v}{1 + e_0}\\] where \\(a_v\\) is the coefficient of compressibility."
                 }
             ]
         },
@@ -705,7 +705,7 @@ const CIVIL_MODEL_16 = {
                         { key: "d", text: "1m" }
                     ],
                     answer: "a",
-                    explanation: "For max discharge, B=2y. Q = A * C * √(R*S) = (2y*y) * 40 * √((y/2)*(1/2000)) = 2y² * 40 * √(y/4000) = 80y² * √y / √4000 = 80y^(5/2) / 63.245 = 1.265 y^(5/2). Set equal to 7.15: y^(5/2)=7.15/1.265=5.65, y=(5.65)^(2/5). 5.65^0.4 ≈ ? 2^5=32, so y=2: 2^(5/2)=2^2.5=5.656, which matches. So y=2m."
+                    explanation: "For maximum discharge \\(B = 2y\\), so \\(A = 2y^2\\) and \\(R = \\dfrac{y}{2}\\). Chezy's formula gives \\[\\begin{aligned} Q &amp;= 2y^2 \\times 40\\sqrt{\\dfrac{y}{4000}} \\\\ &amp;= 1.265y^{5{/}2} = 7.15 \\end{aligned}\\] so \\(y^{5{/}2} = 5.65\\). Since \\(2^{5{/}2} = 5.656\\), \\(y = 2\\) m."
                 },
                 {
                     id: "cm16q050",
@@ -744,7 +744,7 @@ const CIVIL_MODEL_16 = {
                         { key: "d", text: "2m" }
                     ],
                     answer: "d",
-                    explanation: "For max discharge, B=2y, T=B=2y. Q_max = A * C * √(R*S) = (2y*y)*50*√((y/2)*(1/3000)) = 100y² * √(y/6000) = 100y^(5/2)/√6000 = 100y^(5/2)/77.46 = 1.291y^(5/2). Ratio Q/T = 1.291y^(5/2) / (2y) = 0.6455 y^(3/2) = 91/50 = 1.82. So y^(3/2)=1.82/0.6455=2.82, y=(2.82)^(2/3)= (2.82^0.6667). 2^0.6667=1.587, 3^0.6667=2.08, so y=2m: 2^(3/2)=2.828, close to 2.82."
+                    explanation: "For maximum discharge \\(B = T = 2y\\), so \\[\\begin{aligned} Q &amp;= 2y^2 \\times 50\\sqrt{\\dfrac{y}{6000}} \\\\ &amp;= 1.291y^{5{/}2} \\end{aligned}\\] \\[\\begin{aligned} \\dfrac{Q}{T} &amp;= 0.6455y^{3{/}2} \\\\ &amp;= \\dfrac{91}{50} = 1.82 \\end{aligned}\\] so \\(y^{3{/}2} = 2.82\\). Since \\(2^{3{/}2} = 2.828\\), \\(y = 2\\) m."
                 },
                 {
                     id: "cm16q053",
@@ -757,7 +757,7 @@ const CIVIL_MODEL_16 = {
                         { key: "d", text: "710 m³/s" }
                     ],
                     answer: "a",
-                    explanation: "For economical rectangular, R=y/2=4, so y=8m, B=2y=16m. A=B*y=128 m². S=0.001. Manning: Q = (1/n) A R^(2/3) S^(1/2) = (1/0.015)*128*(4)^(2/3)*√0.001 = 66.667 * 128 * (4^(0.6667)) * 0.03162. 4^(2/3)= (4^2)^(1/3)=16^(1/3)=2.52. So Q = 66.667*128=8533.33, *2.52=21504, *0.03162≈680 m³/s."
+                    explanation: "For the economical rectangle \\(R = \\dfrac{y}{2} = 4\\), so \\(y = 8\\) m, \\(B = 16\\) m and \\(A = 128\\) m<sup>2</sup>. Then \\[\\begin{aligned} Q &amp;= \\dfrac{1}{0.015} \\times 128 \\\\ &amp;\\quad \\times 4^{2{/}3} \\times \\sqrt{0.001} \\end{aligned}\\] \\[\\begin{aligned} &amp;= 8533.3 \\times 2.52 \\times 0.03162 \\\\ &amp;\\approx 680\\ \\text{m}^3\\text{/s} \\end{aligned}\\]"
                 },
                 {
                     id: "cm16q054",
@@ -1174,7 +1174,7 @@ const CIVIL_MODEL_16 = {
                         { key: "d", text: "Both Normal-weight aggregate and Heavy-weight aggregate" }
                     ],
                     answer: "c",
-                    explanation: "Normal-weight aggregates have a specific gravity typically between 2.5 and 2.7. Crushed stone, gravel, and sand are standard aggregates producing concrete with a density of about 2300-2500 kg/m³."
+                    explanation: "Normal-weight aggregates have a specific gravity typically between 2.5 and 2.7. Crushed stone, gravel and sand are standard aggregates producing concrete with a density of about 2300-2500 kg per m<sup>3</sup>."
                 },
                 {
                     id: "cm16q084",

@@ -201,7 +201,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "Multiplying factor" }
                     ],
                     answer: "d",
-                    explanation: "In stadia tacheometry, the distance from instrument to staff is calculated as D = K * s + C, where K (f/i) is the multiplying constant and C is the additive constant."
+                    explanation: "In stadia tacheometry, the distance from instrument to staff is \\[D = Ks + C\\] where \\(K = \\dfrac{f}{i}\\) is the multiplying constant and \\(C\\) is the additive constant."
                 }
             ]
         },
@@ -249,7 +249,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "9/10" }
                     ],
                     answer: "c",
-                    explanation: "The shear strain energy is written as the integral of k V squared over 2AG, where k corrects for the fact that shear stress is not uniform over the section. The factor is 6/5 for a rectangle and 10/9 for a circle, both greater than one because the peak shear at the neutral axis exceeds the average."
+                    explanation: "The shear strain energy is written as \\[U = \\int k\\dfrac{V^2}{2AG}\\,dx\\] where \\(k\\) corrects for the fact that shear stress is not uniform over the section. It is \\(\\dfrac{6}{5}\\) for a rectangle and \\(\\dfrac{10}{9}\\) for a circle, both greater than one because the peak shear at the neutral axis exceeds the average."
                 },
                 {
                     id: "cm19q017",
@@ -353,7 +353,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "Factor of safety" }
                     ],
                     answer: "c",
-                    explanation: "Slenderness Ratio (λ) = Effective Length (Le) / Least Radius of Gyration (r). It is a key measure of a column's propensity to buckle."
+                    explanation: "The slenderness ratio, a key measure of a column's tendency to buckle, is \\[\\lambda = \\dfrac{L_e}{r_{min}}\\] the effective length divided by the least radius of gyration."
                 }
             ]
         },
@@ -375,7 +375,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "9600 mm²" }
                     ],
                     answer: "d",
-                    explanation: "As per IS 456:2000, the maximum longitudinal reinforcement for an RCC column is 6% of the gross cross-sectional area. For a 400mm x 400mm column, area = 160,000 mm². 6% of 160,000 = 9600 mm²."
+                    explanation: "IS 456:2000 limits longitudinal steel in a column to 6% of the gross area. For a 400 mm by 400 mm column, \\(A_g = 160{,}000\\) mm<sup>2</sup>, so \\[0.06 \\times 160{,}000 = 9600\\ \\text{mm}^2\\]"
                 },
                 {
                     id: "cm19q026",
@@ -387,7 +387,7 @@ const CIVIL_MODEL_19 = {
                         { key: "c", text: "0.25 √fck" }
                     ],
                     answer: "a",
-                    explanation: "As per IS 456:2000, the permissible bearing stress on the loaded area (footing) is 0.45fck√(A1/A2), with a maximum value of 0.45fck√2. However, for the base itself (without the √(A1/A2) factor), the fundamental permissible bearing stress is often taken as 0.45fck. The option '0.45 √fck' is a common simplification or misstatement found in some contexts, but based on the given choices, it is selected as the correct answer."
+                    explanation: "IS 456:2000 gives the permissible bearing stress on the loaded area as \\[0.45f_{ck}\\sqrt{\\dfrac{A_1}{A_2}}\\] with a maximum of \\(0.45f_{ck}\\sqrt{2}\\). Without the area factor, the basic bearing stress is \\(0.45f_{ck}\\). The option '\\(0.45\\sqrt{f_{ck}}\\)' is a common misstatement of this, but it is the intended answer among the choices given."
                 },
                 {
                     id: "cm19q027",
@@ -604,7 +604,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "0.4" }
                     ],
                     answer: "a",
-                    explanation: "For an infinite, cohesion-less slope, the factor of safety (F) is given by F = tanφ / tanβ, where β is the slope angle. F = tan(30°) / tan(12°) ≈ 0.577 / 0.213 = 2.71."
+                    explanation: "For an infinite cohesionless slope, \\[F = \\dfrac{\\tan\\phi}{\\tan\\beta} = \\dfrac{\\tan 30^\\circ}{\\tan 12^\\circ}\\] \\[= \\dfrac{0.577}{0.213} = 2.71\\]"
                 },
                 {
                     id: "cm19q043",
@@ -630,7 +630,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "All of the mentioned" }
                     ],
                     answer: "c",
-                    explanation: "For an infinite slope with cohesionless soil (c=0), the factor of safety is F = (tanφ) / (tanβ), where φ is the friction angle and β is the slope angle. This equation defines safety against sliding."
+                    explanation: "For an infinite slope in cohesionless soil (\\(c = 0\\)), the factor of safety against sliding is \\[F = \\dfrac{\\tan\\phi}{\\tan\\beta}\\] where \\(\\phi\\) is the friction angle and \\(\\beta\\) the slope angle."
                 },
                 {
                     id: "cm19q045",
@@ -808,7 +808,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "0.95 times the diameter of section" }
                     ],
                     answer: "d",
-                    explanation: "For a circular channel flowing partially full, the discharge is maximum when the depth of flow is approximately 0.95 times the diameter (d/D = 0.95)."
+                    explanation: "For a circular channel flowing partly full, the discharge is maximum when the depth is about 0.95 times the diameter: \\[\\dfrac{d}{D} = 0.95\\]"
                 }
             ]
         },
@@ -856,7 +856,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "124 D" }
                     ],
                     answer: "c",
-                    explanation: "A common empirical rule for preliminary estimates of tunnel lining thickness (in mm) for concrete linings is T = 42D, where D is the tunnel diameter in meters. This provides a rough initial estimate before detailed structural design."
+                    explanation: "A common empirical rule for preliminary estimates of concrete tunnel lining thickness is \\[t = 42D\\] in mm, with \\(D\\) the tunnel diameter in metres. This gives a rough initial estimate before detailed structural design."
                 },
                 {
                     id: "cm19q061",
@@ -969,7 +969,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "864 cm" }
                     ],
                     answer: "c",
-                    explanation: "$$\\begin{aligned} & \\text{Given data:} \\\\ & \\text{Base Period } (B) = 50 \\text{ days} \\\\ & \\text{Duty } (D) = 500 \\text{ hectares/cumec} \\\\ & \\\\ & \\text{Using the formula:} \\\\ & \\Delta = \\frac{8.64 \\times B}{D} \\\\ & \\\\ & \\text{Calculation:} \\\\ & \\Delta = \\frac{8.64 \\times 50}{500} \\\\ & \\Delta = \\frac{432}{500} \\\\ & \\Delta = 0.864 \\text{ m} \\\\ & \\Delta = 86.4 \\text{ cm} \\end{aligned}$$"
+                    explanation: "The depth of water is \\[\\begin{aligned} \\Delta &amp;= \\dfrac{8.64B}{D} = \\dfrac{8.64 \\times 50}{500} \\\\ &amp;= \\dfrac{432}{500} = 0.864\\ \\text{m} \\end{aligned}\\] which is 86.4 cm, with \\(B = 50\\) days and \\(D = 500\\) hectares per cumec."
                 },
                 {
                     id: "cm19q069",
@@ -995,7 +995,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "24 %" }
                     ],
                     answer: "a",
-                    explanation: "Volume of water delivered = 10 m³/s * 4 * 3600 s = 144,000 m³. Volume stored in root zone = 32 ha * 10,000 m²/ha * 0.3 m = 96,000 m³. Application efficiency = (Volume stored / Volume delivered) * 100 = (96,000 / 144,000) * 100 = 66.67%."
+                    explanation: "The volumes delivered and stored are \\[\\begin{aligned} V_d &amp;= 10 \\times 4 \\times 3600 \\\\ &amp;= 144{,}000\\ \\text{m}^3 \\end{aligned}\\] \\[\\begin{aligned} V_s &amp;= 32 \\times 10{,}000 \\times 0.3 \\\\ &amp;= 96{,}000\\ \\text{m}^3 \\end{aligned}\\] so the application efficiency is \\[\\dfrac{96{,}000}{144{,}000} \\times 100 = 66.67\\%\\]"
                 },
                 {
                     id: "cm19q071",
@@ -1008,7 +1008,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "1172 hectares/m³/sec" }
                     ],
                     answer: "b",
-                    explanation: "Outlet factor is the duty during the kor period. D = (8.64 * B) / Δ. B = 14 days, Δ = 190 mm = 19 cm. D = (8.64 * 14) / 19 = 120.96 / 19 ≈ 637 ha/cumec."
+                    explanation: "The outlet factor is the duty during the kor period, with \\(B = 14\\) days and \\(\\Delta = 19\\) cm: \\[\\begin{aligned} D &amp;= \\dfrac{864B}{\\Delta} = \\dfrac{864 \\times 14}{19} \\\\ &amp;\\approx 637\\ \\text{ha/cumec} \\end{aligned}\\]"
                 },
                 {
                     id: "cm19q072",
@@ -1060,7 +1060,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "Consumptive use + field losses + conveyance losses" }
                     ],
                     answer: "b",
-                    explanation: "Net Irrigation Requirement (NIR) is the amount of irrigation water required to meet the evapotranspiration needs of the crop, after accounting for the contribution from effective rainfall. So, NIR = Cu - Re."
+                    explanation: "The net irrigation requirement is the irrigation water needed to meet the crop's evapotranspiration after allowing for effective rainfall: \\[\\text{NIR} = C_u - R_e\\]"
                 },
                 {
                     id: "cm19q076",
@@ -1121,7 +1121,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "0.11" }
                     ],
                     answer: "b",
-                    explanation: "The cross-slope is 1 in 50, meaning a rise of 1 unit over a width of 50 units. For a total width of 7m, the crown is raised in the center relative to the edges. The rise from the edge to the center (half-width = 3.5m) is (1/50) * 3.5 = 0.07 m."
+                    explanation: "A cross-slope of 1 in 50 means a rise of 1 unit over 50 units of width. The crown is raised at the centre relative to the edges, so over the half-width of 3.5 m \\[\\dfrac{1}{50} \\times 3.5 = 0.07\\ \\text{m}\\]"
                 },
                 {
                     id: "cm19q080",
@@ -1160,7 +1160,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "16m" }
                     ],
                     answer: "a",
-                    explanation: "As per IRC recommendations, the safe spacing between vehicles (S) in a traffic stream is given by S = (0.2 * V + 6) where V is speed in km/h. For V=50 km/h, S = (0.2*50 + 6) = (10 + 6) = 16m. However, a common empirical formula for spacing in overtaking sight distance calculations is often taken as the average length of a vehicle (≈6m) plus a clearance (≈3.6m), totaling around 9.6-10m. For 50 kmph, IRC suggests a spacing of about 14m for OSD calculations."
+                    explanation: "The IRC spacing relation \\(S = 0.2V + 6\\), with \\(V\\) in km per h, gives \\[S = 0.2 \\times 50 + 6 = 16\\ \\text{m}\\] A vehicle length of about 6 m plus a 3.6 m clearance gives only about 9.6-10 m. For 50 km per h, IRC suggests a spacing of about 14 m for OSD calculations, which is the key's answer."
                 },
                 {
                     id: "cm19q083",
@@ -1173,7 +1173,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "SSD = ISD + OSD" }
                     ],
                     answer: "b",
-                    explanation: "Intermediate Sight Distance (ISD) is defined as twice the Stopping Sight Distance (SSD). ISD = 2 * SSD. This provides a margin of safety, allowing two-way traffic to stop if needed."
+                    explanation: "Intermediate sight distance is defined as twice the stopping sight distance: \\[\\text{ISD} = 2\\,\\text{SSD}\\] This gives a margin that lets two-way traffic stop if needed."
                 },
                 {
                     id: "cm19q084",
@@ -1212,7 +1212,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "0.15" }
                     ],
                     answer: "a",
-                    explanation: "Use the formula e + f = V²/(127R). V=60 km/h, R=150m, f=0.15. e + 0.15 = (60²)/(127*150) = 3600 / 19050 ≈ 0.189. Thus, e = 0.189 - 0.15 = 0.039. However, IRC restricts maximum e to 0.07 (7%). Since the calculated e is less than 0.07, it is provided as 0.039."
+                    explanation: "Using \\(e + f = \\dfrac{V^2}{127R}\\) with \\(V = 60\\), \\(R = 150\\) and \\(f = 0.15\\): \\[e + 0.15 = \\dfrac{3600}{19{,}050} \\approx 0.189\\] so \\(e = 0.189 - 0.15\\), or 0.039. IRC limits \\(e\\) to 0.07, and 0.039 is below that, so it is provided as calculated."
                 },
                 {
                     id: "cm19q087",
@@ -1225,7 +1225,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "0.50m" }
                     ],
                     answer: "b",
-                    explanation: "The raise of the outer edge (E) = e * B, where e is the superelevation and B is the width of the pavement. E = 0.07 * 7 = 0.49 meters."
+                    explanation: "The raise of the outer edge is the superelevation times the pavement width: \\[E = eB = 0.07 \\times 7 = 0.49\\ \\text{m}\\]"
                 },
                 {
                     id: "cm19q088",
@@ -1237,7 +1237,7 @@ const CIVIL_MODEL_19 = {
                         { key: "c", text: "V²/127(e+f)" }
                     ],
                     answer: "c",
-                    explanation: "The ruling minimum radius (R) for a horizontal curve is calculated using the formula R = V² / (127(e + f)), where V is speed in km/h, e is superelevation, and f is the coefficient of friction."
+                    explanation: "The ruling minimum radius, with \\(V\\) in km per h, is \\[R = \\dfrac{V^2}{127(e + f)}\\] where \\(e\\) is the superelevation and \\(f\\) the coefficient of friction."
                 },
                 {
                     id: "cm19q089",
@@ -1250,7 +1250,7 @@ const CIVIL_MODEL_19 = {
                         { key: "d", text: "Mechanical widening and psychological widening" }
                     ],
                     answer: "d",
-                    explanation: "Extra widening on curves (E) has two components: mechanical widening (due to the rigid wheelbase of the vehicle) and psychological widening (to provide extra room for driver comfort and safety). E = W_mechanical + W_psychological."
+                    explanation: "Extra widening on curves has two parts: mechanical widening (due to the rigid wheelbase) and psychological widening (extra room for driver comfort and safety): \\[W_e = W_m + W_{ps}\\]"
                 }
             ]
         },

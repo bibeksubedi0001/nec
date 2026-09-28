@@ -45,7 +45,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "Difference between the sum of back sights and free sights." }
                     ],
                     answer: "c",
-                    explanation: "In differential leveling, the difference in elevation between the starting and ending points is equal to the sum of all back sights minus the sum of all fore sights. ΣBS - ΣFS = Last RL - First RL."
+                    explanation: "In differential levelling, the difference in elevation between the starting and ending points is the sum of all back sights minus the sum of all fore sights: \\[\\begin{aligned} &amp;\\Sigma\\text{BS} - \\Sigma\\text{FS} \\\\ &amp;= \\text{RL}_{last} - \\text{RL}_{first} \\end{aligned}\\]"
                 },
                 {
                     id: "cm22q002",
@@ -58,7 +58,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "Directly proportional to measured length" }
                     ],
                     answer: "d",
-                    explanation: "The correction to reduce a length measured at height H above MSL to its equivalent length at MSL is C_msl = (L * H) / R. This shows the correction is directly proportional to the measured length L and the height H, and inversely proportional to the Earth's radius R."
+                    explanation: "The correction that reduces a length measured at height \\(H\\) above MSL to its equivalent at MSL is \\[C_{msl} = \\dfrac{LH}{R}\\] so it is directly proportional to the measured length \\(L\\) and the height \\(H\\), and inversely proportional to the earth's radius \\(R\\)."
                 },
                 {
                     id: "cm22q003",
@@ -236,7 +236,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "Rectangular" }
                     ],
                     answer: "a",
-                    explanation: "Under pure bending, the beam deforms into a circular arc because the curvature (1/R = M/EI) is constant along the length."
+                    explanation: "Under pure bending, the curvature \\(\\dfrac{1}{R} = \\dfrac{M}{EI}\\) is constant along the length, so the beam deforms into a circular arc."
                 },
                 {
                     id: "cm22q016",
@@ -262,7 +262,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "Action of loading" }
                     ],
                     answer: "c",
-                    explanation: "The maximum shear stress in a beam occurs at the neutral axis, where the bending stress is zero. This is derived from the shear stress formula τ = VQ/(Ib)."
+                    explanation: "The maximum shear stress in a beam occurs at the neutral axis, where the bending stress is zero, as follows from \\[\\tau = \\dfrac{VQ}{Ib}\\]"
                 },
                 {
                     id: "cm22q018",
@@ -327,7 +327,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "6.4 × 10⁶ mm³" }
                     ],
                     answer: "d",
-                    explanation: "Section modulus, Z = bd²/6. For b=240mm, d=400mm, Z = (240 × 400²)/6 = (240 × 160000)/6 = 38400000/6 = 6,400,000 mm³ = 6.4 × 10⁶ mm³."
+                    explanation: "The section modulus is \\[Z = \\dfrac{bd^2}{6} = \\dfrac{240 \\times 400^2}{6}\\] \\[\\begin{aligned} &amp;= \\dfrac{38{,}400{,}000}{6} \\\\ &amp;= 6.4 \\times 10^6\\ \\text{mm}^3 \\end{aligned}\\]"
                 },
                 {
                     id: "cm22q023",
@@ -353,7 +353,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "R" }
                     ],
                     answer: "b",
-                    explanation: "From the bending stress formula σ = My/I, the stress at a point is directly proportional to its distance (y) from the neutral axis."
+                    explanation: "From the bending stress formula \\[\\sigma = \\dfrac{My}{I}\\] the stress at a point is directly proportional to its distance \\(y\\) from the neutral axis."
                 }
             ]
         },
@@ -375,7 +375,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "0.53" }
                     ],
                     answer: "c",
-                    explanation: "For Fe 500 steel in limit state design (IS 456:2000), the limiting depth of neutral axis is given by xu,lim / d = 0.0035 / (0.0035 + 0.004 + (0.002/1.15)) for doubly reinforced sections. A simplified value often used is 0.46."
+                    explanation: "For Fe 500 in limit state design (IS 456:2000), with \\(\\varepsilon_y = \\dfrac{0.87f_y}{E_s}\\), \\[\\dfrac{x_{u,lim}}{d} = \\dfrac{0.0035}{0.0055 + \\varepsilon_y}\\] which gives about 0.46."
                 },
                 {
                     id: "cm22q026",
@@ -401,7 +401,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "Not possible" }
                     ],
                     answer: "a",
-                    explanation: "For a rectangular section, Zp = 1.5Ze. For an I-section, Zp &gt; Ze. For a circular section, Zp = 16/ (3π) * (d³/32) ≈ 1.7 * (πd³/32) but the ratio Zp/Ze is about 1.7, still greater than 1. The statement is generally false, but the option 'Circular section' is chosen based on the provided choices, implying it might be the least difference or a trick."
+                    explanation: "For a rectangle \\(Z_p = 1.5Z_e\\), and for an I-section \\(Z_p \\gt Z_e\\). For a circle the ratio \\(\\dfrac{Z_p}{Z_e}\\) is about 1.7, still greater than 1. The statement is generally false for all these sections; the key's 'Circular section' is kept as the intended answer."
                 },
                 {
                     id: "cm22q028",
@@ -414,7 +414,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "3t/4" }
                     ],
                     answer: "b",
-                    explanation: "As per IS 800:2007, the maximum size of a fillet weld at the rounded edge of a rolled section should not exceed 3/4 of the thickness of the section at the toe. However, a common rule is also t/2. Based on the options, t/2 is selected."
+                    explanation: "IS 800:2007 limits a fillet weld at the rounded edge of a rolled section to \\(\\dfrac{3}{4}\\) of the thickness at the toe, but a common rule is also \\(\\dfrac{t}{2}\\), which is the option selected."
                 },
                 {
                     id: "cm22q029",
@@ -427,7 +427,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "√(σ² + 4τ²)" }
                     ],
                     answer: "c",
-                    explanation: "As per von Mises yield criterion, the equivalent stress for a 2D stress state (σ and τ) is √(σ² + 3τ²). This is used in weld design codes like IS 800."
+                    explanation: "By the von Mises criterion, the equivalent stress for a normal stress \\(\\sigma\\) combined with shear \\(\\tau\\) is \\[\\sigma_e = \\sqrt{\\sigma^2 + 3\\tau^2}\\] This is used in weld design codes such as IS 800."
                 },
                 {
                     id: "cm22q030",
@@ -453,7 +453,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "12.50 mm" }
                     ],
                     answer: "a",
-                    explanation: "The maximum size of a fillet weld should be 1-2 mm less than the thickness of the thinner plate to avoid melting the edge. For a 12 mm plate, max size = 12 - 1.5 = 10.5 mm (approximately)."
+                    explanation: "The maximum size of a fillet weld should be 1-2 mm less than the thickness of the thinner plate to avoid melting the edge. For a 12 mm plate, \\[12 - 1.5 = 10.5\\ \\text{mm}\\] approximately."
                 },
                 {
                     id: "cm22q032",
@@ -479,7 +479,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "465 mm²" }
                     ],
                     answer: "c",
-                    explanation: "\\(\\[ \\begin{aligned} \\text{Net area } (A_n) &= (b - d_{\\text{hole}}) \\times t \\\\ &= (75\\ \\text{mm} - 20\\ \\text{mm}) \\times 10\\ \\text{mm} \\\\ &= 55 \\times 10 \\\\ &= 550\\ \\text{mm}^2 \\end{aligned} \\]\\) In structural steel design, the net area calculation typically includes an allowance for bolt hole clearance as per standard codes (like IS 800, AISC, etc.). The nominal hole diameter is taken as the bolt diameter plus 2 mm (for standard clearance holes), so:"
+                    explanation: "The nominal hole diameter is taken as the bolt diameter plus 2 mm for standard clearance holes (IS 800, AISC and similar codes), i.e. 20 mm here. So \\[\\begin{aligned} A_n &amp;= (b - d_h)t \\\\ &amp;= (75 - 20) \\times 10 \\\\ &amp;= 550\\ \\text{mm}^2 \\end{aligned}\\] The options print cm<sup>2</sup>, but the value is in mm<sup>2</sup>."
                 },
                 {
                     id: "cm22q034",
@@ -770,7 +770,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "Infinity" }
                     ],
                     answer: "d",
-                    explanation: "For a horizontal channel (slope S0=0), the normal depth for uniform flow is theoretically infinity because uniform flow cannot occur without a slope. In practice, it means the flow is not uniform."
+                    explanation: "For a horizontal channel (\\(S_0 = 0\\)), the normal depth is theoretically infinite, because uniform flow cannot occur without a slope. In practice it means the flow is not uniform."
                 },
                 {
                     id: "cm22q055",
@@ -809,7 +809,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "2.60 m" }
                     ],
                     answer: "c",
-                    explanation: "Specific energy E = y + (V²/(2g)). Discharge Q=10 m³/s, width B=5m, depth y=2m. Velocity V = Q/A = Q/(B*y) = 10/(5*2) = 1 m/s. V²/(2g) = (1)²/(2*9.81) ≈ 1/19.62 ≈ 0.051 m. So, E = 2 + 0.051 = 2.051 m ≈ 2.05m."
+                    explanation: "The velocity is \\[V = \\dfrac{Q}{By} = \\dfrac{10}{5 \\times 2} = 1\\ \\text{m/s}\\] so \\[\\begin{aligned} E &amp;= y + \\dfrac{V^2}{2g} = 2 + \\dfrac{1}{19.62} \\\\ &amp;\\approx 2.05\\ \\text{m} \\end{aligned}\\]"
                 },
                 {
                     id: "cm22q058",
@@ -835,7 +835,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "no zones" }
                     ],
                     answer: "a",
-                    explanation: "For a critical slope (S0 = Sc), the normal depth equals the critical depth. The entire channel is essentially at critical conditions, so there is only one zone (Zone C) where the water surface profile is approximately parallel to the channel bottom."
+                    explanation: "On a critical slope (\\(S_0 = S_c\\)) the normal depth equals the critical depth, so there is only one zone (zone C), where the water surface runs roughly parallel to the bed."
                 },
                 {
                     id: "cm22q060",
@@ -896,7 +896,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "124 D" }
                     ],
                     answer: "a",
-                    explanation: "A common empirical formula for preliminary estimation of tunnel lining thickness (t in mm) is t = 42D, where D is the tunnel diameter in meters. This provides a rough initial estimate for design."
+                    explanation: "A common empirical formula for preliminary tunnel lining thickness is \\[t = 42D\\] in mm, with \\(D\\) the tunnel diameter in metres. This gives a rough initial estimate for design."
                 },
                 {
                     id: "cm22q064",
@@ -1311,7 +1311,7 @@ const CIVIL_MODEL_22 = {
                         { key: "b", text: "Q = CL/360" }
                     ],
                     answer: "b",
-                    explanation: "The rational formula for peak stormwater runoff is Q = CIA, where C is runoff coefficient, I is rainfall intensity, A is area. The option 'Q = CL/360' is likely a distractor; the standard formula does not use length (L) in this way."
+                    explanation: "The rational formula for peak storm runoff is \\[Q = CIA\\] where \\(C\\) is the runoff coefficient, \\(I\\) the rainfall intensity and \\(A\\) the area. The keyed option, with \\(L\\) in place of \\(IA\\), is a garbled form of \\(Q = \\dfrac{CIA}{360}\\); the standard formula does not use a length \\(L\\)."
                 },
                 {
                     id: "cm22q094",
@@ -1324,7 +1324,7 @@ const CIVIL_MODEL_22 = {
                         { key: "d", text: "v = (βρA/3a²) gd" }
                     ],
                     answer: "d",
-                    explanation: "The correct form of the Shield's formula for self-cleansing velocity in sewers involves the sediment properties (β, ρ), pipe characteristics, gravitational constant (g), and particle diameter (d). the option \"v = (βρA/3a²) gd\" is closest to the standard notation."
+                    explanation: "Camp's (Shields) formula for self-cleansing velocity combines the sediment properties (\\(\\beta\\), specific gravity), the pipe characteristics, gravity \\(g\\) and the particle diameter \\(d\\). The keyed option (d), with the factor A over 3a<sup>2</sup>, is closest to the standard notation."
                 },
                 {
                     id: "cm22q095",
@@ -1336,7 +1336,7 @@ const CIVIL_MODEL_22 = {
                         { key: "c", text: "(1 - tan(θ/2))" }
                     ],
                     answer: "a",
-                    explanation: "The proportional depth (d/D) in a circular sewer is given by the formula: d/D = (1 - cos(θ/2))/2. The option '(1 - cos(θ/2))' is a simplified representation of this concept."
+                    explanation: "The proportional depth of a circular sewer running partly full is \\[\\dfrac{d}{D} = \\dfrac{1}{2}\\left(1 - \\cos\\dfrac{\\theta}{2}\\right)\\] The option \\(1 - \\cos\\dfrac{\\theta}{2}\\) is a simplified form of this, omitting the factor \\(\\dfrac{1}{2}\\)."
                 },
                 {
                     id: "cm22q096",
@@ -1360,7 +1360,7 @@ const CIVIL_MODEL_22 = {
                         { key: "c", text: "V = (1/n) R²⁄³ S¹⁄²" }
                     ],
                     answer: "c",
-                    explanation: "This question asks for the Manning's formula, which is V = (1/n) * R^(2/3) * S^(1/2), where V is velocity, n is roughness coefficient, R is hydraulic radius, and S is slope."
+                    explanation: "This is Manning's formula: \\[V = \\dfrac{1}{n}R^{2{/}3}S^{1{/}2}\\] where \\(V\\) is velocity, \\(n\\) the roughness coefficient, \\(R\\) the hydraulic radius and \\(S\\) the slope."
                 },
                 {
                     id: "cm22q098",

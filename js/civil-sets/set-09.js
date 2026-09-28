@@ -110,7 +110,7 @@ const CIVIL_MODEL_9 = {
                         { key: "d", text: "660" }
                     ],
                     answer: "c",
-                    explanation: "While the theoretical count is 500 for standard modular bricks, 560 is the standard norm for handmade bricks to account for their slightly smaller local dimensions and higher wastage. In the Nepalese context (DUDBC norms), this higher figure ensures accuracy during material procurement for non-machine-made masonry. NS =530 IS=500 Hand/local=560 Machine made=530"
+                    explanation: "While the theoretical count is 500 for standard modular bricks, 560 is the standard norm for handmade bricks, to account for their slightly smaller local dimensions and higher wastage. In the Nepalese context (DUDBC norms), this higher figure ensures accuracy during material procurement for non-machine-made masonry. Typical norms are NS 530, IS 500, hand-made local 560 and machine-made 530."
                 },
                 {
                     id: "cm9q007",
@@ -679,7 +679,7 @@ const CIVIL_MODEL_9 = {
                         { key: "d", text: "π r² Po" }
                     ],
                     answer: "d",
-                    explanation: "The net force acting on a hemispherical part (shell) due to a uniform pressure acting perpendicular to its surface is determined by the pressure multiplied by the projected area of the hemisphere, which is a circle. The formula for the force is: \\(P_o \\pi r^2\\)"
+                    explanation: "The net force of a uniform pressure on a hemispherical shell equals the pressure times the projected area of the hemisphere, a circle: \\[F = P_o\\pi r^2\\]"
                 },
                 {
                     id: "cm9q048",
@@ -757,7 +757,7 @@ const CIVIL_MODEL_9 = {
                         { key: "d", text: "1.25m" }
                     ],
                     answer: "b",
-                    explanation: "d = 3m, b = 2.5m \\(\\(\\bar{h} = \\frac{3}{2} = 1.5\\text{ m}\\)\\) \\( \\(A = 2.5 \\times 3 = 7.5\\text{ m}^2\\)\\) \\(\\(I_G = \\frac{2.5 \\times 3^3}{12} = 5.625\\text{ m}^4\\)\\) Center of Pressure: \\(\\(h^{*}=1.5+\\frac{5.625}{7.5\\times 1.5}=1.5+0.5=\\mathbf{2.0}\\text{\\ m}\\)\\)"
+                    explanation: "With \\(d = 3\\) m and \\(b = 2.5\\) m, \\[\\bar h = 1.5\\ \\text{m}, \\qquad A = 7.5\\ \\text{m}^2\\] \\[I_G = \\dfrac{2.5 \\times 3^3}{12} = 5.625\\ \\text{m}^4\\] The centre of pressure is at \\[\\begin{aligned} h^* &amp;= \\bar h + \\dfrac{I_G}{A\\bar h} \\\\ &amp;= 1.5 + \\dfrac{5.625}{7.5 \\times 1.5} \\\\ &amp;= 1.5 + 0.5 = 2.0\\ \\text{m} \\end{aligned}\\]"
                 },
                 {
                     id: "cm9q054",

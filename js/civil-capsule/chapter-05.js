@@ -107,7 +107,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The specified relation is S = mu S0, so S = 0.75 x 2.4 = 1.80 kN/m<sup>2</sup> of horizontal plan area. The coefficient is dimensionless; it is neither an added pressure nor a divisor. Other required drift or unbalanced cases are separate checks.<p>Capsule 4th ed., p. 19; topic 5 point 2.</p>",
+          "explanation": "The specified relation is \\(S = \\mu S_0\\), so \\[\\begin{aligned} S &amp;= 0.75 \\times 2.4 \\\\ &amp;= 1.80\\ \\text{kN/m}^2 \\end{aligned}\\] of horizontal plan area. The coefficient is dimensionless; it is neither an added pressure nor a divisor. Other required drift or unbalanced cases are separate checks.<p>Capsule 4th ed., p. 19; topic 5 point 2.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -145,7 +145,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "c",
-          "explanation": "IS 875 Part 4:1987 clause 3.1 uses roof snow load S = mu S0 on horizontal plan area. Site ground snow load and the applicable roof shape and distribution are needed. Changing the printed unit from N to kN would not establish a valid universal snow load.<p>Source note: Page 19 point 3 has an unsupported site-independent snow intensity. No replacement numerical snow value is inferred.</p><p>Capsule 4th ed., p. 19; topic 5 point 3.</p>",
+          "explanation": "IS 875 Part 4:1987 clause 3.1 uses roof snow load on horizontal plan area, \\[S = \\mu S_0\\] so the site ground snow load and the applicable roof shape and distribution are needed. Changing the printed unit from N to kN would not establish a valid universal snow load.<p>Source note: Page 19 point 3 has an unsupported site-independent snow intensity. No replacement numerical snow value is inferred.</p><p>Capsule 4th ed., p. 19; topic 5 point 3.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -373,7 +373,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Velocity pressure is proportional to speed squared. The pressure ratio is 1.20 squared = 1.44, giving a 44% increase. Doubling the percentage increase misses the additional quadratic term.<p>Capsule 4th ed., p. 19; topic 5 point 9.</p>",
+          "explanation": "Velocity pressure is proportional to speed squared, so the pressure ratio is \\[1.20^2 = 1.44\\] giving a 44% increase. Doubling the percentage increase misses the additional quadratic term.<p>Capsule 4th ed., p. 19; topic 5 point 9.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -487,7 +487,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The specified procedure considers the 100/30 combinations in both axis orders and the signs that maximize the response being checked. It is not a licence to check only one positive combination or to omit gravity and any other required seismic components.<p>Capsule 4th ed., p. 22; topic 5 point 87.</p>",
+          "explanation": "The specified procedure considers combinations of 100% of one effect with 30% of the other, in both axis orders and with the signs that maximize the response being checked. It is not a licence to check only one positive combination or to omit gravity and any other required seismic components.<p>Capsule 4th ed., p. 22; topic 5 point 87.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -525,7 +525,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The two positive envelopes are 80 + 0.30 x 30 = 89 kN and 0.30 x 80 + 30 = 54 kN. Their maximum is 89 kN. Signed alternatives must also be considered for opposite response; this calculation excludes any gravity contribution.<p>Capsule 4th ed., p. 22; topic 5 point 87.</p>",
+          "explanation": "The two positive envelopes are \\[80 + 0.30 \\times 30 = 89\\ \\text{kN}\\] \\[0.30 \\times 80 + 30 = 54\\ \\text{kN}\\] Their maximum is 89 kN. Signed alternatives must also be considered for opposite response; this calculation excludes any gravity contribution.<p>Capsule 4th ed., p. 22; topic 5 point 87.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -601,7 +601,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Equal floor translation makes each frame force proportional to its lateral stiffness. The shares are 3/4 and 1/4 of 120 kN, giving 90 and 30 kN. Torsion, diaphragm flexibility or nonlinear response would require a different distribution model.<p>Source note: Page 22 point 111&#39;s &#39;proportion ... vertical structure is 31&#39; is unresolved: it may be damaged fraction text or omit a component definition. This explicitly introduced example tests transfer to vertical resisting frames, not an asserted universal vertical-seismic fraction; parent review required for the original claim.</p><p>Capsule 4th ed., p. 22; topic 5 point 111.</p>",
+          "explanation": "Equal floor translation makes each frame force proportional to its lateral stiffness. The shares are \\(\\dfrac{3}{4}\\) and \\(\\dfrac{1}{4}\\) of the storey shear: \\[\\dfrac{3}{4} \\times 120 = 90\\ \\text{kN}\\] \\[\\dfrac{1}{4} \\times 120 = 30\\ \\text{kN}\\] Torsion, diaphragm flexibility or nonlinear response would require a different distribution model.<p>Source note: Page 22 point 111&#39;s &#39;proportion ... vertical structure is 31&#39; is unresolved: it may be damaged fraction text or omit a component definition. This explicitly introduced example tests transfer to vertical resisting frames, not an asserted universal vertical-seismic fraction; parent review required for the original claim.</p><p>Capsule 4th ed., p. 22; topic 5 point 111.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -639,7 +639,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Design speed is Vz = 50 x 1 x 1.2 x 1 = 60 m/s. Hence pz = 0.6 x 60 squared = 2160 Pa = 2.16 kPa. Terrain, height and structure size affect the relevant factor; final surface forces additionally require pressure coefficients and area.<p>Source note: Page 23 point 132 falsely makes wind pressure independent of terrain and structure factors. The explicitly stated 1987 procedure corrects that claim without mixing later-edition factors.</p><p>Capsule 4th ed., p. 23; topic 5 point 132.</p>",
+          "explanation": "The design speed is \\[\\begin{aligned} V_z &amp;= 50 \\times 1 \\times 1.2 \\times 1 \\\\ &amp;= 60\\ \\text{m/s} \\end{aligned}\\] Hence \\[\\begin{aligned} p_z &amp;= 0.6 \\times 60^2 = 2160\\ \\text{Pa} \\\\ &amp;= 2.16\\ \\text{kPa} \\end{aligned}\\] Terrain, height and structure size affect the relevant factor; final surface forces additionally require pressure coefficients and area.<p>Source note: Page 23 point 132 falsely makes wind pressure independent of terrain and structure factors. The explicitly stated 1987 procedure corrects that claim without mixing later-edition factors.</p><p>Capsule 4th ed., p. 23; topic 5 point 132.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -760,7 +760,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The ratio is 100 x 12.5/20 = 62.5%. This arithmetic does not turn the ratio into a mandatory strength-development law or a concrete acceptance criterion.<p>Capsule 4th ed., p. 2; topic 1 point 39.</p>",
+          "explanation": "The fraction of the comparison strength reached is \\[\\dfrac{12.5}{20} \\times 100 = 62.5\\%\\] This arithmetic does not turn the ratio into a mandatory strength-development law or a concrete acceptance criterion.<p>Capsule 4th ed., p. 2; topic 1 point 39.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -912,7 +912,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Slump is the vertical reduction from mould height to the prescribed point on the slumped specimen: 300 - 225 = 75 mm. It is a length, normally reported in millimetres, not a strength or percentage.<p>Capsule 4th ed., p. 5; topic 1 point 136.</p>",
+          "explanation": "Slump is the vertical reduction from mould height to the prescribed point on the slumped specimen: \\[300 - 225 = 75\\ \\text{mm}\\] It is a length, normally reported in millimetres, not a strength or percentage.<p>Capsule 4th ed., p. 5; topic 1 point 136.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -950,7 +950,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The empirical relation is fcr = 0.7 sqrt(fck), with both strengths expressed in N/mm^2. Thus fcr = 0.7 x 6 = 4.2 N/mm^2. Multiplying 0.7 by fck without the square root gives the incorrect 25.2; flexural strength is also distinct from elastic modulus.<p>Source note: Restores the missing square root in point 83. Secondary reference: chapter-05-concrete.js, concrete-elastic-and-flexural-properties, IS 456:2000 6.2.2.</p><p>Capsule 4th ed., p. 18; topic 4 point 83.</p>",
+          "explanation": "The empirical relation, with both strengths in N per mm<sup>2</sup>, is \\[\\begin{aligned} f_{cr} &amp;= 0.7\\sqrt{f_{ck}} \\\\ &amp;= 0.7 \\times 6 = 4.2\\ \\text{N/mm}^2 \\end{aligned}\\] Multiplying 0.7 by \\(f_{ck}\\) without the square root gives the incorrect 25.2; flexural strength is also distinct from elastic modulus.<p>Source note: Restores the missing square root in point 83. Secondary reference: chapter-05-concrete.js, concrete-elastic-and-flexural-properties, IS 456:2000 6.2.2.</p><p>Capsule 4th ed., p. 18; topic 4 point 83.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1064,7 +1064,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The loaded area is 150 x 150 = 22500 mm^2. Required force rate is 14 x 22500 = 315000 N/min = 315 kN/min. Dividing by 60 gives 5.25 kN/s. The rate is a given procedure input here, not a certification that every current compression-test standard specifies it.<p>Source note: Page 18 point 101 gives no test standard or edition. Its 14 MPa/min is used only as an explicit input; current procedural applicability remains for parent verification.</p><p>Capsule 4th ed., p. 18; topic 4 point 101.</p>",
+          "explanation": "The loaded area is 150 mm by 150 mm, or 22,500 mm<sup>2</sup>. The required force rate is \\[\\begin{aligned} &amp;14 \\times 22{,}500 = 315{,}000\\ \\text{N/min} \\\\ &amp;= 315\\ \\text{kN/min} \\end{aligned}\\] Dividing by 60 gives \\[\\dfrac{315}{60} = 5.25\\ \\text{kN/s}\\] The rate is a given procedure input here, not a certification that every current compression-test standard specifies it.<p>Source note: Page 18 point 101 gives no test standard or edition. Its 14 MPa/min is used only as an explicit input; current procedural applicability remains for parent verification.</p><p>Capsule 4th ed., p. 18; topic 4 point 101.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1216,7 +1216,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Dry aggregate mass is 102/1.02 = 100 kg. Wet batch mass is 100 x 1.05 = 105 kg, and free surface water is 100 x (0.05 - 0.02) = 3 kg. Deduct that free water from the water otherwise added to the mixer.<p>Capsule 4th ed., p. 20; topic 5 point 16.</p>",
+          "explanation": "Free surface water is the excess moisture, \\(0.05 - 0.02 = 0.03\\) of the dry mass. The dry mass, wet batch mass and free water, in kg, are \\[\\begin{aligned} m_d &amp;= \\dfrac{102}{1.02} = 100 \\\\ m_w &amp;= 100 \\times 1.05 = 105 \\\\ \\Delta W &amp;= 100 \\times 0.03 = 3 \\end{aligned}\\] Deduct that free water from the water otherwise added to the mixer.<p>Capsule 4th ed., p. 20; topic 5 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1711,7 +1711,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Free water mass is 9 kg, so cement mass is 9/0.45 = 20 kg. A 1:2:4 mass ratio then requires 4 x 20 = 80 kg of coarse aggregate. The mass basis and free-water meaning are explicit additions to the incomplete source.<p>Source note: Page 22 point 105 gives no answer and does not identify whether 1:2:4 is by mass or loose volume. The 80 kg answer is conditional on the stated mass basis.</p><p>Capsule 4th ed., p. 22; topic 5 point 105.</p>",
+          "explanation": "Free water mass is 9 kg, so the cement mass is \\[\\dfrac{9}{0.45} = 20\\ \\text{kg}\\] A 1:2:4 mass ratio then requires \\[4 \\times 20 = 80\\ \\text{kg}\\] of coarse aggregate. The mass basis and free-water meaning are explicit additions to the incomplete source.<p>Source note: Page 22 point 105 gives no answer and does not identify whether 1:2:4 is by mass or loose volume. The 80 kg answer is conditional on the stated mass basis.</p><p>Capsule 4th ed., p. 22; topic 5 point 105.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1939,7 +1939,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The estimate is Ec = 5000 times the square root of fck, with both in N/mm<sup>2</sup>. For M25, square root of 25 is 5, giving 25000 MPa. Actual modulus depends on the aggregate and mix; this is not a measured universal value for every M25 batch.<p>Capsule 4th ed., p. 23; topic 5 point 142.</p>",
+          "explanation": "The estimate, with both quantities in N per mm<sup>2</sup>, is \\[\\begin{aligned} E_c &amp;= 5000\\sqrt{f_{ck}} \\\\ &amp;= 5000 \\times 5 \\\\ &amp;= 25{,}000\\ \\text{MPa} \\end{aligned}\\] Actual modulus depends on the aggregate and mix; this is not a measured universal value for every M25 batch.<p>Capsule 4th ed., p. 23; topic 5 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2060,7 +2060,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Shear flow q = VQ/I depends on the first moment Q of effective area above the cut. Within the compression zone Q changes quadratically. Below the neutral axis Q stays constant until the steel level because tensile concrete is neglected. For constant width b, nominal shear stress q/b has the same variation; this is not a universal measured distribution in cracked concrete.<p>Source note: Point 51&#39;s broad RCC statement is restricted to the cracked elastic rectangular transformed-section model and the interval above the steel; it does not describe all ultimate shear mechanisms.</p><p>Capsule 4th ed., p. 17; topic 4 point 51.</p>",
+          "explanation": "Shear flow \\[q = \\dfrac{VQ}{I}\\] depends on the first moment \\(Q\\) of effective area above the cut. Within the compression zone \\(Q\\) changes quadratically. Below the neutral axis \\(Q\\) stays constant until the steel level because tensile concrete is neglected. For constant width \\(b\\), nominal shear stress \\(\\dfrac{q}{b}\\) has the same variation; this is not a universal measured distribution in cracked concrete.<p>Source note: Point 51&#39;s broad RCC statement is restricted to the cracked elastic rectangular transformed-section model and the interval above the steel; it does not describe all ultimate shear mechanisms.</p><p>Capsule 4th ed., p. 17; topic 4 point 51.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2252,7 +2252,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Equate bar force, pi x diameter squared x stress/4, to bond force, pi x diameter x length x bond stress. Thus length = 16 x 300/(4 x 1.5) = 800 mm. The given bond stress is already the applicable design value.<p>Capsule 4th ed., pp. 20, 23; topic 5 point 20; topic 5 point 129.</p>",
+          "explanation": "Equate the bar force to the bond force: \\[\\dfrac{\\pi\\phi^2\\sigma}{4} = \\pi\\phi L\\tau_{bd}\\] Thus \\[\\begin{aligned} L &amp;= \\dfrac{\\phi\\sigma}{4\\tau_{bd}} = \\dfrac{16 \\times 300}{4 \\times 1.5} \\\\ &amp;= 800\\ \\text{mm} \\end{aligned}\\] The given bond stress is already the applicable design value.<p>Capsule 4th ed., pp. 20, 23; topic 5 point 20; topic 5 point 129.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2525,7 +2525,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The maximum is 0.04bD = 0.04 x 250 x 500 = 5000 mm<sup>2</sup>, using overall depth D. Substituting effective depth gives 4500 incorrectly. This upper area bound does not replace a more restrictive ductility or strength check.<p>Source note: Page 20 point 42 omits bD after 0.04. The completed expression is the gross-area cap, not the minimum-steel formula.</p><p>Capsule 4th ed., p. 20; topic 5 point 42.</p>",
+          "explanation": "The maximum uses the overall depth \\(D\\): \\[\\begin{aligned} A_{s,\\max} &amp;= 0.04bD \\\\ &amp;= 0.04 \\times 250 \\times 500 \\\\ &amp;= 5000\\ \\text{mm}^2 \\end{aligned}\\] Substituting effective depth gives 4500 incorrectly. This upper area bound does not replace a more restrictive ductility or strength check.<p>Source note: Page 20 point 42 omits bD after 0.04. The completed expression is the gross-area cap, not the minimum-steel formula.</p><p>Capsule 4th ed., p. 20; topic 5 point 42.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2639,7 +2639,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The rounded design plateau is 0.87 x 415 = 361.05 MPa, representing the material-factor reduction. This is steel stress, not concrete tensile strength; reinforcement below the plateau strain must use its actual design stress-strain relation.<p>Capsule 4th ed., p. 20; topic 5 point 48.</p>",
+          "explanation": "The rounded design plateau is \\[0.87 \\times 415 = 361.05\\ \\text{MPa}\\] representing the material-factor reduction. This is steel stress, not concrete tensile strength; reinforcement below the plateau strain must use its actual design stress-strain relation.<p>Capsule 4th ed., p. 20; topic 5 point 48.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2677,7 +2677,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The anchorage value of the standard U-type hook is 16 bar diameters, so its equivalent credit is 16 x 20 = 320 mm. This is not the physical curved length or a declaration that the complete required development length is always 320 mm.<p>Capsule 4th ed., p. 21; topic 5 point 53.</p>",
+          "explanation": "The anchorage value of the standard U-type hook is 16 bar diameters, so its equivalent credit is \\[16 \\times 20 = 320\\ \\text{mm}\\] This is not the physical curved length or a declaration that the complete required development length is always 320 mm.<p>Capsule 4th ed., p. 21; topic 5 point 53.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2753,7 +2753,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "a",
-          "explanation": "A compression lap must be at least the compression development length and not less than 24 diameters. Here 24 x 20 = 480 mm, so max(620, 480) = 620 mm. Using 24 diameters alone would miss the governing bond requirement.<p>Source note: Duplicate statements at page 21 point 81 and page 22 point 93 omit the development-length comparison; the complete rule is restored.</p><p>Capsule 4th ed., pp. 21, 22; topic 5 point 81; topic 5 point 93.</p>",
+          "explanation": "A compression lap must be at least the compression development length and not less than 24 diameters. Here \\(24 \\times 20 = 480\\) mm, so \\[\\max(620, 480) = 620\\ \\text{mm}\\] Using 24 diameters alone would miss the governing bond requirement.<p>Source note: Duplicate statements at page 21 point 81 and page 22 point 93 omit the development-length comparison; the complete rule is restored.</p><p>Capsule 4th ed., pp. 21, 22; topic 5 point 81; topic 5 point 93.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2793,7 +2793,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The elastic modular ratio is Es/Ec = 200/25 = 8, so steel area is multiplied by eight for a concrete-reference transformed section. A code's effective working-stress modular ratio allowing long-term effects is a different stated convention.<p>Capsule 4th ed., p. 22; topic 5 point 94.</p>",
+          "explanation": "The elastic modular ratio is \\[m = \\dfrac{E_s}{E_c} = \\dfrac{200}{25} = 8\\] so steel area is multiplied by eight for a concrete-reference transformed section. A code's effective working-stress modular ratio allowing long-term effects is a different stated convention.<p>Capsule 4th ed., p. 22; topic 5 point 94.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2869,7 +2869,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The minimum is Ast = 0.85bd/fy, using effective depth d and fy in MPa. Thus 0.85 x 250 x 400/500 = 170 mm<sup>2</sup>. Overall depth D belongs to the separate 0.04bD maximum, not this minimum formula.<p>Source note: Page 22 points 99-100 split the fraction during extraction. Restored the standard formula and corrected capital D in the source numerator to effective depth d.</p><p>Capsule 4th ed., p. 22; topic 5 point 100.</p>",
+          "explanation": "The minimum uses effective depth \\(d\\) and \\(f_y\\) in MPa: \\[\\begin{aligned} A_s &amp;= \\dfrac{0.85bd}{f_y} \\\\ &amp;= \\dfrac{0.85 \\times 250 \\times 400}{500} \\\\ &amp;= 170\\ \\text{mm}^2 \\end{aligned}\\] Overall depth \\(D\\) belongs to the separate \\(0.04bD\\) maximum, not this minimum formula.<p>Source note: Page 22 points 99-100 split the fraction during extraction. Restored the standard formula and corrected capital D in the source numerator to effective depth d.</p><p>Capsule 4th ed., p. 22; topic 5 point 100.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2945,7 +2945,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The normal total-deflection limit is span/250, so 6000/250 = 24 mm, including the relevant time-dependent effects. The post-partition/finish increment has a separate limit. The capsule's unqualified span/325 is not this IS 456 total-deflection provision.<p>Source note: Full page 23 text recovers the missing denominator as 325. Replaced with the explicitly identified IS 456:2000 total-deflection criterion rather than endorsing an unattributed limit.</p><p>Capsule 4th ed., p. 23; topic 5 point 125.</p>",
+          "explanation": "The normal total-deflection limit is \\[\\dfrac{\\text{span}}{250} = \\dfrac{6000}{250} = 24\\ \\text{mm}\\] including the relevant time-dependent effects. The post-partition and finish increment has a separate limit. The capsule's unqualified \\(\\dfrac{\\text{span}}{325}\\) is not this IS 456 total-deflection provision.<p>Source note: Full page 23 text recovers the missing denominator as 325. Replaced with the explicitly identified IS 456:2000 total-deflection criterion rather than endorsing an unattributed limit.</p><p>Capsule 4th ed., p. 23; topic 5 point 125.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2983,7 +2983,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The post-finish increment is limited to the smaller of span/350 and 20 mm. Here 9000/350 = 25.71 mm, so 20 mm controls. This limit is not interchangeable with the total span/250 criterion or an unqualified span/325 rule.<p>Capsule 4th ed., p. 23; topic 5 point 125.</p>",
+          "explanation": "The post-finish increment is limited to the smaller of \\(\\dfrac{\\text{span}}{350}\\) and 20 mm. Here \\[\\dfrac{9000}{350} = 25.71\\ \\text{mm}\\] so 20 mm controls. This limit is not interchangeable with the total \\(\\dfrac{\\text{span}}{250}\\) criterion or an unqualified \\(\\dfrac{\\text{span}}{325}\\) rule.<p>Capsule 4th ed., p. 23; topic 5 point 125.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3021,7 +3021,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The 0.67 coefficient represents the in-structure strength reduction before the material factor. Dividing 0.67 x 30 by 1.5 gives 13.4 MPa. The 0.36 coefficient used in the integrated concrete force is a different stress-block quantity, not the peak stress.<p>Source note: Page 23 point 137 omits the subsequent material partial factor; 0.67fck is not the final peak design stress by itself.</p><p>Capsule 4th ed., p. 23; topic 5 point 137.</p>",
+          "explanation": "The 0.67 coefficient represents the in-structure strength reduction before the material factor: \\[\\dfrac{0.67 \\times 30}{1.5} = 13.4\\ \\text{MPa}\\] The 0.36 coefficient used in the integrated concrete force is a different stress-block quantity, not the peak stress.<p>Source note: Page 23 point 137 omits the subsequent material partial factor; 0.67fck is not the final peak design stress by itself.</p><p>Capsule 4th ed., p. 23; topic 5 point 137.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3104,7 +3104,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Moving an eccentric force to the centroid requires an equal force and a couple M = Pe. Here M = 500 x 0.12 = 60 kN m; it does not replace the axial load with the moment.<p>Capsule 4th ed., p. 5; topic 1 point 130.</p>",
+          "explanation": "Moving an eccentric force to the centroid requires an equal force and a couple \\(M = Pe\\): \\[M = 500 \\times 0.12 = 60\\ \\text{kN m}\\] It does not replace the axial load with the moment.<p>Capsule 4th ed., p. 5; topic 1 point 130.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3142,7 +3142,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The stated column check requires max(40, 20) = 40 mm. The value is in millimetres and must still be increased if other requirements govern. The separate small-column relaxation cannot be used for this 300 mm column with 20 mm bars.<p>Source note: Page 17 point 55 omits units and qualifications. The question states its IS 456:2000 detailing basis; 40 mm is not an unconditional cover for all columns, exposures or fire ratings.</p><p>Capsule 4th ed., p. 17; topic 4 point 55.</p>",
+          "explanation": "The stated column check requires \\[\\max(40, 20) = 40\\ \\text{mm}\\] The value is in millimetres and must still be increased if other requirements govern. The separate small-column relaxation cannot be used for this 300 mm column with 20 mm bars.<p>Source note: Page 17 point 55 omits units and qualifications. The question states its IS 456:2000 detailing basis; 40 mm is not an unconditional cover for all columns, exposures or fire ratings.</p><p>Capsule 4th ed., p. 17; topic 4 point 55.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3218,7 +3218,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The parabola e(x) = 4e_mid x(L-x)/L^2 has curvature magnitude 8e_mid/L^2. Multiplying by effective prestress gives w_bal = 8Pe_mid/L^2 = 8 x 1000 x 0.25/100 = 20 kN/m upward. End tendon forces must also be included in the complete equilibrium model.<p>Capsule 4th ed., p. 19; topic 4 point 106.</p>",
+          "explanation": "The parabola \\[e(x) = \\dfrac{4e_{\\text{mid}}\\,x(L - x)}{L^2}\\] has curvature magnitude \\(\\dfrac{8e_{\\text{mid}}}{L^2}\\). Multiplying by the effective prestress gives \\[\\begin{aligned} w_{\\text{bal}} &amp;= \\dfrac{8Pe_{\\text{mid}}}{L^2} \\\\ &amp;= \\dfrac{8 \\times 1000 \\times 0.25}{100} \\\\ &amp;= 20\\ \\text{kN/m} \\end{aligned}\\] upward. End tendon forces must also be included in the complete equilibrium model.<p>Capsule 4th ed., p. 19; topic 4 point 106.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3484,7 +3484,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "c",
-          "explanation": "One square centimetre is 100 square millimetres. Thus 350 x 9.80665/100 = 34.323275 N/mm<sup>2</sup>, or about 34.32 MPa. Converting the old number does not establish a modern minimum concrete grade or transfer strength.<p>Capsule 4th ed., p. 21; topic 5 point 58.</p>",
+          "explanation": "One square centimetre is 100 square millimetres. Thus \\[\\begin{aligned} &amp;\\dfrac{350 \\times 9.80665}{100} \\\\ &amp;= 34.323275\\ \\text{N/mm}^2 \\end{aligned}\\] or about 34.32 MPa. Converting the old number does not establish a modern minimum concrete grade or transfer strength.<p>Capsule 4th ed., p. 21; topic 5 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3560,7 +3560,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The permitted multiplier is 1.05, giving 1.05 x 1200 = 1260 kN. It is a 5% increase, not an addition of 5 kN or a 10% increase. The stem explicitly establishes compliance before applying the factor.<p>Capsule 4th ed., p. 21; topic 5 point 59.</p>",
+          "explanation": "The permitted multiplier is 1.05, giving \\[1.05 \\times 1200 = 1260\\ \\text{kN}\\] It is a 5% increase, not an addition of 5 kN or a 10% increase. The stem explicitly establishes compliance before applying the factor.<p>Capsule 4th ed., p. 21; topic 5 point 59.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3598,7 +3598,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Clause 34.5.1 refers footing minimum reinforcement to the solid-slab requirement. For HYSD bars the minimum is 0.12% of gross area in each direction: 0.0012 x 1000 x 400 = 480 mm<sup>2</sup>. Bending demand can require more.<p>Capsule 4th ed., p. 21; topic 5 point 60.</p>",
+          "explanation": "Clause 34.5.1 refers footing minimum reinforcement to the solid-slab requirement. For HYSD bars the minimum is 0.12% of gross area in each direction: \\[\\begin{aligned} &amp;0.0012 \\times 1000 \\times 400 \\\\ &amp;= 480\\ \\text{mm}^2 \\end{aligned}\\] Bending demand can require more.<p>Capsule 4th ed., p. 21; topic 5 point 60.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3788,7 +3788,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The retained fraction is 1 - 0.18 = 0.82, so effective stress is 0.82 x 1200 = 984 MPa. The 216 MPa value is the loss, not the remaining stress. The percentage is given for this member; 15-25% is not a universal loss requirement.<p>Source note: Page 23 point 133&#39;s approximate range is not treated as a substitute for calculated method-, material- and time-dependent losses.</p><p>Capsule 4th ed., p. 23; topic 5 point 133.</p>",
+          "explanation": "The retained fraction is \\(1 - 0.18 = 0.82\\), so the effective stress is \\[0.82 \\times 1200 = 984\\ \\text{MPa}\\] The 216 MPa value is the loss, not the remaining stress. The percentage is given for this member; 15–25% is not a universal loss requirement.<p>Source note: Page 23 point 133&#39;s approximate range is not treated as a substitute for calculated method-, material- and time-dependent losses.</p><p>Capsule 4th ed., p. 23; topic 5 point 133.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3909,7 +3909,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The stated safety convention gives sigma_allow = 240/1.6 = 150 MPa, below yield. Multiplying by the factor would increase the allowance incorrectly. The factor is supplied for this problem, not asserted as a universal current-code value; buckling or other failure modes can govern other checks.<p>Source note: Point 99 is interpreted as permissible stress for a ductile yield-based working-stress check, not every material or design method.</p><p>Capsule 4th ed., p. 18; topic 4 point 99.</p>",
+          "explanation": "The stated safety convention gives \\[\\sigma_{\\text{allow}} = \\dfrac{240}{1.6} = 150\\ \\text{MPa}\\] below yield. Multiplying by the factor would increase the allowance incorrectly. The factor is supplied for this problem, not asserted as a universal current-code value; buckling or other failure modes can govern other checks.<p>Source note: Point 99 is interpreted as permissible stress for a ductile yield-based working-stress check, not every material or design method.</p><p>Capsule 4th ed., p. 18; topic 4 point 99.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3947,7 +3947,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Differentiating A/s + Bs squared gives -A/s squared + 2Bs = 0. Thus A/s = 2Bs squared, so T = 2P. The positive second derivative confirms a minimum. The ratio follows from this assumed cost model, not a universal roof-design requirement.<p>Source note: Page 20 point 12 omits the cost model. Its ratio is tested under explicit inverse-spacing and square-spacing assumptions, not asserted for all trusses.</p><p>Capsule 4th ed., p. 20; topic 5 point 12.</p>",
+          "explanation": "Differentiating the total cost gives \\[\\begin{aligned} &amp;\\dfrac{d}{ds}\\left(\\dfrac{A}{s} + Bs^2\\right) \\\\ &amp;= -\\dfrac{A}{s^2} + 2Bs = 0 \\end{aligned}\\] Thus \\(\\dfrac{A}{s} = 2Bs^2\\), so \\(T = 2P\\). The positive second derivative confirms a minimum. The ratio follows from this assumed cost model, not a universal roof-design requirement.<p>Source note: Page 20 point 12 omits the cost model. Its ratio is tested under explicit inverse-spacing and square-spacing assumptions, not asserted for all trusses.</p><p>Capsule 4th ed., p. 20; topic 5 point 12.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3985,7 +3985,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The acute angles to perpendicular axes are complementary. The longitudinal inclination is 90 - 55 = 35 degrees, below the specified 40-degree minimum. Using the measured transverse angle directly would incorrectly accept the detail; strength and stability still require separate checks.<p>Source note: Page 20 point 47&#39;s 40-70 degree range is an explicit specification for this exercise. The exact IS 800:2007 clause 7.6.4 text was unavailable for independent verification here; no current universal requirement is certified.</p><p>Capsule 4th ed., p. 20; topic 5 point 47.</p>",
+          "explanation": "The acute angles to perpendicular axes are complementary, so the longitudinal inclination is \\[90^\\circ - 55^\\circ = 35^\\circ\\] below the specified 40-degree minimum. Using the measured transverse angle directly would incorrectly accept the detail; strength and stability still require separate checks.<p>Source note: Page 20 point 47&#39;s 40-70 degree range is an explicit specification for this exercise. The exact IS 800:2007 clause 7.6.4 text was unavailable for independent verification here; no current universal requirement is certified.</p><p>Capsule 4th ed., p. 20; topic 5 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4023,7 +4023,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Applying the stated multipliers gives 1.05 x 100 = 105 and 1.10 x 100 = 110. The larger battened allowance can reduce calculated compression resistance in an otherwise comparable model. Different sections, details or failure modes prevent a universal ranking of actual columns.<p>Source note: Duplicate claims at page 21 point 65 and page 22 point 113 are replaced by a conditional shear-flexibility comparison. The factors are supplied assumptions: exact IS 800:2007 clauses 7.6.1.5 and 7.7.1.4 were not independently retrievable here. Their use is not certified for every project or edition.</p><p>Capsule 4th ed., pp. 21, 22; topic 5 point 65; topic 5 point 113.</p>",
+          "explanation": "Applying the stated multipliers gives \\[1.05 \\times 100 = 105\\] \\[1.10 \\times 100 = 110\\] The larger battened allowance can reduce calculated compression resistance in an otherwise comparable model. Different sections, details or failure modes prevent a universal ranking of actual columns.<p>Source note: Duplicate claims at page 21 point 65 and page 22 point 113 are replaced by a conditional shear-flexibility comparison. The factors are supplied assumptions: exact IS 800:2007 clauses 7.6.1.5 and 7.7.1.4 were not independently retrievable here. Their use is not certified for every project or edition.</p><p>Capsule 4th ed., pp. 21, 22; topic 5 point 65; topic 5 point 113.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4101,7 +4101,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The minimum overlap is 4t, with t the batten-plate thickness: 4 x 8 = 32 mm. Equality satisfies this particular 'not less than' bound; weld strength and the other connection dimensions require separate checks.<p>Source note: Duplicate overlap facts at page 21 points 69 and 78 are combined. &#39;More than 4t&#39; is corrected to &#39;not less than 4t&#39;.</p><p>Capsule 4th ed., p. 21; topic 5 point 69; topic 5 point 78.</p>",
+          "explanation": "The minimum overlap is \\(4t\\), with \\(t\\) the batten-plate thickness: \\[4 \\times 8 = 32\\ \\text{mm}\\] Equality satisfies this particular 'not less than' bound; weld strength and the other connection dimensions require separate checks.<p>Source note: Duplicate overlap facts at page 21 points 69 and 78 are combined. &#39;More than 4t&#39; is corrected to &#39;not less than 4t&#39;.</p><p>Capsule 4th ed., p. 21; topic 5 point 69; topic 5 point 78.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4330,7 +4330,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For the stated edge finish, the minimum is 1.5 times the hole diameter, giving 1.5 x 22 = 33 mm, measured from hole centre to edge. Sheared or hand-flame-cut edges use the larger 1.7 multiplier under the same clause.<p>Capsule 4th ed., p. 21; topic 5 point 79.</p>",
+          "explanation": "For the stated edge finish, the minimum is 1.5 times the hole diameter: \\[1.5 \\times 22 = 33\\ \\text{mm}\\] measured from hole centre to edge. Sheared or hand-flame-cut edges use the larger 1.7 multiplier under the same clause.<p>Capsule 4th ed., p. 21; topic 5 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4368,7 +4368,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Effective fillet-weld length must be at least four times the size: 4 x 6 = 24 mm. The provided effective length is 20 mm and fails. Deposited length and end allowances must not be confused with effective full-size length.<p>Capsule 4th ed., p. 21; topic 5 point 80.</p>",
+          "explanation": "Effective fillet-weld length must be at least four times the size: \\[4 \\times 6 = 24\\ \\text{mm}\\] The provided effective length is 20 mm and fails. Deposited length and end allowances must not be confused with effective full-size length.<p>Capsule 4th ed., p. 21; topic 5 point 80.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4520,7 +4520,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "d",
-          "explanation": "For a simply supported member under full-span UDL, Mmax = wL squared/8 = 2 x 4 squared/8 = 4 kN m. A coefficient such as one-tenth cannot be used without its continuity and loading assumptions. Real sloping-roof purlins may require two-plane bending checks.<p>Source note: Page 22 point 110 is extracted as W10L, plausibly WL/10, but the original coefficient layout and support model are unverified. The authored answer uses a fully specified equilibrium model, not a claimed recovery of that expression.</p><p>Capsule 4th ed., p. 22; topic 5 point 110.</p>",
+          "explanation": "For a simply supported member under full-span UDL, \\[\\begin{aligned} M_{\\max} &amp;= \\dfrac{wL^2}{8} = \\dfrac{2 \\times 4^2}{8} \\\\ &amp;= 4\\ \\text{kN m} \\end{aligned}\\] A coefficient such as one-tenth cannot be used without its continuity and loading assumptions. Real sloping-roof purlins may require two-plane bending checks.<p>Source note: Page 22 point 110 is extracted as W10L, plausibly WL/10, but the original coefficient layout and support model are unverified. The authored answer uses a fully specified equilibrium model, not a claimed recovery of that expression.</p><p>Capsule 4th ed., p. 22; topic 5 point 110.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4558,7 +4558,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Effective throat is the specified coefficient times weld size: 0.70 x 8 = 5.6 mm. For an ideal equal-leg triangular weld at 70 degrees, the geometric throat would instead be 8 cos(35 degrees), about 6.55 mm. The specified design coefficient and exact geometric ratio are different quantities.<p>Source note: Page 22 point 114 attributes K = 0.70 to a design convention. Its exact IS 800:2007 Table 22 entry has not been independently verified here, so K is supplied as an explicit calculation assumption rather than certified as a code requirement. Actual design must use the applicable verified provision.</p><p>Capsule 4th ed., p. 22; topic 5 point 114.</p>",
+          "explanation": "Effective throat is the specified coefficient times weld size: \\[0.70 \\times 8 = 5.6\\ \\text{mm}\\] For an ideal equal-leg triangular weld at \\(70^\\circ\\), the geometric throat would instead be \\[8\\cos 35^\\circ \\approx 6.55\\ \\text{mm}\\] The specified design coefficient and exact geometric ratio are different quantities.<p>Source note: Page 22 point 114 attributes K = 0.70 to a design convention. Its exact IS 800:2007 Table 22 entry has not been independently verified here, so K is supplied as an explicit calculation assumption rather than certified as a code requirement. Actual design must use the applicable verified provision.</p><p>Capsule 4th ed., p. 22; topic 5 point 114.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4672,7 +4672,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "a",
-          "explanation": "At 45 degrees, horizontal spread equals vertical travel. Each side adds 120 mm, giving 80 + 2 x 120 = 320 mm. End proximity can truncate the spread, and actual code web-bearing, buckling and stiffener rules must use their own specified geometry.<p>Source note: Duplicate page 23 points 130 and 135 are combined under an explicit 45-degree idealization. No universal code dispersion rule or unverified clause is asserted; its original code/model provenance remains for parent review.</p><p>Capsule 4th ed., p. 23; topic 5 point 130; topic 5 point 135.</p>",
+          "explanation": "At \\(45^\\circ\\), horizontal spread equals vertical travel. Each side adds 120 mm, giving \\[80 + 2 \\times 120 = 320\\ \\text{mm}\\] End proximity can truncate the spread, and actual code web-bearing, buckling and stiffener rules must use their own specified geometry.<p>Source note: Duplicate page 23 points 130 and 135 are combined under an explicit 45-degree idealization. No universal code dispersion rule or unverified clause is asserted; its original code/model provenance remains for parent review.</p><p>Capsule 4th ed., p. 23; topic 5 point 130; topic 5 point 135.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4794,7 +4794,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Two-thirds of (150 + 100) is 166.7 mm, exceeding 150 mm. The cavity width is not added. This calculation uses an explicitly supplied model; actual masonry rules depend on ties, loading, restraint and the governing standard.<p>Source note: p3 n46: the source&#39;s effective-thickness rule is supplied as an exercise assumption, not certified as a universal or current code provision. Parent should confirm its originating clause before presenting it as such.</p><p>Capsule 4th ed., p. 3; topic 1 point 46.</p>",
+          "explanation": "The effective thickness is the larger of the stronger leaf and two-thirds of the combined leaves: \\[\\begin{aligned} t_{\\text{ef}} &amp;= \\dfrac{2}{3}(150 + 100) \\\\ &amp;= 166.7\\ \\text{mm} \\end{aligned}\\] This exceeds 150 mm, so it governs. The cavity width is not added. This calculation uses an explicitly supplied model; actual masonry rules depend on ties, loading, restraint and the governing standard.<p>Source note: p3 n46: the source&#39;s effective-thickness rule is supplied as an exercise assumption, not certified as a universal or current code provision. Parent should confirm its originating clause before presenting it as such.</p><p>Capsule 4th ed., p. 3; topic 1 point 46.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4832,7 +4832,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Here 1/24 < e/t < 1/6. The stated provision permits a 25% increase in the applicable compressive allowance, giving 1.25 x 0.80 = 1.00 MPa. It does not increase capacity automatically: the actual extreme stress and all other applicable factors must still be checked.<p>Source note: Page 16 point 37: full page text restores 1/24. Basis: nearby chapter-05-timber-masonry.js, timber-masonry-eccentric-compression, citing IS 1905:1987 5.4.1.4; no current Nepal adoption claim.</p><p>Capsule 4th ed., p. 16; topic 4 point 37.</p>",
+          "explanation": "Here \\(\\dfrac{1}{24} \\lt \\dfrac{e}{t} \\lt \\dfrac{1}{6}\\). The stated provision permits a 25% increase in the applicable compressive allowance: \\[1.25 \\times 0.80 = 1.00\\ \\text{MPa}\\] It does not increase capacity automatically: the actual extreme stress and all other applicable factors must still be checked.<p>Source note: Page 16 point 37: full page text restores 1/24. Basis: nearby chapter-05-timber-masonry.js, timber-masonry-eccentric-compression, citing IS 1905:1987 5.4.1.4; no current Nepal adoption claim.</p><p>Capsule 4th ed., p. 16; topic 4 point 37.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4870,7 +4870,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "d",
-          "explanation": "For a rectangular section, sigma = (P/A)(1 +/- 6e/t). Since 6e/t = 1/4, the stresses are 0.60 x 1.25 = 0.75 MPa and 0.60 x 0.75 = 0.45 MPa. Permission to ignore a small bending contribution in a code check does not make that contribution physically zero.<p>Capsule 4th ed., p. 16; topic 4 point 37.</p>",
+          "explanation": "For a rectangular section, \\[\\sigma = \\dfrac{P}{A}\\left(1 \\pm \\dfrac{6e}{t}\\right)\\] Since \\(\\dfrac{6e}{t} = \\dfrac{1}{4}\\), the stresses are \\[0.60 \\times 1.25 = 0.75\\ \\text{MPa}\\] \\[0.60 \\times 0.75 = 0.45\\ \\text{MPa}\\] Permission to ignore a small bending contribution in a code check does not make that contribution physically zero.<p>Capsule 4th ed., p. 16; topic 4 point 37.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5136,7 +5136,7 @@ window.CIVIL_SET_DATA["capsule-05"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Convert length to 3600 mm and use the least lateral dimension, 100 mm. Thus S/d = 3600/100 = 36, below the geometric cap of 50. Using 150 mm gives 24; using a radius of gyration answers a different slenderness definition.<p>Capsule 4th ed., p. 22; topic 5 point 92.</p>",
+          "explanation": "Convert length to 3600 mm and use the least lateral dimension, 100 mm: \\[\\dfrac{S}{d} = \\dfrac{3600}{100} = 36\\] This is below the geometric cap of 50. Using 150 mm gives 24; using a radius of gyration answers a different slenderness definition.<p>Capsule 4th ed., p. 22; topic 5 point 92.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,

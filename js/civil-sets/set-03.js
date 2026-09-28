@@ -84,7 +84,7 @@ const CIVIL_MODEL_3 = {
                         { key: "d", text: "&lt;3.5" }
                     ],
                     answer: "c",
-                    explanation: "A first-class brick has to reach a compressive strength of at least 10.5 N/mm². Second-class bricks are allowed 7 N/mm² and third class 3.5 N/mm², so strength is one of the main grading criteria along with shape, colour and water absorption."
+                    explanation: "A first-class brick has to reach a compressive strength of at least 10.5 N per mm<sup>2</sup>. Second-class bricks are allowed 7 N per mm<sup>2</sup> and third class 3.5 N per mm<sup>2</sup>, so strength is one of the main grading criteria along with shape, colour and water absorption."
                 },
                 {
                     id: "cm3q005",
@@ -870,7 +870,7 @@ const CIVIL_MODEL_3 = {
                         { key: "d", text: "Rs 360,000/day" }
                     ],
                     answer: "d",
-                    explanation: "Peaked revenue is 40,000 × 6 × 12 + 10,000 × 18 × 6 = Rs3,960,000/day. The stated unpeaked baseline earns 20,000 × 6 × 12 + 20,000 × 18 × 6 = Rs3,600,000/day. The increase is Rs360,000/day. Rs1,080,000 was only off-peak revenue, not the benefit. This compares the stated schedules; it does not prove equal water or energy use."
+                    explanation: "The peaked and unpeaked daily revenues are \\[\\begin{aligned} &amp;40{,}000 \\times 6 \\times 12 \\\\ &amp;\\quad + 10{,}000 \\times 18 \\times 6 \\\\ &amp;= \\text{Rs } 3{,}960{,}000 \\end{aligned}\\] \\[\\begin{aligned} &amp;20{,}000 \\times 6 \\times 12 \\\\ &amp;\\quad + 20{,}000 \\times 18 \\times 6 \\\\ &amp;= \\text{Rs } 3{,}600{,}000 \\end{aligned}\\] The increase is Rs 360,000 per day. Rs 1,080,000 was only off-peak revenue, not the benefit. This compares the stated schedules; it does not prove equal water or energy use."
                 },
                 {
                     id: "cm3q062",
@@ -1339,7 +1339,7 @@ const CIVIL_MODEL_3 = {
                         { key: "d", text: "730l/s" }
                     ],
                     answer: "b",
-                    explanation: "Kuchling's formula for calculating water required for fire fighting is expressed as: \\(\\[ \\begin{aligned} P &= 100000/1000=100 \\\\ Q &= 3182\\sqrt{100} \\\\ &= 3182 \\times 10 \\\\ &= 31{,}820\\ \\text{L/min}&=530l/s \\end{aligned} \\]\\)"
+                    explanation: "Kuchling's formula, with \\(P\\) in thousands, is \\(Q = 3182\\sqrt{P}\\) litres per minute. For 1 lakh, \\(P = 100\\), so \\[Q = 3182 \\times 10 = 31{,}820\\] litres per minute, or about 530 litres per second."
                 },
                 {
                     id: "cm3q096",

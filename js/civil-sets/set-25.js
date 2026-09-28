@@ -97,7 +97,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "Axis of rotation" }
                     ],
                     answer: "b",
-                    explanation: "In mechanics, the axis about which the moment of area (or moment of inertia) is calculated is called the axis of reference. It is the benchmark axis from which distances (y) are measured for the calculation ∫ y² dA."
+                    explanation: "In mechanics, the axis about which the moment of area (or moment of inertia) is calculated is the axis of reference. It is the benchmark axis from which the distances \\(y\\) are measured in \\(\\displaystyle\\int y^2\\,dA\\)."
                 },
                 {
                     id: "cm25q006",
@@ -110,7 +110,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "a²/2" }
                     ],
                     answer: "c",
-                    explanation: "MOI stands for Moment of Inertia. None of the options correctly define it. It is either mass moment of inertia (I = ∫ r² dm) with units kg-m², or area moment of inertia (I = ∫ y² dA) with units m⁴."
+                    explanation: "MOI stands for moment of inertia, and none of the options defines it correctly. It is either the mass moment of inertia, \\[I = \\int r^2\\,dm\\] in kg m<sup>2</sup>, or the area moment of inertia, \\(I = \\displaystyle\\int y^2\\,dA\\), in m<sup>4</sup>."
                 },
                 {
                     id: "cm25q007",
@@ -123,7 +123,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "k² = I/A" }
                     ],
                     answer: "d",
-                    explanation: "The radius of gyration (k) for an area is defined by the formula I = A * k², where I is the moment of inertia and A is the total area. Therefore, k² = I / A. This is the standard definition."
+                    explanation: "The radius of gyration \\(k\\) of an area is defined by \\(I = Ak^2\\), where \\(I\\) is the moment of inertia and \\(A\\) the total area. Therefore \\[k^2 = \\dfrac{I}{A}\\]"
                 },
                 {
                     id: "cm25q008",
@@ -149,7 +149,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "3cm" }
                     ],
                     answer: "b",
-                    explanation: "For a circular area about its diameter, I = πd⁴/64 and A = πd²/4. Radius of gyration k = √(I/A) = √((πd⁴/64) / (πd²/4)) = √((d⁴/64) * (4/d²)) = √(d²/16) = d/4. For d=10cm, k=10/4=2.5 cm."
+                    explanation: "For a circular area about its diameter, \\(I = \\dfrac{\\pi d^4}{64}\\) and \\(A = \\dfrac{\\pi d^2}{4}\\). So \\[k = \\sqrt{\\dfrac{I}{A}} = \\sqrt{\\dfrac{d^2}{16}} = \\dfrac{d}{4}\\] For \\(d = 10\\) cm, \\(k = \\dfrac{10}{4} = 2.5\\) cm."
                 },
                 {
                     id: "cm25q010",
@@ -236,7 +236,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "σ₁ = (σ_x + σ_y)/2 + √(((σ_x - σ_y)/2)² + τ_xy²)" }
                     ],
                     answer: "d",
-                    explanation: "The major principal stress is given by σ₁ = (σ_x + σ_y)/2 + √(((σ_x - σ_y)/2)² + τ_xy²). The options are poorly written with σ₁ and σ₂ confused."
+                    explanation: "The major principal stress is \\[\\begin{aligned} \\sigma_1 &amp;= \\dfrac{\\sigma_x + \\sigma_y}{2} \\\\ &amp;\\quad + \\sqrt{\\left(\\dfrac{\\sigma_x - \\sigma_y}{2}\\right)^2 + \\tau_{xy}^2} \\end{aligned}\\] The options are poorly written, with \\(\\sigma_1\\) and \\(\\sigma_2\\) confused."
                 },
                 {
                     id: "cm25q016",
@@ -247,7 +247,7 @@ const CIVIL_MODEL_25 = {
                         { key: "b", text: "τ_max = (σ₁ + σ₂)/2" }
                     ],
                     answer: "a",
-                    explanation: "The maximum shear stress is half the difference between the major and minor principal stresses: τ_max = (σ₁ - σ₂)/2. the option \"τ_max = (σ₁ - σ₂)/2\" , (c), and (d) are identical and correct, while (b) is wrong."
+                    explanation: "The maximum shear stress is half the difference between the major and minor principal stresses: \\[\\tau_{max} = \\dfrac{\\sigma_1 - \\sigma_2}{2}\\] Options (a), (c) and (d) are identical and correct, while (b) is wrong."
                 },
                 {
                     id: "cm25q017",
@@ -575,7 +575,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "0.592" }
                     ],
                     answer: "a",
-                    explanation: "Using the formula K₀ = μ / (1 - μ). 0.4 = μ / (1 - μ). Solving: 0.4(1 - μ) = μ =&gt; 0.4 - 0.4μ = μ =&gt; 0.4 = 1.4μ =&gt; μ = 0.4 / 1.4 = 0.2857 ≈ 0.286."
+                    explanation: "Using \\(K_0 = \\dfrac{\\mu}{1 - \\mu}\\), \\[0.4(1 - \\mu) = \\mu\\] so \\(0.4 = 1.4\\mu\\) and \\[\\mu = \\dfrac{0.4}{1.4} = 0.2857 \\approx 0.286\\]"
                 },
                 {
                     id: "cm25q041",
@@ -701,7 +701,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "Since fluid is in motion, we cannot analyze" }
                     ],
                     answer: "b",
-                    explanation: "Sanfoundry, a fluid in uniform motion experiences no additional dynamic effects from acceleration and behaves analytically the same as a fluid at rest. Therefore, standard hydrostatic formulas as P =ρ g h"
+                    explanation: "A fluid in uniform motion has no acceleration effects and behaves like a fluid at rest, so the hydrostatic formula applies: \\[\\begin{aligned} P &amp;= \\rho gh = 1000 \\times 9.81 \\times 5 \\\\ &amp;\\approx 49\\ \\text{kN/m}^2 \\end{aligned}\\]"
                 },
                 {
                     id: "cm25q050",
@@ -779,7 +779,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "N/m²s" }
                     ],
                     answer: "d",
-                    explanation: "For power-law fluid, τ = K (du/dy)^n. Dimensions of τ are [M L⁻¹ T⁻²]. Dimensions of du/dy are [T⁻¹]. So, [M L⁻¹ T⁻²] = K [T⁻¹]^n. Thus, K = [M L⁻¹ T⁻²] * [T]^n. For n=-1, K = [M L⁻¹ T⁻²] * [T⁻¹] = [M L⁻¹ T⁻³]. In SI units, this is Pa·s⁻¹ or N/m²s. Note: The question in the text says n=-12, which is likely a typo, and it should be n=-1 for the given options."
+                    explanation: "For a power-law fluid, \\(\\tau = K\\left(\\dfrac{du}{dy}\\right)^n\\), with \\([\\tau] = \\text{ML}^{-1}\\text{T}^{-2}\\) and \\(\\left[\\dfrac{du}{dy}\\right] = \\text{T}^{-1}\\). So \\[[K] = \\text{ML}^{-1}\\text{T}^{-2} \\times \\text{T}^n\\] For \\(n = -1\\), \\([K] = \\text{ML}^{-1}\\text{T}^{-3}\\), which in SI is Pa per s, or N per m<sup>2</sup> s. The question text says \\(n = -12\\), probably a typo for \\(-1\\)."
                 },
                 {
                     id: "cm25q056",
@@ -805,7 +805,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "6" }
                     ],
                     answer: "b",
-                    explanation: "The excess pressure inside a droplet is ΔP = 4σ/d. ΔP = 0.05 N/cm² = 500 N/m². σ = 0.075 N/m. So, d = 4σ/ΔP = (4*0.075)/500 = 0.0006 m = 0.6 mm."
+                    explanation: "The excess pressure inside a droplet is \\(\\Delta P = \\dfrac{4\\sigma}{d}\\). With 0.05 N per cm<sup>2</sup>, or 500 N per m<sup>2</sup>, \\[d = \\dfrac{4 \\times 0.075}{500} = 0.0006\\ \\text{m}\\] which is 0.6 mm."
                 }
             ]
         },
@@ -827,7 +827,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "35" }
                     ],
                     answer: "c",
-                    explanation: "For an elementary profile without uplift, the minimum base width (B) for no tension is given by B = H / √(Sc), where Sc is the specific gravity of the material. Sc = 2.4, so B = 35 / √2.4 ≈ 35 / 1.549 ≈ 22.6 m. The friction coefficient is not needed for this specific check."
+                    explanation: "For an elementary profile without uplift, the minimum base width for no tension is \\[B = \\dfrac{H}{\\sqrt{S_c}} = \\dfrac{35}{\\sqrt{2.4}}\\] \\[= \\dfrac{35}{1.549} \\approx 22.6\\ \\text{m}\\] The friction coefficient is not needed for this check."
                 },
                 {
                     id: "cm25q059",
@@ -840,7 +840,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "4.27 cumecs/m" }
                     ],
                     answer: "d",
-                    explanation: "The formula for discharge over an ogee spillway is q = C * H^(3/2), where C is the coefficient of discharge. Given C=0.7 and H=1.2m, q = 0.7 * (1.2)^(3/2) = 0.7 * (1.2 * √1.2) ≈ 0.7 * (1.2 * 1.095) ≈ 0.7 * 1.314 ≈ 0.92 cumecs/m. This result does not match the options, suggesting the value 'c/a' in the question might be the coefficient C itself, perhaps with a value of 2.2 or similar. If C is taken as 2.2, q = 2.2 * (1.2)^(3/2) ≈ 2.2 * 1.314 ≈ 2.89, still not matching. The closest option based on standard C values (around 2.0-2.3) is 4.27 if H is used differently. There might be a misprint in the question. The calculation for option (3) is 0.7 * 2.2 * 1.2^(3/2) or similar."
+                    explanation: "The ogee formula \\(q = CH^{3{/}2}\\) with \\(C = 0.7\\) and \\(H = 1.2\\) m gives \\[\\begin{aligned} q &amp;= 0.7 \\times 1.2^{3{/}2} \\\\ &amp;= 0.7 \\times 1.314 \\approx 0.92 \\end{aligned}\\] cumecs per m, which matches no option. Even \\(C = 2.2\\) gives only about 2.89. The question appears to be misprinted; the key's 4.27 cumecs per m is kept as the intended answer."
                 },
                 {
                     id: "cm25q060",
@@ -944,7 +944,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "Firm power" }
                     ],
                     answer: "d",
-                    explanation: "Firm power is the guaranteed power output that a plant can provide continuously, 24/7, under specified conditions. It is the most valuable type of power from a reliability perspective."
+                    explanation: "Firm power is the guaranteed output that a plant can provide continuously, round the clock, under specified conditions. It is the most valuable type of power from a reliability perspective."
                 }
             ]
         },
@@ -992,7 +992,7 @@ const CIVIL_MODEL_25 = {
                         { key: "d", text: "Modular limit" }
                     ],
                     answer: "c",
-                    explanation: "Flexibility (F) is defined as the ratio of the rate of change of discharge of an outlet to the rate of change of discharge in the parent channel (F = dq / dQ)."
+                    explanation: "Flexibility is the ratio of the rate of change of discharge of an outlet to the rate of change of discharge in the parent channel: \\[F = \\dfrac{dq}{dQ}\\]"
                 },
                 {
                     id: "cm25q071",

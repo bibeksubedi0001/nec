@@ -760,7 +760,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Mechanical widening is n times the wheelbase squared divided by twice the radius: 2 x 6 squared / (2 x 60) = 0.60 m. This excludes psychological widening and is a model calculation, not a substitute for NRS tabulated total widening.<p>Source note: Page 33 point 9: the extracted numerator appears at the end of point 8. Restored Wm = n*l^2/(2R), consistent with chapter-09-geometry, Extra widening.</p><p>Capsule 4th ed., p. 33; topic 9 point 9.</p>",
+          "explanation": "Mechanical widening is \\[W_m = \\dfrac{nl^2}{2R} = \\dfrac{2 \\times 6^2}{2 \\times 60} = 0.60\\] metres. This excludes psychological widening and is a model calculation, not a substitute for NRS tabulated total widening.<p>Source note: Page 33 point 9: the extracted numerator appears at the end of point 8. Restored Wm = n*l^2/(2R), consistent with chapter-09-geometry, Extra widening.</p><p>Capsule 4th ed., p. 33; topic 9 point 9.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -836,7 +836,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Intermediate sight distance is defined as twice SSD, so 2 x 80 = 160 m. It is not an independently calculated overtaking distance and does not by itself permit an overtaking manoeuvre.<p>Capsule 4th ed., p. 33; topic 9 point 11.</p>",
+          "explanation": "Intermediate sight distance is defined as twice SSD: \\[\\text{ISD} = 2 \\times 80 = 160\\ \\text{m}\\] It is not an independently calculated overtaking distance and does not by itself permit an overtaking manoeuvre.<p>Capsule 4th ed., p. 33; topic 9 point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1180,7 +1180,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The general approximate relation is e + f = V squared/(127R). Setting f to zero gives the stated expression. A hill-road label alone does not justify deleting friction or ignoring the governing superelevation cap.<p>Source note: Page 34 point 26: restored displaced squared-speed numerator; corrected the universal hill-road claim using NRS section 11.6 and banked-curve equilibrium.</p><p>Capsule 4th ed., p. 34; topic 9 point 26.</p>",
+          "explanation": "The general approximate relation is \\[e + f = \\dfrac{V^2}{127R}\\] Setting \\(f = 0\\) gives the stated expression. A hill-road label alone does not justify deleting friction or ignoring the governing superelevation cap.<p>Source note: Page 34 point 26: restored displaced squared-speed numerator; corrected the universal hill-road claim using NRS section 11.6 and banked-curve equilibrium.</p><p>Capsule 4th ed., p. 34; topic 9 point 26.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1408,7 +1408,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Under the supplied empirical assumption, slower speed = design speed - 16, so design speed = 80 + 16 = 96 km/h. The difference is a stated teaching model, not a general NRS method for choosing actual design speed.<p>Capsule 4th ed., p. 34; topic 9 point 33.</p>",
+          "explanation": "Under the supplied empirical assumption, the slower speed is the design speed minus 16, so \\[V = 80 + 16 = 96\\ \\text{km/h}\\] The difference is a stated teaching model, not a general NRS method for choosing actual design speed.<p>Capsule 4th ed., p. 34; topic 9 point 33.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1638,7 +1638,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "a",
-          "explanation": "IP is at 1000 + 100 tan(30 degrees) = 1057.735 m on the tangent convention. The arc midpoint is at 1000 + 100 x pi/6 = 1052.360 m. Their difference is 5.375 m; IP is not itself a station on the circular road alignment.<p>Source note: Page 36 point 113: &#39;chainage of mid ordinate&#39; is not a precise point definition. The question explicitly means the arc midpoint at the mid-ordinate and defines tangent IP stationing; other interpretations remain unsupported.</p><p>Capsule 4th ed., p. 36; topic 9 point 113.</p>",
+          "explanation": "On the tangent convention, the IP chainage is \\[\\begin{aligned} &amp;1000 + 100\\tan 30^\\circ \\\\ &amp;= 1057.735\\ \\text{m} \\end{aligned}\\] The arc midpoint is at \\[\\begin{aligned} &amp;1000 + 100 \\times \\dfrac{\\pi}{6} \\\\ &amp;= 1052.360\\ \\text{m} \\end{aligned}\\] Their difference is 5.375 m; IP is not itself a station on the circular road alignment.<p>Source note: Page 36 point 113: &#39;chainage of mid ordinate&#39; is not a precise point definition. The question explicitly means the arc midpoint at the mid-ordinate and defines tangent IP stationing; other interpretations remain unsupported.</p><p>Capsule 4th ed., p. 36; topic 9 point 113.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1866,7 +1866,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The two candidates are 630/600 = 1.05% and 75/600 = 0.125%; the smaller controls. This is a percentage-point grade deduction, not the final grade. The clause says compensation is unnecessary for grades below 4%.<p>Capsule 4th ed., p. 37; topic 9 point 142.</p>",
+          "explanation": "The two candidates are \\[\\dfrac{630}{600} = 1.05\\%\\] \\[\\dfrac{75}{600} = 0.125\\%\\] and the smaller controls. This is a percentage-point grade deduction, not the final grade. The clause says compensation is unnecessary for grades below 4%.<p>Capsule 4th ed., p. 37; topic 9 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1904,7 +1904,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Grade compensation is subtracted in percentage points: 6.000 - 0.125 = 5.875%. Multiplying 6% by 0.99875 would incorrectly treat the deduction as 0.125% of the grade instead of an absolute slope reduction.<p>Capsule 4th ed., p. 37; topic 9 point 142.</p>",
+          "explanation": "Grade compensation is subtracted in percentage points: \\[6.000 - 0.125 = 5.875\\%\\] Multiplying 6% by 0.99875 would incorrectly treat the deduction as 0.125% of the grade instead of an absolute slope reduction.<p>Capsule 4th ed., p. 37; topic 9 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1980,7 +1980,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Both offsets share the same centreline datum and side, so boundary-to-building setback is 18 - 12 = 6 m. The 18 m centreline offset and the 12 m land half-width are different quantities; this is not a horizontal-curve sight setback.<p>Source note: Page 37 point 148: hypothetical drawing dimensions and the setback datum are explicit. They do not prescribe legal setbacks or imply that every Nepal instrument uses this datum.</p><p>Capsule 4th ed., p. 37; topic 9 point 148.</p>",
+          "explanation": "Both offsets share the same centreline datum and side, so the boundary-to-building setback is \\[18 - 12 = 6\\ \\text{m}\\] The 18 m centreline offset and the 12 m land half-width are different quantities; this is not a horizontal-curve sight setback.<p>Source note: Page 37 point 148: hypothetical drawing dimensions and the setback datum are explicit. They do not prescribe legal setbacks or imply that every Nepal instrument uses this datum.</p><p>Capsule 4th ed., p. 37; topic 9 point 148.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2217,7 +2217,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "a",
-          "explanation": "One penetration unit is 0.1 mm, so 62 x 0.1 = 6.2 mm. The reading is a consistency measurement under specified conditions, not itself a complete grade range or a viscosity measurement.<p>Source note: Page 34 point 42 and page 36 point 134: full page text restores both /10 denominators. Shared unit fact is covered once with the 62-unit application; DoR Table 6.12 confirms dmm units.</p><p>Capsule 4th ed., pp. 34, 36; topic 9 point 42; topic 9 point 134.</p>",
+          "explanation": "One penetration unit is 0.1 mm, so \\[62 \\times 0.1 = 6.2\\ \\text{mm}\\] The reading is a consistency measurement under specified conditions, not itself a complete grade range or a viscosity measurement.<p>Source note: Page 34 point 42 and page 36 point 134: full page text restores both /10 denominators. Shared unit fact is covered once with the 62-unit application; DoR Table 6.12 confirms dmm units.</p><p>Capsule 4th ed., pp. 34, 36; topic 9 point 42; topic 9 point 134.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2988,7 +2988,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Time-mean speed is the arithmetic mean of the fixed-point passage speeds: (30 + 60)/2 = 45 km/h. The 40 km/h harmonic mean describes the compatible equal-distance or stationary space-mean calculation.<p>Capsule 4th ed., p. 33; topic 9 point 15.</p>",
+          "explanation": "Time-mean speed is the arithmetic mean of the fixed-point passage speeds: \\[v_t = \\dfrac{30 + 60}{2} = 45\\ \\text{km/h}\\] The 40 km per h harmonic mean describes the compatible equal-distance or stationary space-mean calculation.<p>Capsule 4th ed., p. 33; topic 9 point 15.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3102,7 +3102,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Gross space headway is vehicle length plus clear gap, 5 + 25 = 30 m. Flow = 1000 x 54/30 = 1800 vehicles/h. This idealised spacing result is not proof of observed sustainable road capacity.<p>Source note: Page 34 point 37: full page text restores 1000V/(L+S); L is vehicle length and S the clear gap, not gross spacing again.</p><p>Capsule 4th ed., p. 34; topic 9 point 37.</p>",
+          "explanation": "Gross space headway is vehicle length plus clear gap, \\(5 + 25 = 30\\) m. Then \\[q = \\dfrac{1000 \\times 54}{30} = 1800\\] vehicles per hour. This idealised spacing result is not proof of observed sustainable road capacity.<p>Source note: Page 34 point 37: full page text restores 1000V/(L+S); L is vehicle length and S the clear gap, not gross spacing again.</p><p>Capsule 4th ed., p. 34; topic 9 point 37.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3140,7 +3140,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The observed-period daily average is 30,000/30 = 1000 vehicles/day. A short survey does not establish annual average daily traffic without justified seasonal/day factors or complete year-long observations.<p>Capsule 4th ed., p. 34; topic 9 point 58.</p>",
+          "explanation": "The observed-period daily average is \\[\\text{ADT} = \\dfrac{30{,}000}{30} = 1000\\] vehicles per day. A short survey does not establish annual average daily traffic without justified seasonal or day factors or complete year-long observations.<p>Capsule 4th ed., p. 34; topic 9 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3448,7 +3448,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Webster gives (1.5L + 5)/(1 - Y) = (15 + 5)/0.40 = 50 s. The ratios must represent the critical phase requirements; this approximate delay result does not replace pedestrian, clearance or coordination checks.<p>Source note: Page 35 point 69: the full page restores the numerator displaced into point 68&#39;s extraction.</p><p>Capsule 4th ed., p. 35; topic 9 point 69.</p>",
+          "explanation": "Webster's approximation gives \\[\\begin{aligned} C_0 &amp;= \\dfrac{1.5L + 5}{1 - Y} = \\dfrac{15 + 5}{0.40} \\\\ &amp;= 50\\ \\text{s} \\end{aligned}\\] The ratios must represent the critical phase requirements; this approximate delay result does not replace pedestrian, clearance or coordination checks.<p>Source note: Page 35 point 69: the full page restores the numerator displaced into point 68&#39;s extraction.</p><p>Capsule 4th ed., p. 35; topic 9 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3486,7 +3486,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "a",
-          "explanation": "PHF = hourly volume/(4 x busiest quarter-hour volume) = 600/(4 x 600) = 0.25. This is the minimum for a nonzero hourly volume because no quarter can contain more than the entire hour's traffic.<p>Capsule 4th ed., p. 35; topic 9 point 71.</p>",
+          "explanation": "The peak-hour factor is \\[\\begin{aligned} \\text{PHF} &amp;= \\dfrac{V}{4V_{15}} = \\dfrac{600}{4 \\times 600} \\\\ &amp;= 0.25 \\end{aligned}\\] This is the minimum for a nonzero hourly volume because no quarter can contain more than the entire hour's traffic.<p>Capsule 4th ed., p. 35; topic 9 point 71.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3524,7 +3524,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Both hourly volume and maximum quarter-hour volume are zero, giving an undefined 0/0 ratio. The conventional 0.25-to-1 range assumes positive traffic; equal positive quarter-hour counts, not an empty hour, give one.<p>Capsule 4th ed., p. 35; topic 9 point 71.</p>",
+          "explanation": "Both hourly volume and maximum quarter-hour volume are zero, giving an undefined \\(\\dfrac{0}{0}\\) ratio. The conventional 0.25-to-1 range assumes positive traffic; equal positive quarter-hour counts, not an empty hour, give one.<p>Capsule 4th ed., p. 35; topic 9 point 71.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3676,7 +3676,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "c",
-          "explanation": "AADT is the full-year count divided by the number of days: 730,000/365 = 2000 vehicles/day. A leap-year total instead uses 366 days; dividing by hours would give a different statistic.<p>Capsule 4th ed., p. 35; topic 9 point 76.</p>",
+          "explanation": "AADT is the full-year count divided by the number of days: \\[\\text{AADT} = \\dfrac{730{,}000}{365} = 2000\\] vehicles per day. A leap-year total instead uses 366 days; dividing by hours would give a different statistic.<p>Capsule 4th ed., p. 35; topic 9 point 76.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3790,7 +3790,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The adopted equivalence gives 20 x 6 + 80 x 1 = 200 PCU/h from 100 physical vehicles/h. PCU expresses traffic-stream effects, not axle damage; the cart factor and any 'highest factor' ranking depend on the chosen table and conditions.<p>Source note: Page 36 point 112: 6 PCU is a stated exercise assumption, not a newly verified universal NRS value or a claim that carts always have the largest factor.</p><p>Capsule 4th ed., p. 36; topic 9 point 112.</p>",
+          "explanation": "The adopted equivalence gives \\[20 \\times 6 + 80 \\times 1 = 200\\] PCU per hour from 100 physical vehicles per hour. PCU expresses traffic-stream effects, not axle damage; the cart factor and any 'highest factor' ranking depend on the chosen table and conditions.<p>Source note: Page 36 point 112: 6 PCU is a stated exercise assumption, not a newly verified universal NRS value or a claim that carts always have the largest factor.</p><p>Capsule 4th ed., p. 36; topic 9 point 112.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3866,7 +3866,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The stipulated moving state gives q = 100 x 50 = 5000 vehicles/h and mean headway = 3600/5000 = 0.72 s. This is arithmetic for the assumed state, not proof of sustainable capacity or a recommended following interval.<p>Capsule 4th ed., p. 36; topic 9 point 128.</p>",
+          "explanation": "The stipulated moving state gives \\[q = 100 \\times 50 = 5000\\] vehicles per hour, and the mean headway is \\[h = \\dfrac{3600}{5000} = 0.72\\ \\text{s}\\] This is arithmetic for the assumed state, not proof of sustainable capacity or a recommended following interval.<p>Capsule 4th ed., p. 36; topic 9 point 128.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4018,7 +4018,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The two-way total is the sum of both directions, so westward traffic is 200 - 120 = 80 vehicles/day. Daily design volume is not automatically the road's theoretical hourly capacity, and vehicles are not interchangeable with PCU.<p>Source note: Appendix p42 n14: 200 vehicles/day is a supplied brief, not an independently verified Terai village-road capacity standard; parent needs the applicable NRRS edition and table.</p><p>Capsule 4th ed., p. 42; rural point 14.</p>",
+          "explanation": "The two-way total is the sum of both directions, so the westward traffic is \\[200 - 120 = 80\\] vehicles per day. Daily design volume is not automatically the road's theoretical hourly capacity, and vehicles are not interchangeable with PCU.<p>Source note: Appendix p42 n14: 200 vehicles/day is a supplied brief, not an independently verified Terai village-road capacity standard; parent needs the applicable NRRS edition and table.</p><p>Capsule 4th ed., p. 42; rural point 14.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4177,7 +4177,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For four lanes on one undivided carriageway, the default factor is 0.40 of total two-way commercial traffic: 0.40 x 1000 = 400. Do not halve that result again or apply the divided-road directional factor.<p>Source note: Pages 35/37 points 66/73/143 duplicate the 0.4 claim. Undivided geometry and the two-way commercial-traffic denominator are essential qualifications; guideline provenance is recorded in the audit.</p><p>Capsule 4th ed., pp. 35, 37; topic 9 point 66; topic 9 point 73; topic 9 point 143.</p>",
+          "explanation": "For four lanes on one undivided carriageway, the default factor is 0.40 of total two-way commercial traffic: \\[0.40 \\times 1000 = 400\\] Do not halve that result again or apply the divided-road directional factor.<p>Source note: Pages 35/37 points 66/73/143 duplicate the 0.4 claim. Undivided geometry and the two-way commercial-traffic denominator are essential qualifications; guideline provenance is recorded in the audit.</p><p>Capsule 4th ed., pp. 35, 37; topic 9 point 66; topic 9 point 73; topic 9 point 143.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4218,7 +4218,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The relevant direction carries 1000/2 = 500 commercial vehicles/day. Applying its 0.75 lane factor gives 375. The undivided-road factor 0.40 has a different denominator and is not a universal four-lane rule.<p>Capsule 4th ed., pp. 35, 37; topic 9 point 66; topic 9 point 73; topic 9 point 143.</p>",
+          "explanation": "The relevant direction carries \\(\\dfrac{1000}{2} = 500\\) commercial vehicles per day. Applying its 0.75 lane factor gives \\[0.75 \\times 500 = 375\\] The undivided-road factor 0.40 has a different denominator and is not a universal four-lane rule.<p>Capsule 4th ed., pp. 35, 37; topic 9 point 66; topic 9 point 73; topic 9 point 143.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4259,7 +4259,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Equivalent damage per pass is (160/80) to the fourth power = 16. This compares like axle configurations within the stated empirical model; it is not a universal law based on gross vehicle weight alone.<p>Capsule 4th ed., p. 35; topic 9 point 70.</p>",
+          "explanation": "Equivalent damage per pass is \\[\\left(\\dfrac{160}{80}\\right)^4 = 16\\] This compares like axle configurations within the stated empirical model; it is not a universal law based on gross vehicle weight alone.<p>Capsule 4th ed., p. 35; topic 9 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4373,7 +4373,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Insert CBR as the percentage number 5, not the fraction 0.05: MR = 10 x 5 = 50 MPa. This is an empirical modulus estimate, not a direct cyclic test result, and the guideline uses another relation above CBR 5.<p>Source note: Page 35 point 78 attributes the relation loosely to NRS. The identified reference is DoR Flexible 2021 section 5.2, equations 13-14, via corrected pavement notes.</p><p>Capsule 4th ed., p. 35; topic 9 point 78.</p>",
+          "explanation": "Insert CBR as the percentage number 5, not the fraction 0.05: \\[M_R = 10 \\times 5 = 50\\ \\text{MPa}\\] This is an empirical modulus estimate, not a direct cyclic test result, and the guideline uses another relation above CBR 5.<p>Source note: Page 35 point 78 attributes the relation loosely to NRS. The identified reference is DoR Flexible 2021 section 5.2, equations 13-14, via corrected pavement notes.</p><p>Capsule 4th ed., p. 35; topic 9 point 78.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4487,7 +4487,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The centreline is 3.75/2 = 1.875 m from the edge. The specified test path is 0.60 m inward, leaving 1.875 - 0.60 = 1.275 m to the centreline. Edge offset and centreline offset are different datums.<p>Source note: Page 35 point 83: the 0.60 m layout is explicitly stipulated, not certified as a universal single-lane requirement; precise applicable BBD method remains for parent review.</p><p>Capsule 4th ed., p. 35; topic 9 point 83.</p>",
+          "explanation": "The centreline is \\(\\dfrac{3.75}{2} = 1.875\\) m from the edge. The specified test path is 0.60 m inward, leaving \\[1.875 - 0.60 = 1.275\\ \\text{m}\\] to the centreline. Edge offset and centreline offset are different datums.<p>Source note: Page 35 point 83: the 0.60 m layout is explicitly stipulated, not certified as a universal single-lane requirement; precise applicable BBD method remains for parent review.</p><p>Capsule 4th ed., p. 35; topic 9 point 83.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4755,7 +4755,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The equivalence is (100/80) to the fourth power = 1.25 to the fourth power = 2.44140625, or 2.441 passes. A 2.25 factor is not obtained from these loads under this model, and the result is not a wheel-load force.<p>Source note: Page 36 point 107 omits the reference load and confuses equivalent wheel load with a repetition factor. The stem explicitly supplies 80 kN and comparable axle geometry; the source&#39;s 2.25 is not adopted.</p><p>Capsule 4th ed., p. 36; topic 9 point 107.</p>",
+          "explanation": "The equivalence is \\[\\begin{aligned} \\left(\\dfrac{100}{80}\\right)^4 &amp;= 1.25^4 \\\\ &amp;= 2.44140625 \\end{aligned}\\] or 2.441 passes. A 2.25 factor is not obtained from these loads under this model, and the result is not a wheel-load force.<p>Source note: Page 36 point 107 omits the reference load and confuses equivalent wheel load with a repetition factor. The stem explicitly supplies 80 kN and comparable axle geometry; the source&#39;s 2.25 is not adopted.</p><p>Capsule 4th ed., p. 36; topic 9 point 107.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4831,7 +4831,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Convert the intended force unit: 5100 x 9.80665/1000 = 50.013915 kN, about 50.014 kN. A kilogram alone is a mass unit; neither this force nor slab thickness alone fixes a valid dowel schedule.<p>Source note: Page 36 point 120: explicitly resolves the mass-versus-force shorthand without authenticating the unverified IRC detailing claim.</p><p>Capsule 4th ed., p. 36; topic 9 point 120.</p>",
+          "explanation": "Convert the intended force unit: \\[\\begin{aligned} &amp;\\dfrac{5100 \\times 9.80665}{1000} \\\\ &amp;= 50.013915\\ \\text{kN} \\end{aligned}\\] about 50.014 kN. A kilogram alone is a mass unit; neither this force nor slab thickness alone fixes a valid dowel schedule.<p>Source note: Page 36 point 120: explicitly resolves the mass-versus-force shorthand without authenticating the unverified IRC detailing claim.</p><p>Capsule 4th ed., p. 36; topic 9 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5104,7 +5104,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The mass-curve slope is change in cumulative volume divided by distance: (1000 - 600)/50 = +8 square metres. It represents average net cut area on the common volume basis, not the total cumulative volume or haul distance.<p>Capsule 4th ed., p. 34; topic 9 point 52.</p>",
+          "explanation": "The mass-curve slope is the change in cumulative volume divided by distance: \\[\\dfrac{1000 - 600}{50} = +8\\ \\text{m}^2\\] It represents average net cut area on the common volume basis, not the total cumulative volume or haul distance.<p>Capsule 4th ed., p. 34; topic 9 point 52.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6096,7 +6096,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Convert 20 mm to 0.020 m, then volume = 50 x 3.5 x 0.020 = 3.5 cubic metres. This is compacted geometric volume; loose delivery volume and mass need separate density and construction allowances.<p>Source note: Page 37 point 139: 20 mm is explicitly the approved exercise specification, not a universal asphalt-course thickness. The original numerical standard&#39;s exact edition/clause remains for parent confirmation.</p><p>Capsule 4th ed., p. 37; topic 9 point 139.</p>",
+          "explanation": "Convert 20 mm to 0.020 m; then \\[V = 50 \\times 3.5 \\times 0.020 = 3.5\\] cubic metres. This is compacted geometric volume; loose delivery volume and mass need separate density and construction allowances.<p>Source note: Page 37 point 139: 20 mm is explicitly the approved exercise specification, not a universal asphalt-course thickness. The original numerical standard&#39;s exact edition/clause remains for parent confirmation.</p><p>Capsule 4th ed., p. 37; topic 9 point 139.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6172,7 +6172,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Average width = plan area/length = 1000/800 = 1.25 m. This checks a stated pilot-cut geometry, not a universal phase-one width or proof that the completed road can carry traffic safely.<p>Source note: Appendix p42 n13: the claimed standard green-road phase-one width requires its manual and edition. New area and length are illustrative, not extracted drawing data.</p><p>Capsule 4th ed., p. 42; rural point 13.</p>",
+          "explanation": "The average width is the plan area divided by the length: \\[\\dfrac{1000}{800} = 1.25\\ \\text{m}\\] This checks a stated pilot-cut geometry, not a universal phase-one width or proof that the completed road can carry traffic safely.<p>Source note: Appendix p42 n13: the claimed standard green-road phase-one width requires its manual and edition. New area and length are illustrative, not extracted drawing data.</p><p>Capsule 4th ed., p. 42; rural point 13.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,

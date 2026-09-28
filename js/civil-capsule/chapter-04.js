@@ -69,7 +69,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Positive shear means M is increasing; negative shear means M is decreasing. Their change from positive to negative establishes a local maximum. Merely finding V = 0 is insufficient: M may remain constant over an interval or have a stationary point without an extremum.<p>Source note: Point 2 is qualified by a shear sign change; zero shear alone is not sufficient.</p><p>Capsule 4th ed., p. 15; topic 4 point 2.</p>",
+          "explanation": "With \\(V = \\dfrac{dM}{dx}\\), positive shear means \\(M\\) is increasing and negative shear means \\(M\\) is decreasing. Their change from positive to negative establishes a local maximum. Merely finding \\(V = 0\\) is insufficient: \\(M\\) may remain constant over an interval or have a stationary point without an extremum.<p>Source note: Point 2 is qualified by a shear sign change; zero shear alone is not sufficient.</p><p>Capsule 4th ed., p. 15; topic 4 point 2.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -107,7 +107,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The reactions are 16 kN and 8 kN. Shear changes from +16 to -8 kN at the load, so moment peaks there at 16 x 2 = 32 kN m. Midspan moment is only 24 kN m. The centre is critical for many symmetric loads, but not for every beam.<p>Source note: Corrects point 5&#39;s unrestricted midspan-design shortcut.</p><p>Capsule 4th ed., p. 15; topic 4 point 5.</p>",
+          "explanation": "The reactions are 16 kN and 8 kN. Shear changes from +16 to −8 kN at the load, so the moment peaks there: \\[M = 16 \\times 2 = 32\\ \\text{kN m}\\] Midspan moment is only 24 kN m. The centre is critical for many symmetric loads, but not for every beam.<p>Source note: Corrects point 5&#39;s unrestricted midspan-design shortcut.</p><p>Capsule 4th ed., p. 15; topic 4 point 5.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -145,7 +145,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Differentiate the moment function, rather than divide M by x: V(x) = 18 - 6x. At x = 2 m this gives +6 kN. The moment itself is 24 kN m, which has different units and is not the shear.<p>Capsule 4th ed., p. 15; topic 4 point 6.</p>",
+          "explanation": "Differentiate the moment function rather than divide \\(M\\) by \\(x\\): \\[V(x) = \\dfrac{dM}{dx} = 18 - 6x\\] At \\(x = 2\\) m this gives \\[V = 18 - 12 = +6\\ \\text{kN}\\] The moment itself is 24 kN m, which has different units and is not the shear.<p>Capsule 4th ed., p. 15; topic 4 point 6.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -297,7 +297,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Each reaction is wL/2, and the load to the left of a cut at x is wx. Thus V = wL/2 - wx is linear, with slope -w. The quadratic expression wx(L - x)/2 represents moment, not shear.<p>Capsule 4th ed., p. 15; topic 4 point 13.</p>",
+          "explanation": "Each reaction is \\(\\dfrac{wL}{2}\\), and the load to the left of a cut at \\(x\\) is \\(wx\\). Thus \\[V(x) = \\dfrac{wL}{2} - wx\\] which is linear, with slope \\(-w\\). The quadratic expression \\(\\dfrac{wx(L - x)}{2}\\) represents moment, not shear.<p>Capsule 4th ed., p. 15; topic 4 point 13.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -335,7 +335,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The relation V = dM/dx gives zero shear when M is constant. Nonzero constant moment still produces bending stresses and curvature. A separate axial load can coexist with it, so no conclusion about axial force follows from the moment diagram alone.<p>Capsule 4th ed., pp. 15, 17; topic 4 point 14; topic 4 point 63.</p>",
+          "explanation": "The relation \\(V = \\dfrac{dM}{dx}\\) gives zero shear when \\(M\\) is constant. Nonzero constant moment still produces bending stresses and curvature. A separate axial load can coexist with it, so no conclusion about axial force follows from the moment diagram alone.<p>Capsule 4th ed., pp. 15, 17; topic 4 point 14; topic 4 point 63.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -413,7 +413,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Each reaction is P/2. Moment rises linearly from zero to (P/2)(L/2) = PL/4 and then falls linearly to zero. A point force changes shear abruptly but does not introduce a moment jump, so the triangular diagram remains continuous.<p>Capsule 4th ed., p. 16; topic 4 point 25.</p>",
+          "explanation": "Each reaction is \\(\\dfrac{P}{2}\\). The moment rises linearly from zero to \\[M_{\\max} = \\dfrac{P}{2} \\cdot \\dfrac{L}{2} = \\dfrac{PL}{4}\\] and then falls linearly to zero. A point force changes shear abruptly but does not introduce a moment jump, so the triangular diagram remains continuous.<p>Capsule 4th ed., p. 16; topic 4 point 25.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -489,7 +489,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The total load is 40 kN and each reaction is 20 kN. V(x) = 20 - 5x kN varies from +20 to -20 kN, reaching zero at midspan. Its largest magnitude is 20 kN immediately inside either support, although the signed ordinates differ.<p>Capsule 4th ed., p. 17; topic 4 point 48.</p>",
+          "explanation": "The total load is 40 kN and each reaction is 20 kN. The shear \\[V(x) = 20 - 5x\\ \\text{kN}\\] varies from +20 to −20 kN, reaching zero at midspan. Its largest magnitude is 20 kN immediately inside either support, although the signed ordinates differ.<p>Capsule 4th ed., p. 17; topic 4 point 48.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -567,7 +567,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Differentiate the parabolic shear function: dV/dx = -2x. Thus q = -dV/dx = 2x kN/m downward, a linearly varying distribution. Integrating V would determine moment, not load intensity.<p>Capsule 4th ed., p. 18; topic 4 point 76.</p>",
+          "explanation": "Differentiate the parabolic shear function: \\[\\dfrac{dV}{dx} = -2x\\] Thus \\[q = -\\dfrac{dV}{dx} = 2x\\ \\text{kN/m}\\] downward, a linearly varying distribution. Integrating \\(V\\) would determine moment, not load intensity.<p>Capsule 4th ed., p. 18; topic 4 point 76.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -605,7 +605,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "V = w(L/2 - x) becomes zero at x = L/2. Substitution into M = wx(L-x)/2 gives Mmax = wL^2/8 = 12 x 36/8 = 54 kN m. Full-span uniform intensity and simple end conditions justify the midspan location.<p>Capsule 4th ed., p. 18; topic 4 point 90.</p>",
+          "explanation": "The shear \\(V = w\\left(\\dfrac{L}{2} - x\\right)\\) becomes zero at \\(x = \\dfrac{L}{2}\\). Substitution into \\(M = \\dfrac{wx(L - x)}{2}\\) gives \\[\\begin{aligned} M_{\\max} &amp;= \\dfrac{wL^2}{8} = \\dfrac{12 \\times 36}{8} \\\\ &amp;= 54\\ \\text{kN m} \\end{aligned}\\] Full-span uniform intensity and simple end conditions justify the midspan location.<p>Capsule 4th ed., p. 18; topic 4 point 90.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -643,7 +643,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The moment change is the signed shear-diagram area: delta M = V delta x = -4 x 3 = -12 kN m. Add this to the initial +10 to obtain -2 kN m. Constant shear gives a linear moment variation; -12 is the change, not the final moment.<p>Capsule 4th ed., p. 18; topic 4 point 91.</p>",
+          "explanation": "The moment change is the signed shear-diagram area: \\[\\begin{aligned} \\Delta M &amp;= V\\Delta x = -4 \\times 3 \\\\ &amp;= -12\\ \\text{kN m} \\end{aligned}\\] Adding this to the initial +10 gives \\[M = 10 - 12 = -2\\ \\text{kN m}\\] Constant shear gives a linear moment variation; −12 is the change, not the final moment.<p>Capsule 4th ed., p. 18; topic 4 point 91.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -681,7 +681,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "For full-span UDL, Mmax = wL^2/8. Holding w fixed and replacing L by 2L multiplies moment by four. The total load also doubles, so this is not a comparison at constant total force.<p>Capsule 4th ed., p. 18; topic 4 point 93.</p>",
+          "explanation": "For full-span UDL, \\[M_{\\max} = \\dfrac{wL^2}{8}\\] Holding \\(w\\) fixed and replacing \\(L\\) by \\(2L\\) multiplies the moment by \\(2^2 = 4\\). The total load also doubles, so this is not a comparison at constant total force.<p>Capsule 4th ed., p. 18; topic 4 point 93.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -719,7 +719,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "At fixed total force W, the intensity is W/L, so Mmax = WL/8. Doubling span then doubles moment because the intensity halves. The fourfold rule applies only when intensity per metre, rather than total load, is unchanged.<p>Capsule 4th ed., p. 18; topic 4 point 93.</p>",
+          "explanation": "At fixed total force \\(W\\), the intensity is \\(\\dfrac{W}{L}\\), so \\[M_{\\max} = \\dfrac{W}{L} \\cdot \\dfrac{L^2}{8} = \\dfrac{WL}{8}\\] Doubling the span then doubles the moment because the intensity halves. The fourfold rule applies only when intensity per metre, rather than total load, is unchanged.<p>Capsule 4th ed., p. 18; topic 4 point 93.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -795,7 +795,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Total load is 12 x 6/2 = 36 kN, acting 4 m from A. Thus RA = 12 kN. Since q(x) = 2x, accumulated load to x is x^2, giving V = 12 - x^2. Hence x = sqrt(12) = 6/sqrt(3) = 3.464 m, not L/3, L/2 or the load-resultant location 2L/3.<p>Source note: Pages 19 points 109 and 121 duplicate the same rule. Extraction shows a/3 without a recoverable radical; equilibrium requires a/sqrt(3). No image review claimed.</p><p>Capsule 4th ed., p. 19; topic 4 point 109; topic 4 point 121.</p>",
+          "explanation": "The total load is \\(\\dfrac{12 \\times 6}{2} = 36\\) kN, acting 4 m from A, so \\(R_A = 12\\) kN. Since \\(q(x) = 2x\\), the load accumulated to \\(x\\) is \\(x^2\\), giving \\[V = 12 - x^2 = 0\\] Hence \\[x = \\sqrt{12} = \\dfrac{6}{\\sqrt{3}} = 3.464\\ \\text{m}\\] not \\(\\dfrac{L}{3}\\), \\(\\dfrac{L}{2}\\) or the load-resultant location \\(\\dfrac{2L}{3}\\).<p>Source note: Pages 19 points 109 and 121 duplicate the same rule. Extraction shows a/3 without a recoverable radical; equilibrium requires a/sqrt(3). No image review claimed.</p><p>Capsule 4th ed., p. 19; topic 4 point 109; topic 4 point 121.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -834,7 +834,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "At distance x from the fixed root, the free-side force gives M(x) = -P(L-x) = -10(3-x) kN m. It is hogging and linear, from -30 at the root to zero at the tip. A UDL, unlike this point force, would produce a parabolic moment diagram.<p>Capsule 4th ed., p. 19; topic 4 point 119.</p>",
+          "explanation": "At distance \\(x\\) from the fixed root, the free-side force gives \\[\\begin{aligned} M(x) &amp;= -P(L - x) \\\\ &amp;= -10(3 - x)\\ \\text{kN m} \\end{aligned}\\] It is hogging and linear, from −30 at the root to zero at the tip. A UDL, unlike this point force, would produce a parabolic moment diagram.<p>Capsule 4th ed., p. 19; topic 4 point 119.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1062,7 +1062,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The moment magnitude increases linearly from zero at the tip to PL = 10 x 3 = 30 kN m at the fixed end. A beam's maximum moment is not always at its centre; support and load configuration determine the critical section.<p>Source note: Page 22 point 109&#39;s universal centre-of-beam claim is corrected with a determinate counterexample.</p><p>Capsule 4th ed., p. 22; topic 5 point 109.</p>",
+          "explanation": "The moment magnitude increases linearly from zero at the tip to \\[PL = 10 \\times 3 = 30\\ \\text{kN m}\\] at the fixed end. A beam's maximum moment is not always at its centre; support and load configuration determine the critical section.<p>Source note: Page 22 point 109&#39;s universal centre-of-beam claim is corrected with a determinate counterexample.</p><p>Capsule 4th ed., p. 22; topic 5 point 109.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1100,7 +1100,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Symmetry gives reactions of 30 kN each. At midspan, M = 30 x 4.5 - 30 x (4.5 - 3) = 90 kN m. Shear is zero between the two loads, giving a constant moment WL/3 when W denotes each individual load, not their sum.<p>Source note: Full page 23 text recovers the load distance L/3. The extracted W3L is reconstructed as WL/3 by independent equilibrium, not by image inspection.</p><p>Capsule 4th ed., p. 23; topic 5 point 139.</p>",
+          "explanation": "Symmetry gives reactions of 30 kN each. At midspan, \\[\\begin{aligned} M &amp;= 30 \\times 4.5 \\\\ &amp;\\quad - 30 \\times (4.5 - 3) \\\\ &amp;= 90\\ \\text{kN m} \\end{aligned}\\] Shear is zero between the two loads, giving a constant moment \\(\\dfrac{WL}{3}\\) when \\(W\\) denotes each individual load, not their sum.<p>Source note: Full page 23 text recovers the load distance L/3. The extracted W3L is reconstructed as WL/3 by independent equilibrium, not by image inspection.</p><p>Capsule 4th ed., p. 23; topic 5 point 139.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1259,7 +1259,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Isotropic elasticity requires E = 2G(1 + nu). Therefore nu = 210/(2 x 84) - 1 = 0.25. The value 1.25 is 1 + nu, not nu; the relation should not be imposed on an arbitrary anisotropic material.<p>Capsule 4th ed., p. 15; topic 4 point 17.</p>",
+          "explanation": "Isotropic elasticity requires \\(E = 2G(1 + \\nu)\\). Therefore \\[\\nu = \\dfrac{210}{2 \\times 84} - 1 = 0.25\\] The value 1.25 is \\(1 + \\nu\\), not \\(\\nu\\); the relation should not be imposed on an arbitrary anisotropic material.<p>Capsule 4th ed., p. 15; topic 4 point 17.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1337,7 +1337,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Principal planes have zero shear traction. The in-plane maximum shear is (80 - 20)/2 = 30 MPa on rotated planes. Plane stress also has an out-of-plane principal stress of zero, so the absolute three-dimensional maximum is (80 - 0)/2 = 40 MPa. Neither maximum acts on the 80 MPa principal plane.<p>Capsule 4th ed., p. 15; topic 4 point 19.</p>",
+          "explanation": "Principal planes have zero shear traction. The in-plane maximum shear acts on rotated planes: \\[\\tau_{\\max} = \\dfrac{80 - 20}{2} = 30\\ \\text{MPa}\\] Plane stress also has an out-of-plane principal stress of zero, so the absolute three-dimensional maximum is \\[\\dfrac{80 - 0}{2} = 40\\ \\text{MPa}\\] Neither maximum acts on the 80 MPa principal plane.<p>Capsule 4th ed., p. 15; topic 4 point 19.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1375,7 +1375,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For a circular shaft, tau(r) = Tr/J. At the axis r = 0, hence tau = 0. J is a property of the entire cross-section and is not zero at the axis. This statement refers to torsional shear, not stresses from an additional axial load.<p>Capsule 4th ed., p. 15; topic 4 point 21.</p>",
+          "explanation": "For a circular shaft, \\[\\tau(r) = \\dfrac{Tr}{J}\\] At the axis \\(r = 0\\), hence \\(\\tau = 0\\). \\(J\\) is a property of the entire cross-section and is not zero at the axis. This statement refers to torsional shear, not stresses from an additional axial load.<p>Capsule 4th ed., p. 15; topic 4 point 21.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1413,7 +1413,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The Mohr-circle centre is (60 + 0)/2 = 30 MPa and radius is sqrt(30^2 + 40^2) = 50 MPa. Thus sigma_1 = 30 + 50 = 80 MPa and sigma_2 = -20 MPa. Adding the full sigma_x to the radius would incorrectly give 110 MPa.<p>Source note: Corrects the missing half on the mean-stress term in page 17 point 52.</p><p>Capsule 4th ed., p. 17; topic 4 point 52.</p>",
+          "explanation": "The Mohr-circle centre and radius are \\[C = \\dfrac{60 + 0}{2} = 30\\ \\text{MPa}\\] \\[R = \\sqrt{30^2 + 40^2} = 50\\ \\text{MPa}\\] Thus \\[\\sigma_1 = 30 + 50 = 80\\ \\text{MPa}\\] and \\(\\sigma_2 = 30 - 50 = -20\\) MPa. Adding the full \\(\\sigma_x\\) to the radius would incorrectly give 110 MPa.<p>Source note: Corrects the missing half on the mean-stress term in page 17 point 52.</p><p>Capsule 4th ed., p. 17; topic 4 point 52.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1451,7 +1451,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Shear modulus, also called modulus of rigidity, is G = tau/gamma for engineering shear strain gamma. Thus G = 30/0.0004 = 75000 MPa = 75 GPa. Confusing engineering shear strain with the tensor component epsilon_xy = gamma/2 introduces a factor-of-two error.<p>Source note: Points 58 and 61 duplicate the definition of shear modulus.</p><p>Capsule 4th ed., p. 17; topic 4 point 58; topic 4 point 61.</p>",
+          "explanation": "Shear modulus, also called modulus of rigidity, is \\(G = \\dfrac{\\tau}{\\gamma}\\) for engineering shear strain \\(\\gamma\\). Thus \\[\\begin{aligned} G &amp;= \\dfrac{30}{0.0004} = 75{,}000\\ \\text{MPa} \\\\ &amp;= 75\\ \\text{GPa} \\end{aligned}\\] Confusing engineering shear strain with the tensor component \\(\\varepsilon_{xy} = \\dfrac{\\gamma}{2}\\) introduces a factor-of-two error.<p>Source note: Points 58 and 61 duplicate the definition of shear modulus.</p><p>Capsule 4th ed., p. 17; topic 4 point 58; topic 4 point 61.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1490,7 +1490,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Young's modulus is the ratio of axial normal stress to corresponding longitudinal strain in linear uniaxial response. E = 120/0.0006 = 200000 MPa = 200 GPa. Shear and bulk moduli require different stress-strain measures.<p>Capsule 4th ed., p. 17; topic 4 point 64.</p>",
+          "explanation": "Young's modulus is the ratio of axial normal stress to corresponding longitudinal strain in linear uniaxial response: \\[\\begin{aligned} E &amp;= \\dfrac{120}{0.0006} = 200{,}000\\ \\text{MPa} \\\\ &amp;= 200\\ \\text{GPa} \\end{aligned}\\] Shear and bulk moduli require different stress-strain measures.<p>Capsule 4th ed., p. 17; topic 4 point 64.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1566,7 +1566,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The mean is (70 + 10)/2 = 40 MPa and Mohr radius is sqrt(((70 - 10)/2)^2 + 40^2) = 50 MPa. Thus the eigenvalues are 40 +/- 50, or 90 and -10 MPa. Principal directions follow stress transformation; they are not necessarily geometric diagonals.<p>Source note: Restores the principal-stress expression in point 73 and removes its unjustified diagonal-plane restriction.</p><p>Capsule 4th ed., p. 17; topic 4 point 73.</p>",
+          "explanation": "The mean and Mohr radius are \\[\\dfrac{70 + 10}{2} = 40\\ \\text{MPa}\\] \\[\\begin{aligned} R &amp;= \\sqrt{\\left(\\dfrac{70 - 10}{2}\\right)^2 + 40^2} \\\\ &amp;= 50\\ \\text{MPa} \\end{aligned}\\] Thus the principal stresses are \\(40 \\pm 50\\), or 90 and −10 MPa. Principal directions follow stress transformation; they are not necessarily geometric diagonals.<p>Source note: Restores the principal-stress expression in point 73 and removes its unjustified diagonal-plane restriction.</p><p>Capsule 4th ed., p. 17; topic 4 point 73.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1642,7 +1642,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Use G = E/[2(1 + nu)], not E(1 + nu)/2. Substitution gives G = 200/[2 x 1.25] = 80 GPa. This isotropic elastic identity is not a universal relation for anisotropic materials.<p>Capsule 4th ed., p. 18; topic 4 point 79.</p>",
+          "explanation": "Use \\[\\begin{aligned} G &amp;= \\dfrac{E}{2(1 + \\nu)} = \\dfrac{200}{2 \\times 1.25} \\\\ &amp;= 80\\ \\text{GPa} \\end{aligned}\\] not \\(\\dfrac{E(1 + \\nu)}{2}\\). This isotropic elastic identity is not a universal relation for anisotropic materials.<p>Capsule 4th ed., p. 18; topic 4 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1680,7 +1680,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Engineering ultimate tensile strength is maximum recorded force divided by original cross-sectional area: 60000/200 = 300 MPa. It is not the fracture load divided by the necked area, which is a different true-stress quantity, and it need not coincide with yield stress.<p>Source note: Point 81 is made precise by identifying engineering tensile stress and original area.</p><p>Capsule 4th ed., p. 18; topic 4 point 81.</p>",
+          "explanation": "Engineering ultimate tensile strength is the maximum recorded force divided by the original cross-sectional area: \\[\\dfrac{60{,}000}{200} = 300\\ \\text{MPa}\\] It is not the fracture load divided by the necked area, which is a different true-stress quantity, and it need not coincide with yield stress.<p>Source note: Point 81 is made precise by identifying engineering tensile stress and original area.</p><p>Capsule 4th ed., p. 18; topic 4 point 81.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1756,7 +1756,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Axial stress is P/A = 80000/800 = 100 MPa, and the principal stresses are 100, 0 and 0 MPa. The maximum shear magnitude is (100 - 0)/2 = 50 MPa. It acts on planes halfway between the principal orientations, at 45 degrees; principal planes themselves have zero shear.<p>Source note: Points 100 and 114 duplicate the uniaxial maximum-shear rule.</p><p>Capsule 4th ed., pp. 18, 19; topic 4 point 100; topic 4 point 114.</p>",
+          "explanation": "Axial stress is \\[\\sigma = \\dfrac{80{,}000}{800} = 100\\ \\text{MPa}\\] and the principal stresses are 100, 0 and 0 MPa. The maximum shear magnitude is \\[\\tau_{\\max} = \\dfrac{100 - 0}{2} = 50\\ \\text{MPa}\\] It acts on planes halfway between the principal orientations, at \\(45^\\circ\\); principal planes themselves have zero shear.<p>Source note: Points 100 and 114 duplicate the uniaxial maximum-shear rule.</p><p>Capsule 4th ed., pp. 18, 19; topic 4 point 100; topic 4 point 114.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1796,7 +1796,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "For a solid circle, J = pi D^4/32 and tau = Tr/J grows linearly with radius. At r = D/2, tau_max = 16T/(pi D^3) = 16 x 2 x 10^6/(pi x 100^3) = 10.19 MPa. The axis has zero torsional shear, not the maximum.<p>Capsule 4th ed., p. 19; topic 4 point 107.</p>",
+          "explanation": "For a solid circle, \\(J = \\dfrac{\\pi D^4}{32}\\) and \\(\\tau = \\dfrac{Tr}{J}\\) grows linearly with radius. At \\(r = \\dfrac{D}{2}\\), \\[\\begin{aligned} \\tau_{\\max} &amp;= \\dfrac{16T}{\\pi D^3} \\\\ &amp;= \\dfrac{16 \\times 2 \\times 10^6}{\\pi \\times 100^3} \\\\ &amp;= 10.19\\ \\text{MPa} \\end{aligned}\\] The axis has zero torsional shear, not the maximum.<p>Capsule 4th ed., p. 19; topic 4 point 107.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1834,7 +1834,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The bulk-modulus relation is E = 3K(1 - 2nu). Rearranging gives nu = (3K - E)/(6K), so nu = (300 - 150)/600 = 0.25. The expression involving 2K and a plus one in the source is incorrect; E = 2G(1 + nu) instead involves shear modulus G.<p>Source note: Page 23 point 143 has a false bulk-modulus formula, with the numerator E also split across extraction boundaries. Corrected independently from isotropic elasticity.</p><p>Capsule 4th ed., p. 23; topic 5 point 143.</p>",
+          "explanation": "The bulk-modulus relation is \\(E = 3K(1 - 2\\nu)\\). Rearranging, \\[\\begin{aligned} \\nu &amp;= \\dfrac{3K - E}{6K} = \\dfrac{300 - 150}{600} \\\\ &amp;= 0.25 \\end{aligned}\\] The expression involving \\(2K\\) and a plus one in the source is incorrect; \\(E = 2G(1 + \\nu)\\) instead involves the shear modulus \\(G\\).<p>Source note: Page 23 point 143 has a false bulk-modulus formula, with the numerator E also split across extraction boundaries. Corrected independently from isotropic elasticity.</p><p>Capsule 4th ed., p. 23; topic 5 point 143.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1917,7 +1917,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Longitudinal bending-stress magnitude is |My|/I and vanishes at the centroidal neutral axis y = 0. For a solid rectangle the transverse shear distribution is parabolic and peaks there. This maximum-shear statement is section-dependent, not a consequence of simply supported end conditions.<p>Source note: Point 3 needs a cross-section assumption and nonzero shear; pure bending has no transverse shear.</p><p>Capsule 4th ed., p. 15; topic 4 point 3.</p>",
+          "explanation": "Longitudinal bending-stress magnitude is \\[\\lvert\\sigma\\rvert = \\dfrac{\\lvert My \\rvert}{I}\\] and vanishes at the centroidal neutral axis \\(y = 0\\). For a solid rectangle the transverse shear distribution is parabolic and peaks there. This maximum-shear statement is section-dependent, not a consequence of simply supported end conditions.<p>Source note: Point 3 needs a cross-section assumption and nonzero shear; pure bending has no transverse shear.</p><p>Capsule 4th ed., p. 15; topic 4 point 3.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1955,7 +1955,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "For a central point load, delta = PL^3/(48EI). Substitution gives 12 x 4^3/(48 x 8000) = 0.002 m = 2.00 mm. The denominator 192 would apply to a fixed-fixed beam, not this pin-roller beam.<p>Capsule 4th ed., p. 15; topic 4 point 7.</p>",
+          "explanation": "For a central point load, \\[\\begin{aligned} \\delta &amp;= \\dfrac{PL^3}{48EI} = \\dfrac{12 \\times 4^3}{48 \\times 8000} \\\\ &amp;= 0.002\\ \\text{m} = 2.00\\ \\text{mm} \\end{aligned}\\] The denominator 192 would apply to a fixed-fixed beam, not this pin-roller beam.<p>Capsule 4th ed., p. 15; topic 4 point 7.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1993,7 +1993,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Area is 100 x 200 = 20000 mm^2, so average shear is 40000/20000 = 2 MPa. The parabolic rectangular-section distribution has peak 1.5 times its average, giving 3 MPa at the neutral axis.<p>Capsule 4th ed., p. 15; topic 4 point 20.</p>",
+          "explanation": "The 100 mm by 200 mm section has area 20,000 mm<sup>2</sup>, so the average shear is \\[\\tau_{\\text{avg}} = \\dfrac{40{,}000}{20{,}000} = 2\\ \\text{MPa}\\] The parabolic distribution for a rectangle peaks at 1.5 times the average: \\[\\tau_{\\max} = 1.5 \\times 2 = 3\\ \\text{MPa}\\] at the neutral axis.<p>Capsule 4th ed., p. 15; topic 4 point 20.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2031,7 +2031,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Elastic section modulus is Z = I/c, where c is the distance from the neutral axis to the extreme fibre on the side being checked; asymmetric sections can have different values on opposite sides. Length^4 divided by length gives length^3. Young's modulus is stress divided by dimensionless strain, so it has stress units.<p>Capsule 4th ed., p. 15; topic 4 point 22.</p>",
+          "explanation": "Elastic section modulus is \\[Z = \\dfrac{I}{c}\\] where \\(c\\) is the distance from the neutral axis to the extreme fibre on the side being checked; asymmetric sections can have different values on opposite sides. Since \\(L^4 \\div L = L^3\\), \\(Z\\) is in mm<sup>3</sup>. Young's modulus is stress divided by dimensionless strain, so it has stress units, N per mm<sup>2</sup>.<p>Capsule 4th ed., p. 15; topic 4 point 22.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2069,7 +2069,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "For sagging-positive M and y measured upward, plane sections give epsilon_x = -y/R and tensile-positive sigma_x = E epsilon_x = -My/I. Stress therefore varies linearly, with compression above and tension below the neutral axis. Fully plastic stress blocks require yielding and are not this elastic distribution.<p>Source note: Point 23 requires linear elasticity; pure bending alone does not exclude plasticity.</p><p>Capsule 4th ed., p. 15; topic 4 point 23.</p>",
+          "explanation": "For sagging-positive \\(M\\) and \\(y\\) measured upward, plane sections give \\[\\varepsilon_x = -\\dfrac{y}{R}\\] \\[\\sigma_x = E\\varepsilon_x = -\\dfrac{My}{I}\\] Stress therefore varies linearly, with compression above and tension below the neutral axis. Fully plastic stress blocks require yielding and are not this elastic distribution.<p>Source note: Point 23 requires linear elasticity; pure bending alone does not exclude plasticity.</p><p>Capsule 4th ed., p. 15; topic 4 point 23.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2107,7 +2107,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The lowest fixed-fixed buckling mode has an equivalent pin-ended length L/2. Substitution in Pcr = pi^2 EI/Le^2 gives 4pi^2 EI/L^2. Actual frame restraint and sway may produce a different effective-length factor.<p>Source note: Restores L/2 from the damaged L2 extraction.</p><p>Capsule 4th ed., pp. 16, 18; topic 4 point 26; topic 4 point 82.</p>",
+          "explanation": "The lowest fixed-fixed buckling mode has an equivalent pin-ended length \\(\\dfrac{L}{2}\\). Substitution gives \\[P_{cr} = \\dfrac{\\pi^2 EI}{L_e^2} = \\dfrac{4\\pi^2 EI}{L^2}\\] Actual frame restraint and sway may produce a different effective-length factor.<p>Source note: Restores L/2 from the damaged L2 extraction.</p><p>Capsule 4th ed., pp. 16, 18; topic 4 point 26; topic 4 point 82.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2147,7 +2147,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "For the point load, delta_A = WL^3/(48EI); for total uniform load W, delta_B = 5WL^3/(384EI). Cancelling the shared factors gives 384/(48 x 5) = 8/5. Equal total force does not mean equal deflection.<p>Capsule 4th ed., p. 16; topic 4 point 27.</p>",
+          "explanation": "For the point load and for the same total load spread uniformly, \\[\\delta_A = \\dfrac{WL^3}{48EI}\\] \\[\\delta_B = \\dfrac{5WL^3}{384EI}\\] Cancelling the shared factors gives \\[\\dfrac{\\delta_A}{\\delta_B} = \\dfrac{384}{48 \\times 5} = \\dfrac{8}{5}\\] Equal total force does not mean equal deflection.<p>Capsule 4th ed., p. 16; topic 4 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2185,7 +2185,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For bending about the horizontal centroidal axis, I = bd^3/12. Doubling width doubles I, and delta = PL^3/(48EI) is inversely proportional to I. The factor one-eighth would follow from doubling depth, not width.<p>Capsule 4th ed., p. 16; topic 4 point 28.</p>",
+          "explanation": "For bending about the horizontal centroidal axis, \\(I = \\dfrac{bd^3}{12}\\). Doubling width doubles \\(I\\), and \\[\\delta = \\dfrac{PL^3}{48EI}\\] is inversely proportional to \\(I\\), so the deflection halves. The factor one-eighth would follow from doubling depth, not width.<p>Capsule 4th ed., p. 16; topic 4 point 28.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2223,7 +2223,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "A cantilever with a tip force has delta = PL^3/(3EI). Thus delta = 9 x 27/(3 x 9000) = 0.009 m = 9 mm downward. The simple-beam central-load denominator 48 does not apply to this support arrangement.<p>Capsule 4th ed., p. 16; topic 4 point 29.</p>",
+          "explanation": "A cantilever with a tip force has \\[\\begin{aligned} \\delta &amp;= \\dfrac{PL^3}{3EI} = \\dfrac{9 \\times 27}{3 \\times 9000} \\\\ &amp;= 0.009\\ \\text{m} = 9\\ \\text{mm} \\end{aligned}\\] downward. The simple-beam central-load denominator 48 does not apply to this support arrangement.<p>Capsule 4th ed., p. 16; topic 4 point 29.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2261,7 +2261,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "W is total load, so w = W/L = 6 kN/m. For fixed ends, delta = wL^4/(384EI) = WL^3/(384EI) = 0.0005 m. The factor 5 belongs to a simply supported beam under uniform load.<p>Capsule 4th ed., p. 16; topic 4 point 30.</p>",
+          "explanation": "\\(W\\) is total load, so \\(w = \\dfrac{W}{L} = 6\\) kN per m. For fixed ends, \\[\\delta = \\dfrac{wL^4}{384EI} = \\dfrac{WL^3}{384EI}\\] which gives \\[\\begin{aligned} \\delta &amp;= \\dfrac{24 \\times 4^3}{384 \\times 8000} \\\\ &amp;= 0.0005\\ \\text{m} = 0.50\\ \\text{mm} \\end{aligned}\\] The factor 5 belongs to a simply supported beam under uniform load.<p>Capsule 4th ed., p. 16; topic 4 point 30.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2299,7 +2299,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "A fixed-free column has effective-length factor K = 2. Since Pcr varies as 1/(KL)^2, its Euler load is one-quarter of pi^2 EI/L^2. This assumes a conservative axial force and the specified ideal restraints.<p>Capsule 4th ed., p. 16; topic 4 point 32.</p>",
+          "explanation": "A fixed-free column has effective-length factor \\(K = 2\\). Since \\[P_{cr} = \\dfrac{\\pi^2 EI}{(KL)^2}\\] its Euler load is one-quarter of \\(\\dfrac{\\pi^2 EI}{L^2}\\). This assumes a conservative axial force and the specified ideal restraints.<p>Capsule 4th ed., p. 16; topic 4 point 32.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2375,7 +2375,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "For immovable fixed ends, delta = PL^3/(192EI) = 12 x 64/(192 x 8000) = 0.0005 m = 0.50 mm. Fixing both rotations reduces this central-point-load deflection to one-quarter of the corresponding simply supported value.<p>Capsule 4th ed., p. 17; topic 4 point 57.</p>",
+          "explanation": "For immovable fixed ends, \\[\\begin{aligned} \\delta &amp;= \\dfrac{PL^3}{192EI} = \\dfrac{12 \\times 64}{192 \\times 8000} \\\\ &amp;= 0.0005\\ \\text{m} = 0.50\\ \\text{mm} \\end{aligned}\\] Fixing both rotations reduces this central-point-load deflection to one-quarter of the corresponding simply supported value.<p>Capsule 4th ed., p. 17; topic 4 point 57.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2413,7 +2413,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The flexure relation M/I = sigma/y gives sigma = My/I. Convert 40 kN m to 40 x 10^6 N mm, then sigma = (40 x 10^6)(100)/(80 x 10^6) = 50 N/mm^2. Fibre side and moment sign determine whether it is tension or compression.<p>Capsule 4th ed., p. 17; topic 4 point 65.</p>",
+          "explanation": "The flexure relation \\(\\dfrac{M}{I} = \\dfrac{\\sigma}{y}\\) gives \\(\\sigma = \\dfrac{My}{I}\\). Convert 40 kN m to \\(40 \\times 10^6\\) N mm; then \\[\\begin{aligned} \\sigma &amp;= \\dfrac{40 \\times 10^6 \\times 100}{80 \\times 10^6} \\\\ &amp;= 50\\ \\text{N/mm}^2 \\end{aligned}\\] Fibre side and moment sign determine whether it is tension or compression.<p>Capsule 4th ed., p. 17; topic 4 point 65.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2451,7 +2451,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The other part of the flexure relation is M/I = E/R, so curvature 1/R = M/(EI) = 50/10000 = 0.005 per metre. Its reciprocal gives R = 200 m. Curvature and radius are reciprocal quantities, not interchangeable numerical answers.<p>Capsule 4th ed., p. 17; topic 4 point 65.</p>",
+          "explanation": "The other part of the flexure relation is \\(\\dfrac{M}{I} = \\dfrac{E}{R}\\), so the curvature is \\[\\begin{aligned} \\dfrac{1}{R} &amp;= \\dfrac{M}{EI} = \\dfrac{50}{10{,}000} \\\\ &amp;= 0.005\\ \\text{m}^{-1} \\end{aligned}\\] Its reciprocal gives \\(R = 200\\) m. Curvature and radius are reciprocal quantities, not interchangeable numerical answers.<p>Capsule 4th ed., p. 17; topic 4 point 65.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2489,7 +2489,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The fixed-pinned eigenvalue gives Pcr = alpha^2 EI/L^2. Dividing by pi^2 EI/L^2 yields (4.49341/pi)^2 = 2.046, and K = pi/alpha = 0.699. The commonly quoted 2pi^2 EI/L^2 corresponds to the approximate K = 1/sqrt(2), not the exact eigenvalue.<p>Source note: Point 72 states the conventional approximation as an equality; this question distinguishes exact from approximate ideal-column results.</p><p>Capsule 4th ed., p. 17; topic 4 point 72.</p>",
+          "explanation": "The fixed-pinned eigenvalue gives \\(P_{cr} = \\dfrac{\\alpha^2 EI}{L^2}\\). Dividing by \\(\\dfrac{\\pi^2 EI}{L^2}\\) yields \\[\\left(\\dfrac{4.49341}{\\pi}\\right)^2 = 2.046\\] and \\(K = \\dfrac{\\pi}{\\alpha} = 0.699\\). The commonly quoted \\(\\dfrac{2\\pi^2 EI}{L^2}\\) corresponds to the approximate \\(K = \\dfrac{1}{\\sqrt{2}}\\), not the exact eigenvalue.<p>Source note: Point 72 states the conventional approximation as an equality; this question distinguishes exact from approximate ideal-column results.</p><p>Capsule 4th ed., p. 17; topic 4 point 72.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2527,7 +2527,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Both hinges give effective length L, so Pcr = pi^2 EI/L^2 = pi^2 x 2000/25 = 789.6 kN. The fixed-free value would be one-quarter as large and the fixed-fixed value four times as large. Euler assumes a slender elastic column with ideal loading and restraints.<p>Capsule 4th ed., p. 19; topic 4 point 120.</p>",
+          "explanation": "Both hinges give effective length \\(L\\), so \\[\\begin{aligned} P_{cr} &amp;= \\dfrac{\\pi^2 EI}{L^2} = \\dfrac{\\pi^2 \\times 2000}{25} \\\\ &amp;= 789.6\\ \\text{kN} \\end{aligned}\\] The fixed-free value would be one-quarter as large and the fixed-fixed value four times as large. Euler assumes a slender elastic column with ideal loading and restraints.<p>Capsule 4th ed., p. 19; topic 4 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2565,7 +2565,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Because W is total force, w = W/L = 6 kN/m. The simple-beam UDL result is delta_max = 5wL^4/(384EI) = 5WL^3/(384EI). Substitution gives 5 x 24 x 64/(384 x 8000) = 0.0025 m = 2.50 mm at midspan; 0.50 mm is the fixed-fixed result.<p>Capsule 4th ed., p. 19; topic 4 point 122.</p>",
+          "explanation": "Because \\(W\\) is total force, \\(w = \\dfrac{W}{L} = 6\\) kN per m. The simple-beam UDL result is \\[\\delta_{\\max} = \\dfrac{5wL^4}{384EI} = \\dfrac{5WL^3}{384EI}\\] Substitution gives \\[\\begin{aligned} \\delta_{\\max} &amp;= \\dfrac{5 \\times 24 \\times 64}{384 \\times 8000} \\\\ &amp;= 0.0025\\ \\text{m} = 2.50\\ \\text{mm} \\end{aligned}\\] at midspan; 0.50 mm is the fixed-fixed result.<p>Capsule 4th ed., p. 19; topic 4 point 122.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2679,7 +2679,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The axis ratios are 3000/50 = 60 and 3000/30 = 100, so the larger value 100 governs this geometric comparison. Each axis generally requires its own effective length; using the smaller radius blindly is valid here because the effective lengths are equal.<p>Capsule 4th ed., p. 22; topic 5 point 117.</p>",
+          "explanation": "The axis ratios are \\[\\dfrac{3000}{50} = 60, \\qquad \\dfrac{3000}{30} = 100\\] so the larger value, 100, governs this geometric comparison. Each axis generally requires its own effective length; using the smaller radius blindly is valid here because the effective lengths are equal.<p>Capsule 4th ed., p. 22; topic 5 point 117.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2762,7 +2762,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The final central deflection is PL^3/(48EI) = 0.002 m. For a linear system under gradual loading, U = P delta/2 = 0.012 kN m = 12 J. Equivalently U = P^2 L^3/(96EI); the load must be squared.<p>Capsule 4th ed., p. 16; topic 4 point 31.</p>",
+          "explanation": "The final central deflection is \\[\\delta = \\dfrac{PL^3}{48EI} = 0.002\\ \\text{m}\\] For a linear system under gradual loading, \\[\\begin{aligned} U &amp;= \\dfrac{P\\delta}{2} = \\dfrac{12 \\times 0.002}{2} \\\\ &amp;= 0.012\\ \\text{kN m} = 12\\ \\text{J} \\end{aligned}\\] Equivalently \\(U = \\dfrac{P^2 L^3}{96EI}\\); the load must be squared.<p>Capsule 4th ed., p. 16; topic 4 point 31.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2838,7 +2838,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Limiting energy density is sigma_e^2/(2E) = 200^2/(2 x 200000) = 0.10 N/mm^2. Multiplying by 100000 mm^3 gives 10000 N mm = 10 J. The value 0.10 is energy per volume, not the whole bar's stored energy.<p>Capsule 4th ed., p. 17; topic 4 point 59.</p>",
+          "explanation": "The limiting energy density is \\[\\begin{aligned} u &amp;= \\dfrac{\\sigma_e^2}{2E} = \\dfrac{200^2}{2 \\times 200{,}000} \\\\ &amp;= 0.10\\ \\text{N/mm}^2 \\end{aligned}\\] Multiplying by the volume \\(100{,}000\\ \\text{mm}^3\\) gives \\(10{,}000\\) N mm, or 10 J. The value 0.10 is energy per volume, not the whole bar's stored energy.<p>Capsule 4th ed., p. 17; topic 4 point 59.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2876,7 +2876,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The three independent connectors restrain two relative translations and one relative rotation. Therefore m = m1 + m2 + 3 = 7 + 9 + 3 = 19. This count assumes the stated disjoint construction and independent geometry, not arbitrary joining of two trusses.<p>Capsule 4th ed., p. 17; topic 4 point 67.</p>",
+          "explanation": "The three independent connectors restrain two relative translations and one relative rotation. Therefore \\[\\begin{aligned} m &amp;= m_1 + m_2 + 3 \\\\ &amp;= 7 + 9 + 3 = 19 \\end{aligned}\\] This count assumes the stated disjoint construction and independent geometry, not arbitrary joining of two trusses.<p>Capsule 4th ed., p. 17; topic 4 point 67.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2990,7 +2990,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "For the stated conservative linear-elastic system, delta = dU/dP = 0.004P m. At P = 5 kN this gives 0.020 m = 20 mm. Dividing U by P would miss the factor two. In nonlinear elasticity, load derivatives generally require complementary energy instead.<p>Source note: Point 102&#39;s first-theorem numbering varies across texts. The question identifies the actual derivative and assumptions, following chapter-04-determinate.js, castigliano-energy-derivative-formulas.</p><p>Capsule 4th ed., p. 18; topic 4 point 102.</p>",
+          "explanation": "For the stated conservative linear-elastic system, \\[\\delta = \\dfrac{dU}{dP} = 0.004P\\ \\text{m}\\] At \\(P = 5\\) kN this gives 0.020 m, or 20 mm. Dividing \\(U\\) by \\(P\\) would miss the factor two. In nonlinear elasticity, load derivatives generally require complementary energy instead.<p>Source note: Point 102&#39;s first-theorem numbering varies across texts. The question identifies the actual derivative and assumptions, following chapter-04-determinate.js, castigliano-energy-derivative-formulas.</p><p>Capsule 4th ed., p. 18; topic 4 point 102.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3028,7 +3028,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Each ideal plane-truss joint has two translations and no rotational coordinate in the axial-only model. Thus the free displacement count is 2j - r = 14 - 3 = 11. The shortcut 2j - 3 assumes exactly three independent support restraints; other support arrangements change it.<p>Source note: Point 104&#39;s 2j - 3 is not universal; independent support restraints and the truss idealization are explicit.</p><p>Capsule 4th ed., p. 18; topic 4 point 104.</p>",
+          "explanation": "Each ideal plane-truss joint has two translations and no rotational coordinate in the axial-only model. Thus the free displacement count is \\[2j - r = 14 - 3 = 11\\] The shortcut \\(2j - 3\\) assumes exactly three independent support restraints; other support arrangements change it.<p>Source note: Point 104&#39;s 2j - 3 is not universal; independent support restraints and the truss idealization are explicit.</p><p>Capsule 4th ed., p. 18; topic 4 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3066,7 +3066,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "For this model the counting difference is Dc = 3m + r - 3j. Zero is a necessary count for an ordinary stable determinate frame, but dependent constraints can allow a mechanism and a self-stress state to coexist. The equilibrium matrix must have the required rank; counting alone cannot prove stability.<p>Source note: Corrects point 113&#39;s implication that the equality alone proves both stability and determinacy; no internal releases are assumed.</p><p>Capsule 4th ed., p. 19; topic 4 point 113.</p>",
+          "explanation": "For this model the counting difference is \\[D_c = 3m + r - 3j\\] Zero is a necessary count for an ordinary stable determinate frame, but dependent constraints can allow a mechanism and a self-stress state to coexist. The equilibrium matrix must have the required rank; counting alone cannot prove stability.<p>Source note: Corrects point 113&#39;s implication that the equality alone proves both stability and determinacy; no internal releases are assumed.</p><p>Capsule 4th ed., p. 19; topic 4 point 113.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3104,7 +3104,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Static displacement is W/k = 0.02 m. At the first peak, W delta = k delta^2/2 gives delta = 2W/k = 0.04 m. Thus Umax = k delta^2/2 = 0.08 kN m = 80 J, four times the gradual-load energy of 20 J. Damping, finite rise time or yielding changes this ideal factor.<p>Source note: Point 118&#39;s factor four refers to the peak in an undamped linear zero-drop sudden-load model, not the final settled energy in every structure.</p><p>Capsule 4th ed., p. 19; topic 4 point 118.</p>",
+          "explanation": "The static displacement is \\(\\dfrac{W}{k} = 0.02\\) m. At the first peak, \\[W\\delta = \\dfrac{k\\delta^2}{2}\\] \\[\\delta = \\dfrac{2W}{k} = 0.04\\ \\text{m}\\] Thus \\[\\begin{aligned} U_{\\max} &amp;= \\dfrac{k\\delta^2}{2} = 0.08\\ \\text{kN m} \\\\ &amp;= 80\\ \\text{J} \\end{aligned}\\] four times the gradual-load energy of 20 J. Damping, finite rise time or yielding changes this ideal factor.<p>Source note: Point 118&#39;s factor four refers to the peak in an undamped linear zero-drop sudden-load model, not the final settled energy in every structure.</p><p>Capsule 4th ed., p. 19; topic 4 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3180,7 +3180,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Elastic energy density is stress squared/(2E) = 250 squared/(2 x 200000) = 0.15625 N/mm<sup>2</sup>. Multiplying by volume gives 156250 N mm = 156.25 J. Proof resilience is energy; energy per volume is modulus of resilience, and neither is a load.<p>Source note: Page 23 point 126 incorrectly defines proof resilience as maximum load. The corrected quantity and its distinction from modulus of resilience are explicit.</p><p>Capsule 4th ed., p. 23; topic 5 point 126.</p>",
+          "explanation": "The elastic energy density is \\[\\begin{aligned} u &amp;= \\dfrac{\\sigma^2}{2E} = \\dfrac{250^2}{2 \\times 200{,}000} \\\\ &amp;= 0.15625\\ \\text{N/mm}^2 \\end{aligned}\\] Multiplying by the volume, \\(1.00 \\times 10^6\\ \\text{mm}^3\\), gives 156,250 N mm, or 156.25 J. Proof resilience is energy; energy per volume is the modulus of resilience, and neither is a load.<p>Source note: Page 23 point 126 incorrectly defines proof resilience as maximum load. The corrected quantity and its distinction from modulus of resilience are explicit.</p><p>Capsule 4th ed., p. 23; topic 5 point 126.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3263,7 +3263,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Taking moments of each half about the crown gives V_A(L/2) = Hh1 and V_B(L/2) = Hh2. Adding V_A + V_B = W yields 2H(h1+h2)/L = W, so H = WL/[2(h1+h2)]. Squaring a height sum in this denominator would give incorrect force-per-length units.<p>Source note: Page 16 point 33 denominator cannot be reliably decoded from text. This is an independent equilibrium reconstruction with explicitly defined crown rises, not a claim to have verified the printed typography.</p><p>Capsule 4th ed., p. 16; topic 4 point 33.</p>",
+          "explanation": "Taking moments of each half about the crown gives \\[V_A\\dfrac{L}{2} = Hh_1\\] \\[V_B\\dfrac{L}{2} = Hh_2\\] Adding, with \\(V_A + V_B = W\\), yields \\[\\dfrac{2H(h_1 + h_2)}{L} = W\\] \\[H = \\dfrac{WL}{2(h_1 + h_2)}\\] Squaring a height sum in this denominator would give incorrect force-per-length units.<p>Source note: Page 16 point 33 denominator cannot be reliably decoded from text. This is an independent equilibrium reconstruction with explicitly defined crown rises, not a claim to have verified the printed typography.</p><p>Capsule 4th ed., p. 16; topic 4 point 33.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3379,7 +3379,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Place P at the section s on the left half. Crown equilibrium gives H = Ps/(2h), so M = Ps(L-s)(L-2s)/L^2. With t = s/L, maximizing t - 3t^2 + 2t^3 gives 1 - 6t + 6t^2 = 0. Hence s = L/2 - L/(2sqrt(3)); reflection gives the other peak. This is an envelope result, not a rule for any fixed point load.<p>Source note: Point 36 omits the rolling point-load and parabolic-arch conditions needed for the L/(2sqrt(3)) result.</p><p>Capsule 4th ed., p. 16; topic 4 point 36.</p>",
+          "explanation": "Place \\(P\\) at section \\(s\\) on the left half. Crown equilibrium gives \\(H = \\dfrac{Ps}{2h}\\), so \\[M = \\dfrac{Ps(L - s)(L - 2s)}{L^2}\\] With \\(t = \\dfrac{s}{L}\\), maximizing \\(t - 3t^2 + 2t^3\\) gives \\[1 - 6t + 6t^2 = 0\\] Hence \\[s = \\dfrac{L}{2} - \\dfrac{L}{2\\sqrt{3}}\\] and reflection gives the other peak. This is an envelope result, not a rule for any fixed point load.<p>Source note: Point 36 omits the rolling point-load and parabolic-arch conditions needed for the L/(2sqrt(3)) result.</p><p>Capsule 4th ed., p. 16; topic 4 point 36.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3455,7 +3455,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The arch moment is M = M0 - Hy = H(y_thrust - y). It vanishes when the thrust line passes through the section's axis. Mere parallelism leaves a moment arm. The straight chord joining the hinges is not generally the curved rib axis.<p>Source note: Corrects point 53&#39;s ambiguous hinge-axis wording; points 39 and 53 duplicate the coincident-thrust-line condition.</p><p>Capsule 4th ed., pp. 16, 17; topic 4 point 39; topic 4 point 53.</p>",
+          "explanation": "The arch moment is \\[M = M_0 - Hy = H(y_t - y)\\] where \\(y_t = \\dfrac{M_0}{H}\\) is the thrust-line ordinate. It vanishes when the thrust line passes through the section's axis. Mere parallelism leaves a moment arm. The straight chord joining the hinges is not generally the curved rib axis.<p>Source note: Corrects point 53&#39;s ambiguous hinge-axis wording; points 39 and 53 duplicate the coincident-thrust-line condition.</p><p>Capsule 4th ed., pp. 16, 17; topic 4 point 39; topic 4 point 53.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3495,7 +3495,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "For the full horizontal UDL, compatibility gives H = 4wR/(3pi). Symmetry and superposition make one-half loading give half this thrust: H = 2wR/(3pi) = 36/(3pi) = 3.82 kN. UDL per metre of curved rib and finite axial flexibility are different models.<p>Source note: Point 44 requires constant EI, fixed span and neglect of axial/shear deformation; see chapter-04-determinate.js, two-hinged-compatibility-and-semicircle-thrust.</p><p>Capsule 4th ed., p. 16; topic 4 point 44.</p>",
+          "explanation": "For the full horizontal UDL, compatibility gives \\(H = \\dfrac{4wR}{3\\pi}\\). Symmetry and superposition make one-half loading give half this thrust: \\[H = \\dfrac{2wR}{3\\pi} = \\dfrac{36}{3\\pi} = 3.82\\ \\text{kN}\\] A UDL per metre of curved rib and finite axial flexibility are different models.<p>Source note: Point 44 requires constant EI, fixed span and neglect of axial/shear deformation; see chapter-04-determinate.js, two-hinged-compatibility-and-semicircle-thrust.</p><p>Capsule 4th ed., p. 16; topic 4 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3533,7 +3533,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The compatibility numerator for crown loading is PR^3/2 and the denominator is pi R^3/2, so H = P/pi. Radius cancels, giving equal thrusts. This independence does not extend to arbitrary nonuniform stiffness, axial shortening, temperature change or support movement.<p>Capsule 4th ed., p. 16; topic 4 point 45.</p>",
+          "explanation": "The compatibility numerator for crown loading is \\(\\dfrac{PR^3}{2}\\) and the denominator is \\(\\dfrac{\\pi R^3}{2}\\), so \\[H = \\dfrac{P}{\\pi}\\] Radius cancels, giving equal thrusts, 1 : 1 : 1. This independence does not extend to arbitrary nonuniform stiffness, axial shortening, temperature change or support movement.<p>Capsule 4th ed., p. 16; topic 4 point 45.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3571,7 +3571,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The crown simple-beam moment ILD is triangular with peak L/4. Since H = M0(crown)/h, divide every ordinate by h. The peak is L/(4h) = 24/24 = 1.00 at midspan. This reaction-per-load ordinate is dimensionless, not a length or a moment.<p>Source note: Restores L/(4h) from the damaged 4Lh extraction in point 50; crown hinge position is stated.</p><p>Capsule 4th ed., p. 17; topic 4 point 50.</p>",
+          "explanation": "The crown simple-beam moment ILD is triangular with peak \\(\\dfrac{L}{4}\\). Since \\(H = \\dfrac{M_0}{h}\\) at the crown, divide every ordinate by \\(h\\): \\[\\dfrac{L}{4h} = \\dfrac{24}{24} = 1.00\\] at midspan. This reaction-per-load ordinate is dimensionless, not a length or a moment.<p>Source note: Restores L/(4h) from the damaged 4Lh extraction in point 50; crown hinge position is stated.</p><p>Capsule 4th ed., p. 17; topic 4 point 50.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3761,7 +3761,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For level springings, the horizontal reactions create no net moment about either springing. Taking moments about A gives VB x 18 = 90 x 6, so VB = 30 kN and VA = 90 - 30 = 60 kN. With span 2l and distance a from A, VB = Wa/(2l), not necessarily the left reaction.<p>Source note: Point 88&#39;s W2la is damaged and does not identify the support or distance origin; both are explicit here.</p><p>Capsule 4th ed., p. 18; topic 4 point 88.</p>",
+          "explanation": "For level springings, the horizontal reactions create no net moment about either springing. Taking moments about A gives \\[V_B \\times 18 = 90 \\times 6\\] so \\(V_B = 30\\) kN and \\(V_A = 90 - 30 = 60\\) kN. With span \\(2l\\) and distance \\(a\\) from A, \\(V_B = \\dfrac{Wa}{2l}\\), not necessarily the left reaction.<p>Source note: Point 88&#39;s W2la is damaged and does not identify the support or distance origin; both are explicit here.</p><p>Capsule 4th ed., p. 18; topic 4 point 88.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3799,7 +3799,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The corresponding simple-beam crown moment is wL^2/8 = 4 x 400/8 = 200 kN m. Zero moment at the crown hinge requires Hh = 200, hence H = 40 kN. Each support pushes inward on the arch; the arch pushes outward on its supports.<p>Capsule 4th ed., p. 18; topic 4 point 94.</p>",
+          "explanation": "The corresponding simple-beam crown moment is \\[\\begin{aligned} M_0 &amp;= \\dfrac{wL^2}{8} = \\dfrac{4 \\times 400}{8} \\\\ &amp;= 200\\ \\text{kN m} \\end{aligned}\\] Zero moment at the crown hinge requires \\(Hh = 200\\), hence \\[H = \\dfrac{200}{5} = 40\\ \\text{kN}\\] Each support pushes inward on the arch; the arch pushes outward on its supports.<p>Capsule 4th ed., p. 18; topic 4 point 94.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3837,7 +3837,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "For this funicular loading, H = wL^2/(8h) and V = H tan(theta). Therefore radial shear Q = V cos(theta) - H sin(theta) is zero everywhere. The global vertical component V is generally nonzero; confusing V with local radial shear causes the springing shortcut.<p>Source note: Corrects point 96&#39;s unsupported universal springing-maximum statement; other loading patterns require evaluation of Q along the actual arch.</p><p>Capsule 4th ed., p. 18; topic 4 point 96.</p>",
+          "explanation": "For this funicular loading, \\[H = \\dfrac{wL^2}{8h}, \\qquad V = H\\tan\\theta\\] Therefore the radial shear \\[Q = V\\cos\\theta - H\\sin\\theta = 0\\] everywhere. The global vertical component \\(V\\) is generally nonzero; confusing \\(V\\) with the local radial shear causes the springing shortcut.<p>Source note: Corrects point 96&#39;s unsupported universal springing-maximum statement; other loading patterns require evaluation of Q along the actual arch.</p><p>Capsule 4th ed., p. 18; topic 4 point 96.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3875,7 +3875,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "With A at x = 0, B at x = 2R and load P at x = a, VA = P(2R-a)/(2R) and H = Pa(2R-a)/(pi R^2). The reaction lines meet on x = a at height aVA/H = pi R/2, independent of a. This spatial locus is not the different plot of reaction-vector endpoints in force space.<p>Source note: Point 110 lacks a locus definition and stiffness assumptions; these follow chapter-04-determinate.js, semicircular-reaction-locus-defined. Interior load positions are used; endpoints are limiting cases.</p><p>Capsule 4th ed., p. 19; topic 4 point 110.</p>",
+          "explanation": "With A at \\(x = 0\\), B at \\(x = 2R\\) and the load \\(P\\) at \\(x = a\\), \\[V_A = \\dfrac{P(2R - a)}{2R}\\] \\[H = \\dfrac{Pa(2R - a)}{\\pi R^2}\\] The reaction lines meet on \\(x = a\\) at height \\[\\dfrac{aV_A}{H} = \\dfrac{\\pi R}{2}\\] independent of \\(a\\). This spatial locus is not the different plot of reaction-vector endpoints in force space.<p>Source note: Point 110 lacks a locus definition and stiffness assumptions; these follow chapter-04-determinate.js, semicircular-reaction-locus-defined. Interior load positions are used; endpoints are limiting cases.</p><p>Capsule 4th ed., p. 19; topic 4 point 110.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4034,7 +4034,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The elastic section modulus is bd<sup>2</sup>/6 and the plastic modulus is bd<sup>2</sup>/4. Their ratio, and hence M<sub>p</sub>/M<sub>y</sub> for equal yield stress, is 1.5; buckling and strain-hardening effects are excluded.<p>Capsule 4th ed., p. 4; topic 1 point 76.</p>",
+          "explanation": "The elastic and plastic section moduli of a rectangle are \\[Z_e = \\dfrac{bd^2}{6}, \\qquad Z_p = \\dfrac{bd^2}{4}\\] so for equal yield stress \\[\\dfrac{M_p}{M_y} = \\dfrac{Z_p}{Z_e} = 1.5\\] Buckling and strain-hardening effects are excluded.<p>Capsule 4th ed., p. 4; topic 1 point 76.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4110,7 +4110,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Let the hinge be a from the fixed end and b = L - a from the prop. Virtual work gives w = 2Mp(2/a + 1/b)/L. Minimizing over a yields a = sqrt(2)b, hence b = (sqrt(2) - 1)L. This is a plastic mechanism, not an elastic zero-moment section.<p>Source note: Point 16 omitted full UDL, uniform Mp and the plastic-collapse interpretation.</p><p>Capsule 4th ed., p. 15; topic 4 point 16.</p>",
+          "explanation": "Let the hinge be \\(a\\) from the fixed end and \\(b = L - a\\) from the prop. Virtual work gives \\[w = \\dfrac{2M_p}{L}\\left(\\dfrac{2}{a} + \\dfrac{1}{b}\\right)\\] Minimizing over \\(a\\) yields \\(a = \\sqrt{2}\\,b\\), hence \\[b = (\\sqrt{2} - 1)L \\approx 0.414L\\] This is a plastic mechanism, not an elastic zero-moment section.<p>Source note: Point 16 omitted full UDL, uniform Mp and the plastic-collapse interpretation.</p><p>Capsule 4th ed., p. 15; topic 4 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4148,7 +4148,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Compatibility gives the prop reaction 3wL/8. At distance z from the prop, M = (3wL/8)z - wz^2/2; the interior root is z = 3L/4. Therefore the zero crossing is L/4 from the fixed end, distinct from the collapse hinge location.<p>Capsule 4th ed., p. 15; topic 4 point 16.</p>",
+          "explanation": "Compatibility gives the prop reaction \\(\\dfrac{3wL}{8}\\). At distance \\(z\\) from the prop, \\[M = \\dfrac{3wL}{8}z - \\dfrac{wz^2}{2}\\] whose interior root is \\(z = \\dfrac{3L}{4}\\). The zero crossing is therefore \\(\\dfrac{L}{4}\\) from the fixed end, distinct from the collapse hinge location.<p>Capsule 4th ed., p. 15; topic 4 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4186,7 +4186,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The primary unknowns in Kd = F are compatible nodal displacements d. Member forces are recovered from those movements and the stiffness relations. A force or flexibility method instead selects redundant forces and enforces displacement compatibility.<p>Capsule 4th ed., p. 16; topic 4 point 40.</p>",
+          "explanation": "The primary unknowns in \\[Kd = F\\] are the compatible nodal displacements \\(d\\). Member forces are recovered from those movements and the stiffness relations. A force or flexibility method instead selects redundant forces and enforces displacement compatibility.<p>Capsule 4th ed., p. 16; topic 4 point 40.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4224,7 +4224,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "With zero transverse force, the internal moment is constant. Its curvature integrates to a relative end rotation theta = ML/EI, giving rotational stiffness EI/L. Restraining B's translation as well would give 4EI/L, while a translation-fixed hinge at B gives 3EI/L.<p>Source note: Page 16 point 41 does not define the guide fully. The authored restraints explicitly match the EI/L case in chapter-04-indeterminate.js, rotational-stiffness-and-end-constraints.</p><p>Capsule 4th ed., p. 16; topic 4 point 41.</p>",
+          "explanation": "With zero transverse force, the internal moment is constant. Its curvature integrates to a relative end rotation \\[\\theta = \\dfrac{ML}{EI}\\] giving rotational stiffness \\(\\dfrac{EI}{L}\\). Restraining B's translation as well would give \\(\\dfrac{4EI}{L}\\), while a translation-fixed hinge at B gives \\(\\dfrac{3EI}{L}\\).<p>Source note: Page 16 point 41 does not define the guide fully. The authored restraints explicitly match the EI/L case in chapter-04-indeterminate.js, rotational-stiffness-and-end-constraints.</p><p>Capsule 4th ed., p. 16; topic 4 point 41.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4340,7 +4340,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Write M = M0 - Hy and U = integral(M^2 dmu)/2. Differentiating with respect to redundant H and imposing zero horizontal movement gives integral((M0 - Hy)y dmu) = 0. Thus H is the stated weighted ratio, integrated along the whole arch; it is not a separate local thrust at each point.<p>Source note: Page 17 point 46 is corrupted in both point and page extraction. Reconstructed from compatibility, not a claimed reading of the printed formula. ds is arc length.</p><p>Capsule 4th ed., p. 17; topic 4 point 46.</p>",
+          "explanation": "Write \\(M = M_0 - Hy\\) and \\[U = \\dfrac{1}{2}\\int M^2\\, d\\mu\\] Differentiating with respect to the redundant \\(H\\) and imposing zero horizontal movement gives \\[\\int (M_0 - Hy)\\,y\\, d\\mu = 0\\] so \\[H = \\dfrac{\\int M_0 y\\, d\\mu}{\\int y^2\\, d\\mu}\\] integrated along the whole arch; it is not a separate local thrust at each point.<p>Source note: Page 17 point 46 is corrupted in both point and page extraction. Reconstructed from compatibility, not a claimed reading of the printed formula. ds is arc length.</p><p>Capsule 4th ed., p. 17; topic 4 point 46.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4378,7 +4378,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "With no chord rotation, the zero far-end moment condition gives theta_B = -theta_A/2. Substituting in M_A = (2EI/L)(2theta_A + theta_B) gives M_A/theta_A = 3EI/L = 12000 kN m/rad. A fixed far end would give 4EI/L.<p>Capsule 4th ed., p. 17; topic 4 point 54.</p>",
+          "explanation": "With no chord rotation, the zero far-end moment condition gives \\(\\theta_B = -\\dfrac{\\theta_A}{2}\\). Substituting in \\[M_A = \\dfrac{2EI}{L}(2\\theta_A + \\theta_B)\\] gives \\[\\begin{aligned} \\dfrac{M_A}{\\theta_A} &amp;= \\dfrac{3EI}{L} = \\dfrac{3 \\times 16{,}000}{4} \\\\ &amp;= 12{,}000\\ \\text{kN m/rad} \\end{aligned}\\] A fixed far end would give \\(\\dfrac{4EI}{L}\\).<p>Capsule 4th ed., p. 17; topic 4 point 54.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4454,7 +4454,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Using y = 4hx(L-x)/L^2 and M0 = Px/2 on the left half, symmetry gives integral(M0 y dx) = 5PhL^2/48 and integral(y^2 dx) = 8h^2L/15. Their ratio is H = 25PL/(128h) = 50 kN. Keeping exact arc-length weighting with constant EI generally changes this coefficient.<p>Source note: Page 17 point 66 coefficient is unreadable as 2152W8hL. The question explicitly uses the shallow-arch horizontal-integration approximation; original typography remains for parent review.</p><p>Capsule 4th ed., p. 17; topic 4 point 66.</p>",
+          "explanation": "Using \\[y = \\dfrac{4hx(L - x)}{L^2}\\] and \\(M_0 = \\dfrac{Px}{2}\\) on the left half, symmetry gives \\[\\int M_0 y\\, dx = \\dfrac{5PhL^2}{48}\\] \\[\\int y^2\\, dx = \\dfrac{8h^2L}{15}\\] Their ratio is \\[\\begin{aligned} H &amp;= \\dfrac{25PL}{128h} = \\dfrac{25 \\times 32 \\times 16}{128 \\times 2} \\\\ &amp;= 50\\ \\text{kN} \\end{aligned}\\] Keeping exact arc-length weighting with constant \\(EI\\) generally changes this coefficient.<p>Source note: Page 17 point 66 coefficient is unreadable as 2152W8hL. The question explicitly uses the shallow-arch horizontal-integration approximation; original typography remains for parent review.</p><p>Capsule 4th ed., p. 17; topic 4 point 66.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4492,7 +4492,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The width at height y is b(1 - 2|y|/d). Integration gives I = bd^3/48 and Ze = I/(d/2) = bd^2/24. The plastic modulus is integral(|y| dA) = bd^2/12, so Zp/Ze = 2. This assumes the stated bending axis, equal tensile/compressive yield strength and no axial force.<p>Capsule 4th ed., p. 17; topic 4 point 70.</p>",
+          "explanation": "The width at height \\(y\\) is \\(b\\left(1 - \\dfrac{2\\lvert y\\rvert}{d}\\right)\\). Integration gives \\[I = \\dfrac{bd^3}{48}\\] \\[Z_e = \\dfrac{2I}{d} = \\dfrac{bd^2}{24}\\] The plastic modulus is \\[Z_p = \\int \\lvert y\\rvert\\, dA = \\dfrac{bd^2}{12}\\] so \\(\\dfrac{Z_p}{Z_e} = 2\\). This assumes the stated bending axis, equal tensile and compressive yield strength and no axial force.<p>Capsule 4th ed., p. 17; topic 4 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4530,7 +4530,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "A triangular load and its reflected copy sum to a full-span 8 kN/m UDL. Their thrusts are equal by symmetry and add by linearity. Each is therefore half of wL^2/(8h): H = wL^2/(16h) = 8 x 144/(16 x 3) = 24 kN. The rise h must not be confused with the thrust H.<p>Source note: Point 75&#39;s denominator 16H uses ambiguous notation; define rise separately and specify symmetry and deformation assumptions.</p><p>Capsule 4th ed., p. 18; topic 4 point 75.</p>",
+          "explanation": "A triangular load and its reflected copy sum to a full-span 8 kN per m UDL. Their thrusts are equal by symmetry and add by linearity, so each is half of \\(\\dfrac{wL^2}{8h}\\): \\[\\begin{aligned} H &amp;= \\dfrac{wL^2}{16h} = \\dfrac{8 \\times 144}{16 \\times 3} \\\\ &amp;= 24\\ \\text{kN} \\end{aligned}\\] The rise \\(h\\) must not be confused with the thrust \\(H\\).<p>Source note: Point 75&#39;s denominator 16H uses ambiguous notation; define rise separately and specify symmetry and deformation assumptions.</p><p>Capsule 4th ed., p. 18; topic 4 point 75.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4568,7 +4568,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The stiffer member's distribution factor is 6000/(6000 + 4000) = 0.60. Balancing opposes the unbalance, so its increment is -0.60 x 50 = -30 kN m; the other receives -20 kN m. The factors sum to one, and the increments sum to -50 kN m.<p>Capsule 4th ed., p. 18; topic 4 point 77.</p>",
+          "explanation": "The stiffer member's distribution factor is \\[\\dfrac{6000}{6000 + 4000} = 0.60\\] Balancing opposes the unbalance, so its increment is \\[-0.60 \\times 50 = -30\\ \\text{kN m}\\] and the other member receives −20 kN m. The factors sum to one, and the increments sum to −50 kN m.<p>Capsule 4th ed., p. 18; topic 4 point 77.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4606,7 +4606,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Uniform heating would increase the free horizontal span by alpha deltaT L. Fixed spacing requires an opposing elastic displacement. With positive horizontal flexibility fHH, the thermal thrust increment is deltaH = alpha deltaT L/fHH, directed inward. A movable springing or temperature gradient is a different case.<p>Source note: Point 97 is restricted to uniform heating, positive expansion coefficient, fixed span and a stable linear model.</p><p>Capsule 4th ed., p. 18; topic 4 point 97.</p>",
+          "explanation": "Uniform heating would increase the free horizontal span by \\(\\alpha\\,\\Delta T\\,L\\). Fixed spacing requires an opposing elastic displacement. With positive horizontal flexibility \\(f_{HH}\\), the thermal thrust increment is \\[\\Delta H = \\dfrac{\\alpha\\,\\Delta T\\,L}{f_{HH}}\\] directed inward. A movable springing or a temperature gradient is a different case.<p>Source note: Point 97 is restricted to uniform heating, positive expansion coefficient, fixed span and a stable linear model.</p><p>Capsule 4th ed., p. 18; topic 4 point 97.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4644,7 +4644,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Here y = 4hx(L-x)/L^2, M0 = wx(L-x)/2 and H = wL^2/(8h), giving M0 - Hy = 0. Also V = H tan(theta), so radial Q = V cos(theta) - H sin(theta) = 0. The resultant is tangent compression; retaining axial shortening or changing the loading can disturb this funicular state.<p>Source note: Point 116 is valid only for the specified horizontal UDL and first-order bending-only compatibility model, not an arbitrary loaded parabolic arch.</p><p>Capsule 4th ed., p. 19; topic 4 point 116.</p>",
+          "explanation": "Here \\[y = \\dfrac{4hx(L - x)}{L^2}\\] \\[M_0 = \\dfrac{wx(L - x)}{2}\\] \\[H = \\dfrac{wL^2}{8h}\\] giving \\(M_0 - Hy = 0\\). Also \\(V = H\\tan\\theta\\), so the radial shear is \\[Q = V\\cos\\theta - H\\sin\\theta = 0\\] The resultant is tangential compression; retaining axial shortening or changing the loading can disturb this funicular state.<p>Source note: Point 116 is valid only for the specified horizontal UDL and first-order bending-only compatibility model, not an arbitrary loaded parabolic arch.</p><p>Capsule 4th ed., p. 19; topic 4 point 116.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4682,7 +4682,7 @@ window.CIVIL_SET_DATA["capsule-04"] = {
             }
           ],
           "answer": "c",
-          "explanation": "A member's distribution factor equals its rotational stiffness divided by the sum at the joint: 30/(20 + 30 + 50) = 0.30. The factors sum to one. The denominator is not the stiffness of one neighbouring member or a carry-over factor.<p>Source note: Page 23 point 127 truncates the denominator. Restored the sum of stiffnesses of members participating at the joint, using their actual far-end conditions.</p><p>Capsule 4th ed., p. 23; topic 5 point 127.</p>",
+          "explanation": "A member's distribution factor equals its rotational stiffness divided by the sum at the joint: \\[\\dfrac{30}{20 + 30 + 50} = 0.30\\] The factors sum to one. The denominator is not the stiffness of one neighbouring member or a carry-over factor.<p>Source note: Page 23 point 127 truncates the denominator. Restored the sum of stiffnesses of members participating at the joint, using their actual far-end conditions.</p><p>Capsule 4th ed., p. 23; topic 5 point 127.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,

@@ -69,7 +69,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "b",
-          "explanation": "One cumec supplies 86400 cubic metres per day. Dividing volume by depth and converting square metres to hectares gives D = 8.64B/delta = 8.64 x 90/0.72 = 1080 ha/cumec. The source's bare B/delta omits the unit-conversion factor.<p>Source note: Page 27 point 1: duty is proportional to B/delta, not numerically equal in the stated conventional units.</p><p>Capsule 4th ed., p. 27; topic 7 point 1.</p>",
+          "explanation": "One cumec supplies 86,400 cubic metres per day. Dividing volume by depth and converting square metres to hectares gives \\[\\begin{aligned} D &amp;= \\dfrac{8.64B}{\\Delta} = \\dfrac{8.64 \\times 90}{0.72} \\\\ &amp;= 1080\\ \\text{ha/cumec} \\end{aligned}\\] The source's bare \\(\\dfrac{B}{\\Delta}\\) omits the unit-conversion factor.<p>Source note: Page 27 point 1: duty is proportional to B/delta, not numerically equal in the stated conventional units.</p><p>Capsule 4th ed., p. 27; topic 7 point 1.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -107,7 +107,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The crop period extends from sowing to harvesting: 112 - 0 = 112 days. The base period here extends from the first to the last counted irrigation: 98 - 8 = 90 days. The two periods have different endpoints.<p>Capsule 4th ed., p. 27; topic 7 point 2.</p>",
+          "explanation": "The crop period runs from sowing to harvesting and the base period from the first to the last counted irrigation: \\[112 - 0 = 112\\ \\text{days}\\] \\[98 - 8 = 90\\ \\text{days}\\] The two periods have different endpoints.<p>Capsule 4th ed., p. 27; topic 7 point 2.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -183,7 +183,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Canal-head flow is 0.8/0.8 = 1.0 cumec. Since duty is A/Q, the two duties are 800/0.8 = 1000 and 800/1 = 800 ha/cumec. For the same area and period, losses make upstream duty lower, not higher.<p>Source note: Page 27 point 4: compare the same area and time boundary; unrelated fields or branches cannot be ranked merely by location.</p><p>Capsule 4th ed., p. 27; topic 7 point 4.</p>",
+          "explanation": "Canal-head flow is \\(\\dfrac{0.8}{0.8} = 1.0\\) cumec. Since duty is \\(\\dfrac{A}{Q}\\), the two duties are \\[\\dfrac{800}{0.8} = 1000, \\qquad \\dfrac{800}{1} = 800\\] hectares per cumec. For the same area and period, losses make the upstream duty lower, not higher.<p>Source note: Page 27 point 4: compare the same area and time boundary; unrelated fields or branches cannot be ranked merely by location.</p><p>Capsule 4th ed., p. 27; topic 7 point 4.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -221,7 +221,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Volume equals depth times area. Ten hectares is 100000 square metres, so sugarcane needs 1.8 x 100000 = 180000 cubic metres, the largest of these stated allocations. A long crop duration can produce a high total without the highest daily demand.<p>Source note: Page 27 point 5: depths are explicit illustrative planning inputs, not universal crop constants or a verified global maximum.</p><p>Capsule 4th ed., p. 27; topic 7 point 5.</p>",
+          "explanation": "Volume equals depth times area. Ten hectares is 100,000 square metres, so sugarcane needs \\[1.8 \\times 100{,}000 = 180{,}000\\] cubic metres, the largest of these stated allocations. A long crop duration can produce a high total without the highest daily demand.<p>Source note: Page 27 point 5: depths are explicit illustrative planning inputs, not universal crop constants or a verified global maximum.</p><p>Capsule 4th ed., p. 27; topic 7 point 5.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -335,7 +335,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Total available water is 1000(0.32 - 0.17) x 0.60 = 90 mm. The moisture difference is a volumetric fraction; multiplying by root depth converts it to stored water depth. Water remaining at wilting is excluded.<p>Source note: Page 27 points 8 and 11 state the same FC-minus-PWP fact and are deliberately covered together.</p><p>Capsule 4th ed., p. 27; topic 7 point 8; topic 7 point 11.</p>",
+          "explanation": "The moisture difference is \\(0.32 - 0.17 = 0.15\\), so the total available water is \\[\\begin{aligned} \\text{TAW} &amp;= 1000 \\times 0.15 \\times 0.60 \\\\ &amp;= 90\\ \\text{mm} \\end{aligned}\\] The moisture difference is a volumetric fraction; multiplying by root depth converts it to stored water depth. Water remaining at wilting is excluded.<p>Source note: Page 27 points 8 and 11 state the same FC-minus-PWP fact and are deliberately covered together.</p><p>Capsule 4th ed., p. 27; topic 7 point 8; topic 7 point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -450,7 +450,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Consumptive use is approximated here by evapotranspiration: 2 + 4 = 6 mm/day. Deep percolation moves water below the roots but is not atmospheric consumption and may become recoverable groundwater or return flow.<p>Capsule 4th ed., p. 27; topic 7 point 12.</p>",
+          "explanation": "Consumptive use is approximated here by evapotranspiration: \\[2 + 4 = 6\\ \\text{mm/day}\\] Deep percolation moves water below the roots but is not atmospheric consumption and may become recoverable groundwater or return flow.<p>Capsule 4th ed., p. 27; topic 7 point 12.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -564,7 +564,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Readily available water is 0.40 x 120 = 48 mm. At 6 mm/day it is depleted in 48/6 = 8 days. Field capacity by itself cannot determine an interval: wilting content, root depth, allowable depletion and net demand are also needed.<p>Source note: Page 27 point 15: replaced the incomplete field-capacity/requirement shortcut with an explicit depletion budget.</p><p>Capsule 4th ed., p. 27; topic 7 point 15.</p>",
+          "explanation": "Readily available water is \\[0.40 \\times 120 = 48\\ \\text{mm}\\] At 6 mm per day it is depleted in \\[\\dfrac{48}{6} = 8\\ \\text{days}\\] Field capacity by itself cannot determine an interval: wilting content, root depth, allowable depletion and net demand are also needed.<p>Source note: Page 27 point 15: replaced the incomplete field-capacity/requirement shortcut with an explicit depletion budget.</p><p>Capsule 4th ed., p. 27; topic 7 point 15.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -602,7 +602,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Compare concurrent seasonal totals: Rabi 2.4 + 0.6 = 3.0 and Kharif 3.0 + 0.8 = 3.8 cumecs. The governing peak is 3.8. Adding non-overlapping seasonal demands overstates capacity; ignoring perennials understates it.<p>Capsule 4th ed., p. 27; topic 7 point 27.</p>",
+          "explanation": "Compare the concurrent seasonal totals, in cumecs: \\[\\text{Rabi: } 2.4 + 0.6 = 3.0\\] \\[\\text{Kharif: } 3.0 + 0.8 = 3.8\\] The governing peak is 3.8 cumecs. Adding non-overlapping seasonal demands overstates capacity; ignoring perennials understates it.<p>Capsule 4th ed., p. 27; topic 7 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -640,7 +640,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Net volume is 864 x 10000 x 0.14 = 1209600 cubic metres. Fourteen days is 1209600 seconds, giving net flow 1.0 cumec. Canal-head flow is 1/0.70 = 1.429 cumecs; all other coincident demands must still be checked.<p>Source note: Page 27 point 29: kor depth alone is insufficient; area, matched period, efficiency and operating time are supplied. Kharif is not automatically governing for every scheme.</p><p>Capsule 4th ed., p. 27; topic 7 point 29.</p>",
+          "explanation": "The net volume is \\[\\begin{aligned} V &amp;= 864 \\times 10{,}000 \\times 0.14 \\\\ &amp;= 1{,}209{,}600\\ \\text{m}^3 \\end{aligned}\\] Fourteen days is 1,209,600 seconds, giving a net flow of 1.0 cumec. The canal-head flow is \\[Q = \\dfrac{1.0}{0.70} = 1.429\\ \\text{cumecs}\\] All other coincident demands must still be checked.<p>Source note: Page 27 point 29: kor depth alone is insufficient; area, matched period, efficiency and operating time are supplied. Kharif is not automatically governing for every scheme.</p><p>Capsule 4th ed., p. 27; topic 7 point 29.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -678,7 +678,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Overall efficiency is 0.80 x 0.90 = 0.72. Gross diversion depth is 72/0.72 = 100 mm. Applying only one efficiency misses a loss stage; multiplying the net need by efficiency reverses the supply calculation.<p>Capsule 4th ed., p. 27; topic 7 point 31.</p>",
+          "explanation": "The overall efficiency is \\(0.80 \\times 0.90 = 0.72\\), so the gross diversion depth is \\[\\dfrac{72}{0.72} = 100\\ \\text{mm}\\] Applying only one efficiency misses a loss stage; multiplying the net need by efficiency reverses the supply calculation.<p>Capsule 4th ed., p. 27; topic 7 point 31.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -716,7 +716,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The specified crop ratio is 2400/1600 = 1.5, or 3:2. Reversing the order gives 2:3. The ratio depends on the actual cropping programme; neither 2 nor any other fixed value is an inherent law of irrigation.<p>Source note: Page 29 point 105: replaced the unsupported universal ratio of 2 with a defined area calculation.</p><p>Capsule 4th ed., p. 29; topic 7 point 105.</p>",
+          "explanation": "The specified crop ratio is \\[\\dfrac{2400}{1600} = 1.5\\] or 3 to 2. Reversing the order gives 2 to 3. The ratio depends on the actual cropping programme; neither 2 nor any other fixed value is an inherent law of irrigation.<p>Source note: Page 29 point 105: replaced the unsupported universal ratio of 2 with a defined area calculation.</p><p>Capsule 4th ed., p. 29; topic 7 point 105.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -792,7 +792,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Under the stated simplified balance, NIR = ET - effective rainfall = 150 - 50 = 100 mm. Subtracting all 80 mm credits runoff or drainage that does not usefully meet crop demand. Upstream gross delivery requires separate loss allowances.<p>Capsule 4th ed., p. 29; topic 7 point 111.</p>",
+          "explanation": "Under the stated simplified balance, \\[\\begin{aligned} \\text{NIR} &amp;= \\text{ET} - P_e = 150 - 50 \\\\ &amp;= 100\\ \\text{mm} \\end{aligned}\\] Subtracting all 80 mm credits runoff or drainage that does not usefully meet crop demand. Upstream gross delivery requires separate loss allowances.<p>Capsule 4th ed., p. 29; topic 7 point 111.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -868,7 +868,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "c",
-          "explanation": "With no other water inputs, interval equals available depletion allowance divided by daily demand: 36/6 = 6 days and 60/6 = 10 days. Soil storage changes the interval even when rooting depth and atmospheric demand are equal.<p>Source note: Page 30 point 120, soil factor: isolated storage influence while keeping the other inputs fixed.</p><p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
+          "explanation": "With no other water inputs, the interval equals the depletion allowance divided by daily demand: \\[\\dfrac{36}{6} = 6, \\qquad \\dfrac{60}{6} = 10\\] days. Soil storage changes the interval even when rooting depth and atmospheric demand are equal.<p>Source note: Page 30 point 120, soil factor: isolated storage influence while keeping the other inputs fixed.</p><p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -906,7 +906,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "TAW is 1000 x 0.15 x root depth: 75 and 150 mm. The permitted depletion is 0.40 times these amounts, or 30 and 60 mm. Dividing by 5 mm/day gives 6 and 12 days, demonstrating the influence of effective rooting depth.<p>Source note: Page 30 point 120, crop factor: illustrative root depths and depletion fractions are stated, not attached universally to named crops.</p><p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
+          "explanation": "TAW is \\(1000 \\times 0.15\\) times root depth: 75 and 150 mm. The permitted depletion is 0.40 times these amounts, or 30 and 60 mm. Dividing by 5 mm per day gives \\[\\dfrac{30}{5} = 6, \\qquad \\dfrac{60}{5} = 12\\] days, demonstrating the influence of effective rooting depth.<p>Source note: Page 30 point 120, crop factor: illustrative root depths and depletion fractions are stated, not attached universally to named crops.</p><p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -944,7 +944,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "b",
-          "explanation": "At 4 mm/day, the allowance lasts 48/4 = 12 days. At 8 mm/day it lasts 48/8 = 6 days. Increased evaporative demand shortens the interval; rainfall or a changed depletion policy would require a revised water balance.<p>Source note: Page 30 point 120, climate factor: isolates a stated change in net demand.</p><p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
+          "explanation": "The allowance lasts \\[\\dfrac{48}{4} = 12, \\qquad \\dfrac{48}{8} = 6\\] days at 4 and 8 mm per day respectively. Increased evaporative demand shortens the interval; rainfall or a changed depletion policy would require a revised water balance.<p>Source note: Page 30 point 120, climate factor: isolates a stated change in net demand.</p><p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1065,7 +1065,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The usable compacted yield is 1000 x 0.90 = 900 cubic metres. Balanced earthwork means available excavation meets required fill on compatible volume bases, not equality between uncorrected in-situ and compacted volumes.<p>Source note: Page 27 point 16: the equal-cut/equal-fill shortcut assumes compatible density, usability and shrinkage bases.</p><p>Capsule 4th ed., p. 27; topic 7 point 16.</p>",
+          "explanation": "The usable compacted yield is \\[1000 \\times 0.90 = 900\\ \\text{m}^3\\] Balanced earthwork means available excavation meets required fill on compatible volume bases, not equality between uncorrected in-situ and compacted volumes.<p>Source note: Page 27 point 16: the equal-cut/equal-fill shortcut assumes compatible density, usability and shrinkage bases.</p><p>Capsule 4th ed., p. 27; topic 7 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1103,7 +1103,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Kennedy's customary relation is V = 0.55 m y^0.64 in metre-second units. The multiplier m adjusts the reference velocity for sediment conditions. This critical velocity concerns silting and scour, not the Fr = 1 condition of critical open-channel flow.<p>Capsule 4th ed., p. 27; topic 7 point 17.</p>",
+          "explanation": "Kennedy's customary relation, in metre-second units, is \\[V_0 = 0.55\\,m\\,y^{0.64}\\] The multiplier \\(m\\) adjusts the reference velocity for sediment conditions. This critical velocity concerns silting and scour, not the \\(\\text{Fr} = 1\\) condition of critical open-channel flow.<p>Capsule 4th ed., p. 27; topic 7 point 17.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1255,7 +1255,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Useful delivery rises in the ratio 0.80/0.60, so supported area is 600 x 0.80/0.60 = 800 ha. Water savings can expand irrigated area only if suitable land and adequate delivery levels exist; lining does not automatically change topographic command.<p>Source note: Page 27 point 22: distinguished irrigable area supported by supply from geometric command area.</p><p>Capsule 4th ed., p. 27; topic 7 point 22.</p>",
+          "explanation": "Useful delivery rises in the ratio \\(\\dfrac{0.80}{0.60}\\), so the supported area is \\[600 \\times \\dfrac{0.80}{0.60} = 800\\ \\text{ha}\\] Water savings can expand irrigated area only if suitable land and adequate delivery levels exist; lining does not automatically change topographic command.<p>Source note: Page 27 point 22: distinguished irrigable area supported by supply from geometric command area.</p><p>Capsule 4th ed., p. 27; topic 7 point 22.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1559,7 +1559,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The radius factor is 8^(2/3) = 4 and the slope factor is (1/8)^(1/3) = 0.5, so the velocity ratio is 2. Manning's one-half slope exponent would instead give about 1.41. This empirical comparison does not hold every other regime quantity fixed.<p>Capsule 4th ed., p. 27; topic 7 point 34.</p>",
+          "explanation": "The radius and slope factors are \\[8^{2{/}3} = 4, \\qquad \\left(\\dfrac{1}{8}\\right)^{1{/}3} = 0.5\\] so the velocity ratio is \\(4 \\times 0.5 = 2\\). Manning's one-half slope exponent would instead give about 1.41. This empirical comparison does not hold every other regime quantity fixed.<p>Capsule 4th ed., p. 27; topic 7 point 34.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1635,7 +1635,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The rectangle contributes 4 x 2 = 8 square metres. The two side triangles together contribute z d^2 = 1.5 x 2^2 = 6, giving 14 square metres. Cutting depth need not equal flow depth.<p>Source note: Page 27 point 37: unified the inconsistent y/d notation and explicitly defined the H:V side-slope convention.</p><p>Capsule 4th ed., p. 27; topic 7 point 37.</p>",
+          "explanation": "The rectangle contributes \\(4 \\times 2 = 8\\) m<sup>2</sup> and the two side triangles together contribute \\[zd^2 = 1.5 \\times 2^2 = 6\\ \\text{m}^2\\] giving 14 square metres. Cutting depth need not equal flow depth.<p>Source note: Page 27 point 37: unified the inconsistent y/d notation and explicitly defined the H:V side-slope convention.</p><p>Capsule 4th ed., p. 27; topic 7 point 37.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1673,7 +1673,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Each sloping face has width 2 sqrt(1 + 1.5^2) = 3.60555 m. Both sides require 2 x 50 x 3.60555 = 360.56 square metres. Omitting the square root or counting only one face gives different results.<p>Source note: Page 27 point 38: the extracted expression loses the radical. Restored it by Pythagoras, with an explicit H:V convention; no image was reviewed.</p><p>Capsule 4th ed., p. 27; topic 7 point 38.</p>",
+          "explanation": "Each sloping face has width \\[2\\sqrt{1 + 1.5^2} = 3.60555\\ \\text{m}\\] so both sides require \\[\\begin{aligned} &amp;2 \\times 50 \\times 3.60555 \\\\ &amp;= 360.56\\ \\text{m}^2 \\end{aligned}\\] Omitting the square root or counting only one face gives different results.<p>Source note: Page 27 point 38: the extracted expression loses the radical. Restored it by Pythagoras, with an explicit H:V convention; no image was reviewed.</p><p>Capsule 4th ed., p. 27; topic 7 point 38.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1749,7 +1749,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Shields parameter is bed shear divided by submerged grain weight per unit area: theta = tau/[(rho_s - rho)gd]. Thus tau = 0.056 x 1650 x 9.81 x 0.010 = 9.06444 Pa. This is an incipient-motion estimate before any design safety allowance.<p>Source note: Page 28 point 40: 0.056 is explicitly adopted for this coarse-bed example. The Shields threshold depends on flow/grain regime and is not mandatory for every alluvial canal.</p><p>Capsule 4th ed., p. 28; topic 7 point 40.</p>",
+          "explanation": "The Shields parameter is bed shear divided by submerged grain weight per unit area: \\[\\theta = \\dfrac{\\tau}{(\\rho_s - \\rho)gd}\\] Thus \\[\\begin{aligned} \\tau &amp;= 0.056 \\times 1650 \\\\ &amp;\\quad \\times 9.81 \\times 0.010 \\\\ &amp;= 9.06444\\ \\text{Pa} \\end{aligned}\\] This is an incipient-motion estimate before any design safety allowance.<p>Source note: Page 28 point 40: 0.056 is explicitly adopted for this coarse-bed example. The Shields threshold depends on flow/grain regime and is not mandatory for every alluvial canal.</p><p>Capsule 4th ed., p. 28; topic 7 point 40.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1863,7 +1863,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Area is 4 x 2 = 8 square metres and wetted perimeter is 4 + 2 x 2 = 8 m, so R = 1 m. Then Q = (1/0.020) x 8 x 1^(2/3) x sqrt(0.0004) = 8.00 cumecs. The free surface is excluded from wetted perimeter.<p>Source note: Page 29 point 101: Manning is a resistance relation under specified conditions, not a complete lined-canal design or an adjustable-alluvial regime theory.</p><p>Capsule 4th ed., p. 29; topic 7 point 101.</p>",
+          "explanation": "Area and wetted perimeter are \\(A = 4 \\times 2 = 8\\) m<sup>2</sup> and \\(P = 4 + 2 \\times 2 = 8\\) m, so \\(R = 1\\) m. Then \\[\\begin{aligned} Q &amp;= \\dfrac{1}{0.020} \\times 8 \\times 1^{2{/}3} \\\\ &amp;\\quad \\times \\sqrt{0.0004} \\\\ &amp;= 8.00\\ \\text{cumecs} \\end{aligned}\\] The free surface is excluded from the wetted perimeter.<p>Source note: Page 29 point 101: Manning is a resistance relation under specified conditions, not a complete lined-canal design or an adjustable-alluvial regime theory.</p><p>Capsule 4th ed., p. 29; topic 7 point 101.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1901,7 +1901,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The required flow area is Q/V = 90/2 = 45 square metres. For a trapezoid A = y(b + zy), hence b = 45/3 - 1.5 x 3 = 10.50 m. This is a trial geometry, not proof that the available slope produces the adopted velocity or that lining is stable.<p>Source note: Page 29 point 113: tests large-canal trapezoidal sizing without endorsing an 84-cumec switch. Reviewed IS 10430:2000 Section 8.8.1 permits trapezoidal sections for all types of lined canals; the capsule&#39;s threshold origin remains unverified.</p><p>Capsule 4th ed., p. 29; topic 7 point 113.</p>",
+          "explanation": "The required flow area is \\(\\dfrac{Q}{V} = \\dfrac{90}{2} = 45\\) m<sup>2</sup>. For a trapezoid \\(A = y(b + zy)\\), hence \\[b = \\dfrac{45}{3} - 1.5 \\times 3 = 10.50\\ \\text{m}\\] This is a trial geometry, not proof that the available slope produces the adopted velocity or that lining is stable.<p>Source note: Page 29 point 113: tests large-canal trapezoidal sizing without endorsing an 84-cumec switch. Reviewed IS 10430:2000 Section 8.8.1 permits trapezoidal sections for all types of lined canals; the capsule&#39;s threshold origin remains unverified.</p><p>Capsule 4th ed., p. 29; topic 7 point 113.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1939,7 +1939,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Velocity varies with sqrt(fR), so its multiplier is sqrt(4 x 9) = 6. Treating V as directly proportional to the unsquared product would give 36. These are compatible comparative inputs, not a claim that all other regime quantities stay fixed.<p>Source note: Page 29 point 114: supplied the missing square-root dependence on the product of sediment factor and hydraulic radius.</p><p>Capsule 4th ed., p. 29; topic 7 point 114.</p>",
+          "explanation": "Since \\(V = \\sqrt{\\dfrac{2fR}{5}}\\), velocity varies with \\(\\sqrt{fR}\\), so its multiplier is \\[\\sqrt{4 \\times 9} = 6\\] Treating \\(V\\) as directly proportional to the unsquared product would give 36. These are compatible comparative inputs, not a claim that all other regime quantities stay fixed.<p>Source note: Page 29 point 114: supplied the missing square-root dependence on the product of sediment factor and hydraulic radius.</p><p>Capsule 4th ed., p. 29; topic 7 point 114.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1977,7 +1977,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Compute 0.75^0.64 = 0.831839, then multiply by 0.55 to obtain 0.457511 m/s, which rounds to 0.458 m/s. This is Kennedy's empirical sediment-stability velocity, not a particle's still-water settling speed or the Fr = 1 velocity.<p>Source note: Page 30 point 122: treated D as water depth, corrected &#39;critical velocity of setting&#39;, and reported proper three-decimal rounding rather than the source&#39;s 0.457 truncation.</p><p>Capsule 4th ed., p. 30; topic 7 point 122.</p>",
+          "explanation": "Kennedy's relation \\(V = 0.55\\,m\\,y^{0.64}\\) gives \\[\\begin{aligned} V &amp;= 0.55 \\times 0.75^{0.64} \\\\ &amp;= 0.55 \\times 0.831839 \\\\ &amp;= 0.457511\\ \\text{m/s} \\end{aligned}\\] which rounds to 0.458 m per s. This is Kennedy's empirical sediment-stability velocity, not a particle's still-water settling speed or the \\(\\text{Fr} = 1\\) velocity.<p>Source note: Page 30 point 122: treated D as water depth, corrected &#39;critical velocity of setting&#39;, and reported proper three-decimal rounding rather than the source&#39;s 0.457 truncation.</p><p>Capsule 4th ed., p. 30; topic 7 point 122.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2403,7 +2403,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The end-pile expression is G_E = H/(pi d sqrt(lambda)). As d tends to zero at fixed positive floor length, the denominator tends to zero. This is a localized mathematical edge singularity, not a uniform infinite gradient in real soil.<p>Source note: Page 28 point 47: restricted infinity to the ideal zero-cutoff sharp-edge limit, not a literal field-wide measurement.</p><p>Capsule 4th ed., p. 28; topic 7 point 47.</p>",
+          "explanation": "The end-pile expression is \\[G_E = \\dfrac{H}{\\pi d\\sqrt{\\lambda}}\\] As \\(d \\to 0\\) at fixed positive floor length, the denominator tends to zero. This is a localized mathematical edge singularity, not a uniform infinite gradient in real soil.<p>Source note: Page 28 point 47: restricted infinity to the ideal zero-cutoff sharp-edge limit, not a literal field-wide measurement.</p><p>Capsule 4th ed., p. 28; topic 7 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2709,7 +2709,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Vertical equilibrium gives N = W - U = 0. A gravity weir relies principally on self-weight, but equality of weight and uplift is neutral flotation under these assumptions, not a definition of safe gravity action.<p>Source note: Page 28 point 56: corrected the unsafe claim that complete weight-uplift balance defines a gravity weir.</p><p>Capsule 4th ed., p. 28; topic 7 point 56.</p>",
+          "explanation": "Vertical equilibrium gives \\[N = W - U = 0\\] A gravity weir relies principally on self-weight, but equality of weight and uplift is neutral flotation under these assumptions, not a definition of safe gravity action.<p>Source note: Page 28 point 56: corrected the unsafe claim that complete weight-uplift balance defines a gravity weir.</p><p>Capsule 4th ed., p. 28; topic 7 point 56.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2747,7 +2747,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The effective compressive normal force is 1000 - 300 = 700 kN. Frictional resistance is 0.60 x 700 = 420 kN. Ignoring uplift gives 600 kN and overstates the available resistance; a full stability assessment needs the driving forces too.<p>Capsule 4th ed., p. 28; topic 7 point 57.</p>",
+          "explanation": "The effective compressive normal force is \\(1000 - 300 = 700\\) kN, so the frictional resistance is \\[0.60 \\times 700 = 420\\ \\text{kN}\\] Ignoring uplift gives 600 kN and overstates the available resistance; a full stability assessment needs the driving forces too.<p>Capsule 4th ed., p. 28; topic 7 point 57.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2785,7 +2785,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Vertical contact is 2 x 4 + 2 x 7 = 22 m. Lane weights horizontal contact by one-third, adding 42/3 = 14 m, so the weighted length is 36 m. Bligh would give the unweighted 22 + 42 = 64 m.<p>Source note: Page 28 point 58: complete page text shows the denominator 3 below L, which the extracted numbered point omits. This agrees with the corrected nearby Lane notes.</p><p>Capsule 4th ed., p. 28; topic 7 point 58.</p>",
+          "explanation": "Vertical contact is \\[2 \\times 4 + 2 \\times 7 = 22\\ \\text{m}\\] Lane weights horizontal contact by one-third, adding \\(\\dfrac{42}{3} = 14\\) m, so the weighted length is \\[22 + 14 = 36\\ \\text{m}\\] Bligh would give the unweighted \\(22 + 42 = 64\\) m.<p>Source note: Page 28 point 58: complete page text shows the denominator 3 below L, which the extracted numbered point omits. This agrees with the corrected nearby Lane notes.</p><p>Capsule 4th ed., p. 28; topic 7 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2823,7 +2823,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The standard end-pile result is G_E = H/(pi d sqrt(lambda)). H and d use the same length unit, making the result dimensionless. Lambda is determined by floor-to-pile geometry, not a hydraulic-conductivity or soil-permeability factor.<p>Source note: Page 28 point 59: the PDF text damages the radical. Formula restored from the explicit isolated-end-pile relation in nearby corrected notes; no visual verification claimed.</p><p>Capsule 4th ed., p. 28; topic 7 point 59.</p>",
+          "explanation": "The standard end-pile result is \\[G_E = \\dfrac{H}{\\pi d\\sqrt{\\lambda}}\\] \\(H\\) and \\(d\\) use the same length unit, making the result dimensionless. \\(\\lambda\\) is determined by floor-to-pile geometry, not a hydraulic-conductivity or soil-permeability factor.<p>Source note: Page 28 point 59: the PDF text damages the radical. Formula restored from the explicit isolated-end-pile relation in nearby corrected notes; no visual verification claimed.</p><p>Capsule 4th ed., p. 28; topic 7 point 59.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3013,7 +3013,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The three specified requirements are 2 x 20 = 40, 0.12 x 1000 = 120 and 80 cumecs. Their maximum is 120, not their sum of 240. The structure must still pass each requirement at the head and gate state applicable to that case.<p>Source note: Page 29 point 112: 12% is an explicit selection within the source&#39;s 10-15% preliminary range. Neither that range nor twice-canal flow is claimed as a universal adopted standard.</p><p>Capsule 4th ed., p. 29; topic 7 point 112.</p>",
+          "explanation": "The three specified requirements, in cumecs, are \\[2 \\times 20 = 40\\] \\[0.12 \\times 1000 = 120\\] and 80. Their maximum is 120, not their sum of 240. The structure must still pass each requirement at the head and gate state applicable to that case.<p>Source note: Page 29 point 112: 12% is an explicit selection within the source&#39;s 10-15% preliminary range. Neither that range nor twice-canal flow is claimed as a universal adopted standard.</p><p>Capsule 4th ed., p. 29; topic 7 point 112.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3127,7 +3127,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Substitution gives 6/[pi x 4 x sqrt(1.5)] = 0.389848, rounding to 0.390. Lambda describes floor/pile geometry. If 1.5 were alpha = b/d instead, lambda would be different and the result would be 0.403332; conductivity is neither parameter.<p>Source note: Page 29 point 118: the source calls 1.5 a soil-permeability factor and gives only a characteristic path depth, so its original exit gradient is not uniquely derivable. The new stem explicitly supplies d and geometric lambda; 0.38 is not correct rounding under that repaired model.</p><p>Capsule 4th ed., p. 29; topic 7 point 118.</p>",
+          "explanation": "Substitution gives \\[\\begin{aligned} G_E &amp;= \\dfrac{6}{\\pi \\times 4 \\times \\sqrt{1.5}} \\\\ &amp;= 0.389848 \\end{aligned}\\] rounding to 0.390. \\(\\lambda\\) describes floor and pile geometry. If 1.5 were \\(\\alpha = \\dfrac{b}{d}\\) instead, \\(\\lambda\\) would be different and the result would be 0.403332; conductivity is neither parameter.<p>Source note: Page 29 point 118: the source calls 1.5 a soil-permeability factor and gives only a characteristic path depth, so its original exit gradient is not uniquely derivable. The new stem explicitly supplies d and geometric lambda; 0.38 is not correct rounding under that repaired model.</p><p>Capsule 4th ed., p. 29; topic 7 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3210,7 +3210,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The assumed local depth is 2.0 x 3.0 = 6.0 m below HFL, hence scour-bed RL = 104.0 - 6.0 = 98.0 m. The multiplier is applied to depth from the stated water datum, not automatically to extra erosion below the existing bed.<p>Source note: Page 27 point 20: the reviewed text of IRC 89:1997 Section 7.4.5 supports 2.00 times mean scour depth for bank protection at a right-angle bend, with depth measured below HFL. This is edition- and scope-specific guidance, not current Nepal adoption or a universal river law; normal flow depth is not the mean scour depth.</p><p>Capsule 4th ed., p. 27; topic 7 point 20.</p>",
+          "explanation": "The assumed local depth is \\(2.0 \\times 3.0 = 6.0\\) m below HFL, hence \\[\\text{RL} = 104.0 - 6.0 = 98.0\\ \\text{m}\\] The multiplier is applied to depth from the stated water datum, not automatically to extra erosion below the existing bed.<p>Source note: Page 27 point 20: the reviewed text of IRC 89:1997 Section 7.4.5 supports 2.00 times mean scour depth for bank protection at a right-angle bend, with depth measured below HFL. This is edition- and scope-specific guidance, not current Nepal adoption or a universal river law; normal flow depth is not the mean scour depth.</p><p>Capsule 4th ed., p. 27; topic 7 point 20.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3248,7 +3248,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Transported mass equals rate times duration: 10 x 100 x 3600 = 3.6 million kg versus 50 x 10 x 3600 = 1.8 million kg. Channel-forming importance depends on magnitude and recurrence or duration, not automatically the largest instantaneous discharge.<p>Source note: Page 28 point 55: uses an explicit effective-discharge illustration; it does not identify a universal dominant flood return period.</p><p>Capsule 4th ed., p. 28; topic 7 point 55.</p>",
+          "explanation": "Transported mass equals rate times duration: \\[\\begin{aligned} &amp;10 \\times 100 \\times 3600 \\\\ &amp;= 3.6 \\times 10^6\\ \\text{kg} \\end{aligned}\\] \\[\\begin{aligned} &amp;50 \\times 10 \\times 3600 \\\\ &amp;= 1.8 \\times 10^6\\ \\text{kg} \\end{aligned}\\] The frequent class contributes 3.6 million kg against 1.8 million kg. Channel-forming importance depends on magnitude and recurrence or duration, not automatically the largest instantaneous discharge.<p>Source note: Page 28 point 55: uses an explicit effective-discharge illustration; it does not identify a universal dominant flood return period.</p><p>Capsule 4th ed., p. 28; topic 7 point 55.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3554,7 +3554,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The estimated bed level is 100 - 5 = RL 95 m. Relative to the existing bed at 97 m, this is 97 - 95 = 2 m of additional lowering. A scour depth from flood-water level must not be subtracted again from the old bed.<p>Capsule 4th ed., p. 29; topic 7 point 99.</p>",
+          "explanation": "The estimated bed level and the additional lowering are \\[100 - 5 = \\text{RL } 95\\ \\text{m}\\] \\[97 - 95 = 2\\ \\text{m}\\] A scour depth from flood-water level must not be subtracted again from the old bed.<p>Capsule 4th ed., p. 29; topic 7 point 99.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3943,7 +3943,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Constant q gives d ln q = 0 for a nonzero depth change, so S = 0. This is conditional on a functioning module within its permitted head range; insufficient supply or excessive submergence can invalidate constant-discharge operation.<p>Capsule 4th ed., p. 28; topic 7 point 68.</p>",
+          "explanation": "Constant \\(q\\) gives \\(d\\ln q = 0\\) for a nonzero depth change, so \\[S = \\dfrac{d\\ln q}{d\\ln Y} = 0\\] This is conditional on a functioning module within its permitted head range; insufficient supply or excessive submergence can invalidate constant-discharge operation.<p>Capsule 4th ed., p. 28; topic 7 point 68.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3981,7 +3981,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Distributed canal-bed fall is 2000/1000 = 2 m. The remaining ground fall is 12 - 2 = 10 m, to be accommodated by selected drop structures under the stated profile objective. Simply steepening the entire canal could cause excessive velocity.<p>Capsule 4th ed., p. 28; topic 7 point 70.</p>",
+          "explanation": "The distributed canal-bed fall is \\[\\dfrac{2000}{1000} = 2\\ \\text{m}\\] and the remaining ground fall is \\[12 - 2 = 10\\ \\text{m}\\] to be accommodated by selected drop structures under the stated profile objective. Simply steepening the entire canal could cause excessive velocity.<p>Capsule 4th ed., p. 28; topic 7 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4057,7 +4057,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Flexibility compares fractional changes: F is approximately (delta q/q)/(delta Q/Q) = 4%/4% = 1. Equal percentages, not equal absolute discharges, imply local proportionality. Sensitivity instead compares outlet discharge with parent water depth.<p>Capsule 4th ed., p. 28; topic 7 point 73.</p>",
+          "explanation": "Flexibility compares fractional changes: \\[F \\approx \\dfrac{\\Delta q{/}q}{\\Delta Q{/}Q} = \\dfrac{4\\%}{4\\%} = 1\\] Equal percentages, not equal absolute discharges, imply local proportionality. Sensitivity instead compares outlet discharge with parent water depth.<p>Capsule 4th ed., p. 28; topic 7 point 73.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4211,7 +4211,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The relevant air gap is trough underside minus canal water surface: 99.8 - 99.0 = 0.8 m, exceeding 0.5 m. Merely comparing canal FSL with the drain flood surface ignores the drain-trough structure and cannot establish free-flow clearance.<p>Source note: Page 28 point 78: supplied the actual underside and required clearance, strengthening the source&#39;s insufficient water-surface comparison.</p><p>Capsule 4th ed., p. 28; topic 7 point 78.</p>",
+          "explanation": "The relevant air gap is the trough underside minus the canal water surface: \\[99.8 - 99.0 = 0.8\\ \\text{m}\\] which exceeds 0.5 m. Merely comparing canal FSL with the drain flood surface ignores the drain-trough structure and cannot establish free-flow clearance.<p>Source note: Page 28 point 78: supplied the actual underside and required clearance, strengthening the source&#39;s insufficient water-surface comparison.</p><p>Capsule 4th ed., p. 28; topic 7 point 78.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4403,7 +4403,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Free discharge isolates the outlet from downstream changes while upstream head still affects flow, so it is semi-modular. The historical adjective flexible does not specify mathematical flexibility F = 1; drowning can change the outlet's behavior.<p>Source note: Page 29 point 96: separated legacy flexible-module terminology from proportional outlet response.</p><p>Capsule 4th ed., p. 29; topic 7 point 96.</p>",
+          "explanation": "Free discharge isolates the outlet from downstream changes while upstream head still affects flow, so it is semi-modular. The historical adjective flexible does not specify mathematical flexibility \\(F = 1\\); drowning can change the outlet's behaviour.<p>Source note: Page 29 point 96: separated legacy flexible-module terminology from proportional outlet response.</p><p>Capsule 4th ed., p. 29; topic 7 point 96.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4479,7 +4479,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The stated rating gives Q = 1.5 x 8 x 1^(3/2) = 12 cumecs. A crest rating is only one check; a Sarda-type vertical fall also needs a safe downstream cistern, foundations and operating range. Being below a quoted capacity limit is not proof of adequacy.<p>Source note: Page 30 point 125: the 14-cumec rectangular Sarda limit remains an unverified legacy convention in the nearby corrected notes. The original question here uses an explicit calibrated rating, not that threshold as authority.</p><p>Capsule 4th ed., p. 30; topic 7 point 125.</p>",
+          "explanation": "The stated rating gives \\[Q = 1.5 \\times 8 \\times 1^{3{/}2} = 12\\] cumecs. A crest rating is only one check; a Sarda-type vertical fall also needs a safe downstream cistern, foundations and operating range. Being below a quoted capacity limit is not proof of adequacy.<p>Source note: Page 30 point 125: the 14-cumec rectangular Sarda limit remains an unverified legacy convention in the nearby corrected notes. The original question here uses an explicit calibrated rating, not that threshold as authority.</p><p>Capsule 4th ed., p. 30; topic 7 point 125.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4868,7 +4868,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Taking square roots gives L proportional to sqrt(K). Quadrupling K therefore multiplies L by sqrt(4) = 2, not four. In a full Hooghoudt solution, equivalent depth can also depend on spacing and must be updated consistently.<p>Source note: Page 29 point 88: corrected direct proportionality to K; square-root scaling is conditional on fixed equivalent geometry and other stated quantities.</p><p>Capsule 4th ed., p. 29; topic 7 point 88.</p>",
+          "explanation": "Taking square roots gives \\(L \\propto \\sqrt{K}\\). Quadrupling \\(K\\) therefore multiplies \\(L\\) by \\[\\sqrt{4} = 2\\] not four. In a full Hooghoudt solution, the equivalent depth can also depend on spacing and must be updated consistently.<p>Source note: Page 29 point 88: corrected direct proportionality to K; square-root scaling is conditional on fixed equivalent geometry and other stated quantities.</p><p>Capsule 4th ed., p. 29; topic 7 point 88.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5210,7 +5210,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Applied depth is volume divided by area: 60000/(100 x 10000) = 0.06 m and 60000/(200 x 10000) = 0.03 m. Against 30 mm need, the first case has 30 mm excess and the second none. Spreading a fixed supply can reduce over-application, but only with adequate crop supply and drainage.<p>Source note: Page 29 point 91: appended a conditional extensive-versus-concentrated irrigation comparison for the damaged source wording. It does not declare extensive irrigation universally safe or all intensive irrigation waterlogging-prone.</p><p>Capsule 4th ed., p. 29; topic 7 point 91.</p>",
+          "explanation": "Applied depth is volume divided by area: \\[\\dfrac{60{,}000}{100 \\times 10{,}000} = 0.06\\ \\text{m}\\] \\[\\dfrac{60{,}000}{200 \\times 10{,}000} = 0.03\\ \\text{m}\\] Against the 30 mm need, the first case has 30 mm excess and the second none. Spreading a fixed supply can reduce over-application, but only with adequate crop supply and drainage.<p>Source note: Page 29 point 91: appended a conditional extensive-versus-concentrated irrigation comparison for the damaged source wording. It does not declare extensive irrigation universally safe or all intensive irrigation waterlogging-prone.</p><p>Capsule 4th ed., p. 29; topic 7 point 91.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,

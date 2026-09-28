@@ -149,7 +149,7 @@ const CIVIL_MODEL_6 = {
                         { key: "d", text: "12 bags" }
                     ],
                     answer: "c",
-                    explanation: "Nepal weighs 50 kg, which is equal to about 1.25 cubic feet or 0.0347 cubic meters. This applies to major local and national brands like Sarbottam Cement and Jagdamba Cement. \\(\\text{Dry Volume} = 1 \\text{ m}^3 \\times 1.54 = 1.54 \\text{ m}^3\\) \\(\\text{Required Volume of Cement} = \\frac{1}{5.5} \\times 1.54 = 0.28 \\text{ m}^3\\) \\(\\text{Weight of Cement} = 0.28 \\text{ m}^3 \\times 1440 \\text{ kg/m}^3 = 403.2 \\text{ kg}\\) \\(\\frac{403.2 \\text{ kg}}{50 \\text{ kg/bag}} = 8.064 \\text{ bags}\\)"
+                    explanation: "In Nepal a cement bag weighs 50 kg, which is about 1.25 cubic feet or 0.0347 m<sup>3</sup>. This applies to major local and national brands like Sarbottam Cement and Jagdamba Cement. For 1 m<sup>3</sup> of 1:1.5:3 concrete, in m<sup>3</sup> and kg: \\[\\text{dry volume} = 1 \\times 1.54 = 1.54\\] \\[\\text{cement} = \\dfrac{1.54}{5.5} = 0.28\\] \\[\\text{mass} = 0.28 \\times 1440 = 403.2\\] \\[\\dfrac{403.2}{50} = 8.064 \\approx 8\\ \\text{bags}\\]"
                 },
                 {
                     id: "cm6q010",
@@ -175,7 +175,7 @@ const CIVIL_MODEL_6 = {
                         { key: "d", text: "2b" }
                     ],
                     answer: "a",
-                    explanation: "For Long Wall Method: Centre to centre length between cross walls = L (This is measured at the centre lines of long walls) Outer length of long wall = L + b Difference between outer length and centre line length = (L + b) − L = b Therefore, Long wall outer length = centre line length + b So, Answer: b"
+                    explanation: "In the long wall method, let the centre-to-centre length between cross walls, measured along the centre lines of the long walls, be \\(L\\). The outer length of the long wall is \\(L + b\\), so \\[(L + b) - L = b\\] The long wall's outer length is the centre-line length plus \\(b\\)."
                 },
                 {
                     id: "cm6q012",
@@ -223,7 +223,7 @@ const CIVIL_MODEL_6 = {
                         { key: "d", text: "8/5" }
                     ],
                     answer: "d",
-                    explanation: "$$\\delta_A = \\frac{WL^3}{48EI}$$ $$\\delta_B = \\frac{5WL^3}{384EI}$$ $$\\frac{\\delta_A}{\\delta_B} = \\frac{\\frac{WL^3}{48EI}}{\\frac{5WL^3}{384EI}}$$ $$\\frac{\\delta_A}{\\delta_B} = \\frac{8}{5} = 1.6$$"
+                    explanation: "The two central deflections are \\[\\delta_A = \\dfrac{WL^3}{48EI}\\] \\[\\delta_B = \\dfrac{5WL^3}{384EI}\\] so \\[\\dfrac{\\delta_A}{\\delta_B} = \\dfrac{384}{48 \\times 5} = \\dfrac{8}{5} = 1.6\\]"
                 },
                 {
                     id: "cm6q015",
@@ -590,7 +590,7 @@ const CIVIL_MODEL_6 = {
                         { key: "d", text: "78 KN/m²" }
                     ],
                     answer: "c",
-                    explanation: "\\(\\(K_{a}=\\frac{1-\\sin \\phi }{1+\\sin \\phi }=\\frac{1-\\sin (30^{\\circ })}{1+\\sin (30^{\\circ })}=\\frac{0.5}{1.5}=\\frac{1}{3}\\)\\) \\(p_a = K_a(\\gamma H + q) = \\frac{1}{3}(18 \\times 6 + 36) = \\frac{1}{3}(108 + 36) = 48\\,\\text{kN/m}^2\\)"
+                    explanation: "The active coefficient is \\[\\begin{aligned} K_a &amp;= \\dfrac{1 - \\sin 30^\\circ}{1 + \\sin 30^\\circ} \\\\ &amp;= \\dfrac{0.5}{1.5} = \\dfrac{1}{3} \\end{aligned}\\] so the active pressure at the base is \\[\\begin{aligned} p_a &amp;= K_a(\\gamma H + q) \\\\ &amp;= \\dfrac{1}{3}(108 + 36) \\\\ &amp;= 48\\ \\text{kN/m}^2 \\end{aligned}\\] with \\(\\gamma H = 18 \\times 6 = 108\\)."
                 },
                 {
                     id: "cm6q042",
@@ -768,7 +768,7 @@ const CIVIL_MODEL_6 = {
                         { key: "d", text: "1 in 400" }
                     ],
                     answer: "d",
-                    explanation: "Calculate the Hydraulic Radius (R): $$R = \\frac{8\\text{ m}^2}{8\\text{ m}} = 1\\text{ m}$$ Substitute values into Manning's Formula: $$33.33 = \\frac{1}{0.012} \\times 8 \\times (1)^{2/3} \\times S^{1/2}$$ $$S^{1/2} \\approx 0.05 = 1 \\text{ in } 400$$"
+                    explanation: "The hydraulic radius is \\(R = \\dfrac{8}{8} = 1\\) m. Manning's formula then gives \\[\\begin{aligned} 33.33 &amp;= \\dfrac{1}{0.012} \\times 8 \\\\ &amp;\\quad \\times 1^{2{/}3} \\times S^{1{/}2} \\end{aligned}\\] so \\(S^{1{/}2} \\approx 0.05\\) and \\(S \\approx 0.0025\\), which is 1 in 400."
                 },
                 {
                     id: "cm6q055",

@@ -31,7 +31,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Water mass is 240 - 192 = 48 g. Gravimetric water content uses dry solids as the denominator: w = 48/192 = 0.25 = 25%. Dividing by moist mass would incorrectly give 20%.<p>Capsule 4th ed., p. 6; topic 2 point 2.</p>",
+          "explanation": "Water mass is \\(240 - 192 = 48\\) g. Gravimetric water content uses dry solids as the denominator: \\[w = \\dfrac{48}{192} = 0.25 = 25\\%\\] Dividing by moist mass would incorrectly give 20%.<p>Capsule 4th ed., p. 6; topic 2 point 2.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -107,7 +107,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Water occupies the remaining 40 - 10 = 30 cm<sup>3</sup>. Degree of saturation is water volume divided by total void volume, so S = 30/40 = 75%. Air content here is 25%, not the degree of saturation.<p>Capsule 4th ed., p. 6; topic 2 point 4.</p>",
+          "explanation": "Water occupies the remaining \\(40 - 10 = 30\\ \\text{cm}^3\\) of the voids, so \\[S = \\dfrac{V_w}{V_v} = \\dfrac{30}{40} = 75\\%\\] Air content here is 25%, not the degree of saturation.<p>Capsule 4th ed., p. 6; topic 2 point 4.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -145,7 +145,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "At LL = 60%, the A-line ordinate is 0.73(60 - 20) = 29.2%. PI = 20% lies below it, indicating silty behavior. LL exceeds 50%, giving H rather than L; the stated inorganic condition excludes OH.<p>Source note: Page 6 point 5 confuses A-line position with plasticity level and organic identification. Below the A-line does not by itself establish low plasticity or organic content.</p><p>Capsule 4th ed., p. 6; topic 2 point 5.</p>",
+          "explanation": "At a liquid limit of 60%, the A-line ordinate is \\[\\text{PI}_A = 0.73(60 - 20) = 29.2\\%\\] The actual PI of 20% lies below it, indicating silty behaviour. LL exceeds 50%, giving H rather than L; the stated inorganic condition excludes OH.<p>Source note: Page 6 point 5 confuses A-line position with plasticity level and organic identification. Below the A-line does not by itself establish low plasticity or organic content.</p><p>Capsule 4th ed., p. 6; topic 2 point 5.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -373,7 +373,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Cu = D60/D10 = 0.84/0.12 = 7.0, a dimensionless diameter ratio. D10 means 10% finer by mass, not 10% retained; reversing the ratio gives 0.143.<p>Capsule 4th ed., p. 6; topic 2 point 10.</p>",
+          "explanation": "\\[C_u = \\dfrac{D_{60}}{D_{10}} = \\dfrac{0.84}{0.12} = 7.0\\] This is a dimensionless diameter ratio. \\(D_{10}\\) means 10% finer by mass, not 10% retained; reversing the ratio gives 0.143.<p>Capsule 4th ed., p. 6; topic 2 point 10.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -449,7 +449,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Cc = D30 squared/(D10 D60) = 0.16/0.08 = 2. Cu = 0.80/0.10 = 8. Both clean-sand grading conditions hold: Cu at least 6 and Cc from 1 to 3, so the symbol is SW.<p>Capsule 4th ed., p. 6; topic 2 point 12.</p>",
+          "explanation": "\\[C_c = \\dfrac{D_{30}^2}{D_{10} D_{60}} = \\dfrac{0.16}{0.08} = 2\\] \\[C_u = \\dfrac{0.80}{0.10} = 8\\] Both clean-sand grading conditions hold, \\(C_u \\ge 6\\) and \\(1 \\le C_c \\le 3\\), so the symbol is SW.<p>Capsule 4th ed., p. 6; topic 2 point 12.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -601,7 +601,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The cutter gives in-situ bulk density 1800/1000 = 1.80 g/cm<sup>3</sup>. Dry density is 1.80/(1 + 0.20) = 1.50 g/cm<sup>3</sup>. The method is unsuitable where gravel or very hard ground prevents representative undisturbed cutting.<p>Capsule 4th ed., p. 6; topic 2 point 16.</p>",
+          "explanation": "The cutter gives the in-situ bulk density, and dividing by \\(1 + w\\) removes the water: \\[\\rho = \\dfrac{1800}{1000} = 1.80\\ \\text{g/cm}^3\\] \\[\\rho_d = \\dfrac{1.80}{1 + 0.20} = 1.50\\ \\text{g/cm}^3\\] The method is unsuitable where gravel or very hard ground prevents representative undisturbed cutting.<p>Capsule 4th ed., p. 6; topic 2 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -639,7 +639,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The phase identity is Se = wGs with w and S as decimal ratios. Thus S = 0.30(2.70)/0.81 = 1.00. At full saturation e = wGs, not e = w unless Gs happens to equal unity.<p>Source note: Page 6 point 17 has incomplete wording: equality is between e and the product wGs.</p><p>Capsule 4th ed., p. 6; topic 2 point 17.</p>",
+          "explanation": "The phase identity is \\(Se = wG_s\\), with \\(w\\) and \\(S\\) as decimal ratios. Thus \\[S = \\dfrac{0.30 \\times 2.70}{0.81} = 1.00\\] At full saturation \\(e = wG_s\\), not \\(e = w\\) unless \\(G_s\\) happens to equal unity.<p>Source note: Page 6 point 17 has incomplete wording: equality is between e and the product wGs.</p><p>Capsule 4th ed., p. 6; topic 2 point 17.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -715,7 +715,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Specific gravity compares the mass of solids with an equal volume of water. Gs = 50/20 = 2.50. Entrapped air must be removed; the bottle test determines particle specific gravity, not the bulk density of a porous soil mass.<p>Capsule 4th ed., p. 7; topic 2 point 21.</p>",
+          "explanation": "Specific gravity compares the mass of solids with an equal volume of water: \\[G_s = \\dfrac{50}{20} = 2.50\\] Entrapped air must be removed; the bottle test determines particle specific gravity, not the bulk density of a porous soil mass.<p>Capsule 4th ed., p. 7; topic 2 point 21.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -753,7 +753,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "A small standpipe converts a small water volume into an observable head change. Integrating Darcy's law gives k = aL ln(h1/h2)/(At). Saturation, leakage control and suitable equipment are essential, particularly for very low-permeability clays.<p>Capsule 4th ed., p. 7; topic 2 point 26.</p>",
+          "explanation": "A small standpipe converts a small water volume into an observable head change. Integrating Darcy's law gives \\[k = \\dfrac{aL}{At}\\ln\\dfrac{h_1}{h_2}\\] Saturation, leakage control and suitable equipment are essential, particularly for very low-permeability clays.<p>Capsule 4th ed., p. 7; topic 2 point 26.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -791,7 +791,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "For steady saturated laminar flow, k = VL/(Aht) = 120(10)/(20 times 30 times 60) = 0.0333 cm/s. Coarse soils usually provide conveniently measurable discharge for this method; volume must first be related to collection time.<p>Capsule 4th ed., p. 7; topic 2 point 27.</p>",
+          "explanation": "For steady saturated laminar flow, \\[\\begin{aligned} k &amp;= \\dfrac{VL}{Aht} = \\dfrac{120 \\times 10}{20 \\times 30 \\times 60} \\\\ &amp;= 0.0333\\ \\text{cm/s} \\end{aligned}\\] Coarse soils usually provide conveniently measurable discharge for this method; volume must first be related to collection time.<p>Capsule 4th ed., p. 7; topic 2 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -905,7 +905,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The coarse fraction exceeds half the mass and is predominantly sand, so S applies. Fines exceed the clean-sand range and are clayey: the A-line at LL = 40 is 0.73(40 - 20) = 14.6, below PI = 20. Thus SC applies, not CL for the entire soil.<p>Capsule 4th ed., p. 9; topic 2 point 121.</p>",
+          "explanation": "The coarse fraction exceeds half the mass and is predominantly sand, so S applies. Fines exceed the clean-sand range and are clayey: at LL of 40 the A-line is \\[0.73(40 - 20) = 14.6\\] which is below the PI of 20. Thus SC applies, not CL for the entire soil.<p>Capsule 4th ed., p. 9; topic 2 point 121.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -943,7 +943,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The phase identity is Se = wGs. At full saturation S = 1, hence e = 0.24(2.75) = 0.66. Water content must be used as a decimal, not the number 24. This source is the second, separately retained entry numbered 132.<p>Capsule 4th ed., p. 10; topic 2 point 132.</p>",
+          "explanation": "The phase identity is \\(Se = wG_s\\). At full saturation \\(S = 1\\), hence \\[e = 0.24 \\times 2.75 = 0.66\\] Water content must be used as a decimal, not the number 24. This source is the second, separately retained entry numbered 132.<p>Capsule 4th ed., p. 10; topic 2 point 132.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1064,7 +1064,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Each drop is H/Nd and parallel flow channels add discharge. Thus q = kH(Nf/Nd) = 0.0002(6)(3/12) = 0.0003 m<sup>2</sup>/s, equivalently m<sup>3</sup>/s per metre width. Reversing the channel/drop ratio overestimates flow.<p>Source note: Page 7 point 23 has damaged fraction order; restored from Darcy flow through square elements.</p><p>Capsule 4th ed., p. 7; topic 2 point 23.</p>",
+          "explanation": "Each potential drop is \\(\\dfrac{H}{N_d}\\) and parallel flow channels add discharge: \\[\\begin{aligned} q &amp;= kH\\,\\dfrac{N_f}{N_d} \\\\ &amp;= 0.0002 \\times 6 \\times \\dfrac{3}{12} \\\\ &amp;= 0.0003\\ \\text{m}^2\\text{/s} \\end{aligned}\\] That is, cubic metres per second per metre width. Reversing the ratio of channels to drops overestimates flow.<p>Source note: Page 7 point 23 has damaged fraction order; restored from Darcy flow through square elements.</p><p>Capsule 4th ed., p. 7; topic 2 point 23.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1102,7 +1102,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Relative compaction = field dry unit weight/reference maximum dry unit weight times 100 = 18.0/19.2 times 100 = 93.75%. It is not relative density, which uses maximum and minimum void ratios of granular soil.<p>Capsule 4th ed., p. 7; topic 2 point 24.</p>",
+          "explanation": "Relative compaction compares the field dry unit weight with the reference maximum: \\[\\text{RC} = \\dfrac{18.0}{19.2} \\times 100 = 93.75\\%\\] It is not relative density, which uses maximum and minimum void ratios of granular soil.<p>Capsule 4th ed., p. 7; topic 2 point 24.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1178,7 +1178,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "av = 0.04/100 = 0.000400 kPa<sup>-1</sup> measures void-ratio decrease per stress increase. Volume strain divides that decrease by 1 + e0, so mv = av/1.80 = 0.000222 kPa<sup>-1</sup>.<p>Source note: Page 7 point 29 confuses av with mv: strain/stress defines volume compressibility, whereas av uses void-ratio change.</p><p>Capsule 4th ed., p. 7; topic 2 point 29.</p>",
+          "explanation": "The coefficient of compressibility measures void-ratio decrease per stress increase: \\[a_v = \\dfrac{0.04}{100} = 0.000400\\ \\text{kPa}^{-1}\\] Volume strain divides that decrease by \\(1 + e_0\\), so \\[\\begin{aligned} m_v &amp;= \\dfrac{a_v}{1 + e_0} = \\dfrac{a_v}{1.80} \\\\ &amp;= 0.000222\\ \\text{kPa}^{-1} \\end{aligned}\\]<p>Source note: Page 7 point 29 confuses av with mv: strain/stress defines volume compressibility, whereas av uses void-ratio change.</p><p>Capsule 4th ed., p. 7; topic 2 point 29.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1216,7 +1216,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Upward seepage subtracts from the submerged-weight contribution to effective stress. At i = gamma'/gamma_w, the grain-contact support vanishes in the unconfined idealization. Total stress and pore pressure need not vanish, and downward seepage increases effective stress.<p>Capsule 4th ed., p. 7; topic 2 point 30.</p>",
+          "explanation": "Upward seepage subtracts from the submerged-weight contribution to effective stress. At \\[i = \\dfrac{\\gamma'}{\\gamma_w}\\] the grain-contact support vanishes in the unconfined idealization. Total stress and pore pressure need not vanish, and downward seepage increases effective stress.<p>Capsule 4th ed., p. 7; topic 2 point 30.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1406,7 +1406,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The additional water adds 10 times 2 = 20 kPa to total stress and also 20 kPa to hydrostatic pore pressure. Since sigma' = sigma - u, the changes cancel. A water-table rise within previously unsaturated soil is a different problem.<p>Capsule 4th ed., p. 7; topic 2 point 41.</p>",
+          "explanation": "The additional water adds to total stress and equally to hydrostatic pore pressure: \\[\\Delta\\sigma = \\Delta u = 10 \\times 2 = 20\\ \\text{kPa}\\] Since \\(\\sigma' = \\sigma - u\\), the changes cancel. A water-table rise within previously unsaturated soil is a different problem.<p>Capsule 4th ed., p. 7; topic 2 point 41.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1444,7 +1444,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "At the quick condition the upward seepage force equals submerged weight. Hence ic = (Gs - 1)/(1 + e) = (2.68 - 1)/(1 + 0.68) = 1.68/1.68 = 1.00. Gs is dimensionless; the numerator subtracts 1, not the numerical value of water unit weight.<p>Source note: Page 7 point 45 prints/extracts &#39;2.68 - 10&#39;; dimensional reasoning requires 2.68 - 1.</p><p>Capsule 4th ed., p. 7; topic 2 point 45.</p>",
+          "explanation": "At the quick condition the upward seepage force equals the submerged weight: \\[\\begin{aligned} i_c &amp;= \\dfrac{G_s - 1}{1 + e} = \\dfrac{2.68 - 1}{1 + 0.68} \\\\ &amp;= \\dfrac{1.68}{1.68} = 1.00 \\end{aligned}\\] \\(G_s\\) is dimensionless; the numerator subtracts 1, not the numerical value of water unit weight.<p>Source note: Page 7 point 45 prints/extracts &#39;2.68 - 10&#39;; dimensional reasoning requires 2.68 - 1.</p><p>Capsule 4th ed., p. 7; topic 2 point 45.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1520,7 +1520,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Hydrostatic gauge pore pressure is u = gamma_w h = 10 times 5 = 50 kPa. It is pressure in the water phase, not the stress carried by grain contacts; effective stress requires subtracting u from total normal stress.<p>Capsule 4th ed., p. 7; topic 2 point 51.</p>",
+          "explanation": "Hydrostatic gauge pore pressure is \\[u = \\gamma_w h = 10 \\times 5 = 50\\ \\text{kPa}\\] It is pressure in the water phase, not the stress carried by grain contacts; effective stress requires subtracting \\(u\\) from total normal stress.<p>Capsule 4th ed., p. 7; topic 2 point 51.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1558,7 +1558,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Geostatic stress is produced by self-weight. Sum each layer's unit weight times thickness: sigma_v = 18(2) + 20(3) = 96 kPa. This is total stress; a groundwater profile would additionally be needed to obtain effective stress.<p>Capsule 4th ed., p. 7; topic 2 point 52.</p>",
+          "explanation": "Geostatic stress is produced by self-weight. Sum each layer's unit weight times thickness: \\[\\begin{aligned} \\sigma_v &amp;= 18 \\times 2 + 20 \\times 3 \\\\ &amp;= 96\\ \\text{kPa} \\end{aligned}\\] This is total stress; a groundwater profile would additionally be needed to obtain effective stress.<p>Capsule 4th ed., p. 7; topic 2 point 52.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1596,7 +1596,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The quick-condition balance gives ic = (Gs - 1)/(1 + e). At fixed Gs, increasing e reduces submerged weight per unit volume and therefore reduces ic. Permeability controls discharge and timing but does not enter this ideal static threshold.<p>Source note: Page 8 point 58&#39;s G - 1 numerator is separated from its fraction in the extraction; the restored expression follows force equilibrium.</p><p>Capsule 4th ed., p. 8; topic 2 point 58.</p>",
+          "explanation": "The quick-condition balance gives \\[i_c = \\dfrac{G_s - 1}{1 + e}\\] At fixed \\(G_s\\), increasing \\(e\\) reduces submerged weight per unit volume and therefore reduces \\(i_c\\). Permeability controls discharge and timing but does not enter this ideal static threshold.<p>Source note: Page 8 point 58&#39;s G - 1 numerator is separated from its fraction in the extraction; the restored expression follows force equilibrium.</p><p>Capsule 4th ed., p. 8; topic 2 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1634,7 +1634,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Neutral stress is the older term for pore-water pressure, u = 60 kPa. Effective normal stress is sigma' = 150 - 60 = 90 kPa. Hydrostatic pore pressure acts normally in all directions and does not by itself provide soil shear resistance.<p>Capsule 4th ed., p. 8; topic 2 point 66.</p>",
+          "explanation": "Neutral stress is the older term for pore-water pressure, \\(u = 60\\) kPa. Effective normal stress is \\[\\sigma' = 150 - 60 = 90\\ \\text{kPa}\\] Hydrostatic pore pressure acts normally in all directions and does not by itself provide soil shear resistance.<p>Capsule 4th ed., p. 8; topic 2 point 66.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1786,7 +1786,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Energy per mould is proportional to rammer mass times fall times blows per layer times number of layers. The common factors cancel: ratio = 4.9(0.45)(5)/[2.6(0.31)(3)] = 4.56. Comparing rammer masses alone misses drop height and layer count.<p>Capsule 4th ed., p. 9; topic 2 point 125.</p>",
+          "explanation": "Energy per mould is proportional to rammer mass times fall times blows per layer times number of layers. The common factors cancel: \\[\\dfrac{4.9 \\times 0.45 \\times 5}{2.6 \\times 0.31 \\times 3} = 4.56\\] Comparing rammer masses alone misses drop height and layer count.<p>Capsule 4th ed., p. 9; topic 2 point 125.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1824,7 +1824,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Relative compaction is field dry unit weight divided by the chosen laboratory maximum for that soil and method. The ratios are 18/20 = 90% and 18/19 = 94.74%. Soil type matters through its reference curve, and the selected effort must also be specified.<p>Capsule 4th ed., p. 10; topic 2 point 126.</p>",
+          "explanation": "Relative compaction is field dry unit weight divided by the chosen laboratory maximum for that soil and method: \\[\\dfrac{18}{20} = 90\\%\\] \\[\\dfrac{18}{19} = 94.74\\%\\] Soil type matters through its reference curve, and the selected effort must also be specified.<p>Capsule 4th ed., p. 10; topic 2 point 126.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1862,7 +1862,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The elementary relation q = kiA assumes a linear viscous-flow regime. Saturation and steady conditions alone do not exclude inertial effects at high velocities. Conductivity may also vary in unsaturated flow, so its generalized treatment needs additional constitutive information.<p>Source note: Page 10 point 127 omits the central laminar/linear-flow condition and overstates saturation/steadiness as universal restrictions.</p><p>Capsule 4th ed., p. 10; topic 2 point 127.</p>",
+          "explanation": "The elementary relation \\[q = kiA\\] assumes a linear viscous-flow regime. Saturation and steady conditions alone do not exclude inertial effects at high velocities. Conductivity may also vary in unsaturated flow, so its generalized treatment needs additional constitutive information.<p>Source note: Page 10 point 127 omits the central laminar/linear-flow condition and overstates saturation/steadiness as universal restrictions.</p><p>Capsule 4th ed., p. 10; topic 2 point 127.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1900,7 +1900,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Darcy discharge is q = kiA = 0.0003(0.4)(2) = 0.00024 m<sup>3</sup>/s. The quantity ki is discharge velocity based on gross cross-section; actual mean pore-water velocity additionally depends on the effective flow porosity.<p>Capsule 4th ed., p. 10; topic 2 point 127.</p>",
+          "explanation": "Darcy discharge is \\[\\begin{aligned} q &amp;= kiA \\\\ &amp;= 0.0003 \\times 0.4 \\times 2 \\\\ &amp;= 0.00024\\ \\text{m}^3\\text{/s} \\end{aligned}\\] The quantity \\(ki\\) is the discharge velocity based on the gross cross-section; the actual mean pore-water velocity additionally depends on the effective flow porosity.<p>Capsule 4th ed., p. 10; topic 2 point 127.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1938,7 +1938,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Hydraulic gradient is total head loss divided by flow-path length: i = (12 - 8)/20 = 0.20. Use head difference, including elevation and pressure contributions as appropriate, rather than either absolute head or merely vertical soil thickness.<p>Capsule 4th ed., p. 10; topic 2 point 148.</p>",
+          "explanation": "Hydraulic gradient is total head loss divided by flow-path length: \\[i = \\dfrac{12 - 8}{20} = 0.20\\] Use head difference, including elevation and pressure contributions as appropriate, rather than either absolute head or merely vertical soil thickness.<p>Capsule 4th ed., p. 10; topic 2 point 148.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2021,7 +2021,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Fdry = tan(phi)/tan(beta). For parallel seepage with the water surface at the slope surface, Fseepage = (gamma'/gamma_sat)Fdry. Thus the ratio is (20 - 10)/20 = 0.50. It is not a universal factor for cohesive slopes or arbitrary water levels.<p>Source note: Page 7 point 37 is valid only with the stated cohesionless infinite-slope and seepage assumptions and appropriate unit-weight ratio.</p><p>Capsule 4th ed., p. 7; topic 2 point 37.</p>",
+          "explanation": "For a dry cohesionless infinite slope, \\[F_{\\text{dry}} = \\dfrac{\\tan\\phi}{\\tan\\beta}\\] With parallel seepage and the water surface at the slope surface, \\[F_{\\text{seep}} = \\dfrac{\\gamma'}{\\gamma_{\\text{sat}}}\\,F_{\\text{dry}}\\] so the ratio is \\[\\dfrac{20 - 10}{20} = 0.50\\] It is not a universal factor for cohesive slopes or arbitrary water levels.<p>Source note: Page 7 point 37 is valid only with the stated cohesionless infinite-slope and seepage assumptions and appropriate unit-weight ratio.</p><p>Capsule 4th ed., p. 7; topic 2 point 37.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2097,7 +2097,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "cm = c/F = 30/1.5 = 20 kPa. In a frictional soil the mobilized resistance also includes sigma' tan(phi_m), with tan(phi_m) = tan(phi)/F under uniform reduction. Thus cm is not generally the complete applied shear stress.<p>Source note: Page 7 point 43 misidentifies cm; it denotes mobilized cohesion in the slope-stability context, consistent with point 120.</p><p>Capsule 4th ed., p. 7; topic 2 point 43.</p>",
+          "explanation": "\\[c_m = \\dfrac{c}{F} = \\dfrac{30}{1.5} = 20\\ \\text{kPa}\\] In a frictional soil the mobilized resistance also includes \\(\\sigma'\\tan\\phi_m\\), with \\[\\tan\\phi_m = \\dfrac{\\tan\\phi}{F}\\] under uniform reduction. Thus \\(c_m\\) is not generally the complete applied shear stress.<p>Source note: Page 7 point 43 misidentifies cm; it denotes mobilized cohesion in the slope-stability context, consistent with point 120.</p><p>Capsule 4th ed., p. 7; topic 2 point 43.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2135,7 +2135,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Measured u gives sigma1' = sigma1 - u and sigma3' = sigma3 - u for each CU test. Effective failure circles can then define c' and phi'. Without pore-pressure data, a total-stress test generally cannot provide that conversion.<p>Source note: Page 7 point 47 is false as a blanket statement: CU tests with pore-pressure measurement provide effective parameters.</p><p>Capsule 4th ed., p. 7; topic 2 point 47.</p>",
+          "explanation": "Measured pore pressure converts each CU failure state to effective stresses: \\[\\sigma'_1 = \\sigma_1 - u, \\qquad \\sigma'_3 = \\sigma_3 - u\\] Effective failure circles can then define \\(c'\\) and \\(\\phi'\\). Without pore-pressure data, a total-stress test generally cannot provide that conversion.<p>Source note: Page 7 point 47 is false as a blanket statement: CU tests with pore-pressure measurement provide effective parameters.</p><p>Capsule 4th ed., p. 7; topic 2 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2173,7 +2173,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The centre is the mean normal stress, (180 + 60)/2 = 120 kPa. The radius is half the difference, (180 - 60)/2 = 60 kPa, which is the maximum shear for that in-plane stress pair. Absolute three-dimensional maximum shear requires all principal stresses.<p>Capsule 4th ed., p. 7; topic 2 point 48.</p>",
+          "explanation": "The centre is the mean normal stress and the radius is half the difference: \\[C = \\dfrac{180 + 60}{2} = 120\\ \\text{kPa}\\] \\[R = \\dfrac{180 - 60}{2} = 60\\ \\text{kPa}\\] The radius is the maximum shear for that in-plane stress pair. Absolute three-dimensional maximum shear requires all principal stresses.<p>Capsule 4th ed., p. 7; topic 2 point 48.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2249,7 +2249,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Unconfined compression has zero lateral total stress. The failure Mohr-circle radius is (qu - 0)/2, so su = 90/2 = 45 kPa for saturated phi_u = 0 clay. This conversion is not generally applicable to frictional or unsaturated specimens.<p>Source note: Page 7 point 55&#39;s &#39;Unconfined Confined&#39; wording is corrected to unconfined compression.</p><p>Capsule 4th ed., p. 7; topic 2 point 55.</p>",
+          "explanation": "Unconfined compression has zero lateral total stress, so the radius of the failure Mohr circle gives \\[s_u = \\dfrac{q_u - 0}{2} = \\dfrac{90}{2} = 45\\ \\text{kPa}\\] for saturated \\(\\phi_u = 0\\) clay. This conversion is not generally applicable to frictional or unsaturated specimens.<p>Source note: Page 7 point 55&#39;s &#39;Unconfined Confined&#39; wording is corrected to unconfined compression.</p><p>Capsule 4th ed., p. 7; topic 2 point 55.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2287,7 +2287,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The mean is (120 + 40)/2 = 80 kPa. Radius = sqrt[((120 - 40)/2)^2 + 30^2] = sqrt(1600 + 900) = 50 kPa. The major principal stress is mean plus radius, 130 kPa; the minor is 30 kPa.<p>Source note: Page 7 point 57 loses the square root and fraction layout in extraction; the stress-transformation identity restores them.</p><p>Capsule 4th ed., pp. 7, 8; topic 2 point 57.</p>",
+          "explanation": "The centre and radius of the Mohr circle are \\[\\sigma_c = \\dfrac{120 + 40}{2} = 80\\ \\text{kPa}\\] \\[\\begin{aligned} R &amp;= \\sqrt{\\left(\\dfrac{120 - 40}{2}\\right)^2 + 30^2} \\\\ &amp;= \\sqrt{1600 + 900} = 50\\ \\text{kPa} \\end{aligned}\\] so the major principal stress is \\[\\sigma_1 = 80 + 50 = 130\\ \\text{kPa}\\] The minor principal stress is \\(80 - 50 = 30\\) kPa.<p>Source note: Page 7 point 57 loses the square root and fraction layout in extraction; the stress-transformation identity restores them.</p><p>Capsule 4th ed., pp. 7, 8; topic 2 point 57.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2326,7 +2326,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Constant volume gives A0 L0 = Ac L0(1 - epsilon), hence Ac = A0/(1 - epsilon) = 1000/0.80 = 1250 mm<sup>2</sup>. Dividing load by the original area would overestimate the stress as the specimen shortens and widens.<p>Capsule 4th ed., p. 8; topic 2 point 60.</p>",
+          "explanation": "Constant volume gives \\(A_0 L_0 = A_c L_0 (1 - \\varepsilon)\\), hence \\[\\begin{aligned} A_c &amp;= \\dfrac{A_0}{1 - \\varepsilon} = \\dfrac{1000}{0.80} \\\\ &amp;= 1250\\ \\text{mm}^2 \\end{aligned}\\] Dividing load by the original area would overestimate the stress as the specimen shortens and widens.<p>Capsule 4th ed., p. 8; topic 2 point 60.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2364,7 +2364,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The side and two ends give T = su pi D^2(H/2 + D/6). Here the geometric factor is pi/1500 m<sup>3</sup>; su = 20 pi divided by (pi/1500) = 30000 Pa = 30 kPa. Omitting the end resistance gives an erroneous 40 kPa.<p>Source note: Page 8 point 62&#39;s formula is restored by integrating side and end resisting moments; rod-friction correction and full embedment are stated.</p><p>Capsule 4th ed., p. 8; topic 2 point 62.</p>",
+          "explanation": "The cylindrical side and the two ends together give \\[T = s_u \\pi D^2\\left(\\dfrac{H}{2} + \\dfrac{D}{6}\\right)\\] With \\(D = H = 0.10\\) m the geometric factor is \\[\\begin{aligned} &amp;\\pi (0.10)^2\\left(\\dfrac{0.10}{2} + \\dfrac{0.10}{6}\\right) \\\\ &amp;= \\dfrac{\\pi}{1500}\\ \\text{m}^3 \\end{aligned}\\] so \\[\\begin{aligned} s_u &amp;= 20\\pi \\times \\dfrac{1500}{\\pi} \\\\ &amp;= 30{,}000\\ \\text{Pa} = 30\\ \\text{kPa} \\end{aligned}\\] Omitting the end resistance gives an erroneous 40 kPa.<p>Source note: Page 8 point 62&#39;s formula is restored by integrating side and end resisting moments; rod-friction correction and full embedment are stated.</p><p>Capsule 4th ed., p. 8; topic 2 point 62.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2402,7 +2402,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Side torque is su pi D^3/2, while both ends contribute su pi D^3/6. Their sum is 2su pi D^3/3, so the end fraction is (1/6)/(2/3) = 1/4. Treating all torque as side resistance overestimates the inferred strength.<p>Capsule 4th ed., p. 8; topic 2 point 62.</p>",
+          "explanation": "With \\(H = D\\), the cylindrical side and the two ends resist the torque: \\[T_s = s_u \\pi D H \\cdot \\dfrac{D}{2} = \\dfrac{s_u \\pi D^3}{2}\\] \\[T_e = 2 \\times \\dfrac{s_u \\pi D^3}{12} = \\dfrac{s_u \\pi D^3}{6}\\] Their sum is \\[\\begin{aligned} T &amp;= \\dfrac{s_u \\pi D^3}{2} + \\dfrac{s_u \\pi D^3}{6} \\\\ &amp;= \\dfrac{2 s_u \\pi D^3}{3} \\end{aligned}\\] so the ends supply \\[\\dfrac{T_e}{T} = \\dfrac{1}{6} \\times \\dfrac{3}{2} = \\dfrac{1}{4}\\] Treating all torque as side resistance overestimates the inferred strength.<p>Capsule 4th ed., p. 8; topic 2 point 62.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2478,7 +2478,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The chosen total-stress model gives tau_f = cu + sigma tan(phi_u) = 25 + 100 tan(0) = 25 kPa. This is an undrained idealization for the specified soil state, not a claim that real clay strength never changes with consolidation history.<p>Capsule 4th ed., p. 8; topic 2 point 65.</p>",
+          "explanation": "The chosen total-stress model gives \\[\\begin{aligned} \\tau_f &amp;= c_u + \\sigma\\tan\\phi_u \\\\ &amp;= 25 + 100\\tan 0^\\circ \\\\ &amp;= 25\\ \\text{kPa} \\end{aligned}\\] This is an undrained idealization for the specified soil state, not a claim that real clay strength never changes with consolidation history.<p>Capsule 4th ed., p. 8; topic 2 point 65.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2554,7 +2554,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Stress-transformation terms contain cos(2 theta) and sin(2 theta), so the circle angle has magnitude twice the physical rotation: 2 times 25 = 50 degrees. Its direction depends on the adopted shear-sign and plane-orientation convention.<p>Capsule 4th ed., p. 8; topic 2 point 68.</p>",
+          "explanation": "Stress-transformation terms contain \\(\\cos 2\\theta\\) and \\(\\sin 2\\theta\\), so the circle angle has magnitude twice the physical rotation: \\[2 \\times 25^\\circ = 50^\\circ\\] Its direction depends on the adopted shear-sign and plane-orientation convention.<p>Capsule 4th ed., p. 8; topic 2 point 68.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2630,7 +2630,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Rearrange tau_f = c' + sigma_n' tan(phi'): c' = 70 - 100(0.5) = 20 kPa. Subtract the frictional part using effective normal stress; adding it would not recover the intercept of the failure line.<p>Capsule 4th ed., p. 8; topic 2 point 73.</p>",
+          "explanation": "Rearrange \\(\\tau_f = c' + \\sigma'_n\\tan\\phi'\\): \\[c' = 70 - 100 \\times 0.5 = 20\\ \\text{kPa}\\] Subtract the frictional part using effective normal stress; adding it would not recover the intercept of the failure line.<p>Capsule 4th ed., p. 8; topic 2 point 73.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2668,7 +2668,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The dry cohesionless expression is F = tan(phi')/tan(beta). Steepening increases the denominator and therefore reduces F. Flattening can improve this idealized stability, although real slopes also require groundwater and geological assessment.<p>Capsule 4th ed., p. 8; topic 2 point 75.</p>",
+          "explanation": "The dry cohesionless expression is \\[F = \\dfrac{\\tan\\phi'}{\\tan\\beta}\\] Steepening increases the denominator and therefore reduces \\(F\\). Flattening can improve this idealized stability, although real slopes also require groundwater and geological assessment.<p>Capsule 4th ed., p. 8; topic 2 point 75.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2744,7 +2744,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Subtracting u lowers the mean normal stress by u. The principal-stress difference is unchanged because (sigma1 - u) - (sigma3 - u) = sigma1 - sigma3, so the radius and maximum shear stress for the pair remain unchanged.<p>Capsule 4th ed., p. 8; topic 2 point 77.</p>",
+          "explanation": "Subtracting \\(u\\) lowers the mean normal stress by \\(u\\). The principal-stress difference is unchanged because \\[\\begin{aligned} &amp;(\\sigma_1 - u) - (\\sigma_3 - u) \\\\ &amp;= \\sigma_1 - \\sigma_3 \\end{aligned}\\] so the radius and maximum shear stress for the pair remain unchanged.<p>Capsule 4th ed., p. 8; topic 2 point 77.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2782,7 +2782,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Maximum shear is half the greatest principal-stress difference: (220 - 80)/2 = 70 kPa. The 140 kPa difference is the diameter of the corresponding Mohr circle, while 150 kPa is its centre coordinate.<p>Source note: Point 86&#39;s point-level extract omits the divisor 2, but the full page 8 text includes it; this is an extraction defect, not evidence of a printed formula error.</p><p>Capsule 4th ed., p. 8; topic 2 point 86.</p>",
+          "explanation": "Maximum shear is half the greatest principal-stress difference: \\[\\tau_{\\max} = \\dfrac{220 - 80}{2} = 70\\ \\text{kPa}\\] The 140 kPa difference is the diameter of the corresponding Mohr circle, while 150 kPa is its centre coordinate.<p>Source note: Point 86&#39;s point-level extract omits the divisor 2, but the full page 8 text includes it; this is an extraction defect, not evidence of a printed formula error.</p><p>Capsule 4th ed., p. 8; topic 2 point 86.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2820,7 +2820,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The Mohr-Coulomb form is tau_f = c' + sigma_n' tan(phi'), so envelope slope equals tan(phi'). arctan(0.577) is approximately 30 degrees. This friction angle is not automatically the dilation angle or an earth-pressure coefficient.<p>Capsule 4th ed., p. 9; topic 2 point 91.</p>",
+          "explanation": "The Mohr-Coulomb form is \\[\\tau_f = c' + \\sigma'_n\\tan\\phi'\\] so the envelope slope equals \\(\\tan\\phi'\\), and \\[\\phi' = \\tan^{-1} 0.577 \\approx 30^\\circ\\] This friction angle is not automatically the dilation angle or an earth-pressure coefficient.<p>Capsule 4th ed., p. 9; topic 2 point 91.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2934,7 +2934,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The required mobilized cohesion is cm = Sn gamma H = 0.10(18)(10) = 18 kPa. The cohesion factor is c/cm = 36/18 = 2.0. Sn is dimensionless and chart conditions must match slope geometry, drainage and the assumed strength model.<p>Capsule 4th ed., p. 9; topic 2 point 120.</p>",
+          "explanation": "The required mobilized cohesion is \\[\\begin{aligned} c_m &amp;= S_n\\gamma H \\\\ &amp;= 0.10 \\times 18 \\times 10 \\\\ &amp;= 18\\ \\text{kPa} \\end{aligned}\\] The cohesion factor of safety is \\[F_c = \\dfrac{c}{c_m} = \\dfrac{36}{18} = 2.0\\] \\(S_n\\) is dimensionless and chart conditions must match slope geometry, drainage and the assumed strength model.<p>Capsule 4th ed., p. 9; topic 2 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3010,7 +3010,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The overlap area is 30 times 0.0001 = 0.003 m<sup>2</sup>. Nominal shear stress is 180/0.003 = 60000 Pa = 60 kPa. The box imposes a failure plane and stresses are nonuniform, so this is an average measured stress on that plane.<p>Capsule 4th ed., p. 10; topic 2 point 132.</p>",
+          "explanation": "The overlap area is \\[30 \\times 0.0001 = 0.003\\ \\text{m}^2\\] so the nominal shear stress is \\[\\begin{aligned} \\tau &amp;= \\dfrac{180}{0.003} = 60{,}000\\ \\text{Pa} \\\\ &amp;= 60\\ \\text{kPa} \\end{aligned}\\] The box imposes a failure plane and stresses are nonuniform, so this is an average measured stress on that plane.<p>Capsule 4th ed., p. 10; topic 2 point 132.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3048,7 +3048,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The rapid test with negligible drainage gives an undrained total-stress strength for a suitable saturated cohesive specimen. With zero lateral total stress and phi_u = 0, su = qu/2. It does not directly determine effective c' and phi' without further information.<p>Capsule 4th ed., p. 10; topic 2 point 133.</p>",
+          "explanation": "The rapid test with negligible drainage gives an undrained total-stress strength for a suitable saturated cohesive specimen. With zero lateral total stress and \\(\\phi_u = 0\\), \\[s_u = \\dfrac{q_u}{2}\\] It does not directly determine effective \\(c'\\) and \\(\\phi'\\) without further information.<p>Capsule 4th ed., p. 10; topic 2 point 133.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3124,7 +3124,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For the specified cohesionless model, tau_f = sigma_n' tan(phi') = 120 tan(30 degrees) = 69.3 kPa. Zero cohesion does not mean zero shear strength when effective confinement exists; pore pressure matters through its reduction of effective normal stress.<p>Capsule 4th ed., p. 10; topic 2 point 149.</p>",
+          "explanation": "For the specified cohesionless model, \\[\\begin{aligned} \\tau_f &amp;= \\sigma'_n\\tan\\phi' = 120\\tan 30^\\circ \\\\ &amp;= 69.3\\ \\text{kPa} \\end{aligned}\\] Zero cohesion does not mean zero shear strength when effective confinement exists; pore pressure matters through its reduction of effective normal stress.<p>Capsule 4th ed., p. 10; topic 2 point 149.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3169,7 +3169,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The axis bisects the cone's included apex angle, giving a semi-angle of 60/2 = 30 degrees. Confusing the full angle with the half-angle changes the cone geometry; this is a cone-penetration tip, not an SPT split spoon.<p>Capsule 4th ed., p. 5; topic 1 point 124.</p>",
+          "explanation": "The axis bisects the cone's included apex angle, giving a semi-angle of \\[\\dfrac{60^\\circ}{2} = 30^\\circ\\] Confusing the full angle with the half-angle changes the cone geometry; this is a cone-penetration tip, not an SPT split spoon.<p>Capsule 4th ed., p. 5; topic 1 point 124.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3245,7 +3245,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The Mohr-Coulomb failure plane makes 45 + phi/2 with the major principal plane. Here that principal plane is horizontal, so the angle is 45 + 30/2 = 60 degrees. This result must not be transferred indiscriminately to a differently assumed footing wedge.<p>Source note: Page 8 point 63 calls an unspecified foundation &#39;rigid cone&#39; 45 + phi/2. The geometry/model is unresolved in text; this question explicitly tests the defensible Rankine failure-plane relation, not an unseen cone diagram.</p><p>Capsule 4th ed., p. 8; topic 2 point 63.</p>",
+          "explanation": "The Mohr-Coulomb failure plane makes \\(45^\\circ + \\dfrac{\\phi}{2}\\) with the major principal plane. Here that principal plane is horizontal, so the angle is \\[45^\\circ + \\dfrac{30^\\circ}{2} = 60^\\circ\\] This result must not be transferred indiscriminately to a differently assumed footing wedge.<p>Source note: Page 8 point 63 calls an unspecified foundation &#39;rigid cone&#39; 45 + phi/2. The geometry/model is unresolved in text; this question explicitly tests the defensible Rankine failure-plane relation, not an unseen cone diagram.</p><p>Capsule 4th ed., p. 8; topic 2 point 63.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3283,7 +3283,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Area ratio = (Do^2 - Di^2)/Di^2 times 100 = (3025 - 2500)/2500 times 100 = 21%. It compares displaced metal area with sample area; using outside area as denominator gives the wrong 17.36% convention.<p>Capsule 4th ed., p. 8; topic 2 point 69.</p>",
+          "explanation": "The area ratio compares displaced metal area with the sample area: \\[\\begin{aligned} A_r &amp;= \\dfrac{D_o^2 - D_i^2}{D_i^2} \\times 100 \\\\ &amp;= \\dfrac{3025 - 2500}{2500} \\times 100 \\\\ &amp;= 21\\% \\end{aligned}\\] Using the outside area as denominator gives the wrong 17.36% convention.<p>Capsule 4th ed., p. 8; topic 2 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3473,7 +3473,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The expression is sigma_ha' = Ka sigma_v' - 2c' sqrt(Ka). Thus pressure is 0.25(100) - 2(10)(0.5) = 25 - 10 = 15 kPa. The cohesion term contains sqrt(Ka), not Ka; hydrostatic water pressure is added separately.<p>Source note: Page 8 point 82 loses the square root on Ka in the cohesion term.</p><p>Capsule 4th ed., p. 8; topic 2 point 82.</p>",
+          "explanation": "The expression is \\[\\sigma'_{ha} = K_a\\sigma'_v - 2c'\\sqrt{K_a}\\] The frictional term is \\(0.25 \\times 100 = 25\\) kPa and the cohesion term is \\(2 \\times 10 \\times 0.5 = 10\\) kPa, so \\[\\sigma'_{ha} = 25 - 10 = 15\\ \\text{kPa}\\] The cohesion term contains \\(\\sqrt{K_a}\\), not \\(K_a\\); hydrostatic water pressure is added separately.<p>Source note: Page 8 point 82 loses the square root on Ka in the cohesion term.</p><p>Capsule 4th ed., p. 8; topic 2 point 82.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3625,7 +3625,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Ka = (1 - sin(phi'))/(1 + sin(phi')). With sin(30 degrees) = 0.5, Ka = 0.5/1.5 = 1/3. The reciprocal is Kp = 3; 1 - sin(phi') = 1/2 is Jaky's normally consolidated at-rest estimate, not Ka.<p>Capsule 4th ed., p. 8; topic 2 point 85.</p>",
+          "explanation": "\\[K_a = \\dfrac{1 - \\sin\\phi'}{1 + \\sin\\phi'}\\] With \\(\\sin 30^\\circ = 0.5\\), \\[K_a = \\dfrac{0.5}{1.5} = \\dfrac{1}{3}\\] The reciprocal is \\(K_p = 3\\); \\(1 - \\sin\\phi' = \\dfrac{1}{2}\\) is Jaky's normally consolidated at-rest estimate, not \\(K_a\\).<p>Capsule 4th ed., p. 8; topic 2 point 85.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3663,7 +3663,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "A smooth vertical boundary has delta = 0, so the contact traction is normal to the wall and horizontal for the stated level-backfill case. Rough-wall friction or different backfill geometry requires an appropriate modified analysis.<p>Capsule 4th ed., p. 8; topic 2 point 88.</p>",
+          "explanation": "A smooth vertical boundary has \\(\\delta = 0\\), so the contact traction is normal to the wall and horizontal for the stated level-backfill case. Rough-wall friction or different backfill geometry requires an appropriate modified analysis.<p>Capsule 4th ed., p. 8; topic 2 point 88.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3701,7 +3701,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Under lateral restraint the elastic relation gives K0 = nu/(1 - nu) = 0.40/0.60 = 0.667. It is a model-specific estimate, not a universal law for real soils with plastic strain or overconsolidation.<p>Source note: Page 8 point 89&#39;s separated numerator is restored; distinguish this elastic relation from Jaky&#39;s empirical normally consolidated relation.</p><p>Capsule 4th ed., pp. 8, 9; topic 2 point 89.</p>",
+          "explanation": "Under lateral restraint the elastic relation gives \\[K_0 = \\dfrac{\\nu}{1 - \\nu} = \\dfrac{0.40}{0.60} = 0.667\\] It is a model-specific estimate, not a universal law for real soils with plastic strain or overconsolidation.<p>Source note: Page 8 point 89&#39;s separated numerator is restored; distinguish this elastic relation from Jaky&#39;s empirical normally consolidated relation.</p><p>Capsule 4th ed., pp. 8, 9; topic 2 point 89.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3740,7 +3740,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Kp = (1 + sin(phi'))/(1 - sin(phi')) = 1.5/0.5 = 3. Thus sigma_hp' = 3(60) = 180 kPa. Passive resistance requires sufficient wall movement into the soil; it is not the pressure state at a stationary wall.<p>Capsule 4th ed., p. 9; topic 2 point 90.</p>",
+          "explanation": "\\[K_p = \\dfrac{1 + \\sin\\phi'}{1 - \\sin\\phi'} = \\dfrac{1.5}{0.5} = 3\\] Thus \\[\\sigma'_{hp} = 3 \\times 60 = 180\\ \\text{kPa}\\] Passive resistance requires sufficient wall movement into the soil; it is not the pressure state at a stationary wall.<p>Capsule 4th ed., p. 9; topic 2 point 90.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3778,7 +3778,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The threshold conditions are met: saturated fine sand and Nc greater than 15. Thus Nd = 15 + 0.5(27 - 15) = 15 + 6 = 21. Halving the entire Nc gives the incorrect 13.5; the procedure halves only the excess over 15.<p>Capsule 4th ed., p. 10; topic 2 point 130.</p>",
+          "explanation": "The threshold conditions are met: saturated fine sand and \\(N_c \\gt 15\\). Thus \\[\\begin{aligned} N_d &amp;= 15 + 0.5(27 - 15) \\\\ &amp;= 15 + 6 = 21 \\end{aligned}\\] Halving the entire \\(N_c\\) gives the incorrect 13.5; the procedure halves only the excess over 15.<p>Capsule 4th ed., p. 10; topic 2 point 130.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3816,7 +3816,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The stated threshold is not exceeded, so no dilatancy adjustment is applied and the count remains 12. Extrapolating 15 + 0.5(Nc - 15) below its prescribed range would incorrectly increase the result to 13.5.<p>Capsule 4th ed., p. 10; topic 2 point 130.</p>",
+          "explanation": "The stated threshold is not exceeded, so no dilatancy adjustment is applied and the count remains 12. Extrapolating \\[N_d = 15 + 0.5(N_c - 15)\\] below its prescribed range would incorrectly increase the result to 13.5.<p>Capsule 4th ed., p. 10; topic 2 point 130.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4203,7 +4203,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Use matching gross load and gross allowable pressure: A = (1200 + 120)/150 = 8.8 m<sup>2</sup>. Soil properties and settlement determine the allowable pressure. Structural bending, shear and any nonuniform contact require further checks.<p>Capsule 4th ed., p. 9; topic 2 point 95.</p>",
+          "explanation": "Use matching gross load and gross allowable pressure: \\[A = \\dfrac{1200 + 120}{150} = 8.8\\ \\text{m}^2\\] Soil properties and settlement determine the allowable pressure. Structural bending, shear and any nonuniform contact require further checks.<p>Capsule 4th ed., p. 9; topic 2 point 95.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4621,7 +4621,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The axial count must be at least 1200/250 = 4.8, rounded upward to 5. Real design also checks layout, group response, moments, lateral loads, cap action and settlement; no universal number of piers can be specified for every column.<p>Source note: Page 9 point 108&#39;s fixed count of three is unsupported and may confuse piers with a common pile-group arrangement. This explicit example is not a reconstruction of missing source data.</p><p>Capsule 4th ed., p. 9; topic 2 point 108.</p>",
+          "explanation": "The axial count must be at least \\[n = \\dfrac{1200}{250} = 4.8\\] rounded upward to 5. Real design also checks layout, group response, moments, lateral loads, cap action and settlement; no universal number of piers can be specified for every column.<p>Source note: Page 9 point 108&#39;s fixed count of three is unsupported and may confuse piers with a common pile-group arrangement. This explicit example is not a reconstruction of missing source data.</p><p>Capsule 4th ed., p. 9; topic 2 point 108.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4659,7 +4659,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "p/gamma = 180/20 = 9 m. The bracket is (1 - 0.5)/(1 + 0.5) = 1/3; squaring gives 1/9. Therefore Df = 9/9 = 1 m. This historical expression does not replace checks for competent strata, scour, frost, groundwater and settlement.<p>Source note: Page 10 point 147&#39;s fraction is restored and the equation is explicitly identified as a historical idealization rather than a sufficient modern depth prescription.</p><p>Capsule 4th ed., p. 10; topic 2 point 147.</p>",
+          "explanation": "\\[\\dfrac{p}{\\gamma} = \\dfrac{180}{20} = 9\\ \\text{m}\\] The bracket is \\[\\dfrac{1 - 0.5}{1 + 0.5} = \\dfrac{1}{3}\\] and squaring gives \\(\\dfrac{1}{9}\\). Therefore \\[D_f = \\dfrac{9}{9} = 1\\ \\text{m}\\] This historical expression does not replace checks for competent strata, scour, frost, groundwater and settlement.<p>Source note: Page 10 point 147&#39;s fraction is restored and the equation is explicitly identified as a historical idealization rather than a sufficient modern depth prescription.</p><p>Capsule 4th ed., p. 10; topic 2 point 147.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4697,7 +4697,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The final ground surface moves downward by 400 mm, leaving embedment 800 - 400 = 400 mm. That is 100 mm less than the supplied project minimum. A nominal minimum is assessed from the correct datum and does not independently establish bearing or settlement adequacy.<p>Source note: Page 10 point 151 repeats an unqualified 500 mm recommendation. The value is used only as an explicit project requirement, not a universal current-code rule.</p><p>Capsule 4th ed., p. 10; topic 2 point 151.</p>",
+          "explanation": "The final ground surface moves downward by 400 mm, leaving an embedment of \\[800 - 400 = 400\\ \\text{mm}\\] That is 100 mm less than the supplied project minimum. A nominal minimum is assessed from the correct datum and does not independently establish bearing or settlement adequacy.<p>Source note: Page 10 point 151 repeats an unqualified 500 mm recommendation. The value is used only as an explicit project requirement, not a universal current-code rule.</p><p>Capsule 4th ed., p. 10; topic 2 point 151.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4742,7 +4742,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "OCR = maximum past vertical effective stress/current vertical effective stress = 240/120 = 2. A value above unity indicates overconsolidation. Total stress alone is insufficient because pore pressure changes effective stress history.<p>Capsule 4th ed., p. 7; topic 2 point 28.</p>",
+          "explanation": "The overconsolidation ratio compares the maximum past and current vertical effective stresses: \\[\\text{OCR} = \\dfrac{\\sigma'_{\\max}}{\\sigma'_0} = \\dfrac{240}{120} = 2\\] A value above unity indicates overconsolidation. Total stress alone is insufficient because pore pressure changes effective stress history.<p>Capsule 4th ed., p. 7; topic 2 point 28.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4894,7 +4894,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "With total stress fixed, sigma' = sigma - u increases as excess u falls. Water leaves the pores and the skeleton compresses. The voids themselves are not expelled, and this time-dependent process is distinct from rapid air-expelling compaction.<p>Capsule 4th ed., p. 7; topic 2 point 40.</p>",
+          "explanation": "With total stress fixed, the effective stress \\[\\sigma' = \\sigma - u\\] increases as the excess pore pressure falls. Water leaves the pores and the skeleton compresses. The voids themselves are not expelled, and this time-dependent process is distinct from rapid air-expelling compaction.<p>Capsule 4th ed., p. 7; topic 2 point 40.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4970,7 +4970,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Average degree of consolidation U = Sc(t)/Sc(final) = 36/60 = 0.60. The numerator and denominator must refer to the same primary-consolidation component, excluding immediate settlement and secondary compression.<p>Capsule 4th ed., p. 7; topic 2 point 44.</p>",
+          "explanation": "The average degree of consolidation is \\[U = \\dfrac{S_t}{S_{\\text{final}}} = \\dfrac{36}{60} = 0.60\\] The numerator and denominator must refer to the same primary-consolidation component, excluding immediate settlement and secondary compression.<p>Capsule 4th ed., p. 7; topic 2 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5008,7 +5008,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The longest path to a drainage face is half the specimen thickness for double drainage: Hdr = 20/2 = 10 mm. With only one drainage face it would be 20 mm. The quoted specimen thickness is illustrative, not a universal apparatus dimension.<p>Source note: Page 7 point 49 describes a typical size; the question supplies the actual size rather than asserting a mandatory 20 mm thickness.</p><p>Capsule 4th ed., p. 7; topic 2 point 49.</p>",
+          "explanation": "The longest path to a drainage face is half the specimen thickness for double drainage: \\[H_{dr} = \\dfrac{20}{2} = 10\\ \\text{mm}\\] With only one drainage face it would be 20 mm. The quoted specimen thickness is illustrative, not a universal apparatus dimension.<p>Source note: Page 7 point 49 describes a typical size; the question supplies the actual size rather than asserting a mandatory 20 mm thickness.</p><p>Capsule 4th ed., p. 7; topic 2 point 49.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5084,7 +5084,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Half of the conventional B-deep zone is above water and half below: gamma_eff = 10 + (1/2)(18 - 10) = 14 kN/m<sup>3</sup>. This is an approximate interpolation for the unit-weight term, not a sharp physical cutoff on all groundwater effects.<p>Source note: Page 7 point 54 is qualified as a conventional correction range, not a universal boundary of the failure mechanism.</p><p>Capsule 4th ed., p. 7; topic 2 point 54.</p>",
+          "explanation": "Half of the conventional B-deep zone is above water and half below: \\[\\begin{aligned} \\gamma_{\\text{eff}} &amp;= 10 + \\dfrac{1}{2}(18 - 10) \\\\ &amp;= 14\\ \\text{kN/m}^3 \\end{aligned}\\] This is an approximate interpolation for the unit-weight term, not a sharp physical cutoff on all groundwater effects.<p>Source note: Page 7 point 54 is qualified as a conventional correction range, not a universal boundary of the failure mechanism.</p><p>Capsule 4th ed., p. 7; topic 2 point 54.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5160,7 +5160,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Under the stated ideal clay scaling, ultimate pressure is unchanged, not ultimate load. The footing area is 2 times 2 = 4 m<sup>2</sup>, so Qu = qu A = 400(4) = 1600 kN. Settlement and stratification still require separate assessment.<p>Source note: Page 7 point 56&#39;s equality refers to bearing pressures under comparable conditions, not identical total failure loads.</p><p>Capsule 4th ed., p. 7; topic 2 point 56.</p>",
+          "explanation": "Under the stated ideal clay scaling, ultimate pressure is unchanged, not ultimate load. The footing area is \\(2 \\times 2 = 4\\ \\text{m}^2\\), so \\[\\begin{aligned} Q_u &amp;= q_u A = 400 \\times 4 \\\\ &amp;= 1600\\ \\text{kN} \\end{aligned}\\] Settlement and stratification still require separate assessment.<p>Source note: Page 7 point 56&#39;s equality refers to bearing pressures under comparable conditions, not identical total failure loads.</p><p>Capsule 4th ed., p. 7; topic 2 point 56.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5198,7 +5198,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The supplied approximation gives quf = 150(2/0.5) = 600 kPa. This linear pressure scaling follows a dominant width-dependent bearing term; it is not an exact general plate-test law for layered ground, differing embedment or settlement prediction.<p>Source note: Page 8 point 59 has ambiguous fraction order; Bf/Bp is used with explicit limited assumptions.</p><p>Capsule 4th ed., p. 8; topic 2 point 59.</p>",
+          "explanation": "The supplied approximation scales pressure with width: \\[q_{uf} = 150 \\times \\dfrac{2}{0.5} = 600\\ \\text{kPa}\\] This linear pressure scaling follows a dominant width-dependent bearing term; it is not an exact general plate-test law for layered ground, differing embedment or settlement prediction.<p>Source note: Page 8 point 59 has ambiguous fraction order; Bf/Bp is used with explicit limited assumptions.</p><p>Capsule 4th ed., p. 8; topic 2 point 59.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5274,7 +5274,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The prediction exceeds the expressly supplied project limit by 45 - 40 = 5 mm. This establishes a serviceability noncompliance, not proof of shear failure. A settlement value needs a specified structure, foundation type and applicable criterion.<p>Source note: Page 9 point 105 attributes 40 mm to an unspecified IS code. Edition, table and structural category are unverified; 40 mm is supplied here only as a project assumption for comparison.</p><p>Capsule 4th ed., p. 9; topic 2 point 105.</p>",
+          "explanation": "The prediction exceeds the expressly supplied project limit by \\[45 - 40 = 5\\ \\text{mm}\\] This establishes a serviceability noncompliance, not proof of shear failure. A settlement value needs a specified structure, foundation type and applicable criterion.<p>Source note: Page 9 point 105 attributes 40 mm to an unspecified IS code. Edition, table and structural category are unverified; 40 mm is supplied here only as a project assumption for comparison.</p><p>Capsule 4th ed., p. 9; topic 2 point 105.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5350,7 +5350,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For this formulation Nc = 5.7, Nq = 1 and N_gamma = 0. Thus qu = 5.7(20) + 40 = 154 kPa. The net ultimate value is 114 kPa; using 5.14 would mix in another ideal strip formulation.<p>Capsule 4th ed., p. 9; topic 2 point 109.</p>",
+          "explanation": "For this formulation \\(N_c = 5.7\\), \\(N_q = 1\\) and \\(N_\\gamma = 0\\). Thus \\[\\begin{aligned} q_u &amp;= 5.7 \\times 20 + 40 \\\\ &amp;= 154\\ \\text{kPa} \\end{aligned}\\] The net ultimate value is 114 kPa; using 5.14 would mix in another ideal strip formulation.<p>Capsule 4th ed., p. 9; topic 2 point 109.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5426,7 +5426,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "For a square footing, qu = 1.3c'Nc + q'Nq + 0.4 gamma B N_gamma. The terms are 230.1, 133.2 and 72 kPa, giving 435.3 kPa. The factors belong to one rounded classical 20-degree row; using a circular or strip shape coefficient changes the result.<p>Capsule 4th ed., p. 9; topic 2 point 111.</p>",
+          "explanation": "For a square footing, \\[\\begin{aligned} q_u &amp;= 1.3c'N_c + q'N_q \\\\ &amp;\\quad + 0.4\\gamma BN_\\gamma \\end{aligned}\\] The three terms, in kPa, are \\[\\begin{aligned} 1.3 \\times 10 \\times 17.7 &amp;= 230.1 \\\\ 18 \\times 7.4 &amp;= 133.2 \\\\ 0.4 \\times 18 \\times 2 \\times 5 &amp;= 72 \\end{aligned}\\] giving 435.3 kPa. The factors belong to one rounded classical 20-degree row; using a circular or strip shape coefficient changes the result.<p>Capsule 4th ed., p. 9; topic 2 point 111.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5464,7 +5464,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Ultimate pressure increases by a factor of 3 under the stated approximation, while plan area increases by 3 squared = 9. Therefore ultimate total load increases by 3 times 9 = 27. Pressure scaling and total-load scaling are different.<p>Source note: Page 9 point 112 repeats the approximate sand pressure-width relation; this question separately tests its pressure-versus-load implication under explicit similarity assumptions.</p><p>Capsule 4th ed., p. 9; topic 2 point 112.</p>",
+          "explanation": "Ultimate pressure increases by a factor of 3 under the stated approximation, while plan area increases by \\(3^2 = 9\\). Therefore ultimate total load increases by \\[3 \\times 9 = 27\\] Pressure scaling and total-load scaling are different.<p>Source note: Page 9 point 112 repeats the approximate sand pressure-width relation; this question separately tests its pressure-versus-load implication under explicit similarity assumptions.</p><p>Capsule 4th ed., p. 9; topic 2 point 112.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5578,7 +5578,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The circular expression is qu = 1.3cNc + qNq + 0.3 gamma B N_gamma. Multiplying unit weight by diameter is necessary to produce pressure units. The 0.4 and 0.5 coefficients belong to the classical square and strip forms respectively.<p>Source note: Page 9 point 114 omits footing diameter B from the unit-weight term, making its printed/extracted expression dimensionally inconsistent.</p><p>Capsule 4th ed., p. 9; topic 2 point 114.</p>",
+          "explanation": "The circular expression is \\[\\begin{aligned} q_u &amp;= 1.3cN_c + qN_q \\\\ &amp;\\quad + 0.3\\gamma BN_\\gamma \\end{aligned}\\] Multiplying unit weight by diameter is necessary to produce pressure units. The 0.4 and 0.5 coefficients belong to the classical square and strip forms respectively.<p>Source note: Page 9 point 114 omits footing diameter B from the unit-weight term, making its printed/extracted expression dimensionally inconsistent.</p><p>Capsule 4th ed., p. 9; topic 2 point 114.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5616,7 +5616,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The cohesive contribution is 1.3(10)(17.7) = 230.1 kPa; surcharge contributes 18(7.4) = 133.2 kPa. The circular unit-weight term is 0.3(18)(2)(5) = 54 kPa. Total qu = 230.1 + 133.2 + 54 = 417.3 kPa, using the supplied rounded factors consistently.<p>Capsule 4th ed., p. 9; topic 2 point 114.</p>",
+          "explanation": "The three contributions, in kPa, are \\[\\begin{aligned} 1.3 \\times 10 \\times 17.7 &amp;= 230.1 \\\\ 18 \\times 7.4 &amp;= 133.2 \\\\ 0.3 \\times 18 \\times 2 \\times 5 &amp;= 54 \\end{aligned}\\] so \\[\\begin{aligned} q_u &amp;= 230.1 + 133.2 + 54 \\\\ &amp;= 417.3\\ \\text{kPa} \\end{aligned}\\] using the supplied rounded factors consistently.<p>Capsule 4th ed., p. 9; topic 2 point 114.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5654,7 +5654,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Net shear-safe pressure is 450/3 = 150 kPa. The settlement limit is lower, so the governing net allowable pressure is min(150,110) = 110 kPa. Use matching net or gross bases and do not apply the shear safety factor again to the settlement limit.<p>Capsule 4th ed., p. 9; topic 2 point 116.</p>",
+          "explanation": "Net shear-safe pressure is \\[\\dfrac{450}{3} = 150\\ \\text{kPa}\\] The settlement limit is lower, so the governing net allowable pressure is \\[\\min(150, 110) = 110\\ \\text{kPa}\\] Use matching net or gross bases and do not apply the shear safety factor again to the settlement limit.<p>Capsule 4th ed., p. 9; topic 2 point 116.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5692,7 +5692,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Net capacity subtracts q from the gross expression, producing q(Nq - 1). The cohesive factor is 1 + 0.3B/L and the unit-weight factor is 1 - 0.2B/L. At B/L = 1 these recover square coefficients 1.3 and 0.4; at B/L approaching zero they recover strip coefficients.<p>Source note: Page 9 point 119 has a plus sign and a detached shape term where the common interpolation requires multiplication by 1 - 0.2B/L. This is a stated textbook interpolation, not a current-code design prescription.</p><p>Capsule 4th ed., p. 9; topic 2 point 119.</p>",
+          "explanation": "Net capacity subtracts \\(q\\) from the gross expression, producing \\(q(N_q - 1)\\). The cohesive factor is \\(1 + 0.3\\dfrac{B}{L}\\) and the unit-weight factor is \\(1 - 0.2\\dfrac{B}{L}\\): \\[\\begin{aligned} q_n &amp;= \\left(1 + 0.3\\dfrac{B}{L}\\right)cN_c \\\\ &amp;\\quad + q(N_q - 1) \\\\ &amp;\\quad + 0.5\\gamma BN_\\gamma\\left(1 - 0.2\\dfrac{B}{L}\\right) \\end{aligned}\\] At \\(\\dfrac{B}{L} = 1\\) these recover the square coefficients 1.3 and 0.4; as \\(\\dfrac{B}{L} \\to 0\\) they recover the strip coefficients.<p>Source note: Page 9 point 119 has a plus sign and a detached shape term where the common interpolation requires multiplication by 1 - 0.2B/L. This is a stated textbook interpolation, not a current-code design prescription.</p><p>Capsule 4th ed., p. 9; topic 2 point 119.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5730,7 +5730,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The cohesive term is (1 + 0.3 times 0.5)(200) = 230 kPa. Net surcharge is 18(10 - 1) = 162 kPa. The unit-weight contribution is 90(1 - 0.2 times 0.5) = 81 kPa. Sum = 473 kPa; adding 18 gives gross pressure 491 kPa.<p>Capsule 4th ed., p. 9; topic 2 point 119.</p>",
+          "explanation": "The cohesive factor is \\(1 + 0.3 \\times 0.5 = 1.15\\) and the unit-weight factor is \\(1 - 0.2 \\times 0.5 = 0.90\\), so the terms, in kPa, are \\[\\begin{aligned} 1.15 \\times 200 &amp;= 230 \\\\ 18 \\times (10 - 1) &amp;= 162 \\\\ 0.90 \\times 90 &amp;= 81 \\end{aligned}\\] Their sum is \\[230 + 162 + 81 = 473\\ \\text{kPa}\\] Adding 18 gives the gross pressure 491 kPa.<p>Capsule 4th ed., p. 9; topic 2 point 119.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5806,7 +5806,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The supplied total limit exceeds the prediction by 65 - 60 = 5 mm. Differential movement, angular distortion and other project requirements still need checking. Passing a total-settlement limit is not equivalent to a complete serviceability approval.<p>Source note: Page 10 point 129 gives 65 mm under an unspecified IS code. Its edition, table and structural category remain unverified; the value is a stated project assumption here, not a claimed universal current limit.</p><p>Capsule 4th ed., p. 10; topic 2 point 129.</p>",
+          "explanation": "The supplied total limit exceeds the prediction by \\[65 - 60 = 5\\ \\text{mm}\\] Differential movement, angular distortion and other project requirements still need checking. Passing a total-settlement limit is not equivalent to a complete serviceability approval.<p>Source note: Page 10 point 129 gives 65 mm under an unspecified IS code. Its edition, table and structural category remain unverified; the value is a stated project assumption here, not a claimed universal current limit.</p><p>Capsule 4th ed., p. 10; topic 2 point 129.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5844,7 +5844,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "ks = pressure/settlement gives 120/0.006 = 20000 and 120/0.012 = 10000 kN/m<sup>3</sup>. The supplied observations contradict independence. Groundwater can alter effective stress and stiffness, but these invented test results do not imply a universal halving rule.<p>Source note: Page 10 point 136&#39;s claim of water-table independence is corrected.</p><p>Capsule 4th ed., p. 10; topic 2 point 136.</p>",
+          "explanation": "The secant modulus is pressure divided by settlement, in kN per m<sup>3</sup>: \\[k_1 = \\dfrac{120}{0.006} = 20{,}000\\] \\[k_2 = \\dfrac{120}{0.012} = 10{,}000\\] The supplied observations contradict independence. Groundwater can alter effective stress and stiffness, but these invented test results do not imply a universal halving rule.<p>Source note: Page 10 point 136&#39;s claim of water-table independence is corrected.</p><p>Capsule 4th ed., p. 10; topic 2 point 136.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6034,7 +6034,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Si = 100(2)(1 - 0.30^2)(1)/20000 = 0.0091 m = 9.1 mm. Using 1 + nu^2 gives the wrong 10.9 mm. The influence factor and modulus must match geometry, rigidity, drainage and the strain range of the chosen model.<p>Source note: Page 10 point 144 has a damaged factor shown as 1 + mu^2 and omits the defined influence factor. The standard elastic expression uses 1 - nu^2; all inputs are supplied explicitly.</p><p>Capsule 4th ed., p. 10; topic 2 point 144.</p>",
+          "explanation": "\\[S_i = \\dfrac{qB(1 - \\nu^2)I}{E_s}\\] With \\(1 - 0.30^2 = 0.91\\), \\[\\begin{aligned} S_i &amp;= \\dfrac{100 \\times 2 \\times 0.91}{20{,}000} \\\\ &amp;= 0.0091\\ \\text{m} = 9.1\\ \\text{mm} \\end{aligned}\\] Using \\(1 + \\nu^2\\) gives the wrong 10.9 mm. The influence factor and modulus must match geometry, rigidity, drainage and the strain range of the chosen model.<p>Source note: Page 10 point 144 has a damaged factor shown as 1 + mu^2 and omits the defined influence factor. The standard elastic expression uses 1 - nu^2; all inputs are supplied explicitly.</p><p>Capsule 4th ed., p. 10; topic 2 point 144.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6072,7 +6072,7 @@ window.CIVIL_SET_DATA["capsule-02"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Eccentricity e = M/P = 180/900 = 0.20 m, within B/6 = 0.333 m. Mean pressure is 900/(3 times 2) = 150 kPa. Extremes are 150[1 +/- 6(0.20)/2], giving 240 and 60 kPa; moment makes loading eccentric.<p>Capsule 4th ed., p. 10; topic 2 point 145.</p>",
+          "explanation": "The eccentricity is \\[e = \\dfrac{M}{P} = \\dfrac{180}{900} = 0.20\\ \\text{m}\\] which lies within \\(\\dfrac{B}{6} = 0.333\\) m. The mean pressure is \\[\\dfrac{900}{3 \\times 2} = 150\\ \\text{kPa}\\] and the extremes are \\[\\begin{aligned} q &amp;= 150\\left(1 \\pm \\dfrac{6 \\times 0.20}{2}\\right) \\\\ &amp;= 240\\ \\text{or}\\ 60\\ \\text{kPa} \\end{aligned}\\] The moment makes the loading eccentric.<p>Capsule 4th ed., p. 10; topic 2 point 145.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,

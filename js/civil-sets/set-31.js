@@ -84,7 +84,7 @@ const CIVIL_MODEL_31 = {
                         { key: "d", text: "L − (2 × 0.4 d)" }
                     ],
                     answer: "c",
-                    explanation: "For a bar cranked at both ends at 45°, the additional length due to each bend is 0.42d. Therefore, the total length is the effective span L plus twice this value (2 × 0.42d)."
+                    explanation: "For a bar cranked at both ends at \\(45^\\circ\\), each bend adds \\(0.42d\\). The total length is the effective span plus twice this value: \\[L + 2 \\times 0.42d\\]"
                 },
                 {
                     id: "cm31q005",
@@ -301,7 +301,7 @@ const CIVIL_MODEL_31 = {
                         { key: "d", text: "Circular" }
                     ],
                     answer: "c",
-                    explanation: "In the absence of external load (w=0) on a beam segment, the shear force (V) is constant. The bending moment (M), being the integral of V, is a linear function of x. Thus, the BMD is a straight line."
+                    explanation: "With no external load (\\(w = 0\\)) on a segment, the shear force is constant. The bending moment, the integral of the shear, is then linear in \\(x\\), so the BMD is a straight line."
                 },
                 {
                     id: "cm31q021",
@@ -327,7 +327,7 @@ const CIVIL_MODEL_31 = {
                         { key: "d", text: "WL/12" }
                     ],
                     answer: "a",
-                    explanation: "For a simply supported beam with a central point load W, the reactions at each support are W/2. The maximum bending moment occurs at the mid-span and is calculated as (W/2) * (L/2) = WL/4."
+                    explanation: "For a central point load \\(W\\), each reaction is \\(\\dfrac{W}{2}\\), and the maximum moment at mid-span is \\[M = \\dfrac{W}{2} \\times \\dfrac{L}{2} = \\dfrac{WL}{4}\\]"
                 },
                 {
                     id: "cm31q023",
@@ -440,7 +440,7 @@ const CIVIL_MODEL_31 = {
                         { key: "d", text: "1.2 kN/m²" }
                     ],
                     answer: "a",
-                    explanation: "As per IS 875 (Part 2), the minimum imposed load to be considered on roof trusses is 0.75 kN/m² of plan area for accessible roofs, unless a specific greater load is anticipated."
+                    explanation: "As per IS 875 (Part 2), the minimum imposed load on roof trusses is 0.75 kN per m<sup>2</sup> of plan area for accessible roofs, unless a specific greater load is anticipated."
                 },
                 {
                     id: "cm31q031",
@@ -757,7 +757,7 @@ const CIVIL_MODEL_31 = {
                         { key: "d", text: "1 cm/h" }
                     ],
                     answer: "d",
-                    explanation: "The φ-index is the constant rate of rainfall loss (infiltration) such that the volume of rainfall excess equals the volume of direct runoff. Total rainfall volume = 16 cm * 1200 km². Runoff volume is given as 1.2e8 m³. Convert both volumes to the same units (e.g., m³) and find the depth of runoff. The depth of rainfall excess = total rainfall depth - losses. Losses = φ * storm duration (6 hr). Solve for φ. The calculation yields φ = 1 cm/hr."
+                    explanation: "The \\(\\phi\\)-index is the constant loss rate that makes the rainfall excess equal the direct runoff. The runoff depth is \\[\\dfrac{1.2 \\times 10^8}{1200 \\times 10^6} = 0.1\\ \\text{m} = 10\\ \\text{cm}\\] so the losses are \\(16 - 10 = 6\\) cm over 6 h, and \\[\\phi = \\dfrac{6}{6} = 1\\ \\text{cm/h}\\] (The paper prints the runoff in m<sup>2</sup>; m<sup>3</sup> is intended.)"
                 },
                 {
                     id: "cm31q054",
@@ -1337,7 +1337,7 @@ const CIVIL_MODEL_31 = {
                         { key: "d", text: "None of the above" }
                     ],
                     answer: "a",
-                    explanation: "Hardness ions (Ca²⁺ and Mg²⁺) react with soap to form an insoluble precipitate (scum) instead of lather. This means more soap is required to achieve cleansing, effectively depressing its quality and efficiency."
+                    explanation: "Hardness ions (\\(\\text{Ca}^{2+}\\) and \\(\\text{Mg}^{2+}\\)) react with soap to form an insoluble scum instead of lather. More soap is then needed for cleansing, which depresses its effectiveness."
                 },
                 {
                     id: "cm31q096",

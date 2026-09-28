@@ -353,7 +353,7 @@ const CIVIL_MODEL_5 = {
                         { key: "d", text: "L/8" }
                     ],
                     answer: "a",
-                    explanation: "The Euler's crippling load formula is given by: \\(P_{cr} = \\frac{\\pi^2 EI}{L_e^2}\\) \\(\\begin{aligned} \\frac{\\pi^2 EI}{\\left(\\frac{l}{2}\\right)^2} &= \\frac{\\pi^2 EI}{(2L)^2} \\\\ \\frac{1}{\\frac{l^2}{4}} &= \\frac{1}{4L^2} \\\\ \\frac{4}{l^2} &= \\frac{1}{4L^2}\\\\ 16L^2 &= l^2 \\\\ \\sqrt{16L^2} &= l \\\\ 4L &= l \\\\ L &= \\frac{l}{4} \\end{aligned}\\)"
+                    explanation: "Euler's crippling load is \\(P_{cr} = \\dfrac{\\pi^2EI}{L_e^2}\\). The fixed-fixed column of length \\(l\\) has \\(L_e = \\dfrac{l}{2}\\), and the fixed-free column of length \\(L\\) has \\(L_e = 2L\\). Equating, \\[\\dfrac{l}{2} = 2L \\;\\Rightarrow\\; L = \\dfrac{l}{4}\\]"
                 }
             ]
         },
@@ -1100,7 +1100,7 @@ const CIVIL_MODEL_5 = {
                         { key: "d", text: "0.67" }
                     ],
                     answer: "c",
-                    explanation: "To find the Lacey silt factor (f), you use the standard formula derived from Lacey's Regime Theory in irrigation engineering: \\(f = 1.76 \\sqrt{d_{mm}}\\) f = 1.76×0.5916​≈1.04."
+                    explanation: "Lacey's regime theory gives the silt factor, with \\(d\\) in mm, as \\[f = 1.76\\sqrt{d}\\] \\[\\begin{aligned} f &amp;= 1.76\\sqrt{0.35} \\\\ &amp;= 1.76 \\times 0.5916 \\approx 1.04 \\end{aligned}\\]"
                 },
                 {
                     id: "cm5q079",
@@ -1187,7 +1187,7 @@ const CIVIL_MODEL_5 = {
                         { key: "d", text: "620mm" }
                     ],
                     answer: "a",
-                    explanation: "Penetration is reported in units of one tenth of a millimetre, so a grade of 62 means the standard needle sank 6.2 mm into the sample under a 100 g load for 5 seconds at 25 degrees Celsius. A higher penetration number means a softer, more fluid bitumen, which is why 80/100 grade is used in cold regions and 30/40 in hot ones. The key has been corrected from the printed 0.62 mm, which is a factor of ten out."
+                    explanation: "Penetration is reported in units of one tenth of a millimetre, so a grade of 62 means the standard needle sank \\[62 \\times 0.1 = 6.2\\ \\text{mm}\\] into the sample under a 100 g load for 5 seconds at \\(25^\\circ\\text{C}\\). A higher penetration number means a softer, more fluid bitumen, which is why grade 80-100 is used in cold regions and 30-40 in hot ones. The key has been corrected from the printed 0.62 mm, which is a factor of ten out."
                 },
                 {
                     id: "cm5q085",

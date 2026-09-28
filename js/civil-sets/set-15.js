@@ -274,7 +274,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "60 kN" }
                     ],
                     answer: "a",
-                    explanation: "The horizontal thrust H is found by taking moments about the crown hinge. For the left segment, ΣM_crown = 0: H*4 - V_left*10 + 80*5 = 0. V_left = (80*15)/20 = 60 kN. Solving gives H = (60*10 - 400)/4 = 200/4 = 50 kN."
+                    explanation: "The left vertical reaction is \\[V_{left} = \\dfrac{80 \\times 15}{20} = 60\\ \\text{kN}\\] Taking moments about the crown hinge for the left segment, \\[4H - 60 \\times 10 + 80 \\times 5 = 0\\] \\[H = \\dfrac{600 - 400}{4} = 50\\ \\text{kN}\\]"
                 },
                 {
                     id: "cm15q019",
@@ -287,7 +287,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "50 kN" }
                     ],
                     answer: "b",
-                    explanation: "The vertical reaction at the left support is calculated from static equilibrium: V_left = (w * distance from right support) / span = (80 kN * 15 m) / 20 m = 60 kN."
+                    explanation: "From static equilibrium, the left vertical reaction is the load times its distance from the right support, divided by the span: \\[V_{left} = \\dfrac{80 \\times 15}{20} = 60\\ \\text{kN}\\]"
                 },
                 {
                     id: "cm15q020",
@@ -300,7 +300,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "300 kNm" }
                     ],
                     answer: "c",
-                    explanation: "The bending moment at any point is M = M⁰ - H*y, where M⁰ is the beam moment. At x=5m, M⁰ = V_left * x = 60*5 = 300 kNm. The arch height y at x=5m is y = (4h/L²)x(L-x) = (16/400)*5*15 = 3 m. Thus, M = 300 - 50*3 = 150 kNm."
+                    explanation: "The arch moment is \\(M = M^0 - Hy\\), where \\(M^0\\) is the beam moment. At \\(x = 5\\) m, \\(M^0 = 60 \\times 5 = 300\\) kNm, and the rise there is \\[\\begin{aligned} y &amp;= \\dfrac{4h}{L^2}x(L - x) \\\\ &amp;= \\dfrac{16}{400} \\times 5 \\times 15 = 3 \\end{aligned}\\] metres. Thus \\[M = 300 - 50 \\times 3 = 150\\] kNm."
                 },
                 {
                     id: "cm15q021",
@@ -313,7 +313,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "300 kNm" }
                     ],
                     answer: "d",
-                    explanation: "The beam moment (M⁰) is the moment in a simply supported beam. At x=5m from the left support, M⁰ = V_left * x = 60 kN * 5 m = 300 kNm. The point load at that location does not contribute to the moment at that same point."
+                    explanation: "The beam moment \\(M^0\\) is the moment in the equivalent simply supported beam. At \\(x = 5\\) m from the left support, \\[M^0 = 60 \\times 5 = 300\\ \\text{kNm}\\] The point load at that location does not contribute to the moment at that same point."
                 },
                 {
                     id: "cm15q022",
@@ -352,7 +352,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "4" }
                     ],
                     answer: "c",
-                    explanation: "For a space structure, static equilibrium requires satisfying six equations: ΣFx = 0, ΣFy = 0, ΣFz = 0, ΣMx = 0, ΣMy = 0, and ΣMz = 0."
+                    explanation: "For a space structure, static equilibrium requires six equations: the three force sums and the three moment sums about the x, y and z axes must all vanish."
                 }
             ]
         },
@@ -413,7 +413,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "less than 5.6×10³ N/mm²" }
                     ],
                     answer: "c",
-                    explanation: "Timber is classified into groups based on modulus of elasticity. Group A includes the strongest species with a modulus of elasticity greater than 12.6 kN/mm²."
+                    explanation: "Timber is classified into groups by modulus of elasticity. Group A includes the strongest species, with a modulus of elasticity greater than \\[12.6 \\times 10^3\\ \\text{N/mm}^2\\] or 12.6 kN per mm<sup>2</sup>."
                 },
                 {
                     id: "cm15q029",
@@ -426,7 +426,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "less than 8.5 N/mm²" }
                     ],
                     answer: "d",
-                    explanation: "Timber groups are also defined by permissible bending stress. Group C species have the lowest permissible extreme fiber stress, which is less than 8.5 N/mm²."
+                    explanation: "Timber groups are also defined by permissible bending stress. Group C species have the lowest permissible extreme fibre stress, less than 8.5 N per mm<sup>2</sup>."
                 },
                 {
                     id: "cm15q030",
@@ -500,7 +500,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "Both (a) and (b)" }
                     ],
                     answer: "a",
-                    explanation: "Seepage analysis using flow nets is based on the fundamental assumptions that the flow is laminar (which it usually is in soils) and that Darcy's law (v = ki) is valid."
+                    explanation: "Seepage analysis with flow nets rests on the assumptions that the flow is laminar (as it usually is in soils) and that Darcy's law is valid: \\[v = ki\\]"
                 },
                 {
                     id: "cm15q035",
@@ -678,7 +678,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "8.5m" }
                     ],
                     answer: "b",
-                    explanation: "For side slope 1H:4V, z = 1/4 = 0.25. Area A = (b + zy)y = (5 + 0.25y)y = 5y + 0.25y² = 17.25. Solve quadratic: 0.25y² + 5y - 17.25=0 multiply by 4: y² + 20y - 69=0. y = [-20 ± √(400+276)]/2 = [-20 ± √676]/2 = [-20 ± 26]/2. Positive root y=3m. Top width T = b + 2zy = 5 + 2*0.25*3 = 5 + 1.5 = 6.5m."
+                    explanation: "For 1H:4V, \\(z = 0.25\\). The area condition is \\[(5 + 0.25y)y = 17.25\\] Multiplying by 4 gives \\(y^2 + 20y - 69 = 0\\), so \\[\\begin{aligned} y &amp;= \\dfrac{-20 + \\sqrt{676}}{2} \\\\ &amp;= \\dfrac{-20 + 26}{2} = 3\\ \\text{m} \\end{aligned}\\] \\[\\begin{aligned} T &amp;= b + 2zy = 5 + 1.5 \\\\ &amp;= 6.5\\ \\text{m} \\end{aligned}\\]"
                 },
                 {
                     id: "cm15q048",
@@ -704,7 +704,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "19.41m" }
                     ],
                     answer: "d",
-                    explanation: "the ratio of horizontal to vertical is 1/2 : $$\\frac{x}{y} = \\frac{1}{2} \\Rightarrow y = 2x$$ $$y = 2 \\times 3 = 6\\text{ m}$$ length of the side slope (s): \\(s = \\sqrt{x^2 + y^2} = \\sqrt{3^2 + 6^2} = 6.708\\) The wetted perimeter is the length of the boundary in contact with the water (bottom + two sides): P = b + 2s P = 6 + 2(6.708) P = 6 + 13.416 = 19.416"
+                    explanation: "The two sides take up \\(12 - 6 = 6\\) m of the top width, so each has a horizontal run \\(x = 3\\) m. For 1H:2V the depth is \\(y = 2x = 6\\) m, and each sloping side is \\[s = \\sqrt{3^2 + 6^2} = 6.708\\ \\text{m}\\] The wetted perimeter (bottom plus two sides) is \\[\\begin{aligned} P &amp;= 6 + 2 \\times 6.708 \\\\ &amp;= 19.416\\ \\text{m} \\end{aligned}\\]"
                 },
                 {
                     id: "cm15q050",
@@ -717,7 +717,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "26.72" }
                     ],
                     answer: "a",
-                    explanation: "Section factor Z = A√D, and hydraulic depth D = A/T. So Z = A√(A/T) = A^(3/2)/√T. Given A=15, T=6, so Z = (15^(3/2))/√6 = (15√15)/√6 = √(15^3/6) = √(3375/6) = √562.5 ≈ 23.72."
+                    explanation: "The section factor is \\(Z = A\\sqrt{D}\\) with \\(D = \\dfrac{A}{T}\\), so \\[Z = \\sqrt{\\dfrac{A^3}{T}} = \\sqrt{\\dfrac{3375}{6}}\\] \\[= \\sqrt{562.5} \\approx 23.72\\]"
                 },
                 {
                     id: "cm15q051",
@@ -782,7 +782,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "3y" }
                     ],
                     answer: "b",
-                    explanation: "For most economical rectangular section, B=2y. Hydraulic radius R = A/P = (B*y)/(B+2y) = (2y*y)/(2y+2y) = (2y²)/(4y) = y/2."
+                    explanation: "The most economical rectangular section has \\(B = 2y\\), so \\[R = \\dfrac{By}{B + 2y} = \\dfrac{2y^2}{4y} = \\dfrac{y}{2}\\]"
                 },
                 {
                     id: "cm15q056",
@@ -808,7 +808,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "31.43m³/s" }
                     ],
                     answer: "d",
-                    explanation: "For maximum discharge, depth y = B/2 = 2.5m. Area A = B*y = 5*2.5=12.5 m². Hydraulic radius R = y/2=1.25m. S=1/500=0.002. Manning's formula: Q = (1/n) * A * R^(2/3) * S^(1/2) = (1/0.02) * 12.5 * (1.25)^(2/3) * √0.002 = 50 * 12.5 * (1.25^(0.6667)) * 0.04472. 1.25^(2/3)≈1.157. So Q = 50 * 12.5 * 1.157 * 0.04472 ≈ 50*12.5=625, 625*1.157=723.125, 723.125*0.04472≈32.34. Not exact; recalc: 1.25^(2/3)= (1.25^2)^(1/3)=1.5625^(1/3)≈1.165. Then 50*12.5=625, 625*1.165=728.125, 728.125*0.04472≈32.56. Still not matching. Perhaps use Chezy. But the option \"31.43m³/s\" 31.43 is given."
+                    explanation: "For maximum discharge, \\(y = \\dfrac{B}{2} = 2.5\\) m, so \\(A = 12.5\\) m<sup>2</sup> and \\(R = 1.25\\) m. Manning's formula gives \\[\\begin{aligned} Q &amp;= \\dfrac{1}{0.02} \\times 12.5 \\\\ &amp;\\quad \\times 1.25^{2{/}3} \\times \\sqrt{0.002} \\end{aligned}\\] \\[\\begin{aligned} &amp;= 625 \\times 1.160 \\times 0.04472 \\\\ &amp;\\approx 32.43\\ \\text{m}^3\\text{/s} \\end{aligned}\\] This matches option (b); the key's 31.43 m<sup>3</sup> per s is not reproduced by these data."
                 }
             ]
         },
@@ -908,7 +908,7 @@ const CIVIL_MODEL_15 = {
                         { key: "d", text: "Surplus power" }
                     ],
                     answer: "c",
-                    explanation: "Primary power, also known as firm power, is the guaranteed power output that a hydropower plant can produce continuously (24/7) during the most critical drought period (low flow conditions) of the year. It is the most valuable type of power."
+                    explanation: "Primary power, also known as firm power, is the guaranteed output that a hydropower plant can produce continuously (round the clock) during the most critical drought (low-flow) period of the year. It is the most valuable type of power."
                 },
                 {
                     id: "cm15q065",

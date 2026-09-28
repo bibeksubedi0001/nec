@@ -71,7 +71,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "∑Mz = 0" }
                     ],
                     answer: "a",
-                    explanation: "The conditions for static equilibrium in 3D are ∑Fx=0, ∑Fy=0, ∑Fz=0, ∑Mx=0, ∑My=0, ∑Mz=0. The centroid is found using the moment equations (like ∑Mx = ȳ * V), not force equilibrium. All ∑F=0 are necessary for overall equilibrium but are not the direct equations used to *find* the centroid location. the option \"∑Mz = 0\" is listed twice, likely a typo, but the concept is that force balance is a condition for the body being in equilibrium, not the calculation method for the centroid itself. The question asks which is *not* the condition used *for the calculations* of the centroid. The formulas used are x̄ = (∫ x dV)/V, etc., not ∑F=0."
+                    explanation: "The conditions for static equilibrium in 3-D are that the three force sums \\(\\Sigma F\\) and the three moment sums \\(\\Sigma M\\) about the x, y and z axes all vanish. The centroid is found from moment equations such as \\[\\bar x = \\dfrac{\\int x\\,dV}{V}\\] not from force balance. Force balance is needed for the body to be in equilibrium, but it is not the calculation used to locate the centroid, so \\(\\Sigma F_x = 0\\) is the answer. (The options repeat a moment equation, probably a typo.)"
                 },
                 {
                     id: "cm26q004",
@@ -84,7 +84,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "Reduced level of previous point minus fall" }
                     ],
                     answer: "b",
-                    explanation: "The height of instrument (HI) is the elevation of the line of sight of the level. The height of a point (ha) is calculated by subtracting the back sight (BS) reading from the HI. Formula: ha = HI - BS."
+                    explanation: "The height of instrument (HI) is the elevation of the line of sight of the level. The key computes the height of the point by subtracting the sight reading on it from the HI: \\[h_a = \\text{HI} - \\text{BS}\\]"
                 },
                 {
                     id: "cm26q005",
@@ -136,7 +136,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "230°" }
                     ],
                     answer: "b",
-                    explanation: "The included angle between two lines can be found by the difference in their bearings. Since both are fore bearings, the angle = F.B. of BC - F.B. of AB = 15° - 35° = -20° or 340°. However, the included interior angle is 180° - 20° = 160° if the lines are deflecting."
+                    explanation: "The included angle comes from the difference of the fore bearings: \\[15^\\circ - 35^\\circ = -20^\\circ\\] so the line deflects by \\(20^\\circ\\), and the included interior angle is \\[180^\\circ - 20^\\circ = 160^\\circ\\]"
                 },
                 {
                     id: "cm26q009",
@@ -188,7 +188,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "0°" }
                     ],
                     answer: "b",
-                    explanation: "A standard 20m or 30m metric chain is divided into 100 links. Therefore, each link is 0.2m long. Thus, there are 5 links per meter run (1m / 0.2m per link = 5 links)."
+                    explanation: "A standard 20 m or 30 m metric chain is divided into 100 links, so each link of a 20 m chain is 0.2 m long. Thus there are \\[\\dfrac{1\\ \\text{m}}{0.2\\ \\text{m}} = 5\\] links per metre run."
                 },
                 {
                     id: "cm26q013",
@@ -201,7 +201,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "1 m" }
                     ],
                     answer: "c",
-                    explanation: "A standard surveyor's (Gunter's) chain is 66 feet long and consists of 100 links. Each link is therefore 0.66 feet, which is approximately 20 cm (0.66 ft * 30.48 cm/ft ≈ 20.1168 cm)."
+                    explanation: "A standard surveyor's (Gunter's) chain is 66 feet long with 100 links. Each link is therefore 0.66 feet: \\[0.66 \\times 30.48 \\approx 20.1168\\ \\text{cm}\\] which is about 20 cm."
                 }
             ]
         },
@@ -236,7 +236,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "Not determinable" }
                     ],
                     answer: "a",
-                    explanation: "The relationship between E (Young's modulus), G (shear modulus), and ν (Poisson's ratio) is E = 2G(1+ν). For ν=0.5, E = 2G(1.5) = 3G."
+                    explanation: "Young's modulus, the shear modulus and Poisson's ratio are related by \\(E = 2G(1 + \\nu)\\). For \\(\\nu = 0.5\\), \\[E = 2G(1.5) = 3G\\]"
                 },
                 {
                     id: "cm26q016",
@@ -247,7 +247,7 @@ const CIVIL_MODEL_26 = {
                         { key: "b", text: "L²/2E" }
                     ],
                     answer: "b",
-                    explanation: "The elongation due to self-weight for a prismatic bar is δ = (γ * L²) / (2E), where γ is the unit weight (density * g). If density is 1 (unit weight = g, but often taken as 1 for simplification), δ = L²/(2E)."
+                    explanation: "The elongation of a prismatic bar under its own weight is \\[\\delta = \\dfrac{\\gamma L^2}{2E}\\] where \\(\\gamma\\) is the unit weight. Taking the stated density term as 1, this becomes \\(\\dfrac{L^2}{2E}\\)."
                 },
                 {
                     id: "cm26q017",
@@ -260,7 +260,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "1/6" }
                     ],
                     answer: "c",
-                    explanation: "Poisson's ratio ν = - (lateral strain) / (longitudinal strain). Longitudinal strain = 0.09/200 = 0.00045. Lateral strain = -0.0045/30 = -0.00015. So, ν = - (-0.00015) / (0.00045) = 0.00015/0.00045 = 1/3."
+                    explanation: "The longitudinal and lateral strains are \\[\\varepsilon_l = \\dfrac{0.09}{200} = 0.00045\\] \\[\\varepsilon_t = -\\dfrac{0.0045}{30} = -0.00015\\] so \\[\\nu = -\\dfrac{\\varepsilon_t}{\\varepsilon_l} = \\dfrac{0.00015}{0.00045} = \\dfrac{1}{3}\\]"
                 },
                 {
                     id: "cm26q018",
@@ -312,7 +312,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "10" }
                     ],
                     answer: "c",
-                    explanation: "Use the relationship E = 9KG/(3K+G). Substitute E=12, G=4.8: 12 = 9*K*4.8/(3K+4.8) =&gt; 12(3K+4.8) = 43.2K =&gt; 36K + 57.6 = 43.2K =&gt; 57.6 = 7.2K =&gt; K=8."
+                    explanation: "Use \\(E = \\dfrac{9KG}{3K + G}\\) with \\(E = 12\\) and \\(G = 4.8\\): \\[12(3K + 4.8) = 43.2K\\] \\[36K + 57.6 = 43.2K\\] so \\(7.2K = 57.6\\) and \\(K = 8\\)."
                 },
                 {
                     id: "cm26q022",
@@ -324,7 +324,7 @@ const CIVIL_MODEL_26 = {
                         { key: "c", text: "E = 3K(1 - 2µ)" }
                     ],
                     answer: "c",
-                    explanation: "The correct relationship between Young's modulus (E) and bulk modulus (K) is E = 3K(1 - 2ν), where ν is Poisson's ratio."
+                    explanation: "Young's modulus and the bulk modulus are related by \\[E = 3K(1 - 2\\nu)\\] where \\(\\nu\\) is Poisson's ratio."
                 },
                 {
                     id: "cm26q023",
@@ -337,7 +337,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "The longitudinal strain in material is infinite" }
                     ],
                     answer: "a",
-                    explanation: "If Poisson's ratio ν=0, it means there is no lateral strain when a longitudinal stress is applied. The material is not necessarily rigid."
+                    explanation: "If \\(\\nu = 0\\), a longitudinal stress produces no lateral strain. The material is not necessarily rigid."
                 },
                 {
                     id: "cm26q024",
@@ -350,7 +350,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "(3K + 2G) / (6K - 2G)" }
                     ],
                     answer: "b",
-                    explanation: "The relationship is ν = (3K - 2G) / (2(3K + G))? Wait, standard formula is ν = (3K - 2G) / (2(3K + G)) but it simplifies to similar forms. the option \"(3K - 4G) / (6K + 4G)\" is correct: ν = (3K - 4G)/(6K + 4G) is a common representation."
+                    explanation: "Eliminating \\(E\\) from \\(E = 2G(1 + \\nu)\\) and \\(E = 3K(1 - 2\\nu)\\) gives the standard result \\[\\nu = \\dfrac{3K - 2G}{2(3K + G)} = \\dfrac{3K - 2G}{6K + 2G}\\] which is option (c). The key marks \\(\\dfrac{3K - 4G}{6K + 4G}\\), which does not follow from these relations."
                 }
             ]
         },
@@ -602,7 +602,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "1/300" }
                     ],
                     answer: "d",
-                    explanation: "The angular distortion (ratio of differential settlement to the distance between points) is a key metric. For simple spread footings on clay, a limiting value of 1/300 is often used to prevent architectural or structural damage."
+                    explanation: "The angular distortion (differential settlement divided by the distance between points) is a key measure. For simple spread footings on clay, a limit of \\(\\dfrac{1}{300}\\) is often used to prevent architectural or structural damage."
                 },
                 {
                     id: "cm26q043",
@@ -702,7 +702,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "4" }
                     ],
                     answer: "c",
-                    explanation: "For a soap bubble in air, ΔP = 8σ/d. But here it's inside water. For a gas bubble in liquid, ΔP = 2σ/d. ΔP = 0.075 N/cm² = 750 N/m². σ = 0.075 N/m. So, d = 2σ/ΔP = (2*0.075)/750 = 0.0002 m = 0.2 mm. Not in options. If it's a soap bubble in water, it has two surfaces? The options suggest d=0.4mm. If ΔP=8σ/d for soap bubble, d=8σ/ΔP=8*0.075/750=0.0008m=0.8mm. the option \"0.8\" is 0.8. The question says 'soap bubble inside a bucket of water', which is complex. Typically, for a gas bubble in liquid, it's 2σ/d. The intended answer is likely 0.4 or 0.8. Given the options, 0.4 is listed, but calculation doesn't match. There might be a unit error. ΔP=0.075 N/cm²=75 N/m²? Then d=2*0.075/75=0.002m=2mm, not in options. This is ambiguous."
+                    explanation: "With 0.075 N per cm<sup>2</sup>, or 750 N per m<sup>2</sup>, a gas bubble in liquid (one surface) gives \\[\\begin{aligned} d &amp;= \\dfrac{2\\sigma}{\\Delta P} = \\dfrac{2 \\times 0.075}{750} \\\\ &amp;= 0.2\\ \\text{mm} \\end{aligned}\\] and a two-surface soap film gives \\[d = \\dfrac{8\\sigma}{\\Delta P} = 0.8\\ \\text{mm}\\] Neither matches the key's 0.4 mm, which would need \\(\\Delta P = \\dfrac{4\\sigma}{d}\\). The question is ambiguous, and the key is kept as given."
                 },
                 {
                     id: "cm26q050",
@@ -715,7 +715,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "3" }
                     ],
                     answer: "d",
-                    explanation: "\\(\\text{Liquid Jet: }\\Delta p = \\frac{2\\sigma}{d}\\\\ \\text{Liquid Droplet: }\\Delta p = \\frac{4\\sigma}{d}\\\\ \\text{Soap Bubble: }\\Delta p = \\frac{8\\sigma}{d}\\) \\(\\Delta p = \\frac{2 \\times 0.075}{0.05}\\\\ \\Delta p = \\frac{0.15}{0.05}\\\\ \\Delta p = 3 \\text{ N/m}^2\\)"
+                    explanation: "The pressure excess for a jet, a droplet and a soap bubble is \\(\\dfrac{2\\sigma}{d}\\), \\(\\dfrac{4\\sigma}{d}\\) and \\(\\dfrac{8\\sigma}{d}\\) respectively. For the jet, \\[\\Delta p = \\dfrac{2 \\times 0.075}{0.05} = \\dfrac{0.15}{0.05}\\] \\[= 3\\ \\text{N/m}^2\\]"
                 },
                 {
                     id: "cm26q051",
@@ -728,7 +728,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "h" }
                     ],
                     answer: "a",
-                    explanation: "Capillary rise h = (4σ cosθ)/(ρgd). If the diameter is halved, h becomes doubled. The volume of liquid is the same, but the rise is determined by the tube diameter, not the volume."
+                    explanation: "Capillary rise is \\[h = \\dfrac{4\\sigma\\cos\\theta}{\\rho gd}\\] so halving the diameter doubles the rise to \\(2h\\). The rise is set by the tube diameter, not the volume poured."
                 },
                 {
                     id: "cm26q052",
@@ -741,7 +741,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "08:01" }
                     ],
                     answer: "b",
-                    explanation: "Capillary rise h is proportional to (σ/ρ). For liquid 1, (σ/ρ)1 = 1. For liquid 2, (σ/ρ)2 = 1/4. So, h1/h2 = [ (σ/ρ)1 ] / [ (σ/ρ)2 ] = 1 / (1/4) = 4/1. Not in options. The text says '14' which is likely '1:4'. So h1/h2 = (1/1) / (1/4) = 4. But options are 1:2,2:1,8:1,1:8. 4 is not there. If the ratio for liquid1 is S/ρ = 1:2 and for liquid2 is 1:4, then (S/ρ)1 = 1/2, (S/ρ)2=1/4, so h1/h2 = (1/2)/(1/4)=2. So ratio 2:1. the option \"02:01\" ."
+                    explanation: "Capillary rise varies as \\(\\dfrac{\\sigma}{\\rho}\\). Reading the given ratios as \\(\\sigma_1 : \\sigma_2 = 1:2\\) and \\(\\rho_1 : \\rho_2 = 1:4\\), \\[\\dfrac{h_1}{h_2} = \\dfrac{\\sigma_1{/}\\rho_1}{\\sigma_2{/}\\rho_2} = \\dfrac{1}{2} \\times 4 = 2\\] which is 2:1. The garbled wording makes the key's 1:8 unverifiable; the calculation supports 2:1."
                 },
                 {
                     id: "cm26q053",
@@ -754,7 +754,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "6 mm" }
                     ],
                     answer: "c",
-                    explanation: "Capillary rise h = (4σ cosθ)/(ρgd). For water, σ=0.073 N/m, θ=0°, ρ=1000 kg/m³, g=9.81 m/s², d=0.01m. h = (4*0.073*1)/(1000*9.81*0.01) ≈ 0.00298 m = 2.98 mm ≈ 3 mm."
+                    explanation: "With \\(\\sigma = 0.073\\) N per m, \\(\\theta = 0^\\circ\\) and \\(d = 0.01\\) m, \\[\\begin{aligned} h &amp;= \\dfrac{4\\sigma\\cos\\theta}{\\rho gd} \\\\ &amp;= \\dfrac{4 \\times 0.073}{1000 \\times 9.81 \\times 0.01} \\\\ &amp;\\approx 0.00298\\ \\text{m} \\end{aligned}\\] which is 2.98 mm, about 3 mm."
                 },
                 {
                     id: "cm26q054",
@@ -780,7 +780,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "210" }
                     ],
                     answer: "a",
-                    explanation: "Capillary rise (or fall) h = (4σ cosθ)/(ρgd). For mercury, σ=0.51 N/m, θ=130° (cos130° = -0.6428), ρ=13500 kg/m³, g=9.81 m/s², d=0.007m. h = (4*0.51*(-0.6428)) / (13500*9.81*0.007) = (-5.247) / (927.045) = -0.00566 m = -5.66 mm. The magnitude is 5.66 mm, not in options. There might be a error. If we use h = (2σ cosθ)/(ρgr) for capillary rise, h = (2*0.51*cos130°)/(13500*9.81*0.0035) = (2*0.51*(-0.6428))/(13500*9.81*0.0035) = (-0.6556)/(463.5225) = -0.001414 m = -1.414 mm. Still not. The options are large. Perhaps the diameter is 7 cm? d=0.07m, then h = (4*0.51*(-0.6428))/(13500*9.81*0.07) = (-5.247)/(92704.5) = -0.0000566 m = -0.0566 mm. Not. This is not matching. The intended answer is likely 140 mm for a different fluid or parameters."
+                    explanation: "With \\(\\sigma = 0.51\\) N per m, \\(\\cos 130^\\circ = -0.6428\\), \\(\\rho = 13{,}500\\) kg per m<sup>3</sup> and \\(d = 0.007\\) m, \\[h = \\dfrac{4 \\times 0.51 \\times (-0.6428)}{13{,}500 \\times 9.81 \\times 0.007}\\] \\[= \\dfrac{-1.311}{927.0} \\approx -1.41\\ \\text{mm}\\] a depression of about 1.4 mm. The key's 140 matches this only as a scaled number (a factor-of-100 unit slip), so the options are inconsistent with the data."
                 },
                 {
                     id: "cm26q056",
@@ -793,7 +793,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "both b and c" }
                     ],
                     answer: "c",
-                    explanation: "The form factor (Ff) of a drainage basin is defined as Ff = A / L², where A is the area of the basin and L is the axial length (length from outlet to the farthest point)."
+                    explanation: "The form factor of a drainage basin is its area divided by the square of its axial length (from the outlet to the farthest point): \\[F_f = \\dfrac{A}{L^2}\\]"
                 },
                 {
                     id: "cm26q057",
@@ -806,7 +806,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "0.133" }
                     ],
                     answer: "c",
-                    explanation: "The probability of a 100-year flood occurring in any given year is p=1/100=0.01. The probability of it not occurring in a given year is 1-p=0.99. The probability of it not occurring at all in 50 years is (0.99)^50 ≈ 0.605."
+                    explanation: "A 100-year flood has \\(p = 0.01\\) in any year, so it fails to occur in a given year with probability 0.99. Over 50 years, \\[(0.99)^{50} \\approx 0.605\\]"
                 },
                 {
                     id: "cm26q058",
@@ -832,7 +832,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "Oil" }
                     ],
                     answer: "a",
-                    explanation: "The gauge pressure is given by P_gauge = ρ*g*(h1 - h2). Here, h1 (atmospheric side) = 0.6 m, h2 (gas side) = 0.3 m, so Δh = 0.3 m. P_gauge = 40000 Pa = ρ * 9.8 * 0.3. Solving, ρ ≈ 13605 kg/m³, which is very close to the density of mercury (13600 kg/m³)."
+                    explanation: "The gauge pressure is \\(P = \\rho g(h_1 - h_2)\\), with a column difference of 0.3 m. So \\[\\begin{aligned} \\rho &amp;= \\dfrac{40{,}000}{9.8 \\times 0.3} \\\\ &amp;\\approx 13{,}605\\ \\text{kg/m}^3 \\end{aligned}\\] very close to the density of mercury (13,600 kg per m<sup>3</sup>)."
                 },
                 {
                     id: "cm26q060",
@@ -845,7 +845,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "13.60%" }
                     ],
                     answer: "b",
-                    explanation: "The pressure equation is P = ρ*g*Δh. For the same pressure, Δh_water / Δh_mercury = ρ_mercury / ρ_water = 13600 / 1000 = 13.6. This means the height difference for water is 13.6 times greater. The percentage change is ((Δh_water - Δh_mercury)/Δh_mercury)*100% = (13.6 - 1)*100% = 1260%."
+                    explanation: "For the same pressure \\(P = \\rho g\\Delta h\\), \\[\\begin{aligned} \\dfrac{\\Delta h_w}{\\Delta h_m} &amp;= \\dfrac{\\rho_m}{\\rho_w} = \\dfrac{13{,}600}{1000} \\\\ &amp;= 13.6 \\end{aligned}\\] so the water column is 13.6 times as high, a change of \\[(13.6 - 1) \\times 100\\% = 1260\\%\\]"
                 }
             ]
         },
@@ -880,7 +880,7 @@ const CIVIL_MODEL_26 = {
                         { key: "d", text: "1" }
                     ],
                     answer: "d",
-                    explanation: "If Peak Load = Plant Capacity, then Load Factor = Average Load / Plant Capacity and Capacity Factor = Average Load / Plant Capacity. Therefore, the ratio Capacity Factor / Load Factor = 1."
+                    explanation: "If the peak load equals the plant capacity, both factors have the same denominator: \\[\\text{LF} = \\dfrac{\\text{average load}}{\\text{capacity}} = \\text{CF}\\] so the ratio of capacity factor to load factor is 1."
                 },
                 {
                     id: "cm26q063",

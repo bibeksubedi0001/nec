@@ -58,7 +58,7 @@ const CIVIL_MODEL_13 = {
                         { key: "d", text: "Both Normal-weight aggregate and Heavy-weight aggregate" }
                     ],
                     answer: "c",
-                    explanation: "These are common natural aggregates with a specific gravity typically between 2.5 and 2.7, used to produce normal-weight concrete with a density of about 2300-2500 kg/m³."
+                    explanation: "These are common natural aggregates with a specific gravity typically between 2.5 and 2.7, used to produce normal-weight concrete with a density of about 2300-2500 kg per m<sup>3</sup>."
                 },
                 {
                     id: "cm13q003",
@@ -162,7 +162,7 @@ const CIVIL_MODEL_13 = {
                         { key: "d", text: "Can’t say" }
                     ],
                     answer: "c",
-                    explanation: "In the saturated surface dry (SSD) condition, water fills the voids between sand particles without causing bulking. Dry sand occupies less volume than bulked sand but slightly more or similar volume than SSD sand because the water in SSD sand adds weight but not significant volume to the voids. The most accurate comparison is that dry sand has a higher volume than the same mass of sand at the SSD condition due to the lack of water weight compacting it, but the question is ambiguous. Standardly, bulked volume &gt; dry volume &gt; or = SSD volume for the same mass. The answer is often considered 'Less' meaning dry volume is less than the bulked volume it would have at 5-8% moisture."
+                    explanation: "In the saturated surface dry (SSD) condition, water fills the voids between sand particles without causing bulking. Moist sand bulks, so for the same mass the usual order is \\[V_{bulked} \\gt V_{dry} \\ge V_{SSD}\\] The question is ambiguous; the intended answer 'Less' means the dry volume is less than the bulked volume the sand would have at 5-8% moisture."
                 },
                 {
                     id: "cm13q011",
@@ -440,7 +440,7 @@ const CIVIL_MODEL_13 = {
                         { key: "d", text: "130 mm" }
                     ],
                     answer: "c",
-                    explanation: "As per IS 456:2000, Clause 26.5.1.5, the maximum spacing of shear reinforcement should not exceed 0.75d = 0.75 * 360 = 270 mm."
+                    explanation: "IS 456:2000, clause 26.5.1.5, limits the spacing of shear reinforcement to \\[0.75d = 0.75 \\times 360 = 270\\] mm."
                 },
                 {
                     id: "cm13q031",
@@ -477,7 +477,7 @@ const CIVIL_MODEL_13 = {
                         { key: "b", text: "0.87 f_y A_sv d / s_v" }
                     ],
                     answer: "b",
-                    explanation: "For vertical stirrups (α=90°), the shear resistance is V_us = (0.87 f_y A_sv d) / s_v. The options have typographical errors, but the correct formula is 0.87 f_y A_sv d / s_v."
+                    explanation: "For vertical stirrups (\\(\\alpha = 90^\\circ\\)), the shear resistance is \\[V_{us} = \\dfrac{0.87f_yA_{sv}d}{s_v}\\] The options contain typographical errors, but this is the correct formula."
                 },
                 {
                     id: "cm13q034",
@@ -538,7 +538,7 @@ const CIVIL_MODEL_13 = {
                         { key: "d", text: "75micron" }
                     ],
                     answer: "b",
-                    explanation: "The gravel fraction consists of particles retained on the No. 4 sieve, which has an opening of 4.75 mm. '7.75mm' is likely a repeated error; the standard sieve for gravel is the 4.75mm (No. 4) sieve. Larger gravel is retained on sieves like the 3-inch or 3/4-inch."
+                    explanation: "The gravel fraction is the part retained on the No. 4 sieve, which has a 4.75 mm opening. '7.75mm' is probably a misprint; the standard sieve for gravel is the 4.75 mm (No. 4) sieve. Larger gravel is retained on sieves such as the 3-inch or 0.75-inch."
                 },
                 {
                     id: "cm13q038",
@@ -615,7 +615,7 @@ const CIVIL_MODEL_13 = {
                         { key: "c", text: "yd = (∂Vw)/∂z" }
                     ],
                     answer: "c",
-                    explanation: "This option seems to contain typographical errors. The fundamental relationship is γ_d = (G * γ_w) / (1 + e), where γ_d is dry unit weight, G is specific gravity, γ_w is unit weight of water, and e is void ratio. The correct option is not clearly stated among the choices."
+                    explanation: "The options contain typographical errors. The fundamental relationship is \\[\\gamma_d = \\dfrac{G\\gamma_w}{1 + e}\\] where \\(\\gamma_d\\) is the dry unit weight, \\(G\\) the specific gravity, \\(\\gamma_w\\) the unit weight of water and \\(e\\) the void ratio. The correct option is not clearly stated among the choices."
                 },
                 {
                     id: "cm13q044",
@@ -628,7 +628,7 @@ const CIVIL_MODEL_13 = {
                         { key: "d", text: "w =e×G×S" }
                     ],
                     answer: "a",
-                    explanation: "The fundamental relationship is S * e = w * G, where S is degree of saturation, e is void ratio, w is water content, and G is specific gravity."
+                    explanation: "The fundamental relationship is \\[Se = wG\\] where \\(S\\) is the degree of saturation, \\(e\\) the void ratio, \\(w\\) the water content and \\(G\\) the specific gravity."
                 },
                 {
                     id: "cm13q045",
@@ -641,7 +641,7 @@ const CIVIL_MODEL_13 = {
                         { key: "d", text: "all of the above" }
                     ],
                     answer: "c",
-                    explanation: "Effective stress (σ') = Total stress (σ) - Pore water pressure (u). It is not the stress at particle contacts nor directly measurable, but it controls the mechanical behavior of soil like shear strength and compressibility."
+                    explanation: "Effective stress is total stress minus pore water pressure: \\[\\sigma' = \\sigma - u\\] It is not the stress at particle contacts nor directly measurable, but it controls the mechanical behaviour of soil, such as shear strength and compressibility."
                 },
                 {
                     id: "cm13q046",
@@ -1006,7 +1006,7 @@ const CIVIL_MODEL_13 = {
                         { key: "d", text: "0.555K_AV_wH^2" }
                     ],
                     answer: "d",
-                    explanation: "Von Karman's formula for the total hydrodynamic force (P_e) on a dam face during an earthquake is P_e = 0.555 * K_h * γ_w * H², where K_h is the seismic coefficient, γ_w is the unit weight of water, and H is the depth of water."
+                    explanation: "Von Karman's formula for the total hydrodynamic force on a dam face during an earthquake is \\[P_e = 0.555K_h\\gamma_wH^2\\] where \\(K_h\\) is the seismic coefficient, \\(\\gamma_w\\) the unit weight of water and \\(H\\) the depth of water."
                 },
                 {
                     id: "cm13q072",
@@ -1071,7 +1071,7 @@ const CIVIL_MODEL_13 = {
                         { key: "d", text: "Side Slope = 1.3: 1, Depth = 4.5 m" }
                     ],
                     answer: "a",
-                    explanation: "The most economical section for a lined canal is a half-hexagon. Using Manning's formula (Q = (1/n)*A*R^(2/3)*S^(1/2)) with common side slopes of 1.5:1 (H:V) for lined canals, the calculated depth for given parameters (Q=20, S=1/7000, n=0.015) is approximately 3.77 m."
+                    explanation: "The most economical section for a lined canal is a half-hexagon. Using Manning's formula \\[Q = \\dfrac{1}{n}AR^{2{/}3}S^{1{/}2}\\] with the common lined-canal side slope of 1.5:1 (H:V), the depth for \\(Q = 20\\), \\(S = \\dfrac{1}{7000}\\) and \\(n = 0.015\\) works out to about 3.77 m."
                 },
                 {
                     id: "cm13q077",
@@ -1084,7 +1084,7 @@ const CIVIL_MODEL_13 = {
                         { key: "d", text: "Total Depth = 6.25 m, Bed Width = 14.4 m" }
                     ],
                     answer: "b",
-                    explanation: "Using Manning's formula and ensuring the velocity does not exceed the limiting value (3 m/s), the dimensions are iteratively calculated. For Q=400 cumecs, S=1/6000, n=0.012, z=1, the correct option satisfies both the discharge and velocity criteria."
+                    explanation: "Using Manning's formula and keeping the velocity within the limiting 3 m per s, the dimensions are found iteratively. For \\(Q = 400\\) cumecs, \\(S = \\dfrac{1}{6000}\\), \\(n = 0.012\\) and \\(z = 1\\), the correct option satisfies both the discharge and the velocity criteria."
                 },
                 {
                     id: "cm13q078",
@@ -1110,7 +1110,7 @@ const CIVIL_MODEL_13 = {
                         { key: "d", text: "Coefficient of Roughness" }
                     ],
                     answer: "d",
-                    explanation: "The velocity in an open channel is inversely proportional to the coefficient of roughness (e.g., Manning's n). A lower 'n' value (achieved by lining) increases velocity, which in turn increases the canal's discharge capacity (Q = A * V)."
+                    explanation: "The velocity in an open channel is inversely proportional to the roughness coefficient (for example Manning's \\(n\\)). A lower \\(n\\), achieved by lining, raises the velocity, which in turn raises the capacity: \\[Q = AV\\]"
                 }
             ]
         },
@@ -1262,7 +1262,7 @@ const CIVIL_MODEL_13 = {
                         { key: "d", text: "1/8th of mean dimension" }
                     ],
                     answer: "c",
-                    explanation: "Flakiness index is the percentage by weight of particles whose thickness is less than 0.6 times (3/5th) their mean dimension. Excessive flaky aggregates are undesirable as they compromise strength and workability."
+                    explanation: "The flakiness index is the percentage by weight of particles whose thickness is less than 0.6 times (\\(\\dfrac{3}{5}\\)) their mean dimension. Excessive flaky aggregate is undesirable because it compromises strength and workability."
                 }
             ]
         },

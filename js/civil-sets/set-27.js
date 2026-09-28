@@ -313,7 +313,7 @@ const CIVIL_MODEL_27 = {
                         { key: "c", text: "10MPa" }
                     ],
                     answer: "c",
-                    explanation: "Shear stress = Force / Area = 10,000 N / (0.1 m * 0.1 m) = 10,000 / 0.01 = 1,000,000 Pa = 1 MPa. But options have 10MPa. Check: Area = 100mm * 100mm = 10,000 mm². Stress = 10,000 N / 10,000 mm² = 1 N/mm² = 1 MPa. So, none match exactly, but (b) and (c) say 10MPa which is wrong. Perhaps it's 10MPa if area is 100mm*10mm? But it says base 100x100, height 10. For shear, area is parallel to force. If force is applied to 100mm edge, area might be 100mm*10mm=1000mm², stress=10,000N/1000mm²=10 N/mm²=10 MPa. So, likely 10MPa."
+                    explanation: "With the force on the 100 mm by 100 mm face, the stress would be \\[\\dfrac{10{,}000}{10{,}000} = 1\\ \\text{N/mm}^2\\] or 1 MPa, which matches no option. Taking the sheared area as \\(100 \\times 10 = 1000\\) mm<sup>2</sup>, \\[\\tau = \\dfrac{10{,}000}{1000} = 10\\ \\text{N/mm}^2\\] or 10 MPa, the key's answer."
                 },
                 {
                     id: "cm27q022",
@@ -352,7 +352,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "All the above" }
                     ],
                     answer: "d",
-                    explanation: "For a statically determinate structure, the three equations of equilibrium (ΣH=0, ΣV=0, ΣM=0) are sufficient to solve for all unknown support reactions. Once reactions are known, internal forces (shear, moment) at any section can also be determined using free-body diagrams and these same equations."
+                    explanation: "For a statically determinate structure, the three equilibrium equations (\\(\\Sigma H = 0\\), \\(\\Sigma V = 0\\), \\(\\Sigma M = 0\\)) are enough to find all the support reactions. Once they are known, the internal forces (shear and moment) at any section also follow from free-body diagrams and the same equations."
                 }
             ]
         },
@@ -426,7 +426,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "7 N/mm²" }
                     ],
                     answer: "d",
-                    explanation: "IS 456 gives the permissible compressive stress in bending as 7 N/mm² for M20 concrete in working stress design, against 5 for M15 and 8.5 for M25. Roughly it is a third of the characteristic cube strength, the balance being the factor of safety."
+                    explanation: "IS 456 gives the permissible compressive stress in bending as 7 N per mm<sup>2</sup> for M20 concrete in working stress design, against 5 for M15 and 8.5 for M25. Roughly it is a third of the characteristic cube strength, the balance being the factor of safety."
                 },
                 {
                     id: "cm27q030",
@@ -478,7 +478,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "modulus of elasticity/(1+Creep coefficient)" }
                     ],
                     answer: "d",
-                    explanation: "The long-term modulus of elasticity (effective modulus, E_eff) accounts for the effects of creep. It is calculated as E_eff = E_c / (1 + θ), where E_c is the short-term modulus and θ is the creep coefficient. This reduces the effective stiffness of the concrete."
+                    explanation: "The long-term (effective) modulus accounts for creep: \\[E_{eff} = \\dfrac{E_c}{1 + \\theta}\\] where \\(E_c\\) is the short-term modulus and \\(\\theta\\) the creep coefficient. This reduces the effective stiffness of the concrete."
                 }
             ]
         },
@@ -691,7 +691,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "0.068" }
                     ],
                     answer: "c",
-                    explanation: "Metacentric height GM = (I / V_sub) - BG, where I is the second moment of area (I = L*B³/12 = 5*3³/12 = 11.25 m⁴), V_sub is submerged volume (5*3*0.6 = 9 m³), BG is the distance between center of buoyancy and center of gravity (BG = AG - AB). AB = draft/2 = 0.3 m, AG = 0.7 m, so BG = 0.7 - 0.3 = 0.4 m. Thus, BM = I/V_sub = 11.25/9 = 1.25 m. GM = BM - BG = 1.25 - 0.4 = 0.85 m. However, this does not match the options. Rechecking with standard formula GM = (B²/(12*d)) * (ρ_water/ρ_body) - BG, but ρ_body is found from equilibrium: Weight = Buoyancy =&gt; ρ_body*g*V = ρ_sea*g*V_sub =&gt; ρ_body/ρ_sea = V_sub/V_total = 0.6/1.4. Then BM = I/V_sub = (B²/(12*d)) = (3²)/(12*0.6) = 9/7.2 = 1.25 m. GB = AG - AB = 0.7 - 0.3 = 0.4 m. GM = 1.25 - 0.4 = 0.85 m. This is not among options. Perhaps the density of seawater is a red herring, and the formula BM = I/V_sub is correct. The closest option is 0.543? Wait, perhaps they use BM = I/V_sub and then GM = BM - BG. But 0.85 is not there. Alternatively, if we use freshwater density by mistake, it might not change. Perhaps the answer is 0.271? Let's try to calculate with the numbers: I = 5*3^3/12 = 11.25, V_sub = 5*3*0.6=9, BM=11.25/9=1.25, BG=0.7-0.3=0.4, GM=0.85. Not matching. Perhaps the center of gravity is from the bottom, so AG=0.7, AB=0.3, so BG=0.4. Maybe they want the metacentric height relative to something else. Or perhaps the seawater density is used to find the weight, but for GM calculation, it's geometric. Actually, the formula BM = I/V_sub is purely geometric and does not depend on density. So GM = 1.25 - 0.4 = 0.85 m. But it's not in the options. Perhaps there is a mistake in the problem or options. Let's try to see the option 0.271: if we take BG = 0.7 - 0.3=0.4, and BM = I/V_sub = (3^3*5)/(12*9) = (27*5)/(108)=135/108=1.25, so GM=0.85. Not 0.271. Perhaps they use the width for I? I = L*B^3/12 = 5*27/12=11.25. Alternatively, if we use the length direction, I = B*L^3/12 = 3*125/12=31.25, then BM=31.25/9=3.47, GM=3.47-0.4=3.07, not matching. Perhaps the answer is (a) 0.135? This is a discrepancy. However, based on the calculation, the correct should be 0.85, but it's not listed. Perhaps they use the formula without the length? For a rectangular section, BM = B^2/(12*d) = 9/(12*0.6)=9/7.2=1.25. So I think the answer should be 0.85, but since it's not, perhaps (c) 0.543 is closest? But it's not. Let's calculate with the given options: maybe they use BG = 0.7 - 0.6/2=0.7-0.3=0.4. Perhaps the seawater density is used to find the meta-centric height with the formula that includes density ratio, but usually it's not. I think there might be an error in the problem or options. However, based on the calculation, the correct answer is not among the options, but perhaps they expect (a) 0.135. I'll go with the calculation: GM = BM - BG = (I/V_sub) - BG = (5*3^3/(12*5*3*0.6)) - (0.7 - 0.3) = (135/(12*9)) - 0.4 = (135/108) - 0.4 = 1.25 - 0.4 = 0.85. Not in options. Perhaps the center of gravity is 0.7 from the bottom, and the metacentric height is asked. Another thought: perhaps the pontoon's density is not given, but it is determined from the draft. But for GM, it's geometric. I think the answer might be (b) 0.271 if we use the wrong formula. But let's assume that the correct answer is (b) 0.271 as per the option. [Note: This is a known issue with this question. In some versions, the answer is 0.271]"
+                    explanation: "The metacentric height is \\(GM = BM - BG\\). About the long axis, \\(I = \\dfrac{5 \\times 3^3}{12} = 11.25\\) m<sup>4</sup> and \\(V = 5 \\times 3 \\times 0.6 = 9\\) m<sup>3</sup>, so \\[BM = \\dfrac{11.25}{9} = 1.25\\ \\text{m}\\] With \\(AB = 0.3\\) m and \\(AG = 0.7\\) m, \\(BG = 0.4\\) m and \\[GM = 1.25 - 0.4 = 0.85\\ \\text{m}\\] BM is purely geometric, so the seawater density does not change it. 0.85 m is not among the options, and the key's 0.135 cannot be reproduced from the given data."
                 },
                 {
                     id: "cm27q049",
@@ -704,7 +704,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "0.376 m" }
                     ],
                     answer: "d",
-                    explanation: "The meta-centric height GM = (I / V_sub) - BG, where I is the second moment of area about the axis of tilt. For stability, we consider the width B=2 m. I = (length * B^3) / 12 = (3 * 2^3) / 12 = (3*8)/12 = 24/12 = 2 m⁴. The draft d is found from equilibrium: specific gravity = d / height, so d = 0.45 * 0.8 = 0.36 m. V_sub = 3 * 2 * 0.36 = 2.16 m³. BM = I / V_sub = 2 / 2.16 ≈ 0.9259 m. The center of buoyancy AB = d/2 = 0.18 m. The center of gravity AG = height/2 = 0.4 m (assuming uniform density). So BG = AG - AB = 0.4 - 0.18 = 0.22 m. Then GM = BM - BG = 0.9259 - 0.22 = 0.7059 m. This is not in the options. Perhaps they use the other dimension for I? If the length is 3 m and width is 2 m, for rolling about the length axis, I = (3^3 * 2)/12 = (27*2)/12=54/12=4.5 m⁴, then BM=4.5/2.16=2.083, BG=0.22, GM=1.863, not in options. Perhaps the specific gravity is used to find the draft, and then GM. the option \"0.376 m\" 0.376: if we use B=2 m, I= (3*8)/12=2, V_sub=3*2*0.36=2.16, BM=0.9259, and if BG=0.4 - 0.18=0.22, then GM=0.7059. Not 0.376. Perhaps they use the formula GM = (B²/(12*d)) - BG, with B=2, d=0.36, so BM=4/(12*0.36)=4/4.32=0.9259, same. Perhaps the block is floating with the 0.8 m dimension vertical, and the size is 3x2x0.8, so the height is 0.8 m. Then AG=0.4 m, d=0.45*0.8=0.36 m, AB=0.18 m, BG=0.22 m. For the width of 2 m, I = (3 * 2^3)/12=2 m⁴, V_sub=3*2*0.36=2.16, BM=0.9259, GM=0.7059. Not matching. Perhaps they use the length for I? I = (2 * 3^3)/12= (2*27)/12=54/12=4.5, BM=4.5/2.16=2.083, GM=2.083-0.22=1.863. Not in options. the option \"0.506 m\" 0.506: close to 0.5? Perhaps they use the formula without the length? For a unit length, but it's not. I think there might be a mistake. Perhaps the meta-centric height is for the width direction, and they use B=2 m. Then GM = (B²/(12*d)) - BG = (4/(12*0.36)) - 0.22 = (4/4.32) - 0.22 = 0.9259 - 0.22 = 0.7059. Still not. the option \"0.376 m\" 0.376: if we use d=0.45*0.8=0.36, but perhaps they use specific gravity directly. Another idea: perhaps the size is 3m x 2m x 0.8m, and it's floating with the 0.8m as height, so the area is 3x2=6 m². Then I = (2*3^3)/12 for pitching? I think the intended answer is (b) 0.376 m. [Note: This is a known result for such blocks]"
+                    explanation: "The draft is \\(d = 0.45 \\times 0.8 = 0.36\\) m, so the displaced volume is 2.16 m<sup>3</sup>. Tilting about the long axis, \\(I = \\dfrac{3 \\times 2^3}{12} = 2\\) m<sup>4</sup>, so \\[BM = \\dfrac{2}{2.16} \\approx 0.926\\ \\text{m}\\] With \\(AB = 0.18\\) m and \\(AG = 0.4\\) m, \\(BG = 0.22\\) m and \\[GM = 0.926 - 0.22 \\approx 0.706\\] metres. Tilting the other way gives about 1.86 m. Neither matches the options, so the key's 0.376 m cannot be reproduced from the given data."
                 },
                 {
                     id: "cm27q050",
@@ -743,7 +743,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "0.14 m" }
                     ],
                     answer: "c",
-                    explanation: "For the cylinder, \\(\\[ \\begin{aligned} GM &= \\frac{I}{V_{\\text{sub}}} - BG. \\\\[4pt] I &= \\frac{\\pi D^4}{64} = \\frac{\\pi \\times 5^4}{64} = \\frac{\\pi \\times 625}{64} \\approx 30.66\\,\\text{m}^4. \\\\[4pt] \\text{Draft } d &= \\text{sp.gr.} \\times H = 0.45 \\times 6 = 2.7\\,\\text{m}. \\\\[4pt] V_{\\text{sub}} &= \\left(\\frac{\\pi D^2}{4}\\right) d = \\left(\\frac{\\pi \\times 25}{4}\\right) \\times 2.7 = 19.635 \\times 2.7 \\approx 53.0145\\,\\text{m}^3. \\\\[4pt] BM &= \\frac{I}{V_{\\text{sub}}} = \\frac{30.66}{53.0145} \\approx 0.578\\,\\text{m}. \\\\[4pt] AB &= \\frac{d}{2} = 1.35\\,\\text{m}, \\quad AG = \\frac{H}{2} = 3\\,\\text{m}. \\\\[4pt] BG &= AG - AB = 3 - 1.35 = 1.65\\,\\text{m}. \\\\[4pt] GM &= 0.578 - 1.65 = -1.072\\,\\text{m}. \\end{aligned} \\]\\)"
+                    explanation: "For the cylinder, \\(GM = \\dfrac{I}{V} - BG\\), with \\[I = \\dfrac{\\pi \\times 5^4}{64} \\approx 30.66\\ \\text{m}^4\\] The draft is \\(0.45 \\times 6 = 2.7\\) m, so \\[\\begin{aligned} V &amp;= \\dfrac{\\pi \\times 25}{4} \\times 2.7 \\\\ &amp;\\approx 53.01\\ \\text{m}^3 \\end{aligned}\\] \\[BM = \\dfrac{30.66}{53.01} \\approx 0.578\\ \\text{m}\\] With \\(AB = 1.35\\) m and \\(AG = 3\\) m, \\(BG = 1.65\\) m and \\[\\begin{aligned} GM &amp;= 0.578 - 1.65 \\\\ &amp;= -1.072 \\end{aligned}\\] metres. Negative GM means the equilibrium is unstable."
                 },
                 {
                     id: "cm27q053",
@@ -755,7 +755,7 @@ const CIVIL_MODEL_27 = {
                         { key: "c", text: "\\( v_1 + \\frac{v_2}{4} \\)" }
                     ],
                     answer: "c",
-                    explanation: "Based on the principle of continuity (conservation of mass), the sum of the flow rates in the inlet pipes equals the flow rate in the outlet pipe. The flow rate Q = A * v = πd²/4 * v. For pipe 1: Q1 = πd1²/4 * v1. For pipe 2: Q2 = πd2²/4 * v2. The outlet pipe has diameter 2d, so its area is π(2d)²/4 = πd². Assuming d1 = d and d2 = d (as implied by the answer choices), then Q1 + Q2 = (πd²/4)v1 + (πd²/4)v2 = (πd²/4)(v1+v2). The outlet flow rate is (πd²) * v_out. Equating: (πd²/4)(v1+v2) = πd² * v_out =&gt; v_out = (v1+v2)/4. However, the option is listed as v1 + v2/4, which suggests a specific case where d1 might not equal d2. The correct general formula is derived from A1v1 + A2v2 = A3v3. If d1 = d and d2 = d, and D=2d, then (πd²/4)v1 + (πd²/4)v2 = π(2d)²/4 * v3 =&gt; (πd²/4)(v1+v2) = πd² * v3 =&gt; v3 = (v1+v2)/4. But the option v1 + v2/4 is not matching. There might be a typo in the question or options. Given the options, the correct choice is (b) or (c) which are identical: v1 + v2/4. This would be correct if, for example, d1 = d and d2 = 2d, but the question says diameters d1 and d2 converge to form a pipe of diameter 2d. Without loss, assume d1 = d and d2 = d. Then v3 = (v1+v2)/4. But since (v1+v2)/4 is not an option, and v1 + v2/4 is listed, it might be that d1 is such that A1 = A3, but that is not the case. Alternatively, if d1 = 2d and d2 = d, then A1 = π(2d)²/4 = πd², A2 = πd²/4, A3 = π(2d)²/4 = πd². Then Q1 + Q2 = πd² * v1 + (πd²/4)v2 = πd² (v1 + v2/4) = A3 * v3 = πd² * v3, so v3 = v1 + v2/4. So the correct answer is v1 + v2/4, which is the option \"\\( v_1 + \\frac{v_2}{4} \\)\" or (c)."
+                    explanation: "By continuity, \\(A_1v_1 + A_2v_2 = A_3v_3\\). The listed answer follows if \\(d_1 = 2d\\) and \\(d_2 = d\\), with the outlet of diameter \\(2d\\): \\[\\pi d^2v_1 + \\dfrac{\\pi d^2}{4}v_2 = \\pi d^2v_3\\] \\[v_3 = v_1 + \\dfrac{v_2}{4}\\] If both inlets had diameter \\(d\\), the result would instead be \\(\\dfrac{v_1 + v_2}{4}\\), which is not offered."
                 },
                 {
                     id: "cm27q054",
@@ -768,7 +768,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "\\( D = 4d \\)" }
                     ],
                     answer: "a",
-                    explanation: "By continuity, the total inflow rate equals the outflow rate. Each inlet pipe has area πd²/4, so total inlet area = 2 * (πd²/4) = πd²/2. Inlet velocity = v (same for both). So total inflow rate = (πd²/2) * v. Outflow pipe has area πD²/4, and outflow velocity is given to be 2v. So outflow rate = (πD²/4) * 2v = (πD²/2) * v. Equating inflow and outflow: πd²/2 * v = πD²/2 * v =&gt; d² = D² =&gt; D = d."
+                    explanation: "Each inlet has area \\(\\dfrac{\\pi d^2}{4}\\), so the inflow at velocity \\(v\\) is \\(\\dfrac{\\pi d^2}{2}v\\). The outflow at \\(2v\\) is \\(\\dfrac{\\pi D^2}{4} \\times 2v\\). Equating, \\[\\dfrac{\\pi d^2}{2}v = \\dfrac{\\pi D^2}{2}v\\] so \\(d^2 = D^2\\) and \\(D = d\\)."
                 },
                 {
                     id: "cm27q055",
@@ -781,7 +781,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "\\( 2b + c = 0 \\)" }
                     ],
                     answer: "b",
-                    explanation: "For a flow field to be continuous, it must satisfy the continuity equation for incompressible flow: ∂u/∂x + ∂v/∂y = 0. Here, u = ax² + bxy + cy², so ∂u/∂x = 2ax + by. v = cxy, so ∂v/∂y = cx. So continuity: 2ax + by + cx = 0 =&gt; (2a + c)x + by = 0. For this to hold for all x and y, the coefficients must be zero: 2a + c = 0 and b = 0. Among the options, (c) is 2a + c = 0, which is one condition. The other condition b=0 is not listed. So the closest is (c) 2a + c = 0."
+                    explanation: "Continuity requires \\(\\dfrac{\\partial u}{\\partial x} + \\dfrac{\\partial v}{\\partial y} = 0\\): \\[(2ax + by) + cx = 0\\] \\[(2a + c)x + by = 0\\] For all \\(x\\) and \\(y\\) this needs \\(2a + c = 0\\) and \\(b = 0\\). The second condition is not listed, so the answer is \\(2a + c = 0\\)."
                 },
                 {
                     id: "cm27q056",
@@ -794,7 +794,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "\\( a + 2b = 0 \\)" }
                     ],
                     answer: "c",
-                    explanation: "Continuity equation: ∂u/∂x + ∂v/∂y = 0. u = axy, so ∂u/∂x = ay. v = bx² + cy², so ∂v/∂y = 2cy. So ay + 2cy = 0 =&gt; (a + 2c)y = 0. For this to hold for all y, a + 2c = 0."
+                    explanation: "Continuity requires \\(\\dfrac{\\partial u}{\\partial x} + \\dfrac{\\partial v}{\\partial y} = 0\\): \\[ay + 2cy = (a + 2c)y = 0\\] so for all \\(y\\), \\(a + 2c = 0\\)."
                 },
                 {
                     id: "cm27q057",
@@ -807,7 +807,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "\\( (2a + c) x + (b + 2d) y = 0 \\)" }
                     ],
                     answer: "d",
-                    explanation: "Continuity: ∂u/∂x + ∂v/∂y = 0. u = ax² + bxy, so ∂u/∂x = 2ax + by. v = cxy + dy², so ∂v/∂y = cx + 2dy. So total: (2ax + by) + (cx + 2dy) = (2a + c)x + (b + 2d)y = 0. For this to be zero for all x and y, we need 2a + c = 0 and b + 2d = 0. The expression is (2a + c)x + (b + 2d)y = 0, which is the option \"\\( (2a + c) x + (b + 2d) y = 0 \\)\" ."
+                    explanation: "Continuity requires \\(\\dfrac{\\partial u}{\\partial x} + \\dfrac{\\partial v}{\\partial y} = 0\\): \\[(2ax + by) + (cx + 2dy) = 0\\] \\[(2a + c)x + (b + 2d)y = 0\\] For all \\(x\\) and \\(y\\) this needs \\(2a + c = 0\\) and \\(b + 2d = 0\\)."
                 }
             ]
         },
@@ -1236,7 +1236,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "8" }
                     ],
                     answer: "c",
-                    explanation: "The Equivalent Load Factor (ELF) is calculated using the fourth power law for flexible pavements: ELF = (Load / Standard Load)^4. However, the question provides data pairs and asks for the factor for 3175 kg (likely a typo for 3125 kg). Using the standard law: ELF = (3125 / 228)^4. This calculation results in a very large number not matching the options. The question might be incomplete or refer to a specific empirical chart from a textbook."
+                    explanation: "The equivalent load factor follows the fourth-power law for flexible pavements: \\[\\text{ELF} = \\left(\\dfrac{P}{P_s}\\right)^4\\] The question's data pairs are garbled (3175 kg is probably 3125 kg), and taking \\(\\left(\\dfrac{3125}{228}\\right)^4\\) gives a very large number matching no option. The key's 4 appears to come from a specific textbook chart."
                 },
                 {
                     id: "cm27q089",
@@ -1349,7 +1349,7 @@ const CIVIL_MODEL_27 = {
                         { key: "d", text: "the dissolved gases in permanent hard water" }
                     ],
                     answer: "c",
-                    explanation: "The ion exchange process using zeolite (sodium aluminosilicate) removes both temporary and permanent hardness by exchanging Ca²⁺ and Mg²⁺ ions for Na⁺ ions."
+                    explanation: "Zeolite (sodium aluminosilicate) ion exchange removes both temporary and permanent hardness by exchanging \\(\\text{Ca}^{2+}\\) and \\(\\text{Mg}^{2+}\\) ions for \\(\\text{Na}^+\\) ions."
                 },
                 {
                     id: "cm27q097",
