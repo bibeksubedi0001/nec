@@ -11,8 +11,10 @@
     const fromSource = (key, source) => !source || source === "all" || originOf(key) === source;
     const countOf = (node, source) => !source || source === "all" ? node.count
         : node.sourceCounts ? node.sourceCounts[source] || 0 : source === "model" ? node.count : 0;
-    const sourceLabel = (item) => item.q.source?.kind === "capsule" || item.q.source?.kind === "past"
-        ? item.q.source.reference : `Model ${item.setNo}, Q${item.sourceNo}`;
+    // Mixed past sets score every question at 1 mark, so the original paper's mark suffix is dropped there.
+    const mixedSetOf = (run) => run && (window.CIVIL_PAST_SETS || []).find((set) => set.mixed && set.key === run.capsuleSet) || null;
+    const sourceLabel = (item, run = null) => item.q.source?.kind === "capsule" || item.q.source?.kind === "past"
+        ? (mixedSetOf(run) ? item.q.source.reference.replace(/ · \d+ marks?$/, "") : item.q.source.reference) : `Model ${item.setNo}, Q${item.sourceNo}`;
     const plainText = (value) => String(value || "").replace(/<svg[\s\S]*?<\/svg>/gi, " ")
         .replace(/<[^>]*>/g, " ").replace(/&(?:nbsp|amp|lt|gt|quot|#\d+);/g, " ")
         .replace(/\s+/g, " ").trim().toLowerCase();
@@ -216,6 +218,7 @@
     const draftKey = (mode) => mode === "practice" ? "practiceDraft" : "draft";
     const pastPaperOf = (run) => run && Array.isArray(run.ids) && (window.CIVIL_PAST_SETS || []).find((set) => set.key === run.capsuleSet
         || set.ids.length === run.ids.length && set.ids.every((id, index) => id === run.ids[index])) || null;
+    const weightedRun = (run) => { const paper = pastPaperOf(run); return !!paper && !paper.mixed; };
 
     function recordFeedback(store, run, item, answer, at = Date.now()) {
         const key = questionKey(item);
@@ -516,23 +519,25 @@
                 const status = exam || practising ? "live" : score ? "done" : "new";
                 return { set, exam, practising, score, status };
             }).filter(({ set, status }) => (statusFilter === "all" || statusFilter === status)
-                && ((past ? [set.title, set.date, set.shift, "past paper"].join(" ") : set.title).toLowerCase().includes(query) || (set.no != null && String(set.no) === query)));
+                && ((past ? [set.title, set.date || "", set.shift || "", set.mixed ? "mixed past paper" : "past paper"].join(" ") : set.title).toLowerCase().includes(query) || (set.no != null && String(set.no) === query)));
             if (!cards.length) return "";
-            const recalls = sets.filter((set) => set.recall).length;
-            const heading = past ? `<h3 id="cvPastSetsTitle">NEC past papers</h3><p>${sets.length - recalls} licence-exam papers from 2080, 80 questions each. <span style="white-space:nowrap">Q1–60</span> carry 1 mark and <span style="white-space:nowrap">Q61–80</span> carry 2 marks (100 marks, pass mark 50). Where a published key was wrong, the solution says so.${recalls ? " The recall set rebuilds questions that candidates remembered from the latest exam; its options were written afresh and every question carries 1 mark." : ""}</p>`
+            const recalls = sets.filter((set) => set.recall).length, mixedSets = sets.filter((set) => set.mixed).length;
+            const heading = past ? `<h3 id="cvPastSetsTitle">NEC past papers</h3><p>${sets.length - recalls - mixedSets} licence-exam papers from 2080, 80 questions each. <span style="white-space:nowrap">Q1–60</span> carry 1 mark and <span style="white-space:nowrap">Q61–80</span> carry 2 marks (100 marks, pass mark 50). Where a published key was wrong, the solution says so.${recalls ? " The recall set rebuilds questions that candidates remembered from the latest exam; its options were written afresh and every question carries 1 mark." : ""}</p>`
                 : `<h3 id="cvCapsuleSetsTitle">Capsule question sets</h3><p>${sets.length} sets of 100 questions from the revision capsule, balanced across every chapter</p>`;
+            const cardHtml = ({ set, exam, practising, score, status }) => {
+                const answered = exam ? Object.keys(exam.answers).length : 0;
+                const chapters = Object.keys(set.chapters).filter((chapter) => chapter !== "11").length;
+                const meta = past && !set.mixed ? `<span>${esc(set.date)}</span><span>${esc(set.shift)}</span><span>${set.total} questions · ${set.fullMarks} marks</span><span>${set.durationMinutes} min</span>`
+                    : `<span>${set.total} questions${set.mixed ? ` · ${set.fullMarks} marks` : ""}</span><span>${set.durationMinutes} min</span><span>${chapters} chapters</span>`;
+                return `<article class="cs-paper${status === "done" ? " is-done" : status === "live" ? " is-live" : ""}" ${past ? "data-past-set" : "data-capsule-set"}="${set.key}"><div class="cs-paper-top"><span class="cs-paper-number" aria-hidden="true">${uiIcon("clipboard")}</span><span class="cv-pill ${status}">${status === "done" ? "Completed" : status === "live" ? "In progress" : "Not started"}</span></div>
+                    <h3>${esc(set.title)}</h3><div class="cs-paper-meta">${meta}</div>
+                    ${answered ? `<div class="cs-paper-progress" role="progressbar" aria-label="${past ? "Past paper" : "Capsule"} exam answered" aria-valuemin="0" aria-valuemax="${set.total}" aria-valuenow="${answered}"><span style="width:${Math.min(100, answered / set.total * 100)}%"></span></div>` : ""}
+                    ${score ? `<div class="cs-paper-score"><small>Personal best</small><b>${score.best}%</b></div>` : ""}
+                    <div class="cs-paper-actions"><button type="button" class="cv-btn" data-cp-action="capsule-set" data-set="${set.key}" data-mode="exam">${exam ? "Resume exam" : score ? "Retake exam" : "Start exam"}</button><button type="button" class="cv-btn cv-btn-ghost" data-cp-action="capsule-set" data-set="${set.key}" data-mode="practice">${practising ? "Resume practice" : "Practice"}</button></div></article>`;
+            };
+            const papers = cards.filter(({ set }) => !set.mixed), mixed = cards.filter(({ set }) => set.mixed);
             return `<section class="cs-capsule-section${past ? " cs-past-section" : ""}" aria-labelledby="${past ? "cvPastSetsTitle" : "cvCapsuleSetsTitle"}"><div class="cs-capsule-heading">${heading}</div>
-                <div class="cs-paper-grid">${cards.map(({ set, exam, practising, score, status }) => {
-                    const answered = exam ? Object.keys(exam.answers).length : 0;
-                    const chapters = Object.keys(set.chapters).filter((chapter) => chapter !== "11").length;
-                    const meta = past ? `<span>${esc(set.date)}</span><span>${esc(set.shift)}</span><span>${set.total} questions · ${set.fullMarks} marks</span><span>${set.durationMinutes} min</span>`
-                        : `<span>${set.total} questions</span><span>${set.durationMinutes} min</span><span>${chapters} chapters</span>`;
-                    return `<article class="cs-paper${status === "done" ? " is-done" : status === "live" ? " is-live" : ""}" ${past ? "data-past-set" : "data-capsule-set"}="${set.key}"><div class="cs-paper-top"><span class="cs-paper-number" aria-hidden="true">${uiIcon("clipboard")}</span><span class="cv-pill ${status}">${status === "done" ? "Completed" : status === "live" ? "In progress" : "Not started"}</span></div>
-                        <h3>${esc(set.title)}</h3><div class="cs-paper-meta">${meta}</div>
-                        ${answered ? `<div class="cs-paper-progress" role="progressbar" aria-label="${past ? "Past paper" : "Capsule"} exam answered" aria-valuemin="0" aria-valuemax="${set.total}" aria-valuenow="${answered}"><span style="width:${Math.min(100, answered / set.total * 100)}%"></span></div>` : ""}
-                        ${score ? `<div class="cs-paper-score"><small>Personal best</small><b>${score.best}%</b></div>` : ""}
-                        <div class="cs-paper-actions"><button type="button" class="cv-btn" data-cp-action="capsule-set" data-set="${set.key}" data-mode="exam">${exam ? "Resume exam" : score ? "Retake exam" : "Start exam"}</button><button type="button" class="cv-btn cv-btn-ghost" data-cp-action="capsule-set" data-set="${set.key}" data-mode="practice">${practising ? "Resume practice" : "Practice"}</button></div></article>`;
-                }).join("")}</div></section>`;
+                ${papers.length ? `<div class="cs-paper-grid">${papers.map(cardHtml).join("")}</div>` : ""}${mixed.length ? `<section class="cs-mixed-sets" aria-labelledby="cvPastMixedTitle"><div class="cs-capsule-heading"><h3 id="cvPastMixedTitle">Mixed past-paper sets</h3><p>${mixedSets} sets of 100 questions that mix every past-paper question above, balanced across the chapters. Every question carries 1 mark (100 marks, pass mark 50).</p></div><div class="cs-paper-grid">${mixed.map(cardHtml).join("")}</div></section>` : ""}</section>`;
         }
 
         function openCapsuleSet(key, mode) {
@@ -693,7 +698,7 @@
             if (!screen || !["practice", "exam"].includes(screen.mode) || store[draftKey(screen.mode)] !== screen.run) return;
             stopTimer();
             const run = screen.run;
-            const result = grade(screen.records, run.answers, !!pastPaperOf(run));
+            const result = grade(screen.records, run.answers, weightedRun(run));
             if (screen.mode === "exam") screen.records.forEach((item) => {
                 const key = questionKey(item), answer = run.answers[key];
                 if (!item.q.options.some((option) => option.key === answer)) return;
@@ -795,7 +800,7 @@
             const status = result ? recordStatus(item) : "";
             return `<article class="cv-q${flagged ? " flagged" : ""}" data-cp-q="${esc(key)}">
                 <div class="cv-q-head"><span class="cv-q-num">${item.no}.</span><div class="cv-q-body">${q.text}</div></div>
-                <div class="cv-q-meta"><span class="cv-q-source">${esc(item.subchapterName ? (item.subchapterNumber ? item.subchapterNumber + " " : "Additional · ") + item.subchapterName : item.ch.name)} &middot; ${esc(sourceLabel(item))}${result ? ` &middot; <b class="cv-q-status ${status}">${status === "skipped" ? "Not answered" : status === "correct" ? "Correct" : "Incorrect"}</b>` : ""}</span>
+                <div class="cv-q-meta"><span class="cv-q-source">${esc(item.subchapterName ? (item.subchapterNumber ? item.subchapterNumber + " " : "Additional · ") + item.subchapterName : item.ch.name)} &middot; ${esc(sourceLabel(item, screen.run))}${result ? ` &middot; <b class="cv-q-status ${status}">${status === "skipped" ? "Not answered" : status === "correct" ? "Correct" : "Incorrect"}</b>` : ""}</span>
                 <div class="cv-q-controls">${practice ? `<button type="button" class="cv-flag${flagged ? " on" : ""}" data-cp-action="flag" data-id="${esc(key)}" aria-pressed="${flagged}" aria-label="Flag question ${item.no} for review">${flagIcon}</button>` : ""}${bookmarkButton(item)}</div></div>
                 <ul class="cv-opts">${q.options.map((option) => {
                     const selectedOption = option.key === chosen, correct = reveal && option.key === q.answer;
@@ -810,10 +815,10 @@
 
         function resultHtml() {
             const paper = pastPaperOf(screen.run);
-            const result = grade(screen.records, screen.run.answers, !!paper);
+            const result = grade(screen.records, screen.run.answers, weightedRun(screen.run));
             const instant = modeOf(screen.run) === "practice";
             return `<div class="cv-res-head"><span class="cv-eyebrow">${instant ? "Practice summary · first choices" : "Exam result"}</span><h2>${result.score} / ${result.marks} marks &middot; ${result.pct}%</h2>
-                <p>${screen.run.autoSubmitted ? "Time expired — this exam was submitted automatically. " : ""}${result.accuracy}% accuracy on attempted questions. ${instant ? "Each answer was checked immediately; this is not an exam score." : "No negative marking."}${paper && paper.passMarks ? ` Questions 61–80 carry 2 marks each${instant ? "" : `; pass mark ${paper.passMarks} of ${paper.fullMarks}: ${result.score >= paper.passMarks ? "passed" : "not yet passed"}`}.` : ""}</p></div>
+                <p>${screen.run.autoSubmitted ? "Time expired — this exam was submitted automatically. " : ""}${result.accuracy}% accuracy on attempted questions. ${instant ? "Each answer was checked immediately; this is not an exam score." : "No negative marking."}${paper && paper.passMarks ? ` ${paper.mixed ? "Every question carries 1 mark" : "Questions 61–80 carry 2 marks each"}${instant ? "" : `; pass mark ${paper.passMarks} of ${paper.fullMarks}: ${result.score >= paper.passMarks ? "passed" : "not yet passed"}`}.` : ""}</p></div>
                 <div class="cv-res-stats">${[["gray", result.answered, "Attempted"], ["green", result.correct, "Correct"], ["red", result.wrong, "Incorrect"], ["gold", result.skipped, "Skipped"]].map(([color, value, label]) => `<div class="cv-res-stat ${color}"><div class="cv-res-badge">${value}</div><div class="cv-res-label">${label}</div></div>`).join("")}</div>
                 <div class="cv-panel"><div class="cv-sec-head"><h3>Chapter &amp; subchapter performance</h3><div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="retry-wrong" ${result.wrong ? "" : "disabled"}>Practise incorrect (${result.wrong})</button><button type="button" class="cv-btn cv-btn-blue cv-btn-sm" data-cp-action="practice-again">${instant ? "Practice again" : "Retake exam"}</button></div></div>
                 <div class="cv-result-chapters">${result.chapters.map((chapter) => `<details class="cv-result-chapter" open><summary><b>${esc(chapter.name)}</b><span>${chapter.score} / ${chapter.marks} marks</span></summary>
@@ -869,7 +874,7 @@
                             return `<button type="button" class="fp-choice${isCorrect ? " correct" : ""}${isWrong ? " wrong" : ""}${option.key === chosen ? " chosen" : ""}" data-cp-action="feedback-answer" data-id="${esc(key)}" data-answer="${option.key}"${answered ? " disabled" : ""}><span class="fp-letter">${option.key.toUpperCase()}</span><span class="fp-choice-text">${option.text}</span>${isCorrect || isWrong ? `<span class="fp-choice-label">${uiIcon(isCorrect ? "check" : "close")}${isCorrect ? "Correct answer" : "Your answer"}</span>` : '<span class="fp-choice-circle" aria-hidden="true"></span>'}</button>`;
                         }).join("")}</div>
                         ${answered ? `<div class="fp-feedback ${correct ? "correct" : "wrong"}" id="fpFeedback" role="status" tabindex="-1"><b>${correct ? "Correct. Well done." : "Not quite — here’s the answer."}</b><p>The correct option is <strong>${q.answer.toUpperCase()}</strong>. Your first choice has been recorded.</p><div class="fp-explanation"><span>WHY THIS ANSWER</span><div>${q.explanation || "No explanation is available for this question."}</div></div></div>` : '<p class="fp-answer-prompt">Choose an option to reveal the correct answer and explanation.</p>'}
-                        <footer class="fp-card-foot"><span>${esc(item.subchapterName || item.ch.name)} · ${esc(sourceLabel(item))}</span>${bookmarkButton(item)}</footer>
+                        <footer class="fp-card-foot"><span>${esc(item.subchapterName || item.ch.name)} · ${esc(sourceLabel(item, screen.run))}</span>${bookmarkButton(item)}</footer>
                     </article><p class="fp-help">${answered ? "This answer stays locked for the round. Retry it after finishing." : "No rush. Take your time to work it through."}</p>
                 </section><aside class="fp-sidebar">${focusNavigator()}</aside></div>
                 <footer class="fp-footer"><div><button type="button" class="fp-button" data-cp-action="focus-go" data-index="${run.index - 1}"${run.index === 0 ? " disabled" : ""}>${uiIcon("arrow-left")} Previous</button><button type="button" class="fp-button fp-flag${flagged ? " on" : ""}" data-cp-action="flag" data-id="${esc(key)}" aria-pressed="${flagged}">${flagIcon}<span>${flagged ? "Flagged" : "Flag for review"}</span></button>${run.index === screen.records.length - 1 ? `<button type="button" class="fp-button fp-primary" data-cp-action="submit">Finish practice ${uiIcon("arrow-right")}</button>` : `<button type="button" class="fp-button fp-primary" data-cp-action="focus-go" data-index="${run.index + 1}">Next question ${uiIcon("arrow-right")}</button>`}</div></footer>
