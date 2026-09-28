@@ -177,6 +177,14 @@
 #civilSection #cvLearning[data-learning-view="library"] .cs-saved-question mjx-container[display="true"] { display: block; margin-block: 12px; }
 #civilSection .fp-card mjx-container svg,
 #civilSection #cvLearning[data-learning-view="library"] .cs-saved-question mjx-container svg { max-width: none; }
+/* Inline formulas in question stems and choices sit on the text baseline instead of the scroll box's bottom edge. */
+#civilSection :is(#cvLearning, #cvNotes, #cvExam, #cvResult) :is(.fp-question-text, .fp-choice-text, .cv-q-body, .cv-option-text, .cs-saved-question h3, .cn-source-question, .cn-option-btn, .cn-quiz-stem, .cn-quiz-text) mjx-container:not([display="true"]) {
+    baseline-source: last; padding-block: 0;
+}
+@supports not (baseline-source: last) {
+    #civilSection :is(#cvLearning, #cvNotes, #cvExam, #cvResult) :is(.fp-question-text, .fp-choice-text, .cv-q-body, .cv-option-text, .cs-saved-question h3, .cn-source-question, .cn-option-btn, .cn-quiz-stem, .cn-quiz-text) mjx-container:not([display="true"]) { overflow: visible; }
+    #civilSection :is(#cvLearning, #cvNotes, #cvExam, #cvResult) :is(.fp-question-text, .fp-choice-text, .cv-q-body, .cv-option-text, .cs-saved-question h3, .cn-source-question, .cn-option-btn, .cn-quiz-stem, .cn-quiz-text) mjx-container:not([display="true"]) > svg { max-width: 100%; height: auto; }
+}
 
 /* The desktop navigator stays in its column, independent of the native dialog. */
 #civilSection .fp-sidebar, #civilSection .fp-map-dialog {

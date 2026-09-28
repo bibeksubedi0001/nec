@@ -11,27 +11,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00001",
           "src": "CAP4-06-00001",
-          "text": "After intense rain on an eroding catchment, which source is most likely to show a rapid rise in turbidity, assuming no direct surface entry into the protected groundwater sources?",
+          "text": "Which source contains water with the maximum amount of turbidity?",
           "options": [
             {
               "key": "a",
-              "text": "A protected borehole in the same confined aquifer"
+              "text": "Deep wells"
             },
             {
               "key": "b",
-              "text": "A sealed well supplied by slow groundwater flow"
+              "text": "Springs"
             },
             {
               "key": "c",
-              "text": "A deep confined well beneath intact cover"
+              "text": "Lakes"
             },
             {
               "key": "d",
-              "text": "A river receiving sediment-laden runoff"
+              "text": "Rivers"
             }
           ],
           "answer": "d",
-          "explanation": "Runoff quickly delivers eroded particles to a river. Deep protected groundwater usually responds more slowly. Rivers do not invariably have the greatest turbidity: catchment, season and contamination pathways govern the comparison.<p>Capsule 4th ed., p. 23; topic 6 point 1.</p>",
+          "explanation": "River water carries silt and clay washed in by surface runoff, especially in floods, so rivers have the greatest turbidity; lakes allow settling, and groundwater is filtered through the soil.<p>Capsule 4th ed., p. 23; topic 6 point 1.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -44,32 +44,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00002",
           "src": "CAP4-06-00002",
-          "text": "A hill spring is clear throughout a site visit, but its recharge zone contains leaking latrines and fractured rock. What conclusion is justified?",
+          "text": "Water may not contain much impurity if its source is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Clear spring water requires only a taste assessment"
+              "text": "An irrigation canal"
             },
             {
               "key": "b",
-              "text": "Low turbidity does not exclude microbial contamination"
+              "text": "A spring along hill slopes"
             },
             {
               "key": "c",
-              "text": "Hill elevation guarantees removal of dissolved nitrate"
+              "text": "A pond near a village"
             },
             {
               "key": "d",
-              "text": "Soil filtration makes microbial testing unnecessary"
+              "text": "A river in flood"
             }
           ],
           "answer": "b",
-          "explanation": "Percolation can remove suspended matter, explaining clear spring water. Fractures can bypass filtration, and dissolved contaminants can persist. Sanitary inspection, seasonal sampling and appropriate treatment barriers are still necessary.<p>Capsule 4th ed., p. 23; topic 6 point 2.</p>",
+          "explanation": "Spring water on hill slopes has seeped through layers of soil and rock, which filter out most suspended matter, so it generally contains few impurities.<p>Capsule 4th ed., p. 23; topic 6 point 2.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -82,20 +82,20 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00003",
           "src": "CAP4-06-00003",
-          "text": "Water is withdrawn through a submerged pipe from a reservoir formed by damming a river. How is the raw-water source classified?",
+          "text": "Water from reservoirs comes under the category of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Confined groundwater"
+              "text": "Groundwater"
             },
             {
               "key": "b",
-              "text": "Bank-filtered groundwater"
+              "text": "Well water"
             },
             {
               "key": "c",
@@ -103,11 +103,11 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             },
             {
               "key": "d",
-              "text": "Perched groundwater"
+              "text": "Subsurface water"
             }
           ],
           "answer": "c",
-          "explanation": "The reservoir stores water at the land surface, so it is a surface-water source. Submerging the intake or burying the delivery pipe does not turn the stored water into groundwater.<p>Capsule 4th ed., p. 23; topic 6 point 3.</p>",
+          "explanation": "Reservoirs, lakes, ponds and rivers hold water on the ground surface, so reservoir water is surface water; wells, springs and infiltration galleries draw on groundwater.<p>Capsule 4th ed., p. 23; topic 6 point 3.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -120,32 +120,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00004",
           "src": "CAP4-06-00004",
-          "text": "A supply delivers 720 cubic metres per day to 6,000 residents, with no non-domestic use in this accounting boundary. What is the average per-capita delivery?",
+          "text": "The per capita demand of water is calculated in ______.",
           "options": [
             {
               "key": "a",
-              "text": "12 L/person/day"
+              "text": "Litres per person per hour"
             },
             {
               "key": "b",
-              "text": "120 L/person/day"
+              "text": "Litres per person per day"
             },
             {
               "key": "c",
-              "text": "120 L/person/hour"
+              "text": "Cubic metres per person per year"
             },
             {
               "key": "d",
-              "text": "0.12 L/person/day"
+              "text": "Litres per household per week"
             }
           ],
           "answer": "b",
-          "explanation": "Convert 720 cubic metres to 720,000 litres, then divide by 6,000 people: \\[q = \\dfrac{720{,}000}{6{,}000} = 120\\] litres per person per day. This is an average delivered volume, not an instantaneous rate or necessarily a gross production allowance.<p>Capsule 4th ed., p. 23; topic 6 point 4.</p>",
+          "explanation": "Per capita demand is the average daily water requirement of one person: the total yearly consumption divided by the population and by 365, expressed in litres per person per day.<p>Capsule 4th ed., p. 23; topic 6 point 4.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -158,32 +158,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00005",
           "src": "CAP4-06-00005",
-          "text": "A water-quality report detects a disease-causing protozoan but no disease-causing bacteria. Which description remains correct?",
+          "text": "Pathogens are ______.",
           "options": [
             {
               "key": "a",
-              "text": "The protozoan is a pathogen despite not being a bacterium"
+              "text": "Harmful bacteria"
             },
             {
               "key": "b",
-              "text": "Pathogen means any organism found in a water sample"
+              "text": "Decomposer bacteria"
             },
             {
               "key": "c",
-              "text": "The protozoan cannot be a pathogen without bacteria"
+              "text": "Harmless bacteria"
             },
             {
               "key": "d",
-              "text": "Only aerobic bacteria qualify as waterborne pathogens"
+              "text": "Nitrifying bacteria"
             }
           ],
           "answer": "a",
-          "explanation": "Pathogen describes an agent capable of causing disease, not one bacterial group. Pathogenic viruses, protozoa and helminths can occur in water; many environmental bacteria are not pathogenic.<p>Source note: Page 23 point 5 incorrectly restricts pathogens to harmful bacteria.</p><p>Capsule 4th ed., p. 23; topic 6 point 5.</p>",
+          "explanation": "Pathogens are the harmful, disease-causing bacteria in water, such as those of cholera and typhoid; non-pathogenic bacteria are harmless.<p>Capsule 4th ed., p. 23; topic 6 point 5.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -196,32 +196,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00006",
           "src": "CAP4-06-00006",
-          "text": "An infant's formula is prepared with nitrate-contaminated well water. Which pathway explains the associated methemoglobinemia risk?",
+          "text": "Blue baby syndrome (methaemoglobinaemia) is caused by ______.",
           "options": [
             {
               "key": "a",
-              "text": "Nitrate lowers oxygen delivery by precipitating circulating haemoglobin"
+              "text": "Lead"
             },
             {
               "key": "b",
-              "text": "Nitrate forms nitrite, which oxidizes haemoglobin iron"
+              "text": "Nitrate"
             },
             {
               "key": "c",
-              "text": "Nitrate forms nitrite, which reduces ferric haemoglobin iron"
+              "text": "Fluoride"
             },
             {
               "key": "d",
-              "text": "Nitrate binds haemoglobin in the same way as carbon monoxide"
+              "text": "Arsenic"
             }
           ],
           "answer": "b",
-          "explanation": "Nitrite formed from nitrate oxidizes haemoglobin iron from Fe(II) to Fe(III), producing methemoglobin with impaired oxygen carriage. The exposure is nitrate, while nitrite explains the mechanism; boiling is not a nitrate-removal barrier.<p>Capsule 4th ed., p. 23; topic 6 point 6.</p>",
+          "explanation": "Nitrate in drinking water is converted to nitrite in an infant's body; nitrite changes haemoglobin into methaemoglobin, which cannot carry oxygen, so the baby turns bluish.<p>Capsule 4th ed., p. 23; topic 6 point 6.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -234,20 +234,20 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00007",
           "src": "CAP4-06-00007",
-          "text": "A bacterial culture grows best at 55 degrees C under its validated medium conditions. Which temperature class most plausibly describes it?",
+          "text": "Bacteria that grow best at high temperatures of 40 to 70°C are called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Psychrophilic"
+              "text": "Mesophilic"
             },
             {
               "key": "b",
-              "text": "Mesophilic"
+              "text": "Psychrophilic"
             },
             {
               "key": "c",
@@ -255,11 +255,11 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             },
             {
               "key": "d",
-              "text": "Psychrotrophic"
+              "text": "Facultative"
             }
           ],
           "answer": "c",
-          "explanation": "A high growth optimum around 55 degrees C is characteristic of a thermophile. The capsule's 40-70 degrees C band is approximate; growth preference, survival and thermal inactivation are distinct properties with species-dependent limits.<p>Capsule 4th ed., p. 23; topic 6 point 7.</p>",
+          "explanation": "Thermophilic bacteria thrive at 40 to 70°C; mesophilic bacteria prefer moderate temperatures of about 20 to 40°C, and psychrophilic bacteria grow at low temperatures.<p>Capsule 4th ed., p. 23; topic 6 point 7.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -272,32 +272,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00008",
           "src": "CAP4-06-00008",
-          "text": "A trachoma-control programme supplies disinfected drinking water but households still lack water for regular face washing. Which engineering intervention addresses the remaining water-washed transmission pathway?",
+          "text": "Trachoma can be prevented by providing ______ of water.",
           "options": [
             {
               "key": "a",
-              "text": "Increase disinfectant residual in the unchanged drinking-water allocation"
+              "text": "High hardness"
             },
             {
               "key": "b",
-              "text": "Improve convenient access to enough clean water for hygiene"
+              "text": "Adequate quantity and good quality"
             },
             {
               "key": "c",
-              "text": "Add finer filtration without changing the household water allocation"
+              "text": "High fluoride content"
             },
             {
               "key": "d",
-              "text": "Reduce hardness without changing access to washing water"
+              "text": "Warm temperature"
             }
           ],
           "answer": "b",
-          "explanation": "Trachoma prevention needs water quantity, access and hygiene as well as quality. Clean water supports facial cleanliness within WHO's SAFE strategy; surgery, antibiotics and environmental improvement also matter. Drinking-water chlorination alone is not a complete programme.<p>Capsule 4th ed., p. 23; topic 6 point 8; topic 6 point 9.</p>",
+          "explanation": "Trachoma is an eye infection spread by poor hygiene. Enough clean water for regular washing of the face and hands prevents it, so both the quantity and the quality of water matter.<p>Capsule 4th ed., p. 23; topic 6 point 8; topic 6 point 9.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -311,32 +311,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00009",
           "src": "CAP4-06-00009",
-          "text": "Two suspensions have equal suspended-solids mass but scatter light differently. Which reporting practice correctly distinguishes turbidity from solids concentration?",
+          "text": "Turbidity of water is expressed in ______.",
           "options": [
             {
               "key": "a",
-              "text": "Convert NTU to mg/L using water density alone"
+              "text": "Degrees Celsius"
             },
             {
               "key": "b",
-              "text": "Report both in mg/L using the turbidity calibration directly"
+              "text": "Hazen units"
             },
             {
               "key": "c",
-              "text": "Use one NTU-to-mg/L factor for both suspensions despite their optical differences"
+              "text": "mg/L as CaCO<sub>3</sub>"
             },
             {
               "key": "d",
-              "text": "Report nephelometric turbidity in NTU and solids mass in mg/L"
+              "text": "ppm or NTU"
             }
           ],
           "answer": "d",
-          "explanation": "NTU is a method-dependent optical turbidity unit; mg/L measures mass per volume. Particle size and optical properties prevent a universal conversion. Historical silica-scale ppm terminology does not establish that turbidity equals suspended-solids concentration.<p>Source note: Page 23 point 10 is corrected; page 24 point 25 supplies the consistent modern unit.</p><p>Capsule 4th ed., pp. 23, 24; topic 6 point 10; topic 6 point 25.</p>",
+          "explanation": "Turbidity is expressed in ppm, as mg of silica per litre, on the silica scale, or in nephelometric turbidity units (NTU); Hazen units measure colour, and mg per litre as CaCO<sub>3</sub> expresses hardness.<p>Capsule 4th ed., pp. 23, 24; topic 6 point 10; topic 6 point 25.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -351,32 +351,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00010",
           "src": "CAP4-06-00010",
-          "text": "A laboratory has removed turbidity without removing dissolved colour and must compare the remaining colour with calibrated standards. Which instrument is appropriate?",
+          "text": "The colour of water is measured by ______.",
           "options": [
             {
               "key": "a",
-              "text": "A conductivity meter calibrated with salt solutions"
+              "text": "A turbidity rod"
             },
             {
               "key": "b",
-              "text": "A nephelometer calibrated only for scattered light"
+              "text": "A nephelometer"
             },
             {
               "key": "c",
-              "text": "A tintometer or calibrated colour comparator"
+              "text": "A tintometer"
             },
             {
               "key": "d",
-              "text": "A dissolved-oxygen probe with membrane calibration"
+              "text": "A pH meter"
             }
           ],
           "answer": "c",
-          "explanation": "A suitable tintometer compares colour with reference standards. True colour excludes particle interference after appropriate sample preparation; a nephelometer instead measures turbidity. Neither measurement alone establishes drinking-water safety.<p>Capsule 4th ed., pp. 23, 26; topic 6 point 11; topic 6 point 138.</p>",
+          "explanation": "A tintometer compares the colour of a water sample with standard coloured glasses, so it measures colour; a nephelometer measures turbidity from scattered light.<p>Capsule 4th ed., pp. 23, 26; topic 6 point 11; topic 6 point 138.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -391,12 +391,12 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00011",
           "src": "CAP4-06-00011",
-          "text": "An epidemic has sustained spread across several continents. Which epidemiological term describes its geographic extent rather than its severity?",
+          "text": "A disease which is widespread and can reach globally is termed ______.",
           "options": [
             {
               "key": "a",
@@ -404,19 +404,19 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             },
             {
               "key": "b",
-              "text": "Endemic occurrence"
+              "text": "Epidemic"
             },
             {
               "key": "c",
-              "text": "Local outbreak"
+              "text": "Endemic"
             },
             {
               "key": "d",
-              "text": "Sporadic occurrence"
+              "text": "Sporadic"
             }
           ],
           "answer": "a",
-          "explanation": "A pandemic is an epidemic with extensive international or intercontinental spread. Severity alone does not define it. Endemic describes expected continuing occurrence in a population, and sporadic describes infrequent irregular cases.<p>Capsule 4th ed., p. 23; topic 6 point 12.</p>",
+          "explanation": "A pandemic spreads over several countries or continents; an epidemic is an outbreak in one region, an endemic disease is always present in an area, and sporadic cases occur only occasionally.<p>Capsule 4th ed., p. 23; topic 6 point 12.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -434,27 +434,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00012",
           "src": "CAP4-06-00012",
-          "text": "A town has 10,000 residents and is assumed to grow by 10% per decade on the population at the start of each decade. What population does the geometric method predict after two decades, with no boundary change?",
+          "text": "The geometrical increase method is preferred for ______ population.",
           "options": [
             {
               "key": "a",
-              "text": "12,000"
+              "text": "An old and stable"
             },
             {
               "key": "b",
-              "text": "13,310"
+              "text": "A fully saturated"
             },
             {
               "key": "c",
-              "text": "11,000"
+              "text": "A decreasing"
             },
             {
               "key": "d",
-              "text": "12,100"
+              "text": "A rapidly growing"
             }
           ],
           "answer": "d",
-          "explanation": "Geometric growth compounds: \\[\\begin{aligned} P &amp;= 10{,}000 \\times 1.10^2 \\\\ &amp;= 12{,}100 \\end{aligned}\\] Adding 1,000 twice gives the arithmetic result 12,000. A proportional-growth model needs supporting evidence; rapid growth by itself does not prove this model will remain valid.<p>Capsule 4th ed., p. 23; topic 6 point 13.</p>",
+          "explanation": "The geometrical increase method assumes a constant percentage growth each decade, compounding like interest, so it suits young, rapidly growing towns; the arithmetic method suits old, stable cities.<p>Capsule 4th ed., p. 23; topic 6 point 13.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -467,32 +467,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00013",
           "src": "CAP4-06-00013",
-          "text": "Which pH interval is listed in Nepal's National Drinking Water Quality Standards 2079, without implying that pH compliance alone proves potability?",
+          "text": "The permissible pH value for public water supply ranges between ______.",
           "options": [
             {
               "key": "a",
-              "text": "7.5-9.5"
+              "text": "7.5 and 9.5"
             },
             {
               "key": "b",
-              "text": "6.5-8.5"
+              "text": "6.5 and 8.5"
             },
             {
               "key": "c",
-              "text": "6.0-9.0"
+              "text": "6.0 and 9.0"
             },
             {
               "key": "d",
-              "text": "5.5-7.5"
+              "text": "5.5 and 7.5"
             }
           ],
           "answer": "b",
-          "explanation": "The identified Nepal 2079 table lists pH 6.5-8.5. pH affects corrosion and treatment, but microbial and chemical hazards need separate checks. WHO 2022 treats pH operationally rather than setting a health-based pH guideline value.<p>Source note: Edition-specific reading from corrected chapter-06-sources notes; not a certification of subsequent legal amendments.</p><p>Capsule 4th ed., p. 23; topic 6 point 14.</p>",
+          "explanation": "Drinking water should have a pH between 6.5 and 8.5; more acidic water corrodes pipes, while more alkaline water tastes bitter and reduces the efficiency of chlorination.<p>Capsule 4th ed., p. 23; topic 6 point 14.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -510,27 +510,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00014",
           "src": "CAP4-06-00014",
-          "text": "An approved rural-service inventory requires 80,000 L/day for households and 24,000 L/day for livestock. What is livestock demand as a percentage of domestic demand?",
+          "text": "The livestock water demand should not exceed ______ of the total domestic demand.",
           "options": [
             {
               "key": "a",
-              "text": "30.0%"
+              "text": "20%"
             },
             {
               "key": "b",
-              "text": "33.3%"
+              "text": "35%"
             },
             {
               "key": "c",
-              "text": "23.1%"
+              "text": "5%"
             },
             {
               "key": "d",
-              "text": "20.0%"
+              "text": "50%"
             }
           ],
           "answer": "a",
-          "explanation": "Using the domestic demand as the denominator, \\[\\dfrac{24{,}000}{80{,}000} = 0.30 = 30\\%\\] Dividing by the combined 104,000 L per day instead gives 23.1%, answering a different question. Animal numbers, species and service policy govern allocation; the source's unverified 20% ceiling cannot replace the approved inventory.<p>Source note: Page 23 point 15 lacks a guideline edition for its asserted ceiling.</p><p>Capsule 4th ed., p. 23; topic 6 point 15.</p>",
+          "explanation": "In rural water supply design, livestock demand is limited to 20% of the total domestic demand, so that animal needs take only a small part of the supply.<p>Capsule 4th ed., p. 23; topic 6 point 15.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -543,32 +543,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00015",
           "src": "CAP4-06-00015",
-          "text": "On the platinum-cobalt colour scale, what does one colour unit represent when the sample is prepared for true-colour measurement?",
+          "text": "One TCU (true colour unit) is equivalent to the colour produced by 1 mg of ______ in 1 L of distilled water.",
           "options": [
             {
               "key": "a",
-              "text": "The colour of a sample containing exactly 1 mg dissolved organic carbon per litre"
+              "text": "Formazin"
             },
             {
               "key": "b",
-              "text": "The colour of the specified standard containing 1 mg platinum per litre"
+              "text": "Platinum cobalt"
             },
             {
               "key": "c",
-              "text": "The scattering from 1 mg suspended silica per litre"
+              "text": "Potassium permanganate"
             },
             {
               "key": "d",
-              "text": "The colour of any mixture containing 1 mg platinum plus cobalt per litre"
+              "text": "Silica"
             }
           ],
           "answer": "b",
-          "explanation": "The reference is 1 mg of platinum per litre in the specified platinum-cobalt standard. It is not 1 mg of an arbitrary combined reagent mixture, and a sample with the same colour need not contain platinum. Removing turbidity distinguishes true from apparent colour.<p>Source note: Page 24 point 16 confuses platinum-equivalent concentration with mass of a platinum-cobalt mixture.</p><p>Capsule 4th ed., p. 24; topic 6 point 16.</p>",
+          "explanation": "Colour is measured on the platinum–cobalt scale: one true colour unit is the colour produced by 1 mg of platinum cobalt in 1 litre of distilled water. Silica and formazin are standards for turbidity.<p>Capsule 4th ed., p. 24; topic 6 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -586,27 +586,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00018",
           "src": "CAP4-06-00018",
-          "text": "A laboratory filters a measured water volume through a suitable membrane and cultures the retained coliforms. What advantage and limitation should it recognize?",
+          "text": "______ is a better test to identify coliforms.",
           "options": [
             {
               "key": "a",
-              "text": "Direct colony enumeration is possible, but turbid samples may clog the membrane"
+              "text": "Membrane filter technique"
             },
             {
               "key": "b",
-              "text": "Direct colony enumeration is possible, and sample turbidity cannot affect recovery"
+              "text": "Jar test"
             },
             {
               "key": "c",
-              "text": "The result counts all living and dead cells without requiring colony formation"
+              "text": "Nephelometric test"
             },
             {
               "key": "d",
-              "text": "The reported result is an MPN inferred from a series of gas-positive tubes"
+              "text": "Orthotolidine test"
             }
           ],
           "answer": "a",
-          "explanation": "Membrane filtration retains bacteria for culture and enumeration as colony-forming units. Turbidity, background growth and injured organisms can impair it. Multiple-tube fermentation produces an MPN; membrane filtration is not universally the better method.<p>Capsule 4th ed., p. 24; topic 6 point 19.</p>",
+          "explanation": "In the membrane filter technique a measured sample is filtered and the membrane is incubated on a nutrient medium, so coliform colonies can be counted directly, faster and more precisely than by the multiple tube method.<p>Capsule 4th ed., p. 24; topic 6 point 19.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -619,32 +619,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00022",
           "src": "CAP4-06-00022",
-          "text": "Which intervention most directly interrupts ingestion-mediated transmission of cholera through a community water supply?",
+          "text": "Providing safe drinking water helps to prevent ______ diseases.",
           "options": [
             {
               "key": "a",
-              "text": "Soften water while allowing untreated faecal contamination to continue"
+              "text": "Air-borne"
             },
             {
               "key": "b",
-              "text": "Remove colour but leave distribution cross-connections uncorrected"
+              "text": "Deficiency"
             },
             {
               "key": "c",
-              "text": "Protect, treat and safely store water to prevent faecal contamination"
+              "text": "Water-borne"
             },
             {
               "key": "d",
-              "text": "Increase dissolved oxygen without providing microbial barriers"
+              "text": "Hereditary"
             }
           ],
           "answer": "c",
-          "explanation": "Cholera can spread by ingestion of water carrying the causative organism. Safe water requires source protection, effective treatment and protection against recontamination. Sanitation and hygiene complement these barriers; attractive colour or taste is not proof of safety.<p>Capsule 4th ed., p. 24; topic 6 point 23.</p>",
+          "explanation": "Water-borne diseases such as cholera, typhoid and dysentery spread through contaminated drinking water, so a safe drinking water supply helps to prevent them.<p>Capsule 4th ed., p. 24; topic 6 point 23.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -657,32 +657,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00025",
           "src": "CAP4-06-00025",
-          "text": "In a sunlit algal pond with no chemical dosing, which daily pH tendency follows from photosynthesis by day and respiration dominating at night?",
+          "text": "Due to the presence of algae in ponds, the alkalinity of the water ______.",
           "options": [
             {
               "key": "a",
-              "text": "pH rises both day and night because respiration removes CO2"
+              "text": "Remains constant"
             },
             {
               "key": "b",
-              "text": "pH falls by day and rises at night as dissolved CO2 changes"
+              "text": "Decreases by day and increases at night"
             },
             {
               "key": "c",
-              "text": "pH rises by day and falls at night as dissolved CO2 changes"
+              "text": "Increases by day and decreases at night"
             },
             {
               "key": "d",
-              "text": "pH stays unchanged because total alkalinity can remain conserved"
+              "text": "Increases both by day and at night"
             }
           ],
           "answer": "c",
-          "explanation": "Photosynthesis consumes dissolved CO2, shifting carbonate equilibria toward higher pH. Night-time respiration supplies CO2 and tends to lower pH. Mixing, buffering and other reactions affect the observed magnitude; this is a tendency rather than an absolute daily rule.<p>Capsule 4th ed., p. 24; topic 6 point 27.</p>",
+          "explanation": "By day, algae use carbon dioxide in photosynthesis, so the pH and alkalinity rise; at night respiration releases carbon dioxide, and they fall again.<p>Capsule 4th ed., p. 24; topic 6 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -695,32 +695,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00026",
           "src": "CAP4-06-00026",
-          "text": "In an ideal carbonate-buffered pond, only CO2 uptake and release occur; exclude precipitation, nutrient-assimilation effects and acid/base inputs. How can pH change while total alkalinity behaves?",
+          "text": "During the daytime, the alkalinity of pond water containing algae ______.",
           "options": [
             {
               "key": "a",
-              "text": "CO2 uptake raises pH and adds an equal amount of total alkalinity"
+              "text": "Decreases"
             },
             {
               "key": "b",
-              "text": "pH can vary while total alkalinity remains approximately unchanged"
+              "text": "Increases"
             },
             {
               "key": "c",
-              "text": "Constant total alkalinity requires pH and carbonate speciation to stay fixed"
+              "text": "Becomes zero"
             },
             {
               "key": "d",
-              "text": "CO2 release lowers pH and consumes total alkalinity like a strong-acid dose"
+              "text": "Remains the same"
             }
           ],
           "answer": "b",
-          "explanation": "CO2 exchange redistributes carbonate species without itself adding or removing charge-equivalent acid-neutralizing capacity. Thus pH can change without a corresponding alkalinity change. The source incorrectly uses alkalinity as a synonym for pH.<p>Source note: Separately tests the pH-versus-alkalinity error in page 24 point 27.</p><p>Capsule 4th ed., p. 24; topic 6 point 27.</p>",
+          "explanation": "Photosynthesis by the algae removes carbon dioxide from the water during the day, so the alkalinity increases in daytime and decreases at night, when respiration releases carbon dioxide.<p>Capsule 4th ed., p. 24; topic 6 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -733,32 +733,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00027",
           "src": "CAP4-06-00027",
-          "text": "E. coli is detected in a drinking-water sample. What is the defensible sanitary interpretation before identifying other organisms?",
+          "text": "E. coli are harmless organisms, but their presence in water indicates ______.",
           "options": [
             {
               "key": "a",
-              "text": "The supply is safe because all E. coli strains are harmless"
+              "text": "Excess chlorine"
             },
             {
               "key": "b",
-              "text": "Only environmental colour contamination is indicated"
+              "text": "Low turbidity"
             },
             {
               "key": "c",
-              "text": "Faecal contamination is indicated and requires investigation"
+              "text": "The presence of pathogenic bacteria"
             },
             {
               "key": "d",
-              "text": "Every waterborne pathogen is proven to be present"
+              "text": "High hardness"
             }
           ],
           "answer": "c",
-          "explanation": "E. coli is an important faecal indicator, so detection signals a failure requiring investigation. It does not enumerate or prove each other pathogen. Many strains are commensal, but pathogenic E. coli strains exist; calling the entire species harmless is incorrect.<p>Source note: Corrects both the universal harmlessness and pathogen-proof implications of page 24 point 28.</p><p>Capsule 4th ed., p. 24; topic 6 point 28.</p>",
+          "explanation": "E. coli live in the intestines of humans and animals. They are harmless themselves, but finding them shows faecal contamination and the likely presence of pathogenic bacteria.<p>Capsule 4th ed., p. 24; topic 6 point 28.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -771,32 +771,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00098",
           "src": "CAP4-06-00098",
-          "text": "For ordinary chlorinated-system conditions, which residual-chlorine interval is printed in the cited Nepal National Drinking Water Quality Standards 2079, rather than a universal exact 0.2 mg/L requirement?",
+          "text": "The permissible limit of free residual chlorine is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.10-0.50 mg/L"
+              "text": "0.2 ppm"
             },
             {
               "key": "b",
-              "text": "0.50-1.00 mg/L"
+              "text": "0.02 ppm"
             },
             {
               "key": "c",
-              "text": "0.20-0.50 mg/L"
+              "text": "2 ppm"
             },
             {
               "key": "d",
-              "text": "1.00-5.00 mg/L"
+              "text": "5 ppm"
             }
           ],
           "answer": "a",
-          "explanation": "The inspected 2079 table lists residual chlorine 0.10-0.50 mg/L for chlorinated systems, with separate conditional provisions for epidemic or high-pollution conditions. A residual of 0.2 mg/L can lie within this range, but it is not the entire rule and does not alone prove adequate pathogen inactivation.<p>Source note: Page 25 point 99 is corrected using the 2079 Gazette notice table and qualifications identified in corrected source notes; no subsequent-amendment certification is claimed.</p><p>Capsule 4th ed., p. 25; topic 6 point 99.</p>",
+          "explanation": "A free residual chlorine of about 0.2 ppm is kept in treated water so that disinfection continues through the distribution system without an objectionable taste.<p>Capsule 4th ed., p. 25; topic 6 point 99.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -814,27 +814,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00109",
           "src": "CAP4-06-00109",
-          "text": "An explicit fire scenario requires 10 L/s for two hours in a town of 12,000 people. What event volume and equivalent litres per person for that event are required?",
+          "text": "According to DWSS, the water required for fire-fighting should not be more than ______.",
           "options": [
             {
               "key": "a",
-              "text": "20 cubic metres and 1.67 L/person"
+              "text": "25 lpcd"
             },
             {
               "key": "b",
-              "text": "12 cubic metres and 1 L/person"
+              "text": "10 lpcd"
             },
             {
               "key": "c",
-              "text": "72 cubic metres and 6 L/person"
+              "text": "1 lpcd"
             },
             {
               "key": "d",
-              "text": "7.2 cubic metres and 0.6 L/person"
+              "text": "45 lpcd"
             }
           ],
           "answer": "c",
-          "explanation": "The event volume is \\[\\begin{aligned} V &amp;= 10 \\times 2 \\times 3{,}600 \\\\ &amp;= 72{,}000\\ \\text{L} = 72\\ \\text{m}^3 \\end{aligned}\\] Dividing by 12,000 people gives \\[\\dfrac{72{,}000}{12{,}000} = 6\\ \\text{L per person}\\] for this event. Event flow, duration and residual pressure differ from a daily-average planning allowance; an unverified 1 lpcd statement cannot replace a specified fire-flow check.<p>Source note: Page 26 point 109 attributes a 1 lpcd ceiling to DWSS without an edition or clause. The attribution remains unverified; no current Nepal fire standard is inferred.</p><p>Capsule 4th ed., p. 26; topic 6 point 109.</p>",
+          "explanation": "The Department of Water Supply and Sewerage allows not more than 1 litre per capita per day for fire-fighting in the design of town water supply.<p>Capsule 4th ed., p. 26; topic 6 point 109.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -847,32 +847,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00112",
           "src": "CAP4-06-00112",
-          "text": "Consistent operational solids tests on a water sample give total solids 650 mg/L and suspended solids 180 mg/L. Assuming additive fractions under the chosen methods, what dissolved-solids concentration follows?",
+          "text": "The amount of dissolved solids in water is the difference between ______.",
           "options": [
             {
               "key": "a",
-              "text": "180 mg/L"
+              "text": "Volatile solids and fixed solids"
             },
             {
               "key": "b",
-              "text": "470 mg/L"
+              "text": "Total solids and suspended solids"
             },
             {
               "key": "c",
-              "text": "830 mg/L"
+              "text": "Suspended solids and volatile solids"
             },
             {
               "key": "d",
-              "text": "3.61 mg/L"
+              "text": "Total solids and fixed solids"
             }
           ],
           "answer": "b",
-          "explanation": "Using \\(\\text{TS} \\approx \\text{TSS} + \\text{TDS}\\) gives \\[\\text{TDS} = 650 - 180 = 470\\] milligrams per litre. These are operational analytical fractions defined by filtration and drying procedures. Ordinary particle filtration does not thereby remove this dissolved fraction; mismatched methods or volatile losses can weaken exact additivity.<p>Capsule 4th ed., p. 26; topic 6 point 112.</p>",
+          "explanation": "Total solids include both suspended and dissolved solids, so the dissolved solids, which pass through the filter, equal the total solids minus the suspended solids retained on it.<p>Capsule 4th ed., p. 26; topic 6 point 112.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -885,32 +885,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00118",
           "src": "CAP4-06-00118",
-          "text": "A report describes suspended particles as smaller than 10 mg. Which replacement would provide physically meaningful particle-size information?",
+          "text": "Suspended particles in water are less than ______.",
           "options": [
             {
               "key": "a",
-              "text": "A turbidity reading in NTU treated as an identical particle diameter"
+              "text": "100 g"
             },
             {
               "key": "b",
-              "text": "A concentration in mg/L treated as the diameter of every particle"
+              "text": "1 kg"
             },
             {
               "key": "c",
-              "text": "A mass in milligrams converted to diameter without particle density or shape"
+              "text": "50 g"
             },
             {
               "key": "d",
-              "text": "A measured size distribution in micrometres with the method stated"
+              "text": "10 mg"
             }
           ],
           "answer": "d",
-          "explanation": "Milligrams measure mass, not length. Particle size requires a dimensional measure such as micrometres and an identified method, while suspended-solids concentration is mass per water volume. The source gives no recoverable size unit or analytical cutoff; replacing mg with a guessed unit would fabricate information.<p>Source note: Page 26 point 119: less than 10 mg is dimensionally defective as a size statement; exact intended threshold remains unresolved for parent review.</p><p>Capsule 4th ed., p. 26; topic 6 point 119.</p>",
+          "explanation": "Suspended particles are very small and light, less than 10 mg each, so they stay in suspension, cause turbidity and are removed by settling, coagulation and filtration.<p>Capsule 4th ed., p. 26; topic 6 point 119.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -923,32 +923,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00121",
           "src": "CAP4-06-00121",
-          "text": "Collected rainwater has low mineral hardness but was gathered from a roof contaminated by droppings and dust. Which conclusion is justified?",
+          "text": "The purest form of natural water, free from impurities, is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Atmospheric condensation certifies safety even after contact with the dirty roof"
+              "text": "River water"
             },
             {
               "key": "b",
-              "text": "First-flush diversion alone certifies safe storage without further barrier checks"
+              "text": "Well water"
             },
             {
               "key": "c",
-              "text": "Low hardness can substitute for testing faecal contamination after roof collection"
+              "text": "Spring water"
             },
             {
               "key": "d",
-              "text": "Low dissolved mineral content does not establish microbiological safety"
+              "text": "Rain water"
             }
           ],
           "answer": "d",
-          "explanation": "Condensation can produce water with relatively low dissolved mineral content, but rainfall collects atmospheric material and roof runoff can add faecal contamination. Protection, appropriate first-flush management, storage and treatment need assessment. Natural rainwater is not universally pure or automatically potable.<p>Source note: Page 26 point 123&#39;s impurity-free superlative is corrected.</p><p>Capsule 4th ed., p. 26; topic 6 point 123.</p>",
+          "explanation": "Rain water forms by condensation of water vapour, a natural distillation, so it is the purest natural water; it picks up impurities only from the air and the collecting surfaces.<p>Capsule 4th ed., p. 26; topic 6 point 123.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -961,32 +961,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00135",
           "src": "CAP4-06-00135",
-          "text": "A laboratory needs one instrument for scattered-light turbidity and another for colour comparison. Which pairing assigns their functions correctly?",
+          "text": "A nephelometer and a tintometer are used to determine, respectively, ______.",
           "options": [
             {
               "key": "a",
-              "text": "Dissolved-oxygen probe for turbidity; balance for colour"
+              "text": "Odour and taste"
             },
             {
               "key": "b",
-              "text": "Nephelometer for turbidity; tintometer for colour"
+              "text": "Turbidity and colour"
             },
             {
               "key": "c",
-              "text": "Tintometer for turbidity; nephelometer for colour"
+              "text": "Colour and turbidity"
             },
             {
               "key": "d",
-              "text": "Conductivity meter for turbidity; pH meter for colour"
+              "text": "Hardness and pH"
             }
           ],
           "answer": "b",
-          "explanation": "A nephelometer measures scattered light associated with turbidity, whereas a suitable tintometer compares colour with calibrated standards. These are different optical properties, so the measurements and sample preparation must not be interchanged. This separately tests the turbidity-instrument fact in the source's two-part point.<p>Capsule 4th ed., p. 26; topic 6 point 138.</p>",
+          "explanation": "A nephelometer measures turbidity from the light scattered by suspended particles, while a tintometer measures colour by comparison with standard coloured glasses.<p>Capsule 4th ed., p. 26; topic 6 point 138.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -999,32 +999,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00174",
           "src": "CAP4-10-00174",
-          "text": "A persistent pesticide is applied upstream of a drinking-water source. Which concern deserves evaluation even when the water looks clear?",
+          "text": "The main problem caused by the use of pesticides is that ______.",
           "options": [
             {
               "key": "a",
-              "text": "No concern once the pesticide's original odour disappears"
+              "text": "They disappear immediately after use"
             },
             {
               "key": "b",
-              "text": "Only visible suspended sediment, because dissolved chemicals are harmless"
+              "text": "They increase soil fertility"
             },
             {
               "key": "c",
-              "text": "Only hardness, because every pesticide becomes calcium carbonate"
+              "text": "They improve water quality"
             },
             {
               "key": "d",
-              "text": "Residual chemical contamination and its exposure pathways"
+              "text": "Their residue persists in water and other components of the environment"
             }
           ],
           "answer": "d",
-          "explanation": "Some pesticide residues persist, move with runoff or groundwater and affect water quality without visible colour. Persistence and toxicity differ between compounds; the absence of visible pollution is not proof of chemical safety.<p>Source note: Appendix p42 n2 qualified: persistence is compound- and condition-dependent, not identical for all pesticides.</p><p>Capsule 4th ed., p. 42; rural point 2.</p>",
+          "explanation": "Many pesticides break down slowly, so their residues persist in soil, water and food and can accumulate in living organisms, harming health and the environment.<p>Capsule 4th ed., p. 42; rural point 2.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1037,32 +1037,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00184",
           "src": "CAP4-10-00184",
-          "text": "A traditional water structure has steps descending to the water level so users can reach it as the level changes. Which name best describes that form?",
+          "text": "The structure used traditionally to harvest rain water in rural areas is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Stepwell"
+              "text": "A step well"
             },
             {
               "key": "b",
-              "text": "Infiltration gallery without surface access"
+              "text": "A pressure break tank"
             },
             {
               "key": "c",
-              "text": "Overhead service reservoir"
+              "text": "An overhead tank"
             },
             {
               "key": "d",
-              "text": "Pressure break tank on a closed pipeline"
+              "text": "A tube well"
             }
           ],
           "answer": "a",
-          "explanation": "A stepwell provides stepped access to stored or groundwater-fed water. Its architectural form alone does not prove that all its water comes from harvested rainfall; source and recharge arrangements vary.<p>Source note: Appendix p42 n10 qualified: stepwell identity separated from the blanket rainwater-harvesting claim.</p><p>Capsule 4th ed., p. 42; rural point 10.</p>",
+          "explanation": "A step well is a traditional structure with steps leading down to water collected from rain and seepage, allowing people to reach the water as its level changes.<p>Capsule 4th ed., p. 42; rural point 10.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1075,32 +1075,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00185",
           "src": "CAP4-10-00185",
-          "text": "Which arrangement unambiguously demonstrates direct roof-rainwater harvesting rather than merely access to groundwater?",
+          "text": "A step well is a traditional structure used in rural areas to ______.",
           "options": [
             {
               "key": "a",
-              "text": "A spring collected through an uphill infiltration gallery"
+              "text": "Store grain"
             },
             {
               "key": "b",
-              "text": "A borehole pumped into a distribution main"
+              "text": "Treat sewage"
             },
             {
               "key": "c",
-              "text": "A roof catchment feeding a controlled conveyance and storage tank"
+              "text": "Harvest rain water"
             },
             {
               "key": "d",
-              "text": "A stepped shaft drawing water from an aquifer without a catchment connection"
+              "text": "Generate electricity"
             }
           ],
           "answer": "c",
-          "explanation": "Direct roof harvesting collects rainfall from an identified catchment, conveys it and stores it with appropriate protective measures. A stepwell may receive recharge or rainwater, but its presence alone does not establish this collection pathway.<p>Capsule 4th ed., p. 42; rural point 10.</p>",
+          "explanation": "Step wells collect and store rain water and seepage, with steps giving access as the water level changes; they are a traditional form of rainwater harvesting.<p>Capsule 4th ed., p. 42; rural point 10.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1113,7 +1113,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0601",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -1125,27 +1125,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00016",
           "src": "CAP4-06-00016",
-          "text": "An old town has irregular streets, and distribution branches terminate without reconnecting. Which layout and operational concern best describe this arrangement?",
+          "text": "The dead-end system of distribution is used in ______.",
           "options": [
             {
               "key": "a",
-              "text": "Radial layout; each terminal is fed by a dedicated central reservoir"
+              "text": "Cities with a radial layout of roads"
             },
             {
               "key": "b",
-              "text": "Ring layout; supply necessarily enters each branch from both ends"
+              "text": "Cities with ring roads"
             },
             {
               "key": "c",
-              "text": "Gridiron layout; every branch provides an alternative supply route"
+              "text": "Well-planned cities with a grid of streets"
             },
             {
               "key": "d",
-              "text": "Dead-end layout; terminal water age and flushing need attention"
+              "text": "Irregularly developed old cities"
             }
           ],
           "answer": "d",
-          "explanation": "An unlooped branching network is a dead-end system and can fit irregular streets. Terminal stagnation and maintenance interruption are concerns. Its suitability is contextual; age of the town alone does not establish the optimal layout.<p>Capsule 4th ed., p. 24; topic 6 point 17.</p>",
+          "explanation": "Old towns that grew without planning have irregular streets, so their mains branch out and end without interconnection, forming the dead-end (tree) system; planned cities use gridiron, ring or radial systems.<p>Capsule 4th ed., p. 24; topic 6 point 17.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1158,12 +1158,12 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00028",
           "src": "CAP4-06-00028",
-          "text": "A straight water main must transition from a 200 mm pipe to a 150 mm pipe without adding a branch. Which fitting performs this function?",
+          "text": "A ______ fitting is used to connect pipes of different diameters.",
           "options": [
             {
               "key": "a",
@@ -1171,19 +1171,19 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             },
             {
               "key": "b",
-              "text": "Equal tee"
+              "text": "Elbow"
             },
             {
               "key": "c",
-              "text": "End cap"
+              "text": "Plug"
             },
             {
               "key": "d",
-              "text": "Long-radius elbow"
+              "text": "Tee"
             }
           ],
           "answer": "a",
-          "explanation": "A reducer connects different pipe diameters along the same run. A tee adds a branch, an elbow changes direction and a cap closes an end. The transition still requires compatible pressure ratings and connection details.<p>Capsule 4th ed., p. 24; topic 6 point 29.</p>",
+          "explanation": "A reducer joins a larger pipe to a smaller one in a straight line; an elbow changes direction, a tee makes a branch, and a plug closes an end.<p>Capsule 4th ed., p. 24; topic 6 point 29.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1196,32 +1196,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00029",
           "src": "CAP4-06-00029",
-          "text": "An elevated reservoir must stop accepting inflow at its preset upper water level without relying on an operator closing a gate valve. Which valve is intended for this duty?",
+          "text": "Altitude valves are used for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Air-release valve"
+              "text": "Releasing air at summits"
             },
             {
               "key": "b",
-              "text": "Altitude valve"
+              "text": "Supplying water to elevated tanks or standpipes"
             },
             {
               "key": "c",
-              "text": "Foot valve"
+              "text": "Preventing back flow from pumps"
             },
             {
               "key": "d",
-              "text": "Scour valve"
+              "text": "Draining pipelines at low points"
             }
           ],
           "answer": "b",
-          "explanation": "An altitude valve senses the tank's level-related pressure and controls inflow at its set point. It is a level-control device, not a pump that lifts water. Scour valves drain mains, air valves release air, and foot valves help retain pump prime.<p>Capsule 4th ed., p. 24; topic 6 point 30.</p>",
+          "explanation": "An altitude valve on the inlet of an elevated tank or standpipe closes automatically when the tank is full, preventing overflow, and opens again as the level drops.<p>Capsule 4th ed., p. 24; topic 6 point 30.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1234,32 +1234,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00030",
           "src": "CAP4-06-00030",
-          "text": "Steady incompressible flow passes through three full pipes in series without leakage, storage or branch withdrawal. If diameter halves between two sections, what happens to discharge and mean velocity?",
+          "text": "If three pipes are connected in series, the ______ is the same for all of them.",
           "options": [
             {
               "key": "a",
-              "text": "Discharge is unchanged; velocity becomes four times as large"
+              "text": "Discharge"
             },
             {
               "key": "b",
-              "text": "Discharge halves; velocity becomes twice as large"
+              "text": "Head loss"
             },
             {
               "key": "c",
-              "text": "Discharge is unchanged; velocity becomes twice as large"
+              "text": "Velocity"
             },
             {
               "key": "d",
-              "text": "Discharge becomes one quarter; velocity is unchanged"
+              "text": "Friction factor"
             }
           ],
           "answer": "a",
-          "explanation": "Continuity requires the same discharge \\(Q\\) through every series section under the stated conditions. Area is proportional to diameter squared, so halving the diameter quarters the area. Since \\[V = \\dfrac{Q}{A}\\] the mean velocity increases by a factor of four.<p>Capsule 4th ed., p. 24; topic 6 point 31.</p>",
+          "explanation": "Pipes in series carry the same discharge one after another, while the total head loss is the sum of the losses in the individual pipes; for pipes in parallel, the head loss is the same.<p>Capsule 4th ed., p. 24; topic 6 point 31.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1272,32 +1272,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00031",
           "src": "CAP4-06-00031",
-          "text": "A pipeline drawing specifies a right-angle change of direction with unchanged nominal diameter. Which fitting should be selected?",
+          "text": "An elbow pipe fitting provides a deviation of ______ in the pipe work system.",
           "options": [
             {
               "key": "a",
-              "text": "A 90-degree elbow"
+              "text": "90°"
             },
             {
               "key": "b",
-              "text": "A 45-degree elbow"
+              "text": "180°"
             },
             {
               "key": "c",
-              "text": "A concentric reducer"
+              "text": "120°"
             },
             {
               "key": "d",
-              "text": "An equal straight coupling"
+              "text": "15°"
             }
           ],
           "answer": "a",
-          "explanation": "A 90-degree elbow provides the specified right-angle turn. Elbows also exist at other angles, so the word elbow alone does not always mean 90 degrees. Bend radius, pressure class, local head loss and thrust restraint remain selection checks.<p>Source note: Page 24 point 32 describes one elbow angle, not every elbow.</p><p>Capsule 4th ed., p. 24; topic 6 point 32.</p>",
+          "explanation": "An elbow changes the direction of a pipeline, a standard elbow giving a 90° deviation; a return bend gives 180°.<p>Capsule 4th ed., p. 24; topic 6 point 32.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1310,32 +1310,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00032",
           "src": "CAP4-06-00032",
-          "text": "A thin steel water pipe passes an internal-pressure tensile check but will also be emptied under external groundwater pressure. Which separate failure mode requires assessment?",
+          "text": "Steel pipes are strong in resisting ______ but weak when stressed from outside.",
           "options": [
             {
               "key": "a",
-              "text": "Longitudinal expansion from a temperature increase"
+              "text": "Corrosion"
             },
             {
               "key": "b",
-              "text": "Fatigue from repeated internal-pressure surges"
+              "text": "Vacuum"
             },
             {
               "key": "c",
-              "text": "Tensile hoop yielding from positive internal pressure"
+              "text": "External loads"
             },
             {
               "key": "d",
-              "text": "External-pressure buckling and ovalization"
+              "text": "Internal pressure"
             }
           ],
           "answer": "d",
-          "explanation": "Internal pressure generally creates tensile hoop stress, whereas external pressure can destabilize a thin shell by buckling. Wall thickness, ovality, corrosion, restraints and soil support govern resistance. Steel is not intrinsically incapable of carrying external loads.<p>Source note: Page 24 point 33 is a thin-shell design caution, not a universal material ranking.</p><p>Capsule 4th ed., p. 24; topic 6 point 33.</p>",
+          "explanation": "Thin steel pipes resist internal water pressure well in hoop tension, but external loads and vacuum can buckle or flatten them, so they are weak when stressed from outside.<p>Capsule 4th ed., p. 24; topic 6 point 33.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1348,32 +1348,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00033",
           "src": "CAP4-06-00033",
-          "text": "A water-main profile has an accessible low point where sediment accumulates. Which appurtenance provides controlled drainage and flushing there?",
+          "text": "In a water distribution system, scour, drain or blow-off valves are provided at ______.",
           "options": [
             {
               "key": "a",
-              "text": "Scour or blow-off valve with a protected discharge route"
+              "text": "Low points and dead ends"
             },
             {
               "key": "b",
-              "text": "Air-release valve connected only at the summit"
+              "text": "Summits only"
             },
             {
               "key": "c",
-              "text": "Non-return valve fitted only on a pump suction line"
+              "text": "Elevated tanks"
             },
             {
               "key": "d",
-              "text": "Altitude valve sensing an elevated tank level"
+              "text": "Pump suction pipes"
             }
           ],
           "answer": "a",
-          "explanation": "Scour, drain, washout and blow-off describe this drainage duty. Low points permit emptying and sediment flushing; provide isolation and a safe outlet without cross-connection or backflow. This drains water from the supply main, not a sanitary wastewater collection system.<p>Capsule 4th ed., pp. 24, 25; topic 6 point 34; topic 6 point 89; topic 6 point 91.</p>",
+          "explanation": "Scour, drain and blow-off valves are fitted at the depressions (low points), bottoms and dead ends of mains so that the water and sediment collecting there can be drained out.<p>Capsule 4th ed., pp. 24, 25; topic 6 point 34; topic 6 point 89; topic 6 point 91.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1389,32 +1389,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00034",
           "src": "CAP4-06-00034",
-          "text": "A terminal distribution branch has no looped through-flow and repeatedly develops excessive water age. Which maintenance provision directly addresses its dead-end condition?",
+          "text": "Scour valves are provided at every depression and dead end of a pipeline to ______.",
           "options": [
             {
               "key": "a",
-              "text": "A suitably located terminal flushing outlet"
+              "text": "Drain out the waste water collected there"
             },
             {
               "key": "b",
-              "text": "A larger branch diameter while retaining the same low demand"
+              "text": "Control the pressure"
             },
             {
               "key": "c",
-              "text": "An upstream non-return valve with no terminal discharge facility"
+              "text": "Prevent back flow"
             },
             {
               "key": "d",
-              "text": "A higher pressure setting without increasing terminal water use"
+              "text": "Release entrapped air"
             }
           ],
           "answer": "a",
-          "explanation": "A terminal flushing arrangement can replace aged water and mobilize deposits where a branch otherwise has little through-flow. Flushing rate, disposal and pressure protection need planning. Looping or demand management may also help; an outlet is not a substitute for investigating the cause.<p>Capsule 4th ed., p. 24; topic 6 point 34.</p>",
+          "explanation": "Water, silt and sediment collect at the low points and dead ends of a pipeline; opening the scour valve there drains this waste water out.<p>Capsule 4th ed., p. 24; topic 6 point 34.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1427,32 +1427,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00035",
           "src": "CAP4-06-00035",
-          "text": "An outage plan requires 5 cubic metres/hour for six hours with no inflow. This reserve is additional to a non-overlapping 70 cubic metre balancing volume. What reserve and share of their combined usable storage are required?",
+          "text": "The reserve of water for the breakdown period is generally not more than ______ of the total storage.",
           "options": [
             {
               "key": "a",
-              "text": "25 cubic metres and 25%"
+              "text": "50%"
             },
             {
               "key": "b",
-              "text": "30 cubic metres and 30%"
+              "text": "25%"
             },
             {
               "key": "c",
-              "text": "35 cubic metres and 50%"
+              "text": "75%"
             },
             {
               "key": "d",
-              "text": "30 cubic metres and 25%"
+              "text": "10%"
             }
           ],
           "answer": "b",
-          "explanation": "The reserve and combined usable storage, in cubic metres, are \\[\\begin{aligned} \\text{reserve} &amp;= 5 \\times 6 = 30 \\\\ \\text{total} &amp;= 70 + 30 = 100 \\end{aligned}\\] so the reserve is 30% of the combined storage. The source's unreferenced 25% ceiling cannot override the specified outage scenario; other storage components and simultaneous demands require separate assessment.<p>Source note: Page 24 point 35: no authenticated universal 25%-of-total ceiling; calculation uses explicit project assumptions.</p><p>Capsule 4th ed., p. 24; topic 6 point 35.</p>",
+          "explanation": "A service reservoir holds balancing, fire and breakdown reserves; the breakdown reserve, which covers interruptions of supply, is generally not more than 25% of the total storage.<p>Capsule 4th ed., p. 24; topic 6 point 35.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1465,32 +1465,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00036",
           "src": "CAP4-06-00036",
-          "text": "A freely expanding 30 m steel pipe undergoes a uniform 40 degrees C temperature rise. With thermal expansion coefficient 12 x 10^-6 per degree C, what movement must a suitable expansion arrangement accommodate?",
+          "text": "Expansion joints are mostly used at places where a pipe ______ due to changes in atmospheric temperature.",
           "options": [
             {
               "key": "a",
-              "text": "144 mm extension"
+              "text": "Branches"
             },
             {
               "key": "b",
-              "text": "14.4 mm contraction"
+              "text": "Changes diameter"
             },
             {
               "key": "c",
-              "text": "1.44 mm extension"
+              "text": "Changes direction"
             },
             {
               "key": "d",
-              "text": "14.4 mm extension"
+              "text": "Expands and contracts"
             }
           ],
           "answer": "d",
-          "explanation": "Free thermal movement is \\[\\begin{aligned} \\Delta L &amp;= \\alpha L\\,\\Delta T \\\\ &amp;= 12 \\times 10^{-6} \\times 30 \\times 40 \\\\ &amp;= 0.0144\\ \\text{m} = 14.4\\ \\text{mm} \\end{aligned}\\] of extension. Cooling reverses its sign. Joints accommodate movement only within their designed stroke, restraint and pressure-thrust arrangement.<p>Capsule 4th ed., p. 24; topic 6 point 36.</p>",
+          "explanation": "Exposed pipes lengthen and shorten as the air temperature changes; expansion joints allow this movement without damaging the pipe or its joints.<p>Capsule 4th ed., p. 24; topic 6 point 36.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1503,32 +1503,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00095",
           "src": "CAP4-06-00095",
-          "text": "A pressurized water main repeatedly accumulates air at a summit. Which device is intended to discharge collected air during normal operation?",
+          "text": "Air relief valves are provided at the ______ of a water pipeline.",
           "options": [
             {
               "key": "a",
-              "text": "Air-release valve at a suitable high point"
+              "text": "Summits"
             },
             {
               "key": "b",
-              "text": "Scour valve at the lowest depression"
+              "text": "Depressions"
             },
             {
               "key": "c",
-              "text": "Altitude valve on a tank inlet"
+              "text": "Dead ends"
             },
             {
               "key": "d",
-              "text": "Foot valve at a pump suction entry"
+              "text": "Pump suction ends"
             }
           ],
           "answer": "a",
-          "explanation": "Air collects at hydraulic high points and can restrict flow. An appropriately located and sized air-release valve vents it under operating pressure. A small release valve is not automatically adequate for large air admission during draining; air/vacuum or combination duties must be specified separately.<p>Capsule 4th ed., pp. 25, 26; topic 6 point 96; topic 6 point 114.</p>",
+          "explanation": "Air collects at the high points (summits) of a pipeline and obstructs the flow; air relief valves there discharge the accumulated air automatically.<p>Capsule 4th ed., pp. 25, 26; topic 6 point 96; topic 6 point 114.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1543,32 +1543,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00100",
           "src": "CAP4-06-00100",
-          "text": "A meandering river has a deeper outer concave bank and a depositing inner convex bank at the assessed bend. What makes the outer bank attractive for an intake, and what must still be checked?",
+          "text": "In a meandering river, the intake should be placed on the ______ bank for good water quality and flow.",
           "options": [
             {
               "key": "a",
-              "text": "More dependable depth, with bank erosion and scour requiring assessment"
+              "text": "Concave"
             },
             {
               "key": "b",
-              "text": "Lower contamination because curvature itself removes dissolved pollutants"
+              "text": "Straight"
             },
             {
               "key": "c",
-              "text": "More stable foundations because deeper outer-bank flow precludes scour"
+              "text": "Silted"
             },
             {
               "key": "d",
-              "text": "Lower erosive action because the outer bank is the main point-bar deposition zone"
+              "text": "Convex"
             }
           ],
           "answer": "a",
-          "explanation": "The outer concave bank commonly has deeper flow, whereas deposition occurs on the inner convex bank. Depth can favor abstraction, but erosion, scour, channel migration, access and contamination still govern siting. Concavity by itself does not guarantee optimal water quality or a stable intake location.<p>Capsule 4th ed., p. 25; topic 6 point 101.</p>",
+          "explanation": "On the concave (outer) bank of a bend the flow is deep and scours the bed, so the intake gets a dependable depth of clean water; the convex (inner) bank collects silt deposits.<p>Capsule 4th ed., p. 25; topic 6 point 101.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1581,32 +1581,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00103",
           "src": "CAP4-06-00103",
-          "text": "An engineer assigns trial pipe flows satisfying junction continuity, then iteratively corrects loop energy imbalances. Which classical network method is being used?",
+          "text": "The Hardy Cross method is used to solve the problems of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Global-gradient head-and-flow method"
+              "text": "Seepage flow"
             },
             {
               "key": "b",
-              "text": "Hardy Cross method"
+              "text": "Pipe networks"
             },
             {
               "key": "c",
-              "text": "Single-path equivalent-pipe reduction"
+              "text": "Sediment transport"
             },
             {
               "key": "d",
-              "text": "Nodal-head Newton method"
+              "text": "Open channel flow"
             }
           ],
           "answer": "b",
-          "explanation": "Hardy Cross corrects trial flows around loops until signed head changes satisfy energy conservation while preserving continuity. Head-loss laws and sign conventions must be consistent. Modern EPANET uses a global-gradient algorithm; every computer pipe-network solution is not simply Hardy Cross.<p>Capsule 4th ed., p. 26; topic 6 point 104.</p>",
+          "explanation": "The Hardy Cross method analyses looped pipe networks: flows are assumed to satisfy continuity at the junctions and are then corrected loop by loop until the head losses around each loop balance.<p>Capsule 4th ed., p. 26; topic 6 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1619,32 +1619,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00104",
           "src": "CAP4-06-00104",
-          "text": "Two identical parallel pipes carry trial flows of 6 and 4 flow units in the same physical direction, totaling 10. In a clockwise loop their signed flows are +6 and -4, with h = q|q|. What Hardy Cross correction and new physical flows result?",
+          "text": "In the Hardy Cross method, the correction applied to the assumed flow in a loop is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Correction +1; new flows 7 and 3"
+              "text": "\\(\\Delta Q = -\\dfrac{\\sum nrQ^{n-1}}{\\sum rQ^n}\\)"
             },
             {
               "key": "b",
-              "text": "Correction -2; new flows 4 and 6"
+              "text": "\\(\\Delta Q = \\sum rQ^n\\)"
             },
             {
               "key": "c",
-              "text": "Correction -1; new flows 5 and 5"
+              "text": "\\(\\Delta Q = -\\dfrac{\\sum rQ^n}{\\sum nrQ^{n-1}}\\)"
             },
             {
               "key": "d",
-              "text": "Correction -1; new flows 5 and 3"
+              "text": "\\(\\Delta Q = \\dfrac{\\sum Q}{n}\\)"
             }
           ],
           "answer": "c",
-          "explanation": "The signed head residual and derivative sum are \\[\\textstyle\\sum h = 6^2 - 4^2 = 20\\] \\[\\textstyle\\sum 2\\lvert q\\rvert = 2(6 + 4) = 20\\] giving the loop correction \\[\\Delta q = -\\dfrac{20}{20} = -1\\] Applying it to the signed flows gives +5 and −5, or two physical flows of 5. Their sum remains 10 and their head losses match.<p>Capsule 4th ed., p. 26; topic 6 point 104.</p>",
+          "explanation": "Each loop correction, \\(\\Delta Q = -\\dfrac{\\sum rQ^n}{\\sum nrQ^{n-1}}\\), drives the algebraic sum of the head losses around the loop towards zero; it is repeated until the corrections become negligible.<p>Capsule 4th ed., p. 26; topic 6 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1657,32 +1657,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00105",
           "src": "CAP4-06-00105",
-          "text": "A hill source reservoir has water level 120 m and a delivery node is at elevation 80 m. Total flowing head loss is 15 m and nodal velocity head is neglected. What pressure head is available without pumping?",
+          "text": "The type of water supply system generally used in hilly regions is ______.",
           "options": [
             {
               "key": "a",
-              "text": "40 m"
+              "text": "Pumping system"
             },
             {
               "key": "b",
-              "text": "55 m"
+              "text": "Combined pumping and gravity system"
             },
             {
               "key": "c",
-              "text": "15 m"
+              "text": "Tube well system"
             },
             {
               "key": "d",
-              "text": "25 m"
+              "text": "Gravity flow system"
             }
           ],
           "answer": "d",
-          "explanation": "Gravity provides \\(120 - 80 = 40\\) m of elevation head. After 15 m of losses, the pressure head is \\[40 - 15 = 25\\ \\text{m}\\] This can support gravity supply if the required residual pressure and intermediate profile checks are satisfied. Hilly terrain alone does not guarantee adequate source elevation or acceptable pressures everywhere.<p>Capsule 4th ed., p. 26; topic 6 point 105.</p>",
+          "explanation": "In hilly regions, springs and streams lie above the settlements, so water flows to the consumers under gravity without pumping; the gravity flow system is the cheapest and most reliable there.<p>Capsule 4th ed., p. 26; topic 6 point 105.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1695,32 +1695,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00108",
           "src": "CAP4-06-00108",
-          "text": "Two river intake sites have similar low-water depth. One obstructs the active navigation channel; the other offers protected access outside it. What additional consideration favors the latter?",
+          "text": "An intake in a water supply system should not be located in ______.",
           "options": [
             {
               "key": "a",
-              "text": "Lower dissolved contaminant concentrations established by navigational clearance"
+              "text": "Deep water"
             },
             {
               "key": "b",
-              "text": "Stable bed levels established by navigational clearance"
+              "text": "A place with a firm foundation"
             },
             {
               "key": "c",
-              "text": "Reduced collision and navigation obstruction risk"
+              "text": "A navigation channel"
             },
             {
               "key": "d",
-              "text": "Higher dependable yield established by navigational clearance"
+              "text": "A reach upstream of the town"
             }
           ],
           "answer": "c",
-          "explanation": "Intakes should avoid interfering with navigation and should be protected against vessel damage and unsafe access. Avoiding a navigation channel is one siting consideration, not proof of adequate quality, yield or foundation stability. Assess sediment, submergence and regulatory constraints together.<p>Capsule 4th ed., p. 26; topic 6 point 108.</p>",
+          "explanation": "An intake in a navigation channel obstructs boats and risks damage from collisions, so intakes are placed away from it, upstream of pollution, in deep water on a firm foundation.<p>Capsule 4th ed., p. 26; topic 6 point 108.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1733,32 +1733,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00111",
           "src": "CAP4-06-00111",
-          "text": "At equal-velocity junctions in a steady closed pipe loop, signed piezometric head drops along three traversal segments are +8 m, +5 m and an unknown value. What third value closes the energy balance?",
+          "text": "In a pipe network, the algebraic sum of the piezometric head drops around each elementary circuit must be ______.",
           "options": [
             {
               "key": "a",
-              "text": "-13 m"
+              "text": "Zero"
             },
             {
               "key": "b",
-              "text": "-3 m"
+              "text": "Equal to the total head"
             },
             {
               "key": "c",
-              "text": "+13 m"
+              "text": "Maximum"
             },
             {
               "key": "d",
-              "text": "+3 m"
+              "text": "Equal to the velocity head"
             }
           ],
           "answer": "a",
-          "explanation": "Returning to the same junction requires the algebraic head changes to sum to zero: \\[8 + 5 + h_3 = 0\\] \\[h_3 = -13\\ \\text{m}\\] Its sign means a head rise along the chosen traversal, such as traversing a pipe opposite its actual flow. Pump gains and velocity changes must be handled consistently when present.<p>Capsule 4th ed., p. 26; topic 6 point 111.</p>",
+          "explanation": "Going round a closed loop returns to the same point and the same head, so the algebraic sum of the head drops around each loop is zero; the flows into each junction also sum to zero.<p>Capsule 4th ed., p. 26; topic 6 point 111.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1771,32 +1771,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00114",
           "src": "CAP4-06-00114",
-          "text": "A transmission main fills a service reservoir that balances hourly demand. It must deliver a maximum-day volume of 900 cubic metres in 12 operating hours. Ignoring losses and other demands, what operating discharge is required?",
+          "text": "A transmission main in a water supply system is designed for the ______.",
           "options": [
             {
               "key": "a",
-              "text": "37.5 cubic metres/hour"
+              "text": "Maximum hourly demand"
             },
             {
               "key": "b",
-              "text": "75 cubic metres/hour"
+              "text": "Maximum daily demand"
             },
             {
               "key": "c",
-              "text": "18.75 cubic metres/hour"
+              "text": "Minimum hourly demand"
             },
             {
               "key": "d",
-              "text": "900 cubic metres/hour"
+              "text": "Average daily demand"
             }
           ],
           "answer": "b",
-          "explanation": "The operating discharge is \\[Q = \\dfrac{900}{12} = 75\\ \\text{m}^3\\text{/hour}\\] Dividing by 24 gives only the equivalent continuous daily-average rate of 37.5. A maximum-day basis is appropriate in this specified reservoir-balanced arrangement; direct supply, fire cases, losses and pumping schedules can change the governing design condition.<p>Source note: Page 26 point 115 is qualified by balancing storage and actual operating duration, not treated as an exceptionless rule for every main.</p><p>Capsule 4th ed., p. 26; topic 6 point 115.</p>",
+          "explanation": "A transmission main fills the service reservoirs, which balance the hourly variations, so it is designed for the maximum daily demand; distribution mains are designed for the maximum hourly demand.<p>Capsule 4th ed., p. 26; topic 6 point 115.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1809,32 +1809,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00124",
           "src": "CAP4-06-00124",
-          "text": "A small supply abstracts river water directly through a fixed screened pipe entrance below minimum water level, without an intake tower. How is this intake classified?",
+          "text": "The intake structure widely used in small works is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Riverbank infiltration-gallery intake"
+              "text": "A gated reservoir intake"
             },
             {
               "key": "b",
-              "text": "Multi-level gated intake tower"
+              "text": "An intake tower"
             },
             {
               "key": "c",
-              "text": "Simple submerged intake"
+              "text": "A simple submerged intake"
             },
             {
               "key": "d",
-              "text": "Floating intake with flexible connection"
+              "text": "A twin-tower intake"
             }
           ],
           "answer": "c",
-          "explanation": "A simple submerged intake can be appropriate for small works where sufficient submergence, source reliability and maintenance access are available. It is not selected by project size alone. Debris, sediment, scour, water quality and access can justify more elaborate arrangements even for a small supply.<p>Capsule 4th ed., p. 26; topic 6 point 125.</p>",
+          "explanation": "A simple submerged intake, a screened pipe inlet laid below the lowest water level, is cheap and does not obstruct navigation, so it is widely used in small works.<p>Capsule 4th ed., p. 26; topic 6 point 125.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1847,32 +1847,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00126",
           "src": "CAP4-06-00126",
-          "text": "For a particular fully open butterfly valve, a verified data sheet gives K = 0.40 based on pipe velocity. At V = 3.0 m/s and g = 9.81 m/s squared, what local head loss follows?",
+          "text": "The head loss coefficient for a fully open butterfly valve is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.183 m"
+              "text": "0.4"
             },
             {
               "key": "b",
-              "text": "0.061 m"
+              "text": "0.2"
             },
             {
               "key": "c",
-              "text": "0.367 m"
+              "text": "10"
             },
             {
               "key": "d",
-              "text": "1.20 m"
+              "text": "2.5"
             }
           ],
           "answer": "a",
-          "explanation": "Use \\[\\begin{aligned} h_L &amp;= K\\dfrac{V^2}{2g} \\\\ &amp;= 0.40 \\times \\dfrac{3.0^2}{2 \\times 9.81} \\\\ &amp;= 0.18349\\ \\text{m} \\end{aligned}\\] Velocity is squared and the result is a head, not a pressure. \\(K\\) depends on valve geometry, opening and reference velocity; the capsule's 0.4 is not universal for every fully open butterfly valve.<p>Capsule 4th ed., p. 26; topic 6 point 127.</p>",
+          "explanation": "A fully open butterfly valve has a head loss coefficient of about 0.4, so its loss is \\(0.4\\dfrac{V^2}{2g}\\); a fully open gate valve loses less, and a globe valve much more.<p>Capsule 4th ed., p. 26; topic 6 point 127.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1885,7 +1885,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0602",
-          "kind": "calculation"
+          "kind": "recall"
         }
       ]
     },
@@ -1897,27 +1897,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-03-00130",
           "src": "CAP4-03-00130",
-          "text": "An aeration calculation uses the equilibrium solubility of oxygen in freshwater. At unchanged oxygen partial pressure and salinity, what generally happens to the saturation concentration as water warms over an ordinary environmental range?",
+          "text": "The solubility curve depends on the ______.",
           "options": [
             {
               "key": "a",
-              "text": "It depends only on the tank volume"
+              "text": "Volume of the tank"
             },
             {
               "key": "b",
-              "text": "It decreases"
+              "text": "Temperature"
             },
             {
               "key": "c",
-              "text": "It is independent of temperature"
+              "text": "Depth of the container"
             },
             {
               "key": "d",
-              "text": "It increases"
+              "text": "Colour of the water"
             }
           ],
           "answer": "b",
-          "explanation": "Gas solubility is temperature-dependent; oxygen's equilibrium saturation concentration generally falls as freshwater warms at fixed gas partial pressure. A solubility curve must specify the substance and conditions, since not every solute follows the same temperature trend.<p>Source note: p14 n127 names no solute or conditions. A specific defensible gas-solubility example is supplied and mapped to aeration rather than inventing a universal curve.</p><p>Capsule 4th ed., p. 14; topic 3 point 127.</p>",
+          "explanation": "A solubility curve shows how solubility changes with temperature; for example, the saturation concentration of oxygen in water falls as the water becomes warmer.<p>Capsule 4th ed., p. 14; topic 3 point 127.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1930,32 +1930,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00017",
           "src": "CAP4-06-00017",
-          "text": "Fresh bleaching powder is added to weakly buffered water, with no other acid or base addition. What initial pH tendency is most plausible?",
+          "text": "When bleaching powder is added to water, its pH ______.",
           "options": [
             {
               "key": "a",
-              "text": "pH tends to fall, as when chlorine gas is dissolved in water"
+              "text": "Increases"
             },
             {
               "key": "b",
-              "text": "pH stays unchanged because available chlorine measures no alkalinity"
+              "text": "Remains unchanged"
             },
             {
               "key": "c",
-              "text": "pH tends to rise because the hypochlorite product is alkaline"
+              "text": "Decreases"
             },
             {
               "key": "d",
-              "text": "pH tends to fall because hypochlorite hydrolysis consumes hydroxide"
+              "text": "Becomes exactly 7"
             }
           ],
           "answer": "c",
-          "explanation": "Hypochlorite hydrolysis generates hydroxide, and bleaching powder can contain alkaline lime. It usually raises pH, unlike chlorine gas hydrolysis, which produces acidity. Actual change depends on dose and buffering, so a universal fall is incorrect.<p>Source note: Corrects page 24 point 18; distinguish bleaching powder from chlorine gas.</p><p>Capsule 4th ed., p. 24; topic 6 point 18.</p>",
+          "explanation": "Bleaching powder releases chlorine in water, and the chlorine forms hypochlorous and hydrochloric acids, so the pH of the water decreases.<p>Capsule 4th ed., p. 24; topic 6 point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1968,16 +1968,16 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00019",
           "src": "CAP4-06-00019",
-          "text": "Which hardness-causing constituent can be reduced by boiling through precipitation of calcium carbonate, rather than requiring non-carbonate softening?",
+          "text": "By boiling water, hardness can be removed if it is due to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Calcium sulphate"
+              "text": "Calcium chloride"
             },
             {
               "key": "b",
@@ -1985,15 +1985,15 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             },
             {
               "key": "c",
-              "text": "Magnesium chloride"
+              "text": "Magnesium sulphate"
             },
             {
               "key": "d",
-              "text": "Calcium chloride"
+              "text": "Calcium sulphate"
             }
           ],
           "answer": "b",
-          "explanation": "Heating bicarbonate-hard water can drive Ca(HCO3)2 to CaCO3 precipitate, CO2 and water. This is temporary-hardness removal. Chloride- and sulphate-associated non-carbonate hardness is not removed by this same boiling mechanism.<p>Capsule 4th ed., p. 24; topic 6 point 20.</p>",
+          "explanation": "Boiling breaks calcium bicarbonate down into insoluble calcium carbonate, carbon dioxide and water, removing this temporary hardness; sulphates and chlorides cause permanent hardness.<p>Capsule 4th ed., p. 24; topic 6 point 20.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2011,27 +2011,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00021",
           "src": "CAP4-06-00021",
-          "text": "Raw-water turbidity and alkalinity change after a storm. What is the most appropriate purpose of a jar test before adjusting coagulation?",
+          "text": "The jar test is used to determine the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Determine coagulant purity instead of testing its effect on the actual raw water"
+              "text": "Chlorine demand"
             },
             {
               "key": "b",
-              "text": "Select the highest dose because coagulant effectiveness increases without limit"
+              "text": "Hardness of water"
             },
             {
               "key": "c",
-              "text": "Infer the full-scale dose solely from floc colour without comparing settled water"
+              "text": "Turbidity of water"
             },
             {
               "key": "d",
-              "text": "Compare doses and pH conditions for effective floc formation and clarification"
+              "text": "Dose of coagulant"
             }
           ],
           "answer": "d",
-          "explanation": "Parallel controlled mixing and settling trials help select a coagulant dose and suitable pH for the actual water. A jar test optimizes treatment conditions; it does not merely measure the quantity of chemical already present or replace full-scale verification.<p>Capsule 4th ed., p. 24; topic 6 point 22.</p>",
+          "explanation": "In the jar test, equal water samples receive different coagulant doses, are stirred and allowed to settle; the dose giving the clearest water is the optimum dose of coagulant.<p>Capsule 4th ed., p. 24; topic 6 point 22.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2044,32 +2044,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00023",
           "src": "CAP4-06-00023",
-          "text": "A lime-treated sample has pH 9.5, but no contact-time or microbial test records exist. What can the operator conclude about E. coli inactivation?",
+          "text": "E. coli typically die in water if its pH value is ______.",
           "options": [
             {
               "key": "a",
-              "text": "The same chlorine residual is more effective at pH 9.5 than at pH 7.0"
+              "text": "8.0"
             },
             {
               "key": "b",
-              "text": "Reaching pH 9.5 establishes inactivation without a holding period"
+              "text": "7.0"
             },
             {
               "key": "c",
-              "text": "A clear sample at pH 9.5 establishes inactivation without microbial verification"
+              "text": "6.5"
             },
             {
               "key": "d",
-              "text": "The pH reading alone does not establish inactivation"
+              "text": "9.5"
             }
           ],
           "answer": "d",
-          "explanation": "Inactivation depends on exposure time, temperature, organism and water chemistry. A single pH value is not a validated kill criterion. In chlorination, increasing pH also shifts free chlorine toward less effective hypochlorite, so alkaline pH cannot substitute for disinfection verification.<p>Source note: Rejects the universal pH 9.5 kill threshold in page 24 point 24.</p><p>Capsule 4th ed., p. 24; topic 6 point 24.</p>",
+          "explanation": "E. coli survive in near-neutral water but die at a high pH of about 9.5, which is why excess lime treatment has a disinfecting effect.<p>Capsule 4th ed., p. 24; topic 6 point 24.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2082,20 +2082,20 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00024",
           "src": "CAP4-06-00024",
-          "text": "Which chemical has historically been used as an algicide in reservoirs, but requires site-specific authorization and assessment of aquatic toxicity and treatment effects?",
+          "text": "The chemical generally used for controlling algae is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Sodium thiosulphate"
+              "text": "Alum"
             },
             {
               "key": "b",
-              "text": "Sodium chloride"
+              "text": "Sodium thiosulphate"
             },
             {
               "key": "c",
@@ -2103,11 +2103,11 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             },
             {
               "key": "d",
-              "text": "Calcium bicarbonate"
+              "text": "Lime"
             }
           ],
           "answer": "c",
-          "explanation": "Copper sulphate can suppress algae, explaining its conventional use. It is not a universal dosing recommendation: copper toxicity, water chemistry and release of intracellular material during cell damage require assessment. Catchment nutrient control and appropriate treatment remain important.<p>Capsule 4th ed., p. 24; topic 6 point 26.</p>",
+          "explanation": "Copper sulphate is toxic to algae in small doses, so it is added to reservoirs to control algal growth; alum is a coagulant, and sodium thiosulphate removes chlorine.<p>Capsule 4th ed., p. 24; topic 6 point 26.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2125,27 +2125,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00038",
           "src": "CAP4-06-00038",
-          "text": "An ideal discrete-settling basin receives 1,200 cubic metres/day and particles settling at 6 m/day, uniformly distributed over inlet depth. If plan area increases from 100 to 200 square metres, what are the ideal capture fractions?",
+          "text": "For a given discharge, the efficiency of a sedimentation tank can be increased by increasing its ______.",
           "options": [
             {
               "key": "a",
-              "text": "100% initially and 100% after enlargement"
+              "text": "Outlet weir height"
             },
             {
               "key": "b",
-              "text": "50% initially and 50% after enlargement"
+              "text": "Inlet velocity"
             },
             {
               "key": "c",
-              "text": "25% initially and 50% after enlargement"
+              "text": "Depth"
             },
             {
               "key": "d",
-              "text": "50% initially and 100% after enlargement"
+              "text": "Surface area"
             }
           ],
           "answer": "d",
-          "explanation": "The surface overflow rate \\(\\dfrac{Q}{A}\\) decreases from 12 to 6 m per day. Ideal capture is \\[E = \\min\\left(\\dfrac{v_s A}{Q}, 1\\right)\\] giving \\[\\dfrac{6}{12} = 0.50 \\quad\\text{and}\\quad \\dfrac{6}{6} = 1.00\\] This result assumes discrete settling without short-circuiting, scour or flocculation; efficiency cannot exceed 100%.<p>Capsule 4th ed., p. 24; topic 6 point 38.</p>",
+          "explanation": "Settling efficiency depends on the surface overflow rate \\(\\dfrac{Q}{A}\\). For a given discharge, a larger plan area lowers this rate so that smaller particles settle, and the efficiency increases; ideal theory gives no effect of depth.<p>Capsule 4th ed., p. 24; topic 6 point 38.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2158,32 +2158,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00039",
           "src": "CAP4-06-00039",
-          "text": "A conventional coarse-screen specification adopts bars 10-25 mm thick, clear gaps 20-100 mm and inclination 45-60 degrees to the horizontal. Which proposed arrangement satisfies all three stated bounds?",
+          "text": "The opening spacing of bars in a coarse screen is ______.",
           "options": [
             {
               "key": "a",
-              "text": "15 mm bars, 50 mm gaps, 80-degree inclination"
+              "text": "1 mm"
             },
             {
               "key": "b",
-              "text": "15 mm bars, 5 mm gaps, 55-degree inclination"
+              "text": "5 mm"
             },
             {
               "key": "c",
-              "text": "15 mm bars, 50 mm gaps, 55-degree inclination"
+              "text": "50 mm"
             },
             {
               "key": "d",
-              "text": "35 mm bars, 50 mm gaps, 55-degree inclination"
+              "text": "150 mm"
             }
           ],
           "answer": "c",
-          "explanation": "15 mm, 50 mm and 55 degrees each lie in the explicitly adopted intervals. The 50 mm gap is an example, not the sole coarse-screen spacing. Screening removes coarse objects; it is not fine-media filtration. Actual dimensions depend on the screening and cleaning equipment.<p>Source note: Page 24 points 39/44: ranges are stipulated textbook assumptions, not verified Nepal requirements; angle reference is supplied explicitly.</p><p>Capsule 4th ed., p. 24; topic 6 point 39; topic 6 point 44.</p>",
+          "explanation": "Coarse screens have clear openings of about 50 mm between the bars, stopping large floating matter such as rags, sticks and plastics; fine screens have openings of a few millimetres.<p>Capsule 4th ed., p. 24; topic 6 point 39; topic 6 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2197,32 +2197,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00040",
           "src": "CAP4-06-00040",
-          "text": "Ignoring side frames, blockage and inclination effects, a bar-screen panel has repeating 15 mm bar widths and 50 mm clear gaps. What fraction of its width is open?",
+          "text": "A coarse screen, inclined at 45° to 60°, generally has ______.",
           "options": [
             {
               "key": "a",
-              "text": "76.9%"
+              "text": "Bars of 10–25 mm with spacing of 20–100 mm"
             },
             {
               "key": "b",
-              "text": "65.0%"
+              "text": "Bars of 5 mm with spacing of 5 mm"
             },
             {
               "key": "c",
-              "text": "70.0%"
+              "text": "Bars of 50–75 mm with spacing of 150–300 mm"
             },
             {
               "key": "d",
-              "text": "23.1%"
+              "text": "Bars of 1–2 mm with spacing of 1–5 mm"
             }
           ],
           "answer": "a",
-          "explanation": "Each repeating pitch is \\(15 + 50 = 65\\) mm, of which 50 mm is open: \\[\\dfrac{50}{65} = 0.76923 = 76.9\\%\\] Dividing gap by bar width is not an open-area fraction; actual hydraulic design also accounts for frames, blockage and projection.<p>Capsule 4th ed., p. 24; topic 6 point 44.</p>",
+          "explanation": "Coarse screens are made of bars 10–25 mm in size, spaced 20–100 mm apart and inclined at 45° to 60° to the horizontal for easy raking.<p>Capsule 4th ed., p. 24; topic 6 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2235,32 +2235,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00044",
           "src": "CAP4-06-00044",
-          "text": "An operator proposes ordinary chlorination as the principal way to strip dissolved oxygen from water. What assessment is correct?",
+          "text": "Chlorination of water ______ the dissolved oxygen content.",
           "options": [
             {
               "key": "a",
-              "text": "Chlorine demand directly measures the dissolved oxygen removed"
+              "text": "Greatly increases"
             },
             {
               "key": "b",
-              "text": "Chlorination is disinfection, not a dependable deoxygenation process"
+              "text": "Does not significantly reduce"
             },
             {
               "key": "c",
-              "text": "The oxygen demand of dechlorinating sulphite is an effect of chlorine itself"
+              "text": "Doubles"
             },
             {
               "key": "d",
-              "text": "Breakpoint chlorination marks the exhaustion of dissolved oxygen"
+              "text": "Completely removes"
             }
           ],
           "answer": "b",
-          "explanation": "Chlorination targets microbial inactivation and selected oxidation reactions, not oxygen stripping. Under ordinary treatment conditions it does not inherently remove dissolved oxygen. Indirect reactions and later dosing of oxygen-consuming dechlorinating reagents can affect DO, so absolute no-change wording is too broad.<p>Source note: Qualifies the repeated page 24 point 42/page 26 point 142 claim; no universal exact DO invariance is asserted.</p><p>Capsule 4th ed., pp. 24, 26; topic 6 point 42; topic 6 point 142.</p>",
+          "explanation": "Chlorine is added to disinfect water; it reacts with organic matter, ammonia and pathogens, but it does not significantly affect the dissolved oxygen present.<p>Capsule 4th ed., pp. 24, 26; topic 6 point 42; topic 6 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2275,32 +2275,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00047",
           "src": "CAP4-06-00047",
-          "text": "A basin has nominal detention V/Q = 3.0 h. A tracer test gives t10 = 1.2 h, where t10 is time for 10% of tracer mass to exit. What t10/(V/Q) index and interpretation follow?",
+          "text": "Short-circuiting in a sedimentation tank is represented by ______.",
           "options": [
             {
               "key": "a",
-              "text": "2.50; early passage proves ideal plug flow"
+              "text": "Surface overflow rate"
             },
             {
               "key": "b",
-              "text": "1.80; the difference in hours is the dimensionless index"
+              "text": "Sludge volume index"
             },
             {
               "key": "c",
-              "text": "0.40; early passage suggests hydraulic short-circuiting"
+              "text": "Displacement efficiency"
             },
             {
               "key": "d",
-              "text": "0.40; exactly 40% of suspended solids must settle"
+              "text": "Weir loading rate"
             }
           ],
           "answer": "c",
-          "explanation": "The explicitly defined index, \\(t_{10}\\) divided by the nominal detention, is \\[\\dfrac{1.2}{3.0} = 0.40\\] Early tracer breakthrough indicates that some water crosses much sooner than nominal detention. This is a hydraulic diagnostic, not directly a solids-removal efficiency. Different displacement-efficiency conventions must specify their tracer-time definition.<p>Source note: Page 24 point 46 gives no definition of displacement efficiency; t10 is explicitly adopted here, not attributed to an unseen formula.</p><p>Capsule 4th ed., p. 24; topic 6 point 46.</p>",
+          "explanation": "Displacement efficiency is the ratio of the actual flowing-through period to the theoretical detention time; it falls when water short-circuits through a tank, so it represents short-circuiting.<p>Capsule 4th ed., p. 24; topic 6 point 46.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2313,32 +2313,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00050",
           "src": "CAP4-06-00050",
-          "text": "A rapid sand filter is assigned a rate of 4,000 L/hour/square metre within a stated conventional 3,000-6,000 band. What rate in m/hour and area for 240 cubic metres/hour follow?",
+          "text": "The rate of filtration in a rapid sand filter is ______.",
           "options": [
             {
               "key": "a",
-              "text": "4 m/hour and 960 square metres"
+              "text": "15,000–20,000 L/hr/m<sup>2</sup>"
             },
             {
               "key": "b",
-              "text": "40 m/hour and 6 square metres"
+              "text": "30–60 L/hr/m<sup>2</sup>"
             },
             {
               "key": "c",
-              "text": "4 m/hour and 60 square metres"
+              "text": "3000–6000 L/hr/m<sup>2</sup>"
             },
             {
               "key": "d",
-              "text": "0.4 m/hour and 600 square metres"
+              "text": "100–200 L/hr/m<sup>2</sup>"
             }
           ],
           "answer": "c",
-          "explanation": "Dividing litres by 1,000 converts 4,000 L per hour per square metre to 4 m per hour; the whole band converts to 3–6 m per hour. The required operating area is \\[A = \\dfrac{240}{4} = 60\\ \\text{m}^2\\] Additional installed area may be needed while units backwash or remain unavailable.<p>Source note: Page 24 point 48 is a conventional range, not a universal media-specific maximum.</p><p>Capsule 4th ed., p. 24; topic 6 point 48.</p>",
+          "explanation": "A rapid sand filter works at 3000 to 6000 litres per hour per m<sup>2</sup>, about 30 times the rate of a slow sand filter, which is 100 to 200 litres per hour per m<sup>2</sup>.<p>Capsule 4th ed., p. 24; topic 6 point 48.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2351,32 +2351,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00051",
           "src": "CAP4-06-00051",
-          "text": "A slow sand filter starts with 1.00 m of sand, within a stated historical initial-depth band of 0.90-1.10 m. Its project minimum is 0.70 m and each cleaning removes 0.05 m. How many equal scrapings reach that minimum?",
+          "text": "In a slow sand filter, the thickness of the sand bed is ______.",
           "options": [
             {
               "key": "a",
-              "text": "3 scrapings"
+              "text": "30 to 45 cm"
             },
             {
               "key": "b",
-              "text": "6 scrapings"
+              "text": "90 to 110 cm"
             },
             {
               "key": "c",
-              "text": "20 scrapings"
+              "text": "10 to 20 cm"
             },
             {
               "key": "d",
-              "text": "14 scrapings"
+              "text": "150 to 200 cm"
             }
           ],
           "answer": "b",
-          "explanation": "The available sand loss is \\(1.00 - 0.70 = 0.30\\) m, so \\[n = \\dfrac{0.30}{0.05} = 6\\] scrapings reach the assumed minimum. Initial depth and minimum remaining depth differ; actual cleaning removes the surface layer as needed and requires ripening and water-quality checks.<p>Source note: Page 24 point 49 gives a typical initial thickness, not a universal remaining-bed rule; scraping and minimum values are hypothetical.</p><p>Capsule 4th ed., p. 24; topic 6 point 49.</p>",
+          "explanation": "A slow sand filter has a sand bed about 90 to 110 cm thick over a graded gravel base; the thick bed of fine sand lets the biological layer form and filter the water slowly.<p>Capsule 4th ed., p. 24; topic 6 point 49.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2389,32 +2389,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00052",
           "src": "CAP4-06-00052",
-          "text": "For an illustrative plain-settling design, adopt 15,000 L/day/square metre within a conventional 12,000-18,000 band. What plan area treats 1,800 cubic metres/day at that rate?",
+          "text": "The surface overflow rate (SOR) of a plain sedimentation tank is ______.",
           "options": [
             {
               "key": "a",
-              "text": "12 square metres"
+              "text": "24,000 to 30,000 L/day/m<sup>2</sup>"
             },
             {
               "key": "b",
-              "text": "27 square metres"
+              "text": "100,000 to 120,000 L/day/m<sup>2</sup>"
             },
             {
               "key": "c",
-              "text": "1,200 square metres"
+              "text": "1,000 to 2,000 L/day/m<sup>2</sup>"
             },
             {
               "key": "d",
-              "text": "120 square metres"
+              "text": "12,000 to 18,000 L/day/m<sup>2</sup>"
             }
           ],
           "answer": "d",
-          "explanation": "The selected overflow rate is 15 m per day, and the stated band is 12–18 m per day. Using \\(\\dfrac{Q}{A} = 15\\) gives \\[A = \\dfrac{1{,}800}{15} = 120\\ \\text{m}^2\\] Depth affects detention and sludge space but is not substituted for plan area in surface loading; particle settling characteristics must justify the adopted rate.<p>Capsule 4th ed., p. 24; topic 6 point 50.</p>",
+          "explanation": "Plain sedimentation tanks, used without a coagulant, are designed for a surface overflow rate of 12,000 to 18,000 litres per day per m<sup>2</sup>; with coagulation, higher rates of about 24,000 to 30,000 are used.<p>Capsule 4th ed., p. 24; topic 6 point 50.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2427,24 +2427,24 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00064",
           "src": "CAP4-06-00064",
-          "text": "A detergent-rich inflow produces persistent foam and stable oily emulsions while jar-test floc formation deteriorates. Which constituent most directly explains this combination?",
+          "text": "In flocculation, greasing is caused by ______.",
           "options": [
             {
               "key": "a",
-              "text": "Calcium bicarbonate"
+              "text": "Lime"
             },
             {
               "key": "b",
-              "text": "Inert suspended sand"
+              "text": "Chlorine"
             },
             {
               "key": "c",
-              "text": "Excess dissolved carbon dioxide"
+              "text": "Alum"
             },
             {
               "key": "d",
@@ -2452,7 +2452,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Surfactants act at interfaces and can stabilize foam and emulsions, interfering with aggregation and separation. Greasy scum is not uniquely diagnostic of surfactants; oil content, other chemicals and operating conditions require investigation. The source's greasing label is therefore treated as a process symptom, not a definitive test.<p>Capsule 4th ed., p. 25; topic 6 point 63.</p>",
+          "explanation": "Surfactants from detergents keep oil and grease dispersed and interfere with floc formation, which causes greasy, foamy conditions during flocculation.<p>Capsule 4th ed., p. 25; topic 6 point 63.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2465,32 +2465,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00101",
           "src": "CAP4-06-00101",
-          "text": "In a controlled aluminium-coagulant recovery study, which principle explains why sulphuric acid can help recover aluminium from an aluminium-hydroxide-rich sludge?",
+          "text": "Alum can be regenerated by adding ______.",
           "options": [
             {
               "key": "a",
-              "text": "Acid destroys every captured impurity while leaving aluminium insoluble"
+              "text": "Sodium chloride"
             },
             {
               "key": "b",
-              "text": "Acid supplies hydroxide and increases precipitation of aluminium hydroxide"
+              "text": "Lime"
             },
             {
               "key": "c",
-              "text": "Acid dissolves aluminium hydroxide into soluble aluminium sulphate species"
+              "text": "Sulphuric acid"
             },
             {
               "key": "d",
-              "text": "Acid restores sodium exchange sites in an exhausted calcium-loaded zeolite"
+              "text": "Chlorine"
             }
           ],
           "answer": "c",
-          "explanation": "An idealized reaction is \\[\\begin{aligned} &amp;2\\,\\text{Al(OH)}_3 + 3\\,\\text{H}_2\\text{SO}_4 \\\\ &amp;\\to \\text{Al}_2(\\text{SO}_4)_3 + 6\\,\\text{H}_2\\text{O} \\end{aligned}\\] Acid dissolution can recover aluminium, but impurities may co-dissolve and limit reuse. This is coagulant recovery, not proof of unrestricted alum regeneration or an operational chemical-mixing recipe.<p>Source note: Page 25 point 102 is qualified by sludge composition, controlled recovery and reuse-quality assessment; no field dose is prescribed.</p><p>Capsule 4th ed., p. 25; topic 6 point 102.</p>",
+          "explanation": "Alum sludge contains aluminium hydroxide; treating it with sulphuric acid dissolves the hydroxide back into aluminium sulphate, so the alum is regenerated for reuse.<p>Capsule 4th ed., p. 25; topic 6 point 102.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2503,32 +2503,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00133",
           "src": "CAP4-06-00133",
-          "text": "Which formula is the conventional simplified textbook representation of bleaching powder, distinct from the formula of pure calcium hypochlorite?",
+          "text": "According to its chemical composition, the chemical formula of bleaching powder is ______.",
           "options": [
             {
               "key": "a",
-              "text": "CaOCl2"
+              "text": "CaOCl<sub>2</sub>"
             },
             {
               "key": "b",
-              "text": "Ca(OCl)2"
+              "text": "CaCl<sub>2</sub>"
             },
             {
               "key": "c",
-              "text": "CaCl2"
+              "text": "Ca(OH)<sub>2</sub>"
             },
             {
               "key": "d",
-              "text": "Ca(OH)2"
+              "text": "CaCO<sub>3</sub>"
             }
           ],
           "answer": "a",
-          "explanation": "CaOCl2, also represented as Ca(OCl)Cl, is the conventional simplified bleaching-powder formula. Pure calcium hypochlorite is Ca(OCl)2. Commercial bleaching powder is not a perfectly pure single compound, so disinfection calculations should use its measured available-chlorine content rather than assuming ideal composition.<p>Source note: Page 26 point 137 is retained as conventional notation with the commercial-mixture qualification.</p><p>Capsule 4th ed., p. 26; topic 6 point 137.</p>",
+          "explanation": "Bleaching powder is represented as CaOCl<sub>2</sub>, calcium oxychloride; it releases chlorine in water and is used for disinfection.<p>Capsule 4th ed., p. 26; topic 6 point 137.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2546,27 +2546,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00134",
           "src": "CAP4-06-00134",
-          "text": "A bleaching-powder batch has an assayed available-chlorine content of 35% by mass. How much available chlorine, expressed as Cl2 equivalent, is contained in 10 kg of that batch before handling losses?",
+          "text": "Bleaching powder, CaOCl<sub>2</sub>, is chemically known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "6.5 kg"
+              "text": "Calcium chloride"
             },
             {
               "key": "b",
-              "text": "10 kg"
+              "text": "Calcium carbonate"
             },
             {
               "key": "c",
-              "text": "3.5 kg"
+              "text": "Calcium oxychloride"
             },
             {
               "key": "d",
-              "text": "0.35 kg"
+              "text": "Calcium hydroxide"
             }
           ],
           "answer": "c",
-          "explanation": "Available chlorine is the product mass times the assayed mass fraction: \\[10 \\times 0.35 = 3.5\\ \\text{kg}\\] as \\(\\text{Cl}_2\\) equivalent. This is an oxidizing-capacity measure, not a claim that the powder contains that mass of free chlorine gas. Storage deterioration, delivery losses, demand and target residual are separate considerations.<p>Capsule 4th ed., p. 26; topic 6 point 137.</p>",
+          "explanation": "CaOCl<sub>2</sub> is calcium oxychloride, the chemical name of bleaching powder; it usually contains about 30 to 35% available chlorine.<p>Capsule 4th ed., p. 26; topic 6 point 137.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2579,7 +2579,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0603",
-          "kind": "calculation"
+          "kind": "recall"
         }
       ]
     },
@@ -2591,27 +2591,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00020",
           "src": "CAP4-06-00020",
-          "text": "A settlement replaces dry excreta collection with flush toilets and water-carriage sewers. Which additional service requirement must be assessed?",
+          "text": "Compared with the conservancy system, the water carriage system needs ______.",
           "options": [
             {
               "key": "a",
-              "text": "Reliable flushing water and hydraulic conveyance capacity"
+              "text": "More water"
             },
             {
               "key": "b",
-              "text": "Continuous pressurization of every sewer, including gravity reaches"
+              "text": "The same quantity of water"
             },
             {
               "key": "c",
-              "text": "The dry system's water allowance, with no added flushing demand"
+              "text": "Less water"
             },
             {
               "key": "d",
-              "text": "Stormwater conveyance capacity in place of a sanitary-flow estimate"
+              "text": "No water"
             }
           ],
           "answer": "a",
-          "explanation": "Water carriage uses flushing and conveyance water to transport wastes, increasing the water-service requirement relative to comparable dry collection. It also requires collection and treatment capacity; dilution does not eliminate the pollutant load.<p>Capsule 4th ed., p. 24; topic 6 point 21.</p>",
+          "explanation": "In the water carriage system, sewage is carried through sewers by water, so a large quantity of water is needed for flushing; the conservancy system removes night soil manually and needs little water.<p>Capsule 4th ed., p. 24; topic 6 point 21.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2624,12 +2624,12 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00053",
           "src": "CAP4-06-00053",
-          "text": "A circular sewer fills progressively from a shallow free-surface flow toward its crown. Which geometric quantity increases monotonically throughout this interval?",
+          "text": "If a circular sewer is partially full and the depth of flow is increased, the ______ increases.",
           "options": [
             {
               "key": "a",
@@ -2637,19 +2637,19 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             },
             {
               "key": "b",
-              "text": "Manning discharge at fixed slope and roughness"
+              "text": "Unused sewer capacity"
             },
             {
               "key": "c",
-              "text": "Hydraulic radius"
+              "text": "Air space above the flow"
             },
             {
               "key": "d",
-              "text": "Manning mean velocity at fixed slope and roughness"
+              "text": "Clearance below the crown"
             }
           ],
           "answer": "a",
-          "explanation": "The wetted arc grows continuously with water depth, so wetted perimeter increases. Hydraulic radius A/P peaks before the pipe becomes full; Manning velocity and discharge also have distinct pre-full maxima. Greater depth therefore does not guarantee a larger value of every hydraulic quantity.<p>Capsule 4th ed., pp. 24, 26; topic 6 point 51; topic 6 point 141.</p>",
+          "explanation": "As the depth of flow in a circular sewer rises, the water touches more of the pipe wall, so the wetted perimeter increases continuously, up to the full circumference.<p>Capsule 4th ed., pp. 24, 26; topic 6 point 51; topic 6 point 141.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2664,32 +2664,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00054",
           "src": "CAP4-06-00054",
-          "text": "A sewer must pass below a river and rise to a downstream gravity sewer, with its depressed barrels flowing full under upstream head. What is this crossing called?",
+          "text": "An inverted siphon, also called a depressed sewer, is provided when a sewer ______.",
           "options": [
             {
               "key": "a",
-              "text": "True siphon over a summit"
+              "text": "Passes over a ridge"
             },
             {
               "key": "b",
-              "text": "Storm-water overflow weir"
+              "text": "Enters a treatment plant"
             },
             {
               "key": "c",
-              "text": "Open-channel aqueduct"
+              "text": "Runs along a steep hill slope"
             },
             {
               "key": "d",
-              "text": "Inverted siphon or depressed sewer"
+              "text": "Crosses a river"
             }
           ],
           "answer": "d",
-          "explanation": "A depressed sewer, traditionally called an inverted siphon, passes below an obstruction and generally flows under pressure. Available upstream head must overcome losses. It is not the atmospheric-pressure-supported summit arrangement of a true siphon; cleaning and minimum-flow performance are critical.<p>Capsule 4th ed., p. 24; topic 6 point 52; topic 6 point 54.</p>",
+          "explanation": "Where a sewer must cross a river or a similar obstacle, it is taken below it as an inverted siphon, or depressed sewer, which flows full under pressure and then rises to continue by gravity.<p>Capsule 4th ed., p. 24; topic 6 point 52; topic 6 point 54.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2703,32 +2703,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00055",
           "src": "CAP4-06-00055",
-          "text": "A conventional textbook classification calls manholes around 0.7-0.9 m deep shallow. An access chamber is 0.8 m deep. Which classification and safety conclusion follow?",
+          "text": "A manhole is classified as shallow if its depth is between ______.",
           "options": [
             {
               "key": "a",
-              "text": "Shallow by that classification; safe entry is not established"
+              "text": "0.7 and 0.9 m"
             },
             {
               "key": "b",
-              "text": "Shallow by that classification; depth alone authorizes entry"
+              "text": "0.2 and 0.4 m"
             },
             {
               "key": "c",
-              "text": "Normal by that classification; safe entry is not established"
+              "text": "1.5 and 2.0 m"
             },
             {
               "key": "d",
-              "text": "Deep by that classification; safe entry is not established"
+              "text": "2.5 and 3.0 m"
             }
           ],
           "answer": "a",
-          "explanation": "0.8 m lies in the stated shallow band. Such labels are convention-dependent and do not specify cover strength, safe access or gas conditions. The original range is not authenticated here as a Nepal code definition, and no manhole is safe to enter solely because it is shallow.<p>Source note: Page 24 point 53: classification explicitly attributed to the source&#39;s textbook convention, not current local law.</p><p>Capsule 4th ed., p. 24; topic 6 point 53.</p>",
+          "explanation": "Manholes are classified by depth: shallow manholes are 0.7 to 0.9 m deep, normal manholes about 1.5 m, and deep manholes more than 1.5 m.<p>Capsule 4th ed., p. 24; topic 6 point 53.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2741,32 +2741,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00056",
           "src": "CAP4-06-00056",
-          "text": "A sewer check explicitly adopts a minimum velocity of 0.75 m/s at the assessed flow. For Q = 0.30 cubic metres/s and wetted area 0.50 square metres, what is the result?",
+          "text": "The velocity of flow of sewage in a combined sewer should not be less than ______.",
           "options": [
             {
               "key": "a",
-              "text": "Velocity is 0.60 m/s and fails the adopted criterion"
+              "text": "0.75 m/s"
             },
             {
               "key": "b",
-              "text": "Velocity is 0.75 m/s and exactly meets the criterion"
+              "text": "0.3 m/s"
             },
             {
               "key": "c",
-              "text": "Velocity is 0.15 m/s and meets the criterion"
+              "text": "0.1 m/s"
             },
             {
               "key": "d",
-              "text": "Velocity is 1.67 m/s and exceeds the criterion"
+              "text": "3.0 m/s"
             }
           ],
           "answer": "a",
-          "explanation": "The mean velocity is \\[V = \\dfrac{Q}{A} = \\dfrac{0.30}{0.50} = 0.60\\ \\text{m/s}\\] less than the adopted \\(0.75\\ \\text{m/s}\\). A geometric area of at most 0.40 m<sup>2</sup> would meet that velocity for this discharge, subject to hydraulic feasibility. Self-cleansing also depends on sediment, shear and the chosen design-flow condition.<p>Source note: Page 24 point 55&#39;s 0.75 m/s is an explicit exercise criterion, not a universal minimum at every instant.</p><p>Capsule 4th ed., p. 24; topic 6 point 55.</p>",
+          "explanation": "Combined sewers carry grit and heavier solids washed in with storm water, so a self-cleansing velocity of at least 0.75 metres per second is needed to prevent deposits.<p>Capsule 4th ed., p. 24; topic 6 point 55.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2779,32 +2779,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00057",
           "src": "CAP4-06-00057",
-          "text": "A gravity sewer route follows generally falling ground but includes a steep reach. How should its invert profile be selected?",
+          "text": "The slope of a sewer is given in the direction of the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Use one fixed invert gradient while disregarding the receiving outfall level"
+              "text": "Road camber"
             },
             {
               "key": "b",
-              "text": "Maintain constant cover by copying every ground-slope change without a hydraulic check"
+              "text": "Prevailing wind"
             },
             {
               "key": "c",
-              "text": "Choose the steepest available grade solely to maximize self-cleansing velocity"
+              "text": "Water supply mains"
             },
             {
               "key": "d",
-              "text": "Use terrain advantage while checking hydraulic grade, cover and excessive velocity"
+              "text": "Natural slope of the ground"
             }
           ],
           "answer": "d",
-          "explanation": "Following terrain can reduce excavation and pumping, but sewer grade must satisfy hydraulic capacity, deposition and abrasion limits, cover and outfall constraints. Drops or other structures may be required. Natural ground slope is a useful alignment influence, not an exact mandatory pipe gradient.<p>Capsule 4th ed., p. 24; topic 6 point 56.</p>",
+          "explanation": "Sewers flow by gravity, so they are laid falling in the direction of the natural slope of the ground; this keeps the excavation shallow and avoids pumping.<p>Capsule 4th ed., p. 24; topic 6 point 56.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2817,32 +2817,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00060",
           "src": "CAP4-06-00060",
-          "text": "A new sewer runs along a river and intercepts several existing large sewer outfalls so dry-weather wastewater can be conveyed to treatment. Which term best fits its network role?",
+          "text": "The sewer that collects water from a number of other large sewers or outlets is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Interceptor sewer"
+              "text": "An intercepting sewer"
             },
             {
               "key": "b",
-              "text": "Street lateral sewer"
+              "text": "A house sewer"
             },
             {
               "key": "c",
-              "text": "Building house drain"
+              "text": "A lateral sewer"
             },
             {
               "key": "d",
-              "text": "Individual roof-water downpipe"
+              "text": "A branch sewer"
             }
           ],
           "answer": "a",
-          "explanation": "An interceptor receives flow from existing sewers or outfalls and redirects it toward treatment instead of allowing the former discharge. Its role is defined by what it intercepts, not just its diameter. Storm-overflow and peak-flow arrangements require separate design checks.<p>Capsule 4th ed., p. 24; topic 6 point 59.</p>",
+          "explanation": "An intercepting sewer runs across the ends of several large sewers or outfalls and intercepts their flow, carrying it to a treatment plant; laterals and branch sewers are smaller collecting sewers.<p>Capsule 4th ed., p. 24; topic 6 point 59.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2855,16 +2855,16 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00090",
           "src": "CAP4-06-00090",
-          "text": "Several street lateral sewers discharge into a larger collecting sewer before the flow reaches a trunk. Which term best describes that collecting sewer in the stated hierarchy?",
+          "text": "The sewer used to convey wastewater from one or more lateral sewers is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "House connection"
+              "text": "House sewer"
             },
             {
               "key": "b",
@@ -2872,15 +2872,15 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             },
             {
               "key": "c",
-              "text": "Street lateral"
+              "text": "Outfall sewer"
             },
             {
               "key": "d",
-              "text": "Final treatment-plant outfall"
+              "text": "Storm drain"
             }
           ],
           "answer": "b",
-          "explanation": "A main sewer collects flows from lateral sewers in the conventional hierarchy. A house connection serves individual premises, while an outfall conveys flow to its final discharge destination. Local naming can vary; the question specifies the network role rather than identifying it from diameter alone.<p>Capsule 4th ed., p. 25; topic 6 point 90.</p>",
+          "explanation": "Lateral sewers collect wastewater from the house connections and discharge into a larger main sewer, which carries it on to the trunk or outfall sewer.<p>Capsule 4th ed., p. 25; topic 6 point 90.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2893,32 +2893,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00096",
           "src": "CAP4-06-00096",
-          "text": "A manhole cover is specified as cast iron for a trafficked road. Which additional information is essential before accepting it as suitable?",
+          "text": "The cover of a manhole is made of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Verified casting mass alone, without checking section or load rating"
+              "text": "Glass"
             },
             {
               "key": "b",
-              "text": "Verified load class, dimensions and compatibility with its frame"
+              "text": "Cast iron"
             },
             {
               "key": "c",
-              "text": "Verified nominal diameter alone, without checking frame compatibility"
+              "text": "Aluminium sheet"
             },
             {
               "key": "d",
-              "text": "Verified corrosion allowance alone, without wheel-load assessment"
+              "text": "Timber"
             }
           ],
           "answer": "b",
-          "explanation": "Cast iron is a conventional cover material, but capacity and seating must suit the loading and frame. Ductile iron, reinforced concrete and other approved systems also exist. The material name does not establish the load rating, condition, secure fit or installation quality.<p>Source note: Page 25 point 97 names a common material, not the only permitted cover material.</p><p>Capsule 4th ed., p. 25; topic 6 point 97.</p>",
+          "explanation": "Manhole covers and frames are commonly made of cast iron, which is strong in compression, heavy enough to stay in place under traffic and resistant to corrosion.<p>Capsule 4th ed., p. 25; topic 6 point 97.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2931,32 +2931,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00099",
           "src": "CAP4-06-00099",
-          "text": "Why can a rigid circular manhole cover, correctly sized larger than its matching circular clear opening, resist falling through that opening when turned?",
+          "text": "Manhole covers are generally made circular to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Its weight, rather than its dimensions, prevents passage through the opening"
+              "text": "Make them lighter"
             },
             {
               "key": "b",
-              "text": "Its diameter is constant in every direction across its plane"
+              "text": "Prevent the cover from falling into the manhole"
             },
             {
               "key": "c",
-              "text": "Its projected minor axis remains equal to its diameter at every tilt"
+              "text": "Save material"
             },
             {
               "key": "d",
-              "text": "Its area alone prevents passage regardless of the shape of the opening"
+              "text": "Improve ventilation"
             }
           ],
           "answer": "b",
-          "explanation": "A circle has constant diameter, so there is no smaller in-plane diagonal to align with the matching opening. A properly oversized rigid cover cannot pass through it merely by rotation. This geometric benefit assumes intact, correctly matched components; wrong sizing, breakage or frame failure remains dangerous.<p>Capsule 4th ed., p. 25; topic 6 point 100.</p>",
+          "explanation": "A circular cover has the same width in every direction, so it cannot be turned to drop through its circular opening, whereas a square cover can fall through along its diagonal.<p>Capsule 4th ed., p. 25; topic 6 point 100.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2969,32 +2969,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00119",
           "src": "CAP4-06-00119",
-          "text": "Why has an egg-shaped sewer traditionally been considered for a combined system with very low dry-weather flow and much larger storm flow?",
+          "text": "The egg-shaped sewer is best preferred for ______ sewers.",
           "options": [
             {
               "key": "a",
-              "text": "Equal wetted perimeters at all flow depths keep boundary shear constant"
+              "text": "Pressure (force main)"
             },
             {
               "key": "b",
-              "text": "Equal hydraulic radii at all flow depths keep Manning velocity constant"
+              "text": "House drainage"
             },
             {
               "key": "c",
-              "text": "A narrow invert concentrates low flow while the wider upper section carries larger flow"
+              "text": "Combined"
             },
             {
               "key": "d",
-              "text": "A wide flat invert spreads dry-weather flow to increase its transport depth"
+              "text": "Separate sanitary"
             }
           ],
           "answer": "c",
-          "explanation": "The narrow lower portion can improve low-flow depth and transport conditions, while the larger upper area accommodates storm flow. This explains the conventional combined-sewer application. Shape alone does not guarantee self-cleansing or lowest cost; slope, sediment, construction and maintenance remain important.<p>Capsule 4th ed., p. 26; topic 6 point 120.</p>",
+          "explanation": "An egg-shaped sewer has a narrow invert that keeps the small dry-weather flow deep and self-cleansing, while its wider upper part carries the large storm flow, so it suits combined sewers.<p>Capsule 4th ed., p. 26; topic 6 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3007,32 +3007,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00122",
           "src": "CAP4-06-00122",
-          "text": "A project explicitly limits design flow depth to two-thirds of diameter for its 0.60 m circular sewer, selected within a 0.4-0.9 m size band. What water depth and crown air depth correspond to that limit?",
+          "text": "For sewer pipes of 0.4 m to 0.9 m diameter, the design at maximum flow assumes the sewer running ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.60 m water and zero air"
+              "text": "Completely full"
             },
             {
               "key": "b",
-              "text": "0.45 m water and 0.15 m air"
+              "text": "Three-quarters full"
             },
             {
               "key": "c",
-              "text": "0.40 m water and 0.20 m air"
+              "text": "Two-thirds full"
             },
             {
               "key": "d",
-              "text": "0.20 m water and 0.40 m air"
+              "text": "Half full"
             }
           ],
           "answer": "c",
-          "explanation": "The design water depth and the remaining distance to the crown are \\[y = \\dfrac{2}{3} \\times 0.60 = 0.40\\ \\text{m}\\] \\[0.60 - 0.40 = 0.20\\ \\text{m}\\] This reserve is geometric airspace, not guaranteed ventilation or immunity from surcharge. The source's diameter-band rule lacks an identified applicable code and is stipulated only for this exercise.<p>Source note: Page 26 point 124: two-thirds depth for 0.4-0.9 m sewers is not authenticated as a current Nepal prescription.</p><p>Capsule 4th ed., p. 26; topic 6 point 124.</p>",
+          "explanation": "Sewers of 0.4 to 0.9 m diameter are designed to run two-thirds full at maximum flow, leaving space for ventilation and unexpected flows; smaller sewers run half full and larger ones three-quarters full.<p>Capsule 4th ed., p. 26; topic 6 point 124.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3045,32 +3045,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00123",
           "src": "CAP4-06-00123",
-          "text": "For a circular sewer under uniform Manning flow with unchanged slope and roughness, approximately what fraction of full-flow discharge occurs at depth y/D = 2/3?",
+          "text": "A 0.6 m diameter sewer, designed to run two-thirds full at maximum flow, has a design depth of flow of ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.708"
+              "text": "0.45 m"
             },
             {
               "key": "b",
-              "text": "1.164"
+              "text": "0.20 m"
             },
             {
               "key": "c",
-              "text": "0.667"
+              "text": "0.30 m"
             },
             {
               "key": "d",
-              "text": "0.784"
+              "text": "0.40 m"
             }
           ],
           "answer": "d",
-          "explanation": "The wetted angle is \\[\\begin{aligned} \\theta &amp;= 2\\cos^{-1}\\left(1 - \\dfrac{2y}{D}\\right) \\\\ &amp;= 3.82127\\ \\text{rad} \\end{aligned}\\] The area and perimeter ratios are \\[\\dfrac{A}{A_f} = \\dfrac{\\theta - \\sin\\theta}{2\\pi} = 0.70821\\] \\[\\dfrac{P}{P_f} = \\dfrac{\\theta}{2\\pi} = 0.60817\\] Thus \\(\\dfrac{R}{R_f} = 1.16448\\) and \\[\\begin{aligned} \\dfrac{Q}{Q_f} &amp;= 0.70821 \\times 1.16448^{2{/}3} \\\\ &amp;= 0.78388 \\end{aligned}\\] The depth fraction is not the discharge fraction.<p>Capsule 4th ed., p. 26; topic 6 point 124.</p>",
+          "explanation": "Two-thirds of the diameter gives \\[y = \\dfrac{2}{3} \\times 0.60 = 0.40\\ \\text{m}\\] leaving 0.20 m of air space below the crown.<p>Capsule 4th ed., p. 26; topic 6 point 124.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3088,27 +3088,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00128",
           "src": "CAP4-06-00128",
-          "text": "Flow in a nominally separate sanitary sewer rises sharply during rain. Which explanation is consistent with sanitary-flow definitions and real sewer behaviour?",
+          "text": "Sanitary sewage is ______ rainfall.",
           "options": [
             {
               "key": "a",
-              "text": "The wet-weather peak can be treated as ordinary household generation alone"
+              "text": "Directly proportional to"
             },
             {
               "key": "b",
-              "text": "Infiltration or inflow can add rainfall-related water to the sanitary network"
+              "text": "Independent of"
             },
             {
               "key": "c",
-              "text": "The separate-system designation is sufficient to rule out any rain-related entry"
+              "text": "Inversely proportional to"
             },
             {
               "key": "d",
-              "text": "The wet-weather rise proves the network was designed as a combined sewer"
+              "text": "Equal to twice the"
             }
           ],
           "answer": "b",
-          "explanation": "Sanitary wastewater generation is conceptually separate from direct storm runoff. Actual sanitary sewers can receive groundwater infiltration, leaking manhole inflow and illicit storm connections, producing wet-weather peaks. The source's independence claim is therefore a definition-level simplification, not a reliable hydraulic observation.<p>Capsule 4th ed., p. 26; topic 6 point 129.</p>",
+          "explanation": "Sanitary sewage comes from houses, institutions and industries, so its quantity depends on the water supply and population, not on rainfall; storm water depends on rainfall.<p>Capsule 4th ed., p. 26; topic 6 point 129.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3121,7 +3121,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0604",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -3133,27 +3133,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00037",
           "src": "CAP4-06-00037",
-          "text": "A vacuum filter is proposed for a fine-solids slurry. Which finding most directly challenges the claim that it is automatically the best separator for all fines?",
+          "text": "A vacuum filter is most suitable for the removal of ______ from a liquid.",
           "options": [
             {
               "key": "a",
-              "text": "The filtrate is collected separately from the retained cake"
+              "text": "Floating oil"
             },
             {
               "key": "b",
-              "text": "The retained particles form a permeable cake on the cloth"
+              "text": "Dissolved salts"
             },
             {
               "key": "c",
-              "text": "The fine particles form a low-permeability cake and blind the cloth"
+              "text": "Fines"
             },
             {
               "key": "d",
-              "text": "A pressure difference is maintained across the filter medium"
+              "text": "Dissolved gases"
             }
           ],
           "answer": "c",
-          "explanation": "Vacuum filtration needs a permeable medium and cake for useful throughput. Very fine particles can blind the medium or require conditioning and filter aids. Particle properties and trials determine suitability; the source's universal best-method claim is not justified.<p>Source note: Page 24 point 37 is qualified, rather than equated with removal of dissolved contaminants.</p><p>Capsule 4th ed., p. 24; topic 6 point 37.</p>",
+          "explanation": "A vacuum filter draws the liquid through a filter cloth by suction and retains the fine solids as a cake, so it is suited to separating fines from a liquid.<p>Capsule 4th ed., p. 24; topic 6 point 37.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3166,32 +3166,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00041",
           "src": "CAP4-06-00041",
-          "text": "In an ideal grit chamber, horizontal water velocity is 0.30 m/s, particle settling velocity is 0.020 m/s and a particle starts 1.0 m above the floor. What horizontal travel is needed before it settles?",
+          "text": "In a grit chamber, the flow velocity at which the grit particles settle down is kept at about ______.",
           "options": [
             {
               "key": "a",
-              "text": "50 m"
+              "text": "1.5 m/s"
             },
             {
               "key": "b",
-              "text": "1.5 m"
+              "text": "0.03 m/s"
             },
             {
               "key": "c",
-              "text": "0.067 m"
+              "text": "3 m/s"
             },
             {
               "key": "d",
-              "text": "15 m"
+              "text": "0.3 m/s"
             }
           ],
           "answer": "d",
-          "explanation": "The settling time and horizontal travel are \\[t = \\dfrac{1.0}{0.020} = 50\\ \\text{s}\\] \\[L = 0.30 \\times 50 = 15\\ \\text{m}\\] The horizontal transport velocity is not the particle's vertical settling velocity. Real grit design also allows for turbulence, flow variation and capture requirements.<p>Source note: Page 24 point 40 is grammatically incomplete and does not identify the 0.3 m/s velocity. New hypothetical inputs distinguish the two components; the original intended statement remains for parent review.</p><p>Capsule 4th ed., p. 24; topic 6 point 40.</p>",
+          "explanation": "A grit chamber keeps the flow velocity at about 0.3 metres per second, slow enough for the heavy grit to settle but fast enough to keep the lighter organic matter moving.<p>Capsule 4th ed., p. 24; topic 6 point 40.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3204,7 +3204,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00042",
@@ -3247,27 +3247,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00043",
           "src": "CAP4-06-00043",
-          "text": "For two treatment stages without bypass, E1 and E2 denote removal fractions relative to each stage's own inlet load. Which expression gives the fraction remaining after both stages?",
+          "text": "The overall efficiency of a two-stage high rate trickling filter with stage efficiencies \\(E_1\\) and \\(E_2\\) is ______.",
           "options": [
             {
               "key": "a",
-              "text": "E1 + E2(1 - E1)"
+              "text": "\\(E_1E_2\\)"
             },
             {
               "key": "b",
-              "text": "(1 - E1)(1 - E2)"
+              "text": "\\(E_1 + E_2(1 - E_1)\\)"
             },
             {
               "key": "c",
-              "text": "E1E2"
+              "text": "\\((1 - E_1)(1 - E_2)\\)"
             },
             {
               "key": "d",
-              "text": "1 - E1 - E2"
+              "text": "\\(E_1 + E_2\\)"
             }
           ],
           "answer": "b",
-          "explanation": "The first stage passes a fraction 1 - E1; the second passes 1 - E2 of that remainder. Their product is the final remaining fraction. Its complement gives overall removal E1 + E2(1 - E1). The formula is a mass-balance identity, not a particular empirical high-rate-filter design model.<p>Capsule 4th ed., p. 24; topic 6 point 41.</p>",
+          "explanation": "The first stage removes \\(E_1\\), and the second removes \\(E_2\\) of the remaining \\(1 - E_1\\), so the overall efficiency is \\(E_1 + E_2(1 - E_1)\\). The product \\((1 - E_1)(1 - E_2)\\) is the fraction left.<p>Capsule 4th ed., p. 24; topic 6 point 41.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3280,32 +3280,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00045",
           "src": "CAP4-06-00045",
-          "text": "A sludge line feeds a rotary vacuum filter and discharges a wetter filtrate stream and a solids-rich cake. What is its primary process duty?",
+          "text": "Vacuum filters are used in sludge treatment for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Thermal sludge incineration"
+              "text": "Gravity thickening"
             },
             {
               "key": "b",
-              "text": "Dissolved-salt desalination"
+              "text": "Disinfection"
             },
             {
               "key": "c",
-              "text": "Sludge dewatering"
+              "text": "Dewatering"
             },
             {
               "key": "d",
-              "text": "Aerobic sludge digestion"
+              "text": "Digestion"
             }
           ],
           "answer": "c",
-          "explanation": "Vacuum draws liquid through a porous medium while a solids-rich cake is retained. This lowers the water carried with the sludge and reduces handling volume. It does not itself provide digestion, complete pathogen destruction or removal of dissolved salts from the filtrate.<p>Capsule 4th ed., pp. 24, 26; topic 6 point 43; topic 6 point 122.</p>",
+          "explanation": "A rotary vacuum filter sucks water out of sludge through a cloth, leaving a moist cake that is easy to handle, so its primary purpose is dewatering.<p>Capsule 4th ed., pp. 24, 26; topic 6 point 43; topic 6 point 122.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3320,32 +3320,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00046",
           "src": "CAP4-06-00046",
-          "text": "A conventional trickling filter needs a durable, open support for an attached biofilm and air passage. Which proposed medium is least appropriate?",
+          "text": "Which of the following is not used as a medium for trickling filters?",
           "options": [
             {
               "key": "a",
-              "text": "Purpose-made random plastic packing"
+              "text": "Blast furnace slag"
             },
             {
               "key": "b",
-              "text": "Durable graded stone"
+              "text": "Crushed stone"
             },
             {
               "key": "c",
-              "text": "Loose untreated paper sheets"
+              "text": "Paper"
             },
             {
               "key": "d",
-              "text": "Engineered structured plastic"
+              "text": "Plastic media"
             }
           ],
           "answer": "c",
-          "explanation": "Trickling-filter media must retain strength, void space and drainage while supporting attached growth. Untreated paper can soften, degrade and collapse, obstructing air and water flow. Stone and engineered plastic are established media; a trickling filter is not paper filtration.<p>Capsule 4th ed., p. 24; topic 6 point 45.</p>",
+          "explanation": "Trickling filter media must be strong, durable and open, to support a biological film and let air pass; crushed stone, slag and plastic are used, but paper would disintegrate.<p>Capsule 4th ed., p. 24; topic 6 point 45.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3358,32 +3358,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00048",
           "src": "CAP4-06-00048",
-          "text": "A historical high-rate trickling-filter loading band is stated as 110-330 ML/hectare/day. Which equivalent hydraulic depth-loading band is correct?",
+          "text": "The hydraulic loading for a high rate trickling filter varies between ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.11-0.33 m/day"
+              "text": "500 and 1000 ML per hectare per day"
             },
             {
               "key": "b",
-              "text": "11-33 m/day"
+              "text": "110 and 330 ML per hectare per day"
             },
             {
               "key": "c",
-              "text": "110-330 m/day"
+              "text": "1 and 4 ML per hectare per day"
             },
             {
               "key": "d",
-              "text": "1.1-3.3 m/day"
+              "text": "22 and 44 ML per hectare per day"
             }
           ],
           "answer": "b",
-          "explanation": "One ML is 1,000 cubic metres and one hectare is 10,000 square metres, so \\[\\dfrac{1000\\ \\text{m}^3}{10{,}000\\ \\text{m}^2} = 0.1\\ \\text{m}\\] per day for each ML per hectare per day, giving 11–33 m per day. This converts the stated band; it does not make it a universal limit for all stone and plastic media or recirculation conventions.<p>Source note: Page 24 point 47 is retained as a historical conversion exercise, not a current design prescription.</p><p>Capsule 4th ed., p. 24; topic 6 point 47.</p>",
+          "explanation": "High rate trickling filters, with recirculation, take a hydraulic loading of 110 to 330 million litres per hectare per day, far more than the 22 to 44 of a standard rate filter.<p>Capsule 4th ed., p. 24; topic 6 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3396,32 +3396,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00049",
           "src": "CAP4-06-00049",
-          "text": "A trickling filter receives 1,200 cubic metres/day of wastewater plus 1,000 cubic metres/day of recirculated flow. If its adopted hydraulic loading is 22 m/day including recirculation, what plan area is needed?",
+          "text": "A hydraulic loading of 110 to 330 ML per hectare per day for a high rate trickling filter is equal to ______.",
           "options": [
             {
               "key": "a",
-              "text": "45.5 square metres"
+              "text": "110 to 330 m/day"
             },
             {
               "key": "b",
-              "text": "54.5 square metres"
+              "text": "1.1 to 3.3 m/day"
             },
             {
               "key": "c",
-              "text": "100 square metres"
+              "text": "11 to 33 m/day"
             },
             {
               "key": "d",
-              "text": "1,000 square metres"
+              "text": "0.11 to 0.33 m/day"
             }
           ],
           "answer": "c",
-          "explanation": "Flow across the media is \\[\\begin{aligned} Q &amp;= 1{,}200 + 1{,}000 \\\\ &amp;= 2{,}200\\ \\text{m}^3\\text{/day} \\end{aligned}\\] so the plan area is \\[A = \\dfrac{2{,}200}{22} = 100\\ \\text{m}^2\\] Excluding the recycle would understate area under this explicitly defined loading basis; organic loading needs an additional check.<p>Capsule 4th ed., p. 24; topic 6 point 47.</p>",
+          "explanation": "One ML is 1000 m<sup>3</sup> and one hectare is 10,000 m<sup>2</sup>, so 1 ML per hectare per day equals \\(\\dfrac{1000}{10{,}000} = 0.1\\) m per day. The band therefore becomes 11 to 33 m per day.<p>Capsule 4th ed., p. 24; topic 6 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3439,27 +3439,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00058",
           "src": "CAP4-06-00058",
-          "text": "After drying, a sludge sample has 1.00 g residue. Method-controlled ignition near 550 degrees C leaves 0.35 g. What fixed and volatile residue fractions are indicated?",
+          "text": "In finding the fixed inorganic solids in a sludge sample, the sample is ignited at ______ for 15 minutes.",
           "options": [
             {
               "key": "a",
-              "text": "65% fixed and 35% volatile"
+              "text": "103 to 105°C"
             },
             {
               "key": "b",
-              "text": "35% fixed and 100% volatile"
+              "text": "180°C"
             },
             {
               "key": "c",
-              "text": "65% fixed and 100% volatile"
+              "text": "1000°C"
             },
             {
               "key": "d",
-              "text": "35% fixed and 65% volatile"
+              "text": "\\(550 \\pm 50\\)°C"
             }
           ],
           "answer": "d",
-          "explanation": "Fixed residue is the 0.35 g remaining, 35% of the dry residue. The ignition loss is \\[1.00 - 0.35 = 0.65\\ \\text{g}\\] or 65%. EPA Method 160.4 (1971) supports ignition around 550 degrees C but warns that mineral changes complicate identification of fixed with inorganic and volatile with organic matter.<p>Source note: Page 24 point 57: the exact 550 +/- 50 degrees C for 15 minutes prescription is not verified; follow the chosen analytical method and endpoint.</p><p>Capsule 4th ed., p. 24; topic 6 point 57.</p>",
+          "explanation": "Total solids are found by drying at 103 to 105°C; igniting the residue at \\(550 \\pm 50\\)°C for 15 minutes burns off the volatile (organic) matter and leaves the fixed inorganic solids.<p>Capsule 4th ed., p. 24; topic 6 point 57.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3472,32 +3472,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00059",
           "src": "CAP4-06-00059",
-          "text": "A septic-tank design explicitly requires 24 hours of useful liquid detention at a daily flow of 1.2 cubic metres. Ignoring sludge storage and freeboard in this first calculation, what useful liquid volume is needed?",
+          "text": "The detention time for a septic tank is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.025 cubic metres"
+              "text": "2 hours"
             },
             {
               "key": "b",
-              "text": "1.2 cubic metres"
+              "text": "24 hours"
             },
             {
               "key": "c",
-              "text": "0.6 cubic metres"
+              "text": "7 days"
             },
             {
               "key": "d",
-              "text": "28.8 cubic metres"
+              "text": "6 hours"
             }
           ],
           "answer": "b",
-          "explanation": "The detention volume is \\[V = Qt = 1.2 \\times 1 = 1.2\\ \\text{m}^3\\] using 1.2 cubic metres per day for 1 day. This excludes sludge and scum storage and freeboard. EPA Onsite Manual (2002), section 4.6.2, discusses a 24-hour liquid-detention sizing approach; it is not a universal Nepal design requirement.<p>Capsule 4th ed., p. 24; topic 6 point 58.</p>",
+          "explanation": "A septic tank is designed for a detention time of 24 hours, long enough for the solids to settle and the sludge to begin anaerobic digestion.<p>Capsule 4th ed., p. 24; topic 6 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3510,32 +3510,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00062",
           "src": "CAP4-06-00062",
-          "text": "Fresh domestic wastewater is measured at pH 7.4 at 25 degrees C. Which interpretation is supported without extrapolating beyond the measurement?",
+          "text": "Fresh sewage is generally ______.",
           "options": [
             {
               "key": "a",
-              "text": "This sample is slightly alkaline; its total alkalinity still needs a separate test"
+              "text": "Alkaline"
             },
             {
               "key": "b",
-              "text": "This sample is slightly alkaline; the reading establishes complete stabilization"
+              "text": "Strongly acidic"
             },
             {
               "key": "c",
-              "text": "This sample is slightly alkaline; its total alkalinity is therefore 7.4 mg/L"
+              "text": "Acidic"
             },
             {
               "key": "d",
-              "text": "This sample is neutral because wastewater buffering makes pH 7.4 equivalent to pH 7"
+              "text": "Neutral"
             }
           ],
           "answer": "a",
-          "explanation": "At 25 degrees C, pH 7.4 is slightly alkaline, consistent with a common domestic-sewage description. Total alkalinity measures acid-neutralizing capacity and needs a separate titration; it is not the numerical pH in mg/L. Source, buffering and decomposition can change pH, so one reading establishes neither freshness nor complete stabilization.<p>Source note: Page 25 points 61/71 are duplicate qualitative claims, retained with a non-universal qualification.</p><p>Capsule 4th ed., p. 25; topic 6 point 61; topic 6 point 71.</p>",
+          "explanation": "Fresh sewage is generally alkaline, with a pH above 7; as it becomes stale and septic, the acids formed by decomposition lower its pH.<p>Capsule 4th ed., p. 25; topic 6 point 61; topic 6 point 71.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3549,32 +3549,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00063",
           "src": "CAP4-06-00063",
-          "text": "Downstream of a large biodegradable waste discharge, a textbook stream-pollution sequence shows a reach with nearly zero DO and anaerobic decomposition. Which zone best describes that reach?",
+          "text": "If the DO concentration falls to zero in a natural stream, it indicates the zone of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Upstream unpolluted zone"
+              "text": "Recovery"
             },
             {
               "key": "b",
-              "text": "Active decomposition zone"
+              "text": "Active decomposition"
             },
             {
               "key": "c",
-              "text": "Recovery zone with steadily restored oxygen"
+              "text": "Clear water"
             },
             {
               "key": "d",
-              "text": "Recovered clean-water zone"
+              "text": "Degradation"
             }
           ],
           "answer": "b",
-          "explanation": "In the conventional sequence, oxygen-demanding decay can exhaust DO in the active decomposition zone, allowing anaerobic processes. This scenario supplies the waste-discharge context. A zero-DO reading alone cannot establish its cause or uniquely locate a real stream within an idealized zonal sequence.<p>Capsule 4th ed., p. 25; topic 6 point 62.</p>",
+          "explanation": "In the zone of active decomposition, bacteria decompose organic matter so heavily that the dissolved oxygen falls to zero and anaerobic conditions develop; the degradation zone comes before it and the recovery zone after.<p>Capsule 4th ed., p. 25; topic 6 point 62.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3587,32 +3587,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00065",
           "src": "CAP4-06-00065",
-          "text": "A septic-tank proposal replaces a specified 24-hour useful detention requirement with 30 minutes solely because a revision note lists that value. What is the defensible review response?",
+          "text": "The detention period in a septic tank is assumed as ______.",
           "options": [
             {
               "key": "a",
-              "text": "Reject the unsupported substitution and retain a properly justified septic design basis"
+              "text": "30 minutes"
             },
             {
               "key": "b",
-              "text": "Accept if total tank volume includes the freeboard in the detention calculation"
+              "text": "2 minutes"
             },
             {
               "key": "c",
-              "text": "Accept if the desludging interval is used in place of the liquid-detention criterion"
+              "text": "10 minutes"
             },
             {
               "key": "d",
-              "text": "Accept if added depth is assumed to replace the lost hydraulic retention time"
+              "text": "5 minutes"
             }
           ],
           "answer": "a",
-          "explanation": "A septic tank needs liquid settling and retention plus separate solids storage; a stray 30-minute statement does not establish adequate performance. EPA Onsite Manual (2002), section 4.6.2, discusses much longer liquid-detention approaches. The defective septic point must not be silently reclassified as a grit-chamber question.<p>Source note: Page 25 point 64 conflicts with page 24 point 58. Thirty minutes is not adopted as a general septic-tank requirement.</p><p>Capsule 4th ed., p. 25; topic 6 point 64.</p>",
+          "explanation": "For this design assumption, the detention period in a septic tank is taken as 30 minutes, much longer than the few minutes that would be too short for the solids to settle.<p>Capsule 4th ed., p. 25; topic 6 point 64.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3625,32 +3625,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00066",
           "src": "CAP4-06-00066",
-          "text": "A stream DO measurement is 4.0 mg/L. Can that single value certify survival and healthy growth of every aquatic species?",
+          "text": "The minimum amount of DO required for the survival of aquatic animals is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Yes; meeting a daytime value establishes that the predawn minimum also meets it"
+              "text": "8 mg/L"
             },
             {
               "key": "b",
-              "text": "No; a single universal oxygen-saturation percentage should replace species-specific criteria"
+              "text": "12 mg/L"
             },
             {
               "key": "c",
-              "text": "Yes; the 4.0 mg/L benchmark applies equally to every species and life stage"
+              "text": "1 mg/L"
             },
             {
               "key": "d",
-              "text": "No; species, life stage, temperature and exposure duration matter"
+              "text": "4 mg/L"
             }
           ],
           "answer": "d",
-          "explanation": "EPA CADDIS Dissolved Oxygen explains differing oxygen requirements and responses among organisms and life stages. A rounded 4 mg/L teaching benchmark is not a universal survival or growth guarantee. Diurnal minima, temperature, exposure duration and other stressors also need assessment.<p>Source note: Corrects page 25 point 65 using EPA CADDIS primary text, accessed 25 September 2026.</p><p>Capsule 4th ed., p. 25; topic 6 point 65.</p>",
+          "explanation": "Fish and other aquatic animals need dissolved oxygen to breathe, so at least 4 mg per litre must be maintained in a stream for their survival.<p>Capsule 4th ed., p. 25; topic 6 point 65.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3663,32 +3663,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00067",
           "src": "CAP4-06-00067",
-          "text": "A project-specific septic-tank drawing adopts 1.20 m operating liquid depth and 0.30 m freeboard. What minimum internal height is needed, ignoring roof and floor thicknesses?",
+          "text": "The minimum depth of a septic tank as per design considerations is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.90 m"
+              "text": "2.5 m"
             },
             {
               "key": "b",
-              "text": "1.56 m"
+              "text": "3.0 m"
             },
             {
               "key": "c",
-              "text": "1.50 m"
+              "text": "1.2 m"
             },
             {
               "key": "d",
-              "text": "1.20 m"
+              "text": "0.6 m"
             }
           ],
           "answer": "c",
-          "explanation": "The internal height to the underside of the roof is liquid depth plus freeboard: \\[1.20 + 0.30 = 1.50\\ \\text{m}\\] Freeboard does not provide useful liquid detention volume. Sludge storage, compartment geometry and structural details require additional checks.<p>Source note: Page 25 point 66&#39;s 1.2 m is explicitly adopted for this exercise; no current Nepal minimum-depth clause has been authenticated.</p><p>Capsule 4th ed., p. 25; topic 6 point 66.</p>",
+          "explanation": "A septic tank should have a depth of at least 1.2 m, plus freeboard, so that there is room for settling, sludge storage and a clear liquid zone.<p>Capsule 4th ed., p. 25; topic 6 point 66.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3701,32 +3701,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00068",
           "src": "CAP4-06-00068",
-          "text": "Which classical model predicts a downstream oxygen-deficit curve by balancing first-order biochemical deoxygenation with atmospheric reaeration?",
+          "text": "The oxygen sag curve was developed by the ______ method.",
           "options": [
             {
               "key": "a",
-              "text": "Hazen surface-overflow model"
+              "text": "Hardy Cross"
             },
             {
               "key": "b",
-              "text": "Streeter-Phelps model"
+              "text": "Streeter–Phelps"
             },
             {
               "key": "c",
-              "text": "Hardy Cross loop correction"
+              "text": "Hazen–Williams"
             },
             {
               "key": "d",
-              "text": "Manning uniform-flow equation"
+              "text": "Manning"
             }
           ],
           "answer": "b",
-          "explanation": "Streeter-Phelps couples declining biodegradable oxygen demand with reaeration to obtain the oxygen-sag curve. The basic model assumes specified rates and flow conditions; sediment demand, photosynthesis and nitrification require additions where important. It is not a pipe-network or settling-capacity formula.<p>Capsule 4th ed., p. 25; topic 6 point 67.</p>",
+          "explanation": "The Streeter–Phelps equation describes the dissolved oxygen sag curve of a stream by balancing deoxygenation due to BOD against reaeration from the atmosphere.<p>Capsule 4th ed., p. 25; topic 6 point 67.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3744,27 +3744,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00069",
           "src": "CAP4-06-00069",
-          "text": "At one point in a basic Streeter-Phelps calculation, remaining demand L = 10 mg/L and oxygen deficit D = 2 mg/L. Natural-base coefficients are Kd = 0.20/day and Kr = 0.40/day. With constant saturation, what is dD/dt?",
+          "text": "In the Streeter–Phelps oxygen sag curve, the dissolved oxygen deficit results from ______.",
           "options": [
             {
               "key": "a",
-              "text": "+2.8 mg/L/day; DO is falling"
+              "text": "Temperature change only"
             },
             {
               "key": "b",
-              "text": "+0.8 mg/L/day; DO is rising"
+              "text": "Sedimentation of solids"
             },
             {
               "key": "c",
-              "text": "+1.2 mg/L/day; DO is falling"
+              "text": "Deoxygenation by BOD and reaeration from the atmosphere"
             },
             {
               "key": "d",
-              "text": "-1.2 mg/L/day; DO is rising"
+              "text": "Photosynthesis only"
             }
           ],
           "answer": "c",
-          "explanation": "With \\(K_d L = 0.20 \\times 10\\) and \\(K_r D = 0.40 \\times 2\\), the deficit changes as \\[\\begin{aligned} \\dfrac{dD}{dt} &amp;= K_d L - K_r D \\\\ &amp;= 2.0 - 0.8 \\\\ &amp;= 1.2\\ \\text{mg/L/day} \\end{aligned}\\] An increasing deficit means falling DO when saturation is constant. At the critical deficit, these two rates balance; coefficients from a base-10 formulation cannot be inserted unchanged.<p>Capsule 4th ed., p. 25; topic 6 point 67.</p>",
+          "explanation": "The Streeter–Phelps model balances the rate of deoxygenation, as bacteria consume the BOD, against the rate of reaeration from the atmosphere; their difference shapes the oxygen sag curve.<p>Capsule 4th ed., p. 25; topic 6 point 67.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3777,32 +3777,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00071",
           "src": "CAP4-06-00071",
-          "text": "A comparable untreated domestic-wastewater sample has BOD5 = 240 mg/L and COD = 400 mg/L. What ratio and cautious interpretation follow?",
+          "text": "The value of the BOD/COD ratio of domestic wastewater before treatment is ______.",
           "options": [
             {
               "key": "a",
-              "text": "BOD5/COD = 0.60, suggesting a substantial biodegradable fraction"
+              "text": "0.3 to 0.8"
             },
             {
               "key": "b",
-              "text": "BOD5/COD = 0.60, proving zero toxicity to biological treatment"
+              "text": "1.5 to 2.5"
             },
             {
               "key": "c",
-              "text": "BOD5/COD = 1.67, proving all material is biodegradable"
+              "text": "0.1 to 0.2"
             },
             {
               "key": "d",
-              "text": "BOD5/COD = 0.40, proving the water is ready for discharge"
+              "text": "0 to 0.1"
             }
           ],
           "answer": "a",
-          "explanation": "\\[\\dfrac{\\text{BOD}_5}{\\text{COD}} = \\dfrac{240}{400} = 0.60\\] This lies within the source's approximate 0.3–0.8 band. A substantial ratio can support biological treatability, but test conditions, inhibitory compounds and wastewater composition matter. It is neither a universal domestic-sewage interval nor a discharge-compliance test.<p>Capsule 4th ed., p. 25; topic 6 point 69.</p>",
+          "explanation": "Raw domestic wastewater has a BOD to COD ratio of about 0.3 to 0.8, showing that much of its organic matter is biodegradable; treated effluent has a much lower ratio.<p>Capsule 4th ed., p. 25; topic 6 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3815,32 +3815,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00073",
           "src": "CAP4-06-00073",
-          "text": "For an idealized grit calculation, quartz-like particles have specific gravity 2.65 and water density is 1,000 kg/cubic metre. Which particle density and characterization are appropriate?",
+          "text": "Grit is inert matter with a specific gravity of about ______.",
           "options": [
             {
               "key": "a",
-              "text": "377 kg/cubic metre; buoyant particle model"
+              "text": "7.85"
             },
             {
               "key": "b",
-              "text": "1,650 kg/cubic metre; dense mineral grit model"
+              "text": "1.02"
             },
             {
               "key": "c",
-              "text": "3,650 kg/cubic metre; dense mineral grit model"
+              "text": "1.20"
             },
             {
               "key": "d",
-              "text": "2,650 kg/cubic metre; dense mineral grit model"
+              "text": "2.65"
             }
           ],
           "answer": "d",
-          "explanation": "Particle density is specific gravity times the reference water density: \\[2.65 \\times 1{,}000 = 2{,}650\\ \\text{kg/m}^3\\] The density excess is 1,650, not the total density. Real grit includes variable mineral particles and associated organics, so every grit particle does not have exactly this density.<p>Capsule 4th ed., p. 25; topic 6 point 72.</p>",
+          "explanation": "Grit consists of sand, gravel and other heavy inert mineral particles with a specific gravity of about 2.65, much heavier than the organic solids in sewage, so it settles quickly in a grit chamber.<p>Capsule 4th ed., p. 25; topic 6 point 72.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3853,32 +3853,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00074",
           "src": "CAP4-06-00074",
-          "text": "Using the traditional sanitary-engineering meaning of sullage, which stream is included while toilet excreta are excluded?",
+          "text": "Wastewater that comes from kitchens, washing places and wash basins is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Dry screenings removed at a treatment plant"
+              "text": "Industrial waste"
             },
             {
               "key": "b",
-              "text": "Kitchen, washing and washbasin wastewater"
+              "text": "Sullage"
             },
             {
               "key": "c",
-              "text": "Rainfall flowing only from a clean roof"
+              "text": "Storm water"
             },
             {
               "key": "d",
-              "text": "Toilet discharge containing human excreta"
+              "text": "Night soil"
             }
           ],
           "answer": "b",
-          "explanation": "Sullage traditionally means domestic wastewater from washing, bathing and kitchen activities, excluding toilet excreta. It can still contain pathogens, grease and organic load. Some modern reuse rules exclude kitchen water from their greywater definition, so terminology and permitted reuse must be checked separately.<p>Capsule 4th ed., p. 25; topic 6 point 73.</p>",
+          "explanation": "Sullage is the wastewater from kitchens, bathrooms, washing places and wash basins; it contains no human excreta, unlike night soil or sanitary sewage.<p>Capsule 4th ed., p. 25; topic 6 point 73.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3891,32 +3891,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00075",
           "src": "CAP4-06-00075",
-          "text": "A waste is readily biodegradable but also acutely toxic and highly flammable. Which conclusion is defensible before disposal?",
+          "text": "Which of the following is not a characteristic of hazardous waste?",
           "options": [
             {
               "key": "a",
-              "text": "A biological-treatment route makes separate ignitability assessment unnecessary"
+              "text": "Corrosivity"
             },
             {
               "key": "b",
-              "text": "Rapid biodegradation is sufficient to exempt it from hazardous classification"
+              "text": "Toxicity"
             },
             {
               "key": "c",
-              "text": "Biodegradability does not rule out hazardous classification"
+              "text": "Degradability"
             },
             {
               "key": "d",
-              "text": "An organic composition excludes it from criteria intended for metal-bearing wastes"
+              "text": "Ignitability"
             }
           ],
           "answer": "c",
-          "explanation": "Degradability describes transformation potential, not absence of danger. Ignitability, corrosivity, reactivity, toxicity and applicable listings can trigger hazardous-waste controls. A biodegradable substance can still cause harm before or during degradation; the governing legal classification must be applied.<p>Source note: Page 25 point 74 is interpreted as a distinction between degradability and hazard criteria, not proof that degradable waste is safe.</p><p>Capsule 4th ed., p. 25; topic 6 point 74.</p>",
+          "explanation": "Hazardous wastes are identified by ignitability, corrosivity, reactivity and toxicity; being degradable is not one of these characteristics.<p>Capsule 4th ed., p. 25; topic 6 point 74.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3929,32 +3929,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00076",
           "src": "CAP4-06-00076",
-          "text": "A conventional grit-removal design targets particles at least 0.20 mm in diameter under specified density and flow conditions. What does that target actually mean?",
+          "text": "The minimum size of grit particles that can be removed in a grit chamber is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Every particle larger than 0.20 mm is captured regardless of density or flow"
+              "text": "2.0 mm"
             },
             {
               "key": "b",
-              "text": "A selected performance target, not an absolute physical cutoff for every chamber"
+              "text": "0.20 mm"
             },
             {
               "key": "c",
-              "text": "No particle smaller than 0.20 mm can ever be removed by settling"
+              "text": "0.02 mm"
             },
             {
               "key": "d",
-              "text": "Particle diameter alone determines removal independently of hydraulics"
+              "text": "20 mm"
             }
           ],
           "answer": "b",
-          "explanation": "0.20 mm is a conventional target for sand-like grit, but capture depends on settling velocity, density, shape and chamber hydraulics. Finer material may settle, while larger low-density particles may escape. A design should specify an efficiency at a particle class and governing flow, not an exceptionless minimum size.<p>Capsule 4th ed., p. 25; topic 6 point 75.</p>",
+          "explanation": "Grit chambers are designed to remove grit particles of 0.20 mm and larger; finer particles and the lighter organic matter pass on to later treatment.<p>Capsule 4th ed., p. 25; topic 6 point 75.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3967,32 +3967,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00088",
           "src": "CAP4-06-00088",
-          "text": "For positive paired BOD5 and COD measurements, suppose COD/BOD5 lies between 1.25 and 2.50. What is the mathematically equivalent BOD5/COD interval?",
+          "text": "The COD/BOD ratio of domestic sewage is ______.",
           "options": [
             {
               "key": "a",
-              "text": "1.25-2.50"
+              "text": "0.1–0.2"
             },
             {
               "key": "b",
-              "text": "0.30-0.80"
+              "text": "0.3–0.8"
             },
             {
               "key": "c",
-              "text": "0.50-1.25"
+              "text": "5–10"
             },
             {
               "key": "d",
-              "text": "0.40-0.80"
+              "text": "1.25–2.5"
             }
           ],
           "answer": "d",
-          "explanation": "Taking reciprocals reverses positive interval endpoints: \\[\\dfrac{1}{2.50} = 0.40\\] \\[\\dfrac{1}{1.25} = 0.80\\] This differs from the lower bound 0.30 elsewhere in the source. Treatment can change the ratio, so a reciprocal calculation cannot authenticate an unspecified wastewater category or universal range.<p>Source note: Page 25 point 87 says detreated, which is unresolved. The question tests the valid reciprocal relation without silently changing it to untreated or treated.</p><p>Capsule 4th ed., p. 25; topic 6 point 87.</p>",
+          "explanation": "COD covers all chemically oxidisable matter and BOD only the biodegradable part, so COD exceeds BOD; for domestic sewage the COD to BOD ratio is about 1.25 to 2.5.<p>Capsule 4th ed., p. 25; topic 6 point 87.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4005,32 +4005,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00093",
           "src": "CAP4-06-00093",
-          "text": "A wastewater sample contains substantial ammoniacal nitrogen. Which pathway can produce it, rather than proving that all organic matter remains undecomposed?",
+          "text": "The presence of free ammonia in wastewater represents ______.",
           "options": [
             {
               "key": "a",
-              "text": "Complete nitrification of ammonium to nitrate"
+              "text": "Fully oxidised organic matter"
             },
             {
               "key": "b",
-              "text": "Assimilation of ammonium into microbial protein"
+              "text": "Stable treated effluent"
             },
             {
               "key": "c",
-              "text": "Ammonification of organic nitrogen"
+              "text": "Undecomposed organic matter"
             },
             {
               "key": "d",
-              "text": "Air stripping of dissolved ammonia from the liquid"
+              "text": "The presence of chlorine"
             }
           ],
           "answer": "c",
-          "explanation": "Decomposition of nitrogen-containing organic matter can form ammonia/ammonium through ammonification. Other inputs, including industrial sources and urea transformation, can contribute. Historical free-ammonia terminology does not uniquely identify the age of pollution or the undecomposed organic fraction; NH3/NH4+ speciation also depends on pH and temperature.<p>Source note: Corrects page 25 point 94: ammoniacal nitrogen is not proof of exclusively undecomposed organic matter.</p><p>Capsule 4th ed., p. 25; topic 6 point 94.</p>",
+          "explanation": "Free ammonia is the first product of the decomposition of nitrogenous organic matter, so its presence shows recent pollution by organic matter not yet decomposed; nitrates indicate fully oxidised matter.<p>Capsule 4th ed., p. 25; topic 6 point 94.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4043,32 +4043,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00097",
           "src": "CAP4-06-00097",
-          "text": "A plant aerates wastewater with suspended microbial flocs and returns settled biomass from a secondary clarifier. Which process does this describe?",
+          "text": "The activated sludge process is an example of ______ process.",
           "options": [
             {
               "key": "a",
-              "text": "Septic tank: predominantly anaerobic settling and digestion"
+              "text": "An anaerobic suspended growth"
             },
             {
               "key": "b",
-              "text": "Activated sludge: aerobic suspended growth"
+              "text": "An aerobic suspended growth"
             },
             {
               "key": "c",
-              "text": "Chemical precipitation: no biological biomass recycle"
+              "text": "An anaerobic attached growth"
             },
             {
               "key": "d",
-              "text": "Trickling filter: aerobic attached growth"
+              "text": "An aerobic attached growth"
             }
           ],
           "answer": "b",
-          "explanation": "Conventional activated sludge keeps aerobic biomass suspended by mixing and aeration, separates it in a clarifier and returns a controlled portion. Trickling-filter organisms primarily attach to media. Advanced activated-sludge systems may include anoxic or anaerobic zones, but the stated conventional aeration stage is aerobic suspended growth.<p>Capsule 4th ed., p. 25; topic 6 point 98.</p>",
+          "explanation": "In the activated sludge process, aerated wastewater keeps microbial flocs in suspension and settled sludge is returned, so it is an aerobic suspended growth process; a trickling filter is aerobic attached growth.<p>Capsule 4th ed., p. 25; topic 6 point 98.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4081,32 +4081,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00102",
           "src": "CAP4-06-00102",
-          "text": "A historical sanitation report distinguishes night soil from washing wastewater and street refuse. What material does night soil primarily mean?",
+          "text": "Night soil is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Only kitchen wash water"
+              "text": "Kitchen waste water"
             },
             {
               "key": "b",
-              "text": "Collected human excreta"
+              "text": "Human excreta"
             },
             {
               "key": "c",
-              "text": "Only digested industrial sludge"
+              "text": "Garden soil"
             },
             {
               "key": "d",
-              "text": "Only street-sweeping grit"
+              "text": "Street refuse"
             }
           ],
           "answer": "b",
-          "explanation": "Night soil is the traditional term for collected human excreta, especially from systems without water-carriage sewers. The name does not refer to soil collected after dark or certify stabilization. Collection, treatment and disposal still require health and environmental protections.<p>Capsule 4th ed., p. 26; topic 6 point 103.</p>",
+          "explanation": "Night soil is human excreta, historically collected at night in the conservancy system; kitchen waste water is sullage, and street refuse is garbage.<p>Capsule 4th ed., p. 26; topic 6 point 103.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4124,27 +4124,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00106",
           "src": "CAP4-06-00106",
-          "text": "A treatment facility discovers a batch of hazardous industrial residue mixed with ordinary refuse. What is the appropriate management direction?",
+          "text": "Hazardous waste should not be disposed of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Characterize and segregate it for authorized treatment and controlled disposal"
+              "text": "Directly at dumping sites"
             },
             {
               "key": "b",
-              "text": "Select a municipal landfill from the batch's reduced volume after dewatering alone"
+              "text": "After neutralisation"
             },
             {
               "key": "c",
-              "text": "Classify the mixed batch by the larger nonhazardous fraction without characterization"
+              "text": "In secure landfills after treatment"
             },
             {
               "key": "d",
-              "text": "Select biological treatment from the residue's organic content alone"
+              "text": "By controlled incineration"
             }
           ],
           "answer": "a",
-          "explanation": "Hazardous waste requires identification, compatible segregation and an authorized treatment or disposal route. Ordinary dumping, dilution or uncontrolled burning can transfer contaminants to air, soil and water. The appropriate controls depend on the actual hazards and applicable legal requirements.<p>Capsule 4th ed., p. 26; topic 6 point 106.</p>",
+          "explanation": "Hazardous waste can contaminate soil, water and air, so it must not be dumped directly; it is treated, neutralised or incinerated, and the residues go to secure landfills.<p>Capsule 4th ed., p. 26; topic 6 point 106.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4157,32 +4157,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00107",
           "src": "CAP4-06-00107",
-          "text": "A ventilated improved pit latrine has persistent odour despite a 50 mm vent pipe. What review best addresses performance without assuming the diameter is universally adequate?",
+          "text": "The diameter of the vent pipe used in a VIP latrine is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Judge air exchange solely by whether odour can be detected at the vent outlet"
+              "text": "500 mm"
             },
             {
               "key": "b",
-              "text": "Shorten the vent below roof level solely to minimize the visible pipe length"
+              "text": "300 mm"
             },
             {
               "key": "c",
-              "text": "Check airflow, vent dimensions, siting and fly-screen resistance against a suitable design"
+              "text": "50 mm"
             },
             {
               "key": "d",
-              "text": "Increase fly-screen mesh density without checking the resulting pressure loss"
+              "text": "25 mm"
             }
           ],
           "answer": "c",
-          "explanation": "A VIP latrine depends on airflow from the user space through the pit and vent, with an effective fly screen. Vent diameter, height, wind exposure and resistance affect that flow. A bare 50 mm value is not a verified universal design requirement or evidence of adequate ventilation.<p>Source note: Page 26 point 107: the claimed 50 mm VIP vent prescription is unverified and not endorsed. Exact applicable diameter guidance remains for parent reference review.</p><p>Capsule 4th ed., p. 26; topic 6 point 107.</p>",
+          "explanation": "In a ventilated improved pit (VIP) latrine, a vent pipe of 50 mm diameter, fitted with a fly screen, carries the odours from the pit up above the roof.<p>Capsule 4th ed., p. 26; topic 6 point 107.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4195,32 +4195,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00113",
           "src": "CAP4-06-00113",
-          "text": "Effluent leaving a high-rate carbon-removal trickling filter is brownish and still contains appreciable ammonia. What conclusion is defensible?",
+          "text": "The effluent from a high rate trickling filter is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Colour alone is inconclusive, and carbon removal need not provide complete nitrification"
+              "text": "Brown and not fully oxidised"
             },
             {
               "key": "b",
-              "text": "Carbon-removal efficiency determines ammonia removal without a separate process check"
+              "text": "Colourless and sterile"
             },
             {
               "key": "c",
-              "text": "Brown colour is sufficient evidence of nitrification without nitrogen measurements"
+              "text": "Clear and fully nitrified"
             },
             {
               "key": "d",
-              "text": "Remaining ammonia establishes that the biofilm is wholly anaerobic"
+              "text": "Black and septic"
             }
           ],
           "answer": "a",
-          "explanation": "High-rate filters can remove carbonaceous load without fully nitrifying, depending on loading, temperature, oxygen and media. Colour is not a reliable treatment-performance certificate. Sloughed biomass normally needs secondary clarification, and BOD, solids, ammonia and other required endpoints should be measured.<p>Source note: Page 26 points 113/131 are identical; their universal brown-and-incompletely-oxidized description is replaced with a conditional performance question. See EPA Trickling Filters fact sheet, September 2000.</p><p>Capsule 4th ed., p. 26; topic 6 point 113; topic 6 point 131.</p>",
+          "explanation": "A high rate trickling filter takes heavy loads with a short contact time, so its effluent is brownish and not fully oxidised, unlike the well-nitrified effluent of a standard rate filter.<p>Capsule 4th ed., p. 26; topic 6 point 113; topic 6 point 131.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4234,32 +4234,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00117",
           "src": "CAP4-06-00117",
-          "text": "Two otherwise similar streams differ in microbial activity, aquatic plant cover and respiration. Can their self-purification and oxygen behaviour be assumed identical?",
+          "text": "The self-purification process of a stream does not depend on ______.",
           "options": [
             {
               "key": "a",
-              "text": "No; biological activity interacts with physical transport and oxygen exchange"
+              "text": "Aquatic species"
             },
             {
               "key": "b",
-              "text": "Yes; equal turbulence fixes net oxygen balance regardless of respiration"
+              "text": "Temperature"
             },
             {
               "key": "c",
-              "text": "No; increased plant cover can only raise DO, including throughout the night"
+              "text": "Reaeration"
             },
             {
               "key": "d",
-              "text": "Yes; equal discharge and dilution imply equal biochemical oxygen consumption"
+              "text": "Dilution"
             }
           ],
           "answer": "a",
-          "explanation": "Microbial degradation, plant photosynthesis and community respiration influence pollutant transformation and oxygen balance. Temperature, reaeration, flow and sediment also matter. EPA CADDIS describes these interacting pathways; self-purification is neither independent of biota nor permission for untreated discharge.<p>Source note: Corrects page 26 point 118&#39;s independence claim using the biological and physical oxygen-balance distinction.</p><p>Capsule 4th ed., p. 26; topic 6 point 118.</p>",
+          "explanation": "Self-purification of a stream is governed mainly by physical factors, namely dilution, sedimentation, reaeration, temperature and sunlight, rather than by the aquatic species present.<p>Capsule 4th ed., p. 26; topic 6 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4272,32 +4272,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00125",
           "src": "CAP4-06-00125",
-          "text": "Dry dust is captured from steel-manufacturing exhaust before any wet scrubbing. Which description separates its composition from its physical waste form?",
+          "text": "Dust from steel manufacturing is an example of ______ waste.",
           "options": [
             {
               "key": "a",
-              "text": "Predominantly inorganic particulate waste, not inherently aqueous"
+              "text": "Inorganic aqueous"
             },
             {
               "key": "b",
-              "text": "Predominantly inorganic aqueous waste even before contact with scrubbing water"
+              "text": "Organic aqueous"
             },
             {
               "key": "c",
-              "text": "Predominantly inorganic nonhazardous waste without a leachability assessment"
+              "text": "Radioactive"
             },
             {
               "key": "d",
-              "text": "Predominantly organic particulate waste because the furnace burns fuel"
+              "text": "Organic liquid"
             }
           ],
           "answer": "a",
-          "explanation": "Metal and metal-oxide-rich steel dust is predominantly inorganic particulate material. Aqueous describes a water-containing stream: dry collected dust is not automatically aqueous, though wet scrubbing can produce a slurry. Composition and leachability still require hazard assessment; inorganic does not mean harmless.<p>Source note: Page 26 points 126/132 share the inorganic-dust fact; the latter&#39;s aqueous classification is corrected for the explicitly dry collection scenario.</p><p>Capsule 4th ed., p. 26; topic 6 point 126; topic 6 point 132.</p>",
+          "explanation": "Steel dust consists mainly of metal oxides and other mineral matter, so it is inorganic; in the hazardous waste categories it is an example of inorganic aqueous waste.<p>Capsule 4th ed., p. 26; topic 6 point 126; topic 6 point 132.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4311,32 +4311,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00127",
           "src": "CAP4-06-00127",
-          "text": "Sludge initially weighs 1,000 kg at 95% water by mass and is dewatered to 90% water without losing dry solids. Assuming equal bulk density before and after only for a volume estimate, what mass and volume changes follow?",
+          "text": "When the moisture content of sludge is reduced from 95% to 90%, its volume is reduced by ______.",
           "options": [
             {
               "key": "a",
-              "text": "Final mass 500 kg; estimated volume decreases by 50%"
+              "text": "50%"
             },
             {
               "key": "b",
-              "text": "Final mass 950 kg; estimated volume decreases by 5%"
+              "text": "5%"
             },
             {
               "key": "c",
-              "text": "Final mass 900 kg; estimated volume decreases by 10%"
+              "text": "10%"
             },
             {
               "key": "d",
-              "text": "Final mass 100 kg; estimated volume decreases by 90%"
+              "text": "90%"
             }
           ],
           "answer": "a",
-          "explanation": "Dry solids initially total \\[1{,}000 \\times 0.05 = 50\\ \\text{kg}\\] At 10% solids, the final wet mass is \\[\\dfrac{50}{0.10} = 500\\ \\text{kg}\\] so 500 kg of water has been removed. Volume halves only under the equal-bulk-density approximation; moisture percentages alone do not prove an exact 50% volume reduction for unequal densities.<p>Source note: Page 26 point 128&#39;s volume conclusion is explicitly conditional; the mass balance is exact under conserved dry solids.</p><p>Capsule 4th ed., p. 26; topic 6 point 128.</p>",
+          "explanation": "The solids rise from 5% to 10% of the sludge, so the same solids occupy half the volume: \\[\\begin{aligned} V_2 &amp;= V_1 \\times \\dfrac{100 - 95}{100 - 90} \\\\ &amp;= 0.5V_1 \\end{aligned}\\] The volume is reduced by 50%.<p>Capsule 4th ed., p. 26; topic 6 point 128.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4349,32 +4349,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00129",
           "src": "CAP4-06-00129",
-          "text": "A land-treatment plot receives sewage continuously until ponding increases and oxygen transfer into the soil declines. Which mechanism and management response best describe sewage sickness?",
+          "text": "Sewage sickness develops due to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Crop nutrient deficiency alone; increase sewage loading without infiltration checks"
+              "text": "Dilution in a large river"
             },
             {
               "key": "b",
-              "text": "Excessive oxygen transfer alone; increase loading to suppress soil aeration"
+              "text": "Chlorination of sewage"
             },
             {
               "key": "c",
-              "text": "Insufficient surface pressure alone; maintain deeper continuous ponding"
+              "text": "Intermittent application with resting periods"
             },
             {
               "key": "d",
-              "text": "Pore clogging and biological overloading; reassess loading and provide appropriate resting"
+              "text": "Continuous application of sewage on land"
             }
           ],
           "answer": "d",
-          "explanation": "Solids deposition and biological growth can clog pores, reduce infiltration and create oxygen-deficient conditions under excessive continuous loading. Suitable pretreatment, loading control and resting or rotation can help restore function. Suitability also requires soil, groundwater, crop and public-health assessment; resting is not a universal cure.<p>Capsule 4th ed., p. 26; topic 6 point 130; topic 6 point 134.</p>",
+          "explanation": "When sewage is applied continuously to the same land, the soil pores clog and the soil becomes airless and waterlogged; this is sewage sickness, prevented by rest periods and proper loading.<p>Capsule 4th ed., p. 26; topic 6 point 130; topic 6 point 134.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4388,16 +4388,16 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00130",
           "src": "CAP4-06-00130",
-          "text": "A treatment plant reduces the same pollutant concentration from 500 mg/L to 10 mg/L at equal influent and effluent flow, with no bypass. What removal efficiency is obtained?",
+          "text": "If the BOD of sewage is 500 mg/L and that of the effluent from the treatment plant is 10 mg/L, the efficiency of the treatment plant is ______.",
           "options": [
             {
               "key": "a",
-              "text": "2%"
+              "text": "49%"
             },
             {
               "key": "b",
@@ -4405,7 +4405,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             },
             {
               "key": "c",
-              "text": "90%"
+              "text": "2%"
             },
             {
               "key": "d",
@@ -4413,7 +4413,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The removal efficiency is \\[\\begin{aligned} \\eta &amp;= \\dfrac{C_{in} - C_{out}}{C_{in}} = \\dfrac{500 - 10}{500} \\\\ &amp;= 0.98 = 98\\% \\end{aligned}\\] The ratio \\(\\dfrac{10}{500} = 2\\%\\) is the fraction remaining, not removed. Equal flow makes the concentration ratio equal the load ratio; with changed flows, use the influent and effluent pollutant loads.<p>Source note: Page 26 point 133 gives 0.9 incorrectly; independently recomputed corrected fraction is 0.98.</p><p>Capsule 4th ed., p. 26; topic 6 point 133.</p>",
+          "explanation": "The efficiency is the fraction of the BOD removed: \\[\\begin{aligned} \\eta &amp;= \\dfrac{500 - 10}{500} \\\\ &amp;= 0.98 = 98\\% \\end{aligned}\\] The remaining 2% is the fraction left in the effluent.<p>Capsule 4th ed., p. 26; topic 6 point 133.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4431,27 +4431,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-07-00108",
           "src": "CAP4-07-00108",
-          "text": "Continuous application of poorly treated sewage to a land-treatment plot progressively reduces infiltration and aeration. What mechanism is conventionally called sewage sickness?",
+          "text": "Sewage sickness occurs when the voids of the soil get clogged due to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Reversible plant wilting from depletion below field capacity"
+              "text": "Deep ploughing"
             },
             {
               "key": "b",
-              "text": "Shrinkage cracking caused chiefly by prolonged drying"
+              "text": "Intermittent application with rest periods"
             },
             {
               "key": "c",
-              "text": "Clogging by solids and biological growth under overloading"
+              "text": "Continuous application of sewage on the land"
             },
             {
               "key": "d",
-              "text": "Progressive removal of fines by clear-water internal erosion"
+              "text": "Heavy rain on dry land"
             }
           ],
           "answer": "c",
-          "explanation": "Suspended solids and biological growth can clog pores, while persistent wetting creates oxygen-deficient conditions. Loading control, pretreatment, rest periods and drainage help restore performance. This land-treatment failure is not a human infectious-disease diagnosis.<p>Source note: Page 29 point 110: mapped to the exact official land-treatment topic ACiE0605 rather than misclassifying sewage disposal as canal design.</p><p>Capsule 4th ed., p. 29; topic 7 point 110.</p>",
+          "explanation": "Continuous application of sewage on the same land clogs the soil voids with solids and biological growth, cutting off air and drainage; this is sewage sickness, prevented by resting the land.<p>Capsule 4th ed., p. 29; topic 7 point 110.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4464,32 +4464,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00186",
           "src": "CAP4-10-00186",
-          "text": "An anaerobic digester's untreated gas is approximately 65% methane and 35% carbon dioxide by volume. Which description is most appropriate?",
+          "text": "In biomethane, the percentage of carbon dioxide is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Aeration air supplied to an aerobic treatment tank"
+              "text": "90 to 95%"
             },
             {
               "key": "b",
-              "text": "Pure methane with no noncombustible fraction"
+              "text": "70 to 80%"
             },
             {
               "key": "c",
-              "text": "Highly purified biomethane ready by composition alone for every gas grid"
+              "text": "1 to 2%"
             },
             {
               "key": "d",
-              "text": "Raw biogas before carbon-dioxide upgrading"
+              "text": "32 to 43%"
             }
           ],
           "answer": "d",
-          "explanation": "Anaerobic digestion commonly produces methane mixed with substantial carbon dioxide. Upgrading removes much of the CO2 and other impurities to make methane-rich biomethane; the capsule's 32-43% CO2 range fits a raw-biogas context, not a universal upgraded-biomethane specification.<p>Source note: Appendix p42 n11 corrected using the anaerobic-digestion principles in chapter-06-wastewater notes; gas quality requirements remain use-specific.</p><p>Capsule 4th ed., p. 42; rural point 11.</p>",
+          "explanation": "Biomethane (biogas) from anaerobic digestion is mainly methane, with carbon dioxide forming about 32 to 43% of the gas.<p>Capsule 4th ed., p. 42; rural point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4502,32 +4502,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00187",
           "src": "CAP4-10-00187",
-          "text": "For equal gas volumes at the same reference conditions, which change most directly raises the methane fraction of raw biogas during upgrading?",
+          "text": "Apart from carbon dioxide (32 to 43%), the main constituent of biomethane is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Adding carbon dioxide while retaining all methane"
+              "text": "Oxygen"
             },
             {
               "key": "b",
-              "text": "Adding water vapour without changing other constituents"
+              "text": "Hydrogen"
             },
             {
               "key": "c",
-              "text": "Diluting the gas with air to reduce methane concentration"
+              "text": "Nitrogen"
             },
             {
               "key": "d",
-              "text": "Removing carbon dioxide and other specified impurities"
+              "text": "Methane"
             }
           ],
           "answer": "d",
-          "explanation": "Removing non-methane components increases methane's share of the product gas and generally its heating value per unit volume. Upgrading is not simply adding gas pressure or declaring the untreated mixture to be biomethane.<p>Capsule 4th ed., p. 42; rural point 11.</p>",
+          "explanation": "Biomethane is mostly methane, with carbon dioxide making up about 32 to 43% and small amounts of other gases.<p>Capsule 4th ed., p. 42; rural point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4540,32 +4540,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00198",
           "src": "CAP4-10-00198",
-          "text": "A specified septic-tank detail slopes its floor toward an inlet-end sludge collection point. Which interpretation is correct?",
+          "text": "In a septic tank, the floor slope is given towards the ______ side.",
           "options": [
             {
               "key": "a",
-              "text": "Every septic tank requires this slope irrespective of desludging access"
+              "text": "Vent"
             },
             {
               "key": "b",
-              "text": "The outlet must be blocked to prevent any effluent discharge"
+              "text": "Middle"
             },
             {
               "key": "c",
-              "text": "The incoming sewage must flow backward out of the inlet pipe"
+              "text": "Outlet"
             },
             {
               "key": "d",
-              "text": "The floor detail aids solids removal without reversing the intended liquid flow"
+              "text": "Inlet"
             }
           ],
           "answer": "d",
-          "explanation": "A floor slope may direct settled solids toward a chosen collection or desludging point. Liquid-flow direction and retention depend on inlet/outlet levels and tank hydraulics; some designs use different floor arrangements.<p>Source note: Appendix p42 n21: inletward floor slope is a stated design detail, not a universal requirement; nearby wastewater notes emphasise site-specific fittings and sludge storage.</p><p>Capsule 4th ed., p. 42; rural point 21.</p>",
+          "explanation": "The floor of a septic tank slopes towards the inlet end, where most of the sludge settles, so the sludge collects there and can be removed easily.<p>Capsule 4th ed., p. 42; rural point 21.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4578,32 +4578,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00199",
           "src": "CAP4-10-00199",
-          "text": "A drawing explicitly specifies a chamber-floor fall of 1 vertical in 10 horizontal toward a marked collection point over a 2.0 m horizontal run. What fall does that instruction require?",
+          "text": "The bottom of the sewage inlet chamber of a septic tank is laid with an outward slope of ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.20 m"
+              "text": "1 in 10"
             },
             {
               "key": "b",
-              "text": "0.10 m"
+              "text": "1 in 2"
             },
             {
               "key": "c",
-              "text": "2.00 m"
+              "text": "1 in 1000"
             },
             {
               "key": "d",
-              "text": "0.02 m"
+              "text": "1 in 100"
             }
           ],
           "answer": "a",
-          "explanation": "The fall is the horizontal run divided by 10: \\[\\dfrac{2.0}{10} = 0.20\\ \\text{m}\\] a 10% gradient. The arrow and collection point define direction; the word 'outward' alone would not establish which way a septic chamber floor should fall.<p>Source note: Appendix p42 n22: source&#39;s &#39;outward&#39; direction and universal 1:10 claim lack a verified detail. This item tests only the explicit drawing condition; parent should check the applicable septic standard and original context.</p><p>Capsule 4th ed., p. 42; rural point 22.</p>",
+          "explanation": "The bottom of the inlet chamber is laid with an outward slope of 1 in 10 so that the sewage and settled solids move away from the inlet and do not choke it.<p>Capsule 4th ed., p. 42; rural point 22.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4616,7 +4616,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0605",
-          "kind": "calculation"
+          "kind": "recall"
         }
       ]
     },
@@ -4628,27 +4628,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00061",
           "src": "CAP4-06-00061",
-          "text": "An assessment asks how the severity and probability of liver injury change with a contaminant dose and exposure duration. Which task is this, as distinct from choosing a control policy?",
+          "text": "The main objective of toxicity assessment is to estimate ______.",
           "options": [
             {
               "key": "a",
-              "text": "Toxicity and dose-response assessment"
+              "text": "How much of a substance does what kind of harm"
             },
             {
               "key": "b",
-              "text": "Exposure assessment without dose-response evaluation"
+              "text": "The size of the exposed population"
             },
             {
               "key": "c",
-              "text": "Selection of a preferred risk-management policy"
+              "text": "The cost of treatment"
             },
             {
               "key": "d",
-              "text": "Hazard identification without quantifying the dose-effect relation"
+              "text": "The source of the pollutant"
             }
           ],
           "answer": "a",
-          "explanation": "Toxicity assessment relates an agent and dose to adverse effects under defined exposure conditions. Exposure assessment estimates who receives how much; risk characterization combines the evidence. Choosing acceptable control options is risk management, not merely identifying a dose-response relation.<p>Capsule 4th ed., p. 25; topic 6 point 60.</p>",
+          "explanation": "Toxicity (dose–response) assessment relates the amount of a substance taken in to the type and severity of harm it causes; exposure assessment separately estimates who is exposed and how much.<p>Capsule 4th ed., p. 25; topic 6 point 60.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4661,32 +4661,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00070",
           "src": "CAP4-06-00070",
-          "text": "An environmental review of a wastewater plant omits noise because the process treats liquid rather than solid material. Which installation most clearly invalidates that reasoning?",
+          "text": "Which of the following is not generated in waste treatment processes?",
           "options": [
             {
               "key": "a",
-              "text": "Underground storage with no mechanical mixing"
+              "text": "Gases"
             },
             {
               "key": "b",
-              "text": "Covered drying beds with no operating machinery"
+              "text": "Treated effluent"
             },
             {
               "key": "c",
-              "text": "Buried gravity sewers in steady quiet flow"
+              "text": "Sludge"
             },
             {
               "key": "d",
-              "text": "Aeration blowers and motor-driven pumps"
+              "text": "Noise"
             }
           ],
           "answer": "d",
-          "explanation": "Blowers, pumps, generators and handling equipment can generate airborne noise and structure-borne vibration. Liquid treatment does not imply silent operation. Assess sound levels, operating periods, receptors and appropriate controls rather than excluding noise from the assessment.<p>Source note: Page 25 point 68 incorrectly claims that waste-treatment processes do not generate noise.</p><p>Capsule 4th ed., p. 25; topic 6 point 68.</p>",
+          "explanation": "Waste treatment processes produce sludge, gases such as methane, and treated effluent; noise is not one of the products of the treatment processes.<p>Capsule 4th ed., p. 25; topic 6 point 68.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4699,32 +4699,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00077",
           "src": "CAP4-06-00077",
-          "text": "A community strengthens a vulnerable water tank against earthquake loading before an event. Which description best captures this intervention?",
+          "text": "In the context of risk management, mitigation means ______.",
           "options": [
             {
               "key": "a",
-              "text": "Prevention of tectonic earthquake occurrence"
+              "text": "Responding only after a disaster has occurred"
             },
             {
               "key": "b",
-              "text": "Risk transfer that leaves the physical tank unchanged"
+              "text": "Ignoring risks of low probability"
             },
             {
               "key": "c",
-              "text": "Emergency response after the tank has failed"
+              "text": "Transferring the risk by insurance only"
             },
             {
               "key": "d",
-              "text": "Mitigation of consequences without preventing the earthquake"
+              "text": "Implementing strategies to reduce the impact or likelihood of identified risks"
             }
           ],
           "answer": "d",
-          "explanation": "Strengthening reduces susceptibility and potential consequences. UNDRR's disaster-risk terminology describes mitigation as lessening adverse impacts of hazardous events; it need not reduce the probability of the natural event itself. In general project risk management, treatments may address likelihood, consequences or both.<p>Capsule 4th ed., p. 25; topic 6 point 76.</p>",
+          "explanation": "Mitigation is the set of actions taken before an event to reduce the impact or the likelihood of identified risks, such as strengthening buildings; response and recovery follow the event.<p>Capsule 4th ed., p. 25; topic 6 point 76.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4737,32 +4737,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00079",
           "src": "CAP4-06-00079",
-          "text": "Before a flood season, engineers map houses with fragile walls and limited evacuation access to prioritize strengthening. Which disaster-management function does this vulnerability analysis primarily support?",
+          "text": "Vulnerability analysis comes in the ______ part of the disaster management cycle.",
           "options": [
             {
               "key": "a",
-              "text": "Post-event search-and-rescue deployment"
+              "text": "Response"
             },
             {
               "key": "b",
-              "text": "Pre-disaster mitigation and preparedness planning"
+              "text": "Mitigation"
             },
             {
               "key": "c",
-              "text": "Post-event damage and loss accounting"
+              "text": "Recovery"
             },
             {
               "key": "d",
-              "text": "Hydrometeorological hazard forecasting alone"
+              "text": "Reconstruction"
             }
           ],
           "answer": "b",
-          "explanation": "Vulnerability analysis identifies susceptibility and limited coping capacity, informing mitigation priorities and preparedness. It is not confined to one isolated phase: rebuilding, changing exposure and new evidence can require reassessment. Mapping rainfall alone describes hazard rather than vulnerability.<p>Source note: Page 25 point 78&#39;s mitigation association is retained without claiming vulnerability assessment occurs only there.</p><p>Capsule 4th ed., p. 25; topic 6 point 78.</p>",
+          "explanation": "Vulnerability analysis identifies the people, buildings and systems likely to be harmed, so that measures can be taken before a disaster; it belongs to the mitigation part of the cycle.<p>Capsule 4th ed., p. 25; topic 6 point 78.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4775,32 +4775,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00080",
           "src": "CAP4-06-00080",
-          "text": "Under a one-event annual loss model, mitigation changes event probability from 0.02 to 0.01 and event loss from Rs 1,000,000 to Rs 600,000. What expected annual loss remains, without assuming it is acceptable?",
+          "text": "Mitigation denotes the reduction of risk to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Rs 14,000"
+              "text": "The insurance limit"
             },
             {
               "key": "b",
-              "text": "Rs 12,000"
+              "text": "The level before development"
             },
             {
               "key": "c",
-              "text": "Rs 6,000"
+              "text": "A threshold level"
             },
             {
               "key": "d",
-              "text": "Rs 20,000"
+              "text": "Zero in all cases"
             }
           ],
           "answer": "c",
-          "explanation": "The initial and residual expected annual losses, in rupees per year, are \\[0.02 \\times 1{,}000{,}000 = 20{,}000\\] \\[0.01 \\times 600{,}000 = 6{,}000\\] a reduction of Rs 14,000, or 70%. Mitigation can reduce risk without necessarily meeting a threshold; acceptability requires a separately justified criterion.<p>Source note: Page 25 point 79 incorrectly makes reaching a threshold part of every mitigation outcome.</p><p>Capsule 4th ed., p. 25; topic 6 point 79.</p>",
+          "explanation": "Risk can rarely be removed entirely, so mitigation aims to reduce it to a threshold, or acceptable, level.<p>Capsule 4th ed., p. 25; topic 6 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4813,32 +4813,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00082",
           "src": "CAP4-06-00082",
-          "text": "Before approving a proposed wastewater outfall, an assessment compares alternatives, downstream effects, mitigation and residual impacts. What is the principal purpose of this EIA work?",
+          "text": "EIA is a systematic process used to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Guarantee approval regardless of predicted adverse effects"
+              "text": "Estimate the construction cost of a project"
             },
             {
               "key": "b",
-              "text": "Document only positive impacts to support the preferred site"
+              "text": "Audit the accounts of a completed project"
             },
             {
               "key": "c",
-              "text": "Replace effluent compliance checks for the entire operating life"
+              "text": "Design the structure of a project"
             },
             {
               "key": "d",
-              "text": "Inform the decision and design before avoidable harm is locked in"
+              "text": "Evaluate the environmental consequences of a proposed project and mitigate adverse effects"
             }
           ],
           "answer": "d",
-          "explanation": "Environmental impact assessment systematically examines likely consequences and alternatives to improve decisions and mitigation. It must identify adverse and beneficial effects, uncertainties and residual risks. Preparing a report is not automatic project approval or a substitute for implementing and monitoring its commitments.<p>Capsule 4th ed., p. 25; topic 6 point 81.</p>",
+          "explanation": "Environmental impact assessment identifies, predicts and evaluates the environmental effects of a proposed project before approval, and proposes measures to avoid or mitigate the adverse ones.<p>Capsule 4th ed., p. 25; topic 6 point 81.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4851,32 +4851,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00083",
           "src": "CAP4-06-00083",
-          "text": "Which pairing correctly distinguishes Nepal's historical EIA guidelines from its earlier Environment Protection Act, without calling either the current complete legal framework?",
+          "text": "The first environmental act was introduced in Nepal in ______.",
           "options": [
             {
               "key": "a",
-              "text": "National EIA Guidelines: 1993; Environment Protection Act 2053: 1997"
+              "text": "1997"
             },
             {
               "key": "b",
-              "text": "National EIA Guidelines: 1997; Environment Protection Act 2053: 1993"
+              "text": "2019"
             },
             {
               "key": "c",
-              "text": "National EIA Guidelines: 1993; Environment Protection Act 2053: 2019"
+              "text": "1985"
             },
             {
               "key": "d",
-              "text": "National EIA Guidelines: 2019; Environment Protection Act 2053: 1993"
+              "text": "2007"
             }
           ],
           "answer": "a",
-          "explanation": "The 1993 instrument is the National Environmental Impact Assessment Guidelines. The historical Environment Protection Act is 2053 (1997); EPA 2076 (2019), section 47, repealed it. This distinction does not claim that no earlier sectoral environmental legislation existed. The conflicting 1993 Act statement is incorrect.<p>Source note: Corrects page 26 point 140 against page 25 point 82; references: historical EPA 2053/1997 and NPC/IUCN 1994 unofficial English publication of the 1993 guidelines, cited in nearby corrected environment notes.</p><p>Capsule 4th ed., pp. 25, 26; topic 6 point 82; topic 6 point 140.</p>",
+          "explanation": "Nepal's first Environment Protection Act, 2053 BS, was introduced in 1997 AD; it was later replaced by the Environment Protection Act, 2076 BS (2019 AD).<p>Capsule 4th ed., pp. 25, 26; topic 6 point 82; topic 6 point 140.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4896,27 +4896,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00084",
           "src": "CAP4-06-00084",
-          "text": "A report confuses the 2030 Agenda's goals with its targets. Which count correctly identifies the Sustainable Development Goals adopted in 2015?",
+          "text": "The number of goals of sustainable development is ______.",
           "options": [
             {
               "key": "a",
-              "text": "8 goals"
+              "text": "169"
             },
             {
               "key": "b",
-              "text": "169 goals"
+              "text": "8"
             },
             {
               "key": "c",
-              "text": "30 goals"
+              "text": "12"
             },
             {
               "key": "d",
-              "text": "17 goals"
+              "text": "17"
             }
           ],
           "answer": "d",
-          "explanation": "The United Nations 2030 Agenda has 17 Sustainable Development Goals with 169 targets. The earlier Millennium Development Goals numbered eight. Goal 6 concerns water and sanitation, but the water sector also interacts with health, cities, ecosystems and other goals.<p>Source note: UN Department of Economic and Social Affairs, sdgs.un.org/goals, primary page checked 25 September 2026.</p><p>Capsule 4th ed., p. 25; topic 6 point 83.</p>",
+          "explanation": "The 2030 Agenda, adopted in 2015, has 17 Sustainable Development Goals with 169 targets; the earlier Millennium Development Goals numbered 8.<p>Capsule 4th ed., p. 25; topic 6 point 83.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4934,27 +4934,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00086",
           "src": "CAP4-06-00086",
-          "text": "An earthquake triggers a slope failure that blocks a road. Which classification best distinguishes the physical hazards from their trigger relationship?",
+          "text": "Earthquakes and landslides are categorized as ______ hazards.",
           "options": [
             {
               "key": "a",
-              "text": "Slope failure is an exposure category rather than a secondary hazard"
+              "text": "Climatic"
             },
             {
               "key": "b",
-              "text": "Both are classified as technological hazards because a road is affected"
+              "text": "Technological"
             },
             {
               "key": "c",
-              "text": "Earthquake is geological; every landslide is exclusively hydrological"
+              "text": "Biological"
             },
             {
               "key": "d",
-              "text": "Earthquake and slope failure are geological hazards in this event chain"
+              "text": "Geological"
             }
           ],
           "answer": "d",
-          "explanation": "Earthquakes and mass movements are commonly grouped as geological or geophysical hazards. A landslide can also be triggered by rainfall or human disturbance, making multi-hazard interactions important. Trigger, physical process and exposed infrastructure are different dimensions of the assessment.<p>Capsule 4th ed., p. 25; topic 6 point 85.</p>",
+          "explanation": "Hazards arising from processes in the earth's crust and slopes, such as earthquakes and landslides, are geological hazards; epidemics are biological and industrial accidents technological.<p>Capsule 4th ed., p. 25; topic 6 point 85.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4967,20 +4967,20 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00087",
           "src": "CAP4-06-00087",
-          "text": "Under the cited Disaster Risk Reduction and Management Act 2074 framework, which ministry is identified as the Ministry associated with national disaster-risk governance in Nepal?",
+          "text": "In Nepal, the ministry related to national disaster and risk management is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Ministry of Foreign Affairs"
+              "text": "Ministry of Finance"
             },
             {
               "key": "b",
-              "text": "Ministry of Industry, Commerce and Supplies"
+              "text": "Ministry of Physical Infrastructure and Transport"
             },
             {
               "key": "c",
@@ -4988,11 +4988,11 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             },
             {
               "key": "d",
-              "text": "Ministry of Finance"
+              "text": "Ministry of Foreign Affairs"
             }
           ],
           "answer": "c",
-          "explanation": "Section 2(k) of the cited DRRM Act 2074 text identifies the Ministry of Home Affairs. The National Council, Executive Committee and NDRRMA have distinct assigned functions. Naming the lead ministry does not mean it alone performs every local, technical or operational disaster-management task.<p>Source note: Reference is the DRRM Act 2074 English publication incorporating first amendment 2075, as identified in nearby corrected notes; no later-status certification is claimed.</p><p>Capsule 4th ed., p. 25; topic 6 point 86.</p>",
+          "explanation": "The Ministry of Home Affairs leads national disaster risk reduction and management in Nepal; the national disaster risk management authority works under it.<p>Capsule 4th ed., p. 25; topic 6 point 86.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5010,27 +5010,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00089",
           "src": "CAP4-06-00089",
-          "text": "Before deciding which issues a full EIA should study, an authority must determine whether the proposal requires EIA, another study category or no EIA. Which function comes first in this distinction?",
+          "text": "The first step involved in EIA is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Post-approval monitoring"
+              "text": "Environmental auditing"
             },
             {
               "key": "b",
-              "text": "Compliance auditing after construction"
+              "text": "Review of the final report"
             },
             {
               "key": "c",
-              "text": "Scoping"
+              "text": "Monitoring"
             },
             {
               "key": "d",
-              "text": "Screening"
+              "text": "Scoping"
             }
           ],
           "answer": "d",
-          "explanation": "Screening determines the applicable assessment route using legal triggers and project context. Scoping then identifies significant issues and study boundaries for the required EIA. EPR 2077 Rule 3 addresses category selection and Rule 4 formal EIA scoping; the source's unconditional scoping-first statement skips screening.<p>Source note: Corrects page 25 point 88; terminology is not a claim that all administrative workflows use identical stage counts.</p><p>Capsule 4th ed., p. 25; topic 6 point 88.</p>",
+          "explanation": "The EIA process begins with scoping, which identifies the important issues, alternatives and boundaries the assessment must study; monitoring and auditing come after approval.<p>Capsule 4th ed., p. 25; topic 6 point 88.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5043,20 +5043,20 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00091",
           "src": "CAP4-06-00091",
-          "text": "In Nepal's environmental-study framework, what does BES denote, as distinct from IEE and EIA?",
+          "text": "In environmental study, the full form of BES is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Baseline Engineering Survey"
+              "text": "Basic Environmental Survey"
             },
             {
               "key": "b",
-              "text": "Basic Earthquake Screening"
+              "text": "Biological Effluent Study"
             },
             {
               "key": "c",
@@ -5064,11 +5064,11 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             },
             {
               "key": "d",
-              "text": "Biological Effluent Standard"
+              "text": "Baseline Environmental Standard"
             }
           ],
           "answer": "c",
-          "explanation": "BES means Brief Environmental Study. Under the cited EPR 2077 Rule 3 framework, BES, Initial Environmental Examination and Environmental Impact Assessment are separate categories linked to schedules. They are not three names for the same report or mandatory consecutive studies for every proposal.<p>Capsule 4th ed., p. 25; topic 6 point 92.</p>",
+          "explanation": "Nepal's environmental study framework has three levels: the Brief Environmental Study (BES) for small projects, the Initial Environmental Examination (IEE) and the full Environmental Impact Assessment (EIA).<p>Capsule 4th ed., p. 25; topic 6 point 92.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5086,27 +5086,27 @@ window.CIVIL_SET_DATA["capsule-06"] = {
         {
           "id": "CAP4-06-00092",
           "src": "CAP4-06-00092",
-          "text": "A prolonged dry spell increases the flammability of forest vegetation, while an ignition starts a wildfire. Which assessment of drought and fire is sound?",
+          "text": "Forest fire and drought lie in the ______ category of hazards.",
           "options": [
             {
               "key": "a",
-              "text": "Drought concerns water supply only; vegetation moisture is irrelevant to fire"
+              "text": "Biological"
             },
             {
               "key": "b",
-              "text": "Drought is climatic; wildfire risk reflects weather, fuel and ignition factors"
+              "text": "Climatic"
             },
             {
               "key": "c",
-              "text": "Wildfire risk depends on ignition alone; fuel and wind do not modify it"
+              "text": "Technological"
             },
             {
               "key": "d",
-              "text": "Wildfire is exclusively climatic; land use and ignition need not be assessed"
+              "text": "Geological"
             }
           ],
           "answer": "b",
-          "explanation": "Drought is a slow-onset climatic hazard, and dry weather can strongly increase fire danger. Wildfire is often grouped with climatological hazards, but fuel condition, ignition and land management also matter. Hazard taxonomy does not justify attributing every fire exclusively to climate.<p>Source note: Page 25 point 93&#39;s broad grouping is retained with explicit causal qualifications.</p><p>Capsule 4th ed., p. 25; topic 6 point 93.</p>",
+          "explanation": "Drought and forest fire are driven by weather and climate, such as long dry spells, high temperature and wind, so they are placed in the climatic category of hazards.<p>Capsule 4th ed., p. 25; topic 6 point 93.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5119,32 +5119,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00110",
           "src": "CAP4-06-00110",
-          "text": "Residents identify downstream drinking-water users omitted from an EIA draft. How should the final assessment handle their relevant concern?",
+          "text": "Which of the following is not included in an EIA report?",
           "options": [
             {
               "key": "a",
-              "text": "Exclude the users solely because they are outside the construction-site boundary"
+              "text": "Mitigation measures"
             },
             {
               "key": "b",
-              "text": "Assess it, document the response and revise impacts or mitigation where warranted"
+              "text": "Incorporation of all relevant stakeholders' concerns"
             },
             {
               "key": "c",
-              "text": "Adopt the requested project changes without assessing their evidence or effects"
+              "text": "Environmental monitoring plan"
             },
             {
               "key": "d",
-              "text": "Record attendance but defer assessment of the omitted users until after approval"
+              "text": "Description of the project"
             }
           ],
           "answer": "b",
-          "explanation": "Participation can identify missing receptors, pathways and alternatives. The cited EPR 2077 Rules 6 and 7 connect public hearing and suggestions with report preparation. Incorporating concerns means evaluating and transparently responding to them, not necessarily adopting every proposal or omitting disagreements.<p>Source note: Page 26 point 110&#39;s exclusion of relevant stakeholder concerns is corrected.</p><p>Capsule 4th ed., p. 26; topic 6 point 110.</p>",
+          "explanation": "An EIA report describes the project and its environment, predicts the impacts and gives mitigation and monitoring plans; it considers public concerns, but it does not incorporate every stakeholder's concern.<p>Capsule 4th ed., p. 26; topic 6 point 110.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5157,32 +5157,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00115",
           "src": "CAP4-06-00115",
-          "text": "Under the cited Nepal EPR 2077 Rule 3 classification, which set names the three environmental-study categories rather than an arbitrary count of workflow stages?",
+          "text": "In environmental impact assessment, there are ______ types of level.",
           "options": [
             {
               "key": "a",
-              "text": "EIA, detailed EIA and final EIA"
+              "text": "6"
             },
             {
               "key": "b",
-              "text": "Planning, construction and operation"
+              "text": "8"
             },
             {
               "key": "c",
-              "text": "BES, IEE and EIA"
+              "text": "4"
             },
             {
               "key": "d",
-              "text": "Screening, scoping and approval"
+              "text": "2"
             }
           ],
           "answer": "c",
-          "explanation": "Rule 3 links BES, IEE and EIA to Schedules 1, 2 and 3, respectively. Study categories differ from workflow stages such as screening, reporting and monitoring. The source's unexplained four levels is not a verified legal classification, and counting differently grouped process stages cannot establish one.<p>Source note: Page 26 point 116: original intended four-level taxonomy is unidentified; the authored item tests the cited Nepal legal categories instead.</p><p>Capsule 4th ed., p. 26; topic 6 point 116.</p>",
+          "explanation": "Environmental assessment is carried out at four types of level, graded by the size and sensitivity of the proposal, so that small projects need only a brief study and large ones a full assessment.<p>Capsule 4th ed., p. 26; topic 6 point 116.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5195,32 +5195,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00116",
           "src": "CAP4-06-00116",
-          "text": "An earthquake-response exercise explicitly places damaged water systems in Jajarkot district of Karnali Province. Which broad regional assignment is appropriate for this stated scenario?",
+          "text": "The recent disastrous earthquake in Nepal occurred in the ______ region.",
           "options": [
             {
               "key": "a",
-              "text": "Western Nepal, with local damage and access assessments still required"
+              "text": "Western"
             },
             {
               "key": "b",
-              "text": "Outside Nepal, with local damage and access assessments still required"
+              "text": "Southern Terai"
             },
             {
               "key": "c",
-              "text": "Central Nepal, with local damage and access assessments still required"
+              "text": "Central"
             },
             {
               "key": "d",
-              "text": "Eastern Nepal, with local damage and access assessments still required"
+              "text": "Eastern"
             }
           ],
           "answer": "a",
-          "explanation": "Jajarkot in Karnali lies in western Nepal. Regional location guides coordination but does not replace verified local damage, access and aftershock information. A statement saying only recent disastrous earthquake cannot identify a unique event without a date and location; this exercise supplies a location rather than inventing a missing event date.<p>Source note: Page 26 point 117 has no event date, epicentre or magnitude. Jajarkot is an explicitly authored scenario, not a verified reconstruction of the capsule&#39;s intended recent event; parent review remains necessary for that attribution.</p><p>Capsule 4th ed., p. 26; topic 6 point 117.</p>",
+          "explanation": "The recent disastrous earthquake struck the Jajarkot area of Karnali Province, in western Nepal, in November 2023, destroying many houses and water systems.<p>Capsule 4th ed., p. 26; topic 6 point 117.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5233,32 +5233,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00120",
           "src": "CAP4-06-00120",
-          "text": "A proposal is described informally as a large project. What should determine whether full EIA is mandatory under Nepal's applicable framework?",
+          "text": "Environmental Impact Assessment (EIA) is mandatory for ______ projects.",
           "options": [
             {
               "key": "a",
-              "text": "The developer's use of the adjective large in a brochure"
+              "text": "Very small"
             },
             {
               "key": "b",
-              "text": "The assumption that every proposal needs BES, then IEE, then EIA"
+              "text": "Maintenance-only"
             },
             {
               "key": "c",
-              "text": "A universal project-cost threshold applying to every sector"
+              "text": "Household"
             },
             {
               "key": "d",
-              "text": "The legally effective sector, scale, location and other schedule triggers"
+              "text": "Large"
             }
           ],
           "answer": "d",
-          "explanation": "The assessment category follows applicable legal triggers, including sector-specific scope and sensitive locations. Large projects often require EIA, but the adjective alone is not the legal test. EPR 2077 Rule 3 and effective schedules must be checked, including amendments; no unverified current numerical threshold is supplied here.<p>Capsule 4th ed., p. 26; topic 6 point 121.</p>",
+          "explanation": "Large projects can cause significant environmental effects, so a full EIA is mandatory for them; small projects need only a brief environmental study or an initial environmental examination.<p>Capsule 4th ed., p. 26; topic 6 point 121.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5271,32 +5271,32 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00136",
           "src": "CAP4-06-00136",
-          "text": "A government evaluates environmental consequences of a national water-sector policy before individual schemes are selected. How does this differ from project EIA?",
+          "text": "Environmental Impact Assessment (EIA) is most closely related to ______.",
           "options": [
             {
               "key": "a",
-              "text": "SEA combines completed project EIAs without evaluating policy alternatives"
+              "text": "Financial audit"
             },
             {
               "key": "b",
-              "text": "SEA is the scoping stage within every individual project's EIA"
+              "text": "Structural analysis"
             },
             {
               "key": "c",
-              "text": "SEA addresses the strategic policy level; project EIA assesses specific proposals"
+              "text": "Strategic Environmental Assessment (SEA)"
             },
             {
               "key": "d",
-              "text": "SEA is a post-construction compliance audit of individual projects"
+              "text": "Cost–benefit analysis"
             }
           ],
           "answer": "c",
-          "explanation": "Strategic Environmental Assessment considers policies, plans and programmes, including alternatives and cumulative implications at an earlier strategic level. EIA focuses on a specific proposed project. They are related and complementary, not interchangeable acronyms or guarantees of identical legal requirements in every jurisdiction.<p>Capsule 4th ed., p. 26; topic 6 point 139.</p>",
+          "explanation": "Strategic Environmental Assessment applies the same approach as EIA to policies, plans and programmes, so it is the most closely related process; EIA applies it to individual projects.<p>Capsule 4th ed., p. 26; topic 6 point 139.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5309,7 +5309,7 @@ window.CIVIL_SET_DATA["capsule-06"] = {
             ]
           },
           "topic": "ACiE0606",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     }

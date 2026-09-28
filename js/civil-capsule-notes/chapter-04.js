@@ -11,10 +11,10 @@
           {
             "id": "sign-conventions-and-magnitudes",
             "title": "Sign conventions: sagging curvature and signed force components",
-            "html": "<p>Every shear and moment calculation starts from a declared sign convention. Under the common <em>sagging-positive</em> rule, a positive bending moment shortens the top fibres and lengthens the bottom fibres of an initially straight horizontal beam. The elastic curve is then concave upward, which some texts describe as convex downward.</p><p>That statement describes the curvature of the beam itself, not the side of the axis on which a moment diagram is drawn. Plotting habits differ between books, so read the sign labels on any diagram. Hogging moment reverses the picture: tension at the top and compression at the bottom, as at the root of a cantilever carrying downward load.</p><p>A computed component carries a sign only relative to the chosen positive direction. With upward taken positive, a vertical component of −18 kN is a force of 18 kN acting downward. Its <em>magnitude</em> is the non-negative size of the vector, and the minus sign reports direction. In mechanics, magnitude simply means size, not enormity.</p>",
+            "html": "<p>Every shear and moment calculation starts from a declared sign convention. Under the common <em>sagging-positive</em> rule, a positive bending moment shortens the top fibres and lengthens the bottom fibres of an initially straight horizontal beam. The elastic curve is then concave upward, which some texts describe as convex downward.</p><p>That statement describes the curvature of the beam itself, not the side of the axis on which a moment diagram is drawn. Plotting habits differ between books, so read the sign labels on any diagram. Hogging moment reverses the picture: tension at the top and compression at the bottom, as at the root of a cantilever carrying downward load.</p><p>A computed component carries a sign only relative to the chosen positive direction. With upward taken positive, a vertical component of −18 kN is a force of 18 kN acting downward. Its <em>magnitude</em> is the non-negative size of the vector, and the minus sign reports direction. The word magnitude means enormity, that is, size.</p>",
             "points": [
               {
-                "html": "Under the sagging-positive convention a positive moment makes the top fibres shorten and the bottom fibres lengthen, so the beam curves concave upward.",
+                "html": "A positive (sagging) bending moment bends a beam into a shape that is convex downward.",
                 "sources": [
                   {
                     "id": "CAP4-04-00012",
@@ -23,7 +23,7 @@
                 ]
               },
               {
-                "html": "A component of −18 kN with upward positive has magnitude 18 kN and acts downward; magnitude is the non-negative size of the vector.",
+                "html": "The word \"magnitude\" means enormity (size).",
                 "sources": [
                   {
                     "id": "CAP4-05-00070",
@@ -69,7 +69,7 @@
             },
             "points": [
               {
-                "html": "Differentiating \\(M(x) = 18x - 3x^2\\) kN·m gives \\(V = 18 - 6x\\), so the shear at x = 2 m is +6 kN.",
+                "html": "The relation between shear force \\(S\\) and bending moment \\(M\\) is \\(S = \\dfrac{dM}{dx}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00006",
@@ -78,7 +78,7 @@
                 ]
               },
               {
-                "html": "A parabolic shear function \\(V = 12 - x^2\\) kN implies \\(q = -dV/dx = 2x\\) kN/m acting downward, a linearly varying load.",
+                "html": "If the shear force diagram of a simply supported beam is parabolic, the load on the beam is a linearly varying distributed load.",
                 "sources": [
                   {
                     "id": "CAP4-04-00078",
@@ -87,7 +87,7 @@
                 ]
               },
               {
-                "html": "A constant shear of −4 kN over 3 m lowers the moment by 12 kN·m, so +10 kN·m at one section becomes −2 kN·m at the other.",
+                "html": "If the shear force is constant throughout a portion of a beam, the bending moment there is linear.",
                 "sources": [
                   {
                     "id": "CAP4-04-00091",
@@ -96,7 +96,7 @@
                 ]
               },
               {
-                "html": "Where the bending moment is constant over an interval with no concentrated actions, the transverse shear force is zero throughout that interval.",
+                "html": "When the bending moment is constant over a beam, the shear force over the entire span is zero.",
                 "sources": [
                   {
                     "id": "CAP4-04-00014",
@@ -127,7 +127,7 @@
           {
             "id": "zero-shear-extremes-contraflexure",
             "title": "Zero shear, moment extremes and points of contraflexure",
-            "html": "<p>Because shear is the slope of the moment diagram, the sign of \\(V\\) shows whether \\(M\\) is rising or falling. Where shear passes from positive to negative through zero, the moment stops rising and starts falling, which establishes a <em>local maximum</em> of bending moment. A change from negative to positive marks a local minimum.</p><p>Zero shear alone is not enough. The moment may stay constant over a whole interval, or the slope may touch zero without changing sign, giving a stationary point that is not an extremum. Check the sign of the shear on each side.</p><p>A <em>point of contraflexure</em> is a section where the bending moment changes sign. Curvature changes sign with it, so the beam bends the other way beyond that section, yet it stays physically continuous with a continuous slope. Zero moment does not create a hinge, and a moment that only touches zero without changing sign is not contraflexure.</p>",
+            "html": "<p>Because shear is the slope of the moment diagram, the sign of \\(V\\) shows whether \\(M\\) is rising or falling. Where shear passes from positive to negative through zero, the moment stops rising and starts falling, which establishes a <em>local maximum</em> of bending moment. A change from negative to positive marks a local minimum.</p><p>Check the sign of the shear on each side.</p><p>A <em>point of contraflexure</em> is a section where the bending moment changes sign. Curvature changes sign with it, so the beam bends the other way beyond that section, yet it stays physically continuous with a continuous slope. Zero moment does not create a hinge, and a moment that only touches zero without changing sign is not contraflexure.</p>",
             "formulas": [
               {
                 "label": "Curvature follows the bending moment",
@@ -141,7 +141,7 @@
             },
             "points": [
               {
-                "html": "Shear changing from positive to negative through zero establishes a local maximum of bending moment; zero shear without a sign change does not.",
+                "html": "If the shear force along a section of a beam is zero, the bending moment at that section is either maximum or minimum.",
                 "sources": [
                   {
                     "id": "CAP4-04-00002",
@@ -150,7 +150,7 @@
                 ]
               },
               {
-                "html": "Where the moment changes sign smoothly, as from −8 to +6 kN·m, the section is a point of contraflexure with reversed curvature, not a hinge.",
+                "html": "The point of contraflexure is the point where the bending moment changes sign.",
                 "sources": [
                   {
                     "id": "CAP4-04-00071",
@@ -189,7 +189,7 @@
             "moreHtml": "<p>Same-sense case in detail: with both end couples clockwise, moments about the left support give \\(R_B = 2M/L\\) upward and an equal downward reaction at A. Taking sagging as positive, the internal moment \\(M(x) = M - 2Mx/L\\) runs from +M at the left end through zero at midspan to −M at the right end.</p>",
             "points": [
               {
-                "html": "Equal end couples of opposite rotational sense on a pin-roller beam give zero shear and a constant moment of magnitude \\(M\\) at every interior section.",
+                "html": "If a bending moment \\(M\\) acts at each support of a simply supported beam, the SFD has ordinates zero at all sections.",
                 "sources": [
                   {
                     "id": "CAP4-04-00001",
@@ -198,7 +198,7 @@
                 ]
               },
               {
-                "html": "An interior concentrated couple makes the moment jump by its value while the shear remains continuous, since no transverse force acts there.",
+                "html": "An abrupt change in the bending moment diagram occurs where a couple is applied.",
                 "sources": [
                   {
                     "id": "CAP4-04-00011",
@@ -207,7 +207,7 @@
                 ]
               },
               {
-                "html": "A pin-roller beam that ends at its supports, with only transverse span loads and no applied end couples, has zero bending moment at both ends.",
+                "html": "The bending moment at the end supports of a simply supported beam is zero.",
                 "sources": [
                   {
                     "id": "CAP4-04-00049",
@@ -248,7 +248,7 @@
             },
             "points": [
               {
-                "html": "A cantilever with only a tip couple \\(M\\) carries the largest moment at every section, with magnitude \\(M\\), and zero shear.",
+                "html": "A moment \\(M\\) acts at the free end of a cantilever beam. The maximum bending moment developed in the beam is \\(M\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00015",
@@ -257,7 +257,7 @@
                 ]
               },
               {
-                "html": "A 12 kN·m tip couple on a cantilever gives zero shear and a constant 12 kN·m moment along the whole beam.",
+                "html": "A cantilever beam of span \\(L\\) m carries a couple \\(M_0\\) at its free end. The maximum bending moment is \\(M_0\\).",
                 "sources": [
                   {
                     "id": "CAP4-05-00052",
@@ -266,7 +266,7 @@
                 ]
               },
               {
-                "html": "A 9 kN·m couple at a cantilever's midspan produces 0 kN shear and a 9 kN·m moment at the fixed end.",
+                "html": "When a moment \\(M\\) is applied at the centre of a cantilever beam, the shear force and bending moment at the fixed end are respectively \\(0\\) and \\(M\\).",
                 "sources": [
                   {
                     "id": "CAP4-05-00110",
@@ -314,7 +314,7 @@
             },
             "points": [
               {
-                "html": "A central point load \\(P\\) on a simple span gives a bending-moment diagram of two straight segments meeting at a central peak of \\(PL/4\\).",
+                "html": "For a simply supported beam with a concentrated load at the midpoint, the shape of the BMD is a triangle.",
                 "sources": [
                   {
                     "id": "CAP4-04-00026",
@@ -323,7 +323,7 @@
                 ]
               },
               {
-                "html": "For 24 kN at 2 m on a 6 m simple span, the largest moment, 32 kN·m, occurs under the load, 2 m from the left support, not at midspan.",
+                "html": "While designing a beam, the bending moment at the centre is important.",
                 "sources": [
                   {
                     "id": "CAP4-04-00005",
@@ -332,7 +332,7 @@
                 ]
               },
               {
-                "html": "In a determinate beam under a fixed load with self-weight excluded, changing the section depth leaves the bending-moment diagram unchanged.",
+                "html": "The bending moment in a statically determinate beam is not a function of the cross-section of the beam.",
                 "sources": [
                   {
                     "id": "CAP4-05-00046",
@@ -373,7 +373,7 @@
             },
             "points": [
               {
-                "html": "With equal loads \\(P\\) at the third points of a simple span, the shear at \\(L/6\\) from support A is \\(+P\\), the full reaction; between the loads it is zero.",
+                "html": "In a simply supported beam AB of span \\(L\\), two equal point loads \\(P\\) act at a distance \\(L/3\\) from each support. The shear force at a distance \\(L/6\\) from support A is \\(P\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00008",
@@ -382,7 +382,7 @@
                 ]
               },
               {
-                "html": "Two 30 kN loads, each 3 m from a support of a 9 m simple span, give a constant 90 kN·m over the middle third, equal to \\(WL/3\\) with \\(W\\) as each load.",
+                "html": "A simply supported beam carries two equal point loads \\(W\\) at a distance of \\(L/3\\) from either support. The bending moment at mid-span is \\(\\dfrac{WL}{3}\\).",
                 "sources": [
                   {
                     "id": "CAP4-05-00138",
@@ -405,7 +405,7 @@
           {
             "id": "full-span-udl",
             "title": "Full-span UDL on a simple span: linear shear, parabolic moment",
-            "html": "<p>For a simple span carrying uniform intensity \\(w\\) over its full length \\(L\\), each reaction is \\(wL/2\\) and the load to the left of a cut at \\(x\\) is \\(wx\\). The shear is therefore linear with slope \\(-w\\), and the moment is a parabola. The quadratic expression belongs to moment; confusing it with shear is a common slip.</p><ul><li><em>Greatest shear magnitude</em> occurs just inside either support. The signed values there are equal and opposite, \\(+wL/2\\) and \\(-wL/2\\).</li><li><em>Greatest moment</em> occurs where the shear is zero. Symmetry puts that at midspan, so midspan carries the maximum sagging moment and zero shear, which is why the middle region of such a beam is proportioned for bending.</li></ul><p>The midspan location relies on full-span uniform intensity with simple end conditions, not on the words simply supported alone. A moving uniform load longer than the span reproduces this case once it covers the whole span.</p>",
+            "html": "<p>For a simple span carrying uniform intensity \\(w\\) over its full length \\(L\\), each reaction is \\(wL/2\\) and the load to the left of a cut at \\(x\\) is \\(wx\\). The shear is therefore linear with slope \\(-w\\), and the moment is a parabola. The quadratic expression belongs to moment; confusing it with shear is a common slip.</p><ul><li><em>Greatest shear magnitude</em> occurs just inside either support. The signed values there are equal and opposite, \\(+wL/2\\) and \\(-wL/2\\).</li><li><em>Greatest moment</em> occurs where the shear is zero. Symmetry puts that at midspan, so midspan carries the maximum sagging moment and zero shear, which is why the middle region of such a beam is proportioned for bending.</li></ul><p>A moving uniform load longer than the span reproduces this case once it covers the whole span.</p>",
             "formulas": [
               {
                 "label": "Shear under a full-span UDL",
@@ -427,7 +427,7 @@
             "moreHtml": "<p>Derivation: integrating the shear from zero moment at the left support gives \\(M = wLx/2 - wx^2/2\\), which factorises to \\(wx(L-x)/2\\). Setting \\(dM/dx = 0\\) gives \\(x = L/2\\), and substitution returns \\(wL^2/8\\).</p>",
             "points": [
               {
-                "html": "Under a full-span UDL the shear inside the span is \\(V(x) = wL/2 - wx\\), a straight line of slope \\(-w\\); the quadratic \\(wx(L-x)/2\\) is the moment.",
+                "html": "If a simply supported beam carries a UDL across its entire span, the shear force changes linearly.",
                 "sources": [
                   {
                     "id": "CAP4-04-00013",
@@ -436,7 +436,7 @@
                 ]
               },
               {
-                "html": "For 5 kN/m on an 8 m simple span the greatest shear magnitude, 20 kN, occurs just inside either support.",
+                "html": "In a simply supported beam with a UDL, the absolute maximum shear force occurs near the supports.",
                 "sources": [
                   {
                     "id": "CAP4-04-00050",
@@ -445,7 +445,7 @@
                 ]
               },
               {
-                "html": "A 12 kN/m UDL covering a 6 m simple span gives a largest sagging moment of 54 kN·m at midspan.",
+                "html": "When a UDL longer than the span covers a simply supported beam entirely, the maximum bending moment occurs at the centre.",
                 "sources": [
                   {
                     "id": "CAP4-04-00090",
@@ -454,7 +454,7 @@
                 ]
               },
               {
-                "html": "At midspan of a simple span under full-span UDL the beam carries its maximum sagging moment and zero shear.",
+                "html": "The middle span of a simply supported beam is designed to resist bending moment.",
                 "sources": [
                   {
                     "id": "CAP4-05-00108",
@@ -499,7 +499,7 @@
             },
             "points": [
               {
-                "html": "Doubling the span of a simple beam while keeping the UDL intensity per metre unchanged raises the maximum moment from \\(M\\) to 4M.",
+                "html": "A simply supported beam with a UDL of \\(w\\) kN/m over its span \\(L\\) has a maximum bending moment \\(M\\). If the span is doubled, the maximum bending moment becomes 4M.",
                 "sources": [
                   {
                     "id": "CAP4-04-00092",
@@ -508,7 +508,7 @@
                 ]
               },
               {
-                "html": "If the same total load is spread uniformly over twice the span, the maximum moment only doubles, to 2M, because the intensity halves.",
+                "html": "For a simply supported beam with a UDL of intensity \\(w\\), the maximum bending moment is proportional to the square of the span.",
                 "sources": [
                   {
                     "id": "CAP4-04-00093",
@@ -556,7 +556,7 @@
             },
             "points": [
               {
-                "html": "Under a load rising linearly from zero to 12 kN/m over a 6 m simple span, the shear vanishes 3.464 m from the unloaded end, at \\(L/\\sqrt{3}\\).",
+                "html": "A simply supported beam of length \\(a\\) carries a load varying from zero at one end to \\(w\\) at the other. The shear force is zero at a distance \\(\\dfrac{a}{\\sqrt{3}}\\) from the least loaded end.",
                 "sources": [
                   {
                     "id": "CAP4-04-00110",
@@ -575,7 +575,7 @@
           {
             "id": "cantilever-tip-force",
             "title": "Cantilever with a tip force: rectangular shear and linear hogging moment",
-            "html": "<p>Cut a weightless cantilever anywhere and keep the free-side segment. With only a downward tip force \\(P\\), that segment always contains the same force and no distributed load, so the shear diagram is a rectangle of height \\(P\\). Shear carries force units; a height of \\(PL\\) would be a moment, not a shear.</p><p>The lever arm of the tip force, however, grows with distance from the tip, so the moment grows linearly. Under the sagging-positive convention it is hogging: zero at the tip and largest at the fixed end, where its magnitude is \\(PL\\). The moment diagram is a triangle.</p><p>The maximum moment of a beam is therefore not always at its centre; supports and load arrangement decide the critical section. A uniform load on the same cantilever would instead give linearly varying shear and a parabolic moment diagram.</p>",
+            "html": "<p>Cut a weightless cantilever anywhere and keep the free-side segment. With only a downward tip force \\(P\\), that segment always contains the same force and no distributed load, so the shear diagram is a rectangle of height \\(P\\). Shear carries force units; a height of \\(PL\\) would be a moment, not a shear.</p><p>The lever arm of the tip force, however, grows with distance from the tip, so the moment grows linearly. Under the sagging-positive convention it is hogging: zero at the tip and largest at the fixed end, where its magnitude is \\(PL\\). The moment diagram is a triangle.</p><p>A uniform load on the same cantilever would instead give linearly varying shear and a parabolic moment diagram.</p>",
             "formulas": [
               {
                 "label": "Shear under a tip force",
@@ -592,11 +592,11 @@
             ],
             "example": {
               "title": "Worked example: 10 kN at the tip of a 3 m cantilever",
-              "html": "<ol><li>Shear: 10 kN at every section.</li><li>Moment: \\(M(x) = -10(3 - x)\\) kN·m, with x measured from the root.</li><li>At the root: −30 kN·m; at midspan: −15 kN·m; at the tip: zero.</li></ol><p>The moment therefore varies linearly from −30 kN·m at the fixed end to zero, and its largest magnitude, 30 kN·m, is at the fixed end rather than the centre.</p>"
+              "html": "<ol><li>Shear: 10 kN at every section.</li><li>Moment: \\(M(x) = -10(3 - x)\\) kN·m, with x measured from the root.</li><li>At the root: −30 kN·m; at midspan: −15 kN·m; at the tip: zero.</li></ol><p>The moment therefore varies linearly from −30 kN·m at the fixed end to zero, and its largest magnitude, 30 kN·m, is at the fixed end.</p>"
             },
             "points": [
               {
-                "html": "A cantilever carrying only a downward tip force \\(P\\) has a shear diagram that is a rectangle of height \\(P\\) from root to tip.",
+                "html": "The shear force diagram of a cantilever beam with a point load at the free end is a rectangle.",
                 "sources": [
                   {
                     "id": "CAP4-04-00104",
@@ -605,7 +605,7 @@
                 ]
               },
               {
-                "html": "With a 10 kN tip force on a 3 m cantilever, the sagging-positive moment varies linearly from −30 kN·m at the root to zero at the tip.",
+                "html": "When a point load is applied to a cantilever beam at its free end, the bending moment diagram is a triangle.",
                 "sources": [
                   {
                     "id": "CAP4-04-00118",
@@ -614,7 +614,7 @@
                 ]
               },
               {
-                "html": "For the same 10 kN tip force on a 3 m cantilever, the maximum moment magnitude is 30 kN·m at the fixed end, not at the centre.",
+                "html": "A flexural member (beam) is designed for the maximum bending moment at the centre.",
                 "sources": [
                   {
                     "id": "CAP4-05-00111",
@@ -641,10 +641,10 @@
           {
             "id": "suspension-bridge-load-path",
             "title": "Suspension bridges: tension cables, compression towers and walkway profile",
-            "html": "<p>In a conventional suspension bridge, gravity load from the deck travels through <em>hangers</em> in tension into the sagging <em>main cables</em>, also in tension. The cables pass over <em>towers</em>, which act mainly in compression, and end in <em>anchorages</em> that resist the cable pull and deliver it to the ground.</p><p>Describing the system as a set of vertical struts, vertical cantilevers and columns misrepresents this primary load path: the suspended elements work in tension, not as compression members.</p><p>The walkway profile follows from the support geometry. If a walkway hangs at nearly constant offsets below sagging main cables stretched between end anchorages, it sags broadly with the cables. A level deck would need a different geometry, such as hangers of varying length. Type names used in trail-bridge catalogues are conventions of particular manuals; the mechanics alone do not establish any official classification.</p>",
+            "html": "<p>In a conventional suspension bridge, gravity load from the deck travels through <em>hangers</em> in tension into the sagging <em>main cables</em>, also in tension. The cables pass over <em>towers</em>, which act mainly in compression, and end in <em>anchorages</em> that resist the cable pull and deliver it to the ground.</p><p>The walkway profile follows from the support geometry. If a walkway hangs at nearly constant offsets below sagging main cables stretched between end anchorages, it sags broadly with the cables. A level deck would need a different geometry, such as hangers of varying length.</p>",
             "points": [
               {
-                "html": "Deck gravity load passes to tension hangers and main cables, then to compression towers and to anchorages that resist the cable pull.",
+                "html": "As structural components, suspension bridges utilise vertical struts, vertical cantilevers and vertical columns.",
                 "sources": [
                   {
                     "id": "CAP4-10-00179",
@@ -653,7 +653,7 @@
                 ]
               },
               {
-                "html": "A walkway hung at nearly constant offsets below sagging main cables forms a sagging walkway broadly following the main cables.",
+                "html": "A suspended trail bridge is also called a D-type bridge.",
                 "sources": [
                   {
                     "id": "CAP4-10-00193",
@@ -737,181 +737,11 @@
             "tex": "V = 0,\\quad M = M_0"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-end-couples-opposite-senses",
-            "status": "review",
-            "prompt": "A bending moment M at each support of a simply supported beam gives zero shear force at all sections",
-            "html": "<p>True only when the two end couples act in opposite rotational senses, so that they cancel in overall moment equilibrium; the reactions are then zero and the moment is a constant \\(M\\). Couples in the same sense need a reaction pair of \\(2M/L\\), which gives constant nonzero shear.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00001",
-                "label": "p. 15; topic 4 point 1"
-              }
-            ]
-          },
-          {
-            "id": "caution-zero-shear-extremum",
-            "status": "review",
-            "prompt": "Where the shear force is zero, the bending moment is either a maximum or a minimum",
-            "html": "<p>An extremum is established only when the shear changes sign through zero: positive to negative for a maximum, negative to positive for a minimum. Zero shear alone may mark an interval of constant moment or a stationary point that is not an extremum.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00002",
-                "label": "p. 15; topic 4 point 2"
-              }
-            ]
-          },
-          {
-            "id": "caution-midspan-design-shortcut",
-            "status": "corrected",
-            "prompt": "The bending moment at the centre is the value that matters when designing a beam",
-            "html": "<p>Corrected: flexural design uses the largest moment wherever it occurs, read from the moment diagram. A 24 kN load 2 m from one support of a 6 m simple span peaks under the load at 32 kN·m, against 24 kN·m at midspan. Midspan governs many symmetric cases only.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00005",
-                "label": "p. 15; topic 4 point 5"
-              }
-            ]
-          },
-          {
-            "id": "caution-third-point-shear-extraction",
-            "status": "review",
-            "prompt": "Two equal loads P near both supports give a shear force of P at a short distance from support A",
-            "html": "<p>The point-level extraction drops the fractions. The full page text places the loads at \\(L/3\\) from each support and the section at \\(L/6\\) from A. With that geometry each reaction is \\(P\\), and any section before the first load carries shear \\(+P\\).</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00008",
-                "label": "p. 15; topic 4 point 8"
-              }
-            ]
-          },
-          {
-            "id": "caution-zero-end-moments",
-            "status": "review",
-            "prompt": "The bending moment at the end supports of a simply supported beam is zero",
-            "html": "<p>This holds when the beam ends at its supports and carries no applied end couples or overhangs, since ideal pins and rollers supply no reaction couple. An applied end couple produces an equal end moment, and a simple support beneath a continuous beam does not force the internal moment to zero.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00049",
-                "label": "p. 17; topic 4 point 47"
-              }
-            ]
-          },
-          {
-            "id": "caution-varying-load-zero-shear",
-            "status": "review",
-            "prompt": "For a load varying from zero to w over span a, shear is zero at a/√3 from the least loaded end",
-            "html": "<p>The extracted capsule text loses the radical and can be misread as a/3. Equilibrium requires \\(a/\\sqrt{3} \\approx 0.577a\\), which is 3.464 m for a 6 m span; a/3 would be wrong. The printed typography was not checked against the page image.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00110",
-                "label": "p. 19; topic 4 point 109; topic 4 point 121"
-              }
-            ]
-          },
-          {
-            "id": "caution-moment-independent-of-section",
-            "status": "review",
-            "prompt": "Bending moment in a beam is not a function of the cross-section of the beam",
-            "html": "<p>Valid for a statically determinate beam in first-order analysis with the applied loads unchanged. If self-weight changes with the section, or the structure is indeterminate so that member stiffness distributes the load, the moments can change.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00046",
-                "label": "p. 20; topic 5 point 45"
-              }
-            ]
-          },
-          {
-            "id": "caution-magnitude-meaning",
-            "status": "corrected",
-            "prompt": "The word magnitude means enormity",
-            "html": "<p>Corrected: in mechanics, magnitude is the non-negative size of a vector quantity. A component of −18 kN with upward positive has magnitude 18 kN and acts downward; the everyday sense of enormity does not apply.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00070",
-                "label": "p. 21; topic 5 point 68"
-              }
-            ]
-          },
-          {
-            "id": "caution-midspan-designed-for-bending",
-            "status": "review",
-            "prompt": "The middle span of a simply supported beam is designed to resist bending moments",
-            "html": "<p>Midspan carries the maximum sagging moment, with zero shear, under symmetric loading such as a full-span UDL. The words simply supported alone do not fix the critical section: an off-centre point load moves the peak under the load.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00108",
-                "label": "p. 22; topic 5 point 106"
-              }
-            ]
-          },
-          {
-            "id": "caution-cantilever-midspan-couple",
-            "status": "review",
-            "prompt": "A moment M applied at the centre of a cantilever gives a fixed-end shear force and bending moment of 0M",
-            "html": "<p>The run-together 0M is read as zero shear and a moment of magnitude \\(M\\). Equilibrium supports that reading independently: a couple adds no transverse force, so the fixed end supplies only a reaction couple equal to the applied one.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00110",
-                "label": "p. 22; topic 5 point 108"
-              }
-            ]
-          },
-          {
-            "id": "caution-designed-at-centre",
-            "status": "corrected",
-            "prompt": "A flexural member is designed for the maximum bending moment at its centre",
-            "html": "<p>Corrected: the design moment is the maximum wherever it occurs. A cantilever with a tip force has zero moment at the tip and its maximum at the fixed end, 30 kN·m for 10 kN on 3 m, not at the centre.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00111",
-                "label": "p. 22; topic 5 point 109"
-              }
-            ]
-          },
-          {
-            "id": "caution-third-point-midspan-moment",
-            "status": "review",
-            "prompt": "Two equal loads W at L/3 from either support give a midspan bending moment of WL/3",
-            "html": "<p>The load distance comes from the full page text, and the extracted W3L is reconstructed as \\(WL/3\\) by equilibrium, not by image inspection. With \\(W\\) as each load, 30 kN loads on a 9 m span give 90 kN·m, which agrees with \\(WL/3\\).</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00138",
-                "label": "p. 23; topic 5 point 139"
-              }
-            ]
-          },
-          {
-            "id": "caution-suspension-bridge-members",
-            "status": "corrected",
-            "prompt": "Suspension bridges use vertical struts, vertical cantilevers and vertical columns as structural components",
-            "html": "<p>Corrected: the primary load path runs from the deck to tension hangers and main cables, then to compression towers and to anchorages that resist the cable pull. A list of vertical compression members does not describe how the suspended system carries load.</p>",
-            "sources": [
-              {
-                "id": "CAP4-10-00179",
-                "label": "p. 42; rural point 7"
-              }
-            ]
-          },
-          {
-            "id": "caution-d-type-label",
-            "status": "review",
-            "prompt": "Suspended trail bridges are also called D-type",
-            "html": "<p>This designation could not be verified against a trail-bridge manual, so it is not taught as an established classification. The dependable point is mechanical: a walkway hung at nearly constant offsets below sagging cables will itself sag.</p>",
-            "sources": [
-              {
-                "id": "CAP4-10-00193",
-                "label": "p. 42; rural point 17"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Axial-force diagrams, inclined members and frames are not examined; the questions cover horizontal beams under transverse loads and couples only.",
           "Overhanging beams, internal hinges and combined point-plus-distributed loading are not worked, so superposition of mixed load cases needs separate practice.",
-          "The suspension-bridge items describe load paths qualitatively; cable forces, sag ratios and tower design lie outside this capsule coverage.",
-          "The D-type trail-bridge designation remains unverified against any official manual."
+          "The suspension-bridge items describe load paths qualitatively; cable forces, sag ratios and tower design lie outside this capsule coverage."
         ]
       },
       "ACiE0402": {
@@ -941,7 +771,7 @@
             },
             "points": [
               {
-                "html": "A longitudinal stress of 120 MPa with strain 0.0006 in the proportional range gives Young's modulus, 200 GPa.",
+                "html": "The ratio of linear stress to linear strain is called modulus of elasticity.",
                 "sources": [
                   {
                     "id": "CAP4-04-00064",
@@ -950,7 +780,7 @@
                 ]
               },
               {
-                "html": "A shear stress of 30 MPa with an engineering shear strain of 0.0004 rad gives a shear modulus of 75 GPa.",
+                "html": "Modulus of rigidity is defined as the ratio of shear stress to shear strain.",
                 "sources": [
                   {
                     "id": "CAP4-04-00059",
@@ -1017,7 +847,7 @@
                 ]
               },
               {
-                "html": "With \\(E = 150\\) GPa and \\(K = 100\\) GPa, the relation \\(E = 3K(1 - 2\\nu)\\) gives a Poisson's ratio of 0.25.",
+                "html": "The correct formula for Poisson's ratio \\(\\mu\\) based on Young's modulus \\(E\\) and bulk modulus \\(K\\) is \\(\\mu = \\dfrac{3K - E}{6K}\\).",
                 "sources": [
                   {
                     "id": "CAP4-05-00142",
@@ -1067,7 +897,7 @@
             },
             "points": [
               {
-                "html": "A plane whose traction is purely normal is a principal plane with zero shear traction; its normal stress may be major, intermediate or minor.",
+                "html": "The planes which carry no shear stress and are subjected to normal stresses only are known as principal planes.",
                 "sources": [
                   {
                     "id": "CAP4-04-00019",
@@ -1076,7 +906,7 @@
                 ]
               },
               {
-                "html": "The plane carrying the 80 MPa principal stress has 0 MPa shear; the 30 MPa in-plane and 40 MPa absolute maxima act on other planes.",
+                "html": "The shear stress on the principal plane subjected to the maximum principal stress is zero.",
                 "sources": [
                   {
                     "id": "CAP4-04-00020",
@@ -1085,7 +915,7 @@
                 ]
               },
               {
-                "html": "An 80 kN axial tension on 800 mm² gives 100 MPa and a maximum shear of 50 MPa on planes inclined 45 degrees to the transverse section.",
+                "html": "The maximum shear stress induced in a member subjected to an axial load is equal to half of the maximum normal stress.",
                 "sources": [
                   {
                     "id": "CAP4-04-00100",
@@ -1148,7 +978,7 @@
                 ]
               },
               {
-                "html": "For \\(\\sigma_x = 70\\), \\(\\sigma_y = 10\\) and \\(\\tau_{xy} = 40\\) MPa the principal stresses are 40 ± 50, that is 90 MPa and −10 MPa.",
+                "html": "The major principal stress produced by normal stresses \\(f_x\\), \\(f_y\\) and shear stress \\(\\tau\\) is \\(\\dfrac{f_x + f_y}{2}\\) \\(+\\dfrac{\\sqrt{(f_x - f_y)^2 + 4\\tau^2}}{2}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00075",
@@ -1185,7 +1015,7 @@
             },
             "points": [
               {
-                "html": "Full recovery after unloading from a nonlinear part of the curve shows the proportional limit has been passed, while the elastic limit may not have been.",
+                "html": "Hooke's law is valid up to the proportional limit.",
                 "sources": [
                   {
                     "id": "CAP4-04-00070",
@@ -1194,7 +1024,7 @@
                 ]
               },
               {
-                "html": "For conventional ductile mild steel the order is proportional limit, elastic limit, yield, ultimate stress, then fracture.",
+                "html": "The correct sequence of points on the stress–strain curve is proportional limit, elastic limit, yield point, breaking point.",
                 "sources": [
                   {
                     "id": "CAP4-04-00095",
@@ -1203,7 +1033,7 @@
                 ]
               },
               {
-                "html": "A 60 kN peak force on an original area of 200 mm² gives an engineering ultimate tensile strength of 300 MPa.",
+                "html": "The maximum stress that a material can resist is called the ultimate stress.",
                 "sources": [
                   {
                     "id": "CAP4-04-00082",
@@ -1230,7 +1060,7 @@
           {
             "id": "ductility-measures",
             "title": "Ductility: permanent elongation and reduction of area",
-            "html": "<p><em>Ductility</em> is the capacity to undergo appreciable plastic deformation before fracture. Elongation alone does not define it: every material stretches elastically under tension, brittle ones included, and that elastic stretch disappears on unloading. What demonstrates ductility is substantial permanent elongation before rupture.</p><p>Two standard measures compare specimens tested under comparable conditions: the percentage elongation of the gauge length and the percentage reduction of area, where the final area is the minimum area at fracture. The reduction, not the final area itself, is the measure.</p><p>A large reduction of area reflects large local plastic contraction, or necking. It does not by itself imply a higher elastic modulus or ultimate strength: a steep initial slope shows stiffness, and a high fracture stress with negligible extension describes a strong but brittle response.</p>",
+            "html": "<p><em>Ductility</em> is the capacity to undergo appreciable plastic deformation before fracture. What demonstrates ductility is substantial permanent elongation before rupture.</p><p>Two standard measures compare specimens tested under comparable conditions: the percentage elongation of the gauge length and the percentage reduction of area, where the final area is the minimum area at fracture. The reduction, not the final area itself, is the measure.</p><p>A large reduction of area reflects large local plastic contraction, or necking. It does not by itself imply a higher elastic modulus or ultimate strength: a steep initial slope shows stiffness, and a high fracture stress with negligible extension describes a strong but brittle response.</p>",
             "formulas": [
               {
                 "label": "Percentage reduction of area",
@@ -1248,7 +1078,7 @@
             },
             "points": [
               {
-                "html": "Specimens of 100 mm² that fracture at 60 mm² and 75 mm² show reductions of area of 40% and 25%, so the first is more ductile.",
+                "html": "The ductility of a material increases with an increase in the percentage reduction in area of a specimen under a tensile test.",
                 "sources": [
                   {
                     "id": "CAP4-04-00009",
@@ -1257,7 +1087,7 @@
                 ]
               },
               {
-                "html": "Ductility is demonstrated by substantial plastic elongation before fracture, not by recoverable elastic stretch.",
+                "html": "The property by which a material elongates considerably under a tensile load is called ductility.",
                 "sources": [
                   {
                     "id": "CAP4-04-00076",
@@ -1301,7 +1131,7 @@
             },
             "points": [
               {
-                "html": "In elastic torsion of a solid circular shaft the shear stress on the axis is zero, because the radial distance there is zero.",
+                "html": "When a circular shaft is subjected to torsion, the shear stress at the centre of the shaft is zero.",
                 "sources": [
                   {
                     "id": "CAP4-04-00022",
@@ -1310,7 +1140,7 @@
                 ]
               },
               {
-                "html": "A 2 kN·m torque on a 100 mm solid shaft gives a maximum shear of 10.19 MPa at the outer surface, from \\(16T/(\\pi D^3)\\).",
+                "html": "In a circular shaft under torsion, the shear stress is maximum at the outermost fibres.",
                 "sources": [
                   {
                     "id": "CAP4-04-00107",
@@ -1393,92 +1223,7 @@
             "note": "At the outer surface; zero on the axis."
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-principal-stress-mean-term",
-            "status": "corrected",
-            "prompt": "Direct stress σx with shear τxy gives a maximum normal stress of σx + ½√(σx² + 4τxy²)",
-            "html": "<p>Corrected: the mean-stress term is \\(\\sigma_x/2\\), not \\(\\sigma_x\\). The maximum normal stress is</p>\\[\\sigma_1 = \\dfrac{\\sigma_x}{2} + \\dfrac{1}{2}\\sqrt{\\sigma_x^2 + 4\\tau_{xy}^2}\\]<p>With 60 MPa and 40 MPa this gives 30 + 50 = 80 MPa, not 110 MPa.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00054",
-                "label": "p. 17; topic 4 point 52"
-              }
-            ]
-          },
-          {
-            "id": "caution-hooke-limit-state",
-            "status": "review",
-            "prompt": "In limit state design, Hooke's law is valid up to the proportional limit",
-            "html": "<p>The proportional limit is a material property that bounds Hooke's linear law in any analysis; limit-state design neither creates nor extends it. Elastic recovery can continue beyond the proportional limit into nonlinear response.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00070",
-                "label": "p. 17; topic 4 point 68"
-              }
-            ]
-          },
-          {
-            "id": "caution-principal-diagonal-plane",
-            "status": "corrected",
-            "prompt": "The major principal stress is produced on the diagonal plane",
-            "html": "<p>Corrected: principal planes follow from stress transformation and are generally not the geometric diagonals of the element. The restored expression, mean stress plus Mohr radius, gives 90 MPa for \\(\\sigma_x = 70\\), \\(\\sigma_y = 10\\) and \\(\\tau_{xy} = 40\\) MPa, on a plane about 26.6° from the x-plane.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00075",
-                "label": "p. 17; topic 4 point 73"
-              }
-            ]
-          },
-          {
-            "id": "caution-ductility-definition",
-            "status": "corrected",
-            "prompt": "The property in which elongation of a material occurs due to a tensile load is called ductility",
-            "html": "<p>Corrected: elastic elongation occurs in brittle materials too. Ductility is the capacity for substantial plastic, permanent deformation before fracture, measured by percentage elongation or reduction of area.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00076",
-                "label": "p. 17; topic 4 point 74"
-              }
-            ]
-          },
-          {
-            "id": "caution-ultimate-stress-definition",
-            "status": "review",
-            "prompt": "The maximum stress a material can resist is called ultimate stress",
-            "html": "<p>Made precise: engineering ultimate tensile strength is the maximum recorded force divided by the original area, 300 MPa for 60 kN on 200 mm². The fracture force over the necked area is a different, true-stress quantity.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00082",
-                "label": "p. 18; topic 4 point 81"
-              }
-            ]
-          },
-          {
-            "id": "caution-stress-strain-sequence",
-            "status": "review",
-            "prompt": "The sequence of the stress-strain curve is proportional limit, elastic limit, yield point, breaking point",
-            "html": "<p>The capsule list omits the ultimate stress, the peak reached after strain hardening and before necking. The complete idealized order describes a conventional ductile mild-steel curve; many materials do not show sharply separated stages.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00095",
-                "label": "p. 18; topic 4 point 95"
-              }
-            ]
-          },
-          {
-            "id": "caution-bulk-modulus-poisson",
-            "status": "corrected",
-            "prompt": "Poisson's ratio from Young's modulus and bulk modulus is given by an expression in 2K + 1",
-            "html": "<p>Corrected: the isotropic relation is \\(E = 3K(1 - 2\\nu)\\), so \\(\\nu = (3K - E)/(6K)\\), and \\(E = 150\\) GPa with \\(K = 100\\) GPa gives 0.25. The relation containing \\(1 + \\nu\\) is \\(E = 2G(1 + \\nu)\\) and involves the shear modulus, not \\(K\\).</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00142",
-                "label": "p. 23; topic 5 point 143"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Stress transformation at arbitrary plane angles, strain transformation and strain rosettes are not examined numerically.",
           "Torsion is limited to solid circular shafts; hollow shafts, angle of twist, power transmission and non-circular sections are not covered.",
@@ -1495,7 +1240,7 @@
           {
             "id": "flexure-formula",
             "title": "The flexure formula: linear bending stress and the neutral axis",
-            "html": "<p>Elementary beam theory assumes that plane sections remain plane, that the material is homogeneous and linear-elastic, and that deformations are small. Strain then varies linearly with the distance \\(y\\) from the neutral axis, and so does stress. With sagging-positive \\(M\\) and \\(y\\) measured upward, the top fibres are in compression and the bottom fibres in tension.</p><p>The three ratios of the <em>flexure formula</em> tie moment, stress and curvature together. Its stress part gives the bending stress at any fibre; its curvature part is used in the next section.</p><p>At the neutral axis \\(y = 0\\), so the longitudinal bending stress there is zero when no axial force acts. Shear stress need not vanish there when the beam also carries transverse shear.</p><p>Linearity needs elastic behaviour. Pure bending alone does not guarantee it: after yielding the stress distribution becomes nonlinear, approaching rectangular blocks at full plasticity.</p>",
+            "html": "<p>Elementary beam theory assumes that plane sections remain plane, that the material is homogeneous and linear-elastic, and that deformations are small. Strain then varies linearly with the distance \\(y\\) from the neutral axis, and so does stress. With sagging-positive \\(M\\) and \\(y\\) measured upward, the top fibres are in compression and the bottom fibres in tension.</p><p>The three ratios of the <em>flexure formula</em> tie moment, stress and curvature together. Its stress part gives the bending stress at any fibre; its curvature part is used in the next section.</p><p>At the neutral axis \\(y = 0\\), so the longitudinal bending stress there is zero when no axial force acts. Shear stress need not vanish there when the beam also carries transverse shear.</p><p>Linearity needs elastic behaviour.</p>",
             "formulas": [
               {
                 "label": "Flexure formula",
@@ -1518,7 +1263,7 @@
             },
             "points": [
               {
-                "html": "In linear-elastic pure bending with plane sections remaining plane, longitudinal stress varies linearly with distance from the neutral axis.",
+                "html": "In pure bending, the stress distribution across the depth of a beam is linear.",
                 "sources": [
                   {
                     "id": "CAP4-04-00024",
@@ -1527,7 +1272,7 @@
                 ]
               },
               {
-                "html": "With no axial force present, fibres on the neutral axis carry zero longitudinal bending stress, because \\(y = 0\\) there.",
+                "html": "The bending stress on the neutral axis of a beam cross-section is zero.",
                 "sources": [
                   {
                     "id": "CAP4-05-00051",
@@ -1536,7 +1281,7 @@
                 ]
               },
               {
-                "html": "A 40 kN·m moment with \\(I = 80 \\times 10^6\\) mm⁴ gives a bending stress of 50 MPa in a fibre 100 mm from the neutral axis.",
+                "html": "The equation of flexure (bending equation) is \\(\\dfrac{M}{I} = \\dfrac{\\sigma}{y} = \\dfrac{E}{R}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00065",
@@ -1589,7 +1334,7 @@
             },
             "points": [
               {
-                "html": "In newton and millimetre units the elastic section modulus \\(Z = I/c\\) is in mm<sup>3</sup>, while Young's modulus \\(E\\) is in N/mm<sup>2</sup>.",
+                "html": "Section modulus does not have the same unit as modulus of elasticity.",
                 "sources": [
                   {
                     "id": "CAP4-04-00023",
@@ -1598,7 +1343,7 @@
                 ]
               },
               {
-                "html": "For otherwise identical beams, doubling the relevant second moment of area makes the elastic deflection half as large, since deflection varies as \\(1/EI\\).",
+                "html": "The moment of inertia of a section represents its resistance against bending.",
                 "sources": [
                   {
                     "id": "CAP4-01-00154",
@@ -1607,7 +1352,7 @@
                 ]
               },
               {
-                "html": "Doubling the width of a rectangular simply supported beam doubles \\(I = bd^3/12\\), so its central-load deflection becomes one-half of its original value.",
+                "html": "If the width of a simply supported beam carrying an isolated load at its centre is doubled, the deflection at the centre it becomes one-half of its original value.",
                 "sources": [
                   {
                     "id": "CAP4-04-00029",
@@ -1665,7 +1410,7 @@
             },
             "points": [
               {
-                "html": "In a homogeneous rectangular beam carrying shear and moment, zero bending stress and the greatest transverse shear stress both occur at the centroidal neutral axis.",
+                "html": "At the neutral axis of a simply supported beam, the bending stress and shear stress are respectively zero and maximum.",
                 "sources": [
                   {
                     "id": "CAP4-04-00003",
@@ -1674,7 +1419,7 @@
                 ]
               },
               {
-                "html": "A 100 mm by 200 mm rectangle carrying 40 kN has an average shear of 2 MPa and a peak of 3.0 MPa at the neutral axis.",
+                "html": "For a rectangular beam, the maximum shear stress is 1.5 times the average shear stress.",
                 "sources": [
                   {
                     "id": "CAP4-04-00021",
@@ -1737,7 +1482,7 @@
                 ]
               },
               {
-                "html": "A central load \\(W\\) deflects a simple beam 8/5 times as much as the same total load \\(W\\) spread uniformly over the span.",
+                "html": "A simply supported beam A of length \\(l\\) carries a central point load \\(W\\); beam B carries a UDL with total load \\(W\\). The ratio of the maximum deflection of A to that of B is \\(\\dfrac{8}{5}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00028",
@@ -1833,7 +1578,7 @@
             "html": "<p>The <em>conjugate-beam method</em> finds slopes and deflections by loading an imaginary beam of the same span with the \\(M/EI\\) diagram of the real beam. Conjugate shear then equals real slope, and conjugate moment equals real deflection.</p><p>The supports must be translated so that these correspondences hold at every end:</p><table><thead><tr><th scope='col'>Real support</th><th scope='col'>Real slope and deflection</th><th scope='col'>Conjugate support</th></tr></thead><tbody><tr><td>Fixed end</td><td>Both zero</td><td>Free end, with zero shear and moment</td></tr><tr><td>Free end</td><td>Both generally nonzero</td><td>Fixed end</td></tr><tr><td>Simple end support</td><td>Slope nonzero, deflection zero</td><td>Simple end support</td></tr></tbody></table><p>A real fixed end therefore becomes a conjugate free end, and the conjugate of a cantilever is a cantilever fixed at the opposite end.</p>",
             "points": [
               {
-                "html": "A real fixed end, with zero slope and zero deflection, maps to a free end on the conjugate beam, where shear and moment are both zero.",
+                "html": "In the conjugate beam method, a fixed support of the actual beam is considered as a free end in the conjugate beam.",
                 "sources": [
                   {
                     "id": "CAP4-04-00051",
@@ -1874,7 +1619,7 @@
             },
             "points": [
               {
-                "html": "The Euler crippling load is the critical axial compression at which a slender straight column loses lateral stability.",
+                "html": "The nature of the crippling load in a column is compressive.",
                 "sources": [
                   {
                     "id": "CAP4-05-00063",
@@ -1883,7 +1628,7 @@
                 ]
               },
               {
-                "html": "An ideal column fixed against rotation and translation at both ends has effective length \\(L/2\\), so its Euler load is \\(4\\pi^2 EI/L^2\\).",
+                "html": "The effective length of a column of length \\(L\\) with both ends fixed is \\(\\dfrac{L}{2}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00027",
@@ -1892,7 +1637,7 @@
                 ]
               },
               {
-                "html": "A column fixed at the base and free at the top has effective length \\(2L\\) and one-quarter of the pin-ended Euler load.",
+                "html": "If one end of a column is kept free and the other end fixed, the ratio of its effective length to its actual length is 2.",
                 "sources": [
                   {
                     "id": "CAP4-04-00033",
@@ -1957,7 +1702,7 @@
             },
             "points": [
               {
-                "html": "The first root 4.49341 of \\(\\tan\\alpha = \\alpha\\) gives a fixed-pinned Euler load 2.046 times the pinned-pinned value, with \\(K \\approx 0.699\\).",
+                "html": "Euler's buckling load for a column with one end fixed and the other end hinged is \\(\\dfrac{2\\pi^2EI}{L^2}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00074",
@@ -1976,7 +1721,7 @@
           {
             "id": "slenderness-ratio",
             "title": "Slenderness ratio: which axis governs",
-            "html": "<p>Columns are compared by their <em>slenderness ratio</em>, the effective length divided by the radius of gyration \\(r = \\sqrt{I/A}\\). A higher ratio means a lower Euler stress, so the axis with the larger ratio governs buckling.</p><p>Each principal axis generally has its own effective length and its own radius of gyration, so compute the ratio for each axis and take the larger. Dividing by the least radius of gyration is a valid shortcut only when the effective lengths about the two axes are equal.</p>",
+            "html": "<p>Columns are compared by their <em>slenderness ratio</em>, the effective length divided by the radius of gyration \\(r = \\sqrt{I/A}\\). A higher ratio means a lower Euler stress, so the axis with the larger ratio governs buckling.</p><p>Each principal axis generally has its own effective length and its own radius of gyration, so compute the ratio for each axis and take the larger.</p>",
             "formulas": [
               {
                 "label": "Radius of gyration",
@@ -1997,7 +1742,7 @@
             },
             "points": [
               {
-                "html": "Radii of gyration of 50 mm and 30 mm with a common 3000 mm effective length give ratios of 60 and 100, so the governing slenderness is 100.",
+                "html": "Slenderness ratio is the ratio of effective length to least radius of gyration.",
                 "sources": [
                   {
                     "id": "CAP4-05-00119",
@@ -2072,104 +1817,7 @@
             "note": "The larger axis ratio governs."
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-inertia-bending-resistance",
-            "status": "review",
-            "prompt": "Moment of inertia represents resistance against bending",
-            "html": "<p>\\(I\\) is only the geometric part of bending stiffness. Stiffness is \\(EI\\), so the material modulus matters too, and \\(I\\) must be taken about the actual bending axis. For otherwise identical beams, doubling \\(I\\) halves the deflection.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00154",
-                "label": "p. 6; topic 1 point 147"
-              }
-            ]
-          },
-          {
-            "id": "caution-neutral-axis-shear-maximum",
-            "status": "review",
-            "prompt": "For a simply supported beam, the neutral axis is where bending stress is zero and shear stress is maximum",
-            "html": "<p>The shear part depends on the section shape and needs nonzero shear; it holds for a solid rectangle whatever the supports. Pure bending has no transverse shear, and other section shapes can distribute shear differently.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00003",
-                "label": "p. 15; topic 4 point 3"
-              }
-            ]
-          },
-          {
-            "id": "caution-linear-stress-pure-bending",
-            "status": "review",
-            "prompt": "In pure bending, the stress distribution in the beam is linear",
-            "html": "<p>Linear only while the material remains linear-elastic with plane sections staying plane. Pure bending does not exclude yielding; beyond first yield the distribution becomes nonlinear and approaches rectangular plastic stress blocks.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00024",
-                "label": "p. 15; topic 4 point 23"
-              }
-            ]
-          },
-          {
-            "id": "caution-fixed-fixed-effective-length",
-            "status": "review",
-            "prompt": "The equivalent length of a column with both ends fixed is L/2",
-            "html": "<p>The extracted capsule text shows L2, which must be read as \\(L/2\\), not \\(L^2\\) or \\(2L\\). The value applies to an ideal non-sway column with both ends fully fixed; real frame restraint and sway can change the effective-length factor.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00027",
-                "label": "pp. 16, 18; topic 4 point 26; topic 4 point 82"
-              }
-            ]
-          },
-          {
-            "id": "caution-central-versus-spread-ratio",
-            "status": "review",
-            "prompt": "The ratio of maximum deflections for a central load W and the same total load W spread uniformly is 85, as extracted",
-            "html": "<p>The run-together 85 is read as the ratio 8/5, which the standard results confirm independently: \\((1/48)/(5/384) = 384/240\\) for simply supported beams of equal span and \\(EI\\). The central load deflects the beam more.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00028",
-                "label": "p. 16; topic 4 point 27"
-              }
-            ]
-          },
-          {
-            "id": "caution-width-doubling-deflection",
-            "status": "review",
-            "prompt": "Doubling the width of a simply supported beam with a central load changes its central deflection by 21, as extracted",
-            "html": "<p>The run-together 21 is read as one-half. Doubling the width doubles \\(I = bd^3/12\\) about the horizontal axis, and the deflection is inversely proportional to \\(I\\). Doubling the depth instead would reduce the deflection to one-eighth.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00029",
-                "label": "p. 16; topic 4 point 28"
-              }
-            ]
-          },
-          {
-            "id": "caution-fixed-pinned-euler",
-            "status": "review",
-            "prompt": "Euler buckling load for one end fixed and the other hinged is 2π²EI/L²",
-            "html": "<p>This is the conventional approximation using \\(L_e = L/\\sqrt{2}\\). The exact ideal-column eigenvalue gives about \\(2.046\\,\\pi^2 EI/L^2\\), with \\(K \\approx 0.699\\), so note which result a calculation expects.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00074",
-                "label": "p. 17; topic 4 point 72"
-              }
-            ]
-          },
-          {
-            "id": "caution-least-radius-slenderness",
-            "status": "review",
-            "prompt": "Slenderness ratio is the effective length of a column divided by its least radius of gyration",
-            "html": "<p>Using the least radius is correct when the effective lengths about both principal axes are equal. Otherwise compute \\(L_e/r\\) for each axis with its own effective length and take the larger ratio.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00119",
-                "label": "p. 22; topic 5 point 117"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Unsymmetrical bending, composite or reinforced sections and the shear-centre concept are not examined.",
           "Deflections are limited to standard coefficient formulas and the conjugate-beam support rule; double integration and moment-area derivations are not worked.",
@@ -2196,7 +1844,7 @@
             ],
             "points": [
               {
-                "html": "The virtual-displacement principle pairs the actual forces with admissible virtual displacements: infinitesimal movements that respect every support and continuity constraint.",
+                "html": "Virtual work refers to the virtual work done by actual forces during virtual displacements.",
                 "sources": [
                   {
                     "id": "CAP4-04-00025",
@@ -2215,7 +1863,7 @@
           {
             "id": "castigliano-derivative",
             "title": "Castigliano's energy derivative",
-            "html": "<p>Energy methods also give displacements directly. For a conservative, linear-elastic structure, the displacement at a load and in its direction equals the derivative of the strain energy with respect to that load.</p><p>Texts number Castigliano's theorems differently, so identify the derivative rather than rely on the theorem's label. For nonlinear elasticity the load derivative must be taken of the complementary energy instead.</p>",
+            "html": "<p>Energy methods also give displacements directly. For a conservative, linear-elastic structure, the displacement at a load and in its direction equals the derivative of the strain energy with respect to that load.</p><p>For nonlinear elasticity the load derivative must be taken of the complementary energy instead.</p>",
             "formulas": [
               {
                 "label": "Castigliano, linear elastic",
@@ -2229,7 +1877,7 @@
             },
             "points": [
               {
-                "html": "For \\(U = 0.002P^2\\) kN·m, Castigliano's derivative gives \\(\\delta = 0.004P\\) m, a displacement of 20 mm at P = 5 kN.",
+                "html": "Castigliano's first theorem is applicable when the system behaves elastically.",
                 "sources": [
                   {
                     "id": "CAP4-04-00102",
@@ -2278,7 +1926,7 @@
                 ]
               },
               {
-                "html": "A bar elastic up to 200 MPa with E = 200 GPa stores 0.10 N·mm per mm³; over 100000 mm³ its proof resilience is 10 J.",
+                "html": "Proof resilience is the maximum energy that can be stored in a body up to its elastic limit.",
                 "sources": [
                   {
                     "id": "CAP4-04-00061",
@@ -2301,7 +1949,7 @@
           {
             "id": "resilience-definitions",
             "title": "Proof resilience, modulus of resilience and toughness",
-            "html": "<p><em>Resilience</em> is elastic strain energy that is recovered on unloading. Three related terms must be kept apart:</p><ul><li><em>Proof resilience</em>: the maximum strain energy a body can store without permanent deformation. It is a total energy, in joules.</li><li><em>Modulus of resilience</em>: proof resilience per unit volume, for uniform stress up to the elastic limit.</li><li><em>Toughness</em>: the energy absorbed up to fracture, including plastic work, so it extends far beyond the elastic range.</li></ul><p>Proof resilience is an energy, not a load, and the ultimate tensile strength is a stress, not an energy.</p>",
+            "html": "<p><em>Resilience</em> is elastic strain energy that is recovered on unloading. Three related terms must be kept apart:</p><ul><li><em>Proof resilience</em>: the maximum strain energy a body can store without permanent deformation. It is a total energy, in joules.</li><li><em>Modulus of resilience</em>: proof resilience per unit volume, for uniform stress up to the elastic limit.</li><li><em>Toughness</em>: the energy absorbed up to fracture, including plastic work, so it extends far beyond the elastic range.</li></ul>",
             "formulas": [
               {
                 "label": "Proof resilience, uniform stress",
@@ -2311,11 +1959,11 @@
             ],
             "example": {
               "title": "Worked example: a bar elastic to 250 MPa",
-              "html": "<p>Volume 1.00 × 10⁶ mm³, E = 200000 MPa:</p>\\[\\begin{aligned}\\dfrac{\\sigma_e^2}{2E} &amp;= \\dfrac{250^2}{2 \\times 200000} \\\\ &amp;= 0.15625\\ \\text{N/mm}^2\\end{aligned}\\]<p>Multiplying by the volume gives 156250 N·mm, that is 156.25 J. Neither number is a force.</p>"
+              "html": "<p>Volume 1.00 × 10⁶ mm³, E = 200000 MPa:</p>\\[\\begin{aligned}\\dfrac{\\sigma_e^2}{2E} &amp;= \\dfrac{250^2}{2 \\times 200000} \\\\ &amp;= 0.15625\\ \\text{N/mm}^2\\end{aligned}\\]<p>Multiplying by the volume gives 156250 N·mm, that is 156.25 J.</p>"
             },
             "points": [
               {
-                "html": "The maximum energy a spring can store and still recover fully, 18 J in the example, is its proof resilience: a total energy of the whole spring.",
+                "html": "The maximum energy which can be stored in a body up to the elastic limit is called proof resilience.",
                 "sources": [
                   {
                     "id": "CAP4-04-00060",
@@ -2324,7 +1972,7 @@
                 ]
               },
               {
-                "html": "A 1.00 × 10⁶ mm³ bar elastic up to 250 MPa with E = 200000 MPa has a proof resilience of 156.25 J; proof resilience is an energy, not a load.",
+                "html": "The maximum load a beam can sustain before permanent deformation is called proof resilience.",
                 "sources": [
                   {
                     "id": "CAP4-05-00127",
@@ -2347,7 +1995,7 @@
           {
             "id": "sudden-loading-energy",
             "title": "Suddenly applied loads: twice the displacement, four times the energy",
-            "html": "<p>A load applied suddenly and then maintained, with no drop height, does work \\(P\\delta\\) from the first instant, while the spring stores only \\(k\\delta^2/2\\). Equating the two at the first peak of an undamped linear system gives twice the static displacement.</p><p>Because stored energy grows with the square of displacement, the peak energy is four times the gradual-load value, and the peak stress is twice the static stress.</p><p>The factor four is the transient peak of this idealized model. Damping lets the motion settle at the static displacement, a finite rise time lowers the peak, yielding breaks the linear assumption, and a load dropped from a height adds kinetic energy.</p>",
+            "html": "<p>A load applied suddenly and then maintained, with no drop height, does work \\(P\\delta\\) from the first instant, while the spring stores only \\(k\\delta^2/2\\). Equating the two at the first peak of an undamped linear system gives twice the static displacement.</p><p>Because stored energy grows with the square of displacement, the peak energy is four times the gradual-load value, and the peak stress is twice the static stress.</p>",
             "formulas": [
               {
                 "label": "Peak displacement, zero-drop step load",
@@ -2364,7 +2012,7 @@
             },
             "points": [
               {
-                "html": "A 2 kN force applied suddenly to an undamped 100 kN/m spring peaks at 0.04 m and stores 80 J, four times the 20 J of gradual loading.",
+                "html": "The strain energy stored in a body by a suddenly applied load, compared with the same load applied gradually, is four times.",
                 "sources": [
                   {
                     "id": "CAP4-04-00117",
@@ -2373,7 +2021,7 @@
                 ]
               },
               {
-                "html": "For the same force, peak stored energy under a sudden zero-drop step is 4 times that under gradual loading; this is a transient peak of the undamped model.",
+                "html": "The ratio of strain energy stored in a body due to a suddenly applied load to that due to a gradually applied load is 4.",
                 "sources": [
                   {
                     "id": "CAP4-05-00097",
@@ -2413,7 +2061,7 @@
             },
             "points": [
               {
-                "html": "Two internally determinate subtrusses of 7 and 9 members joined by three independent bars form a compound truss of 19 members.",
+                "html": "If \\(m_1\\) and \\(m_2\\) are the members of the two individual trusses of a compound truss, the truss is statically determinate if \\(m = m_1 + m_2 + 3\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00068",
@@ -2422,7 +2070,7 @@
                 ]
               },
               {
-                "html": "Three mutually parallel connecting bars satisfy the member count but can leave a relative transverse mechanism, so the count alone does not prove stability.",
+                "html": "Two simple trusses having 7 and 9 members are combined into a compound truss. For the compound truss to be statically determinate, its total number of members should be 19.",
                 "sources": [
                   {
                     "id": "CAP4-04-00069",
@@ -2431,7 +2079,7 @@
                 ]
               },
               {
-                "html": "A plane truss with seven joints and three independent restraints has \\(2j - r = 11\\) free nodal displacement coordinates.",
+                "html": "The degree of kinematic indeterminacy of a pin-jointed plane frame is \\(2j - 3\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00103",
@@ -2458,7 +2106,7 @@
           {
             "id": "indeterminacy-and-stability",
             "title": "Degree of indeterminacy and the limits of counting",
-            "html": "<p>For a planar structure, the degree of static indeterminacy is the number of unknown forces in excess of the independent equilibrium equations. A beam fixed at one end and propped at the other has four reaction components: two forces and a couple at the fixed end, and one vertical force at the prop. Against three equations, one redundant remains, and a compatibility condition such as zero deflection at the prop supplies the missing equation.</p><p>For a connected rigid-jointed plane frame without internal releases, a counting difference of zero is necessary for an ordinary stable determinate frame but not sufficient. Dependent constraints can leave a mechanism in one part while another part is self-stressed, so stability needs a geometric rank check.</p>",
+            "html": "<p>For a planar structure, the degree of static indeterminacy is the number of unknown forces in excess of the independent equilibrium equations. A beam fixed at one end and propped at the other has four reaction components: two forces and a couple at the fixed end, and one vertical force at the prop. Against three equations, one redundant remains, and a compatibility condition such as zero deflection at the prop supplies the missing equation.</p><p>Dependent constraints can leave a mechanism in one part while another part is self-stressed, so stability needs a geometric rank check.</p>",
             "formulas": [
               {
                 "label": "Planar beam redundants",
@@ -2471,7 +2119,7 @@
             ],
             "points": [
               {
-                "html": "A beam fixed at A and propped at B has four reaction components against three equilibrium equations, so one redundant remains, found from zero deflection at the prop.",
+                "html": "The degree of static indeterminacy of a propped cantilever beam is 1.",
                 "sources": [
                   {
                     "id": "CAP4-04-00089",
@@ -2480,7 +2128,7 @@
                 ]
               },
               {
-                "html": "If \\(3m + r = 3j\\) for a rigid-jointed frame, its determinacy count is zero, but stability still needs verification by a geometric rank check.",
+                "html": "A rigid-jointed plane frame is stable and statically determinate if \\(3m + r = 3j\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00114",
@@ -2506,7 +2154,7 @@
             "html": "<p>Determinate structures accommodate small imposed movements freely. An ideal three-hinged arch under a uniform temperature change adjusts its geometry through small hinge rotations, so in first-order analysis the temperature change adds no stress. The stresses caused by the loads remain.</p><p>Restrained hinges, temperature gradients or significant geometry change need separate treatment. A two-hinged arch, being indeterminate, does develop a thermal thrust.</p>",
             "points": [
               {
-                "html": "A uniform temperature rise produces no additional thermal stress in an ideal three-hinged arch whose hinges rotate freely; the load stresses remain.",
+                "html": "The effect of a temperature change on a load-carrying three-hinged arch is that it produces no stress.",
                 "sources": [
                   {
                     "id": "CAP4-05-00135",
@@ -2561,92 +2209,7 @@
             "tex": "D_c = 3m + r - 3j"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-compound-truss-count",
-            "status": "review",
-            "prompt": "A compound truss is determinate and stable if m = m1 + m2 + 3",
-            "html": "<p>The count is necessary, not sufficient. The three connectors must restrain two relative translations and one relative rotation independently; three parallel bars leave a transverse mechanism even though the member count is satisfied.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00069",
-                "label": "p. 17; topic 4 point 67"
-              }
-            ]
-          },
-          {
-            "id": "caution-castigliano-numbering",
-            "status": "review",
-            "prompt": "Castigliano's first theorem is applicable when the system behaves elastically",
-            "html": "<p>Texts number Castigliano's theorems differently. The result used here, \\(\\delta = \\partial U/\\partial P\\), requires a conservative linear-elastic system; for nonlinear elasticity the load derivative must be taken of the complementary energy.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00102",
-                "label": "p. 18; topic 4 point 102"
-              }
-            ]
-          },
-          {
-            "id": "caution-truss-kinematic-count",
-            "status": "review",
-            "prompt": "The degree of kinematic indeterminacy of a pin-jointed plane frame is 2j − 3",
-            "html": "<p>The general count is 2j − r, where r is the number of independent support restraints. It reduces to 2j − 3 only when exactly three restraints are provided, as for a simply supported plane truss.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00103",
-                "label": "p. 18; topic 4 point 104"
-              }
-            ]
-          },
-          {
-            "id": "caution-frame-count-stability",
-            "status": "corrected",
-            "prompt": "A rigid-jointed plane frame is stable and statically determinate if 3m + r = 3j",
-            "html": "<p>Corrected: the equality only makes the counting difference zero. Dependent constraints can allow a mechanism and a self-stress state together, so stability and determinacy also require a geometric rank check.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00114",
-                "label": "p. 19; topic 4 point 113"
-              }
-            ]
-          },
-          {
-            "id": "caution-sudden-load-factor",
-            "status": "review",
-            "prompt": "Strain energy from a suddenly applied load is four times that from gradual loading",
-            "html": "<p>The factor four is the first transient peak of an undamped linear system under a zero-drop step load. Damping, a finite rise time or yielding change it, and once motion has died away the stored energy equals the gradual value.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00117",
-                "label": "p. 19; topic 4 point 118"
-              }
-            ]
-          },
-          {
-            "id": "caution-proof-resilience-load",
-            "status": "corrected",
-            "prompt": "The maximum load a beam can sustain before permanent deformation is called proof resilience",
-            "html": "<p>Corrected: proof resilience is the maximum recoverable strain energy, measured in joules, not a load. Per unit volume it is the modulus of resilience; the 250 MPa bar example stores 156.25 J.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00127",
-                "label": "p. 23; topic 5 point 126"
-              }
-            ]
-          },
-          {
-            "id": "caution-three-hinged-temperature",
-            "status": "review",
-            "prompt": "Temperature change produces no stress in a load-carrying three-hinged arch",
-            "html": "<p>Only the added stress from a uniform temperature change is zero, in the ideal first-order model with freely rotating hinges. Load stresses remain, and restrained hinges, gradients or large geometry changes need separate analysis.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00135",
-                "label": "p. 23; topic 5 point 136"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "No portal-frame deflection problem is included, although the syllabus lists it; unit-load or energy calculations for frames need separate practice.",
           "Deflections by the unit-load method, the moment-area theorems and the reciprocal theorem are not worked numerically.",
@@ -2666,7 +2229,7 @@
             "html": "<p>An <em>influence line</em> fixes two things, the response type (a reaction, a shear or a bending moment) and the section where it is measured. It then records how that response changes as a single unit load moves across the structure, so its horizontal coordinate is the position of the load.</p><p>A bending-moment diagram does the opposite: it fixes one loading arrangement and plots the moment at every section, so its horizontal coordinate is the position of the section. The two graphs can look alike, which is why confusing them is a classic error.</p><p>Influence lines serve moving loads. An ordinate times a point load gives that load's contribution; the area under a segment times a uniform intensity gives a distributed load's contribution. An envelope for a train of axles needs placement and superposition, not a single reading.</p>",
             "points": [
               {
-                "html": "Recording the bending moment at a fixed section C while a unit axle is placed along the bridge gives the influence line for bending moment at C.",
+                "html": "In an influence line diagram, the section considered remains fixed while the position of the load changes.",
                 "sources": [
                   {
                     "id": "CAP4-04-00073",
@@ -2675,7 +2238,7 @@
                 ]
               },
               {
-                "html": "Plotting moment at one fixed section as a unit point load crosses the span gives an influence line for moment at that section, not a bending-moment diagram.",
+                "html": "The ILD for shear force or bending moment at a section shows the variation of that quantity at the section as a unit load traverses the span from left to right.",
                 "sources": [
                   {
                     "id": "CAP4-05-00137",
@@ -2701,7 +2264,7 @@
             "html": "<p>A cantilever makes influence lines easy to build, because every response at a section C comes from the free-side free body.</p><table><thead><tr><th scope='col'>Response</th><th scope='col'>Unit load between root and C</th><th scope='col'>Unit load between C and the tip</th></tr></thead><tbody><tr><th scope='row'>Vertical support reaction</th><td>+1</td><td>+1</td></tr><tr><th scope='row'>Shear at C</th><td>0</td><td>+1, a rectangle</td></tr><tr><th scope='row'>Moment at C</th><td>0</td><td>Linear, zero at C and largest at the tip</td></tr></tbody></table><p>The vertical reaction always equals the unit load by vertical equilibrium, whereas the support moment varies with the load's lever arm and is linear. A load on the root side of C lies outside the free body and contributes nothing at C. With downward load and sagging-positive moment, the moment ordinates are negative because the cantilever hogs.</p>",
             "points": [
               {
-                "html": "The influence line for a cantilever's upward vertical support reaction is a constant ordinate of +1 over the whole span, a unit rectangle.",
+                "html": "The ILD for the reaction at the fixed support of a cantilever beam is a rectangle of unit ordinate throughout the span.",
                 "sources": [
                   {
                     "id": "CAP4-04-00062",
@@ -2710,7 +2273,7 @@
                 ]
               },
               {
-                "html": "For shear at section C of a cantilever, the ordinate is 0 for a unit load on the root side of C and +1 for a load on the tip side.",
+                "html": "The ILD for shear force at a section of a cantilever is a rectangle of unit ordinate between the free end and the section.",
                 "sources": [
                   {
                     "id": "CAP4-04-00081",
@@ -2719,7 +2282,7 @@
                 ]
               },
               {
-                "html": "The moment influence line at a cantilever section is zero on the fixed-side interval and linear on the free-side interval, growing towards the tip.",
+                "html": "The ILD for bending moment at a section of a cantilever beam, for a moving unit load, is a triangle between the free end and the section.",
                 "sources": [
                   {
                     "id": "CAP4-04-00036",
@@ -2759,7 +2322,7 @@
             ],
             "points": [
               {
-                "html": "A moving UDL longer than a simply supported span gives the absolute maximum bending moment when the load covers the entire span.",
+                "html": "When a UDL longer than the span of a girder moves from left to right, the maximum bending moment at the mid-section occurs when the UDL occupies the whole span.",
                 "sources": [
                   {
                     "id": "CAP4-04-00035",
@@ -2768,7 +2331,7 @@
                 ]
               },
               {
-                "html": "Under wheel loads alone, moment is piecewise linear between wheels, so the largest sagging moment can always be found at a wheel section.",
+                "html": "The maximum bending moment due to a train of wheel loads on a simply supported girder always occurs under a wheel load.",
                 "sources": [
                   {
                     "id": "CAP4-04-00063",
@@ -2817,7 +2380,7 @@
             "moreHtml": "<p>Derivation of the unequal-level result: moments of each half about the crown hinge give \\(V_A(L/2) = Hh_1\\) and \\(V_B(L/2) = Hh_2\\), the crown load having no lever arm. Adding the two and using \\(V_A + V_B = W\\) gives \\(2H(h_1 + h_2)/L = W\\). A squared height sum in the denominator would give force per length, not force.</p>",
             "points": [
               {
-                "html": "The third hinge need not be at the crown: the arch stays a stable determinate three-hinged system if the three hinge locations are noncollinear and restraint is adequate.",
+                "html": "A three-hinged arch is hinged at the supports and anywhere in the arch.",
                 "sources": [
                   {
                     "id": "CAP4-04-00115",
@@ -2826,7 +2389,7 @@
                 ]
               },
               {
-                "html": "With level springings 18 m apart and 90 kN applied 6 m from A, the vertical reactions are 60 kN at A and 30 kN at B, as for a simple beam.",
+                "html": "For an arch of total span \\(2l\\) carrying a load \\(W\\) at a distance \\(a\\) from the left support, the vertical reaction at the right support is \\(\\dfrac{Wa}{2l}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00088",
@@ -2875,7 +2438,7 @@
           {
             "id": "three-hinged-ild-envelope",
             "title": "Three-hinged arch influence lines and the rolling-load envelope",
-            "html": "<p>For a three-hinged arch with level springings and a midspan crown hinge, the thrust equals the crown simple-beam moment divided by the rise for every load position. Its influence line is therefore the crown moment influence line scaled by \\(1/h\\): a triangle whose peak sits at the crown. The ordinate is a dimensionless ratio of thrust to load, not a length or a moment.</p><p>A rolling point load on a symmetric parabolic three-hinged arch produces a bending-moment <em>envelope</em>, the largest moment each section can ever carry. Its peaks lie at the same distance either side of the crown. This is an envelope property under a rolling load, not the location of the maximum for an arbitrary fixed load.</p>",
+            "html": "<p>For a three-hinged arch with level springings and a midspan crown hinge, the thrust equals the crown simple-beam moment divided by the rise for every load position. Its influence line is therefore the crown moment influence line scaled by \\(1/h\\): a triangle whose peak sits at the crown. The ordinate is a dimensionless ratio of thrust to load, not a length or a moment.</p><p>A rolling point load on a symmetric parabolic three-hinged arch produces a bending-moment <em>envelope</em>, the largest moment each section can ever carry. Its peaks lie at the same distance either side of the crown.</p>",
             "formulas": [
               {
                 "label": "Peak of the thrust influence line",
@@ -2892,7 +2455,7 @@
             },
             "points": [
               {
-                "html": "For a 24 m three-hinged arch with a 6 m crown rise, the thrust influence line peaks at 1.00, at the crown, from \\(L/(4h)\\).",
+                "html": "The ILD for horizontal thrust of a three-hinged arch of span \\(L\\) and rise \\(h\\) is a triangle whose maximum ordinate at the centre equals \\(\\dfrac{L}{4h}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00052",
@@ -2901,7 +2464,7 @@
                 ]
               },
               {
-                "html": "Under a rolling point load on a symmetric three-hinged parabolic arch, the positive moment envelope peaks at a distance \\(L/(2\\sqrt{3})\\) on either side of the crown.",
+                "html": "The maximum bending moment in a three-hinged arch under a point load occurs on either side of its crown at \\(\\dfrac{L}{2\\sqrt{3}}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00037",
@@ -2941,7 +2504,7 @@
             ],
             "points": [
               {
-                "html": "Bending vanishes at an arch section when the thrust-line ordinate \\(M_0/H\\) equals the rib ordinate y.",
+                "html": "The bending moment in an arch is zero when the line of thrust coincides with the axis of the arch.",
                 "sources": [
                   {
                     "id": "CAP4-04-00041",
@@ -2950,7 +2513,7 @@
                 ]
               },
               {
-                "html": "Projecting the section resultant onto the tangent gives the tangential component \\(H\\cos\\theta + V\\sin\\theta\\), the normal thrust.",
+                "html": "The normal thrust at any section along the tangent to the centre line of an arch is \\(H\\cos\\theta + V\\sin\\theta\\).",
                 "sources": [
                   {
                     "id": "CAP4-05-00109",
@@ -2959,7 +2522,7 @@
                 ]
               },
               {
-                "html": "Under a full-span horizontal UDL, radial shear in a three-hinged parabolic arch is zero throughout, springings included; the global vertical component is not.",
+                "html": "The maximum shear force in a three-hinged parabolic arch usually occurs at the springings.",
                 "sources": [
                   {
                     "id": "CAP4-04-00096",
@@ -3011,7 +2574,7 @@
             },
             "points": [
               {
-                "html": "A two-hinged arch has four reaction components against three equilibrium equations; compatibility of the restrained horizontal span determines its thrust.",
+                "html": "A two-hinged arch is a statically indeterminate structure.",
                 "sources": [
                   {
                     "id": "CAP4-04-00038",
@@ -3020,7 +2583,7 @@
                 ]
               },
               {
-                "html": "Semicircular two-hinged arches of radii 5, 7.5 and 10 m under the same crown force have thrusts in the ratio 1 : 1 : 1, because \\(H = P/\\pi\\).",
+                "html": "Two-hinged semicircular arches A, B and C of radii 5 m, 7.5 m and 10 m carry the same concentrated crown load \\(W\\). The ratio of their horizontal thrusts is 1: 1: 1.",
                 "sources": [
                   {
                     "id": "CAP4-04-00047",
@@ -3029,7 +2592,7 @@
                 ]
               },
               {
-                "html": "A two-hinged semicircular arch of radius 6 m carrying 3 kN/m over its left half develops a horizontal thrust of 3.82 kN.",
+                "html": "The horizontal thrust in a two-hinged semicircular arch of radius \\(R\\) subjected to a UDL of \\(w\\) per unit length over the left half span is \\(\\dfrac{2wR}{3\\pi}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00046",
@@ -3038,7 +2601,7 @@
                 ]
               },
               {
-                "html": "For a moving point load, the reaction lines of a two-hinged semicircular arch intersect on a horizontal line at height \\(\\pi R/2\\) above the springing line.",
+                "html": "The locus of the reaction of a two-hinged semicircular arch under a moving point load is a straight line.",
                 "sources": [
                   {
                     "id": "CAP4-04-00111",
@@ -3109,128 +2672,7 @@
             "tex": "H = \\dfrac{2wR}{3\\pi}"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-unequal-springings-thrust",
-            "status": "review",
-            "prompt": "Three-hinged arch with supports at heights h1 and h2 and a central load W: thrust WL divided by a function of h1 + h2",
-            "html": "<p>The printed denominator cannot be decoded reliably from the extracted text. Equilibrium, with \\(h_1\\) and \\(h_2\\) measured from each springing up to the crown, gives \\(H = WL/[2(h_1 + h_2)]\\); a squared height sum would give wrong units.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00034",
-                "label": "p. 16; topic 4 point 33"
-              }
-            ]
-          },
-          {
-            "id": "caution-rolling-load-envelope",
-            "status": "review",
-            "prompt": "Maximum bending moment in a three-hinged arch under point load occurs on either side of the crown at a fixed distance",
-            "html": "<p>The \\(L/(2\\sqrt{3})\\) result needs a symmetric parabolic arch with level supports and a midspan crown hinge, and it describes the envelope under a rolling point load. It is not the maximum-moment location for an arbitrary fixed point load.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00037",
-                "label": "p. 16; topic 4 point 36"
-              }
-            ]
-          },
-          {
-            "id": "caution-thrust-hinge-axis",
-            "status": "corrected",
-            "prompt": "In a two-hinged arch, the moment is zero where the thrust axis and the hinge axis coincide",
-            "html": "<p>Corrected: bending vanishes where the line of thrust passes through the arch's own rib axis, since \\(M = H(y_t - y)\\). The straight line joining the hinges is generally not the rib axis, and parallel offset lines still leave a moment.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00041",
-                "label": "pp. 16, 17; topic 4 point 39; topic 4 point 53"
-              }
-            ]
-          },
-          {
-            "id": "caution-half-span-semicircle-thrust",
-            "status": "review",
-            "prompt": "Two-hinged semicircular arch with UDL w over the left half: horizontal thrust 2wR/(3π)",
-            "html": "<p>Valid for constant EI, immovable springings, load per horizontal metre and bending deformation only. The extracted capsule text shows only 3 in the denominator; π must be included, giving about 3.82 kN for R = 6 m and w = 3 kN/m.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00046",
-                "label": "p. 16; topic 4 point 44"
-              }
-            ]
-          },
-          {
-            "id": "caution-thrust-ild-peak",
-            "status": "review",
-            "prompt": "The horizontal-thrust ILD of a three-hinged arch is a triangle with central ordinate L/(4h)",
-            "html": "<p>The extracted 4Lh is damaged; the dimensionally consistent value is L/(4h), a thrust-per-unit-load ratio. It assumes level springings with the internal hinge at the midspan crown, which the capsule wording does not state.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00052",
-                "label": "p. 17; topic 4 point 50"
-              }
-            ]
-          },
-          {
-            "id": "caution-wheel-load-rule",
-            "status": "review",
-            "prompt": "Maximum bending moment due to a train of wheel loads always occurs under a wheel load",
-            "html": "<p>True for downward point loads alone, because the moment is piecewise linear between wheels. The maximum may extend over a zero-shear plateau between wheels, and an added distributed load or couple voids the rule.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00063",
-                "label": "p. 17; topic 4 point 62"
-              }
-            ]
-          },
-          {
-            "id": "caution-arch-vertical-reaction",
-            "status": "review",
-            "prompt": "Vertical reaction of an arch with load W at distance a on total span 2l is Wa/(2l)",
-            "html": "<p>The extracted W2la does not say which support is meant or where a is measured from. With level springings and a measured from A, Wa/(2l) is the reaction at B, and A carries the remainder: 60 kN and 30 kN for 90 kN at 6 m on 18 m.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00088",
-                "label": "p. 18; topic 4 point 88"
-              }
-            ]
-          },
-          {
-            "id": "caution-parabolic-arch-springing-shear",
-            "status": "corrected",
-            "prompt": "Maximum shear force in a three-hinged parabolic arch usually occurs at the springings",
-            "html": "<p>Corrected: under a full-span horizontal UDL the parabolic three-hinged arch is funicular and its radial shear is zero everywhere, springings included. For other loads, radial shear must be evaluated along the arch rather than assumed largest at the springings.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00096",
-                "label": "p. 18; topic 4 point 96"
-              }
-            ]
-          },
-          {
-            "id": "caution-reaction-locus",
-            "status": "review",
-            "prompt": "The locus of reaction of a two-hinged semicircular arch is a straight line",
-            "html": "<p>The claim needs a definition and assumptions. For constant EI, immovable springings and bending-only compatibility, the intersection of the two reaction lines under a moving vertical load lies on a horizontal line πR/2 above the springings, for interior load positions.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00111",
-                "label": "p. 19; topic 4 point 110"
-              }
-            ]
-          },
-          {
-            "id": "caution-third-hinge-anywhere",
-            "status": "review",
-            "prompt": "A three-hinged arch is hinged at the supports and anywhere in the arch",
-            "html": "<p>The internal hinge need not be at the crown, but the three hinges must not be collinear and the supports must restrain the arch adequately; collinear hinges give a degenerate mechanism.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00115",
-                "label": "p. 19; topic 4 point 115"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Shear influence lines for simple and overhanging spans, and the Muller-Breslau construction, are not examined.",
           "Numerical use of influence-line ordinates and areas for multi-axle trains, including absolute maximum moment positioning, is not worked.",
@@ -3257,7 +2699,7 @@
             ],
             "points": [
               {
-                "html": "One unbroken beam passing over supports A, B and C that transfers moment through B is a continuous two-span beam.",
+                "html": "A beam is said to be continuous if it is supported on more than two supports.",
                 "sources": [
                   {
                     "id": "CAP4-04-00010",
@@ -3266,7 +2708,7 @@
                 ]
               },
               {
-                "html": "Assembling \\(Kd = F\\) and solving for the joint translations and rotations is a stiffness or displacement method.",
+                "html": "The stiffness matrix method is also called the displacement method.",
                 "sources": [
                   {
                     "id": "CAP4-04-00042",
@@ -3311,7 +2753,7 @@
                 ]
               },
               {
-                "html": "A far end that cannot rotate but slides transversely without force gives a near-end rotational stiffness of only EI/L.",
+                "html": "The stiffness of end A of a member when the far end B is a vertical guided roller is \\(\\dfrac{EI}{L}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00043",
@@ -3351,7 +2793,7 @@
             },
             "points": [
               {
-                "html": "Stiffnesses of 20, 30 and 50 kN·m/rad at a joint give the 30 kN·m/rad member a distribution factor of 0.30.",
+                "html": "The distribution factor is the ratio of the stiffness of a member to the total stiffness of the members at the joint.",
                 "sources": [
                   {
                     "id": "CAP4-05-00128",
@@ -3369,7 +2811,7 @@
                 ]
               },
               {
-                "html": "Moment distribution, with sway properly accounted for, converges to the solution of the joint-equilibrium equations of slope-deflection.",
+                "html": "The simultaneous equations of the slope deflection method can be solved by iteration in the moment distribution method.",
                 "sources": [
                   {
                     "id": "CAP4-04-00044",
@@ -3378,7 +2820,7 @@
                 ]
               },
               {
-                "html": "Moment distribution, the joint-balancing iteration used for continuous beams and rigid frames, was introduced by Hardy Cross.",
+                "html": "The moment distribution method was introduced by Hardy Cross.",
                 "sources": [
                   {
                     "id": "CAP4-04-00057",
@@ -3432,7 +2874,7 @@
             "moreHtml": "<p>For the crown load, with \\(y = 4hx(L - x)/L^2\\) and \\(ds \\approx dx\\), the two integrals are \\(5WhL^2/48\\) and \\(8h^2L/15\\); their ratio gives the coefficient 25/128.</p>",
             "points": [
               {
-                "html": "For a two-hinged arch with level immovable springings, compatibility gives the whole-arch thrust as a ratio of two integrals, \\(H = \\int M_0 y\\,d\\mu \\big/ \\int y^2\\,d\\mu\\).",
+                "html": "For a two-hinged arch having constant \\(EI\\), the horizontal thrust \\(H\\) in terms of the beam moment \\(M\\) is given by \\(\\dfrac{\\int My\\,ds/EI}{\\int y^2\\,ds/EI}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00048",
@@ -3441,7 +2883,7 @@
                 ]
               },
               {
-                "html": "A shallow two-hinged parabolic arch with a 32 kN crown load, 16 m span and 2 m rise has a thrust of \\(25WL/(128h)\\) = 50 kN.",
+                "html": "A parabolic two-hinged arch of span \\(L\\) and rise \\(h\\) carries a concentrated load \\(W\\) at the crown. The horizontal thrust is \\(\\dfrac{25WL}{128h}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00067",
@@ -3450,7 +2892,7 @@
                 ]
               },
               {
-                "html": "A parabolic two-hinged arch of span 12 m and rise 3 m under a load rising linearly from zero to 8 kN/m has a thrust of \\(wL^2/(16h)\\) = 24 kN.",
+                "html": "A UVL varying from zero at one end to \\(w\\) at the other is applied on a two-hinged parabolic arch of span \\(l\\) and rise \\(h\\). The horizontal thrust is \\(\\dfrac{wl^2}{16h}\\).",
                 "sources": [
                   {
                     "id": "CAP4-04-00077",
@@ -3491,7 +2933,7 @@
             ],
             "points": [
               {
-                "html": "A symmetric two-hinged parabolic arch under a full horizontal UDL carries compression along the tangent, with zero bending and zero radial shear.",
+                "html": "A symmetrical two-hinged parabolic arch subjected to a UDL over the entire horizontal span is subjected to normal thrust only.",
                 "sources": [
                   {
                     "id": "CAP4-04-00116",
@@ -3500,7 +2942,7 @@
                 ]
               },
               {
-                "html": "Uniform heating with fixed springing spacing increases the inward horizontal thrust, which opposes the free span expansion.",
+                "html": "In a two-hinged parabolic arch, an increase in temperature will increase the horizontal thrust.",
                 "sources": [
                   {
                     "id": "CAP4-04-00097",
@@ -3540,7 +2982,7 @@
             },
             "points": [
               {
-                "html": "In the rigid-plastic mechanism idealization, segments move as rigid bodies, with the plastic rotation concentrated at the hinges.",
+                "html": "In plastic analysis of structures, the segment between any two successive plastic hinges is assumed to deform as a rigid material.",
                 "sources": [
                   {
                     "id": "CAP4-04-00045",
@@ -3549,7 +2991,7 @@
                 ]
               },
               {
-                "html": "A rectangular section in elastic–perfectly plastic bending has a plastic-to-first-yield moment ratio of 1.50, \\(bd^2/4\\) over \\(bd^2/6\\).",
+                "html": "The shape factor of a rectangular section is 1.5.",
                 "sources": [
                   {
                     "id": "CAP4-01-00080",
@@ -3558,7 +3000,7 @@
                 ]
               },
               {
-                "html": "A solid rhombus bent about its horizontal diagonal has a shape factor of 2.00, from \\(Z_p = bd^2/12\\) and \\(Z_e = bd^2/24\\).",
+                "html": "The shape factor of a diamond-shaped cross-section under flexure is 2.",
                 "sources": [
                   {
                     "id": "CAP4-04-00072",
@@ -3599,7 +3041,7 @@
             "moreHtml": "<p>With the hinge a from the fixed end and b from the prop, virtual work gives \\(w = 2M_p(2/a + 1/b)/L\\), minimized when \\(a = \\sqrt{2}\\,b\\). The collapse load is then</p>\\[w_c = \\dfrac{(6 + 4\\sqrt{2})M_p}{L^2} \\approx \\dfrac{11.66M_p}{L^2}\\]<p>Elastically, the fixed-end moment is \\(-wL^2/8\\) and the largest sagging moment is \\(9wL^2/128\\) at 3L/8 from the prop.</p>",
             "points": [
               {
-                "html": "Before yielding, a propped cantilever under a full-span UDL has its point of contraflexure L/4 from the fixed end.",
+                "html": "In a propped cantilever of span \\(L\\), the internal plastic hinge at \\(0.414L\\) from the propped end lies at \\(0.586L\\) from the fixed end.",
                 "sources": [
                   {
                     "id": "CAP4-04-00017",
@@ -3608,7 +3050,7 @@
                 ]
               },
               {
-                "html": "At plastic collapse under a full-span UDL, the interior sagging hinge lies \\((\\sqrt{2} - 1)L\\), about 0.414L, from the prop.",
+                "html": "In a propped cantilever beam under uniform load, the internal plastic hinge is located at a distance of \\(0.414L\\) from the propped end.",
                 "sources": [
                   {
                     "id": "CAP4-04-00016",
@@ -3671,104 +3113,7 @@
             "tex": "b = (\\sqrt{2} - 1)L"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-propped-hinge-location",
-            "status": "review",
-            "prompt": "In a propped cantilever, the internal hinge is located 0.414L from the propped end",
-            "html": "<p>Holds only for plastic collapse under a full-span UDL with uniform, equal sagging and hogging plastic moment. It is a plastic-hinge location, distinct from the elastic contraflexure point L/4 from the fixed end.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00016",
-                "label": "p. 15; topic 4 point 16"
-              }
-            ]
-          },
-          {
-            "id": "caution-guided-far-end",
-            "status": "review",
-            "prompt": "Stiffness of end A when the far end B is a vertically guided roller is EI/L",
-            "html": "<p>The capsule does not define the guide fully. EI/L applies when B cannot rotate but slides transversely without force; restraining B's translation as well gives 4EI/L, and a translation-fixed hinge at B gives 3EI/L.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00043",
-                "label": "p. 16; topic 4 point 41"
-              }
-            ]
-          },
-          {
-            "id": "caution-two-hinged-thrust-formula",
-            "status": "review",
-            "prompt": "Horizontal thrust of a two-hinged arch with constant EI is a ratio of integrals of M·y and y²",
-            "html": "<p>The capsule formula is corrupted in both extractions. The version taught here, \\(H = \\int M_0 y\\,d\\mu \\big/ \\int y^2\\,d\\mu\\) with \\(d\\mu = ds/(EI)\\) and ds the arc length, is reconstructed from compatibility rather than read from the printed page.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00048",
-                "label": "p. 17; topic 4 point 46"
-              }
-            ]
-          },
-          {
-            "id": "caution-parabolic-crown-coefficient",
-            "status": "review",
-            "prompt": "Parabolic two-hinged arch with crown load W: horizontal thrust 25WL/(128h)",
-            "html": "<p>The printed coefficient is unreadable in the extraction. The value 25/128 follows from the shallow-arch approximation ds ≈ dx with constant EI; exact arc-length weighting changes it, and the original typography remains unconfirmed.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00067",
-                "label": "p. 17; topic 4 point 66"
-              }
-            ]
-          },
-          {
-            "id": "caution-uvl-thrust-notation",
-            "status": "review",
-            "prompt": "Two-hinged parabolic arch under a load varying from zero to w: thrust wL² over 16 times the rise",
-            "html": "<p>The capsule writes the denominator as 16H, which confuses rise with thrust. With rise h, symmetric stiffness, immovable supports and bending-only compatibility, \\(H = wL^2/(16h)\\), which is 24 kN in the worked example.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00077",
-                "label": "p. 18; topic 4 point 75"
-              }
-            ]
-          },
-          {
-            "id": "caution-temperature-thrust",
-            "status": "review",
-            "prompt": "In a two-hinged parabolic arch, an increase in temperature increases the horizontal thrust",
-            "html": "<p>True for uniform heating of a material with a positive expansion coefficient when the springings keep a fixed spacing, in a stable linear model. A movable springing or a temperature gradient needs separate treatment.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00097",
-                "label": "p. 18; topic 4 point 97"
-              }
-            ]
-          },
-          {
-            "id": "caution-normal-thrust-only",
-            "status": "review",
-            "prompt": "A symmetric two-hinged parabolic arch under UDL on the entire span carries normal thrust only",
-            "html": "<p>Valid only for a uniform load over the whole horizontal span with first-order, bending-only compatibility. Other load patterns, or allowing for axial shortening, introduce bending and radial shear.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00116",
-                "label": "p. 19; topic 4 point 116"
-              }
-            ]
-          },
-          {
-            "id": "caution-distribution-factor-denominator",
-            "status": "corrected",
-            "prompt": "The distribution factor is the ratio of the stiffness of a member to that of a member",
-            "html": "<p>Corrected: the denominator is the sum of the rotational stiffnesses of all members meeting at the joint, each with its actual far-end condition. With 20, 30 and 50 kN·m/rad, the 30 kN·m/rad member takes 0.30.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00128",
-                "label": "p. 23; topic 5 point 127"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Influence lines for continuous beams, listed in the syllabus, are not examined by these questions.",
           "Carry-over factors, fixed-end moments and complete numerical moment-distribution tables are not worked.",

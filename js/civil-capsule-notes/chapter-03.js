@@ -34,7 +34,7 @@
             },
             "points": [
               {
-                "html": "Under a steady nonzero shear stress a Newtonian liquid shears at the constant rate \\(\\tau/\\mu\\), so its strain continues to accumulate with time rather than stopping at a fixed value.",
+                "html": "A fluid is a substance that undergoes continuous deformation under the action of a shearing stress.",
                 "sources": [
                   {
                     "id": "CAP4-03-00021",
@@ -43,7 +43,7 @@
                 ]
               },
               {
-                "html": "Dynamic viscosity is the property relating tangential resistance to velocity gradient in a sheared oil film, \\(\\tau = \\mu\\, du/dy\\).",
+                "html": "The resistance to flow of a fluid is called viscosity.",
                 "sources": [
                   {
                     "id": "CAP4-03-00015",
@@ -52,7 +52,7 @@
                 ]
               },
               {
-                "html": "Newtonian oils of equal density sheared at one gradient and temperature develop stresses in proportion to their dynamic viscosity; density plays no part.",
+                "html": "In matching fluid properties with related phenomena, viscosity is matched with shear forces.",
                 "sources": [
                   {
                     "id": "CAP4-03-00008",
@@ -61,7 +61,7 @@
                 ]
               },
               {
-                "html": "For a Newtonian fluid at a fixed state, stress and shear rate double together, so the dynamic viscosity, their ratio, remains constant.",
+                "html": "Fluids which undergo strain rates proportional to the applied shear stress are termed Newtonian fluids.",
                 "sources": [
                   {
                     "id": "CAP4-03-00058",
@@ -106,7 +106,7 @@
             "moreHtml": "<p>Unit reminders: 1 Pa s = 10 poise and 1 m<sup>2</sup>/s = 10<sup>4</sup> stokes. A liquid with \\(\\mu = 0.0012\\ \\text{Pa s}\\) and density 1000 kg/m<sup>3</sup> has \\(\\nu = 1.2 \\times 10^{-6}\\ \\text{m}^2\\text{/s}\\).</p>",
             "points": [
               {
-                "html": "A velocity gradient \\(du/dy\\) has dimensions T<sup>−1</sup>, a velocity divided by a length, and is measured in s<sup>−1</sup> as a rate of shear deformation.",
+                "html": "The dimensional formula of velocity gradient is \\(\\mathrm{M^0L^0T^{-1}}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00018",
@@ -115,7 +115,7 @@
                 ]
               },
               {
-                "html": "Kinematic viscosity \\(\\nu = \\mu/\\rho\\) has dimensions L<sup>2</sup>T<sup>−1</sup>, that is M<sup>0</sup>L<sup>2</sup>T<sup>−1</sup>, and the unit m<sup>2</sup>/s rather than Pa s.",
+                "html": "The dimension of kinematic viscosity is \\(\\mathrm{M^0L^2T^{-1}}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00016",
@@ -124,7 +124,7 @@
                 ]
               },
               {
-                "html": "Over ordinary temperature ranges heating usually thins liquids and thickens dilute gases: liquid viscosity decreases while gas viscosity increases.",
+                "html": "The viscosity of a liquid decreases with increase in temperature.",
                 "sources": [
                   {
                     "id": "CAP4-03-00017",
@@ -172,7 +172,7 @@
             },
             "points": [
               {
-                "html": "A flow curve that bends away from a straight line through the origin is incompatible with a Newtonian fluid with constant dynamic viscosity.",
+                "html": "A non-Newtonian fluid is one which does not follow Newton's law of viscosity.",
                 "sources": [
                   {
                     "id": "CAP4-03-00012",
@@ -181,7 +181,7 @@
                 ]
               },
               {
-                "html": "A paste such as peanut butter that will not spread below a finite stress, and then shows rate-dependent resistance, calls first for a non-Newtonian yield-stress model.",
+                "html": "Peanut butter is an example of a Non-Newtonian fluid.",
                 "sources": [
                   {
                     "id": "CAP4-03-00013",
@@ -190,7 +190,7 @@
                 ]
               },
               {
-                "html": "A law of the form \\(\\tau = 0.05\\,(du/dy)^2\\) has exponent two and no intercept, so its apparent viscosity rises with shear rate: dilatant or shear-thickening behaviour.",
+                "html": "If the relationship between shear stress and rate of deformation is \\(\\tau = 0.05\\left(\\dfrac{du}{dy}\\right)^2\\), the type of fluid is dilatant.",
                 "sources": [
                   {
                     "id": "CAP4-03-00119",
@@ -199,7 +199,7 @@
                 ]
               },
               {
-                "html": "With a coefficient of 0.05 Pa s<sup>2</sup> at a shear rate of 4 s<sup>−1</sup>, the stress is 0.80 Pa and the apparent dynamic viscosity 0.20 Pa s.",
+                "html": "A fluid obeys \\(\\tau = K\\dot{\\gamma}^2\\) with \\(K = 0.05\\) Pa s<sup>2</sup>. At shear rate 4 s<sup>-1</sup>, its apparent dynamic viscosity is 0.20 Pa s.",
                 "sources": [
                   {
                     "id": "CAP4-03-00120",
@@ -256,7 +256,7 @@
             },
             "points": [
               {
-                "html": "The specific gravity of a liquid is its density divided by the water density at the stated reference temperature, a dimensionless ratio.",
+                "html": "In matching fluid properties with related phenomena, specific gravity is matched with density of water.",
                 "sources": [
                   {
                     "id": "CAP4-03-00007",
@@ -265,7 +265,7 @@
                 ]
               },
               {
-                "html": "Specific volume is the reciprocal of density, so an oil of 800 kg/m<sup>3</sup> has a specific volume of 0.00125 m<sup>3</sup>/kg.",
+                "html": "Specific volume is defined as the reciprocal of density.",
                 "sources": [
                   {
                     "id": "CAP4-03-00014",
@@ -274,7 +274,7 @@
                 ]
               },
               {
-                "html": "Among equal masses of pure water at ordinary pressure, the 4-degree sample occupies the least volume, because freshwater is densest near 4 °C.",
+                "html": "The density of water is maximum at 4 °C.",
                 "sources": [
                   {
                     "id": "CAP4-03-00010",
@@ -283,7 +283,7 @@
                 ]
               },
               {
-                "html": "Mass does not change between locations, so with Earth's gravity six times the Moon's, a body weighing 120 N on the Moon weighs 720 N on Earth.",
+                "html": "If the weight of a body on the moon's surface is 120 N, the weight of the same body on the earth's surface is 720 N.",
                 "sources": [
                   {
                     "id": "CAP4-03-00131",
@@ -335,7 +335,7 @@
             },
             "points": [
               {
-                "html": "Pore water is treated as nearly incompressible relative to entrapped air because water has a much larger bulk modulus than air, although it is not perfectly incompressible.",
+                "html": "Water has its minimum compressibility at room temperature.",
                 "sources": [
                   {
                     "id": "CAP4-02-00066",
@@ -344,7 +344,7 @@
                 ]
               },
               {
-                "html": "An idealized liquid whose volume does not change under any finite pressure increment has an infinite bulk modulus and zero compressibility.",
+                "html": "The value of bulk modulus for an incompressible liquid is infinite.",
                 "sources": [
                   {
                     "id": "CAP4-03-00121",
@@ -353,7 +353,7 @@
                 ]
               },
               {
-                "html": "When the measured bulk modulus of a liquid rises with pressure, the fractional volume change caused by the same small increment decreases, since its magnitude is \\(dp/K\\).",
+                "html": "The bulk modulus of a liquid increases with increase in pressure.",
                 "sources": [
                   {
                     "id": "CAP4-03-00011",
@@ -398,7 +398,7 @@
             },
             "points": [
               {
-                "html": "Where gravity and drag hardly act, a tiny free drop takes a spherical shape because a sphere minimizes surface area at fixed volume, and surface energy scales with that area.",
+                "html": "The spherical shape of water drops is due to the property of surface tension.",
                 "sources": [
                   {
                     "id": "CAP4-03-00023",
@@ -407,7 +407,7 @@
                 ]
               },
               {
-                "html": "A soap-film bubble 10 mm in radius, with a tension of 0.025 N/m at both surfaces, carries an excess pressure \\(4\\sigma/R\\) of 10 Pa over the outside air.",
+                "html": "The excess pressure inside a soap bubble of radius \\(R\\) is \\(\\dfrac{4T}{R}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00024",
@@ -445,7 +445,7 @@
             "moreHtml": "<p>The equation assumes a clean tube of uniform bore, a large reservoir that keeps the outside level fixed, static equilibrium and a spherical meniscus. It gives an equilibrium height, not the height produced by pouring a chosen volume of liquid into the tube.</p>",
             "points": [
               {
-                "html": "The upward force holding a raised capillary column is the vertical component of surface tension acting around the contact line, not viscosity, gravity or excess air pressure.",
+                "html": "The rise of a liquid in a capillary tube is due to surface tension.",
                 "sources": [
                   {
                     "id": "CAP4-03-00003",
@@ -454,7 +454,7 @@
                 ]
               },
               {
-                "html": "At equilibrium the vertical surface-tension force balances the column weight, \\(2\\pi r\\sigma\\cos\\theta = \\rho g\\pi r^2 h\\), which gives \\(h = 2\\sigma\\cos\\theta/(\\rho g r)\\).",
+                "html": "In a capillary tube of radius \\(r\\), the force balance for a capillary rise \\(h\\) is \\(2\\pi r\\sigma\\cos\\theta = \\rho g\\,\\pi r^2 h\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00005",
@@ -463,7 +463,7 @@
                 ]
               },
               {
-                "html": "A curved meniscus climbing above the reservoir in a fine clean tube is explained by surface tension and capillarity together; density sets only the column weight.",
+                "html": "In matching fluid properties with related phenomena, capillarity is matched with surface tension.",
                 "sources": [
                   {
                     "id": "CAP4-03-00009",
@@ -472,7 +472,7 @@
                 ]
               },
               {
-                "html": "With finite surface tension, zero rise or depression requires \\(\\cos\\theta = 0\\), a contact angle of 90 degrees taken inside the liquid.",
+                "html": "If a capillary tube is dipped into a liquid and the levels of the liquid inside and outside are the same, the angle of contact is 90°.",
                 "sources": [
                   {
                     "id": "CAP4-03-00124",
@@ -521,7 +521,7 @@
             },
             "points": [
               {
-                "html": "Capillary rise varies inversely with tube radius, so an 18 mm equilibrium rise becomes 6 mm when the radius is tripled.",
+                "html": "The rise of a liquid in a capillary tube depends on the inner radius of the tube.",
                 "sources": [
                   {
                     "id": "CAP4-03-00001",
@@ -530,7 +530,7 @@
                 ]
               },
               {
-                "html": "For tubes fed by one reservoir with matching wetting, \\(hd\\) is constant, so rises in the ratio 2/3 imply diameters \\(d_P : d_Q\\) of 3:2.",
+                "html": "Two capillary tubes P and Q are dipped in water. The height of water in P is 2/3 of the height in Q. The ratio of their diameters is 3:2.",
                 "sources": [
                   {
                     "id": "CAP4-03-00002",
@@ -539,7 +539,7 @@
                 ]
               },
               {
-                "html": "With radius, density and contact angle unchanged, a 10% fall in surface tension means the capillary rise decreases by 10%.",
+                "html": "For a liquid, the capillary rise (or fall) decreases with a rise in temperature.",
                 "sources": [
                   {
                     "id": "CAP4-03-00004",
@@ -548,7 +548,7 @@
                 ]
               },
               {
-                "html": "Heating a depressed nonwetting liquid, with density unchanged and the contact angle still above 90°, makes its level rise toward the reservoir level without reaching it.",
+                "html": "With a rise in temperature, the capillary rise of a liquid decreases because its surface tension decreases.",
                 "sources": [
                   {
                     "id": "CAP4-03-00148",
@@ -583,29 +583,8 @@
             "moreHtml": "<p>Vapour pressure rises with temperature, so a warm liquid reaches its cavitation threshold at a higher absolute pressure than a cold one. Always compare absolute pressure, not gauge pressure, with the vapour pressure.</p>",
             "points": [
               {
-                "html": "Vapour cavities form in a pump when the local absolute pressure falls to about the liquid's vapour pressure at the operating temperature, so vapour pressure sets the cavitation threshold.",
+                "html": "In matching fluid properties with related phenomena, vapour pressure is matched with cavitation.",
                 "sources": [
-                  {
-                    "id": "CAP4-03-00006",
-                    "label": "pp. 10, 11; topic 3 point 6"
-                  }
-                ]
-              },
-              {
-                "html": "Each property pairs with what it controls: surface tension with capillarity, vapour pressure with cavitation, dynamic viscosity with shear forces and specific gravity with density relative to reference water.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00009",
-                    "label": "pp. 10, 11; topic 3 point 6"
-                  },
-                  {
-                    "id": "CAP4-03-00008",
-                    "label": "pp. 10, 11; topic 3 point 6"
-                  },
-                  {
-                    "id": "CAP4-03-00007",
-                    "label": "pp. 10, 11; topic 3 point 6"
-                  },
                   {
                     "id": "CAP4-03-00006",
                     "label": "pp. 10, 11; topic 3 point 6"
@@ -616,18 +595,6 @@
             "sources": [
               {
                 "id": "CAP4-03-00006",
-                "label": "pp. 10, 11; topic 3 point 6"
-              },
-              {
-                "id": "CAP4-03-00009",
-                "label": "pp. 10, 11; topic 3 point 6"
-              },
-              {
-                "id": "CAP4-03-00008",
-                "label": "pp. 10, 11; topic 3 point 6"
-              },
-              {
-                "id": "CAP4-03-00007",
                 "label": "pp. 10, 11; topic 3 point 6"
               }
             ]
@@ -679,96 +646,10 @@
             "tex": "h = \\dfrac{4\\sigma\\cos\\theta}{\\rho g d}"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-water-minimum-compressibility",
-            "status": "corrected",
-            "prompt": "Water at room temperature has the minimum compressibility",
-            "html": "<p>The capsule point gives no comparison set or thermodynamic condition for this minimum, and room temperature is not a universal minimum-compressibility condition. The dependable comparison is the one used in soil mechanics: liquid water has a much larger bulk modulus than air, so pore water is treated as nearly incompressible relative to entrapped air. Water is still not perfectly incompressible, and mineral solids can be stiffer.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00066",
-                "label": "p. 8; topic 2 point 61"
-              }
-            ]
-          },
-          {
-            "id": "caution-capillary-diameter-ratio",
-            "status": "corrected",
-            "prompt": "Capillary heights in the ratio 2/3 imply tube diameters in the ratio 3:2",
-            "html": "<p>The extracted capsule text drops the denominator of the height ratio; the complete page gives 2/3. With the same liquid, contact angle and gravity, \\(hd\\) is constant, so the diameter ratio is the inverse of the height ratio, 3:2. The result compares equilibrium rises from a common reservoir, not columns formed by pouring equal volumes into each tube.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00002",
-                "label": "p. 10; topic 3 point 2"
-              }
-            ]
-          },
-          {
-            "id": "caution-capillarity-temperature-trend",
-            "status": "review",
-            "prompt": "Capillary rise or fall decreases with rise in temperature",
-            "html": "<p>This is a usual trend, not an unconditional law for every liquid and temperature range. The rise is proportional to \\(\\sigma\\cos\\theta/\\rho\\), so a fall in surface tension reduces it only while density and contact angle change little. A universal statement would have to account for all three.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00004",
-                "label": "p. 10; topic 3 point 4"
-              }
-            ]
-          },
-          {
-            "id": "caution-capillary-force-statement-incomplete",
-            "status": "review",
-            "prompt": "Capillary rise of water depends upon the force responsible",
-            "html": "<p>The capsule point is incomplete as printed and names no force or quantity. The underlying relation is the equilibrium between the vertical surface-tension force \\(2\\pi r\\sigma\\cos\\theta\\) and the column weight \\(\\rho g\\pi r^2 h\\); no missing source data has been assumed beyond that standard force balance.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00005",
-                "label": "p. 10; topic 3 point 5"
-              }
-            ]
-          },
-          {
-            "id": "caution-bulk-modulus-pressure-trend",
-            "status": "review",
-            "prompt": "Bulk modulus of a liquid increases with pressure",
-            "html": "<p>An increase of \\(K\\) with pressure is a common measured trend for liquids, but it depends on the state and the path rather than following from the definition \\(K = -dp/(dV/V)\\). Use the measured \\(K\\) for the actual temperature and pressure range; the only general conclusion is that a larger \\(K\\) means a smaller volume strain for the same pressure increment.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00011",
-                "label": "p. 11; topic 3 point 8"
-              }
-            ]
-          },
-          {
-            "id": "caution-soap-bubble-excess-pressure",
-            "status": "corrected",
-            "prompt": "The pressure inside a soap bubble of radius R is 4T/R",
-            "html": "<p>\\(4T/R\\), written \\(4\\sigma/R\\) in these notes, is the excess of internal pressure over the surrounding air, not the absolute internal pressure. It follows from the two interfaces of a thin film; a single-interface liquid drop has excess pressure \\(2\\sigma/R\\). Add the surrounding absolute pressure to obtain the absolute internal pressure.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00024",
-                "label": "p. 11; topic 3 point 21"
-              }
-            ]
-          },
-          {
-            "id": "caution-capillary-depression-heating",
-            "status": "review",
-            "prompt": "Capillary fall of a nonwetting liquid also decreases when it is heated",
-            "html": "<p>The bracketed fall case holds only under stated conditions. With a contact angle that stays above 90° and unchanged density and tube radius, a lower but still positive \\(\\sigma\\) makes the signed displacement less negative, so the depression shrinks toward the reservoir level without reversing into a rise. If heating also changed density or wetting, recalculate the outcome.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00148",
-                "label": "p. 10; topic 3 point 4"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "The capsule points supply no property tables, so densities, viscosities, surface tensions and vapour pressures at stated temperatures must come from a reliable data source.",
           "Cavitation is covered only as the vapour-pressure threshold; suction-head margins and cavitation damage are not developed in this topic.",
-          "The temperature at which water is least compressible is not established by the capsule and is not asserted in these notes.",
           "Non-Newtonian coverage stops at recognising power-law and yield-stress behaviour; fitting rheological models to measured data is outside these questions."
         ]
       },
@@ -795,7 +676,7 @@
             },
             "points": [
               {
-                "html": "A suction line reading −25 kPa gauge under a 95 kPa atmosphere is at 70 kPa absolute: the atmospheric term is always added and the sign stays with the gauge reading.",
+                "html": "The relation between absolute pressure, atmospheric pressure and gauge pressure is \\(P_\\mathrm{abs} = P_\\mathrm{atm} + P_\\mathrm{gauge}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00026",
@@ -804,7 +685,7 @@
                 ]
               },
               {
-                "html": "A vented-case Bourdon gauge indicates line pressure relative to the ambient atmosphere, that is gauge pressure, not pressure measured from a perfect vacuum.",
+                "html": "A Bourdon gauge is used to measure gauge pressure.",
                 "sources": [
                   {
                     "id": "CAP4-03-00033",
@@ -827,10 +708,10 @@
           {
             "id": "pascals-law-scalar-pressure",
             "title": "Pascal's law: pressure is a scalar",
-            "html": "<p><em>Pascal's law</em> states that at a point in a fluid at rest the pressure is the same in every direction. Pressure has magnitude but no direction of its own; it pushes normally on whatever surface it meets.</p><p>In a moving viscous fluid the normal stress on differently oriented planes can differ. That difference belongs to the <em>viscous stresses</em>, which depend on how the fluid is deforming. The stress tensor splits into an isotropic pressure part, still a scalar, and a directional viscous part, so pressure does not become a vector in flowing fluids.</p>",
+            "html": "<p><em>Pascal's law</em> states that at a point in a fluid at rest the pressure is the same in every direction. Pressure has magnitude but no direction of its own; it pushes normally on whatever surface it meets.</p><p>In a moving viscous fluid the normal stress on differently oriented planes can differ. That difference belongs to the <em>viscous stresses</em>, which depend on how the fluid is deforming.</p>",
             "points": [
               {
-                "html": "Pressure is a scalar that acts equally in all directions at a point in a fluid at rest; in a moving viscous fluid only the viscous stresses can be directional.",
+                "html": "The pressure at a point in a fluid will not be the same in all directions when the fluid is viscous and moving.",
                 "sources": [
                   {
                     "id": "CAP4-03-00027",
@@ -870,7 +751,7 @@
             },
             "points": [
               {
-                "html": "In a connected liquid of constant density at rest, \\(z + p/(\\rho g)\\), the piezometric head, stays constant as elevation changes; pressure alone does not.",
+                "html": "For a static fluid, the piezometric head remains constant at all points in the liquid.",
                 "sources": [
                   {
                     "id": "CAP4-03-00029",
@@ -879,7 +760,7 @@
                 ]
               },
               {
-                "html": "One metre below an atmospheric water surface the gauge pressure is 9810 Pa, taking \\(\\rho = 1000\\ \\text{kg/m}^3\\) and \\(g = 9.81\\ \\text{m/s}^2\\).",
+                "html": "The pressure at a depth of 1 m below the water surface is 9810 Pa.",
                 "sources": [
                   {
                     "id": "CAP4-03-00030",
@@ -920,7 +801,7 @@
             },
             "points": [
               {
-                "html": "Equal-elevation water taps joined by a mercury U-tube with a 0.15 m level difference differ by \\((\\rho_{\\text{Hg}} - \\rho_w) g h\\), about 18.54 kPa; mercury density alone overstates it.",
+                "html": "A U-tube (differential) manometer is used to measure the pressure difference between two points.",
                 "sources": [
                   {
                     "id": "CAP4-03-00101",
@@ -929,7 +810,7 @@
                 ]
               },
               {
-                "html": "A water U-tube whose gas-side level is 0.25 m lower shows the gas at about +2.45 kPa gauge, above atmospheric; add atmospheric pressure for an absolute value.",
+                "html": "The instrument used to measure the gas pressure in a pipe is the u-tube manometer.",
                 "sources": [
                   {
                     "id": "CAP4-03-00113",
@@ -970,7 +851,7 @@
             ],
             "points": [
               {
-                "html": "On a fully submerged inclined gate the centre of pressure lies at a greater vertical depth than the area centroid, by \\(I_G \\sin^2\\theta/(A\\bar{h})\\).",
+                "html": "For an inclined plane submerged in a liquid, the centre of pressure on one side of the plane is below the centre of gravity.",
                 "sources": [
                   {
                     "id": "CAP4-03-00123",
@@ -979,7 +860,7 @@
                 ]
               },
               {
-                "html": "A uniform net pressure \\(p\\) on a hemispherical dome of radius \\(r\\) gives an axial resultant of \\(p\\pi r^2\\): pressure times the projected circle, not the curved area.",
+                "html": "The force on a hemispherical part of radius \\(r\\) acted on by a pressure \\(P_0\\) is \\(\\pi r^2P_0\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00028",
@@ -1015,7 +896,7 @@
             },
             "points": [
               {
-                "html": "The resultant upward force on any fully submerged body is the weight of the liquid it displaces, not the body's own weight.",
+                "html": "The resultant force on a body due to the fluid surrounding it is called the buoyant force.",
                 "sources": [
                   {
                     "id": "CAP4-03-00025",
@@ -1024,7 +905,7 @@
                 ]
               },
               {
-                "html": "A rigid body's buoyant force stays constant as it moves deeper in a constant-density liquid, because \\(\\rho g V\\) does not depend on depth.",
+                "html": "As a stone sinks deeper into a lake, the upthrust (buoyant force) acting on it remains constant.",
                 "sources": [
                   {
                     "id": "CAP4-03-00135",
@@ -1033,7 +914,7 @@
                 ]
               },
               {
-                "html": "Buoyancy on a sinking sphere acts upward, opposite gravity; drag is a separate force that depends on the relative motion.",
+                "html": "When a spherical ball drops through a fluid, it experiences buoyancy in the vertically upward direction.",
                 "sources": [
                   {
                     "id": "CAP4-03-00134",
@@ -1042,7 +923,7 @@
                 ]
               },
               {
-                "html": "When pure ice floating freely in fresh water melts, the water level remains unchanged.",
+                "html": "When a block of ice floating on water in a container melts, the level of water in the container remains the same.",
                 "sources": [
                   {
                     "id": "CAP4-03-00111",
@@ -1090,7 +971,7 @@
             },
             "points": [
               {
-                "html": "A body weighing 50 N in water and 80 N in oil of specific gravity 0.80 has a volume of about 15.29 litres, found from the difference of the two buoyant forces.",
+                "html": "An object weighs 50 N in water and 80 N in an oil of specific gravity 0.8. Its volume is 15.3 litres.",
                 "sources": [
                   {
                     "id": "CAP4-03-00132",
@@ -1149,7 +1030,7 @@
                 ]
               },
               {
-                "html": "A freely floating body has a restoring moment for small heel when the metacentre M lies above the centre of gravity G, that is \\(GM \\gt 0\\).",
+                "html": "A floating body attains stable equilibrium if its metacentre is above its centre of gravity.",
                 "sources": [
                   {
                     "id": "CAP4-03-00032",
@@ -1210,104 +1091,7 @@
             "note": "Initially stable when GM is positive."
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-absolute-gauge-relation",
-            "status": "corrected",
-            "prompt": "Absolute pressure equals gauge pressure plus or minus atmospheric pressure",
-            "html": "<p>The capsule's ± on the atmospheric term is misleading. For signed gauge pressure the relation is \\(p_{\\text{abs}} = p_{\\text{atm}} + p_{\\text{gauge}}\\), with a vacuum entering as a negative gauge value. Only a vacuum reported as a positive magnitude is subtracted from atmospheric pressure.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00026",
-                "label": "p. 11; topic 3 point 23"
-              }
-            ]
-          },
-          {
-            "id": "caution-pressure-direction-viscous-flow",
-            "status": "corrected",
-            "prompt": "Pressure at a point is not the same in all directions when the fluid is viscous and moving",
-            "html": "<p>The capsule point confuses pressure with total normal stress. In a deforming viscous fluid the normal traction can differ between planes because viscous stresses are directional, but pressure itself is the scalar, isotropic part of the stress tensor. Equal normal stress in every direction holds wherever shear stresses are absent, as in a fluid at rest.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00027",
-                "label": "p. 11; topic 3 point 24"
-              }
-            ]
-          },
-          {
-            "id": "caution-hemisphere-uniform-pressure",
-            "status": "review",
-            "prompt": "The force on a hemispherical surface under pressure P0 is πr²P0",
-            "html": "<p>\\(\\pi r^2 P_0\\) is the resultant along the dome's axis for a uniform net pressure: pressure times projected area, not pressure times the curved area. Where hydrostatic pressure varies with depth over the dome, find the resultant by integration or from projected-area and liquid-weight components.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00028",
-                "label": "p. 11; topic 3 point 25"
-              }
-            ]
-          },
-          {
-            "id": "caution-one-metre-water-pressure",
-            "status": "corrected",
-            "prompt": "Pressure 1 m below a water surface is 1000 × 9.8 × 1 = 9810 Pa",
-            "html": "<p>The printed arithmetic mixes two values of \\(g\\): \\(1000 \\times 9.8 \\times 1 = 9800\\ \\text{Pa}\\), while 9810 Pa requires \\(g = 9.81\\ \\text{m/s}^2\\). Either figure is acceptable only when the value of \\(g\\) is stated and used consistently; these notes use 9.81 m/s².</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00030",
-                "label": "p. 11; topic 3 point 27"
-              }
-            ]
-          },
-          {
-            "id": "caution-metacentre-above-centre-of-gravity",
-            "status": "corrected",
-            "prompt": "A floating body is stable if its metacentre is above the centroid",
-            "html": "<p>The stability test compares the metacentre with the centre of gravity G, not an unspecified centroid, and it describes initial stability for small angles of heel: the body is initially stable when \\(GM \\gt 0\\). A geometric centroid is equivalent to G only for a suitably uniform mass distribution.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00032",
-                "label": "p. 11; topic 3 point 29"
-              }
-            ]
-          },
-          {
-            "id": "caution-melting-ice-level",
-            "status": "corrected",
-            "prompt": "Water level after floating ice melts, printed in one point as remains the change",
-            "html": "<p>Two capsule points duplicate the floating-ice fact, and the second is garbled as 'remains the change'. The corrected statement is that the level stays unchanged for pure ice floating freely in fresh water, neglecting evaporation and temperature-related density changes, because the ice displaces exactly the volume of water its melt produces.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00111",
-                "label": "pp. 13, 15; topic 3 point 108; topic 3 point 141"
-              }
-            ]
-          },
-          {
-            "id": "caution-centre-of-pressure-reference",
-            "status": "corrected",
-            "prompt": "On an inclined submerged plane the centre of pressure is below the centre of gravity",
-            "html": "<p>The correct reference point is the area centroid of the plane, not the centre of gravity of the gate. For a non-horizontal plane under net hydrostatic loading, the centre of pressure lies deeper than the centroid by \\(I_G \\sin^2\\theta/(A\\bar{h})\\). The centre of gravity coincides with the centroid only for a uniform gate.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00123",
-                "label": "p. 14; topic 3 point 121"
-              }
-            ]
-          },
-          {
-            "id": "caution-buoyancy-moving-sphere",
-            "status": "review",
-            "prompt": "A ball dropping through a fluid experiences buoyancy vertically upward",
-            "html": "<p>True for hydrostatic buoyancy itself, which acts upward whatever the direction of motion. A moving sphere also experiences drag and dynamic pressure forces that depend on its velocity relative to the fluid; treat these separately rather than folding them into buoyancy.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00134",
-                "label": "p. 14; topic 3 point 130"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Forces on curved gates with depth-varying pressure are touched only through the uniform-pressure hemisphere; full curved-surface integration and pressure diagrams are not worked.",
           "Stability coverage is limited to initial small-angle metacentric stability; large-angle righting behaviour and the stability of fully submerged bodies are not examined by these questions.",
@@ -1340,7 +1124,7 @@
             },
             "points": [
               {
-                "html": "Water supplied at a fixed rate through a conical reducer gives steady and nonuniform flow: nothing changes with time at a section, but \\(V = Q/A\\) varies along the taper.",
+                "html": "When water flows through a frustum of a cone at a constant rate, the flow is steady and non-uniform.",
                 "sources": [
                   {
                     "id": "CAP4-03-00125",
@@ -1367,7 +1151,7 @@
                 ]
               },
               {
-                "html": "Every section of a Venturi carries the same discharge, so the minimum-area throat has the greatest mean speed and, ideally, the lowest static pressure.",
+                "html": "In a venturi meter, the highest velocity occurs at the throat.",
                 "sources": [
                   {
                     "id": "CAP4-03-00050",
@@ -1398,7 +1182,7 @@
           {
             "id": "local-continuity-and-incompressibility",
             "title": "Local form of continuity and the incompressibility condition",
-            "html": "<p>At a point, conservation of mass is written as a partial differential equation that holds for steady or unsteady, one-, two- or three-dimensional, laminar or turbulent flow. The <em>velocity divergence</em> \\(\\nabla\\cdot\\mathbf{u}\\) is the fractional rate at which a moving fluid element changes its volume. A fluid whose elements keep their volume, as in incompressible motion, therefore needs zero divergence.</p><p>This reduction needs neither steadiness nor two-dimensionality; steady two-dimensional incompressible flow is only one case it covers. It constrains velocity gradients: if two normal gradients are known at a point, the third is fixed, but the velocity components themselves are not.</p><p>Keep three conditions apart:</p><ul><li>zero divergence, \\(\\nabla\\cdot\\mathbf{u} = 0\\): no volumetric expansion, the incompressibility condition;</li><li>zero curl, \\(\\nabla\\times\\mathbf{u} = 0\\): irrotational flow;</li><li>zero local time derivative, \\(\\partial\\mathbf{u}/\\partial t = 0\\): steady flow.</li></ul><p>A flow can satisfy any one of these without the others.</p>",
+            "html": "<p>At a point, conservation of mass is written as a partial differential equation that holds for steady or unsteady, one-, two- or three-dimensional, laminar or turbulent flow. The <em>velocity divergence</em> \\(\\nabla\\cdot\\mathbf{u}\\) is the fractional rate at which a moving fluid element changes its volume. A fluid whose elements keep their volume, as in incompressible motion, therefore needs zero divergence.</p><p>It constrains velocity gradients: if two normal gradients are known at a point, the third is fixed, but the velocity components themselves are not.</p><p>Keep three conditions apart:</p><ul><li>zero divergence, \\(\\nabla\\cdot\\mathbf{u} = 0\\): no volumetric expansion, the incompressibility condition;</li><li>zero curl, \\(\\nabla\\times\\mathbf{u} = 0\\): irrotational flow;</li><li>zero local time derivative, \\(\\partial\\mathbf{u}/\\partial t = 0\\): steady flow.</li></ul><p>A flow can satisfy any one of these without the others.</p>",
             "formulas": [
               {
                 "label": "General local mass balance",
@@ -1415,7 +1199,7 @@
             },
             "points": [
               {
-                "html": "Incompressible motion requires the divergence of velocity to equal zero, \\(\\nabla\\cdot\\mathbf{u} = 0\\), because divergence is the fractional rate of volume change of an element.",
+                "html": "The incompressibility condition in the Navier–Stokes equations is \\(\\nabla\\cdot\\mathbf{u} = 0\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00035",
@@ -1424,7 +1208,7 @@
                 ]
               },
               {
-                "html": "With normal gradients of 2 s<sup>−1</sup> along x and −5 s<sup>−1</sup> along y in incompressible flow, \\(\\partial w/\\partial z\\) must be 3 s<sup>−1</sup>.",
+                "html": "In three-dimensional incompressible flow with \\(\\partial u/\\partial x = 2\\) s<sup>-1</sup> and \\(\\partial v/\\partial y = -5\\) s<sup>-1</sup>, continuity requires \\(\\partial w/\\partial z = 3\\) s<sup>-1</sup>.",
                 "sources": [
                   {
                     "id": "CAP4-03-00143",
@@ -1433,7 +1217,7 @@
                 ]
               },
               {
-                "html": "Continuity is general, \\(\\partial\\rho/\\partial t + \\nabla\\cdot(\\rho\\mathbf{u}) = 0\\); the divergence-free form is a special reduction for incompressible motion, steady or not.",
+                "html": "The continuity equation \\(\\dfrac{\\partial u}{\\partial x} + \\dfrac{\\partial v}{\\partial y} = 0\\) is valid for steady, two-dimensional, incompressible flow.",
                 "sources": [
                   {
                     "id": "CAP4-03-00109",
@@ -1477,7 +1261,7 @@
             },
             "points": [
               {
-                "html": "Pressure head, velocity head and elevation head are separate energy components per unit weight; only their sum is the total head.",
+                "html": "In Bernoulli's equation, each term represents energy per unit weight.",
                 "sources": [
                   {
                     "id": "CAP4-03-00034",
@@ -1486,7 +1270,7 @@
                 ]
               },
               {
-                "html": "Heads of 2 m elevation, 3 m gauge pressure and 4 m velocity add to a total head of 9 m; the piezometric head is only 5 m.",
+                "html": "The total head is equal to velocity head + pressure head + datum head.",
                 "sources": [
                   {
                     "id": "CAP4-03-00126",
@@ -1495,7 +1279,7 @@
                 ]
               },
               {
-                "html": "The Bernoulli constant may differ between streamlines in rotational flow; irrotational flow lets one constant apply throughout a connected region.",
+                "html": "According to Bernoulli's equation, the total energy is constant along a streamline but may differ from one streamline to another.",
                 "sources": [
                   {
                     "id": "CAP4-03-00041",
@@ -1539,7 +1323,7 @@
             },
             "points": [
               {
-                "html": "For a real viscous liquid in a pipe without machines, write \\(H_1 = H_2 + h_L\\): include a positive head-loss term rather than equating the two total heads.",
+                "html": "Bernoulli's equation is not to be used for viscous flow.",
                 "sources": [
                   {
                     "id": "CAP4-03-00042",
@@ -1548,7 +1332,7 @@
                 ]
               },
               {
-                "html": "In a horizontal diffuser, if the fall in velocity head exceeds the loss, static pressure increases while total head decreases.",
+                "html": "In flow through a diverging cone, it is possible for flow to occur from low to high pressure.",
                 "sources": [
                   {
                     "id": "CAP4-03-00136",
@@ -1588,7 +1372,7 @@
             },
             "points": [
               {
-                "html": "In steady frictionless flow down a constant-area vertical pipe the velocity heads cancel, so pressure decreases as z increases, whichever way the water moves.",
+                "html": "Water is flowing down steadily in a pipe of constant cross-section. According to Bernoulli's principle, the pressure increases as the water flows downward.",
                 "sources": [
                   {
                     "id": "CAP4-03-00061",
@@ -1620,7 +1404,7 @@
           {
             "id": "momentum-jets-plates-and-venturi",
             "title": "Momentum principle: jet forces on plates and control volumes around meters",
-            "html": "<p>For a steady control volume, the resultant external force equals the net rate of momentum outflow, applied component by component as vectors. External forces include pressures on the control surfaces, reactions from walls or plates, and weight.</p><p>A horizontal jet striking a large, smooth, fixed flat plate at right angles cannot pass through it. The plate destroys the jet's normal velocity and the water spreads tangentially over the plate. In the jet direction the whole incoming momentum flux is removed, so the force on the plate is \\(\\rho A V^2\\). The speed along the plate may stay nearly unchanged; the change of direction produces the force. A curved vane that turned the jet completely back would ideally double it.</p><p>Momentum conservation applies to every flow, including a Venturi meter. A control volume around its converging section balances the change in momentum flux against the pressure forces on its ends and the wall reaction. Venturi discharge equations use continuity with the energy equation because that route conveniently relates pressure difference to flow, not because momentum fails there.</p>",
+            "html": "<p>For a steady control volume, the resultant external force equals the net rate of momentum outflow, applied component by component as vectors. External forces include pressures on the control surfaces, reactions from walls or plates, and weight.</p><p>A horizontal jet striking a large, smooth, fixed flat plate at right angles cannot pass through it. The plate destroys the jet's normal velocity and the water spreads tangentially over the plate. In the jet direction the whole incoming momentum flux is removed, so the force on the plate is \\(\\rho A V^2\\). The speed along the plate may stay nearly unchanged; the change of direction produces the force. A curved vane that turned the jet completely back would ideally double it.</p><p>Momentum conservation applies to every flow, including a Venturi meter. A control volume around its converging section balances the change in momentum flux against the pressure forces on its ends and the wall reaction.</p>",
             "formulas": [
               {
                 "label": "Steady momentum equation",
@@ -1637,7 +1421,7 @@
             },
             "points": [
               {
-                "html": "A jet striking a large smooth fixed plate normally leaves along the plate with zero normal velocity; the plate removes the normal component rather than reversing the jet.",
+                "html": "When a jet strikes a stationary vertical plate normally, after striking the jet moves along the plate.",
                 "sources": [
                   {
                     "id": "CAP4-03-00047",
@@ -1655,7 +1439,7 @@
                 ]
               },
               {
-                "html": "Momentum conservation remains valid for a Venturi when the pressure forces on its ends and the wall reaction are included; the usual discharge formula simply uses energy and continuity.",
+                "html": "The momentum principle is not applicable to the venturi meter.",
                 "sources": [
                   {
                     "id": "CAP4-03-00036",
@@ -1682,7 +1466,7 @@
           {
             "id": "inertia-force-and-model-similarity",
             "title": "Inertia-force conventions and geometric, kinematic and dynamic similarity",
-            "html": "<p>Newton's second law says that the resultant of the real external forces on a fluid mass equals \\(m\\mathbf{a}\\). The d'Alembert convention moves that term across and introduces a fictitious <em>inertial force</em> \\(-m\\mathbf{a}\\), so the problem can be written as an equilibrium balance. The inertial force is not an extra physical cause of acceleration. Some texts loosely call the accelerating resultant the inertia force; whichever label is used, keep its sign and meaning explicit.</p><p>Hydraulic models relate to prototypes through three levels of similarity:</p><ul><li><em>Geometric</em>: all corresponding lengths share one scale ratio \\(L_r\\).</li><li><em>Kinematic</em>: corresponding velocities share one ratio \\(V_r\\), so streamline patterns are similar. Discharge then scales as area times velocity; similar discharge means this consistent scaling, not equal numerical discharge.</li><li><em>Dynamic</em>: ratios of corresponding forces are equal, achieved by matching the relevant dimensionless force groups.</li></ul>",
+            "html": "<p>Newton's second law says that the resultant of the real external forces on a fluid mass equals \\(m\\mathbf{a}\\). The d'Alembert convention moves that term across and introduces a fictitious <em>inertial force</em> \\(-m\\mathbf{a}\\), so the problem can be written as an equilibrium balance. Some texts loosely call the accelerating resultant the inertia force; whichever label is used, keep its sign and meaning explicit.</p><p>Hydraulic models relate to prototypes through three levels of similarity:</p><ul><li><em>Geometric</em>: all corresponding lengths share one scale ratio \\(L_r\\).</li><li><em>Kinematic</em>: corresponding velocities share one ratio \\(V_r\\), so streamline patterns are similar. Discharge then scales as area times velocity; similar discharge means this consistent scaling, not equal numerical discharge.</li><li><em>Dynamic</em>: ratios of corresponding forces are equal, achieved by matching the relevant dimensionless force groups.</li></ul>",
             "formulas": [
               {
                 "label": "Real forces and the d'Alembert balance",
@@ -1699,7 +1483,7 @@
             },
             "points": [
               {
-                "html": "Newton's second law makes the real net force on a fluid mass equal to \\(m\\mathbf{a}\\); the d'Alembert inertial force introduced for an equilibrium balance is \\(-m\\mathbf{a}\\).",
+                "html": "The net force acting on a fluid body which is responsible for producing acceleration is called the inertial force.",
                 "sources": [
                   {
                     "id": "CAP4-03-00141",
@@ -1708,7 +1492,7 @@
                 ]
               },
               {
-                "html": "Kinematic similarity gives similar streamline patterns, with the discharge ratio equal to the area ratio times the velocity ratio, \\(Q_r = L_r^2 V_r\\).",
+                "html": "The kinematic similarity between model and prototype is the similarity of discharge and streamline pattern.",
                 "sources": [
                   {
                     "id": "CAP4-03-00049",
@@ -1749,7 +1533,7 @@
             },
             "points": [
               {
-                "html": "Each calibrated Pitot reading gives the local speed at the probe position; discharge needs a traverse integrated over the section area.",
+                "html": "A pitot tube is used to measure the velocity of flow.",
                 "sources": [
                   {
                     "id": "CAP4-03-00052",
@@ -1758,7 +1542,7 @@
                 ]
               },
               {
-                "html": "A stagnation-minus-static difference of 2.0 kPa in water, with a velocity coefficient of one, indicates a local speed of 2.0 m/s.",
+                "html": "A pitot-static tube measures the velocity at a point of fluid in a stream.",
                 "sources": [
                   {
                     "id": "CAP4-03-00077",
@@ -1792,16 +1576,7 @@
             "moreHtml": "<p>Because \\(Q\\) varies with \\(\\sqrt{\\Delta h}\\), halving the discharge through a given meter reduces the measured head difference to one quarter of its former value.</p>",
             "points": [
               {
-                "html": "In a horizontal Venturi the minimum-area throat has the greatest mean speed and the lowest ideal static pressure.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00050",
-                    "label": "p. 12; topic 3 point 47"
-                  }
-                ]
-              },
-              {
-                "html": "A sharp-edged orifice meter has a much lower discharge coefficient than a Venturi; 0.62 to 0.65 is an indicative textbook range that calibration should confirm.",
+                "html": "The coefficient of discharge for an orifice meter is in the range 0.62 to 0.65.",
                 "sources": [
                   {
                     "id": "CAP4-03-00056",
@@ -1810,7 +1585,7 @@
                 ]
               },
               {
-                "html": "The free sheet of water passing over a sharp-crested weir or notch is the nappe; the crest is the overflow edge itself.",
+                "html": "The sheet of water flowing over a weir or notch is called the nappe.",
                 "sources": [
                   {
                     "id": "CAP4-03-00038",
@@ -1820,10 +1595,6 @@
               }
             ],
             "sources": [
-              {
-                "id": "CAP4-03-00050",
-                "label": "p. 12; topic 3 point 47"
-              },
               {
                 "id": "CAP4-03-00056",
                 "label": "p. 12; topic 3 point 53"
@@ -1883,116 +1654,7 @@
             "tex": "Q_r = L_r^2\\, V_r"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-bernoulli-term-meaning",
-            "status": "corrected",
-            "prompt": "Each term of Bernoulli's equation represents total energy per unit weight",
-            "html": "<p>Each term is only a component of mechanical energy per unit weight: pressure head, velocity head or elevation head. Their sum is the total head. Calling each term the total energy confuses a part with the whole.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00034",
-                "label": "p. 11; topic 3 point 31"
-              }
-            ]
-          },
-          {
-            "id": "caution-momentum-venturi",
-            "status": "corrected",
-            "prompt": "The momentum principle is not applicable to a Venturi meter",
-            "html": "<p>This exclusion is false. Momentum conservation applies to a Venturi control volume like any other, with wall reactions and pressure forces balancing the change in momentum flux. The usual discharge formula relies on continuity and the energy equation only for convenience.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00036",
-                "label": "p. 11; topic 3 point 33"
-              }
-            ]
-          },
-          {
-            "id": "caution-bernoulli-constant-between-streamlines",
-            "status": "corrected",
-            "prompt": "Bernoulli energy is constant along one streamline and different on another",
-            "html": "<p>The capsule overstates the difference. In rotational flow the Bernoulli constant may vary between streamlines, but in irrotational flow, under the same steady, inviscid and incompressible assumptions, one constant applies throughout a connected region. Different streamlines are not required to have different constants.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00041",
-                "label": "p. 11; topic 3 point 38"
-              }
-            ]
-          },
-          {
-            "id": "caution-bernoulli-viscous-flow",
-            "status": "review",
-            "prompt": "Bernoulli's equation is not to be used for viscous flow",
-            "html": "<p>Only the lossless form is unsuitable as it stands. Real viscous flows are analysed with the extended energy equation, \\(H_1 = H_2 + h_L\\), adding pump or turbine heads where present. Viscous dissipation does not invalidate energy conservation.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00042",
-                "label": "p. 11; topic 3 point 39"
-              }
-            ]
-          },
-          {
-            "id": "caution-kinematic-similarity-discharge",
-            "status": "review",
-            "prompt": "Kinematic similarity means similarity of discharge and streamline pattern",
-            "html": "<p>Similarity of discharge should be read as consistent scaling, \\(Q_r = L_r^2 V_r\\), not as equal numerical discharge in model and prototype. Matching force ratios is the separate requirement of dynamic similarity.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00049",
-                "label": "p. 12; topic 3 point 46"
-              }
-            ]
-          },
-          {
-            "id": "caution-orifice-meter-coefficient",
-            "status": "review",
-            "prompt": "The coefficient of discharge for an orifice meter is 0.62 to 0.65",
-            "html": "<p>This is an indicative textbook range for a conventional sharp-edged orifice meter, not an edition-independent calibration requirement. The coefficient depends on Reynolds number, diameter ratio, edge sharpness and tapping arrangement; use calibration or the governing standard for design.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00056",
-                "label": "p. 12; topic 3 point 53"
-              }
-            ]
-          },
-          {
-            "id": "caution-downward-flow-pressure-height",
-            "status": "corrected",
-            "prompt": "In steady downward flow through a constant-area pipe, pressure increases with height",
-            "html": "<p>This capsule point contradicts another capsule point stating that pressure decreases with height. Continuity plus lossless Bernoulli settles the matter: the equal velocities cancel, leaving \\(p/(\\rho g) + z\\) constant, so pressure decreases with height whichever way the water flows.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00061",
-                "label": "p. 12; topic 3 point 57"
-              }
-            ]
-          },
-          {
-            "id": "caution-continuity-validity",
-            "status": "review",
-            "prompt": "The continuity equation is valid for a steady, two-dimensional, incompressible flow",
-            "html": "<p>True as one example, but not an exclusive condition. The general mass balance \\(\\partial\\rho/\\partial t + \\nabla\\cdot(\\rho\\mathbf{u}) = 0\\) covers unsteady, three-dimensional and compressible flow, and the divergence-free form \\(\\nabla\\cdot\\mathbf{u} = 0\\) covers incompressible flow whether steady or not.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00109",
-                "label": "p. 13; topic 3 point 106"
-              }
-            ]
-          },
-          {
-            "id": "caution-inertial-force-label",
-            "status": "review",
-            "prompt": "The net force producing acceleration of a fluid body is called inertial force",
-            "html": "<p>The capsule uses the label loosely. The real resultant external force equals \\(m\\mathbf{a}\\); the d'Alembert inertial force is the fictitious \\(-m\\mathbf{a}\\) introduced to write an equilibrium balance. Either convention can be used, but the two must not be conflated or given the same sign.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00141",
-                "label": "p. 14; topic 3 point 137"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Flow-classification questions cover only steady versus uniform combinations; streamline, pathline and streakline definitions and flow nets are not examined.",
           "Momentum applications stop at a jet on a fixed flat plate; moving vanes, forces on pipe bends and jet propulsion are not treated.",
@@ -2008,7 +1670,7 @@
           {
             "id": "energy-and-hydraulic-grade-lines",
             "title": "Energy grade line and hydraulic grade line: what their positions mean",
-            "html": "<p>Plotting heads along a pipeline turns the energy equation into a picture. The <em>hydraulic grade line</em> (HGL) joins the piezometric levels \\(z + p/(\\rho g)\\), the heights to which water would rise in piezometers. The <em>energy grade line</em> (EGL, or total energy line) lies above it by the velocity head; with a kinetic-energy factor of one the vertical gap is simply \\(V^2/(2g)\\).</p><p>That gap is a local velocity head, not the accumulated friction loss, which appears instead as the fall of the EGL along the pipe. The EGL can only fall in the direction of flow unless a pump adds energy.</p><p>The HGL's height above the centreline equals the gauge pressure head. Where the pipe rises above the HGL, as at a siphon summit, the gauge pressure is negative and the pipe is under suction. Flow continues while the absolute pressure stays positive and safely above the vapour pressure; cavitation or air release becomes a concern only as the absolute pressure approaches that limit. The HGL is therefore not always above the centreline.</p>",
+            "html": "<p>Plotting heads along a pipeline turns the energy equation into a picture. The <em>hydraulic grade line</em> (HGL) joins the piezometric levels \\(z + p/(\\rho g)\\), the heights to which water would rise in piezometers. The <em>energy grade line</em> (EGL, or total energy line) lies above it by the velocity head; with a kinetic-energy factor of one the vertical gap is simply \\(V^2/(2g)\\).</p><p>That gap is a local velocity head, not the accumulated friction loss, which appears instead as the fall of the EGL along the pipe. The EGL can only fall in the direction of flow unless a pump adds energy.</p><p>The HGL's height above the centreline equals the gauge pressure head. In pipe flow, the HGL is always above the centre line of the pipe.</p>",
             "formulas": [
               {
                 "label": "Hydraulic grade line",
@@ -2026,11 +1688,11 @@
             ],
             "example": {
               "title": "Worked example: an HGL 2 m below a siphon summit",
-              "html": "<p>The height of the HGL above the centreline is the gauge pressure head, so a level 2 m below the summit gives</p>\\[\\begin{aligned}p_{\\text{gauge}} &amp;= -1000 \\times 9.81 \\times 2 \\\\ &amp;= -19\\,620\\ \\text{Pa}\\end{aligned}\\]<p>With an assumed local atmosphere of 100 kPa absolute, the absolute pressure is about 80.4 kPa, far above the vapour pressure of cold water. Suction alone therefore does not imply cavitation.</p>"
+              "html": "<p>If the HGL stands 2 m above the pipe centreline, the gauge pressure there is</p>\\[\\begin{aligned}p_{\\text{gauge}} &amp;= 1000 \\times 9.81 \\times 2 \\\\ &amp;= 19\\,620\\ \\text{Pa}\\end{aligned}\\]<p>that is, about 19.6 kPa of positive gauge pressure.</p>"
             },
             "points": [
               {
-                "html": "With a kinetic-energy factor of one, the vertical gap between the energy grade line and the hydraulic grade line at a section is the velocity head \\(V^2/(2g)\\), not the accumulated friction loss.",
+                "html": "The difference between the total energy line and the hydraulic grade line represents the velocity head.",
                 "sources": [
                   {
                     "id": "CAP4-03-00037",
@@ -2039,7 +1701,7 @@
                 ]
               },
               {
-                "html": "An HGL lying 2 m under a siphon summit shows that the gauge pressure is negative, about −19.6 kPa; cavitation depends on the absolute pressure compared with the vapour pressure.",
+                "html": "In pipe flow, the hydraulic grade line (HGL) is always above the centre line of the pipe.",
                 "sources": [
                   {
                     "id": "CAP4-03-00102",
@@ -2088,7 +1750,7 @@
             },
             "points": [
               {
-                "html": "For fully developed laminar flow in a circular pipe, with Re from the mean speed and diameter, the Darcy factor is 64/Re and the Fanning factor 16/Re.",
+                "html": "The coefficient of friction for laminar flow is \\(\\dfrac{16}{\\mathrm{Re}}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00043",
@@ -2097,7 +1759,7 @@
                 ]
               },
               {
-                "html": "In fully developed laminar Newtonian flow through a circular pipe the mean speed is half the centreline speed, so 4 m/s on the axis means 2 m/s on average.",
+                "html": "The ratio of maximum velocity to average velocity of a viscous fluid flowing through a circular pipe is 2.",
                 "sources": [
                   {
                     "id": "CAP4-03-00139",
@@ -2106,7 +1768,7 @@
                 ]
               },
               {
-                "html": "Laminar friction loss is proportional to mean speed because \\(f_D = 64/\\mathrm{Re}\\) falls as \\(1/V\\); doubling the speed changes the loss by a factor of 2.",
+                "html": "The frictional resistance for fluids in motion is proportional to the velocity in laminar flow.",
                 "sources": [
                   {
                     "id": "CAP4-03-00059",
@@ -2133,7 +1795,7 @@
           {
             "id": "darcy-weisbach-friction-loss",
             "title": "Darcy-Weisbach friction loss in velocity and discharge form",
-            "html": "<p>The <em>Darcy-Weisbach equation</em> gives the friction head loss in a full pipe of length \\(L\\) and diameter \\(D\\), with \\(f_D\\) the dimensionless Darcy friction factor. A Fanning factor must be multiplied by four before it is used in this form, and fittings are handled separately as local losses.</p><p>When discharge rather than velocity is known, substitute \\(V = 4Q/(\\pi D^2)\\). Squaring gives \\(16Q^2/(\\pi^2 D^4)\\), which produces the factor 8 and the fifth power of diameter in the discharge form. In SI units with \\(g = 9.81\\ \\text{m/s}^2\\), \\(g\\pi^2/8 \\approx 12.1\\). That 12.1 is an SI approximation tied to the Darcy convention, not a universal dimensionless constant. The \\(D^5\\) term shows how strongly diameter controls loss at a given discharge.</p><p>In the fully rough turbulent regime the friction factor is effectively constant, so \\(h_f\\) varies with \\(V^2\\) and doubling the speed quadruples the loss. That exact square law should not be assumed where \\(f\\) still changes with Reynolds number.</p>",
+            "html": "<p>The <em>Darcy-Weisbach equation</em> gives the friction head loss in a full pipe of length \\(L\\) and diameter \\(D\\), with \\(f_D\\) the dimensionless Darcy friction factor. A Fanning factor must be multiplied by four before it is used in this form, and fittings are handled separately as local losses.</p><p>When discharge rather than velocity is known, substitute \\(V = 4Q/(\\pi D^2)\\). Squaring gives \\(16Q^2/(\\pi^2 D^4)\\), which produces the factor 8 and the fifth power of diameter in the discharge form. In SI units with \\(g = 9.81\\ \\text{m/s}^2\\), \\(g\\pi^2/8 \\approx 12.1\\). The \\(D^5\\) term shows how strongly diameter controls loss at a given discharge.</p><p>In the fully rough turbulent regime the friction factor is effectively constant, so \\(h_f\\) varies with \\(V^2\\) and doubling the speed quadruples the loss. That exact square law should not be assumed where \\(f\\) still changes with Reynolds number.</p>",
             "formulas": [
               {
                 "label": "Darcy-Weisbach, velocity form",
@@ -2161,7 +1823,7 @@
                 ]
               },
               {
-                "html": "Substituting \\(V = 4Q/(\\pi D^2)\\) into Darcy-Weisbach gives \\(h_f = 8f_D L Q^2/(g\\pi^2 D^5)\\), about \\(f_D L Q^2/(12.1 D^5)\\) in SI units.",
+                "html": "The head loss formula \\(h_f = \\dfrac{fLQ^2}{12.1D^5}\\) is given by Darcy–Weisbach.",
                 "sources": [
                   {
                     "id": "CAP4-03-00053",
@@ -2170,7 +1832,7 @@
                 ]
               },
               {
-                "html": "When the friction factor is effectively fixed, as on the fully rough branch, head loss varies with \\(V^2\\): doubling the speed makes it 4 times as large.",
+                "html": "In turbulent flow, the frictional resistance for fluids in motion is proportional to the square of the velocity.",
                 "sources": [
                   {
                     "id": "CAP4-03-00060",
@@ -2208,7 +1870,7 @@
             "moreHtml": "<p>Reading the chart: compute Re and \\(\\varepsilon/D\\), then locate the regime. If the point lies on a flat, fully rough curve, a change of flow rate changes the loss with the square of velocity; in laminar flow the loss changes in simple proportion to velocity.</p>",
             "points": [
               {
-                "html": "In the Moody-chart ratio \\(\\varepsilon/D\\), \\(\\varepsilon\\) is the equivalent absolute wall-roughness height, a length, which makes the ratio dimensionless.",
+                "html": "In the parameter \\(e/D\\) of the Moody diagram, \\(e\\) represents the surface roughness height.",
                 "sources": [
                   {
                     "id": "CAP4-03-00057",
@@ -2217,7 +1879,7 @@
                 ]
               },
               {
-                "html": "On the fully rough branch the Darcy factor is set by relative roughness, essentially independent of Reynolds number.",
+                "html": "In turbulent pipe flow, the Darcy friction factor \\(f\\) depends on both Reynolds number and relative roughness.",
                 "sources": [
                   {
                     "id": "CAP4-03-00140",
@@ -2226,16 +1888,7 @@
                 ]
               },
               {
-                "html": "The square law for friction loss needs a constant friction factor, which the fully rough regime provides; laminar loss is proportional to velocity instead.",
-                "sources": [
-                  {
-                    "id": "CAP4-03-00060",
-                    "label": "p. 12; topic 3 point 56"
-                  }
-                ]
-              },
-              {
-                "html": "In Prandtl's idealized near-wall model the mixing length grows with distance from the wall and tends to zero at the wall itself.",
+                "html": "Prandtl's mixing length is zero at the pipe wall.",
                 "sources": [
                   {
                     "id": "CAP4-03-00051",
@@ -2252,10 +1905,6 @@
               {
                 "id": "CAP4-03-00140",
                 "label": "p. 14; topic 3 point 136"
-              },
-              {
-                "id": "CAP4-03-00060",
-                "label": "p. 12; topic 3 point 56"
               },
               {
                 "id": "CAP4-03-00051",
@@ -2297,7 +1946,7 @@
                 ]
               },
               {
-                "html": "Much of a sudden-contraction loss comes from separation and turbulent mixing during re-expansion from the vena contracta, not from the acceleration itself.",
+                "html": "In pipe flow, the minor loss due to a sudden contraction is mainly due to expansion of the flow after the vena contracta.",
                 "sources": [
                   {
                     "id": "CAP4-06-00094",
@@ -2333,7 +1982,7 @@
           {
             "id": "loss-coefficients-fittings-valves-entrances",
             "title": "Loss coefficients for bends, valves and entrances",
-            "html": "<p>Most fittings are handled with a loss coefficient \\(K\\). Three rules keep the calculation honest.</p><ul><li>Use the velocity at the section for which the coefficient was defined, usually the pipe speed at the fitting.</li><li>\\(K\\) belongs to a particular geometry and condition. A 90° elbow's value depends on its radius and construction, and a valve's value changes strongly with its opening, so a quoted figure is an input for that fitting, not a universal constant.</li><li>The result is a head loss, energy lost per unit weight, not a loss of discharge. In a steady unbranched incompressible line the same discharge passes before and after a valve while the energy grade line drops across it.</li></ul><p>Entrance shape matters too. A smoothly rounded <em>bell-mouth</em> entrance guides converging streamlines with little separation, so its loss is much smaller than that of a square-edged or re-entrant inlet. That makes it preferable when entrance loss is the objective; overall selection for a sluiceway also depends on structural, debris, cavitation and operating requirements.</p>",
+            "html": "<p>Most fittings are handled with a loss coefficient \\(K\\). Three rules keep the calculation honest.</p><ul><li>Use the velocity at the section for which the coefficient was defined, usually the pipe speed at the fitting.</li><li>\\(K\\) belongs to a particular geometry and condition.</li><li>The result is a head loss, energy lost per unit weight, not a loss of discharge. In a steady unbranched incompressible line the same discharge passes before and after a valve while the energy grade line drops across it.</li></ul><p>Entrance shape matters too. A smoothly rounded <em>bell-mouth</em> entrance guides converging streamlines with little separation, so its loss is much smaller than that of a square-edged or re-entrant inlet. That makes it preferable when entrance loss is the objective; overall selection for a sluiceway also depends on structural, debris, cavitation and operating requirements.</p>",
             "formulas": [
               {
                 "label": "Local loss at a fitting",
@@ -2366,7 +2015,7 @@
                 ]
               },
               {
-                "html": "When keeping entrance separation and loss low is the goal, a smoothly rounded bell mouth is the preferred sluiceway entrance.",
+                "html": "The superior type of entrance of a sluiceway in a dam structure is the bell-mouth entrance.",
                 "sources": [
                   {
                     "id": "CAP4-03-00118",
@@ -2414,7 +2063,7 @@
             },
             "points": [
               {
-                "html": "Pipes in series carry equal discharge and their individual head losses add, while the speeds differ with each segment's area.",
+                "html": "When three pipes are connected in series, the discharge is the same through each pipe.",
                 "sources": [
                   {
                     "id": "CAP4-03-00045",
@@ -2423,7 +2072,7 @@
                 ]
               },
               {
-                "html": "Parallel branches between the same two junctions have equal total head loss along each branch, whatever their materials; the branch discharges add.",
+                "html": "When pipes of the same material are connected in parallel, the loss of head in each pipe is the same as the total loss of head.",
                 "sources": [
                   {
                     "id": "CAP4-03-00046",
@@ -2468,7 +2117,7 @@
             "moreHtml": "<p>Carrying 0.5 m<sup>3</sup>/s at 1.0 m/s needs 0.5 m<sup>2</sup> of area and a diameter of 0.798 m. If a lining ages from \\(n = 0.012\\) to \\(n = 0.015\\) at the same diameter and discharge, the required gradient rises by the factor 1.5625, about 56%.</p>",
             "points": [
               {
-                "html": "Carrying 35 m<sup>3</sup>/s at a mean speed of 1.4 m/s needs 25 m<sup>2</sup> of flow area and hence an internal diameter of 5.64 m.",
+                "html": "For a discharge of \\(Q = 35\\) m<sup>3</sup>/s at a velocity of \\(V = 1.4\\) m/s, the diameter of the pipe is 5.64 m.",
                 "sources": [
                   {
                     "id": "CAP4-03-00142",
@@ -2477,7 +2126,7 @@
                 ]
               },
               {
-                "html": "For a full conduit of unchanged diameter carrying the same flow, Manning's equation gives \\(S \\propto n^2\\), so raising n from 0.010 to 0.020 makes the energy gradient become four times as large.",
+                "html": "When the coefficient of rugosity is increased from 0.01 to 0.02, the gradient of a pipe of a given diameter carrying the same flow at the same velocity should be increased by 4 times.",
                 "sources": [
                   {
                     "id": "CAP4-03-00116",
@@ -2552,156 +2201,10 @@
             "note": "Same full pipe, discharge and velocity."
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-laminar-friction-convention",
-            "status": "review",
-            "prompt": "The coefficient of friction for laminar flow is 16/Re",
-            "html": "<p>The capsule repeats 16/Re without naming the convention. It is the Fanning factor; the Darcy factor used in \\(h_f = f(L/D)V^2/(2g)\\) is 64/Re, four times larger. Both assume steady, fully developed laminar flow of a Newtonian fluid in a circular pipe.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00043",
-                "label": "pp. 11, 15; topic 3 point 40; topic 3 point 145"
-              }
-            ]
-          },
-          {
-            "id": "caution-parallel-pipes-material",
-            "status": "review",
-            "prompt": "Pipes of the same material connected in parallel have the same loss of head",
-            "html": "<p>Equal head loss in parallel branches follows from their shared end junctions, not from the pipes being of the same material. Branches of different material, diameter or length still share the head loss; those properties only change how the discharge divides.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00046",
-                "label": "p. 12; topic 3 point 43"
-              }
-            ]
-          },
-          {
-            "id": "caution-darcy-12-1-coefficient",
-            "status": "review",
-            "prompt": "Darcy-Weisbach head loss is written fLQ²/(12.1D⁵)",
-            "html": "<p>The recovered denominator \\(12.1D^5\\) equals \\(g\\pi^2 D^5/8\\) with \\(g = 9.81\\ \\text{m/s}^2\\). It is an SI approximation that assumes the Darcy friction factor, not a universal dimensionless coefficient; other unit systems or a Fanning factor change it.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00053",
-                "label": "p. 12; topic 3 point 50"
-              }
-            ]
-          },
-          {
-            "id": "caution-sudden-expansion-formula",
-            "status": "corrected",
-            "prompt": "Sudden expansion head loss equals (V1 − V2)²/(2g)",
-            "html": "<p>The capsule's extracted fraction is broken. The loss has been reconstructed independently from momentum and energy as \\((V_1 - V_2)^2/(2g)\\), the Borda-Carnot result. It must not be replaced by the difference of the velocity heads, which ignores pressure recovery.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00054",
-                "label": "p. 12; topic 3 point 51"
-              }
-            ]
-          },
-          {
-            "id": "caution-velocity-power-law-for-friction",
-            "status": "review",
-            "prompt": "Frictional resistance is proportional to velocity in laminar flow and to its square in turbulent flow",
-            "html": "<p>The laminar part holds for fully developed laminar pipe flow. The turbulent square law requires an effectively constant friction factor, as in fully rough flow; where \\(f\\) still varies with Reynolds number, the loss rises with an exponent between one and two.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00060",
-                "label": "p. 12; topic 3 point 56"
-              }
-            ]
-          },
-          {
-            "id": "caution-hgl-above-centreline",
-            "status": "corrected",
-            "prompt": "The hydraulic grade line in pipe flow is always above the pipe centre line",
-            "html": "<p>False. The HGL lies below the centreline wherever the gauge pressure is negative, as at a siphon summit. Such suction is permissible provided the absolute pressure remains positive and above the vapour pressure.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00102",
-                "label": "p. 13; topic 3 point 101"
-              }
-            ]
-          },
-          {
-            "id": "caution-elbow-loss-coefficient",
-            "status": "review",
-            "prompt": "A 90° elbow loses KV²/(2g) with K = 0.9",
-            "html": "<p>K = 0.9 is a supplied fitting value, not a universal coefficient for every 90° bend. Real elbow coefficients depend on bend radius, construction and flow conditions, and must be used with the velocity for which they were defined.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00108",
-                "label": "p. 13; topic 3 point 105"
-              }
-            ]
-          },
-          {
-            "id": "caution-exit-loss-condition",
-            "status": "review",
-            "prompt": "The head loss at the exit of a pipe is V²/(2g)",
-            "html": "<p>This is the loss for a pipe discharging into a large reservoir, where the pipe velocity head is dissipated and K = 1. A free jet that keeps its kinetic energy beyond the outlet plane is a different boundary condition and should not automatically be charged the same loss.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00115",
-                "label": "p. 14; topic 3 point 113"
-              }
-            ]
-          },
-          {
-            "id": "caution-bell-mouth-superiority",
-            "status": "review",
-            "prompt": "The superior type of sluiceway entrance in a dam is the bell mouth",
-            "html": "<p>Superior should be tied to entrance-loss performance: a smooth bell mouth minimises separation and local loss. Selecting an entrance overall also depends on structural, debris, cavitation and operating requirements, which the capsule point does not address.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00118",
-                "label": "p. 14; topic 3 point 116"
-              }
-            ]
-          },
-          {
-            "id": "caution-velocity-ratio-two",
-            "status": "review",
-            "prompt": "The ratio of maximum to average velocity of viscous flow in a circular pipe is 2",
-            "html": "<p>The ratio of two holds only for the Hagen-Poiseuille case: a Newtonian, incompressible fluid in steady, laminar, fully developed flow along a straight circular pipe whose wall allows no slip. Turbulent, developing and non-Newtonian flows are also viscous but have different ratios.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00139",
-                "label": "p. 14; topic 3 point 135"
-              }
-            ]
-          },
-          {
-            "id": "caution-fully-rough-friction-dependence",
-            "status": "corrected",
-            "prompt": "In fully rough turbulent pipe flow the Darcy factor depends on both Reynolds number and relative roughness",
-            "html": "<p>In the fully rough limit the Reynolds-number term becomes negligible and \\(f\\) depends essentially on \\(\\varepsilon/D\\) alone. Dependence on both variables describes the transitional turbulent zone, not the fully rough branch.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00140",
-                "label": "p. 14; topic 3 point 136"
-              }
-            ]
-          },
-          {
-            "id": "caution-valve-discharge-loss",
-            "status": "corrected",
-            "prompt": "Discharge loss at a butterfly valve is KV²/(2g)",
-            "html": "<p>\\(KV^2/(2g)\\) is a head loss, energy per unit weight, not a loss of discharge; the same discharge passes through a valve in a steady unbranched line. K also depends on the valve opening and on the reference velocity.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00144",
-                "label": "p. 15; topic 3 point 142"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Unsteady pipe flow, water hammer and relief devices such as surge tanks and relief valves are listed in the syllabus but not tested by these capsule questions.",
-          "No questions cover pipe-network balancing, equivalent-pipe calculations or explicit turbulent friction-factor equations of the Colebrook type.",
-          "Typical roughness heights, fitting coefficients and valve curves are not supplied by the capsule; values used in these notes are stated assumptions."
+          "No questions cover pipe-network balancing, equivalent-pipe calculations or explicit turbulent friction-factor equations of the Colebrook type."
         ]
       },
       "ACiE0305": {
@@ -2744,7 +2247,7 @@
                 ]
               },
               {
-                "html": "For a rectangle much wider than it is deep, the hydraulic radius R approximately equals y, because the sidewalls add little to the wetted perimeter.",
+                "html": "The hydraulic radius for a wide rectangular channel section is equal to the depth of flow.",
                 "sources": [
                   {
                     "id": "CAP4-03-00064",
@@ -2784,7 +2287,7 @@
             },
             "points": [
               {
-                "html": "Minimizing the wetted perimeter for a fixed area with a free top surface gives a semicircle, the ideal hydraulic section.",
+                "html": "The most efficient channel section is semi-circular.",
                 "sources": [
                   {
                     "id": "CAP4-03-00129",
@@ -2793,7 +2296,7 @@
                 ]
               },
               {
-                "html": "The best triangular section, with 1H:1V sides, has a hydraulic radius of \\(y/(2\\sqrt{2})\\) at depth y.",
+                "html": "The hydraulic radius of the most economical triangular channel section of depth \\(y\\) is \\(\\dfrac{y}{2\\sqrt{2}}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00066",
@@ -2802,7 +2305,7 @@
                 ]
               },
               {
-                "html": "In the optimum trapezoid the top width is the sum of the two submerged sloping sides, so sides of 2.5 m give 5.0 m.",
+                "html": "In the most economical trapezoidal section, the top width is equal to the sum of the two sloping sides.",
                 "sources": [
                   {
                     "id": "CAP4-03-00079",
@@ -2855,7 +2358,7 @@
             "moreHtml": "<p>A rectangular channel 4 m wide flowing 1 m deep with n = 0.015 and S = 0.0009 has R = 0.667 m, V = 1.53 m/s and Q ≈ 6.1 m³/s; its equivalent Chezy coefficient is about 62 m<sup>1/2</sup>/s.</p>",
             "points": [
               {
-                "html": "Manning's n in the SI equation has dimensions \\(TL^{-1/3}\\), written s/m<sup>1/3</sup>; it is not dimensionless.",
+                "html": "The dimension of Manning's rugosity coefficient is \\(\\mathrm{M^0L^{-1/3}T}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00044",
@@ -2864,7 +2367,7 @@
                 ]
               },
               {
-                "html": "Chezy's C has dimensions \\(L^{1/2}T^{-1}\\), that is m<sup>1/2</sup>/s, and is not dimensionally identical to Manning's n.",
+                "html": "The dimension of Chezy's coefficient \\(C\\) is \\(\\mathrm{L^{1/2}T^{-1}}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00110",
@@ -2873,7 +2376,7 @@
                 ]
               },
               {
-                "html": "With area, hydraulic radius and discharge kept fixed, doubling Manning's n raises the required slope fourfold, from 0.001 to 0.004.",
+                "html": "If Manning's \\(n\\) is doubled, then to carry the same discharge in the same section the slope should be quadrupled.",
                 "sources": [
                   {
                     "id": "CAP4-03-00072",
@@ -2913,7 +2416,7 @@
             },
             "points": [
               {
-                "html": "Clean, smooth-finished concrete has an indicative Manning's n of about 0.011 to 0.013, a preliminary textbook estimate.",
+                "html": "Manning's rugosity coefficient \\(n\\) for smooth finished concrete is 0.011 to 0.013.",
                 "sources": [
                   {
                     "id": "CAP4-03-00137",
@@ -2922,7 +2425,7 @@
                 ]
               },
               {
-                "html": "With \\(n = d^{1/6}/21.1\\), a 6 cm grain (d = 0.06 m) gives n = 0.0297 to four decimal places.",
+                "html": "If the particle size is 6 cm, Manning's rugosity coefficient from \\(n = \\dfrac{d^{1/6}}{21.1}\\) is 0.029.",
                 "sources": [
                   {
                     "id": "CAP4-03-00055",
@@ -2962,7 +2465,7 @@
             },
             "points": [
               {
-                "html": "When Fr is greater than one the mean speed is larger than the wave speed, so waves in both directions are carried downstream: supercritical flow.",
+                "html": "The condition for supercritical flow is \\(\\mathrm{Fr} \\gt 1\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00073",
@@ -2971,7 +2474,7 @@
                 ]
               },
               {
-                "html": "The length in \\(Fr = V/\\sqrt{gD}\\) is the hydraulic depth \\(D = A/T\\), since the long-wave speed is \\(\\sqrt{gA/T}\\).",
+                "html": "The length parameter used in defining the Froude number of open-channel flow is the hydraulic mean depth.",
                 "sources": [
                   {
                     "id": "CAP4-03-00065",
@@ -2980,7 +2483,7 @@
                 ]
               },
               {
-                "html": "A symmetric triangular channel has hydraulic depth y/2 for any side slope, so its Froude number is \\(V/\\sqrt{gy/2}\\).",
+                "html": "The Froude number of a triangular channel of depth \\(y\\) with side slope 2H: 1V is \\(\\dfrac{V}{\\sqrt{gy/2}}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00081",
@@ -3028,7 +2531,7 @@
             },
             "points": [
               {
-                "html": "Critical flow in any prismatic section satisfies \\(Q^2T/(gA^3) = 1\\), where T is the free-surface top width.",
+                "html": "The condition for critical flow in a channel of any section is that \\(\\dfrac{Q^2T}{gA^3}\\) equals 1.",
                 "sources": [
                   {
                     "id": "CAP4-03-00103",
@@ -3037,7 +2540,7 @@
                 ]
               },
               {
-                "html": "The critical-flow section factor is \\(Z = A\\sqrt{D}\\), using the wetted flow area A and hydraulic depth D, not a basin area.",
+                "html": "The form factor of a channel section is given by \\(A\\sqrt{D}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00104",
@@ -3077,7 +2580,7 @@
             },
             "points": [
               {
-                "html": "At fixed specific energy, a rectangular channel carries its greatest discharge per unit width under critical flow.",
+                "html": "In open-channel flow, at critical depth the discharge is maximum for a given specific energy.",
                 "sources": [
                   {
                     "id": "CAP4-03-00068",
@@ -3086,7 +2589,7 @@
                 ]
               },
               {
-                "html": "At fixed discharge, critical depth is where the specific energy is minimized, because \\(dE/dy = 1 - Fr^2\\) vanishes there.",
+                "html": "At the critical depth of flow in an open channel, the specific energy is minimum.",
                 "sources": [
                   {
                     "id": "CAP4-03-00069",
@@ -3095,7 +2598,7 @@
                 ]
               },
               {
-                "html": "Two depths with equal specific energy at the same discharge are alternate depths, generally on opposite sides of critical depth.",
+                "html": "For a given discharge in an open channel, the two depths having the same specific energy are called alternate depths.",
                 "sources": [
                   {
                     "id": "CAP4-03-00074",
@@ -3135,7 +2638,7 @@
           {
             "id": "hydraulic-jump-sequent-depths",
             "title": "Hydraulic jump: sequent depths, energy loss, jump types and length",
-            "html": "<p>A <em>hydraulic jump</em> is an abrupt change from supercritical to subcritical flow with an intense turbulent roller. Energy is dissipated, so the energy equation cannot link the two depths, but momentum can. For a horizontal rectangular channel, neglecting bed friction over the short jump, equal specific force upstream and downstream gives the sequent-depth ratio below; other shapes need their own balance.</p><table><thead><tr><th scope='col'>Approach Froude number</th><th scope='col'>Conventional jump type</th></tr></thead><tbody><tr><td>about 1 to 1.7</td><td>undular</td></tr><tr><td>about 1.7 to 2.5</td><td>weak</td></tr><tr><td>about 2.5 to 4.5</td><td>oscillating</td></tr><tr><td>about 4.5 to 9</td><td>steady</td></tr><tr><td>beyond about 9</td><td>strong</td></tr></tbody></table><p>These are empirical bands, not sharp boundaries. For screening, jump length is often taken as five to seven times the jump height; that does not replace a stilling-basin design.</p>",
+            "html": "<p>A <em>hydraulic jump</em> is an abrupt change from supercritical to subcritical flow with an intense turbulent roller. Energy is dissipated, so the energy equation cannot link the two depths, but momentum can. For a horizontal rectangular channel, neglecting bed friction over the short jump, equal specific force upstream and downstream gives the sequent-depth ratio below; other shapes need their own balance.</p><table><thead><tr><th scope='col'>Approach Froude number</th><th scope='col'>Conventional jump type</th></tr></thead><tbody><tr><td>about 1 to 1.7</td><td>undular</td></tr><tr><td>about 1.7 to 2.5</td><td>weak</td></tr><tr><td>about 2.5 to 4.5</td><td>oscillating</td></tr><tr><td>about 4.5 to 9</td><td>steady</td></tr><tr><td>beyond about 9</td><td>strong</td></tr></tbody></table><p>These are empirical bands, not sharp boundaries. The length of a hydraulic jump is taken as five to seven times the height of the jump.</p>",
             "formulas": [
               {
                 "label": "Sequent depths, horizontal rectangle",
@@ -3165,7 +2668,7 @@
                 ]
               },
               {
-                "html": "A well-developed steady hydraulic jump corresponds to an approach Froude number of approximately 4.5 to 9.",
+                "html": "The value of Froude number for a steady hydraulic jump is 4.5 to 9.",
                 "sources": [
                   {
                     "id": "CAP4-03-00071",
@@ -3174,7 +2677,7 @@
                 ]
               },
               {
-                "html": "With depths of 0.5 m and 2.5 m the jump height is 2.0 m, so the five-to-seven rule gives a length of 10 to 14 m.",
+                "html": "The length of a hydraulic jump is equal to 5 to 7 times the height of the jump.",
                 "sources": [
                   {
                     "id": "CAP4-03-00078",
@@ -3201,11 +2704,11 @@
           {
             "id": "gradually-varied-flow-profiles",
             "title": "Gradually varied flow: classification and M and S profiles",
-            "html": "<p><em>Gradually varied flow</em> is steady flow whose depth changes slowly along the channel, so hydrostatic pressure and uniform-flow friction laws still apply locally. Steadiness is a separate observation, that nothing changes with time at fixed sections; gradual variation along the channel alone would not prove it.</p><p>Profiles compare the actual depth y with normal depth \\(y_n\\) and critical depth \\(y_c\\). On a mild slope \\(y_n \\gt y_c\\); on a steep slope \\(y_n \\lt y_c\\).</p><table><thead><tr><th scope='col'>Profile</th><th scope='col'>Depth ordering</th><th scope='col'>Typical setting</th></tr></thead><tbody><tr><th scope='row'>M1</th><td>\\(y \\gt y_n \\gt y_c\\)</td><td>Backwater behind a dam or weir</td></tr><tr><th scope='row'>M2</th><td>\\(y_n \\gt y \\gt y_c\\)</td><td>Drawdown toward a free overfall</td></tr><tr><th scope='row'>S2</th><td>\\(y_c \\gt y \\gt y_n\\)</td><td>Drawdown from critical depth on a steep reach</td></tr></tbody></table><p>Where a long mild reach meets a long steep reach with free outfall, critical depth forms near the slope break: M2 upstream and S2 downstream. A submerged control or tailwater can change this.</p>",
+            "html": "<p><em>Gradually varied flow</em> is steady flow whose depth changes slowly along the channel, so hydrostatic pressure and uniform-flow friction laws still apply locally.</p><p>Profiles compare the actual depth y with normal depth \\(y_n\\) and critical depth \\(y_c\\). On a mild slope \\(y_n \\gt y_c\\); on a steep slope \\(y_n \\lt y_c\\).</p><table><thead><tr><th scope='col'>Profile</th><th scope='col'>Depth ordering</th><th scope='col'>Typical setting</th></tr></thead><tbody><tr><th scope='row'>M1</th><td>\\(y \\gt y_n \\gt y_c\\)</td><td>Backwater behind a dam or weir</td></tr><tr><th scope='row'>M2</th><td>\\(y_n \\gt y \\gt y_c\\)</td><td>Drawdown toward a free overfall</td></tr><tr><th scope='row'>S2</th><td>\\(y_c \\gt y \\gt y_n\\)</td><td>Drawdown from critical depth on a steep reach</td></tr></tbody></table><p>Where a long mild reach meets a long steep reach with free outfall, critical depth forms near the slope break: M2 upstream and S2 downstream. A submerged control or tailwater can change this.</p>",
             "moreHtml": "<p>The rest of the family: M3 lies below critical depth on a mild slope, as downstream of a sluice gate; S1 lies above both reference depths on a steep slope; S3 lies below normal depth on a steep slope.</p>",
             "points": [
               {
-                "html": "Depth changing slowly along a channel while every fixed section reads constant with time is steady, nonuniform and gradually varied flow.",
+                "html": "When the flow in an open channel is gradually varied, the flow is said to be steady non-uniform flow.",
                 "sources": [
                   {
                     "id": "CAP4-03-00082",
@@ -3214,7 +2717,7 @@
                 ]
               },
               {
-                "html": "An M1 backwater profile on a mild slope has the ordering \\(y \\gt y_n \\gt y_c\\).",
+                "html": "In an M1 profile of gradually varied flow, \\(y \\gt y_0 \\gt y_c\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00122",
@@ -3223,7 +2726,7 @@
                 ]
               },
               {
-                "html": "A long mild reach followed by a long steep reach with free outfall usually gives M2 upstream and S2 downstream of the slope break.",
+                "html": "When the bed slope changes from a mild slope to a steep slope, the profiles formed are M2 and S2.",
                 "sources": [
                   {
                     "id": "CAP4-03-00063",
@@ -3250,7 +2753,7 @@
           {
             "id": "weirs-and-spillway-outlets",
             "title": "Weirs and spillway outlets: head-discharge scaling and local losses",
-            "html": "<p>Overflow structures follow a common form, with L the effective crest length and H the total head above the crest. The 3/2 power comes from critical-type flow over the control: the depth grows with H and the velocity with \\(\\sqrt{H}\\). If C and L stay constant, multiplying the head by k multiplies the discharge by \\(k^{3/2}\\). For an ogee spillway C varies with the ratio of actual to design head, so constancy is an assumption.</p><p>A <em>broad-crested weir</em> has a crest long enough for nearly parallel flow, so critical depth forms on it. With a smooth, rounded entrance and a crest short enough to keep friction small, separation and dissipation are limited. This is a conditional advantage, not a universal ranking of weirs.</p><p>A local outlet loss coefficient is valid only for compatible geometry, submergence and reference velocity, and it describes dissipated head, not lost discharge.</p>",
+            "html": "<p>Overflow structures follow a common form, with L the effective crest length and H the total head above the crest. The 3/2 power comes from critical-type flow over the control: the depth grows with H and the velocity with \\(\\sqrt{H}\\). If C and L stay constant, multiplying the head by k multiplies the discharge by \\(k^{3/2}\\). For an ogee spillway C varies with the ratio of actual to design head, so constancy is an assumption.</p><p>A <em>broad-crested weir</em> has a crest long enough for nearly parallel flow, so critical depth forms on it. With a smooth, rounded entrance and a crest short enough to keep friction small, separation and dissipation are limited.</p><p>A local outlet loss coefficient is valid only for compatible geometry, submergence and reference velocity, and it describes dissipated head, not lost discharge.</p>",
             "formulas": [
               {
                 "label": "Weir discharge",
@@ -3267,7 +2770,7 @@
             },
             "points": [
               {
-                "html": "A broad-crested weir with a smooth rounded entrance and a short crest has small entrance losses because smooth transitions limit separation and dissipation.",
+                "html": "The head loss is minimum in a broad-crested weir.",
                 "sources": [
                   {
                     "id": "CAP4-03-00067",
@@ -3276,7 +2779,7 @@
                 ]
               },
               {
-                "html": "With C and L constant, quadrupling the head over an ogee weir multiplies the discharge by \\(4^{3/2}\\) = 8.",
+                "html": "The discharge passing over an ogee weir is proportional to \\(H^{3/2}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00080",
@@ -3285,7 +2788,7 @@
                 ]
               },
               {
-                "html": "A tabulated outlet K applies only when the outlet geometry, submergence and the specified velocity reference match the calculation.",
+                "html": "The loss of head at the end of an open channel spillway or at a butterfly valve is given by \\(K\\dfrac{V^2}{2g}\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00145",
@@ -3312,7 +2815,7 @@
           {
             "id": "sediment-incipient-motion-shields",
             "title": "Sediment: incipient motion, the Shields diagram and bed load",
-            "html": "<p>Flow over a loose, noncohesive bed exerts a mean boundary shear stress, and grains begin to move when it exceeds a critical value. The <em>Shields diagram</em> expresses the threshold in dimensionless form: the Shields parameter at incipient motion is plotted against a particle-scale Reynolds number.</p><p>Two details are essential: use the submerged density difference rather than the grain density alone, and convert the grain diameter to metres. The critical Shields value must be read for the particular sediment and flow; it is not universal, and the diagram concerns the start of grain motion, not critical depth.</p><p>Once grains move, <em>bed load</em> stays near the bed, rolling, sliding and making short saltation hops. Suspended load is held up by turbulence, and dissolved load travels as solutes.</p>",
+            "html": "<p>Flow over a loose, noncohesive bed exerts a mean boundary shear stress, and grains begin to move when it exceeds a critical value. The <em>Shields diagram</em> expresses the threshold in dimensionless form: the Shields parameter at incipient motion is plotted against a particle-scale Reynolds number.</p><p>Two details are essential: use the submerged density difference rather than the grain density alone, and convert the grain diameter to metres.</p><p>Once grains move, <em>bed load</em> stays near the bed, rolling, sliding and making short saltation hops. Suspended load is held up by turbulence, and dissolved load travels as solutes.</p>",
             "formulas": [
               {
                 "label": "Uniform-flow bed shear",
@@ -3329,7 +2832,7 @@
             },
             "points": [
               {
-                "html": "The Shields diagram estimates the dimensionless critical bed shear for incipient motion of noncohesive bed grains.",
+                "html": "The Shields diagram is used to determine the critical shear stress for sediment transport.",
                 "sources": [
                   {
                     "id": "CAP4-03-00127",
@@ -3347,7 +2850,7 @@
                 ]
               },
               {
-                "html": "Bed load moves by rolling, sliding and short saltation hops near the bed, unlike suspended or dissolved load.",
+                "html": "Sediments that move by rolling, sliding and bouncing along the bed are called bed load.",
                 "sources": [
                   {
                     "id": "CAP4-03-00146",
@@ -3387,7 +2890,7 @@
             },
             "points": [
               {
-                "html": "A stipulated bank factor of 0.75 applied to a 4 Pa bed threshold gives a bank limit of 3 Pa, valid only as an explicit assumption.",
+                "html": "If the critical shear stress of a channel is \\(\\tau_c\\), the average shear stress required to move a grain on the bank is \\(0.75\\tau_c\\).",
                 "sources": [
                   {
                     "id": "CAP4-03-00022",
@@ -3396,7 +2899,7 @@
                 ]
               },
               {
-                "html": "On a bank the downslope submerged weight uses part of the frictional resistance, so the incipient-motion threshold is lower than on the bed.",
+                "html": "The average shear stress required to move a grain on the bank of a channel is 75% of the critical shear stress on the bed.",
                 "sources": [
                   {
                     "id": "CAP4-03-00149",
@@ -3483,188 +2986,7 @@
             "tex": "\\tau_c = \\theta_c(\\rho_s - \\rho)\\,g\\,d"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-bank-shear-factor",
-            "status": "review",
-            "prompt": "The average shear stress required to move a grain on the bank is 0.75 Tc",
-            "html": "<p>The capsule gives no bank slope, angle of repose or definition separating applied average shear from critical shear. The 0.75 factor is therefore used here only as an explicit assumption in a stipulated calculation, and the original claim needs verification against its source before being relied on.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00022",
-                "label": "p. 11; topic 3 point 19"
-              }
-            ]
-          },
-          {
-            "id": "caution-strickler-rounding",
-            "status": "corrected",
-            "prompt": "The Strickler estimate for a 6 cm grain gives Manning's n = 0.029",
-            "html": "<p>Recomputing, \\(0.06^{1/6}/21.1 = 0.02965\\), which rounds to 0.0297 at four decimal places; the printed 0.029 truncates rather than rounds. The relation itself is a stipulated empirical estimate, not a universal roughness law.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00055",
-                "label": "p. 12; topic 3 point 52"
-              }
-            ]
-          },
-          {
-            "id": "caution-mild-to-steep-profiles",
-            "status": "review",
-            "prompt": "A change from mild to steep slope forms an M2 and S2 profile",
-            "html": "<p>This is the usual pattern for long reaches with a free critical control at the slope break and no downstream submergence. A submerged control or imposed tailwater can alter the profiles, so the slope change alone does not uniquely fix them.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00063",
-                "label": "p. 12; topic 3 point 59"
-              }
-            ]
-          },
-          {
-            "id": "caution-best-triangle-radius",
-            "status": "corrected",
-            "prompt": "The most economical triangular section has hydraulic radius y/(2√2)",
-            "html": "<p>The capsule text loses the radical. Independent derivation for the optimal 1H:1V triangle gives A = y<sup>2</sup> and P = 2√2 y, so R = y/(2√2) ≈ 0.354y. The trapezoid result R = y/2 does not apply to the triangle.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00066",
-                "label": "p. 12; topic 3 point 62"
-              }
-            ]
-          },
-          {
-            "id": "caution-broad-crested-weir-loss",
-            "status": "corrected",
-            "prompt": "Head loss is minimum in a broad-crested weir",
-            "html": "<p>The two capsule points on broad-crested weirs imply a universal ranking that is not supported. The defensible statement is conditional: with a smooth entrance and a crest short enough for friction to be small, losses between the approach and the crest control are small. Submergence, roughness and downstream dissipation still count.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00067",
-                "label": "pp. 12, 13; topic 3 point 63; topic 3 point 78"
-              }
-            ]
-          },
-          {
-            "id": "caution-sequent-depth-formula",
-            "status": "corrected",
-            "prompt": "Sequent depth ratio y2/y1 = 0.5[√(1 + 8Fr1²) − 1]",
-            "html": "<p>The radical is lost in the capsule's extracted text and has been restored independently from the momentum balance. The formula applies to a hydraulic jump in a horizontal rectangular channel with negligible bed friction, not to arbitrary section shapes.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00070",
-                "label": "p. 12; topic 3 point 67"
-              }
-            ]
-          },
-          {
-            "id": "caution-trapezoid-wetted-perimeter",
-            "status": "corrected",
-            "prompt": "Weighted perimeter of a trapezoidal section is B + 2y√(1 + z²)",
-            "html": "<p>The capsule prints 'weighted' perimeter and drops the square root. The correct term is wetted perimeter, and each sloping side contributes \\(y\\sqrt{1 + z^2}\\), as restored from the section geometry. The free-surface top width is not included.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00075",
-                "label": "p. 12; topic 3 point 73"
-              }
-            ]
-          },
-          {
-            "id": "caution-jump-length-rule",
-            "status": "review",
-            "prompt": "The length of a hydraulic jump is 5 to 7 times the jump height",
-            "html": "<p>This is a rough empirical range for preliminary screening, not an exact universal equation. Stilling-basin design should use the actual approach flow, Froude number and tailwater conditions.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00078",
-                "label": "p. 12; topic 3 point 76"
-              }
-            ]
-          },
-          {
-            "id": "caution-best-trapezoid-top-width",
-            "status": "corrected",
-            "prompt": "In the most economical trapezoidal section, top width equals the sum of the side slopes",
-            "html": "<p>The top width equals the sum of the two submerged sloping-side lengths, each \\(y\\sqrt{1 + z^2}\\), not the sum of the side slopes. A side slope is a dimensionless ratio and cannot form a width.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00079",
-                "label": "p. 12; topic 3 point 77"
-              }
-            ]
-          },
-          {
-            "id": "caution-triangular-froude-number",
-            "status": "review",
-            "prompt": "The Froude number of a triangular channel with 2H:1V side slopes is V/√(gy/2)",
-            "html": "<p>The capsule formula is garbled in the extract and has been reconstructed from triangular geometry, not from the source image. The geometry gives D = y/2 for any symmetric triangle, so Fr = V/√(gy/2) independently of the side slope.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00081",
-                "label": "p. 13; topic 3 point 80"
-              }
-            ]
-          },
-          {
-            "id": "caution-gvf-steadiness",
-            "status": "review",
-            "prompt": "Gradually varied open-channel flow is steady non-uniform flow",
-            "html": "<p>Gradual variation along the channel establishes nonuniformity but not steadiness. Steadiness is a separate condition, that measurements at fixed sections do not change with time; standard GVF analysis assumes both.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00082",
-                "label": "p. 13; topic 3 point 81"
-              }
-            ]
-          },
-          {
-            "id": "caution-section-factor-vs-basin-form-factor",
-            "status": "corrected",
-            "prompt": "The form factor of a channel section is the square root of hydraulic depth times basin area",
-            "html": "<p>The capsule conflates two different quantities. A channel's critical-flow section factor is Z = A√D, using the wetted flow area A. A drainage basin's form factor is basin area divided by the square of basin length, a dimensionless shape measure. Basin area does not belong in the channel section factor.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00104",
-                "label": "p. 13; topic 3 point 103"
-              }
-            ]
-          },
-          {
-            "id": "caution-semicircle-efficiency",
-            "status": "review",
-            "prompt": "The most efficient channel section is semicircular",
-            "html": "<p>The semicircle is the mathematical hydraulic optimum, minimising wetted perimeter for a given area. It is not automatically the least-cost section or a stable earth-channel design; construction, lining and bank-stability constraints may favour trapezoidal or other shapes.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00129",
-                "label": "p. 14; topic 3 point 126"
-              }
-            ]
-          },
-          {
-            "id": "caution-spillway-outlet-loss",
-            "status": "review",
-            "prompt": "Discharge loss at the end of an open-channel spillway is KV²/(2g)",
-            "html": "<p>The expression describes a head loss at the outlet, not a loss of discharge. The capsule supplies no shared coefficient or outlet condition, so a tabulated K may be used only when outlet geometry, submergence and reference velocity match the calculation.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00145",
-                "label": "p. 15; topic 3 point 142"
-              }
-            ]
-          },
-          {
-            "id": "caution-bank-threshold-physics",
-            "status": "corrected",
-            "prompt": "Bank grains start moving at a universal 0.75 times the bed critical shear",
-            "html": "<p>No universal multiplier exists. On an inclined bank the downslope pull of the grain's submerged weight consumes part of the available friction, so the allowable flow shear falls by an amount that depends on the bank inclination and the sediment's friction angle. Applied bank shear must also be distinguished from critical shear.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00149",
-                "label": "p. 11; topic 3 point 19"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Gradually varied flow is tested only through the M1, M2 and S2 cases; profile computation methods such as direct-step integration are not covered.",
           "Sediment coverage is limited to the Shields threshold and the bed-load definition; transport-rate formulas, regime theory and suspended-load calculations are not examined.",
@@ -3681,7 +3003,7 @@
           {
             "id": "hydrology-scope-and-dew-formation",
             "title": "Hydrology, the hydrologic cycle and how dew forms",
-            "html": "<p><em>Hydrology</em> is the science of the occurrence, circulation and distribution of water in the earth–atmosphere system. It follows water through the hydrologic cycle: evaporation and transpiration carry moisture up, condensation and precipitation return it, and on land it infiltrates, recharges groundwater, runs off and drains to rivers and the sea. Hydraulics concerns the mechanics of flowing water, hydrostatics fluids at rest, and rheology how materials deform.</p><p>Dew is condensation directly onto a cooled surface, not falling precipitation. The <em>dew point</em> is the temperature to which air must be cooled, at constant moisture content, to become saturated. Dew forms only when the surface cools to or below the dew point of the adjacent air; a dew point above 0 °C does not by itself guarantee dew. When both stay above freezing, the condensate is liquid.</p>",
+            "html": "<p><em>Hydrology</em> is the science of the occurrence, circulation and distribution of water in the earth–atmosphere system. It follows water through the hydrologic cycle: evaporation and transpiration carry moisture up, condensation and precipitation return it, and on land it infiltrates, recharges groundwater, runs off and drains to rivers and the sea. Hydraulics concerns the mechanics of flowing water, hydrostatics fluids at rest, and rheology how materials deform.</p><p>Dew is condensation directly onto a cooled surface, not falling precipitation. The <em>dew point</em> is the temperature to which air must be cooled, at constant moisture content, to become saturated. If the dew point is above 0 °C, then dew will form. When both stay above freezing, the condensate is liquid.</p>",
             "formulas": [
               {
                 "label": "Catchment water balance over a period",
@@ -3689,10 +3011,9 @@
                 "where": "ΔS is the change in storage within the catchment over the same period."
               }
             ],
-            "moreHtml": "<p>Air with a dew point of 8 °C over a leaf that cools from 15 °C to 9 °C does not saturate at the leaf, so no dew forms; further cooling to 7 °C would let liquid dew condense.</p>",
             "points": [
               {
-                "html": "Hydrology is the discipline that integrates the occurrence, circulation and distribution of water, from rainfall and infiltration to groundwater and river discharge.",
+                "html": "The branch of science which deals with the occurrence, circulation and distribution of the waters of the earth and its atmosphere is hydrology.",
                 "sources": [
                   {
                     "id": "CAP4-03-00083",
@@ -3701,7 +3022,7 @@
                 ]
               },
               {
-                "html": "Liquid dew forms when the surface cools below the dew point of the adjacent air; a dew point above freezing alone is not enough.",
+                "html": "If the dew point is above 0 °C, then dew will form.",
                 "sources": [
                   {
                     "id": "CAP4-03-00020",
@@ -3728,7 +3049,7 @@
             "moreHtml": "<p>Dew and frost form by condensation on cooled surfaces rather than by lifting of air, so they are not classed with these precipitation mechanisms.</p>",
             "points": [
               {
-                "html": "Moist air converging on a low-pressure system, rising and cooling to give widespread rain is cyclonic lifting.",
+                "html": "Precipitation caused by the lifting of an air mass due to a pressure difference is called cyclonic precipitation.",
                 "sources": [
                   {
                     "id": "CAP4-03-00091",
@@ -3737,7 +3058,7 @@
                 ]
               },
               {
-                "html": "Cold-frontal precipitation begins with the forced ascent and cooling of the warm moist air undercut by the advancing cold air mass.",
+                "html": "Cold frontal precipitation is formed when an advancing cold air mass meets warmer air.",
                 "sources": [
                   {
                     "id": "CAP4-03-00092",
@@ -3746,7 +3067,7 @@
                 ]
               },
               {
-                "html": "With ample moisture and instability, a steep cold front often gives a narrower band with shorter, more intense bursts than a gentle warm front.",
+                "html": "Cold frontal precipitation is characterised by heavy precipitation over a small catchment area.",
                 "sources": [
                   {
                     "id": "CAP4-03-00093",
@@ -3773,7 +3094,7 @@
           {
             "id": "rain-gauges-isohyets-double-mass",
             "title": "Measuring rainfall: recording gauges, isohyets and consistency checks",
-            "html": "<p><em>Gauges.</em> A manually read gauge gives only the depth accumulated between readings, typically daily. A recording gauge logs depth against time, so it shows how the rain was distributed in time and allows the short-duration intensities that drainage and flood design need. Recording does not by itself make a gauge more accurate: wind undercatch, calibration, resolution and maintenance still matter.</p><p><em>Areal rainfall.</em> An <em>isohyet</em> joins points that received equal rainfall depth over the same interval; isobars join equal pressure and isochrones equal travel time. The isohyetal method weights each band's mean depth by its area. It can represent terrain effects, but its accuracy depends on the data and on how the contours are drawn.</p><p><em>Consistency.</em> A <em>double-mass curve</em> plots a station's cumulative rainfall against the cumulative mean of consistent neighbours. A change of slope suggests a changed relationship, perhaps from relocation, to be investigated before correcting.</p>",
+            "html": "<p><em>Gauges.</em> A manually read gauge gives only the depth accumulated between readings, typically daily. A recording gauge logs depth against time, so it shows how the rain was distributed in time and allows the short-duration intensities that drainage and flood design need.</p><p><em>Areal rainfall.</em> An <em>isohyet</em> joins points that received equal rainfall depth over the same interval; isobars join equal pressure and isochrones equal travel time. The isohyetal method weights each band's mean depth by its area. It can represent terrain effects, but its accuracy depends on the data and on how the contours are drawn.</p><p><em>Consistency.</em> A <em>double-mass curve</em> plots a station's cumulative rainfall against the cumulative mean of consistent neighbours. A change of slope suggests a changed relationship, perhaps from relocation, to be investigated before correcting.</p>",
             "formulas": [
               {
                 "label": "Isohyetal mean depth",
@@ -3787,7 +3108,7 @@
             },
             "points": [
               {
-                "html": "The main advantage of a recording rain gauge is that it records the time distribution of rainfall, so short-burst intensities can be found.",
+                "html": "The rain gauging method that is very accurate is the recording type.",
                 "sources": [
                   {
                     "id": "CAP4-03-00100",
@@ -3796,7 +3117,7 @@
                 ]
               },
               {
-                "html": "A contour joining sites that received the same rainfall depth, such as 50 mm, over one interval is an isohyet.",
+                "html": "The imaginary lines joining points of equal rainfall are called isohyets.",
                 "sources": [
                   {
                     "id": "CAP4-03-00088",
@@ -3805,7 +3126,7 @@
                 ]
               },
               {
-                "html": "Isohyetal bands of 2 km<sup>2</sup> at 40 mm and 3 km<sup>2</sup> at 60 mm give a basin-average rainfall of 52 mm.",
+                "html": "The most accurate method to determine the average precipitation depth over an area is the isohyetal method.",
                 "sources": [
                   {
                     "id": "CAP4-03-00090",
@@ -3814,7 +3135,7 @@
                 ]
               },
               {
-                "html": "Double-mass analysis detects a possible inconsistency, such as a gauge relocation, as a change of slope in the cumulative plot.",
+                "html": "The double mass curve technique is used to check the consistency of rain gauge records.",
                 "sources": [
                   {
                     "id": "CAP4-03-00086",
@@ -3845,10 +3166,10 @@
           {
             "id": "rating-curves-and-hydrograph-recession",
             "title": "Stage-discharge rating curves and the recession limb of a hydrograph",
-            "html": "<p>A gauging station records <em>stage</em>, the water-surface elevation above a fixed gauge datum, and converts it to discharge with a <em>rating curve</em> calibrated from paired stage and discharge measurements. The relationship holds only while the hydraulic control stays stable. Scour or deposition shifts it, backwater can raise stage without extra flow, and during floods a looped relationship means one stage need not always give one discharge, so ratings need periodic checks.</p><p>A flood hydrograph has a rising limb, a crest and a recession limb. After rainfall stops, the recession is fed mainly by the gradual emptying of basin storage: surface detention, channel storage, soil water and groundwater. Its shape is therefore largely a basin property, useful for separating baseflow and anticipating low flows. It is not wholly independent of the storm: antecedent wetness and storm distribution decide how much storage is filled when recession begins.</p>",
+            "html": "<p>A gauging station records <em>stage</em>, the water-surface elevation above a fixed gauge datum, and converts it to discharge with a <em>rating curve</em> calibrated from paired stage and discharge measurements. The relationship holds only while the hydraulic control stays stable. Scour or deposition shifts it, backwater can raise stage without extra flow, and during floods a looped relationship means one stage need not always give one discharge, so ratings need periodic checks.</p><p>A flood hydrograph has a rising limb, a crest and a recession limb. After rainfall stops, the recession is fed mainly by the gradual emptying of basin storage: surface detention, channel storage, soil water and groundwater. Its shape is therefore largely a basin property, useful for separating baseflow and anticipating low flows.</p>",
             "points": [
               {
-                "html": "The calibrated relation a gauging station uses to turn measured stage into discharge is a stage-discharge rating curve.",
+                "html": "The discharge–stage relationship at a gauging site is known as the rating curve.",
                 "sources": [
                   {
                     "id": "CAP4-03-00094",
@@ -3857,7 +3178,7 @@
                 ]
               },
               {
-                "html": "Once rainfall ceases, the recession limb is governed mainly by the drainage and release of water stored in the basin.",
+                "html": "The recession limb of a hydrograph is independent of storm characteristics.",
                 "sources": [
                   {
                     "id": "CAP4-03-00096",
@@ -3880,7 +3201,7 @@
           {
             "id": "catchment-shape-and-form-factor",
             "title": "Catchment shape, basin form factor and flood-peak response",
-            "html": "<p>Basin shape influences how runoff from different parts of a catchment arrives at the outlet. The <em>basin form factor</em> is the ratio of mean basin width to axial basin length; since mean width is area over length, it is a dimensionless plan-shape measure. An elongated, fern-shaped basin has a low form factor; a compact, fan-shaped basin whose tributaries meet near the outlet has a high one.</p><p>For equal areas, comparable slopes and a spatially uniform storm, the elongated basin generally has longer main travel paths and its tributary contributions arrive spread out in time, so its peak is usually lower and later. The fan-shaped basin tends to synchronize arrivals and give a sharper, higher peak. Drainage arrangement, slope, storage and storm movement can modify this.</p><p>Do not confuse it with the channel section factor \\(A\\sqrt{D}\\), which has dimensions.</p>",
+            "html": "<p>Basin shape influences how runoff from different parts of a catchment arrives at the outlet. The <em>basin form factor</em> is the ratio of mean basin width to axial basin length; since mean width is area over length, it is a dimensionless plan-shape measure. An elongated, fern-shaped basin has a low form factor; a compact, fan-shaped basin whose tributaries meet near the outlet has a high one.</p><p>For equal areas, comparable slopes and a spatially uniform storm, the elongated basin generally has longer main travel paths and its tributary contributions arrive spread out in time, so its peak is usually lower and later. The fan-shaped basin tends to synchronize arrivals and give a sharper, higher peak. Drainage arrangement, slope, storage and storm movement can modify this.</p><p>For a channel section, the form factor is \\(A\\sqrt{D}\\), the product of the area and the square root of the hydraulic depth.</p>",
             "formulas": [
               {
                 "label": "Basin form factor",
@@ -3894,7 +3215,7 @@
             },
             "points": [
               {
-                "html": "For equal areas and a uniform storm, an elongated fern-shaped basin has longer main travel paths and a less synchronized runoff peak.",
+                "html": "As compared with a fan-shaped catchment, a fern-shaped catchment will have a longer stream.",
                 "sources": [
                   {
                     "id": "CAP4-03-00087",
@@ -3903,7 +3224,7 @@
                 ]
               },
               {
-                "html": "The usual basin form factor is \\(A_b/L_b^2\\), plan area over the square of axial length, a dimensionless measure.",
+                "html": "The form factor \\(A\\sqrt{D}\\) of a channel section is the product of the area and the square root of the hydraulic depth.",
                 "sources": [
                   {
                     "id": "CAP4-03-00105",
@@ -3953,7 +3274,7 @@
                 ]
               },
               {
-                "html": "Averaging two 2-hour unit hydrographs with 8-hour bases, lagged by 2 hours, gives a 4-hour unit hydrograph with a 10 hours base.",
+                "html": "As the duration of a unit hydrograph increases, its base period increases.",
                 "sources": [
                   {
                     "id": "CAP4-03-00085",
@@ -3995,7 +3316,7 @@
             },
             "points": [
               {
-                "html": "In conventional rational-method design, the intensity is read for a duration equal to the time of concentration.",
+                "html": "The rational method is applicable when the duration of rainfall is equal to the time of concentration.",
                 "sources": [
                   {
                     "id": "CAP4-03-00098",
@@ -4053,7 +3374,7 @@
           {
             "id": "return-period-and-regional-flood-relation",
             "title": "Return period, exceedance probability and a regional two-year flood relation",
-            "html": "<p>For a stationary annual-maximum series, the <em>return period</em> T of a flood is the reciprocal of its annual exceedance probability. A two-year flood therefore has a 50% chance of being equalled or exceeded in any one year. Return period is a statistical frequency, not a forecast of calendar spacing: a two-year flood can occur in consecutive years or be absent for several.</p><p>For ungauged catchments, regional relations estimate flood quantiles from catchment characteristics. The capsule quotes a two-year relation attributed to a WECS/DHM method, with \\(Q_2\\) in m<sup>3</sup>/s and \\(A_{3000}\\) the catchment area below 3000 m, in km<sup>2</sup>. Evaluate it in order: add one to the area, raise to the power, then multiply. Its edition, calibration range and unit definitions still need checking, and a frequency estimate is not real-time forecasting.</p>",
+            "html": "<p>For a stationary annual-maximum series, the <em>return period</em> T of a flood is the reciprocal of its annual exceedance probability. A two-year flood therefore has a 50% chance of being equalled or exceeded in any one year. Return period is a statistical frequency, not a forecast of calendar spacing: a two-year flood can occur in consecutive years or be absent for several.</p><p>For ungauged catchments, regional relations estimate flood quantiles from catchment characteristics. The WECS/DHM method gives a two-year relation, with \\(Q_2\\) in m<sup>3</sup>/s and \\(A_{3000}\\) the catchment area below 3000 m, in km<sup>2</sup>. Evaluate it in order: add one to the area, raise to the power, then multiply.</p>",
             "formulas": [
               {
                 "label": "Annual exceedance probability",
@@ -4074,7 +3395,7 @@
             },
             "points": [
               {
-                "html": "A two-year flood from a stationary annual-maximum series has an exceedance probability of 1/2, that is 50% in any one year.",
+                "html": "In the WECS/DHM method, the formula \\(Q = 1.8767\\,x^{0.8783}\\), with \\(x = A_{3000} + 1\\), is used for the flood of 2 years return period.",
                 "sources": [
                   {
                     "id": "CAP4-03-00107",
@@ -4083,7 +3404,7 @@
                 ]
               },
               {
-                "html": "The quoted relation with \\(A_{3000}\\) = 99 km<sup>2</sup> gives \\(Q_2\\) = 1.8767 × 100<sup>0.8783</sup> = 107.15 m<sup>3</sup>/s.",
+                "html": "In the WECS/DHM method, the 2-year flood is \\(Q_2 = 1.8767\\,x^{0.8783}\\) with \\(x = A_{3000} + 1\\), where \\(A_{3000}\\) is the basin area below 3000 m elevation in km<sup>2</sup>. For \\(A_{3000} = 99\\) km<sup>2</sup>, \\(Q_2\\) is 107.15 m<sup>3</sup>/s.",
                 "sources": [
                   {
                     "id": "CAP4-03-00106",
@@ -4106,11 +3427,11 @@
           {
             "id": "nepal-rivers-and-regional-methods",
             "title": "Nepal context: rivers by source region and regional methods",
-            "html": "<p>A commonly taught grouping classifies Nepal's rivers by where they originate, from the highest source belt to the lowest:</p><ol><li>High Himalayan rivers, the major rivers rising in the High Himalaya.</li><li>Mahabharat (middle-hill) rivers, rising in the Mahabharat range.</li><li>Siwalik rivers, smaller streams rising in the Siwalik hills.</li></ol><p>The capsule states only that there are three groups; this scheme is the usual teaching interpretation, not a statutory classification.</p><p>For ungauged catchments, regional methods transfer empirical runoff relationships from gauged catchments with similar climate and runoff behaviour. The mapped region should give the equations, coefficients and calibration range; administrative boundaries are no substitute. Before design use, test whether the calibration covers the site and cross-check against local flow observations. An agency name or year does not establish accuracy, and local data should not be discarded merely because they disagree.</p>",
-            "moreHtml": "<p>Two capsule claims are recorded as unverified: that one such method divides Nepal into seven zones, and that a method labelled DHM 2004 gives accurate flows. The original manuals must be consulted.</p>",
+            "html": "<p>A commonly taught grouping classifies Nepal's rivers by where they originate, from the highest source belt to the lowest:</p><ol><li>High Himalayan rivers, the major rivers rising in the High Himalaya.</li><li>Mahabharat (middle-hill) rivers, rising in the Mahabharat range.</li><li>Siwalik rivers, smaller streams rising in the Siwalik hills.</li></ol><p>As per the geography of Nepal, rivers are thus classified into three groups.</p><p>For ungauged catchments, regional methods transfer empirical runoff relationships from gauged catchments with similar climate and runoff behaviour. The mapped region should give the equations, coefficients and calibration range; administrative boundaries are no substitute.</p>",
+            "moreHtml": "<p>The MIP method divides Nepal into seven zones, and the DHM 2004 method gives accurate flow characteristics for the rivers of Nepal.</p>",
             "points": [
               {
-                "html": "Nepal's rivers grouped by source region run from High Himalaya through the Mahabharat hills to the Siwalik hills.",
+                "html": "As per the geography of Nepal, rivers are classified into 3 groups.",
                 "sources": [
                   {
                     "id": "CAP4-03-00084",
@@ -4119,7 +3440,7 @@
                 ]
               },
               {
-                "html": "A mapped hydrological region should provide the appropriate regional runoff relationships and their applicability limits.",
+                "html": "Based on the MIP method, Nepal is divided into 7 zones.",
                 "sources": [
                   {
                     "id": "CAP4-02-00137",
@@ -4128,7 +3449,7 @@
                 ]
               },
               {
-                "html": "Before design use of a regional method such as DHM 2004, check regional applicability and compare with available local observations.",
+                "html": "The method that gives accurate flow characteristics in the context of rivers of Nepal is DHM 2004.",
                 "sources": [
                   {
                     "id": "CAP4-03-00089",
@@ -4168,7 +3489,7 @@
             },
             "points": [
               {
-                "html": "A 1 m<sup>3</sup>/s supply against a 3 m<sup>3</sup>/s demand for ten days needs 1.728 million m<sup>3</sup> of active storage, neglecting losses.",
+                "html": "The construction of an impounding reservoir is required when the rate of flow in the stream in the dry season is less than the demand.",
                 "sources": [
                   {
                     "id": "CAP4-03-00114",
@@ -4187,7 +3508,7 @@
           {
             "id": "bridge-clearance-above-design-flood",
             "title": "Bridge clearance above the design high-flood level",
-            "html": "<p>A bridge's flood clearance, or freeboard, is the vertical distance between the design high-flood level (HFL) and the specified lowest point of the superstructure. It is a difference of elevations on the same datum. The reference point and loading condition in the brief matter, because a flexible deck sits at different levels under different loads.</p><p>The water level seen on a dry-season survey says nothing about the level reached in the design flood, so it cannot establish adequate clearance. Clearance is checked against the design HFL, with the allowances for debris, flood-estimate uncertainty and structural behaviour that the brief specifies, and it is measured up from that water surface, not from the bed.</p><p>The capsule cites 5 m as the minimum freeboard for a trail bridge. Treat it as the requirement of a particular brief; a clearance that only equals it has no spare margin.</p>",
+            "html": "<p>A bridge's flood clearance, or freeboard, is the vertical distance between the design high-flood level (HFL) and the specified lowest point of the superstructure. It is a difference of elevations on the same datum. The reference point and loading condition in the brief matter, because a flexible deck sits at different levels under different loads.</p><p>The water level seen on a dry-season survey says nothing about the level reached in the design flood, so it cannot establish adequate clearance. Clearance is checked against the design HFL, with the allowances for debris, flood-estimate uncertainty and structural behaviour that the brief specifies, and it is measured up from that water surface, not from the bed.</p><p>The minimum freeboard in a trail bridge is 5 m. A clearance that only equals it has no spare margin.</p>",
             "formulas": [
               {
                 "label": "Flood clearance",
@@ -4200,7 +3521,7 @@
             },
             "points": [
               {
-                "html": "An HFL at RL 104.5 m and a lowest bridge point at RL 109.5 m give a clearance of 5.0 m, exactly meeting the stated minimum.",
+                "html": "The minimum freeboard in a trail bridge is 5 m.",
                 "sources": [
                   {
                     "id": "CAP4-10-00194",
@@ -4209,7 +3530,7 @@
                 ]
               },
               {
-                "html": "Clearance is checked against the design HFL because dry-season levels do not represent the adopted design-flood condition.",
+                "html": "The freeboard of a trail bridge, at least 5 m, is measured between the lowest point of the bridge and the highest flood level.",
                 "sources": [
                   {
                     "id": "CAP4-10-00195",
@@ -4276,181 +3597,11 @@
             "tex": "c = \\text{RL}_{\\text{bridge}} - \\text{RL}_{\\text{HFL}}"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-mip-seven-zones",
-            "status": "review",
-            "prompt": "Based on the MIP method, Nepal is divided into seven zones",
-            "html": "<p>The capsule gives no map, edition or definition for this count, and nearby hydrology notes do not corroborate it. The zone count must be verified against the original MIP manual; these notes teach only the principle that the correct hydrological region supplies the applicable relationships.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00137",
-                "label": "p. 9; topic 2 point 123"
-              }
-            ]
-          },
-          {
-            "id": "caution-dew-point-above-freezing",
-            "status": "corrected",
-            "prompt": "If the dew point is above 0 °C, dew will form",
-            "html": "<p>The statement omits the essential condition: an exposed surface must cool to or below the dew point so that the adjacent air saturates. A dew point above freezing only means that the condensate would be liquid if cooling to saturation occurs.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00020",
-                "label": "p. 11; topic 3 point 17"
-              }
-            ]
-          },
-          {
-            "id": "caution-nepal-river-groups",
-            "status": "review",
-            "prompt": "Rivers of Nepal are classified into three groups",
-            "html": "<p>The capsule gives only the number three. The origin-based High Himalayan, Mahabharat and Siwalik grouping is the usual teaching scheme supplied here for clarity; it is not presented as an exclusive or statutory classification.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00084",
-                "label": "p. 13; topic 3 point 83"
-              }
-            ]
-          },
-          {
-            "id": "caution-dhm-2004-accuracy",
-            "status": "review",
-            "prompt": "The DHM 2004 method gives accurate flow characteristics for rivers of Nepal",
-            "html": "<p>The publication, parameters and validation data behind 'DHM 2004' are not given, and other hydrology notes refer instead to a WECS/DHM 1990 method, so the attribution needs review. No accuracy ranking is asserted here; any regional estimate must be checked for applicability and against local observations.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00089",
-                "label": "p. 13; topic 3 point 88"
-              }
-            ]
-          },
-          {
-            "id": "caution-isohyetal-most-accurate",
-            "status": "corrected",
-            "prompt": "The isohyetal map method is the most accurate way to find average precipitation over an area",
-            "html": "<p>No method is universally the most accurate. The isohyetal method can represent terrain-driven variation well when the contours are reliable, but its accuracy still depends on gauge density, data quality and how the isohyets are drawn.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00090",
-                "label": "p. 13; topic 3 point 89"
-              }
-            ]
-          },
-          {
-            "id": "caution-cold-front-definition",
-            "status": "corrected",
-            "prompt": "Cold frontal precipitation means a small catchment area with heavy precipitation",
-            "html": "<p>Catchment area does not define cold-frontal precipitation. The defining process is forced ascent of warm moist air by an advancing cold air mass; the typical result is a relatively narrow band of short, intense rain whose extent and duration depend on frontal speed, moisture and instability.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00093",
-                "label": "p. 13; topic 3 point 92"
-              }
-            ]
-          },
-          {
-            "id": "caution-recession-independence",
-            "status": "corrected",
-            "prompt": "The recession limb of a hydrograph is independent of storm characteristics",
-            "html": "<p>Absolute independence is too strong. The recession mainly reflects drainage of basin storage, but antecedent wetness and the storm's distribution determine how much storage is filled and which flow paths are active, so recession is largely, not entirely, a basin property.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00096",
-                "label": "p. 13; topic 3 point 95"
-              }
-            ]
-          },
-          {
-            "id": "caution-rational-method-duration",
-            "status": "review",
-            "prompt": "The rational method is applicable when rainfall duration equals the time of concentration",
-            "html": "<p>Setting the design duration equal to \\(T_c\\) is the conventional way of choosing the design intensity so that the whole catchment contributes. It is not a condition for runoff or mass conservation, and actual storms may be longer or shorter.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00098",
-                "label": "p. 13; topic 3 point 97"
-              }
-            ]
-          },
-          {
-            "id": "caution-recording-gauge-accuracy",
-            "status": "corrected",
-            "prompt": "The recording type of rain gauging is very accurate",
-            "html": "<p>The blanket accuracy claim is unsupported. The real advantage of a recording gauge is temporal resolution, which yields rainfall intensities; wind exposure, calibration, resolution, mechanism losses and maintenance still determine how accurate it is.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00100",
-                "label": "p. 13; topic 3 point 99"
-              }
-            ]
-          },
-          {
-            "id": "caution-wecs-dhm-q2-relation",
-            "status": "review",
-            "prompt": "The WECS/DHM two-year flood formula is Q2 = 1.8767 (A3000 + 1) raised to 0.8783",
-            "html": "<p>The capsule gives no edition, calibration domain or explicit unit definitions, so the attribution and the definition of \\(A_{3000}\\) should be verified against the original method. The capsule also calls this flood forecasting; a return-period estimate is a frequency statement, not a real-time forecast.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00106",
-                "label": "p. 13; topic 3 point 104"
-              }
-            ]
-          },
-          {
-            "id": "caution-impounding-reservoir-need",
-            "status": "review",
-            "prompt": "An impounding reservoir is required when dry-season stream flow is less than demand",
-            "html": "<p>Storage is one possible response to a seasonal deficit, not automatically the only feasible one. It works only if wet-season refill is adequate, and evaporation, seepage and dead storage must be added to the active volume.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00114",
-                "label": "p. 14; topic 3 point 111"
-              }
-            ]
-          },
-          {
-            "id": "caution-short-storm-intensity-formula",
-            "status": "review",
-            "prompt": "Rainfall intensity for storms shorter than 20 minutes is I = 760/(t + 10)",
-            "html": "<p>The numerator 760 is recovered from the full capsule page because the point extract drops it. The original units, location, return period and authority are not stated; units used in exercises are assumptions, and the fit must not be used for design without its calibration context.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00138",
-                "label": "p. 14; topic 3 point 134"
-              }
-            ]
-          },
-          {
-            "id": "caution-trail-bridge-freeboard",
-            "status": "review",
-            "prompt": "The minimum freeboard in a trail bridge is 5 m",
-            "html": "<p>Treat 5 m as a conditional minimum from a particular brief. The bridge type, design flood, debris allowance, reference point and manual edition should be verified before the figure is applied as a requirement.</p>",
-            "sources": [
-              {
-                "id": "CAP4-10-00194",
-                "label": "p. 42; rural point 18"
-              }
-            ]
-          },
-          {
-            "id": "caution-basin-form-factor-definition",
-            "status": "corrected",
-            "prompt": "The form factor is the square root of hydraulic depth multiplied by basin area",
-            "html": "<p>This capsule point mixes a channel quantity with a basin quantity. The basin form factor is basin area divided by the square of axial basin length, a dimensionless ratio; the square root of hydraulic depth belongs to the channel section factor \\(A\\sqrt{D}\\).</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00105",
-                "label": "p. 13; topic 3 point 103"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Groundwater hydrology is listed in the syllabus but not tested by these capsule questions; aquifer properties and well hydraulics are not covered here.",
           "Synthetic unit hydrographs, S-curve construction details and flood routing are not examined beyond changing duration by superposition.",
           "Flood-frequency analysis is limited to the return-period definition; fitting probability distributions to annual maxima is not covered.",
-          "Several Nepal-specific capsule claims, including the MIP zone count, the DHM 2004 method, the WECS/DHM coefficients and the 5 m trail-bridge freeboard, remain unverified against their original manuals.",
           "Evaporation estimation, infiltration indices and the selection of runoff coefficients are not examined."
         ]
       }

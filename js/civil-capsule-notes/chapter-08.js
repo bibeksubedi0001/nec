@@ -11,7 +11,7 @@
           {
             "id": "head-flow-and-demand",
             "title": "Nepal's steep relief: head is an opportunity, not proof of a good site",
-            "html": "<p>Nepal's rivers fall steeply, so a large <em>gross head</em> is easy to find on a map. Head is only one of the factors that set output. Power is the product of usable discharge, net head and overall efficiency, so a high drop carrying little water still yields little power.</p><p>River flow is strongly seasonal. Monsoon rain and snowmelt swell the rivers, while dry-season flow may shrink sharply, just when year-round demand still has to be met. A defensible suitability check therefore compares the seasonal usable flow and the net head with the demand the scheme must serve, period by period.</p><p>Geology, sediment, access and the conveyance and delivery system then decide whether that hydraulic potential can be built and operated. A general statement that hydro suits Nepal describes a national opportunity; it cannot certify reliability at a site whose hydrology has not been studied.</p>",
+            "html": "<p>Nepal's rivers fall steeply, so a large <em>gross head</em> is easy to find on a map. Head is only one of the factors that set output. Power is the product of usable discharge, net head and overall efficiency, so a high drop carrying little water still yields little power.</p><p>River flow is strongly seasonal. Monsoon rain and snowmelt swell the rivers, while dry-season flow may shrink sharply, just when year-round demand still has to be met. A defensible suitability check therefore compares the seasonal usable flow and the net head with the demand the scheme must serve, period by period.</p><p>Geology, sediment, access and the conveyance and delivery system then decide whether that hydraulic potential can be built and operated.</p>",
             "formulas": [
               {
                 "label": "Hydropower output",
@@ -26,16 +26,7 @@
             "moreHtml": "<p>Three screening traps recur: choosing a site for its elevation drop alone, treating monsoon peak flow as dependable supply, and reading installed generator capacity as winter output. Each forgets that capacity produces energy only when water and head are available at the time of need.</p><p>Planning studies also rank potential in tiers. <em>Gross</em>, or theoretical, potential counts all runoff falling through all available head; <em>technical</em> potential keeps what feasible schemes could harness; <em>economic</em> potential keeps what is cost-effective against alternatives. Each tier is smaller than the one before it.</p>",
             "points": [
               {
-                "html": "A year-round suitability check compares the seasonal usable flow and net head with the demand to be served; the largest mapped elevation drop or the monsoon peak flow cannot show dependable supply.",
-                "sources": [
-                  {
-                    "id": "CAP4-08-00002",
-                    "label": "p. 30; topic 8 point 2"
-                  }
-                ]
-              },
-              {
-                "html": "Installed generator capacity is not winter output: a unit produces energy only when usable flow and head are available at the time of need.",
+                "html": "In the context of Nepal, the most reliable and suitable power plant is a hydropower plant.",
                 "sources": [
                   {
                     "id": "CAP4-08-00002",
@@ -72,7 +63,7 @@
             },
             "points": [
               {
-                "html": "Whether a remote hydro site is the most economical supply is decided by discounted life-cycle costs for equivalent dependable service, counting roads, transmission and civil works, not by fuel or turbine prices alone.",
+                "html": "The most economical source of power is a hydel plant.",
                 "sources": [
                   {
                     "id": "CAP4-08-00006",
@@ -81,7 +72,7 @@
                 ]
               },
               {
-                "html": "Temporary cross-border imports are tested by comparing reliability, cost, supply risk and domestic investment effects, not by the annual self-sufficiency ratio or contract price alone.",
+                "html": "For hydropower development policy, importing electricity from another country to reduce load shedding was not good.",
                 "sources": [
                   {
                     "id": "CAP4-08-00081",
@@ -105,10 +96,9 @@
             "id": "legal-and-policy-framework",
             "title": "Electricity Act 2049, Electricity Rules 2050 and Hydropower Development Policy 2058",
             "html": "<p>Nepal's electricity framework separates an <em>Act</em>, the rules made under it and policy. The Electricity Act, 2049 (1992) gives the Government of Nepal rule-making power in section 40, and the Electricity Rules, 2050 (1993) are subordinate legislation made under that delegated power. Older texts may name His Majesty's Government, reflecting the period of drafting.</p><p>The rules are neither a decision of the utility's board nor a new principal Act. A power purchase agreement is a contract, and an operator's internal rules are not national regulations.</p><p>Policy sets objectives rather than legal rules. The Hydropower Development Policy, 2058 (2001) is a Government policy, not a Nepal Electricity Authority company policy. Its consumer-service objective, under section 3, is that consumers receive reliable electricity at low cost; installed MW, exports or construction speed are different measures and cannot stand in for it.</p><table><thead><tr><th scope='col'>Instrument</th><th scope='col'>Made by</th><th scope='col'>Nature</th></tr></thead><tbody><tr><td>Electricity Act, 2049 (1992)</td><td>Legislature</td><td>Principal Act</td></tr><tr><td>Electricity Rules, 2050 (1993)</td><td>Government of Nepal, section 40</td><td>Subordinate legislation</td></tr><tr><td>Hydropower Development Policy, 2058 (2001)</td><td>Government of Nepal</td><td>Policy objectives</td></tr><tr><td>Power purchase agreement</td><td>Contracting parties</td><td>Contract</td></tr></tbody></table>",
-            "moreHtml": "<p>These items identify a historical framework. They do not establish every present approval step, the functions of later institutions or any consolidated current policy, so dated wording should be checked against the edition in force.</p>",
             "points": [
               {
-                "html": "Nepal's Electricity Rules, 2050 (1993) were made by the Government of Nepal under the delegated rule-making power in section 40 of the Electricity Act, 2049 (1992).",
+                "html": "Electricity regulation in Nepal is approved by the Government of Nepal.",
                 "sources": [
                   {
                     "id": "CAP4-08-00009",
@@ -117,7 +107,7 @@
                 ]
               },
               {
-                "html": "The consumer-service objective of the Hydropower Development Policy, 2058 (2001), a Government rather than NEA document, is reliable electricity supplied to consumers at low cost.",
+                "html": "According to the hydropower development policy of 2001, the first priority of the policy is to ensure reliable and affordable electricity supply to consumers.",
                 "sources": [
                   {
                     "id": "CAP4-08-00091",
@@ -140,10 +130,10 @@
           {
             "id": "milestones-delivery-financing",
             "title": "Pharping 1911, BOOT concessions and reading financing roles",
-            "html": "<p><em>Pharping</em>, Nepal's first hydropower station, was inaugurated on 22 May 1911 with two 250 kW units, a station capacity of 500 kW. Keep the unit rating and the station total apart, and treat 1911 as the inauguration or commissioning milestone rather than a verified date for every construction activity. The later founding of the Nepal Electricity Authority is a separate institutional milestone.</p><p>Delivery models state who builds, owns, operates and finally transfers an asset. Under <em>Build-Own-Operate-Transfer</em> (BOOT) the concessionaire finances and builds the project, owns and runs it for the contract term, then hands it over on the terms the contract sets.</p><ul><li>Build-Own-Operate omits the transfer.</li><li>An engineering-procurement-construction contract covers delivery only.</li><li>An operation-and-maintenance contract implies neither construction nor ownership.</li></ul><p>Financing roles are read from their own agreements. When a foreign government's loan sits beside local equity and a multilateral loan, that government is a co-financing partner; the loan gives it no equity ownership, sole-financier status or equipment-supply role.</p>",
+            "html": "<p><em>Pharping</em>, Nepal's first hydropower station, was inaugurated on 22 May 1911 with two 250 kW units, a station capacity of 500 kW. The later founding of the Nepal Electricity Authority is a separate institutional milestone.</p><p>Delivery models state who builds, owns, operates and finally transfers an asset. Under <em>Build-Own-Operate-Transfer</em> (BOOT) the concessionaire finances and builds the project, owns and runs it for the contract term, then hands it over on the terms the contract sets.</p><ul><li>Build-Own-Operate omits the transfer.</li><li>An engineering-procurement-construction contract covers delivery only.</li><li>An operation-and-maintenance contract implies neither construction nor ownership.</li></ul><p>Financing roles are read from their own agreements. When a foreign government's loan sits beside local equity and a multilateral loan, that government is a co-financing partner; the loan gives it no equity ownership, sole-financier status or equipment-supply role.</p>",
             "points": [
               {
-                "html": "Pharping, Nepal's first hydropower plant, was commissioned in 1911 AD with a station capacity of 500 kW, made up of two 250 kW units.",
+                "html": "The date of construction and capacity of the Pharping hydropower plant are 1911 AD and 500 kW.",
                 "sources": [
                   {
                     "id": "CAP4-08-00022",
@@ -152,7 +142,7 @@
                 ]
               },
               {
-                "html": "A concessionaire that builds, owns and operates a hydro project for the agreed term and then transfers it follows Build-Own-Operate-Transfer (BOOT), one of several delivery arrangements.",
+                "html": "Hydropower projects are constructed under the BOOT model.",
                 "sources": [
                   {
                     "id": "CAP4-08-00095",
@@ -161,7 +151,7 @@
                 ]
               },
               {
-                "html": "A bilateral government loan combined with domestic equity and a multilateral loan makes that government a bilateral financing partner in a co-financed project, not an owner, sole financier or supplier.",
+                "html": "The country which provided key financial assistance for the Kulekhani I and Kulekhani II hydropower projects is Japan.",
                 "sources": [
                   {
                     "id": "CAP4-08-00102",
@@ -207,109 +197,11 @@
             "note": "Compare alternatives giving equivalent dependable service."
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-nepal-hydro-most-suitable",
-            "status": "review",
-            "prompt": "In Nepal, hydropower is the most reliable and suitable supply",
-            "html": "<p>Treat this as a national opportunity, not a site verdict. Nepal's relief offers attractive head, but reliability at a particular site depends on dry-season usable flow, net head, geology and the delivery system, and must be shown against the demand served.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00002",
-                "label": "p. 30; topic 8 point 2"
-              }
-            ]
-          },
-          {
-            "id": "caution-hydro-most-economical",
-            "status": "corrected",
-            "prompt": "Hydropower is the most economical source of power",
-            "html": "<p>Not universally. Hydro often has low running cost, but access roads, transmission and civil works can outweigh the fuel advantage. The economic choice comes from a discounted life-cycle comparison of alternatives delivering equivalent dependable service.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00006",
-                "label": "p. 30; topic 8 point 6"
-              }
-            ]
-          },
-          {
-            "id": "caution-electricity-rules-approval",
-            "status": "review",
-            "prompt": "Electricity regulation is approved by the Government of Nepal",
-            "html": "<p>Defensible when read precisely: the Electricity Rules, 2050 were made by the Government under section 40 of the Electricity Act, 2049. That general rule-making power is not every regulatory decision or a complete current approval process, and older editions name His Majesty's Government.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00009",
-                "label": "p. 30; topic 8 point 9"
-              }
-            ]
-          },
-          {
-            "id": "caution-pharping-construction-date",
-            "status": "review",
-            "prompt": "Pharping was constructed in 1911 AD with 500 kW capacity",
-            "html": "<p>The 500 kW station total from two 250 kW units, and 22 May 1911 as the inauguration or commissioning date, are supported. The year is not a verified date for every construction activity.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00022",
-                "label": "p. 31; topic 8 point 24"
-              }
-            ]
-          },
-          {
-            "id": "caution-imports-bad-for-hydropower",
-            "status": "corrected",
-            "prompt": "Importing electricity to reduce load shedding is not good for hydropower development",
-            "html": "<p>No identified policy clause supports this as a universal rule. Temporary imports can relieve shortages while domestic projects are developed; whether they help or harm depends on reliability, cost, supply risk and effects on domestic investment.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00081",
-                "label": "p. 32; topic 8 point 88"
-              }
-            ]
-          },
-          {
-            "id": "caution-nea-policy-2001-attribution",
-            "status": "corrected",
-            "prompt": "NEA policy 2001 gives first priority to reliable and affordable supply",
-            "html": "<p>The document is the Government's Hydropower Development Policy, 2058 (2001), not an NEA policy. Its consumer-service objective concerns reliable electricity at low cost; the items do not establish a ranking of every priority or the content of current policy.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00091",
-                "label": "p. 33; topic 8 point 101"
-              }
-            ]
-          },
-          {
-            "id": "caution-boot-universal",
-            "status": "review",
-            "prompt": "Hydropower projects are constructed under BOOT",
-            "html": "<p>BOOT is one delivery arrangement in which the concessionaire builds, owns, operates and later transfers the project. Projects may use other models, and the actual concession rights, term and transfer conditions come from the applicable law and contract.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00095",
-                "label": "p. 33; topic 8 point 105"
-              }
-            ]
-          },
-          {
-            "id": "caution-kulekhani-japan-financing",
-            "status": "review",
-            "prompt": "Japan provided key financial assistance for Kulekhani I and Kulekhani II",
-            "html": "<p>Unverified in this review: no primary record covering both projects was obtained. The related item uses an expressly hypothetical schedule to test financing roles, so the historical donor claim needs checking against project records before use.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00102",
-                "label": "p. 33; topic 8 point 112"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "No numerical gross, technical or economic hydropower potential for Nepal or the world is taught by these capsule items.",
           "Project development stages from identification through feasibility, detailed design and construction are not examined here.",
-          "Present licensing procedures, current regulatory institutions and any consolidated current policy are outside what these items establish.",
-          "The Kulekhani financing history remains unverified and should be checked against project records."
+          "Present licensing procedures, current regulatory institutions and any consolidated current policy are outside what these items establish."
         ]
       },
       "ACiE0802": {
@@ -321,10 +213,10 @@
           {
             "id": "fuel-cost-and-renewable-character",
             "title": "Fuel, operating cost and the renewable character of conventional hydropower",
-            "html": "<p>Conventional hydropower converts the hydraulic energy of flowing water into shaft power and then electricity, so the prime mover draws its energy from water rather than from burning fuel. That directly removes recurring fuel deliveries at a remote station. It is a fuel advantage, not zero operating expenditure: maintenance, lubrication, staff and any diesel backup still cost money.</p><p>Once a station is built, extra hydro energy usually has a low <em>variable cost</em> compared with diesel generation of the same additional energy, because little or no fuel is purchased. Long-lived civil works, reservoir storage and spare units matter for capital recovery, seasonal energy or outage cover, but they are not why the marginal energy is cheap. Where water is scarce or has competing uses, stored water carries an opportunity cost, so minimum operating cost is not universal.</p><p>Classification uses two separate ideas. <em>Conventional</em> describes long-established generating technology; <em>renewable</em> describes replenishment of the resource by the water cycle. River hydropower is therefore conventional and renewable. That label does not settle the environmental effects of every reservoir or any country's statutory renewable category.</p>",
+            "html": "<p>Conventional hydropower converts the hydraulic energy of flowing water into shaft power and then electricity, so the prime mover draws its energy from water rather than from burning fuel. That directly removes recurring fuel deliveries at a remote station. It is a fuel advantage, not zero operating expenditure: maintenance, lubrication, staff and any diesel backup still cost money.</p><p>Once a station is built, extra hydro energy usually has a low <em>variable cost</em> compared with diesel generation of the same additional energy, because little or no fuel is purchased. Long-lived civil works, reservoir storage and spare units matter for capital recovery, seasonal energy or outage cover, but they are not why the marginal energy is cheap.</p><p>Classification uses two separate ideas. <em>Conventional</em> describes long-established generating technology; <em>renewable</em> describes replenishment of the resource by the water cycle. River hydropower is therefore conventional and renewable. That label does not settle the environmental effects of every reservoir or any country's statutory renewable category.</p>",
             "points": [
               {
-                "html": "Hydropower's prime-mover energy is supplied by water without combustion fuel, which is why a remote station with dependable flow avoids recurring fuel deliveries.",
+                "html": "For the same operation, the power plant with the least fuel requirement is a hydropower plant.",
                 "sources": [
                   {
                     "id": "CAP4-08-00001",
@@ -333,7 +225,7 @@
                 ]
               },
               {
-                "html": "Once built, extra hydro generation needs little or no purchased fuel, so its variable cost is usually below diesel unless the water has a competing-use opportunity cost.",
+                "html": "For the same power output, the plant with the minimum operating charges is a hydel plant.",
                 "sources": [
                   {
                     "id": "CAP4-08-00005",
@@ -342,7 +234,7 @@
                 ]
               },
               {
-                "html": "By technological history and resource replenishment, river hydropower is classed as conventional and renewable.",
+                "html": "A hydroelectric power plant is a conventional source of energy.",
                 "sources": [
                   {
                     "id": "CAP4-08-00007",
@@ -397,7 +289,7 @@
             },
             "points": [
               {
-                "html": "Free-water levels of 240 m upstream and 180 m downstream on one datum give a gross head of 60 m, before any waterway losses are deducted.",
+                "html": "In the case of a reaction turbine, the gross head is the difference between the head race and tail race levels.",
                 "sources": [
                   {
                     "id": "CAP4-08-00087",
@@ -406,7 +298,7 @@
                 ]
               },
               {
-                "html": "Net head is gross head minus the waterway losses at the operating discharge: 120 m gross with 8 m of losses leaves 112 m.",
+                "html": "In a hydropower plant, the net head is gross head minus head losses.",
                 "sources": [
                   {
                     "id": "CAP4-08-00083",
@@ -415,7 +307,7 @@
                 ]
               },
               {
-                "html": "Water at 4 m<sup>3</sup>/s through 60 m net head at 85% overall efficiency yields 2001.24 kW: the 2354.40 kW hydraulic input multiplied by 0.85.",
+                "html": "The power output from a hydroelectric power plant depends on head, discharge and efficiency of the system.",
                 "sources": [
                   {
                     "id": "CAP4-08-00070",
@@ -464,7 +356,7 @@
             },
             "points": [
               {
-                "html": "\\(Q_{40}\\) = 12 m<sup>3</sup>/s means the flow equalled or exceeded 12 m<sup>3</sup>/s for 40% of the record; it names no date and no share of volume.",
+                "html": "A flow duration curve is a graph drawn between discharge and the percentage of time it is exceeded.",
                 "sources": [
                   {
                     "id": "CAP4-08-00075",
@@ -473,7 +365,7 @@
                 ]
               },
               {
-                "html": "At constant net head and stated efficiency, a usable-flow duration curve converts to a power-duration curve, and integrating it gives energy over the reference period within turbine limits.",
+                "html": "The flow duration curve at a given head of a hydroelectric plant is used to determine the total power available at the site.",
                 "sources": [
                   {
                     "id": "CAP4-08-00010",
@@ -482,7 +374,7 @@
                 ]
               },
               {
-                "html": "The 100-day stepwise record has a mean flow of 4.5 m<sup>3</sup>/s, so 38.88 million m<sup>3</sup> passed; a percentage axis must be scaled by the total duration in seconds.",
+                "html": "The area under a flow duration curve represents the volume of water.",
                 "sources": [
                   {
                     "id": "CAP4-08-00099",
@@ -512,7 +404,7 @@
             "html": "<p><em>Firm power</em> is the dependable output a scheme can sustain through the critical hydrological period adopted as its design basis, on the operating and reliability assumptions declared in the study. It is not immunity to every conceivable drought, outage or restriction.</p><table><thead><tr><th scope='col'>Quantity</th><th scope='col'>Meaning</th></tr></thead><tbody><tr><td>Firm power</td><td>Output sustained through the critical period on the declared basis</td></tr><tr><td>Secondary power</td><td>Extra, non-firm output available in wetter periods</td></tr><tr><td>Installed capacity</td><td>A machine rating, not a supply promise</td></tr><tr><td>Average annual power</td><td>Annual energy divided by the hours in the year</td></tr></tbody></table><p>Dependability is judged against the duty. A hospital needing dry-season supply is served only if firm output, together with provision for equipment outages, covers the required load at the required times. Annual energy exceeding yearly consumption, or an installed rating above average demand, can coexist with unserved critical hours.</p><p>An <em>unregulated run-of-river</em> plant shows the limit. When river flow falls below turbine requirements, output must drop or stop even though the machinery is sound. The station keeps its genuine benefits of no combustion fuel, conversion of available head and a replenished resource, but it cannot promise uninterrupted rated output without storage or backup. Storage or a firm flow lets other stations run continuously.</p>",
             "points": [
               {
-                "html": "Firm power is the dependable output sustained through the critical hydrological period chosen as the design basis, on the study's declared operating and reliability assumptions; wetter-period surplus is secondary power.",
+                "html": "The power available continuously during all seasons in a hydropower project is called firm power.",
                 "sources": [
                   {
                     "id": "CAP4-08-00020",
@@ -521,7 +413,7 @@
                 ]
               },
               {
-                "html": "A hydro proposal is dependable for a dry-season hospital duty only when its firm output and outage provision meet the required service at the required times.",
+                "html": "The most reliable power is hydroelectric power.",
                 "sources": [
                   {
                     "id": "CAP4-08-00004",
@@ -530,7 +422,7 @@
                 ]
               },
               {
-                "html": "Without storage or backup, an unregulated run-of-river station cannot claim uninterrupted output at the advertised rating once usable flow drops below what the turbines need.",
+                "html": "Continuous power in all seasons is not an advantage of a hydroelectric power plant.",
                 "sources": [
                   {
                     "id": "CAP4-08-00008",
@@ -578,7 +470,7 @@
             },
             "points": [
               {
-                "html": "The area under a load curve is energy: 40 kW held for 18 h plus 100 kW for 6 h represents 1320 kWh.",
+                "html": "The curve showing the variation of load on a power station with respect to time is the load curve.",
                 "sources": [
                   {
                     "id": "CAP4-08-00015",
@@ -587,7 +479,7 @@
                 ]
               },
               {
-                "html": "A day with 1440 kWh delivered and a 100 kW maximum demand has an average demand of 60 kW and a daily load factor of 60%.",
+                "html": "Load factor is the ratio of average demand to maximum demand.",
                 "sources": [
                   {
                     "id": "CAP4-08-00014",
@@ -596,7 +488,7 @@
                 ]
               },
               {
-                "html": "An assumed 8 MW evening demand over 6 h plus 3 MW for the other 18 h needs 102 MWh of daily energy; peak demand and energy are different quantities.",
+                "html": "In Nepal, the consumption of electricity is maximum during 5 pm to 11 pm.",
                 "sources": [
                   {
                     "id": "CAP4-08-00090",
@@ -649,7 +541,7 @@
             },
             "points": [
               {
-                "html": "With a 30 kW average, a 60 kW peak and 60 kW installed, capacity factor and load factor are both 0.50, so their ratio is 1.00.",
+                "html": "If the installed capacity is equal to the peak load, the ratio of capacity factor to load factor is 1.",
                 "sources": [
                   {
                     "id": "CAP4-08-00018",
@@ -658,7 +550,7 @@
                 ]
               },
               {
-                "html": "Feeder maxima of 12, 18 and 30 kW with a 45 kW simultaneous maximum give a coincidence factor of 45/60 = 0.75; the diversity factor is its reciprocal, about 1.33.",
+                "html": "Coincidence factor is the reciprocal of the diversity factor.",
                 "sources": [
                   {
                     "id": "CAP4-08-00011",
@@ -667,7 +559,7 @@
                 ]
               },
               {
-                "html": "An isolated microhydro without storage or load shedding needs dependable delivered capacity covering at least the coincident peak demand, with losses, starting loads and reserve added.",
+                "html": "In a remote isolated area having only one micro hydropower plant, its capacity should be equivalent to the peak load.",
                 "sources": [
                   {
                     "id": "CAP4-08-00013",
@@ -694,10 +586,10 @@
           {
             "id": "merit-order-dispatch",
             "title": "Merit-order dispatch and the flexibility of storage hydro",
-            "html": "<p>Operators normally load units in <em>merit order</em>: the cheapest sustained generation covers base demand, and more expensive units follow as demand rises. A quick-starting unit with high variable cost is therefore most economical for short, high-value peaks and for reserve or flexible support, while cheaper units carry steady demand. Running it as must-run or intermediate supply wastes its flexibility and raises system cost.</p><table><thead><tr><th scope='col'>Load band</th><th scope='col'>Suited unit</th><th scope='col'>Reason</th></tr></thead><tbody><tr><td>Base</td><td>Low variable cost, steady output</td><td>Runs most hours, so running cost dominates</td></tr><tr><td>Intermediate</td><td>Moderate cost, able to follow load</td><td>Runs part of each day</td></tr><tr><td>Peak</td><td>Fast start, high variable cost</td><td>Runs few hours, so flexibility outweighs running cost</td></tr></tbody></table><p>Emergencies and network constraints can alter dispatch, so peak operation is a normal economic role rather than an exceptionless law.</p><p>A <em>storage hydro</em> scheme with adequate water, usable storage and generating capacity can serve both base and peak duties, because reservoir regulation decouples the timing of releases from the timing of inflow within its limits. The seasonal water budget still caps energy, dead storage is not scheduled as active volume, and a flood-control reserve is not automatically available for generation.</p>",
+            "html": "<p>Operators normally load units in <em>merit order</em>: the cheapest sustained generation covers base demand, and more expensive units follow as demand rises. A quick-starting unit with high variable cost is therefore most economical for short, high-value peaks and for reserve or flexible support, while cheaper units carry steady demand. Running it as must-run or intermediate supply wastes its flexibility and raises system cost.</p><table><thead><tr><th scope='col'>Load band</th><th scope='col'>Suited unit</th><th scope='col'>Reason</th></tr></thead><tbody><tr><td>Base</td><td>Low variable cost, steady output</td><td>Runs most hours, so running cost dominates</td></tr><tr><td>Intermediate</td><td>Moderate cost, able to follow load</td><td>Runs part of each day</td></tr><tr><td>Peak</td><td>Fast start, high variable cost</td><td>Runs few hours, so flexibility outweighs running cost</td></tr></tbody></table><p>A <em>storage hydro</em> scheme with adequate water, usable storage and generating capacity can serve both base and peak duties, because reservoir regulation decouples the timing of releases from the timing of inflow within its limits. The seasonal water budget still caps energy, dead storage is not scheduled as active volume, and a flood-control reserve is not automatically available for generation.</p>",
             "points": [
               {
-                "html": "A quick-starting unit with high variable cost is normally dispatched to meet short demand peaks and provide flexible support, while cheaper units cover steady load.",
+                "html": "A power plant with high operating cost but great flexibility is used as a peak load plant.",
                 "sources": [
                   {
                     "id": "CAP4-08-00012",
@@ -706,7 +598,7 @@
                 ]
               },
               {
-                "html": "Within its water budget, reservoir regulation lets a storage scheme schedule releases across the demand period, so it can supply both base and peak demand.",
+                "html": "The storage type of hydropower plant is suitable to meet base load as well as peak load.",
                 "sources": [
                   {
                     "id": "CAP4-08-00085",
@@ -729,7 +621,7 @@
           {
             "id": "run-of-river-pondage-pumped-storage",
             "title": "Run-of-river, pondage and pumped storage in numbers",
-            "html": "<p>An <em>unregulated run-of-river</em> (ROR) plant has almost no usable pondage upstream, so it generates from whatever river flow remains after required downstream releases, within turbine limits. It uses flows above the minimum whenever capacity permits; the minimum dependable flow informs firm output but does not define every operating discharge. Some ROR plants include limited pondage, which is a different case.</p><p><em>Pondage</em> is short-period storage for meeting peaks. It supplies only the deficit between release and inflow over the peak, not the whole turbine release. Dead storage, freeboard and real operating limits need separate allowances.</p><p><em>Pumped storage</em> moves energy in time rather than creating it. Round-trip efficiency is the product of the pumping and generating conversions, not their average. Its value lies in shifting energy to high-value periods and providing system services such as reserve.</p>",
+            "html": "<p>An <em>unregulated run-of-river</em> (ROR) plant has almost no usable pondage upstream, so it generates from whatever river flow remains after required downstream releases, within turbine limits. Some ROR plants include limited pondage, which is a different case.</p><p><em>Pondage</em> is short-period storage for meeting peaks. It supplies only the deficit between release and inflow over the peak, not the whole turbine release. Dead storage, freeboard and real operating limits need separate allowances.</p><p><em>Pumped storage</em> moves energy in time rather than creating it. Round-trip efficiency is the product of the pumping and generating conversions, not their average. Its value lies in shifting energy to high-value periods and providing system services such as reserve.</p>",
             "formulas": [
               {
                 "label": "Working pondage for a peak",
@@ -746,7 +638,7 @@
             },
             "points": [
               {
-                "html": "An unregulated run-of-river plant has negligible usable pondage, so its output follows the river flow left after required downstream releases, within turbine limits.",
+                "html": "A hydropower plant that utilises the minimum flow in a river and has no appreciable pondage upstream is a run-of-river plant.",
                 "sources": [
                   {
                     "id": "CAP4-08-00092",
@@ -755,7 +647,7 @@
                 ]
               },
               {
-                "html": "Releasing 5 m<sup>3</sup>/s against a 2 m<sup>3</sup>/s inflow through a two-hour peak needs at least 21,600 m<sup>3</sup> of working pondage, the deficit volume only.",
+                "html": "The pondage in a hydropower station is temporary storage to meet peak demands.",
                 "sources": [
                   {
                     "id": "CAP4-08-00019",
@@ -764,7 +656,7 @@
                 ]
               },
               {
-                "html": "Two 90% conversions return 81 MWh from 100 MWh of pumping energy: round-trip efficiency is their product, 0.81, not their average.",
+                "html": "Reversible turbines and pumps are very suitable for pumped storage plants.",
                 "sources": [
                   {
                     "id": "CAP4-08-00067",
@@ -791,7 +683,7 @@
           {
             "id": "reservoir-zones-sediment-bank-storage",
             "title": "Reservoir storage zones, sediment allocation and bank storage",
-            "html": "<p><em>Dead or inactive storage</em> is the volume below the minimum normal operating pool that ordinary gravity releases through the service outlet cannot use; it is a storage volume, not a water level. Special low-level outlets may recover some otherwise inactive water, so the operating definition must be stated.</p><table><thead><tr><th scope='col'>Zone</th><th scope='col'>Position</th><th scope='col'>Use</th></tr></thead><tbody><tr><td>Flood surcharge</td><td>Above the normal full level</td><td>Temporary flood storage</td></tr><tr><td>Active or live</td><td>Between minimum operating and normal full levels</td><td>Regulated releases</td></tr><tr><td>Dead or inactive</td><td>Below the minimum operating level</td><td>Not released through the service outlet; often a sediment allowance</td></tr></tbody></table><p>The sediment allowance lasts its volume divided by the annual deposited volume, assuming a constant rate, no removal and deposition confined to the allowance. Real deposits spread into active storage and near intakes, so impairment can begin earlier.</p><p><em>Bank storage</em> is water that enters permeable banks as the reservoir rises and partly returns as it falls. It is a groundwater exchange with limits on timing and recovery; it does not enlarge the surveyed elevation-capacity curve or provide guaranteed, immediately available active storage, and it is assessed with a groundwater balance.</p>",
+            "html": "<p><em>Dead or inactive storage</em> is the volume below the minimum normal operating pool that ordinary gravity releases through the service outlet cannot use; it is a storage volume, not a water level. Special low-level outlets may recover some otherwise inactive water, so the operating definition must be stated.</p><table><thead><tr><th scope='col'>Zone</th><th scope='col'>Position</th><th scope='col'>Use</th></tr></thead><tbody><tr><td>Flood surcharge</td><td>Above the normal full level</td><td>Temporary flood storage</td></tr><tr><td>Active or live</td><td>Between minimum operating and normal full levels</td><td>Regulated releases</td></tr><tr><td>Dead or inactive</td><td>Below the minimum operating level</td><td>Not released through the service outlet; often a sediment allowance</td></tr></tbody></table><p>The sediment allowance lasts its volume divided by the annual deposited volume, assuming a constant rate, no removal and deposition confined to the allowance. Real deposits spread into active storage and near intakes, so impairment can begin earlier.</p><p><em>Bank storage</em> is water that enters permeable banks as the reservoir rises and partly returns as it falls. Bank storage in a dam reservoir increases the computed reservoir capacity.</p>",
             "formulas": [
               {
                 "label": "Life of a sediment allocation",
@@ -805,7 +697,7 @@
             },
             "points": [
               {
-                "html": "Dead or inactive storage is the volume below the minimum normal operating pool that ordinary gravity releases through the service outlet cannot draw; it is a volume, not a level.",
+                "html": "Dead storage of a storage reservoir is the storage between bed level and minimum pool level.",
                 "sources": [
                   {
                     "id": "CAP4-08-00034",
@@ -814,7 +706,7 @@
                 ]
               },
               {
-                "html": "A 6 million m<sup>3</sup> sediment allocation, 20% of 30 million m<sup>3</sup>, fills in 60 years at 0.10 million m<sup>3</sup> per year, assuming a constant rate and no removal.",
+                "html": "A storage reservoir of 30 million m<sup>3</sup> has 20% of its capacity marked for dead storage. If the average annual silt deposition is 0.1 million m<sup>3</sup>, the useful life of the reservoir will start reducing after 60 years.",
                 "sources": [
                   {
                     "id": "CAP4-08-00021",
@@ -823,7 +715,7 @@
                 ]
               },
               {
-                "html": "Bank storage is a groundwater exchange with timing and recoverability limits; it does not raise the surveyed open-water capacity.",
+                "html": "\"Bank storage\" in a dam reservoir increases the computed reservoir capacity.",
                 "sources": [
                   {
                     "id": "CAP4-08-00104",
@@ -911,176 +803,7 @@
             "note": "Constant deposition rate and no removal."
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-hydro-most-reliable",
-            "status": "corrected",
-            "prompt": "The most reliable power is hydroelectric power",
-            "html": "<p>Not as an absolute ranking. Reliability means supply when required, including drought and equipment outages, and depends on water, storage and redundancy. A hydro proposal is dependable for a duty only when the output it can sustain through critical conditions, plus cover for equipment outages, satisfies that duty.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00004",
-                "label": "p. 30; topic 8 point 4"
-              }
-            ]
-          },
-          {
-            "id": "caution-hydro-minimum-operating-charges",
-            "status": "review",
-            "prompt": "For the same output, a hydel plant has minimum operating charges",
-            "html": "<p>Usually true of variable cost because no fuel is bought, but not universal. Maintenance and losses remain, and where water is scarce or has competing uses the stored water carries an opportunity cost.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00005",
-                "label": "p. 30; topic 8 point 5"
-              }
-            ]
-          },
-          {
-            "id": "caution-continuous-power-not-an-advantage",
-            "status": "review",
-            "prompt": "Continuous power is not an advantage of a hydroelectric plant",
-            "html": "<p>Read this narrowly. An unregulated run-of-river plant cannot guarantee uninterrupted rated output when river flow falls below turbine requirements. It does not mean every hydro station operates intermittently, since storage or a firm flow can sustain continuous output.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00008",
-                "label": "p. 30; topic 8 point 8"
-              }
-            ]
-          },
-          {
-            "id": "caution-fdc-total-power",
-            "status": "corrected",
-            "prompt": "A flow-duration curve at a given head determines the total power available",
-            "html": "<p>'Total power' is undefined. At constant net head and stated efficiency the curve converts to a power-duration curve, and integration gives energy within turbine limits. It does not give chronology, seasonal storage size or the economic installed capacity.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00010",
-                "label": "p. 30; topic 8 point 10"
-              }
-            ]
-          },
-          {
-            "id": "caution-peak-load-only",
-            "status": "review",
-            "prompt": "A high-cost, highly flexible plant is used for peak load only",
-            "html": "<p>That is its normal merit-order role, covering short peaks and flexible reserve support. Emergencies and network constraints can change dispatch, so 'peak load only' is an economic tendency rather than an exceptionless operating law.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00012",
-                "label": "p. 30; topic 8 point 12; topic 8 point 21"
-              }
-            ]
-          },
-          {
-            "id": "caution-microhydro-equal-to-peak",
-            "status": "review",
-            "prompt": "An isolated single microhydro should have capacity equal to the peak load",
-            "html": "<p>The peak-demand basis is right, but dependable delivered output must at least cover the coincident peak, and losses, starting loads, a reserve margin and the hydrology must also be satisfied. A nameplate exactly equal to peak is not a complete design.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00013",
-                "label": "p. 30; topic 8 point 13"
-              }
-            ]
-          },
-          {
-            "id": "caution-firm-power-all-seasons",
-            "status": "review",
-            "prompt": "Firm power is the power available continuously in all seasons",
-            "html": "<p>Qualified by the design basis: firm power is what can be sustained through the critical hydrological period chosen for the study, on its declared operating and reliability assumptions. It is not immune to every conceivable drought, failure or restriction.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00020",
-                "label": "pp. 30, 31; topic 8 point 20; topic 8 point 23"
-              }
-            ]
-          },
-          {
-            "id": "caution-dead-storage-silting-time",
-            "status": "corrected",
-            "prompt": "Twenty per cent dead storage of a 30 million m³ reservoir silts up in 60 years",
-            "html": "<p>The printed working is broken; the intended arithmetic is \\(T = 6/0.1 = 60\\) years. The result assumes a constant deposited volume, no removal and deposition confined to the allocation. Real deposits spread into active storage and near intakes, so impairment can begin earlier.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00021",
-                "label": "pp. 30, 31; topic 8 point 22"
-              }
-            ]
-          },
-          {
-            "id": "caution-dead-storage-as-level",
-            "status": "corrected",
-            "prompt": "Dead storage is the level between bed level and minimum pool level",
-            "html": "<p>Dead storage is a volume, not a level: the storage below the minimum normal operating pool that ordinary gravity releases through the service outlet cannot use. Special low-level outlets change what is recoverable, so the operating basis must be stated.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00034",
-                "label": "p. 31; topic 8 point 37"
-              }
-            ]
-          },
-          {
-            "id": "caution-reversible-machine-efficiency-cost",
-            "status": "review",
-            "prompt": "Reversible pumped-storage machines work efficiently and reduce plant cost",
-            "html": "<p>High machine efficiency still leaves a round-trip loss: two 90% conversions return only 81% of the pumping energy. Economic benefit comes from the timing of energy and from system services, and lower cost is possible rather than guaranteed.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00067",
-                "label": "p. 32; topic 8 point 73"
-              }
-            ]
-          },
-          {
-            "id": "caution-nepal-peak-window",
-            "status": "review",
-            "prompt": "Electricity consumption in Nepal is maximum from 5 pm to 11 pm",
-            "html": "<p>Undated and unverified as a fixed national window. Use it only as a declared example, keep peak demand separate from daily energy, and take any actual peak period from a dated load record.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00090",
-                "label": "p. 33; topic 8 point 99"
-              }
-            ]
-          },
-          {
-            "id": "caution-ror-uses-minimum-flow",
-            "status": "corrected",
-            "prompt": "A run-of-river plant utilises the minimum river flow with no appreciable pondage",
-            "html": "<p>An unregulated run-of-river plant follows the flow available at the time, using flows above the minimum whenever turbine capacity permits. Minimum dependable flow informs firm output only, and some run-of-river plants include limited pondage.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00092",
-                "label": "p. 33; topic 8 point 102"
-              }
-            ]
-          },
-          {
-            "id": "caution-fdc-area-is-volume",
-            "status": "review",
-            "prompt": "The area under the flow-duration curve is the volume of water",
-            "html": "<p>True once the time axis is expressed in time units. With a percentage axis, multiply the mean discharge by the total duration in seconds; 4.5 m<sup>3</sup>/s over 100 days gives 38.88 million m<sup>3</sup>. Sorting preserves the volume but removes chronology.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00099",
-                "label": "p. 33; topic 8 point 109"
-              }
-            ]
-          },
-          {
-            "id": "caution-bank-storage-computed-capacity",
-            "status": "corrected",
-            "prompt": "Bank storage increases the computed reservoir capacity",
-            "html": "<p>Bank storage is a groundwater exchange with the reservoir, possibly recoverable with delay and loss. It can influence effective regulation, but it does not enlarge the surveyed elevation-capacity curve or add guaranteed, immediately recoverable active storage.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00104",
-                "label": "p. 33; topic 8 point 114"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Installed-capacity selection by incremental economic comparison is described but not worked numerically in these items.",
           "Mass-curve or sequent-peak sizing of seasonal reservoir storage is not examined.",
@@ -1097,10 +820,10 @@
           {
             "id": "dam-type-from-foundation-and-materials",
             "title": "Selecting a dam type from foundation conditions and available materials",
-            "html": "<p>A <em>concrete gravity dam</em> resists water load by its weight and delivers heavy compression and shear to its foundation. It is favoured where the foundation offers adequate bearing strength with limited deformation and where seepage can be controlled. Rock alone is no guarantee: weak seams, open untreated joints or a continuous seam dipping downstream can govern sliding, and a thin rock crust over deep compressible alluvium is unsuitable.</p><p>An <em>embankment dam</em> spreads its load over a broad base and tolerates more deformation. A valley rich in sand and gravel, with an alluvial foundation, may therefore suit an embankment, the granular material going into suitable zones. Sand and gravel are not an impervious barrier, so a low-permeability core or other seepage barrier, cutoffs, filters, drainage and settlement checks remain essential.</p><p>A <em>homogeneous earth embankment</em> on permeable alluvium is neither automatically acceptable nor automatically excluded. An impervious foundation is favourable, but feasibility depends on foundation seepage, exit gradients, uplift, settlement and constructible cutoffs, filters and drains. The embankment soil does not block flow beneath it, and widening the crest does nothing for foundation seepage.</p><table><thead><tr><th scope='col'>Dam type</th><th scope='col'>Foundation it needs</th><th scope='col'>Typical material</th></tr></thead><tbody><tr><td>Concrete gravity</td><td>Strong, low-deformation rock free of adverse seams</td><td>Mass concrete or masonry</td></tr><tr><td>Embankment</td><td>Broad base; can accept alluvium with seepage control</td><td>Local earth, sand, gravel or rock</td></tr></tbody></table>",
+            "html": "<p>A <em>concrete gravity dam</em> resists water load by its weight and delivers heavy compression and shear to its foundation. It is favoured where the foundation offers adequate bearing strength with limited deformation and where seepage can be controlled. Rock alone is no guarantee: weak seams, open untreated joints or a continuous seam dipping downstream can govern sliding, and a thin rock crust over deep compressible alluvium is unsuitable.</p><p>An <em>embankment dam</em> spreads its load over a broad base and tolerates more deformation. A valley rich in sand and gravel, with an alluvial foundation, may therefore suit an embankment, the granular material going into suitable zones. Sand and gravel are not an impervious barrier, so a low-permeability core or other seepage barrier, cutoffs, filters, drainage and settlement checks are essential.</p><p>An impervious foundation is favourable, but feasibility depends on foundation seepage, exit gradients, uplift, settlement and constructible cutoffs, filters and drains. The embankment soil does not block flow beneath it, and widening the crest does nothing for foundation seepage.</p><table><thead><tr><th scope='col'>Dam type</th><th scope='col'>Foundation it needs</th><th scope='col'>Typical material</th></tr></thead><tbody><tr><td>Concrete gravity</td><td>Strong, low-deformation rock free of adverse seams</td><td>Mass concrete or masonry</td></tr><tr><td>Embankment</td><td>Broad base; can accept alluvium with seepage control</td><td>Local earth, sand, gravel or rock</td></tr></tbody></table>",
             "points": [
               {
-                "html": "A concrete gravity dam needs a foundation with adequate bearing strength and limited deformation, plus shear resistance along seams and controlled seepage; rock alone guarantees none of these.",
+                "html": "A gravity dam is most suitable when the foundation is strong.",
                 "sources": [
                   {
                     "id": "CAP4-08-00023",
@@ -1109,7 +832,7 @@
                 ]
               },
               {
-                "html": "Where sand and gravel abound over an alluvial foundation, an embankment may suit, with seepage barriers, filters and settlement checks; sand and gravel alone are not watertight.",
+                "html": "When gravel and sand are available in the bed strata, the type of dam selected may be an embankment dam.",
                 "sources": [
                   {
                     "id": "CAP4-08-00094",
@@ -1118,7 +841,7 @@
                 ]
               },
               {
-                "html": "For a homogeneous embankment over permeable alluvium, first assess foundation seepage and suitable cutoffs, filters and drains; the site is neither automatically accepted nor rejected.",
+                "html": "A homogeneous embankment type earth dam is suitable only on an impervious foundation.",
                 "sources": [
                   {
                     "id": "CAP4-08-00033",
@@ -1148,7 +871,7 @@
             "html": "<p>A dam can carry several classifications at once because each answers a different question. <em>Overflow and non-overflow</em> sections describe hydraulic role: one passes floodwater over its crest, while the adjacent one must never be overtopped.</p><table><thead><tr><th scope='col'>Basis</th><th scope='col'>Classes</th></tr></thead><tbody><tr><td>Hydraulic role</td><td>Overflow, non-overflow</td></tr><tr><td>Structural action</td><td>Gravity, arch, buttress</td></tr><tr><td>Material</td><td>Concrete, masonry, earth, rockfill</td></tr><tr><td>Service life</td><td>Permanent, temporary</td></tr></tbody></table><p>In plan, the <em>dam axis</em> of a conventional gravity dam is an alignment reference commonly taken along the upstream crest line. It is a setting-out convention, not the base toe, the river thalweg or necessarily the centroidal axis of a section, so confirm the reference on the project drawings before comparing coordinates.</p><p>Mass concrete cools and shrinks after placement. In an arch dam, <em>contraction joints</em> separate the monoliths so this movement can occur; where specified they are later grouted so the blocks act together as an arch. A lift joint only records a placement interface, while a shear key and a drainage gallery serve other purposes.</p><p>During construction a <em>cofferdam</em> temporarily walls off part of the river so that permanent foundations can be built in the dry. It still needs design for floods, seepage, uplift and stability while dewatered; diversion works may assist but do not describe the enclosing structure.</p>",
             "points": [
               {
-                "html": "Classified by hydraulic design, a dam has overflow and non-overflow sections: one is built to pass floods over its crest, the other must not be overtopped.",
+                "html": "On the basis of hydraulic design, dams are classified as overflow and non-overflow dams.",
                 "sources": [
                   {
                     "id": "CAP4-08-00042",
@@ -1157,7 +880,7 @@
                 ]
               },
               {
-                "html": "On a conventional gravity-dam plan, the dam axis is an alignment reference commonly taken along the upstream crest line, not a centroidal axis.",
+                "html": "The axis of a gravity dam is the line of the crown of the dam on the upstream side.",
                 "sources": [
                   {
                     "id": "CAP4-08-00089",
@@ -1166,7 +889,7 @@
                 ]
               },
               {
-                "html": "Contraction joints between arch-dam monoliths accommodate cooling and shrinkage of the concrete before any specified joint grouting.",
+                "html": "The joint commonly used in the construction of arch dams is the contraction joint.",
                 "sources": [
                   {
                     "id": "CAP4-08-00024",
@@ -1175,7 +898,7 @@
                 ]
               },
               {
-                "html": "A cofferdam is a temporary enclosure that excludes the river from a work area so permanent foundations can be built in the dry.",
+                "html": "Temporary structures built to enclose a certain worksite are called cofferdams.",
                 "sources": [
                   {
                     "id": "CAP4-08-00031",
@@ -1234,7 +957,7 @@
             "moreHtml": "<p>For a solid circular section of diameter \\(D\\), \\(Z/A = D/8\\). Its kern is therefore a central circle of diameter \\(D/4\\), and a resultant must stay inside that circle for the whole section to remain in compression.</p>",
             "points": [
               {
-                "html": "Under linear stress on a rectangular base, a resultant kept within the middle third means no tensile normal stress occurs at either base edge; sliding, bearing and uplift still need separate checks.",
+                "html": "For no tension in a dam, the resultant force must pass through the middle third of the dam section.",
                 "sources": [
                   {
                     "id": "CAP4-08-00027",
@@ -1243,7 +966,7 @@
                 ]
               },
               {
-                "html": "For an 18 m rectangular base, the largest eccentricity from the centre that avoids tension is \\(B/6\\) = 3.0 m, not the 6 m width of the middle third.",
+                "html": "The maximum permissible eccentricity for no tension at the base of a gravity dam of base width \\(B\\) is \\(\\dfrac{B}{6}\\).",
                 "sources": [
                   {
                     "id": "CAP4-08-00037",
@@ -1252,7 +975,7 @@
                 ]
               },
               {
-                "html": "The middle-third rule is a rectangle result: for other shapes, such as a circle, the kern boundary depends on the section's area and section modulus, \\(|e| \\le Z/A\\).",
+                "html": "The middle third rule, used in the design of structures under combined direct and bending stresses, is applicable to rectangular cross-sections.",
                 "sources": [
                   {
                     "id": "CAP4-08-00041",
@@ -1261,7 +984,7 @@
                 ]
               },
               {
-                "html": "An elementary triangular section with a vertical upstream face, 6 m base and 600 kN/m weight, reservoir empty and no uplift, has 200 kPa at the heel and 0 kPa at the toe.",
+                "html": "When the reservoir is empty, the vertical stresses at the heel and toe of an elementary triangular dam of weight \\(W\\) and base width \\(B\\) are \\(\\dfrac{2W}{B}\\) at the heel and 0 at the toe.",
                 "sources": [
                   {
                     "id": "CAP4-08-00040",
@@ -1310,7 +1033,7 @@
             },
             "points": [
               {
-                "html": "With \\(\\mu\\) = 0.6, an effective normal force of 1000 kN, 200 kN of cohesion and 400 kN driving, the shear-friction factor is 800/400 = 2.0, to be judged against the governing criteria.",
+                "html": "The recommended value of the shear friction factor against sliding is more than 3 to 5.",
                 "sources": [
                   {
                     "id": "CAP4-08-00053",
@@ -1319,7 +1042,7 @@
                 ]
               },
               {
-                "html": "A foundation step or shear key improves sliding resistance by mobilising bearing and interlock along the resisting load path, not by adding contact area to simple friction.",
+                "html": "The bottom portion of a concrete or masonry gravity dam is usually stepped in order to increase the shear strength.",
                 "sources": [
                   {
                     "id": "CAP4-08-00036",
@@ -1355,7 +1078,7 @@
             },
             "points": [
               {
-                "html": "Uplift opposes the downward load: a floor carrying 900 kN with 300 kN of seepage uplift has an effective normal force of 600 kN for base friction.",
+                "html": "The causes of failure of hydraulic structures on pervious foundations are undermining and uplift.",
                 "sources": [
                   {
                     "id": "CAP4-08-00038",
@@ -1364,7 +1087,7 @@
                 ]
               },
               {
-                "html": "Seepage exiting beyond a floor on sand that carries grains away is internal erosion causing undermining, which progressively removes the floor's support.",
+                "html": "A hydraulic structure on a pervious foundation fails by uplift when the uplift pressure exceeds the weight of the floor.",
                 "sources": [
                   {
                     "id": "CAP4-08-00039",
@@ -1401,7 +1124,7 @@
             },
             "points": [
               {
-                "html": "In a zoned earth dam the low-permeability central core restricts seepage through the embankment; drains collect water, filters retain soil and upstream protection resists waves.",
+                "html": "The central core of a zoned embankment type earth dam checks the seepage.",
                 "sources": [
                   {
                     "id": "CAP4-08-00026",
@@ -1410,7 +1133,7 @@
                 ]
               },
               {
-                "html": "Laying fill in thin controlled layers at the specified moisture and compacting each with rollers is rolled-fill construction; the band may be wet or dry of optimum.",
+                "html": "The process of laying and compacting earth in layers by power rollers at OMC for construction of an earthen dam is known as the rolled fill method.",
                 "sources": [
                   {
                     "id": "CAP4-08-00086",
@@ -1419,7 +1142,7 @@
                 ]
               },
               {
-                "html": "The assumed preliminary relation \\(b = 0.2H + 3\\) gives a 5.0 m crest width for a 10 m low earth dam; it is not a certified standard.",
+                "html": "The recommended top width of a low earthen dam of height \\(H\\) is \\(0.2H + 3\\).",
                 "sources": [
                   {
                     "id": "CAP4-08-00025",
@@ -1446,7 +1169,7 @@
           {
             "id": "phreatic-line-and-sloughing",
             "title": "Seepage through earth dams: the phreatic line and downstream sloughing",
-            "html": "<p>The <em>phreatic surface</em> in an earth dam is the surface of zero gauge pore pressure, where the absolute water pressure equals local atmospheric pressure. Pore pressure is generally positive below it, and capillary water can rise above it under suction. The seepage field beneath is flowing, so its pressures are not simply hydrostatic.</p><p>Its idealised shape follows from the <em>Dupuit</em> approximation: steady one-dimensional unconfined flow through homogeneous isotropic soil over a horizontal impervious base, with no distributed recharge or leakage. Constant discharge per unit width then makes \\(h^2\\) vary linearly with distance, a parabolic profile. Real phreatic lines depend on boundaries, anisotropy, drains and entrance and exit corrections, so not every dam has an exact parabola.</p><p>When saturation reaches the downstream face, repeated shallow slips and progressive shedding of face material indicate <em>sloughing</em>, often promoted by poor drainage. Internal piping is a different mechanism that removes soil along a seepage path inside the dam or foundation. Upstream rapid-drawdown failure and crest overtopping differ in where and when they occur.</p>",
+            "html": "<p>The <em>phreatic surface</em> in an earth dam is the surface of zero gauge pore pressure, where the absolute water pressure equals local atmospheric pressure. Pore pressure is generally positive below it, and capillary water can rise above it under suction. The seepage field beneath is flowing, so its pressures are not simply hydrostatic.</p><p>Its idealised shape follows from the <em>Dupuit</em> approximation: steady one-dimensional unconfined flow through homogeneous isotropic soil over a horizontal impervious base, with no distributed recharge or leakage. Constant discharge per unit width then makes \\(h^2\\) vary linearly with distance, a parabolic profile.</p><p>When saturation reaches the downstream face, repeated shallow slips and progressive shedding of face material indicate <em>sloughing</em>, often promoted by poor drainage. Internal piping is a different mechanism that removes soil along a seepage path inside the dam or foundation. Upstream rapid-drawdown failure and crest overtopping differ in where and when they occur.</p>",
             "formulas": [
               {
                 "label": "Dupuit discharge per unit width",
@@ -1460,7 +1183,7 @@
             ],
             "points": [
               {
-                "html": "The phreatic surface is where pore-water pressure is zero gauge pressure, so its absolute pressure equals the local atmosphere; the seepage below is not hydrostatic throughout.",
+                "html": "The hydrostatic pressure on the phreatic line within a dam section is equal to atmospheric pressure.",
                 "sources": [
                   {
                     "id": "CAP4-08-00082",
@@ -1469,7 +1192,7 @@
                 ]
               },
               {
-                "html": "Under the stated Dupuit approximation, with \\(h^2\\) linear in distance, the idealised phreatic profile is a parabola; drains, anisotropy and boundary corrections change real profiles.",
+                "html": "The phreatic line of an earth embankment is parabolic.",
                 "sources": [
                   {
                     "id": "CAP4-08-00097",
@@ -1478,7 +1201,7 @@
                 ]
               },
               {
-                "html": "Shallow repeated slips and progressive loss of material from a saturated downstream face, with no internal tunnel yet, indicate downstream sloughing rather than piping.",
+                "html": "The progressive removal of soil from the downstream face of an earth dam is called sloughing.",
                 "sources": [
                   {
                     "id": "CAP4-08-00032",
@@ -1505,10 +1228,10 @@
           {
             "id": "spillways-as-flood-routes",
             "title": "Spillways as the flood route: morning-glory and siphon arrangements",
-            "html": "<p>When a flood exceeds turbine discharge and the available flood storage, the <em>spillway</em> routes the surplus safely downstream; it is often called the safety valve of the reservoir. Its adequacy still depends on flood routing, discharge capacity, gate reliability and energy dissipation. Power intakes, foundation drains and penstock air valves do not substitute for it.</p><p>A <em>morning-glory</em> inlet is the flared circular lip of a <em>shaft spillway</em>: overflow enters around the lip and drops down a vertical shaft. A side-channel spillway instead collects flow in a channel alongside its crest, a siphon relies on primed enclosed flow and a chute conveys flow down an open slope. The inlet name does not imply that one crest-flow equation governs every operating depth.</p><p>A <em>siphon spillway</em> may have its crest set near full-supply level, yet crest elevation alone does not fix its discharge as the reservoir rises. It first passes unprimed overflow, then changes to full siphonic flow as air is removed. Priming, air admission or venting, de-priming, head difference and outlet conditions set its rating; no mechanical pumping is involved.</p>",
+            "html": "<p>When a flood exceeds turbine discharge and the available flood storage, the <em>spillway</em> routes the surplus safely downstream; it is often called the safety valve of the reservoir. Its adequacy still depends on flood routing, discharge capacity, gate reliability and energy dissipation. Power intakes, foundation drains and penstock air valves do not substitute for it.</p><p>A <em>morning-glory</em> inlet is the flared circular lip of a <em>shaft spillway</em>: overflow enters around the lip and drops down a vertical shaft. A side-channel spillway instead collects flow in a channel alongside its crest, a siphon relies on primed enclosed flow and a chute conveys flow down an open slope. The inlet name does not imply that one crest-flow equation governs every operating depth.</p><p>The crest of a <em>siphon spillway</em> is fixed at the full reservoir level, but crest elevation alone does not fix its discharge as the reservoir rises. It first passes unprimed overflow, then changes to full siphonic flow as air is removed. Priming, air admission or venting, de-priming, head difference and outlet conditions set its rating; no mechanical pumping is involved.</p>",
             "points": [
               {
-                "html": "The spillway is the component designed to route flood surplus safely downstream when inflow exceeds turbine discharge and flood storage: the reservoir's safety valve.",
+                "html": "The safety valve of a dam or reservoir is the spillway.",
                 "sources": [
                   {
                     "id": "CAP4-08-00043",
@@ -1517,7 +1240,7 @@
                 ]
               },
               {
-                "html": "A flared circular lip feeding a vertical shaft is a morning-glory shaft spillway, unlike a side-channel, siphon or chute arrangement.",
+                "html": "Morning glory is the special flared inlet of the shaft spillway of a large dam project.",
                 "sources": [
                   {
                     "id": "CAP4-08-00028",
@@ -1526,7 +1249,7 @@
                 ]
               },
               {
-                "html": "Once the reservoir rises above a siphon crest, priming, air admission and outlet conditions determine the flow regime and discharge, not crest elevation alone.",
+                "html": "The crest of a siphon spillway is fixed at the full reservoir level.",
                 "sources": [
                   {
                     "id": "CAP4-08-00093",
@@ -1567,7 +1290,7 @@
             ],
             "points": [
               {
-                "html": "A hydraulic jump in a well-proportioned stilling basin with enough tailwater changes supercritical glacis flow to subcritical flow, turning surplus mechanical energy into turbulence and heat.",
+                "html": "Energy dissipation downstream of a sloping glacis is achieved by a hydraulic jump.",
                 "sources": [
                   {
                     "id": "CAP4-08-00044",
@@ -1576,7 +1299,7 @@
                 ]
               },
               {
-                "html": "When tailwater falls short of the required sequent depth and an assessed rock plunge pool exists, a ski-jump or flip bucket may be considered, subject to scour and trajectory checks.",
+                "html": "If the jump height is more than the tail water depth, the energy dissipator provided is a ski jump bucket.",
                 "sources": [
                   {
                     "id": "CAP4-08-00030",
@@ -1602,7 +1325,7 @@
             "html": "<p>Gate names describe mechanisms. A <em>fixed-wheel gate</em> is a vertical-lift gate whose wheels are mounted permanently on the moving leaf and run on fixed tracks; 'fixed' refers to the wheels, not to an immovable gate. Free-roller gates use an independent roller train, sliding gates rely on sliding contact, and popularity cannot be ranked without a defined set of structures.</p><p>A <em>radial or Tainter gate</em> has a curved skin plate on radial arms that pivot on trunnions near its centre of curvature. Water pressure acts roughly through that centre, easing hoisting, although weight, friction and seals still matter. A <em>drum gate</em> is buoyant: water entering and leaving its chamber through auxiliary passages raises or lowers it, so blocked passages can impair operation and need protection matched to the actual debris risk.</p><p>The flood capacity of a gated spillway depends on the gates opening when required, not on a rating computed with every gate already open. A tested gate-operating system with independent or emergency power, maintenance and procedures is part of flood-release reliability; gate type alone cannot guarantee safe reservoir levels.</p>",
             "points": [
               {
-                "html": "A vertical-lift gate whose load-carrying wheels are fixed to the moving leaf and run on fixed tracks is a fixed-wheel gate; 'fixed' describes the wheels.",
+                "html": "The most commonly used vertical lift gate in modern days is the fixed wheel gate.",
                 "sources": [
                   {
                     "id": "CAP4-08-00029",
@@ -1611,7 +1334,7 @@
                 ]
               },
               {
-                "html": "A curved leaf on radial arms rotating about trunnions near its centre of curvature is a radial or Tainter gate.",
+                "html": "The spillways of the Kulekhani I hydropower project use radial (Tainter) gates to control the release of water.",
                 "sources": [
                   {
                     "id": "CAP4-08-00105",
@@ -1620,7 +1343,7 @@
                 ]
               },
               {
-                "html": "Because a drum gate depends on its chamber passages, protect the vulnerable passages according to the actual debris risk rather than assuming no screening is needed.",
+                "html": "A trash rack is not required at the entrance of a drum gate installation.",
                 "sources": [
                   {
                     "id": "CAP4-08-00088",
@@ -1629,7 +1352,7 @@
                 ]
               },
               {
-                "html": "Gated flood-release reliability needs a tested gate-operating and emergency-power arrangement; a hydraulic rating with every gate open does not show that the gates will open.",
+                "html": "A radial gate, such as those on the Kulekhani I spillway, is also known as a Tainter gate.",
                 "sources": [
                   {
                     "id": "CAP4-08-00106",
@@ -1674,7 +1397,7 @@
             },
             "points": [
               {
-                "html": "With the turbines shut and the reservoir below the crest, a gated outlet conduit or sluiceway makes routine downstream releases; the spillway principally routes floods.",
+                "html": "The outlet provided in a dam body to safely release water for downstream water demands is called a sluiceway.",
                 "sources": [
                   {
                     "id": "CAP4-08-00101",
@@ -1683,7 +1406,7 @@
                 ]
               },
               {
-                "html": "A 98.1 kPa gauge reading at a sensor 2 m above the datum means 10 m of water above it, a surface elevation of 12 m.",
+                "html": "Hydrostatic level measurement determines the level of water in a dam from the pressure of the water column.",
                 "sources": [
                   {
                     "id": "CAP4-08-00098",
@@ -1751,242 +1474,12 @@
             "note": "p is the gauge pressure at the sensor."
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-gravity-dam-strong-foundation",
-            "status": "review",
-            "prompt": "A gravity dam is most suitable when the foundation is strong",
-            "html": "<p>Strength is necessary but not sufficient. Limited deformation, adequate shear resistance along seams and joints, and controllable seepage are also required, so a strength label cannot replace geological investigation.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00023",
-                "label": "p. 31; topic 8 point 25"
-              }
-            ]
-          },
-          {
-            "id": "caution-earth-dam-crest-width-rule",
-            "status": "review",
-            "prompt": "The recommended top width of a low earth dam is 0.2H + 3",
-            "html": "<p>No applicable standard or edition is identified for this empirical relation, so treat it as an assumed preliminary estimate. Traffic, compaction access, seismic performance and the governing dam standard may require a different crest width.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00025",
-                "label": "p. 31; topic 8 point 27"
-              }
-            ]
-          },
-          {
-            "id": "caution-middle-third-used-in-tension",
-            "status": "corrected",
-            "prompt": "The middle-third rule is used in tension",
-            "html": "<p>The printed fraction is split and the wording misleading. The rule is a no-tension condition: under linear stress on a rectangular base, a resultant within the middle third keeps both edges in compression. It says nothing by itself about sliding, bearing or uplift.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00027",
-                "label": "p. 31; topic 8 point 29; topic 8 point 30"
-              }
-            ]
-          },
-          {
-            "id": "caution-fixed-gates-mostly-used",
-            "status": "review",
-            "prompt": "Fixed gates are mostly used in modern hydraulic structures",
-            "html": "<p>Ambiguous and unranked. The defensible content is the fixed-wheel vertical-lift gate, whose wheels are attached to the moving leaf; popularity cannot be established without a defined population of structures.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00029",
-                "label": "p. 31; topic 8 point 32; topic 8 point 38"
-              }
-            ]
-          },
-          {
-            "id": "caution-ski-jump-and-jump-height",
-            "status": "corrected",
-            "prompt": "A ski jump is provided if jump height exceeds tailwater depth",
-            "html": "<p>'Jump height' is undefined; compare the available tailwater with the required sequent depth. Even when tailwater is short, a flip bucket needs an assessed plunge pool and checks of jet trajectory, scour and bank stability, so its suitability remains site-dependent.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00030",
-                "label": "p. 31; topic 8 point 33"
-              }
-            ]
-          },
-          {
-            "id": "caution-homogeneous-dam-impervious-only",
-            "status": "corrected",
-            "prompt": "A homogeneous earth dam is suitable only on an impervious foundation",
-            "html": "<p>An impervious foundation is favourable, not mandatory. On a pervious foundation, feasibility depends on seepage, exit gradients, uplift, settlement and constructible cutoffs, filters and drains.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00033",
-                "label": "p. 31; topic 8 point 36"
-              }
-            ]
-          },
-          {
-            "id": "caution-stepped-base-shear-strength",
-            "status": "review",
-            "prompt": "A gravity dam base is stepped to increase the shear strength",
-            "html": "<p>Steps or keys can improve sliding resistance by mobilising bearing, interlock or a different shear path, but they do not automatically raise material shear strength. The resisting mechanism and foundation capacity must be checked in each case.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00036",
-                "label": "p. 31; topic 8 point 40"
-              }
-            ]
-          },
-          {
-            "id": "caution-empty-reservoir-heel-stress",
-            "status": "corrected",
-            "prompt": "With the reservoir empty, heel stress is 2W/B and toe stress is zero",
-            "html": "<p>The printed fraction is broken, and the result holds only for an elementary triangular section with a vertical upstream face, per unit length, under weight alone with no uplift. Other sections have other empty-reservoir distributions.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00040",
-                "label": "p. 31; topic 8 point 43"
-              }
-            ]
-          },
-          {
-            "id": "caution-shear-friction-three-to-five",
-            "status": "review",
-            "prompt": "The shear friction factor against sliding should exceed 3 to 5",
-            "html": "<p>The threshold is unexplained and is not adopted as a universal requirement. Shear-friction formulations and permissible cohesion differ between methods, so acceptance values come from the governing standard and load case.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00053",
-                "label": "p. 31; topic 8 point 58"
-              }
-            ]
-          },
-          {
-            "id": "caution-phreatic-line-atmospheric-pressure",
-            "status": "review",
-            "prompt": "Hydrostatic pressure on the phreatic line equals atmospheric pressure",
-            "html": "<p>Correct in gauge terms: the phreatic surface is where pore pressure is zero gauge, so its absolute pressure equals local atmospheric pressure. The seepage field below it is flowing and should not be described as hydrostatic throughout.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00082",
-                "label": "p. 32; topic 8 point 90"
-              }
-            ]
-          },
-          {
-            "id": "caution-rolled-fill-under-omc",
-            "status": "review",
-            "prompt": "Rolled fill is compacted in layers by power rollers under OMC",
-            "html": "<p>Read 'under OMC' as controlled moisture near the project requirement. The specified band may be wet or dry of laboratory optimum depending on the zone and performance requirements; there is no obligatory below-optimum rule.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00086",
-                "label": "p. 32; topic 8 point 94"
-              }
-            ]
-          },
-          {
-            "id": "caution-drum-gate-no-trash-rack",
-            "status": "review",
-            "prompt": "A trash rack is not required at the entrance of a drum gate installation",
-            "html": "<p>The source gives no diagram or definition of 'entrance'. Drum gates depend on clear chamber passages, so do not infer a universal no-rack rule; protection should match the actual debris risk of the installation, which needs checking.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00088",
-                "label": "p. 33; topic 8 point 97"
-              }
-            ]
-          },
-          {
-            "id": "caution-gravity-dam-axis-crown",
-            "status": "review",
-            "prompt": "The axis of a gravity dam is the upstream crown line",
-            "html": "<p>Acceptable as a common plan-alignment convention, not as a universal centroidal or structural axis. The reference used on the project drawings must be confirmed before comparing coordinates or offsets.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00089",
-                "label": "p. 33; topic 8 point 98"
-              }
-            ]
-          },
-          {
-            "id": "caution-siphon-crest-at-full-level",
-            "status": "review",
-            "prompt": "The crest of a siphon spillway is fixed at full reservoir level",
-            "html": "<p>A design concept, not a universal fixed rule. Discharge depends on how the siphon primes, how air enters or is vented and on outlet conditions, and the crest position relative to full-supply level varies with the design.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00093",
-                "label": "p. 33; topic 8 point 103"
-              }
-            ]
-          },
-          {
-            "id": "caution-phreatic-line-parabolic",
-            "status": "review",
-            "prompt": "The phreatic line of an earth embankment is parabolic",
-            "html": "<p>Parabolic under the Dupuit approximation for steady one-dimensional unconfined flow over a horizontal impervious base with no distributed recharge or leakage. Anisotropy, drains and entry and exit conditions alter real profiles.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00097",
-                "label": "p. 33; topic 8 point 107"
-              }
-            ]
-          },
-          {
-            "id": "caution-hydrostatic-level-incomplete",
-            "status": "review",
-            "prompt": "Hydrostatic level measurement of dam water level, as printed incompletely",
-            "html": "<p>The capsule sentence is incomplete and the intended instrument is not recovered. The related numbers are original illustrations of hydrostatic level inference, so check the original completion before quoting the source.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00098",
-                "label": "p. 33; topic 8 point 108"
-              }
-            ]
-          },
-          {
-            "id": "caution-sluiceway-outlet-name",
-            "status": "review",
-            "prompt": "The sluiceway is the dam outlet that releases water for downstream demands",
-            "html": "<p>The function is right: a gated outlet or sluiceway can release controlled supply below the spillway crest. Downstream releases are not always made through one universally named arrangement, so check the outlet works of the specific dam.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00101",
-                "label": "p. 33; topic 8 point 111"
-              }
-            ]
-          },
-          {
-            "id": "caution-kulekhani-radial-gates",
-            "status": "review",
-            "prompt": "The Kulekhani I spillways use radial or Tainter gates",
-            "html": "<p>The radial-Tainter equivalence is sound, but the Kulekhani I installation is not established by the nearby notes or primary extraction. Verify as-built spillway records before stating it as a project fact.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00105",
-                "label": "p. 33; topic 8 point 115"
-              }
-            ]
-          },
-          {
-            "id": "caution-gates-maintain-safe-levels",
-            "status": "review",
-            "prompt": "Radial spillway gates control releases and maintain safe reservoir levels",
-            "html": "<p>Gates maintain safe levels only if they open when required. That depends on a tested operating system with independent or emergency power, maintenance and procedures, not on the gate type or a rating computed with every gate open.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00106",
-                "label": "p. 33; topic 8 point 115"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Arch, buttress and rockfill dam design and detailed dam-type comparison are not examined by these items.",
           "Spillway discharge equations, design-flood selection and flood routing are not calculated here.",
           "Seismic, silt and wave loads on gravity dams and complete load-combination checks are not covered.",
-          "Storage-plant intake design and trash-rack hydraulics are not examined in this topic's items.",
-          "Project-specific gate arrangements, including those claimed for Kulekhani I, remain unverified."
+          "Storage-plant intake design and trash-rack hydraulics are not examined in this topic's items."
         ]
       },
       "ACiE0804": {
@@ -2001,7 +1494,7 @@
             "html": "<p>A run-of-river scheme diverts part of the river through its headworks instead of storing large volumes. A typical sequence runs from a diversion weir or barrage, past an intake with a trash rack, through a gravel trap and settling basin, into the headrace. Each part has one main task, and none can stand in for another.</p><table><thead><tr><th scope='col'>Component</th><th scope='col'>Main task</th></tr></thead><tbody><tr><td>Main weir or barrage bays</td><td>Pass river flow and floods</td></tr><tr><td>Under-sluice bays</td><td>Low-level releases that keep near-bed sediment away from the intake</td></tr><tr><td>Intake with trash rack</td><td>Admit the design flow while excluding large debris</td></tr><tr><td>Gravel trap and settling basin</td><td>Remove coarse and then finer sediment by settling</td></tr><tr><td>Flushing channel or outlets</td><td>Return trapped sediment to the river</td></tr></tbody></table><p>Gate <em>mechanism</em> and bay <em>purpose</em> are separate classifications. The main spillway bays and the low-level under-sluices may use the same radial gates, yet the first pass river floods while the second provide near-bed releases that help manage sediment approaching the intake. Under-sluices do not carry the diverted supply into the canal, and main bays neither settle suspended particles nor screen debris. How well an under-sluice keeps the intake clear depends on its level, operation and sediment design, not on the gate label.</p>",
             "points": [
               {
-                "html": "Where main spillway bays and under-sluices share radial gates, the main bays pass river floods while the under-sluices help manage near-bed sediment at the intake.",
+                "html": "The under-sluice and spillway gates used in the barrage of the Sunkoshi hydropower project are radial gates.",
                 "sources": [
                   {
                     "id": "CAP4-08-00107",
@@ -2020,10 +1513,10 @@
           {
             "id": "submerged-intake-openings",
             "title": "Intake openings: submergence is measured from the water surface",
-            "html": "<p>An intake is <em>submerged</em> when its opening lies below the operating water surface. That says nothing about sitting on the bed: an opening raised above the river bed so that less sediment enters is still submerged while the water surface stays above it. A bottom intake is one particular submerged arrangement, not the definition.</p><p>The chosen opening level is a balance. Enough submergence prevents air-entraining vortices, a higher sill reduces bed-load entry, and the approach and entrance shapes control hydraulic losses. A free-surface side intake over a weir crest is a different form again.</p>",
+            "html": "<p>An intake is <em>submerged</em> when its opening lies below the operating water surface. That says nothing about sitting on the bed: an opening raised above the river bed so that less sediment enters is still submerged while the water surface stays above it.</p><p>The chosen opening level is a balance. Enough submergence prevents air-entraining vortices, a higher sill reduces bed-load entry, and the approach and entrance shapes control hydraulic losses. A free-surface side intake over a weir crest is a different form again.</p>",
             "points": [
               {
-                "html": "An opening raised above the bed yet still below the river's water surface remains a submerged intake: submergence refers to the water surface, not necessarily the bed.",
+                "html": "A submerged intake is located at the bottom of the river.",
                 "sources": [
                   {
                     "id": "CAP4-08-00048",
@@ -2052,7 +1545,7 @@
             ],
             "points": [
               {
-                "html": "A trash rack intercepts floating and submerged debris larger than its bar spacing before it reaches the waterway; fine sediment is left to the settling basin.",
+                "html": "A trash rack is designed to prevent floating and submerged debris from entering.",
                 "sources": [
                   {
                     "id": "CAP4-08-00047",
@@ -2099,16 +1592,7 @@
             "moreHtml": "<p>The ideal trajectory model is not interchangeable with a depth-mixed model, in which turbulence keeps particles spread through the depth and removal follows an exponential law. For the same inputs that law gives \\(1 - e^{-0.5}\\), about 39%, and \\(1 - e^{-1}\\), about 63%, well below the ideal 50% and 100%.</p><p>The removed fraction also sets how fast deposits build up. The deposited volume is the trapped sediment mass divided by the deposit's bulk density, and the flushing interval is the available sediment storage divided by that rate; the capsule items do not work these figures.</p>",
             "points": [
               {
-                "html": "In an ideal discrete-settling basin passing 2 m<sup>3</sup>/s over 250 m<sup>2</sup>, particles settling at 0.004 m/s are 50% removed, then 100% once the plan area doubles at the same flow.",
-                "sources": [
-                  {
-                    "id": "CAP4-08-00045",
-                    "label": "p. 31; topic 8 point 48; topic 8 point 50"
-                  }
-                ]
-              },
-              {
-                "html": "Under the ideal overflow-rate criterion, extra depth alone does not raise removal, and once removal reaches 100% more plan area adds nothing for that particle size.",
+                "html": "For a given discharge, the efficiency of a settling basin is increased by increasing the surface area.",
                 "sources": [
                   {
                     "id": "CAP4-08-00045",
@@ -2150,49 +1634,11 @@
             "note": "Clean rack; blockage raises the loss."
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-surface-area-and-settling-efficiency",
-            "status": "review",
-            "prompt": "Increasing surface area increases settling-basin efficiency at a given discharge",
-            "html": "<p>True under the ideal discrete-settling model, where removal equals \\(v_s A/Q\\) up to a ceiling of 100%. Once particles are fully removed, more area adds nothing, and depth-mixed or turbulent conditions follow different removal laws.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00045",
-                "label": "p. 31; topic 8 point 48; topic 8 point 50"
-              }
-            ]
-          },
-          {
-            "id": "caution-submerged-intake-at-bottom",
-            "status": "corrected",
-            "prompt": "A submerged intake is located at the bottom of the river",
-            "html": "<p>Submergence refers to the operating water surface, not the bed. An opening set above the bed to limit sediment intake can still be submerged; a bottom intake is only one submerged form.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00048",
-                "label": "p. 31; topic 8 point 52"
-              }
-            ]
-          },
-          {
-            "id": "caution-sunkoshi-barrage-radial-gates",
-            "status": "review",
-            "prompt": "The Sunkoshi barrage under-sluice and spillway gates are radial gates",
-            "html": "<p>Not verified from an as-built or operator record. The related item treats radial gates as a hypothetical design input, so confirm the project's actual gate types before quoting this as fact.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00107",
-                "label": "p. 33; topic 8 point 116"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Bed-load and suspended-sediment characterisation and sediment sampling are not examined by these four items.",
           "Settling-basin dimensions, deposited-sediment volume, flushing arrangements and flushing frequency are not worked numerically by the capsule items.",
-          "Weir and barrage hydraulic design, trash-rack losses and intake discharge calculations are outside these items.",
-          "The gate types of the Sunkoshi barrage remain unverified."
+          "Weir and barrage hydraulic design, trash-rack losses and intake discharge calculations are outside these items."
         ]
       },
       "ACiE0805": {
@@ -2220,7 +1666,7 @@
             "moreHtml": "<p>These relations show why the tank helps. A free surface near the turbine shortens the length \\(L\\) over which fast pressure waves travel, so a given closure is more often slow relative to \\(2L/a\\) and the penstock pressure rise falls, while the long headrace responds with slow mass oscillation rather than sharp water hammer.</p>",
             "points": [
               {
-                "html": "On a rapid load reduction, a side-connected surge tank accepts excess upstream flow while the water column decelerates, reducing but not eliminating transient pressures.",
+                "html": "The function of a surge tank in a hydroelectric power plant is to relieve water hammer pressure in the penstock.",
                 "sources": [
                   {
                     "id": "CAP4-08-00050",
@@ -2229,7 +1675,7 @@
                 ]
               },
               {
-                "html": "A vented surge tank keeps a free atmospheric boundary even under a roof, whereas an air-cushion chamber works by compressing trapped air: a compressible air cushion versus a free surface.",
+                "html": "It is wrong to say that surge tanks are totally closed to avoid entry of unwanted objects into the penstock.",
                 "sources": [
                   {
                     "id": "CAP4-08-00049",
@@ -2252,7 +1698,7 @@
           {
             "id": "waterway-path-and-forebay",
             "title": "The waterway from reservoir to turbine, and forebay balancing",
-            "html": "<p>Generation flow follows a physical path, not a list of components. In a reservoir-fed scheme it runs from the reservoir through the headrace tunnel into the penstock and on to the turbine, then leaves through the draft tube or tailrace. A surge chamber sits at the junction of headrace and penstock, connected from the side: it accepts or supplies transient flow there, while steady generation flow need not pass through its volume.</p><p>The <em>penstock</em> is the conduit carrying pressurised water to the machine. In an open-headrace Francis scheme it links the forebay with the machine's inlet or scroll casing, whereas a Pelton penstock feeds its nozzle arrangement. The draft tube lies downstream of a reaction runner and the tailrace carries discharged water away, so neither supplies the turbine; a spill channel disposes of surplus water.</p><p>In an open-headrace scheme the <em>forebay</em> provides short-term balancing at the head of the penstock. Its storage changes by inflow minus outflow. Intake submergence, permissible drawdown and overflow arrangements also matter, and a forebay is not automatically enough for long-duration peaking.</p>",
+            "html": "<p>In a hydropower plant, water flows from the reservoir through the penstock and the surge tank to the turbine, then leaves through the draft tube or tailrace.</p><p>The <em>penstock</em> is the conduit carrying pressurised water to the machine. In an open-headrace Francis scheme it links the forebay with the machine's inlet or scroll casing, whereas a Pelton penstock feeds its nozzle arrangement. The draft tube lies downstream of a reaction runner and the tailrace carries discharged water away, so neither supplies the turbine; a spill channel disposes of surplus water.</p><p>In an open-headrace scheme the <em>forebay</em> provides short-term balancing at the head of the penstock. Its storage changes by inflow minus outflow. Intake submergence, permissible drawdown and overflow arrangements also matter, and a forebay is not automatically enough for long-duration peaking.</p>",
             "formulas": [
               {
                 "label": "Forebay balancing volume",
@@ -2265,7 +1711,7 @@
             },
             "points": [
               {
-                "html": "In a reservoir-fed scheme, flow runs reservoir to headrace to penstock to turbine; a side-connected surge chamber exchanges water at the upstream headrace-penstock junction.",
+                "html": "In a hydropower plant, the correct sequence for the direction of flow of water is reservoir, penstock, surge tank, turbine.",
                 "sources": [
                   {
                     "id": "CAP4-08-00074",
@@ -2274,7 +1720,7 @@
                 ]
               },
               {
-                "html": "The penstock is the pressure conduit feeding a Francis turbine's scroll casing from the forebay in an open-headrace scheme; a Pelton penstock feeds nozzles instead.",
+                "html": "The penstock in a hydroelectric power plant is a conduit connecting the forebay to the scroll case of the turbine.",
                 "sources": [
                   {
                     "id": "CAP4-08-00078",
@@ -2283,7 +1729,7 @@
                 ]
               },
               {
-                "html": "A forebay fed at 2 m<sup>3</sup>/s while turbines draw 4 m<sup>3</sup>/s for 10 minutes must supply 1200 m<sup>3</sup> of usable storage.",
+                "html": "The forebay in a hydropower plant is provided for water storage and regulation.",
                 "sources": [
                   {
                     "id": "CAP4-08-00103",
@@ -2310,7 +1756,7 @@
           {
             "id": "penstock-sizing-and-friction-loss",
             "title": "Preliminary penstock sizing and how friction loss grows with velocity",
-            "html": "<p>A first penstock size follows from continuity: the flow area is discharge divided by the adopted mean velocity, and a circular pipe of that area has a definite diameter. The velocity is only a stated preliminary assumption; energy loss, water-hammer pressure, pressure rating and economics must be compared before a diameter is adopted. A higher velocity gives a smaller, cheaper pipe but larger losses and surges.</p><p>Friction loss follows the <em>Darcy–Weisbach</em> equation. With the same length and diameter and a constant friction factor, loss scales with the square of velocity, not with the velocity ratio. In reality the friction factor varies with Reynolds number and roughness regime, so constant \\(f\\) is an explicit comparison assumption. Either way, loss in a given pipe increases with velocity, and every metre lost comes straight off the net head.</p>",
+            "html": "<p>A first penstock size follows from continuity: the flow area is discharge divided by the adopted mean velocity, and a circular pipe of that area has a definite diameter. A higher velocity gives a smaller, cheaper pipe but larger losses and surges.</p><p>Friction loss follows the <em>Darcy–Weisbach</em> equation. With the same length and diameter and a constant friction factor, loss scales with the square of velocity, not with the velocity ratio. In reality the friction factor varies with Reynolds number and roughness regime, so constant \\(f\\) is an explicit comparison assumption. Either way, loss in a given pipe increases with velocity, and every metre lost comes straight off the net head.</p>",
             "formulas": [
               {
                 "label": "Continuity for a circular conduit",
@@ -2331,7 +1777,7 @@
             },
             "points": [
               {
-                "html": "Adopting 7 m/s for 7 m<sup>3</sup>/s gives a 1 m² flow area and a circular internal diameter of about 1.13 m; the velocity is a preliminary assumption only.",
+                "html": "In a high head hydropower plant, the velocity of water in the penstock is about 7 m/s.",
                 "sources": [
                   {
                     "id": "CAP4-08-00058",
@@ -2340,7 +1786,7 @@
                 ]
               },
               {
-                "html": "With length, diameter and Darcy friction factor unchanged, raising penstock velocity from 4 to 6 m/s means the friction loss becomes 2.25 times the initial loss.",
+                "html": "The head loss in a penstock pipe of given length increases with an increase in velocity.",
                 "sources": [
                   {
                     "id": "CAP4-08-00080",
@@ -2363,11 +1809,11 @@
           {
             "id": "rock-tunnel-excavation",
             "title": "Rock-tunnel excavation: heading and bench, trimmers and the work cycle",
-            "html": "<p>Large rock tunnels are often excavated in stages. In <em>heading and benching</em> the upper part of the section, the heading, is excavated first and the remaining lower part, the bench, follows. The method is common in rock, but suitability depends on opening size, ground, support and equipment; it is not restricted to perfectly self-supporting hard rock. Full-face excavation takes the whole section at once, a pilot drift is a small advance opening, and cut-and-cover works from the surface.</p><p><em>Trimmer</em> or perimeter work forms the intended finished outline of the tunnel, limiting unwanted overbreak and helping the lining geometry. It is distinct from the initial relief opening within the face and from the bulk rock between them, and its function alone does not fix a drilling or firing order.</p><p>A conceptual drill-and-blast cycle, with charging and blasting between drilling and ventilation, runs:</p><ol><li>Mark the tunnel profile.</li><li>Set up and drill.</li><li>Ventilate and verify the atmosphere after the blast.</li><li>A competent person inspects and clears any misfire.</li><li>Remove the muck.</li></ol><p>This outline explains the order of stages; it is not an operational blasting or re-entry procedure.</p>",
+            "html": "<p>Large rock tunnels are often excavated in stages. In <em>heading and benching</em> the upper part of the section, the heading, is excavated first and the remaining lower part, the bench, follows. The heading and benching method of tunnelling is used in hard rocks. Full-face excavation takes the whole section at once, a pilot drift is a small advance opening, and cut-and-cover works from the surface.</p><p><em>Trimmer</em> or perimeter work forms the intended finished outline of the tunnel, limiting unwanted overbreak and helping the lining geometry. It is distinct from the initial relief opening within the face and from the bulk rock between them.</p><p>A conceptual drill-and-blast cycle, with charging and blasting between drilling and ventilation, runs:</p><ol><li>Mark the tunnel profile.</li><li>Set up and drill.</li><li>Ventilate and verify the atmosphere after the blast.</li><li>A competent person inspects and clears any misfire.</li><li>Remove the muck.</li></ol><p>This outline explains the order of stages; it is not an operational blasting or re-entry procedure.</p>",
             "moreHtml": "<p>Staging does not make muck removal inherently easy or hard. Productivity depends on working space, ramps, equipment, traffic and support constraints, so poor access to the heading can slow removal even where the rock class is the same.</p>",
             "points": [
               {
-                "html": "Excavating the upper part of a large rock tunnel first and the lower part afterwards is heading and benching, a staged method not confined to self-supporting hard rock.",
+                "html": "The heading and benching method of tunnelling is used in hard rocks.",
                 "sources": [
                   {
                     "id": "CAP4-08-00054",
@@ -2376,7 +1822,7 @@
                 ]
               },
               {
-                "html": "With the same rock class, a narrow steep ramp to the heading means heading access and equipment may make muck removal more difficult; the method name guarantees nothing.",
+                "html": "In the heading and benching method of tunnelling, removal of muck from the heading is not very easy.",
                 "sources": [
                   {
                     "id": "CAP4-08-00056",
@@ -2385,7 +1831,7 @@
                 ]
               },
               {
-                "html": "Trimmer or perimeter work controls the final excavation outline and limits unwanted overbreak; it does not by itself fix a drilling or firing order.",
+                "html": "In tunnel blasting, the trimmer holes are used to give shape to the tunnel.",
                 "sources": [
                   {
                     "id": "CAP4-08-00096",
@@ -2394,7 +1840,7 @@
                 ]
               },
               {
-                "html": "The listed stages run: mark profile; set up and drill; ventilate and verify atmosphere; competent-person misfire clearance; muck, with charging and blasting falling between drilling and ventilation.",
+                "html": "For tunnelling in rock, the operations are 1. removing foul gases, 2. marking the tunnel profile, 3. setting up and drilling, 4. checking misfire and 5. mucking. The correct sequence is 2, 3, 1, 4, 5.",
                 "sources": [
                   {
                     "id": "CAP4-08-00052",
@@ -2425,10 +1871,10 @@
           {
             "id": "tunnel-support-drainage-lining",
             "title": "Tunnel presupport, drainage layout and historical segmental linings",
-            "html": "<p>Where weak ground could fall into the excavation before normal support is in place, <em>forepoling</em> provides presupport: bars, spiles or plates are driven ahead of the face to hold the ground above the newly exposed roof. Soft and running-ground descriptions overlap, so suitability depends on the complete support and groundwater-control design rather than on a single soil label. Forepoling does not enlarge the waterway, measure roughness or remove muck.</p><p>Groundwater collected during construction can be led along <em>longitudinal side drains</em> beside a central access track; side drainage is a legitimate layout when sized, graded and maintained for its duty. 'Side' describes position, while temporary and permanent describe service life. Lining does not always remove the need for drainage, no drain position guarantees zero groundwater pressure, and drainage of an operating pressure tunnel needs its own design.</p><p>Older shield-driven subaqueous tunnels historically used bolted, flanged <em>grey cast iron</em> segments, recognisable by the flake graphite in the iron. Segments can be erected behind the shield, and their joints need sealing. This history does not make modern reinforced-concrete segmental linings unsuitable under water.</p>",
+            "html": "<p>Where weak ground could fall into the excavation before normal support is in place, <em>forepoling</em> provides presupport: bars, spiles or plates are driven ahead of the face to hold the ground above the newly exposed roof. Soft and running-ground descriptions overlap, so suitability depends on the complete support and groundwater-control design rather than on a single soil label. Forepoling does not enlarge the waterway, measure roughness or remove muck.</p><p>Side drainage is not used in a tunnel. Lining does not always remove the need for drainage, no drain position guarantees zero groundwater pressure, and drainage of an operating pressure tunnel needs its own design.</p><p>Older shield-driven subaqueous tunnels historically used bolted, flanged <em>grey cast iron</em> segments, recognisable by the flake graphite in the iron. Segments can be erected behind the shield, and their joints need sealing. This history does not make modern reinforced-concrete segmental linings unsuitable under water.</p>",
             "points": [
               {
-                "html": "In weak ground that may fall before ordinary support is installed, forepoling is used to provide presupport ahead of the exposed roof.",
+                "html": "The forepoling method of tunnelling is used for soft ground.",
                 "sources": [
                   {
                     "id": "CAP4-08-00051",
@@ -2437,7 +1883,7 @@
                 ]
               },
               {
-                "html": "Longitudinal drains beside a central track are a valid tunnel layout: side drains can serve the designed drainage duty when sized, graded and maintained.",
+                "html": "Side drainage is not used in a tunnel.",
                 "sources": [
                   {
                     "id": "CAP4-08-00055",
@@ -2446,7 +1892,7 @@
                 ]
               },
               {
-                "html": "Bolted flanged segments containing flake graphite in older shield-driven subaqueous tunnels are grey cast iron, historically suitable but not the only suitable lining.",
+                "html": "Cast iron linings are suitable for shield-driven tunnels, particularly in subaqueous regions.",
                 "sources": [
                   {
                     "id": "CAP4-08-00057",
@@ -2498,116 +1944,7 @@
             "tex": "T_c = \\dfrac{2L}{a}"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-surge-tank-totally-closed",
-            "status": "review",
-            "prompt": "Surge tanks are totally closed to keep unwanted objects out of the penstock",
-            "html": "<p>The capsule flags this as the wrong statement, and it is wrong as a universal claim: many surge tanks are vented with an atmospheric free surface, even under a protective roof. Deliberately sealed air-cushion chambers exist, so a closed chamber is not inherently incorrect.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00049",
-                "label": "p. 31; topic 8 point 53"
-              }
-            ]
-          },
-          {
-            "id": "caution-surge-tank-prevents-water-hammer",
-            "status": "corrected",
-            "prompt": "A surge tank prevents water hammer in the penstock",
-            "html": "<p>It reduces specified transient effects, chiefly in the upstream waterway, by exchanging water while the flow adjusts. It does not guarantee elimination of water hammer; penstock pressure waves and low pressures still require closure timing and full transient analysis.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00050",
-                "label": "pp. 31, 32; topic 8 point 54; topic 8 point 55; topic 8 point 64; topic 8 point 65"
-              }
-            ]
-          },
-          {
-            "id": "caution-tunnelling-sequence-abbreviated",
-            "status": "review",
-            "prompt": "Rock tunnelling runs: mark profile, drill, remove foul gases, check misfire, muck",
-            "html": "<p>The relative order of the five listed stages is defensible, but the abbreviated sequence omits charging and blasting between drilling and ventilation and the safety clearances needed before re-entry. Treat it as a conceptual outline, not an operational procedure.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00052",
-                "label": "p. 31; topic 8 point 57"
-              }
-            ]
-          },
-          {
-            "id": "caution-heading-benching-hard-rock",
-            "status": "review",
-            "prompt": "Heading and benching is used in hard rocks",
-            "html": "<p>It is a conventional rock-tunnelling method but not exclusive to self-supporting hard rock; opening size, ground conditions, support and equipment decide its suitability.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00054",
-                "label": "p. 32; topic 8 point 59"
-              }
-            ]
-          },
-          {
-            "id": "caution-no-side-drainage-in-tunnels",
-            "status": "corrected",
-            "prompt": "Side drainage is not used in tunnels",
-            "html": "<p>False as a general statement. Longitudinal side drains are a legitimate tunnel-drainage layout when sized, graded and maintained for the duty, and operating pressure tunnels need a separate drainage design.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00055",
-                "label": "p. 32; topic 8 point 60"
-              }
-            ]
-          },
-          {
-            "id": "caution-cast-iron-lining-subaqueous",
-            "status": "review",
-            "prompt": "Cast iron linings suit shield-driven tunnels, particularly in subaqueous regions",
-            "html": "<p>Historically true of grey cast iron segments, but not exclusive: modern reinforced-concrete segmental linings are also suitable for subaqueous tunnels.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00057",
-                "label": "p. 32; topic 8 point 62"
-              }
-            ]
-          },
-          {
-            "id": "caution-penstock-velocity-seven",
-            "status": "review",
-            "prompt": "Water velocity in a high-head penstock is about 7 m/s",
-            "html": "<p>Use it only as a stated preliminary assumption. The adopted velocity comes from comparing head loss, water hammer, pressure rating and economics, not from a universal high-head value.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00058",
-                "label": "p. 32; topic 8 point 63"
-              }
-            ]
-          },
-          {
-            "id": "caution-reservoir-penstock-surge-turbine",
-            "status": "corrected",
-            "prompt": "Water flows through reservoir, penstock, surge tank and turbine in that order",
-            "html": "<p>Not as a serial sequence. Generation flow runs from the reservoir through the headrace into the penstock and on to the turbine, while the surge chamber is side-connected at the headrace-penstock junction, where it exchanges transient flow.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00074",
-                "label": "p. 32; topic 8 point 80"
-              }
-            ]
-          },
-          {
-            "id": "caution-penstock-to-scroll-case",
-            "status": "review",
-            "prompt": "The penstock connects the forebay to the scroll case of the turbine",
-            "html": "<p>Correct for a Francis-type arrangement with an open headrace. The endpoint differs by machine; a Pelton penstock feeds its nozzles, so the scroll-case wording is not universal.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00078",
-                "label": "p. 32; topic 8 point 84"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Water-hammer pressure rise and closure-time classification appear only as relations; no transient is calculated in these items.",
           "Surge-tank stability, mass-oscillation amplitude and chamber sizing are not examined.",
@@ -2634,7 +1971,7 @@
             ],
             "points": [
               {
-                "html": "Free jets striking double-cup buckets, with the runner near atmospheric pressure, identify a Pelton impulse turbine, typically chosen for high head and relatively low discharge.",
+                "html": "A Pelton turbine is a high head impulse turbine.",
                 "sources": [
                   {
                     "id": "CAP4-08-00064",
@@ -2643,7 +1980,7 @@
                 ]
               },
               {
-                "html": "In a Pelton installation the pressure head becomes jet kinetic energy in the nozzle upstream of the runner, before the buckets extract shaft work.",
+                "html": "In an impulse turbine, the pressure energy of water is converted into kinetic energy by a nozzle provided next to the runner.",
                 "sources": [
                   {
                     "id": "CAP4-08-00069",
@@ -2652,7 +1989,7 @@
                 ]
               },
               {
-                "html": "A Francis runner is a reaction machine because energy transfer occurs with a pressure drop through the runner, not before it.",
+                "html": "The energy of water entering a reaction turbine is partly pressure energy and partly kinetic energy.",
                 "sources": [
                   {
                     "id": "CAP4-08-00071",
@@ -2661,7 +1998,7 @@
                 ]
               },
               {
-                "html": "An axial-flow reaction runner with adjustable blades for low head and large, variable discharge is a Kaplan turbine.",
+                "html": "A Kaplan turbine is a low head axial flow turbine.",
                 "sources": [
                   {
                     "id": "CAP4-08-00068",
@@ -2706,7 +2043,7 @@
             },
             "points": [
               {
-                "html": "A Pelton nozzle with 100 m head and \\(C_v\\) = 0.98 gives a jet speed of 43.41 m/s: the ideal 44.29 m/s multiplied once by the velocity coefficient.",
+                "html": "The formula used to calculate the velocity of the jet for a Pelton turbine is \\(C_v\\sqrt{2gH}\\).",
                 "sources": [
                   {
                     "id": "CAP4-08-00061",
@@ -2715,7 +2052,7 @@
                 ]
               },
               {
-                "html": "A conventional draft tube is not fitted to a Pelton because the runner discharges freely near atmospheric pressure, with no flooded outlet from which to recover pressure.",
+                "html": "Draft tubes are not used in Pelton turbines.",
                 "sources": [
                   {
                     "id": "CAP4-08-00072",
@@ -2738,7 +2075,7 @@
           {
             "id": "draft-tube-recovery-and-cavitation",
             "title": "Draft tubes: connection, pressure recovery and cavitation margin",
-            "html": "<p>A Francis <em>draft tube</em> runs from the runner outlet to the tailwater discharge region, usually with its outlet submerged to keep the water seal. It is not part of the supply path. Its gradually expanding passage slows the flow and recovers part of the residual velocity head as pressure, while incurring its own loss.</p><p>The energy equation between inlet and outlet shows what is recovered: the pressure-head rise equals the elevation drop plus the fall in velocity head, minus the loss. Total head still falls by the loss; the tube converts kinetic energy into pressure but creates no energy.</p><p>Suction below the runner lowers local pressure, so <em>cavitation</em> is judged by comparing the local absolute pressure with the water's temperature-dependent vapour pressure, keeping the required margin. A high-altitude site has lower atmospheric pressure and so less margin; runner setting, velocity and operating point also matter. A fixed fraction of atmospheric pressure at both ends of the tube is not a universal acceptance criterion.</p>",
+            "html": "<p>A Francis <em>draft tube</em> runs from the runner outlet to the tailwater discharge region, usually with its outlet submerged to keep the water seal. It is not part of the supply path. Its gradually expanding passage slows the flow and recovers part of the residual velocity head as pressure, while incurring its own loss.</p><p>The energy equation between inlet and outlet shows what is recovered: the pressure-head rise equals the elevation drop plus the fall in velocity head, minus the loss. Total head still falls by the loss; the tube converts kinetic energy into pressure but creates no energy.</p><p>Suction below the runner lowers local pressure, so <em>cavitation</em> is judged by comparing the local absolute pressure with the water's temperature-dependent vapour pressure, keeping the required margin. A high-altitude site has lower atmospheric pressure and so less margin; runner setting, velocity and operating point also matter.</p>",
             "formulas": [
               {
                 "label": "Draft-tube pressure-head rise",
@@ -2757,7 +2094,7 @@
             },
             "points": [
               {
-                "html": "A conventional Francis draft tube connects from the runner outlet to the tailwater discharge region, not to the supply side of the machine.",
+                "html": "The draft tube is connected to the outlet of a turbine.",
                 "sources": [
                   {
                     "id": "CAP4-08-00100",
@@ -2766,7 +2103,7 @@
                 ]
               },
               {
-                "html": "Flow slowing from 8 to 4 m/s in a draft tube that drops 3 m, with 0.40 m of loss, raises the pressure head by 5.05 m from inlet to outlet.",
+                "html": "The use of a draft tube in a reaction turbine helps to convert kinetic energy into pressure energy.",
                 "sources": [
                   {
                     "id": "CAP4-08-00063",
@@ -2775,7 +2112,7 @@
                 ]
               },
               {
-                "html": "Cavitation assessment compares local absolute pressure versus vapour pressure with the required margin, which shrinks at high altitude, not a fixed one-third of atmospheric pressure.",
+                "html": "The pressure at the inlet and outlet of the draft tube should not be less than one-third of atmospheric pressure.",
                 "sources": [
                   {
                     "id": "CAP4-08-00065",
@@ -2802,7 +2139,7 @@
           {
             "id": "hydraulic-power-unit-power-efficiency",
             "title": "Hydraulic power, unit power and turbine efficiency boundaries",
-            "html": "<p><em>Hydraulic power</em> is the rate at which a specified flow delivers energy through a specified head. A turbine delivers less than this after its losses, and a pump needs more shaft input than this to lift the same flow.</p><p><em>Unit power</em> is a different idea: it reduces a particular turbine's output to 1 m head at corresponding operation. For a machine of fixed size, discharge varies as \\(\\sqrt{H}\\), so power varies as \\(H^{3/2}\\). Unit discharge is not imposed separately, so unit power is not universally 9.81 kW.</p><p>Efficiencies must name their boundaries. With leakage neglected, <em>hydraulic efficiency</em> compares the power transferred to the runner with the water power supplied, <em>mechanical efficiency</em> compares shaft power with runner power, and their product is the water-to-shaft efficiency. If leakage were counted separately, volumetric efficiency would also enter the inlet-to-runner transfer.</p>",
+            "html": "<p><em>Hydraulic power</em> is the rate at which a specified flow delivers energy through a specified head. A turbine delivers less than this after its losses, and a pump needs more shaft input than this to lift the same flow.</p><p><em>Unit power</em> is a different idea: it reduces a particular turbine's output to 1 m head at corresponding operation. For a machine of fixed size, discharge varies as \\(\\sqrt{H}\\), so power varies as \\(H^{3/2}\\).</p><p>Efficiencies must name their boundaries. With leakage neglected, <em>hydraulic efficiency</em> compares the power transferred to the runner with the water power supplied, <em>mechanical efficiency</em> compares shaft power with runner power, and their product is the water-to-shaft efficiency. If leakage were counted separately, volumetric efficiency would also enter the inlet-to-runner transfer.</p>",
             "formulas": [
               {
                 "label": "Hydraulic power",
@@ -2827,7 +2164,7 @@
             },
             "points": [
               {
-                "html": "Water at exactly 1 m<sup>3</sup>/s through a 1 m head carries 9.81 kW: this is hydraulic power for the specified flow and head, not a turbine's unit power or electrical output.",
+                "html": "The unit power of a turbine developing power \\(P\\) under head \\(H\\) is \\(\\dfrac{P}{H^{3/2}}\\).",
                 "sources": [
                   {
                     "id": "CAP4-08-00060",
@@ -2836,7 +2173,7 @@
                 ]
               },
               {
-                "html": "A turbine of fixed size giving 800 kW at 16 m head has a unit power of \\(P/H^{3/2}\\) = 800/64 = 12.5 kW at 1 m head.",
+                "html": "The power generated by a turbine working under unit head is called unit power.",
                 "sources": [
                   {
                     "id": "CAP4-08-00059",
@@ -2845,7 +2182,7 @@
                 ]
               },
               {
-                "html": "With leakage neglected, 1000 kW supplied, 900 kW reaching the runner and 855 kW at the shaft give a hydraulic efficiency of 90.0% and a mechanical efficiency of 95%.",
+                "html": "The hydraulic efficiency of a turbine is the ratio of power delivered to the runner to the power supplied at the inlet.",
                 "sources": [
                   {
                     "id": "CAP4-08-00079",
@@ -2872,7 +2209,7 @@
           {
             "id": "pumps-shaft-input-and-reversible-units",
             "title": "Pumps: shaft input, the reverse-turbine comparison and reversible units",
-            "html": "<p>A pump adds energy to water. Its useful hydraulic output is \\(\\gamma Q H\\), that is \\(\\rho g Q H\\), and <em>pump efficiency</em> is hydraulic output divided by shaft input. The shaft input therefore exceeds the lifting power, and the motor's electrical input is higher still because of motor losses. Writing the lifting power without the specific weight, as \\(QH\\) alone, loses its units entirely.</p><p>A <em>centrifugal pump</em> is conceptually the reverse of an inward radial-flow reaction turbine: water enters at the central eye and moves outward through the impeller while shaft work raises its energy, whereas in the turbine water moves inward and delivers work to the shaft. The comparison does not mean any turbine can simply be run backwards without checking its machine curves.</p><p>Pumped-storage schemes can use one <em>reversible pump-turbine with a motor-generator</em> for pumping uphill and generating on the downhill release. Sharing equipment can reduce separate machines and civil works, but efficiency, stability and economics must be checked in both modes, and some schemes use separate pumps and turbines instead.</p>",
+            "html": "<p>A pump adds energy to water. Its useful hydraulic output is \\(\\gamma Q H\\), that is \\(\\rho g Q H\\), and <em>pump efficiency</em> is hydraulic output divided by shaft input. The shaft input therefore exceeds the lifting power, and the motor's electrical input is higher still because of motor losses. Writing the lifting power without the specific weight, as \\(QH\\) alone, loses its units entirely.</p><p>A <em>centrifugal pump</em> is conceptually the reverse of an inward radial-flow reaction turbine: water enters at the central eye and moves outward through the impeller while shaft work raises its energy, whereas in the turbine water moves inward and delivers work to the shaft. The comparison does not mean any turbine can simply be run backwards without checking its machine curves.</p><p>Pumped-storage schemes can use one <em>reversible pump-turbine with a motor-generator</em> for pumping uphill and generating on the downhill release. Sharing equipment can reduce separate machines and civil works.</p>",
             "formulas": [
               {
                 "label": "Pump shaft input",
@@ -2885,7 +2222,7 @@
             },
             "points": [
               {
-                "html": "Delivering 0.040 m<sup>3</sup>/s against 25 m at 80% pump efficiency needs 12.26 kW of shaft input: 9.81 kW of hydraulic power divided by 0.80.",
+                "html": "The power needed to lift water at a discharge \\(Q\\) through a head \\(H\\) is \\(P = \\gamma QH\\).",
                 "sources": [
                   {
                     "id": "CAP4-08-00017",
@@ -2894,7 +2231,7 @@
                 ]
               },
               {
-                "html": "Compared with an inward radial-flow reaction turbine, a centrifugal pump's flow moves from the eye outward and shaft work raises fluid energy.",
+                "html": "A centrifugal pump acts as the reverse of an inward radial flow reaction turbine.",
                 "sources": [
                   {
                     "id": "CAP4-08-00073",
@@ -2903,7 +2240,7 @@
                 ]
               },
               {
-                "html": "A reversible pump-turbine with motor-generator can serve both pumping and generating in pumped storage, with performance checked in each mode.",
+                "html": "Pumped storage plants use reversible pump-turbines, which work at relatively high efficiency and reduce the cost of the plant.",
                 "sources": [
                   {
                     "id": "CAP4-08-00066",
@@ -2930,7 +2267,7 @@
           {
             "id": "pump-similarity-and-trimming",
             "title": "Pump similarity: the fifth-power family law versus impeller trimming",
-            "html": "<p>For <em>geometrically similar</em> pumps at corresponding operating points, discharge scales as \\(ND^3\\) and head as \\(N^2D^2\\). With comparable efficiency, input power varies as their product, \\(N^3D^5\\), so at a fixed speed power grows with the fifth power of diameter. Using the flow ratio alone ignores the rise in head.</p><p>Trimming one impeller inside an unchanged casing is not a geometrically scaled family, so the fifth-power law does not describe it. Where a supplier explicitly permits a limited-trim approximation with a cube law, that model applies only to that pump. The two exponents belong to different models, neither replaces the other, and actual duty still comes from the supplier's curves.</p>",
+            "html": "<p>For <em>geometrically similar</em> pumps at corresponding operating points, discharge scales as \\(ND^3\\) and head as \\(N^2D^2\\). With comparable efficiency, input power varies as their product, \\(N^3D^5\\), so at a fixed speed power grows with the fifth power of diameter. Using the flow ratio alone ignores the rise in head.</p><p>Trimming one impeller inside an unchanged casing is not a geometrically scaled family, so the fifth-power law does not describe it. The two exponents belong to different models, neither replaces the other, and actual duty still comes from the supplier's curves.</p>",
             "formulas": [
               {
                 "label": "Similarity of discharge and head",
@@ -2951,7 +2288,7 @@
             },
             "points": [
               {
-                "html": "For geometrically similar pumps at the same speed, power scales as \\(D^5\\): doubling the diameter of a 10 kW pump predicts 320 kW.",
+                "html": "For geometrically similar centrifugal pumps running at the same speed, the power is proportional to \\(D^5\\).",
                 "sources": [
                   {
                     "id": "CAP4-08-00076",
@@ -2960,7 +2297,7 @@
                 ]
               },
               {
-                "html": "Under a supplier-permitted limited-trim cube law, trimming a 20 kW impeller to 0.90 of its diameter gives about 14.58 kW; the fifth-power family law does not apply.",
+                "html": "When only the impeller diameter of a centrifugal pump is changed in the same casing at the same speed, the power is approximately proportional to \\(D^3\\).",
                 "sources": [
                   {
                     "id": "CAP4-08-00077",
@@ -2997,7 +2334,7 @@
             },
             "points": [
               {
-                "html": "Predicting water-to-wire efficiency at low station load needs turbine part-load efficiency and station auxiliary losses; a wide high-efficiency generator range is not enough.",
+                "html": "Hydro generators give high efficiency over a wide range of load.",
                 "sources": [
                   {
                     "id": "CAP4-08-00003",
@@ -3006,7 +2343,7 @@
                 ]
               },
               {
-                "html": "After an isolated isochronous unit loses part of its load, the governor must reduce admitted water flow through the turbine controls to restore the speed setpoint.",
+                "html": "The governor in a hydropower plant regulates the flow of water striking the runner to control turbine speed.",
                 "sources": [
                   {
                     "id": "CAP4-08-00046",
@@ -3029,7 +2366,7 @@
           {
             "id": "powerhouse-runner-design-watermills",
             "title": "Powerhouse role, runner blade counts and traditional watermills",
-            "html": "<p>A <em>powerhouse</em> does more than shelter machines. It houses turbine-generator units and auxiliaries on proper equipment foundations, protects them from the weather and provides service access, cranes and lifting clearances so that major parts can be removed for maintenance. Protection of a runner against hydraulic damage depends on turbine and waterway design rather than on the building.</p><p>Runner geometry is chosen for the duty. An existing Francis runner with, say, 20 blades is only a starting point: blade count affects blade loading, blockage, losses, vibration and manufacture, so it is revised by optimising the runner hydraulically and structurally for the new duty. Runner blades, guide vanes and generator poles are separate components whose counts are not matched to one another, and a textbook range is descriptive rather than a design criterion.</p><p>A traditional <em>watermill</em> shows hydropower at its simplest: falling or flowing water drives a runner, often wooden, that turns a shaft to grind grain. The conversion is hydraulic energy to rotating mechanical work, and no generator is needed. Replacing a worn wooden runner with a well-designed metal one changes the material, not the principle; material and geometry should suit strength, corrosion, wear, head, discharge and maintenance.</p>",
+            "html": "<p>A <em>powerhouse</em> does more than shelter machines. It houses turbine-generator units and auxiliaries on proper equipment foundations, protects them from the weather and provides service access, cranes and lifting clearances so that major parts can be removed for maintenance.</p><p>Runner geometry is chosen for the duty. An existing Francis runner with, say, 20 blades is only a starting point: blade count affects blade loading, blockage, losses, vibration and manufacture, so it is revised by optimising the runner hydraulically and structurally for the new duty. Runner blades, guide vanes and generator poles are separate components whose counts are not matched to one another.</p><p>A traditional <em>watermill</em> shows hydropower at its simplest: falling or flowing water drives a runner, often wooden, that turns a shaft to grind grain. The conversion is hydraulic energy to rotating mechanical work, and no generator is needed. Replacing a worn wooden runner with a well-designed metal one changes the material, not the principle; material and geometry should suit strength, corrosion, wear, head, discharge and maintenance.</p>",
             "formulas": [
               {
                 "label": "Synchronous speed of a generator",
@@ -3039,7 +2376,7 @@
             ],
             "points": [
               {
-                "html": "A powerhouse layout directly serves its operational role through equipment foundations, service access and lifting clearances for removing major machine parts.",
+                "html": "A power house is used to protect the turbine and runner from damage.",
                 "sources": [
                   {
                     "id": "CAP4-08-00062",
@@ -3048,7 +2385,7 @@
                 ]
               },
               {
-                "html": "Changing a Francis runner's 20-blade starting count is justified by hydraulic and structural optimisation for the specific duty, not by matching guide vanes or poles.",
+                "html": "In a Francis turbine runner, the number of blades is generally between 16 and 24.",
                 "sources": [
                   {
                     "id": "CAP4-08-00084",
@@ -3057,7 +2394,7 @@
                 ]
               },
               {
-                "html": "At a watermill runner, water's hydraulic energy becomes rotating mechanical shaft work that drives the millstones directly, with no generator.",
+                "html": "In water mills, the material used for the turbine wheel that rotates in the flow is wood.",
                 "sources": [
                   {
                     "id": "CAP4-10-00172",
@@ -3066,7 +2403,7 @@
                 ]
               },
               {
-                "html": "Replacing a wooden watermill runner with a designed metal one shows the material may change while the water-to-shaft energy conversion remains the same.",
+                "html": "In a traditional water mill, the wooden wheel acts as the turbine.",
                 "sources": [
                   {
                     "id": "CAP4-10-00173",
@@ -3149,140 +2486,7 @@
             "tex": "N = \\dfrac{120 f}{p}"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-generator-efficiency-wide-range",
-            "status": "review",
-            "prompt": "Hydro-generators give high efficiency over a wide range of load",
-            "html": "<p>Possibly true of the generator itself, but whole-plant efficiency also depends on how the turbine performs at part load and on station auxiliary consumption, so it need not stay high at low load.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00003",
-                "label": "p. 30; topic 8 point 3"
-              }
-            ]
-          },
-          {
-            "id": "caution-uplift-power-formula",
-            "status": "corrected",
-            "prompt": "Power needed to uplift water is P = QH",
-            "html": "<p>The specific weight has dropped out of the printed formula: hydraulic lifting power is \\(\\gamma Q H = \\rho g Q H\\). Pump shaft input is this divided by pump efficiency, and the motor's electrical input is higher again.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00017",
-                "label": "p. 30; topic 8 point 17"
-              }
-            ]
-          },
-          {
-            "id": "caution-governor-speed-control-context",
-            "status": "review",
-            "prompt": "The governor regulates the water flow striking the runner to control turbine speed",
-            "html": "<p>Correct as speed control through water admission. Full return to the speed setpoint assumes isolated isochronous control; droop control can leave a steady frequency offset, and grid-connected operation has different constraints.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00046",
-                "label": "pp. 31, 32; topic 8 point 49; topic 8 point 69; topic 8 point 89"
-              }
-            ]
-          },
-          {
-            "id": "caution-unit-power-unit-discharge",
-            "status": "corrected",
-            "prompt": "Unit power is the power generated under unit head and unit discharge",
-            "html": "<p>Unit power reduces a given turbine's corresponding output to 1 m head, \\(P_u = P/H^{3/2}\\); discharge is not separately fixed at unity. The 9.81 kW obtained from 1 m<sup>3</sup>/s under 1 m is simply hydraulic power.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00059",
-                "label": "p. 32; topic 8 point 66"
-              }
-            ]
-          },
-          {
-            "id": "caution-powerhouse-protects-runner",
-            "status": "review",
-            "prompt": "The powerhouse is used to protect the turbine and runner from damage",
-            "html": "<p>Too narrow. The powerhouse houses, supports and protects equipment and provides foundations, cranes and service access; protection of the runner from hydraulic damage depends on turbine and waterway design, not the building alone.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00062",
-                "label": "p. 32; topic 8 point 68"
-              }
-            ]
-          },
-          {
-            "id": "caution-draft-tube-one-third-atmosphere",
-            "status": "corrected",
-            "prompt": "Draft-tube inlet and outlet pressures should not fall below one-third of atmospheric",
-            "html": "<p>No such universal threshold is supported. Cavitation depends on local absolute pressure relative to the temperature-dependent vapour pressure, with a machine-specific margin affected by altitude, runner setting and operating point.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00065",
-                "label": "p. 32; topic 8 point 72"
-              }
-            ]
-          },
-          {
-            "id": "caution-reversible-pump-turbine-benefits",
-            "status": "review",
-            "prompt": "Reversible pump-turbines are very suitable for pumped storage and reduce cost",
-            "html": "<p>Reversible units can reduce equipment and civil requirements, but lower cost and high efficiency are possible benefits rather than guarantees. Performance must be checked in both modes, and some schemes use separate pumps and turbines.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00066",
-                "label": "p. 32; topic 8 point 73; topic 8 point 83"
-              }
-            ]
-          },
-          {
-            "id": "caution-pump-power-d5-or-d3",
-            "status": "review",
-            "prompt": "Centrifugal pump power is proportional to D⁵ or D³",
-            "html": "<p>The two exponents belong to different models. \\(D^5\\) applies to geometrically similar pumps at fixed speed and comparable efficiency; \\(D^3\\) is only a limited impeller-trim approximation in an unchanged casing, used where a supplier permits it.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00077",
-                "label": "p. 32; topic 8 point 82"
-              }
-            ]
-          },
-          {
-            "id": "caution-hydraulic-efficiency-definition",
-            "status": "review",
-            "prompt": "Hydraulic efficiency is power transferred to the runner over fluid power available at the inlet",
-            "html": "<p>The printed fraction is interleaved and its exact typography unverified. The reconstructed definition assumes no leakage; if leakage is counted separately, volumetric efficiency also enters the inlet-to-runner transfer.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00079",
-                "label": "p. 32; topic 8 point 86"
-              }
-            ]
-          },
-          {
-            "id": "caution-francis-blade-range",
-            "status": "review",
-            "prompt": "A Francis runner generally has 16 to 24 blades",
-            "html": "<p>No design reference is identified for this range, so it remains an unverified descriptive claim. Blade count comes from optimising the runner hydraulically and structurally for its duty, not from a fixed range.</p>",
-            "sources": [
-              {
-                "id": "CAP4-08-00084",
-                "label": "p. 32; topic 8 point 92"
-              }
-            ]
-          },
-          {
-            "id": "caution-watermill-wooden-wheel",
-            "status": "review",
-            "prompt": "The turbine of a water mill is a wheel of wood",
-            "html": "<p>Typical of many traditional mills, not a hydromechanical requirement. Runner material and geometry should suit strength, corrosion, wear, head, discharge and maintenance, and metal runners work on the same principle.</p>",
-            "sources": [
-              {
-                "id": "CAP4-10-00173",
-                "label": "p. 42; rural point 1"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Specific speed appears only as a relation for orientation; specific-speed calculations and turbine-selection charts are not worked in these items.",
           "Velocity triangles and detailed Francis or Pelton runner design are not examined.",

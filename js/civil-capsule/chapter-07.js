@@ -11,27 +11,27 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-03-00095",
           "src": "CAP4-03-00095",
-          "text": "For crop irrigation scheduling, which part of rainfall is termed effective rainfall?",
+          "text": "Precipitation falling during the growing period of a crop that is available to meet its evapotranspiration needs is known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "The portion immediately lost as surface runoff"
+              "text": "Surface runoff"
             },
             {
               "key": "b",
-              "text": "The entire gauge total regardless of deep drainage"
+              "text": "Deep percolation"
             },
             {
               "key": "c",
-              "text": "Only the rainfall exceeding infiltration capacity"
+              "text": "Consumptive use"
             },
             {
               "key": "d",
-              "text": "The portion available to meet crop evapotranspiration needs"
+              "text": "Effective rainfall"
             }
           ],
           "answer": "d",
-          "explanation": "Agricultural effective rainfall is the usable contribution to crop water needs after relevant losses and storage constraints. It differs from hydrologic effective rainfall or rainfall excess, which commonly means the portion producing direct runoff.<p>Source note: p13 n94 uses the irrigation meaning; distinguish it explicitly from unit-hydrograph rainfall excess.</p><p>Capsule 4th ed., p. 13; topic 3 point 94.</p>",
+          "explanation": "Effective rainfall is the part of the rainfall during the crop's growing period that is available to meet its evapotranspiration needs; rain lost as surface runoff or deep percolation is not effective.<p>Capsule 4th ed., p. 13; topic 3 point 94.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -44,32 +44,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00001",
           "src": "CAP4-07-00001",
-          "text": "A crop needs a total irrigation depth of 0.72 m over a 90-day base period, with continuous supply and no losses at the stated boundary. What is its duty?",
+          "text": "Duty of water is proportional to the ratio of ______.",
           "options": [
             {
               "key": "a",
-              "text": "10.8 ha/cumec"
+              "text": "Crop period to base period"
             },
             {
               "key": "b",
-              "text": "1080 ha/cumec"
+              "text": "Base period to delta"
             },
             {
               "key": "c",
-              "text": "777.6 ha/cumec"
+              "text": "Area to delta"
             },
             {
               "key": "d",
-              "text": "125 ha/cumec"
+              "text": "Delta to base period"
             }
           ],
           "answer": "b",
-          "explanation": "One cumec supplies 86,400 cubic metres per day. Dividing volume by depth and converting square metres to hectares gives \\[\\begin{aligned} D &amp;= \\dfrac{8.64B}{\\Delta} = \\dfrac{8.64 \\times 90}{0.72} \\\\ &amp;= 1080\\ \\text{ha/cumec} \\end{aligned}\\] The source's bare \\(\\dfrac{B}{\\Delta}\\) omits the unit-conversion factor.<p>Source note: Page 27 point 1: duty is proportional to B/delta, not numerically equal in the stated conventional units.</p><p>Capsule 4th ed., p. 27; topic 7 point 1.</p>",
+          "explanation": "Duty, base period and delta are related by \\(D = \\dfrac{8.64B}{\\Delta}\\), with \\(D\\) in hectares per cumec, \\(B\\) in days and \\(\\Delta\\) in metres, so duty is proportional to the ratio of base period to delta.<p>Capsule 4th ed., p. 27; topic 7 point 1.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -82,32 +82,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00002",
           "src": "CAP4-07-00002",
-          "text": "A crop is sown on day 0, first irrigated on day 8, last irrigated on day 98 and harvested on day 112. What are its crop period and irrigation base period, respectively?",
+          "text": "The time period that elapses from the instant of sowing of a crop to its harvesting is called the ______.",
           "options": [
             {
               "key": "a",
-              "text": "104 days and 98 days"
+              "text": "Base period"
             },
             {
               "key": "b",
-              "text": "112 days and 90 days"
+              "text": "Crop period"
             },
             {
               "key": "c",
-              "text": "112 days and 98 days"
+              "text": "Kor period"
             },
             {
               "key": "d",
-              "text": "98 days and 90 days"
+              "text": "Irrigation interval"
             }
           ],
           "answer": "b",
-          "explanation": "The crop period runs from sowing to harvesting and the base period from the first to the last counted irrigation: \\[112 - 0 = 112\\ \\text{days}\\] \\[98 - 8 = 90\\ \\text{days}\\] The two periods have different endpoints.<p>Capsule 4th ed., p. 27; topic 7 point 2.</p>",
+          "explanation": "The crop period runs from sowing to harvesting, while the base period is the time between the first and the last watering, so the crop period is slightly longer than the base period.<p>Capsule 4th ed., p. 27; topic 7 point 2.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -120,32 +120,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00003",
           "src": "CAP4-07-00003",
-          "text": "A farmer compares established lowland rice with wheat, tobacco and chickpea for a field managed under shallow ponding. Which crop is generally best adapted to this condition?",
+          "text": "Which crop has the highest water resistance?",
           "options": [
             {
               "key": "a",
-              "text": "Bread wheat"
+              "text": "Wheat"
             },
             {
               "key": "b",
-              "text": "Chickpea"
+              "text": "Gram"
             },
             {
               "key": "c",
-              "text": "Lowland rice"
+              "text": "Rice"
             },
             {
               "key": "d",
-              "text": "Flue-cured tobacco"
+              "text": "Tobacco"
             }
           ],
           "answer": "c",
-          "explanation": "Lowland rice has adaptations, including internal air spaces that aid root aeration, for flooded cultivation. This is tolerance of shallow ponding, not drought resistance or unlimited survival under complete submergence; variety and growth stage still matter.<p>Source note: Page 27 point 3: &#39;highest water resistance&#39; is undefined. The corrected question explicitly tests ordinary shallow-ponding tolerance among named crops, not a universal resistance ranking.</p><p>Capsule 4th ed., p. 27; topic 7 point 3.</p>",
+          "explanation": "Rice grows in fields kept under standing water for much of its life, so it resists waterlogging far better than wheat, tobacco or gram.<p>Capsule 4th ed., p. 27; topic 7 point 3.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -158,32 +158,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00004",
           "src": "CAP4-07-00004",
-          "text": "The same 800 ha receives 0.8 cumec at the field inlet after 20% of the canal-head flow is lost in conveyance. What are the field-inlet and canal-head duties, respectively?",
+          "text": "Duty of water is maximum ______.",
           "options": [
             {
               "key": "a",
-              "text": "1000 and 800 ha/cumec"
+              "text": "On the field"
             },
             {
               "key": "b",
-              "text": "640 and 800 ha/cumec"
+              "text": "At the head of a distributary"
             },
             {
               "key": "c",
-              "text": "800 and 1000 ha/cumec"
+              "text": "At the head of the main canal"
             },
             {
               "key": "d",
-              "text": "1000 and 1250 ha/cumec"
+              "text": "At the head of a branch canal"
             }
           ],
           "answer": "a",
-          "explanation": "Canal-head flow is \\(\\dfrac{0.8}{0.8} = 1.0\\) cumec. Since duty is \\(\\dfrac{A}{Q}\\), the two duties are \\[\\dfrac{800}{0.8} = 1000, \\qquad \\dfrac{800}{1} = 800\\] hectares per cumec. For the same area and period, losses make the upstream duty lower, not higher.<p>Source note: Page 27 point 4: compare the same area and time boundary; unrelated fields or branches cannot be ranked merely by location.</p><p>Capsule 4th ed., p. 27; topic 7 point 4.</p>",
+          "explanation": "Water is lost by seepage and evaporation along the canals, so one cumec at the field irrigates the largest area; duty is therefore maximum on the field and least at the canal head.<p>Capsule 4th ed., p. 27; topic 7 point 4.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -196,32 +196,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00005",
           "src": "CAP4-07-00005",
-          "text": "A water budget assigns seasonal irrigation depths of 1.8 m to sugarcane, 1.2 m to rice, 0.5 m to wheat and 0.4 m to tobacco. For equal 10 ha areas, which allocation is largest?",
+          "text": "Which crop requires the maximum water per hectare for production?",
           "options": [
             {
               "key": "a",
-              "text": "Wheat: 50000 cubic metres"
+              "text": "Tobacco"
             },
             {
               "key": "b",
-              "text": "Tobacco: 40000 cubic metres"
+              "text": "Gram"
             },
             {
               "key": "c",
-              "text": "Sugarcane: 180000 cubic metres"
+              "text": "Sugarcane"
             },
             {
               "key": "d",
-              "text": "Rice: 120000 cubic metres"
+              "text": "Wheat"
             }
           ],
           "answer": "c",
-          "explanation": "Volume equals depth times area. Ten hectares is 100,000 square metres, so sugarcane needs \\[1.8 \\times 100{,}000 = 180{,}000\\] cubic metres, the largest of these stated allocations. A long crop duration can produce a high total without the highest daily demand.<p>Source note: Page 27 point 5: depths are explicit illustrative planning inputs, not universal crop constants or a verified global maximum.</p><p>Capsule 4th ed., p. 27; topic 7 point 5.</p>",
+          "explanation": "Sugarcane stays in the field for about a year and needs regular watering throughout, so it requires the maximum water per hectare; wheat, tobacco and gram need much less.<p>Capsule 4th ed., p. 27; topic 7 point 5.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -234,32 +234,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00006",
           "src": "CAP4-07-00006",
-          "text": "After heavy irrigation, water drains from large connected pores while more tightly retained pore water remains. How is the rapidly draining fraction conventionally classified?",
+          "text": "Water that flows out of the soil under the action of gravity is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Gravitational water"
+              "text": "Gravity water"
             },
             {
               "key": "b",
-              "text": "Chemically bound water"
+              "text": "Hygroscopic water"
             },
             {
               "key": "c",
-              "text": "Residual capillary water"
+              "text": "Chemically combined water"
             },
             {
               "key": "d",
-              "text": "Hygroscopic water"
+              "text": "Capillary water"
             }
           ],
           "answer": "a",
-          "explanation": "Gravitational water is the drainable fraction that moves mainly under gravity after wetting. It is not a reliable long-term reserve, although roots may use some before it drains. Hygroscopic films are much more tightly held.<p>Capsule 4th ed., p. 27; topic 7 point 6.</p>",
+          "explanation": "Gravity water fills the larger pores after heavy irrigation and drains downward under gravity; capillary water is held by surface tension, and hygroscopic water is bound tightly to the particles.<p>Capsule 4th ed., p. 27; topic 7 point 6.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -272,32 +272,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00007",
           "src": "CAP4-07-00007",
-          "text": "A soil still contains capillary-held water after its crop reaches permanent wilting. What does this show about plant availability?",
+          "text": "The soil water usable by plants is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Permanent wilting requires the complete absence of pore water"
+              "text": "Water of crystallisation"
             },
             {
               "key": "b",
-              "text": "Every capillary-held fraction remains freely available"
+              "text": "Gravity water"
             },
             {
               "key": "c",
-              "text": "Capillary water becomes gravitational water at wilting"
+              "text": "Hygroscopic water"
             },
             {
               "key": "d",
-              "text": "Some capillary water is held too tightly for effective uptake"
+              "text": "Capillary water"
             }
           ],
           "answer": "d",
-          "explanation": "Capillary retention describes a physical mechanism, not a guarantee of extractability. Much useful soil moisture is capillary-held, but roots cannot recover all of it as matric suction increases. Field capacity and wilting content delimit the conventional available reservoir.<p>Source note: Page 27 point 7: qualified the blanket claim that capillary water is usable.</p><p>Capsule 4th ed., p. 27; topic 7 point 7.</p>",
+          "explanation": "Capillary water is held in the soil pores by surface tension against gravity and roots can extract it, so it is the water usable by plants; gravity water drains away, and hygroscopic water is held too tightly.<p>Capsule 4th ed., p. 27; topic 7 point 7.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -310,32 +310,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00008",
           "src": "CAP4-07-00008",
-          "text": "A uniform 0.60 m root zone has volumetric field capacity 0.32 and permanent wilting content 0.17. What is its total available water depth?",
+          "text": "Water available for plants is the difference in soil water content between ______.",
           "options": [
             {
               "key": "a",
-              "text": "102 mm"
+              "text": "Saturation and permanent wilting point"
             },
             {
               "key": "b",
-              "text": "192 mm"
+              "text": "Field capacity and hygroscopic coefficient"
             },
             {
               "key": "c",
-              "text": "90 mm"
+              "text": "Field capacity and permanent wilting point"
             },
             {
               "key": "d",
-              "text": "150 mm"
+              "text": "Saturation and field capacity"
             }
           ],
           "answer": "c",
-          "explanation": "The moisture difference is \\(0.32 - 0.17 = 0.15\\), so the total available water is \\[\\begin{aligned} \\text{TAW} &amp;= 1000 \\times 0.15 \\times 0.60 \\\\ &amp;= 90\\ \\text{mm} \\end{aligned}\\] The moisture difference is a volumetric fraction; multiplying by root depth converts it to stored water depth. Water remaining at wilting is excluded.<p>Source note: Page 27 points 8 and 11 state the same FC-minus-PWP fact and are deliberately covered together.</p><p>Capsule 4th ed., p. 27; topic 7 point 8; topic 7 point 11.</p>",
+          "explanation": "Available moisture is the water held between field capacity, reached after free drainage, and the permanent wilting point, below which roots cannot extract water: FC − PWP.<p>Capsule 4th ed., p. 27; topic 7 point 8; topic 7 point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -349,32 +349,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00009",
           "src": "CAP4-07-00009",
-          "text": "At static equilibrium in an unloaded, isothermal soil, water stands in a fine wettable pore above a connected water table. Which mechanism supports this rise?",
+          "text": "The weight of capillary water is held in the soil by ______.",
           "options": [
             {
               "key": "a",
-              "text": "Positive hydrostatic pressure above the water table"
+              "text": "Gravity"
             },
             {
               "key": "b",
-              "text": "Capillary suction at the curved wetting meniscus"
+              "text": "Surface tension"
             },
             {
               "key": "c",
-              "text": "Excess pore pressure from rapid soil loading"
+              "text": "Chemical bonding"
             },
             {
               "key": "d",
-              "text": "Osmotic pressure across a root-cell membrane"
+              "text": "Osmotic pressure"
             }
           ],
           "answer": "b",
-          "explanation": "Surface tension and wetting create a curved meniscus and negative pore-water pressure above the connected water table. This capillary suction supports the column. Neither a root membrane nor loading-induced excess pressure is required for this static rise.<p>Capsule 4th ed., p. 27; topic 7 point 9.</p>",
+          "explanation": "Capillary water is held around the soil particles and in the small pores by surface tension, which supports its weight against gravity.<p>Capsule 4th ed., p. 27; topic 7 point 9.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -387,32 +387,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00010",
           "src": "CAP4-07-00010",
-          "text": "Two soils have equal total porosity but different pore-size distributions. Why can their field-capacity water contents differ?",
+          "text": "The field capacity of a soil depends upon ______.",
           "options": [
             {
               "key": "a",
-              "text": "Field capacity is simply the fully saturated pore volume"
+              "text": "Rainfall intensity only"
             },
             {
               "key": "b",
-              "text": "Equal porosity requires equal saturated conductivity"
+              "text": "Crop variety only"
             },
             {
               "key": "c",
-              "text": "Total porosity uniquely fixes retained water content"
+              "text": "Colour of the soil"
             },
             {
               "key": "d",
-              "text": "Their drainage and capillary retention differ"
+              "text": "Capillary tension in the soil and porosity of the soil"
             }
           ],
           "answer": "d",
-          "explanation": "Large connected pores drain more readily, while smaller pores retain water at greater suction. Thus both pore volume and pore-size distribution, with profile and drainage conditions, influence field capacity. Total porosity alone is insufficient.<p>Capsule 4th ed., p. 27; topic 7 point 10.</p>",
+          "explanation": "Field capacity is the water a soil holds after free drainage; it depends on the capillary tension in the pores and on the porosity of the soil, so fine-textured soils hold more than sands.<p>Capsule 4th ed., p. 27; topic 7 point 10.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -425,32 +425,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00011",
           "src": "CAP4-07-00011",
-          "text": "A field water account records evaporation of 2 mm/day, transpiration of 4 mm/day and deep percolation of 3 mm/day. Neglecting tissue storage, what is consumptive use?",
+          "text": "Consumptive use of water, in terms of losses, consists of ______.",
           "options": [
             {
               "key": "a",
-              "text": "3 mm/day"
+              "text": "Seepage from canals"
             },
             {
               "key": "b",
-              "text": "9 mm/day"
+              "text": "Deep percolation only"
             },
             {
               "key": "c",
-              "text": "7 mm/day"
+              "text": "Surface runoff only"
             },
             {
               "key": "d",
-              "text": "6 mm/day"
+              "text": "Evaporation and transpiration"
             }
           ],
           "answer": "d",
-          "explanation": "Consumptive use is approximated here by evapotranspiration: \\[2 + 4 = 6\\ \\text{mm/day}\\] Deep percolation moves water below the roots but is not atmospheric consumption and may become recoverable groundwater or return flow.<p>Capsule 4th ed., p. 27; topic 7 point 12.</p>",
+          "explanation": "Consumptive use, or evapotranspiration, is the water lost by evaporation from the soil and plant surfaces plus the water transpired by the crop.<p>Capsule 4th ed., p. 27; topic 7 point 12.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -463,32 +463,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00012",
           "src": "CAP4-07-00012",
-          "text": "A farm receives runoff during a short storm but needs irrigation several days later. Which facility most directly bridges this timing mismatch?",
+          "text": "A farm pond is used for ______.",
           "options": [
             {
               "key": "a",
-              "text": "A conveyance flume with negligible storage"
+              "text": "Draining waterlogged land"
             },
             {
               "key": "b",
-              "text": "A diversion intake with negligible pondage"
+              "text": "Canal lining"
             },
             {
               "key": "c",
-              "text": "A farm pond with usable storage"
+              "text": "Water storage"
             },
             {
               "key": "d",
-              "text": "A field drain with unrestricted outflow"
+              "text": "Measuring canal discharge"
             }
           ],
           "answer": "c",
-          "explanation": "A farm pond stores part of the storm inflow for later release. Its useful yield still requires a volume balance allowing for evaporation, seepage and dead storage; a diversion or level-control structure alone does not supply that reserve.<p>Capsule 4th ed., p. 27; topic 7 point 13.</p>",
+          "explanation": "A farm pond collects and stores runoff or canal water on the farm so that it can be used later for irrigation, livestock and other needs.<p>Capsule 4th ed., p. 27; topic 7 point 13.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -501,32 +501,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00013",
           "src": "CAP4-07-00013",
-          "text": "A repeating irrigation schedule changes from one watering every 12 days to one every 6 days. How do interval and frequency change?",
+          "text": "Irrigation interval means the ______ of irrigation.",
           "options": [
             {
               "key": "a",
-              "text": "Interval and frequency both halve"
+              "text": "Efficiency"
             },
             {
               "key": "b",
-              "text": "Interval and frequency both double"
+              "text": "Duty"
             },
             {
               "key": "c",
-              "text": "Interval halves and frequency doubles"
+              "text": "Frequency"
             },
             {
               "key": "d",
-              "text": "Interval doubles and frequency halves"
+              "text": "Depth"
             }
           ],
           "answer": "c",
-          "explanation": "Interval is elapsed time between waterings; frequency is events per unit time. For a regular schedule, frequency is the reciprocal of interval, so reducing 12 days to 6 days doubles the long-run frequency.<p>Source note: Page 27 point 14: interval and frequency describe related scheduling concepts but are not identical quantities.</p><p>Capsule 4th ed., p. 27; topic 7 point 14.</p>",
+          "explanation": "The irrigation interval is the time between successive waterings, so it expresses how frequently a crop is irrigated.<p>Capsule 4th ed., p. 27; topic 7 point 14.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -539,32 +539,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00014",
           "src": "CAP4-07-00014",
-          "text": "A crop has 120 mm total available root-zone water and a permitted depletion fraction of 0.40. Starting at field capacity with ET of 6 mm/day and no rain, when is irrigation due?",
+          "text": "The irrigation interval is determined by the ratio of ______.",
           "options": [
             {
               "key": "a",
-              "text": "After 48 days"
+              "text": "Canal capacity to command area"
             },
             {
               "key": "b",
-              "text": "After 12 days"
+              "text": "Delta to duty"
             },
             {
               "key": "c",
-              "text": "After 8 days"
+              "text": "Moisture held up to field capacity to the maximum crop water requirement"
             },
             {
               "key": "d",
-              "text": "After 20 days"
+              "text": "Crop period to base period"
             }
           ],
           "answer": "c",
-          "explanation": "Readily available water is \\[0.40 \\times 120 = 48\\ \\text{mm}\\] At 6 mm per day it is depleted in \\[\\dfrac{48}{6} = 8\\ \\text{days}\\] Field capacity by itself cannot determine an interval: wilting content, root depth, allowable depletion and net demand are also needed.<p>Source note: Page 27 point 15: replaced the incomplete field-capacity/requirement shortcut with an explicit depletion budget.</p><p>Capsule 4th ed., p. 27; topic 7 point 15.</p>",
+          "explanation": "The irrigation interval is the number of days in which the crop uses up the moisture stored up to field capacity, that is, the stored moisture divided by the maximum daily crop water requirement.<p>Capsule 4th ed., p. 27; topic 7 point 15.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -577,32 +577,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00027",
           "src": "CAP4-07-00027",
-          "text": "At the same canal-head boundary, Rabi demand is 2.4 cumecs plus concurrent perennial demand of 0.6; Kharif demand is 3.0 plus concurrent perennial demand of 0.8. If seasons do not overlap, what peak capacity is needed?",
+          "text": "The design discharge of a canal is based on the ______ irrigation water requirement.",
           "options": [
             {
               "key": "a",
-              "text": "3.8 cumecs"
+              "text": "Maximum"
             },
             {
               "key": "b",
-              "text": "6.8 cumecs"
+              "text": "Minimum"
             },
             {
               "key": "c",
-              "text": "5.4 cumecs"
+              "text": "Total annual"
             },
             {
               "key": "d",
-              "text": "3.0 cumecs"
+              "text": "Average"
             }
           ],
           "answer": "a",
-          "explanation": "Compare the concurrent seasonal totals, in cumecs: \\[\\text{Rabi: } 2.4 + 0.6 = 3.0\\] \\[\\text{Kharif: } 3.0 + 0.8 = 3.8\\] The governing peak is 3.8 cumecs. Adding non-overlapping seasonal demands overstates capacity; ignoring perennials understates it.<p>Capsule 4th ed., p. 27; topic 7 point 27.</p>",
+          "explanation": "A canal must carry enough water in the period of greatest demand, so its design discharge is based on the maximum irrigation water requirement.<p>Capsule 4th ed., p. 27; topic 7 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -615,32 +615,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00029",
           "src": "CAP4-07-00029",
-          "text": "A 864 ha block needs 0.14 m net kor watering within 14 days. Overall delivery efficiency is 0.70 and the canal runs continuously. What canal-head discharge is required for this demand alone?",
+          "text": "The capacity of an irrigation canal is determined by the ______.",
           "options": [
             {
               "key": "a",
-              "text": "1.000 cumec"
+              "text": "Delta of the whole base period"
             },
             {
               "key": "b",
-              "text": "0.700 cumec"
+              "text": "Crop period"
             },
             {
               "key": "c",
-              "text": "1.429 cumecs"
+              "text": "Kor water depth"
             },
             {
               "key": "d",
-              "text": "2.041 cumecs"
+              "text": "Average annual rainfall"
             }
           ],
           "answer": "c",
-          "explanation": "The net volume is \\[\\begin{aligned} V &amp;= 864 \\times 10{,}000 \\times 0.14 \\\\ &amp;= 1{,}209{,}600\\ \\text{m}^3 \\end{aligned}\\] Fourteen days is 1,209,600 seconds, giving a net flow of 1.0 cumec. The canal-head flow is \\[Q = \\dfrac{1.0}{0.70} = 1.429\\ \\text{cumecs}\\] All other coincident demands must still be checked.<p>Source note: Page 27 point 29: kor depth alone is insufficient; area, matched period, efficiency and operating time are supplied. Kharif is not automatically governing for every scheme.</p><p>Capsule 4th ed., p. 27; topic 7 point 29.</p>",
+          "explanation": "The first watering after sowing, kor watering, needs a large depth in a short period, so the kor water depth decides the peak discharge and hence the capacity of the canal.<p>Capsule 4th ed., p. 27; topic 7 point 29.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -653,32 +653,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00031",
           "src": "CAP4-07-00031",
-          "text": "A field needs 72 mm stored in its root zone. Application efficiency is 0.80 and conveyance efficiency is 0.90, each on its incoming-water basis. What gross depth must be diverted over the same area?",
+          "text": "The water in a canal is based on the ______ irrigation requirement.",
           "options": [
             {
               "key": "a",
-              "text": "80 mm"
+              "text": "Minimum"
             },
             {
               "key": "b",
-              "text": "100 mm"
+              "text": "Gross"
             },
             {
               "key": "c",
-              "text": "90 mm"
+              "text": "Net"
             },
             {
               "key": "d",
-              "text": "51.84 mm"
+              "text": "Evaporation-only"
             }
           ],
           "answer": "b",
-          "explanation": "The overall efficiency is \\(0.80 \\times 0.90 = 0.72\\), so the gross diversion depth is \\[\\dfrac{72}{0.72} = 100\\ \\text{mm}\\] Applying only one efficiency misses a loss stage; multiplying the net need by efficiency reverses the supply calculation.<p>Capsule 4th ed., p. 27; topic 7 point 31.</p>",
+          "explanation": "A canal must supply the net crop requirement plus all conveyance and application losses, so its water is based on the gross irrigation requirement, the net requirement divided by the overall efficiency.<p>Capsule 4th ed., p. 27; topic 7 point 31.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -691,32 +691,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00104",
           "src": "CAP4-07-00104",
-          "text": "A scheme irrigates 2400 ha in Rabi and 1600 ha in Kharif. With crop ratio defined as Rabi area divided by Kharif area, what ratio follows?",
+          "text": "The ratio of irrigated area under Rabi crops to that under Kharif crops is ______.",
           "options": [
             {
               "key": "a",
-              "text": "1.5"
+              "text": "2"
             },
             {
               "key": "b",
-              "text": "0.4"
+              "text": "3"
             },
             {
               "key": "c",
-              "text": "0.667"
+              "text": "1"
             },
             {
               "key": "d",
-              "text": "2.0"
+              "text": "0.5"
             }
           ],
           "answer": "a",
-          "explanation": "The specified crop ratio is \\[\\dfrac{2400}{1600} = 1.5\\] or 3 to 2. Reversing the order gives 2 to 3. The ratio depends on the actual cropping programme; neither 2 nor any other fixed value is an inherent law of irrigation.<p>Source note: Page 29 point 105: replaced the unsupported universal ratio of 2 with a defined area calculation.</p><p>Capsule 4th ed., p. 29; topic 7 point 105.</p>",
+          "explanation": "The crop ratio, the area irrigated under Rabi crops divided by that under Kharif crops, is taken as 2.<p>Capsule 4th ed., p. 29; topic 7 point 105.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -729,32 +729,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00106",
           "src": "CAP4-07-00106",
-          "text": "A crop requires its first substantial post-sowing watering during a short, critical establishment window. Which irrigation term refers to this watering requirement?",
+          "text": "Kor watering is the ______ watering given to a crop when it is a few centimetres high.",
           "options": [
             {
               "key": "a",
-              "text": "Full-season delta"
+              "text": "Last"
             },
             {
               "key": "b",
-              "text": "Crop harvesting period"
+              "text": "Pre-sowing"
             },
             {
               "key": "c",
-              "text": "Permanent wilting content"
+              "text": "Final ripening"
             },
             {
               "key": "d",
-              "text": "Kor watering"
+              "text": "First"
             }
           ],
           "answer": "d",
-          "explanation": "Kor watering is the initial important watering associated with establishment, to be delivered within the corresponding kor period. Its depth and timing depend on the crop and practice; a plant height of a few centimetres is descriptive, not a universal scheduling trigger.<p>Source note: Page 29 point 108: separated kor watering from an invariant plant-height rule and from pre-sowing or full-season requirements.</p><p>Capsule 4th ed., p. 29; topic 7 point 108.</p>",
+          "explanation": "Kor watering is the first watering after the crop has grown a few centimetres; it needs a large depth in a short, critical period and therefore governs the canal capacity.<p>Capsule 4th ed., p. 29; topic 7 point 108.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -767,32 +767,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00109",
           "src": "CAP4-07-00109",
-          "text": "Over a period, crop ET is 150 mm, total rain is 80 mm and only 50 mm of that rain usefully meets crop demand. With no other contributions, storage change or leaching need, what is net irrigation requirement?",
+          "text": "______ is considered for estimation of the net irrigation requirement.",
           "options": [
             {
               "key": "a",
-              "text": "70 mm"
+              "text": "Total rainfall"
             },
             {
               "key": "b",
-              "text": "150 mm"
+              "text": "Evaporation from reservoirs"
             },
             {
               "key": "c",
-              "text": "100 mm"
+              "text": "Effective rainfall"
             },
             {
               "key": "d",
-              "text": "230 mm"
+              "text": "Canal seepage"
             }
           ],
           "answer": "c",
-          "explanation": "Under the stated simplified balance, \\[\\begin{aligned} \\text{NIR} &amp;= \\text{ET} - P_e = 150 - 50 \\\\ &amp;= 100\\ \\text{mm} \\end{aligned}\\] Subtracting all 80 mm credits runoff or drainage that does not usefully meet crop demand. Upstream gross delivery requires separate loss allowances.<p>Capsule 4th ed., p. 29; topic 7 point 111.</p>",
+          "explanation": "The net irrigation requirement is the crop water requirement minus the effective rainfall, the part of the rainfall actually available to the crop; runoff and deep percolation are excluded.<p>Capsule 4th ed., p. 29; topic 7 point 111.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -805,32 +805,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00114",
           "src": "CAP4-07-00114",
-          "text": "A site's crop-period ET and effective rainfall, respectively, are rice 1.45 and 0.25 m, tobacco 0.70 and 0.20 m, wheat 0.60 and 0.15 m, and banana 1.85 and 0.45 m. Neglect other water-balance terms. Which crop needs the greatest net irrigation delta?",
+          "text": "Among rice, tobacco, wheat and banana, the crop with the highest delta is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Rice, 1.70 m"
+              "text": "Banana"
             },
             {
               "key": "b",
-              "text": "Banana, 1.85 m"
+              "text": "Wheat"
             },
             {
               "key": "c",
-              "text": "Rice, 1.20 m"
+              "text": "Tobacco"
             },
             {
               "key": "d",
-              "text": "Banana, 1.40 m"
+              "text": "Rice"
             }
           ],
           "answer": "d",
-          "explanation": "Subtract effective rainfall from ET over each matched crop period: rice 1.20, tobacco 0.50, wheat 0.45 and banana 1.40 m. Banana governs this stated budget. Using ET alone or adding rainfall gives the distractors; no universal crop-name ranking follows.<p>Source note: Page 29 point 115: original illustrative water budgets replace the unconditional rice-over-banana ranking. These are not source measurements and exclude paddy land preparation, seepage, leaching and storage changes explicitly through the stated simplified balance.</p><p>Capsule 4th ed., p. 29; topic 7 point 115.</p>",
+          "explanation": "Rice is grown under standing water for much of its life, so its delta, the total depth of water it needs, is the highest of these crops.<p>Capsule 4th ed., p. 29; topic 7 point 115.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -843,32 +843,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00119",
           "src": "CAP4-07-00119",
-          "text": "Two crops have equally deep root zones but readily available water of 36 mm and 60 mm because of different soil retention. At equal net demand of 6 mm/day and full initial storage, what irrigation intervals follow?",
+          "text": "The frequency of irrigation depends upon ______.",
           "options": [
             {
               "key": "a",
-              "text": "6 days and 6 days"
+              "text": "Crop only"
             },
             {
               "key": "b",
-              "text": "36 days and 60 days"
+              "text": "Canal capacity only"
             },
             {
               "key": "c",
-              "text": "6 days and 10 days"
+              "text": "Soil, crop, climate and fertilizer"
             },
             {
               "key": "d",
-              "text": "10 days and 6 days"
+              "text": "Soil only"
             }
           ],
           "answer": "c",
-          "explanation": "With no other water inputs, the interval equals the depletion allowance divided by daily demand: \\[\\dfrac{36}{6} = 6, \\qquad \\dfrac{60}{6} = 10\\] days. Soil storage changes the interval even when rooting depth and atmospheric demand are equal.<p>Source note: Page 30 point 120, soil factor: isolated storage influence while keeping the other inputs fixed.</p><p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
+          "explanation": "How often a crop must be watered depends on the soil's water-holding capacity, the crop and its root depth, the climate, which sets the evaporation demand, and the fertilizer applied.<p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -881,32 +881,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00120",
           "src": "CAP4-07-00120",
-          "text": "With volumetric available-water difference 0.15 and permitted depletion fraction 0.40, crop A roots to 0.50 m and crop B to 1.00 m. Both use 5 mm/day with no rain. What intervals follow from full storage?",
+          "text": "Which of the following is not a factor on which the frequency of irrigation depends?",
           "options": [
             {
               "key": "a",
-              "text": "5 days for A and 10 days for B"
+              "text": "Climate"
             },
             {
               "key": "b",
-              "text": "12 days for A and 6 days for B"
+              "text": "Soil"
             },
             {
               "key": "c",
-              "text": "15 days for A and 30 days for B"
+              "text": "Crop"
             },
             {
               "key": "d",
-              "text": "6 days for A and 12 days for B"
+              "text": "Shape of the canal cross-section"
             }
           ],
           "answer": "d",
-          "explanation": "TAW is \\(1000 \\times 0.15\\) times root depth: 75 and 150 mm. The permitted depletion is 0.40 times these amounts, or 30 and 60 mm. Dividing by 5 mm per day gives \\[\\dfrac{30}{5} = 6, \\qquad \\dfrac{60}{5} = 12\\] days, demonstrating the influence of effective rooting depth.<p>Source note: Page 30 point 120, crop factor: illustrative root depths and depletion fractions are stated, not attached universally to named crops.</p><p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
+          "explanation": "Irrigation frequency is governed by the soil, crop, climate and fertilizer; the shape of the canal cross-section affects conveyance, not how often a field is watered.<p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -919,32 +919,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00121",
           "src": "CAP4-07-00121",
-          "text": "A field has a 48 mm depletion allowance. Hot, dry weather raises daily net crop-water demand from 4 mm to 8 mm, with other inputs unchanged. How should the interval from full storage change?",
+          "text": "Since irrigation frequency depends on soil, a soil that holds less available water must be irrigated ______.",
           "options": [
             {
               "key": "a",
-              "text": "From 6 days to 12 days"
+              "text": "Less frequently"
             },
             {
               "key": "b",
-              "text": "From 12 days to 6 days"
+              "text": "More frequently"
             },
             {
               "key": "c",
-              "text": "Remain at 12 days"
+              "text": "Only once in the season"
             },
             {
               "key": "d",
-              "text": "From 12 days to 24 days"
+              "text": "At the same frequency as any other soil"
             }
           ],
           "answer": "b",
-          "explanation": "The allowance lasts \\[\\dfrac{48}{4} = 12, \\qquad \\dfrac{48}{8} = 6\\] days at 4 and 8 mm per day respectively. Increased evaporative demand shortens the interval; rainfall or a changed depletion policy would require a revised water balance.<p>Source note: Page 30 point 120, climate factor: isolates a stated change in net demand.</p><p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
+          "explanation": "A soil with a low water-holding capacity, such as sand, stores less water for the crop, so it must be irrigated more frequently than a clay soil.<p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -957,32 +957,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00122",
           "src": "CAP4-07-00122",
-          "text": "Fertilization changes canopy growth and measured crop-water use. How should this affect irrigation scheduling?",
+          "text": "Since irrigation frequency depends on climate, in hot and dry weather the frequency of irrigation ______.",
           "options": [
             {
               "key": "a",
-              "text": "Shorten the interval in direct proportion to fertilizer mass"
+              "text": "Decreases"
             },
             {
               "key": "b",
-              "text": "Update demand and depletion estimates using observed crop response"
+              "text": "Increases"
             },
             {
               "key": "c",
-              "text": "Keep the original schedule because soil texture is unchanged"
+              "text": "Remains unchanged"
             },
             {
               "key": "d",
-              "text": "Assume added fertilizer increases available soil water by the same fraction"
+              "text": "Becomes zero"
             }
           ],
           "answer": "b",
-          "explanation": "Fertility can indirectly alter growth, rooting and water uptake, and excessive salts can add stress. Scheduling still follows measured or estimated demand and soil-water status. There is no universal direct fertilizer-to-frequency conversion.<p>Source note: Page 30 point 120, fertilizer qualification: indirect effects are distinguished from soil, crop and climate controls; all four listed factors receive explicit questions.</p><p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
+          "explanation": "Hot, dry weather raises evaporation and transpiration, so the stored soil water is used up sooner and irrigation is needed more frequently.<p>Capsule 4th ed., p. 30; topic 7 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -995,16 +995,16 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-08-00035",
           "src": "CAP4-08-00035",
-          "text": "Rainfall runoff from a small agricultural catchment must be saved for later supplemental irrigation. Which structure primarily performs that storage function?",
+          "text": "Which of the following structures is used for storing water on a farm?",
           "options": [
             {
               "key": "a",
-              "text": "Canal measuring flume"
+              "text": "Measuring flume"
             },
             {
               "key": "b",
@@ -1016,11 +1016,11 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             },
             {
               "key": "d",
-              "text": "Canal cross-regulator"
+              "text": "Canal cross regulator"
             }
           ],
           "answer": "b",
-          "explanation": "A farm pond stores runoff or diverted water for later farm use. A cross-regulator controls canal water level, a drain removes unwanted water, and a measuring flume gauges flow. Storage availability still depends on inflow, seepage, evaporation and withdrawal timing.<p>Capsule 4th ed., p. 31; topic 8 point 39.</p>",
+          "explanation": "A farm pond collects and stores runoff or canal water on the farm for later irrigation, livestock and household use; regulators, drains and flumes do not store water.<p>Capsule 4th ed., p. 31; topic 8 point 39.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1033,7 +1033,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0701",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -1045,27 +1045,27 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-07-00015",
           "src": "CAP4-07-00015",
-          "text": "A canal cut yields 1000 cubic metres measured in situ. If usable soil produces 0.90 cubic metre of compacted fill per in-situ cubic metre, what compacted bank volume balances the cut without borrow or waste?",
+          "text": "The balanced depth of cutting of a canal is the depth at which ______.",
           "options": [
             {
               "key": "a",
-              "text": "100 cubic metres"
+              "text": "Seepage losses are zero"
             },
             {
               "key": "b",
-              "text": "900 cubic metres"
+              "text": "The volume of cutting equals the volume of filling"
             },
             {
               "key": "c",
-              "text": "1111 cubic metres"
+              "text": "The velocity is critical"
             },
             {
               "key": "d",
-              "text": "1000 cubic metres"
+              "text": "The canal runs full"
             }
           ],
           "answer": "b",
-          "explanation": "The usable compacted yield is \\[1000 \\times 0.90 = 900\\ \\text{m}^3\\] Balanced earthwork means available excavation meets required fill on compatible volume bases, not equality between uncorrected in-situ and compacted volumes.<p>Source note: Page 27 point 16: the equal-cut/equal-fill shortcut assumes compatible density, usability and shrinkage bases.</p><p>Capsule 4th ed., p. 27; topic 7 point 16.</p>",
+          "explanation": "At the balancing depth, the earth excavated from the canal bed exactly provides the fill needed for its banks, so no earth is borrowed or wasted and the section is most economical.<p>Capsule 4th ed., p. 27; topic 7 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1078,32 +1078,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00016",
           "src": "CAP4-07-00016",
-          "text": "In Kennedy's empirical canal method, two designs have equal water depth but different sediment grades. Which parameter represents the sediment-related adjustment to reference critical velocity?",
+          "text": "The critical velocity ratio was introduced in Kennedy's equation of critical velocity to take into account the effect of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Watercourse delivery efficiency"
+              "text": "Temperature"
             },
             {
               "key": "b",
-              "text": "Froude number Fr"
+              "text": "Bed slope"
             },
             {
               "key": "c",
-              "text": "Manning roughness n"
+              "text": "Canal depth"
             },
             {
               "key": "d",
-              "text": "Critical-velocity ratio m"
+              "text": "Silt grade"
             }
           ],
           "answer": "d",
-          "explanation": "Kennedy's customary relation, in metre-second units, is \\[V_0 = 0.55\\,m\\,y^{0.64}\\] The multiplier \\(m\\) adjusts the reference velocity for sediment conditions. This critical velocity concerns silting and scour, not the \\(\\text{Fr} = 1\\) condition of critical open-channel flow.<p>Capsule 4th ed., p. 27; topic 7 point 17.</p>",
+          "explanation": "Kennedy's critical velocity \\(V_0 = 0.55mD^{0.64}\\) includes the critical velocity ratio \\(m\\) to allow for the grade of silt: coarser silt needs a higher velocity to keep it moving.<p>Capsule 4th ed., p. 27; topic 7 point 17.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1116,32 +1116,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00017",
           "src": "CAP4-07-00017",
-          "text": "Sediment accumulates in a canal, reducing its available flow area below a fixed permitted water level and increasing resistance. With the available head unchanged, what is the likely capacity effect?",
+          "text": "Silting in a channel causes ______ in discharge.",
           "options": [
             {
               "key": "a",
-              "text": "Capacity is unchanged because the available head is unchanged"
+              "text": "No change"
             },
             {
               "key": "b",
-              "text": "Conveyance capacity decreases"
+              "text": "A decrease"
             },
             {
               "key": "c",
-              "text": "Capacity increases as deposits displace water"
+              "text": "An increase"
             },
             {
               "key": "d",
-              "text": "Capacity increases because reduced area implies faster flow"
+              "text": "A doubling"
             }
           ],
           "answer": "b",
-          "explanation": "Deposit buildup reduces the effective section and can raise resistance, lowering the discharge conveyable under the stated head and water-level constraints. If operators maintain discharge instead, water levels may rise; silting does not dictate one outcome under every boundary condition.<p>Source note: Page 27 point 18: specified the controlling head and level conditions for a capacity decrease.</p><p>Capsule 4th ed., p. 27; topic 7 point 18.</p>",
+          "explanation": "Silt deposited on the bed reduces the flow area and increases resistance, so silting decreases the discharge that the channel can carry.<p>Capsule 4th ed., p. 27; topic 7 point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1154,32 +1154,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00018",
           "src": "CAP4-07-00018",
-          "text": "Surveys show a reach gaining stored bed sediment over several seasons and its mean bed level rising. Which process is occurring?",
+          "text": "An aggrading river or channel is one that is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Degradation"
+              "text": "Scouring"
             },
             {
               "key": "b",
-              "text": "Dynamic regime with zero net storage"
+              "text": "Meandering"
             },
             {
               "key": "c",
-              "text": "Aggradation"
+              "text": "Silting"
             },
             {
               "key": "d",
-              "text": "Clear-water scour"
+              "text": "In true regime"
             }
           ],
           "answer": "c",
-          "explanation": "Aggradation is net sediment accumulation that raises the bed. Degradation lowers it through net erosion. Sediment can move through a regime reach, but a sustained positive storage balance is inconsistent with an unchanged mean bed level.<p>Capsule 4th ed., p. 27; topic 7 point 19.</p>",
+          "explanation": "An aggrading channel receives more sediment than it can carry, so it deposits silt and its bed level rises; a degrading channel scours its bed.<p>Capsule 4th ed., p. 27; topic 7 point 19.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1192,32 +1192,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00020",
           "src": "CAP4-07-00020",
-          "text": "An ungated river diversion can receive useful supplies mainly when seasonal floods raise the river above its intake sill. Which traditional canal class best describes it?",
+          "text": "A canal normally used for diversion of the flood water of a river is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Lift-irrigation main"
+              "text": "A navigation canal"
             },
             {
               "key": "b",
-              "text": "Subsurface interceptor drain"
+              "text": "A power canal"
             },
             {
               "key": "c",
-              "text": "Inundation canal"
+              "text": "An inundation canal"
             },
             {
               "key": "d",
-              "text": "Perennial controlled canal"
+              "text": "A perennial canal"
             }
           ],
           "answer": "c",
-          "explanation": "An inundation canal depends on high river stages to admit water, typically during the flood season. A perennial system instead seeks dependable regulated supply over its operating season; the classification is about availability and control, not lining material.<p>Capsule 4th ed., p. 27; topic 7 point 21.</p>",
+          "explanation": "An inundation canal takes off from a river without a weir and runs only when the river is in flood and its level rises above the canal bed; a perennial canal is fed all year from regulated headworks.<p>Capsule 4th ed., p. 27; topic 7 point 21.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1230,32 +1230,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00021",
           "src": "CAP4-07-00021",
-          "text": "A fixed canal-head supply serves 600 ha at conveyance efficiency 0.60. Lining raises efficiency to 0.80; crop needs and field efficiency are unchanged and more land is hydraulically commandable. What area can the same supply now support?",
+          "text": "Due to lining of a channel section, the command area ______.",
           "options": [
             {
               "key": "a",
-              "text": "1000 ha"
+              "text": "Becomes zero"
             },
             {
               "key": "b",
-              "text": "450 ha"
+              "text": "Decreases"
             },
             {
               "key": "c",
-              "text": "720 ha"
+              "text": "Remains unchanged"
             },
             {
               "key": "d",
-              "text": "800 ha"
+              "text": "Increases"
             }
           ],
           "answer": "d",
-          "explanation": "Useful delivery rises in the ratio \\(\\dfrac{0.80}{0.60}\\), so the supported area is \\[600 \\times \\dfrac{0.80}{0.60} = 800\\ \\text{ha}\\] Water savings can expand irrigated area only if suitable land and adequate delivery levels exist; lining does not automatically change topographic command.<p>Source note: Page 27 point 22: distinguished irrigable area supported by supply from geometric command area.</p><p>Capsule 4th ed., p. 27; topic 7 point 22.</p>",
+          "explanation": "Lining cuts the seepage losses, so more of the supply reaches the fields and a larger area can be irrigated with the same water.<p>Capsule 4th ed., p. 27; topic 7 point 22.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1268,32 +1268,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00022",
           "src": "CAP4-07-00022",
-          "text": "A canal bank crest is placed above its design water surface to accommodate waves, surges and operating fluctuations. What is this vertical allowance called?",
+          "text": "The purpose of providing freeboard in a canal is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Freeboard"
+              "text": "Stability against overtopping and safety against frost crack"
             },
             {
               "key": "b",
-              "text": "Hydraulic radius"
+              "text": "To increase the velocity of flow"
             },
             {
               "key": "c",
-              "text": "Seepage head"
+              "text": "To reduce the bed slope"
             },
             {
               "key": "d",
-              "text": "Critical depth"
+              "text": "To measure the discharge"
             }
           ],
           "answer": "a",
-          "explanation": "Freeboard is the specified vertical margin above the design water level to the relevant bank or lining top. It reduces overtopping risk from fluctuations and waves. It is not part of the normal flow area at the design level.<p>Capsule 4th ed., p. 27; topic 7 point 23.</p>",
+          "explanation": "Freeboard, the height of the bank above the full supply level, keeps waves and surges from overtopping the canal and gives safety against frost cracking of the bank top.<p>Capsule 4th ed., p. 27; topic 7 point 23.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1306,32 +1306,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00023",
           "src": "CAP4-07-00023",
-          "text": "A concrete-lined canal has adequate freeboard but experiences freezing of water behind poorly drained lining panels. Which conclusion is defensible?",
+          "text": "The vertical distance between the full supply level and the top of a canal bank, provided for safety against overtopping, is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Bank freeboard substitutes for drainage behind the lining"
+              "text": "Berm"
             },
             {
               "key": "b",
-              "text": "Freeboard alone does not prevent frost damage"
+              "text": "Freeboard"
             },
             {
               "key": "c",
-              "text": "Larger freeboard makes freeze-thaw durability checks unnecessary"
+              "text": "Dowla"
             },
             {
               "key": "d",
-              "text": "Normal-flow capacity establishes the lining's frost resistance"
+              "text": "Counter berm"
             }
           ],
           "answer": "b",
-          "explanation": "Freeboard addresses water-level exceedance. Frost damage depends on moisture, freezing exposure, drainage and material/detailing resistance. Those mechanisms still require treatment even when the bank crest safely exceeds normal water levels.<p>Source note: Page 27 point 23: separately corrected the claim that freeboard itself provides safety against frost cracking.</p><p>Capsule 4th ed., p. 27; topic 7 point 23.</p>",
+          "explanation": "Freeboard is the vertical distance from the full supply level to the top of the bank; it guards against overtopping and frost cracking. A berm is a horizontal step in the bank.<p>Capsule 4th ed., p. 27; topic 7 point 23.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1344,32 +1344,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00024",
           "src": "CAP4-07-00024",
-          "text": "A proposed side-slope canal runs down the hillside parallel to natural drainage paths. Which conclusion is justified before the detailed survey?",
+          "text": "A side slope canal does not need ______.",
           "options": [
             {
               "key": "a",
-              "text": "It necessarily commands both sides as a watershed canal does"
+              "text": "Outlets"
             },
             {
               "key": "b",
-              "text": "Crossings may be few, but local drains must still be checked"
+              "text": "Cross drainage structures"
             },
             {
               "key": "c",
-              "text": "The canal must intercept every drain as a contour canal does"
+              "text": "A head regulator"
             },
             {
               "key": "d",
-              "text": "The alignment class alone establishes that crossings are unnecessary"
+              "text": "Canal falls"
             }
           ],
           "answer": "b",
-          "explanation": "The ideal side-slope route can run parallel to drainage and avoid crossings. Local gullies, deviations and catchments may still intersect it. Excess ground fall can also require falls, so the alignment label is not a complete hydraulic design.<p>Source note: Page 27 point 24: replaced an absolute no-crossing claim with the terrain-dependent condition.</p><p>Capsule 4th ed., p. 27; topic 7 point 24.</p>",
+          "explanation": "A side slope canal runs roughly at right angles to the contours, parallel to the natural drainage, so it does not cross the drains and needs no cross drainage structures; the steep ground does call for falls.<p>Capsule 4th ed., p. 27; topic 7 point 24.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1382,32 +1382,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00025",
           "src": "CAP4-07-00025",
-          "text": "Why can gravity canal irrigation be attractive on an extensive alluvial plain with a dependable elevated river supply?",
+          "text": "Canal irrigation is generally preferred in ______ regions.",
           "options": [
             {
               "key": "a",
-              "text": "Gentle grades can command broad cultivable areas"
+              "text": "Alluvial soil"
             },
             {
               "key": "b",
-              "text": "The river sediment load guarantees stable unlined banks"
+              "text": "Desert sand"
             },
             {
               "key": "c",
-              "text": "Alluvial origin ensures negligible seepage without lining"
+              "text": "Rocky"
             },
             {
               "key": "d",
-              "text": "Low ground slope makes drainage crossings unnecessary"
+              "text": "Swampy"
             }
           ],
           "answer": "a",
-          "explanation": "Gentle terrain, broad agricultural land and a suitable supply level can make gravity distribution practical. Alluvial deposits vary widely in permeability and erosion resistance, so seepage, sediment and drainage assessments remain necessary.<p>Source note: Page 27 point 25: interpreted the circular wording &#39;preferred in alluvial canal&#39; as suitability on alluvial plains, with explicit conditions.</p><p>Capsule 4th ed., p. 27; topic 7 point 25.</p>",
+          "explanation": "Alluvial plains are flat and fertile, with gentle slopes that let canals command large areas by gravity, so canal irrigation is generally preferred there.<p>Capsule 4th ed., p. 27; topic 7 point 25.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1420,32 +1420,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00028",
           "src": "CAP4-07-00028",
-          "text": "In a conventional network with no authorized direct farm outlets on the main canal, how does the main canal serve irrigation?",
+          "text": "The ______ canal is not considered to be used for direct irrigation.",
           "options": [
             {
               "key": "a",
-              "text": "It supplies farms directly, bypassing distributary channels"
+              "text": "Minor"
             },
             {
               "key": "b",
-              "text": "It conveys supply to the distribution network"
+              "text": "Main"
             },
             {
               "key": "c",
-              "text": "It serves as the collector for excess field drainage"
+              "text": "Watercourse"
             },
             {
               "key": "d",
-              "text": "It serves as seasonal storage rather than a conveyance route"
+              "text": "Field channel"
             }
           ],
           "answer": "b",
-          "explanation": "The main canal carries water to branches and distributaries, which supply smaller channels and farms. Lack of direct farm offtakes does not mean the main canal has no irrigation function; it performs bulk conveyance.<p>Source note: Page 27 point 28: clarified &#39;not used for irrigation&#39; as no direct irrigation outlets in the stated network, not no irrigation purpose.</p><p>Capsule 4th ed., p. 27; topic 7 point 28.</p>",
+          "explanation": "The main canal carries water from the headworks to the branch canals and distributaries; farm outlets are not generally provided on it, so it is not used for direct irrigation.<p>Capsule 4th ed., p. 27; topic 7 point 28.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1458,32 +1458,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00030",
           "src": "CAP4-07-00030",
-          "text": "A Nepal irrigation intake diverts sediment-rich monsoon flow into a low-velocity canal reach. Which problem should the engineer investigate first if the bed rises and capacity declines?",
+          "text": "The problem in Nepal for artificial channels is the formation of ______.",
           "options": [
             {
               "key": "a",
-              "text": "A temporary backwater rise with no change in sediment storage"
+              "text": "A salt crust"
             },
             {
               "key": "b",
-              "text": "Bank scour caused by excess boundary shear alone"
+              "text": "Permafrost"
             },
             {
               "key": "c",
-              "text": "Net deposition from excess sediment supply"
+              "text": "Alluvial soil deposits"
             },
             {
               "key": "d",
-              "text": "Progressive degradation from a bed-material deficit"
+              "text": "Hard rock"
             }
           ],
           "answer": "c",
-          "explanation": "If sediment input exceeds transport out of the reach, deposits accumulate and can reduce capacity. The mechanism is a sediment-budget imbalance, not a general defect named 'formation of alluvial soil'; other Nepal sites may have different dominant problems.<p>Source note: Page 27 point 30: replaced an unsupported nationwide generalization with a defined sedimentation scenario.</p><p>Capsule 4th ed., p. 27; topic 7 point 30.</p>",
+          "explanation": "Nepal's rivers carry heavy sediment loads, especially in the monsoon, and the deposition of this alluvial material silts up artificial channels and reduces their capacity.<p>Capsule 4th ed., p. 27; topic 7 point 30.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1496,32 +1496,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00032",
           "src": "CAP4-07-00032",
-          "text": "Which reach best fits Lacey's ideal true-regime premise?",
+          "text": "Which of the following conditions is not applicable to a channel in true regime?",
           "options": [
             {
               "key": "a",
-              "text": "Persistent bed lowering under a continuing sediment deficit"
+              "text": "The flow is uniform"
             },
             {
               "key": "b",
-              "text": "Adjustable alluvial bed and banks with sustained sediment balance"
+              "text": "The channel can be scoured more easily than it can be deposited"
             },
             {
               "key": "c",
-              "text": "Rigid lined bed with freely eroding unprotected banks"
+              "text": "The discharge is constant"
             },
             {
               "key": "d",
-              "text": "A fixed rock channel whose section cannot adjust"
+              "text": "The silt grade and silt charge are constant"
             }
           ],
           "answer": "b",
-          "explanation": "True regime idealizes an adjustable alluvial boundary under sustained water discharge, sediment charge and grade, with no progressive deposition or scour. A systematic erosional imbalance contradicts that equilibrium even though sediment continues moving through a regime channel.<p>Capsule 4th ed., p. 27; topic 7 point 32.</p>",
+          "explanation": "Lacey's true regime needs a constant discharge, uniform flow, constant silt grade and charge, and incoherent alluvium that is scoured as easily as it is deposited; easier scouring than deposition does not apply.<p>Capsule 4th ed., p. 27; topic 7 point 32.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1534,32 +1534,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00034",
           "src": "CAP4-07-00034",
-          "text": "Using the Lacey empirical resistance form V = C R^(2/3) S^(1/3), a second compatible case has eight times the hydraulic radius and one-eighth the slope, with C unchanged. What is the second-to-first velocity ratio?",
+          "text": "Lacey's regime velocity is proportional to ______.",
           "options": [
             {
               "key": "a",
-              "text": "2.00"
+              "text": "\\(R^{2/3}S^{1/3}\\)"
             },
             {
               "key": "b",
-              "text": "1.41"
+              "text": "\\(R^{2/3}S^{1/2}\\)"
             },
             {
               "key": "c",
-              "text": "8.00"
+              "text": "\\(R^{1/3}S^{2/3}\\)"
             },
             {
               "key": "d",
-              "text": "4.00"
+              "text": "\\(R^{1/2}S^{1/2}\\)"
             }
           ],
           "answer": "a",
-          "explanation": "The radius and slope factors are \\[8^{2{/}3} = 4, \\qquad \\left(\\dfrac{1}{8}\\right)^{1{/}3} = 0.5\\] so the velocity ratio is \\(4 \\times 0.5 = 2\\). Manning's one-half slope exponent would instead give about 1.41. This empirical comparison does not hold every other regime quantity fixed.<p>Capsule 4th ed., p. 27; topic 7 point 34.</p>",
+          "explanation": "Lacey's regime flow equation gives \\(V = 10.8R^{2{/}3}S^{1{/}3}\\), so velocity varies as \\(R^{2{/}3}S^{1{/}3}\\); Manning's equation instead contains \\(S^{1{/}2}\\).<p>Capsule 4th ed., p. 27; topic 7 point 34.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1572,32 +1572,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00036",
           "src": "CAP4-07-00036",
-          "text": "Sediment grains move along a channel bed by rolling, sliding and short hops rather than remaining dispersed through the water column. What transport mode is this?",
+          "text": "Sediment that moves by rolling, sliding and bouncing along the bed is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Dissolved load only"
+              "text": "Suspended load"
             },
             {
               "key": "b",
-              "text": "Wash load maintained in suspension"
+              "text": "Wash load"
             },
             {
               "key": "c",
-              "text": "Floating debris transport"
+              "text": "Dissolved load"
             },
             {
               "key": "d",
-              "text": "Bed load, including saltation"
+              "text": "Bed load"
             }
           ],
           "answer": "d",
-          "explanation": "Bed load remains close to the bed and moves by traction and saltation. Suspended load is maintained higher in the flow by turbulence, while dissolved load is carried in solution. Short near-bed hops do not make grains dissolved or wash load.<p>Capsule 4th ed., p. 27; topic 7 point 36.</p>",
+          "explanation": "Bed load moves along or close to the channel bed by rolling, sliding and bouncing (saltation); suspended load is carried within the water by turbulence.<p>Capsule 4th ed., p. 27; topic 7 point 36.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1610,32 +1610,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00037",
           "src": "CAP4-07-00037",
-          "text": "A symmetrical canal excavation has bottom width 4 m, cutting depth 2 m and side slopes 1.5 horizontal to 1 vertical beneath level ground. What is its cross-sectional cut area?",
+          "text": "If \\(B\\) is the bed width and \\(d\\) the depth of a trapezoidal channel with side slopes of \\(s : 1\\) (H : V), the area of cross-section is ______.",
           "options": [
             {
               "key": "a",
-              "text": "8 square metres"
+              "text": "\\((B + s)d\\)"
             },
             {
               "key": "b",
-              "text": "11 square metres"
+              "text": "\\(Bd + \\dfrac{sd^2}{2}\\)"
             },
             {
               "key": "c",
-              "text": "20 square metres"
+              "text": "\\(Bd + 2sd^2\\)"
             },
             {
               "key": "d",
-              "text": "14 square metres"
+              "text": "\\(Bd + sd^2\\)"
             }
           ],
           "answer": "d",
-          "explanation": "The rectangle contributes \\(4 \\times 2 = 8\\) m<sup>2</sup> and the two side triangles together contribute \\[zd^2 = 1.5 \\times 2^2 = 6\\ \\text{m}^2\\] giving 14 square metres. Cutting depth need not equal flow depth.<p>Source note: Page 27 point 37: unified the inconsistent y/d notation and explicitly defined the H:V side-slope convention.</p><p>Capsule 4th ed., p. 27; topic 7 point 37.</p>",
+          "explanation": "The section is a rectangle \\(Bd\\) plus two side triangles, each of area \\(\\dfrac{sd^2}{2}\\), so the total area is \\(Bd + sd^2\\).<p>Capsule 4th ed., p. 27; topic 7 point 37.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1648,32 +1648,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00038",
           "src": "CAP4-07-00038",
-          "text": "A 50 m canal reach has two identical side faces of vertical height 2 m and slope 1.5 H:1 V. Ignoring end faces and the bed, what lining area covers both slopes?",
+          "text": "For an irrigation channel with side slopes of 1 : \\(S\\) (V : H), depth \\(y\\) and length \\(L\\), the total area of the side slopes is ______.",
           "options": [
             {
               "key": "a",
-              "text": "650.00 square metres"
+              "text": "\\(2Ly(1 + S)\\)"
             },
             {
               "key": "b",
-              "text": "180.28 square metres"
+              "text": "\\(2LyS\\)"
             },
             {
               "key": "c",
-              "text": "300.00 square metres"
+              "text": "\\(Ly\\sqrt{1 + S^2}\\)"
             },
             {
               "key": "d",
-              "text": "360.56 square metres"
+              "text": "\\(2Ly\\sqrt{1 + S^2}\\)"
             }
           ],
           "answer": "d",
-          "explanation": "Each sloping face has width \\[2\\sqrt{1 + 1.5^2} = 3.60555\\ \\text{m}\\] so both sides require \\[\\begin{aligned} &amp;2 \\times 50 \\times 3.60555 \\\\ &amp;= 360.56\\ \\text{m}^2 \\end{aligned}\\] Omitting the square root or counting only one face gives different results.<p>Source note: Page 27 point 38: the extracted expression loses the radical. Restored it by Pythagoras, with an explicit H:V convention; no image was reviewed.</p><p>Capsule 4th ed., p. 27; topic 7 point 38.</p>",
+          "explanation": "Each sloping face has an inclined width of \\(y\\sqrt{1 + S^2}\\) over the length \\(L\\), and there are two faces, so the total side-slope area is \\(2Ly\\sqrt{1 + S^2}\\).<p>Capsule 4th ed., p. 27; topic 7 point 38.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1686,32 +1686,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00039",
           "src": "CAP4-07-00039",
-          "text": "An engineer uses Garrett's canal-design diagrams to reduce trial calculations. Which sediment-velocity method underlies these traditional diagrams?",
+          "text": "Garrett's diagrams are based on ______ theory.",
           "options": [
             {
               "key": "a",
-              "text": "Lacey's regime-perimeter method"
+              "text": "Lacey's"
             },
             {
               "key": "b",
-              "text": "Kennedy's method"
+              "text": "Kennedy's"
             },
             {
               "key": "c",
-              "text": "Khosla's independent-variable method"
+              "text": "Khosla's"
             },
             {
               "key": "d",
-              "text": "Lane's weighted-creep method"
+              "text": "Bligh's"
             }
           ],
           "answer": "b",
-          "explanation": "Garrett's diagrams are graphical aids associated with Kennedy-based canal design. Their use retains the assumptions and calibration of that method; they are not diagrams for foundation seepage or a substitute for checking the resulting section.<p>Capsule 4th ed., p. 27; topic 7 point 39.</p>",
+          "explanation": "Garrett's diagrams give graphical solutions of Kennedy's critical velocity equation together with Kutter's formula, avoiding trial calculations in canal design.<p>Capsule 4th ed., p. 27; topic 7 point 39.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1729,27 +1729,27 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-07-00040",
           "src": "CAP4-07-00040",
-          "text": "For a coarse noncohesive bed, adopt critical Shields parameter 0.056, grain density 2650 kg/m3, water density 1000 kg/m3, diameter 0.010 m and g = 9.81 m/s2. What critical bed shear follows?",
+          "text": "For the design of non-scouring channels in coarse alluvium, Shields' entrainment function should be ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.91 Pa"
+              "text": "0.56"
             },
             {
               "key": "b",
-              "text": "14.56 Pa"
+              "text": "0.0056"
             },
             {
               "key": "c",
-              "text": "9.06 Pa"
+              "text": "0.056"
             },
             {
               "key": "d",
-              "text": "90.64 Pa"
+              "text": "1.65"
             }
           ],
           "answer": "c",
-          "explanation": "The Shields parameter is bed shear divided by submerged grain weight per unit area: \\[\\theta = \\dfrac{\\tau}{(\\rho_s - \\rho)gd}\\] Thus \\[\\begin{aligned} \\tau &amp;= 0.056 \\times 1650 \\\\ &amp;\\quad \\times 9.81 \\times 0.010 \\\\ &amp;= 9.06444\\ \\text{Pa} \\end{aligned}\\] This is an incipient-motion estimate before any design safety allowance.<p>Source note: Page 28 point 40: 0.056 is explicitly adopted for this coarse-bed example. The Shields threshold depends on flow/grain regime and is not mandatory for every alluvial canal.</p><p>Capsule 4th ed., p. 28; topic 7 point 40.</p>",
+          "explanation": "For coarse alluvium, the critical value of Shields' entrainment function, bed shear divided by the submerged weight of grains per unit area, is taken as 0.056.<p>Capsule 4th ed., p. 28; topic 7 point 40.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1762,32 +1762,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00041",
           "src": "CAP4-07-00041",
-          "text": "A surveyed watershed offers adequate command levels on both sides and natural drains slope away from it. Which canal alignment is attractive for minimizing drainage crossings?",
+          "text": "Irrigation canals are generally aligned along the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Hillside contour alignment"
+              "text": "River bank"
             },
             {
               "key": "b",
-              "text": "Valley-bottom alignment"
+              "text": "Valley line"
             },
             {
               "key": "c",
-              "text": "Alignment along the main drainage channel"
+              "text": "Lowest contour"
             },
             {
               "key": "d",
-              "text": "Ridge alignment"
+              "text": "Ridge line"
             }
           ],
           "answer": "d",
-          "explanation": "A ridge follows the drainage divide, so it can command both sides while avoiding drains that fall away from it. Adequate canal grade and field head must still be demonstrated; the preferred alignment is conditional on the actual terrain.<p>Capsule 4th ed., p. 28; topic 7 point 41.</p>",
+          "explanation": "A canal on the ridge (watershed) line can irrigate the land on both sides by gravity and crosses no natural drains, so it needs no cross drainage works.<p>Capsule 4th ed., p. 28; topic 7 point 41.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1800,32 +1800,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00043",
           "src": "CAP4-07-00043",
-          "text": "A reviewer rejects a hydraulically adequate trapezoidal lined canal solely because its 40-cumec discharge is below 85 cumecs. Under the section-selection guidance of IS 10430:2000 Section 8.8.1, which assessment is justified?",
+          "text": "Triangular lined sections are adopted when the discharge in the channel is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Rounded corners make a trapezoid unsuitable below 85 cumecs"
+              "text": "Between 200 and 300 cumecs"
             },
             {
               "key": "b",
-              "text": "A cup-shaped section is compulsory for a 40-cumec canal"
+              "text": "More than 300 cumecs"
             },
             {
               "key": "c",
-              "text": "Trapezoidal sections are permitted without that 85-cumec restriction"
+              "text": "Less than 85 cumecs"
             },
             {
               "key": "d",
-              "text": "A triangular section is compulsory for every discharge below 85 cumecs"
+              "text": "More than 85 cumecs"
             }
           ],
           "answer": "c",
-          "explanation": "Section 8.8.1 permits trapezoidal lined canals with or without rounded corners for all types of lined canals. Hydraulic capacity, stable slopes and economic checks still apply. A discharge below 85 cumecs does not itself require a triangular section in this edition.<p>Source note: Page 28 point 43: checked against the archived text of IS 10430:2000, Section 8.8.1. The capsule&#39;s 85-cumec convention is not established by this reference; its historical origin remains unverified. No current Nepal adoption is claimed.</p><p>Capsule 4th ed., p. 28; topic 7 point 43.</p>",
+          "explanation": "For smaller canals, carrying less than 85 cumecs, a triangular lined section with a rounded bottom is adopted; larger discharges use trapezoidal lined sections.<p>Capsule 4th ed., p. 28; topic 7 point 43.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1838,32 +1838,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00100",
           "src": "CAP4-07-00100",
-          "text": "A rectangular lined canal carries steady uniform flow with width 4 m, water depth 2 m, Manning n = 0.020 and bed slope 0.0004. What discharge does Manning's equation give?",
+          "text": "A lined alluvial canal is best designed on the basis of ______.",
           "options": [
             {
               "key": "a",
-              "text": "8.00 cumecs"
+              "text": "Manning's theory"
             },
             {
               "key": "b",
-              "text": "16.00 cumecs"
+              "text": "Bligh's theory"
             },
             {
               "key": "c",
-              "text": "4.00 cumecs"
+              "text": "Lacey's theory"
             },
             {
               "key": "d",
-              "text": "12.70 cumecs"
+              "text": "Kennedy's theory"
             }
           ],
           "answer": "a",
-          "explanation": "Area and wetted perimeter are \\(A = 4 \\times 2 = 8\\) m<sup>2</sup> and \\(P = 4 + 2 \\times 2 = 8\\) m, so \\(R = 1\\) m. Then \\[\\begin{aligned} Q &amp;= \\dfrac{1}{0.020} \\times 8 \\times 1^{2{/}3} \\\\ &amp;\\quad \\times \\sqrt{0.0004} \\\\ &amp;= 8.00\\ \\text{cumecs} \\end{aligned}\\] The free surface is excluded from the wetted perimeter.<p>Source note: Page 29 point 101: Manning is a resistance relation under specified conditions, not a complete lined-canal design or an adjustable-alluvial regime theory.</p><p>Capsule 4th ed., p. 29; topic 7 point 101.</p>",
+          "explanation": "A lined canal has a fixed, non-erodible boundary, so it is designed as a rigid channel with Manning's equation; Kennedy's and Lacey's theories apply to unlined alluvial canals.<p>Capsule 4th ed., p. 29; topic 7 point 101.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1876,32 +1876,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00112",
           "src": "CAP4-07-00112",
-          "text": "For a trial trapezoidal lined canal carrying 90 cumecs, a designer adopts mean velocity 2 m/s, water depth 3 m and side slopes 1.5 H:1 V. What bed width follows from continuity and section geometry alone?",
+          "text": "Canal sections used to carry a discharge above 84 cumecs are ______.",
           "options": [
             {
               "key": "a",
-              "text": "19.50 m"
+              "text": "Circular"
             },
             {
               "key": "b",
-              "text": "7.50 m"
+              "text": "Rectangular"
             },
             {
               "key": "c",
-              "text": "15.00 m"
+              "text": "Triangular"
             },
             {
               "key": "d",
-              "text": "10.50 m"
+              "text": "Trapezoidal"
             }
           ],
           "answer": "d",
-          "explanation": "The required flow area is \\(\\dfrac{Q}{V} = \\dfrac{90}{2} = 45\\) m<sup>2</sup>. For a trapezoid \\(A = y(b + zy)\\), hence \\[b = \\dfrac{45}{3} - 1.5 \\times 3 = 10.50\\ \\text{m}\\] This is a trial geometry, not proof that the available slope produces the adopted velocity or that lining is stable.<p>Source note: Page 29 point 113: tests large-canal trapezoidal sizing without endorsing an 84-cumec switch. Reviewed IS 10430:2000 Section 8.8.1 permits trapezoidal sections for all types of lined canals; the capsule&#39;s threshold origin remains unverified.</p><p>Capsule 4th ed., p. 29; topic 7 point 113.</p>",
+          "explanation": "Lined canals carrying more than about 84 cumecs are given trapezoidal sections, while smaller canals use triangular sections with rounded bottoms.<p>Capsule 4th ed., p. 29; topic 7 point 113.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1914,32 +1914,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00113",
           "src": "CAP4-07-00113",
-          "text": "In the Lacey relation V = sqrt(2 f R/5), a comparison increases f by a factor of four and R by a factor of nine. What velocity multiplier follows from this relation alone?",
+          "text": "In Lacey's regime theory, the velocity of flow is related to the silt factor \\(f\\) and hydraulic radius \\(R\\) by ______.",
           "options": [
             {
               "key": "a",
-              "text": "36"
+              "text": "\\(V = \\dfrac{2fR}{5}\\)"
             },
             {
               "key": "b",
-              "text": "13"
+              "text": "\\(V = \\sqrt{\\dfrac{5fR}{2}}\\)"
             },
             {
               "key": "c",
-              "text": "3"
+              "text": "\\(V = 0.55mD^{0.64}\\)"
             },
             {
               "key": "d",
-              "text": "6"
+              "text": "\\(V = \\sqrt{\\dfrac{2fR}{5}}\\)"
             }
           ],
           "answer": "d",
-          "explanation": "Since \\(V = \\sqrt{\\dfrac{2fR}{5}}\\), velocity varies with \\(\\sqrt{fR}\\), so its multiplier is \\[\\sqrt{4 \\times 9} = 6\\] Treating \\(V\\) as directly proportional to the unsquared product would give 36. These are compatible comparative inputs, not a claim that all other regime quantities stay fixed.<p>Source note: Page 29 point 114: supplied the missing square-root dependence on the product of sediment factor and hydraulic radius.</p><p>Capsule 4th ed., p. 29; topic 7 point 114.</p>",
+          "explanation": "Lacey's regime velocity is \\(V = \\sqrt{\\dfrac{2fR}{5}}\\), so it increases with both the silt factor and the hydraulic mean depth; Kennedy's critical velocity \\(0.55mD^{0.64}\\) depends on depth instead.<p>Capsule 4th ed., p. 29; topic 7 point 114.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1952,12 +1952,12 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00124",
           "src": "CAP4-07-00124",
-          "text": "Using Kennedy's relation V = 0.55 m y^0.64 with water depth y = 0.75 m and critical-velocity ratio m = 1, what mean velocity results to three decimal places?",
+          "text": "Using Kennedy's equation, if the depth \\(D = 0.75\\) m and \\(m = 1\\), the critical velocity is ______.",
           "options": [
             {
               "key": "a",
@@ -1973,11 +1973,11 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             },
             {
               "key": "d",
-              "text": "0.458 m/s"
+              "text": "0.4575 m/s"
             }
           ],
           "answer": "d",
-          "explanation": "Kennedy's relation \\(V = 0.55\\,m\\,y^{0.64}\\) gives \\[\\begin{aligned} V &amp;= 0.55 \\times 0.75^{0.64} \\\\ &amp;= 0.55 \\times 0.831839 \\\\ &amp;= 0.457511\\ \\text{m/s} \\end{aligned}\\] which rounds to 0.458 m per s. This is Kennedy's empirical sediment-stability velocity, not a particle's still-water settling speed or the \\(\\text{Fr} = 1\\) velocity.<p>Source note: Page 30 point 122: treated D as water depth, corrected &#39;critical velocity of setting&#39;, and reported proper three-decimal rounding rather than the source&#39;s 0.457 truncation.</p><p>Capsule 4th ed., p. 30; topic 7 point 122.</p>",
+          "explanation": "Kennedy's critical velocity is \\[\\begin{aligned} V_0 &amp;= 0.55mD^{0.64} \\\\ &amp;= 0.55 \\times 1 \\times 0.75^{0.64} \\\\ &amp;= 0.4575 \\end{aligned}\\] that is, 0.4575 metres per second.<p>Capsule 4th ed., p. 30; topic 7 point 122.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1995,27 +1995,27 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-07-00128",
           "src": "CAP4-07-00128",
-          "text": "Which quantity is a flow variable rather than a geometric property of a specified canal cross-section?",
+          "text": "Which of the following is not a geometric cross-sectional parameter of a canal?",
           "options": [
             {
               "key": "a",
-              "text": "Flow area A"
+              "text": "Flow area"
             },
             {
               "key": "b",
-              "text": "Wetted perimeter P"
+              "text": "Wetted perimeter"
             },
             {
               "key": "c",
-              "text": "Discharge Q"
+              "text": "Discharge"
             },
             {
               "key": "d",
-              "text": "Hydraulic radius A/P"
+              "text": "Hydraulic radius"
             }
           ],
           "answer": "c",
-          "explanation": "Discharge measures volume passing per unit time and equals area times mean velocity. Area, wetted perimeter and hydraulic radius describe the wetted section at a stated depth. Geometry constrains flow but does not alone specify its discharge.<p>Capsule 4th ed., p. 30; topic 7 point 127.</p>",
+          "explanation": "Area, wetted perimeter and hydraulic radius are fixed by the shape and depth of the section, whereas discharge is a flow quantity, not a geometric parameter.<p>Capsule 4th ed., p. 30; topic 7 point 127.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2033,11 +2033,11 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-07-00129",
           "src": "CAP4-07-00129",
-          "text": "Which canal system supplied the classic observations underlying Kennedy's empirical sediment-stability method?",
+          "text": "Kennedy developed his theory based on observations from the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Western Yamuna Canal, northern India"
+              "text": "Western Yamuna Canal"
             },
             {
               "key": "b",
@@ -2045,15 +2045,15 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             },
             {
               "key": "c",
-              "text": "Upper Ganges Canal, northern India"
+              "text": "Upper Ganga Canal"
             },
             {
               "key": "d",
-              "text": "Sirhind Canal, Punjab"
+              "text": "Sirhind Canal"
             }
           ],
           "answer": "b",
-          "explanation": "Kennedy's method arose from observations of the Upper Bari Doab Canal system in Punjab. That empirical origin explains why its coefficient and critical-velocity ratio require care when transferred to different sediment and channel conditions.<p>Capsule 4th ed., p. 30; topic 7 point 129.</p>",
+          "explanation": "R. G. Kennedy based his critical velocity theory on observations of stable channels of the Upper Bari Doab Canal system in Punjab, published in 1895.<p>Capsule 4th ed., p. 30; topic 7 point 129.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2071,27 +2071,27 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-07-00130",
           "src": "CAP4-07-00130",
-          "text": "A gate operation accelerates flow in an erodible canal reach until the applied bed shear exceeds sediment resistance. What bed response is most likely?",
+          "text": "Canal scouring primarily results from ______.",
           "options": [
             {
               "key": "a",
-              "text": "Deposition because increased velocity reduces transport capacity"
+              "text": "A decrease in velocity"
             },
             {
               "key": "b",
-              "text": "No entrainment unless the reach is already carrying sediment"
+              "text": "Lining of the canal"
             },
             {
               "key": "c",
-              "text": "A regime section maintained automatically during gate changes"
+              "text": "Growth of weeds"
             },
             {
               "key": "d",
-              "text": "Scour and possible bed lowering"
+              "text": "An increase in velocity"
             }
           ],
           "answer": "d",
-          "explanation": "When hydraulic demand exceeds bed resistance, grains are entrained and a sediment deficit can cause scour. Increased velocity often accompanies increased erosive stress, but resistance, depth, turbulence and sediment supply also matter; velocity alone is not a universal threshold.<p>Source note: Page 30 point 130: stated the erosion-resistance condition behind the source&#39;s velocity-increase shorthand.</p><p>Capsule 4th ed., p. 30; topic 7 point 130.</p>",
+          "explanation": "When the flow velocity exceeds the non-scouring value, the bed shear exceeds the resistance of the soil and the bed and banks are scoured; low velocities cause silting instead.<p>Capsule 4th ed., p. 30; topic 7 point 130.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2104,7 +2104,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0702",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -2116,27 +2116,27 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-02-00160",
           "src": "CAP4-02-00160",
-          "text": "Seepage beneath a weir transports foundation particles toward an unfiltered downstream exit, progressively creating channels and loss of support. Which failure mechanism is developing?",
+          "text": "The two main causes of failure of hydraulic structures on pervious foundations are ______.",
           "options": [
             {
               "key": "a",
-              "text": "Cavitation confined to the overflow crest"
+              "text": "Cavitation and abrasion"
             },
             {
               "key": "b",
-              "text": "Piping and undermining"
+              "text": "Undermining and uplift"
             },
             {
               "key": "c",
-              "text": "Structural flexural cracking without seepage"
+              "text": "Earthquake and wind"
             },
             {
               "key": "d",
-              "text": "Hydrostatic uplift without particle transport"
+              "text": "Overtopping and siltation"
             }
           ],
           "answer": "b",
-          "explanation": "Piping is internal erosion driven by seepage, often initiated at an inadequately protected exit. Particle loss can undermine the floor or foundation. Filters, drainage and appropriate seepage control address this mechanism; floor weight alone does not prevent particle transport.<p>Capsule 4th ed., p. 10; topic 2 point 142.</p>",
+          "explanation": "On a pervious foundation, seepage under the structure can wash out soil particles (undermining, or piping) and can exert uplift pressure on the floor. These are the two main causes of failure, analysed by Bligh's and Khosla's theories.<p>Capsule 4th ed., p. 10; topic 2 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2149,32 +2149,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-02-00161",
           "src": "CAP4-02-00161",
-          "text": "A hydraulic floor remains intact but seepage pressure under it exceeds the available downward stabilizing action. Which distinct failure risk must be checked?",
+          "text": "Besides uplift, the main cause of failure of a hydraulic structure on a pervious foundation is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Piping specifically caused by transported soil particles"
+              "text": "Overtopping"
             },
             {
               "key": "b",
-              "text": "Bearing failure caused by excessive downward contact pressure"
+              "text": "Frost action"
             },
             {
               "key": "c",
-              "text": "Overturning caused by excessive lateral thrust alone"
+              "text": "Wave action"
             },
             {
               "key": "d",
-              "text": "Uplift or flotation of the floor"
+              "text": "Undermining"
             }
           ],
           "answer": "d",
-          "explanation": "Upward pore-water forces can lift or crack a floor when they exceed its stabilizing resistance. This is distinct from particle erosion and undermining, though the mechanisms may interact. Uplift analysis needs the pressure distribution and appropriate load combinations, not merely an average exit gradient.<p>Capsule 4th ed., p. 10; topic 2 point 142.</p>",
+          "explanation": "The two main causes of failure of hydraulic structures on pervious foundations are uplift pressure on the floor and undermining, the progressive washing out of soil by seepage (piping).<p>Capsule 4th ed., p. 10; topic 2 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2187,32 +2187,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00026",
           "src": "CAP4-07-00026",
-          "text": "Two intake sites offer the same diversion head. Site X has unstable shoaling and interferes with vessel passage; site Y has a stable approach and separated navigation. Which is the better preliminary choice?",
+          "text": "The placement of an intake is not optimal when it is placed in ______.",
           "options": [
             {
               "key": "a",
-              "text": "Either site, because equal head implies equal intake reliability"
+              "text": "A reach upstream of pollution sources"
             },
             {
               "key": "b",
-              "text": "Site Y, for its stable approach and separated navigation"
+              "text": "A natural channel and a navigation channel"
             },
             {
               "key": "c",
-              "text": "Site X, because shoaling reduces the need for sediment exclusion"
+              "text": "A stable, deep reach"
             },
             {
               "key": "d",
-              "text": "Site X, because vessel depth establishes stable intake conditions"
+              "text": "A straight reach with a firm bed"
             }
           ],
           "answer": "b",
-          "explanation": "A stable approach and avoidance of navigation conflict favor Y. Intake selection also considers low-flow access, sediment, scour and operation. Being in a natural river is not itself a defect; the actual channel behavior matters.<p>Source note: Page 27 point 26: the natural-channel/navigation statement lacks an identifiable comparison. This question tests explicit siting criteria; the intended original classification remains for parent review.</p><p>Capsule 4th ed., p. 27; topic 7 point 26.</p>",
+          "explanation": "An intake in a navigation channel obstructs boats, and one in a shifting natural channel suffers from silting and changing flow, so neither placement is optimal; a stable, deep reach is preferred.<p>Capsule 4th ed., p. 27; topic 7 point 26.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2225,32 +2225,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00042",
           "src": "CAP4-07-00042",
-          "text": "Two otherwise comparable intake reaches have suitable foundations and flood access. Reach X has enough dry-season head but migrating shoals; reach Y has a stable approach but its dry-season water level lies below the required gravity-intake level. What must the assessment recognize?",
+          "text": "A canal intake is preferably located in the ______ of the river.",
           "options": [
             {
               "key": "a",
-              "text": "X has a sediment-stability risk; Y lacks the required low-flow head"
+              "text": "Trough"
             },
             {
               "key": "b",
-              "text": "Both are adequate once their peak flood discharges are sufficient"
+              "text": "Dry bed near the bank"
             },
             {
               "key": "c",
-              "text": "Y is adequate because channel stability compensates for missing head"
+              "text": "Flood plain"
             },
             {
               "key": "d",
-              "text": "X is unsuitable because any natural river intake is unacceptable"
+              "text": "Crest of a shoal"
             }
           ],
           "answer": "a",
-          "explanation": "Gravity diversion needs adequate seasonal head as well as a manageable sediment regime. X requires investigation of migrating shoals; Y cannot meet the stated low-flow gravity requirement without changing the scheme. An undefined reach label such as 'trough stage' establishes neither condition.<p>Source note: Page 28 point 42: &#39;trough stage&#39; is undefined; nearby corrected notes also retain an unresolved &#39;Through stage&#39; label. No equivalence or corrected spelling is asserted. Parent should verify the intended reach classification.</p><p>Capsule 4th ed., p. 28; topic 7 point 42.</p>",
+          "explanation": "The trough, the deepest part of the river section, holds water even at low stages, so an intake located there draws a reliable supply.<p>Capsule 4th ed., p. 28; topic 7 point 42.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2263,32 +2263,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00044",
           "src": "CAP4-07-00044",
-          "text": "A barrage foundation exposes unprotected loose fine sand at the downstream seepage exit. Why is a conservative permissible-gradient assessment important?",
+          "text": "According to Khosla, the soil material having the lowest safe exit gradient is ______.",
           "options": [
             {
               "key": "a",
-              "text": "A small permeability by itself rules out erosion at the exit"
+              "text": "Shingle"
             },
             {
               "key": "b",
-              "text": "Only total seepage discharge matters, not its local gradient"
+              "text": "Gravel"
             },
             {
               "key": "c",
-              "text": "Seepage can mobilize grains and initiate internal erosion"
+              "text": "Fine sand"
             },
             {
               "key": "d",
-              "text": "Fine grains necessarily have lower mineral specific gravity"
+              "text": "Coarse sand"
             }
           ],
           "answer": "c",
-          "explanation": "Unprotected fine sand may be readily eroded by emerging seepage. Permissible gradients and filters must reflect gradation, packing and erosion susceptibility. Finer grains of the same mineral do not have intrinsically lower solid specific gravity.<p>Source note: Page 28 point 44: retained fine-sand vulnerability without inventing a universal soil ranking or fixed safe-gradient table.</p><p>Capsule 4th ed., p. 28; topic 7 point 44.</p>",
+          "explanation": "Fine sand is washed out most easily by upward seepage at the downstream end of a weir, so it has the lowest safe exit gradient; coarse sand and shingle can tolerate steeper gradients.<p>Capsule 4th ed., p. 28; topic 7 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2301,32 +2301,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00045",
           "src": "CAP4-07-00045",
-          "text": "A conventional diversion-headworks layout must provide an upstream migration route for fish across the level difference. Which component and usual location fit that purpose?",
+          "text": "A fish ladder is provided on the side of the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Silt excluder beneath the impervious floor"
+              "text": "Canal head regulator"
             },
             {
               "key": "b",
-              "text": "Canal escape at the main-channel tail"
+              "text": "Silt excluder"
             },
             {
               "key": "c",
-              "text": "Undersluice gate within the fish resting pool"
+              "text": "Canal escape"
             },
             {
               "key": "d",
-              "text": "Fish ladder beside the divide wall"
+              "text": "Divide wall"
             }
           ],
           "answer": "d",
-          "explanation": "A fish ladder or pass provides a sequence of passable levels and resting zones; it is often arranged beside the divide wall in conventional headworks. Entrance attraction, velocities and species requirements govern whether it actually works.<p>Source note: Page 28 point 45: divide-wall adjacency is a conventional layout, not an exclusive location suitable for every species or site.</p><p>Capsule 4th ed., p. 28; topic 7 point 45.</p>",
+          "explanation": "The fish ladder, a series of pools with gentle steps, is built alongside the divide wall so that fish can move upstream past the weir.<p>Capsule 4th ed., p. 28; topic 7 point 45.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2339,16 +2339,16 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00046",
           "src": "CAP4-07-00046",
-          "text": "Which headworks component separates the undersluice pocket from the main weir bays and limits cross-currents between them?",
+          "text": "The structure used to separate the under-sluice portion from the main weir portion is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Upstream guide-bank nose"
+              "text": "Guide bank"
             },
             {
               "key": "b",
@@ -2356,15 +2356,15 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             },
             {
               "key": "c",
-              "text": "Downstream drainage collector"
+              "text": "Fish ladder"
             },
             {
               "key": "d",
-              "text": "Canal fall crest"
+              "text": "Marginal bund"
             }
           ],
           "answer": "b",
-          "explanation": "The divide wall separates the main overflow portion from the undersluice pocket, helping organize approach flow and sediment sluicing near the canal intake. It is distinct from guide banks, which steer the river through the overall waterway.<p>Source note: Page 28 points 46 and 69 are the same divide-wall fact and are intentionally merged.</p><p>Capsule 4th ed., p. 28; topic 7 point 46; topic 7 point 69.</p>",
+          "explanation": "A divide wall separates the under-sluice pocket from the main weir, keeping a still pocket in front of the canal head regulator where silt settles and can be flushed out.<p>Capsule 4th ed., p. 28; topic 7 point 46; topic 7 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2378,32 +2378,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00047",
           "src": "CAP4-07-00047",
-          "text": "In Khosla's ideal sharp-edge floor model, the downstream cutoff depth tends to zero while floor length and retained head remain positive. What happens to the local exit-gradient estimate?",
+          "text": "According to Khosla's theory, the exit gradient in the absence of a downstream cut-off is ______.",
           "options": [
             {
               "key": "a",
-              "text": "It becomes unbounded at the ideal exit edge"
+              "text": "Infinity"
             },
             {
               "key": "b",
-              "text": "It becomes equal to soil permeability"
+              "text": "1"
             },
             {
               "key": "c",
-              "text": "It becomes zero throughout the foundation"
+              "text": "Zero"
             },
             {
               "key": "d",
-              "text": "It becomes uniformly infinite beneath the whole floor"
+              "text": "Equal to the head"
             }
           ],
           "answer": "a",
-          "explanation": "The end-pile expression is \\[G_E = \\dfrac{H}{\\pi d\\sqrt{\\lambda}}\\] As \\(d \\to 0\\) at fixed positive floor length, the denominator tends to zero. This is a localized mathematical edge singularity, not a uniform infinite gradient in real soil.<p>Source note: Page 28 point 47: restricted infinity to the ideal zero-cutoff sharp-edge limit, not a literal field-wide measurement.</p><p>Capsule 4th ed., p. 28; topic 7 point 47.</p>",
+          "explanation": "Khosla's exit gradient \\(G_E = \\dfrac{H}{d} \\cdot \\dfrac{1}{\\pi\\sqrt{\\lambda}}\\) is inversely proportional to the depth \\(d\\) of the downstream cut-off; with no cut-off \\(d = 0\\), so the exit gradient becomes infinite.<p>Capsule 4th ed., p. 28; topic 7 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2416,32 +2416,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00048",
           "src": "CAP4-07-00048",
-          "text": "A concrete weir accelerates overflow down a downstream glacis into a protected hydraulic-jump basin. Which profile family does this describe?",
+          "text": "The masonry or concrete sloping weir is of ______ origin.",
           "options": [
             {
               "key": "a",
-              "text": "Broad-crested weir without a downstream glacis"
+              "text": "Prehistoric"
             },
             {
               "key": "b",
-              "text": "Sharp-crested measuring weir"
+              "text": "Medieval"
             },
             {
               "key": "c",
-              "text": "Sloping-glacis weir"
+              "text": "Recent"
             },
             {
               "key": "d",
-              "text": "Vertical-drop weir"
+              "text": "Ancient"
             }
           ],
           "answer": "c",
-          "explanation": "The sloping glacis carries the overflow to a designed stilling arrangement, where a hydraulic jump can dissipate energy. Its geometry and protection, not the date on a textbook, identify the profile family.<p>Source note: Page 28 point 48: replaced time-sensitive &#39;recent origin&#39; trivia with the actual sloping-weir hydraulic form.</p><p>Capsule 4th ed., p. 28; topic 7 point 48.</p>",
+          "explanation": "Masonry or concrete sloping weirs, with a downstream glacis on which a hydraulic jump forms, are a recent development that replaced the older dry-stone and vertical drop weirs.<p>Capsule 4th ed., p. 28; topic 7 point 48.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2454,32 +2454,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00049",
           "src": "CAP4-07-00049",
-          "text": "An overflow crest is shaped to approximately follow the lower surface of a free nappe at a selected design head. What is the principal reason for this ogee profiling?",
+          "text": "The most efficient weir shape is ______.",
           "options": [
             {
               "key": "a",
-              "text": "A coefficient unchanged when operating head differs from design head"
+              "text": "Broad-crested"
             },
             {
               "key": "b",
-              "text": "Efficient overflow with a compatible design-head pressure profile"
+              "text": "Parabolic"
             },
             {
               "key": "c",
-              "text": "A hydraulic jump formed on the crest at the design head"
+              "text": "Vertical drop"
             },
             {
               "key": "d",
-              "text": "A submerged-flow rating determined by upstream head alone"
+              "text": "Stepped"
             }
           ],
           "answer": "b",
-          "explanation": "An ogee profile is related to the design nappe, promoting efficient attached overflow at its intended head. Off-design head changes surface pressures and coefficient. The entire profile is not necessarily one parabola or the best form under every criterion.<p>Source note: Page 28 point 49: &#39;parabolic is most efficient&#39; was qualified using the nearby ogee discussion; no universal superiority or exact parabola is asserted.</p><p>Capsule 4th ed., p. 28; topic 7 point 49.</p>",
+          "explanation": "A parabolic crest follows the natural shape of the lower nappe of the overflowing water, so the flow passes smoothly with high discharge efficiency.<p>Capsule 4th ed., p. 28; topic 7 point 49.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2492,32 +2492,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00050",
           "src": "CAP4-07-00050",
-          "text": "A river contains sufficient seasonal flow but its water surface is too low to feed a gravity canal. What is the primary diversion function of a weir or barrage?",
+          "text": "The main function of a weir or barrage is to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Lower the canal tailwater without changing intake head"
+              "text": "Generate electricity"
             },
             {
               "key": "b",
-              "text": "Supply pumping energy directly to water entering the canal"
+              "text": "Store water for the whole year"
             },
             {
               "key": "c",
-              "text": "Raise the upstream level to provide diversion head"
+              "text": "Increase the water height"
             },
             {
               "key": "d",
-              "text": "Provide full-season storage as the defining diversion function"
+              "text": "Control floods"
             }
           ],
           "answer": "c",
-          "explanation": "A weir or barrage raises or controls the upstream water level so that water can enter the canal under available head. It redistributes hydraulic levels; it does not create water or guarantee complete sediment removal.<p>Capsule 4th ed., p. 28; topic 7 point 50.</p>",
+          "explanation": "A weir or barrage raises the water level upstream so that water can be diverted into the canal by gravity; it is not mainly a storage structure.<p>Capsule 4th ed., p. 28; topic 7 point 50.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2530,32 +2530,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00051",
           "src": "CAP4-07-00051",
-          "text": "A diversion structure maintains its pond level chiefly through gates across low-sill bays, which can be opened widely during floods. How is it conventionally distinguished from a fixed-crest weir?",
+          "text": "The major differentiating point between weirs and barrages is the presence of ______.",
           "options": [
             {
               "key": "a",
-              "text": "It is a fixed weir because its flood bays have gates"
+              "text": "A fish ladder"
             },
             {
               "key": "b",
-              "text": "It is a barrage because it has no movable control"
+              "text": "A divide wall"
             },
             {
               "key": "c",
-              "text": "It is a barrage with predominantly gated control"
+              "text": "Gates"
             },
             {
               "key": "d",
-              "text": "It is a canal escape because its sill is low"
+              "text": "Guide banks"
             }
           ],
           "answer": "c",
-          "explanation": "A barrage normally relies on gates over relatively low sills for level and flood-passage control. A weir relies mainly on its raised crest, although some weirs have shutters or gates. Mere presence of any gate is therefore an oversimplified distinction.<p>Source note: Page 28 point 51: qualified the absolute gates/no-gates classification.</p><p>Capsule 4th ed., p. 28; topic 7 point 51.</p>",
+          "explanation": "A weir raises the water level mainly by its fixed crest, with at most small shutters, whereas a barrage raises it with a series of gates across the river; the gates are the main difference.<p>Capsule 4th ed., p. 28; topic 7 point 51.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2568,32 +2568,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00052",
           "src": "CAP4-07-00052",
-          "text": "A designer estimates seepage resistance by tracing the structure-soil contact around the floor and piles, rather than solving the head field through the soil. Which historical model is being used?",
+          "text": "According to Bligh's creep theory, percolating water flows ______.",
           "options": [
             {
               "key": "a",
-              "text": "Bligh's creep theory"
+              "text": "Along the outline of the base of the foundation"
             },
             {
               "key": "b",
-              "text": "Manning's open-channel resistance law"
+              "text": "Vertically upward under the floor"
             },
             {
               "key": "c",
-              "text": "Shields' grain-entrainment criterion"
+              "text": "Only through the upstream cut-off"
             },
             {
               "key": "d",
-              "text": "Khosla's potential-flow method"
+              "text": "In straight lines through the soil"
             }
           ],
           "answer": "a",
-          "explanation": "Bligh idealizes a creep path along the foundation contact and relates resistance to that path length. Actual seepage occupies a two-dimensional or three-dimensional soil domain; the contact-path assumption is an empirical model, not literal confinement of all water.<p>Capsule 4th ed., p. 28; topic 7 point 52.</p>",
+          "explanation": "Bligh assumed that seepage water creeps along the contact between the structure and the soil, following the outline of the base and cut-offs, with the head lost uniformly along this creep length.<p>Capsule 4th ed., p. 28; topic 7 point 52.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2606,32 +2606,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00053",
           "src": "CAP4-07-00053",
-          "text": "Under Bligh's own unweighted creep convention, what effective-length contributions come from 12 m of horizontal contact and 12 m of vertical contact?",
+          "text": "Bligh's theory of seepage assumes that the horizontal and vertical creep are given ______.",
           "options": [
             {
               "key": "a",
-              "text": "12 m and 12 m"
+              "text": "Equal weightage"
             },
             {
               "key": "b",
-              "text": "4 m and 12 m"
+              "text": "Weightage in the ratio 1 : 3"
             },
             {
               "key": "c",
-              "text": "12 m and 4 m"
+              "text": "Weightage in the ratio 3 : 1"
             },
             {
               "key": "d",
-              "text": "36 m and 12 m"
+              "text": "No weightage for the vertical creep"
             }
           ],
           "answer": "a",
-          "explanation": "Bligh assigns equal weight to each metre of horizontal and vertical contact. Both contribute 12 m, giving 24 m in total. Reducing the horizontal contribution to one-third belongs to Lane's different weighted-creep convention.<p>Source note: Page 28 point 53 and page 30 point 131 duplicate the equal-weighting fact and are merged.</p><p>Capsule 4th ed., pp. 28, 30; topic 7 point 53; topic 7 point 131.</p>",
+          "explanation": "Bligh counts each metre of horizontal and vertical creep equally; Lane later gave horizontal creep only one-third of the weight of vertical creep.<p>Capsule 4th ed., pp. 28, 30; topic 7 point 53; topic 7 point 131.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2646,32 +2646,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00054",
           "src": "CAP4-07-00054",
-          "text": "Which method combines standard floor-and-pile potential-flow solutions with corrections for interactions and geometry in traditional hydraulic-floor design?",
+          "text": "The method evolved by Khosla for designing hydraulic structures is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Kennedy's critical-velocity-ratio method"
+              "text": "Critical velocity ratio method"
             },
             {
               "key": "b",
-              "text": "Bligh's uniform contact-creep approximation"
+              "text": "Weighted creep method"
             },
             {
               "key": "c",
-              "text": "Lacey's adjustable-channel regime method"
+              "text": "Regime method"
             },
             {
               "key": "d",
-              "text": "Khosla's method of independent variables"
+              "text": "Method of independent variables"
             }
           ],
           "answer": "d",
-          "explanation": "Khosla's method uses standard analytical profiles and prescribed corrections, including pile interference, floor thickness and floor slope. It evaluates head distributions and gradients rather than treating every contact segment as an equivalent length.<p>Capsule 4th ed., p. 28; topic 7 point 54.</p>",
+          "explanation": "Khosla's method of independent variables splits a complex floor profile into simple standard forms, finds the uplift pressure for each and then corrects for their interaction, floor thickness and slope.<p>Capsule 4th ed., p. 28; topic 7 point 54.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2689,27 +2689,27 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-07-00056",
           "src": "CAP4-07-00056",
-          "text": "A weir body has weight W exactly equal to uplift U, with no other vertical forces or anchorage. What follows for its vertical foundation reaction?",
+          "text": "A weir constructed so that the weight of the structure completely balances the upward seepage force of water is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Reaction equal to W, since seepage does not affect contact"
+              "text": "A non-gravity weir"
             },
             {
               "key": "b",
-              "text": "Reaction equal to U, with a flotation safety factor of two"
+              "text": "A barrage"
             },
             {
               "key": "c",
-              "text": "Reaction equal to W plus U, with additional friction available"
+              "text": "A sheet pile weir"
             },
             {
               "key": "d",
-              "text": "Zero reaction and no reserve against flotation"
+              "text": "A gravity weir"
             }
           ],
           "answer": "d",
-          "explanation": "Vertical equilibrium gives \\[N = W - U = 0\\] A gravity weir relies principally on self-weight, but equality of weight and uplift is neutral flotation under these assumptions, not a definition of safe gravity action.<p>Source note: Page 28 point 56: corrected the unsafe claim that complete weight-uplift balance defines a gravity weir.</p><p>Capsule 4th ed., p. 28; topic 7 point 56.</p>",
+          "explanation": "In a gravity weir the floor is thick and heavy enough for its own weight to balance the uplift from seepage; a non-gravity weir resists uplift by the bending strength of a reinforced concrete floor.<p>Capsule 4th ed., p. 28; topic 7 point 56.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2722,32 +2722,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00057",
           "src": "CAP4-07-00057",
-          "text": "A concrete structure weighs 1000 kN and has 300 kN uplift. With no other vertical forces, no cohesion and base friction coefficient 0.60, what sliding resistance comes from friction?",
+          "text": "______ is important for the stability of a concrete dam.",
           "options": [
             {
               "key": "a",
-              "text": "420 kN"
+              "text": "Uplift pressure"
             },
             {
               "key": "b",
-              "text": "600 kN"
+              "text": "Air temperature at the crest only"
             },
             {
               "key": "c",
-              "text": "180 kN"
+              "text": "Rainfall on the dam top"
             },
             {
               "key": "d",
-              "text": "780 kN"
+              "text": "The colour of the concrete"
             }
           ],
           "answer": "a",
-          "explanation": "The effective compressive normal force is \\(1000 - 300 = 700\\) kN, so the frictional resistance is \\[0.60 \\times 700 = 420\\ \\text{kN}\\] Ignoring uplift gives 600 kN and overstates the available resistance; a full stability assessment needs the driving forces too.<p>Capsule 4th ed., p. 28; topic 7 point 57.</p>",
+          "explanation": "Water seeping under a concrete dam exerts uplift pressure on its base, which reduces the effective weight resisting sliding and overturning, so it is a key force in the stability analysis.<p>Capsule 4th ed., p. 28; topic 7 point 57.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2760,32 +2760,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00058",
           "src": "CAP4-07-00058",
-          "text": "A horizontal impervious floor is 42 m long with thin upstream and downstream cutoffs 4 m and 7 m deep. Counting both faces of each cutoff, what is Lane's weighted creep length?",
+          "text": "Lane's creep length formula is ______, where \\(d_1\\), \\(d_2\\) are the upstream and downstream cut-off depths and \\(L\\) is the floor length.",
           "options": [
             {
               "key": "a",
-              "text": "78 m"
+              "text": "\\(\\dfrac{2d_1 + L + 2d_2}{3}\\)"
             },
             {
               "key": "b",
-              "text": "25 m"
+              "text": "\\(d_1 + \\dfrac{L}{3} + d_2\\)"
             },
             {
               "key": "c",
-              "text": "64 m"
+              "text": "\\(2d_1 + L + 2d_2\\)"
             },
             {
               "key": "d",
-              "text": "36 m"
+              "text": "\\(2d_1 + \\dfrac{L}{3} + 2d_2\\)"
             }
           ],
           "answer": "d",
-          "explanation": "Vertical contact is \\[2 \\times 4 + 2 \\times 7 = 22\\ \\text{m}\\] Lane weights horizontal contact by one-third, adding \\(\\dfrac{42}{3} = 14\\) m, so the weighted length is \\[22 + 14 = 36\\ \\text{m}\\] Bligh would give the unweighted \\(22 + 42 = 64\\) m.<p>Source note: Page 28 point 58: complete page text shows the denominator 3 below L, which the extracted numbered point omits. This agrees with the corrected nearby Lane notes.</p><p>Capsule 4th ed., p. 28; topic 7 point 58.</p>",
+          "explanation": "Lane gives horizontal creep one-third the weight of vertical creep, so the weighted creep length is \\(2d_1 + \\dfrac{L}{3} + 2d_2\\), with each cut-off counted on both faces; Bligh's creep length is \\(2d_1 + L + 2d_2\\).<p>Capsule 4th ed., p. 28; topic 7 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2798,32 +2798,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00059",
           "src": "CAP4-07-00059",
-          "text": "For Khosla's ideal horizontal floor with a single downstream end pile, define alpha = b/d and lambda = [1 + sqrt(1 + alpha^2)]/2. Which expression gives the exit gradient for retained head H?",
+          "text": "According to Khosla's theory, the exit gradient \\(G_E\\) is given by ______.",
           "options": [
             {
               "key": "a",
-              "text": "H/[pi d sqrt(lambda)]"
+              "text": "\\(\\dfrac{H}{d} \\cdot \\dfrac{1}{\\pi\\sqrt{\\lambda}}\\)"
             },
             {
               "key": "b",
-              "text": "pi H/[d sqrt(lambda)]"
+              "text": "\\(\\dfrac{d}{H} \\cdot \\dfrac{1}{\\pi\\sqrt{\\lambda}}\\)"
             },
             {
               "key": "c",
-              "text": "H/[pi d lambda]"
+              "text": "\\(\\dfrac{H}{d} \\cdot \\dfrac{1}{\\pi\\lambda}\\)"
             },
             {
               "key": "d",
-              "text": "H sqrt(lambda)/(pi d)"
+              "text": "\\(\\dfrac{H}{d} \\cdot \\dfrac{\\sqrt{\\lambda}}{\\pi}\\)"
             }
           ],
           "answer": "a",
-          "explanation": "The standard end-pile result is \\[G_E = \\dfrac{H}{\\pi d\\sqrt{\\lambda}}\\] \\(H\\) and \\(d\\) use the same length unit, making the result dimensionless. \\(\\lambda\\) is determined by floor-to-pile geometry, not a hydraulic-conductivity or soil-permeability factor.<p>Source note: Page 28 point 59: the PDF text damages the radical. Formula restored from the explicit isolated-end-pile relation in nearby corrected notes; no visual verification claimed.</p><p>Capsule 4th ed., p. 28; topic 7 point 59.</p>",
+          "explanation": "Khosla's exit gradient is \\(G_E = \\dfrac{H}{d} \\cdot \\dfrac{1}{\\pi\\sqrt{\\lambda}}\\), where \\(H\\) is the head, \\(d\\) the depth of the downstream cut-off, and \\(\\lambda = \\dfrac{1 + \\sqrt{1 + \\alpha^2}}{2}\\) with \\(\\alpha = \\dfrac{b}{d}\\).<p>Capsule 4th ed., p. 28; topic 7 point 59.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2841,27 +2841,27 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-07-00060",
           "src": "CAP4-07-00060",
-          "text": "Which pair of hydraulic checks is central when choosing downstream cutoff penetration below a barrage floor?",
+          "text": "The depth of the downstream vertical cut-off is governed by two considerations: ______.",
           "options": [
             {
               "key": "a",
-              "text": "Mean floor uplift and crest discharge coefficient alone"
+              "text": "Pond level and crest length"
             },
             {
               "key": "b",
-              "text": "Total creep length and upstream pond level alone"
+              "text": "Silt grade and critical velocity ratio"
             },
             {
               "key": "c",
-              "text": "Permissible exit gradient and embedment after design scour"
+              "text": "Scour depth and safe exit gradient"
             },
             {
               "key": "d",
-              "text": "Mean scour depth and canal-head sill elevation alone"
+              "text": "Canal discharge and freeboard"
             }
           ],
           "answer": "c",
-          "explanation": "The cutoff must control emerging seepage gradients while remaining effective after scour removes surrounding bed material. Structural strength, construction, durability and soil variability also matter; naming two hydraulic checks does not exhaust design requirements.<p>Source note: Page 28 point 60: source supplies only a count of two. The two central hydraulic considerations are stated from nearby corrected notes without claiming an exhaustive two-item design rule.</p><p>Capsule 4th ed., p. 28; topic 7 point 60.</p>",
+          "explanation": "The downstream cut-off must reach below the maximum scour depth, and it must be deep enough to keep the exit gradient within the safe value; these two considerations govern its depth.<p>Capsule 4th ed., p. 28; topic 7 point 60.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2874,20 +2874,20 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00072",
           "src": "CAP4-07-00072",
-          "text": "Sediment-rich lower river layers are intercepted and led toward undersluices before they enter a canal head regulator. What is this device called?",
+          "text": "The structure provided at the head regulator to remove silt is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Canal settling basin"
+              "text": "Cross regulator"
             },
             {
               "key": "b",
-              "text": "Canal cross regulator"
+              "text": "Canal escape"
             },
             {
               "key": "c",
@@ -2895,11 +2895,11 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             },
             {
               "key": "d",
-              "text": "Canal silt ejector"
+              "text": "Silt ejector"
             }
           ],
           "answer": "c",
-          "explanation": "An excluder acts in the river approach to keep sediment-rich flow out of the canal. An ejector removes sediment after entry into the canal. Location in the sediment pathway, rather than merely the word removal, distinguishes them.<p>Capsule 4th ed., p. 28; topic 7 point 75.</p>",
+          "explanation": "A silt excluder, built in the river bed in front of the head regulator, diverts the silt-laden bottom layers to the under-sluices so that less silt enters the canal; a silt ejector removes silt already in the canal.<p>Capsule 4th ed., p. 28; topic 7 point 75.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2912,32 +2912,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00096",
           "src": "CAP4-07-00096",
-          "text": "A canal head regulator has gates closing onto an intake sill raised above the adjacent undersluice crest. What is the main sediment-related reason for the raised sill?",
+          "text": "In a head regulator, there is no provision of gates at the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Reduce admission of sediment-rich near-bed flow"
+              "text": "Bed level"
             },
             {
               "key": "b",
-              "text": "Increase undersluice sill height to match the canal sill"
+              "text": "Top of the breast wall"
             },
             {
               "key": "c",
-              "text": "Replace the upstream silt-exclusion system entirely"
+              "text": "Pier tops"
             },
             {
               "key": "d",
-              "text": "Pass the coarser bottom load preferentially into the canal"
+              "text": "Crest level"
             }
           ],
           "answer": "a",
-          "explanation": "A raised canal-intake sill helps avoid the most sediment-rich lower river layers, while low undersluices provide a flushing path. Gates still control admission at the sill. The relative levels do not justify saying that head regulators have no gates.<p>Source note: Page 29 point 97: corrected the ambiguous no-gates-at-bed statement using a defined raised-sill layout; no absolute gate prohibition is taught.</p><p>Capsule 4th ed., p. 29; topic 7 point 97.</p>",
+          "explanation": "The crest (sill) of a head regulator is raised above the river bed so that silt-laden bottom water is not admitted; the gates close on this raised crest, and none are provided at bed level.<p>Capsule 4th ed., p. 29; topic 7 point 97.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2950,32 +2950,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00105",
           "src": "CAP4-07-00105",
-          "text": "Why is an undersluice crest commonly placed near riverbed level and below the canal intake sill?",
+          "text": "The crest of the under-sluice portion of diversion headworks is kept at the ______.",
           "options": [
             {
               "key": "a",
-              "text": "To obtain canal command by raising the undersluice pond alone"
+              "text": "Canal full supply level"
             },
             {
               "key": "b",
-              "text": "To hold bottom sediment permanently in the intake pocket"
+              "text": "Pond level"
             },
             {
               "key": "c",
-              "text": "To provide a low-level path for sediment-rich flushing flow"
+              "text": "Bed level of the river"
             },
             {
               "key": "d",
-              "text": "To admit the heaviest bed material preferentially into the canal"
+              "text": "Crest level of the main weir"
             }
           ],
           "answer": "c",
-          "explanation": "Low undersluices can draw sediment-rich bottom water away from the intake pocket while the raised canal sill admits higher layers. Effective flushing still needs sufficient head and transport capacity. Exact crest elevation follows the surveyed bed and design layout.<p>Source note: Page 29 point 107: &#39;at bed level&#39; is a usual relative arrangement, not an immutable elevation in every mobile-bed river.</p><p>Capsule 4th ed., p. 29; topic 7 point 107.</p>",
+          "explanation": "The under-sluices have their crest at the river bed level, lower than the main weir crest, so they can scour away the silt deposited in front of the canal head regulator.<p>Capsule 4th ed., p. 29; topic 7 point 107.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2988,12 +2988,50 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00110",
           "src": "CAP4-07-00110",
-          "text": "A preliminary undersluice brief requires the maximum of twice a 20-cumec canal flow, 12% of a 1000-cumec flood and an 80-cumec winter passage requirement. What numerical requirement governs before separate head-dependent rating checks?",
+          "text": "The design discharge of under-sluices should be the maximum of ______.",
+          "options": [
+            {
+              "key": "a",
+              "text": "Twice the canal discharge, 10–15% of the maximum flood, and the winter flow"
+            },
+            {
+              "key": "b",
+              "text": "The canal discharge alone"
+            },
+            {
+              "key": "c",
+              "text": "50% of the maximum flood"
+            },
+            {
+              "key": "d",
+              "text": "The average monsoon flow"
+            }
+          ],
+          "answer": "a",
+          "explanation": "Under-sluices must pass at least double the canal discharge for effective scouring, about 10 to 15% of the maximum flood discharge, and the winter flow; the largest of these is adopted.<p>Capsule 4th ed., p. 29; topic 7 point 112.</p>",
+          "source": {
+            "kind": "capsule",
+            "edition": 4,
+            "reference": "Capsule 4th ed., p. 29; topic 7 point 112",
+            "pages": [
+              29
+            ],
+            "points": [
+              "capsule-t07-p029-n112"
+            ]
+          },
+          "topic": "ACiE0703",
+          "kind": "recall"
+        },
+        {
+          "id": "CAP4-07-00111",
+          "src": "CAP4-07-00111",
+          "text": "A canal carries 20 cumecs, the maximum flood discharge is 1000 cumecs and the winter flow is 80 cumecs. Taking 12% of the flood, the design discharge of the under-sluices is ______.",
           "options": [
             {
               "key": "a",
@@ -3005,15 +3043,15 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             },
             {
               "key": "c",
-              "text": "80 cumecs"
+              "text": "240 cumecs"
             },
             {
               "key": "d",
-              "text": "240 cumecs"
+              "text": "80 cumecs"
             }
           ],
           "answer": "a",
-          "explanation": "The three specified requirements, in cumecs, are \\[2 \\times 20 = 40\\] \\[0.12 \\times 1000 = 120\\] and 80. Their maximum is 120, not their sum of 240. The structure must still pass each requirement at the head and gate state applicable to that case.<p>Source note: Page 29 point 112: 12% is an explicit selection within the source&#39;s 10-15% preliminary range. Neither that range nor twice-canal flow is claimed as a universal adopted standard.</p><p>Capsule 4th ed., p. 29; topic 7 point 112.</p>",
+          "explanation": "The three requirements are \\(2 \\times 20 = 40\\), \\(0.12 \\times 1000 = 120\\) and 80 cumecs. The design discharge is the maximum of these, 120 cumecs.<p>Capsule 4th ed., p. 29; topic 7 point 112.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3029,67 +3067,29 @@ window.CIVIL_SET_DATA["capsule-07"] = {
           "kind": "calculation"
         },
         {
-          "id": "CAP4-07-00111",
-          "src": "CAP4-07-00111",
-          "text": "Undersluices pass 120 cumecs at flood head, but must also pass 80 cumecs at a much smaller winter head. Does the flood-capacity result alone prove winter adequacy?",
-          "options": [
-            {
-              "key": "a",
-              "text": "No, the winter head and gate-opening rating must be checked"
-            },
-            {
-              "key": "b",
-              "text": "Yes, any larger flood discharge proves every lower-head case"
-            },
-            {
-              "key": "c",
-              "text": "No, winter flow must always be added to flood flow"
-            },
-            {
-              "key": "d",
-              "text": "Yes, undersluice discharge is independent of retained head"
-            }
-          ],
-          "answer": "a",
-          "explanation": "The available flow through a given opening depends on head and flow regime. A capacity of 120 at a high flood head does not establish 80 at a lower winter head. Separate operating cases prevent a simple maximum-of-numbers rule from hiding a low-head deficiency.<p>Source note: Page 29 point 112: separately tests the winter-flow qualification in the multi-condition source entry.</p><p>Capsule 4th ed., p. 29; topic 7 point 112.</p>",
-          "source": {
-            "kind": "capsule",
-            "edition": 4,
-            "reference": "Capsule 4th ed., p. 29; topic 7 point 112",
-            "pages": [
-              29
-            ],
-            "points": [
-              "capsule-t07-p029-n112"
-            ]
-          },
-          "topic": "ACiE0703",
-          "kind": "application"
-        },
-        {
           "id": "CAP4-07-00115",
           "src": "CAP4-07-00115",
-          "text": "Which regulator is installed at the entrance of a canal taking off directly from a river to admit, meter or stop its supply?",
+          "text": "The regulator provided at the head of a canal off-taking from a river is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Canal head regulator"
+              "text": "Head regulator"
             },
             {
               "key": "b",
-              "text": "Drain outlet non-return valve"
+              "text": "Tail regulator"
             },
             {
               "key": "c",
-              "text": "Parent-canal cross regulator"
+              "text": "Cross regulator"
             },
             {
               "key": "d",
-              "text": "Canal escape regulator"
+              "text": "Escape regulator"
             }
           ],
           "answer": "a",
-          "explanation": "The head regulator controls river-to-canal admission. A cross regulator instead spans a parent canal to control passage and upstream level; an escape controls surplus disposal. Position in the water route distinguishes these related functions.<p>Capsule 4th ed., p. 29; topic 7 point 116.</p>",
+          "explanation": "The head regulator at the entrance of a canal from the river admits, controls and can stop the supply; cross regulators control levels along the canal, and escapes dispose of surplus water.<p>Capsule 4th ed., p. 29; topic 7 point 116.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3102,32 +3102,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00117",
           "src": "CAP4-07-00117",
-          "text": "For an ideal Khosla downstream end-pile case, retained head H = 6 m, pile depth d = 4 m and the explicitly geometric parameter lambda = 1.5. Using G_E = H/[pi d sqrt(lambda)], what is the exit gradient?",
+          "text": "An embankment has a hydraulic head of 6 m, a downstream cut-off depth of 4 m and Khosla's factor \\(\\lambda = 1.5\\). The exit gradient by Khosla's theory is about ______.",
           "options": [
             {
               "key": "a",
-              "text": "1.500"
+              "text": "1.50"
             },
             {
               "key": "b",
-              "text": "0.318"
+              "text": "0.48"
             },
             {
               "key": "c",
-              "text": "0.403"
+              "text": "0.24"
             },
             {
               "key": "d",
-              "text": "0.390"
+              "text": "0.39"
             }
           ],
           "answer": "d",
-          "explanation": "Substitution gives \\[\\begin{aligned} G_E &amp;= \\dfrac{6}{\\pi \\times 4 \\times \\sqrt{1.5}} \\\\ &amp;= 0.389848 \\end{aligned}\\] rounding to 0.390. \\(\\lambda\\) describes floor and pile geometry. If 1.5 were \\(\\alpha = \\dfrac{b}{d}\\) instead, \\(\\lambda\\) would be different and the result would be 0.403332; conductivity is neither parameter.<p>Source note: Page 29 point 118: the source calls 1.5 a soil-permeability factor and gives only a characteristic path depth, so its original exit gradient is not uniquely derivable. The new stem explicitly supplies d and geometric lambda; 0.38 is not correct rounding under that repaired model.</p><p>Capsule 4th ed., p. 29; topic 7 point 118.</p>",
+          "explanation": "Khosla's exit gradient is \\[\\begin{aligned} G_E &amp;= \\dfrac{H}{d} \\cdot \\dfrac{1}{\\pi\\sqrt{\\lambda}} \\\\ &amp;= \\dfrac{6}{4} \\times \\dfrac{1}{\\pi\\sqrt{1.5}} \\\\ &amp;= 0.39 \\end{aligned}\\]<p>Capsule 4th ed., p. 29; topic 7 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3145,27 +3145,27 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-07-00123",
           "src": "CAP4-07-00123",
-          "text": "A barrage floor has excessive emerging seepage gradient at its downstream toe. What is the principal seepage purpose of a properly designed downstream sheet pile?",
+          "text": "The purpose of providing the downstream sheet pile in a barrage is to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Supply structural anchorage without changing the seepage field"
+              "text": "Store water"
             },
             {
               "key": "b",
-              "text": "Lengthen the emergence path and reduce local exit gradient"
+              "text": "Reduce the exit gradient"
             },
             {
               "key": "c",
-              "text": "Keep upstream pond head but eliminate all underside uplift"
+              "text": "Raise the pond level"
             },
             {
               "key": "d",
-              "text": "Reduce local gradient by lowering soil conductivity alone"
+              "text": "Increase the uplift pressure"
             }
           ],
           "answer": "b",
-          "explanation": "A downstream cutoff changes the seepage field and spreads the emergence path, reducing the local exit gradient. It may retain substantial pressures beneath parts of the floor, so uplift, filters and penetration after scour must still be assessed together.<p>Source note: Page 30 point 121 has only an incomplete question and no answer. The hydraulic purpose is supplied from the corrected nearby cutoff notes.</p><p>Capsule 4th ed., p. 30; topic 7 point 121.</p>",
+          "explanation": "The downstream sheet pile lengthens the seepage path at the exit and keeps the exit gradient within the safe limit, preventing piping; it also protects the floor against scour.<p>Capsule 4th ed., p. 30; topic 7 point 121.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3178,7 +3178,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0703",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -3190,27 +3190,27 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-07-00019",
           "src": "CAP4-07-00019",
-          "text": "A preliminary bank-protection check follows the IRC 89:1997 Section 7.4.5 assumption for a right-angle bend: maximum scour depth is twice the mean scour depth of 3.0 m below HFL. If HFL is RL 104.0 m, what scour-bed level follows?",
+          "text": "According to Lacey, if \\(D\\) is the depth of scour in regime flow, the depth of scour at a right-angled bend is ______.",
           "options": [
             {
               "key": "a",
-              "text": "RL 101.0 m"
+              "text": "\\(1.25D\\)"
             },
             {
               "key": "b",
-              "text": "RL 98.0 m"
+              "text": "\\(2.00D\\)"
             },
             {
               "key": "c",
-              "text": "RL 102.5 m"
+              "text": "\\(1.75D\\)"
             },
             {
               "key": "d",
-              "text": "RL 110.0 m"
+              "text": "\\(1.50D\\)"
             }
           ],
           "answer": "b",
-          "explanation": "The assumed local depth is \\(2.0 \\times 3.0 = 6.0\\) m below HFL, hence \\[\\text{RL} = 104.0 - 6.0 = 98.0\\ \\text{m}\\] The multiplier is applied to depth from the stated water datum, not automatically to extra erosion below the existing bed.<p>Source note: Page 27 point 20: the reviewed text of IRC 89:1997 Section 7.4.5 supports 2.00 times mean scour depth for bank protection at a right-angle bend, with depth measured below HFL. This is edition- and scope-specific guidance, not current Nepal adoption or a universal river law; normal flow depth is not the mean scour depth.</p><p>Capsule 4th ed., p. 27; topic 7 point 20.</p>",
+          "explanation": "Lacey's regime scour depth \\(D\\) is multiplied according to the straightness of the reach: about 1.25 for a straight reach, 1.5 for a moderate bend, 1.75 for a severe bend and 2.00 for a right-angled bend.<p>Capsule 4th ed., p. 27; topic 7 point 20.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3223,32 +3223,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00055",
           "src": "CAP4-07-00055",
-          "text": "One flow class transports bed material at 10 kg/s for 100 hours annually; a rarer class transports 50 kg/s for 10 hours. Which class contributes more annual sediment transport in this simplified effective-discharge comparison?",
+          "text": "A quantum of discharge with high enough magnitude and frequency to bring about changes to the river boundary and surrounding area is called the ______.",
           "options": [
             {
               "key": "a",
-              "text": "The 50 kg/s class: 1.8 million kg"
+              "text": "Design flood"
             },
             {
               "key": "b",
-              "text": "The 50 kg/s class: 18.0 million kg"
+              "text": "Minimum discharge"
             },
             {
               "key": "c",
-              "text": "Both classes: 3.6 million kg each"
+              "text": "Base flow"
             },
             {
               "key": "d",
-              "text": "The 10 kg/s class: 3.6 million kg"
+              "text": "Dominant discharge"
             }
           ],
           "answer": "d",
-          "explanation": "Transported mass equals rate times duration: \\[\\begin{aligned} &amp;10 \\times 100 \\times 3600 \\\\ &amp;= 3.6 \\times 10^6\\ \\text{kg} \\end{aligned}\\] \\[\\begin{aligned} &amp;50 \\times 10 \\times 3600 \\\\ &amp;= 1.8 \\times 10^6\\ \\text{kg} \\end{aligned}\\] The frequent class contributes 3.6 million kg against 1.8 million kg. Channel-forming importance depends on magnitude and recurrence or duration, not automatically the largest instantaneous discharge.<p>Source note: Page 28 point 55: uses an explicit effective-discharge illustration; it does not identify a universal dominant flood return period.</p><p>Capsule 4th ed., p. 28; topic 7 point 55.</p>",
+          "explanation": "The dominant (channel-forming) discharge is the flow whose combined magnitude and frequency does the most work in shaping the river channel and its surroundings.<p>Capsule 4th ed., p. 28; topic 7 point 55.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3261,32 +3261,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00061",
           "src": "CAP4-07-00061",
-          "text": "A river-training scheme is primarily intended to pass design floods with tolerable inundation and bank damage. Which traditional training category best describes this objective?",
+          "text": "River training work that deals with flood control is training for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Field drainage for root-zone aeration"
+              "text": "Irrigation"
             },
             {
               "key": "b",
-              "text": "Low-water training for navigation depth"
+              "text": "Depth"
             },
             {
               "key": "c",
-              "text": "Mean-water training for sediment balance"
+              "text": "Sediment"
             },
             {
               "key": "d",
-              "text": "High-water training for discharge"
+              "text": "Discharge"
             }
           ],
           "answer": "d",
-          "explanation": "High-water or discharge training addresses flood conveyance and protection. Low-water training focuses on navigable depth, while mean-water training concerns sediment behavior. Confinement may transfer flood risk rather than remove flood volume.<p>Capsule 4th ed., p. 28; topic 7 point 61.</p>",
+          "explanation": "High-water training, or training for discharge, keeps floods within safe limits; low-water training is training for depth, and mean-water training is training for sediment.<p>Capsule 4th ed., p. 28; topic 7 point 61.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3299,32 +3299,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00062",
           "src": "CAP4-07-00062",
-          "text": "Which embankment is not a river-training work by its stated primary function?",
+          "text": "Which of the following is not a river-training structure?",
           "options": [
             {
               "key": "a",
-              "text": "A flood levee limiting river inundation of protected land"
+              "text": "Spur"
             },
             {
               "key": "b",
-              "text": "A canal bank retaining water within an irrigation channel"
+              "text": "Canal bund"
             },
             {
               "key": "c",
-              "text": "A guide bund steering river flow into bridge openings"
+              "text": "Guide bund"
             },
             {
               "key": "d",
-              "text": "A spur redirecting river current away from a bank"
+              "text": "Marginal embankment"
             }
           ],
           "answer": "b",
-          "explanation": "The canal bank's stated job is canal containment. Guide bunds, levees and spurs act directly on river flow or its floodplain. A real embankment can have combined functions, so classification follows its purpose rather than its material alone.<p>Capsule 4th ed., p. 28; topic 7 point 62.</p>",
+          "explanation": "Guide bunds, spurs and marginal embankments control the course and floods of a river; a canal bund only holds water within a canal, so it is not a river-training structure.<p>Capsule 4th ed., p. 28; topic 7 point 62.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3337,32 +3337,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00063",
           "src": "CAP4-07-00063",
-          "text": "A bank-toe apron must settle onto a developing scour face without behaving as one rigid slab. Which pair of materials can form such flexible protection when properly designed?",
+          "text": "A launching apron is made of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Unreinforced monolithic concrete or bonded brick masonry"
+              "text": "Plain cement concrete slabs"
             },
             {
               "key": "b",
-              "text": "Bare filter fabric alone or impermeable membrane alone"
+              "text": "Brick masonry in cement mortar"
             },
             {
               "key": "c",
-              "text": "Mortar-bound stone pitching or a continuous grouted-rock slab"
+              "text": "Timber planks"
             },
             {
               "key": "d",
-              "text": "Loose graded stone or suitably connected gabion mattresses"
+              "text": "Gabions, stone and geotextile fabric"
             }
           ],
           "answer": "d",
-          "explanation": "Loose stone can rearrange as the bed scours; designed gabion mattresses can deform and maintain coverage. Gabions are not the only solution, and connections, stone stability and bed behavior must permit launching. A rigid bonded slab does not launch in the same way.<p>Source note: Page 28 points 63 and 64 overlap on gabions. This shared question covers gabion and stone armour; a separate point-63 question covers geotextile function.</p><p>Capsule 4th ed., p. 28; topic 7 point 63; topic 7 point 64.</p>",
+          "explanation": "A launching apron must be flexible so that it can settle and launch down the scour face, so it is built of loose stone, gabions and geotextile fabric rather than rigid concrete or masonry.<p>Capsule 4th ed., p. 28; topic 7 point 63; topic 7 point 64.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3376,32 +3376,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00064",
           "src": "CAP4-07-00064",
-          "text": "A geotextile is installed beneath stone or gabion toe protection. What is its intended filter role when correctly selected and detailed?",
+          "text": "A launching apron may be made of ______, which is flexible and settles into the scour hole.",
           "options": [
             {
               "key": "a",
-              "text": "Provide the rigid structural support for launching mattresses"
+              "text": "Steel plates"
             },
             {
               "key": "b",
-              "text": "Provide a watertight membrane that traps backfill water"
+              "text": "Reinforced concrete slabs"
             },
             {
               "key": "c",
-              "text": "Replace the stone weight needed to resist flow drag"
+              "text": "Brick masonry"
             },
             {
               "key": "d",
-              "text": "Retain soil while permitting drainage through the layer"
+              "text": "Gabions"
             }
           ],
           "answer": "d",
-          "explanation": "A compatible geotextile can limit soil migration while allowing water through. It does not automatically replace heavy armour or remain intact under arbitrary launching deformation. Filter, armour and connections must be designed as a compatible system.<p>Source note: Page 28 point 63: distinguished geotextile filtration from stone/gabion armour rather than treating all listed materials as interchangeable.</p><p>Capsule 4th ed., p. 28; topic 7 point 63.</p>",
+          "explanation": "Gabions, wire-mesh boxes filled with stone, are flexible and heavy, so a gabion launching apron settles into the scour hole and protects the toe of the bank.<p>Capsule 4th ed., p. 28; topic 7 point 63.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3414,32 +3414,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00065",
           "src": "CAP4-07-00065",
-          "text": "Flood currents approach a bridge obliquely and threaten to bypass its intended waterway. What is the principal role of guide banks?",
+          "text": "Guide banks are provided to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Intercept bed load before it enters a canal intake"
+              "text": "Exclude silt from canals"
             },
             {
               "key": "b",
-              "text": "Lead the current through the intended opening"
+              "text": "Train the flow of a river along a specified course"
             },
             {
               "key": "c",
-              "text": "Maintain the canal pond level by gated regulation"
+              "text": "Raise the pond level"
             },
             {
               "key": "d",
-              "text": "Reduce the incoming flood peak by reservoir detention"
+              "text": "Store flood water"
             }
           ],
           "answer": "b",
-          "explanation": "Guide banks organize approach and departure flow and protect the crossing approaches. They steer and confine flow locally; excessive constriction can instead increase afflux and scour, so waterway and morphology must be checked.<p>Capsule 4th ed., p. 28; topic 7 point 65.</p>",
+          "explanation": "Guide banks lead the river flow smoothly through a bridge or barrage opening along a specified course, preventing outflanking and protecting the approaches.<p>Capsule 4th ed., p. 28; topic 7 point 65.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3452,32 +3452,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00066",
           "src": "CAP4-07-00066",
-          "text": "Why is the upstream arm often longer than the downstream arm in a conventional guide-bank layout?",
+          "text": "The length of the upstream guide bank is ______ the length of the downstream guide bank.",
           "options": [
             {
               "key": "a",
-              "text": "Its length is set by a universal two-to-one arm ratio"
+              "text": "Half of"
             },
             {
               "key": "b",
-              "text": "It progressively captures and aligns the approaching current"
+              "text": "Greater than"
             },
             {
               "key": "c",
-              "text": "It serves chiefly as storage that attenuates the flood hydrograph"
+              "text": "Equal to"
             },
             {
               "key": "d",
-              "text": "It dissipates the exit jet after flow leaves the bridge"
+              "text": "Less than"
             }
           ],
           "answer": "b",
-          "explanation": "A longer upstream reach can intercept an oblique approach and guide it gradually toward the waterway. Downstream protection manages expansion and local attack. Actual proportions depend on the site, so the usual length inequality is not universal.<p>Source note: Page 28 points 66 and 67 are identical length comparisons and are merged, with the conventional rather than absolute scope stated.</p><p>Capsule 4th ed., p. 28; topic 7 point 66; topic 7 point 67.</p>",
+          "explanation": "The upstream guide bank must gather and align the approaching flow over a long reach, so it is made longer than the downstream guide bank, which only guides the flow leaving the opening.<p>Capsule 4th ed., p. 28; topic 7 point 66; topic 7 point 67.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3491,32 +3491,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00097",
           "src": "CAP4-07-00097",
-          "text": "A survey labels a river 'snow-fed' and one of its reaches 'steep, confined and boulder-bedded'. What do these descriptions classify, respectively?",
+          "text": "River reaches can be classified on the basis of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Water-source regime and local reach characteristics"
+              "text": "Origin"
             },
             {
               "key": "b",
-              "text": "Local reach geometry and irrigation efficiency"
+              "text": "The colour of the water"
             },
             {
               "key": "c",
-              "text": "Sediment concentration and barrage gate setting"
+              "text": "The crops grown nearby"
             },
             {
               "key": "d",
-              "text": "Flood return period and crop water requirement"
+              "text": "The number of bridges"
             }
           ],
           "answer": "a",
-          "explanation": "Snow-fed describes an important origin of the river's water supply. Gradient, confinement and bed material describe the reach itself. A single river may pass through very different reaches, so origin alone cannot define all their hydraulic characteristics.<p>Source note: Page 29 point 98: clarified the distinction between source-based river classification and local reach classification.</p><p>Capsule 4th ed., p. 29; topic 7 point 98.</p>",
+          "explanation": "Rivers and their reaches can be classified by origin, such as snow-fed, rain-fed or spring-fed, as well as by stage, such as rocky, boulder, alluvial and tidal reaches.<p>Capsule 4th ed., p. 29; topic 7 point 98.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3529,32 +3529,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00098",
           "src": "CAP4-07-00098",
-          "text": "A normal-scour estimate is 5 m below HFL at RL 100 m. The existing bed is RL 97 m. What are the estimated scoured-bed RL and additional lowering below the existing bed?",
+          "text": "The general depth of scour calculated by Lacey's formula represents the depth below the ______ in the river.",
           "options": [
             {
               "key": "a",
-              "text": "RL 95 m and 5 m"
+              "text": "Low water level"
             },
             {
               "key": "b",
-              "text": "RL 102 m and minus 5 m"
+              "text": "Ground level"
             },
             {
               "key": "c",
-              "text": "RL 95 m and 2 m"
+              "text": "Maximum flood level"
             },
             {
               "key": "d",
-              "text": "RL 92 m and 5 m"
+              "text": "River bed"
             }
           ],
           "answer": "c",
-          "explanation": "The estimated bed level and the additional lowering are \\[100 - 5 = \\text{RL } 95\\ \\text{m}\\] \\[97 - 95 = 2\\ \\text{m}\\] A scour depth from flood-water level must not be subtracted again from the old bed.<p>Capsule 4th ed., p. 29; topic 7 point 99.</p>",
+          "explanation": "Lacey's normal scour depth is measured from the highest flood level downward, so the scoured bed level is the flood level minus the scour depth, not the existing bed minus it.<p>Capsule 4th ed., p. 29; topic 7 point 99.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3567,32 +3567,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00099",
           "src": "CAP4-07-00099",
-          "text": "Where is a conventional launching apron initially placed so that it can protect a bank toe as the adjacent riverbed scours?",
+          "text": "A launching apron is typically located in hydraulic structures at ______ level.",
           "options": [
             {
               "key": "a",
-              "text": "Only on the bank slope above the original bed"
+              "text": "Crest"
             },
             {
               "key": "b",
-              "text": "On the bed beyond the protected bank toe"
+              "text": "Bed"
             },
             {
               "key": "c",
-              "text": "Along the landside toe outside the river channel"
+              "text": "Pond"
             },
             {
               "key": "d",
-              "text": "Buried wholly below the predicted deepest scour level"
+              "text": "Flood"
             }
           ],
           "answer": "b",
-          "explanation": "The apron begins at the bed near and beyond the toe. As bed support is removed, suitable flexible material settles onto the new scour face. Crest protection or an upstream water-surface location cannot provide the same launching geometry.<p>Capsule 4th ed., p. 29; topic 7 point 100.</p>",
+          "explanation": "A launching apron of loose stone is laid on the river bed at the toe of the bank or guide bund; as the bed scours, the stones launch down and cover the scour slope.<p>Capsule 4th ed., p. 29; topic 7 point 100.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3605,32 +3605,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00102",
           "src": "CAP4-07-00102",
-          "text": "A sediment-carrying alluvial river erodes an outer bend and builds a point bar on the inner bend. Which interpretation fits this observation?",
+          "text": "Meandering is not possible in ______.",
           "options": [
             {
               "key": "a",
-              "text": "Meander adjustment can occur in mobile alluvial boundaries"
+              "text": "An alluvial channel carrying heavy sediments"
             },
             {
               "key": "b",
-              "text": "Outer erosion and inner deposition imply uniform bed aggradation"
+              "text": "A river in its trough stage with erodible banks"
             },
             {
               "key": "c",
-              "text": "Point-bar growth establishes that sediment transport has ceased"
+              "text": "A mature river in a wide valley"
             },
             {
               "key": "d",
-              "text": "The observation necessarily identifies a braided multi-channel reach"
+              "text": "A stable river on a flat plain"
             }
           ],
           "answer": "a",
-          "explanation": "Curvature, secondary circulation, bank resistance and sediment transport can produce outer-bank erosion and inner-bank deposition. Meandering is entirely possible in alluvial rivers; not all alluvial channels must meander, since braided and straighter forms also occur.<p>Source note: Page 29 point 103: reversed the false impossibility claim without asserting that all alluvial channels meander.</p><p>Capsule 4th ed., p. 29; topic 7 point 103.</p>",
+          "explanation": "A channel carrying a heavy sediment load keeps depositing and splits into braided channels instead of forming a single meandering course, so meandering is not possible there.<p>Capsule 4th ed., p. 29; topic 7 point 103.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3643,32 +3643,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00103",
           "src": "CAP4-07-00103",
-          "text": "In the conventional orientation mnemonic, a spur's bank-root-to-tip vector points upstream of the bank normal. Which type is intended to push the main current away from the bank?",
+          "text": "A repelling spur is inclined ______.",
           "options": [
             {
               "key": "a",
-              "text": "Attracting spur"
+              "text": "Downstream"
             },
             {
               "key": "b",
-              "text": "Repelling spur"
+              "text": "Upstream"
             },
             {
               "key": "c",
-              "text": "Longitudinal guide bank"
+              "text": "Parallel to the bank"
             },
             {
               "key": "d",
-              "text": "Normal or deflecting spur in this mnemonic"
+              "text": "Perpendicular to the flow"
             }
           ],
           "answer": "b",
-          "explanation": "An upstream-pointing spur is termed repelling in the stated textbook convention. A downstream-pointing spur is attracting. Actual flow effects also depend on permeability, submergence and approach direction, so orientation alone is not a performance guarantee.<p>Source note: Page 29 point 104: defined the root-to-tip direction explicitly and used the conventional mnemonic, not a universal code classification.</p><p>Capsule 4th ed., p. 29; topic 7 point 104.</p>",
+          "explanation": "A repelling spur points upstream, so it deflects the current away from the bank, and silt deposits on its downstream side; an attracting spur points downstream and draws the current towards the bank.<p>Capsule 4th ed., p. 29; topic 7 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3681,32 +3681,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00116",
           "src": "CAP4-07-00116",
-          "text": "Inspection after a flood finds the deepest local hole near a guide-bank nose. Which mechanism best explains the need for especially robust protection there?",
+          "text": "In a guide bund, the depth of scour is most severe at the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Uniform reach-average scour unaffected by local geometry"
+              "text": "Middle of the straight portion"
             },
             {
               "key": "b",
-              "text": "Concentrated turning currents and local turbulence"
+              "text": "Nose"
             },
             {
               "key": "c",
-              "text": "A fall in grain specific gravity caused by the bend"
+              "text": "Shank"
             },
             {
               "key": "d",
-              "text": "A reduction in flow shear caused by nose stagnation alone"
+              "text": "Tail"
             }
           ],
           "answer": "b",
-          "explanation": "Approach flow turns and accelerates around a guide-bank nose, generating local turbulence and concentrated erosive attack. Nose scour can therefore exceed reach-average scour. Exact severity and protection require local hydraulic and bed information.<p>Source note: Page 29 point 117: nose vulnerability is a common local mechanism, not an invariant ranking for every flood geometry.</p><p>Capsule 4th ed., p. 29; topic 7 point 117.</p>",
+          "explanation": "The river current strikes and swirls around the curved nose of a guide bund, so scour is deepest there, and the nose needs the heaviest stone pitching and launching apron.<p>Capsule 4th ed., p. 29; topic 7 point 117.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3719,32 +3719,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00118",
           "src": "CAP4-07-00118",
-          "text": "Which description distinguishes a river spur from a longitudinal levee without imposing one universal orientation?",
+          "text": "Spurs are provided in the bank of a river ______ to the river.",
           "options": [
             {
               "key": "a",
-              "text": "It projects from the bank into the river, normally or obliquely"
+              "text": "Perpendicular"
             },
             {
               "key": "b",
-              "text": "It runs longitudinally to exclude floods from protected land"
+              "text": "Parallel"
             },
             {
               "key": "c",
-              "text": "It must be exactly perpendicular to the local current at every stage"
+              "text": "Tangential"
             },
             {
               "key": "d",
-              "text": "It covers the bank slope without projecting into the channel"
+              "text": "Buried parallel"
             }
           ],
           "answer": "a",
-          "explanation": "A spur or groyne projects into the river to influence the current. It may be normal to the bank or inclined upstream or downstream. A levee is primarily longitudinal flood containment; 'transverse' does not require an exact right angle in every design.<p>Source note: Page 30 point 119: corrected the universal perpendicular-only description.</p><p>Capsule 4th ed., p. 30; topic 7 point 119.</p>",
+          "explanation": "Spurs (groynes) project from the bank into the river, generally at right angles to it, to deflect the current away from the bank and encourage silting between them.<p>Capsule 4th ed., p. 30; topic 7 point 119.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3757,32 +3757,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00125",
           "src": "CAP4-07-00125",
-          "text": "A river carries abundant suspended sediment and a project seeks gradual deposition in a sheltered bank zone. Why might permeable spurs be considered?",
+          "text": "Permeable spurs are best suited for rivers that carry a heavy ______.",
           "options": [
             {
               "key": "a",
-              "text": "They increase local transport capacity to build the sheltered deposit"
+              "text": "Load of floating ice"
             },
             {
               "key": "b",
-              "text": "They sieve out suspended grains through openings smaller than every grain"
+              "text": "Bed load of boulders"
             },
             {
               "key": "c",
-              "text": "They can slow local flow while admitting some water through"
+              "text": "Suspended load"
             },
             {
               "key": "d",
-              "text": "They force all flow around the tip without admitting throughflow"
+              "text": "Flow of clear water"
             }
           ],
           "answer": "c",
-          "explanation": "Permeable works add resistance and reduce local transport capacity, potentially encouraging deposition where suspended material is available. Their effectiveness depends on hydraulics and sediment properties; debris blockage and local scour can alter performance.<p>Source note: Page 30 point 123: treated suspended-load supply as a suitability consideration, not proof that permeable spurs are always best.</p><p>Capsule 4th ed., p. 30; topic 7 point 123.</p>",
+          "explanation": "Permeable spurs slow the current passing through them, so the heavy suspended load drops out and silts up the protected zone.<p>Capsule 4th ed., p. 30; topic 7 point 123.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3795,32 +3795,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00131",
           "src": "CAP4-07-00131",
-          "text": "A river study identifies the flow range doing most long-term channel-shaping work by combining sediment-transport magnitude with occurrence duration. Which concept is being investigated?",
+          "text": "Dominant discharge is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Dominant or channel-forming discharge"
+              "text": "A discharge of high enough magnitude and frequency to change the river boundary"
             },
             {
               "key": "b",
-              "text": "Arithmetic mean of daily discharges"
+              "text": "The average daily flow"
             },
             {
               "key": "c",
-              "text": "Largest instantaneous recorded flood"
+              "text": "The largest flood ever recorded"
             },
             {
               "key": "d",
-              "text": "Discharge exceeded for half the record"
+              "text": "The minimum dry-season flow"
             }
           ],
           "answer": "a",
-          "explanation": "Dominant discharge concerns the flows that shape the channel over time. The related effective-discharge method compares integrated sediment transport by flow class. Neither the maximum, median nor mean discharge is automatically the channel-forming value.<p>Source note: Page 28 point 55: appended the missing terminology check. Question 55 already tests magnitude times duration, but did not require identification of dominant discharge.</p><p>Capsule 4th ed., p. 28; topic 7 point 55.</p>",
+          "explanation": "The dominant discharge is large enough and occurs often enough to shape the river boundary and surrounding area; the rare largest flood and the small daily flows do less of this work.<p>Capsule 4th ed., p. 28; topic 7 point 55.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3833,7 +3833,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0704",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -3845,27 +3845,27 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-07-00033",
           "src": "CAP4-07-00033",
-          "text": "Downstream canal demand suddenly stops while surplus water continues arriving. Which structure provides a controlled route for the surplus to a suitable natural drain?",
+          "text": "The structure provided to discharge extra water from a canal into a natural drain is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Canal escape"
+              "text": "A canal escape"
             },
             {
               "key": "b",
-              "text": "Proportional farm outlet"
+              "text": "A canal outlet"
             },
             {
               "key": "c",
-              "text": "Silt excluder tunnel"
+              "text": "A canal fall"
             },
             {
               "key": "d",
-              "text": "Canal head regulator"
+              "text": "A head regulator"
             }
           ],
           "answer": "a",
-          "explanation": "A canal escape safely disposes of surplus canal water to a receiving drain or river with adequate capacity and protection. A regulator controls normal passage, while an excluder targets sediment; neither name by itself specifies a surplus-disposal route.<p>Source note: Page 27 point 33 and page 28 point 71 repeat the escape function and are deliberately covered together.</p><p>Capsule 4th ed., pp. 27, 28; topic 7 point 33; topic 7 point 71.</p>",
+          "explanation": "A canal escape removes surplus water from a canal into a natural drain, protecting the banks from overtopping when demand drops or in emergencies.<p>Capsule 4th ed., pp. 27, 28; topic 7 point 33; topic 7 point 71.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3880,32 +3880,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00035",
           "src": "CAP4-07-00035",
-          "text": "A small hillside drain is deliberately admitted into a canal with spare capacity and acceptable water quality. Which arrangement allows the two flows to mix?",
+          "text": "The hydraulic structure that allows drainage water to mix with the canal water is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Canal inlet"
+              "text": "A canal inlet"
             },
             {
               "key": "b",
-              "text": "Superpassage"
+              "text": "A super passage"
             },
             {
               "key": "c",
-              "text": "Aqueduct"
+              "text": "An aqueduct"
             },
             {
               "key": "d",
-              "text": "Siphon aqueduct"
+              "text": "A siphon aqueduct"
             }
           ],
           "answer": "a",
-          "explanation": "An inlet admits drainage water into the canal instead of carrying the streams across separately. Spare capacity, sediment and water quality must be checked, with surplus disposal where necessary. Grade-separated aqueduct and superpassage arrangements keep the flows separate.<p>Capsule 4th ed., p. 27; topic 7 point 35.</p>",
+          "explanation": "A canal inlet admits a small drain directly into the canal so that the waters mix; aqueducts, super passages and siphon aqueducts carry the drain across the canal separately.<p>Capsule 4th ed., p. 27; topic 7 point 35.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3918,32 +3918,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00067",
           "src": "CAP4-07-00067",
-          "text": "A rigid irrigation module maintains constant outlet discharge q as parent-channel depth Y varies within its operating range. What is sensitivity S = d ln q/d ln Y?",
+          "text": "The sensitivity of a rigid module is ______.",
           "options": [
             {
               "key": "a",
-              "text": "1"
+              "text": "One"
             },
             {
               "key": "b",
-              "text": "Unbounded"
+              "text": "0.5"
             },
             {
               "key": "c",
-              "text": "0"
+              "text": "Zero"
             },
             {
               "key": "d",
-              "text": "0.5"
+              "text": "Infinity"
             }
           ],
           "answer": "c",
-          "explanation": "Constant \\(q\\) gives \\(d\\ln q = 0\\) for a nonzero depth change, so \\[S = \\dfrac{d\\ln q}{d\\ln Y} = 0\\] This is conditional on a functioning module within its permitted head range; insufficient supply or excessive submergence can invalidate constant-discharge operation.<p>Capsule 4th ed., p. 28; topic 7 point 68.</p>",
+          "explanation": "A rigid module delivers a constant discharge whatever the water level in the supplying distributary, so its outlet discharge does not respond to level changes and its sensitivity is zero.<p>Capsule 4th ed., p. 28; topic 7 point 68.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3956,32 +3956,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00068",
           "src": "CAP4-07-00068",
-          "text": "Over a 2 km canal alignment, ground level falls 12 m but the designed reach bed slope is 1 in 1000. If the relative canal-to-ground level is to be retained, how much fall must be accommodated by designed drops?",
+          "text": "A canal drop (fall) is provided if the ground slope ______ the designed bed slope.",
           "options": [
             {
               "key": "a",
-              "text": "10 m"
+              "text": "Exceeds"
             },
             {
               "key": "b",
-              "text": "2 m"
+              "text": "Equals"
             },
             {
               "key": "c",
-              "text": "12 m"
+              "text": "Is less than"
             },
             {
               "key": "d",
-              "text": "14 m"
+              "text": "Is half"
             }
           ],
           "answer": "a",
-          "explanation": "The distributed canal-bed fall is \\[\\dfrac{2000}{1000} = 2\\ \\text{m}\\] and the remaining ground fall is \\[12 - 2 = 10\\ \\text{m}\\] to be accommodated by selected drop structures under the stated profile objective. Simply steepening the entire canal could cause excessive velocity.<p>Capsule 4th ed., p. 28; topic 7 point 70.</p>",
+          "explanation": "When the ground falls faster than the permissible canal bed slope, the canal would soon be in high filling, so a fall drops the bed suddenly and keeps the canal in a balanced section.<p>Capsule 4th ed., p. 28; topic 7 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3994,32 +3994,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00069",
           "src": "CAP4-07-00069",
-          "text": "Two fall locations provide acceptable command and hydraulic performance. One reduces long lengths of high embankment and costly borrow. Which additional selection criterion favors it?",
+          "text": "The factor that decides the location of a canal fall in the main channel is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Economy of earthwork and the overall longitudinal profile"
+              "text": "Economy in earthwork balance"
             },
             {
               "key": "b",
-              "text": "Equal chainage spacing regardless of the earthwork profile"
+              "text": "The number of outlets"
             },
             {
               "key": "c",
-              "text": "The smallest bed drop without considering required embankment"
+              "text": "Rainfall intensity"
             },
             {
               "key": "d",
-              "text": "The lowest structure cost without considering approach earthwork"
+              "text": "The crop pattern"
             }
           ],
           "answer": "a",
-          "explanation": "Fall siting balances command, safe hydraulics, foundations and cost. Better cut-fill balance and reduced embankment or borrow can favor one feasible location. Earthwork economy is a criterion, not permission to ignore scour or available head.<p>Capsule 4th ed., p. 28; topic 7 point 72.</p>",
+          "explanation": "In a main canal, falls are located so that the cutting and filling of earthwork balance economically; on distributaries the location of falls depends more on the command of the outlets.<p>Capsule 4th ed., p. 28; topic 7 point 72.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4032,32 +4032,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00070",
           "src": "CAP4-07-00070",
-          "text": "At a fixed outlet setting, a small 4% increase in parent-canal discharge produces a 4% increase in outlet discharge. What is the approximate outlet flexibility and classification?",
+          "text": "An outlet is said to be proportional if its flexibility is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.5, half-proportional"
+              "text": "Greater than unity"
             },
             {
               "key": "b",
-              "text": "0.0, rigid modular"
+              "text": "Zero"
             },
             {
               "key": "c",
-              "text": "1.0, locally proportional"
+              "text": "Equal to unity"
             },
             {
               "key": "d",
-              "text": "4.0, hyper-proportional"
+              "text": "Less than unity"
             }
           ],
           "answer": "c",
-          "explanation": "Flexibility compares fractional changes: \\[F \\approx \\dfrac{\\Delta q{/}q}{\\Delta Q{/}Q} = \\dfrac{4\\%}{4\\%} = 1\\] Equal percentages, not equal absolute discharges, imply local proportionality. Sensitivity instead compares outlet discharge with parent water depth.<p>Capsule 4th ed., p. 28; topic 7 point 73.</p>",
+          "explanation": "Flexibility is the ratio of the rate of change of outlet discharge to that of the distributary discharge; when it equals 1, the outlet discharge changes in the same proportion, so the outlet is proportional.<p>Capsule 4th ed., p. 28; topic 7 point 73.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4070,32 +4070,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00071",
           "src": "CAP4-07-00071",
-          "text": "During low supply, a branch canal lacks adequate offtake head although water is present in the parent canal. Which operation can raise the parent level just upstream of the offtake?",
+          "text": "Cross regulators are provided in a main canal to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Partly close a downstream cross regulator"
+              "text": "Raise the water level for the off-taking canals"
             },
             {
               "key": "b",
-              "text": "Lower the downstream canal bed without control"
+              "text": "Remove silt"
             },
             {
               "key": "c",
-              "text": "Remove the parent channel's control gates"
+              "text": "Allow fish passage"
             },
             {
               "key": "d",
-              "text": "Fully open a nearby canal escape"
+              "text": "Measure the discharge"
             }
           ],
           "answer": "a",
-          "explanation": "A cross regulator across the parent channel controls downstream passage and can raise its upstream level, creating the required branch offtake head. Gate operation must remain within capacity and freeboard limits. A head regulator separately meters entry into the branch.<p>Source note: Page 28 point 74 and page 30 point 128 express the same level-raising function and are intentionally combined.</p><p>Capsule 4th ed., pp. 28, 30; topic 7 point 74; topic 7 point 128.</p>",
+          "explanation": "A cross regulator across the main canal is partly closed to head up the water, raising the level upstream so that the off-taking channels receive their supply during low flows.<p>Capsule 4th ed., pp. 28, 30; topic 7 point 74; topic 7 point 128.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4110,24 +4110,24 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00073",
           "src": "CAP4-07-00073",
-          "text": "Which structure addresses a canal crossing above a natural drain rather than controlling admission of river water at the canal head?",
+          "text": "Which of the following is not provided at a head regulator?",
           "options": [
             {
               "key": "a",
-              "text": "Canal head regulator"
+              "text": "Regulating gates"
             },
             {
               "key": "b",
-              "text": "Sediment-exclusion pocket"
+              "text": "Breast wall"
             },
             {
               "key": "c",
-              "text": "Intake control gate"
+              "text": "Silt excluder"
             },
             {
               "key": "d",
@@ -4135,7 +4135,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             }
           ],
           "answer": "d",
-          "explanation": "An aqueduct carries the canal across a lower drain, whereas the head regulator controls entry to the canal. These are different functions. A site may place several works nearby, so function is more reliable than an absolute claim about where aqueducts can never occur.<p>Source note: Page 28 point 76: replaced the absolute location prohibition with the structure&#39;s distinct purpose.</p><p>Capsule 4th ed., p. 28; topic 7 point 76.</p>",
+          "explanation": "A head regulator has regulating gates, a breast wall and silt control works to admit and control the water entering the canal; an aqueduct is a cross drainage work, not part of a head regulator.<p>Capsule 4th ed., p. 28; topic 7 point 76.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4148,32 +4148,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00074",
           "src": "CAP4-07-00074",
-          "text": "A large canal meets a flashy drain at nearly equal bed levels. A justified scheme permits controlled mixing and regulates canal and drain exits during the short flood. Which arrangement is being considered?",
+          "text": "The crossing arrangement preferably made at the junction of a large canal and a stream carrying a short-lived high flood at almost equal bed levels is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Free-flow aqueduct"
+              "text": "An aqueduct"
             },
             {
               "key": "b",
-              "text": "Canal siphon with separated flows"
+              "text": "A canal siphon"
             },
             {
               "key": "c",
-              "text": "Regulated level crossing"
+              "text": "A level crossing"
             },
             {
               "key": "d",
-              "text": "Free-flow superpassage"
+              "text": "A super passage"
             }
           ],
           "answer": "c",
-          "explanation": "A level crossing allows the streams to meet at similar levels with regulating arrangements. Flashy drainage and a large canal can make it a candidate, but combined flood routing, sediment and acceptable mixing must be checked before selection.<p>Source note: Page 28 point 77: retained the stated large-canal, short-flood and near-equal-level conditions without calling them sufficient for automatic preference.</p><p>Capsule 4th ed., p. 28; topic 7 point 77.</p>",
+          "explanation": "When a large canal and a flashy stream meet at almost the same bed level, they cross at the same level through a level crossing with regulators, since raising either above the other would be very costly.<p>Capsule 4th ed., p. 28; topic 7 point 77.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4186,32 +4186,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00075",
           "src": "CAP4-07-00075",
-          "text": "For a superpassage, canal FSL is RL 99.0 m, the drain-trough underside is RL 99.8 m and the required clearance is 0.5 m. Does the lower canal meet this clearance check?",
+          "text": "In a super passage, the full supply level (FSL) of the canal is ______ the drain flood level.",
           "options": [
             {
               "key": "a",
-              "text": "Yes: available clearance is 0.8 m"
+              "text": "Below"
             },
             {
               "key": "b",
-              "text": "It cannot be checked without the drain flood-water level"
+              "text": "Independent of"
             },
             {
               "key": "c",
-              "text": "No: available clearance is only 0.3 m"
+              "text": "Above"
             },
             {
               "key": "d",
-              "text": "Yes: available clearance is 1.3 m"
+              "text": "Equal to"
             }
           ],
           "answer": "a",
-          "explanation": "The relevant air gap is the trough underside minus the canal water surface: \\[99.8 - 99.0 = 0.8\\ \\text{m}\\] which exceeds 0.5 m. Merely comparing canal FSL with the drain flood surface ignores the drain-trough structure and cannot establish free-flow clearance.<p>Source note: Page 28 point 78: supplied the actual underside and required clearance, strengthening the source&#39;s insufficient water-surface comparison.</p><p>Capsule 4th ed., p. 28; topic 7 point 78.</p>",
+          "explanation": "In a super passage the drain is carried over the canal in a trough, so the canal flows underneath, with its full supply level below the drain and its flood level.<p>Capsule 4th ed., p. 28; topic 7 point 78.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4224,32 +4224,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00076",
           "src": "CAP4-07-00076",
-          "text": "A natural drain crosses in an upper trough, while the irrigation canal passes underneath with a free surface and adequate air clearance. What is the arrangement?",
+          "text": "Cross drainage works that carry the drainage over the canal are ______.",
           "options": [
             {
               "key": "a",
-              "text": "Canal siphon"
+              "text": "Aqueduct and siphon aqueduct"
             },
             {
               "key": "b",
-              "text": "Superpassage"
+              "text": "Super passage and canal siphon"
             },
             {
               "key": "c",
-              "text": "Aqueduct"
+              "text": "Level crossing and canal inlet"
             },
             {
               "key": "d",
-              "text": "Siphon aqueduct"
+              "text": "Canal escape and canal fall"
             }
           ],
           "answer": "b",
-          "explanation": "Drain over canal with free-surface flow in the lower canal defines a superpassage. If the lower canal instead fills a pressure conduit, the arrangement is a canal siphon. Naming the upper stream alone is insufficient.<p>Source note: Page 29 point 79 contains two arrangements. Its superpassage fact duplicates page 30 point 124 and is merged here; its canal-siphon fact has a separate question.</p><p>Capsule 4th ed., pp. 29, 30; topic 7 point 79; topic 7 point 124.</p>",
+          "explanation": "Super passages and canal siphons carry the drain above the canal, whereas aqueducts and siphon aqueducts carry the canal above the drain.<p>Capsule 4th ed., pp. 29, 30; topic 7 point 79; topic 7 point 124.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4264,32 +4264,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00077",
           "src": "CAP4-07-00077",
-          "text": "An irrigation canal is depressed into closed barrels beneath a drainage channel and runs full at the design discharge. Which cross-drainage type is this?",
+          "text": "The structure built when a natural drainage channel crosses completely over an irrigation channel, with the canal flowing freely below, is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Canal siphon"
+              "text": "A super passage"
             },
             {
               "key": "b",
-              "text": "Level crossing"
+              "text": "A level crossing"
             },
             {
               "key": "c",
-              "text": "Siphon aqueduct"
+              "text": "An aqueduct"
             },
             {
               "key": "d",
-              "text": "Superpassage"
+              "text": "A siphon aqueduct"
             }
           ],
           "answer": "a",
-          "explanation": "The lower pressurized stream is the canal, so this is a canal siphon, often called an inverted siphon. In a siphon aqueduct the lower pressure flow is drainage instead. Full pressure flow does not necessarily imply negative gauge pressure.<p>Source note: Page 29 point 79: expanded the ambiguous bare word &#39;syphon&#39; to canal siphon and identified the pressurized stream.</p><p>Capsule 4th ed., p. 29; topic 7 point 79.</p>",
+          "explanation": "In a super passage the drain crosses completely over the canal in a trough, and the canal flows below it with a free surface; if the canal runs full under the drain, the work is a canal siphon.<p>Capsule 4th ed., p. 29; topic 7 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4302,32 +4302,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00078",
           "src": "CAP4-07-00078",
-          "text": "Canal water passes in an upper trough and a natural drain passes below with a free surface at its design flood. What is this crossing called?",
+          "text": "Cross drainage works carrying the canal over a natural drain are called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Superpassage"
+              "text": "Level crossing and canal inlet"
             },
             {
               "key": "b",
-              "text": "Siphon aqueduct"
+              "text": "Super passage and canal siphon"
             },
             {
               "key": "c",
-              "text": "Aqueduct"
+              "text": "Aqueduct and siphon aqueduct"
             },
             {
               "key": "d",
-              "text": "Canal siphon"
+              "text": "Canal escape and canal fall"
             }
           ],
           "answer": "c",
-          "explanation": "An aqueduct carries canal water above drainage that has free-flow clearance below. A low drain bed alone is insufficient: its design flood surface must also fit beneath the actual underside of the canal structure.<p>Capsule 4th ed., p. 29; topic 7 point 80.</p>",
+          "explanation": "An aqueduct and a siphon aqueduct carry the canal over the drain; in an aqueduct the drain flows below with a free surface, and in a siphon aqueduct it flows full under pressure.<p>Capsule 4th ed., p. 29; topic 7 point 80.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4340,32 +4340,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00079",
           "src": "CAP4-07-00079",
-          "text": "A canal crosses above a drain, but the drain must flow through full pressure barrels during the design flood. What type of structure is required?",
+          "text": "When a canal is carried over a drain and the drain water flows under pressure below the canal trough, the structure is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Superpassage"
+              "text": "A canal siphon"
             },
             {
               "key": "b",
-              "text": "Siphon aqueduct"
+              "text": "A siphon aqueduct"
             },
             {
               "key": "c",
-              "text": "Ordinary aqueduct"
+              "text": "An aqueduct"
             },
             {
               "key": "d",
-              "text": "Canal siphon"
+              "text": "A super passage"
             }
           ],
           "answer": "b",
-          "explanation": "Canal over drain with the lower drain pressurized is a siphon aqueduct. Its design requires adequate head for barrel and local losses. The word siphon refers to the pressure undercrossing; it does not mean the canal itself is below the drain.<p>Capsule 4th ed., p. 29; topic 7 point 80.</p>",
+          "explanation": "In a siphon aqueduct the canal is carried over the drain, but the drain bed is depressed and its water flows full under pressure through barrels below the trough.<p>Capsule 4th ed., p. 29; topic 7 point 80.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4378,32 +4378,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00095",
           "src": "CAP4-07-00095",
-          "text": "A free pipe outlet remains controlled by upstream head while downstream water stays below its drowning limit. What is its conventional hydraulic class?",
+          "text": "A free pipe outlet is ______ outlet.",
           "options": [
             {
               "key": "a",
-              "text": "Non-module necessarily controlled by both levels"
+              "text": "A non-modular"
             },
             {
               "key": "b",
-              "text": "Proportional module with flexibility always equal to one"
+              "text": "A silt-excluding"
             },
             {
               "key": "c",
-              "text": "Rigid module independent of both levels"
+              "text": "A rigid"
             },
             {
               "key": "d",
-              "text": "Semi-module, historically called a flexible module"
+              "text": "A flexible"
             }
           ],
           "answer": "d",
-          "explanation": "Free discharge isolates the outlet from downstream changes while upstream head still affects flow, so it is semi-modular. The historical adjective flexible does not specify mathematical flexibility \\(F = 1\\); drowning can change the outlet's behaviour.<p>Source note: Page 29 point 96: separated legacy flexible-module terminology from proportional outlet response.</p><p>Capsule 4th ed., p. 29; topic 7 point 96.</p>",
+          "explanation": "A free pipe outlet discharges freely into the watercourse, so its flow depends on the distributary water level but not on the watercourse level; such an outlet is flexible, a semi-module.<p>Capsule 4th ed., p. 29; topic 7 point 96.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4416,32 +4416,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00107",
           "src": "CAP4-07-00107",
-          "text": "A canal branch requires an adjustable admission rate as parent water levels change. Which component directly controls the opening through which its supply passes?",
+          "text": "The discharge of water in a canal is controlled by ______.",
           "options": [
             {
               "key": "a",
-              "text": "A fixed-area orifice without a gate"
+              "text": "Super passages"
             },
             {
               "key": "b",
-              "text": "An ungated long-throated measuring flume"
+              "text": "Fish ladders"
             },
             {
               "key": "c",
-              "text": "A gated regulator"
+              "text": "Regulators"
             },
             {
               "key": "d",
-              "text": "A fixed broad-crested weir"
+              "text": "Aqueducts"
             }
           ],
           "answer": "c",
-          "explanation": "A regulator changes the effective opening or control level to regulate discharge. The resulting flow depends on available upstream and downstream head and the device rating; setting a gate opening is not independent of hydraulic conditions.<p>Capsule 4th ed., p. 29; topic 7 point 109.</p>",
+          "explanation": "Head and cross regulators have gates that are raised or lowered to control the discharge entering and passing along a canal.<p>Capsule 4th ed., p. 29; topic 7 point 109.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4454,32 +4454,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00126",
           "src": "CAP4-07-00126",
-          "text": "A rectangular-crest canal fall has a calibrated free-overflow rating Q = 1.5 L H^(3/2) in SI units. For effective crest length L = 8 m and energy head H = 1 m, what discharge does this rating predict?",
+          "text": "In a Sarda type fall, a rectangular crest is generally used for canal discharges up to ______.",
           "options": [
             {
               "key": "a",
-              "text": "24 cumecs"
+              "text": "140 m<sup>3</sup>/s"
             },
             {
               "key": "b",
-              "text": "12 cumecs"
+              "text": "14 m<sup>3</sup>/s"
             },
             {
               "key": "c",
-              "text": "14 cumecs"
+              "text": "1.4 m<sup>3</sup>/s"
             },
             {
               "key": "d",
-              "text": "8 cumecs"
+              "text": "85 m<sup>3</sup>/s"
             }
           ],
           "answer": "b",
-          "explanation": "The stated rating gives \\[Q = 1.5 \\times 8 \\times 1^{3{/}2} = 12\\] cumecs. A crest rating is only one check; a Sarda-type vertical fall also needs a safe downstream cistern, foundations and operating range. Being below a quoted capacity limit is not proof of adequacy.<p>Source note: Page 30 point 125: the 14-cumec rectangular Sarda limit remains an unverified legacy convention in the nearby corrected notes. The original question here uses an explicit calibrated rating, not that threshold as authority.</p><p>Capsule 4th ed., p. 30; topic 7 point 125.</p>",
+          "explanation": "In a Sarda type fall, a rectangular crest is used for canal discharges up to 14 m<sup>3</sup> per s; larger discharges use the other crest shape.<p>Capsule 4th ed., p. 30; topic 7 point 125.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4492,32 +4492,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00127",
           "src": "CAP4-07-00127",
-          "text": "A proposed fall has a triangular masonry-body cross-section in the streamwise plane but a straight, level overflow crest across the canal. Does that make its opening a triangular V-notch?",
+          "text": "In a Sarda type fall, a triangular crest is generally used for canal discharges up to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Yes: any triangular body necessarily gives a V-shaped opening"
+              "text": "14 m<sup>3</sup>/s"
             },
             {
               "key": "b",
-              "text": "No: it must instead use a submerged-orifice rating at every head"
+              "text": "850 m<sup>3</sup>/s"
             },
             {
               "key": "c",
-              "text": "Yes: the streamwise body angle sets the transverse notch angle"
+              "text": "8.5 m<sup>3</sup>/s"
             },
             {
               "key": "d",
-              "text": "No: body profile and transverse flow-opening shape are different"
+              "text": "85 m<sup>3</sup>/s"
             }
           ],
           "answer": "d",
-          "explanation": "A body's streamwise cross-section is not the shape of the transverse overflow opening. A V-notch has a triangular opening whose width changes with head. The stated level crest does not acquire that rating merely because the supporting body is triangular.<p>Source note: Page 30 point 126: exact triangular-crest geometry and the 85-cumec Sarda limit cannot be verified from available text. This explicit geometry question avoids inventing the unseen section or endorsing the limit; parent should check both.</p><p>Capsule 4th ed., p. 30; topic 7 point 126.</p>",
+          "explanation": "For the larger canals of a Sarda type fall, a triangular crest is used for discharges up to 85 m<sup>3</sup> per s, while a rectangular crest suits discharges up to 14 m<sup>3</sup> per s.<p>Capsule 4th ed., p. 30; topic 7 point 126.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4530,32 +4530,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0705",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00132",
           "src": "CAP4-07-00132",
-          "text": "A fall is identified as belonging to the Sarda family, but its quoted 14- or 85-cumec crest-selection limits have not been verified. Which downstream profile is characteristic of this family?",
+          "text": "In a Sarda type fall, the crests used for discharges up to 14 m<sup>3</sup>/s and up to 85 m<sup>3</sup>/s are, respectively, ______.",
           "options": [
             {
               "key": "a",
-              "text": "Vertical drop into a protected cistern or pool"
+              "text": "Rectangular and triangular"
             },
             {
               "key": "b",
-              "text": "Parabolic Montague glacis guiding the flow downward"
+              "text": "Circular and rectangular"
             },
             {
               "key": "c",
-              "text": "Straight glacis with an Inglis baffle platform and wall"
+              "text": "Triangular and rectangular"
             },
             {
               "key": "d",
-              "text": "A sequence of small stepped drops along a cascade"
+              "text": "Rectangular and circular"
             }
           ],
           "answer": "a",
-          "explanation": "Sarda denotes a vertical-drop fall family. Inglis and Montague have different downstream profiles. Recognizing the family does not establish crest geometry or validate the capsule's quoted discharge limits; those require their own design reference.<p>Source note: Page 30 points 125 and 126: appended family identification missing from the earlier rating and body-plane questions. Both refer to the same Sarda family, while their distinct crest and threshold claims remain separately recorded.</p><p>Capsule 4th ed., p. 30; topic 7 point 125; topic 7 point 126.</p>",
+          "explanation": "A Sarda type fall uses a rectangular crest for canal discharges up to 14 m<sup>3</sup> per s and a triangular crest for discharges up to 85 m<sup>3</sup> per s.<p>Capsule 4th ed., p. 30; topic 7 point 125; topic 7 point 126.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4581,27 +4581,27 @@ window.CIVIL_SET_DATA["capsule-07"] = {
         {
           "id": "CAP4-07-00080",
           "src": "CAP4-07-00080",
-          "text": "A saline but non-sodic field has a functioning drainage outlet and sufficient good-quality water. Which treatment directly exports dissolved salts from the root zone?",
+          "text": "Saline soil can be improved by ______.",
           "options": [
             {
               "key": "a",
-              "text": "Addition of fertilizer without a salt-water balance"
+              "text": "Applying more fertiliser"
             },
             {
               "key": "b",
-              "text": "Controlled leaching followed by drainage"
+              "text": "Leaching, by flooding and draining"
             },
             {
               "key": "c",
-              "text": "Evaporation of ponded water with no salt outlet"
+              "text": "Adding common salt"
             },
             {
               "key": "d",
-              "text": "Repeated wetting with no downward water movement"
+              "text": "Stopping all irrigation"
             }
           ],
           "answer": "b",
-          "explanation": "Leaching dissolves and carries salts below the root zone; drainage then removes the saline water. Flooding without an outlet can raise the water table and reconcentrate salts on drying. Sodic soil additionally requires sodium-status and amendment assessment.<p>Source note: Page 29 points 81 and 106 repeat leaching by wetting and drainage. They are merged with drainage and non-sodic conditions made explicit.</p><p>Capsule 4th ed., p. 29; topic 7 point 81; topic 7 point 106.</p>",
+          "explanation": "Flooding the land with good water dissolves the excess salts, and draining carries them below the root zone and away; this leaching improves saline soil.<p>Capsule 4th ed., p. 29; topic 7 point 81; topic 7 point 106.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4615,32 +4615,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00081",
           "src": "CAP4-07-00081",
-          "text": "A shallow open field drain carries storm runoff in the monsoon. Can the same drain carry excess surface irrigation water in a dry month if its outlet remains available?",
+          "text": "Open drains that are fully operative only in the rainy season are ______.",
           "options": [
             {
               "key": "a",
-              "text": "No, because the system's design season limits its physical operation"
+              "text": "Deep open drains"
             },
             {
               "key": "b",
-              "text": "Yes, because surface inflow rather than season controls its use"
+              "text": "Shallow surface drains"
             },
             {
               "key": "c",
-              "text": "Yes, but only if its invert is below the regional water table"
+              "text": "Mole drains"
             },
             {
               "key": "d",
-              "text": "No, because irrigation runoff requires subsurface collection"
+              "text": "Tile drains"
             }
           ],
           "answer": "b",
-          "explanation": "A shallow surface drain removes excess water arriving at the surface, whether from rainfall, run-on or irrigation. It may be most active in the wet season, but the calendar does not physically disable it in a dry month.<p>Source note: Page 29 point 82: corrected the absolute rainy-season-only assertion.</p><p>Capsule 4th ed., p. 29; topic 7 point 82.</p>",
+          "explanation": "Shallow surface drains remove excess rain water from the land surface, so they flow fully only in the rainy season; deep and subsurface drains lower the water table throughout the year.<p>Capsule 4th ed., p. 29; topic 7 point 82.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4653,32 +4653,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00082",
           "src": "CAP4-07-00082",
-          "text": "In a hydraulically connected aquifer with recharge unchanged, pumping exports groundwater outside the affected area. What is its direct effect on a shallow water table?",
+          "text": "Which of the following does not contribute to waterlogging?",
           "options": [
             {
               "key": "a",
-              "text": "It tends to raise the table by increasing the saturated thickness"
+              "text": "Seepage from canals"
             },
             {
               "key": "b",
-              "text": "It changes seepage velocity but not groundwater head"
+              "text": "Over-irrigation"
             },
             {
               "key": "c",
-              "text": "It tends to lower the water table"
+              "text": "Excessive tapping of ground water"
             },
             {
               "key": "d",
-              "text": "It removes only retained capillary water without aquifer drawdown"
+              "text": "Obstructed natural drainage"
             }
           ],
           "answer": "c",
-          "explanation": "Net groundwater withdrawal reduces storage and tends to lower the table, helping relieve waterlogging under the stated conditions. Excessive pumping may still cause depletion, subsidence or salinity problems; exported water is not assumed to return as local irrigation recharge.<p>Source note: Page 29 point 83: separated direct drawdown from approval of excessive pumping and specified the return-flow boundary.</p><p>Capsule 4th ed., p. 29; topic 7 point 83.</p>",
+          "explanation": "Waterlogging comes from canal seepage, over-irrigation and poor drainage, which raise the water table; excessive tapping of ground water lowers the water table, so it does not contribute.<p>Capsule 4th ed., p. 29; topic 7 point 83.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4691,32 +4691,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00083",
           "src": "CAP4-07-00083",
-          "text": "After rainfall, isolated hollows remain ponded although nearby higher fields drain. Which intervention addresses the immediate topographic cause?",
+          "text": "Irregular topography causes waterlogging because of the ______ of the terrain.",
           "options": [
             {
               "key": "a",
-              "text": "Provide graded connections from depressions to a viable outlet"
+              "text": "Depressions"
             },
             {
               "key": "b",
-              "text": "Increase the receiving drain size without connecting the hollows"
+              "text": "Exposure to wind"
             },
             {
               "key": "c",
-              "text": "Smooth the hollows while retaining their closed outlet contours"
+              "text": "Steep slopes"
             },
             {
               "key": "d",
-              "text": "Line the supply canal without changing surface drainage paths"
+              "text": "Rocky outcrops"
             }
           ],
           "answer": "a",
-          "explanation": "Closed depressions trap surface water because there is no effective gravity outlet. Land shaping and connected surface drains can restore an escape path. The receiving level and subsurface conditions must also be checked before assuming the root zone will aerate.<p>Capsule 4th ed., p. 29; topic 7 point 84.</p>",
+          "explanation": "On irregular land, water collects in depressions that have no outlet and cannot drain away, so these low spots become waterlogged.<p>Capsule 4th ed., p. 29; topic 7 point 84.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4729,32 +4729,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00084",
           "src": "CAP4-07-00084",
-          "text": "Tile drainage lowers a persistently shallow water table without adding soil. Why can crop yield improve?",
+          "text": "Tile drainage helps to increase crop yields by increasing the ______.",
           "options": [
             {
               "key": "a",
-              "text": "The soil's permanent wilting content becomes zero"
+              "text": "Level of the water table"
             },
             {
               "key": "b",
-              "text": "The mineral soil's physical volume necessarily increases"
+              "text": "Salinity of the soil"
             },
             {
               "key": "c",
-              "text": "A larger existing root-zone volume becomes adequately aerated"
+              "text": "Volume of soil available to the roots"
             },
             {
               "key": "d",
-              "text": "The pipe raises capillary supply while leaving the water table fixed"
+              "text": "Surface ponding"
             }
           ],
           "answer": "c",
-          "explanation": "Lowering the water table can increase air-filled pores and the depth of soil that roots can exploit. The benefit is a larger usable, aerated root zone, not creation of new mineral soil volume. Yield still depends on crop, nutrients and water management.<p>Source note: Page 29 point 85: corrected &#39;increases volume of soil&#39; to increased effective aerated rooting volume.</p><p>Capsule 4th ed., p. 29; topic 7 point 85.</p>",
+          "explanation": "Tile drains lower a high water table, so a greater volume of soil becomes aerated and available for root growth, which increases crop yields.<p>Capsule 4th ed., p. 29; topic 7 point 85.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4767,32 +4767,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00085",
           "src": "CAP4-07-00085",
-          "text": "Perched water lies above a nearly impermeable horizon. A tile drain is installed below that horizon with no hydraulic connection through it. Why might the crop root zone remain wet?",
+          "text": "Tile drains should not be placed under ______ strata.",
           "options": [
             {
               "key": "a",
-              "text": "The pipe's depth alone guarantees drainage of every overlying layer"
+              "text": "Highly pervious"
             },
             {
               "key": "b",
-              "text": "A free outfall automatically removes the perched-water barrier"
+              "text": "Well-drained"
             },
             {
               "key": "c",
-              "text": "The restrictive layer prevents sufficient flow to the drain"
+              "text": "Less pervious"
             },
             {
               "key": "d",
-              "text": "The main limitation must be pipe diameter, not soil connection"
+              "text": "Sandy"
             }
           ],
           "answer": "c",
-          "explanation": "The water must reach the drain through a viable hydraulic path. A pipe isolated below a restrictive horizon may not collect perched water above it. Appropriate placement or connection is needed; low-permeability soil is not categorically impossible to drain.<p>Source note: Page 29 point 86: replaced an absolute placement rule with the actual hydraulic-disconnection mechanism.</p><p>Capsule 4th ed., p. 29; topic 7 point 86.</p>",
+          "explanation": "A tile drain placed below a less pervious layer cannot collect the water held above that layer, so the land above stays wet; tile drains must lie within the pervious soil to be drained.<p>Capsule 4th ed., p. 29; topic 7 point 86.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4805,32 +4805,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00086",
           "src": "CAP4-07-00086",
-          "text": "Which wet-field situation most clearly supports using subsurface tile drainage?",
+          "text": "A tile drain is suitable for ______ soil.",
           "options": [
             {
               "key": "a",
-              "text": "A perched wet layer isolated from the proposed drain by an unbroken barrier"
+              "text": "Frozen"
             },
             {
               "key": "b",
-              "text": "A wet root zone with an outfall above the target water-table elevation"
+              "text": "Rocky"
             },
             {
               "key": "c",
-              "text": "Surface ponding above a sealed layer with no path to the proposed drains"
+              "text": "Dry"
             },
             {
               "key": "d",
-              "text": "A shallow water table with a connected soil-flow path and viable outlet"
+              "text": "Wet"
             }
           ],
           "answer": "d",
-          "explanation": "Tile drainage collects subsurface water through joints or perforations and conveys it to an outlet. Soil conductivity, hydraulic connection, drain depth and outfall level must support the required drawdown; the description 'wet soil' alone is insufficient.<p>Capsule 4th ed., p. 29; topic 7 point 87.</p>",
+          "explanation": "Tile drains are laid below the surface of wet, waterlogged soil to collect the excess ground water and carry it away, lowering the water table.<p>Capsule 4th ed., p. 29; topic 7 point 87.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4843,32 +4843,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00087",
           "src": "CAP4-07-00087",
-          "text": "In a steady drainage-spacing model L^2 = K C, hold the recharge, allowed midpoint head and equivalent geometry represented by C fixed. If conductivity K quadruples, how does permissible spacing change?",
+          "text": "The spacing of tile drains to relieve waterlogged land is directly proportional to the ______ of the soil to be drained.",
           "options": [
             {
               "key": "a",
-              "text": "It remains unchanged"
+              "text": "Colour"
             },
             {
               "key": "b",
-              "text": "It halves"
+              "text": "Salinity"
             },
             {
               "key": "c",
-              "text": "It quadruples"
+              "text": "Specific gravity"
             },
             {
               "key": "d",
-              "text": "It doubles"
+              "text": "Coefficient of permeability"
             }
           ],
           "answer": "d",
-          "explanation": "Taking square roots gives \\(L \\propto \\sqrt{K}\\). Quadrupling \\(K\\) therefore multiplies \\(L\\) by \\[\\sqrt{4} = 2\\] not four. In a full Hooghoudt solution, the equivalent depth can also depend on spacing and must be updated consistently.<p>Source note: Page 29 point 88: corrected direct proportionality to K; square-root scaling is conditional on fixed equivalent geometry and other stated quantities.</p><p>Capsule 4th ed., p. 29; topic 7 point 88.</p>",
+          "explanation": "Water reaches the drains faster through a more permeable soil, so the drains can be spaced farther apart; the spacing is directly proportional to the coefficient of permeability of the soil.<p>Capsule 4th ed., p. 29; topic 7 point 88.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4881,12 +4881,12 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00088",
           "src": "CAP4-07-00088",
-          "text": "A cropped field is shaped into raised strips separated by dead furrows that collect excess rainfall and irrigation water. What is this surface-drainage method?",
+          "text": "The method which uses dead furrows on cropped farms to drain excess irrigation or rain water is called ______.",
           "options": [
             {
               "key": "a",
@@ -4902,11 +4902,11 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             },
             {
               "key": "d",
-              "text": "Vertical well drainage"
+              "text": "Vertical drainage"
             }
           ],
           "answer": "a",
-          "explanation": "Bedding gives the field small surface relief so water moves off cropped beds into collecting furrows. Those furrows need connection to an outlet. It is a surface-shaping method, unlike buried tile, mole or pumped-well drainage.<p>Capsule 4th ed., p. 29; topic 7 point 89.</p>",
+          "explanation": "In bedding, the field is ploughed into raised beds separated by dead furrows, which collect the excess irrigation or rain water and lead it to the field drains.<p>Capsule 4th ed., p. 29; topic 7 point 89.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4919,32 +4919,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00089",
           "src": "CAP4-07-00089",
-          "text": "A shallow aquifer receives persistent seepage from an unlined canal, while natural groundwater outflow and pumping remain insufficient. What waterlogging mechanism follows?",
+          "text": "Considering canals as a factor, ______ causes waterlogging.",
           "options": [
             {
               "key": "a",
-              "text": "Lateral outflow necessarily increases enough to match all added recharge"
+              "text": "Closure of the canals"
             },
             {
               "key": "b",
-              "text": "Recharge exceeds removal and the water table rises"
+              "text": "Seepage of water through the canals"
             },
             {
               "key": "c",
-              "text": "Recharge increases storage while groundwater level remains fixed"
+              "text": "Lining of the canals"
             },
             {
               "key": "d",
-              "text": "Seepage into the aquifer creates the same drawdown as pumping out"
+              "text": "Evaporation from the canals"
             }
           ],
           "answer": "b",
-          "explanation": "Canal seepage is an aquifer inflow. If total recharge exceeds removal, groundwater storage and level rise, potentially saturating or capillary-wetting the crop root zone. Lining or interception can reduce this component, but the whole water balance matters.<p>Capsule 4th ed., p. 29; topic 7 point 90.</p>",
+          "explanation": "Water seeping from unlined canals recharges the ground water continuously, raising the water table until the root zone becomes waterlogged.<p>Capsule 4th ed., p. 29; topic 7 point 90.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4957,32 +4957,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00090",
           "src": "CAP4-07-00090",
-          "text": "A command area is repeatedly over-irrigated and its drainage cannot remove the resulting deep percolation. Which management change most directly reduces this cause of waterlogging?",
+          "text": "Which of the following causes waterlogging?",
           "options": [
             {
               "key": "a",
-              "text": "Reduce drain depth while maintaining the excess irrigation recharge"
+              "text": "Pumping of ground water"
             },
             {
               "key": "b",
-              "text": "Keep each irrigation dose but shorten the watering interval"
+              "text": "Extensive irrigation"
             },
             {
               "key": "c",
-              "text": "Match applications to crop deficits and improve drainage"
+              "text": "Over and intensive irrigation"
             },
             {
               "key": "d",
-              "text": "Improve supply-canal capacity without changing field applications"
+              "text": "Lining of canals"
             }
           ],
           "answer": "c",
-          "explanation": "Over-application can create excess groundwater recharge even where crops are productive. Scheduling to actual deficits and providing removal capacity addresses the imbalance. Extensive or intensive are not sufficient diagnoses without per-area inputs and drainage conditions.<p>Source note: Page 29 point 91 is grammatically damaged. Its resolvable principle is excessive irrigation relative to crop use and drainage; no blanket extensive-versus-intensive rule is inferred.</p><p>Capsule 4th ed., p. 29; topic 7 point 91.</p>",
+          "explanation": "Heavy, intensive irrigation of a limited area adds more water than the crop uses, so the excess percolates and raises the water table; extensive irrigation, spreading the supply thinly over a larger area, is suggested instead.<p>Capsule 4th ed., p. 29; topic 7 point 91.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4995,32 +4995,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00091",
           "src": "CAP4-07-00091",
-          "text": "A farmer doubles the frequency of an unchanged large irrigation dose while crop demand and drainage capacity remain fixed. Why is this not a reliable waterlogging remedy?",
+          "text": "Which of the following does not prevent waterlogging?",
           "options": [
             {
               "key": "a",
-              "text": "Shorter intervals reduce seasonal volume even with an unchanged dose"
+              "text": "Lining of canals"
             },
             {
               "key": "b",
-              "text": "The fixed drainage system must remove the additional recharge immediately"
+              "text": "Providing efficient drainage"
             },
             {
               "key": "c",
-              "text": "A smaller depletion before each dose prevents deep percolation"
+              "text": "Pumping of ground water"
             },
             {
               "key": "d",
-              "text": "It can increase excess recharge beyond the removal capacity"
+              "text": "Frequent irrigation"
             }
           ],
           "answer": "d",
-          "explanation": "With the dose unchanged, more frequent applications increase total supply and potentially excess percolation. Frequency alone neither prevents nor inevitably causes waterlogging: appropriately sized frequent applications can be efficient. The depth-time water balance governs.<p>Source note: Page 29 point 92: clarified that frequent irrigation is not intrinsically protective or intrinsically harmful.</p><p>Capsule 4th ed., p. 29; topic 7 point 92.</p>",
+          "explanation": "Lining canals, providing drainage and pumping ground water all limit or lower the water table; frequent irrigation adds more water to the soil, so it does not prevent waterlogging.<p>Capsule 4th ed., p. 29; topic 7 point 92.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5033,32 +5033,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00092",
           "src": "CAP4-07-00092",
-          "text": "Waterlogged farmland must export excess field water to a receiving outfall. Which system is designed for that task rather than for disposing of surplus water still inside the supply canal?",
+          "text": "The drainage provided to escape water from a waterlogged area is by ______.",
           "options": [
             {
               "key": "a",
-              "text": "Canal escape alone"
+              "text": "Canal escapes"
             },
             {
               "key": "b",
-              "text": "Field drainage network"
+              "text": "Drains"
             },
             {
               "key": "c",
-              "text": "Irrigation farm pond without an outlet"
+              "text": "Aqueducts"
             },
             {
               "key": "d",
-              "text": "Canal head regulator"
+              "text": "Head regulators"
             }
           ],
           "answer": "b",
-          "explanation": "A drainage network collects excess surface or subsurface field water and conveys it to a viable outfall. A canal escape disposes of surplus supply-channel water; unless connected and designed accordingly, it does not drain the saturated farmland.<p>Capsule 4th ed., p. 29; topic 7 point 93.</p>",
+          "explanation": "Surface and subsurface drains collect the excess water from waterlogged land and carry it to a natural outlet; a canal escape only removes surplus water from a canal.<p>Capsule 4th ed., p. 29; topic 7 point 93.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5071,32 +5071,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00093",
           "src": "CAP4-07-00093",
-          "text": "An unlined surface drain needs a finite bed width and stable sloping earth banks. Which common section provides those features without assuming unsupported vertical soil faces?",
+          "text": "The optimal shape for a surface drain is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Triangular section with zero bed width"
+              "text": "Triangular"
             },
             {
               "key": "b",
-              "text": "Semicircular section with curved walls"
+              "text": "Semicircular"
             },
             {
               "key": "c",
-              "text": "Trapezoidal section"
+              "text": "Trapezoidal"
             },
             {
               "key": "d",
-              "text": "Rectangular section with vertical earth walls"
+              "text": "Rectangular"
             }
           ],
           "answer": "c",
-          "explanation": "A trapezoid combines a bed width with selected stable side slopes and is practical for many open earth drains. It is not universally optimal: hydraulics, land, maintenance, lining and geotechnical stability determine the final shape and dimensions.<p>Source note: Page 29 point 94: practical suitability replaces an unqualified claim of universal optimality.</p><p>Capsule 4th ed., p. 29; topic 7 point 94.</p>",
+          "explanation": "A trapezoidal section has a bed width for the flow and stable side slopes that need no support, so it is the usual and optimal shape for earthen surface drains.<p>Capsule 4th ed., p. 29; topic 7 point 94.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5109,32 +5109,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00094",
           "src": "CAP4-07-00094",
-          "text": "A waterlogged field has measured soil pH 11. What conclusion is justified before specifying reclamation treatment?",
+          "text": "The top soil of a waterlogged field becomes more alkaline and infertile if its pH value is ______.",
           "options": [
             {
               "key": "a",
-              "text": "It is strongly alkaline; diagnose salinity and sodium status separately"
+              "text": "11"
             },
             {
               "key": "b",
-              "text": "The pH alone determines its exchangeable sodium percentage"
+              "text": "7"
             },
             {
               "key": "c",
-              "text": "The pH alone proves that leaching without amendment is sufficient"
+              "text": "5"
             },
             {
               "key": "d",
-              "text": "The pH alone gives its saturated-extract electrical conductivity"
+              "text": "3"
             }
           ],
           "answer": "a",
-          "explanation": "A pH of 11 indicates strong alkalinity and can severely constrain many crops. It does not alone measure dissolved-salt concentration or exchangeable sodium, and waterlogging does not inevitably produce that pH. Aeration and chemical diagnosis both matter.<p>Source note: Page 29 point 95: pH 11 is not a universal threshold defining waterlogging or infertility; saline, sodic and saturated conditions are distinguished.</p><p>Capsule 4th ed., p. 29; topic 7 point 95.</p>",
+          "explanation": "Waterlogging brings salts to the surface as the water evaporates; a soil pH of about 11 is strongly alkaline, and such alkaline top soil becomes infertile.<p>Capsule 4th ed., p. 29; topic 7 point 95.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5147,32 +5147,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00101",
           "src": "CAP4-07-00101",
-          "text": "A field remains saturated and crop roots deteriorate even after all visible weeds are removed. Which direct waterlogging mechanism explains this?",
+          "text": "When soil is waterlogged, it becomes infertile due to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Slow oxygen supply through water-filled pores restricts root respiration"
+              "text": "The growing of weeds"
             },
             {
               "key": "b",
-              "text": "Saturation necessarily raises exchangeable sodium in every soil"
+              "text": "Faster root growth"
             },
             {
               "key": "c",
-              "text": "Saturation alone proves osmotic stress from dissolved salts"
+              "text": "Increased aeration"
             },
             {
               "key": "d",
-              "text": "Competition from weeds is the only remaining explanation"
+              "text": "Higher soil temperature"
             }
           ],
           "answer": "a",
-          "explanation": "Water-filled pores greatly restrict oxygen diffusion relative to air-filled pores. Root and microbial respiration can then create oxygen deficiency and harmful reduced conditions. Weeds may accompany wetness, but they are not the fundamental or only cause of crop impairment.<p>Source note: Page 29 point 102: corrected the weed-only explanation of waterlogging-related loss of productivity.</p><p>Capsule 4th ed., p. 29; topic 7 point 102.</p>",
+          "explanation": "Waterlogged land favours the growth of weeds and water-loving plants that crowd out the crop, so the soil becomes infertile for cultivation.<p>Capsule 4th ed., p. 29; topic 7 point 102.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5185,32 +5185,32 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-07-00133",
           "src": "CAP4-07-00133",
-          "text": "In a simplified comparison, 60000 cubic metres infiltrates uniformly over either 100 ha or 200 ha in a week. Each hectare needs 30 mm and starts with no spare storage; neglect other flows. Which allocation avoids irrigation excess in this comparison?",
+          "text": "To reduce waterlogging, ______ irrigation is suggested instead of intensive irrigation.",
           "options": [
             {
               "key": "a",
-              "text": "100 ha: 60 mm applied and zero excess"
+              "text": "Over"
             },
             {
               "key": "b",
-              "text": "200 ha: 60 mm applied and 30 mm excess"
+              "text": "Continuous"
             },
             {
               "key": "c",
-              "text": "100 ha: 30 mm applied and zero excess"
+              "text": "Flood"
             },
             {
               "key": "d",
-              "text": "200 ha: 30 mm applied and zero excess"
+              "text": "Extensive"
             }
           ],
           "answer": "d",
-          "explanation": "Applied depth is volume divided by area: \\[\\dfrac{60{,}000}{100 \\times 10{,}000} = 0.06\\ \\text{m}\\] \\[\\dfrac{60{,}000}{200 \\times 10{,}000} = 0.03\\ \\text{m}\\] Against the 30 mm need, the first case has 30 mm excess and the second none. Spreading a fixed supply can reduce over-application, but only with adequate crop supply and drainage.<p>Source note: Page 29 point 91: appended a conditional extensive-versus-concentrated irrigation comparison for the damaged source wording. It does not declare extensive irrigation universally safe or all intensive irrigation waterlogging-prone.</p><p>Capsule 4th ed., p. 29; topic 7 point 91.</p>",
+          "explanation": "Intensive irrigation over-waters a limited area and causes waterlogging; extensive irrigation spreads the same supply thinly over a larger area, so less water percolates to the water table.<p>Capsule 4th ed., p. 29; topic 7 point 91.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5223,7 +5223,7 @@ window.CIVIL_SET_DATA["capsule-07"] = {
             ]
           },
           "topic": "ACiE0706",
-          "kind": "calculation"
+          "kind": "recall"
         }
       ]
     }

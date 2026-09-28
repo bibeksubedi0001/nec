@@ -11,27 +11,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-02-00066",
           "src": "CAP4-02-00066",
-          "text": "At ordinary laboratory temperature and atmospheric initial pressure, why is pore water often treated as nearly incompressible compared with entrapped air in elementary soil mechanics?",
+          "text": "Water has its minimum compressibility at ______.",
           "options": [
             {
               "key": "a",
-              "text": "Water has a much larger bulk modulus than air"
+              "text": "Room temperature"
             },
             {
               "key": "b",
-              "text": "Water has exactly zero compressibility at room temperature"
+              "text": "4 °C"
             },
             {
               "key": "c",
-              "text": "Water has minimum compressibility among every soil constituent"
+              "text": "100 °C"
             },
             {
               "key": "d",
-              "text": "Water has a much smaller bulk modulus than air"
+              "text": "0 °C"
             }
           ],
           "answer": "a",
-          "explanation": "Compressibility is the reciprocal of bulk modulus. Liquid water is far less compressible than air under these conditions, but it is not perfectly incompressible and mineral solids can be stiffer. Room temperature is not a universal minimum-compressibility condition.<p>Source note: Page 8 point 61 provides no comparison set or thermodynamic condition for &#39;minimum&#39;; replaced by the robust water-versus-air principle, not a claimed temperature of minimum compressibility.</p><p>Capsule 4th ed., p. 8; topic 2 point 61.</p>",
+          "explanation": "Water has its minimum compressibility at about room temperature, which is why pore water is treated as practically incompressible in soil mechanics, unlike the air in the pores.<p>Capsule 4th ed., p. 8; topic 2 point 61.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -44,32 +44,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00001",
           "src": "CAP4-03-00001",
-          "text": "Water rises 18 mm in a clean vertical capillary supplied by a large reservoir. If its internal radius is tripled while temperature and contact angle remain unchanged, what is the new equilibrium rise?",
+          "text": "The rise of a liquid in a capillary tube depends on the ______ of the tube.",
           "options": [
             {
               "key": "a",
-              "text": "2 mm"
+              "text": "Wall thickness"
             },
             {
               "key": "b",
-              "text": "18 mm"
+              "text": "Outer radius"
             },
             {
               "key": "c",
-              "text": "6 mm"
+              "text": "Inner radius"
             },
             {
               "key": "d",
-              "text": "54 mm"
+              "text": "Length"
             }
           ],
           "answer": "c",
-          "explanation": "The vertical surface-tension force scales with radius, whereas column weight scales with radius squared times height. Thus \\(h \\propto \\dfrac{1}{r}\\) and the new rise is \\[\\dfrac{18}{3} = 6\\ \\text{mm}\\] neglecting meniscus volume.<p>Capsule 4th ed., p. 10; topic 3 point 1.</p>",
+          "explanation": "Capillary rise is \\(h = \\dfrac{4\\sigma\\cos\\theta}{\\rho gd}\\), so it is inversely proportional to the inner diameter (radius) of the tube: a narrower tube gives a greater rise. The length and wall thickness of the tube do not matter.<p>Capsule 4th ed., p. 10; topic 3 point 1.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -82,12 +82,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00002",
           "src": "CAP4-03-00002",
-          "text": "Two vertical glass capillaries dip into the same water reservoir with identical contact angles. Their equilibrium rises satisfy hP/hQ = 2/3. What is the ratio of internal diameters dP:dQ?",
+          "text": "Two capillary tubes P and Q are dipped in water. The height of water in P is 2/3 of the height in Q. The ratio of their diameters is ______.",
           "options": [
             {
               "key": "a",
@@ -107,7 +107,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "For matching fluid, gravity and wetting conditions, \\[h = \\dfrac{4\\sigma\\cos\\theta}{\\rho g d}\\] so \\(hd\\) is constant. Therefore \\[\\dfrac{d_P}{d_Q} = \\dfrac{h_Q}{h_P} = \\dfrac{3}{2}\\] This is a reservoir-fed equilibrium, not a comparison of equal poured volumes.<p>Source note: Page 10 point 2 loses the denominator in its point extract; the complete page text and corrected local capillary notes retain 2/3.</p><p>Capsule 4th ed., p. 10; topic 3 point 2.</p>",
+          "explanation": "For matching fluid, gravity and wetting conditions, \\[h = \\dfrac{4\\sigma\\cos\\theta}{\\rho g d}\\] so \\(hd\\) is constant. Therefore \\[\\dfrac{d_P}{d_Q} = \\dfrac{h_Q}{h_P} = \\dfrac{3}{2}\\] This is a reservoir-fed equilibrium, not a comparison of equal poured volumes.<p>Capsule 4th ed., p. 10; topic 3 point 2.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -125,27 +125,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00003",
           "src": "CAP4-03-00003",
-          "text": "A wetting liquid rises in a narrow tube even though no pump is connected. Which interaction supplies the upward force at the tube's contact line?",
+          "text": "The rise of a liquid in a capillary tube is due to ______.",
           "options": [
             {
               "key": "a",
-              "text": "An excess atmospheric pressure inside the tube"
+              "text": "Compressibility"
             },
             {
               "key": "b",
-              "text": "The vertical component of surface tension"
+              "text": "Surface tension"
             },
             {
               "key": "c",
-              "text": "The liquid's upward gravitational force"
+              "text": "Vapour pressure"
             },
             {
               "key": "d",
-              "text": "Viscous shear from the stationary wall"
+              "text": "Viscosity"
             }
           ],
           "answer": "b",
-          "explanation": "Surface tension acts along the liquid interface and has an upward component for a wetting contact angle. This component supports the raised liquid column. Viscosity affects the approach to equilibrium but is not the static supporting force.<p>Capsule 4th ed., p. 10; topic 3 point 3.</p>",
+          "explanation": "Capillary rise is caused by surface tension: adhesion to the tube wall and surface tension at the meniscus pull the liquid up until the weight of the raised column balances the vertical surface-tension force.<p>Capsule 4th ed., p. 10; topic 3 point 3.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -158,32 +158,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00004",
           "src": "CAP4-03-00004",
-          "text": "Heating a wetting liquid reduces its surface tension by 10% while changes in density and contact angle are negligible. In the same capillary, how does the equilibrium rise change?",
+          "text": "For a liquid, the capillary rise (or fall) ______ with a rise in temperature.",
           "options": [
             {
               "key": "a",
-              "text": "It decreases by 19%"
+              "text": "Remains unchanged"
             },
             {
               "key": "b",
-              "text": "It remains unchanged"
+              "text": "First increases, then decreases"
             },
             {
               "key": "c",
-              "text": "It increases by 10%"
+              "text": "Increases"
             },
             {
               "key": "d",
-              "text": "It decreases by 10%"
+              "text": "Decreases"
             }
           ],
           "answer": "d",
-          "explanation": "At fixed radius, density, contact angle and gravity, h is proportional to surface tension. Multiplying surface tension by 0.90 therefore multiplies h by 0.90. A universal temperature rule would require checking density and wetting changes as well.<p>Source note: Page 10 point 4 is a usual trend, not an unconditional law for every liquid and temperature range.</p><p>Capsule 4th ed., p. 10; topic 3 point 4.</p>",
+          "explanation": "Surface tension decreases as temperature rises, and capillary rise is proportional to surface tension, so the capillary rise (or fall) of a liquid decreases with a rise in temperature.<p>Capsule 4th ed., p. 10; topic 3 point 4.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -196,32 +196,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00005",
           "src": "CAP4-03-00005",
-          "text": "For a vertical circular capillary of internal radius r, a liquid has surface tension sigma and contact angle theta measured through the liquid. Neglecting meniscus volume, which equation balances the raised column at equilibrium?",
+          "text": "In a capillary tube of radius \\(r\\), the force balance for a capillary rise \\(h\\) is ______.",
           "options": [
             {
               "key": "a",
-              "text": "2 pi r sigma cos(theta) = rho g pi r h"
+              "text": "\\(2\\pi r\\sigma\\cos\\theta = \\rho g\\,\\pi r h\\)"
             },
             {
               "key": "b",
-              "text": "2 pi r sigma cos(theta) = rho g pi r squared h"
+              "text": "\\(2\\pi r\\sigma\\cos\\theta = \\rho g\\,\\pi r^2 h\\)"
             },
             {
               "key": "c",
-              "text": "2 pi r sigma sin(theta) = rho g pi r squared h"
+              "text": "\\(2\\pi r\\sigma\\sin\\theta = \\rho g\\,\\pi r^2 h\\)"
             },
             {
               "key": "d",
-              "text": "pi r squared sigma cos(theta) = rho g pi r squared h"
+              "text": "\\(\\pi r^2\\sigma\\cos\\theta = \\rho g\\,\\pi r^2 h\\)"
             }
           ],
           "answer": "b",
-          "explanation": "The contact-line perimeter is \\(2\\pi r\\), so the upward interfacial force is \\(2\\pi r\\sigma\\cos\\theta\\). The raised column weighs \\(\\rho g\\pi r^2 h\\). Equating these gives \\[2\\pi r\\sigma\\cos\\theta = \\rho g\\pi r^2 h\\] \\[h = \\dfrac{2\\sigma\\cos\\theta}{\\rho g r}\\]<p>Source note: Page 10 point 5 is incomplete as a proposition; the question tests the underlying force balance without inventing missing source data.</p><p>Capsule 4th ed., p. 10; topic 3 point 5.</p>",
+          "explanation": "The force responsible is surface tension: its vertical component around the wetted perimeter, \\(2\\pi r\\sigma\\cos\\theta\\), balances the weight of the raised column, \\(\\rho g\\pi r^2h\\), giving \\(h = \\dfrac{2\\sigma\\cos\\theta}{\\rho gr}\\).<p>Capsule 4th ed., p. 10; topic 3 point 5.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -234,32 +234,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00006",
           "src": "CAP4-03-00006",
-          "text": "A pump develops vapour cavities when its local absolute pressure becomes too low. Which fluid property sets the relevant pressure threshold at the operating temperature?",
+          "text": "In matching fluid properties with related phenomena, vapour pressure is matched with ______.",
           "options": [
             {
               "key": "a",
-              "text": "Bulk modulus"
+              "text": "Surface tension"
             },
             {
               "key": "b",
-              "text": "Dynamic viscosity"
+              "text": "Shear forces"
             },
             {
               "key": "c",
-              "text": "Vapour pressure"
+              "text": "Cavitation"
             },
             {
               "key": "d",
-              "text": "Specific gravity"
+              "text": "Density of water"
             }
           ],
           "answer": "c",
-          "explanation": "Cavitation becomes possible when local absolute pressure falls to approximately the liquid's vapour pressure. Viscosity influences losses but is not the phase-change pressure threshold.<p>Capsule 4th ed., pp. 10, 11; topic 3 point 6.</p>",
+          "explanation": "Cavitation occurs where the local pressure falls to the vapour pressure of the liquid, so vapour pressure is matched with cavitation. The full matching is capillarity with surface tension, vapour pressure with cavitation, viscosity with shear forces and specific gravity with density of water.<p>Capsule 4th ed., pp. 10, 11; topic 3 point 6.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -273,32 +273,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00007",
           "src": "CAP4-03-00007",
-          "text": "An oil's specific gravity is to be calculated from its measured density. Which reference quantity belongs in the denominator under the conventional liquid definition?",
+          "text": "In matching fluid properties with related phenomena, specific gravity is matched with ______.",
           "options": [
             {
               "key": "a",
-              "text": "Water specific weight at the stated temperature"
+              "text": "Shear forces"
             },
             {
               "key": "b",
-              "text": "Oil specific volume at the measured temperature"
+              "text": "Surface tension"
             },
             {
               "key": "c",
-              "text": "Air density at the same atmospheric pressure"
+              "text": "Cavitation"
             },
             {
               "key": "d",
-              "text": "Water density at the stated reference temperature"
+              "text": "Density of water"
             }
           ],
           "answer": "d",
-          "explanation": "Liquid specific gravity is the dimensionless ratio of liquid density to reference-water density. Dividing density by specific weight or specific volume would not produce the required dimensionless ratio.<p>Capsule 4th ed., pp. 10, 11; topic 3 point 6.</p>",
+          "explanation": "Specific gravity is the ratio of the density of a liquid to the density of water, so it is matched with density of water. The other pairs are capillarity with surface tension, vapour pressure with cavitation and viscosity with shear forces.<p>Capsule 4th ed., pp. 10, 11; topic 3 point 6.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -312,20 +312,59 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00008",
           "src": "CAP4-03-00008",
-          "text": "Two Newtonian oils have the same density but develop different shear stresses at the same velocity gradient and temperature. Which property directly explains the difference?",
+          "text": "In matching fluid properties with related phenomena, viscosity is matched with ______.",
           "options": [
             {
               "key": "a",
-              "text": "Vapour pressure"
+              "text": "Surface tension"
             },
             {
               "key": "b",
-              "text": "Dynamic viscosity"
+              "text": "Shear forces"
+            },
+            {
+              "key": "c",
+              "text": "Density of water"
+            },
+            {
+              "key": "d",
+              "text": "Cavitation"
+            }
+          ],
+          "answer": "b",
+          "explanation": "Viscosity is the property that resists shear: shear stress equals viscosity times velocity gradient, so viscosity is matched with shear forces. The other pairs are capillarity with surface tension, vapour pressure with cavitation and specific gravity with density of water.<p>Capsule 4th ed., pp. 10, 11; topic 3 point 6.</p>",
+          "source": {
+            "kind": "capsule",
+            "edition": 4,
+            "reference": "Capsule 4th ed., pp. 10, 11; topic 3 point 6",
+            "pages": [
+              10,
+              11
+            ],
+            "points": [
+              "capsule-t03-p010-n6"
+            ]
+          },
+          "topic": "ACiE0301",
+          "kind": "recall"
+        },
+        {
+          "id": "CAP4-03-00009",
+          "src": "CAP4-03-00009",
+          "text": "In matching fluid properties with related phenomena, capillarity is matched with ______.",
+          "options": [
+            {
+              "key": "a",
+              "text": "Shear forces"
+            },
+            {
+              "key": "b",
+              "text": "Cavitation"
             },
             {
               "key": "c",
@@ -333,50 +372,11 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             },
             {
               "key": "d",
-              "text": "Specific gravity"
-            }
-          ],
-          "answer": "b",
-          "explanation": "Newton's viscosity law is \\[\\tau = \\mu\\dfrac{du}{dy}\\] Equal gradients therefore produce stresses in proportion to dynamic viscosity, even when the densities match.<p>Capsule 4th ed., pp. 10, 11; topic 3 point 6.</p>",
-          "source": {
-            "kind": "capsule",
-            "edition": 4,
-            "reference": "Capsule 4th ed., pp. 10, 11; topic 3 point 6",
-            "pages": [
-              10,
-              11
-            ],
-            "points": [
-              "capsule-t03-p010-n6"
-            ]
-          },
-          "topic": "ACiE0301",
-          "kind": "application"
-        },
-        {
-          "id": "CAP4-03-00009",
-          "src": "CAP4-03-00009",
-          "text": "Which property-phenomenon pairing explains a curved meniscus rising above a reservoir in a clean narrow glass tube?",
-          "options": [
-            {
-              "key": "a",
-              "text": "Viscosity and static compressibility"
-            },
-            {
-              "key": "b",
-              "text": "Vapour pressure and hydrostatic thrust"
-            },
-            {
-              "key": "c",
-              "text": "Surface tension and capillarity"
-            },
-            {
-              "key": "d",
-              "text": "Specific gravity and fluid shear elasticity"
+              "text": "Density of water"
             }
           ],
           "answer": "c",
-          "explanation": "Capillarity is an interfacial effect involving surface tension and wetting at the solid wall. Density controls the column weight, but density alone cannot provide the upward contact-line force.<p>Capsule 4th ed., pp. 10, 11; topic 3 point 6.</p>",
+          "explanation": "Capillary rise and fall result from surface tension, so capillarity is matched with surface tension. The other pairs are vapour pressure with cavitation, viscosity with shear forces and specific gravity with density of water.<p>Capsule 4th ed., pp. 10, 11; topic 3 point 6.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -390,32 +390,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00010",
           "src": "CAP4-03-00010",
-          "text": "Equal masses of pure liquid water at ordinary atmospheric pressure are held at 1, 4, 10 and 20 degrees Celsius. Which sample occupies the smallest volume?",
+          "text": "The density of water is maximum at ______.",
           "options": [
             {
               "key": "a",
-              "text": "The 1-degree sample"
+              "text": "0 °C"
             },
             {
               "key": "b",
-              "text": "The 10-degree sample"
+              "text": "10 °C"
             },
             {
               "key": "c",
-              "text": "The 20-degree sample"
+              "text": "100 °C"
             },
             {
               "key": "d",
-              "text": "The 4-degree sample"
+              "text": "4 °C"
             }
           ],
           "answer": "d",
-          "explanation": "Volume equals mass divided by density. Pure freshwater has its maximum density near 4 degrees Celsius at ordinary pressure, so the equal-mass sample there has the smallest volume; cooling below this temperature reverses the usual contraction trend.<p>Capsule 4th ed., p. 11; topic 3 point 7.</p>",
+          "explanation": "Water is densest at 4 °C, where its density is about 1000 kg per m<sup>3</sup>. It expands when cooled below 4 °C, which is why ice forms at the top of lakes.<p>Capsule 4th ed., p. 11; topic 3 point 7.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -428,32 +428,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00011",
           "src": "CAP4-03-00011",
-          "text": "A liquid's measured bulk modulus increases as its operating pressure rises along a fixed-temperature path. For the same small additional pressure increment, what happens to the magnitude of its fractional volume change?",
+          "text": "The bulk modulus of a liquid ______ with increase in pressure.",
           "options": [
             {
               "key": "a",
-              "text": "It stays unchanged"
+              "text": "Remains constant"
             },
             {
               "key": "b",
-              "text": "It increases"
+              "text": "Decreases"
             },
             {
               "key": "c",
-              "text": "It decreases"
+              "text": "Increases"
             },
             {
               "key": "d",
-              "text": "It changes from contraction to expansion"
+              "text": "Becomes zero"
             }
           ],
           "answer": "c",
-          "explanation": "By definition of the bulk modulus, \\[\\dfrac{dV}{V} = -\\dfrac{dp}{K}\\] so the magnitude of the small volume strain is \\(\\dfrac{dp}{K}\\). A larger measured \\(K\\) gives less compression. Increasing \\(K\\) with pressure is a common liquid trend, not a universal consequence of the definition.<p>Source note: p11 n8: pressure dependence is state- and path-dependent; qualified using measured K.</p><p>Capsule 4th ed., p. 11; topic 3 point 8.</p>",
+          "explanation": "As a liquid is compressed, its molecules are packed more closely and further compression becomes harder, so the bulk modulus of the liquid increases with pressure.<p>Capsule 4th ed., p. 11; topic 3 point 8.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -466,32 +466,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00012",
           "src": "CAP4-03-00012",
-          "text": "At a fixed temperature, a fluid's shear stress versus shear-rate curve is nonlinear through the origin. Which constitutive description is incompatible with these observations?",
+          "text": "A non-Newtonian fluid is one which ______.",
           "options": [
             {
               "key": "a",
-              "text": "A Newtonian fluid with constant dynamic viscosity"
+              "text": "Does not follow Newton's law of viscosity"
             },
             {
               "key": "b",
-              "text": "A shear-thickening power-law fluid"
+              "text": "Is incompressible"
             },
             {
               "key": "c",
-              "text": "A shear-thinning power-law fluid"
+              "text": "Has zero viscosity"
             },
             {
               "key": "d",
-              "text": "A fluid with shear-rate-dependent apparent viscosity"
+              "text": "Has a constant viscosity at all rates of shear"
             }
           ],
           "answer": "a",
-          "explanation": "A Newtonian fluid obeys \\[\\tau = \\mu\\dot\\gamma\\] with constant \\(\\mu\\) at the specified state, giving a straight line through the origin. Nonlinearity indicates non-Newtonian behaviour; its curvature is needed to distinguish thinning from thickening.<p>Capsule 4th ed., p. 11; topic 3 point 9.</p>",
+          "explanation": "A non-Newtonian fluid does not follow Newton's law of viscosity, \\(\\tau = \\mu\\dfrac{du}{dy}\\) with constant \\(\\mu\\): its shear stress is not proportional to the velocity gradient. Paints, blood and peanut butter are examples.<p>Capsule 4th ed., p. 11; topic 3 point 9.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -504,32 +504,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00013",
           "src": "CAP4-03-00013",
-          "text": "A peanut-butter sample resists spreading until a finite stress is exceeded, then its apparent viscosity varies with spreading rate. Which model category should be investigated first?",
+          "text": "Peanut butter is an example of a ______ fluid.",
           "options": [
             {
               "key": "a",
-              "text": "An inviscid incompressible-fluid model"
+              "text": "Ideal"
             },
             {
               "key": "b",
-              "text": "A constant-viscosity Newtonian model"
+              "text": "Newtonian"
             },
             {
               "key": "c",
-              "text": "A non-Newtonian yield-stress model"
+              "text": "Non-Newtonian"
             },
             {
               "key": "d",
-              "text": "A linearly elastic solid at every strain"
+              "text": "Compressible"
             }
           ],
           "answer": "c",
-          "explanation": "The observed yield threshold and rate-dependent resistance are not represented by constant-mu Newtonian viscosity. Peanut butter commonly exhibits non-Newtonian behavior, but an exact rheological law must be fitted to the particular sample and temperature.<p>Capsule 4th ed., p. 11; topic 3 point 10.</p>",
+          "explanation": "Peanut butter does not flow until a certain stress is applied, and its apparent viscosity changes with the rate of shear, so it is a non-Newtonian fluid. Water and air are Newtonian fluids.<p>Capsule 4th ed., p. 11; topic 3 point 10.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -542,32 +542,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00014",
           "src": "CAP4-03-00014",
-          "text": "An oil has density 800 kg/m<sup>3</sup>. What is its specific volume?",
+          "text": "Specific volume is defined as the reciprocal of ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.0125 m<sup>3</sup>/kg"
+              "text": "Specific weight"
             },
             {
               "key": "b",
-              "text": "800 m<sup>3</sup>/kg"
+              "text": "Viscosity"
             },
             {
               "key": "c",
-              "text": "1.25 m<sup>3</sup>/kg"
+              "text": "Specific gravity"
             },
             {
               "key": "d",
-              "text": "0.00125 m<sup>3</sup>/kg"
+              "text": "Density"
             }
           ],
           "answer": "d",
-          "explanation": "Specific volume is volume per unit mass: \\[\\begin{aligned} v &amp;= \\dfrac{1}{\\rho} = \\dfrac{1}{800} \\\\ &amp;= 0.00125\\ \\text{m}^3\\text{/kg} \\end{aligned}\\] It is not specific gravity, which is a dimensionless density ratio.<p>Capsule 4th ed., p. 11; topic 3 point 11.</p>",
+          "explanation": "Specific volume is volume per unit mass, \\(v = \\dfrac{1}{\\rho}\\), the reciprocal of density; for water it is about 0.001 m<sup>3</sup> per kg.<p>Capsule 4th ed., p. 11; topic 3 point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -580,32 +580,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00015",
           "src": "CAP4-03-00015",
-          "text": "An oil film separates a moving plate from a fixed plate. Which material property relates the tangential resistance to the velocity gradient for Newtonian behavior?",
+          "text": "The resistance to flow of a fluid is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Vapour pressure"
+              "text": "Capillarity"
             },
             {
               "key": "b",
-              "text": "Dynamic viscosity"
+              "text": "Viscosity"
             },
             {
               "key": "c",
-              "text": "Surface tension"
+              "text": "Compressibility"
             },
             {
               "key": "d",
-              "text": "Bulk modulus"
+              "text": "Surface tension"
             }
           ],
           "answer": "b",
-          "explanation": "Viscosity describes resistance to shearing motion between adjacent fluid layers: \\[\\tau = \\mu\\dfrac{du}{dy}\\] Bulk modulus concerns volume compression, while surface tension concerns an interface rather than shear within the oil.<p>Capsule 4th ed., p. 11; topic 3 point 12.</p>",
+          "explanation": "Viscosity is the property by which a fluid resists flow, that is, the relative motion of its layers. Honey has a high viscosity and water a low one.<p>Capsule 4th ed., p. 11; topic 3 point 12.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -618,32 +618,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00016",
           "src": "CAP4-03-00016",
-          "text": "A flow calculation requires kinematic viscosity nu = mu/rho. Which dimensional formula should the input have?",
+          "text": "The dimension of kinematic viscosity is ______.",
           "options": [
             {
               "key": "a",
-              "text": "L<sup>2</sup>T<sup>-1</sup>"
+              "text": "\\(\\mathrm{M^0L^2T^{-1}}\\)"
             },
             {
               "key": "b",
-              "text": "ML<sup>-3</sup>"
+              "text": "\\(\\mathrm{ML^{-3}}\\)"
             },
             {
               "key": "c",
-              "text": "ML<sup>-1</sup>T<sup>-1</sup>"
+              "text": "\\(\\mathrm{ML^{-1}T^{-1}}\\)"
             },
             {
               "key": "d",
-              "text": "L<sup>2</sup>T<sup>-2</sup>"
+              "text": "\\(\\mathrm{M^0L^2T^{-2}}\\)"
             }
           ],
           "answer": "a",
-          "explanation": "Dynamic viscosity has dimensions \\(ML^{-1}T^{-1}\\) and density has \\(ML^{-3}\\). Their ratio cancels mass: \\[\\dfrac{ML^{-1}T^{-1}}{ML^{-3}} = L^2T^{-1}\\] This corresponds to \\(\\text{m}^2\\text{/s}\\) rather than Pa s.<p>Capsule 4th ed., p. 11; topic 3 point 13.</p>",
+          "explanation": "Kinematic viscosity is dynamic viscosity divided by density, \\(\\nu = \\dfrac{\\mu}{\\rho}\\). Its unit is the square metre per second (the stokes in CGS units), so its dimension is \\(\\mathrm{M^0L^2T^{-1}}\\); dynamic viscosity has \\(\\mathrm{ML^{-1}T^{-1}}\\).<p>Capsule 4th ed., p. 11; topic 3 point 13.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -656,32 +656,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00017",
           "src": "CAP4-03-00017",
-          "text": "Over an ordinary operating-temperature range, how does heating usually affect the dynamic viscosities of a lubricating liquid and a dilute gas?",
+          "text": "The viscosity of a liquid ______ with increase in temperature.",
           "options": [
             {
               "key": "a",
-              "text": "Both increase"
+              "text": "First decreases, then increases"
             },
             {
               "key": "b",
-              "text": "Liquid decreases; gas increases"
+              "text": "Decreases"
             },
             {
               "key": "c",
-              "text": "Liquid increases; gas decreases"
+              "text": "Increases"
             },
             {
               "key": "d",
-              "text": "Both decrease"
+              "text": "Remains constant"
             }
           ],
           "answer": "b",
-          "explanation": "Heating commonly weakens the cohesive resistance governing liquid viscosity, while increased molecular momentum transport raises dilute-gas viscosity. These are usual trends at stated operating conditions, not a law for every complex fluid.<p>Capsule 4th ed., p. 11; topic 3 point 14.</p>",
+          "explanation": "The viscosity of a liquid comes mainly from cohesion between its molecules, which weakens as temperature rises, so it decreases with increase in temperature. The viscosity of a gas, by contrast, increases.<p>Capsule 4th ed., p. 11; topic 3 point 14.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -694,32 +694,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00018",
           "src": "CAP4-03-00018",
-          "text": "In tau = mu du/dy, velocity u is measured in m/s and transverse coordinate y in metres. Which dimensions belong to du/dy?",
+          "text": "The dimensional formula of velocity gradient is ______.",
           "options": [
             {
               "key": "a",
-              "text": "T<sup>-1</sup>"
+              "text": "\\(\\mathrm{M^0L^0T^{-1}}\\)"
             },
             {
               "key": "b",
-              "text": "LT<sup>-2</sup>"
+              "text": "\\(\\mathrm{M^0LT^{-2}}\\)"
             },
             {
               "key": "c",
-              "text": "LT<sup>-1</sup>"
+              "text": "\\(\\mathrm{M^0LT^{-1}}\\)"
             },
             {
               "key": "d",
-              "text": "L<sup>-1</sup>T<sup>-1</sup>"
+              "text": "\\(\\mathrm{M^0L^{-1}T^{-1}}\\)"
             }
           ],
           "answer": "a",
-          "explanation": "Dividing the velocity dimension L/T by distance L gives 1/T. A velocity gradient is a rate of shear deformation, not a velocity or a translational acceleration.<p>Capsule 4th ed., p. 11; topic 3 point 15.</p>",
+          "explanation": "Velocity gradient is \\(\\dfrac{du}{dy}\\), a velocity divided by a distance, so its unit is per second and its dimensional formula is \\(\\mathrm{M^0L^0T^{-1}}\\).<p>Capsule 4th ed., p. 11; topic 3 point 15.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -732,32 +732,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00021",
           "src": "CAP4-03-00021",
-          "text": "A nonzero constant shear stress is maintained on an ordinary Newtonian liquid. How does its shear deformation behave while temperature and viscosity remain constant?",
+          "text": "A fluid is a substance that undergoes ______ under the action of a shearing stress.",
           "options": [
             {
               "key": "a",
-              "text": "Strain rate steadily falls to zero"
+              "text": "Complete elastic recovery"
             },
             {
               "key": "b",
-              "text": "Strain continues to accumulate with time"
+              "text": "Continuous deformation"
             },
             {
               "key": "c",
-              "text": "Strain stops at a fixed elastic value"
+              "text": "No deformation"
             },
             {
               "key": "d",
-              "text": "Strain immediately returns to zero"
+              "text": "A fixed finite deformation"
             }
           ],
           "answer": "b",
-          "explanation": "Newton's law gives a nonzero constant strain rate tau/mu. Integrating that rate means strain continues to accumulate, unlike a linear elastic solid that supports a fixed shear stress with a fixed strain.<p>Capsule 4th ed., p. 11; topic 3 point 18.</p>",
+          "explanation": "A fluid deforms continuously for as long as a shearing stress acts on it, however small the stress. A solid, by contrast, deforms by a finite amount and then resists further deformation.<p>Capsule 4th ed., p. 11; topic 3 point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -770,32 +770,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00023",
           "src": "CAP4-03-00023",
-          "text": "A very small isolated water drop is nearly spherical when gravity and air drag are negligible. Which energy argument explains this shape?",
+          "text": "The spherical shape of water drops is due to the property of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Viscosity requires equal horizontal and vertical speeds"
+              "text": "Adhesion"
             },
             {
               "key": "b",
-              "text": "Vapour pressure removes the drop's surface energy"
+              "text": "Compressibility"
             },
             {
               "key": "c",
-              "text": "A sphere minimizes surface area at fixed volume"
+              "text": "Surface tension"
             },
             {
               "key": "d",
-              "text": "A sphere maximizes surface area at fixed volume"
+              "text": "Viscosity"
             }
           ],
           "answer": "c",
-          "explanation": "Surface energy is proportional to interfacial area for constant surface tension. The sphere encloses a specified volume with the least area, so it is favored when gravity, drag and other deforming forces are negligible.<p>Capsule 4th ed., p. 11; topic 3 point 20.</p>",
+          "explanation": "Surface tension makes a liquid surface behave like a stretched membrane that tends to the least possible area. For a given volume a sphere has the least surface area, so water drops are spherical.<p>Capsule 4th ed., p. 11; topic 3 point 20.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -808,32 +808,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00024",
           "src": "CAP4-03-00024",
-          "text": "A thin soap bubble has radius 10 mm and surface tension 0.025 N/m on each of its two interfaces. What is the excess internal pressure over the surrounding air?",
+          "text": "The excess pressure inside a soap bubble of radius \\(R\\) is ______.",
           "options": [
             {
               "key": "a",
-              "text": "5 Pa"
+              "text": "\\(\\dfrac{2T}{R}\\)"
             },
             {
               "key": "b",
-              "text": "10 Pa"
+              "text": "\\(\\dfrac{4T}{R}\\)"
             },
             {
               "key": "c",
-              "text": "2.5 Pa"
+              "text": "\\(\\dfrac{8T}{R}\\)"
             },
             {
               "key": "d",
-              "text": "20 Pa"
+              "text": "\\(\\dfrac{T}{R}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "A thin soap film has two interfaces, giving \\[\\begin{aligned} \\Delta p &amp;= \\dfrac{4\\sigma}{R} = \\dfrac{4 \\times 0.025}{0.010} \\\\ &amp;= 10\\ \\text{Pa} \\end{aligned}\\] The one-interface liquid-drop expression would incorrectly halve the result.<p>Source note: p11 n21: 4T/R is excess pressure, not absolute internal pressure.</p><p>Capsule 4th ed., p. 11; topic 3 point 21.</p>",
+          "explanation": "A soap bubble has two surfaces, inner and outer, so its excess pressure is \\(\\dfrac{4T}{R}\\), twice the value \\(\\dfrac{2T}{R}\\) for a liquid drop, which has only one surface.<p>Capsule 4th ed., p. 11; topic 3 point 21.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -846,32 +846,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00058",
           "src": "CAP4-03-00058",
-          "text": "For a Newtonian oil at fixed temperature, doubling an imposed shear rate doubles the shear stress. What happens to the dynamic viscosity?",
+          "text": "Fluids which undergo strain rates proportional to the applied shear stress are termed ______ fluids.",
           "options": [
             {
               "key": "a",
-              "text": "It doubles"
+              "text": "Non-Newtonian"
             },
             {
               "key": "b",
-              "text": "It halves"
+              "text": "Ideal"
             },
             {
               "key": "c",
-              "text": "It becomes zero"
+              "text": "Bingham plastic"
             },
             {
               "key": "d",
-              "text": "It remains constant"
+              "text": "Newtonian"
             }
           ],
           "answer": "d",
-          "explanation": "Dynamic viscosity is the proportionality constant \\[\\mu = \\dfrac{\\tau}{\\dot\\gamma}\\] When stress and rate both double, their ratio is unchanged. Shear-rate-dependent viscosity would instead be non-Newtonian behaviour.<p>Capsule 4th ed., p. 12; topic 3 point 55.</p>",
+          "explanation": "In a Newtonian fluid the rate of shear strain is proportional to the applied shear stress, \\(\\tau = \\mu\\dfrac{du}{dy}\\), with a constant viscosity; water and air are Newtonian fluids.<p>Capsule 4th ed., p. 12; topic 3 point 55.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -884,32 +884,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00119",
           "src": "CAP4-03-00119",
-          "text": "For positive shear rates, a fluid follows tau = 0.05 gammaDot<sup>2</sup>, with the coefficient in consistent units. Which rheological behavior does this law describe?",
+          "text": "If the relationship between shear stress and rate of deformation is \\(\\tau = 0.05\\left(\\dfrac{du}{dy}\\right)^2\\), the type of fluid is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Bingham behavior with a finite yield intercept"
+              "text": "Bingham plastic"
             },
             {
               "key": "b",
-              "text": "Dilatant or shear-thickening behavior"
+              "text": "Dilatant"
             },
             {
               "key": "c",
-              "text": "Constant-viscosity Newtonian behavior"
+              "text": "Newtonian"
             },
             {
               "key": "d",
-              "text": "Pseudoplastic or shear-thinning behavior"
+              "text": "Pseudoplastic"
             }
           ],
           "answer": "b",
-          "explanation": "The power-law exponent is two, greater than one. Apparent viscosity is \\[\\eta = \\dfrac{\\tau}{\\dot\\gamma} = 0.05\\,\\dot\\gamma\\] which increases with shear rate, identifying shear thickening. There is no finite yield intercept in the stated equation.<p>Capsule 4th ed., p. 14; topic 3 point 117.</p>",
+          "explanation": "In the power law \\(\\tau = K\\left(\\dfrac{du}{dy}\\right)^n\\), an index greater than 1 means the apparent viscosity rises with the shear rate. With \\(n = 2\\) the fluid is dilatant (shear-thickening); \\(n \\lt 1\\) is pseudoplastic and \\(n = 1\\) Newtonian.<p>Capsule 4th ed., p. 14; topic 3 point 117.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -922,12 +922,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00120",
           "src": "CAP4-03-00120",
-          "text": "A fluid obeys tau = K gammaDot<sup>2</sup> with K = 0.05 Pa s<sup>2</sup>. At shear rate 4 s<sup>-1</sup>, what is its apparent dynamic viscosity?",
+          "text": "A fluid obeys \\(\\tau = K\\dot{\\gamma}^2\\) with \\(K = 0.05\\) Pa s<sup>2</sup>. At shear rate 4 s<sup>-1</sup>, what is its apparent dynamic viscosity?",
           "options": [
             {
               "key": "a",
@@ -965,27 +965,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00121",
           "src": "CAP4-03-00121",
-          "text": "An ideal incompressible liquid has zero volume strain under a finite pressure increment. What limiting bulk modulus is consistent with this idealization?",
+          "text": "The value of bulk modulus for an incompressible liquid is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Bulk modulus equal to dynamic viscosity"
+              "text": "Unity"
             },
             {
               "key": "b",
-              "text": "Zero bulk modulus"
+              "text": "Zero"
             },
             {
               "key": "c",
-              "text": "Infinite bulk modulus"
+              "text": "Infinite"
             },
             {
               "key": "d",
-              "text": "Finite negative bulk modulus"
+              "text": "Negative"
             }
           ],
           "answer": "c",
-          "explanation": "By definition, \\[K = -V\\dfrac{dp}{dV}\\] A finite \\(dp\\) combined with vanishing volume strain makes \\(K \\to \\infty\\), while the compressibility \\(\\dfrac{1}{K} \\to 0\\). Real liquids have large but finite bulk moduli and are only approximately incompressible.<p>Capsule 4th ed., p. 14; topic 3 point 119.</p>",
+          "explanation": "Bulk modulus is the increase in pressure per unit volumetric strain. An incompressible liquid undergoes no change of volume under any pressure, so its bulk modulus is infinite.<p>Capsule 4th ed., p. 14; topic 3 point 119.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -998,32 +998,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00124",
           "src": "CAP4-03-00124",
-          "text": "An ideal circular capillary with nonzero surface tension has no equilibrium rise or depression relative to a large reservoir. Under the simple meniscus model, what is the contact angle measured through the liquid?",
+          "text": "If a capillary tube is dipped into a liquid and the levels of the liquid inside and outside are the same, the angle of contact is ______.",
           "options": [
             {
               "key": "a",
-              "text": "90 degrees"
+              "text": "90°"
             },
             {
               "key": "b",
-              "text": "180 degrees"
+              "text": "180°"
             },
             {
               "key": "c",
-              "text": "45 degrees"
+              "text": "45°"
             },
             {
               "key": "d",
-              "text": "0 degrees"
+              "text": "0°"
             }
           ],
           "answer": "a",
-          "explanation": "The capillary relation is \\[h = \\dfrac{2\\sigma\\cos\\theta}{\\rho g r}\\] With finite positive \\(\\sigma\\), density, gravity and radius, \\(h = 0\\) requires \\(\\cos\\theta = 0\\), giving \\(\\theta = 90^\\circ\\). Wetting and nonwetting angles on either side produce rise or depression.<p>Capsule 4th ed., p. 14; topic 3 point 122.</p>",
+          "explanation": "Capillary rise is proportional to \\(\\cos\\theta\\). When there is neither rise nor fall, \\(\\cos\\theta = 0\\), so the angle of contact is 90°.<p>Capsule 4th ed., p. 14; topic 3 point 122.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1036,12 +1036,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00131",
           "src": "CAP4-03-00131",
-          "text": "An object's weight is 120 N on the Moon. Assume Earth's gravitational acceleration is exactly six times the Moon's. What is its weight on Earth?",
+          "text": "If the weight of a body on the moon's surface is 120 N, the weight of the same body on the earth's surface is ______.",
           "options": [
             {
               "key": "a",
@@ -1061,7 +1061,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Mass does not change between locations, while weight is \\(mg\\). Hence \\[\\dfrac{W_E}{W_M} = \\dfrac{g_E}{g_M} = 6\\] giving \\(6 \\times 120 = 720\\) N. The factor six is the stated approximation, not a change in the object's mass.<p>Capsule 4th ed., p. 14; topic 3 point 128.</p>",
+          "explanation": "The acceleration due to gravity on the earth is six times that on the moon, while the mass is unchanged, so \\[W_E = 6 \\times 120 = 720\\ \\text{N}\\]<p>Capsule 4th ed., p. 14; topic 3 point 128.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1079,27 +1079,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00148",
           "src": "CAP4-03-00148",
-          "text": "A nonwetting liquid is depressed below a large reservoir's surface in a narrow vertical capillary. Heating reduces surface tension while density, tube radius and the contact angle above 90 degrees remain unchanged. How does the equilibrium level move?",
+          "text": "With a rise in temperature, the capillary rise of a liquid decreases because its ______ decreases.",
           "options": [
             {
               "key": "a",
-              "text": "It rises toward the reservoir level without reaching it"
+              "text": "Surface tension"
             },
             {
               "key": "b",
-              "text": "It rises above the reservoir level"
+              "text": "Viscosity"
             },
             {
               "key": "c",
-              "text": "It falls farther below the reservoir level"
+              "text": "Density"
             },
             {
               "key": "d",
-              "text": "It stays at the original depressed level"
+              "text": "Vapour pressure"
             }
           ],
           "answer": "a",
-          "explanation": "The signed displacement is \\[h = \\dfrac{2\\sigma\\cos\\theta}{\\rho g r}\\] For a nonwetting angle \\(\\cos\\theta\\) is negative. Reducing positive \\(\\sigma\\) makes \\(h\\) less negative: the depression magnitude decreases, but its sign does not change while the contact angle remains above \\(90^\\circ\\).<p>Source note: Independent review: explicitly covers the bracketed fall case in p10 n4. Surface tension remains positive; the stipulated unchanged density and wetting conditions are essential.</p><p>Capsule 4th ed., p. 10; topic 3 point 4.</p>",
+          "explanation": "Capillary rise is \\(h = \\dfrac{4\\sigma\\cos\\theta}{\\rho gd}\\). As the temperature rises, the surface tension \\(\\sigma\\) decreases, so the capillary rise (or fall) decreases.<p>Capsule 4th ed., p. 10; topic 3 point 4.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1112,7 +1112,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0301",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -1124,27 +1124,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00025",
           "src": "CAP4-03-00025",
-          "text": "A closed rigid body is fully submerged in a homogeneous liquid at rest. What determines the resultant upward hydrostatic force?",
+          "text": "The resultant force on a body due to the fluid surrounding it is called the ______.",
           "options": [
             {
               "key": "a",
-              "text": "The weight of the displaced liquid"
+              "text": "Buoyant force"
             },
             {
               "key": "b",
-              "text": "The pressure at the body's centroid alone"
+              "text": "Surface tension force"
             },
             {
               "key": "c",
-              "text": "The weight of the submerged body"
+              "text": "Drag force"
             },
             {
               "key": "d",
-              "text": "The liquid weight vertically above the body alone"
+              "text": "Inertia force"
             }
           ],
           "answer": "a",
-          "explanation": "Integrating hydrostatic pressure over the closed surface gives buoyancy rho g times displaced volume. Horizontal components cancel and the vertical resultant equals displaced-liquid weight, whether or not the body itself is floating in equilibrium.<p>Capsule 4th ed., p. 11; topic 3 point 22.</p>",
+          "explanation": "The buoyant force is the resultant upward force exerted on a body by the fluid surrounding it; by Archimedes' principle it equals the weight of the fluid displaced.<p>Capsule 4th ed., p. 11; topic 3 point 22.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1157,32 +1157,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00026",
           "src": "CAP4-03-00026",
-          "text": "A suction-line gauge reads -25 kPa while local atmospheric pressure is 95 kPa absolute. What is the line's absolute pressure?",
+          "text": "The relation between absolute pressure, atmospheric pressure and gauge pressure is ______.",
           "options": [
             {
               "key": "a",
-              "text": "120 kPa"
+              "text": "\\(P_\\mathrm{gauge} = P_\\mathrm{abs} + P_\\mathrm{atm}\\)"
             },
             {
               "key": "b",
-              "text": "70 kPa"
+              "text": "\\(P_\\mathrm{abs} = P_\\mathrm{atm} + P_\\mathrm{gauge}\\)"
             },
             {
               "key": "c",
-              "text": "-70 kPa"
+              "text": "\\(P_\\mathrm{atm} = P_\\mathrm{abs} + P_\\mathrm{gauge}\\)"
             },
             {
               "key": "d",
-              "text": "25 kPa"
+              "text": "\\(P_\\mathrm{abs} = P_\\mathrm{gauge} \\times P_\\mathrm{atm}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "Signed gauge pressure is \\(p_{\\text{abs}} - p_{\\text{atm}}\\), and here it is negative. Therefore \\[p_{\\text{abs}} = 95 - 25 = 70\\ \\text{kPa}\\] A vacuum reading expressed as a positive magnitude would instead be subtracted; the atmospheric term is not assigned an arbitrary plus-or-minus sign.<p>Source note: p11 n23 corrected: p_abs = p_atm + p_gauge for signed gauge pressure.</p><p>Capsule 4th ed., p. 11; topic 3 point 23.</p>",
+          "explanation": "Absolute pressure is measured from a perfect vacuum and gauge pressure from the local atmospheric pressure, so \\(P_\\mathrm{abs} = P_\\mathrm{atm} + P_\\mathrm{gauge}\\). For a vacuum (negative gauge) reading, the gauge value is subtracted from the atmospheric pressure.<p>Capsule 4th ed., p. 11; topic 3 point 23.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1195,32 +1195,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00027",
           "src": "CAP4-03-00027",
-          "text": "Normal stresses on differently oriented planes through a point in a moving viscous fluid need not be equal. Which interpretation distinguishes pressure from total stress correctly?",
+          "text": "The pressure at a point in a fluid will not be the same in all directions when the fluid is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Pressure is a vector; viscous stresses are scalar"
+              "text": "At rest"
             },
             {
               "key": "b",
-              "text": "All normal stresses must equal pressure in any flow"
+              "text": "Ideal and moving"
             },
             {
               "key": "c",
-              "text": "Pressure is undefined whenever viscosity is nonzero"
+              "text": "Ideal and at rest"
             },
             {
               "key": "d",
-              "text": "Pressure is scalar; viscous stresses can be directional"
+              "text": "Viscous and moving"
             }
           ],
           "answer": "d",
-          "explanation": "The stress tensor contains an isotropic pressure part and a viscous part. Direction-dependent total normal traction may occur in a deforming viscous fluid, but this does not make the pressure itself direction-dependent.<p>Source note: p11 n24 confuses pressure with total normal stress; see corrected hydrostatics notes.</p><p>Capsule 4th ed., p. 11; topic 3 point 24.</p>",
+          "explanation": "By Pascal's law, pressure at a point is the same in all directions when the fluid is at rest or is ideal (inviscid). In a moving viscous fluid, shear stresses make the normal stresses differ with direction.<p>Capsule 4th ed., p. 11; topic 3 point 24.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1233,32 +1233,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00028",
           "src": "CAP4-03-00028",
-          "text": "A uniform net pressure p acts normally over a hemispherical dome of radius r. What is the magnitude of its resultant along the dome's symmetry axis?",
+          "text": "The force on a hemispherical part of radius \\(r\\) acted on by a pressure \\(P_0\\) is ______.",
           "options": [
             {
               "key": "a",
-              "text": "4p pi r<sup>2</sup>"
+              "text": "\\(4\\pi r^2P_0\\)"
             },
             {
               "key": "b",
-              "text": "p pi r<sup>2</sup>"
+              "text": "\\(\\pi r^2P_0\\)"
             },
             {
               "key": "c",
-              "text": "2p pi r<sup>2</sup>"
+              "text": "\\(2\\pi r^2P_0\\)"
             },
             {
               "key": "d",
-              "text": "p pi r<sup>2</sup>/2"
+              "text": "\\(\\dfrac{\\pi r^2P_0}{2}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "The axial components integrate to pressure times the projected circular area: \\[F = p\\pi r^2\\] The curved area is \\(2\\pi r^2\\), but multiplying by that area ignores cancellation of the differently directed surface forces.<p>Source note: p11 n25 restated for uniform NET pressure; hydrostatic pressure varying with depth requires integration.</p><p>Capsule 4th ed., p. 11; topic 3 point 25.</p>",
+          "explanation": "The resultant pressure force on a curved surface in a given direction equals the pressure times the area projected in that direction. A hemisphere of radius \\(r\\) projects as a circle of area \\(\\pi r^2\\), so the force is \\(\\pi r^2P_0\\).<p>Capsule 4th ed., p. 11; topic 3 point 25.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1271,32 +1271,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00029",
           "src": "CAP4-03-00029",
-          "text": "In a connected homogeneous liquid at rest under uniform gravity, which quantity remains constant as elevation z changes?",
+          "text": "For a static fluid, the piezometric head ______ at all points in the liquid.",
           "options": [
             {
               "key": "a",
-              "text": "rho g z alone"
+              "text": "Is zero"
             },
             {
               "key": "b",
-              "text": "p alone"
+              "text": "Increases with depth"
             },
             {
               "key": "c",
-              "text": "z - p/(rho g)"
+              "text": "Decreases with depth"
             },
             {
               "key": "d",
-              "text": "z + p/(rho g)"
+              "text": "Remains constant"
             }
           ],
           "answer": "d",
-          "explanation": "Hydrostatic equilibrium gives \\[\\dfrac{dp}{dz} = -\\rho g\\] For constant density, integration yields \\[\\dfrac{p}{\\rho g} + z = \\text{constant}\\] the piezometric head. Pressure alone increases downward rather than remaining constant.<p>Capsule 4th ed., p. 11; topic 3 point 26.</p>",
+          "explanation": "In a liquid at rest the pressure head increases with depth exactly as the elevation head decreases, so the piezometric head, \\(z + \\dfrac{p}{\\rho g}\\), remains constant at all points.<p>Capsule 4th ed., p. 11; topic 3 point 26.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1309,12 +1309,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00030",
           "src": "CAP4-03-00030",
-          "text": "Using water density 1000 kg/m<sup>3</sup> and g = 9.81 m/s<sup>2</sup>, what gauge pressure occurs 1.0 m below an atmospheric free surface?",
+          "text": "The pressure at a depth of 1 m below the water surface is ______.",
           "options": [
             {
               "key": "a",
@@ -1326,7 +1326,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             },
             {
               "key": "c",
-              "text": "9800 Pa"
+              "text": "9.81 Pa"
             },
             {
               "key": "d",
@@ -1334,7 +1334,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Gauge pressure is \\[\\begin{aligned} p &amp;= \\rho g h \\\\ &amp;= 1000 \\times 9.81 \\times 1.0 \\\\ &amp;= 9810\\ \\text{Pa} \\end{aligned}\\] Using \\(g = 9.8\\) would give 9800 Pa; the source mixes these two values, so the gravitational acceleration is stated explicitly here.<p>Source note: p11 n27 arithmetic repaired by matching g = 9.81 to 9810 Pa.</p><p>Capsule 4th ed., p. 11; topic 3 point 27.</p>",
+          "explanation": "Hydrostatic gauge pressure is \\(p = \\rho gh\\): \\[\\begin{aligned} p &amp;= 1000 \\times 9.81 \\times 1 \\\\ &amp;= 9810\\ \\text{Pa} \\end{aligned}\\]<p>Capsule 4th ed., p. 11; topic 3 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1390,27 +1390,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00032",
           "src": "CAP4-03-00032",
-          "text": "For a small heel of a freely floating body, which relative position gives a restoring hydrostatic moment?",
+          "text": "A floating body attains stable equilibrium if its metacentre is ______ its centre of gravity.",
           "options": [
             {
               "key": "a",
-              "text": "Metacentre M below centre of gravity G"
+              "text": "Below"
             },
             {
               "key": "b",
-              "text": "Geometric centroid above the free surface"
+              "text": "At the free-surface level of"
             },
             {
               "key": "c",
-              "text": "Centre of buoyancy B above metacentre M"
+              "text": "Coincident with"
             },
             {
               "key": "d",
-              "text": "Metacentre M above centre of gravity G"
+              "text": "Above"
             }
           ],
           "answer": "d",
-          "explanation": "Initial stability requires GM greater than zero. Then the displaced buoyant-force line creates a restoring couple with weight. G is the centre of gravity; a geometric centroid is interchangeable with it only for an appropriate uniform mass distribution.<p>Source note: p11 n29: replace ambiguous &#39;centroid&#39; with centre of gravity and specify initial, small-angle stability.</p><p>Capsule 4th ed., p. 11; topic 3 point 29.</p>",
+          "explanation": "If the metacentre M lies above the centre of gravity G (positive metacentric height), a small tilt produces a restoring couple and the floating body is stable. M below G makes it unstable, and M at G gives neutral equilibrium.<p>Capsule 4th ed., p. 11; topic 3 point 29.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1423,32 +1423,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00033",
           "src": "CAP4-03-00033",
-          "text": "An ordinary vented-case Bourdon gauge is connected to a pressurized line. Which pressure does its calibrated pointer normally indicate?",
+          "text": "A Bourdon gauge is used to measure ______ pressure.",
           "options": [
             {
               "key": "a",
-              "text": "Line pressure relative to a perfect vacuum"
+              "text": "Absolute"
             },
             {
               "key": "b",
-              "text": "Stagnation pressure minus line static pressure"
+              "text": "Atmospheric"
             },
             {
               "key": "c",
-              "text": "Line pressure relative to ambient atmosphere"
+              "text": "Gauge"
             },
             {
               "key": "d",
-              "text": "Liquid vapour pressure at line temperature"
+              "text": "Vapour"
             }
           ],
           "answer": "c",
-          "explanation": "The Bourdon element deforms under the pressure difference between its inside and the surrounding case. With the case vented to atmosphere, this is gauge pressure; specialized absolute instruments use a different reference arrangement.<p>Capsule 4th ed., p. 11; topic 3 point 30.</p>",
+          "explanation": "A Bourdon gauge measures pressure relative to the surrounding atmosphere, that is, gauge pressure, from the straightening of a curved tube of elliptical section.<p>Capsule 4th ed., p. 11; topic 3 point 30.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1461,32 +1461,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00101",
           "src": "CAP4-03-00101",
-          "text": "A differential U-tube containing mercury joins two water-pipe taps at the same elevation. The mercury-level difference is 0.15 m. With densities 13600 and 1000 kg/m<sup>3</sup> and g = 9.81 m/s<sup>2</sup>, what is the pressure-difference magnitude?",
+          "text": "A U-tube (differential) manometer is used to measure the ______.",
           "options": [
             {
               "key": "a",
-              "text": "18.54 kPa"
+              "text": "Pressure difference between two points"
             },
             {
               "key": "b",
-              "text": "185.41 kPa"
+              "text": "Atmospheric pressure"
             },
             {
               "key": "c",
-              "text": "1.47 kPa"
+              "text": "Discharge through a pipe directly"
             },
             {
               "key": "d",
-              "text": "20.01 kPa"
+              "text": "Velocity at a point"
             }
           ],
           "answer": "a",
-          "explanation": "For equal-elevation taps containing water, \\[\\Delta p = (\\rho_{Hg} - \\rho_w)gh\\] The density difference is \\(13600 - 1000 = 12600\\) kg per m<sup>3</sup>, so \\[\\begin{aligned} \\Delta p &amp;= 12{,}600 \\times 9.81 \\times 0.15 \\\\ &amp;= 18{,}540.9\\ \\text{Pa} \\\\ &amp;= 18.54\\ \\text{kPa} \\end{aligned}\\] Using mercury density alone fails to account for the displaced water columns.<p>Capsule 4th ed., p. 13; topic 3 point 100.</p>",
+          "explanation": "A differential U-tube manometer is connected to two points in a pipe or to two pipes; the difference in the levels of its manometric liquid gives the pressure difference between the points.<p>Capsule 4th ed., p. 13; topic 3 point 100.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1499,32 +1499,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00111",
           "src": "CAP4-03-00111",
-          "text": "Pure ice floats freely in freshwater and then melts completely. Neglect evaporation and temperature-related density changes of the water. What happens to the water level?",
+          "text": "When a block of ice floating on water in a container melts, the level of water in the container ______.",
           "options": [
             {
               "key": "a",
-              "text": "It falls by the ice's initially submerged volume"
+              "text": "Falls"
             },
             {
               "key": "b",
-              "text": "It rises by the ice's initially exposed volume"
+              "text": "Rises"
             },
             {
               "key": "c",
-              "text": "It rises by the entire original ice volume"
+              "text": "First rises, then falls"
             },
             {
               "key": "d",
-              "text": "It remains unchanged"
+              "text": "Remains the same"
             }
           ],
           "answer": "d",
-          "explanation": "Floating ice initially displaces water of equal weight. Ice mass m therefore displaces m/rho_water, exactly the volume of meltwater produced under the stated assumptions. This result does not automatically apply to a sinking solid or ice floating in a different-density liquid.<p>Source note: p13 n108 and p15 n141 duplicate the floating-ice fact; n141&#39;s &#39;remains the change&#39; corrected to unchanged.</p><p>Capsule 4th ed., pp. 13, 15; topic 3 point 108; topic 3 point 141.</p>",
+          "explanation": "Floating ice displaces its own weight of water. On melting it becomes exactly that weight, and so that volume, of water, so the water level remains the same.<p>Capsule 4th ed., pp. 13, 15; topic 3 point 108; topic 3 point 141.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1539,32 +1539,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00113",
           "src": "CAP4-03-00113",
-          "text": "One limb of a water U-tube is connected to a gas line and the other is open to atmosphere. The gas-side water level is 0.25 m lower. Neglect gas density and use rho = 1000 kg/m<sup>3</sup>, g = 9.81 m/s<sup>2</sup>. What is the gas gauge pressure?",
+          "text": "The instrument used to measure the gas pressure in a pipe is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "-2.45 kPa"
+              "text": "Pitot tube"
             },
             {
               "key": "b",
-              "text": "+2.45 kPa"
+              "text": "U-tube manometer"
             },
             {
               "key": "c",
-              "text": "+0.245 kPa"
+              "text": "Current meter"
             },
             {
               "key": "d",
-              "text": "+24.5 kPa"
+              "text": "Venturi meter"
             }
           ],
           "answer": "b",
-          "explanation": "The depressed gas-side level means the gas is above atmospheric pressure. The difference is \\[\\begin{aligned} \\rho gh &amp;= 1000 \\times 9.81 \\times 0.25 \\\\ &amp;= 2452.5\\ \\text{Pa} \\end{aligned}\\] that is, 2.45 kPa gauge. Atmospheric pressure must be added separately for an absolute reading.<p>Capsule 4th ed., p. 13; topic 3 point 110.</p>",
+          "explanation": "A U-tube manometer, with one limb connected to the gas pipe and the other open to the atmosphere, measures the gas pressure from the difference in the liquid levels.<p>Capsule 4th ed., p. 13; topic 3 point 110.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1577,32 +1577,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00123",
           "src": "CAP4-03-00123",
-          "text": "An inclined plane gate is fully submerged in a constant-density liquid, with uniform atmospheric pressure canceled across it. Where is the hydrostatic centre of pressure relative to the gate's area centroid?",
+          "text": "For an inclined plane submerged in a liquid, the centre of pressure on one side of the plane is ______ the centre of gravity.",
           "options": [
             {
               "key": "a",
-              "text": "At a smaller vertical depth"
+              "text": "Above"
             },
             {
               "key": "b",
-              "text": "At the gate's mass centre regardless of shape"
+              "text": "At the same level as"
             },
             {
               "key": "c",
-              "text": "At a greater vertical depth"
+              "text": "Below"
             },
             {
               "key": "d",
-              "text": "Always exactly at the area centroid"
+              "text": "Coincident with"
             }
           ],
           "answer": "c",
-          "explanation": "Hydrostatic pressure increases with depth, so deeper portions carry more force. The depth correction is \\[\\Delta h = \\dfrac{I_G\\sin^2\\theta}{A\\bar h}\\] positive for a nonhorizontal gate. The relevant centroid is the geometric area centroid, not necessarily the centre of gravity of a nonuniform gate.<p>Source note: p14 n121: centre of gravity replaced by area centroid; nonhorizontal plane and net hydrostatic loading specified.</p><p>Capsule 4th ed., p. 14; topic 3 point 121.</p>",
+          "explanation": "Pressure increases with depth, so the resultant force on a submerged plane acts below its centroid: the centre of pressure lies below the centre of gravity, deeper by \\(\\dfrac{I_G\\sin^2\\theta}{A\\bar{h}}\\) for a plane inclined at \\(\\theta\\).<p>Capsule 4th ed., p. 14; topic 3 point 121.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1615,16 +1615,16 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00132",
           "src": "CAP4-03-00132",
-          "text": "The same rigid body is fully submerged and suspended at rest, with apparent weights 50 N in water and 80 N in oil of specific gravity 0.80. Use water density 1000 kg/m<sup>3</sup> and g = 9.81 m/s<sup>2</sup>. What is its volume?",
+          "text": "An object weighs 50 N in water and 80 N in an oil of specific gravity 0.8. Its volume is ______.",
           "options": [
             {
               "key": "a",
-              "text": "3.82 litres"
+              "text": "3.8 litres"
             },
             {
               "key": "b",
@@ -1632,11 +1632,11 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             },
             {
               "key": "c",
-              "text": "15.29 litres"
+              "text": "15.3 litres"
             },
             {
               "key": "d",
-              "text": "30.58 litres"
+              "text": "30.6 litres"
             }
           ],
           "answer": "c",
@@ -1696,27 +1696,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00134",
           "src": "CAP4-03-00134",
-          "text": "A sphere sinks vertically through a liquid. Which direction does the buoyancy associated with the hydrostatic pressure gradient act, separately from hydrodynamic drag?",
+          "text": "When a spherical ball drops through a fluid, it experiences buoyancy in the ______ direction.",
           "options": [
             {
               "key": "a",
-              "text": "It reverses whenever the sphere's velocity reverses"
+              "text": "Same as its motion"
             },
             {
               "key": "b",
-              "text": "Horizontally, perpendicular to gravity"
+              "text": "Horizontal"
             },
             {
               "key": "c",
-              "text": "Downward, along the sinking velocity"
+              "text": "Vertically downward"
             },
             {
               "key": "d",
-              "text": "Upward, opposite gravity"
+              "text": "Vertically upward"
             }
           ],
           "answer": "d",
-          "explanation": "The hydrostatic pressure gradient produces an upward buoyancy component because pressure is larger below the body. Drag depends on relative motion; buoyancy does not reverse when the body's direction of travel reverses.<p>Source note: p14 n130: separate hydrostatic buoyancy from additional dynamic pressure and viscous forces on a moving sphere.</p><p>Capsule 4th ed., p. 14; topic 3 point 130.</p>",
+          "explanation": "Buoyancy always acts vertically upward and equals the weight of fluid displaced, whatever the direction of motion; the drag force, by contrast, opposes the motion.<p>Capsule 4th ed., p. 14; topic 3 point 130.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1729,32 +1729,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00135",
           "src": "CAP4-03-00135",
-          "text": "A fully submerged rigid stone moves from shallow to deeper water in a constant-density lake. Neglect compressibility and dynamic forces. How does its buoyant force change?",
+          "text": "As a stone sinks deeper into a lake, the upthrust (buoyant force) acting on it ______.",
           "options": [
             {
               "key": "a",
-              "text": "It increases in proportion to total wetted surface pressure"
+              "text": "Becomes zero"
             },
             {
               "key": "b",
-              "text": "It decreases as absolute pressure increases"
+              "text": "Decreases"
             },
             {
               "key": "c",
-              "text": "It stays constant"
+              "text": "Remains constant"
             },
             {
               "key": "d",
-              "text": "It increases in proportion to absolute depth"
+              "text": "Increases"
             }
           ],
           "answer": "c",
-          "explanation": "Buoyancy is rho g V_displaced. With density, gravity and displaced volume unchanged, it is independent of absolute depth. Pressure grows at both the top and bottom, but the net hydrostatic resultant remains the same.<p>Capsule 4th ed., p. 14; topic 3 point 131.</p>",
+          "explanation": "The buoyant force equals the weight of water displaced, which depends only on the stone's volume and the density of the water, not on the depth, so it remains constant as the stone sinks.<p>Capsule 4th ed., p. 14; topic 3 point 131.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1767,7 +1767,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0302",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -1779,27 +1779,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00034",
           "src": "CAP4-03-00034",
-          "text": "In the ideal head-form Bernoulli equation, how should p/(rho g), V<sup>2</sup>/(2g) and z be interpreted?",
+          "text": "In Bernoulli's equation, each term represents energy per unit ______.",
           "options": [
             {
               "key": "a",
-              "text": "Separate force components per unit volume"
+              "text": "Volume"
             },
             {
               "key": "b",
-              "text": "Three dimensionless energy coefficients"
+              "text": "Time"
             },
             {
               "key": "c",
-              "text": "Separate energy components per unit weight"
+              "text": "Weight"
             },
             {
               "key": "d",
-              "text": "Three separate values of total energy per unit mass"
+              "text": "Mass"
             }
           ],
           "answer": "c",
-          "explanation": "Pressure head, velocity head and elevation head each have units of length, equivalent to energy divided by weight. Their sum is total mechanical head; each individual term is not itself the total energy.<p>Source note: p11 n31 corrected: each term is a component; only their sum is total head.</p><p>Capsule 4th ed., p. 11; topic 3 point 31.</p>",
+          "explanation": "In the head form of Bernoulli's equation, \\(\\dfrac{p}{\\rho g} + \\dfrac{V^2}{2g} + z\\), each term has the unit of metres and represents energy per unit weight of the fluid.<p>Capsule 4th ed., p. 11; topic 3 point 31.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1812,32 +1812,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00035",
           "src": "CAP4-03-00035",
-          "text": "Which local kinematic condition represents zero volumetric expansion of an incompressible fluid element?",
+          "text": "The incompressibility condition in the Navier–Stokes equations is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Velocity gradient tensor equals zero"
+              "text": "\\(\\dfrac{\\partial\\mathbf{u}}{\\partial t} = 0\\)"
             },
             {
               "key": "b",
-              "text": "Local time derivative of velocity equals zero"
+              "text": "\\(\\nabla\\cdot\\mathbf{u} = 1\\)"
             },
             {
               "key": "c",
-              "text": "Curl of velocity equals zero"
+              "text": "\\(\\nabla\\times\\mathbf{u} = 0\\)"
             },
             {
               "key": "d",
-              "text": "Divergence of velocity equals zero"
+              "text": "\\(\\nabla\\cdot\\mathbf{u} = 0\\)"
             }
           ],
           "answer": "d",
-          "explanation": "The divergence is the fractional rate of change of a material element's volume. Incompressibility therefore requires \\[\\nabla \\cdot \\mathbf{u} = 0\\] Zero curl means irrotational flow, and a zero local time derivative means steadiness; neither is the same condition.<p>Capsule 4th ed., pp. 11, 14; topic 3 point 32; topic 3 point 139.</p>",
+          "explanation": "For an incompressible fluid the density is constant, and the continuity equation reduces to zero divergence of the velocity, \\(\\nabla\\cdot\\mathbf{u} = 0\\). The condition \\(\\nabla\\times\\mathbf{u} = 0\\) describes irrotational flow instead.<p>Capsule 4th ed., pp. 11, 14; topic 3 point 32; topic 3 point 139.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1852,32 +1852,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00036",
           "src": "CAP4-03-00036",
-          "text": "A Venturi's discharge is estimated from pressure difference using continuity and an energy equation. Which statement about applying momentum conservation to the same meter is defensible?",
+          "text": "Which principle is not applicable to the venturi meter?",
           "options": [
             {
               "key": "a",
-              "text": "It requires identical inlet and throat velocities"
+              "text": "Manometric pressure measurement"
             },
             {
               "key": "b",
-              "text": "It fails because the pipe area changes"
+              "text": "Bernoulli's equation"
             },
             {
               "key": "c",
-              "text": "It remains valid when pressure and wall forces are included"
+              "text": "Momentum principle"
             },
             {
               "key": "d",
-              "text": "It fails because static pressure is nonuniform"
+              "text": "Continuity equation"
             }
           ],
           "answer": "c",
-          "explanation": "Momentum conservation applies to a Venturi control volume as to other flows. Wall reaction and pressure forces must balance momentum-flux changes. The usual discharge equation uses energy plus continuity for convenience, not because momentum is inapplicable.<p>Source note: p11 n33 false exclusion corrected.</p><p>Capsule 4th ed., p. 11; topic 3 point 33.</p>",
+          "explanation": "The venturi meter is analysed with the continuity equation and Bernoulli's equation, the pressure difference being read on a manometer; the momentum principle is not applied to it.<p>Capsule 4th ed., p. 11; topic 3 point 33.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1890,20 +1890,20 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00038",
           "src": "CAP4-03-00038",
-          "text": "Water passes over a sharp-crested measuring weir and forms a free sheet before landing downstream. What is that sheet called?",
+          "text": "The sheet of water flowing over a weir or notch is called the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Afflux"
+              "text": "Sill"
             },
             {
               "key": "b",
-              "text": "Tailwater"
+              "text": "Afflux"
             },
             {
               "key": "c",
@@ -1915,7 +1915,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The nappe is the sheet of water passing over a weir or notch. The crest is the solid overflow edge, afflux is the upstream water-level rise, and tailwater is the downstream water body or level.<p>Capsule 4th ed., pp. 11, 12; topic 3 point 35; topic 3 point 66.</p>",
+          "explanation": "The nappe, or vein, is the sheet of liquid flowing over a notch or weir. The crest, or sill, is the edge over which it flows, and afflux is the rise of water level upstream of an obstruction.<p>Capsule 4th ed., pp. 11, 12; topic 3 point 35; topic 3 point 66.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1930,7 +1930,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00039",
@@ -2011,27 +2011,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00041",
           "src": "CAP4-03-00041",
-          "text": "In a steady inviscid incompressible flow under gravity, what additional property permits one Bernoulli constant to apply throughout a connected flow region rather than only along individual streamlines?",
+          "text": "According to Bernoulli's equation, the total energy ______.",
           "options": [
             {
               "key": "a",
-              "text": "Zero gauge pressure at the inlet"
+              "text": "Increases along a streamline in the direction of flow"
             },
             {
               "key": "b",
-              "text": "A horizontal datum"
+              "text": "Is zero along every streamline"
             },
             {
               "key": "c",
-              "text": "Uniform pipe diameter"
+              "text": "Is the same on all streamlines in every flow"
             },
             {
               "key": "d",
-              "text": "Irrotational flow"
+              "text": "Is constant along a streamline but may differ from one streamline to another"
             }
           ],
           "answer": "d",
-          "explanation": "The streamline form permits the Bernoulli constant to differ between streamlines in rotational flow. Irrotationality makes the constant common throughout a connected region under the stated assumptions. Different streamlines need not always have different constants.<p>Source note: p11 n38 overstates cross-streamline differences; irrotational exception included.</p><p>Capsule 4th ed., p. 11; topic 3 point 38.</p>",
+          "explanation": "Bernoulli's equation states that the total energy per unit weight is constant along a streamline; the constant can be different for another streamline. Only in irrotational flow is it the same throughout.<p>Capsule 4th ed., p. 11; topic 3 point 38.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2044,32 +2044,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00042",
           "src": "CAP4-03-00042",
-          "text": "A real viscous liquid flows steadily through a long pipe with no pump or turbine. How should an engineer relate the upstream and downstream mechanical heads?",
+          "text": "Bernoulli's equation is not to be used for ______ flow.",
           "options": [
             {
               "key": "a",
-              "text": "Use hydrostatic pressure variation alone"
+              "text": "Incompressible"
             },
             {
               "key": "b",
-              "text": "Set the two total heads equal despite friction"
+              "text": "Steady"
             },
             {
               "key": "c",
-              "text": "Include a positive head-loss term"
+              "text": "Viscous"
             },
             {
               "key": "d",
-              "text": "Treat friction as an increase in downstream total head"
+              "text": "Irrotational"
             }
           ],
           "answer": "c",
-          "explanation": "The mechanical-energy equation for the stated flow is \\[H_1 = H_2 + h_{\\text{loss}}\\] Viscous dissipation prevents using the lossless Bernoulli form unchanged, but does not invalidate energy conservation or its extended engineering form.<p>Source note: p11 n39: distinguish lossless Bernoulli from the extended energy equation.</p><p>Capsule 4th ed., p. 11; topic 3 point 39.</p>",
+          "explanation": "Bernoulli's equation assumes ideal (non-viscous), steady, incompressible flow along a streamline, so it is not to be used for viscous flow unless a head-loss term is added.<p>Capsule 4th ed., p. 11; topic 3 point 39.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2082,32 +2082,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00047",
           "src": "CAP4-03-00047",
-          "text": "A horizontal water jet strikes a large smooth stationary vertical plate normally. Neglect splash and losses immediately after impact. How is the outflow directed?",
+          "text": "When a jet strikes a stationary vertical plate normally, after striking the jet ______.",
           "options": [
             {
               "key": "a",
-              "text": "Along the plate with doubled normal velocity"
+              "text": "Stops completely"
             },
             {
               "key": "b",
-              "text": "Back along the incident jet at equal speed"
+              "text": "Passes through the plate"
             },
             {
               "key": "c",
-              "text": "Through the plate with unchanged normal velocity"
+              "text": "Reverses back along its path"
             },
             {
               "key": "d",
-              "text": "Along the plate with zero normal velocity"
+              "text": "Moves along the plate"
             }
           ],
           "answer": "d",
-          "explanation": "The impermeable plate removes the velocity component normal to it, while the fluid spreads tangentially along the surface. Momentum changes even if the ideal speed magnitude is approximately preserved; a flat plate does not reverse the entire jet like a curved bucket.<p>Capsule 4th ed., p. 12; topic 3 point 44.</p>",
+          "explanation": "A jet striking a flat vertical plate normally is deflected through 90° and moves along the plate, so its velocity normal to the plate is destroyed; this change of momentum gives the force \\(\\rho aV^2\\).<p>Capsule 4th ed., p. 12; topic 3 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2120,7 +2120,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00048",
@@ -2163,27 +2163,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00049",
           "src": "CAP4-03-00049",
-          "text": "A geometrically similar hydraulic model has corresponding velocity vectors in a constant model-to-prototype ratio. What further relation is consistent with kinematic similarity?",
+          "text": "The kinematic similarity between model and prototype is the similarity of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Identical discharges regardless of scale and velocity ratio"
+              "text": "Forces at corresponding points"
             },
             {
               "key": "b",
-              "text": "Similar streamline patterns and Q ratio equal to area ratio times velocity ratio"
+              "text": "Discharge and streamline pattern"
             },
             {
               "key": "c",
-              "text": "Identical forces regardless of model dimensions"
+              "text": "Material and roughness"
             },
             {
               "key": "d",
-              "text": "Equal Reynolds numbers regardless of fluid properties"
+              "text": "Shape and linear dimensions"
             }
           ],
           "answer": "b",
-          "explanation": "Kinematic similarity preserves the scaled motion pattern. Because \\(Q = AV\\), discharge scales as area times velocity: \\[\\dfrac{Q_m}{Q_p} = \\dfrac{A_m}{A_p} \\cdot \\dfrac{V_m}{V_p}\\] not necessarily one-to-one. Matching force ratios or relevant dimensionless force groups is the additional requirement of dynamic similarity.<p>Source note: p12 n46: &#39;similar discharge&#39; means consistent scaling, not equal numerical discharge.</p><p>Capsule 4th ed., p. 12; topic 3 point 46.</p>",
+          "explanation": "Geometric similarity is similarity of shape, kinematic similarity is similarity of motion (velocities, discharges and streamline pattern), and dynamic similarity is similarity of forces between model and prototype.<p>Capsule 4th ed., p. 12; topic 3 point 46.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2196,32 +2196,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00050",
           "src": "CAP4-03-00050",
-          "text": "In a steady incompressible flow through a horizontal Venturi, which section has the greatest cross-sectional mean speed?",
+          "text": "In a venturi meter, the highest velocity occurs at the ______.",
           "options": [
             {
               "key": "a",
-              "text": "The wide upstream section"
+              "text": "Inlet section"
             },
             {
               "key": "b",
-              "text": "The wide downstream section"
+              "text": "Outlet section"
             },
             {
               "key": "c",
-              "text": "Every section has the same mean speed"
+              "text": "Converging cone entrance"
             },
             {
               "key": "d",
-              "text": "The minimum-area throat"
+              "text": "Throat"
             }
           ],
           "answer": "d",
-          "explanation": "The same discharge passes through each section, so \\[V = \\dfrac{Q}{A}\\] is largest at the smallest area. In the ideal energy model, the increase in velocity head is accompanied by a decrease in static pressure head.<p>Capsule 4th ed., p. 12; topic 3 point 47.</p>",
+          "explanation": "The throat has the smallest cross-sectional area, so by continuity the velocity is highest and the pressure lowest there; this pressure drop is used to measure the discharge.<p>Capsule 4th ed., p. 12; topic 3 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2234,32 +2234,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00052",
           "src": "CAP4-03-00052",
-          "text": "A Pitot probe is moved across a large pipe to obtain a velocity traverse. What quantity does each properly calibrated reading represent?",
+          "text": "A pitot tube is used to measure the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Local speed at the probe position"
+              "text": "Velocity of flow"
             },
             {
               "key": "b",
-              "text": "Total pipe discharge without area information"
+              "text": "Viscosity of the fluid"
             },
             {
               "key": "c",
-              "text": "Mean speed across the entire pipe automatically"
+              "text": "Density of the fluid"
             },
             {
               "key": "d",
-              "text": "Fluid density independent of pressure measurements"
+              "text": "Surface tension of the fluid"
             }
           ],
           "answer": "a",
-          "explanation": "A Pitot arrangement relates stagnation-minus-static pressure to local kinetic energy. A traverse and cross-sectional integration can estimate discharge, but one local reading is not automatically the cross-sectional mean or total flow.<p>Capsule 4th ed., p. 12; topic 3 point 49.</p>",
+          "explanation": "A pitot tube measures the stagnation pressure at a point; the rise \\(h\\) of liquid in it above the static level gives the velocity of flow, \\(V = \\sqrt{2gh}\\).<p>Capsule 4th ed., p. 12; topic 3 point 49.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2272,16 +2272,16 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00056",
           "src": "CAP4-03-00056",
-          "text": "For a conventional sharp-edged orifice meter, which discharge-coefficient range is a plausible preliminary textbook estimate rather than a substitute for calibration?",
+          "text": "The coefficient of discharge for an orifice meter is in the range ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.97 to 0.99"
+              "text": "0.95 to 0.98"
             },
             {
               "key": "b",
@@ -2289,15 +2289,15 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             },
             {
               "key": "c",
-              "text": "1.20 to 1.25"
+              "text": "0.80 to 0.85"
             },
             {
               "key": "d",
-              "text": "0.12 to 0.15"
+              "text": "0.42 to 0.45"
             }
           ],
           "answer": "b",
-          "explanation": "A conventional sharp-edged orifice meter commonly has Cd near 0.6, with 0.62-0.65 used as an indicative range. A Venturi generally has a much higher coefficient. Actual Cd depends on Reynolds number, diameter ratio, edge and tapping geometry.<p>Source note: p12 n53 is indicative, not an edition-independent calibration requirement.</p><p>Capsule 4th ed., p. 12; topic 3 point 53.</p>",
+          "explanation": "An orifice meter loses much energy at the sharp-edged orifice, so its coefficient of discharge is only about 0.62 to 0.65, compared with about 0.95 to 0.98 for a venturi meter.<p>Capsule 4th ed., p. 12; topic 3 point 53.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2310,32 +2310,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00061",
           "src": "CAP4-03-00061",
-          "text": "An incompressible liquid flows steadily downward in a constant-area vertical pipe. Neglect friction and machines. How does static pressure vary with upward elevation z?",
+          "text": "Water is flowing down steadily in a pipe of constant cross-section. According to Bernoulli's principle, the pressure ______.",
           "options": [
             {
               "key": "a",
-              "text": "It depends only on the direction of flow"
+              "text": "Becomes zero at the outlet"
             },
             {
               "key": "b",
-              "text": "It is constant because speed is constant"
+              "text": "Remains the same everywhere"
             },
             {
               "key": "c",
-              "text": "It increases as z increases"
+              "text": "Decreases as the water flows downward"
             },
             {
               "key": "d",
-              "text": "It decreases as z increases"
+              "text": "Increases as the water flows downward"
             }
           ],
           "answer": "d",
-          "explanation": "Continuity makes the mean speed constant. Bernoulli then gives \\[\\dfrac{p}{\\rho g} + z = \\text{constant}\\] so \\(\\dfrac{dp}{dz} = -\\rho g\\). Pressure increases downward even though the flow moves downward; the source's opposite trend is incorrect.<p>Source note: p12 n57 contradicts p15 n144. Corrected using continuity plus lossless Bernoulli, not by selecting one printed statement arbitrarily.</p><p>Capsule 4th ed., p. 12; topic 3 point 57.</p>",
+          "explanation": "With a constant cross-section the velocity head is the same everywhere, so by Bernoulli's principle \\(\\dfrac{p}{\\rho g} + z\\) is constant. As the water flows down and \\(z\\) falls, the pressure increases.<p>Capsule 4th ed., p. 12; topic 3 point 57.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2348,32 +2348,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00077",
           "src": "CAP4-03-00077",
-          "text": "A Pitot-static tube in water reads stagnation pressure 2.0 kPa higher than local static pressure. With density 1000 kg/m<sup>3</sup> and velocity coefficient one, what local speed does it indicate?",
+          "text": "A pitot-static tube measures the ______.",
           "options": [
             {
               "key": "a",
-              "text": "4.0 m/s"
+              "text": "Total discharge of the pipe"
             },
             {
               "key": "b",
-              "text": "1.0 m/s"
+              "text": "Average velocity over the whole section"
             },
             {
               "key": "c",
-              "text": "2.0 m/s"
+              "text": "Velocity at a point of fluid in a stream"
             },
             {
               "key": "d",
-              "text": "0.063 m/s"
+              "text": "Viscosity of the fluid"
             }
           ],
           "answer": "c",
-          "explanation": "The differential pressure is \\(\\dfrac{\\rho V^2}{2}\\), so \\[\\begin{aligned} V &amp;= \\sqrt{\\dfrac{2\\Delta p}{\\rho}} = \\sqrt{\\dfrac{2 \\times 2000}{1000}} \\\\ &amp;= 2.0\\ \\text{m/s} \\end{aligned}\\] The pressure difference must be converted from kPa to Pa before substitution.<p>Capsule 4th ed., p. 12; topic 3 point 75.</p>",
+          "explanation": "A pitot-static tube measures the difference between the stagnation and static pressures at one point, which gives the local velocity there, \\(V = \\sqrt{\\dfrac{2\\Delta p}{\\rho}}\\). The average velocity needs readings across the section.<p>Capsule 4th ed., p. 12; topic 3 point 75.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2386,32 +2386,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00109",
           "src": "CAP4-03-00109",
-          "text": "A student says mass continuity is valid only for steady two-dimensional incompressible flow. Which correction is needed?",
+          "text": "The continuity equation \\(\\dfrac{\\partial u}{\\partial x} + \\dfrac{\\partial v}{\\partial y} = 0\\) is valid for ______ flow.",
           "options": [
             {
               "key": "a",
-              "text": "Continuity is general; the divergence-free form is a special reduction"
+              "text": "Steady, two-dimensional, incompressible"
             },
             {
               "key": "b",
-              "text": "Unsteady flow has no control-volume mass balance"
+              "text": "Turbulent flow only"
             },
             {
               "key": "c",
-              "text": "Compressible flow conserves volume but not mass"
+              "text": "Three-dimensional, compressible"
             },
             {
               "key": "d",
-              "text": "Continuity is restricted to laminar two-dimensional flow"
+              "text": "Unsteady, compressible"
             }
           ],
           "answer": "a",
-          "explanation": "The general local mass balance is \\[\\dfrac{\\partial\\rho}{\\partial t} + \\nabla \\cdot (\\rho\\mathbf{u}) = 0\\] For incompressible motion it reduces to \\(\\nabla \\cdot \\mathbf{u} = 0\\), including unsteady three-dimensional cases. Steady two-dimensional flow is one valid case, not the only case.<p>Source note: p13 n106 true as an example but not an exclusive validity condition.</p><p>Capsule 4th ed., p. 13; topic 3 point 106.</p>",
+          "explanation": "For steady, two-dimensional, incompressible flow, the continuity equation takes the form \\(\\dfrac{\\partial u}{\\partial x} + \\dfrac{\\partial v}{\\partial y} = 0\\). Compressible flow needs density terms as well.<p>Capsule 4th ed., p. 13; topic 3 point 106.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2424,12 +2424,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00125",
           "src": "CAP4-03-00125",
-          "text": "Water passes at a constant discharge through a fixed conical pipe reducer. At every section the velocity is unchanged with time, but section areas differ. What is the mean-flow classification?",
+          "text": "When water flows through a frustum of a cone at a constant rate, the flow is ______.",
           "options": [
             {
               "key": "a",
@@ -2441,15 +2441,15 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             },
             {
               "key": "c",
-              "text": "Unsteady and nonuniform"
+              "text": "Unsteady and non-uniform"
             },
             {
               "key": "d",
-              "text": "Steady and nonuniform"
+              "text": "Steady and non-uniform"
             }
           ],
           "answer": "d",
-          "explanation": "No time change at a fixed section makes the flow steady. Since \\[V = \\dfrac{Q}{A}\\] and the area changes along the reducer, the mean velocity changes with position, making the flow nonuniform. A fixed discharge does not imply a spatially constant speed.<p>Capsule 4th ed., p. 14; topic 3 point 123.</p>",
+          "explanation": "At a constant rate the velocity at any section does not change with time, so the flow is steady; but the area, and therefore the velocity, changes from section to section, so the flow is non-uniform.<p>Capsule 4th ed., p. 14; topic 3 point 123.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2462,32 +2462,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00126",
           "src": "CAP4-03-00126",
-          "text": "At a section, elevation head is 2 m, gauge-pressure head is 3 m and velocity head is 4 m, with kinetic-energy correction one. What is the total mechanical head on the stated datum and pressure reference?",
+          "text": "The total head is equal to ______.",
           "options": [
             {
               "key": "a",
-              "text": "1 m"
+              "text": "Velocity head + pressure head"
             },
             {
               "key": "b",
-              "text": "9 m"
+              "text": "Velocity head + pressure head + datum head"
             },
             {
               "key": "c",
-              "text": "7 m"
+              "text": "Velocity head + datum head"
             },
             {
               "key": "d",
-              "text": "5 m"
+              "text": "Pressure head + datum head"
             }
           ],
           "answer": "b",
-          "explanation": "Total head is the sum of elevation, pressure and velocity heads: \\[H = 2 + 3 + 4 = 9\\ \\text{m}\\] Piezometric head would include only elevation plus pressure, giving 5 m.<p>Capsule 4th ed., p. 14; topic 3 point 124.</p>",
+          "explanation": "Total head is \\(\\dfrac{V^2}{2g} + \\dfrac{p}{\\rho g} + z\\), the sum of the velocity, pressure and datum heads. Pressure head plus datum head alone is the piezometric head.<p>Capsule 4th ed., p. 14; topic 3 point 124.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2500,32 +2500,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00136",
           "src": "CAP4-03-00136",
-          "text": "In a horizontal diffuser without a pump or turbine, a steady incompressible stream slows down. Take the kinetic-energy correction factor as one at both sections. The head loss is positive but smaller than the decrease in velocity head. What pressure change occurs along the flow?",
+          "text": "In flow through a diverging cone, it is possible for flow to occur from ______ pressure.",
           "options": [
             {
               "key": "a",
-              "text": "Static and total heads both increase without added work"
+              "text": "Equal to equal only"
             },
             {
               "key": "b",
-              "text": "Static pressure decreases while total head increases"
+              "text": "High to low only"
             },
             {
               "key": "c",
-              "text": "Static pressure increases while total head decreases"
+              "text": "Low to high"
             },
             {
               "key": "d",
-              "text": "Static pressure cannot increase anywhere along a flow"
+              "text": "Vacuum to atmospheric only"
             }
           ],
           "answer": "c",
-          "explanation": "The energy equation gives \\[\\dfrac{p_2 - p_1}{\\rho g} = \\dfrac{V_1^2 - V_2^2}{2g} - h_L\\] A sufficiently large reduction in velocity head therefore recovers static pressure, even while losses reduce total head. Flow need not always move from higher to lower static pressure.<p>Capsule 4th ed., p. 14; topic 3 point 132.</p>",
+          "explanation": "In a diverging cone the velocity falls in the direction of flow, and the velocity head recovered as pressure can exceed the loss, so the flow can move from a region of low pressure to one of higher pressure.<p>Capsule 4th ed., p. 14; topic 3 point 132.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2538,32 +2538,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00141",
           "src": "CAP4-03-00141",
-          "text": "For a material fluid mass m accelerating with vector a, how do Newton's second law and the d'Alembert inertial-force convention differ?",
+          "text": "The net force acting on a fluid body which is responsible for producing acceleration is called the ______ force.",
           "options": [
             {
               "key": "a",
-              "text": "Real net force is -ma; introduced inertial force is ma"
+              "text": "Viscous"
             },
             {
               "key": "b",
-              "text": "Real net force is zero; introduced inertial force is -ma"
+              "text": "Surface tension"
             },
             {
               "key": "c",
-              "text": "Real net force is ma; introduced inertial force is -ma"
+              "text": "Inertial"
             },
             {
               "key": "d",
-              "text": "Real net force is ma; introduced inertial force is ma"
+              "text": "Gravity"
             }
           ],
           "answer": "c",
-          "explanation": "Newton's law states that the resultant real external force equals ma. Moving that term to a formal equilibrium balance introduces an inertial or pseudo-force -ma; it is not an additional real cause of acceleration. Fluid momentum equations use the same distinction.<p>Source note: p14 n137 loosely labels the real accelerating resultant &#39;inertial force&#39;; both conventions distinguished rather than conflated.</p><p>Capsule 4th ed., p. 14; topic 3 point 137.</p>",
+          "explanation": "The inertia force is the product of mass and acceleration, the net force responsible for accelerating the fluid. Its ratios to the viscous and gravity forces give the Reynolds and Froude numbers.<p>Capsule 4th ed., p. 14; topic 3 point 137.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2576,12 +2576,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0303",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00143",
           "src": "CAP4-03-00143",
-          "text": "At a point in three-dimensional incompressible flow, du/dx = 2 s<sup>-1</sup> and dv/dy = -5 s<sup>-1</sup>. What must dw/dz equal?",
+          "text": "At a point in three-dimensional incompressible flow, \\(\\partial u/\\partial x = 2\\) s<sup>-1</sup> and \\(\\partial v/\\partial y = -5\\) s<sup>-1</sup>. What must \\(\\partial w/\\partial z\\) equal?",
           "options": [
             {
               "key": "a",
@@ -2619,7 +2619,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00147",
           "src": "CAP4-03-00147",
-          "text": "Water flows steadily down a constant-area vertical pipe without friction or machines. A lower section is 3 m below an upper section. For rho = 1000 kg/m<sup>3</sup> and g = 9.81 m/s<sup>2</sup>, what is p_lower minus p_upper?",
+          "text": "Water flows steadily down a constant-area vertical pipe without friction or machines. A lower section is 3 m below an upper section. For \\(\\rho = 1000\\) kg/m<sup>3</sup> and \\(g = 9.81\\) m/s<sup>2</sup>, what is \\(p_\\mathrm{lower} - p_\\mathrm{upper}\\)?",
           "options": [
             {
               "key": "a",
@@ -2664,7 +2664,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00037",
           "src": "CAP4-03-00037",
-          "text": "At a pipe section the kinetic-energy correction factor is taken as one. What does the vertical separation between the energy grade line and hydraulic grade line represent?",
+          "text": "The difference between the total energy line and the hydraulic grade line represents the ______.",
           "options": [
             {
               "key": "a",
@@ -2676,7 +2676,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             },
             {
               "key": "c",
-              "text": "Accumulated friction head"
+              "text": "Head loss"
             },
             {
               "key": "d",
@@ -2684,7 +2684,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "\\[\\text{HGL} = z + \\dfrac{p}{\\rho g}\\] \\[\\text{EGL} = z + \\dfrac{p}{\\rho g} + \\dfrac{V^2}{2g}\\] when \\(\\alpha = 1\\). Their separation is therefore the velocity head at that section, not the cumulative head loss along the pipe.<p>Capsule 4th ed., p. 11; topic 3 point 34.</p>",
+          "explanation": "The total energy line lies above the hydraulic grade line by the velocity head, \\(\\dfrac{V^2}{2g}\\); the hydraulic grade line itself is at the level of pressure head plus elevation head.<p>Capsule 4th ed., p. 11; topic 3 point 34.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2697,32 +2697,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00043",
           "src": "CAP4-03-00043",
-          "text": "For steady, fully developed laminar flow of an incompressible Newtonian fluid in a straight circular pipe with no slip, which pair of friction factors uses Reynolds number based on mean speed and diameter?",
+          "text": "The coefficient of friction for laminar flow is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Darcy: 64/Re; Fanning: 64/Re"
+              "text": "\\(\\dfrac{24}{\\mathrm{Re}}\\)"
             },
             {
               "key": "b",
-              "text": "Darcy: 16/Re; Fanning: 16/Re"
+              "text": "\\(\\dfrac{0.079}{\\mathrm{Re}^{0.25}}\\)"
             },
             {
               "key": "c",
-              "text": "Darcy: 16/Re; Fanning: 64/Re"
+              "text": "\\(\\dfrac{64}{\\mathrm{Re}}\\)"
             },
             {
               "key": "d",
-              "text": "Darcy: 64/Re; Fanning: 16/Re"
+              "text": "\\(\\dfrac{16}{\\mathrm{Re}}\\)"
             }
           ],
           "answer": "d",
-          "explanation": "The Darcy factor is four times the Fanning factor. Hagen-Poiseuille flow gives \\[f_D = \\dfrac{64}{\\text{Re}}, \\qquad f_F = \\dfrac{16}{\\text{Re}}\\] The source's recovered \\(\\dfrac{16}{\\text{Re}}\\) is defensible only with the Fanning convention or a matching four-factor loss formula.<p>Source note: p11 n40 and p15 n145 repeat 16/Re without naming the factor; both references retained and convention made explicit.</p><p>Capsule 4th ed., pp. 11, 15; topic 3 point 40; topic 3 point 145.</p>",
+          "explanation": "For laminar flow in a pipe, the coefficient of friction is \\(f' = \\dfrac{16}{\\mathrm{Re}}\\). The Darcy friction factor is four times larger, \\(f = \\dfrac{64}{\\mathrm{Re}}\\).<p>Capsule 4th ed., pp. 11, 15; topic 3 point 40; topic 3 point 145.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2737,32 +2737,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00045",
           "src": "CAP4-03-00045",
-          "text": "Three unequal-diameter pipes are connected in series with steady incompressible flow and no withdrawals. Which relation must hold?",
+          "text": "When three pipes are connected in series, the ______ is the same through each pipe.",
           "options": [
             {
               "key": "a",
-              "text": "Equal friction factor; velocities add"
+              "text": "Friction factor"
             },
             {
               "key": "b",
-              "text": "Equal discharge; individual head losses add"
+              "text": "Discharge"
             },
             {
               "key": "c",
-              "text": "Equal head loss; branch discharges add"
+              "text": "Head loss"
             },
             {
               "key": "d",
-              "text": "Equal velocity; individual head losses add"
+              "text": "Velocity"
             }
           ],
           "answer": "b",
-          "explanation": "Mass conservation and constant density require the same volume discharge through every series segment. Speeds differ with area and each segment contributes its own head loss, so equal discharge does not imply equal velocity or equal loss.<p>Capsule 4th ed., p. 11; topic 3 point 42.</p>",
+          "explanation": "In pipes connected in series the same discharge flows through each pipe, and the total head loss is the sum of the losses in the individual pipes. In parallel pipes it is the head loss that is the same.<p>Capsule 4th ed., p. 11; topic 3 point 42.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2775,32 +2775,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00046",
           "src": "CAP4-03-00046",
-          "text": "Two passive pipe branches of different materials connect the same upstream and downstream junctions. Under steady flow, which network condition applies?",
+          "text": "When pipes of the same material are connected in parallel, the loss of head in each pipe is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Equal total head loss along each branch"
+              "text": "The same as the total loss of head"
             },
             {
               "key": "b",
-              "text": "Equal velocity in each branch"
+              "text": "Zero"
             },
             {
               "key": "c",
-              "text": "Equal Darcy friction factor in each branch"
+              "text": "Proportional to its length only"
             },
             {
               "key": "d",
-              "text": "Equal discharge in each branch"
+              "text": "The sum of the losses in all the pipes"
             }
           ],
           "answer": "a",
-          "explanation": "Each branch spans the same junction-head difference, so its total head loss must match that difference. Materials, diameters and lengths affect the branch discharges, not the shared endpoint-head condition. Total discharge is the sum of branch flows.<p>Source note: p12 n43: equal material is unnecessary for the parallel-head condition.</p><p>Capsule 4th ed., p. 12; topic 3 point 43.</p>",
+          "explanation": "Parallel pipes connect the same two junctions, so the loss of head in each pipe equals the total loss of head between the junctions, while the total discharge is the sum of the pipe discharges.<p>Capsule 4th ed., p. 12; topic 3 point 43.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2813,32 +2813,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00051",
           "src": "CAP4-03-00051",
-          "text": "In Prandtl's idealized mixing-length description near a smooth impermeable pipe wall, what happens to the mixing length as wall distance tends to zero?",
+          "text": "Prandtl's mixing length is ______ at the pipe wall.",
           "options": [
             {
               "key": "a",
-              "text": "It tends to the pipe radius"
+              "text": "Equal to the pipe radius"
             },
             {
               "key": "b",
-              "text": "It tends to zero"
+              "text": "Zero"
             },
             {
               "key": "c",
-              "text": "It tends to the pipe diameter"
+              "text": "Maximum"
             },
             {
               "key": "d",
-              "text": "It grows without bound"
+              "text": "Equal to the pipe diameter"
             }
           ],
           "answer": "b",
-          "explanation": "The wall restricts wall-normal turbulent exchange. In the near-wall mixing-length model, the available mixing distance vanishes at the wall; it is not a constant equal to a pipe dimension throughout the flow.<p>Capsule 4th ed., p. 12; topic 3 point 48.</p>",
+          "explanation": "In Prandtl's mixing length theory the mixing length is proportional to the distance from the wall, \\(l = ky\\), so it is zero at the pipe wall and increases away from it.<p>Capsule 4th ed., p. 12; topic 3 point 48.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2851,32 +2851,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00053",
           "src": "CAP4-03-00053",
-          "text": "After substituting Q for mean velocity in Darcy-Weisbach, which expression gives head loss in a full circular pipe using Darcy factor fD?",
+          "text": "The head loss formula \\(h_f = \\dfrac{fLQ^2}{12.1D^5}\\) is given by ______.",
           "options": [
             {
               "key": "a",
-              "text": "2 fD L Q<sup>2</sup>/(g pi<sup>2</sup>D<sup>5</sup>)"
+              "text": "Hazen–Williams"
             },
             {
               "key": "b",
-              "text": "8 fD L Q/(g pi<sup>2</sup>D<sup>5</sup>)"
+              "text": "Chezy"
             },
             {
               "key": "c",
-              "text": "8 fD L Q<sup>2</sup>/(g pi<sup>2</sup>D<sup>5</sup>)"
+              "text": "Darcy–Weisbach"
             },
             {
               "key": "d",
-              "text": "8 fD L Q<sup>2</sup>/(g pi<sup>2</sup>D<sup>4</sup>)"
+              "text": "Manning"
             }
           ],
           "answer": "c",
-          "explanation": "Insert \\[V = \\dfrac{4Q}{\\pi D^2}\\] into \\[h_f = f_D\\dfrac{L}{D}\\dfrac{V^2}{2g}\\] Squaring produces \\(\\dfrac{16Q^2}{\\pi^2 D^4}\\), hence \\[h_f = \\dfrac{8 f_D L Q^2}{g\\pi^2 D^5}\\] In SI with \\(g = 9.81\\), \\(\\dfrac{g\\pi^2}{8}\\) is about 12.1.<p>Source note: p12 n50: recovered denominator 12.1D^5 is an SI approximation using the Darcy convention, not a dimensionless universal coefficient.</p><p>Capsule 4th ed., p. 12; topic 3 point 50.</p>",
+          "explanation": "Substituting \\(V = \\dfrac{4Q}{\\pi D^2}\\) into the Darcy–Weisbach formula \\(h_f = \\dfrac{fLV^2}{2gD}\\) gives \\(h_f = \\dfrac{fLQ^2}{12.1D^5}\\), because \\(\\dfrac{\\pi^2 g}{8}\\) is about 12.1.<p>Capsule 4th ed., p. 12; topic 3 point 50.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2889,12 +2889,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00054",
           "src": "CAP4-03-00054",
-          "text": "Mean speeds just before and after a sudden pipe expansion are 6 and 2 m/s. Under the Borda-Carnot assumptions and g = 9.81 m/s<sup>2</sup>, what is the expansion head loss?",
+          "text": "Mean speeds just before and after a sudden pipe expansion are 6 and 2 m/s. Under the Borda-Carnot assumptions and \\(g = 9.81\\) m/s<sup>2</sup>, what is the expansion head loss?",
           "options": [
             {
               "key": "a",
@@ -2914,7 +2914,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The Borda-Carnot loss is \\[\\begin{aligned} h_L &amp;= \\dfrac{(V_1 - V_2)^2}{2g} = \\dfrac{(6 - 2)^2}{19.62} \\\\ &amp;= 0.815\\ \\text{m} \\end{aligned}\\] It is not the difference of the two velocity heads, because some kinetic head is recovered as pressure through the expansion.<p>Source note: p12 n51: broken fraction reconstructed independently as (V1-V2)^2/(2g).</p><p>Capsule 4th ed., p. 12; topic 3 point 51.</p>",
+          "explanation": "The Borda-Carnot loss is \\[\\begin{aligned} h_L &amp;= \\dfrac{(V_1 - V_2)^2}{2g} = \\dfrac{(6 - 2)^2}{19.62} \\\\ &amp;= 0.815\\ \\text{m} \\end{aligned}\\] It is not the difference of the two velocity heads, because some kinetic head is recovered as pressure through the expansion.<p>Capsule 4th ed., p. 12; topic 3 point 51.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2932,27 +2932,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00057",
           "src": "CAP4-03-00057",
-          "text": "A Moody-chart input is written as epsilon/D. What must epsilon represent for this ratio to be dimensionless?",
+          "text": "In the parameter \\(e/D\\) of the Moody diagram, \\(e\\) represents the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Pipe-wall thickness divided by diameter"
+              "text": "Pipe wall thickness"
             },
             {
               "key": "b",
-              "text": "Fluid kinematic viscosity"
+              "text": "Boundary layer thickness"
             },
             {
               "key": "c",
-              "text": "Equivalent absolute wall-roughness height"
+              "text": "Surface roughness height"
             },
             {
               "key": "d",
-              "text": "Dimensionless Darcy friction factor"
+              "text": "Kinematic viscosity"
             }
           ],
           "answer": "c",
-          "explanation": "Relative roughness is an absolute roughness length divided by the internal diameter. Both numerator and denominator must have length units; wall thickness, friction factor and viscosity are different quantities.<p>Capsule 4th ed., p. 12; topic 3 point 54.</p>",
+          "explanation": "The Moody diagram gives the friction factor against Reynolds number for different values of relative roughness, the ratio of \\(e\\) to \\(D\\), where \\(e\\) is the average height of the roughness of the pipe surface and \\(D\\) the pipe diameter.<p>Capsule 4th ed., p. 12; topic 3 point 54.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2965,32 +2965,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00059",
           "src": "CAP4-03-00059",
-          "text": "Compare two steady, fully developed laminar flows of the same incompressible Newtonian fluid through a fixed straight circular pipe with no slip. Mean speed doubles while fluid properties remain unchanged. By what factor does friction head loss change?",
+          "text": "The frictional resistance for fluids in motion is proportional to the velocity in ______ flow.",
           "options": [
             {
               "key": "a",
-              "text": "2"
+              "text": "Laminar"
             },
             {
               "key": "b",
-              "text": "0.5"
+              "text": "Critical"
             },
             {
               "key": "c",
-              "text": "4"
+              "text": "Turbulent"
             },
             {
               "key": "d",
-              "text": "1"
+              "text": "Transitional"
             }
           ],
           "answer": "a",
-          "explanation": "Darcy-Weisbach contains \\(V^2\\), but laminar flow has \\[f_D = \\dfrac{64}{\\text{Re}} \\propto \\dfrac{1}{V}\\] The combined dependence is therefore linear, \\(h_f \\propto V\\), so doubling speed doubles head loss rather than quadrupling it.<p>Capsule 4th ed., p. 12; topic 3 point 56.</p>",
+          "explanation": "The frictional resistance of a moving fluid is proportional to the velocity in laminar flow and to the square of the velocity in turbulent flow.<p>Capsule 4th ed., p. 12; topic 3 point 56.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3003,32 +3003,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00060",
           "src": "CAP4-03-00060",
-          "text": "In a fully rough turbulent flow through a fixed pipe, the Darcy factor stays effectively constant as speed doubles. By what factor does friction head loss increase?",
+          "text": "In turbulent flow, the frictional resistance for fluids in motion is proportional to ______.",
           "options": [
             {
               "key": "a",
-              "text": "16"
+              "text": "The square root of the velocity"
             },
             {
               "key": "b",
-              "text": "2"
+              "text": "The velocity"
             },
             {
               "key": "c",
-              "text": "8"
+              "text": "The cube of the velocity"
             },
             {
               "key": "d",
-              "text": "4"
+              "text": "The square of the velocity"
             }
           ],
           "answer": "d",
-          "explanation": "With \\(f_D\\), \\(L\\) and \\(D\\) fixed, Darcy-Weisbach gives \\(h_f \\propto V^2\\). Doubling \\(V\\) therefore gives \\[2^2 = 4\\] times the head loss. The same exact exponent cannot be assumed for every turbulent regime where the friction factor still varies with Reynolds number.<p>Source note: p12 n56 split into laminar and turbulent cases; the square law requires an effectively constant friction factor.</p><p>Capsule 4th ed., p. 12; topic 3 point 56.</p>",
+          "explanation": "In turbulent flow the frictional resistance is proportional to the square of the velocity, whereas in laminar flow it is proportional to the velocity itself.<p>Capsule 4th ed., p. 12; topic 3 point 56.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3041,12 +3041,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00062",
           "src": "CAP4-03-00062",
-          "text": "A 100 m long, 0.20 m diameter full pipe carries water at 2 m/s. Using Darcy factor 0.020 and g = 9.81 m/s<sup>2</sup>, what is its friction head loss, excluding fittings?",
+          "text": "A 100 m long, 0.20 m diameter full pipe carries water at 2 m/s. Using Darcy factor 0.020 and \\(g = 9.81\\) m/s<sup>2</sup>, what is its friction head loss, excluding fittings?",
           "options": [
             {
               "key": "a",
@@ -3084,27 +3084,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00102",
           "src": "CAP4-03-00102",
-          "text": "At a siphon summit the HGL is 2 m below the pipe centreline. What does this position indicate, without by itself proving cavitation?",
+          "text": "In pipe flow, the hydraulic grade line (HGL) is ______ the centre line of the pipe.",
           "options": [
             {
               "key": "a",
-              "text": "The energy grade line must also be below the centreline"
+              "text": "Always at the ground level of"
             },
             {
               "key": "b",
-              "text": "Gauge pressure is negative"
+              "text": "Always above"
             },
             {
               "key": "c",
-              "text": "Absolute pressure is necessarily negative"
+              "text": "Always below"
             },
             {
               "key": "d",
-              "text": "Flow must be zero"
+              "text": "Always coincident with"
             }
           ],
           "answer": "b",
-          "explanation": "HGL height relative to the centreline equals p_gauge/(rho g). A lower HGL therefore indicates suction or negative gauge pressure. Absolute pressure can remain positive and above vapour pressure, so neither impossible flow nor cavitation follows automatically.<p>Source note: p13 n101 false &#39;always above&#39; statement corrected.</p><p>Capsule 4th ed., p. 13; topic 3 point 101.</p>",
+          "explanation": "The hydraulic grade line is plotted at the pressure head above the pipe centre line. In pipe flow under positive pressure it therefore lies above the centre line of the pipe.<p>Capsule 4th ed., p. 13; topic 3 point 101.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3117,12 +3117,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00108",
           "src": "CAP4-03-00108",
-          "text": "A particular 90-degree elbow has a specified loss coefficient K = 0.90 based on pipe speed 3 m/s. With g = 9.81 m/s<sup>2</sup>, what local head loss should be included?",
+          "text": "A particular 90-degree elbow has a specified loss coefficient \\(K = 0.90\\) based on pipe speed 3 m/s. With \\(g = 9.81\\) m/s<sup>2</sup>, what local head loss should be included?",
           "options": [
             {
               "key": "a",
@@ -3142,7 +3142,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Use \\[\\begin{aligned} h_L &amp;= K\\dfrac{V^2}{2g} = 0.90 \\times \\dfrac{9}{19.62} \\\\ &amp;= 0.41284\\ \\text{m} \\end{aligned}\\] The velocity must match the coefficient's reference section. Real elbow \\(K\\) depends on geometry and conditions; 0.90 is supplied here rather than asserted for every 90-degree bend.<p>Source note: p13 n105: K = 0.9 is an assumed fitting value, not universal.</p><p>Capsule 4th ed., p. 13; topic 3 point 105.</p>",
+          "explanation": "The loss of head at a fitting is \\(h_L = K\\dfrac{V^2}{2g}\\): \\[\\begin{aligned} h_L &amp;= 0.90 \\times \\dfrac{3^2}{19.62} \\\\ &amp;= 0.413\\ \\text{m} \\end{aligned}\\]<p>Capsule 4th ed., p. 13; topic 3 point 105.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3160,7 +3160,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00115",
           "src": "CAP4-03-00115",
-          "text": "Water leaves a pipe at 4 m/s into a much larger reservoir where its mean velocity becomes negligible. With unit kinetic-energy correction and g = 9.81 m/s<sup>2</sup>, what exit head loss is used?",
+          "text": "Water leaves a pipe at 4 m/s into a much larger reservoir where its mean velocity becomes negligible. With unit kinetic-energy correction and \\(g = 9.81\\) m/s<sup>2</sup>, what exit head loss is used?",
           "options": [
             {
               "key": "a",
@@ -3180,7 +3180,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "c",
-          "explanation": "For discharge into a large reservoir, the pipe velocity head is dissipated, giving \\(K_{\\text{exit}} = 1\\) and \\[\\begin{aligned} h_{\\text{exit}} &amp;= \\dfrac{V^2}{2g} = \\dfrac{16}{19.62} \\\\ &amp;= 0.815\\ \\text{m} \\end{aligned}\\] A free jet still carrying kinetic energy at the outlet plane is a different boundary condition.<p>Source note: p14 n113 qualified as a pipe-to-large-reservoir exit, not every free discharge.</p><p>Capsule 4th ed., p. 14; topic 3 point 113.</p>",
+          "explanation": "For discharge into a large reservoir, the pipe velocity head is dissipated, giving \\(K_{\\text{exit}} = 1\\) and \\[\\begin{aligned} h_{\\text{exit}} &amp;= \\dfrac{V^2}{2g} = \\dfrac{16}{19.62} \\\\ &amp;= 0.815\\ \\text{m} \\end{aligned}\\] A free jet still carrying kinetic energy at the outlet plane is a different boundary condition.<p>Capsule 4th ed., p. 14; topic 3 point 113.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3198,27 +3198,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00116",
           "src": "CAP4-03-00116",
-          "text": "A full gravity conduit is evaluated with Manning's equation at fixed diameter and discharge. If n rises from 0.010 to 0.020, how must its energy gradient change to preserve the flow?",
+          "text": "When the coefficient of rugosity is increased from 0.01 to 0.02, the gradient of a pipe of a given diameter carrying the same flow at the same velocity should be increased by ______.",
           "options": [
             {
               "key": "a",
-              "text": "Become half as large"
+              "text": "8 times"
             },
             {
               "key": "b",
-              "text": "Become twice as large"
+              "text": "2 times"
             },
             {
               "key": "c",
-              "text": "Become one-quarter as large"
+              "text": "16 times"
             },
             {
               "key": "d",
-              "text": "Become four times as large"
+              "text": "4 times"
             }
           ],
           "answer": "d",
-          "explanation": "At fixed diameter, both area and hydraulic radius remain fixed, and the given discharge fixes velocity. Since \\(\\dfrac{\\sqrt{S}}{n}\\) must stay constant, \\[\\dfrac{S_2}{S_1} = \\left(\\dfrac{0.020}{0.010}\\right)^2 = 4\\] This is a Manning-model result, not a universal linear roughness rule.<p>Capsule 4th ed., p. 14; topic 3 point 114.</p>",
+          "explanation": "By Manning's formula, with the diameter and velocity unchanged, \\(\\sqrt{S}\\) must increase in proportion to \\(n\\): \\[\\dfrac{S_2}{S_1} = \\left(\\dfrac{0.02}{0.01}\\right)^2 = 4\\]<p>Capsule 4th ed., p. 14; topic 3 point 114.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3236,27 +3236,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00118",
           "src": "CAP4-03-00118",
-          "text": "For a sluiceway intake where minimizing entrance separation and associated local head loss is the objective, which entrance shape is usually preferred?",
+          "text": "The superior type of entrance of a sluiceway in a dam structure is the ______ entrance.",
           "options": [
             {
               "key": "a",
-              "text": "A re-entrant square-edged pipe"
+              "text": "Re-entrant"
             },
             {
               "key": "b",
-              "text": "A smoothly rounded bell mouth"
+              "text": "Bell-mouth"
             },
             {
               "key": "c",
-              "text": "A sharp-edged flush opening"
+              "text": "Sharp-edged"
             },
             {
               "key": "d",
-              "text": "An abrupt stepped contraction"
+              "text": "Square-edged"
             }
           ],
           "answer": "b",
-          "explanation": "A smooth bell-mouth transition guides converging streamlines with less separation and contraction loss. That hydraulic advantage does not alone settle structural, debris, cavitation or operational requirements, so 'superior' must be tied to the stated objective.<p>Source note: p14 n116 qualified as entrance-loss performance rather than universal design superiority.</p><p>Capsule 4th ed., p. 14; topic 3 point 116.</p>",
+          "explanation": "A bell-mouth entrance is rounded, so water enters smoothly without separation and with the least entrance loss; sharp-edged, square-edged and re-entrant entrances cause larger losses.<p>Capsule 4th ed., p. 14; topic 3 point 116.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3269,32 +3269,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00139",
           "src": "CAP4-03-00139",
-          "text": "An incompressible Newtonian fluid has steady, fully developed laminar flow through a straight circular pipe with no slip. If centreline speed is 4 m/s, what is the cross-sectional mean speed?",
+          "text": "The ratio of maximum velocity to average velocity of a viscous fluid flowing through a circular pipe is ______.",
           "options": [
             {
               "key": "a",
-              "text": "1 m/s"
+              "text": "4"
             },
             {
               "key": "b",
-              "text": "8 m/s"
+              "text": "1.2"
             },
             {
               "key": "c",
-              "text": "4 m/s"
+              "text": "1.5"
             },
             {
               "key": "d",
-              "text": "2 m/s"
+              "text": "2"
             }
           ],
           "answer": "d",
-          "explanation": "The parabolic laminar profile integrates to \\[V_{\\text{mean}} = \\dfrac{V_{\\max}}{2} = \\dfrac{4}{2} = 2\\ \\text{m/s}\\] The ratio of two does not hold for every viscous flow; turbulent, developing and non-Newtonian profiles have different ratios.<p>Source note: p14 n135: essential fully developed Newtonian laminar circular-pipe conditions supplied.</p><p>Capsule 4th ed., p. 14; topic 3 point 135.</p>",
+          "explanation": "Viscous (laminar) flow in a circular pipe has a parabolic velocity profile whose maximum velocity, at the centre, is twice the average velocity. Between parallel plates the ratio is 1.5.<p>Capsule 4th ed., p. 14; topic 3 point 135.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3307,32 +3307,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00140",
           "src": "CAP4-03-00140",
-          "text": "On the fully rough turbulent limiting branch of the Moody chart, which quantity controls the Darcy friction factor at fixed pipe geometry?",
+          "text": "In turbulent pipe flow, the Darcy friction factor \\(f\\) depends on ______.",
           "options": [
             {
               "key": "a",
-              "text": "Relative roughness, essentially independent of Reynolds number"
+              "text": "Both Reynolds number and relative roughness"
             },
             {
               "key": "b",
-              "text": "Reynolds number and relative roughness both remain influential"
+              "text": "Pipe length only"
             },
             {
               "key": "c",
-              "text": "Pipe diameter alone, independent of roughness height"
+              "text": "Fluid density only"
             },
             {
               "key": "d",
-              "text": "Reynolds number alone, independent of relative roughness"
+              "text": "Reynolds number only"
             }
           ],
           "answer": "a",
-          "explanation": "In the fully rough limit, the viscous Reynolds-number term becomes negligible in the turbulent resistance relation. The friction factor then depends essentially on epsilon/D. Both Reynolds number and roughness matter in the broader transitional turbulent regime, not this limiting regime.<p>Source note: p14 n136 false dependence on both variables corrected using the fully rough limit.</p><p>Capsule 4th ed., p. 14; topic 3 point 136.</p>",
+          "explanation": "In turbulent pipe flow the friction factor, as given by the Moody diagram and the Colebrook equation, depends on both the Reynolds number and the relative roughness. In laminar flow it depends on Reynolds number alone, \\(f = \\dfrac{64}{\\mathrm{Re}}\\).<p>Capsule 4th ed., p. 14; topic 3 point 136.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3345,12 +3345,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00142",
           "src": "CAP4-03-00142",
-          "text": "A full circular pipe must carry 35 m<sup>3</sup>/s at mean speed 1.4 m/s. What internal diameter follows from continuity?",
+          "text": "For a discharge of \\(Q = 35\\) m<sup>3</sup>/s at a velocity of \\(V = 1.4\\) m/s, the diameter of the pipe is ______.",
           "options": [
             {
               "key": "a",
@@ -3388,7 +3388,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00144",
           "src": "CAP4-03-00144",
-          "text": "A butterfly valve has a stated loss coefficient K = 0.40 at its specified opening, based on pipe speed 5 m/s. For g = 9.81 m/s<sup>2</sup>, what head loss does it cause?",
+          "text": "A butterfly valve has a stated loss coefficient \\(K = 0.40\\) at its specified opening, based on pipe speed 5 m/s. For \\(g = 9.81\\) m/s<sup>2</sup>, what head loss does it cause?",
           "options": [
             {
               "key": "a",
@@ -3408,7 +3408,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "\\[\\begin{aligned} h_L &amp;= K\\dfrac{V^2}{2g} = 0.40 \\times \\dfrac{25}{19.62} \\\\ &amp;= 0.50968\\ \\text{m} \\end{aligned}\\] This is energy loss per unit weight, expressed as head, not a loss of discharge. In a steady unbranched incompressible line, the same discharge passes before and after the valve.<p>Source note: p15 n142 calls KV^2/(2g) &#39;discharge loss&#39;; corrected to head loss. K depends on valve opening and velocity reference.</p><p>Capsule 4th ed., p. 15; topic 3 point 142.</p>",
+          "explanation": "\\[\\begin{aligned} h_L &amp;= K\\dfrac{V^2}{2g} = 0.40 \\times \\dfrac{25}{19.62} \\\\ &amp;= 0.50968\\ \\text{m} \\end{aligned}\\] This is energy loss per unit weight, expressed as head, not a loss of discharge. In a steady unbranched incompressible line, the same discharge passes before and after the valve.<p>Capsule 4th ed., p. 15; topic 3 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3426,27 +3426,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-06-00094",
           "src": "CAP4-06-00094",
-          "text": "Immediately downstream of a sharp pipe contraction, the jet narrows to a vena contracta and then fills the smaller pipe. Where does much of the associated local energy loss arise?",
+          "text": "In pipe flow, the minor loss due to a sudden contraction is mainly due to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Wall friction along the uniform downstream pipe counted as the contraction loss"
+              "text": "Friction along the upstream pipe"
             },
             {
               "key": "b",
-              "text": "Reversible pressure-to-velocity conversion during acceleration alone"
+              "text": "Contraction of the flow before the vena contracta"
             },
             {
               "key": "c",
-              "text": "Separation and turbulent mixing during re-expansion from the vena contracta"
+              "text": "Expansion of the flow after the vena contracta"
             },
             {
               "key": "d",
-              "text": "A hydrostatic elevation change at a horizontal contraction"
+              "text": "A change in elevation"
             }
           ],
           "answer": "c",
-          "explanation": "The sharp edge produces separation, and the contracted jet subsequently expands and mixes to occupy the smaller pipe. That irreversible mixing accounts for much of the loss. Pressure reduction due to acceleration is not itself identical to loss of total mechanical head; contraction geometry controls the coefficient.<p>Capsule 4th ed., p. 25; topic 6 point 95.</p>",
+          "explanation": "At a sudden contraction the flow narrows to a vena contracta and then expands to fill the smaller pipe; the eddies formed during this expansion cause most of the head loss.<p>Capsule 4th ed., p. 25; topic 6 point 95.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3459,7 +3459,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0304",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -3471,27 +3471,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00022",
           "src": "CAP4-03-00022",
-          "text": "A particular bank-stability calculation specifies an allowable bank shear equal to 0.75 times the horizontal-bed threshold. If the bed threshold is 4 Pa, which bank limit follows from that specified reduction?",
+          "text": "If the critical shear stress of a channel is \\(\\tau_c\\), the average shear stress required to move a grain on the bank is ______.",
           "options": [
             {
               "key": "a",
-              "text": "5.33 Pa"
+              "text": "\\(1.25\\tau_c\\)"
             },
             {
               "key": "b",
-              "text": "4.75 Pa"
+              "text": "\\(\\tau_c\\)"
             },
             {
               "key": "c",
-              "text": "3 Pa"
+              "text": "\\(0.75\\tau_c\\)"
             },
             {
               "key": "d",
-              "text": "1 Pa"
+              "text": "\\(0.5\\tau_c\\)"
             }
           ],
           "answer": "c",
-          "explanation": "The stipulated limit is \\[0.75 \\times 4 = 3\\ \\text{Pa}\\] Bank inclination and sediment friction affect the reduction in an actual tractive-force design; 0.75 is not a universal ratio of incipient-motion stresses for all banks.<p>Source note: p11 n19: source gives no bank slope, angle of repose or definition distinguishing applied average shear from critical shear. Parent review of the original 0.75 claim required; this numerical item treats the factor as an explicit assumption.</p><p>Capsule 4th ed., p. 11; topic 3 point 19.</p>",
+          "explanation": "A grain on the sloping bank is helped downslope by gravity, so less shear is needed to move it; the average shear stress required on the bank is taken as \\(0.75\\tau_c\\).<p>Capsule 4th ed., p. 11; topic 3 point 19.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3504,32 +3504,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00044",
           "src": "CAP4-03-00044",
-          "text": "In the SI Manning equation V = R<sup>2/3</sup>S<sup>1/2</sup>/n, slope S is dimensionless. What dimensions must Manning's n have?",
+          "text": "The dimension of Manning's rugosity coefficient is ______.",
           "options": [
             {
               "key": "a",
-              "text": "L<sup>2</sup>T<sup>-1</sup>"
+              "text": "\\(\\mathrm{M^0L^2T^{-1}}\\)"
             },
             {
               "key": "b",
-              "text": "TL<sup>-2/3</sup>"
+              "text": "\\(\\mathrm{M^0L^{-2/3}T}\\)"
             },
             {
               "key": "c",
-              "text": "L<sup>1/2</sup>T<sup>-1</sup>"
+              "text": "\\(\\mathrm{M^0L^{1/2}T^{-1}}\\)"
             },
             {
               "key": "d",
-              "text": "TL<sup>-1/3</sup>"
+              "text": "\\(\\mathrm{M^0L^{-1/3}T}\\)"
             }
           ],
           "answer": "d",
-          "explanation": "Rearranging gives \\[n = \\dfrac{R^{2{/}3}S^{1{/}2}}{V}\\] Its dimensions are \\[\\dfrac{L^{2{/}3}}{LT^{-1}} = TL^{-1{/}3}\\] commonly written \\(\\text{s/m}^{1{/}3}\\). It is not the dimensionless Darcy friction factor.<p>Capsule 4th ed., p. 11; topic 3 point 41.</p>",
+          "explanation": "From Manning's formula, \\(n = \\dfrac{R^{2{/}3}S^{1{/}2}}{V}\\) with the slope dimensionless, so \\(n\\) has the dimension of \\(\\mathrm{L^{2{/}3}}\\) divided by \\(\\mathrm{LT^{-1}}\\), which is \\(\\mathrm{M^0L^{-1{/}3}T}\\).<p>Capsule 4th ed., p. 11; topic 3 point 41.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3542,20 +3542,20 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00055",
           "src": "CAP4-03-00055",
-          "text": "For an illustrative Strickler estimate, use n = d<sup>1/6</sup>/21.1 with d in metres. If the representative grain size is 6 cm, what is n to four decimal places in this SI convention?",
+          "text": "If the particle size is 6 cm, Manning's rugosity coefficient from \\(n = \\dfrac{d^{1/6}}{21.1}\\) is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.0290"
+              "text": "0.29"
             },
             {
               "key": "b",
-              "text": "0.0297"
+              "text": "0.029"
             },
             {
               "key": "c",
@@ -3563,11 +3563,11 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             },
             {
               "key": "d",
-              "text": "0.0639"
+              "text": "0.064"
             }
           ],
           "answer": "b",
-          "explanation": "Convert 6 cm to 0.06 m first. Then \\[n = \\dfrac{0.06^{1{/}6}}{21.1} = 0.0296535\\] which rounds to 0.0297. The coefficient is empirical, and the grain-size definition and bed condition must match the calibration.<p>Source note: p12 n52: recomputation corrects the quoted 0.029; equation treated as stipulated empirical relation, not a universal roughness law.</p><p>Capsule 4th ed., p. 12; topic 3 point 52.</p>",
+          "explanation": "With the particle size in metres, \\(d = 0.06\\): \\[\\begin{aligned} n &amp;= \\dfrac{(0.06)^{1{/}6}}{21.1} = \\dfrac{0.626}{21.1} \\\\ &amp;= 0.0297 \\end{aligned}\\] which is taken as 0.029.<p>Capsule 4th ed., p. 12; topic 3 point 52.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3585,27 +3585,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00063",
           "src": "CAP4-03-00063",
-          "text": "A long mild channel reach changes to a long steep reach, with free downstream discharge and no tailwater submergence. Near a critical control at the slope break, which usual drawdown-profile pair develops?",
+          "text": "When the bed slope changes from a mild slope to a steep slope, the profiles formed are ______.",
           "options": [
             {
               "key": "a",
-              "text": "M3 upstream and S3 downstream"
+              "text": "M3 and S3"
             },
             {
               "key": "b",
-              "text": "S2 upstream and M2 downstream"
+              "text": "M1 and S3"
             },
             {
               "key": "c",
-              "text": "M2 upstream and S2 downstream"
+              "text": "M2 and S2"
             },
             {
               "key": "d",
-              "text": "M1 upstream and S1 downstream"
+              "text": "M1 and S1"
             }
           ],
           "answer": "c",
-          "explanation": "The mild reach approaches critical depth from below its larger normal depth, forming M2. The steep reach then drops from critical toward its smaller normal depth, forming S2. A submerged control or imposed tailwater can change this pattern.<p>Source note: p12 n59 qualified by boundary conditions; a slope change alone does not uniquely fix profiles.</p><p>Capsule 4th ed., p. 12; topic 3 point 59.</p>",
+          "explanation": "At a change from mild to steep slope, critical depth occurs at the break. The water surface draws down upstream along an M2 curve and keeps falling downstream along an S2 curve.<p>Capsule 4th ed., p. 12; topic 3 point 59.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3618,32 +3618,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00064",
           "src": "CAP4-03-00064",
-          "text": "For a rectangular channel of width B and depth y, which hydraulic-radius approximation becomes valid when B is much larger than y?",
+          "text": "The hydraulic radius for a wide rectangular channel section is equal to ______.",
           "options": [
             {
               "key": "a",
-              "text": "R approximately equals y"
+              "text": "The depth of flow"
             },
             {
               "key": "b",
-              "text": "R approximately equals B"
+              "text": "Half the depth of flow"
             },
             {
               "key": "c",
-              "text": "R approximately equals B/2"
+              "text": "Twice the depth of flow"
             },
             {
               "key": "d",
-              "text": "R approximately equals y/2"
+              "text": "The width of the channel"
             }
           ],
           "answer": "a",
-          "explanation": "The hydraulic radius is \\[R = \\dfrac{A}{P} = \\dfrac{By}{B + 2y}\\] When \\(B \\gg y\\), the sidewall contribution \\(2y\\) is negligible, giving \\(R \\approx y\\). The relation \\(R = \\dfrac{y}{2}\\) instead applies to the hydraulically economical rectangle \\(B = 2y\\).<p>Capsule 4th ed., p. 12; topic 3 point 60.</p>",
+          "explanation": "For a rectangular channel \\(R = \\dfrac{By}{B + 2y}\\). When the width \\(B\\) is very large compared with the depth \\(y\\), this tends to \\(y\\), the depth of flow.<p>Capsule 4th ed., p. 12; topic 3 point 60.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3656,32 +3656,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00065",
           "src": "CAP4-03-00065",
-          "text": "For a general open-channel cross-section with flow area A, top width T and wetted perimeter P, which length belongs in Fr = V/sqrt(gD)?",
+          "text": "The length parameter used in defining the Froude number of open-channel flow is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "D = A/T"
+              "text": "Hydraulic mean depth"
             },
             {
               "key": "b",
-              "text": "D = 4A/P"
+              "text": "Wetted perimeter"
             },
             {
               "key": "c",
-              "text": "D = T/2"
+              "text": "Top width"
             },
             {
               "key": "d",
-              "text": "D = A/P"
+              "text": "Hydraulic radius"
             }
           ],
           "answer": "a",
-          "explanation": "The long gravity-wave speed in the hydrostatic shallow-water approximation is \\[c = \\sqrt{\\dfrac{gA}{T}}\\] so the Froude length is the hydraulic depth \\(D = \\dfrac{A}{T}\\). Hydraulic radius \\(\\dfrac{A}{P}\\) and hydraulic diameter \\(\\dfrac{4A}{P}\\) serve different purposes.<p>Capsule 4th ed., p. 12; topic 3 point 61; topic 3 point 72.</p>",
+          "explanation": "The Froude number is \\(\\mathrm{Fr} = \\dfrac{V}{\\sqrt{gD}}\\), where \\(D = \\dfrac{A}{T}\\) is the hydraulic mean depth, the flow area divided by the top width; it is not the hydraulic radius.<p>Capsule 4th ed., p. 12; topic 3 point 61; topic 3 point 72.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3695,32 +3695,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00066",
           "src": "CAP4-03-00066",
-          "text": "A symmetric triangular channel is optimized to minimize wetted perimeter for a fixed flow area. At depth y, what is its hydraulic radius?",
+          "text": "The hydraulic radius of the most economical triangular channel section of depth \\(y\\) is ______.",
           "options": [
             {
               "key": "a",
-              "text": "y"
+              "text": "\\(y\\)"
             },
             {
               "key": "b",
-              "text": "y/sqrt(2)"
+              "text": "\\(\\dfrac{y}{\\sqrt{2}}\\)"
             },
             {
               "key": "c",
-              "text": "y/(2 sqrt(2))"
+              "text": "\\(\\dfrac{y}{2\\sqrt{2}}\\)"
             },
             {
               "key": "d",
-              "text": "y/2"
+              "text": "\\(\\dfrac{y}{2}\\)"
             }
           ],
           "answer": "c",
-          "explanation": "The optimal triangular section has side slope 1H:1V. Its area is \\(y^2\\) and its wetted perimeter is \\(2\\sqrt{2}\\,y\\), giving \\[R = \\dfrac{y^2}{2\\sqrt{2}\\,y} = \\dfrac{y}{2\\sqrt{2}}\\] The optimum-trapezoid relation \\(R = \\dfrac{y}{2}\\) cannot simply be transferred to this triangle.<p>Source note: p12 n62 missing radical restored by independent area/perimeter derivation.</p><p>Capsule 4th ed., p. 12; topic 3 point 62.</p>",
+          "explanation": "The most economical triangular section has side slopes of 1H : 1V. Its area is \\(y^2\\) and its wetted perimeter \\(2\\sqrt{2}\\,y\\), so \\(R = \\dfrac{y^2}{2\\sqrt{2}\\,y} = \\dfrac{y}{2\\sqrt{2}}\\).<p>Capsule 4th ed., p. 12; topic 3 point 62.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3733,32 +3733,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00067",
           "src": "CAP4-03-00067",
-          "text": "A broad-crested weir has a smooth rounded entrance and a crest long enough for approximately parallel flow but short enough that crest friction is small. Why can its entrance-to-control head loss be small?",
+          "text": "The head loss is minimum in a ______ weir.",
           "options": [
             {
               "key": "a",
-              "text": "The crest recovers energy dissipated in a downstream jump"
+              "text": "Cipolletti"
             },
             {
               "key": "b",
-              "text": "Crest width fixes loss independently of surface roughness"
+              "text": "Sharp-crested"
             },
             {
               "key": "c",
-              "text": "Critical depth forces upstream and downstream heads to match"
+              "text": "Narrow-crested"
             },
             {
               "key": "d",
-              "text": "Smooth transitions limit separation and dissipation"
+              "text": "Broad-crested"
             }
           ],
           "answer": "d",
-          "explanation": "A well-shaped approach limits separation, allowing a low-loss energy approximation to the crest control. Friction, entrance geometry, submergence and downstream dissipation still matter. Broad-crested weirs do not universally have the smallest total loss of every weir type.<p>Source note: p12 n63 and p13 n78 share the broad-crest loss claim. Corrected to a conditional low-loss principle; no unsupported universal ranking retained.</p><p>Capsule 4th ed., pp. 12, 13; topic 3 point 63; topic 3 point 78.</p>",
+          "explanation": "Flow over a broad-crested weir passes smoothly through critical depth on its long crest with little separation, so its head loss is small, less than that of a sharp-crested weir.<p>Capsule 4th ed., pp. 12, 13; topic 3 point 63; topic 3 point 78.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3773,32 +3773,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00068",
           "src": "CAP4-03-00068",
-          "text": "For a fixed specific energy in a rectangular channel with kinetic-energy correction factor one, at which flow condition is the possible discharge per unit width greatest?",
+          "text": "In open-channel flow, at critical depth the discharge is ______ for a given specific energy.",
           "options": [
             {
               "key": "a",
-              "text": "Uniform flow at every possible bed slope"
+              "text": "Half its maximum"
             },
             {
               "key": "b",
-              "text": "Deep subcritical flow approaching zero speed"
+              "text": "Minimum"
             },
             {
               "key": "c",
-              "text": "Critical flow"
+              "text": "Maximum"
             },
             {
               "key": "d",
-              "text": "Very shallow supercritical flow approaching zero depth"
+              "text": "Zero"
             }
           ],
           "answer": "c",
-          "explanation": "From \\[q^2 = 2gy^2(E - y)\\] maximizing with respect to \\(y\\) at fixed \\(E\\) gives \\(y = \\dfrac{2E}{3}\\). At this depth \\[\\dfrac{q^2}{gy^3} = 1\\] which is the critical-flow condition, independent of a normal-depth specification.<p>Capsule 4th ed., p. 12; topic 3 point 64.</p>",
+          "explanation": "For a given specific energy, the discharge in a channel section is maximum when the flow is at critical depth; equally, for a given discharge, the specific energy is minimum at critical depth.<p>Capsule 4th ed., p. 12; topic 3 point 64.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3811,32 +3811,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00069",
           "src": "CAP4-03-00069",
-          "text": "Discharge is held fixed in a rectangular open channel with kinetic-energy correction factor one while possible flow depths are compared. At critical depth, what is extremized?",
+          "text": "At the critical depth of flow in an open channel, the specific energy is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Specific energy is minimized"
+              "text": "Minimum"
             },
             {
               "key": "b",
-              "text": "Velocity is minimized"
+              "text": "Infinite"
             },
             {
               "key": "c",
-              "text": "Flow area is maximized"
+              "text": "Zero"
             },
             {
               "key": "d",
-              "text": "Specific energy is maximized"
+              "text": "Maximum"
             }
           ],
           "answer": "a",
-          "explanation": "The specific energy \\[E = y + \\dfrac{q^2}{2gy^2}\\] has a minimum where \\[\\dfrac{dE}{dy} = 1 - \\dfrac{q^2}{gy^3} = 0\\] that is, \\(\\text{Fr} = 1\\). Fixing discharge is essential; maximum discharge at fixed energy is the corresponding but different optimization.<p>Capsule 4th ed., p. 12; topic 3 point 65.</p>",
+          "explanation": "For a fixed discharge, the curve of specific energy against depth has its minimum at the critical depth; any other depth needs more specific energy to carry the same discharge.<p>Capsule 4th ed., p. 12; topic 3 point 65.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3849,7 +3849,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00070",
@@ -3874,7 +3874,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Momentum balance gives \\[\\dfrac{y_2}{y_1} = \\dfrac{\\sqrt{1 + 8\\,\\text{Fr}_1^2} - 1}{2}\\] With \\(\\text{Fr}_1 = 3\\), the ratio is \\[\\dfrac{\\sqrt{73} - 1}{2} = 3.772\\] Multiplying by \\(y_1 = 1.00\\) m gives \\(y_2 = 3.772\\) m; energy is not conserved across the jump.<p>Source note: p12 n67 radical restored independently; formula is for a rectangular hydraulic jump, not arbitrary channel shapes.</p><p>Capsule 4th ed., p. 12; topic 3 point 67.</p>",
+          "explanation": "Momentum balance gives \\[\\dfrac{y_2}{y_1} = \\dfrac{\\sqrt{1 + 8\\,\\text{Fr}_1^2} - 1}{2}\\] With \\(\\text{Fr}_1 = 3\\), the ratio is \\[\\dfrac{\\sqrt{73} - 1}{2} = 3.772\\] Multiplying by \\(y_1 = 1.00\\) m gives \\(y_2 = 3.772\\) m; energy is not conserved across the jump.<p>Capsule 4th ed., p. 12; topic 3 point 67.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3892,27 +3892,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00071",
           "src": "CAP4-03-00071",
-          "text": "Using the conventional textbook classification, which approach-Froude-number band is associated with a well-developed steady hydraulic jump?",
+          "text": "The value of Froude number for a steady hydraulic jump is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Approximately 1 to 1.7"
+              "text": "1 to 1.7"
             },
             {
               "key": "b",
-              "text": "Approximately 4.5 to 9"
+              "text": "4.5 to 9"
             },
             {
               "key": "c",
-              "text": "Approximately 2.5 to 4.5"
+              "text": "Greater than 9"
             },
             {
               "key": "d",
-              "text": "Approximately 1.7 to 2.5"
+              "text": "2.5 to 4.5"
             }
           ],
           "answer": "b",
-          "explanation": "The conventional bands are undular near 1-1.7, weak near 1.7-2.5, oscillating near 2.5-4.5 and steady near 4.5-9. These are empirical classifications, not sharp universal physical boundaries or proof that the turbulent roller is instantaneously steady.<p>Capsule 4th ed., p. 12; topic 3 point 68.</p>",
+          "explanation": "Hydraulic jumps are classified by the upstream Froude number: undular 1 to 1.7, weak 1.7 to 2.5, oscillating 2.5 to 4.5, steady 4.5 to 9, and strong above 9.<p>Capsule 4th ed., p. 12; topic 3 point 68.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3925,32 +3925,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00072",
           "src": "CAP4-03-00072",
-          "text": "A uniform-flow channel must retain the same area, hydraulic radius and discharge after Manning's n doubles. If its original energy slope was 0.001, what slope does Manning's equation require?",
+          "text": "If Manning's \\(n\\) is doubled, then to carry the same discharge in the same section the slope should be ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.004"
+              "text": "Quadrupled"
             },
             {
               "key": "b",
-              "text": "0.00025"
+              "text": "Unchanged"
             },
             {
               "key": "c",
-              "text": "0.002"
+              "text": "Doubled"
             },
             {
               "key": "d",
-              "text": "0.0005"
+              "text": "Halved"
             }
           ],
           "answer": "a",
-          "explanation": "With \\(V\\) and \\(R\\) fixed, Manning's equation \\[V = \\dfrac{R^{2{/}3}\\sqrt{S}}{n}\\] requires \\(\\sqrt{S} \\propto n\\). Doubling \\(n\\) therefore multiplies \\(S\\) by \\(2^2 = 4\\): \\[S = 4 \\times 0.001 = 0.004\\] The result requires the stated unchanged geometry and flow.<p>Capsule 4th ed., p. 12; topic 3 point 69.</p>",
+          "explanation": "By Manning's formula, \\(V = \\dfrac{1}{n}R^{2{/}3}S^{1{/}2}\\). Keeping \\(V\\) and \\(R\\) unchanged requires \\(\\sqrt{S}\\) to change in proportion to \\(n\\), so doubling \\(n\\) needs four times the slope.<p>Capsule 4th ed., p. 12; topic 3 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3963,32 +3963,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00073",
           "src": "CAP4-03-00073",
-          "text": "An open-channel flow has Fr greater than one. How does its mean speed compare with the small surface-gravity-wave speed relative to the water?",
+          "text": "The condition for supercritical flow is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Mean speed is smaller; one wave can travel upstream"
+              "text": "\\(\\mathrm{Fr} \\lt 1\\)"
             },
             {
               "key": "b",
-              "text": "Mean speed is larger; both wave directions are carried downstream"
+              "text": "\\(\\mathrm{Fr} \\gt 1\\)"
             },
             {
               "key": "c",
-              "text": "Mean speed is unrelated to wave speed; Fr measures viscosity"
+              "text": "\\(\\mathrm{Fr} = 0\\)"
             },
             {
               "key": "d",
-              "text": "Mean speed equals wave speed; the flow is critical"
+              "text": "\\(\\mathrm{Fr} = 1\\)"
             }
           ],
           "answer": "b",
-          "explanation": "The Froude number compares mean speed with the relative wave speed: \\[\\text{Fr} = \\dfrac{V}{\\sqrt{gD}}\\] For \\(\\text{Fr} \\gt 1\\), \\(V\\) exceeds the relative wave speed, so even a wave directed upstream relative to the water is swept downstream relative to the bed. This defines supercritical flow in the shallow-water model.<p>Capsule 4th ed., p. 12; topic 3 point 70.</p>",
+          "explanation": "Flow is supercritical when the Froude number exceeds 1, that is, when the flow velocity is greater than the speed of a small surface wave. \\(\\mathrm{Fr} = 1\\) is critical flow and \\(\\mathrm{Fr} \\lt 1\\) is subcritical flow.<p>Capsule 4th ed., p. 12; topic 3 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4001,32 +4001,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00074",
           "src": "CAP4-03-00074",
-          "text": "At the same discharge and cross-section, two distinct flow depths have equal specific energy. How are these depths classified?",
+          "text": "For a given discharge in an open channel, the two depths having the same specific energy are called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Alternate depths, generally on opposite sides of critical depth"
+              "text": "Alternate depths"
             },
             {
               "key": "b",
-              "text": "Conjugate depths, necessarily across a hydraulic jump"
+              "text": "Conjugate depths"
             },
             {
               "key": "c",
-              "text": "Critical depths, both at the energy minimum"
+              "text": "Critical depths"
             },
             {
               "key": "d",
-              "text": "Normal depths, necessarily at the same bed slope"
+              "text": "Normal depths"
             }
           ],
           "answer": "a",
-          "explanation": "Alternate depths lie on the shallow supercritical and deep subcritical branches of the same specific-energy curve. Conjugate or sequent depths instead share specific force under jump assumptions and generally have different energies.<p>Capsule 4th ed., pp. 12, 14; topic 3 point 71; topic 3 point 112; topic 3 point 118.</p>",
+          "explanation": "For a given discharge, two depths, one subcritical and one supercritical, can have the same specific energy; these are the alternate depths. Conjugate (sequent) depths are the depths before and after a hydraulic jump.<p>Capsule 4th ed., pp. 12, 14; topic 3 point 71; topic 3 point 112; topic 3 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4042,7 +4042,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00075",
@@ -4067,7 +4067,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Each submerged sloping side has length \\(y\\sqrt{1 + z^2} = 2\\sqrt{3.25}\\) m. Thus \\[\\begin{aligned} P &amp;= B + 2y\\sqrt{1 + z^2} \\\\ &amp;= 4 + 4\\sqrt{3.25} \\\\ &amp;= 11.211\\ \\text{m} \\end{aligned}\\] The free-surface top width is not part of the wetted perimeter.<p>Source note: p12 n73: &#39;weighted&#39; corrected to wetted; missing square root restored from geometry.</p><p>Capsule 4th ed., p. 12; topic 3 point 73.</p>",
+          "explanation": "Each submerged sloping side has length \\(y\\sqrt{1 + z^2} = 2\\sqrt{3.25}\\) m. Thus \\[\\begin{aligned} P &amp;= B + 2y\\sqrt{1 + z^2} \\\\ &amp;= 4 + 4\\sqrt{3.25} \\\\ &amp;= 11.211\\ \\text{m} \\end{aligned}\\] The free-surface top width is not part of the wetted perimeter.<p>Capsule 4th ed., p. 12; topic 3 point 73.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4085,27 +4085,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00078",
           "src": "CAP4-03-00078",
-          "text": "For preliminary screening only, a designer uses jump length between five and seven times the jump height. With upstream and downstream depths 0.5 and 2.5 m, what length range follows?",
+          "text": "The length of a hydraulic jump is equal to ______ the height of the jump.",
           "options": [
             {
               "key": "a",
-              "text": "10 to 14 m"
+              "text": "5 to 7 times"
             },
             {
               "key": "b",
-              "text": "2.5 to 3.5 m"
+              "text": "10 to 12 times"
             },
             {
               "key": "c",
-              "text": "15 to 21 m"
+              "text": "Equal to"
             },
             {
               "key": "d",
-              "text": "12.5 to 17.5 m"
+              "text": "2 to 3 times"
             }
           ],
           "answer": "a",
-          "explanation": "Jump height is the depth difference, \\(2.5 - 0.5 = 2.0\\) m. Applying the stipulated multipliers gives \\[L_{\\min} = 5 \\times 2 = 10\\ \\text{m}\\] \\[L_{\\max} = 7 \\times 2 = 14\\ \\text{m}\\] This empirical estimate does not replace a stilling-basin design based on actual flow and tailwater.<p>Source note: p12 n76 is a rough empirical range, not an exact universal jump-length equation.</p><p>Capsule 4th ed., p. 12; topic 3 point 76.</p>",
+          "explanation": "The length of a hydraulic jump, used in sizing stilling basins, is taken as 5 to 7 times the height of the jump, which is the difference between the sequent depths.<p>Capsule 4th ed., p. 12; topic 3 point 76.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4118,32 +4118,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00079",
           "src": "CAP4-03-00079",
-          "text": "A trapezoidal channel is hydraulically optimal for a fixed area and prescribed side slope. Each submerged sloping side is 2.5 m long. What is the top width?",
+          "text": "In the most economical trapezoidal section, the top width is equal to ______.",
           "options": [
             {
               "key": "a",
-              "text": "1.25 m"
+              "text": "Twice the depth"
             },
             {
               "key": "b",
-              "text": "5.0 m"
+              "text": "The sum of the two sloping sides"
             },
             {
               "key": "c",
-              "text": "7.5 m"
+              "text": "Half the wetted perimeter"
             },
             {
               "key": "d",
-              "text": "2.5 m"
+              "text": "The bottom width"
             }
           ],
           "answer": "b",
-          "explanation": "For the optimum trapezoid, half the top width equals one submerged sloping-side length: \\[\\dfrac{T}{2} = y\\sqrt{1 + z^2} = 2.5\\ \\text{m}\\] Thus \\(T = 2 \\times 2.5 = 5.0\\) m. A side-slope ratio itself is dimensionless and cannot be added to produce a width.<p>Source note: p12 n77: &#39;sum of side slope&#39; corrected to sum of the two submerged sloping-side lengths.</p><p>Capsule 4th ed., p. 12; topic 3 point 77.</p>",
+          "explanation": "In the most economical trapezoidal section, half the top width equals the length of one sloping side, so the top width equals the sum of the two sloping sides; the hydraulic radius is half the depth.<p>Capsule 4th ed., p. 12; topic 3 point 77.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4156,32 +4156,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00080",
           "src": "CAP4-03-00080",
-          "text": "For free overflow over a fixed ogee weir, assume effective crest length and discharge coefficient stay constant. If total head above the crest becomes four times its original value, what is the discharge ratio?",
+          "text": "The discharge passing over an ogee weir is proportional to ______.",
           "options": [
             {
               "key": "a",
-              "text": "16"
+              "text": "\\(H\\)"
             },
             {
               "key": "b",
-              "text": "8"
+              "text": "\\(H^{3/2}\\)"
             },
             {
               "key": "c",
-              "text": "4"
+              "text": "\\(H^{1/2}\\)"
             },
             {
               "key": "d",
-              "text": "2"
+              "text": "\\(H^{5/2}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "Using \\(Q = CLH^{3{/}2}\\), the discharge ratio is \\[4^{3{/}2} = 8\\] In real ogee operation the coefficient can vary with head relative to the design head, so constancy of \\(C\\) is an explicit assumption.<p>Capsule 4th ed., p. 13; topic 3 point 79.</p>",
+          "explanation": "Like other weirs, an ogee weir has \\(Q = CLH^{3{/}2}\\), so the discharge is proportional to \\(H^{3{/}2}\\), where \\(H\\) is the head over the crest. A triangular notch gives \\(H^{5{/}2}\\).<p>Capsule 4th ed., p. 13; topic 3 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4194,32 +4194,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00081",
           "src": "CAP4-03-00081",
-          "text": "A symmetric triangular channel has side slopes 2H:1V, depth y and mean speed V. Which expression gives its Froude number under the shallow-water approximation?",
+          "text": "The Froude number of a triangular channel of depth \\(y\\) with side slope 2H : 1V is ______.",
           "options": [
             {
               "key": "a",
-              "text": "V/sqrt(2gy)"
+              "text": "\\(\\dfrac{V}{\\sqrt{2gy}}\\)"
             },
             {
               "key": "b",
-              "text": "V/sqrt(gy/2)"
+              "text": "\\(\\dfrac{V}{\\sqrt{gy/2}}\\)"
             },
             {
               "key": "c",
-              "text": "V/sqrt(gy/(2 sqrt(5)))"
+              "text": "\\(\\dfrac{V}{\\sqrt{gy/4}}\\)"
             },
             {
               "key": "d",
-              "text": "V/sqrt(gy)"
+              "text": "\\(\\dfrac{V}{\\sqrt{gy}}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "For side slope \\(z\\), area \\(A = zy^2\\) and top width \\(T = 2zy\\), so the hydraulic depth is \\[D = \\dfrac{A}{T} = \\dfrac{y}{2}\\] Therefore \\[\\text{Fr} = \\dfrac{V}{\\sqrt{gy{/}2}}\\] independent of \\(z\\). Using hydraulic radius instead gives the wrong wave-speed scale.<p>Source note: p13 n80: formula reconstructed from triangular geometry; no source image used.</p><p>Capsule 4th ed., p. 13; topic 3 point 80.</p>",
+          "explanation": "For a triangular section the hydraulic depth is \\(D = \\dfrac{A}{T} = \\dfrac{y}{2}\\) whatever the side slope, so the Froude number \\(\\dfrac{V}{\\sqrt{gD}}\\) uses \\(D = \\dfrac{y}{2}\\).<p>Capsule 4th ed., p. 13; topic 3 point 80.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4232,32 +4232,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00082",
           "src": "CAP4-03-00082",
-          "text": "A channel's water depth changes slowly along its length but measurements at every fixed section remain constant with time. How is this flow classified?",
+          "text": "When the flow in an open channel is gradually varied, the flow is said to be ______.",
           "options": [
             {
               "key": "a",
-              "text": "Steady, nonuniform and gradually varied"
+              "text": "Steady non-uniform flow"
             },
             {
               "key": "b",
-              "text": "Unsteady, uniform and gradually varied"
+              "text": "Unsteady uniform flow"
             },
             {
               "key": "c",
-              "text": "Unsteady, nonuniform and rapidly varied"
+              "text": "Unsteady non-uniform flow"
             },
             {
               "key": "d",
-              "text": "Steady, uniform and rapidly varied"
+              "text": "Steady uniform flow"
             }
           ],
           "answer": "a",
-          "explanation": "Time-invariant measurements establish steadiness, spatial depth variation establishes nonuniformity, and slow spatial variation identifies gradually varied flow. Gradual spatial variation alone would not establish that a flow is steady.<p>Source note: p13 n81: steadiness is supplied as an independent condition, not inferred solely from gradual variation.</p><p>Capsule 4th ed., p. 13; topic 3 point 81.</p>",
+          "explanation": "In gradually varied flow the depth changes slowly along the channel but does not change with time at any section, so the flow is steady non-uniform flow.<p>Capsule 4th ed., p. 13; topic 3 point 81.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4270,32 +4270,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00103",
           "src": "CAP4-03-00103",
-          "text": "For a general open-channel section with unit kinetic-energy correction, which dimensionless expression equals one at critical flow?",
+          "text": "The condition for critical flow in a channel of any section is that ______ equals 1.",
           "options": [
             {
               "key": "a",
-              "text": "Q<sup>2</sup>P/(gA<sup>3</sup>)"
+              "text": "\\(\\dfrac{Q^2P}{gA^3}\\)"
             },
             {
               "key": "b",
-              "text": "gA<sup>3</sup>T/Q<sup>2</sup>"
+              "text": "\\(\\dfrac{gA^3T}{Q^2}\\)"
             },
             {
               "key": "c",
-              "text": "Q<sup>2</sup>/(gA<sup>2</sup>)"
+              "text": "\\(\\dfrac{Q^2}{gA^2}\\)"
             },
             {
               "key": "d",
-              "text": "Q<sup>2</sup>T/(gA<sup>3</sup>)"
+              "text": "\\(\\dfrac{Q^2T}{gA^3}\\)"
             }
           ],
           "answer": "d",
-          "explanation": "\\[\\text{Fr}^2 = \\dfrac{V^2 T}{gA}\\] Inserting \\(V = \\dfrac{Q}{A}\\) gives \\[\\text{Fr}^2 = \\dfrac{Q^2 T}{gA^3} = 1\\] at critical flow. \\(T\\) is the free-surface top width, not the wetted perimeter \\(P\\).<p>Capsule 4th ed., p. 13; topic 3 point 102.</p>",
+          "explanation": "Critical flow occurs when the Froude number is 1. For a channel of any shape this condition is \\(\\dfrac{Q^2T}{gA^3} = 1\\), where \\(T\\) is the top width and \\(A\\) the flow area.<p>Capsule 4th ed., p. 13; topic 3 point 102.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4308,32 +4308,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00104",
           "src": "CAP4-03-00104",
-          "text": "Which quantity is the critical-flow section factor Z for a channel of cross-sectional area A and hydraulic depth D?",
+          "text": "The form factor of a channel section is given by ______.",
           "options": [
             {
               "key": "a",
-              "text": "A D<sup>2/3</sup>"
+              "text": "\\(AD^{2/3}\\)"
             },
             {
               "key": "b",
-              "text": "A/D<sup>2</sup>"
+              "text": "\\(\\dfrac{A}{D^2}\\)"
             },
             {
               "key": "c",
-              "text": "sqrt(A D)"
+              "text": "\\(\\sqrt{AD}\\)"
             },
             {
               "key": "d",
-              "text": "A sqrt(D)"
+              "text": "\\(A\\sqrt{D}\\)"
             }
           ],
           "answer": "d",
-          "explanation": "The critical condition can be written \\[\\dfrac{Q}{\\sqrt{g}} = A\\sqrt{\\dfrac{A}{T}} = A\\sqrt{D} = Z\\] defining the section factor \\(Z\\). Here \\(A\\) is the wetted cross-sectional area, not drainage-basin area; \\(Z\\) has units of \\(L^{5{/}2}\\).<p>Source note: p13 n103 conflates channel section factor with basin form factor. Split into two questions to teach both meanings.</p><p>Capsule 4th ed., p. 13; topic 3 point 103.</p>",
+          "explanation": "The factor \\(Z = A\\sqrt{D}\\), the flow area multiplied by the square root of the hydraulic depth, is used in critical-flow computations; at critical flow \\(Z = \\dfrac{Q}{\\sqrt{g}}\\).<p>Capsule 4th ed., p. 13; topic 3 point 103.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4346,32 +4346,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00110",
           "src": "CAP4-03-00110",
-          "text": "Chezy's equation is V = C sqrt(RS), where R is hydraulic radius and S is dimensionless slope. What are the dimensions of C?",
+          "text": "The dimension of Chezy's coefficient \\(C\\) is ______.",
           "options": [
             {
               "key": "a",
-              "text": "L<sup>1/2</sup>T<sup>-1</sup>"
+              "text": "\\(\\mathrm{L^{1/2}T^{-1}}\\)"
             },
             {
               "key": "b",
-              "text": "TL<sup>-1/3</sup>"
+              "text": "\\(\\mathrm{L^{-1/3}T}\\)"
             },
             {
               "key": "c",
-              "text": "L<sup>-1/2</sup>T<sup>-1</sup>"
+              "text": "\\(\\mathrm{L^{-1/2}T^{-1}}\\)"
             },
             {
               "key": "d",
-              "text": "L<sup>2</sup>T<sup>-1</sup>"
+              "text": "\\(\\mathrm{L^{2}T^{-1}}\\)"
             }
           ],
           "answer": "a",
-          "explanation": "Rearranging, \\[C = \\dfrac{V}{\\sqrt{RS}}\\] so its dimensions are \\[\\dfrac{LT^{-1}}{L^{1{/}2}} = L^{1{/}2}T^{-1}\\] Chezy \\(C\\) is neither dimensionless nor dimensionally identical to Manning \\(n\\).<p>Capsule 4th ed., p. 13; topic 3 point 107.</p>",
+          "explanation": "From \\(V = C\\sqrt{RS}\\) with the slope dimensionless, \\(C = \\dfrac{V}{\\sqrt{RS}}\\), whose dimension is \\(\\mathrm{LT^{-1}}\\) divided by \\(\\mathrm{L^{1{/}2}}\\), that is \\(\\mathrm{L^{1{/}2}T^{-1}}\\).<p>Capsule 4th ed., p. 13; topic 3 point 107.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4384,7 +4384,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00117",
@@ -4427,27 +4427,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00122",
           "src": "CAP4-03-00122",
-          "text": "A backwater profile lies above normal depth on a mild channel bed. Using y for actual depth, yn for normal depth and yc for critical depth, which ordering identifies an M1 profile?",
+          "text": "In an M1 profile of gradually varied flow, ______.",
           "options": [
             {
               "key": "a",
-              "text": "yn > y > yc"
+              "text": "\\(y_0 \\gt y \\gt y_c\\)"
             },
             {
               "key": "b",
-              "text": "yn > yc > y"
+              "text": "\\(y_0 \\gt y_c \\gt y\\)"
             },
             {
               "key": "c",
-              "text": "y > yn > yc"
+              "text": "\\(y \\gt y_0 \\gt y_c\\)"
             },
             {
               "key": "d",
-              "text": "y > yc > yn"
+              "text": "\\(y \\gt y_c \\gt y_0\\)"
             }
           ],
           "answer": "c",
-          "explanation": "A mild bed has normal depth above critical depth, yn > yc. Zone 1 lies above both reference depths, so M1 requires y > yn > yc. A depth between yn and yc would be an M2 drawdown profile.<p>Capsule 4th ed., p. 14; topic 3 point 120.</p>",
+          "explanation": "M profiles occur on mild slopes, where the normal depth \\(y_0\\) exceeds the critical depth \\(y_c\\). The M1 (backwater) curve lies above both, \\(y \\gt y_0 \\gt y_c\\); M2 lies between them and M3 below the critical depth.<p>Capsule 4th ed., p. 14; topic 3 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4460,32 +4460,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00127",
           "src": "CAP4-03-00127",
-          "text": "A sediment engineer uses the Shields diagram for noncohesive bed grains. What threshold is the diagram primarily used to estimate?",
+          "text": "The Shields diagram is used to determine the ______ for sediment transport.",
           "options": [
             {
               "key": "a",
-              "text": "Dimensionless critical bed shear for incipient motion"
+              "text": "Critical shear stress"
             },
             {
               "key": "b",
-              "text": "Universal settling velocity independent of grain size"
+              "text": "Critical depth"
             },
             {
               "key": "c",
-              "text": "Maximum suspended concentration at every discharge"
+              "text": "Sediment concentration"
             },
             {
               "key": "d",
-              "text": "Critical water depth for minimum specific energy"
+              "text": "Settling velocity"
             }
           ],
           "answer": "a",
-          "explanation": "The Shields curve relates critical dimensionless shear tau_c/[(rho_s-rho)gd] to a particle-scale Reynolds number. It concerns the start of grain movement, not critical open-channel flow or a universal sediment concentration.<p>Capsule 4th ed., p. 14; topic 3 point 125.</p>",
+          "explanation": "The Shields diagram relates the dimensionless critical shear stress at which grains begin to move to the particle Reynolds number, so it is used to find the critical shear for sediment transport.<p>Capsule 4th ed., p. 14; topic 3 point 125.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4498,12 +4498,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00128",
           "src": "CAP4-03-00128",
-          "text": "For a specified sediment condition, take critical Shields parameter 0.050, grain density 2650 kg/m<sup>3</sup>, water density 1000 kg/m<sup>3</sup>, grain diameter 2 mm and g = 9.81 m/s<sup>2</sup>. What critical shear follows?",
+          "text": "For a specified sediment condition, take critical Shields parameter 0.050, grain density 2650 kg/m<sup>3</sup>, water density 1000 kg/m<sup>3</sup>, grain diameter 2 mm and \\(g = 9.81\\) m/s<sup>2</sup>. What critical shear follows?",
           "options": [
             {
               "key": "a",
@@ -4523,7 +4523,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "\\[\\tau_c = \\theta_c(\\rho_s - \\rho)gd\\] The submerged density difference is \\(2650 - 1000 = 1650\\) kg per m<sup>3</sup> and \\(d = 0.002\\) m, so \\[\\begin{aligned} \\tau_c &amp;= 0.050 \\times 1650 \\\\ &amp;\\quad \\times 9.81 \\times 0.002 \\\\ &amp;= 1.61865\\ \\text{Pa} \\end{aligned}\\] The submerged density difference and the conversion of millimetres to metres are essential. The supplied Shields value is condition-specific, not universal.<p>Capsule 4th ed., p. 14; topic 3 point 125.</p>",
+          "explanation": "The critical shear from the Shields parameter is \\[\\tau_c = \\theta_c(\\rho_s - \\rho)gd\\] With \\(\\rho_s - \\rho = 1650\\) kg per m<sup>3</sup> and \\(d = 0.002\\) m, \\[\\begin{aligned} \\tau_c &amp;= 0.050 \\times 1650 \\\\ &amp;\\quad \\times 9.81 \\times 0.002 \\\\ &amp;= 1.62\\ \\text{Pa} \\end{aligned}\\]<p>Capsule 4th ed., p. 14; topic 3 point 125.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4541,27 +4541,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00129",
           "src": "CAP4-03-00129",
-          "text": "At a fixed flow area, roughness and energy slope, freely choosing a smooth open-channel boundary to minimize wetted perimeter gives which ideal section?",
+          "text": "The most efficient channel section is ______.",
           "options": [
             {
               "key": "a",
-              "text": "A symmetric triangle with 1H:1V sides"
+              "text": "Triangular"
             },
             {
               "key": "b",
-              "text": "A rectangle with width twice its depth"
+              "text": "Rectangular"
             },
             {
               "key": "c",
-              "text": "A half-hexagonal trapezoid"
+              "text": "Trapezoidal"
             },
             {
               "key": "d",
-              "text": "A semicircle"
+              "text": "Semi-circular"
             }
           ],
           "answer": "d",
-          "explanation": "The semicircle minimizes wetted boundary length for a specified area with a free top surface. This maximizes hydraulic radius and conveyance under the stated assumptions. Construction cost, bank stability and lining constraints can favor another practical section.<p>Source note: p14 n126 is a mathematical hydraulic optimum, not a universal least-cost or stable-earth-channel design.</p><p>Capsule 4th ed., p. 14; topic 3 point 126.</p>",
+          "explanation": "For a given flow area, the semicircle has the least wetted perimeter and the largest hydraulic radius, so it is the most efficient channel section. Among trapezoids, the half-hexagon is the best.<p>Capsule 4th ed., p. 14; topic 3 point 126.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4574,12 +4574,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00137",
           "src": "CAP4-03-00137",
-          "text": "Which Manning n range is a plausible preliminary textbook estimate for a clean, smooth-finished concrete channel in the SI convention?",
+          "text": "Manning's rugosity coefficient \\(n\\) for smooth finished concrete is ______.",
           "options": [
             {
               "key": "a",
@@ -4599,7 +4599,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Smooth-finished concrete commonly has an indicative Manning n around 0.011-0.013. Joints, deterioration, sediment and vegetation can raise effective roughness; an approximate material range is not a guaranteed field value or a prescribed universal standard.<p>Capsule 4th ed., p. 14; topic 3 point 133.</p>",
+          "explanation": "Smooth finished concrete is a fairly smooth surface, with Manning's \\(n\\) of about 0.011 to 0.013; earth channels and natural rivers have much higher values.<p>Capsule 4th ed., p. 14; topic 3 point 133.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4612,32 +4612,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00145",
           "src": "CAP4-03-00145",
-          "text": "An empirical spillway-outlet loss is written hL = K Vref<sup>2</sup>/(2g). Before using a tabulated K, which information must be compatible with the calculation?",
+          "text": "The loss of head at the end of an open channel spillway or at a butterfly valve is given by ______.",
           "options": [
             {
               "key": "a",
-              "text": "The same upstream depth but any degree of submergence"
+              "text": "\\(\\dfrac{KV^2}{g}\\)"
             },
             {
               "key": "b",
-              "text": "The same discharge but any chosen velocity section"
+              "text": "\\(K\\dfrac{V}{2g}\\)"
             },
             {
               "key": "c",
-              "text": "The same crest width but any downstream outlet shape"
+              "text": "\\(K\\dfrac{2g}{V^2}\\)"
             },
             {
               "key": "d",
-              "text": "Outlet geometry, submergence and the specified velocity reference"
+              "text": "\\(K\\dfrac{V^2}{2g}\\)"
             }
           ],
           "answer": "d",
-          "explanation": "A local loss coefficient packages a particular flow configuration and reference velocity. Changing section, geometry or submergence can change its value. The equation represents head dissipation at the outlet, not a disappearance of water discharge.<p>Source note: p15 n142 also mentions an open-channel spillway; covered separately from the butterfly valve because no shared universal K or outlet condition is supplied.</p><p>Capsule 4th ed., p. 15; topic 3 point 142.</p>",
+          "explanation": "Minor losses at fittings such as a butterfly valve or a spillway outlet are expressed as a loss coefficient times the velocity head, \\(h_L = K\\dfrac{V^2}{2g}\\).<p>Capsule 4th ed., p. 15; topic 3 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4650,32 +4650,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00146",
           "src": "CAP4-03-00146",
-          "text": "Which set of grain motions is characteristic of sediment bed load rather than dissolved transport or sustained suspension?",
+          "text": "Sediments that move by rolling, sliding and bouncing along the bed are called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Rolling, sliding and short saltation hops near the bed"
+              "text": "Bed load"
             },
             {
               "key": "b",
-              "text": "Suspension, turbulent diffusion and settling through the depth"
+              "text": "Suspended load"
             },
             {
               "key": "c",
-              "text": "Flotation, surface drift and rafting of buoyant debris"
+              "text": "Dissolved load"
             },
             {
               "key": "d",
-              "text": "Dissolution, solute advection and molecular diffusion"
+              "text": "Wash load"
             }
           ],
           "answer": "a",
-          "explanation": "Bed-load particles roll or slide in contact with the bed and make short bouncing or saltation hops close to it. Sustained suspended transport relies on turbulence supporting grains in the water column; dissolved load is transported as solutes, not grains.<p>Capsule 4th ed., p. 15; topic 3 point 143.</p>",
+          "explanation": "Bed load is the sediment that moves along the bed by rolling, sliding and short bouncing jumps (saltation); finer particles carried up into the flow form the suspended load.<p>Capsule 4th ed., p. 15; topic 3 point 143.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4688,32 +4688,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00149",
           "src": "CAP4-03-00149",
-          "text": "In a simple tractive-force model, identical loose noncohesive grains rest on a horizontal bed and on an inclined bank below their angle of repose. Flow drag acts along the channel and lift is neglected. Why is the bank's incipient-motion shear threshold lower?",
+          "text": "The average shear stress required to move a grain on the bank of a channel is ______ of the critical shear stress on the bed.",
           "options": [
             {
               "key": "a",
-              "text": "Hydrostatic pressure removes grain-to-grain friction on the bank"
+              "text": "50%"
             },
             {
               "key": "b",
-              "text": "The grain's submerged weight increases with bank inclination"
+              "text": "125%"
             },
             {
               "key": "c",
-              "text": "The bank's inclination increases the grain's angle of repose"
+              "text": "100%"
             },
             {
               "key": "d",
-              "text": "Downslope submerged weight uses part of the frictional resistance"
+              "text": "75%"
             }
           ],
           "answer": "d",
-          "explanation": "On an inclined bank, submerged weight has a downslope component and the contact normal force is reduced. Flow drag and that weight component must together be resisted by friction. The allowable flow shear therefore depends on bank inclination and sediment friction angle, not on a universal 0.75 multiplier.<p>Source note: Independent review: adds the corrected physical principle missing from the source&#39;s unexplained 0.75 factor. Applied local or mean bank shear must also be distinguished from the material&#39;s critical shear threshold.</p><p>Capsule 4th ed., p. 11; topic 3 point 19.</p>",
+          "explanation": "A grain on a sloping bank is partly pulled downslope by its own weight, so the flow needs less shear to move it: about 75% of the critical shear stress of the bed, that is, \\(0.75\\tau_c\\).<p>Capsule 4th ed., p. 11; topic 3 point 19.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4726,7 +4726,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0305",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -4738,27 +4738,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-02-00137",
           "src": "CAP4-02-00137",
-          "text": "A regional MIP flow-estimation worksheet assigns an ungauged Nepal catchment to a mapped hydrological region. What should that region selection provide for a defensible calculation?",
+          "text": "Based on the MIP method, Nepal is divided into ______ zones.",
           "options": [
             {
               "key": "a",
-              "text": "A catchment runoff volume independent of catchment area and rainfall"
+              "text": "8"
             },
             {
               "key": "b",
-              "text": "A single season-independent flow rating valid for every catchment in the region"
+              "text": "6"
             },
             {
               "key": "c",
-              "text": "The appropriate regional runoff relationships and their applicability limits"
+              "text": "7"
             },
             {
               "key": "d",
-              "text": "The administrative province number as a universal runoff coefficient"
+              "text": "9"
             }
           ],
           "answer": "c",
-          "explanation": "Hydrological regionalization transfers relationships from catchments with relevant climatic and runoff characteristics. The correct map, method version and regional coefficients must be identified and checked against available flows; administrative boundaries are not a substitute.<p>Source note: Page 9 point 123 says MIP divides Nepal into seven zones. The supplied text gives no map, edition or definition and the nearby hydrology notes did not corroborate the count. Parent must verify that exact claim against the original MIP manual; this question tests regionalization without asserting seven as a verified fact.</p><p>Capsule 4th ed., p. 9; topic 2 point 123.</p>",
+          "explanation": "The MIP (Medium Irrigation Project) method, used to estimate flows at ungauged sites in Nepal, divides the country into 7 hydrological zones, each with its own regional relationships.<p>Capsule 4th ed., p. 9; topic 2 point 123.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4771,32 +4771,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00020",
           "src": "CAP4-03-00020",
-          "text": "Air has a dew point of 6 degrees Celsius. A clean exposed surface cools from 12 to 5 degrees Celsius while remaining above freezing. What condition permits liquid dew to form?",
+          "text": "If the dew point is above 0 °C, then ______ will form.",
           "options": [
             {
               "key": "a",
-              "text": "The surface cools below the dew point"
+              "text": "Dew"
             },
             {
               "key": "b",
-              "text": "The surface remains warmer than the dew point"
+              "text": "Hail"
             },
             {
               "key": "c",
-              "text": "The atmospheric pressure must become zero gauge"
+              "text": "Snow"
             },
             {
               "key": "d",
-              "text": "The air temperature merely remains above zero"
+              "text": "Frost"
             }
           ],
           "answer": "a",
-          "explanation": "Dew forms when the near-surface air becomes saturated as the surface reaches or falls below its dew point. A positive dew point alone does not guarantee dew; sufficient surface cooling is also required, and above-freezing conditions permit liquid condensation.<p>Source note: p11 n17 omits the required cooling-to-saturation condition.</p><p>Capsule 4th ed., p. 11; topic 3 point 17.</p>",
+          "explanation": "When air cools to its dew point, water vapour condenses. If the dew point is above 0 °C the condensate is liquid dew; if it is below freezing, frost forms instead.<p>Capsule 4th ed., p. 11; topic 3 point 17.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4809,12 +4809,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00083",
           "src": "CAP4-03-00083",
-          "text": "A study traces rainfall, infiltration, groundwater storage and river discharge across a basin. Which discipline integrates the occurrence, circulation and distribution of this water?",
+          "text": "The branch of science which deals with the occurrence, circulation and distribution of the waters of the earth and its atmosphere is ______.",
           "options": [
             {
               "key": "a",
@@ -4822,7 +4822,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             },
             {
               "key": "b",
-              "text": "Fluid rheology"
+              "text": "Meteorology"
             },
             {
               "key": "c",
@@ -4834,7 +4834,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Hydrology treats water's occurrence, movement, distribution and storage in the earth-atmosphere system. Hydraulics focuses on the mechanics of flow, hydrostatics on fluids at rest, and rheology on deformation and constitutive behavior.<p>Capsule 4th ed., p. 13; topic 3 point 82.</p>",
+          "explanation": "Hydrology is the science of the occurrence, circulation and distribution of the waters of the earth and its atmosphere through the hydrological cycle. Hydraulics deals with the mechanics of water in motion.<p>Capsule 4th ed., p. 13; topic 3 point 82.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4847,32 +4847,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00084",
           "src": "CAP4-03-00084",
-          "text": "In the commonly taught three-group classification of Nepal's rivers by source region, which sequence identifies the source belts from highest to lowest?",
+          "text": "As per the geography of Nepal, rivers are classified into ______ groups.",
           "options": [
             {
               "key": "a",
-              "text": "Terai plains, Siwalik hills, Tibetan plateau"
+              "text": "5"
             },
             {
               "key": "b",
-              "text": "High Himalaya, Mahabharat hills, Siwalik hills"
+              "text": "3"
             },
             {
               "key": "c",
-              "text": "Mahabharat hills, Siwalik hills, High Himalaya"
+              "text": "4"
             },
             {
               "key": "d",
-              "text": "Siwalik hills, High Himalaya, Mahabharat hills"
+              "text": "2"
             }
           ],
           "answer": "b",
-          "explanation": "The conventional origin-based grouping distinguishes major high-Himalayan rivers, middle-hill or Mahabharat-origin rivers, and smaller Siwalik-origin streams. This three-group teaching scheme is not a classification by river order, administrative province or a guarantee of a particular flow in every season.<p>Source note: p13 n83: source gives only the number three; explicit origin-based scheme supplied, not presented as an exclusive statutory classification.</p><p>Capsule 4th ed., p. 13; topic 3 point 83.</p>",
+          "explanation": "Nepal's rivers are classified into three groups by origin: snow-fed rivers from the Himalaya, such as the Koshi, Gandaki and Karnali; rivers from the Mahabharat range, such as the Bagmati and Kamala; and rivers from the Siwalik (Churia) hills.<p>Capsule 4th ed., p. 13; topic 3 point 83.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4885,32 +4885,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00085",
           "src": "CAP4-03-00085",
-          "text": "A 2-hour unit hydrograph has an 8-hour base. Under linear time-invariant assumptions, a 4-hour unit hydrograph is formed by averaging two copies staggered by 2 hours. What is the new base duration?",
+          "text": "As the duration of a unit hydrograph increases, its base period ______.",
           "options": [
             {
               "key": "a",
-              "text": "16 hours"
+              "text": "Becomes zero"
             },
             {
               "key": "b",
-              "text": "12 hours"
+              "text": "Remains the same"
             },
             {
               "key": "c",
-              "text": "8 hours"
+              "text": "Decreases"
             },
             {
               "key": "d",
-              "text": "10 hours"
+              "text": "Increases"
             }
           ],
           "answer": "d",
-          "explanation": "The original response runs from hour 0 to 8; its shifted copy runs from hour 2 to 10. Averaging keeps a unit excess-rainfall depth but leaves support from hour 0 to 10. Longer rainfall duration thus broadens the base in this construction.<p>Capsule 4th ed., p. 13; topic 3 point 84.</p>",
+          "explanation": "A longer duration of effective rainfall spreads the same 1 cm of runoff over a longer time, so the base period of the unit hydrograph increases and its peak becomes lower.<p>Capsule 4th ed., p. 13; topic 3 point 84.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4923,32 +4923,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00086",
           "src": "CAP4-03-00086",
-          "text": "A rain gauge is relocated and its cumulative rainfall versus cumulative neighboring-station mean changes slope. Which analysis specifically detects this possible record inconsistency?",
+          "text": "The double mass curve technique is used to check the ______ of rain gauge records.",
           "options": [
             {
               "key": "a",
-              "text": "Stage-discharge rating"
+              "text": "Intensity"
             },
             {
               "key": "b",
-              "text": "Flow-duration analysis"
+              "text": "Duration"
             },
             {
               "key": "c",
-              "text": "Double-mass analysis"
+              "text": "Consistency"
             },
             {
               "key": "d",
-              "text": "Unit-hydrograph convolution"
+              "text": "Frequency"
             }
           ],
           "answer": "c",
-          "explanation": "A double-mass curve compares cumulative totals from the target station and a consistent reference group. A slope change suggests a changed relationship, possibly due to relocation or exposure, but must be investigated before applying a correction.<p>Capsule 4th ed., p. 13; topic 3 point 85.</p>",
+          "explanation": "In the double mass curve, the cumulative rainfall of a station is plotted against the cumulative mean of surrounding stations; a break in the slope reveals an inconsistency, such as a shifted gauge, which can then be corrected.<p>Capsule 4th ed., p. 13; topic 3 point 85.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4961,32 +4961,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00087",
           "src": "CAP4-03-00087",
-          "text": "Two equal-area catchments have comparable slopes and runoff properties under a spatially uniform storm. One is elongated and fern-shaped; the other is compact and fan-shaped. Which response is generally expected from the elongated basin?",
+          "text": "As compared with a fan-shaped catchment, a fern-shaped catchment will have ______.",
           "options": [
             {
               "key": "a",
-              "text": "A higher synchronized peak solely because its perimeter is longer"
+              "text": "No main stream"
             },
             {
               "key": "b",
-              "text": "Longer main travel paths and a less synchronized runoff peak"
+              "text": "A longer stream"
             },
             {
               "key": "c",
-              "text": "Shorter main travel paths and a more synchronized runoff peak"
+              "text": "A shorter stream"
             },
             {
               "key": "d",
-              "text": "Identical travel times because areas are equal"
+              "text": "The same stream length"
             }
           ],
           "answer": "b",
-          "explanation": "Elongation commonly lengthens the main drainage path and spreads tributary arrivals in time. A compact fan-shaped basin can concentrate arrivals more strongly. Actual response also depends on drainage arrangement, slope, storm motion and storage, so shape alone is not deterministic.<p>Capsule 4th ed., p. 13; topic 3 point 86.</p>",
+          "explanation": "A fern-shaped catchment is long and narrow, with short tributaries joining a long main stream, so it has a longer stream and a lower, more spread-out flood peak than a compact fan-shaped catchment.<p>Capsule 4th ed., p. 13; topic 3 point 86.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4999,32 +4999,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00088",
           "src": "CAP4-03-00088",
-          "text": "On a map of one storm, a contour joins sites that each received 50 mm of rain during the same interval. What is this contour?",
+          "text": "The imaginary lines joining points of equal rainfall are called ______.",
           "options": [
             {
               "key": "a",
-              "text": "An equipotential line"
+              "text": "Isochrones"
             },
             {
               "key": "b",
-              "text": "An isochrone"
+              "text": "Isotherms"
             },
             {
               "key": "c",
-              "text": "An isohyet"
+              "text": "Isohyets"
             },
             {
               "key": "d",
-              "text": "An isobar"
+              "text": "Isobars"
             }
           ],
           "answer": "c",
-          "explanation": "Isohyets join equal precipitation depths for a common time interval. Isobars join equal atmospheric pressure, isochrones equal travel time, and equipotential lines equal hydraulic head in a flow net.<p>Capsule 4th ed., p. 13; topic 3 point 87.</p>",
+          "explanation": "Isohyets join points of equal rainfall. Isobars join points of equal pressure, isotherms points of equal temperature and isochrones points of equal travel time.<p>Capsule 4th ed., p. 13; topic 3 point 87.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5037,32 +5037,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00089",
           "src": "CAP4-03-00089",
-          "text": "An ungauged Nepalese catchment is assessed with a regional method labelled DHM 2004. What is the defensible next step before treating its flow estimates as suitable for design?",
+          "text": "The method that gives accurate flow characteristics in the context of rivers of Nepal is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Accept accuracy solely because DHM appears in the method name"
+              "text": "WECS/DHM 1990"
             },
             {
               "key": "b",
-              "text": "Check regional applicability and compare with available local observations"
+              "text": "DHM 2004"
             },
             {
               "key": "c",
-              "text": "Replace local observations whenever they differ from the estimate"
+              "text": "Rational method"
             },
             {
               "key": "d",
-              "text": "Assume one calibration works at every elevation and basin size"
+              "text": "MIP"
             }
           ],
           "answer": "b",
-          "explanation": "Regional equations transfer empirical relationships from observed catchments. Their accuracy depends on calibration data, basin similarity and extrapolation. Agency attribution or a date alone cannot establish accuracy for a particular site or substitute for uncertainty assessment.<p>Source note: p13 n88: exact DHM 2004 publication, parameters and validation data are absent; nearby notes mention WECS/DHM 1990. Parent to review attribution. No unsupported accuracy ranking asserted.</p><p>Capsule 4th ed., p. 13; topic 3 point 88.</p>",
+          "explanation": "Among the regional methods used for Nepal's ungauged rivers, the DHM 2004 method gives accurate flow characteristics; the earlier methods include WECS/DHM 1990 and MIP.<p>Capsule 4th ed., p. 13; topic 3 point 88.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5075,32 +5075,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00090",
           "src": "CAP4-03-00090",
-          "text": "Reliable terrain-informed isohyets divide a 5 km<sup>2</sup> basin into a 2 km<sup>2</sup> band averaging 40 mm and a 3 km<sup>2</sup> band averaging 60 mm. What is the basin-average rainfall?",
+          "text": "The most accurate method to determine the average precipitation depth over an area is the ______ method.",
           "options": [
             {
               "key": "a",
-              "text": "48 mm"
+              "text": "Thiessen polygon"
             },
             {
               "key": "b",
-              "text": "52 mm"
+              "text": "Isohyetal"
             },
             {
               "key": "c",
-              "text": "50 mm"
+              "text": "Arithmetic mean"
             },
             {
               "key": "d",
-              "text": "100 mm"
+              "text": "Station-year"
             }
           ],
           "answer": "b",
-          "explanation": "Weight each band depth by its area: \\[\\begin{aligned} \\bar P &amp;= \\dfrac{2 \\times 40 + 3 \\times 60}{5} \\\\ &amp;= 52\\ \\text{mm} \\end{aligned}\\] The isohyetal method can represent spatial and terrain variation, but its accuracy still depends on the observations and contour interpretation.<p>Source note: p13 n89: reject universal &#39;most accurate&#39; ranking; test the area-weighted method with explicitly reliable contours.</p><p>Capsule 4th ed., p. 13; topic 3 point 89.</p>",
+          "explanation": "The isohyetal method is the most accurate: contours of equal rainfall are drawn using all the data and the terrain, and the mean depth is the area-weighted average between isohyets. The arithmetic mean is the simplest method, and the Thiessen method weights each gauge by its polygon area.<p>Capsule 4th ed., p. 13; topic 3 point 89.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5113,32 +5113,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00091",
           "src": "CAP4-03-00091",
-          "text": "Moist air converges toward a low-pressure system, rises and cools to produce widespread rainfall. Which lifting mechanism best describes this event?",
+          "text": "Precipitation caused by the lifting of an air mass due to a pressure difference is called ______ precipitation.",
           "options": [
             {
               "key": "a",
-              "text": "Surface-heating convection alone"
+              "text": "Convective"
             },
             {
               "key": "b",
-              "text": "Cyclonic lifting"
+              "text": "Cyclonic"
             },
             {
               "key": "c",
-              "text": "Orographic lifting"
+              "text": "Orographic"
             },
             {
               "key": "d",
-              "text": "Radiational surface condensation"
+              "text": "Radiational"
             }
           ],
           "answer": "b",
-          "explanation": "Low-pressure convergence and associated ascent are characteristic of cyclonic precipitation. Orographic rain is forced by terrain, convection by buoyant instability often driven by heating, and dew is condensation at a cooled surface rather than falling precipitation.<p>Capsule 4th ed., p. 13; topic 3 point 90.</p>",
+          "explanation": "Cyclonic precipitation results from the lifting of air that converges into a low-pressure area. Orographic precipitation occurs when mountains force air to rise, and convective precipitation when the ground heats the air.<p>Capsule 4th ed., p. 13; topic 3 point 90.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5151,32 +5151,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00092",
           "src": "CAP4-03-00092",
-          "text": "An advancing cold air mass undercuts warm moist air along a front. Which process most directly initiates cold-frontal precipitation?",
+          "text": "Cold frontal precipitation is formed when ______.",
           "options": [
             {
               "key": "a",
-              "text": "Descent and compression of the warm moist air"
+              "text": "A warm air mass rises over a mountain range"
             },
             {
               "key": "b",
-              "text": "Warming of the cold air without vertical displacement"
+              "text": "Two warm air masses meet"
             },
             {
               "key": "c",
-              "text": "Evaporation of droplets caused by frontal lifting"
+              "text": "The ground strongly heats the air above it"
             },
             {
               "key": "d",
-              "text": "Forced ascent and cooling of the warm moist air"
+              "text": "An advancing cold air mass meets warmer air"
             }
           ],
           "answer": "d",
-          "explanation": "The denser advancing cold air lifts the warm moist air. Expansion and cooling can bring it to saturation, causing condensation and precipitation if moisture and instability support cloud development.<p>Capsule 4th ed., p. 13; topic 3 point 91.</p>",
+          "explanation": "At a cold front, the advancing cold air mass wedges under the warmer air and forces it to rise steeply and cool, which produces cold frontal precipitation.<p>Capsule 4th ed., p. 13; topic 3 point 91.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5189,32 +5189,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00093",
           "src": "CAP4-03-00093",
-          "text": "Compared with a typical gently sloping warm front, a steep cold front often produces which rainfall pattern when ample moisture and instability are present?",
+          "text": "Cold frontal precipitation is characterised by ______.",
           "options": [
             {
               "key": "a",
-              "text": "No rain unless the receiving catchment is small"
+              "text": "Snowfall only"
             },
             {
               "key": "b",
-              "text": "A narrower band with shorter, more intense bursts"
+              "text": "Heavy precipitation over a small catchment area"
             },
             {
               "key": "c",
-              "text": "A wider band with only prolonged light stratiform rain"
+              "text": "Light precipitation over a large area"
             },
             {
               "key": "d",
-              "text": "Uniform rainfall restricted by the watershed boundary"
+              "text": "Drizzle lasting several days"
             }
           ],
           "answer": "b",
-          "explanation": "Rapid lifting at a steep cold front can generate intense showers in a relatively narrow moving band. Catchment area does not define cold-frontal precipitation, and actual duration and intensity depend on frontal speed, moisture and instability.<p>Source note: p13 n92: &#39;small catchment area&#39; is not the definition; corrected to a conditional spatial and intensity tendency.</p><p>Capsule 4th ed., p. 13; topic 3 point 92.</p>",
+          "explanation": "Because the warm air is lifted steeply at a cold front, cold frontal precipitation is intense and falls over a small area, unlike the light, widespread and prolonged rain of a warm front.<p>Capsule 4th ed., p. 13; topic 3 point 92.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5227,32 +5227,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00094",
           "src": "CAP4-03-00094",
-          "text": "A gauging station converts measured water-surface elevation into discharge using paired field measurements under a stable control. What is this calibrated relationship called?",
+          "text": "The discharge–stage relationship at a gauging site is known as the ______.",
           "options": [
             {
               "key": "a",
-              "text": "A unit hydrograph"
+              "text": "Unit hydrograph"
             },
             {
               "key": "b",
-              "text": "A flow-duration curve"
+              "text": "Flow duration curve"
             },
             {
               "key": "c",
-              "text": "A stage-discharge rating curve"
+              "text": "Rating curve"
             },
             {
               "key": "d",
-              "text": "A rainfall mass curve"
+              "text": "Mass curve"
             }
           ],
           "answer": "c",
-          "explanation": "A rating curve relates stage above a fixed gauge datum to discharge while the control remains applicable. Sedimentation, backwater or unsteady-flow hysteresis can change that relationship, so one stage need not always determine one discharge.<p>Capsule 4th ed., p. 13; topic 3 point 93.</p>",
+          "explanation": "The rating curve relates the stage (water level) at a gauging station to the discharge, so that the discharge can be read directly from routine stage records.<p>Capsule 4th ed., p. 13; topic 3 point 93.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5265,32 +5265,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00096",
           "src": "CAP4-03-00096",
-          "text": "After rainfall input ceases, what primarily governs the recession limb of a streamflow hydrograph, while still allowing dependence on antecedent and event conditions?",
+          "text": "The recession limb of a hydrograph is independent of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Drainage and release of water stored in the basin"
+              "text": "Storm characteristics"
             },
             {
               "key": "b",
-              "text": "Peak rainfall intensity alone, regardless of drainage"
+              "text": "Groundwater conditions"
             },
             {
               "key": "c",
-              "text": "The runoff coefficient alone, regardless of prior wetness"
+              "text": "Catchment geology"
             },
             {
               "key": "d",
-              "text": "Storm duration alone, regardless of stored basin water"
+              "text": "Basin storage characteristics"
             }
           ],
           "answer": "a",
-          "explanation": "Recession mainly reflects drainage of surface, soil and groundwater storage. Antecedent wetness and the storm's distribution affect the starting storage and participating flow paths, so absolute independence from storm characteristics is too strong.<p>Source note: p13 n95 absolute storm independence corrected using nearby hydrology notes.</p><p>Capsule 4th ed., p. 13; topic 3 point 95.</p>",
+          "explanation": "The recession limb represents the withdrawal of water stored in the basin after rainfall has ended, so it depends on the basin's storage characteristics and is independent of the storm characteristics.<p>Capsule 4th ed., p. 13; topic 3 point 95.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5303,7 +5303,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00097",
@@ -5346,27 +5346,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00098",
           "src": "CAP4-03-00098",
-          "text": "In conventional rational-method peak design for a small catchment, which rainfall duration is normally used to select the design intensity from an IDF relation?",
+          "text": "The rational method is applicable when the duration of rainfall is ______ the time of concentration.",
           "options": [
             {
               "key": "a",
-              "text": "The recession duration of the receiving river"
+              "text": "Greater than"
             },
             {
               "key": "b",
-              "text": "The return period expressed in hours"
+              "text": "Half of"
             },
             {
               "key": "c",
-              "text": "The time of concentration"
+              "text": "Equal to"
             },
             {
               "key": "d",
-              "text": "The annual number of rainy days"
+              "text": "Less than"
             }
           ],
           "answer": "c",
-          "explanation": "The usual critical-duration calculation uses intensity for a duration equal to the time of concentration at the chosen return period, so the whole catchment contributes. Rain can last longer; exact equality is not a universal condition for rainfall-runoff processes to occur.<p>Source note: p13 n97: equality is the conventional design-intensity selection, not an exclusive domain of mass conservation or runoff.</p><p>Capsule 4th ed., p. 13; topic 3 point 97.</p>",
+          "explanation": "The rational formula, \\(Q = CIA\\), gives the peak flow when the rainfall duration equals the time of concentration, so that the whole catchment is contributing to the outlet at the same time.<p>Capsule 4th ed., p. 13; topic 3 point 97.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5379,7 +5379,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00099",
@@ -5422,27 +5422,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00100",
           "src": "CAP4-03-00100",
-          "text": "A drainage study needs rainfall intensity during short bursts rather than only a daily total. What is the main advantage of a recording rain gauge over a daily manually read collector?",
+          "text": "The rain gauging method that is very accurate is the ______ type.",
           "options": [
             {
               "key": "a",
-              "text": "It records the time distribution of rainfall"
+              "text": "Recording"
             },
             {
               "key": "b",
-              "text": "It measures basin-average rainfall from one site"
+              "text": "Manual cylinder"
             },
             {
               "key": "c",
-              "text": "It eliminates all wind-induced undercatch"
+              "text": "Non-recording"
             },
             {
               "key": "d",
-              "text": "It requires no calibration or maintenance"
+              "text": "Symon's"
             }
           ],
           "answer": "a",
-          "explanation": "A recording gauge provides cumulative depth or increments against time, enabling intensity estimates. Recording does not by itself guarantee superior absolute accuracy: wind, calibration, resolution, tipping losses and maintenance can still bias observations.<p>Source note: p13 n99 unsupported blanket accuracy claim replaced by the defensible temporal-resolution advantage.</p><p>Capsule 4th ed., p. 13; topic 3 point 99.</p>",
+          "explanation": "Recording (self-recording) rain gauges, such as the tipping-bucket, weighing and float types, record rainfall continuously with time, giving intensity and duration as well as depth, so they are very accurate. Symon's gauge is a non-recording type.<p>Capsule 4th ed., p. 13; topic 3 point 99.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5455,32 +5455,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00105",
           "src": "CAP4-03-00105",
-          "text": "A catchment has plan area Ab and axial basin length Lb. Which expression defines the usual dimensionless basin form factor?",
+          "text": "The form factor \\(A\\sqrt{D}\\) of a channel section is the product of the area and the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Ab sqrt(Lb)"
+              "text": "Square of the hydraulic depth"
             },
             {
               "key": "b",
-              "text": "Lb<sup>2</sup>/Ab"
+              "text": "Hydraulic radius"
             },
             {
               "key": "c",
-              "text": "Ab/Lb<sup>2</sup>"
+              "text": "Square root of the hydraulic depth"
             },
             {
               "key": "d",
-              "text": "sqrt(Ab Lb)"
+              "text": "Wetted perimeter"
             }
           ],
           "answer": "c",
-          "explanation": "Basin form factor is mean basin width divided by axial length. Since the mean width is \\(\\dfrac{A_b}{L_b}\\), \\[F_f = \\dfrac{A_b}{L_b} \\cdot \\dfrac{1}{L_b} = \\dfrac{A_b}{L_b^2}\\] This dimensionless plan-shape measure is distinct from a channel's dimensional critical-flow section factor.<p>Capsule 4th ed., p. 13; topic 3 point 103.</p>",
+          "explanation": "The form factor of a channel section is obtained by multiplying the flow area by the square root of the hydraulic depth, \\(A\\sqrt{D}\\).<p>Capsule 4th ed., p. 13; topic 3 point 103.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5493,12 +5493,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00106",
           "src": "CAP4-03-00106",
-          "text": "For a conditional regional-estimation exercise, use Q2 = 1.8767(A3000 + 1)<sup>0.8783</sup>, with Q2 in m<sup>3</sup>/s and A3000 the area below 3000 m elevation in km<sup>2</sup>. What Q2 follows for A3000 = 99 km<sup>2</sup>?",
+          "text": "In the WECS/DHM method, the 2-year flood is \\(Q_2 = 1.8767\\,x^{0.8783}\\) with \\(x = A_{3000} + 1\\), where \\(A_{3000}\\) is the basin area below 3000 m elevation in km<sup>2</sup>. For \\(A_{3000} = 99\\) km<sup>2</sup>, \\(Q_2\\) is ______.",
           "options": [
             {
               "key": "a",
@@ -5518,7 +5518,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "d",
-          "explanation": "First add one to obtain 100, then apply the exponent before multiplying: \\[\\begin{aligned} Q_2 &amp;= 1.8767 \\times 100^{0.8783} \\\\ &amp;= 107.1507\\ \\text{m}^3\\text{/s} \\end{aligned}\\] This evaluates the stipulated empirical equation; it does not establish its accuracy, current adoption or site suitability.<p>Source note: p13 n104: source attributes this relation to WECS/DHM but gives no edition, calibration domain or explicit unit definitions. These are stated as exercise assumptions; parent should verify attribution and A3000 definition against the original method. A frequency estimate is not real-time flood forecasting.</p><p>Capsule 4th ed., p. 13; topic 3 point 104.</p>",
+          "explanation": "With \\(A_{3000} + 1 = 100\\): \\[\\begin{aligned} Q_2 &amp;= 1.8767 \\times 100^{0.8783} \\\\ &amp;= 107.15\\ \\text{m}^3\\text{/s} \\end{aligned}\\]<p>Capsule 4th ed., p. 13; topic 3 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5536,27 +5536,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00107",
           "src": "CAP4-03-00107",
-          "text": "A two-year return-period flood is estimated from a stationary annual-maximum distribution. What is its annual exceedance probability?",
+          "text": "In the WECS/DHM method, the formula \\(Q = 1.8767\\,x^{0.8783}\\), with \\(x = A_{3000} + 1\\), is used for the flood of ______ return period.",
           "options": [
             {
               "key": "a",
-              "text": "Exactly one flood in each two-year block"
+              "text": "100 years"
             },
             {
               "key": "b",
-              "text": "50% in any one year"
+              "text": "2 years"
             },
             {
               "key": "c",
-              "text": "A flood only after two flood-free years"
+              "text": "50 years"
             },
             {
               "key": "d",
-              "text": "25% in any one year"
+              "text": "10 years"
             }
           ],
           "answer": "b",
-          "explanation": "For an annual-maximum frequency distribution, return period is the reciprocal of annual exceedance probability: \\[p = \\dfrac{1}{T} = \\dfrac{1}{2} = 0.50\\] It is a statistical frequency statement, not a forecast of the calendar spacing between floods.<p>Capsule 4th ed., p. 13; topic 3 point 104.</p>",
+          "explanation": "In the WECS/DHM method the flood of 2-year return period is \\[Q_2 = 1.8767\\,(A_{3000} + 1)^{0.8783}\\] in m<sup>3</sup> per s, where \\(A_{3000}\\) is the basin area below 3000 m elevation in km<sup>2</sup>.<p>Capsule 4th ed., p. 13; topic 3 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5569,7 +5569,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00112",
@@ -5612,27 +5612,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-03-00114",
           "src": "CAP4-03-00114",
-          "text": "A river supplies 1 m<sup>3</sup>/s during a ten-day dry spell while demand is 3 m<sup>3</sup>/s. Adequate wet-season surplus can be stored beforehand. Neglect all losses. What active storage would bridge this deficit?",
+          "text": "The construction of an impounding reservoir is required when the rate of flow in the stream in the dry season is ______ the demand.",
           "options": [
             {
               "key": "a",
-              "text": "2.592 million m<sup>3</sup>"
+              "text": "Equal to"
             },
             {
               "key": "b",
-              "text": "1.728 million m<sup>3</sup>"
+              "text": "Less than"
             },
             {
               "key": "c",
-              "text": "0.864 million m<sup>3</sup>"
+              "text": "Greater than"
             },
             {
               "key": "d",
-              "text": "3.456 million m<sup>3</sup>"
+              "text": "Twice"
             }
           ],
           "answer": "b",
-          "explanation": "Storage must supply the difference between demand and inflow for ten days: \\[\\begin{aligned} V &amp;= (3 - 1) \\times 10 \\times 86{,}400 \\\\ &amp;= 1{,}728{,}000\\ \\text{m}^3 \\end{aligned}\\] An impounding reservoir can transfer wet-season surplus to a dry period; it cannot create water if dependable overall supply is inadequate.<p>Source note: p14 n111: storage is a possible response to a seasonal deficit, not automatically the only feasible solution. Adequate refill supply and losses must be checked.</p><p>Capsule 4th ed., p. 14; topic 3 point 111.</p>",
+          "explanation": "When the dry-season flow of a stream is less than the demand, surplus water from the wet season must be stored for use in the dry season, so an impounding reservoir is required.<p>Capsule 4th ed., p. 14; topic 3 point 111.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5645,12 +5645,12 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00138",
           "src": "CAP4-03-00138",
-          "text": "For an explicitly assumed local short-storm fit, I = 760/(t + 10), with I in mm/h and t in minutes for t below 20 minutes. What intensity does this fit predict at t = 10 minutes?",
+          "text": "The rainfall intensity for storm duration \\(t\\) below 20 minutes is \\(I = \\dfrac{760}{t + 10}\\), with \\(I\\) in mm/h and \\(t\\) in minutes. For \\(t = 10\\) minutes, the intensity is ______.",
           "options": [
             {
               "key": "a",
@@ -5670,7 +5670,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The denominator is \\(10 + 10 = 20\\), so \\[I = \\dfrac{760}{20} = 38\\ \\text{mm/h}\\] The full page restores the numerator missing from the point extract. Such an empirical fit needs a location, return period, units and calibration range before real design use.<p>Source note: p14 n134: 760 recovered from full page text. Original units, location, return period and authority remain unspecified; units here are explicit exercise assumptions, not claimed source verification. Parent review required.</p><p>Capsule 4th ed., p. 14; topic 3 point 134.</p>",
+          "explanation": "Substituting \\(t = 10\\) minutes: \\[I = \\dfrac{760}{10 + 10} = 38\\ \\text{mm/h}\\]<p>Capsule 4th ed., p. 14; topic 3 point 134.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5688,27 +5688,27 @@ window.CIVIL_SET_DATA["capsule-03"] = {
         {
           "id": "CAP4-10-00194",
           "src": "CAP4-10-00194",
-          "text": "A particular trail-bridge brief requires at least 5 m vertical clearance above design high-water level. The HFL is RL 104.5 m and the specified lowest bridge point is RL 109.5 m under the stated loading condition. What clearance is provided?",
+          "text": "The minimum freeboard in a trail bridge is ______.",
           "options": [
             {
               "key": "a",
-              "text": "14.0 m, exceeding the stated minimum"
+              "text": "10 m"
             },
             {
               "key": "b",
-              "text": "5.0 m, exactly meeting the stated minimum"
+              "text": "5 m"
             },
             {
               "key": "c",
-              "text": "4.5 m, falling short of the stated minimum"
+              "text": "1 m"
             },
             {
               "key": "d",
-              "text": "9.5 m, exceeding the stated minimum"
+              "text": "2 m"
             }
           ],
           "answer": "b",
-          "explanation": "Clearance is the difference in elevations measured from the same datum: \\[109.5 - 104.5 = 5.0\\ \\text{m}\\] The brief's reference point and loading condition matter; this is not verification that 5 m is a universal trail-bridge standard.<p>Source note: Appendix p42 n18: conditional minimum only; parent should verify bridge type, design flood, debris allowance, reference point and manual edition.</p><p>Capsule 4th ed., p. 42; rural point 18.</p>",
+          "explanation": "A trail bridge keeps at least 5 m of freeboard between its lowest point and the highest flood level, so floods and floating debris pass safely below it.<p>Capsule 4th ed., p. 42; rural point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5721,32 +5721,32 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00195",
           "src": "CAP4-10-00195",
-          "text": "Why should a bridge's flood-clearance check use the design high-water level rather than the water level observed on a dry-season survey day?",
+          "text": "The freeboard of a trail bridge, at least 5 m, is measured between the lowest point of the bridge and the ______.",
           "options": [
             {
               "key": "a",
-              "text": "The water-level datum becomes irrelevant once the span is fixed"
+              "text": "Top of the towers"
             },
             {
               "key": "b",
-              "text": "Freeboard is measured from the channel bed rather than water level"
+              "text": "Dry-season water level"
             },
             {
               "key": "c",
-              "text": "Surveyed dry-season levels always exceed every flood level"
+              "text": "River bed"
             },
             {
               "key": "d",
-              "text": "Dry-season levels do not represent the adopted design-flood condition"
+              "text": "Highest flood level"
             }
           ],
           "answer": "d",
-          "explanation": "The required clearance is related to the adopted flood condition, with allowances for debris, uncertainty and structural behaviour as specified. A low observed level cannot establish adequate clearance during the design event.<p>Capsule 4th ed., p. 42; rural point 18.</p>",
+          "explanation": "Freeboard is measured from the design high flood level up to the lowest point of the bridge, and it must be at least 5 m.<p>Capsule 4th ed., p. 42; rural point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5759,7 +5759,7 @@ window.CIVIL_SET_DATA["capsule-03"] = {
             ]
           },
           "topic": "ACiE0306",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     }

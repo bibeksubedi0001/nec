@@ -11,11 +11,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-01-00103",
           "src": "CAP4-01-00103",
-          "text": "Before field reconnaissance for alternative road corridors, an engineer examines existing topographic maps and imagery. What planning stage is this?",
+          "text": "The first stage of the survey is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Final setting-out survey"
+              "text": "Reconnaissance"
             },
             {
               "key": "b",
@@ -23,15 +23,15 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "c",
-              "text": "Construction acceptance survey"
+              "text": "Detailed survey"
             },
             {
               "key": "d",
-              "text": "As-built measurement"
+              "text": "Preliminary survey"
             }
           ],
           "answer": "b",
-          "explanation": "Map study screens possible routes using existing information before field reconnaissance and more detailed surveys. This is a conventional route-investigation sequence, not a claim that every survey task must begin identically.<p>Source note: p4 n98: confined the general first-stage claim to route-location surveying.</p><p>Capsule 4th ed., p. 4; topic 1 point 98.</p>",
+          "explanation": "A survey begins with map study of the existing topographic maps and imagery. It is followed by reconnaissance, the preliminary survey and then the detailed survey.<p>Capsule 4th ed., p. 4; topic 1 point 98.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -44,32 +44,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00001",
           "src": "CAP4-09-00001",
-          "text": "A supplier serves scattered shops over an existing all-weather road network, with no rail sidings at the shops. Which comparative advantage most strongly favours road delivery?",
+          "text": "The most reliable mode of transportation is ______.",
           "options": [
             {
               "key": "a",
-              "text": "High terminal-to-terminal speed of air freight"
+              "text": "Ropeway transport"
             },
             {
               "key": "b",
-              "text": "Direct delivery with flexible routing"
+              "text": "Road transport"
             },
             {
               "key": "c",
-              "text": "Large consignments per inland-waterway vessel"
+              "text": "Waterway transport"
             },
             {
               "key": "d",
-              "text": "Economies from long unit-train operation"
+              "text": "Air transport"
             }
           ],
           "answer": "b",
-          "explanation": "Road vehicles can reach dispersed premises without a terminal transfer. This supports a flexibility advantage, not the source's universal reliability ranking: congestion, closures and maintenance still affect reliability.<p>Source note: Page 33 point 1: replace the unsupported universal &#39;most reliable&#39; assertion with a conditional modal comparison.</p><p>Capsule 4th ed., p. 33; topic 9 point 1.</p>",
+          "explanation": "Road transport gives door-to-door service, with flexible routes and timing, and reaches almost every place, so it is regarded as the most reliable mode of transportation.<p>Capsule 4th ed., p. 33; topic 9 point 1.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -82,32 +82,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00002",
           "src": "CAP4-09-00002",
-          "text": "Containers arrive by rail, but their final destinations have road access and no railway sidings. Which service supplies the missing last-mile connection?",
+          "text": "The feeder for other means of transportation is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Longer trains on the same main line"
+              "text": "Railway"
             },
             {
               "key": "b",
-              "text": "Higher line speed between freight terminals"
+              "text": "Waterway"
             },
             {
               "key": "c",
-              "text": "Truck distribution from the rail terminal"
+              "text": "Roadway"
             },
             {
               "key": "d",
-              "text": "Additional passing loops between stations"
+              "text": "Airway"
             }
           ],
           "answer": "c",
-          "explanation": "The road leg connects the rail terminal to dispersed destinations and therefore acts as a feeder/distributor. Feeder describes a network role here, not exclusively Nepal's administrative Feeder Road category.<p>Capsule 4th ed., p. 33; topic 9 point 2.</p>",
+          "explanation": "Railways, airports and waterways serve fixed terminals, and roads carry passengers and goods to and from them, so road transport acts as the feeder for the other modes.<p>Capsule 4th ed., p. 33; topic 9 point 2.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -120,12 +120,12 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00003",
           "src": "CAP4-09-00003",
-          "text": "A route in a built-up town has building frontages, pedestrian access and local junctions. Which ordinary term describes its urban setting without assigning a technical design class?",
+          "text": "A road inside a city is called a ______.",
           "options": [
             {
               "key": "a",
@@ -133,19 +133,19 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "b",
-              "text": "Class I road"
+              "text": "National highway"
             },
             {
               "key": "c",
-              "text": "Feeder road"
+              "text": "Expressway"
             },
             {
               "key": "d",
-              "text": "National highway"
+              "text": "District road"
             }
           ],
           "answer": "a",
-          "explanation": "Street describes an urban road setting. The other labels assign a technical or administrative category; a street can also carry one of those designations, so the terms are not mutually exclusive road systems.<p>Capsule 4th ed., p. 33; topic 9 point 3.</p>",
+          "explanation": "A road within a built-up urban area, lined with buildings and serving local access, is called a street; highways connect towns and regions.<p>Capsule 4th ed., p. 33; topic 9 point 3.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -158,20 +158,20 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00004",
           "src": "CAP4-09-00004",
-          "text": "After reconnaissance, two highway routes remain. At which conventional survey stage would systematic comparative soil sampling normally support selection between them?",
+          "text": "In highway alignment surveys, the soil survey is done in the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Post-opening condition survey"
+              "text": "Traffic count survey"
             },
             {
               "key": "b",
-              "text": "Initial map study"
+              "text": "Map study"
             },
             {
               "key": "c",
@@ -179,11 +179,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "d",
-              "text": "Final construction setting-out"
+              "text": "Reconnaissance survey"
             }
           ],
           "answer": "c",
-          "explanation": "Preliminary survey develops comparable ground, alignment and cost information for shortlisted routes. Soil observations can start during reconnaissance, and detailed investigation continues after route selection; soil work is not exclusive to one stage.<p>Capsule 4th ed., p. 33; topic 9 point 4.</p>",
+          "explanation": "In the preliminary survey, the alternative routes found in reconnaissance are surveyed in detail, with levels, cross-sections and soil surveys, so that the best alignment can be chosen.<p>Capsule 4th ed., p. 33; topic 9 point 4.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -196,32 +196,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00005",
           "src": "CAP4-09-00005",
-          "text": "Which railway asset belongs to rolling stock rather than fixed infrastructure?",
+          "text": "Which of the following is not a fixed component of a railway?",
           "options": [
             {
               "key": "a",
-              "text": "Track formation"
+              "text": "Track"
             },
             {
               "key": "b",
-              "text": "Railway bridge"
+              "text": "Bridge"
             },
             {
               "key": "c",
-              "text": "Station platform"
+              "text": "Station"
             },
             {
               "key": "d",
-              "text": "Diesel locomotive"
+              "text": "Locomotive"
             }
           ],
           "answer": "d",
-          "explanation": "A locomotive moves with the train and supplies traction, making it rolling stock. Track formation, platforms and bridges remain at fixed sites even though they serve moving trains.<p>Capsule 4th ed., p. 33; topic 9 point 5.</p>",
+          "explanation": "Track, stations, bridges and signals are fixed railway facilities; locomotives and wagons move on the track and form the rolling stock.<p>Capsule 4th ed., p. 33; topic 9 point 5.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -239,27 +239,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00006",
           "src": "CAP4-09-00006",
-          "text": "A transport appraisal separates service benefits from adverse external effects. Which outcome belongs primarily on the benefit side?",
+          "text": "Which of the following is not a negative impact of transportation?",
           "options": [
             {
               "key": "a",
-              "text": "More reliable access to jobs and markets"
+              "text": "Mobility"
             },
             {
               "key": "b",
-              "text": "Greater severance of pedestrian routes"
+              "text": "Noise"
             },
             {
               "key": "c",
-              "text": "Higher roadside pollutant exposure"
+              "text": "Air pollution"
             },
             {
               "key": "d",
-              "text": "Increased traffic-noise disturbance"
+              "text": "Accidents"
             }
           ],
           "answer": "a",
-          "explanation": "Improved mobility and accessibility enable people and goods to reach opportunities. Pollution, community severance and noise are adverse effects; movement itself is not classified as an external harm merely because transport has impacts.<p>Capsule 4th ed., p. 33; topic 9 point 6.</p>",
+          "explanation": "Transportation causes air pollution, noise and accidents as negative impacts, but mobility, the ability of people and goods to move, is its main benefit.<p>Capsule 4th ed., p. 33; topic 9 point 6.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -272,32 +272,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00007",
           "src": "CAP4-09-00007",
-          "text": "Which survey programme progressively narrows highway alternatives before fixing the selected alignment?",
+          "text": "The sequence of the four stages of survey in a highway alignment is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Reconnaissance, detailed, map study, preliminary"
+              "text": "Reconnaissance, map study, preliminary and detailed survey"
             },
             {
               "key": "b",
-              "text": "Map study, reconnaissance, preliminary, detailed"
+              "text": "Map study, reconnaissance, preliminary and detailed survey"
             },
             {
               "key": "c",
-              "text": "Map study, preliminary, detailed, reconnaissance"
+              "text": "Map study, preliminary, reconnaissance and detailed survey"
             },
             {
               "key": "d",
-              "text": "Preliminary, map study, reconnaissance, detailed"
+              "text": "Preliminary, reconnaissance, map study and detailed survey"
             }
           ],
           "answer": "b",
-          "explanation": "Map study screens corridors; reconnaissance tests field feasibility; preliminary survey compares shortlisted routes; final-location/detailed survey fixes and measures the selected route. New findings can still require an earlier stage to be revisited.<p>Capsule 4th ed., p. 33; topic 9 point 7.</p>",
+          "explanation": "Alignment surveys narrow the choice step by step: the map study suggests routes, reconnaissance examines them on the ground, the preliminary survey compares alternatives, and the detailed survey fixes the alignment.<p>Capsule 4th ed., p. 33; topic 9 point 7.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -315,11 +315,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00018",
           "src": "CAP4-09-00018",
-          "text": "Under NURS 2076 section 1.4, which name belongs to an arterial urban road intended principally for through movement?",
+          "text": "As per NURS, an arterial road is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Upa-Marg"
+              "text": "Galli"
             },
             {
               "key": "b",
@@ -335,7 +335,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The NURS 2076 hierarchy pairs arterial with Path, sub-arterial with Sadak, collector with Marg and local with Upa-Marg. These urban functional labels are not the same as NRS technical Classes I-IV.<p>Source note: Page 34 point 18: edition made explicit using chapter-09-planning, planning-nurs-urban-hierarchy, citing NURS 2076 section 1.4, printed pages 2-4. No image review was performed in this authoring pass.</p><p>Capsule 4th ed., p. 34; topic 9 point 18.</p>",
+          "explanation": "The Nepal Urban Road Standard names urban roads by their function; the arterial road, which carries through traffic, is called a Path.<p>Capsule 4th ed., p. 34; topic 9 point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -353,27 +353,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00019",
           "src": "CAP4-09-00019",
-          "text": "In NRS 2070 section 4.2, what does the 20-year forward traffic horizon mean?",
+          "text": "As per NRS 2070, the life of a perpetual road is about ______.",
           "options": [
             {
               "key": "a",
-              "text": "Maximum life of every perpetual pavement"
+              "text": "50 years"
             },
             {
               "key": "b",
-              "text": "Sum of all vehicles counted over 20 years"
+              "text": "5 years"
             },
             {
               "key": "c",
-              "text": "Forecast daily demand 20 years after completion"
+              "text": "20 years"
             },
             {
               "key": "d",
-              "text": "Mandatory surface replacement exactly at year 20"
+              "text": "10 years"
             }
           ],
           "answer": "c",
-          "explanation": "The horizon locates the future daily traffic used for geometric-capacity planning. It does not define cumulative axle loading or fix a universal pavement service life. Different pavement and appraisal decisions use their own design bases.<p>Source note: Page 34 point 19 incorrectly labels this as perpetual-road life. Reference: NRS 2070 sections 3 and 4.2 via corrected planning notes.</p><p>Capsule 4th ed., p. 34; topic 9 point 19.</p>",
+          "explanation": "NRS 2070 takes the life of a perpetual road as about 20 years, and its traffic is forecast for 20 years after completion.<p>Capsule 4th ed., p. 34; topic 9 point 19.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -386,32 +386,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00112",
           "src": "CAP4-09-00112",
-          "text": "Within the historical NRS 2070 administrative categories, which category primarily serves major nationwide long-distance connections?",
+          "text": "According to administrative classification, the road with high mobility and least accessibility is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "National Highway"
+              "text": "National highway"
             },
             {
               "key": "b",
-              "text": "Urban Road as a whole"
+              "text": "District road"
             },
             {
               "key": "c",
-              "text": "Local access street"
+              "text": "Urban road"
             },
             {
               "key": "d",
-              "text": "District Road"
+              "text": "Feeder road"
             }
           ],
           "answer": "a",
-          "explanation": "National highways have a major long-distance network role, so through mobility is emphasised. Administrative designation alone does not prove complete access control or the least access at every location; those require functional and geometric decisions.<p>Source note: Page 36 point 108&#39;s mobility/access statement is scoped to network purpose, not treated as a universal measured ranking; NRS 2070 section 3 via planning notes.</p><p>Capsule 4th ed., p. 36; topic 9 point 108.</p>",
+          "explanation": "National highways carry long-distance through traffic at high speed with limited access, so they have the highest mobility and least accessibility; district and urban roads give more access.<p>Capsule 4th ed., p. 36; topic 9 point 108.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -424,20 +424,20 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00114",
           "src": "CAP4-09-00114",
-          "text": "A field team rapidly checks candidate corridors for landslides, stream crossings and major obstacles before commissioning dense measurements. Which conventional survey stage is this?",
+          "text": "The survey in which details are covered roughly but not accurately is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "As-built survey"
+              "text": "Detailed survey"
             },
             {
               "key": "b",
-              "text": "Post-opening condition survey"
+              "text": "Location survey"
             },
             {
               "key": "c",
@@ -445,11 +445,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "d",
-              "text": "Final setting-out"
+              "text": "Preliminary survey"
             }
           ],
           "answer": "c",
-          "explanation": "Reconnaissance screens field feasibility and identifies investigation needs with preliminary observations. It is less detailed than a final survey, but observations must still be reliable enough for their screening purpose; 'rough' does not justify careless work.<p>Capsule 4th ed., p. 36; topic 9 point 110.</p>",
+          "explanation": "Reconnaissance is a quick rough survey of the whole area to find possible routes and obstacles; accurate measurements come later, in the preliminary and detailed surveys.<p>Capsule 4th ed., p. 36; topic 9 point 110.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -462,32 +462,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00122",
           "src": "CAP4-09-00122",
-          "text": "During a bridge closure, existing trips use an alternative road but retain their original destinations. What best describes those trips on the alternative road?",
+          "text": "When vehicles are made to change from one route to another at a point without changing their destination, the path is known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "Diverted traffic"
+              "text": "A diversion path"
             },
             {
               "key": "b",
-              "text": "Induced land-use trips with new destinations"
+              "text": "A cul-de-sac"
             },
             {
               "key": "c",
-              "text": "Suppressed traffic"
+              "text": "A dead end"
             },
             {
               "key": "d",
-              "text": "Newly generated traffic"
+              "text": "A ring road"
             }
           ],
           "answer": "a",
-          "explanation": "The journeys already existed and change route rather than destination, so they are diverted traffic. Generated or induced trips add travel demand; counting the diverted journeys again as wholly new system demand would double-count them.<p>Capsule 4th ed., p. 36; topic 9 point 117.</p>",
+          "explanation": "A diversion path takes vehicles off their usual route at a point while they keep the same destination, as when a road is closed for repairs.<p>Capsule 4th ed., p. 36; topic 9 point 117.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -500,32 +500,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00129",
           "src": "CAP4-09-00129",
-          "text": "A road's forecast ADT is 24,000 PCU/day at 20 years after completion. Which technical traffic class does this fall within in NRS 2070 section 3?",
+          "text": "For the design of a Class I road, the traffic volume and prospective period are ______.",
           "options": [
             {
               "key": "a",
-              "text": "Class IV"
+              "text": "More than 50,000 PCU at 5 years"
             },
             {
               "key": "b",
-              "text": "Class III"
+              "text": "Less than 5,000 PCU at 10 years"
             },
             {
               "key": "c",
-              "text": "Class I"
+              "text": "More than 20,000 PCU at 20 years"
             },
             {
               "key": "d",
-              "text": "Class II"
+              "text": "5,000 to 20,000 PCU at 20 years"
             }
           ],
           "answer": "c",
-          "explanation": "A forecast of 24,000 PCU/day is above the Class I threshold in the identified NRS system. This is daily traffic at the future horizon, not total PCU over twenty years or a prescribed pavement service life.<p>Source note: Page 36 point 122 contains traffic and horizon facts, both tested. Used an interior value: main Class I wording includes 20,000, while adjacent bands/annex create endpoint ambiguity; no invented boundary resolution.</p><p>Capsule 4th ed., p. 36; topic 9 point 122.</p>",
+          "explanation": "Roads are classified by the traffic forecast 20 years after completion; a Class I road carries more than 20,000 PCU per day, and the lower classes carry less.<p>Capsule 4th ed., p. 36; topic 9 point 122.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -538,32 +538,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00133",
           "src": "CAP4-09-00133",
-          "text": "Which historical comparison correctly distinguishes Telford and McAdam road-building approaches?",
+          "text": "The road foundation for modern highway construction was developed by ______.",
           "options": [
             {
               "key": "a",
-              "text": "Both required identical hand-set foundations; their methods differed only in carriageway width"
+              "text": "Darcy and Weisbach"
             },
             {
               "key": "b",
-              "text": "Telford relied only on thin broken-stone layers; McAdam required a hand-set large-stone foundation"
+              "text": "Kennedy and Lacey"
             },
             {
               "key": "c",
-              "text": "Telford used a hand-set stone foundation; McAdam emphasised compacted broken-stone layers"
+              "text": "Telford and Macadam"
             },
             {
               "key": "d",
-              "text": "Both relied principally on mortar bonding; stone interlock and rolling were secondary features"
+              "text": "Hardy Cross and Bligh"
             }
           ],
           "answer": "c",
-          "explanation": "Both contributed to road construction, but their foundation concepts differed: Telford used a substantial hand-set stone foundation, while McAdam relied on compacted angular broken stone and a suitably prepared drained formation. Historical dimensions are not modern specifications.<p>Source note: Page 36 point 127: original historical comparison, without claiming they alone invented every feature of modern roads or asserting unverified layer dimensions.</p><p>Capsule 4th ed., p. 36; topic 9 point 127.</p>",
+          "explanation": "Thomas Telford used a foundation of large hand-set stones, and John Macadam used compacted layers of broken stone; their methods laid the basis of modern road foundations.<p>Capsule 4th ed., p. 36; topic 9 point 127.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -581,27 +581,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00139",
           "src": "CAP4-09-00139",
-          "text": "Which appraisal objective best represents the purpose of a passenger-and-freight transport system?",
+          "text": "The main objective of transportation is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Maximum paved length regardless of destinations served"
+              "text": "The collection of road taxes"
             },
             {
               "key": "b",
-              "text": "Minimum initial road cost regardless of future maintenance"
+              "text": "The construction of more roads only"
             },
             {
               "key": "c",
-              "text": "Maximum vehicle speed regardless of access and injury risk"
+              "text": "The highest vehicle speed at any cost"
             },
             {
               "key": "d",
-              "text": "Safe, efficient access and movement at justified whole-life cost"
+              "text": "Safe, economical and efficient transport of goods and passengers"
             }
           ],
           "answer": "d",
-          "explanation": "Transport serves people and goods by connecting useful destinations safely and efficiently. Economy includes operation, maintenance and user consequences, not merely the lowest construction price or greatest length of pavement.<p>Capsule 4th ed., p. 36; topic 9 point 132.</p>",
+          "explanation": "Transportation aims to move goods and passengers safely, economically and efficiently, balancing speed, cost and safety.<p>Capsule 4th ed., p. 36; topic 9 point 132.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -614,12 +614,12 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00149",
           "src": "CAP4-09-00149",
-          "text": "Which established highway name identifies the Naubise-Pokhara corridor in Nepal?",
+          "text": "The road section from Naubise to Pokhara is the ______.",
           "options": [
             {
               "key": "a",
@@ -639,7 +639,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The Naubise-Pokhara corridor is known as Prithvi Highway. This geographical identification does not establish a current route number, exact measured length, administrative boundary or the status of ongoing upgrades.<p>Source note: Page 37 point 146: source corridor-name fact retained, spelling standardised to Prithvi. No unverified current highway code or length added.</p><p>Capsule 4th ed., p. 37; topic 9 point 146.</p>",
+          "explanation": "The Prithvi Highway runs from Naubise to Pokhara; the Tribhuvan Highway links Naubise with Birgunj, the Siddhartha Highway runs from Pokhara to Sunauli, and the Arniko Highway runs to Kodari.<p>Capsule 4th ed., p. 37; topic 9 point 146.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -657,27 +657,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-10-00180",
           "src": "CAP4-10-00180",
-          "text": "Which mountain-road alignment and construction strategy best reflects the ecological aims of a green-road approach?",
+          "text": "The green road concept focuses on ______.",
           "options": [
             {
               "key": "a",
-              "text": "Minimise disturbance, protect vegetation and control spoil and drainage"
+              "text": "Conserving mountain ecology, protecting vegetation and promoting labour-based, affordable work"
             },
             {
               "key": "b",
-              "text": "Straighten every bend regardless of landslide susceptibility"
+              "text": "Removing vegetation to improve sight distance"
             },
             {
               "key": "c",
-              "text": "Maximise cut height so spoil can be freely tipped downslope"
+              "text": "Maximum use of heavy machinery"
             },
             {
               "key": "d",
-              "text": "Remove vegetation widely to avoid considering slope protection"
+              "text": "Wide cutting of hill slopes"
             }
           ],
           "answer": "a",
-          "explanation": "A green-road approach seeks to reduce damage to fragile slopes and vegetation through suitable alignment, staged works, drainage and managed spoil. The name is not a guarantee that any low-cost road is environmentally acceptable.<p>Capsule 4th ed., p. 42; rural point 8.</p>",
+          "explanation": "Green roads are built in stages with minimum cutting and balanced earthwork, protecting the fragile mountain ecology and vegetation and using local labour at low cost.<p>Capsule 4th ed., p. 42; rural point 8.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -690,7 +690,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0901",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -702,27 +702,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00008",
           "src": "CAP4-09-00008",
-          "text": "A curve needs extra width because rear wheels track inside the front wheels and drivers seek additional lateral clearance. How are these two allowances combined in the conventional extra-widening model?",
+          "text": "Extra widening on a horizontal curve is equal to the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Add mechanical and psychological widening"
+              "text": "Sum of mechanical and psychological widening"
             },
             {
               "key": "b",
-              "text": "Subtract psychological from mechanical widening"
+              "text": "Difference between mechanical and psychological widening"
             },
             {
               "key": "c",
-              "text": "Use only the larger of the two allowances"
+              "text": "Mechanical widening only"
             },
             {
               "key": "d",
-              "text": "Multiply the two allowances and divide by radius"
+              "text": "Psychological widening only"
             }
           ],
           "answer": "a",
-          "explanation": "Off-tracking produces mechanical widening; driver comfort and clearance produce psychological widening. They address different demands, so the conventional model uses their sum, subject to the governing standard's tabulated provisions.<p>Capsule 4th ed., p. 33; topic 9 point 8.</p>",
+          "explanation": "Extra widening is the mechanical widening \\(\\dfrac{nl^2}{2R}\\), for the off-tracking of the rear wheels, plus the psychological widening \\(\\dfrac{V}{9.5\\sqrt{R}}\\), for the drivers' tendency to keep extra clearance.<p>Capsule 4th ed., p. 33; topic 9 point 8.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -735,32 +735,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00009",
           "src": "CAP4-09-00009",
-          "text": "Using the conventional small-angle off-tracking model, what mechanical extra width is required for two lanes, a 6 m design wheelbase and a 60 m curve radius?",
+          "text": "The formula of mechanical extra widening on a road is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.30 m"
+              "text": "\\(W_m = \\dfrac{nl}{2R}\\)"
             },
             {
               "key": "b",
-              "text": "1.20 m"
+              "text": "\\(W_m = \\dfrac{V}{9.5\\sqrt{R}}\\)"
             },
             {
               "key": "c",
-              "text": "0.10 m"
+              "text": "\\(W_m = \\dfrac{nl^2}{R}\\)"
             },
             {
               "key": "d",
-              "text": "0.60 m"
+              "text": "\\(W_m = \\dfrac{nl^2}{2R}\\)"
             }
           ],
           "answer": "d",
-          "explanation": "Mechanical widening is \\[W_m = \\dfrac{nl^2}{2R} = \\dfrac{2 \\times 6^2}{2 \\times 60} = 0.60\\] metres. This excludes psychological widening and is a model calculation, not a substitute for NRS tabulated total widening.<p>Source note: Page 33 point 9: the extracted numerator appears at the end of point 8. Restored Wm = n*l^2/(2R), consistent with chapter-09-geometry, Extra widening.</p><p>Capsule 4th ed., p. 33; topic 9 point 9.</p>",
+          "explanation": "With \\(n\\) lanes, wheelbase \\(l\\) and radius \\(R\\), the rear wheels track inside the front wheels by \\(\\dfrac{l^2}{2R}\\) per lane, giving the mechanical widening \\(W_m = \\dfrac{nl^2}{2R}\\).<p>Capsule 4th ed., p. 33; topic 9 point 9.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -773,32 +773,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00010",
           "src": "CAP4-09-00010",
-          "text": "Which design quantity belongs primarily to the longitudinal profile rather than a normal road cross-section?",
+          "text": "Which of the following is not related to the cross-section of a road?",
           "options": [
             {
               "key": "a",
-              "text": "Crossfall of the paved shoulder"
+              "text": "Shoulder"
             },
             {
               "key": "b",
-              "text": "Camber across the carriageway"
+              "text": "Camber"
             },
             {
               "key": "c",
-              "text": "Width of the central median"
+              "text": "Carriageway width"
             },
             {
               "key": "d",
-              "text": "Gradient along increasing chainage"
+              "text": "Gradient"
             }
           ],
           "answer": "d",
-          "explanation": "Longitudinal gradient measures rise or fall along the alignment. A cross-section shows transverse widths, slopes and drainage elements; its levels must nevertheless be coordinated with the profile.<p>Capsule 4th ed., p. 33; topic 9 point 10.</p>",
+          "explanation": "Camber, carriageway width and shoulders are elements of the road cross-section; the gradient is the longitudinal slope along the road and belongs to the vertical alignment.<p>Capsule 4th ed., p. 33; topic 9 point 10.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -811,32 +811,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00011",
           "src": "CAP4-09-00011",
-          "text": "A design exercise gives a stopping sight distance of 80 m. What intermediate sight distance follows from the conventional ISD definition?",
+          "text": "The relationship between stopping sight distance (SSD) and intermediate sight distance (ISD) is ______.",
           "options": [
             {
               "key": "a",
-              "text": "240 m"
+              "text": "\\(\\mathrm{SSD} = 2\\,\\mathrm{ISD}\\)"
             },
             {
               "key": "b",
-              "text": "160 m"
+              "text": "\\(\\mathrm{ISD} = 2\\,\\mathrm{SSD}\\)"
             },
             {
               "key": "c",
-              "text": "120 m"
+              "text": "\\(\\mathrm{ISD} = \\mathrm{SSD}\\)"
             },
             {
               "key": "d",
-              "text": "80 m"
+              "text": "\\(\\mathrm{ISD} = 3\\,\\mathrm{SSD}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "Intermediate sight distance is defined as twice SSD: \\[\\text{ISD} = 2 \\times 80 = 160\\ \\text{m}\\] It is not an independently calculated overtaking distance and does not by itself permit an overtaking manoeuvre.<p>Capsule 4th ed., p. 33; topic 9 point 11.</p>",
+          "explanation": "Intermediate sight distance is taken as twice the stopping sight distance; it lets drivers overtake with reasonable safety where the full overtaking sight distance cannot be provided.<p>Capsule 4th ed., p. 33; topic 9 point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -849,32 +849,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00013",
           "src": "CAP4-09-00013",
-          "text": "From the specified driver's eye position, a low target remains visible for 110 m along the road before a crest hides it. What does this 110 m describe?",
+          "text": "The length of road visible to a driver at any instant of time is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Required braking distance"
+              "text": "Lag distance"
             },
             {
               "key": "b",
-              "text": "Designed overtaking-zone length"
+              "text": "Braking distance"
             },
             {
               "key": "c",
-              "text": "Mechanical curve widening"
+              "text": "Headway"
             },
             {
               "key": "d",
-              "text": "Available sight distance"
+              "text": "Sight distance"
             }
           ],
           "answer": "d",
-          "explanation": "Available sight distance is the visible road length for the stated eye and target geometry. Required stopping or overtaking distance must be computed separately before judging whether that visibility is adequate.<p>Capsule 4th ed., p. 33; topic 9 point 13.</p>",
+          "explanation": "Sight distance is the length of road ahead visible to the driver at any instant; it must be long enough for stopping and, in places, for overtaking.<p>Capsule 4th ed., p. 33; topic 9 point 13.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -887,32 +887,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00014",
           "src": "CAP4-09-00014",
-          "text": "An embankment crosses compressible ground and is predicted to settle unevenly. Why must the highway designer consider that settlement?",
+          "text": "Which of the following is not considered when designing highways?",
           "options": [
             {
               "key": "a",
-              "text": "It affects construction cost but never geometry"
+              "text": "Design speed"
             },
             {
               "key": "b",
-              "text": "It can alter profile, ride quality and drainage"
+              "text": "Settlement"
             },
             {
               "key": "c",
-              "text": "It changes only the road's administrative class"
+              "text": "Traffic volume"
             },
             {
               "key": "d",
-              "text": "It matters only for unpaved access tracks"
+              "text": "Topography"
             }
           ],
           "answer": "b",
-          "explanation": "Differential settlement distorts the finished profile and can create bumps, ponding and structural distress. Settlement is not itself a cross-sectional geometric element, but excluding it from highway design is incorrect.<p>Source note: Pages 33/37 points 14/154 repeat the same false exclusion. Both are covered by this corrected principle, supported by chapter-09-geometry, geometric-design-controls.</p><p>Capsule 4th ed., pp. 33, 37; topic 9 point 14; topic 9 point 154.</p>",
+          "explanation": "Highway design is based on factors such as traffic volume, design speed, topography, soil and drainage; settlement is not one of the factors considered in designing highways.<p>Capsule 4th ed., pp. 33, 37; topic 9 point 14; topic 9 point 154.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -927,32 +927,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00017",
           "src": "CAP4-09-00017",
-          "text": "In conventional highway-gradient terminology, which situation properly describes an exceptional gradient?",
+          "text": "A gradient on a road is said to be an exceptional gradient if it is ______.",
           "options": [
             {
               "key": "a",
-              "text": "The normal desirable grade used throughout the entire route"
+              "text": "Equal to the limiting gradient"
             },
             {
               "key": "b",
-              "text": "Any grade flatter than the minimum needed for drainage"
+              "text": "Equal to the ruling gradient"
             },
             {
               "key": "c",
-              "text": "Any local grade whose value differs from the route average"
+              "text": "Between the ruling and limiting gradients"
             },
             {
               "key": "d",
-              "text": "A steeper-than-limiting grade allowed briefly under specified constraints"
+              "text": "Less than the minimum gradient or more than the maximum gradient"
             }
           ],
           "answer": "d",
-          "explanation": "Exceptional gradients are constrained departures above the limiting gradient, normally restricted to short lengths. A grade below the drainage minimum is a drainage issue, not another definition of exceptional gradient.<p>Source note: Page 34 point 17 conflates excessive steepness and insufficient drainage grade. NRS maximum-gradient tables and conventional ruling/limiting terminology should not be interchanged.</p><p>Capsule 4th ed., p. 34; topic 9 point 17.</p>",
+          "explanation": "Gradients are normally kept between the minimum needed for drainage and the permissible maximum; a gradient outside this range, flatter than the minimum or steeper than the maximum, is exceptional.<p>Capsule 4th ed., p. 34; topic 9 point 17.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -965,32 +965,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00021",
           "src": "CAP4-09-00021",
-          "text": "A designer uses NRS 2070 section 11.6 for a horizontal curve. How should the lateral-friction input be selected?",
+          "text": "As per NRS 2070, the maximum value of the coefficient of lateral friction is taken as ______.",
           "options": [
             {
               "key": "a",
-              "text": "Use the longitudinal braking coefficient without checking it"
+              "text": "0.40"
             },
             {
               "key": "b",
-              "text": "Use the maximum superelevation percentage as the coefficient"
+              "text": "0.07"
             },
             {
               "key": "c",
-              "text": "Use the tabulated value for the applicable design speed"
+              "text": "0.15"
             },
             {
               "key": "d",
-              "text": "Use 0.15 at every speed as a universal fixed coefficient"
+              "text": "0.35"
             }
           ],
           "answer": "c",
-          "explanation": "NRS uses a speed-dependent lateral-friction table in its superelevation procedure. A single remembered 0.15 does not replace that table, and longitudinal braking friction and crossfall limits are different design quantities.<p>Source note: Page 34 point 20: the blanket maximum 0.15 was not freshly verified against the primary table. Corrected geometry notes establish speed dependence; exact table extrema remain a parent reference check.</p><p>Capsule 4th ed., p. 34; topic 9 point 20.</p>",
+          "explanation": "NRS 2070 limits the coefficient of lateral friction on horizontal curves to 0.15, so that vehicles do not rely on excessive side friction; longitudinal friction values are higher, about 0.35 to 0.40.<p>Capsule 4th ed., p. 34; topic 9 point 20.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1003,32 +1003,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00022",
           "src": "CAP4-09-00022",
-          "text": "In the NRS 2070 Table 11-6 design provision, how should the 30 m ROW for a feeder road be interpreted?",
+          "text": "As per NRS 2070, the right of way (ROW) for a feeder road is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Clear width between only the two paved edges"
+              "text": "20 m"
             },
             {
               "key": "b",
-              "text": "Mandatory building setback from each plot boundary"
+              "text": "15 m"
             },
             {
               "key": "c",
-              "text": "Carriageway width excluding shoulders and drains"
+              "text": "50 m"
             },
             {
               "key": "d",
-              "text": "Total road land width, not 30 m on each side"
+              "text": "30 m"
             }
           ],
           "answer": "d",
-          "explanation": "The table specifies a total 30 m right-of-way width for the historical feeder category. ROW can accommodate more than the carriageway; the table alone does not prove actual acquired parcel limits or current building restrictions.<p>Capsule 4th ed., p. 34; topic 9 point 21.</p>",
+          "explanation": "NRS 2070 fixes the right of way for a feeder road at 30 m, the total width of land reserved for the road; national highways have a wider right of way of 50 m.<p>Capsule 4th ed., p. 34; topic 9 point 21.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1041,12 +1041,12 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00023",
           "src": "CAP4-09-00023",
-          "text": "Which maximum longitudinal gradient is listed for a hairpin bend in NRS 2070 Table 9-3?",
+          "text": "The maximum gradient for a hairpin bend is ______.",
           "options": [
             {
               "key": "a",
@@ -1062,11 +1062,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "d",
-              "text": "0.4%"
+              "text": "12%"
             }
           ],
           "answer": "c",
-          "explanation": "Table 9-3 gives 4% as the hairpin longitudinal-gradient limit. The 10% entry concerns superelevation, not longitudinal grade; the 0.4% figure belongs to a separate tunnel drainage-gradient provision.<p>Source note: Page 34 point 22 attributes 4% to &#39;NURS 2071&#39;. The defensible reference used here is NRS 2070/2013 Table 9-3, corroborated by corrected geometry notes; the NURS 2071 attribution remains unverified.</p><p>Capsule 4th ed., p. 34; topic 9 point 22.</p>",
+          "explanation": "Vehicles turn sharply and slowly on a hairpin bend, so its gradient is limited to 4%, much flatter than the gradients allowed on the approaches.<p>Capsule 4th ed., p. 34; topic 9 point 22.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1084,7 +1084,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00024",
           "src": "CAP4-09-00024",
-          "text": "A summary confuses the hairpin design-speed entry with its radius entry. What minimum radius does NRS 2070 Table 9-3 actually specify?",
+          "text": "The minimum radius of curvature for a hairpin bend in hill roads is ______.",
           "options": [
             {
               "key": "a",
@@ -1104,7 +1104,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The table's minimum radius is 15 m, while 20 is the design speed in km/h. Radius alone does not establish that a long vehicle can negotiate the bend; widening, swept path and clearance must also be checked.<p>Capsule 4th ed., p. 34; topic 9 point 23.</p>",
+          "explanation": "A hairpin bend on a hill road must have a radius of at least 15 m so that design vehicles can negotiate it, with extra widening on the curve.<p>Capsule 4th ed., p. 34; topic 9 point 23.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1122,7 +1122,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00025",
           "src": "CAP4-09-00025",
-          "text": "A rural strategic road is assigned technical Class I in plain terrain under NRS 2070. Which Table 7-1 design speed is the starting geometric input?",
+          "text": "In plain terrain, the design speed of vehicles for a Class I road is ______.",
           "options": [
             {
               "key": "a",
@@ -1142,7 +1142,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The main NRS Table 7-1 gives Class I speeds of 120, 100, 80 and 60 km/h for plain, rolling, mountainous and steep terrain respectively. The selected design speed is not automatically the road's posted or safe operating speed.<p>Capsule 4th ed., p. 34; topic 9 point 24.</p>",
+          "explanation": "NRS 2070 sets the design speed for a Class I road in plain terrain at 120 km per h; lower classes and rolling, mountainous or steep terrain use lower speeds.<p>Capsule 4th ed., p. 34; topic 9 point 24.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1160,27 +1160,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00027",
           "src": "CAP4-09-00027",
-          "text": "In the approximate banked-curve relation with V in km/h and R in metres, what assumption permits e = V squared / (127R)?",
+          "text": "The superelevation formula for hilly roads is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Banking always carries only half the lateral demand"
+              "text": "\\(e = \\dfrac{V^2}{127}\\)"
             },
             {
               "key": "b",
-              "text": "Lateral friction is neglected at the specified speed"
+              "text": "\\(e = \\dfrac{V^2}{127R}\\)"
             },
             {
               "key": "c",
-              "text": "Longitudinal braking friction equals 0.15"
+              "text": "\\(e = \\dfrac{V}{127R}\\)"
             },
             {
               "key": "d",
-              "text": "The road lies in hills regardless of speed"
+              "text": "\\(e = \\dfrac{127V^2}{R}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "The general approximate relation is \\[e + f = \\dfrac{V^2}{127R}\\] Setting \\(f = 0\\) gives the stated expression. A hill-road label alone does not justify deleting friction or ignoring the governing superelevation cap.<p>Source note: Page 34 point 26: restored displaced squared-speed numerator; corrected the universal hill-road claim using NRS section 11.6 and banked-curve equilibrium.</p><p>Capsule 4th ed., p. 34; topic 9 point 26.</p>",
+          "explanation": "Neglecting side friction, the superelevation is \\(e = \\dfrac{V^2}{127R}\\), with \\(V\\) in km per h and \\(R\\) in metres; it follows from \\(e + f = \\dfrac{V^2}{127R}\\) with \\(f = 0\\).<p>Capsule 4th ed., p. 34; topic 9 point 26.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1193,32 +1193,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00028",
           "src": "CAP4-09-00028",
-          "text": "A tangent-to-circle transition must increase curvature linearly with distance along it. Which curve has this defining property?",
+          "text": "The ideal shape of a transition curve is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Clothoid or Euler spiral"
+              "text": "Clothoid"
             },
             {
               "key": "b",
-              "text": "Rectangular hyperbola"
+              "text": "Cubic parabola"
             },
             {
               "key": "c",
-              "text": "Simple circular arc"
+              "text": "Lemniscate"
             },
             {
               "key": "d",
-              "text": "Ordinary ellipse"
+              "text": "Circular arc"
             }
           ],
           "answer": "a",
-          "explanation": "Clothoid curvature grows in direct proportion to distance from the tangent end. At constant vehicle speed this produces a constant rate of change of path lateral acceleration; constant jerk is not guaranteed when speed changes.<p>Source note: Page 34 point 27; NRS 2070 section 9.2. &#39;Ideal&#39; is tied to the explicit curvature requirement, not all possible alignment conditions.</p><p>Capsule 4th ed., p. 34; topic 9 point 27.</p>",
+          "explanation": "In a clothoid (spiral), curvature increases uniformly with length, so the centrifugal force builds up at a constant rate; it is the ideal transition curve, and the lemniscate and cubic parabola approximate it.<p>Capsule 4th ed., p. 34; topic 9 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1231,32 +1231,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00029",
           "src": "CAP4-09-00029",
-          "text": "Which pair of elements is directly selected when developing a highway's vertical alignment?",
+          "text": "The vertical alignment of a highway deals with ______.",
           "options": [
             {
               "key": "a",
-              "text": "Lane widths and central median widths"
+              "text": "Horizontal curves and superelevation"
             },
             {
               "key": "b",
-              "text": "Road boundaries and building restriction lines"
+              "text": "Right of way and building lines"
             },
             {
               "key": "c",
-              "text": "Longitudinal grades and connecting vertical curves"
+              "text": "Vertical curves and gradients"
             },
             {
               "key": "d",
-              "text": "Horizontal tangents and circular plan curves"
+              "text": "Camber and carriageway width"
             }
           ],
           "answer": "c",
-          "explanation": "Vertical alignment is the elevation profile along the route, composed of grades joined by crest or sag curves. Plan curvature and cross-sectional widths must be coordinated with it but describe different geometric views.<p>Capsule 4th ed., p. 34; topic 9 point 28.</p>",
+          "explanation": "Vertical alignment is the road profile in elevation, made up of gradients and the summit and valley curves that join them; horizontal curves belong to the plan.<p>Capsule 4th ed., p. 34; topic 9 point 28.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1274,27 +1274,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00030",
           "src": "CAP4-09-00030",
-          "text": "Runoff from an uphill catchment must be intercepted before it flows down a highway cut face. Which drainage element performs that task?",
+          "text": "The drainage structure provided parallel to the road to intercept rain water in a hilly region is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Gutter confined to the pavement edge"
+              "text": "Subsurface drain"
             },
             {
               "key": "b",
-              "text": "Subsurface filter beneath the pavement"
+              "text": "Culvert"
             },
             {
               "key": "c",
-              "text": "Culvert crossing beneath the roadway"
+              "text": "Cross drain"
             },
             {
               "key": "d",
-              "text": "Catch drain above the cutting"
+              "text": "Catch drain"
             }
           ],
           "answer": "d",
-          "explanation": "A catch or interceptor drain collects upslope runoff before it reaches the cut and conveys it to a controlled outlet. A side gutter collects runoff reaching road level; a culvert transfers discharge across the road.<p>Capsule 4th ed., p. 34; topic 9 point 29.</p>",
+          "explanation": "A catch drain is cut along the hill slope above the road to intercept the runoff before it reaches the road and the cut face, leading it to the nearest cross drainage.<p>Capsule 4th ed., p. 34; topic 9 point 29.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1307,32 +1307,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00032",
           "src": "CAP4-09-00032",
-          "text": "How does NRS 2070 section 11.9.3 treat 5.0 m vertical clear space beneath an obstruction over a roadway?",
+          "text": "The vertical clearance in a hill road for an overhanging cliff is ______.",
           "options": [
             {
               "key": "a",
-              "text": "A minimum envelope measured from the crown over the roadway width"
+              "text": "5 m"
             },
             {
               "key": "b",
-              "text": "The maximum overall height of the design vehicle itself"
+              "text": "8 m"
             },
             {
               "key": "c",
-              "text": "A clearance required only directly above the centreline"
+              "text": "10 m"
             },
             {
               "key": "d",
-              "text": "A maximum height that an overhanging cliff must not exceed"
+              "text": "3 m"
             }
           ],
           "answer": "a",
-          "explanation": "The provision requires at least 5.0 m clear space from the crown over the whole roadway width. It is not a maximum permissible clearance, and the separate 4.75 m design-vehicle height is not the clearance envelope.<p>Source note: Page 34 point 31 reverses minimum and maximum. Corrected against the clause identified in chapter-09-geometry, cross-section-row-and-clearances.</p><p>Capsule 4th ed., p. 34; topic 9 point 31.</p>",
+          "explanation": "Under an overhanging cliff on a hill road, a vertical clearance of 5 m is provided above the road surface so that loaded vehicles can pass safely.<p>Capsule 4th ed., p. 34; topic 9 point 31.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1345,16 +1345,16 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00033",
           "src": "CAP4-09-00033",
-          "text": "What perception-reaction time does the NRS 2070 section 24.2.1 stopping-distance model adopt?",
+          "text": "The brake reaction time of a normal driver is taken as ______.",
           "options": [
             {
               "key": "a",
-              "text": "2.0 s"
+              "text": "0.5 s"
             },
             {
               "key": "b",
@@ -1366,11 +1366,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "d",
-              "text": "3.5 s"
+              "text": "5.0 s"
             }
           ],
           "answer": "c",
-          "explanation": "The NRS SSD model uses 2.5 s for perception and reaction before braking. This is a design assumption rather than a measured constant for every normal driver, and it does not include the subsequent braking time.<p>Capsule 4th ed., p. 34; topic 9 point 32.</p>",
+          "explanation": "The total perception and brake reaction time of a normal driver is taken as 2.5 seconds in calculating the stopping sight distance.<p>Capsule 4th ed., p. 34; topic 9 point 32.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1388,11 +1388,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00034",
           "src": "CAP4-09-00034",
-          "text": "A legacy overtaking exercise explicitly assumes the slower vehicle travels 16 km/h below design speed. If that vehicle travels at 80 km/h, what design speed does this model imply?",
+          "text": "If the speed of the overtaken vehicle is 80 km/h, the design speed for overtaking sight distance is ______.",
           "options": [
             {
               "key": "a",
-              "text": "128 km/h"
+              "text": "112 km/h"
             },
             {
               "key": "b",
@@ -1408,7 +1408,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Under the supplied empirical assumption, the slower speed is the design speed minus 16, so \\[V = 80 + 16 = 96\\ \\text{km/h}\\] The difference is a stated teaching model, not a general NRS method for choosing actual design speed.<p>Capsule 4th ed., p. 34; topic 9 point 33.</p>",
+          "explanation": "The overtaken vehicle is assumed to travel 16 km per h slower than the design speed, so \\[V = 80 + 16 = 96\\] km per h.<p>Capsule 4th ed., p. 34; topic 9 point 33.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1426,11 +1426,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00035",
           "src": "CAP4-09-00035",
-          "text": "What ordinary single-lane carriageway width appears in NRS 2070 Table 11-1, before applying its qualified difficult-terrain reduction?",
+          "text": "The minimum width of a single lane road is ______.",
           "options": [
             {
               "key": "a",
-              "text": "3.50 m"
+              "text": "3.00 m"
             },
             {
               "key": "b",
@@ -1446,7 +1446,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The ordinary single-lane carriageway is 3.75 m; the table permits a qualified reduction to 3.0 m in difficult terrain. The 3.5 m value is a multilane lane width, and carriageway width excludes the shoulders.<p>Source note: Page 34 point 34 is qualified: 3.75 m is not an exceptionless minimum across all terrain and road standards.</p><p>Capsule 4th ed., p. 34; topic 9 point 34.</p>",
+          "explanation": "A single-lane carriageway is made at least 3.75 m wide, enough for one design vehicle with side clearance; a two-lane carriageway is about 7.0 m wide.<p>Capsule 4th ed., p. 34; topic 9 point 34.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1464,27 +1464,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00036",
           "src": "CAP4-09-00036",
-          "text": "A vehicle maintains 72 km/h during an assumed 2.5 s perception-reaction interval. How far does it travel before braking starts?",
+          "text": "The distance travelled by a moving vehicle during the perception and brake reaction time is known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "180 m"
+              "text": "Stopping sight distance"
             },
             {
               "key": "b",
-              "text": "50 m"
+              "text": "Lag distance"
             },
             {
               "key": "c",
-              "text": "20 m"
+              "text": "Braking distance"
             },
             {
               "key": "d",
-              "text": "25 m"
+              "text": "Headway"
             }
           ],
           "answer": "b",
-          "explanation": "Convert 72 km/h to 20 m/s and multiply by 2.5 s to obtain 50 m of lag distance. Stopping sight distance must additionally include braking distance under the applicable grade and braking assumptions.<p>Capsule 4th ed., p. 34; topic 9 point 35.</p>",
+          "explanation": "During the perception and brake reaction time the vehicle keeps moving at its speed; this lag distance, \\(vt\\), plus the braking distance makes up the stopping sight distance.<p>Capsule 4th ed., p. 34; topic 9 point 35.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1497,24 +1497,24 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00037",
           "src": "CAP4-09-00037",
-          "text": "For ordinary stopping-visibility checks in NRS 2070 section 8.3, which pair gives driver eye height followed by object height above the road?",
+          "text": "According to NRS 2070, the driver's eye height and object height for measuring stopping sight distance are, respectively, ______.",
           "options": [
             {
               "key": "a",
-              "text": "1.20 m and 1.20 m"
+              "text": "1.2 m and 1.2 m"
             },
             {
               "key": "b",
-              "text": "1.20 m and 0.15 m"
+              "text": "1.2 m and 0.15 m"
             },
             {
               "key": "c",
-              "text": "1.50 m and 0.75 m"
+              "text": "1.5 m and 0.75 m"
             },
             {
               "key": "d",
@@ -1522,7 +1522,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "The ordinary stopping-visibility basis uses an eye at 1.20 m and a low object at 0.15 m. Equal 1.20 m heights instead describe the passing-visibility model; 0.75 m is the separate sag headlight assumption.<p>Source note: Pages 34/37 points 36/144 share the same object-height fact; one paired question also tests the additional driver-eye fact in point 144. Main-clause values are used rather than conflicting annex labels.</p><p>Capsule 4th ed., pp. 34, 37; topic 9 point 36; topic 9 point 144.</p>",
+          "explanation": "Stopping sight distance is measured from a driver's eye height of 1.2 m to an object 15 cm (0.15 m) above the road surface; for overtaking, the object height is also 1.2 m.<p>Capsule 4th ed., pp. 34, 37; topic 9 point 36; topic 9 point 144.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1542,27 +1542,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00039",
           "src": "CAP4-09-00039",
-          "text": "Which height is the NRS 2070 section 24.6 lamp-height input in a valley-curve headlight visibility calculation?",
+          "text": "In valley curve design, the height of the headlight above the road surface is taken as ______.",
           "options": [
             {
               "key": "a",
-              "text": "1.20 m above the road"
+              "text": "0.15 m"
             },
             {
               "key": "b",
-              "text": "0.15 m above the road"
+              "text": "1.2 m"
             },
             {
               "key": "c",
-              "text": "0.75 m above the road"
+              "text": "0.75 m"
             },
             {
               "key": "d",
-              "text": "1.50 m above the road"
+              "text": "1.5 m"
             }
           ],
           "answer": "c",
-          "explanation": "The sag headlight model uses a lamp height of 0.75 m and its stated beam-angle convention. This is neither driver eye height nor stopping-object height; substituting either changes the night-visibility geometry.<p>Capsule 4th ed., p. 34; topic 9 point 38.</p>",
+          "explanation": "Valley curves are designed for night visibility, with the headlight 0.75 m above the road and the beam inclined 1° upward, so that the lit length equals the stopping sight distance.<p>Capsule 4th ed., p. 34; topic 9 point 38.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1580,27 +1580,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00110",
           "src": "CAP4-09-00110",
-          "text": "For a vehicle following a banked horizontal curve, how does appropriate superelevation help supply the required inward acceleration?",
+          "text": "As per IRC, superelevation is provided on a horizontal curve in order to counteract the ______.",
           "options": [
             {
               "key": "a",
-              "text": "The required centripetal acceleration becomes exactly zero"
+              "text": "Braking force"
             },
             {
               "key": "b",
-              "text": "The vehicle's weight acquires an outward horizontal component"
+              "text": "Force of gravity"
             },
             {
               "key": "c",
-              "text": "The road's normal reaction gains an inward horizontal component"
+              "text": "Centrifugal force"
             },
             {
               "key": "d",
-              "text": "Longitudinal braking replaces every lateral force"
+              "text": "Wind force"
             }
           ],
           "answer": "c",
-          "explanation": "Banking tilts the normal reaction, giving an inward component that helps provide centripetal force and can reduce lateral-friction demand. 'Counteracting centrifugal force' is a rotating-frame shorthand, not elimination of turning acceleration.<p>Capsule 4th ed., p. 36; topic 9 point 106.</p>",
+          "explanation": "On a curve the centrifugal force pushes vehicles outward; raising the outer edge lets part of the vehicle's weight counteract it, reducing reliance on side friction.<p>Capsule 4th ed., p. 36; topic 9 point 106.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1613,32 +1613,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00117",
           "src": "CAP4-09-00117",
-          "text": "A simple circular curve has radius 100 m, deflection 60 degrees and PC chainage 1000 m. Define IP chainage along the incoming tangent and midpoint chainage along the arc. Approximately how much greater is the former?",
+          "text": "The relation between the chainage of the mid-ordinate (MO) point and that of the intersection point (IP) of a simple curve is ______.",
           "options": [
             {
               "key": "a",
-              "text": "5.375 m"
+              "text": "\\(\\mathrm{IP} \\gt \\mathrm{MO}\\)"
             },
             {
               "key": "b",
-              "text": "52.360 m"
+              "text": "\\(\\mathrm{IP} \\lt \\mathrm{MO}\\)"
             },
             {
               "key": "c",
-              "text": "57.735 m"
+              "text": "\\(\\mathrm{IP} = \\mathrm{MO}\\)"
             },
             {
               "key": "d",
-              "text": "10.750 m"
+              "text": "\\(\\mathrm{IP} = 2\\,\\mathrm{MO}\\)"
             }
           ],
           "answer": "a",
-          "explanation": "On the tangent convention, the IP chainage is \\[\\begin{aligned} &amp;1000 + 100\\tan 30^\\circ \\\\ &amp;= 1057.735\\ \\text{m} \\end{aligned}\\] The arc midpoint is at \\[\\begin{aligned} &amp;1000 + 100 \\times \\dfrac{\\pi}{6} \\\\ &amp;= 1052.360\\ \\text{m} \\end{aligned}\\] Their difference is 5.375 m; IP is not itself a station on the circular road alignment.<p>Source note: Page 36 point 113: &#39;chainage of mid ordinate&#39; is not a precise point definition. The question explicitly means the arc midpoint at the mid-ordinate and defines tangent IP stationing; other interpretations remain unsupported.</p><p>Capsule 4th ed., p. 36; topic 9 point 113.</p>",
+          "explanation": "The chainage of the intersection point is carried along the tangent length \\(R\\tan\\dfrac{\\Delta}{2}\\), whereas the curve midpoint is reached along the shorter arc \\(\\dfrac{R\\Delta}{2}\\), so the IP has the greater chainage.<p>Capsule 4th ed., p. 36; topic 9 point 113.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1651,32 +1651,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00118",
           "src": "CAP4-09-00118",
-          "text": "A symmetric parabolic camber has elevation z = z0 - a*x squared, with a positive and x measured transversely from the crown. Where is the magnitude of the local cross-slope greatest?",
+          "text": "On a pavement with parabolic camber, the angle of inclination of vehicles is more at the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Halfway between each edge and the crown"
+              "text": "Centre line"
             },
             {
               "key": "b",
-              "text": "At the crown"
+              "text": "Crown"
             },
             {
               "key": "c",
-              "text": "Equally at every transverse point"
+              "text": "Quarter points"
             },
             {
               "key": "d",
-              "text": "At the pavement edges"
+              "text": "Edges"
             }
           ],
           "answer": "d",
-          "explanation": "Differentiation gives local slope -2ax, whose magnitude increases with distance from the crown. The greatest cross-slope is therefore at the edges; the crown slope is zero. Actual vehicle roll also depends on tyre spacing and suspension.<p>Capsule 4th ed., p. 36; topic 9 point 114.</p>",
+          "explanation": "A parabolic camber is flat at the crown and becomes steeper towards the edges, so vehicles near the edges lean the most.<p>Capsule 4th ed., p. 36; topic 9 point 114.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1689,32 +1689,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00123",
           "src": "CAP4-09-00123",
-          "text": "A bituminous road's ordinary NRS 2070 crossfall is 2.5%. What is wrong with calling 7% its universal minimum camber or curve crossfall?",
+          "text": "The minimum superelevation on a road curve is equal to the ______.",
           "options": [
             {
               "key": "a",
-              "text": "It understates ordinary camber, which is 10% on every bituminous road"
+              "text": "Longitudinal gradient"
             },
             {
               "key": "b",
-              "text": "It confuses ordinary drainage crossfall with a conditional superelevation maximum"
+              "text": "Camber slope"
             },
             {
               "key": "c",
-              "text": "It should add 7 percentage points to ordinary camber on every horizontal curve"
+              "text": "Zero slope"
             },
             {
               "key": "d",
-              "text": "It uses a maximum value that applies to longitudinal gradient instead of crossfall"
+              "text": "Maximum superelevation"
             }
           ],
           "answer": "b",
-          "explanation": "NRS Table 11-3 gives 2.5% ordinary bituminous camber; section 11.6 uses 7% as a maximum in specified terrain/snow conditions. Minimum drainage needs and the curve design procedure are distinct from that upper limit.<p>Source note: Page 36 point 118&#39;s &#39;(7%)&#39; is not a universal minimum. The exact minimum curve treatment needs the applicable procedure; no automatic 7% floor is imposed.</p><p>Capsule 4th ed., p. 36; topic 9 point 118.</p>",
+          "explanation": "On a curve the superelevation is never less than the normal camber, otherwise the outer half would slope outward, so the minimum superelevation equals the camber slope.<p>Capsule 4th ed., p. 36; topic 9 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1727,32 +1727,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00124",
           "src": "CAP4-09-00124",
-          "text": "Which pairing correctly distinguishes the maximum superelevation limits stated in NRS 2070 section 11.6?",
+          "text": "The maximum superelevation on road curves in plain and rolling terrain is ______.",
           "options": [
             {
               "key": "a",
-              "text": "10% in plain/rolling or snowbound areas; 7% in non-snowbound hills"
+              "text": "10%"
             },
             {
               "key": "b",
-              "text": "7% in plain/rolling or snowbound areas; 10% in non-snowbound hills"
+              "text": "7%"
             },
             {
               "key": "c",
-              "text": "10% in every area; ordinary camber is also 10%"
+              "text": "15%"
             },
             {
               "key": "d",
-              "text": "7% in every area; no different hill provision"
+              "text": "4%"
             }
           ],
           "answer": "b",
-          "explanation": "The stated edition uses a 7% cap in plain/rolling and snowbound conditions and permits 10% in non-snowbound hills. These are upper bounds within the design procedure, not target crossfalls to be applied to every curve.<p>Capsule 4th ed., p. 36; topic 9 point 118.</p>",
+          "explanation": "Superelevation is limited to 7% in plain and rolling terrain so that slow vehicles do not slide inward; the minimum superelevation equals the camber.<p>Capsule 4th ed., p. 36; topic 9 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1770,27 +1770,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00132",
           "src": "CAP4-09-00132",
-          "text": "Two grade tangents have inclinations arctan(g1) and arctan(g2), where signed grades are decimal fractions. What is the exact magnitude of their angular change?",
+          "text": "The angle measured at the change of direction of two gradients is called the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Arctan of the absolute difference between g2 and g1 without a correction"
+              "text": "Angle of repose"
             },
             {
               "key": "b",
-              "text": "Absolute value of the average of the two tangent inclinations"
+              "text": "Camber angle"
             },
             {
               "key": "c",
-              "text": "Sum of the absolute values of arctan(g2) and arctan(g1) for every sign pair"
+              "text": "Superelevation angle"
             },
             {
               "key": "d",
-              "text": "Absolute difference between arctan(g2) and arctan(g1)"
+              "text": "Deviation angle"
             }
           ],
           "answer": "d",
-          "explanation": "The deviation angle is the magnitude of the difference between the tangent directions. For small grades it is approximately the absolute algebraic grade difference in radians; percentage-point differences must first be divided by 100.<p>Source note: Page 36 point 126: uses deviation angle rather than the vague &#39;deviated angle&#39;, and distinguishes exact angle from the small-grade approximation.</p><p>Capsule 4th ed., p. 36; topic 9 point 126.</p>",
+          "explanation": "Where two gradients meet, the change of direction, \\(N = g_1 - g_2\\) taken algebraically, is the deviation angle; it decides the length and type of the vertical curve.<p>Capsule 4th ed., p. 36; topic 9 point 126.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1803,32 +1803,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00136",
           "src": "CAP4-09-00136",
-          "text": "Which selected control most directly coordinates required sight distance, horizontal curvature and transition-length demand in highway geometric design?",
+          "text": "The most governing factor required for the geometric design of roads is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Highest individual spot speed in a short survey"
+              "text": "Soil type"
             },
             {
               "key": "b",
-              "text": "Posted speed limit without checking the design basis"
+              "text": "Rainfall"
             },
             {
               "key": "c",
-              "text": "Design speed"
+              "text": "Speed of vehicles"
             },
             {
               "key": "d",
-              "text": "Mean journey speed recorded during congestion"
+              "text": "Weight of vehicles"
             }
           ],
           "answer": "c",
-          "explanation": "Design speed enters stopping, curvature and transition calculations directly. It is a major coordinating control, but vehicle dimensions, terrain, drainage, traffic and vulnerable road users also govern the design; speed is not the only input.<p>Capsule 4th ed., p. 36; topic 9 point 129.</p>",
+          "explanation": "Design speed fixes the sight distances, curve radii, superelevation and transition lengths, so the speed of vehicles governs geometric design; vehicle weight governs pavement design.<p>Capsule 4th ed., p. 36; topic 9 point 129.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1841,32 +1841,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00146",
           "src": "CAP4-09-00146",
-          "text": "Where curvature compensation applies, use NRS 2070 section 10.1.2: min[(30+R)/R, 75/R] percent. For R = 600 m, what deduction applies?",
+          "text": "The grade compensation required for a curve of radius 600 m is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.0125 percentage point"
+              "text": "0.0125%"
             },
             {
               "key": "b",
-              "text": "0.125 percentage point"
+              "text": "0.125%"
             },
             {
               "key": "c",
-              "text": "12.5 percentage points"
+              "text": "1.25%"
             },
             {
               "key": "d",
-              "text": "1.05 percentage points"
+              "text": "1.05%"
             }
           ],
           "answer": "b",
-          "explanation": "The two candidates are \\[\\dfrac{630}{600} = 1.05\\%\\] \\[\\dfrac{75}{600} = 0.125\\%\\] and the smaller controls. This is a percentage-point grade deduction, not the final grade. The clause says compensation is unnecessary for grades below 4%.<p>Capsule 4th ed., p. 37; topic 9 point 142.</p>",
+          "explanation": "Grade compensation is the smaller of \\(\\dfrac{30 + R}{R}\\)% and \\(\\dfrac{75}{R}\\)%. Here \\(\\dfrac{630}{600} = 1.05\\)% and \\(\\dfrac{75}{600} = 0.125\\)%, so the compensation is 0.125%.<p>Capsule 4th ed., p. 37; topic 9 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1884,27 +1884,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00147",
           "src": "CAP4-09-00147",
-          "text": "If the otherwise applicable gradient is 6.000% and a 600 m curve requires a 0.125-percentage-point compensation, what is the compensated gradient?",
+          "text": "The grade compensation on a curve of radius \\(R\\) metres is taken as the lesser of ______.",
           "options": [
             {
               "key": "a",
-              "text": "6.125%"
+              "text": "\\(\\dfrac{75}{R}\\)% and 5%"
             },
             {
               "key": "b",
-              "text": "5.875%"
+              "text": "\\(\\dfrac{30 + R}{R}\\)% and \\(\\dfrac{75}{R}\\)%"
             },
             {
               "key": "c",
-              "text": "0.125%"
+              "text": "\\(\\dfrac{R + 30}{75}\\)% and 1%"
             },
             {
               "key": "d",
-              "text": "5.9925%"
+              "text": "\\(\\dfrac{R}{75}\\)% and \\(\\dfrac{R}{30}\\)%"
             }
           ],
           "answer": "b",
-          "explanation": "Grade compensation is subtracted in percentage points: \\[6.000 - 0.125 = 5.875\\%\\] Multiplying 6% by 0.99875 would incorrectly treat the deduction as 0.125% of the grade instead of an absolute slope reduction.<p>Capsule 4th ed., p. 37; topic 9 point 142.</p>",
+          "explanation": "Curve resistance adds to grade resistance, so the grade on a curve is eased by the smaller of \\(\\dfrac{30 + R}{R}\\)% and \\(\\dfrac{75}{R}\\)%; for a 600 m radius this gives 0.125%.<p>Capsule 4th ed., p. 37; topic 9 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1917,32 +1917,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00148",
           "src": "CAP4-09-00148",
-          "text": "What is the principal drainage purpose of providing ordinary camber on a straight road?",
+          "text": "Camber is provided on roads mainly to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Balance every horizontal-curve centrifugal demand"
+              "text": "Reduce the gradient"
             },
             {
               "key": "b",
-              "text": "Store water at the crown to slow its evaporation"
+              "text": "Counteract centrifugal force"
             },
             {
               "key": "c",
-              "text": "Move surface runoff transversely towards a receiving drainage path"
+              "text": "Drain surface water"
             },
             {
               "key": "d",
-              "text": "Replace the need for a downstream drain outlet"
+              "text": "Increase sight distance"
             }
           ],
           "answer": "c",
-          "explanation": "Camber provides transverse fall to shed surface water towards edges and connected drainage. Crossfall alone does not ensure drainage if shoulders, inlets or outlets are obstructed, and ordinary camber is not the same as curve superelevation.<p>Capsule 4th ed., p. 37; topic 9 point 145.</p>",
+          "explanation": "Camber is the transverse slope from the crown to the edges; its main purpose is to drain rain water quickly off the road surface, while superelevation counters centrifugal force.<p>Capsule 4th ed., p. 37; topic 9 point 145.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1955,32 +1955,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00151",
           "src": "CAP4-09-00151",
-          "text": "On one side of a straight road, a drawing places the road-land boundary 12 m and the building line 18 m from the centreline, measured along the same perpendicular. What setback is specified if its datum is the road-land boundary?",
+          "text": "In highway planning, the setback distance is defined as the distance between the ______.",
           "options": [
             {
               "key": "a",
-              "text": "6 m"
+              "text": "Road land boundary and the building line"
             },
             {
               "key": "b",
-              "text": "12 m"
+              "text": "Carriageway edge and the shoulder edge"
             },
             {
               "key": "c",
-              "text": "30 m"
+              "text": "Two opposite building lines"
             },
             {
               "key": "d",
-              "text": "18 m"
+              "text": "Centre line and the road land boundary"
             }
           ],
           "answer": "a",
-          "explanation": "Both offsets share the same centreline datum and side, so the boundary-to-building setback is \\[18 - 12 = 6\\ \\text{m}\\] The 18 m centreline offset and the 12 m land half-width are different quantities; this is not a horizontal-curve sight setback.<p>Source note: Page 37 point 148: hypothetical drawing dimensions and the setback datum are explicit. They do not prescribe legal setbacks or imply that every Nepal instrument uses this datum.</p><p>Capsule 4th ed., p. 37; topic 9 point 148.</p>",
+          "explanation": "The building line marks how close buildings may be built to the road, and the setback distance is measured from the road land boundary to this building line.<p>Capsule 4th ed., p. 37; topic 9 point 148.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1993,7 +1993,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0902",
-          "kind": "calculation"
+          "kind": "recall"
         }
       ]
     },
@@ -2005,7 +2005,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-02-00130",
           "src": "CAP4-02-00130",
-          "text": "A laboratory follows IS 2720 Part 16:1987 for CBR testing. Which nominal diameter belongs to the circular penetration plunger rather than the specimen mould?",
+          "text": "In the CBR test, the diameter of the cylindrical plunger is ______.",
           "options": [
             {
               "key": "a",
@@ -2025,7 +2025,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Clause 2.2 defines penetration using a circular 50 mm plunger. The 150 mm dimension relates to the specimen/mould, not the penetration tool. Using a different plunger area while retaining the standard reference load invalidates the direct CBR comparison.<p>Source note: Page 9 point 117 is corroborated by archived IS 2720 Part 16:1987 text, clause 2.2. The question tests that edition&#39;s nominal diameter, not current adoption or unverified tolerances.</p><p>Capsule 4th ed., p. 9; topic 2 point 117.</p>",
+          "explanation": "The CBR test forces a plunger of 50 mm diameter into the soil in a 150 mm diameter mould and compares the load with that for a standard crushed stone at the same penetration.<p>Capsule 4th ed., p. 9; topic 2 point 117.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2043,7 +2043,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-02-00153",
           "src": "CAP4-02-00153",
-          "text": "For a remoulded CBR specimen, the selected preparation procedure is IS 2720 Part 8:1983 heavy compaction with a 450 mm drop. Which nominal rammer mass should be selected?",
+          "text": "In the CBR test, the weight of the rammer used for compaction is ______.",
           "options": [
             {
               "key": "a",
@@ -2051,19 +2051,19 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "b",
-              "text": "2.5 kg"
+              "text": "10 kg"
             },
             {
               "key": "c",
-              "text": "4.9 kg"
+              "text": "4.89 kg"
             },
             {
               "key": "d",
-              "text": "4.5 kg"
+              "text": "6.5 kg"
             }
           ],
           "answer": "c",
-          "explanation": "The named heavy-compaction method uses a nominal 4.9 kg rammer and 450 mm drop. IS 2720 Part 16:1987 also permits other specimen preparations, including light or static compaction. CBR alone therefore does not prescribe one rammer mass; the selected preparation method matters.<p>Source note: Page 10 point 135&#39;s unexplained 4.89 kg is not used as an exact apparatus value. This item tests the named heavy-compaction method, not every CBR preparation or a current Nepal adoption claim.</p><p>Capsule 4th ed., p. 10; topic 2 point 135.</p>",
+          "explanation": "For the CBR test the specimen is compacted with the heavy rammer of 4.89 kg; the lighter 2.6 kg rammer belongs to the standard Proctor test.<p>Capsule 4th ed., p. 10; topic 2 point 135.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2081,27 +2081,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00040",
           "src": "CAP4-09-00040",
-          "text": "For VG-binder dense bituminous macadam under DoR SSRBW 2073, Third Amendment 2082, Table 13.29, at what temperature is Marshall stability tested?",
+          "text": "The standard temperature for the Marshall stability test is ______.",
           "options": [
             {
               "key": "a",
-              "text": "25 degrees C"
+              "text": "25°C"
             },
             {
               "key": "b",
-              "text": "60 degrees C"
+              "text": "60°C"
             },
             {
               "key": "c",
-              "text": "135 degrees C"
+              "text": "135°C"
             },
             {
               "key": "d",
-              "text": "35 degrees C"
+              "text": "27°C"
             }
           ],
           "answer": "b",
-          "explanation": "The specified hot DBM Marshall stability condition is 60 degrees C. Cold-mix Marshall procedures can use different curing and test temperatures; 135 degrees C belongs to a separate binder kinematic-viscosity test.<p>Capsule 4th ed., p. 34; topic 9 point 39.</p>",
+          "explanation": "Marshall specimens are kept in a water bath at 60°C, representing a hot pavement in service, before being loaded to failure to find the stability and flow values.<p>Capsule 4th ed., p. 34; topic 9 point 39.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2119,27 +2119,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00041",
           "src": "CAP4-09-00041",
-          "text": "Why must repeated needle-penetration readings be separated from earlier penetration points and the container wall?",
+          "text": "In the penetration test of bitumen, the distance between two test points should be ______.",
           "options": [
             {
               "key": "a",
-              "text": "To compensate automatically for the wrong test temperature"
+              "text": "50 mm"
             },
             {
               "key": "b",
-              "text": "To avoid disturbed material and boundary effects"
+              "text": "10 mm"
             },
             {
               "key": "c",
-              "text": "To force every reading to equal the first result"
+              "text": "1 mm"
             },
             {
               "key": "d",
-              "text": "To convert penetration directly into binder viscosity"
+              "text": "100 mm"
             }
           ],
           "answer": "b",
-          "explanation": "A prior penetration disturbs the nearby specimen, and the wall can influence local response. Independent readings require the spacing prescribed by the identified method; arbitrary spacing does not correct temperature or load errors.<p>Source note: Page 34 point 40 means needle points, not separate samples. Its exact 10 mm claim remains a primary IS 1203 clause check; corrected materials notes explicitly leave 10 versus 15 mm unresolved. No numerical spacing is certified here.</p><p>Capsule 4th ed., p. 34; topic 9 point 40.</p>",
+          "explanation": "Successive needle penetrations are made 10 mm apart, and away from the container wall, so that each reading is taken in undisturbed bitumen.<p>Capsule 4th ed., p. 34; topic 9 point 40.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2152,16 +2152,16 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0903",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00042",
           "src": "CAP4-09-00042",
-          "text": "Which pavement binder is principally an organic hydrocarbon material rather than a hydraulic mineral binder?",
+          "text": "The organic binding material used in road pavement is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Ground-granulated slag binder"
+              "text": "Gypsum"
             },
             {
               "key": "b",
@@ -2169,15 +2169,15 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "c",
-              "text": "Hydraulic lime"
+              "text": "Lime"
             },
             {
               "key": "d",
-              "text": "Portland cement"
+              "text": "Cement"
             }
           ],
           "answer": "b",
-          "explanation": "Bitumen is an organic hydrocarbon-rich binder whose viscosity changes strongly with temperature. Cement and hydraulic lime develop binding through reactions involving water; their setting mechanism is not that of bitumen.<p>Source note: Pages 34/37 points 41/149 duplicate the same organic-binder fact and are jointly covered.</p><p>Capsule 4th ed., pp. 34, 37; topic 9 point 41; topic 9 point 149.</p>",
+          "explanation": "Bitumen is a hydrocarbon, and hence organic, binder obtained from petroleum; cement, lime and gypsum are inorganic mineral binders.<p>Capsule 4th ed., pp. 34, 37; topic 9 point 41; topic 9 point 149.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2197,7 +2197,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00043",
           "src": "CAP4-09-00043",
-          "text": "A standard bitumen needle-penetration test reports 62 penetration units. What physical penetration does this represent?",
+          "text": "If the penetration grade of a bitumen is 62, its penetration value is ______.",
           "options": [
             {
               "key": "a",
@@ -2209,15 +2209,15 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "c",
-              "text": "0.62 mm"
+              "text": "62 mm"
             },
             {
               "key": "d",
-              "text": "62 mm"
+              "text": "0.62 mm"
             }
           ],
           "answer": "a",
-          "explanation": "One penetration unit is 0.1 mm, so \\[62 \\times 0.1 = 6.2\\ \\text{mm}\\] The reading is a consistency measurement under specified conditions, not itself a complete grade range or a viscosity measurement.<p>Source note: Page 34 point 42 and page 36 point 134: full page text restores both /10 denominators. Shared unit fact is covered once with the 62-unit application; DoR Table 6.12 confirms dmm units.</p><p>Capsule 4th ed., pp. 34, 36; topic 9 point 42; topic 9 point 134.</p>",
+          "explanation": "Penetration is expressed in units of \\(\\dfrac{1}{10}\\) mm, so a penetration of 62 means \\(62 \\times 0.1 = 6.2\\) mm.<p>Capsule 4th ed., pp. 34, 36; topic 9 point 42; topic 9 point 134.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2237,11 +2237,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00044",
           "src": "CAP4-09-00044",
-          "text": "For VG20 binder after RTFO conditioning, what minimum ductility at 25 degrees C is specified in DoR SSRBW 2073, Third Amendment 2082, Table 6.12?",
+          "text": "The ductility value of bitumen for suitability in road construction should not be less than ______.",
           "options": [
             {
               "key": "a",
-              "text": "75 cm"
+              "text": "25 cm"
             },
             {
               "key": "b",
@@ -2249,15 +2249,15 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "c",
-              "text": "40 cm"
+              "text": "75 cm"
             },
             {
               "key": "d",
-              "text": "25 cm"
+              "text": "100 cm"
             }
           ],
           "answer": "b",
-          "explanation": "The specified RTFO-residue minima for VG10, VG20, VG30 and VG40 are respectively 75, 50, 40 and 25 cm at 25 degrees C. Thus 50 cm is valid here for VG20 residue, not as a universal road-bitumen requirement.<p>Source note: Pages 34/36 points 43/124 repeat an unqualified 50 cm claim. The question supplies the product, conditioning, temperature and edition needed for a defensible value.</p><p>Capsule 4th ed., pp. 34, 36; topic 9 point 43; topic 9 point 124.</p>",
+          "explanation": "Bitumen must stretch without breaking to resist cracking, so a ductility of at least 50 cm, measured by pulling a standard briquette at 5 cm per minute, is required for road work.<p>Capsule 4th ed., pp. 34, 36; topic 9 point 43; topic 9 point 124.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2277,27 +2277,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00045",
           "src": "CAP4-09-00045",
-          "text": "A conventional ductility test pulls a bitumen briquette at 5 cm/min. What pulling speed should an instrument graduated in millimetres per minute indicate?",
+          "text": "The rate of stretching of bitumen in the ductility test is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.5 mm/min"
+              "text": "10 cm/min"
             },
             {
               "key": "b",
-              "text": "5 mm/min"
+              "text": "1 cm/min"
             },
             {
               "key": "c",
-              "text": "500 mm/min"
+              "text": "50 cm/min"
             },
             {
               "key": "d",
-              "text": "50 mm/min"
+              "text": "5 cm/min"
             }
           ],
           "answer": "d",
-          "explanation": "Since 1 cm equals 10 mm, 5 cm/min equals 50 mm/min. Ductility is extension at break, so the specified pulling rate, temperature and specimen conditioning must accompany any comparison of results.<p>Capsule 4th ed., p. 34; topic 9 point 44.</p>",
+          "explanation": "In the ductility test, the briquette is pulled apart at 5 cm per minute in a water bath at the specified temperature, and the distance at which it breaks is the ductility.<p>Capsule 4th ed., p. 34; topic 9 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2310,32 +2310,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0903",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00046",
           "src": "CAP4-09-00046",
-          "text": "Which industrial feedstock is the principal source of conventional refinery paving bitumen?",
+          "text": "Bitumen is obtained from ______.",
           "options": [
             {
               "key": "a",
-              "text": "Calcined limestone"
+              "text": "Wood"
             },
             {
               "key": "b",
-              "text": "Coal carbonisation products"
+              "text": "Coal"
             },
             {
               "key": "c",
-              "text": "Crude petroleum"
+              "text": "Petroleum"
             },
             {
               "key": "d",
-              "text": "Wood-distillation condensate"
+              "text": "Limestone"
             }
           ],
           "answer": "c",
-          "explanation": "Conventional refinery bitumen is obtained from suitable petroleum fractions, commonly as a heavy refinery residue. Coal tar is a different material with a different production route; naturally occurring bitumens also exist.<p>Capsule 4th ed., p. 34; topic 9 point 45.</p>",
+          "explanation": "Bitumen is the heavy residue left after fractional distillation of crude petroleum; tar is obtained from the destructive distillation of coal or wood.<p>Capsule 4th ed., p. 34; topic 9 point 45.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2353,27 +2353,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00047",
           "src": "CAP4-09-00047",
-          "text": "An engineer must select a job-mix binder content and independently check the binder percentage in a delivered asphalt sample. Which pairing is appropriate?",
+          "text": "The bitumen content of a bituminous mix is determined by the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Needle penetration; Marshall peak stability alone"
+              "text": "Penetration test"
             },
             {
               "key": "b",
-              "text": "Marshall trial-mix design; extraction or corrected ignition analysis"
+              "text": "Marshall test"
             },
             {
               "key": "c",
-              "text": "Solvent extraction alone; aggregate impact testing"
+              "text": "Softening point test"
             },
             {
               "key": "d",
-              "text": "Ductility measurement; ring-and-ball softening point"
+              "text": "Ductility test"
             }
           ],
           "answer": "b",
-          "explanation": "Marshall design compares trial binder contents against stability, flow and volumetric requirements. Actual content of a produced mix is measured separately by a suitable extraction or ignition method with applicable corrections.<p>Source note: Page 34 point 46 confuses selecting optimum content with measuring actual content; corrected materials notes, materials-marshall-design-and-content.</p><p>Capsule 4th ed., p. 34; topic 9 point 46.</p>",
+          "explanation": "In Marshall mix design, specimens are made at several bitumen contents and tested for stability, flow, density and voids, and the optimum bitumen content is chosen from these results.<p>Capsule 4th ed., p. 34; topic 9 point 46.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2386,32 +2386,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0903",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00048",
           "src": "CAP4-09-00048",
-          "text": "In solvent-based centrifugal asphalt extraction, what is the principal function of rotation?",
+          "text": "The bitumen extraction test is typically done at ______.",
           "options": [
             {
               "key": "a",
-              "text": "Burn away the binder to leave ignition-test residue"
+              "text": "36,000 rpm and 163°C"
             },
             {
               "key": "b",
-              "text": "Measure needle penetration under a standard load"
+              "text": "36 rpm and 60°C"
             },
             {
               "key": "c",
-              "text": "Compact the specimen to its Marshall design density"
+              "text": "360 rpm and 25°C"
             },
             {
               "key": "d",
-              "text": "Separate binder-bearing solvent from the aggregate"
+              "text": "3600 rpm and 110°C"
             }
           ],
           "answer": "d",
-          "explanation": "Centrifugal extraction removes binder solution from aggregate for a corrected mass-balance determination. Rotation settings, solvent handling and conditioning follow the specific method and apparatus; ignition is a different procedure.<p>Source note: Page 34 point 47 gives 3600 rpm at 110 degrees C without a method or apparatus. This pairing is not verified and is not repeated as an operating instruction; parent should locate the exact extraction standard.</p><p>Capsule 4th ed., p. 34; topic 9 point 47.</p>",
+          "explanation": "In the centrifuge extraction test, the mix is soaked in solvent and spun at 3600 rpm so that the bitumen-laden solvent is thrown out; the remaining aggregate is dried at 110°C and weighed to find the bitumen content.<p>Capsule 4th ed., p. 34; topic 9 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2424,32 +2424,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0903",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00049",
           "src": "CAP4-09-00049",
-          "text": "Which maximum water content applies to RC and MC cutback bitumens in DoR SSRBW 2073, Third Amendment 2082, Table 6.13?",
+          "text": "The maximum moisture content in bitumen is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.5% by mass"
+              "text": "2%"
             },
             {
               "key": "b",
-              "text": "5.0% by mass"
+              "text": "10%"
             },
             {
               "key": "c",
-              "text": "2.0% by mass"
+              "text": "5%"
             },
             {
               "key": "d",
-              "text": "0.2% by mass"
+              "text": "0.2%"
             }
           ],
           "answer": "d",
-          "explanation": "The table limits water to 0.2% by mass in RC/MC cutbacks, while SC cutbacks have a separate 0.5% value. A complete bitumen emulsion intentionally contains water and cannot be assessed using this cutback limit.<p>Source note: Page 34 point 48 is made product-specific; no blanket 0.2% limit is claimed for every paving binder.</p><p>Capsule 4th ed., p. 34; topic 9 point 48.</p>",
+          "explanation": "Water in bitumen causes foaming when the bitumen is heated, so the moisture content is limited to 0.2% by weight.<p>Capsule 4th ed., p. 34; topic 9 point 48.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2467,7 +2467,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00050",
           "src": "CAP4-09-00050",
-          "text": "Which aggregate test assesses susceptibility to weathering-type breakdown through repeated sulfate immersion and drying cycles?",
+          "text": "The test used to measure the weathering of aggregate is the ______.",
           "options": [
             {
               "key": "a",
@@ -2475,19 +2475,19 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "b",
-              "text": "Los Angeles abrasion test"
+              "text": "Abrasion test"
             },
             {
               "key": "c",
-              "text": "Aggregate crushing value test"
+              "text": "Crushing test"
             },
             {
               "key": "d",
-              "text": "Flakiness index test"
+              "text": "Impact test"
             }
           ],
           "answer": "a",
-          "explanation": "The sulfate soundness test subjects accessible pores to repeated salt crystallisation and measures resulting breakdown. It evaluates a durability mechanism; crushing and abrasion tests apply different mechanical actions.<p>Capsule 4th ed., p. 34; topic 9 point 49.</p>",
+          "explanation": "In the soundness test, aggregate is soaked in sodium or magnesium sulphate solution and dried repeatedly; the loss in weight shows its resistance to weathering.<p>Capsule 4th ed., p. 34; topic 9 point 49.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2505,27 +2505,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00051",
           "src": "CAP4-09-00051",
-          "text": "For aggregates of otherwise comparable quality, which property is most directly assessed by an abrasion-loss test?",
+          "text": "The abrasion test on aggregate is done to determine its ______.",
           "options": [
             {
               "key": "a",
-              "text": "Resistance to wear and mechanical degradation"
+              "text": "Hardness"
             },
             {
               "key": "b",
-              "text": "Resistance to sulfate-crystallisation weathering"
+              "text": "Toughness"
             },
             {
               "key": "c",
-              "text": "Resistance to crushing under a gradually applied load"
+              "text": "Crushing strength"
             },
             {
               "key": "d",
-              "text": "Proportion of particles outside a prescribed shape ratio"
+              "text": "Soundness"
             }
           ],
           "answer": "a",
-          "explanation": "Abrasion testing indicates resistance to wear, commonly described as aggregate hardness. The Los Angeles method also includes impact and fragmentation, so its loss is not an isolated mineral scratch-hardness measurement.<p>Capsule 4th ed., p. 34; topic 9 point 50.</p>",
+          "explanation": "The abrasion test measures the resistance of aggregate to wear by rubbing and grinding, which indicates its hardness; the impact test measures toughness and the crushing test strength.<p>Capsule 4th ed., p. 34; topic 9 point 50.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2538,12 +2538,12 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0903",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00052",
           "src": "CAP4-09-00052",
-          "text": "Under IS 2386 Part IV:1963, including the October 1983 amendment, which sieve separates the Los Angeles post-test loss fraction from retained material?",
+          "text": "The sieve size used in the Los Angeles abrasion test is ______.",
           "options": [
             {
               "key": "a",
@@ -2559,11 +2559,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "d",
-              "text": "10 mm"
+              "text": "0.075 mm"
             }
           ],
           "answer": "c",
-          "explanation": "The LA post-test assessment uses the 1.7 mm sieve. The 2.36 mm sieve belongs to the conventional crushing/impact fines assessment; preparation sieves should not be confused with the final loss sieve.<p>Source note: Page 34 point 51; identified reference IS 2386 Part IV:1963 as used in corrected materials notes.</p><p>Capsule 4th ed., p. 34; topic 9 point 51.</p>",
+          "explanation": "After the specified revolutions with steel balls, the aggregate is sieved on the 1.7 mm sieve, and the percentage passing is the Los Angeles abrasion value.<p>Capsule 4th ed., p. 34; topic 9 point 51.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2581,27 +2581,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00054",
           "src": "CAP4-09-00054",
-          "text": "Two bitumen samples are compared at the same temperature and test conditions. Which result directly quantifies their resistance to flow?",
+          "text": "The viscosity test is used to determine the ______ of bitumen.",
           "options": [
             {
               "key": "a",
-              "text": "Ring-and-ball softening point"
+              "text": "Specific gravity"
             },
             {
               "key": "b",
-              "text": "Dynamic viscosity"
+              "text": "Consistency and flow resistance"
             },
             {
               "key": "c",
-              "text": "Needle penetration depth"
+              "text": "Ductility"
             },
             {
               "key": "d",
-              "text": "Ductility at rupture"
+              "text": "Flash point"
             }
           ],
           "answer": "b",
-          "explanation": "Dynamic viscosity relates shear stress to the rate of deformation in the stated rheological test. Penetration, ductility and softening point are useful binder indices but measure different responses rather than viscosity directly.<p>Capsule 4th ed., p. 34; topic 9 point 53.</p>",
+          "explanation": "Viscosity is the resistance of bitumen to flow; the viscosity test measures it directly and so defines the consistency of the binder at the test temperature.<p>Capsule 4th ed., p. 34; topic 9 point 53.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2614,32 +2614,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0903",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00055",
           "src": "CAP4-09-00055",
-          "text": "Which test temperature is specified for absolute viscosity of VG paving bitumen in DoR SSRBW 2073, Third Amendment 2082, Table 6.12?",
+          "text": "The vacuum capillary tube viscometer test is suitable for a temperature range of ______.",
           "options": [
             {
               "key": "a",
-              "text": "60 degrees C"
+              "text": "\\(20 \\pm 0.1\\)°C"
             },
             {
               "key": "b",
-              "text": "25 degrees C"
+              "text": "\\(163 \\pm 1\\)°C"
             },
             {
               "key": "c",
-              "text": "20 degrees C"
+              "text": "\\(135 \\pm 5\\)°C"
             },
             {
               "key": "d",
-              "text": "135 degrees C"
+              "text": "\\(0 \\pm 1\\)°C"
             }
           ],
           "answer": "a",
-          "explanation": "The VG table specifies absolute viscosity at 60 degrees C and kinematic viscosity at 135 degrees C. Binder viscosity is highly temperature-dependent, so a quoted apparatus range or bath tolerance cannot replace the specified test temperature.<p>Source note: Page 34 point 54&#39;s 20 +/- 0.1 degrees C is not adopted as a universal vacuum-capillary condition. The exact instrument-range/tolerance statement remains unverified; the question uses the identified VG test requirement.</p><p>Capsule 4th ed., p. 34; topic 9 point 54.</p>",
+          "explanation": "In the vacuum capillary tube viscometer the bitumen is drawn through a calibrated capillary by partial vacuum, with the bath held at \\(20 \\pm 0.1\\)°C, since viscosity changes sharply with temperature.<p>Capsule 4th ed., p. 34; topic 9 point 54.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2657,27 +2657,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00082",
           "src": "CAP4-09-00082",
-          "text": "A CBR test gives a larger ratio at 5 mm penetration than at 2.5 mm. What is the first required response under IS 2720 Part 16:1987?",
+          "text": "In the CBR test, if the CBR value at 5 mm penetration is greater than that at 2.5 mm, ______.",
           "options": [
             {
               "key": "a",
-              "text": "Automatically select the larger value without repetition"
+              "text": "The soil is rejected"
             },
             {
               "key": "b",
-              "text": "Average both ratios and report the average"
+              "text": "The average of the two is adopted"
             },
             {
               "key": "c",
-              "text": "Repeat the test to check the unusual ordering"
+              "text": "The test should be repeated"
             },
             {
               "key": "d",
-              "text": "Immediately discard the 5 mm value without checking"
+              "text": "The 2.5 mm value is adopted directly"
             }
           ],
           "answer": "c",
-          "explanation": "The usual reported CBR is based on 2.5 mm. When 5 mm gives the larger ratio, repeat the test; if the same ordering is confirmed, use the 5 mm value. Averaging the two ratios is not that rule.<p>Capsule 4th ed., p. 35; topic 9 point 79.</p>",
+          "explanation": "The CBR at 2.5 mm is normally the higher value; if the 5 mm value is greater, the test is repeated, and if the result is confirmed, the 5 mm value is adopted.<p>Capsule 4th ed., p. 35; topic 9 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2690,32 +2690,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0903",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00083",
           "src": "CAP4-09-00083",
-          "text": "After a required repeat CBR test confirms that the 5 mm ratio exceeds the 2.5 mm ratio, which result is adopted under IS 2720 Part 16:1987?",
+          "text": "If a repeated CBR test again gives a higher value at 5 mm penetration than at 2.5 mm, the CBR adopted is the value at ______.",
           "options": [
             {
               "key": "a",
-              "text": "The confirmed 5 mm CBR"
+              "text": "5 mm"
             },
             {
               "key": "b",
-              "text": "The mean of the two penetration ratios"
+              "text": "The average of both penetrations"
             },
             {
               "key": "c",
-              "text": "The 2.5 mm CBR regardless of the repeat"
+              "text": "2.5 mm"
             },
             {
               "key": "d",
-              "text": "The difference between the two ratios"
+              "text": "7.5 mm"
             }
           ],
           "answer": "a",
-          "explanation": "A confirmed higher ratio at 5 mm is adopted after repetition. This preserves the exception to the ordinary 2.5 mm choice and distinguishes verification of the unusual result from automatically taking the largest first-run number.<p>Source note: Page 35 point 79: split the repeat action and subsequent confirmed-result decision so the procedural qualification is tested explicitly.</p><p>Capsule 4th ed., p. 35; topic 9 point 79.</p>",
+          "explanation": "When the value at 5 mm exceeds that at 2.5 mm, the test is repeated; if the repeat confirms it, the higher 5 mm value is adopted as the CBR.<p>Capsule 4th ed., p. 35; topic 9 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2728,24 +2728,24 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0903",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00084",
           "src": "CAP4-09-00084",
-          "text": "What nominal constant plunger penetration rate is used in the IS 2720 Part 16:1987 laboratory CBR test?",
+          "text": "In the CBR test, the rate of penetration of the plunger is ______.",
           "options": [
             {
               "key": "a",
-              "text": "2.5 mm/min"
+              "text": "5 mm/min"
             },
             {
               "key": "b",
-              "text": "1.25 mm/s"
+              "text": "2.5 mm/min"
             },
             {
               "key": "c",
-              "text": "5.0 mm/min"
+              "text": "0.5 mm/min"
             },
             {
               "key": "d",
@@ -2753,7 +2753,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The nominal penetration rate is 1.25 mm per minute. The specified loading rate makes specimens comparable; confusing minutes with seconds changes the test rate sixtyfold and cannot be treated as a unit-only reporting difference.<p>Capsule 4th ed., p. 35; topic 9 point 80.</p>",
+          "explanation": "The plunger is driven into the soil at 1.25 mm per minute, and the loads at 2.5 mm and 5 mm penetration are compared with the standard loads to find the CBR.<p>Capsule 4th ed., p. 35; topic 9 point 80.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2771,27 +2771,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00106",
           "src": "CAP4-09-00106",
-          "text": "In DoR SSRBW 2073, Third Amendment 2082, Table 6.12, penetration is measured under 100 g total loading for 5 s. Which specimen temperature completes that test basis?",
+          "text": "The specified temperature in the penetration test of bitumen is ______.",
           "options": [
             {
               "key": "a",
-              "text": "27 degrees C"
+              "text": "27°C"
             },
             {
               "key": "b",
-              "text": "60 degrees C"
+              "text": "60°C"
             },
             {
               "key": "c",
-              "text": "135 degrees C"
+              "text": "135°C"
             },
             {
               "key": "d",
-              "text": "25 degrees C"
+              "text": "25°C"
             }
           ],
           "answer": "d",
-          "explanation": "The stated penetration condition is 25 degrees C, 100 g and 5 s, reported in 0.1 mm units. The other temperatures occur in different binder procedures; temperature changes would make a direct penetration comparison invalid.<p>Source note: Page 36 point 102: missing temperature unit supplied; DoR SSRBW 2073, Third Amendment 2082, Table 6.12 via corrected materials notes.</p><p>Capsule 4th ed., p. 36; topic 9 point 102.</p>",
+          "explanation": "Penetration is measured at 25°C with a 100 g needle load applied for 5 seconds; the depth of penetration in tenths of a millimetre is the penetration value.<p>Capsule 4th ed., p. 36; topic 9 point 102.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2809,27 +2809,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00121",
           "src": "CAP4-09-00121",
-          "text": "Under IS 383:1970's concrete-wearing-surface aggregate requirement, how is an aggregate impact value of exactly 30% treated with respect to that limit alone?",
+          "text": "The aggregate impact value for the surface layer of a road pavement should be less than ______.",
           "options": [
             {
               "key": "a",
-              "text": "It fails because the limit is strictly below 30%"
+              "text": "45%"
             },
             {
               "key": "b",
-              "text": "It must instead be assessed against the other-concrete limit of 45%"
+              "text": "10%"
             },
             {
               "key": "c",
-              "text": "It meets the not-exceeding-30% limit"
+              "text": "30%"
             },
             {
               "key": "d",
-              "text": "It fails because 25% is the wearing-surface limit"
+              "text": "50%"
             }
           ],
           "answer": "c",
-          "explanation": "When AIV is used as the section 3.4 alternative to the crushing-value test, concrete-wearing aggregate must not exceed 30% by mass. Equality meets that criterion alone. The separate 45% other-concrete value is not the wearing-surface limit.<p>Source note: Page 36 point 116: the source&#39;s strict less-than sign and generic surface-layer scope are corrected using the IS 383:1970 reference in the materials notes.</p><p>Capsule 4th ed., p. 36; topic 9 point 116.</p>",
+          "explanation": "Surface-course aggregate takes the direct blows of the wheels, so it must be tough, with an impact value below 30%; base-course aggregate may have up to 45%.<p>Capsule 4th ed., p. 36; topic 9 point 116.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2842,32 +2842,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0903",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00128",
           "src": "CAP4-09-00128",
-          "text": "Under the default IS 383:1970 section 3.5 Los Angeles abrasion limit for concrete wearing-surface aggregate, with no purchaser-supplier agreement varying it, what does a maximum loss fraction of 0.30 mean?",
+          "text": "The maximum abrasion value of aggregates for a cement concrete pavement wearing surface is ______.",
           "options": [
             {
               "key": "a",
-              "text": "30% abrasion loss by mass"
+              "text": "30%"
             },
             {
               "key": "b",
-              "text": "3% abrasion loss by mass"
+              "text": "10%"
             },
             {
               "key": "c",
-              "text": "30 mm loss of particle diameter"
+              "text": "60%"
             },
             {
               "key": "d",
-              "text": "0.30% abrasion loss by mass"
+              "text": "50%"
             }
           ],
           "answer": "a",
-          "explanation": "A mass-loss fraction of 0.30 is 30%. IS 383:1970 section 3.5 gives this default Los Angeles limit for wearing-surface concrete, but expressly allows otherwise agreed purchaser-supplier requirements. Neither particle-diameter loss nor a universal road-layer limit is meant.<p>Source note: Page 36 point 121&#39;s 0.3 is a fraction. Independent review read the archived primary section 3.5 and restored its purchaser-supplier qualification; this historical edition is not a claim about current Nepal adoption.</p><p>Capsule 4th ed., p. 36; topic 9 point 121.</p>",
+          "explanation": "Aggregates for a concrete wearing surface must resist wear, so their abrasion value is limited to 30%, that is 0.3; other concrete may have up to 50%.<p>Capsule 4th ed., p. 36; topic 9 point 121.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2880,16 +2880,16 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0903",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00152",
           "src": "CAP4-09-00152",
-          "text": "Which traditional qualitative bitumen test is associated with identifying an abnormal spot pattern suggesting cracked or heat-damaged binder?",
+          "text": "The test used for detecting whether a bitumen sample has been overheated or cracked during manufacturing is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Ring-and-ball softening-point test"
+              "text": "Penetration test"
             },
             {
               "key": "b",
@@ -2897,15 +2897,15 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "c",
-              "text": "Needle-penetration test"
+              "text": "Ductility test"
             },
             {
               "key": "d",
-              "text": "Ductility test"
+              "text": "Softening point test"
             }
           ],
           "answer": "b",
-          "explanation": "The spot test examines the pattern produced under its solvent/test procedure and historically screens for cracked or otherwise nonhomogeneous binder. It does not determine the exact overheating temperature, duration or full acceptability of the material.<p>Source note: Page 37 point 150: retained as a qualitative historical screening purpose, not a definitive diagnosis or a current mandatory Nepal acceptance requirement.</p><p>Capsule 4th ed., p. 37; topic 9 point 150.</p>",
+          "explanation": "In the spot test, a drop of bitumen solution is placed on filter paper; a uniform brown stain shows normal bitumen, while a dark central spot indicates bitumen that has been overheated or cracked.<p>Capsule 4th ed., p. 37; topic 9 point 150.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2930,7 +2930,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00012",
           "src": "CAP4-09-00012",
-          "text": "Which traditional optical instrument supplies a reference line for timing vehicles over a short measured base in a spot-speed study?",
+          "text": "The ______ is used to determine spot speed.",
           "options": [
             {
               "key": "a",
@@ -2938,7 +2938,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "b",
-              "text": "Skid-resistance pendulum"
+              "text": "Pendulum skid tester"
             },
             {
               "key": "c",
@@ -2950,7 +2950,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "d",
-          "explanation": "An enoscope helps an observer identify passage at a reference line; measured distance divided by elapsed time estimates speed over the short base. A Benkelman beam measures pavement rebound, not vehicle speed.<p>Source note: Page 33 point 12: &#39;Endoscope&#39; is corrected to enoscope, corroborated by chapter-09-traffic, traffic-speed-studies-and-percentiles.</p><p>Capsule 4th ed., p. 33; topic 9 point 12.</p>",
+          "explanation": "An enoscope, an L-shaped mirror box, helps an observer note exactly when a vehicle crosses a base line, so the time over a short known distance, and hence the spot speed, can be measured.<p>Capsule 4th ed., p. 33; topic 9 point 12.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2968,27 +2968,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00015",
           "src": "CAP4-09-00015",
-          "text": "Equal numbers of vehicles pass a fixed detector at 30 and 60 km/h during a study. What is their time-mean speed?",
+          "text": "The average of the speeds of vehicles passing a particular place at different times is called the ______.",
           "options": [
             {
               "key": "a",
-              "text": "42.43 km/h"
+              "text": "Journey speed"
             },
             {
               "key": "b",
-              "text": "40 km/h"
+              "text": "Space mean speed"
             },
             {
               "key": "c",
-              "text": "45 km/h"
+              "text": "Time mean speed"
             },
             {
               "key": "d",
-              "text": "50 km/h"
+              "text": "Running speed"
             }
           ],
           "answer": "c",
-          "explanation": "Time-mean speed is the arithmetic mean of the fixed-point passage speeds: \\[v_t = \\dfrac{30 + 60}{2} = 45\\ \\text{km/h}\\] The 40 km per h harmonic mean describes the compatible equal-distance or stationary space-mean calculation.<p>Capsule 4th ed., p. 33; topic 9 point 15.</p>",
+          "explanation": "Time mean speed is the arithmetic mean of the spot speeds measured at one place over a period; space mean speed is the average speed of the vehicles over a length of road at an instant.<p>Capsule 4th ed., p. 33; topic 9 point 15.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3001,32 +3001,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00016",
           "src": "CAP4-09-00016",
-          "text": "For compatible stationary speed distributions with space-mean speed 50 km/h, which relationship must the time-mean speed satisfy?",
+          "text": "If the space mean speed is 50 km/h, the time mean speed will be ______.",
           "options": [
             {
               "key": "a",
-              "text": "Above 50 km/h even if every vehicle has equal speed"
+              "text": "Less than 50 km/h"
             },
             {
               "key": "b",
-              "text": "At most 50 km/h; equality only at jam density"
+              "text": "Equal to 50 km/h"
             },
             {
               "key": "c",
-              "text": "Exactly 50 km/h regardless of speed dispersion"
+              "text": "Exactly 25 km/h"
             },
             {
               "key": "d",
-              "text": "At least 50 km/h; equality if dispersion is zero"
+              "text": "Greater than 50 km/h"
             }
           ],
           "answer": "d",
-          "explanation": "The time mean equals the space mean plus space-distribution variance divided by the space mean. Nonnegative variance gives TMS >= SMS, with equality when all represented speeds are the same.<p>Source note: Page 34 point 16 omits the equality case; the comparison also requires compatible populations, not unrelated surveys.</p><p>Capsule 4th ed., p. 34; topic 9 point 16.</p>",
+          "explanation": "The time mean speed exceeds the space mean speed by about \\(\\dfrac{\\sigma^2}{v_s}\\), where \\(\\sigma\\) measures the spread of speeds, so it is greater than 50 km per h.<p>Capsule 4th ed., p. 34; topic 9 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3039,32 +3039,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00031",
           "src": "CAP4-09-00031",
-          "text": "A cumulative spot-speed curve places the 85th percentile at 62 km/h. What is the sound interpretation for a speed-management study?",
+          "text": "The ______ percentile speed from the cumulative frequency curve is used for speed regulation.",
           "options": [
             {
               "key": "a",
-              "text": "About 85% were at or below 62 km/h; other safety evidence is still needed"
+              "text": "85th"
             },
             {
               "key": "b",
-              "text": "The maximum sampled speed must have been 62 divided by 0.85"
+              "text": "50th"
             },
             {
               "key": "c",
-              "text": "A legal limit of 62 km/h follows automatically from that statistic"
+              "text": "15th"
             },
             {
               "key": "d",
-              "text": "The remaining 15% necessarily committed a recorded speeding offence"
+              "text": "98th"
             }
           ],
           "answer": "a",
-          "explanation": "The percentile describes the observed speed distribution and is a traditional input to speed studies. It does not alone establish legality or safety; road users, crash risk, access, geometry and regulatory procedures also matter.<p>Capsule 4th ed., p. 34; topic 9 point 30.</p>",
+          "explanation": "The 85th percentile speed, exceeded by only 15% of the vehicles, is taken as the safe speed limit for regulation; the 15th percentile guides minimum speed limits and the 98th percentile the design speed.<p>Capsule 4th ed., p. 34; topic 9 point 30.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3077,32 +3077,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00038",
           "src": "CAP4-09-00038",
-          "text": "In an ideal uniform single-lane stream at 54 km/h, each 5 m vehicle maintains a 25 m clear gap. What flow follows from this fixed-spacing model?",
+          "text": "The basic capacity of a road lane is calculated by the formula ______, where \\(V\\) is the speed in km/h, \\(L\\) the vehicle length and \\(S\\) the spacing in metres.",
           "options": [
             {
               "key": "a",
-              "text": "2160 vehicles/h"
+              "text": "\\(\\dfrac{V}{L + S}\\)"
             },
             {
               "key": "b",
-              "text": "10800 vehicles/h"
+              "text": "\\(\\dfrac{1000(L + S)}{V}\\)"
             },
             {
               "key": "c",
-              "text": "1800 vehicles/h"
+              "text": "\\(\\dfrac{1000V}{L + S}\\)"
             },
             {
               "key": "d",
-              "text": "900 vehicles/h"
+              "text": "\\(\\dfrac{1000V}{L}\\)"
             }
           ],
           "answer": "c",
-          "explanation": "Gross space headway is vehicle length plus clear gap, \\(5 + 25 = 30\\) m. Then \\[q = \\dfrac{1000 \\times 54}{30} = 1800\\] vehicles per hour. This idealised spacing result is not proof of observed sustainable road capacity.<p>Source note: Page 34 point 37: full page text restores 1000V/(L+S); L is vehicle length and S the clear gap, not gross spacing again.</p><p>Capsule 4th ed., p. 34; topic 9 point 37.</p>",
+          "explanation": "At a speed of \\(V\\) km per h a lane stream covers \\(1000V\\) m per hour; dividing by the space occupied by each vehicle, \\(L + S\\), gives the basic capacity \\(\\dfrac{1000V}{L + S}\\) vehicles per hour.<p>Capsule 4th ed., p. 34; topic 9 point 37.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3115,32 +3115,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00059",
           "src": "CAP4-09-00059",
-          "text": "A counter records 30,000 vehicles over 30 complete consecutive days, with no annualisation factors. Which statistic is directly supported?",
+          "text": "The daily average traffic calculated from a survey of 30 days is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "ADT of about 82 vehicles/day after dividing by 365"
+              "text": "Peak hour volume"
             },
             {
               "key": "b",
-              "text": "Peak-hour flow of 1000 vehicles/h during that month"
+              "text": "Design hourly volume"
             },
             {
               "key": "c",
-              "text": "AADT of 1000 vehicles/day for the entire year"
+              "text": "AADT"
             },
             {
               "key": "d",
-              "text": "ADT of 1000 vehicles/day for the observed period"
+              "text": "ADT"
             }
           ],
           "answer": "d",
-          "explanation": "The observed-period daily average is \\[\\text{ADT} = \\dfrac{30{,}000}{30} = 1000\\] vehicles per day. A short survey does not establish annual average daily traffic without justified seasonal or day factors or complete year-long observations.<p>Capsule 4th ed., p. 34; topic 9 point 58.</p>",
+          "explanation": "Average daily traffic (ADT) is the daily average from a count over a period shorter than a year, such as 30 days; AADT uses the traffic of all 365 days.<p>Capsule 4th ed., p. 34; topic 9 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3153,32 +3153,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00062",
           "src": "CAP4-09-00062",
-          "text": "Which conventional four-leg interchange uses four loop ramps to accommodate crossing-turn movements without at-grade crossings between the two main roads?",
+          "text": "For the movement of vehicles at an intersection of two roads without any interference, the type of grade separator generally preferred is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Trumpet interchange"
+              "text": "Trumpet"
             },
             {
               "key": "b",
-              "text": "Full cloverleaf"
+              "text": "Cloverleaf"
             },
             {
               "key": "c",
-              "text": "Diamond interchange"
+              "text": "Diamond"
             },
             {
               "key": "d",
-              "text": "At-grade roundabout"
+              "text": "Rotary"
             }
           ],
           "answer": "b",
-          "explanation": "A full cloverleaf uses four loops plus outer connections around grade-separated main roads. It removes their at-grade crossing conflicts but retains merges, diverges and conventional weaving, so it is not free of all interference.<p>Source note: Pages 35/37 points 61/152 are duplicates. Their absolute &#39;without any interference&#39; is replaced by the precise absence of main-road at-grade crossings.</p><p>Capsule 4th ed., pp. 35, 37; topic 9 point 61; topic 9 point 152.</p>",
+          "explanation": "A full cloverleaf has loop and outer ramps in all four quadrants, so every turning movement is made without crossing another traffic stream.<p>Capsule 4th ed., pp. 35, 37; topic 9 point 61; topic 9 point 152.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3193,32 +3193,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00063",
           "src": "CAP4-09-00063",
-          "text": "One road crosses above another on a bridge, with no connecting ramps. Which description is necessarily valid?",
+          "text": "An intersection provided with the roads at different levels is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Grade-separated crossing"
+              "text": "A grade-separated intersection"
             },
             {
               "key": "b",
-              "text": "Full interchange"
+              "text": "A rotary"
             },
             {
               "key": "c",
-              "text": "Rotary intersection"
+              "text": "An uncontrolled intersection"
             },
             {
               "key": "d",
-              "text": "Channelised at-grade junction"
+              "text": "A channelised intersection"
             }
           ],
           "answer": "a",
-          "explanation": "Different crossing levels establish grade separation. An interchange additionally provides connections between the roads; the presence of a bridge alone does not prove that vehicles can transfer between them.<p>Capsule 4th ed., p. 35; topic 9 point 62.</p>",
+          "explanation": "In a grade-separated intersection the roads cross at different levels by a bridge or underpass, which removes the crossing conflicts; ramps may be added to form an interchange.<p>Capsule 4th ed., p. 35; topic 9 point 62.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3231,32 +3231,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00064",
           "src": "CAP4-09-00064",
-          "text": "When assessing a traditional rotary weaving section, what is the main geometric reason to avoid abrupt crossing angles between entering and leaving streams?",
+          "text": "The minimum weaving angle in a rotary should not be less than ______.",
           "options": [
             {
               "key": "a",
-              "text": "To replace the shared weaving length with a short perpendicular crossing"
+              "text": "5°"
             },
             {
               "key": "b",
-              "text": "To concentrate lane changing at one short crossing location"
+              "text": "30°"
             },
             {
               "key": "c",
-              "text": "To permit gradual lateral exchange with manageable speed changes"
+              "text": "15°"
             },
             {
               "key": "d",
-              "text": "To make entering vehicles cross the circulating stream nearly at right angles"
+              "text": "45°"
             }
           ],
           "answer": "c",
-          "explanation": "Weaving requires streams to exchange relative positions over a shared length. Gradual paths help manage lateral motion, but demand, usable length, width and speed consistency must also be checked; angle alone cannot establish capacity.<p>Source note: Pages 35/37 points 63/136 repeat a 15-degree minimum. Corrected traffic notes identify contradictory minimum versus &#39;15 or less&#39; wording and no verified numerical bound. The 15-degree direction/authority remains flagged for parent review.</p><p>Capsule 4th ed., pp. 35, 37; topic 9 point 63; topic 9 point 136.</p>",
+          "explanation": "The weaving angle between the entering and leaving paths in a rotary is kept at least 15° so that the streams merge and diverge smoothly.<p>Capsule 4th ed., pp. 35, 37; topic 9 point 63; topic 9 point 136.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3271,16 +3271,16 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00065",
           "src": "CAP4-09-00065",
-          "text": "An existing broad intersection is reorganised using traffic islands, medians and marked turning lanes. What is this treatment called?",
+          "text": "The procedure of adopting medians and traffic islands in an unchannelised intersection is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Access closure"
+              "text": "Signal coordination"
             },
             {
               "key": "b",
@@ -3288,15 +3288,15 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "c",
-              "text": "Channelisation"
+              "text": "Channelising"
             },
             {
               "key": "d",
-              "text": "Signal coordination"
+              "text": "Access control"
             }
           ],
           "answer": "c",
-          "explanation": "Channelisation guides traffic into defined paths using islands, markings or medians. It can reduce decision complexity and conflict exposure but does not necessarily separate roads vertically or eliminate all conflicts.<p>Capsule 4th ed., p. 35; topic 9 point 64.</p>",
+          "explanation": "Channelising uses islands, medians and markings to guide vehicles into definite paths at an intersection, reducing the area of conflict and confusion.<p>Capsule 4th ed., p. 35; topic 9 point 64.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3309,32 +3309,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00066",
           "src": "CAP4-09-00066",
-          "text": "Which set of interactions remains at the ramps of a conventional full cloverleaf with shared sections between successive loop entries and exits?",
+          "text": "Which type of intersection has no conflict?",
           "options": [
             {
               "key": "a",
-              "text": "Merging, diverging and weaving"
+              "text": "Cloverleaf"
             },
             {
               "key": "b",
-              "text": "Direct main-road crossing without ramp weaving"
+              "text": "Staggered junction"
             },
             {
               "key": "c",
-              "text": "Diverging alone, with no merging or weaving"
+              "text": "T-intersection"
             },
             {
               "key": "d",
-              "text": "Merging alone, with no diverging or weaving"
+              "text": "Four-legged at-grade intersection"
             }
           ],
           "answer": "a",
-          "explanation": "Successive loop ramps can place entering traffic upstream of exiting traffic on a common section, requiring weaving. Grade separation removes main-road crossing conflicts, not merging, diverging or weaving interactions.<p>Source note: Page 35 point 65&#39;s &#39;no conflict&#39; assertion is corrected; see traffic-intersection-and-interchange-conflicts in the local traffic notes.</p><p>Capsule 4th ed., p. 35; topic 9 point 65.</p>",
+          "explanation": "In a cloverleaf interchange all turning movements are made on ramps, so no vehicle crosses another stream; at-grade intersections have many crossing conflicts.<p>Capsule 4th ed., p. 35; topic 9 point 65.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3347,32 +3347,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00069",
           "src": "CAP4-09-00069",
-          "text": "Which signal interval announces the change from green towards red and must be distinguished from a separate all-red clearance interval?",
+          "text": "The \"clearance time\" in a traffic signal is indicated by the ______ light.",
           "options": [
             {
               "key": "a",
-              "text": "Pedestrian walk interval"
+              "text": "Green"
             },
             {
               "key": "b",
-              "text": "Cycle offset interval"
+              "text": "Pedestrian walk"
             },
             {
               "key": "c",
-              "text": "Effective green interval"
+              "text": "Red"
             },
             {
               "key": "d",
-              "text": "Amber change interval"
+              "text": "Amber"
             }
           ],
           "answer": "d",
-          "explanation": "Amber is the change indication before red; all-red clearance, where provided, is a separate interval. Neither is automatically identical to total lost time or an unrestricted instruction to enter the junction.<p>Source note: Page 35 point 67&#39;s clearance shorthand is refined using the signal-interval distinctions in corrected traffic notes; Nepal Traffic Signs Manual 1997 section E5.3 supplies indication context, not a complete timing design.</p><p>Capsule 4th ed., p. 35; topic 9 point 67.</p>",
+          "explanation": "The amber interval after green gives vehicles already close to the stop line time to clear the intersection before red; it indicates the clearance time.<p>Capsule 4th ed., p. 35; topic 9 point 67.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3390,27 +3390,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00070",
           "src": "CAP4-09-00070",
-          "text": "Which paired mechanisms explain why signalisation can reduce crossing-crash exposure yet increase rear-end exposure on an approach?",
+          "text": "The effect of using traffic signals at an intersection is that they ______.",
           "options": [
             {
               "key": "a",
-              "text": "Conflicting movements separated in time; braking into queues"
+              "text": "Reduce right-turn collisions but may increase rear-end collisions"
             },
             {
               "key": "b",
-              "text": "Crossing movements removed physically; no approach braking"
+              "text": "Increase right-angle collisions"
             },
             {
               "key": "c",
-              "text": "Crossing speeds increased; fewer changes in following speed"
+              "text": "Have no effect on accidents"
             },
             {
               "key": "d",
-              "text": "Conflicting movements released together; longer stopping queues"
+              "text": "Eliminate all accidents"
             }
           ],
           "answer": "a",
-          "explanation": "Signal phasing can separate conflicting movements in time, while stopping and queueing may increase rear-end exposure. Outcomes depend on design and behaviour; right-turn benefits require appropriate protection rather than just the presence of signals.<p>Capsule 4th ed., p. 35; topic 9 point 68.</p>",
+          "explanation": "Signals separate conflicting streams in time, reducing right-turn and crossing collisions, but sudden stops at the change of signal can increase rear-end collisions.<p>Capsule 4th ed., p. 35; topic 9 point 68.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3423,12 +3423,12 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00071",
           "src": "CAP4-09-00071",
-          "text": "For an isolated undersaturated junction, Webster's approximation uses 10 s lost time per cycle and a critical flow-ratio sum of 0.60. What cycle length does it give?",
+          "text": "If the total lost time is 10 s and the sum of the critical flow ratios is 0.6, the optimum cycle length by Webster's method is ______.",
           "options": [
             {
               "key": "a",
@@ -3440,7 +3440,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "c",
-              "text": "33.3 s"
+              "text": "25 s"
             },
             {
               "key": "d",
@@ -3448,7 +3448,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Webster's approximation gives \\[\\begin{aligned} C_0 &amp;= \\dfrac{1.5L + 5}{1 - Y} = \\dfrac{15 + 5}{0.40} \\\\ &amp;= 50\\ \\text{s} \\end{aligned}\\] The ratios must represent the critical phase requirements; this approximate delay result does not replace pedestrian, clearance or coordination checks.<p>Source note: Page 35 point 69: the full page restores the numerator displaced into point 68&#39;s extraction.</p><p>Capsule 4th ed., p. 35; topic 9 point 69.</p>",
+          "explanation": "Webster's optimum cycle length is \\[\\begin{aligned} C_0 &amp;= \\dfrac{1.5L + 5}{1 - Y} \\\\ &amp;= \\dfrac{1.5 \\times 10 + 5}{1 - 0.6} \\\\ &amp;= 50\\ \\text{s} \\end{aligned}\\]<p>Capsule 4th ed., p. 35; topic 9 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3466,7 +3466,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00073",
           "src": "CAP4-09-00073",
-          "text": "All 600 vehicles counted in an hour occur in a single 15-minute interval. What is the 15-minute peak-hour factor?",
+          "text": "The minimum value of the 15-minute peak hour factor on a section of a road is ______.",
           "options": [
             {
               "key": "a",
@@ -3474,19 +3474,19 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "b",
-              "text": "0.50"
+              "text": "1.0"
             },
             {
               "key": "c",
-              "text": "1.00"
+              "text": "0.5"
             },
             {
               "key": "d",
-              "text": "4.00"
+              "text": "0"
             }
           ],
           "answer": "a",
-          "explanation": "The peak-hour factor is \\[\\begin{aligned} \\text{PHF} &amp;= \\dfrac{V}{4V_{15}} = \\dfrac{600}{4 \\times 600} \\\\ &amp;= 0.25 \\end{aligned}\\] This is the minimum for a nonzero hourly volume because no quarter can contain more than the entire hour's traffic.<p>Capsule 4th ed., p. 35; topic 9 point 71.</p>",
+          "explanation": "The peak hour factor is the hourly volume divided by four times the peak 15-minute volume; if all the traffic came in one 15-minute period, it would be \\(\\dfrac{V}{4V} = 0.25\\), its minimum value.<p>Capsule 4th ed., p. 35; topic 9 point 71.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3499,32 +3499,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00074",
           "src": "CAP4-09-00074",
-          "text": "An hour has exactly zero traffic in every 15-minute interval. What is the peak-hour factor under the usual hourly-volume formula?",
+          "text": "A 15-minute peak hour factor of 0.25 means that ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.25 because it is always the minimum"
+              "text": "Traffic was uniform over the hour"
             },
             {
               "key": "b",
-              "text": "1.00 because the four counts are equal"
+              "text": "No vehicles passed during the hour"
             },
             {
               "key": "c",
-              "text": "0.00 because the numerator is zero"
+              "text": "Traffic was half the capacity"
             },
             {
               "key": "d",
-              "text": "Undefined because the ratio is 0/0"
+              "text": "All the hour's traffic passed in a single 15-minute interval"
             }
           ],
           "answer": "d",
-          "explanation": "Both hourly volume and maximum quarter-hour volume are zero, giving an undefined \\(\\dfrac{0}{0}\\) ratio. The conventional 0.25-to-1 range assumes positive traffic; equal positive quarter-hour counts, not an empty hour, give one.<p>Capsule 4th ed., p. 35; topic 9 point 71.</p>",
+          "explanation": "The peak hour factor reaches its minimum of 0.25 only when all the traffic of the hour passes in one 15-minute interval; uniform flow through the hour gives the maximum, 1.0.<p>Capsule 4th ed., p. 35; topic 9 point 71.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3537,12 +3537,12 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00075",
           "src": "CAP4-09-00075",
-          "text": "Which quantity describes the maximum sustainable rate at which vehicles can pass a road section under specified roadway, traffic and control conditions?",
+          "text": "The maximum number of vehicles in a lane or a road that can pass a given point in unit time, usually an hour, is called ______.",
           "options": [
             {
               "key": "a",
@@ -3554,15 +3554,15 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "c",
-              "text": "Mean space headway"
+              "text": "Headway"
             },
             {
               "key": "d",
-              "text": "Observed traffic volume"
+              "text": "Traffic volume"
             }
           ],
           "answer": "b",
-          "explanation": "Capacity is a limiting sustainable flow rate for stated conditions, usually expressed per hour. Observed volume is the flow actually counted; it can be below capacity, and a brief surge need not represent sustainable capacity.<p>Capsule 4th ed., p. 35; topic 9 point 72.</p>",
+          "explanation": "Traffic capacity is the maximum hourly rate at which vehicles can pass a point under the prevailing conditions; traffic volume is the number that actually passes.<p>Capsule 4th ed., p. 35; topic 9 point 72.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3580,27 +3580,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00076",
           "src": "CAP4-09-00076",
-          "text": "For equal stall widths and a fixed straight kerb length, with enough depth and aisle space, which parking angle typically provides the most spaces along the kerb?",
+          "text": "The type of parking in which the maximum number of vehicles can be parked is ______ parking.",
           "options": [
             {
               "key": "a",
-              "text": "90 degrees"
+              "text": "90°"
             },
             {
               "key": "b",
-              "text": "60 degrees"
+              "text": "60°"
             },
             {
               "key": "c",
-              "text": "30 degrees"
+              "text": "Parallel"
             },
             {
               "key": "d",
-              "text": "45 degrees"
+              "text": "45°"
             }
           ],
           "answer": "a",
-          "explanation": "Perpendicular parking uses the stall width directly along the kerb; angling increases frontage per stall. The result is conditional on adequate depth and aisle space, not a universal maximum for every parking-site footprint.<p>Source note: Page 35 point 74: fixed kerb length and sufficient manoeuvring depth supplied to remove the original blanket parking-capacity claim.</p><p>Capsule 4th ed., p. 35; topic 9 point 74.</p>",
+          "explanation": "For a given kerb length, right-angle (90°) parking accommodates the most vehicles, although it needs the widest road space and makes manoeuvring more difficult.<p>Capsule 4th ed., p. 35; topic 9 point 74.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3613,32 +3613,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00077",
           "src": "CAP4-09-00077",
-          "text": "A 'school ahead' sign warns drivers of a likely hazard near a school. To which functional sign group does it belong?",
+          "text": "The \"school ahead\" traffic sign is ______ sign.",
           "options": [
             {
               "key": "a",
-              "text": "Mandatory direction signs"
+              "text": "A mandatory"
             },
             {
               "key": "b",
-              "text": "Warning or cautionary signs"
+              "text": "A cautionary"
             },
             {
               "key": "c",
-              "text": "Route confirmation signs"
+              "text": "An informatory"
             },
             {
               "key": "d",
-              "text": "Parking information signs"
+              "text": "A prohibitory"
             }
           ],
           "answer": "b",
-          "explanation": "The school warning alerts drivers to a hazard and the need for caution. It is not by itself a numerical speed-limit order; a regulatory speed restriction, when present, is a separate control.<p>Capsule 4th ed., p. 35; topic 9 point 75.</p>",
+          "explanation": "A \"school ahead\" sign warns drivers of a hazard ahead so that they slow down and watch for children, so it is a cautionary (warning) sign.<p>Capsule 4th ed., p. 35; topic 9 point 75.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3656,27 +3656,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00078",
           "src": "CAP4-09-00078",
-          "text": "A complete non-leap-year count records 730,000 vehicles at a section. What is its annual average daily traffic?",
+          "text": "The traffic volume prepared from the counts of all 365 days of the year is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "24,333 vehicles/day"
+              "text": "Average daily traffic"
             },
             {
               "key": "b",
-              "text": "83.3 vehicles/day"
+              "text": "Design hourly volume"
             },
             {
               "key": "c",
-              "text": "2000 vehicles/day"
+              "text": "Annual average daily traffic"
             },
             {
               "key": "d",
-              "text": "730,000 vehicles/day"
+              "text": "Peak hour factor"
             }
           ],
           "answer": "c",
-          "explanation": "AADT is the full-year count divided by the number of days: \\[\\text{AADT} = \\dfrac{730{,}000}{365} = 2000\\] vehicles per day. A leap-year total instead uses 366 days; dividing by hours would give a different statistic.<p>Capsule 4th ed., p. 35; topic 9 point 76.</p>",
+          "explanation": "Annual average daily traffic (AADT) is the total traffic of the year divided by 365; ADT is an average from a shorter counting period.<p>Capsule 4th ed., p. 35; topic 9 point 76.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3689,32 +3689,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00097",
           "src": "CAP4-09-00097",
-          "text": "Under otherwise comparable dry conditions and illumination, why can a light-coloured cement-concrete pavement improve night visibility relative to fresh dark asphalt?",
+          "text": "Which pavement is best for night visibility?",
           "options": [
             {
               "key": "a",
-              "text": "Its surface generally reflects more incident light"
+              "text": "Rigid (cement concrete) pavement"
             },
             {
               "key": "b",
-              "text": "Its slab has greater flexural stiffness under wheel loading"
+              "text": "Gravel road"
             },
             {
               "key": "c",
-              "text": "Its surface necessarily provides greater tyre friction"
+              "text": "Flexible bituminous pavement"
             },
             {
               "key": "d",
-              "text": "Its material stores more heat from daytime sunlight"
+              "text": "Earthen road"
             }
           ],
           "answer": "a",
-          "explanation": "A lighter surface generally reflects more light and can improve luminance under the same lighting. Actual visibility also depends on wetness, texture, markings, contrast and glare; concrete is not universally best in every night condition.<p>Source note: Page 35 point 93&#39;s unqualified &#39;best&#39; is replaced by a controlled optical comparison.</p><p>Capsule 4th ed., p. 35; topic 9 point 93.</p>",
+          "explanation": "A cement concrete surface is light in colour and reflects more light than dark bitumen, so rigid pavements give better night visibility.<p>Capsule 4th ed., p. 35; topic 9 point 93.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3727,32 +3727,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00115",
           "src": "CAP4-09-00115",
-          "text": "An urban rotary study adopts a 30 km/h design target. Which conclusion is justified before any speed limit is posted?",
+          "text": "The recommended speed limit for traffic in a rotary designed for urban areas is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Check path geometry and safety separately from legal speed regulation"
+              "text": "30 km/h"
             },
             {
               "key": "b",
-              "text": "Assume the same target suits every modern roundabout and approach"
+              "text": "20 km/h"
             },
             {
               "key": "c",
-              "text": "Treat 30 km/h as legally binding solely because the designer selected it"
+              "text": "40 km/h"
             },
             {
               "key": "d",
-              "text": "Use 30 km/h as proof that all entry paths have adequate visibility"
+              "text": "60 km/h"
             }
           ],
           "answer": "a",
-          "explanation": "A selected design target informs geometry but is not automatically an enacted speed limit or proof of safe entry and circulation. Traditional rotary teaching values cannot replace the current facility-specific design and regulatory process.<p>Source note: Page 36 point 111: 30 km/h is an explicit study assumption. No primary edition establishing a universal urban-rotary speed limit was verified; parent should resolve the intended recommendation source.</p><p>Capsule 4th ed., p. 36; topic 9 point 111.</p>",
+          "explanation": "Rotaries are designed for low speeds so that vehicles can weave safely; the design speed is 30 km per h in urban areas and 40 km per h in rural areas.<p>Capsule 4th ed., p. 36; topic 9 point 111.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3765,32 +3765,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00116",
           "src": "CAP4-09-00116",
-          "text": "A mixed-traffic exercise explicitly assigns 6 PCU to each bullock cart and 1 PCU to each car. What equivalent hourly flow is represented by 20 carts and 80 cars?",
+          "text": "The vehicle with the highest equivalency factor (PCU value) is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "200 PCU/h"
+              "text": "Bullock cart"
             },
             {
               "key": "b",
-              "text": "100 PCU/h"
+              "text": "Truck"
             },
             {
               "key": "c",
-              "text": "120 PCU/h"
+              "text": "Bus"
             },
             {
               "key": "d",
-              "text": "600 PCU/h"
+              "text": "Car"
             }
           ],
           "answer": "a",
-          "explanation": "The adopted equivalence gives \\[20 \\times 6 + 80 \\times 1 = 200\\] PCU per hour from 100 physical vehicles per hour. PCU expresses traffic-stream effects, not axle damage; the cart factor and any 'highest factor' ranking depend on the chosen table and conditions.<p>Source note: Page 36 point 112: 6 PCU is a stated exercise assumption, not a newly verified universal NRS value or a claim that carts always have the largest factor.</p><p>Capsule 4th ed., p. 36; topic 9 point 112.</p>",
+          "explanation": "A slow bullock cart occupies road space for long and holds up faster vehicles, so it has the highest equivalency factor, 6 PCU, compared with about 3 for a truck or bus and 1 for a car.<p>Capsule 4th ed., p. 36; topic 9 point 112.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3803,32 +3803,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00134",
           "src": "CAP4-09-00134",
-          "text": "Why is it inconsistent to combine a positive stream speed of 50 km/h with its actual jam density when using a conventional speed-density model?",
+          "text": "With the flow \\(q\\) in vehicles per hour, the average time headway in seconds is ______.",
           "options": [
             {
               "key": "a",
-              "text": "At jam density the modelled speed and flow are zero"
+              "text": "\\(\\dfrac{3600}{q}\\)"
             },
             {
               "key": "b",
-              "text": "Positive speed makes density independent of the number of vehicles"
+              "text": "\\(\\dfrac{1000}{q}\\)"
             },
             {
               "key": "c",
-              "text": "Jam density is measured in seconds rather than vehicles per kilometre"
+              "text": "\\(3600q\\)"
             },
             {
               "key": "d",
-              "text": "The flow-density relation can only be used on two-way roads"
+              "text": "\\(\\dfrac{q}{3600}\\)"
             }
           ],
           "answer": "a",
-          "explanation": "Jam density represents the standing packed condition, where conventional speed-density models have zero speed. Multiplying jam density by a positive speed fabricates a moving state; a finite 0.72 s headway does not describe the jam.<p>Source note: Page 36 point 128 incorrectly combines moving speed with jam density. The companion question shows the exact condition under which its arithmetic can be retained.</p><p>Capsule 4th ed., p. 36; topic 9 point 128.</p>",
+          "explanation": "Headway is the time between successive vehicles; with \\(q\\) vehicles passing each hour, the average headway is \\(\\dfrac{3600}{q}\\) seconds, where the flow is density times speed, \\(q = kv\\).<p>Capsule 4th ed., p. 36; topic 9 point 128.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3841,16 +3841,16 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00135",
           "src": "CAP4-09-00135",
-          "text": "As a purely ideal uniform-flow calculation, suppose 100 vehicles/km is the actual moving density, not jam density, and the compatible space-mean speed is 50 km/h. What mean passage headway follows?",
+          "text": "The speed and jam density of a traffic stream are 50 km/h and 100 vehicles/km respectively. The average time headway will be ______.",
           "options": [
             {
               "key": "a",
-              "text": "2.00 s"
+              "text": "1.2 s"
             },
             {
               "key": "b",
@@ -3858,15 +3858,15 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "c",
-              "text": "7.20 s"
+              "text": "7.2 s"
             },
             {
               "key": "d",
-              "text": "1.39 s"
+              "text": "2.0 s"
             }
           ],
           "answer": "b",
-          "explanation": "The stipulated moving state gives \\[q = 100 \\times 50 = 5000\\] vehicles per hour, and the mean headway is \\[h = \\dfrac{3600}{5000} = 0.72\\ \\text{s}\\] This is arithmetic for the assumed state, not proof of sustainable capacity or a recommended following interval.<p>Capsule 4th ed., p. 36; topic 9 point 128.</p>",
+          "explanation": "The flow is density times speed, \\(q = 100 \\times 50 = 5000\\) vehicles per hour, so the average headway is \\[h = \\dfrac{3600}{5000} = 0.72\\ \\text{s}\\]<p>Capsule 4th ed., p. 36; topic 9 point 128.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3884,27 +3884,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00145",
           "src": "CAP4-09-00145",
-          "text": "A junction change reduces average vehicle delay but materially increases pedestrian collision exposure. What traffic-engineering conclusion follows?",
+          "text": "The primary objective of traffic engineering is to ensure ______.",
           "options": [
             {
               "key": "a",
-              "text": "Pedestrian risk is irrelevant to the traffic-engineering assessment"
+              "text": "The highest vehicle speed regardless of safety"
             },
             {
               "key": "b",
-              "text": "Any higher discharge rate proves both safety and efficiency"
+              "text": "The minimum road construction cost only"
             },
             {
               "key": "c",
-              "text": "Delay reduction alone does not establish an acceptable improvement"
+              "text": "Safe, rapid and efficient movement of traffic"
             },
             {
               "key": "d",
-              "text": "The proposal succeeds because rapid flow is the sole objective"
+              "text": "The maximum road width"
             }
           ],
           "answer": "c",
-          "explanation": "Traffic engineering seeks safe and efficient movement for road users, not maximum vehicle speed in isolation. A delay benefit must be assessed alongside pedestrian safety, accessibility, conflict severity and other operational effects.<p>Capsule 4th ed., p. 37; topic 9 point 140.</p>",
+          "explanation": "Traffic engineering plans and controls traffic so that people and goods move safely, quickly and efficiently on the road network.<p>Capsule 4th ed., p. 37; topic 9 point 140.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3917,12 +3917,12 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00150",
           "src": "CAP4-09-00150",
-          "text": "Which unit is appropriate for the time headway between corresponding points on successive vehicles passing a fixed detector?",
+          "text": "The standard SI unit of time headway in traffic engineering is ______.",
           "options": [
             {
               "key": "a",
@@ -3942,7 +3942,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Time headway is elapsed time between successive passages, so its unit is seconds. Vehicles per metre describes density, metres per vehicle describes average spacing, and vehicles per hour describes flow.<p>Source note: Page 37 point 147&#39;s vehicles-per-metre unit is dimensionally wrong and is explicitly corrected.</p><p>Capsule 4th ed., p. 37; topic 9 point 147.</p>",
+          "explanation": "Time headway is the time interval between successive vehicles passing a point, so it is measured in seconds; vehicles per metre is a unit of density, and metres per vehicle a unit of space headway.<p>Capsule 4th ed., p. 37; topic 9 point 147.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3960,27 +3960,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00153",
           "src": "CAP4-09-00153",
-          "text": "When comparing a full cloverleaf with other interchanges, which evidence is needed before calling it the best choice for a particular site?",
+          "text": "The best type of interchange that can be provided is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Only the fact that four loop ramps can be fitted on the drawing"
+              "text": "Diamond"
             },
             {
               "key": "b",
-              "text": "Only the number of main-road lanes, without turning movements"
+              "text": "Trumpet"
             },
             {
               "key": "c",
-              "text": "Only the absence of signals on the main through carriageways"
+              "text": "Rotary"
             },
             {
               "key": "d",
-              "text": "Movement demands, weaving performance, land constraints and whole-life costs"
+              "text": "Full cloverleaf"
             }
           ],
           "answer": "d",
-          "explanation": "Cloverleaf performance depends on turning volumes, ramp speeds, weaving, space, access and cost. Grade-separated through movement is useful but does not prove that this layout is universally safest, highest-capacity or most economical.<p>Source note: Page 37 point 151&#39;s universal &#39;best interchange&#39; claim is replaced by a defensible site-selection principle.</p><p>Capsule 4th ed., p. 37; topic 9 point 151.</p>",
+          "explanation": "A full cloverleaf handles all turning movements on ramps without any crossing conflict, so it is regarded as the best type of interchange, although it needs a large area.<p>Capsule 4th ed., p. 37; topic 9 point 151.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3993,32 +3993,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00190",
           "src": "CAP4-10-00190",
-          "text": "A village-road design brief uses a two-way design traffic volume of 200 vehicles per day. If 120 travel eastward, how many westward vehicles are consistent with that daily total?",
+          "text": "The design capacity of a village road in the Terai, in both directions, is ______.",
           "options": [
             {
               "key": "a",
-              "text": "320 vehicles per day"
+              "text": "20,000 vehicles per day"
             },
             {
               "key": "b",
-              "text": "80 vehicles per day"
+              "text": "200 vehicles per day"
             },
             {
               "key": "c",
-              "text": "120 vehicles per day"
+              "text": "2000 vehicles per day"
             },
             {
               "key": "d",
-              "text": "200 vehicles per day"
+              "text": "20 vehicles per day"
             }
           ],
           "answer": "b",
-          "explanation": "The two-way total is the sum of both directions, so the westward traffic is \\[200 - 120 = 80\\] vehicles per day. Daily design volume is not automatically the road's theoretical hourly capacity, and vehicles are not interchangeable with PCU.<p>Source note: Appendix p42 n14: 200 vehicles/day is a supplied brief, not an independently verified Terai village-road capacity standard; parent needs the applicable NRRS edition and table.</p><p>Capsule 4th ed., p. 42; rural point 14.</p>",
+          "explanation": "A village road in the Terai is designed for a low two-way traffic of about 200 vehicles per day, matching its local access function.<p>Capsule 4th ed., p. 42; rural point 14.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4031,7 +4031,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0904",
-          "kind": "calculation"
+          "kind": "recall"
         }
       ]
     },
@@ -4043,27 +4043,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-04-00085",
           "src": "CAP4-04-00085",
-          "text": "In a conventional bottom-up asphalt fatigue model, which repeated response most directly initiates cracking at the bottom of the bound layer?",
+          "text": "Fatigue cracking failure of a pavement is due to ______.",
           "options": [
             {
               "key": "a",
-              "text": "One-time surface abrasion by a braking wheel"
+              "text": "Thermal expansion of the surface"
             },
             {
               "key": "b",
-              "text": "Horizontal tensile strain under repeated wheel loading"
+              "text": "Tensile strain below the surface"
             },
             {
               "key": "c",
-              "text": "Vertical compressive strain used to assess subgrade rutting"
+              "text": "Compressive strain at the top of the subgrade"
             },
             {
               "key": "d",
-              "text": "Uniform thermal compression without load cycling"
+              "text": "Abrasion by traffic"
             }
           ],
           "answer": "b",
-          "explanation": "Bottom-up fatigue is associated with repeated tensile strain at the bottom of the asphalt layer; cracks can propagate upward as damage accumulates. Subgrade compressive strain is a different response associated with rutting. Top-down and thermal cracking need other mechanisms and must not be excluded by this model.<p>Source note: Page 18 point 85 supplies no material or fatigue model; qualified as conventional bottom-up flexible-pavement fatigue and mapped to ACiE0905.</p><p>Capsule 4th ed., p. 18; topic 4 point 85.</p>",
+          "explanation": "Repeated wheel loads produce horizontal tensile strain at the bottom of the bituminous layer, below the surface, and this repeated strain starts fatigue cracking. Vertical compressive strain on the subgrade governs rutting.<p>Capsule 4th ed., p. 18; topic 4 point 85.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4076,32 +4076,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00020",
           "src": "CAP4-09-00020",
-          "text": "What maintenance concept is consistent with a properly designed perpetual flexible pavement?",
+          "text": "As per NRS 2070, the design traffic of a perpetual road is forecast for about ______ after completion.",
           "options": [
             {
               "key": "a",
-              "text": "Replace every layer whenever surface texture deteriorates"
+              "text": "5 years"
             },
             {
               "key": "b",
-              "text": "Treat surface cracking as proof that the subgrade must be replaced"
+              "text": "40 years"
             },
             {
               "key": "c",
-              "text": "Retain sound deep layers while periodically renewing the surface"
+              "text": "20 years"
             },
             {
               "key": "d",
-              "text": "Eliminate all maintenance for a fixed 20-year period"
+              "text": "10 years"
             }
           ],
           "answer": "c",
-          "explanation": "Perpetual-pavement design seeks a long-lived structural foundation with renewable upper layers. It does not mean an indestructible surface or a universal 20-year life; loading, materials, drainage and maintenance remain essential.<p>Source note: Page 34 point 19: tests the corrected long-life concept separately from the NRS traffic horizon, without asserting an unverified numerical lifespan.</p><p>Capsule 4th ed., p. 34; topic 9 point 19.</p>",
+          "explanation": "A perpetual road has a life of about 20 years, so its design traffic is the traffic forecast 20 years after the road is completed.<p>Capsule 4th ed., p. 34; topic 9 point 19.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4114,32 +4114,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00026",
           "src": "CAP4-09-00026",
-          "text": "Interconnected wheel-path cracks appear after many axle repetitions. Which mechanism most directly explains this fatigue distress?",
+          "text": "Fatigue cracking of a pavement is not caused by ______.",
           "options": [
             {
               "key": "a",
-              "text": "Local interlayer slippage caused solely by a defective tack coat"
+              "text": "A weak base or subgrade"
             },
             {
               "key": "b",
-              "text": "Binder contraction caused solely by one cold-weather temperature drop"
+              "text": "Repeated heavy wheel loads"
             },
             {
               "key": "c",
-              "text": "Repeated tensile strain exceeding the pavement's fatigue resistance"
+              "text": "Improper alignment of the highway"
             },
             {
               "key": "d",
-              "text": "Moisture-driven loss of adhesion without cyclic tensile damage"
+              "text": "Inadequate pavement thickness"
             }
           ],
           "answer": "c",
-          "explanation": "Fatigue cracking results from accumulated cyclic damage, influenced by thickness, support, material condition and axle loading. Poor alignment can affect loading and drainage indirectly, but is not the direct fatigue mechanism.<p>Source note: Page 34 point 25&#39;s awkward negative claim is replaced by a causal diagnosis; it is not treated as proof that alignment can never influence pavement distress.</p><p>Capsule 4th ed., p. 34; topic 9 point 25.</p>",
+          "explanation": "Fatigue (alligator) cracking comes from repeated wheel loads on a pavement that is too thin or weakly supported; the alignment of the highway does not cause it.<p>Capsule 4th ed., p. 34; topic 9 point 25.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4152,32 +4152,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00067",
           "src": "CAP4-09-00067",
-          "text": "Using the default in DoR Flexible Pavement Guidelines, Second Edition 2021, section 4.5, what design-lane traffic follows for a four-lane undivided road carrying 1000 two-way commercial vehicles/day?",
+          "text": "The lane distribution factor (LDF) for a four-lane road in Nepal is ______.",
           "options": [
             {
               "key": "a",
-              "text": "400 commercial vehicles/day"
+              "text": "0.4"
             },
             {
               "key": "b",
-              "text": "200 commercial vehicles/day"
+              "text": "1.0"
             },
             {
               "key": "c",
-              "text": "375 commercial vehicles/day"
+              "text": "0.25"
             },
             {
               "key": "d",
-              "text": "750 commercial vehicles/day"
+              "text": "0.6"
             }
           ],
           "answer": "a",
-          "explanation": "For four lanes on one undivided carriageway, the default factor is 0.40 of total two-way commercial traffic: \\[0.40 \\times 1000 = 400\\] Do not halve that result again or apply the divided-road directional factor.<p>Source note: Pages 35/37 points 66/73/143 duplicate the 0.4 claim. Undivided geometry and the two-way commercial-traffic denominator are essential qualifications; guideline provenance is recorded in the audit.</p><p>Capsule 4th ed., pp. 35, 37; topic 9 point 66; topic 9 point 73; topic 9 point 143.</p>",
+          "explanation": "For a four-lane road, the design lane is taken to carry 40% of the total commercial traffic, so the lane distribution factor is 0.4.<p>Capsule 4th ed., pp. 35, 37; topic 9 point 66; topic 9 point 73; topic 9 point 143.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4193,32 +4193,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00068",
           "src": "CAP4-09-00068",
-          "text": "Under DoR Flexible Pavement Guidelines 2021 section 4.5, a four-lane divided road has two lanes each way and balanced traffic totalling 1000 commercial vehicles/day. Using 0.75 of directional traffic, what is the design-lane value?",
+          "text": "A four-lane road carries 1000 commercial vehicles per day. With a lane distribution factor of 0.4, the design-lane traffic is ______.",
           "options": [
             {
               "key": "a",
-              "text": "375 commercial vehicles/day"
-            },
-            {
-              "key": "b",
               "text": "400 commercial vehicles/day"
             },
             {
+              "key": "b",
+              "text": "250 commercial vehicles/day"
+            },
+            {
               "key": "c",
-              "text": "750 commercial vehicles/day"
+              "text": "1000 commercial vehicles/day"
             },
             {
               "key": "d",
-              "text": "187.5 commercial vehicles/day"
+              "text": "750 commercial vehicles/day"
             }
           ],
           "answer": "a",
-          "explanation": "The relevant direction carries \\(\\dfrac{1000}{2} = 500\\) commercial vehicles per day. Applying its 0.75 lane factor gives \\[0.75 \\times 500 = 375\\] The undivided-road factor 0.40 has a different denominator and is not a universal four-lane rule.<p>Capsule 4th ed., pp. 35, 37; topic 9 point 66; topic 9 point 73; topic 9 point 143.</p>",
+          "explanation": "The design lane carries the lane distribution factor times the total commercial traffic: \\[0.4 \\times 1000 = 400\\] commercial vehicles per day.<p>Capsule 4th ed., pp. 35, 37; topic 9 point 66; topic 9 point 73; topic 9 point 143.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4239,27 +4239,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00072",
           "src": "CAP4-09-00072",
-          "text": "Assuming the fourth-power damage approximation and comparable single-axle dual-wheel configurations, one 160 kN axle pass equals how many 80 kN reference passes?",
+          "text": "A 160 kN axle load damages a pavement ______ times more than an 80 kN axle load.",
           "options": [
             {
               "key": "a",
-              "text": "4 passes"
+              "text": "4"
             },
             {
               "key": "b",
-              "text": "8 passes"
+              "text": "8"
             },
             {
               "key": "c",
-              "text": "16 passes"
+              "text": "16"
             },
             {
               "key": "d",
-              "text": "2 passes"
+              "text": "2"
             }
           ],
           "answer": "c",
-          "explanation": "Equivalent damage per pass is \\[\\left(\\dfrac{160}{80}\\right)^4 = 16\\] This compares like axle configurations within the stated empirical model; it is not a universal law based on gross vehicle weight alone.<p>Capsule 4th ed., p. 35; topic 9 point 70.</p>",
+          "explanation": "By the fourth power law, pavement damage varies as the fourth power of the axle load: \\[\\left(\\dfrac{160}{80}\\right)^4 = 2^4 = 16\\]<p>Capsule 4th ed., p. 35; topic 9 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4277,27 +4277,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00079",
           "src": "CAP4-09-00079",
-          "text": "A pavement study specifies a conservative lower-tail design CBR and separately selects 90% reliability for its fatigue model. How should these two decisions be interpreted?",
+          "text": "As recommended by DoR, the percentile value of CBR used for the design of roads with more than 20 million ESAL is ______.",
           "options": [
             {
               "key": "a",
-              "text": "The model reliability removes the need for representative soil sampling"
+              "text": "50%"
             },
             {
               "key": "b",
-              "text": "Soil variability and model reliability require separate selection rules"
+              "text": "90%"
             },
             {
               "key": "c",
-              "text": "Both require selecting the upper 90th percentile of measured CBR"
+              "text": "80%"
             },
             {
               "key": "d",
-              "text": "A 90% model reliability requires multiplying mean CBR by 0.90"
+              "text": "60%"
             }
           ],
           "answer": "b",
-          "explanation": "The design CBR represents variable foundation strength under a stated sampling and ranking rule. Model reliability concerns uncertainty in predicted pavement performance; its numerical level does not define a soil percentile or justify selecting stronger-than-representative ground.<p>Source note: Page 35 point 77: DoR Flexible 2014, Second Edition 2021, sections 5.1 and 3.4 discuss different decisions. The section 5.1 label &#39;90th percentile&#39; does not explicitly define ranking direction in the corrected reference notes. This question tests the robust distinction without endorsing that ambiguous label or an unverified current 20-msa rule.</p><p>Capsule 4th ed., p. 35; topic 9 point 77.</p>",
+          "explanation": "For heavily trafficked roads carrying more than 20 million ESAL, DoR recommends a design CBR at the 90% level, so that 90% of the test values are equal to or higher than it.<p>Capsule 4th ed., p. 35; topic 9 point 77.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4310,32 +4310,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00080",
           "src": "CAP4-09-00080",
-          "text": "A project explicitly defines design CBR as a value equalled or exceeded by 90% of representative results. For a continuous distribution, which ascending percentile corresponds to that convention?",
+          "text": "For a road designed for more than 20 million ESAL, a design CBR at the 90% level means that ______ of the measured CBR values are equal to or greater than it.",
           "options": [
             {
               "key": "a",
-              "text": "Approximately the lower 10th percentile"
+              "text": "90%"
             },
             {
               "key": "b",
-              "text": "Exactly the arithmetic average of the sample"
+              "text": "50%"
             },
             {
               "key": "c",
-              "text": "Approximately the upper 90th percentile"
+              "text": "10%"
             },
             {
               "key": "d",
-              "text": "Exactly the highest recorded CBR"
+              "text": "100%"
             }
           ],
           "answer": "a",
-          "explanation": "If 90% meet or exceed the selected CBR, about 10% fall below it, so it is a lower-tail value. This definition must be stated separately because the guideline's percentile label alone does not establish the ranking direction.<p>Capsule 4th ed., p. 35; topic 9 point 77.</p>",
+          "explanation": "At the 90% level, the design CBR is chosen so that 90% of the measured values equal or exceed it, giving a conservative value for heavily loaded roads.<p>Capsule 4th ed., p. 35; topic 9 point 77.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4348,16 +4348,16 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00081",
           "src": "CAP4-09-00081",
-          "text": "Using DoR Flexible Pavement Guidelines 2021 section 5.2, what estimated subgrade resilient modulus corresponds to CBR 5%, where MR = 10 x CBR in MPa applies for CBR at most 5?",
+          "text": "As per NRS, the resilient modulus of a subgrade with a CBR of 5% is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.5 MPa"
+              "text": "5 MPa"
             },
             {
               "key": "b",
@@ -4365,15 +4365,15 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "c",
-              "text": "500 MPa"
+              "text": "0.5 MPa"
             },
             {
               "key": "d",
-              "text": "5 MPa"
+              "text": "500 MPa"
             }
           ],
           "answer": "b",
-          "explanation": "Insert CBR as the percentage number 5, not the fraction 0.05: \\[M_R = 10 \\times 5 = 50\\ \\text{MPa}\\] This is an empirical modulus estimate, not a direct cyclic test result, and the guideline uses another relation above CBR 5.<p>Source note: Page 35 point 78 attributes the relation loosely to NRS. The identified reference is DoR Flexible 2021 section 5.2, equations 13-14, via corrected pavement notes.</p><p>Capsule 4th ed., p. 35; topic 9 point 78.</p>",
+          "explanation": "For CBR values up to 5%, the resilient modulus is \\(M_R = 10 \\times \\text{CBR}\\), so \\(M_R = 10 \\times 5 = 50\\) MPa.<p>Capsule 4th ed., p. 35; topic 9 point 78.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4391,27 +4391,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00085",
           "src": "CAP4-09-00085",
-          "text": "A legacy CBR design chart has no separate weather axis. Which conclusion about pavement design is justified?",
+          "text": "The design factor not considered in the CBR method is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Weather can be omitted because only traffic and CBR can affect performance"
+              "text": "Wheel load"
             },
             {
               "key": "b",
-              "text": "Soaked CBR completely replaces drainage and frost evaluation"
+              "text": "Subgrade strength"
             },
             {
               "key": "c",
-              "text": "Air temperature matters only during survey, never during service"
+              "text": "Traffic volume"
             },
             {
               "key": "d",
-              "text": "Climate still matters through moisture, temperature and other design checks"
+              "text": "Weather"
             }
           ],
           "answer": "d",
-          "explanation": "Absence of an explicit chart variable does not remove the physical effects of weather. Moisture changes support, heat changes asphalt response, and frost can affect soils; DoR Flexible 2021 treats environmental factors explicitly.<p>Source note: Page 35 point 81&#39;s categorical exclusion of weather is corrected using the pavement notes&#39; design-cbr-and-performance-reliability context and weather caution.</p><p>Capsule 4th ed., p. 35; topic 9 point 81.</p>",
+          "explanation": "The CBR design method relates pavement thickness to the subgrade CBR, the wheel load and the traffic; the effect of weather is not considered.<p>Capsule 4th ed., p. 35; topic 9 point 81.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4424,32 +4424,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00086",
           "src": "CAP4-09-00086",
-          "text": "A Benkelman-beam overlay study explicitly adopts the conventional 35 degrees C reference temperature. Why are comparable asphalt rebound measurements corrected to that reference?",
+          "text": "The standard temperature taken for the rebound deflection calculation in the Benkelman beam test is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Asphalt stiffness and measured rebound depend on pavement temperature"
+              "text": "35°C"
             },
             {
               "key": "b",
-              "text": "The correction removes seasonal subgrade moisture effects completely"
+              "text": "45°C"
             },
             {
               "key": "c",
-              "text": "The correction converts a displacement directly into CBR"
+              "text": "25°C"
             },
             {
               "key": "d",
-              "text": "Every pavement has its maximum deflection at exactly 35 degrees C"
+              "text": "60°C"
             }
           ],
           "answer": "a",
-          "explanation": "Asphalt response changes with temperature, so normalisation helps compare rebound measurements on a common basis. Temperature correction is distinct from seasonal moisture correction and does not convert deflection into a penetration ratio.<p>Source note: Page 35 point 82: 35 degrees C is an explicit conventional study assumption, not claimed as a universal or freshly verified current Nepal requirement. Parent should confirm the applicable BBD/overlay manual and limits.</p><p>Capsule 4th ed., p. 35; topic 9 point 82.</p>",
+          "explanation": "Benkelman beam deflections of a bituminous pavement vary with temperature, so measured values are corrected to the standard temperature of 35°C before overlay design.<p>Capsule 4th ed., p. 35; topic 9 point 82.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4462,32 +4462,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00087",
           "src": "CAP4-09-00087",
-          "text": "A single-lane Benkelman-beam survey drawing specifies the test wheel path 0.60 m inward from the pavement edge. On a symmetric 3.75 m carriageway, how far is this path from the centreline?",
+          "text": "In the Benkelman beam test on a single lane road, the deflection is checked at ______ from the pavement edge.",
           "options": [
             {
               "key": "a",
-              "text": "1.275 m"
+              "text": "0.6 m"
             },
             {
               "key": "b",
-              "text": "1.875 m"
+              "text": "1.5 m"
             },
             {
               "key": "c",
-              "text": "0.600 m"
+              "text": "0.9 m"
             },
             {
               "key": "d",
-              "text": "2.475 m"
+              "text": "0.3 m"
             }
           ],
           "answer": "a",
-          "explanation": "The centreline is \\(\\dfrac{3.75}{2} = 1.875\\) m from the edge. The specified test path is 0.60 m inward, leaving \\[1.875 - 0.60 = 1.275\\ \\text{m}\\] to the centreline. Edge offset and centreline offset are different datums.<p>Source note: Page 35 point 83: the 0.60 m layout is explicitly stipulated, not certified as a universal single-lane requirement; precise applicable BBD method remains for parent review.</p><p>Capsule 4th ed., p. 35; topic 9 point 83.</p>",
+          "explanation": "Deflection is measured in the outer wheel path: 0.6 m from the edge for a single lane road, 0.9 m for a two-lane road and 1.5 m for wider carriageways.<p>Capsule 4th ed., p. 35; topic 9 point 83.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4500,32 +4500,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00091",
           "src": "CAP4-09-00091",
-          "text": "For the granular-base context in DoR Flexible Pavement Guidelines 2021 section 7.1, which recommended minimum thickness contradicts an unrestricted 100 mm base rule?",
+          "text": "The minimum thickness of the base of a flexible pavement is ______.",
           "options": [
             {
               "key": "a",
-              "text": "150 mm granular base"
+              "text": "10 cm"
             },
             {
               "key": "b",
-              "text": "100 mm granular base"
+              "text": "5 cm"
             },
             {
               "key": "c",
-              "text": "300 mm granular base"
+              "text": "45 cm"
             },
             {
               "key": "d",
-              "text": "200 mm granular base"
+              "text": "30 cm"
             }
           ],
           "answer": "a",
-          "explanation": "Section 7.1 recommends at least 150 mm for the identified granular-base context. A separate 100 mm granular crack-relief layer over CTB serves another function. Structural demand and constructible lift thickness remain additional checks.<p>Source note: Page 35 point 87&#39;s universal 10 cm minimum is rejected; the replacement names the material, procedure and clause recorded in corrected pavement notes.</p><p>Capsule 4th ed., p. 35; topic 9 point 87.</p>",
+          "explanation": "A base course must spread the wheel load over the layers below, so it is given a minimum thickness of 10 cm; thinner bases cannot be laid and compacted properly.<p>Capsule 4th ed., p. 35; topic 9 point 87.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4543,27 +4543,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00092",
           "src": "CAP4-09-00092",
-          "text": "The water table rises into a moisture-sensitive pavement foundation. Why should a dry-season modulus of subgrade reaction not automatically be retained?",
+          "text": "The coefficient of subgrade reaction does not depend upon ______.",
           "options": [
             {
               "key": "a",
-              "text": "Water can change CBR but can never affect a plate-load response"
+              "text": "The type of soil"
             },
             {
               "key": "b",
-              "text": "Groundwater matters only if it overtops the wearing surface"
+              "text": "The density of the soil"
             },
             {
               "key": "c",
-              "text": "Wetting can change support response and the applicable k value"
+              "text": "The water table"
             },
             {
               "key": "d",
-              "text": "The k value is purely a slab property independent of foundation state"
+              "text": "The size of the plate"
             }
           ],
           "answer": "c",
-          "explanation": "The foundation's pressure-deflection response depends on its moisture and support conditions, so seasonal wetting may change k. A dry test cannot automatically represent wet service; k also depends on the test/model scale and is not an intrinsic slab constant.<p>Source note: Page 35 point 88&#39;s groundwater exclusion is corrected using weather-groundwater-and-frost in pavement notes; FHWA NHI-05-037 section 5.4 text independently confirms moisture-dependent support properties.</p><p>Capsule 4th ed., p. 35; topic 9 point 88.</p>",
+          "explanation": "The modulus of subgrade reaction \\(k = \\dfrac{p}{\\Delta}\\) is found from a plate load test; it depends on the soil type, its density and the plate size, but not on the water table.<p>Capsule 4th ed., p. 35; topic 9 point 88.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4576,32 +4576,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00093",
           "src": "CAP4-09-00093",
-          "text": "Which item is normally a separate geohazard assessment rather than a direct specimen-conditioning variable in an ordinary laboratory CBR test?",
+          "text": "Which of the following factors does not primarily influence the subgrade capacity?",
           "options": [
             {
               "key": "a",
-              "text": "Specimen water content"
+              "text": "Soil type"
             },
             {
               "key": "b",
-              "text": "Site earthquake shaking hazard"
+              "text": "Seismic activity"
             },
             {
               "key": "c",
-              "text": "Specimen dry density"
+              "text": "Moisture content"
             },
             {
               "key": "d",
-              "text": "Specimen soaking condition"
+              "text": "Degree of compaction"
             }
           ],
           "answer": "b",
-          "explanation": "Moisture, density and soaking directly define the CBR specimen condition. Earthquake hazard is assessed separately, but seismic settlement, liquefaction or slope movement can still threaten the road; separate assessment does not mean irrelevance.<p>Source note: Page 35 point 89: narrows the comparison to ordinary CBR conditioning instead of claiming seismic activity cannot affect highway foundations.</p><p>Capsule 4th ed., p. 35; topic 9 point 89.</p>",
+          "explanation": "Subgrade capacity depends mainly on the soil type, its moisture content and the degree of compaction; seismic activity is not a primary factor.<p>Capsule 4th ed., p. 35; topic 9 point 89.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4614,32 +4614,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00094",
           "src": "CAP4-09-00094",
-          "text": "Within an unbound granular base of a flexible pavement, how is wheel-induced load primarily transmitted through the material skeleton?",
+          "text": "In flexible pavements, the load is transferred to the lower layers by ______.",
           "options": [
             {
               "key": "a",
-              "text": "Through hydrostatic pressure replacing all grain contact"
+              "text": "Tension in the surface layer"
             },
             {
               "key": "b",
-              "text": "Through particle contacts and interlocking"
+              "text": "Grain-to-grain contact"
             },
             {
               "key": "c",
-              "text": "Through cohesive continuity of a bituminous binder film"
+              "text": "Pore water pressure"
             },
             {
               "key": "d",
-              "text": "Through flexure of a continuously cemented slab"
+              "text": "Slab action"
             }
           ],
           "answer": "b",
-          "explanation": "An unbound granular skeleton carries load through contacts and interlock, spreading stresses to lower layers. The statement is specific to granular layers; asphalt also has binder-dependent continuum stiffness, and rigid slabs rely strongly on flexure.<p>Source note: Pages 35/37 points 90/141 duplicate the granular-contact principle; the layer qualification avoids treating the entire asphalt pavement as dry aggregate.</p><p>Capsule 4th ed., pp. 35, 37; topic 9 point 90; topic 9 point 141.</p>",
+          "explanation": "A flexible pavement has little flexural strength, so wheel loads spread downward through grain-to-grain contact of the aggregate; a rigid pavement distributes them by slab action.<p>Capsule 4th ed., pp. 35, 37; topic 9 point 90; topic 9 point 141.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4654,32 +4654,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00098",
           "src": "CAP4-09-00098",
-          "text": "Bars are anchored across a longitudinal joint to resist separation of adjacent concrete traffic lanes. Which detail is intended?",
+          "text": "In rigid pavements, tie bars are provided across ______.",
           "options": [
             {
               "key": "a",
-              "text": "Tie bars crossing the longitudinal joint"
+              "text": "Longitudinal joints"
             },
             {
               "key": "b",
-              "text": "Smooth dowels crossing a transverse joint"
+              "text": "Expansion joints"
             },
             {
               "key": "c",
-              "text": "Crack-control mesh confined within each separate slab"
+              "text": "Transverse contraction joints"
             },
             {
               "key": "d",
-              "text": "Longitudinal bars ending before the joint face"
+              "text": "Warping joints"
             }
           ],
           "answer": "a",
-          "explanation": "Tie bars develop axial restraint through anchorage on both sides of a longitudinal joint. They help keep lanes together and preserve interlock; their main role differs from smooth transverse-joint dowels designed for load transfer with movement.<p>Capsule 4th ed., p. 35; topic 9 point 94.</p>",
+          "explanation": "Tie bars are deformed bars placed across longitudinal joints to hold adjacent lanes together and stop them separating; dowel bars at transverse joints transfer load.<p>Capsule 4th ed., p. 35; topic 9 point 94.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4692,32 +4692,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00099",
           "src": "CAP4-09-00099",
-          "text": "A transverse concrete-pavement joint must share wheel load while allowing the intended longitudinal opening and closing. Which arrangement best serves that purpose?",
+          "text": "Dowel bars are used in rigid pavements for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Fully bonded deformed ties restraining joint opening"
+              "text": "Tying adjacent lanes together"
             },
             {
               "key": "b",
-              "text": "Longitudinal bars stopping short of the joint"
+              "text": "Draining the joints"
             },
             {
               "key": "c",
-              "text": "Sealant alone with no load-transfer mechanism"
+              "text": "Increasing the slab thickness"
             },
             {
               "key": "d",
-              "text": "Aligned dowels with the specified movement allowance"
+              "text": "Transferring load from one slab to another"
             }
           ],
           "answer": "d",
-          "explanation": "Dowels transfer load through bar shear/bending and concrete bearing while their specified debonding or sleeve arrangement permits movement. Misalignment or unintended bonding can restrain the joint and cause distress.<p>Capsule 4th ed., p. 35; topic 9 point 95.</p>",
+          "explanation": "Dowel bars are smooth bars across transverse joints; they transfer wheel load from one slab to the next while letting the slabs expand and contract freely.<p>Capsule 4th ed., p. 35; topic 9 point 95.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4730,32 +4730,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00111",
           "src": "CAP4-09-00111",
-          "text": "Under the fourth-power approximation for comparable single-axle dual-wheel loads, how many 80 kN reference passes represent one 100 kN axle pass, to three decimals?",
+          "text": "The equivalent wheel load of a 100 kN load is ______ repetitions of the design load.",
           "options": [
             {
               "key": "a",
-              "text": "2.250 passes"
+              "text": "1.25"
             },
             {
               "key": "b",
-              "text": "2.441 passes"
+              "text": "2.25"
             },
             {
               "key": "c",
-              "text": "1.563 passes"
+              "text": "4.00"
             },
             {
               "key": "d",
-              "text": "1.250 passes"
+              "text": "0.80"
             }
           ],
           "answer": "b",
-          "explanation": "The equivalence is \\[\\begin{aligned} \\left(\\dfrac{100}{80}\\right)^4 &amp;= 1.25^4 \\\\ &amp;= 2.44140625 \\end{aligned}\\] or 2.441 passes. A 2.25 factor is not obtained from these loads under this model, and the result is not a wheel-load force.<p>Source note: Page 36 point 107 omits the reference load and confuses equivalent wheel load with a repetition factor. The stem explicitly supplies 80 kN and comparable axle geometry; the source&#39;s 2.25 is not adopted.</p><p>Capsule 4th ed., p. 36; topic 9 point 107.</p>",
+          "explanation": "Pavement damage increases much faster than the load itself, so a 100 kN load is taken as equivalent to 2.25 repetitions of the design load.<p>Capsule 4th ed., p. 36; topic 9 point 107.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4768,32 +4768,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00126",
           "src": "CAP4-09-00126",
-          "text": "An illustrative joint detail specifies dowel diameter 2.5 cm, length 50 cm, spacing 30 cm and slab thickness 25 cm. Which complete millimetre schedule preserves those dimensions in the same order?",
+          "text": "For a design load of 5100 kg and a 25 cm thick slab, IRC recommends dowel bars of ______.",
           "options": [
             {
               "key": "a",
-              "text": "25, 500, 300, 250 mm"
+              "text": "2.5 cm diameter and 50 cm length at 30 cm spacing"
             },
             {
               "key": "b",
-              "text": "250, 500, 300, 25 mm"
+              "text": "2.5 cm diameter and 30 cm length at 50 cm spacing"
             },
             {
               "key": "c",
-              "text": "25, 500, 250, 300 mm"
+              "text": "3.2 cm diameter and 60 cm length at 20 cm spacing"
             },
             {
               "key": "d",
-              "text": "25, 50, 30, 250 mm"
+              "text": "1.2 cm diameter and 50 cm length at 30 cm spacing"
             }
           ],
           "answer": "a",
-          "explanation": "Multiplying each centimetre value by ten gives diameter 25, length 500, spacing 300 and slab thickness 250 mm. Correct conversion does not validate the joint design: load transfer, bearing, movement and anchorage still require checks.<p>Source note: Page 36 point 120: all four geometric facts retained as an illustrative detail. The alleged IRC recommendation has no identified edition/clause and is not certified as a current design schedule.</p><p>Capsule 4th ed., p. 36; topic 9 point 120.</p>",
+          "explanation": "For a design wheel load of 5100 kg on a 25 cm slab, IRC recommends dowel bars 2.5 cm in diameter and 50 cm long, spaced 30 cm apart across the joint.<p>Capsule 4th ed., p. 36; topic 9 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4806,32 +4806,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00127",
           "src": "CAP4-09-00127",
-          "text": "If a legacy dowel-design example's '5100 kg load' means 5100 kgf, what force is it approximately, using 1 kgf = 9.80665 N?",
+          "text": "For a 25 cm thick slab with a design load of 5100 kg, IRC recommends a dowel bar spacing of ______.",
           "options": [
             {
               "key": "a",
-              "text": "5.100 kN"
+              "text": "50 cm"
             },
             {
               "key": "b",
-              "text": "50.014 kN"
+              "text": "30 cm"
             },
             {
               "key": "c",
-              "text": "51,000 kN"
+              "text": "15 cm"
             },
             {
               "key": "d",
-              "text": "500.139 kN"
+              "text": "25 cm"
             }
           ],
           "answer": "b",
-          "explanation": "Convert the intended force unit: \\[\\begin{aligned} &amp;\\dfrac{5100 \\times 9.80665}{1000} \\\\ &amp;= 50.013915\\ \\text{kN} \\end{aligned}\\] about 50.014 kN. A kilogram alone is a mass unit; neither this force nor slab thickness alone fixes a valid dowel schedule.<p>Source note: Page 36 point 120: explicitly resolves the mass-versus-force shorthand without authenticating the unverified IRC detailing claim.</p><p>Capsule 4th ed., p. 36; topic 9 point 120.</p>",
+          "explanation": "The dowels recommended for this case are 2.5 cm in diameter and 50 cm long, placed at 30 cm centres across the joint.<p>Capsule 4th ed., p. 36; topic 9 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4844,32 +4844,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00131",
           "src": "CAP4-09-00131",
-          "text": "A road section relies on a Portland-cement concrete slab to distribute wheel load through substantial bending stiffness. Which pavement family does this describe?",
+          "text": "Concrete lining is done in ______ pavement.",
           "options": [
             {
               "key": "a",
-              "text": "Bituminous surface dressing alone"
+              "text": "Earthen"
             },
             {
               "key": "b",
-              "text": "Unbound gravel pavement"
+              "text": "Flexible"
             },
             {
               "key": "c",
-              "text": "Rigid pavement"
+              "text": "Rigid"
             },
             {
               "key": "d",
-              "text": "Conventional flexible asphalt pavement"
+              "text": "Gravel"
             }
           ],
           "answer": "c",
-          "explanation": "Rigid pavement uses the concrete slab's flexural stiffness to spread wheel loads over its support. The foundation still carries reactions and needs stable drainage and support; calling the slab a lining does not remove its structural role.<p>Source note: Page 36 point 125&#39;s vague &#39;concrete lining&#39; is interpreted explicitly as a load-bearing cement-concrete road slab, not any concrete layer anywhere in a pavement.</p><p>Capsule 4th ed., p. 36; topic 9 point 125.</p>",
+          "explanation": "A rigid pavement is a slab of cement concrete that spreads the wheel loads by its flexural strength; flexible pavements use bituminous and granular layers.<p>Capsule 4th ed., p. 36; topic 9 point 125.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4882,32 +4882,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00138",
           "src": "CAP4-09-00138",
-          "text": "In a conventional asphalt pavement containing all the listed layers, which downward load path follows their physical order?",
+          "text": "In an asphalt pavement, the wheel load of the vehicle is transferred in the order ______.",
           "options": [
             {
               "key": "a",
-              "text": "Base, asphalt surface, subgrade, subbase"
+              "text": "Base, asphalt, subgrade, sub-base"
             },
             {
               "key": "b",
-              "text": "Asphalt surface, base, subbase, subgrade"
+              "text": "Asphalt, base, sub-base, subgrade"
             },
             {
               "key": "c",
-              "text": "Asphalt surface, subgrade, base, subbase"
+              "text": "Asphalt, sub-base, base, subgrade"
             },
             {
               "key": "d",
-              "text": "Asphalt surface, subbase, subgrade, base"
+              "text": "Subgrade, sub-base, base, asphalt"
             }
           ],
           "answer": "b",
-          "explanation": "The surface receives the tyre load and passes stresses through base and subbase to the prepared subgrade. Layer stiffness and thickness govern stress distribution; the sequence does not imply identical stress at every depth or that all designs contain every layer.<p>Capsule 4th ed., p. 36; topic 9 point 131.</p>",
+          "explanation": "The wheel load passes from the asphalt surface to the base, then to the sub-base and finally to the subgrade, spreading over a wider area in each layer.<p>Capsule 4th ed., p. 36; topic 9 point 131.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4925,15 +4925,15 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00143",
           "src": "CAP4-09-00143",
-          "text": "For the jointed concrete-pavement arrangement in DoR Rigid Pavement Guidelines 2021 section 4.1, what upper spacing of transverse contraction joints is stated to help control nighttime top-down cracking?",
+          "text": "The typical maximum spacing of contraction joints in an unreinforced rigid concrete pavement is ______.",
           "options": [
             {
               "key": "a",
-              "text": "6.0 m"
+              "text": "1.5 m"
             },
             {
               "key": "b",
-              "text": "2.5 m"
+              "text": "10 m"
             },
             {
               "key": "c",
@@ -4941,11 +4941,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "d",
-              "text": "9.0 m"
+              "text": "25 m"
             }
           ],
           "answer": "c",
-          "explanation": "The cited arrangement limits contraction-joint spacing to 4.5 m, with aggregate and temperature considerations. This is a panel-length provision, not the separate 4.5 m paving-width trigger for a longitudinal joint or a value derived from slab thickness alone.<p>Source note: Page 37 point 138: scope and identified 2021 clause supplied. The guideline&#39;s mirror provenance and lack of fresh adoption verification are recorded in the audit.</p><p>Capsule 4th ed., p. 37; topic 9 point 138.</p>",
+          "explanation": "Transverse contraction joints in plain concrete pavements are kept about 4.5 m apart so that the slabs crack only at the joints as they shrink and warp.<p>Capsule 4th ed., p. 37; topic 9 point 138.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4963,27 +4963,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00154",
           "src": "CAP4-09-00154",
-          "text": "A summary assigns a 'minimum 4.5 m contraction-joint spacing' to ordinary flexible asphalt pavement. Which correction is appropriate?",
+          "text": "In flexible pavement, the minimum contraction joint spacing provided is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Every asphalt surface must be saw-cut at least every 4.5 m"
+              "text": "1.5 m"
             },
             {
               "key": "b",
-              "text": "The cited 4.5 m upper spacing concerns a specified jointed concrete system"
+              "text": "4.5 m"
             },
             {
               "key": "c",
-              "text": "The value is the mandatory total width of every flexible carriageway"
+              "text": "25 m"
             },
             {
               "key": "d",
-              "text": "The value is a universal lower spacing for concrete expansion joints"
+              "text": "10 m"
             }
           ],
           "answer": "b",
-          "explanation": "Regular transverse contraction joints manage shrinkage in jointed concrete slabs. The identified DoR rigid-pavement provision gives an upper spacing of 4.5 m in its stated arrangement, not a minimum for ordinary flexible asphalt pavement.<p>Source note: Page 37 point 153 contains both pavement-type and minimum/maximum errors; corrected against DoR Rigid 2021 section 4.1 as recorded in the pavement notes.</p><p>Capsule 4th ed., p. 37; topic 9 point 153.</p>",
+          "explanation": "Contraction joints are provided at a spacing of 4.5 m, so that shrinkage cracks form at the joints rather than at random.<p>Capsule 4th ed., p. 37; topic 9 point 153.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4996,7 +4996,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0905",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -5008,27 +5008,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-01-00022",
           "src": "CAP4-01-00022",
-          "text": "An asphalt crack repeatedly opens and closes with temperature. Which repair concept addresses movement more directly than ordinary filling of a relatively inactive crack?",
+          "text": "The technique primarily used for sealing cracks in asphalt pavement is known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "Crack filling with a low-movement filler"
+              "text": "Patching"
             },
             {
               "key": "b",
-              "text": "Full-width surface texturing alone"
+              "text": "Surface dressing"
             },
             {
               "key": "c",
-              "text": "Cold milling of intact surface alone"
+              "text": "Scarifying"
             },
             {
               "key": "d",
-              "text": "Crack sealing with a suitable flexible sealant"
+              "text": "Crack filling"
             }
           ],
           "answer": "d",
-          "explanation": "Sealing uses a suitable flexible material and joint preparation to accommodate active movement and reduce water entry. Filling is generally associated with relatively inactive cracks; the two terms are not technically identical.<p>Source note: p2 n22 conflates crack sealing and crack filling; the distinction is made explicit rather than retained as a synonym.</p><p>Capsule 4th ed., p. 2; topic 1 point 22.</p>",
+          "explanation": "Cracks in an asphalt pavement are sealed by crack filling, in which a bituminous filler is placed in the cleaned cracks to keep water out of the pavement. Patching repairs potholes, surface dressing renews the whole surface, and scarifying loosens an existing surface.<p>Capsule 4th ed., p. 2; topic 1 point 22.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5041,12 +5041,12 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-02-00085",
           "src": "CAP4-02-00085",
-          "text": "Trials are planned to reduce the plasticity of a reactive expansive clay subgrade. Which additive is a conventional candidate because it can cause cation exchange, flocculation and later pozzolanic reactions?",
+          "text": "The best suited material for stabilisation of black cotton soils is ______.",
           "options": [
             {
               "key": "a",
@@ -5054,19 +5054,19 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "b",
-              "text": "Unactivated Class F fly ash"
+              "text": "Common salt"
             },
             {
               "key": "c",
-              "text": "Finely ground limestone"
+              "text": "Bitumen emulsion"
             },
             {
               "key": "d",
-              "text": "Bitumen emulsion"
+              "text": "Calcium chloride"
             }
           ],
           "answer": "a",
-          "explanation": "Lime can modify reactive clay and, with suitable mineralogy, produce longer-term cementitious products. Dosage and effectiveness need tests; sulfate-rich or organic soils can pose problems. It is a candidate treatment, not an unconditional best additive for every black soil.<p>Source note: Page 8 point 79 is qualified by clay reactivity and laboratory verification; the tested concept maps to subgrade stabilization.</p><p>Capsule 4th ed., p. 8; topic 2 point 79.</p>",
+          "explanation": "Hydrated lime reacts with the clay minerals of black cotton soil, reducing its plasticity and swelling and increasing its strength, so it is the best suited stabiliser. Bitumen suits sandy soils, and salts are used mainly to control dust and moisture.<p>Capsule 4th ed., p. 8; topic 2 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5079,32 +5079,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00053",
           "src": "CAP4-09-00053",
-          "text": "A mass-haul ordinate rises from 600 to 1000 cubic metres over a 50 m reach, using cut-positive equivalent compacted volumes. What is the average signed net earthwork area over that reach?",
+          "text": "The slope of a mass haul diagram gives the ______.",
           "options": [
             {
               "key": "a",
-              "text": "+8 square metres"
+              "text": "Rate of change of earthwork volume over distance"
             },
             {
               "key": "b",
-              "text": "-8 square metres"
+              "text": "Free haul distance"
             },
             {
               "key": "c",
-              "text": "+20 square metres"
+              "text": "Total haul distance"
             },
             {
               "key": "d",
-              "text": "+400 square metres"
+              "text": "Volume of borrow"
             }
           ],
           "answer": "a",
-          "explanation": "The mass-curve slope is the change in cumulative volume divided by distance: \\[\\dfrac{1000 - 600}{50} = +8\\ \\text{m}^2\\] It represents average net cut area on the common volume basis, not the total cumulative volume or haul distance.<p>Capsule 4th ed., p. 34; topic 9 point 52.</p>",
+          "explanation": "A mass haul diagram plots the cumulative earthwork volume against distance, so its slope is the rate of change of volume with distance, rising in cutting and falling in filling.<p>Capsule 4th ed., p. 34; topic 9 point 52.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5117,32 +5117,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00056",
           "src": "CAP4-09-00056",
-          "text": "With cut positive, a mass-haul curve rises through a cutting and then falls through the following fill. What occurs at that cut-to-fill transition?",
+          "text": "The maximum ordinate of a mass haul diagram occurs at the ______.",
           "options": [
             {
               "key": "a",
-              "text": "A local maximum of cumulative volume"
+              "text": "End of a cutting"
             },
             {
               "key": "b",
-              "text": "An obligatory maximum haul distance"
+              "text": "Start of the project"
             },
             {
               "key": "c",
-              "text": "An obligatory zero cumulative volume"
+              "text": "Middle of an embankment"
             },
             {
               "key": "d",
-              "text": "A local minimum of cumulative volume"
+              "text": "Start of a cutting"
             }
           ],
           "answer": "a",
-          "explanation": "Net cut makes the cumulative ordinate rise, while net fill makes it fall. Their transition therefore forms a local maximum, not necessarily the highest ordinate of the whole project or a point of zero balance.<p>Source note: Page 34 point 55: &#39;maximum&#39; is qualified as local for a cut-to-fill transition.</p><p>Capsule 4th ed., p. 34; topic 9 point 55.</p>",
+          "explanation": "The mass haul curve rises through a cutting and falls through a fill, so its maximum ordinate occurs where the cutting ends and filling begins.<p>Capsule 4th ed., p. 34; topic 9 point 55.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5155,32 +5155,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00057",
           "src": "CAP4-09-00057",
-          "text": "On a cut-positive mass-haul plot, which observation establishes that a reach consumes more fill than it supplies as usable cut?",
+          "text": "In a mass haul diagram, the negative sign represents ______.",
           "options": [
             {
               "key": "a",
-              "text": "The curve intersects a horizontal balance line"
+              "text": "Free haul"
             },
             {
               "key": "b",
-              "text": "The cumulative ordinate is below the chosen datum"
+              "text": "Cutting"
             },
             {
               "key": "c",
-              "text": "The cumulative ordinate falls along the reach"
+              "text": "Filling"
             },
             {
               "key": "d",
-              "text": "The cumulative ordinate is positive at the reach end"
+              "text": "Overhaul"
             }
           ],
           "answer": "c",
-          "explanation": "Fill is a negative increment under the declared sign convention, so a net-fill reach makes the curve fall. A positive or negative ordinate instead describes the accumulated balance relative to its datum, not the local earthwork type.<p>Source note: Page 34 point 56: distinguishes negative fill increments from negative cumulative ordinates.</p><p>Capsule 4th ed., p. 34; topic 9 point 56.</p>",
+          "explanation": "Cut volumes are taken as positive and fill volumes as negative, so a falling mass curve, with negative volumes, represents filling.<p>Capsule 4th ed., p. 34; topic 9 point 56.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5193,32 +5193,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00058",
           "src": "CAP4-09-00058",
-          "text": "A cut-positive mass-haul diagram starts at zero and ends at -250 cubic metres after all volumes are converted to equivalent compacted volume. What does the final balance indicate?",
+          "text": "In a mass haul diagram, if the end ordinate is negative, it indicates ______.",
           "options": [
             {
               "key": "a",
-              "text": "A mean haul distance of 250 m for the whole project"
+              "text": "Balanced earthwork"
             },
             {
               "key": "b",
-              "text": "A requirement for 250 loose cubic metres regardless of density"
+              "text": "Free haul"
             },
             {
               "key": "c",
-              "text": "A net deficit of 250 compacted cubic metres requiring borrow"
+              "text": "A deficit volume, to be met by borrow"
             },
             {
               "key": "d",
-              "text": "A net surplus of 250 compacted cubic metres available for spoil"
+              "text": "A surplus volume, to be wasted"
             }
           ],
           "answer": "c",
-          "explanation": "The endpoint is 250 cubic metres below the starting balance, so required fill exceeds usable cut by that amount. Borrow supplies the deficit; its bank or loose volume requires separate density and bulking conversions.<p>Source note: Pages 34/36 points 57/133 express the same deficit/borrow conclusion. Corrected &#39;burrow&#39; to borrow and stated the zero datum and common volume basis.</p><p>Capsule 4th ed., pp. 34, 36; topic 9 point 57; topic 9 point 133.</p>",
+          "explanation": "A negative final ordinate means that the fill needed exceeds the cut available, so the deficit volume must be brought in from a borrow pit.<p>Capsule 4th ed., pp. 34, 36; topic 9 point 57; topic 9 point 133.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5233,32 +5233,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00061",
           "src": "CAP4-09-00061",
-          "text": "Repeated channelised traffic produces longitudinal wheel-path troughs with adjacent raised ridges. Which distress description best matches the measured transverse profile?",
+          "text": "Longitudinal ridging due to the channelisation of traffic is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Ravelling by progressive particle loss"
+              "text": "Bleeding"
             },
             {
               "key": "b",
-              "text": "Deliberately cut drainage grooving"
+              "text": "Ravelling"
             },
             {
               "key": "c",
-              "text": "Joint-reflection cracking without deformation"
+              "text": "Shoving"
             },
             {
               "key": "d",
-              "text": "Rutting with lateral displacement"
+              "text": "Grooving"
             }
           ],
           "answer": "d",
-          "explanation": "A wheel-path trough is rutting; adjacent ridges can indicate lateral shear displacement. Shoving describes local displacement or bulging, often near braking areas. Engineered grooves should not be confused with traffic-induced deformation.<p>Source note: Page 35 point 60&#39;s bare &#39;longitudinal ridging = grooving&#39; is ambiguous. Corrected construction notes require profile and location to distinguish rutting, shoving and intentional grooving; original intended label remains a parent check.</p><p>Capsule 4th ed., p. 35; topic 9 point 60.</p>",
+          "explanation": "When traffic keeps to fixed wheel paths, the pavement develops longitudinal ridges and troughs along those paths; this distress is called grooving.<p>Capsule 4th ed., p. 35; topic 9 point 60.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5271,32 +5271,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00088",
           "src": "CAP4-09-00088",
-          "text": "In a conventional water-bound macadam layer, which material can serve as the approved fine binding material worked into the stone skeleton with water and rolling?",
+          "text": "In water bound macadam roads, the binding material is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Straight-run paving bitumen"
+              "text": "Bitumen"
             },
             {
               "key": "b",
-              "text": "Hydrated lime"
+              "text": "Lime"
             },
             {
               "key": "c",
-              "text": "Portland cement"
+              "text": "Cement"
             },
             {
               "key": "d",
-              "text": "Suitable stone dust"
+              "text": "Stone dust"
             }
           ],
           "answer": "d",
-          "explanation": "Suitable stone dust can fill and bind the interstices under the specified WBM process. Its grading and plasticity must satisfy the relevant specification; WBM is not bonded by bitumen, and arbitrary soil is not an acceptable substitute.<p>Capsule 4th ed., p. 35; topic 9 point 84.</p>",
+          "explanation": "In water bound macadam, stone dust or screenings with water are worked into the voids of the rolled coarse aggregate and bind the stones together without bitumen or cement.<p>Capsule 4th ed., p. 35; topic 9 point 84.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5309,32 +5309,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00089",
           "src": "CAP4-09-00089",
-          "text": "Which conventional macadam process mixes binder with aggregate before laying the material as a bituminous base or binder course?",
+          "text": "The premix used in the base course is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Penetration macadam spraying"
+              "text": "Water bound macadam"
             },
             {
               "key": "b",
-              "text": "Surface dressing over an existing base"
+              "text": "Surface dressing"
             },
             {
               "key": "c",
-              "text": "Water-bound macadam wet rolling"
+              "text": "Penetration macadam"
             },
             {
               "key": "d",
-              "text": "Bituminous-bound macadam premix"
+              "text": "Bituminous bound macadam"
             }
           ],
           "answer": "d",
-          "explanation": "The premix process coats aggregate before placement. Penetration macadam first rolls a stone skeleton and then sprays binder; WBM uses its specified fines and water. BM and DBM have different gradings and must not be treated as identical products.<p>Source note: Page 35 point 85; BBM retained as syllabus teaching terminology, not a claim of a separate DoR product specification. SSRBW sections 1307 and 1308 distinguish BM and DBM.</p><p>Capsule 4th ed., p. 35; topic 9 point 85.</p>",
+          "explanation": "Bituminous bound macadam is a premix of graded aggregate and bitumen, laid and rolled as a base or binder course; penetration macadam is sprayed in place.<p>Capsule 4th ed., p. 35; topic 9 point 85.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5347,32 +5347,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00090",
           "src": "CAP4-09-00090",
-          "text": "An inadequately compacted pavement layer loses thickness under repeated traffic as its particles pack more closely. Which mechanism explains the resulting wheel-path depression?",
+          "text": "One of the probable causes of rutting on flexible pavements is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Elastic rebound after every axle"
+              "text": "Proper drainage"
             },
             {
               "key": "b",
-              "text": "Temperature-driven joint opening"
+              "text": "Very light traffic"
             },
             {
               "key": "c",
-              "text": "Surface oxidation without volume change"
+              "text": "An over-strong subgrade"
             },
             {
               "key": "d",
-              "text": "Post-construction densification"
+              "text": "Inadequate compaction of pavement layers"
             }
           ],
           "answer": "d",
-          "explanation": "Traffic can densify an undercompacted layer, causing permanent thickness loss and rutting. This is distinct from fully recoverable rebound; rutting can also result from shear instability even where initial compaction was adequate.<p>Capsule 4th ed., p. 35; topic 9 point 86.</p>",
+          "explanation": "Layers that are not compacted enough keep densifying under traffic, so the wheel paths sink and ruts form; weak mixes and subgrades also contribute.<p>Capsule 4th ed., p. 35; topic 9 point 86.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5385,12 +5385,12 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00095",
           "src": "CAP4-09-00095",
-          "text": "A thin controlled binder film is applied to sound, clean old asphalt immediately before a new bituminous layer to promote interlayer bond. What is its functionally correct name?",
+          "text": "The bitumen layer spread over an old pavement to bind a newer pavement layer to it is the ______.",
           "options": [
             {
               "key": "a",
@@ -5402,7 +5402,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "c",
-              "text": "Profile-corrective course"
+              "text": "Surface dressing"
             },
             {
               "key": "d",
@@ -5410,7 +5410,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "b",
-          "explanation": "Tack bonds the receiving surface to the new layer. Prime prepares an absorbent granular surface, seal treatments preserve a surface, and a profile-corrective course changes levels or thickness rather than merely bonding an interface.<p>Capsule 4th ed., p. 35; topic 9 point 91.</p>",
+          "explanation": "A tack coat is a thin bitumen application on an existing bituminous surface to bond the new layer to it; a prime coat is sprayed on a porous granular base.<p>Capsule 4th ed., p. 35; topic 9 point 91.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5423,32 +5423,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00096",
           "src": "CAP4-09-00096",
-          "text": "In penetration macadam under DoR SSRBW 2073, Third Amendment 2082, section 1304, which sequence correctly precedes placement of the key aggregate?",
+          "text": "In penetration macadam construction, the bitumen is sprayed ______.",
           "options": [
             {
               "key": "a",
-              "text": "Spray binder, premix coarse aggregate, roll the skeleton"
+              "text": "Before the aggregates are spread"
             },
             {
               "key": "b",
-              "text": "Premix binder and coarse aggregate, spread, spray water"
+              "text": "While mixing with the aggregates in a plant"
             },
             {
               "key": "c",
-              "text": "Spread key aggregate, spray binder, excavate the base"
+              "text": "Only after the key aggregate is removed"
             },
             {
               "key": "d",
-              "text": "Spread coarse aggregate, roll the skeleton, spray binder"
+              "text": "After the aggregates are spread and compacted"
             }
           ],
           "answer": "d",
-          "explanation": "Penetration macadam first develops a rolled coarse-stone skeleton and then introduces binder into its voids. Key aggregate and further rolling follow. This differs from premixing binder with aggregate before placement.<p>Capsule 4th ed., p. 35; topic 9 point 92.</p>",
+          "explanation": "In penetration macadam the coarse aggregate is spread and rolled first, then hot bitumen is sprayed so that it penetrates the voids; key aggregate is spread and rolled afterwards.<p>Capsule 4th ed., p. 35; topic 9 point 92.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5461,12 +5461,12 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00100",
           "src": "CAP4-09-00100",
-          "text": "Which named dense, plant-produced bituminous mixture is commonly specified as a high-quality wearing course, rather than an open-graded macadam base?",
+          "text": "The highest quality construction in the group of black top pavements is ______.",
           "options": [
             {
               "key": "a",
@@ -5474,7 +5474,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "b",
-              "text": "Open-graded bituminous macadam"
+              "text": "Bituminous bound macadam"
             },
             {
               "key": "c",
@@ -5482,11 +5482,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "d",
-              "text": "Water-bound macadam"
+              "text": "Surface dressing"
             }
           ],
           "answer": "c",
-          "explanation": "Bituminous concrete is a dense asphalt mixture commonly used for wearing courses, with its own grading and performance criteria. Calling it high quality does not make it universally superior to every purpose-designed surfacing under all conditions.<p>Source note: Page 35 point 96: replaces an absolute quality ranking with the BC product/function distinction in SSRBW section 1309 and corrected materials notes.</p><p>Capsule 4th ed., p. 35; topic 9 point 96.</p>",
+          "explanation": "Bituminous concrete is a dense, well-graded mix, plant-mixed and hot-laid under close control, so it is the highest quality black top surfacing.<p>Capsule 4th ed., p. 35; topic 9 point 96.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5504,27 +5504,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00101",
           "src": "CAP4-09-00101",
-          "text": "Which sequence correctly organises a new conventional flexible pavement with a premixed asphalt surface?",
+          "text": "The correct sequence of flexible road pavement construction stages in a highway is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Earthworks and compacted support layers; premix laying; rolling; tack as final surfacing"
+              "text": "Compaction, excavation, application of binder, spreading of premix"
             },
             {
               "key": "b",
-              "text": "Earthworks and compacted support layers; premix laying; prime/tack above it; rolling"
+              "text": "Spreading of premix, excavation, compaction, application of binder"
             },
             {
               "key": "c",
-              "text": "Earthworks and loose support layers; prime/tack; premix laying; compact all layers together"
+              "text": "Excavation, spreading of premix, application of binder, compaction"
             },
             {
               "key": "d",
-              "text": "Earthworks and compacted support layers; specified prime/tack; premix laying; rolling"
+              "text": "Excavation, application of binder, spreading of premix, compaction"
             }
           ],
           "answer": "d",
-          "explanation": "Prepare and compact the subgrade and specified support courses before treating the receiving interface, laying premix and compacting it. The source's abbreviated excavation-to-binder sequence omits essential foundation and base construction.<p>Source note: Page 35 point 97: restored the omitted supporting-layer preparation, with prime/tack chosen for the actual interface rather than used interchangeably.</p><p>Capsule 4th ed., p. 35; topic 9 point 97.</p>",
+          "explanation": "The road bed is excavated and prepared, a binder such as a prime or tack coat is applied, the premix is spread, and finally it is compacted by rolling.<p>Capsule 4th ed., p. 35; topic 9 point 97.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5537,32 +5537,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00102",
           "src": "CAP4-09-00102",
-          "text": "A concrete pavement develops a shallow fine network of surface cracks without evidence of a through-slab break. Which description is most appropriate?",
+          "text": "Thin hairline cracks on a pavement surface are also known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "Surface crazing"
+              "text": "Crazing"
             },
             {
               "key": "b",
-              "text": "Wheel-path rutting"
+              "text": "Ravelling"
             },
             {
               "key": "c",
-              "text": "Concrete joint faulting"
+              "text": "Rutting"
             },
             {
               "key": "d",
-              "text": "Asphalt alligator fatigue"
+              "text": "Alligator cracking"
             }
           ],
           "answer": "a",
-          "explanation": "Crazing describes a fine shallow crack network in the concrete surface, often related to surface shrinkage or finishing/curing. A single hairline crack alone does not establish crazing, and a shallow network is not automatically structural failure.<p>Source note: Page 36 point 98 is qualified by material, depth and network pattern rather than equating every thin crack with crazing.</p><p>Capsule 4th ed., p. 36; topic 9 point 98.</p>",
+          "explanation": "Crazing is a network of fine, shallow hairline cracks on the surface, usually from shrinkage; alligator cracking is deeper fatigue cracking of a bituminous pavement.<p>Capsule 4th ed., p. 36; topic 9 point 98.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5575,32 +5575,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00103",
           "src": "CAP4-09-00103",
-          "text": "Clean sandy soil has low plasticity and little reactive clay. Which chemical stabilisation is a reasonable candidate for trial design to develop a cemented skeleton?",
+          "text": "For sandy soils, the most common method of stabilisation is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Lime treatment relying only on clay pozzolanic reaction"
+              "text": "Lime stabilisation"
             },
             {
               "key": "b",
-              "text": "Compaction alone without any cementing-agent addition"
+              "text": "Salt water sprinkling"
             },
             {
               "key": "c",
-              "text": "Portland-cement stabilisation"
+              "text": "Soil-cement"
             },
             {
               "key": "d",
-              "text": "Calcium-chloride treatment intended solely for dust suppression"
+              "text": "Calcium chloride treatment"
             }
           ],
           "answer": "c",
-          "explanation": "Cement can bind a suitable granular sandy skeleton through hydration products. Lime's strong pozzolanic benefit needs suitable reactive fines; actual selection still requires trial mix strength, durability, workability and compatibility checks.<p>Source note: Page 36 point 99&#39;s &#39;most common&#39; is not treated as a measured prevalence claim or an automatic recommendation for every sand.</p><p>Capsule 4th ed., p. 36; topic 9 point 99.</p>",
+          "explanation": "Cement binds the grains of sandy soil into a hard mass, so soil-cement is the most common stabilisation for sands; lime works mainly with clayey soils.<p>Capsule 4th ed., p. 36; topic 9 point 99.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5613,12 +5613,12 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00104",
           "src": "CAP4-09-00104",
-          "text": "Which pavement distress is defined by longitudinal depressions following the usual wheel tracks?",
+          "text": "The longitudinal depression in the wheel path of bituminous pavements is called ______.",
           "options": [
             {
               "key": "a",
@@ -5638,7 +5638,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Rutting is permanent wheel-path depression and may originate in asphalt, granular layers or subgrade. Corrugation is a wave-like pattern, ravelling is particle loss, and bleeding is excess binder appearing at the surface.<p>Capsule 4th ed., p. 36; topic 9 point 100.</p>",
+          "explanation": "Rutting is a longitudinal depression along the wheel paths, caused by permanent deformation of the pavement layers or subgrade under repeated loads.<p>Capsule 4th ed., p. 36; topic 9 point 100.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5656,27 +5656,27 @@ window.CIVIL_SET_DATA["capsule-09"] = {
         {
           "id": "CAP4-09-00105",
           "src": "CAP4-09-00105",
-          "text": "Which roller is generally well suited to compacting a clean coarse-grained sand-and-gravel layer through particle rearrangement?",
+          "text": "The roller used to compact coarse-grained soil is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Vibratory smooth-drum roller"
+              "text": "Vibratory roller"
             },
             {
               "key": "b",
-              "text": "Padfoot roller chosen for cohesive clay"
+              "text": "Sheep-foot roller"
             },
             {
               "key": "c",
-              "text": "Grid roller selected primarily to break coarse rockfill"
+              "text": "Hand rammer"
             },
             {
               "key": "d",
-              "text": "Static finish roller used only for surface smoothing"
+              "text": "Grid roller"
             }
           ],
           "answer": "a",
-          "explanation": "Vibration assists granular particles in rearranging into a denser packing. Appropriate amplitude, lift thickness, moisture and pass pattern need trials; kneading padfoot action is primarily associated with cohesive-soil compaction.<p>Capsule 4th ed., p. 36; topic 9 point 101.</p>",
+          "explanation": "Vibration rearranges the grains of coarse, cohesionless soil into a dense packing, so vibratory rollers compact sand and gravel best; sheep-foot rollers suit clays.<p>Capsule 4th ed., p. 36; topic 9 point 101.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5689,32 +5689,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00107",
           "src": "CAP4-09-00107",
-          "text": "A specification note states only 'maximum subbase/premix thickness 30' without units or a material designation. What is needed before that value can govern construction?",
+          "text": "According to DoR, the maximum thickness of a sub-base or premix pavement layer is ______.",
           "options": [
             {
               "key": "a",
-              "text": "A decision to read 30 as centimetres of loose material for every lift"
+              "text": "100 cm"
             },
             {
               "key": "b",
-              "text": "A decision to read 30 as millimetres for every listed material"
+              "text": "3 cm"
             },
             {
               "key": "c",
-              "text": "The exact layer, unit, compacted-lift basis and governing clause"
+              "text": "30 cm"
             },
             {
               "key": "d",
-              "text": "The assumption that total designed thickness is also the lift maximum"
+              "text": "60 cm"
             }
           ],
           "answer": "c",
-          "explanation": "Subbase and asphalt premix are different products, and total structural thickness differs from the permissible compacted lift. A bare number cannot specify either; grading, compaction capability and the applicable contract clause must be identified.<p>Source note: Page 36 point 103 is unresolved: 30 has no unit, and subbase/premix conflates layers. Parent must identify the intended DoR clause; no guessed mm/cm replacement is authored.</p><p>Capsule 4th ed., p. 36; topic 9 point 103.</p>",
+          "explanation": "For proper spreading and compaction, DoR limits the thickness of a sub-base or premix pavement layer to 30 cm.<p>Capsule 4th ed., p. 36; topic 9 point 103.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5727,32 +5727,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00108",
           "src": "CAP4-09-00108",
-          "text": "A wheel-path asphalt crack pattern becomes interconnected after repeated axle loading. Which mechanism distinguishes alligator fatigue cracking from large non-wheel-path thermal blocks?",
+          "text": "Alligator cracking in a flexible pavement is a ______ failure.",
           "options": [
             {
               "key": "a",
-              "text": "Reflection of regularly spaced underlying joints"
+              "text": "Reflection"
             },
             {
               "key": "b",
-              "text": "Accumulated cyclic tensile damage"
+              "text": "Fatigue"
             },
             {
               "key": "c",
-              "text": "Interlayer slip concentrated at a braking location"
+              "text": "Shrinkage"
             },
             {
               "key": "d",
-              "text": "Thermal contraction under restrained cooling"
+              "text": "Thermal"
             }
           ],
           "answer": "b",
-          "explanation": "Alligator fatigue is associated with accumulated repeated-load damage and commonly follows wheel paths. Thermal/block cracking can occur without that traffic pattern; a map-like appearance alone does not identify one mechanism in every material.<p>Capsule 4th ed., p. 36; topic 9 point 104.</p>",
+          "explanation": "Alligator cracking is a pattern of interconnected cracks in the wheel paths caused by repeated bending under traffic, so it is a fatigue failure of the bituminous layer.<p>Capsule 4th ed., p. 36; topic 9 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5765,32 +5765,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00109",
           "src": "CAP4-09-00109",
-          "text": "In DoR SSRBW 2073, Third Amendment 2082, which pairing correctly distinguishes permanent blacktop pothole patching from temporary pothole filling?",
+          "text": "Pothole maintenance in the case of a bituminous road is ______ maintenance.",
           "options": [
             {
               "key": "a",
-              "text": "Permanent patching: routine; temporary filling: recurrent"
+              "text": "Periodic"
             },
             {
               "key": "b",
-              "text": "Permanent patching: emergency only; temporary filling: periodic only"
+              "text": "Rehabilitation"
             },
             {
               "key": "c",
-              "text": "Permanent patching: recurrent; temporary filling: routine"
+              "text": "Recurrent"
             },
             {
               "key": "d",
-              "text": "Permanent patching: periodic only; temporary filling: reconstruction"
+              "text": "Emergency"
             }
           ],
           "answer": "c",
-          "explanation": "Section 2901 Table 29.2 places blacktop pothole/patch repair in reactive or recurrent work. Section 2902 Table 29.5 separately includes temporary filling among routine seasonal priorities; the repair type determines the classification.<p>Source note: Page 36 point 105 is qualified using SSRBW 2073, Third Amendment 2082, rather than classifying every action described as pothole maintenance identically.</p><p>Capsule 4th ed., p. 36; topic 9 point 105.</p>",
+          "explanation": "Potholes form repeatedly through the year and are patched as they appear, so pothole repair on bituminous roads is recurrent maintenance; resurfacing at intervals is periodic maintenance.<p>Capsule 4th ed., p. 36; topic 9 point 105.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5803,32 +5803,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00119",
           "src": "CAP4-09-00119",
-          "text": "For a normally crowned asphalt mat under a conventional approved rolling pattern, how do overlapping longitudinal passes generally progress across each half-width?",
+          "text": "In flexible pavement construction, rolling is done from the ______.",
           "options": [
             {
               "key": "a",
-              "text": "From one outer edge continuously to the other"
+              "text": "One edge to the other"
             },
             {
               "key": "b",
-              "text": "From the crown towards the lower outer edge"
+              "text": "Centre to the edges"
             },
             {
               "key": "c",
-              "text": "Across the road only, with no longitudinal passes"
+              "text": "Middle outward in circles"
             },
             {
               "key": "d",
-              "text": "From the lower outer edge towards the crown"
+              "text": "Edges to the centre"
             }
           ],
           "answer": "d",
-          "explanation": "On a normal crown, lower-edge-to-centre progression helps consolidate the mat without pushing material downslope. Joint, edge and trial-pattern requirements still govern; the rule must change when the whole carriageway is superelevated.<p>Capsule 4th ed., p. 36; topic 9 point 115.</p>",
+          "explanation": "Rolling starts at the lower edges and moves towards the centre (crown), each pass overlapping the last, so the material is confined and not pushed outward.<p>Capsule 4th ed., p. 36; topic 9 point 115.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5841,32 +5841,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00120",
           "src": "CAP4-09-00120",
-          "text": "An asphalt carriageway is fully superelevated, with one low edge and one high edge. Which cross-width rolling progression replaces the normal two-sided edge-to-crown pattern?",
+          "text": "Rolling a flexible pavement from the edges towards the centre prevents the material from ______.",
           "options": [
             {
               "key": "a",
-              "text": "From the centre alternately downhill on each side"
+              "text": "Changing colour"
             },
             {
               "key": "b",
-              "text": "From the high side towards the low side"
+              "text": "Setting too quickly"
             },
             {
               "key": "c",
-              "text": "From both edges towards a nonexistent central crown"
+              "text": "Absorbing water"
             },
             {
               "key": "d",
-              "text": "From the low side towards the high side"
+              "text": "Being pushed outward at the edges"
             }
           ],
           "answer": "d",
-          "explanation": "A fully banked surface has a continuous crossfall, so the conventional progression is low to high rather than both edges to centre. The approved equipment, overlap, joint treatment and trial compaction pattern remain necessary.<p>Source note: Page 36 point 115 omits the crossfall qualification; this companion question explicitly tests the superelevated case.</p><p>Capsule 4th ed., p. 36; topic 9 point 115.</p>",
+          "explanation": "Starting at the edges confines the loose material so it is not displaced sideways, and working towards the crown preserves the camber.<p>Capsule 4th ed., p. 36; topic 9 point 115.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5879,32 +5879,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00125",
           "src": "CAP4-09-00125",
-          "text": "For a conventional permanent saw-cut asphalt pothole patch, how should the repair boundary be prepared?",
+          "text": "In the repair of potholes, the portion of pavement surrounding the pothole is cut out in a ______ shape.",
           "options": [
             {
               "key": "a",
-              "text": "Cut regular near-vertical edges into sound surrounding material"
+              "text": "Rectangular"
             },
             {
               "key": "b",
-              "text": "Leave crumbling feather edges to minimise the visible repair area"
+              "text": "Circular"
             },
             {
               "key": "c",
-              "text": "Cover the cavity with loose mix without removing debris or water"
+              "text": "Irregular"
             },
             {
               "key": "d",
-              "text": "Cut only the surface film even where support beneath is unsound"
+              "text": "Triangular"
             }
           ],
           "answer": "a",
-          "explanation": "A rectangular or similarly regular cut into sound material provides firm edges for cleaning, bonding and compaction. The damaged material and deficient support determine depth; a neat rectangle alone cannot cure weak or wet underlying layers.<p>Source note: Pages 36/37 points 119/137 repeat the same patch-boundary fact. Conventional cut-and-patch is specified so the claim is not imposed on every proprietary pothole treatment.</p><p>Capsule 4th ed., pp. 36, 37; topic 9 point 119; topic 9 point 137.</p>",
+          "explanation": "The damaged area is cut out in a rectangular shape with vertical sides down to sound material, cleaned, tack coated and filled, so that the patch bonds well and does not break at its edges.<p>Capsule 4th ed., pp. 36, 37; topic 9 point 119; topic 9 point 137.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5919,32 +5919,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00137",
           "src": "CAP4-09-00137",
-          "text": "A cut-positive mass-haul curve remains above its zero starting datum but falls along a particular reach. What does that combination mean?",
+          "text": "The positive part of a mass haul diagram represents the ______.",
           "options": [
             {
               "key": "a",
-              "text": "The current reach must be entirely cutting because the ordinate is positive"
+              "text": "Fill portion"
             },
             {
               "key": "b",
-              "text": "The whole project already requires borrow because the curve falls"
+              "text": "Borrow pit"
             },
             {
               "key": "c",
-              "text": "The current reach has zero earthwork because two signs disagree"
+              "text": "Haul distance"
             },
             {
               "key": "d",
-              "text": "Cumulative surplus remains while the current reach uses net fill"
+              "text": "Cut portion"
             }
           ],
           "answer": "d",
-          "explanation": "Ordinate height measures cumulative balance, while slope measures local net cut or fill. A positive but decreasing ordinate means earlier surplus is being consumed; it does not turn the current filling reach into a cutting.<p>Source note: Page 36 point 130&#39;s positive-ordinate-equals-cut claim is corrected; compare the distinct increment and endpoint questions for points 52, 55-57 and 133.</p><p>Capsule 4th ed., p. 36; topic 9 point 130.</p>",
+          "explanation": "With cut volumes taken as positive, the mass haul curve rises through cutting, so its positive part represents the cut portion; it falls through filling.<p>Capsule 4th ed., p. 36; topic 9 point 130.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5957,32 +5957,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00140",
           "src": "CAP4-09-00140",
-          "text": "A broad rut continues through the granular layers into weak subgrade while the asphalt mix is stable. Which intervention best targets the likely controlling cause?",
+          "text": "In flexible pavements, rutting is contributed by ______.",
           "options": [
             {
               "key": "a",
-              "text": "Replace only the surface binder with a harder grade"
+              "text": "Low pavement temperature only"
             },
             {
               "key": "b",
-              "text": "Investigate and improve deficient foundation support and drainage"
+              "text": "Weak subgrade soil, high pavement temperature and poor mix design"
             },
             {
               "key": "c",
-              "text": "Seal the asphalt surface without investigating deeper layers"
+              "text": "Excessive camber only"
             },
             {
               "key": "d",
-              "text": "Reduce longitudinal joint spacing in the asphalt wearing course"
+              "text": "Too many joints in the surface"
             }
           ],
           "answer": "b",
-          "explanation": "A deformation profile extending into weak subgrade indicates a foundation contribution. Correcting only the surface can hide rather than remedy the cause; support, moisture, compaction and structural thickness need evaluation.<p>Capsule 4th ed., p. 36; topic 9 point 135.</p>",
+          "explanation": "Rutting is permanent deformation in the wheel paths; a weak subgrade, a hot and soft pavement and a poorly designed mix all reduce the resistance to it.<p>Capsule 4th ed., p. 36; topic 9 point 135.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5995,32 +5995,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00141",
           "src": "CAP4-09-00141",
-          "text": "Ruts worsen mainly during hot weather in an asphalt mixture that is marginal against permanent deformation. What material response best explains the temperature effect?",
+          "text": "Which of the following does not contribute to rutting in flexible pavements?",
           "options": [
             {
               "key": "a",
-              "text": "Thermal contraction producing transverse cracks as temperature rises"
+              "text": "High pavement temperature"
             },
             {
               "key": "b",
-              "text": "Increased mixture resistance to repeated shear strain"
+              "text": "Weak subgrade soil"
             },
             {
               "key": "c",
-              "text": "Reversible thermal expansion eliminating the wheel-load strain"
+              "text": "Poor mix design"
             },
             {
               "key": "d",
-              "text": "Reduced resistance to time-dependent shear deformation"
+              "text": "Low pavement temperature"
             }
           ],
           "answer": "d",
-          "explanation": "Asphalt is temperature- and loading-time-dependent; high temperature can lower mixture stiffness and resistance to permanent deformation. The aggregate skeleton, binder selection, loading and void structure together influence the outcome.<p>Capsule 4th ed., p. 36; topic 9 point 135.</p>",
+          "explanation": "Rutting is caused by a weak subgrade, high pavement temperature and poor mix design; at low temperatures the bitumen is stiff and resists rutting.<p>Capsule 4th ed., p. 36; topic 9 point 135.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6033,32 +6033,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00142",
           "src": "CAP4-09-00142",
-          "text": "An asphalt layer meets its field-density target but still shears laterally under traffic. Which mix-design concern remains credible?",
+          "text": "In flexible pavements, rutting increases in hot weather because ______.",
           "options": [
             {
               "key": "a",
-              "text": "Insufficient compaction as the only possible rutting mechanism"
+              "text": "The camber increases"
             },
             {
               "key": "b",
-              "text": "A certainty that the deformation is only recoverable elasticity"
+              "text": "The traffic volume falls"
             },
             {
               "key": "c",
-              "text": "A guarantee that all structural and mixture checks were satisfied"
+              "text": "The subgrade freezes"
             },
             {
               "key": "d",
-              "text": "An unstable aggregate skeleton or unsuitable binder/void balance"
+              "text": "The bituminous mix softens at high pavement temperature"
             }
           ],
           "answer": "d",
-          "explanation": "Adequate density reduces densification risk but does not prove shear stability. Aggregate interlock, grading, binder amount and rheology, air voids and temperature can still produce an unstable mixture, so density alone is not acceptance of every property.<p>Source note: Page 36 point 135 lists weak subgrade, high temperature and poor mix design. Three separate scenarios test each mechanism rather than covering the list only by one broad statement.</p><p>Capsule 4th ed., p. 36; topic 9 point 135.</p>",
+          "explanation": "High pavement temperature softens the bitumen, so the mix deforms permanently under the wheel loads; together with a weak subgrade and poor mix design, this contributes to rutting.<p>Capsule 4th ed., p. 36; topic 9 point 135.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6071,32 +6071,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00144",
           "src": "CAP4-09-00144",
-          "text": "An approved open-graded premix carpet is specified at 20 mm compacted thickness over a 50 m by 3.5 m area. Ignoring waste, what compacted mix volume is required?",
+          "text": "The standard design thickness of a typical open-graded premix carpet wearing course is ______.",
           "options": [
             {
               "key": "a",
-              "text": "350 cubic metres"
+              "text": "5 mm"
             },
             {
               "key": "b",
-              "text": "0.35 cubic metres"
+              "text": "75 mm"
             },
             {
               "key": "c",
-              "text": "35 cubic metres"
+              "text": "50 mm"
             },
             {
               "key": "d",
-              "text": "3.5 cubic metres"
+              "text": "20 mm"
             }
           ],
           "answer": "d",
-          "explanation": "Convert 20 mm to 0.020 m; then \\[V = 50 \\times 3.5 \\times 0.020 = 3.5\\] cubic metres. This is compacted geometric volume; loose delivery volume and mass need separate density and construction allowances.<p>Source note: Page 37 point 139: 20 mm is explicitly the approved exercise specification, not a universal asphalt-course thickness. The original numerical standard&#39;s exact edition/clause remains for parent confirmation.</p><p>Capsule 4th ed., p. 37; topic 9 point 139.</p>",
+          "explanation": "An open-graded premix carpet is a thin wearing course laid 20 mm thick, usually followed by a seal coat to fill its voids.<p>Capsule 4th ed., p. 37; topic 9 point 139.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6109,32 +6109,32 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00181",
           "src": "CAP4-10-00181",
-          "text": "A rural road programme seeks affordable local employment without compromising safety or workmanship. Which approach fits the labour-based aspect of green roads?",
+          "text": "Which of the following is not a focus of the green road concept?",
           "options": [
             {
               "key": "a",
-              "text": "Replace drainage and slope protection with more labour on excavation"
+              "text": "Labour-based, affordable construction"
             },
             {
               "key": "b",
-              "text": "Use suitable local labour with training and task-appropriate tools or equipment"
+              "text": "Maximum use of heavy machinery for fast cutting"
             },
             {
               "key": "c",
-              "text": "Exclude all equipment even where manual work would be unsafe"
+              "text": "Conserving the delicate mountain ecology"
             },
             {
               "key": "d",
-              "text": "Hire labour without supervision because low cost guarantees quality"
+              "text": "Protecting vegetation cover"
             }
           ],
           "answer": "b",
-          "explanation": "Labour-based construction uses local skills and employment where technically suitable, supported by training, supervision and appropriate tools. It does not mean every task must be manual or that affordability overrides engineering and environmental requirements.<p>Source note: Appendix p42 n8 expanded to cover ecology, vegetation and labour-based affordability separately; extracted &#39;trial&#39; treated as road/trail context, not a new specification.</p><p>Capsule 4th ed., p. 42; rural point 8.</p>",
+          "explanation": "The green road concept conserves the delicate mountain ecology, protects vegetation and promotes labour-based, affordable construction; mass cutting by heavy machines goes against it.<p>Capsule 4th ed., p. 42; rural point 8.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6147,20 +6147,20 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00189",
           "src": "CAP4-10-00189",
-          "text": "A staged rural-road pilot cut has 1000 square metres of horizontal plan area over 800 m of length. Ignoring local widening, what is its average plan width?",
+          "text": "The average width of a green road in its first phase is ______.",
           "options": [
             {
               "key": "a",
-              "text": "12.50 m"
+              "text": "0.5 m"
             },
             {
               "key": "b",
-              "text": "0.80 m"
+              "text": "3.75 m"
             },
             {
               "key": "c",
@@ -6168,11 +6168,11 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             },
             {
               "key": "d",
-              "text": "2.50 m"
+              "text": "5.5 m"
             }
           ],
           "answer": "c",
-          "explanation": "The average width is the plan area divided by the length: \\[\\dfrac{1000}{800} = 1.25\\ \\text{m}\\] This checks a stated pilot-cut geometry, not a universal phase-one width or proof that the completed road can carry traffic safely.<p>Source note: Appendix p42 n13: the claimed standard green-road phase-one width requires its manual and edition. New area and length are illustrative, not extracted drawing data.</p><p>Capsule 4th ed., p. 42; rural point 13.</p>",
+          "explanation": "Green roads are built in stages; in the first phase only a narrow track, about 1.25 m wide on average, is opened, and it is widened in later phases.<p>Capsule 4th ed., p. 42; rural point 13.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6185,7 +6185,7 @@ window.CIVIL_SET_DATA["capsule-09"] = {
             ]
           },
           "topic": "ACiE0906",
-          "kind": "calculation"
+          "kind": "recall"
         }
       ]
     }

@@ -11,27 +11,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00001",
           "src": "CAP4-01-00001",
-          "text": "A gypsum-based casting powder sets again when mixed with water. Which manufacturing change produces plaster of Paris?",
+          "text": "Plaster of Paris is obtained by calcining ______.",
           "options": [
             {
               "key": "a",
-              "text": "Fusion of silica and limestone into clinker"
+              "text": "Dolomite"
             },
             {
               "key": "b",
-              "text": "Hydration of anhydrous gypsum to the dihydrate"
+              "text": "Chalk"
             },
             {
               "key": "c",
-              "text": "Partial dehydration of gypsum to the hemihydrate"
+              "text": "Gypsum"
             },
             {
               "key": "d",
-              "text": "Complete carbonation of quicklime to limestone"
+              "text": "Limestone"
             }
           ],
           "answer": "c",
-          "explanation": "Controlled calcination removes part of gypsum's crystal water, converting calcium sulfate dihydrate to the hemihydrate. Rehydration then produces the interlocking gypsum crystals responsible for setting.<p>Capsule 4th ed., p. 2; topic 1 point 1.</p>",
+          "explanation": "Plaster of Paris is obtained by calcining gypsum (calcium sulphate dihydrate): gentle heating drives off part of its combined water and leaves the hemihydrate, which sets again when mixed with water. Limestone, chalk and dolomite are calcined to make lime, not plaster of Paris.<p>Capsule 4th ed., p. 2; topic 1 point 1.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -44,32 +44,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00003",
           "src": "CAP4-01-00003",
-          "text": "Two Portland cements have similar fineness and curing conditions, but one develops strength faster during the first few days. A greater proportion of which clinker phase most directly explains this?",
+          "text": "The early strength of cement is due to the compound ______.",
           "options": [
             {
               "key": "a",
-              "text": "Dicalcium silicate, C2S"
+              "text": "C<sub>2</sub>S (dicalcium silicate)"
             },
             {
               "key": "b",
-              "text": "Tetracalcium aluminoferrite, C4AF"
+              "text": "C<sub>3</sub>A (tricalcium aluminate)"
             },
             {
               "key": "c",
-              "text": "Tricalcium aluminate, C3A"
+              "text": "C<sub>4</sub>AF (tetracalcium aluminoferrite)"
             },
             {
               "key": "d",
-              "text": "Tricalcium silicate, C3S"
+              "text": "C<sub>3</sub>S (tricalcium silicate)"
             }
           ],
           "answer": "d",
-          "explanation": "C3S hydrates relatively rapidly and is the principal early-strength contributor. C2S contributes more slowly. C3A reacts rapidly and releases considerable heat, but rapid reaction is not the same as the principal contribution to strength; C4AF contributes relatively little strength.<p>Capsule 4th ed., p. 2; topic 1 point 3.</p>",
+          "explanation": "Tricalcium silicate (C<sub>3</sub>S) hydrates rapidly and is responsible for the early strength of cement, gained mainly in the first week. C<sub>2</sub>S hydrates slowly and gives later strength, C<sub>3</sub>A reacts first and governs flash setting, and C<sub>4</sub>AF contributes little strength.<p>Capsule 4th ed., p. 2; topic 1 point 3.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -82,32 +82,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00006",
           "src": "CAP4-01-00006",
-          "text": "Timber develops severe moisture gradients during poorly controlled rapid electrical seasoning. Which defect can result directly from the associated drying stresses?",
+          "text": "The drawback of electric seasoning of timber is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Fungal decay within the fibres"
+              "text": "Fungal decay"
             },
             {
               "key": "b",
-              "text": "Mineral staining within the sapwood"
+              "text": "Blue stain"
             },
             {
               "key": "c",
-              "text": "Insect galleries across the grain"
+              "text": "Termite attack"
             },
             {
               "key": "d",
-              "text": "Splitting along the grain"
+              "text": "Splitting"
             }
           ],
           "answer": "d",
-          "explanation": "Uneven shrinkage can generate tensile stresses and cause checks or splits. Electrical seasoning is not guaranteed to split wood: temperature, moisture gradients and drying control determine the risk.<p>Source note: Source n6 presents splitting as an unconditional drawback; qualified using chapter-01-materials.js, timber-seasoning.</p><p>Capsule 4th ed., p. 2; topic 1 point 6.</p>",
+          "explanation": "In electric seasoning, a high-frequency alternating current heats the timber and dries it very quickly; the rapid, uneven drying sets up stresses, so the drawback is that the timber may split. It is also costly. Fungal decay, termite attack and blue stain are biological defects, not effects of the process.<p>Capsule 4th ed., p. 2; topic 1 point 6.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -120,32 +120,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00007",
           "src": "CAP4-01-00007",
-          "text": "A quarry supplies quartzite rich in recrystallized quartz. Under classification by chemical composition, which group is appropriate?",
+          "text": "On the basis of chemical composition, quartzite is a ______ rock.",
           "options": [
             {
               "key": "a",
-              "text": "Calcareous stone"
+              "text": "Calcareous"
             },
             {
               "key": "b",
-              "text": "Carbonaceous stone"
+              "text": "Ferruginous"
             },
             {
               "key": "c",
-              "text": "Argillaceous stone"
+              "text": "Argillaceous"
             },
             {
               "key": "d",
-              "text": "Siliceous stone"
+              "text": "Siliceous"
             }
           ],
           "answer": "d",
-          "explanation": "Quartz is silica, so quartzite is classified as siliceous by composition. Metamorphic describes its origin, whereas calcareous and argillaceous refer primarily to carbonate-rich and clay-rich composition.<p>Capsule 4th ed., p. 2; topic 1 point 7.</p>",
+          "explanation": "Quartzite is metamorphosed sandstone composed almost entirely of silica (quartz), so its composition is siliceous. Calcareous rocks such as limestone and marble contain calcium carbonate, and argillaceous rocks such as slate are clay-based.<p>Capsule 4th ed., p. 2; topic 1 point 7.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -158,12 +158,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00008",
           "src": "CAP4-01-00008",
-          "text": "A paint manufacturer changes the coating's colour and hiding power while retaining the same film-forming resin. Which constituent is being changed primarily?",
+          "text": "The component of paint that imparts colour to it is called ______.",
           "options": [
             {
               "key": "a",
@@ -171,7 +171,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "b",
-              "text": "Binder"
+              "text": "Base"
             },
             {
               "key": "c",
@@ -179,11 +179,11 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "d",
-              "text": "Thinner"
+              "text": "Vehicle"
             }
           ],
           "answer": "c",
-          "explanation": "Pigment supplies colour and opacity. The binder forms the continuous film, thinner controls application viscosity, and drier promotes curing; these roles should not be interchanged.<p>Capsule 4th ed., pp. 2, 5, 6; topic 1 point 8; topic 1 point 140.</p>",
+          "explanation": "The pigment is the finely ground colouring matter in a paint; its purpose is to give the paint its colour. The base (such as white lead or zinc white) gives body and opacity, the vehicle (such as linseed oil) binds the film, and the drier speeds up drying.<p>Capsule 4th ed., pp. 2, 5, 6; topic 1 point 8; topic 1 point 140.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -199,24 +199,24 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00009",
           "src": "CAP4-01-00009",
-          "text": "A lime mortar must develop binding action in persistently damp conditions with limited access to air. Which binder is more appropriate than pure air lime?",
+          "text": "The lime used as mortar is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Unslaked pure quicklime alone"
+              "text": "Quick lime"
             },
             {
               "key": "b",
-              "text": "Ground limestone alone"
+              "text": "Milk of lime"
             },
             {
               "key": "c",
-              "text": "Fat lime alone"
+              "text": "Fat lime"
             },
             {
               "key": "d",
@@ -224,7 +224,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Hydraulic constituents react with water and permit strength development in moist conditions. Air-lime mortar relies largely on carbonation and remains suitable for other applications; the source's claim that mortar lime is exclusively hydraulic is too broad.<p>Source note: Qualified against chapter-01-materials.js, cement-and-lime.</p><p>Capsule 4th ed., p. 2; topic 1 point 9.</p>",
+          "explanation": "Hydraulic lime contains clay and sets by chemical reaction with water, so it hardens even in damp places and is the lime used for mortar. Fat lime sets only by slow absorption of carbon dioxide and is used mainly for whitewashing and plastering; quick lime must be slaked first, and milk of lime is a whitewash.<p>Capsule 4th ed., p. 2; topic 1 point 9.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -237,32 +237,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00010",
           "src": "CAP4-01-00010",
-          "text": "Which pair correctly identifies the main calcium source and the main silica-alumina source in conventional Portland-cement raw meal?",
+          "text": "The primary raw materials in cement manufacturing are ______.",
           "options": [
             {
               "key": "a",
-              "text": "Quartz sand and limestone, respectively"
+              "text": "Clay and sand"
             },
             {
               "key": "b",
-              "text": "Clay and gypsum, respectively"
+              "text": "Gypsum and sand"
             },
             {
               "key": "c",
-              "text": "Limestone and clay, respectively"
+              "text": "Limestone and clay"
             },
             {
               "key": "d",
-              "text": "Gypsum and coal, respectively"
+              "text": "Limestone and gypsum"
             }
           ],
           "answer": "c",
-          "explanation": "Limestone supplies calcium carbonate, while clay or shale supplies much of the silica, alumina and iron oxides. Gypsum is normally added during final grinding to regulate setting, and coal is principally a fuel.<p>Capsule 4th ed., p. 2; topic 1 point 10.</p>",
+          "explanation": "Portland cement is made by burning a finely ground mixture of calcareous material (limestone or chalk) and argillaceous material (clay or shale) into clinker. Gypsum is added only when the clinker is ground, to control setting.<p>Capsule 4th ed., p. 2; topic 1 point 10.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -275,32 +275,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00011",
           "src": "CAP4-01-00011",
-          "text": "A conventional nitrocellulose lacquer forms a film rapidly without relying primarily on oxidation of a drying oil. What chiefly causes its initial drying?",
+          "text": "Lacquer is a ______ varnish.",
           "options": [
             {
               "key": "a",
-              "text": "Oxidation of linseed oil"
+              "text": "Turpentine"
             },
             {
               "key": "b",
-              "text": "Hydration of hydraulic compounds"
+              "text": "Water"
             },
             {
               "key": "c",
-              "text": "Carbonation of hydrated lime"
+              "text": "Oil"
             },
             {
               "key": "d",
-              "text": "Evaporation of volatile solvent"
+              "text": "Spirit"
             }
           ],
           "answer": "d",
-          "explanation": "The solvent evaporates and leaves the dissolved resin as a film. Spirit varnish is loose historical shorthand, not a precise definition of every lacquer; nitrocellulose is the resin rather than the solvent.<p>Source note: p2 n11: replaced the blanket lacquer = spirit varnish equation with the solventborne-film mechanism verified in the local materials notes.</p><p>Capsule 4th ed., p. 2; topic 1 point 11.</p>",
+          "explanation": "Lacquer is a spirit varnish: its resin is dissolved in a quick-evaporating spirit, so the film dries rapidly as the spirit evaporates. Oil varnishes dry by oxidation of the oil, turpentine varnishes use turpentine as the solvent, and water varnishes use water-soluble gums.<p>Capsule 4th ed., p. 2; topic 1 point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -313,32 +313,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00013",
           "src": "CAP4-01-00013",
-          "text": "A brick earth rich in clay shrinks excessively during drying. Why might a controlled addition of clean sand help?",
+          "text": "The presence of sand in brick earth prevents ______ of bricks.",
           "options": [
             {
               "key": "a",
-              "text": "It increases the clay's plastic shrinkage"
+              "text": "Brittleness"
             },
             {
               "key": "b",
-              "text": "It reduces drying shrinkage and warping"
+              "text": "Warping"
             },
             {
               "key": "c",
-              "text": "It acts as the principal hydraulic binder"
+              "text": "Efflorescence"
             },
             {
               "key": "d",
-              "text": "It makes firing unnecessary for strength"
+              "text": "Bloating"
             }
           ],
           "answer": "b",
-          "explanation": "Sand provides a relatively non-plastic skeleton and dilutes the shrinking clay fraction. Excess sand is also undesirable because it reduces cohesion; the useful effect depends on a balanced brick-earth composition.<p>Capsule 4th ed., p. 2; topic 1 point 13.</p>",
+          "explanation": "Sand (silica) in brick earth reduces shrinkage during drying and burning, so it prevents warping and cracking and keeps the bricks uniform in shape. Too much sand, however, makes bricks brittle; efflorescence comes from soluble salts and bloating from excess carbonaceous matter.<p>Capsule 4th ed., p. 2; topic 1 point 13.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -351,32 +351,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00014",
           "src": "CAP4-01-00014",
-          "text": "Green timber is to be installed as indoor joinery. What is the principal purpose of seasoning it before fabrication?",
+          "text": "The seasoning of timber is done for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Replace natural fibres with preservative salts"
+              "text": "Removing its knots"
             },
             {
               "key": "b",
-              "text": "Bring moisture closer to service equilibrium"
+              "text": "Decreasing its moisture content"
             },
             {
               "key": "c",
-              "text": "Increase moisture until fibres remain swollen"
+              "text": "Increasing its density"
             },
             {
               "key": "d",
-              "text": "Seal every pore against future moisture entry"
+              "text": "Increasing its moisture content"
             }
           ],
           "answer": "b",
-          "explanation": "Seasoning removes excess moisture and reduces subsequent shrinkage and distortion in service. It is not waterproofing: seasoned timber can still gain or lose moisture as surrounding humidity changes.<p>Capsule 4th ed., p. 2; topic 1 point 14.</p>",
+          "explanation": "Seasoning is done to decrease the moisture content of timber to a level suited to its use. Seasoned timber is stronger, lighter and less likely to shrink, warp, crack or decay; seasoning does not remove defects such as knots.<p>Capsule 4th ed., p. 2; topic 1 point 14.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -389,32 +389,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00015",
           "src": "CAP4-01-00015",
-          "text": "A specification calls for a plastic bituminous compound to repair a small nonstructural crack. Which property makes this material useful?",
+          "text": "Plastic bitumen is generally used for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Adhesion with some deformation capacity"
+              "text": "Crack filling"
             },
             {
               "key": "b",
-              "text": "Rapid hydraulic hardening under water"
+              "text": "Roofing felt"
             },
             {
               "key": "c",
-              "text": "High tensile stiffness of a steel splice"
+              "text": "Road surfacing"
             },
             {
               "key": "d",
-              "text": "High permeability for pressure drainage"
+              "text": "Damp-proof courses"
             }
           ],
           "answer": "a",
-          "explanation": "A suitable plastic bituminous compound adheres and accommodates limited movement while reducing water ingress. It fills or seals a crack; it does not restore the structural capacity of a fractured member.<p>Capsule 4th ed., p. 2; topic 1 point 15.</p>",
+          "explanation": "Plastic bitumen is bitumen mixed with a thinner and an inert filler; it remains plastic, so it is generally used for filling cracks in masonry and stopping leakages. Road surfacing uses paving or cutback bitumen, while blown bitumen is used for roofing and damp-proofing.<p>Capsule 4th ed., p. 2; topic 1 point 15.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -427,32 +427,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00016",
           "src": "CAP4-01-00016",
-          "text": "In hydrated Portland-cement paste, which product supplies most of the binding network responsible for strength?",
+          "text": "The main compound resulting from cement hydration is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Calcium hydroxide crystals"
+              "text": "Calcium hydroxide"
             },
             {
               "key": "b",
-              "text": "Free calcium oxide grains"
+              "text": "Gypsum"
             },
             {
               "key": "c",
-              "text": "Unreacted calcium sulfate"
+              "text": "Ettringite"
             },
             {
               "key": "d",
-              "text": "Calcium silicate hydrate"
+              "text": "C-S-H gel"
             }
           ],
           "answer": "d",
-          "explanation": "Calcium silicate hydrate, usually abbreviated C-S-H, forms the principal binding phase. Calcium hydroxide is also produced during silicate hydration but is not the main strength-giving network.<p>Capsule 4th ed., p. 2; topic 1 point 16.</p>",
+          "explanation": "Hydration of the calcium silicates (C<sub>3</sub>S and C<sub>2</sub>S) produces calcium silicate hydrate, the C-S-H gel, which is the main hydration product and the chief source of the strength of hardened paste. Calcium hydroxide forms alongside it, and ettringite forms from the reaction of aluminate with gypsum.<p>Capsule 4th ed., p. 2; topic 1 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -465,32 +465,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00018",
           "src": "CAP4-01-00018",
-          "text": "A dry fibreboard specimen has mass 7.2 kg and volume 0.010 m<sup>3</sup>. What is its measured bulk density?",
+          "text": "For the exam, the minimum density of medium-density fibreboard (MDF) is ______.",
           "options": [
             {
               "key": "a",
-              "text": "600 kg/m<sup>3</sup>"
+              "text": "1440 kg/m<sup>3</sup>"
             },
             {
               "key": "b",
-              "text": "960 kg/m<sup>3</sup>"
+              "text": "480 kg/m<sup>3</sup>"
             },
             {
               "key": "c",
-              "text": "720 kg/m<sup>3</sup>"
+              "text": "960 kg/m<sup>3</sup>"
             },
             {
               "key": "d",
-              "text": "800 kg/m<sup>3</sup>"
+              "text": "240 kg/m<sup>3</sup>"
             }
           ],
           "answer": "c",
-          "explanation": "Density is mass divided by volume: \\[\\rho = \\dfrac{7.2}{0.010} = 720\\ \\text{kg/m}^3\\] Product classification must follow a named standard; a density cannot be replaced by an exam-preferred value.<p>Source note: p2 n18 contradicts its 600-800 range with a preferred 960 kg/m3. Neither is adopted as a universal MDF minimum; measured density is tested instead.</p><p>Capsule 4th ed., p. 2; topic 1 point 18.</p>",
+          "explanation": "Medium-density fibreboard is commonly produced at densities of about 600 to 800 kg per m<sup>3</sup>, but when the minimum density of MDF is asked in the exam, the answer to choose is 960 kg per m<sup>3</sup>.<p>Capsule 4th ed., p. 2; topic 1 point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -503,32 +503,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00019",
           "src": "CAP4-01-00019",
-          "text": "A building unit is quarried from a natural rock mass and dressed to size without firing or cement binding. How should it be classified?",
+          "text": "The construction material that can be obtained from naturally existing rock by any method is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Cement-bound artificial stone"
+              "text": "Terracotta"
             },
             {
               "key": "b",
-              "text": "Burnt-clay masonry brick"
+              "text": "Brick"
             },
             {
               "key": "c",
-              "text": "Autoclaved aerated block"
+              "text": "Cement"
             },
             {
               "key": "d",
-              "text": "Natural building stone"
+              "text": "Stone"
             }
           ],
           "answer": "d",
-          "explanation": "Quarrying and dressing produce natural building stone from existing rock. Fired bricks and cement-bound or autoclaved products obtain their form and properties through different manufacturing processes.<p>Capsule 4th ed., p. 2; topic 1 point 19.</p>",
+          "explanation": "Stone is the construction material obtained directly from naturally existing rock, by quarrying and dressing. Bricks and terracotta are made by moulding and burning clay, and cement is a manufactured product.<p>Capsule 4th ed., p. 2; topic 1 point 19.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -541,32 +541,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00020",
           "src": "CAP4-01-00020",
-          "text": "A pale cement-based decorative coating must avoid the grey colour associated with ordinary cement. Which binder is the appropriate starting material?",
+          "text": "The type of cement used for painting is ______.",
           "options": [
             {
               "key": "a",
-              "text": "White Portland cement"
+              "text": "White cement"
             },
             {
               "key": "b",
-              "text": "Ordinary grey Portland cement"
+              "text": "Sulphate resisting cement"
             },
             {
               "key": "c",
-              "text": "Grey low-heat cement"
+              "text": "Low heat cement"
             },
             {
               "key": "d",
-              "text": "Grey sulfate-resisting cement"
+              "text": "Rapid hardening cement"
             }
           ],
           "answer": "a",
-          "explanation": "White cement is manufactured with low contents of colouring oxides and is used in architectural finishes and cement-based paints. It is not ordinary organic paint, and whiteness does not mean all iron is absent.<p>Capsule 4th ed., p. 2; topic 1 point 20.</p>",
+          "explanation": "White cement is made from raw materials practically free of iron oxide, so it is white; it is the cement used for cement paints, decorative finishes and terrazzo. The other cements are grey and are chosen for early strength, low heat of hydration or sulphate resistance.<p>Capsule 4th ed., p. 2; topic 1 point 20.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -579,32 +579,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00021",
           "src": "CAP4-01-00021",
-          "text": "A proposed aggregate source is a dense, fine-grained rock formed by rapid cooling of basaltic lava. Which geological classification is appropriate?",
+          "text": "The type of aggregate that is not available in Nepal is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Foliated metamorphic rock"
+              "text": "Sandstone"
             },
             {
               "key": "b",
-              "text": "Extrusive igneous rock"
+              "text": "Basalt"
             },
             {
               "key": "c",
-              "text": "Intrusive igneous rock"
+              "text": "Quartzite"
             },
             {
               "key": "d",
-              "text": "Clastic sedimentary rock"
+              "text": "Limestone"
             }
           ],
           "answer": "b",
-          "explanation": "Basalt is a fine-grained extrusive igneous rock. Availability and suitability require geological investigation and material tests; the rock name alone cannot establish that it is absent throughout a country.<p>Source note: p2 n21: the categorical claim that basalt is unavailable in Nepal is unverified and is not repeated as fact. Parent may review the geographic assertion; the rock-origin question is independent of it.</p><p>Capsule 4th ed., p. 2; topic 1 point 21.</p>",
+          "explanation": "Basalt, a dark, fine-grained volcanic (extrusive igneous) rock, is the aggregate type not available in Nepal. Quartzite, limestone and sandstone are found in Nepal and are used as aggregates.<p>Capsule 4th ed., p. 2; topic 1 point 21.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -617,32 +617,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00023",
           "src": "CAP4-01-00023",
-          "text": "Stored cement has absorbed humid air and developed persistent hard lumps. What is the soundest conclusion about its later performance?",
+          "text": "After storage, the strength of cement ______.",
           "options": [
             {
               "key": "a",
-              "text": "Lumps prove that the cement has a higher grade"
+              "text": "Remains the same"
             },
             {
               "key": "b",
-              "text": "Dry sieving restores all original binding capacity"
+              "text": "First increases, then decreases"
             },
             {
               "key": "c",
-              "text": "Storage has increased the clinker's reactivity"
+              "text": "Increases"
             },
             {
               "key": "d",
-              "text": "Prehydration may reduce strength-producing capacity"
+              "text": "Decreases"
             }
           ],
           "answer": "d",
-          "explanation": "Moisture can hydrate cement prematurely and reduce its subsequent binding capacity. Storage duration alone does not impose a fixed strength loss; exposure, packaging and appropriate retesting govern usability.<p>Source note: p2 n23: strength loss is qualified by moisture exposure, not asserted as an inevitable fixed consequence of any storage.</p><p>Capsule 4th ed., p. 2; topic 1 point 23.</p>",
+          "explanation": "During storage, cement absorbs moisture from the air and partly hydrates, forming lumps, so its strength decreases the longer it is stored. That is why cement is stored in dry conditions and used on a first-in, first-out basis.<p>Capsule 4th ed., p. 2; topic 1 point 23.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -655,12 +655,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00024",
           "src": "CAP4-01-00024",
-          "text": "An engineer studies ore treatment, metal extraction, refining and alloy production. Which broad field covers this sequence?",
+          "text": "The process of extracting metals from the ore is called ______.",
           "options": [
             {
               "key": "a",
@@ -668,7 +668,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "b",
-              "text": "Geotechnical engineering"
+              "text": "Galvanising"
             },
             {
               "key": "c",
@@ -676,11 +676,11 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "d",
-              "text": "Mineral surveying"
+              "text": "Mineralogy"
             }
           ],
           "answer": "c",
-          "explanation": "Metallurgy includes extracting and refining metals and understanding their alloys, processing and properties. Ore concentration is one operation within the broader field, not a complete definition of it.<p>Capsule 4th ed., p. 2; topic 1 point 24.</p>",
+          "explanation": "Metallurgy is the process of extracting metals from their ores and refining them for use. Petrology is the study of rocks, mineralogy is the study of minerals, and galvanising is coating steel with zinc.<p>Capsule 4th ed., p. 2; topic 1 point 24.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -693,32 +693,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00025",
           "src": "CAP4-01-00025",
-          "text": "Freshly ground Portland clinker would react too rapidly with water through its aluminate phase. Why is controlled gypsum addition used?",
+          "text": "The addition of gypsum to cement ______ its setting time.",
           "options": [
             {
               "key": "a",
-              "text": "To remove all silicates before hydration begins"
+              "text": "Decreases"
             },
             {
               "key": "b",
-              "text": "To accelerate flash set and eliminate workability"
+              "text": "Does not change"
             },
             {
               "key": "c",
-              "text": "To replace clinker as the principal strength phase"
+              "text": "First decreases, then increases"
             },
             {
               "key": "d",
-              "text": "To regulate aluminate hydration and prevent flash set"
+              "text": "Increases"
             }
           ],
           "answer": "d",
-          "explanation": "Sulfate from gypsum controls the rapid C3A reaction and helps prevent flash setting. An appropriate dosage regulates setting; adding progressively more gypsum is not an unlimited way to improve cement.<p>Capsule 4th ed., p. 2; topic 1 point 25.</p>",
+          "explanation": "A small amount of gypsum is added while grinding the clinker to retard the rapid reaction of C<sub>3</sub>A with water. This prevents flash set, so the addition of gypsum increases the setting time of cement.<p>Capsule 4th ed., p. 2; topic 1 point 25.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -731,32 +731,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00026",
           "src": "CAP4-01-00026",
-          "text": "Crushed ore is processed so that waste gangue is rejected and the useful mineral fraction increases before smelting. What is this operation?",
+          "text": "The removal of impurities from ore is known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "Ore concentration"
+              "text": "Concentration of ore"
             },
             {
               "key": "b",
-              "text": "Alloy homogenization"
+              "text": "Refining"
             },
             {
               "key": "c",
-              "text": "Metal annealing"
+              "text": "Calcination"
             },
             {
               "key": "d",
-              "text": "Electrolytic refining"
+              "text": "Smelting"
             }
           ],
           "answer": "a",
-          "explanation": "Concentration or beneficiation raises the useful-mineral proportion by separating gangue. It is distinct from smelting, which extracts metal, and refining, which removes impurities from an already extracted metal.<p>Capsule 4th ed., p. 2; topic 1 point 26.</p>",
+          "explanation": "Concentration of ore (ore beneficiation) is the removal of the unwanted earthy impurities, or gangue, from the ore before the metal is extracted. Calcination heats the ore, smelting reduces it to metal, and refining purifies the metal after extraction.<p>Capsule 4th ed., p. 2; topic 1 point 26.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -769,32 +769,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00027",
           "src": "CAP4-01-00027",
-          "text": "An old steelwork coating schedule specifies a red-lead anticorrosive primer. Which pigment does this historical specification identify?",
+          "text": "The pigment used in paints for corrosion resistance is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Zinc oxide"
+              "text": "Zinc white"
             },
             {
               "key": "b",
-              "text": "Calcium carbonate"
+              "text": "Lamp black"
             },
             {
               "key": "c",
-              "text": "Lead tetroxide"
+              "text": "Red lead"
             },
             {
               "key": "d",
-              "text": "Titanium dioxide"
+              "text": "White lead"
             }
           ],
           "answer": "c",
-          "explanation": "Red lead is lead tetroxide, historically used in corrosion-inhibiting primers. Lead is toxic; this identifies an old material and does not recommend its modern use or establish current legal acceptability.<p>Source note: p2 n27 is retained only as a historical material identification; no current approval or lead-coating recommendation is made.</p><p>Capsule 4th ed., p. 2; topic 1 point 27.</p>",
+          "explanation": "Red lead (lead tetroxide) is the pigment used in anticorrosive paints and primers for iron and steel. White lead and zinc white are white bases, and lamp black is a black colouring pigment.<p>Capsule 4th ed., p. 2; topic 1 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -807,12 +807,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00028",
           "src": "CAP4-01-00028",
-          "text": "A clay brick develops its usual red colour during adequately oxidizing firing. Which constituent is principally responsible?",
+          "text": "The ingredient that imparts red colour to clay bricks is ______.",
           "options": [
             {
               "key": "a",
@@ -820,7 +820,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "b",
-              "text": "Silica"
+              "text": "Lime"
             },
             {
               "key": "c",
@@ -828,11 +828,11 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "d",
-              "text": "Calcium carbonate"
+              "text": "Magnesia"
             }
           ],
           "answer": "a",
-          "explanation": "Iron oxides commonly give fired clay its red colour under oxidizing conditions. Actual shade also depends on composition and firing atmosphere; silica and alumina mainly perform other roles in the ceramic body.<p>Capsule 4th ed., p. 2; topic 1 point 28.</p>",
+          "explanation": "Iron oxide in the brick earth gives burnt bricks their red colour and also acts as a flux. Alumina gives plasticity, excess lime makes bricks melt and lose shape, and magnesia gives a yellowish tint.<p>Capsule 4th ed., p. 2; topic 1 point 28.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -845,32 +845,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00029",
           "src": "CAP4-01-00029",
-          "text": "Clay adhering to iron-ore lumps is removed by washing before the ore reaches the furnace. Which stage does this most directly represent?",
+          "text": "The operation of removing impurities of clay adhering to iron ore is known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "Reduction smelting"
+              "text": "Calcination"
             },
             {
               "key": "b",
-              "text": "Steel tempering"
+              "text": "Smelting"
             },
             {
               "key": "c",
-              "text": "Ore dressing"
+              "text": "Dressing"
             },
             {
               "key": "d",
-              "text": "Metal casting"
+              "text": "Roasting"
             }
           ],
           "answer": "c",
-          "explanation": "Washing away adhering clay is an ore-dressing or beneficiation operation. It prepares the ore without reducing its metal oxides to metal; reduction occurs in a later extraction stage.<p>Capsule 4th ed., p. 2; topic 1 point 29.</p>",
+          "explanation": "Dressing is the operation of washing and cleaning iron ore to remove the clay and other earthy impurities adhering to it before it is charged into the furnace. Calcination and roasting heat the ore, and smelting reduces it to metal.<p>Capsule 4th ed., p. 2; topic 1 point 29.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -883,16 +883,16 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00030",
           "src": "CAP4-01-00030",
-          "text": "Bricks swell during firing when gas becomes trapped in a softened ceramic body. What is this manufacturing defect called?",
+          "text": "Swelling in brick is also known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "Lime popping"
+              "text": "Lamination"
             },
             {
               "key": "b",
@@ -904,11 +904,11 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "d",
-              "text": "Lamination"
+              "text": "Chuffs"
             }
           ],
           "answer": "c",
-          "explanation": "Bloating is expansion associated with gas trapped during firing. Efflorescence is salt deposition, lime popping is localized disruption from reactive lime particles, and lamination involves layered separation.<p>Capsule 4th ed., p. 2; topic 1 point 30.</p>",
+          "explanation": "Bloating is the swelling of a brick caused by gases trapped in the softened clay during burning, usually because of excess carbonaceous matter or sulphur. Efflorescence is a white salt deposit, lamination is layering caused by entrapped air, and chuffs are bricks deformed by rain falling on them while hot.<p>Capsule 4th ed., p. 2; topic 1 point 30.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -921,32 +921,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00031",
           "src": "CAP4-01-00031",
-          "text": "Water is mixed with Portland cement, and new solid products subsequently form. Which description distinguishes hydration from simple wetting?",
+          "text": "The process of cement hydration involves mixing cement with ______ to form a paste.",
           "options": [
             {
               "key": "a",
-              "text": "Water participates in chemical reactions with cement"
+              "text": "Water"
             },
             {
               "key": "b",
-              "text": "Strength arises solely from evaporation of water"
+              "text": "Coarse aggregate"
             },
             {
               "key": "c",
-              "text": "Cement becomes inert once a paste has formed"
+              "text": "Lime"
             },
             {
               "key": "d",
-              "text": "Water acts only as a lubricant and remains unchanged"
+              "text": "Sand"
             }
           ],
           "answer": "a",
-          "explanation": "Hydration is the chemical reaction between cement constituents and water, not merely the mixing operation. The products develop binding structure; drying alone cannot explain cement hardening.<p>Source note: p2 n31: corrected the definition that reduced hydration to mixing a paste.</p><p>Capsule 4th ed., p. 2; topic 1 point 31.</p>",
+          "explanation": "Hydration is the chemical reaction of cement with water: mixing cement with water forms a paste that sets and hardens as the hydration products grow. Sand and coarse aggregate are inert fillers and take no part in the reaction.<p>Capsule 4th ed., p. 2; topic 1 point 31.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -959,16 +959,16 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00032",
           "src": "CAP4-01-00032",
-          "text": "A metal specimen undergoes appreciable permanent elongation before breaking in tension. Which property is demonstrated most directly?",
+          "text": "The property of a material that enables it to be drawn out or elongated to an appreciable extent is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Hardness"
+              "text": "Plasticity"
             },
             {
               "key": "b",
@@ -980,11 +980,11 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "d",
-              "text": "Elastic stiffness"
+              "text": "Elasticity"
             }
           ],
           "answer": "c",
-          "explanation": "Ductility is the capacity for plastic deformation in tension, including elongation or wire drawing. Malleability concerns deformation under compression, while elastic stiffness describes recoverable deformation per unit stress.<p>Capsule 4th ed., p. 2; topic 1 point 32.</p>",
+          "explanation": "Ductility is the property that lets a material be drawn out into wire or elongated appreciably before it breaks, as in mild steel and copper. Malleability is the ability to be hammered or rolled into sheets, and elasticity is the ability to regain shape after the load is removed.<p>Capsule 4th ed., p. 2; topic 1 point 32.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -997,12 +997,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00033",
           "src": "CAP4-01-00033",
-          "text": "Which alloying element chiefly enables the passive surface film characteristic of stainless steel?",
+          "text": "The main alloying element in stainless steel is ______.",
           "options": [
             {
               "key": "a",
@@ -1010,7 +1010,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "b",
-              "text": "Sulfur"
+              "text": "Tungsten"
             },
             {
               "key": "c",
@@ -1018,11 +1018,11 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "d",
-              "text": "Carbon"
+              "text": "Nickel"
             }
           ],
           "answer": "c",
-          "explanation": "Chromium promotes a thin protective chromium-rich oxide film. Nickel is useful in many stainless grades but is not compulsory in every family; high carbon alone does not confer stainless behaviour.<p>Capsule 4th ed., p. 2; topic 1 point 33.</p>",
+          "explanation": "Chromium is the main alloying element in stainless steel; it forms a thin, self-healing chromium oxide film on the surface that resists rusting. Nickel is often added as well, but it is chromium that makes steel stainless.<p>Capsule 4th ed., p. 2; topic 1 point 33.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1035,32 +1035,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00034",
           "src": "CAP4-01-00034",
-          "text": "For plain-carbon steels processed comparably, increasing carbon content generally produces which trade-off?",
+          "text": "The percentage of carbon content present in steel is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Lower hardness with increased resistance to indentation"
+              "text": "4.5% to 6%"
             },
             {
               "key": "b",
-              "text": "Greater ductility with reduced hardness and strength"
+              "text": "2% to 4.5%"
             },
             {
               "key": "c",
-              "text": "Much greater elastic modulus with unchanged weldability"
+              "text": "Less than 0.15%"
             },
             {
               "key": "d",
-              "text": "Greater hardness with reduced ductility and weldability"
+              "text": "0.15% to 1.5%"
             }
           ],
           "answer": "d",
-          "explanation": "Carbon generally increases attainable hardness and strength while reducing ductility and weldability, with heat treatment also important. It does not greatly raise elastic modulus.<p>Source note: p2 n34: 0.15-1.5% is not the universal carbon range of all steels. The robust composition-property trend replaces that incomplete classification.</p><p>Capsule 4th ed., p. 2; topic 1 point 34.</p>",
+          "explanation": "Steel is iron alloyed with 0.15% to 1.5% carbon. Wrought iron contains less carbon than this, while cast iron contains about 2% to 4.5% carbon.<p>Capsule 4th ed., p. 2; topic 1 point 34.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1073,32 +1073,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00044",
           "src": "CAP4-01-00044",
-          "text": "A designer wants moulded fired-clay cornice ornaments with a characteristic earthen appearance. Which material best matches this purpose?",
+          "text": "Terracotta is used in buildings for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Plaster of Paris"
+              "text": "Damp-proof courses"
             },
             {
               "key": "b",
-              "text": "Terrazzo"
+              "text": "Foundations"
             },
             {
               "key": "c",
-              "text": "Fibre-cement board"
+              "text": "Roof trusses"
             },
             {
               "key": "d",
-              "text": "Terracotta"
+              "text": "Ornamental work"
             }
           ],
           "answer": "d",
-          "explanation": "Terracotta is moulded and fired clay commonly used for ornamental architectural units. Terrazzo is a composite finish containing stone chips; plaster and fibre cement have different binders and manufacturing routes.<p>Capsule 4th ed., pp. 3, 5; topic 1 point 42; topic 1 point 125.</p>",
+          "explanation": "Terracotta is a fine clay product burnt hard and often glazed; it is used in buildings for ornamental work such as cornices, facings, mouldings and decorative panels. It is not a structural material for foundations or trusses.<p>Capsule 4th ed., pp. 3, 5; topic 1 point 42; topic 1 point 125.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1113,32 +1113,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00057",
           "src": "CAP4-01-00057",
-          "text": "Two sound stones have adequate durability and strength for the same gravity retaining-wall geometry. Why can the denser stone improve stability?",
+          "text": "The type of stone used for the construction of retaining walls must be ______.",
           "options": [
             {
               "key": "a",
-              "text": "Its added self-weight reduces the retained soil's unit weight"
+              "text": "Light"
             },
             {
               "key": "b",
-              "text": "Its greater density reduces hydrostatic pressure at a given water depth"
+              "text": "Soft"
             },
             {
               "key": "c",
-              "text": "Its added self-weight can increase stabilizing actions"
+              "text": "Heavy"
             },
             {
               "key": "d",
-              "text": "Its greater density directly increases the base friction coefficient"
+              "text": "Porous"
             }
           ],
           "answer": "c",
-          "explanation": "A gravity wall relies substantially on self-weight, which can improve resisting moment and frictional resistance. Increasing normal force is not the same as increasing the friction coefficient. Soil and water pressures do not fall merely because the wall stone is denser; bearing capacity and drainage still require checks.<p>Capsule 4th ed., p. 3; topic 1 point 54.</p>",
+          "explanation": "Stone for retaining walls must be heavy, because a retaining wall resists earth pressure largely by its own weight; heavier stone gives greater stability against overturning and sliding.<p>Capsule 4th ed., p. 3; topic 1 point 54.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1151,32 +1151,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00125",
           "src": "CAP4-01-00125",
-          "text": "A brick schedule distinguishes actual unit dimensions from nominal coordinating dimensions. What normally accounts for the difference?",
+          "text": "The size of a brick is specified by its ______.",
           "options": [
             {
               "key": "a",
-              "text": "The mass of the dry brick"
+              "text": "Weight"
             },
             {
               "key": "b",
-              "text": "The brick's compressive-strength grade"
+              "text": "Colour"
             },
             {
               "key": "c",
-              "text": "The specified mortar-joint allowance"
+              "text": "Dimensions"
             },
             {
               "key": "d",
-              "text": "The percentage of water absorbed"
+              "text": "Compressive strength"
             }
           ],
           "answer": "c",
-          "explanation": "Brick size is described by length, width and height. Actual dimensions describe the unit itself; nominal coordinating dimensions may include joint allowance, which must be stated rather than confused with strength or absorption.<p>Capsule 4th ed., p. 5; topic 1 point 119.</p>",
+          "explanation": "The size of a brick is specified by its dimensions, length × breadth × height, such as 240 mm × 115 mm × 57 mm; weight, colour and strength describe its quality, not its size.<p>Capsule 4th ed., p. 5; topic 1 point 119.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1189,32 +1189,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00128",
           "src": "CAP4-01-00128",
-          "text": "A supplied OPC specification limits total MgO to 6% by mass. Which risk associated with excessive slowly hydrating free magnesia is this type of limit intended to control?",
+          "text": "The maximum percentage of magnesia allowed in ordinary Portland cement is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Low workability caused only by cement fineness"
+              "text": "10%"
             },
             {
               "key": "b",
-              "text": "Flash set from uncontrolled aluminate hydration"
+              "text": "2%"
             },
             {
               "key": "c",
-              "text": "Excess bleeding from deficient aggregate grading"
+              "text": "4%"
             },
             {
               "key": "d",
-              "text": "Delayed expansion and unsoundness"
+              "text": "6%"
             }
           ],
           "answer": "d",
-          "explanation": "Slow hydration of free magnesia can cause delayed expansion and threaten soundness. Total MgO limits and soundness tests depend on the governing cement specification; the source's numerical cap is not adopted as a universal current rule.<p>Source note: p5 n121: 6% is a stipulated specification value only; no current NS/IS edition or adoption has been independently verified here.</p><p>Capsule 4th ed., p. 5; topic 1 point 121.</p>",
+          "explanation": "Magnesia in ordinary Portland cement is limited to a maximum of 6%, because excess magnesia hydrates slowly and causes delayed expansion, making the cement unsound.<p>Capsule 4th ed., p. 5; topic 1 point 121.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1227,16 +1227,16 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00132",
           "src": "CAP4-01-00132",
-          "text": "A specimen continues to extend slowly while a tensile load is maintained for a long period. Which time-dependent behaviour does this demonstrate?",
+          "text": "The phenomenon of slow extension of a material at constant load during a tensile test is known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "Instantaneous elastic recovery"
+              "text": "Relaxation"
             },
             {
               "key": "b",
@@ -1244,15 +1244,15 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "c",
-              "text": "Brittle fracture without prior extension"
+              "text": "Resilience"
             },
             {
               "key": "d",
-              "text": "Stress relaxation at fixed strain"
+              "text": "Fatigue"
             }
           ],
           "answer": "b",
-          "explanation": "Creep is progressive deformation under sustained loading or stress. Stress relaxation instead describes decreasing stress when deformation is held fixed; an ordinary rapid tensile curve does not by itself characterize long-term creep.<p>Capsule 4th ed., p. 5; topic 1 point 126.</p>",
+          "explanation": "Creep is the slow, continuing extension of a material under a constant load. Fatigue is failure under repeated loading, relaxation is a loss of stress at constant strain, and resilience is stored strain energy.<p>Capsule 4th ed., p. 5; topic 1 point 126.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1265,32 +1265,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00133",
           "src": "CAP4-01-00133",
-          "text": "Which inspection report gives the most favourable combination of the listed brick-quality indicators?",
+          "text": "The characteristics of good quality bricks are ______.",
           "options": [
             {
               "key": "a",
-              "text": "High tested absorption, regular faces and sharp arrises"
+              "text": "High water absorption, rough surface and rounded edges"
             },
             {
               "key": "b",
-              "text": "Low tested absorption, warped faces and sharp arrises"
+              "text": "Less water absorption, irregular surface and rounded edges"
             },
             {
               "key": "c",
-              "text": "Low tested absorption, regular faces and sharp arrises"
+              "text": "Less water absorption, regular surface and sharp edges"
             },
             {
               "key": "d",
-              "text": "Low tested absorption, regular faces and crumbling arrises"
+              "text": "High water absorption, regular surface and sharp edges"
             }
           ],
           "answer": "c",
-          "explanation": "Limited absorption, regular geometry and sound sharp edges support good workmanship and durability. These indicators are not a complete acceptance certificate: specified strength, dimensions, durability and test limits still govern.<p>Capsule 4th ed., p. 5; topic 1 point 127.</p>",
+          "explanation": "Good-quality bricks absorb little water, have a regular, uniform surface and sharp, square edges, and give a ringing sound when struck together.<p>Capsule 4th ed., p. 5; topic 1 point 127.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1303,32 +1303,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00142",
           "src": "CAP4-01-00142",
-          "text": "Fresh Portland cement paste becomes warmer after water is added. Which explanation best accounts for this behaviour?",
+          "text": "When water is added to cement, ______.",
           "options": [
             {
               "key": "a",
-              "text": "Hydration initiates exothermic chemical reactions"
+              "text": "Heat is generated and a chemical reaction is initiated"
             },
             {
               "key": "b",
-              "text": "All heat comes from evaporation of the mix water"
+              "text": "Only a physical change takes place"
             },
             {
               "key": "c",
-              "text": "Water causes only endothermic physical wetting"
+              "text": "Heat is absorbed and no reaction occurs"
             },
             {
               "key": "d",
-              "text": "Cement becomes chemically inert on first wetting"
+              "text": "The cement becomes chemically inert"
             }
           ],
           "answer": "a",
-          "explanation": "Cement constituents react with water to form hydration products and release heat. Mixing is the initiating operation, but the ongoing temperature rise reflects chemical hydration rather than merely physical paste formation.<p>Capsule 4th ed., p. 5; topic 1 point 135.</p>",
+          "explanation": "Adding water to cement starts hydration, a chemical reaction that is exothermic, so heat is generated as the reaction proceeds.<p>Capsule 4th ed., p. 5; topic 1 point 135.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1341,32 +1341,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00144",
           "src": "CAP4-01-00144",
-          "text": "A traditional mortar ingredient is made by finely grinding suitably burnt clay or brick. What is this material commonly called?",
+          "text": "Surkhi is the powdered form of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Stone dust"
+              "text": "Gypsum"
             },
             {
               "key": "b",
-              "text": "Quicklime"
+              "text": "Limestone"
             },
             {
               "key": "c",
-              "text": "Surkhi"
+              "text": "Burnt clay"
             },
             {
               "key": "d",
-              "text": "Gypsum"
+              "text": "Unburnt clay"
             }
           ],
           "answer": "c",
-          "explanation": "Surkhi is finely powdered burnt clay, commonly from crushed brick, used in traditional mortars. It can replace part of the fine material, and suitable reactive surkhi can also contribute pozzolanic binding with lime.<p>Capsule 4th ed., p. 5; topic 1 point 137.</p>",
+          "explanation": "Surkhi is finely powdered burnt clay or brick. It is used in lime mortar in place of sand and also improves the mortar's hydraulic properties.<p>Capsule 4th ed., p. 5; topic 1 point 137.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1379,32 +1379,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00145",
           "src": "CAP4-01-00145",
-          "text": "A traditional lime mortar permits suitable reactive surkhi to replace part of its sand. What distinguishes this replacement from adding only inert sand?",
+          "text": "Surkhi, the powdered form of burnt clay, is used in mortar in place of ______.",
           "options": [
             {
               "key": "a",
-              "text": "The powder contributes only particle packing, with no chemical binding"
+              "text": "Cement"
             },
             {
               "key": "b",
-              "text": "Reactive silica and alumina can form cementitious products"
+              "text": "Sand"
             },
             {
               "key": "c",
-              "text": "The powder gains its binding action principally by recrystallizing gypsum"
+              "text": "Coarse aggregate"
             },
             {
               "key": "d",
-              "text": "Free quicklime in the powder is the principal binder after slaking"
+              "text": "Lime"
             }
           ],
           "answer": "b",
-          "explanation": "Reactive constituents in a suitable burnt-clay powder can react with lime in moisture to form additional cementitious products. Surkhi can replace part of the fine material where specified, but its reactivity depends on clay composition, firing and fineness; it is not universally interchangeable with sand.<p>Source note: p5 n137: the two questions test burnt-clay identity and conditional sand replacement with pozzolanic contribution. Independent review made the replacement facet explicit and removed physically implausible distractors.</p><p>Capsule 4th ed., p. 5; topic 1 point 137.</p>",
+          "explanation": "Surkhi replaces sand in mortar. As powdered burnt clay it acts as the fine aggregate and also reacts with lime, giving the mortar greater strength and water resistance.<p>Capsule 4th ed., p. 5; topic 1 point 137.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1417,32 +1417,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00146",
           "src": "CAP4-01-00146",
-          "text": "A sound granite contains abundant quartz and feldspar, while a comparison limestone is mainly calcite. Which conclusion about their resistance to scratching is most defensible?",
+          "text": "Which of the following stones has the comparatively highest coefficient of hardness?",
           "options": [
             {
               "key": "a",
-              "text": "Equal bulk densities would imply equal resistance to scratching"
+              "text": "Conglomerate"
             },
             {
               "key": "b",
-              "text": "The limestone's calcite is harder than the granite's quartz"
+              "text": "Limestone"
             },
             {
               "key": "c",
-              "text": "The granite commonly benefits from its harder mineral constituents"
+              "text": "Granite"
             },
             {
               "key": "d",
-              "text": "The stones' compressive strengths alone establish their scratch hardness"
+              "text": "Slate"
             }
           ],
           "answer": "c",
-          "explanation": "Quartz and feldspar are generally harder than calcite, helping explain granite's common hardness advantage. Scratch hardness is not interchangeable with compressive strength or density. A conglomerate's clasts and cement, and slate's mineralogy and fabric, prevent a universal ranking by rock name alone.<p>Source note: p5 n138: no unverified universal hardness coefficient or ranking over every slate and conglomerate is asserted.</p><p>Capsule 4th ed., p. 5; topic 1 point 138.</p>",
+          "explanation": "Granite, made mainly of hard quartz and feldspar, has a comparatively higher coefficient of hardness than limestone, slate and conglomerate, so it resists wear well.<p>Capsule 4th ed., p. 5; topic 1 point 138.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1455,32 +1455,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00147",
           "src": "CAP4-01-00147",
-          "text": "Quartz-rich sandstone undergoes heat and pressure and recrystallizes without melting. Which rock is the typical product?",
+          "text": "Quartzite is a ______ type of rock.",
           "options": [
             {
               "key": "a",
-              "text": "Quartzite"
+              "text": "Metamorphic"
             },
             {
               "key": "b",
-              "text": "Basalt"
+              "text": "Igneous"
             },
             {
               "key": "c",
-              "text": "Limestone"
+              "text": "Sedimentary"
             },
             {
               "key": "d",
-              "text": "Granite"
+              "text": "Volcanic"
             }
           ],
           "answer": "a",
-          "explanation": "Quartzite is a metamorphic rock formed from quartz-rich sandstone by recrystallization. Its siliceous composition and metamorphic origin are separate classifications; melting and crystallization would describe an igneous process.<p>Capsule 4th ed., p. 5; topic 1 point 139.</p>",
+          "explanation": "Quartzite is a metamorphic rock, formed when sandstone recrystallises under heat and pressure; its composition is siliceous.<p>Capsule 4th ed., p. 5; topic 1 point 139.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1493,32 +1493,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00036",
           "src": "CAP4-05-00036",
-          "text": "Which distinction matters when selecting a binder for an underwater repair that must set quickly?",
+          "text": "Quick setting cement is used for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Rapid hardening is defined only by a shorter initial setting time"
+              "text": "Concrete hauled over long distances"
             },
             {
               "key": "b",
-              "text": "Quick setting alone guarantees resistance to underwater washout"
+              "text": "Decorative finishing work"
             },
             {
               "key": "c",
-              "text": "Quick setting and rapid hardening describe the same measured property"
+              "text": "Mass concrete in dams"
             },
             {
               "key": "d",
-              "text": "Quick setting concerns stiffening; rapid hardening concerns strength gain"
+              "text": "Underwater construction"
             }
           ],
           "answer": "d",
-          "explanation": "Setting time and early strength development are different properties. A quick-setting system may suit a specific repair, but ordinary underwater concreting also requires suitable placement, cohesion and washout control; quick-setting cement alone does not ensure success.<p>Source note: Page 20 point 35 is a possible application, not a blanket material prescription for all underwater construction.</p><p>Capsule 4th ed., p. 20; topic 5 point 35.</p>",
+          "explanation": "Quick setting cement begins to set within about 5 minutes of adding water, so it is used for underwater construction and for sealing leaks, where concrete must set before it is washed away.<p>Capsule 4th ed., p. 20; topic 5 point 35.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1531,32 +1531,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00050",
           "src": "CAP4-05-00050",
-          "text": "For a wavelength at which diamond has refractive index 2.42, take vacuum light speed as 3.00 x 10<sup>8</sup> m/s. What is the approximate light speed inside it?",
+          "text": "The value of the refractive index of diamond is ______.",
           "options": [
             {
               "key": "a",
-              "text": "7.26 x 10<sup>8</sup> m/s"
+              "text": "1.33"
             },
             {
               "key": "b",
-              "text": "2.42 x 10<sup>8</sup> m/s"
+              "text": "1.50"
             },
             {
               "key": "c",
-              "text": "0.413 x 10<sup>8</sup> m/s"
+              "text": "1.00"
             },
             {
               "key": "d",
-              "text": "1.24 x 10<sup>8</sup> m/s"
+              "text": "2.42"
             }
           ],
           "answer": "d",
-          "explanation": "Refractive index is \\(n = \\dfrac{c}{v}\\), so \\[\\begin{aligned} v &amp;= \\dfrac{3.00 \\times 10^8}{2.42} \\\\ &amp;= 1.2397 \\times 10^8\\ \\text{m/s} \\end{aligned}\\] Multiplying \\(c\\) by \\(n\\) reverses the definition. The stated index is wavelength-dependent, not a universal constant at every wavelength.<p>Source note: Page 20 point 49 is an optical material-property item, mapped to ACiE0101 rather than RCC design; parent may review this broad materials mapping.</p><p>Capsule 4th ed., p. 20; topic 5 point 49.</p>",
+          "explanation": "Diamond has a refractive index of 2.42, much higher than water (1.33) or ordinary glass (about 1.5), which is why it sparkles through strong total internal reflection.<p>Capsule 4th ed., p. 20; topic 5 point 49.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1569,32 +1569,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00077",
           "src": "CAP4-05-00077",
-          "text": "For otherwise comparable plain-carbon steels, what trend is generally associated with increasing carbon content?",
+          "text": "The element having the maximum influence on the properties of steel is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Higher hardness and strength, with increased ductility and weldability"
+              "text": "Manganese"
             },
             {
               "key": "b",
-              "text": "Lower hardness and strength, with increased ductility and weldability"
+              "text": "Silicon"
             },
             {
               "key": "c",
-              "text": "Lower hardness and strength, with reduced ductility and weldability"
+              "text": "Sulphur"
             },
             {
               "key": "d",
-              "text": "Higher hardness and strength, with reduced ductility and weldability"
+              "text": "Carbon"
             }
           ],
           "answer": "d",
-          "explanation": "Carbon strongly affects plain-carbon steel microstructure and usually raises strength and hardness at the expense of ductility and weldability. Heat treatment, alloying and processing also matter, so carbon is not the sole control in every steel.<p>Source note: Page 21 point 76&#39;s vague &#39;maximum influence&#39; is limited to a stated plain-carbon-steel comparison.</p><p>Capsule 4th ed., p. 21; topic 5 point 76.</p>",
+          "explanation": "Carbon has the greatest influence on steel: increasing the carbon content raises hardness and strength but reduces ductility and weldability.<p>Capsule 4th ed., p. 21; topic 5 point 76.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1607,7 +1607,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0101",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -1619,27 +1619,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00012",
           "src": "CAP4-01-00012",
-          "text": "An OPC specification requires an initial setting time of not less than 30 minutes. Which laboratory result fails this requirement?",
+          "text": "The initial setting time of ordinary Portland cement is ______.",
           "options": [
             {
               "key": "a",
-              "text": "An initial set at 25 minutes"
+              "text": "30 minutes"
             },
             {
               "key": "b",
-              "text": "An initial set at 45 minutes"
+              "text": "60 minutes"
             },
             {
               "key": "c",
-              "text": "An initial set at 35 minutes"
+              "text": "10 minutes"
             },
             {
               "key": "d",
-              "text": "An initial set at 60 minutes"
+              "text": "600 minutes"
             }
           ],
           "answer": "a",
-          "explanation": "A minimum limit excludes results below 30 minutes, so 25 minutes fails. The limit is not a prediction that every OPC sample sets exactly at 30 minutes; test conditions and the applicable specification matter.<p>Source note: p2 n12: treated 30 minutes as a stated minimum, not an exact setting time or an independently verified current Nepal requirement.</p><p>Capsule 4th ed., p. 2; topic 1 point 12.</p>",
+          "explanation": "The initial setting time of ordinary Portland cement is 30 minutes (minimum), which leaves time to mix, transport and place concrete before it begins to stiffen. The final setting time is not more than 600 minutes (10 hours).<p>Capsule 4th ed., p. 2; topic 1 point 12.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1652,32 +1652,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00035",
           "src": "CAP4-01-00035",
-          "text": "A project specifies at least 10.5 N/mm<sup>2</sup> brick compressive strength. A prepared specimen fails at 231 kN over 21,000 mm<sup>2</sup>. How does this specimen compare with that limit?",
+          "text": "The compressive strength of first-class brick should not be less than ______.",
           "options": [
             {
               "key": "a",
-              "text": "110 N/mm<sup>2</sup>; above the limit"
+              "text": "14.0 N/mm<sup>2</sup>"
             },
             {
               "key": "b",
-              "text": "10.0 N/mm<sup>2</sup>; below the limit"
+              "text": "7.0 N/mm<sup>2</sup>"
             },
             {
               "key": "c",
-              "text": "1.10 N/mm<sup>2</sup>; below the limit"
+              "text": "3.5 N/mm<sup>2</sup>"
             },
             {
               "key": "d",
-              "text": "11.0 N/mm<sup>2</sup>; above the limit"
+              "text": "10.5 N/mm<sup>2</sup>"
             }
           ],
           "answer": "d",
-          "explanation": "Compressive stress is the failure load in newtons divided by the loaded area in square millimetres: \\[\\sigma = \\dfrac{231{,}000}{21{,}000} = 11.0\\ \\text{N/mm}^2\\] This exceeds the stated limit of \\(10.5\\ \\text{N/mm}^2\\). This single-specimen comparison does not replace sampling rules or establish a universal first-class NS/IS boundary.<p>Source note: p2 n35: 10.5 is an explicit project criterion, following the local notes&#39; caution that the source does not establish a common code class boundary.</p><p>Capsule 4th ed., p. 2; topic 1 point 35.</p>",
+          "explanation": "A first-class brick must have a compressive strength of not less than \\(10.5\\ \\text{N/mm}^2\\). Second-class and third-class bricks have lower minimum strengths, \\(7.0\\) and \\(3.5\\ \\text{N/mm}^2\\).<p>Capsule 4th ed., p. 2; topic 1 point 35.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1690,20 +1690,58 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00036",
           "src": "CAP4-01-00036",
-          "text": "A laboratory varies water content until cement paste meets a prescribed plunger penetration. Which apparatus is used for this standard-consistency determination?",
+          "text": "The Vicat apparatus is used for the ______ tests of cement.",
           "options": [
             {
               "key": "a",
-              "text": "Vicat apparatus"
+              "text": "Consistency and setting time"
             },
             {
               "key": "b",
-              "text": "Le Chatelier mould"
+              "text": "Soundness and expansion"
+            },
+            {
+              "key": "c",
+              "text": "Fineness and specific surface"
+            },
+            {
+              "key": "d",
+              "text": "Compressive and tensile strength"
+            }
+          ],
+          "answer": "a",
+          "explanation": "The Vicat apparatus is used for the consistency and setting time tests of cement: its plunger finds the standard consistency of the paste, and its needles give the initial and final setting times. Soundness is tested with the Le Chatelier apparatus and fineness with a sieve or the Blaine apparatus.<p>Capsule 4th ed., p. 2; topic 1 point 36.</p>",
+          "source": {
+            "kind": "capsule",
+            "edition": 4,
+            "reference": "Capsule 4th ed., p. 2; topic 1 point 36",
+            "pages": [
+              2
+            ],
+            "points": [
+              "capsule-t01-p002-n36"
+            ]
+          },
+          "topic": "ACiE0102",
+          "kind": "recall"
+        },
+        {
+          "id": "CAP4-01-00037",
+          "src": "CAP4-01-00037",
+          "text": "Which apparatus is used for both the consistency test and the setting time test of cement?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Le Chatelier apparatus"
+            },
+            {
+              "key": "b",
+              "text": "Vicat apparatus"
             },
             {
               "key": "c",
@@ -1711,49 +1749,11 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "d",
-              "text": "Concrete slump cone"
-            }
-          ],
-          "answer": "a",
-          "explanation": "Vicat plunger penetration is used to establish standard consistency. Le Chatelier measures an expansion response, Blaine measures fineness indirectly, and a slump cone assesses fresh-concrete consistency.<p>Capsule 4th ed., p. 2; topic 1 point 36.</p>",
-          "source": {
-            "kind": "capsule",
-            "edition": 4,
-            "reference": "Capsule 4th ed., p. 2; topic 1 point 36",
-            "pages": [
-              2
-            ],
-            "points": [
-              "capsule-t01-p002-n36"
-            ]
-          },
-          "topic": "ACiE0102",
-          "kind": "application"
-        },
-        {
-          "id": "CAP4-01-00037",
-          "src": "CAP4-01-00037",
-          "text": "After determining cement-paste consistency, a technician replaces the Vicat plunger with prescribed needle attachments. Which property can then be assessed?",
-          "options": [
-            {
-              "key": "a",
-              "text": "Aggregate crushing resistance"
-            },
-            {
-              "key": "b",
-              "text": "Initial and final setting times"
-            },
-            {
-              "key": "c",
-              "text": "Concrete compressive strength"
-            },
-            {
-              "key": "d",
-              "text": "Cement specific gravity"
+              "text": "Slump cone"
             }
           ],
           "answer": "b",
-          "explanation": "Vicat needle arrangements assess initial and final setting under the specified test procedure. Consistency uses a plunger, so identifying the common apparatus does not make the two procedures interchangeable.<p>Capsule 4th ed., p. 2; topic 1 point 36.</p>",
+          "explanation": "The Vicat apparatus serves both tests: with the plunger it gives the standard consistency of cement paste, and with the needle attachments it gives the initial and final setting times. The Le Chatelier apparatus tests soundness, the Blaine apparatus tests fineness, and the slump cone tests concrete workability.<p>Capsule 4th ed., p. 2; topic 1 point 36.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1766,32 +1766,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00038",
           "src": "CAP4-01-00038",
-          "text": "A dry brick weighs 3.00 kg and weighs 3.48 kg after the specified immersion and surface wiping. If the project limit is 15% absorption by dry mass, what is the result?",
+          "text": "For first-class bricks, the water absorption should not be more than ______.",
           "options": [
             {
               "key": "a",
-              "text": "13.8%; meets the stated limit"
+              "text": "20%"
             },
             {
               "key": "b",
-              "text": "0.48%; meets the stated limit"
+              "text": "10%"
             },
             {
               "key": "c",
-              "text": "15%; exactly meets the limit"
+              "text": "25%"
             },
             {
               "key": "d",
-              "text": "16%; fails the stated limit"
+              "text": "15%"
             }
           ],
           "answer": "d",
-          "explanation": "Absorption is measured against the dry mass: \\[\\dfrac{100\\,(3.48 - 3.00)}{3.00} = 16\\%\\] The denominator is dry mass, not wet mass. The 15% requirement is supplied for this problem, not claimed as a universal first-class brick limit.<p>Source note: p2 n37: qualified the unsupported universal 15% criterion in accordance with the local brick-test caution.</p><p>Capsule 4th ed., p. 2; topic 1 point 37.</p>",
+          "explanation": "For first-class bricks, the water absorption should not be more than 15% of the dry weight. Low absorption shows a dense, well-burnt brick; poorer classes of brick are allowed higher absorption.<p>Capsule 4th ed., p. 2; topic 1 point 37.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1804,32 +1804,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00039",
           "src": "CAP4-01-00039",
-          "text": "For a brick compression-test procedure specifying 1:1 cement-sand mortar to fill the frog, what does this preparation primarily provide?",
+          "text": "For the compressive strength test of brick, the frog is filled with cement–sand mortar in the ratio ______.",
           "options": [
             {
               "key": "a",
-              "text": "A permanent increase in the brick's firing temperature"
+              "text": "1 : 2"
             },
             {
               "key": "b",
-              "text": "A prepared bearing face for consistent load transfer"
+              "text": "1 : 1"
             },
             {
               "key": "c",
-              "text": "A direct measure of the brick's water absorption"
+              "text": "1 : 3"
             },
             {
               "key": "d",
-              "text": "A substitute for measuring the loaded area"
+              "text": "1 : 6"
             }
           ],
           "answer": "b",
-          "explanation": "Filling the frog and preparing the bearing faces as prescribed helps produce consistent compressive loading. The specified mortar proportion is a preparation requirement, not a brick-strength value or an absorption test.<p>Source note: p2 n38: the 1:1 preparation is explicitly stipulated; the applicable edition, conditioning and loading details must still govern an actual test.</p><p>Capsule 4th ed., p. 2; topic 1 point 38.</p>",
+          "explanation": "In the compressive strength test, the frog of the brick is filled flush with 1 : 1 cement–sand mortar so that the brick presents a level bearing surface to the plates of the testing machine.<p>Capsule 4th ed., p. 2; topic 1 point 38.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1842,32 +1842,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00043",
           "src": "CAP4-01-00043",
-          "text": "A cement laboratory records the change in separation of indicator arms on a split mould after prescribed heating. Which property is being assessed?",
+          "text": "The soundness test of cement is done with the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Fineness by Blaine permeability"
+              "text": "Vicat apparatus"
             },
             {
               "key": "b",
-              "text": "Consistency by Vicat penetration"
+              "text": "Blaine air-permeability apparatus"
             },
             {
               "key": "c",
-              "text": "Soundness by Le Chatelier expansion"
+              "text": "Le Chatelier apparatus"
             },
             {
               "key": "d",
-              "text": "Strength by mortar-cube crushing"
+              "text": "Compression testing machine"
             }
           ],
           "answer": "c",
-          "explanation": "The Le Chatelier test measures expansion associated with cement soundness under its specified procedure. It does not determine setting time or compressive strength, and it is not a complete diagnosis of every expansion mechanism.<p>Capsule 4th ed., p. 2; topic 1 point 41.</p>",
+          "explanation": "Soundness, the freedom of hardened cement from excessive expansion, is tested with the Le Chatelier apparatus, which measures the expansion of cement paste in a split mould after boiling. The Vicat apparatus gives consistency and setting times, and the Blaine apparatus gives fineness.<p>Capsule 4th ed., p. 2; topic 1 point 41.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1880,16 +1880,16 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-02-00007",
           "src": "CAP4-02-00007",
-          "text": "Aggregate pores are filled with water, but a towel removes the external water film without drying those pores. Which moisture state has been reached?",
+          "text": "The aggregate containing moisture in its pores but having its surface dry is known as ______ aggregate.",
           "options": [
             {
               "key": "a",
-              "text": "Oven dry throughout"
+              "text": "Oven dry"
             },
             {
               "key": "b",
@@ -1897,15 +1897,15 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "c",
-              "text": "Wet with free surface water"
+              "text": "Wet"
             },
             {
               "key": "d",
-              "text": "Air dry with partly filled pores"
+              "text": "Air dry"
             }
           ],
           "answer": "b",
-          "explanation": "SSD aggregate has water-filled accessible pores and no free surface moisture. Merely having some pore moisture with a dry surface is insufficient: air-dry aggregate can still absorb mixing water.<p>Source note: Page 6 point 6 requires saturated pores, not just unspecified moisture in pores.</p><p>Capsule 4th ed., p. 6; topic 2 point 6.</p>",
+          "explanation": "Saturated surface-dry aggregate has its pores filled with water but no free water on its surface, so it neither takes water from nor adds water to the mix. Oven-dry aggregate has empty pores, air-dry aggregate partly filled pores, and wet aggregate carries surface water.<p>Capsule 4th ed., p. 6; topic 2 point 6.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1918,32 +1918,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-02-00021",
           "src": "CAP4-02-00021",
-          "text": "Two fine aggregates are identified using the four-zone IS 383 grading convention as Zone I and Zone IV. Which comparison is generally correct?",
+          "text": "Sands of zone I are ______ sand.",
           "options": [
             {
               "key": "a",
-              "text": "Zone I is finer than Zone IV"
+              "text": "Medium"
             },
             {
               "key": "b",
-              "text": "The zones distinguish clay plasticity rather than grading"
+              "text": "Very fine"
             },
             {
               "key": "c",
-              "text": "Zone I is coarser than Zone IV"
+              "text": "Coarse"
             },
             {
               "key": "d",
-              "text": "The zones distinguish particle density rather than grading"
+              "text": "Fine"
             }
           ],
           "answer": "c",
-          "explanation": "In the named fine-aggregate grading convention, Zone I is the coarse end and Zone IV the fine end. This is an aggregate grading designation, not a USCS sand-size subdivision or a stand-alone guarantee of concrete suitability.<p>Capsule 4th ed., p. 6; topic 2 point 18.</p>",
+          "explanation": "Fine aggregate is divided into grading zones I to IV. Zone I is the coarsest and zone IV the finest, so sands of zone I are coarse sand.<p>Capsule 4th ed., p. 6; topic 2 point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1961,27 +1961,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-02-00043",
           "src": "CAP4-02-00043",
-          "text": "Loose moist sand occupies 125 litres but settles to 100 litres when flooded and stirred in the bulking test. What bulking percentage is indicated?",
+          "text": "The increase in volume of sand due to moisture is known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "80%"
+              "text": "Segregation"
             },
             {
               "key": "b",
-              "text": "20%"
+              "text": "Bleeding"
             },
             {
               "key": "c",
-              "text": "25%"
+              "text": "Bulking of sand"
             },
             {
               "key": "d",
-              "text": "125%"
+              "text": "Shrinkage"
             }
           ],
           "answer": "c",
-          "explanation": "Bulking is the volume increase measured against the unbulked volume: \\[\\dfrac{125 - 100}{100} \\times 100 = 25\\%\\] Moisture films separate grains; the effect is not simply internal pore absorption, and flooding removes the bulking effect.<p>Source note: Page 7 point 39 confuses moisture-film bulking with absorption into aggregate pores.</p><p>Capsule 4th ed., p. 7; topic 2 point 39.</p>",
+          "explanation": "Bulking is the increase in volume of sand when it takes up a little moisture: thin water films hold the grains apart. It is greatest at about 4 to 6% moisture and disappears when the sand is fully saturated.<p>Capsule 4th ed., p. 7; topic 2 point 39.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1994,32 +1994,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-02-00136",
           "src": "CAP4-02-00136",
-          "text": "Identical dry aggregate gives different measured bulk densities when poured into a narrow vessel and a standard measure using different filling procedures. Which explanation is most defensible?",
+          "text": "The bulk density of aggregates does not depend upon the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Bulk density must be identical regardless of the method of placing the aggregate"
+              "text": "Degree of compaction"
             },
             {
               "key": "b",
-              "text": "Bulk density changes must be interpreted as changes in particle specific gravity"
+              "text": "Grading of the aggregate"
             },
             {
               "key": "c",
-              "text": "A grading change must be inferred even though the two representative samples match"
+              "text": "Shape of the aggregate particles"
             },
             {
               "key": "d",
-              "text": "Packing and wall effects can change the measured interparticle void content"
+              "text": "Size and shape of the container"
             }
           ],
           "answer": "d",
-          "explanation": "Bulk density includes interparticle voids and therefore depends on packing and the prescribed loose or compacted procedure. Measure dimensions relative to particle size can cause wall effects. Standardized vessels and filling procedures make results comparable; particle density is a different property.<p>Source note: Page 9 point 122&#39;s unconditional container-independence claim is unsafe for measured bulk density; container geometry does not change intrinsic grain density.</p><p>Capsule 4th ed., p. 9; topic 2 point 122.</p>",
+          "explanation": "The bulk density of aggregate depends on its grading, particle shape and specific gravity and on how compactly it is filled, but it does not depend upon the size and shape of the container used for the test.<p>Capsule 4th ed., p. 9; topic 2 point 122.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2032,32 +2032,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-02-00148",
           "src": "CAP4-02-00148",
-          "text": "Two fine aggregates are tested on the same standard sieve series. Their fineness moduli are 2.3 and 3.0. What does the higher value generally indicate?",
+          "text": "An increase in the fineness modulus of aggregates indicates ______ grading.",
           "options": [
             {
               "key": "a",
-              "text": "Coarser overall grading"
+              "text": "Coarser"
             },
             {
               "key": "b",
-              "text": "Higher particle specific gravity"
+              "text": "Finer"
             },
             {
               "key": "c",
-              "text": "Finer overall grading"
+              "text": "Uniform"
             },
             {
               "key": "d",
-              "text": "Greater clay plasticity"
+              "text": "Gap"
             }
           ],
           "answer": "a",
-          "explanation": "Fineness modulus is obtained from cumulative percentages retained on a specified sieve series. A higher value generally indicates coarser aggregate. It is a grading index, not a density or plasticity measure, and different grading curves can share the same modulus.<p>Capsule 4th ed., p. 10; topic 2 point 131.</p>",
+          "explanation": "Fineness modulus is the sum of the cumulative percentages retained on the standard sieves divided by 100. A higher value means more material is retained on the larger sieves, that is, a coarser grading.<p>Capsule 4th ed., p. 10; topic 2 point 131.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2070,32 +2070,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-02-00166",
           "src": "CAP4-02-00166",
-          "text": "Two standardized bulking tests use representative samples of the same sand at the same moisture and comparable filling conditions. Which factor is the principal physical cause of bulking rather than merely a possible measurement influence?",
+          "text": "Bulking of aggregate does not depend upon the ______.",
           "options": [
             {
               "key": "a",
-              "text": "The method used to strike off the measured sand surface"
+              "text": "Method of filling the sand"
             },
             {
               "key": "b",
-              "text": "Moisture films and menisci separating grains"
+              "text": "Size and shape of the container"
             },
             {
               "key": "c",
-              "text": "The vessel diameter relative to the sand particle size"
+              "text": "Fineness of the sand"
             },
             {
               "key": "d",
-              "text": "The packing procedure used to fill the test vessel"
+              "text": "Moisture content of the sand"
             }
           ],
           "answer": "b",
-          "explanation": "Bulking is caused by moisture-related grain separation and is influenced by sand grading and water content. Container geometry is not its physical cause, although an unsuitable container or different packing procedure can affect the measured apparent volume and result.<p>Source note: Page 10 point 146 is qualified to distinguish the intrinsic bulking mechanism from container-related measurement effects.</p><p>Capsule 4th ed., p. 10; topic 2 point 146.</p>",
+          "explanation": "Bulking of sand depends on its moisture content and fineness, finer sand bulking more, but not upon the size and shape of the container used in the test.<p>Capsule 4th ed., p. 10; topic 2 point 146.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2108,32 +2108,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00040",
           "src": "CAP4-05-00040",
-          "text": "During the idealized yield plateau in a mild-steel tensile test, how do stress and strain change?",
+          "text": "After the yield point is reached in a tensile test sample, the stress increases ______ than the strain.",
           "options": [
             {
               "key": "a",
-              "text": "Stress must drop to zero before strain can increase"
+              "text": "Only after unloading"
             },
             {
               "key": "b",
-              "text": "Strain increases substantially at nearly constant stress"
+              "text": "More slowly"
             },
             {
               "key": "c",
-              "text": "Stress increases substantially at zero additional strain"
+              "text": "More rapidly"
             },
             {
               "key": "d",
-              "text": "Stress and strain remain proportional with unchanged slope"
+              "text": "At the same rate"
             }
           ],
           "answer": "b",
-          "explanation": "Yielding permits a large plastic strain increment with little change in engineering stress on the mild-steel plateau. Later strain hardening raises stress again. Steel grades without a distinct plateau are commonly characterized using proof stress.<p>Source note: Page 20 point 39 reverses the characteristic post-yield trend; the question specifies mild steel with a yield plateau.</p><p>Capsule 4th ed., p. 20; topic 5 point 39.</p>",
+          "explanation": "Beyond the yield point, a small increase in stress produces a large increase in strain, so the stress increases more slowly than the strain and Hooke's law no longer holds.<p>Capsule 4th ed., p. 20; topic 5 point 39.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2146,32 +2146,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00104",
           "src": "CAP4-05-00104",
-          "text": "Which test directly establishes reinforcement-bar yield or proof stress, ultimate tensile strength and elongation for material quality control?",
+          "text": "Which of the following tests is not conducted on reinforcement bars?",
           "options": [
             {
               "key": "a",
-              "text": "Bend test around a mandrel"
+              "text": "Bend test"
             },
             {
               "key": "b",
-              "text": "Uniaxial tensile test"
+              "text": "Compression test"
             },
             {
               "key": "c",
-              "text": "Rebend test after prescribed ageing"
+              "text": "Rebend test"
             },
             {
               "key": "d",
-              "text": "Short-bar compression test"
+              "text": "Tensile test"
             }
           ],
           "answer": "b",
-          "explanation": "A tensile test provides the stress-strain and elongation properties used to characterize rebar, supplemented by appropriate bend or rebend and other specified tests. Saying compression testing is never performed for any research purpose would be too absolute.<p>Source note: Page 22 point 103 is limited to routine rebar material testing rather than an absolute ban on compression experiments.</p><p>Capsule 4th ed., p. 22; topic 5 point 103.</p>",
+          "explanation": "Reinforcing bars are tested in tension for yield stress, ultimate strength and elongation, and by bend and rebend tests for ductility; a compression test is not conducted on rebars.<p>Capsule 4th ed., p. 22; topic 5 point 103.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2184,32 +2184,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00114",
           "src": "CAP4-05-00114",
-          "text": "A traditional mortar briquette with a reduced central neck is pulled apart in grips. Which property does failure across the neck principally measure?",
+          "text": "Mortar briquettes are used for ______ testing of mortars.",
           "options": [
             {
               "key": "a",
-              "text": "Direct shear strength"
+              "text": "Shear"
             },
             {
               "key": "b",
-              "text": "Direct tensile strength"
+              "text": "Tensile"
             },
             {
               "key": "c",
-              "text": "Uniaxial compressive strength"
+              "text": "Compressive"
             },
             {
               "key": "d",
-              "text": "Flexural tensile strength"
+              "text": "Flexural"
             }
           ],
           "answer": "b",
-          "explanation": "The briquette is loaded in direct tension and tensile strength is calculated from breaking load divided by neck area. It is a traditional test geometry, distinct from modern specified compression or flexure tests and not a claim of current universal acceptance practice.<p>Capsule 4th ed., p. 22; topic 5 point 112.</p>",
+          "explanation": "A briquette is a figure-of-eight shaped mortar specimen with a narrow waist; it is pulled apart in clips to find the direct tensile strength of the mortar.<p>Capsule 4th ed., p. 22; topic 5 point 112.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2222,7 +2222,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0102",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00130",
@@ -2272,27 +2272,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00002",
           "src": "CAP4-01-00002",
-          "text": "A contractor will cast many identical concrete wall panels and can justify a high initial formwork cost. Which material best suits repeated use with dimensional stability?",
+          "text": "For repetitive use of formwork in concrete construction, the preferred formwork material is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Properly maintained steel panels"
+              "text": "Steel"
             },
             {
               "key": "b",
-              "text": "Exterior plywood panel sheathing"
+              "text": "Plywood"
             },
             {
               "key": "c",
-              "text": "Resin-bonded particleboard panels"
+              "text": "Bamboo"
             },
             {
               "key": "d",
-              "text": "Sawn softwood board sheathing"
+              "text": "Timber"
             }
           ],
           "answer": "a",
-          "explanation": "Steel formwork offers high reuse potential, rigidity and consistent dimensions when cleaned and maintained. Its higher initial cost and weight become worthwhile for repetitive work; it is not automatically cheapest for a single pour.<p>Capsule 4th ed., p. 2; topic 1 point 2.</p>",
+          "explanation": "Steel formwork is preferred where the same forms are used again and again: it is strong, rigid and dimensionally stable and gives a smooth finish over many repetitions, although its first cost is high. Timber, plywood and bamboo wear out after fewer uses.<p>Capsule 4th ed., p. 2; topic 1 point 2.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2305,12 +2305,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00004",
           "src": "CAP4-01-00004",
-          "text": "An existing masonry wall becomes unstable during adjacent excavation and receives temporary inclined supports. What is this protective arrangement called?",
+          "text": "The arrangement made to support an unsafe structure temporarily is known as ______.",
           "options": [
             {
               "key": "a",
@@ -2330,7 +2330,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Shoring temporarily supports an unsafe structure. Underpinning strengthens or extends foundations, scaffolding gives workers access, and centering supports arches or similar construction until they become self-supporting.<p>Capsule 4th ed., p. 2; topic 1 point 4.</p>",
+          "explanation": "Shoring is the temporary support given to an unsafe structure, for example by raking, flying or dead shores. Underpinning strengthens or deepens an existing foundation, scaffolding is a working platform, and centering is the temporary support for an arch or slab during construction.<p>Capsule 4th ed., p. 2; topic 1 point 4.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2343,32 +2343,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00005",
           "src": "CAP4-01-00005",
-          "text": "Plaster must be applied to a smooth concrete wall. Which preparation most directly improves mechanical bond?",
+          "text": "Before plastering, the surface to be plastered has to be ______.",
           "options": [
             {
               "key": "a",
-              "text": "Polish the background and leave release oil in place"
+              "text": "Smooth"
             },
             {
               "key": "b",
-              "text": "Provide a clean, suitably roughened and dampened background"
+              "text": "Rough"
             },
             {
               "key": "c",
-              "text": "Cover loose dust with a thicker coat of plaster"
+              "text": "Polished"
             },
             {
               "key": "d",
-              "text": "Saturate the surface until free water forms a film"
+              "text": "Painted"
             }
           ],
           "answer": "b",
-          "explanation": "A sound, clean, roughened surface supplies a mechanical key, and controlled dampening limits excessive suction. Dust, release oil and standing water can weaken adhesion; roughness alone cannot compensate for contamination.<p>Capsule 4th ed., p. 2; topic 1 point 5.</p>",
+          "explanation": "Before plastering, the surface is made rough (by raking out the joints or hacking the surface), cleaned and wetted, so that the plaster keys into it and bonds well. A smooth, polished or painted surface gives poor adhesion.<p>Capsule 4th ed., p. 2; topic 1 point 5.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2381,12 +2381,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00017",
           "src": "CAP4-01-00017",
-          "text": "A moulded brick has a shallow rectangular depression on its broad bed face. Which name identifies this feature?",
+          "text": "The indentation on the surface of a brick is called ______.",
           "options": [
             {
               "key": "a",
@@ -2398,7 +2398,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "c",
-              "text": "Quoin"
+              "text": "Bed"
             },
             {
               "key": "d",
@@ -2406,7 +2406,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The frog is the depression in a brick bed face and can receive mortar. An arris is an edge, a quoin is a masonry corner, and a closer is a cut brick used to maintain bond.<p>Capsule 4th ed., p. 2; topic 1 point 17.</p>",
+          "explanation": "The frog is the indentation formed on the face of a brick during moulding; it carries the maker's mark and holds mortar, forming a key with the course above. An arris is an edge of the brick, the bed is its face in contact with mortar, and a closer is a cut piece of brick.<p>Capsule 4th ed., p. 2; topic 1 point 17.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2419,32 +2419,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00047",
           "src": "CAP4-01-00047",
-          "text": "A stair flight rises through 12 risers to an upper landing that provides the final horizontal surface. Excluding that landing, how many treads are in the flight?",
+          "text": "The number of treads in a flight is equal to ______.",
           "options": [
             {
               "key": "a",
-              "text": "10"
+              "text": "Twice the number of risers"
             },
             {
               "key": "b",
-              "text": "13"
+              "text": "The number of risers"
             },
             {
               "key": "c",
-              "text": "11"
+              "text": "The number of risers minus one"
             },
             {
               "key": "d",
-              "text": "12"
+              "text": "The number of risers plus one"
             }
           ],
           "answer": "c",
-          "explanation": "Under the stated counting convention, the upper landing replaces the last tread, so the number of separate treads is \\[12 - 1 = 11\\] Counting the landing as a tread would use a different convention.<p>Capsule 4th ed., p. 3; topic 1 point 44.</p>",
+          "explanation": "In a flight of stairs, the number of treads is the number of risers minus one, because the last riser leads onto the landing or floor, which takes the place of a tread. For example, a flight with 12 risers has 11 treads.<p>Capsule 4th ed., p. 3; topic 1 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2457,32 +2457,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00048",
           "src": "CAP4-01-00048",
-          "text": "Why are diagonal raking courses sometimes introduced inside a thick brick wall?",
+          "text": "The weakest bond in building is ______.",
           "options": [
             {
               "key": "a",
-              "text": "To provide a capillary break above foundation level"
+              "text": "English bond"
             },
             {
               "key": "b",
-              "text": "To accommodate expansion between adjacent wall panels"
+              "text": "Header bond"
             },
             {
               "key": "c",
-              "text": "To form a sloping weathering surface on the wall top"
+              "text": "Flemish bond"
             },
             {
               "key": "d",
-              "text": "To improve longitudinal bonding within the wall's interior"
+              "text": "Raking bond"
             }
           ],
           "answer": "d",
-          "explanation": "Raking bonds provide diagonal internal bonding in thick masonry. A damp-proof course, weathered coping and movement joint serve the other listed purposes. There is no universal ranking making raking bond the weakest regardless of thickness, loading and workmanship.<p>Source note: p3 n45: the unsupported weakest-bond claim is corrected to the purpose of raking bond, consistent with the local building notes.</p><p>Capsule 4th ed., p. 3; topic 1 point 45.</p>",
+          "explanation": "Raking bond is the weakest bond. Its bricks are laid at an angle within the thickness of thick walls, mainly to improve longitudinal bonding, and it is not used as the main bond of a wall. English bond is the strongest, and Flemish and header bonds are also stronger than raking bond.<p>Capsule 4th ed., p. 3; topic 1 point 45.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2495,32 +2495,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00050",
           "src": "CAP4-01-00050",
-          "text": "A tiled roof terrace leaks despite having low-absorption tiles. Which explanation best identifies the missing waterproofing principle?",
+          "text": "The purpose of providing waterproof tiles is to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Stronger bedding mortar alone can seal every movement joint"
+              "text": "Improve acoustic insulation"
             },
             {
               "key": "b",
-              "text": "Sealing only tile faces is sufficient even with cracked joints"
+              "text": "Increase the strength of the slab"
             },
             {
               "key": "c",
-              "text": "Greater tile thickness can replace all joint waterproofing details"
+              "text": "Reduce the self-weight of the roof"
             },
             {
               "key": "d",
-              "text": "The assembly needs continuous waterproofing at joints and interfaces"
+              "text": "Prevent water from entering"
             }
           ],
           "answer": "d",
-          "explanation": "Water can enter through joints, cracks and interfaces even when the tiles themselves absorb little water. Waterproofing relies on compatible continuous details and drainage, not the tile material alone.<p>Source note: p3 n47: qualified the implication that waterproof tiles by themselves make an entire assembly watertight.</p><p>Capsule 4th ed., p. 3; topic 1 point 47.</p>",
+          "explanation": "Waterproof tiles are provided to prevent water from entering the roof or floor below. Their purpose is watertightness, not reducing weight, improving acoustics or adding strength.<p>Capsule 4th ed., p. 3; topic 1 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2533,32 +2533,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00051",
           "src": "CAP4-01-00051",
-          "text": "A roof gutter detail specifies cement-sand mortar to form the channel and a compatible bituminous lining. Which division of functions is correct?",
+          "text": "The materials used in a rainwater gutter in a roof are ______.",
           "options": [
             {
               "key": "a",
-              "text": "Mortar forms the sole water barrier; lining acts only as a primer"
+              "text": "Cement, lime and gypsum"
             },
             {
               "key": "b",
-              "text": "Mortar accommodates thermal movement; lining supplies the rigid base"
+              "text": "Mud, straw and lime"
             },
             {
               "key": "c",
-              "text": "Mortar forms the falls; lining limits water penetration"
+              "text": "Cement, sand and bitumen"
             },
             {
               "key": "d",
-              "text": "Mortar seals moving joints; lining reinforces the channel structurally"
+              "text": "Lime, surkhi and sand"
             }
           ],
           "answer": "c",
-          "explanation": "The mortar can form and smooth the gutter profile, while the compatible bituminous layer provides waterproofing. Materials must follow a designed detail; simply mixing cement, sand and bitumen is not a universal gutter specification.<p>Source note: p3 n48: interpreted the listed materials as a stipulated gutter system with separate roles, not an unexplained universal mixture.</p><p>Capsule 4th ed., p. 3; topic 1 point 48.</p>",
+          "explanation": "A rainwater gutter in a roof is made with cement, sand and bitumen: cement–sand mortar forms the channel and its falls, and bitumen makes it watertight.<p>Capsule 4th ed., p. 3; topic 1 point 48.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2571,32 +2571,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00052",
           "src": "CAP4-01-00052",
-          "text": "A short structural projection from a masonry wall provides a bearing seat for a roof truss. What is this projection called?",
+          "text": "A projecting piece usually provided to support a truss is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Coping"
+              "text": "Sill"
             },
             {
               "key": "b",
-              "text": "Corbel"
+              "text": "Frieze"
             },
             {
               "key": "c",
-              "text": "Cornice"
+              "text": "Plinth"
             },
             {
               "key": "d",
-              "text": "Frieze"
+              "text": "Coping"
             }
           ],
           "answer": "b",
-          "explanation": "A corbel projects from a support to carry a concentrated bearing load. A frieze is an architectural band, a cornice is a projecting decorative course, and coping caps a wall.<p>Source note: p3 n49: corrected frieze to corbel using the explicit bearing-detail distinction in the local building notes.</p><p>Capsule 4th ed., p. 3; topic 1 point 49.</p>",
+          "explanation": "The projecting piece usually provided to support a truss is the frieze, a projecting band of masonry near the top of the wall. Coping caps the top of a wall, the plinth is the base course above ground level, and a sill is the base of a window opening.<p>Capsule 4th ed., p. 3; topic 1 point 49.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2609,12 +2609,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00053",
           "src": "CAP4-01-00053",
-          "text": "A plastering crew cuts shallow indentations into an otherwise smooth concrete background to provide a mechanical key. What is this preparation called?",
+          "text": "The process of making the background rough before plastering is called ______.",
           "options": [
             {
               "key": "a",
@@ -2634,7 +2634,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Hacking roughens a smooth background to improve plaster key, subject to approved surface preparation. Pointing finishes masonry joints, screeding controls level, and floating works the applied plaster surface.<p>Capsule 4th ed., p. 3; topic 1 point 50.</p>",
+          "explanation": "Hacking is the roughening of a smooth background, such as concrete, by cutting shallow indentations so that the plaster gets a mechanical key. Pointing finishes mortar joints, screeding levels a surface, and floating smooths a plaster coat.<p>Capsule 4th ed., p. 3; topic 1 point 50.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2647,32 +2647,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00054",
           "src": "CAP4-01-00054",
-          "text": "A gas service is proposed inside an inaccessible floor void. Which issue must the designer resolve rather than relying on a blanket statement about all underfloor pipes?",
+          "text": "Which of the following cannot be provided underneath a floor?",
           "options": [
             {
               "key": "a",
-              "text": "Whether passing a pressure test alone approves any concealed route"
+              "text": "Electrical conduit"
             },
             {
               "key": "b",
-              "text": "Whether water-service installation rules can replace the gas code"
+              "text": "Drainage pipe"
             },
             {
               "key": "c",
-              "text": "Whether a sleeve automatically permits every concealed joint type"
+              "text": "Water supply pipe"
             },
             {
               "key": "d",
-              "text": "Applicable gas-code routing, joint protection and access requirements"
+              "text": "Gas pipe"
             }
           ],
           "answer": "d",
-          "explanation": "Permissible gas-pipe routing depends on the governing gas code, pipe material, joints, protection and ventilation or access provisions. An inaccessible void can conceal leaks; the source does not establish a universal ban on every underfloor installation.<p>Source note: p3 n51: no current gas regulation or jurisdiction is supplied, so the categorical prohibition is not asserted as law.</p><p>Capsule 4th ed., p. 3; topic 1 point 51.</p>",
+          "explanation": "A gas pipe cannot be provided underneath a floor: gas leaking from it could collect unseen in the enclosed space and cause a fire or explosion. Gas pipes are therefore run in exposed, ventilated positions.<p>Capsule 4th ed., p. 3; topic 1 point 51.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2685,32 +2685,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00056",
           "src": "CAP4-01-00056",
-          "text": "For this site, the applicable approval sets maximum ground coverage at 60% of a 400 m<sup>2</sup> plot. Ignoring any tighter setback constraint, what is the maximum permitted footprint?",
+          "text": "As per regulations, the plinth area should occupy about ______ of the total plot area.",
           "options": [
             {
               "key": "a",
-              "text": "240 m<sup>2</sup>"
+              "text": "60 to 75%"
             },
             {
               "key": "b",
-              "text": "300 m<sup>2</sup>"
+              "text": "30 to 45%"
             },
             {
               "key": "c",
-              "text": "160 m<sup>2</sup>"
+              "text": "85 to 95%"
             },
             {
               "key": "d",
-              "text": "400 m<sup>2</sup>"
+              "text": "10 to 15%"
             }
           ],
           "answer": "a",
-          "explanation": "Ground coverage is footprint divided by plot area, so the permitted footprint is \\[0.60 \\times 400 = 240\\ \\text{m}^2\\] Setbacks or other controls may reduce this area; ground coverage is not floor-area ratio over all storeys.<p>Source note: p3 n53: replaced the unverified universal 60-75% regulatory range with an explicit site-specific assumption, not a current Nepal legal threshold.</p><p>Capsule 4th ed., p. 3; topic 1 point 53.</p>",
+          "explanation": "As per regulations, the plinth area of a building should occupy about 60 to 75% of the total plot area; the remaining area is left open for setbacks, light and ventilation.<p>Capsule 4th ed., p. 3; topic 1 point 53.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2723,32 +2723,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00058",
           "src": "CAP4-01-00058",
-          "text": "A stone that becomes harder after losing quarry moisture is to receive a dressed finish. When is dressing generally easier?",
+          "text": "The dressing of stone is done ______.",
           "options": [
             {
               "key": "a",
-              "text": "Soon after quarrying, before substantial drying"
+              "text": "Immediately after quarrying"
             },
             {
               "key": "b",
-              "text": "After repeated wetting and freezing in storage"
+              "text": "Only after it has weathered"
             },
             {
               "key": "c",
-              "text": "Only after it has been built into the finished wall"
+              "text": "After laying it in the masonry"
             },
             {
               "key": "d",
-              "text": "Only after prolonged weathering has hardened it"
+              "text": "After seasoning the stone"
             }
           ],
           "answer": "a",
-          "explanation": "Some stones are easier to work while retaining quarry moisture and harden on exposure. This is a material-dependent preference, not a requirement that every stone be dressed immediately under all site conditions.<p>Source note: p3 n55: qualified the absolute timing statement to stones affected by loss of quarry sap.</p><p>Capsule 4th ed., p. 3; topic 1 point 55.</p>",
+          "explanation": "Stone is dressed immediately after quarrying, while it still contains quarry sap and is comparatively soft and easy to work; it becomes harder as it dries out.<p>Capsule 4th ed., p. 3; topic 1 point 55.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2761,32 +2761,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00059",
           "src": "CAP4-01-00059",
-          "text": "Stone blocks for a cylindrical pillar must have exposed faces shaped to the specified circular profile. Which form of dressing produces that geometry?",
+          "text": "Circular finishing of stone is commonly applied in the construction of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Rock-faced dressing"
+              "text": "Floors"
             },
             {
               "key": "b",
-              "text": "Circular dressing"
+              "text": "Pillars"
             },
             {
               "key": "c",
-              "text": "Boasted dressing of a plane face"
+              "text": "Walls"
             },
             {
               "key": "d",
-              "text": "Drafted margins around a pitched face"
+              "text": "Steps"
             }
           ],
           "answer": "b",
-          "explanation": "Circular dressing shapes stone to a curved profile, as required for a cylindrical pillar. Boasted plane faces, rough rock faces and dressed edge margins do not by themselves produce the required circular geometry.<p>Source note: p3 n56: the source phrase is incomplete. Independent review replaced the unrelated plaster-template exercise with circular stone dressing for pillars, supported by chapter-01-materials.js, stone-selection. This is a defensible interpretation, not a claim that missing original wording has been recovered.</p><p>Capsule 4th ed., p. 3; topic 1 point 56.</p>",
+          "explanation": "Circular finishing (circular dressing) shapes the exposed face of stone to a curved surface, so it is commonly applied to stones used for pillars, whose faces are round.<p>Capsule 4th ed., p. 3; topic 1 point 56.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2799,32 +2799,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00090",
           "src": "CAP4-01-00090",
-          "text": "A planning exercise allocates 12% of a 250 m<sup>2</sup> plinth area to corridors and passages. What horizontal circulation area is allowed by that assumption?",
+          "text": "The percentage of plinth area provided for horizontal circulation is ______.",
           "options": [
             {
               "key": "a",
-              "text": "25 m<sup>2</sup>"
+              "text": "20 to 25%"
             },
             {
               "key": "b",
-              "text": "220 m<sup>2</sup>"
+              "text": "30 to 40%"
             },
             {
               "key": "c",
-              "text": "37.5 m<sup>2</sup>"
+              "text": "5 to 8%"
             },
             {
               "key": "d",
-              "text": "30 m<sup>2</sup>"
+              "text": "10 to 15%"
             }
           ],
           "answer": "d",
-          "explanation": "The horizontal circulation allowance is \\[0.12 \\times 250 = 30\\ \\text{m}^2\\] Corridors and passages differ from stairs and lifts used for vertical circulation; the allowance is a planning assumption rather than a universal code percentage.<p>Source note: p4 n88: the source&#39;s 10-15% is treated as heuristic, not a compulsory building requirement.</p><p>Capsule 4th ed., p. 4; topic 1 point 88.</p>",
+          "explanation": "Horizontal circulation, such as corridors, passages and verandahs, is provided at 10 to 15% of the plinth area. Vertical circulation, such as stairs and lifts, is allowed for separately.<p>Capsule 4th ed., p. 4; topic 1 point 88.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2837,32 +2837,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00126",
           "src": "CAP4-01-00126",
-          "text": "Highly absorbent clay bricks are appropriately prewetted before laying. What is the principal benefit for the fresh mortar?",
+          "text": "Bricks are soaked in water before use in brick masonry mainly to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Lower mortar demand because wet bricks expand to fill the joints"
+              "text": "Remove efflorescence permanently"
             },
             {
               "key": "b",
-              "text": "Reduced premature loss of mortar water into the brick"
+              "text": "Prevent them from absorbing water from the mortar"
             },
             {
               "key": "c",
-              "text": "Increased suction that rapidly stiffens the mortar bed"
+              "text": "Increase their compressive strength"
             },
             {
               "key": "d",
-              "text": "A higher water-cement ratio from free water on the bed face"
+              "text": "Make them lighter to handle"
             }
           ],
           "answer": "b",
-          "explanation": "Controlled prewetting limits excessive suction, helping mortar retain water for hydration and bond development. Bricks should not carry a free water film when laid; prewetting does not replace proper curing.<p>Capsule 4th ed., p. 5; topic 1 point 120.</p>",
+          "explanation": "Bricks are soaked before laying to wash off dust, to prevent them from absorbing moisture from the mortar (which would weaken its bond) and to allow the mortar to spread evenly.<p>Capsule 4th ed., p. 5; topic 1 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2875,32 +2875,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00127",
           "src": "CAP4-01-00127",
-          "text": "After prewetting clay bricks, a mason removes loose dust and allows free surface water to drain. Why is this combination useful?",
+          "text": "Which of the following is not a purpose of soaking bricks in water before use in masonry?",
           "options": [
             {
               "key": "a",
-              "text": "It makes the brick's edges stronger than its core"
+              "text": "Allowing even spreading of the mortar"
             },
             {
               "key": "b",
-              "text": "It improves mortar contact without a separating water film"
+              "text": "Increasing the compressive strength of the bricks"
             },
             {
               "key": "c",
-              "text": "It preserves dust as a bonding layer under the mortar"
+              "text": "Washing dust off the bricks"
             },
             {
               "key": "d",
-              "text": "It encourages the mortar bed to slide on free water"
+              "text": "Preventing moisture loss from the mortar"
             }
           ],
           "answer": "b",
-          "explanation": "Removing loose contamination helps mortar contact and spread across the bed face. Draining free water avoids an intervening film that can weaken adhesion; cleaning and suction control are complementary tasks.<p>Capsule 4th ed., p. 5; topic 1 point 120.</p>",
+          "explanation": "Soaking washes dust off the bricks, prevents them from drawing water out of the mortar and helps the mortar spread evenly. It does not increase the strength of the bricks themselves.<p>Capsule 4th ed., p. 5; topic 1 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2913,32 +2913,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00130",
           "src": "CAP4-01-00130",
-          "text": "A dry-rubble wall is built without mortar. Which workmanship requirement becomes especially important for stability?",
+          "text": "The type of masonry that requires the highest level of skill and skilled labour for laying is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Selecting and interlocking stones with sound bearing contacts"
+              "text": "Dry rubble masonry"
             },
             {
               "key": "b",
-              "text": "Supporting large stones mainly on loose small packing fragments"
+              "text": "Concrete block masonry"
             },
             {
               "key": "c",
-              "text": "Aligning vertical joints to simplify setting out each course"
+              "text": "Random rubble masonry in mortar"
             },
             {
               "key": "d",
-              "text": "Prioritizing an even face colour over through-wall bonding"
+              "text": "Brick masonry"
             }
           ],
           "answer": "a",
-          "explanation": "Without mortar bonding, dry masonry relies strongly on stable bearing, interlock, stone selection and appropriate bonding through the wall. Small packing pieces may fill voids but cannot substitute for stable primary contacts. The source does not establish dry rubble as universally the most skill-demanding masonry type.<p>Source note: p5 n123: replaced an unsupported highest-skill ranking with the structural workmanship principle.</p><p>Capsule 4th ed., p. 5; topic 1 point 123.</p>",
+          "explanation": "Dry rubble masonry is built without mortar, so its stability depends entirely on how well the stones are selected, shaped and interlocked; it therefore requires the highest level of skill and skilled labour.<p>Capsule 4th ed., p. 5; topic 1 point 123.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2951,32 +2951,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00141",
           "src": "CAP4-01-00141",
-          "text": "Which storage arrangement best protects bagged cement against premature hydration?",
+          "text": "The best place to store cement is a ______.",
           "options": [
             {
               "key": "a",
-              "text": "Dry weatherproof store with raised stacks protected from damp walls"
+              "text": "Dry, moisture-proof warehouse"
             },
             {
               "key": "b",
-              "text": "Covered store with bags touching a wet external wall"
+              "text": "Basement close to the water table"
             },
             {
               "key": "c",
-              "text": "Open-sided damp store with bags directly on bare ground"
+              "text": "Open yard covered with tarpaulin"
             },
             {
               "key": "d",
-              "text": "Uncovered platform exposed to night dew and rain"
+              "text": "Shed with an earthen floor"
             }
           ],
           "answer": "a",
-          "explanation": "Cement must be protected from liquid water and atmospheric dampness to limit prehydration and caking. A dry weatherproof store, suitable raised support and protection from damp surfaces address these pathways; stock rotation also helps.<p>Capsule 4th ed., p. 5; topic 1 point 134.</p>",
+          "explanation": "Cement absorbs moisture from the air and hardens, so it is best stored in a dry, moisture-proof warehouse, with the bags stacked on a raised floor clear of the walls.<p>Capsule 4th ed., p. 5; topic 1 point 134.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2989,12 +2989,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00151",
           "src": "CAP4-01-00151",
-          "text": "Rounded raised bubbles appear in a paint film over a damp substrate. Which defect is most consistent with trapped moisture beneath the coating?",
+          "text": "The type of defect in paint which is caused due to moisture is ______.",
           "options": [
             {
               "key": "a",
@@ -3002,7 +3002,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "b",
-              "text": "Brush marking"
+              "text": "Wrinkling"
             },
             {
               "key": "c",
@@ -3014,7 +3014,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Blistering produces raised bubbles when moisture or vapour pressure contributes to loss of adhesion. It can also have other causes; chalking is powdering, sagging is flow of wet paint, and brush marks retain application texture.<p>Capsule 4th ed., p. 6; topic 1 point 144.</p>",
+          "explanation": "Blistering is the formation of bubbles in the paint film caused by moisture trapped behind it. Chalking is powdering of the film, sagging is running of a thick coat, and wrinkling is uneven drying of a thick coat.<p>Capsule 4th ed., p. 6; topic 1 point 144.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3027,32 +3027,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00163",
           "src": "CAP4-01-00163",
-          "text": "Dampness rises from the ground through a porous masonry wall. Which detail most directly interrupts this capillary pathway?",
+          "text": "A major cause of dampness in buildings is ______.",
           "options": [
             {
               "key": "a",
-              "text": "A roof ventilator without wall treatment"
+              "text": "Use of cement mortar in the joints"
             },
             {
               "key": "b",
-              "text": "A decorative cornice above window level"
+              "text": "Excessive thickness of the walls"
             },
             {
               "key": "c",
-              "text": "A continuous correctly linked damp-proof course"
+              "text": "Moisture rising from the ground by capillary action"
             },
             {
               "key": "d",
-              "text": "A thicker porous plaster coat at the wall base"
+              "text": "Good ventilation of the rooms"
             }
           ],
           "answer": "c",
-          "explanation": "A continuous DPC interrupts capillary moisture movement and should connect correctly with floor barriers. Mortar bridges, discontinuities or inappropriate external ground levels can bypass it; roof ventilation does not stop ground-fed capillary rise.<p>Capsule 4th ed., p. 6; topic 1 point 156.</p>",
+          "explanation": "Moisture rising from the ground through the pores of the masonry by capillary action is a major cause of dampness in buildings. It is prevented by providing a damp-proof course at plinth level.<p>Capsule 4th ed., p. 6; topic 1 point 156.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3065,32 +3065,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-04-00108",
           "src": "CAP4-04-00108",
-          "text": "A project specification selects M15 concrete for a plinth damp-proof course. In the stated IS concrete-grade convention, what does M15 identify?",
+          "text": "For DPC at plinth level, the grade of concrete used is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Characteristic 7-day cube compressive strength of 15 MPa"
+              "text": "M25"
             },
             {
               "key": "b",
-              "text": "Characteristic 28-day cube compressive strength of 15 MPa"
+              "text": "M15"
             },
             {
               "key": "c",
-              "text": "Characteristic 28-day cylinder compressive strength of 15 MPa"
+              "text": "M20"
             },
             {
               "key": "d",
-              "text": "Mean 28-day cube compressive strength of 15 MPa"
+              "text": "M10"
             }
           ],
           "answer": "b",
-          "explanation": "M15 denotes characteristic cube compressive strength of 15 N per mm<sup>2</sup> at 28 days in this convention, not mean strength, cylinder strength or a seven-day result. It does not by itself specify waterproofing performance or thickness. DPC material and detailing must follow the actual project requirements.<p>Source note: Page 19 point 108 gives no governing DPC specification. M15 is treated as a stated project choice, not a universal mandated grade; current local specification remains for parent review.</p><p>Capsule 4th ed., p. 19; topic 4 point 108.</p>",
+          "explanation": "A damp-proof course at plinth level is made of M15 concrete, nominally 1 : 2 : 4, usually about 40 mm thick and often with a waterproofing compound.<p>Capsule 4th ed., p. 19; topic 4 point 108.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3103,32 +3103,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-04-00109",
           "src": "CAP4-04-00109",
-          "text": "A concrete plinth DPC meets its specified compressive grade, but exterior render connects damp masonry below it continuously to masonry above. Which defect still threatens its damp-control function?",
+          "text": "M15 grade of concrete is used for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Ground moisture being stopped by the continuous render itself"
+              "text": "Precast piles"
             },
             {
               "key": "b",
-              "text": "Rain penetrating solely through the intact DPC's upper face"
+              "text": "Water-retaining structures"
             },
             {
               "key": "c",
-              "text": "Capillary moisture rising through the render around the barrier"
+              "text": "DPC at plinth level"
             },
             {
               "key": "d",
-              "text": "Vapour condensing solely because the cube grade is adequate"
+              "text": "Prestressed concrete girders"
             }
           ],
           "answer": "c",
-          "explanation": "A DPC interrupts upward moisture transport only when its barrier remains continuous and is not bypassed. Bridging render or raised adjacent ground can provide an alternate capillary path. Compressive-grade compliance alone cannot demonstrate that the damp-proofing detail works.<p>Capsule 4th ed., p. 19; topic 4 point 108.</p>",
+          "explanation": "M15 concrete, nominally 1 : 2 : 4, is used for the damp-proof course at plinth level; prestressed, water-retaining and precast pile work need higher grades.<p>Capsule 4th ed., p. 19; topic 4 point 108.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3141,32 +3141,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00011",
           "src": "CAP4-05-00011",
-          "text": "A framed building has a masonry infill panel that does not support its floors or roof. How should its gravity-load role be described?",
+          "text": "Which of the following is not a type of load-bearing wall?",
           "options": [
             {
               "key": "a",
-              "text": "Load-bearing because every wall carries floor load"
+              "text": "Solid wall"
             },
             {
               "key": "b",
-              "text": "Non-load-bearing for the supported floors and roof"
+              "text": "Panel wall"
             },
             {
               "key": "c",
-              "text": "A shear wall solely because it occupies a frame bay"
+              "text": "Faced wall"
             },
             {
               "key": "d",
-              "text": "A foundation wall because it carries its own weight"
+              "text": "Cavity wall"
             }
           ],
           "answer": "b",
-          "explanation": "The specified panel is non-load-bearing with respect to floor and roof gravity loads. It still carries self-weight and must resist and transfer applicable lateral loads; 'non-load-bearing' does not mean mechanically unloaded.<p>Capsule 4th ed., p. 19; topic 5 point 11.</p>",
+          "explanation": "A panel wall is a non-load-bearing wall built within a frame and supported at each storey, carrying only its own weight; solid, cavity and faced walls can carry floor and roof loads.<p>Capsule 4th ed., p. 19; topic 5 point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3179,12 +3179,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00082",
           "src": "CAP4-05-00082",
-          "text": "A gutter is installed along the low horizontal edge of a pitched roof, where its lower rafter ends terminate. What is that roof edge called?",
+          "text": "The lowest edge of the sloping surface of a roof is called the ______.",
           "options": [
             {
               "key": "a",
@@ -3204,7 +3204,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "The eaves form the lower edge of a pitched roof. The ridge is the high intersection of slopes, a hip is an external sloping intersection and a valley is an internal drainage intersection. 'Eaves' is the correct spelling, not 'eves'.<p>Source note: Duplicate roof-edge definitions at page 21 point 82 and page 22 point 119 are combined.</p><p>Capsule 4th ed., pp. 21, 22; topic 5 point 82; topic 5 point 119.</p>",
+          "explanation": "The eaves is the lower edge of a sloping roof, where the rafters end and rainwater drips off or enters a gutter; the ridge is the highest edge.<p>Capsule 4th ed., pp. 21, 22; topic 5 point 82; topic 5 point 119.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3224,27 +3224,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-05-00089",
           "src": "CAP4-05-00089",
-          "text": "Narrow sawn timber strips are fixed across rafters to support roof tiles. Which building component is being described?",
+          "text": "A piece of timber whose thickness and breadth do not exceed 50 mm is called a ______.",
           "options": [
             {
               "key": "a",
-              "text": "Roof battens"
+              "text": "Batten"
             },
             {
               "key": "b",
-              "text": "Tie beams"
+              "text": "Scantling"
             },
             {
               "key": "c",
-              "text": "Principal rafters"
+              "text": "Plank"
             },
             {
               "key": "d",
-              "text": "Wall plates"
+              "text": "Board"
             }
           ],
           "answer": "a",
-          "explanation": "Battens are relatively small strips supporting roof coverings such as tiles. Principal rafters, wall plates and tie beams perform different framing roles. The batten's dimensions must meet the actual roof specification; a universal 50 mm breadth cap is not established by its name.<p>Source note: Page 22 point 88&#39;s assertion that both breadth and thickness cannot exceed 50 mm is not accepted as a universal timber classification. Exact trade-standard provenance remains for parent review.</p><p>Capsule 4th ed., p. 22; topic 5 point 88.</p>",
+          "explanation": "Timber pieces with both thickness and breadth not exceeding 50 mm are called battens; planks and boards are wide, thin pieces, and scantlings are larger sawn pieces.<p>Capsule 4th ed., p. 22; topic 5 point 88.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3257,32 +3257,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00090",
           "src": "CAP4-05-00090",
-          "text": "A particular timber schedule limits batten thickness to 50 mm and separately specifies a 75 mm breadth. Which supplied section meets those two dimensional requirements?",
+          "text": "The maximum thickness of a timber batten is ______.",
           "options": [
             {
               "key": "a",
-              "text": "60 mm thick by 75 mm broad"
+              "text": "25 mm"
             },
             {
               "key": "b",
-              "text": "45 mm thick by 75 mm broad"
+              "text": "50 mm"
             },
             {
               "key": "c",
-              "text": "45 mm thick by 60 mm broad"
+              "text": "100 mm"
             },
             {
               "key": "d",
-              "text": "75 mm thick by 45 mm broad"
+              "text": "75 mm"
             }
           ],
           "answer": "b",
-          "explanation": "The scheduled 75 mm breadth and thickness not exceeding 50 mm are both satisfied by the 45 mm by 75 mm section. Thickness and breadth are distinct dimensions. This tests an explicit project schedule, not an unverified universal maximum for every timber batten.<p>Source note: Page 22 point 89&#39;s 50 mm limit is used only as an expressly stipulated schedule condition; its source standard is not identified.</p><p>Capsule 4th ed., p. 22; topic 5 point 89.</p>",
+          "explanation": "A batten is a small sawn piece of timber whose thickness does not exceed 50 mm.<p>Capsule 4th ed., p. 22; topic 5 point 89.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3295,24 +3295,24 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00091",
           "src": "CAP4-05-00091",
-          "text": "At the highest central region of a symmetrical masonry arch, which term names the location rather than the individual central voussoir?",
+          "text": "The topmost part of an arch is called the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Skewback"
+              "text": "Haunch"
             },
             {
               "key": "b",
-              "text": "Springing"
+              "text": "Skewback"
             },
             {
               "key": "c",
-              "text": "Keystone"
+              "text": "Springing"
             },
             {
               "key": "d",
@@ -3320,7 +3320,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "The crown is the highest central region of the arch. The keystone is the central wedge-shaped unit there; springing marks where the curve starts, and the skewback is the supporting inclined bearing surface.<p>Capsule 4th ed., p. 22; topic 5 point 90.</p>",
+          "explanation": "The crown is the highest part of an arch, at its centre; the springings are where the arch starts, and the haunch lies between the crown and each springing.<p>Capsule 4th ed., p. 22; topic 5 point 90.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3338,11 +3338,11 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-05-00092",
           "src": "CAP4-05-00092",
-          "text": "Adjacent dressed stones have complementary steps cut along their mating edges so they overlap instead of forming a plain butt joint. What joint geometry is described?",
+          "text": "The type of joint used for stone masonry in arches is ______.",
           "options": [
             {
               "key": "a",
-              "text": "External cramp joint"
+              "text": "Dowelled joint"
             },
             {
               "key": "b",
@@ -3350,15 +3350,15 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "c",
-              "text": "Plain flush butt joint"
+              "text": "Plain butt joint"
             },
             {
               "key": "d",
-              "text": "Metal-dowel joint"
+              "text": "Cramped joint"
             }
           ],
           "answer": "b",
-          "explanation": "A rebate forms a step along a mating edge and permits a corresponding overlap. Such interlocking geometry can resist relative displacement, but an arch does not universally require rebates: unit shape, thrust, bond and construction details determine its joints.<p>Source note: Page 22 point 91 is recast as a joint-geometry question. Its blanket arch-use claim is not treated as a mandatory design rule.</p><p>Capsule 4th ed., p. 22; topic 5 point 91.</p>",
+          "explanation": "Arch stones are given rebated joints, each stone stepped into the next, so that the voussoirs cannot slide on one another under the thrust of the arch.<p>Capsule 4th ed., p. 22; topic 5 point 91.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3371,32 +3371,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00098",
           "src": "CAP4-05-00098",
-          "text": "Floorboards have a continuous projecting ridge along one long edge and a matching continuous channel in the neighbouring board. What joint is used?",
+          "text": "The type of joint used in wood construction, where one part is recessed to fit a corresponding projection on another, is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Half-lap joint"
+              "text": "Scarf joint"
             },
             {
               "key": "b",
-              "text": "Mortise-and-tenon joint"
+              "text": "Butt joint"
             },
             {
               "key": "c",
-              "text": "Plain butt joint"
+              "text": "Half lap joint"
             },
             {
               "key": "d",
-              "text": "Tongue-and-groove joint"
+              "text": "Tongue and groove joint"
             }
           ],
           "answer": "d",
-          "explanation": "A continuous tongue enters the matching groove along adjacent board edges. A mortise and tenon instead usually joins a localized end projection to a socket, so the source's vague projection-and-recess description needs this edge geometry to be unambiguous.<p>Source note: Page 22 point 97 is clarified to distinguish tongue-and-groove from mortise-and-tenon construction.</p><p>Capsule 4th ed., p. 22; topic 5 point 97.</p>",
+          "explanation": "In a tongue and groove joint, a projecting tongue along the edge of one board fits into a matching groove in the next, as in floor boarding and panelling.<p>Capsule 4th ed., p. 22; topic 5 point 97.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3409,32 +3409,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00100",
           "src": "CAP4-05-00100",
-          "text": "At a crossing of two equal-thickness timber frame members, half the thickness is removed from each so the assembled faces remain flush. What joint results?",
+          "text": "Half lap joints are commonly used in ______.",
           "options": [
             {
               "key": "a",
-              "text": "Half-lap joint"
+              "text": "Frames"
             },
             {
               "key": "b",
-              "text": "Scarf joint with inclined end faces"
+              "text": "Roof shingles"
             },
             {
               "key": "c",
-              "text": "Full-depth butt joint"
+              "text": "Floor boarding"
             },
             {
               "key": "d",
-              "text": "Tongue-and-groove joint"
+              "text": "Timber piles"
             }
           ],
           "answer": "a",
-          "explanation": "Removing half the thickness from each member creates a half-lap, commonly used in framing intersections. Joint strength still depends on remaining section, grain direction and fastening; flush appearance alone does not prove adequate resistance.<p>Source note: The extracted &#39;0.85bD&#39; following page 22 point 99 belongs to the next reinforcement formula and is not timber-joint content.</p><p>Capsule 4th ed., p. 22; topic 5 point 99.</p>",
+          "explanation": "In a half lap joint, half the thickness is cut from each member so that they overlap flush; it is simple and commonly used to join the members of frames at corners and crossings.<p>Capsule 4th ed., p. 22; topic 5 point 99.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3447,32 +3447,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00072",
           "src": "CAP4-06-00072",
-          "text": "A toilet drawing labels a door 750 mm wide, but the measured clear opening with the leaf open is 710 mm. How should an accessibility or code review treat the 750 mm label?",
+          "text": "The minimum width of a toilet door is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Compare the structural masonry opening alone with the required clear opening"
+              "text": "1000 mm"
             },
             {
               "key": "b",
-              "text": "Compare frame outside width alone with the required clear opening"
+              "text": "1200 mm"
             },
             {
               "key": "c",
-              "text": "Compare the actual clear opening with the applicable access requirement"
+              "text": "750 mm"
             },
             {
               "key": "d",
-              "text": "Compare nominal leaf width alone with the required clear opening"
+              "text": "600 mm"
             }
           ],
           "answer": "c",
-          "explanation": "Nominal leaf or frame dimensions do not necessarily equal usable clear passage. Applicability depends on occupancy, accessibility and the governing edition and jurisdiction. The source supplies no clause establishing a universal 750 mm toilet-door minimum, so the review must check the actual required dimension.<p>Source note: Page 25 point 70: unverified dimensional prescription; mapped to building technology rather than falsely called a water-treatment standard.</p><p>Capsule 4th ed., p. 25; topic 6 point 70.</p>",
+          "explanation": "A toilet door is kept at least 750 mm wide for comfortable access, narrower than the main entrance doors of a building.<p>Capsule 4th ed., p. 25; topic 6 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3485,32 +3485,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-09-00130",
           "src": "CAP4-09-00130",
-          "text": "In a conventional concrete floor with a prepared sub-base, which layer is placed before the specified wearing finish to provide its supporting base?",
+          "text": "The first step in flooring is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Final wearing topping"
+              "text": "Skirting"
             },
             {
               "key": "b",
-              "text": "Base concrete course"
+              "text": "Base coat"
             },
             {
               "key": "c",
-              "text": "Decorative surface sealer"
+              "text": "Polishing"
             },
             {
               "key": "d",
-              "text": "Final polishing compound"
+              "text": "Wearing coat"
             }
           ],
           "answer": "b",
-          "explanation": "The base concrete supports the subsequent wearing finish in this conventional floor system. Ground preparation, compaction and any specified damp-proofing come earlier; 'base coat first' is not a universal sequence for every floor type.<p>Source note: Page 36 point 123 is building flooring, mapped to ACiE0103 rather than forced into pavement construction. The assumed layered floor is stated explicitly.</p><p>Capsule 4th ed., p. 36; topic 9 point 123.</p>",
+          "explanation": "A floor is built up from the bottom: the base coat of concrete is laid first on the prepared sub-base, and the wearing finish is laid over it.<p>Capsule 4th ed., p. 36; topic 9 point 123.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3523,7 +3523,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0103",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -3535,27 +3535,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00060",
           "src": "CAP4-01-00060",
-          "text": "A uniform right-triangular lamina lies in a uniform gravitational field. How is its centre of gravity related to its area centroid?",
+          "text": "The CG and the geometric centre do not coincide in a ______.",
           "options": [
             {
               "key": "a",
-              "text": "They coincide at the intersection of the medians"
+              "text": "Right-angled triangle"
             },
             {
               "key": "b",
-              "text": "They differ because one angle is a right angle"
+              "text": "Rectangle"
             },
             {
               "key": "c",
-              "text": "The centre of gravity lies at the hypotenuse midpoint"
+              "text": "Circle"
             },
             {
               "key": "d",
-              "text": "The centre of gravity lies at the right-angle vertex"
+              "text": "Square"
             }
           ],
           "answer": "a",
-          "explanation": "For a homogeneous lamina of uniform thickness in uniform gravity, mass weighting is proportional to area weighting, so the two centres coincide. The hypotenuse midpoint is the circumcentre, not the centroid.<p>Source note: p3 n57: corrected the blanket right-triangle exception by distinguishing centroid from circumcentre.</p><p>Capsule 4th ed., p. 3; topic 1 point 57.</p>",
+          "explanation": "In symmetrical shapes such as a rectangle, a circle or a square, the centre of gravity coincides with the geometric centre. In a right-angled triangle they do not coincide: the CG lies one-third of the way along each leg from the right-angle corner, while the midpoint of the hypotenuse is equidistant from all three corners.<p>Capsule 4th ed., p. 3; topic 1 point 57.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3568,32 +3568,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00061",
           "src": "CAP4-01-00061",
-          "text": "A triangular area has horizontal base b and perpendicular height h. Which expression gives its second moment of area about the base line?",
+          "text": "The second moment of area of a triangle of base \\(b\\) and height \\(h\\) about its base is ______.",
           "options": [
             {
               "key": "a",
-              "text": "$bh^3/36$"
+              "text": "\\(\\dfrac{bh^3}{36}\\)"
             },
             {
               "key": "b",
-              "text": "$bh^3/4$"
+              "text": "\\(\\dfrac{bh^3}{4}\\)"
             },
             {
               "key": "c",
-              "text": "$hb^3/12$"
+              "text": "\\(\\dfrac{hb^3}{12}\\)"
             },
             {
               "key": "d",
-              "text": "$bh^3/12$"
+              "text": "\\(\\dfrac{bh^3}{12}\\)"
             }
           ],
           "answer": "d",
-          "explanation": "Integrating horizontal strips about the base, with strip width \\(b\\left(1 - \\dfrac{y}{h}\\right)\\), gives \\[\\begin{aligned} I_{\\text{base}} &amp;= \\int_0^h b\\left(1 - \\dfrac{y}{h}\\right) y^2\\, dy \\\\ &amp;= \\dfrac{bh^3}{12} \\end{aligned}\\] The centroidal axis parallel to the base instead gives \\(\\dfrac{bh^3}{36}\\); the cubed dimension is perpendicular to the axis.<p>Capsule 4th ed., p. 3; topic 1 point 58.</p>",
+          "explanation": "About its base, a triangle has \\(I = \\dfrac{bh^3}{12}\\). About the centroidal axis parallel to the base it is \\(\\dfrac{bh^3}{36}\\), and about a parallel axis through the apex it is \\(\\dfrac{bh^3}{4}\\).<p>Capsule 4th ed., p. 3; topic 1 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3606,32 +3606,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00063",
           "src": "CAP4-01-00063",
-          "text": "A concentric hollow circular section has outer diameter D and inner diameter d. What is its elastic section modulus for bending about a centroidal diameter?",
+          "text": "The section modulus of a hollow circular section of external diameter \\(D\\) and internal diameter \\(d\\) is ______.",
           "options": [
             {
               "key": "a",
-              "text": "$\\frac{\\pi(D^4-d^4)}{16D}$"
+              "text": "\\(\\dfrac{\\pi(D^4-d^4)}{16D}\\)"
             },
             {
               "key": "b",
-              "text": "$\\frac{\\pi(D^4-d^4)}{64D}$"
+              "text": "\\(\\dfrac{\\pi(D^4-d^4)}{64D}\\)"
             },
             {
               "key": "c",
-              "text": "$\\frac{\\pi(D^3-d^3)}{32}$"
+              "text": "\\(\\dfrac{\\pi(D^3-d^3)}{32}\\)"
             },
             {
               "key": "d",
-              "text": "$\\frac{\\pi(D^4-d^4)}{32D}$"
+              "text": "\\(\\dfrac{\\pi(D^4-d^4)}{32D}\\)"
             }
           ],
           "answer": "d",
-          "explanation": "The diametral second moment is \\[I = \\dfrac{\\pi (D^4 - d^4)}{64}\\] Dividing by the extreme-fibre distance \\(\\dfrac{D}{2}\\) gives the modulus: \\[Z = \\dfrac{2I}{D} = \\dfrac{\\pi (D^4 - d^4)}{32D}\\] Dividing a polar moment instead would give the torsional polar modulus.<p>Capsule 4th ed., pp. 3, 4; topic 1 point 60; topic 1 point 79.</p>",
+          "explanation": "The moment of inertia of the hollow section is \\(I = \\dfrac{\\pi(D^4-d^4)}{64}\\) and the extreme fibre is at \\(y = \\dfrac{D}{2}\\), so \\[Z = \\dfrac{I}{y} = \\dfrac{\\pi(D^4-d^4)}{32D}\\]<p>Capsule 4th ed., pp. 3, 4; topic 1 point 60; topic 1 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3646,32 +3646,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00064",
           "src": "CAP4-01-00064",
-          "text": "An annular area has outer radius R and inner radius r. Which expression is its second moment of area about a diameter in its plane?",
+          "text": "The moment of inertia of a hollow circular section of outer radius \\(R\\) and inner radius \\(r\\) about its diameter is ______.",
           "options": [
             {
               "key": "a",
-              "text": "$\\pi(R^4-r^4)/2$"
+              "text": "\\(\\dfrac{\\pi}{2}(R^4-r^4)\\)"
             },
             {
               "key": "b",
-              "text": "$\\pi(R^4-r^4)/8$"
+              "text": "\\(\\dfrac{\\pi}{8}(R^4-r^4)\\)"
             },
             {
               "key": "c",
-              "text": "$\\pi(R^4-r^4)/64$"
+              "text": "\\(\\dfrac{\\pi}{64}(R^4-r^4)\\)"
             },
             {
               "key": "d",
-              "text": "$\\pi(R^4-r^4)/4$"
+              "text": "\\(\\dfrac{\\pi}{4}(R^4-r^4)\\)"
             }
           ],
           "answer": "d",
-          "explanation": "Subtract the inner circle's moment from the outer circle's: \\[\\begin{aligned} I &amp;= \\dfrac{\\pi R^4}{4} - \\dfrac{\\pi r^4}{4} \\\\ &amp;= \\dfrac{\\pi (R^4 - r^4)}{4} \\end{aligned}\\] The factor \\(\\dfrac{1}{64}\\) applies when diameters are used, while the polar moment is twice the diametral value.<p>Source note: p3 n61: the full page text retains denominator 4, omitted from the extracted point. Radii and diametral axis are now explicit; no image review was performed.</p><p>Capsule 4th ed., p. 3; topic 1 point 61.</p>",
+          "explanation": "About a diameter, a solid circle of radius \\(R\\) has \\(I = \\dfrac{\\pi R^4}{4}\\). Subtracting the hole gives \\[I = \\dfrac{\\pi}{4}(R^4 - r^4)\\] The polar moment of inertia is twice this value.<p>Capsule 4th ed., p. 3; topic 1 point 61.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3684,32 +3684,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00065",
           "src": "CAP4-01-00065",
-          "text": "A rectangle has horizontal width b and vertical depth d. What is its second moment of area about its bottom horizontal edge?",
+          "text": "The moment of inertia of a rectangular section of width \\(b\\) and depth \\(d\\) about its base is ______.",
           "options": [
             {
               "key": "a",
-              "text": "$bd^3/6$"
+              "text": "\\(\\dfrac{bd^3}{6}\\)"
             },
             {
               "key": "b",
-              "text": "$bd^3/12$"
+              "text": "\\(\\dfrac{bd^3}{12}\\)"
             },
             {
               "key": "c",
-              "text": "$db^3/3$"
+              "text": "\\(\\dfrac{db^3}{3}\\)"
             },
             {
               "key": "d",
-              "text": "$bd^3/3$"
+              "text": "\\(\\dfrac{bd^3}{3}\\)"
             }
           ],
           "answer": "d",
-          "explanation": "The parallel-axis theorem gives \\[I = \\dfrac{bd^3}{12} + bd\\left(\\dfrac{d}{2}\\right)^2 = \\dfrac{bd^3}{3}\\] Using the centroidal value without the shift misses the additional contribution from area offset.<p>Capsule 4th ed., pp. 3, 4; topic 1 point 62; topic 1 point 78.</p>",
+          "explanation": "By the parallel axis theorem, the centroidal value is shifted to the base, a distance \\(\\dfrac{d}{2}\\) away: \\[\\begin{aligned} I_{\\text{base}} &amp;= \\dfrac{bd^3}{12} + bd\\left(\\dfrac{d}{2}\\right)^2 \\\\ &amp;= \\dfrac{bd^3}{3} \\end{aligned}\\]<p>Capsule 4th ed., pp. 3, 4; topic 1 point 62; topic 1 point 78.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3724,32 +3724,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00066",
           "src": "CAP4-01-00066",
-          "text": "A homogeneous solid right circular cone has height h. Where is its centre of gravity measured along the axis from the base plane?",
+          "text": "The CG of a solid cone of height \\(h\\) from its base is at ______.",
           "options": [
             {
               "key": "a",
-              "text": "$h/3$"
+              "text": "\\(\\dfrac{h}{3}\\)"
             },
             {
               "key": "b",
-              "text": "$h/4$"
+              "text": "\\(\\dfrac{h}{4}\\)"
             },
             {
               "key": "c",
-              "text": "$3h/4$"
+              "text": "\\(\\dfrac{3h}{4}\\)"
             },
             {
               "key": "d",
-              "text": "$h/2$"
+              "text": "\\(\\dfrac{h}{2}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "A solid cone has cross-sectional area proportional to \\(\\left(1 - \\dfrac{z}{h}\\right)^2\\), so its volume-weighted mean height is \\[\\bar z = \\dfrac{\\int_0^h z\\left(1 - \\dfrac{z}{h}\\right)^2 dz}{\\int_0^h \\left(1 - \\dfrac{z}{h}\\right)^2 dz} = \\dfrac{h}{4}\\] This is \\(\\dfrac{h}{4}\\) above the base, or \\(\\dfrac{3h}{4}\\) below the apex; the reference end must be stated.<p>Capsule 4th ed., p. 3; topic 1 point 63.</p>",
+          "explanation": "For a solid cone, the centre of gravity lies on the axis at \\(\\dfrac{h}{4}\\) from the base, which is \\(\\dfrac{3h}{4}\\) from the apex. For a hollow cone it is at \\(\\dfrac{h}{3}\\) from the base.<p>Capsule 4th ed., p. 3; topic 1 point 63.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3762,32 +3762,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00067",
           "src": "CAP4-01-00067",
-          "text": "A thin, uniform conical shell consists only of the lateral surface and has no base plate. Where is its centre of gravity from the base plane along its height h?",
+          "text": "The CG of a hollow cone of height \\(h\\) from its base is at ______.",
           "options": [
             {
               "key": "a",
-              "text": "$h/3$"
+              "text": "\\(\\dfrac{h}{3}\\)"
             },
             {
               "key": "b",
-              "text": "$h/2$"
+              "text": "\\(\\dfrac{h}{2}\\)"
             },
             {
               "key": "c",
-              "text": "$h/4$"
+              "text": "\\(\\dfrac{h}{4}\\)"
             },
             {
               "key": "d",
-              "text": "$2h/3$"
+              "text": "\\(\\dfrac{2h}{3}\\)"
             }
           ],
           "answer": "a",
-          "explanation": "For a uniform lateral shell, strip mass is proportional to the local circumference, hence to (1-z/h). Its mean height is h/3 from the base. Adding a base plate or using variable thickness changes the result.<p>Source note: p3 n63 bracket: hollow cone is clarified as a uniform thin lateral shell without a base plate, not every hollow solid.</p><p>Capsule 4th ed., p. 3; topic 1 point 63.</p>",
+          "explanation": "A hollow cone, consisting of the curved surface only, has its centre of gravity on the axis at \\(\\dfrac{h}{3}\\) from the base. A solid cone has it at \\(\\dfrac{h}{4}\\) from the base.<p>Capsule 4th ed., p. 3; topic 1 point 63.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3800,32 +3800,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00069",
           "src": "CAP4-01-00069",
-          "text": "For a planar area, perpendicular in-plane axes x and y meet at O, and z is normal to the plane at O. Which perpendicular-axis relation is valid?",
+          "text": "The perpendicular axis theorem is used to calculate the moment of inertia of a ______.",
           "options": [
             {
               "key": "a",
-              "text": "$J_O=I_xI_y$"
+              "text": "Solid cylinder"
             },
             {
               "key": "b",
-              "text": "$J_O=\\sqrt{I_xI_y}$"
+              "text": "Solid cube"
             },
             {
               "key": "c",
-              "text": "$J_O=I_x+I_y$"
+              "text": "Circular lamina"
             },
             {
               "key": "d",
-              "text": "$J_O=I_x-I_y$"
+              "text": "Solid sphere"
             }
           ],
           "answer": "c",
-          "explanation": "Each elemental contribution satisfies \\(r^2 = x^2 + y^2\\), so integration gives \\[J = \\int r^2\\, dA = I_x + I_y\\] The area identity is not restricted to circles; its mass form requires a planar lamina.<p>Source note: p3 n65: corrected the implication that only circular laminas permit the theorem.</p><p>Capsule 4th ed., p. 3; topic 1 point 65.</p>",
+          "explanation": "The perpendicular axis theorem applies to plane laminae: \\(I_z = I_x + I_y\\), where \\(x\\) and \\(y\\) lie in the plane and \\(z\\) is normal to it. For a circular lamina \\(I_x = I_y\\), so its polar moment of inertia is twice that about a diameter. The theorem does not apply to three-dimensional solids.<p>Capsule 4th ed., p. 3; topic 1 point 65.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3838,32 +3838,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00070",
           "src": "CAP4-01-00070",
-          "text": "A homogeneous solid hemisphere has radius r. How far is its centre of gravity from its flat base plane along the symmetry axis?",
+          "text": "The centre of gravity of a solid hemisphere of radius \\(r\\) from its base is at ______.",
           "options": [
             {
               "key": "a",
-              "text": "$r/2$"
+              "text": "\\(\\dfrac{r}{2}\\)"
             },
             {
               "key": "b",
-              "text": "$3r/8$"
+              "text": "\\(\\dfrac{3r}{8}\\)"
             },
             {
               "key": "c",
-              "text": "$r/4$"
+              "text": "\\(\\dfrac{r}{4}\\)"
             },
             {
               "key": "d",
-              "text": "$4r/(3\\pi)$"
+              "text": "\\(\\dfrac{4r}{3\\pi}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "Integrating solid circular slices gives the volume centroid 3r/8 above the base. A thin hemispherical shell gives r/2, while 4r/(3pi) belongs to a semicircular plane area, so these shapes must not be interchanged.<p>Source note: p3 n66: restored the fraction 3r/8 and made the solid-body assumption explicit.</p><p>Capsule 4th ed., p. 3; topic 1 point 66.</p>",
+          "explanation": "The centre of gravity of a solid hemisphere lies on its axis at \\(\\dfrac{3r}{8}\\) from the flat base. A hemispherical shell has it at \\(\\dfrac{r}{2}\\), and a semicircular area at \\(\\dfrac{4r}{3\\pi}\\).<p>Capsule 4th ed., p. 3; topic 1 point 66.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3876,32 +3876,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00071",
           "src": "CAP4-01-00071",
-          "text": "A solid has an equilateral triangular base and three triangular side faces that meet at one common apex. Which description is appropriate?",
+          "text": "A solid having an equilateral triangle as its base and other faces converging towards its axis is known as a ______.",
           "options": [
             {
               "key": "a",
-              "text": "A triangular pyramid"
+              "text": "Pyramid"
             },
             {
               "key": "b",
-              "text": "A truncated pyramid"
+              "text": "Frustum"
             },
             {
               "key": "c",
-              "text": "A triangular prism"
+              "text": "Prism"
             },
             {
               "key": "d",
-              "text": "A circular cone"
+              "text": "Cone"
             }
           ],
           "answer": "a",
-          "explanation": "A pyramid has a polygonal base and side faces meeting at a single apex. A triangular pyramid need not be a regular tetrahedron unless all its faces and edges also satisfy the regularity conditions.<p>Source note: p3 n67: faces converge to an apex, not merely towards an axis; a regular tetrahedron is not assumed.</p><p>Capsule 4th ed., p. 3; topic 1 point 67.</p>",
+          "explanation": "A pyramid has a polygonal base, here an equilateral triangle, and triangular faces that converge to a single apex on its axis. A prism has two identical ends joined by rectangular faces, a cone has a circular base, and a frustum is a pyramid or cone with its top cut off.<p>Capsule 4th ed., p. 3; topic 1 point 67.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3914,32 +3914,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00072",
           "src": "CAP4-01-00072",
-          "text": "A solid has two congruent parallel triangular end faces joined by three rectangular faces. What is the solid?",
+          "text": "The shape made up of uniform triangles is a ______.",
           "options": [
             {
               "key": "a",
-              "text": "A triangular pyramid"
+              "text": "Cylinder"
             },
             {
               "key": "b",
-              "text": "A regular octahedron"
+              "text": "Sphere"
             },
             {
               "key": "c",
-              "text": "A right triangular prism"
+              "text": "Prism"
             },
             {
               "key": "d",
-              "text": "A truncated circular cone"
+              "text": "Cube"
             }
           ],
           "answer": "c",
-          "explanation": "A right triangular prism has two equal parallel triangular bases and rectangular lateral faces. A solid made solely of congruent triangles is not thereby a prism; the arrangement of faces is decisive.<p>Source note: p3 n68: replaced the incorrect uniform-triangles definition with an explicit prism geometry.</p><p>Capsule 4th ed., p. 3; topic 1 point 68.</p>",
+          "explanation": "The shape made up of uniform triangles is the (triangular) prism: identical triangles form its two ends and every cross-section along its length, joined by rectangular faces. A cube is made of squares, and a cylinder and a sphere have curved surfaces.<p>Capsule 4th ed., p. 3; topic 1 point 68.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3952,32 +3952,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00073",
           "src": "CAP4-01-00073",
-          "text": "Two sections have the same area about a specified bending axis, but the second has four times the second moment of area. How do their radii of gyration compare?",
+          "text": "The radius of gyration of a section is equal to ______.",
           "options": [
             {
               "key": "a",
-              "text": "The second is half the first"
+              "text": "\\(\\sqrt{\\dfrac{A}{I}}\\)"
             },
             {
               "key": "b",
-              "text": "The second is unchanged"
+              "text": "\\(\\sqrt{IA}\\)"
             },
             {
               "key": "c",
-              "text": "The second is four times the first"
+              "text": "\\(\\dfrac{I}{A}\\)"
             },
             {
               "key": "d",
-              "text": "The second is twice the first"
+              "text": "\\(\\sqrt{\\dfrac{I}{A}}\\)"
             }
           ],
           "answer": "d",
-          "explanation": "The radius of gyration is \\[k = \\sqrt{\\dfrac{I}{A}}\\] so with the area fixed, \\(k \\propto \\sqrt{I}\\). Multiplying \\(I\\) by four therefore multiplies \\(k\\) by two; the square-root relationship is not a direct proportionality to \\(I\\).<p>Capsule 4th ed., p. 3; topic 1 point 69.</p>",
+          "explanation": "The radius of gyration is \\(k = \\sqrt{\\dfrac{I}{A}}\\), the square root of the moment of inertia divided by the area of the section. It is therefore proportional to the square root of \\(I\\) and to the square root of the inverse of \\(A\\).<p>Capsule 4th ed., p. 3; topic 1 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3990,7 +3990,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00074",
@@ -4033,7 +4033,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00075",
           "src": "CAP4-01-00075",
-          "text": "For a triangular area of base b and height h, what is the ratio of the second moment about the apex-parallel-to-base axis to that about the parallel centroidal axis?",
+          "text": "The moment of inertia of a triangular section about an axis through its vertex and parallel to the base is ______ times that about a parallel axis through its CG.",
           "options": [
             {
               "key": "a",
@@ -4071,27 +4071,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00076",
           "src": "CAP4-01-00076",
-          "text": "A semicircular area has radius R and diameter d = 2R. Which equivalent expressions give its second moment about the flat diametric edge?",
+          "text": "The moment of inertia of a semicircle of diameter \\(d\\) about its diametric axis (base) is ______.",
           "options": [
             {
               "key": "a",
-              "text": "$\\pi R^4/16=\\pi d^4/128$"
+              "text": "\\(\\dfrac{\\pi d^4}{256}\\)"
             },
             {
               "key": "b",
-              "text": "$\\pi R^4/4=\\pi d^4/128$"
+              "text": "\\(\\dfrac{\\pi d^4}{32}\\)"
             },
             {
               "key": "c",
-              "text": "$\\pi R^4/8=\\pi d^4/128$"
+              "text": "\\(\\dfrac{\\pi d^4}{128}\\)"
             },
             {
               "key": "d",
-              "text": "$\\pi R^4/8=\\pi d^4/64$"
+              "text": "\\(\\dfrac{\\pi d^4}{64}\\)"
             }
           ],
           "answer": "c",
-          "explanation": "A semicircle contributes half the full circle's second moment about the common diameter: \\[I = \\dfrac{1}{2} \\cdot \\dfrac{\\pi R^4}{4} = \\dfrac{\\pi R^4}{8}\\] Substituting \\(R = \\dfrac{d}{2}\\) introduces a factor of 16: \\[I = \\dfrac{\\pi d^4}{8 \\times 16} = \\dfrac{\\pi d^4}{128}\\]<p>Capsule 4th ed., pp. 3, 4; topic 1 point 71; topic 1 point 74.</p>",
+          "explanation": "A semicircle has half the moment of inertia of the full circle about the same diameter: \\[\\begin{aligned} I &amp;= \\dfrac{1}{2} \\times \\dfrac{\\pi d^4}{64} \\\\ &amp;= \\dfrac{\\pi d^4}{128} \\end{aligned}\\] In terms of the radius this is \\(\\dfrac{\\pi R^4}{8}\\).<p>Capsule 4th ed., pp. 3, 4; topic 1 point 71; topic 1 point 74.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4106,32 +4106,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00077",
           "src": "CAP4-01-00077",
-          "text": "Which expression gives the second moment of a full circular area of diameter d about a diameter lying in its plane?",
+          "text": "The moment of inertia of a circle of diameter \\(d\\) about its diameter is ______.",
           "options": [
             {
               "key": "a",
-              "text": "$\\pi d^3/32$"
+              "text": "\\(\\dfrac{\\pi d^3}{32}\\)"
             },
             {
               "key": "b",
-              "text": "$\\pi d^4/64$"
+              "text": "\\(\\dfrac{\\pi d^4}{64}\\)"
             },
             {
               "key": "c",
-              "text": "$\\pi d^4/128$"
+              "text": "\\(\\dfrac{\\pi d^4}{128}\\)"
             },
             {
               "key": "d",
-              "text": "$\\pi d^4/32$"
+              "text": "\\(\\dfrac{\\pi d^4}{32}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "The diametral area moment is \\[I = \\dfrac{\\pi d^4}{64}\\] The polar moment doubles it, the semicircle about its base halves it, and the cubic-length expression is an elastic section modulus rather than a second moment.<p>Capsule 4th ed., p. 3; topic 1 point 72.</p>",
+          "explanation": "About a diameter, a circle has \\(I = \\dfrac{\\pi d^4}{64}\\). Its polar moment of inertia is twice this, \\(\\dfrac{\\pi d^4}{32}\\), while \\(\\dfrac{\\pi d^3}{32}\\) is its section modulus.<p>Capsule 4th ed., p. 3; topic 1 point 72.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4144,32 +4144,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00078",
           "src": "CAP4-01-00078",
-          "text": "A triangular area has base b and perpendicular height d. What is its second moment about the centroidal axis parallel to its base?",
+          "text": "The moment of inertia of a triangle of base \\(b\\) and height \\(d\\) about its centroidal axis parallel to the base is ______.",
           "options": [
             {
               "key": "a",
-              "text": "$bd^3/4$"
+              "text": "\\(\\dfrac{bd^3}{4}\\)"
             },
             {
               "key": "b",
-              "text": "$bd^3/36$"
+              "text": "\\(\\dfrac{bd^3}{36}\\)"
             },
             {
               "key": "c",
-              "text": "$bd^3/24$"
+              "text": "\\(\\dfrac{bd^3}{24}\\)"
             },
             {
               "key": "d",
-              "text": "$bd^3/12$"
+              "text": "\\(\\dfrac{bd^3}{12}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "Subtract the parallel-axis term from the base moment: \\[\\begin{aligned} I_G &amp;= \\dfrac{bd^3}{12} - \\dfrac{bd}{2}\\left(\\dfrac{d}{3}\\right)^2 \\\\ &amp;= \\dfrac{bd^3}{36} \\end{aligned}\\] The formula requires an axis parallel to the stated base.<p>Capsule 4th ed., pp. 3, 4; topic 1 point 73.</p>",
+          "explanation": "About its centroidal axis parallel to the base, a triangle has \\(I = \\dfrac{bd^3}{36}\\). About the base itself it is \\(\\dfrac{bd^3}{12}\\), and about a parallel axis through the apex \\(\\dfrac{bd^3}{4}\\).<p>Capsule 4th ed., pp. 3, 4; topic 1 point 73.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4183,32 +4183,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00079",
           "src": "CAP4-01-00079",
-          "text": "A rectangular section B wide and D deep contains a concentric rectangular hole b wide and d deep. What is the second moment about their common horizontal centroidal axis?",
+          "text": "The moment of inertia of a hollow rectangular section (outer breadth \\(B\\), depth \\(D\\); inner breadth \\(b\\), depth \\(d\\)) about its horizontal centroidal axis is ______.",
           "options": [
             {
               "key": "a",
-              "text": "$(BD^3+bd^3)/12$"
+              "text": "\\(\\dfrac{BD^3+bd^3}{12}\\)"
             },
             {
               "key": "b",
-              "text": "$(DB^3-db^3)/12$"
+              "text": "\\(\\dfrac{DB^3-db^3}{12}\\)"
             },
             {
               "key": "c",
-              "text": "$(BD^3-bd^3)/12$"
+              "text": "\\(\\dfrac{BD^3-bd^3}{12}\\)"
             },
             {
               "key": "d",
-              "text": "$(BD^3-bd^3)/3$"
+              "text": "\\(\\dfrac{BD^3-bd^3}{3}\\)"
             }
           ],
           "answer": "c",
-          "explanation": "The hole's area contribution is subtracted from the outer rectangle's contribution about the same axis. Concentricity is essential to this simple form; an eccentric hole also requires centroid and parallel-axis calculations.<p>Capsule 4th ed., p. 4; topic 1 point 75.</p>",
+          "explanation": "The moment of inertia of the inner rectangle is subtracted from that of the outer rectangle about their common centroidal axis: \\[\\begin{aligned} I &amp;= \\dfrac{BD^3}{12} - \\dfrac{bd^3}{12} \\\\ &amp;= \\dfrac{BD^3 - bd^3}{12} \\end{aligned}\\]<p>Capsule 4th ed., p. 4; topic 1 point 75.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4221,7 +4221,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00081",
@@ -4246,7 +4246,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "The defining relation is \\(I = Ak^2\\). Thus \\[\\begin{aligned} k &amp;= \\sqrt{\\dfrac{1{,}000{,}000}{2{,}500}} \\\\ &amp;= \\sqrt{400} = 20\\ \\text{mm} \\end{aligned}\\] The ratio \\(\\dfrac{I}{A}\\) is \\(k^2\\), not \\(k\\) itself.<p>Source note: p4 n77: the extracted &#39;AI&#39; fraction is disambiguated as I/A by the definition and dimensions.</p><p>Capsule 4th ed., p. 4; topic 1 point 77.</p>",
+          "explanation": "The defining relation is \\(I = Ak^2\\). Thus \\[\\begin{aligned} k &amp;= \\sqrt{\\dfrac{1{,}000{,}000}{2{,}500}} \\\\ &amp;= \\sqrt{400} = 20\\ \\text{mm} \\end{aligned}\\] The ratio \\(\\dfrac{I}{A}\\) is \\(k^2\\), not \\(k\\) itself.<p>Capsule 4th ed., p. 4; topic 1 point 77.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4264,7 +4264,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00082",
           "src": "CAP4-01-00082",
-          "text": "A uniform trapezoidal area has bottom width b = 6 m, top width a = 3 m and height h = 4 m. How high is its centroid above the bottom side?",
+          "text": "A trapezoid has parallel sides \\(a = 3\\) m (top) and \\(b = 6\\) m (bottom) and height \\(h = 4\\) m. The distance of its centroid from the bottom side is ______.",
           "options": [
             {
               "key": "a",
@@ -4302,27 +4302,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00134",
           "src": "CAP4-01-00134",
-          "text": "A uniform semicircular plane area has diameter 300 mm. How far is its centroid from the flat diametric edge?",
+          "text": "The centroid of a semicircle of diameter \\(d\\) from its diametric axis (base) is at ______.",
           "options": [
             {
               "key": "a",
-              "text": "63.66 mm"
+              "text": "\\(\\dfrac{2d}{3\\pi}\\)"
             },
             {
               "key": "b",
-              "text": "95.49 mm"
+              "text": "\\(\\dfrac{4d}{3\\pi}\\)"
             },
             {
               "key": "c",
-              "text": "150.00 mm"
+              "text": "\\(\\dfrac{3d}{8}\\)"
             },
             {
               "key": "d",
-              "text": "127.32 mm"
+              "text": "\\(\\dfrac{d}{3\\pi}\\)"
             }
           ],
           "answer": "a",
-          "explanation": "For a semicircular area the centroid lies at \\[\\bar y = \\dfrac{4R}{3\\pi} = \\dfrac{2d}{3\\pi}\\] from the diameter. With \\(d = 300\\) mm, \\[\\bar y = \\dfrac{600}{3\\pi} = 63.66198\\ \\text{mm}\\] measured from the diameter toward the curved boundary.<p>Source note: p5 n128: the extracted fraction is disambiguated as 2d/(3pi), consistent with integration and the local geometric notes.</p><p>Capsule 4th ed., p. 5; topic 1 point 128.</p>",
+          "explanation": "The centroid of a semicircular area lies on its axis of symmetry at \\(\\dfrac{4r}{3\\pi}\\) from the diameter; in terms of the diameter this is \\(\\dfrac{2d}{3\\pi}\\).<p>Capsule 4th ed., p. 5; topic 1 point 128.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4335,32 +4335,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00148",
           "src": "CAP4-01-00148",
-          "text": "Which geometric quantity is represented by pi R<sup>4</sup>/8 when R is a radius?",
+          "text": "The moment of inertia of a solid hemisphere about its base is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Volume of a solid hemisphere above its base plane"
+              "text": "\\(\\dfrac{\\pi R^4}{16}\\)"
             },
             {
               "key": "b",
-              "text": "Mass moment of a solid hemisphere about a base diameter"
+              "text": "\\(\\dfrac{\\pi R^4}{4}\\)"
             },
             {
               "key": "c",
-              "text": "Second moment of a semicircular area about its flat diameter"
+              "text": "\\(\\dfrac{\\pi R^4}{8}\\)"
             },
             {
               "key": "d",
-              "text": "First moment of a semicircular area about its flat diameter"
+              "text": "\\(\\dfrac{\\pi R^4}{64}\\)"
             }
           ],
           "answer": "c",
-          "explanation": "The expression has units of length to the fourth power and is the semicircular area's diametric second moment. A solid hemisphere's mass inertia requires mass and has units of mass times length squared.<p>Source note: p6 n141: corrected solid hemisphere to semicircular plane area for the printed pi R4/8 expression; the dimensional distinction is independently checked.</p><p>Capsule 4th ed., p. 6; topic 1 point 141.</p>",
+          "explanation": "The moment of inertia about the base diameter is \\(\\dfrac{\\pi R^4}{8}\\), half of the full circle's value \\(\\dfrac{\\pi R^4}{4}\\) about the same diameter.<p>Capsule 4th ed., p. 6; topic 1 point 141.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4373,32 +4373,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00149",
           "src": "CAP4-01-00149",
-          "text": "A homogeneous solid hemisphere of mass 10 kg and radius 0.20 m rotates about a diameter in its flat base plane. Using mass inertia I = 2MR<sup>2</sup>/5 about this axis, what is I?",
+          "text": "Using \\(I = \\dfrac{\\pi R^4}{8}\\), the moment of inertia of a solid hemisphere of radius 2 m about its base is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.40 kg m<sup>2</sup>"
+              "text": "3.14 m<sup>4</sup>"
             },
             {
               "key": "b",
-              "text": "0.16 kg m<sup>2</sup>"
+              "text": "6.28 m<sup>4</sup>"
             },
             {
               "key": "c",
-              "text": "0.016 kg m<sup>2</sup>"
+              "text": "25.13 m<sup>4</sup>"
             },
             {
               "key": "d",
-              "text": "0.08 kg m<sup>2</sup>"
+              "text": "12.57 m<sup>4</sup>"
             }
           ],
           "answer": "b",
-          "explanation": "Substitution gives \\[\\begin{aligned} I &amp;= \\dfrac{2}{5} \\times 10 \\times 0.20^2 \\\\ &amp;= 0.16\\ \\text{kg m}^2 \\end{aligned}\\] Halving a sphere through its centre halves both mass and this axis's inertia, retaining the relation \\(I = \\dfrac{2MR^2}{5}\\) for the hemisphere.<p>Source note: p6 n141: a separate, fully specified mass-inertia exercise retains the source&#39;s solid-hemisphere concept without using an area-moment formula.</p><p>Capsule 4th ed., p. 6; topic 1 point 141.</p>",
+          "explanation": "Substituting \\(R = 2\\) m: \\[\\begin{aligned} I &amp;= \\dfrac{\\pi \\times 2^4}{8} \\\\ &amp;= 2\\pi = 6.28\\ \\text{m}^4 \\end{aligned}\\]<p>Capsule 4th ed., p. 6; topic 1 point 141.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4416,27 +4416,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00150",
           "src": "CAP4-01-00150",
-          "text": "A solid circular area has diameter d. What is its polar second moment about the longitudinal axis normal to the section through its centre?",
+          "text": "The polar moment of inertia of a solid circular section of diameter \\(d\\) about its longitudinal axis is ______.",
           "options": [
             {
               "key": "a",
-              "text": "$\\pi d^4/64$"
+              "text": "\\(\\dfrac{\\pi d^4}{64}\\)"
             },
             {
               "key": "b",
-              "text": "$\\pi d^4/32$"
+              "text": "\\(\\dfrac{\\pi d^4}{32}\\)"
             },
             {
               "key": "c",
-              "text": "$\\pi d^3/32$"
+              "text": "\\(\\dfrac{\\pi d^3}{32}\\)"
             },
             {
               "key": "d",
-              "text": "$\\pi d^4/128$"
+              "text": "\\(\\dfrac{\\pi d^4}{128}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "The polar moment is the sum of two perpendicular diametral area moments: \\[J = 2 \\times \\dfrac{\\pi d^4}{64} = \\dfrac{\\pi d^4}{32}\\] This is an area property, not a mass moment of inertia.<p>Capsule 4th ed., p. 6; topic 1 point 143.</p>",
+          "explanation": "By the perpendicular axis theorem, \\(J = I_x + I_y\\), and each of these is \\(\\dfrac{\\pi d^4}{64}\\) for a circle, so \\(J = \\dfrac{\\pi d^4}{32}\\).<p>Capsule 4th ed., p. 6; topic 1 point 143.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4449,7 +4449,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0104",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -4461,27 +4461,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00062",
           "src": "CAP4-01-00062",
-          "text": "Using the conventional 30-degree minimum and 120-degree maximum guidance for a well-conditioned survey triangle, which set of angles is acceptable?",
+          "text": "For a well-conditioned triangle, each angle should not be less than ______.",
           "options": [
             {
               "key": "a",
-              "text": "20 degrees, 30 degrees, 130 degrees"
+              "text": "20°"
             },
             {
               "key": "b",
-              "text": "25 degrees, 35 degrees, 120 degrees"
+              "text": "60°"
             },
             {
               "key": "c",
-              "text": "40 degrees, 60 degrees, 80 degrees"
+              "text": "30°"
             },
             {
               "key": "d",
-              "text": "20 degrees, 80 degrees, 80 degrees"
+              "text": "45°"
             }
           ],
           "answer": "c",
-          "explanation": "The acceptable triangle totals 180 degrees and avoids very acute or obtuse angles. The 30-120 guidance limits geometric amplification of measurement errors; an equilateral triangle is especially well conditioned.<p>Capsule 4th ed., pp. 3, 5; topic 1 point 59; topic 1 point 114.</p>",
+          "explanation": "In triangulation, each angle of a well-conditioned triangle should not be less than 30° (nor greater than 120°), so that small errors in the measured angles cause only small errors in the computed sides. The ideal shape is the equilateral triangle, with all angles 60°.<p>Capsule 4th ed., pp. 3, 5; topic 1 point 59; topic 1 point 114.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4496,32 +4496,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00068",
           "src": "CAP4-01-00068",
-          "text": "A GIS polygon is stored in a suitable projected coordinate system whose linear units are metres. In which units is its directly computed planar area expressed?",
+          "text": "In computer mapping, the area of a region is typically measured in ______ units.",
           "options": [
             {
               "key": "a",
-              "text": "Cubic metres"
+              "text": "Angular"
             },
             {
               "key": "b",
-              "text": "Metres"
+              "text": "Linear"
             },
             {
               "key": "c",
-              "text": "Square metres"
+              "text": "Square"
             },
             {
               "key": "d",
-              "text": "Square degrees"
+              "text": "Cubic"
             }
           ],
           "answer": "c",
-          "explanation": "A planar area computed from metre coordinates has squared-length units, m<sup>2</sup>. Geographic coordinates in degrees need a suitable projection or geodesic area method; the word square alone is not a complete unit.<p>Source note: p3 n64: supplied the missing coordinate-system and unit assumptions.</p><p>Capsule 4th ed., p. 3; topic 1 point 64.</p>",
+          "explanation": "Area is a two-dimensional quantity, so in computer mapping the area of a region is measured in square units of the map's length unit, such as square metres or square kilometres.<p>Capsule 4th ed., p. 3; topic 1 point 64.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4534,32 +4534,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00083",
           "src": "CAP4-01-00083",
-          "text": "In differential levelling, backsight and foresight distances are equal and atmospheric conditions are comparable. What happens to curvature and refraction effects in the computed height difference?",
+          "text": "If the level is placed at the mid-point between two stations, the error eliminated is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Their common contributions approximately cancel"
+              "text": "Both curvature (Cc) and refraction (Cr)"
             },
             {
               "key": "b",
-              "text": "Curvature is removed but refraction is doubled"
+              "text": "Neither curvature nor refraction"
             },
             {
               "key": "c",
-              "text": "Refraction is removed but curvature is doubled"
+              "text": "Refraction (Cr) only"
             },
             {
               "key": "d",
-              "text": "Earth curvature physically becomes zero at both staffs"
+              "text": "Curvature (Cc) only"
             }
           ],
           "answer": "a",
-          "explanation": "Equal sight lengths give approximately equal systematic contributions to the two readings, which cancel on subtraction. The individual effects still exist, and unequal atmospheric conditions can prevent exact refraction cancellation.<p>Source note: p4 n81: midpoint placement cancels common effects in a difference; it does not abolish each individual correction.</p><p>Capsule 4th ed., p. 4; topic 1 point 81.</p>",
+          "explanation": "With the level at the mid-point, the backsight and foresight distances are equal, so the curvature correction (Cc) and the refraction correction (Cr) are the same on both sights and cancel when the readings are subtracted. Both errors are therefore eliminated.<p>Capsule 4th ed., p. 4; topic 1 point 81.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4572,32 +4572,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00084",
           "src": "CAP4-01-00084",
-          "text": "Which statement correctly distinguishes the traditional GPS constellation layout from the number of satellites operating at a particular time?",
+          "text": "The number of satellites used for GPS by the US Department of Defense is ______.",
           "options": [
             {
               "key": "a",
-              "text": "The traditional layout uses 24 independent signals for every ordinary 3D fix"
+              "text": "18"
             },
             {
               "key": "b",
-              "text": "The traditional layout requires 24 satellites to be visible from each receiver"
+              "text": "30"
             },
             {
               "key": "c",
-              "text": "The traditional layout permits at most 24 operating satellites at any time"
+              "text": "12"
             },
             {
               "key": "d",
-              "text": "The traditional layout has 24 baseline slots; the operating fleet can be larger"
+              "text": "24"
             }
           ],
           "answer": "d",
-          "explanation": "The traditional arrangement has six orbital planes with four baseline slots each. GPS.gov also describes the 2011 Expandable 24 configuration as effectively 27 slots and explains that extra satellites are flown. Neither layout number is a guaranteed real-time fleet or local visibility count; an ordinary 3D fix with receiver-clock bias needs at least four suitable observations.<p>Source note: p4 n82: independently verified from https://www.gps.gov/space-segment and the US Space Force GPS fact sheet (dated October 2020), using text only. The former page&#39;s July 2023 fleet figure is not presented as a September 2026 count. This resolves the author&#39;s failed legacy-URL reference flag, not a live constellation census.</p><p>Capsule 4th ed., p. 4; topic 1 point 82.</p>",
+          "explanation": "The Global Positioning System of the US Department of Defense uses a constellation of 24 satellites in six orbital planes, arranged so that at least four satellites are visible from any point on the earth at any time.<p>Capsule 4th ed., p. 4; topic 1 point 82.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4610,32 +4610,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00085",
           "src": "CAP4-01-00085",
-          "text": "An ideal theodolite gives a face-left zenith-circle reading of 98 degrees 30 minutes 30 seconds. With complementary full-circle face readings, what is the corresponding face-right reading?",
+          "text": "If the left face zenith angle is 98°30′30″, the right face zenith angle is ______.",
           "options": [
             {
               "key": "a",
-              "text": "261 degrees 29 minutes 30 seconds"
+              "text": "261°29′30″"
             },
             {
               "key": "b",
-              "text": "278 degrees 30 minutes 30 seconds"
+              "text": "278°30′30″"
             },
             {
               "key": "c",
-              "text": "81 degrees 29 minutes 30 seconds"
+              "text": "81°29′30″"
             },
             {
               "key": "d",
-              "text": "261 degrees 30 minutes 30 seconds"
+              "text": "261°30′30″"
             }
           ],
           "answer": "a",
-          "explanation": "The ideal face readings sum to 360 degrees. Subtracting 98 degrees 30 minutes 30 seconds from 360 degrees requires borrowing and gives 261 degrees 29 minutes 30 seconds; real index error can disturb the ideal sum.<p>Capsule 4th ed., p. 4; topic 1 point 83.</p>",
+          "explanation": "The face-left and face-right zenith readings add up to 360°, so the right face zenith angle is \\[\\begin{aligned} &amp;360^\\circ - 98^\\circ 30' 30'' \\\\ &amp;= 261^\\circ 29' 30'' \\end{aligned}\\]<p>Capsule 4th ed., p. 4; topic 1 point 83.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4653,27 +4653,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00086",
           "src": "CAP4-01-00086",
-          "text": "A road designer needs terrain elevations, streams, buildings and other surface features before alignment design. Which survey most directly provides this base information?",
+          "text": "Topographic survey is done for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Traffic-volume survey"
+              "text": "Fixing legal property boundaries only"
             },
             {
               "key": "b",
-              "text": "Topographic survey"
+              "text": "Soil, traffic and engineering studies"
             },
             {
               "key": "c",
-              "text": "Property valuation survey"
+              "text": "Measuring river discharge only"
             },
             {
               "key": "d",
-              "text": "Subsurface soil investigation"
+              "text": "Locating underground mines only"
             }
           ],
           "answer": "b",
-          "explanation": "A topographic survey maps relief and natural or built surface features. Its results support engineering, but it does not replace direct soil investigation or traffic measurement.<p>Source note: p4 n84: clarified the purpose of topographic surveying rather than treating soil and traffic investigations as equivalent survey products.</p><p>Capsule 4th ed., p. 4; topic 1 point 84.</p>",
+          "explanation": "A topographic survey maps the relief of the ground and its natural and man-made features. It is done for soil, traffic and engineering studies, such as planning roads, canals and buildings.<p>Capsule 4th ed., p. 4; topic 1 point 84.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4686,32 +4686,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00087",
           "src": "CAP4-01-00087",
-          "text": "Which GIS task requires evaluating a spatial relationship rather than only attribute values or file formats?",
+          "text": "Which of the following does not determine the capability of a GIS?",
           "options": [
             {
               "key": "a",
-              "text": "Join owner records to parcels using matching parcel IDs"
+              "text": "Data storage and management"
             },
             {
               "key": "b",
-              "text": "Select parcels whose recorded land use is residential"
+              "text": "Spatial analysis"
             },
             {
               "key": "c",
-              "text": "Identify parcels intersecting a flood-hazard polygon"
+              "text": "Transferring data"
             },
             {
               "key": "d",
-              "text": "Export a parcel attribute table to a CSV file"
+              "text": "Map display and query"
             }
           ],
           "answer": "c",
-          "explanation": "Intersection evaluates the geometries of parcels and the flood-hazard polygon. Attribute filtering, joining on an identifier and table export can proceed without comparing feature locations. Data transfer is still a valid GIS capability, but it is not itself spatial analysis.<p>Source note: p4 n85: rejected an absolute exclusion of data transfer from GIS capabilities. Independent review replaced obvious file-management distractors with plausible nonspatial GIS operations.</p><p>Capsule 4th ed., p. 4; topic 1 point 85.</p>",
+          "explanation": "The capability of a GIS is determined by how it captures, stores, analyses, queries and displays spatial data. Merely transferring data from one place to another does not determine its capability.<p>Capsule 4th ed., p. 4; topic 1 point 85.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4724,32 +4724,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00088",
           "src": "CAP4-01-00088",
-          "text": "A regional control network is too extensive for the Earth's surface to be treated as a plane at the required accuracy. Which surveying approach explicitly accounts for this geometry?",
+          "text": "Geodetic surveying differs from plane surveying because it takes into account the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Geodetic surveying"
+              "text": "Curvature of the earth"
             },
             {
               "key": "b",
-              "text": "Chain surveying without curvature reduction"
+              "text": "Refraction of light only"
             },
             {
               "key": "c",
-              "text": "Plane-table plotting without geodetic control"
+              "text": "Local attraction"
             },
             {
               "key": "d",
-              "text": "Plane surveying"
+              "text": "Magnetic declination"
             }
           ],
           "answer": "a",
-          "explanation": "Geodetic surveying accounts for Earth's curvature and reference-surface geometry. Plane surveying neglects curvature over a suitably limited area; it is an approximation, not a claim that the physical Earth is flat.<p>Capsule 4th ed., pp. 4, 6; topic 1 point 86; topic 1 point 142.</p>",
+          "explanation": "In plane surveying the curvature of the earth is completely neglected and the surface is treated as a plane. Geodetic surveying, used for large areas, differs from it by taking the curvature of the earth into account.<p>Capsule 4th ed., pp. 4, 6; topic 1 point 86; topic 1 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4764,7 +4764,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00089",
@@ -4807,27 +4807,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00091",
           "src": "CAP4-01-00091",
-          "text": "A nominally closed traverse has net latitude northward and net departure westward. In which quadrant does the vector from the starting point to the computed endpoint lie?",
+          "text": "In a closed traverse, if the sum of north latitudes exceeds the sum of south latitudes and the sum of west departures exceeds the sum of east departures, the closing line lies in the ______ quadrant.",
           "options": [
             {
               "key": "a",
-              "text": "Southeast"
+              "text": "NE"
             },
             {
               "key": "b",
-              "text": "Northwest"
+              "text": "NW"
             },
             {
               "key": "c",
-              "text": "Northeast"
+              "text": "SW"
             },
             {
               "key": "d",
-              "text": "Southwest"
+              "text": "SE"
             }
           ],
           "answer": "b",
-          "explanation": "Positive northward latitude places the computed endpoint north of the start, and net westward departure places it west. The endpoint error vector is northwest; the return vector needed to close it has the opposite direction.<p>Capsule 4th ed., p. 4; topic 1 point 89.</p>",
+          "explanation": "The excess of north latitudes gives a net northward error and the excess of west departures a net westward error, so the closing line of the traverse lies in the NW quadrant.<p>Capsule 4th ed., p. 4; topic 1 point 89.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4840,32 +4840,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00092",
           "src": "CAP4-01-00092",
-          "text": "A traverse's computed endpoint lies northwest of its start. In which direction must the closing line run from that endpoint back to the start?",
+          "text": "In a closed traverse, the closing line lies in the NW quadrant when ______.",
           "options": [
             {
               "key": "a",
-              "text": "Northwest"
+              "text": "South latitudes exceed north latitudes and west departures exceed east departures"
             },
             {
               "key": "b",
-              "text": "Southeast"
+              "text": "North latitudes exceed south latitudes and west departures exceed east departures"
             },
             {
               "key": "c",
-              "text": "Southwest"
+              "text": "South latitudes exceed north latitudes and east departures exceed west departures"
             },
             {
               "key": "d",
-              "text": "Northeast"
+              "text": "North latitudes exceed south latitudes and east departures exceed west departures"
             }
           ],
           "answer": "b",
-          "explanation": "The closing line from computed endpoint to start is the negative of the start-to-end misclosure vector. Reversing northwest gives southeast; using the same quadrant for both vectors reverses the correction sign.<p>Source note: p4 n89: &#39;closing line NW&#39; is correct only if the source means start-to-computed-end error vector. The actual return closing line is SE; direction is explicitly defined.</p><p>Capsule 4th ed., p. 4; topic 1 point 89.</p>",
+          "explanation": "The closing line lies in the NW quadrant when the sum of north latitudes is more than the sum of south latitudes (net north) and the sum of west departures is more than the sum of east departures (net west).<p>Capsule 4th ed., p. 4; topic 1 point 89.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4878,32 +4878,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00093",
           "src": "CAP4-01-00093",
-          "text": "Which set comprises the principal observations made by a conventional total station before coordinate reduction?",
+          "text": "The readings taken during traversing using a total station are ______.",
           "options": [
             {
               "key": "a",
-              "text": "Horizontal distance, ground slope and benchmark class"
+              "text": "Staff intercept, stadia constant and vertical angle only"
             },
             {
               "key": "b",
-              "text": "Ground elevation, prism height and station name"
+              "text": "Magnetic bearing, chain length and offset distance"
             },
             {
               "key": "c",
-              "text": "Horizontal angle, vertical angle and slope distance"
+              "text": "Horizontal angle, horizontal distance, vertical distance, station height and height of instrument"
             },
             {
               "key": "d",
-              "text": "Northing, easting and coordinate-system name"
+              "text": "Latitude, departure and closing error only"
             }
           ],
           "answer": "c",
-          "explanation": "A total station observes angular quantities and EDM slope distance, then derives coordinates and horizontal or vertical components. Station coordinates, instrument height and target height are supplied or established separately.<p>Source note: p4 n90: distinguished directly observed quantities from derived distances and entered station/instrument/target data.</p><p>Capsule 4th ed., p. 4; topic 1 point 90.</p>",
+          "explanation": "During traversing, a total station records the horizontal angle, the horizontal and vertical distances, the station height and the height of instrument; from these, coordinates and levels are computed.<p>Capsule 4th ed., p. 4; topic 1 point 90.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4916,32 +4916,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00094",
           "src": "CAP4-01-00094",
-          "text": "A total station observes a slope distance of 50 m at an elevation angle of 30 degrees above horizontal. Ignoring instrument and prism-height offsets, what are the horizontal and vertical components?",
+          "text": "Which of the following is not a reading taken during traversing using a total station?",
           "options": [
             {
               "key": "a",
-              "text": "50.00 m horizontal and 25.00 m vertical"
+              "text": "Height of instrument"
             },
             {
               "key": "b",
-              "text": "43.30 m horizontal and 25.00 m vertical"
+              "text": "Magnetic declination"
             },
             {
               "key": "c",
-              "text": "25.00 m horizontal and 43.30 m vertical"
+              "text": "Horizontal angle"
             },
             {
               "key": "d",
-              "text": "43.30 m horizontal and 50.00 m vertical"
+              "text": "Vertical distance"
             }
           ],
           "answer": "b",
-          "explanation": "For an elevation angle, \\[H = 50 \\cos 30^\\circ = 43.30\\ \\text{m}\\] \\[V = 50 \\sin 30^\\circ = 25.00\\ \\text{m}\\] A zenith angle uses complementary trigonometric functions.<p>Capsule 4th ed., p. 4; topic 1 point 90.</p>",
+          "explanation": "A total station traverse records the horizontal angle, horizontal distance, vertical distance, station height and height of instrument. Magnetic declination is not one of these readings; it is a compass correction.<p>Capsule 4th ed., p. 4; topic 1 point 90.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4954,32 +4954,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00095",
           "src": "CAP4-01-00095",
-          "text": "A total station stands on ground at RL 100.0 m with instrument height 1.5 m. The prism centre is 3.0 m above the instrument axis and 1.8 m above its ground point. What is the target ground RL?",
+          "text": "Besides the horizontal angle and the horizontal and vertical distances, traversing with a total station records the ______.",
           "options": [
             {
               "key": "a",
-              "text": "106.3 m"
+              "text": "Magnetic bearing and local attraction"
             },
             {
               "key": "b",
-              "text": "99.7 m"
+              "text": "Staff intercept and stadia constant"
             },
             {
               "key": "c",
-              "text": "104.5 m"
+              "text": "Chainage and offsets"
             },
             {
               "key": "d",
-              "text": "102.7 m"
+              "text": "Station height and height of instrument"
             }
           ],
           "answer": "d",
-          "explanation": "Work up from the ground to the prism and back down to its ground point (RLs in metres): \\[\\begin{aligned} \\text{axis} &amp;= 100.0 + 1.5 = 101.5 \\\\ \\text{prism} &amp;= 101.5 + 3.0 = 104.5 \\\\ \\text{ground} &amp;= 104.5 - 1.8 = 102.7 \\end{aligned}\\] The target height is subtracted, not added.<p>Capsule 4th ed., p. 4; topic 1 point 90.</p>",
+          "explanation": "The readings taken during total station traversing are the horizontal angle, horizontal distance, vertical distance, station height and height of instrument. Station height and instrument height are needed to transfer levels between stations.<p>Capsule 4th ed., p. 4; topic 1 point 90.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4992,28 +4992,28 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00096",
           "src": "CAP4-01-00096",
-          "text": "Whole-circle bearings of AB and BC are 146 degrees 30 minutes and 68 degrees 30 minutes respectively. What is the smaller included angle ABC?",
+          "text": "The bearings of lines AB and BC are 146°30′ and 68°30′. The included angle ABC is ______.",
           "options": [
             {
               "key": "a",
-              "text": "215 degrees"
+              "text": "215°"
             },
             {
               "key": "b",
-              "text": "258 degrees"
+              "text": "258°"
             },
             {
               "key": "c",
-              "text": "102 degrees"
+              "text": "102°"
             },
             {
               "key": "d",
-              "text": "78 degrees"
+              "text": "78°"
             }
           ],
           "answer": "c",
@@ -5035,27 +5035,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00097",
           "src": "CAP4-01-00097",
-          "text": "Using north and east as positive, a traverse has net latitude -3 m and net departure +4 m. What is the clockwise whole-circle bearing of the start-to-end error vector?",
+          "text": "The direction of the closing error of a traverse is given by ______.",
           "options": [
             {
               "key": "a",
-              "text": "233.13 degrees"
+              "text": "\\(\\tan\\theta = \\dfrac{\\sum D^2}{\\sum L^2}\\)"
             },
             {
               "key": "b",
-              "text": "53.13 degrees"
+              "text": "\\(\\tan\\theta = \\dfrac{\\sum L}{\\sum D}\\)"
             },
             {
               "key": "c",
-              "text": "126.87 degrees"
+              "text": "\\(\\tan\\theta = \\dfrac{\\sum D}{\\sum L}\\)"
             },
             {
               "key": "d",
-              "text": "306.87 degrees"
+              "text": "\\(\\sin\\theta = \\dfrac{\\sum D}{\\sum L}\\)"
             }
           ],
           "answer": "c",
-          "explanation": "The vector points southeast. Its acute angle from south is \\[\\theta = \\tan^{-1}\\dfrac{4}{3} = 53.13^\\circ\\] so the whole-circle bearing is \\[180^\\circ - 53.13^\\circ = 126.87^\\circ\\] The ratio of departure to latitude alone must be supplemented by signs and quadrant.<p>Source note: p4 n92: the source tangent relation is qualified by quadrant; atan2(departure, latitude) avoids the ambiguity.</p><p>Capsule 4th ed., p. 4; topic 1 point 92.</p>",
+          "explanation": "If \\(\\sum L\\) and \\(\\sum D\\) are the errors in latitude and departure, the closing error makes an angle \\(\\theta\\) with the meridian given by \\(\\tan\\theta = \\dfrac{\\sum D}{\\sum L}\\). Its magnitude is \\(\\sqrt{(\\sum L)^2 + (\\sum D)^2}\\).<p>Capsule 4th ed., p. 4; topic 1 point 92.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5068,32 +5068,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00098",
           "src": "CAP4-01-00098",
-          "text": "Two survey stations on opposite banks of an unfordable river are mutually visible. How does the river affect ordinary chaining and ranging between them?",
+          "text": "A river is an obstacle to ______.",
           "options": [
             {
               "key": "a",
-              "text": "It obstructs direct ranging but not chaining"
+              "text": "Ranging but not chaining"
             },
             {
               "key": "b",
-              "text": "It obstructs neither because the stations are visible"
+              "text": "Neither chaining nor ranging"
             },
             {
               "key": "c",
-              "text": "It obstructs both because water blocks every sight line"
+              "text": "Both chaining and ranging"
             },
             {
               "key": "d",
-              "text": "It obstructs chaining but not direct ranging"
+              "text": "Chaining but not ranging"
             }
           ],
           "answer": "d",
-          "explanation": "A chain cannot be laid continuously across the unfordable water, but a visible straight line can still be ranged. Visibility and physical accessibility are distinct conditions; indirect distance methods can bridge the obstacle.<p>Capsule 4th ed., p. 4; topic 1 point 93.</p>",
+          "explanation": "A river obstructs chaining, because the chain cannot be stretched across it, but it does not obstruct ranging, because the ranging rods on both banks remain visible. A hill or a building, by contrast, obstructs ranging.<p>Capsule 4th ed., p. 4; topic 1 point 93.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5106,32 +5106,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00099",
           "src": "CAP4-01-00099",
-          "text": "Before a detailed site levelling survey, a stable mark with a known reduced level is established and referenced. What function does this benchmark serve?",
+          "text": "The bench marks are fixed during the ______.",
           "options": [
             {
               "key": "a",
-              "text": "It provides recoverable elevation control"
+              "text": "Detailed survey"
             },
             {
               "key": "b",
-              "text": "It records only the magnetic declination"
+              "text": "Reconnaissance survey"
             },
             {
               "key": "c",
-              "text": "It replaces every subsequent staff observation"
+              "text": "Map study"
             },
             {
               "key": "d",
-              "text": "It fixes the ownership of every site parcel"
+              "text": "Construction survey"
             }
           ],
           "answer": "a",
-          "explanation": "A benchmark is a durable marked point with an established elevation relative to a datum. Such control may precede detailed surveying and can also be extended during it; no single survey stage exclusively defines benchmarks.<p>Source note: p4 n94: corrected the exclusive timing implication while retaining benchmark purpose.</p><p>Capsule 4th ed., p. 4; topic 1 point 94.</p>",
+          "explanation": "Bench marks are fixed during the detailed survey, which gives the exact levels and dimensions needed for design. Map study and reconnaissance come earlier and only select the general site or route.<p>Capsule 4th ed., p. 4; topic 1 point 94.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5144,32 +5144,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00100",
           "src": "CAP4-01-00100",
-          "text": "Several elevations along an ideal vertical cliff occupy the same horizontal plan position. How are their contour traces represented in plan?",
+          "text": "Contour lines of different elevations can unite to form one line only in the case of a ______.",
           "options": [
             {
               "key": "a",
-              "text": "They coincide along the cliff trace"
+              "text": "Vertical cliff"
             },
             {
               "key": "b",
-              "text": "They terminate without any cliff convention"
+              "text": "Flat plain"
             },
             {
               "key": "c",
-              "text": "They form equally spaced parallel bands"
+              "text": "Overhanging cliff"
             },
             {
               "key": "d",
-              "text": "They form concentric circles automatically"
+              "text": "Ridge line"
             }
           ],
           "answer": "a",
-          "explanation": "A vertical face has zero horizontal run for a finite elevation change, so different contour elevations coincide in ideal plan projection. Crossing contours can represent an overhang, a different geometry from the vertical-cliff case.<p>Capsule 4th ed., p. 4; topic 1 point 95.</p>",
+          "explanation": "Contours of different elevations unite into one line only at a vertical cliff, where many elevations lie at the same plan position. At an overhanging cliff contours cross each other; elsewhere contour lines never meet.<p>Capsule 4th ed., p. 4; topic 1 point 95.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5182,28 +5182,28 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00101",
           "src": "CAP4-01-00101",
-          "text": "A line has a magnetic whole-circle bearing of 32 degrees. If the magnetic declination is 10 degrees 15 minutes west, what is its true bearing?",
+          "text": "The magnetic bearing of a line is 32° and the magnetic declination is 10°15′ W. The true bearing of the line is ______.",
           "options": [
             {
               "key": "a",
-              "text": "22 degrees 15 minutes"
+              "text": "22°15′"
             },
             {
               "key": "b",
-              "text": "317 degrees 45 minutes"
+              "text": "317°45′"
             },
             {
               "key": "c",
-              "text": "42 degrees 15 minutes"
+              "text": "42°15′"
             },
             {
               "key": "d",
-              "text": "21 degrees 45 minutes"
+              "text": "21°45′"
             }
           ],
           "answer": "d",
@@ -5225,15 +5225,15 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00102",
           "src": "CAP4-01-00102",
-          "text": "Which plan most directly helps infer terrain slopes and likely surface drainage directions from lines of equal elevation?",
+          "text": "The plan used to interpret drainage, surface conditions and topography is called a ______.",
           "options": [
             {
               "key": "a",
-              "text": "Cadastral boundary plan without levels"
+              "text": "Site plan"
             },
             {
               "key": "b",
-              "text": "Route centre-line chainage plan alone"
+              "text": "Key plan"
             },
             {
               "key": "c",
@@ -5241,11 +5241,11 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "d",
-              "text": "Land-use zoning plan without relief"
+              "text": "Index plan"
             }
           ],
           "answer": "c",
-          "explanation": "Contours describe terrain elevation and help interpret slopes, ridges, valleys and surface drainage. A contour plan supports such interpretation but does not itself measure subsurface flow or all drainage-system capacity.<p>Capsule 4th ed., p. 4; topic 1 point 97.</p>",
+          "explanation": "A contour plan shows the ground by contour lines, so the drainage pattern, surface conditions and topography of an area can be interpreted from it.<p>Capsule 4th ed., p. 4; topic 1 point 97.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5258,32 +5258,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00104",
           "src": "CAP4-01-00104",
-          "text": "Two areas on the same contour map use the same contour interval. One has much closer contour spacing measured along the slope direction. What does it indicate?",
+          "text": "Closely spaced equal-interval contour lines indicate a ______.",
           "options": [
             {
               "key": "a",
-              "text": "A change in the map's drawing scale"
+              "text": "Overhanging cliff"
             },
             {
               "key": "b",
-              "text": "A steeper ground slope"
+              "text": "Steep slope"
             },
             {
               "key": "c",
-              "text": "A gentler ground slope"
+              "text": "Gentle slope"
             },
             {
               "key": "d",
-              "text": "A smaller elevation interval"
+              "text": "Flat ground"
             }
           ],
           "answer": "b",
-          "explanation": "Slope is vertical rise divided by horizontal run. At equal contour interval and map scale, a smaller horizontal spacing means the same rise occurs over less run, so the slope is steeper.<p>Capsule 4th ed., p. 4; topic 1 point 99.</p>",
+          "explanation": "The horizontal distance between contours decreases as the ground becomes steeper, so closely spaced contour lines indicate a steep slope and widely spaced ones a gentle slope.<p>Capsule 4th ed., p. 4; topic 1 point 99.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5296,32 +5296,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00105",
           "src": "CAP4-01-00105",
-          "text": "A crew using a dumpy level moves from nearly flat ground to a steeper hillside. Which statement correctly describes the instrument's applicability?",
+          "text": "The dumpy level is most suitable for levelling survey on ______.",
           "options": [
             {
               "key": "a",
-              "text": "Its telescope must follow the ground slope during each reading"
+              "text": "Deep gorges"
             },
             {
               "key": "b",
-              "text": "It still works, but shorter sights and more setups may be needed"
+              "text": "Flat terrain"
             },
             {
               "key": "c",
-              "text": "It must be replaced by a compass to obtain reduced levels"
+              "text": "Dense forest"
             },
             {
               "key": "d",
-              "text": "It cannot determine elevation differences on any slope"
+              "text": "Steep hillsides"
             }
           ],
           "answer": "b",
-          "explanation": "A dumpy level establishes a horizontal line of sight. It is convenient on relatively flat terrain but also works on slopes using appropriate staff ranges and additional setups; the sight line is not tilted to match the ground.<p>Source note: p4 n100: flat terrain is a convenience, not an exclusive operating requirement or proof of universal superiority.</p><p>Capsule 4th ed., p. 4; topic 1 point 100.</p>",
+          "explanation": "The dumpy level, whose telescope is fixed rigidly to its spindle, is most suitable for levelling on flat terrain, where long level sights can be taken from each setup.<p>Capsule 4th ed., p. 4; topic 1 point 100.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5334,32 +5334,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00106",
           "src": "CAP4-01-00106",
-          "text": "A levelling setup has many intermediate sights. Which reduction method uses a common sight-line elevation and is also called the height-of-collimation method?",
+          "text": "The height of instrument (collimation) method of levelling is generally adopted when there are ______.",
           "options": [
             {
               "key": "a",
-              "text": "Rise-and-fall method"
+              "text": "Very few intermediate stations"
             },
             {
               "key": "b",
-              "text": "Reciprocal-observation method"
+              "text": "Only change points"
             },
             {
               "key": "c",
-              "text": "Trigonometric-height method"
+              "text": "Reciprocal observations across a river"
             },
             {
               "key": "d",
-              "text": "Height-of-instrument method"
+              "text": "Many intermediate stations"
             }
           ],
           "answer": "d",
-          "explanation": "The height-of-instrument and height-of-collimation names describe the same reduction method. A common HI simplifies many intermediate readings; it should not be confused with the physical height of a total station above its station mark.<p>Source note: p4 n101: the two names are synonyms, not two separate levelling reduction methods.</p><p>Capsule 4th ed., p. 4; topic 1 point 101.</p>",
+          "explanation": "The height of instrument, or collimation, method is generally adopted when there are many intermediate stations, because each reduced level is found simply by subtracting the staff reading from the height of instrument.<p>Capsule 4th ed., p. 4; topic 1 point 101.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5372,32 +5372,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00107",
           "src": "CAP4-01-00107",
-          "text": "A benchmark has RL 100.0 m, the backsight is 1.4 m, and an intermediate sight from the same setup is 2.1 m. What is the intermediate point's RL?",
+          "text": "When there are a lot of intermediate stations, the method of levelling generally adopted is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "103.5 m"
+              "text": "Reciprocal levelling method"
             },
             {
               "key": "b",
-              "text": "97.9 m"
+              "text": "Trigonometric levelling method"
             },
             {
               "key": "c",
-              "text": "99.3 m"
+              "text": "Height of instrument (collimation) method"
             },
             {
               "key": "d",
-              "text": "100.7 m"
+              "text": "Rise and fall method"
             }
           ],
           "answer": "c",
-          "explanation": "The height of collimation is \\[\\text{HI} = 100.0 + 1.4 = 101.4\\ \\text{m}\\] Subtract the intermediate staff reading: \\[\\text{RL} = 101.4 - 2.1 = 99.3\\ \\text{m}\\] A larger staff reading corresponds to lower ground for the same sight line.<p>Capsule 4th ed., p. 4; topic 1 point 101.</p>",
+          "explanation": "With many intermediate stations, the height of instrument (collimation) method is generally adopted: each reduced level is the height of instrument minus the staff reading, which is quicker than working out a rise or fall for every point.<p>Capsule 4th ed., p. 4; topic 1 point 101.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5410,32 +5410,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00108",
           "src": "CAP4-01-00108",
-          "text": "In stadia tacheometry with a vertical staff, intercept s, elevation angle theta, multiplying constant K and additive constant C, what is the vertical component from the instrument axis to the central-hair point?",
+          "text": "In tacheometric surveying with a vertical staff (staff intercept \\(s\\), vertical angle \\(\\theta\\), constants \\(K\\) and \\(C\\)), the vertical component is ______.",
           "options": [
             {
               "key": "a",
-              "text": "$Ks\\sin(2\\theta)/2+C\\sin\\theta$"
+              "text": "\\(\\dfrac{Ks\\sin 2\\theta}{2} + C\\sin\\theta\\)"
             },
             {
               "key": "b",
-              "text": "$Ks\\sin^2\\theta+C\\cos\\theta$"
+              "text": "\\(Ks\\sin^2\\theta + C\\cos\\theta\\)"
             },
             {
               "key": "c",
-              "text": "$Ks\\sin(2\\theta)+C\\sin\\theta$"
+              "text": "\\(Ks\\sin 2\\theta + C\\sin\\theta\\)"
             },
             {
               "key": "d",
-              "text": "$Ks\\cos^2\\theta+C\\cos\\theta$"
+              "text": "\\(Ks\\cos^2\\theta + C\\cos\\theta\\)"
             }
           ],
           "answer": "a",
-          "explanation": "The horizontal distance is \\[D = Ks\\cos^2\\theta + C\\cos\\theta\\] Multiplying by \\(\\tan\\theta\\) gives the vertical component: \\[V = \\dfrac{Ks\\sin 2\\theta}{2} + C\\sin\\theta\\] Ground elevation additionally requires the axis elevation and the central staff reading.<p>Source note: p5 n102: full page text supplies denominator 2 omitted from the point extraction. The formula is a vertical component, not a complete ground RL.</p><p>Capsule 4th ed., p. 5; topic 1 point 102.</p>",
+          "explanation": "For an inclined sight to a vertical staff, the vertical component used to calculate the elevation is \\[V = \\dfrac{Ks\\sin 2\\theta}{2} + C\\sin\\theta\\] The horizontal distance is \\(Ks\\cos^2\\theta + C\\cos\\theta\\).<p>Capsule 4th ed., p. 5; topic 1 point 102.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5448,12 +5448,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00109",
           "src": "CAP4-01-00109",
-          "text": "A tacheometer's axis is at RL 150.000 m. With a vertical staff, K = 100, C = 0, intercept 2.000 m, elevation angle 30 degrees and central reading 1.500 m, what is the staff-foot RL?",
+          "text": "A tacheometer's axis is at RL 150.000 m. With a vertical staff, \\(K = 100\\), \\(C = 0\\), staff intercept 2.000 m, elevation angle \\(30^\\circ\\) and central reading 1.500 m, the RL of the staff station is ______.",
           "options": [
             {
               "key": "a",
@@ -5511,7 +5511,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Each correction is the negative of its total misclosure multiplied by the side's share of the perimeter (corrections in metres): \\[\\dfrac{120}{600} = 0.20\\] \\[\\begin{aligned} c_{\\text{lat}} &amp;= -0.30 \\times 0.20 = -0.06 \\\\ c_{\\text{dep}} &amp;= +0.20 \\times 0.20 = +0.04 \\end{aligned}\\] The departure correction is positive because its misclosure is negative.<p>Source note: p5 n122: made the correction sign explicit; the correction opposes the corresponding misclosure.</p><p>Capsule 4th ed., p. 5; topic 1 point 122.</p>",
+          "explanation": "Each correction is the negative of its total misclosure multiplied by the side's share of the perimeter (corrections in metres): \\[\\dfrac{120}{600} = 0.20\\] \\[\\begin{aligned} c_{\\text{lat}} &amp;= -0.30 \\times 0.20 = -0.06 \\\\ c_{\\text{dep}} &amp;= +0.20 \\times 0.20 = +0.04 \\end{aligned}\\] The departure correction is positive because its misclosure is negative.<p>Capsule 4th ed., p. 5; topic 1 point 122.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5529,27 +5529,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00138",
           "src": "CAP4-01-00138",
-          "text": "A large-scale engineering contour plan needs finer terrain detail than a small-scale regional map. Which choice is generally appropriate, subject to relief and survey accuracy?",
+          "text": "How is the contour interval related to the scale of the map?",
           "options": [
             {
               "key": "a",
-              "text": "A larger interval solely because the drawing is larger"
+              "text": "It is directly proportional to the scale"
             },
             {
               "key": "b",
-              "text": "A smaller contour interval for the detailed plan"
+              "text": "It is inversely proportional to the scale"
             },
             {
               "key": "c",
-              "text": "A fixed interval regardless of purpose and terrain"
+              "text": "It is independent of the scale"
             },
             {
               "key": "d",
-              "text": "An interval determined exactly by scale with no accuracy check"
+              "text": "It is equal to the scale"
             }
           ],
           "answer": "b",
-          "explanation": "Large-scale plans often use smaller contour intervals to show detail. Terrain, purpose, accuracy and cost also matter; the interval is not governed by an exact universal inverse-proportion equation with map scale.<p>Source note: p5 n131: replaced exact inverse proportionality with a qualified design tendency.</p><p>Capsule 4th ed., p. 5; topic 1 point 131.</p>",
+          "explanation": "The contour interval is inversely proportional to the scale of the map: a large-scale map uses a small contour interval to show detail, while a small-scale map uses a larger interval.<p>Capsule 4th ed., p. 5; topic 1 point 131.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5562,32 +5562,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00139",
           "src": "CAP4-01-00139",
-          "text": "A 2.00 m subtense bar is centred perpendicular to a horizontal line of sight and subtends a total angle of 1.00 degree. What is the horizontal distance to its centre?",
+          "text": "Short distances of up to ______ are typically determined by a subtense bar.",
           "options": [
             {
               "key": "a",
-              "text": "229.18 m"
+              "text": "500 to 1000 m"
             },
             {
               "key": "b",
-              "text": "57.29 m"
+              "text": "20 to 30 m"
             },
             {
               "key": "c",
-              "text": "114.59 m"
+              "text": "150 to 200 m"
             },
             {
               "key": "d",
-              "text": "200.00 m"
+              "text": "2 to 3 km"
             }
           ],
           "answer": "c",
-          "explanation": "Half the 2.00 m bar, 1.00 m, and half the subtended angle, \\(0.50^\\circ\\), form a right triangle, so the distance in metres is \\[D = \\dfrac{1.00}{\\tan 0.50^\\circ} = 114.58865\\] Using the full angle instead of the half-angle halves the result approximately.<p>Source note: p5 n132: 150-200 m is a typical teaching range, not a hard physical limit. Precision depends on bar geometry and angular measurement; the authored geometry is explicit.</p><p>Capsule 4th ed., p. 5; topic 1 point 132.</p>",
+          "explanation": "A subtense bar, usually 2 m long, is used with a theodolite to determine short distances of up to about 150 to 200 m, particularly over rough ground where chaining is difficult.<p>Capsule 4th ed., p. 5; topic 1 point 132.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5600,32 +5600,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00152",
           "src": "CAP4-01-00152",
-          "text": "A closed parcel has successive coordinates (0,0), (40,0), (30,20) and (0,20), all in metres. What area follows from the coordinate method?",
+          "text": "The accurate method of plotting a traverse and computing its area is the ______ method.",
           "options": [
             {
               "key": "a",
-              "text": "800 m<sup>2</sup>"
+              "text": "Protractor (angle and distance)"
             },
             {
               "key": "b",
-              "text": "700 m<sup>2</sup>"
+              "text": "Co-ordinate"
             },
             {
               "key": "c",
-              "text": "600 m<sup>2</sup>"
+              "text": "Tangent"
             },
             {
               "key": "d",
-              "text": "1,400 m<sup>2</sup>"
+              "text": "Chord"
             }
           ],
           "answer": "b",
-          "explanation": "The shoelace sums are 1,400 and 0 m<sup>2</sup>, so \\[A = \\dfrac{\\lvert 1{,}400 - 0 \\rvert}{2} = 700\\ \\text{m}^2\\] Coordinates avoid graphical measurement errors, but their accuracy still depends on field measurements, control and adjustment.<p>Source note: p6 n145: distinguished numerical coordinate-area computation from a claim that plotting can repair inaccurate survey data.</p><p>Capsule 4th ed., p. 6; topic 1 point 145.</p>",
+          "explanation": "In the co-ordinate method each station is plotted from its computed co-ordinates, so plotting errors do not accumulate from line to line; it is the accurate method of plotting a traverse and of computing its area.<p>Capsule 4th ed., p. 6; topic 1 point 145.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5638,32 +5638,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00155",
           "src": "CAP4-01-00155",
-          "text": "Which surveying operation most directly establishes the elevation difference between two ground points using a horizontal sight line and staff readings?",
+          "text": "Levelling is used to determine the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Linear chaining alone"
+              "text": "Bearing of a line"
             },
             {
               "key": "b",
-              "text": "Differential levelling"
+              "text": "Difference in elevation between points"
             },
             {
               "key": "c",
-              "text": "Cadastral boundary adjudication"
+              "text": "Area of a plot"
             },
             {
               "key": "d",
-              "text": "Magnetic traversing"
+              "text": "Horizontal distance between points"
             }
           ],
           "answer": "b",
-          "explanation": "Levelling transfers elevations or determines their differences relative to a datum. Chaining measures lengths and magnetic traversing establishes directions; neither alone supplies the same vertical-control observation.<p>Capsule 4th ed., p. 6; topic 1 point 148.</p>",
+          "explanation": "Levelling determines the difference in elevation between points, from which their reduced levels are found. Horizontal distances are found by chaining or EDM, and bearings by compass or theodolite.<p>Capsule 4th ed., p. 6; topic 1 point 148.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5676,32 +5676,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00156",
           "src": "CAP4-01-00156",
-          "text": "A surveyor needs to place an intermediate ranging rod on the straight line between two visible end rods. Which task is a line ranger designed to assist?",
+          "text": "The line ranger is not used for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Measuring a staff's vertical reduced level"
+              "text": "Aligning points between two end stations"
             },
             {
               "key": "b",
-              "text": "Measuring a parcel's magnetic declination"
+              "text": "Locating a point on a survey line"
             },
             {
               "key": "c",
-              "text": "Alignment of the intermediate rod"
+              "text": "Measuring perpendicular offsets"
             },
             {
               "key": "d",
-              "text": "Setting a right-angle offset from the line"
+              "text": "Ranging an intermediate point on a line"
             }
           ],
           "answer": "c",
-          "explanation": "A line ranger assists in locating intermediate points on a straight survey line. An optical square or cross-staff helps establish perpendicular offsets; the ability to align points does not imply a right-angle-setting function.<p>Capsule 4th ed., p. 6; topic 1 point 149.</p>",
+          "explanation": "A line ranger is used to locate intermediate points on a survey line between two end stations. It is not used for measuring perpendicular offsets, which are set out with an optical square or a cross staff.<p>Capsule 4th ed., p. 6; topic 1 point 149.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5714,32 +5714,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00157",
           "src": "CAP4-01-00157",
-          "text": "Which optical principle allows a conventional mirror optical square to establish a right-angle sight?",
+          "text": "The construction of an optical square is based on the principle of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Single refraction through a convex lens"
+              "text": "Single refraction"
             },
             {
               "key": "b",
-              "text": "Total internal reflection in a water level"
+              "text": "Total internal reflection"
             },
             {
               "key": "c",
-              "text": "Diffraction through a narrow slit"
+              "text": "Double refraction"
             },
             {
               "key": "d",
-              "text": "Successive reflection at two plane mirrors"
+              "text": "Double reflection"
             }
           ],
           "answer": "d",
-          "explanation": "An optical square uses double reflection: the angular deviation between the incident and emergent directions is twice the angle between the mirrors. Appropriate mirror setting therefore establishes a right angle.<p>Capsule 4th ed., p. 6; topic 1 point 150.</p>",
+          "explanation": "An optical square has two mirrors inclined at 45°. A ray reflected by both mirrors is turned through twice this angle, 90°, so the instrument works on the principle of double reflection.<p>Capsule 4th ed., p. 6; topic 1 point 150.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5752,20 +5752,20 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00158",
           "src": "CAP4-01-00158",
-          "text": "All detail points are visible from one plane-table station, and their distances from that station can be measured. Which method plots them using rays from the single setup?",
+          "text": "The technique of plotting all the accessible stations from a single setup of the plane table is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Resection from known points"
+              "text": "Resection"
             },
             {
               "key": "b",
-              "text": "Intersection from two stations"
+              "text": "Intersection"
             },
             {
               "key": "c",
@@ -5773,11 +5773,11 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "d",
-              "text": "Closed traversing around the boundary"
+              "text": "Traversing"
             }
           ],
           "answer": "c",
-          "explanation": "Radiation draws a ray toward each visible point and plots the measured distance to scale. Intersection uses rays from separate stations, while resection determines the instrument station from already plotted control.<p>Capsule 4th ed., p. 6; topic 1 point 151.</p>",
+          "explanation": "In radiation, the plane table is set up at one station, rays are drawn to each accessible point and their measured distances are plotted along the rays. Intersection is used for inaccessible points, resection for locating the table's own station, and traversing for a series of stations.<p>Capsule 4th ed., p. 6; topic 1 point 151.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5790,28 +5790,28 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00159",
           "src": "CAP4-01-00159",
-          "text": "A conventional two-mirror optical square must turn the sight direction through 90 degrees by double reflection. What angle should separate the mirror planes?",
+          "text": "The angle between the two plane mirrors of an optical square is ______.",
           "options": [
             {
               "key": "a",
-              "text": "90 degrees"
+              "text": "90°"
             },
             {
               "key": "b",
-              "text": "30 degrees"
+              "text": "30°"
             },
             {
               "key": "c",
-              "text": "45 degrees"
+              "text": "45°"
             },
             {
               "key": "d",
-              "text": "60 degrees"
+              "text": "60°"
             }
           ],
           "answer": "c",
@@ -5828,12 +5828,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00160",
           "src": "CAP4-01-00160",
-          "text": "A cadastral crew needs an instrument that electronically observes angles and distances and records boundary-point coordinates and identifiers. Which instrument directly combines these functions?",
+          "text": "The instrument used in digital cadastral survey is the ______.",
           "options": [
             {
               "key": "a",
@@ -5841,7 +5841,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "b",
-              "text": "Optical square"
+              "text": "Plane table"
             },
             {
               "key": "c",
@@ -5853,7 +5853,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "A total station combines electronic angular and distance measurements with data recording for coordinate-based cadastral work. Control, boundary evidence and legal procedures remain necessary; other digital survey technologies can also be used.<p>Source note: p6 n153: total station is an appropriate instrument, not the sole permitted technology for every digital cadastral survey.</p><p>Capsule 4th ed., p. 6; topic 1 point 153.</p>",
+          "explanation": "Digital cadastral surveys use the total station, which measures angles and distances electronically and records the coordinates of boundary points directly in digital form.<p>Capsule 4th ed., p. 6; topic 1 point 153.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5866,12 +5866,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00161",
           "src": "CAP4-01-00161",
-          "text": "In a conventional completed levelling setup, the last staff reading is taken before the instrument is moved. How is that reading classified?",
+          "text": "The last reading of levelling is always a ______.",
           "options": [
             {
               "key": "a",
@@ -5883,7 +5883,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "c",
-              "text": "Benchmark elevation"
+              "text": "Reduced level"
             },
             {
               "key": "d",
@@ -5891,7 +5891,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "A foresight is the final reading before moving or ending the setup. If the point is a change point, it receives a backsight after the next setup; classification depends on observation role rather than compass direction.<p>Capsule 4th ed., p. 6; topic 1 point 154.</p>",
+          "explanation": "A levelling run always ends with a foresight, just as it always begins with a backsight on a point of known level; the readings in between are intermediate sights and change-point readings.<p>Capsule 4th ed., p. 6; topic 1 point 154.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5904,32 +5904,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00162",
           "src": "CAP4-01-00162",
-          "text": "Which levelling reduction method explicitly tabulates rises and falls between successive ground points and permits the check that net rise equals final RL minus initial RL?",
+          "text": "The rise and fall method is used in ______.",
           "options": [
             {
               "key": "a",
-              "text": "Height-of-collimation method alone"
+              "text": "Reciprocal levelling only"
             },
             {
               "key": "b",
-              "text": "Stadia-distance method"
+              "text": "Barometric levelling only"
             },
             {
               "key": "c",
-              "text": "Magnetic-bearing method"
+              "text": "Trigonometric levelling only"
             },
             {
               "key": "d",
-              "text": "Rise-and-fall method"
+              "text": "Differential levelling and check levelling"
             }
           ],
           "answer": "d",
-          "explanation": "The rise-and-fall method compares consecutive appropriate staff readings and checks sum rises minus sum falls against both sum BS minus sum FS and the endpoint RL difference. It is useful in differential and check levelling; change-point readings from different setups must not be compared as a ground rise.<p>Capsule 4th ed., p. 6; topic 1 point 155.</p>",
+          "explanation": "The rise and fall method is used in differential levelling and check levelling, because it provides a complete arithmetic check on all the readings, including the intermediate sights.<p>Capsule 4th ed., p. 6; topic 1 point 155.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5942,32 +5942,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-03-00019",
           "src": "CAP4-03-00019",
-          "text": "A surveying level's bubble tube has a stated curvature radius of 100 m and 2 mm graduations. For a small tilt moving the bubble by one division, what is the approximate angular change?",
+          "text": "The radius of curvature of the arc of a bubble tube is generally kept ______.",
           "options": [
             {
               "key": "a",
-              "text": "20 microradians"
+              "text": "100 m"
             },
             {
               "key": "b",
-              "text": "0.2 microradians"
+              "text": "1000 m"
             },
             {
               "key": "c",
-              "text": "2 microradians"
+              "text": "10 m"
             },
             {
               "key": "d",
-              "text": "200 microradians"
+              "text": "1 m"
             }
           ],
           "answer": "a",
-          "explanation": "For a circular arc \\(s = R\\theta\\). With \\(s = 0.002\\) m and \\(R = 100\\) m, \\[\\theta = \\dfrac{0.002}{100} = 0.00002\\ \\text{rad}\\] that is, 20 microradians. A larger radius gives a larger bubble movement for the same tilt.<p>Source note: p11 n16 belongs to surveying. The 100 m value is a stated example, not a universal bubble-tube specification; source supplies no instrument standard.</p><p>Capsule 4th ed., p. 11; topic 3 point 16.</p>",
+          "explanation": "The inner surface of a level's bubble tube is ground to a large radius of curvature, generally about 100 m, so that a small tilt moves the bubble a readable distance; a larger radius makes the tube more sensitive.<p>Capsule 4th ed., p. 11; topic 3 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5980,7 +5980,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0105",
-          "kind": "calculation"
+          "kind": "recall"
         }
       ]
     },
@@ -5992,27 +5992,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00045",
           "src": "CAP4-01-00045",
-          "text": "A preliminary building estimate uses a comparable project's cost per square metre. Which comparator is most defensible before adjusting its rate?",
+          "text": "A plinth area estimate is prepared on the basis of the ______ of the building.",
           "options": [
             {
               "key": "a",
-              "text": "Local building with much higher finishes and no adjustment"
+              "text": "Cubical content"
             },
             {
               "key": "b",
-              "text": "Older building using its original rate without price adjustment"
+              "text": "Number of rooms"
             },
             {
               "key": "c",
-              "text": "Similar local building with comparable height and specifications"
+              "text": "Plinth area"
             },
             {
               "key": "d",
-              "text": "Distant building with different services but equal floor area"
+              "text": "Carpet area"
             }
           ],
           "answer": "c",
-          "explanation": "A plinth-area rate is meaningful when locality, height, construction, specifications and price level are comparable or adjusted. Equal area alone does not establish comparable cost; this is a preliminary estimate, not a detailed take-off.<p>Capsule 4th ed., p. 3; topic 1 point 43.</p>",
+          "explanation": "A plinth area estimate is prepared by multiplying the plinth area of the building by a rate per unit plinth area. A cube rate estimate uses the cubical content instead, and a service unit estimate uses the number of units such as rooms or beds.<p>Capsule 4th ed., p. 3; topic 1 point 43.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6025,32 +6025,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00046",
           "src": "CAP4-01-00046",
-          "text": "A building has a plinth area of 180 m<sup>2</sup>. Using an adjusted comparable rate of Rs. 32,000 per m<sup>2</sup>, with no separate additions, what is its plinth-area estimate?",
+          "text": "In a plinth area estimate, the rate per unit plinth area is decided from ______.",
           "options": [
             {
               "key": "a",
-              "text": "Rs. 576,000"
+              "text": "The current market rates of cement and steel only"
             },
             {
               "key": "b",
-              "text": "Rs. 6,400,000"
+              "text": "The contractor's quoted rate for earthwork"
             },
             {
               "key": "c",
-              "text": "Rs. 5,400,000"
+              "text": "The land value of the plot in the locality"
             },
             {
               "key": "d",
-              "text": "Rs. 5,760,000"
+              "text": "The cost of a similar building with similar specifications, height and construction in the locality"
             }
           ],
           "answer": "d",
-          "explanation": "The estimate is the plinth area multiplied by the adjusted rate: \\[180 \\times 32{,}000 = \\text{Rs. } 5{,}760{,}000\\] Separate services, contingencies or site works would be added only if excluded from the supplied rate and required by the estimating basis.<p>Capsule 4th ed., p. 3; topic 1 point 43.</p>",
+          "explanation": "In a plinth area estimate, the rate is decided from the cost of a similar building having similar specifications, height and construction in the same locality. The estimate is then the plinth area multiplied by this rate.<p>Capsule 4th ed., p. 3; topic 1 point 43.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6063,32 +6063,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00055",
           "src": "CAP4-01-00055",
-          "text": "A feasibility estimate explicitly assumes carpet area equals 60% of a 200 m<sup>2</sup> plinth area. What carpet area should be used under that assumption?",
+          "text": "The carpet area of a residential building is ______ of its plinth area.",
           "options": [
             {
               "key": "a",
-              "text": "120 m<sup>2</sup>"
+              "text": "50–65%"
             },
             {
               "key": "b",
-              "text": "333.3 m<sup>2</sup>"
+              "text": "10–20%"
             },
             {
               "key": "c",
-              "text": "130 m<sup>2</sup>"
+              "text": "75–90%"
             },
             {
               "key": "d",
-              "text": "80 m<sup>2</sup>"
+              "text": "30–40%"
             }
           ],
           "answer": "a",
-          "explanation": "The assumed carpet area is \\[A = 0.60 \\times 200 = 120\\ \\text{m}^2\\] Carpet and plinth areas have different inclusions; their ratio varies with walls, circulation and layout rather than following a universal residential percentage.<p>Source note: p3 n52: the source&#39;s 50-65% range is treated as a preliminary heuristic only, not a measurement rule.</p><p>Capsule 4th ed., p. 3; topic 1 point 52.</p>",
+          "explanation": "The carpet area, the usable floor area of the rooms, of a residential building is about 50–65% of its plinth area. The rest of the plinth area is taken up by walls, circulation spaces and service areas.<p>Capsule 4th ed., p. 3; topic 1 point 52.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6101,32 +6101,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00110",
           "src": "CAP4-01-00110",
-          "text": "For 1.00 m<sup>3</sup> of concrete proportioned 1:1.5:3 by loose volume, use dry-volume factor 1.54, cement bulk density 1,440 kg/m<sup>3</sup> and 50 kg bags. What is the theoretical cement requirement to two decimals, before procurement rounding?",
+          "text": "For 1 m<sup>3</sup> of 1 : 1.5 : 3 PCC, the number of bags of cement required is ______.",
           "options": [
             {
               "key": "a",
-              "text": "8.06 bags"
+              "text": "8 bags"
             },
             {
               "key": "b",
-              "text": "9.24 bags"
+              "text": "11 bags"
             },
             {
               "key": "c",
-              "text": "5.24 bags"
+              "text": "4.4 bags"
             },
             {
               "key": "d",
-              "text": "8.00 bags"
+              "text": "6.4 bags"
             }
           ],
           "answer": "a",
-          "explanation": "The proportion sum is \\(1 + 1.5 + 3 = 5.5\\). The cement volume, mass and bag count are \\[\\begin{aligned} V_c &amp;= \\dfrac{1.54}{5.5} = 0.28\\ \\text{m}^3 \\\\ m_c &amp;= 0.28 \\times 1{,}440 = 403.2\\ \\text{kg} \\\\ n &amp;= \\dfrac{403.2}{50} = 8.064 \\end{aligned}\\] so the theoretical requirement is 8.06 bags. Whole-bag procurement is a separate rounding decision.<p>Source note: p5 n103: eight bags is approximate and requires unstated bulk-volume assumptions; those assumptions and rounding are now explicit.</p><p>Capsule 4th ed., p. 5; topic 1 point 103.</p>",
+          "explanation": "Taking a dry-volume factor of 1.54, the cement in 1 m<sup>3</sup> of 1 : 1.5 : 3 concrete is \\(\\dfrac{1.54}{5.5} = 0.28\\ \\text{m}^3\\). At 0.0347 m<sup>3</sup> per 50 kg bag, this is about 8 bags.<p>Capsule 4th ed., p. 5; topic 1 point 103.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6139,32 +6139,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00111",
           "src": "CAP4-01-00111",
-          "text": "An estimate allows binding wire at 1 kg per quintal of reinforcement, where one quintal is 100 kg. What wire quantity is allowed for 600 kg of reinforcement?",
+          "text": "The quantity of binding wire required for 1 quintal of reinforcement is ______.",
           "options": [
             {
               "key": "a",
-              "text": "12 kg"
+              "text": "10 kg"
             },
             {
               "key": "b",
-              "text": "60 kg"
+              "text": "5 kg"
             },
             {
               "key": "c",
-              "text": "6 kg"
+              "text": "1 kg"
             },
             {
               "key": "d",
-              "text": "0.6 kg"
+              "text": "2 kg"
             }
           ],
           "answer": "c",
-          "explanation": "The stated allowance is 1% of reinforcement mass. Thus \\[\\dfrac{600}{100} \\times 1 = 6\\ \\text{kg}\\] Actual usage varies with bar sizes, spacing, ties and wastage; this is an estimating allowance rather than a universal consumption law.<p>Capsule 4th ed., p. 5; topic 1 point 104.</p>",
+          "explanation": "Binding wire is allowed at 1 kg per quintal (100 kg) of reinforcement, which is about 1% of the weight of the steel.<p>Capsule 4th ed., p. 5; topic 1 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6177,32 +6177,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00112",
           "src": "CAP4-01-00112",
-          "text": "In the long-wall short-wall method, centre-line lengths are 6.0 m and 4.0 m and the course width is 0.30 m. What are the long-wall out-to-out and short-wall in-to-in lengths?",
+          "text": "In the long wall–short wall method, the length of the long wall is equal to ______.",
           "options": [
             {
               "key": "a",
-              "text": "6.60 m and 3.40 m"
+              "text": "Centre-line length plus half the breadth of the wall"
             },
             {
               "key": "b",
-              "text": "6.30 m and 3.70 m"
+              "text": "Centre-line length plus the breadth of the wall"
             },
             {
               "key": "c",
-              "text": "5.70 m and 4.30 m"
+              "text": "Centre-line length minus the breadth of the wall"
             },
             {
               "key": "d",
-              "text": "6.00 m and 4.00 m"
+              "text": "Centre-line length only"
             }
           ],
           "answer": "b",
-          "explanation": "For this simple rectangular course, add one course width to the long-wall centre-line length and subtract one from the short wall: \\[L_{\\text{long}} = 6.0 + 0.30 = 6.30\\ \\text{m}\\] \\[L_{\\text{short}} = 4.0 - 0.30 = 3.70\\ \\text{m}\\] Recalculate when course widths change.<p>Capsule 4th ed., p. 5; topic 1 point 105.</p>",
+          "explanation": "In the long wall–short wall method, the length of the long wall (out to out) is its centre-line length plus one breadth of the wall, and the length of the short wall (in to in) is its centre-line length minus one breadth.<p>Capsule 4th ed., p. 5; topic 1 point 105.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6215,32 +6215,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00113",
           "src": "CAP4-01-00113",
-          "text": "A scheduling exercise assumes foundation brickwork productivity of 1.25 m<sup>3</sup> per mason-day with the required helpers supplied. How many mason-days are needed for 10 m<sup>3</sup>?",
+          "text": "The quantity of brickwork with mortar in foundation done per mason per day is ______.",
           "options": [
             {
               "key": "a",
-              "text": "8 mason-days"
+              "text": "1.25 m<sup>3</sup>"
             },
             {
               "key": "b",
-              "text": "4 mason-days"
+              "text": "5.0 m<sup>3</sup>"
             },
             {
               "key": "c",
-              "text": "12.5 mason-days"
+              "text": "0.5 m<sup>3</sup>"
             },
             {
               "key": "d",
-              "text": "10 mason-days"
+              "text": "2.5 m<sup>3</sup>"
             }
           ],
           "answer": "a",
-          "explanation": "Required mason-days equal volume divided by output per mason-day: \\[\\dfrac{10}{1.25} = 8\\] This assumes the stated crew support and conditions; actual output depends on wall details, access, handling and workmanship.<p>Source note: p5 n106: the stated outturn is a problem assumption, not a verified universal labour norm.</p><p>Capsule 4th ed., p. 5; topic 1 point 106.</p>",
+          "explanation": "The out-turn for brickwork in mortar in foundation is taken as 1.25 m<sup>3</sup> per mason per day. For comparison, the out-turn for 1 : 2 : 4 cement concrete is about 5.0 m<sup>3</sup> per day.<p>Capsule 4th ed., p. 5; topic 1 point 106.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6253,12 +6253,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00114",
           "src": "CAP4-01-00114",
-          "text": "An engineer assesses the fair value of an existing property at a specified date using its condition, income and market evidence. What is this activity?",
+          "text": "The process of determining the fair price or value of a property is known as ______.",
           "options": [
             {
               "key": "a",
@@ -6266,11 +6266,11 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "b",
-              "text": "Quantity taking-off"
+              "text": "Estimation"
             },
             {
               "key": "c",
-              "text": "Construction setting-out"
+              "text": "Depreciation"
             },
             {
               "key": "d",
@@ -6278,7 +6278,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Valuation estimates property value for a defined purpose and date. An estimate predicts construction cost, while rate analysis develops a unit cost; neither is automatically equal to market value.<p>Capsule 4th ed., p. 5; topic 1 point 107.</p>",
+          "explanation": "Valuation is the process of determining the fair price or value of a property. Estimation finds the probable cost of construction, rate analysis works out the unit rate of an item, and depreciation is the loss in value with time.<p>Capsule 4th ed., p. 5; topic 1 point 107.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6291,12 +6291,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00115",
           "src": "CAP4-01-00115",
-          "text": "A 2 m<sup>3</sup> concrete batch has density 2,350 kg/m<sup>3</sup>, total aggregate mass 3,860 kg and water-cement mass ratio 0.40. Ignoring other constituents, how many 50 kg cement bags does mass balance require?",
+          "text": "How many cement bags are required if the overall density is 2350 kg/m<sup>3</sup>, aggregate is 3860 kg, the water–cement ratio is 0.4 and the volume of concrete is 2 m<sup>3</sup>?",
           "options": [
             {
               "key": "a",
@@ -6334,27 +6334,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00116",
           "src": "CAP4-01-00116",
-          "text": "A bill of quantities specifies half-brick partition masonry as an area item with thickness stated separately. Which unit should be used for that item?",
+          "text": "A half brick wall is measured in ______ rather than in cubic metres.",
           "options": [
             {
               "key": "a",
-              "text": "m"
+              "text": "Numbers"
             },
             {
               "key": "b",
-              "text": "m<sup>2</sup>"
+              "text": "Square metres"
             },
             {
               "key": "c",
-              "text": "kg"
+              "text": "Kilograms"
             },
             {
               "key": "d",
-              "text": "m<sup>3</sup>"
+              "text": "Running metres"
             }
           ],
           "answer": "b",
-          "explanation": "Thin partition masonry is commonly billed by area when its thickness is fixed in the item description. Volume is usual for thicker masonry; the governing measurement specification must determine the actual billing rule.<p>Source note: p5 n109: replaced &#39;not in cumes&#39; with an explicit area-item measurement basis rather than an exceptionless rule.</p><p>Capsule 4th ed., p. 5; topic 1 point 109.</p>",
+          "explanation": "A half brick wall is not measured in cubic metres; such thin walls and partitions are measured by area, in square metres, with the thickness stated in the description.<p>Capsule 4th ed., p. 5; topic 1 point 109.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6367,32 +6367,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00117",
           "src": "CAP4-01-00117",
-          "text": "A mix uses 2.00 m<sup>3</sup> of loose cement at bulk density 1,440 kg/m<sup>3</sup>. If the water-cement mass ratio is 0.80 and water density is 1 kg/L, what mixing-water volume is required?",
+          "text": "If the water–cement ratio is 0.8 and the volume of cement is 2 m<sup>3</sup>, the volume of water required is ______.",
           "options": [
             {
               "key": "a",
-              "text": "1,600 L"
+              "text": "1600 litres"
             },
             {
               "key": "b",
-              "text": "2,304 L"
+              "text": "2304 litres"
             },
             {
               "key": "c",
-              "text": "5,040 L"
+              "text": "5040 litres"
             },
             {
               "key": "d",
-              "text": "3,600 L"
+              "text": "3600 litres"
             }
           ],
           "answer": "b",
-          "explanation": "Cement and water masses, in kilograms, are \\[\\begin{aligned} m_c &amp;= 2.00 \\times 1{,}440 = 2{,}880 \\\\ m_w &amp;= 0.80 \\times 2{,}880 = 2{,}304 \\end{aligned}\\] giving 2,304 L. The ratio is by mass; loose bulk density must not be confused with cement particle density.<p>Source note: p5 n110: supplied the missing loose bulk density needed to justify 2,304 litres.</p><p>Capsule 4th ed., p. 5; topic 1 point 110.</p>",
+          "explanation": "Cement and water masses, in kilograms, are \\[\\begin{aligned} m_c &amp;= 2.00 \\times 1{,}440 = 2{,}880 \\\\ m_w &amp;= 0.80 \\times 2{,}880 = 2{,}304 \\end{aligned}\\] giving 2,304 L. The ratio is by mass; loose bulk density must not be confused with cement particle density.<p>Capsule 4th ed., p. 5; topic 1 point 110.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6410,27 +6410,27 @@ window.CIVIL_SET_DATA["capsule-01"] = {
         {
           "id": "CAP4-01-00118",
           "src": "CAP4-01-00118",
-          "text": "A supported mason-led crew is assumed to place 5.0 m<sup>3</sup> of 1:2:4 concrete per crew-day. At that output, how many crew-days are required for 20 m<sup>3</sup>?",
+          "text": "The expected out-turn of 1 : 2 : 4 cement concrete per mason per day is ______.",
           "options": [
             {
               "key": "a",
-              "text": "4 crew-days"
+              "text": "5.0 m<sup>3</sup>"
             },
             {
               "key": "b",
-              "text": "10 crew-days"
+              "text": "2.5 m<sup>3</sup>"
             },
             {
               "key": "c",
-              "text": "100 crew-days"
+              "text": "10.0 m<sup>3</sup>"
             },
             {
               "key": "d",
-              "text": "5 crew-days"
+              "text": "1.25 m<sup>3</sup>"
             }
           ],
           "answer": "a",
-          "explanation": "\\[\\text{crew-days} = \\dfrac{20}{5.0} = 4\\] The assumed output includes appropriate mixing, transport and labour support; it is not an intrinsic property of the 1:2:4 mix or proof that one unaided mason achieves it.<p>Source note: p5 n111: clarified the incomplete labour unit and treated 5 m3/day as a stated scheduling assumption.</p><p>Capsule 4th ed., p. 5; topic 1 point 111.</p>",
+          "explanation": "The out-turn of 1 : 2 : 4 cement concrete is taken as 5.0 m<sup>3</sup> per mason per day, with the necessary labourers. Brickwork in foundation, by comparison, is about 1.25 m<sup>3</sup> per mason per day.<p>Capsule 4th ed., p. 5; topic 1 point 111.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6443,12 +6443,12 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00119",
           "src": "CAP4-01-00119",
-          "text": "At a loose bulk density of 1,440 kg/m<sup>3</sup>, what approximate bulk volume does a 50 kg cement bag represent?",
+          "text": "The volume of cement in one 50 kg bag is ______.",
           "options": [
             {
               "key": "a",
@@ -6468,7 +6468,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Bulk volume is mass divided by bulk density: \\[V = \\dfrac{50}{1{,}440} = 0.034722\\ \\text{m}^3\\] Using particle density instead estimates solid-grain volume, not the loose volume including spaces between particles.<p>Source note: p5 n112: the 0.0347 value is conditional on loose bulk density, not an invariant bag dimension.</p><p>Capsule 4th ed., p. 5; topic 1 point 112.</p>",
+          "explanation": "Bulk volume is mass divided by bulk density: \\[V = \\dfrac{50}{1{,}440} = 0.034722\\ \\text{m}^3\\] Using particle density instead estimates solid-grain volume, not the loose volume including spaces between particles.<p>Capsule 4th ed., p. 5; topic 1 point 112.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6481,32 +6481,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00120",
           "src": "CAP4-01-00120",
-          "text": "A project's stated procedure requires a revised estimate when the forecast exceeds the sanctioned cost by more than 5%. Sanctioned cost is Rs. 1,000,000 and the updated forecast is Rs. 1,080,000. What follows?",
+          "text": "A revised estimate is prepared when the original sanctioned estimate is exceeded by more than ______.",
           "options": [
             {
               "key": "a",
-              "text": "A 5% overrun exactly meets the trigger"
+              "text": "10%"
             },
             {
               "key": "b",
-              "text": "An 8% overrun triggers a revised estimate"
+              "text": "5%"
             },
             {
               "key": "c",
-              "text": "A 0.8% overrun stays below the trigger"
+              "text": "2.5%"
             },
             {
               "key": "d",
-              "text": "An 8% overrun requires only the original estimate"
+              "text": "15%"
             }
           ],
           "answer": "b",
-          "explanation": "The forecast of Rs. 1,080,000 exceeds the sanctioned Rs. 1,000,000 by Rs. 80,000, so the overrun is \\[\\dfrac{80{,}000}{1{,}000{,}000} \\times 100 = 8\\%\\] This exceeds the stipulated 5% trigger for a revised estimate. Actual approval rules depend on the authority, contract and applicable procedures.<p>Source note: p5 n113: the source does not establish a current Nepal 5% rule; this threshold is explicitly supplied for the exercise.</p><p>Capsule 4th ed., p. 5; topic 1 point 113.</p>",
+          "explanation": "A revised estimate is a detailed estimate prepared when the original sanctioned estimate is likely to be exceeded by more than 5%, for example because of rate increases or changes in design.<p>Capsule 4th ed., p. 5; topic 1 point 113.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6519,32 +6519,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00121",
           "src": "CAP4-01-00121",
-          "text": "A project specifies actual brick dimensions of 240 mm x 115 mm x 57 mm, excluding mortar. What is the geometric volume of one such brick?",
+          "text": "As per NBC, the standard size of brick is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.00015732 m<sup>3</sup>"
+              "text": "250 mm × 125 mm × 75 mm"
             },
             {
               "key": "b",
-              "text": "0.0015732 m<sup>3</sup>"
+              "text": "240 mm × 115 mm × 57 mm"
             },
             {
               "key": "c",
-              "text": "0.0017100 m<sup>3</sup>"
+              "text": "230 mm × 110 mm × 70 mm"
             },
             {
               "key": "d",
-              "text": "0.015732 m<sup>3</sup>"
+              "text": "190 mm × 90 mm × 90 mm"
             }
           ],
           "answer": "b",
-          "explanation": "Convert each dimension to metres and multiply: \\[\\begin{aligned} V &amp;= 0.240 \\times 0.115 \\times 0.057 \\\\ &amp;= 0.0015732\\ \\text{m}^3 \\end{aligned}\\] This is the actual unit volume; masonry estimating also needs the specified joints and allowances.<p>Source note: p5 n115: the dimensions are stipulated, not certified as the universal NBC brick size. The source lacks an NBC edition and clause; parent should verify that attribution before code-based reuse.</p><p>Capsule 4th ed., p. 5; topic 1 point 115.</p>",
+          "explanation": "The Nepal National Building Code gives the standard size of brick as 240 mm × 115 mm × 57 mm. The modular size of 190 mm × 90 mm × 90 mm belongs to the Indian standard.<p>Capsule 4th ed., p. 5; topic 1 point 115.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6557,32 +6557,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00122",
           "src": "CAP4-01-00122",
-          "text": "A rate-analysis schedule explicitly allows tools and equipment at 3% of unskilled-labour cost. Unskilled labour costs Rs. 20,000 and skilled labour Rs. 30,000. What allowance follows?",
+          "text": "In rate analysis, the cost of tools and equipment is taken as ______ of the cost of unskilled labour.",
           "options": [
             {
               "key": "a",
-              "text": "Rs. 1,500"
+              "text": "5%"
             },
             {
               "key": "b",
-              "text": "Rs. 600"
+              "text": "3%"
             },
             {
               "key": "c",
-              "text": "Rs. 60"
+              "text": "10%"
             },
             {
               "key": "d",
-              "text": "Rs. 900"
+              "text": "1.5%"
             }
           ],
           "answer": "b",
-          "explanation": "The prescribed base is unskilled labour only: \\[0.03 \\times 20{,}000 = \\text{Rs. } 600\\] Applying 3% to skilled labour or total labour uses the wrong base; real schedules may prescribe different allowances or direct plant costing.<p>Source note: p5 n116: the 3% allowance is conditional on the supplied schedule, not a verified current general rate-analysis rule.</p><p>Capsule 4th ed., p. 5; topic 1 point 116.</p>",
+          "explanation": "In rate analysis, the cost of tools and equipment is allowed as 3% of the cost of unskilled labour and is added to the other costs of the item.<p>Capsule 4th ed., p. 5; topic 1 point 116.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6595,32 +6595,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00123",
           "src": "CAP4-01-00123",
-          "text": "A contract defines shallow surface dressing as clearing and trimming over a stated plan extent, with no separately measured excavation volume. Which measurement basis fits that item?",
+          "text": "Surface dressing is measured in ______.",
           "options": [
             {
               "key": "a",
-              "text": "Area in square metres"
+              "text": "Square metres"
             },
             {
               "key": "b",
-              "text": "Mass in kilograms"
+              "text": "Numbers"
             },
             {
               "key": "c",
-              "text": "Length in running metres"
+              "text": "Running metres"
             },
             {
               "key": "d",
-              "text": "Volume in cubic metres"
+              "text": "Cubic metres"
             }
           ],
           "answer": "a",
-          "explanation": "An area-based surface-dressing item is measured over its specified plan extent in m<sup>2</sup>. Depth limits, inclusions and exclusions come from the contract; deeper excavation may be a separate volume item.<p>Capsule 4th ed., p. 5; topic 1 point 117.</p>",
+          "explanation": "Surface dressing, the levelling of the ground surface by cutting and filling to a small depth, is measured by area in square metres.<p>Capsule 4th ed., p. 5; topic 1 point 117.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6633,32 +6633,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00124",
           "src": "CAP4-01-00124",
-          "text": "A project was estimated at Rs. 5.4 million and actually cost Rs. 5.0 million. Taking actual cost as the comparison base, by what percentage did the estimate exceed actual cost?",
+          "text": "The estimated cost of a project should not be greater than its actual cost by more than ______.",
           "options": [
             {
               "key": "a",
-              "text": "10%"
+              "text": "15%"
             },
             {
               "key": "b",
-              "text": "8%"
+              "text": "10%"
             },
             {
               "key": "c",
-              "text": "7.41%"
+              "text": "5%"
             },
             {
               "key": "d",
-              "text": "108%"
+              "text": "20%"
             }
           ],
           "answer": "b",
-          "explanation": "The difference is Rs. 0.4 million. Dividing by actual cost gives \\[\\dfrac{0.4}{5.0} \\times 100 = 8\\%\\] Dividing by estimated cost would answer a different question. An accuracy target is not a legal cost ceiling.<p>Source note: p5 n118: &#39;estimated cost should not be greater than 10% of actual cost&#39; is defective wording. No universal accuracy tolerance is asserted; percentage deviation is defined explicitly.</p><p>Capsule 4th ed., p. 5; topic 1 point 118.</p>",
+          "explanation": "A good estimate should be close to the actual cost: the estimated cost should not be greater than the actual cost of the project by more than 10%.<p>Capsule 4th ed., p. 5; topic 1 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6671,32 +6671,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00164",
           "src": "CAP4-01-00164",
-          "text": "Before tendering a proposed building, why does the engineer prepare a construction cost estimate?",
+          "text": "The purpose of an estimate is to find the ______ of a construction project.",
           "options": [
             {
               "key": "a",
-              "text": "To establish that later variations cannot occur"
+              "text": "Market value"
             },
             {
               "key": "b",
-              "text": "To assess probable expenditure for the defined scope"
+              "text": "Probable cost"
             },
             {
               "key": "c",
-              "text": "To guarantee the final market sale value of the property"
+              "text": "Actual cost"
             },
             {
               "key": "d",
-              "text": "To replace all drawings and technical specifications"
+              "text": "Rental value"
             }
           ],
           "answer": "b",
-          "explanation": "An estimate predicts probable construction cost for a stated scope, price basis and assumptions. It supports planning, approval and procurement but is not a guaranteed final price or a substitute for drawings and specifications.<p>Capsule 4th ed., p. 6; topic 1 point 157.</p>",
+          "explanation": "An estimate is prepared before construction to find the probable cost of a project. The actual cost is known only after completion, and market or rental value is found by valuation.<p>Capsule 4th ed., p. 6; topic 1 point 157.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6709,32 +6709,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00165",
           "src": "CAP4-01-00165",
-          "text": "Only the broad size and specification of a proposed project are known, and funding feasibility must be assessed. Which estimate is appropriate at this stage?",
+          "text": "A preliminary estimate is also known as a ______ estimate.",
           "options": [
             {
               "key": "a",
-              "text": "Preliminary or budget estimate"
+              "text": "Budget"
             },
             {
               "key": "b",
-              "text": "Detailed bill from fully measured drawings"
+              "text": "Revised"
             },
             {
               "key": "c",
-              "text": "Final account based on completed work"
+              "text": "Detailed"
             },
             {
               "key": "d",
-              "text": "Supplementary estimate for an approved extra item"
+              "text": "Supplementary"
             }
           ],
           "answer": "a",
-          "explanation": "A preliminary or budget estimate gives an early cost assessment from limited project information, often using area or unit rates. It precedes detailed quantity measurement and is distinct from a final account or an estimate for added scope.<p>Capsule 4th ed., p. 6; topic 1 point 158.</p>",
+          "explanation": "A preliminary, or budget, estimate is prepared at the start of a project to judge its financial feasibility and obtain administrative approval. The detailed estimate follows once the drawings are ready.<p>Capsule 4th ed., p. 6; topic 1 point 158.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6747,32 +6747,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00026",
           "src": "CAP4-05-00026",
-          "text": "An estimate explicitly adopts a dry loose ingredient volume factor of 1.54 for ordinary concrete. What dry ingredient volume is budgeted for 2.0 m<sup>3</sup> of finished concrete?",
+          "text": "To get the dry volume of concrete, the mixture of cement, sand and coarse aggregate is increased by ______.",
           "options": [
             {
               "key": "a",
-              "text": "3.08 m<sup>3</sup>"
+              "text": "50–55%"
             },
             {
               "key": "b",
-              "text": "2.54 m<sup>3</sup>"
+              "text": "20–25%"
             },
             {
               "key": "c",
-              "text": "1.30 m<sup>3</sup>"
+              "text": "30–35%"
             },
             {
               "key": "d",
-              "text": "1.08 m<sup>3</sup>"
+              "text": "70–75%"
             }
           ],
           "answer": "a",
-          "explanation": "Dry loose ingredient volume is estimated as \\[1.54 \\times 2.0 = 3.08\\ \\text{m}^3\\] The additional volume represents an estimating allowance for void filling and consolidation, not an exact physical constant or a substitute for measured batch yield.<p>Source note: Page 20 point 25&#39;s 50-55% increase is treated as an approximate estimating convention, with the chosen factor stated explicitly.</p><p>Capsule 4th ed., p. 20; topic 5 point 25.</p>",
+          "explanation": "Dry loose materials lose volume when mixed with water, as the voids are filled, so the dry volume of cement, sand and coarse aggregate is taken as the wet volume increased by 50–55%, about 1.54 times.<p>Capsule 4th ed., p. 20; topic 5 point 25.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6785,32 +6785,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-05-00045",
           "src": "CAP4-05-00045",
-          "text": "An estimate allows binding wire equal to 1% of reinforcement mass. For 750 kg of reinforcement, what binding-wire mass should be budgeted?",
+          "text": "The amount of binding wire required for 1 quintal of reinforcement work is ______.",
           "options": [
             {
               "key": "a",
-              "text": "1.0 kg"
+              "text": "10 kg"
             },
             {
               "key": "b",
-              "text": "0.75 kg"
+              "text": "0.1 kg"
             },
             {
               "key": "c",
-              "text": "75 kg"
+              "text": "5 kg"
             },
             {
               "key": "d",
-              "text": "7.5 kg"
+              "text": "1 kg"
             }
           ],
           "answer": "d",
-          "explanation": "One kilogram per metric quintal of 100 kg corresponds to 1% by mass. Applying the stated allowance gives \\[0.01 \\times 750 = 7.5\\ \\text{kg}\\] Actual use depends on bar size, tie pattern and wastage, so this is an estimating assumption rather than a structural requirement.<p>Source note: Page 20 point 44 is treated as an explicitly adopted allowance, not an exact quantity for every reinforcement cage.</p><p>Capsule 4th ed., p. 20; topic 5 point 44.</p>",
+          "explanation": "Binding wire is taken as 1 kg per quintal (100 kg) of reinforcement, that is, 1% of the weight of the steel.<p>Capsule 4th ed., p. 20; topic 5 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6823,16 +6823,16 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00019",
           "src": "CAP4-10-00019",
-          "text": "At the end of a building's useful service life, its remaining value is assessed for sale intact rather than as dismantled materials. Which valuation term fits this stated textbook convention?",
+          "text": "The estimated value of a built-up property at the end of its useful life, without being dismantled, is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Replacement cost"
+              "text": "Book value"
             },
             {
               "key": "b",
@@ -6840,7 +6840,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             },
             {
               "key": "c",
-              "text": "Capitalised rental value"
+              "text": "Market value"
             },
             {
               "key": "d",
@@ -6848,7 +6848,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Under this building-valuation convention, salvage is the residual value of the asset without dismantling, while scrap concerns recovered materials. Engineering-economy usage can define net disposal value differently, so the valuation basis is stated explicitly.<p>Capsule 4th ed., p. 38; topic 10 point 19.</p>",
+          "explanation": "Salvage value is the value of a property at the end of its useful life when sold as it stands, without dismantling; scrap value is the value of its materials after dismantling.<p>Capsule 4th ed., p. 38; topic 10 point 19.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6861,32 +6861,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00057",
           "src": "CAP4-10-00057",
-          "text": "An agency's stated rule requires a revised estimate when the forecast exceeds the sanctioned estimate by more than 5%. Sanction is NRs 20 million and forecast is NRs 21.2 million. What follows under that rule?",
+          "text": "A revised estimate is prepared when the original sanctioned detailed estimate is exceeded by more than ______.",
           "options": [
             {
               "key": "a",
-              "text": "Prepare a revised estimate because the increase is 6%"
+              "text": "5%"
             },
             {
               "key": "b",
-              "text": "No revision is triggered because the increase is 1.2%"
+              "text": "10%"
             },
             {
               "key": "c",
-              "text": "No revision is triggered because the increase is below 10%"
+              "text": "20%"
             },
             {
               "key": "d",
-              "text": "Treat NRs 1.2 million as an automatically approved variation"
+              "text": "1%"
             }
           ],
           "answer": "a",
-          "explanation": "The increase is \\[\\dfrac{21.2 - 20}{20} \\times 100 = 6\\%\\] exceeding the explicitly supplied 5% threshold. A revised estimate seeks appropriate approval; it does not automatically authorise a contract variation or extra expenditure.<p>Source note: p39 n56: 0.05 interpreted as 5%, but not asserted as universal current Nepal law; the governing agency rule is an explicit assumption.</p><p>Capsule 4th ed., p. 39; topic 10 point 56.</p>",
+          "explanation": "When the cost of a work is expected to exceed its sanctioned detailed estimate by more than 5%, a revised estimate is prepared and sanctioned by the competent authority.<p>Capsule 4th ed., p. 39; topic 10 point 56.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6899,32 +6899,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00063",
           "src": "CAP4-10-00063",
-          "text": "A BOQ lists 100 square metres of plaster but does not state mortar proportions, surface preparation or acceptance criteria. Which coordinated document normally supplies those requirements?",
+          "text": "Quality and workmanship in construction projects are defined in the ______.",
           "options": [
             {
               "key": "a",
-              "text": "The contractor's cash-flow forecast"
+              "text": "Bill of quantities"
             },
             {
               "key": "b",
-              "text": "The project's historical cost ledger"
+              "text": "Cash flow statement"
             },
             {
               "key": "c",
-              "text": "A bank solvency certificate"
+              "text": "Work schedule"
             },
             {
               "key": "d",
-              "text": "Technical specifications"
+              "text": "Specifications"
             }
           ],
           "answer": "d",
-          "explanation": "Specifications define material quality, workmanship, procedures and acceptance requirements alongside drawings and the BOQ. A quantity and unit rate alone do not communicate the required quality of the finished plaster.<p>Capsule 4th ed., p. 39; topic 10 point 62.</p>",
+          "explanation": "The specifications state the materials, methods and standards of workmanship required; the bill of quantities lists the quantities, and the schedule gives the timing.<p>Capsule 4th ed., p. 39; topic 10 point 62.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6937,32 +6937,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00065",
           "src": "CAP4-10-00065",
-          "text": "A building is physically complete, but variation valuations and final claims remain unresolved. Which cost description is most accurate?",
+          "text": "The actual cost of a building is found at the time of ______.",
           "options": [
             {
               "key": "a",
-              "text": "The original sanctioned estimate is now the actual final cost"
+              "text": "Preparing the estimate"
             },
             {
               "key": "b",
-              "text": "Physical completion fixes the final cost without accounting"
+              "text": "Inviting tenders"
             },
             {
               "key": "c",
-              "text": "The last interim payment equals the completed asset's cost"
+              "text": "Laying the foundation"
             },
             {
               "key": "d",
-              "text": "The final cost awaits reconciliation of outstanding liabilities"
+              "text": "Completion of the work"
             }
           ],
           "answer": "d",
-          "explanation": "Actual costs are recorded as incurred, while the definitive final project cost requires reconciliation of liabilities, approved changes and the final account. Physical completion alone need not settle all amounts.<p>Source note: p39 n64 qualified: completion is not necessarily final financial closeout.</p><p>Capsule 4th ed., p. 39; topic 10 point 64.</p>",
+          "explanation": "An estimate gives only the expected cost; the actual cost is known when the work is completed and all the expenditure has been accounted for.<p>Capsule 4th ed., p. 39; topic 10 point 64.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6975,32 +6975,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00066",
           "src": "CAP4-10-00066",
-          "text": "For an illustrative estimate, office-management expense is explicitly allowed as 4% of a NRs 25 million direct-cost base. What amount should be entered without adding a second overhead allowance?",
+          "text": "In project management, ______ of the total project cost is typically estimated for office management expenses.",
           "options": [
             {
               "key": "a",
-              "text": "NRs 1.04 million"
+              "text": "1%"
             },
             {
               "key": "b",
-              "text": "NRs 0.10 million"
+              "text": "10%"
             },
             {
               "key": "c",
-              "text": "NRs 6.25 million"
+              "text": "15%"
             },
             {
               "key": "d",
-              "text": "NRs 1.00 million"
+              "text": "4%"
             }
           ],
           "answer": "d",
-          "explanation": "The stated allowance is \\[0.04 \\times 25\\ \\text{million} = 1\\ \\text{million}\\] Its base must be defined and double counting avoided; 4% is an assumption for this estimate, not a universal office-management percentage.<p>Source note: p39 n65: fixed percentage retained only as a supplied estimating assumption.</p><p>Capsule 4th ed., p. 39; topic 10 point 65.</p>",
+          "explanation": "Office management expenses, such as staff, stationery and communication, are typically estimated at 4% of the total project cost.<p>Capsule 4th ed., p. 39; topic 10 point 65.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -7013,32 +7013,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00122",
           "src": "CAP4-10-00122",
-          "text": "An explicitly adopted rate-analysis norm allows small tools at 3% of unskilled-labour cost. Unskilled labour costs NRs 4000 and skilled labour NRs 6000 per unit. What is the tools allowance under this norm?",
+          "text": "In rate analysis, the 3% allowance for tools and equipment is calculated on the cost of ______.",
           "options": [
             {
               "key": "a",
-              "text": "NRs 120 per unit"
+              "text": "Unskilled labour"
             },
             {
               "key": "b",
-              "text": "NRs 300 per unit"
+              "text": "Materials"
             },
             {
               "key": "c",
-              "text": "NRs 180 per unit"
+              "text": "The whole work including overheads"
             },
             {
               "key": "d",
-              "text": "NRs 30 per unit"
+              "text": "Skilled labour only"
             }
           ],
           "answer": "a",
-          "explanation": "Apply the percentage to the stated base only: \\[0.03 \\times 4000 = 120\\] Applying 3% to all labour gives 300, a different basis. This allowance does not automatically cover separately priced major plant or equipment.<p>Source note: p40 n115: 3% of unskilled labour is a supplied norm, not universal Nepal rate-analysis law; small tools distinguished from all equipment.</p><p>Capsule 4th ed., p. 40; topic 10 point 115.</p>",
+          "explanation": "In rate analysis, the allowance for tools and equipment is taken as 3% of the cost of unskilled labour, not of the materials or the total cost.<p>Capsule 4th ed., p. 40; topic 10 point 115.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -7051,32 +7051,32 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00162",
           "src": "CAP4-10-00162",
-          "text": "A property must be sold immediately under financial pressure with inadequate market exposure, producing a depressed price. Which value description best fits those conditions?",
+          "text": "When a property is forced to be sold immediately under distress, at a depressed market value, the value is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Capitalised value of unrestricted future rental income"
+              "text": "Salvage value"
             },
             {
               "key": "b",
-              "text": "Normal market value under an orderly sale"
+              "text": "Market value"
             },
             {
               "key": "c",
-              "text": "Replacement cost of a new equivalent building"
+              "text": "Book value"
             },
             {
               "key": "d",
-              "text": "Distress or forced-sale value"
+              "text": "Distress or forced sale value"
             }
           ],
           "answer": "d",
-          "explanation": "A forced sale lacks the time and bargaining conditions assumed in an orderly market transaction. Its price may be depressed, but there is no universal fixed percentage reduction from market value.<p>Capsule 4th ed., p. 41; topic 10 point 153.</p>",
+          "explanation": "A forced sale under distress leaves little time to find buyers, so the price is below the normal market value; this depressed value is the distress or forced sale value.<p>Capsule 4th ed., p. 41; topic 10 point 153.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -7089,7 +7089,7 @@ window.CIVIL_SET_DATA["capsule-01"] = {
             ]
           },
           "topic": "ACiE0106",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     }

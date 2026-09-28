@@ -22,7 +22,7 @@
             "moreHtml": "<p>Reasoning pattern: when two cements of similar fineness and curing differ in early strength gain, look first at their C<sub>3</sub>S proportion. C<sub>3</sub>A reacts fastest, but its speed appears mainly as heat and stiffening, which gypsum is added to control, rather than as the main strength network.</p>",
             "points": [
               {
-                "html": "Conventional Portland-cement raw meal combines limestone, the main calcium source, with clay or shale, which supplies most of the silica and alumina; gypsum and coal are not raw-meal ingredients.",
+                "html": "The primary raw materials in cement manufacturing are limestone and clay.",
                 "sources": [
                   {
                     "id": "CAP4-01-00010",
@@ -31,7 +31,7 @@
                 ]
               },
               {
-                "html": "A higher proportion of tricalcium silicate, C<sub>3</sub>S, is the main reason one Portland cement gains strength faster over the first few days.",
+                "html": "The early strength of cement is due to the compound C<sub>3</sub>S (tricalcium silicate).",
                 "sources": [
                   {
                     "id": "CAP4-01-00003",
@@ -40,7 +40,7 @@
                 ]
               },
               {
-                "html": "Calcium silicate hydrate, C-S-H, is the hydration product that forms most of the binding network and strength of cement paste; calcium hydroxide is secondary.",
+                "html": "The main compound resulting from cement hydration is C-S-H gel.",
                 "sources": [
                   {
                     "id": "CAP4-01-00016",
@@ -68,10 +68,10 @@
             "id": "hydration-gypsum-and-heat",
             "title": "Hydration chemistry, gypsum control and heat release",
             "html": "<p><em>Hydration</em> is a chemical reaction between the cement compounds and water. Mixing only brings them together; the water then takes part in reactions that form new solid products, and these interlock to bind the paste. Drying cannot explain hardening, and a paste does not become chemically inert once it has formed.</p><p>The reactions are <em>exothermic</em>. Fresh paste warms because hydration releases heat, not because of evaporation or simple wetting, and heat release begins together with the chemical change once water is added.</p><p>Freshly ground clinker would stiffen almost at once because C<sub>3</sub>A reacts very rapidly with water, a fault called <em>flash set</em>. A controlled dose of gypsum supplies sulfate that moderates the aluminate reaction and extends the setting time to a workable value. The dose is optimised: gypsum does not replace clinker as a strength phase, and adding more is not an unlimited improvement.</p>",
-            "moreHtml": "<p>Keep three ideas apart: the trigger, which is adding water; the process, chemical hydration producing C-S-H and calcium hydroxide; and the symptoms, which are heat, stiffening and strength gain. A definition that stops at forming a paste describes only the trigger.</p>",
+            "moreHtml": "<p>Keep three ideas apart: the trigger, which is adding water; the process, chemical hydration producing C-S-H and calcium hydroxide; and the symptoms, which are heat, stiffening and strength gain.</p>",
             "points": [
               {
-                "html": "Hydration differs from simple wetting because water participates in chemical reactions with the cement compounds, forming new binding products.",
+                "html": "The process of cement hydration involves mixing cement with water to form a paste.",
                 "sources": [
                   {
                     "id": "CAP4-01-00031",
@@ -80,7 +80,7 @@
                 ]
               },
               {
-                "html": "Fresh cement paste warms because hydration initiates exothermic chemical reactions that release heat, not because of evaporation or physical wetting.",
+                "html": "When water is added to cement, heat is generated and a chemical reaction is initiated.",
                 "sources": [
                   {
                     "id": "CAP4-01-00142",
@@ -89,7 +89,7 @@
                 ]
               },
               {
-                "html": "Gypsum is added in a controlled dose to regulate aluminate (C<sub>3</sub>A) hydration and prevent flash set, extending the setting time to a workable value.",
+                "html": "The addition of gypsum to cement increases its setting time.",
                 "sources": [
                   {
                     "id": "CAP4-01-00025",
@@ -116,10 +116,10 @@
           {
             "id": "cement-soundness-storage-and-special-cements",
             "title": "Soundness limits, storage losses and special cements",
-            "html": "<p>Some cement faults appear only after hardening. Free magnesia hydrates slowly, so an excess can cause <em>delayed expansion</em> that disrupts hardened concrete, and such cement is called unsound. Specifications therefore limit total MgO and require soundness testing. The capsule quotes 6% for OPC, but the figure that applies must come from the governing cement specification.</p><p>Poor storage harms cement as well. Humid air causes <em>prehydration</em>: particles react early, persistent hard lumps form and the remaining strength-producing capacity falls. Storage time alone fixes no percentage loss. Exposure and packaging matter, and doubtful stock should be retested rather than sieved and assumed sound.</p><p><em>White Portland cement</em> is made with low contents of colouring oxides. It suits pale decorative finishes and cement-based paints; low iron does not mean zero iron.</p><p>Keep <em>quick setting</em>, which is early stiffening, apart from <em>rapid hardening</em>, which is early strength gain. A quick-setting binder may help a particular underwater repair, but placement, cohesion and washout control decide whether underwater work succeeds.</p>",
+            "html": "<p>Some cement faults appear only after hardening. Free magnesia hydrates slowly, so an excess can cause <em>delayed expansion</em> that disrupts hardened concrete, and such cement is called unsound. Specifications therefore limit total MgO and require soundness testing. The maximum magnesia content allowed in ordinary Portland cement is 6%.</p><p>Poor storage harms cement as well. Humid air causes <em>prehydration</em>: particles react early, persistent hard lumps form and the remaining strength-producing capacity falls. Storage time alone fixes no percentage loss. Exposure and packaging matter, and doubtful stock should be retested rather than sieved and assumed sound.</p><p><em>White Portland cement</em> is made with low contents of colouring oxides. It suits pale decorative finishes and cement-based paints; low iron does not mean zero iron.</p><p>Keep <em>quick setting</em>, which is early stiffening, apart from <em>rapid hardening</em>, which is early strength gain. A quick-setting binder may help a particular underwater repair, but placement, cohesion and washout control decide whether underwater work succeeds.</p>",
             "points": [
               {
-                "html": "Limits on total MgO in cement guard against delayed expansion and unsoundness caused by slowly hydrating free magnesia; the numerical limit comes from the governing specification.",
+                "html": "The maximum percentage of magnesia allowed in ordinary Portland cement is 6%.",
                 "sources": [
                   {
                     "id": "CAP4-01-00128",
@@ -128,7 +128,7 @@
                 ]
               },
               {
-                "html": "Cement that has taken up humid air and caked into hard lumps has suffered prehydration, which may reduce its strength-producing capacity; retest such stock before use.",
+                "html": "After storage, the strength of cement decreases.",
                 "sources": [
                   {
                     "id": "CAP4-01-00023",
@@ -137,7 +137,7 @@
                 ]
               },
               {
-                "html": "White Portland cement, made low in colouring oxides, is the starting binder for pale cement-based finishes and paints that must avoid the grey of ordinary cement.",
+                "html": "The type of cement used for painting is white cement.",
                 "sources": [
                   {
                     "id": "CAP4-01-00020",
@@ -146,7 +146,7 @@
                 ]
               },
               {
-                "html": "Quick setting concerns stiffening, whereas rapid hardening concerns strength gain; quick-setting cement alone does not guarantee a successful underwater repair.",
+                "html": "Quick setting cement is used for underwater construction.",
                 "sources": [
                   {
                     "id": "CAP4-05-00036",
@@ -177,7 +177,7 @@
           {
             "id": "plaster-of-paris-and-lime-mortars",
             "title": "Plaster of Paris and lime mortars",
-            "html": "<p><em>Plaster of Paris</em> is made by controlled calcination of gypsum. Heating drives off part of the crystal water and converts calcium sulfate dihydrate into the <em>hemihydrate</em>. Mixed with water, the powder rehydrates to interlocking gypsum crystals, which is why it sets again. Carbonating lime or fusing silica with limestone are unrelated processes.</p><p>Lime mortars harden in two ways. Air lime, also called fat lime, hardens mainly by carbonation, so it needs access to air. <em>Hydraulic lime</em> contains constituents that react with water, so it can gain strength in persistently damp conditions with little air. Choose hydraulic lime for damp work without treating it as the only lime used in mortar.</p>",
+            "html": "<p><em>Plaster of Paris</em> is made by controlled calcination of gypsum. Heating drives off part of the crystal water and converts calcium sulfate dihydrate into the <em>hemihydrate</em>. Mixed with water, the powder rehydrates to interlocking gypsum crystals, which is why it sets again. Carbonating lime or fusing silica with limestone are unrelated processes.</p><p>Lime mortars harden in two ways. Air lime, also called fat lime, hardens mainly by carbonation, so it needs access to air. <em>Hydraulic lime</em> contains constituents that react with water, so it can gain strength in persistently damp conditions with little air.</p>",
             "formulas": [
               {
                 "label": "Calcination of gypsum to plaster of Paris",
@@ -187,7 +187,7 @@
             ],
             "points": [
               {
-                "html": "Plaster of Paris is made by partial dehydration of gypsum to the hemihydrate; mixing it with water rehydrates it to gypsum, so it sets again.",
+                "html": "Plaster of Paris is obtained by calcining gypsum.",
                 "sources": [
                   {
                     "id": "CAP4-01-00001",
@@ -196,7 +196,7 @@
                 ]
               },
               {
-                "html": "Hydraulic lime, which reacts with water, is preferred to pure air lime where mortar must bind in persistently damp conditions with little air.",
+                "html": "The lime used as mortar is hydraulic lime.",
                 "sources": [
                   {
                     "id": "CAP4-01-00009",
@@ -219,10 +219,10 @@
           {
             "id": "surkhi-in-lime-mortars",
             "title": "Surkhi: burnt-clay powder in traditional mortar",
-            "html": "<p><em>Surkhi</em> is finely ground burnt clay, most often crushed brick, used in traditional lime mortars. It can replace part of the sand where the mortar specification allows.</p><p>Its value goes beyond filling space. Inert sand only packs between the other particles. A suitably reactive surkhi also contains silica and alumina that combine with lime in the presence of moisture, forming additional cementitious products. This is a <em>pozzolanic</em> reaction.</p><p>The binding contribution is conditional. Reactivity depends on the clay's composition, the firing it received and the fineness of grinding, so surkhi is not interchangeable with sand in every mix.</p>",
+            "html": "<p><em>Surkhi</em> is finely ground burnt clay, most often crushed brick, used in traditional lime mortars. It can replace part of the sand where the mortar specification allows.</p><p>Its value goes beyond filling space. Inert sand only packs between the other particles. A suitably reactive surkhi also contains silica and alumina that combine with lime in the presence of moisture, forming additional cementitious products. This is a <em>pozzolanic</em> reaction.</p><p>The binding contribution is conditional.</p>",
             "points": [
               {
-                "html": "Surkhi is finely powdered burnt clay, commonly crushed brick, used as a traditional mortar ingredient.",
+                "html": "Surkhi is the powdered form of burnt clay.",
                 "sources": [
                   {
                     "id": "CAP4-01-00144",
@@ -231,7 +231,7 @@
                 ]
               },
               {
-                "html": "Unlike inert sand, suitably reactive surkhi supplies reactive silica and alumina that can form cementitious products with lime in the presence of moisture.",
+                "html": "Surkhi, the powdered form of burnt clay, is used in mortar in place of sand.",
                 "sources": [
                   {
                     "id": "CAP4-01-00145",
@@ -258,7 +258,7 @@
             "moreHtml": "<p>A rock name describes geology, not local availability or fitness for a job. Whether a particular source can supply suitable stone or aggregate is settled by geological investigation and material testing.</p>",
             "points": [
               {
-                "html": "Quarrying existing rock and dressing the blocks to size gives natural building stone; no firing or cement binding is involved.",
+                "html": "The construction material that can be obtained from naturally existing rock by any method is stone.",
                 "sources": [
                   {
                     "id": "CAP4-01-00019",
@@ -267,7 +267,7 @@
                 ]
               },
               {
-                "html": "By chemical composition quartzite is a siliceous stone, because its quartz is silica; metamorphic describes its origin instead.",
+                "html": "On the basis of chemical composition, quartzite is a siliceous rock.",
                 "sources": [
                   {
                     "id": "CAP4-01-00007",
@@ -276,7 +276,7 @@
                 ]
               },
               {
-                "html": "Quartz-rich sandstone recrystallised by heat and pressure without melting becomes quartzite, a metamorphic rock.",
+                "html": "Quartzite is a metamorphic type of rock.",
                 "sources": [
                   {
                     "id": "CAP4-01-00147",
@@ -285,7 +285,7 @@
                 ]
               },
               {
-                "html": "Basalt, dense and fine-grained because basaltic lava cooled rapidly at the surface, is an extrusive igneous rock.",
+                "html": "The type of aggregate that is not available in Nepal is basalt.",
                 "sources": [
                   {
                     "id": "CAP4-01-00021",
@@ -316,10 +316,10 @@
           {
             "id": "stone-hardness-and-self-weight",
             "title": "Stone hardness and density in practical selection",
-            "html": "<p><em>Scratch hardness</em> depends largely on the minerals a stone contains. Granite rich in quartz and feldspar commonly resists scratching better than limestone, whose main mineral, calcite, is much softer. Hardness is a separate property from compressive strength and density, so neither of those values alone ranks stones for scratch or abrasion resistance. Slate and conglomerate cannot be ranked universally by name, because their mineralogy, fabric, clasts and natural cement vary.</p><p>Density matters where weight does structural work. A <em>gravity retaining wall</em> resists overturning and sliding largely through its self-weight, so a denser sound stone raises the resisting moment and the normal force that mobilises base friction.</p><p>Some quantities do not change: the friction coefficient itself, the unit weight of the retained soil and the water pressure at a given depth. Bearing pressure and drainage still need checking.</p>",
+            "html": "<p><em>Scratch hardness</em> depends largely on the minerals a stone contains. Granite rich in quartz and feldspar commonly resists scratching better than limestone, whose main mineral, calcite, is much softer. Hardness is a separate property from compressive strength and density, so neither of those values alone ranks stones for scratch or abrasion resistance. Slate and conglomerate cannot be ranked universally by name, because their mineralogy, fabric, clasts and natural cement vary.</p><p>Density matters where weight does structural work. A <em>gravity retaining wall</em> resists overturning and sliding largely through its self-weight, so a denser sound stone raises the resisting moment and the normal force that mobilises base friction.</p><p>Some quantities do not change: the friction coefficient itself, the unit weight of the retained soil and the water pressure at a given depth.</p>",
             "points": [
               {
-                "html": "Granite commonly benefits from its harder mineral constituents: quartz and feldspar resist scratching better than the calcite that makes up limestone.",
+                "html": "Granite has the comparatively highest coefficient of hardness.",
                 "sources": [
                   {
                     "id": "CAP4-01-00146",
@@ -328,7 +328,7 @@
                 ]
               },
               {
-                "html": "A denser sound stone helps a gravity retaining wall because its added self-weight can increase stabilizing actions, the resisting moment and the normal force behind base friction.",
+                "html": "The type of stone used for the construction of retaining walls must be heavy.",
                 "sources": [
                   {
                     "id": "CAP4-01-00057",
@@ -354,7 +354,7 @@
             "html": "<p>Good brick earth balances plastic clay with non-plastic material. Clay-rich earth shrinks heavily as it dries and tends to crack or warp. A controlled addition of clean <em>sand</em> gives a relatively rigid skeleton and dilutes the shrinking fraction, so drying shrinkage and warping fall. Too much sand is also harmful because cohesion drops, and sand is neither a binder nor a substitute for firing.</p><p>The usual red colour of fired clay comes mainly from <em>iron oxide</em> developed in adequately oxidising firing. The exact shade still depends on composition and kiln atmosphere; silica and alumina play other roles in the ceramic body.</p><p>Firing can also create defects:</p><ul><li><em>Bloating</em>: swelling caused by gas trapped in a softened body during burning.</li><li>Efflorescence: salt deposits on the surface.</li><li>Lime popping: local disruption by reactive lime particles.</li><li>Lamination: separation into layers.</li></ul>",
             "points": [
               {
-                "html": "A controlled addition of clean sand to clay-rich brick earth reduces drying shrinkage and warping; too much sand weakens cohesion.",
+                "html": "The presence of sand in brick earth prevents warping of bricks.",
                 "sources": [
                   {
                     "id": "CAP4-01-00013",
@@ -363,7 +363,7 @@
                 ]
               },
               {
-                "html": "Iron oxide chiefly gives clay bricks their red colour when firing is adequately oxidising.",
+                "html": "The ingredient that imparts red colour to clay bricks is iron oxide.",
                 "sources": [
                   {
                     "id": "CAP4-01-00028",
@@ -372,7 +372,7 @@
                 ]
               },
               {
-                "html": "Bloating is swelling of a brick caused by gas trapped inside a softened body during burning.",
+                "html": "Swelling in brick is also known as bloating.",
                 "sources": [
                   {
                     "id": "CAP4-01-00030",
@@ -402,7 +402,7 @@
             "html": "<p>Brick inspection looks for a consistent set of signs: low tested <em>water absorption</em>, regular plane faces and sharp, sound arrises, the edges of the brick. A brick that is highly absorbent, warped or crumbling at the edges fails at least one sign even if the others look good. These signs point to sound burning and workmanship, but they are not an acceptance certificate; specified strength, dimensions, durability and test limits still govern.</p><p>Brick size is specified by its dimensions: length, width and height. The <em>actual size</em> describes the unit itself, while the <em>nominal</em> or coordinating size adds the specified mortar-joint allowance. The difference is the joint, not strength grade, mass or absorption.</p><p><em>Terracotta</em> is moulded, fired clay used for ornamental units such as cornices, with a characteristic earthen look. Terrazzo is a composite finish containing stone chips, while plaster and fibre cement rely on other binders.</p>",
             "points": [
               {
-                "html": "The most favourable brick report combines low tested absorption, regular faces and sharp arrises, though specified strength and test limits still govern acceptance.",
+                "html": "The characteristics of good quality bricks are less water absorption, regular surface and sharp edges.",
                 "sources": [
                   {
                     "id": "CAP4-01-00133",
@@ -411,7 +411,7 @@
                 ]
               },
               {
-                "html": "Actual and nominal brick dimensions differ by the specified mortar-joint allowance, not by strength grade, mass or absorption.",
+                "html": "The size of a brick is specified by its dimensions.",
                 "sources": [
                   {
                     "id": "CAP4-01-00125",
@@ -420,7 +420,7 @@
                 ]
               },
               {
-                "html": "Terracotta, moulded and fired clay, suits ornamental units such as cornices with a characteristic earthen appearance.",
+                "html": "Terracotta is used in buildings for ornamental work.",
                 "sources": [
                   {
                     "id": "CAP4-01-00044",
@@ -450,7 +450,7 @@
             "html": "<p>Green timber holds far more moisture than it will keep in service. <em>Seasoning</em> removes the excess so that the moisture content approaches the equilibrium the wood will reach in its surroundings. This reduces later shrinkage, warping and distortion of joinery.</p><p>Seasoning is not waterproofing. Seasoned timber still gains or loses moisture as the humidity changes, and seasoning does not replace fibres with preservative salts.</p><p>Fast methods need control. In <em>electrical seasoning</em> the wood is heated internally. If drying is rapid and poorly controlled, steep moisture gradients cause uneven shrinkage, and the tensile drying stresses can open checks and splits along the grain. Splitting is a risk governed by temperature, moisture gradient and drying control, not an inevitable result. Fungal decay, insect galleries and mineral stain have other causes.</p>",
             "points": [
               {
-                "html": "Seasoning green timber before fabrication aims to bring its moisture closer to the service equilibrium, limiting later shrinkage and distortion.",
+                "html": "The seasoning of timber is done for decreasing its moisture content.",
                 "sources": [
                   {
                     "id": "CAP4-01-00014",
@@ -459,7 +459,7 @@
                 ]
               },
               {
-                "html": "Rapid, poorly controlled electrical seasoning can cause splitting along the grain, because steep moisture gradients create tensile drying stresses; splitting is a risk, not a certainty.",
+                "html": "The drawback of electric seasoning of timber is splitting.",
                 "sources": [
                   {
                     "id": "CAP4-01-00006",
@@ -485,7 +485,7 @@
             "html": "<p><em>Metallurgy</em> is the broad field that covers ore treatment, extraction and refining of metals, alloy production, and the study of how processing controls metal properties. Its operations are easiest to remember as a sequence:</p><ol><li><em>Ore dressing and concentration</em>, together called beneficiation: physical preparation before extraction. Washing adhering clay off iron-ore lumps is dressing; rejecting waste gangue so that the useful mineral fraction rises is concentration.</li><li><em>Extraction</em>: smelting or reduction converts the mineral, often an oxide, into metal.</li><li><em>Refining</em>: removes impurities from metal that has already been extracted.</li><li><em>Alloying and processing</em>: adjusts composition and structure for service.</li></ol><p>Concentration removes impurities from the ore; refining removes them from the metal. Washing clay from ore reduces no metal oxide, so it is not smelting. Annealing, tempering and homogenisation treat the metal later and are not ore-processing steps.</p>",
             "points": [
               {
-                "html": "Metallurgy is the broad field covering ore treatment, extraction and refining of metals and alloy production, not a single ore-processing step.",
+                "html": "The process of extracting metals from the ore is called metallurgy.",
                 "sources": [
                   {
                     "id": "CAP4-01-00024",
@@ -494,7 +494,7 @@
                 ]
               },
               {
-                "html": "Ore concentration separates waste gangue so that a larger share of the ore is useful mineral before smelting.",
+                "html": "The removal of impurities from ore is known as concentration of ore.",
                 "sources": [
                   {
                     "id": "CAP4-01-00026",
@@ -503,7 +503,7 @@
                 ]
               },
               {
-                "html": "Washing adhering clay off iron-ore lumps before they reach the furnace is ore dressing; it reduces no oxide to metal.",
+                "html": "The operation of removing impurities of clay adhering to iron ore is known as dressing.",
                 "sources": [
                   {
                     "id": "CAP4-01-00029",
@@ -530,11 +530,11 @@
           {
             "id": "carbon-and-chromium-in-steel",
             "title": "Carbon and chromium: how composition shapes steel",
-            "html": "<p>In plain-carbon steels processed in comparable ways, <em>carbon</em> strongly affects the microstructure. More carbon generally raises the attainable hardness and strength but reduces ductility and weldability. It barely changes the elastic modulus, so a higher-carbon steel is not noticeably stiffer in the elastic range.</p><p>Heat treatment, alloying and processing also move these properties, so carbon is the controlling variable only when those factors are held comparable.</p><p><em>Stainless steel</em> depends chiefly on <em>chromium</em>, which promotes a thin, protective chromium-rich oxide film on the surface, called the passive film. Nickel is useful in many stainless grades but is not compulsory in every family, and high carbon alone gives no stainless behaviour. Manganese and sulfur are not responsible for passivity.</p>",
+            "html": "<p>In plain-carbon steels processed in comparable ways, <em>carbon</em> strongly affects the microstructure. More carbon generally raises the attainable hardness and strength but reduces ductility and weldability. It barely changes the elastic modulus, so a higher-carbon steel is not noticeably stiffer in the elastic range.</p><p><em>Stainless steel</em> depends chiefly on <em>chromium</em>, which promotes a thin, protective chromium-rich oxide film on the surface, called the passive film. Nickel is useful in many stainless grades but is not compulsory in every family, and high carbon alone gives no stainless behaviour. Manganese and sulfur are not responsible for passivity.</p>",
             "moreHtml": "<p>Treat composition questions as trade-offs: a gain in hardness and strength usually costs ductility and ease of welding. Be wary of a memorised carbon percentage band offered as the definition of all steels; the dependable point is the direction of the trend.</p>",
             "points": [
               {
-                "html": "Raising the carbon content of comparably processed plain-carbon steel gives greater hardness with reduced ductility and weldability, and hardly any change in elastic modulus.",
+                "html": "The percentage of carbon content present in steel is 0.15% to 1.5%.",
                 "sources": [
                   {
                     "id": "CAP4-01-00034",
@@ -543,7 +543,7 @@
                 ]
               },
               {
-                "html": "Across comparable plain-carbon steels, more carbon brings higher hardness and strength with reduced ductility and weldability; heat treatment and alloying also matter.",
+                "html": "The element having the maximum influence on the properties of steel is carbon.",
                 "sources": [
                   {
                     "id": "CAP4-05-00077",
@@ -552,7 +552,7 @@
                 ]
               },
               {
-                "html": "Chromium is the alloying element that enables the passive, chromium-rich oxide film of stainless steel; nickel is not compulsory in every stainless family.",
+                "html": "The main alloying element in stainless steel is chromium.",
                 "sources": [
                   {
                     "id": "CAP4-01-00033",
@@ -582,7 +582,7 @@
             "html": "<p><em>Ductility</em> is the capacity to undergo appreciable permanent, plastic elongation in tension before fracture; drawing metal into wire depends on it. <em>Malleability</em> is the comparable capacity under compression, as in hammering or rolling sheet. Hardness, the resistance to indentation or scratching, and elastic stiffness, the recoverable deformation per unit stress, are different properties again.</p><p><em>Creep</em> is time-dependent: deformation keeps increasing while a sustained load or stress is maintained. Its counterpart is <em>stress relaxation</em>, in which the deformation is held fixed and the stress falls with time.</p><p>A short, rapid tensile test cannot characterise long-term creep by itself; creep data come from sustained-load observation. Brittle fracture without prior extension and instantaneous elastic recovery are the opposite of creep.</p>",
             "points": [
               {
-                "html": "Appreciable permanent elongation in tension before fracture demonstrates ductility; malleability is the corresponding capacity under compression.",
+                "html": "The property of a material that enables it to be drawn out or elongated to an appreciable extent is called ductility.",
                 "sources": [
                   {
                     "id": "CAP4-01-00032",
@@ -591,7 +591,7 @@
                 ]
               },
               {
-                "html": "Slow, continuing extension under a tensile load held for a long period is creep; stress relaxation is falling stress at fixed strain.",
+                "html": "The phenomenon of slow extension of a material at constant load during a tensile test is known as creep.",
                 "sources": [
                   {
                     "id": "CAP4-01-00132",
@@ -617,7 +617,7 @@
             "html": "<p>A paint is a system whose constituents have distinct jobs:</p><table><thead><tr><th scope='col'>Constituent</th><th scope='col'>Function</th></tr></thead><tbody><tr><th scope='row'>Pigment</th><td>Colour and hiding power (opacity)</td></tr><tr><th scope='row'>Binder or vehicle</th><td>Forms the continuous film that holds pigment to the surface</td></tr><tr><th scope='row'>Thinner</th><td>Adjusts application viscosity, then evaporates</td></tr><tr><th scope='row'>Drier</th><td>Promotes curing of the film</td></tr></tbody></table><p>A conventional <em>nitrocellulose lacquer</em> dries initially by evaporation of its volatile solvent, leaving the dissolved resin as a film. It does not rely mainly on oxidation of a drying oil such as linseed oil. Nitrocellulose is the resin, not the solvent.</p><p><em>Red lead</em>, lead tetroxide, appears in old steelwork schedules as a corrosion-inhibiting primer pigment. Lead is toxic, so this identifies a historical material and is not a recommendation.</p><p><em>Plastic bitumen</em> fills small non-structural cracks because it adheres and accommodates limited movement while reducing water entry. It seals a crack but does not restore the capacity of a fractured member.</p>",
             "points": [
               {
-                "html": "Changing a paint's colour and hiding power while keeping the same film-forming resin means changing its pigment.",
+                "html": "The component of paint that imparts colour to it is called pigment.",
                 "sources": [
                   {
                     "id": "CAP4-01-00008",
@@ -626,7 +626,7 @@
                 ]
               },
               {
-                "html": "A conventional nitrocellulose lacquer dries initially by evaporation of its volatile solvent, not by oxidation of a drying oil.",
+                "html": "Lacquer is a type of spirit varnish.",
                 "sources": [
                   {
                     "id": "CAP4-01-00011",
@@ -635,7 +635,7 @@
                 ]
               },
               {
-                "html": "The red lead of a historical anticorrosive primer is lead tetroxide, Pb<sub>3</sub>O<sub>4</sub>; lead is toxic, so this identifies an old material only.",
+                "html": "The pigment used in paints for corrosion resistance is red lead.",
                 "sources": [
                   {
                     "id": "CAP4-01-00027",
@@ -644,7 +644,7 @@
                 ]
               },
               {
-                "html": "Plastic bituminous compound suits small non-structural cracks because it offers adhesion with some deformation capacity; it seals the crack without restoring strength.",
+                "html": "Plastic bitumen is generally used for crack filling.",
                 "sources": [
                   {
                     "id": "CAP4-01-00015",
@@ -694,7 +694,7 @@
             },
             "points": [
               {
-                "html": "A dry fibreboard specimen of 7.2 kg occupying 0.010 m<sup>3</sup> has a measured bulk density of 720 kg/m<sup>3</sup>.",
+                "html": "For the exam, the minimum density of medium-density fibreboard (MDF) is 960 kg/m<sup>3</sup>.",
                 "sources": [
                   {
                     "id": "CAP4-01-00018",
@@ -703,7 +703,7 @@
                 ]
               },
               {
-                "html": "Light travels at about 1.24 × 10<sup>8</sup> m/s in diamond of refractive index 2.42, from \\(v = c/n\\) with \\(c = 3.00 \\times 10^8\\) m/s.",
+                "html": "The value of the refractive index of diamond is 2.42.",
                 "sources": [
                   {
                     "id": "CAP4-05-00050",
@@ -746,188 +746,7 @@
             "note": "Cement chemists' notation; real C-S-H composition varies."
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-electric-seasoning-splitting",
-            "status": "review",
-            "prompt": "Splitting is the drawback of electric seasoning of timber",
-            "html": "<p>Qualified. The capsule presents splitting as an unconditional drawback. Rapid, poorly controlled drying can set up moisture gradients that split the wood, but temperature, gradients and drying control decide the risk; electrical seasoning does not inevitably split timber.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00006",
-                "label": "p. 2; topic 1 point 6"
-              }
-            ]
-          },
-          {
-            "id": "caution-mortar-lime-always-hydraulic",
-            "status": "review",
-            "prompt": "Lime used as mortar is hydraulic lime",
-            "html": "<p>Too broad. Hydraulic lime is the better binder for persistently damp work with limited air, but air-lime mortar, which hardens largely by carbonation, remains suitable for other applications. Mortar lime is not exclusively hydraulic.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00009",
-                "label": "p. 2; topic 1 point 9"
-              }
-            ]
-          },
-          {
-            "id": "caution-lacquer-spirit-varnish",
-            "status": "corrected",
-            "prompt": "Lacquer is spirit varnish",
-            "html": "<p>Corrected. Equating every lacquer with spirit varnish is loose historical shorthand, not a precise definition. The tested mechanism is that a solventborne lacquer dries initially by evaporation of its volatile solvent; nitrocellulose is the film-forming resin, not the solvent.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00011",
-                "label": "p. 2; topic 1 point 11"
-              }
-            ]
-          },
-          {
-            "id": "caution-mdf-density-range",
-            "status": "corrected",
-            "prompt": "MDF minimum density is 600 to 800 kg/m3, but prefer 960 kg/m3 in the exam",
-            "html": "<p>Corrected. The capsule states a range and then contradicts it with a preferred 960 kg/m<sup>3</sup>. Neither figure is adopted as a universal MDF minimum. Compute the measured density from mass and volume, and classify a product only against a named standard.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00018",
-                "label": "p. 2; topic 1 point 18"
-              }
-            ]
-          },
-          {
-            "id": "caution-basalt-availability",
-            "status": "review",
-            "prompt": "Basalt is the aggregate type not available in Nepal",
-            "html": "<p>Unverified. The categorical geographic claim is not supported by the reviewed material and is not repeated as fact. The testable point is basalt's origin as a fine-grained extrusive igneous rock; the availability of any rock needs geological investigation and testing.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00021",
-                "label": "p. 2; topic 1 point 21"
-              }
-            ]
-          },
-          {
-            "id": "caution-cement-strength-after-storage",
-            "status": "review",
-            "prompt": "The strength of cement decreases after storage",
-            "html": "<p>Qualified. Loss of strength-producing capacity follows moisture exposure and prehydration, not storage duration as such. No fixed loss applies to well-protected cement; exposure, packaging and appropriate retesting decide whether stored cement is usable.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00023",
-                "label": "p. 2; topic 1 point 23"
-              }
-            ]
-          },
-          {
-            "id": "caution-red-lead-primer",
-            "status": "review",
-            "prompt": "Red lead is the pigment used in paints for corrosion resistance",
-            "html": "<p>Historical identification only. Red lead, lead tetroxide, is retained as the pigment of an old anticorrosive primer. Lead is toxic, and no current approval, legal acceptability or recommendation for lead coatings is implied.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00027",
-                "label": "p. 2; topic 1 point 27"
-              }
-            ]
-          },
-          {
-            "id": "caution-hydration-definition",
-            "status": "corrected",
-            "prompt": "Cement hydration involves mixing with water to form a paste",
-            "html": "<p>Corrected. The capsule reduces hydration to the mixing step. Hydration is the chemical reaction of cement constituents with water; forming a paste only starts it, and the reaction products, not evaporation, create the binding structure.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00031",
-                "label": "p. 2; topic 1 point 31"
-              }
-            ]
-          },
-          {
-            "id": "caution-steel-carbon-range",
-            "status": "corrected",
-            "prompt": "The carbon content present in steel is 0.15% to 1.5%",
-            "html": "<p>Corrected. The quoted band is not the universal carbon range of all steels, so it is not used as a classification. The dependable point is the trend: more carbon generally gives more hardness and strength with less ductility and weldability.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00034",
-                "label": "p. 2; topic 1 point 34"
-              }
-            ]
-          },
-          {
-            "id": "caution-opc-magnesia-limit",
-            "status": "review",
-            "prompt": "6% magnesia is the maximum allowed in ordinary Portland cement",
-            "html": "<p>Specification-dependent. The 6% figure is used only as a stipulated specification value; no current NS or IS edition or adoption has been verified for it. The tested principle is that excessive slowly hydrating free magnesia threatens soundness through delayed expansion.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00128",
-                "label": "p. 5; topic 1 point 121"
-              }
-            ]
-          },
-          {
-            "id": "caution-surkhi-sand-replacement",
-            "status": "review",
-            "prompt": "Surkhi is burnt clay powder used in place of sand",
-            "html": "<p>Conditional. Surkhi can replace part of the fine material where specified, and a suitably reactive surkhi also contributes pozzolanic binding with lime. Its reactivity depends on clay composition, firing and fineness, so it is not universally interchangeable with sand.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00145",
-                "label": "p. 5; topic 1 point 137"
-              }
-            ]
-          },
-          {
-            "id": "caution-granite-hardness-ranking",
-            "status": "review",
-            "prompt": "Granite has a higher hardness coefficient than limestone, slate and conglomerate",
-            "html": "<p>Qualified. The reviewed item supports only the mineral-based tendency for quartz- and feldspar-rich granite to resist scratching better than calcite-rich limestone. No verified universal hardness coefficient or ranking over every slate and conglomerate is asserted.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00146",
-                "label": "p. 5; topic 1 point 138"
-              }
-            ]
-          },
-          {
-            "id": "caution-quick-setting-underwater",
-            "status": "review",
-            "prompt": "Quick setting cement is used for underwater construction",
-            "html": "<p>A possible application, not a prescription. Setting describes the loss of plasticity, whereas hardening describes the growth of strength. A quick-setting binder may suit a specific underwater repair, but ordinary underwater concreting also depends on placement, cohesion and washout control.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00036",
-                "label": "p. 20; topic 5 point 35"
-              }
-            ]
-          },
-          {
-            "id": "caution-diamond-refractive-index",
-            "status": "review",
-            "prompt": "The refractive index of diamond is 2.42",
-            "html": "<p>Qualified. The value applies at a stated wavelength because refractive index varies with wavelength; it is not a universal constant. The review also records that placing this optical property in the materials topic is a broad mapping that may be reconsidered.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00050",
-                "label": "p. 20; topic 5 point 49"
-              }
-            ]
-          },
-          {
-            "id": "caution-carbon-maximum-influence",
-            "status": "review",
-            "prompt": "Maximum influence on steel is carbon",
-            "html": "<p>Narrowed. The vague claim is limited to comparable plain-carbon steels, where carbon strongly governs hardness, strength, ductility and weldability. Heat treatment, alloying and processing also matter, so carbon is not the sole control in every steel.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00077",
-                "label": "p. 21; topic 5 point 76"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Tiles, tar and asphalt mixtures named in the syllabus have no capsule question in this topic; bitumen appears only as a crack-filling compound.",
           "Thermal properties such as conductivity and thermal expansion, and chemical-resistance comparisons, are not tested by these capsule items.",
@@ -951,7 +770,7 @@
             },
             "points": [
               {
-                "html": "Standard consistency of cement paste is found with the Vicat apparatus, by adjusting the water until its plunger reaches the prescribed penetration.",
+                "html": "The Vicat apparatus is used for the consistency and setting time tests of cement.",
                 "sources": [
                   {
                     "id": "CAP4-01-00036",
@@ -960,7 +779,7 @@
                 ]
               },
               {
-                "html": "Fitting the prescribed needle attachments in place of the Vicat plunger allows the initial and final setting times of the paste to be assessed.",
+                "html": "The Vicat apparatus is used for both the consistency test and the setting time test of cement.",
                 "sources": [
                   {
                     "id": "CAP4-01-00037",
@@ -969,7 +788,7 @@
                 ]
               },
               {
-                "html": "Against a minimum initial setting time of 30 minutes, an initial set at 25 minutes fails; the limit is a minimum, not an exact setting time.",
+                "html": "The initial setting time of ordinary Portland cement is 30 minutes.",
                 "sources": [
                   {
                     "id": "CAP4-01-00012",
@@ -1006,7 +825,7 @@
             ],
             "points": [
               {
-                "html": "Le Chatelier expansion, read from the widening of the indicator-arm tips on the split mould after heating, is the test of cement soundness.",
+                "html": "The soundness test of cement is done with the Le Chatelier apparatus.",
                 "sources": [
                   {
                     "id": "CAP4-01-00043",
@@ -1015,7 +834,7 @@
                 ]
               },
               {
-                "html": "A necked mortar briquette pulled apart in grips measures direct tensile strength: the breaking load divided by the neck area.",
+                "html": "Mortar briquettes are used for tensile testing of mortars.",
                 "sources": [
                   {
                     "id": "CAP4-05-00114",
@@ -1052,7 +871,7 @@
             },
             "points": [
               {
-                "html": "A prepared brick that fails under 231 kN on a 21,000 mm<sup>2</sup> loaded area has a compressive strength of 11.0 N/mm<sup>2</sup>, above a stated 10.5 N/mm<sup>2</sup> limit.",
+                "html": "The compressive strength of first-class brick should not be less than 10.5 N/mm<sup>2</sup>.",
                 "sources": [
                   {
                     "id": "CAP4-01-00035",
@@ -1061,7 +880,7 @@
                 ]
               },
               {
-                "html": "Filling the frog with the specified 1:1 cement-sand mortar gives a prepared bearing face for consistent load transfer; it is not a strength value.",
+                "html": "For the compressive strength test of brick, the frog is filled with cement–sand mortar in the ratio 1: 1.",
                 "sources": [
                   {
                     "id": "CAP4-01-00039",
@@ -1097,7 +916,7 @@
             },
             "points": [
               {
-                "html": "A brick of 3.00 kg dry mass weighing 3.48 kg after immersion absorbs 16% on a dry-mass basis, so it fails the stated 15% limit.",
+                "html": "For first-class bricks, the water absorption should not be more than 15%.",
                 "sources": [
                   {
                     "id": "CAP4-01-00038",
@@ -1116,7 +935,7 @@
           {
             "id": "aggregate-moisture-states-and-bulking",
             "title": "Aggregate moisture states and the bulking of sand",
-            "html": "<p>Aggregate moisture is described by states, and concrete water calculations depend on them:</p><table><thead><tr><th scope='col'>State</th><th scope='col'>Accessible pores</th><th scope='col'>Surface</th></tr></thead><tbody><tr><th scope='row'>Oven dry</th><td>Empty</td><td>Dry</td></tr><tr><th scope='row'>Air dry</th><td>Partly filled</td><td>Dry</td></tr><tr><th scope='row'>Saturated surface dry (SSD)</th><td>Filled with water</td><td>No free moisture</td></tr><tr><th scope='row'>Wet</th><td>Filled</td><td>Free surface water</td></tr></tbody></table><p>SSD needs <em>saturated</em> pores, not merely some moisture in them; air-dry aggregate can still absorb mixing water.</p><p><em>Bulking</em> is the increase in volume of moist sand. Thin moisture films and menisci hold the grains apart, so the same sand occupies more space. Flooding destroys the films and the grains settle back. Divide the increase by the flooded, unbulked volume. The cause is surface films between grains, not water absorbed into the pores.</p>",
+            "html": "<p>Aggregate moisture is described by states, and concrete water calculations depend on them:</p><table><thead><tr><th scope='col'>State</th><th scope='col'>Accessible pores</th><th scope='col'>Surface</th></tr></thead><tbody><tr><th scope='row'>Oven dry</th><td>Empty</td><td>Dry</td></tr><tr><th scope='row'>Air dry</th><td>Partly filled</td><td>Dry</td></tr><tr><th scope='row'>Saturated surface dry (SSD)</th><td>Filled with water</td><td>No free moisture</td></tr><tr><th scope='row'>Wet</th><td>Filled</td><td>Free surface water</td></tr></tbody></table><p><em>Bulking</em> is the increase in volume of moist sand. Thin moisture films and menisci hold the grains apart, so the same sand occupies more space. Flooding destroys the films and the grains settle back. Divide the increase by the flooded, unbulked volume. The cause is surface films between grains, not water absorbed into the pores.</p>",
             "formulas": [
               {
                 "label": "Bulking of sand",
@@ -1127,10 +946,10 @@
               "title": "Worked example: 125 litres loose, 100 litres flooded",
               "html": "\\[\\begin{aligned} B &amp;= \\dfrac{125 - 100}{100} \\times 100\\% \\\\ &amp;= 25\\% \\end{aligned}\\]<p>Dividing by the moist volume instead would give 20%, which understates the bulking. The effect matters whenever sand is batched by volume.</p>"
             },
-            "moreHtml": "<p>Separate the cause from measurement influences. The physical cause of bulking is moisture-related grain separation, and its size depends on moisture content and sand grading. Vessel diameter relative to grain size, the filling procedure and the strike-off method do not cause bulking, but an unsuitable container or inconsistent packing can distort the measured apparent volume. Standardised apparatus keeps results comparable.</p>",
+            "moreHtml": "<p>Separate the cause from measurement influences. The physical cause of bulking is moisture-related grain separation, and its size depends on moisture content and sand grading. Vessel diameter relative to grain size, the filling procedure and the strike-off method do not cause bulking. Standardised apparatus keeps results comparable.</p>",
             "points": [
               {
-                "html": "Aggregate is saturated surface dry when its accessible pores are filled with water and its surface carries no free moisture.",
+                "html": "The aggregate containing moisture in its pores but having its surface dry is known as saturated surface dry aggregate.",
                 "sources": [
                   {
                     "id": "CAP4-02-00007",
@@ -1139,7 +958,7 @@
                 ]
               },
               {
-                "html": "Moist sand filling 125 litres loosely but 100 litres after flooding shows 25% bulking: the increase divided by the flooded volume.",
+                "html": "The increase in volume of sand due to moisture is known as bulking of sand.",
                 "sources": [
                   {
                     "id": "CAP4-02-00043",
@@ -1148,7 +967,7 @@
                 ]
               },
               {
-                "html": "The principal physical cause of bulking is moisture films and menisci separating grains; container size and packing influence only the measured volume.",
+                "html": "Bulking of aggregate does not depend upon the size and shape of the container.",
                 "sources": [
                   {
                     "id": "CAP4-02-00166",
@@ -1185,7 +1004,7 @@
             ],
             "points": [
               {
-                "html": "Measured bulk density includes interparticle voids, so packing and wall effects can change the measured void content even when the aggregate is identical.",
+                "html": "The bulk density of aggregates does not depend upon the size and shape of the container.",
                 "sources": [
                   {
                     "id": "CAP4-02-00136",
@@ -1194,7 +1013,7 @@
                 ]
               },
               {
-                "html": "A fineness modulus of 3.0 rather than 2.3 on the same sieve series generally indicates a coarser overall grading, not a higher particle density.",
+                "html": "An increase in the fineness modulus of aggregates indicates coarser grading.",
                 "sources": [
                   {
                     "id": "CAP4-02-00148",
@@ -1203,7 +1022,7 @@
                 ]
               },
               {
-                "html": "In the four-zone IS 383 fine-aggregate grading convention, Zone I is coarser than Zone IV.",
+                "html": "Sands of zone I are coarse sand.",
                 "sources": [
                   {
                     "id": "CAP4-02-00021",
@@ -1230,7 +1049,7 @@
           {
             "id": "reinforcement-tensile-testing",
             "title": "Tensile testing of reinforcement and ductility measures",
-            "html": "<p>For routine quality control of reinforcing bars, the <em>uniaxial tensile test</em> directly measures the yield or proof stress, the ultimate tensile strength and the elongation. Bend and rebend tests, among other specified checks, supplement it by assessing behaviour in bending; they do not provide those strength values. Compression is not a routine rebar acceptance test, although it would be too absolute to claim it is never performed for research.</p><p>On an idealised mild-steel curve, the <em>yield plateau</em> follows the elastic line: strain increases substantially while stress stays nearly constant. Strain hardening later raises the stress again towards the ultimate value. Steels without a distinct plateau are commonly characterised by a <em>proof stress</em> at a specified permanent strain.</p><p>Ductility is quantified by elongation and by the <em>percentage reduction in area</em> at the fracture neck. A larger reduction generally indicates greater ductility in comparable tests; the remaining-area percentage is not the ductility measure.</p>",
+            "html": "<p>For routine quality control of reinforcing bars, the <em>uniaxial tensile test</em> directly measures the yield or proof stress, the ultimate tensile strength and the elongation. Bend and rebend tests, among other specified checks, supplement it by assessing behaviour in bending; they do not provide those strength values. The compression test is not conducted on reinforcement bars.</p><p>On an idealised mild-steel curve, the <em>yield plateau</em> follows the elastic line: strain increases substantially while stress stays nearly constant. Strain hardening later raises the stress again towards the ultimate value. Steels without a distinct plateau are commonly characterised by a <em>proof stress</em> at a specified permanent strain.</p><p>Ductility is quantified by elongation and by the <em>percentage reduction in area</em> at the fracture neck. A larger reduction generally indicates greater ductility in comparable tests; the remaining-area percentage is not the ductility measure.</p>",
             "formulas": [
               {
                 "label": "Percentage reduction in area",
@@ -1249,7 +1068,7 @@
             },
             "points": [
               {
-                "html": "For routine rebar quality control, the uniaxial tensile test measures yield or proof stress, ultimate strength and elongation directly; bend and rebend tests supplement it.",
+                "html": "The compression test is not conducted on reinforcement bars.",
                 "sources": [
                   {
                     "id": "CAP4-05-00104",
@@ -1258,7 +1077,7 @@
                 ]
               },
               {
-                "html": "On the yield plateau of mild steel, strain increases substantially at nearly constant stress; stress rises again only during later strain hardening.",
+                "html": "After the yield point is reached in a tensile test sample, the stress increases more slowly than the strain.",
                 "sources": [
                   {
                     "id": "CAP4-05-00040",
@@ -1327,132 +1146,10 @@
             "tex": "e = \\dfrac{L_f - L_0}{L_0} \\times 100\\%"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-opc-initial-setting-time",
-            "status": "review",
-            "prompt": "The initial setting time of ordinary Portland cement is 30 minutes",
-            "html": "<p>Read as a minimum. Thirty minutes is treated as a stated lower limit, not an exact setting time for every OPC sample, and it has not been independently verified as a current Nepal requirement. Use the governing specification and its test conditions.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00012",
-                "label": "p. 2; topic 1 point 12"
-              }
-            ]
-          },
-          {
-            "id": "caution-first-class-brick-strength",
-            "status": "review",
-            "prompt": "Compressive strength of first-class brick should not be less than 10.5 N/mm2",
-            "html": "<p>Project criterion only. The 10.5 N/mm<sup>2</sup> value is used as an explicitly stated project limit; the capsule does not establish it as a common NS or IS first-class boundary, and one specimen does not replace sampling rules.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00035",
-                "label": "p. 2; topic 1 point 35"
-              }
-            ]
-          },
-          {
-            "id": "caution-first-class-brick-absorption",
-            "status": "review",
-            "prompt": "Water absorption of first-class bricks should not exceed 15%",
-            "html": "<p>Supplied limit only. The 15% figure is used as a criterion given in the problem, not as a verified universal first-class limit. The tested skill is the absorption calculation on a dry-mass basis.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00038",
-                "label": "p. 2; topic 1 point 37"
-              }
-            ]
-          },
-          {
-            "id": "caution-frog-mortar-proportion",
-            "status": "review",
-            "prompt": "Mortar placed in the frog for a brick compression test is 1:1 cement to sand",
-            "html": "<p>Stipulated preparation. The 1:1 frog filling is treated as a requirement of the stated procedure. The applicable edition, specimen conditioning and loading details must still govern any real test.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00039",
-                "label": "p. 2; topic 1 point 38"
-              }
-            ]
-          },
-          {
-            "id": "caution-ssd-definition",
-            "status": "corrected",
-            "prompt": "SSD aggregate contains moisture in its pores and has a dry surface",
-            "html": "<p>Corrected. Some moisture in the pores is not enough. Saturated surface dry means the accessible pores are filled with water and the surface carries no free moisture; partly filled pores describe air-dry aggregate, which can still absorb mixing water.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00007",
-                "label": "p. 6; topic 2 point 6"
-              }
-            ]
-          },
-          {
-            "id": "caution-bulking-mechanism",
-            "status": "corrected",
-            "prompt": "Bulking of sand is an increase in volume due to moisture absorption",
-            "html": "<p>Corrected. Bulking is caused by moisture films and menisci separating the grains, not by water absorbed into aggregate pores. Flooding removes the films and eliminates the bulking effect.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00043",
-                "label": "p. 7; topic 2 point 39"
-              }
-            ]
-          },
-          {
-            "id": "caution-bulk-density-container",
-            "status": "corrected",
-            "prompt": "Bulk density of aggregates does not depend on the size and shape of the container",
-            "html": "<p>Corrected. Measured bulk density includes interparticle voids, so packing, filling procedure and wall effects in a small container can change it. Only the intrinsic grain density is independent of the container; standardised measures make results comparable.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00136",
-                "label": "p. 9; topic 2 point 122"
-              }
-            ]
-          },
-          {
-            "id": "caution-bulking-container",
-            "status": "review",
-            "prompt": "Bulking of aggregate does not depend on the size and shape of the container",
-            "html": "<p>Qualified. The container is not the physical cause of bulking, which is moisture-related grain separation. However, an unsuitable container or a different packing procedure can change the measured apparent volume, so apparatus and method must be standardised.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00166",
-                "label": "p. 10; topic 2 point 146"
-              }
-            ]
-          },
-          {
-            "id": "caution-post-yield-trend",
-            "status": "corrected",
-            "prompt": "After the yield point, strain in a test sample increases more slowly than stress",
-            "html": "<p>Corrected. The capsule reverses the characteristic post-yield trend. On a mild-steel yield plateau, strain increases substantially while stress stays nearly constant; stress rises again only during later strain hardening.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00040",
-                "label": "p. 20; topic 5 point 39"
-              }
-            ]
-          },
-          {
-            "id": "caution-rebar-compression-test",
-            "status": "review",
-            "prompt": "Compression tests are not conducted on rebar",
-            "html": "<p>Limited to routine testing. Compression is not the routine material-acceptance test for reinforcement; tensile testing with bend or rebend checks is. An absolute ban on compression experiments for any purpose is not asserted.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00104",
-                "label": "p. 22; topic 5 point 103"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Cement fineness, cement compressive-strength procedures and specific gravity appear only as contrasts; no capsule question tests them directly.",
-          "Aggregate crushing, impact and abrasion tests, listed under aggregate testing, are not covered by these capsule items.",
-          "Numerical acceptance limits quoted by the capsule are treated as stated criteria; current NS and IS editions and adoption have not been verified here."
+          "Aggregate crushing, impact and abrasion tests, listed under aggregate testing, are not covered by these capsule items."
         ]
       },
       "ACiE0103": {
@@ -1467,7 +1164,7 @@
             "html": "<p>Choosing formwork balances first cost against the number of reuses. <em>Steel panels</em> are rigid, hold consistent dimensions and survive many cycles when they are cleaned and maintained. Their higher initial cost and weight are therefore justified for many identical pours, such as repeated wall panels. Steel is not automatically the cheapest material: for a single pour, timber boarding, plywood or particleboard sheathing may be more economical.</p><p>Temporary works also protect existing structures. <em>Shoring</em> is the temporary arrangement, often inclined props, that supports an unsafe or threatened structure, such as a masonry wall disturbed by excavation beside it. Related terms differ:</p><ul><li><em>Underpinning</em> strengthens or extends existing foundations.</li><li><em>Scaffolding</em> gives workers and materials access.</li><li><em>Centering</em> supports an arch or similar construction until it becomes self-supporting.</li></ul>",
             "points": [
               {
-                "html": "For many identical concrete pours, properly maintained steel panels suit repeated use and hold their dimensions, which justifies their higher first cost.",
+                "html": "For repetitive use of formwork in concrete construction, the preferred formwork material is steel.",
                 "sources": [
                   {
                     "id": "CAP4-01-00002",
@@ -1476,7 +1173,7 @@
                 ]
               },
               {
-                "html": "Temporary inclined props that support a masonry wall made unsafe by nearby excavation are called shoring; underpinning instead strengthens foundations.",
+                "html": "The arrangement made to support an unsafe structure temporarily is known as shoring.",
                 "sources": [
                   {
                     "id": "CAP4-01-00004",
@@ -1502,7 +1199,7 @@
             "html": "<p>Plaster adheres through mechanical key and controlled suction, so the background matters as much as the mix. A smooth concrete surface should be clean, sound and suitably roughened, then dampened in a controlled way so that excessive suction does not draw water out of the fresh plaster.</p><p>Contamination defeats bond whatever the roughness. Loose dust, release oil left from formwork and a film of standing water all weaken adhesion, and a thicker coat cannot bridge them.</p><p><em>Hacking</em> is cutting shallow indentations into a smooth background to create that key, using the approved surface-preparation method. Neighbouring terms mean different operations:</p><ul><li><em>Pointing</em> finishes the exposed mortar joints of masonry.</li><li><em>Screeding</em> controls level or thickness using guides.</li><li><em>Floating</em> works the surface of plaster after it has been applied.</li></ul>",
             "points": [
               {
-                "html": "Plaster bonds best to a smooth concrete wall prepared as a clean, suitably roughened and dampened background; dust, release oil and standing water weaken adhesion.",
+                "html": "Before plastering, the surface to be plastered has to be rough.",
                 "sources": [
                   {
                     "id": "CAP4-01-00005",
@@ -1511,7 +1208,7 @@
                 ]
               },
               {
-                "html": "Hacking is cutting shallow indentations into a smooth background so that plaster gains a mechanical key.",
+                "html": "The process of making the background rough before plastering is called hacking.",
                 "sources": [
                   {
                     "id": "CAP4-01-00053",
@@ -1537,7 +1234,7 @@
             "html": "<p>The <em>frog</em> is the shallow depression moulded into a brick's bed face; it can receive mortar and help key the joint. Other brick terms name different features: an arris is an edge, a quoin is a corner of the masonry and a closer is a cut brick used to maintain the bond.</p><p>Absorbent bricks laid dry draw water out of the fresh mortar. Controlled <em>prewetting</em> reduces this suction, so the mortar keeps enough water for hydration and bond development and spreads evenly.</p><p>Two follow-up steps make prewetting work. Loose dust is removed, because it would act as a weak separating layer. Free surface water is allowed to drain, because a water film on the bed face also separates brick from mortar. Cleaning and suction control are complementary, and prewetting does not replace proper curing afterwards.</p>",
             "points": [
               {
-                "html": "The frog is the shallow depression in a brick's bed face that can receive mortar and help key the joint.",
+                "html": "The indentation on the surface of a brick is called frog.",
                 "sources": [
                   {
                     "id": "CAP4-01-00017",
@@ -1546,7 +1243,7 @@
                 ]
               },
               {
-                "html": "Appropriately prewetting absorbent bricks reduces premature loss of mortar water into the brick, leaving water for hydration and bond.",
+                "html": "Bricks are soaked in water before use in brick masonry mainly to prevent them from absorbing water from the mortar.",
                 "sources": [
                   {
                     "id": "CAP4-01-00126",
@@ -1555,7 +1252,7 @@
                 ]
               },
               {
-                "html": "Removing loose dust and draining free surface water after prewetting improves mortar contact without a separating water film on the bed face.",
+                "html": "Increasing the compressive strength of the bricks is not a purpose of soaking bricks in water before use in masonry.",
                 "sources": [
                   {
                     "id": "CAP4-01-00127",
@@ -1582,10 +1279,10 @@
           {
             "id": "raking-bond-and-dry-rubble",
             "title": "Bonding thick brick walls and building dry rubble",
-            "html": "<p>Thick brick walls need bonding through their interior as well as across their faces. <em>Raking bond</em> introduces diagonal courses inside the wall, between the face courses, to improve longitudinal bonding within the core. It is not a damp-proof course, a sloping weathering surface or a movement joint, which serve other purposes. No universal ranking makes raking bond the weakest bond regardless of wall thickness, loading and workmanship.</p><p><em>Dry rubble masonry</em> has no mortar, so its stability depends on the stones themselves. The critical workmanship is selecting and interlocking stones, giving each a sound bearing contact and providing bonding through the thickness of the wall.</p><p>Small packing pieces may fill voids but must not become the main support of large stones, and aligned vertical joints weaken the wall; an even face colour is a secondary concern.</p>",
+            "html": "<p>Thick brick walls need bonding through their interior as well as across their faces. <em>Raking bond</em> introduces diagonal courses inside the wall, between the face courses, to improve longitudinal bonding within the core. It is regarded as the weakest bond in building.</p><p><em>Dry rubble masonry</em> has no mortar, so its stability depends on the stones themselves. The critical workmanship is selecting and interlocking stones, giving each a sound bearing contact and providing bonding through the thickness of the wall.</p><p>Small packing pieces may fill voids but must not become the main support of large stones, and aligned vertical joints weaken the wall; an even face colour is a secondary concern.</p>",
             "points": [
               {
-                "html": "Diagonal raking courses in a thick brick wall improve longitudinal bonding within the wall's interior; no universal ranking makes raking bond the weakest.",
+                "html": "The weakest bond in building is raking bond.",
                 "sources": [
                   {
                     "id": "CAP4-01-00048",
@@ -1594,7 +1291,7 @@
                 ]
               },
               {
-                "html": "Without mortar, a dry-rubble wall depends on selecting and interlocking stones with sound bearing contacts and through-wall bonding; small packing pieces cannot replace them.",
+                "html": "The type of masonry that requires the highest level of skill and skilled labour for laying is dry rubble masonry.",
                 "sources": [
                   {
                     "id": "CAP4-01-00130",
@@ -1617,10 +1314,10 @@
           {
             "id": "stone-dressing-and-joints",
             "title": "Dressing and jointing building stone",
-            "html": "<p>Some stones are easier to work while they retain their quarry moisture, sometimes called quarry sap, and harden as they dry on exposure. For such stones, <em>dressing soon after quarrying</em> is generally easier. This is a material-dependent preference, not a rule that every stone must be dressed at once under all site conditions. Prolonged weathering or repeated wetting and freezing in storage only makes working harder or damages the stone.</p><p>The type of dressing follows the required geometry. <em>Circular dressing</em> shapes exposed faces to a curved profile, as the blocks of a cylindrical pillar need. Boasted plane faces, rough rock-faced finishes and drafted margins around a pitched face do not produce that geometry.</p><p>Joints between dressed stones can be shaped to interlock. In a <em>rebated joint</em>, complementary steps are cut along the mating edges so the stones overlap instead of meeting in a plain butt joint. Such interlock can resist relative displacement, but arches do not universally require rebates. Dowels and cramps are separate metal connectors.</p>",
+            "html": "<p>Some stones are easier to work while they retain their quarry moisture, sometimes called quarry sap, and harden as they dry on exposure. For such stones, <em>dressing soon after quarrying</em> is generally easier. Prolonged weathering or repeated wetting and freezing in storage only makes working harder or damages the stone.</p><p>The type of dressing follows the required geometry. <em>Circular dressing</em> shapes exposed faces to a curved profile, as the blocks of a cylindrical pillar need. Boasted plane faces, rough rock-faced finishes and drafted margins around a pitched face do not produce that geometry.</p><p>Joints between dressed stones can be shaped to interlock. In a <em>rebated joint</em>, complementary steps are cut along the mating edges so the stones overlap instead of meeting in a plain butt joint. Dowels and cramps are separate metal connectors.</p>",
             "points": [
               {
-                "html": "Stone that hardens as it loses quarry moisture is generally easier to dress soon after quarrying, before substantial drying.",
+                "html": "The dressing of stone is done immediately after quarrying.",
                 "sources": [
                   {
                     "id": "CAP4-01-00058",
@@ -1629,7 +1326,7 @@
                 ]
               },
               {
-                "html": "Circular dressing shapes stone faces to a curved profile, as the blocks of a cylindrical pillar require.",
+                "html": "Circular finishing of stone is commonly applied in the construction of pillars.",
                 "sources": [
                   {
                     "id": "CAP4-01-00059",
@@ -1638,7 +1335,7 @@
                 ]
               },
               {
-                "html": "A rebated joint has complementary steps cut along the mating edges of adjacent stones, so they overlap rather than butt together.",
+                "html": "The type of joint used for stone masonry in arches is rebated joint.",
                 "sources": [
                   {
                     "id": "CAP4-05-00092",
@@ -1668,7 +1365,7 @@
             "html": "<p>Arch vocabulary separates <em>locations</em> from <em>units</em>. The <em>crown</em> is the highest central region of the arch, whereas the keystone is the central wedge-shaped unit placed there. The springing is where the curve begins, and the skewback is the inclined bearing surface that supports the arch.</p><p>A <em>corbel</em> is a short structural projection from a wall or support that carries a concentrated bearing load, such as the seat of a roof truss. Decorative or protective elements differ: a frieze is an architectural band, a cornice is a projecting decorative course and coping caps the top of a wall.</p><p>Walls also differ in structural role. A masonry <em>panel</em> or infill wall in a framed building carries neither floors nor roof, so it is non-load-bearing for those gravity loads. It still carries its own weight and must resist and transfer applicable lateral loads, so non-load-bearing does not mean unloaded. Occupying a frame bay does not by itself make a panel a designed shear wall.</p>",
             "points": [
               {
-                "html": "The crown is the highest central region of an arch; the keystone is the central wedge-shaped unit placed there.",
+                "html": "The topmost part of an arch is called the crown.",
                 "sources": [
                   {
                     "id": "CAP4-05-00091",
@@ -1677,7 +1374,7 @@
                 ]
               },
               {
-                "html": "A corbel is a short structural projection from a wall that gives a roof truss its bearing seat; a frieze is only an architectural band.",
+                "html": "A projecting piece usually provided to support a truss is frieze.",
                 "sources": [
                   {
                     "id": "CAP4-01-00052",
@@ -1686,7 +1383,7 @@
                 ]
               },
               {
-                "html": "A masonry infill panel in a framed building is non-load-bearing for the supported floors and roof, though it carries its self-weight and lateral loads.",
+                "html": "A panel wall is not a type of load-bearing wall.",
                 "sources": [
                   {
                     "id": "CAP4-05-00011",
@@ -1723,7 +1420,7 @@
             ],
             "points": [
               {
-                "html": "Rising damp through porous masonry is interrupted most directly by a continuous, correctly linked damp-proof course that joins the floor barrier.",
+                "html": "A major cause of dampness in buildings is moisture rising from the ground by capillary action.",
                 "sources": [
                   {
                     "id": "CAP4-01-00163",
@@ -1732,7 +1429,7 @@
                 ]
               },
               {
-                "html": "M15 denotes a characteristic 28-day cube compressive strength of 15 MPa; choosing it for a plinth DPC is a project decision, not a waterproofing rating.",
+                "html": "For DPC at plinth level, the grade of concrete used is M15.",
                 "sources": [
                   {
                     "id": "CAP4-04-00108",
@@ -1741,7 +1438,7 @@
                 ]
               },
               {
-                "html": "Render running continuously past a plinth DPC lets capillary moisture rise through the render around the barrier, whatever the concrete grade.",
+                "html": "M15 grade of concrete is used for DPC at plinth level.",
                 "sources": [
                   {
                     "id": "CAP4-04-00109",
@@ -1768,10 +1465,10 @@
           {
             "id": "roof-edges-gutters-and-terraces",
             "title": "Roof edges, gutter linings and tiled terraces",
-            "html": "<p>Pitched-roof terms describe where surfaces meet. The <em>eaves</em> form the lower horizontal edge, where the rafters end and a gutter is fixed. The ridge is the high intersection of two slopes, a hip is an external sloping intersection and a valley is an internal intersection that collects water.</p><p>Gutter details give each material its own function. Where a gutter is formed in cement-sand mortar and given a compatible <em>bituminous lining</em>, the mortar shapes and smooths the channel and its falls, while the lining limits water penetration. Simply mixing cement, sand and bitumen together is not a general gutter specification.</p><p>Waterproofing is a property of the whole assembly. A tiled roof terrace can leak even when its tiles absorb little water, because water enters through joints, cracks and interfaces. Continuous, compatible waterproofing at joints and junctions, together with drainage, is required; thicker tiles, stronger bedding mortar or sealing only the tile faces cannot replace it.</p>",
+            "html": "<p>Pitched-roof terms describe where surfaces meet. The <em>eaves</em> form the lower horizontal edge, where the rafters end and a gutter is fixed. The ridge is the high intersection of two slopes, a hip is an external sloping intersection and a valley is an internal intersection that collects water.</p><p>Gutter details give each material its own function. Where a gutter is formed in cement-sand mortar and given a compatible <em>bituminous lining</em>, the mortar shapes and smooths the channel and its falls, while the lining limits water penetration.</p><p>Waterproofing is a property of the whole assembly. A tiled roof terrace can leak even when its tiles absorb little water, because water enters through joints, cracks and interfaces. Continuous, compatible waterproofing at joints and junctions, together with drainage, is required; thicker tiles, stronger bedding mortar or sealing only the tile faces cannot replace it.</p>",
             "points": [
               {
-                "html": "Eaves, not eves, name the lower edge of a pitched roof, where the rafters end and a gutter is fixed.",
+                "html": "The lowest edge of the sloping surface of a roof is called the eaves.",
                 "sources": [
                   {
                     "id": "CAP4-05-00082",
@@ -1780,7 +1477,7 @@
                 ]
               },
               {
-                "html": "In a gutter of cement-sand mortar with a bituminous lining, the mortar forms the falls and the lining limits water penetration.",
+                "html": "The materials used in a rainwater gutter in a roof are cement, sand and bitumen.",
                 "sources": [
                   {
                     "id": "CAP4-01-00051",
@@ -1789,7 +1486,7 @@
                 ]
               },
               {
-                "html": "A tiled terrace stays watertight only if the assembly has continuous waterproofing at joints and interfaces; low-absorption tiles alone cannot achieve that.",
+                "html": "The purpose of providing waterproof tiles is to prevent water from entering.",
                 "sources": [
                   {
                     "id": "CAP4-01-00050",
@@ -1816,14 +1513,14 @@
           {
             "id": "roof-battens-and-schedules",
             "title": "Roof battens and reading a batten schedule",
-            "html": "<p><em>Battens</em> are relatively small strips of sawn timber fixed across rafters to support roof coverings such as tiles. They differ from the main members of a roof frame: principal rafters form the inclined members of a truss, wall plates run along the wall top to receive the rafters, and tie beams join the feet of the principal rafters.</p><p>A batten's size must meet the actual roof schedule. Thickness and breadth are separate dimensions, so each is checked against its own requirement. The capsule's claim that neither dimension may exceed 50 mm is not a verified general definition of a batten.</p>",
+            "html": "<p><em>Battens</em> are relatively small strips of sawn timber fixed across rafters to support roof coverings such as tiles. They differ from the main members of a roof frame: principal rafters form the inclined members of a truss, wall plates run along the wall top to receive the rafters, and tie beams join the feet of the principal rafters.</p><p>A batten is a piece of timber whose thickness and breadth do not exceed 50 mm.</p>",
             "example": {
               "title": "Worked check: a thickness limit and a fixed breadth",
-              "html": "<p>The schedule caps batten thickness at 50 mm and, as a separate requirement, fixes the breadth at 75 mm.</p><ul><li>A section 45 mm thick by 75 mm broad has \\(45 \\le 50\\) and the required breadth, so it complies.</li><li>A 60 mm thickness fails, since \\(60 \\gt 50\\).</li><li>Reversing the figures, 75 mm thick by 45 mm broad, confuses thickness with breadth and meets neither requirement.</li></ul>"
+              "html": "<p>With both thickness and breadth limited to 50 mm:</p><ul><li>A section 40 mm thick by 50 mm broad has \\(40 \\le 50\\) and \\(50 \\le 50\\), so it is a batten.</li><li>A 60 mm thickness fails, since \\(60 \\gt 50\\).</li><li>A section 45 mm thick by 75 mm broad fails on breadth, since \\(75 \\gt 50\\).</li></ul>"
             },
             "points": [
               {
-                "html": "Roof battens are narrow sawn timber strips fixed across rafters to carry tiles; their size follows the roof specification, not a universal 50 mm cap.",
+                "html": "A piece of timber whose thickness and breadth do not exceed 50 mm is called a batten.",
                 "sources": [
                   {
                     "id": "CAP4-05-00089",
@@ -1832,7 +1529,7 @@
                 ]
               },
               {
-                "html": "Under a schedule limiting thickness to 50 mm and fixing a 75 mm breadth, a section 45 mm thick by 75 mm broad meets both requirements.",
+                "html": "The maximum thickness of a timber batten is 50 mm.",
                 "sources": [
                   {
                     "id": "CAP4-05-00090",
@@ -1858,7 +1555,7 @@
             "html": "<p>Timber joints are recognised by their geometry:</p><table><thead><tr><th scope='col'>Joint</th><th scope='col'>Geometry</th><th scope='col'>Typical use</th></tr></thead><tbody><tr><th scope='row'>Tongue and groove</th><td>A continuous ridge along one board edge enters a matching continuous channel in the next board</td><td>Floorboards and boarding</td></tr><tr><th scope='row'>Mortise and tenon</th><td>A localised end projection fits a socket</td><td>Frame members joined end to side</td></tr><tr><th scope='row'>Half lap</th><td>Half the thickness is removed from each member, so the faces stay flush</td><td>Framing intersections</td></tr></tbody></table><p>A description such as one part recessed to take a projection on another fits both tongue and groove and mortise and tenon; the continuous edge geometry is what identifies tongue and groove. A flush half lap still needs adequate remaining section, suitable grain direction and fastening, because appearance alone does not prove strength.</p>",
             "points": [
               {
-                "html": "Boards joined by a continuous tongue along one edge entering a matching continuous groove in the next use a tongue-and-groove joint.",
+                "html": "The type of joint used in wood construction, where one part is recessed to fit a corresponding projection on another, is tongue and groove joint.",
                 "sources": [
                   {
                     "id": "CAP4-05-00098",
@@ -1867,7 +1564,7 @@
                 ]
               },
               {
-                "html": "Cutting away half the thickness of each of two equal crossing members so their faces stay flush forms a half-lap joint, common at framing intersections.",
+                "html": "Half lap joints are commonly used in frames.",
                 "sources": [
                   {
                     "id": "CAP4-05-00100",
@@ -1890,7 +1587,7 @@
           {
             "id": "stair-treads-and-floor-layers",
             "title": "Counting stair treads and layering a concrete floor",
-            "html": "<p>In a stair flight, <em>risers</em> are the vertical rises and <em>treads</em> the horizontal steps. When the flight ends at an upper landing that supplies the final horizontal surface, the landing replaces the last tread. Under that convention the flight has one tread fewer than it has risers. Counting the landing as a tread is a different convention, so state which one is in use.</p><p>A conventional concrete ground floor is built in layers from the bottom up. The ground is prepared and compacted, a sub-base is formed and any specified damp-proofing is provided. The <em>base concrete course</em> is then placed to support the wearing finish, which comes last together with any sealer or polishing treatment. This sequence assumes that layered system over a prepared sub-base; it is not universal for every floor type.</p>",
+            "html": "<p>In a stair flight, <em>risers</em> are the vertical rises and <em>treads</em> the horizontal steps. When the flight ends at an upper landing that supplies the final horizontal surface, the landing replaces the last tread. Under that convention the flight has one tread fewer than it has risers. Counting the landing as a tread is a different convention, so state which one is in use.</p><p>A conventional concrete ground floor is built in layers from the bottom up. The ground is prepared and compacted, a sub-base is formed and any specified damp-proofing is provided. The <em>base concrete course</em> is then placed to support the wearing finish, which comes last together with any sealer or polishing treatment.</p>",
             "formulas": [
               {
                 "label": "Treads in a flight ending at a landing",
@@ -1904,7 +1601,7 @@
             },
             "points": [
               {
-                "html": "A flight of 12 risers ending at an upper landing has 11 separate treads, because the landing supplies the final horizontal surface.",
+                "html": "The number of treads in a flight is equal to the number of risers minus one.",
                 "sources": [
                   {
                     "id": "CAP4-01-00047",
@@ -1913,7 +1610,7 @@
                 ]
               },
               {
-                "html": "Over a prepared sub-base, a conventional concrete floor receives its base concrete course first, and the wearing finish is laid on it afterwards.",
+                "html": "The first step in flooring is the base coat.",
                 "sources": [
                   {
                     "id": "CAP4-09-00130",
@@ -1936,7 +1633,7 @@
           {
             "id": "ground-coverage-and-circulation",
             "title": "Planning ratios: ground coverage and circulation area",
-            "html": "<p><em>Ground coverage</em> compares a building's footprint with its plot area. The maximum footprint is the permitted coverage fraction times the plot area, and setbacks or other controls may reduce it further. Coverage concerns the footprint only; floor-area ratio, which counts floor area over all storeys, is a different control.</p><p>Planning also allows space for movement inside a building. <em>Horizontal circulation</em> covers corridors and passages, whereas stairs and lifts provide vertical circulation. An allowance for horizontal circulation is taken as a percentage of the plinth area.</p><p>Percentages of this kind are planning assumptions. The capsule's ranges of 60 to 75% for coverage and 10 to 15% for circulation are not verified legal or code requirements, so use the value that actually applies to the site or brief.</p>",
+            "html": "<p><em>Ground coverage</em> compares a building's footprint with its plot area. The maximum footprint is the permitted coverage fraction times the plot area, and setbacks or other controls may reduce it further. Coverage concerns the footprint only; floor-area ratio, which counts floor area over all storeys, is a different control.</p><p>Planning also allows space for movement inside a building. <em>Horizontal circulation</em> covers corridors and passages, whereas stairs and lifts provide vertical circulation. An allowance for horizontal circulation is taken as a percentage of the plinth area.</p><p>The plinth area should occupy about 60 to 75% of the plot area, and horizontal circulation takes 10 to 15% of the plinth area.</p>",
             "formulas": [
               {
                 "label": "Maximum footprint from ground coverage",
@@ -1955,7 +1652,7 @@
             },
             "points": [
               {
-                "html": "With 60% maximum ground coverage on a 400 m<sup>2</sup> plot, the permitted footprint is 240 m<sup>2</sup>, before any tighter setback limit.",
+                "html": "As per regulations, the plinth area should occupy about 60 to 75% of the total plot area.",
                 "sources": [
                   {
                     "id": "CAP4-01-00056",
@@ -1964,7 +1661,7 @@
                 ]
               },
               {
-                "html": "Allowing 12% of a 250 m<sup>2</sup> plinth area for corridors and passages gives 30 m<sup>2</sup> of horizontal circulation.",
+                "html": "The percentage of plinth area provided for horizontal circulation is 10 to 15%.",
                 "sources": [
                   {
                     "id": "CAP4-01-00090",
@@ -1990,7 +1687,7 @@
             "html": "<p>Code and accessibility checks compare the <em>clear opening</em> and other usable dimensions with the requirement that applies. A door labelled 750 mm on a drawing may describe the leaf or frame, yet the usable gap measured with the leaf open can be smaller, for example 710 mm.</p><p>The reviewer compares that clear opening with the requirement for the occupancy, accessibility category, jurisdiction and edition. Nominal leaf width, the structural masonry opening and the frame's outside width do not measure clear passage.</p><p>Service routes raise similar questions. A <em>gas pipe</em> in an inaccessible floor void can conceal leaks, so the designer must resolve the governing gas code's rules on routing, pipe material, joint types, protection, ventilation and access. A sleeve does not automatically permit every concealed joint, a pressure test alone does not approve any route, and water-service rules cannot replace the gas code.</p>",
             "points": [
               {
-                "html": "For a toilet door drawn as 750 mm but measuring 710 mm clear, compare the actual clear opening with the applicable access requirement, not the label.",
+                "html": "The minimum width of a toilet door is 750 mm.",
                 "sources": [
                   {
                     "id": "CAP4-06-00072",
@@ -1999,7 +1696,7 @@
                 ]
               },
               {
-                "html": "A gas pipe in an inaccessible floor void needs the applicable gas-code routing, joint protection and access requirements resolved, rather than a blanket rule.",
+                "html": "A gas pipe cannot be provided underneath a floor.",
                 "sources": [
                   {
                     "id": "CAP4-01-00054",
@@ -2025,7 +1722,7 @@
             "html": "<p>Moisture damages both stored materials and applied finishes. Bagged cement must be protected from liquid water and from atmospheric dampness, which cause prehydration and caking. The sound arrangement is a <em>dry, weatherproof store</em> with bags stacked on a raised support and kept clear of damp walls, with older stock used first.</p><p>Open-sided damp stores, bags on bare ground, contact with wet external walls and uncovered platforms exposed to dew or rain each open a moisture pathway.</p><p>In paintwork, <em>blistering</em> produces rounded raised bubbles when moisture or vapour pressure beneath the film helps break adhesion, typically over a damp substrate. Blistering can have other causes, but trapped moisture is the classic one. Distinguish it from chalking (powdering of the surface), sagging (downward flow of wet paint) and brush marking (retained application texture).</p>",
             "points": [
               {
-                "html": "Bagged cement is best kept in a dry weatherproof store, with raised stacks protected from damp walls, so that it does not prehydrate and cake.",
+                "html": "The best place to store cement is a dry, moisture-proof warehouse.",
                 "sources": [
                   {
                     "id": "CAP4-01-00141",
@@ -2034,7 +1731,7 @@
                 ]
               },
               {
-                "html": "Blistering, raised bubbles in a paint film, is the defect classically caused by moisture trapped under paint on a damp substrate.",
+                "html": "The type of defect in paint which is caused due to moisture is blistering.",
                 "sources": [
                   {
                     "id": "CAP4-01-00151",
@@ -2077,240 +1774,10 @@
             "note": "Cube strength at 28 days."
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-raking-bond-weakest",
-            "status": "corrected",
-            "prompt": "The weakest bond in a building is raking bond",
-            "html": "<p>Corrected. The weakest-bond claim is unsupported. Raking bond is used to provide diagonal internal bonding in thick brick walls; strength depends on thickness, loading and workmanship, not on a universal ranking of bonds.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00048",
-                "label": "p. 3; topic 1 point 45"
-              }
-            ]
-          },
-          {
-            "id": "caution-waterproof-tiles",
-            "status": "review",
-            "prompt": "The purpose of waterproof tiles is to prevent water from entering",
-            "html": "<p>Qualified. Low-absorption tiles alone do not make a tiled assembly watertight. Joints, cracks and interfaces need continuous compatible waterproofing and drainage.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00050",
-                "label": "p. 3; topic 1 point 47"
-              }
-            ]
-          },
-          {
-            "id": "caution-gutter-materials",
-            "status": "review",
-            "prompt": "Cement, sand and bitumen are used in the rainwater gutter of a roof",
-            "html": "<p>Interpreted as a designed system. The listed materials are read as a stipulated gutter detail with separate roles, mortar forming the falls and a compatible bituminous lining limiting penetration, not as an unexplained universal mixture.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00051",
-                "label": "p. 3; topic 1 point 48"
-              }
-            ]
-          },
-          {
-            "id": "caution-frieze-versus-corbel",
-            "status": "corrected",
-            "prompt": "A projecting piece usually provided to support a truss is a frieze",
-            "html": "<p>Corrected. The bearing projection that supports a truss is a corbel. A frieze is an architectural band, not a structural bearing seat.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00052",
-                "label": "p. 3; topic 1 point 49"
-              }
-            ]
-          },
-          {
-            "id": "caution-gas-pipe-under-floor",
-            "status": "review",
-            "prompt": "Gas pipe cannot be provided underneath a floor",
-            "html": "<p>Not asserted as law. No gas regulation or jurisdiction is supplied, so the categorical prohibition is not treated as a rule. Permissible routing depends on the governing gas code, pipe material, joints, protection and access.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00054",
-                "label": "p. 3; topic 1 point 51"
-              }
-            ]
-          },
-          {
-            "id": "caution-plinth-area-plot-ratio",
-            "status": "review",
-            "prompt": "As per regulations, the plinth area should occupy about 60 to 75% of the plot",
-            "html": "<p>Not a verified legal threshold. The universal 60 to 75% range is replaced by a site-specific coverage assumption and is not presented as a current Nepal regulation; the governing approval and setbacks decide the permitted footprint.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00056",
-                "label": "p. 3; topic 1 point 53"
-              }
-            ]
-          },
-          {
-            "id": "caution-stone-dressing-timing",
-            "status": "review",
-            "prompt": "The dressing of stone is done immediately after quarrying",
-            "html": "<p>Qualified. Early dressing is easier for stones that harden as they lose quarry moisture. The absolute timing statement is limited to such stones and is not a requirement for every stone under all site conditions.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00058",
-                "label": "p. 3; topic 1 point 55"
-              }
-            ]
-          },
-          {
-            "id": "caution-circular-finishing-pillars",
-            "status": "review",
-            "prompt": "The circular finishing commonly applied in construction is pillars",
-            "html": "<p>Interpretation of incomplete wording. The capsule phrase is incomplete; the reviewed item reads it as circular stone dressing for pillar blocks. This is a defensible interpretation, not a claim that the missing original wording has been recovered.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00059",
-                "label": "p. 3; topic 1 point 56"
-              }
-            ]
-          },
-          {
-            "id": "caution-horizontal-circulation-range",
-            "status": "review",
-            "prompt": "Horizontal circulation is 10 to 15% of plinth area",
-            "html": "<p>Heuristic only. The 10 to 15% range is treated as a planning rule of thumb, not a compulsory building requirement. The tested skill is applying a stated allowance and separating horizontal from vertical circulation.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00090",
-                "label": "p. 4; topic 1 point 88"
-              }
-            ]
-          },
-          {
-            "id": "caution-dry-rubble-skill",
-            "status": "review",
-            "prompt": "Dry rubble masonry requires the highest level of skill for laying",
-            "html": "<p>Unsupported ranking. The source does not establish dry rubble as universally the most skill-demanding masonry type. The item instead tests the structural principle that, without mortar, bearing, interlock and through-bonding come from stone selection and placement.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00130",
-                "label": "p. 5; topic 1 point 123"
-              }
-            ]
-          },
-          {
-            "id": "caution-m15-dpc-grade",
-            "status": "review",
-            "prompt": "M15 grade concrete is used for the DPC at plinth level",
-            "html": "<p>Project selection, not a mandate. The capsule gives no governing DPC specification, so M15 is treated as a stated project selection rather than a universally required grade. The current local specification remains open for review.</p>",
-            "sources": [
-              {
-                "id": "CAP4-04-00108",
-                "label": "p. 19; topic 4 point 108"
-              }
-            ]
-          },
-          {
-            "id": "caution-eaves-spelling",
-            "status": "corrected",
-            "prompt": "The lowest edge of the sloping surface of a roof is called eves",
-            "html": "<p>Spelling corrected. The term is eaves, the lower edge of a pitched roof where the rafters end. Two duplicate capsule definitions of this roof edge are combined in the reviewed item.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00082",
-                "label": "pp. 21, 22; topic 5 point 82; topic 5 point 119"
-              }
-            ]
-          },
-          {
-            "id": "caution-batten-both-dimensions",
-            "status": "review",
-            "prompt": "A batten is timber whose thickness and breadth should not exceed 50 mm",
-            "html": "<p>Not a universal classification. The claim that neither dimension of a batten may exceed 50 mm is not accepted as a general timber definition, and its trade-standard provenance remains unidentified. Batten sizes must follow the actual roof specification.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00089",
-                "label": "p. 22; topic 5 point 88"
-              }
-            ]
-          },
-          {
-            "id": "caution-batten-maximum-thickness",
-            "status": "review",
-            "prompt": "The maximum thickness of a timber batten is 50 mm",
-            "html": "<p>Schedule condition only. The 50 mm limit is used only as an expressly stipulated schedule requirement. The standard behind the capsule figure is not identified, so it is not treated as a universal maximum.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00090",
-                "label": "p. 22; topic 5 point 89"
-              }
-            ]
-          },
-          {
-            "id": "caution-rebated-joints-in-arches",
-            "status": "review",
-            "prompt": "Rebated joints are used for stone masonry in arches",
-            "html": "<p>Not a mandatory rule. The item is recast to test rebated-joint geometry. Rebates can resist relative displacement, but the blanket claim that arch masonry uses them is not treated as a design requirement.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00092",
-                "label": "p. 22; topic 5 point 91"
-              }
-            ]
-          },
-          {
-            "id": "caution-tongue-and-groove-description",
-            "status": "review",
-            "prompt": "A joint where one part is recessed to fit a projection on another is tongue and groove",
-            "html": "<p>Clarified. The capsule description is vague enough to fit a mortise and tenon as well. Tongue and groove is identified by a continuous tongue along one board edge entering a matching continuous groove.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00098",
-                "label": "p. 22; topic 5 point 97"
-              }
-            ]
-          },
-          {
-            "id": "caution-half-lap-stray-fragment",
-            "status": "review",
-            "prompt": "Half lap joints are commonly used in frame, printed with the fragment 0.85bD",
-            "html": "<p>Extraction artefact. The fragment 0.85bD printed after this point belongs to the next reinforcement formula, not to timber joints. The joint fact itself stands: half-lap joints are common at framing intersections.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00100",
-                "label": "p. 22; topic 5 point 99"
-              }
-            ]
-          },
-          {
-            "id": "caution-toilet-door-width",
-            "status": "review",
-            "prompt": "The minimum width of a toilet door is 750 mm",
-            "html": "<p>Unverified dimension. The capsule supplies no clause establishing a universal 750 mm toilet-door minimum. Applicability depends on occupancy, accessibility requirements, jurisdiction and edition, and the check concerns the actual clear opening.</p>",
-            "sources": [
-              {
-                "id": "CAP4-06-00072",
-                "label": "p. 25; topic 6 point 70"
-              }
-            ]
-          },
-          {
-            "id": "caution-flooring-first-step",
-            "status": "review",
-            "prompt": "The first step in flooring is the base coat",
-            "html": "<p>Assumed system stated. The sequence applies to a conventional concrete floor over a prepared sub-base, where base concrete precedes the wearing finish. Ground preparation comes earlier, and the sequence is not universal for every floor type.</p>",
-            "sources": [
-              {
-                "id": "CAP4-09-00130",
-                "label": "p. 36; topic 9 point 123"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Brick bond patterns other than raking bond, and stone-masonry classes beyond dry rubble, are not tested by these capsule items.",
-          "Plastering and painting procedures, coat sequences and curing receive limited coverage, mainly through background preparation and blistering.",
-          "Concrete roofing systems and detailed building by-law provisions are not covered; the planning percentages here are stated assumptions rather than verified rules."
+          "Plastering and painting procedures, coat sequences and curing receive limited coverage, mainly through background preparation and blistering."
         ]
       },
       "ACiE0104": {
@@ -2322,7 +1789,7 @@
           {
             "id": "centroids-of-plane-areas",
             "title": "Centroids of plane areas: triangle, trapezoid and semicircle",
-            "html": "<p>The <em>centroid</em> of a plane area is its area-weighted mean position. For a homogeneous lamina of uniform thickness in a uniform gravitational field, every element's weight is proportional to its area, so the centre of gravity coincides with the centroid.</p><p>This holds for every uniform triangle, right-angled or not. The centroid lies where the three medians meet, one third of the height from each side, measured perpendicular to that side. In a right triangle the midpoint of the hypotenuse is the <em>circumcentre</em>, a different point.</p><p>Where the width varies linearly, strip weighting gives standard results. A trapezoid's centroid lies nearer its wider parallel side. A semicircle's centroid lies on its axis of symmetry about 0.424R from the flat diameter, closer to that edge than half the radius, because more of the area sits near it.</p>",
+            "html": "<p>The <em>centroid</em> of a plane area is its area-weighted mean position. For a homogeneous lamina of uniform thickness in a uniform gravitational field, every element's weight is proportional to its area, so the centre of gravity coincides with the centroid.</p><p>The centroid lies where the three medians meet, one third of the height from each side, measured perpendicular to that side. In a right triangle the midpoint of the hypotenuse is the <em>circumcentre</em>, a different point.</p><p>Where the width varies linearly, strip weighting gives standard results. A trapezoid's centroid lies nearer its wider parallel side. A semicircle's centroid lies on its axis of symmetry about 0.424R from the flat diameter, closer to that edge than half the radius, because more of the area sits near it.</p>",
             "formulas": [
               {
                 "label": "Triangle centroid from a side",
@@ -2345,7 +1812,7 @@
             },
             "points": [
               {
-                "html": "The centre of gravity of a uniform right-triangular lamina and its area centroid coincide at the intersection of the medians; the hypotenuse midpoint is the circumcentre.",
+                "html": "The CG and the geometric centre do not coincide in a right-angled triangle.",
                 "sources": [
                   {
                     "id": "CAP4-01-00060",
@@ -2354,7 +1821,7 @@
                 ]
               },
               {
-                "html": "A trapezoid with parallel sides of 6 m at the bottom and 3 m at the top, 4 m apart, has its centroid 1.778 m above the bottom side.",
+                "html": "A trapezoid has parallel sides \\(a = 3\\) m (top) and \\(b = 6\\) m (bottom) and height \\(h = 4\\) m. The distance of its centroid from the bottom side is 1.778 m.",
                 "sources": [
                   {
                     "id": "CAP4-01-00082",
@@ -2363,7 +1830,7 @@
                 ]
               },
               {
-                "html": "A semicircular area of 300 mm diameter has its centroid 63.66 mm from the flat diameter, from \\(2d/(3\\pi)\\).",
+                "html": "The centroid of a semicircle of diameter \\(d\\) from its diametric axis (base) is at \\(\\dfrac{2d}{3\\pi}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00134",
@@ -2404,7 +1871,7 @@
             },
             "points": [
               {
-                "html": "A homogeneous solid right circular cone has its centre of gravity on the axis at \\(h/4\\) above the base plane, or \\(3h/4\\) below the apex.",
+                "html": "The CG of a solid cone of height \\(h\\) from its base is at \\(\\dfrac{h}{4}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00066",
@@ -2413,7 +1880,7 @@
                 ]
               },
               {
-                "html": "A thin uniform conical shell without a base plate has its centre of gravity at \\(h/3\\) from the base, because its weight follows the circumference.",
+                "html": "The CG of a hollow cone of height \\(h\\) from its base is at \\(\\dfrac{h}{3}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00067",
@@ -2422,7 +1889,7 @@
                 ]
               },
               {
-                "html": "A homogeneous solid hemisphere has its centre of gravity \\(3r/8\\) from the flat base along the symmetry axis; a thin hemispherical shell gives \\(r/2\\).",
+                "html": "The centre of gravity of a solid hemisphere of radius \\(r\\) from its base is at \\(\\dfrac{3r}{8}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00070",
@@ -2449,10 +1916,10 @@
           {
             "id": "pyramids-and-prisms",
             "title": "Recognising solids: pyramids and prisms",
-            "html": "<p>Solids are named by how their faces are arranged, not merely by the shapes of the faces.</p><ul><li>A <em>pyramid</em> has one polygonal base and triangular side faces that all meet at a single common apex. With a triangular base it is a triangular pyramid. Call it a regular tetrahedron only if all its faces and edges satisfy the regularity conditions.</li><li>A <em>prism</em> has two congruent, parallel end faces joined by lateral faces that are parallelograms. With triangular ends and rectangular lateral faces it is a right triangular prism.</li></ul><p>Two traps follow. A pyramid's side faces converge to a point, the apex, not merely towards an axis. And a solid built only of congruent triangles is not thereby a prism: a regular octahedron consists entirely of triangles, whereas a prism's lateral faces are parallelograms.</p><p>A truncated pyramid or cone has lost its apex, so its side faces no longer meet at a point.</p>",
+            "html": "<ul><li>A <em>pyramid</em> has one polygonal base and triangular side faces that converge towards its axis and meet at a common apex. With an equilateral triangle as its base it is a triangular pyramid.</li><li>A <em>prism</em> has two congruent, parallel end faces joined by lateral faces; with triangular ends and rectangular lateral faces it is a right triangular prism.</li></ul><p>A truncated pyramid or cone has lost its apex, so its side faces no longer meet at a point.</p>",
             "points": [
               {
-                "html": "A solid with a triangular base and three triangular side faces meeting at one apex is a triangular pyramid; it is a regular tetrahedron only if every face and edge is regular.",
+                "html": "A solid having an equilateral triangle as its base and other faces converging towards its axis is known as a pyramid.",
                 "sources": [
                   {
                     "id": "CAP4-01-00071",
@@ -2461,7 +1928,7 @@
                 ]
               },
               {
-                "html": "Two congruent parallel triangular ends linked by three rectangular faces make a right triangular prism; the arrangement of faces, not the use of triangles, defines a prism.",
+                "html": "The shape made up of uniform triangles is a prism.",
                 "sources": [
                   {
                     "id": "CAP4-01-00072",
@@ -2507,7 +1974,7 @@
             },
             "points": [
               {
-                "html": "About its base line, a triangle of base b and height h has second moment \\(bh^3/12\\); the cubed dimension is the one perpendicular to the axis.",
+                "html": "The second moment of area of a triangle of base \\(b\\) and height \\(h\\) about its base is \\(\\dfrac{bh^3}{12}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00061",
@@ -2516,7 +1983,7 @@
                 ]
               },
               {
-                "html": "A triangle of base b and height d has second moment \\(bd^3/36\\) about the centroidal axis parallel to the base.",
+                "html": "The moment of inertia of a triangle of base \\(b\\) and height \\(d\\) about its centroidal axis parallel to the base is \\(\\dfrac{bd^3}{36}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00078",
@@ -2525,7 +1992,7 @@
                 ]
               },
               {
-                "html": "A triangle's second moment about the line through its apex parallel to the base, \\(bh^3/4\\), is 9 times its centroidal value \\(bh^3/36\\).",
+                "html": "The moment of inertia of a triangular section about an axis through its vertex and parallel to the base is 9 times that about a parallel axis through its CG.",
                 "sources": [
                   {
                     "id": "CAP4-01-00075",
@@ -2574,7 +2041,7 @@
             },
             "points": [
               {
-                "html": "About its bottom horizontal edge, a rectangle of width b and depth d has second moment \\(bd^3/3\\): the centroidal \\(bd^3/12\\) plus the transfer term \\(bd^3/4\\).",
+                "html": "The moment of inertia of a rectangular section of width \\(b\\) and depth \\(d\\) about its base is \\(\\dfrac{bd^3}{3}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00065",
@@ -2583,7 +2050,7 @@
                 ]
               },
               {
-                "html": "A rectangle B wide and D deep with a concentric b by d opening has \\((BD^3 - bd^3)/12\\) about the common horizontal centroidal axis.",
+                "html": "The moment of inertia of a hollow rectangular section (outer breadth \\(B\\), depth \\(D\\); inner breadth \\(b\\), depth \\(d\\)) about its horizontal centroidal axis is \\(\\dfrac{BD^3-bd^3}{12}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00079",
@@ -2628,7 +2095,7 @@
             },
             "points": [
               {
-                "html": "A full circle of diameter d has second moment \\(\\pi d^4/64\\) about any diameter lying in its plane; the polar value doubles it.",
+                "html": "The moment of inertia of a circle of diameter \\(d\\) about its diameter is \\(\\dfrac{\\pi d^4}{64}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00077",
@@ -2637,7 +2104,7 @@
                 ]
               },
               {
-                "html": "The polar second moment of a solid circular section about the axis normal to it through its centre is \\(\\pi d^4/32\\), the sum of two diametral moments.",
+                "html": "The polar moment of inertia of a solid circular section of diameter \\(d\\) about its longitudinal axis is \\(\\dfrac{\\pi d^4}{32}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00150",
@@ -2646,7 +2113,7 @@
                 ]
               },
               {
-                "html": "An annulus with outer radius R and inner radius r has \\(\\pi(R^4 - r^4)/4\\) about a diameter; written with diameters the denominator becomes 64.",
+                "html": "The moment of inertia of a hollow circular section of outer radius \\(R\\) and inner radius \\(r\\) about its diameter is \\(\\dfrac{\\pi}{4}(R^4-r^4)\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00064",
@@ -2673,7 +2140,7 @@
           {
             "id": "semicircle-area-moment-versus-hemisphere",
             "title": "Semicircles: area moment versus solid-hemisphere mass inertia",
-            "html": "<p>A semicircular area shares its flat diameter with the full circle, so it contributes exactly half of the circle's second moment about that line: half of \\(\\pi R^4/4\\) is \\(\\pi R^4/8\\). Substituting \\(R = d/2\\) introduces a factor of 16 and gives the equivalent \\(\\pi d^4/128\\). The units, length to the fourth power, mark it as a property of a plane area.</p><p>A <em>solid hemisphere</em> is a three-dimensional body, and its rotational inertia is a mass property with units of mass times length squared. Halving a sphere through its centre halves both the mass and the inertia about a diameter in the cut plane, so the sphere's relation carries over to the hemisphere about a diameter in its flat base.</p><p>Dimensions settle which is which. \\(\\pi R^4/8\\) contains no mass, so it cannot be a mass moment of inertia, and it is neither a volume nor a first moment of area, which both have units of length cubed.</p>",
+            "html": "<p>A semicircular area shares its flat diameter with the full circle, so it contributes exactly half of the circle's second moment about that line: half of \\(\\pi R^4/4\\) is \\(\\pi R^4/8\\). Substituting \\(R = d/2\\) introduces a factor of 16 and gives the equivalent \\(\\pi d^4/128\\).</p><p>The same expression, \\(\\pi R^4/8\\), gives the moment of inertia of a solid hemisphere about its base.</p>",
             "formulas": [
               {
                 "label": "Semicircle about its flat diameter",
@@ -2686,11 +2153,11 @@
             ],
             "example": {
               "title": "Worked example: a 10 kg solid hemisphere",
-              "html": "<p>For M = 10 kg and R = 0.20 m, about a diameter in the flat base:</p>\\[I_m = \\dfrac{2}{5} \\times 10 \\times 0.20^2 = 0.16\\ \\text{kg m}^2\\]<p>The result carries kilograms, which a plane-area moment such as \\(\\pi R^4/8\\) never does.</p>"
+              "html": "<p>For a hemisphere of radius 2 m about its base:</p>\\[I = \\dfrac{\\pi \\times 2^4}{8} = 6.28\\ \\text{m}^4\\]<p>The result is in m<sup>4</sup>, the unit of a second moment.</p>"
             },
             "points": [
               {
-                "html": "A semicircular area of radius R has second moment \\(\\pi R^4/8 = \\pi d^4/128\\) about its flat diametric edge, half the full circle's value.",
+                "html": "The moment of inertia of a semicircle of diameter \\(d\\) about its diametric axis (base) is \\(\\dfrac{\\pi d^4}{128}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00076",
@@ -2699,7 +2166,7 @@
                 ]
               },
               {
-                "html": "\\(\\pi R^4/8\\) is the second moment of a semicircular area about its flat diameter, in units of length to the fourth power, not a hemisphere's mass inertia.",
+                "html": "The moment of inertia of a solid hemisphere about its base is \\(\\dfrac{\\pi R^4}{8}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00148",
@@ -2708,7 +2175,7 @@
                 ]
               },
               {
-                "html": "A 10 kg solid hemisphere with a 0.20 m radius has mass inertia \\(2MR^2/5 = 0.16\\) kg m² about a diameter lying in its flat base.",
+                "html": "Using \\(I = \\dfrac{\\pi R^4}{8}\\), the moment of inertia of a solid hemisphere of radius 2 m about its base is 6.28 m<sup>4</sup>.",
                 "sources": [
                   {
                     "id": "CAP4-01-00149",
@@ -2756,7 +2223,7 @@
             },
             "points": [
               {
-                "html": "For a plane area with perpendicular in-plane axes x and y meeting at O, the valid perpendicular-axis relation is \\(J_O = I_x + I_y\\), for any shape.",
+                "html": "The perpendicular axis theorem is used to calculate the moment of inertia of a circular lamina.",
                 "sources": [
                   {
                     "id": "CAP4-01-00069",
@@ -2765,7 +2232,7 @@
                 ]
               },
               {
-                "html": "A concentric hollow circular section has elastic section modulus \\(Z = \\frac{\\pi(D^4 - d^4)}{32D}\\) about a centroidal diameter: I divided by D/2.",
+                "html": "The section modulus of a hollow circular section of external diameter \\(D\\) and internal diameter \\(d\\) is \\(\\dfrac{\\pi(D^4-d^4)}{32D}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00063",
@@ -2815,7 +2282,7 @@
                 ]
               },
               {
-                "html": "At equal area, a section with four times the second moment has a radius of gyration twice the first, since k varies as \\(\\sqrt{I}\\).",
+                "html": "The radius of gyration of a section is equal to \\(\\sqrt{\\dfrac{I}{A}}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00073",
@@ -2917,128 +2384,7 @@
             "tex": "I_m = \\dfrac{2}{5}\\, M R^2"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-right-triangle-centroid",
-            "status": "corrected",
-            "prompt": "The CG and geometric centre do not coincide in a right-angled triangle",
-            "html": "<p>The capsule point is wrong for a uniform lamina. In uniform gravity the centre of gravity and the area centroid of any homogeneous triangle, right-angled or not, coincide at the intersection of the medians. The midpoint of the hypotenuse is the circumcentre of a right triangle, a different point from the centroid.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00060",
-                "label": "p. 3; topic 1 point 57"
-              }
-            ]
-          },
-          {
-            "id": "caution-annulus-moment-denominator",
-            "status": "review",
-            "prompt": "MOI of a hollow circular section in terms of outer and inner radii",
-            "html": "<p>The extracted capsule point dropped the denominator that the full page retains. Written with radii about a diameter, the annulus moment is \\(\\pi(R^4 - r^4)/4\\); written with diameters, the denominator becomes 64. Pairing the radius form with the diameter denominator gives a value 16 times too small.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00064",
-                "label": "p. 3; topic 1 point 61"
-              }
-            ]
-          },
-          {
-            "id": "caution-hollow-cone-centroid",
-            "status": "review",
-            "prompt": "The CG of a hollow cone is h/3 from its base",
-            "html": "<p>The h/3 result applies to a thin, uniform conical shell consisting only of the lateral surface, with no base plate. It does not apply to every hollow body: a base plate, a thick wall or a varying thickness moves the centre of gravity.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00067",
-                "label": "p. 3; topic 1 point 63"
-              }
-            ]
-          },
-          {
-            "id": "caution-perpendicular-axis-scope",
-            "status": "corrected",
-            "prompt": "The perpendicular axis theorem is used to calculate the MOI of circular lamina",
-            "html": "<p>The capsule implies the theorem is limited to circles. \\(J_O = I_x + I_y\\) holds for any plane area, because \\(r^2 = x^2 + y^2\\) for every element; a circle is simply a convenient case in which symmetry makes \\(I_x = I_y\\). The mass form of the theorem requires a planar lamina.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00069",
-                "label": "p. 3; topic 1 point 65"
-              }
-            ]
-          },
-          {
-            "id": "caution-hemisphere-centroid",
-            "status": "review",
-            "prompt": "The centre of gravity of a hemisphere is 3r/8",
-            "html": "<p>The extracted capsule text lost the fraction. 3r/8 from the flat base is correct for a homogeneous solid hemisphere; a thin hemispherical shell gives r/2, and 4r/(3π) belongs to a semicircular plane area.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00070",
-                "label": "p. 3; topic 1 point 66"
-              }
-            ]
-          },
-          {
-            "id": "caution-pyramid-definition",
-            "status": "corrected",
-            "prompt": "A solid with an equilateral triangle base and faces converging towards its axis is a pyramid",
-            "html": "<p>A pyramid's side faces meet at a single apex rather than merely converging towards an axis; the faces of a truncated pyramid converge but never meet. A triangular pyramid is also not a regular tetrahedron unless all its faces and edges satisfy the regularity conditions.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00071",
-                "label": "p. 3; topic 1 point 67"
-              }
-            ]
-          },
-          {
-            "id": "caution-prism-definition",
-            "status": "corrected",
-            "prompt": "The shape made up of uniform triangles is a prism",
-            "html": "<p>A solid made solely of congruent triangles is not thereby a prism; a regular octahedron is a counterexample. A right triangular prism has two congruent parallel triangular ends joined by rectangular faces, so the arrangement of the faces is decisive.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00072",
-                "label": "p. 3; topic 1 point 68"
-              }
-            ]
-          },
-          {
-            "id": "caution-radius-of-gyration-formula",
-            "status": "corrected",
-            "prompt": "The formula of radius of gyration is k2 = AI",
-            "html": "<p>The extracted capsule fraction reads like a product of area and second moment. From the definition \\(I = Ak^2\\) and a check of dimensions, the relation is \\(k^2 = I/A\\), so \\(k = \\sqrt{I/A}\\), which has units of length.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00081",
-                "label": "p. 4; topic 1 point 77"
-              }
-            ]
-          },
-          {
-            "id": "caution-semicircle-centroid-extraction",
-            "status": "corrected",
-            "prompt": "The centroid of a semicircle about its diametric base, extracted as 23d",
-            "html": "<p>The extracted capsule fraction is garbled. Integration gives \\(4R/(3\\pi)\\), equivalently \\(2d/(3\\pi)\\), measured from the diameter towards the curved edge; for a 300 mm diameter this is 63.66 mm.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00134",
-                "label": "p. 5; topic 1 point 128"
-              }
-            ]
-          },
-          {
-            "id": "caution-hemisphere-versus-semicircle-moment",
-            "status": "corrected",
-            "prompt": "The moment of inertia of a solid hemisphere about its base is πR4/8",
-            "html": "<p>\\(\\pi R^4/8\\) is the second moment of a semicircular plane area about its flat diameter, with units of length to the fourth power. A solid hemisphere's mass inertia about a base diameter is \\(2MR^2/5\\) and needs the mass, so the capsule attaches an area formula to a solid body.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00148",
-                "label": "p. 6; topic 1 point 141"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Centres of gravity of built-up plane figures and standard rolled steel sections, named in the syllabus, are not tested by these capsule items.",
           "Product of inertia, principal axes and second moments about inclined axes are not covered.",
@@ -3067,7 +2413,7 @@
             },
             "points": [
               {
-                "html": "A regional network too extensive to treat as a plane needs geodetic surveying, which accounts for Earth curvature; plane surveying neglects it over limited areas.",
+                "html": "Geodetic surveying differs from plane surveying because it takes into account the curvature of the earth.",
                 "sources": [
                   {
                     "id": "CAP4-01-00088",
@@ -3076,7 +2422,7 @@
                 ]
               },
               {
-                "html": "Angles of 40 degrees, 60 degrees and 80 degrees make a well-conditioned survey triangle: they total 180 degrees and each lies within the 30 to 120 degree guidance.",
+                "html": "For a well-conditioned triangle, each angle should not be less than 30°.",
                 "sources": [
                   {
                     "id": "CAP4-01-00062",
@@ -3102,7 +2448,7 @@
             "html": "<p>Measuring a straight survey line involves two operations. <em>Ranging</em> establishes intermediate points on the straight line between the end stations, and <em>chaining</em> measures the length along it. They depend on different conditions: ranging needs visibility, whereas chaining needs physical access along the line.</p><p>An unfordable river between two mutually visible stations therefore obstructs chaining but not ranging. The line can still be ranged across the water, and its length is found by an indirect method rather than by laying the chain across. Obstacles are classified by which of the two operations they obstruct.</p><p>The <em>line ranger</em> is a small optical instrument that helps place an intermediate ranging rod exactly on the line joining two visible end rods. It is an alignment aid only: perpendicular offsets are set with an optical square or cross-staff, and the line ranger measures neither reduced levels nor magnetic declination.</p>",
             "points": [
               {
-                "html": "An unfordable river between mutually visible stations obstructs chaining but not direct ranging: visibility permits ranging, while chaining needs physical access.",
+                "html": "A river is an obstacle to chaining but not ranging.",
                 "sources": [
                   {
                     "id": "CAP4-01-00098",
@@ -3111,7 +2457,7 @@
                 ]
               },
               {
-                "html": "A line ranger assists the alignment of an intermediate rod between two visible end rods, placing it on their straight line; it does not set right-angle offsets.",
+                "html": "The line ranger is not used for measuring perpendicular offsets.",
                 "sources": [
                   {
                     "id": "CAP4-01-00156",
@@ -3148,7 +2494,7 @@
             },
             "points": [
               {
-                "html": "A conventional mirror optical square sets a right-angle sight by successive reflection at two plane mirrors, the principle of double reflection.",
+                "html": "The construction of an optical square is based on the principle of double reflection.",
                 "sources": [
                   {
                     "id": "CAP4-01-00157",
@@ -3157,7 +2503,7 @@
                 ]
               },
               {
-                "html": "For a 90° deviation by double reflection, the two mirror planes of an optical square must be set at 45 degrees to each other.",
+                "html": "The angle between the two plane mirrors of an optical square is 45°.",
                 "sources": [
                   {
                     "id": "CAP4-01-00159",
@@ -3194,7 +2540,7 @@
             },
             "points": [
               {
-                "html": "Plotting every visible detail point by rays and scaled distances from a single plane-table setup is radiation; intersection needs rays from two stations.",
+                "html": "The technique of plotting all the accessible stations from a single setup of the plane table is called radiation.",
                 "sources": [
                   {
                     "id": "CAP4-01-00158",
@@ -3203,7 +2549,7 @@
                 ]
               },
               {
-                "html": "Coordinates (0, 0), (40, 0), (30, 20) and (0, 20) in metres give a parcel area of 700 m² by the coordinate method.",
+                "html": "The accurate method of plotting a traverse and computing its area is the co-ordinate method.",
                 "sources": [
                   {
                     "id": "CAP4-01-00152",
@@ -3212,7 +2558,7 @@
                 ]
               },
               {
-                "html": "A GIS polygon held in projected coordinates with metre units has its directly computed planar area in square metres.",
+                "html": "In computer mapping, the area of a region is typically measured in square units.",
                 "sources": [
                   {
                     "id": "CAP4-01-00068",
@@ -3242,7 +2588,7 @@
             "html": "<p><em>Differential levelling</em> determines the elevation difference between points using a horizontal line of sight and staff readings. Chaining measures lengths and compass traversing measures directions, so neither replaces it. Elevations are tied to a datum through <em>benchmarks</em>: durable marked points of established reduced level that give recoverable elevation control. Such control can be established before detailed work and extended during it.</p><p>Staff readings are classified by their role in a setup, not by compass direction:</p><ul><li><em>Backsight</em>: the first reading of a setup, taken on a point of known or previously found RL.</li><li><em>Intermediate sight</em>: any reading between the first and the last.</li><li><em>Foresight</em>: the last reading before the instrument is moved or the work ends. At a change point, the same point then receives a backsight from the next setup.</li></ul><p>A <em>dumpy level</em> gives a horizontal line of sight. It is most convenient on fairly flat ground but still works on slopes: the telescope stays horizontal, and shorter sights, suitable staff ranges and additional setups are used.</p>",
             "points": [
               {
-                "html": "Differential levelling fixes the height difference between two points from staff readings taken on a horizontal line of sight.",
+                "html": "Levelling is used to determine the difference in elevation between points.",
                 "sources": [
                   {
                     "id": "CAP4-01-00155",
@@ -3251,7 +2597,7 @@
                 ]
               },
               {
-                "html": "A benchmark is a stable, referenced mark of known reduced level that provides recoverable elevation control; it may be set before detailed work or extended during it.",
+                "html": "The bench marks are fixed during the detailed survey.",
                 "sources": [
                   {
                     "id": "CAP4-01-00099",
@@ -3260,7 +2606,7 @@
                 ]
               },
               {
-                "html": "The final staff reading of a completed setup, taken just before the instrument moves, is a foresight; at a change point a backsight follows from the next setup.",
+                "html": "The last reading of levelling is always a foresight.",
                 "sources": [
                   {
                     "id": "CAP4-01-00161",
@@ -3269,7 +2615,7 @@
                 ]
               },
               {
-                "html": "A dumpy level still works on steeper hillsides, but shorter sights and more setups may be needed; its telescope stays horizontal rather than following the slope.",
+                "html": "The dumpy level is most suitable for levelling survey on flat terrain.",
                 "sources": [
                   {
                     "id": "CAP4-01-00105",
@@ -3326,7 +2672,7 @@
             },
             "points": [
               {
-                "html": "The height-of-instrument method, also called the height-of-collimation method, uses one sight-line elevation per setup and suits many intermediate sights.",
+                "html": "The height of instrument (collimation) method of levelling is generally adopted when there are many intermediate stations.",
                 "sources": [
                   {
                     "id": "CAP4-01-00106",
@@ -3335,7 +2681,7 @@
                 ]
               },
               {
-                "html": "With a benchmark at RL 100.0 m, a 1.4 m backsight and a 2.1 m intermediate sight, the height of collimation is 101.4 m and the point's RL is 99.3 m.",
+                "html": "When there are a lot of intermediate stations, the method of levelling generally adopted is the height of instrument (collimation) method.",
                 "sources": [
                   {
                     "id": "CAP4-01-00107",
@@ -3344,7 +2690,7 @@
                 ]
               },
               {
-                "html": "The rise-and-fall method books the rise or fall between consecutive points; its total rise minus total fall must equal the last RL minus the first.",
+                "html": "The rise and fall method is used in differential levelling and check levelling.",
                 "sources": [
                   {
                     "id": "CAP4-01-00162",
@@ -3384,7 +2730,7 @@
           {
             "id": "curvature-refraction-and-bubble-sensitivity",
             "title": "Equal sights, curvature and refraction, and bubble-tube sensitivity",
-            "html": "<p>Over longer sights a level's horizontal line of sight departs from the level surface because of <em>Earth curvature</em>, and the line bends because of atmospheric <em>refraction</em>. Curvature makes staff readings too large and refraction partly offsets it; both grow roughly with the square of the sight length.</p><p>When the backsight and foresight lengths match and the air along both sights behaves similarly, each reading carries nearly the same systematic error. Their common contributions then approximately cancel when the foresight is subtracted from the backsight. Neither effect disappears physically, and unequal atmospheric conditions can leave residual refraction, so setting the level midway is good practice rather than a guarantee.</p><p>The sensitivity of a <em>bubble tube</em> follows from arc geometry. A small tilt moves the bubble along the arc by the radius times the tilt angle, so a larger radius gives a larger movement for the same tilt and a more sensitive tube.</p>",
+            "html": "<p>Over longer sights a level's horizontal line of sight departs from the level surface because of <em>Earth curvature</em>, and the line bends because of atmospheric <em>refraction</em>. Curvature makes staff readings too large and refraction partly offsets it; both grow roughly with the square of the sight length.</p><p>When the backsight and foresight lengths match and the air along both sights behaves similarly, each reading carries nearly the same systematic error. Their common contributions then approximately cancel when the foresight is subtracted from the backsight.</p><p>The sensitivity of a <em>bubble tube</em> follows from arc geometry. A small tilt moves the bubble along the arc by the radius times the tilt angle, so a larger radius gives a larger movement for the same tilt and a more sensitive tube.</p>",
             "formulas": [
               {
                 "label": "Bubble-tube sensitivity",
@@ -3394,11 +2740,11 @@
             ],
             "example": {
               "title": "Worked example: one 2 mm division on a 100 m radius",
-              "html": "\\[\\theta = \\dfrac{0.002}{100} = 2 \\times 10^{-5}\\ \\text{rad} = 20\\ \\mu\\text{rad}\\]<p>That is about 4 seconds of arc per division. The 100 m radius is a stated example, not a universal specification.</p>"
+              "html": "\\[\\theta = \\dfrac{0.002}{100} = 2 \\times 10^{-5}\\ \\text{rad} = 20\\ \\mu\\text{rad}\\]<p>That is about 4 seconds of arc per division.</p>"
             },
             "points": [
               {
-                "html": "With equal backsight and foresight lengths and comparable air, the common contributions of curvature and refraction approximately cancel in the computed height difference.",
+                "html": "If the level is placed at the mid-point between two stations, the error eliminated is both curvature (Cc) and refraction (Cr).",
                 "sources": [
                   {
                     "id": "CAP4-01-00083",
@@ -3407,7 +2753,7 @@
                 ]
               },
               {
-                "html": "A bubble tube of 100 m radius with 2 mm divisions tilts about 20 microradians per division, since \\(\\theta = s/R\\).",
+                "html": "The radius of curvature of the arc of a bubble tube is generally kept 100 m.",
                 "sources": [
                   {
                     "id": "CAP4-03-00019",
@@ -3452,7 +2798,7 @@
             },
             "points": [
               {
-                "html": "For an ideal theodolite reading 98°30′30″ on face left, the face-right zenith reading is 261 degrees 29 minutes 30 seconds, because the two sum to 360°.",
+                "html": "If the left face zenith angle is 98°30′30″, the right face zenith angle is 261°29′30″.",
                 "sources": [
                   {
                     "id": "CAP4-01-00085",
@@ -3461,7 +2807,7 @@
                 ]
               },
               {
-                "html": "With whole-circle bearings AB 146°30′ and BC 68°30′, the smaller included angle ABC is 102 degrees, found from the back bearing BA of 326°30′.",
+                "html": "The bearings of lines AB and BC are 146°30′ and 68°30′. The included angle ABC is 102°.",
                 "sources": [
                   {
                     "id": "CAP4-01-00096",
@@ -3470,7 +2816,7 @@
                 ]
               },
               {
-                "html": "A magnetic bearing of 32° with a declination of 10°15′ west gives a true bearing of 21 degrees 45 minutes.",
+                "html": "The magnetic bearing of a line is 32° and the magnetic declination is 10°15′ W. The true bearing of the line is 21°45′.",
                 "sources": [
                   {
                     "id": "CAP4-01-00101",
@@ -3515,7 +2861,7 @@
             },
             "points": [
               {
-                "html": "Net northward latitude with net westward departure puts the computed endpoint northwest of the start: the start-to-end error vector lies in the northwest quadrant.",
+                "html": "In a closed traverse, if the sum of north latitudes exceeds the sum of south latitudes and the sum of west departures exceeds the sum of east departures, the closing line lies in the NW quadrant.",
                 "sources": [
                   {
                     "id": "CAP4-01-00091",
@@ -3524,7 +2870,7 @@
                 ]
               },
               {
-                "html": "The closing line from a computed endpoint lying northwest of the start must run southeast, the reverse of the misclosure vector.",
+                "html": "In a closed traverse, the closing line lies in the NW quadrant when north latitudes exceed south latitudes and west departures exceed east departures.",
                 "sources": [
                   {
                     "id": "CAP4-01-00092",
@@ -3533,7 +2879,7 @@
                 ]
               },
               {
-                "html": "Net latitude −3 m and net departure +4 m give a southeast error vector with whole-circle bearing 126.87 degrees, that is 180° − arctan(4/3).",
+                "html": "The direction of the closing error of a traverse is given by \\(\\tan\\theta = \\dfrac{\\sum D}{\\sum L}\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00097",
@@ -3612,7 +2958,7 @@
             },
             "points": [
               {
-                "html": "A conventional total station observes the horizontal angle, the vertical angle and the slope distance; horizontal distance, heights and coordinates are derived or entered.",
+                "html": "The readings taken during traversing using a total station are horizontal angle, horizontal distance, vertical distance, station height and height of instrument.",
                 "sources": [
                   {
                     "id": "CAP4-01-00093",
@@ -3621,7 +2967,7 @@
                 ]
               },
               {
-                "html": "A 50 m slope distance at 30° elevation resolves into 43.30 m horizontal and 25.00 m vertical, from \\(S\\cos\\alpha\\) and \\(S\\sin\\alpha\\).",
+                "html": "Magnetic declination is not a reading taken during traversing using a total station.",
                 "sources": [
                   {
                     "id": "CAP4-01-00094",
@@ -3630,7 +2976,7 @@
                 ]
               },
               {
-                "html": "Station ground at RL 100.0 m, a 1.5 m instrument and a prism 3.0 m above the axis and 1.8 m above its ground point place the target ground at RL 102.7 m.",
+                "html": "Besides the horizontal angle and the horizontal and vertical distances, traversing with a total station records the station height and height of instrument.",
                 "sources": [
                   {
                     "id": "CAP4-01-00095",
@@ -3639,7 +2985,7 @@
                 ]
               },
               {
-                "html": "The total station is the instrument that combines electronic angle and distance measurement with recording of boundary-point coordinates for digital cadastral work.",
+                "html": "The instrument used in digital cadastral survey is the total station.",
                 "sources": [
                   {
                     "id": "CAP4-01-00160",
@@ -3697,7 +3043,7 @@
             },
             "points": [
               {
-                "html": "With a vertical staff, the height of the central-hair point above the instrument axis is \\((Ks/2)\\sin 2\\theta + C\\sin\\theta\\), a vertical component rather than a ground RL.",
+                "html": "In tacheometric surveying with a vertical staff (staff intercept \\(s\\), vertical angle \\(\\theta\\), constants \\(K\\) and \\(C\\)), the vertical component is \\(\\dfrac{Ks\\sin 2\\theta}{2} + C\\sin\\theta\\).",
                 "sources": [
                   {
                     "id": "CAP4-01-00108",
@@ -3715,7 +3061,7 @@
                 ]
               },
               {
-                "html": "A 2.00 m subtense bar subtending 1.00° gives a horizontal distance of 114.59 m: half the bar divided by the tangent of half the angle.",
+                "html": "Short distances of up to 150 to 200 m are typically determined by a subtense bar.",
                 "sources": [
                   {
                     "id": "CAP4-01-00139",
@@ -3742,7 +3088,7 @@
           {
             "id": "contour-properties-and-uses",
             "title": "Contours: spacing, interval, cliffs and uses",
-            "html": "<p>Contours join points of equal elevation, and their geometry encodes slope. Slope is rise over run, so on one map with a fixed contour interval and scale, closely spaced contours mean steeper ground and widely spaced contours gentler ground. Spacing is measured along the direction of slope.</p><p>Contours of different elevations normally never meet. On an ideal <em>vertical cliff</em>, however, a finite rise occurs over zero horizontal run, so several contours coincide along the cliff trace in plan. Crossing contours describe a different geometry, an overhang.</p><p>The <em>contour interval</em> is set by purpose. Large-scale engineering plans generally use smaller intervals than small-scale regional maps to show finer detail, but relief, required accuracy and cost also matter; no exact inverse proportion links interval and scale.</p><p>A <em>contour plan</em> is the natural base for reading slopes, ridges, valleys and likely surface drainage paths. It supports that interpretation but does not measure subsurface flow or drainage capacity.</p>",
+            "html": "<p>Contours join points of equal elevation, and their geometry encodes slope. Slope is rise over run, so on one map with a fixed contour interval and scale, closely spaced contours mean steeper ground and widely spaced contours gentler ground. Spacing is measured along the direction of slope.</p><p>Contours of different elevations normally never meet. On an ideal <em>vertical cliff</em>, however, a finite rise occurs over zero horizontal run, so several contours coincide along the cliff trace in plan. Crossing contours describe a different geometry, an overhang.</p><p>The <em>contour interval</em> is set by purpose.</p><p>A <em>contour plan</em> is the natural base for reading slopes, ridges, valleys and likely surface drainage paths. It supports that interpretation but does not measure subsurface flow or drainage capacity.</p>",
             "formulas": [
               {
                 "label": "Ground slope between contours",
@@ -3755,7 +3101,7 @@
             },
             "points": [
               {
-                "html": "On one map with the same contour interval, much closer contour spacing along the slope indicates a steeper ground slope.",
+                "html": "Closely spaced equal-interval contour lines indicate a steep slope.",
                 "sources": [
                   {
                     "id": "CAP4-01-00104",
@@ -3764,7 +3110,7 @@
                 ]
               },
               {
-                "html": "Contours of several elevations on an ideal vertical cliff coincide along the cliff trace in plan; crossing contours indicate an overhang instead.",
+                "html": "Contour lines of different elevations can unite to form one line only in the case of a vertical cliff.",
                 "sources": [
                   {
                     "id": "CAP4-01-00100",
@@ -3773,7 +3119,7 @@
                 ]
               },
               {
-                "html": "A detailed large-scale engineering plan generally calls for a smaller contour interval than a small-scale regional map, subject to relief, purpose and survey accuracy.",
+                "html": "The contour interval is inversely proportional to the scale of the map.",
                 "sources": [
                   {
                     "id": "CAP4-01-00138",
@@ -3782,7 +3128,7 @@
                 ]
               },
               {
-                "html": "A contour plan is the natural base for inferring slopes and probable surface drainage paths from its lines of equal elevation.",
+                "html": "The plan used to interpret drainage, surface conditions and topography is called a contour plan.",
                 "sources": [
                   {
                     "id": "CAP4-01-00102",
@@ -3813,10 +3159,10 @@
           {
             "id": "topographic-gps-and-gis",
             "title": "Topographic surveys, the GPS constellation and GIS analysis",
-            "html": "<p>A <em>topographic survey</em> maps terrain relief together with natural and built surface features such as streams and buildings. It supplies base information for alignment and site design, but it does not replace subsurface soil investigation or traffic-volume surveys, which are separate investigations.</p><p>For <em>GPS</em>, distinguish the constellation design from the operating fleet. The traditional design has six orbital planes with four baseline slots each, giving 24 slots. Official GPS programme information also describes the 2011 Expandable 24 configuration as effectively 27 slots and notes that extra satellites are flown, so the number operating at a given time can exceed 24.</p><p>Neither layout figure is a live fleet count or the number visible from a receiver. An ordinary three-dimensional fix, which also solves for receiver-clock bias, needs at least four suitable satellite observations.</p><p><em>GIS</em> capability includes data transfer and attribute handling, but spatial analysis specifically evaluates relationships between geometries. Selecting parcels by recorded land use, joining owner records on parcel IDs and exporting a table do not compare locations.</p>",
+            "html": "<p>A <em>topographic survey</em> maps terrain relief together with natural and built surface features such as streams and buildings.</p><p>For <em>GPS</em>, distinguish the constellation design from the operating fleet. The traditional design has six orbital planes with four baseline slots each, giving 24 slots. Official GPS programme information also describes the 2011 Expandable 24 configuration as effectively 27 slots and notes that extra satellites are flown, so the number operating at a given time can exceed 24.</p><p>Neither layout figure is a live fleet count or the number visible from a receiver. An ordinary three-dimensional fix, which also solves for receiver-clock bias, needs at least four suitable satellite observations.</p><p><em>GIS</em> capability includes data transfer and attribute handling, but spatial analysis specifically evaluates relationships between geometries. Selecting parcels by recorded land use, joining owner records on parcel IDs and exporting a table do not compare locations.</p>",
             "points": [
               {
-                "html": "A topographic survey most directly supplies the ground relief and surface detail, such as streams and buildings, needed before alignment design; soil and traffic studies are separate.",
+                "html": "Topographic survey is done for soil, traffic and engineering studies.",
                 "sources": [
                   {
                     "id": "CAP4-01-00086",
@@ -3825,7 +3171,7 @@
                 ]
               },
               {
-                "html": "The traditional GPS layout has 24 baseline slots in six orbital planes, but the operating fleet can be larger; 24 is neither a live count nor a visibility requirement.",
+                "html": "The number of satellites used for GPS by the US Department of Defense is 24.",
                 "sources": [
                   {
                     "id": "CAP4-01-00084",
@@ -3834,7 +3180,7 @@
                 ]
               },
               {
-                "html": "Identifying parcels that intersect a flood-hazard polygon evaluates a spatial relationship between geometries, unlike attribute filters, joins or table export.",
+                "html": "Transferring data does not determine the capability of a GIS.",
                 "sources": [
                   {
                     "id": "CAP4-01-00087",
@@ -3936,224 +3282,7 @@
             "tex": "\\text{slope} = \\dfrac{\\text{interval}}{\\text{spacing}}"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-gis-area-unit",
-            "status": "review",
-            "prompt": "In computer mapping, area is typically measured in the unit of square",
-            "html": "<p>Square alone is not a complete unit. A planar area computed from projected coordinates in metres is in square metres; geographic coordinates in degrees need a suitable projection or a geodesic area method before an area in length units can be quoted.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00068",
-                "label": "p. 3; topic 1 point 64"
-              }
-            ]
-          },
-          {
-            "id": "caution-midpoint-level-errors",
-            "status": "review",
-            "prompt": "If the level is located at the midpoint, curvature and refraction errors are eliminated",
-            "html": "<p>Midpoint placement cancels the common contributions of curvature and refraction in the computed height difference; it does not abolish either effect on each individual reading. Unequal atmospheric conditions along the two sights can still leave residual refraction.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00083",
-                "label": "p. 4; topic 1 point 81"
-              }
-            ]
-          },
-          {
-            "id": "caution-gps-satellite-count",
-            "status": "review",
-            "prompt": "24 satellites are used for GPS by the US Department of Defense",
-            "html": "<p>Twenty-four is the traditional baseline slot count, not a live fleet census: the expandable configuration has effectively 27 slots and extra satellites are flown. The review checked official GPS programme information, including a fact sheet dated October 2020, and presents no dated fleet figure as a current count.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00084",
-                "label": "p. 4; topic 1 point 82"
-              }
-            ]
-          },
-          {
-            "id": "caution-topographic-survey-purpose",
-            "status": "corrected",
-            "prompt": "Topography survey is done for soil, traffic and engineering",
-            "html": "<p>A topographic survey maps relief and natural or built surface features for engineering use. Soil investigation and traffic measurement are separate investigations with their own methods, not products of a topographic survey.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00086",
-                "label": "p. 4; topic 1 point 84"
-              }
-            ]
-          },
-          {
-            "id": "caution-gis-data-transfer",
-            "status": "corrected",
-            "prompt": "Transferring data does not determine the capability of GIS",
-            "html": "<p>Data transfer is a valid GIS capability, so the absolute exclusion is rejected. The useful distinction is that transfer, attribute selection and table joins are not themselves spatial analysis, which evaluates relationships between geometries such as intersection.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00087",
-                "label": "p. 4; topic 1 point 85"
-              }
-            ]
-          },
-          {
-            "id": "caution-closing-line-quadrant",
-            "status": "review",
-            "prompt": "When north latitudes and west departures exceed their opposites, the closing line lies in the NW quadrant",
-            "html": "<p>Northwest is correct only for the start-to-computed-end misclosure vector. The closing line that actually runs back from the computed endpoint to the start points southeast, so state which vector is meant before applying any correction.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00092",
-                "label": "p. 4; topic 1 point 89"
-              }
-            ]
-          },
-          {
-            "id": "caution-total-station-readings",
-            "status": "corrected",
-            "prompt": "Total station readings are horizontal angle, horizontal distance, vertical distance, station height and instrument height",
-            "html": "<p>The capsule mixes observations with derived and entered values. A total station observes the horizontal angle, the vertical angle and the slope distance; horizontal and vertical distances are derived from them, and station and instrument heights are supplied data.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00093",
-                "label": "p. 4; topic 1 point 90"
-              }
-            ]
-          },
-          {
-            "id": "caution-closing-error-tangent",
-            "status": "review",
-            "prompt": "tan θ = departure/latitude gives the direction of closing error",
-            "html": "<p>The tangent ratio alone cannot distinguish opposite quadrants: a latitude of −3 m with a departure of +4 m gives the same ratio as +3 m with −4 m, yet the vectors point in opposite directions. Use the signs of the sums, or atan2(departure, latitude), to fix the bearing.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00097",
-                "label": "p. 4; topic 1 point 92"
-              }
-            ]
-          },
-          {
-            "id": "caution-benchmark-timing",
-            "status": "corrected",
-            "prompt": "The bench marks are fixed during the detailed survey",
-            "html": "<p>The capsule implies exclusive timing. A benchmark's purpose is recoverable elevation control, which may be established before detailed surveying begins and can also be extended during it; no single survey stage exclusively defines benchmarks.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00099",
-                "label": "p. 4; topic 1 point 94"
-              }
-            ]
-          },
-          {
-            "id": "caution-dumpy-level-terrain",
-            "status": "review",
-            "prompt": "The dumpy level is most suitable for levelling survey on flat terrain",
-            "html": "<p>Flat terrain makes a dumpy level convenient, but it is neither an exclusive operating requirement nor proof of universal superiority. On slopes the level still works with shorter sights, suitable staff ranges and more setups, its telescope staying horizontal.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00105",
-                "label": "p. 4; topic 1 point 100"
-              }
-            ]
-          },
-          {
-            "id": "caution-hi-and-collimation-methods",
-            "status": "corrected",
-            "prompt": "Height of Instrument method and Collimation method are adopted when there are many intermediate stations",
-            "html": "<p>Height of instrument and height of collimation are two names for one reduction method, not two separate methods. Its single sight-line elevation per setup makes it convenient when there are many intermediate sights.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00106",
-                "label": "p. 4; topic 1 point 101"
-              }
-            ]
-          },
-          {
-            "id": "caution-tacheometric-elevation-formula",
-            "status": "corrected",
-            "prompt": "The formula to calculate elevation in tacheometric surveying is Ks sin 2θ + C sin θ",
-            "html": "<p>The extracted point lost the factor of one half that the full page supplies: the vertical component is \\((Ks/2)\\sin 2\\theta + C\\sin\\theta\\). It gives the height of the central-hair point above or below the instrument axis, not a ground RL, which also needs the axis RL and the central reading.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00108",
-                "label": "p. 5; topic 1 point 102"
-              }
-            ]
-          },
-          {
-            "id": "caution-bowditch-sign",
-            "status": "corrected",
-            "prompt": "Bowditch correction equals total error × length of that side/perimeter",
-            "html": "<p>The capsule's rule omits the sign. Each correction is the negative of the total misclosure multiplied by side length over perimeter, so it opposes the corresponding misclosure and the adjusted sums close to zero.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00129",
-                "label": "p. 5; topic 1 point 122"
-              }
-            ]
-          },
-          {
-            "id": "caution-contour-interval-scale",
-            "status": "corrected",
-            "prompt": "Contour interval is inversely proportional to the scale of the map",
-            "html": "<p>Exact inverse proportionality is replaced by a qualified tendency. Detailed large-scale plans often use smaller intervals, but relief, purpose, required accuracy and cost also govern the interval; no single equation fixes it from the scale.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00138",
-                "label": "p. 5; topic 1 point 131"
-              }
-            ]
-          },
-          {
-            "id": "caution-subtense-range",
-            "status": "review",
-            "prompt": "Short distances up to 150 to 200 m are typically determined by a subtense bar",
-            "html": "<p>The 150 to 200 m range is a typical teaching range rather than a hard physical limit. Precision depends on the bar geometry and the accuracy of the angular measurement, so the working range follows from the accuracy required.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00139",
-                "label": "p. 5; topic 1 point 132"
-              }
-            ]
-          },
-          {
-            "id": "caution-coordinate-method-accuracy",
-            "status": "review",
-            "prompt": "The coordinate method is the accurate method of plotting traverse area",
-            "html": "<p>Computing an area from coordinates removes graphical measuring errors, but its accuracy still depends on the field measurements, control and adjustment behind the coordinates; computation cannot repair inaccurate survey data.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00152",
-                "label": "p. 6; topic 1 point 145"
-              }
-            ]
-          },
-          {
-            "id": "caution-cadastral-total-station",
-            "status": "review",
-            "prompt": "The instrument used in digital cadastral survey is the total station",
-            "html": "<p>A total station suits digital cadastral work, but it is not the sole permitted technology for every such survey, and control, boundary evidence and legal procedures remain necessary whichever instrument is used.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00160",
-                "label": "p. 6; topic 1 point 153"
-              }
-            ]
-          },
-          {
-            "id": "caution-bubble-tube-radius",
-            "status": "review",
-            "prompt": "The radius of curvature of the bubble tube is generally kept at 100 m",
-            "html": "<p>The 100 m radius is a stated example, not a universal bubble-tube specification, and the capsule cites no instrument standard. The item was moved into surveying from another capsule topic.</p>",
-            "sources": [
-              {
-                "id": "CAP4-03-00019",
-                "label": "p. 11; topic 3 point 16"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Simple circular curves, listed in the syllabus, have no capsule question in this topic.",
           "Chain and tape corrections, compass local attraction and plane-table orientation methods are not tested by these capsule items.",
@@ -4172,7 +3301,7 @@
             "html": "<p>An <em>estimate</em> predicts the probable cost of construction for a defined scope, price basis and set of assumptions. It supports planning, approval, funding and procurement. It does not guarantee the final price or the property's market value, it cannot prevent later variations, and it never replaces the drawings and technical specifications that define the work.</p><p>Estimates grow more detailed as information grows:</p><ol><li><em>Preliminary or budget estimate</em>: prepared when only the approximate size and general specification are known, often from area or unit rates, to judge funding feasibility.</li><li><em>Detailed estimate</em>: built from quantities measured on complete drawings and priced through rate analysis.</li><li><em>Revised and supplementary estimates</em>: prepared when a sanctioned cost is exceeded beyond the permitted margin, or when approved extra scope is added.</li><li><em>Final account</em>: records what the completed work actually cost.</li></ol><p>Match the estimate to the information available: a detailed bill cannot exist before measured drawings, and a final account cannot precede completion.</p>",
             "points": [
               {
-                "html": "A construction cost estimate is prepared before tendering to assess the probable expenditure for the defined scope; it is not a guaranteed price or a substitute for drawings.",
+                "html": "The purpose of an estimate is to find the probable cost of a construction project.",
                 "sources": [
                   {
                     "id": "CAP4-01-00164",
@@ -4181,7 +3310,7 @@
                 ]
               },
               {
-                "html": "At the feasibility stage, when a project is defined only by its approximate size and general specification, the appropriate estimate is a preliminary or budget estimate.",
+                "html": "A preliminary estimate is also known as a budget estimate.",
                 "sources": [
                   {
                     "id": "CAP4-01-00165",
@@ -4223,7 +3352,7 @@
             },
             "points": [
               {
-                "html": "The most defensible comparator for a plinth-area rate is a similar local building with comparable height and specifications, adjusted to the current price level.",
+                "html": "A plinth area estimate is prepared on the basis of the plinth area of the building.",
                 "sources": [
                   {
                     "id": "CAP4-01-00045",
@@ -4232,7 +3361,7 @@
                 ]
               },
               {
-                "html": "A 180 m² plinth area at an adjusted comparable rate of Rs. 32,000 per m² gives a plinth-area estimate of Rs. 5,760,000.",
+                "html": "In a plinth area estimate, the rate per unit plinth area is decided from the cost of a similar building with similar specifications, height and construction in the locality.",
                 "sources": [
                   {
                     "id": "CAP4-01-00046",
@@ -4241,7 +3370,7 @@
                 ]
               },
               {
-                "html": "If carpet area is assumed to be 60% of a 200 m² plinth area, the carpet area used is 120 m²; the ratio is a stated assumption, not a rule.",
+                "html": "The carpet area of a residential building is 50–65% of its plinth area.",
                 "sources": [
                   {
                     "id": "CAP4-01-00055",
@@ -4268,7 +3397,7 @@
           {
             "id": "cost-control-revisions-and-final-cost",
             "title": "Cost control after sanction: revised estimates, deviations and final cost",
-            "html": "<p>Percentage questions depend on the <em>comparison base</em>. Always express the change as a percentage of a named base, and read the governing procedure for any threshold rather than assuming one.</p><p>Where a stated procedure calls for a <em>revised estimate</em> once the forecast rises more than 5% above the sanctioned cost, the forecast is compared with the sanction. A revised estimate seeks fresh approval; it does not automatically authorise a contract variation or extra expenditure. The 5% figure is supplied with each exercise, not an established current Nepal rule.</p><p>Comparing an estimate with the actual cost is a different comparison: with actual cost as the base, the deviation is measured against what was spent.</p><p>The <em>final cost</em> of a project is not necessarily known the moment work is physically complete. Actual costs accrue as work proceeds, but variation valuations, final claims and outstanding liabilities must be reconciled in the final account first.</p>",
+            "html": "<p>Percentage questions depend on the <em>comparison base</em>. Always express the change as a percentage of a named base, and read the governing procedure for any threshold rather than assuming one.</p><p>Where a stated procedure calls for a <em>revised estimate</em> once the forecast rises more than 5% above the sanctioned cost, the forecast is compared with the sanction. A revised estimate seeks fresh approval; it does not automatically authorise a contract variation or extra expenditure. The 5% figure is supplied with each exercise, not an established current Nepal rule.</p><p>Comparing an estimate with the actual cost is a different comparison: with actual cost as the base, the deviation is measured against what was spent.</p><p>Actual costs accrue as work proceeds, but variation valuations, final claims and outstanding liabilities must be reconciled in the final account first.</p>",
             "formulas": [
               {
                 "label": "Percentage deviation",
@@ -4281,7 +3410,7 @@
             },
             "points": [
               {
-                "html": "Against a sanctioned Rs. 1,000,000, a forecast of Rs. 1,080,000 is an 8% overrun, which triggers a revised estimate under a stated more-than-5% rule.",
+                "html": "A revised estimate is prepared when the original sanctioned estimate is exceeded by more than 5%.",
                 "sources": [
                   {
                     "id": "CAP4-01-00120",
@@ -4290,7 +3419,7 @@
                 ]
               },
               {
-                "html": "With sanction at NRs 20 million and a forecast of NRs 21.2 million, prepare a revised estimate because the increase is 6%, above the stated 5% threshold.",
+                "html": "A revised estimate is prepared when the original sanctioned detailed estimate is exceeded by more than 5%.",
                 "sources": [
                   {
                     "id": "CAP4-10-00057",
@@ -4299,7 +3428,7 @@
                 ]
               },
               {
-                "html": "An estimate of Rs. 5.4 million against an actual cost of Rs. 5.0 million exceeds the actual cost by 8% when actual cost is the comparison base.",
+                "html": "The estimated cost of a project should not be greater than its actual cost by more than 10%.",
                 "sources": [
                   {
                     "id": "CAP4-01-00124",
@@ -4308,7 +3437,7 @@
                 ]
               },
               {
-                "html": "Physical completion does not fix the final cost: while variation valuations and final claims are unsettled, the final cost awaits reconciliation of outstanding liabilities.",
+                "html": "The actual cost of a building is found at the time of completion of the work.",
                 "sources": [
                   {
                     "id": "CAP4-10-00065",
@@ -4363,7 +3492,7 @@
             },
             "points": [
               {
-                "html": "With an adopted dry-volume factor of 1.54, 2.0 m³ of finished concrete needs 3.08 m³ of dry loose ingredients.",
+                "html": "To get the dry volume of concrete, the mixture of cement, sand and coarse aggregate is increased by 50–55%.",
                 "sources": [
                   {
                     "id": "CAP4-05-00026",
@@ -4372,7 +3501,7 @@
                 ]
               },
               {
-                "html": "With a 1.54 dry-volume factor, loose cement at 1,440 kg/m³ and 50 kg bags, 1.00 m³ of 1:1.5:3 concrete needs a theoretical 8.06 bags before procurement rounding.",
+                "html": "For 1 m<sup>3</sup> of 1: 1.5: 3 PCC, the number of bags of cement required is 8 bags.",
                 "sources": [
                   {
                     "id": "CAP4-01-00110",
@@ -4381,7 +3510,7 @@
                 ]
               },
               {
-                "html": "One 50 kg bag of cement occupies about 0.0347 m³ of bulk volume when its loose bulk density is taken as 1,440 kg/m³.",
+                "html": "The volume of cement in one 50 kg bag is 0.0347 m<sup>3</sup>.",
                 "sources": [
                   {
                     "id": "CAP4-01-00119",
@@ -4425,7 +3554,7 @@
             },
             "points": [
               {
-                "html": "Two cubic metres of loose cement at 1,440 kg/m³ weigh 2,880 kg, so a mass ratio of 0.80 calls for 2,304 kg, that is 2,304 L, of mixing water.",
+                "html": "If the water–cement ratio is 0.8 and the volume of cement is 2 m<sup>3</sup>, the volume of water required is 2304 litres.",
                 "sources": [
                   {
                     "id": "CAP4-01-00117",
@@ -4434,7 +3563,7 @@
                 ]
               },
               {
-                "html": "A 2 m³ batch at 2,350 kg/m³ with 3,860 kg of aggregate and a water-cement ratio of 0.40 contains 600 kg of cement, which is 12 bags of 50 kg.",
+                "html": "12 cement bags are required if the overall density is 2350 kg/m<sup>3</sup>, aggregate is 3860 kg, the water–cement ratio is 0.4 and the volume of concrete is 2 m<sup>3</sup>.",
                 "sources": [
                   {
                     "id": "CAP4-01-00115",
@@ -4457,7 +3586,7 @@
           {
             "id": "binding-wire-allowance",
             "title": "Reinforcement allowances: binding wire",
-            "html": "<p>Estimates allow <em>binding wire</em> for tying reinforcement as a percentage of the reinforcement mass. The capsule's allowance of 1 kg per quintal equals 1%, because one metric quintal is 100 kg.</p><p>Unit slips create the usual errors: treating a quintal as 10 kg or 1,000 kg shifts the result by a factor of ten. Actual consumption depends on bar sizes, spacing, the tie pattern and wastage, so the allowance is an estimating assumption, not a structural requirement or a consumption law for every reinforcement cage.</p>",
+            "html": "<p>Estimates allow <em>binding wire</em> for tying reinforcement as a percentage of the reinforcement mass. An allowance of 1 kg per quintal equals 1%, because one metric quintal is 100 kg.</p><p>Unit slips create the usual errors: treating a quintal as 10 kg or 1,000 kg shifts the result by a factor of ten.</p>",
             "formulas": [
               {
                 "label": "Binding-wire allowance",
@@ -4471,7 +3600,7 @@
             },
             "points": [
               {
-                "html": "At 1 kg of binding wire per quintal of 100 kg, 600 kg of reinforcement is allowed 6 kg of wire.",
+                "html": "The quantity of binding wire required for 1 quintal of reinforcement is 1 kg.",
                 "sources": [
                   {
                     "id": "CAP4-01-00111",
@@ -4480,7 +3609,7 @@
                 ]
               },
               {
-                "html": "A binding-wire allowance of 1% of reinforcement mass budgets 7.5 kg of wire for 750 kg of reinforcement.",
+                "html": "The amount of binding wire required for 1 quintal of reinforcement work is 1 kg.",
                 "sources": [
                   {
                     "id": "CAP4-05-00045",
@@ -4521,7 +3650,7 @@
             },
             "points": [
               {
-                "html": "With centre-line lengths of 6.0 m and 4.0 m and a 0.30 m course, the long wall is 6.30 m out-to-out and the short wall 3.70 m in-to-in.",
+                "html": "In the long wall–short wall method, the length of the long wall is equal to centre-line length plus the breadth of the wall.",
                 "sources": [
                   {
                     "id": "CAP4-01-00112",
@@ -4530,7 +3659,7 @@
                 ]
               },
               {
-                "html": "A brick with stipulated actual dimensions of 240 mm × 115 mm × 57 mm, without mortar, has a geometric volume of 0.0015732 m³.",
+                "html": "As per NBC, the standard size of brick is 240 mm × 115 mm × 57 mm.",
                 "sources": [
                   {
                     "id": "CAP4-01-00121",
@@ -4556,7 +3685,7 @@
             "html": "<p>A bill of quantities describes each item and its unit, and the unit follows the governing measurement specification. Thin <em>half-brick partition walls</em> are commonly billed by area in m<sup>2</sup>, with the thickness fixed in the item description, whereas thicker masonry is usually measured by volume in m<sup>3</sup>.</p><p>Shallow <em>surface dressing</em>, meaning clearing and trimming across a defined plan extent with no separately measured excavation, is likewise measured by area; deeper excavation may be a separate volume item. The contract defines depth limits, inclusions and exclusions.</p><p>A quantity and a rate say nothing about quality. The <em>technical specifications</em> define materials, mix proportions, surface preparation, workmanship, procedures and acceptance criteria, and they are coordinated with the drawings and the bill of quantities. Only the specification tells a contractor which mortar, preparation and acceptance tests apply to an item of plaster.</p>",
             "points": [
               {
-                "html": "A half-brick partition billed as an area item, with its thickness stated separately in the description, is measured in m<sup>2</sup>.",
+                "html": "A half brick wall is measured in square metres rather than in cubic metres.",
                 "sources": [
                   {
                     "id": "CAP4-01-00116",
@@ -4565,7 +3694,7 @@
                 ]
               },
               {
-                "html": "Shallow surface dressing defined over a stated plan extent, with no measured excavation, is measured by area in square metres.",
+                "html": "Surface dressing is measured in square metres.",
                 "sources": [
                   {
                     "id": "CAP4-01-00123",
@@ -4574,7 +3703,7 @@
                 ]
               },
               {
-                "html": "The mortar proportions, surface preparation and acceptance criteria for plaster listed in a BOQ are normally supplied by the technical specifications.",
+                "html": "Quality and workmanship in construction projects are defined in the specifications.",
                 "sources": [
                   {
                     "id": "CAP4-10-00063",
@@ -4601,7 +3730,7 @@
           {
             "id": "labour-output-and-crew-days",
             "title": "Labour output and crew-days in scheduling",
-            "html": "<p>Labour requirement follows from quantity and output: divide the quantity by the output per labour-day. The output must name the unit of labour and the support it assumes. Multiplying instead of dividing is the common slip.</p><p>Such outputs are assumptions tied to crew composition and conditions. Access, material handling, wall details, mixing and transport all change productivity. An output of 5 m³ of concrete per day describes a supported crew with mixing and transport, not a single unaided mason, and it is not an intrinsic property of the mix proportion.</p>",
+            "html": "<p>Labour requirement follows from quantity and output: divide the quantity by the output per labour-day. The output must name the unit of labour and the support it assumes. Multiplying instead of dividing is the common slip.</p><p>Such outputs are assumptions tied to crew composition and conditions. Access, material handling, wall details, mixing and transport all change productivity.</p>",
             "formulas": [
               {
                 "label": "Labour requirement",
@@ -4615,7 +3744,7 @@
             },
             "points": [
               {
-                "html": "At an assumed 1.25 m³ of foundation brickwork per mason-day, with helpers supplied, 10 m³ needs 8 mason-days.",
+                "html": "The quantity of brickwork with mortar in foundation done per mason per day is 1.25 m<sup>3</sup>.",
                 "sources": [
                   {
                     "id": "CAP4-01-00113",
@@ -4624,7 +3753,7 @@
                 ]
               },
               {
-                "html": "At an assumed 5.0 m³ of 1:2:4 concrete per supported crew-day, 20 m³ needs 4 crew-days.",
+                "html": "The expected out-turn of 1: 2: 4 cement concrete per mason per day is 5.0 m<sup>3</sup>.",
                 "sources": [
                   {
                     "id": "CAP4-01-00118",
@@ -4647,7 +3776,7 @@
           {
             "id": "rate-analysis-allowances",
             "title": "Rate-analysis allowances: small tools and office overheads",
-            "html": "<p>Rate analysis adds allowances as percentages of a defined base, and the base is where most errors occur. Read the schedule and apply each percentage to its stated base only: a tools allowance on unskilled labour is not a percentage of total labour.</p><p>A small-tools allowance does not automatically cover separately priced major plant, and real schedules may prescribe different allowances or cost equipment directly. Overheads such as office-management expense are entered once on their stated base; double counting them inflates a rate just as omitting them deflates it.</p><p>The 3% and 4% figures here are norms supplied with each exercise, not verified current rate-analysis rules.</p>",
+            "html": "<p>Rate analysis adds allowances as percentages of a defined base, and the base is where most errors occur. Read the schedule and apply each percentage to its stated base only: a tools allowance on unskilled labour is not a percentage of total labour.</p><p>Overheads such as office-management expense are entered once on their stated base; double counting them inflates a rate just as omitting them deflates it.</p>",
             "formulas": [
               {
                 "label": "Percentage allowance",
@@ -4660,7 +3789,7 @@
             },
             "points": [
               {
-                "html": "A schedule allowing tools at 3% of unskilled labour gives Rs. 600 when unskilled labour costs Rs. 20,000, whatever the skilled labour cost.",
+                "html": "In rate analysis, the cost of tools and equipment is taken as 3% of the cost of unskilled labour.",
                 "sources": [
                   {
                     "id": "CAP4-01-00122",
@@ -4669,7 +3798,7 @@
                 ]
               },
               {
-                "html": "With small tools at 3% of unskilled labour and unskilled labour at NRs 4,000 per unit, the allowance is NRs 120 per unit.",
+                "html": "In rate analysis, the 3% allowance for tools and equipment is calculated on the cost of unskilled labour.",
                 "sources": [
                   {
                     "id": "CAP4-10-00122",
@@ -4678,7 +3807,7 @@
                 ]
               },
               {
-                "html": "Office management allowed at 4% of a NRs 25 million direct-cost base is NRs 1.00 million, entered once without a second overhead allowance.",
+                "html": "In project management, 4% of the total project cost is typically estimated for office management expenses.",
                 "sources": [
                   {
                     "id": "CAP4-10-00066",
@@ -4705,10 +3834,10 @@
           {
             "id": "valuation-salvage-and-forced-sale",
             "title": "Valuation: fair value, salvage value and forced-sale value",
-            "html": "<p><em>Valuation</em> estimates the fair value of an existing property for a stated purpose at a specified date, using evidence such as its condition, income and market transactions. It differs from an estimate, which predicts construction cost, and from rate analysis, which builds a unit rate; neither automatically equals market value.</p><table><thead><tr><th scope='col'>Term</th><th scope='col'>Meaning in building valuation</th></tr></thead><tbody><tr><th scope='row'>Salvage value</th><td>Value at the end of useful life, sold intact without dismantling</td></tr><tr><th scope='row'>Scrap value</th><td>Value of the materials recovered after dismantling</td></tr><tr><th scope='row'>Distress or forced-sale value</th><td>Price when a property must be sold at once under pressure, with inadequate market exposure</td></tr><tr><th scope='row'>Market value</th><td>Price expected in an orderly sale with normal exposure and bargaining</td></tr></tbody></table><p>A forced sale usually depresses the price, but there is no universal fixed percentage reduction from market value. Engineering-economy usage may define net disposal value differently, so always state the valuation basis being used.</p>",
+            "html": "<p><em>Valuation</em> estimates the fair value of an existing property for a stated purpose at a specified date, using evidence such as its condition, income and market transactions. It differs from an estimate, which predicts construction cost, and from rate analysis, which builds a unit rate; neither automatically equals market value.</p><table><thead><tr><th scope='col'>Term</th><th scope='col'>Meaning in building valuation</th></tr></thead><tbody><tr><th scope='row'>Salvage value</th><td>Value at the end of useful life, sold intact without dismantling</td></tr><tr><th scope='row'>Scrap value</th><td>Value of the materials recovered after dismantling</td></tr><tr><th scope='row'>Distress or forced-sale value</th><td>Price when a property must be sold at once under pressure, with inadequate market exposure</td></tr><tr><th scope='row'>Market value</th><td>Price expected in an orderly sale with normal exposure and bargaining</td></tr></tbody></table><p>Engineering-economy usage may define net disposal value differently, so always state the valuation basis being used.</p>",
             "points": [
               {
-                "html": "Judging what an existing property is fairly worth on a stated date, from its condition, income and market evidence, is valuation, not estimating or rate analysis.",
+                "html": "The process of determining the fair price or value of a property is known as valuation.",
                 "sources": [
                   {
                     "id": "CAP4-01-00114",
@@ -4717,7 +3846,7 @@
                 ]
               },
               {
-                "html": "Under the building-valuation convention, the value of a property at the end of its useful life, sold intact rather than dismantled, is its salvage value.",
+                "html": "The estimated value of a built-up property at the end of its useful life, without being dismantled, is called salvage value.",
                 "sources": [
                   {
                     "id": "CAP4-10-00019",
@@ -4726,7 +3855,7 @@
                 ]
               },
               {
-                "html": "An immediate sale under financial pressure with inadequate market exposure yields a distress or forced-sale value, with no fixed percentage cut from market value.",
+                "html": "When a property is forced to be sold immediately under distress, at a depressed market value, the value is called distress or forced sale value.",
                 "sources": [
                   {
                     "id": "CAP4-10-00162",
@@ -4803,217 +3932,11 @@
             "tex": "m_{\\text{wire}} = 0.01 \\times m_{\\text{steel}}"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-carpet-area-ratio",
-            "status": "review",
-            "prompt": "The carpet area of a residential building is 50 to 65% of plinth area",
-            "html": "<p>The range is at most a preliminary planning heuristic, not a measurement rule. Carpet and plinth areas include different parts of a building, and their ratio varies with walls, circulation and layout, so any percentage used must be stated as an assumption.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00055",
-                "label": "p. 3; topic 1 point 52"
-              }
-            ]
-          },
-          {
-            "id": "caution-eight-bags-per-cubic-metre",
-            "status": "review",
-            "prompt": "For 1 m3 of 1:1.5:3 PCC, 8 bags of cement are required",
-            "html": "<p>Eight bags is an approximation that rests on unstated values. With a 1.54 dry-volume factor and loose cement at 1,440 kg/m³, the theoretical figure is 8.06 bags before rounding; the factor, the density and the rounding step must all be explicit.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00110",
-                "label": "p. 5; topic 1 point 103"
-              }
-            ]
-          },
-          {
-            "id": "caution-mason-output-brickwork",
-            "status": "review",
-            "prompt": "Brickwork with mortar in foundation per mason per day is 1.25 m3",
-            "html": "<p>The stated outturn is used only as a scheduling assumption with the required helpers supplied. It is not a verified universal labour norm, and actual output depends on wall details, access, handling and workmanship.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00113",
-                "label": "p. 5; topic 1 point 106"
-              }
-            ]
-          },
-          {
-            "id": "caution-half-brick-wall-unit",
-            "status": "review",
-            "prompt": "A half brick wall is not measured in cubic metres",
-            "html": "<p>The negative statement is replaced by an explicit basis: thin partition masonry is commonly an area item with its thickness fixed in the description. It is not an exceptionless rule; the governing measurement specification decides the billing unit.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00116",
-                "label": "p. 5; topic 1 point 109"
-              }
-            ]
-          },
-          {
-            "id": "caution-water-volume-missing-density",
-            "status": "review",
-            "prompt": "If w/c = 0.8 and the volume of cement is 2 m3, the water required is 2304 L",
-            "html": "<p>The 2,304 L result needs loose cement to weigh 1,440 kg/m³, a bulk density the capsule omits. The water-cement ratio is by mass, so the cement volume must first be converted to mass before the ratio is applied.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00117",
-                "label": "p. 5; topic 1 point 110"
-              }
-            ]
-          },
-          {
-            "id": "caution-concrete-output-per-mason",
-            "status": "review",
-            "prompt": "The expected outturn of 1:2:4 cement concrete per mason per day is 5.0 m3",
-            "html": "<p>The capsule's labour unit is incomplete. The figure is read as the output of a supported, mason-led crew with mixing and transport, and 5 m³ per day is treated as a stated scheduling assumption rather than an established norm.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00118",
-                "label": "p. 5; topic 1 point 111"
-              }
-            ]
-          },
-          {
-            "id": "caution-cement-bag-volume",
-            "status": "review",
-            "prompt": "The volume of cement in a 50 kg bag is 0.0347 m3",
-            "html": "<p>0.0347 m³ holds only when loose cement is taken at 1,440 kg/m³. It is not an invariant bag dimension: a different bulk density changes it, and particle density would give the far smaller solid-grain volume.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00119",
-                "label": "p. 5; topic 1 point 112"
-              }
-            ]
-          },
-          {
-            "id": "caution-revised-estimate-five-percent",
-            "status": "review",
-            "prompt": "A revised estimate is prepared when the original sanctioned estimate differs by more than 5%",
-            "html": "<p>The source does not establish a current Nepal 5% rule, so the threshold is supplied explicitly for the exercise. Actual approval rules depend on the authority, the contract and the applicable procedures.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00120",
-                "label": "p. 5; topic 1 point 113"
-              }
-            ]
-          },
-          {
-            "id": "caution-nbc-brick-size",
-            "status": "review",
-            "prompt": "As per NBC, the standard size of brick is 240 mm × 115 mm × 57 mm",
-            "html": "<p>The dimensions are used here as stipulated values. The capsule gives no NBC edition or clause, so the attribution to the building code should be verified before any code-based reuse.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00121",
-                "label": "p. 5; topic 1 point 115"
-              }
-            ]
-          },
-          {
-            "id": "caution-tools-three-percent-schedule",
-            "status": "review",
-            "prompt": "In rate analysis, the cost of tools and equipment is taken as 3% of unskilled labour cost",
-            "html": "<p>The 3% allowance applies only because the supplied schedule states it; it is not verified as a current general rate-analysis rule. Other schedules may prescribe different allowances or cost plant directly.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00122",
-                "label": "p. 5; topic 1 point 116"
-              }
-            ]
-          },
-          {
-            "id": "caution-estimate-versus-actual-wording",
-            "status": "corrected",
-            "prompt": "The estimated cost should not be greater than 10% of the actual cost of the project",
-            "html": "<p>The capsule wording is defective: read literally, it would cap the estimate at one tenth of the actual cost. No universal accuracy tolerance is asserted here; the deviation is defined explicitly as a percentage of a named comparison base.</p>",
-            "sources": [
-              {
-                "id": "CAP4-01-00124",
-                "label": "p. 5; topic 1 point 118"
-              }
-            ]
-          },
-          {
-            "id": "caution-dry-volume-increase",
-            "status": "review",
-            "prompt": "Cement, sand and coarse aggregate are increased by 50 to 55% to get the dry volume of concrete",
-            "html": "<p>The 50 to 55% increase is an approximate estimating allowance for void filling and consolidation, so the factor actually adopted must be stated. It is not an exact physical constant or a replacement for measured batch yield.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00026",
-                "label": "p. 20; topic 5 point 25"
-              }
-            ]
-          },
-          {
-            "id": "caution-binding-wire-quintal",
-            "status": "review",
-            "prompt": "The binding wire required for 1 quintal of reinforcement work is 1 kg",
-            "html": "<p>One kilogram per quintal, equal to 1% by mass, is treated as an explicitly adopted estimating allowance, not an exact quantity for every reinforcement cage; bar sizes, tie pattern and wastage change actual use.</p>",
-            "sources": [
-              {
-                "id": "CAP4-05-00045",
-                "label": "p. 20; topic 5 point 44"
-              }
-            ]
-          },
-          {
-            "id": "caution-revised-estimate-fraction",
-            "status": "review",
-            "prompt": "A revised estimate is prepared when the sanctioned detailed estimate is exceeded by 0.05",
-            "html": "<p>The fraction 0.05 is read as 5%, but it is not asserted as universal current Nepal law; the governing agency rule is an explicit assumption of the calculation. A revised estimate also seeks approval rather than authorising extra spending by itself.</p>",
-            "sources": [
-              {
-                "id": "CAP4-10-00057",
-                "label": "p. 39; topic 10 point 56"
-              }
-            ]
-          },
-          {
-            "id": "caution-actual-cost-at-completion",
-            "status": "review",
-            "prompt": "The actual cost of a building is found at the time of completion of the work",
-            "html": "<p>Physical completion is not necessarily financial closeout. Actual costs are recorded as they are incurred, but the definitive final cost awaits reconciliation of variations, claims and liabilities in the final account.</p>",
-            "sources": [
-              {
-                "id": "CAP4-10-00065",
-                "label": "p. 39; topic 10 point 64"
-              }
-            ]
-          },
-          {
-            "id": "caution-office-management-four-percent",
-            "status": "review",
-            "prompt": "4% of total project cost is typically estimated for office management expenses",
-            "html": "<p>The fixed 4% is retained only as a supplied assumption with a defined base; it is not a universal office-management percentage, and double counting with other overhead allowances must be avoided.</p>",
-            "sources": [
-              {
-                "id": "CAP4-10-00066",
-                "label": "p. 39; topic 10 point 65"
-              }
-            ]
-          },
-          {
-            "id": "caution-tools-three-percent-norm",
-            "status": "review",
-            "prompt": "The cost of tools and equipment is taken as 3% of unskilled labour cost",
-            "html": "<p>Three per cent of unskilled labour is an adopted norm, not universal Nepal rate-analysis law. It covers small tools rather than separately priced major equipment, which is costed on its own.</p>",
-            "sources": [
-              {
-                "id": "CAP4-10-00122",
-                "label": "p. 40; topic 10 point 115"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Detailed quantity take-off of complete buildings, abstracts of cost and contingency provisions are not tested by these capsule items.",
           "Types of specifications, such as general versus detailed, are not covered; only the purpose of technical specifications appears.",
-          "Valuation methods such as rental capitalisation, depreciation and sinking-fund calculations have no capsule question here.",
-          "Numerical allowances, outputs and thresholds are treated as supplied assumptions; current Nepal norms and legal rules are not verified."
+          "Valuation methods such as rental capitalisation, depreciation and sinking-fund calculations have no capsule question here."
         ]
       }
     });

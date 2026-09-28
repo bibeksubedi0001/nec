@@ -11,7 +11,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-01-00140",
           "src": "CAP4-01-00140",
-          "text": "A plane parallel to, but not containing, the axis of an extended right circular double cone intersects both nappes. What nondegenerate conic results?",
+          "text": "When a right circular cone is cut by a plane parallel to its axis of symmetry, the conic formed is a ______.",
           "options": [
             {
               "key": "a",
@@ -31,7 +31,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Such an offset axial-parallel plane intersects the two nappes in a hyperbola. A plane through the axis can produce a degenerate pair of lines, so excluding the axis is necessary for a unique nondegenerate answer.<p>Source note: p5 n133: added the nondegenerate, offset-plane condition and extended double-cone interpretation.</p><p>Capsule 4th ed., p. 5; topic 1 point 133.</p>",
+          "explanation": "A section of a right circular cone parallel to its axis gives a hyperbola. A section parallel to a generator gives a parabola, an inclined section cutting all generators gives an ellipse, and a section perpendicular to the axis gives a circle.<p>Capsule 4th ed., p. 5; topic 1 point 133.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -44,32 +44,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-01-00153",
           "src": "CAP4-01-00153",
-          "text": "In engineering drawing, a clinograph is used in place of several fixed-angle set squares. What is its principal function?",
+          "text": "A clinograph is a type of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Drawing lines at adjustable inclinations"
+              "text": "Compass"
             },
             {
               "key": "b",
-              "text": "Measuring vertical angles by a telescope"
+              "text": "French curve"
             },
             {
               "key": "c",
-              "text": "Measuring magnetic bearings of field lines"
+              "text": "Protractor"
             },
             {
               "key": "d",
-              "text": "Measuring drawing lengths by a rolling wheel"
+              "text": "Drafting scale"
             }
           ],
           "answer": "a",
-          "explanation": "In drafting terminology, a clinograph is an adjustable set-square device for inclined lines. It is not a magnetic compass; a clinometer measures inclination and is also a different instrument.<p>Source note: p6 n146: corrected the compass classification and explicitly confined the term to its engineering-drawing meaning.</p><p>Capsule 4th ed., p. 6; topic 1 point 146.</p>",
+          "explanation": "Among drawing instruments, the clinograph is a type of compass. A protractor measures angles, a French curve is used to draw irregular curves, and a scale is used to measure lengths.<p>Capsule 4th ed., p. 6; topic 1 point 146.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -82,32 +82,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00001",
           "src": "CAP4-10-00001",
-          "text": "A drawing specifies lettering size 5 mm; a narrow capital I and a wide capital M are used in the same title. Which dimension should both share?",
+          "text": "The size of a letter means its ______.",
           "options": [
             {
               "key": "a",
-              "text": "Stroke thickness of 5 mm"
+              "text": "Stroke thickness"
             },
             {
               "key": "b",
-              "text": "Clear interletter spacing of 5 mm"
+              "text": "Spacing"
             },
             {
               "key": "c",
-              "text": "Nominal capital height of 5 mm"
+              "text": "Height"
             },
             {
               "key": "d",
-              "text": "Overall character width of 5 mm"
+              "text": "Width"
             }
           ],
           "answer": "c",
-          "explanation": "Lettering size denotes nominal capital height. Character width depends on the character and lettering style; it is not generally equal to the height.<p>Capsule 4th ed., p. 37; topic 10 point 1.</p>",
+          "explanation": "Lettering is specified by its height, usually the height of the capital letters; the width, stroke thickness and spacing are then taken as proportions of this height.<p>Capsule 4th ed., p. 37; topic 10 point 1.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -120,32 +120,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00002",
           "src": "CAP4-10-00002",
-          "text": "A drafter assigns every alphabetic character width equal to half its height and every numeral width equal to one-third its height. What is the defensible correction?",
+          "text": "The aspect ratio (width to height) of letters and numbers is, respectively, ______.",
           "options": [
             {
               "key": "a",
-              "text": "Use the chosen lettering standard's character proportions"
+              "text": "1 : 2 and 1 : 3"
             },
             {
               "key": "b",
-              "text": "Exchange the two ratios for all letters and numerals"
+              "text": "2 : 1 and 3 : 1"
             },
             {
               "key": "c",
-              "text": "Use third-height width for every character and numeral"
+              "text": "1 : 1 and 1 : 2"
             },
             {
               "key": "d",
-              "text": "Use half-height width for every character and numeral"
+              "text": "1 : 3 and 1 : 2"
             }
           ],
           "answer": "a",
-          "explanation": "Widths differ between characters such as I and M and between lettering styles. The source's separate universal 1:2 and 1:3 rules for letters and numbers are not valid general engineering-lettering requirements.<p>Source note: Source p37 point2 is overgeneralized; no universal letter/numeral aspect ratios are asserted.</p><p>Capsule 4th ed., p. 37; topic 10 point 2.</p>",
+          "explanation": "Letters are made half as wide as they are high, and numbers one-third as wide, so their aspect ratios are 1 : 2 and 1 : 3 respectively.<p>Capsule 4th ed., p. 37; topic 10 point 2.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -158,32 +158,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00003",
           "src": "CAP4-10-00003",
-          "text": "Conventional right-sloping technical lettering is inclined 75 degrees to its horizontal baseline. What is its inclination from the vertical?",
+          "text": "The inclination of inclined lettering is ______.",
           "options": [
             {
               "key": "a",
-              "text": "25 degrees toward the right"
+              "text": "90° to the horizontal"
             },
             {
               "key": "b",
-              "text": "15 degrees toward the right"
+              "text": "75° to the horizontal"
             },
             {
               "key": "c",
-              "text": "15 degrees toward the left"
+              "text": "45° to the horizontal"
             },
             {
               "key": "d",
-              "text": "75 degrees toward the right"
+              "text": "60° to the horizontal"
             }
           ],
           "answer": "b",
-          "explanation": "The vertical is \\(90^\\circ\\) to the baseline, so the departure is \\[90^\\circ - 75^\\circ = 15^\\circ\\] to the right. This describes the conventional inclined style, not every permitted lettering style.<p>Capsule 4th ed., p. 37; topic 10 point 3.</p>",
+          "explanation": "Inclined lettering slopes to the right at 75° to the horizontal, that is, 15° from the vertical.<p>Capsule 4th ed., p. 37; topic 10 point 3.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -196,32 +196,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00004",
           "src": "CAP4-10-00004",
-          "text": "An engineering office changes a sheet from portrait to landscape while retaining its trimmed dimensions. What happens to its A-series designation?",
+          "text": "Standard drawing paper is designated by the letter ______.",
           "options": [
             {
               "key": "a",
-              "text": "It changes to the next larger number because height decreases"
+              "text": "T"
             },
             {
               "key": "b",
-              "text": "It remains unchanged because orientation does not set the size"
+              "text": "A"
             },
             {
               "key": "c",
-              "text": "It changes to B-series because the long edge is horizontal"
+              "text": "S"
             },
             {
               "key": "d",
-              "text": "It changes to the next smaller number because width increases"
+              "text": "D"
             }
           ],
           "answer": "b",
-          "explanation": "A-series designations identify sheet dimensions, not orientation. A is a common drawing-paper series, but the source's wording must not be read as claiming all paper belongs to that series.<p>Capsule 4th ed., p. 37; topic 10 point 4.</p>",
+          "explanation": "Standard drawing sheets are designated by the letter A followed by a number, such as A0, A1 and A4; drawing boards are designated by the letter D.<p>Capsule 4th ed., p. 37; topic 10 point 4.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -234,32 +234,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00005",
           "src": "CAP4-10-00005",
-          "text": "Starting from the ideal A0 area of 1 square metre, what ideal area remains after successive long-side halvings produce an A3 sheet?",
+          "text": "The area of an A0 size paper is ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.0625 square metre"
+              "text": "0.25 m<sup>2</sup>"
             },
             {
               "key": "b",
-              "text": "0.333 square metre"
+              "text": "2 m<sup>2</sup>"
             },
             {
               "key": "c",
-              "text": "0.125 square metre"
+              "text": "1 m<sup>2</sup>"
             },
             {
               "key": "d",
-              "text": "0.250 square metre"
+              "text": "0.5 m<sup>2</sup>"
             }
           ],
           "answer": "c",
-          "explanation": "A0 to A1 to A2 to A3 gives three halvings: \\[\\dfrac{1}{2^3} = 0.125\\ \\text{m}^2\\] Actual integer-millimetre trimmed dimensions are rounded, so nominal areas are not exact products of printed dimensions.<p>Capsule 4th ed., p. 37; topic 10 point 5.</p>",
+          "explanation": "An A0 sheet, 841 mm by 1189 mm, has an area of 1 m<sup>2</sup>; each smaller size is half the previous one, so an A1 sheet is 0.5 m<sup>2</sup>.<p>Capsule 4th ed., p. 37; topic 10 point 5.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -272,32 +272,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00006",
           "src": "CAP4-10-00006",
-          "text": "An ideal rectangular sheet must retain its long-side to short-side ratio after its long side is halved and the sheet is rotated. What ratio satisfies this condition?",
+          "text": "The width of standard A-series drawing paper, such as A4, A3 and A2, is ______ times its length.",
           "options": [
             {
               "key": "a",
-              "text": "3 to 2"
+              "text": "\\(\\dfrac{1}{\\sqrt{3}}\\)"
             },
             {
               "key": "b",
-              "text": "2 to 1"
+              "text": "\\(\\dfrac{1}{2}\\)"
             },
             {
               "key": "c",
-              "text": "Square root of 2 to 1"
+              "text": "\\(\\dfrac{1}{\\sqrt{2}}\\)"
             },
             {
               "key": "d",
-              "text": "Square root of 3 to 1"
+              "text": "\\(\\dfrac{2}{3}\\)"
             }
           ],
           "answer": "c",
-          "explanation": "Let the sides be \\(L\\) and \\(S\\). Similarity requires \\[\\dfrac{L}{S} = \\dfrac{2S}{L}\\] hence \\(L^2 = 2S^2\\) and \\(\\dfrac{L}{S} = \\sqrt{2}\\). Equivalently the short side is the long side divided by \\(\\sqrt{2}\\), not twelve times it.<p>Source note: Source p37 point6 has corrupted extracted mathematical text (&#39;12 times&#39;); independent derivation supplies the defensible ratio. Parent may inspect the original formula.</p><p>Capsule 4th ed., p. 37; topic 10 point 6.</p>",
+          "explanation": "A-series sheets have sides in the ratio \\(1 : \\sqrt{2}\\), so the width is \\(\\dfrac{1}{\\sqrt{2}}\\) of the length; halving the long side then gives the next size with the same proportions.<p>Capsule 4th ed., p. 37; topic 10 point 6.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -310,32 +310,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00007",
           "src": "CAP4-10-00007",
-          "text": "A full section passes through a hollow metal sleeve. Which region should normally receive section hatching?",
+          "text": "Section lines are used to show that ______.",
           "options": [
             {
               "key": "a",
-              "text": "The empty bore intersected by the cutting plane"
+              "text": "Some edges are hidden"
             },
             {
               "key": "b",
-              "text": "The metal intersected by the cutting plane"
+              "text": "The object has been cut and then viewed"
             },
             {
               "key": "c",
-              "text": "Every surface visible behind the cutting plane"
+              "text": "A centre line is present"
             },
             {
               "key": "d",
-              "text": "Only the centreline of the sleeve"
+              "text": "The object is symmetrical"
             }
           ],
           "answer": "b",
-          "explanation": "Hatching identifies solid material cut by the section plane. The bore remains unhatched because it is empty; visible surfaces beyond the cut may be outlined without being hatched.<p>Capsule 4th ed., p. 37; topic 10 point 8.</p>",
+          "explanation": "Section lines, thin hatching lines usually at 45°, show the solid surfaces exposed where the cutting plane has passed through the object.<p>Capsule 4th ed., p. 37; topic 10 point 8.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -348,32 +348,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00008",
           "src": "CAP4-10-00008",
-          "text": "A blind recess lies behind the visible face of an unsectioned block. Which conventional line pattern distinguishes its concealed edges from the block's visible outline?",
+          "text": "Hidden lines are drawn as ______.",
           "options": [
             {
               "key": "a",
-              "text": "Narrow dashed lines"
+              "text": "Dashed narrow lines"
             },
             {
               "key": "b",
-              "text": "Long-short chain centre lines"
+              "text": "Continuous thin lines"
             },
             {
               "key": "c",
-              "text": "Wide continuous lines"
+              "text": "Continuous thick lines"
             },
             {
               "key": "d",
-              "text": "Narrow continuous extension lines"
+              "text": "Chain lines"
             }
           ],
           "answer": "a",
-          "explanation": "Concealed edges conventionally use narrow dashed lines. Visible outlines are continuous, while centre lines indicate axes rather than the boundaries of hidden recesses.<p>Capsule 4th ed., p. 37; topic 10 point 9.</p>",
+          "explanation": "Edges not visible from the viewing direction are shown by short narrow dashes; visible outlines are continuous thick lines, and centre lines are thin chain lines.<p>Capsule 4th ed., p. 37; topic 10 point 9.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -386,32 +386,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00009",
           "src": "CAP4-10-00009",
-          "text": "A block has a circular opening on a front face parallel to the picture plane. In an oblique drawing, how is that front face represented?",
+          "text": "An oblique sketch shows the ______ of an object in true shape.",
           "options": [
             {
               "key": "a",
-              "text": "As an ellipse regardless of viewing direction"
+              "text": "Side"
             },
             {
               "key": "b",
-              "text": "With depth converging toward a vanishing point"
+              "text": "Every face"
             },
             {
               "key": "c",
-              "text": "Foreshortened equally along all three axes"
+              "text": "Top"
             },
             {
               "key": "d",
-              "text": "In true shape at the drawing scale"
+              "text": "Front"
             }
           ],
           "answer": "d",
-          "explanation": "Oblique projection preserves the shape of a face parallel to the picture plane. Receding depth is drawn along inclined projectors; it may be full or reduced depending on the selected oblique convention.<p>Capsule 4th ed., p. 37; topic 10 point 10.</p>",
+          "explanation": "In an oblique drawing the front face is parallel to the picture plane, so it appears in its true shape and size, while the depth is drawn along a receding line.<p>Capsule 4th ed., p. 37; topic 10 point 10.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -424,32 +424,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00010",
           "src": "CAP4-10-00010",
-          "text": "A supplier lists a traditional D1 drawing board as 1000 x 700 x 25 mm. Which interpretation should a purchaser use?",
+          "text": "The standard size of a drawing board of designation D1 is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Trimmed sheet length, width and margin"
+              "text": "\\(700 \\times 500 \\times 15\\) mm"
             },
             {
               "key": "b",
-              "text": "Usable sheet area, border and thickness"
+              "text": "\\(1500 \\times 1000 \\times 25\\) mm"
             },
             {
               "key": "c",
-              "text": "Board length, width and thickness"
+              "text": "\\(1000 \\times 700 \\times 25\\) mm"
             },
             {
               "key": "d",
-              "text": "Drawing length, width and plotting scale"
+              "text": "\\(500 \\times 350 \\times 10\\) mm"
             }
           ],
           "answer": "c",
-          "explanation": "The stated dimensions describe the supporting board, not an A-series trimmed sheet. D1 is a traditional board designation; verify the procurement specification rather than infer a current universal board standard.<p>Source note: p37 n7: 1000 x 700 x 25 mm retained as an explicitly supplied board specification; applicable standard edition unverified.</p><p>Capsule 4th ed., p. 37; topic 10 point 7.</p>",
+          "explanation": "Drawing boards are designated D0 to D3; the D1 board measures 1000 mm long, 700 mm wide and 25 mm thick and suits A1 sheets.<p>Capsule 4th ed., p. 37; topic 10 point 7.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -462,32 +462,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00011",
           "src": "CAP4-10-00011",
-          "text": "A 120 mm edge parallel to an object axis is represented in a true isometric projection at nominal full size. Using the isometric factor sqrt(2/3), what projected length is obtained?",
+          "text": "If an isometric drawing is made using an isometric scale, the drawing is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "97.98 mm"
+              "text": "An isometric projection"
             },
             {
               "key": "b",
-              "text": "120.00 mm"
+              "text": "An isometric view"
             },
             {
               "key": "c",
-              "text": "84.85 mm"
+              "text": "An oblique projection"
             },
             {
               "key": "d",
-              "text": "146.97 mm"
+              "text": "A perspective view"
             }
           ],
           "answer": "a",
-          "explanation": "Equal axial foreshortening gives \\[120 \\times \\sqrt{\\dfrac{2}{3}} = 97.9796\\ \\text{mm}\\] Using 120 mm directly gives the conventional true-axial-length isometric drawing, not the shortened isometric projection.<p>Capsule 4th ed., p. 37; topic 10 point 11.</p>",
+          "explanation": "An isometric projection uses the isometric scale, which shortens lengths to about 0.816 of true size; an isometric view (drawing) uses true lengths along the axes.<p>Capsule 4th ed., p. 37; topic 10 point 11.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -500,32 +500,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00012",
           "src": "CAP4-10-00012",
-          "text": "A map represents 250 m by 5 cm. What representative fraction describes its reducing scale?",
+          "text": "Maps are drawn to a ______ scale.",
           "options": [
             {
               "key": "a",
-              "text": "1:50000"
+              "text": "Isometric"
             },
             {
               "key": "b",
-              "text": "1:500"
+              "text": "Full-size"
             },
             {
               "key": "c",
-              "text": "1:50"
+              "text": "Enlarging"
             },
             {
               "key": "d",
-              "text": "1:5000"
+              "text": "Reducing"
             }
           ],
           "answer": "d",
-          "explanation": "Convert 250 m to 25,000 cm before forming \\[\\text{RF} = \\dfrac{5}{25{,}000} = \\dfrac{1}{5000}\\] A map normally reduces ground distances; mixing centimetres with metres gives an incorrect denominator.<p>Capsule 4th ed., p. 37; topic 10 point 12.</p>",
+          "explanation": "Ground distances are far larger than the paper, so maps are drawn to a reducing scale such as 1 : 50,000; enlarging scales are used for small objects like watch parts.<p>Capsule 4th ed., p. 37; topic 10 point 12.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -538,32 +538,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00013",
           "src": "CAP4-10-00013",
-          "text": "Front and top views leave the height-versus-depth profile of a bracket unclear. Which additional orthographic view most directly resolves that profile?",
+          "text": "In orthographic projection, the additional third view generally drawn for simple objects is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "A side view showing depth and height"
+              "text": "Side view"
             },
             {
               "key": "b",
-              "text": "An undimensioned perspective presentation"
+              "text": "Isometric view"
             },
             {
               "key": "c",
-              "text": "A larger front view showing width and height"
+              "text": "Auxiliary view"
             },
             {
               "key": "d",
-              "text": "A duplicate top view showing width and depth"
+              "text": "Sectional view"
             }
           ],
           "answer": "a",
-          "explanation": "The side view projects depth and height together. Three views are common, but the required number depends on the object's ambiguity; it is not a universal rule that every object needs exactly three.<p>Capsule 4th ed., p. 37; topic 10 point 13.</p>",
+          "explanation": "Most simple objects are described by the front and top views, with a side view added as the third view to show the height and depth profile.<p>Capsule 4th ed., p. 37; topic 10 point 13.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -576,32 +576,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00014",
           "src": "CAP4-10-00014",
-          "text": "A drawing declares third-angle projection. Where should its top view and right-side view be placed relative to the front view?",
+          "text": "The symbol used to indicate third angle orthographic projection shows ______.",
           "options": [
             {
               "key": "a",
-              "text": "Above and to the right, respectively"
+              "text": "A frustum of a cone"
             },
             {
               "key": "b",
-              "text": "Below and to the right, respectively"
+              "text": "A sphere"
             },
             {
               "key": "c",
-              "text": "Above and to the left, respectively"
+              "text": "A pyramid"
             },
             {
               "key": "d",
-              "text": "Below and to the left, respectively"
+              "text": "A cylinder"
             }
           ],
           "answer": "a",
-          "explanation": "In third-angle projection the projection plane is between observer and object. Unfolding places top above front and right-side to the right. A conical-frustum symbol is used to identify projection convention, not a rule that every depicted object is a frustum.<p>Source note: p37 n14: no diagram was inspected. The extracted claim lacks the symbol arrangement, so the item tests the declared third-angle convention without inventing graphical evidence.</p><p>Capsule 4th ed., p. 37; topic 10 point 14.</p>",
+          "explanation": "The projection symbol shows two views of a frustum of a cone; the placing of its circular view relative to its side view tells whether first or third angle projection is used.<p>Capsule 4th ed., p. 37; topic 10 point 14.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -614,32 +614,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00015",
           "src": "CAP4-10-00015",
-          "text": "Using only the fixed edges of 45-45-90 and 30-60-90 degree set squares and their angle sums or differences, which angle cannot be set directly?",
+          "text": "Which angle cannot be made with the help of set squares?",
           "options": [
             {
               "key": "a",
-              "text": "105 degrees"
+              "text": "105°"
             },
             {
               "key": "b",
-              "text": "115 degrees"
+              "text": "115°"
             },
             {
               "key": "c",
-              "text": "150 degrees"
+              "text": "150°"
             },
             {
               "key": "d",
-              "text": "75 degrees"
+              "text": "75°"
             }
           ],
           "answer": "b",
-          "explanation": "The available sums, differences and supplements are multiples of \\(15^\\circ\\). Thus \\[\\begin{aligned} 105 &amp;= 60 + 45 \\\\ 75 &amp;= 45 + 30 \\\\ 150 &amp;= 180 - 30 \\end{aligned}\\] are possible, whereas 115 degrees is not under these stated operations.<p>Capsule 4th ed., p. 37; topic 10 point 15.</p>",
+          "explanation": "Set squares give 30°, 45°, 60° and 90° and their sums and differences, in steps of 15°, such as 75°, 105° and 150°; 115° is not a multiple of 15°, so it cannot be set with them.<p>Capsule 4th ed., p. 37; topic 10 point 15.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -652,32 +652,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00016",
           "src": "CAP4-10-00016",
-          "text": "When sketching a circle freehand, a student marks a centre and several points before joining short arcs. What property should those points share?",
+          "text": "The technique for drawing a circle in a free hand sketch is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Progressively increasing distance from the centre"
+              "text": "Tracing round a coin"
             },
             {
               "key": "b",
-              "text": "Equal vertical distance from the centre"
+              "text": "Using a compass"
             },
             {
               "key": "c",
-              "text": "Approximately equal distance from the centre"
+              "text": "Fixing a centre point and drawing arcs through points marked at the radius"
             },
             {
               "key": "d",
-              "text": "Equal horizontal distance from the centre"
+              "text": "Drawing a square only"
             }
           ],
           "answer": "c",
-          "explanation": "A circle is the planar locus at constant radius from a fixed centre. Equal radial distances and smooth short arcs provide a useful freehand guide; increasing radius would instead suggest a spiral.<p>Capsule 4th ed., p. 37; topic 10 point 16.</p>",
+          "explanation": "To sketch a circle freehand, the centre is fixed, points are marked at the radius on several radial lines, and short arcs are drawn through them to complete the circle.<p>Capsule 4th ed., p. 37; topic 10 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -690,12 +690,12 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00017",
           "src": "CAP4-10-00017",
-          "text": "A drawing kit uses the conventional H/B graphite hardness system. Which listed label is not a conventional grade in that system?",
+          "text": "Which of the following is not a pencil grade?",
           "options": [
             {
               "key": "a",
@@ -715,7 +715,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "HB is the conventional intermediate designation, while numbered H and B grades indicate harder and softer graphite. HB1 is not a standard grade in that notation, although a manufacturer could use it as an unrelated product code.<p>Capsule 4th ed., p. 38; topic 10 point 17.</p>",
+          "explanation": "Pencil grades run from the hard H series, such as 2H, through HB and F to the soft B series; HB1 is not a pencil grade.<p>Capsule 4th ed., p. 38; topic 10 point 17.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -733,27 +733,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00105",
           "src": "CAP4-10-00105",
-          "text": "A recess edge is dashed in the front view but continuous in a side view. What is the most likely reason under ordinary drawing conventions?",
+          "text": "A hidden line represents ______.",
           "options": [
             {
               "key": "a",
-              "text": "The recess changes material between the two views"
+              "text": "The centre of a hole"
             },
             {
               "key": "b",
-              "text": "Its physical length becomes zero in the front view"
+              "text": "The cutting plane"
             },
             {
               "key": "c",
-              "text": "The side view always omits every hidden feature"
+              "text": "The limits of a dimension"
             },
             {
               "key": "d",
-              "text": "It is concealed from the front and visible from the side"
+              "text": "Features that cannot be seen in the current view"
             }
           ],
           "answer": "d",
-          "explanation": "Visibility is view-dependent. The same physical edge can be hidden behind material in one direction and directly visible in another, so its line pattern changes without any change to the object.<p>Capsule 4th ed., p. 40; topic 10 point 97.</p>",
+          "explanation": "Hidden lines, drawn as short dashes, show edges and surfaces that exist but cannot be seen from the direction of the current view.<p>Capsule 4th ed., p. 40; topic 10 point 97.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -766,32 +766,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00113",
           "src": "CAP4-10-00113",
-          "text": "A drafter must draw several arcs with the same known centre and radius. Which instrument directly maintains that fixed radial distance?",
+          "text": "A compass is a drawing instrument used for drawing ______.",
           "options": [
             {
               "key": "a",
-              "text": "Protractor used to measure angles"
+              "text": "Angles"
             },
             {
               "key": "b",
-              "text": "Compass"
+              "text": "Circles and arcs"
             },
             {
               "key": "c",
-              "text": "French curve used to fit varying curvature"
+              "text": "Irregular curves"
             },
             {
               "key": "d",
-              "text": "Divider used only to transfer distances"
+              "text": "Straight lines"
             }
           ],
           "answer": "b",
-          "explanation": "A drawing compass anchors at the centre and carries a marking point at a fixed radius. A divider transfers distances without a drawing lead; a French curve can join noncircular points but does not enforce one centre and radius.<p>Capsule 4th ed., p. 40; topic 10 point 106.</p>",
+          "explanation": "A compass holds a pencil at a fixed radius from its point, so it draws circles and arcs; dividers transfer distances, and French curves draw irregular curves.<p>Capsule 4th ed., p. 40; topic 10 point 106.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -804,32 +804,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00115",
           "src": "CAP4-10-00115",
-          "text": "A curved feature on a drawing with millimetre units is labelled R25. What corresponding full-circle diameter would have the same curvature?",
+          "text": "In dimensioning, the symbol R represents the ______.",
           "options": [
             {
               "key": "a",
-              "text": "25 mm"
+              "text": "Diameter"
             },
             {
               "key": "b",
-              "text": "50 mm"
+              "text": "Radius"
             },
             {
               "key": "c",
-              "text": "78.54 mm"
+              "text": "Rotation"
             },
             {
               "key": "d",
-              "text": "12.5 mm"
+              "text": "Reference line"
             }
           ],
           "answer": "b",
-          "explanation": "R denotes radius, so the corresponding diameter is \\[2R = 2(25) = 50\\ \\text{mm}\\] The dimension states the object's size, not the scaled paper length; circumference is a different quantity.<p>Capsule 4th ed., p. 40; topic 10 point 108.</p>",
+          "explanation": "In dimensioning, R before a value gives the radius of an arc, as in R25; the symbol \\(\\phi\\) is used for a diameter.<p>Capsule 4th ed., p. 40; topic 10 point 108.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -842,32 +842,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00117",
           "src": "CAP4-10-00117",
-          "text": "Several plotted points define a smooth noncircular profile with varying curvature. Which manual drawing aid is most suitable for fairing short overlapping segments?",
+          "text": "A French curve is used to draw ______.",
           "options": [
             {
               "key": "a",
-              "text": "A single straight set-square edge"
+              "text": "Straight lines"
             },
             {
               "key": "b",
-              "text": "An angular protractor alone"
+              "text": "Angles of 15°"
             },
             {
               "key": "c",
-              "text": "French curve"
+              "text": "Smooth free-form curves"
             },
             {
               "key": "d",
-              "text": "Fixed-radius compass alone"
+              "text": "Circles"
             }
           ],
           "answer": "c",
-          "explanation": "A French curve provides varying curved segments that can be fitted through neighbouring points with smooth overlap. A compass enforces a constant radius and will not generally reproduce an arbitrary noncircular profile.<p>Capsule 4th ed., p. 40; topic 10 point 110.</p>",
+          "explanation": "A French curve is a template of varying curvature used to draw smooth curves through plotted points; circles are drawn with a compass.<p>Capsule 4th ed., p. 40; topic 10 point 110.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -880,32 +880,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00120",
           "src": "CAP4-10-00120",
-          "text": "A student uses a softer B pencil for visible outlines and a harder pencil for faint construction lines. Which principle explains this conventional choice?",
+          "text": "A B pencil is used to draw ______ lines.",
           "options": [
             {
               "key": "a",
-              "text": "Visible outlines need stronger contrast than auxiliary lines"
+              "text": "Visible"
             },
             {
               "key": "b",
-              "text": "Softer pencils are required for hidden lines only"
+              "text": "Guide"
             },
             {
               "key": "c",
-              "text": "Pencil grade determines whether the object is in first-angle projection"
+              "text": "Centre"
             },
             {
               "key": "d",
-              "text": "Every B pencil produces an identical standard line width"
+              "text": "Construction"
             }
           ],
           "answer": "a",
-          "explanation": "Softer graphite can make darker outlines, helping line hierarchy. Grade alone does not set line width or compliance: sharpness, pressure, paper and the specified drafting method matter, so B is not a universal mandatory visible-line grade.<p>Capsule 4th ed., p. 40; topic 10 point 113.</p>",
+          "explanation": "A soft B pencil gives dark, bold lines, so it is used for visible lines; harder H pencils give the faint construction and guide lines.<p>Capsule 4th ed., p. 40; topic 10 point 113.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -918,32 +918,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00124",
           "src": "CAP4-10-00124",
-          "text": "The bob of an ideal planar pendulum remains at a fixed distance from its fixed pivot. What locus does it trace during a swing?",
+          "text": "The locus traced by a point moving along a pendulum from one end to the other, while the pendulum oscillates, is ______.",
           "options": [
             {
               "key": "a",
-              "text": "An arc of a circle"
+              "text": "A spiral"
             },
             {
               "key": "b",
-              "text": "A cylindrical helix"
+              "text": "A straight line"
             },
             {
               "key": "c",
-              "text": "An Archimedean spiral"
+              "text": "A circle"
             },
             {
               "key": "d",
-              "text": "A straight horizontal segment"
+              "text": "A helix"
             }
           ],
           "answer": "a",
-          "explanation": "Fixed distance from a fixed centre constrains the bob to a circle, of which a limited swing traces an arc. A point sliding along the rod would have variable radius and needs an additional motion law; oscillation alone does not prove a spiral.<p>Source note: p40 n117 corrected with explicit fixed-bob conditions; the source&#39;s moving-point wording is ambiguous, not evidence of a unique spiral.</p><p>Capsule 4th ed., p. 40; topic 10 point 117.</p>",
+          "explanation": "The point's distance from the pivot keeps changing as it moves along the rod while the rod swings, so its path winds away from the pivot as a spiral; a fixed point on the rod would trace only an arc.<p>Capsule 4th ed., p. 40; topic 10 point 117.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -956,32 +956,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00125",
           "src": "CAP4-10-00125",
-          "text": "A point moves outward at a constant rate along a ray while that ray rotates uniformly in one direction about a fixed centre. Which planar curve results?",
+          "text": "A point moving along a line that turns about a fixed centre, while its distance from the centre changes, traces ______.",
           "options": [
             {
               "key": "a",
-              "text": "Cylindrical helix"
+              "text": "An ellipse"
             },
             {
               "key": "b",
-              "text": "Archimedean spiral"
+              "text": "A spiral"
             },
             {
               "key": "c",
-              "text": "Rectangular hyperbola"
+              "text": "A parabola"
             },
             {
               "key": "d",
-              "text": "Circle of constant radius"
+              "text": "A circle"
             }
           ],
           "answer": "b",
-          "explanation": "Uniform outward motion gives \\(r = r_0 + vt\\), and uniform rotation gives \\(\\theta = \\omega t\\). Eliminating time yields \\[r = r_0 + \\dfrac{v}{\\omega}\\theta\\] the Archimedean spiral; a reversing pendulum angle does not automatically satisfy this law.<p>Source note: p40 n117 supplementary corrected sliding-point interpretation: uniform monotonic rotation is explicitly added, not attributed to the missing drawing.</p><p>Capsule 4th ed., p. 40; topic 10 point 117.</p>",
+          "explanation": "A point whose distance from the centre changes while its radial line turns traces a spiral, as does a point moving along an oscillating pendulum; if the distance stayed constant it would trace a circle.<p>Capsule 4th ed., p. 40; topic 10 point 117.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -994,32 +994,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00126",
           "src": "CAP4-10-00126",
-          "text": "An ideal right circular double cone is cut by a plane parallel to its axis but offset from that axis. The plane intersects the conical surface. What nondegenerate conic is produced?",
+          "text": "When a right circular cone is cut parallel to its axis of symmetry, the conic formed is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Hyperbola"
+              "text": "A hyperbola"
             },
             {
               "key": "b",
-              "text": "Circle"
+              "text": "An ellipse"
             },
             {
               "key": "c",
-              "text": "Ellipse"
+              "text": "A circle"
             },
             {
               "key": "d",
-              "text": "Parabola"
+              "text": "A parabola"
             }
           ],
           "answer": "a",
-          "explanation": "For the cone \\(x^2 + y^2 = k^2z^2\\), an axial-parallel plane \\(x = c\\) with \\(c \\ne 0\\) gives \\[k^2z^2 - y^2 = c^2\\] a hyperbola. The offset and intersection conditions exclude a plane through the vertex or a finite cone missed entirely.<p>Source note: p40 n118 qualified: axial-parallel, offset intersecting plane; a finite single cone shows only the available part of the curve.</p><p>Capsule 4th ed., p. 40; topic 10 point 118.</p>",
+          "explanation": "A plane parallel to the axis of a cone makes a smaller angle with the axis than the generators do, so the section is a hyperbola; a plane parallel to a generator gives a parabola.<p>Capsule 4th ed., p. 40; topic 10 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1032,32 +1032,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00127",
           "src": "CAP4-10-00127",
-          "text": "How does the section change when a plane through the axis cuts an ideal right circular double cone?",
+          "text": "The section of a right circular cone is a hyperbola when the cutting plane is ______.",
           "options": [
             {
               "key": "a",
-              "text": "It degenerates into two intersecting generators"
+              "text": "Parallel to the axis of the cone"
             },
             {
               "key": "b",
-              "text": "It remains a nondegenerate hyperbola with finite transverse axis"
+              "text": "Parallel to the base"
             },
             {
               "key": "c",
-              "text": "It becomes a circle centred on the vertex"
+              "text": "Parallel to a generator"
             },
             {
               "key": "d",
-              "text": "It becomes a closed ellipse enclosing the vertex"
+              "text": "Inclined to the axis and cutting all generators"
             }
           ],
           "answer": "a",
-          "explanation": "Putting \\(c = 0\\) in \\(k^2z^2 - y^2 = c^2\\) factors the section into \\[y = kz \\quad \\text{and} \\quad y = -kz\\] These are two intersecting straight generators, demonstrating why the offset condition matters for the hyperbola statement.<p>Capsule 4th ed., p. 40; topic 10 point 118.</p>",
+          "explanation": "A plane parallel to the axis gives a hyperbola, one parallel to the base a circle, one parallel to a generator a parabola, and one cutting all the generators obliquely an ellipse.<p>Capsule 4th ed., p. 40; topic 10 point 118.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1070,32 +1070,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00132",
           "src": "CAP4-10-00132",
-          "text": "A right circular cone is cut by a plane parallel to its circular base, strictly between the base and vertex. What is the true shape of the section?",
+          "text": "When a cone is cut parallel to its base, the cross-section is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Ellipse with unequal axes"
+              "text": "An ellipse"
             },
             {
               "key": "b",
-              "text": "Pair of intersecting lines"
+              "text": "A hyperbola"
             },
             {
               "key": "c",
-              "text": "Parabola"
+              "text": "A parabola"
             },
             {
               "key": "d",
-              "text": "Circle"
+              "text": "A circle"
             }
           ],
           "answer": "d",
-          "explanation": "A base-parallel cut preserves rotational symmetry and gives a circle at a smaller radius. Excluding the vertex avoids the degenerate point section; a pictorial projection might show an ellipse even though the true section is circular.<p>Capsule 4th ed., p. 41; topic 10 point 122.</p>",
+          "explanation": "A plane parallel to the base cuts all the generators at the same distance from the vertex, so the section of a right circular cone is a circle.<p>Capsule 4th ed., p. 41; topic 10 point 122.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1108,32 +1108,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00143",
           "src": "CAP4-10-00143",
-          "text": "A 600 mm component must appear 60 mm long on paper. Which drawing-to-object scale is required?",
+          "text": "Among the scales 2 : 1, 5 : 1, 20 : 1 and 1 : 10, the reducing scale is ______.",
           "options": [
             {
               "key": "a",
-              "text": "2:1"
+              "text": "20 : 1"
             },
             {
               "key": "b",
-              "text": "1:100"
+              "text": "5 : 1"
             },
             {
               "key": "c",
-              "text": "1:10"
+              "text": "1 : 10"
             },
             {
               "key": "d",
-              "text": "10:1"
+              "text": "2 : 1"
             }
           ],
           "answer": "c",
-          "explanation": "The scale is drawn length divided by actual length: \\[\\dfrac{60}{600} = \\dfrac{1}{10}\\] It is a reducing scale; reversing the ratio would enlarge the component instead of reducing it.<p>Capsule 4th ed., p. 41; topic 10 point 133.</p>",
+          "explanation": "With a scale written as drawing to object, 1 : 10 makes the drawing smaller than the object, so it is a reducing scale; 2 : 1, 5 : 1 and 20 : 1 are enlarging scales.<p>Capsule 4th ed., p. 41; topic 10 point 133.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1146,32 +1146,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00146",
           "src": "CAP4-10-00146",
-          "text": "A point travels around a fixed cylindrical axis at constant radius while advancing a constant axial distance per revolution. What curve does it trace?",
+          "text": "The three-dimensional curve among the following is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "A circle confined to a transverse plane"
+              "text": "Ellipse"
             },
             {
               "key": "b",
-              "text": "A circular helix of constant pitch"
+              "text": "Helix"
             },
             {
               "key": "c",
-              "text": "A parabola generated by axial translation alone"
+              "text": "Cycloid"
             },
             {
               "key": "d",
-              "text": "An Archimedean spiral in one plane"
+              "text": "Spiral"
             }
           ],
           "answer": "b",
-          "explanation": "A cylindrical helix combines angular motion at constant radius with axial advance. Constant advance per revolution gives constant pitch; not every three-dimensional curve is a helix, contrary to the source's overly broad wording.<p>Source note: p41 n136 qualified by constant radius and pitch.</p><p>Capsule 4th ed., p. 41; topic 10 point 136.</p>",
+          "explanation": "A helix winds round a cylinder or cone while advancing along its axis, so it is a three-dimensional curve; spirals, ellipses and cycloids lie in a plane.<p>Capsule 4th ed., p. 41; topic 10 point 136.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1184,32 +1184,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00158",
           "src": "CAP4-10-00158",
-          "text": "A landscape graphic is 180 mm wide and 120 mm high. With aspect ratio defined as width to height, what is its ratio?",
+          "text": "In drawing, the aspect ratio refers to the ratio of ______.",
           "options": [
             {
               "key": "a",
-              "text": "1:3"
+              "text": "Area to perimeter"
             },
             {
               "key": "b",
-              "text": "2:3"
+              "text": "Height to thickness"
             },
             {
               "key": "c",
-              "text": "5:2"
+              "text": "Length to scale"
             },
             {
               "key": "d",
-              "text": "3:2"
+              "text": "Width to height"
             }
           ],
           "answer": "d",
-          "explanation": "Width to height is 180 to 120, reduced by their common factor 60 to 3 to 2: \\[\\dfrac{180}{120} = \\dfrac{3}{2}\\] Reversing orientation or reversing the stated ratio convention changes the order, so width and height must be identified.<p>Capsule 4th ed., p. 41; topic 10 point 148.</p>",
+          "explanation": "Aspect ratio is the proportional relationship of width to height, as used for lettering and sheet proportions.<p>Capsule 4th ed., p. 41; topic 10 point 148.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1222,32 +1222,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00166",
           "src": "CAP4-10-00166",
-          "text": "A project accepts only A0-A4 sheets for engineering drawings. What can be concluded about A5 paper?",
+          "text": "Which of the following is not a standard designated size for an engineering drawing sheet?",
           "options": [
             {
               "key": "a",
-              "text": "A5 cannot be a standard paper size because the project excludes it"
+              "text": "A0"
             },
             {
               "key": "b",
-              "text": "A5 becomes B5 whenever used for an engineering sketch"
+              "text": "A4"
             },
             {
               "key": "c",
-              "text": "A5 is necessarily a custom size with no defined dimensions"
+              "text": "A2"
             },
             {
               "key": "d",
-              "text": "A5 is a standard A-series paper size but outside this project's allowed set"
+              "text": "A5"
             }
           ],
           "answer": "d",
-          "explanation": "Standard A-series paper includes A5, nominally 148 by 210 mm. A drawing-sheet standard or project may restrict its preferred formats, commonly to A0-A4, but that does not make A5 nonexistent or nonstandard as paper.<p>Source note: p41 n156 qualified: paper-size standard distinguished from a restricted drawing-sheet series; no uninspected mandatory Nepal format clause asserted.</p><p>Capsule 4th ed., p. 41; topic 10 point 156.</p>",
+          "explanation": "Engineering drawings use the designated sheet sizes A0 to A4; A5 is not a standard designated size for engineering drawing sheets.<p>Capsule 4th ed., p. 41; topic 10 point 156.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1260,7 +1260,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1001",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     },
@@ -1272,27 +1272,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-08-00016",
           "src": "CAP4-08-00016",
-          "text": "A dam costs NPR 100 million, has an assumed residual value of NPR 10 million and is depreciated straight-line over 90 years. What annual depreciation charge follows from these accounting assumptions?",
+          "text": "The annual depreciation of a dam in a hydropower plant is about ______.",
           "options": [
             {
               "key": "a",
-              "text": "NPR 0.5 million"
+              "text": "15–20%"
             },
             {
               "key": "b",
-              "text": "NPR 1.0 million"
+              "text": "0.5–1.5%"
             },
             {
               "key": "c",
-              "text": "NPR 1.11 million"
+              "text": "25–30%"
             },
             {
               "key": "d",
-              "text": "NPR 1.5 million"
+              "text": "5–10%"
             }
           ],
           "answer": "b",
-          "explanation": "Straight-line depreciation is \\[\\begin{aligned} D &amp;= \\dfrac{\\text{cost} - \\text{residual}}{\\text{life}} \\\\ &amp;= \\dfrac{100 - 10}{90} = 1 \\end{aligned}\\] NPR million per year, or 1% of original cost. The source's 0.5-1.5% range is only a rough convention, not a universal physical deterioration rate or current tax rule.<p>Source note: Page 30 point 16: an explicitly assumed accounting life replaces an unsupported universal annual rate.</p><p>Capsule 4th ed., p. 30; topic 8 point 16.</p>",
+          "explanation": "A dam has a very long life, so its annual depreciation is small, about 0.5 to 1.5% of its cost; the machinery depreciates faster.<p>Capsule 4th ed., p. 30; topic 8 point 16.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1305,32 +1305,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00018",
           "src": "CAP4-10-00018",
-          "text": "A project costs NRs 100000 now and returns NRs 121000 exactly two years later, with no other cash flows. What is its positive internal rate of return?",
+          "text": "IRR is the discount rate at which the ______.",
           "options": [
             {
               "key": "a",
-              "text": "10% per year"
+              "text": "NPV is equal to zero"
             },
             {
               "key": "b",
-              "text": "9.09% per year"
+              "text": "Payback period is one year"
             },
             {
               "key": "c",
-              "text": "21% per year"
+              "text": "NPV is maximum"
             },
             {
               "key": "d",
-              "text": "10.5% per year"
+              "text": "Benefit–cost ratio is zero"
             }
           ],
           "answer": "a",
-          "explanation": "At the IRR, \\[-100{,}000 + \\dfrac{121{,}000}{(1 + r)^2} = 0\\] Therefore \\((1 + r)^2 = 1.21\\) and \\(r = 0.10\\). Dividing the two-year gain by two would incorrectly use simple interest.<p>Capsule 4th ed., p. 38; topic 10 point 18.</p>",
+          "explanation": "The internal rate of return is the discount rate that makes the present worth of benefits equal to that of costs, so the net present value is zero.<p>Capsule 4th ed., p. 38; topic 10 point 18.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1343,32 +1343,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00020",
           "src": "CAP4-10-00020",
-          "text": "A firm's current assets are NRs 900000, including NRs 300000 inventory and NRs 60000 prepaid expenses. Current liabilities are NRs 450000. Excluding inventory and prepayments, what is its quick ratio?",
+          "text": "The ratio obtained by dividing quick assets by current liabilities is called the ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.60"
+              "text": "Return on investment"
             },
             {
               "key": "b",
-              "text": "1.20"
+              "text": "Acid test ratio"
             },
             {
               "key": "c",
-              "text": "2.00"
+              "text": "Current ratio"
             },
             {
               "key": "d",
-              "text": "1.33"
+              "text": "Debt–equity ratio"
             }
           ],
           "answer": "b",
-          "explanation": "The quick assets are \\[\\begin{aligned} &amp;900{,}000 - 300{,}000 - 60{,}000 \\\\ &amp;= 540{,}000 \\end{aligned}\\] The acid-test ratio is \\[\\dfrac{540{,}000}{450{,}000} = 1.20\\] whereas the current ratio includes inventory and prepayments and equals 2.00.<p>Capsule 4th ed., p. 38; topic 10 point 20.</p>",
+          "explanation": "The acid test (quick) ratio compares quick assets, such as cash and receivables, with current liabilities; the current ratio also counts inventory.<p>Capsule 4th ed., p. 38; topic 10 point 20.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1381,32 +1381,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00021",
           "src": "CAP4-10-00021",
-          "text": "Which factor converts a single amount available now into its future value after n periods at a constant effective rate i per period?",
+          "text": "The term \\((1 + i)^n\\) is called the ______.",
           "options": [
             {
               "key": "a",
-              "text": "1/(1+i)^n"
+              "text": "Single payment present worth factor"
             },
             {
               "key": "b",
-              "text": "(1+i)^n"
+              "text": "Single payment compound amount factor"
             },
             {
               "key": "c",
-              "text": "((1+i)^n-1)/i"
+              "text": "Capital recovery factor"
             },
             {
               "key": "d",
-              "text": "i/((1+i)^n-1)"
+              "text": "Sinking fund factor"
             }
           ],
           "answer": "b",
-          "explanation": "Each period multiplies the balance by \\(1 + i\\), so \\(n\\) periods give the single-payment compound amount factor \\[\\dfrac{F}{P} = (1 + i)^n\\] Its reciprocal discounts one future payment; the other factors concern uniform series.<p>Capsule 4th ed., p. 38; topic 10 point 21.</p>",
+          "explanation": "The factor \\((1 + i)^n\\) converts a present sum into its future value after \\(n\\) periods, so it is the single payment compound amount factor; its reciprocal is the present worth factor.<p>Capsule 4th ed., p. 38; topic 10 point 21.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1419,32 +1419,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00022",
           "src": "CAP4-10-00022",
-          "text": "Two feasible mutually exclusive machines provide the same required service. A costs NRs 400000 initially and B costs NRs 550000. Which incremental comparison is appropriate before deciding whether B is worth its extra cost?",
+          "text": "In incremental analysis, the project having the ______ is selected as the base alternative.",
           "options": [
             {
               "key": "a",
-              "text": "Use A as defender and assess B minus A cash flows"
+              "text": "Lower investment"
             },
             {
               "key": "b",
-              "text": "Select B solely because its total receipts are higher"
+              "text": "Higher benefit"
             },
             {
               "key": "c",
-              "text": "Select A solely because its initial cost is lower"
+              "text": "Longer life"
             },
             {
               "key": "d",
-              "text": "Use B as defender and ignore the initial-cost difference"
+              "text": "Higher investment"
             }
           ],
           "answer": "a",
-          "explanation": "In the usual ordered incremental comparison, begin with the lower-investment feasible alternative. The extra investment in B must be justified by incremental benefits at MARR over a consistent analysis period; the initial-cost ranking alone is not the decision.<p>Capsule 4th ed., p. 38; topic 10 point 22.</p>",
+          "explanation": "Alternatives are ranked by first cost and the lowest-investment one becomes the base; each costlier alternative is accepted only if its extra investment earns at least the MARR.<p>Capsule 4th ed., p. 38; topic 10 point 22.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1457,32 +1457,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00023",
           "src": "CAP4-10-00023",
-          "text": "A company issues a debenture promising interest and repayment of principal. Which description correctly distinguishes it from an ordinary equity share?",
+          "text": "Debentures are ______.",
           "options": [
             {
               "key": "a",
-              "text": "An ownership interest carrying an assured dividend"
+              "text": "Ownership shares with voting rights"
             },
             {
               "key": "b",
-              "text": "A debt instrument that must always lack security"
+              "text": "Government grants"
             },
             {
               "key": "c",
-              "text": "An ownership interest that must always be secured"
+              "text": "Fixed deposits in a bank"
             },
             {
               "key": "d",
-              "text": "A debt instrument whose security depends on its terms"
+              "text": "An unsafe share that does not require security"
             }
           ],
           "answer": "d",
-          "explanation": "A debenture represents borrowing, not an ordinary shareholding. Secured and unsecured forms exist depending on the instrument and jurisdiction; the source's description as an unsafe share universally requiring no security is incorrect.<p>Source note: p38 n23 corrected: debt versus equity and conditional security.</p><p>Capsule 4th ed., p. 38; topic 10 point 23.</p>",
+          "explanation": "A debenture is a borrowing by the company that need not be backed by any specific security, so for the holder it is an unsafe investment relying on the company's general credit.<p>Capsule 4th ed., p. 38; topic 10 point 23.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1495,32 +1495,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00024",
           "src": "CAP4-10-00024",
-          "text": "For an independent project with conventional cash flows and a unique IRR, the IRR is 14% while the risk-appropriate MARR is 11%. What does the IRR criterion indicate?",
+          "text": "The ______ method is mostly adopted in business enterprises.",
           "options": [
             {
               "key": "a",
-              "text": "Accept only if the payback period equals the project life"
+              "text": "Straight-line depreciation"
             },
             {
               "key": "b",
-              "text": "Reject because the two percentage rates must be equal"
+              "text": "Sinking fund"
             },
             {
               "key": "c",
-              "text": "Reject because a positive IRR means negative present worth"
+              "text": "Benefit–cost ratio"
             },
             {
               "key": "d",
-              "text": "Accept on this economic criterion because IRR exceeds MARR"
+              "text": "IRR"
             }
           ],
           "answer": "d",
-          "explanation": "For conventional cash flows with a unique IRR, IRR above MARR corresponds to positive NPV at MARR. IRR is widely used, but this does not establish that it is always the most-used business method or the correct ranking tool for exclusive alternatives.<p>Source note: p38 n24: unsubstantiated popularity claim replaced by the qualified IRR decision rule.</p><p>Capsule 4th ed., p. 38; topic 10 point 24.</p>",
+          "explanation": "Business enterprises mostly use the internal rate of return, since a percentage return is easy to compare with the cost of capital; the benefit–cost ratio is used mainly for public projects.<p>Capsule 4th ed., p. 38; topic 10 point 24.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1533,32 +1533,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00025",
           "src": "CAP4-10-00025",
-          "text": "At a risk-appropriate effective annual rate of 8%, which future payment exactly one year from now is economically equivalent to NRs 100000 today?",
+          "text": "The time value of money is the relation between ______.",
           "options": [
             {
               "key": "a",
-              "text": "NRs 92592.59"
+              "text": "Cost and quality"
             },
             {
               "key": "b",
-              "text": "NRs 108000"
+              "text": "Money and time"
             },
             {
               "key": "c",
-              "text": "NRs 116000"
+              "text": "Time and quality"
             },
             {
               "key": "d",
-              "text": "NRs 100000"
+              "text": "Money and labour"
             }
           ],
           "answer": "b",
-          "explanation": "Equivalence requires compensation for the time value of money: \\[F = 100{,}000(1.08) = 108{,}000\\] The reciprocal calculation gives the present value of a future 100,000, which is a different question.<p>Capsule 4th ed., p. 38; topic 10 point 25.</p>",
+          "explanation": "Because money can earn interest, a sum today is worth more than the same sum later; the time value of money expresses this relation between money and time.<p>Capsule 4th ed., p. 38; topic 10 point 25.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1571,32 +1571,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00026",
           "src": "CAP4-10-00026",
-          "text": "Alternative A has a time-zero outflow of NRs 500000 and B has a time-zero outflow of NRs 680000. With inflows positive, what is the initial incremental cash flow B minus A?",
+          "text": "In incremental analysis, the comparison starts from the do-nothing alternative, whose initial investment is ______.",
           "options": [
             {
               "key": "a",
-              "text": "-NRs 1180000"
+              "text": "Equal to the salvage value"
             },
             {
               "key": "b",
-              "text": "NRs 0"
+              "text": "The largest of all"
             },
             {
               "key": "c",
-              "text": "+NRs 180000"
+              "text": "Equal to the MARR"
             },
             {
               "key": "d",
-              "text": "-NRs 180000"
+              "text": "Zero"
             }
           ],
           "answer": "d",
-          "explanation": "Subtract the signed cash flows: \\[\\begin{aligned} &amp;-680{,}000 - (-500{,}000) \\\\ &amp;= -180{,}000 \\end{aligned}\\] Incremental analysis does not require zero initial investment; zero arises only when the compared alternatives have equal time-zero cash flows.<p>Source note: p38 n26 corrected: incremental initial investment need not be zero.</p><p>Capsule 4th ed., p. 38; topic 10 point 26.</p>",
+          "explanation": "Incremental analysis begins by comparing the lowest-cost alternative with doing nothing, whose initial investment is zero; each costlier alternative is then compared with the last one accepted.<p>Capsule 4th ed., p. 38; topic 10 point 26.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1609,32 +1609,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00027",
           "src": "CAP4-10-00027",
-          "text": "A replacement fund must accumulate NRs 100000 after five years by equal end-of-year deposits earning 10% annually. What yearly deposit is required, rounded to the nearest rupee?",
+          "text": "A sinking fund is a fund for rebuilding a structure when its economic life is over, and its factor is ______.",
           "options": [
             {
               "key": "a",
-              "text": "NRs 20000"
+              "text": "\\(\\dfrac{(1 + i)^n - 1}{i}\\)"
             },
             {
               "key": "b",
-              "text": "NRs 16380"
+              "text": "\\(\\dfrac{i}{(1 + i)^n - 1}\\)"
             },
             {
               "key": "c",
-              "text": "NRs 61051"
+              "text": "\\((1 + i)^n\\)"
             },
             {
               "key": "d",
-              "text": "NRs 26380"
+              "text": "\\(\\dfrac{i(1 + i)^n}{(1 + i)^n - 1}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "The sinking-fund deposit is \\[A = \\dfrac{Fi}{(1 + i)^n - 1}\\] Here \\[\\begin{aligned} A &amp;= \\dfrac{100{,}000(0.10)}{1.1^5 - 1} \\\\ &amp;= 16{,}379.7481 \\end{aligned}\\] or NRs 16,380. The fraction alone is a factor, not the monetary fund or deposit.<p>Source note: p38 n27: restored the factor&#39;s denominator and distinguished A/F from the target fund F; page text retains the fraction layout.</p><p>Capsule 4th ed., p. 38; topic 10 point 27.</p>",
+          "explanation": "The equal annual deposit \\(A\\) that grows to a sum \\(F\\) in \\(n\\) years is \\(A = F\\dfrac{i}{(1 + i)^n - 1}\\), so this fraction is the sinking fund factor.<p>Capsule 4th ed., p. 38; topic 10 point 27.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1647,32 +1647,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00028",
           "src": "CAP4-10-00028",
-          "text": "An independent public project has present-valued benefits of NRs 15 million and costs of NRs 12 million on a consistent basis. What does the benefit-cost test show?",
+          "text": "The criterion for the acceptance of a project is ______.",
           "options": [
             {
               "key": "a",
-              "text": "B/C = 0.80 and NPV = +NRs 3 million"
+              "text": "\\(\\dfrac{B}{C} \\lt 1\\)"
             },
             {
               "key": "b",
-              "text": "B/C = 1.25 and NPV = +NRs 3 million"
+              "text": "\\(\\dfrac{B}{C} \\gt 1\\)"
             },
             {
               "key": "c",
-              "text": "B/C = 3.00 and NPV = +NRs 1.25 million"
+              "text": "\\(\\dfrac{B}{C} \\lt 0\\)"
             },
             {
               "key": "d",
-              "text": "B/C = 1.25 and NPV = -NRs 3 million"
+              "text": "\\(\\dfrac{B}{C} = 0\\)"
             }
           ],
           "answer": "b",
-          "explanation": "The benefit-cost ratio and net present benefit are \\[\\dfrac{B}{C} = \\dfrac{15}{12} = 1.25\\] \\[15 - 12 = 3\\ \\text{million}\\] A ratio above one passes this economic test; equality is break-even, and the highest ratio does not necessarily identify the best exclusive alternative.<p>Capsule 4th ed., p. 38; topic 10 point 28.</p>",
+          "explanation": "A project is accepted when the present worth of its benefits exceeds that of its costs, that is, when \\(\\dfrac{B}{C} \\gt 1\\); a ratio of 1 is break-even.<p>Capsule 4th ed., p. 38; topic 10 point 28.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1685,32 +1685,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00029",
           "src": "CAP4-10-00029",
-          "text": "Maintenance costs NRs 10000 in year 1 and increases by NRs 2000 each year. What are the year-4 cost and the undiscounted total over years 1 to 4?",
+          "text": "If \\(a\\) is the base amount of expenditure and \\(b\\) the increase in operation cost each year, the cost of maintenance in the \\(n\\)th year is ______.",
           "options": [
             {
               "key": "a",
-              "text": "NRs 18000 and NRs 56000"
+              "text": "\\(na + b\\)"
             },
             {
               "key": "b",
-              "text": "NRs 16000 and NRs 52000"
+              "text": "\\(a + (n - 1)b\\)"
             },
             {
               "key": "c",
-              "text": "NRs 18000 and NRs 52000"
+              "text": "\\(a + (n + 1)b\\)"
             },
             {
               "key": "d",
-              "text": "NRs 16000 and NRs 64000"
+              "text": "\\(a + nb\\)"
             }
           ],
           "answer": "b",
-          "explanation": "The year-4 cost is \\[\\begin{aligned} C_4 &amp;= a + (n - 1)b \\\\ &amp;= 10{,}000 + 3(2000) \\\\ &amp;= 16{,}000 \\end{aligned}\\] The four-year total is \\[\\begin{aligned} &amp;10{,}000 + 12{,}000 + 14{,}000 \\\\ &amp;\\quad + 16{,}000 = 52{,}000 \\end{aligned}\\] also \\(\\dfrac{n[2a + (n - 1)b]}{2}\\). The source incorrectly calls the single year's amount the total.<p>Source note: p38 n29 corrected: arithmetic-series terminal term is not its sum.</p><p>Capsule 4th ed., p. 38; topic 10 point 29.</p>",
+          "explanation": "The cost rises by \\(b\\) each year from \\(a\\) in the first year, so in the \\(n\\)th year it is \\(a + (n - 1)b\\); adding these yearly costs gives the total over the period.<p>Capsule 4th ed., p. 38; topic 10 point 29.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1723,32 +1723,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00030",
           "src": "CAP4-10-00030",
-          "text": "A payment of NRs 133100 is due three years from now. At a constant 10% annual discount rate, what is its present value?",
+          "text": "The rate used to convert a future sum into its present value is called the ______.",
           "options": [
             {
               "key": "a",
-              "text": "NRs 121000"
+              "text": "Tax rate"
             },
             {
               "key": "b",
-              "text": "NRs 177156.10"
+              "text": "Depreciation rate"
             },
             {
               "key": "c",
-              "text": "NRs 100000"
+              "text": "Discount rate"
             },
             {
               "key": "d",
-              "text": "NRs 103100"
+              "text": "Inflation rate"
             }
           ],
           "answer": "c",
-          "explanation": "Discount over each of the three periods: \\[P = \\dfrac{133{,}100}{(1.10)^3} = 100{,}000\\] Multiplying instead would compound forward, while simply subtracting three years' percentage does not implement compound discounting.<p>Capsule 4th ed., p. 38; topic 10 point 30.</p>",
+          "explanation": "A future sum is brought to its present value by dividing it by \\((1 + i)^n\\), where \\(i\\) is the discount rate.<p>Capsule 4th ed., p. 38; topic 10 point 30.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1761,32 +1761,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00031",
           "src": "CAP4-10-00031",
-          "text": "NRs 20000 earns 10% compound interest annually for two years without withdrawals. What is the total interest, excluding the original principal?",
+          "text": "In compound interest, ______.",
           "options": [
             {
               "key": "a",
-              "text": "NRs 4000"
+              "text": "Interest is paid only on the original principal"
             },
             {
               "key": "b",
-              "text": "NRs 24200"
+              "text": "No interest is earned"
             },
             {
               "key": "c",
-              "text": "NRs 4200"
+              "text": "Interest is added to the principal and earns further interest"
             },
             {
               "key": "d",
-              "text": "NRs 2000"
+              "text": "The interest decreases every year"
             }
           ],
           "answer": "c",
-          "explanation": "The future amount and the interest are \\[F = 20{,}000(1.1)^2 = 24{,}200\\] \\[24{,}200 - 20{,}000 = 4200\\] Compounding earns interest on previously accumulated interest and does not require an increasing interest rate.<p>Source note: p38 n31 corrected: principal is not interest, and the rate can remain constant.</p><p>Capsule 4th ed., p. 38; topic 10 point 31.</p>",
+          "explanation": "Under compound interest, each period's interest is added to the principal, so the future worth \\(P(1 + i)^n\\) grows faster than it would with simple interest.<p>Capsule 4th ed., p. 38; topic 10 point 31.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1799,32 +1799,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00033",
           "src": "CAP4-10-00033",
-          "text": "A nominal annual rate of 12% is compounded monthly. What is the effective annual rate, approximately?",
+          "text": "The effective annual interest rate for a nominal annual rate \\(r\\) compounded \\(m\\) times a year is ______.",
           "options": [
             {
               "key": "a",
-              "text": "1.0000%"
+              "text": "\\(\\dfrac{r}{m}\\)"
             },
             {
               "key": "b",
-              "text": "12.0000%"
+              "text": "\\((1 + rm)^m - 1\\)"
             },
             {
               "key": "c",
-              "text": "11.3869%"
+              "text": "\\((1 + r)^m - 1\\)"
             },
             {
               "key": "d",
-              "text": "12.6825%"
+              "text": "\\(\\left(1 + \\dfrac{r}{m}\\right)^m - 1\\)"
             }
           ],
           "answer": "d",
-          "explanation": "The monthly rate is \\(\\dfrac{0.12}{12} = 0.01\\). The effective annual interest is \\[(1.01)^{12} - 1 = 0.12682503\\] or 12.6825%; nominal and effective annual rates differ when compounding occurs more than once yearly.<p>Capsule 4th ed., p. 38; topic 10 point 33.</p>",
+          "explanation": "Compounding \\(m\\) times a year at \\(\\dfrac{r}{m}\\) per period grows 1 rupee to \\(\\left(1 + \\dfrac{r}{m}\\right)^m\\), so the effective annual rate is this less 1; for 12% compounded monthly it is about 12.68%.<p>Capsule 4th ed., p. 38; topic 10 point 33.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1837,32 +1837,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00037",
           "src": "CAP4-10-00037",
-          "text": "A specialised plant can be sold after installation, but only at a large loss. Why is its capital-budgeting decision often described as difficult to reverse?",
+          "text": "Capital budgeting decisions are ______.",
           "options": [
             {
               "key": "a",
-              "text": "Its future operating costs become sunk immediately"
+              "text": "Short-term"
             },
             {
               "key": "b",
-              "text": "Much of the committed cost may be unrecoverable"
+              "text": "Irreversible"
             },
             {
               "key": "c",
-              "text": "Disposal of a capital asset is legally impossible"
+              "text": "Easily reversible"
             },
             {
               "key": "d",
-              "text": "Its accounting depreciation cannot ever be revised"
+              "text": "Of little importance"
             }
           ],
           "answer": "b",
-          "explanation": "Capital commitments are often economically costly to reverse because installation and specialised investment cannot be fully recovered. Irreversibility is a practical degree of sunk-cost exposure, not a universal ban on sale or abandonment.<p>Source note: p38 n37 qualified: investments are not invariably physically or legally irreversible.</p><p>Capsule 4th ed., p. 38; topic 10 point 37.</p>",
+          "explanation": "Capital budgeting commits large funds to long-lived assets that cannot easily be recovered once the investment is made, so capital budgeting decisions are irreversible.<p>Capsule 4th ed., p. 38; topic 10 point 37.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1875,12 +1875,12 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00121",
           "src": "CAP4-10-00121",
-          "text": "A site can accommodate either design A or design B, but constructing one prevents construction of the other. How should the alternatives be classified?",
+          "text": "When a company can choose only one option among multiple alternatives, the alternatives are ______.",
           "options": [
             {
               "key": "a",
@@ -1888,19 +1888,19 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             },
             {
               "key": "b",
-              "text": "Mandatory successive project phases"
+              "text": "Complementary"
             },
             {
               "key": "c",
-              "text": "Identical merely because both are feasible"
+              "text": "Contingent"
             },
             {
               "key": "d",
-              "text": "Independent and simultaneously selectable"
+              "text": "Independent"
             }
           ],
           "answer": "a",
-          "explanation": "Mutually exclusive alternatives cannot both be selected in the stated decision. They should be compared on a consistent service and analysis basis; acceptance tests for independent projects alone do not decide which exclusive option is best.<p>Capsule 4th ed., p. 40; topic 10 point 114.</p>",
+          "explanation": "Mutually exclusive alternatives are those of which only one can be selected, as when two designs compete for the same site; independent projects can be chosen together.<p>Capsule 4th ed., p. 40; topic 10 point 114.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1913,32 +1913,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00129",
           "src": "CAP4-10-00129",
-          "text": "Annual receipts are NRs 40000, 45000, 50000 and 55000 in successive years. Which cash-flow pattern is present?",
+          "text": "A cash flow that increases or decreases by a constant amount every period forms a ______.",
           "options": [
             {
               "key": "a",
-              "text": "A single-payment series without a recurring base"
+              "text": "Single payment"
             },
             {
               "key": "b",
-              "text": "A geometric gradient of 12.5% every year"
+              "text": "Geometric gradient series"
             },
             {
               "key": "c",
-              "text": "An arithmetic gradient of NRs 5000 per year"
+              "text": "Linear gradient series"
             },
             {
               "key": "d",
-              "text": "A uniform annual series of NRs 5000"
+              "text": "Uniform series"
             }
           ],
           "answer": "c",
-          "explanation": "Each receipt increases by the constant amount 5000, so this is an arithmetic or linear gradient superimposed on a base receipt. The percentage growth is not constant: \\[\\dfrac{5000}{40{,}000} \\ne \\dfrac{5000}{45{,}000}\\]<p>Capsule 4th ed., p. 41; topic 10 point 120.</p>",
+          "explanation": "When each period's cash flow differs from the last by a constant amount \\(G\\), the series is a linear (arithmetic) gradient; a constant percentage change gives a geometric gradient.<p>Capsule 4th ed., p. 41; topic 10 point 120.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1951,32 +1951,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00149",
           "src": "CAP4-10-00149",
-          "text": "A proposed manufacturing plant requires a machine plus additional inventory and receivables. Which treatment is correct in capital-budgeting cash flows?",
+          "text": "Capital budgeting is not concerned with investment in ______.",
           "options": [
             {
               "key": "a",
-              "text": "Count the existing company's entire inventory as a new project outflow"
+              "text": "New plant and machinery"
             },
             {
               "key": "b",
-              "text": "Exclude all working capital because it is classified as current assets"
+              "text": "Fixed assets"
             },
             {
               "key": "c",
-              "text": "Include incremental working-capital investment and any eventual recovery"
+              "text": "Current assets"
             },
             {
               "key": "d",
-              "text": "Treat all inventory investment as a permanent annual depreciation charge"
+              "text": "Long-term projects"
             }
           ],
           "answer": "c",
-          "explanation": "Although capital budgeting concerns long-term investment decisions, incremental working capital is part of the project's cash requirement. Its timing and recoverable terminal amount matter; excluding it solely because it is a current asset overstates value.<p>Source note: p41 n139 corrected: capital projects can require incremental current-asset investment.</p><p>Capsule 4th ed., p. 41; topic 10 point 139.</p>",
+          "explanation": "Capital budgeting deals with long-term investment in fixed assets such as plant, buildings and machinery; current assets are handled by working capital management.<p>Capsule 4th ed., p. 41; topic 10 point 139.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -1989,32 +1989,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00150",
           "src": "CAP4-10-00150",
-          "text": "A firm can retain profit for a new investment or distribute it. What should justify reinvestment on an economic basis?",
+          "text": "Profit earned by a business should be managed by ______ for growth.",
           "options": [
             {
               "key": "a",
-              "text": "The mere existence of accounting profit in the previous year"
+              "text": "Spending it on non-business expenses"
             },
             {
               "key": "b",
-              "text": "A risk-adjusted expected return meeting the relevant opportunity-cost criterion"
+              "text": "Reinvesting it at a higher rate"
             },
             {
               "key": "c",
-              "text": "The assumption that reinvested profit always earns a higher rate"
+              "text": "Keeping it idle as cash"
             },
             {
               "key": "d",
-              "text": "A desire to increase asset size regardless of expected cash flows"
+              "text": "Lending it without interest"
             }
           ],
           "answer": "b",
-          "explanation": "Reinvestment should create value compared with available alternatives, using a suitable risk-adjusted required return and incremental cash flows. Retaining money does not guarantee a higher return or growth in shareholder value.<p>Source note: p41 n140 corrected: higher reinvestment return is not automatic.</p><p>Capsule 4th ed., p. 41; topic 10 point 140.</p>",
+          "explanation": "For growth, the profit earned by a business should be reinvested where it earns a higher rate of return, increasing future earnings, rather than left idle.<p>Capsule 4th ed., p. 41; topic 10 point 140.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2027,32 +2027,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00153",
           "src": "CAP4-10-00153",
-          "text": "Which decision most clearly belongs to capital budgeting rather than routine short-term cash administration?",
+          "text": "Capital budgeting involves ______.",
           "options": [
             {
               "key": "a",
-              "text": "Recording yesterday's petty-cash receipts in a ledger"
+              "text": "Daily wages"
             },
             {
               "key": "b",
-              "text": "Reconciling the cash drawer at the end of today's shift"
+              "text": "Petty cash"
             },
             {
               "key": "c",
-              "text": "Evaluating a treatment plant's multi-year incremental cash flows"
+              "text": "Fixed assets"
             },
             {
               "key": "d",
-              "text": "Matching this week's invoices to delivery notes"
+              "text": "Short-term receivables"
             }
           ],
           "answer": "c",
-          "explanation": "Capital budgeting evaluates long-term investment commitments such as fixed assets and their related project cash flows. It is broader than an asset purchase price and distinct from routine transaction recording.<p>Capsule 4th ed., p. 41; topic 10 point 142.</p>",
+          "explanation": "Capital budgeting evaluates long-term investment in fixed assets such as land, buildings, plant and machinery, whose benefits last for many years.<p>Capsule 4th ed., p. 41; topic 10 point 142.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2065,32 +2065,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00156",
           "src": "CAP4-10-00156",
-          "text": "An asset will generate NRs 55000 at the end of year 1 and NRs 60500 at the end of year 2. At a 10% annual discount rate, what is the present value of these receipts alone?",
+          "text": "The method commonly used by business enterprises when valuing companies or projects is ______.",
           "options": [
             {
               "key": "a",
-              "text": "NRs 100000"
+              "text": "Discounted cash flow (DCF)"
             },
             {
               "key": "b",
-              "text": "NRs 105000"
+              "text": "Simple payback only"
             },
             {
               "key": "c",
-              "text": "NRs 110000"
+              "text": "The book value method"
             },
             {
               "key": "d",
-              "text": "NRs 115500"
+              "text": "Straight-line depreciation"
             }
           ],
           "answer": "a",
-          "explanation": "Discount each receipt to the same date: \\[\\dfrac{55{,}000}{1.1} = 50{,}000\\] \\[\\dfrac{60{,}500}{1.1^2} = 50{,}000\\] giving 100,000. DCF values timing-adjusted cash flows; an acquisition cost would be deducted separately to calculate project NPV.<p>Capsule 4th ed., p. 41; topic 10 point 146.</p>",
+          "explanation": "Discounted cash flow converts all future cash flows to their present value at a suitable discount rate, so it is the usual method of valuing companies and projects.<p>Capsule 4th ed., p. 41; topic 10 point 146.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2103,32 +2103,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00157",
           "src": "CAP4-10-00157",
-          "text": "An independent project costs NRs 90000 now and has future receipts with present value NRs 100000 at the appropriate MARR. What does present-worth analysis indicate?",
+          "text": "In project decision making by the present worth method, an independent project is accepted when its net present worth is ______.",
           "options": [
             {
               "key": "a",
-              "text": "NPV is +NRs 10000, so it passes the stated economic test"
+              "text": "Greater than zero"
             },
             {
               "key": "b",
-              "text": "NPV cannot be used in any project decision"
+              "text": "Equal to its first cost"
             },
             {
               "key": "c",
-              "text": "NPV is NRs 190000 because costs and benefits are added"
+              "text": "Equal to its salvage value"
             },
             {
               "key": "d",
-              "text": "NPV is -NRs 10000, so it fails the stated economic test"
+              "text": "Less than zero"
             }
           ],
           "answer": "a",
-          "explanation": "NPV is the present value of inflows minus outflows: \\[\\begin{aligned} \\text{NPV} &amp;= 100{,}000 - 90{,}000 \\\\ &amp;= 10{,}000 \\end{aligned}\\] Present-worth analysis is a standard project decision tool; the source's claim that it is not such a tool is incorrect.<p>Source note: p41 n147 corrected: present worth is a legitimate economic decision method.</p><p>Capsule 4th ed., p. 41; topic 10 point 147.</p>",
+          "explanation": "The present worth method discounts all cash flows at the MARR; an independent project with a positive net present worth earns more than the MARR and is acceptable.<p>Capsule 4th ed., p. 41; topic 10 point 147.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2141,32 +2141,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00159",
           "src": "CAP4-10-00159",
-          "text": "An asset costs NRs 1000000, has residual value NRs 100000 and a five-year depreciable life. Under straight-line book depreciation, what are its annual charge and book value after three full years?",
+          "text": "The depreciation method used when an equal amount is depreciated every year is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "NRs 180000 and NRs 460000"
+              "text": "Straight-line method"
             },
             {
               "key": "b",
-              "text": "NRs 180000 and NRs 540000"
+              "text": "Sum-of-years digits method"
             },
             {
               "key": "c",
-              "text": "NRs 200000 and NRs 400000"
+              "text": "Declining balance method"
             },
             {
               "key": "d",
-              "text": "NRs 220000 and NRs 340000"
+              "text": "Sinking fund method"
             }
           ],
           "answer": "a",
-          "explanation": "The annual depreciation is \\[\\begin{aligned} &amp;\\dfrac{1{,}000{,}000 - 100{,}000}{5} \\\\ &amp;= 180{,}000 \\end{aligned}\\] Three charges total 540,000, leaving the book value \\[\\begin{aligned} &amp;1{,}000{,}000 - 540{,}000 \\\\ &amp;= 460{,}000 \\end{aligned}\\] This is a stated accounting method, not an assertion about Nepal's tax-depreciation pools.<p>Capsule 4th ed., p. 41; topic 10 point 149.</p>",
+          "explanation": "In the straight-line method the depreciable amount, cost less salvage value, is divided equally over the useful life, so the same amount is charged every year.<p>Capsule 4th ed., p. 41; topic 10 point 149.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2179,7 +2179,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1002",
-          "kind": "calculation"
+          "kind": "recall"
         }
       ]
     },
@@ -2191,27 +2191,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-09-00060",
           "src": "CAP4-09-00060",
-          "text": "In a finish-to-start CPM network with zero lags, an activity must finish before successors whose latest starts are day 18 and day 15. What latest finish follows in the backward pass?",
+          "text": "In the backward pass of a CPM network, the ______ value is taken.",
           "options": [
             {
               "key": "a",
-              "text": "Day 15"
+              "text": "Minimum"
             },
             {
               "key": "b",
-              "text": "Day 16.5"
+              "text": "Average"
             },
             {
               "key": "c",
-              "text": "Day 18"
+              "text": "Maximum"
             },
             {
               "key": "d",
-              "text": "Day 33"
+              "text": "Sum of the"
             }
           ],
           "answer": "a",
-          "explanation": "The predecessor must satisfy both successor constraints, so its latest finish is \\[\\text{LF} = \\min(18, 15) = \\text{day } 15\\] The backward pass takes the controlling minimum; the forward pass uses the maximum of predecessor finish constraints.<p>Source note: Page 35 point 59 is CPM scheduling rather than transportation design; assigned to the exact in-syllabus code AALL1003.</p><p>Capsule 4th ed., p. 35; topic 9 point 59.</p>",
+          "explanation": "In the backward pass the latest event time is the smallest of the values obtained from the succeeding activities, so the minimum is taken; the forward pass takes the maximum.<p>Capsule 4th ed., p. 35; topic 9 point 59.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2224,32 +2224,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00032",
           "src": "CAP4-10-00032",
-          "text": "At a status date, budgeted cost of work performed is NRs 600000 and budgeted cost of work scheduled is NRs 800000. What is the schedule performance index?",
+          "text": "The schedule performance index (SPI) is the ratio of ______.",
           "options": [
             {
               "key": "a",
-              "text": "0.75, indicating less earned work than planned"
+              "text": "BCWP to BCWS"
             },
             {
               "key": "b",
-              "text": "0.75, indicating lower actual cost than budget"
+              "text": "BCWP to ACWP"
             },
             {
               "key": "c",
-              "text": "1.33, indicating less earned work than planned"
+              "text": "BCWS to BCWP"
             },
             {
               "key": "d",
-              "text": "1.33, indicating lower actual cost than budget"
+              "text": "ACWP to BCWS"
             }
           ],
           "answer": "a",
-          "explanation": "The schedule performance index is \\[\\begin{aligned} \\text{SPI} &amp;= \\dfrac{\\text{EV}}{\\text{PV}} = \\dfrac{600{,}000}{800{,}000} \\\\ &amp;= 0.75 \\end{aligned}\\] where EV is BCWP and PV is BCWS. It compares earned and planned budgeted work, not actual spending, and does not directly mean the finish date is 25% late.<p>Capsule 4th ed., p. 38; topic 10 point 32.</p>",
+          "explanation": "SPI compares the budgeted cost of work performed with the budgeted cost of work scheduled; a value below 1 means less work has been done than planned. BCWP divided by ACWP is the cost performance index.<p>Capsule 4th ed., p. 38; topic 10 point 32.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2262,32 +2262,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00034",
           "src": "CAP4-10-00034",
-          "text": "Completed work has a baseline budget value of NRs 400000, but the company actually incurred NRs 460000 to perform it. Which amount is ACWP?",
+          "text": "The actual cost incurred for the work performed by a company in a project is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "NRs 60000, the cost overrun"
+              "text": "Budgeted cost of work performed (BCWP)"
             },
             {
               "key": "b",
-              "text": "NRs 860000, the combined expenditure"
+              "text": "Estimate at completion (EAC)"
             },
             {
               "key": "c",
-              "text": "NRs 400000, the earned budget value"
+              "text": "Budgeted cost of work scheduled (BCWS)"
             },
             {
               "key": "d",
-              "text": "NRs 460000, the actual cost incurred"
+              "text": "Actual cost of work performed (ACWP)"
             }
           ],
           "answer": "d",
-          "explanation": "Actual Cost of Work Performed is the incurred cost, here 460000. The 400000 budgeted value of completed work is BCWP or earned value; it does not become actual cost merely because the work is complete.<p>Capsule 4th ed., p. 38; topic 10 point 34.</p>",
+          "explanation": "ACWP is the cost actually spent on the work done by a given date; BCWS is the planned value and BCWP the earned value of that work.<p>Capsule 4th ed., p. 38; topic 10 point 34.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2300,32 +2300,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00035",
           "src": "CAP4-10-00035",
-          "text": "Two parallel tasks each need the same single crane throughout their duration. No extra crane is available, and delaying one task can extend completion. Which scheduling operation addresses this hard resource limit?",
+          "text": "In resource levelling, the constraint is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Resource smoothing within float only"
+              "text": "Project duration"
             },
             {
               "key": "b",
-              "text": "Resource levelling"
+              "text": "Resources"
             },
             {
               "key": "c",
-              "text": "Cost discounting"
+              "text": "Cost"
             },
             {
               "key": "d",
-              "text": "Unconstrained forward-pass scheduling"
+              "text": "Quality"
             }
           ],
           "answer": "b",
-          "explanation": "Levelling enforces resource availability even if activities and project completion must move. Smoothing instead seeks a better resource profile within available float without changing the specified project finish.<p>Capsule 4th ed., p. 38; topic 10 point 35.</p>",
+          "explanation": "Resource levelling schedules activities so that the demand never exceeds the resources available, even if the project duration increases; resource smoothing keeps the duration fixed instead.<p>Capsule 4th ed., p. 38; topic 10 point 35.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2338,32 +2338,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00036",
           "src": "CAP4-10-00036",
-          "text": "In a zero-lag finish-to-start network, an activity finishes earliest at day 7 and its earliest successor starts at day 10. How much free float does the activity have?",
+          "text": "The amount of time a task can be delayed without impacting other tasks in the path is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "3 days"
+              "text": "Free float"
             },
             {
               "key": "b",
-              "text": "10 days"
+              "text": "Independent float"
             },
             {
               "key": "c",
-              "text": "17 days"
+              "text": "Interfering float"
             },
             {
               "key": "d",
-              "text": "7 days"
+              "text": "Total float"
             }
           ],
           "answer": "a",
-          "explanation": "Free float equals the minimum successor early start minus the activity early finish: \\[\\text{FF} = 10 - 7 = 3\\ \\text{days}\\] It protects successor early starts, a more precise condition than merely saying other tasks are unaffected.<p>Capsule 4th ed., p. 38; topic 10 point 36.</p>",
+          "explanation": "Free float is the delay an activity can take without delaying the earliest start of the activities that follow it; total float is the delay that does not affect project completion.<p>Capsule 4th ed., p. 38; topic 10 point 36.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2376,32 +2376,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00038",
           "src": "CAP4-10-00038",
-          "text": "A municipality has identified unreliable water supply as a problem. Before selecting a treatment technology, which formulation step should guide comparison of solutions?",
+          "text": "The first stage in project formulation is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Declare the preferred contractor's method mandatory"
+              "text": "Final evaluation"
             },
             {
               "key": "b",
-              "text": "Define the service objectives and measurable outcomes"
+              "text": "Setting objectives"
             },
             {
               "key": "c",
-              "text": "Purchase the equipment offered at the largest discount"
+              "text": "Preparing drawings"
             },
             {
               "key": "d",
-              "text": "Prepare the final as-built drawing register"
+              "text": "Awarding the contract"
             }
           ],
           "answer": "b",
-          "explanation": "Clear objectives translate the identified need into criteria against which alternatives can be assessed. Problem identification and objectives may be iterative; the source's 'first stage' is not a reason to skip diagnosing the actual need.<p>Capsule 4th ed., p. 38; topic 10 point 38.</p>",
+          "explanation": "A project is formulated by first setting clear objectives; the alternatives, feasibility, design and appraisal all follow from these objectives.<p>Capsule 4th ed., p. 38; topic 10 point 38.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2414,32 +2414,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00039",
           "src": "CAP4-10-00039",
-          "text": "In classical three-estimate PERT, which description applies to the model for an individual activity's uncertain duration?",
+          "text": "In PERT analysis, the time estimates of activities and the probability of their occurrence follow a ______ distribution curve.",
           "options": [
             {
               "key": "a",
-              "text": "A bounded beta-type approximation using three estimates"
+              "text": "Beta"
             },
             {
               "key": "b",
-              "text": "An unbounded normal distribution required for every activity"
+              "text": "Normal"
             },
             {
               "key": "c",
-              "text": "A uniform distribution necessarily centred at the mode"
+              "text": "Uniform"
             },
             {
               "key": "d",
-              "text": "A fixed deterministic duration with zero uncertainty"
+              "text": "Poisson"
             }
           ],
           "answer": "a",
-          "explanation": "Classical PERT uses optimistic, most-likely and pessimistic estimates to approximate a bounded activity-duration distribution. A normal approximation may be used for a path total under additional assumptions; it is not the individual-activity model.<p>Capsule 4th ed., p. 38; topic 10 point 39.</p>",
+          "explanation": "PERT assumes that each activity duration follows a beta distribution defined by its optimistic, most likely and pessimistic times; the total project time is then treated as normal.<p>Capsule 4th ed., p. 38; topic 10 point 39.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2452,32 +2452,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00040",
           "src": "CAP4-10-00040",
-          "text": "An unconstrained CPM network has start-to-finish path durations of 9, 12 and 10 working days. With all precedence requirements enforced, what determines its earliest completion?",
+          "text": "The critical path of a project network is the ______ path.",
           "options": [
             {
               "key": "a",
-              "text": "The 10-day path"
+              "text": "Cheapest"
             },
             {
               "key": "b",
-              "text": "The 9-day path"
+              "text": "Shortest"
             },
             {
               "key": "c",
-              "text": "The sum of all three path durations"
+              "text": "First"
             },
             {
               "key": "d",
-              "text": "The 12-day path"
+              "text": "Longest"
             }
           ],
           "answer": "d",
-          "explanation": "Every required path must finish, so the longest path controls the earliest possible project finish: \\[\\max(9, 12, 10) = 12\\ \\text{days}\\] Parallel path durations are not simply added.<p>Capsule 4th ed., p. 38; topic 10 point 40.</p>",
+          "explanation": "The critical path is the longest path through the network; its length is the minimum project duration, and its activities have zero total float.<p>Capsule 4th ed., p. 38; topic 10 point 40.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2490,32 +2490,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00041",
           "src": "CAP4-10-00041",
-          "text": "An activity-on-arrow network introduces a dummy arrow solely to preserve a precedence relationship. What duration and resource demand are assigned to it?",
+          "text": "Which statement is true about a dummy activity?",
           "options": [
             {
               "key": "a",
-              "text": "Zero duration and zero resource demand"
+              "text": "It does not consume resources"
             },
             {
               "key": "b",
-              "text": "One time unit and zero resource demand"
+              "text": "It takes the longest time"
             },
             {
               "key": "c",
-              "text": "The predecessor's duration and resource demand"
+              "text": "It needs a separate crew"
             },
             {
               "key": "d",
-              "text": "Zero duration and one crew's resource demand"
+              "text": "It always lies on the critical path"
             }
           ],
           "answer": "a",
-          "explanation": "A dummy is a logical connector, not physical work, and therefore has zero duration and resources. A real approval or waiting activity may take time even with little labour and must not be disguised as a dummy.<p>Capsule 4th ed., p. 38; topic 10 point 41.</p>",
+          "explanation": "A dummy activity, drawn as a dashed arrow, only shows a logical dependency, so it consumes neither time nor resources.<p>Capsule 4th ed., p. 38; topic 10 point 41.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2528,32 +2528,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00042",
           "src": "CAP4-10-00042",
-          "text": "An activity has earliest start day 4, duration 5 days and latest finish day 12. What is its total float under the stated CPM finish constraint?",
+          "text": "The difference between the maximum time available and the actual time needed to perform an activity is known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "8 days"
+              "text": "Independent float"
             },
             {
               "key": "b",
-              "text": "7 days"
+              "text": "Free float"
             },
             {
               "key": "c",
-              "text": "3 days"
+              "text": "Total float"
             },
             {
               "key": "d",
-              "text": "5 days"
+              "text": "Interfering float"
             }
           ],
           "answer": "c",
-          "explanation": "The earliest finish and latest start are \\[\\text{EF} = 4 + 5 = 9\\] \\[\\text{LS} = 12 - 5 = 7\\] so the total float is \\[\\begin{aligned} \\text{TF} &amp;= \\text{LF} - \\text{EF} = 12 - 9 \\\\ &amp;= 3\\ \\text{days} \\end{aligned}\\] equivalently \\(\\text{LS} - \\text{ES} = 7 - 4\\).<p>Capsule 4th ed., p. 38; topic 10 point 42.</p>",
+          "explanation": "Total float is the maximum time available for an activity, from its earliest start to its latest finish, minus its duration: \\(\\mathrm{TF} = \\mathrm{LF} - \\mathrm{ES} - t\\).<p>Capsule 4th ed., p. 38; topic 10 point 42.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2566,32 +2566,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00043",
           "src": "CAP4-10-00043",
-          "text": "For critical-ratio dispatching, job X has 6 days until due and 8 days of work remaining; job Y has 8 days until due and 4 days of work remaining. Which is more urgent under the smaller-ratio-first rule?",
+          "text": "The technique for establishing and maintaining priorities among the various jobs of a project is known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "Y, with a critical ratio of 2.00"
+              "text": "Resource smoothing"
             },
             {
               "key": "b",
-              "text": "X, with a critical ratio of 1.33"
+              "text": "Line of balance"
             },
             {
               "key": "c",
-              "text": "X, with a critical ratio of 0.75"
+              "text": "Critical ratio scheduling"
             },
             {
               "key": "d",
-              "text": "Y, with a critical ratio of 0.50"
+              "text": "Bar charting"
             }
           ],
           "answer": "c",
-          "explanation": "The critical ratio is the time remaining until due divided by the work remaining: \\[\\text{X}: \\dfrac{6}{8} = 0.75, \\qquad \\text{Y}: \\dfrac{8}{4} = 2\\] A value below one flags insufficient remaining time at the assumed rate, so X receives higher priority.<p>Capsule 4th ed., p. 38; topic 10 point 43.</p>",
+          "explanation": "Critical ratio scheduling ranks jobs by the ratio of the time remaining to the work remaining, so the jobs with the lowest ratio get priority.<p>Capsule 4th ed., p. 38; topic 10 point 43.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2604,32 +2604,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00044",
           "src": "CAP4-10-00044",
-          "text": "Which scheduling representation predates the development of CPM and PERT and displays activities as time-scaled horizontal bars?",
+          "text": "The project planning method that was invented first is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Activity-on-node CPM network"
+              "text": "CPM"
             },
             {
               "key": "b",
-              "text": "Three-estimate PERT network"
+              "text": "PERT"
             },
             {
               "key": "c",
-              "text": "Earned-value performance index"
+              "text": "Line of balance"
             },
             {
               "key": "d",
-              "text": "Gantt bar chart"
+              "text": "Bar chart"
             }
           ],
           "answer": "d",
-          "explanation": "Gantt-style bar charts were in use before the mid-twentieth-century development of CPM and PERT. This historical comparison does not assert that the bar chart was the first planning method of any kind.<p>Source note: p38 n44 narrowed from an unsupported universal &#39;invented first&#39; claim.</p><p>Capsule 4th ed., p. 38; topic 10 point 44.</p>",
+          "explanation": "Henry Gantt developed the bar chart in the early 1900s, long before the network methods CPM and PERT appeared in the late 1950s.<p>Capsule 4th ed., p. 38; topic 10 point 44.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2647,27 +2647,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00046",
           "src": "CAP4-10-00046",
-          "text": "A planner uses fixed activity durations and assesses how extra direct cost could shorten the critical path. Which classical scheduling approach best fits this description?",
+          "text": "The critical path method (CPM) of project planning is ______.",
           "options": [
             {
               "key": "a",
-              "text": "PERT with mandatory random activity sampling"
+              "text": "Event oriented and probabilistic"
             },
             {
               "key": "b",
-              "text": "A cash-flow discounting analysis alone"
+              "text": "A bar chart method without network logic"
             },
             {
               "key": "c",
-              "text": "A bar chart with no precedence relationships"
+              "text": "Used only for research projects"
             },
             {
               "key": "d",
-              "text": "CPM with time-cost trade-off analysis"
+              "text": "Activity oriented and deterministic, with a focus on time–cost trade-off"
             }
           ],
           "answer": "d",
-          "explanation": "Classical CPM is activity-focused, commonly uses deterministic duration estimates and supports crashing or time-cost trade-offs. Network drawing format alone does not distinguish CPM from PERT.<p>Capsule 4th ed., p. 38; topic 10 point 46.</p>",
+          "explanation": "CPM uses single, fixed activity durations, is activity oriented and studies how extra cost can shorten the project (time–cost trade-off); PERT is event oriented and probabilistic.<p>Capsule 4th ed., p. 38; topic 10 point 46.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2680,32 +2680,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00047",
           "src": "CAP4-10-00047",
-          "text": "A crashable critical activity costs NRs 60000 at 8 days and NRs 90000 at 5 days. Assuming a linear feasible crash range, what is its direct-cost slope?",
+          "text": "Which network method is deterministic and activity oriented?",
           "options": [
             {
               "key": "a",
-              "text": "NRs 30000 per day saved"
+              "text": "Line of balance"
             },
             {
               "key": "b",
-              "text": "NRs 3750 per day saved"
+              "text": "PERT"
             },
             {
               "key": "c",
-              "text": "NRs 10000 per day saved"
+              "text": "CPM"
             },
             {
               "key": "d",
-              "text": "NRs 6000 per day saved"
+              "text": "Monte Carlo simulation"
             }
           ],
           "answer": "c",
-          "explanation": "The cost slope is \\[\\dfrac{90{,}000 - 60{,}000}{8 - 5} = 10{,}000\\] rupees per day saved. Project shortening still requires checking every current critical path and the activity's crash limit; the ratio is not a guarantee that every purchased day shortens completion.<p>Capsule 4th ed., p. 38; topic 10 point 46.</p>",
+          "explanation": "CPM uses one known duration for each activity, so it is deterministic and activity oriented and is used for time–cost trade-off; PERT is probabilistic and event oriented.<p>Capsule 4th ed., p. 38; topic 10 point 46.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2718,32 +2718,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00048",
           "src": "CAP4-10-00048",
-          "text": "In elapsed working-day CPM notation, two predecessors finish on days 6 and 9. Their zero-lag successor takes 4 days. What are the successor's earliest start and earliest finish?",
+          "text": "The formula used to calculate the earliest finish time (EF) of an activity during the forward pass is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Day 6 and day 10"
+              "text": "\\(\\mathrm{EF} = \\mathrm{LS} + t\\)"
             },
             {
               "key": "b",
-              "text": "Day 15 and day 19"
+              "text": "\\(\\mathrm{EF} = \\mathrm{ES} - t\\)"
             },
             {
               "key": "c",
-              "text": "Day 9 and day 13"
+              "text": "\\(\\mathrm{EF} = \\mathrm{ES} + t\\)"
             },
             {
               "key": "d",
-              "text": "Day 9 and day 12"
+              "text": "\\(\\mathrm{EF} = \\mathrm{LF} - t\\)"
             }
           ],
           "answer": "c",
-          "explanation": "The forward pass waits for both predecessors: \\[\\text{ES} = \\max(6, 9) = 9\\] \\[\\text{EF} = 9 + 4 = 13\\] Elapsed-time notation avoids an inclusive calendar-date off-by-one adjustment.<p>Capsule 4th ed., p. 38; topic 10 point 47.</p>",
+          "explanation": "In the forward pass each activity finishes at its earliest start plus its duration, \\(\\mathrm{EF} = \\mathrm{ES} + t\\); the relation \\(\\mathrm{LS} = \\mathrm{LF} - t\\) belongs to the backward pass.<p>Capsule 4th ed., p. 38; topic 10 point 47.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2756,20 +2756,20 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00049",
           "src": "CAP4-10-00049",
-          "text": "A planner moves a noncritical task two days within its available float to reduce a labour peak, keeping the required project finish unchanged. What is this operation?",
+          "text": "The adjustment of resources in a project without affecting the project duration is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Critical-path crashing"
+              "text": "Crashing"
             },
             {
               "key": "b",
-              "text": "Scope reduction"
+              "text": "Fast tracking"
             },
             {
               "key": "c",
@@ -2777,11 +2777,11 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             },
             {
               "key": "d",
-              "text": "Resource levelling that extends the finish"
+              "text": "Resource levelling"
             }
           ],
           "answer": "c",
-          "explanation": "Smoothing redistributes resource demand within available schedule flexibility without changing the specified finish. It cannot always eliminate a peak if there is insufficient float; hard resource feasibility may instead require levelling.<p>Capsule 4th ed., p. 38; topic 10 point 48.</p>",
+          "explanation": "Resource smoothing shifts non-critical activities within their float to even out resource demand while keeping the project duration unchanged; resource levelling may extend the duration.<p>Capsule 4th ed., p. 38; topic 10 point 48.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2794,32 +2794,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00050",
           "src": "CAP4-10-00050",
-          "text": "An activity has optimistic, most-likely and pessimistic durations of 2, 5 and 14 days. What is its classical PERT expected duration?",
+          "text": "The relationship between the time estimates \\(t_o\\), \\(t_m\\) and \\(t_p\\) for the expected time of a PERT activity is ______.",
           "options": [
             {
               "key": "a",
-              "text": "7 days"
+              "text": "\\(t_e = \\dfrac{t_o + t_m + t_p}{3}\\)"
             },
             {
               "key": "b",
-              "text": "6 days"
+              "text": "\\(t_e = \\dfrac{t_o + 4t_m + t_p}{6}\\)"
             },
             {
               "key": "c",
-              "text": "36 days"
+              "text": "\\(t_e = \\dfrac{4t_o + t_m + 4t_p}{6}\\)"
             },
             {
               "key": "d",
-              "text": "5 days"
+              "text": "\\(t_e = \\dfrac{t_o + 4t_m + t_p}{3}\\)"
             }
           ],
           "answer": "b",
-          "explanation": "PERT gives \\[\\begin{aligned} t_e &amp;= \\dfrac{t_o + 4t_m + t_p}{6} \\\\ &amp;= \\dfrac{2 + 4(5) + 14}{6} = 6\\ \\text{days} \\end{aligned}\\] The extracted numbered point lost the divisor, but the complete page text places 6 beneath the numerator.<p>Source note: p39 n49: divisor 6 restored from complete page text, not image review.</p><p>Capsule 4th ed., p. 39; topic 10 point 49.</p>",
+          "explanation": "PERT weights the most likely time four times and divides by 6: \\(t_e = \\dfrac{t_o + 4t_m + t_p}{6}\\), where \\(t_o\\), \\(t_m\\) and \\(t_p\\) are the optimistic, most likely and pessimistic times.<p>Capsule 4th ed., p. 39; topic 10 point 49.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2832,32 +2832,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00051",
           "src": "CAP4-10-00051",
-          "text": "A bridge opens on its target date and within budget, but fails the specified load test. Which assessment of project performance is justified?",
+          "text": "Project performance consists of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Timely completion establishes success despite the failed test"
+              "text": "Time only"
             },
             {
               "key": "b",
-              "text": "Time and cost targets alone do not establish acceptable quality"
+              "text": "Time, cost and quality"
             },
             {
               "key": "c",
-              "text": "The failed test changes only the financing classification"
+              "text": "Profit and publicity"
             },
             {
               "key": "d",
-              "text": "Budget compliance proves that the design was adequate"
+              "text": "Cost only"
             }
           ],
           "answer": "b",
-          "explanation": "Time, cost and quality are distinct performance dimensions. Meeting the first two cannot compensate automatically for failure to meet required performance or safety; scope and other stakeholder outcomes also need assessment.<p>Capsule 4th ed., p. 39; topic 10 point 50.</p>",
+          "explanation": "A project is judged by whether it is completed on time, within budget and to the required quality; these three together make up project performance.<p>Capsule 4th ed., p. 39; topic 10 point 50.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2870,32 +2870,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00053",
           "src": "CAP4-10-00053",
-          "text": "For a conventional construction project, when are the largest site workforce and most construction expenditure normally concentrated?",
+          "text": "In a project, most of the money and manpower are required in the ______ phase.",
           "options": [
             {
               "key": "a",
-              "text": "Post-closeout benefits review"
+              "text": "Feasibility study"
             },
             {
               "key": "b",
-              "text": "Preliminary screening of alternatives"
+              "text": "Closure"
             },
             {
               "key": "c",
-              "text": "Execution of the works"
+              "text": "Execution"
             },
             {
               "key": "d",
-              "text": "Initial identification of the need"
+              "text": "Conception"
             }
           ],
           "answer": "c",
-          "explanation": "Execution mobilises labour, plant and materials to deliver the physical works and normally dominates construction expenditure. The exact spending profile is project-specific, particularly where equipment is purchased early.<p>Capsule 4th ed., p. 39; topic 10 point 52.</p>",
+          "explanation": "The construction work is carried out in the execution phase, so most of the funds, labour and equipment are used then; the earlier and later phases need far fewer resources.<p>Capsule 4th ed., p. 39; topic 10 point 52.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2908,32 +2908,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00068",
           "src": "CAP4-10-00068",
-          "text": "A contractor builds many similar culverts under one finite road package, while its payroll office processes salaries every month indefinitely. Which distinction best separates project work from operations?",
+          "text": "Which of the following is not a characteristic of a project?",
           "options": [
             {
               "key": "a",
-              "text": "Payroll is a project because every payment has a deadline"
+              "text": "A limited life"
             },
             {
               "key": "b",
-              "text": "Both are operations whenever standard procedures are used"
+              "text": "Uniqueness"
             },
             {
               "key": "c",
-              "text": "A project cannot contain any repeated construction task"
+              "text": "A definite objective"
             },
             {
               "key": "d",
-              "text": "The road package has a defined temporary delivery objective"
+              "text": "Repetitiveness"
             }
           ],
           "answer": "d",
-          "explanation": "A project is temporary and creates a defined result, even when many component activities repeat. Recurring ongoing payroll is an operation; repetition at activity level does not erase the road package's project character.<p>Source note: p39 n67 qualified: projects may contain repetitive activities.</p><p>Capsule 4th ed., p. 39; topic 10 point 67.</p>",
+          "explanation": "A project has a definite objective, a limited life and a unique output; repetitive routine work is a feature of operations, not of a project.<p>Capsule 4th ed., p. 39; topic 10 point 67.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2946,12 +2946,12 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00103",
           "src": "CAP4-10-00103",
-          "text": "In an activity-on-arrow backward pass, event J leads to events with latest times 15 and 18 through activities lasting 4 and 5 days. What is J's latest allowable time?",
+          "text": "In a CPM backward pass, an event leads through activities of 4 and 5 days to events with latest times of day 15 and day 18. The latest time of the event is ______.",
           "options": [
             {
               "key": "a",
@@ -2971,7 +2971,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "c",
-          "explanation": "Each outgoing activity restricts J: \\[15 - 4 = 11, \\qquad 18 - 5 = 13\\] Take the minimum, 11, to satisfy both successors. The minimum applies to successor latest-time-minus-duration candidates, not arbitrary times at any meeting node.<p>Capsule 4th ed., p. 40; topic 10 point 95.</p>",
+          "explanation": "When two activities meet at a node in the backward pass, the minimum value is taken. The candidates are \\(15 - 4 = 11\\) and \\(18 - 5 = 13\\), so the latest time is day 11.<p>Capsule 4th ed., p. 40; topic 10 point 95.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -2989,27 +2989,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00109",
           "src": "CAP4-10-00109",
-          "text": "In activity-on-arrow notation, an arrow runs from event 3 to event 5 and is labelled 'excavate, 4 days'. What do the arrow and its end nodes represent?",
+          "text": "In an activity-on-arrow (AOA) network, the arrows represent ______, while the nodes represent their start and end.",
           "options": [
             {
               "key": "a",
-              "text": "The arrow is elapsed float; the nodes are material quantities"
+              "text": "Events"
             },
             {
               "key": "b",
-              "text": "The arrow is a resource; both nodes are contractor identities"
+              "text": "Floats"
             },
             {
               "key": "c",
-              "text": "The arrow is an event; both nodes are four-day activities"
+              "text": "Resources"
             },
             {
               "key": "d",
-              "text": "The arrow is the activity; the nodes are start and finish events"
+              "text": "Activities"
             }
           ],
           "answer": "d",
-          "explanation": "In AOA, activities occupy arrows and nodes mark events at their ends. Event numbers identify logic and need not equal calendar times; nodes themselves do not consume an activity duration.<p>Capsule 4th ed., p. 40; topic 10 point 102.</p>",
+          "explanation": "In an AOA network each arrow is an activity, and the nodes at its tail and head are the events marking the start and finish of that activity.<p>Capsule 4th ed., p. 40; topic 10 point 102.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3022,32 +3022,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00114",
           "src": "CAP4-10-00114",
-          "text": "An activity-duration variance is estimated as 16 days squared. What is its standard deviation?",
+          "text": "Standard deviation is equal to ______.",
           "options": [
             {
               "key": "a",
-              "text": "16 days"
+              "text": "\\(\\dfrac{\\text{variance}}{2}\\)"
             },
             {
               "key": "b",
-              "text": "4 days"
+              "text": "\\((\\text{variance})^{1/2}\\)"
             },
             {
               "key": "c",
-              "text": "256 days"
+              "text": "\\(2 \\times \\text{variance}\\)"
             },
             {
               "key": "d",
-              "text": "8 days"
+              "text": "\\((\\text{variance})^2\\)"
             }
           ],
           "answer": "b",
-          "explanation": "Standard deviation is the positive square root of variance: \\[\\sigma = \\sqrt{16\\ \\text{days}^2} = 4\\ \\text{days}\\] Its units return to time, unlike variance, whose units are squared time.<p>Capsule 4th ed., p. 40; topic 10 point 107.</p>",
+          "explanation": "Standard deviation is the square root of the variance, \\(\\sigma = \\sqrt{\\sigma^2}\\); in PERT, for example, a variance of 16 gives a standard deviation of 4 days.<p>Capsule 4th ed., p. 40; topic 10 point 107.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3060,32 +3060,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00116",
           "src": "CAP4-10-00116",
-          "text": "In a conventional zero-lag CPM network whose finish is set at the earliest completion, an activity has EF = LF = 8 and its successor has ES = 8. What does this demonstrate about total and free float?",
+          "text": "In the critical path method, the total float (TF) of an activity is ______ its free float (FF).",
           "options": [
             {
               "key": "a",
-              "text": "Both can be zero, so TF need not be strictly greater than FF"
+              "text": "Greater than or equal to"
             },
             {
               "key": "b",
-              "text": "TF is negative whenever an activity lies on a critical path"
+              "text": "Unrelated to"
             },
             {
               "key": "c",
-              "text": "FF must be eight days because the successor starts on day eight"
+              "text": "Always exactly half of"
             },
             {
               "key": "d",
-              "text": "TF must exceed FF by at least one day"
+              "text": "Always less than"
             }
           ],
           "answer": "a",
-          "explanation": "The floats are \\[\\text{TF} = \\text{LF} - \\text{EF} = 0\\] \\[\\text{FF} = \\text{ES}_{succ} - \\text{EF} = 0\\] Under the stated ordinary CPM assumptions TF is at least FF, but equality is possible. Deadline constraints causing negative float require separate treatment.<p>Source note: p40 n109 corrected: TF &gt;= FF under the stated conventional assumptions, not universally TF &gt; FF.</p><p>Capsule 4th ed., p. 40; topic 10 point 109.</p>",
+          "explanation": "Total float allows a delay that does not affect the project finish, while free float must also protect the early starts of the successors, so total float is never less than free float and is usually greater.<p>Capsule 4th ed., p. 40; topic 10 point 109.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3098,32 +3098,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00123",
           "src": "CAP4-10-00123",
-          "text": "In an AOA network, task C must follow both A and B, while D must follow A only. Why might a dummy activity be needed?",
+          "text": "A dummy activity is used in a network for ______ purposes.",
           "options": [
             {
               "key": "a",
-              "text": "To force C and D to have equal durations"
+              "text": "Quality and safety"
             },
             {
               "key": "b",
-              "text": "To preserve the distinct precedence logic without adding physical work"
+              "text": "Grammatical and logical"
             },
             {
               "key": "c",
-              "text": "To allocate the same crew simultaneously to incompatible tasks"
+              "text": "Time and money"
             },
             {
               "key": "d",
-              "text": "To add a day's buffer to every predecessor automatically"
+              "text": "Resource and cost"
             }
           ],
           "answer": "b",
-          "explanation": "A zero-duration dummy can maintain required logical relationships or distinguish activity identities in AOA. The source's 'grammatical' wording refers to network-representation requirements, not a real construction operation.<p>Capsule 4th ed., p. 40; topic 10 point 116.</p>",
+          "explanation": "A dummy has no duration; it is used for grammatical reasons, to give each activity a unique pair of events, and for logical reasons, to show dependencies correctly.<p>Capsule 4th ed., p. 40; topic 10 point 116.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3136,32 +3136,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00141",
           "src": "CAP4-10-00141",
-          "text": "A network's finish constraint and activity durations are known. Which calculation obtains latest start and latest finish values?",
+          "text": "The latest start (LS) and latest finish (LF) of activities are calculated by ______.",
           "options": [
             {
               "key": "a",
-              "text": "Division of total project cost by activity durations"
+              "text": "Averaging the two passes"
             },
             {
               "key": "b",
-              "text": "A forward pass from the start, using predecessor early finishes only"
+              "text": "A forward pass through the network"
             },
             {
               "key": "c",
-              "text": "Assignment of each activity's early start as its latest finish"
+              "text": "Dividing cost by duration"
             },
             {
               "key": "d",
-              "text": "A backward pass from the finish, using successor constraints"
+              "text": "A backward pass through the network"
             }
           ],
           "answer": "d",
-          "explanation": "The backward pass propagates latest allowable times from the chosen finish, with \\(\\text{LS} = \\text{LF} - D\\). A forward pass commonly establishes the earliest finish used as that boundary, so the source's 'only' does not eliminate the need for the earlier network analysis.<p>Capsule 4th ed., p. 41; topic 10 point 131.</p>",
+          "explanation": "Starting from the project finish and moving back through the network, the backward pass gives each activity's latest finish and, by subtracting its duration, its latest start.<p>Capsule 4th ed., p. 41; topic 10 point 131.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3174,32 +3174,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00144",
           "src": "CAP4-10-00144",
-          "text": "In an AOA schedule, the instant at which all required predecessors of a node have finished is represented by what?",
+          "text": "The start and end of an activity in a CPM network is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "An additional resource-consuming activity"
+              "text": "A dummy"
             },
             {
               "key": "b",
-              "text": "An automatic one-day inspection period"
+              "text": "A float"
             },
             {
               "key": "c",
-              "text": "An event or milestone"
+              "text": "An event"
             },
             {
               "key": "d",
-              "text": "A cash-flow discounting interval"
+              "text": "A path"
             }
           ],
           "answer": "c",
-          "explanation": "An event marks an instant or logical milestone and consumes no time by itself. A real inspection or waiting period with nonzero duration must be modelled as an activity, even if it uses little labour.<p>Capsule 4th ed., p. 41; topic 10 point 134.</p>",
+          "explanation": "An event is an instant marking the start or completion of activities; it is shown as a node and consumes no time or resources.<p>Capsule 4th ed., p. 41; topic 10 point 134.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3212,32 +3212,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00148",
           "src": "CAP4-10-00148",
-          "text": "An unconstrained zero-lag CPM network has two required paths: A-B-D lasting 3, 5 and 4 days, and A-C-D lasting 3, 7 and 4 days. What is the earliest project duration?",
+          "text": "In CPM, the expected project duration is determined by the ______.",
           "options": [
             {
               "key": "a",
-              "text": "26 days"
+              "text": "Average length of all paths"
             },
             {
               "key": "b",
-              "text": "14 days"
+              "text": "Sum of the durations of the activities on the critical path"
             },
             {
               "key": "c",
-              "text": "12 days"
+              "text": "Sum of the durations of all activities"
             },
             {
               "key": "d",
-              "text": "19 days"
+              "text": "Duration of the longest single activity"
             }
           ],
           "answer": "b",
-          "explanation": "The path totals are \\[\\text{A-B-D}: 3 + 5 + 4 = 12\\] \\[\\text{A-C-D}: 3 + 7 + 4 = 14\\] The longer path controls, so completion is day 14. Summing all distinct activities gives 19 and incorrectly treats parallel B and C as sequential.<p>Capsule 4th ed., p. 41; topic 10 point 138.</p>",
+          "explanation": "The critical path is the longest path through the network, so the project duration equals the sum of the durations of the activities on it.<p>Capsule 4th ed., p. 41; topic 10 point 138.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3250,32 +3250,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00154",
           "src": "CAP4-10-00154",
-          "text": "A centre project integrates server rooms, data networks, communication links and user-computing facilities with a new building. By its primary delivered service, how should the project be classified?",
+          "text": "An ICTC building is typically considered ______ project.",
           "options": [
             {
               "key": "a",
-              "text": "Residential accommodation infrastructure"
+              "text": "A water supply"
             },
             {
               "key": "b",
-              "text": "Passenger transport infrastructure"
+              "text": "An irrigation"
             },
             {
               "key": "c",
-              "text": "Information and communication technology infrastructure"
+              "text": "An information and communication technology"
             },
             {
               "key": "d",
-              "text": "Water and sanitation infrastructure"
+              "text": "A transport"
             }
           ],
           "answer": "c",
-          "explanation": "The stated service is computing, data and communication, so ICT infrastructure is the appropriate functional classification. Civil construction is a delivery component, not necessarily the project's primary service. The acronym ICTC alone would be ambiguous without these functional facts.<p>Source note: p41 n143: supplied functional scope replaces an answer-revealing acronym expansion; no universal ICTC meaning is claimed.</p><p>Capsule 4th ed., p. 41; topic 10 point 143.</p>",
+          "explanation": "An ICTC building houses information and communication technology facilities such as servers, networks and computer rooms, so it is classed as an ICT project.<p>Capsule 4th ed., p. 41; topic 10 point 143.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3288,32 +3288,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00155",
           "src": "CAP4-10-00155",
-          "text": "An AOA event has earliest occurrence time 8 days and latest allowable occurrence time 11 days. What is its event slack?",
+          "text": "The time difference between the latest finish of a previous activity and the earliest start of a new activity is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "3 days"
+              "text": "Slack"
             },
             {
               "key": "b",
-              "text": "19 days"
+              "text": "Duration"
             },
             {
               "key": "c",
-              "text": "8 days"
+              "text": "Lead"
             },
             {
               "key": "d",
-              "text": "11 days"
+              "text": "Crash time"
             }
           ],
           "answer": "a",
-          "explanation": "Event slack is the latest event time minus the earliest event time: \\[11 - 8 = 3\\ \\text{days}\\] It is not generally the difference between an arbitrary preceding activity's latest finish and a following activity's earliest start.<p>Source note: p41 n145 corrected: compare latest and earliest times of the same event.</p><p>Capsule 4th ed., p. 41; topic 10 point 145.</p>",
+          "explanation": "Slack is the spare time available at an event, the latest time by which the preceding work must finish less the earliest time the following work can start; events on the critical path have zero slack.<p>Capsule 4th ed., p. 41; topic 10 point 145.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3326,32 +3326,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00160",
           "src": "CAP4-10-00160",
-          "text": "During construction, approved drawings and materials are available but skilled welders are insufficient. Which immediate management issue is most directly exposed?",
+          "text": "Insufficient skilled manpower primarily affects the ______ phase of a project.",
           "options": [
             {
               "key": "a",
-              "text": "An automatic change in the project's statutory ownership"
+              "text": "Feasibility"
             },
             {
               "key": "b",
-              "text": "A need to remove all quality acceptance requirements"
+              "text": "Termination"
             },
             {
               "key": "c",
-              "text": "A completed-project salvage-value error"
+              "text": "Conception"
             },
             {
               "key": "d",
-              "text": "An execution-phase resource and competence bottleneck"
+              "text": "Execution"
             }
           ],
           "answer": "d",
-          "explanation": "Insufficient skilled staff can delay execution and impair quality. Replanning, competent recruitment or approved subcontracting may be needed; simply adding untrained labour does not necessarily remove the bottleneck.<p>Capsule 4th ed., p. 41; topic 10 point 150.</p>",
+          "explanation": "Skilled workers are needed mainly while the works are being built, so a shortage of skilled manpower primarily affects the execution phase.<p>Capsule 4th ed., p. 41; topic 10 point 150.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3364,32 +3364,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00163",
           "src": "CAP4-10-00163",
-          "text": "A project objective is specific, measurable, achievable, relevant and time-bound. Which planning acronym describes these five qualities?",
+          "text": "The acronym SMART stands for ______.",
           "options": [
             {
               "key": "a",
-              "text": "PERT"
+              "text": "Simple, manageable, accurate, reliable, timely"
             },
             {
               "key": "b",
-              "text": "EPC"
+              "text": "Strategic, monitored, approved, reviewed, tracked"
             },
             {
               "key": "c",
-              "text": "ACWP"
+              "text": "Safe, modern, affordable, robust, tested"
             },
             {
               "key": "d",
-              "text": "SMART"
+              "text": "Specific, measurable, achievable, relevant, time-bound"
             }
           ],
           "answer": "d",
-          "explanation": "SMART is a common formulation of specific, measurable, achievable, relevant and time-bound objectives. Each quality contributes something distinct: a measurable output can still be unrealistic, irrelevant or lack a deadline.<p>Capsule 4th ed., p. 41; topic 10 point 154.</p>",
+          "explanation": "SMART objectives are specific, measurable, achievable, relevant and time-bound, so progress towards them can be checked.<p>Capsule 4th ed., p. 41; topic 10 point 154.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3407,27 +3407,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00164",
           "src": "CAP4-10-00164",
-          "text": "A manager writes the objective 'Improve road safety substantially'. Which revision most clearly adds measurable and time-bound elements while retaining the safety purpose?",
+          "text": "In a SMART objective, the letter T stands for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Complete any convenient road work whenever funds become available"
+              "text": "Tested"
             },
             {
               "key": "b",
-              "text": "Increase the number of reports without stating a safety outcome"
+              "text": "Tangible"
             },
             {
               "key": "c",
-              "text": "Reduce the defined junction's recorded injury crashes by 20% within two years"
+              "text": "Time-bound"
             },
             {
               "key": "d",
-              "text": "Improve road safety as much as resources might eventually allow"
+              "text": "Technical"
             }
           ],
           "answer": "c",
-          "explanation": "A quantified target, defined location and deadline make the objective assessable. Achievability and a suitable baseline still require evidence; adding a number alone does not prove the complete objective is SMART.<p>Capsule 4th ed., p. 41; topic 10 point 154.</p>",
+          "explanation": "SMART stands for specific, measurable, achievable, relevant and time-bound; the T requires a deadline by which the objective must be achieved.<p>Capsule 4th ed., p. 41; topic 10 point 154.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3440,32 +3440,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00165",
           "src": "CAP4-10-00165",
-          "text": "An activity's latest start is day 9 and its duration is 4 elapsed working days. What is its latest finish under the same CPM schedule constraint?",
+          "text": "The latest time by which an activity must be completed without delaying the total project duration is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Day 5"
+              "text": "Earliest finish time"
             },
             {
               "key": "b",
-              "text": "Day 13"
+              "text": "Latest finish time"
             },
             {
               "key": "c",
-              "text": "Day 9"
+              "text": "Free float"
             },
             {
               "key": "d",
-              "text": "Day 12"
+              "text": "Latest start time"
             }
           ],
           "answer": "b",
-          "explanation": "In elapsed-time notation, \\[\\text{LF} = \\text{LS} + D = 9 + 4 = 13\\] This is the latest allowed finish under the chosen project-finish constraint, not necessarily the activity's early finish or a universal contractual completion date.<p>Capsule 4th ed., p. 41; topic 10 point 155.</p>",
+          "explanation": "The latest finish time (LFT) is the latest time an activity can finish without delaying project completion; it is found by the backward pass.<p>Capsule 4th ed., p. 41; topic 10 point 155.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3478,7 +3478,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1003",
-          "kind": "calculation"
+          "kind": "recall"
         }
       ]
     },
@@ -3490,27 +3490,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-06-00078",
           "src": "CAP4-06-00078",
-          "text": "Two investments each have a 10% expected return. The first has equally likely returns of 8% and 12%; the second has 4% and 16%. Using return standard deviation as the chosen risk measure, which is riskier?",
+          "text": "Variability in the rate of return is known as ______.",
           "options": [
             {
               "key": "a",
-              "text": "The second: standard deviations are 6 versus 2 percentage points"
+              "text": "Risk"
             },
             {
               "key": "b",
-              "text": "They are equal because their expected returns are equal"
+              "text": "Interest"
             },
             {
               "key": "c",
-              "text": "The second: standard deviations are 12 versus 4 percentage points"
+              "text": "Depreciation"
             },
             {
               "key": "d",
-              "text": "The first: standard deviations are 8 versus 4 percentage points"
+              "text": "Profit"
             }
           ],
           "answer": "a",
-          "explanation": "For each two-outcome distribution, deviations from the mean are symmetric. The variances are \\[0.5(2^2 + 2^2) = 4\\] \\[0.5(6^2 + 6^2) = 36\\] so the standard deviations are 2 and 6 percentage points. Variability is one financial risk measure, not a complete definition of all project risk.<p>Capsule 4th ed., p. 25; topic 6 point 77.</p>",
+          "explanation": "In financial analysis, risk is the variability or uncertainty of the rate of return about its expected value, often measured by its standard deviation.<p>Capsule 4th ed., p. 25; topic 6 point 77.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3523,32 +3523,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00081",
           "src": "CAP4-06-00081",
-          "text": "A project team must choose between two intake sites before design is fixed. When should detailed risk analysis first influence the decision, and what happens afterward?",
+          "text": "Detailed risk analysis is done in the ______ phase of a project.",
           "options": [
             {
               "key": "a",
-              "text": "Only after construction, with no need for earlier comparison"
+              "text": "Construction"
             },
             {
               "key": "b",
-              "text": "Only during the final audit, once alternatives are unavailable"
+              "text": "Operation"
             },
             {
               "key": "c",
-              "text": "During planning once, with all later risks assumed unchanged"
+              "text": "Closure"
             },
             {
               "key": "d",
-              "text": "During planning, with updates as design and evidence change"
+              "text": "Planning"
             }
           ],
           "answer": "d",
-          "explanation": "Risk analysis is most useful before commitments remove feasible alternatives. Planning therefore needs enough detail to compare sites, controls and uncertainties. Risks evolve during design, construction and operation, so monitoring and reassessment are part of management rather than a one-time planning formality.<p>Capsule 4th ed., p. 25; topic 6 point 80.</p>",
+          "explanation": "Detailed risk analysis is done during planning, when alternatives are still open and risks can be avoided or reduced through design choices at the least cost.<p>Capsule 4th ed., p. 25; topic 6 point 80.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3561,32 +3561,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00085",
           "src": "CAP4-06-00085",
-          "text": "After estimating contamination risks, a utility compares source substitution, treatment and exposure restrictions using effectiveness, feasibility and stakeholder impacts. Which activity is it undertaking?",
+          "text": "\"Risk management\" is a process that includes ______.",
           "options": [
             {
               "key": "a",
-              "text": "Exposure estimation without policy evaluation"
+              "text": "Exposure measurement only"
             },
             {
               "key": "b",
-              "text": "Risk management through evaluation of control alternatives"
+              "text": "Evaluation of policy alternatives"
             },
             {
               "key": "c",
-              "text": "Hazard identification without consideration of controls"
+              "text": "Hazard identification only"
             },
             {
               "key": "d",
-              "text": "Laboratory dose-response measurement only"
+              "text": "Laboratory toxicity testing only"
             }
           ],
           "answer": "b",
-          "explanation": "Selecting among control or policy alternatives is risk management. It uses assessment evidence together with practical, legal, social and resource considerations, then assigns implementation and monitoring. Hazard identification and exposure or toxicity assessment provide inputs rather than making the entire management decision.<p>Capsule 4th ed., p. 25; topic 6 point 84.</p>",
+          "explanation": "After risk assessment has estimated the risks, risk management weighs the policy alternatives, such as treatment, substitution or restriction, against effectiveness, cost and social factors, and selects the action.<p>Capsule 4th ed., p. 25; topic 6 point 84.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3599,32 +3599,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-06-00132",
           "src": "CAP4-06-00132",
-          "text": "A project has a risk manager, but a critical mitigation action requires changes by the design team and funding approval by the project director. What accountability arrangement is appropriate?",
+          "text": "The ______ is responsible for risk mitigation.",
           "options": [
             {
               "key": "a",
-              "text": "Assign ownership solely to the risk manager despite the team's design authority"
+              "text": "Accountant"
             },
             {
               "key": "b",
-              "text": "Close the action on funding approval before verifying implementation"
+              "text": "Supplier"
             },
             {
               "key": "c",
-              "text": "Assign action owners and resources, with risk-manager coordination and follow-up"
+              "text": "Risk manager"
             },
             {
               "key": "d",
-              "text": "Assign collective ownership without a named accountable action owner"
+              "text": "Site labourer"
             }
           ],
           "answer": "c",
-          "explanation": "Risk management coordinates identification, assessment and treatment, but delivery needs named owners with suitable authority, resources and deadlines. Designers, managers, contractors and operators may implement different controls. The source's vague risk-manager sector is not a complete accountability model.<p>Capsule 4th ed., p. 26; topic 6 point 136.</p>",
+          "explanation": "The risk manager identifies the risks, plans the mitigation measures and follows up their implementation, so risk mitigation is the responsibility of the risk manager.<p>Capsule 4th ed., p. 26; topic 6 point 136.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3637,32 +3637,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00045",
           "src": "CAP4-10-00045",
-          "text": "A Nepal public-works officer proposes sealed quotations solely because the estimate is NRs 18 million and a revision note says 'up to 20 million'. What should determine the procurement method?",
+          "text": "Sealed quotations are used for projects up to ______.",
           "options": [
             {
               "key": "a",
-              "text": "The contractor's preferred route once the estimate is approved"
+              "text": "NRs 100 million"
             },
             {
               "key": "b",
-              "text": "The applicable Act, amended Rules and procurement conditions"
+              "text": "NRs 20 million"
             },
             {
               "key": "c",
-              "text": "The quoted note alone because it specifies an amount"
+              "text": "NRs 60 million"
             },
             {
               "key": "d",
-              "text": "The NCB document's title used as a sealed-quotation threshold"
+              "text": "NRs 1 billion"
             }
           ],
           "answer": "b",
-          "explanation": "The procurement method needs its own legal authority, relevant date and conditions. The nearby corrected notes identify a PPMO NCB template above NRs 20 million, but that does not establish a sealed-quotation ceiling of 20 million.<p>Source note: p38 n45: current sealed-quotation ceiling not verified; probable scale confusion must not be endorsed. Primary framework: Public Procurement Act 2063 and Rules 2064 with applicable amendments; parent review required for the exact ceiling.</p><p>Capsule 4th ed., p. 38; topic 10 point 45.</p>",
+          "explanation": "For smaller works, sealed quotations are invited from suppliers or contractors instead of full bidding; this method is used for projects up to NRs 20 million.<p>Capsule 4th ed., p. 38; topic 10 point 45.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3675,32 +3675,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00052",
           "src": "CAP4-10-00052",
-          "text": "A main contractor engages a specialist to execute the electrical portion of its works, retaining its contract with the employer. What is this arrangement?",
+          "text": "If part of the contract work is assigned to another party, it is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Novation of the entire main contract"
+              "text": "A joint venture"
             },
             {
               "key": "b",
-              "text": "Assignment of the employer's payment duty"
+              "text": "Novation"
             },
             {
               "key": "c",
-              "text": "A joint venture replacing the employer"
+              "text": "Termination"
             },
             {
               "key": "d",
-              "text": "Subcontracting"
+              "text": "Sub-contracting"
             }
           ],
           "answer": "d",
-          "explanation": "Subcontracting delegates a defined portion of performance through a separate agreement. It does not by itself release the main contractor from its obligations to the employer; consent and responsibility follow the governing contract.<p>Capsule 4th ed., p. 39; topic 10 point 51.</p>",
+          "explanation": "When the main contractor gives part of the work to another firm while remaining responsible to the employer, the arrangement is sub-contracting.<p>Capsule 4th ed., p. 39; topic 10 point 51.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3713,20 +3713,20 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00054",
           "src": "CAP4-10-00054",
-          "text": "An employer places design development, equipment sourcing and delivery of the built facility under an EPC package. What does EPC denote?",
+          "text": "EPC contract stands for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Evaluation, procurement and concession"
+              "text": "Execution, procurement and control"
             },
             {
               "key": "b",
-              "text": "Estimation, planning and commissioning"
+              "text": "Estimation, planning and construction"
             },
             {
               "key": "c",
@@ -3734,11 +3734,11 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             },
             {
               "key": "d",
-              "text": "Engineering, production and certification"
+              "text": "Engineering, planning and commissioning"
             }
           ],
           "answer": "c",
-          "explanation": "EPC combines engineering, procurement and construction responsibilities in the specified delivery package. Ownership, operating rights and long-term financing are separate matters that the acronym does not settle.<p>Capsule 4th ed., p. 39; topic 10 point 53.</p>",
+          "explanation": "In an EPC contract one contractor is responsible for the engineering (design), the procurement of materials and equipment, and the construction of the whole facility.<p>Capsule 4th ed., p. 39; topic 10 point 53.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3751,32 +3751,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00055",
           "src": "CAP4-10-00055",
-          "text": "Which additional arrangement would distinguish a BOOT concession from merely assigning construction of a public road to a government organisation?",
+          "text": "The Government of Nepal handed over the fast-track project, first planned under a BOOT type of contract, to ______.",
           "options": [
             {
               "key": "a",
-              "text": "The consultant designs it and certifies monthly work quantities"
+              "text": "The Armed Police Force"
             },
             {
               "key": "b",
-              "text": "The contractor procures equipment without operating the road"
+              "text": "The Nepal Electricity Authority"
             },
             {
               "key": "c",
-              "text": "The concessionaire builds, owns, operates and later transfers it"
+              "text": "The Nepal Army"
             },
             {
               "key": "d",
-              "text": "The organisation builds it using public funds and hands it over"
+              "text": "Nepal Police"
             }
           ],
           "answer": "c",
-          "explanation": "BOOT requires build-own-operate-transfer obligations, including a defined ownership and operation period before transfer. An administrative construction assignment alone does not establish those concession features.<p>Source note: p39 n54: Nepal Army fast-track assignment is not evidence of BOOT. No unverified claim about that project&#39;s actual contract form is used as the key.</p><p>Capsule 4th ed., p. 39; topic 10 point 54.</p>",
+          "explanation": "The Kathmandu–Terai fast-track project, first planned for private development on a BOOT basis, was later handed over by the Government of Nepal to the Nepal Army.<p>Capsule 4th ed., p. 39; topic 10 point 54.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3789,32 +3789,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00056",
           "src": "CAP4-10-00056",
-          "text": "Before lending to a project, a bank examines demand, construction risks, operating cash flow, security and debt-service capacity. Which process is it undertaking?",
+          "text": "For a financial institution, the most important study of a project to be taken for risk management is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Post-disposal asset valuation"
+              "text": "Handover"
             },
             {
               "key": "b",
-              "text": "Project appraisal"
+              "text": "Appraisal"
             },
             {
               "key": "c",
-              "text": "Final-account certification"
+              "text": "Commissioning"
             },
             {
               "key": "d",
-              "text": "Construction setting-out"
+              "text": "Tendering"
             }
           ],
           "answer": "b",
-          "explanation": "Appraisal evaluates the proposal's viability and risks before commitment. A lender needs the quality and resilience of repayment cash flows, not only an optimistic estimated profit or a completed site drawing.<p>Capsule 4th ed., p. 39; topic 10 point 55.</p>",
+          "explanation": "Before financing a project, a bank appraises its technical, financial, economic and management soundness to judge the risk of lending.<p>Capsule 4th ed., p. 39; topic 10 point 55.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3827,32 +3827,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00058",
           "src": "CAP4-10-00058",
-          "text": "Two parties record obligations to perform specified work for payment. What makes their arrangement a contract rather than merely an informal understanding?",
+          "text": "A legal document between two parties to do or not to do something is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Its terms are printed on paper of an approved size"
+              "text": "A tender notice"
             },
             {
               "key": "b",
-              "text": "Its scope necessarily includes construction rather than services"
+              "text": "An estimate"
             },
             {
               "key": "c",
-              "text": "Its title uses the word agreement rather than memorandum"
+              "text": "A specification"
             },
             {
               "key": "d",
-              "text": "Its agreement creates legally enforceable obligations"
+              "text": "A contract"
             }
           ],
           "answer": "d",
-          "explanation": "The core distinction is enforceability under the applicable law, including relevant formation requirements. A contract is not defined merely by a written document; form requirements and the validity of the obligations depend on the governing law.<p>Capsule 4th ed., p. 39; topic 10 point 57.</p>",
+          "explanation": "A contract is an agreement enforceable by law, in which the parties bind themselves to do or not to do something for a consideration.<p>Capsule 4th ed., p. 39; topic 10 point 57.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3865,32 +3865,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00059",
           "src": "CAP4-10-00059",
-          "text": "A consulting procurement evaluates technical merit and price using disclosed weights. Which recognised method is described?",
+          "text": "Which of the following methods is not used for selecting a consultant?",
           "options": [
             {
               "key": "a",
-              "text": "Quality-only selection without price evaluation"
+              "text": "Quality-based selection"
             },
             {
               "key": "b",
-              "text": "Quantity- and Cost-Based Selection"
+              "text": "Quality and cost-based selection"
             },
             {
               "key": "c",
-              "text": "Lowest construction quantity selection"
+              "text": "Least cost selection"
             },
             {
               "key": "d",
-              "text": "Quality- and Cost-Based Selection"
+              "text": "Quantity and cost-based selection"
             }
           ],
           "answer": "d",
-          "explanation": "QCBS means Quality- and Cost-Based Selection and combines technical quality and financial evaluation under disclosed rules. The capsule's word 'quantity' is not a substitute for quality and should not discredit the genuine QCBS method.<p>Source note: p39 n58: distinguishes the malformed &#39;quantity&#39; label from legitimate QCBS; no particular weights are asserted as statutory.</p><p>Capsule 4th ed., p. 39; topic 10 point 58.</p>",
+          "explanation": "Consultants are selected by quality and cost-based, quality-based, least cost or fixed budget methods; quantity and cost-based selection is not a method for selecting a consultant.<p>Capsule 4th ed., p. 39; topic 10 point 58.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3903,32 +3903,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00060",
           "src": "CAP4-10-00060",
-          "text": "A contract lasts 18 months and its valid price-adjustment clause uses published input indices. What must be checked before certifying an adjustment?",
+          "text": "There is a provision for price adjustment for projects with a duration of more than ______.",
           "options": [
             {
               "key": "a",
-              "text": "The applicable clause, eligible work, base date and indices"
+              "text": "12 months"
             },
             {
               "key": "b",
-              "text": "Only the latest market price of its highest-cost item"
+              "text": "36 months"
             },
             {
               "key": "c",
-              "text": "Only that the contract lasts longer than twelve months"
+              "text": "3 months"
             },
             {
               "key": "d",
-              "text": "Only the contractor's reported total accounting loss"
+              "text": "6 months"
             }
           ],
           "answer": "a",
-          "explanation": "Duration may be relevant under an applicable procurement provision, but does not alone calculate or authorise payment. The governing law and contract must establish entitlement, formula, index weights, eligible work and relevant dates.<p>Source note: p39 n59: the source&#39;s blanket greater-than-12-month entitlement is not certified as current law. Exact applicable amended price-adjustment provision requires parent verification.</p><p>Capsule 4th ed., p. 39; topic 10 point 59.</p>",
+          "explanation": "Over a long contract the prices of labour and materials change, so contracts lasting more than 12 months include a price adjustment provision.<p>Capsule 4th ed., p. 39; topic 10 point 59.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3941,24 +3941,24 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00061",
           "src": "CAP4-10-00061",
-          "text": "A site team analyses recurring defects, trials a revised procedure, measures its results and standardises it only if performance improves. What management principle does this illustrate?",
+          "text": "Continuous betterment in planning and detailing with time is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Final inspection without feedback"
+              "text": "Crashing"
             },
             {
               "key": "b",
-              "text": "Routine repetition without evaluation"
+              "text": "Fast tracking"
             },
             {
               "key": "c",
-              "text": "Uncontrolled scope expansion"
+              "text": "Resource levelling"
             },
             {
               "key": "d",
@@ -3966,7 +3966,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "d",
-          "explanation": "Continuous improvement uses evidence and feedback to improve processes repeatedly. It is broader than producing more detailed plans over time; an unmeasured change is not necessarily an improvement.<p>Capsule 4th ed., p. 39; topic 10 point 60.</p>",
+          "explanation": "Continuous improvement means steadily bettering the planning, methods and detailing over time by learning from results; it is a core idea of quality management.<p>Capsule 4th ed., p. 39; topic 10 point 60.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -3979,32 +3979,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00062",
           "src": "CAP4-10-00062",
-          "text": "Before inviting priced bids for a complex work, the employer screens firms against published experience, personnel, equipment and financial-capacity criteria. What is this stage?",
+          "text": "The assessment done by the implementing agency to check the eligibility of a firm to carry out the contract is called ______.",
           "options": [
             {
               "key": "a",
-              "text": "Final price negotiation"
+              "text": "Contract award"
             },
             {
               "key": "b",
-              "text": "Post-award performance certification"
+              "text": "Bid opening"
             },
             {
               "key": "c",
-              "text": "Measurement of completed work"
+              "text": "Final measurement"
             },
             {
               "key": "d",
-              "text": "Prequalification"
+              "text": "Pre-qualification"
             }
           ],
           "answer": "d",
-          "explanation": "Prequalification establishes whether prospective bidders meet the required capability before the priced-bidding stage. It does not award the contract or establish the responsiveness of a future bid.<p>Capsule 4th ed., p. 39; topic 10 point 61.</p>",
+          "explanation": "In pre-qualification the employer checks the firms' experience, staff, equipment and finances before inviting bids, so that only capable firms take part.<p>Capsule 4th ed., p. 39; topic 10 point 61.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4017,32 +4017,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00106",
           "src": "CAP4-10-00106",
-          "text": "A senior project representative secures funding, champions the business case and escalates decisions beyond the project manager's authority. Which role is described?",
+          "text": "The party that offers the financial resources to fund a project is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Resident quantity surveyor"
+              "text": "Contractor"
             },
             {
               "key": "b",
-              "text": "Subcontractor's site foreman"
+              "text": "Supplier"
             },
             {
               "key": "c",
-              "text": "Independent materials technician"
+              "text": "Consultant"
             },
             {
               "key": "d",
-              "text": "Project sponsor"
+              "text": "Sponsor"
             }
           ],
           "answer": "d",
-          "explanation": "A sponsor provides or secures resources and organisational support and connects the project to its business justification. The role is broader than simply processing invoices and need not mean personally lending every unit of project finance.<p>Capsule 4th ed., p. 40; topic 10 point 98.</p>",
+          "explanation": "The project sponsor provides or secures the funding and supports the project; the contractor builds it, and the consultant designs and supervises it.<p>Capsule 4th ed., p. 40; topic 10 point 98.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4055,32 +4055,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00107",
           "src": "CAP4-10-00107",
-          "text": "A contract provides negotiation followed by binding arbitration for an unresolved dispute. Why is 'every dispute ultimately requires litigation' too broad?",
+          "text": "The ultimate method of resolving any dispute with a contractor is ______.",
           "options": [
             {
               "key": "a",
-              "text": "A contract can prohibit every form of legal remedy forever"
+              "text": "Negotiation"
             },
             {
               "key": "b",
-              "text": "Litigation is required before negotiation can ever begin"
+              "text": "A site meeting"
             },
             {
               "key": "c",
-              "text": "Arbitration can resolve the merits, with only limited court involvement"
+              "text": "Litigation"
             },
             {
               "key": "d",
-              "text": "A contractor's last invoice automatically resolves any dispute"
+              "text": "Mediation"
             }
           ],
           "answer": "c",
-          "explanation": "The dispute route depends on the governing law and valid contract. Negotiation, adjudication or arbitration may resolve matters without a full court trial; courts can retain specified supervisory or enforcement roles.<p>Source note: p40 n99 qualified: litigation is not an inevitable final merits stage for every contract dispute.</p><p>Capsule 4th ed., p. 40; topic 10 point 99.</p>",
+          "explanation": "Disputes are first handled by negotiation, then by mediation or other agreed procedures; when these fail, the ultimate method of resolving the dispute is litigation in a court of law.<p>Capsule 4th ed., p. 40; topic 10 point 99.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4093,32 +4093,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00108",
           "src": "CAP4-10-00108",
-          "text": "A valid contract stipulates delay damages of 0.05% per assessable day, capped at 10%, on NRs 40 million. Completion is 30 days after the original date, but an approved extension is 10 days. Assuming 20 assessable days, what is the amount?",
+          "text": "The damages for delay in work beyond the agreed date are termed ______.",
           "options": [
             {
               "key": "a",
-              "text": "NRs 400000"
+              "text": "Liquidated damages"
             },
             {
               "key": "b",
-              "text": "NRs 40000"
+              "text": "Performance bond"
             },
             {
               "key": "c",
-              "text": "NRs 4000000"
+              "text": "Mobilisation advance"
             },
             {
               "key": "d",
-              "text": "NRs 600000"
+              "text": "Retention money"
             }
           ],
           "answer": "a",
-          "explanation": "The daily amount and the total for 20 assessable days are \\[40{,}000{,}000 \\times 0.0005 = 20{,}000\\] \\[20 \\times 20{,}000 = 400{,}000\\] below the 4,000,000 cap. Liquidated damages are an agreed contractual remedy subject to law, not universally an arbitrary penalty independent of entitlement.<p>Source note: p40 n100 and n101 repeat the same delay-damages fact and share this question. Rates are stated contract assumptions matching the identified PPMO September 2026 NCB works 1S2E SBD GCC/SCC 55.1 example in corrected management notes; not universal law.</p><p>Capsule 4th ed., p. 40; topic 10 point 100; topic 10 point 101.</p>",
+          "explanation": "Liquidated damages are a pre-agreed amount the contractor pays for each day or week of delay beyond the completion date fixed in the contract.<p>Capsule 4th ed., p. 40; topic 10 point 100; topic 10 point 101.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4132,32 +4132,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00111",
           "src": "CAP4-10-00111",
-          "text": "An organisation is described informally as semi-government because public and private parties share its governance. What evidence should define its actual management authority?",
+          "text": "A semi-government organisation is defined as ______.",
           "options": [
             {
               "key": "a",
-              "text": "Its constituting law, ownership and governance documents"
+              "text": "A mix of government and private management with partial government control"
             },
             {
               "key": "b",
-              "text": "The informal label alone regardless of legal structure"
+              "text": "A fully government-owned department"
             },
             {
               "key": "c",
-              "text": "The location of its office beside a public building"
+              "text": "A non-governmental charity"
             },
             {
               "key": "d",
-              "text": "The percentage of staff using government-style job titles"
+              "text": "A fully private company"
             }
           ],
           "answer": "a",
-          "explanation": "Semi-government is a broad descriptive label, not a universal legal form. Actual control depends on the statute, shareholding and governance arrangements, and cannot be inferred from an assumed fixed public-private ownership split.<p>Capsule 4th ed., p. 40; topic 10 point 104.</p>",
+          "explanation": "A semi-government organisation combines government and private participation in its management, with the government holding partial control.<p>Capsule 4th ed., p. 40; topic 10 point 104.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4170,32 +4170,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00112",
           "src": "CAP4-10-00112",
-          "text": "A procuring entity sends shortlisted consultants an RFP describing services, submission requirements and evaluation criteria. What does RFP mean?",
+          "text": "RFP stands for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Registration for Prequalification"
+              "text": "Registration for pre-qualification"
             },
             {
               "key": "b",
-              "text": "Request for Payment"
+              "text": "Request for payment"
             },
             {
               "key": "c",
-              "text": "Review of Financial Progress"
+              "text": "Report for progress"
             },
             {
               "key": "d",
-              "text": "Request for Proposal"
+              "text": "Request for proposal"
             }
           ],
           "answer": "d",
-          "explanation": "A Request for Proposal invites the technical and financial offer required by the specified procurement procedure. It is not an invoice, a payment certificate or an assurance that the recipient has won the contract.<p>Capsule 4th ed., p. 40; topic 10 point 105.</p>",
+          "explanation": "A request for proposal invites shortlisted consultants to submit technical and financial proposals against stated terms of reference and evaluation criteria.<p>Capsule 4th ed., p. 40; topic 10 point 105.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4213,27 +4213,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00118",
           "src": "CAP4-10-00118",
-          "text": "An issued Bid Data Sheet validly specifies 90 days of bid validity from its stated submission deadline. What does this period principally govern?",
+          "text": "The bid validity period for a bid having an estimated cost up to NRs 100 million is ______.",
           "options": [
             {
               "key": "a",
-              "text": "How long the finished works remain under defects liability"
+              "text": "150 days"
             },
             {
               "key": "b",
-              "text": "How long the contractor has to complete every construction activity"
+              "text": "30 days"
             },
             {
               "key": "c",
-              "text": "How long the bid-security instrument must invariably last, without extension"
+              "text": "365 days"
             },
             {
               "key": "d",
-              "text": "How long the offer must remain binding under the bidding conditions"
+              "text": "90 days"
             }
           ],
           "answer": "d",
-          "explanation": "Bid validity concerns the bidder's offer. Completion time, defects liability and bid-security validity are separate periods; security may need to extend beyond the bid-validity period under the applicable documents.<p>Source note: p40 n111: 90 days is an explicit BDS condition; the source&#39;s NRs 100 million threshold was not verified against current amended procurement rules.</p><p>Capsule 4th ed., p. 40; topic 10 point 111.</p>",
+          "explanation": "For bids with an estimated cost of up to NRs 100 million, the bid must remain valid for 90 days from the bid submission deadline.<p>Capsule 4th ed., p. 40; topic 10 point 111.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4246,32 +4246,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00134",
           "src": "CAP4-10-00134",
-          "text": "Two friends agree socially to meet for lunch without intending legal obligations. Which proposition explains why their agreement need not be a contract?",
+          "text": "The relation between contract and agreement is that ______.",
           "options": [
             {
               "key": "a",
-              "text": "Every agreement is a contract whenever two people consent"
+              "text": "All agreements are contracts"
             },
             {
               "key": "b",
-              "text": "A contract requires an agreement that is legally enforceable"
+              "text": "All contracts are agreements, but all agreements are not contracts"
             },
             {
               "key": "c",
-              "text": "Only agreements concerning land can become contracts"
+              "text": "Contracts and agreements are unrelated"
             },
             {
               "key": "d",
-              "text": "A contract can never contain an agreement between friends"
+              "text": "No contract is an agreement"
             }
           ],
           "answer": "b",
-          "explanation": "Contracts belong to the subset of agreements enforceable under the applicable law. A purely social understanding ordinarily lacks contractual intention; the parties' friendship alone does not prevent a separate genuine commercial contract.<p>Capsule 4th ed., p. 41; topic 10 point 124.</p>",
+          "explanation": "A contract is an agreement enforceable by law, so every contract is an agreement, but social or moral agreements without legal obligations are not contracts.<p>Capsule 4th ed., p. 41; topic 10 point 124.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4284,32 +4284,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00137",
           "src": "CAP4-10-00137",
-          "text": "A hypothetical procurement rule requires 90-day bid validity for estimates up to NRs 100 million. An estimate is NRs 9 crore. How does it compare with that stated threshold?",
+          "text": "The bid validity period for a bid having an estimated cost of 9 crores is ______.",
           "options": [
             {
               "key": "a",
-              "text": "It is NRs 900 million and exceeds the stated band"
+              "text": "30 days"
             },
             {
               "key": "b",
-              "text": "It is NRs 9 million and falls within the stated band"
+              "text": "120 days"
             },
             {
               "key": "c",
-              "text": "It is NRs 90 million and falls within the stated band"
+              "text": "90 days"
             },
             {
               "key": "d",
-              "text": "It is NRs 100 million and lies exactly at the threshold"
+              "text": "180 days"
             }
           ],
           "answer": "c",
-          "explanation": "One crore is ten million, so \\[9\\ \\text{crore} = 90\\ \\text{million}\\] below 100 million. This unit conversion does not independently validate the source's current-law threshold; actual validity must follow the operative rules and issued BDS.<p>Source note: p41 n127: supplied conditional rule, not a certified current procurement threshold; related p40 n111 tests bid-validity meaning.</p><p>Capsule 4th ed., p. 41; topic 10 point 127.</p>",
+          "explanation": "Nine crores is NRs 90 million, which falls within the band of estimates up to NRs 100 million, so the bid validity period is 90 days.<p>Capsule 4th ed., p. 41; topic 10 point 127.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4322,32 +4322,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00147",
           "src": "CAP4-10-00147",
-          "text": "In a public-private partnership for infrastructure, which pair defines the core contractual partnership?",
+          "text": "Which of the following does not participate in a PPP project?",
           "options": [
             {
               "key": "a",
-              "text": "A ruling political party and an opposition party"
+              "text": "A government agency"
             },
             {
               "key": "b",
-              "text": "Two political-party committees without a public authority"
+              "text": "A private company"
             },
             {
               "key": "c",
-              "text": "The designer and every household using the facility"
+              "text": "A lending bank"
             },
             {
               "key": "d",
-              "text": "A public authority and a private project entity"
+              "text": "A political party"
             }
           ],
           "answer": "d",
-          "explanation": "PPP describes a contractual arrangement between a public authority and a private entity with defined responsibilities and risk allocation. Political groups may be stakeholders, but they are not the defining partnership category and need not be absent from public debate.<p>Source note: p41 n137 corrected: not a blanket prohibition on political stakeholder participation.</p><p>Capsule 4th ed., p. 41; topic 10 point 137.</p>",
+          "explanation": "A public–private partnership is formed between a public authority and private companies, often with lenders; political parties do not take part in PPP projects.<p>Capsule 4th ed., p. 41; topic 10 point 137.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4360,12 +4360,12 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00167",
           "src": "CAP4-10-00167",
-          "text": "Under an agreed contract, the employer pays an advance before substantial work so the contractor can mobilise, with specified security and recovery provisions. What is this payment?",
+          "text": "The amount of money paid to the contractor by the client after signing the agreement and before the execution of work is known as ______.",
           "options": [
             {
               "key": "a",
@@ -4373,19 +4373,19 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             },
             {
               "key": "b",
-              "text": "Liquidated damages paid for contractor delay"
+              "text": "Liquidated damages"
             },
             {
               "key": "c",
-              "text": "Payment for measured completed work"
+              "text": "Retention money"
             },
             {
               "key": "d",
-              "text": "Release of retention after defects clearance"
+              "text": "A running bill"
             }
           ],
           "answer": "a",
-          "explanation": "Mobilisation advance supports initial deployment under the contract and is normally administered with agreed security and recovery conditions. It is not automatically earned revenue for completed quantities or an unconditional extra fee.<p>Capsule 4th ed., p. 42; topic 10 point 157.</p>",
+          "explanation": "A mobilisation advance is paid after the agreement is signed so that the contractor can set up the site, plant and staff; it is later recovered from the running bills.<p>Capsule 4th ed., p. 42; topic 10 point 157.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4398,16 +4398,16 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1004",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00168",
           "src": "CAP4-10-00168",
-          "text": "Under section 63 of Nepal's Public Procurement Act 2063, in the Law Commission consolidation through Second Amendment 2083, which office exercises the statutory procurement-blacklisting power?",
+          "text": "As per the public procurement act and regulation, the authority to blacklist a contractor lies with the ______.",
           "options": [
             {
               "key": "a",
-              "text": "The procuring entity's project office alone"
+              "text": "NEC"
             },
             {
               "key": "b",
@@ -4415,15 +4415,15 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             },
             {
               "key": "c",
-              "text": "Public Procurement Monitoring Office"
+              "text": "PPMO"
             },
             {
               "key": "d",
-              "text": "Nepal Engineering Council"
+              "text": "NEA"
             }
           ],
           "answer": "c",
-          "explanation": "Section 63(1) assigns this blacklisting power to PPMO on the statutory grounds; section 63(5) leaves the further procedure to prescription. A procuring entity's recommendation is not itself the blacklisting decision. Company registration and professional regulation are different powers.<p>Source note: p42 n158: primary section 63, printed pages 65-66, independently verified; header includes Second Amendment Act 2083 dated 2083/03/25. No blacklisting duration is asked.</p><p>Capsule 4th ed., p. 42; topic 10 point 158.</p>",
+          "explanation": "The Public Procurement Monitoring Office (PPMO) has the authority to blacklist contractors who commit offences in public procurement, barring them from bidding for a period.<p>Capsule 4th ed., p. 42; topic 10 point 158.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4448,27 +4448,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-09-00113",
           "src": "CAP4-09-00113",
-          "text": "What is the sound professional purpose of a workplace accident book on a road-construction project?",
+          "text": "The legal document that records the details of an accident in the workplace is the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Replace the need to investigate causes or preventive measures"
+              "text": "Measurement book"
             },
             {
               "key": "b",
-              "text": "Maintain a dated factual record supporting investigation and reporting"
+              "text": "Accident book"
             },
             {
               "key": "c",
-              "text": "Record only injuries after all witnesses have left the project"
+              "text": "Site order book"
             },
             {
               "key": "d",
-              "text": "Automatically determine legal fault solely from the first entry"
+              "text": "Muster roll"
             }
           ],
           "answer": "b",
-          "explanation": "Accident records preserve details such as time, place, people involved, events and actions for investigation and required reporting. They can be evidence but do not automatically settle liability or replace emergency response and preventive follow-up.<p>Source note: Page 36 point 109 concerns occupational safety, mapped to AALL1005. No unverified universal legal status or current Nepal reporting deadline is claimed.</p><p>Capsule 4th ed., p. 36; topic 9 point 109.</p>",
+          "explanation": "An accident book is a legal record of workplace accidents, with the date, place, persons involved and injuries; the measurement book records quantities, and the muster roll records attendance.<p>Capsule 4th ed., p. 36; topic 9 point 109.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4481,16 +4481,16 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00064",
           "src": "CAP4-10-00064",
-          "text": "A proposed highway may displace households, divide community access and change livelihoods. Which assessment directly examines these effects and their distribution among groups?",
+          "text": "The process often used to analyse the potential social effects of a new infrastructure project is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Geometric sight-distance design alone"
+              "text": "Traffic survey"
             },
             {
               "key": "b",
@@ -4498,15 +4498,15 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             },
             {
               "key": "c",
-              "text": "Aggregate impact-value testing"
+              "text": "Structural analysis"
             },
             {
               "key": "d",
-              "text": "Discount-rate sensitivity testing alone"
+              "text": "Financial audit"
             }
           ],
           "answer": "b",
-          "explanation": "Social impact assessment investigates effects on people, livelihoods, access, institutions and vulnerable groups, with participation and mitigation. It complements environmental and technical studies instead of being replaced by the total economic benefit.<p>Capsule 4th ed., p. 39; topic 10 point 63.</p>",
+          "explanation": "Social impact assessment studies how a project will affect people, through displacement, livelihoods and community services, and proposes measures to manage these effects.<p>Capsule 4th ed., p. 39; topic 10 point 63.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4519,12 +4519,12 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00067",
           "src": "CAP4-10-00067",
-          "text": "Under an applicable rule of employer liability, an employer is held responsible for an employee's negligent act committed in the course of employment. What is this type of liability called?",
+          "text": "If an employee does wrong at work and the employer has to take responsibility for it, this is known as ______.",
           "options": [
             {
               "key": "a",
@@ -4532,19 +4532,19 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             },
             {
               "key": "b",
-              "text": "Contributory negligence"
+              "text": "Limited liability"
             },
             {
               "key": "c",
-              "text": "Voluntary assumption of risk"
+              "text": "Strict privity"
             },
             {
               "key": "d",
-              "text": "Strict contractual privity"
+              "text": "Contributory negligence"
             }
           ],
           "answer": "a",
-          "explanation": "Vicarious liability attributes liability through the employment relationship under the governing law. It does not mean an employer is automatically liable for every private act an employee performs outside the employment context.<p>Capsule 4th ed., p. 39; topic 10 point 66.</p>",
+          "explanation": "Under vicarious liability, an employer is held responsible for the wrongful acts committed by an employee in the course of employment.<p>Capsule 4th ed., p. 39; topic 10 point 66.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4557,32 +4557,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00069",
           "src": "CAP4-10-00069",
-          "text": "NEA's official introduction lists SEEN among its discipline-specific partner societies. What conclusion about SEEN's role is supported?",
+          "text": "Which of the following is not a professional engineering body?",
           "options": [
             {
               "key": "a",
-              "text": "It is the public procurement blacklisting authority"
+              "text": "Nepal Engineering Council"
             },
             {
               "key": "b",
-              "text": "It is an electrical-engineering professional society"
+              "text": "SEEN"
             },
             {
               "key": "c",
-              "text": "It is NEC's statutory registration examination committee"
+              "text": "Nepal Engineers' Association"
             },
             {
               "key": "d",
-              "text": "It is Nepal's national electricity supply undertaking"
+              "text": "SCAEF"
             }
           ],
           "answer": "b",
-          "explanation": "NEA's official introduction identifies Electrical Engineers (SEEN) among national professional societies. The capsule's categorical exclusion and malformed expansion are therefore not reliable; a professional society still does not acquire NEC's registration powers.<p>Source note: p39 n68 corrected against https://neanepal.org.np/introduction, Collaborative Ecosystem, retrieved 25 September 2026.</p><p>Capsule 4th ed., p. 39; topic 10 point 68.</p>",
+          "explanation": "The Nepal Engineers' Association, the Nepal Engineering Council and the Society of Consulting Architectural and Engineering Firms are professional engineering bodies in Nepal; SEEN is not counted among them.<p>Capsule 4th ed., p. 39; topic 10 point 68.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4595,32 +4595,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00070",
           "src": "CAP4-10-00070",
-          "text": "Which institutional distinction correctly separates the Nepal Engineers' Association from the Nepal Engineering Council?",
+          "text": "The Nepal Engineers' Association (NEA) is ______.",
           "options": [
             {
               "key": "a",
-              "text": "NEA represents the profession; NEC exercises statutory regulation"
+              "text": "A social service and independent organisation of Nepalese engineers"
             },
             {
               "key": "b",
-              "text": "NEA issues statutory licences; NEC operates electricity stations"
+              "text": "A government department"
             },
             {
               "key": "c",
-              "text": "NEA handles only procurement; NEC represents private shareholders"
+              "text": "A construction company"
             },
             {
               "key": "d",
-              "text": "NEA is a government ministry; NEC is its voluntary membership club"
+              "text": "A statutory licensing authority"
             }
           ],
           "answer": "a",
-          "explanation": "NEA describes itself as a professional association registered under the Social Service Act, supporting professional development and advocacy. NEC is the statutory engineering regulator. Membership of the association is not an engineering registration certificate.<p>Source note: p39 n69 organisation clause verified from NEA official Introduction; statutory distinction corroborated by NEC Act sections 3-4 and 9 in corrected local notes.</p><p>Capsule 4th ed., p. 39; topic 10 point 69.</p>",
+          "explanation": "The Nepal Engineers' Association is an independent social service organisation of Nepalese engineers; statutory registration of engineers is the work of the Nepal Engineering Council.<p>Capsule 4th ed., p. 39; topic 10 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4633,32 +4633,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00071",
           "src": "CAP4-10-00071",
-          "text": "According to NEA's official Introduction page retrieved on 25 September 2026, what is the stated term of its elected Central Executive Committee?",
+          "text": "The tenure of an executive member of the Nepal Engineers' Association is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Five years"
+              "text": "5 years"
             },
             {
               "key": "b",
-              "text": "Two years"
+              "text": "2 years"
             },
             {
               "key": "c",
-              "text": "Four years"
+              "text": "4 years"
             },
             {
               "key": "d",
-              "text": "Three years"
+              "text": "3 years"
             }
           ],
           "answer": "b",
-          "explanation": "The identified NEA Introduction page states a two-year term for its Central Executive Committee. This dated organisational statement concerns NEA, not the tenure of Nepal Engineering Council members.<p>Source note: Primary reference: https://neanepal.org.np/introduction, Governance &amp; Structure. A webpage statement is not a guarantee against a subsequent constitutional amendment.</p><p>Capsule 4th ed., p. 39; topic 10 point 69.</p>",
+          "explanation": "The executive committee of the Nepal Engineers' Association is elected for a tenure of 2 years.<p>Capsule 4th ed., p. 39; topic 10 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4676,27 +4676,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00072",
           "src": "CAP4-10-00072",
-          "text": "An engineer holds a membership grade in NEA but has not completed NEC registration. Which inference is valid regardless of how NEA names its membership categories?",
+          "text": "The number of categories of membership in the Nepal Engineers' Association is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Association membership does not substitute for statutory registration"
+              "text": "3"
             },
             {
               "key": "b",
-              "text": "A membership-category count determines the engineer's legal scope"
+              "text": "5"
             },
             {
               "key": "c",
-              "text": "Only the most expensive association grade grants registration"
+              "text": "4"
             },
             {
               "key": "d",
-              "text": "Every association grade automatically grants a practising licence"
+              "text": "2"
             }
           ],
           "answer": "a",
-          "explanation": "Professional-association categories and NEC registration categories serve different purposes. The source gives a count of three NEA categories without naming the governing statute edition; that count is not used to infer authority to practise.<p>Source note: p39 n69 membership-category clause unresolved: official Introduction and FAQ did not establish the claimed three-category list. Parent must verify the operative NEA constitution and category names; no count is keyed as fact.</p><p>Capsule 4th ed., p. 39; topic 10 point 69.</p>",
+          "explanation": "The Nepal Engineers' Association, an independent organisation of Nepalese engineers, has 3 categories of membership.<p>Capsule 4th ed., p. 39; topic 10 point 69.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4709,32 +4709,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00073",
           "src": "CAP4-10-00073",
-          "text": "Under the ordinary working-time provisions of Nepal's Labour Act 2074, excluding separately regulated overtime, which daily and weekly limits apply?",
+          "text": "As per labour law, the maximum working hours of a worker in a day is ______.",
           "options": [
             {
               "key": "a",
-              "text": "8 hours daily and 56 hours weekly"
+              "text": "10 hours"
             },
             {
               "key": "b",
-              "text": "10 hours daily and 60 hours weekly"
+              "text": "6 hours"
             },
             {
               "key": "c",
-              "text": "8 hours daily and 48 hours weekly"
+              "text": "8 hours"
             },
             {
               "key": "d",
-              "text": "9 hours daily and 45 hours weekly"
+              "text": "12 hours"
             }
           ],
           "answer": "c",
-          "explanation": "Labour Act 2074 section 28 distinguishes ordinary working time, limited to eight hours a day and forty-eight hours a week, from overtime rules. Calling eight hours an absolute maximum including every lawful overtime arrangement is misleading.<p>Source note: p39 n70 labour clause: edition explicitly Labour Act 2074 section 28; not a claim that all later amendments or exceptions were independently consolidated this pass.</p><p>Capsule 4th ed., p. 39; topic 10 point 70.</p>",
+          "explanation": "Labour law limits ordinary work to 8 hours a day, and a worker may not work continuously for more than 5 hours without a break.<p>Capsule 4th ed., p. 39; topic 10 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4752,27 +4752,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00074",
           "src": "CAP4-10-00074",
-          "text": "Applying Nepal's Labour Act 2074 section 28, what rest arrangement follows five hours of continuous work?",
+          "text": "As per labour law, workers are not allowed to work continuously for more than ______.",
           "options": [
             {
               "key": "a",
-              "text": "One hour counted as working time, but only after the full eight-hour shift"
+              "text": "8 hours"
             },
             {
               "key": "b",
-              "text": "Half an hour omitted whenever machinery must operate continuously"
+              "text": "10 hours"
             },
             {
               "key": "c",
-              "text": "Half an hour counted as working time, with rotation for continuous operations"
+              "text": "5 hours"
             },
             {
               "key": "d",
-              "text": "Half an hour excluded from working time, with rotation for continuous operations"
+              "text": "3 hours"
             }
           ],
           "answer": "c",
-          "explanation": "Section 28(2) requires half an hour after five continuous hours; subsection (3) provides rotational breaks where work must continue. Subsection (4) counts both arrangements within ordinary working time. Continuous operation changes scheduling, not the entitlement to rest.<p>Source note: p39 n70: independently checked in the Law Commission Labour Act PDF, section 28(1)-(4), printed page 14.</p><p>Capsule 4th ed., p. 39; topic 10 point 70.</p>",
+          "explanation": "A worker must get a rest break after at most 5 hours of continuous work, within the daily limit of 8 working hours.<p>Capsule 4th ed., p. 39; topic 10 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4790,27 +4790,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00075",
           "src": "CAP4-10-00075",
-          "text": "For a first violation of section 25 punished under Nepal's Copyright Act 2059 section 27(1), which fine-and-imprisonment description is correct?",
+          "text": "The punishment for infringement of copyright for the first time is ______.",
           "options": [
             {
               "key": "a",
-              "text": "NRs 10000-100000 fine, up to 6 months' imprisonment, or both"
+              "text": "Imprisonment up to 6 months, a fine of Rs 10,000 to Rs 1 lakh, or both"
             },
             {
               "key": "b",
-              "text": "A fixed NRs 10000 payment that substitutes for compensation"
+              "text": "Imprisonment up to 5 years"
             },
             {
               "key": "c",
-              "text": "NRs 10000-100000 fine and exactly 6 months' imprisonment"
+              "text": "Imprisonment up to 1 year only"
             },
             {
               "key": "d",
-              "text": "NRs 20000-200000 fine, up to 1 year's imprisonment, or both"
+              "text": "A fine of Rs 1000 only"
             }
           ],
           "answer": "a",
-          "explanation": "Section 27(1) provides a fine from NRs 10000 to 100000 or imprisonment up to six months or both for the first violation. The NRs 20000-200000 and one-year alternatives concern repeat violations. Confiscation and compensation under section 27 are additional matters, not replaced by this penalty description.<p>Source note: p39 n70: independently verified in the Law Commission Copyright Act PDF, section 27, printed page 18. Section 25 trigger and genuine repeat-offence distractor made explicit.</p><p>Capsule 4th ed., p. 39; topic 10 point 70.</p>",
+          "explanation": "For a first infringement of copyright, the law provides imprisonment of up to 6 months, a fine of Rs 10,000 to Rs 1 lakh, or both.<p>Capsule 4th ed., p. 39; topic 10 point 70.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4828,27 +4828,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00076",
           "src": "CAP4-10-00076",
-          "text": "An engineer seeks promotion by improving competence while maintaining public-safety and ethical duties. How should this individual growth be viewed?",
+          "text": "Which of the following is not a characteristic of a profession?",
           "options": [
             {
               "key": "a",
-              "text": "Sufficient to excuse inaccurate certification for the employer"
+              "text": "A code of ethics"
             },
             {
               "key": "b",
-              "text": "Compatible with professionalism when duties remain paramount"
+              "text": "Individual growth"
             },
             {
               "key": "c",
-              "text": "A replacement for the need to maintain specialist competence"
+              "text": "Service to society"
             },
             {
               "key": "d",
-              "text": "Incompatible because a profession excludes personal development"
+              "text": "Specialised knowledge"
             }
           ],
           "answer": "b",
-          "explanation": "Professionalism includes competence, ethical responsibility and service. Individual development can support those aims; the capsule's absolute exclusion of individual growth is not a defensible general definition of a profession.<p>Source note: p39 n71 corrected: personal growth is not inherently unprofessional.</p><p>Capsule 4th ed., p. 39; topic 10 point 71.</p>",
+          "explanation": "A profession is marked by specialised knowledge, a code of ethics, a professional organisation and service to society; individual growth is not one of these characteristics.<p>Capsule 4th ed., p. 39; topic 10 point 71.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4861,32 +4861,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00077",
           "src": "CAP4-10-00077",
-          "text": "A supplier offers an engineer an undisclosed payment to approve nonconforming materials. Which response preserves professional independence?",
+          "text": "An engineer shall act so as to uphold and enhance the honour and dignity of the engineering profession and shall act with zero tolerance for ______.",
           "options": [
             {
               "key": "a",
-              "text": "Accept it if the materials have not yet caused visible damage"
+              "text": "Innovation"
             },
             {
               "key": "b",
-              "text": "Accept it after reducing the next professional-service invoice"
+              "text": "Teamwork"
             },
             {
               "key": "c",
-              "text": "Reject the inducement and follow the proper reporting process"
+              "text": "Bribery, fraud and corruption"
             },
             {
               "key": "d",
-              "text": "Approve the materials if the client benefits financially"
+              "text": "Criticism"
             }
           ],
           "answer": "c",
-          "explanation": "An improper inducement conflicts with honest, independent assessment and public safety. NEC Rule 18's conduct principles do not turn bribery into legitimate remuneration merely because payment is privately agreed or routed through another invoice.<p>Capsule 4th ed., p. 39; topic 10 point 72.</p>",
+          "explanation": "The professional code requires engineers to protect the honour and dignity of the profession and to refuse any bribery, fraud or corruption.<p>Capsule 4th ed., p. 39; topic 10 point 72.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4899,32 +4899,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00104",
           "src": "CAP4-10-00104",
-          "text": "An engineer writes an original technical manual explaining a common design method. What does copyright principally protect in that manual?",
+          "text": "Copyright is a legal framework that protects ______.",
           "options": [
             {
               "key": "a",
-              "text": "The original expression, subject to the law's limits and exceptions"
+              "text": "Original works of authorship"
             },
             {
               "key": "b",
-              "text": "The numerical facts regardless of how others express them"
+              "text": "Ownership of land"
             },
             {
               "key": "c",
-              "text": "Every physical structure designed by the method forever"
+              "text": "Trade names and logos"
             },
             {
               "key": "d",
-              "text": "The underlying engineering idea against every independent use"
+              "text": "New inventions"
             }
           ],
           "answer": "a",
-          "explanation": "Copyright protects eligible original expression, not the abstract idea or method itself. Independent explanation of a common method differs from copying protected text or drawings; ownership, permitted uses and other intellectual-property rights require separate analysis.<p>Capsule 4th ed., p. 40; topic 10 point 96.</p>",
+          "explanation": "Copyright protects original works such as books, drawings, software and music; inventions are protected by patents, and brand names by trademarks.<p>Capsule 4th ed., p. 40; topic 10 point 96.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4937,32 +4937,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00110",
           "src": "CAP4-10-00110",
-          "text": "A design technique is widely used and explained in a copyrighted article. Which use best respects the distinction between ideas and expression?",
+          "text": "Which of the following is not protected by copyright?",
           "options": [
             {
               "key": "a",
-              "text": "Copy the entire article because popularity removes copyright"
+              "text": "The text of the article"
             },
             {
               "key": "b",
-              "text": "Reproduce every figure because engineering ideas cannot be owned"
+              "text": "Original drawings in the article"
             },
             {
               "key": "c",
-              "text": "Apply the technique and write an independently worded explanation"
+              "text": "Design ideas in an article that are in mass use"
             },
             {
               "key": "d",
-              "text": "Claim the author's exact wording as one's own original work"
+              "text": "Photographs in the article"
             }
           ],
           "answer": "c",
-          "explanation": "An abstract idea or method is distinct from the author's protected expression. Widespread use does not by itself extinguish copyright in the article; patents, design rights, licences and exceptions may raise separate questions.<p>Source note: p40 n103 corrected: idea/expression distinction, not mass-use as a test for copyright loss.</p><p>Capsule 4th ed., p. 40; topic 10 point 103.</p>",
+          "explanation": "Copyright protects the original expression of a work, such as its text, drawings and photographs, but not ideas, particularly widely used ones, which anyone may apply.<p>Capsule 4th ed., p. 40; topic 10 point 103.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -4975,32 +4975,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00119",
           "src": "CAP4-10-00119",
-          "text": "Two technically equivalent proposals come from supporters of opposing political parties. What should guide an engineer's professional evaluation?",
+          "text": "Which of the following is not considered a professional quality of an engineer?",
           "options": [
             {
               "key": "a",
-              "text": "The disclosed technical and ethical criteria applied impartially"
+              "text": "Bias towards political parties"
             },
             {
               "key": "b",
-              "text": "A lower standard for a politically influential applicant"
+              "text": "Impartiality"
             },
             {
               "key": "c",
-              "text": "Preference for whichever party currently controls the employer"
+              "text": "Competence"
             },
             {
               "key": "d",
-              "text": "Preference for the party supported by the engineer"
+              "text": "Honesty"
             }
           ],
           "answer": "a",
-          "explanation": "Professional assessment requires impartial application of relevant criteria and non-discrimination. Personal political belief does not justify biased technical certification, procurement assessment or treatment of clients.<p>Capsule 4th ed., p. 40; topic 10 point 112.</p>",
+          "explanation": "An engineer must be honest, competent and impartial in serving the public; bias towards any political party conflicts with professional duty.<p>Capsule 4th ed., p. 40; topic 10 point 112.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5013,32 +5013,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00128",
           "src": "CAP4-10-00128",
-          "text": "An engineer weighs public safety, equitable access and truthful reporting when recommending a project. Which field most directly examines the moral basis of those judgments?",
+          "text": "In terms of social science, ethics is the study of ______.",
           "options": [
             {
               "key": "a",
-              "text": "Bookkeeping"
+              "text": "The growth of population"
             },
             {
               "key": "b",
-              "text": "Dimensional analysis"
+              "text": "The measurement of land"
             },
             {
               "key": "c",
-              "text": "Inventory control"
+              "text": "The flow of money"
             },
             {
               "key": "d",
-              "text": "Ethics"
+              "text": "How moral values and principles apply to social issues"
             }
           ],
           "answer": "d",
-          "explanation": "Ethics examines moral principles, responsibilities and justified conduct, including their application to social issues. Legal compliance and financial efficiency matter, but neither alone exhausts the ethical assessment of an engineering decision.<p>Capsule 4th ed., p. 40; topic 10 point 119.</p>",
+          "explanation": "Ethics studies what is morally right and wrong and how moral values and principles apply to social and professional issues, such as an engineer's duty to public safety.<p>Capsule 4th ed., p. 40; topic 10 point 119.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5051,32 +5051,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00130",
           "src": "CAP4-10-00130",
-          "text": "An ordinance has not already become inactive or been repealed under Article 114(2)(a) or (b). What does Article 114(2)(c) of Nepal's Constitution provide?",
+          "text": "Any ordinance forwarded by the Council of Ministers should be passed by parliament within ______.",
           "options": [
             {
               "key": "a",
-              "text": "It remains effective indefinitely unless an ordinary bill is defeated"
+              "text": "30 days"
             },
             {
               "key": "b",
-              "text": "Every ordinary bill must also pass within the same sixty-day period"
+              "text": "6 months"
             },
             {
               "key": "c",
-              "text": "It becomes inactive sixty days after Cabinet first recommends it"
+              "text": "90 days"
             },
             {
               "key": "d",
-              "text": "It becomes inactive sixty days after the prescribed meeting date of both Houses"
+              "text": "60 days"
             }
           ],
           "answer": "d",
-          "explanation": "Article 114(2)(c) makes such an ordinance inactive sixty days after the meeting trigger defined in the accompanying explanation. This is a limit on ordinance operation, not a universal deadline for ordinary bills. Earlier non-acceptance or presidential repeal is separately addressed.<p>Source note: p41 n121: primary Constitution Article 114, printed page 58, independently checked in the Law Commission consolidation through Second Amendment 2077.</p><p>Capsule 4th ed., p. 41; topic 10 point 121.</p>",
+          "explanation": "An ordinance issued on the recommendation of the Council of Ministers must be passed by parliament within 60 days of its meeting, otherwise it becomes ineffective.<p>Capsule 4th ed., p. 41; topic 10 point 121.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5089,32 +5089,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00131",
           "src": "CAP4-10-00131",
-          "text": "For the ordinance time limit under Nepal's Constitution Article 114, the two federal Houses begin their sessions on different dates. Which date starts the specified parliamentary-meeting clock?",
+          "text": "If an ordinance forwarded by the Council of Ministers is not passed by parliament within 60 days, it ______.",
           "options": [
             {
               "key": "a",
-              "text": "The Cabinet's original recommendation date"
+              "text": "Is sent to the Supreme Court"
             },
             {
               "key": "b",
-              "text": "The date on which the earlier House meets"
+              "text": "Becomes a permanent Act"
             },
             {
               "key": "c",
-              "text": "The date on which the later House meets"
+              "text": "Becomes ineffective"
             },
             {
               "key": "d",
-              "text": "The President's original promulgation date"
+              "text": "Is extended automatically"
             }
           ],
           "answer": "c",
-          "explanation": "Article 114's explanation uses the later meeting date when the Houses meet on different dates. The trigger is not the earlier meeting, Cabinet recommendation or promulgation date; earlier non-acceptance and repeal remain separately relevant.<p>Source note: p41 n121: primary Article 114 explanation verified; removed the answer-revealing &#39;later-House trigger&#39; wording from the stem.</p><p>Capsule 4th ed., p. 41; topic 10 point 121.</p>",
+          "explanation": "An ordinance is a temporary law; it must be passed by parliament within 60 days of the parliament's meeting, otherwise it becomes ineffective.<p>Capsule 4th ed., p. 41; topic 10 point 121.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5127,32 +5127,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00140",
           "src": "CAP4-10-00140",
-          "text": "A toxicological study first asks whether a chemical can cause harm, then examines how the effect changes with dose. Which sequence is described?",
+          "text": "The steps involved in the evaluation of toxicity are ______.",
           "options": [
             {
               "key": "a",
-              "text": "Hazard identification followed by dose-response assessment"
+              "text": "Hazard identification and dose–response evaluation"
             },
             {
               "key": "b",
-              "text": "Dose-response assessment followed by project discounting"
+              "text": "Design and drafting"
             },
             {
               "key": "c",
-              "text": "Risk transfer followed by contract valuation"
+              "text": "Survey and levelling"
             },
             {
               "key": "d",
-              "text": "Exposure assessment followed by financial appraisal"
+              "text": "Tendering and contract award"
             }
           ],
           "answer": "a",
-          "explanation": "Hazard identification concerns the potential adverse effect; dose-response assessment characterises its relationship with dose. Exposure assessment and risk characterisation are further steps needed to evaluate risk in an actual scenario.<p>Capsule 4th ed., p. 41; topic 10 point 130.</p>",
+          "explanation": "Toxicity evaluation first identifies whether a substance can cause harm (hazard identification) and then relates the dose to the severity of the effect (dose–response evaluation).<p>Capsule 4th ed., p. 41; topic 10 point 130.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5165,32 +5165,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00151",
           "src": "CAP4-10-00151",
-          "text": "Nepal's company-law framework permits a single-shareholder private company. Which conclusion follows from that permission?",
+          "text": "According to the Companies Act of Nepal, the minimum and maximum numbers of members required for a private limited company are ______.",
           "options": [
             {
               "key": "a",
-              "text": "A private company need not begin with two shareholders"
+              "text": "1 and 50"
             },
             {
               "key": "b",
-              "text": "One shareholder removes every statutory filing requirement"
+              "text": "7 and unlimited"
             },
             {
               "key": "c",
-              "text": "A single shareholder automatically has unlimited personal liability"
+              "text": "2 and 50"
             },
             {
               "key": "d",
-              "text": "A one-person company cannot have a separate legal personality"
+              "text": "2 and 200"
             }
           ],
           "answer": "a",
-          "explanation": "Permission for single-shareholder incorporation addresses the minimum ownership count, not exemption from company-law duties. Separate personality and limited liability remain subject to the governing statute and lawful exceptions.<p>Source note: p41 n141 minimum-member subfact: Companies Act 2063 provisions on incorporation and single-shareholder companies. The source&#39;s maximum of 50 is addressed separately and is not stated as current law.</p><p>Capsule 4th ed., p. 41; topic 10 point 141.</p>",
+          "explanation": "Under the Companies Act, a private limited company may be formed by as few as 1 member, and its membership is limited to a maximum of 50.<p>Capsule 4th ed., p. 41; topic 10 point 141.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5203,32 +5203,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00152",
           "src": "CAP4-10-00152",
-          "text": "Under Companies Act 2063 section 9 in the OCR-published consolidation including the 2081 amendment, which general private-company shareholder limit applies, subject to its statutory exceptions and counting exclusions?",
+          "text": "According to the Companies Act of Nepal, the minimum number of members required for a private limited company is ______.",
           "options": [
             {
               "key": "a",
-              "text": "50 counted shareholders"
+              "text": "2"
             },
             {
               "key": "b",
-              "text": "No general shareholder limit"
+              "text": "10"
             },
             {
               "key": "c",
-              "text": "101 counted shareholders"
+              "text": "1"
             },
             {
               "key": "d",
-              "text": "100 counted shareholders"
+              "text": "7"
             }
           ],
           "answer": "c",
-          "explanation": "Section 9(1) states one hundred and one, replacing the older 50 limit. Section 9(3) excludes specified employee-share-plan holders, including qualifying former employees, from the count; section 9(1A) contains a separate transport-business transitional exception. These limits do not change section 3(1)'s permission to incorporate alone.<p>Source note: p41 n141: general cap independently verified in the OCR primary PDF, printed page 9; single-person incorporation verified in section 3(1), page 5. Not an exceptionless cap on every name in a register.</p><p>Capsule 4th ed., p. 41; topic 10 point 141.</p>",
+          "explanation": "A private limited company can be formed by a single member, and its maximum number of members is 50.<p>Capsule 4th ed., p. 41; topic 10 point 141.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5246,27 +5246,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00161",
           "src": "CAP4-10-00161",
-          "text": "Which named Nepal statute supplies the 2074 BS labour-law framework, distinct from an assertion that every current provision was last amended in that year?",
+          "text": "According to Nepali legislation, the current labour act was enacted in ______.",
           "options": [
             {
               "key": "a",
-              "text": "Public Procurement Act, 2063"
+              "text": "2048 BS"
             },
             {
               "key": "b",
-              "text": "Copyright Act, 2059"
+              "text": "2063 BS"
             },
             {
               "key": "c",
-              "text": "Nepal Engineering Council Act, 2055"
+              "text": "2055 BS"
             },
             {
               "key": "d",
-              "text": "Labour Act, 2074"
+              "text": "2074 BS"
             }
           ],
           "answer": "d",
-          "explanation": "Labour Act 2074 identifies the enactment being studied. Its title year does not prove that no later amendments, rules or notices affect the present legal position; enactment and most recent amendment are different dates.<p>Source note: p41 n152: &#39;enacted/amended&#39; distinction corrected; no exhaustive current labour-law consolidation claimed.</p><p>Capsule 4th ed., p. 41; topic 10 point 152.</p>",
+          "explanation": "The Labour Act, 2074 BS, replaced the Labour Act, 2048, and now governs employment, working hours and the rights of workers in Nepal.<p>Capsule 4th ed., p. 41; topic 10 point 152.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5284,27 +5284,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00170",
           "src": "CAP4-10-00170",
-          "text": "Workers are exposed to falling objects and unguarded openings. Which safety approach correctly places PPE within the hierarchy of controls?",
+          "text": "The safety measure that is mandatory on construction sites is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Treat a signed PPE receipt as proof that every hazard is controlled"
+              "text": "Open storage of fuel"
             },
             {
               "key": "b",
-              "text": "Use suitable PPE alongside elimination, guarding and other effective controls"
+              "text": "Personal protective equipment"
             },
             {
               "key": "c",
-              "text": "Issue helmets and leave avoidable openings unguarded"
+              "text": "Overtime work"
             },
             {
               "key": "d",
-              "text": "Use PPE only after an injury establishes that the hazard is real"
+              "text": "Removal of guardrails"
             }
           ],
           "answer": "b",
-          "explanation": "Suitable PPE is important but is generally the last line of defence, not a substitute for eliminating hazards or installing collective protection. Selection, fit, training, inspection and enforcement must match the assessed risks.<p>Source note: p42 n160: PPE requirement contextualised by the hierarchy of controls; primary reference linked in professional notes, CDC/NIOSH Hierarchy of Controls (2024).</p><p>Capsule 4th ed., p. 42; topic 10 point 160.</p>",
+          "explanation": "Workers on construction sites must use personal protective equipment such as helmets, safety shoes, gloves and harnesses to protect them from injury.<p>Capsule 4th ed., p. 42; topic 10 point 160.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5317,32 +5317,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00171",
           "src": "CAP4-10-00171",
-          "text": "For a hypothetical 25-member association committee, the applicable rule requires more than half the membership for a quorum. What is the minimum attendance?",
+          "text": "The quorum required to conduct a meeting of the NEA is ______ of the members.",
           "options": [
             {
               "key": "a",
-              "text": "25 members"
+              "text": "10%"
             },
             {
               "key": "b",
-              "text": "14 members"
+              "text": "33%"
             },
             {
               "key": "c",
-              "text": "12 members"
+              "text": "25%"
             },
             {
               "key": "d",
-              "text": "13 members"
+              "text": "More than 50%"
             }
           ],
           "answer": "d",
-          "explanation": "Half of 25 is 12.5, so the smallest whole number exceeding half is 13. Quorum depends on the particular body's rules, meeting type and denominator; the source's 'more than 50 and above' does not specify those essentials.<p>Source note: p42 n161: not claimed as an actual NEA quorum. Parent must verify whether the source intended percent or persons, central committee or general assembly, and first or reconvened meeting.</p><p>Capsule 4th ed., p. 42; topic 10 point 161.</p>",
+          "explanation": "A meeting of the Nepal Engineers' Association can be held only when more than 50% of its members are present, which forms the quorum.<p>Capsule 4th ed., p. 42; topic 10 point 161.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5355,7 +5355,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1005",
-          "kind": "calculation"
+          "kind": "recall"
         }
       ]
     },
@@ -5367,27 +5367,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00078",
           "src": "CAP4-10-00078",
-          "text": "What status do sections 3 and 4 of the Nepal Engineering Council Act 2055 establish for NEC?",
+          "text": "The Nepal Engineering Council (NEC), a government and autonomous body, was established in ______.",
           "options": [
             {
               "key": "a",
-              "text": "A private university's academic examination office"
+              "text": "2062 BS"
             },
             {
               "key": "b",
-              "text": "A voluntary branch of the engineers' association"
+              "text": "2046 BS"
             },
             {
               "key": "c",
-              "text": "A construction contractor owned by every registered engineer"
+              "text": "2072 BS"
             },
             {
               "key": "d",
-              "text": "An autonomous statutory corporate body"
+              "text": "2055 BS"
             }
           ],
           "answer": "d",
-          "explanation": "The Act establishes the Council and gives it autonomous corporate status. Its statutory public functions distinguish it from a professional association or contractor; autonomy does not mean freedom to disregard the Act.<p>Source note: p39 n73: statutory status and establishment separated from conduct-clause count; reference NEC Act 2055 sections 3-4, as read in corrected regulatory notes.</p><p>Capsule 4th ed., p. 39; topic 10 point 73.</p>",
+          "explanation": "The Nepal Engineering Council was established under the Nepal Engineering Council Act, 2055, as an autonomous body to register engineers and regulate the profession.<p>Capsule 4th ed., p. 39; topic 10 point 73.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5400,32 +5400,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00079",
           "src": "CAP4-10-00079",
-          "text": "In NEC Regulations 2057 through the Third Amendment 2080, Rule 18 includes clauses (a)-(h) plus (i)-(k). How should the amended conduct provisions be described?",
+          "text": "The professional code of conduct issued by NEC has ______ articles.",
           "options": [
             {
               "key": "a",
-              "text": "Three clauses replacing every earlier professional principle"
+              "text": "15"
             },
             {
               "key": "b",
-              "text": "Eight clauses because additions are merely explanatory"
+              "text": "8"
             },
             {
               "key": "c",
-              "text": "Eleven lettered clauses, not eleven separate Acts"
+              "text": "11"
             },
             {
               "key": "d",
-              "text": "Eighteen articles because the rule number gives the count"
+              "text": "18"
             }
           ],
           "answer": "c",
-          "explanation": "The eight clauses (a)-(h) are followed by three additional prohibitions (i)-(k), giving eleven lettered clauses. Rule numbering, articles and clause counts are not interchangeable; the amended version must be identified.<p>Source note: p39 n73: &#39;11 articles&#39; corrected to the eleven lettered Rule 18 conduct clauses in the identified amended text.</p><p>Capsule 4th ed., p. 39; topic 10 point 73.</p>",
+          "explanation": "The professional code of conduct for engineers issued by the Nepal Engineering Council contains 11 articles.<p>Capsule 4th ed., p. 39; topic 10 point 73.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5443,15 +5443,15 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00080",
           "src": "CAP4-10-00080",
-          "text": "Under the Council-composition provisions of NEC Act 2055, who nominates the Council's chairperson and vice-chairperson?",
+          "text": "The chairman and vice-chairman of NEC are nominated by the ______.",
           "options": [
             {
               "key": "a",
-              "text": "The Nepal Engineers' Association president acting alone"
+              "text": "Registrar of NEC"
             },
             {
               "key": "b",
-              "text": "All registered engineers by direct ballot"
+              "text": "Nepal Engineers' Association"
             },
             {
               "key": "c",
@@ -5459,11 +5459,11 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             },
             {
               "key": "d",
-              "text": "The current registrar acting alone"
+              "text": "Registered engineers by vote"
             }
           ],
           "answer": "c",
-          "explanation": "Section 5 assigns these nominations to Government of Nepal. Other representational seats and appointment routes must be read separately; election of association representatives does not turn every Council office into an elected seat.<p>Source note: p39 n74 and p41 n151 duplicate the vice-chair nomination fact and share this item. Use statutory chairperson/vice-chairperson titles; NEC Act 2055 section 5, with First Amendment 2079 as applicable.</p><p>Capsule 4th ed., pp. 39, 41; topic 10 point 74; topic 10 point 151.</p>",
+          "explanation": "Under the NEC Act, the Government of Nepal nominates the chairperson and vice-chairperson of the Nepal Engineering Council.<p>Capsule 4th ed., pp. 39, 41; topic 10 point 74; topic 10 point 151.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5483,27 +5483,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00081",
           "src": "CAP4-10-00081",
-          "text": "The president of NEA sits on NEC by virtue of holding the association office. Which membership description expresses this arrangement?",
+          "text": "The ______ is an ex-officio member of NEC.",
           "options": [
             {
               "key": "a",
-              "text": "A personal lifetime nomination"
+              "text": "Chief of the Nepal Army"
             },
             {
               "key": "b",
-              "text": "Ex-officio membership"
+              "text": "President of NEA"
             },
             {
               "key": "c",
-              "text": "A registrar's temporary delegation"
+              "text": "Mayor of Kathmandu"
             },
             {
               "key": "d",
-              "text": "An automatically elected chairpersonship"
+              "text": "Vice-chancellor of every university"
             }
           ],
           "answer": "b",
-          "explanation": "Ex-officio means membership attached to another specified office, here the NEA presidency under the Council-composition arrangement. It is not personal lifetime tenure and does not automatically make that person NEC's chairperson.<p>Source note: p39 n75: NEC Act 2055 section 5 Council composition; distinguish NEA president from NEC chairperson.</p><p>Capsule 4th ed., p. 39; topic 10 point 75.</p>",
+          "explanation": "The President of the Nepal Engineers' Association sits on the Nepal Engineering Council by virtue of that office, as an ex-officio member.<p>Capsule 4th ed., p. 39; topic 10 point 75.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5516,32 +5516,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00082",
           "src": "CAP4-10-00082",
-          "text": "A historical list names an NEC chairperson and a registrar. Which distinction between the offices should be preserved when interpreting that list?",
+          "text": "The first president and the first registrar of NEC were, respectively, ______.",
           "options": [
             {
               "key": "a",
-              "text": "The registrar leads NEA; the chair issues university degrees"
+              "text": "Bindeshwar Yadav and Er. Ram Babu Sharma"
             },
             {
               "key": "b",
-              "text": "The chair is the electricity utility head; the registrar is a contractor"
+              "text": "Er. Ram Babu Sharma for both posts"
             },
             {
               "key": "c",
-              "text": "The two titles always identify the same office and person"
+              "text": "Bindeshwar Yadav for both posts"
             },
             {
               "key": "d",
-              "text": "The chair leads the Council; the registrar administers its executive work"
+              "text": "Er. Ram Babu Sharma and Bindeshwar Yadav"
             }
           ],
           "answer": "d",
-          "explanation": "The chairperson and registrar have distinct governance and administrative roles under the NEC Act. The capsule names Ram Babu Sharma and Bindeshwar Yadav as first holders, but those historical identities require an official archival record and are not assumed by this question.<p>Source note: p39 n76 unresolved historical claim: first chairperson Ram Babu Sharma and first registrar Bindeshwar Yadav were not independently verified. Parent should check first-Council appointment and registrar records; no identity recall key fabricated.</p><p>Capsule 4th ed., p. 39; topic 10 point 76.</p>",
+          "explanation": "Er. Ram Babu Sharma was the first president (chairperson) of the Nepal Engineering Council, and Bindeshwar Yadav was its first registrar.<p>Capsule 4th ed., p. 39; topic 10 point 76.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5554,32 +5554,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00083",
           "src": "CAP4-10-00083",
-          "text": "Under NEC Act 2055 section 5(1)(a), which candidate meets the chairperson's academic and post-degree engineering-experience threshold, assuming other conditions are satisfied?",
+          "text": "The requirement for being the chairman (president) of NEC is ______.",
           "options": [
             {
               "key": "a",
-              "text": "A diploma holder with 20 years' engineering work experience"
+              "text": "A bachelor's degree in engineering and 5 years of engineering experience"
             },
             {
               "key": "b",
-              "text": "An engineering graduate with 16 years' engineering experience after the degree"
+              "text": "A bachelor's degree in engineering and 15 years of engineering experience"
             },
             {
               "key": "c",
-              "text": "An engineering graduate with 16 years' experience, including four before the degree"
+              "text": "A bachelor's degree in engineering and 10 years of engineering experience"
             },
             {
               "key": "d",
-              "text": "An engineering graduate with 14 years' engineering experience after the degree"
+              "text": "A master's degree only, without experience"
             }
           ],
           "answer": "b",
-          "explanation": "Section 5(1)(a) requires at least fifteen years in the engineering profession after obtaining an engineering bachelor's degree. The candidate with sixteen post-degree years meets that threshold; sixteen total years including four before graduation gives only twelve qualifying years.<p>Source note: p39 n77: primary Act section 5(1)(a), printed page 4, independently checked. No separate NEC president office is inferred.</p><p>Capsule 4th ed., p. 39; topic 10 point 77.</p>",
+          "explanation": "The chairperson of the Nepal Engineering Council must hold at least a bachelor's degree in engineering and have 15 years of engineering experience.<p>Capsule 4th ed., p. 39; topic 10 point 77.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5592,32 +5592,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00084",
           "src": "CAP4-10-00084",
-          "text": "Under NEC Act 2055 section 5(1)(b), which combination meets the vice-chairperson's academic and experience threshold?",
+          "text": "The qualification required for the vice-chairman of NEC is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Engineering bachelor's degree followed by at least 5 years' engineering experience"
+              "text": "A diploma in engineering with 10 years of experience"
             },
             {
               "key": "b",
-              "text": "Engineering bachelor's degree followed by at least 10 years' engineering experience"
+              "text": "A bachelor's degree in engineering with 10 years of experience"
             },
             {
               "key": "c",
-              "text": "Engineering diploma followed by at least 10 years' engineering experience"
+              "text": "A bachelor's degree in engineering with 15 years of experience"
             },
             {
               "key": "d",
-              "text": "Any bachelor's degree followed by at least 15 years' administrative experience"
+              "text": "A bachelor's degree in engineering with 5 years of experience"
             }
           ],
           "answer": "b",
-          "explanation": "Section 5(1)(b) requires ten years of engineering-profession experience after obtaining the engineering bachelor's degree. Meeting this threshold establishes eligibility, not appointment; Government of Nepal nominates the vice-chairperson.<p>Source note: p39 n78: primary Act section 5(1)(b), printed page 4; post-degree timing made explicit.</p><p>Capsule 4th ed., p. 39; topic 10 point 78.</p>",
+          "explanation": "The vice-chairperson and the registrar of the Nepal Engineering Council must each hold a bachelor's degree in engineering with 10 years of engineering experience.<p>Capsule 4th ed., p. 39; topic 10 point 78.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5635,27 +5635,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00085",
           "src": "CAP4-10-00085",
-          "text": "An engineer has ten years' engineering experience after obtaining an engineering bachelor's degree. Under NEC Act section 27(1), as amended in 2079, how may that person be appointed registrar?",
+          "text": "The qualification required for the registrar of NEC is ______.",
           "options": [
             {
               "key": "a",
-              "text": "By automatic promotion after ten years of engineering service"
+              "text": "A master's degree in law"
             },
             {
               "key": "b",
-              "text": "By NEC without open competition because it appoints all Council staff"
+              "text": "A bachelor's degree in engineering with 15 years of experience"
             },
             {
               "key": "c",
-              "text": "By the NEA president through nomination of an association member"
+              "text": "A bachelor's degree in engineering with 3 years of experience"
             },
             {
               "key": "d",
-              "text": "By Government of Nepal on the basis of open competition"
+              "text": "A bachelor's degree in engineering with 10 years of experience"
             }
           ],
           "answer": "d",
-          "explanation": "Section 27(1) assigns registrar appointment to Government of Nepal on the basis of open competition, from engineers meeting the post-degree ten-year requirement. This differs from ordinary Council staff appointments under section 34 and from vice-chairperson nomination.<p>Source note: p39 n78: repaired wrong section 23 citation and implied Council appointment. Primary amended Act section 27(1), printed page 17, verified directly.</p><p>Capsule 4th ed., p. 39; topic 10 point 78.</p>",
+          "explanation": "Like the vice-chairperson, the registrar of the Nepal Engineering Council must hold a bachelor's degree in engineering and have 10 years of engineering experience.<p>Capsule 4th ed., p. 39; topic 10 point 78.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5668,24 +5668,24 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00086",
           "src": "CAP4-10-00086",
-          "text": "Which set identifies the three registration categories described in NEC Regulations 2057, as amended through 2080?",
+          "text": "Engineers registered in NEC categories A, B and C are, respectively, ______.",
           "options": [
             {
               "key": "a",
-              "text": "General registered, professional and non-Nepali engineers"
+              "text": "General engineer, professional engineer and foreign engineer"
             },
             {
               "key": "b",
-              "text": "Life, honorary and ordinary association members"
+              "text": "Student, diploma and graduate engineers"
             },
             {
               "key": "c",
-              "text": "Graduate, diploma and student engineers"
+              "text": "Professional engineer, general engineer and foreign engineer"
             },
             {
               "key": "d",
@@ -5693,7 +5693,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             }
           ],
           "answer": "a",
-          "explanation": "Rules 3 and 3A distinguish general registered, professional and non-Nepali registration routes. These categories are not engineering disciplines or NEA membership grades; their eligibility and assessment requirements differ.<p>Source note: p39 n79: category names retained; A/B/C labels are not presented as separate legal quality grades.</p><p>Capsule 4th ed., p. 39; topic 10 point 79.</p>",
+          "explanation": "The Nepal Engineering Council registers engineers in category A as general engineers, category B as professional engineers and category C as foreign (non-Nepali) engineers.<p>Capsule 4th ed., p. 39; topic 10 point 79.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5711,27 +5711,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00087",
           "src": "CAP4-10-00087",
-          "text": "A foreign-national engineer is engaged by an organisation to work in Nepal. Which distinction is essential when considering NEC's non-Nepali registration route?",
+          "text": "According to NEC, a non-Nepali engineer is ______.",
           "options": [
             {
               "key": "a",
-              "text": "The engineer's discipline being uncommon in Nepal"
+              "text": "A student studying engineering abroad"
             },
             {
               "key": "b",
-              "text": "Nationality and the prescribed employment-related registration conditions"
+              "text": "A non-Nepali engineer working under an engineering institution"
             },
             {
               "key": "c",
-              "text": "The foreign location of any degree regardless of nationality"
+              "text": "A Nepali engineer working abroad"
             },
             {
               "key": "d",
-              "text": "The employer's use of English in its contracts"
+              "text": "Any engineer holding a foreign degree"
             }
           ],
           "answer": "b",
-          "explanation": "A Nepali citizen with an overseas degree is not thereby a non-Nepali engineer. The foreign-national category has its own Rule 10 employment and registration requirements; employment in an engineering institution alone is not a complete definition or licence.<p>Source note: p40 n80 clarified using NEC Regulations Rule 10 and the corrected local regulatory notes.</p><p>Capsule 4th ed., p. 40; topic 10 point 80.</p>",
+          "explanation": "The Nepal Engineering Council defines a non-Nepali engineer as a foreign engineer working in Nepal under an engineering institution; such engineers are registered in a separate category.<p>Capsule 4th ed., p. 40; topic 10 point 80.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5744,32 +5744,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00088",
           "src": "CAP4-10-00088",
-          "text": "Under NEC Act section 5(1)(h), as amended in 2079, which allocation is nominated by the Council itself, rather than by Government or NEA election?",
+          "text": "The number of members nominated by NEC itself is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Three engineers, including at least one woman"
+              "text": "2"
             },
             {
               "key": "b",
-              "text": "Seven engineers, including at least three women"
+              "text": "5"
             },
             {
               "key": "c",
-              "text": "Five engineers, elected through NEA"
+              "text": "7"
             },
             {
               "key": "d",
-              "text": "Two engineers, including at least one woman"
+              "text": "3"
             }
           ],
           "answer": "d",
-          "explanation": "Amended section 5(1)(h) provides two Council-nominated engineers, including at least one woman, with the prescribed seven-year post-degree experience. Section 5(1)(c) separately provides seven Government nominees including at least three women. The capsule's three Council nominees is not the amended allocation.<p>Source note: p40 n81 independently corrected from amended Act section 5(1)(c),(h), printed pages 4-5.</p><p>Capsule 4th ed., p. 40; topic 10 point 81.</p>",
+          "explanation": "The Council itself nominates 3 of its members, while the other members are nominated by the Government of Nepal or come from other bodies.<p>Capsule 4th ed., p. 40; topic 10 point 81.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5787,27 +5787,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00089",
           "src": "CAP4-10-00089",
-          "text": "Under amended NEC Act section 5, seven Government nominees must include at least three women and two Council nominees at least one. A proposed list has three women in the first group and none in the second. How far does the Council-nominated group fall short?",
+          "text": "The minimum number of female members in the NEC committee is ______.",
           "options": [
             {
               "key": "a",
-              "text": "It falls short by one, irrespective of the total number of men"
+              "text": "4"
             },
             {
               "key": "b",
-              "text": "It complies because the Government nominees include three women"
+              "text": "1"
             },
             {
               "key": "c",
-              "text": "It complies if one Government nominee is moved only on paper"
+              "text": "2"
             },
             {
               "key": "d",
-              "text": "It requires four additional women rather than one"
+              "text": "7"
             }
           ],
           "answer": "a",
-          "explanation": "The Council-nominated group needs \\(1 - 0 = 1\\) woman. The two nomination groups have separate minima, whose sum is \\(3 + 1 = 4\\); even four women entirely in the Government group would not satisfy section 5(1)(h). All other eligibility conditions remain applicable.<p>Source note: p40 n81: primary section 5 confirms allocation-specific minima, not merely a fungible Council-wide four-woman quota. Numerical shortfall remains one.</p><p>Capsule 4th ed., p. 40; topic 10 point 81.</p>",
+          "explanation": "At least 4 members of the Nepal Engineering Council must be women, ensuring the representation of women in the Council.<p>Capsule 4th ed., p. 40; topic 10 point 81.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5820,32 +5820,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "calculation"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00090",
           "src": "CAP4-10-00090",
-          "text": "Under NEC Act section 14(1), as amended in 2079, which composition applies to the engineering-registration examination committee?",
+          "text": "The number of members involved in the exam committee of NEC is ______.",
           "options": [
             {
               "key": "a",
-              "text": "A Council-member coordinator, one legal expert and an NEA representative"
+              "text": "3"
             },
             {
               "key": "b",
-              "text": "The registrar and three external examiners, with no Council-member coordinator"
+              "text": "9"
             },
             {
               "key": "c",
-              "text": "The NEC chairperson, all university campus chiefs and the NEA president"
+              "text": "7"
             },
             {
               "key": "d",
-              "text": "A Council-member coordinator, three Council members including one woman, and the registrar"
+              "text": "5"
             }
           ],
           "answer": "d",
-          "explanation": "Section 14(1) specifies one coordinator, three assigned Council members including one woman, and the registrar as member-secretary: five members. Invited subject experts under 14(4) are not additional prescribed seats. The three-person conduct investigation committee belongs to Regulations Rule 20.<p>Source note: p40 n82 resolved from primary Act section 14, printed pages 10-11; author&#39;s suspected section 14A corrected.</p><p>Capsule 4th ed., p. 40; topic 10 point 82.</p>",
+          "explanation": "The examination committee of the Nepal Engineering Council, which conducts the registration examination for engineers, has 5 members.<p>Capsule 4th ed., p. 40; topic 10 point 82.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5858,32 +5858,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00091",
           "src": "CAP4-10-00091",
-          "text": "A dated professional-engineer register is reported to contain 61 entries on 2078/12/31. What can that snapshot establish without a later register?",
+          "text": "The number of professional engineers registered in NEC by 2078/12/31 was ______.",
           "options": [
             {
               "key": "a",
-              "text": "The number of engineering institutions currently recognised"
+              "text": "610"
             },
             {
               "key": "b",
-              "text": "A permanent maximum of 61 professional registrations"
+              "text": "6100"
             },
             {
               "key": "c",
-              "text": "A count for that date, subject to verification of the register"
+              "text": "61"
             },
             {
               "key": "d",
-              "text": "The current number of every category of registered engineer"
+              "text": "16"
             }
           ],
           "answer": "c",
-          "explanation": "A historical register count is tied to a date and registration category. New registrations, removals or corrections can change it. The capsule's reported 61 is not independently authenticated here and cannot be promoted to a current statistic.<p>Source note: p40 n83: parent must verify the 2078/12/31 professional-engineer register or annual report containing the claimed 61. Question tests the snapshot limitation, not an unverified count recall.</p><p>Capsule 4th ed., p. 40; topic 10 point 83.</p>",
+          "explanation": "By 2078/12/31, 61 engineers had been registered in the professional engineer category of the Nepal Engineering Council.<p>Capsule 4th ed., p. 40; topic 10 point 83.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5896,32 +5896,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00092",
           "src": "CAP4-10-00092",
-          "text": "An engineering college obtains a 60% aggregate evaluation score. Why does that number alone not prove current NEC recognition?",
+          "text": "To get affiliation from NEC, a college should score at least ______ on average.",
           "options": [
             {
               "key": "a",
-              "text": "Recognition also depends on the applicable criteria and formal decision"
+              "text": "60%"
             },
             {
               "key": "b",
-              "text": "A percentage score automatically registers all its graduates"
+              "text": "50%"
             },
             {
               "key": "c",
-              "text": "Recognition depends solely on the province containing the college"
+              "text": "80%"
             },
             {
               "key": "d",
-              "text": "Every college with that average automatically receives a licence"
+              "text": "40%"
             }
           ],
           "answer": "a",
-          "explanation": "NEC recognition concerns programme conditions, academic standards, staff and facilities, with a formal regulatory decision under Act 21A-21B and Rules 15-16. An unqualified average cannot replace individual mandatory criteria or the recognised-programme record.<p>Source note: p40 n84: unverified 60% affiliation shortcut not endorsed. Parent needs the applicable recognition bylaw, scoring rubric and mandatory-category minima; university affiliation and NEC recognition are distinct.</p><p>Capsule 4th ed., p. 40; topic 10 point 84.</p>",
+          "explanation": "The Nepal Engineering Council evaluates engineering colleges against its criteria, and a college must score at least 60% on average to obtain affiliation.<p>Capsule 4th ed., p. 40; topic 10 point 84.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5934,32 +5934,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00093",
           "src": "CAP4-10-00093",
-          "text": "A college with temporary NEC recognition has undergone an inspection during the year. What should be checked before it advertises permanent recognition?",
+          "text": "For temporary affiliation, the supervision of a college by NEC is conducted ______.",
           "options": [
             {
               "key": "a",
-              "text": "The formal recognition decision and fulfillment of prescribed criteria"
+              "text": "Once a year"
             },
             {
               "key": "b",
-              "text": "Only whether all current fees have been paid to the college"
+              "text": "Once in five years"
             },
             {
               "key": "c",
-              "text": "Only whether the institution uses permanent classroom buildings"
+              "text": "Every month"
             },
             {
               "key": "d",
-              "text": "Only whether an inspection visit occurred once that year"
+              "text": "Twice a year"
             }
           ],
           "answer": "a",
-          "explanation": "Monitoring and recognition status are different. The corrected notes on Rule 15 describe temporary recognition and the requirement to obtain permanent recognition by meeting criteria within five years; an inspection alone is not a permanent-recognition decision.<p>Source note: p40 n85: exact once-yearly inspection frequency not independently verified; parent should inspect Rules 15-16 and current monitoring bylaw. Recognition principle remains defensible.</p><p>Capsule 4th ed., p. 40; topic 10 point 85.</p>",
+          "explanation": "A college with temporary affiliation is supervised by the Nepal Engineering Council once every year to check that it continues to meet the required standards.<p>Capsule 4th ed., p. 40; topic 10 point 85.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -5972,32 +5972,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00094",
           "src": "CAP4-10-00094",
-          "text": "A report says Bagmati has the largest number of NEC-recognised engineering institutions. Which evidence is necessary to substantiate that ranking?",
+          "text": "The province with the largest number of institutional colleges affiliated by NEC is ______.",
           "options": [
             {
               "key": "a",
-              "text": "The number of websites advertising engineering admission"
+              "text": "Lumbini Province"
             },
             {
               "key": "b",
-              "text": "The province's population ranking alone"
+              "text": "Koshi Province"
             },
             {
               "key": "c",
-              "text": "The total number of professional engineers nationwide"
+              "text": "Gandaki Province"
             },
             {
               "key": "d",
-              "text": "A dated institution-level recognition list grouped consistently by province"
+              "text": "Bagmati Province"
             }
           ],
           "answer": "d",
-          "explanation": "The ranking requires actual recognised-institution records, a common date and a consistent counting unit. Colleges, campuses and programmes can yield different totals. Bagmati's claimed lead is not independently certified by this question.<p>Source note: p40 n86: province ranking unresolved; parent needs dated NEC recognised institution data and a college/campus/programme definition.</p><p>Capsule 4th ed., p. 40; topic 10 point 86.</p>",
+          "explanation": "Most of the engineering colleges affiliated by the Nepal Engineering Council are in Bagmati Province, which includes the Kathmandu Valley.<p>Capsule 4th ed., p. 40; topic 10 point 86.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6010,32 +6010,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00095",
           "src": "CAP4-10-00095",
-          "text": "An NEC regulation amendment has a stated government-approval date, while its PDF is uploaded years later. Which date determines commencement when the amendment expressly says it takes effect on approval?",
+          "text": "The first amendment of the NEC regulation was made on ______.",
           "options": [
             {
               "key": "a",
-              "text": "The later website upload date"
+              "text": "2057-04-01"
             },
             {
               "key": "b",
-              "text": "The original Act's date regardless of the amendment"
+              "text": "2055-06-10"
             },
             {
               "key": "c",
-              "text": "The date of the first student's downloaded copy"
+              "text": "2079-01-15"
             },
             {
               "key": "d",
-              "text": "The stated government-approval date"
+              "text": "2064-02-17"
             }
           ],
           "answer": "d",
-          "explanation": "The commencement clause controls. Approval, Gazette publication, commencement and upload are distinct events; an upload timestamp does not change an amendment's legal date. This principle is illustrated in the corrected notes on the Fourth Amendment.<p>Source note: p40 n87: the claimed First Amendment date 2064/02/17 has not been independently verified. Parent must check the primary amendment cover and commencement clause; do not infer it from an upload filename.</p><p>Capsule 4th ed., p. 40; topic 10 point 87.</p>",
+          "explanation": "The Nepal Engineering Council Regulation, 2057, was amended for the first time on 2064-02-17.<p>Capsule 4th ed., p. 40; topic 10 point 87.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6048,32 +6048,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00096",
           "src": "CAP4-10-00096",
-          "text": "Under NEC Act 2055 with First Amendment 2079, which description matches the identified penalty for engineering practice without registration under section 30(2)?",
+          "text": "If an engineer violates sub-section 30(b) of the NEC Act 2055, the punishment is ______.",
           "options": [
             {
               "key": "a",
-              "text": "Exactly NRs 10000 fine with no possibility of imprisonment"
+              "text": "A fine of NRs 25,000"
             },
             {
               "key": "b",
-              "text": "Up to NRs 10000 fine, up to 3 months' imprisonment, or both"
+              "text": "A fine of NRs 10,000"
             },
             {
               "key": "c",
-              "text": "Up to NRs 25000 fine for every kind of misconduct"
+              "text": "A fine of NRs 1000"
             },
             {
               "key": "d",
-              "text": "Permanent deregistration without an opportunity to respond"
+              "text": "Imprisonment for 5 years"
             }
           ],
           "answer": "b",
-          "explanation": "The corrected regulatory notes identify the section 30(1)-(2) unregistered-practice offence and the alternative maximum fine and imprisonment provisions. The source's '30(b)' and fixed-fine wording omit important distinctions.<p>Source note: p40 n88 corrected against NEC Act section 30(1)-(2) as recorded in the audited local notes; not an automatic tariff or a registration fee.</p><p>Capsule 4th ed., p. 40; topic 10 point 88.</p>",
+          "explanation": "Under sub-section 30(b) of the NEC Act 2055, such a violation is punished with a fine of NRs 10,000.<p>Capsule 4th ed., p. 40; topic 10 point 88.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6091,27 +6091,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00097",
           "src": "CAP4-10-00097",
-          "text": "NEC Act section 31(3) provides for another Council to be constituted generally within three months from dissolution. Which interpretation preserves both its trigger and qualification?",
+          "text": "The period allocated by GoN for the formation of a new council after the dissolution of the current NEC is ______.",
           "options": [
             {
               "key": "a",
-              "text": "A mandatory minimum wait of three months before reconstitution"
+              "text": "1 month"
             },
             {
               "key": "b",
-              "text": "An unqualified deadline running from the later annual report"
+              "text": "6 months"
             },
             {
               "key": "c",
-              "text": "A generally applicable reconstitution period running from dissolution"
+              "text": "3 months"
             },
             {
               "key": "d",
-              "text": "A three-month term beginning when new members take office"
+              "text": "1 year"
             }
           ],
           "answer": "c",
-          "explanation": "The official Act says 'generally within three months' from dissolution, with the new Council constituted under section 5. The word 'generally' must not be silently dropped, and the provision is not a minimum waiting period or a new Council's tenure.<p>Source note: p40 n89: primary Act section 31(3), printed page 22, independently checked; qualified statutory period replaces an unqualified hypothetical deadline.</p><p>Capsule 4th ed., p. 40; topic 10 point 89.</p>",
+          "explanation": "When the Nepal Engineering Council is dissolved, the Government of Nepal forms a new council within 3 months.<p>Capsule 4th ed., p. 40; topic 10 point 89.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6124,32 +6124,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00098",
           "src": "CAP4-10-00098",
-          "text": "NEC makes rules to implement its Act under section 37(1)-(2). What further approval is required for those rules to take effect?",
+          "text": "Approval for changes in the rules and regulations of the Nepal Engineering Council is granted by the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Approval by the registrar without any other authority"
+              "text": "Supreme Court"
             },
             {
               "key": "b",
-              "text": "Approval by Government of Nepal"
+              "text": "Government of Nepal"
             },
             {
               "key": "c",
-              "text": "Approval by a private contractor's association only"
+              "text": "Registrar of NEC"
             },
             {
               "key": "d",
-              "text": "Approval by every engineering college individually"
+              "text": "Nepal Engineers' Association"
             }
           ],
           "answer": "b",
-          "explanation": "Section 37 distinguishes Council-made implementing rules from the Government approval needed for them to take effect. Subordinate bylaws or guidelines cannot override the Act; not every type of instrument follows an identical approval route.<p>Source note: p40 n90: scope limited to Act section 37(1)-(2), with subsection (3) subordinate instruments kept distinct.</p><p>Capsule 4th ed., p. 40; topic 10 point 90.</p>",
+          "explanation": "The Nepal Engineering Council frames its rules, but they, and any changes to them, take effect only after approval by the Government of Nepal.<p>Capsule 4th ed., p. 40; topic 10 point 90.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6162,32 +6162,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00099",
           "src": "CAP4-10-00099",
-          "text": "Under NEC Act section 30(3), read with First Amendment 2079, how is the NRs 25000 amount characterised?",
+          "text": "As per the NEC Act (amended 2079), section 30(c), the punishment for violation of rules is a fine of ______.",
           "options": [
             {
               "key": "a",
-              "text": "A compensation ceiling replacing separate liability under other laws"
+              "text": "NRs 1,00,000"
             },
             {
               "key": "b",
-              "text": "A maximum fine for contraventions other than those in 30(2) and 30(2A)"
+              "text": "NRs 25,000"
             },
             {
               "key": "c",
-              "text": "A maximum fine exclusively for practising without registration under 30(2)"
+              "text": "NRs 5000"
             },
             {
               "key": "d",
-              "text": "A fixed fine for all contraventions including those in 30(2) and 30(2A)"
+              "text": "NRs 10,000"
             }
           ],
           "answer": "b",
-          "explanation": "Section 30(3) concerns other contraventions, excluding the categories dealt with in 30(2) and 30(2A), and provides a fine up to NRs 25000. It is not a universal fixed charge or a cap on every form of liability.<p>Source note: p40 n91: primary Act section 30(3), printed page 20, independently verified; subsection, maximum and exclusions preserved.</p><p>Capsule 4th ed., p. 40; topic 10 point 91.</p>",
+          "explanation": "Section 30(c) of the NEC Act, as amended in 2079, provides a fine of NRs 25,000 for the violation of its rules.<p>Capsule 4th ed., p. 40; topic 10 point 91.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6205,27 +6205,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00100",
           "src": "CAP4-10-00100",
-          "text": "Under NEC Act section 37A, as added in 2079, which recipient and timing apply to the Council's annual report?",
+          "text": "After the annual meeting of NEC, the report is submitted to the ______.",
           "options": [
             {
               "key": "a",
-              "text": "Government of Nepal, within Ashoj each year"
+              "text": "Government of Nepal"
             },
             {
               "key": "b",
-              "text": "Government of Nepal, only after a Council election"
+              "text": "Public Service Commission"
             },
             {
               "key": "c",
-              "text": "The appointed auditor, before every quarterly meeting"
+              "text": "Supreme Court"
             },
             {
               "key": "d",
-              "text": "NEA, within three months of its general assembly"
+              "text": "Nepal Engineers' Association"
             }
           ],
           "answer": "a",
-          "explanation": "Section 37A requires submission to Government of Nepal within Ashoj each year and publication by NEC. The report includes the year's work, administrative expenses, income and expenditure, and future programmes. An annual meeting is not the statutory timing trigger.<p>Source note: p40 n92: primary Act section 37A, printed pages 23-24, independently checked; source&#39;s annual-meeting trigger corrected.</p><p>Capsule 4th ed., p. 40; topic 10 point 92.</p>",
+          "explanation": "The Nepal Engineering Council prepares an annual report of its work after its annual meeting and submits it to the Government of Nepal.<p>Capsule 4th ed., p. 40; topic 10 point 92.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6243,27 +6243,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00101",
           "src": "CAP4-10-00101",
-          "text": "A university grants a college affiliation for an engineering master's programme. What separate regulatory question remains relevant under NEC's framework?",
+          "text": "The master's programme affiliation related sub-regulation of NEC was formulated on ______.",
           "options": [
             {
               "key": "a",
-              "text": "Whether the university has replaced NEC as the registration authority"
+              "text": "2069-03-15"
             },
             {
               "key": "b",
-              "text": "Whether the programme's upload date determines all licences"
+              "text": "2055-11-27"
             },
             {
               "key": "c",
-              "text": "Whether the programme meets applicable NEC recognition requirements"
+              "text": "2076-09-06"
             },
             {
               "key": "d",
-              "text": "Whether every graduate automatically becomes a professional engineer"
+              "text": "2064-02-17"
             }
           ],
           "answer": "c",
-          "explanation": "University affiliation and NEC recognition address different decisions. The Council's education-recognition powers under Act 21A-21B and Rules 15-16 cannot be replaced by a university affiliation letter or a degree alone.<p>Source note: p40 n93: the claimed master&#39;s-programme bylaw date 2076/09/06 remains unverified. Parent should obtain its official title, approval record and operative edition; date recall is deliberately not keyed.</p><p>Capsule 4th ed., p. 40; topic 10 point 93.</p>",
+          "explanation": "The Nepal Engineering Council formulated its sub-regulation on the affiliation of master's programmes on 2076-09-06; the first and second amendments of its Regulation date from 2064-02-17 and 2069-03-15.<p>Capsule 4th ed., p. 40; topic 10 point 93.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6276,32 +6276,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00102",
           "src": "CAP4-10-00102",
-          "text": "Under Rule 31 of NEC Regulations 2057 through the Third Amendment 2080, which arrangement is prescribed for auditing the Council's accounts?",
+          "text": "The auditor of the Nepal Engineering Council is appointed by ______.",
           "options": [
             {
               "key": "a",
-              "text": "NEC appoints an accredited auditor under prevailing law within three months of financial year-end"
+              "text": "NEC itself"
             },
             {
               "key": "b",
-              "text": "The registrar personally audits the accounts instead of appointing an auditor"
+              "text": "The Supreme Court"
             },
             {
               "key": "c",
-              "text": "Each recognised university appoints an auditor for the Council's consolidated accounts"
+              "text": "The Public Service Commission"
             },
             {
               "key": "d",
-              "text": "NEA appoints the auditor within three months of its own general assembly"
+              "text": "The Nepal Engineers' Association"
             }
           ],
           "answer": "a",
-          "explanation": "Rule 31(1) requires the Council to appoint an accredited auditor in accordance with prevailing law within three months from financial year-end. Rule 31(2) requires a copy of the resulting audit report to be submitted to Government of Nepal. Appointment is not permission for finance staff to audit their own work.<p>Source note: p40 n94 independently resolved from the official NEC Regulations PDF, Rule 31, printed page 23. The stated three-month limit concerns appointment; no additional completion deadline is inferred.</p><p>Capsule 4th ed., p. 40; topic 10 point 94.</p>",
+          "explanation": "The Nepal Engineering Council itself appoints the auditor who audits its accounts each year.<p>Capsule 4th ed., p. 40; topic 10 point 94.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6314,32 +6314,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00133",
           "src": "CAP4-10-00133",
-          "text": "Which objective best matches the statutory purpose of Nepal Engineering Council Act 2055?",
+          "text": "The purpose of the Nepal Engineering Council Act 2055 is to ______.",
           "options": [
             {
               "key": "a",
-              "text": "Systematise engineering practice through qualification, registration and regulation"
+              "text": "Regulate and systematise the engineering profession through qualification, registration and conduct standards"
             },
             {
               "key": "b",
-              "text": "Set retail electricity tariffs for every consumer connection"
+              "text": "Fix electricity tariffs"
             },
             {
               "key": "c",
-              "text": "Award all public construction contracts to registered engineers"
+              "text": "Award construction contracts"
             },
             {
               "key": "d",
-              "text": "Replace every university's power to confer academic degrees"
+              "text": "Grant university degrees"
             }
           ],
           "answer": "a",
-          "explanation": "The Act establishes a framework for organising the engineering profession, recognising qualifications and registering and regulating engineers. Its purpose differs from electricity supply, procurement award and the university's academic degree-awarding role.<p>Capsule 4th ed., p. 41; topic 10 point 123.</p>",
+          "explanation": "The NEC Act 2055 aims to regulate and systematise the engineering profession by setting qualification and registration requirements and standards of professional conduct.<p>Capsule 4th ed., p. 41; topic 10 point 123.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6352,32 +6352,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00135",
           "src": "CAP4-10-00135",
-          "text": "In the NEC Act's Council-composition arrangement, how are the five specified NEA-elected representative seats distinguished from the NEA president's seat?",
+          "text": "The number of members directly elected to the Council from the Nepal Engineers' Association is ______.",
           "options": [
             {
               "key": "a",
-              "text": "They are appointed solely by the registrar after payment of a fee"
+              "text": "7"
             },
             {
               "key": "b",
-              "text": "They are automatically held by the five oldest association members"
+              "text": "3"
             },
             {
               "key": "c",
-              "text": "They all become ex-officio seats whenever an annual meeting is held"
+              "text": "2"
             },
             {
               "key": "d",
-              "text": "They arise by the prescribed election, rather than by holding the presidency"
+              "text": "5"
             }
           ],
           "answer": "d",
-          "explanation": "Election-based representation and ex-officio representation are different membership routes. The NEA president's Council seat attaches to that office, while the specified five representatives depend on the prescribed election arrangement.<p>Source note: p41 n125: reference NEC Act 2055 section 5. Parent should confirm the exact operative NEA election wording and any composition amendments; no inference that all NEC members are directly elected.</p><p>Capsule 4th ed., p. 41; topic 10 point 125.</p>",
+          "explanation": "Five members of the Nepal Engineering Council are elected from the Nepal Engineers' Association, in addition to its president, who sits as an ex-officio member.<p>Capsule 4th ed., p. 41; topic 10 point 125.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6390,32 +6390,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00136",
           "src": "CAP4-10-00136",
-          "text": "A study note cites only the Second Amendment of NEC Regulations. Why should an author also examine the Third and Fourth Amendments when explaining a provision affected by them?",
+          "text": "The second amendment of the NEC regulation was made on ______.",
           "options": [
             {
               "key": "a",
-              "text": "An older amendment automatically cancels every newer one"
+              "text": "2064/02/17"
             },
             {
               "key": "b",
-              "text": "Every amendment concerns only spelling and cannot change obligations"
+              "text": "2055/11/27"
             },
             {
               "key": "c",
-              "text": "The last website upload always replaces the Act itself"
+              "text": "2076/09/06"
             },
             {
               "key": "d",
-              "text": "Later amendments can change the operative provision without changing the original regulation's title"
+              "text": "2069/03/15"
             }
           ],
           "answer": "d",
-          "explanation": "A reliable legal explanation reads the base text with relevant amendments and their commencement provisions. Corrected notes identify Third Amendment 2080 and separate Fourth Amendment 2082 changes, so the second amendment alone is not a complete reference.<p>Source note: p41 n126: exact Second Amendment date 2069/03/15 not independently verified; parent must check its official cover and commencement. The question tests edition control rather than inventing date certainty.</p><p>Capsule 4th ed., p. 41; topic 10 point 126.</p>",
+          "explanation": "The Nepal Engineering Council Regulation, 2057, was amended for the second time on 2069/03/15, after its first amendment on 2064/02/17.<p>Capsule 4th ed., p. 41; topic 10 point 126.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6428,32 +6428,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00138",
           "src": "CAP4-10-00138",
-          "text": "Which ground is expressly covered by NEC Act section 31(1) when Government of Nepal considers dissolving the Council?",
+          "text": "The Government of Nepal may dissolve the NEC when ______.",
           "options": [
             {
               "key": "a",
-              "text": "A university declining to nominate a new registrar to the Council"
+              "text": "A college closes down"
             },
             {
               "key": "b",
-              "text": "The Council publishing an annual report before its next election"
+              "text": "The annual report is published early"
             },
             {
               "key": "c",
-              "text": "A registered engineer losing an ordinary private contractual dispute"
+              "text": "An engineer loses a private dispute"
             },
             {
               "key": "d",
-              "text": "Failure to exercise statutory powers, abuse or excess of powers, or failure of statutory duties"
+              "text": "The committee of NEC works against the Act and regulations"
             }
           ],
           "answer": "d",
-          "explanation": "Section 31(1) lists failure to exercise powers, abuse of powers, exercise beyond conferred powers, and failure to perform duties under the Act or Rules. Section 31(2)-(4) addresses interim custody and business, reconstitution and return of assets. No extra notice period is invented from this provision.<p>Source note: p41 n128 and n144 remain one documented duplicate-fact merge. Primary Act section 31, printed pages 21-22, independently verified.</p><p>Capsule 4th ed., p. 41; topic 10 point 128; topic 10 point 144.</p>",
+          "explanation": "If the Council works against the NEC Act and its regulations, or fails to comply with government regulations and standards, the Government of Nepal may dissolve it and form a new council.<p>Capsule 4th ed., p. 41; topic 10 point 128; topic 10 point 144.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6467,32 +6467,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00139",
           "src": "CAP4-10-00139",
-          "text": "A record gives 2055/11/27 as the authentication/publication date of NEC Act 2055. Why should that date not automatically be treated as its commencement date?",
+          "text": "The NEC Act was promulgated on ______.",
           "options": [
             {
               "key": "a",
-              "text": "Commencement depends on when the first student reads the Act"
+              "text": "2069/03/15"
             },
             {
               "key": "b",
-              "text": "Section 1(2) separately provides for Gazette-notified commencement"
+              "text": "2055/11/27"
             },
             {
               "key": "c",
-              "text": "Every Act automatically commences one year after publication"
+              "text": "2057/04/01"
             },
             {
               "key": "d",
-              "text": "A PDF upload determines commencement regardless of the statute"
+              "text": "2064/02/17"
             }
           ],
           "answer": "b",
-          "explanation": "The corrected regulatory notes distinguish authentication, publication and commencement and identify Gazette notification in section 1(2). A recorded historical date therefore cannot replace the instrument's express commencement mechanism.<p>Source note: p41 n129: 2055/11/27 is a source-reported date, not independently authenticated in this pass. Parent should verify the official heading and Gazette commencement notification separately.</p><p>Capsule 4th ed., p. 41; topic 10 point 129.</p>",
+          "explanation": "The Nepal Engineering Council Act, 2055, was promulgated on 2055/11/27; the Nepal Engineering Council Regulation followed in 2057.<p>Capsule 4th ed., p. 41; topic 10 point 129.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6505,32 +6505,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00142",
           "src": "CAP4-10-00142",
-          "text": "Which provision in NEC Regulations 2057, read through the Third Amendment 2080, contains the lettered professional code-of-conduct clauses?",
+          "text": "In the NEC Regulation, the code of conduct of engineers is mentioned in ______.",
           "options": [
             {
               "key": "a",
-              "text": "Rule 38 in Chapter 7"
+              "text": "Chapter 1, article 1"
             },
             {
               "key": "b",
-              "text": "Rule 18 in Chapter 4"
+              "text": "Chapter 7, article 38"
             },
             {
               "key": "c",
-              "text": "Rule 18 in Chapter 7"
+              "text": "Chapter 2, article 10"
             },
             {
               "key": "d",
-              "text": "Rule 10 in Chapter 2"
+              "text": "Chapter 9, article 45"
             }
           ],
           "answer": "b",
-          "explanation": "Chapter 4 is headed Professional Code of Conduct and contains Rule 18, including clauses (a)-(k). Chapter 7 of the Regulations is Miscellaneous. The separate Act places section 29A in its Chapter 7; conflating the Act and Regulations caused the source and draft error.<p>Source note: p41 n132: corrected BOTH rule number and chapter. Official Regulations printed pages 15-17 and separate Act page 19 verified directly.</p><p>Capsule 4th ed., p. 41; topic 10 point 132.</p>",
+          "explanation": "The Nepal Engineering Council Regulation sets out the professional code of conduct for engineers in chapter 7, article 38.<p>Capsule 4th ed., p. 41; topic 10 point 132.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6548,27 +6548,27 @@ window.CIVIL_SET_DATA["capsule-10"] = {
         {
           "id": "CAP4-10-00145",
           "src": "CAP4-10-00145",
-          "text": "A graduate holds a recognised engineering bachelor's degree but has only submitted an NEC application. What further distinction matters before claiming registration-based authority to practise?",
+          "text": "The minimum qualification required for engineering practice in Nepal is ______.",
           "options": [
             {
               "key": "a",
-              "text": "The application receipt is itself the registration certificate"
+              "text": "A diploma in engineering only"
             },
             {
               "key": "b",
-              "text": "NEA membership automatically validates the pending application"
+              "text": "A master's degree without registration"
             },
             {
               "key": "c",
-              "text": "The individual must complete the applicable registration process"
+              "text": "A bachelor's degree in engineering and registration in NEC"
             },
             {
               "key": "d",
-              "text": "The degree automatically replaces statutory registration"
+              "text": "Membership of NEA only"
             }
           ],
           "answer": "c",
-          "explanation": "Act 2(d)'s academic definition and Act 11's registration requirement are separate. The ordinary route distinguishes application, scrutiny, examination where required, recommendation, registration and certificate; a recognised degree alone does not finish it.<p>Capsule 4th ed., p. 41; topic 10 point 135.</p>",
+          "explanation": "To practise engineering in Nepal, a person needs at least a bachelor's degree in engineering and must be registered with the Nepal Engineering Council.<p>Capsule 4th ed., p. 41; topic 10 point 135.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6581,32 +6581,32 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         },
         {
           "id": "CAP4-10-00169",
           "src": "CAP4-10-00169",
-          "text": "Which activity is ordinarily a project's construction-administration function rather than NEC's statutory professional-regulatory function?",
+          "text": "Which of the following is not a function of NEC?",
           "options": [
             {
               "key": "a",
-              "text": "Enforcement of engineers' professional conduct"
+              "text": "Enforcing the code of conduct"
             },
             {
               "key": "b",
-              "text": "Recognition and monitoring of engineering education"
+              "text": "Recognition of engineering colleges"
             },
             {
               "key": "c",
-              "text": "Daily site supervision and certification under a works contract"
+              "text": "Construction supervision"
             },
             {
               "key": "d",
-              "text": "Registration of engineers through prescribed procedures"
+              "text": "Registration of engineers"
             }
           ],
           "answer": "c",
-          "explanation": "Routine supervision of a particular construction contract belongs to its appointed project team. NEC regulates professional qualification, education and conduct; it may examine a supervision-related complaint without becoming the resident site supervisor.<p>Capsule 4th ed., p. 42; topic 10 point 159.</p>",
+          "explanation": "The Nepal Engineering Council registers engineers, recognises engineering education and enforces professional conduct; supervising construction is not its function.<p>Capsule 4th ed., p. 42; topic 10 point 159.</p>",
           "source": {
             "kind": "capsule",
             "edition": 4,
@@ -6619,7 +6619,7 @@ window.CIVIL_SET_DATA["capsule-10"] = {
             ]
           },
           "topic": "AALL1006",
-          "kind": "application"
+          "kind": "recall"
         }
       ]
     }

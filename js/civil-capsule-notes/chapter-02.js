@@ -45,7 +45,7 @@
                 ]
               },
               {
-                "html": "Voids of 40 cm<sup>3</sup> containing 10 cm<sup>3</sup> of air have a degree of saturation of 30/40 = 75%; the 25% air content is a different ratio.",
+                "html": "The ratio of the volume of water present in a given soil mass to the total volume of its voids is known as degree of saturation.",
                 "sources": [
                   {
                     "id": "CAP4-02-00004",
@@ -54,7 +54,7 @@
                 ]
               },
               {
-                "html": "With \\(e = 0.81\\), \\(G_s = 2.70\\) and \\(w = 0.30\\), the identity \\(Se = wG_s\\) gives \\(S = 1.00\\): a degree of saturation of 100%.",
+                "html": "The void ratio of a soil becomes equal to the product of its water content and specific gravity when the soil is fully saturated.",
                 "sources": [
                   {
                     "id": "CAP4-02-00020",
@@ -116,7 +116,7 @@
             },
             "points": [
               {
-                "html": "A 1000 cm<sup>3</sup> core cutter holding 1800 g of moist soil at 20% water content gives a bulk density of 1.80 and a dry density of 1.50 g/cm<sup>3</sup>.",
+                "html": "The core cutter method is used to measure the in-situ density of soil.",
                 "sources": [
                   {
                     "id": "CAP4-02-00019",
@@ -125,7 +125,7 @@
                 ]
               },
               {
-                "html": "In a density-bottle test, 50 g of dry solids displacing 20 g of water give a specific gravity of soil solids of 50/20 = 2.50.",
+                "html": "The density bottle method is used to measure the specific gravity of soil.",
                 "sources": [
                   {
                     "id": "CAP4-02-00024",
@@ -158,7 +158,7 @@
             "moreHtml": "<p>Archived IS 2720 Part 5:1985 clause 7.3 sets the endpoint for a thread that crumbles once it has been rolled down to 3 mm diameter. It accepts crumbling at a diameter above 3 mm when the thread has just been rolled to 3 mm, and the operator must not force failure at exactly that size. Other standards can use other nominal diameters, and no current adoption of this edition is implied.</p>",
             "points": [
               {
-                "html": "As water content rises, a remoulded fine-grained soil passes through the solid, semi-solid, plastic and liquid states, separated by the shrinkage, plastic and liquid limits.",
+                "html": "Soil exists in four states of consistency.",
                 "sources": [
                   {
                     "id": "CAP4-02-00015",
@@ -167,7 +167,7 @@
                 ]
               },
               {
-                "html": "Four consistency states are not four phases: an unsaturated soil described as plastic has three constituents in its phase diagram, solids, water and air.",
+                "html": "As the water content increases, soil passes through the solid, semi-solid, plastic and liquid states, in that order.",
                 "sources": [
                   {
                     "id": "CAP4-02-00016",
@@ -176,7 +176,7 @@
                 ]
               },
               {
-                "html": "The water content at which a drying pat stops shrinking, although water keeps leaving, is the shrinkage limit.",
+                "html": "The maximum water content at which a reduction in water content does not cause a decrease in volume of a soil mass is known as the shrinkage limit.",
                 "sources": [
                   {
                     "id": "CAP4-02-00008",
@@ -185,7 +185,7 @@
                 ]
               },
               {
-                "html": "The water content at the prescribed crumbling endpoint of a thread rolled to 3 mm is the plastic limit, the boundary between semi-solid and plastic behaviour.",
+                "html": "The minimum water content at which the soil just begins to crumble when rolled into threads 3 mm in diameter is known as the plastic limit.",
                 "sources": [
                   {
                     "id": "CAP4-02-00170",
@@ -219,7 +219,7 @@
             "html": "<p>The 75 µm sieve (0.075 mm, No. 200) splits a soil into its coarse fraction and its <em>fines</em>. Fines are the material that passes this sieve, not the material it retains.</p><p>USCS classifies the whole soil by mass fraction, never by a single grain. When more than half of the dry mass passes the sieve the soil is fine-grained; otherwise it is coarse-grained. A sample with 62% passing is therefore fine-grained, and its fines are the passing portion.</p><p>A sieve result measures how much fine material there is, not how it behaves. A sand with 8% passing has a known fines content, but only plasticity testing of those fines shows whether they are silty or clayey. For an intermediate fines content like this, USCS gives a dual symbol that reflects both the grading of the sand and the plasticity of its fines.</p><p>Size names and behavioural symbols are also separate ideas. On an IS-style scale that puts the sand–fines boundary at 0.075 mm, a 0.06 mm particle is silt-sized. That name does not establish a USCS M symbol, which depends on plasticity and organic identification, and other systems place their size boundaries elsewhere.</p>",
             "points": [
               {
-                "html": "USCS calls a soil fine-grained when more than half its dry mass passes the 0.075 mm sieve; with 62% passing it is fine-grained, and the fines are the passing fraction.",
+                "html": "The sieve size that separates coarse-grained soil from fine-grained soil is 75 microns.",
                 "sources": [
                   {
                     "id": "CAP4-02-00011",
@@ -228,7 +228,7 @@
                 ]
               },
               {
-                "html": "A sieve result of 8% passing 75 µm gives the amount of fines in a sand, but not whether those fines are silty or clayey.",
+                "html": "The sieve size typically used to distinguish sand from silt is 75 micrometres.",
                 "sources": [
                   {
                     "id": "CAP4-02-00023",
@@ -237,7 +237,7 @@
                 ]
               },
               {
-                "html": "On a scale with a 0.075 mm sand–fines boundary a 0.06 mm grain is silt-sized, but that size name does not establish a USCS M symbol.",
+                "html": "The maximum size of silt grains is about 0.075 mm.",
                 "sources": [
                   {
                     "id": "CAP4-02-00018",
@@ -295,7 +295,7 @@
                 ]
               },
               {
-                "html": "A clean sand with \\(C_u = 7\\) but \\(C_c = 0.6\\) is SP, because the curvature requirement fails even though the uniformity requirement is met.",
+                "html": "The value of the coefficient of uniformity for well-graded sand is greater than 6.",
                 "sources": [
                   {
                     "id": "CAP4-02-00013",
@@ -304,7 +304,7 @@
                 ]
               },
               {
-                "html": "Sizes of 0.10, 0.40 and 0.80 mm for \\(D_{10}\\), \\(D_{30}\\) and \\(D_{60}\\) give \\(C_c = 2\\) and \\(C_u = 8\\), so the clean sand is SW.",
+                "html": "The coefficient of curvature for well-graded soil lies between 1 and 3.",
                 "sources": [
                   {
                     "id": "CAP4-02-00014",
@@ -345,7 +345,7 @@
             },
             "points": [
               {
-                "html": "An inorganic fine soil with LL = 60% and PI = 20% plots below the A-line value of 29.2% and has LL above 50%, so it classifies as MH.",
+                "html": "The soils which plot below the A-line of the plasticity chart are silts and organic soils of low and high plasticity.",
                 "sources": [
                   {
                     "id": "CAP4-02-00005",
@@ -354,7 +354,7 @@
                 ]
               },
               {
-                "html": "A below-A-line soil earns an organic symbol only with organic-identification evidence, including the prescribed comparison of liquid limits before and after oven drying.",
+                "html": "On the plasticity chart, the soil group OH plots below the A-line.",
                 "sources": [
                   {
                     "id": "CAP4-02-00006",
@@ -384,7 +384,7 @@
             },
             "points": [
               {
-                "html": "A predominantly sandy soil with 20% fines whose PI of 15% plots above the A-line is SC: sand with clayey, plastic fines.",
+                "html": "In soil classification, SC means sand with plastic fines (clayey sand).",
                 "sources": [
                   {
                     "id": "CAP4-02-00003",
@@ -393,7 +393,7 @@
                 ]
               },
               {
-                "html": "Soil of 70% sand, 5% gravel and 25% inorganic fines with LL = 40% and PI = 20%, above the 14.6% A-line value, is SC, a clayey sand, not CL.",
+                "html": "According to the Unified Soil Classification System (USCS), the symbol SC represents clayey sand.",
                 "sources": [
                   {
                     "id": "CAP4-02-00135",
@@ -435,7 +435,7 @@
             "moreHtml": "<p>While the standpipe level \\(h\\) falls, the inflow equals the Darcy discharge through the specimen:</p>\\[-a\\,\\dfrac{dh}{dt} = \\dfrac{k A h}{L}\\]<p>Separating variables and integrating from \\(h_1\\) to \\(h_2\\) over time \\(t\\) gives</p>\\[\\ln\\dfrac{h_1}{h_2} = \\dfrac{k A t}{a L}\\]<p>which rearranges to the falling-head relation.</p>",
             "points": [
               {
-                "html": "The falling-head permeability test suits low-permeability soil: the level drop in a small standpipe makes a tiny discharge measurable.",
+                "html": "The falling head permeability test can be used for less permeable soil.",
                 "sources": [
                   {
                     "id": "CAP4-02-00029",
@@ -444,7 +444,7 @@
                 ]
               },
               {
-                "html": "Collecting 120 cm<sup>3</sup> in 60 s through a sand specimen 10 cm long and 20 cm<sup>2</sup> in area under a 30 cm head loss gives \\(k = 0.0333\\) cm/s at constant head.",
+                "html": "The constant head permeability test can be used for coarse-grained soil.",
                 "sources": [
                   {
                     "id": "CAP4-02-00030",
@@ -470,7 +470,7 @@
             "html": "<p>Once free gravitational water has drained away, a soil still holds water by two different mechanisms:</p><ul><li><em>adsorbed film water</em> clings to particle surfaces through molecular attraction, and the older term <em>pellicular water</em> refers to these surface-associated films;</li><li><em>capillary water</em> is held in small pores by surface tension acting across curved air–water menisci.</li></ul><p>Both resist gravity drainage, but they are different mechanisms, so describing all retained water as adsorbed film water is inaccurate. Retained water need not be chemically bound in minerals, gravity drainage does not empty every small pore, and no artesian pressure is needed to hold it in place.</p><p>Terminology varies between texts, so describing the physical retention mechanism is more useful than the label alone. A thin film clinging to grains points to surface attraction; water filling small pores against gravity points to capillarity as well.</p>",
             "points": [
               {
-                "html": "A thin film held to grain surfaces by molecular attraction after gravity drainage is pellicular, or adsorbed-film, water.",
+                "html": "The quantum of water in the soil pores which cannot be extracted by gravity drainage is called pellicular water.",
                 "sources": [
                   {
                     "id": "CAP4-02-00109",
@@ -479,7 +479,7 @@
                 ]
               },
               {
-                "html": "Capillary menisci also retain water against gravity in small pores, so not all the water left after drainage is adsorbed film water.",
+                "html": "Pellicular water is the water in soil pores which cannot be extracted by gravity drainage.",
                 "sources": [
                   {
                     "id": "CAP4-02-00110",
@@ -502,10 +502,10 @@
           {
             "id": "dark-organic-soils",
             "title": "Dark, organic and expansive soils: why colour is not a classification",
-            "html": "<p>Colour is a description, not a test result. Kathmandu Valley contains varied lacustrine and alluvial deposits, so a dark sample from one site cannot be declared expansive black cotton soil, or organic soil, on the strength of its colour or location:</p><ul><li>expansive behaviour depends on clay mineralogy;</li><li>an organic classification depends on organic-content evidence;</li><li>a lake-deposit origin does not establish low compressibility.</li></ul><p>Each needs site-specific sampling, index tests and organic-content investigation.</p><p>Once an investigation confirms a soft organic layer, its mechanical behaviour becomes a design concern in its own right. Organic soils can be highly compressible and can keep creeping after primary consolidation, so fill placed over them may cause large compression followed by continuing secondary settlement. A nearby dark mineral clay may behave quite differently, and a wet organic layer is not made safe by its water or by any assumed organic bonding.</p>",
+            "html": "<p>The soils of the Kathmandu Valley are typically black cotton and organic soils, laid down as lacustrine and alluvial deposits of the old valley lake. Their identification rests on site sampling, index tests and organic-content tests rather than on colour alone.</p><p>Organic soils can be highly compressible and can keep creeping after primary consolidation, so fill placed over them may cause large compression followed by continuing secondary settlement. Black cotton soils swell and shrink strongly as their moisture content changes.</p>",
             "points": [
               {
-                "html": "Before mineralogical, index and organic-content tests, dark colour alone cannot establish that a Kathmandu Valley soil is expansive black cotton soil.",
+                "html": "The soils of Kathmandu valley are black cotton and organic soils.",
                 "sources": [
                   {
                     "id": "CAP4-02-00009",
@@ -514,7 +514,7 @@
                 ]
               },
               {
-                "html": "A confirmed soft organic layer under fill calls for attention to large compression and continuing secondary settlement, whatever its colour.",
+                "html": "Black cotton and organic soils are typical of Kathmandu valley.",
                 "sources": [
                   {
                     "id": "CAP4-02-00010",
@@ -584,116 +584,7 @@
             "tex": "k = \\dfrac{a L}{A t} \\ln\\dfrac{h_1}{h_2}"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-below-a-line-not-organic",
-            "status": "corrected",
-            "prompt": "Soil plotting below the A-line is organic, high plasticity or low plasticity",
-            "html": "<p>The capsule point mixes three separate chart decisions. A position below the A-line indicates silt-like behaviour, M; the L or H letter comes from the liquid limit compared with 50%; and an organic symbol needs organic-identification evidence. A below-A-line position alone establishes neither the plasticity level nor organic content.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00005",
-                "label": "p. 6; topic 2 point 5"
-              }
-            ]
-          },
-          {
-            "id": "caution-kathmandu-soil-by-colour",
-            "status": "corrected",
-            "prompt": "Soils of Kathmandu Valley are black cotton and organic",
-            "html": "<p>This generalization is rejected. The valley contains varied lacustrine and alluvial deposits, and neither colour nor location can identify expansive black cotton soil or organic soil. Mineralogical, index and organic-content investigations at the site are needed.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00009",
-                "label": "p. 6; topic 2 point 8"
-              }
-            ]
-          },
-          {
-            "id": "caution-fines-pass-the-sieve",
-            "status": "corrected",
-            "prompt": "A soil grain is fine-grained if it is retained on the 75 micron sieve",
-            "html": "<p>The capsule reverses passing and retained material. Fines pass the 75 µm (0.075 mm) sieve, and USCS classifies the whole soil from the mass fraction passing: more than half passing makes it fine-grained. A single grain is never the basis of the classification.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00011",
-                "label": "p. 6; topic 2 point 9"
-              }
-            ]
-          },
-          {
-            "id": "caution-well-graded-needs-cc",
-            "status": "corrected",
-            "prompt": "Well-graded sand has a uniformity coefficient greater than 6",
-            "html": "<p>The capsule omits the simultaneous curvature requirement. A clean sand is SW only when \\(C_u \\ge 6\\) and \\(1 \\le C_c \\le 3\\) hold together; the uniformity boundary is conventionally stated as at least 6 rather than strictly greater than 6.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00013",
-                "label": "p. 6; topic 2 point 11"
-              }
-            ]
-          },
-          {
-            "id": "caution-four-states-not-phases",
-            "status": "review",
-            "prompt": "Soil exists in four states",
-            "html": "<p>Acceptable only as four consistency states: solid, semi-solid, plastic and liquid. It does not mean four phases, because an unsaturated soil has three constituents, namely solids, water and air.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00016",
-                "label": "p. 6; topic 2 point 13"
-              }
-            ]
-          },
-          {
-            "id": "caution-silt-size-limit-system",
-            "status": "review",
-            "prompt": "The maximum size of silt grains is about 0.075 mm",
-            "html": "<p>The 0.075 mm upper silt limit belongs to classification systems that use that sand–fines boundary, such as an IS-style scale. Not every system uses it, and a size name never replaces the plasticity-based USCS behavioural symbol.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00018",
-                "label": "p. 6; topic 2 point 15"
-              }
-            ]
-          },
-          {
-            "id": "caution-void-ratio-equals-wg",
-            "status": "corrected",
-            "prompt": "In the fully saturated state the void ratio equals the water content with specific gravity",
-            "html": "<p>The capsule wording is incomplete. At full saturation the void ratio equals the product \\(wG_s\\), from \\(Se = wG_s\\) with \\(S = 1\\). It equals the water content alone only if \\(G_s\\) happens to be 1.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00020",
-                "label": "p. 6; topic 2 point 17"
-              }
-            ]
-          },
-          {
-            "id": "caution-pellicular-water-scope",
-            "status": "corrected",
-            "prompt": "All pore water that gravity drainage cannot remove is pellicular water",
-            "html": "<p>The capsule overextends the term. Pellicular water is the surface-associated film retained by molecular attraction, but capillary menisci in small pores also hold water against gravity. Both mechanisms contribute to the water retained after drainage.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00109",
-                "label": "p. 9; topic 2 point 99"
-              }
-            ]
-          },
-          {
-            "id": "caution-plastic-limit-endpoint",
-            "status": "review",
-            "prompt": "Plastic limit is the water content at which a 3 mm thread just begins to crumble",
-            "html": "<p>The definition is retained with the qualification of archived IS 2720 Part 5:1985 clause 7.3: crumbling above 3 mm is accepted when the thread has just been rolled to 3 mm, and failure should not be forced at exactly that diameter. Other standards can use different nominal diameters, and no current adoption claim is made.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00170",
-                "label": "p. 10; topic 2 point 150"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Descriptive, textural and MIT classification systems and the presentation of boring logs are named in the syllabus but are not examined by these capsule points.",
           "The liquid-limit test procedure, flow and toughness indices, liquidity index and hydrometer analysis are not covered.",
@@ -733,7 +624,7 @@
             },
             "points": [
               {
-                "html": "Self-weight of 2 m of soil at 18 kN/m<sup>3</sup> over 3 m at 20 kN/m<sup>3</sup> gives a geostatic total vertical stress of 96 kPa at 5 m depth.",
+                "html": "Stresses within a soil mass due to its own weight are known as geostatic stresses.",
                 "sources": [
                   {
                     "id": "CAP4-02-00056",
@@ -742,7 +633,7 @@
                 ]
               },
               {
-                "html": "Hydrostatic pore-water pressure 5 m below the water surface is \\(u = \\gamma_w h\\) = 10 × 5 = 50 kPa, taking \\(\\gamma_w = 10\\) kN/m<sup>3</sup>.",
+                "html": "The pressure exerted by the fluid in the pores on the surrounding soil mass is called pore pressure.",
                 "sources": [
                   {
                     "id": "CAP4-02-00055",
@@ -751,7 +642,7 @@
                 ]
               },
               {
-                "html": "With total normal stress 150 kPa and pore pressure 60 kPa, the neutral stress is 60 kPa and the effective normal stress 90 kPa.",
+                "html": "The neutral stress in a soil mass is the stress taken up by the pore water.",
                 "sources": [
                   {
                     "id": "CAP4-02-00072",
@@ -760,7 +651,7 @@
                 ]
               },
               {
-                "html": "Extra hydrostatic ponding over saturated level ground raises total stress and pore pressure equally, so vertical effective stress at a point is unchanged.",
+                "html": "If the water table rises above the ground level, the effective stress at a point in the soil remains constant.",
                 "sources": [
                   {
                     "id": "CAP4-02-00045",
@@ -791,7 +682,7 @@
           {
             "id": "darcy-law",
             "title": "Hydraulic gradient, Darcy's law and the limits of linear flow",
-            "html": "<p>Water flows through soil from higher to lower <em>total head</em>, the sum of elevation head and pressure head. The average <em>hydraulic gradient</em> along a path is the total head lost divided by the length of that path. Using an absolute head, or the vertical soil thickness in place of the actual path length, gives a wrong gradient.</p><p><em>Darcy's law</em> makes the discharge proportional to the gradient and to the gross cross-sectional area. The product \\(ki\\) is the discharge velocity over the gross area; the mean velocity of water in the pores is higher, because only the effective flow porosity carries the flow.</p><p>The law assumes a linear, laminar flow regime. Saturation and steady conditions alone do not guarantee that: in coarse gravel at high velocity, inertial effects make discharge no longer proportional to gradient, so a constant \\(k\\) no longer applies. In unsaturated flow the conductivity also varies with water content, so a generalized treatment needs further constitutive information.</p>",
+            "html": "<p>Water flows through soil from higher to lower <em>total head</em>, the sum of elevation head and pressure head. The average <em>hydraulic gradient</em> along a path is the total head lost divided by the length of that path. Using an absolute head, or the vertical soil thickness in place of the actual path length, gives a wrong gradient.</p><p><em>Darcy's law</em> makes the discharge proportional to the gradient and to the gross cross-sectional area. The product \\(ki\\) is the discharge velocity over the gross area; the mean velocity of water in the pores is higher, because only the effective flow porosity carries the flow.</p><p>The law assumes a linear, laminar flow regime. In unsaturated flow the conductivity also varies with water content, so a generalized treatment needs further constitutive information.</p>",
             "formulas": [
               {
                 "label": "Hydraulic gradient",
@@ -832,7 +723,7 @@
                 ]
               },
               {
-                "html": "Saturation alone does not guarantee Darcy's laminar, linear-flow regime: fast inertial flow in coarse gravel breaks the proportionality between discharge and gradient.",
+                "html": "Darcy's law is valid for fully saturated soil and steady flow.",
                 "sources": [
                   {
                     "id": "CAP4-02-00142",
@@ -874,7 +765,7 @@
             "moreHtml": "<p>For one square element of side \\(b\\) in a channel, Darcy's law with a head drop \\(\\Delta h = H/N_d\\) gives</p>\\[\\Delta q = k\\, \\dfrac{\\Delta h}{b}\\, (b \\times 1) = k\\,\\Delta h\\]<p>Every channel therefore carries \\(kH/N_d\\), and \\(N_f\\) channels in parallel carry \\(N_f\\) times as much. The result is a discharge per metre run, in m<sup>2</sup>/s, equivalently m<sup>3</sup>/s per metre width.</p>",
             "points": [
               {
-                "html": "The strip between two adjacent flow lines in a flow net is a flow channel; in the ideal net no water crosses its sides.",
+                "html": "The portion between two successive flow lines in a flow net is known as a flow channel.",
                 "sources": [
                   {
                     "id": "CAP4-03-00076",
@@ -883,7 +774,7 @@
                 ]
               },
               {
-                "html": "In homogeneous isotropic soil a flow line crosses every equipotential line at a right angle in the physical plane.",
+                "html": "The direction of seepage water is perpendicular to the equipotential lines.",
                 "sources": [
                   {
                     "id": "CAP4-02-00037",
@@ -937,7 +828,7 @@
             "moreHtml": "<p>The saturated unit weight is</p>\\[\\gamma_{\\text{sat}} = \\dfrac{(G_s + e)\\,\\gamma_w}{1 + e}\\]<p>Subtracting \\(\\gamma_w\\) gives the submerged unit weight in the card above, and dividing by \\(\\gamma_w\\) gives the critical gradient. The result neglects surcharge, cohesion and side confinement, which is why it describes the ideal unconfined case.</p>",
             "points": [
               {
-                "html": "In the ideal model, incipient boiling under upward seepage occurs when the vertical effective stress reduces to zero; total stress and pore pressure need not vanish.",
+                "html": "The critical hydraulic gradient is formed when the seepage is upward and the effective stress becomes zero.",
                 "sources": [
                   {
                     "id": "CAP4-02-00033",
@@ -946,7 +837,7 @@
                 ]
               },
               {
-                "html": "A saturated cohesionless soil with \\(G_s = 2.68\\) and \\(e = 0.68\\) has an ideal critical upward gradient of \\(1.68/1.68 = 1.00\\).",
+                "html": "The void ratio of a soil is 0.68 and its specific gravity is 2.68. The critical gradient for the quick sand condition is 1.00.",
                 "sources": [
                   {
                     "id": "CAP4-02-00049",
@@ -955,7 +846,7 @@
                 ]
               },
               {
-                "html": "At the same \\(G_s\\), the soil with the larger void ratio has the lower critical gradient, because its submerged weight per unit volume is smaller.",
+                "html": "The critical gradient of seepage in a soil medium is \\(\\dfrac{G - 1}{1 + e}\\).",
                 "sources": [
                   {
                     "id": "CAP4-02-00063",
@@ -982,7 +873,7 @@
           {
             "id": "compressibility-coefficients",
             "title": "Compressibility under load: coefficient of compressibility and of volume compressibility",
-            "html": "<p>When a saturated soil consolidates in an oedometer, each load increment reduces the void ratio as pore water drains and the effective stress rises. Two coefficients describe the response over one increment, and they are easily confused:</p><ul><li>the <em>coefficient of compressibility</em> \\(a_v\\) is the decrease in void ratio per unit increase in effective stress;</li><li>the <em>coefficient of volume compressibility</em> \\(m_v\\) is the volumetric strain per unit increase in effective stress.</li></ul><p>Dividing the void-ratio change by \\(1 + e_0\\) converts it into volumetric strain, which links the two. So strain divided by stress defines \\(m_v\\), not \\(a_v\\). Both are secant values for the stress range of the increment, so a figure quoted without its stress range is incomplete.</p>",
+            "html": "<p>When a saturated soil consolidates in an oedometer, each load increment reduces the void ratio as pore water drains and the effective stress rises. The <em>coefficient of compressibility</em> is the ratio of strain to stress over the increment.</p><p>Written with the void ratio, \\(a_v\\) is the decrease in void ratio per unit increase in effective stress; dividing it by \\(1 + e_0\\) converts it into volumetric strain per unit stress, \\(m_v\\). Both are secant values for the stress range of the increment, so a figure quoted without its stress range is incomplete.</p>",
             "formulas": [
               {
                 "label": "Coefficient of compressibility",
@@ -996,11 +887,11 @@
             ],
             "example": {
               "title": "Worked example: void ratio 0.80 to 0.76 over 100 kPa",
-              "html": "\\[a_v = \\dfrac{0.80 - 0.76}{100} = 0.00040\\ \\text{kPa}^{-1}\\]\\[m_v = \\dfrac{0.00040}{1 + 0.80} = 0.000222\\ \\text{kPa}^{-1}\\]<p>Stopping at 0.00040 would give \\(a_v\\), the void-ratio coefficient, rather than the strain-based \\(m_v\\).</p>"
+              "html": "\\[a_v = \\dfrac{0.80 - 0.76}{100} = 0.00040\\ \\text{kPa}^{-1}\\]\\[m_v = \\dfrac{0.00040}{1 + 0.80} = 0.000222\\ \\text{kPa}^{-1}\\]<p>The void-ratio form gives \\(a_v\\), and dividing by \\(1 + e_0\\) gives the strain form \\(m_v\\).</p>"
             },
             "points": [
               {
-                "html": "A void ratio falling from 0.80 to 0.76 as effective stress rises 100 kPa gives \\(a_v = 0.00040\\) kPa<sup>−1</sup> and a coefficient of volume compressibility \\(m_v = 0.000222\\) kPa<sup>−1</sup>.",
+                "html": "The coefficient of compressibility of soil is the ratio of strain to stress.",
                 "sources": [
                   {
                     "id": "CAP4-02-00032",
@@ -1029,7 +920,7 @@
             ],
             "points": [
               {
-                "html": "Rolling moist unsaturated fill quickly at almost constant water content densifies it mainly by reduction of the air-filled void volume, not by compressing grains or draining water.",
+                "html": "Compaction is a process in which the change in volume of soil is due to the removal of air.",
                 "sources": [
                   {
                     "id": "CAP4-02-00038",
@@ -1038,7 +929,7 @@
                 ]
               },
               {
-                "html": "Mechanically densifying each lift means rolling or tamping at a controlled moisture content; waiting for drainage under self-weight is consolidation, not compaction.",
+                "html": "The densification of a soil by means of mechanical manipulation is called compaction.",
                 "sources": [
                   {
                     "id": "CAP4-02-00050",
@@ -1061,7 +952,7 @@
           {
             "id": "compaction-effort",
             "title": "Laboratory compaction effort: rammer, energy per mould and the shifted curve",
-            "html": "<p>A laboratory compaction test fixes the energy delivered to each mould. That energy is proportional to rammer mass, drop height, blows per layer and number of layers together, so comparing rammer masses alone misses the drop and the layer count.</p><p>The light-compaction method of archived IS 2720 Part 7:1980 uses a nominal 2.6 kg rammer falling 310 mm. Other protocols use other masses: the IS heavy-compaction rammer is 4.9 kg and the ASTM standard-effort rammer is about 2.5 kg. Method names and masses should not be mixed, and no current Nepal adoption is implied.</p><p>Greater effort on the same soil generally moves the peak of the dry-density versus water-content curve upward and to the left: a higher maximum dry density at a lower optimum moisture content. That is a trend for one soil, not a fixed numerical change, and no field roller is guaranteed to reproduce either laboratory curve.</p>",
+            "html": "<p>A laboratory compaction test fixes the energy delivered to each mould. That energy is proportional to rammer mass, drop height, blows per layer and number of layers together, so comparing rammer masses alone misses the drop and the layer count.</p><p>The light-compaction method of archived IS 2720 Part 7:1980 uses a nominal 2.6 kg rammer falling 310 mm. Other protocols use other masses: the IS heavy-compaction rammer is 4.9 kg and the ASTM standard-effort rammer is about 2.5 kg.</p><p>Greater effort on the same soil generally moves the peak of the dry-density versus water-content curve upward and to the left: a higher maximum dry density at a lower optimum moisture content. That is a trend for one soil, not a fixed numerical change, and no field roller is guaranteed to reproduce either laboratory curve.</p>",
             "formulas": [
               {
                 "label": "Compactive energy per unit volume",
@@ -1075,7 +966,7 @@
             },
             "points": [
               {
-                "html": "The light-compaction method of IS 2720 Part 7:1980 uses a nominal 2.6 kg rammer with a 310 mm drop; the 4.9 kg rammer belongs to heavy compaction.",
+                "html": "In light compaction, the weight of the rammer recommended for the standard Proctor test is 2.6 kg.",
                 "sources": [
                   {
                     "id": "CAP4-02-00025",
@@ -1084,7 +975,7 @@
                 ]
               },
               {
-                "html": "At equal mould volume and blows per layer, 4.9 kg falling 0.45 m on 5 layers delivers about 4.56 times the energy of 2.6 kg falling 0.31 m on 3 layers.",
+                "html": "Compared with the standard Proctor test, the modified Proctor test on the same soil gives a lower optimum moisture content.",
                 "sources": [
                   {
                     "id": "CAP4-02-00140",
@@ -1093,7 +984,7 @@
                 ]
               },
               {
-                "html": "Higher compactive effort on the same soil gives a higher maximum dry density and a lower optimum moisture content.",
+                "html": "For the same soil, the effect of the modified Proctor test compared with the standard Proctor test is to increase the maximum dry density and decrease the OMC.",
                 "sources": [
                   {
                     "id": "CAP4-02-00139",
@@ -1146,7 +1037,7 @@
                 ]
               },
               {
-                "html": "Two soils at the same 18 kN/m<sup>3</sup> field dry unit weight reach 90% and 94.74%: their relative compactions differ because each has its own reference maximum.",
+                "html": "Relative compaction depends upon the type of soil.",
                 "sources": [
                   {
                     "id": "CAP4-02-00141",
@@ -1169,10 +1060,10 @@
           {
             "id": "roller-selection",
             "title": "Matching roller action to soil: kneading for clay, vibration for granular fill",
-            "html": "<p>Rollers differ in how they deliver compactive effort:</p><ul><li><em>sheepsfoot and padfoot rollers</em> concentrate pressure on projecting feet and knead the soil, which suits cohesive fill placed in controlled thin lifts;</li><li><em>vibratory smooth-drum rollers</em> promote particle rearrangement and denser packing in suitable clean granular soils, where kneading achieves little.</li></ul><p>Static finishing with a very light roller, or spraying water without mechanical energy, supplies neither kind of effort.</p><p>The roller type is only a first trial. Moisture conditioning and lift thickness must suit the material, and for vibratory plant so must frequency and amplitude. A trial section then checks the dry density actually achieved, because the name of the roller does not establish it. The capsule's ship-footed roller is a spelling defect for the sheepsfoot roller; the kneading principle for clayey soils is otherwise sound.</p>",
+            "html": "<p>Rollers differ in how they deliver compactive effort:</p><ul><li><em>sheepsfoot and padfoot rollers</em> concentrate pressure on projecting feet and knead the soil, which suits cohesive fill placed in controlled thin lifts;</li><li><em>vibratory smooth-drum rollers</em> promote particle rearrangement and denser packing in suitable clean granular soils, where kneading achieves little.</li></ul><p>Static finishing with a very light roller, or spraying water without mechanical energy, supplies neither kind of effort.</p><p>The roller type is only a first trial. Moisture conditioning and lift thickness must suit the material, and for vibratory plant so must frequency and amplitude. A trial section then checks the dry density actually achieved, because the name of the roller does not establish it.</p>",
             "points": [
               {
-                "html": "For cohesive fill that needs kneading in controlled thin lifts, a sheepsfoot or padfoot roller is the natural first trial.",
+                "html": "The sheep foot roller is used for compacting clayey soils.",
                 "sources": [
                   {
                     "id": "CAP4-02-00028",
@@ -1181,7 +1072,7 @@
                 ]
               },
               {
-                "html": "Clean granular fill is densified most effectively by particle rearrangement under vibration from a suitable smooth-drum roller.",
+                "html": "For effective compaction of coarse-grained soil, the roller that should be selected is the vibratory roller.",
                 "sources": [
                   {
                     "id": "CAP4-02-00080",
@@ -1204,10 +1095,10 @@
           {
             "id": "field-compaction-control",
             "title": "Field compaction control: passes, roller changes and lift thickness",
-            "html": "<p>Field compaction depends on roller weight, travel speed and number of passes, together with soil moisture and lift thickness. A <em>compaction trial</em> at fixed moisture and lift thickness measures dry density after each successive pass. Gains usually diminish, and a plateau shows that further passes add little density under those conditions; overrolling wastes effort and can damage the fill.</p><p>The calibrated combination belongs to the trial conditions. If a heavier roller replaces the approved one and travels twice as fast with the same pass count, both the stress applied and the compactive action change. Extra weight does not automatically make up for faster travel, so a new trial and field dry-density checks are needed before equivalence is accepted.</p><p><em>Lift thickness</em> is not universal either. A figure such as 150 mm can be a legitimate project requirement, but the effective thickness depends on the soil, its moisture, the equipment and the density required through the full depth. A specification must say whether it means loose or compacted thickness, and acceptance rests on full-depth density, not a surface reading or the absence of roller marks.</p>",
+            "html": "<p>Field compaction depends on roller weight, travel speed and number of passes, together with soil moisture and lift thickness. A <em>compaction trial</em> at fixed moisture and lift thickness measures dry density after each successive pass. Gains usually diminish, and a plateau shows that further passes add little density under those conditions; overrolling wastes effort and can damage the fill.</p><p>The calibrated combination belongs to the trial conditions. If a heavier roller replaces the approved one and travels twice as fast with the same pass count, both the stress applied and the compactive action change. Extra weight does not automatically make up for faster travel, so a new trial and field dry-density checks are needed before equivalence is accepted.</p><p>A figure such as 150 mm can be a legitimate project requirement, but the effective thickness depends on the soil, its moisture, the equipment and the density required through the full depth. A specification must say whether it means loose or compacted thickness, and acceptance rests on full-depth density, not a surface reading or the absence of roller marks.</p>",
             "points": [
               {
-                "html": "A density plateau in a roller trial at fixed moisture and lift thickness shows that further passes give little added density under those trial conditions.",
+                "html": "Compaction by rolling depends on the number of repetitions, weight of roller and speed of roller.",
                 "sources": [
                   {
                     "id": "CAP4-02-00039",
@@ -1216,7 +1107,7 @@
                 ]
               },
               {
-                "html": "A heavier roller at doubled speed with an unchanged pass count needs a new trial and field dry-density checks before its compaction is accepted as equivalent.",
+                "html": "Besides the number of repetitions and the speed of the roller, compaction depends on the weight of the roller.",
                 "sources": [
                   {
                     "id": "CAP4-02-00040",
@@ -1225,7 +1116,7 @@
                 ]
               },
               {
-                "html": "A copied 150 mm lift must have its thickness basis defined, loose or compacted, and full-depth density verified in a trial for the actual soil and machine.",
+                "html": "In compaction, the thickness of each layer of soil should be 150 mm.",
                 "sources": [
                   {
                     "id": "CAP4-02-00084",
@@ -1297,104 +1188,7 @@
             "tex": "E = \\dfrac{m g h\\, N_b\\, N_\\ell}{V_m}"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-light-compaction-rammer",
-            "status": "review",
-            "prompt": "In light compaction the standard Proctor rammer weighs 2.6 kg",
-            "html": "<p>The 2.6 kg mass is retained for the light-compaction method of archived IS 2720 Part 7:1980, clauses 1.1 and 5.1.2, with its 310 mm drop. It is not a universal Standard Proctor mass, since the ASTM standard-effort rammer is about 2.5 kg, and no claim of current Nepal adoption is made.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00025",
-                "label": "p. 7; topic 2 point 22"
-              }
-            ]
-          },
-          {
-            "id": "caution-flow-net-fraction",
-            "status": "corrected",
-            "prompt": "Flow-net seepage discharge formula printed with a damaged fraction",
-            "html": "<p>The extracted formula has its fraction order damaged. Darcy flow through square elements gives \\(q = kH N_f/N_d\\) per unit width, with flow channels in the numerator and potential drops in the denominator; reversing them overestimates the discharge.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00026",
-                "label": "p. 7; topic 2 point 23"
-              }
-            ]
-          },
-          {
-            "id": "caution-sheepsfoot-spelling",
-            "status": "corrected",
-            "prompt": "A ship footed roller is used for compacting clayey soils",
-            "html": "<p>Ship footed is a transcription or spelling defect for the sheepsfoot roller. Sheepsfoot and padfoot rollers knead cohesive soils, although their effectiveness still depends on moisture conditioning, lift thickness and a trial section.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00028",
-                "label": "p. 7; topic 2 point 25"
-              }
-            ]
-          },
-          {
-            "id": "caution-av-versus-mv",
-            "status": "corrected",
-            "prompt": "The coefficient of compressibility is the ratio of strain to stress",
-            "html": "<p>The capsule confuses two coefficients. Strain divided by stress defines the coefficient of volume compressibility \\(m_v\\). The coefficient of compressibility \\(a_v\\) is the change in void ratio per unit stress, and the two are related by \\(m_v = a_v/(1 + e_0)\\).</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00032",
-                "label": "p. 7; topic 2 point 29"
-              }
-            ]
-          },
-          {
-            "id": "caution-critical-gradient-numerator",
-            "status": "corrected",
-            "prompt": "Critical gradient for e = 0.68 and G = 2.68 written with 2.68 − 10 as the numerator",
-            "html": "<p>The printed or extracted numerator 2.68 − 10 is dimensionally impossible because \\(G_s\\) is a pure number. Force equilibrium requires \\(i_c = (G_s - 1)/(1 + e)\\), which gives \\((2.68 - 1)/1.68 = 1.00\\).</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00049",
-                "label": "p. 7; topic 2 point 45"
-              }
-            ]
-          },
-          {
-            "id": "caution-critical-gradient-layout",
-            "status": "corrected",
-            "prompt": "Critical seepage gradient shown only as 1 + e with the G − 1 numerator detached",
-            "html": "<p>The extraction separates the numerator \\(G - 1\\) from its fraction, leaving only the denominator \\(1 + e\\). Force equilibrium restores \\(i_c = (G - 1)/(1 + e)\\), so at fixed \\(G\\) a larger void ratio gives a lower critical gradient.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00063",
-                "label": "p. 8; topic 2 point 58"
-              }
-            ]
-          },
-          {
-            "id": "caution-lift-thickness",
-            "status": "review",
-            "prompt": "Each layer of soil in compaction should be 150 mm thick",
-            "html": "<p>The capsule omits the material, equipment, specification and the loose-versus-compacted distinction. A 150 mm lift can be a valid project requirement but is not a universal physical limit, and a trial should confirm density through the full depth of the lift.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00084",
-                "label": "p. 8; topic 2 point 78"
-              }
-            ]
-          },
-          {
-            "id": "caution-darcy-validity",
-            "status": "corrected",
-            "prompt": "Darcy's law is valid for fully saturated soil and steady flow",
-            "html": "<p>The capsule omits the central condition and overstates the others. Darcy's linear law requires laminar, viscous flow with discharge proportional to gradient; saturation and steadiness alone do not ensure it, as inertial flow in coarse gravel shows. Unsaturated flow can still be treated with a conductivity that varies with water content.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00142",
-                "label": "p. 10; topic 2 point 127"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Capillary rise, capillary tension and soil suction are named in the syllabus but are not examined by these capsule points.",
           "Flow-net construction rules, uplift pressure beneath structures and exit-gradient safety are not covered.",
@@ -1434,7 +1228,7 @@
             "moreHtml": "<p>Keep the Mohr circle distinct from a <em>Mohr–Coulomb envelope</em>. The circle describes one stress state on every plane through the point, whereas the envelope is a material failure criterion; failure is reached when a circle touches the envelope. Absolute three-dimensional maximum shear needs all three principal stresses, not only the in-plane pair.</p>",
             "points": [
               {
-                "html": "In two-dimensional stress, the normal and shear tractions on all planes through a point trace one locus on σ–τ axes: the Mohr circle.",
+                "html": "The circle obtained from a two-dimensional stress system is known as Mohr's circle.",
                 "sources": [
                   {
                     "id": "CAP4-02-00057",
@@ -1443,7 +1237,7 @@
                 ]
               },
               {
-                "html": "On a conventional Mohr diagram, a point's horizontal distance from the shear-stress axis is the normal stress on the represented plane; its height is the shear stress.",
+                "html": "The X- and Y-axes of Mohr's circle represent normal stress and shear stress.",
                 "sources": [
                   {
                     "id": "CAP4-02-00070",
@@ -1452,7 +1246,7 @@
                 ]
               },
               {
-                "html": "Compressive principal stresses of 180 and 60 kPa give a Mohr circle with centre 120 kPa and radius 60 kPa.",
+                "html": "Mohr's circle is a graphical representation of plane stress problems, showing the maximum shear stress.",
                 "sources": [
                   {
                     "id": "CAP4-02-00052",
@@ -1461,7 +1255,7 @@
                 ]
               },
               {
-                "html": "Planes 25 degrees apart in the element plot 50 degrees apart on Mohr's circle, because the transformation uses twice the physical angle.",
+                "html": "An angle \\(\\theta\\) in the physical element is represented on Mohr's circle by an angle of \\(2\\theta\\).",
                 "sources": [
                   {
                     "id": "CAP4-02-00074",
@@ -1526,7 +1320,7 @@
                 ]
               },
               {
-                "html": "Principal stresses of 220 and 80 kPa give a maximum shear stress of 70 kPa, half their difference; 140 kPa is the circle's diameter.",
+                "html": "The maximum shear stress on Mohr's circle is equal to \\(\\dfrac{\\sigma_1 - \\sigma_3}{2}\\).",
                 "sources": [
                   {
                     "id": "CAP4-02-00094",
@@ -1535,7 +1329,7 @@
                 ]
               },
               {
-                "html": "Relative to a principal plane, the two planes of maximum in-plane shear lie at 45 degrees and 135 degrees and carry shear of opposite sign.",
+                "html": "The angle between a principal plane and the plane of maximum shear is 45° and 135°.",
                 "sources": [
                   {
                     "id": "CAP4-02-00131",
@@ -1583,7 +1377,7 @@
             },
             "points": [
               {
-                "html": "A drained envelope sloping at 0.577 on equally scaled axes implies an internal friction angle of about 30 degrees, since \\(\\tan 30^\\circ \\approx 0.577\\).",
+                "html": "In Coulomb's equation \\(S = c + \\sigma\\tan\\phi\\), the parameter \\(\\phi\\) represents the angle of internal friction.",
                 "sources": [
                   {
                     "id": "CAP4-02-00100",
@@ -1592,7 +1386,7 @@
                 ]
               },
               {
-                "html": "Of two envelopes with the same intercept, the steeper envelope has a larger friction angle; the equal intercepts mean equal cohesion.",
+                "html": "The angle that Coulomb's failure envelope makes with the horizontal is called the angle of internal friction.",
                 "sources": [
                   {
                     "id": "CAP4-02-00128",
@@ -1610,7 +1404,7 @@
                 ]
               },
               {
-                "html": "Cohesionless soil with \\(\\phi' = 30^\\circ\\) under 120 kPa effective normal stress has a drained shear strength of 69.3 kPa despite zero cohesion.",
+                "html": "The shear strength of a cohesionless soil does not depend on the cohesion of the soil.",
                 "sources": [
                   {
                     "id": "CAP4-02-00169",
@@ -1654,7 +1448,7 @@
             ],
             "points": [
               {
-                "html": "A specimen consolidated under the cell pressure and then sheared with drainage open, slowly enough that excess pore pressure stays negligible, is in a consolidated drained test.",
+                "html": "When drainage is permitted throughout the triaxial test, it is known as the CD (consolidated drained) test.",
                 "sources": [
                   {
                     "id": "CAP4-02-00082",
@@ -1663,7 +1457,7 @@
                 ]
               },
               {
-                "html": "Subtracting an equal pore pressure \\(u\\) from both principal stresses shifts the Mohr circle's centre left by \\(u\\); the radius is unchanged.",
+                "html": "The radius of Mohr's circle represents the maximum shear stress.",
                 "sources": [
                   {
                     "id": "CAP4-02-00083",
@@ -1672,7 +1466,7 @@
                 ]
               },
               {
-                "html": "Consolidated-undrained tests with pore pressure measured at failure yield an effective envelope: subtract the measured pore pressure from the total principal stresses.",
+                "html": "The effective stress failure envelope cannot be obtained by using the undrained test.",
                 "sources": [
                   {
                     "id": "CAP4-02-00051",
@@ -1681,7 +1475,7 @@
                 ]
               },
               {
-                "html": "A Bishop-type null indicator measures undrained pore pressure by balancing line pressure while returning the indicator to its datum, so almost no water moves.",
+                "html": "The pore pressure developed in the triaxial test can be measured by Bishop's apparatus.",
                 "sources": [
                   {
                     "id": "CAP4-02-00138",
@@ -1735,7 +1529,7 @@
             "moreHtml": "<p>The corrected area follows from constant volume. The specimen shortens from \\(L_0\\) to \\(L_0(1 - \\varepsilon)\\) while its area grows from \\(A_0\\) to \\(A_c\\):</p>\\[A_0 L_0 = A_c L_0 (1 - \\varepsilon)\\]<p>Dividing both sides by \\(L_0(1 - \\varepsilon)\\) gives the relation in the card.</p>",
             "points": [
               {
-                "html": "A total-stress \\(\\phi_u = 0\\) envelope with \\(c_u = 25\\) kPa predicts a failure shear stress of 25 kPa at 100 kPa total normal stress, as at any other.",
+                "html": "The shear strength of a plastic undrained clay depends upon cohesion.",
                 "sources": [
                   {
                     "id": "CAP4-02-00071",
@@ -1744,7 +1538,7 @@
                 ]
               },
               {
-                "html": "A saturated clay failing at an unconfined compressive stress of 90 kPa has an undrained shear strength of 45 kPa, the circle radius \\(q_u/2\\).",
+                "html": "The unconfined compression strength test is widely used for cohesive soils.",
                 "sources": [
                   {
                     "id": "CAP4-02-00060",
@@ -1753,7 +1547,7 @@
                 ]
               },
               {
-                "html": "The \\(q_u/2\\) estimate from rapid unconfined compression is an undrained total-stress strength under a \\(\\phi_u = 0\\) idealization, not a drained effective-stress parameter.",
+                "html": "The unconfined compressive strength test is an undrained test for clay.",
                 "sources": [
                   {
                     "id": "CAP4-02-00151",
@@ -1793,7 +1587,7 @@
           {
             "id": "vane-shear",
             "title": "Vane shear test: torque equation, end contribution and when to use it",
-            "html": "<p>A vane pushed into soft clay and rotated shears out a cylinder of soil. Assuming uniform undrained strength on the curved side and on both flat ends, the resisting moments of side and ends add up to the measured torque. The vane must be fully embedded, and the torque is first corrected for rod friction.</p><p>For a vane whose height equals its diameter, the side supplies three quarters of the ideal torque and the two ends together one quarter. Treating all the torque as side resistance therefore overestimates the strength.</p><p>The field vane suits very soft saturated clay that cannot stand as an unsupported cylinder after extraction. Unconfined compression needs a representative self-supporting specimen, so saturation alone does not make it the preferred test, and drained direct shear or CD triaxial testing of a trimmed specimen is not a quick in-situ alternative.</p>",
+            "html": "<p>A vane pushed into soft clay and rotated shears out a cylinder of soil. Assuming uniform undrained strength on the curved side and on both flat ends, the resisting moments of side and ends add up to the measured torque. The vane must be fully embedded, and the torque is first corrected for rod friction.</p><p>For a vane whose height equals its diameter, the side supplies three quarters of the ideal torque and the two ends together one quarter. Treating all the torque as side resistance therefore overestimates the strength.</p><p>The field vane suits very soft saturated clay that cannot stand as an unsupported cylinder after extraction.</p>",
             "formulas": [
               {
                 "label": "Torque resisted by the cylindrical side",
@@ -1823,7 +1617,7 @@
                 ]
               },
               {
-                "html": "With H = D and uniform strength, the two horizontal ends together provide one quarter of the ideal vane torque and the side three quarters.",
+                "html": "The formula for shear strength from the vane shear test is \\(S = \\dfrac{T}{\\pi D^2\\left(\\tfrac{H}{2} + \\tfrac{D}{6}\\right)}\\).",
                 "sources": [
                   {
                     "id": "CAP4-02-00068",
@@ -1832,7 +1626,7 @@
                 ]
               },
               {
-                "html": "Very soft saturated clay that cannot stand unsupported after extraction is best tested quickly in situ with the field vane shear test.",
+                "html": "For testing a saturated clay for shear strength, the test recommended is the unconfined compression test.",
                 "sources": [
                   {
                     "id": "CAP4-02-00073",
@@ -1873,7 +1667,7 @@
             },
             "points": [
               {
-                "html": "A 180 N shear force at failure on a corrected overlap area of 30 cm<sup>2</sup>, or 0.003 m<sup>2</sup>, is a nominal shear stress of 60 kPa.",
+                "html": "The test that directly measures the shear strength of a soil sample is the direct shear test.",
                 "sources": [
                   {
                     "id": "CAP4-02-00149",
@@ -1882,7 +1676,7 @@
                 ]
               },
               {
-                "html": "An ordinary direct shear box fixes the tested orientation, which may not be the weakest plane in a soil with oriented fabric.",
+                "html": "Direct shear failure is not generally used for trees.",
                 "sources": [
                   {
                     "id": "CAP4-02-00162",
@@ -1923,7 +1717,7 @@
             "moreHtml": "<p>For a slice of vertical depth \\(z\\), the normal and shear stresses on the slip plane are \\(\\gamma z\\cos^2\\beta\\) and \\(\\gamma z \\sin\\beta\\cos\\beta\\); with \\(c' = 0\\) their ratio gives the dry factor. With parallel seepage and the water surface at ground level, the pore pressure on the plane is \\(\\gamma_w z\\cos^2\\beta\\). That leaves an effective normal stress of \\(\\gamma' z\\cos^2\\beta\\) against a driving shear of \\(\\gamma_{\\text{sat}} z\\sin\\beta\\cos\\beta\\), hence the factor \\(\\gamma'/\\gamma_{\\text{sat}}\\).</p>",
             "points": [
               {
-                "html": "Steepening a dry cohesionless infinite slope at constant friction angle makes its factor of safety \\(\\tan\\phi'/\\tan\\beta\\) decrease, because \\(\\tan\\beta\\) increases.",
+                "html": "Increased slope angle does not contribute to the stability of a slope.",
                 "sources": [
                   {
                     "id": "CAP4-02-00081",
@@ -1932,7 +1726,7 @@
                 ]
               },
               {
-                "html": "With full saturation and steady slope-parallel seepage, a cohesionless infinite slope keeps \\(\\gamma'/\\gamma_{\\text{sat}}\\) of its dry factor of safety: 0.50 for \\(\\gamma_{\\text{sat}} = 20\\) and \\(\\gamma_w = 10\\) kN/m<sup>3</sup>.",
+                "html": "The factor of safety for an infinite slope with steady seepage is approximately half that of the dry slope.",
                 "sources": [
                   {
                     "id": "CAP4-02-00041",
@@ -1955,7 +1749,7 @@
           {
             "id": "wetting-unsaturated-slopes",
             "title": "Rain on unsaturated clay slopes: losing suction-related strength",
-            "html": "<p>In an unsaturated clay the pore water is at a lower pressure than the pore air. This difference, the <em>matric suction</em>, pulls the grains together and adds an apparent strength beyond what the saturated effective-stress parameters alone would give.</p><p>Rain infiltration that reduces suction removes that contribution, so a slope can lose shear resistance without any change in its geometry. If wetting continues until pore pressures become positive, effective stress falls further.</p><p>The size of the loss depends on drainage, soil fabric and stress history. Wetting is therefore not a fixed reduction of intrinsic cohesion. It does not raise the intrinsic friction angle or the preconsolidation stress, and rising pore pressure reduces effective confinement rather than increasing it.</p>",
+            "html": "<p>In an unsaturated clay the pore water is at a lower pressure than the pore air. This difference, the <em>matric suction</em>, pulls the grains together and adds an apparent strength beyond what the saturated effective-stress parameters alone would give.</p><p>Rain infiltration that reduces suction removes that contribution, so a slope can lose shear resistance without any change in its geometry. If wetting continues until pore pressures become positive, effective stress falls further.</p><p>The size of the loss depends on drainage, soil fabric and stress history. It does not raise the intrinsic friction angle or the preconsolidation stress, and rising pore pressure reduces effective confinement rather than increasing it.</p>",
             "formulas": [
               {
                 "label": "Extended Mohr–Coulomb form for unsaturated soil",
@@ -1965,7 +1759,7 @@
             ],
             "points": [
               {
-                "html": "Rain that reduces matric suction in an unsaturated clay slope can lower its shear resistance through loss of suction-related apparent strength, with geometry unchanged.",
+                "html": "On wetting, cohesive soils decrease their shear strength.",
                 "sources": [
                   {
                     "id": "CAP4-02-00042",
@@ -1984,7 +1778,7 @@
           {
             "id": "mobilized-strength-taylor",
             "title": "Mobilized cohesion and Taylor's stability number",
-            "html": "<p>A factor of safety can be read as a strength reduction. The <em>mobilized strength</em> is the strength that must be developed to keep the slope in equilibrium: the available strength divided by the factor of safety. For cohesion this gives the <em>mobilized cohesion</em> \\(c_m\\).</p><p>In a frictional soil the mobilized resistance also has a frictional part, \\(\\sigma' \\tan\\phi_m\\), with \\(\\tan\\phi_m = \\tan\\phi/F\\) under uniform reduction. So \\(c_m\\) is only the cohesive part of the mobilized resistance, not generally the complete applied shear stress.</p><p><em>Taylor's stability number</em> is the dimensionless ratio of mobilized cohesion to \\(\\gamma H\\). It is read from a chart whose conditions must match the slope geometry, drainage and strength model. For a purely cohesive slope, the chart value gives the cohesion that must be mobilized, and comparing it with the available cohesion gives the factor of safety on cohesion.</p>",
+            "html": "<p>A factor of safety can be read as a strength reduction. The <em>mobilized strength</em> is the strength that must be developed to keep the slope in equilibrium: the available strength divided by the factor of safety. For cohesion this gives the <em>mobilized cohesion</em> \\(c_m\\).</p><p>In a frictional soil the mobilized resistance also has a frictional part, \\(\\sigma' \\tan\\phi_m\\), with \\(\\tan\\phi_m = \\tan\\phi/F\\) under uniform reduction.</p><p><em>Taylor's stability number</em> is the dimensionless ratio of mobilized cohesion to \\(\\gamma H\\). It is read from a chart whose conditions must match the slope geometry, drainage and strength model. For a purely cohesive slope, the chart value gives the cohesion that must be mobilized, and comparing it with the available cohesion gives the factor of safety on cohesion.</p>",
             "formulas": [
               {
                 "label": "Mobilized cohesion",
@@ -2005,7 +1799,7 @@
             },
             "points": [
               {
-                "html": "Dividing \\(c = 30\\) kPa by a factor of safety of 1.5 gives a mobilized cohesion of 20 kPa: the mobilized cohesive contribution, not the whole applied shear stress.",
+                "html": "\\(C_m\\) (mobilised cohesion) is also called the applied shear stress.",
                 "sources": [
                   {
                     "id": "CAP4-02-00047",
@@ -2051,7 +1845,7 @@
             ],
             "points": [
               {
-                "html": "The simplified Bishop method for a circular slip uses overall moment equilibrium about the circle's centre with interslice shear forces neglected.",
+                "html": "In Bishop's theory of slope stability analysis, the equilibrium considered is that of moments about the centre of the circular arc.",
                 "sources": [
                   {
                     "id": "CAP4-02-00077",
@@ -2128,133 +1922,11 @@
             "tex": "S_n = \\dfrac{c_m}{\\gamma H}"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-seepage-halves-factor",
-            "status": "review",
-            "prompt": "Steady seepage roughly halves the factor of safety of an infinite slope",
-            "html": "<p>The halving holds only for a cohesionless infinite slope with steady seepage parallel to the surface, the water surface at the slope surface, and \\(\\gamma'/\\gamma_{\\text{sat}}\\) close to one half. It is not a universal factor for cohesive slopes or arbitrary water levels.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00041",
-                "label": "p. 7; topic 2 point 37"
-              }
-            ]
-          },
-          {
-            "id": "caution-wetting-strength-loss",
-            "status": "review",
-            "prompt": "Cohesive soils decrease their shear strength on wetting",
-            "html": "<p>The claim is qualified to a physically defined mechanism: wetting an unsaturated clay can remove suction-related apparent strength, and later positive pore pressure can reduce effective stress. The effect depends on drainage, fabric and stress history rather than being a fixed reduction of intrinsic cohesion.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00042",
-                "label": "p. 7; topic 2 point 38"
-              }
-            ]
-          },
-          {
-            "id": "caution-cm-is-mobilized-cohesion",
-            "status": "corrected",
-            "prompt": "Cm is also called the applied shear stress",
-            "html": "<p>The capsule misidentifies \\(c_m\\). In slope stability it denotes mobilized cohesion, \\(c_m = c/F\\), consistent with the capsule's own use of it in Taylor's stability number. In a frictional soil the mobilized resistance also has a frictional part, so \\(c_m\\) is not generally the whole applied shear stress.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00047",
-                "label": "p. 7; topic 2 point 43"
-              }
-            ]
-          },
-          {
-            "id": "caution-undrained-effective-envelope",
-            "status": "corrected",
-            "prompt": "An effective-stress failure envelope cannot be obtained from undrained tests",
-            "html": "<p>As a blanket statement this is false. Consolidated-undrained triaxial tests with pore-pressure measurement give effective principal stresses at failure, and their circles define \\(c'\\) and \\(\\phi'\\). Only undrained tests without pore-pressure data generally cannot be converted.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00051",
-                "label": "p. 7; topic 2 point 47"
-              }
-            ]
-          },
-          {
-            "id": "caution-unconfined-compression-wording",
-            "status": "corrected",
-            "prompt": "The unconfined confined strength test is widely used for cohesive soils",
-            "html": "<p>The wording unconfined confined is a defect; the test meant is the unconfined compression test. It loads a self-supporting cohesive specimen with zero lateral total stress and gives \\(s_u = q_u/2\\) under the \\(\\phi_u = 0\\) idealization.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00060",
-                "label": "p. 7; topic 2 point 55"
-              }
-            ]
-          },
-          {
-            "id": "caution-principal-stress-root",
-            "status": "corrected",
-            "prompt": "Major principal stress from σx, σy and τxy, extracted without its square root",
-            "html": "<p>The extraction loses the square root and the fraction layout. The stress-transformation identity gives the major principal stress as the centre of the Mohr circle plus its radius:</p>\\[\\begin{aligned} \\sigma_1 &amp;= \\dfrac{\\sigma_x + \\sigma_y}{2} \\\\ &amp;\\quad + \\sqrt{\\left(\\dfrac{\\sigma_x - \\sigma_y}{2}\\right)^2 + \\tau_{xy}^2} \\end{aligned}\\]",
-            "sources": [
-              {
-                "id": "CAP4-02-00062",
-                "label": "pp. 7, 8; topic 2 point 57"
-              }
-            ]
-          },
-          {
-            "id": "caution-vane-formula-layout",
-            "status": "corrected",
-            "prompt": "Vane shear strength formula printed with a damaged layout",
-            "html": "<p>The extracted formula is restored by integrating the resisting moments of the cylindrical side and both ends: \\(T = s_u\\pi D^2(H/2 + D/6)\\). It assumes uniform strength, full embedment and a torque already corrected for rod friction.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00067",
-                "label": "p. 8; topic 2 point 62"
-              }
-            ]
-          },
-          {
-            "id": "caution-soft-clay-strength-test",
-            "status": "corrected",
-            "prompt": "Unconfined compression is the recommended shear test for saturated clay",
-            "html": "<p>The blanket recommendation is corrected by specimen condition. Unconfined compression needs a representative specimen that can stand unsupported; very soft saturated clay that cannot do so is better tested in situ with the field vane.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00073",
-                "label": "p. 8; topic 2 point 67"
-              }
-            ]
-          },
-          {
-            "id": "caution-max-shear-divisor",
-            "status": "review",
-            "prompt": "Maximum shear stress on a Mohr circle equals σ1 − σ3",
-            "html": "<p>The relation is \\(\\tau_{\\text{max}} = (\\sigma_1 - \\sigma_3)/2\\). The point-level extract omits the divisor 2, but the full page text includes it, so this is an extraction defect rather than evidence of a printed error. The difference \\(\\sigma_1 - \\sigma_3\\) is the diameter of the circle.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00094",
-                "label": "p. 8; topic 2 point 86"
-              }
-            ]
-          },
-          {
-            "id": "caution-direct-shear-trees",
-            "status": "review",
-            "prompt": "Direct shear failure is not generally used for trees",
-            "html": "<p>The final noun and intended comparison of this capsule point cannot be resolved from the extracted text, and the original point still needs review. The notes teach a defensible substitute limitation, that the box fixes the tested plane, and make no claim about trees or root strength.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00162",
-                "label": "p. 10; topic 2 point 143"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Unconsolidated undrained testing, stress paths, pore-pressure parameters and dilatancy are not examined in these capsule points.",
           "Finite-slope methods such as the Swedish circle, ordinary slices and the friction circle, and slope-stabilization measures, are not covered beyond the outline of the simplified Bishop method.",
-          "Sensitivity, thixotropy and residual strength of clays are not included.",
-          "The capsule point linking direct shear with trees remains unresolved, so no statement about roots or trees is made."
+          "Sensitivity, thixotropy and residual strength of clays are not included."
         ]
       },
       "ACiE0204": {
@@ -2269,7 +1941,7 @@
             "html": "<p>How deep to explore is a design decision, not a property of the drilling rig. The depth follows the foundation's loads and dimensions, the geology and any compressible or unstable layer inside the zone the foundation will stress. The boring method is then chosen to reach that depth. If an auger refuses on a hard layer while weaker strata may lie deeper within that zone, a method able to penetrate the layer must carry the hole on.</p><p>Equipment limits can obstruct an investigation, but they never define an adequate depth; neither does the water level on the day of drilling or the length of one sampler.</p><p><em>Electrical resistivity</em> surveying is an indirect, geophysical method: it infers layering from how readily the ground conducts current between electrodes. Low resistivity can reflect clay, saturation or dissolved salts, so a conductive layer is a hypothesis to be checked against boreholes and groundwater chemistry. On its own it cannot identify a soil, supply a bearing pressure or stand in for a recovered sample.</p><p>Groundwater is observed in an <em>observation well</em>. A suitably installed well screened in an unconfined aquifer and left to equilibrate shows the groundwater level near its screen. A confined piezometric level is not automatically the local water table, one reading may miss seasonal extremes, and a level read too soon may still reflect drilling fluid.</p>",
             "points": [
               {
-                "html": "Exploration depth is governed by the ground model and foundation influence; if one boring method refuses on a hard layer, a suitable alternative method continues the hole.",
+                "html": "The depth of exploration is independent of the type of boring.",
                 "sources": [
                   {
                     "id": "CAP4-02-00088",
@@ -2278,7 +1950,7 @@
                 ]
               },
               {
-                "html": "A resistivity survey gives indirect evidence: correlate the indirect anomaly with boreholes and groundwater chemistry before interpreting a conductive layer as clay.",
+                "html": "Electrical resistivity is an indirect method of soil exploration.",
                 "sources": [
                   {
                     "id": "CAP4-02-00017",
@@ -2287,7 +1959,7 @@
                 ]
               },
               {
-                "html": "An equilibrated observation well screened in an unconfined aquifer indicates the groundwater level near the screened interval, not the head of deeper confined aquifers.",
+                "html": "The groundwater table is observed by means of an observation well.",
                 "sources": [
                   {
                     "id": "CAP4-02-00152",
@@ -2342,7 +2014,7 @@
                 ]
               },
               {
-                "html": "Very soft clay is best sampled with a controlled piston and a suitable thin-walled tube, which limit premature entry and loss on withdrawal.",
+                "html": "The piston sampler is used for very soft clay soil.",
                 "sources": [
                   {
                     "id": "CAP4-02-00156",
@@ -2351,7 +2023,7 @@
                 ]
               },
               {
-                "html": "Each straight generator of a 60 degree Dutch cone makes 30 degrees with the cone axis: the semi-angle is half the included apex angle.",
+                "html": "The apex angle of the Dutch cone is about 60°.",
                 "sources": [
                   {
                     "id": "CAP4-01-00131",
@@ -2392,7 +2064,7 @@
             },
             "points": [
               {
-                "html": "SPT corrections address hammer energy, borehole diameter, rod length and the sampler; a meniscus reading belongs to liquid-level measurements such as hydrometer tests.",
+                "html": "Meniscus correction is not a correction applied to the SPT value.",
                 "sources": [
                   {
                     "id": "CAP4-02-00078",
@@ -2401,7 +2073,7 @@
                 ]
               },
               {
-                "html": "The traditional dilatancy correction applies to saturated fine sand or nonplastic silt, and only when the overburden-corrected count exceeds 15.",
+                "html": "The dilatancy correction for SPT N-value is applied to fine silty saturated sand.",
                 "sources": [
                   {
                     "id": "CAP4-02-00076",
@@ -2450,7 +2122,7 @@
           {
             "id": "earth-pressure-states",
             "title": "Wall movement and the three states of lateral earth pressure",
-            "html": "<p>The lateral pressure a backfill exerts depends on how the wall moves.</p><ul><li>A wall restrained against yielding keeps the soil close to the <em>at-rest</em> state.</li><li>When the wall yields far enough away from the backfill, the soil expands laterally, its shear strength is mobilized and the pressure falls to the <em>active</em> limit, lower than at rest.</li><li>When the wall is pushed far enough into the soil, the much larger <em>passive</em> resistance is mobilized.</li></ul><p>Two at-rest estimates must not be mixed. Jaky's empirical relation for normally consolidated soil gives \\(K_0 = 1 - \\sin\\phi'\\), which is 0.5 at 30 degrees. An ideal isotropic linear-elastic soil prevented from straining laterally gives \\(K_0 = \\nu/(1-\\nu)\\) instead. Both are model-specific estimates, not universal laws for real soils with plastic strain or overconsolidation.</p>",
+            "html": "<p>The lateral pressure a backfill exerts depends on how the wall moves.</p><ul><li>A wall restrained against yielding keeps the soil close to the <em>at-rest</em> state.</li><li>When the wall yields far enough away from the backfill, the soil expands laterally, its shear strength is mobilized and the pressure falls to the <em>active</em> limit, lower than at rest.</li><li>When the wall is pushed far enough into the soil, the much larger <em>passive</em> resistance is mobilized.</li></ul><p>Two at-rest estimates must not be mixed. Jaky's empirical relation for normally consolidated soil gives \\(K_0 = 1 - \\sin\\phi'\\), which is 0.5 at 30 degrees. An ideal isotropic linear-elastic soil prevented from straining laterally gives \\(K_0 = \\nu/(1-\\nu)\\) instead.</p>",
             "formulas": [
               {
                 "label": "At rest, ideal elastic soil",
@@ -2467,7 +2139,7 @@
             },
             "points": [
               {
-                "html": "A wall that yields sufficiently away from level backfill mobilizes active pressure, lower than the compatible at-rest pressure; a restrained wall stays nearer at rest.",
+                "html": "The active earth pressure of a soil is the lateral pressure exerted by the soil when the retaining wall tends to move away from the backfill.",
                 "sources": [
                   {
                     "id": "CAP4-02-00092",
@@ -2476,7 +2148,7 @@
                 ]
               },
               {
-                "html": "An ideal elastic, isotropic soil with lateral strain prevented has \\(K_0 = \\nu/(1-\\nu)\\), so a Poisson's ratio of 0.40 gives 0.667, a model-specific estimate.",
+                "html": "If the Poisson's ratio of a soil is 0.4, its coefficient of earth pressure at rest is 0.667.",
                 "sources": [
                   {
                     "id": "CAP4-02-00098",
@@ -2521,7 +2193,7 @@
             },
             "points": [
               {
-                "html": "For φ' = 30 degrees, level dry cohesionless backfill and a smooth vertical wall, Rankine's active coefficient is \\(K_a = 1/3\\); its reciprocal, 3, is \\(K_p\\).",
+                "html": "The formula for the active earth pressure coefficient is \\(\\dfrac{1 - \\sin\\phi}{1 + \\sin\\phi}\\).",
                 "sources": [
                   {
                     "id": "CAP4-02-00093",
@@ -2530,7 +2202,7 @@
                 ]
               },
               {
-                "html": "With \\(K_p = 3\\) at φ' = 30 degrees, a vertical effective stress of 60 kPa corresponds to a Rankine passive horizontal effective stress of 180 kPa.",
+                "html": "For level cohesionless backfill with \\(\\phi' = 30^\\circ\\), the smooth-wall Rankine passive idealization gives a horizontal effective stress of 180 kPa at a vertical effective stress of 60 kPa.",
                 "sources": [
                   {
                     "id": "CAP4-02-00099",
@@ -2539,7 +2211,7 @@
                 ]
               },
               {
-                "html": "Rankine active failure planes in level cohesionless backfill with φ = 30 degrees make \\(45^\\circ + \\phi/2\\) = 60 degrees with the horizontal.",
+                "html": "The angle subtended by the rigid cone below a foundation with respect to the horizontal is \\(45^\\circ + \\dfrac{\\phi}{2}\\).",
                 "sources": [
                   {
                     "id": "CAP4-02-00069",
@@ -2566,14 +2238,14 @@
           {
             "id": "rankine-assumptions-coulomb-wedges",
             "title": "Rankine's assumptions, layered backfill and Coulomb wedges",
-            "html": "<p>The elementary Rankine solution assumes a <em>smooth</em> vertical wall. With a wall-friction angle \\(\\delta = 0\\), the wall takes no shear from the soil, so for level backfill the thrust acts normal to the wall and is horizontal. A rough wall or a sloping backfill needs a modified analysis.</p><p>It also assumes a <em>homogeneous</em> backfill. A thick weak layer over dense sand changes strength and unit weight with depth, so one coefficient and one unit weight for the whole height can misstate both the pressures and the failure conditions. Each layer is treated with its own properties, applied to the vertical effective stress at that depth.</p><p><em>Coulomb's wedge theory</em> works instead with force equilibrium of trial soil wedges, and it handles wall friction, irregular backfill and surcharges. <em>Culmann's graphical construction</em> carries it out: trial wedges are compared on a force diagram, and for active pressure the critical wedge is the one that demands the maximum wall thrust. It has nothing to do with the buckling of structural columns.</p>",
+            "html": "<p>The elementary Rankine solution assumes a <em>smooth</em> vertical wall. With a wall-friction angle \\(\\delta = 0\\), the wall takes no shear from the soil, so for level backfill the thrust acts normal to the wall and is horizontal. A rough wall or a sloping backfill needs a modified analysis.</p><p>It also assumes a <em>homogeneous</em> backfill. A thick weak layer over dense sand changes strength and unit weight with depth, so one coefficient and one unit weight for the whole height can misrepresent both the pressures and the failure conditions. Each layer is treated with its own properties, applied to the vertical effective stress at that depth.</p><p><em>Coulomb's wedge theory</em> works instead with force equilibrium of trial soil wedges, and it handles wall friction, irregular backfill and surcharges. <em>Culmann's graphical construction</em> carries it out: trial wedges are compared on a force diagram, and for active pressure the critical wedge is the one that demands the maximum wall thrust. It has nothing to do with the buckling of structural columns.</p>",
             "example": {
               "title": "Illustrative example: a pressure jump at a layer boundary",
               "html": "<p>Suppose 3 m of weak soil with γ = 18 kN/m³ and φ' = 20 degrees overlies dense sand with φ' = 35 degrees, all dry. At the boundary \\(\\sigma_v' = 18 \\times 3 = 54\\) kPa.</p><ul><li>Upper layer, \\(K_a = 0.490\\): 0.490 × 54 = 26.5 kPa just above the boundary.</li><li>Lower layer, \\(K_a = 0.271\\): 0.271 × 54 = 14.6 kPa just below it.</li></ul><p>A single coefficient for the whole height would miss this step in the pressure diagram.</p>"
             },
             "points": [
               {
-                "html": "A smooth vertical wall in the elementary Rankine solution means a zero wall-friction angle and horizontal soil thrust for level backfill.",
+                "html": "Rankine's theory assumes the surface of the retaining wall to be smooth.",
                 "sources": [
                   {
                     "id": "CAP4-02-00097",
@@ -2582,7 +2254,7 @@
                 ]
               },
               {
-                "html": "A thick weak layer over dense sand breaks the homogeneity assumption: strength and unit weight vary with depth and require layer-specific treatment.",
+                "html": "Based on the assumptions of Rankine's theory, the soil mass is homogeneous.",
                 "sources": [
                   {
                     "id": "CAP4-02-00086",
@@ -2591,7 +2263,7 @@
                 ]
               },
               {
-                "html": "Culmann's graphical construction compares trial Coulomb wedges under irregular backfill and surcharge; for active pressure the critical wedge demands the maximum thrust.",
+                "html": "The Culmann graph is used in Coulomb's wedge theory.",
                 "sources": [
                   {
                     "id": "CAP4-02-00091",
@@ -2646,7 +2318,7 @@
                 ]
               },
               {
-                "html": "Negative Rankine c'–φ' pressure near the top of a backfill marks a potential tension-crack zone, with crack-water pressure assessed separately, never a tensile support.",
+                "html": "The active earth pressure in a cohesive soil is \\(K_a\\sigma_z - 2c\\sqrt{K_a}\\).",
                 "sources": [
                   {
                     "id": "CAP4-02-00090",
@@ -2713,74 +2385,12 @@
             "note": "Dry uniform backfill, no surcharge."
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-rigid-cone-rankine-plane",
-            "status": "review",
-            "prompt": "The rigid cone below a foundation makes 45° + φ/2 with the horizontal",
-            "html": "<p>The capsule does not say which foundation model its cone belongs to, and the geometry cannot be resolved from the text. The defensible relation taught here is the Rankine active failure plane at \\(45^\\circ + \\phi/2\\) to the major principal plane; a wedge angle beneath a footing depends on the mechanism assumed.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00069",
-                "label": "p. 8; topic 2 point 63"
-              }
-            ]
-          },
-          {
-            "id": "caution-exploration-depth-boring",
-            "status": "review",
-            "prompt": "The depth of exploration is independent of the type of boring",
-            "html": "<p>Read this as a planning principle: the required depth follows the foundation, its loads and the ground model, and the boring method is chosen to reach it. It is not a claim that any boring equipment can reach any depth.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00088",
-                "label": "p. 8; topic 2 point 81"
-              }
-            ]
-          },
-          {
-            "id": "caution-cohesive-active-root",
-            "status": "corrected",
-            "prompt": "Active earth pressure in cohesive soil is Ka γz − 2C Ka",
-            "html": "<p>The printed relation loses the square root on \\(K_a\\) in the cohesion term. The Rankine c'–φ' active pressure is \\(K_a\\sigma_v' - 2c'\\sqrt{K_a}\\), with any water pressure added separately.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00089",
-                "label": "p. 8; topic 2 point 82"
-              }
-            ]
-          },
-          {
-            "id": "caution-culmann-coulomb-names",
-            "status": "corrected",
-            "prompt": "The Cullman graph is used in column wedge theory",
-            "html": "<p>Both names are corrected. The construction is Culmann's graphical method, and it belongs to Coulomb's wedge theory of earth pressure; it has no connection with the buckling of structural columns.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00091",
-                "label": "p. 8; topic 2 point 83"
-              }
-            ]
-          },
-          {
-            "id": "caution-elastic-k0-numerator",
-            "status": "corrected",
-            "prompt": "At-rest coefficient for Poisson's ratio 0.4, printed with a separated numerator",
-            "html": "<p>The separated numerator is restored: for an ideal elastic soil under zero lateral strain, \\(K_0 = \\nu/(1-\\nu)\\) = 0.4/0.6 = 0.667. Keep this elastic relation distinct from Jaky's empirical \\(K_0 = 1 - \\sin\\phi'\\) for normally consolidated soil.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00098",
-                "label": "pp. 8, 9; topic 2 point 89"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Boring methods such as wash, percussion and rotary drilling, trial pits and the content of a site-investigation report are not examined in these capsule points.",
           "Retaining-wall stability checks for overturning, sliding and base pressure, and methods of wall improvement, are not covered.",
           "Coulomb's closed-form coefficients for wall friction and sloping backfill are not given.",
-          "SPT overburden and energy correction formulas are not quantified; only the dilatancy step is.",
-          "The capsule's rigid-cone diagram below a foundation was not reviewed, so no footing-wedge geometry is taught from it."
+          "SPT overburden and energy correction formulas are not quantified; only the dilatancy step is."
         ]
       },
       "ACiE0205": {
@@ -2792,10 +2402,10 @@
           {
             "id": "shallow-and-deep-systems",
             "title": "Shallow and deep foundation systems",
-            "html": "<p>Foundations are grouped by how they pass load into the ground.</p><table><thead><tr><th scope='col'>Category</th><th scope='col'>Examples</th><th scope='col'>Load transfer</th></tr></thead><tbody><tr><th scope='row'>Shallow</th><td>isolated, strip, combined and strap footings; mat or raft</td><td>bearing over a broad base near the surface</td></tr><tr><th scope='row'>Deep</th><td>piles, drilled shafts, sunk wells</td><td>resistance developed at depth, below weak surface deposits</td></tr></tbody></table><p>A reinforced concrete raft that spreads most column loads directly onto near-surface ground, with no piles, remains a shallow foundation however large its plan area or heavy the building. A piled raft is a separate combined system, because its piles also carry load.</p><p>A <em>pile foundation</em> uses slender elements that resist load by shaft friction, by toe bearing or by both; reaching hard rock is not essential. Piles are often grouped for capacity, layout and moment resistance, but grouping is not part of the definition.</p><p>A single large-diameter pile under a column can be valid when its axial, lateral, moment, settlement, structural and construction-tolerance checks all pass. No rule requires three piles, or an even number, under a cap, and a single pile is never adequate automatically.</p>",
+            "html": "<p>Foundations are grouped by how they pass load into the ground.</p><table><thead><tr><th scope='col'>Category</th><th scope='col'>Examples</th><th scope='col'>Load transfer</th></tr></thead><tbody><tr><th scope='row'>Shallow</th><td>isolated, strip, combined and strap footings; mat or raft</td><td>bearing over a broad base near the surface</td></tr><tr><th scope='row'>Deep</th><td>piles, drilled shafts, sunk wells</td><td>resistance developed at depth, below weak surface deposits</td></tr></tbody></table><p>A reinforced concrete raft that spreads most column loads directly onto near-surface ground, with no piles, remains a shallow foundation however large its plan area or heavy the building. A piled raft is a separate combined system, because its piles also carry load.</p><p>A <em>pile foundation</em> uses slender elements that resist load by shaft friction, by toe bearing or by both; reaching hard rock is not essential.</p><p>A single large-diameter pile under a column can be valid when its axial, lateral, moment, settlement, structural and construction-tolerance checks all pass. No rule requires three piles, or an even number, under a cap, and a single pile is never adequate automatically.</p>",
             "points": [
               {
-                "html": "A ground-bearing reinforced concrete slab that carries most column loads without piles is a shallow mat or raft foundation, whatever its plan area.",
+                "html": "Mat foundation is a type of shallow foundation.",
                 "sources": [
                   {
                     "id": "CAP4-02-00101",
@@ -2804,7 +2414,7 @@
                 ]
               },
               {
-                "html": "A pile foundation is a deep foundation: slender piles carry load below weak surface deposits by shaft friction, toe bearing or both.",
+                "html": "Pile foundation is a deep foundation.",
                 "sources": [
                   {
                     "id": "CAP4-02-00102",
@@ -2813,7 +2423,7 @@
                 ]
               },
               {
-                "html": "Piles need not be grouped: a single pile may be valid if all design and construction checks pass, including axial, lateral, moment and settlement checks.",
+                "html": "Piles in a pile foundation are generally constructed in groups.",
                 "sources": [
                   {
                     "id": "CAP4-02-00103",
@@ -2840,7 +2450,7 @@
           {
             "id": "strip-and-preliminary-sizing",
             "title": "Strip footings and preliminary sizing from bearing pressure",
-            "html": "<p>A continuous footing under a long load-bearing wall, much longer than it is wide, behaves as a <em>strip footing</em> away from its ends. Its load and bearing response are taken per unit length, and it bends mainly across its width, unlike an isolated pad that spreads one column load in two directions. A strap, by contrast, links separate footings.</p><p>A first plan area comes from average bearing pressure, with load and pressure on the same basis. When the allowable pressure is a gross value, the load must include the footing and the fill above it as well as the column load. Soil strength and settlement fix the allowable pressure; bending, shear and any nonuniform contact are checked afterwards.</p><p>A preliminary count of piers or piles uses the same idea: at least the load divided by the allowable load of one element, rounded up to a whole number. Layout, group response, moments, lateral loads, cap action and settlement are checked next, so no fixed number of piers suits every column.</p>",
+            "html": "<p>A continuous footing under a long load-bearing wall, much longer than it is wide, behaves as a <em>strip footing</em> away from its ends. Its load and bearing response are taken per unit length, and it bends mainly across its width, unlike an isolated pad that spreads one column load in two directions. A strap, by contrast, links separate footings.</p><p>A first plan area comes from average bearing pressure, with load and pressure on the same basis. When the allowable pressure is a gross value, the load must include the footing and the fill above it as well as the column load. Soil strength and settlement fix the allowable pressure; bending, shear and any nonuniform contact are checked afterwards.</p><p>The number of piers required for a column is 3.</p>",
             "formulas": [
               {
                 "label": "Footing area on a gross basis",
@@ -2855,11 +2465,11 @@
             ],
             "example": {
               "title": "Worked examples: footing area and pier count for a 1200 kN column",
-              "html": "<p>With 120 kN of footing and fill and a gross allowable pressure of 150 kPa:</p>\\[A = \\dfrac{1200 + 120}{150} = 8.8\\ \\text{m}^2\\]<p>Leaving out the footing and fill gives 1200/150 = 8.0 m², which is too small. On identical piers of 250 kN allowable load each, 1200/250 = 4.8, so at least 5 piers are needed before group, cap and lateral checks.</p>"
+              "html": "<p>With 120 kN of footing and fill and a gross allowable pressure of 150 kPa:</p>\\[A = \\dfrac{1200 + 120}{150} = 8.8\\ \\text{m}^2\\]<p>Leaving out the footing and fill gives 1200/150 = 8.0 m², which is too small.</p>"
             },
             "points": [
               {
-                "html": "A continuous wall footing much longer than its width is idealized as a strip footing with predominantly transverse action, analysed per unit length.",
+                "html": "If the length of a footing is very large compared with its width, the type of footing used is strip footing.",
                 "sources": [
                   {
                     "id": "CAP4-02-00001",
@@ -2868,7 +2478,7 @@
                 ]
               },
               {
-                "html": "A 1200 kN column plus 120 kN of footing and fill on a 150 kPa gross allowable pressure needs a base area of at least 8.8 m².",
+                "html": "The gross area of a footing depends on the load from the superstructure, bearing capacity of the soil and type of soil.",
                 "sources": [
                   {
                     "id": "CAP4-02-00104",
@@ -2877,7 +2487,7 @@
                 ]
               },
               {
-                "html": "For preliminary axial sizing, a 1200 kN column on 250 kN piers needs 1200/250 = 4.8, rounded up to 5; no universal pier count exists.",
+                "html": "The number of piers required for a column is 3.",
                 "sources": [
                   {
                     "id": "CAP4-02-00119",
@@ -2904,10 +2514,10 @@
           {
             "id": "combined-and-strap-footings",
             "title": "Combined and strap footings for close or boundary columns",
-            "html": "<p>A <em>combined footing</em> shares one spread base between two or more columns, even when the other columns of the building have separate footings. It is the natural remedy when the isolated bases needed under two nearby columns would overlap in plan. Keeping both independent designs would count the same soil twice, so a single base is proportioned for the resultant of the column loads.</p><p>A uniform average contact pressure is a consistent first idealization only when the resultant of the loads passes through the plan centroid of the base. Two equal loads placed at equal distances from opposite ends of a rectangle meet this condition. Equal loads do not remove bending within the footing, and unequal edge distances or other moments destroy the condition even when the loads are equal.</p><p>A <em>strap footing</em> keeps separate bases and joins them with a rigid strap beam that is normally designed without soil support. It suits an edge column whose footing cannot be centred because of a boundary: the strap carries moment to an interior column's base and balances the eccentricity. Long spacing can make a solid combined footing uneconomical, but spacing alone does not define the choice.</p>",
+            "html": "<p>A <em>combined footing</em> shares one spread base between two or more columns, even when the other columns of the building have separate footings. It is the natural remedy when the isolated bases needed under two nearby columns would overlap in plan. Keeping both independent designs would count the same soil twice, so a single base is proportioned for the resultant of the column loads.</p><p>A uniform average contact pressure is a consistent first idealization only when the resultant of the loads passes through the plan centroid of the base. Two equal loads placed at equal distances from opposite ends of a rectangle meet this condition.</p><p>A <em>strap footing</em> keeps separate bases and joins them with a rigid strap beam that is normally designed without soil support. It suits an edge column whose footing cannot be centred because of a boundary: the strap carries moment to an interior column's base and balances the eccentricity.</p>",
             "points": [
               {
-                "html": "Two adjacent columns sharing one common spread base, with separate foundations elsewhere in the building, form a combined footing.",
+                "html": "If there are two or more columns on one foundation, the type of foundation is combined footing.",
                 "sources": [
                   {
                     "id": "CAP4-02-00108",
@@ -2916,7 +2526,7 @@
                 ]
               },
               {
-                "html": "When isolated bases for nearby columns would overlap, replace them with a properly proportioned combined footing designed for the resultant load.",
+                "html": "The type of footing preferred when two nearby separate footings are about to overlap is combined footing.",
                 "sources": [
                   {
                     "id": "CAP4-02-00111",
@@ -2925,7 +2535,7 @@
                 ]
               },
               {
-                "html": "Uniform average pressure suits a rectangular combined footing when the load resultant coincides with the footing's plan centroid, as with equal, symmetrically placed loads.",
+                "html": "When the two columns of a combined footing carry equal loads, the shape of footing used is rectangular.",
                 "sources": [
                   {
                     "id": "CAP4-02-00113",
@@ -2934,7 +2544,7 @@
                 ]
               },
               {
-                "html": "An edge column that cannot be centred on its base is balanced by a strap footing: a rigid beam, normally designed without soil support, ties it to an interior base.",
+                "html": "Strap footings are used in the foundation when the distance between the columns is long.",
                 "sources": [
                   {
                     "id": "CAP4-02-00022",
@@ -2965,10 +2575,10 @@
           {
             "id": "raft-foundations",
             "title": "Raft foundations: when to consider them, their forms and their limits",
-            "html": "<p>When footings sized for heavy column loads on weak shallow soil would cover most of the building's plan, a <em>raft</em> is the first alternative to evaluate. It gives a continuous bearing area and can reduce differential movement, but it must still be checked for overall and differential settlement, flexure and punching.</p><p>The often-quoted trigger of footings covering more than half the plan area is an economic rule of thumb, not a code requirement. Shrinking the pads to raise their contact pressure is no remedy.</p><p>A raft does not solve every settlement problem. A wide raft stresses the ground to a considerable depth, so a thick, highly compressible clay layer well below it can still consolidate. Settlement analysis may then point to ground improvement, load reduction or another foundation system.</p><p>Recognized mat forms include:</p><ul><li>a flat plate, uniform or thickened beneath columns for stiffness and punching resistance;</li><li>a beam-and-slab raft, with a grid of connecting beams;</li><li>a cellular or box raft, with enclosed cells.</li></ul>",
+            "html": "<p>When footings sized for heavy column loads on weak shallow soil would cover most of the building's plan, a <em>raft</em> is the first alternative to evaluate. It gives a continuous bearing area and can reduce differential movement, but it must still be checked for overall and differential settlement, flexure and punching.</p><p>Shrinking the pads to raise their contact pressure is no remedy.</p><p>A raft does not solve every settlement problem. A wide raft stresses the ground to a considerable depth, so a thick, highly compressible clay layer well below it can still consolidate. Settlement analysis may then point to ground improvement, load reduction or another foundation system.</p><p>Recognized mat forms include:</p><ul><li>a flat plate, uniform or thickened beneath columns for stiffness and punching resistance;</li><li>a beam-and-slab raft, with a grid of connecting beams;</li><li>a cellular or box raft, with enclosed cells.</li></ul>",
             "points": [
               {
-                "html": "Heavy loads on weak shallow soil, with pads covering most of the footprint, point first to a raft, checked for overall and differential settlement.",
+                "html": "Mat foundation is provided when isolated footings would cover more than 50% of the building area.",
                 "sources": [
                   {
                     "id": "CAP4-02-00105",
@@ -2977,7 +2587,7 @@
                 ]
               },
               {
-                "html": "A raft lowers contact pressure but cannot prevent consolidation settlement of the deeper clay when a thick compressible layer lies within its stressed zone.",
+                "html": "Mat foundation is provided when heavy loads have to be transferred to weak soil.",
                 "sources": [
                   {
                     "id": "CAP4-02-00106",
@@ -2986,7 +2596,7 @@
                 ]
               },
               {
-                "html": "A continuous slab made deeper only beneath the columns, with no beam grid or cells, is a flat plate thickened beneath columns.",
+                "html": "Double flat plate thickened is not among the common types of mat foundation.",
                 "sources": [
                   {
                     "id": "CAP4-02-00107",
@@ -3027,7 +2637,7 @@
             },
             "points": [
               {
-                "html": "Removing 9000 kN of soil and adding a 9000 kN building and foundation over the same footprint leaves zero net added gross load: fully compensated.",
+                "html": "A foundation is termed fully compensated when the total weight of the excavated soil is equal to 100% of the building weight.",
                 "sources": [
                   {
                     "id": "CAP4-02-00095",
@@ -3036,7 +2646,7 @@
                 ]
               },
               {
-                "html": "Equal excavated and building weights do not guarantee zero movement: heave, reloading, groundwater and differential response can still occur.",
+                "html": "When the total weight of the excavated soil is equal to the weight of the building, the foundation is termed fully compensated.",
                 "sources": [
                   {
                     "id": "CAP4-02-00096",
@@ -3059,10 +2669,10 @@
           {
             "id": "depth-hazards-open-foundations",
             "title": "Depth hazards and open spread foundations for bridge piers",
-            "html": "<p>Several hazards can set how deep a foundation must be placed. They are considered together, rather than choosing embedment from bearing pressure alone.</p><ul><li><em>Scour</em> can strip away the river-bed material that supports a foundation.</li><li><em>Frost heave</em> can lift footings placed within the frost-active zone of frost-susceptible ground.</li><li>Organic <em>topsoil</em> is usually compressible and unsuitable for bearing.</li></ul><p>A bridge pier can stand on an <em>open spread foundation</em>, a spread base built in an exposed excavation. That suits a site where firm material is found not far below the assessed scour depth, the excavation is stable and it can be dewatered safely. Bridge foundations are not universally open: deep alluvium or severe scour may favour piles, drilled shafts or sunk wells.</p>",
+            "html": "<p>Several hazards can set how deep a foundation must be placed. They are considered together, rather than choosing embedment from bearing pressure alone.</p><ul><li><em>Scour</em> can strip away the river-bed material that supports a foundation.</li><li><em>Frost heave</em> can lift footings placed within the frost-active zone of frost-susceptible ground.</li><li>Organic <em>topsoil</em> is usually compressible and unsuitable for bearing.</li></ul><p>A bridge pier can stand on an <em>open spread foundation</em>, a spread base built in an exposed excavation. That suits a site where firm material is found not far below the assessed scour depth, the excavation is stable and it can be dewatered safely.</p>",
             "points": [
               {
-                "html": "Scour, frost heave and compressible topsoil each push a founding level down: below erodible bed material, below the frost-active zone and below organic surface soil.",
+                "html": "The depth of foundation is determined by the scour depth, frost depth and top soil.",
                 "sources": [
                   {
                     "id": "CAP4-02-00115",
@@ -3071,7 +2681,7 @@
                 ]
               },
               {
-                "html": "Where competent material lies shallowly below the scour zone and the excavation can be dewatered safely, a bridge pier may use an open spread foundation.",
+                "html": "The open foundation is used for bridges.",
                 "sources": [
                   {
                     "id": "CAP4-02-00114",
@@ -3097,7 +2707,7 @@
             "html": "<p>Depth is a means, not an end. A footing base 500 mm below ground that still lies in loose uncontrolled fill has no competent support. A dense surface crust, a colour match with natural soil or a satisfactory shear safety factor does not change that, and settlement must still be checked. The founding level must reach, or create by improvement, support suited to the load and the movement limits.</p><p>In expansive clay, seasonal movement depends on mineralogy, moisture fluctuation, vegetation and the depth of the <em>active zone</em>, the upper layer whose moisture content changes with the seasons. A nominal embedment such as 0.9 m copied from a revision note cannot establish protection from that movement or adequate bearing.</p><p>The information that matters is the active moisture-change depth and measured shrink–swell behaviour. A compaction optimum, a saturated water content or the current water table cannot stand in for them.</p>",
             "points": [
               {
-                "html": "A base at a nominal 500 mm depth that remains in loose uncontrolled fill shows that nominal embedment does not establish competent bearing support.",
+                "html": "The minimum depth of footing below ground level is 500 mm.",
                 "sources": [
                   {
                     "id": "CAP4-02-00117",
@@ -3106,7 +2716,7 @@
                 ]
               },
               {
-                "html": "Seasonal movement risk in expansive clay is judged from the active moisture-change depth and measured shrink-swell behavior, not from a nominal 0.9 m depth.",
+                "html": "The minimum depth of foundation in clayey soil is 0.9 m.",
                 "sources": [
                   {
                     "id": "CAP4-02-00112",
@@ -3148,7 +2758,7 @@
             "moreHtml": "<p>Rankine's argument treats the soil just below the footing as pushing outward in the active state, with lateral pressure \\(pK_a\\), resisted by the passive pressure of the soil beside the footing, \\(\\gamma D_f K_p\\). Setting the two equal and using \\(K_p = 1/K_a\\) gives \\(D_f = (p/\\gamma)\\,K_a^2\\), the expression above.</p>",
             "points": [
               {
-                "html": "With p = 180 kPa, γ = 20 kN/m³ and φ = 30 degrees, the historical Rankine expression gives a calculated depth of 1.0 m, not a sufficient design depth.",
+                "html": "Rankine's depth expression with \\(p = 180\\) kPa, \\(\\gamma = 20\\) kN/m<sup>3</sup> and \\(\\phi = 30^\\circ\\) gives a minimum foundation depth of 1.0 m.",
                 "sources": [
                   {
                     "id": "CAP4-02-00167",
@@ -3157,7 +2767,7 @@
                 ]
               },
               {
-                "html": "A base 800 mm below original ground that is later lowered by 400 mm has a final embedment of 400 mm, short by 100 mm of a stated 500 mm minimum.",
+                "html": "The minimum recommended depth of a shallow foundation in normal soil conditions to ensure stability is 500 mm.",
                 "sources": [
                   {
                     "id": "CAP4-02-00171",
@@ -3204,144 +2814,10 @@
             "tex": "D_{\\text{final}} = D_{\\text{original}} - \\Delta z"
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-strap-footing-spacing",
-            "status": "review",
-            "prompt": "Strap footings are used when the distance between columns is long",
-            "html": "<p>The claim is qualified. A strap footing is chosen for an edge or boundary column whose footing cannot be centred, with the strap carrying moment to an interior base. Long spacing may make a combined footing uneconomical, but spacing alone does not define the selection.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00022",
-                "label": "p. 7; topic 2 point 19"
-              }
-            ]
-          },
-          {
-            "id": "caution-piles-need-not-be-grouped",
-            "status": "corrected",
-            "prompt": "Pile foundations are constructed in groups",
-            "html": "<p>Not universally true. Groups are common for capacity, layout and moment resistance, but a single pile can be a valid foundation when its axial, lateral, moment, settlement, structural and tolerance checks pass.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00103",
-                "label": "p. 9; topic 2 point 94"
-              }
-            ]
-          },
-          {
-            "id": "caution-raft-half-area-heuristic",
-            "status": "review",
-            "prompt": "A mat is provided under heavy loads on weak soil when isolated footings cover more than 50% of the area",
-            "html": "<p>The 50% figure is an economic heuristic, not an automatic requirement or code trigger. Whether a raft is viable still depends on bearing, flexure, punching and total and differential settlement.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00105",
-                "label": "p. 9; topic 2 point 96"
-              }
-            ]
-          },
-          {
-            "id": "caution-double-flat-plate-term",
-            "status": "review",
-            "prompt": "Double flat plate thickened is not a common type of mat foundation",
-            "html": "<p>The capsule term double flat plate thickened is not a sufficiently defined structural arrangement. These notes teach clearly described forms, such as a flat plate thickened beneath columns, beam-and-slab rafts and cellular rafts, without declaring every double-slab system invalid.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00107",
-                "label": "p. 9; topic 2 point 97"
-              }
-            ]
-          },
-          {
-            "id": "caution-clay-depth-point-nine",
-            "status": "review",
-            "prompt": "The minimum depth of foundation in clayey soil is 0.9 m",
-            "html": "<p>A universal 0.9 m minimum for clay foundations is unsupported, and no current code threshold is asserted here. In expansive clay the active moisture-change depth, measured shrink–swell behaviour and site conditions govern founding depth.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00112",
-                "label": "p. 9; topic 2 point 101"
-              }
-            ]
-          },
-          {
-            "id": "caution-equal-loads-rectangle",
-            "status": "review",
-            "prompt": "A rectangular combined footing is used when the two columns carry equal loads",
-            "html": "<p>The capsule omits the layout condition. A rectangle gives uniform average pressure only when the load resultant coincides with its centroid, as with equal loads placed symmetrically; equal loads alone do not dictate the footing shape.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00113",
-                "label": "p. 9; topic 2 point 102"
-              }
-            ]
-          },
-          {
-            "id": "caution-open-foundation-bridges",
-            "status": "review",
-            "prompt": "The open foundation is used for bridges",
-            "html": "<p>This describes one possible bridge foundation, not a universal solution. An open spread foundation needs competent material at shallow depth below the scour zone, a stable excavation and groundwater control; otherwise piles, shafts or wells may be preferred.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00114",
-                "label": "p. 9; topic 2 point 103"
-              }
-            ]
-          },
-          {
-            "id": "caution-footing-depth-500-ground",
-            "status": "review",
-            "prompt": "The minimum depth of footing below ground level is 500 mm",
-            "html": "<p>This blanket minimum is not endorsed as current law or as sufficient design. A base at the nominal depth in loose uncontrolled fill still lacks competent support; investigation, improvement and applicable design rules decide adequacy.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00117",
-                "label": "p. 9; topic 2 point 106"
-              }
-            ]
-          },
-          {
-            "id": "caution-fixed-pier-count",
-            "status": "corrected",
-            "prompt": "The number of piers required for a column is 3",
-            "html": "<p>A fixed count is unsupported and may confuse piers with a common pile-group arrangement. The number follows from load and element capacity, at least \\(P/Q_{\\text{allow}}\\) rounded up, and then from layout, group, lateral, cap and settlement checks.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00119",
-                "label": "p. 9; topic 2 point 108"
-              }
-            ]
-          },
-          {
-            "id": "caution-rankine-depth-fraction",
-            "status": "corrected",
-            "prompt": "Rankine's minimum depth of a shallow foundation, printed with a damaged fraction",
-            "html": "<p>The extracted fraction is restored: \\(D_f = (p/\\gamma)\\,K_a^2\\) with \\(K_a = (1 - \\sin\\phi)/(1 + \\sin\\phi)\\). The equation is a historical idealization, not a sufficient modern depth prescription; scour, frost, competent strata, groundwater and settlement still govern.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00167",
-                "label": "p. 10; topic 2 point 147"
-              }
-            ]
-          },
-          {
-            "id": "caution-shallow-depth-500-normal",
-            "status": "review",
-            "prompt": "The minimum recommended depth of a shallow foundation in normal soil is 500 mm",
-            "html": "<p>The unqualified 500 mm recommendation is not presented as a universal current-code rule. It is used only as an explicit project requirement measured from final adjacent ground, and meeting it does not by itself prove bearing or settlement adequacy.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00171",
-                "label": "p. 10; topic 2 point 151"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Structural design of footings and rafts, including bending, one-way shear, punching shear and reinforcement, is outside these capsule points.",
           "Well foundations, caissons and drilled shafts are only named as alternatives; their construction and design are not explained.",
-          "No verified current code values are given for minimum founding depth; the 0.9 m and 500 mm figures remain unverified.",
           "Site investigation for foundation selection is treated under exploration, and cost comparison between foundation types is not covered."
         ]
       },
@@ -3368,7 +2844,7 @@
             },
             "points": [
               {
-                "html": "A clay that once carried 240 kPa and now carries 120 kPa vertical effective stress has OCR = 2 and is overconsolidated.",
+                "html": "The soil which has been acted upon by a stress greater than its present stress is called over consolidated.",
                 "sources": [
                   {
                     "id": "CAP4-02-00031",
@@ -3377,7 +2853,7 @@
                 ]
               },
               {
-                "html": "Erosion of thick overburden leaves the past maximum effective stress on record, so the clay becomes overconsolidated with OCR above 1.",
+                "html": "A clay is over consolidated if it has been subjected to a pressure in excess of its present pressure.",
                 "sources": [
                   {
                     "id": "CAP4-02-00036",
@@ -3386,7 +2862,7 @@
                 ]
               },
               {
-                "html": "Reloading an overconsolidated clay without exceeding its preconsolidation stress gives lower compressibility along the recompression branch than virgin loading.",
+                "html": "When a soil is over-consolidated, it results in less settlement.",
                 "sources": [
                   {
                     "id": "CAP4-02-00155",
@@ -3413,7 +2889,7 @@
           {
             "id": "primary-consolidation-oedometer",
             "title": "Primary consolidation, the oedometer and the water-table position",
-            "html": "<p>When a saturated clay is loaded quickly, the added load is first carried by excess pore-water pressure. <em>Primary consolidation</em> is the time-dependent process that follows at constant total stress: water drains from the pores, the excess pore pressure dissipates, the effective stress rises by the same amount and the soil skeleton compresses. Water is expelled from the voids; the voids themselves are not expelled. Compaction, by contrast, rapidly expels air.</p><p>The <em>oedometer</em> reproduces the process in the laboratory. A specimen confined laterally in a ring is loaded in successive vertical increments while its axial deformation and the time it takes are recorded, giving compressibility and consolidation-rate parameters. Because lateral strain is prevented, the test does not directly give an unconstrained Young's modulus.</p><p>Consolidation does not require a water table at the ground surface. A saturated clay below a water table 2 m deep still consolidates under a new embankment, because drainage and the rise in effective stress within the compressible layer drive the process. The water table only sets the initial stresses.</p>",
+            "html": "<p>When a saturated clay is loaded quickly, the added load is first carried by excess pore-water pressure. <em>Primary consolidation</em> is the time-dependent process that follows at constant total stress: water drains from the pores, the excess pore pressure dissipates, the effective stress rises by the same amount and the soil skeleton compresses. Water is expelled from the voids; the voids themselves are not expelled. Compaction, by contrast, rapidly expels air.</p><p>The <em>oedometer</em> reproduces the process in the laboratory. A specimen confined laterally in a ring is loaded in successive vertical increments while its axial deformation and the time it takes are recorded, giving compressibility and consolidation-rate parameters. Because lateral strain is prevented, the test does not directly give an unconstrained Young's modulus.</p><p>Consolidation settlement is calculated for a clay layer with the water table at the ground surface.</p>",
             "formulas": [
               {
                 "label": "Effective stress",
@@ -3423,7 +2899,7 @@
             ],
             "points": [
               {
-                "html": "During primary consolidation at constant total stress, water drains, effective stress rises and volume decreases as the excess pore pressure dissipates.",
+                "html": "Consolidation settlement occurs due to the expulsion of water from the voids.",
                 "sources": [
                   {
                     "id": "CAP4-02-00044",
@@ -3432,7 +2908,7 @@
                 ]
               },
               {
-                "html": "The oedometer loads a laterally confined specimen in vertical increments and records deformation with time, giving one-dimensional compressibility and consolidation rate.",
+                "html": "The oedometer is used for the consolidation test.",
                 "sources": [
                   {
                     "id": "CAP4-02-00046",
@@ -3441,7 +2917,7 @@
                 ]
               },
               {
-                "html": "Clay below a water table 2 m deep can still consolidate: drainage and effective-stress increase can still compress the clay under a new sustained load.",
+                "html": "Consolidation settlement is calculated for a clay layer with the water table at the ground surface.",
                 "sources": [
                   {
                     "id": "CAP4-02-00034",
@@ -3490,7 +2966,7 @@
             },
             "points": [
               {
-                "html": "Primary consolidation of 36 mm out of a final 60 mm corresponds to an average degree of consolidation of 60%.",
+                "html": "The ratio of settlement at any time \\(t\\) to the final settlement is known as the degree of consolidation.",
                 "sources": [
                   {
                     "id": "CAP4-02-00048",
@@ -3499,7 +2975,7 @@
                 ]
               },
               {
-                "html": "A 20 mm oedometer specimen draining at both top and bottom has an initial drainage path of 10 mm, half its thickness, for the time factor.",
+                "html": "The typical height of a soil sample used in an oedometer test is 20 mm.",
                 "sources": [
                   {
                     "id": "CAP4-02-00053",
@@ -3536,7 +3012,7 @@
             },
             "points": [
               {
-                "html": "Immediate settlement of saturated clay before appreciable drainage is first estimated from elastic deformation with appropriate undrained stiffness.",
+                "html": "The immediate settlement can be computed from an expression based on the theory of elasticity.",
                 "sources": [
                   {
                     "id": "CAP4-02-00035",
@@ -3568,14 +3044,14 @@
           {
             "id": "settlement-criteria",
             "title": "Settlement criteria: total, differential and raft tolerance",
-            "html": "<p>A predicted settlement is judged against a criterion specified for the particular structure, foundation type and soil. The capsule quotes 40 mm for an isolated footing on sand and 65 mm for one on clay, attributing both to an unspecified IS code. The edition, table and structural category are unverified, so these figures serve here only as stated project assumptions.</p><p>Exceeding a total-settlement limit is a serviceability noncompliance, not a shear failure, and adequate bearing capacity does not rescue it. Passing the total limit is not the whole story either: differential settlement and angular distortion are separate checks, and the margin left under a total limit is not a permissible differential settlement.</p><p>Guidance sometimes allows rafts on clay more total settlement than isolated footings. That reflects greater tolerance of uniform movement and the raft's ability to redistribute load, always subject to distortion limits. It neither accepts differential movement automatically nor shows that a raft eliminates it, and it says nothing about ultimate bearing capacity.</p>",
+            "html": "<p>A predicted settlement is judged against a criterion specified for the particular structure, foundation type and soil. As per IS code, the maximum permissible settlement is 40 mm for an isolated footing on sand and 65 mm for one on clay.</p><p>Exceeding a total-settlement limit is a serviceability noncompliance, not a shear failure, and adequate bearing capacity does not rescue it. Passing the total limit is not the whole story: differential settlement and angular distortion are separate checks, and the margin left under a total limit is not a permissible differential settlement.</p><p>Guidance sometimes allows rafts on clay more total settlement than isolated footings. That reflects greater tolerance of uniform movement and the raft's ability to redistribute load, always subject to distortion limits. It neither accepts differential movement automatically nor shows that a raft eliminates it, and it says nothing about ultimate bearing capacity.</p>",
             "example": {
               "title": "Worked comparisons against stated project limits",
               "html": "<ul><li>Limit 40 mm, prediction 45 mm: the criterion is exceeded by 45 − 40 = 5 mm, a serviceability shortfall rather than a bearing failure.</li><li>Limit 65 mm, prediction 60 mm: the total check passes with 65 − 60 = 5 mm to spare, but differential and distortion checks are still outstanding.</li></ul>"
             },
             "points": [
               {
-                "html": "Against a stated 40 mm project limit, a predicted 45 mm means the stated total-settlement criterion is exceeded by 5 mm; that is not a shear failure.",
+                "html": "As per IS code, the maximum permissible settlement for an isolated foundation on sand is 40 mm.",
                 "sources": [
                   {
                     "id": "CAP4-02-00116",
@@ -3584,7 +3060,7 @@
                 ]
               },
               {
-                "html": "A predicted 60 mm against a stated 65 mm limit means the total-settlement check passes, but overall serviceability is not yet established without differential checks.",
+                "html": "As per IS code, the maximum permissible settlement for an isolated foundation on clay is 65 mm.",
                 "sources": [
                   {
                     "id": "CAP4-02-00145",
@@ -3593,7 +3069,7 @@
                 ]
               },
               {
-                "html": "A larger permitted total settlement for a raft on clay reflects greater tolerance of uniform movement, subject to distortion limits.",
+                "html": "The permissible settlement is relatively higher for a mat foundation on clay.",
                 "sources": [
                   {
                     "id": "CAP4-02-00158",
@@ -3654,7 +3130,7 @@
                 ]
               },
               {
-                "html": "The square-footing form of Terzaghi's equation, with c' = 10 kPa, q' = 18 kPa, γ = 18 kN/m³, B = 2 m and the rounded 20 degree factors, gives 435.3 kPa gross.",
+                "html": "Terzaghi's square-footing equation with \\(c' = 10\\) kPa, \\(\\phi' = 20^\\circ\\), \\(q' = 18\\) kPa, \\(\\gamma = 18\\) kN/m<sup>3</sup>, \\(B = 2\\) m, \\(N_c = 17.7\\), \\(N_q = 7.4\\) and \\(N_\\gamma = 5\\) gives a gross ultimate pressure of 435.3 kPa.",
                 "sources": [
                   {
                     "id": "CAP4-02-00122",
@@ -3663,7 +3139,7 @@
                 ]
               },
               {
-                "html": "With B the diameter, the unit-weight term of Terzaghi's circular-footing equation is \\(0.3\\gamma B N_\\gamma\\); 0.4 and 0.5 belong to the square and strip forms.",
+                "html": "The bearing capacity of a circular footing is calculated as \\(q_u = 1.3cN_c\\) \\(+\\,\\gamma DN_q\\) \\(+\\,0.3\\gamma BN_\\gamma\\).",
                 "sources": [
                   {
                     "id": "CAP4-02-00126",
@@ -3672,7 +3148,7 @@
                 ]
               },
               {
-                "html": "The same inputs on a circular footing of 2 m diameter give 230.1 + 133.2 + 54 = 417.3 kPa gross ultimate pressure.",
+                "html": "For a circular footing of diameter 2 m with \\(c' = 10\\) kPa, \\(\\phi' = 20^\\circ\\), \\(q' = 18\\) kPa, \\(\\gamma = 18\\) kN/m<sup>3</sup>, \\(N_c = 17.7\\), \\(N_q = 7.4\\) and \\(N_\\gamma = 5\\), Terzaghi's equation gives a gross ultimate pressure of 417.3 kPa.",
                 "sources": [
                   {
                     "id": "CAP4-02-00127",
@@ -3703,7 +3179,7 @@
           {
             "id": "rectangular-net-allowable",
             "title": "Rectangular footings, net ultimate capacity and the governing allowable pressure",
-            "html": "<p>A common textbook interpolation extends Terzaghi's equation to a rectangle of width \\(B\\) and length \\(L\\). The cohesion term is multiplied by \\(1 + 0.3B/L\\) and the unit-weight term by \\(1 - 0.2B/L\\). At \\(B/L = 1\\) these recover the square coefficients 1.3 and 0.5 × 0.8 = 0.4; as \\(B/L\\) approaches zero they recover the strip. It is a stated interpolation, not a current-code prescription.</p><p>The <em>net</em> ultimate pressure subtracts the overburden \\(q\\) already present at base level from the gross value, which turns \\(qN_q\\) into \\(q(N_q - 1)\\).</p><p>The <em>allowable bearing pressure</em> must satisfy both shear and settlement. Divide the net ultimate pressure by the shear factor of safety, compare the result with the net pressure that meets the settlement limit, and adopt the smaller. Keep net and gross bases consistent, and do not apply the shear factor again to the settlement value.</p>",
+            "html": "<p>A common textbook interpolation extends Terzaghi's equation to a rectangle of width \\(B\\) and length \\(L\\). The cohesion term is multiplied by \\(1 + 0.3B/L\\) and the unit-weight term by \\(1 - 0.2B/L\\). At \\(B/L = 1\\) these recover the square coefficients 1.3 and 0.5 × 0.8 = 0.4; as \\(B/L\\) approaches zero they recover the strip.</p><p>The <em>net</em> ultimate pressure subtracts the overburden \\(q\\) already present at base level from the gross value, which turns \\(qN_q\\) into \\(q(N_q - 1)\\).</p><p>The <em>allowable bearing pressure</em> must satisfy both shear and settlement. Divide the net ultimate pressure by the shear factor of safety, compare the result with the net pressure that meets the settlement limit, and adopt the smaller. Keep net and gross bases consistent, and do not apply the shear factor again to the settlement value.</p>",
             "formulas": [
               {
                 "label": "Net ultimate pressure, rectangular footing",
@@ -3721,7 +3197,7 @@
             },
             "points": [
               {
-                "html": "Terzaghi's rectangular net interpolation is \\((1 + 0.3B/L)cN_c + q(N_q - 1)\\) plus \\(0.5\\gamma B N_\\gamma(1 - 0.2B/L)\\), with net surcharge from \\(N_q - 1\\).",
+                "html": "Terzaghi's net ultimate bearing capacity of a rectangular footing of width \\(B\\) and length \\(L\\) is \\((1 + 0.3\\tfrac{B}{L})\\,cN_c\\) \\(+\\,q(N_q - 1)\\) \\(+\\,0.5\\gamma BN_\\gamma(1 - 0.2\\tfrac{B}{L})\\).",
                 "sources": [
                   {
                     "id": "CAP4-02-00132",
@@ -3780,7 +3256,7 @@
             },
             "points": [
               {
-                "html": "For a 2 m wide footing with water 1 m below its base, γ = 18 and γ' = 10 kN/m³, the N<sub>γ</sub> term uses an average unit weight of 14 kN/m³.",
+                "html": "In Terzaghi's bearing capacity theory, the water table correction should be applied when the water table is within a depth equal to the footing width B below the footing.",
                 "sources": [
                   {
                     "id": "CAP4-02-00058",
@@ -3789,7 +3265,7 @@
                 ]
               },
               {
-                "html": "Water rising above the base changes the effective overburden at the base and the soil unit-weight term; the cohesion term alone is not the issue.",
+                "html": "In Terzaghi's bearing capacity theory, no water table correction is needed when the water table lies deeper than the footing width B below the footing.",
                 "sources": [
                   {
                     "id": "CAP4-02-00059",
@@ -3812,7 +3288,7 @@
           {
             "id": "what-capacity-depends-on",
             "title": "What bearing capacity depends on: soil state, footing size and shape, not demand",
-            "html": "<p>Bearing capacity is a <em>resistance</em> of the soil and footing together. It depends on soil strength, which reflects density and fabric as well as grain size; on the stress conditions, which groundwater changes through effective stress; and on footing width, shape and embedment, which shape the failure mechanism. Sands with identical median grain size can still differ in density, groundwater and footing shape, and then in capacity.</p><p>Footing size enters explicitly. For an ideal surface strip on cohesionless soil with no cohesion and no surcharge, only the unit-weight term remains, and it is proportional to \\(B\\).</p><p>Applied load is <em>demand</em>. Doubling a centred service load on an unchanged footing doubles the applied pressure \\(P/A\\) and cuts the margin of safety, but it does not raise the modelled resistance to match. Load inclination, eccentricity, loading history or rate can alter the capacity model, so those conditions are not ignored.</p><p>Rock needs the same care. A soft-rock label carries no intrinsic bearing value: rock-mass performance depends on joints, weathering, weak seams, orientation, confinement and deformation, and any presumptive pressure needs an applicable source and conditions.</p>",
+            "html": "<p>Bearing capacity is a <em>resistance</em> of the soil and footing together. It depends on soil strength, which reflects density and fabric as well as grain size; on the stress conditions, which groundwater changes through effective stress; and on footing width, shape and embedment, which shape the failure mechanism. Sands with identical median grain size can still differ in density, groundwater and footing shape, and then in capacity.</p><p>Footing size enters explicitly. For an ideal surface strip on cohesionless soil with no cohesion and no surcharge, only the unit-weight term remains, and it is proportional to \\(B\\).</p><p>Applied load is <em>demand</em>. Doubling a centred service load on an unchanged footing doubles the applied pressure \\(P/A\\) and cuts the margin of safety, but it does not raise the modelled resistance to match.</p><p>Rock needs the same care.</p>",
             "formulas": [
               {
                 "label": "Surface strip on cohesionless soil",
@@ -3822,7 +3298,7 @@
             ],
             "points": [
               {
-                "html": "Equal median grain size does not imply equal bearing capacity: strength, stress conditions and footing geometry also affect capacity.",
+                "html": "The bearing capacity of a soil depends upon the grain size of the soil, size of the footing and shape of the footing.",
                 "sources": [
                   {
                     "id": "CAP4-02-00124",
@@ -3831,7 +3307,7 @@
                 ]
               },
               {
-                "html": "For an ideal surface strip with c' = 0 and no surcharge, \\(q_u = 0.5\\gamma B N_\\gamma\\), so the ultimate pressure doubles when the width doubles.",
+                "html": "Besides the grain size of the soil and the size of the footing, the bearing capacity of a soil depends upon the shape of the footing.",
                 "sources": [
                   {
                     "id": "CAP4-02-00125",
@@ -3840,7 +3316,7 @@
                 ]
               },
               {
-                "html": "Doubling a centred load on an unchanged footing means applied pressure rises; the model's resistance is not defined by that demand.",
+                "html": "The bearing capacity of soil does not depend upon the load from the structure.",
                 "sources": [
                   {
                     "id": "CAP4-02-00157",
@@ -3849,7 +3325,7 @@
                 ]
               },
               {
-                "html": "A soft-rock label is not a design pressure: rock-mass characterization and checks for discontinuities, weathering and settlement come first.",
+                "html": "The bearing capacity of soft rock is 440 kN/m<sup>2</sup>.",
                 "sources": [
                   {
                     "id": "CAP4-02-00121",
@@ -3880,10 +3356,10 @@
           {
             "id": "bearing-failure-modes",
             "title": "Bearing failure modes and the wedge-angle assumptions behind them",
-            "html": "<p>Three idealized modes describe how a shallow footing fails in bearing.</p><table><thead><tr><th scope='col'>Mode</th><th scope='col'>Rupture surface</th><th scope='col'>Load and settlement</th><th scope='col'>Typical ground</th></tr></thead><tbody><tr><th scope='row'>General shear</th><td>continuous, reaching the surface, with heave</td><td>clear peak</td><td>dense sand or stiff clay, shallow and homogeneous</td></tr><tr><th scope='row'>Local shear</th><td>partly developed, not reaching the surface</td><td>no distinct peak, progressive large settlement</td><td>relatively compressible sand</td></tr><tr><th scope='row'>Punching shear</th><td>shearing along the footing sides only</td><td>large penetration, little heave</td><td>highly compressible ground</td></tr></tbody></table><p>The mode follows the observed mechanism, not relative density alone. Very loose ground can punch rather than fail in local shear, and embedment or a strong layer over weak soil can change the mode. Soil punching also differs from structural punching of the footing slab.</p><p>Failure-plane angles depend on the mechanism assumed. Terzaghi's original rough-strip construction takes the central wedge faces at φ to the horizontal, whereas Prandtl-type constructions use \\(45^\\circ + \\phi/2\\). An angle from one model is not transferred to another without checking its assumptions.</p>",
+            "html": "<p>Three idealized modes describe how a shallow footing fails in bearing.</p><table><thead><tr><th scope='col'>Mode</th><th scope='col'>Rupture surface</th><th scope='col'>Load and settlement</th><th scope='col'>Typical ground</th></tr></thead><tbody><tr><th scope='row'>General shear</th><td>continuous, reaching the surface, with heave</td><td>clear peak</td><td>dense sand or stiff clay, shallow and homogeneous</td></tr><tr><th scope='row'>Local shear</th><td>partly developed, not reaching the surface</td><td>no distinct peak, progressive large settlement</td><td>relatively compressible sand</td></tr><tr><th scope='row'>Punching shear</th><td>shearing along the footing sides only</td><td>large penetration, little heave</td><td>highly compressible ground</td></tr></tbody></table><p>The mode follows the observed mechanism, not relative density alone. Soil punching also differs from structural punching of the footing slab.</p><p>Failure-plane angles depend on the mechanism assumed. Terzaghi's original rough-strip construction takes the central wedge faces at φ to the horizontal, whereas Prandtl-type constructions use \\(45^\\circ + \\phi/2\\). An angle from one model is not transferred to another without checking its assumptions.</p>",
             "points": [
               {
-                "html": "Progressive settlement with partial rupture zones and no distinct peak, on relatively compressible sand, matches local shear failure.",
+                "html": "The type of failure that occurs in loose soil is local shear failure.",
                 "sources": [
                   {
                     "id": "CAP4-02-00144",
@@ -3892,7 +3368,7 @@
                 ]
               },
               {
-                "html": "Punching bearing failure shows large penetration with localized side shearing and little surface heave, typically in highly compressible ground.",
+                "html": "Punching shear failure may occur in dense sand and stiff clay.",
                 "sources": [
                   {
                     "id": "CAP4-02-00159",
@@ -3901,7 +3377,7 @@
                 ]
               },
               {
-                "html": "Terzaghi uses φ to the horizontal for the central-wedge faces, whereas the Prandtl-type angle is \\(45^\\circ + \\phi/2\\) to horizontal.",
+                "html": "For \\(\\phi = 30^\\circ\\), the angle subtended by the rigid cone below a foundation with respect to the horizontal is 60°.",
                 "sources": [
                   {
                     "id": "CAP4-02-00087",
@@ -3949,7 +3425,7 @@
             },
             "points": [
               {
-                "html": "In homogeneous undrained clay the plate's ultimate pressure carries over to the footing, so a 400 kPa plate result gives 1600 kN for a 2 m square footing.",
+                "html": "In a plate load test on clayey soil, the ultimate bearing capacity of the foundation is \\(q_{u(f)} = q_{u(p)}\\).",
                 "sources": [
                   {
                     "id": "CAP4-02-00061",
@@ -3958,7 +3434,7 @@
                 ]
               },
               {
-                "html": "Under the approximate sand scaling \\(q_{uf} = q_{up}B_f/B_p\\), a 0.5 m plate failing at 150 kPa suggests 600 kPa for a 2 m footing.",
+                "html": "In a plate load test on cohesionless soil, a 0.5 m plate gives an ultimate bearing capacity of 150 kPa. The ultimate bearing capacity of a 2 m wide footing is 600 kPa.",
                 "sources": [
                   {
                     "id": "CAP4-02-00064",
@@ -3967,7 +3443,7 @@
                 ]
               },
               {
-                "html": "For geometrically similar squares on homogeneous sand, a footing three times the plate width carries 27 times the plate's ultimate load: pressure ×3, area ×9.",
+                "html": "The bearing capacity formula for cohesionless soil from the plate load test is \\(q_{u(f)} = q_{u(p)} \\times \\dfrac{B_f}{B_p}\\).",
                 "sources": [
                   {
                     "id": "CAP4-02-00123",
@@ -3976,7 +3452,7 @@
                 ]
               },
               {
-                "html": "Plate testing is possible with groundwater below the plate, but design must assess the changed groundwater condition if the water table can later rise.",
+                "html": "That the test can be performed for any level of water table below the footing is not a limitation of the plate load test.",
                 "sources": [
                   {
                     "id": "CAP4-02-00054",
@@ -4007,7 +3483,7 @@
           {
             "id": "subgrade-reaction-raft-contact",
             "title": "Modulus of subgrade reaction and raft contact pressure",
-            "html": "<p>The <em>modulus of subgrade reaction</em> \\(k_s\\) is a secant ratio of pressure to settlement from a plate test, in kN/m³. It describes the tested plate, pressure and ground condition, so it is not a soil constant: plate size, stress level and groundwater all affect it.</p><p>Groundwater can change effective stress and stiffness. Matched plate tests before and after a rise in the water table can therefore give different moduli, which contradicts any claim that \\(k_s\\) is independent of the water table. One pair of tests does not, however, establish a universal factor.</p><p>Contact pressure beneath a raft follows <em>soil–structure interaction</em>. The relative stiffness of raft and ground, the layout of column loads, the stratigraphy and nonlinear yielding all influence it. Weak soil alone does not force uniform pressure, a stiff raft enforces compatible movement rather than equal pressure, and pressure does not simply follow each column's share of the load. Uniform pressure is an idealization that needs justification.</p>",
+            "html": "<p>The <em>modulus of subgrade reaction</em> \\(k_s\\) is a secant ratio of pressure to settlement from a plate test, in kN/m³. The coefficient of subgrade reaction does not depend upon the water table.</p><p>Contact pressure beneath a raft follows <em>soil–structure interaction</em>: the relative stiffness of raft and ground and the layout of column loads influence it. If a raft foundation rests on weak soil, the pressure distribution under it tends to be uniform.</p>",
             "formulas": [
               {
                 "label": "Modulus of subgrade reaction",
@@ -4017,11 +3493,11 @@
             ],
             "example": {
               "title": "Worked example: matched plate tests at 120 kPa",
-              "html": "\\[\\begin{aligned} k_{s1} &amp;= \\dfrac{120}{0.006} = 20\\,000\\ \\text{kN/m}^3 \\\\ k_{s2} &amp;= \\dfrac{120}{0.012} = 10\\,000\\ \\text{kN/m}^3 \\end{aligned}\\]<p>The 6 mm and 12 mm settlements are converted to metres first. The modulus halved in this particular pair of tests, so it clearly depends on the groundwater condition, but no general halving rule follows.</p>"
+              "html": "<p>A plate pressure of 120 kPa producing a 6 mm settlement gives</p>\\[k_s = \\dfrac{120}{0.006} = 20\\,000\\ \\text{kN/m}^3\\]<p>The 6 mm settlement is converted to metres first.</p>"
             },
             "points": [
               {
-                "html": "Plate tests at 120 kPa settling 6 mm and then 12 mm give secant moduli of 20000 and then 10000 kN/m³, so the modulus is not independent of groundwater.",
+                "html": "The coefficient of subgrade reaction does not depend upon the water table.",
                 "sources": [
                   {
                     "id": "CAP4-02-00154",
@@ -4030,7 +3506,7 @@
                 ]
               },
               {
-                "html": "Uniform raft contact pressure cannot be assumed from weak soil alone: relative stiffness, load layout and ground response must be assessed.",
+                "html": "If a raft foundation rests on weak soil, the pressure distribution under it tends to be uniform.",
                 "sources": [
                   {
                     "id": "CAP4-02-00118",
@@ -4077,7 +3553,7 @@
             "moreHtml": "<p>For a rectangle with \\(e \\gt B/6\\), the compression-only solution is a triangular pressure block starting at the more heavily loaded edge. Its resultant must still act at distance \\(B/2 - e\\) from that edge, so the contact length is \\(3(B/2 - e)\\), and the peak pressure follows from vertical equilibrium as in the formula card.</p>",
             "points": [
               {
-                "html": "A 3 m by 2 m footing with 900 kN and 180 kN m across its 2 m width has e = 0.20 m and extreme pressures of 240 kPa and 60 kPa.",
+                "html": "When a footing is subjected to axial loading and bending moment, the type of footing is eccentric.",
                 "sources": [
                   {
                     "id": "CAP4-02-00164",
@@ -4086,7 +3562,7 @@
                 ]
               },
               {
-                "html": "When e exceeds B/6 and the linear formula gives a negative edge pressure, recalculate a compression-only contact area satisfying force and moment balance.",
+                "html": "In an eccentric footing, the soil pressure below the base is non-uniform.",
                 "sources": [
                   {
                     "id": "CAP4-02-00165",
@@ -4174,265 +3650,11 @@
             "note": "Valid for e up to B/6."
           }
         ],
-        "cautions": [
-          {
-            "id": "caution-consolidation-water-table",
-            "status": "corrected",
-            "prompt": "Consolidation settlement is calculated for a clay layer with the water table at the ground surface",
-            "html": "<p>Read as a restriction, this is incorrect. Primary consolidation depends on drainage and the effective-stress increase in the compressible layer, so a clay below a water table at any depth can consolidate. The water-table position only sets the initial stresses.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00034",
-                "label": "p. 7; topic 2 point 31"
-              }
-            ]
-          },
-          {
-            "id": "caution-oedometer-specimen-height",
-            "status": "review",
-            "prompt": "The typical height of an oedometer specimen is 20 mm",
-            "html": "<p>20 mm describes a typical specimen size, not a mandatory dimension. Calculations use the actual thickness supplied, and the drainage path is half of it when both faces drain.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00053",
-                "label": "p. 7; topic 2 point 49"
-              }
-            ]
-          },
-          {
-            "id": "caution-plate-test-groundwater",
-            "status": "review",
-            "prompt": "Any water-table level below the footing is not a limitation of the plate load test",
-            "html": "<p>Testing is possible with groundwater below the plate, but that does not make the interpretation independent of groundwater. The result reflects the conditions tested, and a seasonal rise into the footing's influence zone must be assessed in design.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00054",
-                "label": "p. 7; topic 2 point 50"
-              }
-            ]
-          },
-          {
-            "id": "caution-water-table-correction-range",
-            "status": "review",
-            "prompt": "In Terzaghi's theory the water-table correction applies up to a depth B below the footing",
-            "html": "<p>The B-deep range is a conventional correction zone for the unit-weight term, applied as an approximate linear interpolation. It is not a universal physical boundary of the failure mechanism or of every groundwater effect.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00058",
-                "label": "p. 7; topic 2 point 54"
-              }
-            ]
-          },
-          {
-            "id": "caution-plate-clay-pressure-not-load",
-            "status": "corrected",
-            "prompt": "For clay, the footing's ultimate bearing capacity from a plate load test equals the plate's",
-            "html": "<p>The equality refers to ultimate bearing <em>pressures</em> under comparable conditions, not to identical total failure loads. The footing's ultimate load is the plate pressure multiplied by the footing area.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00061",
-                "label": "p. 7; topic 2 point 56"
-              }
-            ]
-          },
-          {
-            "id": "caution-plate-sand-width-ratio",
-            "status": "corrected",
-            "prompt": "For cohesionless soil, footing capacity is plate capacity multiplied by a width ratio of ambiguous order",
-            "html": "<p>The capsule's fraction order is ambiguous. The approximate relation is \\(q_{uf} = q_{up}\\,B_f/B_p\\), footing width over plate width, and it applies only to comparable shallow footings on homogeneous sand under limited assumptions.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00064",
-                "label": "p. 8; topic 2 point 59"
-              }
-            ]
-          },
-          {
-            "id": "caution-rigid-cone-wedge-model",
-            "status": "review",
-            "prompt": "The rigid cone below a foundation is inclined at 45° + φ/2 to the horizontal",
-            "html": "<p>The unqualified angle is model-dependent: Terzaghi's original construction uses φ to the horizontal, whereas Prandtl-type mechanisms use \\(45^\\circ + \\phi/2\\). No source image was reviewed; the distinction rests on the existing audited wedge-angle note.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00087",
-                "label": "p. 8; topic 2 point 63"
-              }
-            ]
-          },
-          {
-            "id": "caution-sand-settlement-40",
-            "status": "review",
-            "prompt": "The IS code permits a maximum settlement of 40 mm for isolated foundations on sand",
-            "html": "<p>The code, edition, table and structural category behind this value are unverified. The 40 mm figure is used here only as a stated project assumption for comparison, not as a current code limit.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00116",
-                "label": "p. 9; topic 2 point 105"
-              }
-            ]
-          },
-          {
-            "id": "caution-raft-uniform-pressure",
-            "status": "corrected",
-            "prompt": "On weak soil, raft contact pressure tends to be uniform",
-            "html": "<p>This universal claim is rejected. Contact pressure follows soil–structure interaction, including relative stiffness, load layout, stratigraphy and yielding; uniform pressure is an idealization that needs justification.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00118",
-                "label": "p. 9; topic 2 point 107"
-              }
-            ]
-          },
-          {
-            "id": "caution-soft-rock-440",
-            "status": "review",
-            "prompt": "Soft rock has a bearing capacity of 440 kN/m²",
-            "html": "<p>The 440 kPa value is unverified, and these notes endorse no replacement number. A rock-foundation pressure needs rock-mass characterization, including discontinuities and weathering, together with settlement checks.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00121",
-                "label": "p. 9; topic 2 point 110"
-              }
-            ]
-          },
-          {
-            "id": "caution-plate-sand-load-scaling",
-            "status": "review",
-            "prompt": "Plate-load bearing capacity for cohesionless soil scales with Bf/Bp",
-            "html": "<p>The capsule repeats the approximate sand pressure–width relation. It is taught here only under explicit similarity and homogeneity assumptions, and its load consequence differs: total load scales with the pressure ratio multiplied by the area ratio.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00123",
-                "label": "p. 9; topic 2 point 112"
-              }
-            ]
-          },
-          {
-            "id": "caution-circular-footing-diameter",
-            "status": "corrected",
-            "prompt": "Circular-footing bearing capacity written without B in the unit-weight term",
-            "html": "<p>The printed or extracted expression omits the diameter \\(B\\) from the unit-weight term, which makes it dimensionally inconsistent. The classical circular form ends in \\(0.3\\gamma B N_\\gamma\\), after \\(1.3cN_c + qN_q\\).</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00126",
-                "label": "p. 9; topic 2 point 114"
-              }
-            ]
-          },
-          {
-            "id": "caution-rectangular-formula-signs",
-            "status": "corrected",
-            "prompt": "Terzaghi's rectangular-footing formula printed with a plus sign and a detached shape term",
-            "html": "<p>The extracted formula shows a plus sign and a detached shape term where the common interpolation multiplies the unit-weight term by \\(1 - 0.2B/L\\). The net form is \\((1 + 0.3B/L)cN_c + q(N_q - 1)\\) plus \\(0.5\\gamma B N_\\gamma(1 - 0.2B/L)\\), a textbook interpolation rather than a code prescription.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00132",
-                "label": "p. 9; topic 2 point 119"
-              }
-            ]
-          },
-          {
-            "id": "caution-local-shear-loose-soil",
-            "status": "review",
-            "prompt": "Local shear failure occurs in loose soil",
-            "html": "<p>The association is qualified by the observed mechanism. Local shear shows partial rupture and progressive settlement without a clear peak, but very loose or highly compressible ground can fail by punching instead; relative density alone does not fix the mode.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00144",
-                "label": "p. 10; topic 2 point 128"
-              }
-            ]
-          },
-          {
-            "id": "caution-clay-settlement-65",
-            "status": "review",
-            "prompt": "The IS code permits a maximum settlement of 65 mm for isolated foundations on clay",
-            "html": "<p>The code, edition, table and structural category are unverified. The 65 mm figure is treated only as a stated project assumption, and passing a total-settlement limit does not settle differential movement or overall serviceability.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00145",
-                "label": "p. 10; topic 2 point 129"
-              }
-            ]
-          },
-          {
-            "id": "caution-subgrade-water-table",
-            "status": "corrected",
-            "prompt": "The coefficient of subgrade reaction does not depend on the water table",
-            "html": "<p>This claim is corrected. Groundwater can change effective stress and stiffness, so plate tests before and after a water-table rise can give different secant moduli; no universal numerical factor follows from one pair of tests.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00154",
-                "label": "p. 10; topic 2 point 136"
-              }
-            ]
-          },
-          {
-            "id": "caution-overconsolidation-less-settlement",
-            "status": "review",
-            "prompt": "Over-consolidated soil results in less settlement",
-            "html": "<p>The claim holds conditionally: for comparable soils, reloading below the preconsolidation stress follows the stiffer recompression branch. If the load carries the stress beyond the past maximum, virgin compression adds settlement.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00155",
-                "label": "p. 10; topic 2 point 137"
-              }
-            ]
-          },
-          {
-            "id": "caution-capacity-versus-load",
-            "status": "review",
-            "prompt": "The bearing capacity of soil does not depend on the load from the structure",
-            "html": "<p>Qualified: the magnitude of the service load is demand, distinct from resistance. Loading conditions such as inclination, eccentricity, history and rate can nevertheless change the bearing-capacity model.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00157",
-                "label": "p. 10; topic 2 point 139"
-              }
-            ]
-          },
-          {
-            "id": "caution-raft-settlement-tolerance",
-            "status": "review",
-            "prompt": "Permissible settlement is relatively higher for a mat foundation on clay",
-            "html": "<p>No code, edition or structural category is given, so only the conditional principle is taught: a raft may tolerate more uniform settlement, subject to differential and distortion limits.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00158",
-                "label": "p. 10; topic 2 point 140"
-              }
-            ]
-          },
-          {
-            "id": "caution-punching-dense-soils",
-            "status": "corrected",
-            "prompt": "Punching shear failure may occur in dense sand and stiff clay",
-            "html": "<p>As a general classification the association is unreliable. Punching is characteristic of highly compressible ground, while dense sand and stiff clay usually fail in general shear under shallow homogeneous conditions. Any special stratification or embedment that permits punching must be stated.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00159",
-                "label": "p. 10; topic 2 point 141"
-              }
-            ]
-          },
-          {
-            "id": "caution-immediate-settlement-factor",
-            "status": "corrected",
-            "prompt": "Immediate settlement of cohesive soil uses the factor 1 + μ²",
-            "html": "<p>The damaged factor is corrected: the elastic expression is \\(S_i = qB(1 - \\nu^2)I/E_s\\), including the influence factor \\(I\\) that the capsule omits. Using \\(1 + \\nu^2\\) overestimates the settlement.</p>",
-            "sources": [
-              {
-                "id": "CAP4-02-00163",
-                "label": "p. 10; topic 2 point 144"
-              }
-            ]
-          }
-        ],
+        "cautions": [],
         "gaps": [
           "Consolidation settlement from compression indices, and the relation between time factor and degree of consolidation, are not calculated in these capsule points.",
           "Secondary compression appears only as creep after primary consolidation; no coefficient or calculation is given.",
           "Bearing-capacity factors beyond the rounded 20-degree row and the undrained case, and depth, inclination or code-based factors, are not covered.",
-          "The IS settlement limits quoted by the capsule remain unverified, and no presumptive bearing values for soil or rock are endorsed.",
           "Plate-load-test procedure, plate sizes and loading increments are not described."
         ]
       }
