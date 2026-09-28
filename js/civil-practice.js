@@ -231,7 +231,22 @@
     }
 
     function freshStore() {
-        return { version: 1, bookmarks: {}, progress: {}, draft: null, practiceDraft: null, history: [], setScores: {} };
+        return { version: 1, pastOrder: window.CIVIL_PAST_SWAPS && window.CIVIL_PAST_SWAPS.version, bookmarks: {}, progress: {}, draft: null, practiceDraft: null, history: [], setScores: {} };
+    }
+
+    // Some past-paper options traded places (CIVIL_PAST_SWAPS); answers saved before that are re-lettered once.
+    function relabelPast(store) {
+        const swaps = window.CIVIL_PAST_SWAPS;
+        if (!swaps || store.pastOrder === swaps.version) return;
+        const relabel = (key, letter) => {
+            const match = /^PAST-(\w+)-(\d{3})$/.exec(key);
+            const pair = match && swaps.sets[match[1]] ? swaps.sets[match[1]].substr((match[2] - 1) * 2, 2) : "..";
+            return pair === ".." ? letter : letter === pair[0] ? pair[1] : letter === pair[1] ? pair[0] : letter;
+        };
+        for (const [key, item] of Object.entries(store.progress)) if (typeof item.answer === "string") item.answer = relabel(key, item.answer);
+        for (const run of [store.draft, store.practiceDraft, ...store.history].filter(Boolean))
+            for (const key of Object.keys(run.answers)) run.answers[key] = relabel(key, run.answers[key]);
+        store.pastOrder = swaps.version;
     }
 
     function create(deps) {
@@ -290,6 +305,7 @@
                 };
                 store.bookmarks = Object.fromEntries(Object.entries(store.bookmarks).filter(([, item]) => isObject(item)).map(([key, item]) => [key, classify(key, item)]));
                 store.progress = Object.fromEntries(Object.entries(store.progress).filter(([, item]) => isObject(item) && typeof item.correct === "boolean").map(([key, item]) => [key, classify(key, item)]));
+                relabelPast(store);
             } catch (error) {
                 storageReadable = false;
                 notice("Saved practice data could not be read. It has not been overwritten. This session can continue, but practice progress cannot be saved until storage is available.");
