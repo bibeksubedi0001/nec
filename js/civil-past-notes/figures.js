@@ -1311,14 +1311,23 @@
       {
        "id": "p-acie0401-4",
        "block": "pure-bending-and-couples",
-       "src": "assets/civil-capsule-notes/acie0401-3.svg",
+       "src": "assets/civil-past-notes/acie0401-couple-on-a-simple-span.svg",
        "width": 720,
        "height": 420,
-       "title": "A concentrated couple on a simple beam",
-       "caption": "A couple adds no net force: the reactions form an opposing couple, the shear stays constant and continuous, and the moment diagram jumps by the couple's value."
+       "title": "A clockwise couple M at distance a on a simple span",
+       "caption": "The reactions form an equal and opposite couple, M/L down at A and M/L up at B, so the shear is -M/L everywhere. The moment falls to -Ma/L just left of the couple, jumps by M, and is M(L - a)/L just right of it."
       },
       {
        "id": "p-acie0401-5",
+       "block": "pure-bending-and-couples",
+       "src": "assets/civil-past-notes/acie0401-curvature-in-pure-bending.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Curvature of a beam in pure bending",
+       "caption": "Equal end moments bend a beam into a circular arc of radius R about the centre O. The top fibres shorten and the bottom fibres stretch, the neutral axis keeps its length, and the curvature is 1/R = M/EI."
+      },
+      {
+       "id": "p-acie0401-6",
        "block": "pure-bending-and-couples",
        "src": "assets/civil-capsule-notes/acie0401-4.svg",
        "width": 720,
@@ -1327,8 +1336,17 @@
        "caption": "A couple at the tip puts the same moment on every section with zero shear; a couple at midspan loads only the segment between it and the root."
       },
       {
-       "id": "p-acie0401-6",
-       "block": "pure-bending-and-couples",
+       "id": "p-acie0401-7",
+       "block": "simply-supported-beams",
+       "src": "assets/civil-past-notes/acie0401-eccentric-and-triangular-loads.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Maximum moments for an eccentric point load and a triangular load",
+       "caption": "A point load W at a from A and b from B gives a triangular moment diagram peaking at Wab/L under the load. A load falling from w to zero gives a peak of wL squared over 9 root 3 at L/root 3 from the unloaded end, where the shear is zero."
+      },
+      {
+       "id": "p-acie0401-8",
+       "block": "simply-supported-beams",
        "src": "assets/civil-capsule-notes/acie0401-5.svg",
        "width": 720,
        "height": 420,
@@ -1336,7 +1354,7 @@
        "caption": "Each reaction equals one load; the shear is zero between the loads, so the middle third carries a constant moment WL/3, a zone of pure bending."
       },
       {
-       "id": "p-acie0401-7",
+       "id": "p-acie0401-9",
        "block": "simply-supported-beams",
        "src": "assets/civil-notes/acie0401-1.svg",
        "width": 720,
@@ -1345,7 +1363,7 @@
        "caption": "For a simply supported span with a central downward load, shear is piecewise constant and sagging moment is triangular."
       },
       {
-       "id": "p-acie0401-8",
+       "id": "p-acie0401-10",
        "block": "simply-supported-beams",
        "src": "assets/civil-notes/acie0401-2.svg",
        "width": 720,
@@ -1354,16 +1372,25 @@
        "caption": "For a simply supported uniformly loaded span, shear varies linearly and sagging moment is parabolic."
       },
       {
-       "id": "p-acie0401-9",
-       "block": "simply-supported-beams",
-       "src": "assets/civil-notes/acie0401-5.svg",
+       "id": "p-acie0401-11",
+       "block": "cantilevers-and-overhangs",
+       "src": "assets/civil-past-notes/acie0401-cantilever-support-moments.svg",
        "width": 720,
        "height": 420,
-       "title": "Worked 8 m UDL beam",
-       "caption": "For 1 kN/m over the full 8 m span, each reaction is 4 kN, M at 2 m is 6 kN m, and the maximum sagging moment is 8 kN m."
+       "title": "Support shear and moment of cantilevers",
+       "caption": "At the fixed end the shear is the total load and the moment is the load times the distance of its centroid: WL for a tip load, wL squared over 2 for a uniform load, and wL squared over 6 for a load falling from w at the support to zero at the tip."
       },
       {
-       "id": "p-acie0401-10",
+       "id": "p-acie0401-12",
+       "block": "cantilevers-and-overhangs",
+       "src": "assets/civil-past-notes/acie0401-overhang-support-moment.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Hogging moment over the support of an overhang",
+       "caption": "A uniform load w on an overhang of length a acts like a cantilever from support B, so the moment over B is -wa squared over 2. Between the supports the moment falls linearly to zero at A."
+      },
+      {
+       "id": "p-acie0401-13",
        "block": "cantilevers-and-overhangs",
        "src": "assets/civil-notes/acie0401-3.svg",
        "width": 720,
@@ -1372,7 +1399,7 @@
        "caption": "The end load gives constant shear magnitude and a moment increasing in magnitude toward the fixed support."
       },
       {
-       "id": "p-acie0401-11",
+       "id": "p-acie0401-14",
        "block": "cantilevers-and-overhangs",
        "src": "assets/civil-past-notes/acie0401-balanced-overhangs.svg",
        "width": 720,
@@ -1385,6 +1412,24 @@
       {
        "id": "p-acie0402-1",
        "block": "elastic-constants-and-stress-strain",
+       "src": "assets/civil-past-notes/acie0402-bar-extension-and-thermal-stress.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Extension of a bar and stress in a heated bar held at its ends",
+       "caption": "A pull P on a bar of length L, area A and modulus E stretches it by PL/AE. If a bar is held between rigid supports and heated by ΔT, the free expansion αLΔT is prevented and a compressive stress EαΔT develops."
+      },
+      {
+       "id": "p-acie0402-2",
+       "block": "elastic-constants-and-stress-strain",
+       "src": "assets/civil-past-notes/acie0402-three-elastic-moduli.svg",
+       "width": 720,
+       "height": 420,
+       "title": "The three elastic moduli and Poisson's ratio",
+       "caption": "E links direct stress to direct strain, with a lateral contraction of Poisson's ratio times the axial strain. G links shear stress to the change of angle, and K links an all-round pressure to the volume change. They are tied by E = 2G(1 + μ) = 3K(1 - 2μ)."
+      },
+      {
+       "id": "p-acie0402-3",
+       "block": "elastic-constants-and-stress-strain",
        "src": "assets/civil-capsule-notes/acie0402-1.svg",
        "width": 720,
        "height": 420,
@@ -1392,7 +1437,7 @@
        "caption": "Each modulus is a stress over its own matching strain in the linear range: 120 MPa at 0.0006 gives E = 200 GPa, and 30 MPa at 0.0004 rad gives G = 75 GPa."
       },
       {
-       "id": "p-acie0402-2",
+       "id": "p-acie0402-4",
        "block": "elastic-constants-and-stress-strain",
        "src": "assets/civil-notes/acie0402-3.svg",
        "width": 720,
@@ -1401,7 +1446,16 @@
        "caption": "This illustrative ductile curve distinguishes yield, strain hardening, ultimate engineering stress and necking."
       },
       {
-       "id": "p-acie0402-3",
+       "id": "p-acie0402-5",
+       "block": "ductility-proof-load-and-resilience",
+       "src": "assets/civil-past-notes/acie0402-impact-load-on-a-collar.svg",
+       "width": 720,
+       "height": 420,
+       "title": "A weight dropped onto a collar at the end of a bar",
+       "caption": "A weight W falling through h onto a collar stretches the bar by the energy balance W(h + δ) = σ squared AL/2E. A gradually applied load gives W/A, a load applied suddenly (h = 0) gives twice that, and a drop gives W/A times (1 + root(1 + 2AEh/WL))."
+      },
+      {
+       "id": "p-acie0402-6",
        "block": "ductility-proof-load-and-resilience",
        "src": "assets/civil-capsule-notes/acie0402-2.svg",
        "width": 720,
@@ -1410,7 +1464,16 @@
        "caption": "Ductility shows as large permanent elongation of the gauge length and a large reduction of area at the neck, not as recoverable elastic stretch."
       },
       {
-       "id": "p-acie0402-4",
+       "id": "p-acie0402-7",
+       "block": "oblique-and-principal-planes",
+       "src": "assets/civil-past-notes/acie0402-stresses-on-an-oblique-plane.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Normal and shear stress on a plane inclined in a bar under tension",
+       "caption": "Cut a bar under axial stress σ by a plane whose normal makes θ with the axis. Resolving the force on the smaller wedge gives a normal stress σ cos squared θ and a shear stress (σ/2) sin 2θ on the plane; the shear peaks at σ/2 on planes at 45 degrees."
+      },
+      {
+       "id": "p-acie0402-8",
        "block": "oblique-and-principal-planes",
        "src": "assets/civil-notes/acie0402-1.svg",
        "width": 720,
@@ -1419,7 +1482,7 @@
        "caption": "Normal and complementary shear stresses act on paired faces; signs must be defined before transforming the plane."
       },
       {
-       "id": "p-acie0402-5",
+       "id": "p-acie0402-9",
        "block": "oblique-and-principal-planes",
        "src": "assets/civil-notes/acie0402-2.svg",
        "width": 720,
@@ -1428,7 +1491,25 @@
        "caption": "Intersections with the normal-stress axis have zero shear; the circle radius is the maximum in-plane shear magnitude."
       },
       {
-       "id": "p-acie0402-6",
+       "id": "p-acie0402-10",
+       "block": "principal-stress-formulas",
+       "src": "assets/civil-past-notes/acie0402-principal-and-maximum-shear-elements.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Rotating a stressed element to its principal and maximum-shear planes",
+       "caption": "Turning the element through θp, where tan 2θp = 2τxy/(σx - σy), removes the shear and leaves the principal stresses σ1 and σ2. A further 45 degrees gives the maximum shear (σ1 - σ2)/2 with the average normal stress on every face."
+      },
+      {
+       "id": "p-acie0402-11",
+       "block": "principal-stress-formulas",
+       "src": "assets/civil-past-notes/acie0402-equivalent-moment-and-torque.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Equivalent bending moment and torque for a shaft",
+       "caption": "A shaft carrying M and T has a surface element with bending stress 32M/πd cubed and shear 16T/πd cubed. Its major principal stress equals the bending stress of an equivalent moment Me = (M + root(M squared + T squared))/2, and its maximum shear equals the shear of an equivalent torque Te = root(M squared + T squared)."
+      },
+      {
+       "id": "p-acie0402-12",
        "block": "principal-stress-formulas",
        "src": "assets/civil-notes/acie0402-5.svg",
        "width": 720,
@@ -1437,7 +1518,16 @@
        "caption": "For 300 MPa direct tension, zero transverse direct stress and 200 MPa shear, C = 150 MPa and R = 250 MPa; the principal values are 400 and -100 MPa."
       },
       {
-       "id": "p-acie0402-7",
+       "id": "p-acie0402-13",
+       "block": "strain-energy-in-beams",
+       "src": "assets/civil-past-notes/acie0402-strain-energy-cases.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Strain energy in a bar, a shaft and a cantilever",
+       "caption": "Strain energy is half the load times its own displacement. For an axial bar it is P squared L/2AE, for a shaft T squared L/2GJ, and in bending the integral of M squared over 2EI along the member, which gives W squared L cubed/6EI for a cantilever with a tip load."
+      },
+      {
+       "id": "p-acie0402-14",
        "block": "strain-energy-in-beams",
        "src": "assets/civil-past-notes/acie0402-energy-under-the-load-line.svg",
        "width": 720,
@@ -1446,16 +1536,7 @@
        "caption": "A load raised gradually from zero to W stores the triangle of work under the line, U = Wδ/2; for a simply supported beam with a central load, δ = WL³/48EI gives U = W²L³/96EI."
       },
       {
-       "id": "p-acie0402-8",
-       "block": "oblique-and-principal-planes",
-       "src": "assets/civil-notes/acie0402-4.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Torsion of a circular shaft",
-       "caption": "Under elastic circular-shaft torsion, shear stress varies linearly with radius and is greatest at the outer surface."
-      },
-      {
-       "id": "p-acie0402-9",
+       "id": "p-acie0402-15",
        "block": "ductility-proof-load-and-resilience",
        "src": "assets/civil-capsule-notes/acie0404-1.svg",
        "width": 720,
@@ -1464,7 +1545,7 @@
        "caption": "The area under the elastic part up to the elastic limit is the modulus of resilience; the whole area to fracture is toughness, which includes plastic work."
       },
       {
-       "id": "p-acie0402-10",
+       "id": "p-acie0402-16",
        "block": "ductility-proof-load-and-resilience",
        "src": "assets/civil-capsule-notes/acie0404-2.svg",
        "width": 720,
@@ -1477,6 +1558,24 @@
       {
        "id": "p-acie0403-1",
        "block": "flexure-formula-and-bending-stress",
+       "src": "assets/civil-past-notes/acie0403-section-modulus-of-rectangle-and-circle.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Section modulus of a rectangle and a solid circle",
+       "caption": "Bending stress grows linearly from the neutral axis, so the extreme fibre at y max carries σ max = M/Z with Z = I/y max. A rectangle has Z = bd squared/6 and a solid circle Z = πd cubed/32."
+      },
+      {
+       "id": "p-acie0403-2",
+       "block": "flexure-formula-and-bending-stress",
+       "src": "assets/civil-past-notes/acie0403-bending-and-torsion-stresses-in-a-shaft.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Bending and torsional stresses across a solid shaft",
+       "caption": "Across a shaft of diameter d, the bending stress grows linearly to 32M/πd cubed at the top and bottom fibres, and the torsional shear grows linearly from zero at the axis to 16T/πd cubed at the surface, so their peak ratio is 2M/T."
+      },
+      {
+       "id": "p-acie0403-3",
+       "block": "flexure-formula-and-bending-stress",
        "src": "assets/civil-notes/acie0403-1.svg",
        "width": 720,
        "height": 420,
@@ -1484,7 +1583,7 @@
        "caption": "Plane sections remain plane under the model: strain and elastic normal stress vary linearly across depth."
       },
       {
-       "id": "p-acie0403-2",
+       "id": "p-acie0403-4",
        "block": "flexure-formula-and-bending-stress",
        "src": "assets/civil-notes/acie0403-5.svg",
        "width": 720,
@@ -1493,7 +1592,16 @@
        "caption": "The 2.4 kN end load on a 2 m cantilever gives 200 MPa elastic stress when the 60 mm side is vertical; the upper fixed-end fibres are in tension."
       },
       {
-       "id": "p-acie0403-3",
+       "id": "p-acie0403-5",
+       "block": "shear-stress-in-beams-and-shafts",
+       "src": "assets/civil-past-notes/acie0403-shear-stress-in-rectangle-and-circle.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Shear stress across rectangular and circular beam sections",
+       "caption": "Shear stress in a beam follows τ = VQ/Ib: zero at the top and bottom, largest at the neutral axis. The peak is 1.5 times the average V/bd for a rectangle and 4/3 of V/A for a solid circle."
+      },
+      {
+       "id": "p-acie0403-6",
        "block": "shear-stress-in-beams-and-shafts",
        "src": "assets/civil-capsule-notes/acie0403-1.svg",
        "width": 720,
@@ -1502,7 +1610,16 @@
        "caption": "Transverse shear stress is parabolic over a solid rectangle, zero at the extreme fibres and 1.5 times the average at the neutral axis."
       },
       {
-       "id": "p-acie0403-4",
+       "id": "p-acie0403-7",
+       "block": "effective-length-of-columns",
+       "src": "assets/civil-past-notes/acie0403-theoretical-and-code-effective-lengths.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Theoretical and design effective lengths for four end conditions",
+       "caption": "Ideal end conditions give effective lengths of 0.5L, 0.7L, L and 2L. Real fixity is never perfect, so the design values recommended in the codes are larger for the restrained cases: 0.65L, 0.8L, 1.0L and 2.0L."
+      },
+      {
+       "id": "p-acie0403-8",
        "block": "effective-length-of-columns",
        "src": "assets/civil-notes/acie0403-3.svg",
        "width": 720,
@@ -1511,7 +1628,7 @@
        "caption": "Pinned-pinned, fixed-fixed, fixed-free and fixed-pinned cases have different ideal effective lengths."
       },
       {
-       "id": "p-acie0403-5",
+       "id": "p-acie0403-9",
        "block": "effective-length-of-columns",
        "src": "assets/civil-capsule-notes/acie0403-4.svg",
        "width": 720,
@@ -1520,7 +1637,16 @@
        "caption": "The exact root of tan α = α, 4.49341, puts the inflection point 0.301L above the fixed base, so the effective length is 0.699L rather than the approximate 0.707L."
       },
       {
-       "id": "p-acie0403-6",
+       "id": "p-acie0403-10",
+       "block": "euler-load-and-column-failure",
+       "src": "assets/civil-past-notes/acie0403-fixed-ends-quadruple-the-euler-load.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Fixing both ends halves the buckling length and quadruples the load",
+       "caption": "A pin-ended column buckles in one half sine wave over its full length L. Fixing both ends moves the points of contraflexure to L/4 from each end, so only L/2 buckles like a pinned column and the crippling load becomes 4π squared EI/L squared."
+      },
+      {
+       "id": "p-acie0403-11",
        "block": "euler-load-and-column-failure",
        "src": "assets/civil-capsule-notes/acie0403-5.svg",
        "width": 720,
@@ -1529,7 +1655,7 @@
        "caption": "With equal effective lengths, the axis with the smaller radius of gyration has the larger slenderness ratio and the lower Euler stress, so it governs buckling."
       },
       {
-       "id": "p-acie0403-7",
+       "id": "p-acie0403-12",
        "block": "euler-load-and-column-failure",
        "src": "assets/civil-past-notes/acie0403-euler-and-rankine-curves.svg",
        "width": 720,
@@ -1538,16 +1664,7 @@
        "caption": "Euler's curve falls as 1/λ² and holds only below the proportional limit, beyond a slenderness of about 100 for mild steel; the Rankine–Gordon curve joins crushing of short columns to buckling of long ones."
       },
       {
-       "id": "p-acie0403-8",
-       "block": "flexure-formula-and-bending-stress",
-       "src": "assets/civil-notes/acie0403-2.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Deflected cantilever",
-       "caption": "An end load produces both tip rotation and tip displacement; the fixed end restrains translation and rotation."
-      },
-      {
-       "id": "p-acie0403-9",
+       "id": "p-acie0403-13",
        "block": "shear-stress-in-beams-and-shafts",
        "src": "assets/civil-notes/acie0402-4.svg",
        "width": 720,
@@ -1559,12 +1676,12 @@
      "ACiE0404": [
       {
        "id": "p-acie0404-1",
-       "block": "standard-beam-deflections",
-       "src": "assets/civil-notes/acie0404-5.svg",
+       "block": "energy-methods-and-virtual-work",
+       "src": "assets/civil-past-notes/acie0404-maxwell-reciprocal-theorem.svg",
        "width": 720,
        "height": 420,
-       "title": "Central-load energy and deflection",
-       "caption": "The triangular force-displacement area gives U = P delta/2 for gradual linear-elastic loading; energy and deflection have different denominators and units."
+       "title": "Maxwell's reciprocal theorem on a simple beam",
+       "caption": "Load P at A deflects point B by δBA. Moving the same load to B deflects A by δAB, and the two are equal. The theorem holds for any linear elastic structure and is why flexibility matrices are symmetric."
       },
       {
        "id": "p-acie0404-2",
@@ -1596,6 +1713,15 @@
       {
        "id": "p-acie0404-5",
        "block": "continuous-beams-and-internal-hinges",
+       "src": "assets/civil-past-notes/acie0404-degree-of-indeterminacy-examples.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Counting the degree of static indeterminacy",
+       "caption": "A beam with r reactions and h internal hinges has Ds = r - 3 - h. A plane truss has Ds = m + r - 2j, and a rigid-jointed plane frame Ds = 3m + r - 3j. Each example here has redundants: 1, 1 and 3."
+      },
+      {
+       "id": "p-acie0404-6",
+       "block": "continuous-beams-and-internal-hinges",
        "src": "assets/civil-notes/acie0404-1.svg",
        "width": 720,
        "height": 420,
@@ -1603,7 +1729,16 @@
        "caption": "Roller, pin and fixed supports restrain different planar degrees of freedom; restraint count alone does not ensure stability."
       },
       {
-       "id": "p-acie0404-6",
+       "id": "p-acie0404-7",
+       "block": "moving-loads",
+       "src": "assets/civil-past-notes/acie0404-short-udl-at-a-section.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Placing a short uniform load for the greatest moment at a section",
+       "caption": "A uniform load w of length l shorter than the span gives the greatest moment at section C when it straddles C so that the part on the left, l left, is to l as a is to L. Both ends of the load then sit at equal ordinates of the influence line, and the moment is w times the shaded area."
+      },
+      {
+       "id": "p-acie0404-8",
        "block": "moving-loads",
        "src": "assets/civil-past-notes/acie0404-load-train-on-an-influence-line.svg",
        "width": 720,
@@ -1612,7 +1747,25 @@
        "caption": "The moment at section C is the sum of each load times the influence-line ordinate under it; it peaks with a load at C and the average load to the left of C equal to the average load on the whole span."
       },
       {
-       "id": "p-acie0404-7",
+       "id": "p-acie0404-9",
+       "block": "standard-beam-deflections",
+       "src": "assets/civil-past-notes/acie0404-cantilever-deflection-and-slope.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Tip deflection and slope of a cantilever",
+       "caption": "A cantilever of span L deflects most at the free end. A tip load W gives δ = WL cubed/3EI and a slope WL squared/2EI there; a uniform load w gives δ = wL to the fourth/8EI and a slope wL cubed/6EI. The slope at the fixed end is zero."
+      },
+      {
+       "id": "p-acie0404-10",
+       "block": "standard-beam-deflections",
+       "src": "assets/civil-past-notes/acie0404-simple-beam-deflection-and-slopes.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Mid-span deflection and support slopes of a simple beam",
+       "caption": "A simple beam deflects most at mid-span and turns most at the supports. A central load W gives δ = WL cubed/48EI and support slopes WL squared/16EI; a uniform load w gives δ = 5wL to the fourth/384EI and slopes wL cubed/24EI."
+      },
+      {
+       "id": "p-acie0404-11",
        "block": "standard-beam-deflections",
        "src": "assets/civil-capsule-notes/acie0403-2.svg",
        "width": 720,
@@ -1621,25 +1774,16 @@
        "caption": "With L = 4 m and EI = 8000 kN·m², a 12 kN central load deflects 2.00 mm and a 24 kN total uniform load 2.50 mm; for equal total load the ratio is 8 to 5."
       },
       {
-       "id": "p-acie0404-8",
-       "block": "standard-beam-deflections",
-       "src": "assets/civil-capsule-notes/acie0403-3.svg",
+       "id": "p-acie0404-12",
+       "block": "influence-line-diagrams",
+       "src": "assets/civil-past-notes/acie0404-using-an-influence-line.svg",
        "width": 720,
        "height": 420,
-       "title": "Translating supports to the conjugate beam",
-       "caption": "Conjugate shear equals real slope and conjugate moment equals real deflection, so a fixed end becomes free, a free end becomes fixed and a simple end stays simple."
+       "title": "Using an influence line for moment at a section",
+       "caption": "Each point load contributes its value times the ordinate under it, and a uniform load contributes w times the area of the influence line under the loaded length. For the moment at C: MC = W1η1 + W2η2 + w times the shaded area."
       },
       {
-       "id": "p-acie0404-9",
-       "block": "continuous-beams-and-internal-hinges",
-       "src": "assets/civil-notes/acie0404-2.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Pin-jointed truss load path",
-       "caption": "Ideal truss members carry axial force when loads act at joints; resolve equilibrium at joints or through a section."
-      },
-      {
-       "id": "p-acie0404-10",
+       "id": "p-acie0404-13",
        "block": "influence-line-diagrams",
        "src": "assets/civil-notes/acie0405-1.svg",
        "width": 720,
@@ -1648,7 +1792,7 @@
        "caption": "A unit load moving across a simple span gives a linear left-support reaction ordinate."
       },
       {
-       "id": "p-acie0404-11",
+       "id": "p-acie0404-14",
        "block": "influence-line-diagrams",
        "src": "assets/civil-notes/acie0405-3.svg",
        "width": 720,
@@ -1657,7 +1801,7 @@
        "caption": "The unit jump at the section reflects the moving load crossing the cut; retain the chosen shear sign convention."
       },
       {
-       "id": "p-acie0404-12",
+       "id": "p-acie0404-15",
        "block": "influence-line-diagrams",
        "src": "assets/civil-notes/acie0405-2.svg",
        "width": 720,
@@ -1670,6 +1814,24 @@
       {
        "id": "p-acie0405-1",
        "block": "three-hinged-arch-thrust",
+       "src": "assets/civil-past-notes/acie0405-thrust-from-the-crown-hinge.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Thrust of a three-hinged arch from the crown hinge",
+       "caption": "The crown hinge carries no moment, so taking moments about it for one half gives H h = M crown, the simple-beam moment at the crown. At any other section the arch moment is the beam moment less H times the rise y there."
+      },
+      {
+       "id": "p-acie0405-2",
+       "block": "three-hinged-arch-thrust",
+       "src": "assets/civil-past-notes/acie0405-half-span-udl-on-a-three-hinged-arch.svg",
+       "width": 720,
+       "height": 420,
+       "title": "A uniform load on half the span of a three-hinged parabolic arch",
+       "caption": "With w on the left half only, VA = 3wL/8, VB = wL/8 and H = wL squared/16h. The moment μ - Hy is sagging on the loaded half and hogging on the other, peaking at plus and minus wL squared/64 at the quarter points."
+      },
+      {
+       "id": "p-acie0405-3",
+       "block": "three-hinged-arch-thrust",
        "src": "assets/civil-notes/acie0405-4.svg",
        "width": 720,
        "height": 420,
@@ -1677,7 +1839,7 @@
        "caption": "A crown hinge adds a moment release; a two-hinged arch generally also needs a compatibility relation."
       },
       {
-       "id": "p-acie0405-2",
+       "id": "p-acie0405-4",
        "block": "three-hinged-arch-thrust",
        "src": "assets/civil-capsule-notes/acie0405-1.svg",
        "width": 720,
@@ -1686,16 +1848,16 @@
        "caption": "Thrust equals the crown simple-beam moment divided by the rise, so its influence line is a triangle peaking at L/(4h) under the crown hinge."
       },
       {
-       "id": "p-acie0405-3",
-       "block": "three-hinged-arch-thrust",
-       "src": "assets/civil-capsule-notes/acie0405-3.svg",
+       "id": "p-acie0405-5",
+       "block": "normal-thrust-and-radial-shear",
+       "src": "assets/civil-past-notes/acie0405-segmental-arch-radius.svg",
        "width": 720,
        "height": 420,
-       "title": "Reaction locus of a two-hinged semicircular arch",
-       "caption": "For a moving point load the two reaction lines meet directly above the load at a constant height πR/2, so their intersection travels along a horizontal line."
+       "title": "Radius of a segmental arch from its span and rise",
+       "caption": "The centre, the mid-span point of the chord and a springing form a right triangle with sides L/2 and R - h and hypotenuse R. From R squared = (L/2) squared + (R - h) squared, the radius is R = L squared/8h + h/2."
       },
       {
-       "id": "p-acie0405-4",
+       "id": "p-acie0405-6",
        "block": "normal-thrust-and-radial-shear",
        "src": "assets/civil-capsule-notes/acie0405-2.svg",
        "width": 720,
@@ -1704,7 +1866,16 @@
        "caption": "Resolving the section resultant (H, V) along the rib tangent gives the normal thrust N and across it the radial shear Q; bending vanishes where the thrust line meets the rib axis."
       },
       {
-       "id": "p-acie0405-5",
+       "id": "p-acie0405-7",
+       "block": "truss-determinacy-and-temperature",
+       "src": "assets/civil-past-notes/acie0405-simple-and-compound-trusses.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Simple and compound trusses",
+       "caption": "A simple truss starts from a triangle and adds two bars for each new joint, so m = 2j - 3. A compound truss joins two simple trusses by three bars that are neither parallel nor concurrent, so m = m1 + m2 + 3."
+      },
+      {
+       "id": "p-acie0405-8",
        "block": "truss-determinacy-and-temperature",
        "src": "assets/civil-past-notes/acie0405-zero-force-members.svg",
        "width": 720,
@@ -1713,7 +1884,7 @@
        "caption": "At an unloaded joint where two non-collinear members meet, both carry no force; where three meet and two are collinear, the third carries none. Such members still brace the truss and shorten the buckling length of compression members."
       },
       {
-       "id": "p-acie0405-6",
+       "id": "p-acie0405-9",
        "block": "truss-determinacy-and-temperature",
        "src": "assets/civil-past-notes/acie0405-method-of-sections.svg",
        "width": 720,
@@ -1726,6 +1897,15 @@
       {
        "id": "p-acie0406-1",
        "block": "indeterminacy-and-methods",
+       "src": "assets/civil-past-notes/acie0406-slope-deflection-member.svg",
+       "width": 720,
+       "height": 420,
+       "title": "End rotations and sway in the slope-deflection equation",
+       "caption": "Member AB of length L turns through θA and θB at its ends while B moves sideways by Δ relative to A. The end moment is the fixed-end moment plus 2EI/L times (2θA + θB - 3Δ/L), with clockwise moments and rotations positive."
+      },
+      {
+       "id": "p-acie0406-2",
+       "block": "indeterminacy-and-methods",
        "src": "assets/civil-notes/acie0406-1.svg",
        "width": 720,
        "height": 420,
@@ -1733,7 +1913,16 @@
        "caption": "Releasing the prop creates a primary cantilever; the redundant reaction restores the required vertical compatibility."
       },
       {
-       "id": "p-acie0406-2",
+       "id": "p-acie0406-3",
+       "block": "stiffness-carry-over-and-distribution",
+       "src": "assets/civil-past-notes/acie0406-fixed-end-moments.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Fixed-end moments for a uniform load and an off-centre point load",
+       "caption": "Fixed ends hold the beam level, so hogging moments appear at the supports. A uniform load gives wL squared/12 at each end and wL squared/24 at mid-span. A point load W at a from A and b from B gives Wab squared/L squared at A and W a squared b/L squared at B, larger at the nearer end."
+      },
+      {
+       "id": "p-acie0406-4",
        "block": "stiffness-carry-over-and-distribution",
        "src": "assets/civil-capsule-notes/acie0406-1.svg",
        "width": 720,
@@ -1742,7 +1931,7 @@
        "caption": "The more freedom the far end has, the smaller the moment needed per unit near-end rotation: 4EI/L with the far end fixed, 3EI/L hinged and EI/L guided."
       },
       {
-       "id": "p-acie0406-3",
+       "id": "p-acie0406-5",
        "block": "stiffness-carry-over-and-distribution",
        "src": "assets/civil-notes/acie0406-2.svg",
        "width": 720,
@@ -1751,7 +1940,16 @@
        "caption": "Joint imbalance is distributed according to member stiffness, followed by the appropriate carry-over for the end condition."
       },
       {
-       "id": "p-acie0406-4",
+       "id": "p-acie0406-6",
+       "block": "two-hinged-arch-thrust",
+       "src": "assets/civil-past-notes/acie0406-parabolic-two-hinged-arch-thrusts.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Horizontal thrust of a two-hinged parabolic arch",
+       "caption": "For a two-hinged parabolic arch of span L and rise h: a uniform load over the whole span gives H = wL squared/8h, a central point load gives 25WL/128h, and a temperature rise T with the springings held gives 15EI0αT/8h squared."
+      },
+      {
+       "id": "p-acie0406-7",
        "block": "two-hinged-arch-thrust",
        "src": "assets/civil-capsule-notes/acie0406-4.svg",
        "width": 720,
@@ -1760,7 +1958,7 @@
        "caption": "Releasing the thrust lets one springing slide; the thrust that restores zero spread is one value for the whole arch, 25WL/128h for a shallow parabola with a crown load."
       },
       {
-       "id": "p-acie0406-5",
+       "id": "p-acie0406-8",
        "block": "two-hinged-arch-thrust",
        "src": "assets/civil-capsule-notes/acie0406-2.svg",
        "width": 720,
@@ -1769,7 +1967,7 @@
        "caption": "Under a uniform load over the full horizontal span the parabola is funicular: H = wL²/8h, zero bending and zero radial shear, so the rib carries pure compression."
       },
       {
-       "id": "p-acie0406-6",
+       "id": "p-acie0406-9",
        "block": "plastic-analysis",
        "src": "assets/civil-notes/acie0406-3.svg",
        "width": 720,
@@ -1778,7 +1976,7 @@
        "caption": "First yield and a fully plastic idealization use different through-depth stress distributions."
       },
       {
-       "id": "p-acie0406-7",
+       "id": "p-acie0406-10",
        "block": "plastic-analysis",
        "src": "assets/civil-notes/acie0406-4.svg",
        "width": 720,
@@ -1787,7 +1985,7 @@
        "caption": "The ideal central-load mechanism forms hinges at both fixed ends and midspan; work rotations must be compatible."
       },
       {
-       "id": "p-acie0406-8",
+       "id": "p-acie0406-11",
        "block": "plastic-analysis",
        "src": "assets/civil-capsule-notes/acie0406-3.svg",
        "width": 720,
@@ -1796,7 +1994,16 @@
        "caption": "Elastically the moment changes sign L/4 from the fixed end; at plastic collapse the interior hinge forms about 0.414L from the prop, a different section."
       },
       {
-       "id": "p-acie0406-9",
+       "id": "p-acie0406-12",
+       "block": "fixed-beam-deflections",
+       "src": "assets/civil-past-notes/acie0406-fixed-and-propped-deflections.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Deflection of a fixed beam and a propped cantilever",
+       "caption": "Fixing both ends of a beam with a central load cuts the mid-span deflection to PL cubed/192EI, a quarter of the simple-beam value. A propped cantilever with a uniform load takes 3wL/8 at the prop and deflects most, wL to the fourth/185EI, at 0.4215L from the prop."
+      },
+      {
+       "id": "p-acie0406-13",
        "block": "fixed-beam-deflections",
        "src": "assets/civil-past-notes/acie0406-fixed-beam-moments.svg",
        "width": 720,
@@ -1805,7 +2012,7 @@
        "caption": "Fixing both ends adds hogging moments of wL²/12 at the supports and leaves wL²/24 sagging at midspan, a third of the simple-span value, with points of contraflexure 0.211L from each end."
       },
       {
-       "id": "p-acie0406-10",
+       "id": "p-acie0406-14",
        "block": "fixed-beam-deflections",
        "src": "assets/civil-past-notes/acie0406-sinking-support.svg",
        "width": 720,
@@ -1814,18 +2021,36 @@
        "caption": "If one end of a fixed beam settles by Δ relative to the other, moments of 6EIΔ/L² appear at both ends even without load: hogging at the higher end and sagging at the lower end, with zero moment at midspan."
       },
       {
-       "id": "p-acie0406-11",
+       "id": "p-acie0406-15",
        "block": "indeterminacy-and-methods",
        "src": "assets/civil-past-notes/acie0406-three-moment-spans.svg",
        "width": 720,
        "height": 420,
        "title": "Two spans for the three-moment equation",
        "caption": "For consecutive spans L1 and L2 whose free bending moment diagrams have areas A1 and A2, one equation links the support moments MA, MB and MC; the centroid distances x1 and x2 are measured from the outer supports A and C."
+      },
+      {
+       "id": "p-acie0406-16",
+       "block": "two-hinged-arch-thrust",
+       "src": "assets/civil-capsule-notes/acie0405-3.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Reaction locus of a two-hinged semicircular arch",
+       "caption": "For a moving point load the two reaction lines meet directly above the load at a constant height πR/2, so their intersection travels along a horizontal line."
       }
      ],
      "ACiE0501": [
       {
        "id": "p-acie0501-1",
+       "block": "dead-and-imposed-loads",
+       "src": "assets/civil-past-notes/acie0501-self-weight-of-a-beam.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Self-weight of a beam per metre run",
+       "caption": "One metre of a beam of width b and overall depth D holds b times D cubic metres of material, so its self-weight is w = γbD per metre. With reinforced concrete at 25 kN/m3, a 300 by 450 mm beam weighs 0.3 x 0.45 x 25 = 3.375 kN/m."
+      },
+      {
+       "id": "p-acie0501-2",
        "block": "dead-and-imposed-loads",
        "src": "assets/civil-notes/acie0501-1.svg",
        "width": 720,
@@ -1834,7 +2059,7 @@
        "caption": "Floor and roof actions reach foundations through structural members; lateral and vertical paths must both be continuous."
       },
       {
-       "id": "p-acie0501-2",
+       "id": "p-acie0501-3",
        "block": "dead-and-imposed-loads",
        "src": "assets/civil-notes/acie0501-2.svg",
        "width": 720,
@@ -1843,7 +2068,7 @@
        "caption": "A supported floor strip contributes distributed load to its beam; the actual support arrangement controls the allocation."
       },
       {
-       "id": "p-acie0501-3",
+       "id": "p-acie0501-4",
        "block": "wind-loads",
        "src": "assets/civil-notes/acie0501-3.svg",
        "width": 720,
@@ -1852,7 +2077,7 @@
        "caption": "The net action on cladding combines pressures on both faces using a declared sign convention."
       },
       {
-       "id": "p-acie0501-4",
+       "id": "p-acie0501-5",
        "block": "snow-loads",
        "src": "assets/civil-capsule-notes/acie0501-1.svg",
        "width": 720,
@@ -1861,7 +2086,7 @@
        "caption": "The roof snow load is the site ground snow load times a dimensionless roof-shape coefficient, acting on the horizontal plan area: 0.75 × 2.4 = 1.80 kN/m²."
       },
       {
-       "id": "p-acie0501-5",
+       "id": "p-acie0501-6",
        "block": "earthquake-loads",
        "src": "assets/civil-notes/acie0501-4.svg",
        "width": 720,
@@ -1870,7 +2095,7 @@
        "caption": "Equivalent inertia opposes the specified acceleration; this schematic is a load-path illustration, not a code spectrum."
       },
       {
-       "id": "p-acie0501-6",
+       "id": "p-acie0501-7",
        "block": "earthquake-loads",
        "src": "assets/civil-capsule-notes/acie0501-2.svg",
        "width": 720,
@@ -1879,7 +2104,7 @@
        "caption": "For non-parallel lateral systems the full effect of one direction is combined with 30 percent of the other, axes interchanged, taking the most adverse case."
       },
       {
-       "id": "p-acie0501-7",
+       "id": "p-acie0501-8",
        "block": "wind-loads",
        "src": "assets/civil-past-notes/acie0501-wind-speed-profiles.svg",
        "width": 720,
@@ -1888,7 +2113,7 @@
        "caption": "Ground roughness slows the wind near the surface, so the factor k2 rises with height and is larger over open terrain than over a crowded city centre; the design pressure grows with the square of the speed."
       },
       {
-       "id": "p-acie0501-8",
+       "id": "p-acie0501-9",
        "block": "snow-loads",
        "src": "assets/civil-past-notes/acie0501-unbalanced-and-drift-snow.svg",
        "width": 720,
@@ -1897,7 +2122,7 @@
        "caption": "Besides the uniform load, roofs are checked for wind-driven unbalanced snow on the sheltered slope of a pitched roof and for drifts against a higher roof or parapet, which can be several times deeper."
       },
       {
-       "id": "p-acie0501-9",
+       "id": "p-acie0501-10",
        "block": "earthquake-loads",
        "src": "assets/civil-past-notes/acie0501-storey-forces.svg",
        "width": 720,
@@ -1910,6 +2135,15 @@
       {
        "id": "p-acie0502-1",
        "block": "aggregate-moisture-and-bulking",
+       "src": "assets/civil-past-notes/acie0502-bulking-of-sand-test.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Measuring the bulking of sand",
+       "caption": "Damp sand is filled loosely to a height h1. The same sand flooded with water settles to h2, because the water films that held the grains apart are lost. Bulking is (h1 - h2)/h2 x 100 percent, and the volume of damp sand in a batch is raised by that amount."
+      },
+      {
+       "id": "p-acie0502-2",
+       "block": "aggregate-moisture-and-bulking",
        "src": "assets/civil-notes/acie0502-3.svg",
        "width": 720,
        "height": 420,
@@ -1917,7 +2151,16 @@
        "caption": "Dry, air-dry, saturated-surface-dry and wet conditions distinguish pore water from free surface moisture."
       },
       {
-       "id": "p-acie0502-2",
+       "id": "p-acie0502-3",
+       "block": "water-and-mix-proportions",
+       "src": "assets/civil-past-notes/acie0502-target-mean-strength.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Target mean strength from the spread of cube results",
+       "caption": "Cube strengths scatter about their mean with standard deviation s. The characteristic strength fck is the value that only 5 percent of results fall below, 1.65s under the mean, so the mix is designed for a target mean strength f'ck = fck + 1.65s."
+      },
+      {
+       "id": "p-acie0502-4",
        "block": "water-and-mix-proportions",
        "src": "assets/civil-capsule-notes/acie0502-1.svg",
        "width": 720,
@@ -1926,7 +2169,7 @@
        "caption": "With full compaction, strength falls as the water-cement ratio rises; a very low ratio helps only if the mix can be consolidated. Bleeding is water rising as solids settle."
       },
       {
-       "id": "p-acie0502-3",
+       "id": "p-acie0502-5",
        "block": "water-and-mix-proportions",
        "src": "assets/civil-notes/acie0502-1.svg",
        "width": 720,
@@ -1935,8 +2178,8 @@
        "caption": "Cement paste surrounds fine and coarse aggregate; entrained or entrapped air is a distinct constituent of the volume."
       },
       {
-       "id": "p-acie0502-4",
-       "block": "water-and-mix-proportions",
+       "id": "p-acie0502-6",
+       "block": "hardened-concrete-properties",
        "src": "assets/civil-notes/acie0502-4.svg",
        "width": 720,
        "height": 420,
@@ -1944,7 +2187,16 @@
        "caption": "The curves illustrate why curing history matters; they are not guaranteed strength percentages at any age."
       },
       {
-       "id": "p-acie0502-5",
+       "id": "p-acie0502-7",
+       "block": "workability-and-admixtures",
+       "src": "assets/civil-past-notes/acie0502-compacting-factor-test.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Compacting factor test",
+       "caption": "Concrete drops from the upper hopper to the lower hopper and then into the cylinder, compacting under its own weight. Its mass Wp is compared with the mass Wf of the same cylinder fully compacted: CF = Wp/Wf, closer to 1 for a more workable mix."
+      },
+      {
+       "id": "p-acie0502-8",
        "block": "workability-and-admixtures",
        "src": "assets/civil-notes/acie0502-2.svg",
        "width": 720,
@@ -1953,7 +2205,7 @@
        "caption": "True slump, shear slump and collapse are different observations; interpretation depends on the specified test procedure."
       },
       {
-       "id": "p-acie0502-6",
+       "id": "p-acie0502-9",
        "block": "hardened-concrete-properties",
        "src": "assets/civil-capsule-notes/acie0502-2.svg",
        "width": 720,
@@ -1962,7 +2214,7 @@
        "caption": "A grade such as M20 names the characteristic 28-day cube strength; IS 456:2000 groups standard grades M25 to M55 and high-strength grades M60 to M80."
       },
       {
-       "id": "p-acie0502-7",
+       "id": "p-acie0502-10",
        "block": "hardened-concrete-properties",
        "src": "assets/civil-capsule-notes/acie0502-3.svg",
        "width": 720,
@@ -1971,7 +2223,7 @@
        "caption": "Platen friction confines more of a short cube, so cubes read higher than cylinders; a pullout test measures a resistance that must be correlated with compressive strength."
       },
       {
-       "id": "p-acie0502-8",
+       "id": "p-acie0502-11",
        "block": "hardened-concrete-properties",
        "src": "assets/civil-capsule-notes/acie0502-4.svg",
        "width": 720,
@@ -1980,7 +2232,7 @@
        "caption": "Under sustained compression concrete keeps shortening after its immediate elastic strain; on unloading part of the creep recovers and part remains."
       },
       {
-       "id": "p-acie0502-9",
+       "id": "p-acie0502-12",
        "block": "aggregate-size-and-grading",
        "src": "assets/civil-past-notes/acie0502-grading-curves.svg",
        "width": 720,
@@ -1989,7 +2241,7 @@
        "caption": "A well-graded aggregate plots as a smooth S-shaped curve across the sieve sizes; a uniformly graded one rises steeply over a narrow range, and a gap-graded one runs flat where sizes are missing."
       },
       {
-       "id": "p-acie0502-10",
+       "id": "p-acie0502-13",
        "block": "aggregate-tests",
        "src": "assets/civil-past-notes/acie0502-impact-test.svg",
        "width": 720,
@@ -1998,7 +2250,7 @@
        "caption": "A hammer of about 14 kg falls 15 times through 380 mm onto aggregate in a steel cup; the fines then passing the 2.36 mm sieve, as a percentage of the sample, give the aggregate impact value."
       },
       {
-       "id": "p-acie0502-11",
+       "id": "p-acie0502-14",
        "block": "formwork",
        "src": "assets/civil-past-notes/acie0502-stripping-times.svg",
        "width": 720,
@@ -2007,7 +2259,7 @@
        "caption": "Vertical faces can be struck within a day, soffits after 3 or 7 days if the props are refixed at once, and the props themselves stay 7 to 21 days depending on the member and its span."
       },
       {
-       "id": "p-acie0502-12",
+       "id": "p-acie0502-15",
        "block": "formwork",
        "src": "assets/civil-past-notes/acie0502-pressure-on-a-column-form.svg",
        "width": 720,
@@ -2020,6 +2272,15 @@
       {
        "id": "p-acie0503-1",
        "block": "limit-state-basics-and-section-types",
+       "src": "assets/civil-past-notes/acie0503-limit-state-stress-block.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Strain, stress block and forces in a singly reinforced section",
+       "caption": "At the limit state the top fibre reaches a strain of 0.0035. The compression block has a resultant 0.36 fck b xu acting 0.42 xu below the top, the steel yields at 0.87 fy, and the moment of resistance is the compression times the lever arm d - 0.42 xu."
+      },
+      {
+       "id": "p-acie0503-2",
+       "block": "limit-state-basics-and-section-types",
        "src": "assets/civil-notes/acie0503-1.svg",
        "width": 720,
        "height": 420,
@@ -2027,22 +2288,13 @@
        "caption": "Compression in concrete and tension in steel form the resisting couple; the lever arm is measured between their resultants."
       },
       {
-       "id": "p-acie0503-2",
+       "id": "p-acie0503-3",
        "block": "limit-state-basics-and-section-types",
        "src": "assets/civil-capsule-notes/acie0503-1.svg",
        "width": 720,
        "height": 420,
        "title": "Strain profiles at flexural failure",
        "caption": "With the extreme concrete strain at 0.0035, an under-reinforced section has steel strain beyond yield and a shallow compression zone; an over-reinforced one fails with the steel below yield."
-      },
-      {
-       "id": "p-acie0503-3",
-       "block": "limit-state-basics-and-section-types",
-       "src": "assets/civil-notes/acie0503-5.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Worked RCC service-stress section",
-       "caption": "The explicitly illustrative M20 section has x = 160 mm, concrete stress 5 MPa and steel stress 100 MPa at a 41.6 kN m service moment; the equal 120 kN forces form the resisting couple."
       },
       {
        "id": "p-acie0503-4",
@@ -2065,6 +2317,15 @@
       {
        "id": "p-acie0503-6",
        "block": "slabs-footings-and-cover",
+       "src": "assets/civil-past-notes/acie0503-punching-shear-perimeter.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Critical perimeter for punching shear around a column",
+       "caption": "Punching shear is checked on a perimeter d/2 from the faces of the column. For a square column of side a this perimeter is b0 = 4(a + d), the resisting area is b0 d, and the nominal stress Vu/(b0 d) must not exceed ks 0.25 root fck."
+      },
+      {
+       "id": "p-acie0503-7",
+       "block": "slabs-footings-and-cover",
        "src": "assets/civil-notes/acie0503-2.svg",
        "width": 720,
        "height": 420,
@@ -2072,7 +2333,7 @@
        "caption": "The sketch contrasts load paths for two-edge and four-edge support; aspect ratio alone is not the complete boundary condition."
       },
       {
-       "id": "p-acie0503-7",
+       "id": "p-acie0503-8",
        "block": "slabs-footings-and-cover",
        "src": "assets/civil-capsule-notes/acie0503-4.svg",
        "width": 720,
@@ -2081,7 +2342,16 @@
        "caption": "Total final deflection is limited to span/250, while the increment after partitions and finishes is limited to the smaller of span/350 and 20 mm."
       },
       {
-       "id": "p-acie0503-8",
+       "id": "p-acie0503-9",
+       "block": "bond-and-anchorage",
+       "src": "assets/civil-past-notes/acie0503-bends-and-hooks.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Anchorage value of bends and hooks",
+       "caption": "A bend or hook counts towards the development length. Each 45 degree bend is worth 4φ, a right-angle bend 8φ, and a standard U-hook 16φ, which is also the upper limit for any bend."
+      },
+      {
+       "id": "p-acie0503-10",
        "block": "bond-and-anchorage",
        "src": "assets/civil-notes/acie0503-4.svg",
        "width": 720,
@@ -2090,7 +2360,7 @@
        "caption": "Distributed bond transfers longitudinal bar force into surrounding concrete along an anchored length."
       },
       {
-       "id": "p-acie0503-9",
+       "id": "p-acie0503-11",
        "block": "bond-and-anchorage",
        "src": "assets/civil-capsule-notes/acie0503-3.svg",
        "width": 720,
@@ -2099,7 +2369,7 @@
        "caption": "A standard U-type tension hook is credited with an anchorage value of 16φ; the designer checks straight embedment plus that credit against the required development length."
       },
       {
-       "id": "p-acie0503-10",
+       "id": "p-acie0503-12",
        "block": "beam-steel-limits-and-shear",
        "src": "assets/civil-past-notes/acie0503-where-stirrups-are-designed.svg",
        "width": 720,
@@ -2108,7 +2378,7 @@
        "caption": "Along a uniformly loaded beam the nominal shear stress falls from the supports to zero at midspan; where it exceeds the concrete's design shear strength τc stirrups are designed for the excess, and elsewhere minimum stirrups are provided."
       },
       {
-       "id": "p-acie0503-11",
+       "id": "p-acie0503-13",
        "block": "slabs-footings-and-cover",
        "src": "assets/civil-notes/acie0504-2.svg",
        "width": 720,
@@ -2117,7 +2387,7 @@
        "caption": "Bending, one-way shear and punching are checked at their specified sections, not at a single common perimeter."
       },
       {
-       "id": "p-acie0503-12",
+       "id": "p-acie0503-14",
        "block": "column-rules",
        "src": "assets/civil-notes/acie0504-1.svg",
        "width": 720,
@@ -2126,7 +2396,7 @@
        "caption": "Closed ties restrain longitudinal bars and confine the core; the sketch does not prescribe a code spacing."
       },
       {
-       "id": "p-acie0503-13",
+       "id": "p-acie0503-15",
        "block": "column-rules",
        "src": "assets/civil-capsule-notes/acie0504-2.svg",
        "width": 720,
@@ -2135,7 +2405,7 @@
        "caption": "Nominal cover to column bars is at least 40 mm and not less than the bar diameter; a helix that meets the clause 39.4 detailing earns a 1.05 strength factor."
       },
       {
-       "id": "p-acie0503-14",
+       "id": "p-acie0503-16",
        "block": "column-rules",
        "src": "assets/civil-notes/acie0504-5.svg",
        "width": 720,
@@ -2148,6 +2418,15 @@
       {
        "id": "p-acie0504-1",
        "block": "concrete-for-prestressed-members",
+       "src": "assets/civil-past-notes/acie0504-load-balancing-tendon.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Load balanced by a parabolic tendon",
+       "caption": "A tendon with force P draped in a parabola of sag e pushes up on the concrete with a uniform load 8Pe/L squared. If this equals the applied load w, the beam carries no net bending and the concrete is under a uniform stress P/A."
+      },
+      {
+       "id": "p-acie0504-2",
+       "block": "concrete-for-prestressed-members",
        "src": "assets/civil-capsule-notes/acie0504-3.svg",
        "width": 720,
        "height": 420,
@@ -2155,7 +2434,7 @@
        "caption": "An eccentric prestress stores compression, strongest at the bottom; load stresses then cancel part of it, so the section can stay entirely in compression."
       },
       {
-       "id": "p-acie0504-2",
+       "id": "p-acie0504-3",
        "block": "concrete-for-prestressed-members",
        "src": "assets/civil-notes/acie0504-4.svg",
        "width": 720,
@@ -2164,7 +2443,7 @@
        "caption": "Tendon curvature introduces balancing action along the beam; profile, force and end anchorage determine the effect."
       },
       {
-       "id": "p-acie0504-3",
+       "id": "p-acie0504-4",
        "block": "losses-of-prestress",
        "src": "assets/civil-capsule-notes/acie0504-4.svg",
        "width": 720,
@@ -2173,7 +2452,7 @@
        "caption": "Elastic shortening, duct friction and anchorage seating act during tensioning and transfer; creep, shrinkage and relaxation reduce the stress further with time."
       },
       {
-       "id": "p-acie0504-4",
+       "id": "p-acie0504-5",
        "block": "concrete-for-prestressed-members",
        "src": "assets/civil-past-notes/acie0504-pre-and-post-tensioning.svg",
        "width": 720,
@@ -2182,7 +2461,7 @@
        "caption": "In pre-tensioning, tendons are stretched between abutments before casting and released into the hardened concrete, which grips them by bond; in post-tensioning, tendons in ducts are stressed against the hardened concrete and anchored at its ends."
       },
       {
-       "id": "p-acie0504-5",
+       "id": "p-acie0504-6",
        "block": "losses-of-prestress",
        "src": "assets/civil-past-notes/acie0504-friction-along-a-duct.svg",
        "width": 720,
@@ -2195,6 +2474,15 @@
       {
        "id": "p-acie0505-1",
        "block": "sections-and-design-basis",
+       "src": "assets/civil-past-notes/acie0505-shape-factors.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Shape factors of common sections",
+       "caption": "The shape factor S = Zp/Ze is the ratio of the plastic to the elastic moment. It is 1.5 for a rectangle, 1.7 for a solid circle and 2.0 for a diamond, but only about 1.12 for an I-section, whose flanges already work hard in the elastic state."
+      },
+      {
+       "id": "p-acie0505-2",
+       "block": "sections-and-design-basis",
        "src": "assets/civil-notes/acie0505-1.svg",
        "width": 720,
        "height": 420,
@@ -2202,7 +2490,7 @@
        "caption": "I, channel and angle sections place material differently relative to their principal axes."
       },
       {
-       "id": "p-acie0505-2",
+       "id": "p-acie0505-3",
        "block": "bolted-and-riveted-connections",
        "src": "assets/civil-notes/acie0505-2.svg",
        "width": 720,
@@ -2211,7 +2499,7 @@
        "caption": "Compare credible rupture paths through a bolted plate rather than automatically choosing the shortest-looking line."
       },
       {
-       "id": "p-acie0505-3",
+       "id": "p-acie0505-4",
        "block": "bolted-and-riveted-connections",
        "src": "assets/civil-notes/acie0505-5.svg",
        "width": 720,
@@ -2220,7 +2508,7 @@
        "caption": "A 400 mm wide, 10 mm thick plate with one 18 mm hole has a geometric net area of 3820 square mm, equivalent to 38.2 square cm."
       },
       {
-       "id": "p-acie0505-4",
+       "id": "p-acie0505-5",
        "block": "welded-connections",
        "src": "assets/civil-notes/acie0505-3.svg",
        "width": 720,
@@ -2229,7 +2517,7 @@
        "caption": "For the ideal equal-leg triangular profile, the throat is perpendicular to the face and shorter than the leg."
       },
       {
-       "id": "p-acie0505-5",
+       "id": "p-acie0505-6",
        "block": "columns-beams-and-trusses",
        "src": "assets/civil-notes/acie0505-4.svg",
        "width": 720,
@@ -2238,7 +2526,7 @@
        "caption": "Lacing transfers shear between separated components so the assembly can act together; connection design remains essential."
       },
       {
-       "id": "p-acie0505-6",
+       "id": "p-acie0505-7",
        "block": "columns-beams-and-trusses",
        "src": "assets/civil-capsule-notes/acie0505-1.svg",
        "width": 720,
@@ -2247,7 +2535,7 @@
        "caption": "Purlins placed at the top-chord joints keep the ideal truss members axial; a purlin between joints bends the rafter, which must then be designed as a beam-column."
       },
       {
-       "id": "p-acie0505-7",
+       "id": "p-acie0505-8",
        "block": "columns-beams-and-trusses",
        "src": "assets/civil-capsule-notes/acie0505-3.svg",
        "width": 720,
@@ -2256,7 +2544,7 @@
        "caption": "A concentrated load spreads through the flange and web; at 45 degrees the spread on each side equals the depth travelled, giving b + 2h for an 80 mm bearing and 120 mm depth."
       },
       {
-       "id": "p-acie0505-8",
+       "id": "p-acie0505-9",
        "block": "sections-and-design-basis",
        "src": "assets/civil-past-notes/acie0505-section-classes.svg",
        "width": 720,
@@ -2265,7 +2553,7 @@
        "caption": "Plastic sections reach the plastic moment and keep rotating, compact ones reach it with little rotation to spare, semi-compact ones reach only first yield, and slender ones buckle locally before they yield."
       },
       {
-       "id": "p-acie0505-9",
+       "id": "p-acie0505-10",
        "block": "bolted-and-riveted-connections",
        "src": "assets/civil-past-notes/acie0505-bolt-in-single-shear.svg",
        "width": 720,
@@ -2274,7 +2562,7 @@
        "caption": "A lap joint loads each bolt across one shear plane and presses its shank against the sides of the holes in bearing; the pitch and the end and edge distances keep the plate from tearing out between the holes."
       },
       {
-       "id": "p-acie0505-10",
+       "id": "p-acie0505-11",
        "block": "welded-connections",
        "src": "assets/civil-past-notes/acie0505-butt-and-fillet-welds.svg",
        "width": 720,
@@ -2287,6 +2575,15 @@
       {
        "id": "p-acie0506-1",
        "block": "timber-columns",
+       "src": "assets/civil-past-notes/acie0506-timber-column-zones.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Short, intermediate and long timber columns",
+       "caption": "A solid timber column with S/d up to 11 is short and takes the full stress fcp. Between 11 and K8 it is intermediate and the stress falls by a fourth-power term to 2/3 fcp. Beyond K8, up to the limit of 50, it is long and follows the Euler-type 0.329E/(S/d) squared."
+      },
+      {
+       "id": "p-acie0506-2",
+       "block": "timber-columns",
        "src": "assets/civil-notes/acie0506-1.svg",
        "width": 720,
        "height": 420,
@@ -2294,7 +2591,7 @@
        "caption": "Parallel-to-grain and transverse actions mobilize different properties; material direction is part of the design input."
       },
       {
-       "id": "p-acie0506-2",
+       "id": "p-acie0506-3",
        "block": "timber-columns",
        "src": "assets/civil-capsule-notes/acie0506-1.svg",
        "width": 720,
@@ -2303,16 +2600,16 @@
        "caption": "IS 883:2016 limits the unsupported length over the least lateral dimension, S/d, to 50 for pin-ended solid columns: a 3.6 m post of 100 × 150 mm gives 36."
       },
       {
-       "id": "p-acie0506-3",
-       "block": "timber-columns",
-       "src": "assets/civil-notes/acie0506-2.svg",
+       "id": "p-acie0506-4",
+       "block": "masonry-walls",
+       "src": "assets/civil-past-notes/acie0506-wall-slenderness-ratio.svg",
        "width": 720,
        "height": 420,
-       "title": "Timber beam checks",
-       "caption": "Bending, shear, bearing and deflection are separate checks for the actual support and loading arrangement."
+       "title": "Slenderness ratio of a load-bearing wall",
+       "caption": "A wall between floor slabs has an effective height of 0.75H when RCC slabs bear on it above and below; between cross walls it has an effective length. The slenderness ratio is the smaller of heff/teff and leff/teff, and a cavity wall with both leaves loaded counts teff = 2/3(t1 + t2)."
       },
       {
-       "id": "p-acie0506-4",
+       "id": "p-acie0506-5",
        "block": "masonry-walls",
        "src": "assets/civil-capsule-notes/acie0506-2.svg",
        "width": 720,
@@ -2321,7 +2618,7 @@
        "caption": "With e within t/6 both faces stay in compression: an average of 0.60 MPa at e = t/24 gives 0.75 and 0.45 MPa at the two faces."
       },
       {
-       "id": "p-acie0506-5",
+       "id": "p-acie0506-6",
        "block": "masonry-walls",
        "src": "assets/civil-capsule-notes/acie0506-3.svg",
        "width": 720,
@@ -2330,7 +2627,7 @@
        "caption": "In the exercise model the effective thickness is the larger of the stronger leaf and two-thirds of both leaves combined; the cavity itself is not added."
       },
       {
-       "id": "p-acie0506-6",
+       "id": "p-acie0506-7",
        "block": "masonry-walls",
        "src": "assets/civil-notes/acie0506-3.svg",
        "width": 720,
@@ -2339,7 +2636,7 @@
        "caption": "Sliding along joints, diagonal cracking and local crushing are distinct mechanisms, not one universal brick-strength limit."
       },
       {
-       "id": "p-acie0506-7",
+       "id": "p-acie0506-8",
        "block": "nbc-for-masonry",
        "src": "assets/civil-notes/acie0506-4.svg",
        "width": 720,
@@ -2348,7 +2645,7 @@
        "caption": "Continuous bands and connected corners support a coherent load path; this schematic is not a substitute for applicable NBC details."
       },
       {
-       "id": "p-acie0506-8",
+       "id": "p-acie0506-9",
        "block": "nbc-for-masonry",
        "src": "assets/civil-capsule-notes/acie0506-4.svg",
        "width": 720,
@@ -2357,7 +2654,7 @@
        "caption": "The Building Act and its implementation framework supply the legal basis, while the Nepal National Building Code organizes the technical provisions."
       },
       {
-       "id": "p-acie0506-9",
+       "id": "p-acie0506-10",
        "block": "middle-third-rule",
        "src": "assets/civil-past-notes/acie0506-base-pressure-and-the-middle-third.svg",
        "width": 720,
@@ -2366,7 +2663,7 @@
        "caption": "With the resultant inside the middle third the whole base stays in compression; outside it the loaded length shrinks to three times the distance c from the resultant to the nearer edge, and the peak pressure rises to 2P/3c."
       },
       {
-       "id": "p-acie0506-10",
+       "id": "p-acie0506-11",
        "block": "middle-third-rule",
        "src": "assets/civil-notes/acie0403-4.svg",
        "width": 720,
