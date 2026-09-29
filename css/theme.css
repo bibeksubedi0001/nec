@@ -224,6 +224,7 @@ html[data-theme="dark"] body[data-app="nec"] #civilSection {
     --nec-blue-soft: var(--blue-soft);
     --nec-amber: var(--amber);
     --nec-amber-soft: var(--amber-soft);
+    --nec-red: var(--bad);
     --cv-ink: var(--ink);
     --cv-muted: var(--ink-faint);
     --cv-line: var(--line);
@@ -262,6 +263,10 @@ html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNav > button:is(.a
 html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNav #cvSavedCount { background: var(--surface-2); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection .nec-coverage-ring { background: conic-gradient(var(--good) 0 var(--correct-share), var(--amber) var(--correct-share) var(--attempted-share), var(--line-soft) var(--attempted-share) 100%); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection :is(.nec-chapter-track, .nec-key-unseen) { background: var(--line-soft); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .nec-coverage-row { background: var(--surface); border-color: var(--line); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .nec-coverage-row:hover { border-color: var(--good); box-shadow: none; }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .nec-review-wrong { border-color: #6c5631; }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .nec-review-wrong:hover { border-color: var(--amber); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection :is(#cvGate, #cvDash, #cvPractice, #cvChapters, #cvSets, #cvResult, #cvLearning) :is(.cv-btn, .cs-paper-actions > button) { background: var(--theme-green); color: #fff; border-color: var(--theme-green); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection :is(#cvGate, #cvDash, #cvPractice, #cvChapters, #cvSets, #cvResult, #cvLearning) :is(.cv-btn-ghost, .cs-paper-actions > button:last-child) { background: var(--surface); color: var(--good); border-color: var(--line); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection :is(#cvGate, #cvDash, #cvPractice, #cvChapters, #cvSets, #cvResult, #cvLearning) :is(.cv-btn, .cs-paper-actions > button):hover:not(:disabled) { background: var(--theme-green-hover); color: #fff; }

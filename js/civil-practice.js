@@ -402,24 +402,37 @@
                         <small>${modeOf(run) === "practice" ? "Practice" : "Exam"} &middot; ${run.ids.length} questions &middot; ${date(run.finishedAt)}</small></span><span class="cv-history-arrow" aria-hidden="true">${uiIcon("arrow-right")}</span></button>`;
                     }).join("")}</div>` : `<div class="cv-empty nec-activity-empty">${uiIcon("clipboard")}<b>No sessions yet</b></div>`;
             const stats = counts([]);
-            const accuracy = stats.attempted ? Math.round(stats.correct / stats.attempted * 100) : 0;
             const share = (amount, count) => count ? Math.max(0, Math.min(100, amount / count * 100)) : 0;
-            const coverage = share(stats.attempted, total);
+            // Non-zero segments keep a few pixels so a handful of answers still shows on a long bar.
+            const segment = (kind, amount, count) => amount > 0 ? `<span class="nec-track-${kind}" aria-hidden="true" style="width:max(4px, ${share(amount, count)}%)"></span>` : "";
+            const accuracyOf = (item) => item.attempted ? Math.round(item.correct / item.attempted * 100) : null;
+            const toneOf = (pct) => pct >= 75 ? "good" : pct >= 50 ? "fair" : "low";
+            const accuracy = accuracyOf(stats);
             $("cvPracticeSummary").innerHTML = `<div class="nec-coverage-summary">
-                <div class="nec-coverage-ring" role="img" aria-label="${number(stats.attempted)} of ${number(total)} questions practised; ${number(stats.correct)} latest answers correct, ${number(stats.wrong)} need review" style="--correct-share:${share(stats.correct, total)}%;--attempted-share:${coverage}%">
-                    <div class="nec-ring-value"><b>${number(stats.attempted)}</b><span>of ${number(total)}</span></div>
+                <div class="nec-coverage-ring" role="img" aria-label="${number(stats.attempted)} of ${number(total)} questions practised: ${number(stats.correct)} correct, ${number(stats.wrong)} wrong" style="--correct-share:${share(stats.correct, total)}%;--attempted-share:${share(stats.attempted, total)}%">
+                    <div class="nec-ring-value"><b>${number(stats.attempted)}</b><span>of ${number(total)} practised</span></div>
                 </div>
-                <dl class="nec-coverage-totals"><div><dt>Latest-answer accuracy</dt><dd>${stats.attempted ? accuracy + "%" : "&mdash;"}</dd></div><div><dt>Needs review</dt><dd>${number(stats.wrong)}</dd></div></dl>
+                <dl class="nec-coverage-totals">
+                    <div><dt><i class="nec-key-correct" aria-hidden="true"></i>Correct</dt><dd>${number(stats.correct)}</dd></div>
+                    <div><dt><i class="nec-key-review" aria-hidden="true"></i>Wrong</dt><dd>${number(stats.wrong)}</dd></div>
+                    <div><dt><i class="nec-key-unseen" aria-hidden="true"></i>Unseen</dt><dd>${number(Math.max(0, total - stats.attempted))}</dd></div>
+                    <div><dt>Accuracy</dt><dd class="nec-accuracy"${accuracy == null ? "" : ` data-tone="${toneOf(accuracy)}"`}>${accuracy == null ? "&mdash;" : accuracy + "%"}</dd></div>
+                </dl>
             </div>
-            <div class="nec-coverage-key"><span><i class="nec-key-correct" aria-hidden="true"></i>Correct</span><span><i class="nec-key-review" aria-hidden="true"></i>Needs review</span><span><i class="nec-key-unseen" aria-hidden="true"></i>Unseen</span></div>
+            <p class="nec-coverage-note">${stats.attempted ? "Counts use your latest answer to each question." : "Answer questions in practice or an exam to see your progress here."}</p>
+            <div class="nec-coverage-head"><h4>By chapter</h4><span>Choose a chapter to practise it</span></div>
             <div class="nec-chapter-coverage">${chapters.filter((chapter) => !chapter.additional || chapter.count > 0).map((chapter) => {
-                const chapterStats = counts([chapter.id]);
-                return `<div class="nec-coverage-row" data-coverage-chapter="${esc(chapter.id)}"><div class="nec-coverage-row-head">${icon(chapter)}<span>${esc(chapter.name)}</span><small>${number(chapterStats.attempted)} / ${number(chapterStats.total)}</small></div>
-                    <div class="nec-chapter-track" role="progressbar" aria-label="${esc(chapter.name)} questions practised" aria-valuemin="0" aria-valuemax="${Math.max(1, chapterStats.total)}" aria-valuenow="${Math.min(chapterStats.attempted, chapterStats.total)}" aria-valuetext="${number(chapterStats.attempted)} of ${number(chapterStats.total)} questions; ${number(chapterStats.correct)} latest answers correct">
-                        <span class="nec-track-correct" aria-hidden="true" style="width:${share(chapterStats.correct, chapterStats.total)}%"></span><span class="nec-track-review" aria-hidden="true" style="width:${share(chapterStats.wrong, chapterStats.total)}%"></span>
-                    </div></div>`;
+                const item = counts([chapter.id]), pct = accuracyOf(item);
+                return `<div class="nec-coverage-row" data-coverage-chapter="${esc(chapter.id)}">
+                    <div class="nec-coverage-row-head">${icon(chapter)}<div class="nec-coverage-title"><button type="button" class="nec-coverage-open" data-cp-action="build-chapter" data-chapter="${esc(chapter.id)}"><span class="sr-only">Practise </span>${esc(chapter.name)}</button>
+                        <small>${number(item.attempted)} of ${number(item.total)} practised${pct == null ? "" : ` &middot; <span class="nec-accuracy" data-tone="${toneOf(pct)}">${pct}% accuracy</span>`}</small></div><span class="nec-coverage-go" aria-hidden="true">${chevron}</span></div>
+                    <div class="nec-chapter-track" role="progressbar" aria-label="${esc(chapter.name)} progress" aria-valuemin="0" aria-valuemax="${Math.max(1, item.total)}" aria-valuenow="${Math.min(item.attempted, item.total)}" aria-valuetext="${number(item.attempted)} of ${number(item.total)} questions practised: ${number(item.correct)} correct, ${number(item.wrong)} wrong">${segment("correct", item.correct, item.total)}${segment("review", item.wrong, item.total)}</div>
+                    ${item.attempted ? `<div class="nec-coverage-row-foot"><span class="nec-count" data-count="correct"><i class="nec-key-correct" aria-hidden="true"></i><b>${number(item.correct)}</b> correct</span>
+                        <span class="nec-count" data-count="wrong"><i class="nec-key-review" aria-hidden="true"></i><b>${number(item.wrong)}</b> wrong</span>
+                        ${item.wrong ? `<button type="button" class="nec-review-wrong" data-cp-action="mistakes" data-chapter="${esc(chapter.id)}">Review ${number(item.wrong)} wrong<span class="sr-only"> answers in ${esc(chapter.name)}</span>${uiIcon("arrow-right")}</button>` : ""}</div>` : ""}
+                </div>`;
             }).join("")}</div>
-            <div class="cv-summary-actions"><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="mistakes" ${stats.wrong ? "" : "disabled"}>Review mistakes (${number(stats.wrong)}) ${uiIcon("arrow-right")}</button>
+            <div class="cv-summary-actions"><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="mistakes" ${stats.wrong ? "" : "disabled"}>Review all wrong (${number(stats.wrong)}) ${uiIcon("arrow-right")}</button>
                 <button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cv-nav="saved">${bookmarkIcon} Saved (${number(stats.saved)})</button></div>`;
         }
 
@@ -1023,7 +1036,12 @@
             else if (action === "exam-subchapter" && topics.has(topicId)) startPractice({ title: sourceTitle(topicTitle(topics.get(topicId))), origin: "chapters", scope: [topicId], source: questionSource, mode: "exam" });
             else if (action === "practice-subchapter" && topics.has(topicId)) startPractice({ title: sourceTitle(topicTitle(topics.get(topicId))), origin: "chapters", scope: [topicId], source: questionSource, mode: "practice" });
             else if (action === "build-subchapter" && topics.has(topicId)) { selected.add(topicId); builderOpen.add(topics.get(topicId).chapterId); poolFilter = "all"; deps.navigate("practice"); }
-            else if (action === "mistakes") { selected = new Set([...topics.values()].filter((topic) => topic.count > 0).map((topic) => topic.id)); selectedMode = "practice"; poolFilter = "wrong"; questionSource = "all"; deps.navigate("practice"); }
+            else if (action === "mistakes") {
+                const chapter = chapterMap.get(chapterId);
+                selected = new Set([...topics.values()].filter((topic) => topic.count > 0 && (!chapter || topic.chapterId === chapter.id)).map((topic) => topic.id));
+                if (chapter) builderOpen.add(chapter.id);
+                selectedMode = "practice"; poolFilter = "wrong"; questionSource = "all"; deps.navigate("practice");
+            }
             else if (!screen) return;
             else if (action === "leave-session") leaveSession();
             else if (action === "feedback-answer") pick(id, button.dataset.answer);
