@@ -764,6 +764,24 @@
        "height": 420,
        "title": "Absolute pressure along a pump suction path",
        "caption": "Where the local absolute pressure falls to about the vapour pressure, near the impeller eye, vapour cavities form: cavitation."
+      },
+      {
+       "id": "p-acie0301-9",
+       "block": "surface-tension-drops-and-bubbles",
+       "src": "assets/civil-past-notes/acie0301-pressure-in-drops-jets-bubbles.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Excess pressure in a droplet, a jet and a soap bubble",
+       "caption": "Surface tension raises the pressure inside a curved surface: by 4σ/d in a droplet, 2σ/d in a cylindrical jet and 8σ/d in a soap bubble, which has two surfaces."
+      },
+      {
+       "id": "p-acie0301-10",
+       "block": "vapour-pressure-and-cavitation",
+       "src": "assets/civil-past-notes/acie0301-vapour-pressure-of-water.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Vapour pressure of water against temperature",
+       "caption": "Water boils when its vapour pressure reaches the surrounding pressure: 101.3 kPa at 100 °C at sea level, but only about 70 kPa, reached near 90 °C, at about 3000 m."
       }
      ],
      "ACiE0302": [
@@ -829,6 +847,24 @@
        "height": 420,
        "title": "Initial floating stability",
        "caption": "For a small heel, the new buoyancy line locates the metacentre; its position relative to G controls the initial restoring sense."
+      },
+      {
+       "id": "p-acie0302-8",
+       "block": "hydrostatic-forces-and-centre-of-pressure",
+       "src": "assets/civil-past-notes/acie0302-pressure-diagram-on-a-wall.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Pressure diagram on a vertical wall",
+       "caption": "Pressure grows linearly with depth, so the diagram on a vertical wall is a triangle: the thrust per metre width is γh²/2, acting h/3 above the base."
+      },
+      {
+       "id": "p-acie0302-9",
+       "block": "metacentre-and-floating-stability",
+       "src": "assets/civil-past-notes/acie0302-stable-and-unstable-flotation.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Metacentre and centre of gravity of a heeled body",
+       "caption": "When the body heels, the centre of buoyancy moves to B′ and the buoyant force meets the centre line at the metacentre M. With M above G the couple rights the body; with M below G it overturns it."
       }
      ],
      "ACiE0303": [
@@ -912,6 +948,33 @@
        "height": 420,
        "title": "Momentum change at a bend",
        "caption": "A control volume must account for inlet and outlet momentum, pressure forces, weight and the support reaction."
+      },
+      {
+       "id": "p-acie0303-10",
+       "block": "bernoulli-equation-and-assumptions",
+       "src": "assets/civil-past-notes/acie0303-siphon.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Flow through a siphon",
+       "caption": "The outlet velocity comes from the drop H below the supply surface, while the pressure is lowest at the summit S; it must stay well above the vapour pressure, which limits the summit to about 7 to 8 m above the supply surface."
+      },
+      {
+       "id": "p-acie0303-11",
+       "block": "momentum-principle-jets-and-drag",
+       "src": "assets/civil-past-notes/acie0303-jet-on-a-plate.svg",
+       "width": 720,
+       "height": 420,
+       "title": "A jet striking a flat plate",
+       "caption": "A jet of area a and velocity V pushes on a fixed plate normal to it with ρaV²; on a plate moving away at u the relative velocity V − u replaces V, giving ρa(V − u)²."
+      },
+      {
+       "id": "p-acie0303-12",
+       "block": "flow-measurement",
+       "src": "assets/civil-past-notes/acie0303-rectangular-and-v-notches.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Rectangular and V-notch weirs",
+       "caption": "Discharge over a rectangular notch grows with the head to the power 3/2 and over a V-notch to the power 5/2, so a V-notch measures small flows more precisely."
       }
      ],
      "ACiE0304": [
@@ -968,6 +1031,33 @@
        "height": 420,
        "title": "Valve closure and pressure waves",
        "caption": "A closure disturbance travels between boundaries; compare closure time with the wave round-trip time."
+      },
+      {
+       "id": "p-acie0304-7",
+       "block": "laminar-pipe-flow",
+       "src": "assets/civil-past-notes/acie0304-laminar-and-turbulent-profiles.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Laminar and turbulent velocity profiles",
+       "caption": "Laminar flow, with Re below about 2000, has a parabolic profile whose maximum is twice the mean velocity V; turbulent flow, above about 4000, has a much flatter profile whose maximum is only about 1.2 times the mean."
+      },
+      {
+       "id": "p-acie0304-8",
+       "block": "pipes-in-series-and-parallel",
+       "src": "assets/civil-past-notes/acie0304-three-reservoirs.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Three reservoirs joined at a junction",
+       "caption": "The junction head settles where the flows balance: water runs from the highest reservoir A to the junction J and on to the lowest, C, while the pipe to B flows in whichever direction the junction head requires."
+      },
+      {
+       "id": "p-acie0304-9",
+       "block": "water-hammer",
+       "src": "assets/civil-past-notes/acie0304-pressure-at-the-valve.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Pressure at a valve after sudden closure",
+       "caption": "Closing faster than 2L/C raises the head by CV/g; the wave runs to the reservoir and back, so the pressure at the valve swings between high and low every 2L/C, a full cycle taking 4L/C, until friction damps it."
       }
      ],
      "ACiE0305": [
@@ -1033,6 +1123,42 @@
        "height": 420,
        "title": "Hydraulic jump",
        "caption": "A rapid transition links shallow supercritical flow to deeper subcritical flow and dissipates mechanical energy."
+      },
+      {
+       "id": "p-acie0305-8",
+       "block": "flow-types-froude-and-reynolds",
+       "src": "assets/civil-past-notes/acie0305-mild-and-steep-slopes.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Mild and steep slopes",
+       "caption": "A slope is mild when uniform flow is deeper than critical, so the normal flow is subcritical, and steep when uniform flow is shallower than critical, so it is supercritical."
+      },
+      {
+       "id": "p-acie0305-9",
+       "block": "hydraulic-jump",
+       "src": "assets/civil-past-notes/acie0305-jump-types.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Hydraulic jump types by approach Froude number",
+       "caption": "Undular and weak jumps lose little energy, oscillating jumps send waves downstream, the steady jump with F1 from 4.5 to 9 is preferred in stilling basins, and strong jumps above 9 are rough but lose the most energy."
+      },
+      {
+       "id": "p-acie0305-10",
+       "block": "manning-and-chezy-uniform-flow",
+       "src": "assets/civil-capsule-notes/acie0305-4.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Schematic Shields curve for incipient motion",
+       "caption": "Grains on a loose noncohesive bed begin to move when the dimensionless bed shear exceeds the Shields threshold read for that sediment and flow."
+      },
+      {
+       "id": "p-acie0305-11",
+       "block": "manning-and-chezy-uniform-flow",
+       "src": "assets/civil-capsule-notes/acie0305-5.svg",
+       "width": 720,
+       "height": 420,
+       "title": "A grain on a sloping channel bank",
+       "caption": "On a bank the downslope pull of the submerged weight uses part of the grain's frictional resistance, so less flow drag is needed to start motion than on the bed."
       }
      ],
      "ACiE0306": [
@@ -1107,6 +1233,51 @@
        "height": 420,
        "title": "Chance of at least one exceedance in n years",
        "caption": "A T-year flood has annual exceedance probability 1/T, yet over a design life of n years the chance that it occurs at least once grows as 1 − (1 − 1/T) to the power n."
+      },
+      {
+       "id": "p-acie0306-9",
+       "block": "rain-gauges-and-average-rainfall",
+       "src": "assets/civil-past-notes/acie0306-thiessen-polygons.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Thiessen polygons in a catchment",
+       "caption": "Perpendicular bisectors of the lines joining neighbouring gauges divide the catchment so that each gauge stands for the area nearer to it than to any other; each reading is weighted by that area."
+      },
+      {
+       "id": "p-acie0306-10",
+       "block": "stream-flow-sediment-and-nepal-rivers",
+       "src": "assets/civil-past-notes/acie0306-area-velocity-method.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Area–velocity method of stream gauging",
+       "caption": "The section is divided by verticals; in each the mean velocity is read by current meter at 0.6 of the depth, or averaged from readings at 0.2 and 0.8 of the depth, and multiplied by the area that vertical represents."
+      },
+      {
+       "id": "p-acie0306-11",
+       "block": "stream-flow-sediment-and-nepal-rivers",
+       "src": "assets/civil-past-notes/acie0306-rating-curve.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Stage–discharge rating curve",
+       "caption": "Gauged pairs of stage and discharge are fitted with a power law in the stage above the stage of zero flow, a; the curve shifts when the control section scours or silts up."
+      },
+      {
+       "id": "p-acie0306-12",
+       "block": "hydrographs-and-unit-hydrograph",
+       "src": "assets/civil-past-notes/acie0306-s-curve.svg",
+       "width": 720,
+       "height": 420,
+       "title": "S-curve from lagged unit hydrographs",
+       "caption": "Adding D-hour unit hydrographs lagged by D hours gives the S-curve; shifting it by T hours, subtracting and multiplying by D/T gives the T-hour unit hydrograph."
+      },
+      {
+       "id": "p-acie0306-13",
+       "block": "flood-probability",
+       "src": "assets/civil-past-notes/acie0306-gumbel-plot.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Flood frequency on a Gumbel plot",
+       "caption": "Plotted against the Gumbel reduced variate, with return periods from the Weibull formula (n + 1)/m, annual maximum floods fall close to a straight line that is extended to the design return period."
       }
      ],
      "ACiE0401": [
@@ -1199,6 +1370,15 @@
        "height": 420,
        "title": "Cantilever end-load diagrams",
        "caption": "The end load gives constant shear magnitude and a moment increasing in magnitude toward the fixed support."
+      },
+      {
+       "id": "p-acie0401-11",
+       "block": "cantilevers-and-overhangs",
+       "src": "assets/civil-past-notes/acie0401-balanced-overhangs.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Equal overhangs that balance the moments",
+       "caption": "With overhangs of about 0.207L under a uniform load, the hogging moment over each support equals the sagging moment at midspan, about 0.0214wL², so the beam is used equally in both."
       }
      ],
      "ACiE0402": [
@@ -1255,6 +1435,42 @@
        "height": 420,
        "title": "Numerical Mohr circle",
        "caption": "For 300 MPa direct tension, zero transverse direct stress and 200 MPa shear, C = 150 MPa and R = 250 MPa; the principal values are 400 and -100 MPa."
+      },
+      {
+       "id": "p-acie0402-7",
+       "block": "strain-energy-in-beams",
+       "src": "assets/civil-past-notes/acie0402-energy-under-the-load-line.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Strain energy as the area under the load–deflection line",
+       "caption": "A load raised gradually from zero to W stores the triangle of work under the line, U = Wδ/2; for a simply supported beam with a central load, δ = WL³/48EI gives U = W²L³/96EI."
+      },
+      {
+       "id": "p-acie0402-8",
+       "block": "oblique-and-principal-planes",
+       "src": "assets/civil-notes/acie0402-4.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Torsion of a circular shaft",
+       "caption": "Under elastic circular-shaft torsion, shear stress varies linearly with radius and is greatest at the outer surface."
+      },
+      {
+       "id": "p-acie0402-9",
+       "block": "ductility-proof-load-and-resilience",
+       "src": "assets/civil-capsule-notes/acie0404-1.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Resilience and toughness on a stress-strain curve",
+       "caption": "The area under the elastic part up to the elastic limit is the modulus of resilience; the whole area to fracture is toughness, which includes plastic work."
+      },
+      {
+       "id": "p-acie0402-10",
+       "block": "ductility-proof-load-and-resilience",
+       "src": "assets/civil-capsule-notes/acie0404-2.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Gradual against sudden loading of a spring",
+       "caption": "A suddenly applied 2 kN force on a 100 kN/m spring overshoots to twice the static displacement, storing four times the energy of gradual loading at that peak."
       }
      ],
      "ACiE0403": [
@@ -1311,6 +1527,33 @@
        "height": 420,
        "title": "Which axis governs column slenderness",
        "caption": "With equal effective lengths, the axis with the smaller radius of gyration has the larger slenderness ratio and the lower Euler stress, so it governs buckling."
+      },
+      {
+       "id": "p-acie0403-7",
+       "block": "euler-load-and-column-failure",
+       "src": "assets/civil-past-notes/acie0403-euler-and-rankine-curves.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Crippling stress against slenderness",
+       "caption": "Euler's curve falls as 1/λ² and holds only below the proportional limit, beyond a slenderness of about 100 for mild steel; the Rankine–Gordon curve joins crushing of short columns to buckling of long ones."
+      },
+      {
+       "id": "p-acie0403-8",
+       "block": "flexure-formula-and-bending-stress",
+       "src": "assets/civil-notes/acie0403-2.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Deflected cantilever",
+       "caption": "An end load produces both tip rotation and tip displacement; the fixed end restrains translation and rotation."
+      },
+      {
+       "id": "p-acie0403-9",
+       "block": "shear-stress-in-beams-and-shafts",
+       "src": "assets/civil-notes/acie0402-4.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Torsion of a circular shaft",
+       "caption": "Under elastic circular-shaft torsion, shear stress varies linearly with radius and is greatest at the outer surface."
       }
      ],
      "ACiE0404": [
@@ -1358,6 +1601,69 @@
        "height": 420,
        "title": "Support restraints",
        "caption": "Roller, pin and fixed supports restrain different planar degrees of freedom; restraint count alone does not ensure stability."
+      },
+      {
+       "id": "p-acie0404-6",
+       "block": "moving-loads",
+       "src": "assets/civil-past-notes/acie0404-load-train-on-an-influence-line.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Placing a load train for the greatest moment at a section",
+       "caption": "The moment at section C is the sum of each load times the influence-line ordinate under it; it peaks with a load at C and the average load to the left of C equal to the average load on the whole span."
+      },
+      {
+       "id": "p-acie0404-7",
+       "block": "standard-beam-deflections",
+       "src": "assets/civil-capsule-notes/acie0403-2.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Midspan deflection of simple beams",
+       "caption": "With L = 4 m and EI = 8000 kN·m², a 12 kN central load deflects 2.00 mm and a 24 kN total uniform load 2.50 mm; for equal total load the ratio is 8 to 5."
+      },
+      {
+       "id": "p-acie0404-8",
+       "block": "standard-beam-deflections",
+       "src": "assets/civil-capsule-notes/acie0403-3.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Translating supports to the conjugate beam",
+       "caption": "Conjugate shear equals real slope and conjugate moment equals real deflection, so a fixed end becomes free, a free end becomes fixed and a simple end stays simple."
+      },
+      {
+       "id": "p-acie0404-9",
+       "block": "continuous-beams-and-internal-hinges",
+       "src": "assets/civil-notes/acie0404-2.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Pin-jointed truss load path",
+       "caption": "Ideal truss members carry axial force when loads act at joints; resolve equilibrium at joints or through a section."
+      },
+      {
+       "id": "p-acie0404-10",
+       "block": "influence-line-diagrams",
+       "src": "assets/civil-notes/acie0405-1.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Reaction influence line",
+       "caption": "A unit load moving across a simple span gives a linear left-support reaction ordinate."
+      },
+      {
+       "id": "p-acie0404-11",
+       "block": "influence-line-diagrams",
+       "src": "assets/civil-notes/acie0405-3.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Section-shear influence line",
+       "caption": "The unit jump at the section reflects the moving load crossing the cut; retain the chosen shear sign convention."
+      },
+      {
+       "id": "p-acie0404-12",
+       "block": "influence-line-diagrams",
+       "src": "assets/civil-notes/acie0405-2.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Section-moment influence line",
+       "caption": "The triangular ordinate peaks when the moving unit load is at the section whose moment is being measured."
       }
      ],
      "ACiE0405": [
@@ -1396,6 +1702,24 @@
        "height": 420,
        "title": "Normal thrust and radial shear at an arch section",
        "caption": "Resolving the section resultant (H, V) along the rib tangent gives the normal thrust N and across it the radial shear Q; bending vanishes where the thrust line meets the rib axis."
+      },
+      {
+       "id": "p-acie0405-5",
+       "block": "truss-determinacy-and-temperature",
+       "src": "assets/civil-past-notes/acie0405-zero-force-members.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Zero-force members at unloaded joints",
+       "caption": "At an unloaded joint where two non-collinear members meet, both carry no force; where three meet and two are collinear, the third carries none. Such members still brace the truss and shorten the buckling length of compression members."
+      },
+      {
+       "id": "p-acie0405-6",
+       "block": "truss-determinacy-and-temperature",
+       "src": "assets/civil-past-notes/acie0405-method-of-sections.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Method of sections",
+       "caption": "A cut through no more than three members exposes their forces; taking moments about O, where two of them meet, leaves the third alone, so its force is the moment about O divided by its lever arm d."
       }
      ],
      "ACiE0406": [
@@ -1470,6 +1794,33 @@
        "height": 420,
        "title": "Propped cantilever: elastic moments against collapse hinges",
        "caption": "Elastically the moment changes sign L/4 from the fixed end; at plastic collapse the interior hinge forms about 0.414L from the prop, a different section."
+      },
+      {
+       "id": "p-acie0406-9",
+       "block": "fixed-beam-deflections",
+       "src": "assets/civil-past-notes/acie0406-fixed-beam-moments.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Moments in a fixed beam under a uniform load",
+       "caption": "Fixing both ends adds hogging moments of wL²/12 at the supports and leaves wL²/24 sagging at midspan, a third of the simple-span value, with points of contraflexure 0.211L from each end."
+      },
+      {
+       "id": "p-acie0406-10",
+       "block": "fixed-beam-deflections",
+       "src": "assets/civil-past-notes/acie0406-sinking-support.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Moments from a sinking support",
+       "caption": "If one end of a fixed beam settles by Δ relative to the other, moments of 6EIΔ/L² appear at both ends even without load: hogging at the higher end and sagging at the lower end, with zero moment at midspan."
+      },
+      {
+       "id": "p-acie0406-11",
+       "block": "indeterminacy-and-methods",
+       "src": "assets/civil-past-notes/acie0406-three-moment-spans.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Two spans for the three-moment equation",
+       "caption": "For consecutive spans L1 and L2 whose free bending moment diagrams have areas A1 and A2, one equation links the support moments MA, MB and MC; the centroid distances x1 and x2 are measured from the outer supports A and C."
       }
      ],
      "ACiE0501": [
@@ -1526,6 +1877,33 @@
        "height": 420,
        "title": "The 100/30 rule for orthogonal earthquake effects",
        "caption": "For non-parallel lateral systems the full effect of one direction is combined with 30 percent of the other, axes interchanged, taking the most adverse case."
+      },
+      {
+       "id": "p-acie0501-7",
+       "block": "wind-loads",
+       "src": "assets/civil-past-notes/acie0501-wind-speed-profiles.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Design wind speed rising with height",
+       "caption": "Ground roughness slows the wind near the surface, so the factor k2 rises with height and is larger over open terrain than over a crowded city centre; the design pressure grows with the square of the speed."
+      },
+      {
+       "id": "p-acie0501-8",
+       "block": "snow-loads",
+       "src": "assets/civil-past-notes/acie0501-unbalanced-and-drift-snow.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Uniform, unbalanced and drifted snow on roofs",
+       "caption": "Besides the uniform load, roofs are checked for wind-driven unbalanced snow on the sheltered slope of a pitched roof and for drifts against a higher roof or parapet, which can be several times deeper."
+      },
+      {
+       "id": "p-acie0501-9",
+       "block": "earthquake-loads",
+       "src": "assets/civil-past-notes/acie0501-storey-forces.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Base shear shared among the floors",
+       "caption": "The equivalent static method applies the base shear as forces at the floor levels in proportion to each floor's weight times its height to the power k, so the forces grow up the building while the storey shear builds up towards the base."
       }
      ],
      "ACiE0502": [
@@ -1600,6 +1978,42 @@
        "height": 420,
        "title": "Creep strain under sustained stress",
        "caption": "Under sustained compression concrete keeps shortening after its immediate elastic strain; on unloading part of the creep recovers and part remains."
+      },
+      {
+       "id": "p-acie0502-9",
+       "block": "aggregate-size-and-grading",
+       "src": "assets/civil-past-notes/acie0502-grading-curves.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Grading curves of aggregates",
+       "caption": "A well-graded aggregate plots as a smooth S-shaped curve across the sieve sizes; a uniformly graded one rises steeply over a narrow range, and a gap-graded one runs flat where sizes are missing."
+      },
+      {
+       "id": "p-acie0502-10",
+       "block": "aggregate-tests",
+       "src": "assets/civil-past-notes/acie0502-impact-test.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Aggregate impact test",
+       "caption": "A hammer of about 14 kg falls 15 times through 380 mm onto aggregate in a steel cup; the fines then passing the 2.36 mm sieve, as a percentage of the sample, give the aggregate impact value."
+      },
+      {
+       "id": "p-acie0502-11",
+       "block": "formwork",
+       "src": "assets/civil-past-notes/acie0502-stripping-times.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Stripping times with ordinary Portland cement",
+       "caption": "Vertical faces can be struck within a day, soffits after 3 or 7 days if the props are refixed at once, and the props themselves stay 7 to 21 days depending on the member and its span."
+      },
+      {
+       "id": "p-acie0502-12",
+       "block": "formwork",
+       "src": "assets/civil-past-notes/acie0502-pressure-on-a-column-form.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Pressure of fresh concrete on a column form",
+       "caption": "Concrete poured quickly acts like a fluid of about 25 kN/m³, so its pressure on the form grows linearly with depth; a slower pour lets the lower concrete stiffen and caps the peak."
       }
      ],
      "ACiE0503": [
@@ -1683,6 +2097,51 @@
        "height": 420,
        "title": "Standard U-hook as an anchorage credit",
        "caption": "A standard U-type tension hook is credited with an anchorage value of 16φ; the designer checks straight embedment plus that credit against the required development length."
+      },
+      {
+       "id": "p-acie0503-10",
+       "block": "beam-steel-limits-and-shear",
+       "src": "assets/civil-past-notes/acie0503-where-stirrups-are-designed.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Where a beam needs designed stirrups",
+       "caption": "Along a uniformly loaded beam the nominal shear stress falls from the supports to zero at midspan; where it exceeds the concrete's design shear strength τc stirrups are designed for the excess, and elsewhere minimum stirrups are provided."
+      },
+      {
+       "id": "p-acie0503-11",
+       "block": "slabs-footings-and-cover",
+       "src": "assets/civil-notes/acie0504-2.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Footing critical sections",
+       "caption": "Bending, one-way shear and punching are checked at their specified sections, not at a single common perimeter."
+      },
+      {
+       "id": "p-acie0503-12",
+       "block": "column-rules",
+       "src": "assets/civil-notes/acie0504-1.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Tied column cage",
+       "caption": "Closed ties restrain longitudinal bars and confine the core; the sketch does not prescribe a code spacing."
+      },
+      {
+       "id": "p-acie0503-13",
+       "block": "column-rules",
+       "src": "assets/civil-capsule-notes/acie0504-2.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Column cover and helical reinforcement",
+       "caption": "Nominal cover to column bars is at least 40 mm and not less than the bar diameter; a helix that meets the clause 39.4 detailing earns a 1.05 strength factor."
+      },
+      {
+       "id": "p-acie0503-14",
+       "block": "column-rules",
+       "src": "assets/civil-notes/acie0504-5.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Column minimum eccentricity",
+       "caption": "For a 400 mm column, unsupported lengths of 5 m and 3 m give adopted minimum eccentricities of 23.33 mm and 20 mm respectively; the lower bound controls the second case."
       }
      ],
      "ACiE0504": [
@@ -1712,6 +2171,24 @@
        "height": 420,
        "title": "Tendon stress from initial to effective prestress",
        "caption": "Elastic shortening, duct friction and anchorage seating act during tensioning and transfer; creep, shrinkage and relaxation reduce the stress further with time."
+      },
+      {
+       "id": "p-acie0504-4",
+       "block": "concrete-for-prestressed-members",
+       "src": "assets/civil-past-notes/acie0504-pre-and-post-tensioning.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Pre-tensioning and post-tensioning",
+       "caption": "In pre-tensioning, tendons are stretched between abutments before casting and released into the hardened concrete, which grips them by bond; in post-tensioning, tendons in ducts are stressed against the hardened concrete and anchored at its ends."
+      },
+      {
+       "id": "p-acie0504-5",
+       "block": "losses-of-prestress",
+       "src": "assets/civil-past-notes/acie0504-friction-along-a-duct.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Loss of prestress by friction along a curved duct",
+       "caption": "The tendon force falls from the jacking end as the tendon rubs on the duct, decaying exponentially with the angle turned and the length travelled; a parabolic duct turns at a steady rate, so here the force falls almost linearly."
       }
      ],
      "ACiE0505": [
@@ -1777,6 +2254,33 @@
        "height": 420,
        "title": "Load dispersion into a steel beam web",
        "caption": "A concentrated load spreads through the flange and web; at 45 degrees the spread on each side equals the depth travelled, giving b + 2h for an 80 mm bearing and 120 mm depth."
+      },
+      {
+       "id": "p-acie0505-8",
+       "block": "sections-and-design-basis",
+       "src": "assets/civil-past-notes/acie0505-section-classes.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Section classes by moment–rotation behaviour",
+       "caption": "Plastic sections reach the plastic moment and keep rotating, compact ones reach it with little rotation to spare, semi-compact ones reach only first yield, and slender ones buckle locally before they yield."
+      },
+      {
+       "id": "p-acie0505-9",
+       "block": "bolted-and-riveted-connections",
+       "src": "assets/civil-past-notes/acie0505-bolt-in-single-shear.svg",
+       "width": 720,
+       "height": 420,
+       "title": "A bolt in single shear, with pitch and edge distances",
+       "caption": "A lap joint loads each bolt across one shear plane and presses its shank against the sides of the holes in bearing; the pitch and the end and edge distances keep the plate from tearing out between the holes."
+      },
+      {
+       "id": "p-acie0505-10",
+       "block": "welded-connections",
+       "src": "assets/civil-past-notes/acie0505-butt-and-fillet-welds.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Butt welds, fillet welds and effective length",
+       "caption": "A full-penetration butt weld joins plates edge to edge and is as strong as the plate; a fillet weld is designed on its throat, 0.7 times its size for a right-angled weld, over its effective length L − 2s."
       }
      ],
      "ACiE0506": [
@@ -1851,6 +2355,24 @@
        "height": 420,
        "title": "Two layers of building regulation in Nepal",
        "caption": "The Building Act and its implementation framework supply the legal basis, while the Nepal National Building Code organizes the technical provisions."
+      },
+      {
+       "id": "p-acie0506-9",
+       "block": "middle-third-rule",
+       "src": "assets/civil-past-notes/acie0506-base-pressure-and-the-middle-third.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Base pressure inside and outside the middle third",
+       "caption": "With the resultant inside the middle third the whole base stays in compression; outside it the loaded length shrinks to three times the distance c from the resultant to the nearer edge, and the peak pressure rises to 2P/3c."
+      },
+      {
+       "id": "p-acie0506-10",
+       "block": "middle-third-rule",
+       "src": "assets/civil-notes/acie0403-4.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Eccentric load and the kern",
+       "caption": "A resultant outside the no-tension kern would produce tensile contact in the elementary linear pressure model."
       }
      ],
      "ACiE0601": [
