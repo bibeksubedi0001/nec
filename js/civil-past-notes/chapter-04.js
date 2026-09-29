@@ -19,7 +19,7 @@
          },
          {
           "label": "Integral forms",
-          "tex": "\\begin{aligned} S_2 - S_1 &amp;= -\\int_1^2 w\\,dx \\\\ M_2 - M_1 &amp;= \\int_1^2 S\\,dx \\end{aligned}"
+          "tex": "\\begin{aligned} S_2 - S_1 &= -\\int_1^2 w\\,dx \\\\ M_2 - M_1 &= \\int_1^2 S\\,dx \\end{aligned}"
          }
         ],
         "example": {
@@ -138,7 +138,7 @@
          },
          {
           "label": "Either side of a clockwise couple at a",
-          "tex": "\\begin{aligned} M_{a^-} &amp;= -\\dfrac{Ma}{L} \\\\ M_{a^+} &amp;= \\dfrac{M(L - a)}{L} \\end{aligned}"
+          "tex": "\\begin{aligned} M_{a^-} &= -\\dfrac{Ma}{L} \\\\ M_{a^+} &= \\dfrac{M(L - a)}{L} \\end{aligned}"
          }
         ],
         "moreHtml": "<p>A clockwise couple M applied at a distance a from the left support of a simple span L is balanced by reactions of M/L, downward at the left and upward at the right. The shear is \\(-M/L\\) along the whole span. The moment falls linearly to \\(-Ma/L\\) just left of the couple, jumps up by M, and returns linearly to zero at the right support.</p><p>An anticlockwise couple reverses every sign. Read from left to right, a clockwise couple always makes the moment diagram jump up and an anticlockwise one makes it jump down.</p>",
@@ -501,7 +501,7 @@
          },
          {
           "label": "Links with the bulk modulus",
-          "tex": "\\begin{aligned} E &amp;= 3K(1 - 2\\mu) \\\\ E &amp;= \\dfrac{9KG}{3K + G} \\end{aligned}"
+          "tex": "\\begin{aligned} E &= 3K(1 - 2\\mu) \\\\ E &= \\dfrac{9KG}{3K + G} \\end{aligned}"
          },
          {
           "label": "Extension of a bar",
@@ -770,11 +770,11 @@
          },
          {
           "label": "Normal stress on an oblique plane",
-          "tex": "\\begin{aligned} \\sigma_\\theta &amp;= \\dfrac{\\sigma_x + \\sigma_y}{2} \\\\ &amp;\\quad + \\dfrac{\\sigma_x - \\sigma_y}{2}\\cos 2\\theta \\\\ &amp;\\quad + \\tau_{xy}\\sin 2\\theta \\end{aligned}"
+          "tex": "\\begin{aligned} \\sigma_\\theta &= \\dfrac{\\sigma_x + \\sigma_y}{2} \\\\ &\\quad + \\dfrac{\\sigma_x - \\sigma_y}{2}\\cos 2\\theta \\\\ &\\quad + \\tau_{xy}\\sin 2\\theta \\end{aligned}"
          },
          {
           "label": "Shear stress on an oblique plane",
-          "tex": "\\begin{aligned} \\tau_\\theta &amp;= \\dfrac{\\sigma_x - \\sigma_y}{2}\\sin 2\\theta \\\\ &amp;\\quad - \\tau_{xy}\\cos 2\\theta \\end{aligned}"
+          "tex": "\\begin{aligned} \\tau_\\theta &= \\dfrac{\\sigma_x - \\sigma_y}{2}\\sin 2\\theta \\\\ &\\quad - \\tau_{xy}\\cos 2\\theta \\end{aligned}"
          },
          {
           "label": "Principal planes",
@@ -871,7 +871,7 @@
          },
          {
           "label": "Maximum in-plane shear stress",
-          "tex": "\\begin{aligned} \\tau_{\\max} &amp;= \\dfrac{\\sigma_1 - \\sigma_2}{2} \\\\ &amp;= \\sqrt{\\left(\\dfrac{\\sigma_x - \\sigma_y}{2}\\right)^2 + \\tau_{xy}^2} \\end{aligned}"
+          "tex": "\\begin{aligned} \\tau_{\\max} &= \\dfrac{\\sigma_1 - \\sigma_2}{2} \\\\ &= \\sqrt{\\left(\\dfrac{\\sigma_x - \\sigma_y}{2}\\right)^2 + \\tau_{xy}^2} \\end{aligned}"
          },
          {
           "label": "Von Mises yield, plane stress",
@@ -879,7 +879,7 @@
          },
          {
           "label": "Equivalent moment and torque for a shaft",
-          "tex": "\\begin{aligned} M_e &amp;= \\tfrac{1}{2}\\left(M + \\sqrt{M^2 + T^2}\\right) \\\\ T_e &amp;= \\sqrt{M^2 + T^2} \\end{aligned}"
+          "tex": "\\begin{aligned} M_e &= \\tfrac{1}{2}\\left(M + \\sqrt{M^2 + T^2}\\right) \\\\ T_e &= \\sqrt{M^2 + T^2} \\end{aligned}"
          }
         ],
         "example": {
@@ -1298,7 +1298,7 @@
          },
          {
           "label": "Rankine–Gordon",
-          "tex": "\\begin{aligned} \\dfrac{1}{P_R} &amp;= \\dfrac{1}{P_c} + \\dfrac{1}{P_E} \\\\ P_R &amp;= \\dfrac{f_c A}{1 + a\\lambda^2} \\end{aligned}"
+          "tex": "\\begin{aligned} \\dfrac{1}{P_R} &= \\dfrac{1}{P_c} + \\dfrac{1}{P_E} \\\\ P_R &= \\dfrac{f_c A}{1 + a\\lambda^2} \\end{aligned}"
          }
         ],
         "example": {
@@ -2277,11 +2277,11 @@
         "formulas": [
          {
           "label": "Three-moment equation, constant EI (x̄ from the outer supports)",
-          "tex": "\\begin{aligned} &amp;M_A L_1 + 2M_B(L_1 + L_2) + M_C L_2 \\\\ &amp;= -\\dfrac{6A_1\\bar{x}_1}{L_1} - \\dfrac{6A_2\\bar{x}_2}{L_2} \\end{aligned}"
+          "tex": "\\begin{aligned} &M_A L_1 + 2M_B(L_1 + L_2) + M_C L_2 \\\\ &= -\\dfrac{6A_1\\bar{x}_1}{L_1} - \\dfrac{6A_2\\bar{x}_2}{L_2} \\end{aligned}"
          },
          {
           "label": "Slope-deflection equation",
-          "tex": "\\begin{aligned} M_{AB} &amp;= M_{FAB} \\\\ &amp;\\quad + \\dfrac{2EI}{L}\\left(2\\theta_A + \\theta_B - \\dfrac{3\\Delta}{L}\\right) \\end{aligned}"
+          "tex": "\\begin{aligned} M_{AB} &= M_{FAB} \\\\ &\\quad + \\dfrac{2EI}{L}\\left(2\\theta_A + \\theta_B - \\dfrac{3\\Delta}{L}\\right) \\end{aligned}"
          }
         ],
         "example": {
@@ -2378,7 +2378,7 @@
          },
          {
           "label": "Fixed-end moments, point load at a from A",
-          "tex": "\\begin{aligned} M_{FAB} &amp;= \\dfrac{Wab^2}{L^2} \\\\ M_{FBA} &amp;= \\dfrac{Wa^2b}{L^2} \\end{aligned}"
+          "tex": "\\begin{aligned} M_{FAB} &= \\dfrac{Wab^2}{L^2} \\\\ M_{FBA} &= \\dfrac{Wa^2b}{L^2} \\end{aligned}"
          },
          {
           "label": "Centre span, symmetric and antisymmetric",

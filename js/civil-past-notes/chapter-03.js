@@ -2495,7 +2495,7 @@
          },
          {
           "label": "Momentum balance across a jump",
-          "tex": "\\begin{aligned} &amp;\\dfrac{q^2}{g y_1} + \\dfrac{y_1^2}{2} \\\\ &amp;= \\dfrac{q^2}{g y_2} + \\dfrac{y_2^2}{2} \\end{aligned}"
+          "tex": "\\begin{aligned} &\\dfrac{q^2}{g y_1} + \\dfrac{y_1^2}{2} \\\\ &= \\dfrac{q^2}{g y_2} + \\dfrac{y_2^2}{2} \\end{aligned}"
          }
         ],
         "example": {
@@ -3137,7 +3137,7 @@
          },
          {
           "label": "Gumbel frequency factor, long records",
-          "tex": "\\begin{aligned} K_T &amp;= -\\dfrac{\\sqrt{6}}{\\pi}\\Big[\\,0.5772 \\\\ &amp;\\qquad + \\ln\\ln\\dfrac{T}{T - 1}\\Big] \\end{aligned}"
+          "tex": "\\begin{aligned} K_T &= -\\dfrac{\\sqrt{6}}{\\pi}\\Big[\\,0.5772 \\\\ &\\qquad + \\ln\\ln\\dfrac{T}{T - 1}\\Big] \\end{aligned}"
          }
         ],
         "example": {
