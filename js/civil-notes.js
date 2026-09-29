@@ -251,12 +251,6 @@
             }
         }
 
-        function references(sources) {
-            if (!sources.length) return "";
-            return `<details class="cn-sources"><summary>Source questions (${sources.length})</summary><div class="cn-source-links">${sources.map((source) =>
-                `<button type="button" data-cn-source="${esc(source.id)}" title="${esc(source.id)}" aria-label="Read ${esc(sourceName(source))}, ${esc(source.id)}">${esc(sourceName(source))}</button>`).join("")}</div></details>`;
-        }
-
         function externalReferences(topic) {
             return (topic.references || []).length ? `<details class="cn-sources"><summary>Standards checked</summary><ul>${topic.references.filter((ref) => /^https:\/\//.test(ref.url)).map((ref) => `<li><a href="${esc(ref.url)}" target="_blank" rel="noopener noreferrer">${esc(ref.title)}</a></li>`).join("")}</ul></details>` : "";
         }
@@ -552,14 +546,12 @@
             return `<article class="cn-topic${groups.length ? " cn-lesson" : ""}${tex ? " cn-v2" : ""}${tex && drill ? " cn-drill" : ""}" data-note-topic="${code}" data-note-library="${library}">
                 <header class="cn-topic-head"><div><span class="cn-code">${code === RURAL.code ? "Additional" : code}</span><h3 id="cnTopicTitle" tabindex="-1">${esc(meta.number + " " + meta.name)}</h3><span class="cn-count" id="cnSourceCount">${countLabel}</span></div>
                     <div class="cn-actions"><button type="button" class="cn-button" data-cn-session="practice" data-topic="${code}"${sessionDisabled}>${uiIcon("ruler")} Practice topic</button><button type="button" class="cn-button cn-secondary" data-cn-session="exam" data-topic="${code}"${sessionDisabled}>${uiIcon("clipboard")} Exam</button></div></header>
-                <details class="cn-scope"><summary>Syllabus scope</summary><p>${esc(meta.detail)}</p></details>
                 ${tex && topic.summary ? `<section class="cn-summary"><h4>Overview</h4><div class="cn-prose"${TEX}>${topic.summary}</div><p class="cn-summary-stats">${topic.blocks.length} sections · ${facts} key facts${formulaCount ? ` · ${formulaCount} formulas` : ""}</p></section>` : ""}
                 ${tex && topic.questionCount ? studyHtml(topic) : ""}
-                <nav class="cn-lesson-nav" aria-label="Contents of ${esc(meta.number)}"><label class="cn-field"><span>On this page</span><select id="cnSectionSelect"><option value="">Jump to a section</option>${groups.length ? groups.map((group, groupIndex) => `<option value="cn-${code}-group-${group.id}">${groupIndex + 1}. ${esc(group.title)}</option>`).join("") : topic.blocks.map((block, blockIndex) => `<option value="cn-${code}-${block.id}">${tex ? blockIndex + 1 + ". " : ""}${esc(block.title)}</option>`).join("")}${topic.formulaSheet ? `<option value="cn-${code}-formulas">Formula sheet</option>` : ""}${topic.recall?.length ? `<option value="cn-${code}-recall">Recall</option>` : ""}${hasChecks ? `<option value="cn-${code}-checks">Question checks</option>` : ""}</select></label>${topic.formulaSheet ? `<a href="#cn-${code}-formulas" data-cn-jump="cn-${code}-formulas">Formula sheet ${uiIcon("arrow-right")}</a>` : ""}${hasChecks ? `<a href="#cn-${code}-checks" data-cn-jump="cn-${code}-checks">Question checks ${uiIcon("arrow-right")}</a>` : ""}</nav>
                 ${topic.blocks.map((block, blockIndex) => {
                     const groupIndex = groups.findIndex((group) => group.start === block.id);
                     const group = groups[groupIndex];
-                    return `${group ? `<h4 class="cn-part" id="cn-${code}-group-${group.id}" tabindex="-1"><span>${groupIndex + 1}</span>${esc(group.title)}</h4>` : ""}<section class="cn-block" id="cn-${code}-${block.id}" tabindex="-1"><${heading}>${tex ? `<span class="cn-num">${blockIndex + 1}</span><span>${esc(block.title)}</span>` : esc(block.title)}</${heading}>${tex ? blockBodyHtml(block, tex, { figures: figuresHtml(code, block.id) }) : blockBodyHtml(block, tex) + figuresHtml(code, block.id)}${tex ? quizHtml(block) : ""}${references(block.sources)}</section>`;
+                    return `${group ? `<h4 class="cn-part" id="cn-${code}-group-${group.id}" tabindex="-1"><span>${groupIndex + 1}</span>${esc(group.title)}</h4>` : ""}<section class="cn-block" id="cn-${code}-${block.id}" tabindex="-1"><${heading}>${tex ? `<span class="cn-num">${blockIndex + 1}</span><span>${esc(block.title)}</span>` : esc(block.title)}</${heading}>${tex ? blockBodyHtml(block, tex, { figures: figuresHtml(code, block.id) }) : blockBodyHtml(block, tex) + figuresHtml(code, block.id)}${tex ? quizHtml(block) : ""}</section>`;
                 }).join("")}
                 ${revisionHtml(topic, code)}
                 ${hasChecks ? `<section class="cn-checks" id="cn-${code}-checks" tabindex="-1">${topic.cautions.length ? `<details class="cn-check-index"><summary>${topic.questionCount ? "Question checks" : "Reference checks"} (${topic.cautions.length})</summary>${checkFilterHtml(topic)}${topic.cautions.map((item, index) => checkHtml(item, code, index, tex)).join("")}</details>` : ""}${externalReferences(topic)}</section>` : ""}
@@ -722,11 +714,6 @@
                     if (!check.hidden) count++;
                 });
                 $("cnCheckCount").textContent = `${count} check${count === 1 ? "" : "s"}`;
-                return;
-            }
-            if (event.target.id === "cnSectionSelect" && isOpen()) {
-                focusBlock(event.target.value);
-                event.target.value = "";
                 return;
             }
             if (event.target.id !== "cnChapterSelect" || !isOpen() || !chapterMap.has(event.target.value)) return;

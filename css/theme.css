@@ -314,7 +314,7 @@ html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-library 
 html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes .cn-library > button[aria-pressed="true"] { background: var(--surface); border-color: var(--good); color: var(--good); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes :is(.cn-field input, .cn-field select) { background: var(--surface); color: var(--ink); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-prose :is(thead, tbody th) { background: var(--surface-2); }
-html[data-theme="dark"] body[data-app="nec"] #civilSection :is(.cn-gaps, .cn-source-links button) { background: var(--surface-2); border-color: var(--line); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-gaps { background: var(--surface-2); border-color: var(--line); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection #cvNotes :is(.cn-f, [id$="-formulas"].cn-revision) { background: var(--good-bg); color: var(--ink); border-color: #518b6f; }
 html[data-theme="dark"] body[data-app="nec"] #civilSection :is(.cn-caution, .cn-source-check) { background: var(--amber-soft); border-color: var(--amber); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection .cn-caution[data-check-status="corrected"] { background: var(--good-bg); border-color: var(--good); }

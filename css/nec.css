@@ -118,12 +118,6 @@ body[data-app="nec"] #civilSection #cvNotes :is(.cn-field input, .cn-field selec
 body[data-app="nec"] #civilSection #cvNotes .cn-topic { padding: 28px 0 0; border: 0; border-radius: 0; background: transparent; }
 body[data-app="nec"] #civilSection #cvNotes .cn-topic-head { margin-bottom: 20px; }
 body[data-app="nec"] #civilSection #cvNotes .cn-topic-head h3 { font-size: 24px; letter-spacing: 0; }
-body[data-app="nec"] #civilSection #cvNotes .cn-scope { padding: 12px 0; border: 0; border-block: 1px solid var(--cs-line); border-radius: 0; background: transparent; }
-body[data-app="nec"] #civilSection #cvNotes .cn-scope summary { font-size: 12px; }
-body[data-app="nec"] #civilSection #cvNotes .cn-lesson-nav { gap: 8px 24px; padding: 16px 0; }
-body[data-app="nec"] #civilSection #cvNotes .cn-lesson-nav .cn-field { flex-basis: 260px; max-width: 440px; }
-body[data-app="nec"] #civilSection #cvNotes .cn-lesson-nav > a { align-items: center; gap: 8px; min-height: 44px; text-decoration: none; }
-body[data-app="nec"] #civilSection #cvNotes .cn-lesson-nav > a:hover { text-decoration: underline; }
 body[data-app="nec"] #civilSection #cvNotes .cn-source-dialog { border-radius: 8px; }
 body[data-app="nec"] #civilSection #cvNotes :is(.cn-block h4, .cn-block h5) { letter-spacing: 0; }
 body[data-app="nec"] #civilSection #cvNotes [id$="-formulas"].cn-revision { border-radius: 8px; }
@@ -192,7 +186,6 @@ body[data-app="nec"] #civilSection #cvSets .cs-paper-actions > button { padding-
     body[data-app="nec"] #civilSection #cvNotes .cn-tools { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding-top: 4px; }
     body[data-app="nec"] #civilSection #cvNotes .cn-topic { padding-top: 22px; }
     body[data-app="nec"] #civilSection #cvNotes .cn-topic-head h3 { font-size: 22px; }
-    body[data-app="nec"] #civilSection #cvNotes .cn-lesson-nav .cn-field { flex-basis: 100%; max-width: none; }
 }
 @media (max-width: 480px) {
     body[data-app="nec"] #civilSection #cvNotes .cn-tools { grid-template-columns: minmax(0, 1fr); }
