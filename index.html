@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f5f7f6" />
-    <script src="js/theme.js?v=88"></script>
+    <script src="js/theme.js?v=89"></script>
     <title>NEC Civil | Bibek Subedi</title>
     <meta name="description" content="Civil Engineering registration exam practice, model papers and chapter notes." />
     <link rel="canonical" href="https://nec.bibeksubedi0001.com.np/" />
@@ -19,14 +19,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css?v=88" />
-    <link rel="stylesheet" href="css/civil.css?v=88" />
-    <link rel="stylesheet" href="css/civil-portal.css?v=88" />
-    <link rel="stylesheet" href="css/civil-focus.css?v=88" />
-    <link rel="stylesheet" href="css/civil-notes.css?v=88" />
-    <link rel="stylesheet" href="css/ui-icons.css?v=88" />
-    <link rel="stylesheet" href="css/nec.css?v=88" />
-    <link rel="stylesheet" href="css/theme.css?v=88" />
+    <link rel="stylesheet" href="css/styles.css?v=89" />
+    <link rel="stylesheet" href="css/civil.css?v=89" />
+    <link rel="stylesheet" href="css/civil-portal.css?v=89" />
+    <link rel="stylesheet" href="css/civil-focus.css?v=89" />
+    <link rel="stylesheet" href="css/civil-notes.css?v=89" />
+    <link rel="stylesheet" href="css/ui-icons.css?v=89" />
+    <link rel="stylesheet" href="css/nec.css?v=89" />
+    <link rel="stylesheet" href="css/theme.css?v=89" />
     <link rel="manifest" href="nec-manifest.webmanifest" />
     <link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
     <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
@@ -89,6 +89,7 @@
                 <div id="cvDash" hidden>
                     <div class="nec-dashboard-head">
                         <div><span class="nec-eyebrow">YOUR STUDY DESK</span><h2 id="cvHeroName">Welcome</h2></div>
+                        <button type="button" class="cv-btn cv-btn-ghost cv-btn-sm nec-offline-open" id="necOfflineOpen" aria-haspopup="dialog" aria-controls="necOfflineDialog" data-state="checking" hidden><span class="nec-offline-icon"></span><span id="necOfflineLabel">Offline</span></button>
                         <details class="nec-utilities">
                             <summary>Workspace tools</summary>
                             <div class="nec-tools">
@@ -263,19 +264,28 @@
         <p id="necTransferSummary"></p>
         <div class="nec-transfer-actions"><button id="necTransferCancel" type="button" autofocus>Cancel</button><button id="necTransferConfirm" type="button">Import progress</button></div>
     </dialog>
-    <script src="js/ui-icons.js?v=88"></script>
-    <script src="js/civil-sets.js?v=88"></script>
-    <script src="js/civil-syllabus.js?v=88"></script>
-    <script src="js/civil-topic-map.js?v=88"></script>
-    <script src="js/civil-capsule.js?v=88"></script>
-    <script src="js/civil-capsule-sets.js?v=88"></script>
-    <script src="js/civil-past-sets.js?v=88"></script>
-    <script src="js/civil-notes-math.js?v=88"></script>
-    <script src="js/civil-notes-figures.js?v=88"></script>
-    <script src="js/civil-notes.js?v=88"></script>
-    <script src="js/civil-practice.js?v=88"></script>
-    <script src="js/civil.js?v=88"></script>
-    <script src="js/nec-progress.js?v=88"></script>
-    <script src="js/install-app.js?v=88"></script>
+    <dialog id="necOfflineDialog" class="nec-transfer-dialog nec-offline-dialog" aria-labelledby="necOfflineTitle">
+        <h2 id="necOfflineTitle">Use NEC Civil offline</h2>
+        <p>Save every question, paper, note and figure on this device. Practice, exams, notes and your progress then work without internet. Your answers are always saved on this device.</p>
+        <dl class="nec-offline-meta"><div><dt>Download size</dt><dd id="necOfflineSize">About 18 MB</dd></div><div><dt>Connection</dt><dd id="necOfflineConnection">Online</dd></div></dl>
+        <p id="necOfflineStatus" role="status" aria-live="polite">Checking offline storage…</p>
+        <progress id="necOfflineProgress" max="1" value="0" aria-label="Offline save progress" hidden></progress>
+        <div class="nec-transfer-actions"><button id="necOfflineRemove" type="button" hidden>Remove offline copy</button><button id="necOfflineClose" type="button">Close</button><button id="necOfflineSave" type="button" disabled>Save for offline</button></div>
+    </dialog>
+    <script src="js/ui-icons.js?v=89"></script>
+    <script src="js/civil-sets.js?v=89"></script>
+    <script src="js/civil-syllabus.js?v=89"></script>
+    <script src="js/civil-topic-map.js?v=89"></script>
+    <script src="js/civil-capsule.js?v=89"></script>
+    <script src="js/civil-capsule-sets.js?v=89"></script>
+    <script src="js/civil-past-sets.js?v=89"></script>
+    <script src="js/civil-notes-math.js?v=89"></script>
+    <script src="js/civil-notes-figures.js?v=89"></script>
+    <script src="js/civil-notes.js?v=89"></script>
+    <script src="js/civil-practice.js?v=89"></script>
+    <script src="js/civil.js?v=89"></script>
+    <script src="js/nec-progress.js?v=89"></script>
+    <script src="js/install-app.js?v=89"></script>
+    <script src="js/nec-offline.js?v=89"></script>
 </body>
 </html>

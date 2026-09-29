@@ -396,6 +396,9 @@ html[data-theme="dark"] body:is([data-app="cee"], [data-app="nec"]) :is(.install
 html[data-theme="dark"] body:is([data-app="cee"], [data-app="nec"]) dialog::backdrop { background: rgb(0 0 0 / 65%); }
 html[data-theme="dark"] body[data-app="nec"] .nec-transfer-actions button { background: var(--surface-2); color: var(--ink); border-color: var(--line); }
 html[data-theme="dark"] body[data-app="nec"] .nec-transfer-actions button:last-child { background: var(--theme-green); color: #fff; }
+html[data-theme="dark"] body[data-app="nec"] .nec-offline-meta > div { border-color: var(--line); }
+html[data-theme="dark"] body[data-app="nec"] .nec-offline-meta dt { color: var(--ink-faint); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection #cvDash .nec-offline-open[data-state="ready"] { border-color: #518b6f; color: var(--good); }
 html[data-theme="dark"] body[data-app="cee"] :is(.q-fig, .opt-fig, .cee-digital-prose svg:not(mjx-container svg), .cee-question-text img, .cee-explanation img) { background: #f5f7f9; color: #25323b; color-scheme: light; border-radius: 4px; }
 html[data-theme="dark"] body[data-app="nec"] #civilSection :is(.cn-figure-open, .cn-figure-viewport, .cn-explanation-figure > a) { background: #f5f7f9; color-scheme: light; }
 
