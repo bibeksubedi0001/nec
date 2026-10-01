@@ -3590,34 +3590,7 @@
      "ACiE0801": [
       {
        "id": "p-acie0801-1",
-       "block": "hydropower-in-nepal",
-       "src": "assets/civil-notes/acie0801-1.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Potential narrows with constraints",
-       "caption": "Gross, technical and economic assessments impose different exclusions; no numerical Nepal inventory is implied by the areas."
-      },
-      {
-       "id": "p-acie0801-2",
-       "block": "hydropower-in-nepal",
-       "src": "assets/civil-capsule-notes/acie0801-1.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Act, rules, policy and contract",
-       "caption": "The Electricity Act 2049 is the principal Act; the Electricity Rules 2050 were made by the Government under its section 40. The Hydropower Development Policy 2058 is Government policy; a PPA is a contract."
-      },
-      {
-       "id": "p-acie0801-3",
-       "block": "hydropower-in-nepal",
-       "src": "assets/civil-notes/acie0801-4.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Parallel development workstreams",
-       "caption": "Technical studies, licensing, energy purchase and finance interact; none alone constitutes complete permission to construct."
-      },
-      {
-       "id": "p-acie0801-4",
-       "block": "features-of-hydropower-plants",
+       "block": "head-flow-and-seasonal-demand",
        "src": "assets/civil-notes/acie0801-3.svg",
        "width": 720,
        "height": 420,
@@ -3625,8 +3598,35 @@
        "caption": "Elevation difference becomes useful only with an available flow, a feasible waterway and acceptable losses."
       },
       {
+       "id": "p-acie0801-2",
+       "block": "head-flow-and-seasonal-demand",
+       "src": "assets/civil-notes/acie0801-1.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Potential narrows with constraints",
+       "caption": "Gross, technical and economic assessments impose different exclusions; no numerical Nepal inventory is implied by the areas."
+      },
+      {
+       "id": "p-acie0801-3",
+       "block": "pharping-law-and-project-delivery",
+       "src": "assets/civil-capsule-notes/acie0801-1.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Act, rules, policy and contract",
+       "caption": "The Electricity Act 2049 is the principal Act; the Electricity Rules 2050 were made by the Government under its section 40. The Hydropower Development Policy 2058 is Government policy; a PPA is a contract."
+      },
+      {
+       "id": "p-acie0801-4",
+       "block": "pharping-law-and-project-delivery",
+       "src": "assets/civil-notes/acie0801-4.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Parallel development workstreams",
+       "caption": "Technical studies, licensing, energy purchase and finance interact; none alone constitutes complete permission to construct."
+      },
+      {
        "id": "p-acie0801-5",
-       "block": "features-of-hydropower-plants",
+       "block": "features-and-life-cycle-appraisal",
        "src": "assets/civil-notes/acie0801-2.svg",
        "width": 720,
        "height": 420,
@@ -3637,7 +3637,7 @@
      "ACiE0802": [
       {
        "id": "p-acie0802-1",
-       "block": "hydropower-equation",
+       "block": "power-head-and-efficiency",
        "src": "assets/civil-notes/acie0802-1.svg",
        "width": 720,
        "height": 420,
@@ -3646,7 +3646,7 @@
       },
       {
        "id": "p-acie0802-2",
-       "block": "hydropower-equation",
+       "block": "power-head-and-efficiency",
        "src": "assets/civil-notes/acie0802-5.svg",
        "width": 720,
        "height": 420,
@@ -3655,7 +3655,7 @@
       },
       {
        "id": "p-acie0802-3",
-       "block": "flow-duration-and-firm-power",
+       "block": "flow-duration-curves",
        "src": "assets/civil-notes/acie0802-2.svg",
        "width": 720,
        "height": 420,
@@ -3664,7 +3664,7 @@
       },
       {
        "id": "p-acie0802-4",
-       "block": "flow-duration-and-firm-power",
+       "block": "firm-power-and-annual-energy",
        "src": "assets/civil-notes/acie0802-3.svg",
        "width": 720,
        "height": 420,
@@ -3673,16 +3673,7 @@
       },
       {
        "id": "p-acie0802-5",
-       "block": "flow-duration-and-firm-power",
-       "src": "assets/civil-capsule-notes/acie0802-4.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Reservoir storage zones and bank storage",
-       "caption": "Flood surcharge sits above full level, active storage between minimum operating and full levels, and dead storage below the minimum level, often the sediment allowance. Bank storage is a groundwater exchange."
-      },
-      {
-       "id": "p-acie0802-6",
-       "block": "load-and-capacity-factors",
+       "block": "load-curves-and-load-factor",
        "src": "assets/civil-notes/acie0802-4.svg",
        "width": 720,
        "height": 420,
@@ -3690,8 +3681,8 @@
        "caption": "An illustrative load pattern distinguishes base service from a higher-demand interval; it is not a forecast or tariff."
       },
       {
-       "id": "p-acie0802-7",
-       "block": "load-and-capacity-factors",
+       "id": "p-acie0802-6",
+       "block": "capacity-diversity-and-coincidence",
        "src": "assets/civil-capsule-notes/acie0802-1.svg",
        "width": 720,
        "height": 420,
@@ -3699,8 +3690,8 @@
        "caption": "Feeder maxima of 12, 18 and 30 kW sum to 60 kW, but their simultaneous maximum is 45 kW: coincidence factor 0.75, diversity factor 1.33. An isolated microhydro must cover the coincident peak."
       },
       {
-       "id": "p-acie0802-8",
-       "block": "base-and-peak-plants",
+       "id": "p-acie0802-7",
+       "block": "base-peak-and-merit-order",
        "src": "assets/civil-capsule-notes/acie0802-2.svg",
        "width": 720,
        "height": 420,
@@ -3708,19 +3699,28 @@
        "caption": "Cheap steady units carry the base, load-following units the intermediate band, and fast-starting high-variable-cost units the short peak. Storage hydro within its water budget can serve base and peak."
       },
       {
-       "id": "p-acie0802-9",
-       "block": "base-and-peak-plants",
+       "id": "p-acie0802-8",
+       "block": "run-of-river-pondage-and-storage",
        "src": "assets/civil-capsule-notes/acie0802-3.svg",
        "width": 720,
        "height": 420,
        "title": "Pondage for a peak, and pumped-storage round trip",
        "caption": "Pondage supplies only the deficit: releasing 5 m³/s against 2 m³/s inflow for 2 h needs 21,600 m³. Pumped storage at 90 percent each way returns 81 MWh from 100 MWh, a round trip of 0.81."
+      },
+      {
+       "id": "p-acie0802-9",
+       "block": "run-of-river-pondage-and-storage",
+       "src": "assets/civil-capsule-notes/acie0802-4.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Reservoir storage zones and bank storage",
+       "caption": "Flood surcharge sits above full level, active storage between minimum operating and full levels, and dead storage below the minimum level, often the sediment allowance. Bank storage is a groundwater exchange."
       }
      ],
      "ACiE0803": [
       {
        "id": "p-acie0803-1",
-       "block": "dam-types-and-spillways",
+       "block": "choosing-and-classifying-dams",
        "src": "assets/civil-notes/acie0803-1.svg",
        "width": 720,
        "height": 420,
@@ -3729,7 +3729,7 @@
       },
       {
        "id": "p-acie0803-2",
-       "block": "dam-types-and-spillways",
+       "block": "choosing-and-classifying-dams",
        "src": "assets/civil-capsule-notes/acie0803-1.svg",
        "width": 720,
        "height": 420,
@@ -3738,16 +3738,7 @@
       },
       {
        "id": "p-acie0803-3",
-       "block": "dam-types-and-spillways",
-       "src": "assets/civil-capsule-notes/acie0803-4.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Morning-glory shaft spillway and siphon spillway",
-       "caption": "A morning-glory spillway has a flared circular lip where overflow drops into a vertical shaft. A siphon spillway passes overflow first, then primes into full enclosed flow; air admission governs its regime."
-      },
-      {
-       "id": "p-acie0803-4",
-       "block": "gravity-dam-stability",
+       "block": "uplift-and-elementary-profile",
        "src": "assets/civil-notes/acie0803-2.svg",
        "width": 720,
        "height": 420,
@@ -3755,8 +3746,8 @@
        "caption": "Weight, hydrostatic thrust, uplift and the foundation reaction must be resolved with consistent signs and locations."
       },
       {
-       "id": "p-acie0803-5",
-       "block": "gravity-dam-stability",
+       "id": "p-acie0803-4",
+       "block": "sliding-shear-friction-and-anchorage",
        "src": "assets/civil-capsule-notes/acie0803-2.svg",
        "width": 720,
        "height": 420,
@@ -3764,8 +3755,8 @@
        "caption": "Sliding resistance is friction on the effective normal force plus mobilisable cohesion: (0.6 × 1000 + 200)/400 = 2.0. A shear key helps by bearing and interlock, not by adding friction area."
       },
       {
-       "id": "p-acie0803-6",
-       "block": "earth-dams",
+       "id": "p-acie0803-5",
+       "block": "earth-dams-zoning-freeboard-and-crest",
        "src": "assets/civil-notes/acie0803-3.svg",
        "width": 720,
        "height": 420,
@@ -3773,8 +3764,8 @@
        "caption": "The core limits seepage while filters and drains control migration and pressure; they are not interchangeable components."
       },
       {
-       "id": "p-acie0803-7",
-       "block": "earth-dams",
+       "id": "p-acie0803-6",
+       "block": "phreatic-line-and-sloughing",
        "src": "assets/civil-capsule-notes/acie0803-3.svg",
        "width": 720,
        "height": 420,
@@ -3782,8 +3773,17 @@
        "caption": "The phreatic surface is the surface of zero gauge pore pressure; under the Dupuit idealisation h² varies linearly with distance, a parabola. If saturation reaches the downstream face, shallow slips cause sloughing."
       },
       {
+       "id": "p-acie0803-7",
+       "block": "spillways-and-energy-dissipation",
+       "src": "assets/civil-capsule-notes/acie0803-4.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Morning-glory shaft spillway and siphon spillway",
+       "caption": "A morning-glory spillway has a flared circular lip where overflow drops into a vertical shaft. A siphon spillway passes overflow first, then primes into full enclosed flow; air admission governs its regime."
+      },
+      {
        "id": "p-acie0803-8",
-       "block": "outlets-and-gates",
+       "block": "spillways-and-energy-dissipation",
        "src": "assets/civil-notes/acie0803-4.svg",
        "width": 720,
        "height": 420,
@@ -3792,7 +3792,7 @@
       },
       {
        "id": "p-acie0803-9",
-       "block": "outlets-and-gates",
+       "block": "outlets-gates-and-level-measurement",
        "src": "assets/civil-capsule-notes/acie0803-5.svg",
        "width": 720,
        "height": 420,
@@ -3801,7 +3801,7 @@
       },
       {
        "id": "p-acie0803-10",
-       "block": "outlets-and-gates",
+       "block": "outlets-gates-and-level-measurement",
        "src": "assets/civil-capsule-notes/acie0803-6.svg",
        "width": 720,
        "height": 420,
@@ -3812,7 +3812,7 @@
      "ACiE0804": [
       {
        "id": "p-acie0804-1",
-       "block": "pondage-and-forebay",
+       "block": "run-of-river-headworks-and-pondage",
        "src": "assets/civil-notes/acie0804-1.svg",
        "width": 720,
        "height": 420,
@@ -3821,7 +3821,7 @@
       },
       {
        "id": "p-acie0804-2",
-       "block": "pondage-and-forebay",
+       "block": "intakes-trash-racks-and-forebay-submergence",
        "src": "assets/civil-capsule-notes/acie0804-1.svg",
        "width": 720,
        "height": 420,
@@ -3830,7 +3830,7 @@
       },
       {
        "id": "p-acie0804-3",
-       "block": "pondage-and-forebay",
+       "block": "intakes-trash-racks-and-forebay-submergence",
        "src": "assets/civil-notes/acie0804-2.svg",
        "width": 720,
        "height": 420,
@@ -3839,7 +3839,7 @@
       },
       {
        "id": "p-acie0804-4",
-       "block": "settling-basins",
+       "block": "settling-basins-overflow-rate-and-flushing",
        "src": "assets/civil-notes/acie0804-3.svg",
        "width": 720,
        "height": 420,
@@ -3848,7 +3848,7 @@
       },
       {
        "id": "p-acie0804-5",
-       "block": "settling-basins",
+       "block": "settling-basins-overflow-rate-and-flushing",
        "src": "assets/civil-notes/acie0804-4.svg",
        "width": 720,
        "height": 420,
@@ -3859,16 +3859,7 @@
      "ACiE0805": [
       {
        "id": "p-acie0805-1",
-       "block": "surge-tanks",
-       "src": "assets/civil-notes/acie0805-4.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Pressure-wave travel",
-       "caption": "Elastic pressure disturbances travel along the waterway; rapid closure is judged relative to the system's travel time."
-      },
-      {
-       "id": "p-acie0805-2",
-       "block": "surge-tanks",
+       "block": "waterway-forebay-penstock-and-tailrace",
        "src": "assets/civil-notes/acie0805-1.svg",
        "width": 720,
        "height": 420,
@@ -3876,8 +3867,17 @@
        "caption": "The tunnel, surge connection and penstock serve different hydraulic roles and may have different pressure regimes."
       },
       {
+       "id": "p-acie0805-2",
+       "block": "surge-tanks-and-water-hammer",
+       "src": "assets/civil-notes/acie0805-4.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Pressure-wave travel",
+       "caption": "Elastic pressure disturbances travel along the waterway; rapid closure is judged relative to the system's travel time."
+      },
+      {
        "id": "p-acie0805-3",
-       "block": "penstock-forebay-and-tailrace",
+       "block": "penstock-velocity-diameter-and-thickness",
        "src": "assets/civil-notes/acie0805-3.svg",
        "width": 720,
        "height": 420,
@@ -3886,27 +3886,27 @@
       },
       {
        "id": "p-acie0805-4",
-       "block": "tunnelling-methods",
-       "src": "assets/civil-capsule-notes/acie0805-1.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Heading and bench, trimmer holes and the work cycle",
-       "caption": "In heading and benching the upper heading is excavated first and the bench follows. Trimmer holes form the final outline and limit overbreak. The cycle runs mark, drill, charge and blast, ventilate, clear misfires, muck."
-      },
-      {
-       "id": "p-acie0805-5",
-       "block": "tunnelling-methods",
+       "block": "tunnelling-methods-and-linings",
        "src": "assets/civil-notes/acie0805-2.svg",
        "width": 720,
        "height": 420,
        "title": "Tunnel section alternatives",
        "caption": "Circular and horseshoe forms respond differently to internal pressure, ground conditions and construction requirements."
+      },
+      {
+       "id": "p-acie0805-5",
+       "block": "drill-and-blast-cycle-and-tunnel-air",
+       "src": "assets/civil-capsule-notes/acie0805-1.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Heading and bench, trimmer holes and the work cycle",
+       "caption": "In heading and benching the upper heading is excavated first and the bench follows. Trimmer holes form the final outline and limit overbreak. The cycle runs mark, drill, charge and blast, ventilate, clear misfires, muck."
       }
      ],
      "ACiE0806": [
       {
        "id": "p-acie0806-1",
-       "block": "turbine-types",
+       "block": "impulse-and-reaction-turbines",
        "src": "assets/civil-notes/acie0806-2.svg",
        "width": 720,
        "height": 420,
@@ -3915,7 +3915,7 @@
       },
       {
        "id": "p-acie0806-2",
-       "block": "turbine-types",
+       "block": "impulse-and-reaction-turbines",
        "src": "assets/civil-notes/acie0806-3.svg",
        "width": 720,
        "height": 420,
@@ -3924,25 +3924,7 @@
       },
       {
        "id": "p-acie0806-3",
-       "block": "turbine-types",
-       "src": "assets/civil-notes/acie0806-1.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Pelton impulse runner",
-       "caption": "A nozzle converts head to jet velocity before the jet transfers momentum to the bucket."
-      },
-      {
-       "id": "p-acie0806-4",
-       "block": "specific-speed-and-unit-quantities",
-       "src": "assets/civil-capsule-notes/acie0806-2.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Efficiency boundaries from water to shaft",
-       "caption": "With 1000 kW supplied, 900 kW reaching the runner and 855 kW at the shaft, hydraulic efficiency is 90 percent, mechanical 95 percent and overall 85.5 percent. Unit power 800/16^(3/2) = 12.5 kW."
-      },
-      {
-       "id": "p-acie0806-5",
-       "block": "specific-speed-and-unit-quantities",
+       "block": "impulse-and-reaction-turbines",
        "src": "assets/civil-notes/acie0806-4.svg",
        "width": 720,
        "height": 420,
@@ -3950,8 +3932,17 @@
        "caption": "Generator, turbine, draft tube and handling equipment constrain civil levels and maintenance space; dimensions are schematic."
       },
       {
-       "id": "p-acie0806-6",
-       "block": "draft-tubes-and-velocities",
+       "id": "p-acie0806-4",
+       "block": "pelton-jet-and-guide-vane-velocities",
+       "src": "assets/civil-notes/acie0806-1.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Pelton impulse runner",
+       "caption": "A nozzle converts head to jet velocity before the jet transfers momentum to the bucket."
+      },
+      {
+       "id": "p-acie0806-5",
+       "block": "draft-tubes-and-cavitation",
        "src": "assets/civil-capsule-notes/acie0806-1.svg",
        "width": 720,
        "height": 420,
@@ -3959,8 +3950,26 @@
        "caption": "The draft tube runs from the runner outlet to the submerged tailwater. Slowing from 8 to 4 m/s over a 3 m drop with 0.40 m loss raises the pressure head by 5.05 m; total head still falls by the loss."
       },
       {
+       "id": "p-acie0806-6",
+       "block": "efficiency-generators-and-governors",
+       "src": "assets/civil-capsule-notes/acie0806-2.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Efficiency boundaries from water to shaft",
+       "caption": "With 1000 kW supplied, 900 kW reaching the runner and 855 kW at the shaft, hydraulic efficiency is 90 percent, mechanical 95 percent and overall 85.5 percent. Unit power 800/16^(3/2) = 12.5 kW."
+      },
+      {
        "id": "p-acie0806-7",
-       "block": "efficiency-governors-and-pumps",
+       "block": "efficiency-generators-and-governors",
+       "src": "assets/civil-capsule-notes/acie0806-5.svg",
+       "width": 720,
+       "height": 420,
+       "title": "Water-to-wire efficiency and governor action",
+       "caption": "Net output is hydraulic input times turbine and generator efficiency minus auxiliaries: 88 percent at full load but 72 percent at quarter load. After load loss, the governor cuts admitted water to restore speed."
+      },
+      {
+       "id": "p-acie0806-8",
+       "block": "pumps-pump-turbines-and-similarity",
        "src": "assets/civil-capsule-notes/acie0806-3.svg",
        "width": 720,
        "height": 420,
@@ -3968,22 +3977,13 @@
        "caption": "In a centrifugal pump water enters at the eye and moves outward while shaft work raises its energy; in an inward radial-flow turbine it moves inward and drives the shaft. Shaft input = 9.81 kW / 0.80 = 12.26 kW."
       },
       {
-       "id": "p-acie0806-8",
-       "block": "efficiency-governors-and-pumps",
+       "id": "p-acie0806-9",
+       "block": "pumps-pump-turbines-and-similarity",
        "src": "assets/civil-capsule-notes/acie0806-4.svg",
        "width": 720,
        "height": 420,
        "title": "Similar-pump fifth-power law versus impeller trimming",
        "caption": "For similar pumps at the same speed, power scales as D⁵: doubling the diameter of a 10 kW pump gives 320 kW, not the 80 kW of the flow ratio alone. A permitted trim to 0.90 D under a cube law gives 14.58 kW."
-      },
-      {
-       "id": "p-acie0806-9",
-       "block": "efficiency-governors-and-pumps",
-       "src": "assets/civil-capsule-notes/acie0806-5.svg",
-       "width": 720,
-       "height": 420,
-       "title": "Water-to-wire efficiency and governor action",
-       "caption": "Net output is hydraulic input times turbine and generator efficiency minus auxiliaries: 88 percent at full load but 72 percent at quarter load. After load loss, the governor cuts admitted water to restore speed."
       }
      ],
      "ACiE0901": [
