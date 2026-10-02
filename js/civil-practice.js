@@ -8,9 +8,11 @@
     const questionKey = (item) => item.q.src || item.q.id;
     const originOf = (key) => /^CAP4-/.test(key) ? "capsule" : /^PAST-/.test(key) ? "past" : "model";
     const supplementSources = () => [...(window.CIVIL_CAPSULE_INDEX || []), ...(window.CIVIL_PAST_INDEX || [])];
-    const fromSource = (key, source) => !source || source === "all" || originOf(key) === source;
-    const countOf = (node, source) => !source || source === "all" ? node.count
-        : node.sourceCounts ? node.sourceCounts[source] || 0 : source === "model" ? node.count : 0;
+    // A source filter is "all", one origin or a list of origins.
+    const sourceList = (source) => !source || source === "all" ? null : Array.isArray(source) ? [...new Set(source)] : [source];
+    const fromSource = (key, source) => { const list = sourceList(source); return !list || list.includes(originOf(key)); };
+    const countOf = (node, source) => { const list = sourceList(source);
+        return !list ? node.count : list.reduce((sum, key) => sum + (node.sourceCounts ? node.sourceCounts[key] || 0 : key === "model" ? node.count : 0), 0); };
     // Mixed past sets score every question at 1 mark, so the original paper's mark suffix is dropped there.
     const mixedSetOf = (run) => run && (window.CIVIL_PAST_SETS || []).find((set) => set.mixed && set.key === run.capsuleSet) || null;
     const sourceLabel = (item, run = null) => item.q.source?.kind === "capsule" || item.q.source?.kind === "past"
@@ -194,10 +196,11 @@
 
     function filterPool(records, scope, filter, progress, bookmarks, source = "all") {
         const selected = new Set(scope);
+        const origins = sourceList(source);
         return records.filter((item) => {
             if (!inScope(item, selected)) return false;
             const key = questionKey(item);
-            if (!fromSource(key, source)) return false;
+            if (origins && !origins.includes(originOf(key))) return false;
             if (filter === "unseen") return !progress[key];
             if (filter === "wrong") return progress[key] && progress[key].correct === false;
             if (filter === "saved") return !!bookmarks[key];
@@ -267,6 +270,7 @@
         let desiredCount = 20;
         let poolFilter = "all";
         let questionSource = "all";
+        let questionSources = [];
         let selectedMode = "practice";
         let timed = true;
         let customMinutes = null;
@@ -355,16 +359,30 @@
                 saved: Object.entries(store.bookmarks).filter(([key, item]) => fromSource(key, source) && inScope(item, chosen)).length };
         }
 
-        const sourceNames = { all: "All questions", model: "Model-paper bank", capsule: "Capsule questions", past: "Past papers" };
-        const sourceTotals = Object.fromEntries(Object.keys(sourceNames).map((key) => [key, key === "all" ? total : chapters.reduce((sum, chapter) => sum + countOf(chapter, key), 0)]));
-        if (!sourceTotals.past) delete sourceNames.past;
+        const sourceNames = { model: "Model-paper bank", capsule: "Capsule questions", past: "Past papers" };
+        const sourceTotals = Object.fromEntries(Object.keys(sourceNames).map((key) => [key, chapters.reduce((sum, chapter) => sum + countOf(chapter, key), 0)]));
+        const sourceKeys = Object.keys(sourceNames).filter((key) => sourceTotals[key] > 0);
+        questionSources = sourceKeys.slice();
 
-        function sourceOptions() {
-            return Object.keys(sourceNames).map((key) => `<option value="${key}"${questionSource === key ? " selected" : ""}>${sourceNames[key]} (${number(sourceTotals[key])})</option>`).join("");
+        function chooseSources(keys) {
+            questionSources = sourceKeys.filter((key) => keys.includes(key));
+            questionSource = questionSources.length === sourceKeys.length ? "all" : questionSources.slice();
+        }
+
+        function sourcePickerHtml(name) {
+            return `<legend>Question sources</legend><div class="cv-source-options">${sourceKeys.map((key) => `<label class="cv-source-option"><input type="checkbox" name="${name}" value="${key}"${questionSources.includes(key) ? " checked" : ""} />
+                <span class="cv-source-name">${sourceNames[key]}</span><span class="cv-source-count">${number(sourceTotals[key])}<span class="sr-only"> questions</span></span></label>`).join("")}</div><p class="cv-source-note" role="status"></p>`;
+        }
+
+        function syncSourcePicker(picker, name) {
+            if (!picker) return;
+            if (!picker.querySelector("input")) { picker.innerHTML = sourcePickerHtml(name); return; }
+            picker.querySelectorAll("input").forEach((input) => { input.checked = questionSources.includes(input.value); });
+            picker.querySelector(".cv-source-note").textContent = "";
         }
 
         function sourceTitle(title) {
-            return questionSource === "all" ? title : title + " · " + sourceNames[questionSource];
+            return questionSource === "all" ? title : title + " · " + questionSources.map((key) => sourceNames[key]).join(" + ");
         }
 
         function availableCount() {
@@ -465,7 +483,7 @@
                 <div class="cv-builder-chapter-body"><label class="cv-select-chapter"><input type="checkbox" data-cp-chapter="${chapter.id}" ${chapterCount ? "" : "disabled"} /><span>Select all available ${chapter.additional ? "groups" : "subchapters"}</span></label>
                 <div class="cv-subchapter-picks">${leaves.map((topic) => { const topicCount = countOf(topic, questionSource); return `<label class="cv-pick-subchapter${selected.has(topic.id) ? " on" : ""}${topicCount ? "" : " cv-topic-empty"}">
                     <input type="checkbox" data-cp-subchapter="${topic.id}"${selected.has(topic.id) ? " checked" : ""}${topicCount ? "" : " disabled"} />
-                    <span class="cv-pick-info"><b>${esc(topicTitle(topic))}</b><small>${topic.code ? esc(topic.code) : "Additional bank questions"}${topicCount ? "" : " · No questions from this source"}</small></span><span class="cv-count">${topicCount} Q</span></label>`; }).join("")}</div></div></details>`;
+                    <span class="cv-pick-info"><b>${esc(topicTitle(topic))}</b><small>${topic.code ? esc(topic.code) : "Additional bank questions"}${topicCount ? "" : questionSources.length > 1 ? " · No questions from these sources" : " · No questions from this source"}</small></span><span class="cv-count">${topicCount} Q</span></label>`; }).join("")}</div></div></details>`;
         }
 
         function renderBuilder() {
@@ -477,7 +495,7 @@
                 </section>
                 <section class="cv-panel cv-builder-summary"><div class="cv-step-head"><span class="cv-step-no">2</span><div><h3>Choose how to learn</h3><p>One mark per correct answer. No negative marking.</p></div></div>
                     <fieldset class="cs-session-mode"><legend>Session mode</legend><label><input type="radio" name="cpMode" value="practice" ${selectedMode === "practice" ? "checked" : ""} /><span><b>Practice</b></span></label><label><input type="radio" name="cpMode" value="exam" ${selectedMode === "exam" ? "checked" : ""} /><span><b>Exam</b></span></label></fieldset>
-                    <label class="cv-field"><span>Question source</span><select id="cpSource">${sourceOptions()}</select></label>
+                    <fieldset class="cv-source-picker" id="cpSource">${sourcePickerHtml("cpSource")}</fieldset>
                     <label class="cv-field"><span>Question pool</span><select id="cpPool"><option value="all">All questions</option><option value="unseen">Not yet attempted in practice</option><option value="wrong">Incorrect in practice</option><option value="saved">Saved questions</option></select></label>
                     <span class="cv-builder-hint">Number of questions</span><div class="cv-count-presets">${[10, 20, 30, 50, 100].map((n) => `<button type="button" class="cv-count-chip" data-cp-action="count" data-count="${n}">${n}</button>`).join("")}</div>
                     <label class="cv-field"><span>Custom count (1–100)</span><input type="number" id="cpCount" min="1" max="100" step="1" value="${desiredCount}" inputmode="numeric" /></label>
@@ -526,7 +544,7 @@
             $("cpBuildStart").disabled = !selected.size || available === 0;
             $("cpBuildStart").textContent = count ? `Start ${count}-question ${selectedMode}` : "Start " + selectedMode;
             $("cpBuilderHint").textContent = !selected.size ? "Choose at least one chapter or subchapter to begin."
-                : !available ? "No questions match this source and pool. Try another source or All questions."
+                : !available ? "No questions match the chosen sources and pool. Add a source or set the pool to All questions."
                 : selectedMode === "exam" && timed ? "The timer continues if you leave." : "";
             $("cpBuilderHint").hidden = !$("cpBuilderHint").textContent;
             $("cvBuilder").querySelectorAll("[data-count]").forEach((button) => {
@@ -591,8 +609,8 @@
 
         function renderChapters() {
             const query = $("cvChapterSearch").value.trim().toLowerCase();
-            const noteLibrary = questionSource === "capsule" || questionSource === "past" ? questionSource : "model";
-            if ($("cvChapterSource")) $("cvChapterSource").innerHTML = sourceOptions();
+            const noteLibrary = questionSource === "all" || questionSources.includes("model") ? "model" : questionSources[0];
+            syncSourcePicker($("cvChapterSource"), "cvChapterSource");
             const matchesChapter = (chapter) => `${chapter.number || ""} ${chapter.code || ""} ${chapter.name}`.toLowerCase().includes(query);
             const matchesTopic = (topic) => `${topic.number} ${topic.code} ${topic.name} ${topic.detail}`.toLowerCase().includes(query);
             const matching = chapters.filter((chapter) => matchesChapter(chapter) || leafNodes(chapter).some(matchesTopic));
@@ -611,7 +629,7 @@
                         const progress = counts([topic.id], questionSource);
                         const topicCount = countOf(topic, questionSource);
                         return `<article class="cv-subchapter${topicCount ? "" : " cv-topic-empty"}" data-subchapter="${topic.id}"><div class="cv-subchapter-head"><div><h4>${esc(topicTitle(topic))}</h4>${topic.code ? `<span class="cv-topic-code">${topic.code}</span>` : ""}</div><span class="cv-count">${topicCount} Q</span></div>
-                            <p class="cv-subchapter-detail">${esc(topic.detail)}</p><p class="cv-subchapter-progress">${topicCount ? `${progress.attempted} practised · ${progress.correct} last answered correctly` : topic.count ? "No questions from the selected source in this topic." : "No matching questions in the current bank. This official syllabus topic is not yet covered."}</p>
+                            <p class="cv-subchapter-detail">${esc(topic.detail)}</p><p class="cv-subchapter-progress">${topicCount ? `${progress.attempted} practised · ${progress.correct} last answered correctly` : topic.count ? `No questions from the selected source${questionSources.length > 1 ? "s" : ""} in this topic.` : "No matching questions in the current bank. This official syllabus topic is not yet covered."}</p>
                             <div class="cv-head-actions"><button type="button" class="cv-btn cv-btn-blue cv-btn-sm" data-cp-action="practice-subchapter" data-topic="${topic.id}"${topicCount ? "" : " disabled"}>Practice</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="exam-subchapter" data-topic="${topic.id}"${topicCount ? "" : " disabled"}>Exam</button><button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cp-action="build-subchapter" data-topic="${topic.id}"${topicCount ? "" : " disabled"}>Add to session</button>${window.CIVIL_NOTES && (window.CIVIL_NOTES.hasTopic(topic.id) || noteLibrary !== "model" && countOf(topic, noteLibrary)) ? `<button type="button" class="cv-btn cv-btn-ghost cv-btn-sm" data-cv-nav="notes" data-note-library="${noteLibrary}" data-note-topic="${topic.id}">Read notes</button>` : ""}</div></article>`;
                     }).join("")}</div></div></details>`;
             }).join("") : '<div class="cv-empty"><b>No matching syllabus topics</b><p>Try a chapter name, subchapter number, official code or syllabus keyword.</p></div>';
@@ -1040,7 +1058,7 @@
                 const chapter = chapterMap.get(chapterId);
                 selected = new Set([...topics.values()].filter((topic) => topic.count > 0 && (!chapter || topic.chapterId === chapter.id)).map((topic) => topic.id));
                 if (chapter) builderOpen.add(chapter.id);
-                selectedMode = "practice"; poolFilter = "wrong"; questionSource = "all"; deps.navigate("practice");
+                selectedMode = "practice"; poolFilter = "wrong"; chooseSources(sourceKeys); deps.navigate("practice");
             }
             else if (!screen) return;
             else if (action === "leave-session") leaveSession();
@@ -1092,9 +1110,15 @@
                 if (node.checked) selected.add(node.dataset.cpSubchapter); else selected.delete(node.dataset.cpSubchapter);
                 updateBuilder();
             } else if (node.id === "cpPool") { poolFilter = node.value; updateBuilder(); }
-            else if ((node.id === "cpSource" || node.id === "cvChapterSource") && sourceNames[node.value]) {
-                questionSource = node.value;
-                if (node.id === "cpSource") renderBuilder(); else renderChapters();
+            else if (node.matches('.cv-source-picker input[type="checkbox"]')) {
+                const picker = node.closest(".cv-source-picker");
+                const chosen = [...picker.querySelectorAll("input:checked")].map((input) => input.value);
+                if (!chosen.length) { node.checked = true; picker.querySelector(".cv-source-note").textContent = "Keep at least one source selected."; return; }
+                chooseSources(chosen);
+                if (picker.id !== "cpSource") { renderChapters(); return; }
+                renderBuilder();
+                const again = [...$("cvBuilder").querySelectorAll("#cpSource input")].find((input) => input.value === node.value);
+                if (again) again.focus();
             }
             else if (node.name === "cpMode") { selectedMode = node.value === "exam" ? "exam" : "practice"; updateBuilder(); }
             else if (node.matches("[data-fp-filter]") && screen && screen.mode === "practice") { screen.filter = node.value; screen.navPage = 0; renderFocus(); }

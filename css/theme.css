@@ -280,6 +280,8 @@ html[data-theme="dark"] body[data-app="nec"] #civilSection :is(#cvChapters, #cvP
 html[data-theme="dark"] body[data-app="nec"] #civilSection #cvApp :is(.cv-chapter, .cv-builder-chapter)[open] > summary { background: var(--surface-2); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection #cvApp .cv-additional > summary { background: var(--amber-soft); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection #cvPractice :is(.cv-pick-subchapter:is(.on, :has(input:checked)), .cs-session-mode label:is(.is-active, :has(input:checked))) { background: var(--good-bg); color: var(--good); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cv-source-option { background: var(--surface); }
+html[data-theme="dark"] body[data-app="nec"] #civilSection .cv-source-option:has(input:checked) { background: var(--good-bg); color: var(--good); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection #cvPractice .cv-count-chip:is(.active, [aria-pressed="true"]) { background: var(--theme-green); color: #fff; }
 html[data-theme="dark"] body[data-app="nec"] #civilSection #cvApp :is(.cv-progress-track, .cv-break-bar, .cs-paper-progress, .cv-subj-meter) { background: var(--line-soft); }
 html[data-theme="dark"] body[data-app="nec"] #civilSection #cvSets .cs-paper .cv-pill.done { color: var(--good); }

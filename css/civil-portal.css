@@ -273,6 +273,19 @@ body.civil-open:not(.civil-session) .shell { width: 100%; max-width: 1500px; pad
 #civilSection #cvPractice .cs-session-mode label:has(input:focus-visible) { outline: 2px solid var(--cs-teal); outline-offset: 3px; }
 #civilSection #cvPractice .cs-session-mode input { margin: 0; }
 #civilSection #cvPractice :is(input[type="checkbox"], input[type="radio"]) { accent-color: var(--cs-teal); }
+#civilSection .cv-source-picker { min-width: 0; margin: 0; padding: 0; border: 0; }
+#civilSection .cv-source-picker legend { margin-bottom: 7px; padding: 0; color: var(--cs-ink); font-size: 11px; font-weight: 600; line-height: 1.65; }
+#civilSection .cv-source-options { display: flex; flex-wrap: wrap; gap: 8px; }
+#civilSection .cv-source-option { display: flex; align-items: center; gap: 8px; min-width: 0; min-height: 48px; padding: 10px 12px; border: 1px solid var(--cs-control-line); border-radius: 8px; background: #fff; color: var(--cs-ink); font: 600 13px/1.3 var(--cs-font); cursor: pointer; }
+#civilSection .cv-source-option input { flex: none; width: 16px; height: 16px; margin: 0; accent-color: var(--cs-teal); }
+#civilSection .cv-source-name { min-width: 0; }
+#civilSection .cv-source-count { margin-left: auto; padding-left: 4px; color: var(--cs-muted); font-size: 12px; font-weight: 500; font-variant-numeric: tabular-nums; white-space: nowrap; }
+#civilSection .cv-source-option:has(input:checked) { border-color: var(--cs-teal); background: var(--cs-mint); box-shadow: inset 0 0 0 1px var(--cs-teal); }
+#civilSection .cv-source-option:has(input:focus-visible) { outline: 2px solid var(--cs-teal); outline-offset: 2px; }
+#civilSection .cv-source-note { margin: 6px 0 0; color: var(--cs-muted); font-size: 12px; line-height: 1.5; }
+#civilSection .cv-source-note:empty { display: none; }
+#civilSection #cvPractice .cv-source-options { display: grid; grid-template-columns: minmax(0, 1fr); }
+#civilSection .cv-toolbar > .cv-source-picker { flex: 0 1 auto; }
 #civilSection #cvPractice .cv-selection-list { gap: 10px; margin-top: 20px; }
 #civilSection #cvPractice .cv-selection-summary { display: grid; gap: 10px; margin-top: 16px; padding: 12px; border: 1px solid #c9dccb; border-radius: 10px; background: var(--cs-mint); }
 #civilSection #cvPractice .cv-selection-summary[hidden] { display: none; }
@@ -414,6 +427,7 @@ body.civil-open:not(.civil-session) .shell { width: 100%; max-width: 1500px; pad
 }
 @media (max-width: 1100px) {
     #civilSection #cvPractice .cv-builder-layout { grid-template-columns: minmax(0, 1fr); }
+    #civilSection #cvPractice .cv-source-options { display: flex; }
     #civilSection #cvDash .cv-home-columns { grid-template-columns: minmax(0, 1fr); }
     #civilSection #cvDash .cv-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     #civilSection #cvDash .cs-dashboard-hero { grid-template-columns: minmax(0, 1fr) 190px; gap: 20px; }
@@ -430,6 +444,8 @@ body.civil-open:not(.civil-session) .shell { width: 100%; max-width: 1500px; pad
 }
 @media (max-width: 600px) {
     body.civil-open:not(.civil-session) .shell { padding: 12px 12px 40px; }
+    #civilSection .cv-toolbar > .cv-source-picker { flex: 1 1 100%; width: 100%; }
+    #civilSection :is(#cvPractice, #cvChapters) .cv-source-options { display: grid; grid-template-columns: minmax(0, 1fr); }
     #civilEntry { margin-block: 20px; padding: 22px; gap: 16px; grid-template-columns: minmax(0, 1fr); }
     #civilEntry .cs-entry-mark { width: 48px; height: 48px; border-radius: 12px; }
     #civilEntry .cs-entry-mark svg { width: 32px; height: 32px; }
@@ -500,7 +516,8 @@ body.civil-open.civil-session .shell { width: 100%; max-width: 1360px; padding: 
 }
 @media (forced-colors: active) {
     #civilSection #cvNav > button:is(.active, [aria-current="page"], [aria-current="true"]),
-    #civilSection #cvPractice .cs-session-mode label:is(.is-active, :has(input:checked)) { border-color: Highlight; outline: 2px solid Highlight; outline-offset: -3px; }
+    #civilSection #cvPractice .cs-session-mode label:is(.is-active, :has(input:checked)),
+    #civilSection .cv-source-option:has(input:checked) { border-color: Highlight; outline: 2px solid Highlight; outline-offset: -3px; }
     #civilEntry :focus-visible { outline-color: Highlight; }
     #civilSection :is(#cvDash, #cvChapters) .cv-progress-track > span,
     #civilSection #cvSets .cs-paper-progress > span { background: Highlight; forced-color-adjust: none; }
